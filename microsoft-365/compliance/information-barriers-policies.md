@@ -1,6 +1,7 @@
 ---
 title: Démarrer avec le cloisonnement de l’information
-description: Découvrez comment prendre en main les obstacles à l’information.
+description: Découvrez comment prendre en main les obstacles à l’information dans Microsoft Purview.
+keywords: Microsoft 365, Microsoft Purview, conformité, obstacles à l’information
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,66 +16,96 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb6de09c0c020631f42d8f2f09cb236affb94417
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ef2c8c5c4dfdbb1598c8f6edc5344da9351b6ad7
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713534"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363289"
 ---
 # <a name="get-started-with-information-barriers"></a>Démarrer avec le cloisonnement de l’information
 
-Avec les barrières à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux ou autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité aux normes et réglementations pertinentes du secteur et à éviter les conflits d’intérêts potentiels. Pour plus d’informations, consultez [En savoir plus sur les obstacles à l’information](information-barriers.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Cet article explique comment configurer des stratégies d’obstacle à l’information. Plusieurs étapes sont impliquées. Veillez donc à passer en revue l’ensemble du processus avant de commencer à configurer des stratégies d’obstacle à l’information.
+Cet article explique comment configurer des stratégies d’obstacle à l’information (IB) dans votre organisation. Plusieurs étapes sont impliquées. Veillez donc à passer en revue l’ensemble du processus avant de commencer à configurer les stratégies IB.
+
+Vous devez connaître les [applets de commande PowerShell](/powershell/exchange/scc-powershell) pour définir, valider ou modifier des stratégies IB. Bien que nous fournissions plusieurs exemples d’applets de commande PowerShell dans cet article, vous devez connaître d’autres détails (tels que des valeurs de paramètre) pour votre organisation.
+
+Pour plus d’informations sur les scénarios et fonctionnalités de l’IB, consultez [En savoir plus sur les obstacles à l’information](information-barriers.md).
 
 > [!TIP]
-> Cet article inclut un [exemple de scénario](#example-scenario-contosos-departments-segments-and-policies) pour vous aider à planifier et à définir vos stratégies d’obstacle à l’information.
+> Pour vous aider à préparer votre plan, un [exemple de scénario](#example-scenario-contosos-departments-segments-and-policies) est inclus dans cet article.
 
-## <a name="concepts"></a>Concepts
+## <a name="required-subscriptions-and-permissions"></a>Abonnements et autorisations requis
 
-Lorsque vous définissez des stratégies pour les obstacles à l’information, vous travaillez avec les attributs de compte d’utilisateur, les segments, les stratégies « block » et/ou « allow » et l’application de stratégie.
+Avant de commencer à utiliser IB, vous devez confirmer votre abonnement Microsoft 365 et tous les modules complémentaires. Pour accéder à IB et l’utiliser, votre organisation doit disposer de l’un des abonnements ou modules complémentaires suivants :
 
-- Les attributs du compte utilisateur sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom d’équipe et d’autres détails du profil du poste.
-- Les segments sont des ensembles d’utilisateurs définis dans le Centre de conformité Microsoft 365 à l’aide d’un **attribut de compte d’utilisateur** sélectionné. (consultez la [liste des attributs pris en charge](information-barriers-attributes.md)).
-- Les stratégies de cloisonnement de l’information déterminent les limites ou les restrictions de communication. Lorsque vous définissez des stratégies de cloisonnement de l’information, vous avez le choix entre deux types de stratégie :
+- abonnement Microsoft 365 E5/A5 (version payante ou d’évaluation)
+- abonnement Office 365 E5/A5/A3/A1 (version payante ou d’évaluation)
+- Conformité avancée Office 365 module complémentaire (plus disponible pour les nouveaux abonnements)
+- Microsoft 365 E3/A3/A1 + le module complémentaire conformité Microsoft 365 E5/A5
+- Microsoft 365 E3/A3/A1 + le module complémentaire de gestion des risques internes Microsoft 365 E5/A5
+
+Pour plus d’informations, consultez [Microsoft 365 conseils sur les licences pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+
+Pour [gérer les stratégies IB](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
+
+- Administrateur général Microsoft 365
+- Administrateur général Office 365
+- Administrateur de conformité
+- Gestion de la conformité IB
+
+Si vous souhaitez en savoir plus sur les rôles et les autorisations, consultez la page [Autorisations dans le Centre de sécurité et conformité Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+
+## <a name="configuration-concepts"></a>Concepts de configuration
+
+Lorsque vous définissez des stratégies pour IB, vous travaillez avec plusieurs objets et concepts.
+
+- Les **attributs du compte utilisateur** sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom d’équipe et d’autres détails du profil du poste.
+- **Les segments sont des ensembles** d’utilisateurs définis dans le portail de conformité Microsoft Purview à l’aide d’un **attribut de compte d’utilisateur** sélectionné. Pour plus d’informations, consultez la liste [des attributs pris en charge par IB](information-barriers-attributes.md) .
+- **Visibilité des utilisateurs et groupes non IB**. Les utilisateurs et les groupes non IB sont des utilisateurs et des groupes exclus des segments et des stratégies ib. Selon le type de stratégies IB (bloquer ou autoriser), le comportement de ces utilisateurs et de ces groupes varie en Microsoft Teams, SharePoint, OneDrive et dans votre liste d’adresses globale. Pour les utilisateurs définis dans *les stratégies d’autorisation* , les groupes et utilisateurs non IB ne sont pas visibles par les utilisateurs inclus dans les segments et les stratégies IB. Pour les utilisateurs définis dans les stratégies de *bloc* , les groupes et les utilisateurs non IB sont visibles par les utilisateurs inclus dans les segments et stratégies IB.
+- **Prise en charge des groupes**. Seuls les groupes modernes sont actuellement pris en charge dans ib et les listes de distribution/groupes de sécurité sont traités comme des groupes non IB.
+- **Comptes d’utilisateur masqués/désactivés**. Pour les comptes masqués/désactivés dans votre organisation, le paramètre *HiddenFromAddressListEnabled* est automatiquement défini sur *True* lorsque les comptes d’utilisateurs sont masqués ou désactivés. Dans les organisations compatibles ib, ces comptes ne peuvent pas communiquer avec tous les autres comptes d’utilisateur. Dans Microsoft Teams, toutes les conversations, y compris ces comptes, sont verrouillées ou les utilisateurs sont automatiquement supprimés des conversations.
+- **Les stratégies IB** déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de cloisonnement de l’information, vous avez le choix entre deux types de stratégie :
   - *Bloquer* les stratégies pour empêcher un segment de communiquer avec un autre.
   - *Autoriser* les stratégies de n’autoriser qu’un segment à communiquer avec certains autres segments uniquement.
-- L’application de la stratégie est effectuée une fois toutes les stratégies de cloisonnement de l’information sont définies et que vous êtes prêt à les appliquer au sein de votre organisation.
+
+    > [!NOTE]
+    > Pour **les stratégies d’autorisation** , les groupes et les utilisateurs non IB ne sont pas visibles par les utilisateurs inclus dans les segments et stratégies IB. Si vous avez besoin que les groupes et les utilisateurs non IB soient visibles par les utilisateurs inclus dans les segments et stratégies ib, vous devez utiliser des stratégies **de bloc** .
+
+- *L’application* de stratégie est effectuée une fois que toutes les stratégies IB sont définies et que vous êtes prêt à les appliquer dans votre organisation.
 
 ## <a name="configuration-at-a-glance"></a>Configuration en un clin d’œil
 
 | **Étapes** | **Ce qui est impliqué** |
 |:------|:----------------|
-| **Étape 1** : [Vérifier que les conditions préalables sont remplies](#step-1-make-sure-prerequisites-are-met) | - Vérifiez que vous disposez des [licences et autorisations requises](information-barriers.md#required-licenses-and-permissions)<br/>vérifier que votre annuaire inclut des données pour la segmentation des utilisateurs.<br/>- Activer [la recherche par nom pour Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>vous assurer que l’enregistrement d’audit est activé.<br/>vous assurer qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place.<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur pour Microsoft Teams (les étapes sont incluses) |
+| **Étape 1** : [Vérifier que les conditions préalables sont remplies](#step-1-make-sure-prerequisites-are-met) | - Vérifiez que vous disposez des abonnements et autorisations requis <br/>vérifier que votre annuaire inclut des données pour la segmentation des utilisateurs.<br/>- Activer [la recherche par nom pour Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>vous assurer que l’enregistrement d’audit est activé.<br/>vous assurer qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place.<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur pour Microsoft Teams (les étapes sont incluses) |
 | **Étape 2** : [Segmenter les utilisateurs de votre organisation](#step-2-segment-users-in-your-organization) | - Déterminer les stratégies nécessaires<br/>- Créer une liste de segments à définir<br/>- Identifier les attributs à utiliser<br/>- Définir des segments en termes de filtres de stratégie |
-| **Étape 3** : [Définir des stratégies d’obstacle à l’information](#step-3-define-information-barrier-policies) | - Définir vos stratégies (ne pas encore appliquer)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
+| **Étape 3** : [Définir des stratégies d’obstacle à l’information](#step-3-define-information-barrier-policies) | - Définir vos stratégies (ne s’appliquent pas encore)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
 | **Étape 4** : [Appliquer des stratégies d’obstacle à l’information](#step-4-apply-information-barrier-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
-| **Étape 5** : [Configuration des obstacles à l’information sur SharePoint et OneDrive (facultatif)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configurer des obstacles à l’information pour les SharePoint et les OneDrive |
-| **Étape 6** : [Modes de barrières d’information (facultatif)](#step-6-information-barriers-modes) | - Mettre à jour les modes de barrière des informations le cas échéant |
+| **Étape 5** : [Configuration des obstacles à l’information sur SharePoint et OneDrive (facultatif)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configurer IB pour SharePoint et OneDrive |
+| **Étape 6** : [Modes de barrières d’information (facultatif)](#step-6-information-barriers-modes) | - Mettre à jour les modes IB le cas échéant |
 
 ## <a name="step-1-make-sure-prerequisites-are-met"></a>Étape 1 : Vérifier que les conditions préalables sont remplies
 
-En plus [des licences et autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les exigences suivantes sont remplies avant de configurer les obstacles à l’information :
+En plus des abonnements et autorisations requis, assurez-vous que les exigences suivantes sont remplies avant de configurer IB :
 
-- **Données d’annuaire** : assurez-vous que la structure de votre organisation est reflétée dans les données d’annuaire. Pour effectuer cette action, assurez-vous que les attributs de compte d’utilisateur, tels que l’appartenance au groupe, le nom du service, etc., sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes :
+- **Données d’annuaire** : assurez-vous que la structure de votre organisation est reflétée dans les données d’annuaire. Pour effectuer cette action, assurez-vous que les attributs de compte d’utilisateur (tels que l’appartenance au groupe, le nom du service, etc.) sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes :
   - [Attributs pour les stratégies d’obstacle aux informations](information-barriers-attributes.md)
   - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- **Recherche d’annuaires délimités** : avant de définir la première stratégie d’obstacle à l’information de votre organisation, vous devez [activer la recherche d’annuaire délimitée dans Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Attendez au moins 24 heures après l’activation de la recherche d’annuaire délimité avant de configurer ou de définir des stratégies d’obstacle aux informations.
+- **Recherche d’annuaires délimités** : avant de définir la première stratégie IB de votre organisation, vous devez [activer la recherche d’annuaires délimités dans Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Attendez au moins 24 heures après l’activation de la recherche d’annuaire délimitée avant de configurer ou de définir des stratégies IB.
 
-- **Exchange Online licences : les** stratégies d’obstacles à l’information fonctionnent uniquement si une licence Exchange Online a été attribuée aux utilisateurs cibles.
+- **Vérifiez que la journalisation d’audit est activée** : pour rechercher l’état d’une application de stratégie IB, la journalisation d’audit doit être activée. L'audit est activé par défaut pour les organisations Microsoft 365. Certaines organisations peuvent avoir désactivé l'audit pour des raisons spécifiques. Si l'audit est désactivé pour votre organisation, c'est peut-être parce qu'un autre administrateur l'a désactivé. Nous vous recommandons de confirmer que vous pouvez réactiver l'audit lorsque vous terminez cette étape. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- **Vérifiez que la journalisation d’audit est activée** : pour rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. L'audit est activé par défaut pour les organisations Microsoft 365. Certaines organisations peuvent avoir désactivé l'audit pour des raisons spécifiques. Si l'audit est désactivé pour votre organisation, c'est peut-être parce qu'un autre administrateur l'a désactivé. Nous vous recommandons de confirmer que vous pouvez réactiver l'audit lorsque vous terminez cette étape. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
+- **Supprimer les stratégies de carnet d’adresses Exchange Online existantes** : avant de définir et d’appliquer des stratégies IB, vous devez supprimer toutes les stratégies de carnet d’adresses Exchange Online existantes dans votre organisation. Les stratégies IB sont basées sur des stratégies de carnet d’adresses et les stratégies ABP existantes ne sont pas compatibles avec les ABA créées par IB. Pour supprimer vos stratégies de carnet d’adresses existantes, consultez [Supprimer une stratégie de carnet d’adresses dans Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Pour plus d’informations sur les politiques et les Exchange Online de l’IB, consultez [Obstacles à l’information et Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Aucune stratégie de carnet d’adresses** : avant de définir et d’appliquer des stratégies de barrière à l’information, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord à [supprimer vos stratégies de carnet d’adresses](/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Une fois que les stratégies de barrière de l’information sont activées et que vous avez activé le carnet d’adresses hiérarchique, tous les utilisateurs **_qui ne sont pas inclus_** dans un segment de barrière de l’information voient le [carnet d’adresses hiérarchique](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange en ligne.
-
-- **Gérer à l’aide de PowerShell** : Actuellement, les stratégies de barrière d’information sont définies et gérées dans le Centre de sécurité & conformité PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les applets de commande et les paramètres PowerShell. Vous aurez également besoin du module PowerShell Azure Active Directory.
+- **Gérer à l’aide de PowerShell** : Actuellement, les stratégies IB sont définies et gérées dans le Centre de sécurité & conformité PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les applets de commande et les paramètres PowerShell. Vous aurez également besoin du module PowerShell Azure Active Directory.
   - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
   - [Installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2)
 
-- **Consentement de l’administrateur pour les obstacles à l’information dans Microsoft Teams** : lorsque vos stratégies IB sont en place, elles peuvent supprimer les utilisateurs non conformes à l’IB des groupes (c’est-à-dire les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de garantir que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies de barrière d’information de fonctionner comme prévu dans Microsoft Teams.
+- **Consentement de l’administrateur pour ib dans Microsoft Teams** : lorsque vos stratégies IB sont en place, elles peuvent supprimer les utilisateurs de conformité non IB des groupes (par exemple, Teams canaux, qui sont basés sur des groupes). Cette configuration permet de garantir que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies IB de fonctionner comme prévu dans Microsoft Teams.
 
    1. Prérequis : [installez Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2).
 
@@ -97,37 +128,40 @@ En plus [des licences et autorisations requises](information-barriers.md#require
 
 Lorsque toutes les conditions préalables sont remplies, passez à l’étape suivante.
 
-> [!TIP]
-> Pour vous aider à préparer votre plan, un exemple de scénario est inclus dans cet article. [Consultez les services, segments et stratégies de Contoso](#example-scenario-contosos-departments-segments-and-policies).
-
 ## <a name="step-2-segment-users-in-your-organization"></a>Étape 2 : Segmenter les utilisateurs de votre organisation
 
-Au cours de cette étape, vous déterminez les stratégies d’obstacle à l’information nécessaires, créez une liste de segments à définir, puis définissez vos segments.
+Au cours de cette étape, vous déterminez les stratégies IB nécessaires, créez une liste de segments à définir, puis définissez vos segments.
 
 ### <a name="determine-what-policies-are-needed"></a>Déterminer les stratégies nécessaires
 
-Compte tenu des réglementations légales et sectorielles, qui sont les groupes au sein de votre organisation qui auront besoin de stratégies d’obstacle à l’information ? Dressez une liste. Y a-t-il des groupes qui devraient être empêchés de communiquer avec un autre groupe ? Y a-t-il des groupes qui doivent être autorisés à communiquer uniquement avec un ou deux autres groupes ? Considérez les stratégies dont vous avez besoin comme appartenant à l’un des deux groupes :
+En tenant compte des besoins de votre organisation, déterminez les groupes au sein de votre organisation qui auront besoin de stratégies IB. Posez-vous les questions suivantes :
 
-- Les stratégies « Bloquer » empêchent un groupe de communiquer avec un autre groupe.
-- Les stratégies « Autoriser » permettent à un groupe de communiquer uniquement avec certains autres groupes spécifiques.
+- Existe-t-il des réglementations internes, légales ou sectorielles qui imposent la restriction de la communication et de la collaboration entre les groupes et les utilisateurs de votre organisation ?
+- Y a-t-il des groupes ou des utilisateurs qui doivent être empêchés de communiquer avec un autre groupe d’utilisateurs ?
+- Y a-t-il des groupes ou des utilisateurs qui doivent être autorisés à communiquer uniquement avec un ou deux autres groupes d’utilisateurs ?
 
-Lorsque vous avez votre liste initiale de groupes et de stratégies, procédez à l’identification des segments dont vous aurez besoin.
+Considérez les stratégies dont vous avez besoin comme appartenant à l’un des deux types suivants :
+
+- Les politiques de *blocage* empêchent un groupe de communiquer avec un autre groupe.
+- *Autoriser les* stratégies permet à un groupe de communiquer uniquement avec des groupes spécifiques.
+
+Lorsque vous disposez de votre liste initiale de groupes et de stratégies nécessaires, procédez à l’identification des segments dont vous aurez besoin pour les stratégies IB.
 
 ### <a name="identify-segments"></a>Identifier les segments
 
-En plus de votre liste initiale de stratégies, dressez une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies d’obstacle à l’information doivent appartenir à un segment. Planifier soigneusement vos segments en tant qu’utilisateur ne peut se trouver qu’en un seul segment. Chaque segment ne peut avoir qu’une seule stratégie d’obstacle à l’information appliquée.
+En plus de votre liste initiale de stratégies, dressez une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies IB doivent appartenir à un segment. Planifier soigneusement vos segments en tant qu’utilisateur ne peut se trouver qu’en un seul segment. Chaque segment ne peut avoir qu’une seule stratégie IB appliquée.
 
 > [!IMPORTANT]
 > Un utilisateur ne peut se trouver que dans un seul segment.
 
-Déterminez les attributs dans les données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *MemberOf* ou l’un des attributs pris en charge. Assurez-vous que vous avez des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les obstacles à l’information](information-barriers-attributes.md).
+Déterminez les attributs dans les données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *MemberOf* ou l’un des attributs IB pris en charge. Assurez-vous que vous avez des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. Pour plus d’informations, consultez les [attributs pris en charge pour IB](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire ont des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de passer aux obstacles à l’information. Pour obtenir de l’aide à ce sujet, consultez les ressources suivantes :<br/>- [Configurer les propriétés du compte d’utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire ont des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de continuer à configurer IB. Pour obtenir de l’aide à ce sujet, consultez les ressources suivantes :<br/>- [Configurer les propriétés du compte d’utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Définir des segments à l’aide de PowerShell
 
-La définition de segments n’affecte pas les utilisateurs ; il définit simplement la phase de définition et d’application des stratégies d’obstacle à l’information.
+La tâche suivante consiste à définir des segments pour votre organisation. La définition de segments n’affecte pas les utilisateurs. Elle définit simplement la phase de définition et d’application des stratégies IB.
 
 1. Utilisez [l’applet](information-barriers-attributes.md) **de commande New-OrganizationSegment** avec le paramètre **UserGroupFilter** qui correspond à l’attribut que vous souhaitez utiliser.
 
@@ -140,9 +174,9 @@ La définition de segments n’affecte pas les utilisateurs ; il définit simple
 2. Répétez ce processus pour chaque segment que vous souhaitez définir.
 
     > [!IMPORTANT]
-    > **Assurez-vous que vos segments ne se chevauchent pas**. Chaque utilisateur qui sera affecté par les barrières à l’information doit appartenir à un seul segment (et un seul). Aucun utilisateur ne doit appartenir à deux segments ou plus. (Voir [l’exemple : segments définis par Contoso](#contosos-defined-segments) dans cet article.)
+    > **Assurez-vous que vos segments ne se chevauchent pas**. Chaque utilisateur qui sera affecté par les stratégies IB doit appartenir à un seul segment (et un seul). Aucun utilisateur ne doit appartenir à deux segments ou plus. Consultez [l’exemple : les segments définis de Contoso](#contosos-defined-segments) dans cet article pour obtenir un exemple de scénario.
 
-Une fois que vous avez défini vos segments, passez à définir des stratégies [d’obstacle à l’information](#step-3-define-information-barrier-policies).
+Une fois que vous avez défini vos segments, passez à [l’étape 3 : Définir des stratégies d’obstacle à l’information](#step-3-define-information-barrier-policies).
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Utilisation de « equals » et de « not equals » dans les définitions de segment
 
@@ -162,31 +196,32 @@ En plus de définir des segments en utilisant « equals » ou « not equals », 
 
 | Syntaxe | Exemple |
 |:---------|:----------|
-| `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | Dans cet exemple, nous avons défini un segment appelé *LocalFTE* qui inclut les personnes qui se trouvent localement et dont les postes ne sont pas répertoriés comme *temporaires*. |
-| `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| Dans cet exemple, nous avons défini un segment appelé *Segment1* qui inclut des personnes qui sont membres de group1@contoso.com et non membres de group3@contoso.com. |
-| `New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | Dans cet exemple, nous avons défini un segment appelé *Segment2* qui inclut des personnes qui sont membres de group2@contoso.com et non membres de group3@contoso.com. |
-| `New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`| Dans cet exemple, nous avons défini un segment appelé *Segment1and2* qui inclut des membres de group1@contoso.com et de group2@contoso.com et non des membres de group3@contoso.com. |
+| `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | Dans cet exemple, nous avons défini un segment appelé *LocalFTE* qui inclut les utilisateurs qui se trouvent localement et dont les positions ne sont pas répertoriées comme *temporaires*. |
+| `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| Dans cet exemple, nous avons défini un segment appelé *Segment1* qui inclut les utilisateurs qui sont membres de group1@contoso.com et non membres de group3@contoso.com. |
+| `New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | Dans cet exemple, nous avons défini un segment appelé *Segment2* qui inclut les utilisateurs qui sont membres de group2@contoso.com et non membres de group3@contoso.com. |
+| `New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`| Dans cet exemple, nous avons défini un segment appelé *Segment1and2* qui inclut des utilisateurs dans group1@contoso.com et group2@contoso.com et non des membres de group3@contoso.com. |
 
 > [!TIP]
 > Si possible, utilisez des définitions de segment qui incluent « -eq » ou « -ne ». Essayez de ne pas définir de définitions de segment complexes.
 
 ## <a name="step-3-define-information-barrier-policies"></a>Étape 3 : Définir des stratégies d’obstacle à l’information
 
-Déterminez si vous devez empêcher les communications entre certains segments ou limiter les communications à certains segments. Dans l’idéal, vous utiliserez le nombre minimal de stratégies pour vous assurer que votre organisation est conforme aux exigences légales et sectorielles.
+Déterminez si vous devez empêcher les communications entre certains segments ou limiter les communications à certains segments. Dans l’idéal, vous utiliserez le nombre minimal de stratégies IB pour vous assurer que votre organisation est conforme aux exigences internes, légales et sectorielles.
 
-Avec votre liste de segments d’utilisateurs et les stratégies de barrière à l’information que vous souhaitez définir, sélectionnez un scénario, puis suivez les étapes.
+> [!TIP]
+> Pour la cohérence de l’expérience utilisateur, nous vous recommandons d’utiliser des stratégies de blocage pour la plupart des scénarios si possible.
+
+Avec votre liste de segments d’utilisateurs et les stratégies IB que vous souhaitez définir, sélectionnez un scénario, puis suivez les étapes.
 
 - [Scénario 1 : Bloquer les communications entre les segments](#scenario-1-block-communications-between-segments)
 - [Scénario 2 : Autoriser un segment à communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **Assurez-vous qu’au fur et à mesure que vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *Sales*, ne définissez pas de stratégie supplémentaire pour *Sales*.<p> En outre, lorsque vous définissez des stratégies d’obstacle à l’information, veillez à définir ces stratégies sur l’état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou la modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies ne sont pas définies sur l’état actif, puis appliquées.
-
-(Voir [l’exemple : Stratégies de cloisonnement des informations de Contoso](#contosos-information-barrier-policies) dans cet article.)
+> **Assurez-vous qu’au fur et à mesure que vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *Sales*, ne définissez pas de stratégie supplémentaire pour *Sales*.<p> En outre, lorsque vous définissez des stratégies IB, veillez à définir ces stratégies sur l’état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou la modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies ne sont pas définies sur l’état actif, puis appliquées.
 
 ### <a name="scenario-1-block-communications-between-segments"></a>Scénario 1 : bloquer les communications entre les segments
 
-Lorsque vous souhaitez empêcher les segments de communiquer entre eux, vous définissez deux stratégies : une pour chaque direction. Chaque stratégie bloque la communication à sens unique.
+Lorsque vous souhaitez empêcher les segments de communiquer entre eux, vous définissez deux stratégies : une pour chaque direction. Chaque stratégie bloque la communication dans une seule direction.
 
 Par exemple, supposons que vous souhaitez bloquer les communications entre le segment A et le segment B. Dans ce cas, vous définissez une stratégie empêchant le segment A de communiquer avec le segment B, puis définissez une deuxième stratégie pour empêcher le segment B de communiquer avec le segment A.
 
@@ -194,7 +229,7 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 
     | Syntaxe | Exemple |
     |:--------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Sales*. Lorsqu’elle est active et appliquée, cette stratégie empêche les personnes de *Sales* de communiquer avec des personnes dans un segment appelé *Recherche*. |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Sales*. Lorsqu’elle est active et appliquée, cette stratégie empêche les utilisateurs dans *Sales* de communiquer avec les utilisateurs dans un segment appelé *Recherche*. |
 
 2. Pour définir votre deuxième segment de blocage, utilisez à nouveau l’applet de commande **New-InformationBarrierPolicy** avec le paramètre **SegmentsBlocked** , cette fois avec les segments inversés.
 
@@ -209,11 +244,13 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 
 ### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>Scénario 2 : Autoriser un segment à communiquer avec un seul autre segment
 
+Lorsque vous souhaitez autoriser un segment à communiquer avec un seul autre segment, vous ne définissez qu’une seule stratégie pour ce segment. Le segment avec lequel il est communiqué ne nécessite pas de stratégie directionnelle similaire (car il peut communiquer et collaborer avec tout le monde par défaut).
+
 1. Pour permettre à un segment de communiquer avec un seul autre segment, utilisez l’applet de commande **New-InformationBarrierPolicy** avec le paramètre **SegmentsAllowed** .
 
     | Syntaxe | Exemple |
     |:----------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Manufacturing-HR* pour un segment appelé *Manufacturing*. Lorsqu’elle est active et appliquée, cette stratégie permet aux personnes du secteur *de la fabrication* de communiquer uniquement avec les personnes d’un segment appelé *RH*. (Dans ce cas, *la fabrication* ne peut pas communiquer avec les utilisateurs qui ne font pas partie des *RH*.) |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Manufacturing-HR* pour un segment appelé *Manufacturing*. Lorsqu’elle est active et appliquée, cette stratégie permet aux utilisateurs de *Manufacturing de* communiquer uniquement avec les utilisateurs d’un segment appelé *RH*. Dans ce cas, *manufacturing* ne peut pas communiquer avec les utilisateurs qui ne font pas partie des *RH*. |
 
     **Si nécessaire, vous pouvez spécifier plusieurs segments avec cette applet de commande, comme illustré dans l’exemple suivant.**
 
@@ -230,7 +267,7 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 
 ## <a name="step-4-apply-information-barrier-policies"></a>Étape 4 : Appliquer des stratégies d’obstacle à l’information
 
-Les politiques de barrière d'information ne sont pas en vigueur tant que vous ne les faites pas passer au statut actif, puis que vous les appliquez.
+Les stratégies IB ne sont pas en vigueur tant que vous ne les avez pas définies sur l’état actif et appliqué les stratégies.
 
 1. Utilisez l’applet de commande **Get-InformationBarrierPolicy** pour afficher la liste des stratégies qui ont été définies. Notez l’état et l’identité (GUID) de chaque stratégie.
 
@@ -240,11 +277,11 @@ Les politiques de barrière d'information ne sont pas en vigueur tant que vous n
 
     | Syntaxe | Exemple |
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Active` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p> Dans cet exemple, nous définissons une stratégie de barrière d’information qui a le GUID *43c37853-ea10-4b90-a23d-ab8c93772471* sur l’état actif. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Active` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p> Dans cet exemple, nous définissons une stratégie IB qui a le GUID *43c37853-ea10-4b90-a23d-ab8c93772471* sur l’état actif. |
 
     Répétez cette étape en fonction de chaque stratégie.
 
-3. Une fois que vous avez terminé de définir vos stratégies de barrière des informations sur l’état actif, utilisez l’applet de commande **Start-InformationBarrierPoliciesApplication** dans le Centre de sécurité & conformité.
+3. Lorsque vous avez terminé de définir vos stratégies IB sur l’état actif, utilisez l’applet de commande **Start-InformationBarrierPoliciesApplication** dans le Centre de sécurité & conformité PowerShell.
 
     Syntaxe: `Start-InformationBarrierPoliciesApplication`
 
@@ -262,22 +299,18 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 | L’application de stratégie d’obstacle à l’information la plus récente | Utilisez l’applet de commande **Get-InformationBarrierPoliciesApplicationStatus** . <p> Syntaxe: `Get-InformationBarrierPoliciesApplicationStatus`<p> Cette applet de commande affiche des informations indiquant si l’application de stratégie est terminée, a échoué ou est en cours. |
 | Toutes les applications de stratégie d’obstacle à l’information|Utiliser `Get-InformationBarrierPoliciesApplicationStatus -All`<p> Cette applet de commande affiche des informations indiquant si l’application de stratégie est terminée, a échoué ou est en cours.|
 
-<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
-
 ### <a name="what-if-i-need-to-remove-or-change-policies"></a>Que se passe-t-il si je dois supprimer ou modifier des stratégies ?
 
-Des ressources sont disponibles pour vous aider à gérer vos stratégies d’obstacle à l’information.
+Des ressources sont disponibles pour vous aider à gérer vos stratégies d’ib.
 
-- Si un problème se produit avec les obstacles à l’information, consultez [Dépannage des obstacles à l’information](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
-- Pour empêcher l’application de stratégies, consultez [Arrêter une application de stratégie](information-barriers-edit-segments-policies.md#stop-a-policy-application).
-- Pour supprimer une stratégie d’obstacle à l’information, consultez [Supprimer une stratégie](information-barriers-edit-segments-policies.md#remove-a-policy).
-- Pour apporter des modifications aux segments ou aux stratégies, consultez [Modifier (ou supprimer) les stratégies de cloisonnement des informations](information-barriers-edit-segments-policies.md).
+- Pour modifier, arrêter ou supprimer des stratégies d’ib, consultez [Gérer les stratégies d’obstacles à l’information](information-barriers-edit-segments-policies.md).
+- Si un problème se produit avec l’IB, consultez [Résolution des problèmes liés aux obstacles à l’information](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 
 ## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Étape 5 : Configuration des obstacles à l’information sur les SharePoint et les OneDrive
 
-Si vous configurez des obstacles à l’information pour SharePoint et OneDrive, vous devez activer les obstacles à l’information sur ces services. Vous devez également activer les obstacles à l’information sur ces services si vous configurez des obstacles à l’information pour Microsoft Teams. Lorsqu’une équipe Microsoft Teams est créée, un site SharePoint est automatiquement créé et associé à Microsoft Teams pour l’expérience de fichiers. Les stratégies d’obstacle à l’information ne sont pas honorées sur SharePoint site et les fichiers par défaut.
+Si vous configurez IB pour SharePoint et OneDrive, vous devez activer IB sur ces services. Vous devez également activer IB sur ces services si vous configurez IB pour Microsoft Teams. Lorsqu’une équipe est créée dans Microsoft Teams équipe, un site SharePoint est automatiquement créé et associé à Microsoft Teams pour l’expérience de fichiers. Les stratégies IB ne sont pas honorées par défaut sur ce nouveau site et fichiers SharePoint.
 
-Pour activer les obstacles à l’information dans SharePoint et OneDrive, suivez les instructions et les étapes décrites dans l’article [Utiliser les obstacles à l’information avec SharePoint](/sharepoint/information-barriers) article.
+Pour activer ib dans SharePoint et OneDrive, suivez les instructions et les étapes décrites dans l’article [Utiliser les obstacles à l’information avec SharePoint](/sharepoint/information-barriers) article.
 
 ## <a name="step-6-information-barriers-modes"></a>Étape 6 : Modes de barrières d’information
 
@@ -292,7 +325,7 @@ Les modes IB suivants sont pris en charge sur Microsoft 365 ressources :
 | **Implicite** | La stratégie ib ou les segments de la ressource Microsoft 365 sont hérités de la stratégie IB des membres de la ressource. Le propriétaire peut ajouter des membres tant qu’ils sont compatibles avec les membres existants de la ressource. Il s’agit du mode IB par défaut pour Microsoft Teams. | L’utilisateur du segment Ventes crée une équipe Microsoft Teams pour collaborer avec d’autres segments compatibles de l’organisation. |
 | **Explicit** | La stratégie IB de la ressource Microsoft 365 correspond aux segments associés à la ressource. Le propriétaire de la ressource ou l’administrateur SharePoint peut gérer les segments de la ressource.  | Un site créé uniquement pour permettre aux membres du segment Ventes de collaborer en associant le segment Ventes au site.   |
 
-Pour plus d’informations sur les modes de barrière d’information et la façon dont ils sont configurés entre les services, consultez les articles suivants :
+Pour plus d’informations sur les modes IB et la façon dont ils sont configurés entre les services, consultez les articles suivants :
 
 - [Modes d’obstacle à l’information et Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 - [Modes d’obstacle à l’information et OneDrive](/onedrive/information-barriers)
@@ -304,23 +337,23 @@ Pour voir comment une organisation peut aborder la définition de segments et de
 
 ### <a name="contosos-departments-and-plan"></a>Départements et plan de Contoso
 
-Contoso compte cinq départements : Ressources Humaines, Ventes, Marketing, Recherche et Production. Pour rester conformes aux réglementations de l’industrie, les membres de certains ministères ne sont pas censés communiquer avec d’autres ministères, comme indiqué dans le tableau suivant :
+Contoso compte cinq départements : *RH*, *Sales*, *Marketing*, *Research* et *Manufacturing*. Pour rester conformes aux réglementations du secteur, les utilisateurs de certains services ne sont pas censés communiquer avec d’autres services, comme indiqué dans le tableau suivant :
 
-| Segment | Peut communiquer avec | Ne peut pas communiquer avec |
+| Segment | Peut communiquer avec | Impossible de communiquer avec |
 |:----------|:--------------|:-----------------|
-| RH | Tout le monde | (aucune restriction) |
+| HR | Tout le monde | (aucune restriction) |
 | Ventes | RH, Marketing, Fabrication | Recherche |
 | Marketing | Tout le monde | (aucune restriction) |
 | Recherche | RH, Marketing, Fabrication | Ventes |
 | Production | RH, Marketing | Toute autre personne que les RH ou le marketing |
 
-Pour cette structure, le plan de Contoso inclut trois stratégies d’obstacle à l’information :
+Pour cette structure, le plan de Contoso comprend trois stratégies IB :
 
-1. Une stratégie conçue pour empêcher sales de communiquer avec Research (et une autre stratégie pour empêcher Research de communiquer avec Sales).
+1. Une stratégie IB conçue pour empêcher sales de communiquer avec Research
+2. Une autre stratégie de l’IB pour empêcher la recherche de communiquer avec sales.
+3. Une stratégie d’IB conçue pour permettre à Manufacturing de communiquer uniquement avec les rh et le marketing.
 
-2. Une stratégie conçue pour permettre à Manufacturing de communiquer uniquement avec les rh et le marketing.
-
-Pour ce scénario, il n’est pas nécessaire de définir des stratégies pour les RH ou le marketing.
+Pour ce scénario, il n’est pas nécessaire de définir des stratégies IB pour *les RH* ou *le marketing*.
 
 ### <a name="contosos-defined-segments"></a>Segments définis par Contoso
 
@@ -334,25 +367,25 @@ Contoso utilisera l’attribut Department dans Azure Active Directory pour défi
 | Recherche | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"` |
 | Production | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"` |
 
-Une fois les segments définis, Contoso procède à la définition des stratégies.
+Une fois les segments définis, Contoso procède à la définition des stratégies IB.
 
 ### <a name="contosos-information-barrier-policies"></a>Stratégies de cloisonnement de l’information de Contoso
 
-Contoso définit trois stratégies, comme décrit dans le tableau suivant :
+Contoso définit trois stratégies IB, comme décrit dans le tableau suivant :
 
 | Stratégie | Définition de la stratégie |
 |:---------|:--------------------|
 | **Stratégie 1 : empêcher le département des Ventes de communiquer avec la Recherche** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Sales-Research*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Ventes de communiquer avec les utilisateurs du segment Recherche. Cette stratégie est unidirectionnelle; cela n’empêchera pas Research de communiquer avec Sales. Pour cela, la stratégie 2 est nécessaire. |
 | **Stratégie 2 : empêcher la Recherche de communiquer avec le département des Ventes** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Research-Sales*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Recherche de communiquer avec les utilisateurs du segment Ventes. |
-| **Stratégie 3 : Autoriser la fabrication à communiquer uniquement avec les rh et le marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> Dans ce cas, la stratégie de cloisonnement de l’information est nommée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la Production ne peut communiquer qu’avec les Ressources Humaines et le Marketing. Les ressources humaines et le marketing ne sont pas limités à la communication avec d’autres segments. |
+| **Stratégie 3 : Autoriser la fabrication à communiquer uniquement avec les rh et le marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> Dans ce cas, la politique de l’IB est appelée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la Production ne peut communiquer qu’avec les Ressources Humaines et le Marketing. Les ressources humaines et le marketing ne sont pas limités à la communication avec d’autres segments. |
 
 Une fois les segments et les stratégies définis, Contoso applique les stratégies en exécutant l’applet de commande **Start-InformationBarrierPoliciesApplication** .
 
-Une fois l’applet de commande terminée, Contoso est conforme aux exigences légales et industrielles.
+Une fois l’applet de commande terminée, Contoso est conforme aux exigences du secteur.
 
 ## <a name="resources"></a>Ressources
 
-- [Obtenir une vue d’ensemble des obstacles à l’information](information-barriers.md)
+- [En savoir plus sur les obstacles aux informations](information-barriers.md)
 - [En savoir plus sur les obstacles à l’information dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [En savoir plus sur les obstacles à l’information dans SharePoint Online](/sharepoint/information-barriers)
 - [En savoir plus sur les obstacles à l’information dans OneDrive](/onedrive/information-barriers)

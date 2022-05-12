@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d31c99ddc1f64f78fa62d28805b6c2f19af5a31f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 39e12aa910b4e01b93d428246d929d50eb121870
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320869"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363258"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger macOS paramètres de sécurité avec la protection contre les falsifications 
 
@@ -80,8 +80,8 @@ Vous pouvez configurer le mode de protection contre les falsifications en fourni
 
 **Paramètres fortement recommandés :** 
 
-1. Protection de l’intégrité du système (SIP) activée
-1. Utiliser un outil de gestion des appareils mobiles (GPM) pour configurer Microsoft Defender pour point de terminaison
+1. Protection de l’intégrité du système (SIP) activée. Pour plus d’informations, consultez [Désactivation et activation de la protection de l’intégrité du système](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+1. Utilisez un outil de gestion des appareils mobiles (GPM) pour configurer Microsoft Defender pour point de terminaison.
 
  
 

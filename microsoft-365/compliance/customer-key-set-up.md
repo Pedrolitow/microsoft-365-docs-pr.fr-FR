@@ -11,19 +11,21 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment configurer la clé client pour Microsoft 365.
-ms.openlocfilehash: 38b8a73a1c4654e1922f4f8e4600727a978af431
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Découvrez comment configurer la clé client.
+ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759963"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363167"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis configurez Microsoft 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d’autres termes, la clé client permet aux clients d’ajouter une couche de chiffrement qui leur appartient, avec leurs clés.
 
-Configurez Azure avant de pouvoir utiliser la clé client pour Office 365. Cet article décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit les étapes de configuration de la clé client dans Office 365. Après avoir configuré Azure, vous déterminez la stratégie et, par conséquent, les clés à affecter pour chiffrer les données dans différentes charges de travail Microsoft 365 de votre organisation. Pour plus d’informations sur la clé client ou pour obtenir une vue d’ensemble, consultez [chiffrement de service avec clé client dans Office 365](customer-key-overview.md).
+Configurez Azure avant de pouvoir utiliser la clé client. Cet article décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit les étapes de configuration de la clé client. Après avoir configuré Azure, vous déterminez la stratégie et, par conséquent, les clés à affecter pour chiffrer les données dans différentes charges de travail Microsoft 365 de votre organisation. Pour plus d’informations sur la clé client ou pour une vue d’ensemble, consultez [chiffrement de service avec Microsoft Purview clé client](customer-key-overview.md).
   
 > [!IMPORTANT]
 > Nous vous recommandons vivement de suivre les meilleures pratiques décrites dans cet article. Ceux-ci sont appelés comme **TIP** et **IMPORTANT**. La clé client vous permet de contrôler les clés de chiffrement racine dont l’étendue peut être aussi grande que l’ensemble de votre organisation. Cela signifie que les erreurs commises avec ces clés peuvent avoir un impact général et entraîner des interruptions de service ou une perte irrévocable de vos données.
@@ -36,14 +38,14 @@ Avant de commencer, vérifiez que vous disposez des abonnements Azure et des lic
 > Les licences M365/O365 valides qui offrent la clé client M365 sont les suivantes :
 >
 > - Office 365 E5
-> - Microsoft 365 E5
+> - Microsoft 365 E5
 > - Microsoft 365 E5 Conformité
 > - références SKU de gouvernance Microsoft 365 E5 Information Protection &
 > - Microsoft 365 sécurité et conformité pour FLW
 
 Les licences Conformité avancée Office 365 existantes continueront d’être prises en charge.
 
-Pour comprendre les concepts et procédures de cet article, consultez la documentation [Azure Key Vault](/azure/key-vault/). En outre, familiarisez-vous avec les termes utilisés dans Azure, par exemple, [Azure AD locataire](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Pour comprendre les concepts et procédures de cet article, consultez la documentation [Azure Key Vault](/azure/key-vault/). En outre, familiarisez-vous avec les termes utilisés dans Azure, par exemple, [le locataire Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
 Si vous avez besoin d’un support supplémentaire au-delà de la documentation, contactez Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) ou un partenaire Microsoft pour obtenir de l’aide. Pour fournir des commentaires sur la clé client, y compris la documentation, envoyez vos idées, suggestions et points de vue à customerkeyfeedback@microsoft.com.
   
@@ -86,7 +88,7 @@ Effectuez ces tâches dans Azure Key Vault. Vous devez effectuer ces étapes pou
   
 ### <a name="create-two-new-azure-subscriptions"></a>Créer deux abonnements Azure
 
-La clé client nécessite deux abonnements Azure. En guise de bonne pratique, Microsoft vous recommande de créer des abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault ne peuvent être autorisées que pour les applications du même locataire Azure Active Directory (Microsoft Azure Active Directory), vous devez créer les nouveaux abonnements à l’aide du même locataire Azure AD utilisé avec votre organisation où les DEP seront affectés. Par exemple, en utilisant votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir des instructions détaillées, consultez [S’inscrire à Azure en tant qu’organisation](/azure/active-directory/fundamentals/sign-up-organization).
+La clé client nécessite deux abonnements Azure. En guise de bonne pratique, Microsoft vous recommande de créer des abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault ne peuvent être autorisées que pour les applications du même locataire Azure Active Directory (Microsoft Azure Active Directory), vous devez créer les nouveaux abonnements à l’aide du même locataire Azure AD que celui utilisé avec votre organisation où les DEP seront affectés. Par exemple, en utilisant votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir des instructions détaillées, consultez [S’inscrire à Azure en tant qu’organisation](/azure/active-directory/fundamentals/sign-up-organization).
   
 > [!IMPORTANT]
 > La clé client nécessite deux clés pour chaque stratégie de chiffrement des données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de bonne pratique, Microsoft recommande de disposer de membres distincts de votre organisation pour configurer une clé dans chaque abonnement. Vous devez utiliser ces abonnements Azure uniquement pour administrer des clés de chiffrement pour Office 365. Cela protège votre organisation en cas de suppression accidentelle, intentionnelle ou malveillante de l’un de vos opérateurs ou d’une mauvaise gestion des clés dont ils sont responsables.
@@ -111,7 +113,7 @@ Pour soumettre une offre pour activer la clé client, procédez comme suit :
 
    - **Plusieurs charges de travail Microsoft 365 :** choisissez **l’aide de la clé de chiffrement de demande pour Microsoft 365** offre.
 
-   - **Exchange Online et Skype for Business :** choisissez **l’aide de la clé de chiffrement de demande pour Exchange** offre.
+   - **Exchange Online et Skype Entreprise :** choisissez **l’aide de la clé de chiffrement de demande pour Exchange** offre.
 
    - **SharePoint fichiers en ligne, OneDrive et Teams :** choisissez **l’aide de la clé de chiffrement de demande pour SharePoint et OneDrive Entreprise** offre.
 
@@ -144,7 +146,7 @@ La perte temporaire ou permanente de clés de chiffrement racine peut être pert
 
 - Pour activer la clé client permettant d’affecter des dep pour chiffrer SharePoint contenu en ligne et OneDrive Entreprise (y compris les fichiers Teams) pour tous les utilisateurs locataires, contactez [spock@microsoft.com](mailto:spock@microsoft.com).
 
-- Pour activer la clé client permettant d’affecter des dep pour chiffrer le contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, MIP EDM) pour tous les utilisateurs locataires, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- Pour activer la clé client permettant d’affecter des dep pour chiffrer le contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, Protection des données Microsoft Purview) pour tous les utilisateurs locataires, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
 - Incluez les informations suivantes dans votre e-mail :
 
@@ -230,11 +232,11 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
 
    Où :
    - *le nom du coffre* de clés que vous avez créé.
-   - Pour Exchange Online et Skype for Business, remplacez *Office 365 appID* par`00000002-0000-0ff1-ce00-000000000000`
+   - Pour Exchange Online et Skype Entreprise, remplacez *Office 365 appID* par`00000002-0000-0ff1-ce00-000000000000`
    - Pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, remplacez *Office 365 appID* par`00000003-0000-0ff1-ce00-000000000000`
-   - Pour une stratégie multi-charge de travail (Exchange, Teams, Protection des données Microsoft) qui s’applique à tous les utilisateurs locataires, remplacez *Office 365 appID* par`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - Pour une stratégie multi-charge de travail (Exchange, Teams, Protection des données Microsoft Purview) qui s’applique à tous les utilisateurs locataires, remplacez *Office 365 appID* par`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
-  Exemple : Définition d’autorisations pour Exchange Online et Skype for Business :
+  Exemple : Définition des autorisations pour Exchange Online et Skype Entreprise :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
@@ -256,7 +258,7 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
 > Avant de passer à l’opération, vérifiez que les autorisations sont correctement configurées pour le coffre de clés. *Les autorisations sur les clés* retournent **wrapKey, unwrapKey, get**.
 > Veillez à corriger les autorisations sur le service approprié dans lequel vous effectuez l’intégration. Le *nom complet* de chaque service est répertorié ci-dessous :  
   >
-  > - Exchange Online et Skype for Business : *Office 365 Exchange Online*
+  > - Exchange Online et Skype Entreprise : *Office 365 Exchange Online*
   > - fichiers SharePoint Online, OneDrive et Teams : *Office 365 SharePoint Online*
   > - Charges de travail Microsoft 365 multiples : *M365DataAtRestEncryption*
   >  
@@ -360,7 +362,7 @@ Une fois que vous avez effectué les étapes décrites dans cet article, vous ê
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement du service avec la clé client](customer-key-overview.md)
 
 - [Gérer la clé client](customer-key-manage.md)
 

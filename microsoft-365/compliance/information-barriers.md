@@ -17,46 +17,35 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72a53580222b315f86fd397e391b026937b8035b
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 214a2614b6ca7381bbded39ff5f5143236f6c001
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287175"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363115"
 ---
 # <a name="learn-about-information-barriers"></a>En savoir plus sur les obstacles aux informations
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Les services de cloud computing Microsoft incluent des fonctionnalités enrichies de communication et de collaboration. Supposons toutefois que vous souhaitiez restreindre la communication et la collaboration entre deux groupes afin d’éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Ou, peut-être souhaitez-vous restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations. Existe-t-il donc un moyen de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques si nécessaire ? Avec Microsoft Purview Information Barriers (IB), vous pouvez !
+Microsoft Purview Les barrières à l’information (IB) est une solution de conformité qui vous permet de restreindre la communication bidirectionnelle et la collaboration entre les groupes et les utilisateurs dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Souvent utilisé dans les secteurs hautement réglementés, IB peut aider à éviter les conflits d’intérêts et à protéger les informations internes entre les utilisateurs et les domaines organisationnels.
 
-Microsoft Teams, SharePoint Online et OneDrive Entreprise prennent en charge les obstacles à l’information. En supposant que votre [abonnement](#required-licenses-and-permissions) inclut des barrières à l’information, un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs dans Microsoft Teams. Les stratégies d’obstacle à l’information peuvent être utilisées pour des situations comme celles-ci :
+Lorsque des stratégies d’ib sont en place, les utilisateurs qui ne doivent pas communiquer ou partager des fichiers avec d’autres utilisateurs spécifiques ne peuvent pas trouver, sélectionner, discuter ou appeler ces utilisateurs. Les stratégies IB mettent automatiquement en place des contrôles pour détecter et empêcher toute communication et collaboration non autorisées entre des groupes et des utilisateurs définis. Les stratégies IB sont indépendantes des [limites de conformité](/microsoft-365/compliance/set-up-compliance-boundaries) pour les investigations eDiscovery qui contrôlent les emplacements de contenu utilisateur que les gestionnaires eDiscovery peuvent rechercher.
 
-- L’utilisateur du groupe de commerçants de jour ne doit pas communiquer ni partager de fichiers avec l’équipe marketing
+Les stratégies IB peuvent autoriser ou empêcher la communication et la collaboration entre les groupes et les utilisateurs pour les exemples de scénarios suivants :
+
+- Les utilisateurs du groupe *Day Trader* ne doivent pas communiquer ni partager de fichiers avec l’équipe *marketing*
 - Le personnel financier travaillant sur des informations confidentielles de l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de son organisation
 - Une équipe interne avec du matériel de secret commercial ne doit pas appeler ou discuter en ligne avec des personnes de certains groupes au sein de leur organisation
 - Une équipe de recherche doit uniquement appeler ou discuter en ligne avec une équipe de développement de produits
-- Un site pour le groupe de commerçants de jour ne doit pas être partagé ou accessible par toute personne en dehors du groupe de commerçants de jour
+- Un site SharePoint pour *le groupe Day Trader* ne doit pas être partagé ou accessible par quiconque en dehors du groupe *Day Trader*
 
 > [!IMPORTANT]
-> Les barrières à l’information ***ne prennent en charge que** les restrictions bidirectionnelle. Les restrictions d’une manière, telles que le marketing, peuvent communiquer et collaborer avec des commerçants de jour, mais les commerçants de jour ne peuvent pas communiquer et collaborer avec le marketing _*_n’est pas pris en charge_**.
+> Les obstacles à **l’information prennent uniquement en charge** les restrictions de communication et de collaboration bidirectionnelle. Par exemple, un scénario où le marketing peut communiquer et collaborer avec Day Traders, mais où Day Traders ne peut pas communiquer et collaborer avec marketing **n’est pas pris en charge**.
 
-Pour tous ces exemples de scénarios (et bien plus encore), des stratégies d’obstacle à l’information peuvent être définies pour empêcher ou autoriser les communications et la collaboration dans Microsoft Teams, SharePoint Online et OneDrive. De telles stratégies peuvent empêcher des personnes d’appeler ou de discuter avec celles qu’elles ne devraient pas, ou permettre aux personnes de communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec les stratégies d’obstacle à l’information en vigueur, chaque fois que les utilisateurs couverts par ces stratégies tentent de communiquer et de collaborer avec d’autres utilisateurs dans Microsoft Teams, SharePoint en ligne ou OneDrive des contrôles sont effectués pour empêcher (ou autoriser) la communication et la collaboration (comme défini par les stratégies d’obstacle à l’information).
+## <a name="information-barriers-and-microsoft-teams"></a>Obstacles à l’information et Microsoft Teams
 
-Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez :
-
-- [Cloisonnement de l’information dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [Obstacles à l’information dans SharePoint Online](/sharepoint/information-barriers)
-- [Obstacles à l’information dans OneDrive](/onedrive/information-barriers)
-
-> [!IMPORTANT]
-> Actuellement, les obstacles à l’information ne s’appliquent pas aux communications par e-mail. En outre, les obstacles à l’information sont indépendants des [limites de conformité](set-up-compliance-boundaries.md).<p> Avant de définir et d’appliquer des stratégies d’obstacle à l’information, assurez-vous que votre organisation n’a pas [de stratégies de carnet d’adresses Exchange](/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les obstacles à l’information sont basés sur des stratégies de carnet d’adresses.)
-
-## <a name="what-happens-with-information-barriers"></a>Que se passe-t-il avec les obstacles à l’information ?
-
-Lorsque des stratégies d’obstacle à l’information sont en place, les personnes qui ne doivent pas communiquer ou partager des fichiers avec d’autres utilisateurs spécifiques ne peuvent pas trouver, sélectionner, discuter ou appeler ces utilisateurs. Avec les obstacles à l’information, des contrôles sont en place pour empêcher toute communication et collaboration non autorisées.
-
-Les obstacles à l’information s’appliquent aux Microsoft Teams (conversations et canaux), SharePoint En ligne et OneDrive. Dans Microsoft Teams, les stratégies de cloisonnement de l’information déterminent et bloquent les types suivants de communications non autorisées :
+Dans Microsoft Teams, les stratégies IB déterminent et empêchent les types de communication et de collaboration non autorisés suivants :
 
 - Recherche d’un utilisateur
 - Ajout d’un membre à une équipe
@@ -66,49 +55,33 @@ Les obstacles à l’information s’appliquent aux Microsoft Teams (conversatio
 - Partage d’un écran
 - Passer un appel
 - Partage d’un fichier avec un autre utilisateur
-- Accès au fichier via le lien de partage
+- Accès à un fichier via le partage d’un lien
 
-Si les personnes impliquées sont incluses dans une stratégie de cloisonnement de l’information pour empêcher l’activité, elles ne pourront pas continuer. De plus, il est possible que les personnes incluses dans une stratégie de barrière des informations ne puissent pas communiquer avec d’autres personnes dans Microsoft Teams. Lorsque des personnes concernées par une stratégie de cloisonnement de l’information font partie de la même conversation de groupe ou d’équipe, il est possible qu’elles soient supprimées de ces sessions de conversation et que la communication avec le groupe ne soit pas autorisée.
+Si les utilisateurs effectuant ces activités dans Microsoft Teams sont inclus dans une stratégie IB pour empêcher l’activité, ils ne pourront pas continuer. En outre, toutes les personnes incluses dans une stratégie d’ib peuvent être potentiellement empêchées de communiquer avec d’autres utilisateurs dans Microsoft Teams. Lorsque les personnes affectées par les stratégies d’IB font partie de la même conversation d’équipe ou de groupe, elles peuvent être supprimées de ces sessions de conversation et les communications avec le groupe peuvent ne pas être autorisées.
 
-Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez [les obstacles à l’information dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
+Pour plus d’informations, consultez [les obstacles à l’information dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
 
-Dans SharePoint Online et OneDrive, les stratégies d’obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
+## <a name="information-barriers-and-sharepoint-and-onedrive"></a>Obstacles à l’information et SharePoint et OneDrive
+
+Dans SharePoint Online et OneDrive, les stratégies IB détectent et empêchent les types de collaboration non autorisés suivants :
 
 - Ajout d’un membre à un site
 - Accès au site ou au contenu par un utilisateur
 - Partage de site ou de contenu avec un autre utilisateur
 - Recherche sur un site
 
-Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez [les obstacles à l’information dans SharePoint Online](/sharepoint/information-barriers)
+Pour plus d’informations, consultez [Les obstacles à l’information dans SharePoint](/sharepoint/information-barriers) et [les obstacles à l’information dans OneDrive](/onedrive/information-barriers).
 
-## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
+## <a name="information-barriers-and-exchange-online"></a>Obstacles à l’information et Exchange Online
 
-Avant de commencer à utiliser IB, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et tous les modules complémentaires. Pour accéder à IB et l’utiliser, votre organisation doit disposer de l’un des abonnements ou modules complémentaires suivants :
+Les stratégies IB ne sont pas disponibles pour restreindre la communication et la collaboration entre les groupes et les utilisateurs dans les messages électroniques. Les stratégies IB sont basées sur [Exchange Online stratégies de carnet d’adresses (APS).](/exchange/address-books/address-book-policies/address-book-policies) Les ABA permettent aux organisations d’affecter virtuellement des utilisateurs à des groupes spécifiques afin de fournir des vues personnalisées du carnet d’adresses global (GAL) de l’organisation. Lorsque des stratégies IB sont créées, les ABA pour les stratégies sont automatiquement créées. À mesure que les stratégies d’ib sont ajoutées dans votre organisation, la structure et le comportement de votre gal changeront pour se conformer aux stratégies IB.
 
-- abonnement Microsoft 365 E5/A5 (version payante ou d’évaluation)
-- abonnement Office 365 E5/A5/A3/A1 (version payante ou d’évaluation)
-- Conformité avancée Office 365 module complémentaire (plus disponible pour les nouveaux abonnements)
-- Microsoft 365 E3/A3/A1 + le module complémentaire conformité Microsoft 365 E5/A5
-- Microsoft 365 E3/A3/A1 + le module complémentaire de gestion des risques internes Microsoft 365 E5/A5
+Avant de définir et d’appliquer des stratégies IB, vous devez supprimer toutes les stratégies de carnet d’adresses Exchange existantes dans votre organisation. Les stratégies IB sont basées sur des stratégies de carnet d’adresses et les stratégies ABP existantes ne sont pas compatibles avec les ABA créées par IB. Pour supprimer vos stratégies de carnet d’adresses existantes, consultez [Supprimer une stratégie de carnet d’adresses dans Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Une fois les stratégies IB activées et si vous avez activé le carnet d’adresses hiérarchique, tous les utilisateurs non inclus dans un segment IB voient le [carnet d’adresses hiérarchique](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange en ligne.
 
-Pour plus d’informations, consultez [Microsoft 365 conseils sur les licences pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Seuls Exchange Online déploiements sont actuellement pris en charge pour les stratégies IB. Si votre organisation doit définir et contrôler les communications par e-mail, envisagez d’utiliser [Exchange règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-Pour [définir ou modifier des stratégies d’obstacle aux informations](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
+## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-- Administrateur général Microsoft 365
-- Administrateur général Office 365
-- Administrateur de conformité
-- Gestion de la conformité IB
-
-(Pour en savoir plus sur les rôles et les autorisations, consultez [Autorisations dans le Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).)
-
-Vous devez être familiarisé avec les applets de commande PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’applets de commande PowerShell dans [l’article de procédure](information-barriers-policies.md), vous devez connaître d’autres détails, tels que des paramètres, pour votre organisation.
-
-## <a name="next-steps"></a>Étapes suivantes
-
-- [En savoir plus sur les obstacles à l’information dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [En savoir plus sur les obstacles à l’information dans SharePoint Online](/sharepoint/information-barriers)
-- [En savoir plus sur les obstacles à l’information dans OneDrive](/onedrive/information-barriers)
+- [Démarrer avec le cloisonnement de l’information](information-barriers-policies.md)
+- [Gérer les stratégies d’obstacle à l’information](information-barriers-edit-segments-policies.md)
 - [Voir les attributs qui peuvent être utilisés pour les stratégies d’obstacle à l’information](information-barriers-attributes.md)
-- [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md)
-- [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md)

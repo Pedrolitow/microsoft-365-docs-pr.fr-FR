@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182641"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363311"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -248,7 +248,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 - Les caractères génériques (*) sont autorisés dans les scénarios suivants :
 
-  - Un caractère générique gauche doit être suivi d’un point pour spécifier un sous-domaine.
+  - Un caractère générique gauche doit être suivi d’un point pour spécifier un sous-domaine. (applicable uniquement aux blocs)
 
     Par exemple, `*.contoso.com` est autorisé ; `*contoso.com` il n’est pas autorisé.
 
@@ -265,8 +265,6 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
   - Un tilde gauche implique un domaine et tous les sous-domaines.
 
     Par exemple `~contoso.com` , inclut `contoso.com` et `*.contoso.com`.
-
-- Les entrées d’URL qui contiennent des protocoles (par exemple, `http://`, `https://`ou `ftp://`) échouent, car les entrées d’URL s’appliquent à tous les protocoles.
 
 - Un nom d’utilisateur ou un mot de passe n’est pas pris en charge ou requis.
 
@@ -285,7 +283,6 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 - **Autoriser la correspondance** : contoso.com
 
 - **Autoriser les correspondances non mises en correspondance** :
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -295,7 +292,6 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
   - www.contoso.com/q=a@contoso.com
 
 - **Correspondance de bloc** :
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -308,15 +304,16 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Scénario : Caractère générique gauche (sous-domaine)
 
+> [!NOTE]
+> Ce scénario s’applique uniquement aux blocs.
+
 **Entrée** : `*.contoso.com`
 
-- **Autoriser la correspondance** et **bloquer la correspondance** :
-
+- **Correspondance de bloc** :
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Autoriser la mise en correspondance non mise en correspondance** et **Bloquer non mis en correspondance** :
-
+- **Bloc non mis en correspondance** :
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -327,13 +324,11 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 **Entrée** : `contoso.com/a/*`
 
 - **Autoriser la correspondance** et **bloquer la correspondance** :
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **Autoriser la mise en correspondance non mise en correspondance** et **Bloquer non mis en correspondance** :
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -344,13 +339,11 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 **Entrée** : `~contoso.com`
 
 - **Autoriser la correspondance** et **bloquer la correspondance** :
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Autoriser la mise en correspondance non mise en correspondance** et **Bloquer non mis en correspondance** :
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -360,7 +353,6 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 **Entrée** : `contoso.com/*`
 
 - **Autoriser la correspondance** et **bloquer la correspondance** :
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -373,17 +365,19 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scénario : Sous-domaine de caractères génériques gauche et suffixe générique droit
 
+> [!NOTE]
+> Ce scénario s’applique uniquement aux blocs.
+
 **Entrée** : `*.contoso.com/*`
 
-- **Autoriser la correspondance** et **bloquer la correspondance** :
-
+- **Correspondance de bloc** :
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Autoriser non mis en correspondance** et **Bloquer non mis en correspondance** : contoso.com/b
+- **Bloc non mis en correspondance** : contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>Scénario : Tilde gauche et droit
 

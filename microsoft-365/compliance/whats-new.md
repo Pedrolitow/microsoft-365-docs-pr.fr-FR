@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bfa6ce581b0bd4846ebe27b95cf27d1228b10b2
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 4af9cb3073e4fa150a2683c2dd2f125336ef01b8
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294608"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363145"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Nouveautés de Microsoft Purview
 
@@ -61,14 +61,13 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 
 ### <a name="data-lifecycle-management-and-records-management"></a>Gestion du cycle de vie des données et gestion des enregistrements
 
-- [Régir vos données avec Microsoft Purview](manage-data-governance.md) : les connecteurs de données sont supprimés de cette page et la solution de gestion des enregistrements est présentée comme un produit homologue.
-- [Paramètres courants pour les stratégies de rétention et les étiquettes de rétention](retention-settings.md) : reflète les nouvelles références de navigation et d’interface utilisateur pour l’Assistant Étiquette de rétention nouvellement conçu.
-- [Déclarez des enregistrements à l’aide d’étiquettes de rétention](declare-records.md) et [utilisez le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive](record-versioning.md) : nouvelles informations sur le nouveau paramètre d’étiquette « Déverrouiller cet enregistrement par défaut » en cours de déploiement en préversion.
-- [Utilisez le plan de fichiers pour créer et gérer des étiquettes de rétention](file-plan-manager.md#information-about-the-label-properties-for-import)  . La section d’importation divulgue désormais les paramètres d’étiquette qui ne sont pas actuellement pris en charge pour l’importation (révision de la disposition en plusieurs étapes et déverrouillage de cet enregistrement par défaut).
+- Avec la [modification du nom du produit](#changes-to-product-names), la **gouvernance des informations** est renommée **Gestion du cycle de vie des données** dans le portail de conformité.
+- En cours de déploiement : nouvelle conception pour la configuration des paramètres d’étiquette de rétention.
+- Actuellement en cours de déploiement : nouvelle option d’étiquette en préversion, « Déverrouiller cet enregistrement par défaut ». Pour plus d’informations, consultez [Configurer les étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records) et [utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive](record-versioning.md).
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-- Articles mis à jour pour l’intégration d’appareils macOS en disponibilité générale :
+- Articles mis à jour pour macOS’intégration d’appareil en disponibilité générale :
   - [En savoir plus sur le point de terminaison DLP](endpoint-dlp-learn-about.md)
   - [Configurer les paramètres de protection contre la perte de données de point de terminaison](dlp-configure-endpoint-settings.md)
   - [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md)
@@ -79,7 +78,7 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 
 ### <a name="device-onboarding"></a>Intégration d’appareils
 
-- Articles mis à jour pour l’intégration d’appareils macOS en disponibilité générale :
+- Articles mis à jour pour macOS’intégration d’appareil en disponibilité générale :
   - [Intégrer des appareils macOS à Microsoft 365 vue d’ensemble](device-onboarding-macos-overview.md)
   - [Intégrer et désactiver les appareils macOS dans les solutions de conformité à l’aide d’Intune pour les clients Microsoft Defender pour points de terminaison](device-onboarding-offboarding-macos-intune-mde.md)
   - [Intégrer et déconnecter des appareils macOS dans les solutions Microsoft Purview à l’aide d’Intune](device-onboarding-offboarding-macos-intune.md)
@@ -114,34 +113,33 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-- [Utilisez des étiquettes de confidentialité pour protéger le contenu dans les Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) : nouvelle configuration désormais disponible en préversion pour les autorisations de partage de site à l’aide de paramètres avancés PowerShell.
-- [Restreindre l’accès au contenu à l’aide d’étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md) : ajout du problème connu de spécification d’un groupe contenant des contacts de messagerie, avec un lien vers la base de connaissances publiée pour plus d’informations et des solutions de contournement.
-- [Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) : suppression du problème connu lié à la suppression OneDrive sites affichés de manière incorrecte dans les résultats de la simulation pour les stratégies d’étiquetage automatique)
-- [Activez la co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md) . Suite aux commentaires des clients, supprimez la légende dans la section Prérequis que cette fonctionnalité n’est pas encore prise en charge par le canal Semi-Annual Enterprise, puis ajoutez Semi-Annual Enterprise Channel (préversion) avec la version minimale 2202.
-- [Gérer les étiquettes de confidentialité dans Office applications](sensitivity-labels-office-apps.md) : les détails de prise en charge de l’application d’une étiquette par défaut aux documents existants sont mis à jour pour corriger que sur Windows, cette version est toujours déployée dans le canal bêta et est maintenant entièrement déployée pour le web.
+- Scénario nouvellement pris en charge pour SharePoint sites, maintenant en préversion : [Configurer les autorisations de partage de site à l’aide de paramètres avancés PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings)
+- [La co-création de fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md) est désormais disponible pour les tests avec le canal Semi-Annual Enterprise Channel (préversion).
+- Les comptes OneDrive supprimés sont désormais correctement affichés dans les résultats de simulation pour les stratégies d’étiquetage automatique.
+- Problème connu si vous [attribuez des autorisations à des contacts de messagerie dans des groupes](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content) lorsque vous configurez une étiquette de confidentialité pour le chiffrement.
 
 ### <a name="changes-to-product-names"></a>Modifications apportées aux noms des produits
 
-Pour relever les défis du milieu de travail décentralisé et riche en données d’aujourd’hui, nous introduisons [Microsoft Purview](https://aka.ms/microsoftpurview), un ensemble complet de solutions qui vous aide à comprendre, régir et protéger l’ensemble de votre patrimoine de données. Cette nouvelle famille de marques combine les fonctionnalités de l’ancienne carte de données Microsoft Purview et le portefeuille de conformité Microsoft 365 sur lequel les clients s’appuient déjà, fournissant une gouvernance unifiée des données et une gestion des risques pour votre organisation.
+Pour relever les défis du milieu de travail décentralisé et riche en données d’aujourd’hui, nous introduisons [Microsoft Purview](https://aka.ms/microsoftpurview), un ensemble complet de solutions qui vous aide à comprendre, régir et protéger l’ensemble de votre patrimoine de données. Cette nouvelle famille de marques combine les fonctionnalités de l’ancien Microsoft Purview Data Map et le portefeuille de conformité Microsoft 365 sur lequel les clients s’appuient déjà, fournissant une gouvernance unifiée des données et une gestion des risques pour votre organisation.
 
 | **Ancien nom** | **Nouveau nom** | **Description** |
 |:----------------|:-------------|:----------------|
-| audit avancé Microsoft 365 <br><br> audit de base Microsoft 365 | Audit de Microsoft Purview (Premium) <br><br> Audit Microsoft Purview (Standard)| Les solutions d’audit fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes judiciaires, aux enquêtes internes et aux obligations de conformité. Pour plus d’informations, consultez [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) et [Microsoft Purview Advanced Audit (Standard).](set-up-basic-audit.md) |
-| conformité des communications Microsoft 365 | Conformité des communications Microsoft Purview | La conformité des communications permet de réduire les risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les canaux de communication d’entreprise et les violations de stratégie. Pour en savoir plus, consultez [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
-| Gestionnaire de conformité Microsoft | Gestionnaire de conformité Microsoft Purview | Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs. Pour plus d’informations, consultez [le Gestionnaire de conformité Microsoft Purview](compliance-manager.md). |
-| clé client Microsoft 365 | Clé client Microsoft Purview | La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés, et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Pour plus d’informations, consultez [la clé client Microsoft Purview](customer-key-overview.md). |
-| Customer Lockbox dans Office 365 | Microsoft Purview Customer Lockbox | Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer des opérations de service sans votre approbation explicite. Customer Lockbox vous permet d’entrer dans le processus de flux de travail d’approbation utilisé par Microsoft pour vous assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour plus d’informations, consultez [Microsoft Purview Customer Lockbox](customer-lockbox-requests.md). |
-| Protection contre la perte de données | Protection contre la perte de données Microsoft Purview | DLP permet de protéger les données sensibles et de réduire les risques en empêchant les utilisateurs de partager ces données de manière inappropriée avec des personnes qui ne devraient pas les avoir. Pour plus d’informations, consultez [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md). |
-| Chiffrement à double clé pour Microsoft 365 | Chiffrement à double clé Microsoft Purview | Double Key Encryption (DKE) utilise deux clés ensemble pour accéder au contenu protégé. Microsoft stocke une clé dans Microsoft Azure, et vous conservez l’autre clé. Pour en savoir plus, consultez [Le chiffrement à double clé Microsoft Purview](double-key-encryption.md) |
-| Microsoft 365 obstacles à l’information | Cloisonnement de l’information Microsoft Purview | Les obstacles à l’information sont une solution qui limite la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Pour en savoir plus, consultez [Microsoft Purview Information Barriers](information-barriers-solution-overview.md). |
-| Microsoft Information Protection | Protection de l'information Microsoft Purview | La protection des informations vous aide à découvrir, classifier et protéger des informations sensibles où qu’elles résident ou voyagent. Pour en savoir plus, consultez [Microsoft Purview Information Protection](information-protection.md). |
-| Gouvernance des informations Microsoft | Gestion du cycle de vie des données Microsoft Purview | La gestion du cycle de vie des données vous fournit des outils et des fonctionnalités pour conserver le contenu dont vous avez besoin pour conserver et supprimer le contenu que vous n’avez pas. Pour plus d’informations, consultez [Gestion du cycle de vie des données Microsoft Purview](data-lifecycle-management.md). |
-| Microsoft 365 : gestion des risques internes | Microsoft Purview : gestion des risques internes | La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. Pour en savoir plus, consultez [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
-| Chiffrement de messages Office 365 | Chiffrement des messages Microsoft Purview | Avec Le chiffrement des messages, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes internes et externes à votre organisation. Pour plus d’informations, consultez [Chiffrement des messages Microsoft Purview](ome.md). |
-| Privileged Access Management dans Microsoft 365 | Privileged Access Management Microsoft Purview | Privileged Access Management permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Pour plus d’informations, consultez [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
-| Connecteurs de données Microsoft | Connecteurs de données Microsoft Purview | Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données non-Microsoft tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans des boîtes aux lettres de votre organisation Microsoft 365. Pour plus d’informations, consultez [les connecteurs de données Microsoft Purview](compliance-extensibility.md). |
+| audit avancé Microsoft 365 <br><br> audit de base Microsoft 365 | Audit de Microsoft Purview (Premium) <br><br> audit Microsoft Purview (Standard)| Les solutions d’audit fournissent une solution intégrée pour aider les organisations à répondre efficacement aux événements de sécurité, aux enquêtes judiciaires, aux enquêtes internes et aux obligations de conformité. Pour plus d’informations, consultez [Microsoft Purview Audit avancé (Premium)](advanced-audit.md) et [Microsoft Purview Audit avancé (Standard).](set-up-basic-audit.md) |
+| conformité des communications Microsoft 365 | Conformité des communications Microsoft Purview | La conformité des communications permet de réduire les risques en vous aidant à détecter, capturer et prendre rapidement des mesures correctives pour les canaux de communication d’entreprise et les violations de stratégie. Pour en savoir plus, consultez [Conformité des communications Microsoft Purview](communication-compliance-solution-overview.md). |
+| Gestionnaire de conformité Microsoft | Gestionnaire de conformité Microsoft Purview | Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs. Pour en savoir plus, consultez [Microsoft Purview Gestionnaire de conformité](compliance-manager.md). |
+| clé client Microsoft 365 | clé client Microsoft Purview | La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés, et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Pour en savoir plus, consultez [Microsoft Purview clé client](customer-key-overview.md). |
+| Customer Lockbox dans Office 365 | Microsoft Purview Customer Lockbox | Customer Lockbox garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer des opérations de service sans votre approbation explicite. Customer Lockbox vous permet d’entrer dans le processus de flux de travail d’approbation utilisé par Microsoft pour vous assurer que seules les demandes autorisées autorisent l’accès à votre contenu. Pour en savoir plus, consultez [Microsoft Purview Customer Lockbox](customer-lockbox-requests.md). |
+| Protection contre la perte de données | Protection contre la perte de données Microsoft Purview | DLP permet de protéger les données sensibles et de réduire les risques en empêchant les utilisateurs de partager ces données de manière inappropriée avec des personnes qui ne devraient pas les avoir. Pour en savoir plus, consultez [Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md). |
+| Chiffrement à double clé pour Microsoft 365 | chiffrement à double clé Microsoft Purview | Double Key Encryption (DKE) utilise deux clés ensemble pour accéder au contenu protégé. Microsoft stocke une clé dans Microsoft Azure, et vous conservez l’autre clé. Pour en savoir plus, consultez [Microsoft Purview chiffrement à double clé](double-key-encryption.md) |
+| Microsoft 365 obstacles à l’information | Cloisonnement de l’information Microsoft Purview | Les obstacles à l’information sont une solution qui limite la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Pour en savoir plus, consultez [Microsoft Purview obstacles à l’information](information-barriers-solution-overview.md). |
+| Microsoft Information Protection | Protection de l'information Microsoft Purview | La protection des informations vous aide à découvrir, classifier et protéger des informations sensibles où qu’elles résident ou voyagent. Pour en savoir plus, consultez [Protection des données Microsoft Purview](information-protection.md). |
+| Gouvernance des informations Microsoft | Gestion du cycle de vie des données Microsoft Purview | La gestion du cycle de vie des données vous fournit des outils et des fonctionnalités pour conserver le contenu dont vous avez besoin pour conserver et supprimer le contenu que vous n’avez pas. Pour en savoir plus, consultez [Gestion du cycle de vie des données Microsoft Purview](data-lifecycle-management.md). |
+| Microsoft 365 : gestion des risques internes | Microsoft Purview : gestion des risques internes | La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité des utilisateurs à risque. Pour en savoir plus, consultez [Gestion des risques internes Microsoft Purview](insider-risk-management.md). |
+| Chiffrement de messages Office 365 | Chiffrement des messages Microsoft Purview | Avec Le chiffrement des messages, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes internes et externes à votre organisation. Pour en savoir plus, consultez [Chiffrement de messages Microsoft Purview](ome.md). |
+| Privileged Access Management dans Microsoft 365 | Privileged Access Management Microsoft Purview | Privileged Access Management permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Pour en savoir plus, consultez [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
+| Connecteurs de données Microsoft | connecteurs de données Microsoft Purview | Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données non-Microsoft tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans des boîtes aux lettres de votre organisation Microsoft 365. Pour plus d’informations, consultez [Microsoft Purview connecteurs de données](compliance-extensibility.md). |
 | Microsoft 365 advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Pour en savoir plus, consultez [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) et [Microsoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
-| Centre de conformité Microsoft 365 | Portail de conformité Microsoft Purview | Portail d’administration pour accéder aux solutions et au catalogue de solutions dans la suite Microsoft 365 E5 Conformité. Pour en savoir plus, consultez le [portail de conformité Microsoft Purview](microsoft-365-compliance-center.md). |
+| Centre de conformité Microsoft 365 | Portail de conformité Microsoft Purview | Portail d’administration pour accéder aux solutions et au catalogue de solutions dans la suite Microsoft 365 E5 Conformité. Pour en savoir plus, consultez [portail de conformité Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="march-2022"></a>Mars 2022
 
@@ -178,11 +176,11 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 ### <a name="microsoft-information-protection"></a>Microsoft Information Protection
 
-- [Prise en charge des notes de publication du jeu de caractères sur deux octets](mip-dbcs-relnotes.md) - ajout de conseils pour macOS.
+- [Prise en charge des notes de publication du jeu de caractères sur deux octets](mip-dbcs-relnotes.md) : ajout de conseils pour macOS.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [Configurer les paramètres Priva](/privacy/priva/priva-settings) : mise à jour des informations de clarification sur les périodes de rétention des données pour les demandes de droits des personnes concernées ; ajout de détails sur la gestion et l’application de balises de révision des données pour les demandes de droits d’objet.
+- [Configurer Priva paramètres](/privacy/priva/priva-settings) : mise à jour des informations de clarification sur les périodes de rétention des données pour les demandes de droits d’objet ; ajout de détails sur la gestion et l’application de balises de révision des données pour les demandes de droits d’objet.
 - [Créer une demande de droits d’objet](/privacy/priva/subject-rights-requests-create) : ajout de détails sur l’affinement des recherches et le choix des conditions et des attributs ; ajout d’informations sur les nouvelles fonctionnalités qui permettent aux utilisateurs de sélectionner toutes les versions de SharePoint éléments dans leur recherche (par rapport au paramètre par défaut, qui retourne uniquement la version actuelle des éléments SharePoint).
 - [Passer en revue les données d’une demande de droits d’objet](/privacy/priva/subject-rights-requests-data-review) : ajout de détails à l’étape 3 pour l’examen des éléments au cours de l’étape de révision des données, y compris le marquage des fichiers en tant qu’inclusion/exclusion, l’annotation des fichiers pour appliquer des actions, l’application de balises et la saisie de notes.
 - [Générer des rapports et répondre à une demande de droits d’objet](/privacy/priva/subject-rights-requests-reports) : ajout de détails sur la façon de comprendre les rapports ; clarifié quand un package d’exportation est généré et comment utiliser son contenu ; ajout d’informations sur les journaux d’audit, les rapports de fichiers étiquetés et les périodes de rétention pour les données et les rapports SRR.
@@ -222,7 +220,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 ### <a name="microsoft-purview-data-lifecycle-management"></a>Gestion du cycle de vie des données Microsoft Purview
 
-- La documentation relative à ce qui était auparavant Microsoft Information Governance a été considérablement révisée et restructurée pour vous aider à trouver plus facilement des informations relatives aux solutions que vous configurez dans le portail de conformité Microsoft Purview : Connecteurs de données, Gestion du cycle de vie des données et Gestion des enregistrements. Dans le cadre de cette révision, la documentation fournit une distinction plus claire entre les scénarios de rétention pour la gestion du cycle de vie des données et la gestion des enregistrements.
+- La documentation relative à ce qui était auparavant Microsoft Information Governance a été considérablement révisée et restructurée pour vous aider à trouver plus facilement des informations relatives aux solutions que vous configurez dans le portail de conformité Microsoft Purview : connecteurs de données, gestion du cycle de vie des données et gestion des enregistrements. Dans le cadre de cette révision, la documentation fournit une distinction plus claire entre les scénarios de rétention pour la gestion du cycle de vie des données et la gestion des enregistrements.
 - [Apprenez-en davantage sur la gestion du cycle de vie des données](data-lifecycle-management.md) , nouveauté pour prendre en charge la restructuration.
 - [Démarrage avec la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md) - nouveau, pour remplacer « Démarrage par rétention », cet article inclut les étapes de prise en main de toutes les fonctionnalités de gestion du cycle de vie des données, notamment la rétention.
 - [Créez des étiquettes de rétention pour les exceptions à vos stratégies de rétention](create-retention-labels-data-lifecycle-management.md) . Nouveau scénario identifié pour l’utilisation d’étiquettes de rétention pour la gestion du cycle de vie des données plutôt que pour la gestion des enregistrements.
@@ -230,7 +228,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [La gestion de la confidentialité est désormais Microsoft Priva](/privacy/priva/priva-overview) - mise à jour pour renommer le produit et ses solutions, Priva Privacy Risk Management et Priva Subject Rights Requests.
+- [La gestion de la confidentialité est maintenant Microsoft Priva](/privacy/priva/priva-overview) - mise à jour pour renommer le produit et ses solutions, Gestion des risques de confidentialité Priva et Demandes de droits des personnes concernées Priva.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -257,7 +255,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 ### <a name="information-protection"></a>Protection des informations
 
-- [Déployer une solution de protection des informations avec Microsoft Purview](information-protection-solution.md) - Nouvelles instructions pas à pas pour les clients qui recherchent une feuille de route normative pour déployer Microsoft Purview Information Protection
+- [Déployer une solution de protection des informations avec Microsoft Purview](information-protection-solution.md) - Nouvelles instructions pas à pas pour les clients qui recherchent une feuille de route normative pour déployer Protection des données Microsoft Purview
 
 ### <a name="retention-and-records-management"></a>Conservation et gestion des enregistrements
 
@@ -272,7 +270,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
-Les nouvelles mises à jour de contenu peuvent être affichées dans [les nouveautés du Gestionnaire de conformité Microsoft Purview](compliance-manager-whats-new.md).
+Les nouvelles mises à jour de contenu peuvent être affichées dans [les nouveautés de Microsoft Purview Gestionnaire de conformité](compliance-manager-whats-new.md).
 
 ### <a name="device-onboarding"></a>Intégration d’appareils
 
@@ -306,4 +304,4 @@ Ajout des nouveaux articles suivants :
 - [Actualiser votre fichier de table source d’informations sensibles](sit-use-exact-data-refresh-data.md)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-- Le nom d’étendue des étiquettes de mappage de [données Microsoft Purview](/azure/purview/create-sensitivity-label) est désormais « Ressources de données schématisées ».
+- Le nom d’étendue de [Microsoft Purview étiquettes data map](/azure/purview/create-sensitivity-label) est désormais « Ressources de données schématisées ».

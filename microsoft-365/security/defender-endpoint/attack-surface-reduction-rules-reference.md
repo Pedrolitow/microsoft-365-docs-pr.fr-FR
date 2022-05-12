@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294775"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363057"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -58,28 +58,30 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 >
 > Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server2012R2&nbsp;&nbsp; et Windows&nbsp; Server2016&nbsp; sont disponibles pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Nom de la règle| &nbsp;Windows 11 <br>et<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>et<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1, 2](#fn1)]<sup></sup> |
+| Nom de la règle| &nbsp;Windows 11 <br>et<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>et<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> version 1803 (canal semi-annuel) ou ultérieure | v | v |
-| [Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Y version 1809 ou ultérieure | v | v | v | v |
+| [Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v <br> version 1809 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v | v | v | v | v |
-| [Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v <br> version 1803 ou ultérieure | v | v | v | v |
+| [Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | v | v | v | v | v |
-| [Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v <br> version 1803 ou ultérieure | v | v | v | v |
+| [Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) | v | v | v | v | v |
 | [Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v | v | N | N |
 | [Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v | v | v | v |
 | [Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v | v | v | v |
 | [Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v | v | v | v |
-| [Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Exclusions de fichiers et de dossiers non prises en charge._ | v <br> version 1903 (build 18362) ou ultérieure | v | v <br> version 1903 (build 18362) ou ultérieure | N | N |
-| [Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> version 1803 ou ultérieure | v | v | v | v |
+| [Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Exclusions de fichiers et de dossiers non prises en charge._ | v <br> version 1903 (build 18362) ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v <br> version 1903 (build 18362) ou ultérieure | N | N |
+| [Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v | v | v | v |
 | [Bloquer les appels d’API Win32 à partir de macros Office](#block-win32-api-calls-from-office-macros) | v | v | v | N | N |
-| [Utiliser une protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v <br> version 1803 ou ultérieure | v | v | v | v |
+| [Utiliser une protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 
 (<a id="fn1">1</a>) Fait référence à la solution unifiée moderne pour Windows Server 2012 et 2016. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Defender pour point de terminaison](configure-server-endpoints.md).
 
 (<a id="fn1">2</a>) Pour Windows&nbsp; Server 2016 et Windows&nbsp; Server 2012R2&nbsp;, la version minimale requise de Microsoft Endpoint Configuration Manager est la version 2111.
+
+(<a id="fn1">3</a>) La version et le numéro de build s’appliquent uniquement à Windows&nbsp; 10.
 
 ## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de configuration pris en charge
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d37723e45c5c4049e913422b2500b74d36c701eb
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789709"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363262"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -38,7 +38,7 @@ ms.locfileid: "64789709"
 > [!TIP]
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[La protection réseau](network-protection.md) permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux susceptibles d’héberger des escroqueries, des exploits et d’autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour voir quelles applications seraient bloquées avant de l’activer.
+[La protection réseau](network-protection.md) permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux susceptibles d’héberger des escroqueries, des exploits et d’autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour voir quelles applications seraient bloquées avant d’activer la protection réseau.
 
 [En savoir plus sur les options de configuration du filtrage réseau.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
@@ -92,7 +92,7 @@ Activez la protection réseau à l’aide de l’une des méthodes suivantes :
 
 ### <a name="mobile-device-management-mdm"></a>Gestion des périphériques mobiles (GPM)
 
-Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) pour activer ou désactiver la protection réseau ou activer le mode d’audit.
+Utilisez le fournisseur[./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (fournisseur de solutions Cloud) pour activer ou désactiver la protection réseau ou activer le mode d’audit.
 
 [Mettez à jour la plateforme anti-programme malveillant Microsoft Defender vers la dernière version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) avant d’activer ou de désactiver la protection réseau ou d’activer le mode d’audit.
 
@@ -140,27 +140,19 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
    > [!IMPORTANT]
    > Pour activer entièrement la protection réseau, vous devez définir l’option stratégie de groupe **sur Activé** et également sélectionner **Bloquer** dans le menu déroulant options.
 
-Vérifiez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
-
-1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre**.
-
-2. Accéder à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
-
-3. Sélectionnez **EnableNetworkProtection** et confirmez la valeur :
-   - 0=Désactivé
-   - 1=Activé
-   - 2=Audit
+   > [!NOTE]
+   > Facultatif : suivez les étapes décrites dans [Vérifier si la protection réseau est activée](#check-if-network-protection-is-enabled) pour vérifier que vos paramètres de stratégie de groupe sont corrects.
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. Ouvrez la console Gestionnaire de configuration.
 
-2. Accédez à **Ressources et conformité** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**. 
+2. Accédez à **Ressources et conformité** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**.
 
 3. Sélectionnez **Créer une stratégie Exploit Guard** dans le ruban pour créer une stratégie.
    - Pour modifier une stratégie existante, sélectionnez la stratégie, puis sélectionnez **Propriétés** dans le ruban ou dans le menu contextuel. Modifiez l’option **Configurer la protection réseau** à partir de l’onglet **Protection réseau** .  
 
-4. Dans la page **Général** , spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **de protection réseau** est activée. 
+4. Dans la page **Général** , spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **de protection réseau** est activée.
 
 5. Dans la page **Protection réseau** , sélectionnez l’un des paramètres suivants pour l’option **Configurer la protection réseau** :
    - **Bloquer**
