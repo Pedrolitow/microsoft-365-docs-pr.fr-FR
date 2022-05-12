@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings dans Outlook pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: 9f8e1c4428133dce6f6ec9e539464271abfd8ffd
-ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
+ms.openlocfilehash: fe7a680ec5980ab1526d4ccb5f80514210bc3605
+ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364278"
+ms.locfileid: "65372163"
 ---
 # <a name="bookings-in-outlook"></a>Bookings dans Outlook
 
@@ -58,7 +58,7 @@ Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** 
 1. Vérifiez l’accès au contrôle EWS en exécutant la commande suivante.
 
    ```PowerShell
-   Get-Organizationconfig | Format-List EwsEnabled
+   Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
     Si la commande retourne « EwsEnabled : **$true** », passez à l’étape 2.
