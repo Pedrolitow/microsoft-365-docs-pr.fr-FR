@@ -26,20 +26,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 joints à Active Directory en quelques étapes.
-ms.openlocfilehash: 2c764f8f6eb32b1ecc2e3bbf8dab3e4ad170f8b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: de50fc8ac5ad3fe5d5f8cd5cfdfd781d94062358
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094619"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319093"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer la gestion des appareils Windows 10 joints à un domaine par Microsoft 365 Business Premium
 
+Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
+
+Pour configurer cette protection, vous pouvez implémenter des **appareils hybrides Azure AD joints**. Ces dispositifs sont joints à la fois à votre Active Directory sur site et à votre Active Directory Azure.
+
 > [!NOTE]
 > Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
-
-Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
-Pour configurer cette protection, vous pouvez implémenter des **appareils hybrides Azure AD joints**. Ces dispositifs sont joints à la fois à votre Active Directory sur site et à votre Active Directory Azure.
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Regarder : Configurer la jonction Azure Active Directory hybride
 
@@ -124,7 +125,7 @@ La première commande établit une connexion avec le cloud Microsoft et, lorsque
 
 ## <a name="get-the-latest-administrative-templates"></a>Téléchargez l’outil de modèles d’administration.
 
-Si vous ne voyez pas la stratégie **Activer l’inscription MDM automatique à l’aide des informations d’identification de Azure AD par défaut**, cela peut être dû au fait qu’ADMX n’est pas installé pour Windows 10, version 1803 ou ultérieure. Pour résoudre le problème, procédez comme suit (remarque : la dernière version de MDM.admx est rétrocompatible) :
+Si vous ne voyez pas la stratégie **Activer l’inscription MDM automatique à l’aide des informations d’identification de Azure AD par défaut**, cela peut être dû au fait qu’ADMX n’est pas installé pour Windows 10, version 1803 ou ultérieure. Pour résoudre le problème, procédez comme suit (Remarque : le dernier fichier MDM.admx est à compatibilité descendante) :
 
 1. Télécharger et installer [Modèles d’administration (.admx) pour Windows 10, mise à jour d’octobre 2020 (20H2)](https://www.microsoft.com/download/102157).
 
@@ -144,10 +145,18 @@ Si vous ne voyez pas la stratégie **Activer l’inscription MDM automatique à 
 
 ## <a name="related-content"></a>Contenu connexe
 
-- [synchroniser les utilisateurs du domaine avec Microsoft 365](../admin/setup/manage-domain-users.md)(article)\
+- [Synchroniser les utilisateurs de domaine avec Microsoft 365](../admin/setup/manage-domain-users.md)
 
-- [créer un groupe dans le centre d’administration](../admin/create-groups/create-groups.md) (article)\
+- [Créer un groupe dans le Centre d’administration](../admin/create-groups/create-groups.md)
 
-- [Tutoriel : Configurer la jonction Azure Active Directory hybride pour les domaines managés](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)
+- [Tutoriel : Configurer la jointure Azure Active Directory hybride pour les domaines managés](/azure/active-directory/devices/hybrid-azuread-join-managed-domains)
 
-- [10 principales façons de sécuriser les plans Microsoft 365 pour les entreprises](../admin/security-and-compliance/secure-your-business-data.md)
+- [Configurer des mots de passe en libre-service](../admin/add-users/let-users-reset-passwords.md)
+
+- [Configurer la gestion des groupes en libre-service](/azure/active-directory/enterprise-users/groups-self-service-management)
+
+- [Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)
+
+## <a name="next-objective"></a>Objectif suivant :
+
+[Préparation au déploiement client Office](m365bp-prepare-for-office-client-deployment.md)

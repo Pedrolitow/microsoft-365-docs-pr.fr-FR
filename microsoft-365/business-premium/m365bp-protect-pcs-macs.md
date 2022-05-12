@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094160"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318831"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows 10 non gérés dans Microsoft 365 Business Premium
 
@@ -57,7 +57,7 @@ Si vous disposez d’une version antérieure de Windows et que vous utilisez Mic
 **Activer le Pare-feu Windows**<p>
 Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu déjà activé. La désactivation du Pare-feu Windows peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable(s) aux accès non autorisés. Pour obtenir des instructions, consultez [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off).
 
-OK, mission terminée ! À présent, nous allons travailler sur [la sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
+OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
@@ -72,5 +72,7 @@ Vous pouvez également réduire le risque de logiciels malveillants en utilisant
 **Activer la protection pare-feu**<p>
 Utilisez les paramètres du pare-feu pour protéger votre Mac contre les contacts indésirables émanant d’autres ordinateurs lorsque vous êtes connecté à Internet ou à un réseau. Sans cette protection, votre Mac peut être plus vulnérable aux accès non autorisés. Pour obtenir des instructions, consultez [À propos de pare-feu d’applications](https://support.apple.com/HT201642).
 
-OK, mission terminée ! À présent, nous allons travailler sur [la sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
+## <a name="next-mission"></a>Prochaine mission
+
+OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
 

@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration et de la sécurisation des appareils gérés contre les menaces de sécurité et les cyberattaques. Implémentez des défenses de cybersécurité et une protection des points de terminaison par le biais de l’inscription et de l’intégration de tous les appareils. Découvrez comment configurer des stratégies d’appareil et gérer des groupes d’appareils.
-ms.openlocfilehash: 17d637e980be09e8e936ef85ca2ed05767a12cfb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 12a80864c0bd131c96dc57d89d2638521290827e
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101655"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319919"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configurer et sécuriser des appareils gérés
 
-Bienvenue dans votre dernière mission critique. Ici, vous allez intégrer et implémenter la protection pour tous les appareils gérés dans votre organisation. Intégrez-vous à Defender pour vous assurer que les logiciels malveillants et antivirus sont toujours à jour et définissez des stratégies qui vous aident à verrouiller vos systèmes. Soyez assuré que vous avez fait ce que vous pouvez pour être protégé une fois que ces objectifs ont été atteints !
+Bienvenue dans votre dernière mission critique. Ici, vous allez intégrer et implémenter la protection pour tous les appareils gérés dans votre organisation. Vous souhaiterez intégrer Defender pour vous assurer que les programmes malveillants et antivirus sont toujours à jour et définir des stratégies qui vous aident à verrouiller vos systèmes. Ensuite, assurez-vous que tous les appareils Windows sont protégés et configurés pour le déploiement d’Office. Soyez assuré que vous avez fait ce que vous pouvez pour être protégé une fois que ces objectifs ont été atteints !
 
 Vos objectifs de mission :
 
