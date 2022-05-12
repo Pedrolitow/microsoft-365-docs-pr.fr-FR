@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 631a141ca6c898c6394bfd34839fd65d351fe8fc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665533"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368174"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -30,13 +30,17 @@ ms.locfileid: "64665533"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/index.yml)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-La **liste Appareils** affiche une liste des appareils de votre réseau où des alertes ont été générées. Par défaut, la file d’attente affiche les appareils affichés au cours des 30 derniers jours.
+**L’inventaire des** appareils affiche une liste des appareils de votre réseau où des alertes ont été générées. Par défaut, la file d’attente affiche les appareils affichés au cours des 30 derniers jours.
 
 En un coup d’œil, vous verrez des informations telles que le domaine, le niveau de risque, la plateforme du système d’exploitation et d’autres détails pour faciliter l’identification des appareils les plus à risque.
+
+> [!NOTE]
+> L’inventaire des appareils est disponible dans différents services Microsoft 365 Defender. Les informations disponibles varient en fonction de votre licence. Vous obtiendrez l’ensemble de fonctionnalités le plus complet lors de l’utilisation [de Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 Vous pouvez choisir parmi plusieurs options pour personnaliser l’affichage de liste des appareils. En haut de la navigation, vous pouvez :
 

@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: c653e4f84ad3f4dd537ab82382e8a57da7d2876e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099904"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319130"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
 
@@ -52,7 +52,7 @@ Votre abonnement inclut des [stratégies de sécurité prédéfinies](../securit
 
 ### <a name="what-are-preset-security-policies"></a>Que sont les stratégies de sécurité prédéfinies ?
 
-Les stratégies de sécurité prédéfinies fournissent une protection pour votre contenu de messagerie et de collaboration. Ces stratégies sont les suivantes :
+Les stratégies de sécurité prédéfinies fournissent une protection pour votre contenu de messagerie et de collaboration. Ces stratégies se composent des éléments suivants :
 
 - *Profils*, qui déterminent le niveau de protection
 - *Stratégies* (par exemple, anti-courrier indésirable, anti-programme malveillant, anti-hameçonnage, paramètres d’usurpation d’identité, pièces jointes fiables et liens fiables)
@@ -183,7 +183,7 @@ En fonction de l’alerte spécifique, vous pouvez afficher vos alertes dans le 
 
 | Type d’alerte  | Procédure  |
 |---------|---------|
-| Alerte de sécurité, par exemple lorsqu’un utilisateur clique sur un lien malveillant, qu’un e-mail est signalé comme programme malveillant ou hameçonnage, ou qu’un appareil est détecté comme contenant des programmes malveillants     | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et, sous **Email & Collaboration**, sélectionnez **Stratégies & stratégie** > **Stratégie d’alerte**. Vous pouvez également accéder directement à <https://security.microsoft.com/alertpolicies>. |
+| Alerte de sécurité, par exemple lorsqu’un utilisateur clique sur un lien malveillant, qu’un e-mail est signalé comme programme malveillant ou hameçonnage, ou qu’un appareil est détecté comme contenant des programmes malveillants     | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et sous **Email et collaboration**, sélectionnez **Stratégies et règles** > **stratégie d’alerte**. Vous pouvez également accéder directement à <https://security.microsoft.com/alertpolicies>. |
 | Alerte de conformité, par exemple lorsqu’un utilisateur partage des informations sensibles ou confidentielles (alerte de protection contre la perte de données) ou qu’il existe un volume inhabituel de partage de fichiers externes (alerte de gouvernance des informations)    | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, puis sélectionnez **Stratégies** > **Alerte** > **Stratégies d’alerte**.  |
 
 Pour plus d’informations, consultez [Afficher les alertes](../compliance/alert-policies.md#view-alerts).
@@ -212,4 +212,6 @@ Vous pouvez empêcher les membres de votre organisation de partager leurs calend
 
 Si vos utilisateurs sont autorisés à partager leurs calendriers, consultez [ces instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) pour savoir comment partager à partir d’Outlook sur le web.
 
-Ok, il est maintenant temps de commencer votre mission de [**configurer des appareils BYOD**](m365bp-devices-overview.md).
+## <a name="next-steps"></a>Étapes suivantes
+
+À présent, commençons la mission de [**configurer des appareils BYOD**](m365bp-devices-overview.md).

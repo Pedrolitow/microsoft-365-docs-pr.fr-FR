@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cbfc82f56cc1922a663c31defe30dc61c2d3dd9b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664147"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368108"
 ---
 # <a name="exclude-devices"></a>Exclure des appareils
 
@@ -33,11 +33,11 @@ ms.locfileid: "64664147"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-threat-and-vulnerability-management"></a>Exclure des appareils de Gestion des menaces et des vulnérabilités
+## <a name="exclude-devices-from-vulnerability-management"></a>Exclure des appareils de gestion des vulnérabilités
 
-L’exclusion des appareils inactifs, dupliqués ou hors de portée vous permet de vous concentrer sur la découverte et la hiérarchisation des risques sur vos appareils actifs. Cette action peut également contribuer à refléter un score d’exposition Gestion des menaces et des vulnérabilités plus précis, car les appareils exclus ne seront pas visibles dans vos rapports Gestion des menaces et des vulnérabilités.
+L’exclusion des appareils inactifs, dupliqués ou hors de portée vous permet de vous concentrer sur la découverte et la hiérarchisation des risques sur vos appareils actifs. Cette action peut également contribuer à refléter un score d’exposition gestion des vulnérabilités plus précis, car les appareils exclus ne seront pas visibles dans vos rapports gestion des vulnérabilités.
 
-Une fois les appareils exclus, vous ne pourrez plus afficher les informations mises à jour ou pertinentes sur les vulnérabilités et les logiciels installés sur ces appareils. Elle affecte toutes les pages Gestion des menaces et des vulnérabilités, les rapports et les tables associées dans la chasse avancée.
+Une fois les appareils exclus, vous ne pourrez plus afficher les informations mises à jour ou pertinentes sur les vulnérabilités et les logiciels installés sur ces appareils. Elle affecte toutes les pages gestion des vulnérabilités, les rapports et les tables associées dans la chasse avancée.
 
 Même si la fonctionnalité d’exclusion d’appareil supprime les données de l’appareil de gestion des vulnérabilités pages et rapports, les appareils restent connectés au réseau et peuvent toujours présenter un risque pour l’organisation. Vous pourrez annuler l’exclusion de l’appareil à tout moment.
 
