@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
-ms.openlocfilehash: 7dc8cfc095167021df2cec093734ab9c1b101868
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286943"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302351"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -70,7 +70,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 5. Répétez ces étapes pour créer d’autres étiquettes. Toutefois, si vous voulez créer une sous-étiquette, commencez par sélectionner l’étiquette parent, puis **...** pour **Plus d’actions**, enfin **Ajouter une sous-étiquette**.
 
-6. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre et déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
+6. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre, puis déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
 
 Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier l'étiquette** :
 
@@ -92,7 +92,7 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 
 D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](/powershell/module/exchange/set-label) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
-Par exemple :
+Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
@@ -195,21 +195,21 @@ Vous pouvez également utiliser [Remove-Label](/powershell/module/exchange/remov
 
 Dans un environnement de production, il est peu probable que vous deviez supprimer des étiquettes de confidentialité d’une stratégie d’étiquette ou supprimer des étiquettes de confidentialité. Il est possible que vous deviez effectuer l’une ou l’autre de ces actions pendant une phase de test initiale. Assurez-vous de comprendre ce qui se passe lorsque vous effectuez l’une ou l’autre de ces actions.
 
-La retrait d’une étiquette d’une stratégie d’étiquette est moins risquée que sa suppression, et vous pouvez toujours l’ajouter à une stratégie d’étiquette ultérieurement si nécessaire :
+Le retrait d'une étiquette d'une stratégie d'étiquetage est moins risqué que sa suppression, et elle peut toujours être rajoutée plus tard si nécessaire. Vous ne pourrez pas supprimer une étiquette si elle se trouve toujours dans une stratégie d’étiquette.
 
-- Lorsque vous retirez une étiquette d’une stratégie d’étiquette afin que l’étiquette ne soit plus publiée aux utilisateurs spécifiés à l’origine, la prochaine fois que la stratégie d’étiquette est actualisée, les utilisateurs ne verront plus cette étiquette pour les sélectionner dans leur application Office. En revanche, si l’étiquette a été appliquée aux documents ou aux courriers électroniques, elle n’est pas retirée de ce contenu. Tout chiffrement appliqué par l’étiquette est conservé et le modèle de protection sous-jacent reste publié. 
-
-- Pour les étiquettes retirées mais qui ont été précédemment appliquées au contenu, les utilisateurs qui utilisent l’étiquetage prédéfini pour Word, Excel et PowerPoint affichent tout de même le nom d’étiquette appliqué dans la barre d’État. De même, les étiquettes qui ont été retirées et qui ont été appliquées aux sites SharePoint affichent encore le nom de l’étiquette dans la colonne **Sensibilité**.
+Lorsque vous retirez une étiquette d’une stratégie d’étiquette afin que l’étiquette ne soit plus publiée aux utilisateurs spécifiés à l’origine, la prochaine fois que la stratégie d’étiquette est actualisée, les utilisateurs ne verront plus cette étiquette pour les sélectionner dans leur application Office. Si cette étiquette est déjà appliquée, elle n’est pas supprimée du contenu ou du conteneur. Pour les étiquettes retirées mais qui ont été précédemment appliquées au contenu, les utilisateurs qui utilisent l’étiquetage prédéfini pour Word, Excel et PowerPoint affichent tout de même le nom d’étiquette appliqué dans la barre d’État. Une étiquette de conteneur appliquée continue de protéger le site Teams ou SharePoint.
 
 Par comparaison, lorsque vous supprimez une étiquette :
 
 - Si l’étiquette a appliqué le chiffrement, le modèle de protection sous-jacent est archivé de sorte que le contenu précédemment protégé puisse rester ouvert. En raison de ce modèle de protection archivé, vous ne pouvez pas créer de nouvelle étiquette portant le même nom. Bien qu’il soit possible de supprimer un modèle de protection à l’aide de [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), ne procédez pas de la sorte, sauf si vous êtes sûr que vous n’avez pas besoin d’ouvrir le contenu chiffré avec le modèle archivé.
 
-- Pour les applications de bureau : les informations d’étiquette sont conservées dans les métadonnées, mais étant donné qu’un ID d’étiquette vers un mappage de nom n’est plus possible, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’État) de sorte que le contenu ne soit pas étiqueté. Si l’étiquette a appliqué le chiffrement, le chiffrement reste et une fois le contenu ouvert, les utilisateurs voient toujours le nom et la description du modèle de protection désormais archivé.
+- Pour les documents stockés dans SharePoint ou OneDrive et que vous avez [activé les étiquettes de confidentialité pour les fichiers Office](sensitivity-labels-sharepoint-onedrive-files.md) : lorsque vous ouvrez le document dans Office sur le Web, l’étiquette n’est pas appliquée dans l’application et le nom de l’étiquette ne s’affiche plus dans la colonne **Confidentialité** dans SharePoint. Si l’étiquette supprimée a appliqué le chiffrement et que les services peuvent traiter le contenu chiffré, le chiffrement est supprimé. Les actions Egress de ces services entraînent le même résultat. Par exemple, téléchargez, copiez, déplacez-vous vers et ouvrez avec une application de bureau ou Office mobile. Bien que les informations d’étiquette restent dans les métadonnées du fichier, les applications ne peuvent plus mapper l’ID d’étiquette à un nom d’affichage, de sorte que les utilisateurs supposent qu’un fichier n’est pas étiqueté.
 
-- Pour Office sur le Web : les utilisateurs ne voient pas le nom de l’étiquette sur la barre d’état ni dans la colonne **Sensibilité**. Les informations d’étiquette dans les métadonnées restent uniquement si l’étiquette n’applique pas le chiffrement. Si l’étiquette a appliqué le chiffrement et que vous avez activé des [étiquettes de confidentialité pour SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), les informations d’étiquette dans les métadonnées sont supprimées et le chiffrement est supprimé. 
+- Pour les documents stockés en dehors de SharePoint et OneDrive ou si vous n’avez pas activé d’étiquettes de confidentialité pour les fichiers Office, et pour les e-mails : lorsque vous ouvrez le contenu, les informations d’étiquette dans les métadonnées restent, mais sans l’ID d’étiquette pour le mappage de noms, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’état pour les applications de bureau). Si l'étiquette supprimée appliquait un cryptage, le cryptage demeure et les utilisateurs voient toujours le nom et la description du modèle de protection désormais archivé.
 
-Lorsque vous supprimez une étiquette de confidentialité d’une stratégie d’étiquette, ou supprimez une étiquette de confidentialité, la réplication de ces modifications peut prendre jusqu’à 24 heures pour tous les utilisateurs et services.
+- Pour les conteneurs, tels que les sites dans SharePoint et Teams : l’étiquette est supprimée et tous les paramètres configurés avec cette étiquette ne sont plus appliqués. Cette action prend généralement entre 48 et 72 heures pour SharePoint sites et peut être plus rapide pour Teams et Groupes Microsoft 365.
+
+Comme avec toutes les modifications d’étiquette, la suppression d’une étiquette de confidentialité d’une stratégie d’étiquette ou la suppression d’une étiquette de confidentialité prend du temps à répliquer sur tous les utilisateurs et services.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -2,10 +2,11 @@
 title: Kit de laboratoire pour le déploiement de Windows et Office 365
 f1.keywords:
 - NOCSH
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: cdmm12
 manager: dougeby
-ms.date: 11/18/2021
+ms.reviewer: alainme
+ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez où accéder aux Windows et Office Deployment Lab Kit.
-ms.openlocfilehash: cbcde8f0593adb54d3496156b1bf83dca1cd5064
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: bfa8d52776e93f4a9c33f484f7d56696fdab31fe
+ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363079"
+ms.locfileid: "65364294"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
@@ -30,7 +31,7 @@ Deux versions du labo sont disponibles en téléchargement gratuit :
 
 |Windows 10 Lab|laboratoire Windows 11|
 |---|---|
-|[Environnement de laboratoire Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Environnement de laboratoire Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Environnement de laboratoire Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Environnement de laboratoire Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
 |[Guides de laboratoire Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Guides de laboratoire Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Un environnement de laboratoire complet
