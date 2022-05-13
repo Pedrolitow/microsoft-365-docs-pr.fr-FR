@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
-ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 7cb963106551951fb6ae1e2455d21fa44d47a77c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319038"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396317"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
@@ -49,10 +49,11 @@ Pour plus d’informations sur les étiquettes de rétention et leur utilisation
 Pour accéder au plan de gestion de fichiers, vous devez posséder l’un des rôles d’administrateur suivants :
     
 - Gestionnaire de conservation
-
 - Gestionnaire de conservation en lecture seule
 
-Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à **Solutions** > **Gestion des enregistrements** > **Plan de gestion de fichiers**.
+Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à **Solutions** > **Gestion des enregistrements** > **Plan de gestion de fichiers** :
+
+![Page de plan de gestion de fichiers](../media/compliance-file-plan.png). 
 
 Si **Gouvernance des informations** ne s’affiche pas dans le volet de navigation, faites défiler la liste vers le bas, puis sélectionnez **Tout afficher**.
 
@@ -154,7 +155,9 @@ Toutefois, l’affichage des éléments étiquetés par l’explorateur de conte
 
 Depuis le plan de gestion de fichiers, vous pouvez exporter les détails de toutes les étiquettes de conservation dans un fichier .csv pour vous aider à fournir des évaluations périodiques de conformité aux responsables de la gouvernance des données de votre organisation.
 
-Pour exporter toutes les étiquettes de rétention : sur la page **Plan de gestion de fichiers**, cliquez sur **Exporter**.
+Pour exporter toutes les étiquettes de rétention : sur la page **Plan de gestion de fichiers**, cliquez sur **Exporter** :
+
+![Option d’exportation de plan de gestion de fichiers.](../media/compliance-file-plan-export-labels.png)
 
 Un fichier *.csv contenant toutes les étiquettes de rétention existantes s’ouvre. Par exemple :
 
