@@ -455,10 +455,10 @@
               href: ome-sensitive-info-types.md
             - name: Gérer le cryptage des messages
               href: manage-office-365-message-encryption.md
-            - name: Journal d’activités du portail des messages chiffrés
-              href: ome-message-access-logs.md
             - name: Chiffrement avancé de messages
               href: ome-advanced-message-encryption.md
+            - name: Journal d’activités du portail des messages chiffrés
+              href: ome-message-access-logs.md
             - name: Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Microsoft Purview
               href: ome-advanced-expiration.md
             - name: 'Exemple de scénario : révoquer les e-mails chiffrés avec le chiffrement avancé des messages Microsoft Purview'

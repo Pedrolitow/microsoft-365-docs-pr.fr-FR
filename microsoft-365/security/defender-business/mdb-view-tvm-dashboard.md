@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172620"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393085"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord Threat & Vulnerability Management dans Microsoft Defender pour les PME
 
@@ -31,11 +31,11 @@ Microsoft Defender pour les PME inclut un tableau de bord Threat & Vulnerability
 - Affichez vos principales recommandations de sécurité, telles que la résolution des problèmes de communication avec les appareils, l’activation de la protection pare-feu ou la mise à jour des définitions Antivirus Microsoft Defender
 - Afficher les activités de correction, telles que les fichiers envoyés en quarantaine ou les vulnérabilités détectées sur les appareils
 
-Vous voulez voir comment cela fonctionne ? Regardez cette vidéo, qui décrit la gestion des vulnérabilités & des menaces dans [Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md).
+Vous voulez voir comment cela fonctionne ? Regardez cette vidéo, qui décrit [Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
 
-Pour en savoir plus sur la gestion des vulnérabilités & des menaces, consultez [Menaces et gestion des vulnérabilités dans Microsoft Defender pour point de terminaison](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
+[En savoir plus sur Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
 >
 > **Avez-vous un peu de temps ?**
