@@ -17,12 +17,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214a2614b6ca7381bbded39ff5f5143236f6c001
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: f5db5fbe81913666f052cbd664e8a7f813da6a7c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363115"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396198"
 ---
 # <a name="learn-about-information-barriers"></a>En savoir plus sur les obstacles aux informations
 
@@ -83,5 +83,5 @@ Seuls Exchange Online déploiements sont actuellement pris en charge pour les st
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 - [Démarrer avec le cloisonnement de l’information](information-barriers-policies.md)
-- [Gérer les stratégies d’obstacle à l’information](information-barriers-edit-segments-policies.md)
-- [Voir les attributs qui peuvent être utilisés pour les stratégies d’obstacle à l’information](information-barriers-attributes.md)
+- [Gérer les stratégies IB](information-barriers-edit-segments-policies.md)
+- [Voir les attributs qui peuvent être utilisés pour les stratégies IB](information-barriers-attributes.md)
