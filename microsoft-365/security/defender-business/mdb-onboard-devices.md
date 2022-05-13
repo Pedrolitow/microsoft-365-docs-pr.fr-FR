@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ce3c458013a96f845da528104997b63360879c56
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174041"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396154"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour les PME
 
@@ -34,7 +34,7 @@ Avec Microsoft Defender pour les PME, vous avez le choix entre plusieurs options
 
 ## <a name="what-to-do"></a>Procédure
 
-1. Sélectionnez l’onglet de votre système d’exploitation : **Windows clients**, **ordinateurs macOS** ou **appareils mobiles**.
+1. Sélectionnez l’onglet de votre système d’exploitation : **clients Windows**, **ordinateurs macOS** ou **appareils mobiles**.
 2. Affichez vos options d’intégration et suivez les instructions de l’onglet sélectionné.
 3. Passez à vos étapes suivantes.
 
@@ -142,9 +142,9 @@ Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme au
 
 Pour afficher la liste des appareils intégrés à Defender entreprise, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils [(Windows clients, Windows Server, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
+- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils [(clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
 - Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
 - Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).
 
@@ -153,9 +153,9 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, dans le 
 ## <a name="macos-computers"></a>ordinateurs macOS
 
 > [!NOTE]
-> - Nous vous recommandons d’utiliser un [script local pour intégrer des appareils macOS](#local-script-for-macos). Bien que vous puissiez [configurer l’inscription pour les appareils macOS dans Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer des appareils macOS à Defender for Business. 
+> - Nous vous recommandons d’utiliser un [script local pour intégrer macOS appareils](#local-script-for-macos). Bien que vous puissiez [configurer l’inscription pour macOS appareils dans Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer macOS appareils à Defender entreprise. 
 
-Choisissez l’une des options suivantes pour intégrer des appareils macOS :
+Choisissez l’une des options suivantes pour intégrer macOS appareils :
 
 - [Script local pour macOS](#local-script-for-macos) (*recommandé*)
 - [Intune pour macOS](#microsoft-intune-for-macos)
@@ -168,7 +168,7 @@ Lorsque vous exécutez le script local sur un appareil macOS, il crée une appro
 
 2. Dans le volet de navigation, choisissez **Paramètres** >  **Endpoints**, puis, sous **Gestion des appareils**, choisissez **Intégration**.
 
-3. Sélectionnez **macOS**, puis, dans la section **Méthode de déploiement** , choisissez **Script local**. 
+3. Sélectionnez **macOS**, puis, dans la section **Méthode de déploiement**, choisissez **Script local**. 
 
 4. Sélectionnez **Télécharger le package d’intégration** et enregistrez-le sur un lecteur amovible. Sélectionnez également **Télécharger le package d’installation** et enregistrez-le sur votre appareil amovible.
 
@@ -180,7 +180,7 @@ Lorsque vous exécutez le script local sur un appareil macOS, il crée une appro
 
 8. Sélectionnez **Continuer**, acceptez les termes du contrat de licence, puis entrez votre mot de passe lorsque vous y êtes invité.
 
-9. Vous serez invité à autoriser l’installation d’un pilote de Microsoft (« Extension système bloquée » ou « L’installation est en attente », ou les deux. Le pilote doit être autorisé à être installé. Pour autoriser l’installation, sélectionnez **Ouvrir les préférences de sécurité** ou **Ouvrir les préférences** >  système **& confidentialité**, puis **sélectionnez Autoriser**.
+9. Vous êtes invité à autoriser l’installation d’un pilote de Microsoft (« Extension système bloquée » ou « L’installation est en attente », ou les deux. Le pilote doit être autorisé à être installé. Pour autoriser l’installation, sélectionnez **Ouvrir les préférences de sécurité** ou **Ouvrir les préférences** >  système **& confidentialité**, puis **sélectionnez Autoriser**.
 
 10. Utilisez la commande Python suivante dans Bash pour exécuter le package d’intégration : `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
 
@@ -188,7 +188,7 @@ Lorsque vous exécutez le script local sur un appareil macOS, il crée une appro
 
 ### <a name="microsoft-intune-for-macos"></a>Microsoft Intune pour macOS
 
-Si votre abonnement inclut Microsoft Intune, vous pouvez intégrer des appareils macOS dans le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Par exemple, si vous avez [Microsoft 365 Business Premium](../../business/index.yml), vous avez Intune dans le cadre de votre abonnement.  
+Si votre abonnement inclut Microsoft Intune, vous pouvez intégrer macOS appareils dans le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Par exemple, si vous avez [Microsoft 365 Business Premium](../../business/index.yml), vous avez Intune dans le cadre de votre abonnement.  
 
 Plusieurs méthodes sont disponibles pour inscrire des appareils dans Intune. Nous vous recommandons de commencer par l’une des méthodes suivantes :
 
@@ -201,7 +201,7 @@ Choisissez l’une des options du tableau suivant pour inscrire des appareils ma
 
 | Option  | Description  |
 |---------|---------|
-| Inscription d’appareils automatisée Apple |  Utilisez cette méthode pour automatiser l’expérience d’inscription sur les appareils achetés via Apple Business Manager ou Apple School Manager. L'inscription automatique des appareils déploie le profil d'inscription par voie hertzienne, de sorte que vous n'avez pas besoin d'avoir un accès physique aux appareils. <br/><br/>Voir [Inscrire automatiquement des appareils macOS auprès d’Apple Business Manager ou d’Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
+| Inscription d’appareils automatisée Apple |  Utilisez cette méthode pour automatiser l’expérience d’inscription sur les appareils achetés via Apple Business Manager ou Apple School Manager. L'inscription automatique des appareils déploie le profil d'inscription par voie hertzienne, de sorte que vous n'avez pas besoin d'avoir un accès physique aux appareils. <br/><br/>Consultez [Inscrire automatiquement macOS appareils auprès d’Apple Business Manager ou d’Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
 | Gestionnaire d’inscription d’appareil (DEM)  |  Utilisez cette méthode pour les déploiements à grande échelle et lorsqu’il existe plusieurs personnes dans votre organisation qui peuvent vous aider à configurer l’inscription. Une personne disposant des droits de gestionnaire d'inscription de l'appareil (DEM) peut inscrire jusqu'à 1 000 appareils avec un seul compte Azure Active Directory. Cette méthode utilise l'application Company Portal ou l'application Microsoft Intune pour inscrire les appareils. Vous ne pouvez pas utiliser un compte DEM pour inscrire des appareils via l'inscription automatique des appareils.<br/><br/> Consultez [Inscrire des appareils dans Intune à l’aide d’un compte gestionnaire d’inscription d’appareils](/mem/intune/enrollment/device-enrollment-manager-enroll).  |
 | Inscription directe  | L’inscription directe inscrit des appareils sans affinité utilisateur. Cette méthode est donc préférable pour les appareils qui ne sont pas associés à un seul utilisateur. Cette méthode exige que vous ayez un accès physique aux Macs que vous inscrivez. <br/><br/>Consultez [Utiliser l’inscription directe pour les appareils macOS](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
 
@@ -229,9 +229,9 @@ Si votre entreprise préfère que des personnes inscrivent leurs propres apparei
 
 Pour afficher la liste des appareils intégrés à Defender entreprise, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([Windows clients, Windows Server, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
+- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
 - Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
 - Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).
 
@@ -248,8 +248,8 @@ Consultez les ressources suivantes pour obtenir de l’aide sur l’inscription 
 
 Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([Windows clients, Windows Server, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
+- Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
 - Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
 - Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).

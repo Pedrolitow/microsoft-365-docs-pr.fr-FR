@@ -1,5 +1,5 @@
 ---
-title: Protéger les PC et Mac Windows 10 non gérés dans Microsoft 365 Business Premium
+title: Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318831"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393239"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows 10 non gérés dans Microsoft 365 Business Premium
+# <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 
 Cet objectif est axé sur la création d’une protection pour tous les PC et Mac Windows 10 non gérés qui ne sont pas inscrits dans Microsoft Intune. Il est très probable que votre petite entreprise ou campagne ait du personnel qui apporte ses propres appareils (BYOD) et ces appareils ne sont pas gérés. Les BYOD incluent les téléphones, tablettes et PC appartenant à l’utilisateur. 
 
