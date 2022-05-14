@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302220"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419525"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -104,8 +104,8 @@ Contrairement aux stratégies de rétention, les paramètres de rétention des �
 - Appliquez une étiquette par défaut pour les éléments SharePoint ou les messages Exchange.
 
 - Actions prises en charge à la fin de la période de rétention :
-    - [Révision avant destruction](./disposition.md) pour réviser le contenu avant sa suppression définitive.
-    - Appliquer automatiquement une autre étiquette de rétention
+  - [Révision avant destruction](./disposition.md) pour réviser le contenu avant sa suppression définitive.
+  - Appliquer automatiquement une autre étiquette de rétention
 
 - Marquez le contenu en tant qu’[enregistrement ](records-management.md#records) au niveau des paramètres d’étiquette, et conservez toujours une [preuve de destruction](disposition.md#disposition-of-records)lorsque le contenu est supprimé à la fin de sa période de rétention.
 
@@ -221,14 +221,15 @@ Pour les étiquettes de rétention standard (les éléments ne sont pas marqués
 
 - Lorsqu’une étiquette de rétention est déjà appliquée au contenu, celle-ci n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à une exception près : l’étiquette existante a été appliquée comme étiquette par défaut. Lorsque vous utilisez une étiquette par défaut, il existe certains scénarios où elle peut être remplacée par une autre étiquette par défaut ou automatiquement supprimée.
 
-- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, l’étiquette existante n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à deux exceptions près : 
-    
-    - L’étiquette existante est configurée pour appliquer automatiquement une autre étiquette de rétention à la fin de la période de rétention.
-    - L’étiquette existante a été appliquée comme étiquette par défaut Lorsque vous utilisez une étiquette par défaut, il existe certains scénarios où elle peut être remplacée par une autre étiquette par défaut ou automatiquement supprimée. 
-        
-        Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
-        - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-        - Étiquette par défaut pour Outlook : [l’application d’une étiquette de rétention par défaut à un dossier Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, l’étiquette existante n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à deux exceptions près :
+
+  - L’étiquette existante est configurée pour appliquer automatiquement une autre étiquette de rétention à la fin de la période de rétention.
+  - L’étiquette existante a été appliquée comme étiquette par défaut Lorsque vous utilisez une étiquette par défaut, il existe certains scénarios où elle peut être remplacée par une autre étiquette par défaut ou automatiquement supprimée.
+
+  Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
+
+  - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+  - Étiquette par défaut pour Outlook : [l’application d’une étiquette de rétention par défaut à un dossier Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - S’il existe plusieurs règles qui affectent une étiquette à appliquer automatiquement et que le contenu remplit les critères de plusieurs stratégies, l’étiquette de rétention de la plus ancienne stratégie d'étiquetage automatique (par date de création) est affectée.
 
@@ -285,7 +286,7 @@ Les exemples suivants ne sont que quelques-unes des façons dont vous pouvez com
 
 Pour plus d’informations sur la façon dont les stratégies de rétention et les étiquettes de rétention fonctionnent ensemble et sur la façon de déterminer leur résultat combiné, consultez la section de cette page qui explique les [principes de rétention et ce qui est prioritaire](#the-principles-of-retention-or-what-takes-precedence).
 
-**Exemple permettant aux utilisateurs de remplacer la suppression automatique**
+#### <a name="example-for-users-to-override-automatic-deletion"></a>Exemple permettant aux utilisateurs de remplacer la suppression automatique
 
 Scénario : par défaut, le contenu des comptes OneDrive des utilisateurs est automatiquement supprimé au bout de cinq ans, mais les utilisateurs doivent avoir la possibilité de le remplacer pour des documents spécifiques.
 
@@ -293,7 +294,7 @@ Scénario : par défaut, le contenu des comptes OneDrive des utilisateurs est au
 
 2. Vous créez et configurez une étiquette de rétention qui conserve du contenu de façon définitive et l’ajoutez à une stratégie d’étiquette que vous publiez sur tous les comptes OneDrive. Vous expliquez aux utilisateurs comment appliquer manuellement cette étiquette à des documents spécifiques, qui ne doivent pas être supprimés automatiquement, même s’ils n’ont pas été modifiés depuis cinq ans.
 
-**Exemple pour conserver des éléments plus longtemps**
+Exemple pour conserver des éléments plus longtemps**
 
 Scénario : par défaut, les éléments SharePoint sont automatiquement conservés puis supprimés après cinq ans, mais les documents de certaines bibliothèques doivent être conservés pendant dix ans.
 
@@ -301,7 +302,7 @@ Scénario : par défaut, les éléments SharePoint sont automatiquement conserv�
 
 2. Vous créez et configurez une étiquette de rétention qui conserve automatiquement le contenu pendant dix ans. Vous publiez cette étiquette pour les administrateurs de site SharePoint, afin qu’ils puissent l’appliquer en tant qu’étiquette par défaut pour être héritée par tous les éléments dans des bibliothèques de documents spécifiques.
 
-**Exemple de suppression d’éléments sur une période plus courte**
+#### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Exemple de suppression d’éléments sur une période plus courte
 
 Scénario : par défaut, les e-mails ne sont pas conservés, mais sont automatiquement supprimés après dix ans. Toutefois, les e-mails liés à un projet spécifique qui a un nom de code de préversion doivent être automatiquement supprimés au bout d’un an.
 

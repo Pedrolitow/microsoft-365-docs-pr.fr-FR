@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: 3ff103a2e6ebc260f5f00964ae09c6b6bbc1fd69
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098887"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415257"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -55,11 +55,11 @@ Commencez facilement et rapidement à essayer les solutions de conformité de Mi
 
 ## <a name="audit-premium"></a>Audit (Premium)
 
-**Mener des enquêtes**
+**Mener des enquêtes** :
 
 Microsoft Purview Audit (Premium) aide les organisations à mener des enquêtes judiciaires et de conformité en augmentant la rétention des journaux d'audit requise pour mener une enquête, en fournissant un accès aux événements cruciaux qui aident à déterminer l'étendue de la compromission et en fournissant un accès plus rapide à l'API Activité de gestion Office 365.
 
-### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Étape 1 : [Appliquez la licence E5 à chaque utilisateur pour lequel vous souhaitez générer des événements E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
+### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Étape 1 : [Appliquer la licence E5 à chaque utilisateur pour lequel vous souhaitez générer des événements E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
@@ -86,7 +86,7 @@ Les stratégies de rétention du journal d’audit font partie des nouvelles fon
 
 ## <a name="communication-compliance"></a>Conformité des communications
 
-**Identifier et agir sur les violations de la politique du code de conduite**
+**Identifier et agir sur les violations de la politique du code de conduite** :
 
 La conformité de la communication Microsoft Purview vous aide à identifier intelligemment les violations de communication pour soutenir un environnement de travail conforme et sain en vous aidant à détecter les messages inappropriés, à enquêter sur d'éventuelles violations de stratégie et à prendre des mesures pour y remédier.
 
@@ -114,7 +114,7 @@ Pour utiliser cette fonctionnalité, activez l'audit afin que votre organisation
 
 ## <a name="compliance-manager"></a>Gestionnaire de conformité
 
-**Gérez facilement la conformité de votre organisation**
+**Gérez facilement la conformité de votre organisation** :
 
 Le Gestionnaire de conformité Microsoft Purview peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.
 
@@ -172,11 +172,12 @@ Les évaluations personnalisées sont utiles pour :
 
 ## <a name="data-lifecycle-management"></a>Gestion du cycle de vie des données
 
-**Gouverner à grande échelle avec l’automatisation**
+**Gouverner à grande échelle avec l’automatisation** :
 
 Améliorez votre capacité à vous adapter aux modifications apportées à votre organisation avec des étendues de stratégie qui sont automatiquement mises à jour. Automatisez l’étiquetage du contenu pour réduire les efforts manuels et améliorez la posture de conformité.
 
 ### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Étape 1 : Ciblez dynamiquement les stratégies de rétention avec les étendues de stratégie adaptatives
+
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
@@ -197,7 +198,7 @@ Les étiquettes par défaut vous permettent d’appliquer automatiquement une é
 
 ## <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-**Protéger les données sensibles**
+**Protéger les données sensibles** :
 
 Pour respecter les normes de l'entreprise et les réglementations du secteur, les organisations doivent protéger les informations sensibles et empêcher leur divulgation accidentelle. Configurez des stratégies de protection contre la perte de données Microsoft Purview pour identifier, surveiller et protéger automatiquement les informations sensibles dans Microsoft 365.
 
@@ -242,9 +243,9 @@ Vous disposez d'une certaine flexibilité dans la façon dont vous configurez vo
 
 ## <a name="ediscovery"></a>eDiscovery
 
-**Découvrez-en plus avec un workflow de bout en bout**
+**Découvrir plus avec un flux de travail de bout en bout** :
 
-Tirez parti d'un flux de travail de bout en bout pour préserver, collecter, analyser et exporter du contenu adapté aux enquêtes internes et externes de votre organisation. Les équipes juridiques peuvent également gérer l’ensemble du processus de notification de conservation légale en communiquant avec les dépositaires impliqués dans un cas.
+Tirez parti d’un flux de travail de bout en bout pour conserver, collecter, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Les équipes juridiques peuvent également gérer l’ensemble du processus de notification de conservation légale en communiquant avec les dépositaires impliqués dans un cas.
 
 ### <a name="step-1-required-permissions"></a>Étape 1 (obligatoire) : [Autorisations](https://aka.ms/ediscoveryninja)
 
@@ -296,7 +297,7 @@ Utilisez l'outil de recherche de contenu dans le portail de conformité Microsof
 
 ## <a name="information-protection"></a>Protection des informations
 
-**Découvrir, classez et protégez vos informations sensibles**
+**Découvrir, classer et protéger vos informations sensibles** :
 
 Implémentez Microsoft Purview Information Protection et les étiquettes de confidentialité pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve et ou qu’il se déplace.
 
@@ -343,7 +344,7 @@ Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionn
 
 ## <a name="insider-risk-management"></a>Gestion des risques internes
 
-**Détecter et corriger les risques d'initiés**
+**Détecter et corriger les risques liés aux menaces internes** :
 
 Tirez parti de l’intelligence artificielle pour vous aider à identifier, trier et corriger rapidement les risques internes. À l’aide des journaux d’Microsoft 365 et des services Azure, vous pouvez définir des stratégies qui surveillent les signaux de risque interne, puis prendre des mesures correctives telles que la promotion de l’éducation des utilisateurs ou l’ouverture d’une enquête.
 
@@ -382,7 +383,7 @@ Pour activer l'analyse des risques d'initiés, vous devez être membre de Inside
 
 ## <a name="records-management"></a>Gestion des enregistrements
 
-**Gérez les éléments à valeur élevée pour les exigences de conservation des enregistrements professionnelles, légales ou réglementaires :**
+**Gérer les éléments à valeur élevée pour les exigences de conservation des enregistrements professionnels, légaux ou réglementaires** :
 
 Utilisez les fonctionnalités de gestion des enregistrements Microsoft Purview pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Tirez parti des fonctionnalités d’automatisation de la création à la collaboration, pour déclarer des enregistrements, conserver le contenu et les supprimer à la fin.
 
@@ -400,7 +401,7 @@ Lorsque le contenu est déclaré un enregistrement, des restrictions sont impos�
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-À la fin de la période de rétention, les utilisateurs que vous spécifiez (« reviseurs ») seront invités à examiner le contenu et à approuver l'action d'élimination permanente. Cela prend en charge si une action différente de la suppression est plus appropriée, comme l’affectation d’une période de rétention différente au contenu ou la suspension de la suppression pour un audit.
+À la fin de la période de rétention, les utilisateurs que vous spécifiez (« réviseurs ») seront invités à examiner le contenu et à approuver l'action d'élimination permanente. Cela prend en charge si une action différente de la suppression est plus appropriée, comme l’affectation d’une période de rétention différente au contenu ou la suspension de la suppression pour un audit.
 
 - Créer une étiquette de rétention qui utilise la révision de disposition
 
@@ -419,7 +420,7 @@ L'application automatique d'étiquettes évite aux utilisateurs d'avoir à effec
 
 ### <a name="compliance-manager-premium-assessments"></a>Évaluations des primes du responsable de la conformité
 
-**Évaluer les risques et réagir efficacement**
+**Évaluer les risques et réagir efficacement** :
 
 Aidez votre organisation à évaluer les risques et à répondre efficacement aux exigences nationales, régionales et industrielles régissant la collecte et l'utilisation des données.
 
@@ -429,7 +430,7 @@ Aidez votre organisation à évaluer les risques et à répondre efficacement au
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Gestion des risques liés à la confidentialité Microsoft Priva et demandes de droits d'objet Microsoft Priva
 
-**Identifier et prévenir les risques de confidentialité**
+**Identifier et prévenir les risques de confidentialité** :
 
 Identifiez et protégez de manière proactive les risques de confidentialité tels que la thésaurisation des données, les transferts de données et le partage excessif des données, et aidez votre organisation à automatiser et à gérer les demandes de sujets à grande échelle.
 
@@ -439,8 +440,8 @@ Identifiez et protégez de manière proactive les risques de confidentialité te
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-**Qu'inclut-il ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft Purview répertoriées par niveau de produit, consultez la [Matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
+**Qu'incluent-elles ?** : pour une liste complète des solutions et fonctionnalités de conformité Microsoft Purview répertoriées par niveau de produit, consultez la [Matrice des fonctionnalités](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 **Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security).
 
-**ressources de sécurité Microsoft**: du logiciel anti-programme malveillant à la confiance zéro, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visitez ressources](/security/business/resources).
+**Ressources de sécurité Microsoft** : du logiciel anti-programme malveillant à la confiance zéro, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visitez les Ressources](/security/business/resources).
