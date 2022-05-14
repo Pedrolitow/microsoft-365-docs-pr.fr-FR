@@ -18,13 +18,13 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: Découvrez la nouvelle fonctionnalité d’allocations.
-ms.date: 03/17/2021
-ms.openlocfilehash: 339533d4635e29bb277fe7f0344ba2da17f4ec7d
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 05/12/2022
+ms.openlocfilehash: c251d653aa95fa489a2482ae0c9ef80c9851fc4b
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841842"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403313"
 ---
 # <a name="allotment-basics"></a>Concepts de base de l’allocation
 
@@ -34,7 +34,7 @@ Les affectations utilisent des licences basées sur des groupes pour attribuer d
 
 Vous pouvez également déléguer la gestion de vos allocations. Les propriétaires d’allocation délégués accèdent au centre d’administration, mais ne peuvent voir et gérer que les licences dans les allocations qu’ils possèdent. Cela fournit une délégation plus granulaire de la gestion des licences au sein de votre organisation.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Vous devez respecter les exigences en matière de licences pour les [licences basées sur un groupe](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 

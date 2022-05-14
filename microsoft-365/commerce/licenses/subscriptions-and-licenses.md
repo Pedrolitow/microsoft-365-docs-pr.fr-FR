@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Les applications et services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple Applications Microsoft 365 pour les PME.
-ms.date: 07/01/2020
-ms.openlocfilehash: fca1e5239745e28c32c200c76cc229aedeccf2a4
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 05/12/2022
+ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841676"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403225"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
@@ -81,7 +81,7 @@ Plusieurs types d'administrateurs peuvent utiliser des licences de différentes 
 |Administrateur de support de service|Non|Non|Non|Non|
 |Administrateur d’utilisateurs|Oui|Oui|Non|Oui|
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Acheter ou supprimer des licences pour votre abonnement professionnel](buy-licenses.md) (article)\
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\

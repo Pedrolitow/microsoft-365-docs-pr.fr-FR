@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,17 +19,17 @@ ms.custom:
 - manage_licenses
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
-ms.date: 07/01/2020
-ms.openlocfilehash: f1aff383bb4e83b7cefae0f6d15c496ab3117919
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/12/2022
+ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326270"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403291"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
-Si vous avez plusieurs abonnements, que vous avez des utilisateurs  titulaires d’une licence pour un abonnement, mais que vous souhaitez les déplacer vers un autre abonnement, vous pouvez remplacer leur licence existante par une autre.
+Si vous avez plusieurs abonnements, si vous avez des utilisateurs disposant d’une licence pour un abonnement, mais que vous souhaitez les déplacer vers un autre abonnement, vous pouvez remplacer leur licence existante par une licence différente.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -49,22 +49,22 @@ Vous devez être un administrateur global, de licence ou d'utilisateur pour attr
 
 ::: moniker-end
 
-2. Sélectionnez les cercles en côté des noms des utilisateurs pour qui vous souhaitez remplacer les licences existantes.
+2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 
 3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
 
-4. Dans le **volet Gérer les licences de** produits, sélectionnez **Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
+4. Dans le volet **Gérer les licences de produit** , **sélectionnez Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
 
-5. En bas, sélectionnez **Enregistrer les modifications fermer**\>.
+5. En bas, **sélectionnez Enregistrer les modifications** \> **close**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
+Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Supprimer des licences de votre abonnement](../licenses/buy-licenses.md) (article)\
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
-[Comprendre les abonnements et les licences dans Microsoft 365 entreprise](../licenses/subscriptions-and-licenses.md) (article)\
-[Acheter un autre abonnement Microsoft 365 entreprise](../try-or-buy-microsoft-365.md) (article)
+[Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises](../licenses/subscriptions-and-licenses.md) (article)\
+[Acheter un autre Microsoft 365 pour un abonnement professionnel](../try-or-buy-microsoft-365.md) (article)
