@@ -1,5 +1,5 @@
 ---
-title: Configurer une équipe avec l’isolation de sécurité
+title: Configurer une équipe avec l’isolation de sécurité à l’aide d’une étiquette de confidentialité unique
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,14 +18,14 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943126"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393107"
 ---
-# <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
+# <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Configurer une équipe avec l’isolation de sécurité à l’aide d’une étiquette de confidentialité unique
 
 Cet article fournit des recommandations et des étapes pour configurer une équipe privée dans Microsoft Teams et utiliser une étiquette de confidentialité unique pour chiffrer les fichiers de sorte que seuls les membres d’une équipe puissent les déchiffrer.
 
@@ -261,7 +261,7 @@ Cette formation doit inclure des exercices pratiques pour que les membres de vot
 
 Dans les semaines suivant la formation :
 
-- Traitez rapidement les commentaires des membres de l’équipe et affinez les stratégies et les configurations.
+- Aborder rapidement les commentaires des membres de l’équipe et affinez les stratégies et les configurations.
 - Analysez l’utilisation pour l’équipe et comparez-la avec les attentes en matière d’utilisation.
 - Vérifiez que les fichiers hautement réglementés ont été correctement étiquetés avec l’étiquette de confidentialité. (Vous pouvez voir quels fichiers disposent d'une étiquette attribuée en affichant un dossier dans SharePoint Online et en ajoutant la colonne **Confidentialité** via l'option **Afficher/masquer les colonnes** de **Ajouter un colonne**.
 
