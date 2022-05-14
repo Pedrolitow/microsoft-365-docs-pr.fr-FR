@@ -18,18 +18,21 @@ ms.custom: ''
 description: Le personnel SecOps peut apprendre à utiliser la file d’attente Incidents dans Microsoft 365 Defender pour gérer les incidents dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04a65591e96e11f2e949ce161fd592d313af2a66
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 05525ac8ac10f8702db4e25d4163fed03b899bc9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970762"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416987"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Gérer les incidents et les alertes à partir de Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
 Un [incident](/microsoft-365/security/defender/incidents-overview) dans Microsoft 365 Defender est une collection d’alertes corrélées et de données associées qui définissent l’histoire complète d’une attaque. Defender pour Office 365 [alertes](/microsoft-365/compliance/alert-policies#default-alert-policies), [l’investigation et la réponse automatisées (AIR)](office-365-air.md#the-overall-flow-of-air) et le résultat des investigations sont intégrés en mode natif et mis en corrélation sur la page **Incidents** dans Microsoft 365 Defender à <https://security.microsoft.com/incidents-queue>. Nous allons faire référence à cette page en tant que _file d’attente d’incidents_.
 
 Des alertes sont créées lorsque des activités malveillantes ou suspectes affectent une entité (par exemple, un e-mail, des utilisateurs ou des boîtes aux lettres). Les alertes fournissent des insights précieux sur les attaques en cours ou terminées. Toutefois, une attaque en cours peut affecter plusieurs entités, ce qui entraîne plusieurs alertes provenant de différentes sources. Certaines alertes intégrées déclenchent automatiquement des playbooks AIR. Ces playbooks effectuent une série d’étapes d’investigation pour rechercher d’autres entités affectées ou une activité suspecte.
+
+Regardez cette courte vidéo sur la gestion des alertes Microsoft Defender pour Office 365 dans Microsoft 365 Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGrL2]
 
 Defender pour Office 365 alertes, investigations et leurs données sont automatiquement corrélées. Lorsqu’une relation est déterminée, un incident est créé par le système pour donner une visibilité aux équipes de sécurité pour l’ensemble de l’attaque.
 
@@ -122,3 +125,6 @@ Le moyen le plus efficace d’agir consiste à utiliser l’intégration intégr
 - Vous effectuez des actions sur les e-mails à partir d’un emplacement unique.
 
 Vous prenez des mesures sur l’e-mail en fonction du résultat d’une enquête manuelle ou d’une activité de chasse. [L’Explorateur des menaces](threat-explorer.md) permet aux membres de l’équipe de sécurité d’agir sur les messages électroniques qui peuvent encore exister dans les boîtes aux lettres cloud. Ils peuvent agir sur les messages intra-organisation qui ont été envoyés entre les utilisateurs de votre organisation. Les données de l’Explorateur de menaces sont disponibles pour les 30 derniers jours.
+
+Regardez cette courte vidéo pour découvrir comment Microsoft 365 Defender combine des alertes provenant de différentes sources de détection, comme Defender pour Office 365, en incidents. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGpcs]

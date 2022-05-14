@@ -16,12 +16,12 @@ ms.technology: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: a2eaeb2de0a7caf502130bef788c17e515657d7a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 5060a05e485db18f8276ecd2ec592ea3873a83b2
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788961"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419921"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -74,7 +74,7 @@ Pour plus d’informations sur la configuration de Microsoft Endpoint Manager (c
 |Analyser les lecteurs amovibles pendant les analyses complètes uniquement <p> **Numériser** \> **Analyser les lecteurs amovibles**|Désactivé|`-DisableRemovableDriveScanning`|
 |Spécifier le niveau des sous-dossiers dans un dossier d’archive à analyser <p>**Numériser** \> **Spécifier la profondeur maximale pour analyser les fichiers d’archive**|0|Non disponible|
 |Spécifiez la charge maximale du processeur (en pourcentage) pendant une analyse. <p> **Numériser** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE** : La charge maximale de l’UC n’est pas une limite stricte, mais elle est conseillée pour que le moteur d’analyse ne dépasse pas la valeur maximale en moyenne. Les analyses d’exécution manuelle ignorent ce paramètre et s’exécutent sans limites d’UC.|
-|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archive qui doivent être analysés. <p> **Numériser** \> **Spécifier la taille maximale des fichiers d’archive à analyser**|Sans limite|Non disponible <p>La valeur par défaut 0 n’applique aucune limite|
+|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archive qui doivent être analysés. <p> **Numériser** \> **Spécifier la taille maximale des fichiers d’archive à analyser**|Aucune limite|Non disponible <p>La valeur par défaut 0 n’applique aucune limite|
 |Configurer une faible priorité du processeur pour les analyses planifiées <p> **Numériser** \> **Configurer une faible priorité du processeur pour les analyses planifiées**|Désactivé|Non disponible|
 
 > [!NOTE]
@@ -117,8 +117,8 @@ Sur n’importe quel système d’exploitation, seuls les lecteurs réseau mapp�
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

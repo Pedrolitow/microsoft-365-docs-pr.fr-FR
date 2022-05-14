@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: f19e354a23af03abd905591993197ff8f484ceff
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 95c138b6613d610520a4e6870ae7a59b46159f5d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788389"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418737"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
@@ -35,7 +35,7 @@ ms.locfileid: "64788389"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Vue d’ensemble
 
 Le blocage comportemental du client est un composant des [fonctionnalités de blocage comportemental et d’endiguement](behavioral-blocking-containment.md) dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur les appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou les applications) sont bloqués, vérifiés et corrigés automatiquement.
 
@@ -91,5 +91,5 @@ Si votre organisation utilise Defender pour point de terminaison, le blocage com
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

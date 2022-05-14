@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4e0d249f7805c47be55ec42f3362ca1952c20ca3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 049c7a772c4c8dcf986efd310e4613423f33dcc9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788499"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419129"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et créer des rapports sur Antivirus Microsoft Defender
 
@@ -58,7 +58,7 @@ Microsoft Endpoint Manager ([1](#fn1))|Utiliser le [rôle de système de site de
 stratégie de groupe et Active Directory (joints à un domaine)|Utilisez un objet stratégie de groupe pour déployer des modifications de configuration et vérifier que Antivirus Microsoft Defender est activé.|Utiliser stratégie de groupe Objects (GPO) pour [Configurer les options de mise à jour pour Antivirus Microsoft Defender][] et [Configurer les fonctionnalités Windows Defender][]|La création de rapports sur les points de terminaison n’est pas disponible avec stratégie de groupe. Vous pouvez générer une liste de [Stratégies de groupe pour déterminer si des paramètres ou des stratégies ne sont pas appliqués][]
 PowerShell|Déployez avec stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utilisez les applets de commande [Set-MpPreference] et [Update-MpSignature] disponibles dans le module Defender.|Utiliser les [applets de commande Get- disponibles dans le module Defender][]
 Windows Infrastructure de gestion|Déployez avec stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utiliser la [méthode Set de la classe MSFT_MpPreference][] et la [méthode Update de la classe MSFT_MpSignature][]|Utiliser la classe [MSFT_MpComputerStatus][] et la méthode get des classes associées dans le [Windows Defender fournisseur WMIv2][]
-Microsoft Azure|Déployez Microsoft Antimalware pour Azure dans le [Portail Azure, à l’aide de Visual Studio configuration de machine virtuelle ou d’applets de commande Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). Vous pouvez également [installer Endpoint Protection dans Microsoft Defender pour le cloud*](/azure/security-center/security-center-install-endpoint-protection)|Configurer [Microsoft Antimalware pour Machines Virtuelles et Services cloud avec des applets de commande Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) ou [utiliser des exemples de code](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Utilisez [Microsoft Antimalware pour Machines Virtuelles et Services cloud avec Azure PowerShell applets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) de commande pour activer la surveillance. Vous pouvez également consulter les rapports d’utilisation dans Azure Active Directory pour déterminer l’activité suspecte, y compris le rapport [Éventuellement des appareils infectés][] et configurer un outil SIEM pour signaler les [événements Antivirus Microsoft Defender][] et ajouter cet outil en tant qu’application dans AAD.
+Microsoft Azure|Déployez Microsoft Antimalware pour Azure dans le [Portail Azure, à l’aide de Visual Studio configuration de machine virtuelle ou d’applets de commande Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). Vous pouvez également [installer Endpoint Protection dans Microsoft Defender pour le cloud*](/azure/security-center/security-center-install-endpoint-protection)|Configurer [Microsoft Antimalware pour les machines virtuelles et les services cloud avec des applets de commande Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) ou [utiliser des exemples de code](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Utilisez [Microsoft Antimalware pour les machines virtuelles et les services cloud avec Azure PowerShell applets de commande](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) pour activer la surveillance. Vous pouvez également consulter les rapports d’utilisation dans Azure Active Directory pour déterminer l’activité suspecte, y compris le rapport [Éventuellement des appareils infectés][] et configurer un outil SIEM pour signaler les [événements Antivirus Microsoft Defender][] et ajouter cet outil en tant qu’application dans AAD.
 
 1. <span id="fn1" />La disponibilité de certaines fonctions et fonctionnalités, en particulier liées à la protection fournie par le cloud, diffère entre Microsoft Endpoint Manager (Current Branch) et System Center Configuration Manager 2012. Dans cette bibliothèque, nous nous sommes concentrés sur Windows 10, Windows 11, Windows Server 2016 et Microsoft Endpoint Manager (Current Branch). Consultez [Utiliser la protection fournie par le cloud Microsoft dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) pour obtenir un tableau qui décrit les principales différences. [(Revenir à la table)](#ref2)
 
@@ -71,7 +71,7 @@ Microsoft Azure|Déployez Microsoft Antimalware pour Azure dans le [Portail Azur
 Rubrique | Description
 ---|---
 [Déployer et activer Antivirus Microsoft Defender protection](deploy-microsoft-defender-antivirus.md) | Bien que le client soit installé en tant que partie principale de Windows 10 ou Windows 11, et que le déploiement traditionnel ne s’applique pas, vous devez toujours activer le client sur vos points de terminaison avec Microsoft Endpoint Configuration Manager, Microsoft Intune ou objets stratégie de groupe.
-[Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md) | Il existe deux parties à mettre à jour Antivirus Microsoft Defender : la mise à jour du client sur les points de terminaison (mises à jour du produit) et la mise à jour du renseignement de sécurité (mises à jour de protection). Vous pouvez mettre à jour le renseignement de sécurité de plusieurs façons, à l’aide de Microsoft Endpoint Configuration Manager, stratégie de groupe, PowerShell et WMI.
+[Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md) | Il existe deux parties à mettre à jour Antivirus Microsoft Defender : la mise à jour du client sur les points de terminaison (mises à jour du produit) et la mise à jour du renseignement de sécurité (mises à jour de protection). Vous pouvez mettre à jour le renseignement de sécurité de plusieurs façons, à l’aide de Microsoft Endpoint Configuration Manager, stratégie de groupe, PowerShell et WMI.
 [Surveiller et signaler la protection Antivirus Microsoft Defender](report-monitor-microsoft-defender-antivirus.md) | Vous pouvez utiliser Microsoft Intune, Microsoft Endpoint Configuration Manager, le complément Update Compliance pour Microsoft Operations Management Suite ou un produit SIEM tiers (en consommant Windows journaux des événements) pour surveiller l’état de la protection et créer des rapports sur la protection des points de terminaison.
 
 > [!TIP]
@@ -81,6 +81,6 @@ Rubrique | Description
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
     

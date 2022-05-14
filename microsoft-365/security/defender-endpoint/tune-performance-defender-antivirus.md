@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101114"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419591"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour Antivirus Microsoft Defender
 
@@ -97,7 +97,7 @@ Pour obtenir des exemples décrivant le processus d'« exportation » et de « c
 
 Pour garantir une sortie lisible par l’ordinateur pour l’exportation avec d’autres systèmes de traitement des données, il est recommandé d’utiliser le paramètre -Raw pour Get-MpPerformanceReport. Voir ci-dessous pour plus d’informations
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Antivirus Microsoft Defender analyseur de performances présente les prérequis suivants :
 
@@ -537,4 +537,4 @@ Si vous recherchez des informations relatives à l’antivirus pour d’autres p
 - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-- [Configurer Defender pour point de terminaison sur les fonctionnalités](android-configure.md)-  Android [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+- [Configurer Defender pour point de terminaison sur Android](android-configure.md) featuresConfigurer - [Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

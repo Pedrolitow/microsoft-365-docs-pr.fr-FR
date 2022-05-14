@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 1f598fd1463b6e08c73d7db9ac6d1540a51d6841
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: f6544a14891a98523d202c19634d0e70a3e839e2
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790611"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416791"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
@@ -36,7 +36,7 @@ ms.locfileid: "64790611"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Vue d’ensemble
 
 Le paysage des menaces d’aujourd’hui est envahi par les [programmes malveillants sans fichier](/windows/security/threat-protection/intelligence/fileless-threats) et qui vit hors de la terre, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre, et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur les appareils compromis. Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter de telles attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage comportemental et l’endiguement, incluses dans [Defender pour point de terminaison](/windows/security).
 
@@ -126,8 +126,8 @@ Cet exemple montre qu’avec les fonctionnalités de blocage comportemental et d
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="next-steps"></a>Prochaines étapes
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 74843a71131ae8f10628dac96086e68e25acb2b0
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 24e43ac3e99f99061489e2719c76245270422c57
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788433"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419657"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -54,7 +54,7 @@ Ce problème peut se manifester sous la forme de plusieurs ID d’événement di
 
 ID d’événement|Nom du journal|Description|Source
 ---|---|---|---
-15 |Application|Mise à jour réussie de l’état Windows Defender à SECURITY_PRODUCT_STATE_OFF.|Security Center
+15|Application|Mise à jour réussie de l’état Windows Defender à SECURITY_PRODUCT_STATE_OFF.|Security Center
 5007|Microsoft-Windows-Windows Defender/Operational|Antivirus Windows Defender configuration a changé. S’il s’agit d’un événement inattendu, vous devez examiner les paramètres, car cela peut être le résultat d’un programme malveillant. <p> **Ancienne valeur :** Default\IsServiceRunning = 0x0 <p> **Nouvelle valeur :** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Antivirus Windows Defender’analyse des logiciels espions et d’autres logiciels potentiellement indésirables est désactivée.|Windows Defender
 
@@ -91,7 +91,7 @@ Cela génère un rapport situé à *./gpresult.html*. Ouvrez ce fichier et vous 
 
 Dans le rapport GPResults, sous le titre *Windows Composants/Antivirus Windows Defender*, vous pouvez voir quelque chose comme l’entrée suivante, indiquant que Antivirus Microsoft Defender est désactivé.
 
-Stratégie|Paramètres|Objet de stratégie de groupe gagnant
+Stratégie|Setting|Objet de stratégie de groupe gagnant
 ---|---|---
 Désactiver Antivirus Windows Defender|Activé|Win10-Workstations
 
@@ -145,8 +145,8 @@ Une autre fonctionnalité, appelée [analyse périodique limitée](limited-perio
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 
 ### <a name="see-also"></a>Voir aussi

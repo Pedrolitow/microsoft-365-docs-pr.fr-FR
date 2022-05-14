@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams dans eDiscovery (Premium).
-ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092268"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414863"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams
 
@@ -70,7 +70,7 @@ Pour créer un cas :
 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
-2. Dans le volet de navigation gauche du portail de conformité Microsoft Purview, cliquez sur **eDiscovery > Avancé**.
+2. Dans le volet de navigation gauche de l’portail de conformité Microsoft Purview, cliquez sur **eDiscovery > Avancé**.
 
 3. Dans la page **eDiscovery (Premium),** cliquez sur l’onglet **Cas**, puis sur **Créer un cas**.
 
@@ -270,7 +270,7 @@ Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 |---|---|
 |ContainsEditedMessage|Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
 |ConversationId|GUID qui identifie la conversation à laquelle l’élément est associé. Les fichiers de transcription et pièces jointes de la même conversation ont la même valeur pour cette propriété.|
-|Nom de la conversation|Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants à la conversation sont concaténés. Par exemple : `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams conversation de canal (standard, privé et partagé) utilise le format suivant pour le nom de la conversation : `<Team name>,<Channel name>`. Par exemple : `eDiscovery vNext, General`.|
+|Nom de la conversation|Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants à la conversation sont concaténés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams conversation de canal (standard, privé et partagé) utilise le format suivant pour le nom de la conversation : `<Team name>,<Channel name>`. Par exemple, `eDiscovery vNext, General`.|
 |ConversationType|Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group`. Pour les conversations de canal standard, privées et partagées, la valeur est `Channel`.|
 |Date|Horodatage du premier message dans le fichier de transcription.|
 |FamilyId|GUID qui identifie le fichier de transcription pour une conversation de conversation. Les pièces jointes ont la même valeur pour cette propriété que le fichier de transcription qui contient le message auquel le fichier a été attaché.|

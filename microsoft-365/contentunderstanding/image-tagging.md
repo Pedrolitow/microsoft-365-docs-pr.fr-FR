@@ -14,12 +14,12 @@ ms.collection:
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Présentation du balisage d’image dans SharePoint Syntex
-ms.openlocfilehash: 79df10f80dd02930dc49f56274b00664c6f1d3d2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0b9b1669efb069942b81aaad7fb5e7e3aa57c1c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205928"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415879"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Balisage d’image dans SharePoint Syntex
 
@@ -36,14 +36,13 @@ Si vous désactivez l’option de balisage, les images ne seront plus marquées 
 > [!NOTE]
 > Les balises générées par le système peuvent changer avec les mises à jour de l’image ou notre technologie de balises.
 
-
 ## <a name="configure-image-tagging"></a>Configurer le balisage d’image
 
-Après avoir [configuré SharePoint Syntex](set-up-content-understanding.md), vous pouvez configurer le balisage d’image dans le Centre d’administration Microsoft 365.  
+Après avoir [configuré SharePoint Syntex](set-up-content-understanding.md), vous pouvez configurer le balisage d’image dans le Centre d’administration Microsoft 365.
 
 Pour activer ou désactiver le balisage d’images
 
-1. Dans la Centre d'administration Microsoft 365, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Installation.**</a>
+1. Dans le Centre d'administration Microsoft 365, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configurer**</a>.
 
 2. Sous **Connaissances organisationnelles**, cliquez sur **Automatiser la compréhension de contenu**.
 
@@ -55,4 +54,4 @@ Pour activer ou désactiver le balisage d’images
 
 6. Cliquez sur **Enregistrer**.
 
-    ![Capture d’écran du contrôle de marquage d’image.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+    ![Capture d’écran du contrôle de balisage d’image.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)

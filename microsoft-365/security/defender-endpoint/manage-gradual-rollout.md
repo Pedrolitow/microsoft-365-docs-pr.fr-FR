@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8a500babf581cd70b92a39b32a3be0bb5d4acd3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8f1f2add8196afef6e8bd738586957d7fea15c84
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789379"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416329"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender
 
@@ -85,7 +85,7 @@ Les canaux de mise à jour suivants sont disponibles :
 
 |Nom du canal|Description|Application|
 |---|---|---|
-|Canal bêta - Préversion|Tester les mises à jour avant d’autres|Les appareils définis sur ce canal seront les premiers à recevoir de nouvelles mises à jour mensuelles. Sélectionnez Canal bêta pour participer à l’identification et à la création de rapports sur les problèmes à Microsoft. Les appareils du programme Windows Insider sont abonnés par défaut à ce canal. À utiliser uniquement dans les environnements de test.|
+|Canal bêta - Préversion|Tester les mises à jour avant d’autres|Les appareils définis sur ce canal seront les premiers à recevoir de nouvelles mises à jour mensuelles. Sélectionnez Canal bêta pour participer à l’identification et à la création de rapports sur les problèmes à Microsoft. Les appareils du Programme Windows Insider sont abonnés à ce canal par défaut. À utiliser uniquement dans les environnements de test.|
 |Canal actuel (préversion)|Obtenir les mises à jour du canal actuel **plus tôt** lors de la mise en production progressive|Les appareils définis sur ce canal recevront les mises à jour les plus tôt pendant le cycle de mise en production progressive. Suggéré pour les environnements de préproduction/validation.|
 |Canal actuel (intermédiaire)|Obtenir les mises à jour du canal actuel ultérieurement lors de la mise en production progressive|Des mises à jour seront proposées aux appareils ultérieurement au cours du cycle de mise en production progressive. Suggéré de s’appliquer à une petite partie représentative de la population de votre appareil (environ 10 %).|
 |Canal actuel (large)|Obtenir les mises à jour à la fin de la mise en production progressive|Les mises à jour ne seront proposées aux appareils qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%).|
@@ -146,5 +146,5 @@ Pour plus d’informations sur l’utilisation de ces outils, consultez [Créer 
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

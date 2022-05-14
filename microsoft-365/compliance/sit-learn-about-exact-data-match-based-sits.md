@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Découvrez les types d’informations sensibles basés sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f883d2509961ee07045949530f8fbb50629212f
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759764"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415923"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Les types d’informations sensibles](sensitive-information-type-learn-about.md) sont utilisés pour aider à identifier les éléments sensibles afin que vous puissiez les empêcher d’être partagés par inadvertance ou de manière inappropriée, pour faciliter la localisation des données pertinentes dans eDiscovery et pour appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) en fonction des éléments suivants :
 
@@ -44,10 +46,10 @@ Mais que se passe-t-il si vous souhaitez un type d’informations sensibles pers
 
 ![Classification basée sur EDM.](../media/EDMClassification.png)
 
-La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser la classification basée sur EDM avec des stratégies, telles [que les stratégies de protection contre la perte de données](dlp-learn-about-dlp.md) ou [les stratégies de fichier de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. De plus, vous pouvez utiliser la classification basée sur EDM avec des stratégies, telles que [Microsoft Purview des stratégies de protection contre la perte de données](dlp-learn-about-dlp.md) ou [des stratégies de fichiers Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection prend désormais en charge, les langues de jeu de caractères à double octets pour :
+> Protection des données Microsoft Purview prend en charge les langues de jeu de caractères sur deux octets pour :
 >
 > - Chinois (simplifié)
 > - Chinois (traditionnel)
@@ -93,7 +95,7 @@ Proximité : nombre de caractères entre l’élément principal et l’élémen
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Vous fournissez votre propre schéma et vos propres données
 
-[Microsoft 365 est fourni avec plus de 200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinis, des modèles regex, des mots clés et des niveaux de confiance. Avec les SIT EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données primaires et secondaires sont hautement sensibles, vous les chiffrez via une fonction de [hachage](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) qui inclut une valeur [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) générée de manière aléatoire ou auto-fournie. Ces valeurs hachées sont ensuite chargées sur le service, de sorte que vos données sensibles ne sont jamais ouvertes.
+[Microsoft Purview est fourni avec plus de 200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinis, des modèles regex, des mots clés et des niveaux de confiance. Avec les SIT EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données primaires et secondaires sont hautement sensibles, vous les chiffrez via une fonction de [hachage](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) qui inclut une valeur [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) générée de manière aléatoire ou auto-fournie. Ces valeurs hachées sont ensuite chargées sur le service, de sorte que vos données sensibles ne sont jamais ouvertes.
 
 ### <a name="primary-and-secondary-support-elements"></a>Éléments de support principal et secondaire
 
@@ -110,4 +112,3 @@ EDM recherche des correspondances en comparant le contenu qu’il trouve à une 
 ## <a name="see-also"></a>Voir aussi
 
 - [Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-   

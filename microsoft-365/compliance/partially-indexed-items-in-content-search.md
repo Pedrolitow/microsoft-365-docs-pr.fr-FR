@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -21,22 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche eDiscovery que vous exécutez dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 27f59ac9bf6a580fa0a3193ee91f66a4ac58ab1e
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 0efb96f8d36868f182476a0eb7b0087beb3134f9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188787"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417037"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Une recherche Microsoft Purview eDiscovery que vous exécutez à partir du portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier (d’un type de fichier qui ne peut pas être indexé) joint à un message électronique. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
+Une recherche Microsoft Purview eDiscovery que vous exécutez à partir de la portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier (d’un type de fichier qui ne peut pas être indexé) joint à un message électronique. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   
 - Le type de fichier n’est paspris en charge ou est désactivé pour l’indexation.
 
-- Les messages ont un fichier joint qui ne peut pas être ouvert, tel que des fichiers image ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
+- Les messages ont un fichier joint qui ne peut pas être ouvert ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
 
 - Le type de fichier est pris en charge pour l’indexation, mais une erreur d’indexation s’est produite pour un fichier spécifique.
 
@@ -105,7 +105,7 @@ Gardez à l’esprit ce qui suit concernant les éléments partiellement indexé
   
 ## <a name="workaround-for-using-a-date-range-to-exclude-partially-indexed-items"></a>Solution de contournement pour l’utilisation d’une plage de dates pour exclure des éléments partiellement indexés
 
-Dans Recherche de contenu et Microsoft Purview eDiscovery (Standard), vous ne pouvez pas utiliser une plage de dates pour exclure les éléments partiellement indexés d’être renvoyés par une requête de recherche. En d’autres termes, les éléments partiellement indexés qui se trouvent en dehors d’une plage de dates sont toujours inclus en tant qu’éléments partiellement indexés dans les statistiques de recherche et lorsque vous exportez des éléments partiellement indexés. Dans eDiscovery (Premium), vous pouvez exclure des éléments partiellement indexés à l’aide d’une plage de dates dans une requête de recherche.
+Dans recherche de contenu et Microsoft Purview eDiscovery (Standard), vous ne pouvez pas utiliser une plage de dates pour exclure les éléments partiellement indexés du retour par une requête de recherche. En d’autres termes, les éléments partiellement indexés qui se trouvent en dehors d’une plage de dates sont toujours inclus en tant qu’éléments partiellement indexés dans les statistiques de recherche et lorsque vous exportez des éléments partiellement indexés. Dans eDiscovery (Premium), vous pouvez exclure des éléments partiellement indexés à l’aide d’une plage de dates dans une requête de recherche.
 
 Pour contourner cette limitation, nous vous recommandons la procédure suivante.
 

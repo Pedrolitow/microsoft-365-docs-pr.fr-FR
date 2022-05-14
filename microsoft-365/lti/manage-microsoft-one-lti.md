@@ -1,5 +1,5 @@
 ---
-title: Gérer Microsoft OneLTI pour n’importe quel LMS
+title: Gérer la passerelle Microsoft LMS pour n’importe quel LMS
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -11,31 +11,31 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Découvrez comment effectuer des tâches clés de gestion Microsoft OneLTI, notamment l’affichage, la suppression, la modification et la résolution des problèmes.
-ms.openlocfilehash: 04d6921d9ed9c4963e2bff8287e79f83bd6807fe
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+description: Découvrez comment effectuer des tâches clés de gestion de passerelle Microsoft LMS, notamment l’affichage, la suppression, la modification et la résolution des problèmes.
+ms.openlocfilehash: 769670a710e24d89dd3e201ac433ac8ccbcffd1a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287115"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414793"
 ---
-# <a name="manage-microsoft-onelti-for-any-lms"></a>Gérer Microsoft OneLTI pour n’importe quel LMS
+# <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Gérer la passerelle Microsoft LMS pour n’importe quel LMS
 
-Microsoft OneLTI s’intègre à plusieurs LMS, notamment Canvas, Blackboard et Moodle.
+La passerelle Microsoft LMS s’intègre à plusieurs LMS, notamment Canvas, Blackboard et Moodle.
 
-Dans cet article, les administrateurs informatiques trouveront des instructions sur les principales tâches de gestion OneLTI.
+Dans cet article, les administrateurs informatiques trouveront des instructions sur les principales tâches de gestion de passerelle Microsoft LMS.
 
 - [Afficher une inscription LTI](#view-an-lti-registration).
 - [Supprimez une inscription LTI](#delete-an-lti-registration).
 - [Modifiez une inscription LTI](#edit-an-lti-registration).
-- [Résoudre les problèmes liés à OneLTI](#troubleshoot-issues-with-onelti).
-- [Signaler les problèmes liés à OneLTI](#report-problems-with-onelti).
+- [Résoudre les problèmes liés à la passerelle Microsoft LMS](#troubleshoot-issues-with-microsoft-lms-gateway).
+- [Signaler des problèmes avec la passerelle Microsoft LMS](#report-problems-with-lti-registration-portal).
 
 ## <a name="view-an-lti-registration"></a>Afficher une inscription LTI
 
 Si vous souhaitez afficher les détails d’une inscription LTI, suivez les étapes ci-dessous.
 
-1. Visitez [le portail Microsoft LTI](https://lti.microsoft.com/).
+1. Visitez la [passerelle Microsoft LMS](https://lti.microsoft.com/).
 2. Connectez-vous avec un compte d’administrateur Microsoft 365.
 3. Dans la liste d’inscription, recherchez l’inscription LTI que vous souhaitez afficher.
 4. Sélectionnez **l’icône d’œil** en regard de la liste.
@@ -43,9 +43,9 @@ Si vous souhaitez afficher les détails d’une inscription LTI, suivez les éta
 
 ## <a name="delete-an-lti-registration"></a>Supprimer une inscription LTI
 
-Si vous souhaitez supprimer une inscription Microsoft OneLTI, suivez les étapes ci-dessous.
+Si vous souhaitez supprimer une inscription LTI, suivez les étapes ci-dessous.
 
-1. Visitez [le portail Microsoft LTI](https://lti.microsoft.com/).
+1. Visitez la [passerelle Microsoft LMS](https://lti.microsoft.com/).
 2. Connectez-vous avec un compte d’administrateur Microsoft 365.
 3. Dans la liste d’inscription, recherchez l’inscription LTI que vous souhaitez supprimer.
 4. Sélectionnez **l’icône de corbeille** en regard de la liste.
@@ -61,13 +61,13 @@ Pour modifier une inscription LTI, vous devez :
 1. [Supprimez l’inscription existante](#delete-an-lti-registration).
 2. Ajoutez une nouvelle inscription.
 
-## <a name="troubleshoot-issues-with-onelti"></a>Résoudre les problèmes liés à OneLTI
+## <a name="troubleshoot-issues-with-microsoft-lms-gateway"></a>Résoudre les problèmes liés à la passerelle Microsoft LMS
 
-Si vous ou vos enseignants rencontrez des problèmes avec Microsoft OneLTI, voici quelques actions que vous pouvez effectuer pour résoudre les problèmes.
+Si vous ou vos enseignants rencontrez des problèmes avec la passerelle Microsoft LMS, voici quelques actions que vous pouvez effectuer pour résoudre les problèmes.
 
-### <a name="issues-while-launching-an-lti-tool-from-the-lms"></a>Problèmes lors du lancement d’un outil LTI à partir du LMS
+### <a name="issues-while-launching-an-lti-app-from-the-lms"></a>Problèmes lors du lancement d’une application LTI à partir du LMS
 
-Les enseignants peuvent rencontrer des problèmes lors du lancement d’un outil Microsoft LTI dans leur LMS.
+Les enseignants peuvent rencontrer des problèmes lors du lancement d’une application Microsoft LTI dans leur LMS.
 
 Si c’est le cas, voici quelques problèmes courants et comment les résoudre.
 
@@ -77,16 +77,16 @@ Si c’est le cas, voici quelques problèmes courants et comment les résoudre.
   - Pour savoir comment mettre à jour les paramètres de cookie de votre navigateur, consultez [Autoriser les cookies pour les URL LMS dans votre navigateur](browser-cookies.md).
 
 - **Détails de l’inscription introuvables**
-  - Ce problème se produit lorsque l’inscription de l’outil LTI n’est pas terminée ou si l’inscription a été supprimée dans le portail d’administration OneLTI.
-  - L’administrateur informatique doit terminer l’inscription de l’outil LTI.
+  - Ce problème se produit lorsque l’inscription de l’application LTI n’est pas terminée ou si l’inscription a été supprimée dans la passerelle Microsoft LMS.
+  - L’administrateur informatique doit terminer l’inscription de l’application LTI.
 
 - **Certains détails de LMS ne sont pas valides**
-  - Ce problème se produit lorsque les détails envoyés par le LMS dans la demande de lancement de l’outil ne sont pas alignés sur la spécification IMS LTI 1.3.
+  - Ce problème se produit lorsque les détails envoyés par le LMS dans la demande de lancement de l’application ne sont pas alignés sur la spécification IMS LTI 1.3.
   - L’administrateur informatique devra contacter [l’équipe du support technique microsoft en cas](https://edusupport.microsoft.com/support?product_id=lti_apps&platform_id=web) de persistance du problème.
 
-### <a name="issues-with-signing-in-to-the-registration-portal"></a>Problèmes liés à la connexion au portail d’inscription
+### <a name="issues-with-signing-in-to-the-microsoft-lms-gateway"></a>Problèmes de connexion à la passerelle Microsoft LMS
 
-Lors de la connexion au portail d’inscription Microsoft LTI, vous pouvez rencontrer des problèmes d’accès à la page d’inscription ou de réception d’une erreur de connexion.
+Lors de la connexion à la passerelle Microsoft LMS, vous pouvez rencontrer des problèmes d’accès à la page d’inscription ou de réception d’une erreur de connexion.
 
 Voici quelques problèmes courants de connexion et comment les résoudre.
 
@@ -102,14 +102,14 @@ Voici quelques problèmes courants de connexion et comment les résoudre.
   - Si le locataire n’est pas inscrit, l’administrateur informatique doit l’inscrire avant d’essayer d’inscrire des intégrations LTI.
 
   - Si, après avoir essayé ces étapes, vous voyez toujours cette erreur, puis déconnectez-vous et reconnectez-vous.
-    - Vous pouvez également effacer les cookies et le stockage local pour le portail d’inscription LTI et `https://login.microsoftonline.com/`.
+    - Vous pouvez également effacer les cookies et le stockage local pour la passerelle Microsoft LMS et `https://login.microsoftonline.com/`.
     - Essayez de vous reconnecter.
     - Si le problème persiste, signalez le problème en sélectionnant le lien **Signaler un problème** en haut à droite.
 
 - **Erreur d’authentification**
   - Si vous voyez le message d’erreur « Échec de l’authentification. Réessayez », la session de connexion a peut-être expiré.
     - Déconnectez-vous et reconnectez-vous.
-    - Vous pouvez également effacer les cookies et le stockage local pour le portail d’inscription LTI et `https://login.microsoftonline.com/`.
+    - Vous pouvez également effacer les cookies et le stockage local pour la passerelle Microsoft LMS et `https://login.microsoftonline.com/`.
     - Essayez de vous reconnecter.
     - Si le problème persiste, signalez le problème en sélectionnant le lien **Signaler un problème** en haut à droite.
 
@@ -118,13 +118,13 @@ Voici quelques problèmes courants de connexion et comment les résoudre.
     - Il peut s’agir d’une erreur de traitement interne.
     - Essayez de vous reconnecter après quelques heures.
       - Sélectionnez le bouton **Accéder à la page d’accueil** . Cette opération permet de revenir à la page d’accueil.
-      - Sélectionnez le bouton **Accéder au portail d’inscription** pour revenir au portail d’inscription LTI.
+      - Sélectionnez le bouton **Accéder au portail d’inscription** pour revenir à la passerelle Microsoft LMS.
 
-## <a name="report-problems-with-onelti"></a>Signaler des problèmes avec OneLTI
+### <a name="report-problems-with-lti-registration-portal"></a>Signaler des problèmes avec le portail d’inscription LTI
 
-Pour signaler des problèmes ou envoyer des commentaires pour Microsoft OneLTI, suivez les étapes ci-dessous.
+Pour signaler des problèmes ou envoyer des commentaires pour le portail d’inscription LTI, suivez les étapes ci-dessous.
 
-1. Dans le portail d’inscription Microsoft OneLTI, sélectionnez **l’icône de point d’interrogation** dans l’en-tête de page.
+1. Dans le portail d’inscription LTI, sélectionnez **l’icône de point d’interrogation** dans l’en-tête de page.
 2. Dans la liste déroulante, sélectionnez **Signaler un problème**.
 3. La page support Microsoft Éducation s’ouvre. Connectez-vous avec vos informations d’identification Microsoft 365.
 4. Remplissez le formulaire et envoyez-le.

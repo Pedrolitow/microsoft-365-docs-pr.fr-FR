@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Créez et gérez des boîtes aux lettres inactives qui conservent le contenu des boîtes aux lettres supprimées dans Microsoft 365.
-ms.openlocfilehash: 485352f292321ccfa56e59451cf017c01f3d7fdd
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: b7a33101135b43357b095af6864b54c618abd84d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393357"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417399"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -72,9 +72,11 @@ Pour afficher la liste des boîtes aux lettres inactives de votre organisation :
 
    ![Option Boîte aux lettres inactive dans la page Stratégies de rétention de la gestion du cycle de vie des données.](../media/inactive-mailbox-option.png)
 
-4. La page **Boîtes aux lettres inactives** affiche la liste des boîtes aux lettres inactives. Sélectionnez-en une pour afficher des détails sur cette boîte aux lettres inactive. Les détails incluent la durée d’inactivité, l’identificateur Exchange, le moment où il a été mis en attente.
+4. La page **Boîtes aux lettres inactives** affiche la liste des boîtes aux lettres inactives. Sélectionnez-en une pour afficher des détails sur cette boîte aux lettres inactive. Les détails incluent l’identificateur Exchange de la boîte aux lettres et s’il est en [attente de litige](create-a-litigation-hold.md).
+    
+    Vous ne verrez pas d’autres types de conservations dans le volet d’informations, par exemple une stratégie de rétention Microsoft 365 ou une conservation eDiscovery. Pour trouver ces informations, consultez [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-Dans la page **Boîtes aux lettres inactives** , sélectionnez ![l’icône Exporter les résultats de la recherche.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Exporter** pour afficher ou télécharger un fichier CSV qui contient des informations supplémentaires sur les boîtes aux lettres inactives de votre organisation.
+Si vous avez de nombreuses boîtes aux lettres inactives, il peut être plus facile de rechercher et de trier un fichier CSV pour les détails que vous voyez dans la liste : dans la page **Boîtes aux lettres inactives** , sélectionnez :::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png"::: **Exporter**.
 
 Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell pour afficher la liste des boîtes aux lettres inactives :
 

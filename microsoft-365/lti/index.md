@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: Découvrez les applications Microsoft Learning Tools Interoperability (LTI) et comment elles aideront les enseignants lors de l’intégration d’applications Microsoft dans leur système de gestion Learning (LMS).
-ms.openlocfilehash: 8140b89b4bfeb26f64e8949f6d7835ca59645cbe
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746758"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414763"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Intégration de produits Microsoft à votre système de gestion Learning (LMS)
 
@@ -32,7 +32,7 @@ Ces outils sont les suivants :
 - [Teams réunions LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
 
-Pour obtenir des informations générales sur la gestion des outils Microsoft OneLTI, consultez [Gérer Microsoft OneLTI pour n’importe quel LMS](manage-microsoft-one-lti.md).
+Pour obtenir des informations générales sur la gestion des applications Microsoft LTI, consultez [Gérer les applications Microsoft LTI pour n’importe quel LMS](manage-microsoft-one-lti.md).
 
 ## <a name="onedrive-lti-apps"></a>OneDrive applications LTI
 

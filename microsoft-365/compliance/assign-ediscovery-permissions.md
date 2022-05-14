@@ -16,23 +16,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Attribuez les autorisations nécessaires pour effectuer des tâches liées à eDiscovery à l’aide du portail de conformité Microsoft Purview.
+description: Attribuez les autorisations nécessaires pour effectuer des tâches liées à eDiscovery à l’aide de la portail de conformité Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e764aae4313a8e5d4dfc402e4c1f87eb8c1a5bbb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090514"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419437"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Attribuer des autorisations eDiscovery dans le portail de conformité
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Si vous souhaitez que les utilisateurs utilisent l’un des [outils liés à eDiscovery](ediscovery.md) dans le portail de conformité Microsoft Purview, vous devez leur attribuer les autorisations appropriées. Pour ce faire, le moyen le plus simple consiste à ajouter à la personne le groupe de **rôles** approprié dans la page Autorisations du centre de conformité. Cette rubrique décrit les autorisations requises pour effectuer des tâches eDiscovery.
-  
+Si vous souhaitez que les utilisateurs utilisent l’un des [outils liés à eDiscovery](ediscovery.md) dans le portail de conformité Microsoft Purview, vous devez leur attribuer les autorisations appropriées. Pour ce faire, le moyen le plus simple consiste à ajouter à la personne le groupe de **rôles** approprié sur la page Autorisations dans le portail de conformité. Cette rubrique décrit les autorisations requises pour effectuer des tâches eDiscovery.
+
+> [!TIP]
+> Vous pouvez afficher vos propres autorisations sur la page de vue d’ensemble d’eDiscovery (Premium) dans le portail de conformité. Vous devez avoir au moins un rôle attribué pour que vos autorisations soient affichées.
+
 Le groupe de rôles eDiscovery principal dans le portail de conformité est appelé **Gestionnaire eDiscovery**. Ce groupe de rôles comprend deux sous-groupes.
   
 - **Gestionnaire eDiscovery** : un gestionnaire eDiscovery peut utiliser des outils de recherche eDiscovery pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que la préversion et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas dans Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium), ajouter et supprimer des membres à un cas, créer des conservations de cas, exécuter des recherches associées à un cas et accéder aux données de cas. Les gestionnaires eDiscovery peuvent uniquement consulter et gérer les incidents qu’ils créent. Ils ne peuvent pas accéder aux cas créés par d’autres gestionnaires eDiscovery, ni les gérer.
@@ -41,7 +44,7 @@ Le groupe de rôles eDiscovery principal dans le portail de conformité est appe
   
   - Accédez à tous les cas répertoriés dans les pages **eDiscovery (Standard)** et **eDiscovery (Premium)** dans le portail de conformité.
 
-  - Accéder aux données de cas dans eDiscovery (Premium) pour tous les cas de l’organisation.
+  - Accéder à des données dans eDiscovery (Premium) pour tout cas au sein de l’organisation.
   
   - Gérer tous les cas eDiscovery après s’être ajouté en tant que membre du cas.
   
@@ -86,13 +89,13 @@ Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le porta
 | Rôle | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestion des cas <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Recherche de conformité <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Consignataire <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Communication <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Consignataire <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Révision <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
+|Suspension <br/>  |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Aperçu <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Révision <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
 |Déchiffrer RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
 |Rechercher et vider <br/> | <br/> | <br/> |![Coche](../media/checkmark.png)<br/> | <br/> |
 ||||||
@@ -103,11 +106,11 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery ré
 
 Ce rôle permet aux utilisateurs de créer, modifier, supprimer et contrôler l’accès aux cas eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité. Comme expliqué précédemment, le rôle Gestion des cas doit être attribué à un utilisateur avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md)
 
-- [Démarrage avec eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
+- [Prise en main de la découverte électronique (Premium)](get-started-with-advanced-ediscovery.md)
 
 ### <a name="communication"></a>Communication
 
@@ -135,7 +138,7 @@ Pour plus d’informations, consultez [Work with custodians in eDiscovery (Premi
 
 Le rôle permet aux utilisateurs d’exporter les résultats d’une recherche de contenu vers un ordinateur local. Il leur permet également de préparer les résultats de la recherche pour l’analyse dans eDiscovery (Premium).
 
-Pour plus d’informations sur l’exportation des résultats de la recherche, consultez [Exporter les résultats de la recherche à partir du portail de conformité Microsoft Purview](export-search-results.md).
+Pour plus d’informations sur l’exportation des résultats [de recherche, consultez Exporter les résultats de la recherche à partir de portail de conformité Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Suspension
 

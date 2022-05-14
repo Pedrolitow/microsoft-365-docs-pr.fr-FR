@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis avec des fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8c78847e36d4a4887c4f7a3c54904cc26a012e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131149"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418267"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis avec une investigation et une réponse automatisées
 
@@ -63,6 +63,9 @@ Lorsqu’un compte d’utilisateur est compromis, des alertes sont déclenchées
 > [!IMPORTANT]
 > Vous devez disposer des autorisations appropriées pour effectuer les tâches suivantes. Consultez [Autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
 
+Regardez cette courte vidéo pour découvrir comment détecter et répondre aux compromissions de l’utilisateur dans Microsoft Defender pour Office 365 à l’aide d’air (Automated Investigation and Response) et d’alertes utilisateur compromises.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
+
 ### <a name="view-and-investigate-restricted-users"></a>Afficher et examiner les utilisateurs restreints
 
 Vous disposez de quelques options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le portail Microsoft 365 Defender, vous pouvez accéder à **Email & Collaboration** \> **Review** \> **Restricted Users**. La procédure suivante décrit la navigation à l’aide du tableau de bord **Alertes** , qui est un bon moyen de voir différents types d’alertes qui ont pu être déclenchées.
@@ -91,7 +94,7 @@ Pour plus d’informations, consultez [Afficher les détails d’une enquête](a
 
 - **Ne vous fiez pas à une alerte de connexion suspecte comme seul indicateur**. Lorsqu’un compte d’utilisateur est compromis, il peut déclencher ou non une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produit après la compromission d’un compte qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Consultez les [stratégies d’alerte](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

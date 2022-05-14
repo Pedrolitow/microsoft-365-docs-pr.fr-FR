@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez comment autoriser les cookies pour les URL LMS dans les navigateurs Edge, Chrome et Firefox et Safari.
-ms.openlocfilehash: 1dabe2d16dc2d559ec1576a2140c48b63c8e2ccd
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 84ba252f9d3854fad4e89bd6e9dac8d0b020cf3a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285623"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414781"
 ---
 # <a name="allow-cookies-for-lms-urls-in-your-browser"></a>Autoriser les cookies pour les URL LMS dans votre navigateur
 
@@ -29,13 +29,13 @@ Voici les étapes à suivre pour autoriser les cookies dans votre navigateur.
 
 ## <a name="allow-cookies-for-lms-urls-in-microsoft-edge"></a>Autoriser les cookies pour les URL LMS dans Microsoft Edge
 
-1. Dans edge  **Paramètres**  window,  **selectCookies et les autorisations** > de  **siteCookies et data storedManage** > **, puis supprimez les cookies et les données de site**.
-2. Activez les  **sites OnAllow pour enregistrer et lire les données de cookie (recommandé)** et  **assurez-vous** que les cookies  tiersblock sont désactivés.
+1. Dans la fenêtre **Paramètres** dʼEdge, sélectionnez **Cookies et autorisations de site** > **Cookies et données stockés** > **Gérer et supprimer les cookies et les données du site**.
+2. Activez l’option **Autoriser les sites à enregistrer et à lire les données des cookies (recommandé)** et assurez-vous que l’option **Bloquer les cookies tiers** est désactivée.
 
 Si vous devez bloquer les cookies tiers :
 
-1. Dans edge  **Paramètres**  window,  **selectCookies et les autorisations** > de  **siteCookies et data storedManage** > **, puis supprimez les cookies et les données de site**.
-2.  **UnderAllow**,  **selectAddto**  add the domain URL of the LMS platform.
+1. Dans la fenêtre **Paramètres** dʼEdge, sélectionnez **Cookies et autorisations de site** > **Cookies et données stockés** > **Gérer et supprimer les cookies et les données du site**.
+2. Sous **Autoriser**, **sélectionnez Ajouter** pour ajouter l’URL de domaine de la plateforme LMS.
    1. Par exemple, si la plateforme LMS est hébergée sur `https://contoso.com`, cette URL doit être ajoutée sous **Autoriser**.
 
 ![Capture d’écran de Microsoft Edge page paramètres de cookie](media/edge-cookies.png)
@@ -44,9 +44,9 @@ Si vous devez bloquer les cookies tiers :
 
 ## <a name="allow-cookies-for-lms-urls-in-google-chrome"></a>Autoriser les cookies pour les URL LMS dans Google Chrome
 
-1. Dans Chrome  **Paramètres**  window, sur  **thePrivacy et securitytab** ,  **selectCookies et d’autres données de site**.
+1. Dans la fenêtre **Paramètres** de Chrome, sous l’onglet **Confidentialité et sécurité**, sélectionnez **Cookies et autres données de site**.
 
-2.  **Sous-sites qui peuvent toujours utiliser des cookies**,  **selectAdd**, puis sélectionnez les  **cookies tiersIncluding sur cette case** à cocher de site .
+2. Sous **Sites autorisés à utiliser des cookies**, sélectionnez **Ajouter**, puis activez la case **Inclure les cookies tiers de ce site**.
 
 3. Ajoutez l’URL de domaine de la plateforme LMS.
    1. Par exemple, si la plateforme LMS est hébergée sur `https://contoso.com`, cette URL doit être utilisée.
@@ -57,16 +57,16 @@ Si vous devez bloquer les cookies tiers :
 
 ## <a name="allow-cookies-for-lms-urls-in-mozilla-firefox"></a>Autoriser les cookies pour les URL LMS dans Mozilla Firefox
 
-1. Dans Firefox  **Paramètres**  window, sélectionnez &  **Securitytab** .
+1. Dans la fenêtre **Paramètres** de Firefox, sélectionnez lʼonglet **Vie privée et sécurité**.
 
-2.  **UnderCookies et Données de site**,  **selectManage Exceptions**.
+2. Sous **Cookies et données de sites**, sélectionnez **Gérer les exceptions**.
 
-3. Dans la  **zoneAddress de websitetext** , entrez l’URL de la plateforme LMS.
+3. Dans la zone **de texte Adresse du site web** , entrez l’URL de la plateforme LMS.
    1. Par exemple, si la plateforme LMS est hébergée sur `https://contoso.com`, cette URL doit être utilisée.
 
 4. Sélectionnez **Autoriser** pour autoriser les cookies pour le site web entré.
 
-5. Sélectionner  **les modifications**.
+5. Sélectionnez **Enregistrer les modifications**.
 
 ![Capture d’écran de la page paramètres des cookies Mozilla Firefox](media/firefox-cookies.png)
 
@@ -74,9 +74,9 @@ Si vous devez bloquer les cookies tiers :
 
 ## <a name="allow-cookies-for-lms-urls-in-safari"></a>Autoriser les cookies pour les URL LMS dans Safari
 
-1.  **SelectPreferencesPrivacy** >. ****
+1. Sélectionnez **Préférences** > **Confidentialité**.
 
-2. Désactivez la case  **à cocher de**  suivi intersitePrevent.
+2. Désactivez la case **Empêcher le suivi intersite**.
 
 ---
 

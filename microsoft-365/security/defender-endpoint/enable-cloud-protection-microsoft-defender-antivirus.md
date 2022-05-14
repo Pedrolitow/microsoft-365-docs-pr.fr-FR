@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 95269837e4ad26b4928a2ff82df65a259c707290
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 38bd804d40c3d5f84e80585f86d906c6a645a668
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790655"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416691"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
@@ -125,7 +125,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Antivirus Microsoft Defender applets de commande](/powershell/module/defender/). [Fournisseur CSP de stratégie - Defender](/windows/client-management/mdm/policy-csp-defender) contient également plus d’informations spécifiquement sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Antivirus Microsoft Defender applets de commande](/powershell/module/defender/). Fournisseur de solutions Cloud de stratégie [: Defender](/windows/client-management/mdm/policy-csp-defender) contient également plus d’informations spécifiquement sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 > [!IMPORTANT]
 > Vous pouvez définir **-SubmitSamplesConsent** `SendSafeSamples` sur (paramètre par défaut, recommandé) `NeverSend`ou `AlwaysPrompt`. Le `SendSafeSamples` paramètre signifie que la plupart des exemples seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles se traduisent par une invite de continuer et nécessiteront une confirmation.
@@ -165,8 +165,8 @@ Pour plus d’informations sur les paramètres autorisés, consultez [Windows De
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

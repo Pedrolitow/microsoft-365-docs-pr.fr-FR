@@ -14,13 +14,13 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client Microsoft Purview.
-ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+description: Dans cet article, vous allez découvrir comment le chiffrement de service fonctionne avec Microsoft Purview clé client.
+ms.openlocfilehash: 3a0533b94cb70c9fc46d6246e99d3f9fdb5eb6e6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145209"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415082"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>Chiffrement de service avec la clé client Microsoft Purview
 
@@ -55,7 +55,7 @@ Une stratégie de chiffrement des données (DEP) définit la hiérarchie de chif
 - Informations sur l’utilisateur et le signal pour Exchange Online
 - Exchange Online boîtes aux lettres qui ne sont pas déjà chiffrées par des dep de boîte aux lettres
 - Stockage du journal d’audit unifié
-- Microsoft Purview Information Protection :
+- Protection des données Microsoft Purview :
 
   - Données de correspondance de données exactes (EDM), y compris les schémas de fichier de données, les packages de règles et les sels utilisés pour hacher les données sensibles. Pour EDM et Microsoft Teams, le DEP multi-charge de travail chiffre les nouvelles données à partir du moment où vous affectez le DEP au locataire. Pour Exchange Online, customer key chiffre toutes les données existantes et nouvelles.
 

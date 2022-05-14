@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Skype Entreprise vers Microsoft 365.
-ms.openlocfilehash: ceca2068f819d4b7bec32ab65e673b055775c217
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 8b824a8ac0db74d639c402bdec9e0894078b2dea
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318340"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415945"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurer un connecteur pour archiver les données Skype Entreprise
 

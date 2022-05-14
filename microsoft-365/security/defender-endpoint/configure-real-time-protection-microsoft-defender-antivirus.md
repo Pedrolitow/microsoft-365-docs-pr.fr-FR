@@ -15,12 +15,12 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 744aaa887bfbfafd29b9e3bedb8dc49791b43137
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: d950e69a557ccc95fe40bf300dae05f64e51032e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790171"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416033"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe
 
@@ -81,7 +81,7 @@ Pour activer et configurer la protection always on :
 
 ### <a name="real-time-protection-policy-settings"></a>Paramètres de stratégie de protection en temps réel
 
-|Paramètres|Valeur par défaut|
+|Setting|Valeur par défaut|
 |---|---|
 |Activer la surveillance du comportement <p> Le moteur antivirus surveille les processus de fichiers, les modifications apportées aux fichiers et au Registre, ainsi que d’autres événements sur vos points de terminaison, en cas d’activité malveillante suspecte et connue.|Activé|
 |Analyser tous les fichiers et pièces jointes téléchargés <p> Les fichiers téléchargés et les pièces jointes sont analysés automatiquement. Cette analyse s’ajoute au filtre SmartScreen Windows Defender, qui analyse les fichiers avant et pendant le téléchargement.|Activé|
@@ -127,8 +127,8 @@ La principale fonctionnalité de protection en temps réel est activée par déf
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

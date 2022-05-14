@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données RingCentral de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, eDiscovery et des stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 7518d70c30f9a86e88181bdc2218fd3c4868a082
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 097aa739e28387c09f608ac6fa40c23f13158dbd
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319437"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417147"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Configurer un connecteur pour archiver les données RingCentral
 

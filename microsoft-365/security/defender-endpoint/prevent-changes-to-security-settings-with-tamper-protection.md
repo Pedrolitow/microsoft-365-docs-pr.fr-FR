@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: bcdf933de412a8141f0abc208f06cc55609f12c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788939"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416307"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -41,15 +41,15 @@ ms.locfileid: "64788939"
 
 La protection contre les falsifications est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
-- Windows 11
-- Windows 11 Entreprise multisession 
-- Windows 10
+- Windows 11
+- Multisession Windows 11 Entreprise 
+- Windows 10
 - Windows 10 Entreprise à sessions multiples
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server, version 1803 ou ultérieure
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protection contre les falsifications dans Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
@@ -67,7 +67,7 @@ Pendant certains types de cyberattaques, les mauvais acteurs essaient de désact
 - Suppression des mises à jour du renseignement de sécurité
 - Désactivation des actions automatiques sur les menaces détectées
 
-### <a name="how-it-works"></a>Mode de fonctionnement
+### <a name="how-it-works"></a>Fonctionnement
 
 La protection contre les falsifications verrouille essentiellement Antivirus Microsoft Defender à ses valeurs sécurisées par défaut et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes telles que :
 
@@ -116,15 +116,15 @@ La protection contre les falsifications peut être activée ou désactivée pour
 
 - Vos appareils Windows doivent exécuter l’une des versions suivantes de Windows :
   
-  - Windows 11
-  - Windows 11 Entreprise multisession 
-  - Windows 10
+  - Windows 11
+  - Multisession Windows 11 Entreprise 
+  - Windows 10
   - Windows 10 Entreprise à sessions multiples
   - Windows Server 2022
   - Windows Server 2019
   - Windows Server, version 1803 ou ultérieure
   - Windows Server 2016
-  - Windows Server 2012 R2
+  - Windows Server 2012 R2
 
 Pour plus d’informations sur les versions, consultez [Windows 10 informations de publication](/windows/release-health/release-information).
 
@@ -140,7 +140,7 @@ Pour plus d’informations sur les versions, consultez [Windows 10 informations 
 
 :::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Activer la protection contre les falsifications dans le portail Microsoft 365 Defender" lightbox="../../media/mde-turn-tamperprotectionon.png":::
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Choisissez **Paramètres** \> **points de terminaison**.
 
@@ -252,8 +252,8 @@ Pour en savoir plus sur threat & Vulnerability Management, consultez [Dashboard 
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre les falsifications ?
 
-- Windows 11
-- Windows 11 Entreprise multisession
+- Windows 11
+- Multisession Windows 11 Entreprise
 - Windows 10 système d’exploitation [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ou version ultérieure avec [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint).
 - Windows 10 Entreprise à sessions multiples
   
@@ -324,11 +324,13 @@ Votre équipe des opérations de sécurité peut également utiliser des requêt
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Sécuriser Windows PC avec Endpoint Protection pour Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Obtenir une vue d’ensemble de Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint)
 - [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour point de terminaison](why-use-microsoft-defender-antivirus.md)
+- [Activer le mode de résolution des problèmes](enable-troubleshooting-mode.md)
+- [Scénarios de mode de dépannage](troubleshooting-mode-scenarios.md)

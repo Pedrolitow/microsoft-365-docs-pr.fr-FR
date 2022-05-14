@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 257a3bfc4fc9dcb6353bb158bc3cd4296891ae76
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: f07e62edd43098a493c80ca7f3155c148793578e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790149"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419173"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurer la correction pour la détection d’antivirus Microsoft Defender
 
@@ -55,7 +55,7 @@ Vous pouvez également utiliser [l’applet de commande PowerShell ou la`Set-MpP
 
 <br/><br/>
 
-|Emplacement|Paramètre|Description|Paramètre par défaut (s’il n’est pas configuré)|
+|Emplacement|Setting|Description|Paramètre par défaut (s’il n’est pas configuré)|
 |---|---|---|---|
 |Analyser|Créer un point de restauration système|Un point de restauration système est créé chaque jour avant la tentative de nettoyage ou d’analyse|Désactivé|
 |Analyser|Activer la suppression d’éléments du dossier d’historique d’analyse|Spécifier le nombre de jours pendant lesquels les éléments doivent être conservés dans l’historique d’analyse|30 jours|
@@ -80,8 +80,8 @@ Consultez également [Configurer les analyses de Antivirus Microsoft Defender co
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

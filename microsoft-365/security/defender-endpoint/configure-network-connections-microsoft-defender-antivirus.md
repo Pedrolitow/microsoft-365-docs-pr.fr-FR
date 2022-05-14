@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 70360ac3b9ade0e6039239fe257d83c7ba3a2db0
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787601"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418629"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -84,7 +84,7 @@ Utilisez l’argument suivant avec l’utilitaire de ligne de commande Antivirus
 ```
 
 > [!NOTE]
-> Ouvrez l’invite de commandes en tant qu’administrateur. Cliquez avec le bouton droit sur l’élément dans le menu **Démarrer** , cliquez sur **Exécuter en tant qu’administrateur** , puis cliquez sur **Oui** à l’invite d’autorisations. Cette commande fonctionne uniquement sur Windows 10, version 1703 ou ultérieure, ou Windows 11.
+> Ouvrez une fenêtre d’invite de commandes en tant qu’administrateur. Cliquez avec le bouton droit sur l’élément dans le menu **Démarrer** , cliquez sur **Exécuter en tant qu’administrateur** , puis cliquez sur **Oui** à l’invite d’autorisations. Cette commande fonctionne uniquement sur Windows 10, version 1703 ou ultérieure, ou Windows 11.
 
 Pour plus d’informations, consultez [Gérer les Antivirus Microsoft Defender avec l’outil de ligne de commande mpcmdrun.exe](command-line-arguments-microsoft-defender-antivirus.md).
 
@@ -125,8 +125,8 @@ Un message similaire se produit si vous utilisez Internet Explorer :
     > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
     > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
     > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-    > - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-    > - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+    > - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+    > - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 
 ## <a name="see-also"></a>Voir aussi

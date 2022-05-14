@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment utiliser l’outil de gestion des consignats intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
+description: Découvrez comment utiliser l’outil de gestion des consignations intégré dans Microsoft Purview eDiscovery (Premium) pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3810880ca414efaaa3471c65d2c8c7b8d2956120
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 59caac668972968ae3eada2d52d4a5fff8abeae0
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093215"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416109"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Ajouter des consignatateurs à un cas eDiscovery (Premium)
 

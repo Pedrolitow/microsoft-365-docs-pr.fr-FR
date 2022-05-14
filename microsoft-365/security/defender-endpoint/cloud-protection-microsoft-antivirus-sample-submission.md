@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 08f8e0c861bfd19f11c5b011d0a8db41ce3e73bc
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789049"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419943"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Protection cloud et soumission d’exemples au Antivirus Microsoft Defender
 
@@ -71,16 +71,16 @@ Antivirus Microsoft Defender et la protection cloud bloquent automatiquement la 
 
       2. **Toujours demander**
          - S’il est configuré, l’utilisateur est toujours invité à donner son consentement avant l’envoi du fichier
-         - Ce paramètre n’est pas disponible dans la protection cloud macOS
+         - Ce paramètre n’est pas disponible dans macOS protection cloud
 
       3. **Envoyer tous les exemples automatiquement**
          - S’il est configuré, tous les exemples sont envoyés automatiquement
          - Si vous souhaitez que les exemples de soumission incluent des macros incorporées dans la documentation Word, vous devez choisir « Envoyer tous les exemples automatiquement »
-         - Ce paramètre n’est pas disponible sur la protection cloud macOS
+         - Ce paramètre n’est pas disponible sur macOS protection cloud
 
       4. **Ne pas envoyer**
          - Empêche « bloquer à la première consultation » en fonction de l’analyse de l’exemple de fichier
-         - « Ne pas envoyer » équivaut au paramètre « Désactivé » dans la stratégie macOS
+         - « Ne pas envoyer » équivaut au paramètre « Désactivé » dans macOS stratégie
          - Les métadonnées sont envoyées pour les détections même lorsque l’envoi d’exemples est désactivé
 
    3. Une fois les métadonnées et/ou les fichiers envoyés à la protection cloud, vous pouvez utiliser **des exemples**, **des détonations** ou des modèles Machine Learning d’analyse **big data** pour parvenir à un verdict. La désactivation de la protection fournie par le cloud limite l’analyse à ce que le client peut fournir via des modèles Machine Learning locaux et des fonctions similaires.
@@ -111,7 +111,7 @@ Le tableau suivant répertorie des exemples de métadonnées envoyées pour anal
 | Type | Attribut |
 |:---|:---|
 | Attributs de machine | `OS version` <br/> `Processor` <br/> `Security settings` |
-| Attributs dynamiques et contextuels | **Processus et installation** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**Comportementale** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
+| Attributs dynamiques et contextuels | **Processus et installation** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**Comportemental** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
 | Attributs de fichier statiques | **Hachages partiels et complets** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**Propriétés de fichier** <br/>`FileName` <br/> `FileSize` <br/><br/> **Informations sur le signataire** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
 ## <a name="samples-are-treated-as-customer-data"></a>Les exemples sont traités comme des données client
@@ -147,8 +147,8 @@ Il existe deux autres scénarios où Defender pour point de terminaison peut dem
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -22,18 +22,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle conservation associée à un cas eDiscovery dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: c652cd7d553faa5a7f85c59127e4aa2acfd7df4b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b828c9c1e6494ad4d0da4ca471feb7ace563d152
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097907"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416011"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery (Standard)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Le Centre de sécurité & conformité PowerShell fournit des applets de commande qui vous permettent d’automatiser les tâches fastidieuses liées à la création et à la gestion des cas eDiscovery. Actuellement, l’utilisation de l’affaire Microsoft Purview eDiscovery (Standard) dans le portail de conformité Microsoft Purview pour mettre un grand nombre d’emplacements de contenu de consignation en attente prend du temps et de la préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise à la conservation. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
+Le Centre de sécurité & conformité PowerShell fournit des applets de commande qui vous permettent d’automatiser les tâches fastidieuses liées à la création et à la gestion des cas eDiscovery. Actuellement, l’utilisation du cas Microsoft Purview eDiscovery (Standard) dans le portail de conformité Microsoft Purview pour mettre un grand nombre d’emplacements de contenu de consignation en attente prend du temps et de la préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise à la conservation. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
   
 Le script vous invite à entrer le nom du domaine Mon site de votre organisation (par exemple, `contoso` dans l’URL https://contoso-my.sharepoint.com), le nom d’un cas eDiscovery existant, le nom de la nouvelle conservation associée au cas, une liste d’adresses e-mail des utilisateurs que vous souhaitez mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l’URL du site OneDrive Entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et OneDrive Entreprise site pour chaque utilisateur de la liste à la conservation. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation.
   
@@ -47,7 +47,7 @@ Voici les étapes à suivre pour y parvenir :
   
 ## <a name="before-you-add-users-to-a-hold"></a>Avant d’ajouter des utilisateurs à une conservation
 
-- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le portail de conformité et administrateur SharePoint Online pour exécuter le script à l’étape 3. Pour plus d’informations, consultez [Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le portail de conformité et administrateur SharePoint Online pour exécuter le script à l’étape 3. Pour plus d’informations, consultez [Attribuer des autorisations eDiscovery dans le Centre de sécurité & conformité Office 365](assign-ediscovery-permissions.md).
 
 - Un maximum de 1 000 boîtes aux lettres et 100 sites peuvent être ajoutés à une conservation associée à un cas eDiscovery dans le portail de conformité. En supposant que chaque utilisateur que vous souhaitez mettre en attente dispose d’un site OneDrive Entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une conservation à l’aide du script de cet article.
 

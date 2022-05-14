@@ -20,16 +20,16 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c6564d191b3d3302f818e20fe08e64b415c2b0bb
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 6e265490eb5afee275debcdd1eb073f11bb845e3
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131364"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416489"
 ---
 # <a name="learn-how-to-manage-the-log4shell-vulnerability-in-microsoft-defender-for-endpoint"></a>Découvrez comment gérer la vulnérabilité Log4Shell dans Microsoft Defender pour point de terminaison
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -54,7 +54,7 @@ Menaces et gestion des vulnérabilités vous offrent les fonctionnalités suivan
 >
 > La prise en charge sur Linux nécessite Microsoft Defender pour point de terminaison client Linux version 101.52.57 (30.121092.15257.0) ou version ultérieure.
 >
-> La prise en charge sur macOS nécessite Microsoft Defender pour point de terminaison version du client macOS 20.121111.15416.0 ou ultérieure.
+> La prise en charge sur macOS nécessite Microsoft Defender pour point de terminaison macOS version client 20.121111.15416.0 ou ultérieure.
 >
 >Pour plus d’informations sur les versions prises en charge, consultez [Plateformes et fonctionnalités des systèmes d’exploitation pris en charge](tvm-supported-os.md).
 
@@ -180,9 +180,9 @@ La modification prend effet après le redémarrage de l’appareil.
 
 Supprimez le setenv de fichier. LOG4JFORMATMSGNOLOOKUPS.plist\_\_\_\_ dans les dossiers suivants :
 
-  - */Library/LaunchDaemons/*
-  - */Library/LaunchAgents/*
-  - */Users/\[username\]/Library/LaunchAgents/ - pour tous les utilisateurs*
+- */Library/LaunchDaemons/*
+- */Library/LaunchAgents/*
+- */Users/\[username\]/Library/LaunchAgents/ - pour tous les utilisateurs*
 
 La modification prend effet après le redémarrage de l’appareil.
 

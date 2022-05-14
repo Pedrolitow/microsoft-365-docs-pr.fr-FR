@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 716a3a0255074a1180d01bbe0e3ef5067e7a31cf
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: 17c7dd9a7b92f4a540f16cd5768067dd52991f22
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145227"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415533"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Essayer Microsoft Defender pour Office 365
 
@@ -43,6 +43,9 @@ Le portail **d’essais** unifiés dans le portail Microsoft 365 Defender fourni
   Dans ces environnements, vous pouvez essayer Defender pour Office 365 en mode *audit* ou en *mode de blocage*.
 
 Vous êtes invité à démarrer votre version d’évaluation dans différents emplacements de fonctionnalités Defender pour Office 365 dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com>. L’emplacement centralisé pour démarrer votre version d’évaluation se trouve sur la page **Essais** à l’adresse <https://security.microsoft.com/atpEvaluation>.
+
+Regardez cette courte vidéo pour en savoir plus sur la façon dont vous pouvez faire plus en moins de temps avec Microsoft Defender pour Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
 
 Le reste de cet article explique la différence entre le mode de blocage du mode audit, la configuration des évaluations et d’autres détails.
 
@@ -220,7 +223,7 @@ Les autorisations requises dans **Azure AD** pour configurer une évaluation de 
 - **Créez, modifiez ou supprimez une évaluation** : Administrateur de sécurité ou Administrateur général.
 - **Afficher les stratégies d’évaluation et les rapports** : Administrateur de sécurité ou Lecteur Sécurité.
 
-Pour plus d’informations sur les autorisations Azure AD dans le portail Microsoft 365 Defender, consultez [Azure AD rôles dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+Pour plus d’informations sur les autorisations Azure AD dans le portail Microsoft 365 Defender, consultez [les rôles Azure AD dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
 
 ## <a name="evaluation-policy-settings"></a>Paramètres de stratégie d’évaluation
 
@@ -233,22 +236,22 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |AdminDisplayName|Stratégie d’évaluation|
 |AuthenticationFailAction|MoveToJmf|
 |Activé|Vrai|
-|EnableFirstContactSafetyTips|False|
+|EnableFirstContactSafetyTips|Faux|
 |EnableMailboxIntelligence|Vrai|
 |EnableMailboxIntelligenceProtection|Vrai|
 |EnableOrganizationDomainsProtection|Faux|
 |EnableSimilarDomainsSafetyTips|False|
-|EnableSimilarUsersSafetyTips|False|
+|EnableSimilarUsersSafetyTips|Faux|
 |EnableSpoofIntelligence|Vrai|
 |EnableSuspiciousSafetyTip|Faux|
 |EnableTargetedDomainsProtection|False|
 |EnableTargetedUserProtection|False|
 |EnableUnauthenticatedSender|Vrai|
-|EnableUnusualCharactersSafetyTips|False|
+|EnableUnusualCharactersSafetyTips|Faux|
 |EnableViaTag|Vrai|
 |Guid|Valeur GUID|
 |ImpersonationProtectionState|Manual|
-|IsDefault|False|
+|IsDefault|Faux|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
@@ -288,7 +291,7 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |AdminDisplayName|Stratégie d’évaluation|
 |ConfidenceLevelThreshold|80|
 |Activer|Vrai|
-|EnableOrganizationBranding|False|
+|EnableOrganizationBranding|Faux|
 |Guid|Valeur GUID|
 |IsBuiltInProtection|False|
 |IsDefault|False|
@@ -305,12 +308,12 @@ Les paramètres du Defender pour Office 365 créés spécifiquement pour l’év
 |Paramètre|Valeur|
 |---|---|
 |AdminDisplayName|Stratégie d’évaluation|
-|AllowClickThrough|False|
+|AllowClickThrough|Faux|
 |CustomNotificationText|Blanc|
 |DeliverMessageAfterScan|Vrai|
 |DisableUrlRewrite|Vrai|
 |DoNotRewriteUrls|{}|
-|EnableForInternalSenders|False|
+|EnableForInternalSenders|Faux|
 |EnableOrganizationBranding|False|
 |EnableSafeLinksForTeams|Vrai|
 |Guid|Valeur GUID|

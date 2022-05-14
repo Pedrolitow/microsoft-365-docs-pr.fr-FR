@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings dans Outlook pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: fe7a680ec5980ab1526d4ccb5f80514210bc3605
-ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
+ms.openlocfilehash: abad0358fc0062774ebadb409dd1a8658fddd16e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65372163"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416753"
 ---
 # <a name="bookings-in-outlook"></a>Bookings dans Outlook
 
@@ -28,8 +28,8 @@ Bookings dans Outlook a deux vues différentes :
 - **Mode Organisateur** Page de réservation personnelle dans laquelle vous pouvez créer des types de réunion que d’autres personnes peuvent réserver avec vous. Les types de réunion personnalisés vous permettent de personnaliser le moment où vous souhaitez vous rencontrer et la façon dont ce type de réunion est partagé avec d’autres personnes. Vous contrôlez si chaque type de réunion est public pour votre page de planification ou est privé et n’est accessible qu’à un groupe de personnes sélectionné. Vous pouvez également choisir d’ajouter une réunion Teams à toutes les réunions réservées via votre Bookings dans Outlook page. Vous pouvez accéder à votre Bookings dans Outlook page via Outlook sur le web. Une fois votre page configurée et publiée, vous pouvez la partager avec d’autres personnes. Par exemple, vous pouvez l’ajouter à votre signature Outlook.
 
 - **Affichage planification** Lorsque vous partagez vos Bookings dans Outlook page avec d’autres personnes, l’affichage de planification s’affiche. Les réunions affichées dans l’affichage planification varient selon que vous avez partagé le lien vers votre Bookings dans Outlook page avec des réunions publiques ou si vous avez partagé un lien privé pour une réunion individuelle.
-    - Les réunions publiques peuvent être affichées et planifiées par toute personne disposant de votre Bookings dans Outlook lien de page. Vous contrôlez avec qui vous partagez ce lien. Tous les types de réunions publiques sont visibles par toute personne disposant de votre Bookings dans Outlook lien de page.
-    - Les réunions privées peuvent uniquement être consultées par les personnes qui ont le lien pour ce type de réunion. La différence entre les réunions publiques et les réunions privées est que les réunions privées peuvent avoir des liens différents et que les liens expirent après 90 jours. Vous pouvez également définir des liaisons privées pour qu’ils expirent après une réservation unique. Lorsque vous accédez à la vue de planification d’une réunion privée, seul ce type de réunion est visible.
+  - Les réunions publiques peuvent être affichées et planifiées par toute personne disposant de votre Bookings dans Outlook lien de page. Vous contrôlez avec qui vous partagez ce lien. Tous les types de réunions publiques sont visibles par toute personne disposant de votre Bookings dans Outlook lien de page.
+  - Les réunions privées peuvent uniquement être consultées par les personnes qui ont le lien pour ce type de réunion. La différence entre les réunions publiques et les réunions privées est que les réunions privées peuvent avoir des liens différents et que les liens expirent après 90 jours. Vous pouvez également définir des liaisons privées pour qu’ils expirent après une réservation unique. Lorsque vous accédez à la vue de planification d’une réunion privée, seul ce type de réunion est visible.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -103,7 +103,7 @@ Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** 
    Set-OrganizationConfig -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    **C**. Si la valeur  **deEwsApplicationAccessPolicyis**  est vide, toutes les applications sont autorisées à accéder à EWS et REST.
+    **C**. Si la valeur de **EwsApplicationAccessPolicy** est vide, toutes les applications sont autorisées à accéder à EWS et REST.
 
     - Pour désactiver Bookings dans Outlook pour votre organisation, **définissez la stratégie EnforceBlockList** et ajoutez **MicrosoftOWSPersonalBookings** à la liste rouge en exécutant la commande suivante :
 
@@ -148,7 +148,7 @@ Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l
     - Pour désactiver Bookings dans Outlook pour cet utilisateur, ajoutez **MicrosoftOWSPersonalBookings** à **EnforceBlockList** en exécutant la commande suivante :
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy  EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - Pour activer Bookings dans Outlook pour cet utilisateur, supprimez **MicrosoftOWSPersonalBookings**, s’il est présent dans EnforceBlockList, en exécutant la commande suivante :
@@ -159,8 +159,8 @@ Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l
 
     **C**. Si la valeur de EwsApplicationAccessPolicy est vide, toutes les applications sont autorisées à accéder à EWS et REST.
 
-    - Pour désactiver Bookings dans Outlook pour cet utilisateur, définissez la stratégie **EnforceBlockList** et  **addMicrosoftOWSPersonalBookingsto**  EWSBlockList en exécutant la commande suivante :
+    - Pour désactiver Bookings dans Outlook pour cet utilisateur, **définissez la stratégie EnforceBlockList** et ajoutez **MicrosoftOWSPersonalBookings** à EWSBlockList en exécutant la commande suivante :
 
     ```PowerShell
-   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy  EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```

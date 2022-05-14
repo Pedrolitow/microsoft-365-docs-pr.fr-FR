@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: d7477c2006acd04008e6cb56cb22261a4db4a92b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 81c41abffc6ec01c127b901ac63b3a5d3b6c5732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789910"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418453"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -71,7 +71,7 @@ La gestion de vos alertes et la classification des vrais/faux positifs permetten
 
 Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exacte, un faux positif ou bénin.
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Dans le volet de navigation, choisissez **La file d’attente des alertes**.
 
@@ -89,7 +89,7 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 
 Les alertes peuvent être classées sous forme de faux positifs ou de vrais positifs dans Microsoft 365 Defender. La classification des alertes permet d’entraîner Microsoft Defender pour point de terminaison de sorte qu’au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Sélectionnez **la file d’attente Alertes**, puis sélectionnez une alerte.
 
@@ -104,7 +104,7 @@ Les alertes peuvent être classées sous forme de faux positifs ou de vrais posi
 
 Si vous avez des alertes qui sont des faux positifs ou qui sont de vrais positifs, mais pour des événements sans importance, vous pouvez supprimer ces alertes dans Microsoft 365 Defender. La suppression des alertes permet de réduire le bruit dans votre tableau de bord des opérations de sécurité.
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Dans le volet de navigation, sélectionnez **La file d’attente des alertes**.
 
@@ -465,8 +465,8 @@ Si vous avez suivi toutes les étapes décrites dans cet article et que vous ave
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md) 
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md) 
 
 ## <a name="see-also"></a>Voir aussi
 

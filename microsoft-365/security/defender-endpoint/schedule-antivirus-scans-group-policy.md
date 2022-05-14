@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: dbd3f2b4342757509a6440ff87a112b75b663f22
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 21b30bc9ce43c4d6a04e6e6e33f55f6d8e3d6d1b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788037"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415514"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Planifier des analyses antivirus à l’aide de stratégie de groupe
 
@@ -57,7 +57,7 @@ Pour plus d’informations, consultez [Gérer le moment où les mises à jour de
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>stratégie de groupe paramètres de planification des analyses
 
-| Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 | Analyser | Spécifier le type d’analyse à utiliser pour une analyse planifiée | Analyse rapide |
 | Analyser | Spécifier le jour de la semaine pour exécuter une analyse planifiée | Spécifiez le jour (ou jamais) pour exécuter une analyse. | Jamais |
@@ -66,7 +66,7 @@ Pour plus d’informations, consultez [Gérer le moment où les mises à jour de
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>stratégie de groupe paramètres de planification des analyses lorsqu’un point de terminaison n’est pas utilisé
 
-| Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 | Analyser | Démarrer l’analyse planifiée uniquement lorsque l’ordinateur est activé mais qu’il n’est pas utilisé | Les analyses planifiées ne s’exécutent pas, sauf si l’ordinateur est activé mais qu’il n’est pas en cours d’utilisation | Activé |
 
@@ -75,21 +75,21 @@ Pour plus d’informations, consultez [Gérer le moment où les mises à jour de
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>stratégie de groupe paramètres de planification des analyses correctives requises
 
-| Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |---|---|---|---|
 | Assainissement | Spécifier le jour de la semaine pour exécuter une analyse complète planifiée pour terminer la correction | Spécifiez le jour (ou jamais) pour exécuter une analyse. | Jamais |
 | Assainissement | Spécifier l’heure de la journée d’exécution d’une analyse complète planifiée pour terminer la correction | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 heure du matin) | 2 h du matin |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>stratégie de groupe paramètres de planification des analyses quotidiennes
 
-| Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 | Analyser | Spécifier l’intervalle pour exécuter des analyses rapides par jour | Spécifiez le nombre d’heures qui doivent s’écouler avant la prochaine analyse rapide. Par exemple, pour exécuter toutes les deux heures, entrez **2**, pour une fois par jour, entrez **24**. Entrez **0** pour ne jamais exécuter une analyse rapide quotidienne. | Jamais |
 | Analyser | Spécifier l’heure d’une analyse rapide quotidienne | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 heure du matin) | 2 h du matin |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>stratégie de groupe paramètres de planification des analyses après les mises à jour de protection
 
-| Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré)|
+| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré)|
 |:---|:---|:---|:---|
 | Mises à jour des signatures | Activer l’analyse après la mise à jour du renseignement de sécurité | Une analyse se produit immédiatement après le téléchargement d’une nouvelle mise à jour de la protection | Activé |
 
@@ -100,5 +100,5 @@ Pour plus d’informations, consultez [Gérer le moment où les mises à jour de
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

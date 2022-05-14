@@ -1,7 +1,7 @@
 ---
-title: Envoyer des fichiers dans Pertahanan Microsoft untuk Titik Akhir
+title: Envoyer des fichiers dans Microsoft Defender pour point de terminaison
 description: Découvrez comment utiliser la fonctionnalité d’envoi unifiée dans Microsoft 365 Defender pour envoyer des e-mails, DES URL, des pièces jointes et des fichiers suspects à Microsoft à des fins d’analyse.
-keywords: antivirus, courrier indésirable, hameçonnage, fichier, alerte, Pertahanan Microsoft untuk Titik Akhir, faux positif, faux négatif, fichier bloqué, URL bloquée, soumission, envoi, rapport
+keywords: antivirus, courrier indésirable, hameçonnage, fichier, alerte, Microsoft Defender pour point de terminaison, faux positif, faux négatif, fichier bloqué, URL bloquée, soumission, envoi, rapport
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
@@ -22,14 +22,14 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: 38c9547c93fec5028ad11262ce5c317773fc276c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ee7f5e5b4744d9299d122b4ba6b0dffe6734eca7
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759682"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414825"
 ---
-# <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envoyer des fichiers dans Pertahanan Microsoft untuk Titik Akhir
+# <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envoyer des fichiers dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,11 +40,11 @@ ms.locfileid: "64759682"
 
 >Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour un essai gratuit](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-Dans Pertahanan Microsoft untuk Titik Akhir, les administrateurs peuvent utiliser la fonctionnalité d’envoi unifiée pour envoyer des fichiers et des hachages de fichiers à Microsoft à des fins de révision. L’expérience de soumission unifiée est un guichet unique pour l’envoi d’e-mails, d’URL, de pièces jointes et de fichiers dans une expérience de soumission facile à utiliser. Les administrateurs peuvent utiliser le portail Microsoft 365 Defender ou la page d’alerte Pertahanan Microsoft untuk Titik Akhir pour envoyer des fichiers suspects.  
+Dans Microsoft Defender pour point de terminaison, les administrateurs peuvent utiliser la fonctionnalité d’envoi unifiée pour envoyer des fichiers et des hachages de fichiers à Microsoft à des fins de révision. L’expérience de soumission unifiée est un guichet unique pour l’envoi d’e-mails, d’URL, de pièces jointes et de fichiers dans une expérience de soumission facile à utiliser. Les administrateurs peuvent utiliser le portail Microsoft 365 Defender ou la page d’alerte Microsoft Defender pour point de terminaison pour envoyer des fichiers suspects.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
-- La nouvelle expérience de soumission unifiée est disponible uniquement dans les abonnements qui incluent Microsoft 365 Defender, Pertahanan Microsoft untuk Titik Akhir Plan 2 ou Microsoft Defender pour Office Plan 2.
+- La nouvelle expérience de soumission unifiée est disponible uniquement dans les abonnements qui incluent Microsoft 365 Defender, Microsoft Defender pour point de terminaison Plan 2 ou Microsoft Defender pour Office Plan 2.
 
 - Pour envoyer des fichiers à Microsoft, vous devez être membre de l’un des groupes de rôles suivants :
 
@@ -58,54 +58,54 @@ Si vous avez un fichier que vous soupçonnez être un programme malveillant ou e
 
 ### <a name="submit-a-file-or-file-hash"></a>Envoyer un fichier ou un hachage de fichier
 
-1. Ouvrez Microsoft 365 Defender, <https://security.microsoft.com/>cliquez sur **Actions & soumissions**, cliquez sur **Soumissions**, accédez à l’onglet **Fichiers**, puis **sélectionnez Ajouter une nouvelle soumission**. 
+1. Ouvrez Microsoft 365 Defender, <https://security.microsoft.com/>cliquez sur **Actions & soumissions**, cliquez sur **Soumissions**, accédez à l’onglet **Fichiers**, puis **sélectionnez Ajouter une nouvelle soumission**.
 
     > [!div class="mx-imgBorder"]
-    > ![Ajouter une nouvelle soumission](../../media/unified-admin-submission-new.png) 
+    > ![Ajouter une nouvelle soumission](../../media/unified-admin-submission-new.png)
 
-2. Utilisez les **éléments Submit à Microsoft pour passer en revue** le menu volant qui semble envoyer le **hachage** **de fichier** ou de fichier.  
+2. Utilisez les **éléments Submit à Microsoft pour passer en revue** le menu volant qui semble envoyer le **hachage** **de fichier** ou de fichier.
 
-3. Dans la zone **Sélectionner le type de soumission** , sélectionnez Le hachage **de fichier** ou **de fichier** dans la liste déroulante. 
+3. Dans la zone **Sélectionner le type de soumission** , sélectionnez Le hachage **de fichier** ou **de fichier** dans la liste déroulante.
 
-4. Lors de l’envoi d’un fichier, cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier, puis cliquez sur **Ouvrir**. Notez que pour les soumissions de **hachage** de fichier, vous devez copier ou taper dans le hachage de fichier. 
+4. Lors de l’envoi d’un fichier, cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier, puis cliquez sur **Ouvrir**. Notez que pour les soumissions de **hachage** de fichier, vous devez copier ou taper dans le hachage de fichier.
 
 5. Dans **ce fichier, vous devriez avoir été classé dans la** catégorie « **Programme malveillant** » (faux négatif) ou **« Logiciel indésirable** » ou **« Clean** » (faux positif).
-  
+
 6. Ensuite, **choisissez la priorité**. Notez que pour les soumissions de **hachage** de fichier, **l’envoi de fichier ou de hachage de fichier en bloc** est le seul choix et est automatiquement sélectionné.
 
     > [!div class="mx-imgBorder"]
-    > ![Envoyer des éléments à Microsoft pour révision](../../media/unified-admin-submission-file.png) 
+    > ![Envoyer des éléments à Microsoft pour révision](../../media/unified-admin-submission-file.png)
 
-8. Cliquez sur **Envoyer**. 
- 
+7. Cliquez sur **Envoyer**.
+
    Si vous souhaitez afficher les détails de votre soumission, sélectionnez votre soumission dans la liste **des noms des soumissions** pour ouvrir le menu volant **Détails du** résultat.
 
 ## <a name="report-items-to-microsoft-from-the-alerts-page"></a>Signaler des éléments à Microsoft à partir de la page Alertes
 
-Vous pouvez également envoyer un fichier ou un hachage de fichier directement à partir de la liste des alertes sur la page **Alertes** . 
+Vous pouvez également envoyer un fichier ou un hachage de fichier directement à partir de la liste des alertes sur la page **Alertes** .
 
 1. Ouvrez l’Microsoft 365 Defender à <https://security.microsoft.com/>, cliquez sur **Incidents & alertes**, puis cliquez sur **Alertes** pour afficher la liste des alertes.
 
-2. Sélectionnez l’alerte à signaler. Notez que vous soumettez un fichier qui est niché dans l’alerte.  
+2. Sélectionnez l’alerte à signaler. Notez que vous soumettez un fichier qui est niché dans l’alerte.
 
 3. Cliquez sur les points de suspension en regard de **Gérer l’alerte** pour afficher des options supplémentaires. Sélectionnez **Envoyer des éléments à Microsoft pour révision**.
 
     > [!div class="mx-imgBorder"]
-    > ![Envoyer des éléments à partir de la file d’attente d’alertes](../../media/unified-admin-submission-alerts-queue.png) 
+    > ![Envoyer des éléments à partir de la file d’attente d’alertes](../../media/unified-admin-submission-alerts-queue.png)
 
-4. Dans le menu volant suivant qui s’ouvre, sélectionnez le type de soumission. 
+4. Dans le menu volant suivant qui s’ouvre, sélectionnez le type de soumission.
 
     > [!div class="mx-imgBorder"]
-    > ![Remplir les champs requis](../../media/unified-admin-submission-alert-queue-flyout.png) 
+    > ![Remplir les champs requis](../../media/unified-admin-submission-alert-queue-flyout.png)
 
     Si vous sélectionnez **Fichier** comme type d’envoi, chargez le fichier, classez votre soumission et choisissez la priorité.
-  
-    Si **vous sélectionnez** le hachage de fichier comme type d’envoi, choisissez les hachages de fichier disponibles dans la liste déroulante. Vous pouvez sélectionner plusieurs hachages de fichier. 
- 
-5. Cliquez sur **Envoyer**. 
+
+    Si **vous sélectionnez** le hachage de fichier comme type d’envoi, choisissez les hachages de fichier disponibles dans la liste déroulante. Vous pouvez sélectionner plusieurs hachages de fichier.
+
+5. Cliquez sur **Envoyer**.
 
 ## <a name="related-information"></a>Informations connexes
 
-- [Pertahanan Microsoft untuk Titik Akhir dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
+- [Microsoft Defender pour point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Résoudre les faux positifs/négatifs](defender-endpoint-false-positives-negatives.md)
-- [Afficher et organiser la file d’attente des alertes dans Pertahanan Microsoft untuk Titik Akhir](alerts-queue.md)
+- [Afficher et organiser la file d’attente des alertes dans Microsoft Defender pour point de terminaison](alerts-queue.md)

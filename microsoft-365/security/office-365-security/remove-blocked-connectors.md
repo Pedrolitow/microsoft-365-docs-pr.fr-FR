@@ -16,12 +16,12 @@ ms.custom: ''
 description: Découvrez comment supprimer les connecteurs bloqués dans Microsoft 365 Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d248129c7dec83541c4b340fdac7e881344bbf0
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: d0797f0ec16b8f813cf7db9b2fd27468c141ea53
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131392"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416999"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Supprimer les connecteurs bloqués du portail d’entités restreintes
 
@@ -33,24 +33,24 @@ ms.locfileid: "65131392"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si un connecteur entrant est détecté comme potentiellement compromis, il est limité à l’envoi d’e-mails de relais. Le connecteur est ensuite ajouté à la page **Entités restreintes** dans le portail Microsoft 365 Defender. Lorsque le connecteur est utilisé pour envoyer un e-mail, le message est retourné dans un rapport de non-remise (également appelé NDR ou message rebondi) avec le code d’erreur 550;5.7.711 et le texte suivant : 
+Si un connecteur entrant est détecté comme potentiellement compromis, il est limité à l’envoi d’e-mails de relais. Le connecteur est ensuite ajouté à la page **Entités restreintes** dans le portail Microsoft 365 Defender. Lorsque le connecteur est utilisé pour envoyer un e-mail, le message est retourné dans un rapport de non-remise (également appelé NDR ou message rebondi) avec le code d’erreur 550;5.7.711 et le texte suivant :
 
-> Votre message n’a pas pu être remis. La raison la plus courante est que le connecteur de messagerie de votre organisation est suspecté d’envoyer du courrier indésirable ou du hameçonnage et qu’il n’est plus autorisé à envoyer du courrier électronique. Contactez votre administrateur de messagerie pour obtenir de l’aide. 
-> Le serveur distant a retourné la valeur 550;5.7.711 Accès refusé, connecteur entrant incorrect. AS(2204). 
+> Votre message n’a pas pu être remis. La raison la plus courante est que le connecteur de messagerie de votre organisation est suspecté d’envoyer du courrier indésirable ou du hameçonnage et qu’il n’est plus autorisé à envoyer du courrier électronique. Contactez votre administrateur de messagerie pour obtenir de l’aide.
+> Le serveur distant a retourné la valeur 550;5.7.711 Accès refusé, connecteur entrant incorrect. AS(2204).
 
-Les administrateurs peuvent supprimer des connecteurs de la page Entités restreintes dans Microsoft 365 Defender ou dans Exchange Online PowerShell. 
+Les administrateurs peuvent supprimer des connecteurs de la page Entités restreintes dans Microsoft 365 Defender ou dans Exchange Online PowerShell.
 
 ## <a name="learn-more-on-restricted-entities"></a>En savoir plus sur les entités restreintes
 
 Une entité restreinte est une entité qui n’a pas pu envoyer de courrier électronique, car elle a été potentiellement compromise ou a dépassé la limite d’envoi.
 
-Il existe 2 types d’entités restreintes : 
+Il existe 2 types d’entités restreintes :
 
-- **Utilisateur restreint** : pour plus d’informations sur la raison pour laquelle un utilisateur peut être restreint et sur la façon de gérer les utilisateurs restreints, consultez [Supprimer les utilisateurs bloqués du portail d’entités restreintes](removing-user-from-restricted-users-portal-after-spam.md). 
+- **Utilisateur restreint** : pour plus d’informations sur la raison pour laquelle un utilisateur peut être restreint et sur la façon de gérer les utilisateurs restreints, consultez [Supprimer les utilisateurs bloqués du portail d’entités restreintes](removing-user-from-restricted-users-portal-after-spam.md).
 
-- **Connecteur restreint** : découvrez pourquoi un connecteur peut être restreint et comment gérer les connecteurs restreints (cet article).  
+- **Connecteur restreint** : découvrez pourquoi un connecteur peut être restreint et comment gérer les connecteurs restreints (cet article).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 - Ouvrez le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com>. Pour accéder directement à la page **Entités restreintes** , utilisez <https://security.microsoft.com/restrictedentities>.
 
@@ -127,7 +127,7 @@ Pour supprimer un connecteur de la liste des entités restreintes, remplacez \<c
 Remove-BlockedConnector -ConnectorId <connectorId>
 ```
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - [Répondre à un connecteur compromis](respond-compromised-connector.md)
 - [Supprimer les utilisateurs bloqués](removing-user-from-restricted-users-portal-after-spam.md)

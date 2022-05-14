@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ae90694bab8191c2ad83fa1de7563bc2ba7643e8
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8de4450247d917f0e4d5023febf6d41c80f0688d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789753"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416637"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement Antivirus Microsoft Defender paramètres de stratégie
 
@@ -63,7 +63,7 @@ Pour configurer ces paramètres :
 
 <br/><br/>
 
-| Emplacement | Paramètres | Article |
+| Emplacement | Setting | Article |
 |---|---|---|---|
 | CARTES |Configurer le remplacement des paramètres locaux pour la création de rapports à Microsoft MAPS|[Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Quarantaine|Configurer le remplacement des paramètres locaux pour la suppression d’éléments du dossier Quarantaine|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) |
@@ -109,10 +109,10 @@ Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes d�
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

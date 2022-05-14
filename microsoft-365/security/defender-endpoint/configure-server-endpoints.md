@@ -18,25 +18,25 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14ec731eebe21f6b399e03d445fef248b8675026
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a68c589870262d9d8fc26acce0175043b6917b72
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098755"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417377"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Windows Server 2012 R2
 - Windows Server 2016
 - canal Semi-Annual Enterprise serveur Windows
 - Windows Server 2019 et versions ultérieures
 - Windows Server 2019 Core Edition
-- Windows Server 2022
+- Windows Server 2022
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
@@ -53,21 +53,19 @@ Vous devez suivre les étapes générales suivantes pour intégrer correctement 
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Illustration du flux d’intégration pour les serveurs Windows et les appareils Windows 10" lightbox="images/server-onboarding-tools-methods.png":::
 
-**Windows Server 2012 R2 et Windows Server 2016**
+**Windows Server 2012 R2 et Windows Server 2016** :
 
 - Télécharger les packages d’installation et d’intégration
 - Appliquer le package d’installation
 - Suivez les étapes d’intégration de l’outil correspondant
 
-**Windows Server Semi-Annual Enterprise Channel et Windows Server 2019**
+**Windows Server Semi-Annual Enterprise Channel et Windows Server 2019** :
 
 - Télécharger le package d’intégration
 - Suivez les étapes d’intégration de l’outil correspondant
 
 >[!IMPORTANT]
->Pour pouvoir acheter Microsoft Defender pour point de terminaison référence (SKU) Server, vous devez avoir déjà acheté un minimum combiné des éléments suivants, Windows E5/A5, Microsoft 365 E5/A5 ou Microsoft 365 E5 Sécurité licences d’abonnement.  Pour plus d’informations sur les licences, consultez les [termes du produit](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
-
-
+>Pour pouvoir acheter Microsoft Defender pour point de terminaison référence (SKU) Server, vous devez avoir déjà acheté un minimum combiné des éléments suivants, Windows E5/A5, Microsoft 365 E5/A5 ou Microsoft 365 E5 Sécurité licences d’abonnement.  Pour plus d’informations sur les licences, consultez les [termes du produit](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
 ### <a name="new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution"></a>Nouvelles fonctionnalités Windows Server 2012 R2 et 2016 dans la solution unifiée moderne
 
@@ -84,7 +82,7 @@ Le nouveau package de solution unifiée facilite l’intégration des serveurs e
 - [Fonctionnalités de réponse étendues sur les](/microsoft-365/security/defender-endpoint/respond-machine-alerts) appareils et [les fichiers](/microsoft-365/security/defender-endpoint/respond-file-alerts)
 - [PEPT en mode bloc](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 - [Réponse en direct](/microsoft-365/security/defender-endpoint/live-response)
-- [Enquêtes et réponses automatisées (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
+- [Investigation et réponse automatisées (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Protection contre les falsifications](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
 Selon le serveur que vous intègrez, la solution unifiée installe Antivirus Microsoft Defender et/ou le capteur PEPT. Le tableau suivant indique quel composant est installé et ce qui est intégré par défaut.
@@ -101,11 +99,11 @@ Si vous avez déjà intégré vos serveurs à l’aide de MMA, suivez les instru
 
 Les spécificités suivantes s’appliquent au nouveau package de solution unifiée pour Windows Server 2012 R2 et 2016 :
 
-- Vérifiez que les exigences de connectivité spécifiées dans [Activer l’accès aux URL de service Microsoft Defender pour point de terminaison dans le serveur proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) sont remplies. Ils sont équivalents à ceux de Windows Server 2019. 
+- Vérifiez que les exigences de connectivité spécifiées dans [Activer l’accès aux URL de service Microsoft Defender pour point de terminaison dans le serveur proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) sont remplies. Ils sont équivalents à ceux de Windows Server 2019.
 - Nous avons identifié un problème de connectivité Windows Server 2012 R2 au cloud lorsque telemetryProxyServer statique est utilisé **et** que les URL de liste de révocation de certificats (CRL) ne sont pas accessibles à partir du contexte du compte SYSTÈME. L’atténuation immédiate consiste à utiliser une autre option de proxy (« à l’échelle du système ») qui fournit une telle connectivité, ou à configurer le même proxy via le paramètre WinInet sur le contexte du compte SYSTÈME.
 Vous pouvez également utiliser les instructions fournies dans La [solution de contournement pour un problème connu avec TelemetryProxyServer sur les machines déconnectées](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) pour installer un certificat comme solution de contournement.
 - Auparavant, l’utilisation de la Microsoft Monitoring Agent (MMA) sur Windows Server 2016 et les versions ultérieures permettait à la passerelle OMS/Log Analytics de fournir une connectivité aux services cloud Defender. La nouvelle solution, comme Microsoft Defender pour point de terminaison sur Windows Server 2019, Windows Server 2022 et Windows 10, ne prend pas en charge cette passerelle.
-- Sur Windows Server 2016, vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide de Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du [catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) ou de [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
+- Sur Windows Server 2016, vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide de Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du [catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) ou de [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 - Sur Windows Server 2012 R2, il n’existe aucune interface utilisateur pour Antivirus Microsoft Defender. En outre, l’interface utilisateur sur Windows Server 2016 autorise uniquement les opérations de base. Pour effectuer des opérations sur un appareil localement, [reportez-vous à Gérer les Microsoft Defender pour point de terminaison avec PowerShell, WMI et MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). Par conséquent, les fonctionnalités qui reposent spécifiquement sur l’interaction de l’utilisateur, par exemple lorsque l’utilisateur est invité à prendre une décision ou à effectuer une tâche spécifique, peuvent ne pas fonctionner comme prévu. Il est recommandé de désactiver ou de ne pas activer l’interface utilisateur, ni d’exiger l’interaction de l’utilisateur sur un serveur géré, car cela peut avoir un impact sur la fonctionnalité de protection.
 - Toutes les règles de réduction de la surface d’attaque ne sont pas disponibles sur tous les systèmes d’exploitation. Consultez [les règles de réduction de la surface d’attaque (ASR](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)).
 - Pour activer [la protection réseau](/microsoft-365/security/defender-endpoint/network-protection), une configuration supplémentaire est requise :
@@ -150,7 +148,7 @@ Pour plus d’informations, consultez [Intégration à Microsoft Defender pour l
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-**Prérequis pour Windows Server 2012 R2**
+#### <a name="prerequisites-for-windows-server-2012-r2"></a>Prérequis pour Windows Server 2012 R2
 
 Si vous avez entièrement mis à jour vos machines avec le dernier package [de cumul mensuel](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) , **il n’existe aucune** condition préalable supplémentaire.
 
@@ -159,32 +157,29 @@ Le package d’installation vérifie si les composants suivants ont déjà été
 - [Mise à jour pour l’expérience client et la télémétrie de diagnostic](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 - [Mise à jour du runtime C universel dans Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 
-**Prérequis pour Windows Server 2016** 
+#### <a name="prerequisites-for-windows-server-2016"></a>Prérequis pour Windows Server 2016
 
-- La mise à jour de la pile de maintenance (SSU) du 14 septembre 2021 ou une version ultérieure doit être installée.  
+- La mise à jour de la pile de maintenance (SSU) du 14 septembre 2021 ou une version ultérieure doit être installée.
 - La dernière mise à jour cumulative (LCU) du 20 septembre 2018 ou une version ultérieure doit être installée.  Il est recommandé d’installer les derniers SSU et LCU disponibles sur le serveur.  - La fonctionnalité Antivirus Microsoft Defender doit être activée/installée et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide de Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du [catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) ou de [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
-**Conditions préalables à l’exécution avec des solutions de sécurité tierces**
+#### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Conditions préalables à l’exécution avec des solutions de sécurité tierces
 
 Si vous envisagez d’utiliser une solution de logiciel anti-programme malveillant tiers, vous devez exécuter Antivirus Microsoft Defender en mode passif. Vous devez vous rappeler de définir le mode passif pendant le processus d’installation et d’intégration.
 
 > [!NOTE]
 > Si vous installez Microsoft Defender pour point de terminaison sur des serveurs avec McAfee Endpoint Security (ENS) ou VirusScan Enterprise (VSE), la version de la plateforme McAfee devra peut-être être mise à jour pour vous assurer que Antivirus Microsoft Defender n’est pas supprimée ou désactivée. Pour plus d’informations, notamment les numéros de version spécifiques requis, consultez [l’article du Centre de connaissances McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
 
-**Package de mise à jour pour Microsoft Defender pour point de terminaison sur Windows Server 2012 R2 et 2016**
+#### <a name="update-package-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016"></a>Package de mise à jour pour Microsoft Defender pour point de terminaison sur Windows Server 2012 R2 et 2016
 
 Pour recevoir régulièrement des améliorations et des correctifs pour le composant capteur PEPT, assurez-vous que Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliqué ou approuvé. En outre, pour conserver les composants de protection mis à jour, consultez [Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
-
 Si vous utilisez Windows Server Update Services (WSUS) et/ou Microsoft Endpoint Configuration Manager, cette nouvelle « mise à jour Microsoft Defender pour point de terminaison pour PEPT  Sensor » est disponible sous la catégorie « Microsoft Defender pour point de terminaison ».
-
-
 
 ### <a name="onboarding-steps-summary"></a>Résumé des étapes d’intégration
 
 - ÉTAPE 1 : [Télécharger les packages d’installation et d’intégration](#step-1-download-installation-and-onboarding-packages)
 - ÉTAPE 2 : [Appliquer le package d’installation et d’intégration](#step-2-apply-the-installation-and-onboarding-package)
-- ÉTAPE 3 : [Effectuer les étapes d’intégration](#step-3-complete-the-onboarding-steps) 
+- ÉTAPE 3 : [Effectuer les étapes d’intégration](#step-3-complete-the-onboarding-steps)
 
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>ÉTAPE 1 : Télécharger les packages d’installation et d’intégration
 
@@ -193,12 +188,10 @@ Vous devez télécharger les packages **d’installation** et **d’intégration
 > [!div class="mx-imgBorder"]
 > ![Image du tableau de bord d’intégration](images/install-agent-onboard.png)
 
-
    > [!NOTE]
    > Sur Windows Server 2012R2, Antivirus Microsoft Defender sera installé par le package d’installation et sera actif, sauf si vous le définissez en mode passif. Sur Windows Server 2016, Antivirus Microsoft Defender doit être installé en tant que fonctionnalité (voir [Basculer vers MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) d’abord et entièrement mis à jour avant de poursuivre l’installation.
-   > 
+   >
    > Si vous exécutez une solution anti-programme malveillant non Microsoft, veillez à ajouter des exclusions pour Antivirus Microsoft Defender ([à partir de cette liste de processus Microsoft Defender sous l’onglet Processus Defender](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) à la solution non-Microsoft avant l’installation.  Il est également recommandé d’ajouter des solutions de sécurité non-Microsoft à la liste d’exclusions antivirus Defender.
-
 
 Le **package d’installation** contient un fichier MSI qui installe l’agent Microsoft Defender pour point de terminaison.
 
@@ -207,38 +200,38 @@ Le **package d’intégration** contient les fichiers suivants :
 - `OptionalParamsPolicy` - contient le paramètre qui active la collecte d’exemples
 - `WindowsDefenderATPOnboardingScript.cmd` - contient le script d’intégration
 
-Pour télécharger les packages, procédez comme suit : 
+Pour télécharger les packages, procédez comme suit :
 
 1. Dans Microsoft 365 Defender, accédez à **Paramètres > Gestion des appareils > Intégration**.
 
 2. Sélectionnez **Windows Server 2012 R2 et 2016**.
 
-3. Sélectionnez **Télécharger le package d’installation** et enregistrez le fichier .msi. 
- 
+3. Sélectionnez **Télécharger le package d’installation** et enregistrez le fichier .msi.
+
 4. Sélectionnez **Télécharger le package d’intégration** et enregistrez le fichier .zip.
 
 5. Installez le package d’installation à l’aide de l’une des options d’installation Antivirus Microsoft Defender. L’installation nécessite des autorisations d’administration.
 
-
-
 ### <a name="step-2-apply-the-installation-and-onboarding-package"></a>ÉTAPE 2 : Appliquer le package d’installation et d’intégration
-Dans cette étape, vous allez installer les composants de prévention et de détection requis avant d’intégrer votre appareil à l’environnement cloud Microsoft Defender pour point de terminaison, afin de préparer l’ordinateur à l’intégration. Vérifiez que toutes les [conditions préalables ont été remplies](#prerequisites) . 
+
+Dans cette étape, vous allez installer les composants de prévention et de détection requis avant d’intégrer votre appareil à l’environnement cloud Microsoft Defender pour point de terminaison, afin de préparer l’ordinateur à l’intégration. Vérifiez que toutes les [conditions préalables ont été remplies](#prerequisites) .
 
    > [!NOTE]
-   > Antivirus Microsoft Defender sera installé et sera actif, sauf si vous le définissez en mode passif. 
+   > Antivirus Microsoft Defender sera installé et sera actif, sauf si vous le définissez en mode passif.
 
 #### <a name="options-to-install-the-microsoft-defender-for-endpoint-packages"></a>Options d’installation des packages Microsoft Defender pour point de terminaison
 
-Dans la section précédente, vous avez téléchargé un package d’installation. Le package d’installation contient le programme d’installation de tous les composants Microsoft Defender pour point de terminaison. 
+Dans la section précédente, vous avez téléchargé un package d’installation. Le package d’installation contient le programme d’installation de tous les composants Microsoft Defender pour point de terminaison.
 
 Vous pouvez utiliser l’une des options suivantes pour installer l’agent :
+
 - [Installer à l’aide de la ligne de commande](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [Installer à l’aide d’un script](#install-microsoft-defender-for-endpoint-using-a-script)
 - [Appliquer les packages d’installation et d’intégration à l’aide de stratégie de groupe](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-the-command-line"></a>Installer Microsoft Defender pour point de terminaison à l’aide de la ligne de commande
-Utilisez le package d’installation de l’étape précédente pour installer Microsoft Defender pour point de terminaison. 
 
+Utilisez le package d’installation de l’étape précédente pour installer Microsoft Defender pour point de terminaison.
 
 Exécutez la commande suivante pour installer Microsoft Defender pour point de terminaison :
 
@@ -287,16 +280,14 @@ Vous pouvez utiliser le [script du programme d’installation](server-migration.
 
     ```console
      -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
-    ```  
+    ```
 
-     >[!NOTE]
-    >Si vous devez résoudre les problèmes d’installation de l’agent, ajoutez « -etl -log » aux paramètres de script install.ps1.
+    > [!NOTE]
+    > Si vous devez résoudre les problèmes d’installation de l’agent, ajoutez « -etl -log » aux paramètres de script install.ps1.
     >
-    >Le paramètre de stratégie d’exécution recommandé est `Allsigned`. Cela nécessite l’importation du certificat de signature du script dans le magasin serveurs de publication approuvés de l’ordinateur local si le script s’exécute en tant que système sur le point de terminaison.
+    > Le paramètre de stratégie d’exécution recommandé est `Allsigned`. Cela nécessite l’importation du certificat de signature du script dans le magasin serveurs de publication approuvés de l’ordinateur local si le script s’exécute en tant que système sur le point de terminaison.
 
     Remplacez \\servername-or-dfs-space\share-name par le chemin UNC, en utilisant le nom de domaine complet (FQDN) du fichier *install.ps1* partagé. Le package d’installation md4ws.msi doit être placé dans le même répertoire.  Vérifiez également que les autorisations du chemin UNC autorisent l’accès en lecture au compte d’ordinateur qui installe la plateforme.
-
-   
 
     Pour les scénarios où vous souhaitez Antivirus Microsoft Defender coexister avec des solutions anti-programme malveillant non Microsoft, ajoutez le paramètre $Passive pour définir le mode passif pendant l’installation.
 
@@ -316,7 +307,8 @@ Les étapes suivantes s’appliquent uniquement si vous utilisez une solution an
     - Type: `REG_DWORD`
     - Valeur : `1`
 
-       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="Résultat de la vérification en mode passif" lightbox="images/atp-verify-passive-mode.png":::
+   :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="Résultat de la vérification en mode passif" lightbox="images/atp-verify-passive-mode.png":::
+
 > [!IMPORTANT]
 >
 > - Lorsque vous utilisez Microsoft Defender pour le cloud pour surveiller les serveurs, un locataire Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et au Royaume-Uni pour les utilisateurs du Royaume-Uni).
@@ -325,8 +317,6 @@ Les données collectées par Defender pour point de terminaison sont stockées d
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter Support Microsoft pour réinitialiser le locataire.
 > - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager fournit actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, consultez [Packages et programmes dans Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - Un script local convient à une preuve de concept, mais ne doit pas être utilisé pour le déploiement en production. Pour un déploiement de production, nous vous recommandons d’utiliser stratégie de groupe ou Microsoft Endpoint Configuration Manager.
-
-
 
 ## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel (SAC), Windows Server 2019 et Windows Server 2022
 
@@ -339,7 +329,6 @@ Les données collectées par Defender pour point de terminaison sont stockées d
 3. Sélectionnez **Télécharger le package**. Enregistrez-le en tant que WindowsDefenderATPOnboardingPackage.zip.
 
 4. Suivez les étapes fournies dans la section [Terminer les étapes d’intégration](#step-3-complete-the-onboarding-steps) .
-
 
 ## <a name="verify-the-onboarding-and-installation"></a>Vérifier l’intégration et l’installation
 
@@ -354,20 +343,22 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
 1. Exécutez la commande suivante pour vérifier que Antivirus Microsoft Defender est installé :
 
-    >[!NOTE]
-    >Cette étape de vérifcation n’est requise que si vous utilisez Antivirus Microsoft Defender comme solution de logiciel anti-programme malveillant actif.
+    > [!NOTE]
+    > Cette étape de vérification n’est requise que si vous utilisez Antivirus Microsoft Defender comme solution de logiciel anti-programme malveillant actif.
 
-    `sc.exe query Windefend`
+    ```DOS
+    sc.exe query Windefend
+    ```
 
-
-    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer Antivirus Microsoft Defender. 
-
+    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer Antivirus Microsoft Defender.
 
     Pour plus d’informations sur l’utilisation de stratégie de groupe pour configurer et gérer des Antivirus Microsoft Defender sur vos serveurs Windows, consultez [Utiliser stratégie de groupe paramètres pour configurer et gérer Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
 2. Exécutez la commande suivante pour vérifier que Microsoft Defender pour point de terminaison est en cours d’exécution :
 
-    `sc.exe query sense`
+    ```DOS
+    sc.exe query sense
+    ```
 
     Le résultat doit indiquer qu’il est en cours d’exécution. Si vous rencontrez des problèmes d’intégration, consultez [Résolution des problèmes d’intégration](troubleshoot-onboarding.md).
 
@@ -375,7 +366,7 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
 Suivez les étapes décrites dans [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md) pour vérifier que le serveur fait rapport à Defender pour le service point de terminaison.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 

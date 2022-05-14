@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f6c43da4940ddee099c515a5dc8889cb5aca62b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101400"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416615"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -167,7 +167,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>Utiliser Mobile Gestion des appareils (MDM) pour gérer l’emplacement de mise à jour
 
-Pour plus d’informations sur la configuration de GPM, consultez Le fournisseur de solutions cloud de stratégie [- Defender/SignatureUpdateFallbackOrder](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) .
+Pour plus d’informations sur la configuration de GPM, consultez [Fournisseur de solutions Cloud stratégie - Defender/SignatureUpdateFallbackOrder](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder).
 
 ## <a name="what-if-were-using-a-third-party-vendor"></a>Que se passe-t-il si nous utilisons un fournisseur tiers ?
 

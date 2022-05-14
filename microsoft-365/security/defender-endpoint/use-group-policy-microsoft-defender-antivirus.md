@@ -16,12 +16,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8cda6f387814ed6ec613db8cb53ff030243a92b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 53b24f0566b9b9d43ad725a832bb1e0fa8013923
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789412"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416373"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser stratégie de groupe paramètres pour configurer et gérer Antivirus Microsoft Defender
 
@@ -66,7 +66,7 @@ Le tableau suivant répertorie les paramètres stratégie de groupe couramment u
 
 <br/><br/>
 
-|Emplacement|Paramètres|Article|
+|Emplacement|Setting|Article|
 |---|---|---|
 |Interface client|Activer le mode d’interface utilisateur sans tête|[Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur Antivirus Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |Interface client|Afficher du texte supplémentaire aux clients lorsqu’ils ont besoin d’effectuer une action|[Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)|
@@ -143,21 +143,21 @@ Le tableau suivant répertorie les paramètres stratégie de groupe couramment u
 |Analyser|Spécifier l’heure d’une analyse rapide quotidienne|[Configurer des analyses planifiées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Analyser|Spécifier l’heure de la journée d’exécution d’une analyse planifiée|[Configurer des analyses planifiées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Analyser|Démarrer l’analyse planifiée uniquement lorsque l’ordinateur est activé mais qu’il n’est pas utilisé|[Configurer des analyses planifiées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Autoriser les mises à jour du renseignement de sécurité à partir de Microsoft Update|[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Autoriser les mises à jour du renseignement de sécurité lors de l’exécution sur batterie|[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Autoriser les notifications à désactiver les rapports basés sur des définitions dans Microsoft MAPS|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Autoriser les mises à jour du renseignement de sécurité en temps réel en fonction des rapports à Microsoft MAPS|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Rechercher les dernières définitions de virus et de logiciels espions au démarrage|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Définir des partages de fichiers pour le téléchargement des mises à jour du renseignement de sécurité|[Gérer Antivirus Microsoft Defender mises à jour de protection et de renseignement de sécurité](manage-protection-updates-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Définir le nombre de jours après lesquels une mise à jour du renseignement de sécurité de rattrapage est requise|[Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Définir le nombre de jours avant que les définitions de logiciels espions ne soient considérées comme obsolètes|[Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Définir le nombre de jours avant que les définitions de virus ne soient considérées comme obsolètes|[Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Définir l’ordre des sources pour le téléchargement des mises à jour du renseignement de sécurité|[Gérer Antivirus Microsoft Defender mises à jour de protection et de renseignement de sécurité](manage-protection-updates-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Lancer une mise à jour du renseignement de sécurité au démarrage|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Spécifier le jour de la semaine pour rechercher les mises à jour du renseignement de sécurité|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Spécifier l’intervalle pour rechercher les mises à jour du renseignement de sécurité|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Spécifier le temps nécessaire pour rechercher les mises à jour du renseignement de sécurité|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Mises à jour du renseignement de sécurité|Activer l’analyse après la mise à jour du renseignement de sécurité|[Configurer des analyses planifiées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Autoriser les mises à jour du renseignement de sécurité à partir de Microsoft Update|[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Autoriser les mises à jour du renseignement de sécurité lors de l’exécution sur batterie|[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Autoriser les notifications à désactiver les rapports basés sur des définitions dans Microsoft MAPS|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Autoriser les mises à jour du renseignement de sécurité en temps réel en fonction des rapports à Microsoft MAPS|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Rechercher les dernières définitions de virus et de logiciels espions au démarrage|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Définir des partages de fichiers pour le téléchargement des mises à jour du renseignement de sécurité|[Gérer Antivirus Microsoft Defender mises à jour de protection et de renseignement de sécurité](manage-protection-updates-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Définir le nombre de jours après lesquels une mise à jour du renseignement de sécurité de rattrapage est requise|[Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Définir le nombre de jours avant que les définitions de logiciels espions ne soient considérées comme obsolètes|[Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Définir le nombre de jours avant que les définitions de virus ne soient considérées comme obsolètes|[Gérer les mises à jour pour les points de terminaison obsolètes](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Définir l’ordre des sources pour le téléchargement des mises à jour du renseignement de sécurité|[Gérer Antivirus Microsoft Defender mises à jour de protection et de renseignement de sécurité](manage-protection-updates-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Lancer une mise à jour du renseignement de sécurité au démarrage|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Spécifier le jour de la semaine pour rechercher les mises à jour du renseignement de sécurité|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Spécifier l’intervalle pour rechercher les mises à jour du renseignement de sécurité|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Spécifier le temps nécessaire pour rechercher les mises à jour du renseignement de sécurité|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Mises à jour de la veille de sécurité|Activer l’analyse après la mise à jour du renseignement de sécurité|[Configurer des analyses planifiées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Menaces|Spécifier les niveaux d’alerte de menace auxquels l’action par défaut ne doit pas être effectuée lorsqu’elle est détectée|[Configurer la correction pour les analyses Antivirus Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 |Menaces|Spécifier les menaces sur lesquelles l’action par défaut ne doit pas être effectuée lorsqu’elle est détectée|[Configurer la correction pour les analyses Antivirus Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 
@@ -168,8 +168,8 @@ Le tableau suivant répertorie les paramètres stratégie de groupe couramment u
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Voir aussi
 

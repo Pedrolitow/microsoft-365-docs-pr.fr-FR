@@ -30,24 +30,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: 2cc7354a5f22f170a097d7960d936e36999bde49
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e17f4cdb7abefdc7374e1ada073c154d0f006216
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202320"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417235"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
 Pour configurer le stockage et le partage des fichiers pour votre entreprise, nous vous recommandons d'utiliser OneDrive avec un site d’équipe. Cette configuration est idéale si vous avez une petite entreprise ne comptant que quelques employés.
 
-## <a name="watch-where-to-store-files-in-office-365"></a>Regardez : Où stocker des fichiers dans Office 365
+## <a name="watch-where-to-store-files-in-office-365"></a>Regarder : où stocker des fichiers dans Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
-## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 de stockage et de gestion des documents
+## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 stockage et gestion des documents
 
 - Nous avons conçu OneDrive pour un usage individuel et le partage occasionnel de fichiers.
 
@@ -55,12 +55,12 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 Tant OneDrive que les sites d'équipe vous offrent ainsi qu'à vos employés un accès en tout lieu.
   
-![Diagramme shows how Microsoft 365 products can use OneDrive or Team sites.](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Diagramme montrant comment les produits Microsoft 365 peuvent utiliser des sites OneDrive ou d’équipe.](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Voici quelques recommandations relatives aux éléments à stocker dans les divers emplacements lorsque vous utilisez à la fois OneDrive et des sites d'équipe :<br/>
 
   
-|Emplacement de stockage|Qu’est-ce que c’est ?|Éléments à stocker ici|
+|Emplacement de stockage|À quoi sert-il ?|Éléments à stocker ici|
 |:-----|:-----|:-----|
 |**OneDrive** |Le stockage de contenu sur OneDrive est similaire au stockage de fichiers sur votre ordinateur. Nul autre que vous ne peut y accéder aisément.<br/> Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Qu’est-ce que OneDrive Entreprise ?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Fichiers professionnels n’impliquant pas la collaboration des autres membres de votre équipe ou ne nécessitant pas leur accès régulier.<br/> |
 |**Sites d’équipe SharePoint** <br/> |Collaboration. Lorsque vous créez un groupe Microsoft 365 (par exemple dans le Centre d'administration de Microsoft 365, dans Outlook ou en créant une équipe dans Microsoft Teams), le programme crée un site d’équipe SharePoint. De même, lorsque vous créez un site d’équipe SharePoint depuis la page d’accueil de SharePoint ou depuis le nouveau Centre d’administration SharePoint, le programme crée un également groupe Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter les rubriques [Qu’est-ce qu’un site d’équipe SharePoint ?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) et [Créer un site d’équipe dans SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Fichiers à propriété partagée. Nous vous recommandons de séparer les sites d’équipe de chaque unité de travail de votre organisation. Par exemple, pour rendre les documents personnels et financiers consultables uniquement pour une petite équipe, créez un site d’équipe séparé.  <br/> |
@@ -78,7 +78,7 @@ Les employés peuvent également partager des fichiers et des dossiers OneDrive.
   
 Voici comment chaque membre de votre équipe peut configurer OneDrive, puis partager des fichiers.
 
-1. Go to the <a href="https://admin.microsoft.com/ " target="_blank">Centre d'administration Microsoft 365</a>, and sign in with your user name and password.
+1. Accédez à la <a href="https://admin.microsoft.com/ " target="_blank">Centre d'administration Microsoft 365</a> et connectez-vous avec votre nom d’utilisateur et votre mot de passe.
 
 2. Dans le lanceur d’applications, sélectionnez **OneDrive**.
 
@@ -96,11 +96,11 @@ Voici comment chaque membre de votre équipe peut configurer OneDrive, puis part
   
 5. Après avoir indiqué les personnes avec lesquelles vous voulez partager le lien, sélectionnez **Envoyer**. Le programme envoie immédiatement l’e-mail aux personnes que vous invitez.
 
-    ![Partagez un lien affichant la liste des noms.](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Partagez un lien montrant la liste des noms.](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Voici ce à quoi ressemble l’e-mail. 
 
-    ![Adresse électronique avec lien pour partager OneDrive dossier.](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![E-mail avec lien pour partager OneDrive dossier.](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Charger des fichiers sur un site d'équipe pour la collaboration en ligne
 
@@ -141,7 +141,7 @@ Pour synchroniser des fichiers sur votre site d’équipe avec votre ordinateur 
   
 4. Si une invite **Configurer OneDrive** apparaît alors, connectez-vous à l’aide de votre compte professionnel ou scolaire.
 
-    ![OneDrive’écran d’installation.](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive écran d’installation.](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. Si vous n’avez pas encore synchronisé votre OneDrive, un écran **Voici votre dossier OneDrive** peut apparaître. Consultez le chemin d’accès sous **Voici votre dossier OneDrive**. Sélectionnez **Changer d’emplacement** si vous souhaitez utiliser un autre chemin d’accès, puis sélectionnez **Suivant**.
 
@@ -206,7 +206,7 @@ Vous pouvez activer le stockage tiers pour permettre à vos utilisateurs dans Mi
 
   - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter de l’espace de stockage pour votre abonnement](../../commerce/add-storage-space.md) (article)\
 [Partager des fichiers et des dossiers avec Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vidéo)\

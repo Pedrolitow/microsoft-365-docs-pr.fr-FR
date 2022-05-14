@@ -18,12 +18,12 @@ ms.date: 10/22/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6a0667e52474fe5e04f547d12b1f53ca47c6ea6e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 195e929c0de1be9ab05f2685ba60e56c13dd3629
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787575"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415225"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>Pourquoi la protection cloud doit être activée pour Antivirus Microsoft Defender
 
@@ -77,5 +77,5 @@ Maintenant que vous avez une vue d’ensemble de la protection cloud et de son r
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
