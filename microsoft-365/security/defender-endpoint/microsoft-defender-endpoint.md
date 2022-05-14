@@ -17,19 +17,21 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c9fe313994e7468004e17df05b1ec4d7c3cf7a6b
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173706"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65367965"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,10 +39,13 @@ ms.locfileid: "65173706"
 Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées.
 
 > [!TIP]
-> Microsoft Defender pour point de terminaison est disponible en deux plans : Defender pour point de terminaison Plan 1 et Plan 2. Cet article décrit les fonctionnalités et capacités incluses dans chaque plan. [En savoir plus sur Microsoft Defender pour Endpoint Plan 1 et Plan 2](defender-endpoint-plan-1-2.md).
-> 
+> Microsoft Defender pour point de terminaison est disponible en deux plans : Defender pour point de terminaison Plan 1 et Plan 2. Un nouveau module complémentaire de Gestion des vulnérabilités de Microsoft Defender est désormais disponible pour le plan 2.
+>
+> Pour plus d’informations sur les fonctionnalités et possibilités incluses dans chaque plan, y compris le nouveau module complémentaire de Gestion des vulnérabilités Defender, consultez [Comparer les plans de Microsoft Defender pour de points de terminaison](defender-endpoint-plan-1-2.md).
 
 <p><p>
+
+Regardez la vidéo suivante pour en savoir plus sur Defender pour point de terminaison :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -55,7 +60,7 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 <center><h2>Microsoft Defender pour point de terminaison</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Gestion des menaces et des vulnérabilités</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b>Gestion des vulnérabilités Core Defender</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Réduction de la surface d’attaque</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Protection de nouvelle génération</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Détection et réponse des points de terminaison</b></a></center></td>
@@ -86,9 +91,11 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 
 <a name="tvm"></a>
 
-**[Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)**
+**[Gestion des vulnérabilités Defender](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
-Cette fonctionnalité intégrée utilise une approche basée sur le risque qui change la donne pour découvrir, hiérarchiser et corriger les vulnérabilités et erreurs de configuration des points de terminaison.
+La gestion des menaces et vulnérabilités de base intégrées utilisent une approche moderne basée sur les risques pour la découverte, l’évaluation, la hiérarchisation et la correction des vulnérabilités de point de terminaison et des erreurs de configuration. Pour améliorer davantage votre capacité à évaluer votre posture de sécurité et à réduire les risques, un nouveau module complémentaire de Gestion des vulnérabilités Defender pour le plan 2 est disponible.
+
+Pour plus d’informations sur les différentes fonctionnalités de gestion des vulnérabilités disponibles, consultez [Comparer les offres de gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
 
 <a name="asr"></a>
 
