@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e9e8682853757fa9fd078645e398f6ba8f2f636c
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 24a95c8ed6d7d1cdd15b15b53434414e44b7881f
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173578"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417927"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -61,7 +61,7 @@ La protection réseau nécessite Windows 10 Professionnel ou Enterprise, et Anti
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|
-| Windows 10 version 1709 ou ultérieure <br> Windows 11 <br> Windows Server 1803 ou version ultérieure | [Antivirus Microsoft Defender protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) <br> et la [protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) doit être activée (active)|
+| Windows 10 version 1709 ou ultérieure <br> Windows 11 <br> Windows Server 1803 ou version ultérieure | [Antivirus Microsoft Defender protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) <br> et la [protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) doit être activée (active)|
 
 ## <a name="why-network-protection-is-important"></a>Pourquoi la protection réseau est-elle importante ?
 

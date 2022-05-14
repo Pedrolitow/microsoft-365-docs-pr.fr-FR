@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973836"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418015"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Repérage des menaces dans l’Explorateur de menaces pour Microsoft Defender pour Office 365
 
@@ -52,6 +52,9 @@ Avec ces outils, vous pouvez :
 - Examiner les e-mails malveillants, et bien plus encore
 
 Pour plus d’informations, consultez [Sécurité de l’e-mail avec l’Explorateur de menaces](email-security-in-microsoft-defender.md).
+
+Regardez cette courte vidéo pour découvrir comment chasser et examiner les menaces basées sur les e-mails et la collaboration à l’aide de Microsoft Defender pour Office 365. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
 
 ## <a name="threat-explorer-walk-through"></a>Présentation pas à pas de l’Explorateur de menaces
 
@@ -259,7 +262,7 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 - [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)

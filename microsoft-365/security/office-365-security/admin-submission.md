@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144814"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417949"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
 
@@ -45,6 +45,9 @@ Lorsque vous envoyez un e-mail à des fins d’analyse, vous obtenez :
 > La réputation/détonation de la charge utile et l’analyse de la note ne sont pas effectuées dans tous les locataires. Les informations ne peuvent pas sortir de l’organisation lorsque les données ne sont pas censées quitter la limite du locataire à des fins de conformité.
 
 Pour d’autres façons d’envoyer des e-mails, des URL et des pièces jointes à Microsoft, consultez [Les messages de rapport et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+
+Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d’administrateurs dans Microsoft Defender pour Office 365 pour envoyer des messages à Microsoft à des fins d’évaluation. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -198,7 +201,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
    - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
-     - **Type (Type)**
+     - **Type**
      - **Raison**
      - **État**
      - **Résultat**

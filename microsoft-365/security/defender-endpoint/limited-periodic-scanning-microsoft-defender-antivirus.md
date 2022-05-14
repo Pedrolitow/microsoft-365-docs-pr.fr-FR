@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5201366ee003efab1edd5a0a536c45db4ec7aabc
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b9320c5d7086d41be363fd01b786c98ffbc52d5
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788895"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417905"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender
 
@@ -68,5 +68,5 @@ Le fait de faire glisser le commutateur sur **Activé** affiche les options stan
 > - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 > - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-> - [Configurer Defender pour point de terminaison sur les fonctionnalités Android](android-configure.md)
-> - [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+> - [Configurer Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+> - [configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
