@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées à l’identité en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: af9b19dcf33f1b79d4057662cf759ace27aec38f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c1a63efc29154768a7d54d31f51c25a3c84fa30a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095265"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417839"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Authentification multifacteur et sécurité par défaut.
 
@@ -51,7 +51,7 @@ Les paramètres de sécurité par défaut ont été conçus pour protéger les c
 
 - Demander à tous les utilisateurs et administrateurs de s’inscrire à l’authentification multifacteur à l’aide de l’application Microsoft Authenticator.
 - Difficultés pour les utilisateurs avec l’authentification multifacteur, principalement lorsqu’ils apparaissent sur un nouvel appareil ou une nouvelle application, mais plus souvent pour les rôles et les tâches critiques.
-- Désactivation de l’authentification à partir de clients d’authentification hérités qui ne peuvent pas effectuer l’authentification multifacteur.
+- Désactivation de l’authentification à partir de clients d’authentification hérités qui ne peuvent pas effectuer la MFA.
 - Protection des administrateurs en exigeant une authentification supplémentaire chaque fois qu’ils se connectent.
 
 L’authentification multifacteur est une première étape importante de la sécurisation de votre entreprise, et les paramètres de sécurité par défaut facilitent l’implémentation de l’authentification multifacteur. Si votre abonnement a été créé le ou après le 22 octobre 2019, les paramètres de sécurité par défaut peuvent avoir été automatiquement activés pour vous&mdash; devez vérifier vos paramètres pour confirmer.
@@ -107,4 +107,3 @@ Pour en savoir plus sur l’accès conditionnel, consultez [Qu’ est-ce que l�
 ## <a name="next-objective"></a>Objectif suivant
 
 Configurez des méthodes pour la [protection contre les programmes malveillants et autres menaces](m365bp-increase-protection.md).
-

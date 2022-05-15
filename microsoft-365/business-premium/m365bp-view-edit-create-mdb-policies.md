@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 51a2e3584ea391a5b759fed4514efa2a0c4d6772
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 7cbb9c71e56242d15506c2c1e46f1120021928fa
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317203"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415967"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Afficher et modifier les stratégies de protection des appareils
 
@@ -205,7 +205,7 @@ Pour dupliquer une stratégie dans InTune :
 
 1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager.
 
-1. Sélectionnez la stratégie que vous souhaitez copier. Ensuite, sélectionnez **Dupliquer** ou sélectionnez les points de suspension **(…)** à droite de la stratégie et sélectionnez **Dupliquer**.
+1. Sélectionnez la stratégie que vous souhaitez copier. Ensuite, sélectionnez **Dupliquer**, ou sélectionnez les points de suspension **(…)** à la droite de la stratégie et sélectionnez **Dupliquer**.
 1. Indiquez un nouveau nom pour la stratégie, puis sélectionnez **Enregistrer**.
 
 Pour modifier une stratégie :

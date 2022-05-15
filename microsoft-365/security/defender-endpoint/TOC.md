@@ -329,6 +329,10 @@
 ##### [Exclusions pour Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Erreurs courantes à éviter](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### Mode de résolution des problèmes pour Defender pour point de terminaison
+##### [Démarrage avec le mode de dépannage](enable-troubleshooting-mode.md)
+##### [Scénarios de mode de dépannage](troubleshooting-mode-scenarios.md)
+
 #### Diagnostics et performances pour Antivirus Microsoft Defender
 ##### [Intégrité de l’appareil et rapports sur la conformité](machine-reports.md)
 ##### [Résoudre les problèmes de performances liés à la protection en temps réel](troubleshoot-performance-issues.md) 

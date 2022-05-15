@@ -15,18 +15,18 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Découvrez comment améliorer le flux de messagerie avec MTA-STS.
-ms.openlocfilehash: 4bcbe8cd64d4a2e3610b68480a39f697326ea65b
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 735cce96c61a2083b8f0785ace49a5b199790989
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131407"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415188"
 ---
 # <a name="enhancing-mail-flow-with-mta-sts"></a>Amélioration du flux de messagerie avec MTA-STS
 
 La prise en charge de la norme [SMTP MTA Strict Transport Security](https://datatracker.ietf.org/doc/html/rfc8461) (MTA-STS) est ajoutée à Exchange Online. La norme a été développée pour garantir que TLS est toujours utilisé pour les connexions entre les serveurs de messagerie. Il fournit également un moyen d’envoyer des serveurs pour vérifier que le serveur de réception dispose d’un certificat approuvé. Si TLS n’est pas proposé ou si le certificat n’est pas valide, l’expéditeur refuse de remettre des messages. Ces nouvelles vérifications améliorent la sécurité globale de SMTP et protègent contre les attaques de l’intercepteur.
 
-MTA-STS peut être divisé en deux scénarios : la protection entrante et sortante. La protections sortante couvre la protection des domaines hébergés dans Exchange Online avec MTA-STS et la protection entrante couvre les validations MTA-STS effectuées par Exchange Online lors de l'envoi d'emails vers des domaines protégés par MTA-STS.
+MTA-STS peut être divisé en deux scénarios : la protection entrante et sortante. Le trafic entrant couvre la protection des domaines hébergés dans Exchange Online avec MTA-STS et Sortant couvre les validations MTA-STS effectuées par Exchange Online lors de l’envoi d’e-mails à des domaines protégés par MTA-STS.
 
 ## <a name="outbound-protection"></a>Protection sortante
 
@@ -44,11 +44,11 @@ MTA-STS permet à un domaine de déclarer la prise en charge de TLS et de commun
 
 L’enregistrement TXT MTA-STS d’un domaine indique la prise en charge de MTA-STS à un expéditeur, après quoi la stratégie MTA-STS basée sur HTTPS du domaine est récupérée par l’expéditeur. L’enregistrement TXT suivant est un exemple qui déclare la prise en charge de MTA-STS :
 
-`_mta-sts.contoso.com. 3600 IN  TXT v=STSv1; id=20220101000000Z;`
+`_mta-sts.contoso.com. 3600 IN TXT v=STSv1; id=20220101000000Z;`
 
-La stratégie MTA-STS d’un domaine doit se trouver à une URL prédéfinie hébergée par l’infrastructure web du domaine. La syntaxe de l’URL est `https://mta-sts.<domain name>/.well-known/mta-sts.txt`. Par exemple, la stratégie de Microsoft.com se trouve à l’adresse suivante : https://mta-sts.microsoft.com/.well-known/mta-sts.txt.
+La stratégie MTA-STS d’un domaine doit se trouver à une URL prédéfinie hébergée par l’infrastructure web du domaine. La syntaxe de l’URL est `https://mta-sts.<domain name>/.well-known/mta-sts.txt`. Par exemple, la stratégie de Microsoft.com se trouve à l’adresse suivante : <https://mta-sts.microsoft.com/.well-known/mta-sts.txt>.
 
-```
+```text
 version: STSv1
 mode: enforce
 mx: *.mail.protection.outlook.com
@@ -59,4 +59,4 @@ Tout client dont les enregistrements MX pointent directement vers Exchange Onlin
 
 Ces stratégies ne sont pas quelque chose qu’Exchange Online peut héberger pour le compte des clients et les clients doivent utiliser le service d’hébergement web qu’ils utilisent. La stratégie doit être protégée par HTTPS avec un certificat pour le sous-domaine `mta-sts.<domain name>`. Il existe des alternatives à l’hébergement d’une stratégie, notamment [cette solution](https://github.com/jpawlowski/mta-sts.template) qui utilise les pages GitHub pour l’héberger.
 
-Une fois l’enregistrement de domaine TXT DNS créé et le fichier de stratégie disponible à l’URL HTTPS requise, le domaine est protégé par MTA-STS. Des détails sur MTA-STS sont disponibles dans [RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461).
+Une fois l’enregistrement de domaine TXT DNS créé et le fichier de stratégie disponible à l’URL HTTPS requise, le domaine sera protégé par MTA-STS. Des détails sur MTA-STS sont disponibles dans [RFC-8461](https://datatracker.ietf.org/doc/html/rfc8461).
