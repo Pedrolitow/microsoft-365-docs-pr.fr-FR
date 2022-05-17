@@ -362,7 +362,7 @@
               href: sit-modify-keyword-dictionary.md
             - name: Gérer votre schéma de correspondance exacte des données
               href: sit-use-exact-data-manage-schema.md
-            - name: Actualiser votre fichier de table source d’informations sensibles
+            - name: Actualiser votre fichier de table source d’informations sensibles EDM
               href: sit-use-exact-data-refresh-data.md
             - name: Utiliser des entités nommées dans vos stratégies de protection contre la perte de données
               href: named-entities-use.md

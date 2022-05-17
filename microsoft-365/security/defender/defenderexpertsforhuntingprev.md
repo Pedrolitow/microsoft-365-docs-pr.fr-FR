@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78775b31833f16771d7010f3ea92c9695016463d
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4fe0518c47ec5d2db96ec939ca62b25192440c54
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438118"
+ms.locfileid: "65444260"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting (préversion)
 
@@ -56,7 +56,7 @@ Defender Experts for Hunting fournit des notifications d’attaque ciblées dire
 
 Si vous ne l’avez pas encore fait, vous pouvez demander des experts Defender pour la chasse :
 
-1. Cliquez sur [**Appliquer**](https://aka.ms/expandedMTEprev). Seuls les administrateurs généraux peuvent inscrire et terminer le processus d’application. Si vous n’êtes pas administrateur général, contactez votre administrateur général pour remplir le formulaire d’application.
+1. Cliquez sur [**Appliquer**](https://aka.ms/expandedMTEprev). 
 2. Entrez **l’ID de messagerie de votre entreprise**.
 3. Sélectionnez **Envoyer**. Vous recevrez un message de confirmation indiquant que votre application a été reçue.  
 

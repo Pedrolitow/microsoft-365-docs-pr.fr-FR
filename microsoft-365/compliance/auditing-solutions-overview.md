@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145352"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444242"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Solutions d’audit dans Microsoft Purview
 
@@ -168,14 +168,16 @@ Si votre organisation a un abonnement qui prend en charge Audit (Premium), effec
 
 Pour des instructions plus détaillées, voir [Configurer l’audit (Premium)](set-up-advanced-audit.md).
 
-## <a name="encrypt-audit-records-using-customer-key"></a>Chiffrer les enregistrements d’audit à l’aide de la clé client
+<!--
+## Encrypt audit records using Customer Key
 
-Vous pouvez activer le chiffrement de clé client pour les enregistrements d’audit. L’audit s’appuie sur le [chiffrement de service avec la clé client](customer-key-overview.md) pour chiffrer les informations sensibles dans les données d’audit de votre organisation. L’implémentation de la clé client offre une protection supplémentaire en empêchant les systèmes non autorisés ou le personnel du centre de données Microsoft d’afficher vos données d’audit dans le pipeline d’audit et au repos. L’utilisation de la clé client pour chiffrer vos données d’audit vous permet également de respecter les obligations réglementaires ou de conformité, car votre organisation fournit et contrôle les clés de chiffrement.
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
 
-Pour implémenter la clé client pour l’audit, vous devez créer une stratégie de chiffrement des données (DEP) multi-charge de travail, qui définit la hiérarchie de chiffrement. Pour obtenir des instructions détaillées pas à pas, consultez la rubrique [Configurer la clé client](customer-key-set-up.md).
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
 
 > [!NOTE]
-> Tous les enregistrements d’audit de votre organisation ne sont pas chiffrés. Le service Microsoft Purview qui génère des enregistrements d’audit spécifiques pour l’activité dans ce service définit si l’enregistrement d’audit est chiffré ou non.
+> Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## <a name="training"></a>Formation
 
