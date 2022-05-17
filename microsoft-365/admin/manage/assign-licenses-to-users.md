@@ -26,14 +26,14 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 04/22/2022
-ms.openlocfilehash: 32c91c82388cdb87b0dd6b980b51b888d1cec521
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 71b6886ed8248f05339e135f96b24f2af2282e0b
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092622"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437553"
 ---
-# <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
+# <a name="assign-microsoft-365-licenses-to-users"></a>Attribuer des licences Microsoft 365 aux utilisateurs
 
 Vous pouvez attribuer des licences à des utilisateurs à partir de la page des **Utilisateurs actifs** ou de la page des **Licences**. La méthode utilisée dépend de votre souhait d’attribuer des licences de produit à des utilisateurs déterminés ou d’attribuer des licences aux utilisateurs pour un produit spécifique.
 
