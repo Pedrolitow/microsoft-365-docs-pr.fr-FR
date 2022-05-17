@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b8d75bbb520a2f31ff1d1b55d97e445748a110c
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349849"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438880"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -46,10 +46,10 @@ Les principales différences entre les stratégies anti-hameçonnage dans EOP et
 
 |Fonctionnalité|Stratégies anti-hameçonnage dans EOP|Stratégies anti-hameçonnage dans Defender pour Office 365|
 |---|:---:|:---:|
-|Stratégie par défaut créée automatiquement|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Créer des stratégies d'accès externe personnalisées|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Paramètres de stratégie courants<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Paramètres d’usurpation d’identité|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Stratégie par défaut créée automatiquement|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Créer des stratégies d'accès externe personnalisées|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Paramètres de stratégie courants<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Paramètres d’usurpation d’identité|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Premier contact conseil de sécurité|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
 |Paramètres d’emprunt d’identité||![Coche](../../media/checkmark.png)|
 |Seuils d’hameçonnage avancés||![Coche](../../media/checkmark.png)|
@@ -106,7 +106,7 @@ Les paramètres d’usurpation d’identité suivants sont disponibles dans les 
   > - Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez plutôt le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, consultez [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - La désactivation de la protection contre l’usurpation d’identité désactive uniquement la protection _implicite_ contre l’usurpation d’identité contre les vérifications [d’authentification composites](email-validation-and-authentication.md#composite-authentication) . Si l’expéditeur échoue, [DMARC](use-dmarc-to-validate-email.md) _explicite_ vérifie où la stratégie est définie pour la mise en quarantaine ou le rejet, le message est toujours mis en quarantaine ou rejeté.
 
-- **Notifications d’expéditeur non authentifiées** : ces notifications sont disponibles uniquement lorsque l’intelligence de l’usurpation d’identité est activée. Consultez les informations de la section suivante.
+- **Indicateurs d’expéditeur non authentifiés** : disponibles dans la section **Conseils de sécurité & les indicateurs** uniquement lorsque l’intelligence de l’usurpation d’identité est activée. Consultez les détails de la section suivante.
 - **Actions** : pour les messages provenant d’expéditeurs usurpés bloqués (automatiquement bloqués par l’intelligence par usurpation d’identité ou bloqués manuellement dans la liste d’autorisations/blocages du locataire), vous pouvez également spécifier l’action à effectuer sur les messages :
   - **Déplacer des messages vers les dossiers courrier indésirable des destinataires** : il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable. Pour plus d’informations, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Mettre en quarantaine le message** : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
@@ -116,17 +116,17 @@ Les paramètres d’usurpation d’identité suivants sont disponibles dans les 
 
     Si vous sélectionnez **Mettre en quarantaine le message**, vous pouvez également sélectionner la stratégie de quarantaine qui s’applique aux messages qui ont été mis en quarantaine par la protection contre l’usurpation d’identité. Les stratégies de quarantaine définissent ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine et si les utilisateurs reçoivent des notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
-### <a name="unauthenticated-sender"></a>Expéditeur non authentifié
+### <a name="unauthenticated-sender-indicators"></a>Indicateurs d’expéditeur non authentifiés
 
-Les notifications d’expéditeur non authentifiées font partie des [paramètres d’usurpation](#spoof-settings) d’identité qui sont disponibles dans les stratégies anti-hameçonnage dans EOP et Defender pour Office 365 comme décrit dans la section précédente. Les paramètres suivants sont disponibles uniquement lorsque l’intelligence de l’usurpation d’identité est activée :
+Les indicateurs d’expéditeur non authentifiés font partie des [paramètres d’usurpation](#spoof-settings) d’identité disponibles dans la section **Conseils de sécurité & les indicateurs dans les** stratégies anti-hameçonnage dans EOP et Defender pour Office 365. Les paramètres suivants sont disponibles uniquement lorsque l’intelligence de l’usurpation d’identité est activée :
 
-- **Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’identité** : cette notification ajoute un point d’interrogation à la photo de l’expéditeur dans la zone From si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas [l’authentification](email-validation-and-authentication.md#composite-authentication) DMARC ou composite. Lorsque ce paramètre est désactivé, le point d’interrogation n’est pas ajouté à la photo de l’expéditeur.
+- **Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation** d’identité : ajoute un point d’interrogation à la photo de l’expéditeur dans la zone From si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas [l’authentification](email-validation-and-authentication.md#composite-authentication) DMARC ou composite. Lorsque ce paramètre est désactivé, le point d’interrogation n’est pas ajouté à la photo de l’expéditeur.
 
-- **Afficher la balise « via » :** cette notification ajoute la balise via (chris@contoso.com <u>via</u> fabrikam.com) dans la zone From si le domaine de l’adresse From (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **MAIL FROM** . Pour plus d’informations sur ces adresses, consultez [Une vue d’ensemble des normes de courrier électronique](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+- **Afficher la balise « via »** : ajoute la balise via (chris@contoso.com <u>via</u> fabrikam.com) dans la zone From si le domaine de l’adresse From (l’expéditeur de message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **MAIL FROM** . Pour plus d’informations sur ces adresses, consultez [Une vue d’ensemble des normes de courrier électronique](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
 Pour empêcher l’ajout du point d’interrogation ou de l’étiquette aux messages d’expéditeurs spécifiques, vous disposez des options suivantes :
 
-- Autorisez l’expéditeur usurpé dans [l’insight d’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité ou manuellement dans la [liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md). L’autorisation de l’expéditeur usurpé empêchera l’étiquette via d’apparaître dans les messages de l’expéditeur lorsque l’identification de l’expéditeur non authentifiée est désactivée.
+- Autorisez l’expéditeur usurpé dans [l’insight d’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité ou manuellement dans la [liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md). L’autorisation de l’expéditeur usurpé empêchera l’étiquette via d’apparaître dans les messages de l’expéditeur, même si le paramètre **afficher la balise « via »** est activé dans la stratégie.
 - [Configurez l’authentification par e-mail](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
   - Pour le point d’interrogation dans la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
   - Pour la balise via, vérifiez que le domaine dans la signature DKIM ou l’adresse **MAIL FROM** correspond (ou est un sous-domaine) au domaine dans l’adresse From.

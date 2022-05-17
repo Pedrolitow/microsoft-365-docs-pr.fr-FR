@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble de Microsoft 365 Centre de messages et de son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
-ms.openlocfilehash: 2d2f76d401e68fb7494cd74b169bcfe6cd6e6758
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 687da2d7dec0ea913e629a4cf41740d4b664b346
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022908"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437698"
 ---
-# <a name="message-center"></a>Centre de messages
+# <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Suivre les fonctionnalités nouvelles et modifiées dans le centre de messages Microsoft 365
 
 Pour suivre les modifications à venir, notamment les fonctionnalités nouvelles et modifiées, la maintenance planifiée ou d’autres annonces importantes, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centre</a> des messages.
   
@@ -51,7 +51,7 @@ Vous pouvez également utiliser [l’application Administration Microsoft 365](h
 
 Pour vous désabonner des e-mails du Centre de messages, consultez [Désabonnement des e-mails du Centre de](#unsubscribe-from-message-center-emails) messages dans cet article.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 <br>
 
@@ -157,7 +157,7 @@ Si l’administration est distribuée au sein de votre organisation, il se peut 
 Nous utilisons la traduction automatique pour afficher automatiquement les messages dans votre langue préférée. Pour plus d’informations sur la définition de votre langue, lisez [Traduction de langue pour les billets du Centre de messages](language-translation-for-message-center-posts.md).
   
 > [!NOTE]
-> Le résumé hebdomadaire et tous les billets envoyés par e-mail sont envoyés en anglais uniquement. Les destinataires peuvent utiliser [Traducteur pour Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) pour lire le message dans leur langue préférée.
+> Le résumé hebdomadaire et tous les billets envoyés par e-mail sont envoyés en anglais uniquement. Les destinataires peuvent utiliser [Traducteur pour Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) lire le message dans leur langue préférée.
 
 ## <a name="monthly-active-users"></a>Utilisateurs actifs mensuels
 

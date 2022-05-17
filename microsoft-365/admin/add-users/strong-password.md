@@ -1,5 +1,5 @@
 ---
-title: Désactiver les exigences de mot de passe strictes pour les utilisateurs
+title: Désactiver les exigences de mot de passe fortes pour les utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment définir des exigences de mot de passe strictes pour vos utilisateurs, à l’aide Windows PowerShell.
-ms.openlocfilehash: 5932f01c2f17a72f4f6a20a6457d263bed7dd85e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: Si vous êtes un administrateur qui gère la stratégie de mot de passe pour une entreprise, une école ou une organisation à but non lucratif, vous pouvez définir des exigences de mot de passe fortes à l’aide de Windows PowerShell.
+ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530486"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436182"
 ---
-# <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe strictes pour les utilisateurs
+# <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe fortes pour les utilisateurs
 
-Cet article explique comment désactiver les exigences de mot de passe strictes pour vos utilisateurs. Des exigences de mot de passe strictes sont désactivées par défaut dans votre organisation Microsoft 365 entreprise. Votre organisation peut avoir besoin de désactiver des mots de passe forts. Suivez les étapes ci-dessous pour désactiver les exigences de mot de passe strictes. Vous devez effectuer ces étapes à l’aide de PowerShell.
+Cet article explique comment désactiver les exigences de mot de passe fortes pour vos utilisateurs. Les exigences de mot de passe forts sont activées par défaut dans votre Microsoft 365 pour l’organisation commerciale. Votre organisation peut avoir des exigences pour désactiver les mots de passe forts. Suivez les étapes ci-dessous pour désactiver les exigences de mot de passe forts. Vous devez effectuer ces étapes à l’aide de PowerShell.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article est réservé aux personnes qui gèrent la stratégie de mot de passe pour une entreprise, une école ou une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) Vous devez être administrateur [général](about-admin-roles.md) ou administrateur de mot de passe pour effectuer ces étapes.
+Cet article est destiné aux personnes qui gèrent la stratégie de mot de passe pour une entreprise, une école ou une organisation à but non lucratif. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble de la Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) Vous devez être [administrateur général ou administrateur de mot de passe](about-admin-roles.md) pour effectuer ces étapes.
 
 Vous devez également vous connecter à Microsoft 365 avec PowerShell.
 
 ## <a name="set-strong-passwords"></a>Définir des mots de passe forts
 
-1. [Connecter à Microsoft 365 avec PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [Connexion à Microsoft 365 à l’aide de PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-2. À l’aide de PowerShell, vous pouvez désactiver les exigences de mot de passe strictes pour tous les utilisateurs à l’aide de la commande suivante :
+2. À l’aide de PowerShell, vous pouvez désactiver les exigences de mot de passe fortes pour tous les utilisateurs à l’aide de la commande suivante :
 
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
@@ -54,9 +54,9 @@ Vous devez également vous connecter à Microsoft 365 avec PowerShell.
     ```
 
 > [!NOTE]
-> L’userPrincipalName doit être au format de connexion de style Internet où le nom d’utilisateur est suivi du signe at (@) et d’un nom de domaine. Par exemple : user@contoso.com.
+> UserPrincipalName doit être au format de connexion de style Internet, où le nom d’utilisateur est suivi du signe au début (@) et d’un nom de domaine. Par exemple : user@contoso.com.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Comment se connecter à Microsoft 365 avec PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 

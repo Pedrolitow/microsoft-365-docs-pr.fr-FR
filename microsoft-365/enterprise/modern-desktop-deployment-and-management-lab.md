@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez où accéder aux Windows et Office Deployment Lab Kit.
-ms.openlocfilehash: bfa8d52776e93f4a9c33f484f7d56696fdab31fe
-ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
+ms.openlocfilehash: 5ce9ebcdd3a36b62f74292e2b8e261928ef12043
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364294"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435344"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
@@ -32,7 +32,7 @@ Deux versions du labo sont disponibles en téléchargement gratuit :
 |Windows 10 Lab|laboratoire Windows 11|
 |---|---|
 |[Environnement de laboratoire Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Environnement de laboratoire Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Guides de laboratoire Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Guides de laboratoire Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Guides de laboratoire Win 10](https://download.microsoft.com/download/2/9/9/29952cdb-b98d-4f9b-9d6e-9fb49644b0a0/Win10_21H1_Lab_05.12.zip)|[Guides de laboratoire Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Un environnement de laboratoire complet
 
@@ -99,7 +99,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - Windows Hello Entreprise
 
 > [!NOTE]
-> Utilisez une connexion Internet haut débit pour télécharger ce contenu et prévoyez environ 30 minutes pour l’approvisionnement automatique. L’environnement lab nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le laboratoire Windows 10 expire le 16 mai 2022. Le laboratoire Windows 11 expire le 7 août 2022. Les nouvelles versions seront publiées avant l’expiration.
+> Utilisez une connexion Internet haut débit pour télécharger ce contenu et prévoyez environ 30 minutes pour l’approvisionnement automatique. L’environnement lab nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le laboratoire Windows 10 expire le 11 août 2022. Le laboratoire Windows 11 expire le 7 août 2022. Les nouvelles versions seront publiées avant l’expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

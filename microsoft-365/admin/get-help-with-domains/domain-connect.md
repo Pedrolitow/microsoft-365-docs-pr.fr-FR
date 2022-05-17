@@ -1,5 +1,5 @@
 ---
-title: Utilisation du domaine Connecter
+title: Utilisation de Connecter de domaine
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,39 +20,39 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: Découvrez comment travailler avec les bureaux d’Connecter bureaux d’enregistrement activés et ajouter votre domaine à Microsoft 365.
-ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment utiliser les bureaux d’enregistrement activés Connecter domaine et ajouter votre domaine à Microsoft 365.
+ms.openlocfilehash: e20588181a5e9ca55d11844e2f31c3504a2bbfa0
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316910"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437610"
 ---
-# <a name="using-domain-connect"></a>Utilisation du domaine Connecter
+# <a name="using-domain-connect-to-add-your-domain-to-microsoft-365"></a>Utilisation de Connecter de domaine pour ajouter votre domaine à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
-[Les Connecter](https://www.domainconnect.org/) bureaux d’enregistrement activés vous permettent d’ajouter votre domaine à Microsoft 365 dans un processus en trois étapes qui prend quelques minutes.
+[Domain Connect](https://www.domainconnect.org/) permet aux bureaux d’enregistrement activés d’ajouter votre domaine à Microsoft 365 dans un processus en trois étapes qui prend quelques minutes.
 
-Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétaire du domaine, puis configurer automatiquement les enregistrements de votre domaine, afin que le courrier électronique soit envoyé à Microsoft 365 et d’autres services Microsoft 365, tels que Teams, fonctionnent avec votre domaine.
+Dans l’Assistant, nous allons simplement confirmer que vous êtes le propriétaire du domaine, puis configurer automatiquement les enregistrements de votre domaine. Par conséquent, le courrier électronique est envoyé à Microsoft 365 et à d’autres services Microsoft 365, tels que Teams, qui utilisent votre domaine.
 
 > [!NOTE]
 > Veillez à désactiver les bloqueurs de fenêtres contextuelles dans votre navigateur avant de démarrer l'Assistant de configuration.
 
-## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Intégration Connecter bureaux d’enregistrement de domaines Microsoft 365
+## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Bureaux d’enregistrement Domain Connect s’intégrant à Microsoft 365
 
 - [11&amp; IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
-- [Iquésk](https://www.plesk.com/)
+- [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer ou WildWestDomains (revendeurs GoDaddy utilisant l’hébergement DNS SecureServer)
+- SecureServer ou WildGbDomains (revendeurs GoDaddy utilisant l’hébergement DNS SecureServer)
   - [Hébergement web MadDog](https://maddogwebhosting.com/domains/)
-  - [NamesDesSerrables](https://www.cheapnames.com)
+  - [CheapNames](https://www.cheapnames.com)
 
-## <a name="what-happens-to-my-email-and-website"></a>Qu’advient-il de mon courrier électronique et de mon site web ?
+## <a name="what-happens-to-my-email-and-website"></a>Qu’advient-il de mon courrier et de mon site web ?
 
-Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
+Une fois l’installation terminée, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à arriver à Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et configuré des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui obtiennent des e-mails sur votre domaine !
 
-Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.
+Si vous disposez d’un site web que vous utilisez avec votre entreprise, il continuera à fonctionner où il se trouve. Les étapes d’installation de Domain Connect n’affectent pas votre site web.

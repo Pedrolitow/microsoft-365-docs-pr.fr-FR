@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: 681396d0389b78222afbaeaa2941b11f5e292b81
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 291d6a0207c8ed0f94bcfa224accc217dfc1d78f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164919"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437126"
 ---
-# <a name="user-email-settings"></a>Paramètres de messagerie de l'utilisateur
+# <a name="user-email-settings-in-microsoft-365"></a>Paramètres de la messagerie utilisateur dans Microsoft 365
 
 En tant qu’administrateur d’une organisation, vous pouvez gérer les paramètres de messagerie des utilisateurs. Cet article vous offre des informations sur la gestion de ces paramètres.
 

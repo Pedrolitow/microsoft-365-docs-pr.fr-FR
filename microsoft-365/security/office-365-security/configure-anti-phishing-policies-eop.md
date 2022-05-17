@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans Exchange Online boîtes aux lettres.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f199cb3dbaddc47416c24a82b3066a2631641706
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847381"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438902"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -100,9 +100,9 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 4. Dans la page **Utilisateurs, groupes et domaines** qui s’affiche, identifiez les destinataires internes auxquels la stratégie s’applique (conditions de destinataire) :
    - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
-   - **Groupes** :
-     - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
-     - Groupes Microsoft 365 spécifiée.
+   - **Groupes** :
+     - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+     - Groupes Microsoft 365 spécifiée
    - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -138,7 +138,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
      Pour activer un paramètre, cochez la case. Pour la désactiver, désactivez la case à cocher.
 
-     <sup>\*</sup> Ce paramètre est disponible uniquement si vous avez sélectionné **Activer l’intelligence par usurpation d’identité** sur la page précédente. Pour plus d’informations, consultez [l’expéditeur non authentifié](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> Ce paramètre est disponible uniquement si vous avez sélectionné **Activer l’intelligence par usurpation d’identité** sur la page précédente. Pour plus d’informations, consultez [les indicateurs d’expéditeur non authentifiés](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 

@@ -18,13 +18,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles de votre organisation.
-ms.openlocfilehash: 74d2a2d6034b1e893987e2ede47a96bc00658f47
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Connectez-vous à Microsoft 365 et configurez Mobilité et sécurité de base pour utiliser la gestion intégrée des appareils mobiles pour sécuriser et gérer les appareils mobiles de vos utilisateurs.
+ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415148"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435720"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits dans mobile Gestion des appareils dans Microsoft 365
 

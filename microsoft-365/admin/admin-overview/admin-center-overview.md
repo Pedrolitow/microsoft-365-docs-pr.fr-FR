@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Utilisez la vue simplifiée de Microsoft 365 pour gérer les tâches courantes ou la vue tableau de bord pour les paramètres et les tâches plus complexes.
-ms.openlocfilehash: b75a4e63b313654be68d9569daa497a738520bbc
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
+ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128824"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436138"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 

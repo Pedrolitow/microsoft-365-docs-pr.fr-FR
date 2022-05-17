@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Utilisez Mobilité et sécurité de base pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Gérez et sécurisez les appareils mobiles connectés à votre organisation Microsoft 365 en configurant et en utilisant mobilité et sécurité de base.
+ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780850"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435698"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -46,7 +46,7 @@ Voici un résumé des étapes :
 
 **Étape 1 :** Activez mobilité et sécurité de base en suivant les étapes de configuration de [la mobilité et de la sécurité de base](set-up.md).
 
-**Étape 2 :** Configurez la mobilité et la sécurité de base en créant, par exemple, un certificat APNs pour gérer les appareils iOS et en ajoutant un enregistrement DNS (Domain Name System) pour votre domaine afin de prendre en charge Windows téléphones.
+**Étape 2 :** Configurez la mobilité et la sécurité de base en créant, par exemple, un certificat APNs pour gérer iOS appareils et en ajoutant un enregistrement DNS (Domain Name System) pour votre domaine afin de prendre en charge Windows téléphones.
 
 **Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous effectuez cette opération, vos utilisateurs reçoivent un message d’inscription sur leur appareil et, une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez configurées pour eux. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md). 
 
@@ -60,7 +60,7 @@ Une fois que vous avez configuré La mobilité et la sécurité de base et que v
 
 Si vous avez simplement besoin de gestion des applications mobiles (MAM), peut-être pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune fournit une autre option que l’inscription et la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies GAM à l’aide de la Portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, consultez [Protection d'applications vue d’ensemble des stratégies](/mem/intune/apps/app-protection-policy).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Configurer la mobilité et la sécurité de base](set-up.md) (article)\
 [Inscrire votre appareil mobile à l’aide de la mobilité et de la sécurité de base](enroll-your-mobile-device.md) (article)\

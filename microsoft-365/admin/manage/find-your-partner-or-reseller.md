@@ -23,38 +23,38 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir des informations de contact pour un partenaire avec qui vous avez travaillé dans le passé.
-ms.openlocfilehash: d50c829281654842079a2124be4f8a8e16e993bf
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+description: Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir les coordonnées d’un partenaire avec lequel vous avez travaillé par le passé.
+ms.openlocfilehash: 3fe7a2ded991bf8b3603ea992fcd64c6d7866c90
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245646"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437552"
 ---
-# <a name="find-your-partner-or-reseller"></a>Trouver votre partenaire ou revendeur
+# <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Rechercher votre partenaire ou revendeur d’abonnements Microsoft 365
 
-En tant qu’administrateur, vous pouvez travailler avec un partenaire pour acheter, activer et renouveler des abonnements Microsoft 365 par le biais d’un programme de licence en volume Microsoft Open. 
+En tant qu’administrateur, vous pouvez travailler avec un partenaire pour acheter, activer et renouveler des abonnements Microsoft 365 par le biais d’un programme de licences en volume Microsoft Open. 
   
  **Vous cherchez à déterminer si le programme de licence en volume Open est adapté à vos besoins ?** Consultez la [vue d'ensemble des programmes Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## <a name="find-a-new-partner-or-reseller"></a>Rechercher un nouveau partenaire ou revendeur
 
-Si vous êtes prêt à acheter ou renouveler des Microsoft 365 par le biais de licences en volume ouvertes, ou si vous souhaitez simplement plus d’informations sur l’utilisation d’un partenaire, choisissez une option ci-dessous. 
+Si vous êtes prêt à acheter ou à renouveler Microsoft 365 via open volume licensing, ou si vous souhaitez simplement plus d’informations sur l’utilisation d’un partenaire, choisissez une option ci-dessous. 
   
 - [Rechercher un partenaire de service certifié Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
-- [Appeler la gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613305)
+- [Appeler les licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>Recherchez les informations de contact d'un partenaire avec lequel vous avez déjà travaillé précédemment.
 
 > [!NOTE]
-> Dans certains cas, vous trouverez des informations dans le Centre d'administration Microsoft 365 partenaires avec qui vous avez travaillé dans le passé. N'oubliez pas que ces informations peuvent être obsolètes. Il est recommandé de contacter la personne ou le service responsable des achats au sein de votre organisation afin d'identifier le partenaire avec lequel vous devez travailler. 
+> Dans certains cas, vous pouvez trouver des informations dans le Centre d'administration Microsoft 365 pour les partenaires avec lesquels vous avez travaillé par le passé. N'oubliez pas que ces informations peuvent être obsolètes. Il est recommandé de contacter la personne ou le service responsable des achats au sein de votre organisation afin d'identifier le partenaire avec lequel vous devez travailler. 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Obtenir des informations sur les partenaires dans le Centre d’administration
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de partenaires.</a>
+1. Dans le Centre d’administration, accédez à la page **des relations Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner</a>.
   
-2. Si vous avez un partenaire, son nom et sa relation avec votre organisation sont répertoriés ici. Pour afficher les informations de contact du partenaire (numéro de téléphone et adresse e-mail), sélectionnez le nom du partenaire.
+2. Si vous avez un partenaire, le nom et la relation du partenaire avec votre organisation sont répertoriés ici. Pour afficher les informations de contact du partenaire (numéro de téléphone et adresse e-mail), sélectionnez le nom du partenaire.
     
 ## <a name="more-resources"></a>Plus de ressources
 

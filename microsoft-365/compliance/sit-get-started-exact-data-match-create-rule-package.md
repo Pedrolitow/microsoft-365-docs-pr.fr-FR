@@ -17,18 +17,20 @@ search.appverid:
 - MET150
 description: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e44d18bc1a779ace95fb2f64171ff0bf91de57ed
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: d18147e576db356a5fb7904c3901003bbf48855e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526039"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435256"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 
-Vous pouvez créer un type d’informations sensibles (SIT) de correspondance de données exacte (EDM) à l’aide du schéma [EDM](#use-the-edm-schema-and-sit-wizard) et de l’Assistant SIT dans le Centre de conformité ou créer manuellement le fichier XML du package de [règles.](#create-a-rule-package-manually) Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Si vous n’êtes pas familiarisé avec EDM based SITS ou leur implémentation, vous devez vous familiariser avec :
+Vous pouvez créer un type d’informations sensibles (SIT) de correspondance de données exacte (SIT) à [l’aide du schéma EDM et de l’Assistant SIT](#use-the-edm-schema-and-sit-wizard) dans le Centre de conformité ou créer [manuellement](#create-a-rule-package-manually) le fichier XML du package de règles. Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
+
+Si vous n’êtes pas familiarisé avec LES SERVICES basés sur EDM ou leur implémentation, vous devez vous familiariser avec les éléments suivants :
 
 - [En savoir plus sur les types d’informations confidentielles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
@@ -38,46 +40,46 @@ Si vous n’êtes pas familiarisé avec EDM based SITS ou leur implémentation, 
 
 Vous pouvez utiliser cet Assistant pour créer vos fichiers de type d’informations sensibles (SIT) afin de simplifier le processus.
 
-Un type d’informations sensibles EDM est composé d’un ou plusieurs modèles. Chaque modèle décrit une combinaison de preuves (champs du schéma) qui seront utilisées pour identifier le contenu sensible dans un document ou un e-mail.
+Un type d’informations sensibles EDM est composé d’un ou de plusieurs modèles. Chaque modèle décrit une combinaison de preuves (champs du schéma) qui seront utilisées pour identifier le contenu sensible dans un document ou un e-mail.
 
 ## <a name="pre-requisites"></a>Conditions préalables
 
-Effectuez les étapes des articles suivants :
+Effectuez les étapes décrites dans ces articles :
 
 1. [Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
 2. [Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 3. [Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
 
-- Que vous créiez un type d’informations sensibles EDM à l’aide de l’Assistant ou du fichier XML du package de règles via PowerShell, vous devez avoir des autorisations d’administrateur global ou d’administrateur de conformité pour créer, tester et déployer un type d’informations sensibles personnalisé via l’interface utilisateur. Voir [à propos des rôles d’administrateur dans Office 365](/office365/admin/add-users/about-admin-roles).
-- Identifiez l’un des sits intégrés à utiliser comme type d’informations sensibles des éléments principaux.
-  - Si aucun des types d’informations sensibles intégrés ne correspond aux données de la colonne que vous avez sélectionnée, vous devez créer un type d’informations sensibles personnalisé.
-  - Si vous avez sélectionné l’option Delimiters ignorés pour la colonne d’élément principal dans votre schéma, assurez-vous que la fonction SIT personnalisée que vous créez correspondra aux données avec et sans les délimiteurs sélectionnés.
-  - Si vous utilisez un sit intégré, assurez-vous qu’il détecte exactement les chaînes que vous souhaitez sélectionner, et n’inclut pas les caractères environnants ou n’exclut aucune partie valide de la chaîne telle qu’elle est stockée dans votre table d’informations sensibles.
+- Que vous créiez un type d’informations sensibles EDM à l’aide de l’Assistant ou du fichier XML du package de règles via PowerShell, vous devez disposer des autorisations d’administrateur général ou d’administrateur de conformité pour créer, tester et déployer un type d’informations sensibles personnalisé via l’interface utilisateur. [Consultez À propos des rôles d’administrateur dans Office 365](/office365/admin/add-users/about-admin-roles).
+- Identifiez l’un des SIT intégrés à utiliser comme type d’informations sensibles d’éléments principaux.
+  - Si aucun des types d’informations sensibles intégrés ne correspond aux données de la colonne que vous avez sélectionnée, vous devez créer un type d’informations sensibles personnalisé qui le fait.
+  - Si vous avez sélectionné l’option Délimiteurs ignorés pour la colonne d’élément principal dans votre schéma, assurez-vous que le SIT personnalisé que vous créez correspondra aux données avec et sans les délimiteurs sélectionnés.
+  - Si vous utilisez un sit intégré, assurez-vous qu’il détecte exactement les chaînes que vous souhaitez sélectionner, et n’inclut aucun caractère environnant ou exclut une partie valide de la chaîne telle qu’elle est stockée dans votre table d’informations sensibles.
 
-Voir [Définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) et [Créer des types d’informations sensibles personnalisés dans le Centre de conformité](create-a-custom-sensitive-information-type.md).
+Consultez les [définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) et [créez des types d’informations sensibles personnalisés dans le Centre de conformité](create-a-custom-sensitive-information-type.md).
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
-1. Dans le Centre de conformité Microsoft 365 pour votre client, accédez à **Classification des données** > **Correspondances exactes des données**.
+1. Dans le portail de conformité Microsoft Purview de votre locataire, accédez aux **correspondances de données** **Data classificationExact** > .
 
 2. Choisissez **Types d’informations sensibles EDM** et **Créer un type d’informations sensibles EDM** pour ouvrir l’Assistant de configuration des types d’informations sensibles.
 
-3. Choose **Choose an existing EDM schema** and choose the schema you created in [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
+3. **Choisissez un schéma EDM existant** et choisissez le schéma que vous avez créé dans [Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
 4. Choisissez **Suivant**, puis **Créer un modèle**.
 
-5. Choisissez le **Niveau de confiance** et l’**Élément principal**. Pour en savoir plus sur les niveaux de confiance, voir [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
+5. Choisissez le **Niveau de confiance** et l’**Élément principal**. Pour en savoir plus sur les niveaux de confiance, consultez [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
-6. Choisissez le **type d’informations sensibles de l’élément** principal à associer pour définir le texte du document qui sera comparé à toutes les valeurs du champ d’élément principal. Voir [Définitions des entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md) pour en savoir plus sur les types d’informations sensibles disponibles.
+6. Choisissez le **type d’informations sensibles de l’élément principal** à associer pour définir le texte du document qui sera comparé à toutes les valeurs du champ d’élément principal. Voir [Définitions des entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md) pour en savoir plus sur les types d’informations sensibles disponibles.
 
    > [!IMPORTANT]
-   > Sélectionnez un type d’informations sensibles qui correspond étroitement au format du contenu que vous souhaitez trouver. La sélection d’un type d’informations sensibles qui correspond à du contenu inutile, tel qu’un type qui correspond à toutes les chaînes de texte, ou tous les nombres peuvent entraîner une charge excessive dans le système, ce qui peut entraîner l’manquée d’informations sensibles. Consultez la section Recommandations de l’article Introduction à la correspondance exacte des données de cette documentation pour obtenir des recommandations sur la sélection d’un type d’informations sensibles à utiliser ici.
+   > Sélectionnez un type d’informations sensibles qui correspond étroitement au format du contenu que vous souhaitez trouver. La sélection d’un type d’informations sensibles qui correspond à du contenu inutile, comme celui qui correspond à toutes les chaînes de texte, ou tous les nombres peut entraîner une charge excessive dans le système, ce qui peut entraîner l’absence d’informations sensibles.
 
 7. Choisissez vos **éléments de prise en charge** et les options de correspondance.
 
 8. Choisissez **Terminé** et **Suivant**.
 
-9. Choisissez vos **Niveau de confiance et proximité des caractères** souhaités. Il s’ra de la valeur par défaut pour l’ensemble du type d’informations sensibles EDM.
+9. Choisissez vos **Niveau de confiance et proximité des caractères** souhaités. Il s’agit de la valeur par défaut pour l’ensemble du type d’informations sensibles EDM.
 
 10. Choisissez **Créer un modèle** si vous souhaitez créer des modèles supplémentaires pour votre type d’informations sensibles EDM.
 
@@ -87,43 +89,82 @@ Voir [Définitions d’entités de types d’informations sensibles](sensitive-i
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>Modifier ou supprimer le modèle de type d’informations sensibles
 
-1. Ouvrir **le centre de conformitéData** >  **classificationExact** >  **correspond aux données**.
+1. Ouvrir les **correspondances de données** **Compliance centerData** >  **classificationExact** > .
 
-2. Choisissez **les types d’informations sensibles EDM**.
+2. Choisissez les **types d’informations sensibles EDM**.
 
-3. Choisissez l’EDM SIT que vous souhaitez modifier.
+3. Choisissez le SIT EDM que vous souhaitez modifier.
 
-4. Choisissez **Modifier le type d’informations sensibles EDM** ou **supprimer le type** d’informations sensibles EDM dans le volant.
+4. Choisissez **Modifier le type d’informations sensibles EDM** ou **Supprimer le type d’informations sensibles EDM** dans le menu volant.
 
-## <a name="create-a-rule-package-manually"></a>Créer manuellement un package de règles
+## <a name="working-with-specific-types-of-data"></a>Utilisation de types de données spécifiques
 
-Cette procédure vous montre comment créer un fichier au format XML appelé package de règles (avec codage Unicode), puis le télécharger dans Microsoft 365 à l’aide des cmdlets PowerShell du Centre de conformité.
+Pour des raisons de performances, il est essentiel d’utiliser des modèles qui réduisent le nombre de correspondances inutiles. Par exemple, vous pouvez utiliser un type d’informations sensibles basé sur l’expression régulière.
+
+`\b\w*\b`
+
+Cela correspondrait à chaque mot ou numéro individuel dans un document ou un e-mail. Cela entraînerait une surcharge du service avec des correspondances et une absence de détection des correspondances vraies. L’utilisation de modèles plus précis peut éviter cette situation. Voici quelques recommandations pour identifier la configuration appropriée pour certains types de données courants.
+
+**Adresses e-mail** : les adresses e-mail peuvent être faciles à identifier, mais étant donné qu’elles sont si courantes dans le contenu, elles peuvent entraîner une charge importante dans le système si elles sont utilisées comme champ principal. Utilisez-les uniquement comme preuve secondaire. S’ils doivent être utilisés comme preuve principale, essayez de définir un type d’informations sensibles personnalisé qui utilise la logique pour exclure leur utilisation en tant que `From` ou `To` champs dans les e-mails, et d’exclure ceux avec l’adresse e-mail de votre entreprise afin de réduire le nombre de chaînes inutiles qui doivent être mises en correspondance.
+
+**Téléphone nombres** : Téléphone nombres peuvent se présenter dans de nombreux formats différents, y compris ou à l’exclusion des préfixes de pays, des codes régionaux et des séparateurs. Pour réduire les faux négatifs tout en maintenant la charge au minimum, utilisez-les uniquement comme éléments secondaires, excluez tous les séparateurs probables, comme les parenthèses et les tirets, et incluez uniquement dans votre table de données sensible la partie qui sera toujours présente dans le numéro de téléphone.
+
+**Noms de la personne** : n’utilisez pas les noms de la personne comme éléments principaux si vous utilisez un type d’informations sensibles basé sur une expression régulière comme élément de classification pour ce type EDM, car ils sont difficiles à distinguer des mots courants.
+
+Si vous devez utiliser un élément principal difficile à identifier avec un modèle spécifique, comme un nom de code de projet qui peut générer un grand nombre de correspondances à traiter, veillez à inclure des mots clés dans le type d’informations sensibles que vous utilisez comme élément de classification pour votre type EDM. Par exemple, si vous utilisez des noms de code de projet qui peuvent être des mots réguliers, vous pouvez utiliser le mot `project` comme preuve supplémentaire requise à proximité du modèle d’expression régulière de nom de projet dans le type sensible utilisé comme élément de classification pour votre type EDM. Vous pouvez également envisager d’utiliser un type sensible basé sur un dictionnaire standard comme élément de classification pour votre sit EDM.
+
+Lorsque vous essayez de faire correspondre des chaînes numériques, spécifiez les plages autorisées de nombres, telles que le nombre de chiffres ou les chiffres de départ, le cas échéant. Si vous devez faire correspondre une plage de nombres relativement flexible, vous pouvez utiliser des mots clés dans le SIT de base pour réduire le nombre de correspondances. Par exemple, si vous tentez de faire correspondre des numéros de compte composés de 7 à 11 chiffres, ajoutez les mots `account`, `customer``acct.` au SIT en tant que preuve supplémentaire requise. Cela réduit la probabilité de correspondances inutiles qui pourraient entraîner le dépassement des limites de correspondances à traiter par EDM.
+
+Si un champ que vous devez utiliser comme élément principal suit un modèle simple susceptible de provoquer un grand nombre de correspondances et que vous ne pouvez pas ajouter la présence de mots clés comme preuve supplémentaire dans le type d’informations sensibles, vous pouvez également exiger un nombre minimal d’occurrences de ce modèle. Par exemple, vous pouvez utiliser un type d’informations sensibles personnalisé défini de la manière suivante pour détecter au moins 29 autres nombres à cinq chiffres entourant un nombre potentiel à cinq chiffres à faire correspondre à EDM :
+
+```xml
+ <Entity id="98703510-18b3-43d4-961f-15317594beb7"
+                  patternsProximity="300"
+                  recommendedConfidence="85"
+                  relaxProximity="false">
+                  <Pattern confidenceLevel="85"
+                              proximity="300">
+                              <IdMatch idRef="MRN"/>
+                              <Match idRef="30 AccountNrs"
+                                    minCount="30"
+                                    proximity="3000"
+                                    uniqueResults="true"/>
+                  </Pattern>
+      </Entity>
+      <Regex id="30 AccountNrs">\d{5}</Regex>
+```
+
+Dans certains cas, vous devrez peut-être identifier certains numéros d’identification de compte ou d’enregistrement qui, pour des raisons historiques, ne suivent pas un modèle standardisé. Par exemple, `Medical Record Numbers` peut être composé de nombreuses permutations différentes de lettres et de nombres au sein de la même organisation. Même s’il peut être difficile au début d’identifier un modèle, une inspection plus étroite vous permet souvent d’affiner un modèle qui décrit toutes les valeurs valides sans provoquer un nombre excessif de correspondances non valides. Par exemple, il peut être détecté que « tous les MRN ont au moins sept caractères, ont au moins deux chiffres numériques en eux, et s’ils contiennent des lettres, ils commencent par un ». La création d’une expression régulière basée sur de tels critères doit vous permettre de réduire les correspondances inutiles tout en capturant toutes les valeurs souhaitées, et une analyse plus approfondie peut permettre une précision accrue en définissant des modèles distincts qui décrivent différents formats.
+
+## <a name="create-a-rule-package-manually"></a>Créer un package de règles manuellement
+
+Cette procédure vous montre comment créer un fichier au format XML appelé package de règles (avec encodage Unicode), puis le charger dans Microsoft Purview à l’aide des applets de commande PowerShell du Centre de conformité.
 
 > [!NOTE]
-> Si le sit que vous mappé peut détecter des preuves corroborante à plusieurs mots, les éléments secondaires que vous définissez dans un package de règles créé manuellement peuvent être mappés à la sit. Par exemple, `John Smith` le nom ne correspond pas en tant qu’élément secondaire, car nous le comparerions et le trouverions séparément dans le terme téléchargé dans l’un des champs, si ce champ de preuve corroborante n’a `John` `Smith` `John Smith` pas été mappé à un sit qui peut détecter ce modèle.
+> Si le sit auquel vous mappez peut détecter des preuves corroborantes multi-mots, les éléments secondaires que vous définissez dans un package de règles créé manuellement peuvent être mappés au SIT. Par exemple, le nom `John Smith` ne correspondrait pas en tant qu’élément secondaire, car nous comparions `John` et `Smith` trouvions le contenu séparément au terme `John Smith` chargé dans l’un des champs, si ce champ de preuve corroborant n’était pas mappé à un SIT capable de détecter ce modèle.
 >
-> Il existe une limite de 10 packages de règles dans un Microsoft 365 client. Dans la mesure où un package de règles peut contenir un nombre arbitraire de types d’informations sensibles, vous pouvez éviter de créer un nouveau package de règles chaque fois que vous souhaitez définir un nouveau type d’informations sensibles à l’aide de cette méthode, au lieu d’exporter un package de règles existant et d’ajouter vos types d’informations sensibles au XML avant de le re-télécharger.
+> Il existe une limite de 10 packages de règles dans un locataire Microsoft 365. Étant donné qu’un package de règles peut contenir un nombre arbitraire de types d’informations sensibles, vous pouvez éviter de créer un package de règles chaque fois que vous souhaitez définir un nouveau type d’informations sensibles à l’aide de cette méthode, à la place exporter un package de règles existant et ajouter vos types d’informations sensibles au code XML avant de le charger à nouveau.
 
 1. Créez un package de règles au format XML (avec codage Unicode) similaire à l’exemple suivant. (vous pouvez copier, modifier et utiliser notre exemple).
 
-   Lorsque vous définissez votre package de règles, veillez à référencer correctement votre fichier de table de sources d’informations sensibles .csv, .tsv ou pipe (|) délimité par des informations sensibles **** et votre fichier de schémaedm.xmlinformations sensibles. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de xml, les champs suivants doivent être personnalisés pour créer votre type sensible EDM :
+   Lorsque vous configurez votre package de règles, veillez à référencer correctement votre fichier de table source d’informations sensibles .csv, .tsv ou pipe (|) délimité et **edm.xml** fichier de schéma. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple xml, les champs suivants doivent être personnalisés pour créer votre type sensible EDM :
 
    - **RulePack id & ExactMatch id** : utilisez [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) pour générer un GUID.
 
-   - **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous indiquez le nom de la source de données du schéma EDM configuré.
+   - **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous fournissez le nom de la source de données du schéma EDM configuré.
 
    - **idMatch** : ce champ pointe vers l’élément principal pour EDM.
    - **Correspondances** : spécifie le champ à utiliser dans la recherche exacte. Vous fournissez un nom de champ pouvant faire l’objet d’une recherche dans le schéma EDM pour le magasin de données.
    - **Classification** : ce champ spécifie la correspondance de type d’informations sensibles qui déclenche la recherche EDM. Vous pouvez utiliser le nom ou le GUID d’un type d’informations sensibles intégré ou personnalisé existant.
 
    > [!NOTE]
-   > N’ignorez pas que toute chaîne qui correspond à la sit fournie sera hachée et comparée à chaque entrée de la table des sources d’informations sensibles. Pour éviter les problèmes de performances si vous choisissez une sit personnalisée pour l’élément de classification, n’utilisez pas une autre qui correspondra à un pourcentage élevé de contenu. Par exemple, un qui correspond à « n’importe quel nombre » ou « tout mot à cinq lettres ». Vous pouvez la différencier en ajoutant des mots clés de prise en charge ou en incluant la mise en forme dans la définition de la classification personnalisée SIT.
+   > N’oubliez pas que toute chaîne qui correspond au SIT fourni sera hachée et comparée à chaque entrée de la table source d’informations sensibles. Pour éviter les problèmes de performances si vous choisissez un SIT personnalisé pour l’élément de classification, n’utilisez pas celui qui correspond à un pourcentage important de contenu. Par exemple, un qui correspond à « n’importe quel nombre » ou « n’importe quel mot de cinq lettres ». Vous pouvez le différencier en ajoutant des mots clés de prise en charge ou en incluant la mise en forme dans la définition de la classification personnalisée SIT.
 
    - **Correspondance** : ce champ pointe vers des preuves supplémentaires trouvées à proximité d’idMatch.
    - **Correspondances** : vous fournissez n’importe quel nom de champ dans le schéma EDM pour DataStore.
-   - **Resource idRef:** Cette section spécifie le nom et la description du type sensible dans plusieurs paramètres régionaux
-     - Vous fournissez le GUID de l’ID ExactMatch.
-     - **Nom** &  **description**: customize as required.
+   - **IDRef de ressource :** Cette section spécifie le nom et la description du type sensible dans plusieurs paramètres régionaux
+     - Vous fournissez le GUID pour l’ID ExactMatch.
+     - **Nom** &  **description** : personnaliser en fonction des besoins.
 
       ```xml
       <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -165,14 +206,14 @@ Cette procédure vous montre comment créer un fichier au format XML appelé pac
       </RulePackage>
       ```
 
-2. Télécharger package de règles en exécutant la commande PowerShell suivante :
+2. Télécharger le package de règles en exécutant la commande PowerShell suivante :
 
    ```powershell
    New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('.\\rulepack.xml'))
    ```
 
 > [!NOTE]
-> La syntaxe du fichier de package de règles est identique à celle des autres types d’informations sensibles. Pour obtenir des détails complets sur la syntaxe du fichier de package de règles et des options de configuration supplémentaires, et pour obtenir des instructions sur la modification et la suppression de types d’informations sensibles à l’aide de PowerShell, créez un type d’informations sensibles personnalisé à l’aide de [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell).
+> La syntaxe du fichier de package de règles est la même que pour les autres types d’informations sensibles. Pour plus d’informations sur la syntaxe du fichier de package de règles et d’autres options de configuration, et pour obtenir des instructions sur la modification et la suppression de types d’informations sensibles à l’aide de PowerShell, [créez un type d’informations sensibles personnalisé à l’aide de PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell).
 
 ## <a name="next-step"></a>Étape suivante
 

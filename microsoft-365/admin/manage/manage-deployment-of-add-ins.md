@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments sur des utilisateurs et des groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: 2dfd92e2dd38487a444362cdbb88ec217e62ca28
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a599023db47a46baa0318e026e70627320a6b1f8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093721"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437522"
 ---
-# <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
+# <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Déployer des compléments dans le Centre d'administration Microsoft 365
 
 Office compléments vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir [Commencer à utiliser votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). En tant qu’administrateur, vous pouvez déployer Office compléments pour les utilisateurs de votre organisation à l’aide de la fonctionnalité Déploiement centralisé dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Le déploiement centralisé est le moyen le plus recommandé et le plus riche en fonctionnalités pour la plupart des administrateurs de déployer des compléments sur des utilisateurs et des groupes au sein d’une organisation.
 

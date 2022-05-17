@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Hachez et chargez la table source d’informations sensibles pour que les données exactes correspondent aux types d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0277a53b74359bdcac1de8fa6013082b991247f4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417521"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437632"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles
 
@@ -179,7 +179,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```dos
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
@@ -231,6 +231,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
+
+> [!NOTE]
+> Pour automatiser le processus de hachage et de chargement une fois que vous l’avez créé la première fois, consultez [Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données](sit-use-exact-data-refresh-data.md).
 
 ## <a name="next-step"></a>Étape suivante
 

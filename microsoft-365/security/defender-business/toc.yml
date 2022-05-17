@@ -1,7 +1,7 @@
 - name: Microsoft Defender pour les PME
   href: index.yml
   items:
-    - name: Vue d’ensemble
+    - name: Vue dʼensemble
       items:
         - name: Qu’est-ce que Microsoft Defender pour les PME ?
           href: mdb-overview.md
@@ -51,7 +51,7 @@
           href: mdb-review-remediation-actions.md
         - name: Afficher et utiliser les rapports
           href: mdb-reports.md
-    - name: Afficher ou modifier des stratégies de sécurité
+    - name: Afficher ou modifier les stratégies de sécurité
       items:
         - name: 'Afficher, modifier et créer des stratégies'
           href: mdb-view-edit-create-policies.md
@@ -63,7 +63,7 @@
           href: mdb-firewall.md
         - name: Gérer les règles pour les stratégies de pare-feu
           href: mdb-custom-rules-firewall.md
-    - name: Surveiller ou gérer des appareils
+    - name: Surveiller ou gérer les appareils
       items:
         - name: Afficher et gérer des appareils
           href: mdb-manage-devices.md
@@ -73,14 +73,14 @@
           href: mdb-offboard-devices.md
     - name: Informations de référence
       items:
-        - name: Informations de référence sur l’API
-          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
         - name: Foire aux questions
           href: mdb-faq.yml
         - name: Résolution des problèmes
           href: mdb-troubleshooting.yml
+        - name: Informations de référence sur l’API
+          href: ../defender-endpoint/exposed-apis-create-app-partners.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
         - name: Microsoft 365 Business Premium
           href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse

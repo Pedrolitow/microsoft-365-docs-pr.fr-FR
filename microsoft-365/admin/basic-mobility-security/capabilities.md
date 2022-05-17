@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer vos appareils mobiles.
-ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: La mobilité et la sécurité de base vous aident à sécuriser et à gérer les appareils mobiles avec des stratégies qui contrôlent l’accès à l’organisation Microsoft 365 la messagerie et les documents.
+ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937760"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435852"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser mobilité et sécurité de base pour sécuriser et gérer l
 - Android (y compris Samsung Knox)<sup>1</sup>
 - Windows <sup>2, 3</sup>
 
-<sup>1</sup> Après juin 2020, les versions Android ultérieures à la version 9 ne peuvent pas gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
+<sup>1</sup> Après juin 2020, Android versions ultérieures à la version 9 ne peuvent pas gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
 
 <sup>2</sup> Le contrôle d’accès pour les appareils Windows 8.1 RT est limité à Exchange ActiveSync.
 
@@ -62,8 +62,8 @@ Les applications prises en charge pour les différents types d’appareils mobil
 
 > [!NOTE]
 >
-> - La prise en charge d’iOS 10.0 et versions ultérieures inclut les appareils iPhone et iPad.
-> - La gestion des appareils de système d’exploitation BlackBerry n’est pas prise en charge par la sécurité et la mobilité de base. Utilisez BlackBerry Business Services cloud (BBCS) de BlackBerry pour gérer les appareils de système d’exploitation BlackBerry. Les appareils Blackberry exécutant le système d’exploitation Android sont pris en charge en tant qu’appareils Android standard
+> - La prise en charge de iOS versions 10.0 et ultérieures inclut les appareils iPhone et iPad.
+> - La gestion des appareils de système d’exploitation BlackBerry n’est pas prise en charge par la sécurité et la mobilité de base. Utilisez BlackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils de système d’exploitation BlackBerry. Les appareils Blackberry exécutant Android système d’exploitation sont pris en charge en tant qu’appareils Android standard
 > - Les utilisateurs ne seront pas invités à s’inscrire et ne seront pas bloqués ou signalés pour violation de stratégie s’ils utilisent le navigateur mobile pour accéder à Microsoft 365 SharePoint sites, documents dans Office Online ou courrier électronique dans Outlook Web App.
 
 Le diagramme suivant montre ce qui se passe lorsqu’un utilisateur avec un nouvel appareil se connecte à une application qui prend en charge le contrôle d’accès avec mobilité et sécurité de base. L’utilisateur ne peut pas accéder aux ressources Microsoft 365 dans l’application jusqu’à ce qu’il inscrive son appareil.
@@ -183,7 +183,7 @@ Vous pouvez définir les paramètres de stratégie supplémentaires suivants à 
 
 ## <a name="settings-supported-by-windows"></a>Paramètres pris en charge par Windows
 
-Vous pouvez gérer Windows 10 appareils en les inscrivant en tant qu’appareils mobiles. Une fois qu’une stratégie applicable est déployée, les utilisateurs disposant d’appareils Windows 10 doivent s’inscrire à Basic Mobility and Security la première fois qu’ils utilisent l’application de messagerie intégrée pour accéder à leurs e-mails Microsoft 365 (nécessite Azure AD abonnement Premium).
+Vous pouvez gérer Windows 10 appareils en les inscrivant en tant qu’appareils mobiles. Une fois qu’une stratégie applicable est déployée, les utilisateurs disposant d’appareils Windows 10 doivent s’inscrire à Basic Mobility and Security la première fois qu’ils utilisent l’application de messagerie intégrée pour accéder à leur messagerie Microsoft 365 (nécessite un abonnement Azure AD Premium).
 
 Les paramètres suivants sont pris en charge pour Windows 10 appareils inscrits en tant qu’appareils mobiles. Ce paramètre n’empêche pas les utilisateurs d’accéder à Microsoft 365 ressources.
 
@@ -230,11 +230,11 @@ Vous pouvez définir ces paramètres de stratégie supplémentaires à l’aide 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Réinitialiser un appareil mobile à distance
 
-Si un appareil est perdu ou volé, vous pouvez supprimer des données d’organisation sensibles et empêcher l’accès aux ressources de votre organisation Microsoft 365 en effectuant une réinitialisation à partir du portail  >  de **conformité Microsoft PurviewData** **loss** **preventionDevice** >  management. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
+Si un appareil est perdu ou volé, vous pouvez supprimer les données sensibles de l’organisation et empêcher l’accès aux ressources de votre organisation Microsoft 365 en effectuant une réinitialisation à partir de **portail de conformité Microsoft Purview** >  **Data loss** **preventionDevice** >  management. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
 
 Pour plus d’informations, consultez [Réinitialiser un appareil mobile dans Mobilité et sécurité de base](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365](overview.md) (article)\
 [Créer des stratégies de sécurité des appareils dans Mobilité et sécurité de base](create-device-security-policies.md) (article)

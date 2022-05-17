@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: La mobilité et la sécurité de base font partie des plans de Microsoft 365.
-ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: La mobilité et la sécurité de base font partie des plans de Microsoft 365, tandis que Microsoft Intune est un produit autonome inclus dans certains plans Microsoft 365.
+ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781180"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435764"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisissez entre mobilité et sécurité de base ou Intune
 
@@ -34,7 +34,7 @@ ms.locfileid: "64781180"
 
 La mobilité et la sécurité de base et les Intune sont inclus dans divers plans, décrits dans le tableau suivant.
 
-| Prévision | Mobility + Security de Base | Microsoft Intune |
+| Planification | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Oui|Non|
 |Microsoft 365 Business Basic|Oui|Non|
@@ -67,7 +67,7 @@ Microsoft Intune et la mobilité et la sécurité de base intégrées vous offre
 
 | Fonctionnalité | Points forts des fonctionnalités | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Types d’appareil|Gestion des différentes plateformes de système d’exploitation et des variantes principales du mode de gestion. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, système d’exploitation iPad|
+|Types d’appareil|Gestion des différentes plateformes de système d’exploitation et des variantes principales du mode de gestion. |Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung Knox<br/>mac OS, système d’exploitation iPad|
 |Conformité des appareils|Définissez et gérez des stratégies de sécurité, telles que le verrouillage du code confidentiel au niveau de l’appareil et la détection de jailbreak. |Limitations sur les appareils Android. Voir [les détails](capabilities.md). |Oui|
 |Accès conditionnel en fonction de la conformité des appareils |Empêchez les appareils non conformes d’accéder à la messagerie et aux données d’entreprise à partir du cloud. |Non pris en charge sur Windows 10.<br/>Limité au contrôle de l’accès aux Exchange Online, SharePoint Online et Outlook. |Oui |
 |Configuration des appareils  |Configurer les paramètres de l’appareil (par exemple, désactivation de l’appareil photo)|Ensemble limité de paramètres.|Oui|

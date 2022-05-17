@@ -18,13 +18,13 @@ ms.technology: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.date: 05/16/2022
+ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787707"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438089"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -32,9 +32,9 @@ ms.locfileid: "64787707"
 
 **S’applique à :**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -69,9 +69,9 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 
 7. Configurez votre pare-feu réseau.
 
-   1. Obtenez une vue d’ensemble du [pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Utilisez le [guide de conception du pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour décider de la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
-   3. Utilisez le [guide de déploiement du pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) pour configurer le pare-feu de votre organisation avec une sécurité avancée.
+   1. Obtenez une vue d’ensemble des [Pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Utilisez le [guide de conception Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour décider de la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
+   3. Utilisez le [guide de déploiement Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) pour configurer le pare-feu de votre organisation avec une sécurité avancée.
 
 > [!TIP]
 > Dans la plupart des cas, lorsque vous configurez des fonctionnalités de réduction de la surface d’attaque, vous pouvez choisir parmi plusieurs méthodes :
@@ -260,8 +260,8 @@ Vous pouvez accéder à ces événements dans Windows Observateur d’événemen
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|11|Audit de la protection d’intégrité du code|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|12 |Blocage de la protection d’intégrité du code|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13|Audit EAF|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|14 |Forcer EAF|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|15 |Audit EAF+|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|14|Forcer EAF|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|15|Audit EAF+|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|16|Forcer EAF+|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|17 |Audit IAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|18 |Forcer IAF|

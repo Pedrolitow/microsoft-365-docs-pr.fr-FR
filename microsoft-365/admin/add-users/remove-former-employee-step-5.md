@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Suivez les étapes décrites dans cet article pour accorder à un autre employé l’accès aux données OneDrive et Outlook de l’ancien employé.
-ms.openlocfilehash: c710826d0403c6935127f14dade3dfe30a8b5c13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Suivez les étapes décrites dans cet article pour accéder aux OneDrive d’un ancien employé et Outlook données, les sauvegarder et choisir d’accorder ou non l’accès à un autre employé.
+ms.openlocfilehash: 2ec2b2418fd5ca287c51950c23e403168d09f48f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129197"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436556"
 ---
 # <a name="step-5---give-another-employee-access-to-onedrive-and-outlook-data"></a>Étape 5 : accorder à un autre employé l’accès aux données OneDrive et Outlook
 
@@ -77,7 +77,7 @@ Vous pouvez également accorder l’accès à un autre utilisateur pour accéder
 
 9. Ajoutez l’utilisateur aux **administrateurs de collection de sites** et sélectionnez **OK**.
 
-10. L’utilisateur peut désormais accéder au OneDrive de l’ancien employé à l’aide de l’URL de OneDrive. Pour plus d’informations, consultez [À propos des URL OneDrive](/onedrive/list-onedrive-urls#about-onedrive-urls).
+10. L’utilisateur peut désormais accéder au OneDrive de l’ancien employé à l’aide de l’URL de OneDrive. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Révoquer l’accès administrateur au OneDrive d’un utilisateur
 

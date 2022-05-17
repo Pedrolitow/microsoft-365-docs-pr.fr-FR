@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6e2b52c9dbde60dfb554dd92c8a0cae2ba05ced
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: c1248c7192c9bd085938ae6436589a4445dd8ee8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302285"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437958"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "65302285"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Exchange Online Protection (EOP)** est le cœur de la sécurité des abonnements Microsoft 365 et permet d’empêcher les e-mails malveillants d’atteindre les boîtes de réception de vos employés. Mais avec de nouvelles attaques plus sophistiquées qui apparaissent chaque jour, des protections améliorées sont souvent nécessaires. **Microsoft Defender pour Office 365** Plan 1 ou Plan 2 contiennent des fonctionnalités supplémentaires qui offrent aux administrateurs plus de couches de sécurité, de contrôle et d’investigation.
 
@@ -172,8 +172,8 @@ Les paramètres d’usurpation d’identité sont interdépendants, mais le para
 |**Actions**|||||
 |**Si le message est détecté comme usurpation d’identité** <br/><br/> _AuthenticationFailAction_|**Déplacer le message vers les dossiers courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Déplacer le message vers les dossiers courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont été automatiquement bloqués, comme indiqué dans [l’insight d’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité, ou bloqués manuellement dans la [liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md). <br/><br/> Si vous sélectionnez **Mettre en quarantaine le message**, une zone **Appliquer la stratégie de mise en quarantaine** est disponible pour sélectionner la stratégie de quarantaine qui définit ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en tant qu’usurpation d’identité. Lorsque vous créez une stratégie anti-hameçonnage, une valeur vide signifie que la stratégie de quarantaine par défaut est utilisée pour définir les fonctionnalités historiques des messages qui ont été mis en quarantaine comme usurpation d’identité (DefaultFullAccessPolicy). <br/><br/> Les administrateurs peuvent créer et sélectionner des stratégies de quarantaine personnalisées qui définissent des fonctionnalités plus restrictives ou moins restrictives pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).|
 |**Afficher le premier contact conseil de sécurité** <br/><br/> _EnableFirstContactSafetyTips_|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`|Non sélectionnée <br/><br/> `$false`|Pour plus d’informations, consultez [first contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’identité** <br/><br/> _EnableUnauthenticatedSender_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, consultez [l’expéditeur non authentifié](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|**Afficher la balise « via »** <br/><br/> _EnableViaTag_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse From si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM** . <br/><br/> Pour plus d’informations, consultez [l’expéditeur non authentifié](set-up-anti-phishing-policies.md#unauthenticated-sender).|
+|**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’identité** <br/><br/> _EnableUnauthenticatedSender_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, consultez [les indicateurs d’expéditeur non authentifiés](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
+|**Afficher la balise « via »** <br/><br/> _EnableViaTag_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse From si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM** . <br/><br/> Pour plus d’informations, consultez [les indicateurs d’expéditeur non authentifiés](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>sécurité Microsoft Defender pour Office 365
 

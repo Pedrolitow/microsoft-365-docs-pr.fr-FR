@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des compléments centralisés pour déployer des compléments sur les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: dadb308d45b17d98c7bf6a5dd0c214691d264b5f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094281"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435432"
 ---
-# <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
+# <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Gérer les compléments dans le Centre d'administration Microsoft 365
 
 Office compléments vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web. Voir [Démarrer à l’aide de votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 

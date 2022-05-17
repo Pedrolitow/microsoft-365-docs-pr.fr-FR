@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6367781d38046edce1c1941e7c4264788b1ab64b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 78775b31833f16771d7010f3ea92c9695016463d
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417417"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438118"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting (préversion)
 
@@ -59,7 +59,6 @@ Si vous ne l’avez pas encore fait, vous pouvez demander des experts Defender p
 1. Cliquez sur [**Appliquer**](https://aka.ms/expandedMTEprev). Seuls les administrateurs généraux peuvent inscrire et terminer le processus d’application. Si vous n’êtes pas administrateur général, contactez votre administrateur général pour remplir le formulaire d’application.
 2. Entrez **l’ID de messagerie de votre entreprise**.
 3. Sélectionnez **Envoyer**. Vous recevrez un message de confirmation indiquant que votre application a été reçue.  
-4. Après approbation, vous recevrez un e-mail pour vous inscrire.
 
 ## <a name="register-to-microsoft-defender-experts-for-hunting-service-preview"></a>S’inscrire à Microsoft Defender Experts for Hunting Service (préversion)
 

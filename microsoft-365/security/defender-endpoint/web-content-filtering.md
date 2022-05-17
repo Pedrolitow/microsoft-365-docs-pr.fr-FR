@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,50 +15,51 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 01000e08153e96042e6873dc45fcb0627ea82e47
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782982"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438924"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu web fait partie des fonctionnalités de [protection web](web-protection-overview.md) dans Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+## <a name="what-is-web-content-filtering"></a>Qu’est-ce que le filtrage de contenu web ?
+
+Le filtrage de contenu web fait partie des fonctionnalités de [protection web](web-protection-overview.md) dans Microsoft Defender pour point de terminaison et Microsoft Defender pour les PME. Le filtrage de contenu web permet à votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites Web (même s’ils ne sont pas malveillants) peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies entre vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs des groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous collectez des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs verront une notification de blocage si un élément de la page qu’ils consultent effectue des appels à une ressource bloquée.
 
-Le filtrage de contenu web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et Network Protection (Chrome, Firefox, Brave et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section des prérequis.
+Le filtrage de contenu web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et Network Protection (Chrome, Firefox, Brave et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section [des prérequis](#prerequisites) .
 
 ## <a name="benefits-of-web-content-filtering"></a>Avantages du filtrage de contenu web
 
 - Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent localement ou en déplacement.
-
-- Votre équipe de sécurité peut déployer facilement des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
-
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
+- Si vous utilisez Defender pour point de terminaison, votre équipe de sécurité peut facilement déployer des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
+- Si vous utilisez Defender entreprise, vous pouvez définir une stratégie de filtrage de contenu web qui sera appliquée à tous les utilisateurs. 
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
-Avant d’essayer cette fonctionnalité, veillez à respecter les exigences suivantes :
+Avant d’essayer cette fonctionnalité, veillez à respecter les exigences décrites dans le tableau suivant :
 
-- Votre abonnement comprend l’une des options suivantes : Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 ou Microsoft Defender pour point de terminaison licence autonome. 
-
-- Vous avez accès à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>.
-
-- Les appareils de votre organisation exécutent Windows 10 mise à jour anniversaire (version 1607) ou ultérieure, ou Windows 11 avec les [dernières mises à jour antivirus/anti-programme malveillant](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-- Windows Defender SmartScreen et la protection réseau sont activées sur les appareils de votre organisation.
+| Conditions requises | Description |
+|:---|:---|
+| Abonnement | Votre abonnement doit inclure l’un des éléments suivants :<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Sécurité<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender pour point de terminaison plan 1 ou plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md) |
+| Accès au portail | Vous devez avoir accès au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>. |
+| Système d’exploitation | Les appareils de votre organisation doivent exécuter l’un des systèmes d’exploitation suivants avec les [dernières mises à jour antivirus/anti-programme malveillant](manage-updates-baselines-microsoft-defender-antivirus.md) : <br/>- Windows 11<br/>- mise à jour anniversaire Windows 10 (version 1607) ou ultérieure |
+| Protection associée | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) et [la protection réseau](network-protection.md) doivent être activées sur les appareils de votre organisation. |
 
 ## <a name="data-handling"></a>Traitement des données
 
@@ -66,7 +67,13 @@ Les données sont stockées dans la région sélectionnée dans le cadre de vos 
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans la navigation de gauche dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>, sélectionnez **Paramètres** \> Points de **terminaison fonctionnalités avancées générales** \>  \>. Faites défiler vers le bas jusqu’à ce que vous voyiez l’entrée pour **le filtrage de contenu Web**. Basculez sur **Activer** et **enregistrer les préférences**.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et connectez-vous.
+
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> Points **de terminaison Fonctionnalités** **avancées** \> **générales**\>. 
+
+3. Faites défiler vers le bas jusqu’à ce que vous voyiez **le filtrage de contenu Web**. 
+
+4. Basculez sur **Activé**, puis **sélectionnez Enregistrer les préférences**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
@@ -169,10 +176,12 @@ Pour ajouter une nouvelle stratégie, procédez comme suit :
 
 4. Spécifiez l’étendue de la stratégie. Sélectionnez les groupes d’appareils pour spécifier où appliquer la stratégie. Seuls les appareils des groupes d’appareils sélectionnés ne peuvent pas accéder aux sites web dans les catégories sélectionnées.
 
+   > [!IMPORTANT]
+   > Si vous utilisez Defender entreprise, l’étendue ne s’applique pas. Ignorez cette étape et passez à l’étape 5.
+
 5. Passez en revue le résumé et enregistrez la stratégie. L’actualisation de la stratégie peut prendre jusqu’à 2 heures pour s’appliquer à vos appareils sélectionnés.
 
 > [!NOTE]
->
 > - Vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement de l’utilisateur avant de créer une stratégie de blocage.
 > - Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
 > - Le blocage de la catégorie « Uncategorized » peut entraîner des résultats inattendus et indésirables.

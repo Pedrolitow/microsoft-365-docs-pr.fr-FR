@@ -1,7 +1,7 @@
 ---
-title: Découverte et découverte de périphériques réseau gestion des vulnérabilités
+title: Découverte et gestion des vulnérabilités d’appareils réseau
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d’exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
-keywords: périphériques réseau, détection des vulnérabilités des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
+keywords: appareils réseau, détection des vulnérabilités des appareils réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,76 +17,76 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f5c2f1c7c73f150c02192fa7e275a07b12c64c79
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468774"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438375"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
+# <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et gestion des vulnérabilités d’appareils réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
-> [Le blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \(sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le 13/04/2021 \) fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de terminaison. Cet article fournit une vue d’ensemble du  défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
+> Le blog \(sur [la découverte des appareils réseau et les évaluations des vulnérabilités](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) publié le 13-04/2021\) fournit des insights sur les nouvelles fonctionnalités de **découverte d’appareils réseau** dans Defender pour point de terminaison. Cet article fournit une vue d’ensemble du défi que la **découverte d’appareils réseau** est conçue pour résoudre, ainsi que des informations détaillées sur la prise en main de ces nouvelles fonctionnalités.
 
-Les fonctionnalités de découverte de réseau sont disponibles dans la section **Inventaire** des appareils du portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender et</a> Microsoft 365 Defender consoles.
+Les fonctionnalités de découverte du réseau sont disponibles dans la section **Inventaire des appareils** du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et des consoles Microsoft 365 Defender.
 
-Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités Gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.
+Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses périodiques authentifiées des appareils réseau préconfigurés. Une fois découvertes, les fonctionnalités de Gestion des menaces et des vulnérabilités de Defender pour point de terminaison fournissent des workflows intégrés pour sécuriser les commutateurs, routeurs, contrôleurs WLAN, pare-feu et passerelles VPN détectés.
 
-Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
+Une fois que les appareils réseau sont découverts et classifiés, les administrateurs de sécurité peuvent recevoir les dernières recommandations de sécurité et examiner les vulnérabilités récemment découvertes sur les appareils réseau déployés au sein de leur organisation.
 
 ## <a name="approach"></a>Approche
 
-Les périphériques réseau ne sont pas gérés en tant que points de terminaison standard, car Defender pour point de terminaison ne comprend pas de capteur intégré aux périphériques réseau eux-mêmes. Ces types d’appareils nécessitent une approche sans agent dans laquelle une analyse à distance obtient les informations nécessaires des appareils. Selon la topologie et les caractéristiques du réseau, un ou plusieurs appareils intégrés à Microsoft Defender pour le point de terminaison effectueront des analyses authentifiées des périphériques réseau à l’aide de SNMP (lecture seule).
+Les appareils réseau ne sont pas gérés en tant que points de terminaison standard, car Defender pour point de terminaison n’a pas de capteur intégré aux appareils réseau eux-mêmes. Ces types d’appareils nécessitent une approche sans agent dans laquelle une analyse à distance obtient les informations nécessaires auprès des appareils. Selon la topologie et les caractéristiques du réseau, un seul appareil ou quelques appareils intégrés à Microsoft Defender pour point de terminaison effectuent des analyses authentifiées des appareils réseau à l’aide de SNMP (en lecture seule).
 
 Il y aura deux types d’appareils à garder à l’esprit :
 
-- **Périphérique d’évaluation** : appareil déjà intégré que vous utiliserez pour analyser les périphériques réseau.
-- **Périphériques réseau** : les périphériques réseau que vous prévoyez d’analyser et d’intégrer.
+- **Appareil d’évaluation** : appareil déjà intégré que vous utiliserez pour analyser les appareils réseau.
+- **Appareils réseau** : appareils réseau que vous envisagez d’analyser et d’intégrer.
 
-### <a name="vulnerability-management-for-network-devices"></a>Gestion des vulnérabilités pour les périphériques réseau
+### <a name="vulnerability-management-for-network-devices"></a>Gestion des vulnérabilités pour les appareils réseau
 
-Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
+Une fois que les appareils réseau sont découverts et classifiés, les administrateurs de sécurité peuvent recevoir les dernières recommandations de sécurité et examiner les vulnérabilités récemment découvertes sur les appareils réseau déployés au sein de leur organisation.
 
 ## <a name="operating-systems-that-are-supported"></a>Systèmes d’exploitation pris en charge
 
 Les systèmes d’exploitation suivants sont actuellement pris en charge :
 
 - Cisco IOS, IOS-XE, NX-OS
-- Juniper JUNIPERS
+- Juniper JUNOS
 - HPE ArubaOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
 
-D’autres fournisseurs de réseaux et systèmes d’exploitation seront ajoutés au fil du temps, en fonction des données recueillies à partir de l’utilisation des clients. Par conséquent, vous êtes encouragé à configurer tous vos périphériques réseau, même s’ils ne sont pas spécifiés dans cette liste.
+D’autres fournisseurs de mise en réseau et système d’exploitation seront ajoutés au fil du temps, en fonction des données collectées à partir de l’utilisation des clients. Par conséquent, vous êtes invité à configurer tous vos appareils réseau, même s’ils ne sont pas spécifiés dans cette liste.
 
 ## <a name="how-to-get-started"></a>Prise en main
 
 La première étape consiste à sélectionner un appareil qui effectuera les analyses réseau authentifiées.
 
-1. Décidez d’un appareil intégré Defender for Endpoint (client ou serveur) qui dispose d’une connexion réseau au port de gestion pour les périphériques réseau que vous prévoyez d’analyser.
+1. Choisissez un appareil intégré Defender pour point de terminaison (client ou serveur) qui dispose d’une connexion réseau au port de gestion pour les appareils réseau que vous envisagez d’analyser.
 
-2. Le trafic SNMP entre le périphérique d’évaluation Defender for Endpoint et les périphériques réseau ciblés doit être autorisé (par exemple, par le pare-feu).
+2. Le trafic SNMP entre l’appareil d’évaluation Defender pour point de terminaison et les périphériques réseau ciblés doit être autorisé (par exemple, par le pare-feu).
 
-3. Déterminez les périphériques réseau à évaluer pour les vulnérabilités (par exemple, un commutateur Cisco ou un pare-feu Palo Alto Networks).
+3. Déterminez les appareils réseau qui seront évalués pour les vulnérabilités (par exemple, un commutateur Cisco ou un pare-feu Palo Alto Networks).
 
-4. Assurez-vous que le SNMP en lecture seule est activé sur tous les périphériques réseau configurés pour permettre au périphérique d’évaluation Defender for Endpoint d’interroger les périphériques réseau configurés. « Écriture SNMP » n’est pas nécessaire pour la fonctionnalité appropriée de cette fonctionnalité.
+4. Assurez-vous que SNMP en lecture seule est activé sur tous les appareils réseau configurés pour permettre à l’appareil d’évaluation Defender pour point de terminaison d’interroger les appareils réseau configurés. « Écriture SNMP » n’est pas nécessaire pour la fonctionnalité appropriée de cette fonctionnalité.
 
-5. Obtenez les adresses IP des périphériques réseau à scanner (ou les sous-réseaux où ces périphériques sont déployés).
+5. Obtenez les adresses IP des appareils réseau à analyser (ou les sous-réseaux où ces appareils sont déployés).
 
-6. Obtenez les informations d’identification SNMP des périphériques réseau (par exemple : Community String, noAuthNoPriv, authNoPriv, authPriv). Vous devez fournir les informations d’identification lors de la configuration d’un nouveau travail d’évaluation.
+6. Obtenez les informations d’identification SNMP des appareils réseau (par exemple : Community String, noAuthNoPriv, authNoPriv, authPriv). Vous devrez fournir les informations d’identification lors de la configuration d’un nouveau travail d’évaluation.
 
-7. Configuration du client proxy : aucune configuration supplémentaire n’est requise autre que la configuration requise pour le proxy d’appareil Defender for Endpoint.
+7. Configuration du client proxy : aucune configuration supplémentaire n’est requise autre que les exigences de proxy d’appareil Defender pour point de terminaison.
 
-8. Pour permettre à l’analyseur réseau d’être authentifié et de fonctionner correctement, il est essentiel d’ajouter les domaines/URL suivants :
+8. Pour permettre au scanneur réseau d’être authentifié et de fonctionner correctement, il est essentiel d’ajouter les domaines/URL suivants :
 
     - login.windows.net
     - \*.security.microsoft.com
@@ -94,25 +94,28 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
     - \*.blob.core.windows.net/networkscannerstable/\*
 
     > [!NOTE]
-    > Toutes les URL ne sont pas spécifiées dans la liste documentée defender pour point de terminaison de collecte de données autorisées.
+    > Toutes les URL ne sont pas spécifiées dans la liste documentée Defender pour point de terminaison de la collecte de données autorisée.
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : **Gérer les paramètres de sécurité dans Defender**. Vous pouvez trouver l’autorisation en **vous Paramètres** \> **rôles.** Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles](user-roles.md).
+Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : **Gérer les paramètres de sécurité dans Defender**. Vous pouvez trouver l’autorisation en accédant à **Paramètres** \> **Rôles**. Pour plus d’informations, consultez [Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
-1. Go to **Microsoft 365 security** \> **Paramètres** \> **Endpoints** \> **Assessment jobs** (under **Network assessments**).
-    1. Dans le portail Microsoft 365 Defender, allez à la page Paramètres > travaux d’évaluation.
+1. Accédez à **Microsoft 365 tâches de sécurité** \> **Paramètres** \> **d’évaluation des** points de **terminaison** \> (sous **Évaluations réseau**).
+    1. Dans le portail Microsoft 365 Defender, accédez à Paramètres > page Travaux d’évaluation.
 
-2. Téléchargez le scanneur réseau et installez-le sur le périphérique d’évaluation Defender for Endpoint désigné.
+2. Téléchargez le scanneur réseau et installez-le sur l’appareil d’évaluation Defender pour point de terminaison désigné.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="Bouton Télécharger le scanneur" lightbox="images/assessment-jobs-download-scanner.png":::
 
-## <a name="network-scanner-installation--registration"></a>Inscription de l’installation du scanneur & réseau
+## <a name="network-scanner-installation--registration"></a>Installation du scanneur réseau & inscription
 
-Le processus de signature peut être effectué sur l’appareil d’évaluation désigné lui-même ou sur tout autre appareil (par exemple, votre appareil client personnel).
+Le processus de connexion peut être effectué sur l’appareil d’évaluation désigné lui-même ou sur tout autre appareil (par exemple, votre appareil client personnel).
+
+> [!NOTE]
+> Le compte avec lequel l’utilisateur se connecte et l’appareil utilisé pour terminer le processus de connexion doivent se trouver dans le même locataire que celui avec lequel l’appareil est intégré à Microsoft Defender pour point de terminaison.
 
 Pour terminer le processus d’inscription du scanneur réseau :
 
@@ -121,84 +124,84 @@ Pour terminer le processus d’inscription du scanneur réseau :
     > [!NOTE]
     > Vous devrez peut-être modifier les paramètres d’invite de commandes pour pouvoir copier l’URL.
 
-2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft qui dispose de l’autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans Defender ».
+2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft disposant de l’autorisation Defender pour point de terminaison appelée « Gérer les paramètres de sécurité dans Defender ».
 
-3. Lorsque vous avez terminé, vous devriez voir un message vous confirmant que vous vous êtes déjà inscrit.
+3. Lorsque vous avez terminé, vous devriez voir un message confirmant que vous êtes connecté.
 
 ## <a name="configure-a-new-assessment-job"></a>Configurer un nouveau travail d’évaluation
 
-Dans la page Travaux **d’Paramètres**, **sélectionnez Ajouter un travail d’évaluation réseau**. Suivez le processus de mise en place pour choisir les périphériques réseau à scanner régulièrement et ajoutés à l’inventaire des appareils.
+Dans la page Travaux d’évaluation dans **Paramètres**, sélectionnez **Ajouter un travail d’évaluation réseau**. Suivez le processus de configuration pour choisir les appareils réseau à analyser régulièrement et à ajouter à l’inventaire des appareils.
 
-Pour éviter la duplication des appareils dans l’inventaire des périphériques réseau, assurez-vous que chaque adresse IP n’est configurée qu’une seule fois sur plusieurs périphériques d’évaluation.
+Pour empêcher la duplication d’appareils dans l’inventaire des appareils réseau, assurez-vous que chaque adresse IP n’est configurée qu’une seule fois sur plusieurs appareils d’évaluation.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/assessment-jobs-add.png" alt-text="Bouton Ajouter un travail d’évaluation réseau" lightbox="images/assessment-jobs-add.png":::
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="Bouton Ajouter une tâche d’évaluation réseau" lightbox="images/assessment-jobs-add.png":::
 
-Ajout des étapes d’un travail d’évaluation réseau :
+Ajout d’une étape de travail d’évaluation réseau :
 
-1. Choisissez un nom de « travail d’évaluation » et le « périphérique d’évaluation » sur lequel le scanneur réseau a été installé. Cet appareil effectue les analyses authentifiées périodiques.
+1. Choisissez le nom du travail d’évaluation et l’appareil d’évaluation sur lequel le scanneur réseau a été installé. Cet appareil effectue les analyses périodiques authentifiées.
 
-2. Ajoutez les adresses IP des périphériques réseau cibles à scanner (ou les sous-réseaux où ces périphériques sont déployés).
+2. Ajoutez les adresses IP des appareils réseau cibles à analyser (ou les sous-réseaux où ces appareils sont déployés).
 
-3. Ajoutez les informations d’identification SNMP requises des périphériques réseau cibles.
+3. Ajoutez les informations d’identification SNMP requises des appareils réseau cibles.
 
 4. Enregistrez le travail d’évaluation réseau nouvellement configuré pour démarrer l’analyse réseau périodique.
 
-### <a name="scan-and-add-network-devices"></a>Analyser et ajouter des périphériques réseau
+### <a name="scan-and-add-network-devices"></a>Analyser et ajouter des appareils réseau
 
-Pendant le processus de mise en place, vous pouvez effectuer une analyse de test à une seule fois pour vérifier que :
+Pendant le processus de configuration, vous pouvez effectuer une analyse de test unique pour vérifier que :
 
-- Il existe une connectivité entre le périphérique d’évaluation Defender for Endpoint et les périphériques réseau cibles configurés.
+- Il existe une connectivité entre l’appareil d’évaluation Defender pour point de terminaison et les appareils réseau cibles configurés.
 - Les informations d’identification SNMP configurées sont correctes.
 
-Chaque périphérique d’évaluation peut prendre en charge jusqu’à 1 500 adresses IP réussies. Par exemple, si vous analysez 10 sous-réseaux différents où seules 100 adresses IP retournent des résultats positifs, vous pourrez analyser 1 400 adresses IP supplémentaires à partir d’autres sous-réseaux sur le même périphérique d’évaluation.
+Chaque appareil d’évaluation peut prendre en charge jusqu’à 1 500 analyses d’adresses IP réussies. Par exemple, si vous analysez 10 sous-réseaux différents où seules 100 adresses IP retournent des résultats réussis, vous pouvez analyser 1 400 adresses IP supplémentaires à partir d’autres sous-réseaux sur le même appareil d’évaluation.
 
-S’il existe plusieurs plages d’adresses IP/sous-réseaux à analyser, les résultats de l’analyse de test prennent plusieurs minutes pour s’afficher. Une analyse de test sera disponible pour 1 024 adresses au plus.
+S’il existe plusieurs plages d’adresses IP/sous-réseaux à analyser, l’affichage des résultats de l’analyse de test prend plusieurs minutes. Une analyse de test sera disponible pour jusqu’à 1 024 adresses.
 
-Une fois les résultats obtenus, vous pouvez choisir les appareils qui seront inclus dans l’analyse périodique. Si vous ignorez l’affichage des résultats de l’analyse, toutes les adresses IP configurées sont ajoutées au travail d’évaluation réseau (quelle que soit la réponse de l’appareil). Les résultats de l’analyse peuvent également être exportés.
+Une fois les résultats affichés, vous pouvez choisir les appareils qui seront inclus dans l’analyse périodique. Si vous ignorez l’affichage des résultats de l’analyse, toutes les adresses IP configurées sont ajoutées au travail d’évaluation réseau (quelle que soit la réponse de l’appareil). Les résultats de l’analyse peuvent également être exportés.
 
 ## <a name="device-inventory"></a>Inventaire des appareils
 
-Les appareils nouvellement découverts s’afficheront sous le nouvel onglet **Périphériques** réseau dans la page **Inventaire des** appareils. L’ajout d’un travail d’évaluation peut prendre jusqu’à deux heures jusqu’à ce que les appareils soient mis à jour.
+Les appareils nouvellement découverts s’affichent sous le nouvel onglet **Appareils réseau** de la page **Inventaire des** appareils. L’ajout d’un travail d’évaluation peut prendre jusqu’à deux heures avant que les appareils soient mis à jour.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="Section Périphériques réseau dans l’inventaire des appareils" lightbox="images/assessment-jobs-device-inventory.png":::
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="Section Appareils réseau dans l’inventaire des appareils" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="network-scanner-installation-has-failed"></a>Échec de l’installation du scanneur réseau
 
-Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos paramètres de pare-feu. Assurez-vous également que les paramètres proxy sont configurés comme décrit dans [Configurer les paramètres de proxy](configure-proxy-internet.md) d’appareil et de connectivité Internet.
+Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans vos paramètres de pare-feu. Vérifiez également que les paramètres de proxy sont configurés comme décrit dans [Configurer le proxy d’appareil et les paramètres de connectivité Internet](configure-proxy-internet.md).
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La page Microsoft.com/devicelogin web de l’application n’a pas été
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La page web Microsoft.com/devicelogin n’apparaît pas
 
-Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans votre pare-feu. Assurez-vous également que les paramètres proxy sont configurés comme décrit dans [Configurer les paramètres de proxy](configure-proxy-internet.md) d’appareil et de connectivité Internet.
+Vérifiez que les URL requises sont ajoutées aux domaines autorisés dans votre pare-feu. Vérifiez également que les paramètres de proxy sont configurés comme décrit dans [Configurer le proxy d’appareil et les paramètres de connectivité Internet](configure-proxy-internet.md).
 
-### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>Les périphériques réseau ne sont pas affichés dans l’inventaire des appareils après plusieurs heures
+### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>Les appareils réseau ne sont pas affichés dans l’inventaire des appareils après plusieurs heures
 
-Les résultats de l’analyse doivent être mis à jour quelques heures après l’analyse initiale qui a eu lieu après la fin de la configuration du travail d’évaluation.
+Les résultats de l’analyse doivent être mis à jour quelques heures après l’analyse initiale qui a eu lieu après la configuration du travail d’évaluation.
 
-Si les appareils ne sont toujours pas affichés, vérifiez que le service « MdatpNetworkScanService » est en cours d’exécution sur vos appareils d’évaluation, sur lesquels vous avez installé le scanneur réseau, et effectuez une « analyse d’exécution » dans la configuration du travail d’évaluation approprié.
+Si les appareils ne sont toujours pas affichés, vérifiez que le service « MdatpNetworkScanService » s’exécute sur vos appareils d’évaluation, sur lesquels vous avez installé le scanneur réseau, et effectuez une « analyse d’exécution » dans la configuration du travail d’évaluation approprié.
 
 Si vous n’obtenez toujours pas de résultats après 5 minutes, redémarrez le service.
 
-### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>L’heure de la dernière vue des appareils est plus de 24 heures
+### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>L’heure de la dernière consultation des appareils est supérieure à 24 heures
 
-Vérifier que le scanneur s’exécute correctement. Ensuite, allez à la définition d’analyse et sélectionnez « Exécuter le test ». Vérifiez quels messages d’erreur sont retournés à partir des adresses IP pertinentes.
+Vérifiez que le scanneur s’exécute correctement. Accédez ensuite à la définition d’analyse et sélectionnez « Exécuter le test ». Vérifiez les messages d’erreur renvoyés par les adresses IP appropriées.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Autorisation utilisateur Gestion des menaces et des vulnérabilités requise
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>Autorisation utilisateur requise Gestion des menaces et des vulnérabilités
 
-L’inscription s’est terminée par une erreur : « Il semble que vous n’avez pas les autorisations suffisantes pour ajouter un nouvel agent. L’autorisation requise est « Gérer les paramètres de sécurité dans Defender ». »
+L’inscription s’est terminée par une erreur : « Il semble que vous ne disposez pas des autorisations suffisantes pour ajouter un nouvel agent. L’autorisation requise est « Gérer les paramètres de sécurité dans Defender ». »
 
 Appuyez sur n’importe quelle touche pour quitter.
 
 Demandez à votre administrateur système de vous attribuer les autorisations requises. Vous pouvez également demander à un autre membre approprié de vous aider dans le processus de connexion en lui fournissant le code de connexion et le lien.
 
-### <a name="registration-process-fails-using-provided-link-in-the-command-line-in-registration-process"></a>Échec du processus d’inscription à l’aide du lien fourni dans la ligne de commande du processus d’inscription
+### <a name="registration-process-fails-using-provided-link-in-the-command-line-in-registration-process"></a>Échec du processus d’inscription à l’aide du lien fourni dans la ligne de commande dans le processus d’inscription
 
 Essayez un autre navigateur ou copiez le lien de connexion et le code sur un autre appareil.
 
-### <a name="text-too-small-or-cant-copy-text-from-command-line"></a>Texte trop petit ou ne peut pas copier le texte à partir d’une ligne de commande
+### <a name="text-too-small-or-cant-copy-text-from-command-line"></a>Texte trop petit ou impossible à copier à partir de la ligne de commande
 
 Modifiez les paramètres de ligne de commande sur votre appareil pour autoriser la copie et modifier la taille du texte.
 

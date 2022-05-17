@@ -19,33 +19,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Découvrez comment réinitialiser le mot de passe et envoyer un message électronique à un nouvel Microsoft 365 utilisateur.
-ms.openlocfilehash: 83b1dd5a82189947dae42a2c659032f97d17a256
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: 'Renvoyez l’e-mail de notification à un nouvel utilisateur dans Microsoft 365 en réinitialisant le mot de passe de l’utilisateur s’il n’a pas reçu l’e-mail d’origine avec son nouveau mot de passe. '
+ms.openlocfilehash: 540b419d3f6452d6ca93e9e9424a1a28c0ecdfea
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530174"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436292"
 ---
-# <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur Microsoft 365 - Aide de l’administrateur
 
-Cet article explique comment renvoyer l’e-mail de notification à un nouvel utilisateur dans Office 365. Cela peut se produire lorsque vous créez un utilisateur et qu’il ne reçoit pas de courrier électronique avec son nouveau mot de passe. Pour ce faire, vous devez réinitialiser le mot de passe de l’utilisateur.
+Cet article explique comment renvoyer l’e-mail de notification à un nouvel utilisateur dans Office 365. Cela peut se produire lorsque vous créez un utilisateur et qu’il ne reçoit pas d’e-mail avec son nouveau mot de passe. Pour ce faire, réinitialisez le mot de passe de l’utilisateur.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md).
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble du Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md).
 
-Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
+Vous devez être [administrateur général ou administrateur de mot de passe](about-admin-roles.md) pour effectuer ces étapes.
 
 ## <a name="resend-user-password"></a>Renvoyer le mot de passe utilisateur
   
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis **réinitialisez le mot de passe.**
+2. Dans la page **Utilisateurs actifs** , sélectionnez l’utilisateur, puis **sélectionnez Réinitialiser le mot de passe**.
 
-3. Suivez les instructions de la **page** Réinitialiser le mot de passe pour générer automatiquement un mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser.**  
+3. Suivez les instructions de la page **Réinitialiser le mot de passe** pour générer automatiquement un nouveau mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser**.  
 
-4. Entrez une adresse de messagerie que l’utilisateur peut accéder pour recevoir le nouveau mot de passe, puis suivez-le pour vous assurer qu’il l’a bien.
+4. Entrez une adresse e-mail à laquelle l’utilisateur peut accéder pour recevoir le nouveau mot de passe, puis effectuez un suivi avec lui pour vous assurer qu’il l’a obtenu.
 
 ## <a name="related-content"></a>Contenu connexe
 

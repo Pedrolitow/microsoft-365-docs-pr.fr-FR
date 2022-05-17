@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive Microsoft 365, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: 1e518bda3d11ff17c4ce5aa1ebb6997f8bc09c4d
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363130"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438443"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
@@ -38,7 +38,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir une d
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Avant de supprimer une boîte aux lettres inactive
 
-- Vous devez utiliser Exchange Online PowerShell pour supprimer une conservation des litiges d’une boîte aux lettres inactive. Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE). Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Vous devez utiliser Exchange Online PowerShell pour supprimer les conservations d’une boîte aux lettres inactive. Vous ne pouvez pas utiliser le centre d’administration Exchange (EAC) ni le portail de conformité Microsoft Purview pour ces procédures. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Vous pouvez copier le contenu d'une boîte aux lettres inactive vers une autre boîte aux lettres avant de supprimer la conservation et de supprimer une boîte aux lettres inactive. Pour plus d’informations, consultez [Restaurer une boîte aux lettres inactive dans Office 365](restore-an-inactive-mailbox.md).
 
@@ -50,7 +50,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir une d
 
 Comme indiqué précédemment, une stratégie de conservation des litiges, de conservation In-Place ou de rétention peut être placée sur une boîte aux lettres inactive. La première étape consiste à identifier les blocages sur une boîte aux lettres inactive.
   
-Exécutez la commande suivante pour afficher les informations de blocage pour toutes les boîtes aux lettres inactives dans votre organisation.
+[Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), puis exécutez la commande suivante pour afficher les informations de conservation pour toutes les boîtes aux lettres inactives de votre organisation.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -83,7 +83,7 @@ Après avoir identifié le type de blocage placé sur la boîte aux lettres inac
   
 ### <a name="remove-a-litigation-hold"></a>Supprimer une suspension pour litige
 
-Comme indiqué précédemment, vous devez utiliser Windows PowerShell pour supprimer une suspension pour litige d'une boîte aux lettres inactive. Vous ne pouvez pas utiliser le CAE. Exécutez la commande suivante pour supprimer une suspension pour litige.
+Exécutez la commande PowerShell suivante pour supprimer une conservation des litiges.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -102,7 +102,7 @@ La procédure de suppression d’une boîte aux lettres inactive d’une straté
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>Supprimer une boîte aux lettres inactive d’une stratégie de rétention à l’échelle de l’organisation
 
-Exécutez la commande suivante dans Exchange Online PowerShell pour exclure une boîte aux lettres inactive d’une stratégie de rétention à l’échelle de l’organisation.
+Exécutez la commande PowerShell suivante pour exclure une boîte aux lettres inactive d’une stratégie de rétention à l’échelle de l’organisation.
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -110,7 +110,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 Pour plus d’informations sur l’identification des stratégies de rétention à l’échelle de l’organisation appliquées à une boîte aux lettres inactive et l’obtention du GUID pour une stratégie de rétention, consultez la section « Get-OrganizationConfig » dans [Comment identifier le type de conservation placé sur une boîte aux lettres](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig).
 
-Vous pouvez également exécuter la commande suivante pour supprimer la boîte aux lettres inactive de toutes les stratégies à l’échelle de l’organisation :
+Vous pouvez également exécuter la commande PowerShell suivante pour supprimer la boîte aux lettres inactive de toutes les stratégies à l’échelle de l’organisation :
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -118,7 +118,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>Supprimer une boîte aux lettres inactive d’une stratégie de rétention d’emplacement spécifique
 
-Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) pour supprimer une boîte aux lettres inactive d’une stratégie de rétention explicite.
+Utilisez [le Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) pour supprimer une boîte aux lettres inactive d’une stratégie de rétention explicite :
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>

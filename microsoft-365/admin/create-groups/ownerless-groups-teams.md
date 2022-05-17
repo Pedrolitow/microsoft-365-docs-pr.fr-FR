@@ -21,24 +21,27 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment inviter automatiquement des membres à devenir propriétaires d’un groupe de Microsoft 365 sans propriétaire ou d’une équipe dans Microsoft Teams.
-ms.openlocfilehash: d578e6825ea65177138594034807244afac176c7
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 06b5b4ea125ef19e7197d4703f2a055331ab54ef
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836444"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435682"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Gérer des groupes et des équipes sans propriétaire Microsoft 365
 
 Une équipe dans Microsoft Teams ou un groupe Microsoft 365 peut devenir sans propriétaire si le compte d’un propriétaire est supprimé ou désactivé dans Microsoft 365. Les groupes et les équipes nécessitent qu’un propriétaire ajoute ou supprime des membres et modifie les paramètres de groupe.
 
-Vous pouvez créer une stratégie qui demande automatiquement aux membres les plus actifs ou à un groupe ou une équipe sans propriétaire s’ils acceptent la propriété. Lorsqu’un membre accepte l’invitation à devenir propriétaire, l’action est consignée dans le journal d’audit du Centre de conformité. Les clients ne sont jamais invités à être propriétaires.
+Vous pouvez créer une stratégie qui demande automatiquement aux membres les plus actifs ou à un groupe ou une équipe sans propriétaire s’ils acceptent la propriété. Lorsqu’un membre accepte l’invitation à devenir propriétaire, l’action est consignée dans le journal d’audit du portail de conformité. Les clients ne sont jamais invités à être propriétaires.
 
 Lors de la création de la stratégie, vous pouvez spécifier :
 - Si vous souhaitez limiter qui peut être invité à être propriétaire en spécifiant un groupe de sécurité
 - Adresse de l’expéditeur des notifications
 - Nombre de semaines pendant lesquelles les notifications seront envoyées
 - Quels groupes ou équipes font partie de la stratégie
+
+> [!Note]
+> L’utilisation d’un groupe de sécurité pour limiter qui peut être invité à être propriétaire nécessite que vous possédiez une licence Azure AD Premium pour chaque membre Microsoft 365 groupe de votre organisation.
 
 Pour définir une stratégie de groupe ou d’équipe sans propriétaire
 

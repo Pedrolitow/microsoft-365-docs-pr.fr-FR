@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès aux services Microsoft 365'
+title: 'Étape 1 : empêcher un ancien employé de se connecter et de bloquer l’accès aux services Microsoft 365'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,54 +25,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Empêcher un ancien employé de se connecter et bloquer l’accès aux services Microsoft 365.
-ms.openlocfilehash: abd6a6f47952b5af190b08f1ecae337840eaa312
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Les administrateurs généraux peuvent empêcher un ancien employé de se connecter et bloquer son accès aux services Microsoft 365.
+ms.openlocfilehash: eec436a182f5e065f445167dea38fe99390ca105
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315958"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436644"
 ---
-# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès aux services Microsoft 365
+# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et de bloquer l’accès aux services Microsoft 365
 
-Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, vous devez réinitialiser son mot de passe. Dans cette étape, forcez la sortie de l’utilisateur de Microsoft 365.
+Si vous devez empêcher immédiatement l’accès à la connexion d’un utilisateur, vous devez réinitialiser son mot de passe. Dans cette étape, forcez une déconnexion de l’utilisateur à partir de Microsoft 365.
 
 > [!NOTE]
-> Vous devez être un administrateur général pour lancer la signature pour d’autres administrateurs. Pour les utilisateurs non administrateurs, vous pouvez utiliser un administrateur utilisateur ou un utilisateur d’administrateur du service d’aide pour effectuer cette action. [En savoir plus sur les rôles d’administrateur](about-admin-roles.md)
+> Vous devez être un administrateur général pour lancer la déconnexion pour d’autres administrateurs. Pour les utilisateurs non administrateurs, vous pouvez utiliser un administrateur d’utilisateurs ou un utilisateur administrateur du support technique pour effectuer cette action. [En savoir plus sur les rôles d’administrateur](about-admin-roles.md)
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez la case à côté du nom de l’utilisateur, puis sélectionnez **Réinitialiser le mot de passe**.
-3. Entrez un nouveau mot de passe, puis sélectionnez **Réinitialiser**. (Ne leur envoyez pas de message.)
-4. Sélectionnez le nom de l’utilisateur pour aller dans le volet de propriétés,  puis sous l’onglet Compte, sélectionnez Se sortir **de toutes les sessions**.
+2. Sélectionnez la zone en regard du nom de l’utilisateur, puis sélectionnez **Réinitialiser le mot de passe**.
+3. Entrez un nouveau mot de passe, puis **sélectionnez Réinitialiser**. (Ne l’envoyez pas à eux.)
+4. Sélectionnez le nom de l’utilisateur pour accéder à son volet propriétés, puis sous l’onglet **Compte** , sélectionnez **Se déconnecter de toutes les sessions**.
 
-Dans un délai d’une heure (ou après avoir quitté la page Microsoft 365 actuelle), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont ils sortent de leur page web actuelle.
+Dans l’heure - ou après avoir quitté la page Microsoft 365 actuelle sur laquelle ils se trouvent - ils sont invités à se reconnecter. Un jeton d’accès est valide pendant une heure. La chronologie dépend donc du temps restant sur ce jeton et de la sortie de sa page web actuelle.
   
 > [!IMPORTANT]
-> Si l’utilisateur se trouve dans Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de l’application en cliquant dans sa boîte aux lettres. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
+> Si l’utilisateur est dans Outlook sur le web, il suffit de cliquer dans sa boîte aux lettres, il se peut qu’il ne soit pas immédiatement exclu. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la déconnexion est lancée.
   
-Pour utiliser PowerShell pour décrémenter un utilisateur immédiatement, consultez l’cmdlet [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) .
+Pour utiliser PowerShell pour déconnecter immédiatement un utilisateur, consultez l’applet de commande [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) .
   
 Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un utilisateur au courrier électronique, voir [Ce que vous devez savoir sur la clôture d'une session de messagerie d'un employé](remove-former-employee-step-7.md#what-you-need-to-know-about-terminating-an-employees-email-session).
 
 ## <a name="block-a-former-employees-access-to-microsoft-365-services"></a>Bloquer l’accès d’un ancien employé aux services Microsoft 365
 
 > [!IMPORTANT]
- > Le blocage d’un compte peut prendre jusqu’à 24 heures pour prendre effet. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
+ > Le blocage d’un compte peut prendre jusqu’à 24 heures. Si vous devez empêcher immédiatement l’accès à la connexion d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole Bloquer **cet utilisateur**.
-3. **Sélectionnez Bloquer la signature de l’utilisateur**, puis sélectionnez **Enregistrer**.
+2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole **pour Bloquer cet utilisateur**.
+3. Sélectionnez **Empêcher l’utilisateur de se connecter**, puis **sélectionnez Enregistrer**.
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquer l'accès d'un ancien employé aux courriers (Exchange Online)
 
-Si vous avez du courrier électronique dans le cadre de votre abonnement Microsoft 365, connectez-vous au Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> et suivez ces étapes pour empêcher votre ancien employé d’accéder à son courrier électronique.
+Si vous avez un e-mail dans le cadre de votre abonnement Microsoft 365, connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> et suivez ces étapes pour empêcher votre ancien employé d’accéder à son courrier électronique.
   
-1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
-1. Sélectionnez la boîte aux lettres utilisateur dans la liste, puis, dans le volet d’informations *(à* droite), sélectionnez Gérer les **paramètres** des applications de messagerie sous Applications **de messagerie**. Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync),** **Outlook sur le web**, **Bureau Outlook (MAPI),** **services web Exchange**, **POP3** et **IMAP**.
+1. Accédez au centre d’administration Exchange > boîtes <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">aux lettres destinataires</a>\>.
+1. Sélectionnez la boîte aux lettres de l’utilisateur dans la liste, puis, dans le *volet Détails* (à droite), sélectionnez **Gérer les paramètres des applications de messagerie** sous **Applications** de messagerie. **Désactivez** le curseur pour toutes les options ; **Mobile (Exchange ActiveSync),****Outlook sur le web**, **bureau Outlook (MAPI),** **Exchange services web**, **POP3** et **IMAP**.
 1. Cliquez sur **Enregistrer**.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center) (article)\
+[Exchange centre d’administration dans Exchange Online](/exchange/exchange-admin-center) (article)\
 
 [Restaurer un utilisateur](restore-user.md) (article)
