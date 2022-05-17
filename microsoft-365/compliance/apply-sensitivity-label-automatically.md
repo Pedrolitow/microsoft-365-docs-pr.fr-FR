@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287219"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438024"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -228,6 +228,23 @@ Spécifique au client d’étiquetage unifié Azure Information Protection :
 - Pour qu’Outlook prenne en charge l’étiquetage recommandé, vous devez commencer par configurer un [paramètre de stratégie avancé](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
 
 - Les informations sensibles peuvent être détectées dans le corps de texte dans les documents et les courriers électroniques, ainsi que dans les en-têtes et pieds de page, mais pas dans la ligne d’objet ni dans les pièces jointes du courrier électronique.
+
+### <a name="convert-your-label-settings-into-an-auto-labeling-policy"></a>Convertir vos paramètres d’étiquette en stratégie d’étiquetage automatique
+
+> [!NOTE]
+> Cette option est déployée progressivement.
+
+Si l’étiquette inclut des types d’informations sensibles pour les conditions configurées, vous verrez une option à la fin du processus de création ou de modification de l’étiquette pour créer automatiquement une stratégie d’étiquetage automatique basée sur les mêmes paramètres d’étiquetage automatique.
+
+Étant donné que les stratégies d’étiquetage automatique ne prennent pas en charge les classifieurs pouvant être formés :
+
+- Si les conditions d'étiquetage ne contiennent que des classificateurs pouvant être formés, vous ne verrez pas l'option de création automatique d'une politique d'étiquetage automatique.
+
+- Si les conditions d'étiquetage contiennent des classificateurs pouvant être formés et des types d'informations sensibles, une politique d'étiquetage automatique sera créée uniquement pour les types d'informations sensibles. 
+
+Bien qu'une stratégie d'étiquetage automatique soit automatiquement créée pour vous en remplissant automatiquement les valeurs que vous auriez dû sélectionner manuellement si vous aviez créé la stratégie à partir de zéro, vous pouvez toujours visualiser et modifier les valeurs avant qu'elles ne soient enregistrées.
+
+Par défaut, tous les emplacements pour SharePoint, OneDrive et Exchange sont inclus dans la stratégie d’étiquette automatique et, lorsque la stratégie est enregistrée, elle s’exécute en [mode simulation](#learn-about-simulation-mode). Il n’est pas possible de vérifier que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), ce qui est l’un des prérequis pour l’étiquetage automatique à appliquer au contenu dans SharePoint et OneDrive.
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange
 
