@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Configurer SharePoint Online
-ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935366"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463140"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -45,7 +45,13 @@ Avant la configuration, veillez à planifier la meilleure manière d’installer
 
 En tant qu’administrateur, vous pouvez également modifier vos paramètres sélectionnés à tout moment après la configuration, ainsi que les paramètres de gestion de la compréhension de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
-Si vous envisagez d’utiliser un environnement Platform Power personnalisé, vous devez [installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) et y [attribuer des crédits du Générateur d’IA](/power-platform/admin/capacity-add-on) avant de pouvoir créer des modèles de traitement des formulaires. Lors de l’utilisation d’un environnement personnalisé, le rôle de sécurité Créateur d’environnement doit être attribué aux créateurs de modèles et le rôle de sécurité Utilisateur de base doit être attribué aux utilisateurs de modèle. Pour plus d’informations, consultez [Attribuer un rôle de sécurité à un utilisateur](/power-platform/admin/assign-security-roles).
+### <a name="custom-power-platform-environments"></a>Environnements Power Platform personnalisés
+
+Si vous envisagez d’utiliser un environnement Platform Power personnalisé, vous devez installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement. Pour plus d’informations, consultez [Gérer les applications Dynamics 365](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) et recherchez l’application *Générateur d’IA pour Projet Cortex* dans la liste des applications Dynamics 365.
+
+Vous devez également [allouer des crédits Générateur d’IA](/power-platform/admin/capacity-add-on) à l’environnement personnalisé avant de pouvoir créer des modèles de traitement de formulaire. 
+
+Lors de l’utilisation d’un environnement personnalisé, le rôle de sécurité Créateur d’environnement doit être attribué aux créateurs de modèles et le rôle de sécurité Utilisateur de base doit être attribué aux utilisateurs de modèle. Voir [Attribuer un rôle de sécurité à un utilisateur](/power-platform/admin/assign-security-roles) pour obtenir plus d’informations.
 
 Les utilisateurs qui créent des modèles dans un [site de centre de contenu](/microsoft-365/contentunderstanding/create-a-content-center) doivent être membres du site. Les utilisateurs qui créent des modèles localement en dehors du centre de contenu doivent être propriétaires de ces sites.
 

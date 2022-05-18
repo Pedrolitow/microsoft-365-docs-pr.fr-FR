@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Ln savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: 1117471e38b430f1d7289c6aae76994ac5acd494
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: bf0fcb327b2869e21a54de22822d0d51c72e25b8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806887"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438455"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser les [étiquettes de confidentialité](sensitivity-labels.md) comme condition dans les stratégies DLP pour ces emplacements :
 
@@ -62,7 +64,7 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 |Appareils Windows 10     |éléments         |oui         |oui         |
 |MCAS (préversion) |éléments         |oui         |oui         |
 
-\* La détection DLP des pièces jointes de courrier associées à une étiquette de confidentialité est uniquement prise en charge par les types de fichier Office.
+\* La détection DLP des pièces jointes d’e-mail avec une étiquette de confidentialité est uniquement prise en charge pour les types de fichier de format Open XML basés Office.
 
 \** Les pièces jointes envoyées dans Teams au cours des conversations ou canaux de 1:1 sont chargées automatiquement sur OneDrive pour Entreprise et SharePoint. Par conséquent, si SharePoint Online ou OneDrive pour Entreprise sont inclus dans votre stratégie DLP, les pièces jointes à étiquettes envoyées dans Teams sont automatiquement incluses dans l’étendue de cette condition. Il n’est pas nécessaire de sélectionner Teams comme emplacement dans la stratégie DLP.
 

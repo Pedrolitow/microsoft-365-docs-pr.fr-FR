@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00f0471e32147f7171f60887d28386d6b7df204d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414720"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438858"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
@@ -29,6 +29,7 @@ ms.locfileid: "65414720"
 - Antivirus Microsoft Defender
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour les PME](../defender-business/index.yml)
 
 **Plateformes**
 - Windows
@@ -40,7 +41,7 @@ Microsoft Defender pour point de terminaison inclut une protection nouvelle gén
 - [Mises à jour produit et protection dédiée](manage-updates-baselines-microsoft-defender-antivirus.md) qui comprend les mises à jour liées au maintien de l’Antivirus Microsoft Defender à jour.
 
 > [!TIP]
-> La protection de nouvelle génération est incluse dans Microsoft Defender pour Endpoint Plan 1 et Plan 2. [En savoir plus sur Defender pour Endpoint Plan 1 et Plan 2](defender-endpoint-plan-1-2.md)
+> La protection de nouvelle génération est incluse dans Microsoft Defender pour Endpoint Plan 1 et Plan 2. [En savoir plus sur Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md) La protection de nouvelle génération est également incluse dans Microsoft Defender pour les PME et Microsoft 365 Business Premium. [Comparez les fonctionnalités de sécurité dans les plans de Microsoft 365 pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md).
 
 ## <a name="try-a-demo"></a>Essayez une version de démonstration !
 
