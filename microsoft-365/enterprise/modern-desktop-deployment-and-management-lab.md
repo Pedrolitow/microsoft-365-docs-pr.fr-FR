@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez où accéder aux Windows et Office Deployment Lab Kit.
-ms.openlocfilehash: 5ce9ebcdd3a36b62f74292e2b8e261928ef12043
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435344"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463162"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
@@ -114,4 +114,4 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - [Présentation de Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 pour les entreprises](https://products.office.com/business/office)
 - [Présentation de la suite Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 11 pour les entreprises](https://www.microsoft.com/windows/business)
+- [Windows pour les entreprises](https://www.microsoft.com/windows/business)
