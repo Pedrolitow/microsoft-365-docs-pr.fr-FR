@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: En savoir plus sur les étiquettes et stratégies par défaut de Protection des données Microsoft Purview pour classer et protéger le contenu sensible.
-ms.openlocfilehash: 486286780eaa3a2deedb2c3df837a93814280f39
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: a17ba3e87e219d19d8f88f413bf446664aa094a2
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286447"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444177"
 ---
 # <a name="default-labels-and-policies-to-protect-your-data"></a>Étiquettes et stratégies par défaut pour protéger vos données
 
@@ -135,9 +135,9 @@ L'étiquetage automatique côté service permet d'étiqueter les documents sensi
 
 L'étiquetage automatique côté service par défaut a la configuration suivante : 
 
-- S'il y a 1 à 9 cas de numéros de carte de crédit trouvés dans un document, appliquez l'étiquette de sensibilité **Confidentiel à** \ **Tous (sans restriction)**
+- S’il existe entre 1 et 9 instances de numéros de carte de crédit trouvés dans un document ou un e-mail, appliquez l’étiquette de confidentialité **Confidentiel** \ **Tout le monde (sans restriction)**
 
-- S'il y a 10 instances ou plus de numéros de carte de crédit trouvés dans un document ou un e-mail, recommandez à l'utilisateur d'appliquer l'étiquette de sensibilité **Confidentiel** \ **Tous les employés** 
+- S’il existe au moins 10 instances de numéros de carte de crédit dans un document ou un e-mail, appliquez l’étiquette de confidentialité **Confidentiel** \ **Tous les employés** 
 
 > [!NOTE]
 > Si nous avons détecté que vous avez publié vos propres étiquettes de sensibilité, nous vous inviterons à sélectionner l'une de vos propres étiquettes pour votre politique d'étiquetage automatique.
