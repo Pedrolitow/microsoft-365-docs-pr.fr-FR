@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cac0965ba9cd4b11280e1efd263f49137672399f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 71f704e8215265409e5cf0edbbb3324d8925b0e3
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286821"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463206"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -31,7 +31,7 @@ ms.locfileid: "65286821"
 
 Lorsque vous avez [publié](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) des étiquettes de sensibilité à partir du portail de conformité Microsoft Purview, elles commencent à apparaître dans les applications Office pour que les utilisateurs puissent classer et protéger les données lorsqu'elles sont créées ou modifiées.
 
-Utilisez les informations de cet article pour vous aider à gérer avec succès les étiquettes de confidentialité dans les applications Office. Par exemple, identifiez les versions minimales des applications dont vous avez besoin pour prendre en charge les fonctionnalités spécifiques à l’étiquetage intégré, toute information de configuration supplémentaire pour ces fonctionnalités, et comprenez les interactions avec le client d’étiquetage unifié Azure Information Protection et d’autres applications et services.
+Utilisez les informations de cet article pour vous aider à gérer avec succès les étiquettes de confidentialité dans les applications Office. Par exemple, identifiez les versions minimales des applications dont vous avez besoin pour les fonctionnalités spécifiques à l’étiquetage intégré, toute information de configuration supplémentaire pour ces fonctionnalités, et comprenez les interactions avec le client d’étiquetage unifié Azure Information Protection et d’autres applications et services.
 
 ## <a name="labeling-client-for-desktop-apps"></a>Client d’étiquetage pour les applications de bureau
 
@@ -41,7 +41,7 @@ Si vous ne pouvez pas effectuer de mise à niveau vers Microsoft 365 Apps for en
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de confidentialité dans les applications
 
-Pour chaque fonctionnalité, les tableaux suivants listent la version minimale d’Office dont vous avez besoin pour prendre en charge les étiquettes de niveau de confidentialité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité d’étiquette est en prévisualisation ou en cours de révision pour une prochaine version. Utilisez la [Microsoft 365 feuille de route pour](https://aka.ms/MIPC/Roadmap) plus d’informations sur les nouvelles fonctionnalités prévues pour les prochaines publication.
+Les tableaux suivants répertorient la version minimale Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en prévisualisation ou en cours de révision pour une prochaine version. Utilisez la [Microsoft 365 feuille de route pour](https://aka.ms/MIPC/Roadmap) plus d’informations sur les nouvelles fonctionnalités prévues pour les prochaines publication.
 
 Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour Windows, vous obtenez les nouvelles fonctionnalités plus tôt lorsque vous êtes sur le canal actuel ou le canal Enterprise mensuel, plutôt que sur Semi-Annual Enterprise canal. Les numéros de version minimum peuvent également être différents d’un canal de mise à jour à l’autre. Pour plus d’informations, voir [Vue d’ensemble des](/deployoffice/overview-update-channels) canaux de mise à jour Microsoft 365 Apps et historique des mises à jour [pour Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -178,7 +178,7 @@ Pour une expérience d’étiquette plus cohérente avec des rapports significat
 
 - Désactivez les paramètres IRM pour empêcher les utilisateurs de les sélectionner :
     - Outlook pour Windows : 
-        - Clés de Registre (DWORD:00000001) *DisableDNF* et *DisableEO* de HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Clés `DWORD:00000001` de Registre *DisableDNF* et *DisableEO* à partir de `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM`
         - S’assurer que le paramètre de stratégie **Configurer l’option de chiffrement par défaut pour le bouton Chiffrer** n’est pas configuré
     - Outlook pour Mac : 
         - Clés des paramètres de sécurité *DisableEncryptOnly* et *DisableDoNotForward* documentées dans [Définir les préférences pour Outlook pour Mac](/DeployOffice/mac/preferences-outlook)

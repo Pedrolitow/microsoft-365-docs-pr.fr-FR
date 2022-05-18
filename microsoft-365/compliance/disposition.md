@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 34ac1a9d3b62cd0806318582f7baef76947d7670
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285125"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463261"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -51,7 +51,7 @@ En outre :
 
 - Pour afficher le contenu des éléments pendant le processus de destruction, ajoutez des utilisateurs au groupe de rôle **Visionneuse de contenu de l’Explorateur de contenu**. Si les utilisateurs ne disposent pas des autorisations de ce groupe de rôles, ils peuvent tout de même sélectionner une action de réexamen de la disposition pour effectuer le réexamen de la disposition, mais ils doivent le faire sans pouvoir visualiser le contenu de l'élément dans le mini-volet de réexamen du portail de conformité Microsoft Purview.
 
-- Par défaut, chaque personne qui accède à la page **Disposition** ne voit que les éléments qu'elle est chargée de réviser. Pour qu'un administrateur de gestion des enregistrements puisse voir tous les éléments attribués à tous les utilisateurs et toutes les étiquettes de rétention qui sont configurées pour l'examen de disposition : accédez à **Paramètres de gestion des enregistrements** > **Disposition** pour sélectionner, puis activer un groupe de sécurité à extension messagerie qui contient le comptes administrateur.
+- Par défaut, chaque personne qui accède à la page **Destruction** ne voit que les éléments qu'elle est chargée de réviser. Pour qu'un administrateur de gestion des enregistrements puisse voir tous les éléments attribués à tous les utilisateurs et toutes les étiquettes de rétention qui sont configurées pour la révision avant destruction : accédez à **Paramètres de gestion des enregistrements** > **Destruction** pour sélectionner, puis activer un groupe de sécurité à extension messagerie qui contient le comptes administrateur.
     
     Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un nouveau groupe de sécurité compatible avec la messagerie, utilisez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a> pour créer le nouveau groupe. 
     
@@ -62,9 +62,9 @@ En outre :
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Activation d’un autre groupe de sécurité pour sa disposition
 
-Après avoir activé un groupe de sécurité pour la disposition à partir des **paramètres de gestion des enregistrements** dans le portail de conformité Microsoft Purview, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le portail de conformité Microsoft Purview. Toutefois, vous pouvez activer un autre groupe de sécurité à extension messagerie en utilisant la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+Après avoir activé un groupe de sécurité pour la destruction à partir des **paramètres de gestion des enregistrements** dans le portail de conformité Microsoft Purview, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le portail de conformité Microsoft Purview. Toutefois, vous pouvez activer un autre groupe de sécurité activé pour le courrier en utilisant le cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
-Par exemple : 
+Par exemple : 
 
 ```PowerShell
 Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
@@ -88,7 +88,7 @@ Lorsqu'une révision de disposition est déclenchée à la fin de la période de
 
 Vous pouvez personnaliser l’e-mail qu’ils reçoivent, notamment les instructions dans d’autres langues. Pour un support multilingue, vous devez vous-même spécifier les traductions et ce texte personnalisé s’affiche pour tous les réviseurs indépendamment de leurs paramètres régionaux.
 
-Les utilisateurs reçoivent une notification par e-mail initiale par étiquette à la fin de la période de rétention de l’élément, avec un rappel par étiquette une fois par semaine de toutes les révisions avant destruction qui leur sont affectées. Ils peuvent cliquer sur le lien figurant dans les e-mails de notification et de rappel pour accéder directement à la page **Gestion des documents** > **– Disposition** dans le portail de conformité Microsoft Purview afin d'examiner le contenu et de prendre une décision. Les réviseurs peuvent également se rendre sur cette page de **disposition** dans le portail de conformité Microsoft Purview. Ensuite :
+Les utilisateurs reçoivent une première notification par courrier par étiquette à la fin de la période de rétention de l'élément, avec un rappel par étiquette une fois par semaine de toutes les révisions de destruction qui leur sont attribués. Ils peuvent cliquer sur le lien figurant dans les e-mails de notification et de rappel pour accéder directement à la page **Gestion des documents** > **– Disposition** dans le portail de conformité Microsoft Purview afin d'examiner le contenu et de prendre une décision. Les réviseurs peuvent également se rendre sur cette page de **disposition** dans le portail de conformité Microsoft Purview. Ensuite :
 
 - Les réviseurs voient uniquement les révisions avant destruction qui leur sont affectées, tandis que les administrateurs qui sont ajoutés au Groupe de sécurité du gestionnaire des enregistrements voient toutes les révisions avant destruction.
 
@@ -122,30 +122,30 @@ Le diagramme suivant illustre le flux de travail de base pour une révision de d
 
 Le déclenchement d’une révision avant destruction à la fin de la période de rétention est une option de configuration disponible uniquement avec une étiquette de rétention. La révision avant destruction n’est pas disponible pour une stratégie de rétention. Pour plus d’informations sur ces deux solutions de rétention, consultez [En savoir plus sur les stratégies de rétention et les étiquettes de rétention](retention.md).
 
-Dans la page **Définir les paramètres de rétention** pour une étiquette de rétention :
+Ensuite, sur la page **Choisir ce qui se passe après la période de rétention** pour une étiquette de rétention :
 
 ![Paramètres de conservation pour une étiquette](../media/disposition-review-option.png)
  
-Après avoir sélectionné l'option **Déclencher une révision de disposition**, la page suivante de la configuration vous permet de spécifier le nombre d'étapes consécutives de décision que vous souhaitez et les réviseurs de décision pour chaque étape :
+Après avoir sélectionné l'option **Démarrer une révision avant destruction**, sélectionnez **+ Créer des étapes et assigner des réviseurs**. Sur la page suivante de la configuration, vous indiquerez le nombre d'étapes consécutives de destruction que vous souhaitez suivre et les réviseurs de destruction pour chaque étape :
 
 ![Spécification des réviseurs de destruction.](../media/disposition-reviewers.png) 
 
-Sélectionnez **Ajouter une étape**, puis nommez-la à des fins d’identification. Spécifiez ensuite les réviseurs pour cette étape.
+Sélectionnez **+ Ajouter une étape**, puis nommez-la à des fins d’identification. Spécifiez ensuite les réviseurs pour cette étape.
 
-Pour les réviseurs, spécifiez un utilisateur ou un groupe de sécurité à extension messagerie. Les groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ne sont pas pris en charge pour cette option.
+Pour les réviseurs, spécifiez jusqu’à 10 utilisateurs individuels ou groupes de sécurité avec fonction de courrier. Les groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ne sont pas pris en charge pour cette option.
 
-Si vous avez besoin de plus d’une personne pour réviser un élément à la fin de la période de rétention, sélectionnez à nouveau **Ajouter une étape**, puis répétez le processus de configuration pour le nombre d’étapes souhaitées, avec un nombre de cinq étapes maximum. 
+Si plusieurs personnes doivent examiner un élément à la fin de sa période de rétention, sélectionnez **Ajouter une autre étape** et répétez le processus de configuration pour le nombre d'étapes dont vous avez besoin, avec un maximum de cinq étapes. 
 
 Dans chaque étape individuelle de destruction, tout utilisateur spécifié pour cette étape est autorisé à mettre en œuvre la prochaine action pour l’élément à la fin de sa période de rétention. Cet utilisateur peut également ajouter d’autres utilisateurs à leur étape de révision avant destruction.
 
 > [!NOTE]
-> Si vous avez configuré les étiquettes de conservation avant que la révision des dispositions en plusieurs étapes ne soit disponible, vous pouvez mettre à niveau vos étiquettes pour qu'elles prennent en charge cette fonctionnalité. Dans l'assistant d'étiquette, sélectionnez **Ajouter une étape**, ou modifiez les relecteurs existants ou ajoutez-en de nouveaux.
+> Si vous avez configuré les étiquettes de rétention avant que la révision de destruction en plusieurs étapes ne soit disponible, vous pouvez mettre à niveau vos étiquettes pour qu'elles prennent en charge cette fonctionnalité : Modifiez l'étiquette et sélectionnez **Modifier les étapes et les réviseurs** sur la page **Choisissez ce qui se passe après la période de rétention**.
 
-Pendant la phase de configuration, pour chaque étape spécifiée, vous pouvez la renommer, la réarranger ou la supprimer en sélectionnant l’option Actions de l’étape (**...**) : 
+Pendant la phase de configuration, pour chaque étape spécifiée, vous pouvez la renommer, la réorganiser ou la supprimer en sélectionnant **Modifier les étapes et les réviseurs** qui s’affichent désormais pour l’option **Démarrer une révision avant destruction** . Ensuite, pour chaque étape, vous pouvez sélectionner l’option Actions de phase (**...**) : 
 
 ![Actions d’étape pour les révisions de destruction.](../media/stage-actions-disposition-review.png)
 
-Cependant, vous ne pouvez pas réarranger ou supprimer une étape après la création d’une étiquette de rétention.
+Cependant, vous ne pouvez pas réarranger ou supprimer une étape après la création d’une étiquette de rétention. Seules les options **Ajouter une étape** et **Renommer une étape** sont disponibles. Vous pouvez toujours modifier les réviseurs.
 
 Après avoir spécifié vos réviseurs, n’oubliez pas de leur accorder l’autorisation du rôle de **Gestion de destruction**. Pour plus d’informations, voir la section [Autorisations de destruction](#permissions-for-disposition) sur cette page.
 
@@ -188,8 +188,8 @@ Si vous utilisez la barre de défilement horizontal ou si vous fermez le volet d
 Comme vous pouvez le voir dans l’exemple affiché, les actions prises en charge sont les suivantes : 
   
 - **Approuver la destruction** :
-    - Lorsque cette action est sélectionnée pour une étape intermédiaire de la révision avant destruction (vous avez configuré plusieurs étapes) : l’élément se déplace vers la prochaine étape de la destruction.
-    - Lorsque cette action est sélectionnée pour l’étape finale de la révision de destruction ou qu’il n’existe qu’une seule étape de destruction : l’élément est marqué comme éligible pour une suppression définitive, qu’un travail de minuteur actionne ensuite dans les 7 jours. Le minutage exact de la suppression définitive de l’élément dépend de la charge de travail. Pour plus d’informations, voir [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) et [Fonctionnement de la rétention pour Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+    - Lorsque cette action est sélectionnée pour une étape intermédiaire de la révision avant destruction (vous avez configuré plusieurs étapes) : l’élément se déplace vers la prochaine étape de la destruction.
+    - Lorsque cette action est sélectionnée pour l’étape finale de la révision avant destruction ou qu’il n’existe qu’une seule étape de destruction : l’élément est marqué comme éligible pour une suppression définitive, qu’un travail de minuteur actionne ensuite dans les 7 jours. Le minutage exact de la suppression définitive de l’élément dépend de la charge de travail. Pour plus d’informations, voir [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) et [Fonctionnement de la rétention pour Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
 - **Attribuer un nouveau libellé** :
     - Lorsque cette action est sélectionnée, l’élément quitte le procession de révision avant destruction pour l’étiquette d’origine. L’élément est ensuite soumis aux paramètres de rétention de la nouvelle étiquette de rétention sélectionnée.
