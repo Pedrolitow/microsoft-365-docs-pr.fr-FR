@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur Microsoft Teams et obtenir des insights sur l’activité Teams dans votre organisation.
-ms.openlocfilehash: a2bfa434d5a564307498f621cb5105f411daff4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 691c6999e97350184fbe72e28f2b380dcf7b41d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65087214"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467545"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
 
@@ -84,8 +84,8 @@ Pour rendre les données dans Teams rapport d’activité utilisateur anonyme, v
 
 3. Sélectionnez **Enregistrer les modifications**.
 
+## <a name="related-content"></a>Contenu connexe
 
-## <a name="see-also"></a>Voir aussi
 [Rapport d’utilisation des périphériques de Microsoft Teams](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [rapport d’activité d’utilisation Microsoft Teams](../activity-reports/microsoft-teams-usage-activity.md) 

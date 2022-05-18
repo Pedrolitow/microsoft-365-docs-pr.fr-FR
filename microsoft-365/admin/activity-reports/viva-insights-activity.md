@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Découvrez comment obtenir un Microsoft 365 Apps pour le rapport d’utilisation pour Viva Insights activité dans le tableau de bord rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Découvrez comment obtenir un Microsoft 365 Apps pour le rapport d’utilisation afin d’en savoir plus, par exemple, sur l’adoption par les utilisateurs de Viva Insights par les utilisateurs actifs.
+ms.openlocfilehash: ae79a1c547c695d86289544159e3492ae8d9bf86
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781312"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467205"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>rapports Microsoft 365 dans le centre d’administration - activité Viva Insights
 

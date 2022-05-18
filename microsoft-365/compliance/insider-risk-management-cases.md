@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 687eb92693d3343fb0ef5b2392d4622d9af4bb9d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971944"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469379"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
@@ -145,7 +145,7 @@ Le tableau de bord des notes de cas affiche les notes de l’utilisateur qui a c
 
 Pour ajouter une note à un cas :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Cas** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Cas**.
 2. Sélectionnez un cas, puis sélectionnez l’onglet **Notes de cas** .
 3. Sélectionnez **Ajouter une note de cas**.
 4. Dans la boîte de **dialogue Ajouter une note de cas** , tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou **sélectionnez Annuler** fermer sans enregistrer la note dans le cas.
@@ -162,7 +162,7 @@ L’accès temporaire à un cas peut être accordé en ajoutant un utilisateur e
 
 Pour ajouter un contributeur à un cas :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Cas** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Cas**.
 2. Sélectionnez un cas, puis sélectionnez l’onglet **Contributeurs** .
 3. Sélectionnez **Ajouter un contributeur**.
 4. Dans la boîte de dialogue **Ajouter un contributeur** , commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir de la Azure Active Directory de votre abonnement client.
@@ -180,7 +180,7 @@ Il est important de se rappeler que l’envoi d’une notification par e-mail à
 
 Pour envoyer une notification à l’utilisateur affecté à un cas :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Cas** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Cas**.
 2. Sélectionnez un cas, puis sélectionnez le bouton **Envoyer une notification par e-mail** dans la barre d’outils de l’action de cas.
 3. Dans la boîte **de dialogue Envoyer un avis de courrier électronique** , sélectionnez le contrôle de liste **déroulante Choisir un modèle d’avis** pour sélectionner le modèle d’avis de l’avis. Cette sélection préremplit les autres champs de l’avis.
 4. Passez en revue les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
@@ -188,11 +188,11 @@ Pour envoyer une notification à l’utilisateur affecté à un cas :
 
 ### <a name="escalate-for-investigation"></a>Réaffecter pour examen
 
-Faites remonter le cas de l’investigation utilisateur dans les situations où une révision juridique supplémentaire est nécessaire pour l’activité à risque de l’utilisateur. Cette escalade ouvre un nouveau cas de découverte électronique Microsoft Purview (Premium) dans votre organisation Microsoft 365. eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’affectation d’un réviseur en tant que dépositaire dans un cas eDiscovery (Premium) créé à partir d’un cas de gestion des risques internes aide votre équipe juridique à prendre les mesures appropriées et à gérer la conservation du contenu. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+Faites remonter le cas de l’investigation utilisateur dans les situations où une révision juridique supplémentaire est nécessaire pour l’activité à risque de l’utilisateur. Cette escalade ouvre un nouveau cas Microsoft Purview eDiscovery (Premium) dans votre organisation Microsoft 365. La découverte électronique (Premium) fournit un flux de travail de bout en bout pour préserver, collecter, examiner, analyser et exporter le contenu qui répond aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’escalade vers un cas eDiscovery (Premium) à partir d’un cas de gestion des risques internes aide votre équipe juridique à prendre les mesures appropriées et à gérer la conservation du contenu. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 
 Pour faire remonter un cas à une enquête utilisateur :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Cas** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Cas**.
 2. Sélectionnez un cas, puis **sélectionnez le bouton Escalader pour l’examen** dans la barre d’outils de l’action de cas.
 3. Dans la boîte de dialogue **Escalader pour l’investigation** , entrez un nom pour la nouvelle investigation utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
 4. Passez en revue les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
@@ -236,7 +236,7 @@ Une fois que les analystes et les enquêteurs des risques ont terminé leur exam
 
 Pour résoudre un cas :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Cas** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Cas**.
 2. Sélectionnez un cas, puis sélectionnez le bouton **Résoudre le cas** dans la barre d’outils de l’action de cas.
 3. Dans la boîte de dialogue **Résoudre le cas** , sélectionnez le contrôle **Résoudre en tant que** contrôle de liste déroulante pour sélectionner la classification de résolution pour le cas. Les options sont **une violation de stratégie bénigne** ou **confirmée**.
 4. Dans la boîte de dialogue **Résoudre le cas** , entrez les raisons de la classification de résolution dans le champ de texte **Action prise** .

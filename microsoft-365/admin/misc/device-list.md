@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Découvrez comment faire un fichier CSV pour AutoPilot dans Microsoft 365 entreprise.
-ms.openlocfilehash: 62dbcddbdab1a08ab3b19c6616b814c421a57c04
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+description: Découvrez comment créer un fichier CSV pour AutoPilot dans Microsoft 365 pour les entreprises.
+ms.openlocfilehash: af695448e31ea93d36b36a8831702acb84a92410
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311757"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469555"
 ---
-# <a name="device-list-csv-file"></a>Fichier CSV de liste d’appareils
+# <a name="windows-autopilot-device-list-csv-file"></a>Windows fichier CSV de liste d’appareils Autopilot
 
-## <a name="device-list-csv-file-format"></a>Format de fichier .csv liste des appareils
+## <a name="device-list-csv-file-format"></a>Format de fichier .csv liste d’appareils
 
-Pour gérer et déployer des appareils via Windows Autopilot, vous aurez besoin d’un fichier .csv contenant des informations spécifiques sur les appareils.
+Pour gérer et déployer des appareils via Windows Autopilot, vous avez besoin d’un fichier .csv qui contient des informations spécifiques sur les appareils.
   
 Les colonnes du fichier de liste d’appareils doivent avoir les en-têtes suivants dans l’ordre spécifié :
   
@@ -46,10 +46,10 @@ Les colonnes du fichier de liste d’appareils doivent avoir les en-têtes suiva
 
 Vous pouvez obtenir ces informations à partir de votre fournisseur de matériel ou vous pouvez utiliser le [script Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) qui génèrera un fichier CSV. 
 
-Lorsque vous ajoutez des appareils, vous devez également les ajouter à un profil. Un profil est utilisé pour appliquer des profils AutoPilot Deployment à un appareil ou à un groupe d’appareils.
+Lorsque vous ajoutez des appareils, vous devez également les ajouter à un profil. Un profil est utilisé pour appliquer des profils de déploiement AutoPilot à un appareil ou à un groupe d’appareils.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Microsoft 365 documentation et ressources pour les entreprises](../../index.yml)
+[Microsoft 365 pour les ressources et la documentation métier](../../index.yml)
   
-[Prendre en Microsoft 365 entreprise](../../admin/admin-overview/what-is-microsoft-365.md)
+[Démarrage avec Microsoft 365 pour les entreprises](../../admin/admin-overview/what-is-microsoft-365.md)

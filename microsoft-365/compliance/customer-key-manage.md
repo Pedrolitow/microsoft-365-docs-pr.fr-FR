@@ -12,20 +12,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, découvrez comment la gérer en restaurant les clés AKV, en gérant les autorisations et en créant et en affectant des stratégies de chiffrement des données.
-ms.openlocfilehash: 1f3124930df88113d4c75401db21d7fc87c6616c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0ca6aa1e2cf725359d74477b486a4763a35ba681
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762252"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465907"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
-Une fois que vous avez configuré la clé client pour Office 365, vous devez créer et affecter une ou plusieurs stratégies de chiffrement des données (DEP). Une fois que vous avez affecté vos dep, vous pouvez gérer vos clés comme décrit dans cet article. En savoir plus sur la clé client dans les rubriques connexes.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Une fois que vous avez configuré la clé client, vous devez créer et affecter une ou plusieurs stratégies de chiffrement des données (DEP). Une fois que vous avez affecté vos dep, vous pouvez gérer vos clés comme décrit dans cet article. En savoir plus sur la clé client dans les rubriques connexes.
 
 ## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Créer un DEP à utiliser avec plusieurs charges de travail pour tous les utilisateurs locataires
 
-Avant de commencer, assurez-vous d’avoir effectué les tâches nécessaires à la configuration du client. Pour plus d’informations, consultez [Configurer la clé client](customer-key-set-up.md). Pour créer le DEP, vous avez besoin des URI Key Vault que vous avez obtenus lors de l’installation. Pour plus d’informations, consultez [Obtenir l’URI pour chaque clé Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Avant de commencer, assurez-vous d’avoir effectué les tâches requises pour configurer la clé client. Pour plus d’informations, consultez [Configurer la clé client](customer-key-set-up.md). Pour créer le DEP, vous avez besoin des URI Key Vault que vous avez obtenus lors de l’installation. Pour plus d’informations, consultez [Obtenir l’URI pour chaque clé Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Pour créer un dep multi-charge de travail, procédez comme suit :
   
@@ -303,7 +305,7 @@ Avant d’effectuer une restauration, utilisez les fonctionnalités de récupér
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-Par exemple :
+Par exemple :
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -321,7 +323,7 @@ Pour afficher les autorisations du coffre de clés, exécutez l’applet de comm
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -333,7 +335,7 @@ Pour supprimer les autorisations d’un administrateur, exécutez l’applet de 
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-Par exemple :
+Par exemple :
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -346,7 +348,7 @@ Si vous devez revenir aux clés gérées par Microsoft, vous pouvez le faire. Lo
 > [!IMPORTANT]
 > Le désintégrage n’est pas le même qu’un vidage des données. Un vidage de données supprime définitivement les données de votre organisation de Microsoft 365, ce qui n’est pas le cas de la désintégrage. Vous ne pouvez pas effectuer de vidage des données pour une stratégie de charge de travail multiple.
 
-Si vous décidez de ne plus utiliser la clé client pour attribuer des dep à plusieurs charges de travail, vous devez contacter le support Microsoft avec une demande de « désinscription » à partir de la clé client. Demandez à l’équipe de support technique de déposer une demande de service auprès de Microsoft 365'équipe de clé client. Contactez m365-ck@service.microsoft.com si vous avez des questions.
+Si vous décidez de ne plus utiliser la clé client pour attribuer des dep à plusieurs charges de travail, vous devez contacter le support Microsoft avec une demande de « désinscription » à partir de la clé client. Demandez à l’équipe de support technique de déposer une demande de service auprès de l’équipe Microsoft Purview Customer Key. Contactez m365-ck@service.microsoft.com si vous avez des questions.
 
 Si vous ne souhaitez plus chiffrer des boîtes aux lettres individuelles à l’aide de dep au niveau de la boîte aux lettres, vous pouvez annuler l’affectation de dep au niveau de la boîte aux lettres de toutes vos boîtes aux lettres.
 
@@ -362,6 +364,9 @@ Pour annuler l’affectation des dep de boîte aux lettres, utilisez l’applet 
 
 L’exécution de cette applet de commande désattribue le DEP actuellement affecté et recrypte la boîte aux lettres à l’aide du dep associé aux clés gérées par Microsoft par défaut. Vous ne pouvez pas annuler l’affectation du dep utilisé par les clés gérées par Microsoft. Si vous ne souhaitez pas utiliser de clés gérées par Microsoft, vous pouvez affecter un autre DEP de clé client à la boîte aux lettres.
 
+> [!IMPORTANT]
+> La restauration de la clé client vers les clés gérées par Microsoft n’est pas prise en charge pour les fichiers SharePoint Online, OneDrive Entreprise et Teams. 
+
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Révoquer vos clés et démarrer le processus de chemin de vidage des données
 
 Vous contrôlez la révocation de toutes les clés racine, y compris la clé de disponibilité. La clé client vous permet de contrôler l’aspect de la planification de sortie des exigences réglementaires. Si vous décidez de révoquer vos clés pour vider vos données et quitter le service, le service supprime la clé de disponibilité une fois le processus de vidage des données terminé. Cela est pris en charge pour les dep de clé client qui sont affectées à des boîtes aux lettres individuelles.
@@ -372,11 +377,11 @@ Microsoft 365 audite et valide le chemin de vidage des données. Pour plus d’i
 
 - [Considérations relatives à la planification de la sortie O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Le vidage du DEP multi-charges de travail n’est pas pris en charge pour Microsoft 365 clé client. Le DEP multi-charges de travail est utilisé pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage de ce dep entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement Microsoft 365 services, vous pouvez poursuivre le chemin de suppression de locataire selon le processus documenté. Découvrez [comment supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Le vidage du DEP multi-charges de travail n’est pas pris en charge pour la clé client. Le DEP multi-charges de travail est utilisé pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage de ce dep entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement Microsoft 365 services, vous pouvez poursuivre le chemin de suppression de locataire selon le processus documenté. Découvrez [comment supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Révoquer vos clés client et la clé de disponibilité pour Exchange Online et Skype for Business
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Révoquez vos clés client et la clé de disponibilité pour Exchange Online et Skype Entreprise
 
-Lorsque vous lancez le chemin de vidage des données pour Exchange Online et Skype for Business, vous définissez une demande de vidage de données permanente sur un dep. Cela supprime définitivement les données chiffrées dans les boîtes aux lettres auxquelles ce DEP est affecté.
+Lorsque vous lancez le chemin de vidage des données pour Exchange Online et Skype Entreprise, vous définissez une demande de vidage permanent des données sur un dep. Cela supprime définitivement les données chiffrées dans les boîtes aux lettres auxquelles ce DEP est affecté.
 
 Étant donné que vous ne pouvez exécuter l’applet de commande PowerShell que sur un DEP à la fois, envisagez de réaffecter un dep unique à toutes vos boîtes aux lettres avant de lancer le chemin de vidage des données.
 
@@ -407,23 +412,11 @@ Pour lancer le chemin de vidage des données, procédez comme suit :
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Révoquer vos clés client et la clé de disponibilité des fichiers SharePoint Online, OneDrive Entreprise et Teams
 
-Pour lancer le chemin de vidage des données pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, procédez comme suit :
-
-1. Révoquer l’accès à Azure Key Vault. Tous les administrateurs de coffre de clés doivent accepter de révoquer l’accès.
-
-   Vous ne supprimez pas le Key Vault Azure pour SharePoint Online. Les coffres de clés peuvent être partagés entre plusieurs locataires et de dep en ligne SharePoint.
-
-2. Contactez Microsoft pour supprimer la clé de disponibilité.
-
-    Lorsque vous contactez Microsoft pour supprimer la clé de disponibilité, nous vous enverrons un document juridique. La personne de votre organisation qui s’est inscrite en tant qu’approbateur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre ou d’une autre personne désignée dans votre entreprise qui est légalement autorisé à signer les documents au nom de votre organisation.
-
-3. Une fois que votre représentant signe le document légal, retournez-le à Microsoft (généralement par le biais d’une signature eDoc).
-
-   Une fois que Microsoft reçoit le document juridique, nous exécutons des applets de commande pour déclencher le vidage des données qui effectue la suppression de chiffrement de la clé de locataire, de la clé de site et de toutes les clés individuelles par document, ce qui rompt irrévocablement la hiérarchie des clés. Une fois les applets de commande de vidage de données terminées, vos données ont été vidées.
+Le vidage de SharePoint, de OneDrive pour le travail ou l’école, et les fichiers de Teams dep. n’est pas pris en charge dans la clé client. Ces dep multi-charges de travail sont utilisées pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage d’un dep de ce type entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement Microsoft 365 services, vous pouvez poursuivre le chemin de suppression de locataire selon le processus documenté. Découvrez comment [supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement de service avec la clé client Microsoft Purview](customer-key-overview.md)
 
 - [En savoir plus sur la clé de disponibilité](customer-key-availability-key-understand.md)
 

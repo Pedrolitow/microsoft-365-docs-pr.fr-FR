@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez la différence entre la collaboration invité et les canaux partagés dans Teams et comment choisir celui à utiliser.
-ms.openlocfilehash: c1cf57aa2125638d9155c209d85360a5154b3606
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09948b49d0c4f3e21d03c1e3994e4dd2d609ed13
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953364"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465781"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planifier une collaboration externe avec des conversations de canal, une collaboration de fichiers et des applications partagées
 
@@ -38,8 +38,8 @@ Cet article aborde la quatrième option, la collaboration de groupe avec les con
 
 ## <a name="terms"></a>Termes
 
-- **Azure AD collaboration B2B** : fonctionnalité qui permet aux utilisateurs de partager des fichiers, des dossiers, des sites, des groupes et des équipes avec des personnes extérieures à votre organisation. Ces personnes accèdent aux ressources partagées en utilisant des comptes invités dans votre répertoire.
-- **Azure AD connexion directe B2B** : fonctionnalité qui permet aux utilisateurs de partager des ressources dans votre organisation avec des personnes d’autres organisations Azure AD. Ces personnes accèdent aux ressources partagées à l’aide de leur propre compte professionnel ou scolaire. Aucun compte invité n’est créé dans votre organisation.
+- **Azure AD B2B Collaboration** : fonctionnalité qui permet aux utilisateurs de partager des fichiers, des dossiers, des sites, des groupes et des équipes avec des personnes extérieures à votre organisation. Ces personnes accèdent aux ressources partagées en utilisant des comptes invités dans votre répertoire.
+- **Connexion directe Azure AD B2B** : fonctionnalité qui permet aux utilisateurs de partager des ressources dans votre organisation avec des personnes d’autres organisations Azure AD. Ces personnes accèdent aux ressources partagées à l’aide de leur propre compte professionnel ou scolaire. Aucun compte invité n’est créé dans votre organisation.
 - **Participant externe** – Personne externe à votre organisation qui participe à une ressource ( par exemple, un canal partagé ) utilisant sa propre identité et non un compte invité dans votre annuaire.
 - **Organisation externe** : autre organisation avec laquelle vous partagez des ressources.
 - **Invité** : personne externe à votre organisation qui accède aux ressources partagées en se connectant à un compte invité dans votre annuaire.
@@ -53,7 +53,7 @@ Lorsque vous collaborez dans une équipe avec des personnes extérieures à votr
 
 ### <a name="guest-sharing"></a>Partage d’invités
 
-Le partage d’invités utilise Azure AD collaboration B2B pour permettre le partage et la collaboration avec des personnes extérieures à votre organisation en ajoutant un compte invité dans Azure AD pour chaque personne. Les comptes invités peuvent être utilisés pour les éléments suivants :
+Le partage d’invités utilise Azure AD B2B Collaboration pour permettre le partage et la collaboration avec des personnes extérieures à votre organisation en ajoutant un compte invité dans Azure AD pour chaque personne. Les comptes invités peuvent être utilisés pour les éléments suivants :
 
 - Appartenance des invités aux équipes, aux sites SharePoint et aux groupes Microsoft 365
 - Partage de fichiers et de dossiers individuel
@@ -62,7 +62,7 @@ Les invités d’une équipe ont des fonctionnalités similaires aux membres ré
 
 ### <a name="external-participants-in-shared-channels"></a>Participants externes dans les canaux partagés
 
-Les participants externes accèdent aux ressources partagées de votre organisation à l’aide de leur propre identité Azure AD ou Microsoft 365. Cela est activé par Azure AD connexion directe B2B via une relation organisationnelle configurée par les deux organisations. Les comptes invités ne sont pas utilisés dans cette relation.
+Les participants externes accèdent aux ressources partagées de votre organisation à l’aide de leur propre identité Azure AD ou Microsoft 365. Cette option est activée par Azure AD B2B Direct Connect via une relation organisationnelle configurée par les deux organisations. Les comptes invités ne sont pas utilisés dans cette relation.
 
 Le principal avantage des participants externes dans les canaux partagés par rapport au partage d’invités est que les personnes extérieures à votre organisation peuvent collaborer avec vos utilisateurs dans Teams sans avoir à modifier leur contexte utilisateur. Lorsque vous utilisez des comptes invités, les utilisateurs doivent se déconnecter de Teams avec leur compte professionnel ou scolaire et se reconnecter à l’aide du compte invité. Ils peuvent également avoir une copie distincte de Teams en cours d’exécution dans une session de navigateur privé. Ce basculement entre les organisations prend du temps et peut entraîner l’absence de communications importantes lors de la déconnexion d’une organisation donnée.
 
@@ -72,7 +72,7 @@ Avec les canaux partagés, les utilisateurs peuvent rester connectés à leur or
 
 Le tableau suivant décrit les expériences disponibles en fonction du type de compte utilisé.
 
-|Fonctionnalité|Utilisateur (votre organisation)|Invité (collaboration Azure AD)|Participant externe (Azure AD connexion directe)|
+|Fonctionnalité|Utilisateur (votre organisation)|Invité (Collaboration Azure AD)|Participant externe (Connexion directe Azure AD)|
 |:-----|:-----|:------|:-------|
 |Accès à l’équipe|v|v|N|
 |Accès au canal partagé|v|N|v|
@@ -98,12 +98,12 @@ Bien que les canaux partagés soient activés par défaut dans Teams, la collabo
 
 Si vous envisagez d’utiliser des canaux partagés avec d’autres organisations, vous pouvez choisir entre un modèle libre-service et un modèle par demande.
 
-- Libre-service : vous pouvez configurer l’accès interlocataire pour autoriser l’accès entrant et sortant à toutes les autres organisations Azure AD. Vous pouvez également bloquer une liste d’organisations avec lesquelles vous ne souhaitez pas que vos utilisateurs partagent, en laissant toutes les autres organisations disponibles. Cela permet à vos utilisateurs d’inviter des personnes extérieures à l’organisation à participer à des canaux partagés sans avoir à contacter votre support technique ou votre service informatique.
+- Libre-service : vous pouvez configurer l’accès entre locataires pour autoriser l’accès entrant et sortant à toutes les autres organisations Azure AD. Vous pouvez également bloquer une liste d’organisations avec lesquelles vous ne souhaitez pas que vos utilisateurs partagent, en laissant toutes les autres organisations disponibles. Cela permet à vos utilisateurs d’inviter des personnes extérieures à l’organisation à participer à des canaux partagés sans avoir à contacter votre support technique ou votre service informatique.
 - Par demande : vous pouvez configurer l’accès entre locataires pour chaque organisation avec laquelle vous souhaitez autoriser les canaux partagés. Lorsque vous choisissez ce modèle, il est important de disposer d’un processus métier documenté que vos utilisateurs peuvent suivre pour demander l’accès entre locataires avec une autre organisation.
 
 ## <a name="compliance-in-shared-channels"></a>Conformité dans les canaux partagés
 
-Les canaux partagés sont intégrés aux fonctionnalités de Microsoft Purview.
+Les canaux partagés sont intégrés à Microsoft Purview fonctionnalités.
 
 ### <a name="communications-compliance"></a>Conformité des communications
 
@@ -111,16 +111,18 @@ Les administrateurs peuvent définir des stratégies pour surveiller le contenu 
 
 ### <a name="conditional-access"></a>Accès conditionnel
 
-Les stratégies [d’accès conditionnel](/azure/active-directory/conditional-access/overview) de l’organisation hôte sont appliquées aux participants externes, y compris aux utilisateurs de connexion directe B2B. Les stratégies de l’organisation externe ne sont pas utilisées. Les types suivants de stratégies d’accès conditionnel sont pris en charge avec les canaux partagés :
+Les [stratégies d’accès conditionnel prises](/azure/active-directory/conditional-access/overview) en charge par l’organisation hôte peuvent être appliquées aux utilisateurs de connexion directe B2B. (Les stratégies de l’organisation externe ne sont pas utilisées.) Les types suivants de stratégies d’accès conditionnel sont pris en charge avec les canaux partagés :
 
-- Stratégies étendues à tous les invités, participants externes et applications cloud SharePoint Online.
-- Accordez des contrôles Access qui nécessitent l’authentification multifacteur, un appareil conforme ou un appareil hybride Azure AD joint.
+- Stratégies étendues à **tous les utilisateurs invités et externes**, ainsi qu’à **l’application cloud Office 365 SharePoint Online**.
+- Accordez des contrôles Access qui nécessitent l’authentification multifacteur, un appareil conforme ou un appareil joint à Azure AD hybride.
 
 Les stratégies basées sur IP sont prises en charge au niveau du fichier SharePoint. Ainsi, un participant externe peut accéder au canal partagé à partir d’un emplacement restreint, mais être bloqué lors de la tentative d’ouverture d’un fichier.
 
+Pour plus d’informations sur l’accès conditionnel pour les identités externes, consultez [Authentification et Accès conditionnel pour les identités externes](/azure/active-directory/external-identities/authentication-conditional-access).
+
 ### <a name="data-loss-prevention-dlp"></a>Protection contre la perte de données (DLP)
 
-Les administrateurs peuvent appliquer des stratégies [DLP Microsoft Purview](/microsoft-365/compliance/dlp-policy-design) à une équipe où tous les canaux, y compris les canaux partagés, héritent de la stratégie. Les canaux partagés héritent de la stratégie de l’organisation hôte.
+Les administrateurs peuvent appliquer [Microsoft Purview stratégies DLP](/microsoft-365/compliance/dlp-policy-design) à une équipe où tous les canaux, y compris les canaux partagés, héritent de la stratégie. Les canaux partagés héritent de la stratégie de l’organisation hôte.
 
 ### <a name="retention-policy"></a>Stratégie de rétention
 
@@ -148,7 +150,7 @@ Les administrateurs peuvent placer les membres du canal uniquement de l’organi
 
 Toutes les actions effectuées pour les [événements d’audit existants](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) sont auditées dans des canaux partagés.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Introduction à la collaboration de fichiers dans Microsoft 365](/sharepoint/intro-to-file-collaboration)
 

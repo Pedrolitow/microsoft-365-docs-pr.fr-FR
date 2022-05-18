@@ -1,5 +1,5 @@
 ---
-title: S’inscrire à Microsoft Teams dans le cadre d’un abonnement professionnel
+title: S’inscrire à un abonnement Microsoft Teams entreprise
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Suivez les étapes décrites dans cet article pour vous inscrire à Microsoft Teams dans le cadre d’un abonnement professionnel.
-ms.openlocfilehash: 9bdf5327de2dc2e542e2c3a37b3cceea83a86b3f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9be7805e8b3ee29128eab2b99ee0f2f87f42b607
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782960"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465841"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>S’inscrire à Microsoft Teams dans le cadre d’un abonnement professionnel
 
@@ -43,7 +43,7 @@ Consultez le tableau ci-dessous pour connaître les options d’inscription et l
 |Connaissances requises|Commençons sans savoir-faire technique requis pour exécuter un domaine.|Nécessite l’achat d’un domaine ou la propriété d’un domaine. Si vous souhaitez utiliser un domaine existant, vous aurez besoin d’informations d’identification d’accès pour le domaine et vous aurez peut-être besoin de connaissances techniques pour prouver la propriété.|
 |Gouvernance de l’accord et de la gestion des données|Disponible dans le cadre du Supplément au [Contrat de services Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) , **il est préférable pour les entreprises qui souhaitent des outils de travail et de collaboration à distance et qui sont à l’aise avec Microsoft agissant comme contrôleur** pour vos données dans le cadre de la [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Les abonnés (« vous ») aux services utilisant cette option n’auront pas accès au contenu ou aux données d’un autre utilisateur invité (« utilisateurs invités »). <br/><br/> Par exemple, si vous travaillez en collaboration avec d’autres utilisateurs invités sur un document stocké dans leur compte, ils peuvent choisir de vous rendre ces documents inaccessibles. <br/><br> Séparément, les utilisateurs invités peuvent choisir de ne pas transférer de documents dans leur compte Sign-Up simplifié vers votre abonnement de compte de domaine, même après les avoir invités à le faire. Cela signifie que leurs documents peuvent également ne pas être accessibles à vous même si vous ajoutez un compte de domaine ultérieurement. Par conséquent, vous devez évaluer les considérations relatives à la propriété des données et aux droits de propriété intellectuelle en conséquence.|Disponible dans le cadre du [Contrat d’abonnement Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) , il est **préférable pour les entreprises qui ont besoin de Microsoft d’agir en tant que processeur** pour leurs données dans le cadre de notre [addendum de protection des données](https://go.microsoft.com/fwlink/p/?linkid=2180314) et ont besoin de notre suite complète d’outils de travail à distance et de collaboration. **Les abonnés qui sont dans des secteurs réglementés ou qui recherchent un contrôle accru, à la fois sur l’utilisation des services par vos employés et sur le traitement des données associées par Microsoft, doivent choisir un compte de domaine s’inscrire auprès de Microsoft Business Business Basic** et s’inscrire en vertu du contrat de niveau entreprise du compte de domaine.|
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Qu’est-ce qu’un e-mail professionnel et quels sont les avantages de la configuration ?
 

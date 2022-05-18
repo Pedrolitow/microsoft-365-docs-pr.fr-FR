@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 2f8fe053d0ffb6d453029ab3f7fee17846661b6d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363189"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469270"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -49,11 +49,13 @@ Dans cette illustration :
 - Les identités, appareils, données, applications, réseau et autres composants d’infrastructure sont tous configurés avec une sécurité appropriée. Les stratégies configurées pour chacun de ces composants sont coordonnées avec votre stratégie de Confiance nulle globale. Par exemple, les stratégies d’appareil déterminent les critères pour les appareils sains et les stratégies d’accès conditionnel nécessitent des appareils sains pour l’accès à des applications et des données spécifiques.
 - La protection contre les menaces et le renseignement surveillent l’environnement, exposent les risques actuels et prennent des mesures automatisées pour corriger les attaques.
 
+Pour plus d’informations sur Confiance nulle, consultez le [_**Centre d’aide Confiance nulle**_](/security/zero-trust) microsoft.
+
 <!---
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
-Pour plus d’informations sur Confiance nulle, consultez le [_**Centre d’aide Confiance nulle**_](/security/zero-trust) microsoft.
+
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Déploiement de Confiance nulle pour Microsoft 365
 
@@ -69,6 +71,9 @@ Dans cette illustration :
 - Les fonctionnalités de protection contre les menaces reposent sur cette base pour fournir une surveillance et une correction en temps réel des menaces de sécurité.
 - La protection et la gouvernance des informations fournissent des contrôles sophistiqués ciblant des types spécifiques de données afin de protéger vos informations les plus précieuses et de vous aider à vous conformer aux normes de conformité, notamment la protection des informations personnelles.
 
+
+Cet article part du principe que vous avez déjà configuré l’identité cloud. Si vous avez besoin d’aide pour cet objectif, consultez [**Déployer votre infrastructure d’identité pour Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
+
 ## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>Étape 1. Configurer Confiance nulle protection de l’identité et de l’accès aux appareils : stratégies de point de départ
 
 La première étape consiste à créer votre base Confiance nulle en configurant la protection des identités et de l’accès aux appareils.
@@ -77,7 +82,7 @@ La première étape consiste à créer votre base Confiance nulle en configurant
 
 Accédez à [**_Confiance nulle protection de l’identité et de l’accès aux appareils_**](office-365-security/microsoft-365-policies-configurations.md) pour obtenir des conseils normatifs pour ce faire. Cette série d’articles décrit un ensemble de configurations requises pour l’identité et l’accès aux appareils, ainsi qu’un ensemble d’accès conditionnel Azure Active Directory (Azure AD), de Microsoft Intune et d’autres stratégies pour sécuriser l’accès à Microsoft 365  pour les applications et services cloud d’entreprise, les autres services SaaS et les applications locales publiées avec Azure AD Proxy d'application.
 
-|Comprend|Conditions requises|N’inclut pas|
+|Comprend|Prerequisites|N’inclut pas|
 |---------|---------|---------|
 |Stratégies d’identité et d’accès aux appareils recommandées pour trois niveaux de protection : <ul><li>Point de départ</li><li>Enterprise (recommandé)</li><li>Spécialisé</li></ul> <br> Recommandations supplémentaires pour : <ul><li>Utilisateurs externes (invités)</li><li>Microsoft Teams</li><li>SharePoint Online</li><li>Microsoft Defender for Cloud Apps</lu></ul>|Microsoft E3 ou E5 <br><br> Azure Active Directory dans l’un des modes suivants : <ul><li>Cloud uniquement</li><li>Authentification hybride avec synchronisation de hachage de mot de passe (PHS)</li><li>Hybride avec authentification directe (PTA)</li><li>Fédérés</li></ul>|Inscription d’appareils pour les stratégies qui nécessitent des appareils gérés. Voir [l’étape 2. Gérer les points de terminaison avec Intune](#step-2-manage-endpoints-with-intune) pour inscrire des appareils|
 
@@ -93,7 +98,7 @@ Ensuite, inscrivez vos appareils dans la gestion et commencez à les protéger a
 
 Accédez à [**_Gérer les appareils avec Intune_**](../solutions/manage-devices-with-intune-overview.md) pour obtenir des conseils normatifs pour ce faire.
 
-|Comprend|Conditions requises|N’inclut pas|
+|Comprend|Prerequisites|N’inclut pas|
 |---------|---------|---------|
 |Inscrire des appareils avec Intune : <ul><li>Appareils d’entreprise</li><li>Autopilot/automatisé</li><li>Inscription</li></ul> <br> Configurer des stratégies : <ul><li>Stratégies de protection des applications</li><li>Stratégies de conformité</li><li>Stratégies de profil d’appareil</li></ul>|Inscrire des points de terminaison auprès d’Azure AD|Configuration des fonctionnalités de protection des informations, notamment : <ul><li>Types d’informations sensibles</li><li>Étiquettes</li><li>Stratégies de protection contre la perte de données</li></ul> <br> Pour ces fonctionnalités, consultez [l’étape 5. Protéger et régir les données sensibles](#step-5-protect-and-govern-sensitive-data) (plus loin dans cet article).|
 
@@ -107,7 +112,7 @@ Revenez aux [**_stratégies d’accès aux identités et aux appareils courantes
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Les stratégies d’identité et d’accès Confiance nulle — niveau Enterprise (recommandé)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
-## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Étape 4. Évaluer, piloter et déployer Microsoft 365 Defender
+## <a name="step-4-evaluate-pilot-and-deploy-microsoft-365-defender"></a>Étape 4. Évaluer, piloter et déployer Microsoft 365 Defender
 
 Microsoft 365 Defender est une solution de détection et de réponse étendue (XDR) qui collecte, met en corrélation et analyse automatiquement les données de signal, de menace et d’alerte à partir de votre environnement Microsoft 365, notamment le point de terminaison, l’e-mail, les applications et les identités.
 
@@ -115,7 +120,7 @@ Microsoft 365 Defender est une solution de détection et de réponse étendue (X
 
 Accédez à [**_Évaluer et pilotez Microsoft 365 Defender_**](defender/eval-overview.md) pour obtenir un guide méthodical sur le pilote et le déploiement de composants Microsoft 365 Defender.
 
-|Comprend|Conditions requises|N’inclut pas|
+|Comprend|Prerequisites|N’inclut pas|
 |---------|---------|---------|
 |Configurez l’environnement d’évaluation et de pilote pour tous les composants : <ul><li>Defender pour l’identité</li><li>Defender pour Office 365</li><li>Defender pour point de terminaison</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protéger contre les menaces <br><br> Examiner les menaces et y répondre|Consultez les conseils pour en savoir plus sur les exigences d’architecture pour chaque composant de Microsoft 365 Defender.| Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Il est inclus à [l’étape 1. Configurez Confiance nulle protection d’identité et d’accès aux appareils](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
 

@@ -23,14 +23,14 @@ ms.custom:
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produit dépend de la désaffectation des licences d’utilisateurs spécifiques ou d’un produit spécifique.
 ms.date: 04/22/2022
-ms.openlocfilehash: b5294bd6234c36e6040ff8cc7433c3e66b7d34b6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093699"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465797"
 ---
-# <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
+# <a name="unassign-microsoft-365-licenses-from-users"></a>Annuler l’affectation de licences Microsoft 365 des utilisateurs
 
 Vous pouvez désattribuer des licences d’utilisateurs sur la page **Utilisateurs actifs** ou sur la page **Licences** . La méthode que vous utilisez varie selon que vous souhaitez annuler l’affectation de licences de produits à des utilisateurs spécifiques ou désattribuer des licences utilisateur à partir d’un produit spécifique.
 
@@ -125,7 +125,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour annuler l’affectati
 - Pour savoir comment bloquer l’accès d’un utilisateur à Microsoft 365 données après la suppression de sa licence et comment accéder aux données par la suite, consultez [Supprimer un ancien employé](../add-users/remove-former-employee.md).
 - Si vous supprimez la licence d’un utilisateur et qu’il a toujours Office applications installées, il voit [des erreurs de produit et d’activation sans licence dans Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) lorsqu’il utilise Office applications.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 

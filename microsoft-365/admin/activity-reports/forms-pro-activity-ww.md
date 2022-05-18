@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord Microsoft 365 Reports dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 19e2a0d0514b9d5722ec9649c08a4d6a97025873
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord Rapports et découvrir comment les utilisateurs sous licence collaborent.
+ms.openlocfilehash: c8c7678991635139f2bdfb97a8baf7ccc2c667aa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781948"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467599"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>rapports Microsoft 365 dans le centre d’administration - Activité Dynamics 365 Customer Voice
 
@@ -48,7 +48,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le rapport **d’activité Dynamics 365 Customer Voice** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur Microsoft Forms.  <br/> |

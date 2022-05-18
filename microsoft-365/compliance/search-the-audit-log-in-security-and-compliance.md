@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320603"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465973"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 
@@ -532,7 +532,6 @@ Le tableau suivant décrit les activités liées à la façon dont les utilisate
 |Élément de liste mis à jour|ListItemUpdated|Un utilisateur a mis à jour un élément de liste SharePoint en modifiant une ou plusieurs propriétés.|
 |Colonne de site mise à jour|SiteColumnUpdated|Un utilisateur a mis à jour une colonne de site SharePoint en modifiant une ou plusieurs propriétés.|
 |Type de contenu de site mis à jour|SiteContentTypeUpdated|Un utilisateur a mis à jour un type de contenu de site en modifiant une ou plusieurs propriétés.|
-|Élément de liste consulté|ListItemViewed|Un utilisateur a consulté un élément de liste SharePoint. Une fois qu’un utilisateur affiche un élément de liste, l’événement ListItemViewed n’est plus journalisé pour le même utilisateur pour le même élément de liste pendant les cinq minutes suivantes.|
 
 ### <a name="sharing-and-access-request-activities"></a>Activités de demande d’accès et de partage
 

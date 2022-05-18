@@ -1,5 +1,5 @@
 ---
-title: Score de productivité Microsoft - intégrité des applications Microsoft 365
+title: Score de productivité et intégrité de vos applications Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de l’intégrité Microsoft 365 Apps - les expériences technologiques Score de productivité.
-ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a87bd49ace301eeb6f48edc31fba5a02d0386de6
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782146"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466369"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité de Microsoft 365 Apps – expériences technologiques
 
@@ -112,7 +112,7 @@ Les colonnes suivantes sont présentées dans le tableau au niveau du canal/de l
 - **Versions** : versions actuelles des applications Microsoft 365 sur les appareils.
 - **Nombre d’appareils** : nombre d’appareils.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Communication – Expériences de personnes](communication.md) (article)\
 [Collaboration de contenu – Expériences de personnes](content-collaboration.md) (article)\

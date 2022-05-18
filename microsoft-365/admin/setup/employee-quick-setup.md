@@ -20,32 +20,32 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aidez vos employés à apprendre à configurer Office applications qu’ils obtiennent avec Microsoft 365 Business Premium.
-ms.openlocfilehash: b776b7182422de0ed3dfa9dda3d8d8b39b957c2b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+description: Aidez vos employés à apprendre à configurer Office applications qu’ils utilisent Microsoft 365 Business Premium.
+ms.openlocfilehash: f25b569218bae636b3c8edb1d46fc1b8bbcf6fe0
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521429"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468873"
 ---
-# <a name="employee-quick-setup"></a>Configuration rapide pour les employés
+# <a name="employee-quick-setup-in-microsoft-365-for-business"></a>Configuration rapide des employés dans Microsoft 365 pour les entreprises
 
-Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="../../media/video-call-icon.png" border="false":::[Regardez cette vidéo : Qu’est-ce Microsoft 365 ?](../admin-overview/what-is-microsoft-365.md) pour en savoir plus. Procédez ensuite comme suit.
+Vous débutez avec Microsoft 365 pour les entreprises ? :::image type="icon" source="../../media/video-call-icon.png" border="false":::[Regardez cette vidéo : Qu’est-ce que Microsoft 365 ?](../admin-overview/what-is-microsoft-365.md) pour en savoir plus. Procédez ensuite comme suit.
 
-:::image type="content" source="../../media/m365-employee-quick-setup.png" alt-text="Image montrant les étapes de configuration rapide de l’employé.":::
+:::image type="content" source="../../media/m365-employee-quick-setup.png" alt-text="Image montrant les étapes de configuration rapide des employés.":::
 
 ## <a name="1-sign-in-to-office"></a>1. Connectez-vous à Office
 
 1. Accédez à [Office.com](https://office.com) et sélectionnez **Se connecter**.
-1. Tapez votre Microsoft 365 et votre mot de passe, puis **connectez-vous.**
+1. Tapez votre adresse e-mail et votre mot de passe Microsoft 365, puis **connectez-vous**.
 
-## <a name="2-download-and-install-office-apps"></a>2. Télécharger et installer Office applications
+## <a name="2-download-and-install-office-apps"></a>2. Télécharger et installer des applications Office
 
-1. Sélectionnez **Installer Office** dans le coin supérieur droit.
+1. Choisissez **Installer Office** en haut à droite.
     - Dans Chrome, accédez au téléchargement en bas de la page et sélectionnez **Ouvrir**.
     - Dans Microsoft Edge/Internet Explorer, sélectionnez **Enregistrer**, puis **Exécuter**.
     
-        Si vous êtes invité à autoriser l'application à apporter des modifications, sélectionnez **Oui**. L'installation d'Office commence.
+    Si vous êtes invité à autoriser l'application à apporter des modifications, sélectionnez **Oui**. L'installation d'Office commence.
     - Sur un Mac, ouvrez Microsoft **Office_2016_Installer.pkg**
 
 ## <a name="3-open-outlook-and-add-your-account"></a>3. Ouvrez Outlook et ajoutez votre compte
@@ -63,15 +63,15 @@ Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. Enregistrer ou copier des fichiers dans OneDrive
 
-- Enregistrez les documents **OneDrive** à partir **du** menu Enregistrer sous dans Office applications.
-    :::image type="content" source="../../media/save-onedrive.png" alt-text="Imge that who’s how to Save As to OneDrive.":::
+- Enregistrez des documents dans **OneDrive** à partir du menu **Enregistrer sous** dans Office applications.
+    :::image type="content" source="../../media/save-onedrive.png" alt-text="Imge que qui est comment enregistrer sous OneDrive.":::
 
 - Vous pouvez également copier des fichiers du Bureau ou du dossier Documents dans **OneDrive**.
 
-    :::image type="content" source="../../media/save-to-onedrive-from-docs.png" alt-text="Image montrant comment enregistrer dans une OneDrive dossier Documents.":::
+    :::image type="content" source="../../media/save-to-onedrive-from-docs.png" alt-text="Image montrant comment enregistrer dans OneDrive à partir du dossier Documents.":::
 
     > [!TIP]
-    > Vous pouvez également stocker des fichiers sur [des sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) Microsoft 365.
+    > Vous pouvez également stocker des fichiers sur des [sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) dans Microsoft 365.
 
 ## <a name="5-share-documents"></a>5. Partager des documents
 
@@ -82,10 +82,10 @@ Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="
 1. Entrez l'adresse de courrier des destinataires, choisissez les autorisations de lecture ou de modification, insérez un message et sélectionnez **Partager**.
 1. Vous pouvez également utiliser l'option **Obtenir un lien de partage** située en bas de l'écran.
 
-## <a name="6-get-outlook-on-your-phone"></a>6. Obtenir des Outlook sur votre téléphone
+## <a name="6-get-outlook-on-your-phone"></a>6. Obtenir Outlook sur votre téléphone
 
-- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou du Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre courrier électronique et votre mot de passe.
+- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou de Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre adresse e-mail et votre mot de passe.
 - Vous pouvez également ouvrir Outlook sur un appareil Android ou iOS et accéder aux **Paramètres**.
 
     Sélectionnez **Ajouter un compte**, **Ajouter un compte de courrier**, puis entrez votre adresse de courrier et votre mot de passe.
-- On a **Windows Phone**, choose **Paramètres**, Email **+ accounts**, **Add an account**, and then **Exchange**.
+- Sur un **Windows Phone**, choisissez **Paramètres**, **e-mail + comptes**, **Ajouter un compte**, puis **Exchange**.

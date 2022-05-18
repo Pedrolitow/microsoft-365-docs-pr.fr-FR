@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363311"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468105"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -120,7 +120,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
    - **Spoofing**
      - **Utilisateur usurpé**
      - **Envoi d’une infrastructure**
@@ -132,14 +132,14 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
    - **Files**
      - **Valeur** : hachage du fichier.
      - **Action** : valeur **Allow** ou **Block**.
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier dans l’ordre croissant ou décroissant.
 
@@ -485,3 +485,10 @@ Par exemple, vous ajoutez une entrée d’autorisation pour la paire de domaines
 - **Infrastructure** : tms.mx.com
 
 Seuls les messages de cette paire d’infrastructure de domaine *et* d’envoi sont autorisés à usurper. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages des expéditeurs d’autres domaines provenant de tms.mx.com sont vérifiés par l’intelligence par usurpation d’identité.
+
+
+## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
+
+Une fois que vous avez ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement.
+
+Nous vous recommandons de laisser les entrées expirer automatiquement après 30 jours pour voir si le système a découvert l’autorisation ou le bloc. Si ce n’est pas le cas, vous devez faire une autre entrée pour donner au système encore 30 jours pour apprendre.

@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: Découvrez comment rester informé des mises à jour Microsoft 365 à l’aide du Centre de messages, de la version ciblée, de la feuille de route, des blogs et des Community.
-ms.openlocfilehash: f38805b3c09c3b40198930014a3083a3ebc03cf9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: cf4adf2e603517dfb4db57811e291195a1536488
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129307"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468523"
 ---
-# <a name="stay-on-top-of-changes"></a>Rester informé des modifications
+# <a name="stay-on-top-of-microsoft-365-product-and-feature-changes"></a>Restez informé des modifications apportées aux produits et fonctionnalités Microsoft 365
 
 Avec Microsoft 365, vous recevez de nouvelles mises à jour et fonctionnalités de produit à mesure qu’elles deviennent disponibles au lieu de mises à jour planifiées à des mois ou des années d’intervalle. Par conséquent, vous et vos utilisateurs découvrirez régulièrement des méthodes nouvelles et améliorées pour effectuer votre travail plutôt qu’une mise à niveau coûteuse et fastidieuse à l’échelle de l’entreprise. Le défi d’un tel modèle est de suivre les modifications et les mises à jour. Voici quelques façons de rester informé des mises à jour Microsoft 365 dans votre organisation.
 

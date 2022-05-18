@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: Obtenez un rapport de groupes Microsoft 365 pour connaître les groupes et leurs activités.
-ms.openlocfilehash: d4130d577341bbc8c4516234964ea9e805be81ee
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenez un rapport Groupes Microsoft 365 pour obtenir des insights sur l’activité des groupes de votre organisation et voir combien de groupes sont créés et utilisés.
+ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781674"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467369"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>rapports Microsoft 365 dans le Centre d’administration - groupes Microsoft 365
 
@@ -72,7 +72,7 @@ Le rapport de **groupes** peut être consulté pour les tendances des 7 derniers
 |Membres externes |Nombre d’utilisateurs externes dans le groupe.|
 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 rapports dans le centre d’administration](activity-reports.md) (article)\
 [Rapports intelligents et insights dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) (article)\

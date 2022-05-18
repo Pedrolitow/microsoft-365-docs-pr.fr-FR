@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser le sélecteur de locataires et les vues multilocataires qui vous permettent de gérer les locataires à partir d’un emplacement unique.
-ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713952"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468083"
 ---
-# <a name="multi-tenant-management"></a>Gestion multilocataire
+# <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Gestion multilocataire pour les administrateurs partenaires Microsoft 365
 
 La gestion multilocataire offre une forme unifiée de gestion qui permet Microsoft 365 administrateurs partenaires d’administrer tous les locataires qu’ils gèrent à partir d’un emplacement unique. Si vous êtes un partenaire qui a un rôle d’administrateur délégué et gère plusieurs locataires, vous pouvez :
 

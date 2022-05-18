@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Découvrez comment obtenir un Microsoft 365 Apps pour le rapport d’utilisation à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 229797921de2e24754203efc466f63661eb26bc8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Découvrez comment obtenir un rapport d’utilisation Microsoft 365 Apps pour voir l’activité des utilisateurs sous licence dans les applications et comment les applications sont utilisées sur plusieurs plateformes.
+ms.openlocfilehash: acb9d910ad8e08275dff3ed65e4b39bb4e867033
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781608"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467523"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>rapports Microsoft 365 dans le Centre d’administration - utilisation Microsoft 365 Apps
 
@@ -46,7 +46,7 @@ Vous pouvez obtenir une vue de l’activité Microsoft 365 Apps de votre utilisa
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Apps rapport d’utilisation.](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
-|Item|Description|
+|Élément|Description|
 |---|---|
 |1.|Le **rapport d’utilisation Microsoft 365 Apps** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 jours ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).|
 |2.|Les données de chaque rapport couvrent généralement jusqu’aux deux derniers jours. Tous les six jours, nous actualisons le rapport avec des mises à jour mineures pour garantir la qualité des données.|

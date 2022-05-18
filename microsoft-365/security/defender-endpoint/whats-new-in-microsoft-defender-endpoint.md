@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319196"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468797"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "65319196"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -125,7 +125,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - [Les définitions de groupe d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) peuvent désormais inclure plusieurs valeurs pour chaque condition. Vous pouvez définir plusieurs balises, noms d’appareils et domaines sur la définition d’un seul groupe d’appareils.
 
-- [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet Microsoft Defender pour point de terminaison protéger les données d’une organisation au sein d’une application managée lorsque Intune est utilisé pour gérer des applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, consultez [cette documentation](/microsoft-365/mem/intune/apps/mam-faq).
+- [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet Microsoft Defender pour point de terminaison protéger les données d’une organisation au sein d’une application managée lorsque Intune est utilisé pour gérer des applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, consultez [cette documentation](/mem/intune/apps/mam-faq).
 
 - [intégration Microsoft Tunnel VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel fonctionnalités VPN sont désormais intégrées à Microsoft Defender pour point de terminaison application pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur final simplifiée avec une application de sécurité , offrant à la fois la défense contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes de sécurité et informatiques sont en mesure de maintenir les mêmes expériences d’administration qu’elles connaissent.
 

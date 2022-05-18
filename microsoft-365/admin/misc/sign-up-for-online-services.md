@@ -1,5 +1,5 @@
 ---
-title: Votre domaine est peut être déjà utilisé si une autre personne au sein de votre organisation s'est inscrite en utilisant celui-ci
+title: Votre domaine peut être utilisé si quelqu’un d’autre s’y est inscrit
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Apprenez à utiliser la messagerie scolaire ou scolaire pour vous inscrire aux services en ligne Microsoft sans impliquer leur service informatique. '
-ms.openlocfilehash: adcbad88e098a06d5220e10a0c6d365b47bd2303
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 'Apprenez à utiliser les e-mails professionnels ou scolaires pour vous inscrire à Microsoft services en ligne sans impliquer leur service informatique. '
+ms.openlocfilehash: db31c62099d07d27ac0ffe4529b34db9fa5d6d19
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319810"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466655"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Votre domaine est peut-être en cours d’utilisation si quelqu’un d’autre s’y est inscrit
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Votre domaine peut être utilisé si quelqu’un d’autre s’y est inscrit
 
 [] Les utilisateurs disposant d'une adresse de courrier professionnelle ou scolaire peuvent [s'inscrire à certains services en ligne de Microsoft](self-service-sign-up.md) sans demander l'autorisation à leur service informatique, par exemple, des services tels que Office 365, Power BI et RMS (Rights Management Services). En effectuant une inscription en libre service à l'aide de leur adresse de courrier professionnelle ou scolaire, les utilisateurs ont accès aux fonctionnalités incluses dans le service, mais ne peuvent pas gérer celui-ci (c'est-à-dire, ajouter des utilisateurs, ajouter des licences, gérer le domaine, etc.). 
   

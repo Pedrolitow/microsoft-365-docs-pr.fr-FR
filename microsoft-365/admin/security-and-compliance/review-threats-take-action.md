@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par Antivirus Microsoft Defender sur vos appareils Windows 10.
-ms.openlocfilehash: 9b819edc21d6cfcac663c54e15b1a060b2b16fa2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d75149f8bcb4ea13e1e474acbb1dedfccb4ec50
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319306"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469467"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
+# <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Examiner les menaces détectées par Antivirus Microsoft Defender et prendre des mesures
 
 Dès qu’un fichier ou un logiciel malveillant est détecté, Antivirus Microsoft Defender le bloque et l’empêche de s’exécuter. Une fois la protection fournie par le cloud activée, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que vos autres appareils et utilisateurs soient également protégés.
 

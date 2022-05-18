@@ -1,5 +1,5 @@
 ---
-title: Télécharger des logiciels perpétuels et des clés de licence de produit achetées via le programme fournisseur de solutions Cloud (CSP)
+title: Télécharger des logiciels perpétuels et des clés de licence de produit achetées via le programme fournisseur de solutions Cloud (fournisseur de solutions Cloud)
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -19,18 +19,18 @@ ms.custom:
 - commerce_licensing
 - AdminSurgePortfolio
 - admindeeplinkMAC
-description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuels achetés via le programme fournisseur de solutions Cloud (CSP).
+description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuels achetés via le programme fournisseur de solutions Cloud (fournisseur de solutions Cloud).
 ms.date: 01/27/2021
-ms.openlocfilehash: bef05f3377bcac46e7f40e60b149dbf6a227a294
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 212aaac02772e5b695cf7ee6f3f256a9fd596c1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841671"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468895"
 ---
-# <a name="download-perpetual-software-and-product-license-keys"></a>Télécharger des logiciels perpétuels et des clés de licence de produit
+# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Télécharger des clés de licence logicielle et de produit perpétuelles dans Microsoft 365
 
-Cet article explique comment télécharger des clés de licence logicielle et de produit pour les logiciels perpétuels achetés via le programme fournisseur de solutions Cloud (CSP).
+Cet article explique comment télécharger des clés de licence logicielle et de produit pour les logiciels perpétuels achetés via le programme fournisseur de solutions Cloud (fournisseur de solutions Cloud).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

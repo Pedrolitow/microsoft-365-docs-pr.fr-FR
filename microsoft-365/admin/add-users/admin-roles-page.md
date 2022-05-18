@@ -1,5 +1,5 @@
 ---
-title: À propos des rôles d’administrateur
+title: À propos de la page rôles d’administrateur dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Les rôles d’administrateur sont mappés aux fonctions métier et fournissent des autorisations pour effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 07a46d7dfa23838715364ab1ab36ced992265b29
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Découvrez les rôles d’administrateur, tels que l’administrateur de service qui ouvre les tickets de support, qui sont mappés aux fonctions métier et disposent d’autorisations pour les tâches dans le Centre d’administration.
+ms.openlocfilehash: 58bbc4b15f3fd477b72c8dac3f0f624b1e152a2a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437082"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466765"
 ---
 # <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Démarrage avec la page des rôles d’administrateur Microsoft 365
 

@@ -1,5 +1,5 @@
 ---
-title: Vérification des informations de contact par l’ICANN
+title: Vérification par l’ICANN des informations de contact
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,24 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
-description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations ICANN.
-ms.openlocfilehash: a1ea60422ebd503ff1cfaac325a5a74433756831
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations de l’ICANN.
+ms.openlocfilehash: f3c35bd258800ef7edc0cd1f7fda0b2f319ded4c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324912"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467907"
 ---
-# <a name="icann-verification-of-contact-information"></a>Vérification des informations de contact par l’ICANN
+# <a name="icann-verification-of-contact-information"></a>Vérification par l’ICANN des informations de contact
 
 Lorsque vous achetez un domaine ou modifiez les informations de contact d’un domaine, le bureau d’enregistrement doit valider vos informations de contact pour se conformer aux réglementations de l’ICANN.
 
-Pour validation, un message électronique est envoyé à l’adresse du registre.
+Pour validation, un e-mail est envoyé à l’adresse de l’inscrit.
 
- **Pour vérifier vos informations de contact, sélectionnez le lien dans l’e-mail de vérification.** Si les propriétaires de domaine ne vérifient pas l’adresse de messagerie, le domaine est suspendu. Ensuite, allez sur la [page Domaines](https://admin.microsoft.com/adminportal/home?ref=Domains) dans le Centre d’administration et vérifiez l’état de votre domaine.
+ **Pour vérifier vos informations de contact, sélectionnez le lien dans l’e-mail de vérification.** Si les propriétaires de domaine ne vérifient pas l’adresse e-mail, le domaine est suspendu. Ensuite, accédez à la [page Domaines](https://admin.microsoft.com/adminportal/home?ref=Domains) dans le centre d’administration et vérifiez l’état de votre domaine.
 
-L’e-mail ressemblera à ceci :
+L’e-mail se présente comme suit :
 
-![Exemple de message électronique.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
+![Exemple d’e-mail.](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
 

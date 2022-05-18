@@ -10,17 +10,16 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 24e43ac3e99f99061489e2719c76245270422c57
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5e0db56306b1e56ee0ab21d2c3728f30a8c47ec8
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419657"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468237"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -29,7 +28,7 @@ ms.locfileid: "65419657"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Antivirus Microsoft Defender
+- [Antivirus Microsoft Defender](https://www.microsoft.com/windows/comprehensive-security)
 
 **Plateformes**
 - Windows
@@ -91,7 +90,7 @@ Cela génère un rapport situé à *./gpresult.html*. Ouvrez ce fichier et vous 
 
 Dans le rapport GPResults, sous le titre *Windows Composants/Antivirus Windows Defender*, vous pouvez voir quelque chose comme l’entrée suivante, indiquant que Antivirus Microsoft Defender est désactivé.
 
-Stratégie|Setting|Objet de stratégie de groupe gagnant
+Stratégie|Paramètre|Objet de stratégie de groupe gagnant
 ---|---|---
 Désactiver Antivirus Windows Defender|Activé|Win10-Workstations
 

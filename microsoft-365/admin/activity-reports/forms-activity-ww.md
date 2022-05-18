@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: c00c9e91d4b8e37021a30798088f46b786b3b4fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord rapports Microsoft 365 et découvrir comment les utilisateurs sous licence interagissent avec les formulaires.
+ms.openlocfilehash: ccfacbfb7450aef7c1880e7022b374799ac8307b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781926"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467643"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>rapports Microsoft 365 dans le Centre d’administration - Activité formulaires
 
@@ -48,7 +48,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le rapport **d’activité Forms** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 jours ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur Microsoft Forms.  <br/> |

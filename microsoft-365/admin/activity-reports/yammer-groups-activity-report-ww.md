@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le rapport d’activité Yammer groupes pour connaître le nombre de groupes Yammer créés et utilisés dans votre organisation, ainsi que leur activité.
-ms.openlocfilehash: 443129beaf39a2e46bd5fbcb18bdb9cd9b4770c3
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenez le rapport d’activité des groupes Yammer pour en savoir plus sur le nombre de groupes Yammer créés et utilisés dans votre organisation et leur activité.
+ms.openlocfilehash: 27e2057bb743c7d25d3ebb848151f7a32e3de52a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781248"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467139"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>rapports Microsoft 365 dans le centre d’administration - rapport d’activité des groupes Yammer
 
@@ -46,7 +46,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le rapport **Activité des groupes Yammer** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe. <br/> |
@@ -57,7 +57,7 @@ Le rapport **Activité des groupes Yammer** permet d'observer les tendances des 
 |Date de la dernière activité (UTC)  <br/> | Date la plus récente à laquelle un message a été lu, publié ou aimé par le groupe.  <br/> |
 |Members  <br/> | Nombre de membres dans le groupe.  <br/> |
 |Publié  <br/> |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. <br/>|
-|Lecture  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
+|Lire  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
 |Aimé  <br/> |Nombre de messages aimés dans le groupe Yammer au cours de la période de rapport. <br/>|
 |Nom du réseau  <br/> |Nom complet du réseau auquel appartient le groupe. |
 |||

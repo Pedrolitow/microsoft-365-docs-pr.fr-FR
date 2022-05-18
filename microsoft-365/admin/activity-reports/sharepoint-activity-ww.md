@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le rapport d’utilisation de l’activité SharePoint pour connaître l’activité de chaque utilisateur SharePoint, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: 939dcf5c81d68a7a399c725d44687423670ed65a
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenez le rapport d’utilisation de l’activité SharePoint pour en savoir plus sur SharePoint interactions avec les fichiers utilisateur sous licence, le nombre de fichiers partagés et l’utilisation du stockage.
+ms.openlocfilehash: ecd44aad4e2bc1236ade623ad2723945e6422e7b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781550"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467227"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>rapports Microsoft 365 dans le Centre d’administration - activité SharePoint
 
@@ -48,7 +48,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le **rapport d’activité SharePoint** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 jours ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur le site SharePoint.  <br/> |

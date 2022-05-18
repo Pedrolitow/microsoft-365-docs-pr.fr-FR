@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 757545231a7bbe544bfbacf082fc03d88fb2df2f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174162"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469170"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender pour les PME
 
@@ -181,6 +181,4 @@ Passez à une ou plusieurs des tâches suivantes :
 - [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md)
 - [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
 - [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)
-
 - [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)

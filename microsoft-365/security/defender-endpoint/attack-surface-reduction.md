@@ -20,13 +20,12 @@ ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: a1ae7d53ac69b4756417704b4938ff4fb41f9e41
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: a5ca2613028e892229da1888c6176cb729e0cf1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418803"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469577"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -78,7 +77,7 @@ Le mode d’avertissement permet à votre organisation de mettre en place des r�
 Le mode d’avertissement est pris en charge sur les appareils exécutant les versions suivantes de Windows :
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809) ou version ultérieure
-- Windows 11
+- Windows 11
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) ou ultérieure
 
 Antivirus Microsoft Defender doit s’exécuter avec une protection en temps réel en [mode Actif](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
@@ -127,7 +126,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+- [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
   >[!NOTE]
   >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [Intégrer des serveurs Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne.

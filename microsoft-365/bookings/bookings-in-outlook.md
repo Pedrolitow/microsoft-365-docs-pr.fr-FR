@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings dans Outlook pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: abad0358fc0062774ebadb409dd1a8658fddd16e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 65e3e751e883ed498cdf5b4ccae2b1f2e587f756
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416753"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469210"
 ---
 # <a name="bookings-in-outlook"></a>Bookings dans Outlook
 
@@ -39,6 +39,8 @@ Bookings dans Outlook est disponible dans les abonnements suivants :
 - Microsoft 365 : A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
 
 Bookings dans Outlook est activée par défaut pour les utilisateurs disposant de ces abonnements.
+
+Bookings dans Outlook a besoin du plan de service **Microsoft Bookings** affecté aux utilisateurs pour qu’ils puissent accéder à Bookings. Ce plan de service peut être activé/désactivé par les administrateurs de locataires. Par conséquent, si **Microsoft Bookings** ne leur est pas attribué, Bookings accès sera refusé aux utilisateurs même s’ils se trouvent dans l’une des références SKU répertoriées précédemment.
 
 Pour plus d’informations, consultez [l’Bookings dans Outlook Microsoft 365 élément feuille de route](https://go.microsoft.com/fwlink/?linkid=328648).
 

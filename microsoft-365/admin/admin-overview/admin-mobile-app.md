@@ -1,5 +1,5 @@
 ---
-title: À propos de l’application mobile Administration Microsoft 365
+title: À propos de l’application mobile d’administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez l’application Administration Microsoft 365, votre compagnon du Centre d'administration Microsoft 365 web, pour gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: b4d3759002b7ad175a98a6619fc5cbcade16f7a7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a6e267a06ea902638d9c5ef5a9c0c7aee44823d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436160"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466743"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile Administration Microsoft 365
 
@@ -70,7 +70,7 @@ Vous devez être administrateur dans une organisation Microsoft 365 pour utilise
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Voici les réponses aux questions fréquemment posées.
   
@@ -125,7 +125,7 @@ Dans le menu de navigation de gauche, accédez à **Paramètres** >  **Notificat
 
 Envoyer un e-mail [feedback365@microsoft.com](mailto:feedback365@microsoft.com) signaler un problème avec l’application. Vous pouvez également faire part de vos commentaires en bas de cet article.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez téléchargé l’administrateur mobile, vous pouvez ajouter des utilisateurs pour commencer.
   

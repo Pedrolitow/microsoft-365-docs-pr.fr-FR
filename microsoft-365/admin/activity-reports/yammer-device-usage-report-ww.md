@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le Yammer rapport d’utilisation des appareils pour savoir sur quels appareils vos utilisateurs utilisent Yammer.
-ms.openlocfilehash: 265cef494349daba8b7e526ad6b7c6abd61adcf7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenez le Yammer rapport d’utilisation des appareils pour en savoir plus sur les appareils sur lesquels vos utilisateurs utilisent Yammer, le nombre d’utilisateurs quotidiens par type d’appareil et les détails par utilisateur.
+ms.openlocfilehash: faf5b364090fe4ed88e0a6dd977238e65f3e6c68
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781260"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467183"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>rapports Microsoft 365 dans le Centre d’administration - rapport d’utilisation de l’appareil Yammer
 
@@ -48,7 +48,7 @@ Vous pouvez également exporter les données du rapport dans un fichier Excel .c
 
 Le **rapport Yammer sur l’utilisation des appareils** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés à Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l’authentification unique. <br/> |
