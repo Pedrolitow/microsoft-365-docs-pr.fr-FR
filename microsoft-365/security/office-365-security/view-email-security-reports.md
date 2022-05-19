@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 476807a03954475470a976113a2faa926862c008
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417169"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535943"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "65417169"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Divers rapports sont disponibles dans le portail Microsoft 365 Defender pour vous aider à <https://security.microsoft.com> voir comment les fonctionnalités de sécurité des e-mails, telles que les fonctionnalités anti-courrier indésirable et anti-programme malveillant dans Microsoft 365 protègent votre organisation. Si vous disposez [des autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
 
@@ -204,12 +204,12 @@ Dans la page **rapport d’état du flux** de courrier, l’onglet **Type** est 
 Le tableau des détails sous le graphique affiche les informations suivantes :
 
 - **Direction**
-- **Type**
+- **Type (Type)**
 - **24 heures**
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le menu volant qui s’affiche :
 
@@ -413,7 +413,7 @@ Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtr
 - **ID de soumission**
 - **ID de message réseau**
 - **Sender**
-- **Name**
+- **Name (Nom)**
 - **Soumis par**
 - **Raison de l’envoi** :
   - **Pas de courrier indésirable**
@@ -1158,7 +1158,7 @@ Pour gérer les rapports planifiés que vous avez déjà créés, procédez comm
 
 2. Dans la page **Rapports à télécharger** , les informations suivantes s’affichent pour chaque rapport disponible :
    - **Date de début**
-   - **Name**
+   - **Name (Nom)**
    - **Type de rapport**
    - **Dernier envoi**
    - **Direction**
@@ -1180,7 +1180,9 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données cont
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection anti-courrier indésirable et anti-programme malveillant dans EOP](anti-spam-and-anti-malware-protection.md)
+[Protection anti-courrier indésirable dans EOP](anti-spam-protection.md)
+
+[Protection contre les programmes malveillants dans EOP](anti-malware-protection.md)
 
 [Rapports intelligents et insights dans le portail Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 

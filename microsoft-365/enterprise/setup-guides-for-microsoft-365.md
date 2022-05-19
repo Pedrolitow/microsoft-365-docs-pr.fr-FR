@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités dans les licences de votre locataire. Recherchez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188721"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535921"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -103,11 +103,11 @@ Le [guide Sécurité des identités pour les équipes](https://admin.microsoft.c
 
 ### <a name="add-or-sync-users-to-microsoft-365"></a>Ajouter ou synchroniser des utilisateurs à Microsoft 365
 
-[Ce guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) vous aidera à simplifier le processus de configuration de vos comptes d’utilisateur dans **Microsoft 365**. En fonction de votre environnement et de vos besoins, vous pouvez choisir d’ajouter des utilisateurs individuellement, de migrer votre répertoire local avec Azure AD synchronisation cloud ou Azure AD Connecter, ou de résoudre les problèmes de synchronisation existants si nécessaire.
+[Ce guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) vous aidera à simplifier le processus de configuration de vos comptes d’utilisateur dans **Microsoft 365**. En fonction de votre environnement et de vos besoins, vous pouvez choisir d’ajouter des utilisateurs individuellement, de migrer votre répertoire local avec Azure AD Cloud Sync ou Azure AD Connecter, ou de résoudre les problèmes de synchronisation existants si nécessaire.
 
-### <a name="azure-ad-setup-guide"></a>guide d’installation Azure AD
+### <a name="azure-ad-setup-guide"></a>Guide d’installation d’Azure AD
 
-Le [guide d’installation Azure AD](https://aka.ms/aadpguidance) fournit des informations pour vous assurer que votre organisation dispose d’une base de sécurité solide. Dans ce guide, vous allez configurer les fonctionnalités initiales, telles que le contrôle d’accès en fonction du rôle Azure (Azure RBAC) pour les administrateurs, Azure AD Connecter pour votre annuaire local et Azure AD Connecter Health, afin de pouvoir surveiller l’intégrité de votre identité hybride pendant les synchronisations automatisées.
+Le [guide d’installation d’Azure AD](https://aka.ms/aadpguidance) fournit des informations pour vous assurer que votre organisation dispose d’une base de sécurité solide. Dans ce guide, vous allez configurer les fonctionnalités initiales, telles que le contrôle d’accès en fonction du rôle Azure (Azure RBAC) pour les administrateurs, Azure AD Connecter pour votre annuaire local et Azure AD Connecter Health, afin de pouvoir surveiller l’intégrité de votre identité hybride pendant les synchronisations automatisées.
 
 Il inclut également des informations essentielles sur l’activation des réinitialisations de mot de passe en libre-service, l’accès conditionnel et l’authentification tierce intégrée, notamment la protection avancée des identités facultative et l’automatisation de l’approvisionnement des utilisateurs.
 
@@ -181,13 +181,13 @@ Les solutions de ce guide vous aideront à obtenir une visibilité sur les activ
 * Avec la solution de conformité des communications, vous pouvez identifier et agir sur les risques de communication pour des éléments tels que la violence au travail, les délits internes, le harcèlement, le code de conduite et les violations de conformité réglementaire.
 * La solution de gestion des risques internes vous aide à identifier, examiner et prendre des mesures en cas de vol de propriété intellectuelle, de fuites de données sensibles, de violations de sécurité, de débordement de données et de violations de confidentialité.
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Guide d’installation de Microsoft Purview Information Protection
+### <a name="microsoft-purview-information-protection-setup-guide"></a>guide d’installation Protection des données Microsoft Purview
 
-Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin d’être certain que vos informations sensibles sont protégées. Utilisez une approche de cycle de vie à quatre étapes consistant à découvrir, à classer, à protéger, puis à contrôler les informations sensibles. Le [guide d’installation de Microsoft Purview Information Protection](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) fournit des conseils pour effectuer chacune de ces étapes.
+Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin d’être certain que vos informations sensibles sont protégées. Utilisez une approche de cycle de vie à quatre étapes consistant à découvrir, à classer, à protéger, puis à contrôler les informations sensibles. Le [guide d’installation Protection des données Microsoft Purview](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) fournit des conseils pour effectuer chacune de ces étapes.
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guide d’installation de Microsoft Purview Data Lifecycle Management
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guide d’installation Gestion du cycle de vie des données Microsoft Purview
 
-Le [guide d’installation de Microsoft Purview Data Lifecycle Management](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classifiées et gérées conformément aux instructions de cycle de vie spécifiques que vous définissez. Avec ce guide, vous allez apprendre à créer, appliquer automatiquement ou publier des étiquettes de rétention, des stratégies d’étiquette de rétention et des stratégies de rétention appliquées aux enregistrements de contenu et de conformité de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour les appliquer manuellement à des documents individuels.
+Le [guide d’installation Gestion du cycle de vie des données Microsoft Purview](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classifiées et gérées conformément aux instructions de cycle de vie spécifiques que vous définissez. Avec ce guide, vous allez apprendre à créer, appliquer automatiquement ou publier des étiquettes de rétention, des stratégies d’étiquette de rétention et des stratégies de rétention appliquées aux enregistrements de contenu et de conformité de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour les appliquer manuellement à des documents individuels.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>guide d’installation Microsoft Defender for Cloud Apps
 
@@ -205,11 +205,15 @@ Le [guide d’installation Microsoft 365 Apps](https://aka.ms/OPPquickstartguide
 
 ### <a name="mobile-apps-setup-guide"></a>Guide d’installation des applications mobiles
 
-Le [guide de configuration des applications mobiles](https://aka.ms/officeappguidance) fournit des instructions pour le téléchargement et l’installation d’applications Office sur vos appareils mobiles Windows, iOS et Android. Ce guide vous fournit des informations pas à pas pour télécharger et installer des applications Microsoft 365 et Office 365 sur votre téléphone et tablette.
+Le [guide d’installation des applications mobiles](https://aka.ms/officeappguidance) fournit des instructions pour le téléchargement et l’installation d’applications Office sur vos appareils mobiles Windows, iOS et Android. Ce guide vous fournit des informations pas à pas pour télécharger et installer des applications Microsoft 365 et Office 365 sur votre téléphone et tablette.
 
 ### <a name="microsoft-teams-setup-guide"></a>guide d’installation Microsoft Teams
 
 Le [guide d’installation Microsoft Teams](https://aka.ms/teamsguidance) fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel par le biais de messages, d’appels et de réunions audio ou vidéo pour les communications d’équipe et privées. Utilisez les outils de ce guide pour configurer l’accès invité, définir qui peut créer des équipes et ajouter des membres d’équipe à partir d’un fichier .csv, le tout sans avoir à ouvrir une session PowerShell. Vous obtiendrez également les meilleures pratiques pour déterminer les besoins réseau de votre organisation et garantir la réussite d’un déploiement Teams.
+
+### <a name="teams-phone-setup-guide"></a>guide d’installation Teams Téléphone
+
+Le [guide de configuration Teams Téléphone](https://aka.ms/teamsphonesetupguide) vous aide à rester connecté à l’utilisation de solutions d’appel modernes. Appliquez des fonctionnalités clés avec un système de contrôle des appels basé sur le cloud qui prend en charge la charge de travail de téléphonie pour Teams. Vous pouvez choisir et déployer des fonctionnalités à partir des options de connectivité de réseau téléphonique commuté (RTC) disponibles. Vous pouvez également trouver de l’aide pour d’autres fonctionnalités, telles que le standard automatique, les files d’attente d’appels, les Audioconférence, l’ID d’appelant et les événements en direct.
 
 ### <a name="sharepoint-setup-guide"></a>Guide d’installation SharePoint
 

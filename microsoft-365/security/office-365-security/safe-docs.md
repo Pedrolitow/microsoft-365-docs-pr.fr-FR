@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Découvrez Coffre documents dans Microsoft 365 E5/A5 ou Microsoft 365 E5/A5 Security.
+description: Découvrez Coffre documents dans Microsoft 365 A5 ou sécurité E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fa1c7e07c1e1cd117ee20f4712dbbadad3c2b5c
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4e9e83ec902ec3beafff76e26fff3ce13d0a9b9a
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174138"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535523"
 ---
-# <a name="safe-documents-in-microsoft-365-e5a5"></a>documents Coffre dans Microsoft 365 E5/A5
+# <a name="safe-documents-in-microsoft-365-a5-or-e5-security"></a>Coffre documents dans Microsoft 365 A5 ou sécurité E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

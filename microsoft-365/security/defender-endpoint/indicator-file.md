@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1d32c546fc270e044d391dd35f325afc98fe5a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101444"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535589"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -28,9 +28,10 @@ ms.locfileid: "65101444"
 
 **S’applique à :**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender pour point de terminaison Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -60,6 +61,9 @@ Il est important de comprendre les prérequis suivants avant de créer des indic
 
 Cette fonctionnalité est conçue pour empêcher le téléchargement de logiciels malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables (PE), y compris les fichiers .exe et .dll. La couverture sera prolongée au fil du temps.
 
+> [!IMPORTANT]
+> Dans Defender pour point de terminaison Plan 1 et Defender entreprise, vous pouvez créer un indicateur pour bloquer ou autoriser un fichier. Dans Defender entreprise, votre indicateur est appliqué dans votre environnement et ne peut pas être étendu à des appareils spécifiques.
+
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Créer un indicateur pour les fichiers à partir de la page paramètres
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Indicateurs de** points de **terminaison** \> (sous **Règles**).
@@ -71,7 +75,7 @@ Cette fonctionnalité est conçue pour empêcher le téléchargement de logiciel
 4. Spécifiez les détails suivants :
     - Indicateur : spécifiez les détails de l’entité et définissez l’expiration de l’indicateur.
     - Action : spécifiez l’action à entreprendre et fournissez une description.
-    - Étendue : définissez l’étendue du groupe d’appareils.
+    - Étendue : définissez l’étendue du groupe d’appareils (l’étendue n’est pas disponible dans [Defender entreprise](../defender-business/mdb-overview.md)).
 
 5. Passez en revue les détails sous l’onglet Résumé, puis **sélectionnez Enregistrer**.
 
@@ -109,7 +113,7 @@ Choisissez si vous souhaitez générer une alerte sur l’événement de bloc de
 > - Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils gagne.
 > - Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage de l’IoC de fichier est réduite. Toutefois, l’activation `EnableFileHashComputation` peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers volumineux à partir d’un partage réseau sur votre appareil local, en particulier via une connexion VPN, peut avoir un effet sur les performances de l’appareil.
 >
-> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, consultez [defender CSP](/windows/client-management/mdm/defender-csp).
+> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, consultez [Defender fournisseur de solutions Cloud](/windows/client-management/mdm/defender-csp).
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>Préversion publique : Fonctionnalités de chasse avancées
 

@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, découvrez comment la gérer en restaurant les clés AKV, en gérant les autorisations et en créant et en affectant des stratégies de chiffrement des données.
-ms.openlocfilehash: 0ca6aa1e2cf725359d74477b486a4763a35ba681
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465907"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535423"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 

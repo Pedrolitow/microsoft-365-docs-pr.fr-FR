@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ed83064d1686d1cf556e0b2dcca5766556c5fa3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970914"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535843"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports Defender pour Office 365 dans le portail Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "64970914"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft Defender pour Office 365 organisations (par exemple, Microsoft 365 E5 abonnements ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour Office 365 modules complémentaires Plan 2) contiennent divers rapports liés à la sécurité. Si vous disposez [des autorisations nécessaires](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), vous pouvez afficher et télécharger ces rapports dans le portail Microsoft 365 Defender.
 
@@ -88,7 +88,7 @@ Dans la page **rapport de latence** du courrier, les onglets suivants sont dispo
 
 Quel que soit l’onglet que vous sélectionnez, le graphique affiche les messages organisés en catégories suivantes :
 
-- **Globale**
+- **Global**
 - **Détonation**
 
 Lorsque vous pointez sur une catégorie dans le graphique, vous pouvez voir une répartition de la latence dans chaque catégorie.
@@ -247,10 +247,10 @@ Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 3
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports Defender pour Office 365, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir [Coffre stratégies de liens](set-up-safe-links-policies.md) et [Coffre stratégies de pièces jointes définies](set-up-safe-attachments-policies.md) pour que Defender pour Office 365 protection soit en place. Consultez également [la protection anti-courrier indésirable et anti-programme malveillant](anti-spam-and-anti-malware-protection.md).
+Si vous ne voyez pas de données dans vos rapports Defender pour Office 365, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir [Coffre stratégies de liens](set-up-safe-links-policies.md) et [Coffre stratégies de pièces jointes définies](set-up-safe-attachments-policies.md) pour que Defender pour Office 365 protection soit en place. Consultez également [la protection anti-courrier indésirable](anti-spam-protection.md) et [anti-programme malveillant](anti-malware-protection.md).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports intelligents et insights dans le portail Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
-[Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference)
+[Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)

@@ -28,14 +28,14 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1279220ceb8de5c5fdb4361a258e2c2bfc1f7061
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c37e9126b7cf06929ca9c97533cddf19d1b71f6e
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767423"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468961"
 ---
-# <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
+# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurer l'authentification multifactorielle pour Microsoft 365
 
 L’authentification multifacteur signifie que vous et vos employés devez fournir plusieurs méthodes pour vous connecter à Microsoft 365 est l’un des moyens les plus simples de sécuriser votre entreprise. Basé sur votre compréhension de [l’authentification multi-facteurs (MFA) et de sa prise en charge dans Microsoft 365](multi-factor-authentication-microsoft-365.md), c’est le moment de la configurer et de la déployer dans votre organisation. 
 
@@ -56,7 +56,7 @@ L’authentification multifacteur signifie que vous et vos employés devez fourn
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être un administrateur général pour gérer l’authentification multifacteur. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
+- Pour gérer le MFA, vous devez être administrateur général. Pour plus d’informations, voir [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
 - Si l’authentification multifacteur par utilisateur héritée est activée, [Désactivez l'authentification multifacteur par utilisateur héritée](#turn-off-legacy-per-user-mfa).
 - Si vous avez des clients Office 2013 sur des appareils Windows, [activer l’authentification moderne pour les clients Office 2013](./enable-modern-authentication.md).
 - Avancé : si vous avez des services d’annuaire tiers avec les services de fédération Active Directory (AD FS), configurez le serveur Microsoft Azure Multi-Factor Authentication. Consultez [scénarios avancés avec Azure Active Directory Multifactor Authentication et les solutions VPN tierces](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) pour plus d’informations.
@@ -100,7 +100,7 @@ Si votre organisation a des besoins de sécurité de connexion plus granulaires,
 
 L’accès conditionnel est disponible pour les clients qui ont acheté Azure AD Premium P1 ou les licences qui incluent cette offre, telles que Microsoft 365 Business Premium et Microsoft 365 E3. Pour plus d’informations, voir [créer une stratégie d’accès conditionnel](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-L’accès conditionnel basé sur les risques est disponible via une licence Azure AD Premium P2, ou les licences qui l’incluent, telles que Microsoft 365 E5. Pour en savoir plus, consultez l'article [Accès conditionnel basé sur les risques](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+L’accès conditionnel basé sur les risques est disponible via une licence Azure AD Premium P2, ou les licences qui l’incluent, telles que Microsoft 365 E5. Pour plus d'informations, consultez [Accès conditionnel basé sur le risque](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Pour plus d’informations sur Azure AD P1 et P2, voir [Tarification Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 

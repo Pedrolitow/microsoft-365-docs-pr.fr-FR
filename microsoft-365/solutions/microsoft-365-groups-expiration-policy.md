@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Découvrez Microsoft 365 stratégies d’expiration des groupes.
-ms.openlocfilehash: 9287d61b95d635eccbbef64d307c0aa0e3d12357
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 431d2ae027e92c83d645a4b27ab515d17326c1b7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738563"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535799"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 stratégie d’expiration de groupe
 
@@ -41,8 +41,6 @@ Les groupes activement utilisés sont renouvelés automatiquement. N’importe l
 - Yammer - Afficher un billet dans une communauté Yammer ou un e-mail interactif dans Outlook.
 - Formulaires : affichez, créez ou modifiez des formulaires, ou envoyez une réponse à un formulaire. 
 
-Notez que la seule activité Yammer qui déclenchera un renouvellement automatique de groupe est le chargement d’un document à SharePoint au sein de la communauté.
-
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration de chaque groupe. Il commence toujours à compter de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
 
@@ -53,7 +51,7 @@ Il est important de savoir que l’expiration est désactivée par défaut. Les 
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui pouvez configurer et utiliser la stratégie d’expiration des groupes Microsoft 365 ?
 
-|Rôle|Ce qu’elles peuvent en faire|
+|Role|Ce qu’elles peuvent en faire|
 |---------|---------|
 |Office 365 administrateur général (dans Azure, l’administrateur de la société), administrateur d’utilisateurs|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d’expiration des groupes Microsoft 365.|
 |Utilisateur|Renouveler ou [restaurer](/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 7d9e04b26e04a3145f5008121bfde162387a9f6b
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882525"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535479"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -75,13 +75,13 @@ La fonctionnalité Rechercher est utile si vous effectuez une recherche dans un 
 
 ## <a name="add-an-explanation"></a>Ajouter une explication
 
-Pour notre exemple, nous allons créer une explication qui fournit un indicateur sur le format d’entité lui-même et les variantes qu’il peut avoir dans les exemples de documents. Par exemple, une date peut être affichée dans plusieurs formats différents :
+Pour notre exemple, nous allons créer une explication qui fournit un indicateur sur le format d’entité lui-même et les variantes qu’il peut avoir dans les exemples de documents. Par exemple, une valeur de date peut être dans plusieurs formats différents, tels que :
 
 - 14/10/2019
 - 14 octobre 2019
 - Lundi 14 octobre 2019
 
-Pour identifier plus facilement la *date de démarrage du service*, vous pouvez créer une explication de modèle.
+Pour identifier la *date de début du service*, vous pouvez créer une explication de modèle.
 
 1. Dans la section Explication, sélectionnez **Nouveau**, puis tapez un nom (par exemple, *Date*).
 2. Type : sélectionnez **Liste de modèles**.
@@ -140,15 +140,15 @@ Si vous recevez de nouveau une **incompatibilité** sur vos fichiers étiquetés
 
 ## <a name="test-your-model"></a>Tester votre modèle
 
-Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cela est facultatif, mais il s’agit d’une étape utile pour évaluer la « condition physique » ou la préparation du modèle avant de l’utiliser, en le testant sur des fichiers que le modèle n’a pas vus auparavant.
+Si vous recevez une correspondance sur vos fichiers échantillons étiquetés, vous pouvez à présent tester votre modèle sur les autres exemples de fichiers non étiquetés. Cette étape est facultative, mais utile pour évaluer la « condition physique » ou la préparation du modèle avant de l’utiliser, en le testant sur des fichiers que le modèle n’a pas vus auparavant.
 
-1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test**. Le modèle est alors exécuté sur vos fichiers échantillons non étiquetés.
+1. Dans la page d’accueil du modèle, sélectionnez l’onglet **Test** .  Cela exécute le modèle sur vos exemples de fichiers sans étiquette.
 
 2. Dans la liste **Fichiers de test**, vos exemples de fichiers affichés indiquent si le modèle peut extraire les informations nécessaires. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
     ![Testez de vos fichiers.](../media/content-understanding/test-filies-extractor.png)
 
-### <a name="further-refine-an-extractor"></a>Affiner davantage un extracteur
+## <a name="further-refine-an-extractor"></a>Affiner davantage un extracteur
 
 Si vous avez des entités en double et que vous souhaitez extraire une seule valeur ou un certain nombre de valeurs, vous pouvez définir une règle pour spécifier la façon dont vous souhaitez qu’elle soit traitée. Pour ajouter une règle pour affiner les informations extraites, procédez comme suit :
 

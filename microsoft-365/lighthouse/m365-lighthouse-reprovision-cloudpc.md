@@ -16,16 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment réapprovisionner un Windows 365 PC Cloud dans Microsoft 365 Lighthouse.
-ms.openlocfilehash: c896724a86241c19c6f44e4c59d7c2e927f100a7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: c3ff7dac53798f26da212ac4790ba0cb1412c307
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438945"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535883"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Réapprovisionner un Windows 365 PC Cloud dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse prend en charge le reprovisionnement des PC cloud qui ont une stratégie d’approvisionnement. Vous devrez peut-être réapprovisionner un appareil pour un nouvel utilisateur ou si l’appareil ne fonctionne pas correctement. Quand un reprovisionnement est déclenché, le PC cloud est supprimé puis recréé en tant que nouveau PC cloud.L’ensemble des données utilisateur, des applications, des personnalisations, etc., seront supprimées.
+Microsoft 365 Lighthouse prend en charge le reprovisionnement des PC cloud qui ont une stratégie d’approvisionnement. Vous devrez peut-être réapprovisionner un appareil pour un nouvel utilisateur ou si l’appareil ne fonctionne pas correctement. Quand un reprovisionnement est déclenché, le PC cloud est supprimé puis recréé en tant que nouveau PC cloud. Toutes les données utilisateur, applications, personnalisations et autres seront supprimées.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

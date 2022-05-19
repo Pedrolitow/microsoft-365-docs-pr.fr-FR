@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,21 +18,21 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: eadf9fe7f6112d1219f085662686b2a930b3ff28
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789797"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535777"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Antivirus Microsoft Defender
+- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)
 
 **Plateformes**
 - Windows
@@ -53,15 +52,10 @@ Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les é
 
 Une enquête automatisée peut démarrer lorsqu’une alerte est déclenchée ou lorsqu’un opérateur de sécurité lance l’enquête.
 
-<br>
-
-****
-
 |Situation|Action exécutée|
 |---|---|
 |Une alerte est déclenchée|En général, une enquête automatisée démarre lorsqu’une [alerte](review-alerts.md) est déclenchée et qu’un [incident](view-incidents-queue.md) est créé. Par exemple, supposons qu’un fichier malveillant réside sur un appareil. Lorsque ce fichier est détecté, une alerte est déclenchée et un incident est créé. Un processus d’investigation automatisé commence sur l’appareil. Comme d’autres alertes sont générées en raison du même fichier sur d’autres appareils, elles sont ajoutées à l’incident associé et à l’investigation automatisée.|
 |Une enquête est démarrée manuellement|Une enquête automatisée peut être démarrée manuellement par votre équipe des opérations de sécurité. Par exemple, supposons qu’un opérateur de sécurité examine une liste d’appareils et remarque qu’un appareil présente un niveau de risque élevé. L’opérateur de sécurité peut sélectionner l’appareil dans la liste pour ouvrir son menu volant, puis sélectionner **Lancer l’investigation automatisée**.|
-|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Comment une enquête automatisée étend son étendue
 
@@ -84,11 +78,11 @@ Selon le [niveau d’automatisation](automation-levels.md) défini pour votre or
 Toutes les actions de correction, qu’elles soient en attente ou terminées, sont suivies dans le [Centre d’actions](auto-investigation-action-center.md). Si nécessaire, votre équipe des opérations de sécurité peut annuler une action de correction. Pour en savoir plus, consultez [Examiner et approuver les actions de correction à la suite d’une enquête automatisée](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Consultez la nouvelle page d’investigation unifiée dans le portail Microsoft 365 Defender. Pour en savoir plus, consultez [(NOUVEAU!) Page d’investigation unifiée](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Consultez la nouvelle page d’investigation unifiée dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez la [page d’enquête unifiée](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## <a name="requirements-for-air"></a>Configuration requise pour AIR
 
-Votre organisation doit avoir Defender pour point de terminaison (consultez [la configuration minimale requise pour Microsoft Defender pour point de terminaison](minimum-requirements.md)).
+Votre abonnement doit inclure [Defender pour point de terminaison](microsoft-defender-endpoint.md) ou [Defender Entreprise](../defender-business/mdb-overview.md).
 
 > [!NOTE]
 > L’investigation et la réponse automatisées nécessitent Antivirus Microsoft Defender pour l’exécution en mode passif ou en mode actif. Si Antivirus Microsoft Defender est désactivé ou désinstallé, l’investigation et la réponse automatisées ne fonctionnent pas correctement.

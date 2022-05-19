@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438924"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535445"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -50,7 +50,7 @@ Le filtrage de contenu web est disponible sur les principaux navigateurs web, av
 - Si vous utilisez Defender pour point de terminaison, votre équipe de sécurité peut facilement déployer des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
 - Si vous utilisez Defender entreprise, vous pouvez définir une stratégie de filtrage de contenu web qui sera appliquée à tous les utilisateurs. 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prerequisites
 
 Avant d’essayer cette fonctionnalité, veillez à respecter les exigences décrites dans le tableau suivant :
 
@@ -177,7 +177,7 @@ Pour ajouter une nouvelle stratégie, procédez comme suit :
 4. Spécifiez l’étendue de la stratégie. Sélectionnez les groupes d’appareils pour spécifier où appliquer la stratégie. Seuls les appareils des groupes d’appareils sélectionnés ne peuvent pas accéder aux sites web dans les catégories sélectionnées.
 
    > [!IMPORTANT]
-   > Si vous utilisez Defender entreprise, l’étendue ne s’applique pas. Ignorez cette étape et passez à l’étape 5.
+   > Si vous utilisez Defender entreprise, votre stratégie de filtrage de contenu web est appliquée par défaut à tous les utilisateurs. L’étendue ne s’applique pas.
 
 5. Passez en revue le résumé et enregistrez la stratégie. L’actualisation de la stratégie peut prendre jusqu’à 2 heures pour s’appliquer à vos appareils sélectionnés.
 
