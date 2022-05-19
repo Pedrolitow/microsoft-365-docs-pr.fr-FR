@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415257"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466281"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -444,4 +444,4 @@ Identifiez et protégez de manière proactive les risques de confidentialité te
 
 **Bibliothèque de contenu technique de sécurité Microsoft** : explorez cette bibliothèque pour trouver des guides interactifs et d'autres contenus d'apprentissage correspondant à vos besoins. [Visitez la bibliothèque](/security).
 
-**Ressources de sécurité Microsoft** : du logiciel anti-programme malveillant à la confiance zéro, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation. [Visitez les Ressources](/security/business/resources).
+**Ressources de sécurité Microsoft** : De l'antimalware à Zero Trust, obtenez toutes les ressources pertinentes pour les besoins de sécurité de votre organisation.
