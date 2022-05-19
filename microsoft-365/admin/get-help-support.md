@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 54c25cd9b6a7fcca46bd434f4e195c088d8d0986
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560107"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465885"
 ---
-# <a name="get-support"></a>Obtenir une assistance
+# <a name="get-support-for-microsoft-365-for-business"></a>Obtenir un support pour Microsoft 365 pour les entreprises
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si vous recevez un message qui indique que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action, vous n’êtes pas un administrateur. Pour plus d’informations, voir [Qui des autorisations d’administrateur dans mon entreprise ?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Allez dans le centre d'administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. Dans le coin inférieur droit de la page, sélectionnez **Aide & support technique.**
 3. Tapez une question ou un mot clé dans la zone de texte. Si vous obtenez une liste de listes, sélectionnez celle qui est la plus proche de votre question, ou continuez à taper votre question, puis appuyez sur **Entrée**.
 4. Si les résultats ne vous aident pas, en bas, sélectionnez **Contacter le support technique.**
@@ -121,7 +121,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 
 | Catégorie d’assistance | Exemples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
+| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
 | Configuration | Problèmes de configuration de service<ul><li>Authentification unique (SSO)</li><li>Synchronisation Active Directory</li></ul> |
 
 > [!NOTE]

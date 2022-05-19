@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 654bd8779d7d66db5324e62c1397c3251da11945
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64633258"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469148"
 ---
-# <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
+# <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Créer des boîtes aux lettres de salle et d’équipement Microsoft 365
 
 Si vous avez une salle de conférence, un véhicule de société ou un équipement que plusieurs personnes peuvent utiliser, vous devez mettre au point une méthode de réservation de ces ressources pour tout le monde. Il est recommandé de créer une boîte aux lettres de salle ou de ressource dans Microsoft 365 pour chaque ressource. Vous pouvez en créer une pour une salle de conférence, des équipements multimédia ou un véhicule utilitaire.
   

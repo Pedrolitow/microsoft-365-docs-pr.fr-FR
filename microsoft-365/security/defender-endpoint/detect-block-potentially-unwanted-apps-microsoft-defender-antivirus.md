@@ -14,14 +14,13 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c7307e7c690e9664f6a848fcd93ed27f1062455a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418355"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468303"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -114,7 +113,7 @@ Pour System Center 2012 Configuration Manager, voir [Comment déployer la strat�
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>Utiliser la stratégie de groupe pour configurer la protection contre les applications potentiellement indésirables (PUA)
 
-1. Télécharger et installer [Modèles d’administration (.admx) pour Windows 10, mise à jour d’octobre 2020 (20H2)](https://www.microsoft.com/download/details.aspx?id=102157).
+1. Télécharger et installer [Modèles d’administration (.admx) pour Windows 11, mise à jour d’octobre 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103507)
 
 2. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 

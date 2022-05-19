@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 01659905becdbd599c9d597e4a7dac3533d1eeb9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Découvrez les rôles d’administrateur, tels que le rôle d’administrateur de service, qui correspondent à des fonctions métier spécifiques et accordent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration.
+ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435322"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467117"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Les rôles d'administration dans le Centre d’administration Microsoft 365
 

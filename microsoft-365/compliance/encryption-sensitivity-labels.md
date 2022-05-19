@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285081"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469445"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -165,6 +165,9 @@ Paramètres de contrôle d’accès pour du contenu chiffré :
 ![Paramètres pour les autorisations définies par l’administrateur.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licence d’utilisation de Rights Management pour l’accès en mode hors connexion
+
+> [!NOTE]
+> Bien que vous puissiez configurer le paramètre de chiffrement pour autoriser l’accès hors connexion, certaines applications peuvent ne pas prendre en charge l’accès hors connexion pour le contenu chiffré. Par exemple, les fichiers étiquetés et chiffrés dans [Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) ne s’ouvrent pas si vous êtes hors connexion.
 
 Lorsqu’un utilisateur ouvre un document ou un e-mail protégé par chiffrement à partir du service Azure Rights Management, il reçoit une licence d’utilisation Azure Rights Management sur ce contenu. Cette licence d’utilisation est un certificat qui contient les droits d’utilisation de l’utilisateur sur le document ou l’e-mail, ainsi que la clé de chiffrement qui a été utilisée pour chiffrer le contenu. La licence d’utilisation contient également une date d’expiration si celle-ci a été définie, ainsi que la durée de validité de la licence.
 
