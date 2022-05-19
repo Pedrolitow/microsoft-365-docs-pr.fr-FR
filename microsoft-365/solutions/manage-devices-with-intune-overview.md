@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 23a0bb391acdf584d278c9de4aee0fdedf4d8071
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 08abc5c53c54c5a4e4100cc88adf0fb25af5c23b
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934222"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535357"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 
@@ -36,6 +36,12 @@ Bien que Microsoft 365 inclut plusieurs outils et méthodologies pour la gestio
 - Autorisez les appareils BYOD avec des plans à implémenter la protection des applications et des données et/ou inscrivez ces appareils auprès d’Intune.
 
 En revanche, si votre environnement inclut des plans de cogestion, notamment Microsoft Endpoint Configuration Manager, consultez la [Documentation sur la cogestion](/mem/configmgr/comanage/) pour développer le meilleur parcours pour votre organisation. Si votre environnement inclut des plans pour Windows 365 PC Cloud, consultez la [Documentation Windows 365 Enterprise](/windows-365/enterprise/) pour développer le meilleur parcours pour votre organisation.
+
+Regardez cette vidéo de présentation du processus de déploiement.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y4fC]
+
 
 ## <a name="why-manage-endpoints"></a>Pourquoi gérer les points de terminaison ?
 
@@ -59,17 +65,17 @@ Dans cette illustration :
 
 |&nbsp;|Étape|Description|Conditions d'octroi de licence|
 |---|---|---|---|
-|1|Configurer le point de départ des stratégies d’accès aux appareils et aux identités de confiance zéro|Travaillez en équipe avec l’administrateur des identités pour [Implémenter la protection des données des stratégies (APP) de niveau 2](manage-devices-with-intune-app-protection.md). Ces stratégies ne nécessitent pas une gestion des appareils. Vous configurez les stratégies de stratégie de protection des applications (SPA) dans Intune. L’administrateur des identités configure une stratégie d’accès conditionnel pour exiger des applications approuvées.|E3, E5, F1, F3, F5|
-|2|Inscrire des appareils dans Intune|Cette tâche nécessite davantage de planification et de temps pour son implémentation. Microsoft recommande d’utiliser Intune pour inscrire des appareils, car cet outil offre une intégration optimale. Il existe plusieurs options d’inscription d’appareils, en fonction de la plateforme. Par exemple, les appareils Windows peuvent être inscrits à l’aide de Azure AD Join ou d’Autopilot. Vous devez passer en revue les options de chaque plateforme et choisir l’option d’inscription la mieux adaptée à votre environnement. Pour plus d’informations, consultez [Étape 3— Inscrire des appareils sur Intune](manage-devices-with-intune-enroll.md) .|E3, E5, F1, F3, F5|
-|3|Configurer des stratégies de conformité|Vous souhaitez vous assurer que les appareils qui accèdent à vos applications et données répondent aux exigences minimales, par exemple les appareils sont protégés par mot de passe ou par code confidentiel et le système d’exploitation est à jour. Les stratégies de conformité sont le moyen de définir les exigences que les appareils doivent respecter. [Étape 3. La configuration des stratégies de conformité](manage-devices-with-intune-compliance-policies.md) vous permet de configurer ces stratégies.|E3, E5, F3, F5|
-|4|Configurer les stratégies d’entreprise d’accès aux appareils et aux identités de confiance zéro (recommandé)|Maintenant que vos appareils sont inscrits, vous pouvez travailler avec l’administrateur des identités pour [régler les stratégies d’accès conditionnel afin d’exiger des appareils sains et conformes](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
-|5|Déployer des profils de configuration|Par opposition aux stratégies de conformité des appareils qui marquent simplement un appareil comme conforme ou non en fonction des critères que vous configurez, les profils de configuration modifient réellement la configuration des paramètres sur un appareil. Vous pouvez utiliser des stratégies de configuration pour renforcer les appareils contre les cybermenaces. Voir l’[Étape 5. Déployer des profils de configuration.](manage-devices-with-intune-configuration-profiles.md)|E3, E5, F3, F5|
-|6 |Surveiller les risques et la conformité des appareils avec les bases de référence de sécurité|Dans cette étape, vous connectez Intune à Microsoft Defender pour point de terminaison. Grâce à cette intégration, vous pouvez ensuite surveiller les risques des appareils comme condition d’accès. Les appareils dont l’état est à risque sont bloqués. Vous pouvez également surveiller la conformité avec les bases de référence de sécurité. Voir l’[Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).|E5, F5|
-|7 |Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations|Si votre organisation a travaillé pour identifier les données sensibles et étiqueter les documents, vous pouvez travailler avec l’administrateur de protection des informations pour [protéger les informations sensibles et les documents sur vos appareils](manage-devices-with-intune-dlp-mip.md).|Module complémentaire de conformité E5, F5|
+|1|Configurer le point de départ des stratégies d’accès aux appareils et aux identités de confiance zéro|Travaillez avec votre administrateur [**d'identité pour mettre en œuvre des stratégies de protection des données APP (App Protection Policies) de niveau 2**](manage-devices-with-intune-app-protection.md). Ces stratégies ne nécessitent pas une gestion des appareils. Vous configurez les stratégies de stratégie de protection des applications (SPA) dans Intune. L’administrateur des identités configure une stratégie d’accès conditionnel pour exiger des applications approuvées.|E3, E5, F1, F3, F5|
+|2|Inscrire des appareils dans Intune|Cette tâche nécessite davantage de planification et de temps pour son implémentation. Microsoft recommande d’utiliser Intune pour inscrire des appareils, car cet outil offre une intégration optimale. Il existe plusieurs options d’inscription d’appareils, en fonction de la plateforme. Par exemple, les appareils Windows peuvent être inscrits à l’aide de Azure AD Join ou d’Autopilot. Vous devez passer en revue les options de chaque plateforme et choisir l’option d’inscription la mieux adaptée à votre environnement. Voir [**Étape 2. Inscrire les appareils à Intune**](manage-devices-with-intune-enroll.md) pour plus d'informations.|E3, E5, F1, F3, F5|
+|3|Configurer des stratégies de conformité|Vous souhaitez vous assurer que les appareils qui accèdent à vos applications et données répondent aux exigences minimales, par exemple les appareils sont protégés par mot de passe ou par code confidentiel et le système d’exploitation est à jour. Les stratégies de conformité sont le moyen de définir les exigences que les appareils doivent respecter. [**Étape 3. Configurer les stratégies**](manage-devices-with-intune-compliance-policies.md) de conformité vous aide à configurer ces stratégies.|E3, E5, F3, F5|
+|4|Configurer les stratégies d’entreprise d’accès aux appareils et aux identités de confiance zéro (recommandé)|Maintenant que vos appareils sont inscrits, vous pouvez travailler avec votre administrateur [**d'identité pour ajuster les stratégies d'accès conditionnel afin d'exiger des appareils sains et conformes**](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
+|5|Déployer des profils de configuration|Par opposition aux stratégies de conformité des appareils qui marquent simplement un appareil comme conforme ou non en fonction des critères que vous configurez, les profils de configuration modifient réellement la configuration des paramètres sur un appareil. Vous pouvez utiliser des stratégies de configuration pour renforcer les appareils contre les cybermenaces. Voir l’[**Étape 5. Déployer des profils de configuration.**](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
+|6 |Surveiller les risques et la conformité des appareils avec les bases de référence de sécurité|Dans cette étape, vous connectez Intune à Microsoft Defender pour point de terminaison. Grâce à cette intégration, vous pouvez ensuite surveiller les risques des appareils comme condition d’accès. Les appareils dont l’état est à risque sont bloqués. Vous pouvez également surveiller la conformité avec les bases de référence de sécurité. Voir [**l'étape 6. Surveillez les risques liés aux appareils et la conformité aux lignes de base de sécurité**](manage-devices-with-intune-monitor-risk.md).|E5, F5|
+|7 |Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations|Si votre organisation a fait le nécessaire pour identifier les données sensibles et étiqueter les documents, vous pouvez collaborer avec votre administrateur chargé de la [**protection des informations pour protéger les informations et les documents sensibles sur vos appareils**](manage-devices-with-intune-dlp-mip.md).|Module complémentaire de conformité E5, F5|
 
 ## <a name="coordinating-endpoint-management-with-zero-trust-identity-and-device-access-policies"></a>Coordination de la gestion du point de terminaison avec des stratégies d’accès aux appareils et aux identités de confiance zéro
 
-Ces instructions sont étroitement coordonnées avec les [Stratégies d’accès aux appareils et aux identités de confiance zéro](../security/office-365-security/microsoft-365-policies-configurations.md) recommandées. Vous collaborez avec l’équipe chargée des identités pour assurer la protection que vous configurez avec Intune dans les stratégies d’accès conditionnel Azure AD.
+Ces conseils sont étroitement coordonnés avec les stratégies recommandées de confiance [**zéro en matière d'identité et d'accès aux appareils**](../security/office-365-security/microsoft-365-policies-configurations.md). Vous collaborez avec l’équipe chargée des identités pour assurer la protection que vous configurez avec Intune dans les stratégies d’accès conditionnel Azure AD.
 
 Voici une illustration de la stratégie recommandée définie avec des légendes d’étape pour le travail que vous allez faire dans Intune/MEM et les stratégies d’accès conditionnel associées que vous allez coordonner dans Azure AD.
 
@@ -77,7 +83,7 @@ Voici une illustration de la stratégie recommandée définie avec des légendes
 
 Dans cette illustration :
 
-- À l’étape 1, [Implémente des stratégies de protection des applications (APP) de niveau 2](manage-devices-with-intune-app-protection.md), vous configurez le niveau recommandé de protection des données avec les stratégies APP. Vous travaillez ensuite avec l’équipe chargée des identités pour configurer la règle d’accès conditionnel associée afin d’exiger l’utilisation de cette protection.
+- À l'étape 1, [**Mettre en œuvre les stratégies de protection des applications (APP)**](manage-devices-with-intune-app-protection.md) de niveau 2, vous configurez le niveau recommandé de protection des données avec les stratégies APP. Vous travaillez ensuite avec l’équipe chargée des identités pour configurer la règle d’accès conditionnel associée afin d’exiger l’utilisation de cette protection.
 - Aux étapes 2, 3 et 4, vous inscrivez des appareils à la gestion avec Intune, définissez des stratégies de conformité des appareils, puis vous coordonnez avec votre équipe d’identité pour configurer la règle d’accès conditionnel associée afin d’autoriser uniquement l’accès aux appareils conformes.
 
 <!---
@@ -112,14 +118,6 @@ Notez que seul Intune gère les appareils. L’intégration fait référence à 
 |Autres méthodes     |   Les autres méthodes d’inscription dépendent de la plateforme de l’appareil et s’il est BYOD ou géré par votre organisation.      | Les autres méthodes d’intégration des appareils sont les suivantes, dans l’ordre recommandé :<br><li>Gestionnaire de configuration<li>Autre outil de gestion des périphériques mobiles (si l’appareil est géré par un seul)<li>Script local<li>Package de configuration VDI pour l’intégration d’appareils d’infrastructure de bureau virtuel (VDI) non persistants<li>Stratégie de groupe|
 | | |     |
 
-Notez que seul Intune gère les appareils. L’intégration fait référence à la possibilité pour un appareil de partager des informations avec une fonctionnalité de service spécifique. Le tableau suivant récapitule les différences entre l’inscription d’appareils dans la gestion et l’intégration d’appareils pour une fonctionnalité spécifique.
-
-|&nbsp;|Inscription|Intégrer|
-|---|---|---|
-|Description|L’inscription s’applique à la gestion des appareils. Les appareils sont inscrits pour la gestion avec Intune ou Gestionnaire de configuration.|L’intégration configure un appareil pour qu’il fonctionne avec un ensemble spécifique de fonctionnalités dans Microsoft 365. Actuellement, l’intégration s’applique à Microsoft Defender pour point de terminaison et aux fonctionnalités de conformité Microsoft. <br/><br/> Sur les appareils Windows, l’intégration implique de basculer un paramètre dans Windows Defender qui permet à Defender de se connecter au service en ligne et d’accepter les stratégies qui s’appliquent à l’appareil.|
-|Portée|Ces outils de gestion des appareils gèrent l’ensemble de l’appareil, notamment la configuration de l’appareil pour atteindre des objectifs spécifiques, tels que la sécurité.|L’intégration affecte uniquement les fonctionnalités qui s’appliquent.|
-|Méthodes recommandées|Azure Active Directory jointure inscrit automatiquement les appareils dans Intune.|Intune est la méthode préférée pour intégrer des appareils à Windows Defender pour point de terminaison, et par conséquent les fonctionnalités de Microsoft Purview. <br/><br/> Notez que les appareils intégrés aux fonctionnalités Microsoft Purview à l’aide d’autres méthodes ne sont pas inscrits automatiquement à Defender pour point de terminaison.|
-|Autres méthodes|Les autres méthodes d’inscription dépendent de la plateforme de l’appareil et s’il est BYOD ou géré par votre organisation.|Les autres méthodes d’intégration des appareils sont les suivantes, dans l’ordre recommandé : <ul><li>Gestionnaire de configuration</li><li>Autre outil de gestion des périphériques mobiles (si l’appareil est géré par un seul)</li><li>Script local</li><li>Package de configuration VDI pour l’intégration d’appareils d’infrastructure de bureau virtuel (VDI) non persistants</li><li>Stratégie de groupe</li></ul>|
 
 ## <a name="learning-for-administrators"></a>Apprentissage pour les administrateurs
 

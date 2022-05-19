@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 7dc6c65221211367e080fac46506f209d17f88ff
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174492"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587443"
 ---
 # <a name="set-up-email-notifications"></a>Configurer des notifications par e-mail
 
@@ -67,6 +67,9 @@ Pour afficher ou modifier les paramètres de notification par e-mail de votre en
    - Si vous ne voyez pas d’éléments répertoriés sous l’onglet **Vulnérabilités** , vous pouvez créer une règle pour que les personnes soient averties chaque fois qu’une nouvelle vulnérabilité est détectée. Pour obtenir de l’aide sur cette tâche, consultez [Créer des règles pour les événements de vulnérabilité](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
    - Si des règles sont créées, sélectionnez une règle pour la modifier. Vous pouvez également supprimer une règle. 
+
+> [!IMPORTANT]
+> Lorsque vous configurez des notifications par e-mail dans Defender entreprise, vous devez affecter les règles de notification à des utilisateurs spécifiques. Defender entreprise n’utilise pas le [contrôle d’accès en fonction du rôle, comme le fait Defender pour point de terminaison](../defender-endpoint/rbac.md). En outre, les notifications par e-mail ne peuvent pas être appliquées aux groupes d’appareils dans Defender entreprise. 
 
 ## <a name="next-steps"></a>Prochaines étapes
 

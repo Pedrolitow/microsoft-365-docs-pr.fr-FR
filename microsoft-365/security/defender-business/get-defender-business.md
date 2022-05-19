@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 6ac255fecaad4fd442116d4abb951be71d3ce6c7
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173135"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587389"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour les PME
 
@@ -46,7 +46,7 @@ Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu vo
 3. Passez à [Ajouter des utilisateurs et attribuez des licences](mdb-add-users.md).
 
 > [!TIP]
-> Veillez à voir le [playbook Trial : Microsoft Defender pour les PME](trial-playbook-defender-business.md).
+> Consultez le [playbook d’évaluation pour Defender entreprise](trial-playbook-defender-business.md).
 
 ## <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
 
@@ -84,8 +84,8 @@ Lorsque vous recevez votre e-mail d’acceptation, voici comment activer votre a
 
    | Scénario | Procedure |
    |:---|:---|
-   | Vous configurez un abonnement Microsoft 365 pour la première fois. | Sélectionnez **Atteindre la configuration guidée** et effectuez les étapes suivantes :<br/><br/>1. Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)<br/><br/>2. Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.<br/><br/>3. Ajoutez des utilisateurs et attribuez des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](mdb-add-users.md). |
-   | Vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant. | 1. Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.<br/><br/>2. Dans le volet de navigation, choisissez **utilisateurs UsersActive** > . Passez en revue la liste des utilisateurs. <br/><br/>3. Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md). |
+   | Vous configurez un abonnement Microsoft 365 pour la première fois. | Sélectionnez **Atteindre la configuration guidée** et effectuez les étapes suivantes :<ol><li>Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)</li><li>Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.</li><li>Ajoutez des utilisateurs et attribuez des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](mdb-add-users.md).</li></ol> |
+   | Vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant. | <ol><li>Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.</li><li>Dans le volet de navigation, choisissez **utilisateurs UsersActive** > . Passez en revue la liste des utilisateurs. </li><li>Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>Deux portails pour l’installation
 
@@ -93,8 +93,8 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 
 |Portail  |Description  |
 |---------|---------|
-| Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez la Centre d'administration Microsoft 365 pour activer votre version d’évaluation et vous connecter pour la première fois.<br/><br/> Vous allez également utiliser le Centre d'administration Microsoft 365 pour : <br/>- Ajouter ou supprimer des utilisateurs.<br/>- Attribuer des licences utilisateur.<br/>- Affichez vos produits et services.<br/>- Effectuez les tâches d’installation de votre abonnement Microsoft 365. <br/><br/> Pour en savoir plus, consultez [Vue d’ensemble de l’Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer. <br/><br/>Vous allez utiliser le portail Microsoft 365 Defender pour : <br/>- Affichez vos appareils et stratégies de protection des appareils.<br/>- Afficher les menaces détectées et prendre des mesures.<br/>- Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.<br/><br/>Pour en savoir plus, consultez [Démarrage à l’aide du portail Microsoft 365 Defender](mdb-get-started.md).        |
+| Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez la Centre d'administration Microsoft 365 pour activer votre version d’évaluation et vous connecter pour la première fois.<p> Vous allez également utiliser le Centre d'administration Microsoft 365 pour : <ul><li>Ajouter ou supprimer des utilisateurs.</li><li>Attribuez des licences utilisateur.</li><li>Affichez vos produits et services.</li><li>Effectuez les tâches d’installation de votre abonnement Microsoft 365.</li></ul><p>Pour en savoir plus, consultez [Vue d’ensemble de l’Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer.<p>Vous allez utiliser le portail Microsoft 365 Defender pour : <ul><li>Affichez vos appareils et stratégies de protection des appareils.</li><li>Affichez les menaces détectées et prenez des mesures.</li><li>Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.</li></ul><p>Pour en savoir plus, consultez [Démarrage à l’aide du portail Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
 > Si vous avez Microsoft 365 Business Premium, vous avez également Microsoft Intune. Vous pouvez utiliser le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour gérer les appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).

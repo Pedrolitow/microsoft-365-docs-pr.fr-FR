@@ -3,6 +3,7 @@ title: Gestion des points de terminaison Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer Office 365 points de terminaison afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: 6743ab1c3241b84b0eb1dd3e9f5e67e100e18b40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090338"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587465"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -47,6 +48,9 @@ Microsoft travaille avec les fournisseurs SD-WAN pour activer la configuration a
 Utilisez les fichiers PAC ou WPAD pour gérer les requêtes réseau associées à Office 365, mais qui n’ont aucune adresse IP. Les requêtes réseau classiques envoyées via un proxy ou un périphérique de périmètre augmentent la latence. Si l’arrêt et l’inspection de SSL créent la latence la plus élevée, d’autres services tels que l’authentification proxy et la recherche de réputation peuvent entraîner des performances médiocres et une expérience utilisateur incorrecte. De plus, ces périphériques réseau de périmètre ont besoin de suffisamment de ressources pour traiter toutes les requêtes de connexion réseau. Nous vous recommandons de contourner votre infrastructure de proxy ou d’inspection pour les requêtes réseau Office 365 directes.
   
 [PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) est un script PowerShell qui lit les derniers points de terminaison réseau à partir de l’adresse IP et du service Web d’URL Office 365 et crée un exemple de fichier PAC. Vous pouvez modifier le script de sorte qu’il s’intègre à votre gestion de fichiers PAC existante.
+
+> [!NOTE]
+> Pour plus d’informations sur les considérations relatives à la sécurité et aux performances de la connectivité directe aux points de terminaison Office 365, consultez [Office 365 principes de connectivité réseau](microsoft-365-network-connectivity-principles.md).
 
 ![Connexion à Office 365 via des pare-feu et des proxys.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -73,7 +77,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Il existe de nombreux paramètres que vous pouvez passer au script :
 
-| Paramètre | Description |
+| Parameter | Description |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est requis et il s’agit d’un GUID transmis au service Web qui représente l’ordinateur client à l’origine de l’appel. <br/> |
 |**Instance** <br/> |Instance de service Office 365, qui est par défaut Worldwide. Il est également transmis au service web. <br/> |
