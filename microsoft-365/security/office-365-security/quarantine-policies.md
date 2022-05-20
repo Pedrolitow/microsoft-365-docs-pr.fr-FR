@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f24592460daa4f476e969069d0c1b7636f6a23e
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285541"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599318"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -45,15 +45,15 @@ Les autorisations de stratégie de quarantaine individuelles contenues dans les 
 |Autorisation|Pas d’accès|Accès limité|Accès complet|
 |---|:---:|:---:|:---:|
 |**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Préversion** (_PermissionToPreview_)||![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Préversion** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)|||![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à demander la mise en quarantaine d’un message** (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
 
 Les stratégies de quarantaine par défaut, leurs groupes d’autorisations associés et si les notifications de quarantaine sont activées sont décrites dans le tableau suivant :
 
 |Stratégie de quarantaine par défaut|Groupe d’autorisations utilisé|Notifications de quarantaine activées ?|
-|---|---|---|
+|---|:---:|:---:|
 |AdminOnlyAccessPolicy|Pas d’accès|Non|
 |DefaultFullAccessPolicy|Accès complet|Non|
 |NotificationEnabledPolicy<sup>\*</sup>|Accès complet|Oui|
@@ -104,7 +104,7 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
        - **Autoriser les destinataires à libérer un message de la quarantaine**
        - **Autoriser les destinataires à demander la libération d’un message de quarantaine**
      - **Sélectionnez des actions supplémentaires que les destinataires peuvent effectuer sur les messages mis en quarantaine** : sélectionnez certaines valeurs, toutes ou aucune des valeurs suivantes :
-       - **Supprimer**
+       - **Delete**
        - **Aperçu**
        - **Bloquer l’expéditeur**
 

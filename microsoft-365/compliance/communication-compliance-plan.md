@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bda0874ef829495b162beae09fde1c4efcb03c85
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 22e5ed11c97ed00449cb62439e105bd1e6dc78e7
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971558"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599544"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
 
@@ -32,12 +32,14 @@ ms.locfileid: "64971558"
 
 Avant de commencer à vous familiariser avec [la conformité des communications](communication-compliance.md) au sein de votre organisation, vos équipes de gestion des technologies de l’information et de la conformité doivent examiner les activités et considérations de planification importantes. Une bonne compréhension et une planification approfondies du déploiement dans les domaines suivants vous aideront à garantir que votre implémentation et votre utilisation des fonctionnalités de conformité des communications se déroulent correctement et sont alignées sur les meilleures pratiques pour la solution.
 
+Pour plus d’informations et pour obtenir une vue d’ensemble du processus de planification visant à résoudre les problèmes de conformité et les activités à risque au sein de votre organisation, consultez [Démarrage d’un programme de gestion des risques internes](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
+
 > [!IMPORTANT]
 > La conformité des communications est actuellement disponible dans les locataires hébergés dans des régions géographiques et des pays pris en charge par les dépendances du service Azure. Pour vérifier que la conformité des communications est prise en charge pour votre organisation, consultez [la disponibilité des dépendances Azure par pays/région](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la supervision dans Office 365
 
-Pour les organisations qui utilisent des stratégies de supervision dans Office 365, vous devez immédiatement planifier la transition vers des stratégies de conformité des communications dans Microsoft Purview et comprendre les points importants suivants :
+Pour les organisations qui utilisent des stratégies de supervision dans Office 365, vous devez immédiatement planifier la transition vers des stratégies de conformité des communications dans Microsoft Purview et devez comprendre ces points importants :
 
 - La solution de supervision dans Office 365 a été entièrement remplacée par la solution de conformité des communications dans Microsoft Purview. Nous vous recommandons de créer des stratégies de conformité des communications qui ont les mêmes paramètres que les stratégies de supervision existantes pour utiliser les nouvelles améliorations apportées à l’examen et à la correction.
 - Les messages enregistrés dans la supervision dans Office 365 correspondances de stratégie ne peuvent pas être déplacés ou partagés dans la conformité des communications.
@@ -60,17 +62,17 @@ Identifiez les parties prenantes appropriées de votre organisation pour collabo
 
 ### <a name="permissions"></a>Autorisations
 
-Sélectionnez des parties prenantes dédiées pour surveiller et passer en revue les alertes et les cas à une cadence régulière dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/). Veillez à comprendre comment vous allez affecter des utilisateurs et des parties prenantes à différents groupes de rôles de conformité des communications au sein de votre organisation.
+Sélectionnez des parties prenantes dédiées pour surveiller et examiner régulièrement les alertes et les cas dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/). Veillez à comprendre comment vous allez affecter des utilisateurs et des parties prenantes à différents groupes de rôles de conformité des communications au sein de votre organisation.
 
 > [!IMPORTANT]
 > Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
 
-Six groupes de rôles sont utilisés pour configurer les autorisations initiales pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des communications** disponible en tant qu’option de menu dans le portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
+Six groupes de rôles sont utilisés pour configurer les autorisations initiales pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des communications** disponible en tant qu’option de menu dans portail de conformité Microsoft Purview et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
 
 - Azure Active Directory rôle [*d’administrateur général*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - Azure Active Directory rôle [*d’administrateur de conformité*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
-- Groupe de rôles [*Gestion de l’organisation du*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portail de conformité Microsoft Purview
-- Groupe de [*rôles Administrateur*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) de conformité du portail de conformité Microsoft Purview
+- portail de conformité Microsoft Purview groupe [*de rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- groupe de [*rôles administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) portail de conformité Microsoft Purview
 - *Groupe de rôles Conformité des communications*
 - *Groupe de rôles Administrateur de la conformité des communications*
 
@@ -78,8 +80,8 @@ Les membres des rôles suivants disposent des mêmes autorisations de solution i
 
 - *administrateur général* Azure Active Directory
 - *administrateur de conformité* Azure Active Directory
-- *Gestion de l’organisation* du portail de conformité Microsoft Purview
-- *Administrateur* de conformité du portail de conformité Microsoft Purview
+- *gestion de l’organisation* portail de conformité Microsoft Purview
+- *Administrateur de conformité* portail de conformité Microsoft Purview
 
 > [!IMPORTANT]
 > Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de rôles *Conformité* des communications ou Administration de la *conformité* des communications (en fonction de l’option que vous choisissez) afin que votre configuration de conformité des communications n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
@@ -118,7 +120,7 @@ Utilisez le graphique suivant pour vous aider à configurer des groupes dans vot
 | **Membre de stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Néant | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
 
 ### <a name="privacy"></a>Confidentialité
 

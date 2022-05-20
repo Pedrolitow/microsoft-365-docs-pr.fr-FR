@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: fc641845907e157e555e70104b2fcb472ad496af
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438024"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599274"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -67,7 +67,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
     - Maximum de 100 politiques d'étiquetage automatique par locataire, chacune visant jusqu'à 100 sites (SharePoint ou OneDrive) lorsqu'elles sont spécifiées individuellement. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
     - Les valeurs existantes pour les valeurs modifiées, modifiées par et la date ne sont pas modifiées en raison des stratégies d’étiquetage automatique, pour le mode de simulation et le moment où les étiquettes sont appliquées.
-    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier. Si ce compte n’est plus dans Azure Active Directory Domain Services, l’étiquette ne sera pas appliquée, car ces valeurs ne peuvent pas être définies.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier.
 
     Spécifique à l’étiquetage automatique pour Exchange :
     

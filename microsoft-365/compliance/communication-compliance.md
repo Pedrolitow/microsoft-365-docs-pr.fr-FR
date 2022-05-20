@@ -21,21 +21,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd7ab3040b261fb7c664d92b73a069cc8ba6e3b5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997315"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599208"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
 > [!TIP]
-> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent commencer maintenant sur le [hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview Communication Compliance est une solution à risque interne qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les e-mails analysés, les Microsoft Teams, les Yammer ou les communications tierces au sein de votre organisation et prendre les mesures appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
+Conformité des communications Microsoft Purview est une solution à risque interne qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les e-mails analysés, les Microsoft Teams, les Yammer ou les communications tierces au sein de votre organisation et prendre les mesures appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
 
 Les stratégies de conformité des communications dans Microsoft 365 vous aident à surmonter de nombreux défis modernes liés à la conformité et aux communications internes et externes, notamment :
 
@@ -44,6 +44,8 @@ Les stratégies de conformité des communications dans Microsoft 365 vous aident
 - Application de la réglementation et risque de pénalité
 
 En outre, il peut y avoir une séparation des tâches entre vos administrateurs informatiques et votre équipe de gestion de la conformité. La conformité des communications prend en charge la séparation entre la configuration des stratégies et l’examen et l’examen des messages. Par exemple, le groupe informatique de votre organisation peut être responsable de la configuration des autorisations de rôle de conformité des communications, des groupes et des stratégies, et les enquêteurs et les réviseurs peuvent être responsables du triage des messages, de l’examen et des actions d’atténuation.
+
+Pour plus d’informations et pour obtenir une vue d’ensemble du processus de planification visant à résoudre les problèmes de conformité et les activités à risque au sein de votre organisation, consultez [Démarrage d’un programme de gestion des risques internes](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Pour obtenir les dernières présentations Ignite pour la conformité des communications, consultez les vidéos suivantes :
 
@@ -117,7 +119,7 @@ De nouveaux tableaux de bord interactifs pour les alertes, correspondances de st
 
 - **Alertes intelligentes proactives** : les alertes relatives aux correspondances de stratégie nécessitant une attention immédiate incluent de nouveaux tableaux de bord pour les éléments en attente triés par gravité et les nouvelles notifications par courrier électronique automatiques envoyées aux relecteurs désignés.
 - **Tableaux de bord interactifs** : les nouveaux tableaux de bord affichent les correspondances de stratégie, les actions en attente et résolues, et les tendances des utilisateurs et de la stratégie.
-- **Prise en charge de l’audit** : un journal complet des activités de stratégie et de révision est facilement exporté à partir du portail de conformité Microsoft Purview pour vous aider à prendre en charge les demandes de révision d’audit.
+- **Prise en charge de l’audit** : un journal complet des activités de stratégie et d’examen est facilement exporté à partir du portail de conformité Microsoft Purview pour faciliter la prise en charge des demandes de révision d’audit.
 
 ## <a name="integration-with-microsoft-365-services"></a>Intégration aux services Microsoft 365
 
@@ -179,7 +181,7 @@ L’étape suivante consiste à corriger les problèmes de conformité des commu
 - **Réaffecter à un autre réviseur** : parfois, le réviseur initial d’un problème doit être saisi par d’autres réviseurs pour résoudre l’incident. Vous pouvez facilement transmettre les problèmes de message aux réviseurs d’autres zones de votre organisation dans le cadre du processus de résolution.
 - **Marquer comme un faux positif** : les messages détectés de façon incorrecte comme correspondances pour les stratégies de conformité peuvent arriver dans le processus de révision. Vous pouvez marquer ces types d'alertes comme mal classées, soumettre des commentaires à Microsoft sur la mauvaise classification pour aider à améliorer les classificateurs globaux et résoudre automatiquement le problème.
 - **Supprimer le message dans Teams (aperçu)** : les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés qui sont supprimés sont remplacés par une notification indiquant que le message a été supprimé pour cause de violation de la politique.
-- **Transférer pour enquête** : dans les situations les plus graves, vous devrez peut-être partager les informations relatives à la conformité des communications avec d'autres examinateurs de votre organisation. La conformité des communications est étroitement intégrée à d’autres fonctionnalités de Microsoft Purview pour vous aider à résoudre les risques de bout en bout. L’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas à Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+- **Transférer pour enquête** : dans les situations les plus graves, vous devrez peut-être partager les informations relatives à la conformité des communications avec d'autres examinateurs de votre organisation. La conformité de la communication est étroitement intégrée aux autres fonctionnalités de Microsoft Purview pour vous aider à résoudre les risques de bout en bout. L’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas vers Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 
 ### <a name="monitor"></a>Surveiller
 

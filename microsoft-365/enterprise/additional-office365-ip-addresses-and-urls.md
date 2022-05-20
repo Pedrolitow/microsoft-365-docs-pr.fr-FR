@@ -3,7 +3,7 @@ title: Autres points de terminaison non inclus dans le service Web d’adresse I
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/18/2022
+ms.date: 05/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service Web de point de terminaison n’inclut pas quelques points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: bebffa1cb03a85ffd5ab7519095f38b7ae5cf985
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: 01fbd54ed5addb8552c59e2be8de76961e613968
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587345"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599164"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Autres points de terminaison non inclus dans le service Web d’adresse IP et d’URL Office 365
 
@@ -54,7 +54,7 @@ Outre DNS, ces instances sont toutes facultatives pour la plupart des clients, s
 |3|**Azure AD Connecter (option w/SSO)** <p> WinRM & PowerShell distant|Environnement STS client (serveur AD FS et proxy AD FS) \| Ports TCP 80 et 443|Trafic serveur entrant|
 |4|**STS** tels que les serveurs proxy AD FS (pour les clients fédérés uniquement)|STS client (comme un proxy AD FS) \| Ports TCP 443 ou TCP 49443 avec ClientTLS|Trafic serveur entrant|
 |5|**[Intégration de la messagerie unifiée Exchange Online/SBC](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|Bidirectionnel entre le contrôleur de frontière de session local et \*.um.outlook.com|Trafic serveur sortant uniquement|
-|6 |**Migration de boîte aux lettres**<p>Lorsque la migration de boîte aux lettres est lancée à partir [d’un Exchange hybride](/exchange/exchange-deployment-assistant) local vers Office 365, Office 365 se connecte à votre serveur EWS (Exchange Web Services)/Mailbox Replication Services (MRS) publié. Si vous avez besoin des adresses IP NAT utilisées par Exchange Online serveurs pour restreindre les connexions entrantes à partir de plages d’adresses IP sources spécifiques, elles sont répertoriées dans [Office 365 URL & plages d’adresses IP](urls-and-ip-address-ranges.md) sous la zone de service « Exchange Online ». <p> Veillez à ce que l’accès aux points de terminaison EWS publiés comme OWA ne soit pas affecté en veillant à ce que le proxy MRS soit résolu en un nom de domaine complet et une adresse IP publique distincts avant de restreindre les connexions TCP 443 à partir de plages d’adresses IP sources spécifiques.|Proxy EWS/MRS local client <br> Port TCP 443.|Trafic serveur entrant|
+|6 |**Migration de boîte aux lettres**<p>Lorsque la migration de boîte aux lettres est lancée à partir [d’un Exchange hybride](/exchange/exchange-deployment-assistant) local vers Office 365, Office 365 se connecte à votre serveur EWS (Exchange Web Services)/Mailbox Replication Services (MRS) publié. Si vous devez autoriser les connexions entrantes uniquement à partir de plages d’adresses IP sources spécifiques, créez une règle d’autorisation pour les adresses IP répertoriées dans la table **Exchange Online** dans [Office 365 URL & plages d’adresses IP](urls-and-ip-address-ranges.md). <p> Pour vous assurer que la connectivité aux points de terminaison EWS publiés (comme OWA) n’est pas bloquée, assurez-vous que le proxy MRS se résout en un nom de domaine complet et une adresse IP publique distincts avant de restreindre les connexions.|Proxy EWS/MRS local client <br> Port TCP 443.|Trafic serveur entrant|
 |7 |**[Exchange fonctions de coexistence hybride](/exchange/exchange-deployment-assistant)** telles que le partage libre/occupé.|Serveur Exchange client local|Trafic serveur entrant|
 |8 |**[Exchange l’authentification](/exchange/exchange-deployment-assistant) par proxy hybride**|STS local client|Trafic serveur entrant|
 |9 |Utilisé pour configurer [Exchange hybride](/exchange/exchange-deployment-assistant) à l’aide de l’Assistant **[Configuration hybride Exchange](/exchange/hybrid-configuration-wizard)** <p> Remarque : ces points de terminaison sont uniquement nécessaires pour configurer Exchange hybride|domains.live.com sur les ports TCP 80 et 443, obligatoire uniquement pour l’Assistant Configuration hybride Exchange 2010 SP3. <p> GCC High, DoD IP addresses: 40.118.209.192/32; 168.62.190.41/32 <p> & Cloud de la communauté du secteur public commerciales mondiales : \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <br> aka.ms/hybridwizard; <br> \*shcwreleaseprod.blob.core.windows.net/shcw/;|Trafic serveur sortant uniquement|

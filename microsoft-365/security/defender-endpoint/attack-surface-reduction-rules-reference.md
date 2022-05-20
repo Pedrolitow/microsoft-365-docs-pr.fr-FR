@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363057"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599566"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -174,7 +174,7 @@ _Le mode d’avertissement_ est un type de mode bloc qui alerte les utilisateurs
 
 Si vous cliquez sur le bouton Autoriser, le bloc est supprimé pendant 24 heures. Après 24 heures, l’utilisateur final doit autoriser à nouveau le bloc. Le mode d’avertissement pour les règles ASR est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté aux règles ASR sur les appareils avec des versions antérieures, la règle est en mode bloqué.
 
-Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant simplement le AttackSurfaceReductionRules_Actions en tant que « Avertir ». Par exemple :
+Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant simplement le AttackSurfaceReductionRules_Actions en tant que « Avertir ». Par exemple :
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -332,6 +332,9 @@ Dépendances : MDAV, Protection cloud
 Cette règle détecte les propriétés suspectes dans un script masqué.
 
 L’obfuscation de script est une technique courante que les auteurs de programmes malveillants et les applications légitimes utilisent pour masquer la propriété intellectuelle ou réduire les temps de chargement des scripts. Les auteurs de programmes malveillants utilisent également l’obfuscation pour rendre le code malveillant plus difficile à lire, ce qui empêche un examen approfondi par les humains et les logiciels de sécurité.
+
+> [!IMPORTANT]
+> En raison du nombre élevé de faux positifs, cette règle ne détecte pas actuellement les scripts PowerShell ; il s’agit d’une solution temporaire. La règle sera bientôt mise à jour et commence à redétection des scripts PowerShell.
 
 nom Intune :`Obfuscated js/vbs/ps/macro code`
 

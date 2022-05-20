@@ -1,6 +1,6 @@
 ---
 title: En savoir plus sur la gestion des risques internes Microsoft
-description: Découvrez comment réduire les risques dans votre organisation avec la gestion des risques internes dans Microsoft Purview.
+description: Découvrez comment réduire les risques au sein de votre organisation avec la gestion des risques internes dans Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, risque interne, gestion des risques, conformité
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -15,21 +15,23 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 69c24b9d26fb16936064d9099f0866ce60d16d2c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997029"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599252"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
 > [!TIP]
-> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent commencer maintenant sur le [hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
+> *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview Insider Risk Management est une solution de conformité qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risque internes vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris agir sur les cas et faire remonter les cas à Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+Gestion des risques internes Microsoft Purview est une solution de conformité qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risque internes vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris agir sur les cas et faire remonter les cas à Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+
+Pour plus d’informations et une vue d’ensemble du processus de planification pour traiter les activités à risque au sein de votre organisation, consultez [Démarrage d’un programme de gestion des risques internes](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques internes peut aider votre organisation à prévenir, détecter et contenir des risques tout en hiérarchisant les valeurs, la culture et l’expérience utilisateur de votre organisation :
 <br>
@@ -64,7 +66,7 @@ La gestion des risques internes est centrée sur les principes suivants :
 
 - **Transparence** : équilibrez la confidentialité des utilisateurs et les risques de l’organisation avec l’architecture de confidentialité par conception.
 - **Configurable** : stratégies configurables basées sur des groupes sectoriels, géographiques et d’entreprise.
-- **Intégré** : flux de travail intégré dans les solutions Microsoft Purview.
+- **Intégré** : flux de travail intégré dans Microsoft Purview solutions.
 - **Actionnable** : fournit des insights pour activer les notifications de réviseur, les investigations de données et les investigations utilisateur.
 
 ## <a name="identifying-potential-risks-with-analytics"></a>Identification des risques potentiels avec l’analytique
@@ -145,7 +147,7 @@ Une fois les cas examinés, les réviseurs peuvent agir rapidement pour résoudr
 
 Dans les situations les plus graves, vous devrez peut-être partager les informations sur les cas de gestion des risques internes avec d’autres réviseurs ou services de votre organisation. La gestion des risques internes est étroitement intégrée à d’autres solutions Microsoft Purview pour vous aider à résoudre les risques de bout en bout.
 
-- **eDiscovery (Premium)** : l’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas vers Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md).
+- **eDiscovery (Premium)** : l’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas vers Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 - **intégration des API de gestion Office 365 (préversion)** : la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services SIEM (Security Information and Event Management) via les API de gestion Office 365. Avoir accès aux informations d’alerte dans la plateforme le mieux adapté aux processus de risque de votre organisation vous donne plus de flexibilité dans la façon d’agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec Office 365 API de gestion, consultez [Exporter des alertes](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Gérer SharePoint Syntex avec PowerShell
+title: Gérer SharePoint Syntex à l’aide de PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,35 +12,35 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Découvrez comment gérer les SharePoint Syntex avec PowerShell.
-ms.openlocfilehash: 2c8383a3708d83738d201a4e638deb65462da47d
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Découvrez comment gérer SharePoint Syntex avec PowerShell.
+ms.openlocfilehash: 5a0efa3a67ad6366c6160dc58a46bb1559345b9d
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525679"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599186"
 ---
-# <a name="manage-sharepoint-syntex-with-powershell"></a>Gérer SharePoint Syntex avec PowerShell
+# <a name="manage-sharepoint-syntex-by-using-powershell"></a>Gérer SharePoint Syntex à l’aide de PowerShell
 
 > [!IMPORTANT]
-> Les SharePoint Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les aide. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
+> Les applets de commande PowerShell SharePoint Syntex et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les prend en charge. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
-Pour ces scénarios, les cmdlets SharePoint Syntex dans le module PowerShell PnP peuvent être utilisées pour interagir avec les modèles et les explications. Pour en savoir plus sur l’installation de ce module, voir [vue d’ensemble de PowerShell PnP](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
+Pour ces scénarios, les applets de commande SharePoint Syntex dans le module PowerShell PnP peuvent être utilisées pour interagir avec des modèles et des explications. Pour en savoir plus sur l’installation de ce module, consultez la [vue d’ensemble de PnP PowerShell](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
 
-Sélectionnez parmi les scénarios suivants pour apprendre à utiliser PowerShell pour gérer les SharePoint Syntex :
+Sélectionnez parmi les scénarios suivants pour apprendre à utiliser PowerShell pour gérer SharePoint Syntex :
 
-- [**Modèles d’importation et d’exportation**](powershell-syntex-import-export.md)
+- [**Importer et exporter des modèles**](powershell-syntex-import-export.md)
 
-    Commencez ici si vous souhaitez apprendre à exporter des modèles de compréhension de documents à partir d’un centre de contenu et à importer dans un autre centre de contenu ou client.
+    Commencez ici si vous souhaitez apprendre à exporter des modèles de compréhension de document à partir d’un centre de contenu et à les importer vers un autre centre de contenu ou locataire.
 
 - [**Publishing**](powershell-syntex-publishing.md)
 
-    Commencez ici si vous souhaitez apprendre à utiliser PowerShell pour publier des modèles de présentation de documents dans des bibliothèques de documents.
+    Commencez ici si vous souhaitez apprendre à utiliser PowerShell pour publier des modèles de compréhension de document dans des bibliothèques de documents.
 
 - [**Traitement**](powershell-syntex-processing.md)
 
-    Commencez ici si vous souhaitez apprendre à utiliser PowerShell pour déclencher le traitement de présentation des documents sur une bibliothèque de documents.
+    Commencez ici si vous souhaitez apprendre à utiliser PowerShell pour déclencher le traitement de la compréhension des documents sur une bibliothèque de documents.
 
 - [**Explications**](powershell-syntex-explanations.md)
 
-    Commencez ici si vous souhaitez apprendre à créer des modèles d’explication de document personnalisés à l’aide de PowerShell.
+    Commencez ici si vous souhaitez apprendre à créer des modèles d’explication de compréhension de document personnalisés à l’aide de PowerShell.
