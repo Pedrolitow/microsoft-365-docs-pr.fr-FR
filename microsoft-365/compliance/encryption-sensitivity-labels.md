@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469445"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599230"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -33,8 +33,8 @@ Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’
 
 - Seuls les utilisateurs de votre organisation peuvent ouvrir un document ou un e-mail confidentiel.
 - Seuls les utilisateurs du département marketing peuvent modifier et imprimer le document ou l’e-mail d’annonce de promotion, alors que tous les autres utilisateurs de votre organisation peuvent uniquement le lire.
-- Les utilisateurs ne peuvent pas transférer un e-mail ou y copier tout contenu relatif à une réorganisation interne.
-- La liste de prix à jour envoyée aux partenaires ne peut pas être ouverte après une date spécifiée.
+- Les utilisateurs ne peuvent pas transférer un e-mail ou y copier des informations relatives à une réorganisation interne.
+- La liste de prix actuelle envoyée aux partenaires commerciaux ne peut pas être ouverte après une date spécifiée.
 
 Lorsqu’un document ou un e-mail est chiffré, l’accès à son contenu est restreint de l’une des façons suivantes :
 
@@ -69,14 +69,14 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 
 - Configurer Exchange pour Azure Information Protection
     
-    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs e-mails. Toutefois, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
+    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection afin que les utilisateurs puissent appliquer des étiquettes dans Outlook dans le but de chiffrer leurs e-mails. Toutefois, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
     
-    Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
+    Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les courriers chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection de Rights Management. 
     
-    Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
+    Pour vérifier qu’Exchange peut prendre en charge ces scénarios supplémentaires :
     
     - Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](/azure/information-protection/deploy-rms-connector). 
+    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](/azure/information-protection/deploy-rms-connector).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>La configuration d’une étiquette pour le chiffrement
 
@@ -122,14 +122,14 @@ Le tableau ci-après précise ce qu’il advient du chiffrement existant lorsqu�
 
 <sup>\*</sup> Prise en charge par le client de l’étiquetage unifié d’Azure Information Protection.
 
-Dans le cas où le nouveau chiffrement d’étiquettes est appliqué ou si le chiffrement d’origine est supprimé, cela se produit uniquement si l’utilisateur appliquant l’étiquette dispose d'un droit ou d'un rôle qui prend en charge cette action :
+Dans le cas où le nouveau chiffrement d’étiquettes est appliqué ou si le chiffrement d’origine est supprimé, cela se produit uniquement si l’utilisateur qui applique l’étiquette dispose d'un droit ou d'un rôle qui prend en charge cette action :
 
 - Le [droit d'utilisation](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportation ou Contrôle total.
 - Rôle du [propriétaire ou de l'émetteur des Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) ou du [super utilisateur](/azure/information-protection/configure-super-users).
 
 Si l’utilisateur ne dispose pas de ces droits ou rôles, l’étiquette ne peut pas être appliquée et le chiffrement d’origine est préservé. L’utilisateur voit le message suivant : **Vous n’êtes pas autorisé à effectuer cette modification dans l’étiquette de confidentialité. Veuillez contacter le propriétaire du contenu.**
 
-Par exemple, la personne appliquant Ne pas transférer à un courrier électronique peut étiqueter de nouveau le thread afin de remplacer ou de supprimer le chiffrement, car elle est propriétaire des Rights Management de cet e-mail. À l’exception des super utilisateurs, les destinataires de ce message ne peuvent pas lui attribuer une nouvelle étiquette, car ils disposent pas des droits d’utilisation requis.
+Par exemple, la personne appliquant Ne pas transférer à un courrier peut étiqueter de nouveau le thread afin de remplacer ou de supprimer le chiffrement, car elle est propriétaire de Rights Management de cet e-mail. Mais à l’exception des super utilisateurs, les destinataires de ce courrier ne peuvent pas lui attribuer une nouvelle étiquette, car ils disposent pas des droits d’utilisation requis.
 
 #### <a name="email-attachments-for-encrypted-email-messages"></a>Pièces jointes des courriers électroniques chiffrés
 
@@ -146,7 +146,7 @@ Lorsque vous sélectionnez **Configurer les paramètres de confidentialité** su
 
 Par exemple, si vous avez une étiquette de confidentialité appelée **Hautement confidentiel** qui sera appliquée à votre contenu le plus sensible, vous souhaiterez peut-être choisir le type d’autorisations qui lui sont associées.
 
-Par ailleurs, si vous avez une étiquette de confidentialité appelée **Contrats professionnels** et que le flux de travail de votre organisation exige que vos collègues collaborent sur ce contenu avec d'autres personnes de façon ponctuelle, vous souhaiterez peut-être autoriser vos utilisateurs à décider qui obtient les autorisations lorsqu’ils attribuent l’étiquette. Cette flexibilité permet à la fois à vos utilisateurs de gagner en productivité et de réduire les demandes aux administrateurs de mise à jour ou de création de nouvelles étiquettes de confidentialité pour résoudre des scénarios spécifiques.
+Par ailleurs, si vous avez une étiquette de confidentialité appelée **Contrats professionnels** et que le flux de travail de votre organisation exige que vos collègues collaborent sur ce contenu avec d'autres personnes de façon non planifiée, vous souhaiterez peut-être autoriser vos utilisateurs à décider qui obtient les autorisations lorsqu’ils attribuent l’étiquette. Cette flexibilité permet à la fois à vos utilisateurs de gagner en productivité et de réduire les demandes aux administrateurs de mise à jour ou de création de nouvelles étiquettes de confidentialité pour résoudre des scénarios spécifiques.
 
 Choisissez d’attribuer des autorisations maintenant ou de permettre aux utilisateurs d’affecter des autorisations :
 
@@ -156,13 +156,22 @@ Choisissez d’attribuer des autorisations maintenant ou de permettre aux utilis
 
 Utilisez les options suivantes pour contrôler les utilisateurs autorisés à accéder aux e-mails ou aux documents auxquels cette étiquette est appliquée. Vous pouvez :
 
-- **Autoriser l’expiration des accès au contenu portant l’étiquette**, à une date spécifique ou au bout d’un certain nombre de jours après l’application de l’étiquette. Après cette période, les utilisateurs ne sont plus en mesure d’ouvrir l’élément étiqueté. Si vous spécifiez une date, elle prend effet le jour choisi à minuit dans votre fuseau horaire actuel. (Notez que certains clients de messagerie pourraient ne pas imposer l’expiration et ne pas afficher les e-mails dont la date d’expiration est dépassée, en raison de leurs mécanismes de mise en cache).
+- **Autoriser l’expiration des accès au contenu portant l’étiquette**, à une date spécifique ou au bout d’un certain nombre de jours après l’application de l’étiquette. Après cette période, les utilisateurs ne sont plus en mesure d’ouvrir l’élément étiqueté. Si vous spécifiez une date, elle prend effet le jour choisi à minuit dans votre fuseau horaire actuel. Certains clients de messagerie pourraient ne pas imposer l’expiration et ne pas afficher les e-mails dont la date d’expiration est dépassée, en raison de leurs mécanismes de mise en cache.
 
-- **Autoriser l’accès hors connexion** : Jamais, Toujours ou pendant un nombre de jours déterminé après que l’étiquette a été appliquée. Si vous limitez l’accès hors connexion sur Jamais ou sur un nombre de jours, lorsque ce seuil est atteint, les utilisateurs doivent s’authentifier à nouveau et leur accès est journalisé. Pour plus d’informations, reportez-vous à la section suivante sur la licence d’utilisation de Rights Management.
+- **Définir l’accès hors connexion** sur jamais, toujours ou pendant un certain nombre de jours à compter de l’application de l’étiquette. Utilisez ce paramètre pour équilibrer les exigences de sécurité que vous avez avec la possibilité pour les utilisateurs d’ouvrir du contenu chiffré sans avoir de connexion Internet. Si vous limitez l’accès hors connexion sur Jamais ou sur un nombre de jours et que ce seuil est atteint, les utilisateurs doivent s’authentifier à nouveau et leur accès est journalisé. Pour plus d’informations sur le fonctionnement de ce processus, consultez la section suivante sur la [Rights Management utilise la licence](#rights-management-use-license-for-offline-access).
 
 Paramètres de contrôle d’accès pour du contenu chiffré :
 
 ![Paramètres pour les autorisations définies par l’administrateur.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+
+Recommandations pour les paramètres d’expiration et d’accès hors connexion :
+
+|Paramètres|Valeur recommandée|
+|-------|----------------|-------------------|
+|**L’accès utilisateur au contenu arrive à expiration**|**Jamais**, sauf si le contenu a une exigence spécifique limitée dans le temps.|
+|**Autoriser l’accès en mode hors connexion**|Dépend de la sensibilité du contenu :<br /><br />- **Uniquement pendant un certain nombre de jours** = **7** pour les données métier sensibles qui pourraient porter atteinte à l’entreprise si elles étaient partagées avec des personnes non autorisées. Cette recommandation offre un compromis équilibré entre la flexibilité et la sécurité. Les contrats, rapports de sécurité, résumés des prévisions et données de comptes commerciaux en sont des exemples.<br /><br />- **Jamais** pour les données métier très sensibles qui porteraient atteinte à l’entreprise si elles étaient partagées avec des personnes non autorisées. Cette recommandation classe la sécurité par ordre de priorité par rapport à la flexibilité et garantit que si vous supprimez l’accès de un ou plusieurs utilisateurs au document, ils ne pourront pas l’ouvrir. Les informations relatives aux employés et aux clients, les mots de passe, les codes source et les rapports financiers prédéfinis en sont des exemples. <br /><br />- **Toujours** pour le contenu moins sensible où il n’est pas important que les utilisateurs puissent continuer à ouvrir du contenu chiffré pendant 30 jours maximum (ou la période de validité de la licence d’utilisation configurée pour le locataire) une fois leur accès supprimé et qu’ils ont déjà ouvert le contenu chiffré.|
+
+Seules les étiquettes configurées pour attribuer des autorisations prennent désormais en charge plusieurs valeurs pour l’accès hors connexion. Les étiquettes qui permettent aux utilisateurs d’attribuer des autorisations utilisent automatiquement la période de validité de la licence d’utilisation de Rights Management du locataire. Par exemple, les étiquettes configurées pour Ne pas transférer, Chiffrer uniquement et inviter des utilisateurs à spécifier leurs propres autorisations. La valeur par défaut de ce paramètre est de 30 jours.
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licence d’utilisation de Rights Management pour l’accès en mode hors connexion
 
@@ -197,7 +206,7 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
 
 - Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
 
-- Tout utilisateur spécifique ou groupe de sécurité à extension messagerie, groupe de distribution ou groupe Microsoft 365 ([auparavant groupe Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) dans Azure AD. Le groupe Microsoft 365 peut avoir un abonnement [dynamique](/azure/active-directory/users-groups-roles/groups-create-rule). Notez qu’il n’est pas possible d’utiliser un [groupe de distribution dynamique d’Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), car ce type de groupe n’est pas synchronisé avec Azure AD et vous ne pouvez pas utiliser de groupe de sécurité non activé par e-mail.
+- Tout utilisateur spécifique ou groupe de sécurité à extension messagerie, groupe de distribution ou groupe Microsoft 365 dans Azure AD. Le groupe Microsoft 365 peut avoir un abonnement [dynamique](/azure/active-directory/users-groups-roles/groups-create-rule). Vous ne pouvez pas utiliser un [groupe de distribution dynamique d’Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), car ce type de groupe n’est pas synchronisé avec Azure AD. Vous ne pouvez pas non plus utiliser un groupe de sécurité qui n’est pas activé par e-mail.
     
     Bien que vous puissiez spécifier des groupes contenant des contacts de messagerie comme méthode pratique pour accorder l’accès à plusieurs personnes extérieures à votre organisation, il existe actuellement un problème connu avec cette configuration. Pour plus d’informations, consultez [Contacts de messagerie dans les groupes ayant un accès intermittent au contenu chiffré](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
@@ -219,7 +228,7 @@ Ce paramètre ne limite pas les personnes autorisées à accéder au contenu chi
 
 Voici des scénarios classiques pour les paramètres des utilisateurs authentifiés :
 
-- Peu vous importe la personne qui affiche le contenu, mais vous souhaitez limiter son utilisation. Par exemple, vous ne voulez pas que le contenu soit modifié, copié ou imprimé.
+- Peu vous importe la personne qui consulte le contenu, mais vous souhaitez limiter son utilisation. Par exemple, vous ne voulez pas que le contenu soit modifié, copié ou imprimé.
 - Vous n’avez pas besoin de restreindre l’accès au contenu, mais vous voulez être en mesure d'approuver la personne qui l'ouvre.
 - Vous exigez que le contenu soit chiffré au repos et en transit, mais il ne nécessite pas de contrôle d’accès.
 
@@ -248,7 +257,7 @@ L’émetteur Rights Management bénéficie continuellement d’autorisations en
 
 - Si les paramètres de chiffrement comportent une date d’expiration, l’émetteur Rights Management peut toujours ouvrir et modifier le document ou l’e-mail après cette date.
 - L’émetteur Rights Management peut toujours accéder au document ou à l’e-mail hors connexion.
-- L’émetteur Rights Management peut toujours ouvrir un document après sa révocation.
+- L’émetteur de Rights Management peut toujours ouvrir un document après sa révocation.
 
 Pour plus d’informations, reportez-vous à [Émetteur Rights Management et propriétaire Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
@@ -257,7 +266,7 @@ Pour plus d’informations, reportez-vous à [Émetteur Rights Management et pro
 > [!NOTE]
 > Cette fonctionnalité est actuellement prise en charge uniquement par le client de l’étiquetage unifié de la Protection d’Information Azure.
 
-Ne sélectionnez cette option qu'après avoir configuré le service de cryptage à double clé et que vous devez utiliser ce cryptage à double clé pour les fichiers auxquels ce label sera appliqué. Une fois l'étiquette configurée et enregistrée, vous ne pourrez plus la modifier.
+Ne sélectionnez cette option qu'après avoir configuré le service de cryptage à double clé et que vous devez utiliser ce cryptage à double clé pour les fichiers auxquels cette étiquette sera appliquée. Une fois l'étiquette configurée et enregistrée, vous ne pourrez plus la modifier.
 
 Pour consulter des informations supplémentaires, la configuration requise et des instructions de configuration, voir [Chiffrement à double clé](double-key-encryption.md).
 
@@ -303,7 +312,7 @@ Dans Outlook, quand un utilisateur applique une étiquette de confidentialité q
 
 Lorsque l’une de ces options est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ont automatiquement des droits d’utilisation limités :
 
-- **Ne pas transférer**: les destinataires ne peuvent pas transférer l'e-mail, l'imprimer ou le copier. Par exemple, dans le client Outlook, le bouton transférer n’est pas disponible, les options du menu enregistrer sous et imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
+- **Ne pas transférer** : les destinataires ne peuvent pas transférer l’e-mail, l’imprimer ou copier à partir de celui-ci. Par exemple, dans le client Outlook, le bouton Transférer n’est pas disponible, les options du menu Enregistrer sous et Imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
     
     Pour plus d’informations sur le fonctionnement de cette option, consultez l’[option Ne pas transférer pour les e-mail](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
@@ -311,11 +320,11 @@ Lorsque l’une de ces options est appliquée à un e-mail, celui-ci est chiffr�
     
     Pour plus d’informations sur le fonctionnement de cette option, consultez l’[option Chiffrer uniquement pour les e-mails](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
 
-Les documents Office non chiffrés joints à un e-mail héritent automatiquement des mêmes restrictions. Pour Ne pas transférer, les droits d’utilisation appliqués à ces documents sont Modifier le contenu, Modifier, Enregistrer, Afficher, Ouvrir, Lire, et Autoriser les macros. Si l’utilisateur souhaite appliquer des droits d’utilisation différents pour une pièce jointe, ou si la pièce jointe n’est pas un document Office qui prend en charge cette protection héritée, l’utilisateur doit chiffrer le fichier avant de le joindre à l’e-mail.
+Les documents Office non chiffrés joints à un e-mail héritent automatiquement des mêmes restrictions. Pour Ne pas transférer, les droits d’utilisation appliqués à ces documents sont Modifier le contenu, Modifier, Enregistrer, Afficher, Ouvrir, Lire, et Autoriser les macros. Si l’utilisateur souhaite appliquer des droits d’utilisation différents pour une pièce jointe ou si la pièce jointe n’est pas un document Office qui prend en charge cette protection héritée, l’utilisateur doit chiffrer le fichier avant de le joindre à l’e-mail.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Autorisations Word, PowerPoint et Excel
 
-Dans Word, PowerPoint et Excel, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un document, il est invité à préciser son choix en matière d'utilisateurs et d'autorisations au moment où le chiffrement est appliqué.
+Dans Word, PowerPoint et Excel, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un document, il est invité à préciser son choix en matière d'utilisateurs et d'autorisations pour le chiffrement.
 
 Par exemple, avec le client d’étiquetage unifié Azure Information Protection, sauf si le [co-auteur](sensitivity-labels-coauthoring.md)est activé, les utilisateurs peuvent :
 
@@ -325,7 +334,7 @@ Par exemple, avec le client d’étiquetage unifié Azure Information Protection
 
 ![Options de protection pour l’utilisateur avec les autorisations personnalisées.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-Pour l’étiquetage intégré et pour le client d’étiquetage unifié Azure Information Protection lorsque le [co-auteur](sensitivity-labels-coauthoring.md)est activé, les utilisateurs voient la même boîte de dialogue que s’ils sélectionnaient les informations suivantes :
+Pour l’étiquetage intégré et pour le client d’étiquetage unifié Azure Information Protection lorsque la [co-édition est activée](sensitivity-labels-coauthoring.md), les utilisateurs voient la même boîte de dialogue que s’ils sélectionnaient les options suivantes :
 
 - Windows : onglet **Fichier** > **Informations** > **Protéger le document** > **Restreindre l'accès** > **Accès restreint**
 
@@ -344,7 +353,7 @@ Pour chaque exemple décrit ci-dessous, effectuez la configuration à partir de 
 
 Cette étiquette s'affiche uniquement dans Outlook et Outlook sur le web. Vous devez de plus utiliser Exchange Online. Avisez les utilisateurs de sélectionner cette étiquette lorsqu’ils doivent envoyer un courrier électronique chiffré à des personnes utilisant un compte Gmail (ou tout autre compte de messagerie extérieur à celui de votre organisation).
 
-Vos utilisateurs tapent l’adresse de courrier Gmail dans la zone **À**.  Ils sélectionnent ensuite l’étiquette et l’option Ne pas transférer est automatiquement ajoutée au message. Les destinataires ne peuvent par conséquent pas transférer le courrier électronique ou l’imprimer, en faire une copie, ou enregistrer le message à l’extérieur de leur boîte aux lettres à l’aide de l’option **Enregistrer sous**.
+Vos utilisateurs tapent l’adresse de courrier Gmail dans la zone **À**.  Ils sélectionnent ensuite l’étiquette et l’option Ne pas transférer est automatiquement ajoutée au message. Les destinataires ne peuvent par conséquent pas transférer le courrier ou l’imprimer, en faire une copie ou enregistrer le message à l’extérieur de leur boîte aux lettres à l’aide de l’option **Enregistrer sous**.
 
 1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** sélectionnez **Autoriser les utilisateurs à attribuer des autorisations lorsqu’ils appliquent l’étiquette**.
 
@@ -358,7 +367,7 @@ Vos utilisateurs tapent l’adresse de courrier Gmail dans la zone **À**.  Ils 
 
 Cette étiquette convient au partage de documents très sensibles en lecture seule. Une connexion internet doit toujours être utilisée pour afficher les documents.
 
-Cette étiquette ne peut pas être utilisée pour des courriers électroniques.
+Cette étiquette ne peut pas être utilisée pour des e-mails.
 
 1. Sur la page de **Chiffrement** : pour **Attribuer maintenant des autorisations ou autoriser les utilisateurs à choisir ?** sélectionnez **Attribuer maintenant des autorisations**.
 
@@ -402,7 +411,7 @@ Les nouveaux utilisateurs que vous ajoutez pourront ouvrir des documents et des 
 
 Cette configuration présente l’avantage de ne pas avoir à spécifier des utilisateurs, groupes ou domaines pour chiffrer un courrier électronique ou un document. Le contenu reste chiffré et vous pouvez spécifier les droits d’utilisation, la date d’expiration et l’accès hors connexion.
 
-Utilisez seulement cette configuration lorsque vous n’avez pas besoin de restreindre les utilisateurs autorisés à ouvrir le document ou le courrier protégé. [Plus d’informations sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users)
+N’utilisez cette configuration que lorsque vous n’avez pas besoin de restreindre les utilisateurs autorisés à ouvrir le document ou le courrier protégé. [Plus d’informations sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** assurez-vous que l'option **Attribuer maintenant des autorisations est sélectionnée**.
 
@@ -447,7 +456,7 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Si une étiquette qui applique le chiffrement est ajoutée à l’aide d’une application Office lorsque le document est [extrait dans SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)et que l’utilisateur annule alors l’extraction, le document reste étiqueté et chiffré.
 
-- Sauf si vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md), les actions suivantes pour les fichiers chiffrés ne sont pas prises en charge à partir des applications Office (Windows, Mac, Android et iOS) et les utilisateurs voient un message d’erreur indiquant qu’un problème s’est produit. Cependant, la fonctionnalité SharePoint peut être utilisée comme alternative :
+- Sauf si vous avez [activé la co-édition pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md), les actions suivantes pour les fichiers chiffrés ne sont pas prises en charge à partir des applications Office (Windows, Mac, Android et iOS) et les utilisateurs voient un message d’erreur indiquant qu’un problème s’est produit. Cependant, la fonctionnalité SharePoint peut être utilisée comme alternative :
 
   - Les utilisateurs peuvent également effectuer ces actions à l’aide d’Office sur le web lorsque vous [activez et configurez le contrôle de version d'une liste ou d'une bibliothèque](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Les utilisateurs peuvent également [renommer un fichier, un dossier ou un lien dans une bibliothèque de documents](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) dans SharePoint.
