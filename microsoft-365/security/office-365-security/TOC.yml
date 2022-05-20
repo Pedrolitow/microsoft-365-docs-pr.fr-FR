@@ -11,21 +11,17 @@
         - name: Protection contre les menaces étape par étape dans Defender pour Office 365
           href: protection-stack-microsoft-defender-for-office365.md
         - name: Essayer Defender pour Office 365
-          href: try-microsoft-defender-for-office-365.md
+          items:
+            - name: Essayer Defender pour Office 365
+              href: try-microsoft-defender-for-office-365.md
+            - name: Guide d'essai de Defender for Office 365
+              href: trial-playbook-defender-for-office-365.md
         - name: Nouveautés de Defender pour Office 365
           href: whats-new-in-defender-for-office-365.md
         - name: Defender pour Office 365 dans le portail Microsoft 365 Defender
           href: ../defender/microsoft-365-security-center-mdo.md
-        - name: Exchange Online Protection
-          items:
-            - name: Vue d’ensemble d’Exchange Online Protection
-              href: exchange-online-protection-overview.md
-            - name: Flux de courriers dans EOP
-              href: mail-flow-in-eop.md
-            - name: Quarantaine
-              href: quarantine-email-messages.md
-        - name: 'Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams'
-          href: turn-on-mdo-for-spo-odb-and-teams.md
+        - name: Vue d’ensemble d’Exchange Online Protection
+          href: exchange-online-protection-overview.md
         - name: Vue d’ensemble du portail Microsoft 365 Defender
           href: ../defender/microsoft-365-defender.md
         - name: Page de l’entité d’e-mail
@@ -38,20 +34,6 @@
           href: email-analysis-investigations.md
         - name: Actions de correction
           href: air-remediation-actions.md
-        - name: Protection anti-programme malveillant
-          href: anti-malware-protection.md
-        - name: Protection anti-courrier indésirable
-          href: anti-spam-protection.md
-        - name: Protection anti-hameçonnage
-          href: anti-phishing-protection.md
-        - name: Protection contre l’usurpation d’identité
-          href: anti-spoofing-protection.md
-        - name: Pièces jointes sécurisées dans Defender pour Office 365
-          href: safe-attachments.md
-        - name: Liens fiables dans Defender pour Office 365
-          href: safe-links.md
-        - name: Protection contre le courrier indésirable sortant
-          href: outbound-spam-controls.md
         - name: Vue d’ensemble du tableau de bord de sécurité
           href: security-dashboard.md
         - name: Fonctionnement de l’examen des menaces et de la réponse à celles-ci
@@ -64,66 +46,130 @@
           href: protect-against-threats.md
         - name: Intégrer Defender pour Office 365 avec Defender pour point de terminaison
           href: integrate-office-365-ti-with-mde.md
-        - name: Autorisations dans le Portail Microsoft 365 Defender
-          href: permissions-microsoft-365-security-center.md
-        - name: Autorisations dans le Centre de sécurité et de conformité
-          href: permissions-in-the-security-and-compliance-center.md
+        - name: Autorisations
+          items:
+            - name: Autorisations dans le Portail Microsoft 365 Defender
+              href: permissions-microsoft-365-security-center.md
+            - name: Autorisations dans le Centre de sécurité et de conformité
+              href: permissions-in-the-security-and-compliance-center.md
+            - name: Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
+              href: grant-access-to-the-security-and-compliance-center.md
         - name: Intégration du serveur d’informations de sécurité et gestion d’événements
           href: siem-server-integration.md
         - name: Intégration d’informations de sécurité et gestion d’événements avec Defender pour Office 365
           href: siem-integration-with-office-365-ti.md
         - name: Sécurisé par défaut.
           href: secure-by-default.md
-        - name: 'Pour plus d’informations, voir Configurer les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.'
-          href: configure-mdo-anti-phishing-policies.md
-        - name: Configurer des stratégies anti-hameçonnage dans EOP
-          href: configure-anti-phishing-policies-eop.md
-        - name: Configuration de stratégies anti-programme malveillant
-          href: configure-anti-malware-policies.md
-        - name: Configuration de stratégies de blocage du courrier indésirable
+        - name: Protection anti-programme malveillant
           items:
+            - name: Protection anti-programme malveillant
+              href: anti-malware-protection.md
+            - name: Configuration de stratégies anti-programme malveillant
+              href: configure-anti-malware-policies.md
+            - name: Détection de virus dans SharePoint Online
+              href: virus-detection-in-spo.md
+        - name: Protection anti-courrier indésirable
+          items:
+            - name: Protection anti-courrier indésirable
+              href: anti-spam-protection.md
             - name: Configuration de stratégies de blocage du courrier indésirable
               href: configure-your-spam-filter-policies.md
             - name: Paramètres de filtre de courrier indésirable avancé (ASF)
               href: advanced-spam-filtering-asf-options.md
-        - name: Configurer une protection d'Exchange Online (EOP) pour envoyer des courriers indésirables dans le dossier courrier indésirable dans le système hybride
-          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
-        - name: Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
-          href: configure-junk-email-settings-on-exo-mailboxes.md
-        - name: Configurer le filtrage des connexions
-          href: configure-the-connection-filter-policy.md
-        - name: Configurer les paramètres généraux pour la fonctionnalité Liens fiables dans Defender pour Office 365
-          href: configure-global-settings-for-safe-links.md
-        - name: Configurer le filtrage du courrier indésirable sortant
-          href: configure-the-outbound-spam-policy.md
-        - name: Configurer et évaluer des comptes prioritaires
-          href: configure-review-priority-account.md
-        - name: Créer des listes d’expéditeurs bloqués
-          href: Create-block-sender-lists-in-office-365.md
-        - name: Créer des listes d’expéditeurs approuvés
-          href: Create-safe-sender-lists-in-office-365.md
+            - name: Quelle est la différence entre l’e-mail indésirable et l’e-mail en nombre ?
+              href: what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: Seuil de probabilité de courrier indésirable (SCL)
+              href: spam-confidence-levels.md
+            - name: Niveau de réclamation en bloc (BCL)
+              href: bulk-complaint-level-values.md
+            - name: Rétrodiffusion dans EOP
+              href: backscatter-messages-and-eop.md
+            - name: Règles de flux de messagerie (règles de transport)
+              items:
+                - name: Règles de flux de messagerie (règles de transport)
+                  href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+                - name: Utiliser des règles de flux de courriers pour bloquer les messages avec des pièces jointes exécutables
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+                - name: Utiliser des règles de flux de courriers pour filtrer les e-mails en bloc
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
+                - name: Utiliser des règles de flux de courriers pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
+            - name: Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
+              href: configure-junk-email-settings-on-exo-mailboxes.md
+            - name: Configurer le filtrage des connexions
+              href: configure-the-connection-filter-policy.md
+            - name: Protection contre le courrier indésirable sortant
+              items:
+                - name: Protection contre le courrier indésirable sortant
+                  href: outbound-spam-controls.md
+                - name: Configurer le filtrage du courrier indésirable sortant
+                  href: configure-the-outbound-spam-policy.md
+                - name: Contrôler le transfert automatique d’e-mails externes
+                  href: external-email-forwarding.md
+                - name: Pools de livraison sortante
+                  href: high-risk-delivery-pool-for-outbound-messages.md
+        - name: Protection anti-hameçonnage
+          items:
+            - name: Protection anti-hameçonnage
+              href: anti-phishing-protection.md
+            - name: Protection contre l’usurpation d’identité
+              href: anti-spoofing-protection.md
+            - name: Politiques anti-hameçonnage
+              href: set-up-anti-phishing-policies.md
+            - name: Configurer des stratégies anti-hameçonnage dans EOP
+              href: configure-anti-phishing-policies-eop.md
+            - name: 'Pour plus d’informations, voir Configurer les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.'
+              href: configure-mdo-anti-phishing-policies.md
+            - name: 'Comment Office 365 valide l’adresse De : pour empêcher des attaques par hameçonnage'
+              href: how-office-365-validates-the-from-address.md
+        - name: Purge automatique zéro heure (PAZH)
+          href: zero-hour-auto-purge.md
+        - name: Combinaison des stratégies et des protections
+          href: how-policies-and-protections-are-combined.md
+        - name: Pièces jointes sécurisées dans Defender pour Office 365
+          items:
+            - name: Pièces jointes sécurisées dans Defender pour Office 365
+              href: safe-attachments.md
+            - name: Configurer les stratégies de la fonctionnalité Pièces jointes fiables dans Defender pour Office 365
+              href: set-up-safe-attachments-policies.md
+            - name: 'Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams'
+              href: mdo-for-spo-odb-and-teams.md
+            - name: 'Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams'
+              href: turn-on-mdo-for-spo-odb-and-teams.md
+            - name: Sécurité des documents en A5 ou E5
+              href: safe-docs.md
+        - name: Liens fiables dans Defender pour Office 365
+          items:
+            - name: Liens fiables dans Defender pour Office 365
+              href: safe-links.md
+            - name: Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
+              href: set-up-safe-links-policies.md
+            - name: Configurer les paramètres généraux pour la fonctionnalité Liens fiables dans Defender pour Office 365
+              href: configure-global-settings-for-safe-links.md
+        - name: Balises utilisateur dans Defender pour Office 365
+          items:
+            - name: Balises utilisateur dans Defender pour Office 365
+              href: user-tags.md
+            - name: Configurer et évaluer des comptes prioritaires
+              href: configure-review-priority-account.md
         - name: Authentification de l’e-mail
-          href: email-validation-and-authentication.md
-        - name: Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
-          href: grant-access-to-the-security-and-compliance-center.md
-        - name: Documents sécurisés dans Defender pour Office 365
-          href: safe-docs.md
-        - name: Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
-          href: set-up-safe-links-policies.md
-        - name: Configurer les stratégies de la fonctionnalité Pièces jointes fiables dans Defender pour Office 365
-          href: set-up-safe-attachments-policies.md
-        - name: Configurer SPF pour empêcher l’usurpation d’identité
-          href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+          items:
+            - name: Authentification de l’e-mail
+              href: email-validation-and-authentication.md
+            - name: Utilisation de DKIM pour valider les messages sortants
+              href: use-dkim-to-validate-outbound-email.md
+            - name: Prise en charge de la validation des messages signés DKIM
+              href: support-for-validation-of-dkim-signed-messages.md
+            - name: Utiliser DMARC pour valider les e-mails
+              href: use-dmarc-to-validate-email.md
+            - name: Configurer SPF pour empêcher l’usurpation d’identité
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: Comment Microsoft 365 utilise SPF pour éviter l’usurpation
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
+        - name: Flux de courriers dans EOP
+          href: mail-flow-in-eop.md
         - name: Stratégies concernant les envois des utilisateurs
           href: user-submission.md
-        - name: Balises utilisateur dans Defender pour Office 365
-          href: user-tags.md
-        - name: 'Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams'
-          href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: Utiliser DKIM pour valider les e-mails sortants
-          href: use-dkim-to-validate-outbound-email.md
-        - name: Utiliser DMARC pour valider les e-mails
-          href: use-dmarc-to-validate-email.md
         - name: Ajouter la prise en charge des e-mails entrants anonymes par IPv6
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Installer Application Guard pour Office
@@ -184,18 +230,14 @@
               href: manage-tenant-allows.md
             - name: Modifier et supprimer des entrées dans la liste verte/rouge du client
               href: modify-remove-entries-tenant-allow-block.md
+        - name: Créer des listes d’expéditeurs bloqués
+          href: Create-block-sender-lists-in-office-365.md
+        - name: Créer des listes d’expéditeurs approuvés
+          href: Create-safe-sender-lists-in-office-365.md
         - name: Suivi des messages
           href: message-trace-scc.md
-        - name: Utiliser des règles de flux de courriers pour bloquer les messages avec des pièces jointes exécutables
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
-        - name: Utiliser des règles de flux de courriers pour filtrer les e-mails en bloc
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-        - name: Utiliser des règles de flux de courriers pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
-        - name: 'Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants'
-          href: zero-hour-auto-purge.md
-        - name: Contrôler le transfert automatique d’e-mails externes
-          href: external-email-forwarding.md
+        - name: Surveillance des fuites de données personnelles
+          href: monitor-for-leaks-of-personal-data.md
     - name: Détecter
       items:
         - name: Explorateur des menaces pour Defender pour Office 365
@@ -210,10 +252,6 @@
           href: threat-trackers.md
         - name: Stratégies d’alerte
           href: ../../compliance/alert-policies.md
-        - name: Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
-          href: reports-and-insights-in-security-and-compliance.md
-        - name: Règles de flux de messagerie (règles de transport)
-          href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
         - name: Exécuter un rapport de groupe de rôles d'administrateur
           href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: Examiner
@@ -248,6 +286,8 @@
               href: view-reports-for-mdo.md
             - name: Afficher les rapports de flux de messagerie dans le Centre de sécurité et conformité
               href: view-mail-flow-reports.md
+            - name: Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
+              href: reports-and-insights-in-security-and-compliance.md
         - name: Informations sur le flux de messagerie dans le centre de sécurité et conformité
           items:
             - name: Informations sur le flux de messagerie dans le centre de sécurité et conformité
@@ -320,14 +360,20 @@
           href: air-review-approve-pending-completed-actions.md
         - name: Régler la protection anti-hameçonnage
           href: tuning-anti-phishing.md
-        - name: Rechercher et libérer les messages mis en quarantaine en tant qu'utilisateur
-          href: find-and-release-quarantined-messages-as-a-user.md
-        - name: Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur
-          href: manage-quarantined-messages-and-files.md
-        - name: Stratégies de mise en quarantaine
-          href: quarantine-policies.md
-        - name: Libérer les messages mis en quarantaine à partir de boîtes aux lettres partagées
-          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+        - name: Quarantaine
+          items:
+            - name: Quarantaine
+              href: quarantine-email-messages.md
+            - name: Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur
+              href: manage-quarantined-messages-and-files.md
+            - name: Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur
+              href: find-and-release-quarantined-messages-as-a-user.md
+            - name: Stratégies de mise en quarantaine
+              href: quarantine-policies.md
+            - name: Libérer les messages mis en quarantaine à partir de boîtes aux lettres partagées
+              href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+            - name: Notifications de mise en quarantaine
+              href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
     - name: FAQ
@@ -354,24 +400,8 @@
           href: help-and-support-for-eop.md
         - name: Résolution des problèmes d’e-mails envoyés à Microsoft 365
           href: troubleshooting-mail-sent-to-office-365.md
-        - name: Comment Microsoft 365 utilise SPF pour éviter l’usurpation
-          href: how-office-365-uses-spf-to-prevent-spoofing.md
-        - name: 'Comment Office 365 valide l’adresse De : pour empêcher des attaques par hameçonnage'
-          href: how-office-365-validates-the-from-address.md
-        - name: Combinaison des stratégies et des protections
-          href: how-policies-and-protections-are-combined.md
         - name: En-têtes de messages anti-courrier indésirable
           href: anti-spam-message-headers.md
-        - name: Politiques anti-hameçonnage
-          href: set-up-anti-phishing-policies.md
-        - name: Rétrodiffusion dans EOP
-          href: backscatter-messages-and-eop.md
-        - name: Niveau de réclamation en bloc (BCL)
-          href: bulk-complaint-level-values.md
-        - name: Notifications de mise en quarantaine
-          href: use-spam-notifications-to-release-and-report-quarantined-messages.md
-        - name: Pools de livraison sortante
-          href: high-risk-delivery-pool-for-outbound-messages.md
         - name: Renseignements sur le flux de courriers dans EOP
           href: mail-flow-intelligence-in-office-365.md
         - name: "Référence\_: Stratégies, pratiques et conseils"
@@ -380,14 +410,8 @@
           href: sending-mail-to-office-365.md
         - name: Services pour les non clients
           href: services-for-non-customers.md
-        - name: Seuil de probabilité de courrier indésirable
-          href: spam-confidence-levels.md
-        - name: Prise en charge de la validation des messages signés DKIM
-          href: support-for-validation-of-dkim-signed-messages.md
-        - name: Détection de virus dans SharePoint Online
-          href: virus-detection-in-spo.md
-        - name: Quelle est la différence entre l’e-mail indésirable et l’e-mail en nombre ?
-          href: what-s-the-difference-between-junk-email-and-bulk-email.md
+        - name: Configurer une protection d'Exchange Online (EOP) pour envoyer des courriers indésirables dans le dossier courrier indésirable dans le système hybride
+          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
     - name: documentation Microsoft 365 Defender
       items:
         - name: Microsoft 365 Defender
