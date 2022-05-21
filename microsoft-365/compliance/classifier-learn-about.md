@@ -19,14 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Les classifieurs pouvant être formés peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759874"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65625796"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La classification et l’étiquetage du contenu afin qu’il puisse être protégé et géré correctement constituent le point de départ de la discipline de protection des informations. Microsoft 365 a trois façons de classer le contenu.
 
@@ -43,7 +45,7 @@ Cette catégorie de mécanismes de classification inclut la recherche de contenu
 - Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression par doigt de document).](document-fingerprinting.md)
 - Utilisation de la présence de chaînes exactes [correspondant exactement aux données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Les étiquettes de confidentialité et de rétention peuvent ensuite être appliquées automatiquement pour rendre le contenu disponible pour une utilisation dans [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md) et [appliquer automatiquement des stratégies pour les étiquettes de rétention](apply-retention-labels-automatically.md).
+Les étiquettes de confidentialité et de rétention peuvent ensuite être appliquées automatiquement pour rendre le contenu disponible pour une utilisation dans [En savoir plus sur Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md) et [appliquer automatiquement des stratégies pour les étiquettes de rétention](apply-retention-labels-automatically.md).
 
 ## <a name="classifiers"></a>Classificateurs
 
@@ -72,29 +74,51 @@ Les étiquettes de confidentialité peuvent utiliser des classifieurs comme cond
 Microsoft 365 est fourni avec plusieurs classifieurs préformés :
 
 > [!CAUTION]
-> Nous supprimons le classificateur pré-entraîné **Langage offensif** car il a produit un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez actuellement, vous devez en retirer vos processus d’entreprise. Nous vous recommandons plutôt d’utiliser les classifieurs préentrifiés **Threat**, **Profanity** et **Harassment** .
+> Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez actuellement, vous devez en retirer vos processus d’entreprise. Nous vous recommandons plutôt d’utiliser les classifieurs préentrifiés **Threat**, **Profanity** et **Harassment** .
+
+- **Contrats** : détecte le contenu relatif aux contrats juridiques tels que les contrats de non-divulgation, les déclarations de travail, les contrats de prêt et de bail, les contrats d’emploi et de non-concurrence. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **C.V**. : détecte les documents, les .pdf, .rtf .txt éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
-- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub : ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Détecte le contenu dans .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc. R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
+
+- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation d’ordinateur utilisés sur GitHub : ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Détecte le contenu dans .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc. R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
+
+- **Plaintes des** clients : le classifieur de plaintes des clients détecte les commentaires et les plaintes concernant les produits ou services de votre organisation. Ce classifieur peut vous aider à répondre aux exigences réglementaires en matière de détection et de tri des plaintes, comme les exigences du Bureau de protection financière des consommateurs et de la Food and Drug Administration. Il détecte le contenu dans .msg et les fichiers .eml sont uniquement conformes aux communications, .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg.
+
+- **Discrimination** : détecte une langue discriminatoire explicite et est sensible à la langue discriminatoire à l’égard des communautés afro-américaines/noires par rapport à d’autres communautés.
+
+- **Finance** : détecte le contenu dans les catégories finance d’entreprise, comptabilité, économie, banque et investissement. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+
+- **Harcèlement** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés à une conduite offensante ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnicité, religion, origine nationale, sexe, orientation sexuelle, âge, handicap. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
+
+- **Santé** : détecte le contenu dans les aspects de l’administration médicale et des soins de santé tels que les services médicaux, les diagnostics, le traitement, les revendications, etc. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+
+- **RH** : détecte le contenu des catégories de recrutement, d’entretien, d’embauche, de formation, d’évaluation, d’avertissement et de résiliation liées aux ressources humaines. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+
+- **IP** : détecte le contenu dans les catégories liées à la propriété intellectuelle, telles que les secrets commerciaux et les informations confidentielles similaires. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+
+- **Informatique** : détecte le contenu dans les catégories Technologies de l’information et Cybersécurité, telles que les paramètres réseau, la sécurité des informations, le matériel et les logiciels. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+
+- **Affaires juridiques** : détecte le contenu dans les catégories relatives aux affaires juridiques telles que les litiges, les procédures juridiques, les obligations juridiques, la terminologie juridique, le droit et la législation. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+
+- **Approvisionnement** : détecte le contenu dans les catégories d’enchères, de citations, d’achats et de paiement pour la fourniture de biens et de services. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+
+- **Blasphème** : détecte une catégorie spécifique d’éléments de texte de langage offensant qui contiennent des expressions qui gênent la plupart des gens.
+
+- **C.V**. : détecte les documents, les .pdf, .rtf .txt éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
+
+- **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation d’ordinateur utilisés sur GitHub : ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
 > [!NOTE]
 > Le code source est formé pour détecter quand la majeure partie du texte est du code source. Il ne détecte pas le texte du code source qui est entrecoupé de texte brut.
 
-- **Contrats** : détecte le contenu relatif aux contrats juridiques tels que les contrats de non-divulgation, les déclarations de travail, les contrats de prêt et de bail, les contrats d’emploi et de non-concurrence. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Discrimination** : détecte une langue discriminatoire explicite et est sensible à la langue discriminatoire à l’égard des communautés afro-américaines/noires par rapport à d’autres communautés.
-- **Finance** : détecte le contenu dans les catégories finance d’entreprise, comptabilité, économie, banque et investissement. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
-- **Harcèlement** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés à une conduite offensante ciblant une ou plusieurs personnes en fonction des caractéristiques suivantes : race, ethnicité, religion, origine nationale, sexe, orientation sexuelle, âge, handicap. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
-- **Santé** : détecte le contenu dans les aspects de l’administration médicale et des soins de santé tels que les services médicaux, les diagnostics, le traitement, les revendications, etc. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
-- **RH** : détecte le contenu des catégories de recrutement, d’entretien, d’embauche, de formation, d’évaluation, d’avertissement et de résiliation liées aux ressources humaines. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
-- **IP** : détecte le contenu dans les catégories liées à la propriété intellectuelle, telles que les secrets commerciaux et les informations confidentielles similaires. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
-- **Informatique** : détecte le contenu dans les catégories Technologies de l’information et Cybersécurité, telles que les paramètres réseau, la sécurité des informations, le matériel et les logiciels. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
-- **Affaires juridiques** : détecte le contenu dans les catégories relatives aux affaires juridiques telles que les litiges, les procédures juridiques, les obligations juridiques, la terminologie juridique, le droit et la législation. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
-- **Approvisionnement** : détecte le contenu dans les catégories d’enchères, de citations, d’achats et de paiement pour la fourniture de biens et de services. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+- **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+
+- **Menace** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés aux menaces de commettre de la violence ou de causer des dommages physiques ou des dommages à une personne ou à des biens.
 - **Blasphème** : détecte une catégorie spécifique d’éléments de texte de langage offensant qui contiennent des expressions qui gênent la plupart des gens. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 - **Menace** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés aux menaces de commettre de la violence ou de causer des dommages physiques ou des dommages à une personne ou à des biens. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
 
-Celles-ci apparaissent dans la vue **classifieurs Centre de conformité Microsoft 365** >  **Data** **classificationTrainable** >  avec l’état .`Ready to use`
+Celles-ci apparaissent dans la vue **classifieurs portail de conformité Microsoft Purview** >  **Data** **classificationTrainable** >  avec l’état .`Ready to use`
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -147,6 +171,6 @@ Vous pouvez aider à améliorer la précision de tous les classifieurs entraîn�
 - [Étiquettes de rétention](retention.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
+- [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md)
 - [Impression de doigts de document](document-fingerprinting.md)
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

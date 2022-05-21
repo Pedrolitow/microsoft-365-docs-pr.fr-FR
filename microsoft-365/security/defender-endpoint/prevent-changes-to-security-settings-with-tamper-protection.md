@@ -17,16 +17,16 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416307"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626962"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -41,19 +41,18 @@ ms.locfileid: "65416307"
 
 La protection contre les falsifications est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
-- Windows 11
+- Windows 11
 - Multisession Windows 11 Entreprise 
 - Windows 10
 - Windows 10 Entreprise à sessions multiples
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server, version 1803 ou ultérieure
-- Windows Server 2016
+- Windows Server 2016
 - Windows Server 2012 R2
 
 > [!NOTE]
 > La protection contre les falsifications dans Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -62,12 +61,12 @@ Pendant certains types de cyberattaques, les mauvais acteurs essaient de désact
 - Désactivation de la protection contre les virus et les menaces
 - Désactivation de la protection en temps réel
 - Désactivation de la surveillance du comportement
-- Désactivation de l’antivirus (par exemple, IOfficeAntivirus (IOAV))
+- Désactivation de la protection antivirus, telle que IOfficeAntivirus (IOAV)
 - Désactivation de la protection fournie par le cloud
 - Suppression des mises à jour du renseignement de sécurité
 - Désactivation des actions automatiques sur les menaces détectées
 
-### <a name="how-it-works"></a>Fonctionnement
+### <a name="how-it-works"></a>Mode de fonctionnement
 
 La protection contre les falsifications verrouille essentiellement Antivirus Microsoft Defender à ses valeurs sécurisées par défaut et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes telles que :
 
@@ -116,14 +115,14 @@ La protection contre les falsifications peut être activée ou désactivée pour
 
 - Vos appareils Windows doivent exécuter l’une des versions suivantes de Windows :
   
-  - Windows 11
+  - Windows 11
   - Multisession Windows 11 Entreprise 
   - Windows 10
   - Windows 10 Entreprise à sessions multiples
   - Windows Server 2022
   - Windows Server 2019
   - Windows Server, version 1803 ou ultérieure
-  - Windows Server 2016
+  - Windows Server 2016
   - Windows Server 2012 R2
 
 Pour plus d’informations sur les versions, consultez [Windows 10 informations de publication](/windows/release-health/release-information).
@@ -236,23 +235,19 @@ Les tentatives de falsification indiquent généralement des cyberattaques plus 
 
 Lorsqu’une tentative de falsification est détectée, une alerte est déclenchée dans le [portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="images/tamperattemptalert.png" alt-text="Portail Microsoft 365 Defender" lightbox="images/tamperattemptalert.png":::
-
 À [l’aide de protection évolutive des points de terminaison](overview-endpoint-detection-response.md) et de fonctionnalités [de repérage avancées](advanced-hunting-overview.md) dans Microsoft Defender pour point de terminaison, votre équipe chargée des opérations de sécurité peut examiner et résoudre ces tentatives.
 
 ## <a name="review-your-security-recommendations"></a>Passez en revue vos recommandations de sécurité
 
 La protection contre les falsifications s’intègre aux fonctionnalités de gestion des vulnérabilités [& des menaces](next-gen-threat-and-vuln-mgt.md) . [Les recommandations de sécurité](tvm-security-recommendation.md) incluent la garantie que la protection contre les falsifications est activée. Par exemple, vous pouvez effectuer une recherche sur la *falsification*. Dans les résultats, vous pouvez sélectionner **Activer la protection contre les falsifications** pour en savoir plus et l’activer.
 
-:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="Activation de la protection contre les falsifications dans le portail Centre de sécurité Microsoft Defender" lightbox="images/tamperprotectsecurityrecos.png":::
-
 Pour en savoir plus sur threat & Vulnerability Management, consultez [Dashboard Insights - Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre les falsifications ?
 
-- Windows 11
+- Windows 11
 - Multisession Windows 11 Entreprise
 - Windows 10 système d’exploitation [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ou version ultérieure avec [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint).
 - Windows 10 Entreprise à sessions multiples
@@ -278,7 +273,9 @@ Si vous êtes une organisation qui utilise [Microsoft Defender pour point de ter
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Comment la configuration de la protection contre les falsifications dans Intune affecte-t-elle la façon dont je gère les Antivirus Microsoft Defender avec stratégie de groupe ?
 
-La stratégie de groupe ne s’applique pas à la protection contre les falsifications. Les modifications apportées aux paramètres de Antivirus Microsoft Defender sont ignorées lorsque la protection contre les falsifications est activée.
+Si vous utilisez actuellement Intune pour configurer et gérer la protection contre les falsifications, vous devez continuer à utiliser Intune. 
+
+La stratégie de groupe ne s’applique pas à la protection contre les falsifications. Les modifications apportées aux paramètres Antivirus Microsoft Defender à l’aide de stratégie de groupe sont ignorées lorsque la protection contre les falsifications est activée ou lorsque la protection contre les falsifications est configurée avec Intune.
 
 ### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>Si nous utilisons Microsoft Intune pour configurer la protection contre les falsifications, s’applique-t-elle uniquement à l’ensemble de l’organisation ?
 
@@ -294,10 +291,6 @@ Si vous utilisez l’attachement de locataire, vous pouvez utiliser Microsoft En
 ### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>J’ai l’inscription Windows E3. Puis-je utiliser la configuration de la protection contre les falsifications dans Intune ?
 
 Actuellement, la configuration de la protection contre les falsifications dans Intune est disponible uniquement pour les clients qui ont [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint).
-
-### <a name="what-happens-if-i-try-to-change-microsoft-defender-for-endpoint-settings-in-intune-microsoft-endpoint-configuration-manager-and-windows-management-instrumentation-when-tamper-protection-is-enabled-on-a-device"></a>Que se passe-t-il si j’essaie de modifier Microsoft Defender pour point de terminaison paramètres dans Intune, Microsoft Endpoint Configuration Manager et Windows Management Instrumentation lorsque la protection contre les falsifications est activée sur un appareil ?
-
-Vous ne pourrez pas modifier les fonctionnalités protégées par la protection contre les falsifications ; ces demandes de modification sont ignorées.
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>Je suis un client d’entreprise. Les administrateurs locaux peuvent-ils modifier la protection contre les falsifications sur leurs appareils ?
 

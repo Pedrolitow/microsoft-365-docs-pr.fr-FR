@@ -1,5 +1,5 @@
 ---
-title: Collaborer et partager de manière sécurisée
+title: Collaborer et partager en toute sécurité dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,13 +23,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Vue d’ensemble de la façon de collaborer et de partager des fichiers et de communiquer en toute sécurité à l’aide de Teams. Dans l’environnement fermé fourni par Teams, les fichiers et les communications sont exempts de cybermenaces et de cyberattaques.
-ms.openlocfilehash: 0cedb879218e883570cf3b1da859842eb45f0250
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Vue d’ensemble sur la façon de collaborer et de partager des fichiers et de communiquer en toute sécurité à l’aide de Teams dans Microsoft 365 Business Premium. Dans l’environnement fermé fourni par Teams, les fichiers et les communications sont exempts de cybermenaces et de cyberattaques.
+ms.openlocfilehash: 0fe52b116b1606d430c99844bf244c93afedba08
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101625"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621052"
 ---
 # <a name="collaborate-and-share-securely"></a>Collaborer et partager de manière sécurisée
 

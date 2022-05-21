@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7cbb9c71e56242d15506c2c1e46f1120021928fa
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415967"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623187"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Afficher et modifier les stratégies de protection des appareils
 
@@ -30,7 +30,7 @@ Dans Microsoft 365 Business Premium, les paramètres de sécurité des appareils
 **Ce guide décrit comment** :
 
 - Obtenir une vue d’ensemble de vos stratégies par défaut
-- Utilisez des stratégies d’appareil dans le Centre de sécurité Defender, le Centre d’administration et InTune.
+- Utilisez des stratégies d’appareil dans le Centre de sécurité Defender, le Centre d’administration et Intune.
 
 ## <a name="about-the-default-device-protection-policies"></a>À propos des stratégies de protection des appareils par défaut
 
@@ -40,7 +40,7 @@ Microsoft 365 Business Premium comprend deux principaux types de stratégies pou
 
 - Les **Stratégies de pare-feu**, qui déterminent le trafic réseau autorisé à effectuer par les appareils de votre organisation.
 
-Ces stratégies font partie de Microsoft Defender entreprise, inclus dans votre abonnement Microsoft 365 Business Premium. Des informations sont fournies pour l’utilisation des stratégies dans le Centre de sécurité Microsoft Defender, ainsi que sur l’utilisation des stratégies dans le Centre d’administration et InTune.
+Ces stratégies font partie de Microsoft Defender entreprise, inclus dans votre abonnement Microsoft 365 Business Premium. Des informations sont fournies pour l’utilisation des stratégies dans le Centre de sécurité Microsoft Defender, ainsi que sur l’utilisation des stratégies dans le Centre d’administration et Intune.
 
 ## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Utilisation des stratégies d’appareil dans le Centre de sécurité Microsoft Defender
 
@@ -157,13 +157,13 @@ Pour afficher et gérer les stratégies :
   
    ![Page Gérer les appareils.](../media/devicesmanage.png)
 
-## <a name="working-with-device-policies-in-intune"></a>Utilisation des stratégies d’appareil dans InTune
+## <a name="working-with-device-policies-in-intune"></a>Utilisation des stratégies d’appareil dans Intune
 
-Utilisez les informations suivantes pour créer et gérer des stratégies d’appareil dans InTune, via la sécurité des points de terminaison dans le Centre d’administration Microsoft Endpoint Manager.
+Utilisez les informations suivantes pour créer et gérer des stratégies d’appareil dans Intune, via la sécurité des points de terminaison dans le Centre d’administration Microsoft Endpoint Manager.
 
 ### <a name="create-duplicate-and-edit-policies"></a>Créer, dupliquer et modifier des stratégies
 
-Pour créer une stratégie dans InTune
+Pour créer une stratégie dans Intune
 
 1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager.
 
@@ -201,7 +201,7 @@ Pour créer une stratégie dans InTune
 
 1. Dans la page Vérifier + créer, quand vous avez terminé, choisir **Créer**. Le profil que vous venez de créer apparaît dans la liste lorsque vous sélectionnez le type de stratégie pour le nouveau profil.
 
-Pour dupliquer une stratégie dans InTune :
+Pour dupliquer une stratégie dans Intune :
 
 1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager.
 
@@ -235,7 +235,7 @@ Quelle que soit la méthode de stratégie, la gestion du même paramètre sur le
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer la sécurité des points de terminaison dans Microsoft InTune](/mem/intune/protect/endpoint-security)
+[Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/Intune/protect/endpoint-security)
 
 [Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)
 

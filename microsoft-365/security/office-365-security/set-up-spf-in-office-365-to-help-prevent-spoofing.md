@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25efbce5b9f8141575a88baa3fdd85b099dfbd6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682964"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626038"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -34,7 +34,7 @@ ms.locfileid: "63682964"
 - [Résolution des problèmes SPF](#troubleshooting-spf)
 
 <!--
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

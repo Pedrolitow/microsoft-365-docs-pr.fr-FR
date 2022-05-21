@@ -1,5 +1,5 @@
 ---
-title: Créer un site de communication SharePoint
+title: Créer un site de communication SharePoint dans Teams pour Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou votre entreprise avec Microsoft 365, et protégez l’équipe contre les cyberattaques et les intrusions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
-ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Découvrez pourquoi et comment créer un site de communication SharePoint pour votre campagne ou votre entreprise avec Microsoft 365 Business Premium, et protégez l’équipe contre les cyberattaques et les intrusions contre les programmes malveillants et d’autres menaces en raison d’un partage de fichiers incorrect.
+ms.openlocfilehash: 4c8fa8a197a7fb6014833dc9701aa7f354c2e5a0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319525"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623422"
 ---
-# <a name="create-a-communications-site-in-sharepoint"></a>Créer un site de communication dans SharePoint
+# <a name="create-a-communications-site"></a>Créer un site de communication
 
 Un excellent moyen de communiquer les priorités, de partager des documents de stratégie et de mettre en évidence les événements à venir consiste à utiliser un site de communication dans SharePoint, et c’est ce dont cette mission est l’objet. Les sites de communication sont destinés à partager les choses à l’échelle de votre entreprise ou de votre campagne &mdash;, c’est votre site de stratégie interne et votre espace tactique. 
 

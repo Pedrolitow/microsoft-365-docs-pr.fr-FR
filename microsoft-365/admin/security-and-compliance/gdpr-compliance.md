@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: 28f39b8aaf715c9f95f89fe30ae0cfc077327eda
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: f616ed65879427c377333981841006b2b50b3515
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469511"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621279"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -32,7 +32,7 @@ ms.locfileid: "65469511"
   
 Le Règlement général sur la protection des données (RGPD) est une règlementation de l’Union européenne (UE) qui impose la façon dont une organisation doit traiter des données personnelles. Si votre entreprise vend, fournit des services ou emploie des citoyens de l’Union européenne, le [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) vous affectera. 
 
-En tant qu’administrateur d’une petite entreprise, vous vous demander probablement « Comment démarrer » ? C’est particulièrement vrai si votre entreprise ne traite pas les données personnelles comme une activité centrale ou si vous débutez avec le GDPR.
+En tant qu’administrateur d’une petite entreprise, vous vous demander probablement « Comment démarrer » ? C’est particulièrement vrai si votre entreprise ne traite pas les données personnelles comme une activité centrale ou si vous débutez avec le RGPD.
 
 Vous pouvez démarrer en examinant cet article dont le but est de vous expliquer ce qu’est le RGPD, la raison de son apparition et de quelle manière Microsoft 365 pour les PME peut permettre à votre organisation de se conformer au RGPD.
 
@@ -101,6 +101,7 @@ Par exemple, vous pouvez avoir besoin des données personnelles de votre employ�
 Un nouvel exemple peut être que vous gérez des listes de clients individuels pour leur envoyer des annonces sur des offres spéciales, s’ils y ont consenti.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Fonctionnalités Microsoft 365 pouvant être utiles
+
 La [Protection des données Microsoft Purview](/microsoft-365/compliance/information-protection) peut vous aider à découvrir, classer et protéger des informations sensibles dans votre entreprise. Vous pouvez utiliser des classifieurs pouvant être formés pour vous permettre d’identifier et d’étiqueter des types de documents contenant des données personnelles. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Étape 2 : informez vos clients, employés et autres individus que vous devez collecter leurs données personnelles
