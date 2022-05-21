@@ -14,7 +14,7 @@
           items:
             - name: Essayer Defender pour Office 365
               href: try-microsoft-defender-for-office-365.md
-            - name: Guide d'essai de Defender for Office 365
+            - name: Guide d'essai de Microsoft Defender pour Office 365
               href: trial-playbook-defender-for-office-365.md
         - name: Nouveautés de Defender pour Office 365
           href: whats-new-in-defender-for-office-365.md
@@ -364,9 +364,9 @@
           items:
             - name: Quarantaine
               href: quarantine-email-messages.md
-            - name: Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur
+            - name: Mise en quarantaine de l’administrateur
               href: manage-quarantined-messages-and-files.md
-            - name: Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur
+            - name: Mise en quarantaine de l’utilisateur final
               href: find-and-release-quarantined-messages-as-a-user.md
             - name: Stratégies de mise en quarantaine
               href: quarantine-policies.md
