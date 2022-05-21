@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2f66106dd39b9cd1f590148addfdd2cae89748c6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 72509f7480d54819fc29f40bab0e2bf65dcd8660
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938479"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622020"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -30,58 +30,59 @@ ms.locfileid: "61938479"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Indicateurs de** points de **terminaison** \> (sous **Règles**).
 
 2. Sélectionnez l’onglet du type d’entité que vous souhaitez gérer.
 
-3. Mettez à jour les détails de  l’indicateur et cliquez sur Enregistrer ou cliquer sur le bouton Supprimer si vous souhaitez supprimer l’entité de la liste. 
+3. Mettez à jour les détails de l’indicateur, puis cliquez sur **Enregistrer** ou cliquez sur le bouton **Supprimer** si vous souhaitez supprimer l’entité de la liste.
 
-## <a name="import-a-list-of-iocs"></a>Importer une liste d’IoCs
+## <a name="import-a-list-of-iocs"></a>Importer une liste d’E/S
 
-Vous pouvez également choisir de télécharger un fichier CSV qui définit les attributs des indicateurs, l’action à prendre et d’autres détails.
+Vous pouvez également choisir de charger un fichier CSV qui définit les attributs des indicateurs, l’action à effectuer et d’autres détails.
 
-Téléchargez l’exemple CSV pour connaître les attributs de colonne pris en charge.
+Téléchargez l’exemple de fichier CSV pour connaître les attributs de colonne pris en charge.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Indicateurs de** points de **terminaison** \> (sous **Règles**).
 
-2. Sélectionnez l’onglet du type d’entité pour qui vous souhaitez importer des indicateurs.
+2. Sélectionnez l’onglet du type d’entité pour lequel vous souhaitez importer des indicateurs.
 
-3. Sélectionnez **Importer** \> **un fichier .**
+3. Sélectionnez **Importer** \> **le fichier Choisir**.
 
-4. Sélectionnez **Importer**. Faites-le pour tous les fichiers que vous souhaitez importer.
+4. Sélectionnez **Importer**. Effectuez cette opération pour tous les fichiers que vous souhaitez importer.
 
 5. Sélectionnez **Terminé**.
 
 > [!NOTE]
-> Seuls 500 indicateurs peuvent être téléchargés pour chaque lot.
+> Seuls 500 indicateurs peuvent être chargés pour chaque lot.
 
-Le tableau suivant indique les paramètres pris en charge.
+Le tableau suivant présente les paramètres pris en charge.
 
 Parameter|Type|Description
 :---|:---|:---
-indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
-action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
+indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
+indicatorValue|Chaîne|Identité de l’entité [Indicateur](ti-indicator.md) . **Obligatoire**
+action|Énum|Action qui sera effectuée si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
+title|Chaîne|Titre de l’alerte d’indicateur. **Obligatoire**
 description|Chaîne| Description de l’indicateur. **Obligatoire**
-expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAA-MM-JDTHH:MM:SS.0Z. L’indicateur est supprimé si le délai d’expiration est passé et que tout ce qui se produit au moment de l’expiration se produit aux secondes (SS). **Optional**
+expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAAA-MM-DDTHH:MM:SS.0Z. L’indicateur est supprimé si le délai d’expiration est écoulé et que tout ce qui se passe au moment de l’expiration se produit à la valeur de secondes (SS). **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
-category|String|Catégorie de l’alerte. Exemples : exécution et accès aux informations d’identification. **Optional**
-mitretechniques|Chaîne|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
-GenerateAlert|String|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
-
-
+recommendedActions|String|Actions recommandées pour les alertes d’indicateur TI. **Optional**
+rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupes RBAC auxquels l’indicateur serait appliqué. **Optional**
+category|String|Catégorie de l’alerte. Exemples : l’exécution et l’accès aux informations d’identification. **Optional**
+mitretechniques|Chaîne|Code/id des techniques MITRE (séparés par des virgules). Pour plus d’informations, consultez [Enterprise tactiques](https://attack.mitre.org/tactics/enterprise/). **Optionnel** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
+GenerateAlert|Chaîne|Indique si l’alerte doit être générée. Les valeurs possibles sont : True ou False. **Optional**
 
 > [!NOTE]
-> La notation CIDR (Classless Inter-Domain Routing) pour les adresses IP n’est pas prise en charge.
-Pour plus d’informations, consultez Microsoft Defender pour les catégories d’alerte de point de terminaison sont désormais alignées avec [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
+> La notation de routage Inter-Domain sans classe (CIDR) pour les adresses IP n’est pas prise en charge.
+Pour plus d’informations, consultez [Microsoft Defender pour point de terminaison catégories d’alertes sont désormais alignées sur MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
+
+Regardez cette vidéo pour découvrir comment Microsoft Defender pour point de terminaison offre plusieurs façons d’ajouter et de gérer des indicateurs de compromission (IOC). 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
 
 ## <a name="see-also"></a>Voir aussi
 

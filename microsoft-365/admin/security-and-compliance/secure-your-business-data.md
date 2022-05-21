@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 18de5e6f0d859095f38972b0fae66c1312bf4099
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093658"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622811"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser les Microsoft 365 pour les entreprises
 
@@ -54,7 +54,7 @@ Pour en savoir plus sur l’une des fonctionnalités du plan de service, cliquez
 
 |Tâche|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
-[Protéger contre les mots de passe perdus ou volés](#set-up-multifactor-authentication) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[Protéger contre les mots de passe perdus ou volés](#set-up-multi-factor-authentication) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Former vos utilisateurs](#train-your-users) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Utiliser des comptes d’administrateur dédiés](#use-dedicated-admin-accounts)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [Se protéger contre les programmes malveillants](#protect-against-malware) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection de l’e-mail) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection accrue pour les e-mails et les appareils) |
@@ -72,7 +72,7 @@ Il est important que, avant de commencer, vous vérifiez votre [Microsoft 365 de
 
 ![Capture d’écran de Microsoft Secure Score.](../../media/secure-score.png)
 
-## <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
+## <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
 
 Protégez-vous contre les mots de passe perdus ou volés à l’aide de l’authentification multifacteur (MFA). Lorsque l’authentification multifacteur est configurée, les utilisateurs doivent utiliser un code sur leur téléphone pour se connecter à Microsoft 365. Cette étape supplémentaire peut empêcher les pirates de prendre le relais s’ils connaissent votre mot de passe. 
 
@@ -191,7 +191,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 
 6. Sélectionnez **Enregistrer**.
 
-| Paramètre | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètres | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : types de fichiers de blocage  <br/> |
 |Appliquez cette règle si . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |
@@ -202,7 +202,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants dans [Protéger contre les programmes malveillants](#protect-against-malware).
 
-Pour plus d’informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 

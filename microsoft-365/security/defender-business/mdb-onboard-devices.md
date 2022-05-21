@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396154"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621319"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour les PME
 
@@ -142,7 +142,7 @@ Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme au
 
 Pour afficher la liste des appareils intégrés à Defender entreprise, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils [(clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
 - Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
@@ -182,7 +182,7 @@ Lorsque vous exécutez le script local sur un appareil macOS, il crée une appro
 
 9. Vous êtes invité à autoriser l’installation d’un pilote de Microsoft (« Extension système bloquée » ou « L’installation est en attente », ou les deux. Le pilote doit être autorisé à être installé. Pour autoriser l’installation, sélectionnez **Ouvrir les préférences de sécurité** ou **Ouvrir les préférences** >  système **& confidentialité**, puis **sélectionnez Autoriser**.
 
-10. Utilisez la commande Python suivante dans Bash pour exécuter le package d’intégration : `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+10. Utilisez la commande Python suivante dans Bash pour exécuter le package d’intégration : `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
 11. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
 
@@ -229,7 +229,7 @@ Si votre entreprise préfère que des personnes inscrivent leurs propres apparei
 
 Pour afficher la liste des appareils intégrés à Defender entreprise, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
 - Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
@@ -248,7 +248,7 @@ Consultez les ressources suivantes pour obtenir de l’aide sur l’inscription 
 
 Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
 - Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)

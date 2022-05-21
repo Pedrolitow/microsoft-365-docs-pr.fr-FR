@@ -22,18 +22,18 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 10/28/2021
-ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/18/2022
+ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326298"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587421"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
 > [!IMPORTANT]
-> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et ajouter de nouveaux abonnements à celui-ci, mais pourvu que le compte bancaire soit en règle.
+> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces countries, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant.et en règle. Toutefois, vous ne pouvez pas ajouter de nouveaux abonnements au compte bancaire.
 
 Les cartes de débit, de crédit et les informations bancaires sont acceptées pour régler votre abonnement. Dans certains cas, vous pouvez régler votre facture par chèque ou transfert électronique de fonds (TEF). Si vous disposez d’un profil de facturation, vous avez des options légèrement différentes. Pour plus d’informations, consultez la rubrique [Comment régler un abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md). Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez la rubrique [Comprendre les profils de facturation](manage-billing-profiles.md).
 

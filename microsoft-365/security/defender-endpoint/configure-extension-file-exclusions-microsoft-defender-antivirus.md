@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419899"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622993"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -38,7 +38,7 @@ Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui s�
 - [Exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Antivirus Microsoft Defender exclusions ne s’appliquent pas à d’autres fonctionnalités Microsoft Defender pour point de terminaison, notamment [protection évolutive des points de terminaison ( PEPT)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)), [les règles de réduction de la surface d’attaque (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) et l’accès [contrôlé aux dossiers](/microsoft-365/security/defender-endpoint/controlled-folders). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes PEPT et d’autres détections.
+> Antivirus Microsoft Defender exclusions ne s’appliquent pas à d’autres fonctionnalités Microsoft Defender pour point de terminaison, telles que les [règles de réduction de la surface d’attaque (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) et l’accès [contrôlé aux dossiers](/microsoft-365/security/defender-endpoint/controlled-folders). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes PEPT et d’autres détections.
 > Pour exclure les fichiers de manière générale, ajoutez-les aux [indicateurs personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender pour point de terminaison.
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -104,7 +104,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **La configuration de l’ordinateur** et sélectionnez **Modèles d’administration**.
+2. Dans l’**Éditeur de gestion des stratégies de groupe** accédez à **Configuration de l’ordinateur** et sélectionnez **Modèles d’administration**.
 
 3. Développez l’arborescence pour **Windows composants** \> **Antivirus Windows Defender** \> **exclusions**.
 
@@ -293,7 +293,7 @@ Vous pouvez récupérer les éléments de la liste d’exclusion à l’aide de 
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
-- [application Sécurité Windows](microsoft-defender-security-center-antivirus.md)
+- [Application Sécurité Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
 > Les modifications apportées à la liste d’exclusion avec stratégie de groupe **s’affichent** dans les listes de [l’application Sécurité Windows](microsoft-defender-security-center-antivirus.md).

@@ -20,18 +20,18 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418245"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623236"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,9 +48,8 @@ Les appareils inconnus et non gérés présentent des risques significatifs pour
 - Intégrer des points de terminaison non managés au service, ce qui augmente la visibilité de la sécurité sur ces derniers.
 - Réduisez la surface d’attaque en identifiant et en évaluant les vulnérabilités, et en détectant les lacunes de configuration.
 
-Regardez cette vidéo pour obtenir une vue d’ensemble rapide de la façon dont la découverte d’appareils :
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide de l’évaluation et de l’intégration d’appareils non gérés qui Microsoft Defender pour point de terminaison découverts.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 Conjointement à cette fonctionnalité, une recommandation de sécurité pour intégrer des appareils à Microsoft Defender pour point de terminaison est disponible dans le cadre de l’expérience Gestion des menaces et des vulnérabilités existante.
 
@@ -115,13 +114,13 @@ Recherchez les recommandations de sécurité liées à « SSH » pour rechercher
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Utiliser la chasse avancée sur les appareils découverts
 
-Vous pouvez utiliser des requêtes de chasse avancées pour obtenir une visibilité sur les appareils découverts. Recherchez des détails sur les appareils découverts dans la table DeviceInfo ou des informations relatives au réseau sur ces appareils dans la table DeviceNetworkInfo.
+Vous pouvez utiliser des requêtes de chasse avancées pour obtenir une visibilité sur les appareils découverts. Recherchez des détails sur les appareils découverts dans la table DeviceInfo, ou des informations relatives au réseau sur ces appareils, dans la table DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Page De repérage avancé sur laquelle les requêtes peuvent être utilisées" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### <a name="query-discovered-devices-details"></a>Détails de la requête sur les appareils découverts
 
-Exécutez cette requête, sur la table DeviceInfo, pour retourner tous les appareils découverts, ainsi que les détails les plus détaillés pour chaque appareil :
+Exécutez cette requête sur la table DeviceInfo pour retourner tous les appareils découverts, ainsi que les détails les plus récents pour chaque appareil :
 
 ```query
 DeviceInfo

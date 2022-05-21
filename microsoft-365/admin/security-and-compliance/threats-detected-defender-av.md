@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment Antivirus Microsoft Defender protège vos appareils Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions.
-ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 796edb343745e19267f901b736ca19217b0e4f01
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466303"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620914"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Vue d’ensemble de la protection contre les menaces par Antivirus Microsoft Defender
 
@@ -73,7 +73,7 @@ Lorsque des menaces sont détectées par Antivirus Microsoft Defender, les évé
 
 Dans la plupart des cas, les utilisateurs n’ont pas besoin d’effectuer d’autres actions. Dès qu’un fichier ou un programme malveillant est détecté sur un appareil, Antivirus Microsoft Defender le bloque et l’empêche de s’exécuter. De plus, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que d’autres appareils et utilisateurs soient également protégés.  
 
-S’il existe une action qu’un utilisateur doit entreprendre, par exemple approuver la suppression d’un fichier malveillant, il le voit dans la notification qu’il reçoit. Pour en savoir plus sur les actions qu’Antivirus Microsoft Defender effectue au nom d’un utilisateur ou sur les actions que les utilisateurs peuvent avoir besoin d’effectuer, consultez [l’historique de protection](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Pour savoir comment gérer les détections de menaces en tant que professionnel de l’informatique/administrateur, consultez [Examiner les menaces détectées et prendre des mesures](review-threats-take-action.md).
+S’il existe une action qu’un utilisateur doit entreprendre, par exemple approuver la suppression d’un fichier malveillant, il le voit dans la notification qu’il reçoit. Pour en savoir plus sur les actions qu’Antivirus Microsoft Defender effectue au nom d’un utilisateur ou sur les actions que les utilisateurs peuvent avoir besoin d’effectuer, consultez [l’historique de protection](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Pour savoir comment gérer les détections de menaces en tant que professionnel de l’informatique/administrateur, consultez [Examiner les menaces détectées et prendre des mesures](../../business-premium/m365bp-review-threats-take-action.md).
 
 Pour en savoir plus sur les différentes menaces, visitez le <a href="https://www.microsoft.com/wdsi/threats" target="_blank">site Renseignement de sécurité Microsoft Menaces</a>, où vous pouvez effectuer les actions suivantes : 
 

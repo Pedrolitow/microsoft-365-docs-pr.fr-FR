@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens Coffre et des paramètres de liens Coffre globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 867d055c44ba0d0ae0b7b763bc556a06f16e5cd8
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847086"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623015"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -104,9 +104,9 @@ La création d’une stratégie de liens Coffre personnalisée dans le portail M
 
 4. Dans la page **Utilisateurs et domaines** qui s’affiche, identifiez les destinataires internes auxquels la stratégie s’applique (conditions de destinataire) :
    - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
-   - **Groupes** :
-     - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
-     - Groupes Microsoft 365 spécifiée.
+   - **Groupes** :
+     - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+     - Groupes Microsoft 365 spécifiée
    - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -125,6 +125,10 @@ La création d’une stratégie de liens Coffre personnalisée dans le portail M
        - **Attendez la fin de l’analyse d’URL avant de remettre le message** : sélectionnez cette option pour attendre la fin de l’analyse d’URL en temps réel avant de remettre le message.
      - **Appliquer Coffre liens vers les messages électroniques envoyés au sein de l’organisation** : sélectionnez cette option pour appliquer la stratégie Coffre Liens aux messages entre les expéditeurs internes et les destinataires internes.
    - **Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** : Sélectionnez **Activé** pour activer Coffre Protection des liens pour les liens dans Teams. Notez que l’application de ce paramètre peut prendre jusqu’à 24 heures.
+
+     > [!NOTE]
+     > Actuellement, Coffre Protection des liens pour Microsoft Teams n’est pas disponible dans Microsoft 365 Cloud de la communauté du secteur public DoD élevé ou Microsoft 365.
+
    - **Suivre les clics de l’utilisateur** : laissez cette option sélectionnée pour activer le suivi des clics de l’utilisateur sur les URL dans les messages électroniques.
    - **Permettre aux utilisateurs de cliquer sur l’URL d’origine** : désactivez cette option pour empêcher les utilisateurs de cliquer sur l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
    - **Ne réécrivez pas les URL suivantes** : autorise l’accès aux URL spécifiées qui seraient autrement bloquées par Coffre Liens.

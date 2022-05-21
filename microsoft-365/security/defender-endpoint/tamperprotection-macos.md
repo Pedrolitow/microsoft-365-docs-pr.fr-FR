@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e99ed2f93156cb92f031528e71d51cebafc3088f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: a75c56dd2844c563b1ee29ccb32acc263ffd3aed
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417011"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623585"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger macOS paramètres de sécurité avec la protection contre les falsifications
 
@@ -340,7 +340,7 @@ Ajoutez la configuration suivante dans votre profil Intune :
 Si l’exécution de la commande `mdatp health` indique que la protection contre les falsifications est désactivée, même si vous l’avez activée et que plus d’une heure s’est écoulée depuis l’intégration, vous pouvez vérifier si vous disposez de la configuration appropriée en exécutant la commande suivante :
 
 ```console
-$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoftmdatpmicrosoft_defender_core.log \| tail -n 1
+$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 
 \[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabledmode: "block"
 ```

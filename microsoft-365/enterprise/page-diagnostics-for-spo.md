@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostics de page pour SharePoint pour analyser SharePoint portail moderne en ligne et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: b39b547754acc6f12c750192af2986e9b4e54150
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a4d2c0f6d298578290d9f7daf850c4744e2f8dff
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095661"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621839"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utiliser l’outil Diagnostics de page pour SharePoint
 
@@ -42,7 +42,7 @@ L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pou
 
 L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfini de règles et affiche des informations détaillées lorsque les résultats d’un test se trouvent en dehors de la valeur de référence. SharePoint Les administrateurs et concepteurs en ligne peuvent utiliser l’outil pour résoudre les problèmes de performances et s’assurer que les nouvelles pages sont optimisées avant la publication.
 
-L’outil Diagnostics de page est conçu pour analyser SharePoint pages de site uniquement, et non les pages système telles que *allitems.aspx* ou *sharepoint.aspx*. Si vous tentez d’exécuter l’outil sur une page système ou toute autre page hors site, vous recevrez un message d’erreur indiquant que l’outil ne peut pas être exécuté pour ce type de page.
+L’outil Diagnostics de page est conçu pour analyser SharePoint pages de site uniquement, et non les pages système telles que *allitems.aspx* ou *sharepoint.aspx*. Si vous tentez d’exécuter l’outil sur une page système ou toute autre page non-site, vous recevez un message d’erreur indiquant que l’outil ne peut pas être exécuté pour ce type de page.
 
 > [!div class="mx-imgBorder"]
 > ![Doit s’exécuter sur une page SharePoint.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
@@ -90,10 +90,10 @@ Sélectionnez **Démarrer** pour commencer à collecter des données à des fins
     > [!div class="mx-imgBorder"]
     > ![Détails des diagnostics de page.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** est un élément important lors de l’utilisation de Support Microsoft, car il leur permet de collecter des données de diagnostic supplémentaires pour la page spécifique.
+   - **CorrelationID** est un élément important lors de l’utilisation de Support Microsoft, car il leur permet de collecter plus de données de diagnostic pour la page spécifique.
    - **SPRequestDuration** est le temps nécessaire à SharePoint pour traiter la page. La navigation structurelle, les images volumineuses, un grand nombre d’appels d’API peuvent tous contribuer à des durées plus longues.
    - **SPIISLatency** est le temps en millisecondes pris pour SharePoint Online commencent à charger la page. Cette valeur n’inclut pas le temps nécessaire à l’application web pour répondre.
-   - **Le temps de chargement** de la page est la durée totale enregistrée par la page entre l’heure de la demande et l’heure à laquelle la réponse a été reçue et affichée dans le navigateur. Cette valeur est affectée par divers facteurs, notamment la latence du réseau, les performances de l’ordinateur et le temps nécessaire au navigateur pour charger la page.
+   - **Le temps de chargement** de la page est la durée totale enregistrée par la page entre l’heure de la demande et l’heure à laquelle la réponse a été reçue et affichée dans le navigateur. Cette valeur est affectée par différents facteurs, notamment la latence du réseau, les performances de l’ordinateur et le temps nécessaire au navigateur pour charger la page.
    - **L’URL de page** (Uniform Resource Locator) est l’adresse web de la page active.
 
 1. [**L’onglet Tests de diagnostic**](#how-to-use-the-diagnostic-tests-tab) affiche les résultats de l’analyse dans trois catégories ; **Aucune action n’est requise**, **les possibilités d’amélioration** et **l’attention requise**. Chaque résultat de test est représenté par un élément dans l’une de ces catégories, comme décrit dans le tableau suivant :
@@ -113,7 +113,7 @@ Sélectionnez **Démarrer** pour commencer à collecter des données à des fins
 
 Lorsque vous analysez une page SharePoint portail moderne ou une page de site de publication classique avec l’outil Diagnostics de page pour SharePoint, les résultats sont analysés à l’aide de règles prédéfinies qui comparent les résultats par rapport aux valeurs de base de référence et affichées sous l’onglet **Tests de diagnostic**. Les règles de certains tests peuvent utiliser différentes valeurs de base de référence pour le portail moderne et les sites de publication classiques en fonction des performances spécifiques  caractéristiques différentes entre les deux.
 
-Les résultats des tests qui apparaissent dans les catégories **Possibilités d’amélioration** ou **Attention requises** indiquent les domaines qui doivent être examinés par rapport aux pratiques recommandées et peuvent être sélectionnés pour afficher des informations supplémentaires sur le résultat. Les détails de chaque élément incluent un lien _En savoir plus_ qui vous guidera directement vers les conseils appropriés liés au test. Les résultats des tests qui apparaissent dans la catégorie **Aucune action requise** indiquent la conformité à la règle appropriée et n’affichent pas de détails supplémentaires lorsqu’ils sont sélectionnés.
+Les résultats des tests qui apparaissent dans les catégories **Possibilités d’amélioration** ou **Attention requises** indiquent les domaines qui doivent être examinés par rapport aux pratiques recommandées et peuvent être sélectionnés pour afficher des informations supplémentaires sur le résultat. Les détails de chaque élément incluent un lien _En savoir plus_ , qui vous guidera directement vers les conseils appropriés liés au test. Les résultats des tests qui apparaissent dans la catégorie **Aucune action requise** indiquent la conformité à la règle appropriée et n’affichent pas de détails supplémentaires lorsqu’ils sont sélectionnés.
 
 Les informations de l’onglet Tests de diagnostic ne vous indiquent pas comment concevoir des pages, mais mettent en évidence les facteurs susceptibles d’impacter les performances de la page. Certaines fonctionnalités et personnalisations de page ont un impact inévitable sur les performances de la page, et doivent être examinées pour rechercher des corrections ou des omissions potentielles de la page si leur impact est important.
 
@@ -146,7 +146,7 @@ Les résultats rouges ou jaunes peuvent également indiquer des composants WebPa
    > [!div class="mx-imgBorder"]
    > ![Activer l’exportation vers HAR.](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
-Cette option doit être activée avant de cliquer sur Démarrer, ce qui active le mode débogage dans votre navigateur. Il génère un fichier d’archive HTTP (HAR) accessible via l’onglet « Trace réseau ». Cliquez sur « Exporter vers HAR » pour télécharger le fichier sur votre ordinateur et vous pouvez ensuite le partager en conséquence. Le fichier peut être ouvert dans divers outils de débogage, tels que F12 Developer Tools et Fiddler.
+Cette option doit être activée avant de cliquer sur Démarrer, ce qui active le mode débogage dans votre navigateur. Il génère un fichier d’archive HTTP (HAR) accessible via l’onglet « Trace réseau ». Cliquez sur « Exporter vers HAR » pour télécharger le fichier sur votre ordinateur et vous pouvez ensuite le partager en conséquence. Le fichier peut être ouvert dans différents outils de débogage, tels que F12 Developer Tools et Fiddler.
 
 > [!div class="mx-imgBorder"]
 > ![Trace réseau.](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)

@@ -22,14 +22,14 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès privilégié à votre locataire Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34e4665067640ec625501b15c12c1c2e80d5ffb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095595"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622562"
 ---
-# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Étape 2. Protéger vos comptes privilégiés Microsoft 365
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Étape 2. Protéger vos comptes privilégiés Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
@@ -56,7 +56,7 @@ Au lieu d’utiliser des comptes d’utilisateurs quotidiens auxquels des rôles
 > [!NOTE]
 > Cela nécessite des étapes supplémentaires pour vous déconnecter en tant que compte d’utilisateur quotidien et vous connecter avec un compte d’administrateur dédié. Toutefois, cela ne doit être effectué qu’occasionnellement pour les opérations d’administrateur. Tenez compte du fait que la récupération de votre abonnement Microsoft 365 après une violation de compte d’administrateur nécessite beaucoup plus d’étapes.
 
-Vous devez également créer des [comptes d’accès d’urgence](/azure/active-directory/roles/security-emergency-access) pour éviter d’être verrouillé accidentellement hors de Azure AD.
+Vous devez également créer des [comptes d’accès d’urgence](/azure/active-directory/roles/security-emergency-access) pour éviter d’être verrouillé accidentellement dans Azure AD.
 
 Vous pouvez protéger davantage vos comptes privilégiés avec Azure AD Privileged Identity Management (PIM) pour l’attribution à la demande et juste-à-temps des rôles d’administrateur. 
  
@@ -80,7 +80,7 @@ Si vous êtes une petite entreprise qui utilise des comptes d’utilisateur stoc
     
 Si vous êtes une grande organisation qui utilise un modèle d’identité hybride Microsoft 365, vous disposez d’autres options de vérification. Si vous disposez déjà de l’infrastructure de sécurité pour une méthode d’authentification secondaire plus forte, [configurez l’authentification multifacteur](../admin/security-and-compliance/set-up-multi-factor-authentication.md) et configurez chaque compte privilégié dédié pour la méthode de vérification appropriée.
   
-Si l’infrastructure de sécurité de la méthode de vérification plus forte souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes privilégiés dédiés avec l’authentification multifacteur à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un téléphone intelligent pour vos comptes privilégiés en tant que mesure de sécurité intermédiaire. Ne laissez pas vos comptes privilégiés dédiés sans la protection supplémentaire fournie par l’authentification multifacteur.
+Si l’infrastructure de sécurité de la méthode de vérification plus forte souhaitée n’est pas en place et fonctionne pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes privilégiés dédiés avec l’authentification multifacteur à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un smartphone pour vos comptes privilégiés comme mesure de sécurité intermédiaire. Ne laissez pas vos comptes privilégiés dédiés sans la protection supplémentaire fournie par l’authentification multifacteur.
   
 Pour plus d’informations, consultez [MFA pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
@@ -97,7 +97,7 @@ Utilisez ces méthodes supplémentaires pour vous assurer que votre compte privi
   
 ### <a name="privileged-access-workstation"></a>Station de travail d’accès privilégié
 
-Pour vous assurer que l’exécution de tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail à accès privilégié (PAW). Un PAW est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que Microsoft 365 configuration qui nécessite un compte privilégié. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation internet ou la messagerie électronique, il est mieux protégé contre les attaques et menaces Internet.
+Pour vous assurer que l’exécution de tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail à accès privilégié (PAW). Un PAW est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que Microsoft 365 configuration qui nécessite un compte privilégié. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation internet ou la messagerie, il est mieux protégé contre les attaques et menaces Internet.
   
 Pour obtenir des instructions sur la configuration d’un PAW, consultez [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
@@ -107,7 +107,7 @@ Reportez-vous à la rubrique [Sécurisation de l’accès privilégié pour les 
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-Au lieu d’attribuer définitivement un rôle d’administrateur à vos comptes privilégiés, vous pouvez utiliser Azure AD PIM pour activer l’attribution juste-à-temps à la demande du rôle d’administrateur lorsqu’il est nécessaire.
+Au lieu d’attribuer définitivement un rôle d’administrateur à vos comptes privilégiés, vous pouvez utiliser Azure AD PIM pour activer l’attribution juste-à-temps à la demande du rôle d’administrateur quand cela est nécessaire.
   
 Vos comptes d’administrateur passent d’administrateurs permanents à administrateurs éligibles. Le rôle d'administrateur est inactif tant que vous n'en avez pas besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur au compte privilégié pendant une durée prédéterminée. Lorsque l’heure expire, PIM supprime le rôle d’administrateur du compte privilégié.
   
@@ -115,7 +115,7 @@ L’utilisation de PIM et de ce processus réduit considérablement la durée pe
 
 PIM est disponible avec Azure Active Directory Premium P2, qui est inclus avec Microsoft 365 E5. Vous pouvez également acheter des licences Azure Active Directory Premium P2 individuelles pour vos comptes d’administrateur.
   
-Pour plus d’informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [Sécuriser l’accès privilégié pour les déploiements hybrides et cloud dans Azure AD](/azure/active-directory/roles/security-planning)
@@ -125,7 +125,7 @@ Pour plus d’informations, voir :
 
 Vous activez la gestion des accès privilégiés en configurant des stratégies qui indiquent l’accès juste-à-temps pour les activités basées sur des tâches dans votre client. Elle peut vous aider à protéger votre organisation contre les violations qui pourraient survenir par le biais de comptes d’administrateur privilégiés existants qui donnent un accès permanent à des données sensibles ou à des paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour pouvoir accéder aux paramètres de boîte aux lettres de votre organisation dans votre client et les modifier.
 
-Pour cette étape, vous allez activer la gestion des accès privilégiés dans votre client et configurer les stratégies d’accès privilégiés qui permettent de renforcer la sécurité des accès basés sur les tâches à vos paramètres de configuration et à vos données pour votre organisation. Il existe trois étapes simples pour commencer à utiliser les accès privilégiés dans votre organisation :
+Dans cette étape, vous allez activer la gestion des accès privilégiés dans votre locataire et configurer des stratégies d’accès privilégié qui fournissent une sécurité supplémentaire pour l’accès basé sur les tâches aux données et aux paramètres de configuration de votre organisation. Il existe trois étapes de base pour commencer à utiliser l’accès privilégié dans votre organisation :
 
 - Création d’un groupe d’approbateurs
 - Activation des accès privilégiés
@@ -139,7 +139,7 @@ Pour plus d’informations, consultez [Privileged Access Management](/office365/
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Logiciel SIEM (Security Information and Event Management) pour la journalisation Microsoft 365
 
-Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure Microsoft 365 alertes et événements de sécurité dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD dans vous SEIM. Voir [Présentation de Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure Microsoft 365 alertes et événements de sécurité dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD à votre SEIM. Voir [Présentation de Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Étape suivante
 

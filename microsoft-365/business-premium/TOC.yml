@@ -1,6 +1,6 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: index.md
     - name: Comment Microsoft 365 aide votre entreprise
       href: m365bp-secure-users.md
@@ -12,7 +12,7 @@
   items:
     - name: Se connecter et configurer
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -38,7 +38,7 @@
   items:
     - name: Configurer des appareils non gérés (BYOD)
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-devices-overview.md
         - name: Configurez l’authentification multi-facteurs.
           href: m365bp-multifactor-authentication.md
@@ -48,7 +48,7 @@
           href: m365bp-protect-pcs-macs.md
     - name: Utiliser l’e-mail en toute sécurité
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-protect-email-overview.md
         - name: Se protéger contre le hameçonnage et les autres attaques
           href: avoid-phishing-and-attacks.md
@@ -56,7 +56,7 @@
           href: send-encrypted-email.md
     - name: Collaborer et partager de manière sécurisée
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-collaborate-share-securely.md
         - name: Créer Teams pour la collaboration
           href: create-teams-for-collaboration.md
@@ -70,7 +70,7 @@
   items:
     - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-protect-devices.md
         - name: Configurer les appareils gérés
           href: m365bp-managed-devices-setup.md
@@ -78,7 +78,7 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protéger les appareils Windows
           items:
-            - name: "Paramètres de protection pour les appareils Windows\_10"
+            - name: Paramètres de protection pour les appareils Windows
               href: m365bp-protection-settings-for-windows-10-devices.md
             - name: Sécuriser les appareils Windows
               href: m365bp-secure-windows-devices.md
@@ -92,7 +92,7 @@
           href: m365bp-device-groups-mdb.md
 - name: Gestion des incidents de sécurité
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: m365bp-security-incident-management.md
     - name: Passer en revue les recommandations de sécurité
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -102,14 +102,14 @@
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Gérer votre environnement
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: m365bp-maintain-environment.md
     - name: Supprimer des utilisateurs
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Supprimer des données sur des appareils
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-remove-company-data.md
     - name: Rétablissement des paramètres d’usine des appareils
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-reset-devices-to-factory-settings.md
 - name: Référence
   items:
     - name: Glossaire des termes
@@ -128,7 +128,7 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Paramètres de protection des applications pour Android et iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Mapper les fonctionnalités de protection aux paramètres InTune
+    - name: Mappage des fonctionnalités de protection avec les paramètres Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Configurer le Gestionnaire de conformité
       href: m365bp-set-up-compliance.md

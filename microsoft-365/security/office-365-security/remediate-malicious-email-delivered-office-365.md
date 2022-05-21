@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correction des menaces
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d584ce10f4e119ec4fe8aa2991c6cac0edd5377c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714841"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621906"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les courriers malveillants remis dans Office 365
 
@@ -55,7 +55,7 @@ Une fois les e-mails sélectionnés par le biais de l’Explorateur, vous pouvez
 
 - Approbation directe : lorsque des actions telles que *le déplacement vers la boîte de réception*, *le déplacement vers le courrier indésirable*, le *déplacement vers des éléments supprimés*, la *suppression réversible* ou la *suppression définitive* sont sélectionnées par le personnel de sécurité disposant des autorisations appropriées, et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée.
 > [!NOTE]
->Lorsque la correction est lancée, elle génère une alerte et une enquête en parallèle. L’alerte s’affiche dans la file d’attente des alertes avec le nom « Action administrative soumise par un administrateur », ce qui indique que le personnel de sécurité a pris l’action de corriger une entité. Il présente des détails tels que le nom de la personne qui a effectué l’action, la prise en charge du lien d’investigation, l’heure, etc. Il fonctionne vraiment bien de savoir chaque fois qu’une action dure comme la correction est effectuée sur les entités. Toutes ces actions peuvent être trcakées sous l’onglet **Actions & Submissions** \> **Action** **centerHistory**  ->  (préversion publique).
+> Lorsque la correction est lancée, elle génère une alerte et une enquête en parallèle. L’alerte s’affiche dans la file d’attente des alertes avec le nom « Action administrative soumise par un administrateur », ce qui indique que le personnel de sécurité a pris l’action de corriger une entité. Il présente des détails tels que le nom de la personne qui a effectué l’action, la prise en charge du lien d’investigation, l’heure, etc. Il fonctionne vraiment bien de savoir chaque fois qu’une action dure comme la correction est effectuée sur les entités. Toutes ces actions peuvent être suivies sous l’onglet **Actions & Submissions** \> **Action** **centerHistory**  ->  (préversion publique).
 
 - Approbation en deux étapes : une action « Ajouter à la correction » peut être effectuée par des administrateurs qui ne disposent pas des autorisations appropriées ou qui doivent attendre pour exécuter l’action. Dans ce cas, les e-mails ciblés sont ajoutés à un conteneur de correction. L’approbation est nécessaire avant l’exécution de la correction.
 

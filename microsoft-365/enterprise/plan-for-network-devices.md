@@ -18,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : Décrit les considérations relatives à la capacité réseau, aux accélérateurs WAN et aux appareils d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: 58c4225d9d381dabedfa86d81ced7f5922932058
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100322"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622833"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
   
-Certains matériels réseau peuvent avoir des limitations sur le nombre de sessions simultanées prises en charge. Pour les organisations qui comptent plus de 2 000 utilisateurs, nous recommandons qu’elles surveillent leurs appareils réseau pour s’assurer qu’elles sont capables de gérer le trafic de service Office 365 supplémentaire. Le logiciel de supervision SNMP (Simple Network Management Protocol) peut vous aider à effectuer cette opération.
+Certains matériels réseau peuvent avoir des limitations sur le nombre de sessions simultanées prises en charge. Pour les organisations comptant plus de 2 000 utilisateurs, nous recommandons qu’elles surveillent leurs appareils réseau pour s’assurer qu’elles sont capables de gérer le trafic de service Office 365 supplémentaire. Le logiciel de supervision SNMP (Simple Network Management Protocol) peut vous aider à effectuer cette opération.
 
 Cet article fait partie de la [planification du réseau et de l’optimisation des performances pour Office 365](./network-planning-and-performance.md).
 

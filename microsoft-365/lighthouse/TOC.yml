@@ -58,6 +58,8 @@
       href: m365-lighthouse-win365-page-overview.md
     - name: Réapprovisionner un Windows 365 PC Cloud
       href: m365-lighthouse-reprovision-cloudpc.md
+    - name: Afficher une connexion réseau ayant échoué sur un PC cloud d’entreprise
+      href: m365-lighthouse-view-failed-network-connections.md
 - name: Gestion des menaces
   items:
     - name: Vue d’ensemble de la page Gestion des menaces
@@ -68,7 +70,7 @@
   items:
     - name: Obtenir de l’aide et de l’assistance
       href: m365-lighthouse-get-help-and-support.md
-    - name: Problèmes détectés
+    - name: Problèmes connus
       href: m365-lighthouse-known-issues.md
     - name: Résoudre les messages d’erreur et les problèmes
       href: m365-lighthouse-troubleshoot.md

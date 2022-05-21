@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c195f5656db1b7bc971087665a83df32bace7c6
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188179"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622623"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager
 
@@ -31,7 +31,7 @@ ms.locfileid: "65188179"
 
 - [Gérer Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
@@ -43,7 +43,8 @@ La gestion de la sécurité pour Microsoft Defender pour point de terminaison es
 
 Pour plus d’informations sur la gestion de la configuration de la sécurité, notamment les prérequis, les plateformes prises en charge et bien plus encore, consultez [Gérer les Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-
+Regardez cette vidéo pour découvrir comment utiliser Microsoft Endpoint Manager pour gérer la configuration de la sécurité pour Microsoft Defender pour point de terminaison.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 

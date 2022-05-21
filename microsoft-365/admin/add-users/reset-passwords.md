@@ -30,12 +30,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte d’administrateur Microsoft 365 pour réinitialiser les mots de passe des utilisateurs lorsque vous disposez d’un Microsoft 365 pour un abonnement professionnel.
-ms.openlocfilehash: 0ce656355b83077809c7082a1bf0d34e8a5439cd
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4c2c4bc1409a49b0f0bb26217fd349348331e95b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436248"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620950"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Réinitialiser les mots de passe dans Microsoft 365 pour les entreprises
 
@@ -49,7 +49,7 @@ Cet article explique comment réinitialiser les mots de passe pour vous-même et
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble du Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md).
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Vue d’ensemble dans le Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md).
 
 Vous devez être [administrateur général ou administrateur de mot de passe](about-admin-roles.md) pour effectuer ces étapes.
 

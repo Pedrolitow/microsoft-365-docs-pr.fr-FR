@@ -11,24 +11,24 @@ f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données préféré spécifié dans un environnement multigéogé.
+description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données préféré spécifié dans un environnement multigéographique.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: 7de00ad0d94cda0a47f4981d78ebc07cedab6ada
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 162f499a783c23ec45ec75610833c61978beaafb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318800"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623369"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Créer un groupe Microsoft 365 avec un emplacement de données préféré spécifique
 
-Lorsque les utilisateurs d’un environnement multigéogé créent un groupe Microsoft 365, l’emplacement de données par favori du groupe (PDL) est automatiquement définie sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Lorsque les utilisateurs d’un environnement multigéographique créent un groupe Microsoft 365, l’emplacement de données préféré du groupe (PDL) est automatiquement défini sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
 
-Si vous devez créer un groupe avec un PDL spécifique, vous pouvez le faire à l’aide du Centre d’administration <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> ou via l’Exchange Online New-UnifiedGroup cmdlet Microsoft PowerShell. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
+Si vous devez créer un groupe avec un fichier PDL spécifique, vous pouvez le faire à l’aide du <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a> ou de l’applet de commande Exchange Online New-UnifiedGroup Microsoft PowerShell. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
-Pour créer un groupe Microsoft 365 avec la PDL que vous spécifiez, allez au Centre d’administration <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> dans l’emplacement géographique où vous souhaitez créer le site de groupe.
+Pour créer un groupe Microsoft 365 avec le fichier PDL que vous spécifiez, accédez au <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a> à l’emplacement géographique où vous souhaitez créer le site de groupe.
 
 Par exemple :
 
@@ -49,9 +49,10 @@ Par exemple :
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
 ```
 
-![Capture d’écran New-UnifiedGroup cmdlet PowerShell avec une syntaxe.](../media/multi-geo-new-group-with-pdl-powershell.png)
+![Capture d’écran de New-UnifiedGroup cmdlet PowerShell avec syntaxe.](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-Notez que l’approvisionnement du site du groupe SharePoint est à la demande. Le site est approvisionné la première fois qu’un propriétaire ou un membre du groupe tente d’y accéder.
+> [!Note]
+> SharePoint l’approvisionnement de site de groupe est à la demande. Le site est approvisionné la première fois qu’un propriétaire ou un membre du groupe tente d’y accéder.
 
 ## <a name="geo-location-codes"></a>Codes d’emplacement géographique
 
@@ -61,4 +62,4 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-[Créer des groupes avec un emplacement de données préféré spécifique à l’aide Graph API](/graph/api/group-post-groups)
+[Créer des groupes avec un emplacement de données préféré spécifique à l’aide de API Graph](/graph/api/group-post-groups)

@@ -18,16 +18,16 @@ ms.custom:
 ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 5a9441a41db2dfbe53bfb280152c038e9dbc383e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: c8b3016517393b473bcae664a6044098e04ebf6d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789841"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623594"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
@@ -57,6 +57,9 @@ PEPT en mode bloc est intégré aux [& gestion des vulnérabilités de menaces](
 > [!TIP]
 > Pour obtenir la meilleure protection, veillez à **[déployer Microsoft Defender pour point de terminaison lignes de base](configure-machines-security-baseline.md)**.
 
+Regardez cette vidéo pour savoir pourquoi et comment activer protection évolutive des points de terminaison (PEPT) en mode bloc, activer le blocage comportemental et l’endiguement à chaque étape, de la pré-violation à la post-violation. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
+
 ## <a name="what-happens-when-something-is-detected"></a>Que se passe-t-il lorsque quelque chose est détecté ?
 
 Lorsque PEPT en mode bloc est activé et qu’un artefact malveillant est détecté, Microsoft Defender pour point de terminaison bloque et corrige cet artefact. Votre équipe des opérations de sécurité verra l’état de détection **comme Bloqué** ou **Empêché** dans le [Centre d’actions](respond-machine-alerts.md#check-activity-details-in-action-center), répertorié comme actions terminées.
@@ -76,7 +79,7 @@ L’image suivante montre une instance de logiciels indésirables détectés et 
 
 ### <a name="security-portal"></a>Portail de sécurité 
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)), puis connectez-vous.
 
 2. Choisissez **Paramètres** \> fonctionnalités **avancées générales** \> **des points de terminaison**\>.
 
@@ -86,7 +89,7 @@ L’image suivante montre une instance de logiciels indésirables détectés et 
 
 Pour créer une stratégie personnalisée dans Intune, consultez [Déployer OMA-URIs pour cibler un fournisseur de solutions Cloud via Intune et une comparaison avec l’environnement local](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
 
-Pour plus d’informations sur le CSP Defender utilisé pour les PEPT en mode bloc, consultez « Configuration/PassiveRemediation » sous [CSP Defender](/windows/client-management/mdm/defender-csp).
+Pour plus d’informations sur les fournisseur de solutions Cloud Defender utilisés pour les PEPT en mode bloc, consultez « Configuration/PassiveRemediation » sous [Defender fournisseur de solutions Cloud](/windows/client-management/mdm/defender-csp).
 
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Configuration requise pour PEPT en mode bloc
@@ -108,7 +111,7 @@ Le tableau suivant répertorie les conditions requises pour PEPT en mode bloc :
 > [!IMPORTANT]
 > Pour obtenir la meilleure valeur de protection, assurez-vous que votre solution antivirus est configurée pour recevoir des mises à jour régulières et [des fonctionnalités essentielles, et que vos exclusions sont configurées](configure-exclusions-microsoft-defender-antivirus.md). PEPT en mode bloc respecte les exclusions définies pour Antivirus Microsoft Defender, mais pas [les indicateurs](manage-indicators.md) définis pour Microsoft Defender pour point de terminaison.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>Puis-je spécifier des exclusions pour PEPT en mode bloc ?
 

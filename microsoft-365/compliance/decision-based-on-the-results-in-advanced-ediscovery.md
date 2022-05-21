@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Découvrez comment l’onglet Décider dans eDiscovery (Premium) fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de fichiers de cas de révision.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12f1dde5631283a4d0e02666ecab7267ee892225
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090980"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621786"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Les décisions basées sur la pertinence ont pour résultat eDiscovery (Premium)
 
@@ -46,7 +46,7 @@ Cet onglet inclut les composants suivants :
 
   - **Rappel** : Pourcentage de fichiers pertinents dans l’ensemble de révisions.
 
-  - **Suivant pertinent** : Coût de révision et d’identification d’un autre fichier pertinent qui n’est pas actuellement dans l’ensemble de révision.
+  - **Suivant pertinent** : Coût de révision et d’identification d’un autre fichier pertinent qui n’est pas actuellement dans l’ensemble de révisions.
 
   - **Coût total** : coût de la révision de ce pourcentage des fichiers de cas. Les paramètres de coût peuvent être définis par le gestionnaire de cas.
 

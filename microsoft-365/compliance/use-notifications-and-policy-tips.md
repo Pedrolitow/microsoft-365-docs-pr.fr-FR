@@ -22,26 +22,28 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: cab4332324ec8d83b201823c98b952995e12962d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760490"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623224"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
-Vous pouvez utiliser une stratégie de protection contre la perte de données (DLP) pour identifier, surveiller et protéger les informations sensibles dans Office 365. Vous souhaitez que les personnes de votre organisation qui travaillent avec ces informations sensibles restent conformes à vos stratégies DLP, mais vous ne voulez pas les empêcher inutilement de faire leur travail. C’est là que les notifications par e-mail et les conseils de stratégie peuvent vous aider.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Vous pouvez utiliser une stratégie Microsoft Purview de protection contre la perte de données (DLP) pour identifier, surveiller et protéger les informations sensibles dans Office 365. Vous souhaitez que les personnes de votre organisation qui travaillent avec ces informations sensibles restent conformes à vos stratégies DLP, mais vous ne voulez pas les empêcher inutilement de faire leur travail. C’est là que les notifications par e-mail et les conseils de stratégie peuvent vous aider.
 
 ![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-Dans le Centre de conformité, lorsque vous créez une stratégie DLP, vous pouvez configurer les notifications utilisateur pour :
+Lorsque vous créez une stratégie DLP, vous pouvez configurer les notifications utilisateur pour :
 
 - Envoyez une notification par e-mail aux personnes que vous choisissez pour décrire le problème.
 
 - Affichez un conseil de stratégie pour le contenu en conflit avec la stratégie DLP :
 
-  - Pour les e-mails dans Outlook na Web et Outlook 2013 et versions ultérieures, le conseil de stratégie s’affiche en haut d’un message au-dessus des destinataires pendant la composition du message.
+  - Pour les e-mails dans Outlook sur le web et Outlook 2013 et versions ultérieures, le conseil de stratégie s’affiche en haut d’un message au-dessus des destinataires pendant la composition du message.
 
   - Pour les documents d’un compte OneDrive Entreprise ou d’un site SharePoint Online, le conseil de stratégie est indiqué par une icône d’avertissement qui apparaît sur l’élément. Pour afficher plus d’informations, vous pouvez sélectionner un élément, puis choisir l’icône du volet **Informations**![.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) dans le coin supérieur droit de la page pour ouvrir le volet d’informations.
 
@@ -53,13 +55,13 @@ Lorsque vous créez une stratégie DLP, vous pouvez activer **les notifications 
 
 1. Accédez à [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
 
-2. Connectez-vous à l’aide de votre compte scolaire ou professionnel. Vous êtes maintenant dans le Centre de conformité de la sécurité &amp; .
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
-3. Dans le Centre \> de conformité  de sécurité&amp;, gauche stratégie de **protection contre la perte de** \> \> données de navigation \> + Créer une stratégie.
+3. Dans le portail de conformité Microsoft Purview \> gauche \> stratégie de **protection contre la perte de** \>  \> données **+ Créer une stratégie**.
 
     ![Créez un bouton de stratégie.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
-4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous avez besoin \> **.**
+4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles que vous souhaitez protéger \> **suivant**.
 
     Pour commencer avec un modèle vide, choisissez **Stratégie** **personnalisée personnalisée** \>  \> Suivant.
 
@@ -135,7 +137,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez configurer des conseils d
 
 - Autoriser la personne à remplacer la stratégie DLP. Si vous le souhaitez, vous pouvez :
 
-  - Demander à la personne d’entrer une justification métier pour remplacer la stratégie. Ces informations sont journalisées et vous pouvez les afficher dans les rapports DLP de la section **Rapports** du Centre de conformité de &amp; sécurité.
+  - Demander à la personne d’entrer une justification métier pour remplacer la stratégie. Ces informations sont journalisées et vous pouvez les afficher dans les rapports DLP de la section **Rapports** du portail.
 
   - Autoriser la personne à signaler un faux positif et à remplacer la stratégie DLP. Ces informations sont également consignées pour la création de rapports, afin que vous puissiez utiliser des faux positifs pour affiner vos règles.
 
@@ -213,9 +215,9 @@ Par défaut, les conseils de stratégie affichent du texte similaire à ce qui s
 
 Vous pouvez personnaliser le texte des conseils de stratégie séparément de la notification par e-mail. Contrairement au texte personnalisé pour les notifications par e-mail (voir la section ci-dessus), le texte personnalisé pour les conseils de stratégie n’accepte pas de code HTML ou de jetons. Au lieu de cela, le texte personnalisé pour les conseils de stratégie est du texte brut uniquement avec une limite de 256 caractères.
 
-## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Conseils de stratégie dans Outlook na Web et Outlook 2013 et versions ultérieures
+## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Conseils de stratégie dans Outlook sur le web et Outlook 2013 et versions ultérieures
 
-Lorsque vous composez un nouvel e-mail dans Outlook na Web et Outlook 2013 et versions ultérieures, vous verrez un conseil de stratégie si vous ajoutez du contenu qui correspond à une règle dans une stratégie DLP et que cette règle utilise des conseils de stratégie. Le conseil de stratégie s’affiche en haut du message, au-dessus des destinataires, pendant que le message est composé.
+Lorsque vous composez un nouvel e-mail dans Outlook sur le web et Outlook 2013 et versions ultérieures, vous verrez un conseil de stratégie si vous ajoutez du contenu qui correspond à une règle dans une stratégie DLP et que cette règle utilise des conseils de stratégie. Le conseil de stratégie s’affiche en haut du message, au-dessus des destinataires, pendant que le message est composé.
 
 ![Conseil de stratégie en haut d’un message en cours de composition.](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
 
@@ -229,7 +231,7 @@ Si les conseils de stratégie sont configurés pour autoriser le remplacement, v
 
 ![Boîte de dialogue Conseil de stratégie dans laquelle vous pouvez remplacer l’info-bulle de stratégie.](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-Notez que lorsque vous ajoutez des informations sensibles à un e-mail, il peut y avoir une latence entre le moment où les informations sensibles sont ajoutées et le moment où l’info-bulle de stratégie s’affiche. Lorsque les e-mails sont chiffrés avec Office chiffrement des messages (OME) et que la stratégie utilisée pour les détecter utilise les conseils de stratégie détecter les conditions de chiffrement n’apparaissent pas.
+Notez que lorsque vous ajoutez des informations sensibles à un e-mail, il peut y avoir une latence entre le moment où les informations sensibles sont ajoutées et le moment où l’info-bulle de stratégie s’affiche. Lorsque les e-mails sont chiffrés avec Chiffrement de messages Microsoft Purview et que la stratégie utilisée pour les détecter utilise les conseils de stratégie de condition de chiffrement de détection ne s’affichent pas.
 
 ### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 et versions ultérieures prend en charge l’affichage de conseils de stratégie pour certaines conditions uniquement
 
@@ -240,13 +242,13 @@ Actuellement, Outlook 2013 et versions ultérieures prend en charge l’affichag
 
 Notez que les exceptions sont considérées comme des conditions et que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage de conseils de stratégie aux utilisateurs n’est pas encore pris en charge. En outre, Outlook ne prend pas en charge l’affichage de conseils de stratégie pour une stratégie DLP appliquée à un groupe de distribution dynamique.
 
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Conseils de stratégie dans le centre d’administration Exchange et le Centre de conformité de la sécurité &amp;
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Conseils de stratégie dans le Centre d’administration Exchange par rapport au portail de conformité Microsoft Purview
 
-Les conseils de stratégie peuvent fonctionner avec des stratégies DLP et des règles de flux de messagerie créées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>, ou avec des stratégies DLP créées dans le Centre de conformité de la sécurité&amp;, mais pas les deux. Cela est dû au fait que ces stratégies sont stockées à différents emplacements, mais que les conseils de stratégie ne peuvent être utilisés qu’à partir d’un emplacement unique.
+Les conseils de stratégie peuvent fonctionner avec des stratégies DLP et des règles de flux de messagerie créées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>, ou avec des stratégies DLP créées dans le portail de conformité, mais pas les deux. Cela est dû au fait que ces stratégies sont stockées à différents emplacements, mais que les conseils de stratégie ne peuvent être utilisés qu’à partir d’un emplacement unique.
 
-Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, les conseils de stratégie que vous configurez dans le Centre de conformité de sécurité &amp; n’apparaîtront pas aux utilisateurs dans Outlook na Web et Outlook 2013 et versions ultérieures jusqu’à ce que vous désactiviez les conseils dans le centre d’administration Exchange. Cela garantit que vos règles de flux de courrier Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous choisissiez de basculer vers le Centre de &amp; conformité de sécurité.
+Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, les conseils de stratégie que vous configurez dans le portail de conformité n’apparaissent pas aux utilisateurs dans Outlook sur le web et Outlook 2013 et versions ultérieures jusqu’à ce que vous désactiviez les conseils dans le centre d’administration Exchange. Cela garantit que vos règles de flux de courrier Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous choisissiez de basculer vers le portail de conformité.
 
-Notez que même si les conseils de stratégie ne peuvent être tirés qu’à partir d’un seul emplacement, les notifications par e-mail sont toujours envoyées, même si vous utilisez des stratégies DLP dans le Centre de conformité de &amp; sécurité et le centre d’administration Exchange.
+Notez que même si les conseils de stratégie ne peuvent être tirés qu’à partir d’un emplacement unique, les notifications par e-mail sont toujours envoyées, même si vous utilisez des stratégies DLP dans le portail de conformité et le centre d’administration Exchange.
 
 ### <a name="default-text-for-policy-tips-in-email"></a>Texte par défaut pour les conseils de stratégie dans l’e-mail
 

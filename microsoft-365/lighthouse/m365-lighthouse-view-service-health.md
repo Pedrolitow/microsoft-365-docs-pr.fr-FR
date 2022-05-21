@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher l’intégrité du service client.
-ms.openlocfilehash: 8ad96c77f14148fefd6d00cd51af093cd081d857
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 3db5085ac4226b3f2800cd46f3542dcb79b311d2
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187819"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621017"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Afficher l’intégrité du service client dans Microsoft 365 Lighthouse
 
@@ -31,7 +31,7 @@ Si vous ne pouvez pas vous connecter à Lighthouse, vous pouvez utiliser la [pag
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD dans le locataire partenaire avec l’ensemble de **propriétés suivant : microsoft.office365.serviceHealth/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, consultez [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference).
+Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD dans le locataire partenaire avec l’ensemble de **propriétés suivant : microsoft.office365.serviceHealth/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="view-service-health-status-for-all-tenants"></a>Afficher l’état d’intégrité du service pour tous les locataires
 
@@ -59,7 +59,7 @@ Pour afficher l’intégrité du service, vous avez besoin d’un rôle Azure AD
 
 Sous l’onglet **Locataires affectés** , vous pouvez exporter une liste de locataires affectés vers un fichier de valeurs séparées par des virgules (.csv) afin de pouvoir la partager avec vos équipes de support technique.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Comment vérifier Microsoft 365'intégrité du service](/microsoft-365/enterprise/view-service-health) (article)\
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez Coffre protection des liens dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre Links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aef211b91ef406926720f8c50e4af457d07eaab
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535105"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623466"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>liens Coffre dans Microsoft Defender pour Office 365
 
@@ -62,6 +62,9 @@ La protection Liens fiables est disponible dans les emplacements suivants :
 - **Microsoft Teams** : la protection Liens fiables pour les liens dans les conversations Teams, les conversations de groupe ou à partir de canaux est également contrôlée par des stratégies de Liens fiables.
 
   Pour plus d’informations sur Coffre protection des liens dans Teams, consultez les [paramètres Coffre Liens pour Microsoft Teams](#safe-links-settings-for-microsoft-teams) section plus loin dans cet article.
+
+  > [!NOTE]
+  > Actuellement, Coffre Protection des liens pour Microsoft Teams n’est pas disponible dans Microsoft 365 Cloud de la communauté du secteur public DoD élevé ou Microsoft 365.
 
 - **Applications Office 365** : la protection Liens fiables pour les applications Office 365 est disponible dans les applications de bureau, mobiles et web prises en charge. Vous **configurez** Coffre Protection des liens pour Office 365 applications dans le paramètre global qui ne sont **pas** des stratégies de liens Coffre. Pour obtenir des instructions, consultez [Configurer les paramètres globaux pour les paramètres Coffre Liens dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
 
@@ -163,6 +166,8 @@ Vous activez ou désactivez la protection Coffre liens pour les Microsoft Teams 
 
 > [!NOTE]
 > Lorsque vous activez ou désactivez Coffre protection des liens pour Teams, l’application de la modification peut prendre jusqu’à 24 heures.
+>
+> Actuellement, Coffre Protection des liens pour Microsoft Teams n’est pas disponible dans Microsoft 365 Cloud de la communauté du secteur public DoD élevé ou Microsoft 365.
 
 Les paramètres suivants des stratégies de Coffre Liens qui s’appliquent aux liens dans les messages électroniques s’appliquent également aux liens dans Teams :
 

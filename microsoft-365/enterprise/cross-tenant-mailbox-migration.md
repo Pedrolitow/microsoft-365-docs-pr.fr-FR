@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 984df48edf4ba75569286618086d8be9ab684b60
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 73107fd82a77be730d894b057d1b9b1795fb242b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243049"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621082"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -73,7 +73,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
    ![Nouvelle application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. Dans la page Inscrire une application, sous Types de comptes pris en charge, sélectionnez Comptes dans n’importe quel annuaire organisationnel (Tout répertoire Azure AD - Multilocataire). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com>. Enfin, sélectionnez Inscrire.
+5. Dans la page Inscrire une application, sous Types de comptes pris en charge, sélectionnez Comptes dans n’importe quel annuaire organisationnel (Tout annuaire Azure AD - Multilocataire). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com>. Enfin, sélectionnez Inscrire.
 
    ![Inscription d’application](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -147,13 +147,10 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | fl isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -286,7 +283,7 @@ Vérifiez que les objets et attributs suivants sont définis dans l’organisati
    - msExchSafeRecipientsHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers Active Directory local.
    - msExchSafeSendersHash : réécrit les données d’expéditeur en ligne sécurisées et bloquées des clients vers Active Directory local.
 
-2. Si la boîte aux lettres source est sur LitigationHold et que la taille des éléments récupérables de la boîte aux lettres source est supérieure à la taille par défaut de notre base de données (30 Go), les déplacements ne se poursuivent pas, car le quota cible est inférieur à la taille de la boîte aux lettres source. Vous pouvez mettre à jour l’objet MailUser cible pour faire passer les indicateurs de boîte aux lettres ELC de l’environnement source à la cible, ce qui déclenche le système cible pour étendre le quota de MailUser à 100 Go, ce qui permet le déplacement vers la cible. Ces instructions fonctionnent uniquement pour l’identité hybride en cours d’exécution Azure AD Connecter, car les commandes permettant d’horodatage des indicateurs ELC ne sont pas exposées aux administrateurs locataires.
+2. Si la boîte aux lettres source est sur LitigationHold et que la taille des éléments récupérables de la boîte aux lettres source est supérieure à la taille par défaut de notre base de données (30 Go), les déplacements ne se poursuivent pas, car le quota cible est inférieur à la taille de la boîte aux lettres source. Vous pouvez mettre à jour l’objet MailUser cible pour faire passer les indicateurs de boîte aux lettres ELC de l’environnement source à la cible, ce qui déclenche le système cible pour étendre le quota de MailUser à 100 Go, ce qui permet le déplacement vers la cible. Ces instructions fonctionnent uniquement pour l’identité hybride exécutant Azure AD Connecter, car les commandes d’horodatage des indicateurs ELC ne sont pas exposées aux administrateurs locataires.
 
     > [!NOTE]
     > EXEMPLE : EN L’ÉTAT, AUCUNE GARANTIE
@@ -378,7 +375,7 @@ La soumission par lot de migration est également prise en charge à partir du n
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs du courrier local, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Devons-nous mettre à jour remoteMailboxes dans la source localement après le déplacement ?**
 
@@ -550,7 +547,7 @@ Actuellement, la fonctionnalité de migrations de boîtes aux lettres entre loca
 
 Non, après une migration de boîte aux lettres entre locataires, eDiscovery par rapport à la boîte aux lettres de l’utilisateur migré dans la source ne fonctionne pas. Cela est dû au fait qu’il n’existe plus de boîte aux lettres dans la source à rechercher, car la boîte aux lettres a été migrée vers le locataire cible et appartient maintenant au locataire cible. eDiscovery, la migration post-boîte aux lettres ne peut être effectuée que dans le locataire cible (où la boîte aux lettres existe maintenant). Si une copie de la boîte aux lettres source doit être conservée dans le locataire source après la migration, l’administrateur de la source peut copier le contenu vers une autre boîte aux lettres avant la migration pour les futures opérations eDiscovery sur les données.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - **Problème : les fonctionnalités de post-migration Teams dans le locataire source seront limitées.** Une fois la boîte aux lettres migrée vers le locataire cible, Teams dans le locataire source n’aura plus accès à la boîte aux lettres de l’utilisateur. Par conséquent, si un utilisateur se connecte à Teams avec les informations d’identification du locataire source, des fonctionnalités telles que l’impossibilité de mettre à jour votre image de profil, aucune application de calendrier et une incapacité à rechercher et à rejoindre des équipes publiques sont perdues.
 
@@ -558,7 +555,7 @@ Non, après une migration de boîte aux lettres entre locataires, eDiscovery par
 
 - **Problème : Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** Lors de la création d’objets MailUser du locataire cible, vous devez vous assurer que toutes les adresses proxy SMTP appartiennent à l’organisation de locataire cible. Si un proxyAddress SMTP existe sur l’utilisateur de messagerie cible qui n’appartient pas au locataire local, la conversion de MailUser en boîte aux lettres est empêchée. Cela est dû à notre assurance que les objets de boîte aux lettres peuvent envoyer uniquement des courriers à partir de domaines pour lesquels le locataire fait autorité (domaines revendiqués par le locataire) :
 
-  - Lorsque vous synchronisez des utilisateurs à partir d’un site local à l’aide de Azure AD Connecter, vous approvisionnez des objets MailUser locaux avec ExternalEmailAddress pointant vers le locataire source où la boîte aux lettres existe (LaraN@contoso.onmicrosoft.com) et vous marquez PrimarySMTPAddress comme domaine qui réside dans le locataire cible (Lara.Newton@northwind.com). Ces valeurs se synchronisent avec le locataire et un utilisateur de messagerie approprié est provisionné et prêt pour la migration. Un exemple d’objet est illustré ici.
+  - Lorsque vous synchronisez des utilisateurs à partir d’un site local à l’aide d’Azure AD Connecter, vous approvisionnez des objets MailUser locaux avec ExternalEmailAddress pointant vers le locataire source où la boîte aux lettres existe (LaraN@contoso.onmicrosoft.com) et vous marquez PrimarySMTPAddress en tant que domaine qui réside dans le locataire cible (Lara.Newton@northwind.com). Ces valeurs se synchronisent avec le locataire et un utilisateur de messagerie approprié est provisionné et prêt pour la migration. Un exemple d’objet est illustré ici.
 
     ```powershell
     Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
@@ -575,7 +572,7 @@ Non, après une migration de boîte aux lettres entre locataires, eDiscovery par
 
   Les objets MailUser sont des pointeurs vers des boîtes aux lettres non locales. Dans le cas des migrations de boîtes aux lettres entre locataires, nous utilisons des objets MailUser pour représenter la boîte aux lettres source (du point de vue de l’organisation cible) ou la boîte aux lettres cible (du point de vue de l’organisation source). Les MailUsers ont une adresse ExternalEmailAddress (targetAddress) qui pointe vers l’adresse smtp de la boîte aux lettres réelle (ProxyTest@fabrikam.onmicrosoft.com) et l’adresse primarySMTP qui représente l’adresse SMTP affichée de l’utilisateur de boîte aux lettres dans le répertoire. Certaines organisations choisissent d’afficher l’adresse SMTP principale en tant qu’adresse SMTP externe, et non en tant qu’adresse détenue/vérifiée par le locataire local (par exemple, fabrikam.com plutôt que comme contoso.com).  Toutefois, une fois qu’un objet de plan de service Exchange est appliqué à MailUser via des opérations de licence, l’adresse SMTP principale est modifiée pour s’afficher en tant que domaine vérifié par l’organisation locale (contoso.com). Il existe deux raisons possibles :
 
-  - Lorsqu’un plan de service Exchange est appliqué à un MailUser, le processus de Azure AD commence à appliquer le nettoyage du proxy pour s’assurer que l’organisation locale n’est pas en mesure d’envoyer du courrier, une usurpation d’identité ou un courrier à partir d’un autre locataire. Toute adresse SMTP sur un objet destinataire avec ces plans de service sera supprimée si l’adresse n’est pas vérifiée par l’organisation locale. Comme c’est le cas dans l’exemple, le domaine Fabikam.com n’est PAS vérifié par le locataire contoso.onmicrosoft.com, de sorte que le nettoyage supprime ce domaine fabrikam.com. Si vous souhaitez conserver ces domaines externes sur MailUser, soit avant la migration, soit après la migration, vous devez modifier vos processus de migration pour supprimer les licences une fois le déplacement terminé ou avant le déplacement pour vous assurer que la personnalisation externe attendue est appliquée aux utilisateurs. Vous devez vous assurer que l’objet de boîte aux lettres dispose d’une licence appropriée pour ne pas affecter le service de messagerie.
+  - Lorsqu’un plan de service Exchange est appliqué à un MailUser, le processus Azure AD commence à appliquer le nettoyage du proxy pour s’assurer que l’organisation locale n’est pas en mesure d’envoyer des messages, des usurpations ou des messages à partir d’un autre locataire. Toute adresse SMTP sur un objet destinataire avec ces plans de service sera supprimée si l’adresse n’est pas vérifiée par l’organisation locale. Comme c’est le cas dans l’exemple, le domaine Fabikam.com n’est PAS vérifié par le locataire contoso.onmicrosoft.com, de sorte que le nettoyage supprime ce domaine fabrikam.com. Si vous souhaitez conserver ces domaines externes sur MailUser, soit avant la migration, soit après la migration, vous devez modifier vos processus de migration pour supprimer les licences une fois le déplacement terminé ou avant le déplacement pour vous assurer que la personnalisation externe attendue est appliquée aux utilisateurs. Vous devez vous assurer que l’objet de boîte aux lettres dispose d’une licence appropriée pour ne pas affecter le service de messagerie.
   - Un exemple de script pour supprimer les plans de service sur un MailUser dans le locataire contoso.onmicrosoft.com est illustré ici.
 
     ```powershell
