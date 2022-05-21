@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
-ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302351"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622376"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -43,9 +43,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Créer et configurer des étiquettes de confidentialité
 
-1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données**
-    
-    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données** > **Étiquettes**
 
 2. Dans la page **Étiquettes** , sélectionnez **+ Créer une étiquette** pour démarrer la nouvelle configuration d’étiquette de confidentialité : 
     
@@ -128,11 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
 
-1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données**
-    
-    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
+1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Protection des données** > **Stratégies des étiquettes**
 
-2. Sélectionnez **l’onglet Stratégies** d’étiquette, puis **Publiez** l’étiquette pour démarrer la configuration **de la stratégie** :
+2. Sélectionnez la page **Stratégies des étiquettes**, puis **Publier l’étiquette** pour démarrer la configuration **Créer une stratégie** :
     
     ![Publier des étiquettes.](../media/publish-sensitivity-labels-full.png)
     
@@ -205,7 +201,7 @@ Par comparaison, lorsque vous supprimez une étiquette :
 
 - Pour les documents stockés dans SharePoint ou OneDrive et que vous avez [activé les étiquettes de confidentialité pour les fichiers Office](sensitivity-labels-sharepoint-onedrive-files.md) : lorsque vous ouvrez le document dans Office sur le Web, l’étiquette n’est pas appliquée dans l’application et le nom de l’étiquette ne s’affiche plus dans la colonne **Confidentialité** dans SharePoint. Si l’étiquette supprimée a appliqué le chiffrement et que les services peuvent traiter le contenu chiffré, le chiffrement est supprimé. Les actions Egress de ces services entraînent le même résultat. Par exemple, téléchargez, copiez, déplacez-vous vers et ouvrez avec une application de bureau ou Office mobile. Bien que les informations d’étiquette restent dans les métadonnées du fichier, les applications ne peuvent plus mapper l’ID d’étiquette à un nom d’affichage, de sorte que les utilisateurs supposent qu’un fichier n’est pas étiqueté.
 
-- Pour les documents stockés en dehors de SharePoint et OneDrive ou si vous n’avez pas activé d’étiquettes de confidentialité pour les fichiers Office, et pour les e-mails : lorsque vous ouvrez le contenu, les informations d’étiquette dans les métadonnées restent, mais sans l’ID d’étiquette pour le mappage de noms, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’état pour les applications de bureau). Si l'étiquette supprimée appliquait un cryptage, le cryptage demeure et les utilisateurs voient toujours le nom et la description du modèle de protection désormais archivé.
+- Pour les documents stockés en dehors de SharePoint et OneDrive ou si vous n’avez pas activé d’étiquettes de confidentialité pour les fichiers Office, et pour les e-mails : lorsque vous ouvrez le contenu, les informations d’étiquette dans les métadonnées restent, mais sans l’ID d’étiquette pour le mappage de noms, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’état pour les applications de bureau). Si l’étiquette supprimée a appliqué un chiffrement, le chiffrement demeure et les utilisateurs continuent de voir le nom et la description du modèle de protection désormais archivé.
 
 - Pour les conteneurs, tels que les sites dans SharePoint et Teams : l’étiquette est supprimée et tous les paramètres configurés avec cette étiquette ne sont plus appliqués. Cette action prend généralement entre 48 et 72 heures pour SharePoint sites et peut être plus rapide pour Teams et Groupes Microsoft 365.
 

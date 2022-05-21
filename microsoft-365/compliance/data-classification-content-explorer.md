@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761370"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623294"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
-L’Explorateur de contenu de la classification des données vous permet d’afficher en mode natif les éléments qui ont été synthétisés dans la page vue d’ensemble.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-![capture d’écran réduite de l’explorateur de contenu](../media/data-classification-content-explorer-1.png)
+L’Explorateur de contenus vous permet d’afficher en mode natif les éléments qui ont été récapitulés dans la page de vue d’ensemble.
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -51,7 +51,7 @@ Pour accéder à l’onglet Explorateur de contenu, un compte doit être affect�
 > L’appartenance à ces groupes de rôles ne vous permet pas d’afficher la liste des éléments ou le contenu des éléments dans l’explorateur de contenu.
 
 > [!IMPORTANT]
-> Seuls les administrateurs généraux peuvent gérer ou attribuer des autorisations à d’autres utilisateurs dans le Centre de conformité. Pour plus de détails, voir [Autoriser l’accès des utilisateurs au Centre de sécurité et conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> Seuls les administrateurs généraux peuvent gérer ou attribuer des autorisations à d’autres utilisateurs dans le portail de conformité. Pour plus d’informations, consultez la rubrique [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 > 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>Autorisations requises pour accéder aux éléments dans l’explorateur de contenu
 
@@ -60,7 +60,7 @@ L’accès à l’explorateur de contenu est fortement restreint, car il vous pe
 > [!IMPORTANT]
 > Ces autorisations remplacent les autorisations attribuées localement aux éléments, ce qui permet d’afficher le contenu. 
 
-Il existe deux rôles qui accordent l’accès à l’Explorateur de contenu via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centre de conformité Microsoft 365</a> :
+Il existe deux rôles qui accordent l’accès à l’Explorateur de contenus via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Portail de conformité Microsoft Purview</a> :
 
 - **Visionneuse de contenu de l’Explorateur de contenu** : l’appartenance à ce groupe de rôles vous permet d’afficher le contenu de chaque élément de la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
 
@@ -76,14 +76,14 @@ Un administrateur général peut attribuer la Visionneuse de liste de l’Explor
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -107,18 +107,18 @@ Les étiquettes de confidentialité doivent être activées pour les fichiers st
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Les [étiquettes de rétention](retention.md) vous permettent de définir la durée de conservation d’un élément étiqueté et les étapes à suivre avant de le supprimer. Elles peuvent être appliquées manuellement ou automatiquement. Elles peuvent jouer un rôle en aidant votre organisation à respecter les exigences légales et réglementaires.
+Les [étiquettes de rétention](retention.md) vous permettent de définir la durée de conservation d’un élément étiqueté et les étapes à suivre avant de le supprimer. Elles peuvent être appliquées manuellement ou automatiquement via des stratégies. Elles peuvent jouer un rôle en aidant votre organisation à respecter les exigences légales et réglementaires.
 
 ### <a name="how-to-use-content-explorer"></a>Utilisation de l’Explorateur de contenu
 
-1. Ouvrez **Centre de conformité Microsoft 365**  > **Classification de données** > **Explorateur de contenu**.
+1. Ouvrez le **Portail de conformité Microsoft Purview**  > **Classification des données** > **Explorateur de contenus**.
 2. Si vous connaissez le nom de l’étiquette ou le type d’informations sensibles, vous pouvez le taper dans la zone de filtre.
 3. Vous pouvez également rechercher l’élément en développant le type d’étiquette et en sélectionnant l’étiquette dans la liste.
 4. Sélectionnez un emplacement sous **Tous les emplacements** et explorez la structure de dossiers vers l’élément.
 5. Double-cliquez pour ouvrir l’élément en mode natif dans l’Explorateur de contenu.
 
 ### <a name="export"></a>Exporter
-Le contrôle des **exportations** crée un fichier .csv qui contient une liste de tout ce qui s’affiche dans le volet **Tous les emplacements**.
+Le contrôle des **exportations** crée un fichier .csv qui contient une liste du ou des focus particuliers dans le volet.
 
 ![Contrôle des exportations de la classification des données.](../media/data_classification_export_control.png)
 
@@ -126,9 +126,9 @@ Le contrôle des **exportations** crée un fichier .csv qui contient une liste d
 > [!NOTE]
 > La mise à jour des nombres dans l’Explorateur de contenu peut prendre jusqu’à *sept jours*.
 
-### <a name="search"></a>Rechercher
+### <a name="filter"></a>Filtre
 
-Lorsque vous explorez dans un emplacement, tel qu'un dossier Exchange ou Teams, ou un site SharePoint ou OneDrive, l'outil de **recherche** apparaît.
+Lorsque vous explorez dans un emplacement, tel qu'un dossier Exchange ou Teams, ou un site SharePoint ou OneDrive, l'outil **Filtrer** apparaît.
 
 ![Outil de recherche dans l’explorateur de contenu.](../media/data_classification_search_tool.png)
 
@@ -154,4 +154,4 @@ Vous pouvez effectuer une recherche sur les éléments suivants :
 - [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
 - [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles.md](sensitive-information-type-entity-definitions.md)
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)
