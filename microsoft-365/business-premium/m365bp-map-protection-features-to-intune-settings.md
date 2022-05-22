@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
-ms.date: 04/21/2022
+ms.date: 05/20/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium mappent aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: bf5b26a6ab8cbd64f9f9ef8235c194c6869c782d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e7a2909d158a550575c487e65e03e0f004e28a66
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320311"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622431"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection dans Microsoft 365 Business Premium sont mappées aux paramètres Intune
 
@@ -101,7 +101,7 @@ Pour trouver le paramètre Intune, connectez-vous avec vos informations d’iden
   
 |**Paramètre de stratégie d'appareil Windows 10**|**Paramètre(s) Intune**|
 |:-----|:-----|
-|Protéger les ordinateurs des virus et autres menaces à l'aide de l'antivirus Windows Defender  |Autoriser la surveillance en temps réel = Activé  <br/> Autoriser la protection cloud = Activé  <br/> Demander aux utilisateurs l'autorisation d'envoyer des échantillons = Envoyer automatiquement des échantillons sécurisés (envoi automatique non PII par défaut)  |
+|Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  |Autoriser la surveillance en temps réel = Activé  <br/> Autoriser la protection cloud = Activé  <br/> Demander aux utilisateurs l'autorisation d'envoyer des échantillons = Envoyer automatiquement des échantillons sécurisés (envoi automatique non PII par défaut)  |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  |**SmartScreen** dans **Paramètres du navigateur Edge** est défini sur **Obligatoire**.  |
 |Désactiver l'écran d'un appareil resté inactif pendant (minutes)  |Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil (minutes)  |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  |Stratégie URI personnalisée  |

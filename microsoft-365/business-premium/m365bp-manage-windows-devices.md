@@ -26,18 +26,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 joints à Active Directory en quelques étapes.
-ms.openlocfilehash: de50fc8ac5ad3fe5d5f8cd5cfdfd781d94062358
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d29e7350be7ddfcdf22f031ea3c2c27439daeac
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319093"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622737"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer la gestion des appareils Windows 10 joints à un domaine par Microsoft 365 Business Premium
+# <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Gérer les appareils Windows avec Microsoft 365 Business Premium
 
-Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
+Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
 
-Pour configurer cette protection, vous pouvez implémenter des **appareils hybrides Azure AD joints**. Ces dispositifs sont joints à la fois à votre Active Directory sur site et à votre Active Directory Azure.
+Pour configurer cela, implémentez **Appareils joints Azure AD Hybride**. Ces dispositifs sont joints à la fois à votre Active Directory sur site et à votre Active Directory Azure.
 
 > [!NOTE]
 > Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
@@ -55,6 +55,27 @@ Cette vidéo décrit les étapes à suivre pour configurer ce scénario pour le 
 - Assurez-vous que tous les utilisateurs du domaine que vous synchronisez disposent de licences pour Microsoft 365 Business Premium.
 
 Consultez [Synchroniser les utilisateurs de domaine pour Microsoft 365](../admin/setup/manage-domain-users.md) pour connaître les étapes à suivre.
+
+## <a name="device-actions"></a>Actions de l’appareil
+  
+![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
+
+Les appareils et leurs actions associées peuvent avoir les états suivants :
+  
+|**État**|**Description**|
+|:-----|:-----|
+|Géré par Intune  |Géré par Microsoft 365 Business Premium.  |
+|Mise hors service en attente  |Microsoft 365 Entreprise s'apprête à supprimer des données d'entreprise de l'appareil.  |
+|Mise hors service en cours  |Microsoft 365 Entreprise est en train de supprimer des données d'entreprise de l'appareil.  |
+|Échec de la mise hors service  | L'action de suppression des données d'entreprise a échoué.  |
+|Mise hors service annulée  |L'action de mise hors service a été annulée.  |
+|Réinitialisation en attente  |En attente du rétablissement des paramètres d'usine.  |
+|Réinitialisation en cours  |Le rétablissement des paramètres d'usine a démarré.  |
+|Échec de la réinitialisation  |Le rétablissement des paramètres d'usine n'a pas pu être effectué.  |
+|Réinitialiser annulée  |Le rétablissement des paramètres d'usine a été annulé.  |
+|Défectueux  |Cela signifie qu'une action est en attente (ou en cours) mais que l'appareil n'a pas archivé depuis plus de 30 jours.  |
+|Suppression en attente  |Une action de suppression est en attente.  |
+|Détecté  |Microsoft 365 Entreprise a détecté l'appareil.  |
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. Vérifier l’autorité MDM dans Intune
 
