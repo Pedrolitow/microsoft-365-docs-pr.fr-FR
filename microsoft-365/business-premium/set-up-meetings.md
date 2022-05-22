@@ -1,5 +1,5 @@
 ---
-title: Configurer des réunions en ligne
+title: Configurer des réunions en ligne dans Microsoft Business Premium
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Configurer des réunions en ligne  Planifier une réunion avec l’audio, la vidéo et le partage avec Microsoft Teams
-ms.openlocfilehash: 367d344aac8d85a68875f7f51685f59310277c27
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Configurez des réunions en ligne avec Microsoft Teams dans Microsoft Business Premium.
+ms.openlocfilehash: 01e5d2aa1b556653742a22c1628100044cb29ff2
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417729"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623538"
 ---
 # <a name="set-up-meetings"></a>Organiser des réunions
 

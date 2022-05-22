@@ -1,5 +1,5 @@
 ---
-title: Préparer le déploiement du client Office par Microsoft 365 Business Premium
+title: Préparer le déploiement du client Office avec Microsoft 365 Business Premium
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: Découvrez comment installer automatiquement les applications Office 32 bits sur Windows 10 ordinateurs et les maintenir à jour.
-ms.openlocfilehash: b4df5152e5adfbd2391fd51c184bd4547be12011
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows et les maintenir à jour dans Microsoft 365 Business Premium.
+ms.openlocfilehash: d4e9c16dea6697a428c5f7e51b7c8c1f819c75e4
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317875"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622047"
 ---
 # <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
 
-Utilisez Microsoft 365 Business Premium pour installer automatiquement les applications Office 32 bits sur Windows 10 ordinateurs et les maintenir à jour avec les mises à jour.
+Utilisez Microsoft 365 Business Premium pour iautomatiquement les applications Office 32 bits sur les ordinateurs Windows et les tenir à jour.
   
 L’installation automatique fonctionne mieux si l’ordinateur : 
 
-- est sur Windows 10 Business.
+- est sur Windows for Business.
   
 - n’a pas d’applications de bureau Office existantes (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access et OneDrive) OU une version existante d’Office « Démarrer en un clic » est installée.
 
-Pour déterminer si vous possédez la version « Démarrer en un clic » d'Office, dans une application Office, accédez à **Fichier** \> **Compte** ( **Compte Office** dans Outlook). Si **Mises à jour pour Office** se présente comme dans la figure suivante, cela signifie que l'installation a été effectuée à l'aide de « Démarrer en un clic ». 
+Pour déterminer si vous possédez la version « Démarrer en un clic » d'Office, dans une application Office, accédez à **Fichier** \> **Compte** ( **Compte Office** dans Outlook). Si **Mises à jour pour Office** se présente comme dans la figure suivante, cela signifie que l'installation a été effectuée à l'aide de « Démarrer en un clic ».
   
 ![Capture d’écran des mises à jour d’Office dans le compte d’application Office.](./../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
@@ -48,7 +48,7 @@ Pour déterminer si vous possédez la version « Démarrer en un clic » d'Offic
   
 Travaille avec :
   
-- Un utilisateur disposant d’une licence utilisateur Windows 10 Business, d’une Microsoft 365 active pour les entreprises, d’une Windows 10 Creators Update et qui est joint à Azure Active Directory.
+- Un utilisateur disposant d’une licence d’utilisateur Windows Business, d’une licence active Microsoft 365 entreprise, de Windows 10 Creators Update et qui est joint à Azure Active Directory.
 
 Ne fonctionne pas avec : 
 

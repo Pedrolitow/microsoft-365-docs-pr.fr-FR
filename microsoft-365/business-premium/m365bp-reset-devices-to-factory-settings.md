@@ -1,5 +1,5 @@
 ---
-title: Rétablir les paramètres par défaut des appareils Windows 10
+title: Réinitialiser les appareils Windows à leurs paramètres d’usine
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,15 +24,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Découvrez comment utiliser Microsoft 365 pour les PME pour rétablir les paramètres d’usine les appareils Windows 10 que vous gérez, en les rétablissant à leurs paramètres d’origine lors de l’achat.
-ms.openlocfilehash: a43ebd545ca16dc846e02b485a8c087c4cb87bac
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Découvrez comment utiliser Microsoft 365 Business Premium pour réinitialiser les paramètres d’usine les appareils Windows que vous gérez, en les rétablissant à leurs paramètres d’origine à l’achat.
+ms.openlocfilehash: 960ee445757e2d53e552611e934d777fb5edaebc
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320255"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623558"
 ---
-# <a name="reset-windows-10-devices-to-their-factory-settings"></a>Rétablir les paramètres par défaut des appareils Windows 10
+# <a name="reset-windows-devices-to-factory-settings"></a>Réinitialiser les appareils Windows aux paramètres d’usine
 
 Cet article s’applique à Microsoft 365 Business Premium.
 

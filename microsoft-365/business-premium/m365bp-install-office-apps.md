@@ -1,5 +1,5 @@
 ---
-title: Installer Office sur tous vos appareils
+title: Installer Office applications sur tous les appareils dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Comment installer Office sur tous les appareils.
-ms.openlocfilehash: 81b9152b52a4ffa7b38f744f680e11a091a345e0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Comment installer Office sur tous les appareils dans Microsoft 365 Business Premium.
+ms.openlocfilehash: b05e0330d4119f8c03379a56f541e7a9ca0f8415
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101661"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623565"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Installer Office sur tous vos appareils
 
-OK. Vous avez configuré Microsoft 365, et vous pouvez maintenant demander aux utilisateurs d’installer des applications Office individuelles sur leur Mac, PC ou appareils mobiles. C’est quelque chose que vos utilisateurs doivent faire pour faire partie des lignes de front et aider à protéger l’organisation contre les attaques.
+Ok, vous avez configuré Microsoft 365 Business Premium et vous pouvez désormais demander aux utilisateurs d’installer des applications Office individuelles sur leur Mac, PC ou appareils mobiles. C’est quelque chose que vos utilisateurs doivent faire pour faire partie des lignes de front et aider à protéger l’organisation contre les attaques.
   
 ## <a name="watch-install-office-apps"></a>Regarder : Installer les applications Office
 
@@ -43,14 +43,14 @@ Pour tous les membres de l’organisation, les applications Microsoft Office son
 
 Faites-les effectuer les opérations suivantes :
 
-1. Accédez à Office.com. Vous devrez peut-être vous connecter avec votre compte professionnel.
+1. Accédez à office.com. Vous devrez peut-être vous connecter avec votre compte professionnel.
 2. Sélectionnez **Installer Office**  >   **Microsoft 365 apps**  >  **Exécuter**, puis sélectionnez **Oui**.
 3. Les applications Office sont installées. Le processus peut prendre plusieurs minutes. Une fois l’opération terminée, sélectionnez **Fermer**.
 4. Pour installer Microsoft Teams, accédez à la page office.com et choisissez **Teams**.
 5. Obtenez l’application Windows, puis sélectionnez **Exécuter**. Teams affiche une invite à la fin de l’installation.
 
 
-## <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 pour les PME
+## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 Business Premium
 
 Suivez les instructions des onglets pour installer Office sur un iPhone ou un téléphone Android. Une fois que vous aurez effectué cette procédure, les fichiers de travail enregistrés dans vos applications Office seront protégés par Microsoft 365 pour les PME.
 
