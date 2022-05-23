@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Graphique de comparaison qui montre les différences de fonctionnalités entre l’application web Bookings et l’application Bookings Teams.
-ms.openlocfilehash: 190278e662ff596d681aa8d0160de3c706089593
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 8ceaddf1d7cd8124ab8e4d1e0cd2f19c5779cb1b
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023742"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637271"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Graphique de comparaison : application web Bookings et application Bookings Teams
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 L’application Bookings dans Teams permet aux planificateurs de gérer leurs tâches principales et de modifier certains paramètres. Toutefois, le site web Bookings inclut des fonctionnalités et des paramètres avancés qui ne sont pas encore disponibles dans l’application Teams.
 

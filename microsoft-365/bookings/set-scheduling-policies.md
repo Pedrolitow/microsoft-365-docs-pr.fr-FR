@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: Découvrez comment définir des stratégies de planification pour votre entreprise. Les stratégies de planification incluent la durée des rendez-vous, ainsi que les délais d’annulation et de prospect acceptables.
-ms.openlocfilehash: f4b19af8bd0c9a91ea7fea3fd7b2a8feb4285dcd
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 39d6ab31d7bfda8f2686ed232402c1b98e6a56db
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468369"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637536"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Définir vos stratégies de planification Microsoft Bookings
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 Tous les rendez-vous ne sont pas les mêmes. Certains ne prennent que quelques minutes, tandis que d’autres peuvent prendre des heures ou plus. Dans Microsoft Bookings, la page de réservation est l’endroit où vous définissez les stratégies de planification pour votre entreprise. Les stratégies de planification incluent la durée des rendez-vous, les délais acceptables d’annulation et de prospect, ainsi que les notifications automatiques de modifications de réservation. Une personnalisation supplémentaire peut être ajoutée pour chaque service dans la page Services, avec des paramètres de durée et des stratégies supplémentaires qui s’appliquent uniquement à ce service.
 

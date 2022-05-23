@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
-description: Obtenir la liste des fournisseurs de solutions Microsoft Cloud en Russie.
-ms.openlocfilehash: 0765efaaa8ab5f786cafe62e28ee534fbe617ffb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenez la liste des fournisseurs de solutions cloud Microsoft en Russie.
+ms.openlocfilehash: d17aacf9c1dcaeae515f763adc6946f8a7cf9ff6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192666"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637315"
 ---
 # <a name="microsoft-cloud-solution-provider-partners-in-russia"></a>Fournisseurs de solutions Microsoft Cloud en Russie
-[]Voici une liste de fournisseurs de solutions Microsoft Cloud en Russie.
+Voici une liste des fournisseurs de solutions cloud Microsoft en Russie.
   
 - [Mont](https://www.mont.com/ru-ru/)
     

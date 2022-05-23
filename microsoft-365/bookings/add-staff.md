@@ -8,17 +8,14 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: b6ceee7c4464daf050f6e6626628c9cb3d94960f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d5e35ae301acc785803b0c5374b4bc50bbf499e0
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285453"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637227"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 La page Personnel dans Bookings vous permet de créer votre liste de personnel et de gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail. Vous pouvez également définir des heures de travail pour chaque membre du personnel à partir d’ici.
 

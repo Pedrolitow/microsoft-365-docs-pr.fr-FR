@@ -19,16 +19,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Gérez et sécurisez les appareils mobiles connectés à votre organisation Microsoft 365 en configurant et en utilisant mobilité et sécurité de base.
-ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435698"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636127"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
-Vous pouvez gérer et sécuriser les appareils mobiles lorsqu’ils sont connectés à votre organisation Microsoft 365 à l’aide de mobilité et de sécurité de base. Les appareils mobiles, tels que les smartphones et les tablettes, utilisés pour accéder à la messagerie, au calendrier, aux contacts et aux documents professionnels donnent aux employés la possibilité d’effectuer leur travail partout, à tout moment. Il est donc essentiel de protéger les informations de votre organisation lorsque les utilisateurs utilisent des appareils. Vous pouvez utiliser La mobilité et la sécurité de base pour définir des stratégies et des règles d’accès de sécurité des appareils et réinitialiser les appareils mobiles en cas de perte ou de vol.
+Vous pouvez gérer et sécuriser les appareils mobiles lorsqu’ils sont connectés à votre organisation Microsoft 365 à l’aide de mobilité et de sécurité de base. Les appareils mobiles tels que les smartphones et les tablettes utilisés pour accéder à la messagerie professionnelle, au calendrier, aux contacts et aux documents jouent un rôle important dans la façon dont les employés effectuent leur travail à tout moment, où qu’ils se trouvent. Il est donc essentiel de protéger les informations de votre organisation lorsque les utilisateurs utilisent des appareils. Vous pouvez utiliser La mobilité et la sécurité de base pour définir des stratégies et des règles d’accès de sécurité des appareils et réinitialiser les appareils mobiles en cas de perte ou de vol.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Configuration de base de la mobilité et de la sécurité.":::
 

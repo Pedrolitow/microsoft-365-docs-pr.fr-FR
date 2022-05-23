@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport d’activité des groupes Yammer pour en savoir plus sur le nombre de groupes Yammer créés et utilisés dans votre organisation et leur activité.
-ms.openlocfilehash: 27e2057bb743c7d25d3ebb848151f7a32e3de52a
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 810899c47fed09325341c0b78dd5958dc63a5713
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467139"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636193"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>rapports Microsoft 365 dans le centre d’administration - rapport d’activité des groupes Yammer
 
@@ -42,7 +42,7 @@ Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisi
 
 **Sélectionnez Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.  <br/> ![Yammer le rapport d’activité des groupes : choisissez des colonnes.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2 000 utilisateurs, pour filtrer et trier, vous devez exporter les données. 
 
 Le rapport **Activité des groupes Yammer** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   

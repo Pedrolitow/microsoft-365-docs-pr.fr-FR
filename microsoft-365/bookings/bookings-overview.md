@@ -9,19 +9,16 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Vue d’ensemble de l’application Microsoft Bookings, qui inclut un calendrier de réservation web et s’intègre à Outlook pour optimiser le calendrier de votre personnel et donner à vos clients la possibilité de réserver des rendez-vous.
-ms.openlocfilehash: 6cb20104e9fa51023b6a828cfd70291cd0797037
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 02ae9cc4e9b101025a424acaff3a82de7afeef59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822669"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637602"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
-
-Microsoft Bookings facilite la planification et la gestion des rendez-vous. Bookings comprend un calendrier de réservation basé sur le web et s’intègre à Outlook pour optimiser le calendrier de votre personnel et donner à vos clients la possibilité de réserver un temps qui leur convient le mieux. Les notifications par e-mail et SMS réduisent les absences et améliorent la satisfaction des clients. Votre organisation gagne du temps grâce à une réduction des tâches de planification répétitives. Avec la flexibilité intégrée et la possibilité de personnaliser, Bookings peut être conçu pour répondre à la situation et aux besoins de nombreuses parties différentes d’une organisation.
+Microsoft Bookings facilite la planification et la gestion des rendez-vous. Bookings comprend un calendrier de réservation basé sur le web et s’intègre à Outlook pour optimiser le calendrier de votre personnel et donner à vos clients la possibilité de réserver un temps qui leur convient le mieux. Les notifications par e-mail et SMS texte réduisent les absences et améliorent la satisfaction des clients. Votre organisation gagne du temps grâce à une réduction des tâches de planification répétitives. Avec la flexibilité intégrée et la possibilité de personnaliser, Bookings peut être conçu pour répondre à la situation et aux besoins de nombreuses parties différentes d’une organisation.
 
 > [!NOTE]
 > Le calendrier Bookings est une boîte aux lettres dans Exchange Online.
@@ -49,6 +46,6 @@ Microsoft Bookings est disponible dans les abonnements suivants :
 
 Bookings permet aux petites entreprises de planifier et de gérer plus facilement les rendez-vous avec leurs clients.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour commencer, consultez [Obtenir l’accès à Microsoft Bookings](get-access.md). Pour activer ou désactiver Bookings, consultez [Activer ou désactiver Bookings pour votre organisation](turn-bookings-on-or-off.md).

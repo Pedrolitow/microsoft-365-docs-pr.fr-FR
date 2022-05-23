@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Définissez la durée de la mémoire tampon avant ou après un rendez-vous dans Microsoft Bookings pour laisser le temps de nettoyer ou de réinitialiser l’équipement.
-ms.openlocfilehash: 0a27cc287ed7999f1ba1cc1b017c2f54e126c0b9
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 49e58d53cec466c824a40281e3199f1544e74744
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022380"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637580"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Définir la durée de la mémoire tampon dans Microsoft Bookings
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 Certains de vos rendez-vous peuvent nécessiter du temps avant ou après avoir rencontré votre client pour configurer, nettoyer ou réinitialiser votre chambre et votre équipement. Ou si vous êtes sur la route entre les rendez-vous client, vous aurez peut-être besoin de temps pour vous assurer que vous et votre équipe pouvez voyager entre les rendez-vous sans faire attendre le client.
 

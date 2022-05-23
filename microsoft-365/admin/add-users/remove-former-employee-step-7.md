@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Une fois que vous avez enregistré et accédé à toutes les données utilisateur d’un ancien employé, vous pouvez supprimer le compte de l’ancien employé dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5a1929ef1a5ff26ee0e84993f0a7cabb5ebc4617
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436264"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636171"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : Supprimer le compte d’utilisateur d’un ancien employé
 
@@ -43,7 +43,7 @@ Une fois que vous avez enregistré et consulté les données utilisateur de l'an
 2. Sélectionnez le nom de l’employé à supprimer.
 3. Sous le nom de l’utilisateur, **sélectionnez Supprimer l’utilisateur**. Choisissez les options souhaitées pour cet utilisateur, puis sélectionnez **Supprimer l’utilisateur**. Si vous avez déjà donné à un autre utilisateur l’accès à l’e-mail de cet utilisateur et OneDrive, vous n’avez pas besoin de le refaire ici.
 
-Lorsque vous supprimez un utilisateur, le compte devient inactif pendant 30 jours environ. Vous disposez de cette durée pour restaurer le compte avant sa suppression définitive.
+Lorsque vous supprimez un utilisateur, le compte devient inactif pendant 30 jours environ. Vous avez d’ici là à restaurer le compte avant qu’il ne soit définitivement supprimé.
 
 ## <a name="watch-delete-a-former-employees-user-account"></a>Regarder : Supprimer le compte d’utilisateur d’un ancien employé
 
@@ -70,8 +70,8 @@ Voici les informations sur la suppression de l'accès d'un employé au courrier 
 |Ce que vous pouvez faire|Procédure à suivre|
 |:-----|:-----|
 |Clôturer une session (par exemple, Outlook sur le web, Outlook, Exchange Active Sync, etc.) et forcer à ouvrir une nouvelle session|Réinitialiser le mot de passe|
-|Clôturer une session et bloquer les sessions suivantes (pour tous les protocoles)|Désactivez le compte. Par exemple, (dans le centre d’administration Exchange ou à l’aide de PowerShell) : <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Clôturer la session pour un protocole particulier (par exemple, ActiveSync)|Désactivez le protocole. Par exemple, (dans le centre d’administration Exchange ou à l’aide de PowerShell) : <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Clôturer une session et bloquer les sessions suivantes (pour tous les protocoles)|Désactivez le compte. Par exemple, dans le centre d’administration Exchange ou à l’aide de PowerShell : <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Clôturer la session pour un protocole particulier (par exemple, ActiveSync)|Désactivez le protocole. Par exemple, dans le centre d’administration Exchange ou à l’aide de PowerShell : <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 Les opérations ci-dessus peuvent être effectuées à trois endroits :

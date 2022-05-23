@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 'Renvoyez l’e-mail de notification à un nouvel utilisateur dans Microsoft 365 en réinitialisant le mot de passe de l’utilisateur s’il n’a pas reçu l’e-mail d’origine avec son nouveau mot de passe. '
-ms.openlocfilehash: 540b419d3f6452d6ca93e9e9424a1a28c0ecdfea
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436292"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636149"
 ---
-# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur Microsoft 365 - Aide de l’administrateur
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur Microsoft 365 - Administration aide
 
 Cet article explique comment renvoyer l’e-mail de notification à un nouvel utilisateur dans Office 365. Cela peut se produire lorsque vous créez un utilisateur et qu’il ne reçoit pas d’e-mail avec son nouveau mot de passe. Pour ce faire, réinitialisez le mot de passe de l’utilisateur.
 
@@ -45,7 +45,7 @@ Vous devez être [administrateur général ou administrateur de mot de passe](ab
 
 3. Suivez les instructions de la page **Réinitialiser le mot de passe** pour générer automatiquement un nouveau mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser**.  
 
-4. Entrez une adresse e-mail à laquelle l’utilisateur peut accéder pour recevoir le nouveau mot de passe, puis effectuez un suivi avec lui pour vous assurer qu’il l’a obtenu.
+4. Entrez une adresse e-mail à laquelle l’utilisateur peut accéder, afin qu’il reçoive le nouveau mot de passe et effectue un suivi avec lui pour s’assurer qu’il l’a obtenu.
 
 ## <a name="related-content"></a>Contenu connexe
 

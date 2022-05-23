@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins métier de l’entreprise sont satisfaits par Microsoft 365 pour l’entreprise.
-ms.openlocfilehash: 5dc47898aa0499bc4b62d22d37689d872116a9e7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101356"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637492"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -93,7 +93,7 @@ Les besoins métier de Contoso se répartissent en cinq catégories principales 
 
   Réduisez les coûts de maintenance et de support et améliorez les performances de la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
-- Fournir une meilleure connectivité et réduire la surcharge pour les transactions B2B (Business-to-Susiness)
+- Fournir une meilleure connectivité et réduire la surcharge pour les transactions B2B (business-to-business)
 
   Remplacez un extranet de partenaire vieillissant et coûteux par une solution cloud qui utilise l’authentification fédérée.
 

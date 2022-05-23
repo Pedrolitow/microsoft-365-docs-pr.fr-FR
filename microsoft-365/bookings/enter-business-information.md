@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Suivez ces instructions pour créer votre page About Us avec le nom d’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
-ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 1c1b50215b1e81c0bb3af936ba00e1beefa7965c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622532"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637756"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Entrez les informations de votre entreprise dans Microsoft Bookings
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 Dans Microsoft Bookings, la page Informations professionnelles de l’application web contient tous les détails que vous trouverez généralement sur la page « À propos de nous » d’une entreprise. Ces détails incluent un nom, une adresse, un numéro de téléphone, une URL de site web, une URL de stratégie de confidentialité, un logo et des heures d’ouverture.
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport Groupes Microsoft 365 pour obtenir des insights sur l’activité des groupes de votre organisation et voir combien de groupes sont créés et utilisés.
-ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 541d3aa6534d578d30ef9eae93c38c76dd97c472
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467369"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636523"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>rapports Microsoft 365 dans le Centre d’administration - groupes Microsoft 365
 
@@ -48,7 +48,7 @@ Vous pouvez afficher les activations dans le rapport Office 365 en choisissant l
 
 :::image type="content" alt-text="Office 365 le rapport d’activité des groupes : choisissez des colonnes." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2 000 utilisateurs, pour filtrer et trier, vous devez exporter les données. 
 
 Le rapport de **groupes** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 jours ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
 

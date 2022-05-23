@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Découvrez comment afficher une vue de 4 mois de votre activité Bookings
-ms.openlocfilehash: 8f6ddcdc7320013698b1ba9f0ad2f5b1cd1e2e22
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: c39515852d0a45adfb3faeb5efaf510ee2c27236
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023720"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637205"
 ---
 # <a name="reporting-info-for-bookings"></a>Informations de création de rapports pour Bookings
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 Vous pouvez maintenant voir une vue de quatre mois de votre calendrier Bookings dans un fichier TSV. Le fichier TSV affiche quatre mois de données, mais vous pouvez sélectionner différentes périodes de quatre mois au cours d’une année.
 
@@ -61,6 +58,7 @@ Le rapport amélioré contient désormais les champs suivants.
 - **Monnaie**   Type de devise défini pour une entreprise.
 - **Participants Cc**   Destinataires qui recevront les notifications par e-mail pour une réservation. Cela peut être spécifié à partir de l’application Teams lors de la création d’une réservation.
 - **Nombre de participants inscrits**   Nombre de clients qui ont réservé un service de réservation de groupe.
-- **Notifications de texte activées**   Indique si les clients peuvent recevoir des notifications par SMS liées au texte.
+- **Notifications de texte activées**   Indique si les clients peuvent recevoir SMS notifications liées au texte.
 - **Champs personnalisés**   Toutes les questions et réponses relatives à une réservation unique sont combinées dans ce domaine.
 - **ID de réservation**   Cela est utile pour identifier les mêmes réservations d’un service de groupe.
+- **Suivi des données**   Suivez les métriques des ID de campagne que vous utilisez dans vos campagnes marketing.

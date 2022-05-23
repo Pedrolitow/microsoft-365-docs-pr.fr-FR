@@ -15,19 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52105373f0bc6bb70f6433eba4dacb4580a0f804
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 9008fe0d6a4c46d544e4d806c3a15b24c53f2f10
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416713"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637979"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
@@ -1962,7 +1962,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’ut
 <ul>
 <li>Version de VDM</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -2731,7 +2731,7 @@ Cette erreur indique qu’il peut y avoir un problème avec votre produit de sé
 </tr><tr><td>Résolution</td><td>
 <ol>
 <li>Mettez à jour les définitions. Soit:<ol>
-<li>Cliquez sur le bouton <b>Mettre à jour les définitions</b> sous l’onglet <b>Mettre à jour</b> dans Antivirus Microsoft Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Ou,
+<li>Obtenez vos mises à jour de renseignement de sécurité dans l’application Sécurité Windows. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Ou,
 </li>
 <li>Téléchargez les dernières définitions à partir du <a href="https://aka.ms/wdsi">site Renseignement de sécurité Microsoft</a>.
 Remarque : la taille du fichier de définitions téléchargé à partir du site peut dépasser 60 Mo et ne doit pas être utilisée comme solution à long terme pour mettre à jour les définitions.

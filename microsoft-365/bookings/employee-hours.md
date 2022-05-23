@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: ce248e964552b8e1258dbad999f865874ef898e2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023324"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637249"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 La définition des heures de travail des employés garantit que leur disponibilité est indiquée avec précision lorsque vos clients tentent de les réserver. Par défaut, les heures de travail de chacun de vos employés correspondent aux heures d’ouverture que vous avez établies dans l’application Microsoft Bookings. Consultez la section « Définir vos heures d’ouverture » [d’Entrée d’informations professionnelles](enter-business-information.md).
 

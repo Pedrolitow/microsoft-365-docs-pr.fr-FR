@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Le Centre d’administration Microsoft 365 vous permet de gérer certains rôles Microsoft Intune, qui sont mappés aux fonctions métier et donnent des autorisations pour effectuer des tâches spécifiques.
-ms.openlocfilehash: efff2d426d40103369126c082fcb8d7be44e031c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 61c73ea49b132dee12839112bdc08624a750989f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436754"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636259"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
 
@@ -47,11 +47,11 @@ Dans le Centre d’administration Microsoft 365, vous pouvez accéder à **Rôle
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administration déléguée pour les partenaires Microsoft
 
-Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer des rôles d'administrateur. Et là, il peut à son tour, attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou les leurs sienne. Par exemple, vous souhaiterez peut-être qu'il le fasse s'il est chargé de configurer et gérer votre organisation en ligne pour vous.
+Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer des rôles d'administrateur. Ils peuvent à leur tour attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou de la leur. Vous pouvez leur demander de le faire, par exemple, s'ils mettent en place et gèrent votre organisation en ligne pour vous.
   
 Un partenaire peut attribuer ces rôles : 
   
-- Administration totale, dont les privilèges sont équivalents à ceux d’un administrateur général, sauf en matière de gestion de l’authentification multifacteur via l'Espace partenaires.
+- Administration complète, qui dispose de privilèges équivalents à un administrateur général, à l’exception de la gestion de l’authentification multifacteur via l’Espace partenaires.
 
 - Administration limitée, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 

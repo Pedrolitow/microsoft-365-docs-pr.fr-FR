@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 03cdc163c1f560462fa12f18d4e6101665d766de
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788147"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637910"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -42,7 +42,7 @@ ms.locfileid: "64788147"
 
 [Les règles de réduction de la surface d’attaque (règles](attack-surface-reduction.md) ASR) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Fonctionnalités de réduction de la surface d’attaque dans Windows versions
 
@@ -54,7 +54,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
-- Windows Server 2022
+- Windows Server 2022
 
 Pour utiliser l’ensemble des fonctionnalités de règles de réduction de la surface d’attaque, vous devez :
 
@@ -71,9 +71,6 @@ Chaque règle ASR contient l’un des quatre paramètres suivants :
 - **Audit** : évaluer l’impact de la règle ASR sur votre organisation si elle est activée
 - **Avertir** : activer la règle ASR, mais autoriser l’utilisateur final à contourner le bloc
 
-> [!IMPORTANT]
-> Actuellement, le mode d’avertissement n’est pas pris en charge pour trois règles ASR lorsque vous configurez des règles ASR dans Microsoft Endpoint Manager (MEM). Pour plus d’informations, consultez [Cas où le mode d’avertissement n’est pas pris en charge](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
-
 Nous vous recommandons d’utiliser des règles ASR avec une licence Windows E5 (ou une référence SKU de licence similaire) pour tirer parti des fonctionnalités avancées de supervision et de création de rapports disponibles dans [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) (Defender pour point de terminaison). Toutefois, si vous disposez d’une autre licence, telle que Windows Professional ou Windows E3 qui n’inclut pas de fonctionnalités avancées de supervision et de création de rapports, vous pouvez développer vos propres outils de supervision et de création de rapports en plus des événements générés sur chaque point de terminaison lorsque des règles ASR sont déclenchées (par exemple, le transfert d’événements).
 
 > [!TIP]
@@ -82,7 +79,7 @@ Nous vous recommandons d’utiliser des règles ASR avec une licence Windows E5 
 Vous pouvez activer les règles de réduction de la surface d’attaque à l’aide de l’une des méthodes suivantes :
 
 - [Microsoft Intune](#intune)
-- [Mobile Gestion des appareils (MDM)](#mdm)
+- [Gestion des périphériques mobiles (GPM)](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Stratégie de groupe](#group-policy)
 - [PowerShell](#powershell)
@@ -243,7 +240,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager (MEM) OMA-URI pour configurer de
 
 ### <a name="mdm"></a>GPM
 
-Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) pour activer et définir individuellement le mode pour chaque règle.
+Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) (fournisseur de solutions Cloud) pour activer et définir individuellement le mode pour chaque règle.
 
 Voici un exemple de référence, utilisant des valeurs GUID pour la [référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md).
 
@@ -258,7 +255,7 @@ Les valeurs à activer (bloquer), désactiver, avertir ou activer en mode audit 
 - 2 : Audit (Évaluer l’impact de la règle ASR sur votre organisation si elle est activée)
 - 6 : Avertir (activer la règle ASR, mais autoriser l’utilisateur final à contourner le bloc). Le mode d’avertissement est disponible pour la plupart des règles ASR.
 
-Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
+Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (fournisseur de solutions Cloud) pour ajouter des exclusions.
 
 Exemple :
 
@@ -271,9 +268,9 @@ Exemple :
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. Dans Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
+1. Dans Microsoft Endpoint Configuration Manager, accédez à **Ressources et conformité**\>**Endpoint Protection**\>**Windows Defender Exploit Guard**.
 
-2. Sélectionnez **Home** \> **Create Exploit Guard Policy**.
+2. Sélectionnez **Accueil**\>**Créer une stratégie Exploit Guard**.
 
 3. Entrez un nom et une description, sélectionnez **Réduction de la surface d’attaque**, puis **Suivant**.
 

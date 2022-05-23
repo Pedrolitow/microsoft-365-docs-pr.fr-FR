@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans de Microsoft 365, tandis que Microsoft Intune est un produit autonome inclus dans certains plans Microsoft 365.
-ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01d2717aa0368e3d1dc5ed17f3adfd6313880dfe
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435764"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636105"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisissez entre mobilité et sécurité de base ou Intune
 
@@ -32,16 +32,16 @@ ms.locfileid: "65435764"
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilité de la mobilité et de la sécurité de base et Intune
 
-La mobilité et la sécurité de base et les Intune sont inclus dans divers plans, décrits dans le tableau suivant.
+Mobilité et sécurité de base et Intune sont inclus dans différents plans, décrits dans le tableau suivant.
 
-| Planification | Mobility + Security de Base | Microsoft Intune |
+| Prévision | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Oui|Non|
 |Microsoft 365 Business Basic|Oui|Non|
 |Microsoft 365 Business Standard|Oui|Non|
 |Office 365 E1 |Oui|Non|
 |Office 365 E3 |Oui|Non|
-|Office 365 E5 |Oui|Non|
+|Office 365 E5 |Oui|Non|
 |Microsoft 365 Business Premium |Oui|Oui|
 |Microsoft 365 première ligne 3 |Oui|Oui|
 |Microsoft 365 Entreprise E3 |Oui|Oui|

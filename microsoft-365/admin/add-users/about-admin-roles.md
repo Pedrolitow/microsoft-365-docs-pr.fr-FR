@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Découvrez les rôles d’administrateur, tels que le rôle d’administrateur de service, qui correspondent à des fonctions métier spécifiques et accordent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration.
-ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467117"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636237"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Les rôles d'administration dans le Centre d’administration Microsoft 365
 
@@ -98,11 +98,11 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administration déléguée pour les partenaires Microsoft
 
-Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer des rôles d'administrateur. Il peut à son tour attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou de la sienne. Par exemple, vous souhaiterez peut-être qu'il le fasse s'il est chargé de configurer et gérer votre organisation en ligne pour vous.
+Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer des rôles d'administrateur. Ils peuvent à leur tour attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou de la leur. Vous pouvez leur demander de le faire, par exemple, s'ils mettent en place et gèrent votre organisation en ligne pour vous.
   
 Un partenaire peut attribuer ces rôles : 
   
-- **Agent d’administration**, dont les privilèges sont équivalents à ceux d’un administrateur général, sauf en matière de gestion de l’authentification multifacteur via l'Espace partenaires.
+- **Agent d’administration** Privilèges équivalents à un administrateur général, à l’exception de la gestion de l’authentification multifacteur via l’Espace partenaires.
 
 - **Agent de support technique**, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 

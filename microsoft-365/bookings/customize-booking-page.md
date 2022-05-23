@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft Bookings.
-ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 1c00f87f3447b7002bf647086ee60c756662803d
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747167"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637800"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 La page De réservation est l’endroit où vous configurez à quoi ressemblera votre page de réservation externe. Une fois que vous avez personnalisé et publié votre page de réservation, les utilisateurs l’utiliseront pour réserver des rendez-vous avec vous.
 

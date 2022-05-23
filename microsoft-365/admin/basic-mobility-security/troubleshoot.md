@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Essayez ces étapes pour rechercher les problèmes de mobilité et de sécurité de base
-ms.openlocfilehash: c8c4fe674ff3a803659223a004e304a5779a83d7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 1b1b7d67eb07c67c320554c1d64701983da30e15
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780719"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636061"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Résoudre les problèmes de mobilité et de sécurité de base
 
@@ -37,9 +37,9 @@ Pour commencer, vérifiez les points suivants :
 
 - Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d'entreprise Intune sur l’appareil. 
 
-## <a name="ios-phone-or-tablet"></a>Téléphone ou tablette iOS
+## <a name="ios-phone-or-tablet"></a>iOS téléphone ou tablette
 
-- Vérifiez que vous avez configuré un certificat APNs. Pour plus d’informations, consultez [Créer un certificat APNs pour les appareils iOS](create-an-apns-certificate-for-ios-devices.md).
+- Vérifiez que vous avez configuré un certificat APNs. Pour plus d’informations, consultez [Créer un certificat APNs pour iOS appareils](create-an-apns-certificate-for-ios-devices.md).
 
 - Dans **Paramètres** >  **GeneralProfile** >  **(ou Gestion des appareils),** assurez-vous qu’un profil de gestion n’est pas déjà installé. Si c’est le cas, supprimez-le.
 
@@ -63,9 +63,9 @@ Pour commencer, vérifiez les points suivants :
     
 - Sauf si vous avez Azure Active Directory Premium, assurez-vous que l’utilisateur choisit **l’inscription dans Gestion des appareils uniquement** au lieu de choisir **Connecter**.
 
-## <a name="android-phone-or-tablet"></a>Téléphone ou tablette Android
+## <a name="android-phone-or-tablet"></a>Android téléphone ou tablette
 
-- Vérifiez que l’appareil exécute Android.
+- Vérifiez que l’appareil est en cours d’exécution Android.
 
 - Vérifiez que Chrome est à jour et qu’il est défini comme navigateur par défaut.
 

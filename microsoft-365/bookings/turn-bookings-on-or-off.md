@@ -10,21 +10,16 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à Microsoft Bookings dans Microsoft 365.
-ms.openlocfilehash: e088250a24078d735b6751ff8cbcc55e2fdceaaa
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217461"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637293"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activer ou désactiver Microsoft bookings
 
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
-
-Cet article s’adresse aux administrateurs. 
-
-Bookings peut être activé ou désactivé pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Lorsque vous activez Bookings pour les utilisateurs, ils peuvent créer une page Bookings, créer un calendrier et autoriser d’autres personnes à réserver du temps avec eux.
+Bookings peut être activé ou désactivé pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Lorsque vous activez Bookings pour les utilisateurs, ils peuvent créer une page Bookings, créer un calendrier et autoriser d’autres personnes à réserver du temps avec eux. Cet article s’applique aux propriétaires et administrateurs qui gèrent Bookings pour leur organisation.
 
 > [!NOTE]
 > Les contrôles d’administration décrits dans ces sections ne sont pas disponibles pour Office 365 Exploité par les clients 21Vianet (Chine).

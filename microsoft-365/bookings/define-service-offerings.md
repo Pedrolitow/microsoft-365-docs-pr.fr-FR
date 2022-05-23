@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de service, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service.
-ms.openlocfilehash: 818d0d84e78907047df41e30f0ded62fc16c6ce4
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0c302e8d84274fa2df8eea27362407ded4a468e3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023764"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637778"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de service dans Bookings
-
-> [!NOTE]
-> Cet article vous aide à interagir avec la dernière version de Microsoft Bookings. Les versions précédentes seront mises hors service dans les prochains mois.
 
 Lorsque vous définissez vos offres de service dans Microsoft Bookings, vous définissez un nom de service, une description, un emplacement (choisissez si vous souhaitez vous rencontrer en personne ou avoir une réunion en ligne), la durée, les rappels par défaut aux clients et au personnel, les notes internes sur le service et la tarification. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service. Ensuite, lorsque les clients viennent sur votre site web d’entreprise pour réserver un rendez-vous, ils peuvent voir exactement quels types de rendez-vous sont disponibles, choisir la personne qu’ils veulent fournir le service, et combien leur service va coûter.
 
@@ -51,7 +48,7 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
        > Teams réunions peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur web ou via la connexion téléphonique. Nous vous recommandons vivement d’activer Teams en tant que service de réunion en ligne par défaut pour votre locataire, pour une expérience optimale de réservation de rendez-vous virtuels.
 
    - Handicapés:
-     - Les rendez-vous ne contiendront pas d’option de réunion, et tous les champs liés à la réunion qui apparaissent lorsque **l’option Ajouter une réunion en ligne** est activée ne s’afficheront pas.
+     - Rendez-vous ne contient pas d’option de réunion, et tous les champs liés à la réunion qui s’affichent lorsque **l’option Ajouter une réunion en ligne** est activée ne s’affichent pas.
 
    **Durée** : il s’agit de la durée pendant laquelle toutes les réunions seront réservées. L’heure est bloquée à partir de l’heure de début, qui est sélectionnée lors de la réservation. Le temps de rendez-vous complet sera bloqué dans les calendriers du personnel.
 
@@ -105,13 +102,13 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings.":::
 
-9. **Activer les notifications par SMS pour votre client** S’il est sélectionné, les SMS sont envoyés au client, mais uniquement s’ils y sont abonnés.
+9. **Activer les notifications par SMS pour votre client** S’il est sélectionné, SMS messages sont envoyés au client, mais uniquement s’ils y sont abonnés.
 
    - Zone d’acceptation sur la page de réservation manuelle et de Self-Service :
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’adhésion dans Bookings.":::
 
-   - Les notifications par SMS se présentent comme suit (notez que les notifications SMS ne sont actuellement disponibles que dans Amérique du Nord) :
+   - Les notifications par SMS se présentent comme suit (notez que SMS notifications ne sont actuellement disponibles que dans Amérique du Nord) :
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Notification de texte de Bookings.":::
 

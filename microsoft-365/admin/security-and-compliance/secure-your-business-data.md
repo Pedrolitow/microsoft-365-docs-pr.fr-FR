@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 47e9d935cdf6b44d9ba45cd57d8eb3efeabdf0a3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622811"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637668"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser les Microsoft 365 pour les entreprises
 
@@ -191,7 +191,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 
 6. Sélectionnez **Enregistrer**.
 
-| Paramètres | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètre | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : types de fichiers de blocage  <br/> |
 |Appliquez cette règle si . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |
@@ -258,7 +258,7 @@ Nous vous recommandons de commencer à utiliser cette protection en créant une 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
 |Nom|Domaine et personnel de campagne le plus précieux|
-|Description|Assurez-vous que le personnel le plus important et notre domaine ne sont pas empruntés d’identité.|
+|Description|Assurez-vous que le personnel le plus important et notre domaine ne sont pas usurpés d’identité.|
 |Ajouter des utilisateurs à protéger|Sélectionnez **+ Ajouter une condition, le destinataire l’est**. Tapez des noms d’utilisateur ou entrez l’adresse e-mail du candidat, du responsable de campagne et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
 |Ajouter des domaines à protéger|Sélectionnez **+ Ajouter une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.|
 |Choisir des actions|Si l’e-mail est envoyé par un utilisateur emprunt d’identité : sélectionnez **Rediriger le message vers une autre adresse e-mail**, puis tapez l’adresse e-mail de l’administrateur de sécurité; par exemple, securityadmin@contoso.com. <br/> Si l’e-mail est envoyé par un domaine emprunt d’identité : sélectionnez **Message de quarantaine**.|
