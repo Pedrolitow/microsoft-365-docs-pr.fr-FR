@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
-ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 24596a2781a8b2176908d6e5d3a6c5bd74b0260a
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174825"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637426"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 
@@ -43,6 +43,8 @@ Il existe deux versions du module PowerShell que vous utilisez pour vous connect
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
+>[!NOTE]
+> Le module Azure Active Directory est remplacé par le SDK PowerShell Microsoft Graph. Vous pouvez utiliser le kit de développement logiciel (SDK) PowerShell Microsoft Graph pour accéder à toutes les API Microsoft Graph. Pour plus d’informations, consultez [Démarrage avec le kit de développement logiciel (SDK) PowerShell Microsoft Graph](/powershell/microsoftgraph/get-started).
 
 **Système d’exploitation**
 
@@ -206,11 +208,6 @@ Vous aurez besoin d’un abonnement Azure actif pour votre organisation lié à 
 Pour plus d’informations, consultez [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 
-## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Prise en main du Kit de développement logiciel (SDK) Microsoft Graph PowerShell
-
-Vous pouvez utiliser le kit de développement logiciel (SDK) PowerShell Microsoft Graph pour accéder à toutes les API Microsoft Graph.
-
-Pour plus d’informations, consultez [Démarrage avec le kit de développement logiciel (SDK) PowerShell Microsoft Graph](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## <a name="see-also"></a>Voir aussi
 
