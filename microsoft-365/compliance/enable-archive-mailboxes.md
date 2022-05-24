@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Découvrez comment activer ou désactiver les boîtes aux lettres d’archivage pour prendre en charge la conservation des messages, la découverte électronique et les exigences de conservation de votre organisation.
-ms.openlocfilehash: fac57f8b352edc62db344ec600d3063e960f5a6f
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393313"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647234"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Activer l’archivage des boîtes aux lettres dans le portail de conformité Microsoft Purview
 
@@ -55,11 +55,10 @@ Si vous ne voyez pas la page **Archive** dans le Centre de conformité Microsoft
    > [!NOTE]
    > La page **Archive** affiche au maximum 500 utilisateurs. Utilisez la zone de recherche si vous ne pouvez pas voir immédiatement le nom de l’utilisateur souhaité.
 
-3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage, et sélectionnez **Activer l’archivage** :
-
+3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage, puis sélectionnez l’option **Activer l’archivage** :
+    
    ![Activer l’option d’archive pour un utilisateur sélectionné.](../media/enable-archive-option.png)
-
-
+    
    Un avertissement s’affiche, qui vous signale que, si vous activez la boîte aux lettres d’archivage, les éléments de la boîte aux lettres de l’utilisateur plus anciens que la stratégie d’archivage affectée à la boîte aux lettres seront déplacés vers la nouvelle boîte aux lettres d’archivage. La stratégie d’archivage par défaut qui fait partie de la stratégie de rétention affectée aux boîtes aux lettres Online déplace les éléments vers la boîte aux lettres d’archivage deux ans après la date à laquelle ils ont été remis à la boîte aux lettres ou créés par l’utilisateur. Pour plus d’informations, consultez [En savoir plus sur les boîtes aux lettres d’archivage](archive-mailboxes.md).
 
 5. Sélectionnez **Activer** pour confirmer.
@@ -68,7 +67,7 @@ Si vous ne voyez pas la page **Archive** dans le Centre de conformité Microsoft
 
 ## <a name="disable-an-archive-mailbox"></a>Désactiver une boîte aux lettres d’archivage
 
-De la même façon que vous activez une boîte aux lettres d’archivage, vous pouvez utiliser la page **Archive** dans le portail de conformité Microsoft Purview pour désactiver la boîte aux lettres d’archivage d’un utilisateur. Cette fois, sélectionnez l’option **Désactiver l’archive** après avoir sélectionné l’utilisateur.
+De la même façon que vous activez une boîte aux lettres d’archivage, vous pouvez utiliser la page **Archive** dans le portail de conformité Microsoft Purview pour désactiver la boîte aux lettres d’archivage d’un utilisateur. Cette fois-ci, sélectionnez l’option **Désactiver l’archivage** une fois l’utilisateur sélectionné.
 
 Après avoir désactivé une boîte aux lettres d’archivage, vous pouvez la reconnecter à la boîte aux lettres principale de l’utilisateur dans les 30 jours suivant sa désactivation. Dans ce cas, le contenu d’origine de la boîte aux lettres d’archivage est restauré. Après 30 jours, le contenu de la boîte aux lettres d’archivage d’origine est définitivement supprimé et ne peut pas être récupéré. Par conséquent, si vous réactivez l’archive plus de 30 jours après sa désactivation, une nouvelle boîte aux lettres d’archivage est créée.
 
