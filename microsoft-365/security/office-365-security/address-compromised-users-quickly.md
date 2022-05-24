@@ -16,19 +16,21 @@ ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis avec des fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8628f1952f37f43a66daccb5f0792097ce798c31
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418267"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649040"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis avec une investigation et une réponse automatisées
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) inclut de puissantes fonctionnalités [d’investigation et de réponse automatisées](office-365-air.md) (AIR). Ces fonctionnalités peuvent faire gagner beaucoup de temps et d’efforts à votre équipe chargée des opérations de sécurité face aux menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un playbook de sécurité utilisateur compromis (actuellement en préversion). Lisez cet article pour en savoir plus sur le playbook de sécurité des utilisateurs compromis. Pour plus d’informations, consultez le billet de blog [Accélérer le temps de détection et de réponse à la compromission de l’utilisateur et limiter l’étendue de la violation avec Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053).
 
@@ -94,7 +96,7 @@ Pour plus d’informations, consultez [Afficher les détails d’une enquête](a
 
 - **Ne vous fiez pas à une alerte de connexion suspecte comme seul indicateur**. Lorsqu’un compte d’utilisateur est compromis, il peut déclencher ou non une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produit après la compromission d’un compte qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Consultez les [stratégies d’alerte](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

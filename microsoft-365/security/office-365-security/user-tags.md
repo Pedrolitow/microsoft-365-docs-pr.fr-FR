@@ -17,14 +17,20 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs avec des balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286403"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647466"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**S’applique à :**
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les balises utilisateur sont des identificateurs pour des groupes spécifiques d’utilisateurs dans [Microsoft Defender pour Office 365](defender-for-office-365.md). Il existe deux types de balises utilisateur :
 
@@ -47,7 +53,7 @@ Après avoir appliqué des balises système ou personnalisées aux utilisateurs,
 - [Rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Simulation d’attaque](attack-simulation-training.md#target-users)
 - [Vues de campagne](campaigns.md)
-- [Soumissions d’administrateurs et d’utilisateurs](admin-submission.md)
+- [Administration et soumissions d’utilisateurs](admin-submission.md)
 - [Mise en quarantaine](quarantine.md)
 - Pour les comptes prioritaires, vous pouvez utiliser les [problèmes de messagerie pour le rapport des comptes prioritaires](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) dans le centre d’administration Exchange (EAC).
 
@@ -61,7 +67,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 - Vous devez disposer d’autorisations dans le portail Microsoft 365 Defender avant de pouvoir effectuer les procédures décrites dans cet article :
   - Pour créer, modifier et supprimer des balises utilisateur personnalisées, vous devez être membre des groupes de **rôles Gestion de l’organisation** ou **Administrateur de la sécurité** .
-  - Pour ajouter et supprimer des membres de la balise système de compte prioritaire, vous devez être membre des groupes de **rôles Administrateur de sécurité** et **Administrateur Exchange**.
+  - Pour ajouter et supprimer des membres de la balise système de compte prioritaire, vous devez être membre de **l’administrateur de sécurité** et **Exchange Administration** groupes de rôles.
   - Pour ajouter et supprimer des membres de balises utilisateur personnalisées existantes, vous devez être membre des groupes de **rôles Gestion de l’organisation** ou **Administrateur de la sécurité** .
   - Pour accéder en lecture seule aux balises utilisateur, vous devez être membre des groupes de **rôles Lecteur général**, **Opérateur de sécurité** ou **Lecteur de sécurité** .
 
@@ -146,6 +152,6 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 3. Lisez l’avertissement dans la boîte de dialogue de confirmation qui s’affiche, puis cliquez sur **Oui, supprimer**.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 [Configurer et passer en revue les comptes prioritaires dans Microsoft Defender pour Office 365](configure-review-priority-account.md)

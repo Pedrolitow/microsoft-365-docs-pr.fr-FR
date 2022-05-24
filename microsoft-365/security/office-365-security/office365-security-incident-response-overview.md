@@ -14,46 +14,44 @@ ms.collection:
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-description: Cette solution vous indique à quoi peuvent ressembler les attaques de cybersécurité les plus courantes dans Microsoft 365 et comment y répondre
+description: Cette solution vous indique à quoi ressemblent les attaques de cybersécurité les plus courantes dans Microsoft 365 et comment y répondre
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef36caca62935dbeca6640c5fa9ed2edaae9528b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e69ca9f57f3a025ee669001227e64c8809d4741
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196488"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648148"
 ---
 # <a name="security-incident-response"></a>Réponse aux incidents de sécurité
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Résumé :** Cette solution vous indique quels sont les indicateurs des attaques de cybersécurité les plus courantes dans Office 365, comment confirmer positivement toute attaque donnée et comment y répondre.
+ **Résumé:** Cette solution vous indique quels sont les indicateurs pour les attaques de cybersécurité les plus courantes dans Office 365, comment confirmer positivement une attaque donnée et comment y répondre.
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>Découvrez comment répondre aux cyberattaques
 
-Toutes les cyberattaques ne peuvent pas être déprécées. Les attaquants recherchent constamment de nouvelles faiblesses dans votre stratégie de défense ou exploitent des anciennes. Le fait de savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
+Toutes les cyberattaques ne peuvent pas être contrecarrées. Les attaquants sont constamment à la recherche de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciennes. Savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui raccourcit la durée de l’incident de sécurité.
 
-Cette série d’articles vous aide à comprendre à quoi peut ressembler un type particulier d’attaque dans Microsoft 365 et vous donne les étapes à suivre pour y répondre. Ce sont des points d’entrée rapides pour comprendre :
+Cette série d’articles vous aide à comprendre à quoi peut ressembler un type particulier d’attaque dans Microsoft 365 et vous donne les étapes à suivre pour répondre. Ce sont des points d’entrée rapides pour comprendre :
 
 - Qu’est-ce que l’attaque et comment elle fonctionne.
 
-- Les signes, appelés indicateurs de compromis (IOC), à rechercher et comment les rechercher.
+- Les signes, appelés indicateurs de compromission (IOC), à rechercher et comment les rechercher.
 
-- Comment confirmer l’attaque de manière positive.
+- Comment confirmer positivement l’attaque.
 
-- Étapes à suivre pour réduire l’attaque et mieux protéger votre organisation à l’avenir.
+- Étapes à suivre pour couper l’attaque et mieux protéger votre organisation à l’avenir.
 
 - Liens vers des informations détaillées sur chaque type d’attaque.
 
-Consultez cet article tous les mois, car d’autres articles seront ajoutés au fil du temps.
+Revenez ici tous les mois, car d’autres articles seront ajoutés au fil du temps.
 
 ## <a name="detect-and-remediate-articles"></a>Détecter et corriger les articles
 
@@ -67,10 +65,10 @@ Consultez cet article tous les mois, car d’autres articles seront ajoutés au 
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de route de sécurité Microsoft 365 - Principales priorités pour les [30 premiers jours, 90](security-roadmap.md) jours et au-delà pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre organisation Microsoft 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [feuille de route de sécurité Microsoft 365 - Principales priorités pour les 30 premiers jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre organisation Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 
-- Tâches à accomplir dans les 90 premiers jours. La planifier et l’implémenter prennent un peu plus de temps, mais améliorent considérablement votre posture de sécurité.
+- Tâches à accomplir dans les 90 premiers jours. Ceux-ci prennent un peu plus de temps pour planifier et implémenter, mais améliorer considérablement votre posture de sécurité
 
 - Au-delà de 90 jours. Ces améliorations s’appuient sur vos 90 premiers jours de travail.

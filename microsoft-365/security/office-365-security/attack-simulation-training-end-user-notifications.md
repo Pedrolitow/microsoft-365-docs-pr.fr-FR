@@ -12,14 +12,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour la formation de simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 0693b7f55472c5093df763af5a1a226c0c3aa052
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d21e3bd48dae3f1028412beff9449a38b9f751ff
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101610"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649058"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**S’applique à**
+- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
 Dans la formation de simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les notifications de l’utilisateur final sont des messages électroniques envoyés aux utilisateurs. Il existe deux types de notifications de base :
 
@@ -146,7 +151,7 @@ Vous revenez à la page de **notification de renforcement positif** , où la not
 
 - Pour supprimer une notification, sélectionnez-la, puis cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-delete-icon.png).
 
-## <a name="related-links"></a>Liens connexes
+## <a name="related-links"></a>Liens associés
 
 [Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Afficher les résultats d’un examen automatisé dans Microsoft 365
-keywords: AIR, autoIR, Microsoft Defender pour point de terminaison, automatisé, examen, correction, actions
+title: Afficher les résultats d’une enquête automatisée dans Microsoft 365
+keywords: AIR, autoIR, Microsoft Defender pour point de terminaison, automatisé, investigation, correction, actions
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -15,85 +15,86 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Pendant et après un examen automatisé dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
+description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b99573f73d5b53b6ea0e8d0cd1e44b539fa47db9
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680795"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649074"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Lorsqu’un examen automatisé](office-365-air.md) se produit dans [Microsoft Defender pour Office 365](defender-for-office-365.md), des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous avez les autorisations nécessaires, vous pouvez afficher ces détails dans le portail Microsoft 365 Defender web. Les détails de l’examen vous fournissent l’état à jour et la possibilité d’approuver les actions en attente.
+Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Microsoft Defender pour Office 365](defender-for-office-365.md), des détails sur cette enquête sont disponibles pendant et après le processus d’enquête automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans le portail Microsoft 365 Defender. Les détails de l’enquête vous fournissent un état à jour et la possibilité d’approuver les actions en attente.
 
 > [!TIP]
-> Consultez la nouvelle page d’examen unifié dans le portail Microsoft 365 Defender web. Pour en savoir plus, [voir (NOUVEAU!) Page Examen unifié](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Consultez la nouvelle page d’investigation unifiée dans le portail Microsoft 365 Defender. Pour en savoir plus, consultez [(NOUVEAU!) Page d’investigation unifiée](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
-## <a name="investigation-status"></a>État de l’examen
+## <a name="investigation-status"></a>État de l’enquête
 
-L’état de l’examen indique la progression de l’analyse et des actions. Au cours de l’examen, l’état change pour indiquer si des menaces ont été trouvées et si des actions ont été approuvées.
+L’état de l’enquête indique la progression de l’analyse et des actions. À mesure que l’enquête s’exécute, l’état change pour indiquer si des menaces ont été détectées et si des actions ont été approuvées.
 
-|État|Description|
+|Statut|Description|
 |---|---|
-|**Démarrage**|L’enquête a été déclenchée et en attente de démarrage de l’exécution.|
-|**En cours d’exécution**|Le processus d’examen a démarré et est en cours. Cet état se produit également lorsque les [actions en attente sont](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) approuvées.|
-|**Aucune menace trouvée**|L’enquête est terminée et aucune menace (compte d’utilisateur, message électronique, URL ou fichier) n’a été identifiée. <p> **CONSEIL** : si vous pensez que quelque chose a été manqué (tel qu’un faux négatif), vous pouvez prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md).|
-|**Menaces détectées**|L’examen automatisé a trouvé des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> **L’état Menaces** trouvées peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Voici quelques exemples d’activités utilisateur : <ul><li>Un [événement de protection contre la perte de](../../compliance/dlp-learn-about-dlp.md) données</li><li>Anomalie d’envoi de courrier électronique</li><li>Programmes malveillants envoyés</li><li>Hameçonnage envoyé</li></ul> <p> L’examen n’a trouvé aucune URL, aucun fichier ou message électronique malveillant à corriger, ni aucune activité de boîte aux lettres à corriger, telle que la non-remise des règles de forwarding ou de la délégation. <p> **CONSEIL** : si vous pensez que quelque chose a été manqué (tel qu’un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md)|
-|**Terminated By System**|L’examen a été arrêté. Une enquête peut s’arrêter pour plusieurs raisons : <ul><li>Les actions en attente de l’enquête ont expiré. Délai d’attente des actions en attente d’approbation pendant une semaine</li><li>Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut aller au-delà de la capacité de l’examen à exécuter tous les analyseurs, de sorte que l’enquête s’arrête.</li></ul> <p> **CONSEIL :** si un examen s’arrête avant que des mesures ne sont prises, essayez d’utiliser l’Explorateur de menaces [pour rechercher](threat-explorer.md) et résoudre les menaces.|
-|**Action en attente**|L’examen a trouvé une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action pour corriger cette menace est en attente [d’approbation](air-review-approve-pending-completed-actions.md). <p> **L’état Action en attente** est déclenché lorsqu’une menace avec une action correspondante est trouvée. Toutefois, la liste des actions en attente peut augmenter au cours d’une enquête. Affichez les détails de l’examen pour voir si d’autres éléments sont en attente d’achèvement.|
-|**Corrigé**|L’examen s’est terminé et toutes les actions de correction ont été approuvées (notées comme étant entièrement corrigés). <p> **REMARQUE** : les actions de correction approuvées peuvent avoir des erreurs qui empêchent les actions d’être prises. Que les actions de correction soient effectuées avec succès ou non, l’état de l’examen ne change pas. Afficher les détails de l’examen.|
-|**Correction partielle**|L’examen a entraîné des actions de correction, dont certaines ont été approuvées et terminées. D’autres actions sont [toujours en attente](air-review-approve-pending-completed-actions.md).|
-|**Échec**|Au moins un analyseur d’examen a rencontré un problème dans lequel il n’a pas pu se terminer correctement. <p> **REMARQUE** En cas d’échec d’un examen après l’approbation des actions correctives, les actions de correction ont peut-être encore réussi. Afficher les détails de l’enquête.|
-|**Mis en file d’attente par limitation**|Un examen est placé dans une file d’attente. Lorsque d’autres enquêtes sont terminées, les enquêtes en file d’attente commencent. La limitation permet d’éviter des performances de service médiocres.  <p> **CONSEIL :** les actions en attente peuvent limiter le nombre de nouvelles enquêtes qui peuvent s’exécuter. Veillez à [approuver (ou rejeter) les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
-|**Terminated By Throttling**|Si un examen est mis trop longtemps dans la file d’attente, il s’arrête. <p> **CONSEIL :** vous pouvez démarrer [une enquête à partir de l’Explorateur de menaces](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|**Démarrage**|L’enquête a été déclenchée et attend de commencer à s’exécuter.|
+|**En cours d’exécution**|Le processus d’enquête a commencé et est en cours. Cet état se produit également lorsque les [actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) sont approuvées.|
+|**Aucune menace trouvée**|L’enquête est terminée et aucune menace (compte d’utilisateur, e-mail, URL ou fichier) n’a été identifiée. <p> **CONSEIL** : Si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md).|
+|**Menaces détectées**|L’enquête automatisée a détecté des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> L’état **Des menaces trouvées** peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Les activités utilisateur suivantes sont les suivantes : <ul><li>Événement [de protection contre la perte de données](../../compliance/dlp-learn-about-dlp.md)</li><li>Une anomalie d’envoi de courrier électronique</li><li>Programmes malveillants envoyés</li><li>Hameçonnage envoyé</li></ul> <p> L’enquête n’a détecté aucune URL, fichier ou e-mail malveillant à corriger, et aucune activité de boîte aux lettres à corriger, telle que la désactivation des règles de transfert ou de délégation. <p> **CONSEIL** : Si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md)|
+|**Arrêté par le système**|L’enquête s’est arrêtée. Une enquête peut s’arrêter pour plusieurs raisons : <ul><li>Les actions en attente de l’enquête ont expiré. Délai d’attente des actions en attente après l’approbation d’une semaine</li><li>Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut dépasser la capacité de l’enquête à exécuter tous les analyseurs, de sorte que l’investigation s’arrête</li></ul> <p> **CONSEIL** : Si une enquête s’arrête avant que des actions aient été effectuées, essayez d’utiliser [l’Explorateur](threat-explorer.md) de menaces pour rechercher et traiter les menaces.|
+|**Action en attente**|L’enquête a détecté une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action pour corriger cette menace [est en attente d’approbation](air-review-approve-pending-completed-actions.md). <p> L’état **de l’action en attente** est déclenché lorsqu’une menace avec une action correspondante est trouvée. Toutefois, la liste des actions en attente peut augmenter à mesure qu’une enquête s’exécute. Affichez les détails de l’examen pour voir si d’autres éléments sont toujours en attente d’achèvement.|
+|**Corrigé**|L’enquête s’est terminée et toutes les mesures correctives ont été approuvées (indiquées comme entièrement corrigées). <p> **REMARQUE** : Les actions de correction approuvées peuvent avoir des erreurs qui empêchent les actions d’être effectuées. Que les actions de correction soient terminées ou non, l’état de l’examen ne change pas. Afficher les détails de l’enquête.|
+|**Partiellement corrigé**|L’enquête a donné lieu à des mesures correctives, et certaines ont été approuvées et terminées. D’autres actions sont toujours [en attente](air-review-approve-pending-completed-actions.md).|
+|**Échec**|Au moins un analyseur d’investigation a rencontré un problème où il n’a pas pu se terminer correctement. <p> **NOTE** Si une enquête échoue après l’approbation des actions de correction, les actions de correction peuvent encore avoir réussi. Affichez les détails de l’enquête.|
+|**Mise en file d’attente par limitation**|Une enquête est en cours dans une file d’attente. Une fois les autres enquêtes terminées, les enquêtes en file d’attente commencent. La limitation permet d’éviter des performances de service médiocres.  <p> **CONSEIL** : Les actions en attente peuvent limiter le nombre de nouvelles investigations pouvant s’exécuter. Veillez à [approuver (ou rejeter) les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
+|**Terminé par la limitation**|Si une enquête est trop longue dans la file d’attente, elle s’arrête. <p> **CONSEIL** : Vous pouvez [démarrer une enquête à partir de l’Explorateur de menaces](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
-2. Dans le volet de navigation, sélectionnez **Centre de l’action**.
-3. Sous les onglets **En attente** **ou Historique** , sélectionnez une action. Son volet volant s’ouvre.
-4. Dans le volet volant, sélectionnez **Ouvrir la page Examen**. 
-5. Utilisez les différents onglets pour en savoir plus sur l’examen.
+1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>) et connectez-vous.
+2. Dans le volet de navigation, sélectionnez **Centre d’actions**.
+3. Sous les onglets **En attente** ou **Historique** , sélectionnez une action. Son volet volant s’ouvre.
+4. Dans le volet de menu volant, sélectionnez **Ouvrir la page d’investigation**. 
+5. Utilisez les différents onglets pour en savoir plus sur l’enquête.
 
-## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Afficher les détails d’une alerte liée à un examen
+## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Afficher les détails d’une alerte liée à une enquête
 
-Certains types d’alerte déclenchent une enquête automatisée dans Microsoft 365. Pour en savoir plus, consultez les [stratégies d’alerte qui déclenchent des enquêtes automatisées](office-365-air.md#which-alert-policies-trigger-automated-investigations).
+Certains types d’alertes déclenchent une investigation automatisée dans Microsoft 365. Pour plus d’informations, consultez [les stratégies d’alerte qui déclenchent des investigations automatisées](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
-2. Dans le volet de navigation, sélectionnez **Centre de l’action**.
-3. Sous les onglets **En attente** **ou Historique** , sélectionnez une action. Son volet volant s’ouvre.
-4. Dans le volet volant, sélectionnez **Ouvrir la page Examen**.
-5. Sélectionnez **l’onglet Alertes** pour afficher la liste de toutes les alertes associées à cet examen.
-6. Sélectionnez un élément dans la liste pour ouvrir son volet volant. Vous y pouvez afficher plus d’informations sur l’alerte.
+1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>) et connectez-vous.
+2. Dans le volet de navigation, sélectionnez **Centre d’actions**.
+3. Sous les onglets **En attente** ou **Historique** , sélectionnez une action. Son volet volant s’ouvre.
+4. Dans le volet de menu volant, sélectionnez **Ouvrir la page d’investigation**.
+5. Sélectionnez l’onglet **Alertes** pour afficher la liste de toutes les alertes associées à cette enquête.
+6. Sélectionnez un élément dans la liste pour ouvrir son volet volant. Vous pouvez y afficher plus d’informations sur l’alerte.
 
-## <a name="keep-the-following-points-in-mind"></a>Gardez les points suivants à l’esprit
+## <a name="keep-the-following-points-in-mind"></a>Gardez à l’esprit les points suivants
 
-- Les nombres d’e-mails sont calculés au moment de l’enquête et certains sont recalculés lorsque vous ouvrez des volants d’enquête (sur la base d’une requête sous-jacente).
+- Le nombre de courriers électroniques est calculé au moment de l’enquête, et certains nombres sont recalculés lorsque vous ouvrez des menus volants d’investigation (basés sur une requête sous-jacente).
 
-- Les nombres de messages affichés pour les clusters de  messagerie sous l’onglet Courrier électronique et la valeur de quantité de courrier indiquée dans le flyout de cluster sont calculés au moment de l’examen et ne changent pas.
+- Les nombres de courriers affichés pour les clusters de messagerie sous l’onglet **E-mail** et la valeur de quantité de courrier affichée dans le menu volant du cluster sont calculés au moment de l’examen et ne changent pas.
 
-- Le nombre de messages affichés en bas de  l’onglet Courrier du flyout du cluster de messagerie et le nombre de messages électroniques affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête.
+- Le nombre d’e-mails affiché en bas de l’onglet **E-mail** du menu volant du cluster de messagerie et le nombre d’e-mails affichés dans l’Explorateur reflètent les messages électroniques reçus après l’analyse initiale de l’enquête.
 
-  Par conséquent, un cluster de messagerie qui affiche une quantité d’origine de 10 messages électroniques affiche un total de 15 messages électroniques lorsque cinq autres messages électroniques arrivent entre la phase d’analyse de l’examen et lorsque l’administrateur examine l’examen. De même, les anciennes enquêtes peuvent commencer à afficher des nombres plus élevés que les requêtes Explorer, car les données de Microsoft Defender pour Office 365 Plan 2 expirent après sept jours pour les essais et après 30 jours pour les licences payantes.
+  Ainsi, un cluster de courrier qui affiche une quantité d’origine de 10 e-mails affiche une liste de courriers de 15 au total lorsque cinq messages électroniques supplémentaires arrivent entre la phase d’analyse de l’enquête et lorsque l’administrateur examine l’enquête. De même, les anciennes investigations peuvent commencer à afficher des nombres plus élevés que ne le montrent les requêtes de l’Explorateur, car les données de Microsoft Defender pour Office 365 Plan 2 expirent après sept jours pour les essais et après 30 jours pour les licences payantes.
 
-  L’affichage du nombre historique et du nombre actuel dans différents affichages est effectué pour indiquer l’impact de la messagerie au moment de l’examen et l’impact actuel jusqu’au moment où la correction est effectuée.
+  L’affichage des nombres historiques et actuels dans différentes vues est effectué pour indiquer l’impact de l’e-mail au moment de l’examen et l’impact actuel jusqu’au moment de l’exécution de la correction.
 
-- Dans le contexte du courrier électronique, vous pouvez voir une surface de menace d’anomalie de volume dans le cadre de l’examen. Une anomalie de volume indique un pic du nombre de messages électroniques similaires autour de la durée de l’événement d’investigation par rapport aux périodes antérieures. Un pic du trafic de messagerie ainsi que certaines caractéristiques (par exemple, le domaine de l’objet et de l’expéditeur, la similarité du corps et l’adresse IP de l’expéditeur) est caractéristique du début des campagnes ou des attaques par courrier électronique. Toutefois, les campagnes de courrier en masse, de courrier indésirable et légitimes partagent généralement ces caractéristiques.
+- Dans le contexte de l’e-mail, vous pouvez voir une surface de menace d’anomalie de volume dans le cadre de l’enquête. Une anomalie de volume indique un pic de messages électroniques similaires autour de l’heure de l’événement d’investigation par rapport aux périodes antérieures. Un pic du trafic de messagerie avec certaines caractéristiques (par exemple, domaine de l’objet et de l’expéditeur, similarité du corps et adresse IP de l’expéditeur) est typique du début des campagnes de messagerie ou des attaques. Toutefois, les campagnes de courrier en bloc, de courrier indésirable et légitimes partagent généralement ces caractéristiques.
 
-- Les anomalies de volume représentent une menace potentielle et, par conséquent, peuvent être moins graves que les programmes malveillants ou les menaces de hameçonnage identifiés à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
+- Les anomalies de volume représentent une menace potentielle et peuvent donc être moins graves que les programmes malveillants ou les menaces de hameçonnage identifiés à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
 
-- Vous n’avez pas besoin d’approuver chaque action. Si vous n’êtes pas d’accord avec l’action recommandée ou si votre organisation ne choisit pas certains types d’actions, vous pouvez choisir de rejeter les actions ou simplement de les ignorer et de ne pas prendre d’action.
+- Vous n’avez pas besoin d’approuver chaque action. Si vous n’êtes pas d’accord avec l’action recommandée ou si votre organisation ne choisit pas certains types d’actions, vous pouvez choisir de **rejeter** les actions ou simplement de les ignorer et de ne rien faire.
 
-- L’approbation et/ou le rejet de toutes les actions permet à l’examen de se fermer complètement (l’état est corrigé), tout en laissant certaines actions incomplètes, l’état de l’examen passe à un état partiellement corrigé.
+- L’approbation et/ou le rejet de toutes les actions permettent à l’enquête de se fermer complètement (l’état est corrigé), tout en laissant certaines actions incomplètes pour que l’état de l’enquête passe à un état partiellement corrigé.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Examiner et approuver les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

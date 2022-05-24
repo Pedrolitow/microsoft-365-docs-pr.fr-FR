@@ -20,21 +20,19 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser le portail de suppression pour vous supprimer de la liste des expéditeurs bloqués Microsoft 365. Il s’agit de la meilleure réponse pour résoudre les erreurs d’accès refusé 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 43637f8eb72d078223236f78b45034218e34bcbc
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 83822faaf1c667524dd88fc1bba400c10fa30ac3
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971129"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647730"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Utilisez le portail de liste pour vous supprimer de la liste des expéditeurs bloqués et résoudre les erreurs d’accès refusé 5.7.511
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Recevez-vous un message d’erreur lorsque vous essayez d’envoyer un e-mail à un destinataire dont l’adresse e-mail se trouve dans Microsoft 365 (par exemple, l’adresse 5.7.511 Accès refusé) ? Si vous pensez ne pas recevoir le message d’erreur, vous pouvez utiliser le portail de suppression pour vous supprimer de la liste des expéditeurs bloqués.
 
@@ -88,6 +86,6 @@ En cas de problème de remise d’un message électronique que vous avez envoyé
 
 Dans l’e-mail pour demander la suppression de cette liste, fournissez le code NDR complet et l’adresse IP. Microsoft vous contactera dans les 48 heures suivant les étapes suivantes.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Formulaire de suppression pour **Outlook.com, le service consommateur** est disponible [ici](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Veillez à lire d’abord le [FAQ](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) pour obtenir _la direction de la soumission_ .

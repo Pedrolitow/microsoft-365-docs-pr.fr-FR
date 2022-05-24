@@ -14,21 +14,21 @@ description: Les administrateurs peuvent en savoir plus sur les insights et les 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eef35eedd5a7f182160b9a6a8b27a59cf9cdd9c0
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5850612fbd0de89e5eafe101f55d368b0f4b0c8f
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129175"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648720"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité pour découvrir les tendances, les insights et prendre des mesures pour résoudre les problèmes liés au flux de courrier dans leur organisation.
 
@@ -37,27 +37,16 @@ Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie da
 Les insights disponibles sont les suivants :
 
 - [Aperçu des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)
-
 - [Corriger les insights de boucle de messagerie](mfi-mail-loop-insight.md) <sup>possibles1</sup>
-
 - [Correction des règles de flux de courrier lent insight1](mfi-slow-mail-flow-rules-insight.md)<sup></sup>
-
 - [Carte du flux de messagerie](mfi-mail-flow-map-report.md)
-
 - [Nouveaux domaines transférés par e-mail Insight2](mfi-new-domains-being-forwarded-email.md)<sup></sup>
-
 - [Nouveaux utilisateurs transférant email insight2](mfi-new-users-forwarding-email.md)<sup></sup>
-
 - [Rapport de domaine non accepté](mfi-non-accepted-domain-report.md)
-
 - [Rapport de non-remise](mfi-non-delivery-report.md)
-
 - [Informations sur le flux de courrier entrant et sortant](mfi-outbound-and-inbound-mail-flow.md)
-
 - [Informations sur les files d’attente](mfi-queue-alerts-and-queues.md)
-
 - [Informations et rapports sur les clients SMTP AUTH](mfi-smtp-auth-clients-report.md)
-
 - [Informations sur l’état du flux de courrier des principaux domaines](mfi-domain-mail-flow-status-insight.md)
 
 <sup>1</sup> Cet aperçu s’affiche dans la zone **Recommandé pour vous** du tableau de bord de flux de courrier uniquement après la détection du problème. Sinon, vous ne le verrez pas.
@@ -80,7 +69,5 @@ Le tableau de bord de flux de messagerie est disponible pour les membres des gro
 Pour plus d’informations sur les autorisations, consultez [Autorisations dans le Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md) et [Autoriser les utilisateurs à accéder au Centre de sécurité & conformité](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de courrier
-
-Ouvrez le Centre de sécurité & conformité à l’adresse <https://protection.office.com>, développez **le flux de courrier**, puis sélectionnez **Tableau de bord**.
 
 Pour accéder directement au tableau de bord de flux de courrier, ouvrez <https://protection.office.com/mailflow/dashboard>.

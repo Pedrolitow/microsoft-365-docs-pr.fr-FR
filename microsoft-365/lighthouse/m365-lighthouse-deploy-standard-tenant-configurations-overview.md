@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
-ms.openlocfilehash: a12abd14064559ec92fc735bd90c1f8d58d24cb1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023302"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647686"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
@@ -41,11 +41,12 @@ Les configurations de référence lighthouse sont conçues pour garantir que tou
 |--|--|
 | Exiger l’authentification multifacteur pour les administrateurs | Stratégie d’accès conditionnel nécessitant une authentification multifacteur pour tous les administrateurs. Elle est requise pour toutes les applications cloud. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger l’authentification multifacteur pour tous les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
 | Exiger l’authentification multifacteur pour les utilisateurs finaux | Stratégie d’accès conditionnel qui nécessite une authentification multifacteur pour tous les utilisateurs.  Elle est requise pour toutes les applications cloud. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
-| Bloquer l’authentification héritée | Stratégie d’accès conditionnel pour bloquer l’authentification du client hérité. Pour plus d’informations sur cette base de référence, consultez [Bloquer l’authentification héritée pour Azure AD avec l’accès conditionnel](/azure/active-directory/conditional-access/block-legacy-authentication).|
+| Bloquer l’authentification héritée | Stratégie d’accès conditionnel pour bloquer l’authentification du client hérité. Pour plus d’informations sur cette base de référence, consultez [Bloquer l’authentification héritée auprès d’Azure AD avec accès conditionnel](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | Configurer l’inscription des appareils | Inscription d’appareils pour permettre à vos appareils locataires de s’inscrire à Microsoft Endpoint Manager. Pour ce faire, configurez l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. Pour plus d’informations sur cette base de référence, consultez [Configurer l’inscription pour Windows appareils](/mem/intune/enrollment/windows-enroll). |
+| Configurer Exchange Online Protection et Microsoft Defender pour Office 365 | Stratégie permettant d’appliquer les stratégies recommandées anti-courrier indésirable, anti-programmes malveillants, anti-hameçonnage, liens sécurisés et stratégies de pièces jointes sécurisées à vos locataires Exchange Online boîtes aux lettres. |
 | Configurer Antivirus Microsoft Defender pour Windows 10 et versions ultérieures | Profil de configuration d’appareil pour les appareils Windows avec des paramètres de Antivirus Microsoft Defender préconfigurés. Pour plus d’informations sur cette base de référence, consultez [Configurer Microsoft Defender pour point de terminaison dans Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| Configurer le Pare-feu Microsoft Defender pour Windows 10 et versions ultérieures | Stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette base de référence, consultez [les meilleures pratiques de configuration de Windows Defender Pare-feu](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
-| Configurer une stratégie de conformité des appareils pour Windows 10 et versions ultérieures | Une Windows stratégie d’appareil avec des paramètres préconfigurés pour répondre aux exigences de conformité de base. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger un appareil compatible ou hybride Azure AD joint](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| Configurer Pare-feu Microsoft Defender pour Windows 10 et versions ultérieures | Stratégie de pare-feu pour sécuriser les appareils en empêchant le trafic réseau indésirable et non autorisé. Pour plus d’informations sur cette base de référence, consultez [les meilleures pratiques de configuration de Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Configurer une stratégie de conformité des appareils pour Windows 10 et versions ultérieures | Une Windows stratégie d’appareil avec des paramètres préconfigurés pour répondre aux exigences de conformité de base. Pour plus d’informations sur cette base de référence, consultez [Accès conditionnel : Exiger un appareil joint à Azure AD conforme ou hybride](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
 ## <a name="deployment-plans"></a>Plans de déploiement
 
@@ -59,7 +60,7 @@ L’onglet Plan de déploiement contient les informations suivantes :
 |Colonne  |Description  |
 |---------|---------|
 |Étape de déploiement     |  Description de l’étape de déploiement.       |
-|État     |État de l’étape de déploiement.         |
+|Statut     |État de l’étape de déploiement.         |
 |Baseline     |Base de référence à partir de laquelle l’étape de déploiement est dérivée.         |
 |Catégorie     | Indique si l’étape de déploiement est associée à la gestion des appareils, de l’identité ou des données.        |
 |Dernière mise à jour    | Date à laquelle l’étape de déploiement a été mise à jour pour la dernière fois.        |

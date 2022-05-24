@@ -18,14 +18,20 @@ ms.custom: ''
 description: Playbook normatif pour le personnel SecOps afin de gérer Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557e1288e4f2b39938b4da381664b58ed4c7e6c7
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217313"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647271"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guide des opérations de sécurité Microsoft Defender pour Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**S’applique à :**
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Cet article fournit une vue d’ensemble des exigences et des tâches pour le fonctionnement réussi des Microsoft Defender pour Office 365 dans votre organisation. Ces tâches permettent de garantir que votre centre des opérations de sécurité (SOC) offre une approche fiable et de haute qualité pour protéger, détecter et répondre aux menaces de sécurité liées à la messagerie et à la collaboration.
 
@@ -181,7 +187,7 @@ Les autorisations de gestion des Defender pour Office 365 dans le portail Micros
 
 Les autorisations suivantes (rôles et groupes de rôles) sont disponibles dans Defender pour Office 365 et peuvent être utilisées pour accorder l’accès aux membres de l’équipe de sécurité :
 
-- **Azure AD rôles** : rôles centralisés qui attribuent des autorisations pour _tous les_ services Microsoft 365, y compris les Defender pour Office 365. Vous pouvez afficher les rôles Azure AD et les utilisateurs affectés dans le portail Microsoft 365 Defender, mais vous ne pouvez pas les gérer directement là-bas. Au lieu de cela, vous gérez Azure AD rôles et membres dans <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Les rôles les plus fréquents utilisés par les équipes de sécurité sont les suivants :
+- **Rôles Azure AD** : rôles centralisés qui attribuent des autorisations pour _tous les_ services Microsoft 365, y compris les Defender pour Office 365. Vous pouvez afficher les rôles Azure AD et les utilisateurs affectés dans le portail Microsoft 365 Defender, mais vous ne pouvez pas les gérer directement là-bas. Au lieu de cela, vous gérez les rôles et les membres Azure AD dans <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Les rôles les plus fréquents utilisés par les équipes de sécurité sont les suivants :
   - **Administrateur de sécurité**
   - **Opérateur de sécurité**
   - **Lecteur de sécurité**
@@ -260,14 +266,14 @@ Pour plus d’informations, consultez [Signaler un e-mail dans Defender pour Off
 
 Les membres de l’équipe de sécurité peuvent effectuer des soumissions à partir de plusieurs emplacements dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com>suivante :
 
-- [Soumission de l’administrateur](admin-submission.md) : utilisez le portail soumissions pour envoyer des courriers indésirables, du hameçonnage, des URL et des fichiers suspects à Microsoft.
+- [Administration soumission](admin-submission.md) : utilisez le portail d’envoi pour envoyer des courriers indésirables, du hameçonnage, des URL et des fichiers suspects à Microsoft.
 - Directement à partir de l’Explorateur de menaces à l’aide de l’une des actions de message suivantes :
   - Nettoyer le rapport
   - Signaler le hameçonnage
   - Signaler un programme malveillant
   - Signaler le courrier indésirable
 
-  Vous pouvez sélectionner jusqu’à 10 messages pour effectuer une soumission en bloc. Les soumissions d’administrateur créées de cette façon sont également visibles dans le portail de soumission.
+  Vous pouvez sélectionner jusqu’à 10 messages pour effectuer une soumission en bloc. Administration les soumissions créées de cette façon sont également visibles dans le portail de soumission.
 
 Pour l’atténuation à court terme des faux négatifs, les équipes de sécurité peuvent gérer directement les [entrées de bloc](manage-tenant-blocks.md) pour les fichiers, LES URL et les expéditeurs dans la [liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md).
 

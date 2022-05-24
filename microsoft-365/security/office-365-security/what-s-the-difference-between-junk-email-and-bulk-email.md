@@ -1,5 +1,5 @@
 ---
-title: Quelle &apos; est la différence entre le courrier indésirable et le courrier en masse ?
+title: Quelle&apos; est la différence entre le courrier indésirable et le courrier électronique en bloc ?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,45 +16,43 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur les différences entre le courrier indésirable (courrier indésirable) et le courrier en masse (courrier gris) dans Exchange Online Protection (EOP).
+description: Les administrateurs peuvent découvrir les différences entre le courrier indésirable (courrier indésirable) et le courrier en bloc (courrier gris) dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8a896ac3360ccf799dbe34c7e298f76140ee6d5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154301"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647840"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier en masse dans EOP ?
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+# <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier électronique en bloc dans EOP ?
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les clients se demandent parfois : « Quelle est la différence entre le courrier indésirable et le courrier en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les clients demandent parfois : « Quelle est la différence entre le courrier indésirable et le courrier en bloc ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
 
-- **Le courrier indésirable** est du courrier indésirable, qui est un message non sollicité et universellement indésirable (s’il est correctement identifié). Par défaut, EOP rejette le courrier indésirable en fonction de la réputation du serveur de messagerie source. Si un message réussit l’inspection de l’adresse IP source, il est envoyé au filtrage du courrier indésirable. Si le message est classé comme courrier indésirable par filtrage du courrier indésirable, le message est remis (par défaut) aux destinataires prévus et déplacé vers son dossier Courrier indésirable.
+- **Le courrier indésirable** est un courrier indésirable, qui sont des messages non sollicités et universellement indésirables (lorsqu’ils sont identifiés correctement). Par défaut, l’EOP rejette le courrier indésirable en fonction de la réputation du serveur de messagerie source. Si un message réussit l’inspection IP source, il est envoyé au filtrage du courrier indésirable. Si le message est classé comme courrier indésirable par filtrage du courrier indésirable, le message est (par défaut) remis aux destinataires prévus et déplacé vers son dossier Courrier indésirable.
 
-  - Vous pouvez configurer les actions à prendre sur les verdicts de filtrage du courrier indésirable. Pour obtenir des instructions, voir [Configurer des stratégies anti-courrier indésirable dans EOP.](configure-your-spam-filter-policies.md)
+  - Vous pouvez configurer les actions à prendre pour les verdicts de filtrage du courrier indésirable. Pour obtenir des instructions, consultez [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-  - Si vous n’êtes pas d’accord avec le verdict de filtrage du courrier indésirable, vous pouvez signaler les messages que vous considérez comme courrier indésirable ou non à Microsoft de plusieurs manières, comme décrit dans Signaler les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
+  - Si vous n’êtes pas d’accord avec le verdict de filtrage du courrier indésirable, vous pouvez signaler des messages que vous considérez comme du courrier indésirable ou non indésirable à Microsoft de plusieurs façons, comme décrit dans les [messages et fichiers du rapport à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- **Les messages électroniques** en nombre (également appelés _messages_ gris) sont plus difficiles à classer. Alors que le courrier indésirable est une menace constante, les courriers électroniques en masse sont souvent des publicités ou des messages marketing. Certains utilisateurs souhaitent des messages électroniques en nombre (et en fait, ils se sont délibérément inscrits pour les recevoir), tandis que d’autres considèrent les messages électroniques en masse comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de Contoso Corporation ou des invitations à une prochaine conférence sur la cybersécurité, tandis que d’autres considèrent ces mêmes messages comme du courrier indésirable.
+- **L’e-mail en bloc** (également appelé _courrier gris_) est plus difficile à classer. Alors que le courrier indésirable est une menace constante, le courrier électronique en bloc est souvent des publicités ponctuelles ou des messages marketing. Certains utilisateurs veulent des messages électroniques en bloc (et en fait, ils se sont volontairement inscrits pour les recevoir), tandis que d’autres utilisateurs considèrent le courrier électronique en bloc comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de Contoso Corporation ou des invitations à une prochaine conférence sur la cybersécurité, tandis que d’autres utilisateurs considèrent ces mêmes messages comme du courrier indésirable.
 
-  Pour plus d’informations sur la façon dont les messages électroniques en nombre sont identifiés, voir Le niveau de réclamation en bloc [(BCL) dans EOP.](bulk-complaint-level-values.md)
+  Pour plus d’informations sur la façon dont le courrier électronique en bloc est identifié, consultez le [niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md).
 
 ## <a name="how-to-manage-bulk-email"></a>Gestion des messages électroniques en masse
 
-En raison de la réaction mixte aux messages électroniques en masse, il n’existe pas d’instructions universelles qui s’appliquent à chaque organisation.
+En raison de la réaction mixte à l’e-mail en bloc, il n’existe pas de conseils universels qui s’appliquent à chaque organisation.
 
-Les polices anti-courrier indésirable ont un seuil BCL par défaut qui est utilisé pour identifier les messages électroniques en masse comme courrier indésirable. Les administrateurs peuvent augmenter ou diminuer le seuil. Pour plus d’informations, voir les rubriques suivantes :
+Les stratégies anti-courrier indésirable ont un seuil BCL par défaut qui est utilisé pour identifier les courriers électroniques en bloc comme courrier indésirable. Les administrateurs peuvent augmenter ou diminuer le seuil. Pour plus d’informations, voir les rubriques suivantes :
 
-- [Configurer des stratégies anti-courrier indésirable dans EOP.](configure-your-spam-filter-policies.md)
+- [Configurez des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 - [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-Une autre option facile à ignorer : si un utilisateur se plaindra de recevoir des messages électroniques en masse, mais que les messages sont des expéditeurs dignes de confiance qui passent le filtrage du courrier indésirable dans EOP, l’utilisateur doit vérifier qu’une option de désabonnement est disponible dans le message électronique en masse.
+Une autre option facile à ignorer : si un utilisateur se plaint de recevoir des e-mails en bloc, mais que les messages proviennent d’expéditeurs réputés qui transmettent le filtrage du courrier indésirable dans EOP, faites vérifier par l’utilisateur une option de désabonnement dans le message électronique en bloc.

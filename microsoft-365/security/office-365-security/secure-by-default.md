@@ -17,17 +17,16 @@ ms.collection:
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09395775cc5ecbd420dc7197664401c01c24d6c3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ab5fa5e9c769d68589b722e8fdc9976fa616e6ac
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664213"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648126"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécuriser par défaut dans Office 365
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -80,4 +79,4 @@ Vous ne devez envisager d’utiliser des remplacements que dans les scénarios s
 - Simulations d’hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’affecte votre organisation. Pour empêcher le filtrage des messages de simulation d’hameçonnage, consultez [Configurer des simulations de hameçonnage tierces dans la stratégie de remise avancée](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 - Boîtes aux lettres Security/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bons et mauvais). Teams pouvez ensuite vérifier s’ils contiennent du contenu malveillant. Pour plus d’informations, consultez [Configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 - Filtres tiers : Secure par défaut s’applique uniquement lorsque l’enregistrement MX de votre domaine est défini sur Exchange Online Protection (contoso.mail.protection.outlook.com). S’il est défini sur un autre service ou appareil, il est possible de remplacer Secure par défaut par une [règle de transport](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) pour contourner tout filtrage du courrier indésirable. Lorsque Microsoft détecte les messages comme étant des phish à haut niveau de confiance avec cette règle en place, ils sont toujours livrés à la boîte de réception. 
-- Faux positifs : vous souhaiterez peut-être autoriser temporairement certains messages qui sont toujours analysés par Microsoft [via des soumissions d’administrateur](admin-submission.md). Comme pour tous les remplacements, il est recommandé qu’ils soient temporaires.
+- Faux positifs : vous souhaiterez peut-être autoriser temporairement certains messages qui sont toujours analysés par Microsoft [via Administration soumissions](admin-submission.md). Comme pour tous les remplacements, il est recommandé qu’ils soient temporaires.

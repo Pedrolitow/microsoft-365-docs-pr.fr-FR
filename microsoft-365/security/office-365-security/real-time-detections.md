@@ -1,5 +1,5 @@
 ---
-title: Informations de base de l’Explorateur de menaces et des détections en temps réel dans Microsoft Defender Office 365
+title: Informations de base sur l’Explorateur de menaces et les détections en temps réel dans Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,19 +12,21 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Utilisez les détections de l’Explorateur ou en temps réel pour examiner les menaces et y répondre efficacement.
+description: Utilisez l’Explorateur ou les détections en temps réel pour examiner et répondre efficacement aux menaces.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b889649de7b56d6a1b5300ff323850a4e555b57
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: e7f3109048f3a4931d25029df3db9a3c217d6354
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775359"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647422"
 ---
-# <a name="explorer-and-real-time-detections"></a>Détections de l’Explorateur et du temps réel
+# <a name="explorer-and-real-time-detections"></a>Détections de l’Explorateur et en temps réel
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -32,132 +34,132 @@ ms.locfileid: "63775359"
 
 Contenu de cet article :
 
-- [Différences entre les détections de l’Explorateur et en temps réel](#differences-between-explorer-and-real-time-detections)
-- [Expérience mise à jour pour les détections en temps réel et dans l’Explorateur](#updated-experience-for-explorer-and-real-time-detections)
+- [Différences entre les détections d’Explorateur et en temps réel](#differences-between-explorer-and-real-time-detections)
+- [Mise à jour de l’expérience pour les détections d’Explorateur et en temps réel](#updated-experience-for-explorer-and-real-time-detections)
 - [Licences et autorisations requises](#required-licenses-and-permissions)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3 articles** sur l’Explorateur (également appelé Explorateur de **menaces****),** la sécurité du courrier **électronique et les** bases de détection en temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont le recherche de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) et la [sécurité du courrier électronique avec l’Explorateur](email-security-in-microsoft-defender.md).
+> Il s’agit d’une série de 3 articles sur **l’Explorateur (également appelé Explorateur de menaces),** la **sécurité des e-mails** et **les notions de base des détections en temps réel et de l’Explorateur** (telles que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont [la chasse aux menaces dans l’Explorateur](threat-hunting-in-threat-explorer.md) et [la sécurité de l’e-mail avec l’Explorateur](email-security-in-microsoft-defender.md).
 
-Cet article explique la différence entre les rapports de détections en temps réel et de l’Explorateur, l’expérience mise à jour avec l’Explorateur et les détections en temps réel où vous pouvez faire bascule entre les anciennes et les nouvelles expériences, ainsi que les licences et autorisations requises.
+Cet article explique la différence entre la création de rapports de détections en temps réel et l’Explorateur, l’expérience mise à jour avec l’Explorateur et les détections en temps réel, où vous pouvez basculer entre les expériences anciennes et nouvelles, ainsi que les licences et autorisations requises.
 
-Si votre organisation dispose de [Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez des [autorisations](#required-licenses-and-permissions), vous pouvez utiliser l’Explorateur **(également** appelé Explorateur de menaces **) ou** les détections en temps réel pour détecter et corriger les **menaces**.
+Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez [des autorisations](#required-licenses-and-permissions), vous pouvez utiliser **l’Explorateur** (également appelé **Explorateur de menaces**) ou **des détections en temps réel** pour détecter et corriger les menaces.
 
-Dans le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse , go to **Email & collaboration**, and then choose **Explorer** _or_ **Real-time detections**. Pour aller directement à la page, utilisez ou <https://security.microsoft.com/threatexplorer> <https://security.microsoft.com/realtimereports>.
+Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Email & Collaboration**, puis choisissez **Explorer** _ou_ **détections en temps réel**. Pour accéder directement à la page, utilisez <https://security.microsoft.com/threatexplorer> ou <https://security.microsoft.com/realtimereports>.
 
 Avec ces outils, vous pouvez :
 
-- Consultez les programmes malveillants détectés Microsoft 365 fonctionnalités de sécurité.
-- Afficher l’URL de hameçonnage et cliquer sur les données de verdict.
-- Démarrez un processus d’examen et de réponse automatisé à partir d’un affichage dans l’Explorateur.
+- Consultez les programmes malveillants détectés par Microsoft 365 fonctionnalités de sécurité.
+- Affichez l’URL d’hameçonnage et cliquez sur les données de verdict.
+- Démarrez un processus d’investigation et de réponse automatisé à partir d’une vue dans l’Explorateur.
 - Examinez les e-mails malveillants, et bien plus encore.
 
-Pour plus d’informations, voir [Sécurité du courrier électronique avec l’Explorateur](email-security-in-microsoft-defender.md).
+Pour plus d’informations, consultez [Sécurité de l’e-mail avec l’Explorateur](email-security-in-microsoft-defender.md).
 
-## <a name="differences-between-explorer-and-real-time-detections"></a>Différences entre les détections de l’Explorateur et en temps réel
+## <a name="differences-between-explorer-and-real-time-detections"></a>Différences entre les détections d’Explorateur et en temps réel
 
-- *Les détections en temps réel* sont un outil de rapports disponible dans Defender pour Office 365 Plan 1. *L’Explorateur de* menaces est un outil de recherche et de correction des menaces disponible dans Defender Office 365 Plan 2.
-- Le rapport de détections en temps réel vous permet d’afficher les détections en temps réel. L’Explorateur de menaces le fait également, mais fournit des détails supplémentaires pour une attaque donnée, comme la mise en surbrillance des campagnes d’attaque, et offre aux équipes des opérations de sécurité la possibilité de corriger les menaces (notamment le déclenchement d’une enquête automatisée sur les enquêtes et les [réponses).](automated-investigation-response-office.md)
-- Un *affichage de courrier tout* est disponible dans l’Explorateur de menaces, mais n’est pas inclus dans le rapport de détections en temps réel.
-- Des fonctionnalités de filtrage enrichies et des actions de correction sont incluses dans l’Explorateur de menaces. Pour plus d’informations, voir [Microsoft Defender pour la description Office 365 service : disponibilité des fonctionnalités dans Defender pour Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- *Les détections en temps réel* sont un outil de création de rapports disponible dans Defender pour Office 365 Plan 1. *L’Explorateur de menaces* est un outil de repérage et de correction des menaces disponible dans Defender pour Office 365 Plan 2.
+- Le rapport de détections en temps réel vous permet d’afficher les détections en temps réel. L’Explorateur de menaces le fait également, mais il fournit des détails supplémentaires pour une attaque donnée, telles que la mise en surbrillance des campagnes d’attaque, et offre aux équipes chargées des opérations de sécurité la possibilité de corriger les menaces (y compris le déclenchement d’une [investigation automatisée et d’une enquête de réponse](automated-investigation-response-office.md).
+- Une vue *Tous les e-mails* est disponible dans l’Explorateur de menaces, mais elle n’est pas incluse dans le rapport de détections en temps réel.
+- Des fonctionnalités de filtrage enrichies et des actions de correction sont incluses dans l’Explorateur de menaces. Pour plus d’informations, consultez [Microsoft Defender pour Office 365 Description du service : Disponibilité des fonctionnalités dans Defender pour Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-## <a name="updated-experience-for-explorer-and-real-time-detections"></a>Expérience mise à jour pour les détections en temps réel et dans l’Explorateur
+## <a name="updated-experience-for-explorer-and-real-time-detections"></a>Mise à jour de l’expérience pour les détections d’Explorateur et en temps réel
 
-L’expérience de l’Explorateur de menaces et des détections en temps réel est mise à jour pour s’aligner sur les normes d’accessibilité modernes et optimiser le flux de travail. Pendant un court moment, vous pourrez faire bascule entre l’ancienne expérience et la nouvelle.  
+L’expérience de l’Explorateur de menaces et des détections en temps réel est mise à jour pour s’aligner sur les normes d’accessibilité modernes et optimiser le flux de travail. Pendant un court moment, vous pourrez basculer entre l’ancienne expérience et la nouvelle.  
 
 > [!NOTE]
-> Le basculement n’a d’impact que sur votre compte et n’a d’impact sur personne d’autre au sein de votre client. 
+> Le basculement a un impact uniquement sur votre compte et n’affecte personne d’autre au sein de votre locataire. 
 
-Les détections en temps réel et de l’Explorateur de menaces sont réparties dans les affichages suivants :
+L’Explorateur de menaces et les détections en temps réel sont divisés en vues suivantes :
 
-- *Tous les e-mails* : affiche tous les e-mails analysés par Defender pour Office 365 et contient des messages électroniques à la fois bons et malveillants. Cette fonctionnalité est uniquement présente dans l’Explorateur de menaces et n’est pas disponible pour les détections en temps réel. Par défaut, elle est définie pour afficher les données de deux jours, qui peuvent être étendues jusqu’à 30 jours. Il s’agit également de l’affichage par défaut de l’Explorateur de menaces.  
+- *Tous les e-mails* : affiche tous les e-mails analysés par Defender pour Office 365 et contient à la fois des e-mails corrects et malveillants. Cette fonctionnalité est uniquement présente dans l’Explorateur de menaces et n’est pas disponible pour les détections en temps réel. Par défaut, il est défini pour afficher les données pendant deux jours, qui peuvent être étendues jusqu’à 30 jours. Il s’agit également de l’affichage par défaut de l’Explorateur de menaces.  
 
-- *Affichage des programmes* malveillants : affiche les e-mails sur lesquels une menace de programme malveillant a été identifiée. Il s’agit de l’affichage par défaut pour les détections en temps réel et affiche les données sur deux jours (peut être étendu à 30 jours).  
+- *Affichage des programmes malveillants* : affiche les e-mails sur lesquels une menace de programme malveillant a été identifiée. Il s’agit de l’affichage par défaut pour les détections en temps réel et affiche les données pendant deux jours (peuvent être étendues à 30 jours).  
 
-- *Affichage hameçonnage* : affiche les e-mails sur lesquels une menace de hameçonnage a été identifiée.
+- *Vue hameçonnage* : affiche les e-mails sur lesquels une menace de hameçonnage a été identifiée.
 
-- *Affichage des programmes malveillants* de contenu : affiche les détections malveillantes identifiées dans les fichiers partagés OneDrive, SharePoint ou Teams. 
+- *Affichage des programmes malveillants de contenu* : affiche les détections malveillantes identifiées dans les fichiers partagés via OneDrive, SharePoint ou Teams. 
 
 Voici les composants courants de ces expériences :
 
 - Filtres
 
-    - Vous pouvez utiliser les différents filtres pour afficher les données en fonction des attributs de courrier électronique ou de fichier.  
+    - Vous pouvez utiliser les différents filtres pour afficher les données en fonction des attributs de messagerie ou de fichier.  
 
-    - Par défaut, le filtre d’heure est appliqué aux enregistrements et est appliqué pendant deux jours.  
+    - Par défaut, le filtre de temps est appliqué aux enregistrements et est appliqué pendant deux jours.  
 
-    - Si vous appliquez plusieurs filtres, ils sont appliqués en mode « AND » et vous pouvez utiliser le filtre avancé pour le modifier en mode « OR ».  
+    - Si vous appliquez plusieurs filtres, ils sont appliqués en mode « AND » et vous pouvez utiliser le filtre avancé pour le remplacer par le mode « OR ».  
 
     - Vous pouvez utiliser des virgules pour ajouter plusieurs valeurs pour le même filtre.  
 
     > [!div class="mx-imgBorder"]
-    > ![Filtres d’explorateur](../../media/explorer-new-experience-filters.png)
+    > ![Filtres de l’Explorateur](../../media/explorer-new-experience-filters.png)
 
 - Graphiques
 
-    - Les graphiques fournissent une vue visuelle agrégée des données basées sur des filtres. Vous pouvez utiliser différents filtres pour afficher les données selon différentes dimensions.  
+    - Les graphiques fournissent une vue d’agrégation visuelle des données basée sur des filtres. Vous pouvez utiliser différents filtres pour afficher les données selon différentes dimensions.  
 
     > [!NOTE]
-    > Il se peut que vous ne visiez aucun résultat en affichage graphique même si vous voyez une entrée dans l’affichage Liste. Cela se produit si le filtre ne produit aucune donnée. Par exemple, si vous avez appliqué la famille de programmes malveillants de filtre, mais que les données sous-jacentes ne disposent pas de courriers électroniques malveillants, il se peut que le message ne dispose d’aucune donnée pour ce scénario.  
+    > Vous ne verrez peut-être aucun résultat en mode graphique, même si vous voyez une entrée dans l’affichage liste. Cela se produit si le filtre ne produit pas de données. Par exemple, si vous avez appliqué la famille de programmes malveillants de filtre, mais que les données sous-jacentes n’ont pas d’e-mails malveillants, vous pouvez voir le message sans données disponibles pour ce scénario.  
 
     > [!div class="mx-imgBorder"]
-    > ![Affichage Graphique de l’Explorateur](../../media/explorer-new-experience-export-chart-data.png)
+    > ![Affichage graphique de l’Explorateur](../../media/explorer-new-experience-export-chart-data.png)
 
-- Grille de résultats  
+- Grille des résultats  
 
-    - La grille de résultats affiche les résultats des e-mails en fonction des filtres que vous avez appliqués.  
+    - La grille des résultats affiche les résultats de l’e-mail en fonction des filtres que vous avez appliqués.  
 
-    - En fonction de la configuration définie dans votre client, les données sont affichées dans le fuseau horaire UTC ou local, avec les informations de fuseau horaire disponibles dans la première colonne.  
+    - En fonction de la configuration définie dans votre locataire, les données sont affichées dans le fuseau horaire UTC ou local, avec les informations de fuseau horaire disponibles dans la première colonne.  
 
-    - Vous pouvez accéder à la page d’entité de messagerie individuelle à partir de l’affichage Liste en cliquant sur **l’icône Ouvrir dans une nouvelle** fenêtre. 
+    - Vous pouvez accéder à la page d’entité de messagerie individuelle à partir de l’affichage liste en cliquant sur l’icône **Ouvrir dans la nouvelle fenêtre** . 
 
     - Vous pouvez également personnaliser vos colonnes pour ajouter ou supprimer des colonnes afin d’optimiser votre affichage.
 
     > [!Note]
-    > Vous pouvez faire bascule entre l’affichage *Graphique* et l’affichage *Liste* pour optimiser votre jeu de résultats.  
+    > Vous pouvez basculer entre *l’affichage graphique* et le *mode Liste* pour optimiser votre jeu de résultats.  
 
     > [!div class="mx-imgBorder"]
-    > ![Affichage Grille de l’Explorateur](../../media/explorer-new-experience-list-chart-view.png)
+    > ![Affichage grille de l’Explorateur](../../media/explorer-new-experience-list-chart-view.png)
 
-- Flyout détaillé  
+- Menu volant détaillé  
 
-    - Vous pouvez cliquer sur les liens hypertexte pour obtenir le panneau de synthèse du courrier électronique (entrées dans la colonne Objet), le destinataire ou le flyout IP.  
+    - Vous pouvez cliquer sur des liens hypertexte pour accéder au panneau de synthèse de l’e-mail (entrées dans la colonne Objet), au destinataire ou au menu volant IP.  
 
-    - Le panneau de synthèse du courrier électronique remplace le volant de courrier électronique hérité et fournit également un chemin d’accès au panneau d’entité de messagerie.  
+    - Le panneau récapitulatif de l’e-mail remplace le menu volant d’e-mail hérité et fournit également un chemin d’accès au panneau d’entité de messagerie.  
 
-    - Les volants d’entité individuels tels que l’ADRESSE IP, le destinataire et l’URL reflètent les mêmes informations, mais présentés dans une vue tabulation unique, avec la possibilité de développer et de réduire les différentes sections en fonction des besoins.  
+    - Les menus volants d’entité individuels tels que l’adresse IP, le destinataire et l’URL reflètent les mêmes informations, mais présentés dans une vue basée sur un onglet unique, avec la possibilité de développer et de réduire les différentes sections en fonction des besoins.  
 
-    - Pour les volants tels que les URL, vous pouvez cliquer  sur Afficher tous les messages électroniques ou Afficher tous les **clics** pour afficher l’ensemble complet des e-mails/clics contenant cette URL, et exporter le jeu de résultats.  
+    - Pour les menus volants tels que les URL, vous pouvez cliquer sur **Afficher tous les e-mails** ou **afficher tous les clics** pour afficher l’ensemble complet d’e-mails/clics contenant cette URL, ainsi que pour exporter le jeu de résultats.  
 
 - Actions
 
-    - À partir de l’Explorateur de menaces, vous pouvez déclencher des actions de correction telles *que la suppression d’un e-mail*. Pour plus d’informations sur la correction, les limites de correction et la correction du suivi, voir [Corriger les messages malveillants](remediate-malicious-email-delivered-office-365.md).  
+    - À partir de l’Explorateur de menaces, vous pouvez déclencher des actions de correction telles *que Supprimer un e-mail*. Pour plus d’informations sur la correction, les limites de correction et le suivi de la correction, consultez [Corriger les e-mails malveillants](remediate-malicious-email-delivered-office-365.md).  
 
 - Exporter
 
-    - Vous pouvez cliquer sur **Exporter les données du graphique** pour exporter les détails du graphique. De même, cliquez sur **Exporter la liste de courriers** électroniques pour exporter les détails des e-mails.
+    - Vous pouvez cliquer sur **Exporter les données du graphique** pour exporter les détails du graphique. De même, cliquez sur **Exporter la liste de courriers** électroniques pour exporter les détails de l’e-mail.
 
-    - Vous pouvez exporter jusqu’à 200 000 enregistrements pour la liste de courriers électroniques. Toutefois, pour améliorer les performances du système et réduire le temps de téléchargement, vous devez utiliser différents filtres de courrier électronique.
+    - Vous pouvez exporter jusqu’à 200 000 enregistrements pour la liste de courriers électroniques. Toutefois, pour améliorer les performances système et réduire le temps de téléchargement, vous devez utiliser différents filtres de courrier électronique.
 
     > [!div class="mx-imgBorder"]
     > ![Exporter des données de graphique](../../media/explorer-new-experience-export-chart-data.png)
 
-En plus de ces fonctionnalités, vous obtenez également des expériences mises à jour, telles que les URL principales, les *clics les plus fréquents**, les* *utilisateurs* les plus ciblés et l’origine *de la messagerie*. *Les URL principales*, *les clics les plus fréquents et les utilisateurs* les plus ciblés peuvent être filtrés en fonction du filtre que vous appliquez dans l’Explorateur. 
+En plus de ces fonctionnalités, vous obtiendrez également des expériences mises à jour telles que *les URL principales*, *les clics principaux, les utilisateurs* *les plus ciblés* et l’origine *de l’e-mail*. *Les URL principales*, *les clics principaux et les utilisateurs* *ciblés* principaux peuvent être filtrés en fonction du filtre que vous appliquez dans l’Explorateur. 
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
 Vous devez avoir [Microsoft Defender pour Office 365](defender-for-office-365.md) utiliser l’explorateur ou les détections en temps réel :
 
-- Explorer est inclus uniquement dans Defender pour Office 365 Plan 2.
-- Le rapport détections en temps réel est inclus dans Defender pour Office 365 Plan 1.
+- L’Explorateur est inclus uniquement dans Defender pour Office 365 Plan 2.
+- Le rapport de détections en temps réel est inclus dans Defender pour Office 365 Plan 1.
 
-Les équipes des opérations de sécurité doivent attribuer des licences à tous les utilisateurs qui doivent être protégés par Defender pour Office 365 et sachent que les détections d’Explorateur et en temps réel montrent les données de détection pour les utilisateurs sous licence.
+Les équipes des opérations de sécurité doivent attribuer des licences à tous les utilisateurs qui doivent être protégés par Defender pour Office 365 et être conscients que les détections d’Explorateur et en temps réel affichent les données de détection pour les utilisateurs sous licence.
 
-Pour afficher et utiliser les *détections de* l’Explorateur ou en temps réel, vous avez besoin des autorisations suivantes :
+Pour afficher et utiliser des détections d’Explorateur *ou* en temps réel, vous avez besoin des autorisations suivantes :
 
 - Dans Defender pour Office 365 :
   - Gestion de l’organisation
-  - Administrateur de sécurité (peut être affecté dans le Centre d’administration Azure Active Directory de sécurité (<https://aad.portal.azure.com>)
+  - Administrateur de sécurité (cela peut être attribué dans le centre d’administration Azure Active Directory (<https://aad.portal.azure.com>)
   - Lecteur de sécurité
 - Dans Exchange Online :
   - Gestion de l’organisation
@@ -170,9 +172,9 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les articles 
 - [Autorisations dans le Portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 - [Autorisations dans Exchange Online](/e/exchange/permissions-exo/permissions-exo)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
-- [L’Explorateur de menaces collecte les détails des e-mails sur la page d’entité de messagerie](mdo-email-entity-page.md)
+- [L’Explorateur de menaces collecte les détails de l’e-mail sur la page d’entité de messagerie](mdo-email-entity-page.md)
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)

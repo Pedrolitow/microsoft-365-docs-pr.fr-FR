@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535445"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648566"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -50,13 +48,13 @@ Le filtrage de contenu web est disponible sur les principaux navigateurs web, av
 - Si vous utilisez Defender pour point de terminaison, votre équipe de sécurité peut facilement déployer des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans [Microsoft Defender pour point de terminaison paramètres de contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
 - Si vous utilisez Defender entreprise, vous pouvez définir une stratégie de filtrage de contenu web qui sera appliquée à tous les utilisateurs. 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables
 
 Avant d’essayer cette fonctionnalité, veillez à respecter les exigences décrites dans le tableau suivant :
 
 | Conditions requises | Description |
 |:---|:---|
-| Abonnement | Votre abonnement doit inclure l’un des éléments suivants :<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Sécurité<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender pour point de terminaison plan 1 ou plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md) |
+| Abonnement | Votre abonnement doit inclure l’un des éléments suivants :<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Sécurité<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender pour point de terminaison plan 1 ou plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Accès au portail | Vous devez avoir accès au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>. |
 | Système d’exploitation | Les appareils de votre organisation doivent exécuter l’un des systèmes d’exploitation suivants avec les [dernières mises à jour antivirus/anti-programme malveillant](manage-updates-baselines-microsoft-defender-antivirus.md) : <br/>- Windows 11<br/>- mise à jour anniversaire Windows 10 (version 1607) ou ultérieure |
 | Protection associée | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) et [la protection réseau](network-protection.md) doivent être activées sur les appareils de votre organisation. |
@@ -177,7 +175,7 @@ Pour ajouter une nouvelle stratégie, procédez comme suit :
 4. Spécifiez l’étendue de la stratégie. Sélectionnez les groupes d’appareils pour spécifier où appliquer la stratégie. Seuls les appareils des groupes d’appareils sélectionnés ne peuvent pas accéder aux sites web dans les catégories sélectionnées.
 
    > [!IMPORTANT]
-   > Si vous utilisez Defender entreprise, votre stratégie de filtrage de contenu web est appliquée par défaut à tous les utilisateurs. L’étendue ne s’applique pas.
+   > Si vous utilisez Microsoft 365 Business Premium ou Defender entreprise, votre stratégie de filtrage de contenu web est appliquée par défaut à tous les utilisateurs. L’étendue ne s’applique pas.
 
 5. Passez en revue le résumé et enregistrez la stratégie. L’actualisation de la stratégie peut prendre jusqu’à 2 heures pour s’appliquer à vos appareils sélectionnés.
 
@@ -204,7 +202,7 @@ Pour définir un indicateur personnalisé, procédez comme suit :
 
 ### <a name="dispute-categories"></a>Catégories de litiges
 
-Si vous rencontrez un domaine qui n’a pas été correctement classé, vous pouvez contester la catégorie directement à partir du portail.
+Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez contester la catégorie directement à partir du portail Microsoft 365 Defender.
 
 Pour contester la catégorie d’un domaine, accédez à **Reports** \> **Web Protection** \> **Web Content Filtering Details** \> **Domains**. Sous l’onglet Domaines des rapports de filtrage de contenu web, vous verrez des points de suspension à côté de chacun des domaines. Pointez sur ces points de suspension et sélectionnez **Catégorie de litige**.
 
@@ -254,7 +252,9 @@ Seul Microsoft Edge est pris en charge si la configuration du système d’explo
 
 Seule Microsoft Edge est prise en charge et la protection réseau n’est pas prise en charge sur Windows 10 hôtes multisession Azure Virtual Desktop.
 
-La protection réseau ne prend actuellement pas en charge l’inspection SSL, ce qui peut entraîner l’autorisation de certains sites par le filtrage de contenu web qui seraient normalement bloqués. Les sites seraient autorisés en raison d’un manque de visibilité du trafic chiffré après l’établissement de l’établissement d’une liaison TLS et d’une incapacité à analyser certaines redirections.  Cela inclut les redirections de certaines pages de connexion de messagerie web vers la page de boîte aux lettres. Comme solution de contournement acceptée, vous pouvez créer un indicateur de bloc personnalisé pour la page de connexion afin de vous assurer qu’aucun utilisateur n’est en mesure d’accéder au site. Gardez à l’esprit que cela peut bloquer leur accès à d’autres services associés au même site web. 
+La protection réseau ne prend actuellement pas en charge l’inspection SSL, ce qui peut entraîner l’autorisation de certains sites par le filtrage de contenu web qui serait normalement bloqué. Les sites seraient autorisés en raison d’un manque de visibilité du trafic chiffré après l’établissement de l’établissement d’une liaison TLS et d’une incapacité à analyser certaines redirections.  Cela inclut les redirections de certaines pages de connexion de messagerie web vers la page de boîte aux lettres. Comme solution de contournement acceptée, vous pouvez créer un indicateur de bloc personnalisé pour la page de connexion afin de vous assurer qu’aucun utilisateur n’est en mesure d’accéder au site. Gardez à l’esprit que cela peut bloquer leur accès à d’autres services associés au même site web. 
+
+Si vous utilisez Microsoft 365 Business Premium ou Microsoft Defender pour les PME, vous pouvez définir une stratégie de filtrage de contenu web pour votre environnement. Cette stratégie s’applique par défaut à tous les utilisateurs.
 
 ## <a name="see-also"></a>Voir aussi
 

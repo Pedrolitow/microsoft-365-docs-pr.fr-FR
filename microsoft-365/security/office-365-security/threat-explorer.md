@@ -20,18 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974320"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649436"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de **détections** **d’Explorateur** ou en temps réel (anciennement *rapports en temps réel* , [découvrez les nouveautés](#new-features-in-threat-explorer-and-real-time-detections)!). Dans le Centre de sécurité & conformité, accédez à **Gestion des menaces**, puis choisissez **l’Explorateur** _ou_ **les détections en temps réel**.
 
@@ -172,7 +174,7 @@ Actuellement, nous faisons apparaître l’emplacement de livraison dans la gril
 
 ### <a name="additional-actions"></a>Actions supplémentaires
 
-*Des actions supplémentaires* ont été appliquées après la remise de l’e-mail. Ils peuvent inclure *ZAP*, *la correction manuelle* (action effectuée par un administrateur comme la suppression réversible), *la remise dynamique* et *le retraitement* (pour un e-mail qui a été détecté rétroactivement comme bon).
+*Des actions supplémentaires* ont été appliquées après la remise de l’e-mail. Ils peuvent inclure *ZAP*, *correction manuelle* (action effectuée par un Administration comme la suppression réversible), *livraison dynamique* et *retraitement* (pour un e-mail qui a été rétroactivement détecté comme bon).
 
 > [!NOTE]
 > Dans le cadre des modifications en attente, la valeur « Supprimé par ZAP » actuellement exposée dans le filtre Action de remise disparaît. Vous aurez un moyen de rechercher tous les e-mails avec la tentative ZAP par le biais **d’actions supplémentaires**.
@@ -289,7 +291,7 @@ Vous pourrez voir à la fois le GUID et le nom des règles de transport qui ont 
 >
 > - EXO uniquement - Protection contre la perte de données : Tout
 > - EXO Uniquement - O365SupportViewConfig: All
-> - Microsoft Azure Active Directory ou EXO - Administrateur de sécurité : tout
+> - Microsoft Azure Active Directory ou EXO - Administration de sécurité : tout
 > - AAD ou EXO - Lecteur sécurité : tout
 > - EXO uniquement - Règles de transport : tous
 > - EXO uniquement - configuration View-Only : tout

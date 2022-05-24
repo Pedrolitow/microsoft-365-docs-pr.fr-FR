@@ -14,30 +14,28 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent en savoir plus sur les valeurs BCL (bulk complaint level) utilisées dans Exchange Online Protection (EOP).
+description: Les administrateurs peuvent en savoir plus sur les valeurs de niveau de réclamation en bloc (BCL) utilisées dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c50ca25a355ca142e36c67d03fad42c3aa461a2
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 08e747b704faa18aa73110256624d70c79d0307b
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679871"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647378"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Niveau de réclamation en bloc (BCL) dans EOP
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP affecte un niveau de réclamation en bloc (BCL) aux messages entrants provenant de publipostages en masse. Le bcl est ajouté au message dans un en-tête X et est similaire au niveau de confiance du courrier indésirable [(SCL)](spam-confidence-levels.md) utilisé pour identifier les messages comme courrier indésirable. Une valeur BCL supérieure indique qu’un message en nombre est plus susceptible de générer des réclamations (et est donc plus susceptible d’être du courrier indésirable). Microsoft utilise des sources internes et tierces pour identifier le courrier en nombre et déterminer le bcl approprié.
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, EOP affecte un niveau de réclamation en bloc (BCL) aux messages entrants provenant de expéditeurs en bloc. Le fichier BCL est ajouté au message dans un en-tête X et est similaire au [niveau de confiance du courrier indésirable (SCL)](spam-confidence-levels.md) utilisé pour identifier les messages comme courrier indésirable. Une bcl plus élevée indique qu’un message en bloc est plus susceptible de générer des plaintes (et est donc plus susceptible d’être du courrier indésirable). Microsoft utilise des sources internes et tierces pour identifier le courrier en bloc et déterminer le bcl approprié.
 
-Les publipostages en nombre varient selon les modèles d’envoi, la création de contenu et les pratiques d’acquisition des destinataires. Les expéditeurs de courrier en nombre de bonne qualité envoient les messages souhaités avec du contenu pertinent à leurs abonnés. Ces messages entraînent peu de réclamations de la part des destinataires. D'autres vers de publipostage en bloc envoient des messages non sollicités qui s'apparentent fortement à du courrier indésirable et entraînent de nombreuses réclamations de la part des destinataires. Les messages provenant d’un publipostage en masse sont appelés courriers en masse ou gris.
+Les expéditeurs en bloc varient selon leurs modèles d’envoi, leur création de contenu et leurs pratiques d’acquisition de destinataires. Les bons expéditeurs de courrier en bloc envoient les messages souhaités avec le contenu approprié à leurs abonnés. Ces messages entraînent peu de réclamations de la part des destinataires. D'autres vers de publipostage en bloc envoient des messages non sollicités qui s'apparentent fortement à du courrier indésirable et entraînent de nombreuses réclamations de la part des destinataires. Les messages d’un expéditeur en bloc sont appelés courrier en bloc ou courrier gris.
 
- Le filtrage du courrier indésirable marque  les messages en tant que messages électroniques en nombre en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et prend l’action spécifiée sur le message (l’action par défaut consiste à remettre le message dans le dossier Courrier indésirable du destinataire). Pour plus d’informations, voir [Configurer des stratégies anti-courrier](configure-your-spam-filter-policies.md) indésirable et quelle est la différence entre le courrier indésirable [et le courrier en nombre ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+ Le filtrage du courrier indésirable marque les messages en tant que **courrier électronique en bloc** en fonction du seuil BCL (valeur par défaut ou valeur que vous spécifiez) et effectue l’action spécifiée sur le message (l’action par défaut consiste à remettre le message au dossier Courrier indésirable du destinataire). Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) et [quelle est la différence entre le courrier indésirable et le courrier en bloc ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 Les seuils BCL sont décrits dans le tableau suivant.
 
@@ -46,6 +44,6 @@ Les seuils BCL sont décrits dans le tableau suivant.
 |0|Le message ne provient pas d'un expéditeur en bloc.|
 |1, 2, 3|Le message provient d'un expéditeur en bloc qui génère peu de réclamations.|
 |4, 5, 6, 7<sup>\*</sup>|Le message provient d'un expéditeur en bloc qui génère un nombre moyen de réclamations.|
-|8, 9|Le message est provenant d’un expéditeur en bloc qui génère un nombre élevé de réclamations.|
+|8, 9|Le message vient d’un expéditeur en bloc qui génère un grand nombre de plaintes.|
 
 <sup>\*</sup> Il s’agit de la valeur de seuil par défaut utilisée dans les stratégies anti-courrier indésirable.

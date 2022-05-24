@@ -17,14 +17,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 2c99bc2ce004156320ec8f53f6b956f7989ee056
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418015"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648820"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Repérage des menaces dans l’Explorateur de menaces pour Microsoft Defender pour Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**S’applique à :**
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Contenu de cet article :
 
@@ -38,7 +44,7 @@ Contenu de cet article :
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Si votre organisation dispose [d’Microsoft Defender pour Office 365](defender-for-office-365.md) et que vous disposez [des autorisations](#required-licenses-and-permissions), vous pouvez utiliser des détections **Explorer** ou **en temps réel** pour détecter et corriger les menaces.
 
@@ -217,7 +223,7 @@ Les noms et guidons des règles de transport appliquées au message s’affichen
 >
 > - Exchange Online uniquement - Protection contre la perte de données : Tout
 > - Exchange Online uniquement - O365SupportViewConfig: All
-> - Microsoft Azure Active Directory ou Exchange Online - Administrateur de sécurité : tout
+> - Microsoft Azure Active Directory ou Exchange Online - Administration de sécurité : tous
 > - Azure Active Directory ou Exchange Online - Lecteur sécurité : tout
 > - Exchange Online uniquement - Règles de transport : tous
 > - Exchange Online uniquement - Configuration View-Only : tout

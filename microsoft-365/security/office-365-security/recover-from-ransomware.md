@@ -16,16 +16,14 @@ ms.collection:
 description: Microsoft 365 administrateurs peuvent apprendre à récupérer après une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e5e942bb39097fffa955d5bb9c3b8a72212d0cc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64730841"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648654"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer à la suite d’une attaque par ransomware dans Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -80,13 +78,13 @@ Si ces options ne fonctionnent pas, vous pouvez essayer [Windows Defender hors c
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Étape 4 : Récupérer des fichiers sur un ordinateur ou un appareil nettoyé
 
-Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile de ransomware de votre environnement (ce qui empêchera le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser [l’historique](https://support.microsoft.com/help/17128) des fichiers dans Windows 11, Windows 10, Windows 8.1 et en utilisant la protection système dans Windows 7 pour tenter de récupérer vos fichiers et dossiers locaux.
+Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile de ransomware de votre environnement (ce qui empêchera le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser [Historique des fichiers](https://support.microsoft.com/help/17128) dans Windows 11, Windows 10, Windows 8.1 et en utilisant la protection système dans Windows  7 pour tenter de récupérer vos fichiers et dossiers locaux.
 
 **Remarques** :
 
-- Certains ransomware chiffrent ou suppriment également les versions de sauvegarde. Vous ne pouvez donc pas utiliser l’historique des fichiers ou la protection système pour restaurer les fichiers. Si cela se produit, vous devez utiliser des sauvegardes sur des lecteurs externes ou des appareils qui n’ont pas été affectés par le ransomware ou OneDrive comme décrit dans la section suivante.
+- Certains ransomware chiffrent ou suppriment également les versions de sauvegarde. Vous ne pouvez donc pas utiliser Historique des fichiers ou System Protection pour restaurer des fichiers. Si cela se produit, vous devez utiliser des sauvegardes sur des lecteurs externes ou des appareils qui n’ont pas été affectés par le ransomware ou OneDrive comme décrit dans la section suivante.
 
-- Si un dossier est synchronisé avec OneDrive et que vous n’utilisez pas la dernière version de Windows, l’historique des fichiers peut être limité.
+- Si un dossier est synchronisé avec OneDrive et que vous n’utilisez pas la dernière version de Windows, il peut y avoir certaines limitations à l’aide de Historique des fichiers.
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Étape 5 : Récupérer vos fichiers dans votre OneDrive Entreprise
 
@@ -170,7 +168,7 @@ Microsoft Azure :
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Optimisez la résilience aux ransomwares avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Protéger contre les ransomwares avec Microsoft Azure Sauvegarde](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
+- [Protéger contre les ransomwares avec Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Détection de fusion pour les ransomware dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
