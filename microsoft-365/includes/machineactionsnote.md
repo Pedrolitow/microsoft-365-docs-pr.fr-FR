@@ -1,18 +1,18 @@
 ---
-title: Effectuer une action de l’ordinateur via l’API Microsoft Defender for Endpoint
-description: Cette page se concentre sur l’action d’un ordinateur via l’API Microsoft Defender pour endpoint.
+title: Effectuer une action de machine via l’API Microsoft Defender pour point de terminaison
+description: Cette page se concentre sur l’exécution d’une action de machine via l’API Microsoft Defender pour point de terminaison.
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-ms.openlocfilehash: 13d9d849ec6b6819e6824ba7b2b5d7a139bc81ad
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 6a280e10b89fa8934186aab2a62e30b4ac3b6114
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357384"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65650392"
 ---
->[!Note]
-> Cette page se concentre sur l’action d’un ordinateur via l’API. Voir [prendre des actions de réponse sur un ordinateur pour](/microsoft-365/security/defender-endpoint/respond-machine-alerts) plus d’informations sur la fonctionnalité des actions de réponse via Microsoft Defender for Endpoint.
+> [!NOTE]
+> Cette page se concentre sur l’exécution d’une action de machine via l’API. Pour plus d’informations sur la fonctionnalité des actions de réponse via Microsoft Defender pour point de terminaison, consultez [prendre des mesures de réponse sur un ordinateur](/microsoft-365/security/defender-endpoint/respond-machine-alerts).
