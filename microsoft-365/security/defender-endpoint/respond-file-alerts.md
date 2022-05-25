@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bfa08a92a011d32cdc30e2f68052715b4075fdf
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665511"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669295"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -151,11 +151,11 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 ### <a name="download-quarantined-files"></a>Télécharger des fichiers mis en quarantaine
 
-Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés de manière conforme en fonction de vos [exemples de configurations de soumission](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est activée par défaut**.
+Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés de manière conforme en fonction de vos [exemples de configurations de soumission](enable-cloud-protection-microsoft-defender-antivirus.md). Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité est activée par défaut**.
 
 L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. Pour en savoir plus sur la protection des données de Microsoft à partir du portail d’approbation de services, consultez https://aka.ms/STP.
 
-Le fait d’activer ce paramètre peut aider les équipes de sécurité à examiner les fichiers potentiellement incorrects et à examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce paramètre, accédez à **Paramètres** \> Points de terminaison **Fonctionnalités** \> **avancées** Téléchargez les \> **fichiers mis en quarantaine** pour ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
+Le fait d’activer ce paramètre peut aider les équipes de sécurité à examiner les fichiers potentiellement incorrects et à examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce paramètre, accédez à **Paramètres Points** \> de terminaison **Fonctionnalités** \> **avancées** \> **Télécharger les fichiers mis en quarantaine** pour ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Sauvegarde de fichiers mis en quarantaine
 
@@ -166,11 +166,11 @@ Cette fonctionnalité ne fonctionnera pas si l’exemple de soumission est désa
 > [!IMPORTANT]
 > Télécharger les exigences relatives aux fichiers mis en quarantaine :
 >
-> - Votre organisation utilise Antivirus Microsoft Defender en mode actif
+> - Votre organisation utilise l’antivirus Microsoft Defender en mode actif
 > - La version du moteur antivirus est 1.1.17300.4 ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - La protection basée sur le cloud est activée. Voir [Activer la protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - L’exemple de soumission est activé
-> - Les appareils ont Windows 10 version 1703 ou ultérieure, ou Windows serveur 2016 ou 2019, ou Windows Server 2022 ou Windows 11
+> - Les appareils ont Windows 10 version 1703 ou ultérieure, ou Windows Server 2016 ou 2019, ou Windows Server 2022 ou Windows 11
 
 ### <a name="collect-files"></a>Collecter des fichiers
 
@@ -184,7 +184,7 @@ Empêchez la propagation d’une attaque dans votre organisation en interdisant 
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender et que la protection fournie par le cloud est activée. Pour plus d’informations, consultez [Gérer la protection fournie par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender et que la protection fournie par le cloud est activée. Pour plus d’informations, consultez [Gérer la protection fournie par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La version du client Antimalware doit être 4.18.1901.x ou ultérieure.
 > - Cette fonctionnalité est conçue pour empêcher le téléchargement de logiciels malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables (PE), y compris _les fichiers.exe_ et _.dll_ . La couverture sera prolongée au fil du temps.
@@ -214,7 +214,7 @@ Vous pouvez également modifier les indicateurs à partir de la page **Paramètr
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
-Consultez un expert en menaces Microsoft pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont engagés directement à partir du portail Microsoft 365 Defender pour obtenir une réponse rapide et précise. Les experts fournissent des insights sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblées. Ils peuvent également fournir des informations sur les alertes ou un contexte de renseignement sur les menaces que vous voyez dans le tableau de bord de votre portail.
+Consultez un expert en menaces Microsoft pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Les experts microsoft contre les menaces sont engagés directement à partir du portail Microsoft 365 Defender pour obtenir une réponse précise et en temps opportun. Les experts fournissent des insights sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblées. Ils peuvent également fournir des informations sur les alertes ou un contexte de renseignement sur les menaces que vous voyez dans le tableau de bord de votre portail.
 
 Pour plus [d’informations, consultez un expert Microsoft sur les menaces](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) .
 
@@ -251,7 +251,7 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 **L’envoi pour analyse approfondie** est activé lorsque le fichier est disponible dans la collection d’exemples de back-end Defender pour point de terminaison, ou s’il a été observé sur un appareil Windows 10 qui prend en charge l’envoi à une analyse approfondie.
 
 > [!NOTE]
-> Seuls les fichiers de Windows 10 et de Windows 11 peuvent être collectés automatiquement.
+> Seuls les fichiers de Windows 10 et Windows 11 peuvent être collectés automatiquement.
 
 Vous pouvez également envoyer un exemple via le [portail Microsoft 365 Defender](https://www.microsoft.com/security/portal/submission/submit.aspx) si le fichier n’a pas été observé sur un appareil Windows 10 (ou Windows 11), et attendre que le bouton **Envoyer pour une analyse approfondie** soit disponible.
 

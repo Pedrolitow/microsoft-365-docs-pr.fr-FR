@@ -1,7 +1,7 @@
 ---
-title: Fournir un accès au fournisseur de services de sécurité gérés (MSSP)
-description: En savoir plus sur les modifications apportées Centre de sécurité Microsoft Defender au portail Microsoft 365 Defender web
-keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
+title: Fournir un accès au fournisseur de services de sécurité managé (MSSP)
+description: En savoir plus sur les modifications apportées par le Centre de sécurité Microsoft Defender au portail Microsoft 365 Defender
+keywords: Prise en main du portail Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, MDO, MDE, volet unique de verre, portail convergé, portail de sécurité, portail de sécurité Defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 3b3f438555be507d046f99838596a6672714e0ad
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500413"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670221"
 ---
-# <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité gérés (MSSP) 
+# <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité managé (MSSP) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,31 +35,31 @@ ms.locfileid: "64500413"
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Pour implémenter une solution d’accès délégué multi-locataire, prenez les mesures suivantes :
+Pour implémenter une solution d’accès délégué multilocataire, procédez comme suit :
 
-1. [Activez le contrôle d’accès](/windows/security/threat-protection/microsoft-defender-atp/rbac) basé sur les rôles pour Defender pour le point de terminaison via le portail Microsoft 365 Defender et connectez-vous à des groupes Azure Active Directory (Azure AD).
+1. Activez le [contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac) pour Defender pour point de terminaison via le portail Microsoft 365 Defender et connectez-vous à des groupes Azure Active Directory (Azure AD).
 
-2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et l’approvisionnement.
+2. Configurez [la gestion des droits d’utilisation pour les utilisateurs externes](/azure/active-directory/governance/entitlement-management-external-users) dans Azure AD Identity Governance pour activer les demandes d’accès et l’approvisionnement.
 
-3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
+3. Gérer les demandes d’accès et les audits dans [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Activer les contrôles d’accès basés sur les rôles dans Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender portail
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Activer les contrôles d’accès en fonction du rôle dans Microsoft Defender pour point de terminaison dans Microsoft 365 Defender portail
 
 1. **Créer des groupes d’accès pour les ressources MSSP dans Customer AAD: Groups**
 
-    Ces groupes seront liés aux rôles que vous créez dans Defender for Endpoint dans Microsoft 365 Defender portail. Pour ce faire, dans le client AD client, créez trois groupes. Dans notre exemple d’approche, nous créons les groupes suivants :
+    Ces groupes sont liés aux rôles que vous créez dans Defender pour point de terminaison dans Microsoft 365 Defender portail. Pour ce faire, dans le locataire AD client, créez trois groupes. Dans notre exemple d’approche, nous créons les groupes suivants :
 
     - Analyste de niveau 1
     - Analyste de niveau 2
-    - Approuveurs d’analyste MSSP  
+    - Approbateurs d’analystes MSSP  
 
-2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint Microsoft 365 Defender rôles et groupes portail.
+2. Créez des rôles Defender pour point de terminaison pour les niveaux d’accès appropriés dans Customer Defender pour point de terminaison dans Microsoft 365 Defender rôles et groupes du portail.
 
-    Pour activer RBAC dans le portail d’Microsoft 365 Defender du client, accédez aux **autorisations > Rôles points de terminaison & groupes > Rôles** avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans le portail Microsoft 365 Defender client, accédez aux **rôles Autorisations > Points de terminaison & groupes > rôles** avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
 
     :::image type="content" source="../../media/mssp-access.png" alt-text="Détails de l’accès MSSP dans le portail Microsoft 365 Defender" lightbox="../../media/mssp-access.png":::
 
-    Ensuite, créez des rôles RBAC pour répondre aux besoins du niveau SOC MSSP. Lier ces rôles aux groupes d’utilisateurs créés via « Groupes d’utilisateurs affectés ».
+    Ensuite, créez des rôles RBAC pour répondre aux besoins du niveau SOC MSSP. Liez ces rôles aux groupes d’utilisateurs créés via « Groupes d’utilisateurs affectés ».
 
     Deux rôles possibles :
 
@@ -67,67 +67,67 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
       Effectuez toutes les actions à l’exception de la réponse en direct et gérez les paramètres de sécurité.
 
     - **Analystes de niveau 2** <br>
-      Fonctionnalités de niveau 1 avec ajout à la [réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response)
+      Fonctionnalités de niveau 1 avec ajout à la [réponse dynamique](/microsoft-365/security/defender-endpoint/live-response).
 
-    Pour plus d’informations, voir [Utiliser le contrôle d’accès basé sur un rôle](/windows/security/threat-protection/microsoft-defender-atp/rbac).
+    Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](/microsoft-365/security/defender-endpoint/rbac).
 
-## <a name="configure-governance-access-packages"></a>Configurer les packages d’accès de gouvernance
+## <a name="configure-governance-access-packages"></a>Configurer des packages d’accès à la gouvernance
 
-1. **Ajouter MSSP en tant qu’organisation connectée dans customer AAD : Identity Governance**
+1. **Ajouter MSSP en tant qu’organisation connectée dans AAD client : Gouvernance des identités**
 
-    L’ajout du MSSP en tant qu’organisation connectée permettra au MSSP de demander et de mettre en service des accès. 
+    L’ajout de MSSP en tant qu’organisation connectée permet au MSSP de demander et d’avoir des accès approvisionnés. 
 
-    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : Organisation connectée. Ajoutez une nouvelle organisation et recherchez votre client d’analyste MSSP via un ID de client ou un domaine. Nous vous suggérons de créer un client AD distinct pour vos analystes MSSP.
+    Pour ce faire, dans le locataire AD du client, accédez à Identity Governance : Organisation connectée. Ajoutez une nouvelle organisation et recherchez votre locataire d’analyste MSSP via l’ID de locataire ou le domaine. Nous vous suggérons de créer un locataire AD distinct pour vos analystes MSSP.
 
 2. **Créer un catalogue de ressources dans Customer AAD: Identity Governance**
 
-    Les catalogues de ressources sont une collection logique de packages d’accès, créés dans le client Client AD.
+    Les catalogues de ressources sont une collection logique de packages d’accès, créés dans le locataire AD client.
 
-    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous allons l’appeler **Accès MSSP**.
+    Pour ce faire, dans le locataire AD client, accédez à Identity Governance: Catalogs et ajoutez **New Catalog**. Dans notre exemple, nous l’appellerons **Accès MSSP**.
 
-    :::image type="content" source="../../media/goverance-catalog.png" alt-text="Un nouveau catalogue dans le portail Microsoft 365 Defender web" lightbox="../../media/goverance-catalog.png":::
+    :::image type="content" source="../../media/goverance-catalog.png" alt-text="Un nouveau catalogue dans le portail Microsoft 365 Defender" lightbox="../../media/goverance-catalog.png":::
 
 
-    Pour plus d’informations, voir [Créer un catalogue de ressources](/azure/active-directory/governance/entitlement-management-catalog-create).
+    Pour plus d’informations, consultez [Créer un catalogue de ressources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
-3. **Créer des packages d’accès pour les ressources MSSP AAD : Gouvernance des identités**
+3. **Créer des packages d’accès pour les ressources MSSP Client AAD : Gouvernance des identités**
 
-    Les packages d’accès sont la collection de droits et d’accès accordés à un demandeur lors de l’approbation. 
+    Les packages d’accès sont la collection de droits et d’accès qu’un demandeur accordera lors de l’approbation. 
 
-    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : packages d’accès et ajoutez **un nouveau package d’accès**. Créez un package d’accès pour les approuveurs MSSP et chaque niveau d’analyste. Par exemple, la configuration suivante de l’analyste de niveau 1 crée un package d’accès qui :
+    Pour ce faire, dans le locataire AD client, accédez à Identity Governance: Access Packages et ajoutez **New Access Package**. Créez un package d’accès pour les approbateurs MSSP et chaque niveau d’analyste. Par exemple, la configuration d’analyste de niveau 1 suivante crée un package d’accès qui :
 
-    - Nécessite un membre du groupe AD **MSSP Analyst Approvers** pour autoriser les nouvelles demandes
-    - Possède des révisions d’accès annuel, où les analystes SOC peuvent demander une extension d’accès
-    - Peut uniquement être demandé par les utilisateurs dans le client SOC MSSP
+    - Requiert un membre du groupe AD **MSSP Analyst Approvers** pour autoriser de nouvelles demandes
+    - A des révisions d’accès annuelles, où les analystes SOC peuvent demander une extension d’accès
+    - Peut uniquement être demandée par les utilisateurs dans le locataire SOC MSSP
     - L’accès automatique expire après 365 jours
 
     :::image type="content" source="../../media/new-access-package.png" alt-text="Détails d’un nouveau package d’accès dans le portail Microsoft 365 Defender" lightbox="../../media/new-access-package.png":::
 
-    Pour plus d’informations, voir [Créer un package d’accès](/azure/active-directory/governance/entitlement-management-access-package-create).
+    Pour plus d’informations, consultez [Créer un package d’accès](/azure/active-directory/governance/entitlement-management-access-package-create).
 
-4. **Fournir un lien de demande d’accès aux ressources MSSP à partir de customer AAD: Identity Governance**
+4. **Fournir un lien de demande d’accès aux ressources MSSP à partir d’AAD client : Gouvernance des identités**
 
-    Le lien du portail Mon accès est utilisé par les analystes SOC MSSP pour demander l’accès via les packages d’accès créés. Le lien est durable, ce qui signifie qu’il peut être utilisé au fil du temps pour de nouveaux analystes. La demande d’analyste est entrée dans une file d’attente pour approbation par les approuveurs **d’analyste MSSP**.
+    Le lien du portail Mon accès est utilisé par les analystes SOC MSSP pour demander l’accès via les packages d’accès créés. Le lien est durable, ce qui signifie que le même lien peut être utilisé au fil du temps pour les nouveaux analystes. La demande d’analyste est envoyée dans une file d’attente pour approbation par les **approbateurs d’analysteS MSSP**.
 
-    :::image type="content" source="../../media/access-properties.png" alt-text="Propriétés d’accès dans le portail Microsoft 365 Defender web" lightbox="../../media/access-properties.png":::
+    :::image type="content" source="../../media/access-properties.png" alt-text="Propriétés d’accès dans le portail Microsoft 365 Defender" lightbox="../../media/access-properties.png":::
 
-    Le lien se trouve sur la page de vue d’ensemble de chaque package d’accès.
+    Le lien se trouve sur la page vue d’ensemble de chaque package d’accès.
 
 ## <a name="manage-access"></a>Gérer l’accès
 
-1. Examiner et autoriser les demandes d’accès dans Customer et/ou MSSP myaccess.
+1. Passez en revue et autorisez les demandes d’accès dans customer et/ou MSSP myaccess.
 
-    Les demandes d’accès sont gérées dans le client Mon accès, par les membres du groupe d’approbations d’analyste MSSP.
+    Les demandes d’accès sont gérées dans le client Mon accès, par les membres du groupe Approbateurs d’analystes MSSP.
 
-    Pour ce faire, accédez à la myaccess du client à l’aide de : `https://myaccess.microsoft.com/@<Customer Domain>`.
+    Pour ce faire, accédez à myaccess du client à l’aide de : `https://myaccess.microsoft.com/@<Customer Domain>`.
 
     Exemple : `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
-2. Approuver ou refuser des demandes dans la section **Approbations** de l’interface utilisateur.
+2. Approuvez ou refusez les demandes dans la section **Approbations** de l’interface utilisateur.
 
-     À ce stade, l’accès analyste a été mis en service et chaque analyste doit pouvoir accéder au portail Microsoft 365 Defender client :
+     À ce stade, l’accès aux analystes a été approvisionné et chaque analyste doit être en mesure d’accéder au portail Microsoft 365 Defender du client :
 
-    `https://security.microsoft.com/?tid=<CustomerTenantId>` avec les autorisations et les rôles qui leur ont été attribués.
+    `https://security.microsoft.com/?tid=<CustomerTenantId>` avec les autorisations et rôles qui leur ont été attribués.
 
 > [!IMPORTANT]
-> L’accès délégué à Microsoft Defender pour le point de terminaison dans le portail Microsoft 365 Defender permet actuellement d’accéder à un seul client par fenêtre de navigateur.
+> L’accès délégué aux Microsoft Defender pour point de terminaison dans le portail Microsoft 365 Defender autorise actuellement l’accès à un seul locataire par fenêtre de navigateur.

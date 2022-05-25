@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à Microsoft Bookings dans Microsoft 365.
-ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ecd0e970d1e672a7c40bb1876f84d4e55a7dbff0
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637293"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663533"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activer ou désactiver Microsoft bookings
 
@@ -87,7 +87,7 @@ Vous pouvez désactiver Bookings pour les utilisateurs individuels.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Autoriser uniquement les utilisateurs sélectionnés à créer des calendriers Bookings
 
-En utilisant des restrictions de stratégie, vous pouvez empêcher les utilisateurs sous licence de créer des calendriers Bookings. Vous devez d’abord activer Bookings pour l’ensemble de votre organisation. Tous les utilisateurs de votre organisation disposeront de licences Bookings, mais seules celles incluses dans la stratégie peuvent créer Bookings calendriers et avoir un contrôle total sur les personnes qui peuvent accéder aux calendriers qu’ils créent.
+En utilisant des restrictions de stratégie, vous pouvez empêcher les utilisateurs sous licence de créer des calendriers Bookings. Tous les utilisateurs de votre organisation disposeront de licences Bookings, mais seules celles incluses dans la stratégie peuvent créer Bookings calendriers et avoir un contrôle total sur les personnes qui peuvent accéder aux calendriers qu’ils créent.
 
 Les utilisateurs inclus dans cette stratégie peuvent créer de nouveaux calendriers Bookings et peuvent être ajoutés en tant que personnel dans n’importe quelle capacité (y compris le rôle d’administrateur) aux calendriers Bookings existants. Les utilisateurs qui ne sont pas inclus dans cette stratégie ne pourront pas créer de calendriers Bookings et recevront un message d’erreur s’ils tentent de le faire.
 

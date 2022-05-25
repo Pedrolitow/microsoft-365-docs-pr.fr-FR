@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, découvrez comment la gérer en restaurant les clés AKV, en gérant les autorisations et en créant et en affectant des stratégies de chiffrement des données.
-ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: a1fab2694be866acd6035af90929b5ab690da031
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535423"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663467"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -105,7 +105,7 @@ Pour créer un dep à utiliser avec une boîte aux lettres, procédez comme suit
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy).
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Affecter un DEP à une boîte aux lettres
 

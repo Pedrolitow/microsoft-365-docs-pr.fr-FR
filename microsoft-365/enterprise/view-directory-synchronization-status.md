@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Dans cet article, découvrez comment vérifier l’état de votre synchronisation d’annuaires dans Office 365.
-ms.openlocfilehash: 8f21985f8db3539e8dd1a839cc6cb499a425feeb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 28376a63ab035490bdfeafb294eed9d993db54d9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095551"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669647"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Afficher l’état de synchronisation d’annuaires dans Microsoft 365
 
@@ -35,7 +35,7 @@ Si vous avez intégré votre Active Directory local Domain Services (AD DS) à A
 ## <a name="view-directory-synchronization-status"></a>Consulter l’état de synchronisation des annuaires
 
 - Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) et choisissez **État DirSync** sur la page d’accueil.
-- Vous pouvez également accéder aux **utilisateurs utilisateurs** \> **actifs** et, dans la page **Utilisateurs actifs** , choisir **Plus** \> de **synchronisation d’annuaires**. Dans le volet **Synchronisation d’annuaires** , **choisissez Accéder à la gestion DirSync**.
+- Vous pouvez également accéder aux **utilisateurs utilisateurs** \> **actifs** et, dans la page **Utilisateurs actifs** , sélectionner la synchronisation **Elipse** \> **Directory**. Dans le volet **Synchronisation d’annuaires** , **choisissez Accéder à la gestion DirSync**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informations sur la page Gérer la synchronisation d’annuaires
 
@@ -51,7 +51,7 @@ En cas de problème avec votre synchronisation d’annuaires, les erreurs sont �
 |**Synchronisation d’annuaires la plus récente** | Dernière exécution de la synchronisation d’annuaires. Affiche un avertissement et un lien vers un outil de résolution des problèmes si la dernière synchronisation remonte à plus de trois jours. |
 |**Synchronisation de mot de passe activée** | True ou False. Spécifie si vous avez une synchronisation de hachage de mot de passe entre notre local et votre locataire Microsoft 365. |
 |**Dernière synchronisation de mot de passe** | Dernière exécution de la synchronisation de hachage de mot de passe. Affiche un avertissement et un lien vers un outil de résolution des problèmes si la dernière synchronisation remonte à plus de trois jours. |
-|**Version du client de synchronisation d’annuaires** | Contient un lien de téléchargement si une nouvelle version de Azure AD Connecter a été publiée. |
+|**Version du client de synchronisation d’annuaires** | Contient un lien de téléchargement si une nouvelle version d’Azure AD Connecter a été publiée. |
 |**Compte de service de synchronisation d’annuaires** | Affiche le nom de votre compte de service de synchronisation d’annuaire Microsoft 365. |
 |||
 

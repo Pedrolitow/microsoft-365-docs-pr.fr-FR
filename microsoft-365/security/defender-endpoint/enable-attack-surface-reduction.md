@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637910"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669801"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -48,13 +48,15 @@ Fonctionnalités de réduction de la surface d’attaque dans Windows versions
 
 Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils qui exécutent l’une des éditions et versions suivantes de Windows :
 
+- [Windows 11 Professionnel](/windows/whats-new/windows-11-overview)
+- [Windows 11 Entreprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
 - Windows 10 Professionnel, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) ou ultérieure
 - Windows 10 Entreprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) ou ultérieure
 - Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou ultérieure
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
-- Windows Server 2022
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 
 Pour utiliser l’ensemble des fonctionnalités de règles de réduction de la surface d’attaque, vous devez :
 
@@ -107,8 +109,8 @@ Les règles ASR prennent en charge les variables d’environnement et les caract
 2. Les règles de réduction de la surface d’attaque pour les appareils gérés par MEM prennent désormais en charge le comportement de fusion des paramètres de différentes stratégies, afin de créer un sur-ensemble de stratégies pour chaque appareil. Seuls les paramètres qui ne sont pas en conflit sont fusionnés, tandis que ceux qui sont en conflit ne sont pas ajoutés au sur-ensemble de règles. Auparavant, si deux stratégies incluaient des conflits pour un seul paramètre, les deux stratégies étaient signalées comme étant en conflit et aucun paramètre de l’un ou l’autre profil n’était déployé. Le comportement de fusion des règles de réduction de la surface d’attaque est le suivant :
    - Les règles de réduction de la surface d’attaque des profils suivants sont évaluées pour chaque appareil auquel les règles s’appliquent :
      - Les appareils > stratégie de configuration > profil Endpoint Protection > **Protection contre les attaques Microsoft Defender** >  [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
-     - Sécurité des points de terminaison > Règles de **réduction de** >  [la surface d’attaqueAttack](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - Les bases de référence de sécurité > de sécurité des points de terminaison > [les règles de réduction de la surface BaselineAttack](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de** >  Microsoft Defender ATP.
+     - Sécurité des points de terminaison > stratégie **de réduction de** >  la surface d’attaque [Règles de réduction de la surface d’attaque](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - La sécurité des points de terminaison > les bases de référence de sécurité >[les règles de réduction de la surface d’attaque](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **de base** >  microsoft Defender ATP.
    - Paramètres qui n’ont pas de conflits sont ajoutées à un sur-ensemble de stratégies pour l’appareil.
    - Lorsque deux stratégies ou plus ont des paramètres en conflit, les paramètres en conflit ne sont pas ajoutés à la stratégie combinée, tandis que les paramètres qui ne sont pas en conflit sont ajoutés à la stratégie de sur-ensemble qui s’applique à un appareil.
    - Seules les configurations pour les paramètres en conflit sont conservées.

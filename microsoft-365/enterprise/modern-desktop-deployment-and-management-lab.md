@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez où accéder aux Windows et Office Deployment Lab Kit.
-ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463162"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669208"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratoire pour le déploiement de Windows et Office 365
 
@@ -48,7 +48,7 @@ Le labo vous fournit un environnement de laboratoire virtuel provisionné automa
 Les laboratoires sont également conçus pour être connectés aux essais pour :
 
 - Microsoft 365 E5
-- Applications Microsoft 365 pour les grandes entreprises
+- Microsoft 365 Apps for enterprise
 - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
@@ -97,9 +97,15 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - BitLocker
 - Antivirus Microsoft Defender
 - Windows Hello Entreprise
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender Application Control   
+- Microsoft Defender pour point de terminaison 
+
 
 > [!NOTE]
-> Utilisez une connexion Internet haut débit pour télécharger ce contenu et prévoyez environ 30 minutes pour l’approvisionnement automatique. L’environnement lab nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le laboratoire Windows 10 expire le 11 août 2022. Le laboratoire Windows 11 expire le 7 août 2022. Les nouvelles versions seront publiées avant l’expiration.
+> Utilisez une connexion Internet haut débit pour télécharger ce contenu et prévoyez environ 30 minutes pour l’approvisionnement automatique. L’environnement lab nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le logiciel d’évaluation de ces laboratoires expire 90 à 120 jours après l’activation. Les nouvelles versions des laboratoires seront publiées en août 2022. 
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

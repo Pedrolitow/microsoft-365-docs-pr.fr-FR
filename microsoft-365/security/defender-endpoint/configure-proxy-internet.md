@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 787da143bdbbc2d21610ba14d0fe7c955e4e976d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1faff638c9b33b933277dc74248c2d7daa43331c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823376"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669669"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -31,7 +31,7 @@ ms.locfileid: "64823376"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -152,7 +152,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 2. Entrez la commande suivante et appuyez sur **Entrée** :
 
-   ```PowerShell
+   ```command prompt
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -160,7 +160,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 Pour réinitialiser le proxy winhttp, entrez la commande suivante et appuyez sur **Entrée** :
 
-```PowerShell
+```command prompt
 netsh winhttp reset proxy
 ```
 
@@ -249,13 +249,13 @@ Vérifiez que la configuration du proxy est terminée avec succès. WinHTTP peut
 
 4. Entrez la commande suivante et appuyez sur **Entrée** :
 
-    ```PowerShell
+    ```command prompt
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     Remplacez *HardDrivePath* par le chemin d’accès, où l’outil MDEClientAnalyzer a été téléchargé. Par exemple :
 
-    ```PowerShell
+    ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 

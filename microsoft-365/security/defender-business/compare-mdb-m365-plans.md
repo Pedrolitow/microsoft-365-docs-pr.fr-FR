@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 971617311ce8d2443f90a1792339d4f0927ade3e
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: d7ee7588d9c73a6146b770cfcf135a8eeb44f72f
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174735"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663423"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparer les fonctionnalités de sécurité dans Microsoft 365 plans pour les petites et moyennes entreprises
 
@@ -74,10 +74,10 @@ Defender entreprise offre des fonctionnalités de niveau entreprise de Defender 
 |[Examen et réponse automatisés](../defender-endpoint/automated-investigations.md)|Oui <sup>[[3](#fn3)]</sup>|Non|Oui|
 |[Repérage des menaces](../defender-endpoint/advanced-hunting-overview.md) et six mois de conservation des données |Non <sup>[[4](#fn4)]</sup>|Non|Oui|
 |[Analyses de menaces](../defender-endpoint/threat-analytics.md)|Oui <sup>[[5](#fn5)]</sup>|Non|Oui|
-|[Prise en charge multiplateforme](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS et Android OS)|Oui <sup>[[6](#fn6)]</sup>|Oui|Oui|
+|[Prise en charge multiplateforme](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS et Android système d’exploitation)|Oui <sup>[[6](#fn6)]</sup>|Oui|Oui|
 |[Spécialistes des menaces Microsoft](../defender-endpoint/microsoft-threat-experts.md)|Non|Non|Oui|
 |API partenaires|Oui|Oui|Oui|
-|[intégration Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Pour afficher les incidents de sécurité entre les locataires des clients)|Oui|Non|Non|
+|[intégration Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Pour afficher les incidents de sécurité entre les locataires des clients)|Oui |Oui <sup>[[7](#fn7)]</sup>|Oui <sup>[[7](#fn7)]</sup>|
 
 (<a id="fn1">1</a>) Intégrer et gérer des appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou avec Microsoft Intune, géré dans le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
@@ -95,7 +95,9 @@ Defender entreprise offre des fonctionnalités de niveau entreprise de Defender 
 
 (<a id="fn6">6</a>) Consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+(<a id="fn7">7</a>) La possibilité d’afficher les incidents entre locataires à l’aide de Defender pour point de terminaison est une nouveauté !
+
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Consultez les conditions requises pour Microsoft Defender pour les PME](mdb-requirements.md)
 - [Obtenir Microsoft Defender pour les PME](get-defender-business.md)

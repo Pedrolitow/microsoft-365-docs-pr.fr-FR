@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 2f8fe053d0ffb6d453029ab3f7fee17846661b6d
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 4056310eb8e0d22a9758dfa2a572a473c83a0775
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469270"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669735"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -33,7 +33,7 @@ Utilisez cet article avec cette affiche.
 
 | Élément | Description |
 |:-----|:-----|
-|[![Illustration du plan de déploiement Microsoft 365 Confiance nulle.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Mise à jour de mars 2022 | **Guides de solution associés** <br/> <ul><li>[Déployer votre infrastructure d’identité pour Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configurations d’identité et d’accès aux appareils recommandées](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Gérer des appareils avec Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Évaluer et piloter Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Déployer une solution Microsoft Information Protection](../compliance/information-protection-solution.md)</li><li>[Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
+|[![Illustration du plan de déploiement Microsoft 365 Confiance nulle.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Mise à jour de mars 2022 | **Guides de solution associés** <br/> <ul><li>[Déployer votre infrastructure d’identité pour Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configurations d’identité et d’accès aux appareils recommandées](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Gérer des appareils avec Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[Évaluer et piloter Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Déployer une solution de protection des informations avec Microsoft Purview](../compliance/information-protection-solution.md)</li><li>[Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
 
 ## <a name="zero-trust-security-architecture"></a>architecture de sécurité Confiance nulle
 
@@ -82,7 +82,7 @@ La première étape consiste à créer votre base Confiance nulle en configurant
 
 Accédez à [**_Confiance nulle protection de l’identité et de l’accès aux appareils_**](office-365-security/microsoft-365-policies-configurations.md) pour obtenir des conseils normatifs pour ce faire. Cette série d’articles décrit un ensemble de configurations requises pour l’identité et l’accès aux appareils, ainsi qu’un ensemble d’accès conditionnel Azure Active Directory (Azure AD), de Microsoft Intune et d’autres stratégies pour sécuriser l’accès à Microsoft 365  pour les applications et services cloud d’entreprise, les autres services SaaS et les applications locales publiées avec Azure AD Proxy d'application.
 
-|Comprend|Prerequisites|N’inclut pas|
+|Comprend|Conditions préalables|N’inclut pas|
 |---------|---------|---------|
 |Stratégies d’identité et d’accès aux appareils recommandées pour trois niveaux de protection : <ul><li>Point de départ</li><li>Enterprise (recommandé)</li><li>Spécialisé</li></ul> <br> Recommandations supplémentaires pour : <ul><li>Utilisateurs externes (invités)</li><li>Microsoft Teams</li><li>SharePoint Online</li><li>Microsoft Defender for Cloud Apps</lu></ul>|Microsoft E3 ou E5 <br><br> Azure Active Directory dans l’un des modes suivants : <ul><li>Cloud uniquement</li><li>Authentification hybride avec synchronisation de hachage de mot de passe (PHS)</li><li>Hybride avec authentification directe (PTA)</li><li>Fédérés</li></ul>|Inscription d’appareils pour les stratégies qui nécessitent des appareils gérés. Voir [l’étape 2. Gérer les points de terminaison avec Intune](#step-2-manage-endpoints-with-intune) pour inscrire des appareils|
 
@@ -98,7 +98,7 @@ Ensuite, inscrivez vos appareils dans la gestion et commencez à les protéger a
 
 Accédez à [**_Gérer les appareils avec Intune_**](../solutions/manage-devices-with-intune-overview.md) pour obtenir des conseils normatifs pour ce faire.
 
-|Comprend|Prerequisites|N’inclut pas|
+|Comprend|Conditions préalables|N’inclut pas|
 |---------|---------|---------|
 |Inscrire des appareils avec Intune : <ul><li>Appareils d’entreprise</li><li>Autopilot/automatisé</li><li>Inscription</li></ul> <br> Configurer des stratégies : <ul><li>Stratégies de protection des applications</li><li>Stratégies de conformité</li><li>Stratégies de profil d’appareil</li></ul>|Inscrire des points de terminaison auprès d’Azure AD|Configuration des fonctionnalités de protection des informations, notamment : <ul><li>Types d’informations sensibles</li><li>Étiquettes</li><li>Stratégies de protection contre la perte de données</li></ul> <br> Pour ces fonctionnalités, consultez [l’étape 5. Protéger et régir les données sensibles](#step-5-protect-and-govern-sensitive-data) (plus loin dans cet article).|
 
@@ -120,7 +120,7 @@ Microsoft 365 Defender est une solution de détection et de réponse étendue (X
 
 Accédez à [**_Évaluer et pilotez Microsoft 365 Defender_**](defender/eval-overview.md) pour obtenir un guide méthodical sur le pilote et le déploiement de composants Microsoft 365 Defender.
 
-|Comprend|Prerequisites|N’inclut pas|
+|Comprend|Conditions préalables|N’inclut pas|
 |---------|---------|---------|
 |Configurez l’environnement d’évaluation et de pilote pour tous les composants : <ul><li>Defender pour l’identité</li><li>Defender pour Office 365</li><li>Defender pour point de terminaison</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protéger contre les menaces <br><br> Examiner les menaces et y répondre|Consultez les conseils pour en savoir plus sur les exigences d’architecture pour chaque composant de Microsoft 365 Defender.| Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Il est inclus à [l’étape 1. Configurez Confiance nulle protection d’identité et d’accès aux appareils](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4af9cb3073e4fa150a2683c2dd2f125336ef01b8
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 20a8a96146b7f65ef3f8ccec4f099b91d74822a0
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363145"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670099"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Nouveautés de Microsoft Purview
 
@@ -139,7 +139,7 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 | Privileged Access Management dans Microsoft 365 | Privileged Access Management Microsoft Purview | Privileged Access Management permet de protéger votre organisation contre les violations et de respecter les meilleures pratiques de conformité en limitant l’accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. Pour en savoir plus, consultez [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | Connecteurs de données Microsoft | connecteurs de données Microsoft Purview | Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données non-Microsoft tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans des boîtes aux lettres de votre organisation Microsoft 365. Pour plus d’informations, consultez [Microsoft Purview connecteurs de données](compliance-extensibility.md). |
 | Microsoft 365 advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Pour en savoir plus, consultez [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) et [Microsoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
-| Centre de conformité Microsoft 365 | Portail de conformité Microsoft Purview | Portail d’administration pour accéder aux solutions et au catalogue de solutions dans la suite Microsoft 365 E5 Conformité. Pour en savoir plus, consultez [portail de conformité Microsoft Purview](microsoft-365-compliance-center.md). |
+| Centre de conformité Microsoft 365 | Portail de conformité Microsoft Purview | Administration portail pour accéder aux solutions et au catalogue de solutions dans la suite Microsoft 365 E5 Conformité. Pour en savoir plus, consultez [portail de conformité Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="march-2022"></a>Mars 2022
 
@@ -168,15 +168,15 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 - [Configurez les paramètres de protection contre la perte de données](dlp-configure-endpoint-settings.md) de point de terminaison : nouveau pour la préversion publique des groupes d’applications restreints.
 - [Informations de référence sur la stratégie de protection contre la perte de données](dlp-policy-reference.md) : mises à jour pour la préversion publique des groupes d’applications restreints.
 - [Démarrage avec protection contre la perte de données pour les Power BI](dlp-powerbi-get-started.md) : nouveauté de la préversion publique.
+- 
+### <a name="information-protection"></a>Protection des informations
 
+- [Prise en charge des notes de publication du jeu de caractères sur deux octets](mip-dbcs-relnotes.md) : ajout de conseils pour macOS.
+- 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
 - [Démarrage avec la gestion des risques internes](insider-risk-management-configure.md) : ajout de nouvelles tâches pour l’aide sur les actions recommandées.
 - [Démarrage avec les paramètres de gestion des risques internes](insider-risk-management-settings.md) : nouvelles mises à jour pour les fonctionnalités de notification et d’alertes par e-mail, nouvelles mises à jour pour les notifications analytiques.
-
-### <a name="microsoft-information-protection"></a>Microsoft Information Protection
-
-- [Prise en charge des notes de publication du jeu de caractères sur deux octets](mip-dbcs-relnotes.md) : ajout de conseils pour macOS.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 

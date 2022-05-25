@@ -17,18 +17,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 825605f932b3732ba27af7ec95160f34959356b0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648324"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669317"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -229,3 +229,9 @@ Les charges de travail d’E/S élevées de certaines applications peuvent renco
 ## <a name="resources"></a>Ressources
 
 - Pour plus d’informations sur la journalisation, la désinstallation ou d’autres rubriques, consultez [Ressources](linux-resources.md).
+  
+## <a name="related-articles"></a>Articles connexes
+  
+-  [Protégez vos points de terminaison avec la solution de PEPT intégrée de Defender pour le cloud : Microsoft Defender pour point de terminaison](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Connecter vos machines non Azure à Microsoft Defender pour le cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+

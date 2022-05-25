@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Créez et classez des affectations, créez et organisez du contenu de cours, et collaborez sur des fichiers en temps réel avec la nouvelle application d’interopérabilité Microsoft OneDrive Learning Tools pour Canvas.
-ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 62df03d18081cf9c48e5b153ed7a3cfe6ee27901
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285563"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663401"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
@@ -44,7 +44,7 @@ L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux é
 > La personne qui effectue cette intégration doit être un administrateur de Canvas et un administrateur du locataire Microsoft 365.
 
 1. Se connecter au <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portail d’inscription Microsoft OneDrive LTI</a>
-2. Sélectionnez le bouton **Consentement de l’administrateur** et acceptez les autorisations.
+2. Sélectionnez le bouton **Administration Consentement** et acceptez les autorisations.
 
    > [!CAUTION]
    > Si cette étape n’est pas effectuée, l’étape suivante vous donnera une erreur, et vous ne pourrez pas effectuer cette étape pendant une heure une fois que vous aurez obtenu l’erreur.
@@ -71,17 +71,21 @@ L’intégration de Microsoft OneDrive LTI à Canvas est un processus en deux é
     >
     > Pour plus d’informations sur la façon dont les enseignants peuvent modifier leurs liens de navigation de cours, consultez [Comment faire gérer les liens de navigation des cours ?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
-7. Enregistrez la clé et elle devient disponible dans Canvas dans un état **Désactivé** . Activez **la clé et** copiez la clé donnée dans la colonne **Détails** à utiliser à l’étape suivante.
+7. Ensuite, développez la liste déroulante **Paramètres supplémentaires** et **définissez le niveau de confidentialité** sur **Public**. 
+  
+   La définition du **niveau de confidentialité** sur **Public** permet aux noms des membres du cours d’apparaître à d’autres membres pour la collaboration.
+
+8. Enregistrez la clé et elle devient disponible dans Canvas dans un état **Désactivé** . Activez **la clé et** copiez la clé donnée dans la colonne **Détails** à utiliser à l’étape suivante.
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Page Canevas avec la clé définie dans un état désactivé. Elle doit être activée et la clé doit être copiée à partir de la colonne détails de cette page.":::
 
-8. Revenez au portail d’inscription Microsoft OneDrive LTI et collez la clé dans le champ **ID client canvas**. Sélectionnez **Suivant** lorsque vous êtes prêt.
+9. Revenez au portail d’inscription Microsoft OneDrive LTI et collez la clé dans le champ **ID client canvas**. Sélectionnez **Suivant** lorsque vous êtes prêt.
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Page d’inscription du locataire LTI, qui affiche le texte JSON et la zone de texte dans laquelle la clé doit être copiée.":::
 
-9. Passez en revue et enregistrez vos modifications. Un message s’affiche lors de l’inscription réussie.
+10. Passez en revue et enregistrez vos modifications. Un message s’affiche lors de l’inscription réussie.
 
-10. Vous pouvez également consulter les détails de votre inscription en sélectionnant le bouton **Afficher les locataires LTI** sur la page d’accueil.
+11. Vous pouvez également consulter les détails de votre inscription en sélectionnant le bouton **Afficher les locataires LTI** sur la page d’accueil.
 
 Les versions ultérieures peuvent nécessiter un consentement administrateur supplémentaire. Dans ce cas, vous devez répéter uniquement les étapes 1 et 2.
 

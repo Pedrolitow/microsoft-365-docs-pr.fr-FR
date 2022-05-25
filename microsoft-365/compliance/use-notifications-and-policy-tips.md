@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623224"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669537"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -97,7 +97,10 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
 - Personnalisez le texte inclus dans la notification à l’aide de code HTML ou de jetons. Consultez la rubrique ci-dessous pour plus d’informations.
 
 > [!NOTE]
-> Les notifications par e-mail ne peuvent être envoyées qu’à des destinataires individuels, et non à des groupes ou des listes de distribution. Seul le nouveau contenu déclenche une notification par e-mail. La modification du contenu existant déclenche des conseils de stratégie, mais pas une notification par e-mail.
+>
+> - Les notifications par e-mail ne peuvent être envoyées qu’à des destinataires individuels, et non à des groupes ou des listes de distribution.
+> - Seul le nouveau contenu déclenche une notification par e-mail. La modification du contenu existant déclenche des conseils de stratégie, mais pas des notifications par e-mail.
+> - Les expéditeurs externes ne reçoivent pas de notifications. Les notifications sont envoyées uniquement aux utilisateurs internes.
 
 ![Options de notification par e-mail.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 

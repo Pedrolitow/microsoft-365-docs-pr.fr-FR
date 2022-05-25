@@ -25,18 +25,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser Windows 10 PC après avoir configuré Microsoft 365 Business Premium.
-ms.openlocfilehash: d0f2842c69127893e512822a8d91dfd37a4a0e48
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 872fce9124f6a27dd884ed9d740baa9d195d8f95
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622905"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663445"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser des ordinateurs Windows 10
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
-Une fois que vous avez [configuré](business-set-up.md) Microsoft 365 Business Premium, il est temps de protéger les ordinateurs Windows 10 de votre organisation contre le vol et les menaces malveillantes telles que les virus et les programmes malveillants.
+Une fois que vous avez [configuré](/microsoft-365/business-premium/m365bp-setup) Microsoft 365 Business Premium, il est temps de protéger les ordinateurs Windows 10 de votre organisation contre le vol et les menaces malveillantes telles que les virus et les programmes malveillants.
 
 ## <a name="watch-secure-your-windows-10-pcs"></a>Regarder : Sécuriser vos PC Windows 10
 

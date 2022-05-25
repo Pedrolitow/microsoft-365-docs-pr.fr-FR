@@ -16,17 +16,17 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 67205e2c326c34bdcaac7e36042797c9f261b547
-  ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+  ms.openlocfilehash: 8f9b3abe8b2e4eb6182496635f01b71c001f7b7d
+  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/17/2022
-  ms.locfileid: "65437500"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65663665"
 title: Microsoft Defender pour les PME - Forum aux questions et réponses
 summary: >
   Utilisez cet article pour obtenir des réponses aux questions que vous pourriez avoir sur Defender entreprise.
 sections:
-- name: Généralités
+- name: Général
   questions:
   - question: Puis-je étendre mon version préliminaire de Defender entreprise ?
     answer: "Étant donné que Defender entreprise est désormais en disponibilité générale, le programme en préversion est terminé et ne peut pas être étendu. \n\nVoir [Obtenir Microsoft Defender pour les PME](get-defender-business.md).\n"
@@ -54,7 +54,7 @@ sections:
     answer: >
       Defender entreprise inclut actuellement un ensemble d’API pour prendre en charge des rapports personnalisés robustes et un connecteur Power BI. Vous pouvez planifier un script PowerShell pour générer des résumés exécutifs au format HTML et envoyer ces résumés par e-mail. Consultez les [informations de référence sur l’API](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
   - question: Je suis partenaire Microsoft. Puis-je gérer plusieurs locataires à partir d’un panneau de configuration, ou dois-je me connecter à chaque locataire individuellement ?
-    answer: "Defender entreprise est activé dans Microsoft 365 Lighthouse pour la prise en charge multilocataire dans une seule console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n \nActuellement, une file d’attente d’incidents multilocataire vous fournit une vue interlocataire des incidents qui nécessitent une attention particulière; toutefois, la configuration et l’intégration sont effectuées dans le locataire du client à l’aide des informations d’identification de votre partenaire. \n\nLes fonctionnalités sont toujours déployées et d’autres scénarios d’intégration sont planifiés.\n\nPour en savoir plus, consultez [Vue d’ensemble de Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
+    answer: "Defender entreprise est activé dans Microsoft 365 Lighthouse pour la prise en charge multilocataire dans une seule console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n\nPour en savoir plus, consultez [Vue d’ensemble de Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
   - question: Comment faire configurer des règles et des fonctionnalités de réduction de la surface d’attaque dans Defender entreprise ?
     answer: >
       La configuration simplifiée des règles et fonctionnalités de réduction de la surface d’attaque via Defender entreprise dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) n’est pas encore prise en charge. Si vous avez Microsoft Intune, vous pouvez utiliser le centre d’administration Microsoft Endpoint Manager pour configurer vos stratégies de réduction de la surface d’attaque. Consultez la [stratégie de réduction de la surface d’attaque pour la sécurité des points de terminaison dans Intune](/mem/intune/protect/endpoint-security-asr-policy).

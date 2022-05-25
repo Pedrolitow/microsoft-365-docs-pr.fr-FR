@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenir une vue d’ensemble de l’intégration du serveur SIEM (Security Information and Event Management) à vos applications et services cloud Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 978319cca91322c7eb737d89cbfc167574f14093
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ffb457a378539691627eff3ad24b24ef782705c1
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731414"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670199"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur SIEM (Security Information and Event Management) à Microsoft 365 services et applications
 
@@ -32,7 +32,7 @@ ms.locfileid: "64731414"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## <a name="summary"></a>Résumé
 
@@ -69,6 +69,22 @@ Vérifiez que la journalisation d’audit est activée avant de configurer l’i
 
 - Pour SharePoint Online, OneDrive Entreprise et Azure Active Directory, consultez [Activer ou désactiver l’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 - Pour Exchange Online, consultez [Gérer l’audit de boîte aux lettres](../../compliance/enable-mailbox-auditing.md).
+
+## <a name="integration-steps-if-your-siem-is-microsoft-sentinel"></a>Étapes d’intégration si votre SIEM est Microsoft Sentinel
+
+Assurez-vous que votre plan actuel autorise l’intégration de Microsoft Sentinel (par exemple, vous avez Microsoft Defender pour Office 365 plan 2 ou supérieur) et que votre compte dans Microsoft Defender pour Office 365 ou Microsoft 365 Defender est un *Administrateur de sécurité*. Enfin, assurez-vous que vous *disposez d’autorisations d’écriture dans Microsoft Sentinel*.
+
+1. Accédez à Microsoft Sentinel.
+1. Sur la navigation à gauche des **connecteurs** **de** >  données de configuration de l’écran.
+1. **Recherchez** Microsoft 365 Defender et sélectionnez le **connecteur Microsoft 365 Defender (préversion**).
+1. À droite de votre écran, sélectionnez **Ouvrir la page du connecteur**.
+1. Sous **Configuration** > sélectionnez **Connecter incidents & alertes**
+    1. Désactivez toutes les règles de création d’incidents Microsoft pour les produits actuellement sélectionnés.
+1. Faites défiler jusqu’à **Microsoft Defender pour Office 365** dans la section **événements Connecter** de la page.
+
+Notez que vous pouvez choisir des tables à partir de *n’importe quel autre produit Microsoft Defender* que vous trouvez utile et applicable lors de la dernière étape (ci-dessous).
+
+7. Sélectionnez **EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo** et **EmailPostDeliveryEvents** > et **appliquez les modifications**.
 
 ## <a name="more-resources"></a>Plus de ressources
 

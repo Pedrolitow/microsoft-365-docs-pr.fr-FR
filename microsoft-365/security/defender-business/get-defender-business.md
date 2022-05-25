@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: b5fb9fabad337570744dbd94b76c39d446431cf6
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587389"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663489"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour les PME
 
@@ -50,7 +50,7 @@ Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu vo
 
 ## <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
 
-*À compter du 1er mars 2022, Defender entreprise est en cours de déploiement dans le cadre de Microsoft 365 Business Premium*. 
+*Depuis le 1er mars 2022, Defender entreprise est inclus dans Microsoft 365 Business Premium*. 
 
 1. Visitez la page du produit [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
@@ -85,7 +85,7 @@ Lorsque vous recevez votre e-mail d’acceptation, voici comment activer votre a
    | Scénario | Procedure |
    |:---|:---|
    | Vous configurez un abonnement Microsoft 365 pour la première fois. | Sélectionnez **Atteindre la configuration guidée** et effectuez les étapes suivantes :<ol><li>Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)</li><li>Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.</li><li>Ajoutez des utilisateurs et attribuez des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](mdb-add-users.md).</li></ol> |
-   | Vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant. | <ol><li>Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.</li><li>Dans le volet de navigation, choisissez **utilisateurs UsersActive** > . Passez en revue la liste des utilisateurs. </li><li>Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
+   | Vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant. | <ol><li>Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.</li><li>Dans le volet de navigation, choisissez **Utilisateurs** > **actifs**. Passez en revue la liste des utilisateurs. </li><li>Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>Deux portails pour l’installation
 
@@ -100,7 +100,7 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 > Si vous avez Microsoft 365 Business Premium, vous avez également Microsoft Intune. Vous pouvez utiliser le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour gérer les appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Consultez le playbook d’évaluation : Microsoft Defender pour les PME](trial-playbook-defender-business.md).
 - [Utilisez l’Assistant Installation dans Microsoft Defender pour les PME](mdb-use-wizard.md).
