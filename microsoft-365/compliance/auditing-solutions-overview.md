@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444242"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649384"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Solutions d’audit dans Microsoft Purview
 
@@ -100,14 +100,14 @@ Les sections suivantes identifient les exigences de licence pour Audit (Standard
 
 ### <a name="audit-standard"></a>Audit (Standard)
 
-- Abonnement Microsoft Purview Business Basic
-- Abonnement Microsoft Purview Apps for business
-- Abonnement Microsoft Purview Entreprise E3
-- Microsoft Purview Business Premium
-- Abonnement Microsoft Purview Éducation A3
-- Abonnement Microsoft Purview Secteur public G3
-- Abonnement Microsoft Purview Secteur public G1
-- Abonnement Microsoft Purview Première ligne F1 ou F3 ou module complémentaire Sécurité F5
+- Souscription De base Microsoft Business
+- Abonnement Microsoft 365 Apps for business
+- Abonnement Microsoft 365 Entreprise E3
+- Microsoft 365 Business Premium
+- Abonnement Microsoft 365 Éducation A3
+- Abonnement Microsoft 365 pour le gouvernement américain G3
+- Abonnement Microsoft 365 pour le gouvernement américain G1
+- Abonnement Microsoft 365 Première ligne F1 ou F3 ou module complémentaire Sécurité F5
 - Abonnement Office 365 Entreprise E3
 - Abonnement Office 365 Entreprise E1
 - Abonnement Office 365 Éducation A1
@@ -158,7 +158,7 @@ Si votre organisation a un abonnement qui prend en charge Audit (Premium), effec
   
    - L’activation de l’application/du plan de service Audit (Premium) doit être destinée à ces utilisateurs.
   
-   - Activation de l’audit des événements essentiels, puis activation du plan d’application/service d’audit (Premium) pour ces utilisateurs.
+   - Activer l’audit des événements cruciaux, puis activer l’application/plan de service Audit (Premium) pour ces utilisateurs.
 
 2. Activer la journalisation des événements d’audit (Premium) lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online.
 
