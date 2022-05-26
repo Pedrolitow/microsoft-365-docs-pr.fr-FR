@@ -1,5 +1,5 @@
 ---
-title: Liste des modèles du Gestionnaire de conformité Microsoft Purview
+title: Microsoft Purview liste des modèles du Gestionnaire de conformité
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Le Gestionnaire de conformité Microsoft Purview fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et sectorielles.
-ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Microsoft Purview Gestionnaire de conformité fournit des modèles pour l’élaboration d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et industrielles.
+ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971492"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692780"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -33,9 +33,9 @@ ms.locfileid: "64971492"
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
-[Le Gestionnaire de conformité Microsoft Purview](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
+[Microsoft Purview Gestionnaire de conformité](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
 Les modèles sont ajoutés au Gestionnaire de conformité à mesure que de nouvelles lois et réglementations sont adoptées. Le Gestionnaire de conformité met également à jour ses modèles lorsque les lois ou réglementations sous-jacentes changent. Apprenez-en davantage sur la [révision et l’acceptation des mises à jour](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -376,7 +376,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - EudraLex - Règles régissant les médicaments dans l’Union européenne  
 - European Network and Information Security Agency (ENISA) - Cloud Computing Information Assurance Framework  
 - Finlande - Loi sur la protection des données  
-- Critères finnois pour l’évaluation de la sécurité des informations de Services cloud
+- Critères finlandais pour l’évaluation de la sécurité des informations des services cloud
 - France - Loi sur la protection des données  
 - Loi géorgienne sur la protection des données personnelles  
 - Allemagne - Texte annoté de la configuration minimale requise pour la gestion des risques  
@@ -397,6 +397,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - Réglementation sur la protection des données au Nigeria  
 - Oman - Loi sur les transactions électroniques  
 - Stratégie de sécurité cloud du Qatar
+- Qatar National Information Assurance (NIA)
 - Roumanie - Loi 190/2018 sur la protection des données  
 - Russie - Loi fédérale 149-FZ sur l’information, la technologie de l’information et la sécurité de l’information
 - [Loi fédérale de fédération de Russie concernant les données personnelles](/compliance/regulatory/offering-russia-data-localization)  
@@ -407,11 +408,12 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - Loi slovaque sur la protection des données personnelles  
 - Espagne - Nation Security Framework  
 - Suisse - Loi fédérale sur la protection des données (FADP)  
-- Turquie - KVKK Protection des données personnelles 6698  
+- Turquie - KVKK Protection des données personnelles 6698
 - Émirats arabes unis - Décret fédéral sur la lutte contre les cybercriminels  
 - Émirats arabes unis - Loi fédérale concernant les transactions électroniques et le commerce
 - ÉMIRAT - Loi fédérale n°2 de 2019 sur l’utilisation des technologies de l’information et de la communication (TIC) dans les domaines de la santé  
-- Émirats arabes unis - Normes neSA Information Assurance  
+- Émirats arabes unis - Normes neSA Information Assurance
+- Loi sur la confidentialité des données des Émirats arabes unis
 - POLITIQUE RÉGLEMENTAIRE DES ÉMIRATS TRA - Internet des objets  
 - Le décret fédéral des Émirats arabes unis réglementant le secteur des télécommunications  
 - Ouganda - Loi sur la protection des données et la confidentialité  

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou retournez la licence pour ne pas la payer. '
 ms.date: 04/22/2022
-ms.openlocfilehash: 4445163281e403505612066285192b31adc44979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5248c7fdb807a91ab2a9a7dfd44bdb375eb7d0f0
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091916"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678917"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -41,7 +41,6 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 > - La boîte aux lettres partagée contient plus de 50 Go de stockage.
 > - La boîte aux lettres partagée utilise l’archivage sur place.
 > - La boîte aux lettres partagée est placée en conservation des litiges.
-> - Une licence Microsoft 365 Defender est attribuée à la boîte aux lettres partagée.
 > 
 > Pour obtenir des instructions pas à pas sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users). 
 

@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 47e9d935cdf6b44d9ba45cd57d8eb3efeabdf0a3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637668"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679645"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser les Microsoft 365 pour les entreprises
 
@@ -191,7 +191,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 
 6. Sélectionnez **Enregistrer**.
 
-| Paramètre | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Setting | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : types de fichiers de blocage  <br/> |
 |Appliquez cette règle si . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |
@@ -352,5 +352,5 @@ Pour en savoir plus, consultez les ressources suivantes :
 ## <a name="related-content"></a>Contenu connexe
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
-[Gérer et surveiller les comptes prioritaires](../setup/priority-accounts.md) (article)\
+[Gérer et surveiller les comptes prioritaires](/microsoft-365/security/office-365-security/configure-review-priority-account) (article)\
 [rapports Microsoft 365 dans le Centre d’administration](../activity-reports/activity-reports.md) (vidéo)

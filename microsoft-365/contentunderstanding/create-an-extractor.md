@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535479"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679611"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -42,12 +42,12 @@ Vous devez créer un extracteur pour chaque entité dans le document à extraire
 
 2. À l’écran **Nouvel extracteur d’entités**, tapez le nom de votre extracteur dans le champ **Nom du nouvel extracteur**. Par exemple, nommez-le **Date de démarrage du service** si vous souhaitez extraire la date de démarrage du service à partir de chaque document Renouvellement de contrat. Vous pouvez également choisir de réutiliser une colonne précédemment créée (par exemple, une colonne de métadonnées gérées).
 
-    Par défaut, le type de colonne est **une seule ligne de texte**. Si vous souhaitez modifier le type de colonne, sélectionnez **Le type Advanced settingsColumn** > , puis sélectionnez le type que vous souhaitez utiliser.
+    Par défaut, le type de colonne est **une seule ligne de texte**. Si vous souhaitez modifier le type de colonne, sélectionnez **Paramètres** >  avancés Type de **colonne**, puis sélectionnez le type que vous souhaitez utiliser.
 
     ![Capture d’écran de la partie Paramètres avancés du panneau Nouvel extracteur d’entité montrant l’option Type de colonne.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > Pour les extracteurs avec le type **de colonne Ligne unique de texte**, la limite de caractères maximale est de 255. Les caractères que vous tapez au-delà de la limite sont tronqués.
+    > Pour les extracteurs avec le type **de colonne Ligne unique de texte**, la limite de caractères maximale est de 255. Tous les caractères que vous sélectionnez dépassent la limite sont tronqués. Pour sélectionner plus de 255 caractères, choisissez le type **de colonne Plusieurs lignes de texte lors de** la création de l’extracteur.
 
 3. Lorsque vous avez terminé, sélectionnez **Créer**.
 

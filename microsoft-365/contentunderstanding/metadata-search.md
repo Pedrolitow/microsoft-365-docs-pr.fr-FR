@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: high
 description: Découvrez comment utiliser la recherche avancée de métadonnées et la recherche de colonnes de site personnalisées pour rechercher des éléments dans des bibliothèques de documents SharePoint à l’aide SharePoint Syntex.
-ms.openlocfilehash: f010c6944fdcb05fcfe2c254274249b2dcabe99e
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 50b9ef7ff6fe7942266ec59f8d5ad81e0dfbecd4
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595386"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679568"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Rechercher des métadonnées dans les bibliothèques de documents dans Microsoft SharePoint Syntex
 
@@ -55,8 +55,5 @@ La recherche avancée de métadonnées vous permet d’utiliser les métadonnée
     Pour ajouter une colonne de site personnalisée à votre recherche, sélectionnez **Ajouter d’autres options**, puis sélectionnez le nom de la colonne de site.
 
     ![Capture d’écran du menu Ajouter d’autres options dans le volet de recherche de métadonnées.](../media/content-understanding/metadata-search-add-more-options.png)
-
-    > [!NOTE]
-    > Actuellement, la possibilité d’ajouter des champs de métadonnées gérés ou des champs de texte multiligne n’est pas disponible. 
 
 4. Sélectionnez **Rechercher**. Les documents qui correspondent à votre recherche de métadonnées sont affichés sur la page de résultats. 

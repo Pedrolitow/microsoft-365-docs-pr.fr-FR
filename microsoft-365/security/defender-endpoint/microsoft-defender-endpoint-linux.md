@@ -17,18 +17,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669317"
+ms.locfileid: "65679239"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -83,9 +83,9 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
 
 - Distributions de serveurs Linux prises en charge et versions x64 (AMD64/EM64T) et x86_64 :
 
-  - Red Hat Enterprise Linux 6.7 ou version ultérieure
-  - Red Hat Enterprise Linux 7.2 ou version ultérieure
-  - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 6.7 ou version ultérieure (préversion)
+  - Red Hat Enterprise Linux 7.2 ou version ultérieure 
+  - Red Hat Enterprise Linux 8.x 
   - CentOS 6.7 ou version ultérieure 
   - CentOS 7.2 ou version ultérieure
   - Ubuntu 16.04 LTS ou LTS supérieur
@@ -98,6 +98,9 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
 
     > [!NOTE]
     > Les distributions et les versions qui ne sont pas explicitement répertoriées ne sont pas prises en charge (même si elles sont dérivées des distributions officiellement prises en charge).
+
+
+
 
 - Liste des versions de noyau prises en charge
   - Noyau minimum version 3.10.0-327 (Pour toutes les distributions Linux prises en charge mentionnées ci-dessus, à l’exception de Red Hat Enterprise Linux 6 et CentOS 6)

@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823187"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692758"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>MICROSOFT 365 DEFENDER API de chasse avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -53,11 +53,11 @@ Les conditions suivantes concernent toutes les requêtes.
 6. Un `429` code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 
 
 > [!NOTE]
-> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont par taille de locataire. Ces quotas sont le minimum.
+> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont au niveau du locataire. Ces quotas sont le minimum.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est requise pour appeler l’API de chasse avancée. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Access the Microsoft 365 Defender Protection API](api-access.md)
+L’une des autorisations suivantes est requise pour appeler l’API de chasse avancée. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Access the Microsoft 365 Defender Protection API](api-access.md).
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -87,9 +87,9 @@ Content-Type | application/json
 
 Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
 
-Parameter | Type | Description
+Paramètre | Type | Description
 -|-|-
-Requête | Texte | Requête à exécuter. **Remarque : obligatoire**
+Requête | Texte | Requête à exécuter. **(obligatoire)**
 
 ## <a name="response"></a>Réponse
 

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 55810d65c33796a617421f0796191335821bde98
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648886"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679459"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec l’entraînement de simulation d’attaque dans Defender pour Office 365
 
@@ -347,7 +347,7 @@ Cette page affiche les notifications suivantes et leurs langues configurées :
 - **Notification d’affectation de formation par défaut Microsoft**
 - Toutes les notifications d’affectation de formation personnalisées que vous avez créées précédemment.
 
-  Ces notifications sont également disponibles sous l’onglet **Notifications de l’utilisateur final** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. La **notification d’affectation d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Les notifications d’affectation de formation personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
+  Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification d’affectation d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Les notifications d’affectation de formation personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
 
 Vous pouvez sélectionner une notification d’affectation de formation existante ou créer une notification à utiliser :
 
@@ -382,7 +382,7 @@ La page de **notification de rappel** de formation n’est disponible que si vou
   - **Notification de rappel d’entraînement par défaut de Microsoft**
   - Toutes les notifications de rappel d’entraînement personnalisées que vous avez créées précédemment.
 
-    Ces notifications sont également disponibles sous l’onglet **Notifications de l’utilisateur final** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. La **notification de rappel d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de rappel d’entraînement personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
+    Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification de rappel d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de rappel d’entraînement personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
 
   Vous pouvez sélectionner une notification de rappel de formation existante ou créer une notification à utiliser :
 
@@ -419,7 +419,7 @@ La page **de notification de renforcement positif** est disponible uniquement si
   - **Notification de renforcement positif par défaut de Microsoft**
   - Toutes les notifications de renforcement positif personnalisées que vous avez créées précédemment.
 
-    Ces notifications sont également disponibles sous l’onglet **Notifications de l’utilisateur final** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. La **notification de renforcement positif par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de renforcement positif personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
+    Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification de renforcement positif par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de renforcement positif personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
 
   Vous pouvez sélectionner une notification de renforcement positif existante ou créer une notification à utiliser :
 

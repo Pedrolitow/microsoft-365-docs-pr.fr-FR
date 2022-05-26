@@ -16,26 +16,26 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), obtenez une liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: ca5a736c6b14b77f433b07480eba718b4f0e55c2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 79084edf573f90ee4d977528c45fdfbfcedff36f
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174035"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692707"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer des appareils, des données et des utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB).
 
-Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (CSP) en tant que revendeur indirect ou partenaire de facturation directe pour utiliser Lighthouse.
+Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (fournisseur de solutions Cloud) en tant que revendeur indirect ou partenaire de facturation directe pour utiliser Lighthouse.
 
 En outre, chaque locataire client MSP doit être éligible à Lighthouse en répondant aux exigences suivantes :
 
 - Doit avoir configuré l’accès délégué pour que le fournisseur de services managés (MSP) puisse gérer le locataire client*
-- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires ou Microsoft Defender pour les PME
+- Doit avoir au moins un Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Affaires ou Microsoft Defender pour les PME Licence
 - Ne doit pas avoir plus de 1 000 utilisateurs sous licence
 
-*Des privilèges d’administrateur délégués (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir des privilèges d’administrateur délégué granulaires (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.
+*Des privilèges d’Administration délégués (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir des privilèges délégués granulaires Administration (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.
 
 ## <a name="requirements-for-enabling-device-management"></a>Configuration requise pour l’activation de la gestion des appareils
 
@@ -46,7 +46,7 @@ Pour afficher les appareils clients locataires dans les pages de gestion des app
 
 ## <a name="requirements-for-enabling-user-management"></a>Configuration requise pour l’activation de la gestion des utilisateurs
 
-Pour que les données client s’affichent dans les rapports sur les pages de gestion des utilisateurs, notamment les utilisateurs à risque, l’authentification multifacteur et la réinitialisation de mot de passe, les locataires clients doivent disposer de licences pour Azure Active Directory Premium P1 ou version ultérieure. Azure AD Premium P1 est inclus avec Microsoft 365 Business Premium et Microsoft 365 E3.
+Pour que les données client s’affichent dans les rapports sur les pages de gestion des utilisateurs, notamment les utilisateurs à risque, l’authentification multifacteur et la réinitialisation de mot de passe, les locataires clients doivent disposer de licences pour Azure Active Directory Premium P1 ou version ultérieure. Azure AD Premium P1 est inclus avec Microsoft 365 Business Premium et Microsoft 365 E3. Azure AD Premium P2 est inclus avec Microsoft 365 E5.
 
 ## <a name="requirements-for-enabling-threat-management"></a>Configuration requise pour l’activation de la gestion des menaces
 
@@ -59,7 +59,7 @@ Antivirus Microsoft Defender fait partie du système d’exploitation Windows et
 > [!NOTE]
 > Si vous utilisez une solution antivirus non-Microsoft et que vous n’êtes pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Configurer Microsoft 365 Lighthouse sécurité du portail](m365-lighthouse-configure-portal-security.md) (article)\
 [Vue d’ensemble de la page Conformité de l’appareil dans Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\

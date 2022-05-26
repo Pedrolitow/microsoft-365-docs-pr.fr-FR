@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, obtenez de l’aide pour résoudre les messages d’erreur et les problèmes.
-ms.openlocfilehash: 3ee2190732fdd7c9022edaa172bd45909807225c
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: dd0867611eb0a77b0e45cb5471fb5789dccf0a4d
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188875"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692671"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Résoudre les messages d’erreur et les problèmes dans Microsoft 365 Lighthouse
 
@@ -37,7 +37,7 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 
 ### <a name="message-when-trying-to-access-lighthouse-you-must-be-an-indirect-reseller-or-direct-bill-partner-to-use-this-service"></a>Message lors de la tentative d’accès à Lighthouse : « Vous devez être un revendeur indirect ou un partenaire à facturation directe pour utiliser ce service »
 
-**Cause :** Vous avez tenté d’accéder à Lighthouse et n’êtes pas un partenaire Microsoft. Vous devez être inscrit au programme fournisseur de solutions Cloud (CSP) en tant que revendeur indirect ou partenaire à facturation directe pour utiliser Lighthouse.
+**Cause :** Vous avez tenté d’accéder à Lighthouse et n’êtes pas un partenaire Microsoft. Vous devez être inscrit au programme fournisseur de solutions Cloud (fournisseur de solutions Cloud) en tant que revendeur indirect ou partenaire à facturation directe pour utiliser Lighthouse.
 
 **Résolution:** Pour obtenir la liste complète des qualifications et des exigences, consultez [La configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). Si vous êtes éligible pour accéder à Lighthouse et que vous pensez avoir reçu ce message par erreur, contactez le support technique. Pour plus d’informations, consultez [Obtenir de l’aide et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
@@ -54,18 +54,18 @@ Cet article décrit les messages d’erreur et les problèmes que vous pouvez re
 **Cause :** Vos locataires clients ne répondent pas aux critères suivants :
 
 - Doit avoir configuré l’accès délégué pour que le fournisseur de services managés (MSP) puisse gérer le locataire client*
-- Doit avoir au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires ou Microsoft Defender pour les PME
+- Doit avoir au moins un Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Affaires ou Microsoft Defender pour les PME Licence
 - Ne doit pas avoir plus de 1 000 utilisateurs sous licence 
 
 **Résolution:** Le tableau suivant décrit les différents états de locataire qui nécessitent une action et explique comment les résoudre.
 
-*Des privilèges d’administrateur délégués (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir des privilèges d’administrateur délégué granulaires (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.
+*Des privilèges d’Administration délégués (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir des privilèges délégués granulaires Administration (GDAP) avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.
 
 | Statut | Description | Résolution |
 |--|--|--|
 | Inactif | Le locataire a été retiré à la demande du MSP et n’est plus géré dans Lighthouse. | Vous devez réactiver le locataire. Dans la page **Locataires** , sélectionnez les trois points (autres actions) en regard du locataire que vous souhaitez réactiver, puis sélectionnez Activer le **locataire**. L’affichage des données client initiales dans Lighthouse peut prendre de 24 à 48 heures. |
 | Non éligible - DAP ou GDAP n’est pas configuré | Vous n’avez pas de privilèges d’administrateur DAP ou GDAP configurés avec le locataire, ce qui est requis par Lighthouse. | Configurez les privilèges d’administrateur DAP ou GDAP dans l’Espace partenaires Microsoft. |
-| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3 ou Microsoft Defender pour les PME. | Assurez-vous que le locataire a au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Windows 365 Affaires ou Microsoft Defender pour les PME attribuée. |
+| Inéligible - La licence requise est manquante | Le locataire ne dispose pas d’une licence requise. Ils ont besoin d’au moins une licence Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5 ou Microsoft Defender pour les PME. | Assurez-vous que le locataire a au moins une Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Affaires ou Microsoft Defender pour les PME licence attribuée. |
 | Non éligible - Nombre d’utilisateurs dépassé | Le locataire a plus de 1 000 utilisateurs sous licence autorisés par Lighthouse. | Vérifiez que le locataire n’a pas plus de 1 000 utilisateurs sous licence. |
 | Non éligible - Échec de la vérification géographique | Vous et votre client ne résidez pas dans la même région géographique, ce qui est requis par Lighthouse. | Vérifiez que le client réside dans votre région géographique. Si ce n’est pas le cas, vous ne pouvez pas gérer le locataire dans Lighthouse. |
 | En cours de traitement | Lighthouse a découvert le locataire, mais est toujours en cours d’intégration. | Autorisez Lighthouse 48 heures à terminer l’intégration du locataire. |
@@ -78,15 +78,15 @@ Si vous avez confirmé que votre locataire client répond aux critères d’int�
 
 **Cause :** Vous n’appartenez pas au groupe de sécurité approprié dans Azure AD, ou vous n’avez pas reçu le rôle approprié dans l’Espace partenaires pour pouvoir accéder à Lighthouse.
 
-**Résolution:** Assurez-vous qu’un administrateur de votre locataire partenaire disposant des autorisations appropriées vous a affecté au groupe de sécurité GDAP approprié dans Azure AD et vous a attribué le rôle approprié dans l’Espace partenaires. En outre, gardez à l’esprit que certaines actions dans Lighthouse vous obligent à être administrateur général. Pour en savoir plus sur les rôles GDAP et ce que chaque rôle peut faire, consultez [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Pour obtenir une description détaillée de tous les Azure AD rôles et autorisations intégrés pour GDAP, consultez [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference).
+**Résolution:** Assurez-vous qu’un administrateur de votre locataire partenaire disposant des autorisations appropriées vous a affecté au groupe de sécurité GDAP approprié dans Azure AD et vous a attribué le rôle approprié dans l’Espace partenaires. En outre, gardez à l’esprit que certaines actions dans Lighthouse vous obligent à être administrateur général. Pour en savoir plus sur les rôles GDAP et ce que chaque rôle peut faire, consultez [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Pour obtenir une description détaillée de tous les rôles et autorisations intégrés Azure AD pour GDAP, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
-Pour les clients ayant des relations DAP, l’administrateur partenaire doit vous affecter au rôle Agent d’administration ou Agent du support technique dans l’Espace partenaires. Pour obtenir une description détaillée de tous les rôles et autorisations de l’Espace partenaires, consultez [Attribuer des rôles et des autorisations aux utilisateurs](/partner-center/permissions-overview).
+Pour les clients ayant des relations DAP, l’administrateur partenaire doit vous affecter au rôle d’agent Administration ou d’agent du support technique dans l’Espace partenaires. Pour obtenir une description détaillée de tous les rôles et autorisations de l’Espace partenaires, consultez [Attribuer des rôles et des autorisations aux utilisateurs](/partner-center/permissions-overview).
 
 ### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>Je ne vois pas les données complètes dans certaines zones de Lighthouse, ou je ne peux pas effectuer certaines tâches, ou je ne peux pas accéder à certains locataires
 
 **Cause :** Vous disposez d’un accès GDAP limité en fonction des rôles attribués au groupe de sécurité Azure AD dans lequel vous êtes.
 
-**Résolution:** Assurez-vous qu’un administrateur de votre locataire partenaire disposant des autorisations appropriées vous a affecté au groupe de sécurité GDAP approprié dans Azure AD. En outre, gardez à l’esprit que certaines actions dans Lighthouse vous obligent à être administrateur général. Pour en savoir plus sur les rôles GDAP et ce que chaque rôle peut faire, consultez [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Pour obtenir une description détaillée de tous les Azure AD rôles et autorisations intégrés pour GDAP, consultez [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference).
+**Résolution:** Assurez-vous qu’un administrateur de votre locataire partenaire disposant des autorisations appropriées vous a affecté au groupe de sécurité GDAP approprié dans Azure AD. En outre, gardez à l’esprit que certaines actions dans Lighthouse vous obligent à être administrateur général. Pour en savoir plus sur les rôles GDAP et ce que chaque rôle peut faire, consultez [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Pour obtenir une description détaillée de tous les rôles et autorisations intégrés Azure AD pour GDAP, consultez [les rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="customer-tenant-management"></a>Gestion des locataires clients  
 
@@ -132,7 +132,7 @@ Pour les clients ayant des relations DAP, l’administrateur partenaire doit vou
 
 Si les données n’apparaissent toujours pas dans les pages conformité des appareils et gestion des menaces après avoir suivi les instructions de résolution, contactez le support technique. Pour plus d’informations, consultez [Obtenir de l’aide et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Problèmes connus avec Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez eDiscovery (Premium) et Microsoft Graph Explorer pour rechercher et vider les messages de conversation dans Microsoft Teams et répondre aux incidents de débordement de données dans Teams.
-ms.openlocfilehash: c2202c45cc5e3caaa0af429439d44b1dfed3ac86
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 19841140d928cb96dcc734e2ce5806e15295fc88
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302071"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679629"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Rechercher et vider les messages de conversation dans Teams (préversion)
 
@@ -46,7 +46,7 @@ Voici le processus de recherche et de vidage Teams messages de conversation :
 
 ## <a name="step-1-create-a-case-in-ediscovery-premium"></a>Étape 1 : Créer un cas dans eDiscovery (Premium)
 
-La première étape consiste à créer un cas dans eDiscovery (Premium) pour gérer le processus de recherche et de vidage. Pour plus d’informations sur la création d’un cas, consultez [Utiliser le nouveau format de cas](advanced-ediscovery-new-case-format.md). 
+La première étape consiste à créer un cas dans eDiscovery (Premium) pour gérer le processus de recherche et de vidage. Pour plus d’informations sur la création d’un cas, consultez [Utiliser le nouveau format de cas](advanced-ediscovery-new-case-format.md).
 
 ## <a name="step-2-create-a-draft-collection"></a>Étape 2 : Créer un brouillon de collection
 
@@ -90,7 +90,7 @@ Avant de pouvoir vider les messages de conversation d’une boîte aux lettres, 
 
 Utilisez la liste des boîtes aux lettres contenant les messages de conversation que vous souhaitez supprimer et déterminez si une stratégie de conservation ou de rétention est affectée à ces boîtes aux lettres, puis supprimez la stratégie de conservation ou de rétention. Veillez à identifier la stratégie de conservation ou de rétention que vous supprimez afin de pouvoir réattribuer aux boîtes aux lettres à l’étape 7.
 
-Pour obtenir des instructions sur l’identification et la suppression des conservations et des stratégies de rétention, consultez « Étape 3 : Supprimer toutes les conservations de la boîte aux lettres » dans [Supprimer les éléments dans le dossier Éléments récupérables des boîtes aux lettres cloud en attente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox). 
+Pour obtenir des instructions sur l’identification et la suppression des conservations et des stratégies de rétention, consultez « Étape 3 : Supprimer toutes les conservations de la boîte aux lettres » dans [Supprimer les éléments du dossier Éléments récupérables des boîtes aux lettres cloud en attente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox).
 
 ## <a name="step-5-purge-chat-messages-from-teams"></a>Étape 5 : Vider les messages de conversation de Teams
 
@@ -112,7 +112,7 @@ Pour plus d’informations sur l’utilisation de Graph Explorer, consultez [Uti
 
 ### <a name="get-the-case-id"></a>Obtenir l’ID de la casse
 
-1. Accédez à <https://developer.microsoft.com/graph/graph-explorer> l’Explorateur Graph avec un compte auquel le rôle **Rechercher et vider** est attribué dans le portail de conformité Microsoft Purview.
+1. Accédez à <https://developer.microsoft.com/graph/graph-explorer> l’Explorateur Graph et connectez-vous avec un compte auquel le rôle **Rechercher et vider** est attribué dans le portail de conformité Microsoft Purview.
 
 2. Exécutez la requête GET suivante pour récupérer l’ID du cas eDiscovery (Premium). Utilisez la valeur `https://graph.microsoft.com/beta/compliance/ediscovery/cases` dans la barre d’adresses de la requête de requête. Veillez à sélectionner **v1.0** dans la liste déroulante des versions de l’API.
 

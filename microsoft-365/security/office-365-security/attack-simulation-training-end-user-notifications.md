@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour la formation de simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: d21e3bd48dae3f1028412beff9449a38b9f751ff
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66e3e029e8da203b35285080caa91dca3a51e5c7
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649058"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678836"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
 
@@ -31,9 +31,9 @@ Dans la formation de simulation d’attaque dans Microsoft 365 E5 ou Microsoft D
 - **Notifications de simulation** : ces messages sont envoyés lorsque les utilisateurs sont inscrits à des formations et en tant que rappels pour les formations requises.
 - **Notifications de renforcement positif :** ces messages sont envoyés lorsque les utilisateurs signalent un message de hameçonnage simulé.
 
-Pour afficher la notification de l’utilisateur final disponible, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **e-mail &'onglet** **Notifications de l’utilisateur final** de la **simulation** \> d’attaque de collaboration\>. Pour accéder directement à l’onglet **Notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>.
+Pour afficher la notification de l’utilisateur final disponible, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **e-mail &** onglet **Simulation de simulation** \> d’attaque de collaboration  \> \>, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** , utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-**L’onglet Notifications de l’utilisateur final** comporte deux onglets :
+**Les notifications de l’utilisateur final** comportent deux onglets :
 
 - **Notifications globales** : contient les notifications intégrées et non modifiables.
 - **Notifications de locataire** : contient les notifications personnalisées que vous avez créées.

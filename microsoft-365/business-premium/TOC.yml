@@ -96,6 +96,8 @@
       href: m365bp-security-incident-management.md
     - name: Passer en revue les recommandations de sécurité
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Examiner les menaces détectées sur les appareils
+      href: m365bp-review-threats-take-action.md
     - name: Passer en revue les actions de correction sur les appareils
       href: m365bp-review-remediation-actions-devices.md
     - name: Répondre à un compte de messagerie compromis

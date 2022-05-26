@@ -1,8 +1,8 @@
 ---
-title: Examiner les menaces détectées et prendre des mesures
+title: Examiner les menaces détectées sur les appareils et prendre des mesures
 f1.keywords: NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,13 +14,13 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Découvrez comment examiner et gérer les menaces détectées par Antivirus Microsoft Defender sur vos appareils Windows 10.
-ms.openlocfilehash: ebd3f099c02483427ec95959a3466348ebf1d28f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Découvrez comment examiner et gérer les menaces détectées par Antivirus Microsoft Defender sur vos appareils Windows.
+ms.openlocfilehash: 59b28ff1fe381b0d379e559427a806723dd26aac
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623712"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679257"
 ---
 # <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Examiner les menaces détectées par Antivirus Microsoft Defender et prendre des mesures
 
@@ -52,7 +52,7 @@ La procédure suivante s’applique aux clients qui ont Microsoft 365 Business P
 
 1. Accédez au Centre d'administration Microsoft 365 et <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> connectez-vous.
 
-2. Dans la page de navigation, sélectionnez **AppareilsActive** > . Vous verrez une liste des appareils actifs et des détails, tels que l’état de protection, l’état de protection antivirus (AV) et le nombre de menaces actives détectées.
+2. Dans la page de navigation, sélectionnez **Appareils** > **actifs**. Vous verrez une liste des appareils actifs et des détails, tels que l’état de protection, l’état de protection antivirus (AV) et le nombre de menaces actives détectées.
 
 3. Sélectionnez un appareil pour afficher plus de détails sur cet appareil et les actions disponibles. Un menu volant s’ouvre avec des recommandations et des actions disponibles, telles que **la stratégie de mise à jour**, **l’antivirus update**, **l’exécution d’une analyse rapide**, **l’exécution d’une analyse complète**, etc.
 

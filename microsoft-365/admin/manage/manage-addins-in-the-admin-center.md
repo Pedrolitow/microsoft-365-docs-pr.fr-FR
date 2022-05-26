@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des compléments centralisés pour déployer des compléments sur les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 96bbdf5d4d9e4f1697fa0b85f902d8d758d356fa
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435432"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678961"
 ---
 # <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Gérer les compléments dans le Centre d'administration Microsoft 365
 
 Office compléments vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web. Voir [Démarrer à l’aide de votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
-Une fois qu’un administrateur a déployé des compléments pour les utilisateurs d’une organisation, il peut désactiver ou activer les compléments, modifier, supprimer et gérer l’accès aux compléments.
+Une fois qu’un administrateur général ou exchange déploie des compléments pour les utilisateurs d’une organisation, il peut désactiver ou activer les compléments, modifier, supprimer et gérer l’accès aux compléments.
 
 Pour plus d’informations sur l’installation de compléments à partir du Centre d’administration, consultez [Déployer des compléments dans le Centre d’administration](./manage-deployment-of-add-ins.md).
   
@@ -44,7 +44,7 @@ Un complément peut être **activé ou** **désactivé** .
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
-|**Actif**  <br/> |L’administrateur a chargé le complément et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
+|**Actif**  <br/> |Administration chargé le complément et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
 |**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l'état du complément est modifié en Actif, les utilisateurs et groupes ont de nouveau accès à celui-ci.  <br/> |
 |**Deleted**  <br/> |Un administrateur a supprimé le complément.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> |
    
@@ -146,7 +146,7 @@ Si le complément déployé ne prend pas en charge les commandes de complément 
     
 3. Double-cliquez sur le complément que vous avez déployé précédemment (dans cet exemple, **Citations**).
 
-    ![Onglet Administration gérée de la page Office Compléments.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Administration onglet Managé de la page compléments Office.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>Dans Outlook
 

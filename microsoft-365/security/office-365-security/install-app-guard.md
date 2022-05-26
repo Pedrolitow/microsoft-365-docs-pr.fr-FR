@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation basée sur le matériel. Empêchez les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 17743c3aecc50724309ab17c9bcaf2ab10d8ab9b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973242"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678983"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour Office pour les administrateurs
 
@@ -29,7 +29,7 @@ ms.locfileid: "64973242"
 
 Protection d'application Microsoft Defender pour Office (Application Guard pour Office) permet d’empêcher les fichiers non approuvés d’accéder aux ressources approuvées, ce qui protège votre entreprise contre les attaques nouvelles et émergentes. Cet article guide les administrateurs dans la configuration des appareils pour une préversion d’Application Guard pour Office. Il fournit des informations sur la configuration système requise et les étapes d’installation pour activer Application Guard pour Office sur un appareil.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 ### <a name="minimum-hardware-requirements"></a>Configuration matérielle minimum requise
 
@@ -48,10 +48,14 @@ Pour en savoir plus sur Office canaux de mise à jour, consultez [Vue d’ensemb
 
 ### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-* Microsoft 365 E5 ou Microsoft 365 E5 Sécurité
+* Microsoft 365 E5 Sécurité
+* Microsoft 365 A5 pour les enseignants
+* Microsoft 365 A5 pour les étudiants
 
 > [!NOTE]
 > Applications Microsoft 365 pour les grandes entreprises avec activation d’ordinateur partagé ou licence basée sur l’appareil n’ont pas accès à Application Guard pour Office.
+>
+> les plans de licence Coffre Documents autorisent l’accès à Application Guard pour Office. Pour plus d’informations, consultez [Coffre Documents dans Microsoft 365 E5/A5](/microsoft-365/security/office-365-security/safe-docs).
 
 ## <a name="deploy-application-guard-for-office"></a>Déployer Application Guard pour Office
 
@@ -69,11 +73,11 @@ Pour en savoir plus sur Office canaux de mise à jour, consultez [Vue d’ensemb
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. Recherchez **Protection d'application Microsoft Defender en mode managé**, une stratégie de groupe dans **les\\ modèles Computer ConfigurationAdministrative\\ Windows Components\\ Protection d'application Microsoft Defender**. Activez cette stratégie en définissant la valeur sous Options **sur 2** ou **3**, puis en sélectionnant **OK** ou **Appliquer**.
+3. Recherchez **Protection d'application Microsoft Defender en mode managé**, une stratégie de groupe dans **les\\ modèles d’administration de configuration\\par ordinateur Windows composants\\ Protection d'application Microsoft Defender**. Activez cette stratégie en définissant la valeur sous Options **sur 2** ou **3**, puis en sélectionnant **OK** ou **Appliquer**.
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="Option permettant d’activer le groupe de disponibilité en mode managé" lightbox="../../media/ag04-deploy.png":::
 
-   Au lieu de cela, vous pouvez définir la stratégie CSP correspondante :
+   Au lieu de cela, vous pouvez définir la stratégie de fournisseur de solutions Cloud correspondante :
 
    > OMA-URI : **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Paramètres/AllowWindowsDefenderApplicationGuard** <br> Type de données : **Entier** <br> Valeur : **2**
 
@@ -210,7 +214,7 @@ Vous pouvez également configurer Microsoft Defender pour Office 365 pour qu’i
 
 * Les fichiers non approuvés provenant de partages réseau ou de fichiers partagés à partir de OneDrive, OneDrive Entreprise ou SharePoint Online d’une autre organisation s’ouvrent en lecture seule dans Application Guard. Les utilisateurs peuvent enregistrer une copie locale de ces fichiers pour continuer à travailler dans le conteneur ou supprimer la protection pour travailler directement avec le fichier d’origine.
 
-* Les fichiers protégés par la Gestion des droits relatifs à l’information (IRM) sont bloqués par défaut. Si les utilisateurs souhaitent ouvrir ces fichiers en mode protégé, un administrateur doit configurer les paramètres de stratégie pour les types de fichiers non pris en charge pour l’organisation.
+* Les fichiers protégés par information Rights Management (IRM) sont bloqués par défaut. Si les utilisateurs souhaitent ouvrir ces fichiers en mode protégé, un administrateur doit configurer les paramètres de stratégie pour les types de fichiers non pris en charge pour l’organisation.
 
 * Les personnalisations apportées aux applications Office dans Application Guard pour Office ne sont pas conservées après qu’un utilisateur s’est déconnecté et s’est reconnecté ou après le redémarrage de l’appareil.
 
@@ -237,7 +241,7 @@ Lorsque cette heuristique est remplie, Office crée un conteneur Application Gua
 
 * La sélection de liens web (`http` ou `https`) n’ouvre pas le navigateur.
 * Le paramètre par défaut de la stratégie de protection copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.
-* Le paramètre par défaut pour la stratégie de protection des types de fichiers non pris en charge consiste à bloquer l’ouverture de types de fichiers non pris en charge non approuvés chiffrés ou dont la gestion des droits relatifs à l’information (IRM) est définie. Cela inclut les fichiers chiffrés à l’aide d’étiquettes de confidentialité de Microsoft Purview Information Protection.
+* Le paramètre par défaut pour la stratégie de protection des types de fichiers non pris en charge consiste à bloquer l’ouverture de types de fichiers non pris en charge non approuvés chiffrés ou dont l’Rights Management d’informations (IRM) est définie. Cela inclut les fichiers chiffrés à l’aide d’étiquettes de confidentialité de Protection des données Microsoft Purview.
 * Les fichiers CSV et HTML ne sont pas pris en charge pour l’instant.
 * Application Guard pour Office ne fonctionne actuellement pas avec les volumes compressés NTFS. Si vous voyez une erreur « ERROR_VIRTUAL_DISK_LIMITATION », essayez de décompresser le volume.
 * Les mises à jour de .NET peuvent entraîner l’échec de l’ouverture des fichiers dans Application Guard. En guise de solution de contournement, les utilisateurs peuvent redémarrer leur appareil lorsqu’ils rencontrent cet échec. En savoir plus sur le problème lors de la [réception d’un message d’erreur lors de la tentative d’ouverture de Protection d'application Windows Defender ou de Bac à sable Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

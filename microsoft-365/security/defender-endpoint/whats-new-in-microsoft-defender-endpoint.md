@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468797"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679273"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -63,6 +63,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 ## <a name="may-2022"></a>Mai 2022
 - [Protection contre les falsifications pour macOS (préversion)](tamperprotection-macos.md)<br>La protection contre les falsifications permet d’empêcher la suppression non autorisée de Microsoft Defender pour point de terminaison sur macOS.
 
+- [Ajouter des appareils de contrôleur de domaine - Amélioration du laboratoire d’évaluation (préversion)](evaluation-lab.md#add-a-domain-controller-preview)<br>Ajoutez un contrôleur de domaine pour exécuter des scénarios complexes tels que le déplacement latéral et les attaques multiphases sur plusieurs appareils.
 
 ## <a name="april-2022"></a>Avril 2022
 - [Mise à jour de l’intégration et de la parité des fonctionnalités pour Windows Server 2012 R2 et Windows Server 2016)](configure-server-endpoints.md)<br/> Le nouveau package de solution unifié est désormais en disponibilité générale et facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifié est fourni avec de nombreuses nouvelles améliorations de fonctionnalités.

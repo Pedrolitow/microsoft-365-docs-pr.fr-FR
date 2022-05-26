@@ -16,19 +16,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c5bdf0cb91853f993a2328b5f92f878de1101e76
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 2bc051baa8d2ac6df9e29f1679402e63c2774cac
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669625"
+ms.locfileid: "65679305"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -61,7 +61,7 @@ La section *antivirusEngine* du profil de configuration est utilisée pour gére
 |---|---|
 |**Clé**|antivirusEngine|
 |**Type de données**|Dictionnaire (préférence imbriqué)|
-|**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
+|**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |
 
 #### <a name="enforcement-level-for-antivirus-engine"></a>Niveau de mise en œuvre pour le moteur antivirus
@@ -103,7 +103,7 @@ Détermine si la fonctionnalité de surveillance et de blocage du comportement e
 |**Clé**|behaviorMonitoring|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|désactivé (par défaut) <p> activé |
-|**Comments**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
+|**Commentaires**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
 
@@ -246,7 +246,7 @@ Utilisé pour exclure du contenu de l’analyse par extension de fichier.
 |**Clé**|Extension|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|extensions de fichier valides|
-|**Commentaires**|Applicable uniquement si *$type* est *excluFileExtension*|
+|**Comments**|Applicable uniquement si *$type* est *excluFileExtension*|
 |
 
 ##### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse*
@@ -307,7 +307,7 @@ La préférence *threatTypeSettings* dans le moteur antivirus est utilisée pour
 |---|---|
 |**Clé**|threatTypeSettings|
 |**Type de données**|Dictionnaire (préférence imbriqué)|
-|**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
+|**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |
 
 ##### <a name="threat-type"></a>Type de menace
@@ -491,7 +491,6 @@ Le profil de configuration suivant :
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
@@ -522,7 +521,6 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,

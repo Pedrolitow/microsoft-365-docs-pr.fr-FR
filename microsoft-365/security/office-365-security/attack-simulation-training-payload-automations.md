@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à utiliser les automatisations de charge utile (collecte de charge utile) pour collecter et lancer des simulations automatisées pour l’entraînement de simulation d’attaque dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 5b008dc25ee3b705f212b1fac1bf3779f1de8bda
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7fb3b0bbad5bbec8044a94da1943b0bd25eba865
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647510"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679371"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatisations de charge utile pour l’entraînement de simulation d’attaque
 
@@ -29,18 +29,18 @@ Dans la formation de simulation d’attaque dans Microsoft 365 E5 ou Microsoft D
 
 Pour créer une automatisation de charge utile, procédez comme suit :
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com/>l’onglet **Automatisations** de la charge \> utile d’entraînement de simulation **d’attaque** & **collaboration**\>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com/>l’onglet **Automatisations** de la charge utile de l’onglet \> Email **& Collaboration** \> **Attack Simulation Training** \> **Automations**.
 
-   Pour accéder directement à l’onglet **Automations de charge utile** , utilisez <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
+   Pour accéder directement à l’onglet **Automations** , utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. Sous l’onglet **Automations de la charge utile** , sélectionnez ![l’icône Créer une automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
+2. Dans **Les automatisations de charge utile**, sélectionnez ![l’icône Créer une automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automations de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. L’Assistant Création s’ouvre. Le reste de cet article décrit les pages et les paramètres qu’elles contiennent.
 
 > [!NOTE]
-> À tout moment pendant l’Assistant création, vous pouvez cliquer sur **Enregistrer et fermer** pour enregistrer votre progression et continuer à configurer l’automatisation de la charge utile ultérieurement. Vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant l’automatisation de la charge utile sous l’onglet **Automations de charge utile** , puis en cliquant sur ![l’icône Modifier l’automatisation.](../../media/m365-cc-sc-edit-icon.png) **Modifier l’automatisation**.
+> À tout moment pendant l’Assistant création, vous pouvez cliquer sur **Enregistrer et fermer** pour enregistrer votre progression et continuer à configurer l’automatisation de la charge utile ultérieurement. Vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant l’automatisation de charge utile dans **les automatisations** de charge utile, puis en ![cliquant sur l’icône Modifier l’automatisation.](../../media/m365-cc-sc-edit-icon.png) **Modifier l’automatisation**.
 
 ## <a name="automation-name"></a>Nom de l’automatisation
 
