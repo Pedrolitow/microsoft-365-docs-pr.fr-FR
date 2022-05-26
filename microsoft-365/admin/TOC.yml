@@ -14,13 +14,7 @@
         - name: Planifier votre installation de Microsoft 365 pour les entreprises
           href: setup/plan-your-setup.md
         - name: S’inscrire à Microsoft 365 Business Premium
-          items:
-            - name: S’inscrire
-              href: ../business/sign-up.md
-            - name: Configurer Microsoft 365 Entreprise à l'aide de l'Assistant de configuration
-              href: ../business/set-up.md
-            - name: Microsoft 365 Entreprise Premium (vidéo)
-              href: admin-overview/what-is-microsoft-365.md
+          href: ../business-premium/index.md
         - name: "S’inscrire à Microsoft\_365 Business Standard"
           items:
             - name: "S’inscrire à Microsoft\_365 Business Standard"
@@ -352,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: Activer l’authentification moderne pour Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Conditions préalables pour la protection des données
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Menaces détectées par l’antivirus Microsoft Defender
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: Configurer les fonctionnalités de conformité
@@ -366,29 +358,7 @@
       items:
         - name: Méthodes de protection des données des appareils et des applications
           href: devices/choose-device-security.md
-        - name: Documentation Microsoft Intune
-          href: /mem/intune/
-        - name: Affichage et modification des stratégies et des appareils
-          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
-        - name: Supprimer les données de l’entreprise
-          href: /microsoft-365/business-premium/m365bp-remove-company-data
-        - name: Rétablissement des paramètres d’usine des appareils
-          href: devices/reset-devices-to-factory-settings.md
-        - name: Mappage des fonctionnalités de protection avec les paramètres Intune
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
-        - name: États des appareils
-          href: devices/device-states.md
-        - name: Paramètres de protection des applications pour les PC Windows 10
-          href: devices/protection-settings-for-windows-10-devices.md
         - name: Validation des paramètres sur Android ou iOS
-        - name: Autopilot
-          items:
-            - name: Créer et modifier des profils AutoPilot
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
-            - name: Créer et modifier des appareils AutoPilot
-              href: devices/create-and-edit-autopilot-devices.md
-        - name: Documentation Microsoft 365 Entreprise
-          href: ../enterprise/index.yml
         - name: Mobility + Security de Base
           items:
             - name: Vue d’ensemble de la fonction Mobility + Security de Base

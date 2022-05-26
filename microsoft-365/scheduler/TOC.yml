@@ -12,5 +12,7 @@
       href: scheduler-using.md
     - name: Planification de réunions périodiques
       href: scheduler-recurring-meetings.md
+    - name: Préférences du planificateur pour Microsoft 365
+      href: scheduler-preferences.md
     - name: 'FAQ sur le planificateur pour Microsoft 365 '
       href: scheduler-faqs.md
