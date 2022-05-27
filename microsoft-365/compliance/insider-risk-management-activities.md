@@ -1,7 +1,7 @@
 ---
 title: Examiner les activités de gestion des risques internes
-description: En savoir plus sur l’examen des activités de gestion des risques internes dans Microsoft 365
-keywords: Microsoft 365, risque interne, gestion des risques, conformité
+description: En savoir plus sur l’examen des activités de gestion des risques internes dans Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, risque interne, gestion des risques, conformité
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b53b67433bea08e20b082f555c26d41edce55daa
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783334"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759865"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’examen des activités des utilisateurs à risque est une première étape importante dans la réduction des risques internes pour votre organisation. Ces risques peuvent être des activités qui génèrent des alertes à partir de stratégies de gestion des risques internes, ou des risques liés à des activités détectées par des stratégies, mais qui ne créent pas immédiatement une alerte de gestion des risques internes pour les utilisateurs. Vous pouvez examiner ces types d’activités à l’aide des **rapports d’activité utilisateur (préversion)** ou du **tableau de bord Alerte**.
 
@@ -105,7 +107,7 @@ Cela peut aider à gagner du temps de triage pour que les analystes et les enqu�
 
 Pour ignorer une alerte de risque interne, procédez comme suit :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Alertes**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Alertes**.
 2. Dans le **tableau de bord Alertes**, sélectionnez l’alerte (ou les alertes) avec un état de *révision des besoins* que vous souhaitez ignorer.
 3. Dans la barre de commandes Alertes, sélectionnez **Ignorer les alertes**.
 4. Dans le volet **Ignorer les détails des alertes** , vous pouvez consulter les détails de l’utilisateur et de la stratégie associés aux alertes sélectionnées.
@@ -115,7 +117,7 @@ Pour ignorer une alerte de risque interne, procédez comme suit :
 
 Pour trier une alerte de risque interne, effectuez les étapes suivantes :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Alertes**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Alertes**.
 2. Dans le **tableau de bord Alertes**, sélectionnez l’alerte à trier.
 3. Dans la page **détails** de l’alerte, vous pouvez consulter les informations relatives à l’alerte. Vous pouvez confirmer l’alerte et créer un cas, confirmer l’alerte et l’ajouter à un cas existant, ou ignorer l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertoriés comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
 
@@ -168,7 +170,7 @@ Le graphique **d’activité utilisateur** est l’un des outils les plus puissa
     - **Catégorie de risque** : Filtrer les activités selon les catégories de risque suivantes : *Activités avec des scores de risque > 15 (sauf dans une séquence)* et *activités de séquence*.
     - **Type d’activité** : Filtrez les activités selon les types suivants : *Accès*, *Suppression*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation* et *Sécurité*.
     - **Trier par** : répertorie les activités de chronologie par *date ou* *score de risque*.
-4. **Séquence de risques (préversion)** : l’ordre chronologique des activités à risque est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus grande. Cette vue des activités peut aider les enquêteurs à « connecter les points » littéralement aux activités à risque qui auraient pu être considérées comme des événements isolés ou ponctuels. Sélectionnez une bulle dans la séquence pour afficher les détails de toutes les activités à risque associées. Les détails sont les suivants :
+4. **Séquence de** risques : l’ordre chronologique des activités à risque est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus grande. Cette vue des activités peut aider les enquêteurs à « connecter les points » littéralement aux activités à risque qui auraient pu être considérées comme des événements isolés ou ponctuels. Sélectionnez une bulle dans la séquence pour afficher les détails de toutes les activités à risque associées. Les détails sont les suivants :
 
     - **Nom** de la séquence.
     - **Plage de dates** ou **de dates** de la séquence.
@@ -207,7 +209,7 @@ Utilisez l’étendue d’activité et les filtres d’insights sur les risques 
 
 Pour utiliser **l’Explorateur d’activités**, procédez comme suit :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Alertes**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Alertes**.
 2. Dans le **tableau de bord Alertes**, sélectionnez l’alerte à trier.
 3. Dans le **volet Détails des alertes**, sélectionnez **Ouvrir la vue développée**.
 4. Dans la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités** .
@@ -225,9 +227,9 @@ Lorsque vous sélectionnez les événements d’une activité dans la chronologi
 
 À mesure que l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité à risque. Pour créer un cas d’alerte, procédez comme suit :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Alertes**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Alertes**.
 2. Dans le **tableau de bord Alertes**, sélectionnez l’alerte pour laquelle vous souhaitez confirmer et créer un cas.
-3. Dans le **volet Détails des alertes**, sélectionnez **Alertes ActionsConfirm** >  **& créer un cas**.
+3. Dans le **volet Détails des alertes**, sélectionnez **Actions** > **Confirm alerts & create case**.
 4. Dans la boîte de dialogue **Confirmer l’alerte et créer un cas de risque interne** , entrez un nom pour le cas, sélectionnez les utilisateurs à ajouter en tant que contributeurs et ajoutez des commentaires le cas échéant. Les commentaires sont automatiquement ajoutés au cas en tant que note de cas.
 5. Sélectionnez **Créer un cas** pour créer un cas ou sélectionnez **Annuler** pour fermer la boîte de dialogue sans créer de cas.
 
@@ -239,7 +241,7 @@ Une fois le cas créé, les enquêteurs et les analystes peuvent gérer et agir 
 
 Pour réduire le nombre d’éléments plus anciens qui fournissent une valeur actuelle limitée, la conservation et les limites suivantes s’appliquent aux alertes de gestion des risques internes, aux cas et aux rapports d’activité des utilisateurs :
 
-|Item|Rétention/limite|
+|Élément|Rétention/limite|
 |---|---|
 |Alertes avec l’état de révision des besoins|120 jours après la création de l’alerte, puis supprimé automatiquement|
 |Cas actifs (et artefacts associés)|Rétention indéfinie, jamais expirer|
@@ -274,4 +276,4 @@ Les utilisateurs du milieu de travail moderne ont souvent une grande variété d
 
 - **Concentrez d’abord les efforts des analystes et des enquêteurs sur les alertes à risque le plus élevé**. Selon vos stratégies, vous pouvez capturer des activités et générer des alertes avec différents degrés d’impact potentiel sur vos efforts d’atténuation des risques. [Filtrez les alertes](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) par gravité et *hiérarchisez* les alertes de gravité élevée.
 - **Affecter des utilisateurs en tant qu’analystes et enquêteurs**. Le fait d’affecter le bon utilisateur aux rôles appropriés est une partie importante du processus de révision des alertes de risque interne. Vérifiez que vous avez affecté les utilisateurs appropriés aux *groupes de rôles Analystes de gestion des risques internes* et *Enquêteurs de gestion des risques internes* .  
-- **Utilisez des fonctionnalités de risque interne automatisé pour vous aider à découvrir les activités à risque le plus élevé**. Les fonctionnalités de [détection de séquence](insider-risk-management-policies.md#sequence-detection-preview) de gestion des risques internes et de [détection d’exfiltration cumulative](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) peuvent vous aider à découvrir rapidement les risques plus difficiles à détecter dans votre organisation. Envisagez d’affiner vos [boosters de score de risque](insider-risk-management-settings.md#indicators), [les exclusions de type de fichier](insider-risk-management-settings.md#file-type-exclusions), [les domaines](insider-risk-management-settings.md#domains) et les [paramètres de seuil d’indicateur](insider-risk-management-settings.md#indicator-level-settings-preview) minimum pour vos stratégies.
+- **Utilisez des fonctionnalités de risque interne automatisé pour vous aider à découvrir les activités à risque le plus élevé**. Les fonctionnalités de [détection de séquence](insider-risk-management-policies.md#sequence-detection) de gestion des risques internes et de [détection d’exfiltration cumulative](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) peuvent vous aider à découvrir rapidement les risques plus difficiles à détecter dans votre organisation. Envisagez d’affiner vos [boosters de score de risque](insider-risk-management-settings.md#indicators), [les exclusions de type de fichier](insider-risk-management-settings.md#file-type-exclusions), [les domaines](insider-risk-management-settings.md#domains) et les [paramètres de seuil d’indicateur](insider-risk-management-settings.md#indicator-level-settings-preview) minimum pour vos stratégies.

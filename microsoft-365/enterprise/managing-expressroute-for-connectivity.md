@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Découvrez comment gérer ExpressRoute pour Office 365, y compris les zones courantes à configurer comme le filtrage de préfixe, la sécurité et la conformité.
-ms.openlocfilehash: a601c047a7b8e19f02a728d00708689c795d5a64
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098315"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753867"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -39,7 +39,7 @@ Microsoft recommande aux clients d’accepter tous les itinéraires BGP tels qu�
   
 Si vous avez besoin d’une validation supplémentaire de la propriété des itinéraires dans le peering public ExpressRoute, vous pouvez vérifier les itinéraires publiés par rapport à la liste de tous les préfixes IP IPv4 et IPv6 qui représentent [les plages d’adresses IP publiques de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Ces plages couvrent l’espace d’adressage Microsoft complet et changent rarement, fournissant un ensemble fiable de plages à filtrer par rapport à qui fournit également une protection supplémentaire aux clients qui sont préoccupés par les itinéraires non appartenant à Microsoft qui fuitent dans leur environnement. En cas de modification, elle est effectuée le 1er du mois et le numéro de version dans la section **détails** de la page change chaque fois que le fichier est mis à jour.
   
-Il existe plusieurs raisons d’éviter l’utilisation des [URL Office 365 et des plages d’adresses IP](./urls-and-ip-address-ranges.md) pour générer des listes de filtres de préfixe. Y compris les éléments suivants :
+Il existe de nombreuses raisons d’éviter l’utilisation des [URL Office 365 et des plages d’adresses IP pour générer des listes de filtres](./urls-and-ip-address-ranges.md) de préfixe. Y compris les éléments suivants :
   
 - Les préfixes IP Office 365 subissent fréquemment de nombreuses modifications.
 
@@ -49,7 +49,7 @@ Il existe plusieurs raisons d’éviter l’utilisation des [URL Office 365 et d
 
 |**Option**|**Complexité**|**Modifier le contrôle**|
 |:-----|:-----|:-----|
-|Accepter tous les itinéraires Microsoft  <br/> |**Faible:** Le client s’appuie sur les contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement détenus.  <br/> |Aucune  <br/> |
+|Accepter tous les itinéraires Microsoft  <br/> |**Faible:** Le client s’appuie sur les contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement détenus.  <br/> |Aucun  <br/> |
 |Filtrer les supernets appartenant à Microsoft  <br/> |**Moyen:** Le client implémente des listes de filtres de préfixe résumées pour autoriser uniquement les itinéraires appartenant à Microsoft.  <br/> |Les clients doivent s’assurer que les mises à jour peu fréquentes sont reflétées dans les filtres de routage.  <br/> |
 |Filtrer Office 365 plages d’adresses IP  <br/> [!CAUTION] Not-Recommended |**Haute:** Le client filtre les itinéraires en fonction des préfixes OFFICE 365 IP définis.  <br/> |Les clients doivent implémenter un processus de gestion des modifications robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes en cours. Les modifications non implémentées dans le temps entraîneront probablement une interruption de service.   |
 
@@ -59,7 +59,7 @@ Quelle que soit la façon dont vous gérez les annonces de routage BGP en proven
   
 ### <a name="security"></a>Sécurité
 
-Microsoft vous recommande de gérer vos propres contrôles de périmètre de réseau et de sécurité pour les connexions allant et depuis le peering Public ExpressRoute et Microsoft, qui incluent les connexions vers et depuis Office 365 services. Des contrôles de sécurité doivent être en place pour les demandes réseau sortantes de votre réseau vers le réseau de Microsoft et entrantes du réseau microsoft vers votre réseau.
+Microsoft vous recommande de gérer vos propres contrôles de périmètre de réseau et de sécurité pour les connexions allant et depuis le peering Public ExpressRoute et Microsoft, qui incluent les connexions vers et depuis Office 365 services. Des contrôles de sécurité doivent être en place pour les demandes réseau sortantes de votre réseau vers le réseau de Microsoft et entrantes depuis le réseau de Microsoft vers votre réseau.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>Sortant du client vers Microsoft
   
@@ -72,7 +72,7 @@ Pour les contrôles ajoutés, vous pouvez utiliser le filtrage au niveau du nom 
 
 |**Option**|**Complexité**|**Modifier le contrôle**|
 |:-----|:-----|:-----|
-|Aucune restriction  <br/> |**Faible:** Le client autorise un accès sortant illimité à Microsoft.  <br/> |Aucune  <br/> |
+|Aucune restriction  <br/> |**Faible:** Le client autorise un accès sortant illimité à Microsoft.  <br/> |Aucun  <br/> |
 |Restrictions de port  <br/> |**Faible:** Le client restreint l’accès sortant à Microsoft par les ports attendus.  <br/> |Rares.  <br/> |
 |Restrictions relatives au nom de domaine complet  <br/> |**Haute:** Le client restreint l’accès sortant aux Office 365 en fonction des noms de domaine complets publiés.  <br/> |Modifications mensuelles.  <br/> |
 
@@ -86,7 +86,7 @@ Il existe plusieurs scénarios facultatifs qui nécessitent que Microsoft établ
 
 - Courrier d’un locataire Exchange Online vers un hôte local.
 
-- SharePoint envoi de courrier en ligne de SharePoint Online à un hôte local.
+- SharePoint courrier en ligne envoyé de SharePoint Online à un hôte local.
 
 - [SharePoint recherche hybride fédérée](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 

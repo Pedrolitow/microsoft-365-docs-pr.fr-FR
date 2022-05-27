@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 45e63c489093c147895c467c3471f16a8bb99918
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: c454a21b6ad696b84e3b04e20b42fd1d1a0a8b19
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368328"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739536"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -128,6 +128,9 @@ Si vous avez besoin d’informations sur ce qui a changé à partir du Centre de
 
 > [!NOTE]
 > Le portail Microsoft 365 Defender utilise et applique l’accès en fonction des rôles existant et déplace chaque modèle de sécurité dans le portail unifié. Chaque charge de travail convergée a son propre accès en fonction des rôles. Les rôles déjà présents dans les produits seront convergés automatiquement vers le portail Microsoft 365 Defender. Toutefois, Microsoft Defender for Cloud Apps gère toujours ses propres rôles et autorisations.
+
+Regardez cette courte vidéo pour en savoir plus sur le nouveau portail unifié dans Microsoft 365 Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ### <a name="what-to-expect"></a>À quoi s’attendre
 

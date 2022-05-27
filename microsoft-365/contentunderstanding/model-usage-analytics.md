@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment trouver plus d’informations sur les performances de vos modèles de compréhension de document et de traitement des formulaires.
-ms.openlocfilehash: e9586bbbd8510611747b81424f1fbe494f212cc5
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 830a56ab4dd0145f1385d628405ee4287de19595
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916180"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754751"
 ---
 # <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analyser la façon dont vos modèles sont utilisés dans Microsoft SharePoint Syntex
 
@@ -39,12 +39,12 @@ Votre centre de contenu SharePoint Syntex procède à une analyse de l’utilisa
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Regroupement des données d’utilisation des modèles dans le centre de contenu par défaut
 
-Dans SharePoint Syntex, le programme crée le centre de contenu par défaut pendant l’installation. Vous pouvez également créer des centres de contenu supplémentaires selon vos besoins. Par exemple, les services peuvent créer leurs propres centres de contenu pour créer et gérer leurs modèles. 
+Dans SharePoint Syntex, le programme crée le centre de contenu par défaut pendant l’installation. D’autres centres de contenu peuvent également être créés en fonction des besoins. Par exemple, les services peuvent créer leurs propres centres de contenu pour créer et gérer leurs modèles. 
 
-En ce qui concerne les données d’analyse de l’utilisation du modèle, notez les points suivants :
+En ce qui concerne l’analyse de l’utilisation des modèles, notez que :
 
-- Votre centre de contenu par défaut affiche les données d’analyse de l’utilisation des modèles pour l’ensemble des centres de contenu et modèles de votre organisation, y compris ceux créés dans d’autres centres de contenu. Les responsables de contenu et les autres parties prenantes bénéficient ainsi d’un portail centralisé pour gérer et superviser les centres de contenu et les modèles dans toute l’entreprise.  
-- Les autres centres de contenu affichent uniquement les données d’analyse de l’utilisation des modèles pour les modèles qui y ont été créés. Les gestionnaires de contenu disposent ainsi des données d’utilisation des seuls modèles qui les intéressent.
+- Votre centre de contenu par défaut affiche l’analyse de l’utilisation des modèles pour tous les centres de contenu et modèles de votre organisation, y compris ceux créés dans d’autres centres de contenu. Les responsables de contenu et les autres parties prenantes bénéficient ainsi d’un portail centralisé pour gérer et superviser les centres de contenu et les modèles dans toute l’entreprise.  
+- Les autres centres de contenu affichent uniquement les données d’analyse de l’utilisation des modèles pour les modèles qui y ont été créés. Cela donne aux gestionnaires de contenu des insights sur les données d’utilisation pour uniquement les modèles qui les intéressent.
 
 
 ## <a name="classification-by-model"></a>Classification par modèle
@@ -77,7 +77,7 @@ Chaque modèle dans la liste d’utilisation des modèles affiche les données d
 
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 [Créer un classifieur](create-a-classifier.md)
 
 [Créer un extracteur](create-an-extractor.md)

@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connecter sur une machine virtuelle dans Azure pour synchroniser des comptes entre votre annuaire local et le locataire Azure AD.
-ms.openlocfilehash: 077fe85307b5c64c5ece9d710a3ad171d04a21da
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e04a3a4e681ab50b767670cfd419d29cd95556e7
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092158"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753383"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
 
-Azure Active Directory (Azure AD) Connecter (anciennement l’outil de synchronisation d’annuaires, l’outil de synchronisation d’annuaires ou l’outil DirSync.exe) est une application que vous installez sur un serveur joint à un domaine pour synchroniser vos utilisateurs Active Directory local Domain Services (AD DS) avec le Azure AD locataire de votre abonnement Microsoft 365. Microsoft 365 utilise Azure AD pour son service d’annuaire. Votre abonnement Microsoft 365 inclut un locataire Azure AD. Ce client peut également être utilisé pour la gestion des identités de votre organisation avec d’autres charges de travail de cloud, y compris d’autres applications SaaS et des applications dans Azure.
+Azure Active Directory (Azure AD) Connecter (anciennement l’outil de synchronisation d’annuaires, l’outil de synchronisation d’annuaires ou l’outil DirSync.exe) est une application que vous installez sur un serveur joint à un domaine pour synchroniser vos utilisateurs Active Directory local Domain Services (AD DS) avec le locataire Azure AD de votre Microsoft 365 abonnement. Microsoft 365 utilise Azure AD pour son service d’annuaire. Votre abonnement Microsoft 365 inclut un locataire Azure AD. Ce client peut également être utilisé pour la gestion des identités de votre organisation avec d’autres charges de travail de cloud, y compris d’autres applications SaaS et des applications dans Azure.
 
-Vous pouvez installer Azure AD Connect sur un serveur local, mais également sur une machine virtuelle dans Azure, pour les raisons suivantes :
+Vous pouvez installer Azure AD Connecter sur un serveur local, mais vous pouvez également l’installer sur une machine virtuelle dans Azure pour les raisons suivantes :
   
 - Vous pouvez mettre en service et configurer les serveurs cloud plus rapidement, les rendant ainsi disponibles plus tôt pour vos utilisateurs.
 - Azure offre une meilleure disponibilité de site avec moins d'efforts.
@@ -44,11 +44,11 @@ Cette solution exige une connectivité entre votre réseau local et votre résea
   
 ## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Vue d’ensemble du déploiement de Microsoft 365 synchronisation d’annuaires dans Azure
 
-Le diagramme suivant montre Azure AD Connecter en cours d’exécution sur une machine virtuelle dans Azure (le serveur de synchronisation d’annuaires) qui synchronise une forêt AD DS locale avec un abonnement Microsoft 365.
+Le diagramme suivant montre azure AD Connecter en cours d’exécution sur une machine virtuelle dans Azure (le serveur de synchronisation d’annuaires) qui synchronise une forêt AD DS locale avec un abonnement Microsoft 365.
   
-![Azure AD Connecter outil sur une machine virtuelle dans Azure qui synchronise des comptes locaux avec le locataire Azure AD d’un abonnement Microsoft 365 avec le flux de trafic.](../media/CP-DirSyncOverview.png)
+![Azure AD Connecter outil sur une machine virtuelle dans Azure synchronisant des comptes locaux avec le locataire Azure AD d’un abonnement Microsoft 365 avec flux de trafic.](../media/CP-DirSyncOverview.png)
   
-Dans le diagramme, il y a deux réseaux reliés par une connexion de site à site VPN ou ExpressRoute. Il existe un réseau local contenant les contrôleurs de domaine AD DS et un réseau virtuel Azure avec un serveur de synchronisation d’annuaires, qui est une machine virtuelle exécutant [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Il existe deux flux de trafic principal à partir du serveur de synchronisation d’annuaires d’origine :
+Dans le schéma, il existe deux réseaux connectés par une connexion VPN ou ExpressRoute de site à site. Il existe un réseau local où se trouvent les contrôleurs de domaine AD DS, et il existe un réseau virtuel Azure avec un serveur de synchronisation d’annuaires, qui est une machine virtuelle exécutant [Azure AD Connecter](https://www.microsoft.com/download/details.aspx?id=47594). Il existe deux principaux flux de trafic provenant du serveur de synchronisation d’annuaires :
   
 -  Azure AD Connect interroge un contrôleur de domaine sur le réseau local concernant les modifications apportées aux comptes et aux mots de passe.
 -  Azure AD Connecter envoie les modifications apportées aux comptes et mots de passe à l’instance Azure AD de votre abonnement Microsoft 365. Étant donné que le serveur de synchronisation d’annuaires se trouve dans une partie étendue de votre réseau local, ces modifications sont envoyées via le serveur proxy du réseau local.
@@ -66,9 +66,9 @@ Le déploiement de cette solution comporte deux étapes principales :
     
     Installation et configuration d'[Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594).
     
-    La configuration de Azure AD Connecter nécessite les informations d’identification (nom d’utilisateur et mot de passe) d’un compte d’administrateur Azure AD et d’un compte d’administrateur d’entreprise AD DS. Azure AD Connecter s’exécute immédiatement et de façon continue pour synchroniser la forêt AD DS locale avec Microsoft 365.
+    La configuration d’Azure AD Connecter nécessite les informations d’identification (nom d’utilisateur et mot de passe) d’un compte d’administrateur Azure AD et d’un compte d’administrateur d’entreprise AD DS. Azure AD Connecter s’exécute immédiatement et en continu pour synchroniser la forêt AD DS locale avec Microsoft 365.
     
-Avant de déployer cette solution en production, vous pouvez utiliser les instructions de [la configuration de base d’entreprise simulée](simulated-ent-base-configuration-microsoft-365-enterprise.md) pour configurer cette configuration comme preuve de concept, pour des démonstrations ou pour l’expérimentation.
+Avant de déployer cette solution en production, vous pouvez utiliser les instructions de [la configuration de base d’entreprise simulée](simulated-ent-base-configuration-microsoft-365-enterprise.md) pour configurer cette configuration en tant que preuve de concept, pour des démonstrations ou pour l’expérimentation.
   
 > [!IMPORTANT]
 > Une fois la configuration d’Azure AD Connect terminée, les informations d’identification de compte d’administrateur d’entreprise AD DS ne sont pas enregistrées. 
@@ -101,9 +101,9 @@ La liste suivante décrit les choix de conception effectués pour cette solution
     
 - Sur le réseau local, un contrôleur de domaine et des serveurs DNS existent.
     
-- Azure AD Connect exécute la synchronisation de hachage de mot de passe à la place de l’authentification unique. Il est inutile de déployer une infrastructure AD FS (Active Directory Federation Services). Pour plus d’informations sur les options de synchronisation de hachage de mot de passe et d’authentification unique, reportez-vous à l’article [Choisir la méthode d’authentification adaptée à votre solution d’identité hybride Azure Active Directory](/azure/active-directory/hybrid/choose-ad-authn).
+- Azure AD Connecter effectue une synchronisation de hachage de mot de passe au lieu de l’authentification unique. Vous n’êtes pas obligé de déployer une infrastructure Services ADFS (AD FS). Pour en savoir plus sur la synchronisation de hachage de mot de passe et les options d’authentification unique, consultez [Choisir la méthode d’authentification appropriée pour votre solution d’identité hybride Azure Active Directory](/azure/active-directory/hybrid/choose-ad-authn).
     
-Il existe des choix de conception supplémentaires que vous pourriez envisager lorsque vous déployez cette solution dans votre environnement. Ceux-ci incluent notamment :
+Vous pouvez envisager d’autres choix de conception lorsque vous déployez cette solution dans votre environnement. Elles incluent notamment les éléments suivants :
   
 - Si un réseau virtuel Azure existant comporte des serveurs DNS, déterminez si vous voulez que votre serveur de synchronisation d’annuaires les utilise pour la résolution de noms à la place des serveurs DNS sur le réseau local.
     
@@ -173,11 +173,11 @@ Cette illustration montre le serveur de synchronisation d’annuaires avec Azure
   
 ### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>Attribuer des emplacements et des licences aux utilisateurs dans Microsoft 365
 
-Azure AD Connecter ajoute des comptes à votre abonnement Microsoft 365 à partir du service AD DS local, mais pour que les utilisateurs se connectent à Microsoft 365 et utilisent ses services, les comptes doivent être configurés avec un emplacement et des licences. Utilisez ces étapes pour ajouter l’emplacement et activer les licences pour les comptes d’utilisateur appropriés :
+Azure AD Connecter ajoute des comptes à votre abonnement Microsoft 365 à partir d’AD DS local, mais pour que les utilisateurs se connectent à Microsoft 365 et utilisent ses services, les comptes doivent être configurés avec un emplacement et des licences. Utilisez ces étapes pour ajouter l’emplacement et activer les licences pour les comptes d’utilisateur appropriés :
   
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com), puis cliquez sur **Admin**.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com), puis cliquez sur **Administration**.
     
-2. Dans le volet de navigation de gauche, cliquez sur **Utilisateurs** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Actifs**</a>.
+2. Dans le volet de navigation de gauche, cliquez sur **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs**</a>.
 3. Dans la liste des comptes d’utilisateur, sélectionnez la case à cocher en regard de l’utilisateur que vous souhaitez activer.
     
 4. Sur la page de l'utilisateur, cliquez sur **Modifier** pour **Licences de produits**.

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679459"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739646"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec l’entraînement de simulation d’attaque dans Defender pour Office 365
 
@@ -319,7 +319,7 @@ Dans la page **Sélectionner la notification de l’utilisateur final** , sélec
       - **Livrer après la fin de la campagne**
       - **Livrer pendant la campagne**
     - **Actions** : si vous cliquez sur l’icône ![Affichage.](../../media/m365-cc-sc-view-icon.png) **Icône Afficher** , la page **de notification Révision** s’affiche avec les informations suivantes :
-      - **Onglet Aperçu** : afficher le message de notification.
+      - **Onglet Aperçu** : affichez le message de notification comme les utilisateurs le verront.
         - Pour afficher le message dans différentes langues, utilisez la zone **Sélectionner une langue** .
         - Utilisez la **charge utile Sélectionner pour afficher un aperçu** afin de sélectionner le message de notification pour les simulations qui contiennent plusieurs charges utiles.
       - **Onglet Détails** : Afficher les détails de la notification :

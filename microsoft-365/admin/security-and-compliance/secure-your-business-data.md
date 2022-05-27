@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 44acc5b7b76d1ae355db88e9773982e1d1e1b4d2
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679645"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739502"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser les Microsoft 365 pour les entreprises
 
@@ -202,7 +202,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants dans [Protéger contre les programmes malveillants](#protect-against-malware).
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Si vous souhaitez plus d’informations, consultez :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -352,5 +352,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 ## <a name="related-content"></a>Contenu connexe
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
-[Gérer et surveiller les comptes prioritaires](/microsoft-365/security/office-365-security/configure-review-priority-account) (article)\
-[rapports Microsoft 365 dans le Centre d’administration](../activity-reports/activity-reports.md) (vidéo)
+[Gérer et surveiller les comptes prioritaires](../setup/priority-accounts.md) (article)\
+[Microsoft 365 rapports dans le Centre d’administration](../activity-reports/activity-reports.md) (vidéo)\
+[Microsoft 365 Business Premium — cybersécurité pour les petites entreprises](/microsoft-365/business-premium/) (article)\
+

@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637337"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739912"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurer l'authentification multifactorielle pour Microsoft 365
 
@@ -122,6 +122,8 @@ Pour la plupart des abonnements, l’authentification moderne est automatiquemen
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Configurer l’authentification multifacteur](set-up-multi-factor-authentication.md) (vidéo)
+[Configurer l’authentification multifacteur](set-up-multi-factor-authentication.md) (vidéo)\
 
-[Activer l’authentification multifacteur pour votre téléphone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+[Activer l’authentification multifacteur pour votre téléphone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (article)\
+
+[Authentification multifacteur et sécurité par défaut](/microsoft-365/business-premium/m365bp-conditional-access) (article)

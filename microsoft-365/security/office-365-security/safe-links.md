@@ -28,16 +28,16 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez Coffre protection des liens dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre Links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623466"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739890"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>liens Coffre dans Microsoft Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -47,6 +47,9 @@ ms.locfileid: "65623466"
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel, et que vous recherchez des informations sur safelinks dans Outlook, consultez [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Coffre Liens est une fonctionnalité de [Defender pour Office 365](defender-for-office-365.md) qui fournit l’analyse et la réécriture d’URL des messages électroniques entrants dans le flux de courrier, ainsi que la vérification au moment du clic des URL et des liens dans les messages électroniques et d’autres emplacements. Coffre l’analyse des liens se produit en plus du [courrier anti-courrier indésirable](anti-spam-protection.md) et [anti-programme malveillant](anti-malware-protection.md) standard dans les messages électroniques entrants dans Exchange Online Protection (EOP). L’analyse des liens fiables peut permettre de votre organisation contre les liens malveillants utilisés dans le hameçonnage et d’autres attaques.
+
+Regardez cette courte vidéo sur la façon de se protéger contre les liens malveillants avec des liens Coffre dans Microsoft Defender pour Office 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 La protection Liens fiables est disponible dans les emplacements suivants :
 

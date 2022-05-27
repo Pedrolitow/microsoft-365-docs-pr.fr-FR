@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés dans le Centre de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff6a66b092d433fcfde7723f252fea679c2a3050
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759828"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753515"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Créer des types d’informations sensibles personnalisés dans le Centre de conformité
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si les types d’informations sensibles pré configurés ne répondent pas à vos besoins, vous pouvez créer vos propres types d’informations sensibles personnalisés que vous définissez entièrement, ou vous pouvez copier un des types pré configurés et le modifier.
 
@@ -45,9 +47,9 @@ Il existe deux façons de créer un type d’informations sensibles :
   - [Fonctions de type d’informations sensibles](sit-functions.md)
   - [Niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)
 
-- Vous devez avoir une autorisation d’administrateur général ou d’administrateur de conformité pour créer, tester et déployer un type d’informations sensibles personnalisé via l’interface utilisateur. Consulter [À propos des rôles d’administration](/office365/admin/add-users/about-admin-roles) dans Office 365.
+- Votre organisation doit disposer d’un abonnement, tel que Office 365 Entreprise, qui inclut Protection contre la perte de données Microsoft Purview (DLP). Voir [Description du service Stratégie et conformité de messagerie](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
-- Votre organisation doit disposer d’un abonnement, par exemple, Office 365 Entreprise, qui inclut la protection contre la perte de données (DLP). Voir [Description du service Stratégie et conformité de messagerie](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
+- Votre organisation doit disposer d’un abonnement, tel que Office 365 Entreprise, qui inclut la protection contre la perte de données (DLP). Voir [Description du service Stratégie et conformité de messagerie](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
 
 > [!IMPORTANT]
 > La division Support technique et Service clientèle Microsoft ne peut pas vous aider à créer des classifications personnalisées ou des modèles d’expressions régulières. Les ingénieurs du support technique peuvent offrir un support limité pour la fonctionnalité, comme vous fournir des exemples de modèles d’expressions régulières à des fins de test, ou vous aider à résoudre un problème avec un modèle d’expression régulière existant qui n’opère pas de déclenchement comme prévu. En revanche, ils ne peuvent pas garantir que le développement correspondant à du contenu personnalisé répondra à vos exigences ou obligations.
@@ -104,7 +106,7 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 
 Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
 
-- [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Créer un type d’informations sensibles personnalisé dans Microsoft Purview PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. Dans le centre de conformité, accédez à **Classifications des données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles que vous voulez copier.
@@ -170,7 +172,7 @@ La limite de nombre d’instances SIT s’applique lorsque des SIT sont utilisé
 
 - Stratégies de protection contre la perte de données
 - Protection des informations
-- Gouvernance des informations
+- Gestion du cycle de vie des données
 - Conformité des communications
 - Gestion des enregistrements
 - Microsoft Defender for Cloud Apps

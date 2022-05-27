@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Découvrir comment une organisation qui déploie la dernière version utilise des canaux pour les applications Windows 10 et Microsoft 365.
-ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43cd5deed9801de6ff044781bebf9d96cdac7c12
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092136"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754707"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exemple de déploiement à grande échelle des dernières versions
 
@@ -65,8 +65,8 @@ Pour plus d’informations sur les méthodes et stratégies de déploiement de W
 
 | Phase | Canal | Groupe de déploiement |
 |:-------|:-------|:-----|
-| Pilote |  **Canal de la version préliminaire**  <ul><li>Objectif : déploiement de mises à jour de fonctionnalités auprès du personnel informatique et des utilisateurs précoces pour la validation sur les appareils et configurations représentatifs (langues, applications tierces). </li><li> État : entièrement conforme et pris en charge pour les clients commerciaux et qui ne sont pas pris en compte dans vos contrats de support. </li></ul> | **Win10ReleasePreviewChannel** (exemple de nom) <br><br> Les membres sont des groupes contenant : <ul><li> Passionnés de Windows dans tous les services et emplacements </li><li> Personnel avec des configurations nécessitant une validation </li><li> Administrateurs informatiques et personnel de déploiement informatique </li><li> Responsables des modifications </li><li> Personnel de formation interne </li></ul> |
-| Production |  **Canal semi-annuel**  <ul><li>Objectif : déploiement à grande échelle des dernières mises à jour des fonctionnalités auprès du reste de l’organisation. </li><li> État : entièrement conforme et pris en charge. </li></ul> | **Win10SemiAnnualChannel** (exemple de nom) <br><br> Les membres sont tous les utilisateurs qui ne figurent pas dans le groupe Win10ReleasePreviewChannel. |
+| Pilote |  **Canal de la version préliminaire**  <ul><li>Objectif : déploiement de mises à jour de fonctionnalités auprès du personnel informatique et des utilisateurs précoces pour la validation sur les appareils et configurations représentatifs (langues, applications tierces). </li><li> État : entièrement conforme et pris en charge pour les clients commerciaux, et il n’est pas pris en compte dans vos contrats de support. </li></ul> | **Win10ReleasePreviewChannel** (exemple de nom) <br><br> Les membres sont des groupes contenant : <ul><li> Passionnés de Windows dans tous les services et emplacements </li><li> Personnel avec des configurations nécessitant une validation </li><li> Administrateurs informatiques et personnel de déploiement informatique </li><li> Responsables des modifications </li><li> Personnel de formation interne </li></ul> |
+| Production |  **Canal semi-annuel**  <ul><li>Objectif : déploiement à grande échelle des dernières mises à jour des fonctionnalités auprès du reste de l’organisation. </li><li> État : entièrement conforme et pris en charge. </li></ul> | **Win10SemiAnnualChannel** (exemple de nom) <br><br> Les membres sont tous des utilisateurs qui ne font pas partie du groupe Win10ReleasePreviewChannel. |
 ||||
 
 Cette organisation utilise la meilleure pratique consistant à déployer la charge utile du Canal de la version préliminaire de la même manière qu’elle déploie les versions du Canal semi-annuel (par exemple, Windows Update ou Windows Server Update Services) et qu’elle applique les mêmes stratégies pour les deux mises à jour de canal.
@@ -89,8 +89,8 @@ Si vous souhaitez en savoir plus sur les stratégies et méthodes de déploiemen
 
 | Phase | Canal | Groupe de déploiement |
 |:-------|:-------|:-----|
-| Pilote |  **Canal actuel (préversion)** <ul><li> Objectif : {donner à un groupe d’utilisateurs représentatifs un aperçu des nouvelles fonctionnalités des applications Microsoft 365} Déploiement de mises à jour de fonctionnalités dès qu’elles sont testées avec les utilisateurs du Canal actuel (préversion) et prêtes pour la production. </li><li> État : entièrement conforme et pris en charge.</li><li> Fréquence : mise à jour de 2 à 3 fois par mois. </li></ul> | **AppsCurrentChannelPreview** (exemple de nom) <br><br> Les membres sont des groupes contenant : <ul><li> Les applications Office enthousiastes au sein des différents services et emplacements </li><li> Personnel avec des configurations nécessitant une validation </li><li> Administrateurs informatiques et personnel de déploiement informatique </li><li> Responsables des modifications </li><li> Personnel de formation interne </li></ul>|
-| Production | **Canal Actuel** <ul><li> Objectif : déploiement à grande échelle des dernières mises à jour des fonctionnalités auprès du reste de l’organisation. </li><li> État : entièrement conforme et pris en charge. </li></ul> |  **AppsCurrentChannel** (exemple de nom) <br><br> Les membres sont tous les utilisateurs qui ne figurent pas dans le groupe AppsCurrentChannelPreview. |
+| Pilote |  **Canal actuel (préversion)** <ul><li> Objectif : {donner à un groupe d’utilisateurs représentatifs un aperçu des nouvelles fonctionnalités de Microsoft 365 Apps} Déploiement des mises à jour des fonctionnalités dès qu’ils sont testés avec les utilisateurs du canal actuel (préversion) et sont prêts pour la production. </li><li> État : entièrement conforme et pris en charge.</li><li> Fréquence : mise à jour de 2 à 3 fois par mois. </li></ul> | **AppsCurrentChannelPreview** (exemple de nom) <br><br> Les membres sont des groupes contenant : <ul><li> Les applications Office enthousiastes au sein des différents services et emplacements </li><li> Personnel avec des configurations nécessitant une validation </li><li> Administrateurs informatiques et personnel de déploiement informatique </li><li> Responsables des modifications </li><li> Personnel de formation interne </li></ul>|
+| Production | **Canal Actuel** <ul><li> Objectif : déploiement à grande échelle des dernières mises à jour des fonctionnalités auprès du reste de l’organisation. </li><li> État : entièrement conforme et pris en charge. </li></ul> |  **AppsCurrentChannel** (exemple de nom) <br><br> Les membres sont tous des utilisateurs qui ne font pas partie du groupe AppsCurrentChannelPreview. |
 |||
 
 Processus de mises à jour en cours :

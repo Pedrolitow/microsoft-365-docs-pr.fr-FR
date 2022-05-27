@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: bb94043f68d46f98f005853cde03da048495e10f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: a0246fef2ae72dd2b0b176f82bb42559d405eaa5
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285355"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754033"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -59,7 +59,7 @@ Bien que les stratégies de rétention pour Microsoft Teams et Yammer utilisent 
 
 ## <a name="maximums-for-adaptive-policy-scopes"></a>Maximums pour les étendues de stratégie adaptative
 
-Il n’existe aucune limite au nombre d’étendues de stratégie adaptative [que](retention.md#adaptive-or-static-policy-scopes-for-retention) vous pouvez ajouter à une stratégie de rétention, mais il existe certaines limites maximales pour la requête qui définit chaque étendue adaptative :
+Il n’existe aucune limite au nombre d’[étendues de stratégie adaptative](retention.md#adaptive-or-static-policy-scopes-for-retention) que vous pouvez ajouter à une stratégie de rétention, mais il existe certaines limites maximales pour la requête qui définit chaque étendue adaptative :
 
 - Longueur de chaîne pour les valeurs d’attribut ou de propriété : 200
 - Nombre d’attributs ou de propriétés sans groupe ou au sein d’un groupe : 10
@@ -98,7 +98,7 @@ Les exemples suivants concernent des étendues statiques et fournissent quelques
 
 Exemple d'échange :
 
-- **Exigence** : Dans une organisation qui compte plus de 40 000 boîtes aux lettres, la plupart des utilisateurs doivent conserver leur courrier électronique pendant 7 ans, mais un sous-ensemble d'utilisateurs identifiés (425) ne doivent conserver leur courrier électronique que pendant 5 ans.
+- **Exigence** : dans une organisation qui compte plus de 40 000 boîtes aux lettres, la plupart des utilisateurs doivent conserver leur courrier électronique pendant sept ans, mais un sous-ensemble d'utilisateurs identifiés (425) ne doivent conserver leur courrier électronique que pendant cinq ans.
 
 - **Solution** : Créer une politique de conservation pour le courrier électronique d'échange avec une période de conservation de 7 ans et exclure le sous-ensemble des utilisateurs. Ensuite, créez une deuxième politique de conservation pour le courrier électronique d 'echange avec une période de conservation de 5 ans et incluez le sous-ensemble des utilisateurs.
 
@@ -108,7 +108,7 @@ Exemple d'échange :
 
 Exemple de SharePoint :
 
-- **Exigence**: Une organisation possède plusieurs milliers de sites SharePoint, mais seuls 2 000 sites nécessitent une période de conservation de 10 ans, et 8 000 sites nécessitent une période de conservation de 4 ans.
+- **Exigence** : une organisation possède plusieurs milliers de sites SharePoint, mais seuls 2 000 sites nécessitent une période de conservation de dix ans, et 8 000 sites nécessitent une période de conservation de quatre ans.
 
 - **Solution**:Créer 20 politiques de conservation pour SharePoint avec une période de conservation de 10 ans qui inclut 100 sites spécifiques, et créer 80 politiques de conservation pour SharePoint avec une période de conservation de 4 ans qui inclut 100 sites spécifiques.
 

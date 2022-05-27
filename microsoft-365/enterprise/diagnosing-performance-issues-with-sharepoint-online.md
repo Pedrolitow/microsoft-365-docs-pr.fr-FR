@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Cet article vous montre comment diagnostiquer les problèmes courants liés à votre site SharePoint Online à l’aide des outils de développement d’Internet Explorer.
-ms.openlocfilehash: 274c819df7ffcb7cc18191bdd1c7fa0d4fa40290
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 041619991fdbdcb3e953fe2a06fd63dff0e9201f
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096521"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753801"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostic des problèmes de performances avec SharePoint Online
 
@@ -83,7 +83,7 @@ La meilleure façon de déterminer les points faibles de performances de votre s
 ## <a name="viewing-sharepoint-response-header-information"></a>Affichage des informations d’en-tête de réponse SharePoint
 <a name="F12ToolInfo"> </a>
 
-Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navigateur dans l’en-tête de réponse de chaque fichier. La valeur la plus utile pour diagnostiquer les problèmes de performances est **SPRequestDuration**, qui affiche la durée de traitement de la demande sur le serveur. Cela peut aider à déterminer si la demande est très lourde et gourmande en ressources. Il s’agit du meilleur aperçu que vous avez sur la quantité de travail que le serveur effectue pour servir la page.
+Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navigateur dans l’en-tête de réponse de chaque fichier. La valeur la plus utile pour diagnostiquer les problèmes de performances est **SPRequestDuration**, qui affiche la durée de traitement de la demande sur le serveur. Cela peut aider à déterminer si la demande est lourde et gourmande en ressources. Il s’agit du meilleur aperçu que vous avez sur la quantité de travail que le serveur effectue pour servir la page.
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Pour afficher SharePoint informations d’en-tête de réponse
   
@@ -102,8 +102,8 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Quelles sont les causes des problèmes de performances dans SharePoint Online ?
 <a name="F12ToolInfo"> </a>
 
-L’article [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md) montre un exemple d’utilisation de la valeur SPRequestDuration pour déterminer que la navigation structurelle compliquée entraînait un long processus de la page sur le serveur. En prenant une valeur pour un site de référence (sans personnalisation), il est possible de déterminer si le chargement d’un fichier donné prend beaucoup de temps. L’exemple utilisé dans [les options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md) est le fichier .aspx principal. Ce fichier contient la plupart du code ASP.NET qui s’exécute pour le chargement de votre page. Selon le modèle de site que vous utilisez, il peut s’agir de start.aspx, home.aspx, default.aspx ou d’un autre nom si vous personnalisez la page d’accueil. Si ce nombre est considérablement supérieur à celui de votre site de référence, cela indique bien qu’il se passe quelque chose de complexe dans votre page qui provoque des problèmes de performances.
+L’article [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md) montre un exemple d’utilisation de la valeur SPRequestDuration pour déterminer que la navigation structurelle compliquée entraînait un long processus de la page sur le serveur. En prenant une valeur pour un site de référence (sans personnalisation), il est possible de déterminer si le chargement d’un fichier donné prend beaucoup de temps. L’exemple utilisé dans [les options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md) est le fichier .aspx principal. Ce fichier contient la plupart du code ASP.NET qui s’exécute pour le chargement de votre page. Selon le modèle de site que vous utilisez, il peut s’agir de start.aspx, home.aspx, default.aspx ou d’un autre nom si vous personnalisez la page d’accueil. Si ce nombre est considérablement supérieur à celui de votre site de référence, cela indique qu’il se passe quelque chose de complexe dans votre page qui provoque des problèmes de performances.
   
-Une fois que vous avez identifié qu’un problème spécifique à votre site, la méthode recommandée pour déterminer ce qui provoque des performances médiocres consiste à éliminer toutes les causes possibles, telles que les personnalisations de page, puis à les rajouter une par une au site. Une fois que vous avez supprimé suffisamment de personnalisations pour que la page fonctionne correctement, vous pouvez ensuite rajouter des personnalisations spécifiques une par une.
+Une fois que vous avez identifié un problème spécifique à votre site, la méthode recommandée pour déterminer ce qui provoque des performances médiocres consiste à éliminer toutes les causes possibles, telles que les personnalisations de page, puis à les rajouter une par une au site. Une fois que vous avez supprimé suffisamment de personnalisations pour que la page fonctionne correctement, vous pouvez ensuite rajouter des personnalisations spécifiques une par une.
   
-Par exemple, si vous avez une navigation très complexe, essayez de modifier la navigation pour ne pas afficher les sous-sites, puis vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de cumuls de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et les rajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui constituent le plus grand problème, puis travailler à une solution.
+Par exemple, si vous avez une navigation complexe, essayez de modifier la navigation pour ne pas afficher les sous-sites, puis vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de cumuls de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et les rajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui constituent le plus grand problème, puis travailler à une solution.

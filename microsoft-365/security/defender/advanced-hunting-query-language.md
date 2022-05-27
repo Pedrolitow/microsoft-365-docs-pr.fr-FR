@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217395"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65740012"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -33,6 +33,7 @@ ms.locfileid: "65217395"
 
 
 **S’applique à :**
+
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -71,6 +72,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[Exécuter cette requête dans la chasse avancée](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Décrire la requête et spécifier les tables à rechercher
+
 Un bref commentaire a été ajouté au début de la requête pour décrire à quoi il sert. Ce commentaire permet de choisir ultérieurement d’enregistrer la requête et de la partager avec d’autres dans votre organisation. 
 
 ```kusto
@@ -82,7 +84,9 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### <a name="set-the-time-range"></a>Définir l’intervalle de temps
+
 Le premier élément rediriagé est un filtre de temps limité aux sept jours précédents. La limitation d’un intervalle de temps permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```kusto
@@ -90,6 +94,7 @@ Le premier élément rediriagé est un filtre de temps limité aux sept jours pr
 ```
 
 ### <a name="check-specific-processes"></a>Vérifier des processus spécifiques
+
 L’intervalle de temps est immédiatement suivi d’une recherche de noms de fichiers de processus représentant l’application PowerShell.
 
 ```kusto
@@ -98,6 +103,7 @@ L’intervalle de temps est immédiatement suivi d’une recherche de noms de fi
 ```
 
 ### <a name="search-for-specific-command-strings"></a>Rechercher des chaînes de commandes spécifiques
+
 Ensuite, la requête recherche les chaînes dans les lignes de commande qui sont généralement utilisées pour télécharger des fichiers à l’aide de PowerShell.
 
 ```kusto
@@ -113,6 +119,7 @@ Ensuite, la requête recherche les chaînes dans les lignes de commande qui sont
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personnaliser les colonnes et la longueur des résultats 
+
 Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez définir l’apparence des résultats. `project` retourne des colonnes spécifiques et `top` limite le nombre de résultats. Ces opérateurs permettent de s’assurer que les résultats sont bien mis en forme et relativement volumineux et faciles à traiter.
 
 ```kusto
@@ -125,6 +132,8 @@ Sélectionnez **Exécuter la requête** pour afficher les résultats.
 
 >[!TIP]
 >Vous pouvez afficher les résultats des requêtes sous forme de graphiques et ajuster rapidement les filtres. Pour obtenir des conseils, [consultez l’utilisation des résultats de la requête](advanced-hunting-query-results.md)
+
+Regardez cette [courte vidéo](https://www.youtube.com/watch?v=8qZx7Pp5XgM) pour découvrir comment utiliser Langage de requête Kusto pour joindre des tables.
 
 ## <a name="learn-common-query-operators"></a>Découvrir les opérateurs de requête courants
 
@@ -160,12 +169,14 @@ La chasse avancée prend en charge Kusto types de données, y compris les types 
 Pour en savoir plus sur ces types de données, [consultez Kusto types de données scalaires](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
+
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion automatique** : à mesure que vous écrivez des requêtes, la chasse avancée fournit des suggestions d’IntelliSense. 
+- **Suggestion automatique** : à mesure que vous écrivez des requêtes, la chasse avancée fournit des suggestions à partir de IntelliSense. 
 - **Arborescence de schéma** : une représentation de schéma qui inclut la liste des tables et leurs colonnes est fournie en regard de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
 - **[Référence de schéma](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : référence dans le portail avec des descriptions de table et de colonne, ainsi que des types d’événements pris en charge (`ActionType` valeurs) et des exemples de requêtes
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Utiliser plusieurs requêtes dans l’éditeur
+
 Vous pouvez utiliser l’éditeur de requête pour expérimenter plusieurs requêtes. Pour utiliser plusieurs requêtes :
 
 - Séparez chaque requête avec une ligne vide.
@@ -201,6 +212,7 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 >Certaines tables de cet article peuvent ne pas être disponibles dans Microsoft Defender pour point de terminaison. [Activez Microsoft 365 Defender](m365d-enable.md) pour rechercher des menaces à l’aide de sources de données supplémentaires. Vous pouvez déplacer vos flux de travail de chasse avancés de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de migration [des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

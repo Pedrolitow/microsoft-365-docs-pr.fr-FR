@@ -1,5 +1,5 @@
 ---
-title: Exigences de sécurité réseau supplémentaires pour Office 365 Cloud de la communauté du secteur public Haut et DoD
+title: Exigences de sécurité réseau supplémentaires pour Office 365 Cloud de la communauté du secteur public haute et doD
 ms.author: dzazzo
 author: dzazzo
 manager: dzazzo
@@ -18,53 +18,53 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: 'Résumé : Les Office 365 Cloud de la communauté du secteur public Élevé et DoD ont des exigences de sécurité réseau supplémentaires'
+description: 'Résumé : Office 365 Cloud de la communauté du secteur public haute et doD ont des exigences de sécurité réseau supplémentaires'
 hideEdit: true
-ms.openlocfilehash: c4fbfc52085b634329130c2785ce683109b8febe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86d3eb3fb4db42eda2be0c2c66fc754fbfd35f1e
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170366"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754265"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Autres exigences de sécurité réseau pour Office 365 GCC High et DoD
 
-*Cet article s’applique aux Office 365 Cloud de la communauté du secteur public élevé, Office 365 DOD, Microsoft 365 Cloud de la communauté du secteur public Élevé et Microsoft 365 DOD.*
+*Cet article s’applique à Office 365 Cloud de la communauté du secteur public DOD élevé, Office 365, Microsoft 365 Cloud de la communauté du secteur public Élevé et Microsoft 365 DOD.*
 
-Office 365 Cloud de la communauté du secteur public High et DOD sont des environnements cloud sécurisés qui répondent aux besoins du gouvernement des États-Unis et de ses fournisseurs et sous-traitants.  Ces environnements cloud ont des restrictions réseau supplémentaires sur lesquelles les points de terminaison externes sont autorisés à accéder aux services.
+Office 365 Cloud de la communauté du secteur public High et DOD sont des environnements cloud sécurisés pour répondre aux besoins du gouvernement États-Unis et de ses fournisseurs et sous-traitants.  Ces environnements cloud ont des restrictions réseau supplémentaires auxquelles les points de terminaison externes auxquels les services sont autorisés à accéder.
 
-Cloud de la communauté du secteur public Les clients haut et DOD qui prévoient d’utiliser des identités fédérées ou la coexistence hybride peuvent exiger que Microsoft autorise l’accès entrant et/ou sortant à vos déploiements locaux existants.  Voici quelques exemples de ces activités :
+Cloud de la communauté du secteur public les clients Haut et DOD qui envisagent d’utiliser des identités fédérées ou une coexistence hybride peuvent exiger que Microsoft autorise l’accès entrant et/ou sortant à vos déploiements locaux existants.  Voici quelques exemples de ces activités :
 
-* Utilisation d’identités fédérées (avec les services de fédération Active Directory ou un service STS similaire pris en charge)
-* Coexistence hybride avec un déploiement local Exchange Server ou Skype Entreprise déploiement
-* Migration du contenu utilisateur existant à partir d’un système local
+* Utilisation d’identités fédérées (avec Services ADFS ou un STS pris en charge similaire)
+* Coexistence hybride avec un déploiement Exchange Server local ou Skype Entreprise
+* Migration de contenu utilisateur existant à partir d’un système local
 
-Pour permettre au service de communiquer avec vos points  de terminaison locaux, vous devez envoyer un courrier électronique à Office 365 ingénierie pour les modifications réseau.
+Pour permettre au service de communiquer avec vos points de terminaison locaux, vous **devez** envoyer un e-mail à Office 365 ingénierie pour les modifications réseau.
 
 > [!WARNING]
-> Toutes les demandes ont **un** SLA de trois semaines et ne peuvent pas être accélérées en raison des contrôles de sécurité et de conformité requis et des pipelines de déploiement.  Cela inclut les demandes réseau d’intégration initiales, ainsi que les modifications apportées après la migration vers le service.  Assurez-vous que vos équipes réseau connaissent cette chronologie et l’incluent dans leurs cycles de planification.
+> Toutes les demandes ont un contrat SLA **de trois semaines** et ne peuvent pas être accélérées en raison des contrôles de sécurité et de conformité requis et des pipelines de déploiement.  Cela inclut les demandes réseau d’intégration initiales, ainsi que toutes les modifications après avoir migré vers le service.  Assurez-vous que vos équipes réseau connaissent cette chronologie et l’incluent dans leurs cycles de planification.
 
-Envoyez un e-mail [Office 365 Secteur Public Allow-List demandes avec](mailto:o365gwlt@microsoft.com) les informations suivantes :
+Envoyez un e-mail à [Office 365 Secteur Public Allow-List Demandes](mailto:o365gwlt@microsoft.com) avec les informations suivantes :
 
-* **À**: [Office 365 Secteur Public Allow-List demandes](mailto:o365gwlt@microsoft.com)
-* **From**: A tenant administrator - the send email **must** match a Global Administrator contact in your tenant
-* **Objet de** l’e-mail : Office 365 Cloud de la communauté du secteur public réseau élevé - contoso.onmicrosoft.us (remplacer par le nom de votre client)
+* **À** : [Office 365 Secteur Public Allow-List demandes](mailto:o365gwlt@microsoft.com)
+* **À partir de** : administrateur de locataire : l’e-mail d’envoi **doit** correspondre à un contact d’administrateur général dans votre locataire
+* **Objet de l’e-mail** : Office 365 Cloud de la communauté du secteur public demande réseau élevée - contoso.onmicrosoft.us (remplacez par le nom de votre locataire)
 
 Le corps de votre message doit inclure les données suivantes :
 
-* Votre Microsoft Online Services client (par exemple, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
-* Une liste de distribution de courrier électronique avec qui Microsoft communiquera pour les communications en cours liées aux modifications du réseau et/ou le suivi des sous-réseaux non valides
-* Indiquez si vous prévoyez d’utiliser Microsoft Teams coexistence hybride avec vos déploiements locaux
-* URL accessible en externe du système d’identité fédérée (par exemple, sts.contoso.com) et plage d’adresses IP en notation CIDR (par exemple, 10.1.1.0/28)
-* URL et plage d’adresses IP de liste de révocation de certificats PKI sur site en notation CIDR
-* URL et plage d’adresses IP accessibles en externe pour Exchange Server déploiement local en notation CIDR
-* URL et plage d’adresses IP accessibles en externe pour Skype Entreprise déploiement local en notation CIDR
+* Nom de votre locataire Microsoft Online Services (par exemple, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
+* Liste de distribution des e-mails avec laquelle Microsoft communiquera pour les communications en cours liées aux modifications réseau et/ou le suivi des sous-réseaux non valides
+* Indiquez si vous envisagez d’utiliser Microsoft Teams coexistence hybride avec vos déploiements locaux
+* URL accessible en externe du système d’identité fédérée (par exemple, sts.contoso.com) et plage d’adresses IP dans la notation CIDR (par exemple, . 10.1.1.0/28)
+* URL de liste de révocation de certificats PKI locale et plage d’adresses IP dans la notation CIDR
+* URL et plage d’adresses IP accessibles en externe pour Exchange Server déploiement local dans la notation CIDR
+* URL et plage d’adresses IP accessibles en externe pour Skype Entreprise déploiement local dans la notation CIDR
 
 Pour des raisons de sécurité et de conformité, gardez à l’esprit les restrictions suivantes sur votre demande :
 
-* Il existe quatre limites de sous-réseau par client
+* Il existe une limitation de quatre sous-réseaux par locataire
 * Les sous-réseaux doivent être en notation CIDR (par exemple, 10.1.1.0/28)
-* Les plages de sous-réseaux ne peuvent pas être plus /24
-* Nous **ne pouvons** pas prendre en charge les demandes d’accès aux services cloud commerciaux (Office 365 commercial, Google G-Suite, Amazon Web Services, etc.)
+* Les plages de sous-réseaux ne peuvent pas être supérieures à /24
+* Nous **ne pouvons pas** prendre en charge les demandes d’autorisation d’accès aux services cloud commerciaux (Office 365 commerciales, Google G-Suite, Amazon Web Services, etc.)
 
-Une fois que votre demande a été reçue et approuvée par Microsoft, il existe un accord de niveau de service de trois semaines pour l’implémentation et ne peut pas être accéléré.  Vous recevrez un accusé de réception initial lorsque nous recevons votre demande et un accusé de réception final une fois qu’elle est terminée.
+Une fois que votre demande a été reçue et approuvée par Microsoft, il existe un contrat SLA de trois semaines pour l’implémentation et ne peut pas être accéléré.  Vous recevrez un accusé de réception initial lorsque nous aurons reçu votre demande et un accusé de réception final une fois celle-ci terminée.

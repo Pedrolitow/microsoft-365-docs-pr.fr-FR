@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759100"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754673"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
-Le moyen le plus simple et le plus courant de bien démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans le centre de conformité Microsoft 365. Vous pouvez utiliser l’un de ces modèles en l’état ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La méthode la plus simple et la plus courante pour bien démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans le portail de conformité Microsoft Purview. Vous pouvez utiliser l’un de ces modèles en l’état ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
 
 Microsoft 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à un large éventail de besoins courants en matière de réglementation et de stratégie métier. Voir ; [Modèles de stratégie](dlp-policy-reference.md#policy-templates) pour une liste complète. 
 
@@ -41,9 +43,9 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
 
 Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès à des agents de conformité et à d’autres personnes. Procédez comme suit :
   
-1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
+1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
-2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
+2. Créez un groupe de rôles sur la page **Autorisations** du portail de conformité Microsoft Purview. 
 
 3. Lors de la création du groupe de rôles, utilisez la section **Choisir des rôles** pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
     
@@ -51,7 +53,7 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
 
 Utilisez le rôle **Gestion de la conformité DLP en mode affichage uniquement** pour créer un groupe de rôles avec des privilèges d’affichage uniquement pour les stratégies DLP et les rapports DLP.
 
-Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations, consultez la rubrique [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
   
 Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP pour ne pas appliquer de stratégies.
 
@@ -59,14 +61,14 @@ Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP 
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -76,9 +78,9 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Créer la stratégie DLP à partir d’un modèle
 
-1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>.
 
-2. Dans le Centre \> de conformité, solutions de navigation  \> **à gauche Stratégies** \> **de protection contre la perte de** \> \> données **+ Créer une stratégie**.
+2. Dans le portail de conformité Microsoft Purview \> gauche  **solutions de** navigation \> Stratégies \> **de protection contre la perte de** \> \> données **+ Créer une stratégie**.
 
     ![Créez un bouton de stratégie.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -205,7 +207,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 

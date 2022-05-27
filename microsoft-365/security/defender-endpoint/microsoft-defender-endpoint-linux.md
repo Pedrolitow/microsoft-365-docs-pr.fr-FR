@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9207e0ad186f6a5dc5219e1a24c6ccdd8ee23fcd
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679239"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754099"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -79,14 +79,21 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
 > [!NOTE]
 > Il n’est pas pris en charge d’installer Microsoft Defender pour point de terminaison à un autre emplacement que le chemin d’installation par défaut. 
 
+> [!NOTE]
+> Microsoft Defender pour point de terminaison sur Linux crée un utilisateur « mdatp » avec un UID et un GID aléatoires. Si vous souhaitez contrôler l’UID et le GID, créez un utilisateur « mdatp » avant l’installation à l’aide de l’option shell « /usr/sbin/nologin ».
+> Par exemple : `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
+
 ### <a name="system-requirements"></a>Configuration requise
+
+> [!NOTE]
+> La prise en charge de Red Hat Enterprise Linux et CentOS 6.7+ à 6.10+ est disponible en préversion.
 
 - Distributions de serveurs Linux prises en charge et versions x64 (AMD64/EM64T) et x86_64 :
 
   - Red Hat Enterprise Linux 6.7 ou version ultérieure (préversion)
-  - Red Hat Enterprise Linux 7.2 ou version ultérieure 
-  - Red Hat Enterprise Linux 8.x 
-  - CentOS 6.7 ou version ultérieure 
+  - Red Hat Enterprise Linux 7.2 ou version ultérieure
+  - Red Hat Enterprise Linux 8.x
+  - CentOS 6.7 ou version ultérieure (préversion)
   - CentOS 7.2 ou version ultérieure
   - Ubuntu 16.04 LTS ou LTS supérieur
   - Debian 9 ou version ultérieure
@@ -103,13 +110,16 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
 
 
 - Liste des versions de noyau prises en charge
-  - Noyau minimum version 3.10.0-327 (Pour toutes les distributions Linux prises en charge mentionnées ci-dessus, à l’exception de Red Hat Enterprise Linux 6 et CentOS 6)
+  > [!NOTE]
+  > Microsoft Defender pour point de terminaison sur RHEL/CentOS - 6.7 à 6.10 est une solution basée sur le noyau. Vous devez vérifier que le noyau est pris en charge avant de procéder à la mise à jour vers la version plus récente du noyau. Consultez la liste ci-dessous pour obtenir la liste des noyaux pris en charge.
+  > Microsoft Defender pour point de terminaison implémentation de toutes les autres distributions et versions prises en charge est indépendante des versions du noyau. Avec une exigence minimale pour que la version du noyau soit activée ou supérieure à 3.10.0-327.
+
   - L’option `fanotify` de noyau doit être activée
   - Red Hat Enterprise Linux 6 et CentOS 6 :
     - Pour 6.7 : 2.6.32-573.*
     - Pour 6.8 : 2.6.32-642.*
     - Pour 6.9 : 2.6.32-696.* (sauf 2.6.32-696.el6.x86_64)
-    - Pour la version 6.10 : 2.6.32.754.2.1.el6.x86_64 à 2.6.32-754.43.1 :
+    - Pour 6.10 : 2.6.32.754.2.1.el6.x86_64 à 2.6.32-754.47.1 :
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64

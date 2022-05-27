@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez apprendre à créer, tester et paramétrer une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 5508ce96e1309122e9c4c5139941eb41f6906e82
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637734"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753989"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -42,9 +42,9 @@ DLP examine les messages électroniques et les fichiers à la recherche d’info
 
 Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès à des agents de conformité et à d’autres personnes. Procédez comme suit :
   
-1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
+1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
-2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
+2. Créez un groupe de rôles sur la page **Autorisations** du portail de conformité Microsoft Purview. 
 
 3. Lors de la création du groupe de rôles, utilisez la section **Choisir des rôles** pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
     
@@ -94,7 +94,7 @@ Consultez [les définitions d’entité de type d’informations sensibles](sens
 
 Lorsque les risques de fuite de données ne sont pas entièrement évidents, il est difficile de déterminer exactement où vous devez commencer par implémenter DLP. Heureusement, les stratégies DLP peuvent être exécutées en « mode test », ce qui vous permet d’évaluer leur efficacité et leur précision avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le portail de conformité Microsoft Purview, c’est ce que je vais utiliser pour les démonstrations de cet article. Dans le portail de conformité Microsoft Purview, vous trouverez les stratégies DLP sous **Data loss** **preventionPolicy** > . Choisissez **Créer une stratégie** pour démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le portail de conformité Microsoft Purview, c’est ce que je vais utiliser pour les démonstrations de cet article. Dans le portail de conformité Microsoft Purview, vous trouverez les stratégies DLP sous la stratégie **de protection contre la perte de** >  données **.** Choisissez **Créer une stratégie** pour démarrer.
 
 Microsoft 365 fournit une gamme de modèles de [stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles sur l’Australie et choisir Finances, Santé et Santé, et Confidentialité.
 

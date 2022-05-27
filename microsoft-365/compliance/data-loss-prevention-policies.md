@@ -1,5 +1,5 @@
 ---
-title: Référence de la protection contre la perte de données
+title: Informations de référence sur la protection contre la perte de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -24,18 +24,20 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
-description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: 0c7fe1d3ccf1b74641be1d05506f1cc53b743218
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: documentation de référence sur la protection contre la perte de données
+ms.openlocfilehash: 55e8e5bd16b850ecce84cc87d43e7269746a7999
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903527"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754817"
 ---
-# <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
+# <a name="data-loss-prevention-reference"></a>Informations de référence sur la protection contre la perte de données
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
-> Il s’agit de la rubrique de référence qui n’est plus la ressource principale pour Microsoft 365 protection contre la perte de données (DLP). L’ensemble de contenu DLP est mis à jour et restructuré. Les rubriques couvertes dans cet article vont passer à de nouveaux articles mis à jour. Pour plus d’informations sur la protection contre la perte de données, voir [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
+> Il s’agit d’une rubrique de référence qui n’est plus la ressource principale pour les informations Protection contre la perte de données Microsoft Purview (DLP). Le jeu de contenu DLP est mis à jour et restructuré. Les rubriques traitées dans cet article passeront aux articles nouveaux et mis à jour. Pour plus d’informations sur la protection contre la perte de données, consultez [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -44,7 +46,7 @@ ms.locfileid: "62903527"
 
 
 
-<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
+<!-- MOVED TO LEARN ABOUT To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Microsoft Purview compliance portal, you can identify, monitor, and automatically protect sensitive information across Office 365.
 
 With a DLP policy, you can:
 
@@ -71,9 +73,9 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>Créer et gérer des stratégies DLP
 
-Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
+Vous créez et gérez des stratégies DLP sur la page de protection contre la perte de données du portail de conformité Microsoft Purview.
 
-![Page protection contre la perte de données dans le Centre Office 365 conformité &amp; de la sécurité.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Page de protection contre la perte de données dans le portail de conformité Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -359,7 +361,7 @@ Il est essentiel de comprendre que lorsqu’un type spécifique d’informations
 
 Par conséquent si vous voulez créer deux règles mutuellement exclusives pour les cartes bancaires, une pour la précision de correspondance de 65 % et une pour la précision de correspondance de 85 %, les plages de précision de correspondance se présenteraient comme suit. La première règle ne prend que les correspondances au modèle à 65 %. La deuxième règle prend les correspondances avec **au moins une** correspondance à 85 % et **peut éventuellement avoir** d’autres correspondances de confiance inférieure.
 
-![Deux règles avec des plages différentes pour la précision de correspondance.](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![Deux règles avec des plages différentes pour la précision des correspondances.](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
 
 Pour ces raisons, les conseils pour la création de règles avec des précisions de correspondance différentes sont les suivants :
 
@@ -404,7 +406,7 @@ Notez qu’une stratégie DLP offre des capacités de détection plus approfondi
 
 L’utilisation d’une étiquette comme condition dans une stratégie DLP vous permet d’appliquer des mesures de rétention et de protection au contenu associé à cette étiquette. Un contenu comportant une étiquette et un contenu comportant des informations sensibles sont semblables : l’étiquette et les informations sensibles sont des propriétés utilisées pour classifier le contenu dans le but d’y appliquer des mesures.
 
-![Diagramme de stratégie DLP utilisant l’étiquette comme condition.](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![Diagramme de la stratégie DLP utilisant l’étiquette comme condition.](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
 
 ## <a name="simple-settings-vs-advanced-settings"></a>Paramètres simples et paramètres avancés
 
@@ -440,7 +442,7 @@ La première étape de la création d’une stratégie DLP consiste à choisir l
 
 Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d’informations sensibles, comme des données HIPAA, des données PCI-DSS, des données Gramm-Leach-Bliley Act ou même des informations d’identification personnelle propres aux paramètres régionaux. Pour faciliter la recherche et la protection des types d’informations sensibles courants, les modèles de stratégie inclus dans Microsoft 365 contiennent déjà les types d’informations sensibles les plus courants, nécessaires pour commencer.
 
-![Liste des modèles pour les stratégies de protection contre la perte de données qui se concentrent sur le modèle pour le Patriot Act des États-Unis.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Liste des modèles pour les stratégies de protection contre la perte de données, avec l’accent mis sur le modèle pour le Patriot Act des États-Unis.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
 Votre organisation peut également avoir ses exigences propres, auquel cas vous pouvez créer entièrement une stratégie DLP en choisissant l’option **Stratégie personnalisée**. Une stratégie personnalisée est vide et ne contient aucune règle prédéfinie.
 
@@ -483,7 +485,7 @@ Grâce aux rapports DLP, vous pouvez obtenir une vue d’ensemble des activités
 
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez.
 
-![Tableau de bord rapports dans le Centre de sécurité et conformité.](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![Tableau de bord rapports dans le Centre de sécurité et de conformité.](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
 
 ## <a name="how-dlp-policies-work"></a>Fonctionnement des stratégies DLP
 
@@ -491,7 +493,7 @@ DLP détecte les informations sensibles à l’aide d’une analyse approfondie 
 
 ### <a name="policies-are-synced"></a>Synchronisation des stratégies
 
-Une fois qu’une stratégie DLP est créée dans le centre de conformité et de sécurité, elle est stockée dans un magasin central de stratégies, puis synchronisée avec différentes sources de contenu, notamment les suivantes :
+Après avoir créé une stratégie DLP dans le portail de conformité Microsoft Purview, elle est stockée dans un magasin de stratégies central, puis synchronisée avec les différentes sources de contenu, notamment :
 
 - Depuis Exchange Online vers Outlook sur le web et Outlook.
 
@@ -510,26 +512,27 @@ Une fois la stratégie synchronisée avec les emplacements adéquats, elle comme
 
 Dans l’ensemble de vos sites SharePoint Online et OneDrive Entreprise, les documents changent constamment : ils sont continuellement créés, modifiés, partagés, etc. Cela signifie que les documents peuvent à tout moment soit être en conflit, soit être conformes à la stratégie DLP. Par exemple, une personne peut télécharger un document ne contenant aucune information sensible sur le site de son équipe mais une autre personne peut ensuite modifier le même document et y ajouter des informations sensibles.
 
-Pour cette raison, les stratégies DLP vérifient les correspondances de stratégie fréquemment dans les documents en arrière-plan. Vous pouvez considérer ceci comme une évaluation asynchrone des stratégies.<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
+Pour cette raison, les stratégies DLP vérifient les correspondances de stratégie fréquemment dans les documents en arrière-plan. Vous pouvez considérer ceci comme une évaluation asynchrone des stratégies.
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
 
 #### <a name="how-it-works"></a>Mode de fonctionnement
 
 Au fur et à mesure de l’ajout ou de la modification de documents dans ses sites, le moteur de recherche analyse le contenu de sorte que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu est également analysé pour vérifier s’il présente des informations sensibles et s’il est partagé. Les informations sensibles trouvées sont stockées en toute sécurité dans l’index de recherche, afin que seule l’équipe de conformité puisse y accéder, et pas les utilisateurs standard. Chaque stratégie DLP que vous avez activée s’exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment le contenu qui correspond à une stratégie et en appliquant des actions pour le protéger de toute divulgation accidentelle.
 
-![Diagramme montrant comment la stratégie DLP évalue le contenu de manière asynchrone.](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![Diagramme montrant comment la stratégie DLP évalue le contenu de façon asynchrone.](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
 
 <!-- conflict with a DLP policy is bad wording --> Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
 
 La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Afin d’empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default).
+> Afin d’empêcher le partage de documents avant que les stratégies DLP aient eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default).
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 
-Lorsque vous créez une stratégie DLP incluant Exchange Online en tant qu’emplacement, celle-ci est synchronisée à partir du centre de conformité et de sécurité Office 365 avec Exchange Online, puis d’Exchange Online vers Outlook sur le web et Outlook.
+Lorsque vous créez une stratégie DLP qui inclut Exchange Online en tant qu’emplacement, la stratégie est synchronisée entre le portail de conformité Microsoft Purview et Exchange Online, puis de Exchange Online à Outlook sur le web  et Outlook.
 
-Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les conseils de stratégie, puisque le contenu en cours de création est évalué par rapport aux stratégies DLP. Une fois qu’un message est envoyé, il est évalué par rapport aux stratégies DLP dans le cadre normal du flux de messagerie, ainsi qu’aux règles de flux de messagerie Exchange (également appelées règles de transport) et aux stratégies DLP créées dans le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>. Les stratégies DLP analysent le message ainsi que les éventuelles pièces jointes.
+Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les conseils de stratégie, puisque le contenu en cours de création est évalué par rapport aux stratégies DLP. Une fois qu’un message est envoyé, il est évalué par rapport aux stratégies DLP en tant que partie normale du flux de messagerie, ainsi que les règles de flux de messagerie Exchange (également appelées règles de transport) et les stratégies DLP créées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Les stratégies DLP analysent le message ainsi que les éventuelles pièces jointes.
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office
 
@@ -541,15 +544,15 @@ L’évaluation des stratégies DLP dans Office est conçue pour ne pas avoir d�
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Évaluation des stratégies dans Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacement, celle-ci est synchronisée à partir du centre de conformité et de sécurité Office 365 avec les comptes utilisateurs et les canaux et messages de conversation Microsoft Teams. Selon la configuration des stratégies DLP, lorsque quelqu’un tente de partager des informations sensibles dans une conversation ou un message de canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Consultez l’article sur la [protection contre la perte de données et Microsoft Teams](dlp-microsoft-teams.md) pour obtenir plus d’informations à ce sujet.
+Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams en tant qu’emplacement, la stratégie est synchronisée entre le portail de conformité Microsoft Purview et les comptes d’utilisateur et Microsoft Teams canaux et messages de conversation. Selon la configuration des stratégies DLP, lorsque quelqu’un tente de partager des informations sensibles dans une conversation ou un message de canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Consultez l’article sur la [protection contre la perte de données et Microsoft Teams](dlp-microsoft-teams.md) pour obtenir plus d’informations à ce sujet.
 
 ## <a name="permissions"></a>Autorisations
 
-Par défaut, les administrateurs globaux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations pour le Centre de &amp; conformité de sécurité. Par défaut, &amp; votre administrateur client aura accès à cet emplacement et peut accorder aux responsables de la mise en conformité et aux autres personnes l’accès au Centre de conformité de sécurité, sans leur donner toutes les autorisations d’un administrateur client. Pour ce faire, nous vous recommandons de :
+Par défaut, les administrateurs généraux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations sur le portail de conformité Microsoft Purview. Par défaut, votre administrateur de locataire a accès à cet emplacement et peut accorder aux agents de conformité et à d’autres personnes l’accès au portail de conformité Microsoft Purview, sans leur accorder toutes les autorisations d’un administrateur de locataire. Pour ce faire, nous vous recommandons d’effectuer les opérations suivantes :
 
-1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
+1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
 
-2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité.
+2. Créez un groupe de rôles sur la page **Autorisations** du portail de conformité Microsoft Purview.
 
 3. Lors de la création du groupe de rôles, utilisez la section **Choisir des rôles** pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
 
@@ -563,13 +566,13 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 ## <a name="find-the-dlp-cmdlets"></a>Trouver les applets de commande DLP
 
-Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
+Pour utiliser la plupart des applets de commande pour le portail de conformité Microsoft Purview, vous devez :
 
-1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell).
+1. [Connecter au Office 365 portail de conformité Microsoft Purview à l’aide de PowerShell distant](/powershell/exchange/connect-to-scc-powershell).
 
 2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](/powershell/module/exchange/export-dlppolicycollection).
 
-Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, les **applets de commande des rapports DLP sont disponibles dans Exchange Online Powershell (et non dans le centre de conformité &amp; sécurité Powershell)**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
+Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, ***les applets de commande des rapports DLP sont disponibles dans Exchange Online PowerShell, et non dans portail de conformité Microsoft Purview PowerShell***. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
 
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

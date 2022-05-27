@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 68e69f198dfd79c1da210cd8d87144471d83abb7
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285965"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754353"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -83,7 +83,7 @@ Une fois qu’une stratégie de rétention est configurée pour les messages de 
 Les messages restent dans le dossier SubstrateHolds pendant au moins 1 jour. Ensuite, s’ils peuvent être supprimés, le travail du minuteur les supprime définitivement lors de sa prochaine exécution.
 
 > [!IMPORTANT]
-> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention (y compris les stratégies appliquées à l’emplacement Exchange), la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
+> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention pour le même emplacement, la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
 >
 > Bien que la boîte aux lettres soit incluse dans une conservation applicable, les messages de conversation et de canal Teams qui ont été supprimés ne seront plus visibles dans l’application Teams, mais continueront à être détectables avec eDiscovery.
 
@@ -202,7 +202,7 @@ Lorsque des utilisateurs externes sont inclus dans une réunion organisée par v
 
 - Si un utilisateur externe rejoint la réunion à l’aide d’un compte invité dans votre client, tous les messages de la réunion sont stockés à la fois dans la boîte aux lettres de vos utilisateurs et dans une boîte aux lettres instantané qui est accordée au compte invité. Toutefois, les stratégies de rétention ne sont pas prises en charge pour les boîtes instantanées, même si elles peuvent être signalées comme incluses dans une stratégie de rétention pour l’ensemble de l’emplacement (parfois appelée « stratégie à l’échelle de l’organisation »).
 
-- Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Toutefois, pour la même réunion, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
+- Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Cependant, pour la même réunion, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 

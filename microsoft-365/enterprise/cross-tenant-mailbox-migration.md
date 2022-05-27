@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 3832cd64ce66e667cced13c41bc34c28d575b373
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b2d66fce2b1eeffa4500c01a07f271b5b1a96ab7
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637514"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754773"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîte aux lettres entre locataires (préversion)
 
@@ -48,7 +48,7 @@ Avant de commencer, assurez-vous que vous disposez des autorisations nécessaire
 
 En outre, au moins un groupe de sécurité à extension messagerie dans le locataire source est requis. Ces groupes sont utilisés pour étendre la liste des boîtes aux lettres qui peuvent passer du locataire source (ou parfois appelé ressource) au locataire cible. Cela permet à l’administrateur du locataire source de restreindre ou d’étendre l’ensemble spécifique de boîtes aux lettres qui doivent être déplacées, ce qui empêche la migration d’utilisateurs inattendus. Les groupes imbriqués ne sont pas pris en charge.
 
-Vous devrez également communiquer avec votre entreprise partenaire approuvée (avec laquelle vous déplacerez des boîtes aux lettres) pour obtenir son ID de locataire Microsoft 365. Cet ID de locataire est utilisé dans le champ Nom_domaine de la relation d’organisation.
+Vous devez également communiquer avec votre entreprise partenaire approuvée (avec laquelle vous allez déplacer des boîtes aux lettres) pour obtenir son ID de locataire Microsoft 365. Cet ID de locataire est utilisé dans le champ Nom_domaine de la relation d’organisation.
 
 Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) et accédez à [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Cliquez sur l’icône de copie de la propriété ID de locataire pour la copier dans le Presse-papiers.
 
@@ -83,7 +83,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 8. Sous Applications détenues, recherchez l’application que vous avez créée et cliquez dessus.
 
-9. Sous ^Essentials, vous devez copier l’ID d’application (client) car vous en aurez besoin ultérieurement pour créer une URL pour le locataire cible.
+9. Sous ^Essentials, vous devez copier l’ID d’application (client) car vous en aurez besoin plus tard pour créer une URL pour le locataire cible.
 
 10. À présent, dans la barre de navigation de gauche, cliquez sur les autorisations d’API pour afficher les autorisations affectées à votre application.
 
@@ -122,7 +122,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 22. Vous pouvez revenir à la fenêtre de votre portail et sélectionner Actualiser pour confirmer votre acceptation.
 
-23. Formulez l’URL à envoyer à votre partenaire approuvé (administrateur du locataire source) afin qu’il puisse également accepter l’application pour activer la migration de boîte aux lettres. Voici un exemple d’URL à leur fournir, vous aurez besoin de l’ID d’application de l’application que vous avez créée :
+23. Formulez l’URL à envoyer à votre partenaire approuvé (administrateur du locataire source) afin qu’il puisse également accepter l’application pour activer la migration de boîte aux lettres. Voici un exemple de l’URL à leur fournir, vous aurez besoin de l’ID d’application de l’application que vous avez créée :
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -243,7 +243,7 @@ Vérifiez que les objets et attributs suivants sont définis dans l’organisati
       - UserPrincipalName : UPN s’aligne sur la nouvelle identité ou la société cible de l’utilisateur (par exemple, user@northwindtraders.onmicrosoft.com).
       - Adresse SMTP principale : l’adresse SMTP principale s’alignera sur la nouvelle entreprise de l’utilisateur (par exemple, user@northwind.com).
       - TargetAddress/ExternalEmailAddress : MailUser référence la boîte aux lettres actuelle de l’utilisateur hébergée dans le locataire source (par exemple user@contoso.onmicrosoft.com). Lors de l’affectation de cette valeur, vérifiez que vous avez/attribuez également PrimarySMTPAddress, sinon cette valeur définira PrimarySMTPAddress, ce qui provoquera des échecs de déplacement.
-      - Vous ne pouvez pas ajouter d’adresses proxy smtp héritées à partir de la boîte aux lettres source pour cibler MailUser. Par exemple, vous ne pouvez pas maintenir contoso.com sur l’ueM dans fabrikam.onmicrosoft.com objets locataires). Les domaines sont associés à un seul locataire Azure AD ou Exchange Online.
+      - Vous ne pouvez pas ajouter d’adresses proxy smtp héritées de la boîte aux lettres source à MailUser cible. Par exemple, vous ne pouvez pas maintenir contoso.com sur l’ueM dans fabrikam.onmicrosoft.com objets locataires). Les domaines sont associés à un seul locataire Azure AD ou Exchange Online.
 
      Exemple d’objet MailUser **cible** :
 
@@ -375,7 +375,7 @@ La soumission par lot de migration est également prise en charge à partir du n
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs du courrier local, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement est **contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Devons-nous mettre à jour remoteMailboxes dans la source localement après le déplacement ?**
 

@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 099ba7abe53be6269c1d01c0d39d9e5cfbe3557d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731689"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739946"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [La chasse avancée](advanced-hunting-overview.md) dans Microsoft 365 Defender vous permet de rechercher de manière proactive les menaces :
@@ -82,7 +82,10 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
+Regardez cette [courte vidéo](https://www.youtube.com/watch?v=8qZx7Pp5XgM) pour découvrir comment utiliser Langage de requête Kusto pour joindre des tables.  
+
 ### <a name="get-device-information"></a>Obtenir des informations sur l’appareil
+
 Le [schéma de chasse avancé](advanced-hunting-schema-tables.md) fournit des informations détaillées sur les appareils dans différentes tables. Par exemple, la [table DeviceInfo](advanced-hunting-deviceinfo-table.md) fournit des informations complètes sur l’appareil en fonction des données d’événement agrégées régulièrement. Cette requête utilise la `DeviceInfo` table pour vérifier si un utilisateur potentiellement compromis (`<account-name>`) s’est connecté à des appareils, puis répertorie les alertes qui ont été déclenchées sur ces appareils.
 
 >[!Tip]
@@ -188,6 +191,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Scénarios de repérage
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Répertorier les activités d’ouverture de session des utilisateurs qui ont reçu des e-mails qui n’ont pas été ajoutés avec succès
+
 [Le vidage automatique de zéro heure (ZAP) traite les e-mails](../office-365-security/zero-hour-auto-purge.md) malveillants une fois qu’ils ont été reçus. Si ZAP échoue, le code malveillant peut éventuellement s’exécuter sur l’appareil et laisser les comptes compromis. Cette requête recherche l’activité d’ouverture de session effectuée par les destinataires des e-mails qui n’ont pas été traités avec succès par ZAP.
 
 ```kusto
@@ -205,6 +209,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Obtenir des tentatives d’ouverture de session par des comptes de domaine ciblés par le vol d’informations d’identification
+
 Cette requête identifie d’abord toutes les alertes d’accès aux informations d’identification dans la `AlertInfo` table. Il fusionne ou joint ensuite la `AlertEvidence` table, qu’il analyse uniquement pour les noms des comptes ciblés et les filtres pour les comptes joints à un domaine. Enfin, il vérifie la `IdentityLogonEvents` table pour obtenir toutes les activités d’ouverture de session par les comptes ciblés joints à un domaine.
 
 ```kusto
@@ -225,6 +230,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Vérifier si les fichiers d’un expéditeur malveillant connu figurent sur vos appareils
+
 En supposant que vous savez qu’une adresse e-mail envoie des fichiers malveillants (`MaliciousSender@example.com`), vous pouvez exécuter cette requête pour déterminer si des fichiers de cet expéditeur existent sur vos appareils. Vous pouvez utiliser cette requête, par exemple, pour identifier les appareils affectés par une campagne de distribution de programmes malveillants.
 
 ```kusto
@@ -241,6 +247,7 @@ DeviceFileEvents
 ```
 
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>Examiner les tentatives de connexion après la réception des e-mails malveillants
+
 Cette requête recherche les 10 dernières connexions effectuées par les destinataires du courrier dans un délai de 30 minutes après la réception des e-mails malveillants connus. Vous pouvez utiliser cette requête pour vérifier si les comptes des destinataires de l’e-mail ont été compromis.
 
 ```kusto
@@ -261,6 +268,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Examiner les activités PowerShell après réception d'e-mails d'expéditeurs malveillants connus.
+
 Les e-mails malveillants contiennent souvent des documents et d'autres pièces jointes spécialement conçues qui exécutent des commandes PowerShell pour offrir d'autres charges utiles. Si vous êtes au courant des e-mails provenant d’un expéditeur malveillant connu (`MaliciousSender@example.com`), vous pouvez utiliser cette requête pour répertorier et examiner les activités PowerShell qui se sont produites dans les 30 minutes suivant la réception d’un e-mail de l’expéditeur.  
 
 ```kusto
@@ -283,6 +291,7 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

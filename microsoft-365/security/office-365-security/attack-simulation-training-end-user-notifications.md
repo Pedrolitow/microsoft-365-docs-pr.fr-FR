@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour la formation de simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 66e3e029e8da203b35285080caa91dca3a51e5c7
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 5e14fe4edc559b927a8b1d703d7706bbe97b5949
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678836"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739852"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
 
@@ -31,7 +31,7 @@ Dans la formation de simulation d’attaque dans Microsoft 365 E5 ou Microsoft D
 - **Notifications de simulation** : ces messages sont envoyés lorsque les utilisateurs sont inscrits à des formations et en tant que rappels pour les formations requises.
 - **Notifications de renforcement positif :** ces messages sont envoyés lorsque les utilisateurs signalent un message de hameçonnage simulé.
 
-Pour afficher la notification de l’utilisateur final disponible, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **e-mail &** onglet **Simulation de simulation** \> d’attaque de collaboration  \> \>, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** , utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Pour afficher les notifications disponibles de l’utilisateur final, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse \> **e-mail &** onglet **Simulation** de **simulation** \> d’attaque de collaboration\>, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Les notifications de l’utilisateur final** comportent deux onglets :
 
@@ -61,7 +61,7 @@ Pour supprimer une ou plusieurs colonnes affichées, cliquez sur ![l’icône Pe
 
 Lorsque vous sélectionnez une notification dans la liste, un menu volant de détails s’affiche avec les informations suivantes :
 
-- **Onglet Aperçu** : afficher le message de notification. Pour afficher le message dans différentes langues, utilisez la zone **Sélectionner une langue** .
+- **Onglet Aperçu** : affichez le message de notification comme les utilisateurs le verront. Pour afficher le message dans différentes langues, utilisez la zone **Sélectionner une langue** .
 - **Onglet Détails** : Afficher les détails de la notification :
   - **Description de la notification**
   - **Source** : pour les notifications intégrées, la valeur est **Global**. Pour les notifications personnalisées, la valeur est **Locataire**.

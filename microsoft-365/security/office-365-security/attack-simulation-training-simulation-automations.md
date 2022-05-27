@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et charges utiles spécifiques qui sont lancées lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678852"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739668"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour l’entraînement de simulation d’attaque
 
@@ -31,7 +31,7 @@ Pour créer une automatisation de simulation, procédez comme suit :
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com/>accédez à **l’onglet** **Automatisations** de simulation de l’apprentissage  \> de la **simulation** \> d’attaque & collaboration\>.
 
-   Pour accéder directement à l’onglet **Automations** , utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   Pour accéder directement à l’onglet **Automations** où vous pouvez sélectionner **Automations de simulation**, utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. Dans **Les automatisations de simulation**, sélectionnez ![l’icône Créer une automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
@@ -311,7 +311,7 @@ Dans la page **Sélectionner la notification de l’utilisateur final** , sélec
       - **Livrer après la fin de la campagne**
       - **Livrer pendant la campagne**
     - **Actions** : si vous cliquez sur l’icône ![Affichage.](../../media/m365-cc-sc-view-icon.png) **Icône Afficher** , la page **de notification Révision** s’affiche avec les informations suivantes :
-      - **Onglet Aperçu** : afficher le message de notification.
+      - **Onglet Aperçu** : affichez le message de notification comme les utilisateurs le verront.
         - Pour afficher le message dans différentes langues, utilisez la zone **Sélectionner une langue** .
         - Utilisez la **charge utile Sélectionner pour afficher un aperçu** afin de sélectionner le message de notification pour les simulations qui contiennent plusieurs charges utiles.
       - **Onglet Détails** : Afficher les détails de la notification :

@@ -19,16 +19,16 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer Office 365 points de terminaison afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: c32b44365a8c926e398e4441b6b50905ea77147d
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587465"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753823"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
-La plupart des organisations d’entreprise disposant de plusieurs emplacements de bureau et d’une connexion WAN de connexion auront besoin de la configuration de la connectivité réseau d’Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les requêtes réseau approuvées Office 365 directement via votre pare-feu, en contournant toutes les tâches d’inspection ou de traitement supplémentaires des paquets. Cela réduit ainsi la latence et les exigences relatives à la capacité du périmètre. L’identification du trafic réseau Office 365 est la première étape pour offrir des performances optimales pour vos utilisateurs. Pour plus d’informations, consultez [Office 365 Principes de connectivité réseau](microsoft-365-network-connectivity-principles.md).
+La plupart des organisations d’entreprise disposant de plusieurs emplacements de bureau et d’une connexion WAN de connexion auront besoin de la configuration de la connectivité réseau d’Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les demandes réseau Office 365 approuvées directement via votre pare-feu, en contournant toute inspection ou traitement supplémentaire au niveau des paquets. Cela réduit ainsi la latence et les exigences relatives à la capacité du périmètre. L’identification du trafic réseau Office 365 est la première étape pour offrir des performances optimales pour vos utilisateurs. Pour plus d’informations, consultez [Office 365 Principes de connectivité réseau](microsoft-365-network-connectivity-principles.md).
 
 Microsoft vous recommande d’accéder aux points de terminaison réseau Office 365 et de les modifier en continu à l’aide du [service web d’adresse IP et d’URL Office 365](microsoft-365-ip-web-service.md).
 
@@ -77,7 +77,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Il existe de nombreux paramètres que vous pouvez passer au script :
 
-| Parameter | Description |
+| Paramètre | Description |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est requis et il s’agit d’un GUID transmis au service Web qui représente l’ordinateur client à l’origine de l’appel. <br/> |
 |**Instance** <br/> |Instance de service Office 365, qui est par défaut Worldwide. Il est également transmis au service web. <br/> |
@@ -92,22 +92,22 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 ## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>Contournement de serveur proxy avec traitement du trafic réseau Office 365
 
-Lorsque les fichiers PAC ne sont pas utilisés pour le trafic sortant direct, vous devez ignorer le traitement sur votre périmètre réseau en configurant votre serveur proxy. Certains fournisseurs de serveur proxy ont activé la configuration automatisée, ce qui est décrit dans le [Programme de partenariat réseau Office 365](microsoft-365-networking-partner-program.md).
+Lorsque les fichiers PAC ne sont pas utilisés pour le trafic sortant direct, vous souhaitez toujours contourner le traitement sur votre périmètre réseau en configurant votre serveur proxy. Certains fournisseurs de serveur proxy ont activé la configuration automatisée, ce qui est décrit dans le [Programme de partenariat réseau Office 365](microsoft-365-networking-partner-program.md).
 
-Si vous effectuez cette opération manuellement, vous devez obtenir les données de catégorie Optimiser et Autoriser les points de terminaison à partir du service web d’adresse IP et d’URL Office 365 et configurer votre serveur proxy pour ignorer le traitement de ces derniers. Il est important d’éviter l’arrêt et l’inspection de SSL et l’authentification proxy pour les points de terminaison Optimiser et Autoriser.
+Si vous effectuez cette opération manuellement, vous devez obtenir les données de catégorie Optimiser et Autoriser le point de terminaison à partir du service web d’adresse IP et d’URL Office 365 et configurer votre serveur proxy pour contourner le traitement de ces derniers. Il est important d’éviter l’arrêt et l’inspection de SSL et l’authentification proxy pour les points de terminaison Optimiser et Autoriser.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Gestion des modifications pour Office 365 adresses IP et URL
 
-En plus de sélectionner la configuration appropriée pour votre périmètre de réseau, il est essentiel que vous adoptiez un processus de gestion des modifications pour les points de terminaison Office 365. Ces points de terminaison changent régulièrement et si vous ne gérez pas les modifications, vous pouvez rencontrer des utilisateurs bloqués ou avec des performances médiocres suite à l’ajout d’une nouvelle adresse IP ou d’une nouvelle URL.
+En plus de sélectionner la configuration appropriée pour votre périmètre réseau, il est essentiel d’adopter un processus de gestion des modifications pour Office 365 points de terminaison. Ces points de terminaison changent régulièrement et si vous ne gérez pas les modifications, vous pouvez vous retrouver avec des utilisateurs bloqués ou avec des performances médiocres après l’ajout d’une nouvelle adresse IP ou d’une nouvelle URL.
 
 Les modifications apportées aux adresses IP et URL Office 365 sont généralement publiées autour du dernier jour de chaque mois. Il peut arriver qu’une modification soit publiée en dehors de cette planification en raison de besoins opérationnels, de support ou de sécurité.
 
-Lors de la publication d’une modification nécessitant d’agir suite à l’ajout d’une adresse IP ou d’une URL, vous devriez recevoir une notification de 30 jours à partir du moment où nous publions la modification jusqu’à ce qu’un service Office 365 sur ce point de terminaison soit utilisé. Cela se reflète sous la forme de la date d’effet. Bien que nous cherchions à utiliser cette période de notification, il est possible qu’elle ne soit pas toujours possible en raison de besoins opérationnels, de support ou de sécurité. Les modifications qui n’ont pas besoin d’une action immédiate pour maintenir la connectivité, telles que les adresses IP ou URL supprimées, ou les modifications moins importantes, n’incluent pas de notification préalable. Dans ces cas, aucune date d’effet n’est fournie. Quelle que soit la notification fournie, nous annonçons la date de mise en service attendue pour chaque changement.
+Lorsqu’une modification est publiée et que vous devez agir parce qu’une adresse IP ou une URL a été ajoutée, vous devez vous attendre à recevoir un préavis de 30 jours à partir du moment où nous publions la modification jusqu’à ce qu’il y ait un service Office 365 sur ce point de terminaison. Cela se reflète sous la forme de la date d’effet. Bien que nous cherchions à utiliser cette période de notification, il est possible qu’elle ne soit pas toujours possible en raison de besoins opérationnels, de support ou de sécurité. Les modifications qui ne nécessitent pas d’action immédiate pour maintenir la connectivité, telles que la suppression d’adresses IP ou d’URL ou de modifications moins importantes, n’incluent pas de notification préalable. Dans ces cas, aucune date d’effet n’est fournie. Quelle que soit la notification fournie, nous annonçons la date de mise en service attendue pour chaque changement.
 
 ### <a name="change-notification-using-the-web-service"></a>Notification des modifications à l’aide du service Web
 
-Vous pouvez utiliser l’adresse IP Office 365 et le service Web d’URL pour obtenir la notification de modification. Nous vous recommandons d’appeler la méthode Web **/version** une fois par heure pour vérifier la version des points de terminaison que vous utilisez pour vous connecter à Office 365. Si cette version change alors qu’elle est comparée à la version que vous utilisez, vous devriez obtenir les données de point de terminaison les plus récentes à partir de la méthode Web **/Endpoints** et éventuellement obtenir les différences par rapport à la méthode Web **/changes**. Il n’est pas nécessaire d’appeler les méthodes Web **/Endpoints** ou **/changes** si aucune modification n’a été apportée à la version que vous avez trouvée.
+Vous pouvez utiliser l’adresse IP Office 365 et le service Web d’URL pour obtenir la notification de modification. Nous vous recommandons d’appeler la méthode web **/version** une fois par heure pour vérifier la version des points de terminaison que vous utilisez pour vous connecter à Office 365. Si cette version change alors qu’elle est comparée à la version que vous utilisez, vous devriez obtenir les données de point de terminaison les plus récentes à partir de la méthode Web **/Endpoints** et éventuellement obtenir les différences par rapport à la méthode Web **/changes**. Il n’est pas nécessaire d’appeler les **méthodes web /endpoints** ou **/changes** si aucune modification n’a été apportée à la version que vous avez trouvée.
 
 Pour plus d’informations, voir [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md).
 
@@ -143,13 +143,13 @@ Avec plus de 2 500 relations d’homologation avec des fournisseurs de service
 <a name="bkmk_MissingIP"> </a>
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Je vois des requêtes réseau envoyées à des adresses IP ne figurant pas sur la liste publiée. Dois-je leur octroyer l’accès ?
 
-Nous fournissons uniquement des adresses IP pour les serveurs Office 365 sur lesquels vous devez router directement. Cette liste d’adresses IP associées aux requêtes réseau n’est pas exhaustive. Vous voyez les requêtes réseau envoyées à Microsoft et à des adresses IP non publiées appartenant à des tiers. Ces adresses IP sont gérées ou générées de manière dynamique. Il est donc impossible de fournir un préavis immédiat en cas de modification. Si votre pare-feu ne peut pas autoriser l’accès sur la base des noms de domaines complets associés à ces requêtes réseau, utilisez un fichier PAC ou WPAD pour gérer les requêtes.
+Nous fournissons uniquement des adresses IP pour les serveurs Office 365 sur lesquels vous devez router directement. Cette liste d’adresses IP associées aux requêtes réseau n’est pas exhaustive. Vous verrez des demandes réseau adressées à Microsoft et à des adresses IP détenues par des tiers, non publiées. Ces adresses IP sont gérées ou générées de manière dynamique. Il est donc impossible de fournir un préavis immédiat en cas de modification. Si votre pare-feu ne peut pas autoriser l’accès sur la base des noms de domaines complets associés à ces requêtes réseau, utilisez un fichier PAC ou WPAD pour gérer les requêtes.
   
 Voir une adresse IP associée à Office 365 sur laquelle vous voulez obtenir plus d’informations.
   
 1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une calculatrice CIDR, comme celles-ci pour [IPv4](https://www.ipaddressguide.com/cidr) ou [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Par exemple, 40.96.0.0/13 inclut l’adresse IP 40.103.0.1 Malgré 40.96 ne correspondant pas à 40.103.
-2. Vérifiez si l’adresse IP appartient à un partenaire en utilisant une [requête whois](https://dnsquery.org/). Si elle appartient à Microsoft, il peut s’agir d’un partenaire interne. De nombreux points de terminaison réseau de partenaire sont répertoriés comme appartenant à la catégorie _par défaut_, pour laquelle les adresses IP ne sont pas publiées.
-3. L’adresse IP ne fait pas partie d’Office 365 ou d’une dépendance. La publication du point de terminaison réseau Office 365 n’inclut pas tous les points de terminaison réseau Microsoft.
+2. Vérifiez si l’adresse IP appartient à un partenaire en utilisant une [requête whois](https://dnsquery.org/). Si elle appartient à Microsoft, il peut s’agir d’un partenaire interne. De nombreux points de terminaison de réseau de partenaires sont répertoriés comme appartenant à la catégorie _par défaut_ , pour laquelle les adresses IP ne sont pas publiées.
+3. L’adresse IP ne fait pas partie d’Office 365 ou d’une dépendance. Office 365 publication de points de terminaison réseau n’inclut pas tous les points de terminaison réseau Microsoft.
 4. Vérifiez le certificat. Avec un navigateur, connectez-vous à l’adresse IP à l’aide  *de HTTPS://\<IP_ADDRESS\>* et vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non dans la liste des adresses IP Office 365, il est probable que l’adresse IP soit associée à un CDN Microsoft tel que *MSOCDN.NET* ou un autre domaine Microsoft sans informations IP publiées. Si vous constatez que le domaine figurant sur le certificat est l’un de ceux dont nous déclarons répertorier l’adresse IP, faites-le nous savoir.
 
 <a name="bkmk_cname"> </a>
@@ -161,9 +161,9 @@ Les ordinateurs clients ont besoin d’un enregistrement DNS A ou AAAA qui inclu
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
 ```
 
-Ces redirections CNAME constituent une partie normale du DNS et sont transparentes pour l’ordinateur client et transparent pour les serveurs proxy. Elles sont utilisées pour l’équilibrage de charge, les réseaux de distribution de contenu, la haute disponibilité et l’atténuation des incidents de service. Microsoft ne publie pas les enregistrements CNAME intermédiaires, ils sont susceptibles de changer à tout moment, et vous n’avez pas besoin de les configurer comme autorisé sur votre serveur proxy.
+Ces redirections CNAME constituent une partie normale du DNS et sont transparentes pour l’ordinateur client et transparent pour les serveurs proxy. Elles sont utilisées pour l’équilibrage de charge, les réseaux de distribution de contenu, la haute disponibilité et l’atténuation des incidents de service. Microsoft ne publie pas les enregistrements CNAME intermédiaires, ils sont susceptibles d’être modifiés à tout moment et vous n’avez pas besoin de les configurer comme autorisé dans votre serveur proxy.
 
-Un serveur proxy valide l’URL initiale, qui est serviceA.office.com dans l’exemple ci-dessus, et cette URL est incluse dans Office 365 publication. Le serveur proxy demande la résolution DNS de cette URL à une adresse IP et recevra IP_1. Il ne valide pas les enregistrements de redirection intermédiaires CNAME.
+Un serveur proxy valide l’URL initiale, qui est serviceA.office.com dans l’exemple ci-dessus, et cette URL est incluse dans Office 365 publication. Le serveur proxy demande la résolution DNS de cette URL à une adresse IP et recevra IP_1. Il ne valide pas les enregistrements de redirection CNAME intermédiaires.
 
 Les configurations codées en dur ou l’utilisation d’une liste verte basée sur des noms de domaine complets Office 365 indirects ne sont pas recommandées, ne sont pas prises en charge par Microsoft et sont connues pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME, ou qui résolvent de manière incorrecte Office 365 entrées DNS, peuvent être résolues via des redirecteurs DNS avec la récursivité DNS activée ou à l’aide d’indicateurs racines DNS. De nombreux produits de périmètre réseau tiers intègrent en mode natif le point de terminaison de Office 365 recommandé pour inclure une liste verte dans leur configuration à l’aide du [service web d’adresse IP et d’URL Office 365](microsoft-365-ip-web-service.md).
 
@@ -214,9 +214,10 @@ Si vous essayez d’utiliser Office 365 et que vous trouvez que les services tie
 La fonctionnalité de restrictions de locataire prend désormais en charge le blocage de l’utilisation de toutes les applications grand public Microsoft (applications MSA) telles que OneDrive, Hotmail et Xbox.com. Cela utilise un en-tête distinct pour le point de terminaison login.live.com. Pour plus d’informations, consultez [Utiliser les restrictions de locataire pour gérer l’accès aux applications cloud SaaS](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
 
 <a name="bkmk_IPOnlyFirewall"> </a>
+
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Mon pare-feu nécessite des adresses IP et ne peut pas traiter les URL. Comment puis-je le configurer pour Office 365 ?
 
-Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut requises doivent être autorisées par le biais d’un serveur proxy. Si vous n’avez pas de serveur proxy, examinez comment vous avez configuré les requêtes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web ; l’utilisateur ne fournit pas non plus d’adresse IP. Les URL de catégorie Office 365 par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même façon.
+Office 365 ne fournit pas d’adresses IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut requises doivent être autorisées par le biais d’un serveur proxy. Si vous n’avez pas de serveur proxy, examinez comment vous avez configuré les requêtes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web ; l’utilisateur ne fournit pas non plus d’adresse IP. Les URL de catégorie Office 365 par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même façon.
 
 ## <a name="related-topics"></a>Voir aussi
 

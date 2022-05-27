@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: ee7f5e5b4744d9299d122b4ba6b0dffe6734eca7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79a3ecc07c8b987b2f77455323bc656ca9d2ad4f
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414825"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754691"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Envoyer des fichiers dans Microsoft Defender pour point de terminaison
 
@@ -42,13 +42,13 @@ ms.locfileid: "65414825"
 
 Dans Microsoft Defender pour point de terminaison, les administrateurs peuvent utiliser la fonctionnalité d’envoi unifiée pour envoyer des fichiers et des hachages de fichiers à Microsoft à des fins de révision. L’expérience de soumission unifiée est un guichet unique pour l’envoi d’e-mails, d’URL, de pièces jointes et de fichiers dans une expérience de soumission facile à utiliser. Les administrateurs peuvent utiliser le portail Microsoft 365 Defender ou la page d’alerte Microsoft Defender pour point de terminaison pour envoyer des fichiers suspects.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - La nouvelle expérience de soumission unifiée est disponible uniquement dans les abonnements qui incluent Microsoft 365 Defender, Microsoft Defender pour point de terminaison Plan 2 ou Microsoft Defender pour Office Plan 2.
 
 - Pour envoyer des fichiers à Microsoft, vous devez être membre de l’un des groupes de rôles suivants :
 
-  - **Gestion de l’organisation** ou **administrateur de sécurité** dans le [portail Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-security-center.md).
+  - **Gestion de l’organisation**, **administrateur de la sécurité** ou **Lecteur sécurité** dans le [portail Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-security-center.md).
 
 - Pour plus d’informations sur la façon dont vous pouvez envoyer des courriers indésirables, des hameçonnages, des URL et des pièces jointes à Microsoft, consultez [les messages de rapport et les fichiers à Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 

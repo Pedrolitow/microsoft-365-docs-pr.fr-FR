@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Conseils normatifs pour déployer Microsoft Purview pour votre organisation afin de régir vos données en fonction des exigences réglementaires ou de conformité.
-ms.openlocfilehash: 0a16bf231111019381ad76670446dba246cf2d4f
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 5a7ef3f26ed21cc8ad97aeea3ed97cb1938cd837
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294808"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754249"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Déployer une solution de gouvernance des données avec Microsoft Purview
 
@@ -83,8 +83,8 @@ Pour en savoir plus sur les fonctionnalités de cette solution, consultez [En sa
 
 Modules d’apprentissage pour les consultants et les administrateurs :
 
-- [Présentation de la protection et de la gouvernance des informations dans Microsoft 365](/learn/modules/m365-compliance-information-governance)
-- [Gérer les informations dans Microsoft 365](/learn/modules/m365-compliance-information-govern-information/)
-- [Gérer les enregistrements dans Microsoft 365](/learn/modules/m365-compliance-information-manage-records/)
+- [Introduction à la protection de l'information et à la gestion du cycle de vie des données dans Microsoft Purview](/learn/modules/m365-compliance-information-governance)
+- [Gérer le cycle de vie des données dans Microsoft Purview](/learn/modules/m365-compliance-information-govern-information/)
+- [Gérer les enregistrements dans Microsoft Purview](/learn/modules/m365-compliance-information-manage-records/)
 
 Pour obtenir de la documentation sur la prise en charge des utilisateurs lors du déploiement de ces solutions, consultez les sections de documentation de l’utilisateur final pour la [gestion du cycle de vie des données](get-started-with-information-governance.md#end-user-documentation) et la [gestion des enregistrements](get-started-with-records-management.md#end-user-documentation).

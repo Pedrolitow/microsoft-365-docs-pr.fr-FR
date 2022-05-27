@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et javaScript non essentiels.
-ms.openlocfilehash: af75b3ede1136894bea0a7f4c00cc9498d194fe3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8252e169e36dc6976a7be0b4815915ee72283eff
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101290"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754729"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
@@ -36,7 +36,7 @@ Les images peuvent affecter négativement les vitesses de chargement des pages s
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement des pages en retardant le chargement d’images dans SharePoint pages en ligne à l’aide de JavaScript
 
-Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-extraire des images. Cela accélère le rendu global des documents. Pour ce faire, vous supprimez la valeur de l’attribut src de la balise et vous la \<img\> remplacez par le chemin d’accès à un fichier dans un attribut de données tel que : data-src. Par exemple :
+Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-extraire des images. Cela accélère le rendu global des documents. Pour ce faire, vous supprimez la valeur de l’attribut src de la balise et vous la \<img\> remplacez par le chemin d’accès à un fichier dans un attribut de données tel que : data-src. Par exemple :
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -107,7 +107,7 @@ Une fois que vous avez terminé d’écrire delayLoadImages.js, vous pouvez ajou
 
 ### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exemple : référencement du fichier delayLoadImages.js JavaScript à partir d’une page maître dans SharePoint Online
   
-Pour que cela fonctionne, vous devez également référencer jQuery dans la page maître. Dans l’exemple suivant, vous pouvez voir dans le chargement initial de la page qu’une seule image est chargée, mais qu’il y en a plusieurs autres sur la page.
+Pour que cela fonctionne, vous devez également référencer jQuery dans la page maître. Dans l’exemple suivant, vous pouvez voir dans le chargement de page initial qu’il n’y a qu’une seule image chargée, mais qu’il y en a plusieurs autres sur la page.
   
 ![Capture d’écran montrant une image chargée sur la page.](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
@@ -121,7 +121,7 @@ Retarder le chargement d’images à l’aide de JavaScript peut être une techn
 
 Ne manquez pas l’article et l’exemple de code sur [l’injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournie sur GitHub.
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 
 [Navigateurs pris en charge dans Office 2013 et Applications Microsoft 365 pour les grandes entreprises](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   

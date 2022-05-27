@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8277c962b149cb105dd8e08e983594610618bdd4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 262909af80ce79036ad889521ac160c851b9fd06
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217417"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759828"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -60,7 +60,7 @@ Lorsque des utilisateurs quittent votre organisation, il existe des indicateurs 
 
 ### <a name="general-data-leaks"></a>Fuites de données générales
 
-Protéger et empêcher les fuites de données constitue un défi permanent pour la plupart des organisations, en particulier avec l’augmentation rapide de nouvelles données créées par les utilisateurs, les appareils et les services. Les utilisateurs peuvent créer, stocker et partager des informations sur tous les services et appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure le partage à outrance et accidentel d’informations en dehors de votre organisation ou le vol de données à des fins malveillantes. Avec une stratégie de protection contre la perte de données (DLP) Microsoft Purview affectée, des événements de déclenchement intégrés ou personnalisables, ce modèle commence à noter les détections en temps réel des téléchargements suspects de données SharePoint en ligne, le partage de fichiers et de dossiers, l’impression de fichiers et la copie de données vers des services de messagerie et de stockage cloud personnels.
+Protéger et empêcher les fuites de données constitue un défi permanent pour la plupart des organisations, en particulier avec l’augmentation rapide de nouvelles données créées par les utilisateurs, les appareils et les services. Les utilisateurs peuvent créer, stocker et partager des informations sur tous les services et appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure le partage à outrance et accidentel d’informations en dehors de votre organisation ou le vol de données à des fins malveillantes. Avec une stratégie de Protection contre la perte de données Microsoft Purview (DLP) affectée, des événements de déclenchement intégrés ou personnalisables, ce modèle commence à noter les détections en temps réel de détections suspectes SharePoint téléchargements de données en ligne, le partage de fichiers et de dossiers, l’impression de fichiers et la copie de données vers des services de messagerie et de stockage cloud personnels.
 
 Lors de l’utilisation d’un modèle de *Fuites de données*, vous pouvez attribuer une stratégie DLP pour déclencher des indicateurs dans la stratégie de risque interne pour les alertes à gravité élevée au sein de votre organisation. Chaque fois qu’une alerte à gravité élevée générée par une règle de stratégie DLP est ajoutée au journal d’audit d’Office 365, les stratégies de risque interne créées à l’aide de ce modèle examinent automatiquement l’alerte DLP à gravité élevée. Si l’alerte contient un utilisateur dans l’étendue définie dans la stratégie de risque interne, l’alerte est traitée par la stratégie de risque interne en tant que nouvelle alerte et un score de risque et une gravité de risque interne lui sont attribués. Vous pouvez également choisir d’affecter des indicateurs sélectionnés comme événements déclencheurs pour une stratégie. Cette flexibilité et cette personnalisation permettent d’étendre la stratégie uniquement aux activités couvertes par les indicateurs. Cette stratégie vous permet d’évaluer cette alerte dans le contexte avec d’autres activités incluses dans le cas.
 
@@ -142,11 +142,11 @@ Le tableau suivant répertorie les événements déclencheurs et les conditions 
 | **Fuites de données générales** | L’activité de stratégie de fuite de données qui crée une alerte de *Gravité élevée* ou des événements déclencheurs d’exfiltration intégrés | Stratégie DLP configurée pour les alertes *de gravité élevée* <br><br> OR <br><br> Indicateurs de déclenchement personnalisés |
 | **Fuites de données par des utilisateurs prioritaires** | L’activité de stratégie de fuite de données qui crée une alerte de *Gravité élevée* ou des événements déclencheurs d’exfiltration intégrés | Stratégie DLP configurée pour les alertes *de gravité élevée* <br><br> OR <br><br> Indicateurs de déclenchement personnalisés <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
 | **Fuites de données provoquées par un utilisateur mécontent** | Amélioration des performances, performances médiocres ou indicateurs de changement du niveau des tâches à partir du connecteur RH | Connecteur Microsoft 365 RH configuré pour les indicateurs de mécontentement |
-| **Violations générales de la stratégie de sécurité** | Évasion de défense des contrôles de sécurité ou des logiciels indésirables détectés par Microsoft Defender pour point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> Microsoft Defender pour point de terminaison l’intégration au portail de conformité Microsoft Purview configurée |
+| **Violations générales de la stratégie de sécurité** | Évasion de défense des contrôles de sécurité ou des logiciels indésirables détectés par Microsoft Defender pour point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> intégration Microsoft Defender pour point de terminaison à portail de conformité Microsoft Purview configurée |
 | **Utilisation incorrecte générale des données des patients** | Évasion de défense des contrôles de sécurité à partir des systèmes EMR <br><br> Indicateurs de correspondance d’adresse utilisateur et patient à partir de systèmes RH | Indicateurs d’accès aux soins de santé sélectionnés dans les paramètres de stratégie ou de risque interne <br><br> Microsoft 365 connecteur RH configuré pour la correspondance d’adresses <br><br> Connecteur Microsoft Healthcare ou Epic configuré |
-| **Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise** | Indicateurs de date de démission ou de licenciement du connecteur RH ou suppression de compte Azure Active Directory | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement <br><br> Abonnement actif Microsoft Defender pour point de terminaison <br><br> Microsoft Defender pour point de terminaison l’intégration au portail de conformité Microsoft Purview configurée |
-| **Violations de la stratégie de sécurité par des utilisateurs prioritaires** | Évasion de défense des contrôles de sécurité ou des logiciels indésirables détectés par Microsoft Defender pour point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> Microsoft Defender pour point de terminaison l’intégration au portail de conformité Microsoft Purview configurée <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
-| **Violations de stratégie de sécurité par un utilisateur mécontent** | Amélioration des performances, performances médiocres ou indicateurs de changement du niveau des tâches à partir du connecteur RH | Connecteur Microsoft 365 RH configuré pour les indicateurs de mécontentement <br><br> Abonnement actif Microsoft Defender pour point de terminaison <br><br> Microsoft Defender pour point de terminaison l’intégration au portail de conformité Microsoft Purview configurée |
+| **Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise** | Indicateurs de date de démission ou de licenciement du connecteur RH ou suppression de compte Azure Active Directory | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement <br><br> Abonnement actif Microsoft Defender pour point de terminaison <br><br> intégration Microsoft Defender pour point de terminaison à portail de conformité Microsoft Purview configurée |
+| **Violations de la stratégie de sécurité par des utilisateurs prioritaires** | Évasion de défense des contrôles de sécurité ou des logiciels indésirables détectés par Microsoft Defender pour point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> intégration Microsoft Defender pour point de terminaison à portail de conformité Microsoft Purview configurée <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
+| **Violations de stratégie de sécurité par un utilisateur mécontent** | Amélioration des performances, performances médiocres ou indicateurs de changement du niveau des tâches à partir du connecteur RH | Connecteur Microsoft 365 RH configuré pour les indicateurs de mécontentement <br><br> Abonnement actif Microsoft Defender pour point de terminaison <br><br> intégration Microsoft Defender pour point de terminaison à portail de conformité Microsoft Purview configurée |
 
 ## <a name="prioritize-content-in-policies"></a>Hiérarchiser le contenu dans les stratégies
 
@@ -161,7 +161,7 @@ Lorsque vous créez une stratégie de gestion des risques internes dans l’Assi
 - **Étiquettes de confidentialité** : toute activité associée au contenu sur lequel des [étiquettes de confidentialité](sensitivity-labels.md) sont appliquées se voit attribuer un score de risque plus élevé.
 - **Extensions de fichier** : toute activité associée à du contenu qui a des extensions de fichier spécifiques. Les utilisateurs qui configurent une stratégie de vol/fuite de données qui sélectionnent **les extensions de fichier à hiérarchiser** dans l’Assistant Stratégie peuvent définir jusqu’à 50 extensions de fichier à hiérarchiser dans la stratégie. Les extensions entrées peuvent inclure ou omettre un « . » comme premier caractère de l’extension hiérarchisée.
 
-## <a name="sequence-detection-preview"></a>Détections de séquence (préversion)
+## <a name="sequence-detection"></a>Détection de séquence
 
 Des activités à risque peuvent ne pas se produire en tant qu’événements isolés. Ces risques font fréquemment partie d’une séquence d’événements plus importante. Une séquence est un groupe d’au moins deux activités utilisateur effectuées l’une après l’autre pouvant suggérer un risque élevé. L’identification de ces activités associées est un élément important de l’évaluation du risque global. Quand une détection de séquence est activée pour des stratégies de vol de données ou de fuites de données, les informations des activités sur les informations de la séquence s’affichent dans l’onglet **Activité utilisateur** dans le cas de gestion des risques internes. Les modèles de stratégie suivants prennent en charge la détection de séquence :
 
@@ -188,7 +188,7 @@ Si vous souhaitez en savoir plus sur la gestion de la détection de séquence da
 
 Les indicateurs de risque interne permettent d’identifier des niveaux inhabituels de risque lorsqu’ils sont évalués quotidiennement pour des utilisateurs étant dans l’étendue des stratégie de risque interne. La détection d’exfiltration cumulative utilise des modèles Machine Learning pour vous aider à identifier quand les activités d’exfiltration effectuées par un utilisateur sur un certain temps dépassent la quantité normale effectuée par les utilisateurs de votre organisation au cours des 30 derniers jours sur plusieurs types d’activités d’exfiltration. Par exemple, si un utilisateur a partagé plus de fichiers que la plupart des utilisateurs au cours du dernier mois, cette activité est détectée et classée en tant qu’activité d’exfiltration cumulative.
 
-Les enquêteurs et analystes de gestion des risques internes peuvent utiliser les informations de la détection d’exfiltration cumulée pour leur permettre d’identifier des activités d’exfiltration qui ne génèrent généralement aucune alerte , mais qui se situent au-dessus de ce qui est standard pour leur organisation. Des exemples peuvent correspondre à des utilisateurs sortants qui exfiltrent lentement des données sur un certain nombre de jours ou lorsque des utilisateurs partagent, à maintes reprises et plus que d’ordinaire pour votre organisation, des données sur plusieurs canaux.  Des scores de risque plus élevés sont attribués aux activités d’exfiltration cumulatives pour les sites SharePoint, les types d’informations sensibles et le contenu avec [des étiquettes de confidentialité](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configurées comme contenu prioritaire dans une stratégie ou pour l’activité impliquant des étiquettes configurées comme haute priorité dans Microsoft Purview Information Protection.
+Les enquêteurs et analystes de gestion des risques internes peuvent utiliser les informations de la détection d’exfiltration cumulée pour leur permettre d’identifier des activités d’exfiltration qui ne génèrent généralement aucune alerte , mais qui se situent au-dessus de ce qui est standard pour leur organisation. Des exemples peuvent correspondre à des utilisateurs sortants qui exfiltrent lentement des données sur un certain nombre de jours ou lorsque des utilisateurs partagent, à maintes reprises et plus que d’ordinaire pour votre organisation, des données sur plusieurs canaux.  Des scores de risque plus élevés sont attribués aux activités d’exfiltration cumulatives pour les sites SharePoint, les types d’informations sensibles et le contenu avec [des étiquettes de confidentialité](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configurées comme contenu prioritaire dans une stratégie ou pour une activité impliquant des étiquettes configurées comme priorité élevée dans Protection des données Microsoft Purview.
 
 La détection d’exfiltration cumulée est activée par défaut lors de l’utilisation des modèles de stratégie suivants :
 
@@ -275,7 +275,7 @@ Pour créer une stratégie de gestion des risques internes, vous allez utiliser 
 
 Achevez les étapes suivantes pour créer une stratégie :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Stratégies** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Stratégies**.
 2. Sélectionnez **Créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **Modèle de stratégie**, choisissez une catégorie de stratégie, puis sélectionnez le modèle pour la nouvelle stratégie. Ces modèles sont constitués d'indicateurs et de conditions définissant les activités à risque que vous voulez détecter et examiner. Examinez les conditions préalables du modèle, les événements déclencheurs et les activités détectées pour confirmer que ce modèle de stratégie correspond à vos besoins.
 
@@ -319,7 +319,7 @@ Achevez les étapes suivantes pour créer une stratégie :
 16. Sélectionnez **Suivant** pour continuer.
 17. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité.
 18. Sélectionnez **Suivant** pour continuer.
-19. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Paramètres** >  **du** risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
+19. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Indicateurs des paramètres de** >  risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
 
     > [!IMPORTANT]
     > Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
@@ -334,11 +334,11 @@ Achevez les étapes suivantes pour créer une stratégie :
 
 ## <a name="update-a-policy"></a>Mettre à jour une stratégie
 
-Pour mettre à jour une stratégie de gestion des risques internes existante, vous allez utiliser l’Assistant Stratégie dans la solution **de gestion des risques Insider** dans le portail de conformité Microsoft Purview.
+Pour mettre à jour une stratégie de gestion des risques internes existante, vous allez utiliser l’Assistant Stratégie dans la solution de **gestion des risques Insider** dans le portail de conformité Microsoft Purview.
 
 Finalisez les étapes suivantes pour gérer une stratégie existante :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Stratégies** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez gérer.
 3. Sur la page détaillée de la stratégie, sélectionnez **Modifier une stratégie**.
 4. Dans l’Assistant Stratégie, vous ne pouvez pas modifier les éléments suivants :
@@ -377,7 +377,7 @@ Finalisez les étapes suivantes pour gérer une stratégie existante :
 16. Sélectionnez **Suivant** pour continuer.
 17. Si vous avez sélectionné **Utiliser des seuils personnalisés pour les événements de déclenchement**, pour chaque indicateur d’événement de déclenchement que vous avez sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité.
 18. Sélectionnez **Suivant** pour continuer.
-19. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Paramètres** >  **du** risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
+19. Dans la page **Indicateurs** de stratégie, vous verrez [les indicateurs](insider-risk-management-settings.md#indicators) que vous avez définis comme étant disponibles dans la page **Indicateurs des paramètres de** >  risque Insider. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
 
     > [!IMPORTANT]
     > Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
@@ -396,7 +396,7 @@ Vous devrez peut-être créer une stratégie similaire à une stratégie existan
 
 Finalisez les étapes suivantes pour copier une stratégie existante :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Stratégies** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez copier.
 3. Sur la page détaillée de la stratégie, sélectionnez Copier.
 4. Dans l’Assistant stratégie, nommez la nouvelle stratégie, puis mettez à jour sa configuration, le cas échéant.
@@ -416,7 +416,7 @@ Certains scénarios dans lesquels vous souhaitez commencer immédiatement à att
 
 Pour commencer manuellement l’activité d’attribution de scores pour les utilisateur dans au moins une stratégie de gestion des risques internes, finalisez les étapes suivantes :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Stratégies** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la ou les stratégies auxquelles vous souhaitez ajouter des utilisateurs.
 3. Sélectionnez **Démarrer l’activité d’attribution de scores des utilisateurs**.
 4. Dans le **champ Raison** du volet **Ajouter des utilisateurs à plusieurs stratégies**, ajoutez une raison pour l’ajout des utilisateurs.
@@ -443,7 +443,7 @@ Pour arrêter l’attribution de score aux utilisateurs dans une stratégie, voi
 
 Pour supprimer une stratégie de gestion des risques internes existante, finalisez les étapes suivantes :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **la gestion des risques internes** et sélectionnez l’onglet **Stratégies** .
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez supprimer.
 3. Sélectionnez **Supprimer** sur la barre d’outils du tableau de bord.
 4. Dans la boîte de dialogue **Supprimer**, sélectionnez **Oui** pour supprimer la stratégie ou **Annuler** pour fermer la boîte de dialogue.

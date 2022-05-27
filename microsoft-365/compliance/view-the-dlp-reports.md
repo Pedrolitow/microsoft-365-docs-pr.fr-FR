@@ -18,19 +18,21 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances, de remplacements ou de faux positifs de stratégie DLP et voir s’ils sont à la hausse ou à la baisse au fil du temps.
-ms.openlocfilehash: cbf03a4d981d4b37bd22db8fa08c728b77318ddf
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances de stratégie DLP, de remplacements ou de faux positifs et voir s’ils sont à la hausse ou à la baisse au fil du temps.
+ms.openlocfilehash: 01064662e0af82ec98837c8518172bcfeffbaa96
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423619"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753537"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
-Après avoir créé vos stratégies de protection contre la perte de données (DLP), vous devez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP dans le Centre de conformité de &amp; sécurité, vous pouvez rapidement afficher :
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Après avoir créé vos stratégies de protection contre la perte de données (DLP) Microsoft Purview, vous devez vérifier qu’elles fonctionnent comme prévu et vous aider à rester conforme. Avec les rapports DLP dans le portail de conformité Microsoft Purview, vous pouvez afficher rapidement :
   
-- **Correspondances de stratégie DLP** Ce rapport indique le nombre de correspondances de stratégies DLP au fil du temps. Vous pouvez filtrer les rapports par date, emplacement, stratégie ou action. Vous pouvez utiliser ce rapport pour : 
+- **Correspondances de stratégie DLP** Ce rapport indique le nombre de correspondances de stratégie DLP au fil du temps. Vous pouvez filtrer les rapports par date, emplacement, stratégie ou action. Vous pouvez utiliser ce rapport pour : 
     
   - Optimiser ou affiner vos stratégies DLP lorsque vous les exécutez en mode test. Vous pouvez afficher la règle spécifique qui correspond au contenu.
     
@@ -46,11 +48,11 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
   - Consulter la liste des principaux types d’informations sensibles au sein de votre organisation.
     
-- **Incidents DLP** Ce rapport affiche également les correspondances de stratégie au fil du temps, comme le rapport de correspondances de stratégie. Toutefois, le rapport de correspondances de stratégie affiche les correspondances au niveau d’une règle ; par exemple, si un e-mail correspond à trois règles différentes, le rapport de correspondances de stratégie affiche trois lignes différentes. En revanche, le rapport des incidents affiche les correspondances au niveau de l’élément ; par exemple, si un e-mail correspond à trois règles différentes, le rapport d’incidents affiche un élément de ligne unique pour cet élément de contenu. 
+- **Incidents DLP** Ce rapport montre également les correspondances de stratégie au fil du temps, comme le rapport de correspondances de stratégie. Toutefois, le rapport de correspondances de stratégie affiche des correspondances au niveau d’une règle ; Par exemple, si un e-mail correspond à trois règles différentes, la stratégie correspond au rapport affiche trois éléments de ligne différents. En revanche, le rapport d’incidents affiche les correspondances au niveau de l’élément ; Par exemple, si un e-mail correspond à trois règles différentes, le rapport d’incidents affiche un élément de ligne unique pour ce contenu. 
     
-  Étant donné que le nombre de rapports est agrégé différemment, le rapport de correspondances de stratégie est préférable pour identifier les correspondances avec des règles spécifiques et affiner les stratégies DLP. Le rapport sur les incidents est plus pertinent pour identifier des éléments de contenu spécifiques qui posent problème pour vos stratégies protection contre la perte de données.
+  Étant donné que les nombres de rapports sont agrégés différemment, le rapport de correspondances de stratégie est préférable pour identifier les correspondances avec des règles spécifiques et ajuster les stratégies DLP. Le rapport sur les incidents est plus pertinent pour identifier des éléments de contenu spécifiques qui posent problème pour vos stratégies protection contre la perte de données.
     
-- **Remplacements et faux positifs DLP** Si votre stratégie DLP permet aux utilisateurs de la remplacer ou de signaler un faux positif, ce rapport indique le nombre de ces instances au fil du temps. Vous pouvez filtrer les rapports par date, emplacement, ou stratégie. Vous pouvez utiliser ce rapport pour : 
+- **Faux positifs et remplacements DLP** Si votre stratégie DLP permet aux utilisateurs de la remplacer ou de signaler un faux positif, ce rapport affiche un nombre de ces instances au fil du temps. Vous pouvez filtrer les rapports par date, emplacement, ou stratégie. Vous pouvez utiliser ce rapport pour : 
     
   - Optimiser ou affiner vos stratégies DLP en examinant les stratégies qui impliquent un nombre élevé de faux positifs.
     
@@ -60,41 +62,41 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
 Tous les rapports DLP peuvent afficher les données de la période de quatre mois la plus récente. Les données les plus récentes peuvent nécessiter jusqu'à 24 heures avant de s’afficher dans les rapports.
   
-Vous trouverez ces rapports dans le tableau de bord des rapports du Centre de &amp; \> **conformité** \> **de sécurité.**
+Vous trouverez ces rapports dans le tableau de bord portail de conformité Microsoft Purview \> **Rapports** \> **.**
   
-![Rapport de correspondances de stratégie DLP.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![La stratégie DLP correspond au rapport.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
-## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Afficher la justification envoyée par un utilisateur pour un remplacement
+## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Afficher la justification soumise par un utilisateur pour une substitution
 
 Si votre stratégie DLP autorise les utilisateurs à la remplacer, vous pouvez utiliser le rapport faux positifs et remplacer pour afficher le texte envoyé par les utilisateurs dans le conseil de stratégie.
   
-![Champ Justification dans les détails du rapport DLP sur les faux positifs et les remplacements.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Champ de justification dans les détails du rapport de faux positif et de remplacement DLP.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a>Prendre des mesures sur les informations et les recommandations
+## <a name="take-action-on-insights-and-recommendations"></a>Prendre des mesures sur les insights et les recommandations
 
-Les rapports peuvent afficher des informations et des recommandations dans le cas où vous pouvez cliquer sur l’icône d’avertissement rouge pour afficher des détails sur les problèmes potentiels et prendre des mesures correctives possibles.
+Les rapports peuvent afficher des insights et des recommandations dans lesquels vous pouvez cliquer sur l’icône d’avertissement rouge pour afficher des détails sur les problèmes potentiels et prendre des mesures correctives possibles.
   
-![Cliquez sur une icône d’informations pour voir les détails et les actions à prendre.](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![Cliquez sur une icône Insights pour afficher les détails et les actions à effectuer.](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>Autorisations pour les rapports DLP
 
-Pour afficher les rapports DLP dans le Centre de sécurité & conformité, vous devez avoir :
+Pour afficher les rapports DLP dans le Centre de sécurité & conformité, vous devez disposer des éléments suivantes :
 
-- **Rôle lecteur de** sécurité dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration.</a> Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans Exchange’administration centrale.
+- **Rôle Lecteur de sécurité** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans le centre d’administration Exchange.
 
-- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur Sécurité dans le Centre de sécurité & conformité.
+- **Rôle De gestion de la conformité DLP en mode affichage uniquement** dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur de sécurité dans le Centre de sécurité & conformité.
 
-- **Rôle Destinataires en affichage** seul dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration.</a> Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation View-Only Gestion de l’organisation dans Exchange d’administration.
+- **Rôle Afficher uniquement les destinataires** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation et View-Only Gestion de l’organisation dans le centre d’administration Exchange.
 
-## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Rechercher les cmdlets pour les rapports DLP
+## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Rechercher les applets de commande pour les rapports DLP
 
-Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
+Pour utiliser la plupart des applets de commande pour le portail de conformité Microsoft Purview, vous devez :
   
-1. [Connecter sécurité &amp; Centre de conformité à l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell)
+1. [Connecter au portail de conformité Microsoft Purview à l’aide de PowerShell distant](/powershell/exchange/connect-to-scc-powershell)
     
-2. Utiliser l’une de ces [ &amp; cmdlets du Centre](/powershell/exchange/exchange-online-powershell) de conformité de la sécurité
+2. Utiliser l’une de ces [applets de commande security &amp; Compliance Center](/powershell/exchange/exchange-online-powershell)
     
-Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exchange Online. Pour cette raison, les cmdlets pour les rapports DLP sont disponibles dans Exchange Online Powershell, et non dans le Centre de conformité de &amp; sécurité Powershell. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
+Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exchange Online. Pour cette raison, les applets de commande des rapports DLP sont disponibles dans Exchange Online PowerShell, et non dans portail de conformité Microsoft Purview PowerShell. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
