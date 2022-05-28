@@ -19,16 +19,16 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5368be5bbecde45d341a737a283a7461a2302dc4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973374"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772771"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -166,7 +166,11 @@ Une fois que vous avez commencé à utiliser une stratégie de secours SPF de `?
 
 Vous pouvez également utiliser l’[Informations sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) et la [Liste rouge/verte du client](tenant-allow-block-list.md) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
 
-Pour les domaines externes, l’utilisateur usurpé est le domaine dans l’adresse De, tandis que l’infrastructure d’envoi est soit l’adresse IP source (divisée en /24 plages CIDR), soit le domaine de l’organisation de l’enregistrement DNS inversé (PTR).
+Pour les domaines externes, l’utilisateur usurpé est le domaine dans l’adresse De, tandis que l’infrastructure d’envoi est l’une des valeurs suivantes :
+
+- Adresse IP source (divisée en plages CIDR /24)
+- Domaine organisationnel de l’enregistrement DNS inversé (PTR).
+- Domaine DKIM vérifié.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Créer une entrée d’autorisation pour la paire expéditeur/destinataire
 
