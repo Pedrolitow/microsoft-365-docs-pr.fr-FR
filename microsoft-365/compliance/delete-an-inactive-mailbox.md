@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive Microsoft 365, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438443"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772377"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
@@ -50,7 +50,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir une d
 
 Comme indiqué précédemment, une stratégie de conservation des litiges, de conservation In-Place ou de rétention peut être placée sur une boîte aux lettres inactive. La première étape consiste à identifier les blocages sur une boîte aux lettres inactive.
   
-[Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), puis exécutez la commande suivante pour afficher les informations de conservation pour toutes les boîtes aux lettres inactives de votre organisation.
+[Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), puis exécutez la commande suivante pour afficher les informations de conservation de toutes les boîtes aux lettres inactives de votre organisation.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -94,7 +94,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>Supprimer une boîte aux lettres inactive d’une stratégie de rétention
 
-La procédure de suppression d’une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365 varie selon que la stratégie de rétention affectée à la boîte aux lettres inactive est explicite ou à l’échelle de l’organisation. sur le type de stratégie de rétention affecté à la boîte aux lettres inactive.
+La procédure de suppression d’une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365 varie selon que la stratégie de rétention affectée à la boîte aux lettres inactive est explicite ou à l’échelle de l’organisation :
 
 - Stratégies de rétention à l’échelle de l’organisation affectées à toutes les boîtes aux lettres de l’organisation. Utilisez l’applet de commande **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l’échelle de l’organisation.
 

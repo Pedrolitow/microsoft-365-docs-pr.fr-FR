@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 614cdd62e5884eff0f91b1c0d1f9946a1c8ce891
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621686"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772301"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -209,7 +209,7 @@ Le tableau des détails sous le graphique affiche les informations suivantes :
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le menu volant qui s’affiche :
 
@@ -392,7 +392,7 @@ Dans la page **Détections d’usurpation** d’identité, icône Créer une ![p
 
 ## <a name="submissions-report"></a>Rapport sur les soumissions
 
-Le rapport **Soumissions affiche des** informations sur les éléments que les administrateurs ont signalés à Microsoft à des fins d’analyse. Pour plus d’informations, consultez [Utiliser la soumission d’administrateur pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
+Le rapport **Soumissions affiche des** informations sur les éléments que les administrateurs ont signalés à Microsoft à des fins d’analyse. Pour plus d’informations, consultez [Utiliser Administration Soumission pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
 Pour afficher le rapport dans le portail Microsoft 365 Defender, accédez aux <https://security.microsoft.com> \> rapports **e-mail &** rapports de collaboration \> **e-mail & collaboration**. Dans la page **e-mail & rapports de collaboration** , recherchez **Soumissions** , puis cliquez sur **Afficher les détails**. Pour accéder directement au rapport, ouvrez <https://security.microsoft.com/adminSubmissionReport>. Pour accéder aux [soumissions d’administrateur dans le portail Microsoft 365 Defender](admin-submission.md), cliquez sur **Accéder aux soumissions**. Les administrateurs pourront afficher le rapport pendant les 30 derniers jours.
 
@@ -409,11 +409,11 @@ Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtr
 - **Type de soumission** :
   - **Courrier électronique**
   - **URL**
-  - **File**
+  - **Fichier**
 - **ID de soumission**
 - **ID de message réseau**
 - **Sender**
-- **Name (Nom)**
+- **Name**
 - **Soumis par**
 - **Raison de l’envoi** :
   - **Pas de courrier indésirable**
@@ -619,7 +619,7 @@ Dans la **vue Afficher les données par programme malveillant par courrier élec
 - **Réputation de détonation**<sup>\*</sup> de fichier : toute réputation de fichier malveillant générée par Defender pour Office 365 détonations.
 - **Réputation des fichiers**
 - **Moteur anti-programme malveillant**<sup>\*</sup> : détection à partir de moteurs anti-programmes malveillants.
-- **Bloc de type de fichier de stratégie anti-programme malveillant** : il s’agit de messages électroniques filtrés en raison du type de fichier malveillant identifié dans le message.
+- **Bloc de type de fichier de stratégie anti-programme malveillant** : les messages électroniques sont automatiquement filtrés en raison du type de fichier identifié dans le message (filtrage de pièces jointes courant).
 - **Réputation malveillante d’URL**<sup>\*</sup>
 - **Détonation d’URL**<sup>\*</sup>
 - **Réputation de détonation d’URL**<sup>\*</sup>
@@ -660,7 +660,7 @@ Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
 Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou **Effacer les filtres**.
 
-Dans la page **d’état de protectionThreat** , l’icône Créer une ![planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification](#schedule-report)**, ![icône Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et ![exporter l’icône.](../../media/m365-cc-sc-download-icon.png) Des boutons **[d’exportation](#export-report)** sont disponibles.
+Dans la page **État de la protection contre les menaces** , l’icône Créer une ![planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification](#schedule-report)**, ![icône Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et ![exporter l’icône.](../../media/m365-cc-sc-download-icon.png) Des boutons **[d’exportation](#export-report)** sont disponibles.
 
 ### <a name="chart-breakdown-by-policy-type"></a>Répartition du graphique par type de stratégie
 
@@ -821,7 +821,7 @@ Dans le tableau d’informations sous le graphique, les informations suivantes s
 - **Nom de fichier des pièces jointes**
 - **Charge de travail**
 - **Technologie de détection**
-- **La taille des fichiers**
+- **Taille des fichiers**
 - **Dernière modification de l’utilisateur**
 
 Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
@@ -1158,7 +1158,7 @@ Pour gérer les rapports planifiés que vous avez déjà créés, procédez comm
 
 2. Dans la page **Rapports à télécharger** , les informations suivantes s’affichent pour chaque rapport disponible :
    - **Date de début**
-   - **Name (Nom)**
+   - **Name**
    - **Type de rapport**
    - **Dernier envoi**
    - **Direction**

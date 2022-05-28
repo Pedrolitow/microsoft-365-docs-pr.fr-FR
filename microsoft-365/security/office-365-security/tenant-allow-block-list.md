@@ -17,16 +17,16 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468105"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772088"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -120,7 +120,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Remarques**
+     - **Notes**
    - **Spoofing**
      - **Utilisateur usurpé**
      - **Envoi d’une infrastructure**
@@ -132,14 +132,14 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Remarques**
+     - **Notes**
    - **Files**
      - **Valeur** : hachage du fichier.
      - **Action** : valeur **Allow** ou **Block**.
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Remarques**
+     - **Notes**
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier dans l’ordre croissant ou décroissant.
 
@@ -448,7 +448,7 @@ Les entrées suivantes ne sont pas valides :
 
 - **Caractères génériques intermédiaires** :
 
-  - conto\* so.com
+  - conto\*so.com
   - conto~so.com
 
 - **Caractères génériques doubles**
@@ -468,6 +468,7 @@ Une paire de domaines pour un expéditeur usurpé dans la liste d’autorisation
 - **Infrastructure d’envoi** : cette valeur indique la source des messages de l’utilisateur usurpé. Les valeurs valides sont les suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source (par exemple, fabrikam.com).
   - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
+  - Un domaine DKIM vérifié.
 
 Voici quelques exemples de paires de domaines valides pour identifier les expéditeurs usurpés :
 

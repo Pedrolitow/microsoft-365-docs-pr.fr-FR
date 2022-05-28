@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f827046dc9a103e73eb6fb79ba161e523e2b2690
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649350"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771994"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gérer les expéditeurs usurpés à l’aide de la stratégie de renseignement sur l’usurpation d’identité et de l’information sur l’usurpation d’identité dans EOP
 
@@ -98,7 +98,7 @@ Pour configurer les expéditeurs autorisés et bloqués dans l’intelligence d�
    ```
 
 2. Modifiez le fichier CSV pour ajouter ou modifier les valeurs suivantes :
-   - **Expéditeur** (domaine dans l’enregistrement PTR du serveur source ou l’adresse IP/24)
+   - **Expéditeur** (domaine dans l’enregistrement PTR du serveur source, adresse IP/24 ou domaine DKIM vérifié)
    - **SpoofedUser** : l’une des valeurs suivantes :
      - Adresse e-mail de l’utilisateur interne.
      - Domaine de messagerie de l’utilisateur externe.

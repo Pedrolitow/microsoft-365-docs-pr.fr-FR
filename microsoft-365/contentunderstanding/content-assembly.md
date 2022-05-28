@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide d’un modèle moderne dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 83ef526504073ae739a82c599663a3d284aaf51c
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 2ec87a1255e7bd53e03e05c53d9cfbb8e6c77be1
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836217"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772487"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide d’un assembly de contenu dans Microsoft SharePoint Syntex
 
@@ -33,7 +33,7 @@ Avec l’assembly de contenu, vous pouvez utiliser un document existant pour cr�
 
 Suivez ces étapes pour créer un modèle moderne.
 
-1. Dans une bibliothèque de documents Sharepoint, sélectionnez le **modèle moderne NewCreate** > .
+1. Dans une bibliothèque de documents SharePoint, sélectionnez **Créer** > **un modèle moderne**.
 
    ![Capture d’écran de la bibliothèque de documents avec l’option Créer un modèle moderne mise en évidence.](../media/content-understanding/content-assembly-create-template-1.png)
 
@@ -132,15 +132,15 @@ Dans le panneau **Tous les espaces réservés** :
 
 Vous pouvez créer autant d’espaces réservés que vous le pensez nécessaire. Lorsque vous avez terminé, vous pouvez choisir d’enregistrer le modèle sous forme de brouillon ou de publier le modèle.
 
-   - **Enregistrer le brouillon** : enregistre le modèle en tant que brouillon et vous pouvez y accéder ultérieurement. Vous pouvez afficher, modifier ou publier des brouillons enregistrés à partir de la section **Modèles modernes** en sélectionnant **le** **menu NewEdit** >  New dans la bibliothèque de documents.
+   - **Enregistrer le brouillon** : enregistre le modèle en tant que brouillon et vous pouvez y accéder ultérieurement. Vous pouvez afficher, modifier ou publier des brouillons enregistrés à partir de la section **Modèles modernes** en sélectionnant **nouveau** > **menu Modifier nouveau** dans la bibliothèque de documents.
  
-   - **Publier** : publie le modèle à utiliser par d’autres utilisateurs de l’organisation pour créer des documents. Vous pouvez afficher, modifier ou annuler la *publication* des modèles publiés dans la section **Modèles modernes** en sélectionnant **le** **menu NewEdit** >  New dans la bibliothèque de documents. 
+   - **Publier** : publie le modèle à utiliser par d’autres utilisateurs de l’organisation pour créer des documents. Vous pouvez afficher, modifier ou annuler la *publication* des modèles publiés dans la section **Modèles modernes** en sélectionnant **nouveau****menu Modifier** >  nouveau dans la bibliothèque de documents. 
 
 ## <a name="edit-a-modern-template"></a>Modifier un modèle moderne
 
 Si vous devez modifier un modèle existant ou supprimer ou annuler la publication d’un modèle, procédez comme suit.
 
-1. Dans une bibliothèque de documents Sharepoint, sélectionnez **nouveau** **menu NewEdit** > .
+1. Dans une bibliothèque de documents SharePoint, sélectionnez **Nouveau** > **menu Modifier nouveau**.
 
    ![Capture d’écran de la bibliothèque de documents avec l’option Modifier le nouveau menu mise en évidence.](../media/content-understanding/content-assembly-edit-template-1.png)
 
@@ -162,7 +162,7 @@ Si vous devez modifier un modèle existant ou supprimer ou annuler la publicatio
 
 Vous pouvez utiliser un modèle moderne *publié* pour créer rapidement des documents similaires sans avoir à partir de zéro. Pour créer un document à l’aide d’un modèle publié, procédez comme suit :
 
-1. Dans une bibliothèque de documents Sharepoint, sélectionnez **Nouveau**, puis sélectionnez le modèle moderne que vous souhaitez utiliser.
+1. Dans une bibliothèque de documents SharePoint, sélectionnez **Nouveau**, puis sélectionnez le modèle moderne que vous souhaitez utiliser.
 
    ![Capture d’écran de la bibliothèque de documents montrant les choix de modèles modernes dans le menu Nouveau.](../media/content-understanding/content-assembly-create-document-1.png)
 

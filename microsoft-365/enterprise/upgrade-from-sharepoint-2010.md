@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Recherchez des informations et des ressources à mettre à niveau à partir de SharePoint 2010 et SharePoint Server 2010. Prise en charge des deux extrémités le 13 avril 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be25dd1260c378146d292e6487329065a3020ac8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4ed6cf873442d4fd48cdbf9562e6067fd238384e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077404"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772749"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -60,7 +60,7 @@ Cette matrice permet de tracer un cours parmi les options de migration :
 
 |Fin du produit de support|Bonne |Idéale|
 |---|---|---|
-|SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
+|SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
 ||SharePoint Server 2013 hybride avec SharePoint Online|SharePoint Server 2016 (local)|
 |||recherche hybride SharePoint cloud|
 
@@ -112,7 +112,7 @@ Si vous effectuez une mise à niveau vers SharePoint Server 2013 ou SharePoint S
 |avantage en ligne SharePoint|désavantage en ligne SharePoint|
 |---|---|
 |Microsoft fournit le matériel SPO et toute l’administration matérielle.|Les fonctionnalités disponibles peuvent différer entre SharePoint Serveur local et SPO.|
-|Vous êtes l’administrateur Sharepoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.|Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas (ou ne sont pas nécessaires) dans le rôle d’administrateur SharePoint dans Microsoft 365. Toutefois, SharePoint Administration, Administration des collections de sites et Propriété du site sont locales pour votre organisation.|
+|Vous êtes l’administrateur SharePoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.|Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas (ou ne sont pas nécessaires) dans le rôle d’administrateur SharePoint dans Microsoft 365. Toutefois, SharePoint Administration, Administration des collections de sites et Propriété du site sont locales pour votre organisation.|
 |Microsoft applique des correctifs, des correctifs et des mises à jour au matériel et aux logiciels sous-jacents, notamment SQL serveurs sur lesquels s’exécute SharePoint Online.|Étant donné qu’il n’existe aucun accès au système de fichiers sous-jacent dans le service, la personnalisation est limitée.|
 |Microsoft publie des [contrats de niveau de service](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) et se déplace rapidement pour résoudre les incidents au niveau du service.|Les options de sauvegarde et de restauration et autres options de récupération sont automatisées par le service dans SharePoint Online. Les sauvegardes sont remplacées si non utilisées.|
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués en continu dans le service par Microsoft.|Les modifications apportées à l’interface utilisateur et à d’autres fonctionnalités SharePoint sont installées par le service et doivent peut-être être activées ou désactivées.|

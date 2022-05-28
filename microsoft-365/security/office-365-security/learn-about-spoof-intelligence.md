@@ -20,16 +20,16 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144696"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772103"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -38,7 +38,7 @@ ms.locfileid: "65144696"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’identité. EOP utilise **le renseignement sur l’usurpation** d’identité dans le cadre de la défense globale de votre organisation contre le hameçonnage. Pour plus d’informations, consultez [la protection contre l’usurpation d’identité dans EOP](anti-spoofing-protection.md).
 
-Lorsqu’un expéditeur usurpe une adresse e-mail, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie des e-mails à votre organisation. Les attaquants qui usurpent les expéditeurs pour envoyer du courrier indésirable ou de hameçonnage doivent être bloqués. Toutefois, dans certains scénarios, les expéditeurs légitimes s’usurpent. Par exemple :
+Lorsqu’un expéditeur usurpe une adresse e-mail, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie des e-mails à votre organisation. Les attaquants qui usurpent les expéditeurs pour envoyer du courrier indésirable ou de hameçonnage doivent être bloqués. Toutefois, dans certains scénarios, les expéditeurs légitimes s’usurpent. Par exemple :
 
 - Scénarios légitimes pour usurper des domaines internes :
   - Les expéditeurs tiers utilisent votre domaine pour envoyer des messages en bloc à vos propres employés pour les sondages d’entreprise.
@@ -115,8 +115,9 @@ Dans la page **Informations sur l’usurpation d’identité** qui s’affiche a
 - **Infrastructure d’envoi** : également appelée _infrastructure_. L’infrastructure d’envoi sera l’une des valeurs suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source.
   - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
+  - Un domaine DKIM vérifié.
 - **Nombre** de messages : nombre de messages provenant de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi à votre organisation au cours des 7 derniers jours.
-- **Dernière vue** : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
+- **Dernière connexion** : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
 - **Type d’usurpation** d’identité : l’une des valeurs suivantes :
   - **Interne** : l’expéditeur usurpé se trouve dans un domaine qui appartient à votre organisation ( [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **Externe** : l’expéditeur usurpé se trouve dans un domaine externe.
@@ -147,7 +148,7 @@ Lorsque vous sélectionnez une entrée dans la liste, un menu volant de détails
 
 ### <a name="about-allowed-spoofed-senders"></a>À propos des expéditeurs usurpés autorisés
 
-Un expéditeur d’usurpation d’identité autorisé dans l’insight d’intelligence de l’usurpation d’identité ou un expéditeur d’usurpation d’identité bloqué que vous avez modifié manuellement **pour autoriser l’usurpation d’identité** autorise uniquement les messages provenant de la combinaison du domaine usurpé *et* de l’infrastructure d’envoi. Il n’autorise pas les e-mails provenant du domaine usurpé d’identité à partir d’une source quelconque, ni les e-mails provenant de l’infrastructure d’envoi pour n’importe quel domaine.
+Un expéditeur d’usurpation d’identité autorisé dans l’insight d’intelligence de l’usurpation d’identité ou un expéditeur d’usurpation d’identité bloqué que vous avez modifié manuellement **pour autoriser l’usurpation d’identité** autorise uniquement les messages provenant de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi. Il n’autorise pas les e-mails provenant du domaine usurpé d’identité à partir d’une source quelconque, ni les e-mails provenant de l’infrastructure d’envoi pour n’importe quel domaine.
 
 Par exemple, l’expéditeur usurpé d’identité suivant est autorisé à usurper l’identité :
 

@@ -19,16 +19,16 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de liens Coffre et des paramètres de liens Coffre globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 969e3f3bb3b139a21cd2d84b4a0bd698a74b5107
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623015"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772443"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -202,7 +202,7 @@ Par défaut, Coffre les liens reçoivent une priorité basée sur l’ordre dans
 
 Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro de **priorité** dans le portail Microsoft 365 Defender). Changer la priorité d'une stratégie n'a de sens que si vous avez plusieurs stratégies.
 
-**Remarque** :
+**Remarque**:
 
 - Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie de liens Coffre qu’une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle de liaisons sécurisées (qui peut affecter la priorité des règles existantes).
 - Coffre les stratégies de liens sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie a la valeur **De priorité** 0). Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
@@ -304,6 +304,20 @@ Cet exemple crée une règle de liens sécurisés nommée Contoso All avec les c
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
+Cet exemple crée une règle de liens sécurisés similaire à l’exemple précédent, mais dans cet exemple, la règle s’applique aux destinataires dans tous les domaines acceptés de l’organisation.
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+Cet exemple crée une règle de liens sécurisés similaire aux exemples précédents, mais dans cet exemple, la règle s’applique aux destinataires dans les domaines spécifiés dans un fichier .csv.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs $SLDomains
+```
+
 Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>Utiliser PowerShell pour afficher les stratégies de liens sécurisés
@@ -389,6 +403,20 @@ Pour modifier une règle de liens sécurisés, utilisez cette syntaxe :
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+Cet exemple ajoute tous les domaines acceptés dans l’organisation en tant que condition à la règle de liens sécurisés nommée Contoso All.
+
+```powershell
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+Cet exemple montre comment ajouter les domaines du .csv spécifié en tant que condition à la règle de liaisons sécurisées nommée Contoso All.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et [les paramètres, consultez Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).

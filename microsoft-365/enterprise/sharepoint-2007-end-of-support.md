@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La prise en charge de SharePoint Server 2007 a pris fin en octobre 2017. Dans cet article, découvrez vos options de mise à niveau, de migration et de support.
-ms.openlocfilehash: 260949f73fbb4530436484e70ca39d4e2f99bbcf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f98e3652e2836a0c4193efbe33147fd09ced01e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098227"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771950"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
@@ -76,7 +76,7 @@ Votre premier arrêt doit être le [site product lifecycle](/lifecycle/products/
 |**Good**|**Mieux**|**Idéale**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
+||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
 | | |Environnement hybride Microsoft Office SharePoint Online  <br/> |
    
 Si vous choisissez une option « suffisamment bonne », vous devrez bientôt commencer la planification d’une autre mise à niveau une fois la migration de SharePoint Server 2007 terminée. 
@@ -119,7 +119,7 @@ Vous ne pouvez pas migrer directement de SharePoint 2007 vers SharePoint Online.
 |**Professionnel en ligne**|**Con en ligne**|
 |:-----|:-----|
 |Microsoft fournit le matériel SPO et toute l’administration matérielle.  <br/> |Les fonctionnalités disponibles peuvent différer entre SharePoint Serveur local et SPO.  <br/> |
-|Vous êtes l’administrateur Sharepoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.  <br/> |Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas ou ne sont pas nécessairement incluses dans le rôle d’administrateur SharePoint dans Microsoft 365.  <br/> |
+|Vous êtes l’administrateur SharePoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.  <br/> |Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas ou ne sont pas nécessairement incluses dans le rôle d’administrateur SharePoint dans Microsoft 365.  <br/> |
 |Microsoft applique des correctifs, des correctifs et des mises à jour au matériel et aux logiciels sous-jacents. <br/> |Étant donné qu’il n’existe aucun accès au système de fichiers sous-jacent dans le service, la personnalisation est limitée.  <br/> |
 |Microsoft publie des [contrats de niveau de service](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) et se déplace rapidement pour résoudre les incidents au niveau du service. <br/> |Les options de sauvegarde et de restauration et autres options de récupération sont automatisées par le service dans SharePoint Online. Les sauvegardes sont remplacées si non utilisées. <br/> |
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués de façon continue dans le service par Microsoft. <br/> |Les modifications apportées à l’interface utilisateur et à d’autres fonctionnalités SharePoint sont installées par le service et doivent peut-être être activées ou désactivées. <br/> |

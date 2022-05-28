@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599566"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772509"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -30,7 +30,7 @@ ms.locfileid: "65599566"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plates-formes:**
@@ -56,9 +56,9 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 >
 > Sauf indication contraire, la version minimale Windows&nbsp; 10 est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale Windows&nbsp; Server est la version 1809 ou ultérieure.
 >
-> Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server2012R2&nbsp;&nbsp; et Windows&nbsp; Server2016&nbsp; sont disponibles pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server&nbsp;2012&nbsp;R2 et Windows&nbsp; Server&nbsp;2016 sont disponibles pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Nom de la règle| &nbsp;Windows 11 <br>et<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>et<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
+| Nom de la règle| &nbsp;Windows 11 <br>et<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>et<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> version 1803 (canal semi-annuel) ou ultérieure | v | v |
 | [Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v <br> version 1809 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
@@ -79,7 +79,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 (<a id="fn1">1</a>) Fait référence à la solution unifiée moderne pour Windows Server 2012 et 2016. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Defender pour point de terminaison](configure-server-endpoints.md).
 
-(<a id="fn1">2</a>) Pour Windows&nbsp; Server 2016 et Windows&nbsp; Server 2012R2&nbsp;, la version minimale requise de Microsoft Endpoint Configuration Manager est la version 2111.
+(<a id="fn1">2</a>) Pour Windows&nbsp; Server 2016 et Windows&nbsp; Server 2012&nbsp;R2, la version minimale requise de Microsoft Endpoint Configuration Manager est la version 2111.
 
 (<a id="fn1">3</a>) La version et le numéro de build s’appliquent uniquement à Windows&nbsp; 10.
 
@@ -131,16 +131,16 @@ Pour les règles avec l'« état de règle » spécifié :
 |[Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | v |
 |[Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) |   | v <br> Nécessite un appareil au niveau du bloc cloud élevé | v <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | v |
-|[Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) |  Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Bloquer | v <br> Nécessite un appareil au niveau du bloc cloud élevé  | v <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) |   | N | v |
 |[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
 |[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
-|[Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) |  Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | v |
-|[Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Bloquer les appels d’API Win32 à partir de macros Office](#block-win32-api-calls-from-office-macros) |   | N | v |
-|[Utiliser une protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
+|[Utiliser une protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
   
 ## <a name="asr-rules-and-guids-matrix"></a>Matrice des règles ASR et des GUID
 
@@ -330,6 +330,9 @@ Dépendances : MDAV, Protection cloud
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquer l’exécution de scripts potentiellement masqués
 
 Cette règle détecte les propriétés suspectes dans un script masqué.
+  
+> [!IMPORTANT]
+> Les scripts PowerShell ont été temporairement exclus de la règle « Bloquer l’exécution de scripts potentiellement masqués » en raison des problèmes de FP à grande échelle rencontrés dans le passé.
 
 L’obfuscation de script est une technique courante que les auteurs de programmes malveillants et les applications légitimes utilisent pour masquer la propriété intellectuelle ou réduire les temps de chargement des scripts. Les auteurs de programmes malveillants utilisent également l’obfuscation pour rendre le code malveillant plus difficile à lire, ce qui empêche un examen approfondi par les humains et les logiciels de sécurité.
 
