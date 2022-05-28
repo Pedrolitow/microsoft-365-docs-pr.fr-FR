@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour la formation de simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 5e14fe4edc559b927a8b1d703d7706bbe97b5949
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 35d3943580c232a80c400b2fe4dd07dfa88123a2
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739852"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759783"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
 
@@ -26,10 +26,12 @@ ms.locfileid: "65739852"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-Dans la formation de simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les notifications de l’utilisateur final sont des messages électroniques envoyés aux utilisateurs. Il existe deux types de notifications de base :
+Dans l’entraînement de simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, les notifications de l’utilisateur final sont des messages électroniques envoyés aux [utilisateurs](attack-simulation-training.md) à la suite de simulations ou [d’automatisations de simulation](attack-simulation-training-simulation-automations.md). Les types de notifications d’utilisateur final suivants sont disponibles :
 
-- **Notifications de simulation** : ces messages sont envoyés lorsque les utilisateurs sont inscrits à des formations et en tant que rappels pour les formations requises.
-- **Notifications de renforcement positif :** ces messages sont envoyés lorsque les utilisateurs signalent un message de hameçonnage simulé.
+- **Notification de renforcement positif** : envoyée lorsque les utilisateurs signalent un message de hameçonnage simulé.
+- **Notification de simulation** : envoyée lorsque les utilisateurs sont inclus dans une automatisation de simulation ou de simulation, mais qu’aucune formation n’est sélectionnée.
+- **Notification d’affectation** de formation : envoyée lorsque des formations requises sont attribuées aux utilisateurs à la suite d’une simulation ou d’automatisations de simulation.
+- **Notification de rappel de formation** : envoyée en tant que rappels pour les formations requises.
 
 Pour afficher les notifications disponibles de l’utilisateur final, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse \> **e-mail &** onglet **Simulation** de **simulation** \> d’attaque de collaboration\>, puis sélectionnez **Notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
@@ -42,10 +44,10 @@ Les informations suivantes s’affichent pour chaque notification :
 
 - **Notifications** : nom de la notification.
 - **Langue** : si la notification contient plusieurs traductions, les deux premières langues sont affichées directement. Pour afficher les langues restantes, pointez sur l’icône numérique (par exemple, **+10**).
-- **Type** : la valeur est **notification de simulation** ou **notification de renforcement positif**.
+- **Type** : la valeur est **notification de renforcement positif**, **notification de simulation**, **notification d’affectation** de formation ou **notification de rappel de formation**.
 - **Source** : pour les notifications intégrées, la valeur est **Global**. Pour les notifications personnalisées, la valeur est **Locataire**.
-- **État**
-- **Simulations liées**
+- **État** : la valeur est **Ready** ou **Draft**. Sous l’onglet **Notifications globales** , la valeur est toujours **Prête**.
+- **Simulations liées** : nombre total de [simulations](attack-simulation-training.md) ou [d’automatisations de simulation](attack-simulation-training-simulation-automations.md) qui utilisent la notification.
 - **Créé par** : Pour les notifications intégrées, la valeur est **Microsoft**. Pour les notifications personnalisées, la valeur est l’UPN de l’utilisateur qui a créé la notification.
 - **Heure de création**
 - **Modifié par**
@@ -139,17 +141,44 @@ Sous l’onglet **Notifications du locataire** , vous pouvez cliquer sur ![Crée
 
    Lorsque vous avez terminé, cliquez sur **Terminé**.
 
-De retour sous l’onglet **Notifications du locataire** , la notification que vous avez créée est maintenant répertoriée.
+De retour sous l’onglet **Notifications du locataire** dans **les notifications de l’utilisateur final**, la notification que vous avez créée est désormais répertoriée.
 
-Lorsque vous sélectionnez une notification, les options supplémentaires suivantes sont disponibles :
+## <a name="modify-end-user-notifications"></a>Modifier les notifications de l’utilisateur final
 
-Vous revenez à la page de **notification de renforcement positif** , où la notification que vous venez de créer apparaît maintenant dans la liste **Sélectionner une notification de renforcement positif** .
+Vous ne pouvez pas modifier les notifications intégrées sous l’onglet **Notifications globales** . Vous pouvez uniquement modifier les notifications personnalisées sous l’onglet **Notifications du locataire** .
 
-- Pour modifier la notification ou ajouter des traductions supplémentaires, sélectionnez la notification, puis cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Modifiez la notification** pour démarrer l’Assistant notification comme décrit précédemment (avec la plupart des valeurs déjà renseignées). Si la notification contient déjà des traductions pour les 12 langues prises en charge, vous ne pouvez pas ajouter d’autres traductions.
+Pour modifier une notification personnalisée existante sous l’onglet Notifications du locataire, effectuez l’une des **étapes suivantes** :
 
-- Pour créer une copie d’une notification, sélectionnez-la, puis cliquez sur ![Créer une icône de copie.](../../media/m365-cc-sc-copy-icon.png).
+- Sélectionnez la notification dans la liste en cliquant sur la case à cocher. Cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Icône Modifier** qui s’affiche.
+- Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![l’icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
+- Sélectionnez la notification dans la liste en cliquant n’importe où dans la ligne, à l’exception de la case à cocher. Dans le menu volant d’informations qui s’ouvre, cliquez sur **Modifier la notification**.
 
-- Pour supprimer une notification, sélectionnez-la, puis cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-delete-icon.png).
+L’Assistant Notification de l’utilisateur final s’ouvre avec les paramètres et les valeurs de la page de notification sélectionnée. Les étapes Tthe sont les mêmes que celles décrites dans la section [Créer des notifications de l’utilisateur final](#create-end-user-notifications) .
+
+## <a name="copy-end-user-notifications"></a>Copier les notifications de l’utilisateur final
+
+Pour copier une notification existante sous les **onglets Notifications client** ou **Notifications globales** , effectuez l’une des étapes suivantes :
+
+- Sélectionnez la notification dans la liste en cochant la case, puis cliquez sur l’icône ![Créer une copie.](../../media/m365-cc-sc-edit-icon.png) **Créez une** icône de copie qui s’affiche.
+- Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![Créer une icône de copie.](../../media/m365-cc-sc-edit-icon.png) **Créez une copie**.
+
+Lorsque vous copiez une notification personnalisée sous l’onglet **Notifications du locataire** , une copie de la notification nommée «\<OriginalName\> - Copier » est disponible dans la liste.
+
+Lorsque vous copiez une notification intégrée sous l’onglet **Notifications globales** , une boîte de **dialogue Créer une copie** s’affiche. La boîte de dialogue confirme qu’une copie de la notification a été créée et qu’elle est disponible sous l’onglet **Notifications du locataire** . Si vous cliquez sur **Accéder à la notification de locataire** , vous accédez à l’onglet **Notifications du locataire** , où la notification intégrée copiée est nommée «\<OriginalName\> - Copier » est disponible dans la liste. Si vous cliquez sur **Rester ici** dans la boîte de dialogue, vous revenez à l’onglet **Notifications globales** .
+
+Une fois la copie créée, vous pouvez la modifier comme [décrit précédemment](#modify-end-user-notifications).
+
+> [!NOTE]
+> **L’option Utiliser à partir du contrôle par défaut** sur le **menu volant Ajouter du contenu dans la langue par défaut** dans l’Assistant Notification vous permet de copier le contenu d’une notification intégrée.
+
+## <a name="remove-notifications"></a>Supprimer les notifications
+
+Vous ne pouvez pas supprimer les notifications intégrées de l’onglet **Notifications globales** . Vous pouvez uniquement supprimer les notifications personnalisées sous l’onglet **Notifications du locataire** .
+
+Pour supprimer une notification personnalisée existante de l’onglet Notifications du locataire, effectuez l’une des **étapes suivantes** :
+
+- Sélectionnez la notification dans la liste en cochant la case, puis cliquez sur l’icône ![Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Icône Supprimer** qui s’affiche.
+- Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**.
 
 ## <a name="related-links"></a>Liens associés
 
