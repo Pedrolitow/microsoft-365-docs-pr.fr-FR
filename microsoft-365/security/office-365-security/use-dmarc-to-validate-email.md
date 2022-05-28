@@ -18,23 +18,25 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c10b1cc94f23e96d11a495b9b176d605cb2f3183
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 99c688587e7e09e2726457256f14403e2db73d1e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972846"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772073"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https://dmarc.org)) utilise SPF (Sender Policy Framework) et DKIM (DomainKeys Identified Mail) pour authentifier les expéditeurs d'e-mails et faire en sorte que les systèmes de messagerie de destination acceptent les messages envoyés depuis votre domaine comme fiables. L'implémentation de DMARC avec SPF et DKIM fournit une protection supplémentaire contre l'usurpation et les courriers de hameçonnage. DMARC permet aux systèmes de messagerie de réception de déterminer ce qu'ils doivent faire des messages envoyés à partir de votre domaine qui sont rejetés par les contrôles de SPF ou de DKIM.
+Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https://dmarc.org)) fonctionne avec Sender Policy Framework (SPF) et DomainKeys Identified Mail (DKIM) pour authentifier les expéditeurs de courrier.
+
+DMARC garantit que les systèmes de messagerie de destination font confiance aux messages envoyés depuis votre domaine. L’utilisation de DMARC avec SPF et DKIM offre aux organisations une meilleure protection contre l’usurpation d’identité et le phishing. DMARC aide les systèmes de réception de messagerie à décider quoi faire avec les messages de votre domaine qui échouent aux vérifications SPF ou DKIM.
 
 > [!TIP]
 > Visitez le catalogue [Association de sécurité intelligente de Microsoft (MISA)](https://www.microsoft.com/misapartnercatalog) pour afficher les fournisseurs tiers proposant des rapports DMARC pour Microsoft 365.
@@ -43,11 +45,11 @@ Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https:/
 
  Un message électronique peut contenir plusieurs adresses d’origine (ou d’expéditeur). Ces adresses sont utilisées à des fins différentes. Par exemple, prenez les adresses suivantes :
 
-- **l’adresse « Mail from »**: identifie l’expéditeur et spécifie où envoyer les notifications de retour si des problèmes se produisent lors de la remise du message, tels que des notifications de non-remise. Celui-ci apparaît dans la partie enveloppe d’un message électronique et n’est pas affiché par votre application de messagerie. Il s’agit parfois de l’adresse 5321.MailFrom ou de l’adresse de chemin inverse.
+- **Adresse "Mail From"** : Identifie l’expéditeur et indique où envoyer les avis de retour en cas de problème avec la livraison du message (comme les avis de non-livraison). L’*Adresse de messagerie* apparaît dans la partie enveloppe d’un e-mail et n’est pas affichée par votre application de messagerie. Elle est parfois appelée *adresse 5321.MailFrom* ou *adresse de chemin inverse*.
 
-- **Adresse « From » :** adresse affichée comme adresse d'expédition par votre application de messagerie. Elle indique l'auteur de l'e-mail, à savoir la boîte aux lettres de la personne ou le système responsable de la rédaction du message. Elle est parfois appelée adresse 5322.From.
+- **Adresse « From »**  : l’adresse affichée comme adresse d’origine par votre application de messagerie. L’*Adresse de l’expéditeur* identifie l’auteur de l’e-mail. Autrement dit, elle indique la boîte aux lettres de la personne ou du système responsable de la rédaction du message. *Adresse de provenance* est parfois appelée l’*adresse 5322.From*.
 
-SPF utilise un enregistrement TXT DNS pour fournir une liste d’adresses IP d’envoi autorisées pour un domaine donné. Normalement, les vérifications SPF sont effectuées uniquement sur l’adresse 5321.MailFrom. Cela signifie que l’adresse 5322.From n’est pas authentifiée lorsque vous utilisez SPF seul. Cela permet un scénario dans lequel un utilisateur peut recevoir un message, qui passe une vérification SPF mais a une adresse d’expéditeur 5322.From usurpée. Par exemple, considérez cette transcription SMTP :
+SPF utilise un enregistrement DNS TXT pour répertorier les adresses IP d’envoi autorisées pour un domaine donné. En règle générale, les vérifications SPF sont uniquement effectuées pour l'adresse 5321.MailFrom. L’adresse 5322.From n’est pas authentifiée lorsque vous utilisez SPF seul, ce qui permet un scénario dans lequel un utilisateur reçoit un message qui a réussi les contrôles SPF mais qui a une adresse d’expéditeur 5322.From usurpée. Prenez par exemple, la transcription SMTP suivante :
 
 ```console
 S: Helo woodgrovebank.com
@@ -76,9 +78,9 @@ Dans cette transcription, les adresses de l’expéditeur sont les suivantes :
 
 - Adresse From (5322.From) : security@woodgrovebank.com
 
-Si vous avez configuré SPF, le serveur de réception effectue une vérification sur l’adresse Mail from phish@phishing.contoso.com. Si l’e-mail provenait d’une source valide pour le domaine phishing.contoso.com, le contrôle SPF accepte le message. Étant donné que le client de messagerie affiche uniquement l’adresse From, l’utilisateur voit que ce message provenait de security@woodgrovebank.com. Avec SPF seul, la validité de l’adresse woodgrovebank.com n’a jamais été authentifiée.
+Si vous avez configuré SPF, le serveur de réception effectue une vérification par rapport au courrier de l’adresse phish@phishing.contoso.com. Si le message provenait d’une source valide pour le domaine phishing.contoso.com, la vérification SPF réussit. Étant donné que le client de messagerie n’affiche que l’adresse De, l’utilisateur voit que ce message provient de security@woodgrovebank.com. Avec SPF seul, la validité de l'adresse woodgrovebank.com n'a jamais été authentifiée.
 
-Lorsque vous utilisez DMARC, le serveur de réception effectue aussi une vérification sur l’adresse From. Dans l’exemple ci-dessus, s’il existe un enregistrement TXT DMARC pour woodgrovebank.com, la vérification de l’adresse de provenance rejette celle-ci.
+Lorsque vous utilisez DMARC, le serveur de réception effectue aussi une vérification sur l'adresse From. Dans l’exemple ci-dessus, s’il existe un enregistrement DMARC TXT pour woodgrovebank.com, la vérification par rapport à l’adresse De échoue.
 
 ## <a name="what-is-a-dmarc-txt-record"></a>Qu’est-ce qu’un enregistrement TXT DMARC ?
 
@@ -94,13 +96,13 @@ Pour d’autres fournisseurs tiers qui proposent des rapports DMARC Microsoft 36
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>Configurer DMARC pour les messages entrants
 
-Vous n’avez rien à faire pour configurer DMARC pour les messages que vous recevez dans Microsoft 365. Tout est pris en charge. Si vous souhaitez savoir ce qu’il advient du courrier qui ne parvient pas à passer nos vérifications DMARC, consultez [Comment Microsoft 365 gère les messages entrants qui échouent à DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
+Vous n’avez rien à faire pour configurer DMARC pour les messages que vous recevez dans Microsoft 365. Tout est pris en charge. Si vous voulez découvrir ce qui se passe pour le courrier électronique rejeté par nos vérifications DMARC, reportez-vous à la section [Gestion des messages électroniques entrants qui échouent aux vérifications de DMARC dans Microsoft 365](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Configurer DMARC pour les messages sortants de Microsoft 365
 
-Si vous utilisez Microsoft 365, mais pas un domaine personnalisé, c'est-à-dire que vous utilisez onmicrosoft.com, il vous suffit de configurer ou de mettre en œuvre DMARC pour votre organisation. SPF est déjà configuré pour vous et Microsoft 365 génère automatiquement une signature DKIM pour vos messages sortants. Pour plus d'informations sur cette signature, voir [Comportement par défaut pour DKIM et Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Si vous utilisez Microsoft 365 mais que vous n’utilisez pas de domaine personnalisé (vous utilisez onmicrosoft.com), vous n’avez rien d’autre à faire. SPF est déjà configuré pour vous et Microsoft 365 génère automatiquement une signature DKIM pour votre courrier sortant. Il n’y a plus rien à faire pour configurer DMARC pour votre organisation. Pour en savoir plus sur cette signature, consultez [Comportement par défaut pour DKIM et Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
- Si vous avez un domaine personnalisé ou utilisez des serveurs Exchange locaux en plus de Microsoft 365, vous devez implémenter manuellement DMARC pour vos messages sortants. La mise en œuvre de DMARC pour votre domaine personnalisé comporte les étapes suivantes :
+ Si vous avez un domaine personnalisé ou utilisez des serveurs Exchange sur site avec Microsoft 365, vous devez configurer manuellement DMARC pour votre courrier sortant. La configuration de DMARC pour votre domaine personnalisé comprend les étapes suivantes :
 
 - [Étape 1 : déterminer les sources de messagerie valides pour votre domaine](#step-1-identify-valid-sources-of-mail-for-your-domain)
 
@@ -112,7 +114,7 @@ Si vous utilisez Microsoft 365, mais pas un domaine personnalisé, c'est-à-dir
 
 ### <a name="step-1-identify-valid-sources-of-mail-for-your-domain"></a>Étape 1 : déterminer les sources de messagerie valides pour votre domaine
 
-Si vous avez déjà configuré SPF, vous avez déjà effectué cet exercice. Toutefois, pour DMARC, il existe des considérations supplémentaires. Lorsque vous identifiez les sources de courrier pour votre domaine, vous devez répondre à deux questions :
+Si vous avez déjà configuré SPF, vous avez déjà effectué cet exercice. Il y a d’autres considérations pour DMARC. Lorsque vous identifiez les sources de messagerie pour votre domaine, répondez à ces deux questions :
 
 - Quelles adresses IP envoient des messages à partir de mon domaine ?
 
@@ -132,7 +134,7 @@ Pour obtenir les meilleurs résultats, vérifiez que votre enregistrement TXT SP
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>Étape 3 : configurer DKIM pour votre domaine personnalisé
 
-Une fois que vous avez configuré SPF, vous devez configurer DKIM. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Si vous ne configurez pas DKIM et que vous autorisez Microsoft 365 à utiliser la configuration par défaut pour votre domaine à la place, DMARC risque de rejeter les messages. En effet, la configuration par défaut de DKIM utilise votre domaine onmicrosoft.com en tant qu'adresse 5322.From, et non votre domaine personnalisé. Cela crée de fait une différence entre les adresses 5321.MailFrom et 5322.From dans tous les messages envoyés à partir de votre domaine.
+Une fois que vous avez configuré SPF, vous devez configurer DKIM. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Si vous ne configurez pas DKIM et autorisez à la place Microsoft 365 à utiliser la configuration DKIM par défaut pour votre domaine, DMARC peut échouer. Cet échec peut se produire car la configuration DKIM par défaut utilise votre domaine *onmicrosoft.com* d’origine comme *adresse 5322.From*, et non votre domaine *personnalisé*. Cela crée une incompatibilité entre les adresses *5321.MailFrom* et *5322.From* dans tous les e-mails envoyés depuis votre domaine.
 
 Si des expéditeurs tiers envoient des messages en votre nom et que les adresses 5321.MailFrom et 5322.From de ces messages ne correspondent pas, DMARC rejettera ce message électronique. Pour éviter ce problème, vous devez configurer DKIM en définissant spécifiquement cet expéditeur tiers pour votre domaine. Cela permet à Microsoft 365 d'authentifier les messages envoyés par ce service tiers. Toutefois, cela autorise également d'autres entités, par exemple, Yahoo, Gmail et Comcast, à vérifier le courrier électronique qui leur est envoyé par le tiers comme s'il s'agissait de messages envoyés par vous-même. C'est un avantage, car, d'un côté, cela renforce la confiance que les clients peuvent avoir en votre domaine, quel que soit l'endroit où se trouvent leurs boîtes aux lettres et, de l'autre, Microsoft 365 ne marquera pas un message comme spam pour cause d'usurpation d'identité, car cet e-mail aura été accepté par les vérifications d'authentification pour votre domaine.
 
@@ -140,7 +142,7 @@ Pour obtenir des instructions sur la configuration de DKIM pour votre domaine, y
 
 ### <a name="step-4-form-the-dmarc-txt-record-for-your-domain"></a>Étape 4 : créer l’enregistrement TXT DMARC pour votre domaine
 
-Bien qu’il existe des options de syntaxe qui ne sont pas mentionnées ici, voici les options les plus fréquemment utilisées pour Microsoft 365. Créez l’enregistrement TXT DMARC pour votre domaine au format suivant :
+Bien qu’il existe d’autres options de syntaxe qui ne sont pas mentionnées ici, ce sont les options les plus couramment utilisées pour Microsoft 365. Créez l’enregistrement TXT DMARC pour votre domaine au format suivant :
 
 ```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
@@ -178,7 +180,7 @@ Exemples :
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Une fois que vous avez créé votre enregistrement, vous devez le mettre à jour auprès de votre bureau d’enregistrement de domaine.
+Une fois que vous avez formé votre enregistrement, vous devez mettre à jour l’enregistrement auprès de votre registraire de domaine.
 
 ## <a name="dmarc-mail-public-preview-feature"></a>Courrier DMARC (fonctionnalité d'évaluation publique)
 
@@ -196,13 +198,13 @@ Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercu
 
 1. Contrôlez les effets de l’implémentation DMARC
 
-    Commencez avec un simple enregistrement en mode surveillance pour un sous-domaine ou un domaine qui requiert que les récepteurs DMARC vous envoient des statistiques sur les messages qu'ils voient pour ce domaine. Un enregistrement en mode surveillance est un enregistrement TXT DMARC dont la stratégie est définie sur Aucune (p=none). De nombreuses sociétés publient un enregistrement TXT DMARC avec p=none, car elles ne savent pas exactement la quantité de messages qu'elles risquent de perdre en publiant une stratégie DMARC plus restrictive.
+    Commencez avec un simple enregistrement en mode surveillance pour un sous-domaine ou un domaine qui requiert que les récepteurs DMARC vous envoient des statistiques sur les messages qu'ils voient pour ce domaine. Un enregistrement en mode surveillance est un enregistrement TXT DMARC dont la stratégie est définie sur Aucune (p=none). De nombreuses entreprises publient un enregistrement DMARC TXT avec p=none car elles ne sont pas sûres de la quantité d’e-mails qu’elles risquent de perdre en publiant une stratégie DMARC plus restrictive.
 
-    Vous pouvez le faire avant même d’avoir implémenté SPF ou DKIM dans votre infrastructure de messagerie. Toutefois, vous ne pourrez pas mettre en quarantaine ou rejeter efficacement le courrier à l’aide de DMARC tant que vous n’aurez pas implémenté SPF et DKIM. À mesure que vous introduisez SPF et DKIM, les rapports générés par le biais de DMARC fournissent les nombres et les sources de messages qui réussissent ces vérifications, et ceux qui ne le font pas. Vous pouvez facilement voir la quantité de votre trafic légitime qui est couverte ou non par celui-ci et résoudre les problèmes. Vous commencerez également à voir le nombre de messages frauduleux envoyés et leur provenance.
+    Vous pouvez effectuer cette opération avant même d'avoir mis en œuvre SPF ou DKIM dans votre infrastructure de messagerie. Toutefois, vous ne pourrez pas mettre en quarantaine ou refuser des messages à l'aide de DMARC jusqu'à ce que vous implémentiez également SPF et DKIM. Au fur et à mesure que vous introduisez SPF et DKIM, les rapports générés via DMARC indiqueront le nombre et les sources des messages qui réussissent ces contrôles, par rapport à ceux qui ne le font pas. Vous pouvez facilement déterminer la part de votre trafic légitime qui est ou non couverte par ces catégories et résoudre les problèmes. Vous commencerez également à voir combien de messages frauduleux sont envoyés et d’où ils sont envoyés.
 
 2. Demandez que les systèmes de messagerie externes mettent en quarantaine le courrier qui échoue aux vérifications de DMARC
 
-    Lorsque vous pensez que tout ou partie de votre trafic légitime est protégé par SPF et DKIM, et que vous connaissez les répercussions de l'implémentation de DMARC, vous pouvez implémenter une stratégie de mise en quarantaine. Une stratégie de mise en quarantaine est un enregistrement TXT DMARC dont la stratégie est définie de manière à effectuer une mise en quarantaine (p=quarantine). Ce faisant, vous demandez aux récepteurs DMARC de placer les messages issus de votre domaine qui sont refusés par DMARC dans l'équivalent local d'un dossier de courrier indésirable plutôt que dans la boîte de réception de vos clients.
+    Lorsque vous pensez que tout ou partie de votre trafic légitime est protégé par SPF et DKIM, et que vous connaissez les répercussions de l'implémentation de DMARC, vous pouvez implémenter une stratégie de mise en quarantaine. Une stratégie de mise en quarantaine est un enregistrement TXT DMARC dont la stratégie est définie de manière à effectuer une mise en quarantaine (p=quarantine). En faisant cela, vous demandez aux récepteurs DMARC de placer les messages de votre domaine qui échouent DMARC dans l’équivalent local d’un dossier de spam au lieu des boîtes de réception de vos clients.
 
 3. Demandez que les systèmes de messagerie externes n’acceptent pas les messages qui échouent aux vérifications de DMARC
 
@@ -210,7 +212,7 @@ Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercu
 
 4. Comment configurer DMARC pour le sous-domaine ?
 
-   DMARC est implémenté en publiant une stratégie en tant qu’enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera à sub.domain.contonos.com sauf si une stratégie différente est explicitement définie pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer avec attention les enregistrements DMARC de sous-domaines explicites où vous ne voulez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de niveau supérieur.
+   DMARC est implémenté en publiant une stratégie en tant qu’enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera à sub.domain.contonos.com sauf si une stratégie différente est explicitement définie pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer des enregistrements DMARC de sous-domaine explicites lorsque vous ne souhaitez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de premier niveau.
 
    En outre, vous pouvez ajouter une stratégie de type caractère générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de message électronique, en ajoutant la valeur `sp=reject`. Par exemple :
 
@@ -220,15 +222,15 @@ Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercu
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Gestion des messages électroniques sortants qui échouent aux vérifications de DMARC dans Microsoft 365
 
-Si un message sortant issu de Microsoft 365 échoue aux vérifications de DMARC et que vous avez défini la stratégie sur p=quarantine (mise en quarantaine) ou p=reject (rejet), le message est routé via le [pool de remise à risque plus élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).
+Si un message sortant issu de Microsoft 365 échoue aux vérifications de DMARC et que vous avez défini la stratégie sur p=quarantine (mise en quarantaine) ou p=reject (rejet), le message est routé via le [pool de remise à risque plus élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). Il n’y a pas de remplacement pour les e-mails sortants.
 
-Si vous publiez une stratégie de rejet DMARC (p=reject), aucun autre client dans Microsoft 365 ne peut usurper votre domaine, car les messages ne seront pas en mesure de passer les vérifications SPF ou DKIM pour votre domaine lorsqu'un message sortant sera relayé via le service. En revanche, si vous publiez une stratégie de rejet DMARC mais que tous vos messages électroniques ne sont pas authentifiés via Microsoft 365, une partie de ceux-ci peuvent être marqués comme courrier indésirable pour les e-mails entrants (comme décrit ci-dessus), ou ils seront refusés si vous ne publiez pas SPF et que vous essayez de les relayer dans le sens sortant via le service. Cela peut se produire, par exemple, si vous avez oublié d'inclure les adresses IP de certains serveurs et de certaines applications qui envoient des messages au nom de votre domaine lorsque vous avez créé votre enregistrement TXT DMARC.
+Si vous publiez une stratégie de rejet DMARC (p=reject), aucun autre client dans Microsoft 365 ne peut usurper votre domaine, car les messages ne pourront pas passer SPF ou DKIM pour votre domaine lors du relais d’un message sortant via le service. Toutefois, si vous publiez une stratégie de rejet DMARC mais que tous vos e-mails ne sont pas authentifiés via Microsoft 365, certains d’entre eux peuvent être marqués comme spam pour les e-mails entrants (comme décrit ci-dessus), ou ils seront rejetés si vous ne publiez pas SPF et essayez de les relayer via le service. Cela peut se produire, par exemple, si vous avez oublié d’inclure les adresses IP de certains serveurs et de certaines applications qui envoient des messages au nom de votre domaine lorsque vous avez créé votre enregistrement TXT DMARC.
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Gestion des messages électroniques entrants qui échouent aux vérifications de DMARC dans Microsoft 365
 
 Si la politique de DMARC du serveur d'envoi est `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) marque le message comme étant un spoof au lieu de le rejeter. En d’autres termes, pour les messages entrants, Microsoft 365 traite `p=reject` et `p=quarantine` de la même façon. Les administrateurs peuvent définir l’action à effectuer sur les messages classés comme usurpation d’identité dans la stratégie [anti-hameçonnage](set-up-anti-phishing-policies.md).
 
-Microsoft 365 est configuré de cette façon, car certains messages légitimes peuvent échouer aux vérifications de DMARC. Cela peut être le cas, par exemple, si un message est envoyé à une liste de diffusion qui le relaie ensuite à tous ses participants. Si Microsoft 365 rejette ces e-mails, les destinataires peuvent perdre des messages légitimes sans avoir aucun moyen de les récupérer. C'est pourquoi, avec cette configuration, ces messages sont toujours refusés par DMARC, mais, au lieu d'être rejetés, ils sont marqués comme courrier indésirable. Si nécessaire, les utilisateurs peuvent toujours accéder à ces messages dans leur boîte de réception via les méthodes suivantes :
+Microsoft 365 est configuré de cette façon, car certains messages légitimes peuvent échouer aux vérifications de DMARC. Par exemple, un message peut échouer DMARC s’il est envoyé à une liste de diffusion qui relaie ensuite le message à tous les participants de la liste. Si Microsoft 365 rejette ces e-mails, les destinataires peuvent perdre des messages légitimes sans avoir aucun moyen de les récupérer. Au lieu de cela, ces messages échoueront toujours DMARC mais ils seront marqués comme spam et non rejetés. Si nécessaire, les utilisateurs peuvent toujours accéder à ces messages dans leur boîte de réception via les méthodes suivantes :
 
 - Les utilisateurs ajoutent individuellement des expéditeurs approuvés à l’aide de leur client de messagerie.
 
@@ -246,16 +248,16 @@ Microsoft 365 utilise actuellement ARC pour vérifier les résultats de l’aut
 
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Résolution des problèmes d’implémentation de DMARC
 
-Si EOP n'est pas la première entrée des enregistrements MX de votre domaine, les stratégies de DMARC en cas d'échec aux vérifications ne seront pas appliquées pour votre domaine.
+Si vous avez configuré les enregistrements MX de votre domaine où EOP n’est pas la première entrée, les échecs DMARC ne seront pas appliqués pour votre domaine.
 
-Si vous êtes un client et que l’enregistrement MX principal de votre domaine ne pointe pas vers EOP, vous ne bénéficiez pas de la protection de DMARC. Par exemple, DMARC ne fonctionne pas si l’enregistrement MX pointe vers votre serveur de messagerie local et que les e-mails sont ensuite acheminés vers EOP à l’aide d’un connecteur. Dans ce cas de figure, le domaine de réception est l’un de vos domaines d’accepté, mais EOP n’est pas l’enregistrement MX principal. Par exemple, supposons que l’enregistrement MX de contoso.com pointe vers contoso.com lui-même et que EOP soit utilisé comme enregistrement MX secondaire. L’enregistrement MX de contoso.com se présente alors comme suit :
+Si vous êtes un client et que l’enregistrement MX principal de votre domaine ne pointe pas vers EOP, vous ne bénéficierez pas des avantages de DMARC. Par exemple, DMARC ne fonctionne pas si l’enregistrement MX pointe vers votre serveur de messagerie local et que les e-mails sont ensuite acheminés vers EOP à l’aide d’un connecteur. Dans ce scénario, le domaine de réception est l’un de vos domaines acceptés, mais EOP n’est pas le MX principal. Par exemple, supposons que l’enregistrement MX de contoso.com pointe vers contoso.com lui-même et que EOP soit utilisé comme enregistrement MX secondaire. L’enregistrement MX de contoso.com se présente alors comme suit :
 
 ```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-L’ensemble ou la majorité des messages électroniques seront d’abord acheminés vers mail.contoso.com, puisqu’il s’agit de l’enregistrement MX principal, avant d’être acheminés vers Exchange Online Protection. Dans certains cas, EOP n’est même pas présent dans la liste des enregistrements MX et des connecteurs sont simplement mis en place pour acheminer les messages électroniques. Il n’est pas nécessaire que EOP soit la première entrée de la validation DMARC à effectuer. Il garantit simplement la validation, pour être certain que tous les serveurs locaux/non-O365 feront des vérifications DMARC.  DMARC est éligible pour être appliqué au domaine d’un client (et non au serveur) lorsque vous configurez l’enregistrement DMARC TXT, mais il revient au serveur de réception d’effectuer réellement l’application.  Si vous configurez EOP comme serveur de réception, la fonction EOP procède à l’application DMARC.
+L’ensemble ou la majorité des messages électroniques seront d’abord acheminés vers mail.contoso.com, puisqu’il s’agit de l’enregistrement MX principal, avant d’être acheminés vers Exchange Online Protection. Dans certains cas, EOP n’est même pas présent dans la liste des enregistrements MX et des connecteurs sont simplement mis en place pour acheminer les messages électroniques. EOP ne doit pas nécessairement être la première entrée pour que la validation DMARC soit effectuée. Il garantit simplement la validation, pour être certain que tous les serveurs locaux/non-O365 feront des vérifications DMARC.  DMARC est éligible pour être appliqué pour le domaine d’un client (pas le serveur) lorsque vous configurez l’enregistrement DMARC TXT, mais c’est au serveur de réception de faire réellement l’application.  Si vous configurez EOP comme serveur de réception, la fonction EOP procède à l’application DMARC.
 
 :::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="Graphique de résolution des problèmes pour DMARC" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
@@ -278,3 +280,5 @@ Vous voulez plus d’informations sur DMARC ? Ces ressources peuvent vous aider
 [**Configurer SPF dans Microsoft 365 pour empêcher l’usurpation**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
 [**Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Microsoft 365**](use-dkim-to-validate-outbound-email.md)
+
+[Utilisez des expéditeurs ARC de confiance pour les flux de messagerie légitimes](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)

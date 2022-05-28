@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: ec7743c2e72016c606decb1346bdd558e40ae412
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: d4bb28255a809737b44324fdcccfc456c6a73dfb
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302141"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772615"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -445,9 +445,9 @@ Avec ces paramètres concaténés, les utilisateurs peuvent supprimer l’élém
 
 L’option de réétiquetage à la fin de la période de rétention présente deux chemins de configuration lorsque vous créez une étiquette de rétention :
 
-- Si vous devez initialement conserver le contenu avec l’étiquette principale (le plus souvent) : sur la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pour une période spécifique**, puis spécifiez la période de rétention. Ensuite, sur la page **Choisir ce qui se passe après la période de rétention**, sélectionnez **Modifier l’étiquette** > **Choisir une étiquette**.
+- Si vous devez initialement conserver le contenu avec l’étiquette principale (le plus souvent) : sur la page **Définir les paramètres d’étiquette**, sélectionnez **Conserver les éléments indéfiniment ou pour une période spécifique**, puis spécifiez la période de rétention. Ensuite, sur la page **Choisir ce qui se passe après la période de conservation**, sélectionnez **Modifier l’étiquette** > **Choisir une étiquette de remplacement**.
 
-- Si vous n’avez pas besoin de conserver initialement le contenu avec l’étiquette principale : sur la page **Définir les paramètres d’étiquette**, sélectionnez **Appliquer les actions après une période spécifique**, spécifiez la période de rétention, puis sélectionnez **Modifier l’étiquette** > **Choisir une étiquette**.
+- Si vous n'avez pas besoin de conserver initialement le contenu avec le libellé principal : sur la page **Définir les paramètres du libellé**, sélectionnez **Appliquer les actions après une période spécifique**, spécifiez la période de conservation, puis sélectionnez **Modifier l’étiquette** > **Choisir une étiquette de remplacement**.
 
 Dans les deux cas, l’étiquette de remplacement doit déjà être créée mais ne doit pas nécessairement être incluse dans une stratégie d’étiquette existante.
 

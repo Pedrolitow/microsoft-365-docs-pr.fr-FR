@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Découvrez comment activer ou désactiver les boîtes aux lettres d’archivage pour prendre en charge la conservation des messages, la découverte électronique et les exigences de conservation de votre organisation.
-ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647234"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772421"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Activer l’archivage des boîtes aux lettres dans le portail de conformité Microsoft Purview
 
@@ -124,6 +124,10 @@ Une page volante s’ouvre dans le Centre d'administration Microsoft 365. Entrez
 
 > [!NOTE]
 > Vous devez être un administrateur Microsoft 365 pour utiliser la vérification de diagnostic de boîte aux lettres d’archivage. En outre, cette fonctionnalité n’est pas disponible dans les clouds Microsoft 365 Administration, Microsoft 365 gérés par 21Vianet ou Microsoft 365 Germany.
+
+## <a name="instructions-for-end-users"></a>Instructions pour les utilisateurs finaux
+
+Expliquez aux utilisateurs comment fonctionne leur boîte aux lettres d’archivage et comment ils peuvent interagir avec elle dans Outlook sur Windows, macOS et sur le Web. La documentation la plus efficace sera personnalisée pour votre organisation. Mais pour obtenir des instructions de base, consultez [Gérer le stockage des e-mails avec des boîtes aux lettres d’archivage en ligne](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
