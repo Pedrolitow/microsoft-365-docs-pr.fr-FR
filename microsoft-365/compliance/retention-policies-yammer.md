@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286469"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754309"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -66,10 +66,10 @@ Même s’ils sont stockés dans Exchange, les messages Yammer sont inclus uniqu
 > [!NOTE]
 > Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Yammer et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Yammer. Si vous n’avez pas besoin de conserver ces données Yammer pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
 
-Une fois qu'une politique de rétention est configurée pour les messages Yammer, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages Yammer. Le travail de chronométrage prend jusqu'à sept jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés.
+Une fois qu'une politique de rétention est configurée pour les messages Yammer, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages Yammer. Le travail de chronométrage prend jusqu'à sept jours. Lorsque ces éléments sont expirés de leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds : un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés.
 
 > [!IMPORTANT]
-> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages Yammer sont stockés dans des boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention (y compris les stratégies appliquées à l’emplacement Exchange), la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
+> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention pour le même emplacement, la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
 >
 > Bien que la boîte aux lettres soit incluse dans une conservation applicable, les messages Yammer qui ont été supprimés ne seront plus visibles dans Yammer, mais continueront d’être détectables avec eDiscovery.
 

@@ -22,13 +22,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/18/2022
-ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.date: 05/26/2022
+ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587421"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753845"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -46,6 +46,16 @@ Les cartes de débit, de crédit et les informations bancaires sont acceptées p
 
 - Vous devez être un administrateur global ou de facturation pour effectuer les étapes décrites dans cet article. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
 - Le mode de paiement choisi à la validation de l’achat est le mode qui sera utilisé pour toutes les périodes de facturation futures. Vous pouvez le modifier à tout moment.
+
+## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nouvelles réglementations de la Reserve Bank of India
+
+Depuis le 1er octobre 2021, les paiements automatiques en Inde peuvent bloquer certaines transactions par carte de crédit, en particulier les transactions dépassant 5 000 INR. En raison de cette réglementation, vous devrez peut-être effectuer des paiements manuellement dans le Centre d’administration Microsoft 365. Ces réglementations n’affecteront pas le montant total facturé pour votre utilisation.
+
+[En savoir plus sur la réglementation de la Reserve Bank of India concernant les paiements récurrents](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+Le 1er juillet 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Pour se conformer à ce règlement, Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter un mode de paiement et effectuer un paiement unique pour tous les abonnements et profils de facturation.
+
+[En savoir plus sur la réglementation de réserve de la Banque d’Inde pour le stockage par carte](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Payer par carte de crédit, carte de débit, ou compte bancaire
 

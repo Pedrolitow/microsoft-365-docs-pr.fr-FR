@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 33e4a6d3644f7a3aab8992130b2b92e09dd665af
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626038"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772399"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -152,5 +152,7 @@ L’objectif de l’authentification de messagerie [**DKIM**](use-dkim-to-valida
 L’objectif de l’authentification de messagerie [**DMARC**](use-dmarc-to-validate-email.md) est de vérifier que les informations SPF et DKIM correspondent à l’adresse de l’expéditeur.
 
  Si vous souhaitez obtenir des exemples avancés et des informations plus détaillées sur la syntaxe SPF prise en charge, consultez l’article [Fonctionnement de SPF contre l’usurpation et l’hameçonnage dans Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+[Utiliser des expéditeurs ARC approuvés pour les flux de messagerie légitimes](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
 
 *Sélectionnez « Cette page » sous « Commentaires » si vous avez des commentaires sur cette documentation.*

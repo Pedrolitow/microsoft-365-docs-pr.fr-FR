@@ -18,16 +18,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment créer un type d’informations sensibles personnalisé qui vous permettra d’utiliser des règles répondant aux besoins de votre organisation.
-ms.openlocfilehash: 8393da8e2b2607692983010783d9ae110f268f4c
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: f0ebc1bb4b13f9e31ca1a8a1967fce007105cfe6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271741"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753889"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
-Lorsque vous recherchez des informations sensibles dans un contenu, vous devez décrire ces informations dans ce que l'on appelle une *règle*. La prévention des pertes de données (DLP) comprend des règles pour les types d'informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Il se peut que vous souhaitiez ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, ce que vous pouvez faire en créant un type d'information sensible personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d'informations potentielles sur les cartes de crédit.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Lorsque vous recherchez des informations de contenu sensible vous devez décrire ces informations dans ce que l'on appelle une *règle*. La protection contre la perte de données Microsoft Purview (DLP) comprend des règles pour les types d'informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d'informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d'informations potentielles relatives aux cartes de crédit.
 
 Vous pouvez prendre cet exemple et l’appliquer à d’autres types d’informations sensibles intégrés. Pour obtenir la liste des types d’informations sensibles par défaut et des définitions XML, voir [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md).
 
@@ -157,7 +159,7 @@ Vous obtenez maintenant quelque chose qui ressemble au XML suivant. Étant donn�
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Supprimer l’exigence de preuve crédible d’un type d’informations sensibles
 
-Maintenant que vous avez un nouveau type d'information sensible que vous pouvez télécharger dans le Centre de conformité &amp; de sécurité, l'étape suivante consiste à rendre la règle plus spécifique. Modifiez la règle de manière à ce qu'elle ne recherche qu'un nombre à 16 chiffres qui passe la somme de contrôle mais qui ne nécessite pas de preuve supplémentaire (corroborante), comme des mots-clés. Pour ce faire, vous devez supprimer la partie du XML qui recherche les preuves corroborantes. Les preuves corroborantes sont très utiles pour réduire les faux positifs. Dans ce cas, on trouve généralement certains mots clés ou une date d'expiration à proximité du numéro de carte de crédit. Si vous supprimez ces preuves, vous devez également ajuster le degré de confiance que vous avez dans le fait d'avoir trouvé un numéro de carte de crédit en diminuant la valeur de `confidenceLevel`, ce qui retourne 85 dans l'exemple.
+À présent que vous disposez d’un nouveau type d’informations sensibles que vous pouvez charger vers le Portail de conformité Microsoft Purview et de la prochaine étape consiste à rendre la règle plus spécifique. Modifiez la règle de sorte qu’elle recherche uniquement un nombre à 16 chiffres qui passe la somme de contrôle, mais qu’elle ne nécessite pas de preuve (corroborante) supplémentaire comme des mots clés. Pour ce faire, vous devez retirer la partie du XML qui recherche la preuve corroborante. Les preuves corroborantes sont très utiles pour réduire les faux positifs. En l’occurrence, des mots clés ou une date d’expiration figurent généralement à proximité du numéro de carte de crédit. Si vous supprimez cette preuve, vous devez également ajuster votre niveau de confiance par rapport au fait que vous avez trouvé un numéro de carte de crédit en abaissant la valeur du paramètre `confidenceLevel` qui est définie sur 85 dans l’exemple.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"

@@ -156,16 +156,18 @@
           items:
             - name: Authentification de l’e-mail
               href: email-validation-and-authentication.md
+            - name: Configurer SPF pour empêcher l’usurpation d’identité
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: Comment Microsoft 365 utilise SPF pour éviter l’usurpation
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
             - name: Utilisation de DKIM pour valider les messages sortants
               href: use-dkim-to-validate-outbound-email.md
             - name: Prise en charge de la validation des messages signés DKIM
               href: support-for-validation-of-dkim-signed-messages.md
             - name: Utiliser DMARC pour valider les e-mails
               href: use-dmarc-to-validate-email.md
-            - name: Configurer SPF pour empêcher l’usurpation d’identité
-              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: Comment Microsoft 365 utilise SPF pour éviter l’usurpation
-              href: how-office-365-uses-spf-to-prevent-spoofing.md
+            - name: Utiliser des expéditeurs ARC approuvés pour les appareils et services légitimes entre l’expéditeur et le récepteur
+              href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: Flux de courriers dans EOP
           href: mail-flow-in-eop.md
         - name: Stratégies concernant les envois des utilisateurs
@@ -394,6 +396,8 @@
           href: quarantine-faq.yml
     - name: Référence
       items:
+        - name: Rétention des données Defender pour Office 365
+          href: mdo-data-retention.md
         - name: Feuille de route de sécurité
           href: security-roadmap.md
         - name: Aide et support pour EOP
