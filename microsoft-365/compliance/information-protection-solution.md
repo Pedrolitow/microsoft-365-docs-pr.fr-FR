@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Des conseils pratiques pour déployer Microsoft Purview Information Protection dans votre organisation.
-ms.openlocfilehash: d672e113e4f1bdaca155881afba6262878d0ecb3
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: fa826e7b9761ebcff34dd9ae6f7c2ee1b268bade
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294753"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759843"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Déployer une solution de protection des informations avec Microsoft Purview
 
@@ -58,7 +58,7 @@ Savoir où résident vos données sensibles constitue souvent le plus grand déf
 
 |Étape|Description|Plus d’informations|
 |:---|:----------|:---------------|
-|1| Décrivez les catégories d’informations sensibles que vous souhaitez protéger. <br /><br /> Vous avez déjà une idée des types d’informations les plus importantes pour votre organisation et de ceux qui ne le sont pas. Collaborez avec les parties prenantes pour décrire ces catégories, car elles représentent votre point de départ. | [En savoir plus sur les types d’informations confidentielles](sensitive-information-type-learn-about.md). <p> [En savoir plus sur les classifieurs avec capacité d’apprentissage](classifier-learn-about.md)|
+|1| Décrivez les catégories d’informations sensibles que vous souhaitez protéger. <br /><br /> Vous avez déjà une idée des types d’informations les plus importantes pour votre organisation et de ceux qui ne le sont pas. Collaborez avec les parties prenantes pour décrire ces catégories qui constituent votre point de départ. | [En savoir plus sur les types d’informations confidentielles](sensitive-information-type-learn-about.md). <p> [En savoir plus sur les classifieurs avec capacité d’apprentissage](classifier-learn-about.md)|
 |2| Découvrez et classifiez les données sensibles. <br /><br /> Vous pouvez trouver les données sensibles dans des éléments à l’aide de nombreuses méthodes différentes qui incluent des stratégies DLP par défaut, l’étiquetage manuel par les utilisateurs et la reconnaissance automatique des modèles à l’aide de types d’informations sensibles ou de l’apprentissage automatique. | [En savoir plus sur la classification des données](data-classification-overview.md) <p> [Vidéo : classification des données dans le Centre de conformité](https://www.microsoft.com/videoplayer/embed/RE4vx8x)|
 |3| Afficher vos éléments sensibles.  <br /><br /> Utilisez l’Explorateur de contenu et l’Explorateur d’activités pour une analyse plus approfondie des éléments sensibles et des mesures que les utilisateurs prennent sur ces éléments.| [Prise en main de l’explorateur de contenu](data-classification-content-explorer.md) <p> [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)|
 
@@ -76,7 +76,7 @@ Utilisez les informations en sachant où résident vos données sensibles pour v
 |4|Découvrez, étiquetez et protégez des éléments sensibles qui résident dans des magasins de données en local en déployant le [scanneur d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner) avec vos étiquettes de confidentialité.| [Configurer et installer le scanner d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |5|Étendez vos étiquettes de sensibilité à Azure en utilisant la [carte de données Microsoft Purview](/azure/purview/overview), pour découvrir et étiqueter des éléments pour Azure Blob Storage, les fichiers Azure, le stockage Azure du lac de données Gen1 et Azure du lac de données Gen12. | [Étiquetage dans Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
 
-Si vous êtes un développeur qui souhaite étendre les étiquettes de sensibilité aux applications métier ou aux applications SaaS tierces, voir [Installation et configuration du kit SDK Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip). 
+Si vous êtes un développeur qui souhaite étendre les étiquettes de sensibilité aux applications de métier ou aux applications SaaS tierces, consultez[Installation et configuration du kit SDK Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip). 
 
 ### <a name="additional-protection-capabilities"></a>Fonctionnalités de protection supplémentaires
 
@@ -102,10 +102,10 @@ Déployez des stratégies de prévention des pertes de données (DLP) Microsoft 
 
 Modules d’apprentissage pour les consultants et les administrateurs :
 
-- [Présentation de la protection et de la gouvernance des informations dans Microsoft 365](/learn/modules/m365-compliance-information-governance)
+- [Introduction à la protection de l'information et à la gestion du cycle de vie des données dans Microsoft Purview](/learn/modules/m365-compliance-information-governance)
 - [Classifier des données à des fins de protection et de gouvernance](/learn/modules/m365-compliance-information-classify-data)
-- [Protéger les informations dans Microsoft 365](/learn/modules/m365-compliance-information-protect-information)
-- [Éviter les pertes de données dans Microsoft 365](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Protéger les informations dans Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
+- [Prévenir la perte de données dans Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
 
 Pour indiquer à vos utilisateurs comment appliquer et utiliser les étiquettes de confidentialité que vous configurez pour eux, consultez [Documentation de l’utilisateur final pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
