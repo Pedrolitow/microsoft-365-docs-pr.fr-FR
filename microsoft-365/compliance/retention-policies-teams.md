@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: f289b8da5a4b21214887fd6429e977e434a9cd0b
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754353"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811019"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -71,7 +71,7 @@ Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que 
 
 Teams utilise un service de conversation fourni par Azure comme espace de stockage principal pour tous les messages (conversations et messages de canaux). Si vous devez supprimer des messages Teams pour des raisons de conformité, les stratégies de rétention pour Teams peuvent supprimer les messages après une période spécifique, en fonction de leur moment de création. Les messages sont ensuite supprimés définitivement des boîtes aux lettres Exchange où ils sont stockés pour des opérations de conformité et du stockage principal utilisé par le service de conversation sous-jacent fourni par Azure. Pour plus d’informations sur l’architecture sous-jacente, voir la page [Sécurité et conformité dans Microsoft Teams](/MicrosoftTeams/security-compliance-overview) et plus précisément, la section [Architecture de protection des informations](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, vous devez configurer une stratégie de rétention pour les emplacements des **messages de canal Teams** et des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas inclus dans les stratégies de rétention configurées pour les boîtes aux lettres d’utilisateurs ou de groupes Exchange. De même, les stratégies de rétention pour Teams n’affectent pas les autres éléments de courrier électronique stockés dans les boîtes aux lettres.
+Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, vous devez configurer une stratégie de rétention pour les emplacements des **messages de canal Teams** et des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas inclus dans les stratégies de rétention configurées pour les boîtes aux lettres d’utilisateurs ou de groupes Exchange. De même, les stratégies de rétention pour Teams n’affectent pas les autres éléments de messagerie stockés dans les boîtes aux lettres.
 
 Si un utilisateur est ajouté à une conversation, une copie de tous les messages partagés avec lui est ingérée dans sa boîte aux lettres. La date de création de ces messages ne change pas pour le nouvel utilisateur et reste identique pour tous les utilisateurs.
 
@@ -83,7 +83,7 @@ Une fois qu’une stratégie de rétention est configurée pour les messages de 
 Les messages restent dans le dossier SubstrateHolds pendant au moins 1 jour. Ensuite, s’ils peuvent être supprimés, le travail du minuteur les supprime définitivement lors de sa prochaine exécution.
 
 > [!IMPORTANT]
-> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention pour le même emplacement, la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
+> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention Teams pour le même emplacement, la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
 >
 > Bien que la boîte aux lettres soit incluse dans une conservation applicable, les messages de conversation et de canal Teams qui ont été supprimés ne seront plus visibles dans l’application Teams, mais continueront à être détectables avec eDiscovery.
 
@@ -206,7 +206,7 @@ Lorsque des utilisateurs externes sont inclus dans une réunion organisée par v
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
-Si un utilisateur disposant d’une boîte aux lettres dans Exchange Online quitte votre organisation et que son compte Microsoft 365 est supprimé, les messages de conversation soumis à une rétention sont stockés dans une boîte aux lettres inactive. Les messages de conversation restent soumis à une stratégie de rétention qui a été placée sur l’utilisateur avant que sa boîte aux lettres ne soit inactive et que le contenu soit disponible pour une recherche eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un utilisateur disposant d’une boîte aux lettres dans Exchange Online quitte votre organisation et que son compte Microsoft 365 est supprimé, les messages de conversation soumis à une rétention sont stockés dans une boîte aux lettres inactive. Les messages de conversation restent soumis à une stratégie de rétention qui a été placée sur l’utilisateur avant que sa boîte aux lettres ne soit inactive et que le contenu soit disponible pour une recherche eDiscovery. Pour plus d’informations, consultez [En savoir plus sur les boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md). 
 
 Si l’utilisateur a stocké des fichiers dans Teams, consultez la [section équivalente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) pour SharePoint et OneDrive.
 

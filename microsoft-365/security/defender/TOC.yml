@@ -332,6 +332,12 @@
           items:
             - name: Vue d’ensemble
               href: defenderexpertsforhuntingprev.md
+        - name: Playbooks rançongiciels
+          items:
+            - name: Détection des attaques par rançongiciels gérées par l’homme avec Microsoft 365 Defender
+              href: playbook-detecting-ransomware-m365-defender.md
+            - name: Réponse aux attaques par rançongiciels
+              href: playbook-responding-ransomware-m365-defender.md
     - name: Guide d’opérations de sécurité
       items:
         - name: Vue d’ensemble

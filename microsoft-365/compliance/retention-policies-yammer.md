@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 25a746fcd5fe5dfd0e17edf08c9e7d3f722ce676
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754309"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810569"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -69,7 +69,7 @@ Même s’ils sont stockés dans Exchange, les messages Yammer sont inclus uniqu
 Une fois qu'une politique de rétention est configurée pour les messages Yammer, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages Yammer. Le travail de chronométrage prend jusqu'à sept jours. Lorsque ces éléments sont expirés de leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds : un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés.
 
 > [!IMPORTANT]
-> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention pour le même emplacement, la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
+> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages Yammer sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention Yammer pour le même emplacement, la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
 >
 > Bien que la boîte aux lettres soit incluse dans une conservation applicable, les messages Yammer qui ont été supprimés ne seront plus visibles dans Yammer, mais continueront d’être détectables avec eDiscovery.
 
@@ -86,7 +86,14 @@ Pour les deux voies du diagramme :
 2. **Si un message Yammer n'est pas supprimé** et pour les messages courants après édition, le message est déplacé dans le dossier SubstrateHolds après l'expiration de la période de conservation. Cette action prend jusqu'à sept jours à compter de la date d'expiration. Lorsque le message se trouve dans le dossier SubstrateHolds, il est alors définitivement supprimé. 
 
 > [!NOTE]
-> Les messages dans le dossier SubstrateHolds sont recherchés par les outils d'eDiscovery. Tant que les messages ne sont pas définitivement supprimés (dans le dossier SubstrateHolds), ils restent recherchés par les outils d'eDiscovery.
+> Les messages dans le dossier SubstrateHolds sont recherchés par les outils d'eDiscovery. Tant que les messages ne sont pas définitivement supprimés du dossier SubstrateHolds, ils peuvent toujours faire l’objet de recherches au moyen des outils eDiscovery.
+
+Lorsque la période de rétention expire et déplace un message vers le dossier SubstrateHolds, une opération de suppression est communiquée au service Yammer, qui relaie ensuite la même opération à l’application cliente Yammer. Les retards dans cette communication ou cette mise en cache peuvent expliquer pourquoi, pendant une courte période, les utilisateurs continuent à voir ces messages dans leur application Yammer.
+
+Dans ce scénario où le service Yammer reçoit une commande de suppression en raison d’une stratégie de rétention, le message correspondant dans l’application Yammer est supprimé pour tous les utilisateurs de la conversation. Certains de ces utilisateurs peuvent être issus d’une autre organisation, avoir une stratégie de rétention avec une période de rétention plus longue ou aucune stratégie de rétention qui leur est affectée. Pour ces utilisateurs, les copies des messages sont toujours stockées dans leurs boîtes aux lettres et restent utilisables dans une recherche de découverte électronique jusqu’à ce que les messages soient définitivement supprimés par une autre stratégie de rétention.
+
+> [!IMPORTANT]
+> Les messages visibles dans l’application Yammer ne reflètent pas précisément s’ils sont conservés ou supprimés définitivement pour les exigences de conformité.
 
 Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression.
 
@@ -173,7 +180,7 @@ Pour l’instant, les utilisateurs invités B2B Azure ne sont pas pris en charge
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
-Si un utilisateur quitte votre organisation et que son compte Microsoft 365 est supprimé, leurs messages utilisateur Yammer soumis à une rétention sont stockés dans une boîte aux lettres inactive. Les messages de conversation restent soumis à une stratégie de rétention qui a été placée sur l’utilisateur avant que sa boîte aux lettres ne soit inactive et les contenus sont disponibles pour une recherche eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un utilisateur quitte votre organisation et que son compte Microsoft 365 est supprimé, leurs messages utilisateur Yammer soumis à une rétention sont stockés dans une boîte aux lettres inactive. Les messages de conversation restent soumis à une stratégie de rétention qui a été placée sur l’utilisateur avant que sa boîte aux lettres ne soit inactive et les contenus sont disponibles pour une recherche eDiscovery. Pour plus d’informations, consultez [En savoir plus sur les boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md).
 
 Si l’utilisateur a stocké des fichiers dans Yammer, consultez la [section équivalente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) pour SharePoint et OneDrive.
 

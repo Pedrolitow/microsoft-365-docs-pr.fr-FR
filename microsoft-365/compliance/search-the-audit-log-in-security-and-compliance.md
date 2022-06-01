@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465973"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810963"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 
@@ -1130,7 +1130,13 @@ Oui. L’API d’activité de gestion d’Office 365 est utilisée pour extraire
 
 **Existe-t-il d’autres méthodes pour obtenir des journaux d’audit autres que l’utilisation du centre de sécurité et conformité ou de l’API d’activité de gestion d’Office 365 ?**
 
-Non. Ce sont les deux seuls moyens d'obtenir les données du service d'audit.
+Oui, vous pouvez récupérer les journaux d’audit à l’aide des méthodes suivantes :
+
+- [API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+
+- L’[outil de recherche dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le portail de conformité Microsoft Purview.
+
+- La commande cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 **Est-ce que je dois activer l’audit de chaque service pour lequel je souhaite capturer les journaux d’audit ?**
 
