@@ -1,6 +1,6 @@
 ---
-title: Tester vos fichiers binaires sur la base de test
-description: Comment tester vos fichiers binaires sur la base de test
+title: Création et test de fichiers binaires sur la base de test
+description: Comment créer et tester des fichiers binaires sur la base de test
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -14,32 +14,32 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 8474631edfe580dfc269b2d02c1a113351c6ba6d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 99e2a26294d8e67854387d3c4f3d41c469a97a50
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995297"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811059"
 ---
-# <a name="test-your-binary-files-on-test-base"></a>Tester vos fichiers binaires sur la base de test
+# <a name="creating-and-testing-binary-files-on-test-base"></a>Création et test de fichiers binaires sur la base de test
 
-> [!NOTE]
-> Ce guide vous guidera dans la création d’un package de base de test à partir de zéro. Si vous disposez déjà d’un package de base de test (.zip), vous pouvez basculer pour utiliser notre expérience de chargement [héritée Télécharger votre package de base de test (Zip).](uploadApplication.md)
+Cette section fournit toutes les étapes nécessaires pour créer un package contenant des fichiers binaires, pour le chargement et le test sur la base de test. Si vous disposez déjà d’un fichier .zip prédéfinis, vous pouvez voir [le chargement d’un package Zip prédéffagé](uploadApplication.md) pour charger votre fichier.
 
-## <a name="prerequisites"></a>Configuration requise
-
-Un compte de base de test. Si vous n’en avez pas, [créez un compte de base de test](createAccount.md).
+> [!IMPORTANT]
+> Si vous n’avez pas de compte **de base** de test, vous devez en créer un avant de continuer, comme décrit dans [la création d’un compte de base de test](createAccount.md).
 
 ## <a name="create-a-new-package"></a>Créer un package
 
-Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base de test dans lequel vous souhaitez charger votre package. Dans le menu de gauche sous **Catalogue de packages**, sélectionnez le **nouveau package**. Cliquez ensuite sur la première carte **« Créer un package »** pour générer votre package en 5 étapes !
+Dans le [Portail Azure](https://portal.azure.com/), accédez au compte **de base** de test pour lequel vous allez créer et charger votre package, puis suivez les étapes ci-dessous. 
+
+Dans le menu de gauche sous **Catalogue de packages**, sélectionnez le **nouveau package**. Cliquez ensuite sur la première carte **« Créer un package en ligne »** pour générer votre package en ligne en 5 étapes !
 
 > [!div class="mx-imgBorder"]
 > ![Assistant Création d’un package](Media/testapplication01.png)
 
 ### <a name="step-1-define-content"></a>Étape 1. Définir le contenu
 
-1. Dans la section **Source** du package, choisissez votre source de package. Si vous disposez d’une application Intunewin, sélectionnez Intunewin. Pour d’autres, par exemple, exe ou msi, sélectionnez Binaries.
+1. Dans la section **Source du package** , sélectionnez Fichiers binaires (par exemple: .exe, .msi) dans le type de source du package.
 
    > [!div class="mx-imgBorder"]
    > ![Choisir votre source de package](Media/testapplication02.png)
@@ -57,16 +57,19 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
    > [!div class="mx-imgBorder"]
    > ![Entrer des informations de base](Media/testapplication04.png)
 
-4. Une fois toutes les informations requises remplies, vous pouvez passer à l’étape 2 en cliquant sur le bouton Suivant en bas.
+4. Une fois toutes les informations demandées spécifiées, vous pouvez passer à la phase suivante en cliquant sur le bouton **Suivant : Test de configuration** .
 
    > [!div class="mx-imgBorder"]
    > ![Étape suivante](Media/testapplication05.png)
 
-### <a name="step-2-configure-test"></a>Étape 2. Configurer le test
+### <a name="step-2-configure-test"></a>Étape 2. Configurer le test
 
 1. Sélectionnez le **type de test**. Deux types de test sont pris en charge :
    - Un **test OOB (Out of Box)** effectue une installation, un lancement, une fermeture et une désinstallation de votre package. Après l’installation, la routine de fermeture de lancement est répétée 30 fois avant l’exécution d’une seule désinstallation. Le test OOB vous fournit des données de télémétrie standardisées sur votre package à comparer entre les builds Windows.
    - Un **test fonctionnel** exécuterait votre ou vos scripts de test chargés sur votre package. Les scripts sont exécutés dans la séquence que vous avez spécifiée et un échec dans un script particulier arrête l’exécution des scripts suivants.
+
+   > [!NOTE]
+   > Le test Out of Box est désormais facultatif.
 
    > [!div class="mx-imgBorder"]
    > ![Le test Out of Box est facultatif](Media/testapplication07.png)
@@ -76,11 +79,14 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
    > [!div class="mx-imgBorder"]
    > ![Générer des invites de script](Media/testapplication08.png)
 
-### <a name="step-3-edit-package"></a>Étape 3. Modifier le package
+### <a name="step-3-edit-package"></a>Étape 3. Modifier le package
 
 1. Dans l’onglet Modifier le package, vous pouvez
    - Vérifiez votre dossier de package et votre structure de fichiers dans **la préversion du package**.
    - Modifiez vos scripts en ligne avec **l’éditeur de code PowerShell**.
+
+   > [!NOTE]
+   > Des exemples de scripts ont été générés pour votre référence. Vous devez examiner attentivement chaque script et remplacer le nom de la commande et du processus par le vôtre. 
 
    > [!div class="mx-imgBorder"]
    > ![modifier des scripts en ligne](Media/testapplication09.png)
@@ -97,12 +103,15 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
    - Si le **test Out of Box** est sélectionné à l’étape 2, vous pouvez voir le dossier **outofbox** sous le dossier des scripts. Vous avez également la possibilité d’ajouter la balise **« Redémarrer après l’installation »** pour le script d’installation.
 
    > [!div class="mx-imgBorder"]
-   > ![Ressources dans le dossier outofbox](Media/testapplication11.png)
+   > ![Script de référence](Media/testapplication11.png)
 
    > [!NOTE]
-   > Les balises d’installation, de lancement et de fermeture de script sont obligatoires pour le type de test OOB.
+   > Les balises d’installation, de lancement et de fermeture de script sont obligatoires pour le type de test OOB. La réaffectation des balises garantit que le chemin d’accès de script approprié sera utilisé lors du lancement du test.
 
-   - Si le **test fonctionnel** est sélectionné à l’étape 2, vous pouvez voir le dossier **fonctionnel** sous le dossier des scripts. Vous pouvez ajouter des scripts de test fonctionnel supplémentaires à l’aide du bouton **« Ajouter à la liste de tests fonctionnels** ». Vous avez besoin d’au moins un (1) script et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels.
+   > [!div class="mx-imgBorder"]
+   > ![Invite de modification du package](Media/testapplication11-2.png)
+
+   - Si le **test fonctionnel** est sélectionné à l’étape 2, vous pouvez voir le dossier **fonctionnel** sous le dossier des scripts. Vous pouvez ajouter d’autres scripts de test fonctionnels à l’aide du bouton **« Ajouter à la liste de tests fonctionnels** ». Vous avez besoin d’au moins un (1) script et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels.
 
    > [!div class="mx-imgBorder"]
    > ![Ajouter à la liste de tests fonctionnels](Media/testapplication12.png)
@@ -110,7 +119,7 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
    > [!NOTE]
    > Au moins 1 balise de script fonctionnel est obligatoire pour le type de test fonctionnel.
 
-   En cliquant sur **« Ajouter à la liste de tests fonctionnels »,** le panneau d’action s’affiche. Vous pouvez :
+   Pour ajouter d’autres scripts fonctionnels, vous pouvez cliquer sur « **Ajouter à la liste de tests fonctionnels** ». Ensuite, le panneau d’action s’affiche, vous pouvez :
    - Réorganisez les chemins d’accès de script en faisant glisser les boutons de sélection gauche. Les scripts fonctionnels s’exécutent dans la séquence dans laquelle ils sont répertoriés. Un échec dans un script particulier empêche l’exécution des scripts suivants.
    - Définissez « Redémarrer après l’exécution » pour plusieurs scripts.
    - Appliquer la mise à jour avant sur un chemin d’accès de script spécifique. Cela s’applique aux utilisateurs qui souhaitent effectuer des tests fonctionnels pour indiquer quand le correctif Windows Update doit être appliqué dans la séquence d’exécution de leurs scripts de test fonctionnel.
@@ -124,7 +133,7 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
 
 1. Sous l’onglet Matrice de test, sélectionnez le **type de mise à jour du système d’exploitation**. Deux types de mises à jour du système d’exploitation sont pris en charge.
    - Les **mises à jour de sécurité** permettent de tester votre package par rapport aux évolutions incrémentielles de Windows mises à jour de sécurité mensuelles préversion.
-   - Les **mises à jour des fonctionnalités** permettent de tester votre package par rapport à Windows versions de mises à jour de fonctionnalités bi-annuelles préversion du programme Windows Insider.
+   - Les **mises à jour des fonctionnalités** permettent de tester votre package par rapport à Windows versions de mises à jour de fonctionnalités bi-annuelles préversion de la Programme Windows Insider.
 
 2. Sélectionnez la ou les versions du système d’exploitation pour les tests de mise à jour de sécurité.
 
@@ -135,7 +144,7 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
 
 3. Sélectionnez les options pour les tests de mise à jour des fonctionnalités.
    - Si **les mises à jour des fonctionnalités** sont sélectionnées dans le type de mise à jour du système d’exploitation, vous devez terminer les options suivantes.
-   - Pour **Insider Channel**, sélectionnez la Windows Canal programme Insider comme build sur laquelle vos packages doivent être testés. Nous utilisons actuellement des builds en version d’évaluation dans le **canal bêta Insider**.
+   - Pour **Insider Channel**, sélectionnez le canal Programme Windows Insider comme build sur laquelle vos packages doivent être testés. Nous utilisons actuellement des builds en version d’évaluation dans le **canal bêta Insider**.
    - Pour la **base de référence du système d’exploitation pour Insight**, sélectionnez la Windows version du système d’exploitation à utiliser comme base de référence pour comparer vos résultats de test.
 
    > [!div class="mx-imgBorder"]
@@ -145,7 +154,7 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
 
 ### <a name="step-5-review--publish"></a>Étape 5. Vérifier + publier
 
-1. Peut examiner toutes les informations de votre brouillon de package et vous pouvez revenir aux premières étapes pour apporter des modifications si nécessaire.
+1. Passez en revue toutes les informations pour vérifier l’exactitude et l’exactitude de votre brouillon de package. Pour apporter des corrections, vous pouvez revenir aux premières étapes où vous avez spécifié les paramètres en fonction des besoins.
 
    > [!div class="mx-imgBorder"]
    > ![Passer en revue le package](Media/testapplication15.png)
@@ -155,7 +164,10 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
    > [!div class="mx-imgBorder"]
    > ![Notification](Media/testapplication16.png)
 
-3. Une fois que vous vous êtes assuré que toutes les informations sont correctes, vous pouvez charger votre package dans la base de test en cliquant sur le bouton **« Publier** ». Une notification s’affiche lorsque le package a été publié avec succès.
+3. Lorsque vous avez terminé la finalisation de la configuration des données d’entrée, cliquez sur **Publier** pour charger votre package dans la base de test.  La notification qui suit s’affiche lorsque le package est correctement publié et qu’il est entré dans le processus de vérification.  
+
+   > [!NOTE]
+   > Le package doit être vérifié avant d’être accepté pour les tests futurs. La vérification peut prendre jusqu’à 24 heures, car elle inclut l’exécution du package dans un environnement de test réel. 
 
    > [!div class="mx-imgBorder"]
    > ![Invites de publication de package](Media/testapplication17.png)
@@ -165,28 +177,16 @@ Dans le [Portail Azure](https://portal.azure.com/), accédez au compte de base d
    > [!div class="mx-imgBorder"]
    > ![Gérer les packages](Media/testapplication18.png)
 
-### <a name="continue-package-creation"></a>Continuer la création du package
+   > [!NOTE]
+   > Une fois le processus de vérification terminé, l’état de vérification passe à Accepté. À ce stade, aucune autre action n’est requise. Votre package est acquis automatiquement pour l’exécution chaque fois que vos systèmes d’exploitation configurés disposent de nouvelles mises à jour. Si le processus de vérification échoue, votre package n’est pas prêt pour le test. Vérifiez les journaux et évaluez si des erreurs se sont produites. Vous devrez peut-être également vérifier les paramètres de configuration de votre package à la recherche de problèmes potentiels.
 
-Dans la page **Nouveau package** , vous pouvez voir la liste de tous vos packages brouillons précédemment enregistrés. Vous pouvez continuer votre modification directement à l’étape que vous avez suspendue la dernière fois en cliquant sur l’icône « Modifier ».
+### <a name="resume-creation-of-a-saved-draft-package"></a>Reprendre la création d’un package brouillon enregistré
+
+Si vous avez des packages brouillons précédents, vous pouvez afficher la liste de vos packages brouillons enregistrés sur la page **Nouveau package** . En cliquant sur l’icône de crayon **« Modifier »,** vous pouvez reprendre la modification du package que vous avez sélectionné à partir de l’emplacement où vous vous êtes arrêté, comme décrit dans la colonne **État** .
+
+> [!div class="mx-imgBorder"]
+> ![Page Nouveau package](Media/testapplication19.png)
 
 > [!NOTE]
-> Le tableau de bord affiche uniquement le package en cours d’exécution. Pour le package publié, vous pouvez consulter la page Gérer le package.
+> Le tableau de bord affiche uniquement les packages brouillons enregistrés. Pour afficher les packages publiés, vous devez accéder à la page Gérer les packages.
 
-> [!div class="mx-imgBorder"]
-> ![Page Gérer les packages](Media/testapplication19.png)
-
-### <a name="zip-upload-legacy-upload-experience"></a>Zip Télécharger (expérience de chargement héritée)
-
-Si vous disposez déjà d’un fichier Zip, vous pouvez revenir à l’expérience de chargement de package héritée (chargement zip). En savoir plus sur le chargement zip [Télécharger votre package | Microsoft Docs](uploadApplication.md).
-
-> [!div class="mx-imgBorder"]
-> ![package Télécharger](Media/testapplication01.png)
-
-> [!div class="mx-imgBorder"]
-> ![Expérience de chargement héritée](Media/testapplication21.png)
-
-### <a name="intunewin-upload-flow"></a>Intunewin Télécharger Flow
-
-Dans le cadre de la feuille de route commerciale, Test Base a commencé à prendre en charge le format intunewin pour les professionnels de l’informatique qui gèrent les applications pour leurs applications dans Intune en tant que format de package d’intégration standard. Le flux de chargement intunewin offre l’expérience permettant aux professionnels de l’informatique de réutiliser leurs packages de format intunewin, qui contiennent les applications qu’ils ont déployées sur leurs appareils finaux via MEM/Intune pour intégrer rapidement leurs applications et tester les configurations sur La base de test.
-
-[Testez votre application Intune sur la base de test.](testintuneapplication.md)

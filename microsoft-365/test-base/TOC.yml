@@ -12,7 +12,7 @@
       items:
         - name: Vue d’ensemble
           href: testoverview.md
-        - name: Tester vos fichiers binaires sur la base de test
+        - name: Création et test de fichiers binaires sur la base de test
           href: testapplication.md
         - name: Tester votre application Intune sur la base de test
           href: testintuneapplication.md

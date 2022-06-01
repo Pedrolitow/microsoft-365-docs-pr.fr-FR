@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9b2897a242f7dbbf9af9c9f3b639c0b91623fa25
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599252"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810613"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
@@ -43,6 +43,8 @@ Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques i
 
 **Flux de travail de gestion des risques internes** :
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Regardez la [vidéo Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sur la façon dont la gestion des risques internes et la conformité des communications fonctionnent ensemble pour réduire les risques liés aux données des utilisateurs de votre organisation.
 
 > [!IMPORTANT]
 > La gestion des risques internes est actuellement disponible dans les locataires hébergés dans des régions géographiques et des pays pris en charge par les dépendances du service Azure. Pour vérifier que la gestion des risques internes est prise en charge pour votre organisation, consultez [la disponibilité des dépendances Azure par pays/région](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -87,7 +89,7 @@ L’identification et la résolution des activités à risque internes et des pr
 
 ![Flux de travail de gestion des risques internes.](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>Stratégies
+### <a name="policies"></a>Politiques
 
 [Les stratégies de gestion des risques internes](insider-risk-management-policies.md) sont créées à l’aide de modèles et de conditions de stratégie prédéfinis qui définissent les événements déclencheurs et les indicateurs de risque examinés dans votre organisation. Ces conditions incluent la façon dont les indicateurs de risque sont utilisés pour les alertes, les utilisateurs inclus dans la stratégie, les services prioritaires et la période de surveillance.
 

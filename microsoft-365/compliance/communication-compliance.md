@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 36d3ca7d820d31843df535eddd6c253d0c1f951e
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599208"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810941"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
@@ -57,6 +57,8 @@ Pour obtenir les dernières présentations Ignite pour la conformité des commun
 Pour obtenir une vue d’ensemble rapide de la conformité des communications, consultez la vidéo [Détecter le harcèlement au travail et répondre avec la conformité des communications](https://youtu.be/z33ji7a7Zho) sur le [canal Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
 Découvrez comment [TD Securities utilise la conformité aux communications](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) pour répondre à ses obligations réglementaires et répondre à ses besoins en matière de sécurité et de stabilité.
+
+Regardez la [vidéo Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sur la façon dont la gestion des risques internes et la conformité des communications fonctionnent ensemble pour réduire les risques liés aux données des utilisateurs de votre organisation.
 
 Pour suivre les dernières mises à jour de conformité des communications, sélectionnez **Nouveautés** de la [conformité des communications](https://compliance.microsoft.com/) pour votre organisation.
 

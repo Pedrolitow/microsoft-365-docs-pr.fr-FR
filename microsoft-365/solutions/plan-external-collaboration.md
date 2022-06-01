@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez la différence entre la collaboration invité et les canaux partagés dans Teams et comment choisir celui à utiliser.
-ms.openlocfilehash: 09948b49d0c4f3e21d03c1e3994e4dd2d609ed13
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3a6bc5c7f0b07208e3543bfab9d1d5f0d51fc225
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465781"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811003"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planifier une collaboration externe avec des conversations de canal, une collaboration de fichiers et des applications partagées
 
@@ -130,7 +130,7 @@ Les administrateurs peuvent appliquer une [stratégie de rétention](/microsoft-
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-[Les étiquettes de confidentialité](/microsoft-365/compliance/sensitivity-labels) disponibles dans l’organisation hôte sont les seules étiquettes qui peuvent être appliquées aux documents dans un site de canal partagé. Un fichier chiffré par une étiquette de confidentialité ne peut pas être ouvert par des participants externes. L’étiquetage automatique n’est pas utilisé.
+[Les étiquettes de confidentialité](/microsoft-365/compliance/sensitivity-labels) disponibles dans l’organisation hôte sont les seules étiquettes qui peuvent être appliquées aux documents dans un site de canal partagé. Un fichier chiffré par une étiquette de confidentialité ne peut pas être ouvert par des participants externes, sauf si des autorisations sont accordées. L’étiquetage automatique n’est pas utilisé.
 
 Les canaux partagés et leurs sites SharePoint associés héritent de l’étiquette de l’équipe parente.
 

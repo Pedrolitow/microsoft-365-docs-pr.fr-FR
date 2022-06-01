@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites dans Microsoft 365 multigéographique.
-ms.openlocfilehash: a220e68e6dbe010f2eab6876dc2813dcd84d5d6d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 088d6cf861e70185162a74c0b2d9b029849125de
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130930"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810591"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuration eDiscovery dans Microsoft 365 Multi-Geo
 
@@ -26,7 +26,7 @@ Les [fonctionnalités eDiscovery (Premium)](../compliance/overview-ediscovery-20
 
 Sans fonctionnalités eDiscovery (Premium), un responsable eDiscovery ou un administrateur d’un locataire multigéographique ne pourra effectuer eDiscovery qu’à l’emplacement central de ce locataire. Pour prendre en charge la possibilité d’effectuer la découverte électronique pour les emplacements satellites, un nouveau paramètre de filtre de sécurité de conformité nommé « Region » est disponible via PowerShell. Ce paramètre peut être utilisé par les locataires dont l’emplacement central se trouve en Amérique du Nord, en Europe ou en Asie-Pacifique. eDiscovery (Premium) est recommandé pour les locataires dont l’emplacement central n’est pas dans Amérique du Nord, Europe ou Asie-Pacifique et qui doivent effectuer eDiscovery sur des emplacements géographiques satellites.
 
-L’administrateur général Microsoft 365 doit attribuer des autorisations eDiscovery Manager pour permettre à d’autres utilisateurs d’effectuer eDiscovery et d’affecter un paramètre « Region » dans leur filtre de sécurité de conformité applicable pour spécifier la région pour la réalisation d’eDiscovery en tant qu’emplacement satellite. Sinon, aucune découverte électronique n’est effectuée pour l’emplacement satellite. Un seul filtre de sécurité « Région » par utilisateur est pris en charge. Toutes les régions doivent donc se trouver à l’intérieur du même filtre de sécurité.
+L’administrateur général Microsoft 365 doit attribuer des autorisations eDiscovery Manager pour permettre à d’autres utilisateurs d’effectuer eDiscovery et d’affecter un paramètre « Region » dans leur filtre de sécurité de conformité applicable pour spécifier la région pour la réalisation d’eDiscovery en tant qu’emplacement satellite. Sinon, aucune découverte électronique n’est effectuée pour l’emplacement satellite. Un seul filtre de sécurité « Région » par utilisateur est pris en charge.
 
 Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplacement satellite particulier, ce gestionnaire ou cet administrateur eDiscovery peut uniquement effectuer des actions de recherche eDiscovery dans les sites SharePoint et OneDrive situés dans cet emplacement satellite. Si un gestionnaire ou un administrateur eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de l’emplacement satellite spécifié, aucun résultat n’est renvoyé. Par ailleurs, lorsque le gestionnaire ou l’administrateur eDiscovery d’un emplacement satellite déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Ainsi, les entreprises respectent les règles de conformité en interdisant l’exportation de contenu au-delà de frontières contrôlées.
 

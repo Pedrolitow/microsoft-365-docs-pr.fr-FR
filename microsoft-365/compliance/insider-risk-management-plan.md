@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ad69d525ac8cf105761286c59e8bce54d446ae8f
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599588"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810919"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -33,6 +33,8 @@ Regardez la vidéo ci-dessous pour découvrir comment le flux de travail de gest
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+Regardez la [vidéo Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) sur la façon dont la gestion des risques internes et la conformité des communications fonctionnent ensemble pour réduire les risques liés aux données des utilisateurs de votre organisation.
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Collaborer avec les parties prenantes de votre organisation
 
@@ -57,7 +59,7 @@ Selon la façon dont vous souhaitez gérer les stratégies et alertes de gestion
 
 Vous choisirez parmi ces options de groupe de rôles et actions de solution lorsque vous travaillez avec la gestion des risques internes :
 
-|**Actions**|**Gestion des risques internes**|**Administrateur de la gestion des risques internes**|**Analystes de la gestion des risques internes.**|**Enquêteurs sur la gestion des risques internes.**|**Auditeurs de gestion des risques internes**|
+|**Actions**|**Gestion des risques internes**|**Administration de gestion des risques internes**|**Analystes de la gestion des risques internes.**|**Enquêteurs sur la gestion des risques internes.**|**Auditeurs de gestion des risques internes**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | Configurer des stratégies et des paramètres | Oui | Oui | Non | Non | Non |
 | Access Analytics Insights | Oui | Oui | Oui | Non | Non |
@@ -68,9 +70,9 @@ Vous choisirez parmi ces options de groupe de rôles et actions de solution lors
 | Afficher & exporter les journaux d’audit | Oui | Non | Non | Non | Oui |
 
 >[!IMPORTANT]
->Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de rôles *Insider Risk Management* ou *Insider Risk Management Admin* (en fonction de l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
+>Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de *rôles Insider Risk Management* ou *Insider Risk Management Administration* (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
 
-Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes de rôles de gestion des risques internes et disposer des mêmes autorisations de solution que le groupe de rôles *Administrateur de la gestion des risques internes* :
+Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes de rôles de gestion des risques internes et disposer des mêmes autorisations de solution que le groupe de rôles *Insider Risk Management Administration* :
 
 - *administrateur général* Azure Active Directory
 - *administrateur de conformité* Azure Active Directory

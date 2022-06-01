@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 67ae082e61c3322c28031b2d20e99f4070389dd2
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: ce42709349e5d7464e1809df248c8055bdfaab30
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243027"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810985"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis, intégrés à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour point de terminaison dans Azure Commercial.
 
@@ -105,7 +105,7 @@ Windows 10, version 1809 (avec [KB4586839](https://support.microsoft.com/help/45
 Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1709|![Non.](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge|![Oui](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Remarque : [Déconseillé](/lifecycle/announcements/revised-end-of-service-windows-10-1709), veuillez mettre à niveau|![Non](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge
 Windows 10, version 1703 et antérieure|![Non.](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge|![Non](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge|![Non](images/svg/check-no.svg) <br /> Remarque : Ne sera pas prise en charge
-Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -139,10 +139,10 @@ Les versions de système d’exploitation suivantes sont prises en charge lors d
 
 Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 |
 
@@ -191,13 +191,17 @@ Voici les lacunes connues :
 
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Évaluations réseau|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Évaluations réseau|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
 |Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Rapports : Contrôle d’appareil, intégrité de l’appareil, Pare-feu|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
-|Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
-  
+|Rapports : Contrôle d’appareil, intégrité de l’appareil, Pare-feu|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|Filtrage du contenu web|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
+|Degré de sécurisation Microsoft|![Oui](images/svg/check-yes.svg) <sup>1</sup>|![Non](images/svg/check-no.svg) Non prise en charge|![Non](images/svg/check-no.svg) Non pris en charge|  
 
-Voici les fonctionnalités et les lacunes connues pour [Mobile Threat Defense (Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
+> [!NOTE]
+> <sup>1</sup> Bien que microsoft secure score soit disponible pour Cloud de la communauté du secteur public clients, certaines recommandations de sécurité ne sont pas disponibles.
+
+
+Voici les fonctionnalités et les lacunes connues pour [la défense contre les menaces mobiles (Microsoft Defender pour point de terminaison sur Android & iOS)](mtd.md) :
 
 <br />
 
@@ -206,11 +210,9 @@ Voici les fonctionnalités et les lacunes connues pour [Mobile Threat Defense (M
 |Nom de la fonctionnalité|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Protection web (indicateurs personnalisés et anti-hameçonnage)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Protection contre les programmes malveillants (Android uniquement)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
+|Protection contre les programmes malveillants (Android uniquement)|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|![Non](images/svg/check-no.svg) En développement|
 |Détection de jailbreak (iOS uniquement)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Accès conditionnel/lancement conditionnel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Prise en charge de la gestion des applications mobiles|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Contrôles de confidentialité|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Gestion des menaces et des vulnérabilités (TVM)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-  
-

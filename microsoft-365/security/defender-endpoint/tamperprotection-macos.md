@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d90fc636b4ca2c99313b40da61e94fe359c42ab
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 1a057f7b8342c7df0db63fd89604d518c1ef3a08
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679001"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810675"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger macOS paramètres de sécurité avec la protection contre les falsifications
 
@@ -342,7 +342,7 @@ Si l’exécution de la commande `mdatp health` indique que la protection contre
 ```console
 $ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 
-\[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabledmode: "block"
+
 ```
 
 Le mode doit être « block » (ou « audit »). Si ce n’est pas le cas, vous n’avez pas défini le mode de protection contre les falsifications par le biais de `mdatp config` la commande ou de Intune.
