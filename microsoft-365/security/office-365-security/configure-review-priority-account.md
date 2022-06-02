@@ -17,16 +17,16 @@ ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc37f1efa5eb633bc3b1b711302f9393d655a339
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: 7f240dd7f4679710859ffdeaccc6e935fa5f64e7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891839"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842340"
 ---
-# <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes prioritaires dans Microsoft Defender pour Office 365
+# <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes Priority dans Microsoft Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -40,7 +40,7 @@ Les comptes prioritaires sont plus souvent ciblés par des attaquants et sont g�
 
 La protection de compte prioritaire est activée par défaut pour les utilisateurs critiques pré-identifiés. Toutefois, l’administrateur de sécurité de votre organisation peut également activer la protection de compte prioritaire en procédant comme suit :
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **e-mail &** **protection du compte Priorité** de collaboration\>. Pour accéder directement à la page **de protection du compte Priority** , utilisez <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **e-mail &** protection **de compte Priorité** de collaboration\>. Pour accéder directement à la page **de protection du compte Priority** , utilisez <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
 2. Dans la page **Protection du compte Priority** , activez la **protection du compte Priority**.
 
@@ -50,9 +50,9 @@ La protection de compte prioritaire est activée par défaut pour les utilisateu
 > [!NOTE]
 > Nous vous déconseillons de désactiver ou de désactiver la protection de compte prioritaire.
 
-### <a name="enable-the-priority-account-tag"></a>Activer la balise de compte prioritaire
+### <a name="enable-the-priority-account-tag"></a>Activer la balise de compte Priority
 
-Microsoft Defender pour Office 365 prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées comme filtres dans les alertes, les rapports et les enquêtes.
+Microsoft Defender pour Office 365 prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées comme filtres dans les alertes, les rapports, les incidents, etc.
 
 Pour plus d’informations, consultez [les balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md).
 
@@ -60,9 +60,17 @@ Pour plus d’informations, consultez [les balises utilisateur dans Microsoft De
 
 Les effets de la protection de compte prioritaire sont visibles dans les fonctionnalités suivantes :
 
-- Rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report).
-- [Explorateur de menaces](threat-explorer.md)
-- Page [Entité e-mail](mdo-email-entity-page.md)
+- [Alertes](alerts.md)
+- [Stratégies d’alerte personnalisées](../../compliance/alert-policies.md#viewing-alerts)
+- [Explorateur de menaces et détections en temps réel](threat-explorer.md)
+- [Rapport utilisateur compromis](view-email-security-reports.md#compromised-users-report)
+- [Page de l’entité d’e-mail](mdo-email-entity-page.md#other-innovations)
+- [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
+- [Rapport des principaux expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report)
+- [Simulation d’attaque](attack-simulation-training.md#target-users)
+- [Vues de campagne](campaigns.md)
+- [Administration et soumissions d’utilisateurs](admin-submission.md)
+- [Mise en quarantaine](quarantine.md)
 
 ### <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 

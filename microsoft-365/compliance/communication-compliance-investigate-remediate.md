@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1afe62dcb7dabf55b48985354653b9418d0561
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0d9806d795b434c305869d8409518c462123dbdc
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971624"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842288"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -38,8 +38,8 @@ Une fois que vous avez configuré vos stratégies de conformité des communicati
 La première étape pour examiner les problèmes détectés par vos stratégies consiste à examiner les alertes de conformité des communications dans le portail de conformité Microsoft Purview. Il existe plusieurs domaines dans le domaine de la solution de conformité des communications pour vous aider à examiner rapidement les alertes, selon la façon dont vous préférez afficher le regroupement d’alertes :
 
 - **Page stratégie de conformité des communications** : lorsque vous vous connectez au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365, sélectionnez **Conformité des communications** pour afficher la page **stratégie** de conformité des communications. Cette page affiche les stratégies de conformité des communications configurées pour votre organisation Microsoft 365 et des liens vers les modèles de stratégie recommandés. Chaque stratégie répertoriée inclut le nombre d’alertes qui doivent être examinées, le nombre d’éléments escaladés et résolus, l’état de la stratégie et la date et l’heure de la dernière analyse de stratégie. La sélection d’une stratégie affiche toutes les alertes en attente pour les correspondances à la stratégie, une alerte spécifique pour lancer la page de détails de la stratégie et démarrer les actions de correction.
-- **Alertes** : accédez à **Communication** **complianceAlerts** >  pour afficher les 30 derniers jours d’alertes regroupées par correspondances de stratégie. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent la plupart des alertes classées par gravité. Pour démarrer les actions de correction, sélectionnez la stratégie associée à l’alerte pour lancer la page **de détails** de la stratégie. À partir de la page **Détails** de la stratégie, vous pouvez consulter un résumé des activités sur la page **Vue d’ensemble** , examiner et agir sur les messages d’alerte sur la page **En attente** , ou consulter l’historique des alertes fermées sur la page **Résolu** .
-- **Rapports** : accédez à **Communication** **complianceReports** >  pour afficher les widgets de rapport de conformité des communications. Chaque widget fournit une vue d’ensemble des activités et des états de conformité des communications, y compris l’accès à des informations plus approfondies sur les correspondances de stratégie et les actions de correction.
+- **Alertes** : accédez aux **alertes** de **conformité** >  des communications pour afficher les 30 derniers jours d’alertes regroupées par correspondances de stratégie. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent la plupart des alertes classées par gravité. Pour démarrer les actions de correction, sélectionnez la stratégie associée à l’alerte pour lancer la page **de détails** de la stratégie. À partir de la page **Détails** de la stratégie, vous pouvez consulter un résumé des activités sur la page **Vue d’ensemble** , examiner et agir sur les messages d’alerte sur la page **En attente** , ou consulter l’historique des alertes fermées sur la page **Résolu** .
+- **Rapports** : accédez aux rapports de **conformité** > **des** communications pour afficher les widgets de rapport de conformité des communications. Chaque widget fournit une vue d’ensemble des activités et des états de conformité des communications, y compris l’accès à des informations plus approfondies sur les correspondances de stratégie et les actions de correction.
 
 ### <a name="using-filters"></a>Utilisation de filtres
 
@@ -53,7 +53,7 @@ Les filtres de conformité des communications vous permettent de filtrer et de t
 
 Le tableau suivant décrit les détails du filtre :
 
-|**Filter**|**Détails**|
+|**Filtre**|**Détails**|
 |:-----|:-----|
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur de votre organisation. Pour filtrer une seule journée, sélectionnez une plage de dates qui commence par le jour pour lequel vous souhaitez obtenir des résultats et se termine par le jour suivant. Par exemple, si vous souhaitez filtrer les résultats pour le 20/09/2020, vous devez choisir une plage de dates de filtre du 20/09/2020 au 21/09/2020.|
 | **Classe de fichier** | Classe du message en fonction du type de message, *message* ou *pièce jointe*. |
@@ -147,7 +147,7 @@ Maintenant que vous avez examiné les détails du message pour l’alerte, vous 
 - **Notifier** : vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avis personnalisé à l’alerte et envoyer un avis d’avertissement à l’utilisateur. Choisissez le modèle d’avis approprié configuré dans la zone **Paramètres de conformité des** communications, puis sélectionnez **Envoyer** pour envoyer un rappel à l’utilisateur qui a envoyé le message et résoudre le problème.
 - **Escalade** : à l’aide du contrôle **Escalate** , vous pouvez choisir qui d’autre dans votre organisation doit passer en revue le message. Choisissez parmi une liste de réviseurs configurés dans la stratégie de conformité des communications pour envoyer une notification par e-mail demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien figurant dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés pour révision.
 - **Escalade pour investigation** : à l’aide de **l’instruction Escalate pour le contrôle d’investigation**, vous pouvez créer un [cas eDiscovery (Premium)](overview-ediscovery-20.md) pour les messages uniques ou multiples. Vous fournirez un nom et des notes pour le nouveau cas, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté en tant que consignateur de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne résout pas ou ne crée pas de balise pour le message. Vous pouvez sélectionner un total de 100 messages lors de la création d’un cas eDiscovery (Premium) pendant le processus de correction. Les messages dans tous les canaux de communication surveillés par la conformité des communications sont pris en charge. Par exemple, vous pouvez sélectionner 50 conversations Microsoft Teams, 25 Exchange Online messages électroniques et 25 messages Yammer lorsque vous ouvrez un nouveau cas eDiscovery (Premium) pour un utilisateur.
-- **Supprimer le message dans Teams** : à l’aide du **message Supprimer dans Teams** contrôle, vous pouvez bloquer les messages et le contenu inappropriés identifiés dans les alertes à partir de canaux Microsoft Teams et de conversations de groupe et 1:1. Les messages et le contenu supprimés sont remplacés par un conseil de stratégie qui explique qu’il est bloqué et la stratégie qui s’applique à sa suppression de la vue. Un lien est fourni aux destinataires dans le conseil de stratégie pour en savoir plus sur la stratégie applicable et le processus de révision. L’expéditeur reçoit un conseil de stratégie pour le message bloqué et le contenu, mais peut passer en revue les détails du message bloqué et du contenu pour le contexte concernant la suppression.
+- **Supprimer le message dans Teams** : à l’aide du **message Supprimer dans Teams** contrôle, vous pouvez bloquer les messages et le contenu inappropriés identifiés dans les alertes à partir de canaux Microsoft Teams et de conversations de groupe et 1:1. Cela inclut Teams messages de conversation signalés par les utilisateurs et les messages de conversation détectés à l’aide de stratégies de conformité de communication basées sur le machine learning et le classifieur. Les messages et le contenu supprimés sont remplacés par un conseil de stratégie qui explique qu’il est bloqué et la stratégie qui s’applique à sa suppression de la vue. Un lien est fourni aux destinataires dans le conseil de stratégie pour en savoir plus sur la stratégie applicable et le processus de révision. L’expéditeur reçoit un conseil de stratégie pour le message bloqué et le contenu, mais peut passer en revue les détails du message bloqué et du contenu pour le contexte concernant la suppression.
 
     ![Supprimez un message de Microsoft Teams.](../media/communication-compliance-remove-teams-message.png)
 
@@ -159,7 +159,7 @@ Les détails des messages peuvent être exportés ou téléchargés si vous deve
 
 [Microsoft Power Automate](/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux à partir de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez Power Automate flux pour la conformité des communications, vous pouvez automatiser les tâches importantes pour les alertes et les utilisateurs. Vous pouvez configurer Power Automate flux pour avertir les gestionnaires lorsque les utilisateurs ont des alertes de conformité des communications et d’autres applications.
 
-Les clients disposant d’abonnements Microsoft 365 qui incluent la conformité des communications n’ont pas besoin de licences Power Automate supplémentaires pour utiliser le modèle de conformité des communications par défaut recommandé Power Automate. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et couvrir les principaux scénarios de conformité des communications. Si vous choisissez d’utiliser des fonctionnalités premium Power Automate dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft Purview ou utilisez des modèles Power Automate pour d’autres domaines de conformité dans Microsoft Purview, vous aurez peut-être besoin de licences Power Automate supplémentaires.
+Les clients disposant d’abonnements Microsoft 365 qui incluent la conformité des communications n’ont pas besoin de licences Power Automate supplémentaires pour utiliser le modèle de conformité des communications par défaut recommandé Power Automate. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et couvrir les principaux scénarios de conformité des communications. Si vous choisissez d’utiliser des fonctionnalités premium Power Automate dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft Purview ou utilisez des modèles Power Automate pour d’autres domaines de conformité dans Microsoft Purview, vous aurez peut-être besoin de Power Automate  Licences.
 
 > [!IMPORTANT]
 > Recevez-vous des invites pour une validation de licence supplémentaire lors du test des flux Power Automate ? Votre organisation n’a peut-être pas encore reçu de mises à jour de service pour cette fonctionnalité en préversion. Les mises à jour sont en cours de déploiement et toutes les organisations disposant d’abonnements Microsoft 365 qui incluent la conformité des communications doivent disposer d’une prise en charge des licences pour les flux créés à partir des modèles de Power Automate recommandés d’ici le 30 octobre 2020.
@@ -179,7 +179,7 @@ Pour créer un flux Power Automate à partir d’un modèle par défaut recomman
 
 Effectuez les étapes suivantes pour créer un flux Power Automate à partir d’un modèle par défaut :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **Communication** **compliancePolicies** >  et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez aux **stratégies** de **conformité** >  des communications et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
 2. Dans la stratégie, sélectionnez l’onglet **En attente** , puis sélectionnez une alerte en attente.
 3. Sélectionnez **Power Automate** dans le menu d’action d’alerte.
 4. Dans la page **Power Automate**, sélectionnez un modèle par défaut dans les **modèles de conformité de communication que vous souhaitez peut-être** dans la page.
@@ -196,7 +196,7 @@ Par défaut, Power Automate flux créés par un utilisateur sont uniquement disp
 Pour partager un flux de Power Automate, vous devez être membre d’au moins un groupe de rôles de conformité des communications.
 Effectuez les étapes suivantes pour partager un flux de Power Automate :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **Communication** **compliancePolicies** >  et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez aux **stratégies** de **conformité** >  des communications et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
 2. Dans la stratégie, sélectionnez l’onglet **En attente** , puis sélectionnez une alerte en attente.
 3. Sélectionnez **Power Automate** dans le menu d’action d’alerte.
 4. Dans la page **Power Automate flux**, sélectionnez l’onglet **Mes flux** ou **Flux d’équipe**.
@@ -210,11 +210,11 @@ Si vous devez modifier un flux, vous allez utiliser le contrôle **Power Automat
 
 Effectuez les étapes suivantes pour modifier un flux Power Automate :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **Communication** **compliancePolicies** >  et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez aux **stratégies** de **conformité** >  des communications et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
 2. Dans la stratégie, sélectionnez l’onglet **En attente** , puis sélectionnez une alerte en attente.
 3. Sélectionnez **Power Automate** dans le menu d’action d’alerte.
 4. Dans la page **Power Automate flux**, sélectionnez flux à modifier. Sélectionnez **Modifier** dans le menu du contrôle de flux.
-5. Sélectionnez les **points de suspension** >  **Paramètres** pour modifier un paramètre de composant de flux ou **ellipsisDelete** >  pour supprimer un composant de flux.
+5. Sélectionnez les **points de suspension** >  **Paramètres** pour modifier un paramètre de composant de flux ou **des points** >  de suspension **Supprimer** pour supprimer un composant de flux.
 6. Sélectionnez **Enregistrer** , puis **Fermer** pour terminer la modification du flux.
 
 #### <a name="delete-a-power-automate-flow"></a>Supprimer un flux de Power Automate
@@ -223,7 +223,7 @@ Si vous devez supprimer un flux, vous utiliserez le contrôle **Power Automate**
 
 Effectuez les étapes suivantes pour supprimer un flux de Power Automate :
 
-1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **Communication** **compliancePolicies** >  et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez aux **stratégies** de **conformité** >  des communications et sélectionnez la stratégie avec l’alerte que vous souhaitez examiner.
 2. Dans la stratégie, sélectionnez l’onglet **En attente** , puis sélectionnez une alerte en attente.
 3. Sélectionnez **Power Automate** dans le menu d’action d’alerte.
 4. Dans la page **Power Automate flux**, sélectionnez flux à supprimer. Sélectionnez **Supprimer** dans le menu de contrôle de flux.

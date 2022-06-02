@@ -1,7 +1,6 @@
 ---
-title: Table AADSpnSignInEventsBeta dans le schéma de recherche avancé
-description: En savoir plus sur les informations associées Azure Active Directory du principal de service et de la table des événements de la signature d’identité gérée de l’entreprise.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
+title: Table AADSpnSignInEventsBeta dans le schéma de chasse avancé
+description: Découvrez les informations associées à la table des événements de connexion au principal de service et à l’identité managée de Azure Active Directory.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 77cf2d7b74dfc4ccea88661642579f5244e14089
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: b1b9d6405abdddea42652cfd4c532df91eeb6b30
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073675"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842211"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -31,9 +30,9 @@ ms.locfileid: "62073675"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de Azure Active Directory `AADSpnSignInEventsBeta` (AAD). Les clients doivent avoir une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de ce tableau. Microsoft déplacera finalement toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
+> La `AADSpnSignInEventsBeta` table est actuellement en version bêta et est proposée à court terme pour vous permettre de chasser les événements de connexion Azure Active Directory (AAD). Les clients doivent disposer d’une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de cette table. Microsoft finira par déplacer toutes les informations de schéma de connexion vers la `IdentityLogonEvents` table.
 
-Le tableau du schéma de recherche avancée contient des informations sur Azure Active Directory principal de service et les `AADSpnSignInEventsBeta` sign-ins d’identité gérée. Vous pouvez en savoir plus sur les différents types de Azure Active Directory dans les rapports d’activité de Azure Active Directory de la signature [- aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+La `AADSpnSignInEventsBeta` table du schéma de repérage avancé contient des informations sur Azure Active Directory principal de service et les connexions d’identité managée. Vous pouvez en savoir plus sur les différents types de connexions dans [Azure Active Directory rapports d’activité de connexion - préversion](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
@@ -48,21 +47,21 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |`Timestamp`|`datetime`|Date et heure de génération de l’enregistrement|
 |`Application`|`string`|Application qui a effectué l’action enregistrée|
 |`ApplicationId`|`string`|Identificateur unique de l’application|
-|`IsManagedIdentity`|`boolean`|Indique si la connectez-vous a été démarrée par une identité gérée|
-|`ErrorCode`|`int`|Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> .|
-|`CorrelationId`|`string`|Identificateur unique de l’événement de signature|
-|`ServicePrincipalName`|`string`|Nom du principal de service qui a démarré la signature|
-|`ServicePrincipalId`|`string`|Identificateur unique du principal de service qui a démarré la signature|
-|`ResourceDisplayName`|`string`|Nom d’affichage de la ressource accessible|
-|`ResourceId`|`string`|Identificateur unique de la ressource accessible|
-|`ResourceTenantId`|`string`|Identificateur unique du client de la ressource à accès|
-|`IPAddress`|`string`|Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées|
-|`Country`|`string`|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé|
-|`State`|`string`|État où la se connecte s’est produite, si disponible|
+|`IsManagedIdentity`|`boolean`|Indique si la connexion a été démarrée par une identité managée|
+|`ErrorCode`|`int`|Contient le code d’erreur en cas d’erreur de connexion. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes>.|
+|`CorrelationId`|`string`|Identificateur unique de l’événement de connexion|
+|`ServicePrincipalName`|`string`|Nom du principal de service qui a démarré la connexion|
+|`ServicePrincipalId`|`string`|Identificateur unique du principal de service qui a démarré la connexion|
+|`ResourceDisplayName`|`string`|Nom d’affichage de la ressource consultée|
+|`ResourceId`|`string`|Identificateur unique de la ressource consultée|
+|`ResourceTenantId`|`string`|Identificateur unique du locataire de la ressource consultée|
+|`IPAddress`|`string`|Adresse IP affectée au point de terminaison et utilisée lors des communications réseau associées|
+|`Country`|`string`|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisée|
+|`State`|`string`|État où la connexion s’est produite, le cas échéant|
 |`City`|`string`|Ville où se trouve l’utilisateur du compte|
-|`Latitude`|`string`|Coordonnées nord à sud de l’emplacement de la signature|
-|`Longitude`|`string`|Coordonnées est à ouest de l’emplacement de la signature|
-|`RequestId`|`string`|Identificateur unique de la demande|
+|`Latitude`|`string`|Coordonnées nord-sud de l’emplacement de connexion|
+|`Longitude`|`string`|Coordonnées est à ouest de l’emplacement de connexion|
+|`RequestId`|`string`|Identificateur unique de la requête|
 |`ReportId`|`string`|Identificateur unique de l’événement|
 ||||
 

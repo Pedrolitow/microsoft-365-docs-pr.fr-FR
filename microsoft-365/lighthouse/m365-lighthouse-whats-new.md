@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: 917c9bcf3629385d1440acc5205507b378da274b
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 8c054539b5a19e3259ca20a2044f498a3c8e31eb
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840508"
+ms.locfileid: "65842272"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -39,7 +39,7 @@ Nous avons donné une nouvelle apparence au volet de navigation gauche dans Micr
 
 ### <a name="enriched-user-details-pane"></a>Volet Des détails utilisateur enrichis
 
-Nous avons repensé le volet d’informations utilisateur pour inclure plus d’informations utilisateur et d’autres actions que vous pouvez effectuer pour mieux gérer les utilisateurs. Il a maintenant la même apparence que le volet des détails de l’utilisateur dans le Centre d'administration Microsoft 365. Pour accéder au volet d’informations utilisateur dans Microsoft 365 Lighthouse, sélectionnez **Utilisateurs** dans le volet de navigation gauche, puis sélectionnez **Rechercher des utilisateurs** ou **Utilisateurs à risque**. Sélectionnez n’importe quel utilisateur pour ouvrir le volet d’informations.
+Nous avons repensé le volet des détails de l’utilisateur pour inclure plus d’informations sur l’utilisateur et d’autres actions que vous pouvez effectuer pour mieux gérer les utilisateurs. Il a maintenant la même apparence que le volet des détails de l’utilisateur dans le Centre d'administration Microsoft 365. Pour accéder au volet d’informations utilisateur dans Microsoft 365 Lighthouse, sélectionnez **Utilisateurs** dans le volet de navigation gauche, puis sélectionnez **Rechercher des utilisateurs** ou **Utilisateurs à risque**. Sélectionnez n’importe quel utilisateur pour ouvrir le volet d’informations.
 
 ## <a name="april-2022"></a>Avril 2022
 
@@ -53,7 +53,7 @@ Pour en savoir plus, consultez [Vue d’ensemble des autorisations dans Microsof
 
 ### <a name="windows-365-business-integration-and-management-actions"></a>Windows 365 Affaires actions d’intégration et de gestion
 
-En fonction des commentaires des utilisateurs, nous avons intégré l’édition Windows 365 Affaires à Microsoft 365 Lighthouse. Cela vous aidera à gérer et à surveiller tous les PC cloud de vos clients à partir d’un emplacement unique. 
+En fonction des commentaires des utilisateurs, nous avons intégré Windows 365 Affaires dans Microsoft 365 Lighthouse. Cela vous aidera à gérer et à surveiller tous les PC cloud de vos clients à partir d’un emplacement unique. 
 
 En plus de l’intégration à Windows 365 Affaires PC cloud dans Microsoft 365 Lighthouse, vous pouvez désormais effectuer les actions de gestion suivantes :
 
@@ -65,13 +65,13 @@ Pour en savoir plus sur les nouvelles fonctionnalités, consultez [vue d’ensem
 
 ### <a name="microsoft-365-lighthouse-partner-amendment"></a>Microsoft 365 Lighthouse modification du partenaire
 
-Maintenant que Microsoft 365 Lighthouse est en disponibilité générale, nous demandons à nos partenaires actuels de signer une modification mise à jour Microsoft 365 Lighthouse partenaire. Tous les Microsoft 365 Lighthouse partenaires qui se sont inscrits au cours de la période de préversion seront invités à conclure ce nouvel accord dans les prochaines semaines. La saisie semi-automatique nécessite des droits d’administrateur général dans le locataire partenaire et doit être effectuée dans les 90 jours pour continuer à accéder au portail Microsoft 365 Lighthouse.
+Maintenant que Microsoft 365 Lighthouse est en disponibilité générale, nous demandons à nos partenaires actuels de signer une modification mise à jour Microsoft 365 Lighthouse partenaire. Tous les Microsoft 365 Lighthouse partenaires qui se sont inscrits pendant la période de préversion seront invités à finaliser ce nouvel accord dans les semaines à venir. La saisie semi-automatique nécessite des droits d’administrateur général dans le locataire partenaire et doit être effectuée dans les 90 jours pour continuer à accéder au portail Microsoft 365 Lighthouse.
 
 ## <a name="february-2022"></a>Février 2022
 
 ### <a name="granular-delegated-access-permissions-gdap-roles"></a>Rôles d’autorisations d’accès délégué granulaires (GDAP)
 
-Microsoft 365 Lighthouse inclut désormais la possibilité pour les MSP d’utiliser des rôles GDAP (Granular Delegated Access Permissions). Avec la dernière mise à jour, les MSP peuvent tirer parti des rôles GDAP pour leurs techniciens qui activent le principe de l’accès aux privilèges minimum dans Microsoft 365 Lighthouse. Cette fonctionnalité réduit les risques inhérents aux autorisations étendues du rôle DAP (Delegated Access Permissions) de l’agent Administration en activant des contrôles granulaires sur les données et les paramètres des clients que chaque technicien pourra utiliser.
+Microsoft 365 Lighthouse inclut désormais la possibilité pour les MSP d’utiliser des rôles GDAP (Granular Delegated Administration Privileges). Avec la dernière mise à jour, les MSP peuvent tirer parti des rôles GDAP pour leurs techniciens qui activent le principe de l’accès aux privilèges minimum dans Microsoft 365 Lighthouse. Cette fonctionnalité réduit les risques inhérents aux autorisations étendues du rôle DAP (Delegated Access Permissions) de l’agent Administration en activant des contrôles granulaires sur les données et les paramètres des clients que chaque technicien pourra utiliser.
 
 Pour en savoir plus sur GDAP dans Microsoft 365 Lighthouse, consultez [Configurer la sécurité du portail Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md).
 
@@ -83,11 +83,11 @@ Dans le cadre de l’étape de référence de conformité des appareils, nous av
 
 Microsoft 365 Lighthouse pouvez désormais tester les configurations de locataire pour les étapes de déploiement avec des stratégies d’accès conditionnel.  
 
-Cette nouvelle fonctionnalité fonctionne en détectant les stratégies existantes au sein des locataires que vous gérez et en les comparant à votre plan de déploiement. Microsoft 365 Lighthouse fournit ensuite des désignations d’état pour les étapes de déploiement et les processus d’étape de déploiement pour vous aider à comprendre quels processus de déploiement ont déjà été terminés, ceux qui doivent être traités et où les paramètres prescrits par le plan de déploiement sont égaux, manquants ou en conflit avec les paramètres inclus dans les stratégies existantes. La connaissance de ces informations facilite l’identification, la hiérarchisation et la résolution des conflits de stratégie plus rapidement, plus facilement et plus efficace.
+Cette nouvelle fonctionnalité détecte les stratégies existantes au sein des locataires clients que vous gérez et les compare à votre plan de déploiement. Microsoft 365 Lighthouse fournit ensuite des désignations d’état pour les étapes de déploiement et les processus d’étape de déploiement pour vous aider à comprendre quels processus de déploiement ont déjà été terminés, ceux qui doivent être traités et où les paramètres prescrits par le plan de déploiement sont égaux, manquants ou en conflit avec les paramètres inclus dans les stratégies existantes. La connaissance de ces informations facilite l’identification, la hiérarchisation et la résolution des conflits de stratégie plus rapidement, plus facilement et plus efficace.
 
 ### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Étape de déploiement pour configurer Pare-feu Microsoft Defender
 
-Microsoft 365 Lighthouse a ajouté l’étape configurer Pare-feu Microsoft Defender déploiement à sa ligne de base par défaut. Cette étape permet aux MSP de sécuriser les appareils de leur locataire par le biais de la configuration par défaut du pare-feu pour les appareils Windows 10 (et versions ultérieures). Pare-feu Microsoft Defender bloque le trafic réseau non autorisé entrant ou sortant des appareils de votre locataire et réduit le risque de menaces de sécurité réseau. Une fonctionnalité de règles Pare-feu Microsoft Defender est en cours de développement.
+Microsoft 365 Lighthouse a ajouté l’étape configurer Pare-feu Microsoft Defender déploiement à sa ligne de base par défaut. Cette étape permet aux MSP de sécuriser les appareils clients par le biais de la configuration par défaut du pare-feu pour les appareils Windows 10 (et ultérieurs). Pare-feu Microsoft Defender bloque le trafic réseau non autorisé entrant ou sortant des appareils clients et réduit le risque de menaces de sécurité réseau. Une fonctionnalité de règles Pare-feu Microsoft Defender est en cours de développement.
 
 Pare-feu Microsoft Defender est activé par défaut sur les appareils Windows 10 (et versions ultérieures). Si ce n’est pas configuré pour votre locataire client, procédez comme suit :
 
@@ -102,19 +102,19 @@ Nous rendons possible la gestion d’un plus grand nombre de vos clients dans Mi
 
 Pour plus d’informations, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-### <a name="support-for-advisor-customers"></a>Prise en charge des clients Conseiller
+### <a name="support-for-advisor-customers"></a>Prise en charge des clients advisor
 
-Nous avons modifié nos exigences d’intégration pour permettre aux locataires clients existants avec des relations Conseiller d’être intégrés à Microsoft 365 Lighthouse. Les clients disposant de contrats de revendeur et d’conseiller peuvent désormais se trouver dans Microsoft 365 Lighthouse s’ils remplissent les conditions requises pour les autorisations d’accès délégué, disposent des licences requises et ne dépassent pas le nombre maximal d’utilisateurs.
+Nous avons modifié nos exigences d’intégration pour permettre aux locataires clients existants avec des relations d’conseiller d’être intégrés à Microsoft 365 Lighthouse. Les clients disposant de contrats de revendeur et d’conseiller peuvent désormais se trouver dans Microsoft 365 Lighthouse s’ils remplissent les conditions requises pour les autorisations d’accès délégué, disposent des licences requises et ne dépassent pas le nombre maximal d’utilisateurs.
 
 Pour plus d’informations, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 ## <a name="january-2022"></a>Janvier 2022
 
-### <a name="capability-to-review-audit-logs-in-microsoft-365-lighthouse"></a>Possibilité d’examiner les journaux d’audit dans Microsoft 365 Lighthouse
+### <a name="capability-to-view-audit-logs-in-microsoft-365-lighthouse"></a>Possibilité d’afficher les journaux d’audit dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse inclut désormais la possibilité d’examiner les journaux d’audit. Vous pouvez passer en revue les actions passées pour rechercher des configurations incorrectes et des actions à risque pour la correction, le processus de support et l’enquête de sécurité, former les employés et répondre aux exigences de conformité et d’audit. Avec la dernière mise à jour, vous pouvez :
+Microsoft 365 Lighthouse inclut désormais la possibilité d’afficher les journaux d’audit. Vous pouvez passer en revue les actions passées pour rechercher des configurations incorrectes et des actions à risque pour la correction, le processus de support et l’enquête de sécurité, former les employés et répondre aux exigences de conformité et d’audit. Avec la dernière mise à jour, vous pouvez :
 
-- Affichez les journaux d’audit pour voir toutes les actions effectuées dans Microsoft 365 Lighthouse y compris ce qui a changé dans quels locataires client, quand et par qui.
+- Affichez les journaux d’audit pour voir toutes les actions effectuées dans Microsoft 365 Lighthouse, y compris ce qui a changé dans quel locataire client, quand il a été modifié et qui l’a modifié.
 - Recherchez et filtrez les journaux d’audit pour rechercher des informations spécifiques.
 - Exportez les journaux pour pouvoir les analyser et les conserver.
  
@@ -154,15 +154,15 @@ Vous pouvez désormais facilement afficher et comprendre les raisons du risque d
 
 ### <a name="capability-to-provide-feedback-on-microsoft-365-lighthouse"></a>Possibilité de fournir des commentaires sur Microsoft 365 Lighthouse
 
-Vos commentaires sont importants pour nous. Nous avons donc ajouté de nouvelles fonctionnalités de commentaires qui vous inviteront occasionnellement (au plus une fois par mois) à nous faire part de vos commentaires. Vous pouvez également fournir des commentaires à tout moment en sélectionnant l’icône Commentaires dans le coin supérieur droit de Microsoft 365 Lighthouse.
+Vos commentaires sont importants pour nous. Nous avons donc ajouté de nouvelles fonctionnalités de commentaires qui vous inviteront occasionnellement (au plus une fois par mois) à nous faire part de vos commentaires. Vous pouvez également fournir des commentaires à tout moment en sélectionnant l’icône de commentaires dans le coin supérieur droit de Microsoft 365 Lighthouse.
 
 ## <a name="september-2021"></a>Septembre 2021
 
 ### <a name="tenant-filter-changes"></a>Modifications du filtre de locataire
 
-Nous avons apporté des modifications à l’expérience de filtrage des locataires pour vous aider à afficher et gérer rapidement les locataires et les balises à partir de n’importe quelle page dans Microsoft 365 Lighthouse. Sélectionnez le filtre Locataires en haut de n’importe quelle page, puis parcourez ou entrez le nom du locataire ou de la balise sur lequel vous souhaitez filtrer.
+Nous avons apporté des modifications à l’expérience de filtrage des locataires pour vous aider à afficher et gérer rapidement les locataires et les balises à partir de n’importe quelle page dans Microsoft 365 Lighthouse. Sélectionnez le filtre **Locataires** en haut de n’importe quelle page, puis parcourez ou entrez le nom du locataire ou de la balise sur lequel vous souhaitez filtrer.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 ### <a name="in-product-email-workflows-to-communicate-with-users"></a>Flux de travail de messagerie dans le produit pour communiquer avec les utilisateurs 
 
@@ -186,7 +186,7 @@ Nous avons modifié nos exigences d’intégration pour vous permettre d’inté
 
 Pour plus d’informations sur les exigences, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="capability-to-add-custom-tags-to-customer-tenants"></a>Possibilité d’ajouter des balises personnalisées aux locataires du client
 
@@ -194,7 +194,7 @@ Vous pouvez maintenant créer et appliquer des balises personnalisées aux locat
 
 ### <a name="baselines-to-standardize-your-customer-tenant-deployments"></a>Bases de référence pour normaliser les déploiements de vos locataires clients
 
-Avec la nouvelle fonctionnalité de base de référence, vous pouvez désormais déployer des configurations standard liées à la sécurisation des utilisateurs, des appareils et des données de votre locataire client. La base de référence par défaut contient actuellement les étapes de déploiement suivantes (d’autres seront bientôt disponibles) : 
+Avec la nouvelle fonctionnalité des bases de référence, vous pouvez désormais déployer des configurations standard pour sécuriser les utilisateurs, les appareils et les données dans les locataires des clients. La base de référence par défaut contient actuellement les étapes de déploiement suivantes (d’autres seront bientôt disponibles) : 
 
 - Exiger l’authentification multifacteur pour les administrateurs 
 - Exiger l’authentification multifacteur pour les utilisateurs 
@@ -205,7 +205,7 @@ Avec la nouvelle fonctionnalité de base de référence, vous pouvez désormais 
 
 Pour suivre ces étapes de déploiement, sélectionnez **Locataires** dans le volet de navigation gauche dans Microsoft 365 phare, sélectionnez un locataire dans la liste des locataires, puis sélectionnez l’onglet **Plan de** déploiement. 
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="enhancements-to-tenants-page"></a>Page Améliorations apportées aux locataires
 

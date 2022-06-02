@@ -1,5 +1,5 @@
 ---
-title: À propos du rôle d’administrateur Exchange Online
+title: À propos du rôle Administrateur Exchange
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,19 +21,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange Online administrateurs gèrent la messagerie et les boîtes aux lettres de votre organisation et, par exemple, récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
-ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Exchange administrateurs gèrent la messagerie et les boîtes aux lettres de votre organisation et, par exemple, récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
+ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467095"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842254"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
+# <a name="about-the-exchange-administrator-role"></a>À propos du rôle Administrateur Exchange
 
-Pour vous aider à administrer Microsoft 365, vous pouvez [attribuer](assign-admin-roles.md) aux utilisateurs des autorisations pour gérer les courriers électroniques et les boîtes aux lettres de votre organisation à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
+Pour vous aider à administrer Microsoft 365, vous pouvez [attribuer](assign-admin-roles.md) aux utilisateurs des autorisations pour gérer les courriers électroniques et les boîtes aux lettres de votre organisation à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Pour ce faire, vous les attribuez au rôle d’administrateur Exchange.
   
- **Conseil** : Lorsque vous affectez une personne au rôle d’administrateur Exchange, affectez-la également au rôle d’administrateur de service. Il peut ainsi voir des informations importantes telles que l'état d'intégrité du service Exchange Online, ainsi que modifier et émettre des notifications dans le Centre d'administration Microsoft 365.
+> [!TIP]
+> Lorsque vous affectez une personne au rôle d’administrateur Exchange, nous vous recommandons de l’attribuer au rôle Administrateur du support technique. Il peut ainsi voir des informations importantes telles que l'état d'intégrité du service Exchange Online, ainsi que modifier et émettre des notifications dans le Centre d'administration Microsoft 365.
 
 Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés au rôle d’administrateur Exchange :
   
