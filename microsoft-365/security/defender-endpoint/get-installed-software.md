@@ -1,7 +1,7 @@
 ---
 title: Obtenir les logiciels installés
 description: Récupère une collection de logiciels installés liés à un ID d’appareil donné.
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, logiciels installés par appareil, api & gestion des vulnérabilités de menace, api tvm Microsoft Defender pour endpoint
+keywords: api, api graphe, api prises en charge, obtenir, lister, fichier, informations, inventaire logiciel, logiciels installés par appareil, api & gestion des vulnérabilités menaces, api Microsoft Defender pour point de terminaison tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a853a346b26d66708f81a1b8479cb7066c29745a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 97aa4a668306c4790dcd42c046ba4bf3a04bcf51
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282849"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840406"
 ---
 # <a name="get-installed-software"></a>Obtenir les logiciels installés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -42,7 +43,7 @@ Récupère une collection de logiciels installés liés à un ID d’appareil do
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -59,7 +60,7 @@ GET /api/machines/{machineId}/software
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -67,7 +68,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec les informations logicielles installées dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec les informations logicielles installées dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -103,5 +104,5 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités & des menaces basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel threat & Vulnerability](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

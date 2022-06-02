@@ -1,9 +1,9 @@
 ---
-title: Alertes du service des destinataires externes
+title: Alertes de service des destinataires externes
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: ''
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,54 +18,55 @@ ms.custom:
 - admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
-description: Utilisez les alertes du service des destinataires externes pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîte aux lettres.
-ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Utilisez des alertes de service de destinataires externes pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîtes aux lettres.
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2eac85b5a4b6f0f1c7c8737041edc9de50b5a074
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568003"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840450"
 ---
-# <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alertes de service pour les messages en attente de remise à des destinataires externes dans Exchange Online surveillance
+# <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alertes de service pour les messages en attente de remise aux destinataires externes dans Exchange Online surveillance
 
-Les alertes de service informent les administrateurs de la file d’envoi de messages à des destinataires externes en dehors Exchange Online. Ces alertes peuvent nécessiter des actions de correction en dehors de Microsoft, mais elles peuvent vous fournir les informations nécessaires à la correction.
+Les alertes de service informent les administrateurs de la mise en file d’attente de courrier aux destinataires externes en dehors de Exchange Online. Ces alertes peuvent nécessiter des actions de correction en dehors de Microsoft, mais elles peuvent vous fournir les informations nécessaires pour y remédier.
 
-Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service,<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  >  État des services **Exchange Online** puis cliquez sur **l’onglet Problèmes** actifs. Le nom de ces alertes de service est « Message Queueing to External Recipients Above Thresholds ».
+Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, accédez à **Health** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**État des services**</a> >  **Exchange Online**, puis cliquez sur l’onglet **Problèmes actifs**. Le nom de ces alertes de service est « File d’attente de messages vers des destinataires externes au-dessus des seuils ».
 
-![Alerte de service pour les messages en attente de remise à des destinataires externes affichés dans Exchange Online tableau de bord de surveillance.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
+![Alerte de service pour les messages en attente de remise aux destinataires externes affichés dans le tableau de bord de surveillance Exchange Online.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 
-Lorsque vous double-cliquez sur l’alerte de service, une page volante semblable à la suivante s’affiche.
+Lorsque vous double-cliquez sur l’alerte de service, une page de menu volant similaire à ce qui suit s’affiche.
 
-![Contenu de l’alerte de service pour les messages en attente de remise à des destinataires externes.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts2.png)
+![Contenu de l’alerte de service pour les messages en attente de remise aux destinataires externes.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts2.png)
 
 ## <a name="what-do-these-service-alerts-indicate"></a>Qu’indiquent ces alertes de service ?
 
-Les alertes de service pour les messages en attente de remise à des destinataires externes vous informent que les messages destinés à des destinataires en dehors de la Exchange Online peuvent être retardés. La file d’attente des messages peut être causée par votre environnement local ou par une solution de messagerie ou de journaling tierce.
+Les alertes de service pour les messages en attente de remise aux destinataires externes vous informent que les messages destinés aux destinataires en dehors de Exchange Online peuvent être retardés. La mise en file d’attente des messages peut être due à votre environnement local ou à une solution de messagerie ou de journalisation tierce.
 
-Voici quelques raisons courantes de mettre des messages en file d’attente à des destinataires externes. Toutefois, les problèmes à l’origine de ces alertes de service peuvent ne pas être limités à ces raisons.
+Voici quelques raisons courantes pour mettre en file d’attente des messages vers des destinataires externes. Toutefois, les problèmes à l’origine de ces alertes de service peuvent ne pas être limités à ces raisons.
 
 - Modifications DNS
 
 - Taux d’envoi excessifs
 
-- Agents de transfert de messages (MTA) locaux ou solutions de journaling avec un espace disque faible à nul
+- Agents de transfert de messages locaux (MTA) ou solutions de journalisation avec peu ou pas d’espace disque libre
 
-- MTAs dans la backpressure
+- MtAs in backpressure
 
 - Problèmes réseau, y compris les équilibreurs de charge
 
 - Problèmes de certificat
 
-Chaque alerte de service contient des recommandations de haut niveau pour résoudre le problème. L’alerte de service indique également le nombre de messages mis en file d’attente au moment de l’alerte, le domaine vers lequel les messages sont mis en file d’attente et le code d’erreur SMTP associé à la plupart des messages en file d’attente.
+Chaque alerte de service contient des recommandations générales pour résoudre le problème. L’alerte de service indique également le nombre de messages mis en file d’attente au moment de l’alerte, le domaine vers lequel les messages sont mis en file d’attente et le code d’erreur SMTP associé à la plupart des messages en file d’attente.
 
-Pour plus d’informations sur la détermination de la cause première de ces alertes de service, voir [l’intelligence du flux de messagerie dans Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). Cet article inclut également des suggestions d’actions pour résoudre la cause première.
+Pour plus d’informations sur la détermination de la cause racine de ces alertes de service, consultez [l’intelligence du flux de courrier dans Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). Cet article inclut également des actions suggérées pour corriger la cause racine.
 
 > [!NOTE]
-> Microsoft ne peut pas tenir compte de chaque code d’erreur SMTP fourni par des fournisseurs tiers. Par conséquent, les administrateurs peuvent être tenus d’examiner les codes d’erreur spécifiques à leur MTA ou solutions de journaling utilisées par leur organisation.
+> Microsoft ne peut pas tenir compte de chaque code d’erreur SMTP fourni par des fournisseurs tiers. Par conséquent, les administrateurs peuvent être tenus d’examiner les codes d’erreur spécifiques à leurs solutions MTA ou de journalisation utilisées par leur organisation.
 
 ## <a name="more-information"></a>Plus d’informations
 
-Si votre organisation a récemment créé ou modifié des connecteurs de flux de messagerie dans votre organisation Exchange Online ou sur site, consultez les articles suivants pour plus d’informations.
+Si votre organisation a récemment créé ou modifié des connecteurs de flux de messagerie dans votre organisation locale ou Exchange Online, consultez les articles suivants pour plus d’informations.
 
 - [Configurer le flux de messagerie à l’aide de connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
@@ -77,4 +78,4 @@ Si votre organisation a récemment créé ou modifié des connecteurs de flux de
 
 - [Informations sur les files d’attente dans le tableau de bord de flux de messagerie](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues#queues-insight-in-the-mail-flow-dashboard)
 
-- [Suivre un message électronique dans Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+- [Trace d’un e-mail dans Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)

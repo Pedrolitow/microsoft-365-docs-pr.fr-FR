@@ -20,16 +20,16 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la formation de simulation d’attaque pour exécuter des attaques par hameçonnage et par mot de passe simulées dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 255d0f40cd360f2b4b3e5084f84989bdbe643319
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79c8db9a088484a56e559ab4c3e33d68ebf33380
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415615"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840142"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Démarrage à l’aide de l’entraînement de simulation d’attaque dans Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à** [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
@@ -121,7 +121,7 @@ Pour obtenir des instructions pas à pas sur la création et l’envoi d’une s
 
 ### <a name="create-a-payload"></a>Créer une charge utile
 
-Pour obtenir des instructions pas à pas sur la création d’une charge utile à utiliser dans une simulation, consultez [Créer une charge utile personnalisée pour l’entraînement de simulation d’attaque](attack-simulation-training-payloads.md).
+Pour obtenir des instructions pas à pas sur la création d’une charge utile à utiliser dans une simulation, consultez [Créer une charge utile personnalisée pour l’entraînement de simulation d’attaque](attack-simulation-training-payloads.md#create-payloads).
 
 ### <a name="gaining-insights"></a>Obtenir des insights
 

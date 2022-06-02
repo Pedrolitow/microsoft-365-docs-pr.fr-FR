@@ -18,16 +18,16 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f09054a4ee57ce7105a7b2daffc65be5b91dc8f6
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144792"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839665"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres de message signalés par l’utilisateur
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,7 +40,7 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online, v
 - [Complément Report Phishing](enable-the-report-phish-add-in.md)
 - [Outils de création de rapports tiers](#third-party-reporting-tools)
 
-La remise de messages signalés par l’utilisateur à une boîte aux lettres personnalisée plutôt que directement à Microsoft permet à vos administrateurs de signaler manuellement et de manière sélective les messages à Microsoft à l’aide de la [soumission d’administrateur](admin-submission.md). Ces paramètres étaient auparavant appelés stratégie d’envoi d’utilisateurs.
+La remise de messages signalés par l’utilisateur à une boîte aux lettres personnalisée plutôt que directement à Microsoft permet à vos administrateurs de signaler manuellement et de manière sélective les messages à Microsoft à l’aide [de Administration soumission](admin-submission.md). Ces paramètres étaient auparavant appelés stratégie d’envoi d’utilisateurs.
 
   > [!NOTE]
   > Si la création de rapports a été [désactivée dans Outlook sur le web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l’activation des messages signalés par l’utilisateur ici remplace ce paramètre et permet aux utilisateurs de signaler à nouveau des messages dans Outlook sur le web.
@@ -49,17 +49,15 @@ La remise de messages signalés par l’utilisateur à une boîte aux lettres pe
 
 Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur soient envoyés à votre boîte aux lettres personnalisée :
 
-- Ignorez le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de courrier exchange pour définir le niveau de confiance du courrier indésirable. Consultez [Utiliser le caE pour créer une règle de flux de courrier qui définit la liste SCL d’un message](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) pour définir la liste de contrôle d’accès pour **contourner le filtrage du courrier indésirable**.
+- [Identifier la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps dans la stratégie de remise avancée](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [Créez une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) qui inclut la boîte aux **lettres** personnalisée dans laquelle le vidage automatique de zéro heure (ZAP) pour les programmes malveillants est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
-
-- [Créez une stratégie anti-courrier indésirable](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) qui inclut la boîte aux lettres personnalisée dans laquelle ZAP pour le courrier indésirable et ZAP pour le hameçonnage sont désactivés (la section \>**Zéro heure de vidage automatique** Activé pour le **vidage automatique à zéro heure (ZAP)** n’est pas sélectionnée.
+- [Créez une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) pour la boîte aux **lettres** personnalisée où le vidage automatique de zéro heure (ZAP) pour les programmes malveillants est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
 
 Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les utilisateurs qui signalent des messages :
 
-- [Créez une stratégie de liens Coffre](set-up-safe-links-policies.md) qui inclut la boîte aux lettres personnalisée dans laquelle Coffre l’analyse des liens est désactivée (**sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** la section \> **Messages désactivée**).
+- [Créez une stratégie de liens Coffre](set-up-safe-links-policies.md) pour la boîte aux lettres personnalisée où Coffre l’analyse des liens est désactivée (**sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** la section \> **Messages désactivés**).
 
-- [Créez une stratégie de Coffre pièces jointes](set-up-safe-attachments-policies.md) qui inclut la boîte aux lettres personnalisée dans laquelle Coffre’analyse des pièces jointes est désactivée (Coffre section \>**Réponse aux programmes malveillants inconnus des pièces jointes** **désactivée**).
+- [Créez une stratégie de Coffre pièces jointes](set-up-safe-attachments-policies.md) pour la boîte aux lettres personnalisée où Coffre l’analyse des pièces jointes est désactivée (Coffre section \> Réponse **aux programmes malveillants inconnus des pièces jointes** **désactivée**).
 
 Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes les conditions préalables applicables, vous pouvez utiliser les procédures décrites dans cet article pour configurer la boîte aux lettres des soumissions d’utilisateurs.
 
@@ -147,7 +145,7 @@ Si vous souhaitez spécifier la raison signalée des messages joints d’origine
 - 2| ou non indésirable :
 - 3| ou hameçonnage :
 
-Par exemple :
+Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

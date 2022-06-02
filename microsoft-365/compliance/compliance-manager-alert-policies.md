@@ -1,5 +1,5 @@
 ---
-title: Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview
+title: Microsoft Purview les alertes et les stratégies d’alerte du Gestionnaire de conformité
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,21 +17,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment créer des alertes pour les activités dans le Gestionnaire de conformité Microsoft Purview qui peuvent avoir un impact sur votre score de conformité.
-ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: Découvrez comment créer des alertes pour les activités dans Microsoft Purview Gestionnaire de conformité qui peuvent avoir un impact sur votre score de conformité.
+ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231734"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839446"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview les alertes et les stratégies d’alerte du Gestionnaire de conformité
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez comment **définir des alertes** pour certaines activités dans le Gestionnaire de conformité, comment gérer les alertes et comment **créer des stratégies d’alerte** pour définir des conditions d’alerte.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 Le Gestionnaire de conformité peut vous avertir des modifications dès qu’elles se produisent afin que vous puissiez suivre vos objectifs de conformité. Par exemple, vous pouvez configurer des alertes pour vous informer quand la valeur de score d’une action d’amélioration a augmenté ou diminué en raison d’un changement de configuration dans votre locataire, ou lorsqu’une action d’amélioration a été affectée à un utilisateur pour effectuer un travail d’implémentation ou de test. Affichez les [types d’événements](#create-an-alert-policy) pour lesquels vous pouvez créer des alertes.
 
 Pour créer des alertes, vous devez d’abord configurer une stratégie d’alerte pour décrire les conditions qui déclenchent une alerte et la fréquence des notifications. Lorsque nous détectons une correspondance avec vos conditions de stratégie, vous recevez une notification par e-mail avec des détails afin que vous puissiez déterminer s’il faut examiner ou prendre d’autres mesures.
@@ -67,19 +67,19 @@ Pour commencer à utiliser des alertes, consultez [Affichage et gestion des aler
 
 Le tableau ci-dessous décrit les utilisateurs qui peuvent créer et modifier des alertes et des stratégies d’alerte en fonction de leur type de rôle. En plus d’avoir un rôle gestionnaire de conformité, les utilisateurs ont également besoin d’un rôle Azure AD comme suit :
 
-- Rôle **lecteur Sécurité** dans Azure AD pour afficher les alertes et les stratégies d’alerte
-- Rôle **Administrateur de la sécurité** dans Azure AD pour la création ou la mise à jour des stratégies d’alerte
+- Pour afficher les alertes et les stratégies d’alerte : rôle **lecteur Sécurité** dans Azure AD
+- Pour créer ou mettre à jour des stratégies d’alerte : **rôle d’administrateur de conformité**, **d’administrateur des données de conformité**, **d’administrateur de sécurité** ou d’opérateur **de sécurité** dans Azure AD
  
 En savoir plus sur les [rôles Azure dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
-| Rôle | Peut créer et modifier des stratégies | Peut modifier des alertes | 
+| Role | Peut créer et modifier des stratégies | Peut modifier des alertes | 
 | :------------- | :-------------: | :------------: |
 | **Administration du Gestionnaire de conformité**| Oui  | Oui | 
 | **Évaluateur du Gestionnaire de conformité**| Oui | Oui | 
-| **Contribution du Gestionnaire de conformité**| Oui | Oui | 
-| **Administrateur général**| Oui | Oui  | 
+| **Contributeur du Gestionnaire de conformité**| Oui | Oui | 
 | **Lecteur du Gestionnaire de conformité**| Non | Non | 
+| **Administrateur général**| Oui | Oui | 
 
 Découvrez comment [définir des autorisations utilisateur et attribuer des rôles pour le Gestionnaire de conformité](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -105,7 +105,7 @@ Voici les paramètres de la stratégie par défaut :
 
 - Le niveau de gravité de ces alertes est **moyen**.
 
-- L’administrateur général de votre organisation est le destinataire par défaut des notifications d’alerte.
+- La Administration globale de votre organisation est le destinataire par défaut des notifications d’alerte.
 
 - Vous pouvez ajouter d’autres destinataires d’alerte en procédant comme suit :
     - Dans la page **Stratégies d’alerte** , recherchez la stratégie d’alerte **par défaut du Gestionnaire de conformité**.

@@ -1,7 +1,7 @@
 ---
-title: Obtenir les ko manquants par ID d’appareil
+title: Obtenir les bases de connaissances manquantes par ID d’appareil
 description: Récupère les mises à jour de sécurité manquantes par ID d’appareil
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
+keywords: api, api graphe, api prises en charge, get, list, file, information, device id, threat & gestion des vulnérabilités api, Microsoft Defender pour point de terminaison tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,19 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 639e8ea84bd2d7e919ceedaa7eae785da75734ed
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 4a570851263b6a52193353e2c229e2df47b677e3
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300213"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840296"
 ---
-# <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d’appareil
+# <a name="get-missing-kbs-by-device-id"></a>Obtenir les bases de connaissances manquantes par ID d’appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** 
+**S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/index.yml)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -35,7 +37,7 @@ ms.locfileid: "61300213"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Récupère les ko manquants (mises à jour de sécurité) par ID d’appareil
+Récupère les bases de connaissances manquantes (mises à jour de sécurité) par ID d’appareil
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -44,17 +46,17 @@ GET /api/machines/{machineId}/getmissingkbs
 ```
 ## <a name="permissions"></a>Autorisations
 
-L’autorisation suivante est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison.](apis-intro.md)
+L’autorisation suivante est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md).
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
 Application | Software.Read.All | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 
-## <a name="request-header"></a>En-tête de demande
+## <a name="request-header"></a>En-tête de requête
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -62,7 +64,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec les données kb du périphérique spécifié manquantes dans le corps.
+Si elle réussit, cette méthode retourne 200 OK, avec les données kb de l’appareil spécifiées dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -101,5 +103,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités & des menaces basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel threat & Vulnerability](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des e-mails de notification de l’utilisateur final pour la formation de simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 35d3943580c232a80c400b2fe4dd07dfa88123a2
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: b26c8060fb869ea9e02ab06396a5a91281bcf3f0
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759783"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839266"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Automatisations de charge utile pour la formation à la simulation d’attaque
 
@@ -79,9 +79,14 @@ Dans le menu volant des détails de l’onglet **Notifications du locataire** un
 
 ## <a name="create-end-user-notifications"></a>Créer des notifications d’utilisateur final
 
-Sous l’onglet **Notifications du locataire** , vous pouvez cliquer sur ![Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant Notification de l’utilisateur final.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à l’onglet \> **e-mail & bibliothèque** de **contenu simulation** de **simulation** \> d’attaque de collaboration\>, puis sélectionnez **notifications de l’utilisateur final**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **les notifications de l’utilisateur final**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-1. Dans la page **Définir les détails** **, configurez les paramètres suivants :
+2. Sous l’onglet **Notifications du locataire** , cliquez sur ![Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant notification de l’utilisateur final.
+
+   > [!NOTE]
+   > À tout moment pendant l’Assistant Création, vous pouvez cliquer sur **Enregistrer et fermer** pour enregistrer votre progression et continuer à configurer la notification ultérieurement. Vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant la notification sous l’onglet **Notifications du locataire** dans **les notifications de l’utilisateur final**, puis en cliquant sur ![l’icône Modifier l’automatisation.](../../media/m365-cc-sc-edit-icon.png) **Modifier l’automatisation**. La notification partiellement terminée aura la valeur **d’état** **Draft**.
+
+3. Dans la page **Définir les détails** **, configurez les paramètres suivants :
    - **Sélectionnez le type de notification** : sélectionnez l’une des valeurs suivantes :
      - **Notification de renforcement positif**
      - **Notification de simulation**
@@ -92,7 +97,7 @@ Sous l’onglet **Notifications du locataire** , vous pouvez cliquer sur ![Crée
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-2. Dans la page **Définir le contenu** , le seul paramètre disponible est le bouton **Ajouter du contenu dans le langage métier** . Lorsque vous cliquez dessus, un menu volant **Ajouter du contenu dans la langue par défaut** s’affiche et contient les paramètres suivants :
+4. Dans la page **Définir le contenu** , le seul paramètre disponible est le bouton **Ajouter du contenu dans le langage métier** . Lorsque vous cliquez dessus, un menu volant **Ajouter du contenu dans la langue par défaut** s’affiche et contient les paramètres suivants :
    - **À partir du nom d’affichage**
    - **À partir de l’adresse e-mail**
    - **Sélectionnez la langue de l’e-mail** : sélectionnez une langue dans la liste.
@@ -131,7 +136,7 @@ Sous l’onglet **Notifications du locataire** , vous pouvez cliquer sur ![Crée
 
    Lorsque vous avez terminé, cliquez sur **Suivant**
 
-3. Dans la page **De notification de révision** , vous pouvez consulter les détails de votre notification.
+5. Dans la page **De notification de révision** , vous pouvez consulter les détails de votre notification.
 
    Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
@@ -153,7 +158,7 @@ Pour modifier une notification personnalisée existante sous l’onglet Notifica
 - Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![l’icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
 - Sélectionnez la notification dans la liste en cliquant n’importe où dans la ligne, à l’exception de la case à cocher. Dans le menu volant d’informations qui s’ouvre, cliquez sur **Modifier la notification**.
 
-L’Assistant Notification de l’utilisateur final s’ouvre avec les paramètres et les valeurs de la page de notification sélectionnée. Les étapes Tthe sont les mêmes que celles décrites dans la section [Créer des notifications de l’utilisateur final](#create-end-user-notifications) .
+L’Assistant Notification de l’utilisateur final s’ouvre avec les paramètres et les valeurs de la notification sélectionnée. Les étapes sont les mêmes que celles décrites dans la section [Créer des notifications de l’utilisateur final](#create-end-user-notifications) .
 
 ## <a name="copy-end-user-notifications"></a>Copier les notifications de l’utilisateur final
 
@@ -180,7 +185,7 @@ Pour supprimer une notification personnalisée existante de l’onglet Notificat
 - Sélectionnez la notification dans la liste en cochant la case, puis cliquez sur l’icône ![Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Icône Supprimer** qui s’affiche.
 - Cliquez sur **⋮** (**Actions**) entre les valeurs **Notifications** et **Langue** de la notification dans la liste, puis sélectionnez ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**.
 
-## <a name="related-links"></a>Liens associés
+## <a name="related-links"></a>Liens connexes
 
 [Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 

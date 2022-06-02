@@ -1,5 +1,7 @@
 - name: Microsoft 365 Lighthouse
   items:
+    - name: Nouveautés de Microsoft 365 Lighthouse
+      href: m365-lighthouse-whats-new.md
     - name: Vue d’ensemble de Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
     - name: Conditions requises pour Microsoft 365 Lighthouse

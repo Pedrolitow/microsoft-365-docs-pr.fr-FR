@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent découvrir comment la formation à la simulation d’attaque dans le portail Microsoft 365 Defender affecte les utilisateurs et peut obtenir des insights à partir des résultats de la simulation et de l’entraînement.
 ms.technology: mdo
-ms.openlocfilehash: 72ed46d1676f4abd97ecd4fccfe4ef20d971f0b3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: fb08de05e0a1f31187fc4dd045d0f1ce45db2aea
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649450"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839363"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Informations et rapports pour l’entraînement de simulation d’attaque dans Defender pour Office 365
 
@@ -226,7 +226,7 @@ Si vous pointez sur un point de données dans le graphique, les valeurs réelles
 
 Le tableau des détails sous le graphique affiche les informations suivantes :
 
-- **Utilisateur**
+- **User**
 - **Nombre de répétitions**
 - **Types de simulation**
 - **Simulations**
@@ -306,4 +306,4 @@ La section **Actions recommandées** de la page détails de la simulation affich
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md)
+[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md#create-payloads)

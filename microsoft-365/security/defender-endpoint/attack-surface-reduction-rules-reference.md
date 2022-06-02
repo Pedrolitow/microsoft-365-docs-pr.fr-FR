@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772509"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838866"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -48,7 +48,7 @@ Cet article fournit des informations sur les règles de réduction des attaques 
   - Descriptions des règles
   - Noms des règles du système de gestion de la configuration
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles actuellement publiées en disponibilité générale. Les règles sont répertoriées par ordre alphabétique dans ce tableau.
 
@@ -199,7 +199,7 @@ La règle **bloquer l’abus de pilotes signés vulnérables exploités** n’em
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-nom Intune : `Block abuse of exploited vulnerable signed drivers` (pas encore disponible)
+nom Intune :`Block abuse of exploited vulnerable signed drivers`
 
 nom Configuration Manager : non encore disponible
   

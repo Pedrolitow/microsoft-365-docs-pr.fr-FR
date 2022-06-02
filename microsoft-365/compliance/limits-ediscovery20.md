@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 5b83cd578b8975dd0185fb2902357c2f0c201043
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0c288b1d30fa668446421db547e2595f3385cbb7
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772695"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839305"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 
@@ -35,8 +35,8 @@ Le tableau suivant répertorie les limites des cas et examine les ensembles dans
 
 |Description de la limite|Limite|
 |---|---|
-|Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).|3 millions|
-|Taille totale du fichier par jeu de charge. Cela inclut le chargement de non-Office 365 dans un jeu de révision.|300 Go|
+|Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).|Jusqu’à 40 millions (nouveau format de casse)|
+|Taille totale du fichier par jeu de charge. Cela inclut le chargement de non-Office 365 dans un jeu de révision.|Jusqu’à 1 To (nouveau format de casse)|
 |Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/>|2 To|
 |Nombre maximal de jeux de charge par cas.|200 |
 |Nombre maximal d’ensembles de révision par cas.|20|

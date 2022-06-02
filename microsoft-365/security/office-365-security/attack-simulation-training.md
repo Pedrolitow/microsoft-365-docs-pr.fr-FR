@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739646"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839752"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec l’entraînement de simulation d’attaque dans Defender pour Office 365
 
@@ -123,7 +123,7 @@ Si vous sélectionnez une charge utile dans la liste, les détails sur la charge
 
 Si vous sélectionnez une charge utile dans la liste en cliquant sur le nom, une ![icône Envoyer une charge utile de test.](../../media/m365-cc-sc-create-icon.png) **Le bouton Envoyer un test** s’affiche sur la page principale, où vous pouvez vous envoyer une copie de l’e-mail de charge utile (l’utilisateur actuellement connecté) à des fins d’inspection.
 
-Pour créer votre propre charge utile, cliquez sur ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **Créez une charge utile**. Pour plus d’informations, consultez [Créer des charges utiles personnalisées pour l’entraînement de simulation d’attaque](attack-simulation-training-payloads.md).
+Pour créer votre propre charge utile, cliquez sur ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **Créez une charge utile**. Pour plus d’informations, consultez [Créer des charges utiles personnalisées pour l’entraînement de simulation d’attaque](attack-simulation-training-payloads.md#create-payloads).
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 

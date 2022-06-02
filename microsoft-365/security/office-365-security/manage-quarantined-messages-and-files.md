@@ -19,21 +19,21 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher et à gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df123916f5f15a8651ba8ad8dcbae95598afbfa8
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418059"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839796"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
 
@@ -195,11 +195,11 @@ Après avoir sélectionné un message en quarantaine dans la liste, les actions 
 
   - Vous ne pouvez pas libérer un message au même destinataire plusieurs fois.
   - Seuls les destinataires qui n’ont pas reçu le message apparaissent dans la liste des destinataires potentiels.
-  - Seuls les membres du groupe de **rôles Administrateurs de la sécurité** peuvent voir et utiliser **l’option Envoyer le message à Microsoft pour améliorer la détection (faux positif)** et **autoriser des messages comme celui-ci** . 
+  - Seuls les membres du groupe de **rôles Administrateurs de la sécurité** peuvent voir et utiliser **l’option Envoyer le message à Microsoft pour améliorer la détection (faux positif)** et **autoriser des messages comme celui-ci** .
 
 - ![Icône Partager l’e-mail.](../../media/m365-cc-sc-share-email-icon.png) **Partager un e-mail** : dans le menu volant qui s’affiche, ajoutez un ou plusieurs destinataires pour recevoir une copie du message. Lorsque vous avez terminé, cliquez sur **Partager**.
 
-Les actions suivantes sont disponibles après avoir cliqué sur l'icône. ![Autres actions ](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** :
+Les actions suivantes sont disponibles après avoir cliqué sur ![l’icône Autres actions.](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** :
 
 - ![Afficher l’icône des en-têtes de messages.](../../media/m365-cc-sc-view-message-headers-icon.png) **Afficher les en-têtes de message** : Sélectionnez ce lien pour voir le texte de l'en-tête du message. Le flyout de **l'en-tête de message** apparaît avec les liens suivants :
   - **Copier l'en-tête du message** : Cliquez sur ce lien pour copier l'en-tête du message (tous les champs d'en-tête) dans votre presse-papiers.

@@ -1,7 +1,7 @@
 ---
 title: Exporter l’évaluation de l’inventaire logiciel par appareil
-description: Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+description: Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c3464a3aec242bd098503ac5bca997943ac2a4a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 296b977452802d8e1ed8949cf6a8871cac171f3a
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074569"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839991"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
@@ -29,45 +29,46 @@ ms.locfileid: "62074569"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Différents appels d’API obtiennent différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
+Les différents appels d’API obtiennent différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
-- [Exporter la réponse JSON de l’évaluation **de l’inventaire logiciel**](#1-export-software-inventory-assessment-json-response) L’API tire toutes les données de votre organisation en tant que réponses Json. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- [Exporter la **réponse JSON** d’évaluation de l’inventaire logiciel](#1-export-software-inventory-assessment-json-response) L’API extrait toutes les données de votre organisation en tant que réponses Json. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
 
-- [Exporter l’évaluation de l’inventaire **logiciel via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Il est donc recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
+- [Exporter l’évaluation de l’inventaire logiciel **via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit :
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
-  - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
+  - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.
 
-Les données collectées (à l’aide de la réponse _Json_ ou _via_ des fichiers) sont la capture instantanée actuelle de l’état actuel. Il ne contient pas de données historiques. Pour collecter des données historiques, les clients doivent les enregistrer dans leurs propres stockages de données.
+Les données collectées (à l’aide d’une _réponse Json_ ou _de fichiers_) sont l’instantané actuel de l’état actuel. Il ne contient pas de données historiques. Pour collecter des données historiques, les clients doivent enregistrer les données dans leurs propres stockages de données.
 
 > [!NOTE]
-> Sauf indication contraire, toutes les méthodes **** d’évaluation d’exportation répertoriées sont l’exportation complète et par appareil **_(également_** appelé **_par appareil)._**
+> Sauf indication contraire, toutes les méthodes d’évaluation d’exportation répertoriées sont **_l’exportation complète_** et **_par appareil_** (également appelée **_par appareil_**).
 
 ## <a name="1-export-software-inventory-assessment-json-response"></a>1. Exporter l’évaluation de l’inventaire logiciel (réponse JSON)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
+### <a name="11-api-method-description"></a>Description de la méthode d’API 1.1
 
-Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+Cette réponse d’API contient toutes les données des logiciels installés par appareil. Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### <a name="limitations"></a>Limites
 
-- La taille maximale de page est de 200 000.
-- Les limites de taux pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
+- La taille maximale de la page est de 200 000.
+- Les limites de débit pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
 
 ### <a name="12-permissions"></a>1.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API pour plus d’informations.](apis-intro.md)
 
-Type d’autorisation|Permission|Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
-### <a name="13-url"></a>1.3 URL
+### <a name="13-url"></a>URL 1.3
 
 ```http
 GET /api/machines/SoftwareInventoryByMachine
@@ -76,41 +77,41 @@ GET /api/machines/SoftwareInventoryByMachine
 ### <a name="14-parameters"></a>1.4 Paramètres
 
 - pageSize (valeur par défaut = 50 000) : nombre de résultats en réponse.
-- $top : nombre de résultats à renvoyer (ne retourne pas @odata.nextLink et, par conséquent, ne tire pas toutes les données)
+- $top : nombre de résultats à retourner (ne retourne pas @odata.nextLink et n’extrait donc pas toutes les données)
 
 ### <a name="15-properties"></a>1.5 Propriétés
 
 > [!NOTE]
 >
-> - Chaque enregistrement représente environ 0,5 To de données. Vous devez en tenir compte lors du choix du paramètre pageSize approprié pour vous.
-> - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
-> - Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
+> - Chaque enregistrement est d’environ 0,5 Ko de données. Vous devez en tenir compte lors du choix du paramètre pageSize approprié pour vous.
+> - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement retournée dans le même ordre que celui répertorié dans ce tableau.
+> - Certaines colonnes supplémentaires peuvent être retournées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 
 <br>
 
 ****
 
-Propriété (ID)|Type de données|Description|Exemple de valeur renvoyée
+Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
 DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
-DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.|[ « C: \\ Program Files (x86) \\ Microsoft \\ Silverlight \\ Applicationsilverlight.exe \\ " ]
-EndOfSupportDate|string|Date à laquelle la prise en charge de ce logiciel a ou va se terminer.|2020-12-30
-EndOfSupportStatus|string|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.|EOS à venir
-ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp !
+DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé sur l’appareil.|[ « C:\\ Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe » ]
+EndOfSupportDate|string|Date de fin de la prise en charge de ce logiciel.|2020-12-30
+EndOfSupportStatus|string|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.|EOS à venir
+ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil|3
-OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Ce sont des systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10 et Windows 11
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
-RegistryPaths|Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion \\ Uninstall Microsoft \\ Silverlight » ]
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.|Windows 10 et Windows 11
+RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
+RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\ Windows\\ CurrentVersion\\Uninstall\\Microsoft Silverlight » ]
 SoftwareFirstSeenTimestamp|string|La première fois que ce logiciel a été vu sur l’appareil.|2019-04-07 02:06:47
 SoftwareName|string|Nom du produit logiciel.|Silverlight
-SoftwareVendor|string|Nom du fournisseur de logiciels.|microsoft
+SoftwareVendor|string|Nom du fournisseur de logiciels.|Microsoft
 SoftwareVersion|string|Numéro de version du produit logiciel.|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 Exemples
 
-#### <a name="161-request-example"></a>1.6.1 Exemple de requête
+#### <a name="161-request-example"></a>Exemple de demande 1.6.1
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
@@ -212,24 +213,24 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 ## <a name="2-export-software-inventory-assessment-via-files"></a>2. Exporter l’évaluation de l’inventaire logiciel (via des fichiers)
 
-### <a name="21-api-method-description"></a>Description de la méthode api 2.1
+### <a name="21-api-method-description"></a>Description de la méthode API 2.1
 
-Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+Cette réponse d’API contient toutes les données des logiciels installés par appareil. Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### <a name="211-limitations"></a>2.1.1 Limitations
 
-Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels par heure.
+Les limites de débit pour cette API sont de 5 appels par minute et de 20 appels par heure.
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API pour plus d’informations.](apis-intro.md)
 
-Type d’autorisation|Permission|Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
-### <a name="23-url"></a>2.3 URL
+### <a name="23-url"></a>URL 2.3
 
 ```http
 GET /api/machines/SoftwareInventoryExport
@@ -237,24 +238,24 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>Paramètres
 
-- sasValidHours : nombre d’heures de validité des URL de téléchargement (maximum 24 heures)
+- sasValidHours : nombre d’heures pendant lesquelles les URL de téléchargement sont valides (maximum 24 heures)
 
 ### <a name="25-properties"></a>2.5 Propriétés
 
 > [!NOTE]
 >
-> - Les fichiers sont compressés gzip & au format JSON multiligne.
+> - Les fichiers sont compressés par gzip & au format JSON multiligne.
 > - Les URL de téléchargement ne sont valides que pendant 3 heures. Sinon, vous pouvez utiliser le paramètre.
-> - Pour une vitesse de téléchargement maximale de vos données, vous pouvez vous assurer que vous téléchargez à partir de la même région Azure que vos données résident.
+> - Pour une vitesse de téléchargement maximale de vos données, vous pouvez vous assurer que vous téléchargez à partir de la même région Azure que celle où résident vos données.
 
 <br>
 
 ****
 
-Propriété (ID)|Type de données|Description|Exemple de valeur renvoyée
+Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
-Exporter des fichiers|chaîne de \[ tableau\]|Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|Heure de la générer.|2021-05-20T08:00:00Z
+Exporter des fichiers|chaîne de tableau\[\]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|string|Heure à laquelle l’exportation a été générée.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Exemples
@@ -281,11 +282,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Exporter les méthodes et propriétés d’évaluation par appareil](get-assessment-methods-properties.md)
+- [Exporter des méthodes et des propriétés d’évaluation par appareil](get-assessment-methods-properties.md)
 - [Exporter l’évaluation de la configuration sécurisée par appareil](get-assessment-secure-config.md)
 - [Exporter l’évaluation des vulnérabilités logicielles par appareil](get-assessment-software-vulnerabilities.md)
 
-Autres associés
+Autres éléments connexes
 
-- [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [& gestion des vulnérabilités de menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: ''
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des collections dans eDiscovery (Premium) pour rechercher et collecter du contenu relatif à votre cas ou investigation.
-ms.openlocfilehash: ab2cb4baa1e8d60816fbf7c053d49b5a718746d5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7b5c09cd0b8a9f0a2ea0fe75e3ebf82e27223b14
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091046"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839380"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>En savoir plus sur les collections dans eDiscovery (Premium)
 
@@ -31,7 +31,7 @@ Lorsque les organisations sont confrontées à la collecte des communications et
 
 Le flux de travail de collecte pose d’importants défis techniques liés à l’extraction de contenu à partir d’emplacements et de sources natifs. Il s’agit également d’un point critique dans l’évaluation et la stratégie pour les scénarios courants de litiges ou d’enquêtes. À mesure que les organisations commencent à évaluer une enquête, les premières questions posées sont celles qui ont participé à l’enquête. Après avoir identifié les personnes impliquées, ces consignataires peuvent rapidement être mis en attente pour conserver le contenu pertinent. La question suivante est ce qui s’est produit? Pour répondre à cette deuxième question fondamentale de toute enquête, les responsables doivent se tourner vers les données. Pour évaluer rapidement le contenu le plus pertinent à la question de ce qui s’est produit, les gestionnaires commencent à affiner la cible de la question afin de s’assurer que les résultats de la collecte sont complets sans être trop larges.
 
-Les collections dans eDiscovery (Premium) permettent aux responsables eDiscovery d’étendre rapidement une recherche de contenu dans les e-mails, les documents et d’autres contenus dans Microsoft 365. Les collections fournissent aux responsables une estimation du contenu qui peut être pertinent pour le cas. Cela permet aux gestionnaires de prendre des décisions rapides et éclairées sur la taille et l’étendue du contenu pertinent pour un cas. Les gestionnaires eDiscovery peuvent créer une collection pour rechercher des sources de données custodiales (telles que des boîtes aux lettres et des sites SharePoint) et en utilisant des critères de recherche spécifiques (tels que des mots clés et des plages de dates) pour définir rapidement l’étendue de leur collection.
+Les collections dans eDiscovery (Premium) permettent aux responsables eDiscovery d’étendre rapidement une recherche de contenu dans les e-mails, les documents, les réactions Teams et d’autres contenus dans Microsoft 365. Les collections fournissent aux responsables une estimation du contenu qui peut être pertinent pour le cas. Cela permet aux gestionnaires de prendre des décisions rapides et éclairées sur la taille et l’étendue du contenu pertinent pour un cas. Les gestionnaires eDiscovery peuvent créer une collection pour rechercher des sources de données custodiales (telles que des boîtes aux lettres et des sites SharePoint) et en utilisant des critères de recherche spécifiques (tels que des mots clés et des plages de dates) pour définir rapidement l’étendue de leur collection.
 
 Une fois la collection définie, les gestionnaires eDiscovery peuvent enregistrer la collection sous forme de brouillon et obtenir des estimations, notamment des estimations pour le volume de données, les emplacements de contenu qui contiennent des résultats et le nombre d’accès à la condition de requête de recherche. Ces insights peuvent vous aider à déterminer si le regroupement doit être révisé pour affiner ou étendre l’étendue du regroupement avant de passer aux étapes de révision et d’analyse dans le flux de travail eDiscovery.
 

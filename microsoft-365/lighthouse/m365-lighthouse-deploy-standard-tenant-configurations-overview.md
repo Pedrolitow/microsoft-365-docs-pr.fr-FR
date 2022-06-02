@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
-ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7cdae46105ad225a284bf0ffa8860ad36ffb8691
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647686"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839840"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
@@ -31,7 +31,7 @@ Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement
 
 ## <a name="lighthouse-baseline"></a>Ligne de base du phare
 
-Les configurations de référence lighthouse sont conçues pour garantir que tous les locataires gérés sont sécurisés et conformes. Sélectionnez **Lignes de base** dans le volet de navigation gauche pour afficher la ligne de base par défaut qui s’applique à tous les locataires.  Pour afficher les étapes de déploiement incluses dans la ligne de base par défaut, sélectionnez **Afficher la ligne de base** pour ouvrir la page de référence par défaut. Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
+Les configurations de référence lighthouse sont conçues pour garantir que tous les locataires gérés sont sécurisés et conformes. Sélectionnez **Lignes de base** dans le volet de navigation gauche pour afficher la ligne de base par défaut qui s’applique à tous les locataires.  Pour afficher les étapes de déploiement incluses dans la ligne de base par défaut, sélectionnez **Afficher la ligne de base** pour ouvrir la page **De référence par défaut** . Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Capture d’écran de la page De référence par défaut.":::
 

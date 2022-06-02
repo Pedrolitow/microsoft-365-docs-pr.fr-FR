@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 84304d120f5822d91adc99c86e2c22c0cfb6790c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789921"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840384"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -31,7 +31,7 @@ ms.locfileid: "64789921"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **S’applique à**
@@ -77,8 +77,10 @@ L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) et ultérieures
 - Windows 11
+- Windows 2012 R2
+- Windows 2016
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- Windows Server 2022
+- Windows Server 2022
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windows dossiers système sont protégés par défaut
 

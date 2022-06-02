@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams dans eDiscovery (Premium).
-ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 754be254c4301fae9fdfff5edee3593e1333eb6c
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414863"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839687"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams
 
@@ -27,11 +27,13 @@ ms.locfileid: "65414863"
 
 Cet article fournit un ensemble complet de procédures, de recommandations et de meilleures pratiques pour l’utilisation de Microsoft Purview eDiscovery (Premium) pour conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams. L’objectif de cet article est de vous aider à optimiser votre flux de travail eDiscovery pour Teams contenu.
 
-Il existe cinq catégories de contenu Teams que vous pouvez collecter et traiter à l’aide d’eDiscovery (Premium) :
+Il existe six catégories de contenu Teams que vous pouvez collecter et traiter à l’aide d’eDiscovery (Premium) :
 
 - **Teams conversations 1:1**. Messages de conversation, publications et pièces jointes partagés dans une conversation Teams entre deux personnes.  Teams conversations 1:1 sont également appelées *conversations*.
 
 - **Teams conversations de groupe**. Messages de conversation, publications et pièces jointes partagés dans une conversation Teams entre trois personnes ou plus. Également appelé *conversations 1:N* ou *conversations de groupe*.
+
+- **Teams réactions**. Réactions appliquées aux messages de conversation, aux publications et aux pièces jointes dans une conversation Teams.
 
 - **Teams canaux**. Messages de conversation, publications, réponses et pièces jointes partagés dans un canal Teams standard.
 
@@ -47,6 +49,7 @@ Un prérequis pour gérer Teams contenu dans eDiscovery (Premium) consiste à co
 |---|---|---|
 |Teams conversations 1:1|Les messages dans les conversations 1:1 sont stockés dans la boîte aux lettres Exchange Online de tous les participants à la conversation.|Les fichiers partagés dans une conversation 1:1 sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier.|
 |Teams conversations de groupe|Les messages des conversations de groupe sont stockés dans la boîte aux lettres Exchange Online de tous les participants à la conversation.|Les fichiers partagés dans les conversations de groupe sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier.|
+|réactions Teams|Les messages des conversations de groupe sont stockés dans la boîte aux lettres Exchange Online de tous les participants à la conversation.|Les fichiers partagés dans les conversations de groupe sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier.|
 |Équipes et canaux|Tous les messages et publications de canal sont stockés dans la boîte aux lettres Exchange Online associée à l’équipe.|Les fichiers partagés dans un canal sont stockés dans le site SharePoint Online associé à l’équipe.|
 |Canaux privés|Les messages envoyés dans un canal privé sont stockés dans les boîtes aux lettres Exchange Online de tous les membres du canal privé.|Les fichiers partagés dans un canal privé sont stockés dans un site dédié SharePoint Online associé au canal privé.|
 |Canaux partagés|Les messages envoyés dans un canal partagé sont stockés dans une boîte aux lettres système associée au canal partagé. <sup>1</sup>|Les fichiers partagés dans un canal partagé sont stockés dans un site dédié SharePoint Online associé au canal partagé.|
@@ -88,7 +91,7 @@ Pour ajouter des consignataires à un cas et conserver les sources de données d
 
 1. Accédez au cas eDiscovery (Premium) que vous avez créé dans la section précédente, puis cliquez sur **Sources de données**.
 
-2. Dans la page **Sources** de données, cliquez sur Ajouter **de nouveaux consignatateurs sourceAdd** de **données** > .
+2. Dans la page **Sources de** données, cliquez sur **Ajouter une source de** >  données **Ajouter de nouveaux consignatateurs**.
 
 3. Dans l’Assistant **Nouveau consignateur** , ajoutez un ou plusieurs utilisateurs en tant que consignateurs au cas en tapant la première partie du nom ou de l’alias de l’utilisateur. Une fois que vous avez trouvé la personne appropriée, sélectionnez son nom pour l’ajouter à la liste.  
 
@@ -137,7 +140,7 @@ Pour créer une collection de contenu Teams :
 
 1. Accédez au cas eDiscovery (Premium) auquel vous avez ajouté les consignatateurs dans la section précédente, puis cliquez sur **Collections**.
 
-2. Dans la page **Collections**, sélectionnez **Nouvelle** **collectionStandard** > .
+2. Dans la page **Collections** , sélectionnez **Nouvelle collection** > **Standard**.
 
 3. Tapez un nom (obligatoire) et une description (facultatif) pour la collection.
 
@@ -270,7 +273,7 @@ Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 |---|---|
 |ContainsEditedMessage|Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
 |ConversationId|GUID qui identifie la conversation à laquelle l’élément est associé. Les fichiers de transcription et pièces jointes de la même conversation ont la même valeur pour cette propriété.|
-|Nom de la conversation|Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants à la conversation sont concaténés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams conversation de canal (standard, privé et partagé) utilise le format suivant pour le nom de la conversation : `<Team name>,<Channel name>`. Par exemple, `eDiscovery vNext, General`.|
+|Nom de la conversation|Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants à la conversation sont concaténés. Par exemple : `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams conversation de canal (standard, privé et partagé) utilise le format suivant pour le nom de la conversation : `<Team name>,<Channel name>`. Par exemple : `eDiscovery vNext, General`.|
 |ConversationType|Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group`. Pour les conversations de canal standard, privées et partagées, la valeur est `Channel`.|
 |Date|Horodatage du premier message dans le fichier de transcription.|
 |FamilyId|GUID qui identifie le fichier de transcription pour une conversation de conversation. Les pièces jointes ont la même valeur pour cette propriété que le fichier de transcription qui contient le message auquel le fichier a été attaché.|

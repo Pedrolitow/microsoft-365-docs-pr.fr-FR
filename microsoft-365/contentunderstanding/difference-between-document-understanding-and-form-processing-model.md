@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 571516a7112e3f145d9e3ca392ad3488a33b4887
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8856eade8e271c3b07ec61775c1f462e4b13bcff
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947822"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839872"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Différences entre la compréhension des documents et les modèles de traitement des formulaires 
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser deux types de modèles personnalisés :
 Bien que les deux modèles soient généralement utilisés dans le même but, les principales différences répertoriées ci-dessous affectent ceux que vous pouvez utiliser.
 
 > [!NOTE]
-> Pour plus d’informations sur les exemples de scénarios de traitement de formulaires et de présentation de documents, consultez l'article [SharePoint Syntex adoption : guide de mise en route](./adoption-getstarted.md).
+> Pour plus d’informations sur le traitement des formulaires et les exemples de scénarios de compréhension des documents, consultez [l’Démarrage l’adoption des SharePoint Syntex](./adoption-getstarted.md).
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré, contenu non structuré ou contenu semi-structuré
 
@@ -68,23 +68,23 @@ Vous pouvez appliquer des modèles de compréhension de document aux bibliothèq
 
 Actuellement, les modèles de traitement de formulaire ne peuvent être appliqués qu’à la bibliothèque de documents SharePoint à partir de laquelle ils sont créés. Cela permet aux utilisateurs sous licence, ayant accès au site de créer un modèle de traitement de formulaire. Notez qu’un administrateur doit activer le traitement de formulaire sur une bibliothèque de documents SharePoint pour que les utilisateurs sous licence puissent l’utiliser.
 
-## <a name="comparison-of-forms-processing-and-document-understanding"></a>Comparaison des traitements de formulaires et la compréhension de documents
+## <a name="comparison-of-form-processing-and-document-understanding"></a>Comparaison du traitement des formulaires et de la compréhension des documents
 
-Utilisez le tableau suivant pour comprendre quand utiliser le traitement des formulaires et quand utiliser la compréhension de document.
+Utilisez le tableau suivant pour comprendre quand utiliser le traitement des formulaires et quand utiliser la compréhension des documents.
 
 | Fonctionnalité | Traitement des formulaires | Compréhension de document |
 | ------- | ------- | ------- |
-| Type de modèle : quand utiliser chacun d’entre eux | Utilisé pour les formats de fichier sémi-structurées, par exemple, pour les FICHIERS PDF pour le contenu de formulaires tels que les factures ou les commandes où la disposition et la mise en forme sont similaires.  | Utilisé pour les formats de fichiers semi-structurés (par exemple, les documents Office où il y a des différences dans la disposition, mais toujours des informations similaires à extraire). |
+| Type de modèle : quand utiliser chaque modèle | Formats de fichiers structurés et semi-structurés, par exemple les fichiers PDF pour le contenu des formulaires, tels que les factures ou les bons de commande, où la disposition et la mise en forme sont similaires.  | Les formats de fichiers non structurés ou semi-structurés, par exemple, Office documents où il existe des différences dans la disposition, mais qui restent des informations similaires à extraire. |
 | Création de modèles | Modèle créé dans le Générateur d’intelligence artificielle avec un accès transparent à partir d’une bibliothèque de documents SharePoint.| Modèle créé dans SharePoint dans un nouveau site, le centre de contenu. |
 | Type de classification| Le classificateur réglable est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
 | Emplacements | Formé pour une seule bibliothèque de documents.| Peut être appliqué à plusieurs bibliothèques.|
-| Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Les fichiers Office sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages.|
+| Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Office fichiers sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages.|
 | Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
-| Intégration des fonctionnalités de conformité à Microsoft Purview Information Protection | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité à venir. | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité publiées. |
+| Intégration des fonctionnalités de conformité à Protection des données Microsoft Purview | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité à venir. | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité publiées. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|
-| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>Les crédits peuvent être achetés par lots de 1M.<br>Plus de 1M de crédits est inclus lorsque vous achetez plus de 300 licences SharePoint Syntex.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| N/A |
+| Coût transactionnel | Utilise des crédits de générateur d’intelligence artificielle.<br>3,5 Ko de crédits sont inclus pour chaque licence SharePoint Syntex par mois.<br>1M de crédits permet de traiter un fichier de 2 000 pages.<br>| Non applicable |
 | Capacité | Utilise l’environnement de plateforme Power par défaut (environnements personnalisés pris en charge par la base de données de dataverse). | Ne comprend pas de restrictions de capacité.|
-| Langues prises en charge| Prise en charge linguistique pour plus [de 73 langues](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
+| Langues prises en charge| Prise en charge linguistique pour plus de [73 langues](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Les modèles fonctionnent sur toutes les langues de l’alphabet latin. En plus de l’anglais : l’allemand, le suédois, le Français, l’espagnol, l’italien et le portugais.|
 
 
 ## <a name="see-also"></a>Voir aussi
