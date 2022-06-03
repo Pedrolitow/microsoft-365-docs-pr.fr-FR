@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurez mobilité et sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en effectuant des actions telles que la réinitialisation à distance d’un appareil.
-ms.openlocfilehash: b26906c0f374f5dc103fe26e4619663195da6ebd
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 04480e59177dc9b51bc50e413715e0ad82c7f461
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863167"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
@@ -52,17 +52,15 @@ Si vous n’avez pas de domaine personnalisé associé à Microsoft 365 ou si vo
 
 Vous avez besoin d’aide pour configurer les enregistrements ? Recherchez votre bureau d’enregistrement de domaines et sélectionnez le nom du bureau d’enregistrement pour accéder à l’aide pas à pas pour créer un enregistrement DNS dans la liste fournie dans [Ajouter des enregistrements DNS pour connecter votre domaine](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Utilisez ces instructions pour créer des enregistrements CNAME décrits dans [Simplifier l’inscription Windows sans Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-Après avoir ajouté les deux enregistrements CNAME, revenez au Centre de sécurité & conformité et accédez à la gestion **de Data Loss** **PreventionDevice** >  pour effectuer l’étape suivante.
+Après avoir ajouté les deux enregistrements CNAME, revenez au Centre de sécurité & conformité et accédez à **la gestion** des appareils de **protection contre la** >  perte de données pour effectuer l’étape suivante.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Étape 2 : (Obligatoire) Configurer un certificat APNs pour les appareils iOS
 
-Pour gérer des appareils iOS comme iPad et iPhone, vous devez créer un certificat APNs.
+Pour gérer iOS appareils tels que iPad et iPhone, vous devez créer un certificat APNs.
 
 1. Connectez-vous à Microsoft 365 avec votre compte d’administrateur général.
 
-2. Dans votre type de navigateur : [https://protection.office.com](https://protection.office.com/).
-
-3. Sélectionnez **Gestion de la protection contre la** >  perte de **données,** puis choisissez **Certificat APNs pour les appareils iOS**.
+2. Accédez à la [Centre d'administration Microsoft 365](https://portal.office.com/adminportal/home?#/MifoDevices), puis choisissez **Certificat APNs pour iOS**.
 
 4. Dans la page Paramètres certificat de notification Push Apple, choisissez **Suivant**.
 
@@ -95,7 +93,7 @@ L’authentification multifacteur permet de sécuriser la connexion à Microsoft
 
 Pour savoir comment activer l’authentification multifacteur dans le portail Azure AD, consultez [Configurer l’authentification multifacteur](../security-and-compliance/set-up-multi-factor-authentication.md).
 
-Une fois que vous avez configuré l’authentification multifacteur, revenez au Centre de sécurité & conformité et accédez aux stratégies **data loss** **preventionDevice** >  **managementDevice** >  pour effectuer l’étape suivante.
+Après avoir configuré l’authentification multifacteur, revenez au Centre de sécurité & conformité et accédez aux stratégies d’appareil de **gestion des** >  appareils de **protection contre la** >  perte de données **pour effectuer** l’étape suivante.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Étape 4 : (recommandé) Gérer les stratégies de sécurité des appareils
 
@@ -107,7 +105,7 @@ L’étape suivante consiste à créer et déployer des stratégies de sécurit�
 
 3. Accédez aux **stratégies d’appareil**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base.":::
 
 4. Créez et déployez des stratégies de sécurité d’appareil appropriées pour votre organisation en suivant les étapes [décrites dans Créer des stratégies de sécurité des appareils dans Mobilité et sécurité de base](create-device-security-policies.md).
 
@@ -126,7 +124,7 @@ Une fois que vous avez créé et déployé une stratégie de gestion des apparei
 > [!IMPORTANT]
 > Si la langue préférée d’un utilisateur n’est pas prise en charge par le processus d’inscription, les utilisateurs peuvent recevoir une notification d’inscription et des étapes sur leurs appareils mobiles dans une autre langue. Toutes les langues prises en charge dans Microsoft 365 ne sont pas prises en charge pour le processus d’inscription sur les appareils mobiles.
 
-Les utilisateurs disposant d’appareils Android ou iOS doivent installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
+Les utilisateurs disposant d’appareils Android ou iOS sont tenus d’installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
 
 ## <a name="related-content"></a>Contenu associé
 

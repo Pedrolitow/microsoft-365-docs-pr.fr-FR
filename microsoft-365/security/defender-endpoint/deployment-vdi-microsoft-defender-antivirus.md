@@ -10,17 +10,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 690ec028b3013bf00e28547ff440c7804b4d0f64
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416417"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872311"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -36,7 +35,7 @@ En plus des configurations locales ou matérielles standard, vous pouvez égalem
 
 Pour plus d’informations sur Bureau à distance Microsoft services et la prise en charge de VDI, consultez [la documentation Azure Virtual Desktop](/azure/virtual-desktop).
 
-Pour les machines virtuelles basées sur Azure, consultez [Installer Endpoint Protection dans Microsoft Defender pour le cloud](/azure/security-center/security-center-install-endpoint-protection).
+Pour les machines virtuelles basées sur Azure, consultez [Installer Endpoint Protection dans Microsoft Defender pour le cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 Avec la possibilité de déployer facilement des mises à jour sur des machines virtuelles s’exécutant dans des VM, nous avons raccourci ce guide pour vous concentrer sur la façon dont vous pouvez obtenir des mises à jour sur vos machines rapidement et facilement. Vous n’avez plus besoin de créer et de sceller régulièrement des images d’or, car les mises à jour sont développées dans leurs bits de composant sur le serveur hôte, puis téléchargées directement sur la machine virtuelle lorsqu’elle est activée.
 

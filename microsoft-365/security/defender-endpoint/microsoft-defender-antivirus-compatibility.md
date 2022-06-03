@@ -17,16 +17,16 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872421"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus Microsoft Defender compatibilité avec d’autres produits de sécurité
 
-**S’applique à :**
+**S’applique à :**
 
 - Antivirus Microsoft Defender
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -49,7 +49,7 @@ Cet article décrit ce qui se passe avec Antivirus Microsoft Defender et une sol
 > [!IMPORTANT]
 > - Antivirus Microsoft Defender est disponible sur les appareils exécutant Windows 10 et 11, Windows Server 2022, Windows Server 2019, Windows Server, version 1803 ou ultérieure et Windows Server 2016. 
 > - Antivirus Microsoft Defender est également disponible sur Windows Server 2012 R2 lors de l’intégration à l’aide de la [solution unifiée moderne](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-> - Sur Windows 8.1, la protection antivirus de point de terminaison au niveau de l’entreprise est proposée en tant que [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10), qui est gérée via Microsoft Endpoint Configuration Manager.
+> - Sur Windows 8.1, la protection antivirus de point de terminaison au niveau de l’entreprise est proposée en [tant que System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), qui est gérée via Microsoft Endpoint Configuration Manager.
 > - Windows Defender est également proposé pour [les appareils grand public sur Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), bien que Windows Defender n’assure pas la gestion au niveau de l’entreprise.
 
 ## <a name="antivirus-protection-without-defender-for-endpoint"></a>Protection antivirus sans Defender pour point de terminaison
@@ -65,8 +65,8 @@ Le tableau suivant récapitule les attentes :
 |:---|:---|:---|
 |Windows 10 <br/> Windows 11|Antivirus Microsoft Defender|Mode actif|
 |Windows 10 <br/> Windows 11|Une solution antivirus/anti-programme malveillant non Microsoft|Mode désactivé (se produit automatiquement)|
-|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, version 1803 ou ultérieure <br/> Windows Server 2016 |Antivirus Microsoft Defender|Mode actif|
-|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, version 1803 ou ultérieure <br/> Windows Server 2016  |Une solution antivirus/anti-programme malveillant non Microsoft|Désactivé (défini manuellement) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server, version 1803 ou ultérieure <br/> Windows Server 2016 <br/> Windows Server 2012 R2 |Antivirus Microsoft Defender|Mode actif|
+|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server, version 1803 ou ultérieure <br/> Windows Server 2016 |Une solution antivirus/anti-programme malveillant non Microsoft|Désactivé (défini manuellement) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) Sur Windows Server, si vous exécutez un produit antivirus non Microsoft, vous pouvez désinstaller Antivirus Microsoft Defender pour éviter tout conflit. Si l’appareil est intégré à Microsoft Defender pour point de terminaison, vous pouvez utiliser Antivirus Microsoft Defender en mode passif (voir ci-dessous).
 

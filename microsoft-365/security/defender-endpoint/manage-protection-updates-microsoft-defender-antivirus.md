@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: b01a9315e143a3fb49cedef84e1f7b9e505441d5
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873333"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -68,7 +68,7 @@ Il existe cinq emplacements où vous pouvez spécifier où un point de terminais
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Partage de fichiers réseau](#unc-share)
-- [Mises à jour du renseignement de sécurité pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant](https://www.microsoft.com/wdsi/defenderupdates) <sup>Microsoft [[2](#fn1)]<sup></sup>
+- [Mises à jour du renseignement de sécurité pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) <sup>Microsoft [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Intune serveur de mise à jour de définition interne : si vous utilisez SCCM/SUP pour obtenir des mises à jour de définition pour Antivirus Microsoft Defender et que vous devez accéder à Windows Update sur les appareils clients bloqués, vous pouvez passer à la cogestion et décharger la charge de travail endpoint protection vers Intune. Dans la stratégie anti-programme malveillant configurée dans Intune il existe une option pour « serveur de mise à jour de définition interne » qui peut être configurée pour utiliser WSUS local comme source de mise à jour. Cela vous permet de contrôler les mises à jour du serveur WU officiel qui sont approuvées pour l’entreprise, ainsi que d’aider à proxyer et à enregistrer le trafic réseau vers le réseau officiel Windows UPdates.
 
@@ -83,19 +83,17 @@ Les mises à jour du renseignement de sécurité sont également remises plusieu
 
 > [!IMPORTANT]
 > Si vous avez défini les mises à jour de [page Microsoft Security Intelligence](https://www.microsoft.com/security/portal/definitions/adl.aspx) comme source de secours après Windows Service de mise à jour du serveur ou Microsoft Update, les mises à jour sont téléchargées uniquement à partir des mises à jour de sécurité et de la plateforme lorsque la mise à jour actuelle est considérée comme obsolète. (Par défaut, il s’agit de sept jours consécutifs où vous ne pouvez pas appliquer les mises à jour à partir des services Windows Server Update Service ou Microsoft Update).
-> Toutefois, vous pouvez [définir le nombre de jours avant que la protection ne soit signalée comme étant obsolète](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
+> Toutefois, vous pouvez [définir le nombre de jours avant que la protection ne soit signalée comme étant obsolète](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus).<p>
 > À compter du lundi 21 octobre 2019, les mises à jour du renseignement de sécurité et les mises à jour de plateforme seront signées exclusivement sha-2. Les appareils doivent être mis à jour pour prendre en charge SHA-2 afin d’obtenir les dernières mises à jour de sécurité et de plateforme. Pour plus d’informations, consultez [l’exigence de prise en charge de la signature de code SHA-2 2 2019 pour Windows et WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 Chaque source a des scénarios classiques qui dépendent de la façon dont votre réseau est configuré, en plus de la fréquence à laquelle elles publient des mises à jour, comme décrit dans le tableau suivant :
-
-<br/><br/>
 
 |Emplacement|Exemple de scénario|
 |---|---|
 |service de mise à jour du serveur Windows|Vous utilisez Windows Service de mise à jour du serveur pour gérer les mises à jour de votre réseau.|
 |Microsoft Update|Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d’entreprise, ou si vous n’utilisez pas Windows Service de mise à jour du serveur pour gérer vos mises à jour.|
 |Partage de fichiers|Vous disposez d’appareils non connectés à Internet (tels que des machines virtuelles). Vous pouvez utiliser votre hôte de machine virtuelle connecté à Internet pour télécharger les mises à jour vers un partage réseau, à partir duquel les machines virtuelles peuvent obtenir les mises à jour. Consultez le [guide de déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md) pour savoir comment les partages de fichiers peuvent être utilisés dans des environnements d’infrastructure de bureau virtuel (VDI).|
-|Gestionnaire de point de terminaison Microsoft|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
+|Microsoft Endpoint Manager|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
 |Mises à jour du renseignement de sécurité et mises à jour de plateforme pour Antivirus Microsoft Defender et d’autres logiciels anti-programme malveillant Microsoft (anciennement appelés MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus Microsoft Defender mises à jour de la plateforme et du renseignement de sécurité sont fournies par le biais de Windows Update, et à compter du lundi 21 octobre 2019, les mises à jour de sécurité et les mises à jour de plateforme seront signées exclusivement SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour aider à approvisionner une image de base forte pour le [déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md). Cette option doit généralement être utilisée uniquement comme source de secours finale, et non comme source principale. Elle ne sera utilisée que si les mises à jour ne peuvent pas être téléchargées à partir de Windows Service de mise à jour serveur ou Microsoft Update pendant [un nombre spécifié de jours](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Vous pouvez gérer l’ordre dans lequel les sources de mise à jour sont utilisées avec stratégie de groupe, Microsoft Endpoint Configuration Manager, les applets de commande PowerShell et WMI.

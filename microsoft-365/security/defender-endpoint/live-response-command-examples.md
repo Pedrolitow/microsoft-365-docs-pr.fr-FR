@@ -1,7 +1,7 @@
 ---
 title: Exemples de commande Live response
-description: Apprenez à exécuter des commandes de réponse en direct de base ou avancées pour Microsoft Defender pour endpoint et consultez des exemples sur leur utilisation.
-keywords: exemple, commande, cli, distant, shell, connexion, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
+description: Découvrez comment exécuter des commandes de réponse dynamique de base ou avancées pour Microsoft Defender pour point de terminaison et voir des exemples sur leur utilisation.
+keywords: exemple, commande, interface CLI, distante, interpréteur de commandes, connexion, live, réponse, temps réel, commande, script, corriger, chasser, exporter, journaliser, supprimer, télécharger, fichier
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872384"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 
@@ -28,13 +28,13 @@ ms.locfileid: "63312641"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Découvrez les commandes courantes utilisées dans la réponse en direct et consultez des exemples sur la façon dont elles sont généralement utilisées.
+Découvrez les commandes courantes utilisées dans la réponse active et consultez des exemples sur la façon dont elles sont généralement utilisées.
 
-Selon le rôle que vous avez, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md).
+Selon le rôle que vous avez, vous pouvez exécuter des commandes de réponse dynamique de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, consultez [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md).
 
 ## `analyze`
 
@@ -110,16 +110,16 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> Les types de fichiers *suivants ne peuvent* pas être téléchargés à l’aide de cette commande à partir de Live Response :
+> Les types de fichiers suivants *ne peuvent pas* être téléchargés à l’aide de cette commande à partir de Live Response :
 >
-> - [Reparse point files](/windows/desktop/fileio/reparse-points/)
-> - [Fichiers dispersés](/windows/desktop/fileio/sparse-files/)
+> - [Analyser les fichiers de point](/windows-hardware/drivers/ifs/reparse-points)
+> - [Fichiers partiellement alloués](/windows-server/administration/windows-commands/fsutil-sparse)
 > - Fichiers vides
 > - Fichiers virtuels ou fichiers qui ne sont pas entièrement présents localement
 >
-> Ces types de *fichiers sont pris* en charge [par PowerShell](/powershell/scripting/overview).
+> Ces types de fichiers *sont* pris en charge par [PowerShell](/powershell/scripting/overview).
 >
-> Utilisez PowerShell comme alternative si vous avez des problèmes à l’aide de cette commande à partir de Live Response.
+> Utilisez PowerShell comme alternative si vous rencontrez des problèmes lors de l’utilisation de cette commande à partir de Live Response.
 
 ## `library`
 
@@ -221,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> Pour les commandes de longue durée telles que « **exécuter** » ou « **getfile** » ,**&** vous pouvez utiliser le symbole « » à la fin de la commande pour effectuer cette action en arrière-plan.
-> Cela vous permettra de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous aurez terminé à l’aide de la commande [de base](live-response.md#basic-commands) « **fg** ».
+> Pour les commandes de longue durée telles que « **run** » ou « **getfile** », vous pouvez utiliser le symbole «**&** » à la fin de la commande pour effectuer cette action en arrière-plan.
+> Cela vous permet de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l’aide de la [commande de base](live-response.md#basic-commands) « **fg** ».
 
 ## `scheduledtask`
 

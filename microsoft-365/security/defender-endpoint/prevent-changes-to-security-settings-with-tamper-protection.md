@@ -17,16 +17,15 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 36aa48f26e60e2c3afb034a218c3356e27d75ffd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873355"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -43,7 +42,7 @@ La protection contre les falsifications est disponible pour les appareils qui ex
 
 - Windows 11
 - Multisession Windows 11 Entreprise 
-- Windows 10
+- Windows 10
 - Windows 10 Entreprise à sessions multiples
 - Windows Server 2022
 - Windows Server 2019
@@ -117,7 +116,7 @@ La protection contre les falsifications peut être activée ou désactivée pour
   
   - Windows 11
   - Multisession Windows 11 Entreprise 
-  - Windows 10
+  - Windows 10
   - Windows 10 Entreprise à sessions multiples
   - Windows Server 2022
   - Windows Server 2019
@@ -154,7 +153,7 @@ Si votre organisation utilise Microsoft Endpoint Manager (MEM), vous pouvez acti
 - Vos appareils doivent être [intégrés à Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/onboarding).
 - Vous devez disposer [des autorisations](/microsoft-365/security/defender-endpoint/assign-portal-access) appropriées, telles que l’administrateur général, l’administrateur de sécurité ou les opérations de sécurité.
 - Votre organisation utilise [Microsoft Endpoint Manager pour gérer les appareils](/mem/endpoint-manager-getting-started). Des licences (Microsoft Endpoint Manager (MEM) sont requises ; MEM est inclus dans Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365  Gouvernement G3/G5, et licences d’éducation correspondantes.)
-- Vos appareils Windows doivent exécuter Windows 11 ou Windows 10 [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ou version ultérieure. (Pour plus d’informations sur les versions, consultez [Windows 10 informations de publication](/windows/release-health/release-information).)
+- Vos appareils Windows doivent exécuter Windows 11 ou Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ou version ultérieure. (Pour plus d’informations sur les versions, consultez [Windows 10 informations de publication](/windows/release-health/release-information).)
 - Vous devez utiliser Windows sécurité avec [le renseignement de sécurité](https://www.microsoft.com/wdsi/definitions) mis à jour vers la version 1.287.60.0 (ou ultérieure).
 - Vos appareils doivent utiliser la plateforme anti-programme malveillant version 4.18.1906.3 (ou ultérieure) et la version `1.1.15500.X` du moteur anti-programme malveillant (ou version ultérieure). ([Gérer Antivirus Microsoft Defender mises à jour et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
@@ -200,7 +199,6 @@ Consultez les ressources suivantes :
 
 > [!NOTE]
 > La protection contre les falsifications bloque les tentatives de modification des paramètres Antivirus Microsoft Defender par le biais du Registre.
->
 > Pour vous assurer que la protection contre les falsifications n’interfère pas avec les produits de sécurité non Microsoft ou les scripts d’installation d’entreprise qui modifient ces paramètres, accédez à **Sécurité Windows** et mettez à jour **security intelligence** vers la version 1.287.60.0 ou ultérieure. (Consultez [les mises à jour du renseignement de sécurité](https://www.microsoft.com/wdsi/definitions).) Une fois cette mise à jour effectuée, la protection contre les falsifications continue de protéger vos paramètres de Registre, et les journaux tentent de les modifier sans retourner d’erreurs.
 
 Si vous êtes un utilisateur domestique ou que vous n’êtes pas soumis à des paramètres gérés par une équipe de sécurité, vous pouvez utiliser l’application Sécurité Windows pour gérer la protection contre les falsifications. Vous devez disposer des autorisations d’administrateur appropriées sur votre appareil pour modifier les paramètres de sécurité, tels que la protection contre les falsifications.
@@ -243,13 +241,13 @@ La protection contre les falsifications s’intègre aux fonctionnalités de ges
 
 Pour en savoir plus sur threat & Vulnerability Management, consultez [Dashboard Insights - Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre les falsifications ?
 
 - Windows 11
 - Multisession Windows 11 Entreprise
-- Windows 10 système d’exploitation [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ou version ultérieure avec [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint).
+- Windows 10 système d’exploitation [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ou version ultérieure avec [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint).
 - Windows 10 Entreprise à sessions multiples
   
 Si vous utilisez Configuration Manager, version 2006, avec attachement de locataire, la protection contre les falsifications peut être étendue à Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022. Voir [Attachement de locataire : Créer et déployer une stratégie antivirus de sécurité de point de terminaison à partir du centre d’administration (préversion).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)

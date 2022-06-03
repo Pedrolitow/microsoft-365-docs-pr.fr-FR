@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874171"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -30,8 +30,8 @@ ms.locfileid: "65368174"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/index.yml)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
@@ -70,7 +70,7 @@ Pendant le processus d’intégration Microsoft Defender pour point de terminais
 
 ## <a name="navigate-to-the-device-inventory-page"></a>Accéder à la page Inventaire des appareils
 
-Accédez à la page d’inventaire des appareils en sélectionnant **Inventaire des appareils** dans le menu de navigation **Points** de terminaison du [portail Microsoft 365 Defender](/defender/microsoft-365-security-center-mde).
+Accédez à la page d’inventaire des appareils en sélectionnant **Inventaire des appareils** dans le menu de navigation **Points** de terminaison du [portail Microsoft 365 Defender](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## <a name="device-inventory-overview"></a>Vue d’ensemble de l’inventaire des appareils
 

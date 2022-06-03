@@ -1,7 +1,7 @@
 ---
-title: Comment déployer Defender pour endpoint sur Linux avec Chef
-description: Découvrez comment déployer Defender pour Endpoint sur Linux avec Chef
-keywords: microsoft, defender, atp, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+title: Guide pratique pour déployer Defender pour point de terminaison sur Linux avec Chef
+description: Découvrez comment déployer Defender pour point de terminaison sur Linux avec Chef
+keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender pour point de terminaison (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8f610821b6c0bef7694d6ce8acd256f59f761f06
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872925"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -27,33 +27,33 @@ ms.locfileid: "61941923"
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Avant de commencer : installez unzip s’il n’est pas déjà installé.
+Avant de commencer : installez le décompression s’il n’est pas déjà installé.
 
-Les composants Chef sont déjà installés et un référentiel Chef existe (le chef génère un référentiel ) pour stocker le guide de référence qui sera utilisé pour déployer defender pour point de terminaison sur les serveurs Linux gérés par \<reponame\> Chef.
+Les composants Chef sont déjà installés et un référentiel Chef existe (chef générer un dépôt \<reponame\>) pour stocker le livre de recettes qui sera utilisé pour le déploiement sur Defender pour point de terminaison sur les serveurs Linux gérés par Chef.
 
-Vous pouvez créer un nouveau classeur dans votre référentiel existant en exécutant la commande suivante à partir du dossier des classeurs qui se trouve dans votre référentiel de chef :
+Vous pouvez créer un livre de recettes dans votre référentiel existant en exécutant la commande suivante à partir du dossier des livres de recettes qui se trouve dans votre référentiel chef :
 
 ```bash
 chef generate cookbook mdatp
 ```
 
-Cette commande crée une structure de dossiers pour le nouveau classeur appelé mdatp. Vous pouvez également utiliser un livre de recettes existant si vous en avez déjà un que vous souhaitez utiliser pour ajouter le déploiement MDE.
-Une fois le classeur créé, créez un dossier de fichiers à l’intérieur du dossier de classeur qui vient d’être créé :
+Cette commande crée une structure de dossiers pour le nouveau livre de recettes appelé mdatp. Vous pouvez également utiliser un livre de recettes existant si vous en avez déjà un que vous souhaitez utiliser pour ajouter le déploiement MDE.
+Une fois le livre de recettes créé, créez un dossier de fichiers dans le dossier du livre de recettes qui vient d’être créé :
 
 ```bash
 mkdir mdatp/files
 ```
 
-Transférez le fichier zip d’intégration Linux Server qui peut être téléchargé à partir du portail Microsoft 365 Defender vers ce nouveau dossier de fichiers.
+Transférez le fichier zip d’intégration du serveur Linux qui peut être téléchargé à partir du portail Microsoft 365 Defender vers ce nouveau dossier de fichiers.
 
-Sur la station de travail Chef, accédez au dossier mdatp/recipes. Ce dossier est créé lors de la création du classeur. Utilisez votre éditeur de texte préféré (comme vi ou nano) pour ajouter les instructions suivantes à la fin du fichier default.rb :
+Sur la station de travail Chef, accédez au dossier mdatp/recipes. Ce dossier est créé lors de la génération du livre de recettes. Utilisez votre éditeur de texte préféré (par exemple, vi ou nano) pour ajouter les instructions suivantes à la fin du fichier default.rb :
 
 - include_recipe '::onboard_mdatp'
-- include_recipe '::install_mdatp'
+- include_recipe ':install_mdatp'
 
-Enregistrez et fermez ensuite le fichier default.rb.
+Ensuite, enregistrez et fermez le fichier default.rb.
 
-Créez ensuite un fichier de recette nommé install_mdatp.rb dans le dossier recettes et ajoutez ce texte au fichier :
+Créez ensuite un fichier de recettes nommé install_mdatp.rb dans le dossier recettes et ajoutez ce texte au fichier :
 
 ```powershell
 #Add Microsoft Defender
@@ -90,8 +90,8 @@ when 'rhel'
 end
 ```
 
-Vous devez modifier le numéro de version, la distribution et le nom du repo pour qu’il corresponde à la version que vous déployez et au canal que vous souhaitez déployer.
-Ensuite, vous devez créer un onboard_mdatp.rb dans le dossier mdatp/recipies. Ajoutez le texte suivant à ce fichier :
+Vous devez modifier le numéro de version, la distribution et le nom du dépôt pour qu’ils correspondent à la version sur laquelle vous effectuez le déploiement et au canal que vous souhaitez déployer.
+Ensuite, vous devez créer un fichier onboard_mdatp.rb dans le dossier mdatp/recipies. Ajoutez le texte suivant à ce fichier :
 
 ```powershell
 #Create MDATP Directory
@@ -116,9 +116,9 @@ end
 ```
 
 Veillez à mettre à jour le nom du chemin d’accès à l’emplacement du fichier d’intégration.
-Pour tester son déploiement sur la station de travail Chef, exécutez simplement ``sudo chef-client -z -o mdatp`` .
-Après votre déploiement, vous devez envisager de créer et de déployer un fichier de configuration sur les serveurs en fonction des préférences définies pour [Microsoft Defender pour Endpoint sur Linux.](/linux-preferences.md)
-Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d’intégration. Vous pouvez ensuite créer un settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
+Pour tester son déploiement sur la station de travail Chef, exécutez ``sudo chef-client -z -o mdatp``simplement .
+Après votre déploiement, vous devez envisager de créer et de déployer un fichier de configuration sur les serveurs en fonction [des préférences définies pour Microsoft Defender pour point de terminaison sur Linux](/microsoft-365/security/defender-endpoint/linux-preferences).
+Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier cookbook/mdatp/files où vous avez également placé le package d’intégration. Vous pouvez ensuite créer un fichier settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
 
 ```powershell
 #Copy the configuration file
@@ -131,10 +131,10 @@ cookbook_file '/etc/opt/microsoft/mdatp/managed/mdatp_managed.json' do
 end
 ```
 
-Pour inclure cette étape dans la recette, ajoutez simplement include_recipe « :: settings_mdatp » à votre fichier default.rb dans le dossier de la recette.
-Vous pouvez également utiliser crontab pour planifier des mises à jour automatiques Planifier une mise à jour de [Microsoft Defender pour Endpoint (Linux).](linux-update-MDE-Linux.md)
+Pour inclure cette étape dans la recette, ajoutez simplement include_recipe « : settings_mdatp » à votre fichier default.rb dans le dossier de la recette.
+Vous pouvez également utiliser crontab pour planifier des mises à jour automatiques [Planifier une mise à jour du Microsoft Defender pour point de terminaison (Linux).](linux-update-MDE-Linux.md)
 
-Désinstallez le manuel MDATP :
+Désinstaller le livre de recettes MDATP :
 
 ```powershell
 #Uninstall the Defender package

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 13387890ca1096115c5c933627ae674aaad15581
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863627"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -53,7 +53,7 @@ Lorsque vous créez une stratégie DLP, vous pouvez configurer les notifications
 
 Lorsque vous créez une stratégie DLP, vous pouvez activer **les notifications utilisateur**. Lorsque les notifications utilisateur sont activées, Microsoft 365 envoie des notifications par e-mail et des conseils de stratégie. Vous pouvez personnaliser à qui les e-mails de notification sont envoyés, le texte de l’e-mail et le texte de l’info-bulle de stratégie.
 
-1. Accédez à [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+1. Accédez au [portail de conformité Microsoft Purview](https://compliance.microsoft.com/permissions).
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
@@ -243,7 +243,10 @@ Actuellement, Outlook 2013 et versions ultérieures prend en charge l’affichag
 - Le contenu contient
 - Le contenu est partagé
 
-Notez que les exceptions sont considérées comme des conditions et que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage de conseils de stratégie aux utilisateurs n’est pas encore pris en charge. En outre, Outlook ne prend pas en charge l’affichage de conseils de stratégie pour une stratégie DLP appliquée à un groupe de distribution dynamique.
+Notez que les exceptions sont considérées comme des conditions et que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage de conseils de stratégie aux utilisateurs n’est pas encore pris en charge. 
+
+> [!NOTE]
+> Outlook ne prend pas en charge l’affichage de conseils de stratégie pour une stratégie DLP appliquée à un groupe de distribution dynamique ou à des groupes de sécurité non activés par e-mail. 
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Conseils de stratégie dans le Centre d’administration Exchange par rapport au portail de conformité Microsoft Purview
 

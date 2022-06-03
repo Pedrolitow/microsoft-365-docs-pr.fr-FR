@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: fc641845907e157e555e70104b2fcb472ad496af
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9998f71d275d28f10fc950b978cc13ce7fd3c335
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599274"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840428"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -268,7 +268,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
   - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction.
   - Si les étiquettes que vous souhaitez utiliser pour l'étiquetage automatique sont configurées pour utiliser des marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
   - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md) :
-    - Lorsque la stratégie d’étiquetage automatique inclut des emplacements pour SharePoint ou OneDrive, vous devez configurer l’étiquette pour le paramètre **Attribuer des autorisations maintenant**.
+    - Lorsque la stratégie d’étiquetage automatique inclut des emplacements pour SharePoint ou OneDrive, l’étiquette doit être configurée pour le paramètre **Attribuer des autorisations maintenant** et **L'accès de l'utilisateur au contenu expire** doit être défini sur **Jamais**.
     - Lorsque la stratégie d’étiquetage automatique s’applique uniquement à Exchange, vous pouvez configurer l’étiquette pour **Attribuer des autorisations maintenant** ou **Autoriser les utilisateurs à attribuer des autorisations** (pour les options Ne pas transférer ou Chiffrer uniquement).
 
 ### <a name="learn-about-simulation-mode"></a>En savoir plus sur le mode simulation

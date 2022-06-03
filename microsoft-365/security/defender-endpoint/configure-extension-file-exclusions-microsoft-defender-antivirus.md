@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622993"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873245"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -109,6 +109,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 3. Développez l’arborescence pour **Windows composants** \> **Antivirus Windows Defender** \> **exclusions**.
 
 4. Ouvrez le paramètre **Exclusions de chemin** d’accès à modifier et ajoutez vos exclusions.
+
     1. Définissez l’option **sur Activé**.
     2. Dans la section **Options** , sélectionnez **Afficher**.
     3. Spécifiez chaque dossier sur sa propre ligne sous la colonne **Nom de** la valeur.
@@ -118,6 +119,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 5. Sélectionnez **OK**.
 
 6. Ouvrez le paramètre **Exclusions d’extension** pour modifier et ajoutez vos exclusions.
+
     1. Définissez l’option **sur Activé**.
     2. Dans la section **Options** , sélectionnez **Afficher**.
     3. Entrez chaque extension de fichier sur sa propre ligne sous la colonne **Nom de** la valeur.
@@ -192,7 +194,6 @@ Vous pouvez utiliser l’astérisque `*`, le point `?`d’interrogation ou les v
 
 > [!IMPORTANT]
 > Il existe des limitations clés et des scénarios d’utilisation pour ces caractères génériques :
->
 > - L’utilisation des variables d’environnement est limitée aux variables de machine et à celles applicables aux processus s’exécutant en tant que compte NT AUTHORITY\SYSTEM.
 > - Vous ne pouvez utiliser qu’un maximum de six caractères génériques par entrée.
 > - Vous ne pouvez pas utiliser un caractère générique à la place d’une lettre de lecteur.
@@ -200,8 +201,6 @@ Vous pouvez utiliser l’astérisque `*`, le point `?`d’interrogation ou les v
 > - Actuellement, Microsoft Endpoint Configuration Manager ne prend pas en charge les caractères génériques (tels que `*` ou `?`).
     
 Le tableau suivant décrit comment utiliser les caractères génériques et fournit quelques exemples.
-
-<br/><br/>
 
 |Caractère générique|Exemples|
 |---|---|
@@ -211,9 +210,7 @@ Le tableau suivant décrit comment utiliser les caractères génériques et four
 
 > [!IMPORTANT]
 > Si vous mélangez un argument d’exclusion de fichier à un argument d’exclusion de dossier, les règles s’arrêtent à la correspondance de l’argument de fichier dans le dossier correspondant et ne recherchent pas les correspondances de fichiers dans les sous-dossiers.
->
 > Par exemple, vous pouvez exclure tous les fichiers qui commencent par « date » dans les dossiers `c:\data\final\marked` et `c:\data\review\marked` à l’aide de l’argument `c:\data\*\marked\date*`de règle.
->
 > Toutefois, cet argument ne correspond à aucun fichier dans les sous-dossiers sous `c:\data\final\marked` ou `c:\data\review\marked`.
 
 <a id="review"></a>
@@ -289,7 +286,7 @@ Le tableau suivant répertorie et décrit les variables d’environnement de com
 
 Vous pouvez récupérer les éléments de la liste d’exclusion à l’aide de l’une des méthodes suivantes :
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
@@ -297,7 +294,6 @@ Vous pouvez récupérer les éléments de la liste d’exclusion à l’aide de 
 
 > [!IMPORTANT]
 > Les modifications apportées à la liste d’exclusion avec stratégie de groupe **s’affichent** dans les listes de [l’application Sécurité Windows](microsoft-defender-security-center-antivirus.md).
->
 > Les modifications apportées à l’application Sécurité Windows **ne s’affichent pas** dans les listes stratégie de groupe.
 
 Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières :

@@ -15,24 +15,24 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: a53666c58c8a9cc5793d160c428bc96ea322b274
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8386b01da6d0db5703d74d96f4e22de18b1f7d70
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873619"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Stratégies de Microsoft Defender for Cloud Apps recommandées pour les applications SaaS
 
-Microsoft Defender for Cloud Apps s’appuie sur Azure AD stratégies d’accès conditionnel pour permettre la surveillance et le contrôle en temps réel des actions granulaires avec les applications SaaS, telles que le blocage des téléchargements, des chargements, du copier-coller et de l’impression. Cette fonctionnalité ajoute la sécurité aux sessions qui comportent des risques inhérents, par exemple lorsque les ressources d’entreprise sont accessibles à partir d’appareils non gérés ou par des utilisateurs invités.
+Microsoft Defender for Cloud Apps s’appuie sur des stratégies d’accès conditionnel Azure AD pour permettre la surveillance et le contrôle en temps réel des actions granulaires avec les applications SaaS, telles que le blocage des téléchargements, des chargements, du copier-coller et de l’impression. Cette fonctionnalité ajoute la sécurité aux sessions qui comportent des risques inhérents, par exemple lorsque les ressources d’entreprise sont accessibles à partir d’appareils non gérés ou par des utilisateurs invités.
 
-Defender pour le cloud Apps s’intègre également en mode natif à Microsoft Purview Information Protection, en fournissant une inspection du contenu en temps réel pour rechercher des données sensibles basées sur des types d’informations sensibles et des étiquettes de confidentialité et pour prendre les mesures appropriées.
+Defender pour le cloud Apps s’intègre également en mode natif à Protection des données Microsoft Purview, en fournissant une inspection du contenu en temps réel pour rechercher des données sensibles basées sur des types d’informations sensibles et des étiquettes de confidentialité et pour prendre les mesures appropriées.
 
 Ces conseils incluent des recommandations pour ces scénarios :
 
 - Intégrer des applications SaaS dans la gestion informatique
 - Paramétrer la protection pour des applications SaaS spécifiques
-- Configurer la protection contre la perte de données (DLP) Microsoft Purview pour vous aider à respecter les réglementations en matière de protection des données
+- Configurer Microsoft Purview protection contre la perte de données (DLP) pour vous aider à respecter les réglementations en matière de protection des données
 
 ## <a name="bring-saas-apps-into-it-management"></a>Intégrer des applications SaaS dans la gestion informatique
 
@@ -43,15 +43,15 @@ Vous pouvez commencer à les gérer en procédant comme suit :
 1. Tout d’abord, dans Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cette opération redirige la demande vers Defender pour le cloud Apps. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
 1. Ensuite, dans Defender pour le cloud Apps, créez des stratégies de session. Créez une stratégie pour chaque contrôle que vous souhaitez appliquer.
 
-Les autorisations sur les applications SaaS sont généralement basées sur les besoins de l’entreprise en matière d’accès à l’application. Ces autorisations peuvent être très dynamiques. L’utilisation de stratégies Defender pour le cloud Apps garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé au point de départ, à l’entreprise ou à une protection de sécurité spécialisée.
+Les autorisations sur les applications SaaS sont généralement basées sur les besoins de l’entreprise en matière d’accès à l’application. Ces autorisations peuvent être très dynamiques. L’utilisation de stratégies Defender pour le cloud Apps garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé à un point de départ, à une entreprise ou à une protection de sécurité spécialisée.
 
-Pour protéger les données de votre collection d’applications SaaS, le diagramme suivant illustre la Azure AD stratégie d’accès conditionnel nécessaire ainsi que les stratégies suggérées que vous pouvez créer dans Defender pour le cloud Apps. Dans cet exemple, les stratégies créées dans Defender pour le cloud Apps s’appliquent à toutes les applications SaaS que vous gérez. Elles sont conçues pour appliquer les contrôles appropriés en fonction de la gestion des appareils, ainsi que des étiquettes de confidentialité déjà appliquées aux fichiers.
+Pour protéger les données de votre collection d’applications SaaS, le diagramme suivant illustre la stratégie d’accès conditionnel Azure AD nécessaire, ainsi que les stratégies suggérées que vous pouvez créer dans Defender pour le cloud Apps. Dans cet exemple, les stratégies créées dans Defender pour le cloud Apps s’appliquent à toutes les applications SaaS que vous gérez. Elles sont conçues pour appliquer les contrôles appropriés en fonction de la gestion des appareils, ainsi que des étiquettes de confidentialité déjà appliquées aux fichiers.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Stratégies de gestion des applications SaaS dans Defender pour le cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 Le tableau suivant répertorie la nouvelle stratégie d’accès conditionnel que vous devez créer dans Azure AD.
 
-|Niveau de protection|Stratégie|Plus d’informations|
+|Niveau de protection|Stratégie|Informations supplémentaires|
 |---|---|---|
 |Tous les niveaux de protection|[Utiliser le contrôle d’application d’accès conditionnel dans Defender pour le cloud Apps](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|Cela configure votre fournisseur d’identité (Azure AD) pour qu’il fonctionne avec Defender pour le cloud Apps.|
 ||||
@@ -79,7 +79,7 @@ Par exemple, vous pouvez protéger votre environnement Box avec ces types de mod
 - Activité provenant d’un pays peu fréquent
 - Activité provenant d’adresses IP suspectes
 - Temps de trajet impossible
-- Activité effectuée par l’utilisateur arrêté (nécessite AAD en tant que fournisseur d’identité)
+- Activité effectuée par l’utilisateur arrêté (nécessite AAD comme fournisseur d’identité)
 - Détection des logiciels malveillants
 - Plusieurs tentatives de connexion infructueuses
 - Activité de rançongiciel
@@ -107,4 +107,4 @@ L’illustration et le tableau suivants fournissent plusieurs exemples de strat�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur l’utilisation de Defender pour le cloud Apps, consultez [Microsoft Defender for Cloud Apps documentation](//cloud-app-security/).
+Pour plus d’informations sur l’utilisation de Defender pour le cloud Apps, consultez [Microsoft Defender for Cloud Apps documentation](/defender-cloud-apps/).

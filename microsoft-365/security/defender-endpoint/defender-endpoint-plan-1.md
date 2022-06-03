@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 774d54aee080fbe3d6f5576fb29c85d887717b70
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872717"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour point de terminaison Plan 1
 
@@ -78,8 +77,8 @@ Les actions de réponse manuelle sont des actions que votre équipe de sécurit�
 
 | Fichier/appareil | Opération | Description |
 |:---|:---|:---|
-| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender pour point de terminaison. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender pour point de terminaison. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
 | Fichier | Arrêter et mettre en quarantaine |Empêche l’exécution des processus et met en quarantaine les fichiers associés. |
 | Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de bloc empêchent la lecture, l’écriture ou l’exécution des fichiers exécutables portables sur les appareils. <p>Les indicateurs d’autorisation empêchent le blocage ou la correction des fichiers. |
 
@@ -120,7 +119,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez l’atténuation des ranso
 
 Pour en savoir plus, consultez [Protéger les dossiers importants avec un accès contrôlé aux dossiers](controlled-folders.md).
 
-### <a name="device-control"></a>Contrôle des appareils
+### <a name="device-control"></a>Contrôle d’appareil
 
 Parfois, les menaces pesant sur les appareils de votre organisation se présentent sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour point de terminaison inclut des fonctionnalités pour empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
@@ -149,7 +148,7 @@ Avec la protection pare-feu réseau, vous pouvez définir des règles qui déter
 - Protéger les données sensibles et la propriété intellectuelle
 - Étendre votre investissement en matière de sécurité
 
-Pour plus d’informations, consultez [Windows Defender Pare-feu avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Pour en savoir plus, consultez [Pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Contrôle d’application
 
@@ -169,7 +168,7 @@ Pour en savoir plus, consultez [Microsoft 365 Defender vue d’ensemble du porta
 
 Pour plus d’informations, consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).
 
-### <a name="reporting"></a>Reporting
+### <a name="reporting"></a>Rapports
 
 Le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) permet d’accéder facilement aux informations sur les menaces détectées et les actions permettant de résoudre ces menaces. 
 
@@ -193,11 +192,14 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - Windows 7 (ESU requis)
 - Windows 8.1
 - Windows 10, version 1709 ou ultérieure
-- macOS : 11.5 (Big Sur), 10.15.7 (Catalina) ou 10.14.6 (Mojave)
+- Windows 10 Entreprise
+- Windows 10 Entreprise LTSC 2016 (ou version ultérieure)](/windows/whats-new/ltsc/)
+- Windows 10 Entreprise loT
+- macOS (les trois versions les plus récentes sont prises en charge)
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Comparer Microsoft Defender pour point de terminaison plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 - [Installer et configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)

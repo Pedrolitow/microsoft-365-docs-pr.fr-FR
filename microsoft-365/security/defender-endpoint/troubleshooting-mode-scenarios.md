@@ -1,5 +1,5 @@
 ---
-title: Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison
+title: Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison (préversion)
 description: Utilisez le mode de résolution des problèmes Microsoft Defender pour point de terminaison pour résoudre différents problèmes antivirus.
 keywords: antivirus, résolution des problèmes, mode de résolution des problèmes, protection contre les falsifications, compatibilité
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b62ed508640fcf9523c768d2af8e038e4d269e85
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: f5a1734b267f512f19179e20b7ba66d8f38e1d19
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874111"
 ---
-# <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison
+# <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint-preview"></a>Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison (préversion)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,6 +33,8 @@ ms.locfileid: "65420055"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
+> [!IMPORTANT]
+> Certaines informations concernent les produits préversion qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les problèmes liés aux différentes fonctionnalités de l’antivirus Microsoft Defender en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité Enterprise et nécessite un accès Microsoft 365 Defender.
 
@@ -46,7 +48,7 @@ Si vous souhaitez installer une application mais recevez un message d’erreur i
 
 3. Démarrer le moniteur de processus (ProcMon). Consultez les étapes décrites dans [Résoudre les problèmes de performances liés à la protection en temps réel](troubleshoot-performance-issues.md).  
 
-4. Accédez à **Windows securityThreat** >  **& virus protectionManage** >  **settingsTamper** >  **protectionOff** > .  
+4. Accédez à **Windows sécurité** > **Menaces & protection** >  antivirus **Gérer les paramètres****De protection** >  contre les falsifications  > **désactivée**.  
 
 5. Lancez une invite de commandes PowerShell avec élévation de privilèges et désactivez RTP. 
 
@@ -59,7 +61,7 @@ Si vous souhaitez installer une application mais recevez un message d’erreur i
 
 Parfois, lors d’une analyse planifiée, MsMpEng.exe pouvez consommer un processeur élevé.
 
-1. Accédez à l’onglet **Task** **ManagerDetails** >  pour confirmer que MsMpEng.exe est la raison de l’utilisation élevée du processeur. Vérifiez également si une analyse planifiée est en cours.
+1. Accédez à l’onglet Détails **du Gestionnaire** > **des tâches** pour confirmer que MsMpEng.exe est la raison de l’utilisation élevée du processeur. Vérifiez également si une analyse planifiée est en cours.
 
 2. Exécutez ProcMon pendant le pic du processeur pendant environ 5 minutes, puis examinez le journal ProcMon pour obtenir des indices. 
 
@@ -123,7 +125,7 @@ La protection réseau bloque le domaine Microsoft, empêchant les utilisateurs d
 
 Pour plus d’informations, consultez [Utiliser la protection réseau pour empêcher les connexions à des sites incorrects](network-protection.md). 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Activer le mode de résolution des problèmes](enable-troubleshooting-mode.md)
 - [Protéger les paramètres de sécurité avec la protection contre la falsifiation](prevent-changes-to-security-settings-with-tamper-protection.md)

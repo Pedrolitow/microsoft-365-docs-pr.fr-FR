@@ -21,20 +21,20 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes de priorité dans leurs organisations Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50d51bf2861d1ef1b9e4d9694fc9469fc5ec7406
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873377"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Tous les comptes d’utilisateurs n’ont pas accès aux mêmes informations d’entreprise. Certains comptes ont accès à des informations sensibles, telles que les données financières, les informations de développement de produits, l’accès des partenaires aux systèmes de build critiques, etc. En cas de compromission, les comptes qui ont accès à des informations hautement confidentielles constituent une menace sérieuse. Nous appelons ces types de _comptes prioritaires_. Les comptes prioritaires incluent (mais ne sont pas limités à) les chefs de la direction, les directeurs financiers, les directeurs financiers, les comptes d’administrateur d’infrastructure, les comptes système de build et bien plus encore.
 
@@ -53,7 +53,7 @@ Microsoft 365 et Microsoft Defender pour Office 365 contiennent plusieurs foncti
 |[Former les utilisateurs](#train-users)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> Pour plus d’informations sur la sécurisation des _comptes privilégiés_ (comptes d’administrateur), consultez [cette rubrique](/azure/architecture/framework/security/critical-impact-accounts).
+> Pour plus d’informations sur la sécurisation des _comptes privilégiés_ (comptes d’administrateur), consultez [cette rubrique](/security/compass/critical-impact-accounts).
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Augmenter la sécurité de connexion pour les comptes prioritaires
 

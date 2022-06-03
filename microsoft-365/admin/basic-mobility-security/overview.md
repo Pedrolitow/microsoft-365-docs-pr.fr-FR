@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Gérez et sécurisez les appareils mobiles connectés à votre organisation Microsoft 365 en configurant et en utilisant mobilité et sécurité de base.
-ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863203"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -50,7 +50,7 @@ Voici un résumé des étapes :
 
 **Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous effectuez cette opération, vos utilisateurs reçoivent un message d’inscription sur leur appareil et, une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez configurées pour eux. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base.":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base.":::
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 
@@ -60,7 +60,7 @@ Une fois que vous avez configuré La mobilité et la sécurité de base et que v
 
 Si vous avez simplement besoin de gestion des applications mobiles (MAM), peut-être pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune fournit une autre option que l’inscription et la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies GAM à l’aide de la Portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, consultez [Protection d'applications vue d’ensemble des stratégies](/mem/intune/apps/app-protection-policy).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer la mobilité et la sécurité de base](set-up.md) (article)\
 [Inscrire votre appareil mobile à l’aide de la mobilité et de la sécurité de base](enroll-your-mobile-device.md) (article)\

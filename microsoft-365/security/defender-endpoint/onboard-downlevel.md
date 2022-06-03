@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0cd1e0aa999200814639f24401bf019774ca1d43
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825209"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872959"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -34,7 +34,7 @@ ms.locfileid: "64825209"
 - Windows 7 Enterprise SP1
 - Windows 7 Pro SP1
 - Windows 8.1 Professionnel
-- Windows 8,1 Entreprise
+- Windows 8.1 Entreprise
 - Windows Server 2008 R2 SP1
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
@@ -49,7 +49,7 @@ Pour intégrer des points de terminaison clients Windows de bas niveau à Defend
 Pour Windows Server 2008 R2 SP1, vous avez la possibilité [d’intégrer via Microsoft Defender pour le cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Une licence serveur autonome Defender pour point de terminaison est requise, par nœud, pour intégrer un serveur Windows via Microsoft Monitoring Agent (option 1). Une licence Microsoft Defender pour serveurs est également nécessaire, par nœud, pour intégrer un serveur Windows via Microsoft Defender pour le cloud (option 2), consultez [les fonctionnalités prises en charge disponibles dans Microsoft Defender pour le cloud](/azure/security-center/security-center-services).
+> Une licence serveur autonome Defender pour point de terminaison est requise, par nœud, pour intégrer un serveur Windows via Microsoft Monitoring Agent (option 1). Une licence Microsoft Defender pour serveurs est également nécessaire, par nœud, pour intégrer un serveur Windows via Microsoft Defender pour le cloud (option 2), consultez [les fonctionnalités prises en charge disponibles dans Microsoft Defender pour le cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’il est correctement intégré au service. Pour plus d’informations, consultez [Exécuter un test de détection sur un point de terminaison Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
@@ -132,7 +132,7 @@ Une fois l’opération terminée, vous devez voir les serveurs Windows intégr�
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Intégrer des serveurs Windows via Microsoft Defender pour le cloud
 
-1. Dans le volet de navigation Microsoft 365 Defender, sélectionnez **Paramètres** >  **Device** **managementOnboarding** > .
+1. Dans le volet de navigation Microsoft 365 Defender, sélectionnez **Paramètres** >  **Device management** > **Onboarding**.
 
 2. Sélectionnez **Windows Server 2008 R2 SP1** comme système d’exploitation.
 
@@ -200,7 +200,7 @@ Suivez les étapes décrites dans [Exécuter un test de détection sur un appare
     Télécharger les mises à jour pour Windows Server 2008 R2 x64
     
     .NET Framework 3.5.1 (KB315418)<br>
-    [Pour Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    [Pour Windows Server 2008 R2 x64](/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2)
     
     >[!NOTE]
     > Cet article part du principe que vous utilisez des serveurs x64 (agent MMA .exe nouvelle version compatible SHA-2 x64).

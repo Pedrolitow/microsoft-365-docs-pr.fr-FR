@@ -1,7 +1,7 @@
 ---
 title: Supprimer un fichier de la bibliothèque de réponses en direct
-description: Découvrez comment supprimer un fichier de la bibliothèque de réponses en direct.
-keywords: api, api de graphique, api pris en charge, supprimer de la bibliothèque
+description: Découvrez comment supprimer un fichier de la bibliothèque de réponses actives.
+keywords: api, API de graphe, api prises en charge, suppression de la bibliothèque
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,19 +20,19 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 23625c8b7160d604df5f3a8b1b1387fc31027acf
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 97a2a2152a60ff542cb946c4283fe3f26c4b9c8e
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874127"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Supprimer un fichier de la bibliothèque de réponses en direct  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -44,15 +44,15 @@ ms.locfileid: "63526813"
 
 ## <a name="api-description"></a>Description de l’API
 
-Supprimez un fichier de la bibliothèque de réponses en direct.
+Supprimez un fichier de la bibliothèque de réponses actives.
 
 ## <a name="limitations"></a>Limites
 
-1.  Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1.  Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place](apis-intro.md).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Démarrage](apis-intro.md).
 
 | Type d’autorisation                    | Autorisation     | Nom d’affichage de l’autorisation        |
 |------------------------------------|----------------|--------------------------------|
@@ -75,9 +75,9 @@ Vide
 
 ## <a name="response"></a>Réponse
 
--   Si le fichier existe dans la bibliothèque et supprimé correctement 204 Aucun contenu.
+-   Si le fichier existe dans la bibliothèque et a été supprimé avec succès 204 Aucun contenu.
 
--   Si le nom de fichier spécifié n’a pas été trouvé 404 In trouvé.
+-   Si le nom de fichier spécifié est introuvable 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 

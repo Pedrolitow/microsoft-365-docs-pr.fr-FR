@@ -21,16 +21,16 @@ ms.custom:
 description: Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30b46bd541f233430506766eabc2d667fad52c22
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a1a9b7e6a006eb63078f237ce1078d6aa825fa14
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872360"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -101,7 +101,7 @@ Veillez à visiter ces deux zones dans Azure Active Directory pour terminer la c
 
 Si votre organisation inclut des bureaux disposant d’un accès réseau sécurisé, ajoutez les plages d’adresses IP approuvées pour Azure Active Directory en tant qu’emplacements nommés. Cette fonctionnalité permet de réduire le nombre de faux positifs signalés pour les événements à risque de connexion.
 
-Voir : [Emplacements nommés dans Azure Active Directory](/azure/active-directory/active-directory-named-locations)
+Voir : [Emplacements nommés dans Azure Active Directory](/azure/active-directory/conditional-access/location-condition)
 
 ### <a name="block-apps-that-dont-support-modern-authentication"></a>Bloquer les applications qui ne prennent pas en charge l’authentification moderne
 

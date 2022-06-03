@@ -17,20 +17,20 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs avec des balises utilisateur dans Microsoft Defender pour Office 365 Plan 2. Le filtrage des balises est disponible dans les alertes, les rapports et les enquêtes dans Microsoft Defender pour Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 24509489259a368fb35773603e3708a265f8ed76
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873267"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les balises utilisateur sont des identificateurs pour des groupes spécifiques d’utilisateurs dans [Microsoft Defender pour Office 365](defender-for-office-365.md). Il existe deux types de balises utilisateur :
 
@@ -81,7 +81,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 - Vous pouvez également gérer et surveiller les comptes prioritaires dans le Centre d'administration Microsoft 365. Pour obtenir des instructions, consultez [Gérer et surveiller les comptes prioritaires](../../admin/setup/priority-accounts.md).
 
-- Pour plus d’informations sur la sécurisation des _comptes privilégiés_ (comptes d’administrateur), consultez [cette rubrique](/azure/architecture/framework/security/critical-impact-accounts).
+- Pour plus d’informations sur la sécurisation des _comptes privilégiés_ (comptes d’administrateur), consultez [cette rubrique](/security/compass/critical-impact-accounts).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour créer des balises utilisateur
 

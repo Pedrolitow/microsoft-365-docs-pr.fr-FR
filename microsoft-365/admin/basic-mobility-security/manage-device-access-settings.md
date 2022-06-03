@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Pour les appareils que vous ne pouvez pas gérer avec mobilité et sécurité de base, vous devez bloquer Exchange ActiveSync’accès de l’application à Microsoft 365 e-mail.
-ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01b89bc50fb348072873d68f52b75d721830aeb5
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863118"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Mobilité et sécurité de base
 
@@ -40,9 +40,9 @@ Procédez comme suit :
 
 3. Accédez aux stratégies d’appareil de **gestion des** \> appareils de **protection contre la** \> perte de données **, puis** sélectionnez **Gérer les paramètres d’accès aux appareils à l’échelle de l’organisation**.
 
-4. Sélectionnez **Bloquer**. 
+4. Sélectionnez **Access**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Case à cocher Mobilité et sécurité de base pour bloquer l’accès.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Case à cocher Mobilité et sécurité de base pour bloquer l’accès.":::
 
 5. Sélectionnez **Enregistrer**.
 

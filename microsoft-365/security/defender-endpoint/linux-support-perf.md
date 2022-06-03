@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 369c6a198035418a5c16e2a72d84c8dcfc88be2f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873003"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -30,7 +30,7 @@ ms.locfileid: "64666435"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -190,7 +190,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
    ![Image de l’exemple de ligne de commande.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - L’analyseur requiert « lxml » pour produire la sortie du résultat. S’il n’est pas installé, l’analyseur tente de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - L’analyseur requiert « lxml » pour produire la sortie du résultat. S’il n’est pas installé, l’analyseur tente de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://pypi.org/search/?q=lxml>
 > 
 > - En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
 >
@@ -243,9 +243,9 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 
   Description : Fichier XML supplémentaire utilisé par l’analyseur lors de la génération du rapport HTML.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  Description : détails sur le service audité et les composants associés pour le système d’exploitation [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+  Description : détails sur le service audité et les composants associés pour le système d’exploitation [Linux](/microsoft-365/security/defender-endpoint/linux-resources)
 
 - perf_benchmark.tar.gz
 
