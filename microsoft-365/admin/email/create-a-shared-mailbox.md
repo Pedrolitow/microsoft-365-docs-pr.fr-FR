@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864559"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -92,6 +92,9 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 - **Envoyer en tant que** : l’autorisation Envoyer en tant que permet à un utilisateur d’emprunter l’identité du propriétaire de la boîte aux lettres partagée pour envoyer des messages. Par exemple, si Katerina se connecte à la boîte aux lettres partagée du service Marketing et envoie un message, le service Marketing semblera en être l’expéditeur.
 
 - **Envoyer de la part de** : l'autorisation Envoyer de la part de permet à l'utilisateur d'envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si Jacques se connecte à la boîte aux lettres partagée Réception Immeuble 32 et envoie un message, ce dernier semblera avoir été envoyé par « Jacques de la part de Réception Immeuble 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder des autorisations Envoyer de la part de ; vous devez utiliser la cmdlet **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
+
+> [!NOTE]
+> Les autorisations **Envoyer en tant que** et **Envoyer de la part de** ne fonctionnent pas dans le client de bureau Outlook avec le paramètre *HiddenFromAddressListsEnabled* sur la boîte aux lettres définie sur **True**, car elles nécessitent que la boîte aux lettres soit visible dans Outlook via la liste d’adresses globale.
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Utiliser le CAE pour modifier la délégation de boîte aux lettres partagée
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 60ebe9a0f19282b02417239bf8ba85deb0658988
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 44b177d0215acaa2e637aacda22db3eb16ee7168
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863649"
+ms.locfileid: "65864515"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
@@ -164,7 +164,7 @@ Configurez des dictionnaires de mots clés personnalisés (ou lexicons) pour fou
 
 ### <a name="classifiers"></a>Classificateurs
 
-Les classifieurs intégrés et globaux pouvant être formés analysent les messages envoyés ou reçus sur tous les canaux de communication de votre organisation pour rechercher différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge l’identification des mots clés de message dans plusieurs langues :
+[Les classifieurs intégrés et globaux pouvant être formés analysent les messages envoyés](/microsoft-365/compliance/classifier-learn-about) ou reçus sur tous les canaux de communication de votre organisation pour rechercher différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge l’identification des mots clés de message dans plusieurs langues :
 
 - Arabe
 - Chinois (simplifié)
@@ -182,11 +182,12 @@ Les classifieurs intégrés et globaux pouvant être formés analysent les messa
 Les classifieurs intégrés et globaux de conformité des communications analysent les communications à la recherche de termes, d’images et de sentiments pour les types de langage et de contenu suivants :
 
 - **Images pour adultes** : analyse les images qui sont sexuellement explicites par nature.
+- **Plaintes des clients** : recherche les commentaires et les plaintes concernant les produits ou services de votre organisation.
 - **Discrimination** : recherche un langage discriminatoire explicite et est particulièrement sensible à la langue discriminatoire à l’égard des communautés afro-américaines/noires par rapport à d’autres communautés.
 - **Images gory** : recherche des images qui décrivent la violence et le gore.
+- **Harcèlement** : Analyses de comportements offensants ciblant des personnes concernant la race, la couleur, la religion, l’origine nationale.
 - **Blasphème** : Recherche les expressions profanes qui gênent la plupart des gens.
 - **Images racées** : recherche des images qui sont sexuellement suggestifs dans la nature, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
-- **Harcèlement ciblé** : Analyses de comportements offensants ciblant des personnes concernant la race, la couleur, la religion, l’origine nationale.
 - **Menace** : recherche les menaces de violence ou de dommages physiques à une personne ou à des biens.
 
 Les classifieurs d’images *Adult*, *Racy* et *Gory* analysent les fichiers aux formats .jpeg, .png, .gif et .bmp. La taille des fichiers image doit être inférieure à 4 mégaoctets (Mo) et les dimensions des images doivent être supérieures à 50 x 50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image puisse être évaluée. L’identification d’image est prise en charge pour Exchange Online messages électroniques et Microsoft Teams canaux et conversations.
@@ -195,8 +196,6 @@ Les classifieurs intégrés pouvant être formés et globaux ne fournissent pas 
 
 > [!NOTE]
 > Les stratégies utilisant des classifieurs inspectent et évaluent les messages dont le nombre de mots est égal ou supérieur à six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour la surveillance des stratégies de conformité des communications pour ce type de contenu.
-
-Pour plus d’informations sur les classifieurs pouvant être formés, consultez [Prise en main des classifieurs pouvant être formés](classifier-get-started-with.md).
 
 ### <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
