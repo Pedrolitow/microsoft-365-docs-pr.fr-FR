@@ -154,12 +154,10 @@
             - name: Surveillance d’Exchange Online.
               href: microsoft-365-exchange-monitoring.md
               items:
-                - name: Alertes de service pour l’utilisation de la boîte aux lettres
+                - name: Avis de service pour l'utilisation des boîtes aux lettres
                   href: microsoft-365-mailbox-utilization-service-alerts.md
-                - name: Alertes de service pour les retards de source MRS
+                - name: Avis de service pour les retards de source MRS
                   href: microsoft-365-mrs-source-delays-service-alerts.md
-                - name: Alertes de service pour les messages en file d’attente pour les destinataires externes
-                  href: microsoft-365-external-recipient-service-alerts.md
             - name: Surveillance de Microsoft 365 Apps
               href: microsoft-365-apps-monitoring.md
             - name: Surveillance Microsoft 365 Teams
