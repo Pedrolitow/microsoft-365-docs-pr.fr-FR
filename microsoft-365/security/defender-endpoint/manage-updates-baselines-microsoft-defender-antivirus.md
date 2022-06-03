@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d2ad08c91d8c28163eccf239f9a7266b15a44927
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: ef9793a1bcbf09f6b7a1640d9213522cdb741891
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872267"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -297,7 +297,7 @@ Aucun problème connu
 
 ### <a name="whats-new"></a>Nouveautés
 - Prise en charge du contrôle d’appareil ajoutée pour les appareils portables Windows
-- La protection des applications potentiellement indésirables (PUA) est activée par défaut pour les consommateurs (consultez [Les applications potentiellement indésirables seront bloquées par défaut](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- La protection des applications potentiellement indésirables (PUA) est activée par défaut pour les consommateurs (voir [Bloquer les applications potentiellement indésirables avec Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).)
 - Les analyses planifiées pour les systèmes gérés par objet stratégie de groupe respectent le temps d’analyse configuré par l’utilisateur
 - Améliorations apportées au moteur de surveillance du comportement
 

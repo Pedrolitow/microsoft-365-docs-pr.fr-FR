@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Connectez-vous à Microsoft 365 et configurez Mobilité et sécurité de base pour utiliser la gestion intégrée des appareils mobiles pour sécuriser et gérer les appareils mobiles de vos utilisateurs.
-ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: b84c97302743177f0a69978ebf358c0fbd1045a8
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863563"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits dans mobile Gestion des appareils dans Microsoft 365
 
@@ -36,13 +36,9 @@ Une fois que vous l’avez configuré, les membres de votre organisation doivent
 
 Pour accéder au panneau de gestion des appareils, procédez comme suit :
 
-1. Accédez au [Centre d’administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. Connectez-vous au Centre d'administration Microsoft 365 et accédez à la [page Mobile Gestion des appareils](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Tapez Mobile Gestion des appareils dans le champ de recherche, puis sélectionnez **Mobile Gestion des appareils** dans la liste des résultats.
-
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles.":::
-
-3. Sélectionnez **Prise en main**.
+1. Sélectionnez **Prise en main**.
 
 ## <a name="manage-mobile-devices"></a>Gérer des appareils mobiles
 
@@ -52,9 +48,9 @@ Une fois la mobilité et la sécurité de base configurées, voici quelques faç
 |---|---|
 |Réinitialiser un appareil|Dans le panneau Gestion des appareils, sélectionnez *le nom de l’appareil*, puis **réinitialisation complète** pour supprimer toutes les informations ou **réinitialisation sélective** pour supprimer uniquement les informations d’organisation sur l’appareil. Pour plus d’informations, consultez [Réinitialiser un appareil mobile dans Mobilité et sécurité de base](wipe-mobile-device.md).|
 |Bloquer l'accès des appareils non pris en charge à la messagerie Exchange à l'aide d'Exchange ActiveSync|Dans le panneau Gestion des appareils, sélectionnez **Bloquer**.|
-|Configurer des stratégies d’appareil telles que les exigences de mot de passe et les paramètres de sécurité|Dans le panneau Gestion des appareils, sélectionnez **Stratégies de sécurité** >  **des appareilsAdd +**. Pour plus d’informations, consultez [Créer des stratégies de sécurité des appareils dans Mobilité et sécurité de base](create-device-security-policies.md).|
+|Configurer des stratégies d’appareil telles que les exigences de mot de passe et les paramètres de sécurité|Dans le panneau Gestion des appareils, sélectionnez **Stratégies de sécurité** > **de l’appareil Ajouter +**. Pour plus d’informations, consultez [Créer des stratégies de sécurité des appareils dans Mobilité et sécurité de base](create-device-security-policies.md).|
 |Afficher la liste des appareils bloqués|Dans le panneau Gestion des appareils, sous **Sélectionner une vue**, **sélectionnez Bloquer**.|
-|Débloquer un appareil non pris en charge ou non conforme pour un utilisateur ou un groupe d'utilisateurs|Choisissez l’une des options suivantes pour débloquer les appareils :<br/>- Supprimez l’utilisateur ou les utilisateurs du groupe de sécurité auquel la stratégie a été appliquée. Accédez à Centre d'administration Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>, puis sélectionnez le nom du groupe. Sélectionnez **Modifier les membres et les administrateurs**.<br/>- Supprimez le groupe de sécurité dont les utilisateurs sont membres de la stratégie d’appareil. Accédez au Centre de sécurité & conformité > **stratégies** >  de **sécuritéDevice**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez** **EditDeployment** > .<br/>- Débloquer tous les appareils non conformes pour une stratégie d’appareil. Accédez au Centre de sécurité & conformité > **stratégies** >  de **sécuritéDevice**. Sélectionnez le nom de la stratégie d’appareil, puis sélectionnez **la configuration requise pour EditAccess** > . Sélectionnez **Autoriser l’accès et signaler une violation**.<br/>- Pour débloquer un appareil non conforme ou non pris en charge pour un utilisateur ou un groupe d’utilisateurs, accédez au Centre de sécurité & conformité > **paramètres d’accès aux appareils** **Security policiesDevice** >  **managementManage** > . Ajoutez un groupe de sécurité avec les membres que vous souhaitez exclure de l’accès bloqué à Microsoft 365. Pour plus d’informations, consultez [Créer, modifier ou supprimer un groupe de sécurité dans le Centre d'administration Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).|
+|Débloquer un appareil non pris en charge ou non conforme pour un utilisateur ou un groupe d'utilisateurs|Choisissez l’une des options suivantes pour débloquer les appareils :<br/>- Supprimez l’utilisateur ou les utilisateurs du groupe de sécurité auquel la stratégie a été appliquée. Accédez à Centre d'administration Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>, puis sélectionnez le nom du groupe. Sélectionnez **Modifier les membres et les administrateurs**.<br/>- Supprimez le groupe de sécurité dont les utilisateurs sont membres de la stratégie d’appareil. Accédez au Centre de sécurité & conformité > **stratégies** >  de **sécurité Stratégies de sécurité Stratégies de sécurité Des stratégies de sécurité des appareils**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez Modifier** > **le déploiement**.<br/>- Débloquer tous les appareils non conformes pour une stratégie d’appareil. Accédez au Centre de sécurité & conformité > **stratégies** >  de **sécurité Stratégies de sécurité Stratégies de sécurité Des stratégies de sécurité des appareils**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez Modifier** > **les exigences d’accès**. Sélectionnez **Autoriser l’accès et signaler une violation**.<br/>- Pour débloquer un appareil non conforme ou non pris en charge pour un utilisateur ou un groupe d’utilisateurs, accédez au Centre de sécurité & conformité > Stratégies de **sécurité** > **Gestion des** > **appareils Gérer les paramètres d’accès des appareils**. Ajoutez un groupe de sécurité avec les membres que vous souhaitez exclure de l’accès bloqué à Microsoft 365. Pour plus d’informations, consultez [Créer, modifier ou supprimer un groupe de sécurité dans le Centre d'administration Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).|
 |Supprimer des utilisateurs afin que leurs appareils ne soient plus gérés par mobilité et sécurité de base|Pour supprimer l’utilisateur, modifiez le groupe de sécurité qui a des stratégies de gestion des appareils pour la mobilité et la sécurité de base. Pour plus d’informations, consultez [Créer, modifier ou supprimer un groupe de sécurité dans le Centre d'administration Microsoft 365](../../admin/email/create-edit-or-delete-a-security-group.md).<br/>Pour supprimer la mobilité et la sécurité de base de tous vos utilisateurs Microsoft 365, consultez [Désactiver la mobilité et la sécurité de base](turn-off.md).|
 
 Live (v14)

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer les informations des appareils inscrits.
-ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129087"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863051"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Réinitialiser un appareil mobile dans Mobilité et sécurité de base
 
@@ -46,25 +46,21 @@ Les appareils mobiles peuvent stocker des informations d’organisation sensible
 
 ## <a name="wipe-a-mobile-device"></a>Réinitialiser un appareil mobile
 
-1. Accédez au [Centre d’administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. Connectez-vous au Centre d'administration Microsoft 365 et accédez à la [page Mobile Gestion des appareils](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. Tapez Mobile Gestion des appareils dans le champ de recherche, puis sélectionnez **Mobile Gestion des appareils** dans la liste des résultats.
+1. Sélectionnez **Gérer les appareils**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de base de gestion des appareils mobiles Mobility and Secruity.":::
+1. Sélectionnez l’appareil que vous voulez réinitialiser.
 
-3. Sélectionnez **Gérer les appareils**.
+1. Sélectionnez **Gérer**.
 
-4. Sélectionnez l’appareil que vous voulez réinitialiser.
-
-5. Sélectionnez **Gérer**.
-
-6. Sélectionnez le type de réinitialisation à distance que vous voulez effectuer.
+1. Sélectionnez le type de réinitialisation à distance que vous voulez effectuer.
 
     - Pour effectuer une réinitialisation complète et restaurer l’appareil dans ses paramètres d’usine, sélectionnez **Réinitialisation d’usine**.
     - Pour effectuer une réinitialisation sélective et supprimer uniquement Microsoft 365 informations de l’organisation, **sélectionnez Supprimer les données d’entreprise**.
     - Pour supprimer l’appareil de votre organisation, **sélectionnez Supprimer l’appareil**.
 
-7. Cliquez sur **Oui** pour confirmer.
+1. Cliquez sur **Oui** pour confirmer.
 
 ## <a name="how-do-i-know-it-worked"></a>Comment faire sais-tu que ça a fonctionné ?
 
@@ -89,4 +85,4 @@ La réinitialisation est envoyée immédiatement à l’appareil mobile et l’a
 |Les profils de messagerie créés par Mobilité et sécurité de base sont supprimés et les e-mails mis en cache sur l’appareil sont supprimés.|Oui|N/A|
 
 > [!NOTE]
-> Portail d'entreprise application est disponible sur le App Store pour iOS et le Play Store pour appareils Android.
+> Portail d'entreprise application est disponible au App Store pour iOS et Play Store pour les appareils Android.

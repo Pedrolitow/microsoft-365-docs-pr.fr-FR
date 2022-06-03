@@ -20,11 +20,13 @@
           href: uploadApplication.md
     - name: Créer un package
       href: buildpackage.md
+    - name: Cloner un package existant
+      href: clonepackage.md
     - name: Instructions relatives aux packages
       href: contentguideline.md
     - name: Règles d’application/test
       href: rules.md
-- name: Guides pratiques
+- name: Guides des pratiques
   items:
     - name: Test d’application serveur
       href: server.md

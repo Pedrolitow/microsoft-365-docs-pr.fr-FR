@@ -16,11 +16,11 @@ metadata:
   description: Trouvez des réponses aux questions fréquentes (FAQ) sur le déplacement de données de base vers une nouvelle zone géographique de centre de données Office 365.
   ms.custom: seo-marvel-mar2020
   ms.openlocfilehash: 8e6b8299bdd6d66ea6f64d2e980cb156a35213f8
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65101312"
+  ms.lasthandoff: 06/03/2022
+  ms.locfileid: "65875810"
 title: FAQ général relatif au déplacement de données
 summary: Voici des réponses aux questions générales sur le déplacement des données client principales au repos vers une nouvelle zone géographique de centre de données.
 sections:
@@ -54,7 +54,7 @@ sections:
   - question: >
       À quel moment ma migration est-elle terminée afin que les données client principales de mon locataire soient stockées au repos dans ma nouvelle zone géographique ?
     answer: >
-      En raison de dépendances partagées entre Exchange Online et SharePoint Online/OneDrive Entreprise, aucune migration ne peut être considérée comme terminée tant que les deux services ne sont pas migrés. Exchange Online et SharePoint Online/OneDrive Entreprise migrent souvent à des moments distincts et indépendamment les uns des autres. Les administrateurs clients reçoivent une confirmation dans le Centre de messages lorsque chaque migration de service est terminée et peuvent afficher la carte d’emplacement des données dans le Centre d’administration à tout moment pour confirmer les données client principales à l’emplacement de repos de chaque service.
+      En raison de dépendances partagées entre Exchange Online et SharePoint Online/OneDrive Entreprise, aucune migration ne peut être considérée comme terminée tant que les deux services ne sont pas migrés. Exchange Online et SharePoint Online/OneDrive Entreprise migrent souvent à des moments distincts et indépendamment les uns des autres. Les administrateurs de locataire client reçoivent une confirmation dans le Centre de messages lorsque chaque migration de service est terminée et peuvent afficher la carte d’emplacement des données dans le centre Administration à tout moment pour confirmer les données client principales à l’emplacement de repos de chaque service.
   - question: >
       Comment vous assurez-vous que mes données client sont sécurisées lors du déplacement et qu’il n’y aura pas de temps d’arrêt ?
     answer: >
@@ -69,7 +69,7 @@ sections:
   - question: >
       Où se trouvent mes données client principales ?
     answer: >
-      Les administrateurs de locataire client peuvent afficher la carte d’emplacement des données dans le Centre d’administration à tout moment pour confirmer les données client principales à l’emplacement de repos de chaque service, en particulier pour leur locataire. Nous publions également l’emplacement des zones géographiques des centres de données, des centres de données et l’emplacement des données client Office 365 sur les [cartes de centre de données interactives Microsoft 365](https://office.com/datamaps) comme référence pour les données client principales par défaut actuelles aux emplacements de repos des nouveaux locataires. Vous pouvez vérifier l’emplacement de vos données client au repos via la section Emplacement des données sous votre profil d’organisation dans le Centre d'administration Microsoft 365.
+      Les administrateurs de locataire client peuvent afficher la carte d’emplacement des données dans le centre Administration à tout moment pour confirmer les données client principales à l’emplacement de repos de chaque service, en particulier pour leur locataire. Nous publions également l’emplacement des zones géographiques des centres de données, des centres de données et l’emplacement des données client Office 365 sur les [cartes de centre de données interactives Microsoft 365](https://office.com/datamaps) comme référence pour les données client principales par défaut actuelles aux emplacements de repos des nouveaux locataires. Vous pouvez vérifier l’emplacement de vos données client au repos via la section Emplacement des données sous votre profil d’organisation dans le Centre d'administration Microsoft 365.
   - question: >
       Quand pourrai-je demander un déplacement ?
     answer: >
@@ -150,5 +150,5 @@ sections:
   - question: >
       J’ai déployé des dossiers publics dans mon locataire. Quel sera l’impact sur l’accès aux dossiers publics pendant ou après le déplacement ?
     answer: >
-      Il n’y a aucun impact sur les utilisateurs finaux qui accèdent à des dossiers publics pendant ou après le déplacement de dossiers publics. Toutefois, les dossiers publics peuvent ne pas être disponibles pour l’administration dans l’outil Exchange Centre d’administration tant que toutes les boîtes aux lettres de dossiers publics ne sont pas déplacées dans la même région. Pour plus d’informations, consultez [cet article](https://aka.ms/pfxrf) .
-additionalContent: "\n## <a name=\"related-topics\"></a>Voir aussi\n  [Déplacement de données de base vers de nouvelles zones géographiques de centre de données Microsoft 365](moving-data-to-new-datacenter-geos.md)\n\n  [Procédure de demande d’un déplacement de données](request-your-data-move.md)\n\n  [Microsoft 365 multigéographique](https://aka.ms/multi-geo)\n\n  [Microsoft 365 carte interactive du centre de données](https://office.com/datamaps)\n\n  [Prise en charge Microsoft 365](../admin/get-help-support.md)\n\n  [Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)\n\n  [Services Azure par région](https://azure.microsoft.com/regions/)"
+      Il n’y a aucun impact sur les utilisateurs finaux qui accèdent à des dossiers publics pendant ou après le déplacement de dossiers publics. Toutefois, les dossiers publics peuvent ne pas être disponibles pour l’administration dans l’outil centre Exchange Administration tant que toutes les boîtes aux lettres de dossiers publics ne sont pas déplacées dans la même région. Pour plus d’informations, consultez [cet article](https://aka.ms/pfxrf) .
+additionalContent: "\n## <a name=\"related-topics\"></a>Rubriques connexes\n  [Déplacement de données de base vers de nouvelles zones géographiques de centre de données Microsoft 365](moving-data-to-new-datacenter-geos.md)\n\n  [Procédure de demande d’un déplacement de données](request-your-data-move.md)\n\n  [Microsoft 365 multigéographique](https://aka.ms/multi-geo)\n\n  [Microsoft 365 carte interactive du centre de données](https://office.com/datamaps)\n\n  [Prise en charge Microsoft 365](../admin/get-help-support.md)\n\n  [Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)\n\n  [Services Azure par région](https://azure.microsoft.com/regions/)"

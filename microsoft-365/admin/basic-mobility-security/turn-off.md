@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Supprimez des groupes ou des stratégies pour désactiver la mobilité et la sécurité de base.
-ms.openlocfilehash: c3c82c040e688977a68e06639e87c8f733bc8c38
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 59a54b9969bf16c7523a6862c6f0960bb1527e8a
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863029"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Désactiver l’option Mobility et Security de base
 
@@ -36,7 +36,7 @@ Ces options suppriment l’application de la sécurité et de la mobilité de ba
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Supprimer des groupes de sécurité utilisateur des stratégies d’appareil mobilité et sécurité de base
 
-1. Dans votre type de navigateur : [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. Dans votre type de navigateur : [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. Sélectionnez une stratégie d’appareil, puis **modifiez la stratégie**.
 
@@ -48,7 +48,7 @@ Ces options suppriment l’application de la sécurité et de la mobilité de ba
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>Supprimer les stratégies d’appareil mobilité et sécurité de base
 
-1. Dans votre type de navigateur : [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. Dans votre type de navigateur : [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. Sélectionnez une stratégie d’appareil, puis **sélectionnez Supprimer la stratégie**.
 
