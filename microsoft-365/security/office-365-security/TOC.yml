@@ -452,3 +452,5 @@
           href: /cloud-app-security
         - name: Défenseur des affaires
           href: ../defender-business/index.yml
+        - name: Gestion des vulnérabilités Defender
+          href: ../defender-vulnerability-management/index.yml
