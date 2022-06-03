@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Prêt à commencer à régir les données de votre organisation, mais vous ne savez pas par où commencer ? Lisez des instructions prescriptives pour commencer.
-ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772727"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864457"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Prise en main de la gestion du cycle de vie des données
 
@@ -95,7 +95,7 @@ Si vous avez un scénario qui nécessite la gestion des données d'éléments in
 
 Consultez la section suivante pour plus d’informations sur la documentation de l’utilisateur final pour prendre en charge la rétention Microsoft 365.
 
-Les fonctionnalités de gestion du cycle de vie des données pour les boîtes aux lettres inactives et l’importation de fichiers PST ne nécessitent pas de documentation de l’utilisateur final, car il s’agit uniquement d’opérations d’administration. Pour aider les utilisateurs à comprendre et à interagir avec leurs boîtes aux lettres d’archivage dans Outlook après avoir activé cette fonctionnalité, voir [Gérer le stockage des e-mails avec des boîtes aux lettres d'archivage en ligne](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+Les fonctionnalités de gestion du cycle de vie des données pour les boîtes aux lettres inactives et l’importation de fichiers PST ne nécessitent pas de documentation de l’utilisateur final, car il s’agit uniquement d’opérations d’administration. Pour aider les utilisateurs à comprendre et à interagir avec leurs boîtes aux lettres d’archivage dans Outlook après avoir activé cette fonctionnalité, voir [Gérer le stockage des e-mails avec des boîtes aux lettres d'archivage en ligne](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>Documentation de l’utilisateur final pour la rétention et la suppression
 

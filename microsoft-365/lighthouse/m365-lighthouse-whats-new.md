@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: 8c054539b5a19e3259ca20a2044f498a3c8e31eb
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: e84324d3d37b28daec1a7f5e4498e0427a29a588
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864434"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -30,16 +30,6 @@ Nous ajoutons continuellement de nouvelles fonctionnalités à [Microsoft 365 Li
 
 > [!NOTE]
 > Certaines fonctionnalités sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, vous devriez la voir bientôt.
-
-## <a name="may-2022"></a>Mai 2022
-
-### <a name="redesigned-left-navigation-pane"></a>Volet de navigation gauche repensé
-
-Nous avons donné une nouvelle apparence au volet de navigation gauche dans Microsoft 365 Lighthouse. Vous remarquerez une conception plus épurée, avec des nœuds de niveau supérieur tels que les locataires, les utilisateurs et les appareils qui s’étendent pour afficher les sous-nœuds associés, tels que les utilisateurs à risque, la conformité des appareils et la gestion des menaces. Ce modèle de navigation s’aligne sur le modèle utilisé par d’autres centres d’administration Microsoft 365.
-
-### <a name="enriched-user-details-pane"></a>Volet Des détails utilisateur enrichis
-
-Nous avons repensé le volet des détails de l’utilisateur pour inclure plus d’informations sur l’utilisateur et d’autres actions que vous pouvez effectuer pour mieux gérer les utilisateurs. Il a maintenant la même apparence que le volet des détails de l’utilisateur dans le Centre d'administration Microsoft 365. Pour accéder au volet d’informations utilisateur dans Microsoft 365 Lighthouse, sélectionnez **Utilisateurs** dans le volet de navigation gauche, puis sélectionnez **Rechercher des utilisateurs** ou **Utilisateurs à risque**. Sélectionnez n’importe quel utilisateur pour ouvrir le volet d’informations.
 
 ## <a name="april-2022"></a>Avril 2022
 

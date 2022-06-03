@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 0c288b1d30fa668446421db547e2595f3385cbb7
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 3b52b36ebdaca429b37cf5784281d22d4dd4be74
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864472"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 
@@ -33,17 +33,17 @@ Cet article décrit les limites de la solution Microsoft Purview eDiscovery (Pre
 
 Le tableau suivant répertorie les limites des cas et examine les ensembles dans eDiscovery (Premium).
 
-|Description de la limite|Limite|
-|---|---|
-|Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).|Jusqu’à 40 millions (nouveau format de casse)|
-|Taille totale du fichier par jeu de charge. Cela inclut le chargement de non-Office 365 dans un jeu de révision.|Jusqu’à 1 To (nouveau format de casse)|
-|Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/>|2 To|
-|Nombre maximal de jeux de charge par cas.|200 |
-|Nombre maximal d’ensembles de révision par cas.|20|
-|Nombre maximal de groupes de balises par cas.|1 000|
-|Nombre maximal de balises uniques par cas.|1 000<sup>1</sup>|
-|Nombre maximal de travaux simultanés dans votre organisation pour ajouter du contenu à un ensemble de révisions. Ces travaux sont nommés **Ajout de données à un jeu de révision** et sont affichés sous l’onglet **Travaux** dans un cas.|10<sup>2</sup>|
-|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu de révisions par utilisateur. Ces travaux sont nommés **Ajout de données à un jeu de révision** et sont affichés sous l’onglet **Travaux** dans un cas.|3|
+|Description de la limite|Limite de cas classique|Nouvelle limite de cas|
+|---|---|---|
+|Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).|3 millions|40 millions|
+|Taille totale du fichier par jeu de charge. Cela inclut le chargement de non-Office 365 dans un jeu de révision.|300 Go|1 To|
+|Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/>|2 To|2 To|
+|Nombre maximal de jeux de charge par cas.|200 |200 |
+|Nombre maximal d’ensembles de révision par cas.|20|20|
+|Nombre maximal de groupes de balises par cas.|1 000|1 000|
+|Nombre maximal de balises uniques par cas.|1 000<sup>1</sup>|1 000<sup>1</sup>|
+|Nombre maximal de travaux simultanés dans votre organisation pour ajouter du contenu à un ensemble de révisions. Ces travaux sont nommés **Ajout de données à un jeu de révision** et sont affichés sous l’onglet **Travaux** dans un cas.|10<sup>2</sup>|10<sup>2</sup>|
+|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu de révisions par utilisateur. Ces travaux sont nommés **Ajout de données à un jeu de révision** et sont affichés sous l’onglet **Travaux** dans un cas.|3|3|
 
 ## <a name="hold-limits"></a>Maintenir les limites
 

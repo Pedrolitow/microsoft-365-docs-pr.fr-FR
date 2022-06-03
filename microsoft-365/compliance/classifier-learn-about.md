@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les classifieurs pouvant être formés peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: f99e9e66f1dae9459f28ba59ca9f197d78ab8bad
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65625796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864537"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -73,9 +73,6 @@ Les étiquettes de confidentialité peuvent utiliser des classifieurs comme cond
 
 Microsoft 365 est fourni avec plusieurs classifieurs préformés :
 
-> [!CAUTION]
-> Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez actuellement, vous devez en retirer vos processus d’entreprise. Nous vous recommandons plutôt d’utiliser les classifieurs préentrifiés **Threat**, **Profanity** et **Harassment** .
-
 - **Contrats** : détecte le contenu relatif aux contrats juridiques tels que les contrats de non-divulgation, les déclarations de travail, les contrats de prêt et de bail, les contrats d’emploi et de non-concurrence. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
 - **C.V**. : détecte les documents, les .pdf, .rtf .txt éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
@@ -108,8 +105,8 @@ Microsoft 365 est fourni avec plusieurs classifieurs préformés :
 
 - **Code source** : détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation d’ordinateur utilisés sur GitHub : ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
-> [!NOTE]
-> Le code source est formé pour détecter quand la majeure partie du texte est du code source. Il ne détecte pas le texte du code source qui est entrecoupé de texte brut.
+    > [!NOTE]
+    > Le code source est formé pour détecter quand la majeure partie du texte est du code source. Il ne détecte pas le texte du code source qui est entrecoupé de texte brut.
 
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
@@ -118,7 +115,7 @@ Microsoft 365 est fourni avec plusieurs classifieurs préformés :
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Détecte le contenu dans .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 - **Menace** : détecte une catégorie spécifique d’éléments de texte de langue offensants liés aux menaces de commettre de la violence ou de causer des dommages physiques ou des dommages à une personne ou à des biens. Détecte le contenu dans les fichiers .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp et .svg.
 
-Celles-ci apparaissent dans la vue **classifieurs portail de conformité Microsoft Purview** >  **Data** **classificationTrainable** >  avec l’état .`Ready to use`
+Celles-ci apparaissent dans la vue **classifieurs** de classification  > **portail de conformité Microsoft Purview** >  **Data** avec l’état `Ready to use`.
 
 ![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -127,12 +124,16 @@ Celles-ci apparaissent dans la vue **classifieurs portail de conformité Microso
 
 Les classifieurs préentrifiés peuvent analyser le contenu dans les langues suivantes :
 
+- Arabe
 - Chinois (simplifié)
+- Chinois (traditionnel)
+- Néerlandais
 - Anglais
 - Français
 - Allemand
 - Italien
-- Japonais
+- Korean
+- Japanese
 - Portugais
 - Espagnol
 
@@ -171,6 +172,6 @@ Vous pouvez aider à améliorer la précision de tous les classifieurs entraîn�
 - [Étiquettes de rétention](retention.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Impression de doigts de document](document-fingerprinting.md)
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
