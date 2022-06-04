@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: c45d345a38b1ba9d045d6984feda614513512021
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: bbc7735e0c0267db5e69279d7ed81db8c0119e37
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863439"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -33,9 +33,6 @@ Lorsque vous activez des canaux partagés avec une autre organisation :
 - Les propriétaires d’équipe de votre organisation pourront inviter des personnes d’autres organisations à participer à des canaux partagés.
 - Les applications personnalisées (métier) de votre organisation seront disponibles dans les canaux partagés et les participants externes pourront y accéder.
 - La liste des applications de votre organisation sera disponible dans les canaux partagés et les participants externes pourront y accéder.
-
-> [!NOTE]
-> Les canaux partagés sont en version préliminaire et nécessitent que vous ayez configuré [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates). Si vous prévoyez de partager des canaux avec d'autres organisations, celles-ci doivent également avoir configuré l'aperçu public de Teams.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -74,7 +71,7 @@ Azure AD connexion directe B2B est désactivée par défaut. Pour permettre la c
 Dans le cadre de cette configuration, nous activons l’application **Office 365**, qui inclut Teams et les services intégrés à Teams tels que SharePoint.
 
 > [!NOTE]
-> La prise en compte des modifications apportées aux paramètres d’accès entre locataires peut prendre deux heures.
+> Les modifications des paramètres d'accès inter-clients peuvent prendre jusqu'à trois heures quinze minutes pour prendre effet.
 
 ### <a name="add-an-organization"></a>Ajouter une organisation
 
