@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
-ms.date: 04/29/2022
-ms.openlocfilehash: 4f01946c00a7497f23d086422ffa90718df78a9f
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.date: 06/02/2022
+ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145187"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873663"
 ---
 # <a name="cancel-your-business-subscription"></a>Annuler votre abonnement professionnel
 
@@ -56,6 +56,9 @@ Vous ne pouvez annuler et recevoir un crédit ou un remboursement au prorata que
 Si vous devez annuler dans les sept jours suivant le début ou le renouvellement de votre abonnement, accédez à [Étapes d’annulation de votre abonnement](#steps-to-cancel-your-subscription) plus loin dans cet article.
 
 Si plus de sept jours se sont écoulés, [désactivez la facturation périodique](renew-your-subscription.md). Cela empêche le renouvellement de votre abonnement à la fin de sa période.  Vous conservez l’accès à vos produits et services pour le reste de votre abonnement. Si vous avez un abonnement annuel et que vous payez mensuellement, vous êtes facturé chaque mois pour le reste de votre période d’abonnement.
+
+> [!NOTE]
+> Annulez votre essai gratuit à tout moment pour arrêter les frais futurs. Après votre essai gratuit d’un mois, les frais d’abonnement applicables vous seront facturés.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Si vous n'avez pas de profil de facturation
 
