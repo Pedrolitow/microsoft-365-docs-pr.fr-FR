@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319130"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863605"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
 
@@ -166,7 +166,7 @@ L’image suivante montre certaines des stratégies par défaut incluses dans Mi
 
 ### <a name="view-your-alert-policies"></a>Afficher vos stratégies d’alerte
 
-1. Accédez au centre de conformité Microsoft 365 à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous.
+1. Allez sur le portail de conformité Microsoft Purview à l'adresse [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous.
 
 2. Dans le volet de navigation, choisissez **Stratégies**, puis choisissez **Stratégies d’alerte**.
 
@@ -179,12 +179,12 @@ L’image suivante montre certaines des stratégies par défaut incluses dans Mi
 
 ### <a name="how-to-view-alerts"></a>Comment afficher les alertes
 
-En fonction de l’alerte spécifique, vous pouvez afficher vos alertes dans le portail Microsoft 365 Defender ou dans le centre de conformité Microsoft 365.
+En fonction de l'alerte spécifique, vous pouvez consulter vos alertes dans le portail Microsoft 365 Defender ou dans le portail de conformité Microsoft Purview.
 
 | Type d’alerte  | Procédure  |
 |---------|---------|
 | Alerte de sécurité, par exemple lorsqu’un utilisateur clique sur un lien malveillant, qu’un e-mail est signalé comme programme malveillant ou hameçonnage, ou qu’un appareil est détecté comme contenant des programmes malveillants     | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et sous **Email et collaboration**, sélectionnez **Stratégies et règles** > **stratégie d’alerte**. Vous pouvez également accéder directement à <https://security.microsoft.com/alertpolicies>. |
-| Alerte de conformité, par exemple lorsqu’un utilisateur partage des informations sensibles ou confidentielles (alerte de protection contre la perte de données) ou qu’il existe un volume inhabituel de partage de fichiers externes (alerte de gouvernance des informations)    | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, puis sélectionnez **Stratégies** > **Alerte** > **Stratégies d’alerte**.  |
+| Alerte de conformité, par exemple lorsqu’un utilisateur partage des informations sensibles ou confidentielles (alerte de protection contre la perte de données) ou qu’il existe un volume inhabituel de partage de fichiers externes (alerte de gouvernance des informations)    | Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portail de conformité Microsoft Purview</a>, puis sélectionnez **Stratégies** > **Alerte** > **Stratégies d’alerte**.  |
 
 Pour plus d’informations, consultez [Afficher les alertes](../compliance/alert-policies.md#view-alerts).
 
