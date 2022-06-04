@@ -4,6 +4,8 @@
       href: index.md
     - name: Comment Microsoft 365 aide votre entreprise
       href: m365bp-secure-users.md
+    - name: Playbook d’évaluation Microsoft 365 Business Premium
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: "Obtenir Microsoft\_365 Business Premium"
       href: get-microsoft-365-business-premium.md
     - name: Obtenir Microsoft 365 campagnes
@@ -16,14 +18,8 @@
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
-        - name: Configurer Microsoft 365 for Campaigns
-          items:
-            - name: S’inscrire
-              href: m365-campaigns-sign-up.md
-            - name: Se connecter
-              href: m365-campaigns-sign-in.md
-            - name: Personnaliser la page de connexion
-              href: m365-customize-sign-in.md
+        - name: Configurer Microsoft 365 Business for Campaigns
+          href: m365-campaigns-setup.md
     - name: Renforcement de la protection de sécurité
       items:
         - name: Vue d’ensemble
@@ -42,7 +38,7 @@
           href: m365bp-devices-overview.md
         - name: Configurez l’authentification multi-facteurs.
           href: m365bp-multifactor-authentication.md
-        - name: Installer Office applications sur les appareils
+        - name: Installer des applications Office sur des appareils
           href: m365bp-install-office-apps.md
         - name: Protéger les appareils non gérés
           href: m365bp-protect-pcs-macs.md
@@ -51,7 +47,7 @@
         - name: Vue d’ensemble
           href: m365bp-protect-email-overview.md
         - name: Se protéger contre le hameçonnage et les autres attaques
-          href: avoid-phishing-and-attacks.md
+          href: m365bp-avoid-phishing-and-attacks.md
         - name: Envoyer un message électronique chiffré
           href: send-encrypted-email.md
     - name: Collaborer et partager de manière sécurisée
@@ -78,14 +74,16 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protéger les appareils Windows
           items:
-            - name: Paramètres de protection pour les appareils Windows
-              href: m365bp-protection-settings-for-windows-10-devices.md
             - name: Sécuriser les appareils Windows
               href: m365bp-secure-windows-devices.md
             - name: Gérer les appareils Windows
               href: m365bp-manage-windows-devices.md
             - name: Préparation au déploiement client Office
               href: m365bp-prepare-for-office-client-deployment.md
+            - name: Créer des paramètres de protection des applications pour les appareils Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Valider les paramètres d’application sur les appareils Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
         - name: Examiner et modifier les stratégies d’appareil
           href: m365bp-view-edit-create-mdb-policies.md
         - name: Gérer les groupes d’appareils
@@ -118,7 +116,7 @@
       href: m365bp-glossary.md
     - name: Forum aux questions sur Microsoft 365 Business Premium
       href: microsoft-365-business-faqs.yml
-    - name: Microsoft 365 contenu administrateur
+    - name: Contenu de l’administrateur Microsoft 365
       href: /microsoft-365/admin/
     - name: Configurer AutoPilot
       items:
@@ -130,6 +128,8 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Paramètres de protection des applications pour Android et iOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Valider les paramètres d’application sur Android et iOS
+      href: m365bp-validate-settings-on-android-or-ios.md
     - name: Mappage des fonctionnalités de protection avec les paramètres Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Configurer le Gestionnaire de conformité

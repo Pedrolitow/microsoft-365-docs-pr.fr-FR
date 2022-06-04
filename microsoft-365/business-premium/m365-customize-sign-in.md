@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personnalisez votre page de connexion avec un avis de confidentialité et de consentement pour Microsoft 365.
-ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fb56a6de2b916f9b9699e0963f9f1cd1bd8bba16
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097885"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893282"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de connexion avec un avis de confidentialité et de consentement
 
@@ -50,6 +50,6 @@ Pour des exemples d'avis de confidentialité et de consentement, voir l'annexe A
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. [Utilisez le processus guidé pour la configuration de base](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+1. [Utilisez le processus guidé pour la configuration de base](m365bp-setup.md).
 
 2. [Configurez vos capacités de sécurité](m365bp-security-overview.md).

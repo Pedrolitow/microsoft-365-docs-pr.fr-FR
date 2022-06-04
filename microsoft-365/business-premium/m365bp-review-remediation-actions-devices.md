@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091894"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893226"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Examiner les actions de correction dans Microsoft 365 Business Premium
 
-Ok, vous avez découvert une violation de sécurité, mais que faites-vous ? Cela dépend de sa nature. 
+Ok, vous avez découvert une violation de sécurité, mais que faites-vous ? Cela dépend de sa nature.
 
 L’envoi d’un fichier en quarantaine, l’arrêt d’un processus ou la suppression complète d’une tâche planifiée sont des exemples d’actions de correction. Toutes les actions de correction sont suivies dans le centre de notifications, qui se trouve à [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 

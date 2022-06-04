@@ -50,7 +50,7 @@
         - name: Installer les applications Office
           href: setup/install-applications.md
         - name: Configuration des appareils windows
-          href: setup/set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - name: Configurer des appareils mobiles
           href: setup/set-up-mobile-devices.md
         - name: Configurer Outlook pour Microsoft 365 pour la messagerie professionnelle (vidéo)

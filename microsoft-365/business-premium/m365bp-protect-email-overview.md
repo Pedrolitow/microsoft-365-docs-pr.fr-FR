@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble sur la façon de former votre équipe pour protéger votre courrier contre les programmes malveillants, le hameçonnage et d’autres cyberattaques malveillantes, à l’aide des outils de cybersécurité inclus dans Microsoft 365 Business Premium.
-ms.openlocfilehash: f54ac045957625a3c2b8b5a66bd7212a4f76e60a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 16e1107b67a406c5058d2e83a3f5d955bb748c39
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101619"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893166"
 ---
 # <a name="protect-all-email"></a>Protéger tous les e-mails
 
@@ -38,10 +38,9 @@ Comme vous le savez, les e-mails sont riches en attaques malveillantes présent�
 
 Les objectifs de la mission sont les suivants :
 
-- [Se protéger contre le hameçonnage et les autres attaques](avoid-phishing-and-attacks.md)
+- [Se protéger contre le hameçonnage et les autres attaques](m365bp-avoid-phishing-and-attacks.md)
 - [Configurer un e-mail chiffré](send-encrypted-email.md)
 
 Accomplissez ces objectifs avant de passer à la [mission suivante](m365bp-collaborate-share-securely.md).
 
 :::image type="content" source="media/m365bp-use-email-securely.jpg" alt-text="Protégez votre courrier":::
-   

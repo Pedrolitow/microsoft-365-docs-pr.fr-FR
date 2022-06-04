@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Inscrivez-vous pas à pas pour Microsoft 365 campagnes. Protégez votre campagne contre les menaces de cybersécurité pour la messagerie électronique, les données et les communications.
-ms.openlocfilehash: 08ef22374e69590a3535366463770815c2a2b0ee
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b39d01bc6aa1cf138d230e95493d5f9eeb3cc51b
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096257"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893304"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire à Microsoft 365 campagnes 
 
@@ -120,4 +120,4 @@ Une fois ces étapes terminées, vous êtes prêt à [attribuer les nouvelles li
 
 1. [Connectez-vous à Microsoft 365 campagnes](m365-campaigns-sign-in.md).
 
-2. [Consultez le processus guidé de configuration de base](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+2. [Consultez le processus guidé de configuration de base](m365bp-setup.md#guided-setup-process).

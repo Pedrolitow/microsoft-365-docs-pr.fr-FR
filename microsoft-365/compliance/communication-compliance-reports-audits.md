@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7e26451e2cf4786f73b16f74bedd46ca764f6ed
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 998f074529089f5c0309f6799900a628915d3959
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173753"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893391"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Utiliser les rapports et audits de conformité des communications
 
@@ -65,7 +65,7 @@ Utilisez l’option *Exporter* pour créer un fichier .csv contenant les détail
     - Notification de l’utilisateur
     - Cas créé
 
-- **Élément et actions par emplacement** : examinez et exportez les éléments correspondants et les actions de correction par emplacement Microsoft 365. Inclut des informations sur la façon dont les plateformes de charge de travail sont associées :
+- **Élément et actions par emplacement** : passez en revue et exportez les éléments correspondants et les actions de correction par emplacement Microsoft 365. Inclut des informations sur la façon dont les plateformes de charge de travail sont associées :
 
     - Éléments mis en correspondance
     - Éléments escaladés
@@ -91,10 +91,10 @@ Utilisez l’option *Exporter* pour créer un fichier .csv contenant les détail
 
 - **Type d’informations sensibles par emplacement** (préversion) : passez en revue et exportez des informations sur la détection des types d’informations sensibles et les sources associées dans les stratégies de conformité des communications. Inclut le total global et la répartition spécifique des instances de type d’informations sensibles dans les sources configurées dans votre organisation. Les valeurs de chaque source tierce sont affichées dans des colonnes distinctes dans le fichier .csv. Voici quelques exemples :
 
-    - **E-mail** : types d’informations sensibles détectés dans Exchange messages électroniques.
-    - **Teams** : Types d’informations sensibles détectés dans Microsoft Teams canaux et messages de conversation.
-    - **Skype Entreprise** : Types d’informations sensibles détectés dans Skype pour les communications métier.
-    - **Yammer** : Types d’informations sensibles détectés dans Yammer boîtes de réception, publications, conversations et réponses.
+    - **E-mail** : types d’informations sensibles détectés dans les e-mails Exchange.
+    - **Teams** : types d’informations sensibles détectés dans les canaux et les messages de conversation Microsoft Teams.
+    - **Skype Entreprise** : Types d’informations sensibles détectés dans les communications Skype Entreprise.
+    - **Yammer** : types d’informations sensibles détectés dans les boîtes de réception, les publications, les conversations et les réponses Yammer.
     - **Sources tierces** : types d’informations sensibles détectés pour les activités associées à des connecteurs tiers configurés dans votre organisation. Pour afficher la répartition des sources tierces pour un type d’informations sensibles spécifique dans le rapport, placez la souris sur la valeur du type d’informations sensibles dans la colonne source tierce.
     - **Autre** : types d’informations sensibles utilisés pour le traitement interne du système. La sélection ou la désélection de cette source pour le rapport n’affecte aucune valeur.
 
@@ -144,7 +144,7 @@ Les rapports de détails du message contiennent les informations suivantes pour 
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver la supervision des activités et des communications des utilisateurs. Ces informations peuvent être un résumé de toutes les activités associées à une stratégie organisationnelle définie ou chaque fois qu’une stratégie de conformité des communications change. Les stratégies de conformité des communications ont des pistes d’audit intégrées pour une préparation complète pour les audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication pour fournir une preuve des procédures de surveillance.
 
 > [!IMPORTANT]
-> L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Lorsque des activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
+> L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Lorsque les activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
 
 Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Vous devez disposer des rôles *d’administrateur général* ou *d’administrateur de conformité* des communications pour exporter les activités de mise à jour. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
@@ -188,7 +188,7 @@ Les correspondances de stratégie de conformité des communications sont stocké
 
 Pour vérifier la taille d’une boîte aux lettres de supervision pour une stratégie, procédez comme suit :
 
-1. Utilisez [l’applet de commande Connecter-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) dans le module Exchange Online PowerShell V2 pour vous connecter à Exchange Online PowerShell à l’aide de l’authentification moderne.
+1. Utilisez l’applet [de commande Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) dans le module Exchange Online PowerShell V2 pour vous connecter à Exchange Online PowerShell à l’aide de l’authentification moderne.
 2. Exécutez la commande suivante dans PowerShell :
 
     ```PowerShell

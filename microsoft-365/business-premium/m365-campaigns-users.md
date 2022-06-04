@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Apprenez comment ces recommandations de sécurité pour Microsoft 365 Entreprise Premium affectent vos utilisateurs et protègent vos données.
-ms.openlocfilehash: ffd25f52c0f230506a43a3f611ce933f59d26802
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 30e609a6dc74ef8a0303c93f65eb44a4003d3a99
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469226"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893136"
 ---
 # <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>Comment ces recommandations de sécurité affectent vos utilisateurs de Microsoft 365 ?
 
@@ -47,7 +47,7 @@ Tous les utilisateurs doivent connaître et utiliser ces pratiques pour assurer 
 
 - N'ouvrez que des liens et des pièces jointes sûrs, tels que vérifiés par Liens sûrs et Pièces jointes sûres.
 
-En savoir plus sur [l'authentification multifactorielle](m365bp-multifactor-authentication.md) et [l'hameçonnage et autres attaques](avoid-phishing-and-attacks.md).
+En savoir plus sur [l'authentification multifactorielle](m365bp-multifactor-authentication.md) et [l'hameçonnage et autres attaques](m365bp-avoid-phishing-and-attacks.md).
 
 Téléchargez une [infographie](m365-campaigns-protect-campaign-infographic.md) avec des conseils pour vous et les membres de votre équipe.
 
