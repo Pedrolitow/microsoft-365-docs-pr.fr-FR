@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
-ms.openlocfilehash: 7cb963106551951fb6ae1e2455d21fa44d47a77c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 67844e521aeec2257440aea34a79f0b96333f7f9
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396317"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65889364"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
@@ -61,7 +61,7 @@ Si **Gouvernance des informations** ne s’affiche pas dans le volet de navigati
 
 Si vous avez déjà créé des étiquettes de conservation à partir de la **gestion du cycle de vie des données** dans le portail de conformité Microsoft Purview, ces étiquettes s'affichent automatiquement dans votre plan de classement. 
 
-De même, si vous créez maintenant des étiquettes de conservation dans le plan de classement, elles sont également disponibles à partir de la **gestion du cycle de vie des données** si les étiquettes ne sont pas configurées pour marquer le contenu comme un enregistrement.
+De même, si vous créez maintenant des étiquettes de rétention dans le plan de fichiers, elles sont également disponibles dans **la gestion du cycle de vie** des données si les étiquettes ne sont pas configurées pour marquer le contenu comme un enregistrement.
 
 Sur la page **Plan de gestion de fichiers**, vous pouvez voir toutes vos étiquettes avec leur état et leurs paramètres, les descripteurs de plan de gestion de fichiers facultatifs, une option d’exportation pour analyser ou activer les révisions de vos étiquettes en mode hors connexion, ainsi qu’une option d’importation pour créer des étiquettes de rétention. 
 
@@ -82,7 +82,7 @@ Toutes les colonnes à l’exception du **Nom** de l’étiquette peuvent être 
     - Oui
     - Oui (réglementaire)
 
-- **Est déverrouillé par défaut** -actuellement en cours de déploiement-identifie si l'élément marqué comme un enregistrement est déverrouillé lorsque l'étiquette est appliquée. Valeurs valides :
+- **Est déverrouillé par défaut**, en cours de déploiement, identifie si l’élément marqué comme enregistrement est déverrouillé lors de l’application de l’étiquette. Valeurs valides :
     - Non
     - Oui
 
@@ -131,7 +131,7 @@ Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultati
     
     Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant**, puis sélectionnez **Terminé**.
+3. Une fois que vous avez créé l’étiquette et que vous voyez les options permettant de publier l’étiquette, appliquez automatiquement l’étiquette ou enregistrez simplement l’étiquette : sélectionnez **Enregistrer simplement l’étiquette pour le moment**, puis sélectionnez **Terminé**.
 
 4. Répétez ces étapes pour créer d’autres étiquettes.
 
@@ -145,9 +145,9 @@ Certains paramètres ne peuvent pas être modifiés après la création et l’e
 
 ## <a name="delete-retention-labels"></a>Supprimer des étiquettes de rétention
 
-Vous pouvez supprimer les étiquettes de conservation qui ne sont pas actuellement incluses dans les politiques d'étiquettes de conservation [publiées](create-apply-retention-labels.md) ou [appliquées](apply-retention-labels-automatically.md) automatiquement, qui ne sont pas configurées pour la conservation basée sur des événements, ou marquer les éléments comme des documents réglementaires.
+Vous pouvez supprimer les étiquettes de rétention qui ne sont actuellement incluses dans aucune [stratégie d’étiquette](create-apply-retention-labels.md) de rétention publiée ou [appliquée automatiquement](apply-retention-labels-automatically.md), qui ne sont pas configurées pour la rétention basée sur les événements ou qui marquent les éléments comme enregistrements réglementaires.
 
-Pour les étiquettes de rétention que vous pouvez supprimer, si elles ont été appliquées à des éléments, la suppression échoue et un lien vers l’explorateur de contenu permettant d’identifier les éléments étiquetés s’affiche.
+Pour les étiquettes de rétention que vous pouvez supprimer, si elles ont été appliquées à des éléments, la suppression échoue et vous voyez un lien vers l’Explorateur de contenu pour identifier les éléments étiquetés.
 
 Toutefois, l’affichage des éléments étiquetés par l’explorateur de contenu peut prendre deux jours maximum. Dans ce scénario, l’étiquette de rétention pourrait être supprimée sans l’affichage du lien vers l’explorateur de contenu.
 
@@ -220,17 +220,14 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 |CitationJurisdiction|Chaîne|Non|Cette propriété spécifie la juridiction ou l’agence qui apparaît dans la **Clause/citation** du descripteur du plan de fichiers. Par exemple, « U.S. Securities and Exchange Commission (SEC) ».|
 |Réglementaire|Chaîne|Non|Cette propriété spécifie si l’étiquette marque le contenu comme un enregistrement réglementaire, ce qui est [plus restrictif](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) qu’un enregistrement. Pour utiliser cette configuration d’étiquette, votre client doit être configuré pour [afficher l’option permettant de marquer le contenu comme un enregistrement réglementaire](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record), sinon la validation de l’importation échouera. Les valeurs valides sont les suivantes : </br>**TRUE**: l’étiquette marque l’élément comme un enregistrement réglementaire. Vous devez également définir la propriété **IsRecordLabel** sur TRUE.</br>**FALSE** : l’étiquette ne marque pas le contenu comme un enregistrement réglementaire. Il s’agit de la valeur par défaut.|
 |EventType|Chaîne|Non, sauf si **RetentionType** est **EventAgeInDays**|Cette propriété spécifie un type d’événement utilisé pour la [rétention basée sur les événements](event-driven-retention.md). Spécifiez un type d’événement existant qui s’affiche dans **Gestion des enregistrements** > **Événements** > **Gérer les types d’événements**. Vous pouvez également utiliser l’applet de commande [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) pour afficher les types d’événements disponibles. Bien qu’il existe certains types d’événements intégrés, tels que **Activité de l’employé** et **Durée de vie du produit**, vous pouvez également créer vos propres types d’événements. </br> </br> Si vous spécifiez votre propre type d’événement, il doit exister avant l’importation, car le nom est validé dans le cadre du processus d’importation.|
+|IsRecordUnlockedAsDefault|Chaîne|Non|Cette propriété spécifie si l’élément marqué comme enregistrement est [déverrouillé](record-versioning.md) lorsque l’étiquette est appliquée. Les valeurs valides sont les suivantes : </br>**TRUE**: l’élément marqué comme enregistrement est déverrouillé lorsque l’étiquette est appliquée. La propriété **IsRecordLabel** doit avoir la valeur TRUE et la propriété **Regulatory** ne peut pas être définie sur TRUE.</br>**FALSE**: l’élément n’est pas marqué comme enregistrement ou est marqué comme enregistrement, mais verrouillé lorsque l’étiquette est appliquée. Il s’agit de la valeur par défaut.|
+|ComplianceTagForNextStage|Chaîne|Non|Cette propriété spécifie le nom d’une [étiquette de remplacement](retention-settings.md#relabeling-at-the-end-of-the-retention-period) à appliquer à la fin de la période de rétention. </br> </br> Ne spécifiez pas cette propriété si **La réglementation a la** valeur **TRUE**.|
 
 Les paramètres d’étiquette ne sont actuellement pas pris en charge pour l’importation :
 
 - Révision de destruction en plusieurs étapes : bien que vous puissiez configurer les paramètres d’une étape de révision de destruction unique lorsque vous importez des étiquettes de rétention avec un modèle, vous ne pouvez pas spécifier d’étapes de révision supplémentaires. Au lieu de cela, configurez-les dans le portail de conformité une fois l’importation réussie.
 
-- Déverrouillez cet enregistrement par défaut (actuellement déployé en préversion) : ce paramètre n’est pas disponible dans le modèle à importer et vous ne pouvez pas sélectionner ce paramètre dans le portail de conformité une fois l’importation réussie.
-
-- Étiquette de remplacement (actuellement déployée en préversion) : ce paramètre n’est pas disponible dans le modèle à importer, mais vous pouvez sélectionner ce paramètre dans le portail de conformité une fois l’importation réussie.
-
-
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez créé des étiquettes de rétention, elles sont prêtes à être ajoutées aux éléments en les publiant ou en les appliquant automatiquement :
 - [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
