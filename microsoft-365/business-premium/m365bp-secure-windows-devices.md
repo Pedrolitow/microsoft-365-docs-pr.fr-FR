@@ -28,18 +28,39 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Découvrez comment configurer les paramètres de la stratégie d’appareil par défaut que tout appareil Windows recevra lors de la connexion à son compte professionnel ou scolaire.
-ms.openlocfilehash: a88aad90d9ca55c5a5abeb17345179c2defdbd4e
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 5ac09788d609752d12a6ae6efadfa8739c5a4f9a
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621343"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893080"
 ---
 # <a name="secure-windows-devices"></a>Sécuriser les appareils Windows
 
 L’objectif ici est de configurer les paramètres qui font partie de la stratégie d’appareil par défaut pour Windows 10 ou 11. Tous les utilisateurs qui connectent un appareil Windows, y compris les appareils mobiles et les PC, en se connectant avec leur compte professionnel reçoivent automatiquement ces paramètres. Nous vous recommandons d’accepter la stratégie par défaut durant l’installation et d’ajouter ultérieurement des stratégies qui ciblent des groupes d’utilisateurs spécifiques.
+
+## <a name="before-you-begin"></a>Avant de commencer
+
+Avant de pouvoir configurer des appareils Windows pour les utilisateurs Microsoft 365 Business Premium, assurez-vous que tous les appareils Windows exécutent Windows 10 Professionnel, version 1703 (Creators Update) ou Windows 11 Professionnel.
+
+Windows 10 Professionnel (ou Windows 11 Professionnel) est un prérequis pour le déploiement de Windows 10 Business, qui est un ensemble de services cloud et de fonctionnalités de gestion des appareils qui complètent Windows 10 Professionnel et Windows 11 Professionnel, et activent la gestion centralisée et les contrôles de sécurité de Microsoft 365 Business Premium.
+
+[En savoir plus sur la configuration requise pour Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
+
+## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 Professionnel et Windows 11 Professionnel
+
+Si vous avez des appareils Windows exécutant des versions antérieures de Windows, telles que Windows 7 Professionnel, Windows 8 Pro ou Windows 8.1 Pro, votre abonnement Microsoft 365 Business Premium vous permet de mettre à niveau ces appareils vers Windows 10 Professionnel ou Windows 11 Professionnel.
   
-## <a name="settings-to-secure-windows-10-devices"></a>Paramètres de sécurisation des appareils Windows 10
+Pour plus d’informations sur la mise à niveau des appareils Windows, consultez les articles suivants :
+
+- [Mettre à niveau Windows Home vers Windows 10 ou Windows 11 Professionnel](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
+- [Mettre à niveau vers Windows 10 Professionnel](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
+
+<!---
+Could not find the Win11 equivalent upgrade link.
+---> 
+  
+## <a name="secure-your-windows-10-and-11-devices"></a>Sécuriser vos appareils Windows 10 et Windows 11
 
 Par défaut, tous les paramètres sont **activés**. Les paramètres suivants sont disponibles :<br/><br/>
 

@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble de la configuration de Microsoft 365 Business Premium pour les campagnes ou d’autres entreprises
 ms.openlocfilehash: 0dc5fcda0d2f3ece91e294fea3a59d5e536c8088
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086972"
+ms.lasthandoff: 06/05/2022
+ms.locfileid: "65900784"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Configurer Microsoft 365 for Campaigns
 

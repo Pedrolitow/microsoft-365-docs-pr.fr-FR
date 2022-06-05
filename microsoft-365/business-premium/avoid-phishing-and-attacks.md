@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Protégez-vous contre le hameçonnage et d’autres attaques avec Microsoft 365.
 ms.openlocfilehash: 5549abdee6c7dadcb3aca7be9daba2c1f4b228ea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101723"
+ms.lasthandoff: 06/05/2022
+ms.locfileid: "65900785"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protégez-vous contre le hameçonnage et d’autres attaques
 
