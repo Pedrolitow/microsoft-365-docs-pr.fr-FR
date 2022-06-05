@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez des utilisateurs à Microsoft 365. Protégez votre entreprise, votre pratique ou votre campagne contre les menaces de cybersécurité sur les e-mails, les données et la communication.
-ms.openlocfilehash: c0decc886b30ba63d67e7927c0655e1980a47a57
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: d478b37c38b9184e1ec60844025b3fe356fb43dd
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839577"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893326"
 ---
-# <a name="sign-in-to-microsoft-365-business-premium"></a>Se connecter à Microsoft 365 Business Premium
+# <a name="sign-in-to-microsoft-365-business-for-campaigns"></a>Se connecter à Microsoft 365 Business for Campaigns
 
-## <a name="for-business-or-campaign-admins"></a>Pour les administrateurs professionnels ou de campagne
+Si vous vous êtes inscrit à Microsoft 365 for Campaigns (ou Microsoft 365 Business Premium), vous êtes désigné en tant qu’administrateur Microsoft 365 (également appelé Administrateur général). Cela vous permet de vous connecter et de lancer le système. 
 
-Si vous vous êtes inscrit à Microsoft 365 pour campagnes (ou Microsoft 365 Business Premium), vous êtes l’administrateur Microsoft 365 (également appelé administrateur général). Voici comment se connecter :
+Voici comment se connecter :
 
 1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse e-mail que vous avez utilisée lorsque vous vous [êtes inscrit à Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
 
@@ -42,7 +42,7 @@ Si vous vous êtes inscrit à Microsoft 365 pour campagnes (ou Microsoft 365 Bus
 
 3. Entrez votre nom d'utilisateur et votre mot de passe, puis cliquez sur **Se connecter**.
 
-4. En haut à droite de la page, recherchez la **préversion sur le** contrôle. Sélectionnez **Aperçu** pour pouvoir utiliser tous les contrôles décrits dans [la protection bump up pour votre campagne](m365-campaigns-security-overview.md).
+4. En haut à droite de la page, recherchez la **préversion sur le** contrôle. Sélectionnez **Aperçu** pour pouvoir utiliser tous les contrôles décrits dans [la protection bump up pour votre campagne](m365bp-security-overview.md).
 
 ## <a name="for-staff"></a>Pour le personnel
 
@@ -50,15 +50,15 @@ Les utilisateurs qui ont été ajoutés à votre abonnement Microsoft 365 for Ca
 
 1. Accédez à <a href="https://office.com" target="_blank">https://office.com</a>.
 
-2. Connectez-vous avec le nom d’utilisateur et le mot de passe du compte d’administrateur global de votre organisation. Les utilisateurs auront ces informations dans l’e-mail qu’ils auraient dû recevoir lorsqu’ils ont été ajoutés en tant qu’utilisateurs. S’il ne trouve pas l’e-mail, voir [que j’ai partagé une invitation par e-mail, mais que l’utilisateur n’a pas reçu l’e-mail](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
+2. Connectez-vous à l’aide du nom d’utilisateur et du mot de passe du compte. Les utilisateurs disposent de ces informations dans l’e-mail qu’ils reçoivent lorsqu’ils sont ajoutés en tant qu’utilisateurs. S’il ne trouve pas l’e-mail, voir que [l’utilisateur n’a pas reçu d’e-mail d’invitation](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Donnez à votre personnel un lien vers le [guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md). Le guide les oriente tout au long de la connexion, de l’obtention de Office applications et de l’enregistrement, de la copie et du partage de fichiers.
+> Fournissez à votre personnel un lien vers le [guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md) pour obtenir de l’aide sur la connexion, l’obtention d’applications Office et l’enregistrement, la copie et le partage de fichiers.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 1. [Personnaliser votre page de connexion avec un avis de confidentialité et de consentement](m365-customize-sign-in.md)
 
-2. [Utiliser le processus guidé pour l’installation de base](m365bp-setup.md#use-the-guided-process-for-basic-setup)
+2. [Utiliser le processus guidé pour l’installation de base](m365bp-setup.md)
 
 3. [Configurer vos stratégies de sécurité](m365bp-security-overview.md)
