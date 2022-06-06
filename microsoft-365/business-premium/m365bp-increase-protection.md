@@ -25,25 +25,25 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: dfbde871e31bd4c8e47fb9365ad4da7a9a1f6226
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863605"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893182"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
 
 Dans cet objectif, vous augmentez votre protection contre les menaces avec Microsoft 365 Business Premium. Il est essentiel de protéger votre entreprise contre le hameçonnage, les programmes malveillants et d’autres menaces. Cet objectif inclut des informations sur les éléments suivants :
 
-- [Les stratégies de sécurité prédéfinies](#review-and-apply-preset-security-policies) qui peuvent faire gagner beaucoup de temps dans l’installation et la configuration
+- [Les stratégies de sécurité prédéfinies](#review-and-apply-preset-security-policies) qui peuvent faire gagner beaucoup de temps dans l’installation et la configuration.
 - [Stratégies de sécurité personnalisées](#create-custom-security-policies) que vous pouvez définir en fonction des besoins de votre entreprise
-- [Comment ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- [Stratégies d’alerte](#review-your-alert-policies) qui surveillent des fichiers spécifiques et comment ils sont utilisés. 
+- Comment [ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Stratégies d’alerte](#review-your-alert-policies) qui surveillent des fichiers spécifiques et comment ils sont utilisés.
 
 ## <a name="review-and-apply-preset-security-policies"></a>Examiner et appliquer des stratégies de sécurité prédéfinies
 
-Votre abonnement inclut des [stratégies de sécurité prédéfinies](../security/office-365-security/preset-security-policies.md) qui utilisent les paramètres recommandés pour la protection anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage. Par défaut, la protection intégrée est activée ; toutefois, envisagez d’appliquer une protection standard ou stricte pour renforcer la sécurité. 
+Votre abonnement inclut des [stratégies de sécurité prédéfinies](../security/office-365-security/preset-security-policies.md) qui utilisent les paramètres recommandés pour la protection anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage. Par défaut, la protection intégrée est activée ; toutefois, envisagez d’appliquer une protection standard ou stricte pour renforcer la sécurité.
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Capture d’écran des stratégies de sécurité prédéfinies.":::
 
@@ -214,4 +214,4 @@ Si vos utilisateurs sont autorisés à partager leurs calendriers, consultez [ce
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-À présent, commençons la mission de [**configurer des appareils BYOD**](m365bp-devices-overview.md).
+Ok, nous allons maintenant [**configurer ces BYOD gérés**](m365bp-devices-overview.md).
