@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 joints à Active Directory en quelques étapes.
-ms.openlocfilehash: 2d29e7350be7ddfcdf22f031ea3c2c27439daeac
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 42a9fb553cbebe9e8a49cc15e97555e6b12ca495
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622737"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893120"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Gérer les appareils Windows avec Microsoft 365 Business Premium
 
@@ -90,7 +90,7 @@ Allez dans le centre d'administration de Microsoft Endpoint Manager ( [https://e
 
 2. Dans le **centre d’administration Azure Active Directory**, accédez à **Azure Active Directory**, choisissez **Appareils**, puis **Paramètres de l’appareil**.
 
-3. Vérifier **les utilisateurs peuvent joindre des appareils à Azure AD** est activé 
+3. Vérifier que **les utilisateurs peuvent joindre des appareils à Azure AD** est activé. 
 
     1. Pour activer tous les utilisateurs, définissez sur **Tout**.
 
@@ -178,6 +178,6 @@ Si vous ne voyez pas la stratégie **Activer l’inscription MDM automatique à 
 
 - [Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)
 
-## <a name="next-objective"></a>Objectif suivant :
+## <a name="next-objective"></a>Objectif suivant
 
 [Préparation au déploiement client Office](m365bp-prepare-for-office-client-deployment.md)
