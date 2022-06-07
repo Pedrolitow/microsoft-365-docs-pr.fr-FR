@@ -22,18 +22,18 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès privilégié à votre locataire Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622562"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930194"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Étape 2. Protéger vos comptes privilégiés Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les violations de sécurité d’un locataire Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement effectuées en compromettant les informations d’identification d’un compte privilégié Microsoft 365. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
+Les violations de sécurité d’un locataire Microsoft 365, notamment la collecte d’informations et les attaques par hameçonnage, sont généralement effectuées en compromettant les informations d’identification d’un compte privilégié Microsoft 365. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
   
 - Les services de cloud computing Microsoft reposent sur la confiance et la sécurité. Microsoft met à votre disposition des contrôles et fonctionnalités de sécurité pour vous aider à protéger vos données et applications.
     
@@ -43,15 +43,18 @@ Microsoft fournit des fonctionnalités pour protéger votre organisation, mais e
   
 1. Créez des comptes dédiés, privilégiés et basés sur le cloud et utilisez-les uniquement si nécessaire.
     
-2. Configurez l’authentification multifacteur (MFA) pour vos comptes privilégiés dédiés Microsoft 365 et utilisez la forme la plus forte d’authentification secondaire.
+2. Configurez l’authentification multifacteur (MFA) pour vos comptes privilégiés Microsoft 365 dédiés et utilisez la forme la plus forte d’authentification secondaire.
 
-3. Protégez les comptes privilégiés avec Confiance nulle des recommandations d’identité et d’accès aux appareils.
+3. Protégez les comptes privilégiés avec les recommandations relatives à l’identité confiance Zéro et à l’accès aux appareils.
+
+> [!NOTE]
+> Pour sécuriser vos rôles privilégiés, consultez [les meilleures pratiques pour les rôles Azure AD](/azure/active-directory/roles/best-practices) afin de sécuriser l’accès privilégié à votre locataire.
 
 ## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. Créer des comptes d’utilisateur dédiés, privilégiés et basés sur le cloud et les utiliser uniquement si nécessaire
 
 Au lieu d’utiliser des comptes d’utilisateurs quotidiens auxquels des rôles d’administrateur ont été attribués, créez des comptes d’utilisateur dédiés qui ont les rôles d’administrateur dans Azure AD. 
 
-À partir de ce moment, vous vous connectez avec les comptes privilégiés dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur. Toutes les autres Microsoft 365 administration doivent être effectuées en attribuant d’autres rôles d’administration à des comptes d’utilisateur.
+À partir de ce moment, vous vous connectez avec les comptes privilégiés dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur. Toutes les autres administrations de Microsoft 365 doivent être effectuées en attribuant d’autres rôles d’administration à des comptes d’utilisateur.
   
 > [!NOTE]
 > Cela nécessite des étapes supplémentaires pour vous déconnecter en tant que compte d’utilisateur quotidien et vous connecter avec un compte d’administrateur dédié. Toutefois, cela ne doit être effectué qu’occasionnellement pour les opérations d’administrateur. Tenez compte du fait que la récupération de votre abonnement Microsoft 365 après une violation de compte d’administrateur nécessite beaucoup plus d’étapes.
@@ -70,7 +73,6 @@ L’authentification multifacteur (MFA) nécessite des informations supplémenta
 - Une carte à puce (virtuelle ou physique) (nécessite une authentification fédérée)
 - appareil biométrique.
 - Jeton Oauth
-- 
     
 >[!Note]
 >Pour les organisations qui doivent respecter les normes du National Institute of Standards and Technology (NIST), l’utilisation d’un appel téléphonique ou de méthodes de vérification supplémentaires basées sur des SMS est limitée. Cliquez [ici](https://pages.nist.gov/800-63-FAQ/#q-b01) pour plus d’informations.
@@ -80,11 +82,11 @@ Si vous êtes une petite entreprise qui utilise des comptes d’utilisateur stoc
     
 Si vous êtes une grande organisation qui utilise un modèle d’identité hybride Microsoft 365, vous disposez d’autres options de vérification. Si vous disposez déjà de l’infrastructure de sécurité pour une méthode d’authentification secondaire plus forte, [configurez l’authentification multifacteur](../admin/security-and-compliance/set-up-multi-factor-authentication.md) et configurez chaque compte privilégié dédié pour la méthode de vérification appropriée.
   
-Si l’infrastructure de sécurité de la méthode de vérification plus forte souhaitée n’est pas en place et fonctionne pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes privilégiés dédiés avec l’authentification multifacteur à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un smartphone pour vos comptes privilégiés comme mesure de sécurité intermédiaire. Ne laissez pas vos comptes privilégiés dédiés sans la protection supplémentaire fournie par l’authentification multifacteur.
+Si l’infrastructure de sécurité de la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes privilégiés dédiés avec l’authentification multifacteur à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un téléphone intelligent pour vos comptes privilégiés comme mesure de sécurité provisoire. Ne laissez pas vos comptes privilégiés dédiés sans la protection supplémentaire fournie par l’authentification multifacteur.
   
 Pour plus d’informations, consultez [MFA pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Protéger les comptes d’administrateur avec des recommandations d’identité Confiance nulle et d’accès aux appareils
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Protéger les comptes d’administrateur avec l’identité confiance Zéro et les recommandations d’accès aux appareils
 
 Pour garantir une main-d’œuvre sécurisée et productive, Microsoft fournit un ensemble de recommandations pour [l’accès aux identités et aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md). Pour l’identité, utilisez les recommandations et les paramètres de ces articles :
 
@@ -97,7 +99,7 @@ Utilisez ces méthodes supplémentaires pour vous assurer que votre compte privi
   
 ### <a name="privileged-access-workstation"></a>Station de travail d’accès privilégié
 
-Pour vous assurer que l’exécution de tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail à accès privilégié (PAW). Un PAW est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que Microsoft 365 configuration qui nécessite un compte privilégié. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation internet ou la messagerie, il est mieux protégé contre les attaques et menaces Internet.
+Pour vous assurer que l’exécution de tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail à accès privilégié (PAW). Un PAW est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que la configuration Microsoft 365 qui nécessite un compte privilégié. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation internet ou la messagerie, il est mieux protégé contre les attaques et menaces Internet.
   
 Pour obtenir des instructions sur la configuration d’un PAW, consultez [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
@@ -139,7 +141,7 @@ Pour plus d’informations, consultez [Privileged Access Management](/office365/
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Logiciel SIEM (Security Information and Event Management) pour la journalisation Microsoft 365
 
-Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure Microsoft 365 alertes et événements de sécurité dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD à votre SEIM. Voir [Présentation de Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure des alertes et des événements de sécurité Microsoft 365 dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD à votre SEIM. Voir [Présentation de l’intégration des journaux Azure](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Étape suivante
 
