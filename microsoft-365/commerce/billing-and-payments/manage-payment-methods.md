@@ -23,18 +23,18 @@ ms.custom:
 - business_assist
 search.appverid: MET150
 description: Achetez des produits ou services professionnels auprès de Microsoft en utilisant une méthode de paiement existante ou en ajoutant une nouvelle dans le centre d'administration de Microsoft 365.
-ms.date: 04/02/2021
-ms.openlocfilehash: 1b36a11c2bdb34880f8f02b84788062dfb88c4b1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 06/01/2022
+ms.openlocfilehash: a6f15318e1539ef1f6c2656197c222e068f04f87
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319754"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922994"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
 > [!IMPORTANT]
-> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et ajouter de nouveaux abonnements à celui-ci, mais pourvu que le compte bancaire soit en règle.
+> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces countries, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant.et en règle. Toutefois, vous ne pouvez pas ajouter de nouveaux abonnements au compte bancaire.
 
 Lors de votre achat de produits ou de services commerciaux Microsoft, vous pouvez choisir un mode de paiement existant ou bien en ajouter un autre. Les cartes de débit, de crédit et les informations bancaires sont acceptées pour effectuer ces achats.
 

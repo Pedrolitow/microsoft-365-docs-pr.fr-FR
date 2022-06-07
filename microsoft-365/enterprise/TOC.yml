@@ -627,7 +627,6 @@
 - name: Architecture et solutions Microsoft 365
   href: ../solutions/index.yml
 - name: Gestion de la continuité d’activité d’entreprise (EBCM) avec les services Cloud
-  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items:
     - name: Responsabilités du partenaire client et Cloud EBCM
       href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities

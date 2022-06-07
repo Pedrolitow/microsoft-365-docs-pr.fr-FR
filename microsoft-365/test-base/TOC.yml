@@ -7,7 +7,7 @@
 - name: Démarrages rapides
   items:
     - name: Créer un compte Base de test
-      href: createAccount.md
+      href: createaccount.md
     - name: Tester votre application sur Test Base
       items:
         - name: Vue d’ensemble
@@ -16,14 +16,16 @@
           href: testapplication.md
         - name: Tester votre application Intune sur la base de test
           href: testintuneapplication.md
-        - name: Télécharger votre package de base de test (Zip)
-          href: uploadApplication.md
+        - name: Chargement d’un package zip prédéfagé
+          href: uploadapplication.md
     - name: Créer un package
       href: buildpackage.md
     - name: Cloner un package existant
       href: clonepackage.md
     - name: Instructions relatives aux packages
       href: contentguideline.md
+    - name: Comprendre votre coût d’utilisation
+      href: usagecost.md
     - name: Règles d’application/test
       href: rules.md
 - name: Guides des pratiques
