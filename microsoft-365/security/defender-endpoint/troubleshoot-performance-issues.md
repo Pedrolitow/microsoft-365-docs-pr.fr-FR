@@ -1,6 +1,6 @@
 ---
 title: Résoudre des problèmes de performance
-description: Résolvez les problèmes d’utilisation élevée du processeur liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison.
+description: Résoudre les problèmes d’utilisation élevée du processeur liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison.
 keywords: résolution des problèmes, performances, utilisation élevée de l’UC, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Antivirus Microsoft Defender
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 01db84f3ddd4eae79cae2fa97400f4d3d78ba8da
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 06bcba129646eb7c3f820d95dae5fd3fc77805dd
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419745"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923256"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -29,14 +29,14 @@ ms.locfileid: "65419745"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 **Plateformes**
 - Windows
 
-Si votre système rencontre des problèmes d’utilisation élevée du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison, vous pouvez envoyer un ticket au support Microsoft. Suivez les étapes décrites dans [Collecter Antivirus Microsoft Defender données de diagnostic](collect-diagnostic-data.md).
+Si votre système rencontre des problèmes d’utilisation élevée du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour point de terminaison, vous pouvez envoyer un ticket au support Microsoft. Suivez les étapes décrites dans [Collecter les données de diagnostic de l’Antivirus Microsoft Defender](collect-diagnostic-data.md).
 
 En tant qu’administrateur, vous pouvez également résoudre ces problèmes vous-même.
 
@@ -51,11 +51,12 @@ Vous pouvez également fournir des journaux d’activité supplémentaires à vo
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Vérifier auprès du fournisseur les exclusions antivirus
 
-Si vous pouvez facilement identifier les logiciels qui affectent les performances du système, accédez au base de connaissances ou au centre de support du fournisseur de logiciels. Recherchez s’ils ont des recommandations sur les exclusions antivirus. Si le site web du fournisseur ne les a pas, vous pouvez ouvrir un ticket de support avec lui et lui demander d’en publier un.
+Si vous pouvez facilement identifier les logiciels qui affectent les performances du système, accédez à la base de connaissances ou au centre de support du fournisseur de logiciels. Recherchez s’ils ont des recommandations sur les exclusions antivirus. Si le site web du fournisseur ne les a pas, vous pouvez ouvrir un ticket de support avec lui et lui demander d’en publier un.
 
-Nous recommandons aux éditeurs de logiciels de suivre les différentes instructions en [matière de partenariat avec l’industrie afin de réduire les faux positifs](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). Le fournisseur peut envoyer son logiciel via le [portail Renseignement de sécurité Microsoft](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
+Nous recommandons aux éditeurs de logiciels de suivre les différentes instructions en [matière de partenariat avec l’industrie afin de réduire les faux positifs](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). Le fournisseur peut envoyer ses logiciels via le [portail Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
 ## <a name="analyze-the-microsoft-protection-log"></a>Analyser le journal de protection Microsoft
+Vous trouverez le fichier journal de protection Microsoft dans **C:\ProgramData\Microsoft\Windows Defender\Support**.
 
 Dans **MPLog-xxxxxxxx-xxxxxx.log**, vous pouvez trouver les informations d’impact sur les performances estimées de l’exécution de logiciels *en tant qu’EstimatedImpact* :
 
@@ -75,7 +76,7 @@ Dans **MPLog-xxxxxxxx-xxxxxx.log**, vous pouvez trouver les informations d’imp
 |EstimatedImpact|Pourcentage de temps passé dans les analyses pour les fichiers consultés par ce processus hors de la période pendant laquelle ce processus a connu une activité d’analyse|
 |
 
-Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions path/process en suivant les étapes [décrites dans Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses](collect-diagnostic-data.md).
+Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions path/process en suivant les étapes de [configuration et de validation des exclusions pour les analyses antivirus Microsoft Defender](collect-diagnostic-data.md).
 
 Si l’étape précédente ne résout pas le problème, vous pouvez collecter plus d’informations via le [Moniteur de processus](#capture-process-logs-using-process-monitor) ou [l’enregistreur de performances Windows](#capture-performance-logs-using-windows-performance-recorder) dans les sections suivantes.
 
@@ -95,7 +96,7 @@ Process Monitor (ProcMon) est un outil de supervision avancé qui peut afficher 
 
 3. Décompressez le fichier afin `C:\temp` que le chemin d’accès du dossier soit `C:\temp\ProcessMonitor`.
 
-4. Copiez **ProcMon.exe** sur le client Windows ou le serveur Windows que vous résolvez.
+4. Copiez **ProcMon.exe**  sur le client Windows ou le serveur Windows que vous résolvez.
 
 5. Avant d’exécuter ProcMon, assurez-vous que toutes les autres applications non liées au problème d’utilisation élevée du processeur sont fermées. Cela permet de réduire le nombre de processus à vérifier.
 
@@ -158,9 +159,9 @@ Process Monitor (ProcMon) est un outil de supervision avancé qui peut afficher 
 
 ## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Capturer les journaux de performances à l’aide de l’enregistreur de performances Windows
 
-Vous pouvez utiliser Windows’enregistreur de performances (WPR) pour inclure des informations supplémentaires dans votre soumission au support Microsoft. WPR est un outil d’enregistrement puissant qui crée le suivi d’événements pour les enregistrements Windows.
+Vous pouvez utiliser l’enregistreur de performances Windows (WPR) pour inclure des informations supplémentaires dans votre soumission au support Microsoft. WPR est un outil d’enregistrement puissant qui crée le suivi d’événements pour les enregistrements Windows.
 
-WPR fait partie du kit de déploiement et d’évaluation Windows (Windows ADK) et peut être téléchargé à partir du [téléchargement et de l’installation du Windows ADK](/windows-hardware/get-started/adk-install). Vous pouvez également le télécharger dans le cadre du kit de développement logiciel Windows 10 sur [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+WPR fait partie du Kit de déploiement et d’évaluation Windows (Windows ADK) et peut être téléchargé à partir du [téléchargement et de l’installation de Windows ADK](/windows-hardware/get-started/adk-install). Vous pouvez également le télécharger dans le cadre du Kit de développement logiciel Windows 10 sur le [SDK Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 Vous pouvez utiliser l’interface utilisateur WPR en suivant les [étapes de capture des journaux de performances à l’aide de l’interface utilisateur WPR](#capture-performance-logs-using-the-wpr-ui).
 
@@ -173,9 +174,9 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 1. Téléchargez et installez WPR.
 
-2. Sous *Windows Kits*, cliquez avec le bouton droit sur **Windows’enregistreur de performances**.
+2. Sous *Kits Windows*, cliquez avec le bouton droit sur **l’enregistreur de performances Windows**.
 
-   :::image type="content" source="images/wpr-01.png" alt-text="Le menu Démarrer" lightbox="images/wpr-01.png":::
+   :::image type="content" source="images/wpr-01.png" alt-text="Menu Démarrer" lightbox="images/wpr-01.png":::
 
     Sélectionnez **Plus**. Sélectionnez **Exécuter en tant qu’administrateur**.
 
@@ -183,7 +184,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
    :::image type="content" source="images/wpt-yes.png" alt-text="Page UAC" lightbox="images/wpt-yes.png":::
 
-4. Ensuite, téléchargez le profil [d’analyse Microsoft Defender pour point de terminaison](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) et enregistrez `MDAV.wprp` dans un dossier comme `C:\temp`.
+4. Ensuite, téléchargez le profil [d’analyse de Microsoft Defender pour point de terminaison](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) et enregistrez `MDAV.wprp` dans un dossier comme `C:\temp`.
 
 5. Dans la boîte de dialogue WPR, sélectionnez **Autres options**.
 
@@ -192,19 +193,19 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 6. Sélectionnez **Ajouter des profils...** puis accédez au chemin d’accès du `MDAV.wprp` fichier.
 
-7. Après cela, vous devriez voir un nouveau profil défini sous *mesures personnalisées nommées* *Microsoft Defender pour point de terminaison analyse* en dessous.
+7. Après cela, vous devriez voir un nouveau profil défini sous *mesures personnalisées nommées* *Microsoft Defender pour l’analyse de point de terminaison* sous celui-ci.
 
    :::image type="content" source="images/wpr-infile.png" alt-text="Dans le fichier" lightbox="images/wpr-infile.png":::
 
     > [!WARNING]
-    > Si votre serveur Windows a 64 Go de RAM ou plus, utilisez la mesure `Microsoft Defender for Endpoint analysis for large servers` personnalisée au lieu de `Microsoft Defender for Endpoint analysis`. Sinon, votre système peut consommer une grande quantité de mémoire ou de mémoire tampon de pool non pagagée, ce qui peut entraîner une instabilité du système. Vous pouvez choisir les profils à ajouter en développant **l’analyse des ressources**.
+    > Si votre serveur Windows Server a 64 Go de RAM ou plus, utilisez la mesure `Microsoft Defender for Endpoint analysis for large servers` personnalisée au lieu de `Microsoft Defender for Endpoint analysis`. Sinon, votre système peut consommer une grande quantité de mémoire ou de mémoire tampon de pool non pagagée, ce qui peut entraîner une instabilité du système. Vous pouvez choisir les profils à ajouter en développant **l’analyse des ressources**.
     Ce profil personnalisé fournit le contexte nécessaire pour une analyse approfondie des performances.
 
-8. Pour utiliser la mesure personnalisée Microsoft Defender pour point de terminaison profil d’analyse détaillée dans l’interface utilisateur WPR :
+8. Pour utiliser le profil d’analyse détaillée microsoft Defender pour point de terminaison de mesure personnalisé dans l’interface utilisateur WPR :
 
     1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *De triage de premier niveau*, *Analyse des ressources* et *Analyse de scénario* .
     2. Sélectionnez **Mesures personnalisées**.
-    3. Sélectionnez **Microsoft Defender pour point de terminaison analyse**.
+    3. Sélectionnez **l’analyse de Microsoft Defender pour point de terminaison**.
     4. Sélectionnez **Détaillé** sous *Niveau de détail* .
     5. Sélectionnez **Fichier** ou **Mémoire** en mode Journalisation.
 
@@ -246,28 +247,28 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
     :::image type="content" source="images/wpr-14.png" alt-text="Page affichant la notification indiquant que la trace WPR a été enregistrée" lightbox="images/wpr-14.png":::
 
-    Incluez le fichier et le dossier dans votre soumission à Support Microsoft.
+    Incluez le fichier et le dossier dans votre soumission au Support Microsoft.
 
     :::image type="content" source="images/wpr-15.png" alt-text="Détails du fichier et du dossier" lightbox="images/wpr-15.png":::
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>Capturer les journaux de performances à l’aide de l’interface CLI WPR
 
-L’outil en ligne de commande *wpr.exe* fait partie du système d’exploitation en commençant par Windows 8. Pour collecter une trace WPR à l’aide de l’outil en ligne de commande wpr.exe :
+L’outil en ligne de commande *wpr.exe* fait partie du système d’exploitation à partir de Windows 8. Pour collecter une trace WPR à l’aide de l’outil en ligne de commande wpr.exe :
 
-1. Téléchargez **[Microsoft Defender pour point de terminaison profil d’analyse](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** pour les traces de performances dans un fichier nommé `MDAV.wprp` dans un répertoire local tel que `C:\traces`.
+1. Téléchargez le profil **[d’analyse de Microsoft Defender pour point de terminaison](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** pour les traces de performances dans un fichier nommé `MDAV.wprp` dans un répertoire local tel que `C:\traces`.
 
-2. Cliquez avec le bouton droit sur l’icône **Menu Démarrer**, puis sélectionnez **Windows PowerShell (Administrateur)** ou **Invite de commandes (Administrateur)** pour ouvrir une fenêtre d’invite de commandes Administrateur.
+2. Cliquez avec le bouton droit sur l’icône **Démarrer le menu** , puis sélectionnez **Windows PowerShell (Administrateur)** ou **Invite de commandes (Administrateur)** pour ouvrir une fenêtre d’invite de commandes Administrateur.
 
 3. Lorsque la boîte de dialogue Contrôle de compte d’utilisateur s’affiche, sélectionnez **Oui**.
 
-4. À l’invite avec élévation de privilèges, exécutez la commande suivante pour démarrer une trace de performances Microsoft Defender pour point de terminaison :
+4. À l’invite avec élévation de privilèges, exécutez la commande suivante pour démarrer une trace des performances de Microsoft Defender pour point de terminaison :
 
     ```console
     wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
 
     > [!WARNING]
-    > Si votre serveur Windows dispose d’au moins 64 Go de RAM, utilisez des profils `WDForLargeServers.Light` et`WDForLargeServers.Verbose`, respectivement, plutôt que des profils `WD.Light` `WD.Verbose`. Sinon, votre système peut consommer une grande quantité de mémoire ou de mémoire tampon de pool non pagagée, ce qui peut entraîner une instabilité du système.
+    > Si votre serveur Windows Server a 64 Go ou plus de RAM, utilisez des profils `WDForLargeServers.Light` et `WDForLargeServers.Verbose` , respectivement, plutôt que des profils `WD.Light` `WD.Verbose`. Sinon, votre système peut consommer une grande quantité de mémoire ou de mémoire tampon de pool non pagagée, ce qui peut entraîner une instabilité du système.
 
 5. Reproduisez le problème.
 
@@ -296,5 +297,5 @@ L’outil en ligne de commande *wpr.exe* fait partie du système d’exploitatio
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Collecter Antivirus Microsoft Defender données de diagnostic](collect-diagnostic-data.md)
-- [Configurer et valider les exclusions pour les analyses Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Collecter les données de diagnostic de l’Antivirus Microsoft Defender](collect-diagnostic-data.md)
+- [Configurer et valider les exclusions pour les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)

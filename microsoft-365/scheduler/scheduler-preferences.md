@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
 description: Découvrez comment ajuster les préférences de planification pour Scheduler pour Microsoft 365.
-ms.openlocfilehash: 34594db45883a7f746b9905661b1dedc8e5e4f6a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: e6b6f4426b173bced90fcc8f2a705bc3e48cd09e
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893431"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923383"
 ---
 # <a name="scheduling-preferences-used-by-scheduler"></a>Préférences de planification utilisées par Scheduler
 
@@ -21,7 +21,7 @@ Scheduler utilise plusieurs préférences Outlook pour planifier une réunion po
 
 ## <a name="supported-settings"></a>Paramètres pris en charge
 
-- **Fuseau horaire**. Les utilisateurs du planificateur de fuseau horaire pour déterminer l’heure appropriée pour les réunions. Pour plus d’informations [, consultez Ajouter, supprimer ou modifier des fuseaux horaires](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) .
+- **Fuseau horaire**. Le planificateur de fuseau horaire permet de déterminer l’heure appropriée pour les réunions. Pour plus d’informations [, consultez Ajouter, supprimer ou modifier des fuseaux horaires](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) .
 
 - **Heures et jours de travail**. Pour la plupart des types de réunions, Scheduler sélectionne une heure en fonction des préférences de semaine de travail et d’heures de réunion de l’organisateur. Pour plus d’informations, consultez [Modifier vos heures et jours de travail dans Outlook](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) .
 

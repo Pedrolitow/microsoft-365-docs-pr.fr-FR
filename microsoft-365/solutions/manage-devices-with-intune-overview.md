@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 08abc5c53c54c5a4e4100cc88adf0fb25af5c23b
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 1f5b512c18c1ca6014881f93714320a6887bd9df
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535357"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923365"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 
@@ -110,7 +110,7 @@ Dans cette illustration :
 Notez que seul Intune gère les appareils. L’intégration fait référence à la possibilité pour un appareil de partager des informations avec un service spécifique. Le tableau suivant récapitule les différences entre l’inscription d’appareils dans la gestion et l’intégration d’appareils pour un service spécifique.
 
 
-|         |Inscription     |Intégrer  |
+| &nbsp; |Inscription     |Intégrer  |
 |---------|---------|---------|
 |Description     |  L’inscription s’applique à la gestion des appareils. Les appareils sont inscrits pour la gestion avec Intune ou Gestionnaire de configuration.        | L’intégration configure un appareil pour qu’il fonctionne avec un ensemble spécifique de fonctionnalités dans Microsoft 365. Actuellement, l’intégration s’applique à Microsoft Defender pour point de terminaison et aux fonctionnalités de conformité Microsoft. <br><br>Sur les appareils Windows, l’intégration implique de basculer un paramètre dans Windows Defender qui permet à Defender de se connecter au service en ligne et d’accepter les stratégies qui s’appliquent à l’appareil.        |
 |Portée     | Ces outils de gestion des appareils gèrent l’ensemble de l’appareil, notamment la configuration de l’appareil pour atteindre des objectifs spécifiques, tels que la sécurité.        |L’intégration affecte uniquement les services qui s’appliquent.     |
