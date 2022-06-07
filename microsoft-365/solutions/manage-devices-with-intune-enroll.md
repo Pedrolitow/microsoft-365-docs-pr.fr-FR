@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: d01630c5e5011363a08ae43ce87e6620d8d17f8f
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704711"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923322"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Étape 2. Inscrire des appareils dans Intune
 
@@ -36,6 +36,12 @@ Le processus d'inscription de l'appareil établit une relation entre l'utilisate
 Cet article recommande des méthodes pour inscrire des périphériques à Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez la section [Conseils de déploiement : Inscrire des périphériques dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-steps-1.png#lightbox)
+
+Utilisez les conseils de cet article avec cette version illustrée des options d’inscription pour chaque plateforme. 
+
+[![Représentation visuelle des options d’inscription Intune par plateforme](../media/devices/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) | [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Mise à jour de juin 2022
+
+
 
 ## <a name="windows-enrollment"></a>Inscription de Windows
 Il existe plusieurs options pour inscrire des appareils Windows 10 et Windows 11. Les méthodes les plus courantes incluent ces deux:
