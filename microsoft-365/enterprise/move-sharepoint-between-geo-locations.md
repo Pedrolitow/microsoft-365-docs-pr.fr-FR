@@ -13,14 +13,14 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
+description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéographique et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e4132b8399cc69067d24af6c3c9ec8e3baf52bd
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 0b388b3fa869e6207c72f62aa2f50b832acab43a
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806863"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940819"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -28,14 +28,14 @@ La fonctionnalité de déplacement géographique de site de SharePoint vous perm
 
 Les types de sites pouvant être déplacés entre emplacements géographiques sont les suivants :
 
-- Microsoft 365 sites connectés à un groupe, y compris les sites associés à Microsoft Teams
-- Sites modernes sans association de Microsoft 365 de groupe
+- Sites connectés au groupe Microsoft 365, y compris les sites associés à Microsoft Teams
+- Sites modernes sans association de groupe Microsoft 365
 - Sites SharePoint classiques
 - Sites de communication
 
 Pour pouvoir déplacer un site, vous devez être un administrateur général ou un administrateur SharePoint.
 
-Il existe une fenêtre en lecture seule pendant le SharePoint de site géographique d’environ 4 à 6 heures, selon le contenu du site.
+Il existe une fenêtre en lecture seule pendant le déplacement géographique du site SharePoint d’environ 4 à 6 heures, en fonction du contenu du site.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
@@ -75,13 +75,13 @@ L’heure doit être exprimée en Temps universel coordonné (UTC) pour les deux
 
 Un déplacement géographique de site SharePoint nécessite que vous vous connectiez et opériez le déplacement de l’URL d’administration SharePoint vers l’emplacement géographique du site.
 
-Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/sites/Turbines>, connectez-vous à l’URL SharePoint’administration à l’adresse <https://contosohealthcare-admin.sharepoint.com>suivante :
+Par exemple, si l’URL du site est `https://contosohealthcare.sharepoint.com/sites/Turbines`, connectez-vous à l’URL d’administration SharePoint à l’adresse `https://contosohealthcare-admin.sharepoint.com`suivante :
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Online Management Shell affichant la commande Connect-SPOService commande.](../media/move-onedrive-between-geo-locations-image1.png)
+![Fenêtre SharePoint Online Management Shell montrant la commande Connect-SPOService.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Validation de l’environnement
 
@@ -103,15 +103,15 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 Cette cmdlet retourne *Success* si le site peut être déplacé, ou *Fail* en cas de blocage du déplacement.
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Démarrer un déplacement SharePoint site pour un site sans groupe Microsoft 365 associé
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Démarrer un déplacement géographique de site SharePoint pour un site sans groupe Microsoft 365 associé
 
 Par défaut, l’URL initiale du site est remplacée par l’URL de l’emplacement géographique cible. Par exemple :
 
-<https://Contoso.sharepoint.com/sites/projectx> devient <https://ContosoEUR.sharepoint.com/sites/projectx>
+`https://Contoso.sharepoint.com/sites/projectx` devient `https://ContosoEUR.sharepoint.com/sites/projectx`
 
-Pour les sites sans association Microsoft 365 de groupe, vous pouvez également renommer le site à l’aide du `-DestinationUrl` paramètre. Par exemple :
+Pour les sites sans association de groupe Microsoft 365, vous pouvez également renommer le site à l’aide du `-DestinationUrl` paramètre. Par exemple :
 
-<https://Contoso.sharepoint.com/sites/projectx> devient <https://ContosoEUR.sharepoint.com/sites/projecty>
+<https://Contoso.sharepoint.com/sites/projectx> devient `https://ContosoEUR.sharepoint.com/sites/projecty`
 
 Pour commencer à déplacer le site, exécutez la cmdlet suivante :
 
@@ -119,13 +119,13 @@ Pour commencer à déplacer le site, exécutez la cmdlet suivante :
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![Capture d’écran de la fenêtre PowerShell Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
+![Capture d’écran de la fenêtre PowerShell montrant Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Démarrer un déplacement géographique SharePoint site pour un site Microsoft 365 de groupe
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Démarrer un déplacement géographique de site SharePoint pour un site connecté à un groupe Microsoft 365
 
-Pour déplacer un site Microsoft 365 connecté à un groupe, l’administrateur général ou l’administrateur SharePoint doit d’abord modifier l’attribut DDL (Preferred Data Location) pour le groupe Microsoft 365 groupe.
+Pour déplacer un site connecté à un groupe Microsoft 365, l’administrateur général ou l’administrateur SharePoint doit d’abord modifier l’attribut PDL (Preferred Data Location) pour le groupe Microsoft 365.
 
-Pour définir la PDL d’un Microsoft 365 groupe :
+Pour définir le fichier PDL d’un groupe Microsoft 365 :
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -147,7 +147,7 @@ Vous pouvez arrêter un déplacement géographique de site OneDrive, à la condi
 Vous pouvez déterminer l’état d’un déplacement de site hors de la zone géographique à laquelle vous êtes connecté à l’aide des cmdlets suivantes :
 
 - [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (sites non connectés à un groupe)
-- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (sites connectés à un groupe)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (sites connectés au groupe)
 
 Pour spécifier le site dont vous voulez voir l’état de déplacement, utilisez le paramètre `-SourceSiteUrl`.
 
@@ -159,7 +159,7 @@ Les états de déplacement sont décrits dans le tableau suivant.
 |---|---|
 |Ready to Trigger|Le déplacement n’a pas commencé.|
 |Scheduled|Le déplacement est en file d’attente mais n’a pas encore commencé.|
-|InProgress (n/4)|Le déplacement est en cours dans l’un des états suivants : Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
+|InProgress (n/4)|Le déplacement est en cours dans l’un des états suivants : Validation (1/4), Sauvegarde (2/4), Restauration (3/4), Nettoyage (4/4).|
 |Opération réussie|Le déplacement a réussi.|
 |Échec|Le déplacement a échoué.|
 |
@@ -172,17 +172,17 @@ Les utilisateurs du site devraient constater une perturbation minimale lors du d
 
 ### <a name="site"></a>Site
 
-Lorsque le déplacement est en cours, le site est en lecture seule. Une fois le déplacement terminé, l’utilisateur est redirigé vers le nouveau site dans le nouvel emplacement géographique quand il clique sur des signets ou d’autres liens pointant sur le site.
+Pendant que le déplacement est en cours, le site est défini sur lecture seule. Une fois le déplacement terminé, l’utilisateur est redirigé vers le nouveau site dans le nouvel emplacement géographique quand il clique sur des signets ou d’autres liens pointant sur le site.
 
 ### <a name="permissions"></a>Autorisations
 
 Les utilisateurs disposant d’autorisations d’accès au site continuent de pouvoir y accéder durant et après le déplacement.
 
-### <a name="sync-app"></a>Application de synchronisation
+### <a name="sync-app"></a>Synchroniser l’application
 
 L’application de synchronisation détecte et transfère automatiquement la synchronisation vers le nouvel emplacement du site une fois le déplacement du site terminé. L’utilisateur n’a pas besoin de se reconnecter ou d’effectuer un autre action. (Version 17.3.6943.0625 ou ultérieure de l’application de synchronisation requise.)
 
-Si un utilisateur met à jour un fichier pendant le déplacement, l’application de synchronisation l’informe que les téléchargements de fichiers sont en attente pendant le déplacement.
+Si un utilisateur met à jour un fichier pendant le déplacement, l’application de synchronisation l’informe que les chargements de fichiers sont en attente pendant le déplacement.
 
 ### <a name="sharing-links"></a>Partage des liens
 
@@ -200,11 +200,11 @@ Le client OneNote Win32 et l’application UWP (plateforme Windows universelle) 
 - OneNote UWP – Version 16.0.8431.1006 (et versions ultérieures)
 - Application mobile OneNote : Version 16.0.8431.1011 (et versions ultérieures)
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (applicable Microsoft 365 sites connectés à un groupe)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (applicable aux sites connectés au groupe Microsoft 365)
 
-Une fois le SharePoint site géographique terminé, les utilisateurs ont accès à leurs fichiers de site de groupe Microsoft 365 sur l’application Teams web. Par ailleurs, les fichiers partagés via une conversation Teams à partir de leur site avant le déplacement géographique continuent également de fonctionner après le déplacement.
+Une fois le déplacement géographique du site SharePoint terminé, les utilisateurs ont accès à leurs fichiers de site de groupe Microsoft 365 sur l’application Teams. Par ailleurs, les fichiers partagés via une conversation Teams à partir de leur site avant le déplacement géographique continuent également de fonctionner après le déplacement.
 
-SharePoint déplacement géographique de site ne prend pas en charge le déplacement de canaux privés d’une géo à une autre. Les canaux privés restent dans la géo d’origine.
+Le déplacement géographique de site SharePoint ne prend pas en charge le déplacement de canaux privés d’une zone géographique à une autre. Les canaux privés restent dans la zone géographique d’origine.
   
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Application SharePoint Mobile (iOS/Android)
@@ -213,19 +213,19 @@ L’application SharePoint Mobile étant inter-géographique, elle est capable d
 
 ### <a name="sharepoint-workflows"></a>Flux de travail SharePoint
 
-SharePoint flux de travail 2013 doivent être republiés après le déplacement du site. Les flux de travail SharePoint 2010 devraient continuer de fonctionner normalement.
+Les flux de travail SharePoint 2013 doivent être republiés après le déplacement du site. Les flux de travail SharePoint 2010 devraient continuer de fonctionner normalement.
 
 ### <a name="apps"></a>Applications
 
-Si vous souhaitez déplacer un site avec des applications, vous devez réinstancier l’application dans le nouvel emplacement géographique du site, car l’application et ses connexions risquent de ne pas être disponibles dans l’emplacement géographique de destination.
+Si vous déplacez un site avec des applications, vous devez réinstaller l’application dans le nouvel emplacement géographique du site, car l’application et ses connexions peuvent ne pas être disponibles dans l’emplacement géographique de destination.
 
 ### <a name="flow"></a>Flow
 
-Dans la plupart des cas, les flux continueront de fonctionner après un déplacement géographique SharePoint site. Nous vous conseillons de les tester une fois le déplacement terminé.
+Dans la plupart des cas, les flux continueront de fonctionner après un déplacement géographique de site SharePoint. Nous vous conseillons de les tester une fois le déplacement terminé.
 
 ### <a name="power-apps"></a>Power Apps
 
-Power Apps doivent être recréés à l’emplacement de destination.
+Power Apps doit être recréé à l’emplacement de destination.
 
 ### <a name="data-movement-between-geo-locations"></a>Déplacement de données entre emplacements géographiques
 

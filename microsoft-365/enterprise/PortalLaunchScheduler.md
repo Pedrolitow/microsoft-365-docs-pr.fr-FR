@@ -16,20 +16,20 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement du portail
-ms.openlocfilehash: 74de87a41f0b8b29dd901e757e410ff57f8f1d39
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement du portail.
+ms.openlocfilehash: 2eef7a8488db579f4ba946342213b822227229d1
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824133"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941061"
 ---
-# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement SharePoint Portal
+# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement du portail SharePoint
 
-Un portail est un site de communication SharePoint sur votre intranet qui est à fort trafic , un site qui compte entre 10 000 et plus de 100 000 visiteurs au cours de plusieurs semaines. Utilisez le planificateur de lancement du portail pour lancer votre portail afin de garantir aux utilisateurs une expérience d’affichage fluide lors de l’accès à votre nouveau portail SharePoint.
+Un portail est un site de communication SharePoint sur votre intranet qui est à fort trafic, un site qui compte entre 10 000 et plus de 100 000 visiteurs au cours de plusieurs semaines. Utilisez le planificateur de lancement du portail pour lancer votre portail afin de garantir aux utilisateurs une expérience d’affichage fluide lors de l’accès à votre nouveau portail SharePoint.
 <br>
 <br>
-Le planificateur de lancement du portail est conçu pour vous aider à suivre une approche de déploiement progressive en mettant en lots les visionneuses par vagues et en gérant les redirections d’URL pour le nouveau portail. Pendant le lancement de chaque vague, vous pouvez recueillir les commentaires des utilisateurs, surveiller les performances du portail et suspendre le lancement pour résoudre les problèmes avant de passer à la vague suivante. En savoir plus sur la [planification d’un lancement du portail dans SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
+Le planificateur de lancement du portail est conçu pour vous aider à suivre une approche de déploiement progressive en mettant en lots les visionneuses par vagues et en gérant les redirections d’URL pour le nouveau portail. Pendant le lancement de chaque vague, vous pouvez recueillir les commentaires des utilisateurs, surveiller les performances du portail et suspendre le lancement pour résoudre les problèmes avant de passer à la vague suivante. En savoir plus sur la [planification d’un lancement de portail dans SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
 
 **Il existe deux types de redirections :**
 
@@ -40,23 +40,23 @@ Les autorisations de site doivent être configurées séparément des ondes dans
 
 > [!NOTE]
 >
-> - Cette fonctionnalité sera accessible à partir du panneau **Paramètres** sur la page d’accueil des sites de communication SharePoint.
-> - Cette fonctionnalité ne peut être utilisée que sur les sites de communication SharePoint modernes utilisant des pages de site, car il s’agit du type par défaut et recommandé à utiliser pour les portails.
+> - Cette fonctionnalité sera accessible à partir du panneau **Paramètres** de la page d’accueil des sites de communication SharePoint.
+> - Cette fonctionnalité ne peut être utilisée que sur les sites de communication SharePoint modernes à l’aide de pages de site, car il s’agit du type par défaut et recommandé à utiliser pour les portails.
 > - Vous devez disposer des autorisations du propriétaire du site pour personnaliser et planifier le lancement d’un portail.
 > - Les lancements doivent être planifiés au moins sept jours à l’avance et chaque vague peut durer de un à sept jours.
 > - Le nombre d’ondes requises est automatiquement déterminé par le nombre attendu d’utilisateurs.
 > - Avant de planifier le lancement d’un portail, [l’outil Diagnostics de page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du site est saine.
 > - À la fin du lancement, tous les utilisateurs disposant d’autorisations sur le site pourront accéder au nouveau site.
-> - Si votre organisation utilise [Viva Connections](/SharePoint/viva-connections), les utilisateurs peuvent voir l’icône de votre organisation dans la barre d’applications Microsoft Teams. Toutefois, lorsque l’icône est sélectionnée, les utilisateurs ne pourront pas accéder au portail tant que leur vague n’aura pas été lancée.
-> - Cette fonctionnalité n’est pas disponible pour Office 365 Allemagne, Office 365 géré par 21Vianet (Chine) ou Microsoft 365 plans du gouvernement des États-Unis.
+> - Si votre organisation utilise [Viva Connections](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), les utilisateurs peuvent voir l’icône de votre organisation dans la barre des applications Microsoft Teams. Toutefois, lorsque l’icône est sélectionnée, les utilisateurs ne pourront pas accéder au portail tant que leur vague n’aura pas été lancée.
+> - Cette fonctionnalité n’est pas disponible pour Office 365 Allemagne, Office 365 géré par 21Vianet (Chine) ou microsoft 365 us government.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Comprendre les différences entre les options du planificateur de lancement du portail :
 
 Auparavant, les lancements du portail pouvaient uniquement être planifiés via SharePoint PowerShell. Vous disposez maintenant de deux options pour vous aider à planifier et gérer le lancement de votre portail. Découvrez les principales différences entre les deux outils :
 
-**SharePoint version de PowerShell :**
+**Version de SharePoint PowerShell :**
 
-- Les informations d’identification d’administrateur sont requises pour utiliser [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
+- Les informations d’identification de l’administrateur sont requises pour utiliser [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
 - Exigence minimale d’une vague
 - Planifier votre lancement en fonction du fuseau horaire UTC (Coordinated Universal Time)
 
@@ -66,7 +66,7 @@ Auparavant, les lancements du portail pouvaient uniquement être planifiés via 
 - Exigence minimale de deux vagues
 - Planifier votre lancement en fonction du fuseau horaire local du portail, comme indiqué dans les paramètres régionaux
 
-## <a name="get-started-using-the-portal-launch-scheduler"></a>Démarrage à l’aide du planificateur de lancement du portail
+## <a name="get-started-using-the-portal-launch-scheduler"></a>Prise en main du planificateur de lancement du portail
 
 1. Avant d’utiliser l’outil planificateur de lancement du portail, [ajoutez tous les utilisateurs qui auront besoin d’accéder à ce site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) via **des autorisations de** site en tant que propriétaire du site, membre du site ou visiteur.
 
@@ -76,16 +76,16 @@ Auparavant, les lancements du portail pouvaient uniquement être planifiés via 
 
    ![Image de l’invite à utiliser le planificateur de lancement du portail lors de la republication de la page d’accueil.](../media/portal-launch-republish-2.png)
 
-   **Option 2** : À tout moment, vous pouvez accéder à la page d’accueil SharePoint site de communication, sélectionner **Paramètres** puis planifier le lancement du **site** pour planifier le lancement de votre portail.
+   **Option 2** : À tout moment, vous pouvez accéder à la page d’accueil du site de communication SharePoint, sélectionner **Paramètres** , puis **planifier le lancement du site** pour planifier le lancement de votre portail.
 
-   ![Image du volet Paramètres avec planifier le lancement d’un site mis en évidence.](../media/portal-launch-settings-2.png)
+   ![Image du volet Paramètres avec planifier le lancement d’un site mis en surbrillance.](../media/portal-launch-settings-2.png)
 
-3. Ensuite, confirmez le score d’intégrité du portail et apportez des améliorations au portail si nécessaire à l’aide de l’outil [Diagnostics de page pour SharePoint](https://aka.ms/perftool) jusqu’à ce que votre portail reçoive un score **Sain**. Puis sélectionnez **Suivant**.
+3. Ensuite, confirmez le score d’intégrité du portail et apportez des améliorations au portail si nécessaire à l’aide de l’outil [Diagnostics de page pour SharePoint](https://aka.ms/perftool) jusqu’à ce que votre portail reçoive un score **Sain** . Puis sélectionnez **Suivant**.
 
    ![Image de l’outil planificateur de lancement du portail.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
-   > Le nom et la description du site ne peuvent pas être modifiés à partir du planificateur de lancement du portail et peuvent être modifiés en sélectionnant **Paramètres** puis **les informations de site** dans la page d’accueil.
+   > Le nom et la description du site ne peuvent pas être modifiés à partir du planificateur de lancement du portail et peuvent être modifiés en sélectionnant **Paramètres** , puis **les informations de site** dans la page d’accueil.
 
 4. Sélectionnez le **nombre d’utilisateurs attendus** dans la liste déroulante. Cette figure représente le nombre d’utilisateurs qui auront probablement besoin d’accéder au site. Le planificateur de lancement du portail détermine automatiquement le nombre idéal d’ondes en fonction des utilisateurs attendus comme suit :
 
@@ -96,7 +96,7 @@ Auparavant, les lancements du portail pouvaient uniquement être planifiés via 
 
 5. Déterminez ensuite le **type de redirection** nécessaire :
 
-   **Option 1 : Envoyer des utilisateurs à une page de SharePoint existante (bidirectionnelle)** : utilisez cette option lors du lancement d’un nouveau portail SharePoint moderne pour remplacer un portail SharePoint existant. Les utilisateurs des vagues actives sont redirigés vers le nouveau site, qu’ils accèdent à l’ancien ou au nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site seront redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée.
+   **Option 1 : Envoyer des utilisateurs à une page SharePoint existante (bidirectionnelle)** : utilisez cette option lors du lancement d’un nouveau portail SharePoint moderne pour remplacer un portail SharePoint existant. Les utilisateurs des vagues actives sont redirigés vers le nouveau site, qu’ils accèdent à l’ancien ou au nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site seront redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée.
 
    > [!NOTE]
    > Lorsque vous utilisez l’option bidirectionnelle, la personne qui planifie le lancement doit également disposer d’autorisations de propriétaire de site sur l’autre portail SharePoint.
@@ -110,7 +110,7 @@ Auparavant, les lancements du portail pouvaient uniquement être planifiés via 
    > [!NOTE]
    >
    > - Le planificateur de lancement du portail a automatiquement une valeur par défaut d’au moins 2 vagues. Toutefois, la version PowerShell de cet outil autorise 1 vague.
-   > - Microsoft 365 groupes ne sont pas pris en charge par cette version du planificateur de lancement du portail.
+   > - Les groupes Microsoft 365 ne sont pas pris en charge par cette version du planificateur de lancement du portail.
 
 7. Déterminez qui doit afficher le site immédiatement et entrez ses informations dans le champ **Utilisateurs exemptés des ondes** . Ces utilisateurs sont exclus des vagues et ne seront pas redirigés avant, pendant ou après le lancement.
 
@@ -134,11 +134,11 @@ Si vous envisagez de lancer un portail avec plus de 100 000 utilisateurs, envoye
 
 1. En tant qu’administrateur, cliquez sur le lien suivant qui remplira une requête d’aide dans le Centre d’administration.
 
-[Lancer SharePoint Portal avec 100 000 utilisateurs](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
+[Lancer le portail SharePoint avec 100 000 utilisateurs](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
 2. En bas du volet, sélectionnez **Contacter le support** technique, puis sélectionnez **Nouvelle demande de service.**
 
-3. Sous **Description**, entrez « Lancer SharePoint portail avec 100 000 utilisateurs ».
+3. Sous **Description**, entrez « Lancer le portail SharePoint avec 100 000 utilisateurs ».
 
 4. Renseignez les informations restantes, puis sélectionnez **Me contacter**.
 
@@ -160,7 +160,7 @@ Les détails du lancement peuvent être modifiés pour chaque vague jusqu’à l
 
 Les lancements planifiés à l’aide de l’outil planificateur de lancement du portail peuvent être annulés ou supprimés à tout moment, même si certaines vagues ont déjà été lancées.
 
-1. Pour annuler le lancement de votre portail, accédez à **Paramètres** et **planifiez le lancement du site**.
+1. Pour annuler le lancement de votre portail, **accédez à Paramètres** et **Planifiez le lancement du site**.
 
 2. Ensuite, **sélectionnez Supprimer** , puis, lorsque vous voyez le message ci-dessous, **sélectionnez Supprimer** à nouveau.
 
@@ -168,7 +168,7 @@ Les lancements planifiés à l’aide de l’outil planificateur de lancement du
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Utiliser le planificateur de lancement du portail PowerShell
 
-L’outil du planificateur de lancement du portail SharePoint était initialement disponible uniquement via [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) et continuera d’être pris en charge via PowerShell pour les clients qui préfèrent cette méthode. Les mêmes notes au début de cet article s’appliquent aux deux versions du planificateur de lancement du portail.
+À l’origine, l’outil planificateur de lancement du portail SharePoint était uniquement disponible via [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) et continuera d’être pris en charge via PowerShell pour les clients qui préfèrent cette méthode. Les mêmes notes au début de cet article s’appliquent aux deux versions du planificateur de lancement du portail.
 
 > [!NOTE]
 > Vous avez besoin d’autorisations d’administrateur pour utiliser SharePoint PowerShell.
@@ -204,7 +204,7 @@ Le nombre d’ondes requises dépend de la taille de lancement attendue.
 
 #### <a name="steps-for-bidirectional-redirection"></a>Étapes de redirection bidirectionnelle
 
-La redirection bidirectionnelle implique le lancement d’un nouveau portail SharePoint Online moderne pour remplacer un portail existant SharePoint classique ou moderne. Les utilisateurs des vagues actives sont redirigés vers le nouveau site, qu’ils accèdent à l’ancien ou au nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site seront redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée.
+La redirection bidirectionnelle implique le lancement d’un nouveau portail SharePoint Online moderne pour remplacer un portail SharePoint classique ou moderne existant. Les utilisateurs des vagues actives sont redirigés vers le nouveau site, qu’ils accèdent à l’ancien ou au nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site seront redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée.
 
 Nous prenons uniquement en charge la redirection entre la page d’accueil par défaut sur l’ancien site et la page d’accueil par défaut sur le nouveau site. Si vous avez des administrateurs ou des propriétaires qui ont besoin d’accéder aux anciens et nouveaux sites sans être redirigés, assurez-vous qu’ils sont répertoriés à l’aide du `WaveOverrideUsers` paramètre.
 
@@ -229,7 +229,7 @@ Pour migrer des utilisateurs d’un site SharePoint existant vers un nouveau sit
 
 #### <a name="steps-for-redirection-to-temporary-page"></a>Étapes de redirection vers une page temporaire
 
-La redirection de page temporaire doit être utilisée lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint Online moderne par étapes. Si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire (n’importe quelle URL).
+La redirection de page temporaire doit être utilisée lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint Online moderne de manière intermédiaire. Si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire (n’importe quelle URL).
 
 1. Exécutez la commande suivante pour désigner les vagues de lancement du portail.
 

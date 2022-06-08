@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082061eeeb3443068eaa13cb0b91f8e93adefb21
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76bbad1b392966f9140db36cf4adbbfff7b62b2b
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078776"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940951"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 
@@ -189,7 +189,7 @@ Dans le nouveau modèle, les points de terminaison sont séparés en trois caté
   - Assurez-vous que les adresses IP renvoyées par la résolution de noms DNS correspondent au chemin d’accès de sortie de routage pour ces points de terminaison.
   - Donnez la priorité à ces points de terminaison pour l’intégration SD-WAN pour un routage direct et à latence minimale vers le point d’appairage Internet le plus proche du réseau mondial Microsoft.
 
-- Les points de terminaison **par défaut** représentent les services et dépendances Office 365 qui ne nécessitent aucune optimisation et peuvent être traités par les réseaux des clients comme un trafic Internet normal. Certains points de terminaison de cette catégorie peuvent ne pas être hébergés dans des centres de données Microsoft. Les exemples incluent  *https://odc.officeapps.live.com*  and  *https://appexsin.stb.s-msn.com*.
+- Les points de terminaison **par défaut** représentent les services et dépendances Office 365 qui ne nécessitent aucune optimisation et peuvent être traités par les réseaux des clients comme un trafic Internet normal. Certains points de terminaison de cette catégorie peuvent ne pas être hébergés dans des centres de données Microsoft. Les exemples incluent  *https://odc.officeapps.live.com*  and  *`https://appexsin.stb.s-msn.com`*.
 
 Si vous souhaitez en savoir plus sur les techniques d’optimisation du réseau Office 365, consultez l’article [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md).
   

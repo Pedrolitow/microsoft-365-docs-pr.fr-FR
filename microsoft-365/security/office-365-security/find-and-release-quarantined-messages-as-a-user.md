@@ -20,12 +20,13 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc3e53283f59d7a750e05d56718d389f48e6a9d9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+adobe-target: true
+ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840013"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940995"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -49,10 +50,10 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |Hameçonnage|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Hameçonnage à haute fiabilité||||
 |**Stratégies anti-hameçonnage**||||
-|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Stratégies anti-programme malveillant**||||
 |Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants.||||
 |**Pièces jointes sécurisées dans Defender pour Office 365**||||

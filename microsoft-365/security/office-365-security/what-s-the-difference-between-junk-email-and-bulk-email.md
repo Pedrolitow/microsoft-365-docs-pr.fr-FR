@@ -1,5 +1,5 @@
 ---
-title: Quelle&apos; est la différence entre le courrier indésirable et le courrier électronique en bloc ?
+title: Quelle est la différence entre courrier indésirable et message électronique en masse ?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir les différences entre le courrier indésirable (courrier indésirable) et le courrier en bloc (courrier gris) dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: dd876b522a0d565b84e8bb9043e277cd3bc34495
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647840"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940445"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier électronique en bloc dans EOP ?
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647840"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les clients demandent parfois : « Quelle est la différence entre le courrier indésirable et le courrier en bloc ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, les clients demandent parfois : « Quelle est la différence entre le courrier indésirable et le courrier en bloc ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
 
 - **Le courrier indésirable** est un courrier indésirable, qui sont des messages non sollicités et universellement indésirables (lorsqu’ils sont identifiés correctement). Par défaut, l’EOP rejette le courrier indésirable en fonction de la réputation du serveur de messagerie source. Si un message réussit l’inspection IP source, il est envoyé au filtrage du courrier indésirable. Si le message est classé comme courrier indésirable par filtrage du courrier indésirable, le message est (par défaut) remis aux destinataires prévus et déplacé vers son dossier Courrier indésirable.
 

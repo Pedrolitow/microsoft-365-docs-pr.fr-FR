@@ -18,17 +18,17 @@ search.appverid:
 - BSA160
 f1.keywords:
 - NOCSH
-description: Utilisez l’outil Diagnostics de page pour SharePoint pour analyser SharePoint portail moderne en ligne et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: a4d2c0f6d298578290d9f7daf850c4744e2f8dff
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Utilisez l’outil Diagnostics de page pour SharePoint pour analyser le portail moderne SharePoint Online et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
+ms.openlocfilehash: b89534fe45daf34082b7ee3b735a7ba67851f9f4
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621839"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941105"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utiliser l’outil Diagnostics de page pour SharePoint
 
-Cet article explique comment utiliser **l’outil Diagnostics de page pour SharePoint** pour analyser SharePoint pages de site en ligne modernes et classiques par rapport à un ensemble prédéfini de critères de performances.
+Cet article explique comment utiliser **l’outil Diagnostics de page pour SharePoint pour** analyser les pages de site modernes et classiques SharePoint Online par rapport à un ensemble prédéfini de critères de performances.
 
 L’outil Diagnostics de page pour SharePoint peut être installé pour :
 
@@ -40,16 +40,16 @@ L’outil Diagnostics de page pour SharePoint peut être installé pour :
 
 L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pour le nouveau Microsoft Edge (les navigateurs https://www.microsoft.com/edge) et Chrome que vous pouvez utiliser pour analyser les pages de sites de publication SharePoint classiques et les portails modernes. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
-L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfini de règles et affiche des informations détaillées lorsque les résultats d’un test se trouvent en dehors de la valeur de référence. SharePoint Les administrateurs et concepteurs en ligne peuvent utiliser l’outil pour résoudre les problèmes de performances et s’assurer que les nouvelles pages sont optimisées avant la publication.
+L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfini de règles et affiche des informations détaillées lorsque les résultats d’un test se trouvent en dehors de la valeur de référence. Les administrateurs et concepteurs SharePoint Online peuvent utiliser l’outil pour résoudre les problèmes de performances et s’assurer que les nouvelles pages sont optimisées avant la publication.
 
-L’outil Diagnostics de page est conçu pour analyser SharePoint pages de site uniquement, et non les pages système telles que *allitems.aspx* ou *sharepoint.aspx*. Si vous tentez d’exécuter l’outil sur une page système ou toute autre page non-site, vous recevez un message d’erreur indiquant que l’outil ne peut pas être exécuté pour ce type de page.
+L’outil Diagnostics de page est conçu pour analyser uniquement les pages de site SharePoint, et non les pages système telles que *allitems.aspx* ou *sharepoint.aspx*. Si vous tentez d’exécuter l’outil sur une page système ou toute autre page non-site, vous recevez un message d’erreur indiquant que l’outil ne peut pas être exécuté pour ce type de page.
 
 > [!div class="mx-imgBorder"]
 > ![Doit s’exécuter sur une page SharePoint.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-Il ne s’agit pas d’une erreur dans l’outil, car il n’y a aucune valeur dans l’évaluation des bibliothèques ou des pages système. Accédez à une page SharePoint site pour utiliser l’outil. Si cette erreur se produit sur une page SharePoint, vérifiez la page maître pour vous assurer que les métatags SharePoint n’ont pas été supprimés.
+Il ne s’agit pas d’une erreur dans l’outil, car il n’y a aucune valeur dans l’évaluation des bibliothèques ou des pages système. Accédez à une page de site SharePoint pour utiliser l’outil. Si cette erreur se produit sur une page SharePoint, vérifiez la page maître pour vous assurer que les métatags SharePoint n’ont pas été supprimés.
 
-Pour fournir des commentaires sur l’outil, sélectionnez les points de suspension dans le coin supérieur droit de l’outil, puis [sélectionnez Donner des commentaires](https://go.microsoft.com/fwlink/?linkid=874109).
+Pour fournir des commentaires sur l’outil, sélectionnez les points de suspension dans le coin supérieur droit de l’outil, puis **sélectionnez Donner des commentaires**.
 
 > [!div class="mx-imgBorder"]
 > ![Faites part de vos commentaires.](../media/page-diagnostics-for-spo/pagediag-feedback.png)
@@ -72,8 +72,8 @@ La procédure d’installation de cette section fonctionne pour les navigateurs 
 1. Si vous souhaitez utiliser l’outil en mode Incognito ou InPrivate, suivez la procédure de votre navigateur :
     1. Dans Microsoft Edge, accédez à **Extensions** ou tapez _edge://extensions_ dans la barre d’URL, puis sélectionnez **Détails** de l’extension. Dans les paramètres d’extension, cochez la case **autoriser inPrivate**.
     1. Dans Chrome, accédez à **Extensions** ou tapez _chrome://extensions_ dans la barre d’URL, puis sélectionnez **Détails** de l’extension. Dans les paramètres d’extension, sélectionnez le curseur pour **autoriser incognito**.
-1. Accédez à la page SharePoint site sur SharePoint Online que vous souhaitez consulter. Nous avons autorisé le « chargement différé » des éléments sur les pages ; par conséquent, l’outil ne s’arrête pas automatiquement (c’est par conception pour prendre en charge tous les scénarios de chargement de page). Pour arrêter la collecte, **sélectionnez Arrêter**. Assurez-vous que le chargement de la page est terminé avant d’arrêter la collecte de données ou que vous ne capturerez qu’une trace partielle.
-1. Cliquez sur le bouton de barre d’outils de l’extension ![Diagnostics de page pour SharePoint logo.](../media/page-diagnostics-for-spo/pagediag-icon32.png) pour charger l’outil, la fenêtre contextuelle d’extension suivante s’affiche :
+1. Accédez à la page du site SharePoint sur SharePoint Online que vous souhaitez consulter. Nous avons autorisé le « chargement différé » des éléments sur les pages ; par conséquent, l’outil ne s’arrête pas automatiquement (c’est par conception pour prendre en charge tous les scénarios de chargement de page). Pour arrêter la collecte, **sélectionnez Arrêter**. Assurez-vous que le chargement de la page est terminé avant d’arrêter la collecte de données ou que vous ne capturerez qu’une trace partielle.
+1. Cliquez sur le bouton de barre d’outils de l’extension ![Logo Diagnostics de page pour SharePoint.](../media/page-diagnostics-for-spo/pagediag-icon32.png) pour charger l’outil, la fenêtre contextuelle d’extension suivante s’affiche :
 
     ![Fenêtre contextuelle de l’outil Diagnostics de page.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
@@ -83,16 +83,16 @@ Sélectionnez **Démarrer** pour commencer à collecter des données à des fins
 
 1. Cliquez sur les points de suspension (...) dans le coin supérieur droit de l’outil pour trouver les liens suivants :
    1. Le lien **Ressources supplémentaires** fournit des instructions générales et des détails sur l’outil, y compris un lien vers cet article.
-   1. Le lien **Envoyer des commentaires** fournit un lien vers le site _user voice SharePoint sites et collaboration_.
+   1. Le lien **Envoyer des commentaires** fournit un lien vers le site _SharePoint Sites and Collaboration User Voice_ .
    1. Le lien **À propos** inclut la version actuellement installée de l’outil et un lien direct vers l’avis tiers de l’outil.  
 1. **L’ID de corrélation, SPRequestDuration, SPIISLatency**, **le temps de chargement** de la page et les détails de l’URL sont informatifs et peuvent être utilisés à quelques fins.
 
     > [!div class="mx-imgBorder"]
     > ![Détails des diagnostics de page.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** est un élément important lors de l’utilisation de Support Microsoft, car il leur permet de collecter plus de données de diagnostic pour la page spécifique.
-   - **SPRequestDuration** est le temps nécessaire à SharePoint pour traiter la page. La navigation structurelle, les images volumineuses, un grand nombre d’appels d’API peuvent tous contribuer à des durées plus longues.
-   - **SPIISLatency** est le temps en millisecondes pris pour SharePoint Online commencent à charger la page. Cette valeur n’inclut pas le temps nécessaire à l’application web pour répondre.
+   - **CorrelationID** est un élément important lors de l’utilisation du Support Microsoft, car il leur permet de collecter plus de données de diagnostic pour la page spécifique.
+   - **SPRequestDuration** est le temps nécessaire pour que SharePoint traite la page. La navigation structurelle, les images volumineuses, un grand nombre d’appels d’API peuvent tous contribuer à des durées plus longues.
+   - **SPIISLatency** est l’heure en millisecondes nécessaire pour que SharePoint Online commence à charger la page. Cette valeur n’inclut pas le temps nécessaire à l’application web pour répondre.
    - **Le temps de chargement** de la page est la durée totale enregistrée par la page entre l’heure de la demande et l’heure à laquelle la réponse a été reçue et affichée dans le navigateur. Cette valeur est affectée par différents facteurs, notamment la latence du réseau, les performances de l’ordinateur et le temps nécessaire au navigateur pour charger la page.
    - **L’URL de page** (Uniform Resource Locator) est l’adresse web de la page active.
 
@@ -111,7 +111,7 @@ Sélectionnez **Démarrer** pour commencer à collecter des données à des fins
 
 ## <a name="how-to-use-the-diagnostic-tests-tab"></a>Comment utiliser l’onglet Tests de diagnostic
 
-Lorsque vous analysez une page SharePoint portail moderne ou une page de site de publication classique avec l’outil Diagnostics de page pour SharePoint, les résultats sont analysés à l’aide de règles prédéfinies qui comparent les résultats par rapport aux valeurs de base de référence et affichées sous l’onglet **Tests de diagnostic**. Les règles de certains tests peuvent utiliser différentes valeurs de base de référence pour le portail moderne et les sites de publication classiques en fonction des performances spécifiques  caractéristiques différentes entre les deux.
+Lorsque vous analysez une page de portail moderne SharePoint ou une page de site de publication classique avec l’outil Diagnostics de page pour SharePoint, les résultats sont analysés à l’aide de règles prédéfinies qui comparent les résultats aux valeurs de base de référence et s’affichent sous l’onglet **Tests de diagnostic** . Les règles de certains tests peuvent utiliser différentes valeurs de base pour le portail moderne et les sites de publication classiques en fonction de la différence des caractéristiques de performances spécifiques entre les deux.
 
 Les résultats des tests qui apparaissent dans les catégories **Possibilités d’amélioration** ou **Attention requises** indiquent les domaines qui doivent être examinés par rapport aux pratiques recommandées et peuvent être sélectionnés pour afficher des informations supplémentaires sur le résultat. Les détails de chaque élément incluent un lien _En savoir plus_ , qui vous guidera directement vers les conseils appropriés liés au test. Les résultats des tests qui apparaissent dans la catégorie **Aucune action requise** indiquent la conformité à la règle appropriée et n’affichent pas de détails supplémentaires lorsqu’ils sont sélectionnés.
 
@@ -120,7 +120,7 @@ Les informations de l’onglet Tests de diagnostic ne vous indiquent pas comment
 Les résultats rouges ou jaunes peuvent également indiquer des composants WebPart qui actualisent les données trop fréquemment. Par exemple, les actualités d’entreprise ne sont pas mises à jour toutes les secondes, mais les composants WebPart personnalisés sont souvent conçus pour extraire les dernières nouvelles toutes les secondes au lieu d’implémenter des éléments de mise en cache susceptibles d’améliorer l’expérience utilisateur globale. Gardez à l’esprit lors de l’inclusion de composants WebPart sur une page qu’il existe souvent des moyens simples de réduire leur impact sur les performances en évaluant la valeur de chaque paramètre disponible pour s’assurer qu’il est correctement défini pour son objectif.
 
 >[!NOTE]
->Les sites d’équipe classiques qui n’ont pas la fonctionnalité de publication activée ne peuvent pas utiliser de CDN. Lorsque vous exécutez l’outil sur ces sites, le test CDN est censé échouer et peut être ignoré, mais tous les tests restants sont applicables. Les fonctionnalités supplémentaires de la fonctionnalité de publication SharePoint peuvent augmenter les temps de chargement des pages. Elle ne doit donc pas être activée uniquement pour autoriser CDN fonctionnalité.
+>Les sites d’équipe classiques qui n’ont pas la fonctionnalité de publication activée ne peuvent pas utiliser de CDN. Lorsque vous exécutez l’outil sur ces sites, le test CDN est censé échouer et peut être ignoré, mais tous les tests restants sont applicables. Les fonctionnalités supplémentaires de la fonctionnalité de publication SharePoint peuvent augmenter les temps de chargement des pages. Elle ne doit donc pas être activée uniquement pour autoriser la fonctionnalité CDN.
 
 >[!IMPORTANT]
 >Les règles de test sont ajoutées et mises à jour régulièrement. Reportez-vous donc à la dernière version de l’outil pour plus d’informations sur les règles actuelles et des informations spécifiques incluses dans les résultats des tests. Vous pouvez vérifier la version en gérant vos extensions et l’extension indique si une mise à jour est disponible.
@@ -154,7 +154,7 @@ Cette option doit être activée avant de cliquer sur Démarrer, ce qui active l
 > [!IMPORTANT]
 > Ces résultats contiennent des URL qui peuvent être classées comme piI (informations d’identification personnelle). Veillez à suivre les instructions de votre organisation avant de distribuer ces informations.
 
-## <a name="engaging-with-microsoft-support"></a>Utilisation de Support Microsoft
+## <a name="engaging-with-microsoft-support"></a>Faire appel au support Microsoft
 
 Nous avons inclus une **fonctionnalité de niveau Support Microsoft** qui ne doit être utilisée que lorsque vous travaillez directement sur un cas de support. L’utilisation de cette fonctionnalité ne vous apportera aucun avantage lorsqu’elle est utilisée sans engagement de l’équipe de support et peut ralentir considérablement les performances de la page. Il n’existe aucune information supplémentaire lors de l’utilisation de cette fonctionnalité dans l’outil, car les informations supplémentaires sont ajoutées à la journalisation dans le service.
 

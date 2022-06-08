@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos locataires pour Microsoft 365.
-ms.openlocfilehash: 85695c38f724f215192d7659963c35f25b006dc5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5eed55d45e4b34962b08d236f8659cfd2cf209c1
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092048"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940401"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du locataire pour Microsoft 365
 
@@ -31,7 +31,7 @@ Pour préparer votre locataire pour les utilisateurs, les groupes, les licences 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurer votre client Microsoft 365
 
-Après avoir vérifié que votre mise en réseau est optimisée pour l’accès aux Microsoft 365 pour les travailleurs locaux et distants, vos tâches importantes suivantes planifient et configurent ensuite votre locataire Microsoft 365 pour les noms de domaine DNS, les services courants et pour cette infrastructure d’identité qui prend en charge la connexion utilisateur sécurisée.
+Après avoir vérifié que votre mise en réseau est optimisée pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos prochaines grandes tâches sont en cours de planification et de configuration de votre locataire Microsoft 365 pour les noms de domaine DNS, les services courants et pour cette infrastructure d’identité qui prend en charge la connexion utilisateur sécurisée.
 
 ### <a name="plan"></a>Planification
 
@@ -42,20 +42,20 @@ Pour planifier l’implémentation de votre locataire :
 - [Comprendre comment un locataire Microsoft 365 est intégré aux services Azure AD](integrated-apps-and-azure-ads.md)
 - [Planifier la prise en charge des applications clientes](microsoft-365-client-support-certificate-based-authentication.md)
 - [Déterminer comment utiliser l’authentification moderne hybride](hybrid-modern-auth-overview.md)
-- [Planifier les mises à niveau de Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
-- [Comprendre l’isolation des locataires](/compliance/assurance/microsoft-365-isolation-controls)
+- [Planifier les mises à niveau d’Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
+- [Comprendre l’isolation des locataires](/microsoft-365-isolation-in-microsoft-365?view=o365-worldwide&preserve-view=true)
 
 ### <a name="deploy"></a>Déployer
 
 Pour déployer votre locataire : 
 
 - Ajoutez les [domaines DNS](../admin/setup/add-domain.md) pour votre organisation.
-- Utilisez les [repères d’installation dans le Centre d'administration Microsoft 365](setup-guides-for-microsoft-365.md).
+- Utilisez les [guides d’installation dans le Centre d’administration Microsoft 365](setup-guides-for-microsoft-365.md).
 - Créez votre [infrastructure d’identité](deploy-identity-solution-overview.md).
 
 ### <a name="move-a-tenants-geographic-locations"></a>Déplacer les emplacements géographiques d’un locataire
 
-Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centre de données (zones géographiques) pour Microsoft 365 services. Ces nouvelles zones géographiques de centre de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
+Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centre de données (géos) pour les services Microsoft 365. Ces nouvelles zones géographiques de centre de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
 
 Pour plus d’informations, consultez [Déplacement de données de base vers de nouvelles zones géographiques de centre de données Microsoft 365](moving-data-to-new-datacenter-geos.md).
 
