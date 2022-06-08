@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l'archivage en auto-expansion, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: b55c0504f04f896377c1e1b0a4dccdacdb8bbc37
-ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
+ms.openlocfilehash: fc3e40e72ad287e7d7e696557422420cccbd4ee1
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63761541"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922436"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>En savoir plus sur l’archivage à extension automatique
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans Office 365, les boîtes aux lettres d’archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go de stockage supplémentaire sont disponibles. Dans le passé, lorsque le quota de stockage de 100 Go était atteint, les organisations deviez contacter Microsoft pour demander de l’espace de stockage supplémentaire pour une boîte aux lettres d’archivage. Ce n’est plus le cas.
 
@@ -45,10 +47,9 @@ Voici une vue d’ensemble rapide du processus.
 
 1. L’archivage est activé pour une boîte aux lettres utilisateur ou une boîte aux lettres partagée. Une boîte aux lettres d’archivage avec 100 Go d’espace de stockage est créée et le quota d’avertissement pour la boîte aux lettres d’archivage est défini sur 90 Go.
 
-2. Un administrateur active l’archivage en auto-expansion pour la boîte aux lettres. Lorsque la boîte aux lettres d’archivage (y compris le dossier Éléments récupérables) atteint 90 Go, elle est convertie en archivage en auto-expansion et Microsoft 365 ajoute de l’espace de stockage à l’archive jusqu’à ce qu’elle atteigne une taille maximale de 1,5 To. La mise en service de l’espace de stockage supplémentaire peut prendre jusqu’à 30 jours.
-
-   > [!NOTE]
-   > Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention, le quota de stockage de la boîte aux lettres d’archivage est augmenté à 110 Go lorsque l’archivage à extension automatique est activé. De même, le quota d’avertissement d’archivage est augmenté à 100 Go.
+2. Un administrateur active l’archivage en auto-expansion pour la boîte aux lettres. Si une stratégie de conservation ou de rétention est appliquée à la boîte aux lettres, le quota de stockage de la boîte aux lettres d’archivage est augmenté à 110 Go et le quota d’avertissement d’archivage est augmenté à 100 Go.
+    
+    Ensuite, lorsque la boîte aux lettres d’archivage (y compris le dossier Éléments récupérables) atteint son quota de stockage, la boîte aux lettres d’archivage est convertie en archive à extension automatique. Un espace de stockage supplémentaire est ajouté jusqu’à ce qu’il atteigne une taille maximale de 1,5 To. La mise en service de l’espace de stockage supplémentaire peut prendre jusqu’à 30 jours.
 
 3. Microsoft 365 ajoute automatiquement plus d’espace de stockage si nécessaire.
 
@@ -110,7 +111,7 @@ Cette section explique la fonctionnalité entre l’archivage en auto-expansion 
 
 - **eDiscovery :** Lorsque vous utilisez un outil eDiscovery, tel que la recherche de contenu ou In-Place eDiscovery, les zones de stockage supplémentaires dans une archive en auto-expansion sont également recherchés.
 
-- **Rétention :** Lorsque vous placez une boîte aux lettres en conservation à l’aide d’outils tels que la conservation pour litige dans Exchange Online ou les conservations de cas eDiscovery et les stratégies de rétention dans le centre de sécurité et conformité, le contenu situé dans une archive en auto-expansion est également mis en attente.
+- **Rétention:** Lorsque vous mettez une boîte aux lettres en attente à l’aide d’outils tels que la conservation pour litige dans Exchange Online ou les stratégies de conservation et de rétention de cas eDiscovery dans le portail de conformité Microsoft Purview, le contenu situé dans une archive développée automatiquement est également mis en attente.
 
 - **Gestion des enregistrements de messagerie (MRM) :** Si vous utilisez des stratégies de suppression de la MRM dans Exchange Online pour supprimer définitivement les éléments de boîte aux lettres expirés, les éléments expirés situés dans l’archive en auto-expansion sont également supprimés.
 
