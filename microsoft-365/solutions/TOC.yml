@@ -109,9 +109,9 @@
       items:
         - name: Vue d’ensemble
           href: ransomware-protection-microsoft-365.md
-        - name: Étape 1. Configurer les lignes de base de sécurité
+        - name: Étape 1. Configurer la base de référence de sécurité
           href: ransomware-protection-microsoft-365-security-baselines.md
-        - name: Étape 2. Déployer la détection et la réponse des attaques
+        - name: Étape 2. Déployer la détection et réponse contre l’attaque
           href: ransomware-protection-microsoft-365-attack-detection-response.md
         - name: Étape 3. Protéger vos identités
           href: ransomware-protection-microsoft-365-identities.md
@@ -151,9 +151,9 @@
               href: tenant-management-networking.md
             - name: "Étape\_3. Identité"
               href: tenant-management-identity.md
-            - name: Étape 4. Migration
+            - name: "Étape\_4. Migration"
               href: tenant-management-migration.md
-            - name: Étape 5. Données de gestion des appareils et des applications
+            - name: "Étape\_5. Données de gestion des appareils et des applications"
               href: tenant-management-device-management.md
             - name: Supprimer un ancien employé
               items:
@@ -314,12 +314,8 @@
           href: ../compliance/ediscovery.md
         - name: Microsoft Purview eDiscovery (Premium)
           href: ../compliance/overview-ediscovery-20.md
-        - name: Plans d’action de conformité aux réglementations
+        - name: FAQ sur la conformité réglementaire et plans d'action
           items:
-            - name: ISO – Plan d’action recommandé
-              href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: NIST – Plan d’action recommandé
-              href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: CCPA – Questions fréquentes
               href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: 'RGPD : Plan d’action recommandé'
