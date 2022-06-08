@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466281"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930281"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -77,7 +77,7 @@ Configurer l'audit (Premium) pour les utilisateurs – pour vérifier que l'appl
 > [!TIP]
 > Bonne pratique d'essai : créez dans les 30 premiers jours
 
-Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit (Premium) de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
+Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’Audit (Premium) de Microsoft Purview. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
 
 1. Avant de créer une stratégie de conservation des journaux d'audit – [éléments clés à connaître](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) avant de créer votre stratégie.
 1. [Créer une stratégie de rétention de journal d’audit](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
@@ -262,7 +262,7 @@ Pour accéder à la découverte électronique (Premium) ou être ajouté en tant
 > [!TIP]
 > Bonne pratique d'essai : créez dans les 30 premiers jours
 
-De plus en plus d'organisations utilisent la solution de la découverte électronique (Premium) dans Microsoft 365 pour les processus critiques de la découverte électronique. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges.
+De plus en plus d'organisations utilisent la solution eDiscovery (Premium) dans Microsoft Purview pour les processus critiques d’eDiscovery. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges.
 
 1. Gérer la découverte électronique (Premium) – [découvrir comment configurer la découverte électronique (Premium), gérer les cas à l'aide du Centre de sécurité et de conformité, gérer un flux de travail dans la découverte électronique (Premium) et analyser les résultats de la recherche de la découverte électronique (Premium)](/learn/modules/manage-advanced-ediscovery).
 1. [Créer un cas eDiscovery à l’aide du nouveau format de cas d’Advance eDiscovery](advanced-ediscovery-new-case-format.md)
