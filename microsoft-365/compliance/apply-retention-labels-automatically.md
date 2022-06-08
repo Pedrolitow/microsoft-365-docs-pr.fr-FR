@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 54db8d8c72266e1fc7a9fa6c3fe4829c62ba4357
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: f5a6ec9cd0d221cd025f4bce71008b9d01749590
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285497"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940423"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -302,7 +302,7 @@ Vous devrez peut-être utiliser cette option si vous devez capturer et conserver
 
 Les pièces jointes cloud, parfois appelées pièces jointes modernes, sont un mécanisme de partage qui utilise des liens incorporés vers des fichiers stockés dans le nuage. Ils peuvent prendre en charge le stockage centralisé pour le contenu partagé avec des avantages collaboratifs, tels que le contrôle de version. Les pièces jointes cloud ne sont pas des copies jointes d’un fichier ou un lien de texte d’URL vers un fichier. Il peut s’avérer utile de consulter les listes de contrôle visuelles pour les pièces jointes cloud [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) et [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
-Lorsque vous choisissez l’option d’application d’une étiquette de rétention aux pièces jointes dans le cloud, à des fins de conformité, une copie de ce fichier est créée au moment du partage. L'étiquette de conservation que vous avez choisie est alors appliquée à la copie qui peut ensuite être identifiée à l'aide de l'eDiscovery. Les utilisateurs ne connaissent pas la copie stockée dans la bibliothèque de conservation et de préservation des données. L’étiquette de rétention n’est pas appliquée au message lui-même ou au fichier d’origine.
+Lorsque vous choisissez l’option d’application d’une étiquette de rétention aux pièces jointes dans le cloud, à des fins de conformité, une copie de ce fichier est créée au moment du partage. L'étiquette de conservation que vous avez sélectionnée est alors appliquée à la copie qui peut ensuite être [identifiée à l'aide de l'eDiscovery](advanced-ediscovery-cloud-attachments.md). Les utilisateurs ne connaissent pas la copie stockée dans la bibliothèque de conservation et de préservation des données. L’étiquette de rétention n’est pas appliquée au message lui-même ou au fichier d’origine.
 
 Si le fichier est modifié et partagé à nouveau, une nouvelle copie du fichier en tant que nouvelle version est enregistrée dans la bibliothèque de conservation et de préservation. Pour plus d’informations, notamment **sur la raison pour laquelle vous devez utiliser le paramètre** Lorsque les éléments ont été étiquetés, voir Comment fonctionne la rétention avec les pièces [jointes cloud](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -332,7 +332,7 @@ Vous devrez créer des stratégies de rétention distinctes si vous souhaitez co
 - Les éléments suivants ne sont pas pris en charge en tant que pièces jointes cloud qui peuvent être conservées :
     - SharePoint sites, pages, listes, formulaires, dossiers, ensembles de documents et pages OneNote pages.
     - Fichiers partagés par des utilisateurs qui n’ont pas accès à ces fichiers.
-    - Fichiers supprimés avant l’envoi de la pièce jointe cloud Cela peut se produire si un utilisateur copie et copie une pièce jointe partagée précédemment à partir d’un autre message, sans confirmer au préalable que le fichier est toujours disponible. Ou bien, quelqu’un envoie un ancien message lorsque le fichier est maintenant supprimé.
+    - Fichiers supprimés ou déplacés avant l’envoi de la pièce jointe cloud. Par exemple, un utilisateur copie et colle une pièce jointe partagée précédemment à partir d’un autre message, sans confirmer au préalable que le fichier est toujours disponible. Ou bien, quelqu’un envoie un ancien message lorsque le fichier est maintenant supprimé.
     - Fichiers partagés par des invités ou des utilisateurs externes à votre organisation
     - Fichiers dans les messages électroniques provisoires et les messages qui ne sont pas envoyés
     - Fichiers vides
