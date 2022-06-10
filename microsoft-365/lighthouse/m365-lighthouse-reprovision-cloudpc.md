@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment réapprovisionner un Windows 365 PC Cloud dans Microsoft 365 Lighthouse.
-ms.openlocfilehash: c3ff7dac53798f26da212ac4790ba0cb1412c307
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 4c292b3feda03045703be03d81006bd274239e6b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535883"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017525"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Réapprovisionner un Windows 365 PC Cloud dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse prend en charge le reprovisionnement des PC cloud qui ont une stratégie d’approvisionnement. Vous devrez peut-être réapprovisionner un appareil pour un nouvel utilisateur ou si l’appareil ne fonctionne pas correctement. Quand un reprovisionnement est déclenché, le PC cloud est supprimé puis recréé en tant que nouveau PC cloud. Toutes les données utilisateur, applications, personnalisations et autres seront supprimées.
+Microsoft 365 Lighthouse prend en charge le reprovisionnement des PC cloud qui ont une stratégie d’approvisionnement. Vous devrez peut-être réapprovisionner un appareil pour un nouvel utilisateur ou si l’appareil ne fonctionne pas correctement. Lorsqu’un reprovisionnement est déclenché, le PC cloud est supprimé et recréé en tant que pc cloud. Toutes les données utilisateur, applications et personnalisations sont supprimées.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -56,7 +57,7 @@ Vous devez être administrateur de PC cloud dans le locataire partenaire.
 
 3. Dans la liste des appareils, sélectionnez un appareil.
 
-4. Dans le volet d’informations de l’appareil, sélectionnez l’onglet **État de l’action de l’appareil** .
+4. Dans le volet d’informations de l’appareil, sélectionnez l’onglet **État de l’action de** l’appareil.
 
 L’onglet affiche toutes les actions actuelles mises en file d’attente pour cet appareil, y compris le type d’action, l’état et l’horodatage.
 

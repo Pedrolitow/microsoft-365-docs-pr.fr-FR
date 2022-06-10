@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: aa9071cfb99219bea6c5c0d640c9e6e4255e316d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 373072ff1b1a893a8de970ccb6eacbdcd14b48d3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419965"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014947"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Examen des éléments partiellement indexés dans eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Une recherche eDiscovery que vous exécutez à partir de la portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
+Une recherche eDiscovery que vous exécutez à partir du portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   
 - Les messages électroniques ont un fichier joint qui ne peut pas être ouvert ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
 
@@ -125,7 +125,7 @@ Les étapes suivantes vous montrent comment exécuter un script PowerShell qui r
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -166,9 +166,9 @@ Les étapes suivantes vous montrent comment exécuter un script PowerShell qui r
      }
    ```
 
-2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/exchange-online-powershell).
+2. [Connecter à Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. Dans Security & Compliance Center PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script ; par exemple :
+3. Dans Security & Compliance PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script ; par exemple :
 
    ```powershell
    .\PartiallyIndexedItems.ps1

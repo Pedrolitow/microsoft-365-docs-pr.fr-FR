@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment collecter des informations de diagnostic eDiscovery pour un cas Support Microsoft.
-ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095881"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014429"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Collecter des informations de diagnostic eDiscovery
 
@@ -35,9 +35,9 @@ Parfois, Support Microsoft ingénieurs ont besoin d’informations spécifiques 
 
 ## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>Collecter des informations de diagnostic pour eDiscovery (Standard)
 
-La collecte d’informations de diagnostic pour eDiscovery (Standard) est basée sur des applets de commande. Vous devez donc utiliser le Centre de sécurité & conformité PowerShell. Les exemples PowerShell suivants exécutent des applets de commande, puis enregistrent la sortie dans un fichier texte spécifié. Dans la plupart des cas de support, vous ne devez exécuter qu’une seule de ces commandes.
+La collecte d’informations de diagnostic pour eDiscovery (Standard) est basée sur des applets de commande. Vous devez donc utiliser Security & Compliance PowerShell. Les exemples PowerShell suivants exécutent des applets de commande, puis enregistrent la sortie dans un fichier texte spécifié. Dans la plupart des cas de support, vous ne devez exécuter qu’une seule de ces commandes.
 
-Pour exécuter les applets de commande suivantes, [connectez-vous au Centre de sécurité & conformité PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). Une fois connecté, exécutez une ou plusieurs des commandes suivantes et veillez à remplacer les espaces réservés par les noms d’objets réels.
+Pour exécuter les applets de commande suivantes, [connectez-vous à Security & Compliance PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). Une fois connecté, exécutez une ou plusieurs des commandes suivantes et veillez à remplacer les espaces réservés par les noms d’objets réels.
 
 Après avoir examiné le fichier texte généré et rédigé des informations sensibles, envoyez-le à l’ingénieur Support Microsoft qui travaille sur votre cas.
 
@@ -80,13 +80,13 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 **L’onglet Paramètres** dans un cas eDiscovery (Premium) vous permet de copier rapidement les informations de diagnostic pour le cas. Les informations de diagnostic sont enregistrées dans le Presse-papiers afin de pouvoir les coller dans un fichier texte et les envoyer à Support Microsoft.
 
-1. Accédez au portail de conformité, puis sélectionnez **eDiscoveryAdvanced** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
+1. Accédez au portail de conformité, puis sélectionnez **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
 2. Sélectionnez un cas, puis cliquez sur l’onglet **Paramètres**.
 
 3. Sous **Informations sur la casse**, cliquez sur **Sélectionner**.
 
-4. Dans la page de menu volant, cliquez sur **les informations de support ActionsCopy**  >  pour copier les informations dans le Presse-papiers.
+4. Dans la page de menu volant, cliquez sur **Actions** > **Copy pour** copier les informations dans le Presse-papiers.
 
 5. Ouvrez un fichier texte (dans Bloc-notes), puis collez les informations dans le fichier texte.
 

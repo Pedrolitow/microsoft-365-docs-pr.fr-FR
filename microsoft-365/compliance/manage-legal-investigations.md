@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez des cas eDiscovery dans le portail de conformité Microsoft Purview pour gérer l’enquête juridique de votre organisation.
-ms.openlocfilehash: 464996eb160eff520582e82ab87b74b4472f7a5d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077870"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010063"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
 
@@ -46,7 +46,7 @@ Les cas eDiscovery vous permettent de contrôler qui peut créer, accéder et g�
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
 
-Comme dans la section précédente qui répertorie les scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts PowerShell security & Compliance Center pour vous aider à gérer les cas eDiscovery.
+Comme dans la section précédente qui répertorie les scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts PowerShell de sécurité & conformité pour vous aider à gérer les cas eDiscovery.
   
 - [Créez un rapport de conservation eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) qui contient des informations sur toutes les conservations associées aux cas eDiscovery dans votre organisation.
 

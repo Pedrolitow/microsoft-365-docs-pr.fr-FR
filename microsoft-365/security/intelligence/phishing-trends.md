@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c56478f4dbe496f7e2080e9c73d6466df0e2c5d7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7bfad3fdad392c2ea0795d24e21d6f8c2848f70b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666743"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016073"
 ---
 # <a name="phishing-trends-and-techniques"></a>Tendances et techniques d’hameçonnage
 
@@ -68,7 +68,7 @@ La compromission par e-mail d’entreprise (BEC) est une escroquerie sophistiqu�
 
 ## <a name="more-information-about-phishing-attacks"></a>Plus d’informations sur les attaques par hameçonnage
 
-Pour plus d’informations sur les dernières attaques par hameçonnage, les techniques et les tendances, vous pouvez lire ces entrées sur le [blog Microsoft Security](https://www.microsoft.com/security/blog/product/windows/) :
+Pour plus d’informations sur les dernières attaques par hameçonnage, les techniques et les tendances, vous pouvez lire ces entrées sur le [blog Microsoft Security](https://www.microsoft.com/security/blog/) :
 
 - [Les hameçonneurs libèrent des techniques d’ingénierie sociale simples mais efficaces à l’aide de pièces jointes PDF](https://cloudblogs.microsoft.com/microsoftsecure/2017/01/26/phishers-unleash-simple-but-effective-social-engineering-techniques-using-pdf-attachments/?source=mmpc)
 - [Les attaques de hameçonnage et de programmes malveillants à thème fiscal prolifèrent pendant la saison des déclarations de revenus](https://cloudblogs.microsoft.com/microsoftsecure/2017/03/20/tax-themed-phishing-and-malware-attacks-proliferate-during-the-tax-filing-season/?source=mmpc)

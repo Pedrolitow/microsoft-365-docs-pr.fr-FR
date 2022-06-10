@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Découvrez comment utiliser PowerShell pour déplacer du contenu à partir d’un système de messagerie source au fil du temps à l’aide d’une migration intermédiaire vers Microsoft 365.
-ms.openlocfilehash: 361bf6e2bdfc58ea79f73c3596622ae96b420648
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 26c12208c00e6b9b33b0be850a4791ddca804c8c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930744"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014209"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
 
@@ -34,15 +34,15 @@ Vous pouvez migrer le contenu des boîtes aux lettres utilisateur d’un systèm
 Cet article décrit les tâches nécessaires pour effectuer une migration de messagerie intermédiaire à l'aide d'Exchange Online PowerShell. La rubrique, [Ce que vous devez savoir sur une migration par e-mail intermédiaire](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration), vous donne une vue d’ensemble du processus de migration. Une fois familiarisé avec son contenu, reportez-vous au présent article pour migrer des boîtes aux lettres d'un système de messagerie vers un autre.
 
 > [!NOTE]
-> Vous pouvez également utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> pour effectuer une migration intermédiaire. Voir [Effectuer une migration intermédiaire de l’e-mail vers Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
+> Vous pouvez également utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> pour effectuer une migration intermédiaire. Voir [Effectuer une migration intermédiaire de l’e-mail vers Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
-Durée d'exécution estimée de cette tâche : entre 2 et 5 minutes pour créer un lot de migration. Une fois la migration du lot commencée, la durée de l'opération varie en fonction du nombre de boîtes aux lettres incluses dans le lot, de la taille de chacune d'elles et de la capacité réseau disponible. Pour plus d’informations sur d’autres facteurs qui affectent le temps nécessaire pour migrer des boîtes aux lettres vers Microsoft 365, consultez [Performances de migration](/Exchange/mailbox-migration/office-365-migration-best-practices).
+Durée d'exécution estimée de cette tâche : entre 2 et 5 minutes pour créer un lot de migration. Une fois la migration du lot commencée, la durée de l'opération varie en fonction du nombre de boîtes aux lettres incluses dans le lot, de la taille de chacune d'elles et de la capacité réseau disponible. Pour plus d’informations sur d’autres facteurs qui affectent le temps nécessaire à la migration des boîtes aux lettres vers Microsoft 365, consultez [Performances de migration](/Exchange/mailbox-migration/office-365-migration-best-practices).
 
 Des autorisations doivent vous être attribuées que vous puissiez exécuter cette procédure. Pour connaître les autorisations nécessaires, consultez l'entrée « Migration » dans la rubrique [Autorisations des destinataires](/exchange/recipients-permissions-exchange-2013-help).
 
-Pour utiliser les cmdlets Exchange Online PowerShell, vous devez vous connecter et importer les cmdlets dans votre session Windows PowerShell locale. Pour des instructions, voir [Connexion à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Pour utiliser les cmdlets Exchange Online PowerShell, vous devez vous connecter et importer les cmdlets dans votre session Windows PowerShell locale. Pour obtenir des instructions, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Pour la liste complète des commandes de migration, voir [Cmdlets de déplacement et de migration](/powershell/exchange/).
 
@@ -77,7 +77,7 @@ Avant de migrer des boîtes aux lettres vers Microsoft 365 à l’aide d’une m
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **Définir des autorisations** Le compte d’utilisateur local que vous utilisez pour vous connecter à votre organisation Exchange locale (également appelée administrateur de migration) doit disposer des autorisations nécessaires pour accéder aux boîtes aux lettres locales que vous souhaitez migrer vers Microsoft 365. Ce compte d’utilisateur est utilisé lorsque vous vous connectez à votre système de messagerie en créant un point de terminaison de migration plus loin dans cette procédure [Étape 3 : Créer un point de terminaison de migration](#step-3-create-a-migration-endpoint).
+ **Définir des autorisations** Le compte d’utilisateur local que vous utilisez pour vous connecter à votre organisation locale Exchange (également appelée administrateur de migration) doit disposer des autorisations nécessaires pour accéder aux boîtes aux lettres locales que vous souhaitez migrer vers Microsoft 365. Ce compte d’utilisateur est utilisé lorsque vous vous connectez à votre système de messagerie en créant un point de terminaison de migration plus loin dans cette procédure [Étape 3 : Créer un point de terminaison de migration](#step-3-create-a-migration-endpoint).
 
 Pour migrer les boîtes aux lettres, l’administrateur doit disposer de l’un des jeux d’autorisations suivants :
 
@@ -99,7 +99,7 @@ Pour obtenir des instructions sur la définition de ces autorisations, consultez
 
 Vous devez attribuer une licence aux utilisateurs créés. Vous disposez pour cela de 30 jours à compter de leur création. Pour la procédure d'ajout de licences, voir [Étape 8 : Exécutez les tâches post-migration](#step-8-complete-post-migration-tasks).
 
- Vous pouvez utiliser l’outil de synchronisation Microsoft Azure Active Directory (Azure AD) ou microsoft Azure AD Sync Services pour synchroniser et créer vos utilisateurs locaux dans Microsoft 365. Une fois les boîtes aux lettres migrées vers Microsoft 365, vous gérez les comptes d’utilisateur dans votre organisation locale et ils sont synchronisés avec votre organisation Microsoft 365. Pour plus d'informations, voir [Intégration d'annuaire](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
+ Vous pouvez utiliser l’outil de synchronisation Microsoft Azure Active Directory (Azure AD) ou les services de synchronisation Microsoft Azure AD pour synchroniser et créer vos utilisateurs locaux dans Microsoft 365. Une fois les boîtes aux lettres migrées vers Microsoft 365, vous gérez les comptes d’utilisateur dans votre organisation locale et ils sont synchronisés avec votre organisation Microsoft 365. Pour plus d'informations, voir [Intégration d'annuaire](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
 
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>Étape 2 : Créez un fichier CSV pour un lot de migration intermédiaire
 
@@ -114,7 +114,7 @@ Le fichier CSV destiné à une migration intermédiaire prend en charge les troi
 
 |**Attribut**|**Description**|**Requis ?**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |Permet de définir l’adresse de messagerie SMTP principale, par exemple pilarp@contoso.com, pour les boîtes aux lettres locales.  <br/> Utilisez l’adresse SMTP principale pour les boîtes aux lettres locales et non les ID utilisateur de Microsoft 365. Par exemple, si le domaine local est nommé contoso.com mais que le domaine de messagerie Microsoft 365 est nommé service.contoso.com, vous devez utiliser le nom de domaine contoso.com pour les adresses e-mail dans le fichier CSV.  <br/> |Requis  <br/> |
+|EmailAddress  <br/> |Permet de définir l’adresse de messagerie SMTP principale, par exemple pilarp@contoso.com, pour les boîtes aux lettres locales.  <br/> Utilisez l’adresse SMTP principale pour les boîtes aux lettres locales et non les ID utilisateur du Microsoft 365. Par exemple, si le domaine local est nommé contoso.com mais que le domaine de messagerie Microsoft 365 est nommé service.contoso.com, vous devez utiliser le nom de domaine contoso.com pour les adresses e-mail dans le fichier CSV.  <br/> |Requis  <br/> |
 |Mot de passe  <br/> |Mot de passe à définir pour la nouvelle boîte aux lettres Microsoft 365. Toutes les restrictions de mot de passe appliquées à votre organisation Microsoft 365 s’appliquent également aux mots de passe inclus dans le fichier CSV.  <br/> |Facultatif  <br/> |
 |ForceChangePassword  <br/> |Spécifie si un utilisateur doit modifier le mot de passe la première fois qu’il se connecte à sa nouvelle boîte aux lettres Microsoft 365. Pour ce paramètre, utilisez la valeur **True** ou **False**. <br/> > [!NOTE]> Si vous avez implémenté une solution d'authentification unique (SSO) en déployant Active Directory Federation Services (AD FS) dans votre organisation locale, vous devez utiliser la valeur **False** pour l'attribut **ForceChangePassword**.          |Facultatif  <br/> |
 
@@ -140,7 +140,7 @@ Pour créer le fichier CSV, utilisez un éditeur de texte ou une application te
 
 ### <a name="step-3-create-a-migration-endpoint"></a>Étape 3 : Créez un point de terminaison de migration
 
-Pour migrer correctement le courrier électronique, Microsoft 365 doit se connecter et communiquer avec le système de messagerie source. Pour ce faire, Microsoft 365 utilise un point de terminaison de migration. Pour créer un point de terminaison de migration Outlook Anywhere à l'aide de PowerShell, afin d'effectuer une migration intermédiaire, commencez par vous [connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+Pour migrer correctement l’e-mail, Microsoft 365 doit se connecter et communiquer avec le système de messagerie source. Pour ce faire, Microsoft 365 utilise un point de terminaison de migration. Pour créer un point de terminaison de migration Outlook Anywhere à l'aide de PowerShell, afin d'effectuer une migration intermédiaire, commencez par vous [connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Pour la liste complète des commandes de migration, voir [Cmdlets de déplacement et de migration](/powershell/exchange/).
 
@@ -199,11 +199,11 @@ Pour plus d'informations sur la cmdlet **Get-MigrationBatch**, voir [Get-Migrati
 
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>Étape 5 : Convertissez des boîtes aux lettres locales en utilisateurs à extension messagerie
 
-Une fois la migration d’un premier lot effectuée, vous devez permettre aux utilisateurs d’accéder à leur messagerie. Un utilisateur dont la boîte aux lettres a été migrée dispose désormais d’une boîte aux lettres locale et d’une autre dans Microsoft 365. Les utilisateurs qui ont une boîte aux lettres dans Microsoft 365 cesseront de recevoir de nouveaux messages dans leur boîte aux lettres locale.
+Une fois la migration d’un premier lot effectuée, vous devez permettre aux utilisateurs d’accéder à leur messagerie. Un utilisateur dont la boîte aux lettres a été migrée dispose désormais d’une boîte aux lettres locale et d’une boîte aux lettres dans Microsoft 365. Les utilisateurs qui ont une boîte aux lettres dans Microsoft 365 cesseront de recevoir de nouveaux messages dans leur boîte aux lettres locale.
 
-Étant donné que vous n’avez pas terminé vos migrations, vous n’êtes pas encore prêt à diriger tous les utilisateurs vers Microsoft 365 pour leur courrier électronique. Que faire alors pour les personnes qui disposent de deux boîtes aux lettres ? Eh bien vous pouvez convertir les boîtes aux lettres qui ont déjà été migrées en utilisateurs à extension messagerie. Lorsque vous passez d’une boîte aux lettres à un utilisateur à extension messagerie, vous pouvez diriger l’utilisateur vers Microsoft 365 pour son e-mail au lieu d’accéder à sa boîte aux lettres locale.
+Étant donné que vous n’avez pas terminé vos migrations, vous n’êtes pas encore prêt à diriger tous les utilisateurs vers Microsoft 365 pour leur courrier électronique. Que faire alors pour les personnes qui disposent de deux boîtes aux lettres ? Eh bien vous pouvez convertir les boîtes aux lettres qui ont déjà été migrées en utilisateurs à extension messagerie. Lorsque vous passez d’une boîte aux lettres à un utilisateur à extension messagerie, vous pouvez demander à l’utilisateur de Microsoft 365 pour son e-mail au lieu d’accéder à sa boîte aux lettres locale.
 
-Une autre raison importante de convertir des boîtes aux lettres locales en utilisateurs à extension messagerie est de conserver les adresses proxy des boîtes aux lettres Microsoft 365 en copiant les adresses proxy vers les utilisateurs à extension messagerie. Cela vous permet de gérer des utilisateurs en nuage à partir de votre organisation locale à l'aide d'Active Directory. En outre, si vous décidez de désactiver votre organisation Exchange Server locale après la migration de toutes les boîtes aux lettres vers Microsoft 365, les adresses proxy que vous avez copiées vers les utilisateurs à extension messagerie resteront dans votre annuaire Active Directory local.
+Une autre raison importante de convertir des boîtes aux lettres locales en utilisateurs à extension messagerie est de conserver les adresses proxy des boîtes aux lettres Microsoft 365 en copiant les adresses proxy vers les utilisateurs à extension messagerie. Cela vous permet de gérer des utilisateurs en nuage à partir de votre organisation locale à l'aide d'Active Directory. En outre, si vous décidez de désactiver votre organisation Exchange Server locale une fois que toutes les boîtes aux lettres ont été migrées vers Microsoft 365, les adresses proxy que vous avez copiées vers les utilisateurs à extension messagerie resteront dans votre Active Directory local.
 
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Étape 6 : Supprimez un lot de migration intermédiaire
 
@@ -229,9 +229,9 @@ La commande renvoie soit le lot de migration avec l'état **Suppression**, soit 
 
 Pour plus d'informations sur la cmdlet **Get-MigrationBatch**, voir [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
 
-### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Étape 7 : Attribuer des licences à des utilisateurs Microsoft 365
+### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Étape 7 : Attribuer des licences à Microsoft 365 utilisateurs
 
-Activez les comptes d’utilisateur Microsoft 365 pour les comptes migrés en attribuant des licences. Si vous n’attribuez pas de licence, la boîte aux lettres est désactivée à la fin de la période de grâce (30 jours). Pour attribuer une licence dans le Centre d’administration Microsoft 365, consultez [Affecter ou annuler l’attribution de licences](../admin/manage/assign-licenses-to-users.md).
+Activez Microsoft 365 comptes d’utilisateur pour les comptes migrés en attribuant des licences. Si vous n’attribuez pas de licence, la boîte aux lettres est désactivée à la fin de la période de grâce (30 jours). Pour attribuer une licence dans le Centre d'administration Microsoft 365, consultez [Affecter ou annuler l’attribution de licences](../admin/manage/assign-licenses-to-users.md).
 
 ### <a name="step-8-complete-post-migration-tasks"></a>Étape 8 : Exécutez les tâches post-migration
 

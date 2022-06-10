@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Si vous êtes un administrateur qui gère la stratégie de mot de passe pour une entreprise, une école ou une organisation à but non lucratif, vous pouvez définir des exigences de mot de passe fortes à l’aide de Windows PowerShell.
-ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Si vous êtes un administrateur qui gère la stratégie de mot de passe pour une entreprise, une école ou une organisation à but non lucratif, vous pouvez définir des exigences de mot de passe fortes à l’aide d’Azure AD PowerShell.
+ms.openlocfilehash: e98c9a3f7b31cbb53d4c853487f4908a6dec72d5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436182"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010253"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe fortes pour les utilisateurs
 

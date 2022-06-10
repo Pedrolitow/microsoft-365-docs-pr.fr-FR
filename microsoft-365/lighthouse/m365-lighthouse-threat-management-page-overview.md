@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: algreer
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page gestion des menaces.
-ms.openlocfilehash: 6e6a49cd1e31132881f45877bc00801d91aff492
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 3d7376b2438ca24cdcf9b6e73d8bfb2cc7daa6de
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173761"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012557"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Gestion des menaces dans Microsoft 365 Lighthouse 
 
@@ -74,7 +75,7 @@ L’onglet Protection antivirus de la page gestion des menaces affiche les appar
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Capture d’écran de l’onglet Antivirus.":::
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si vous êtes chargé de la configuration des paramètres de messagerie pour tout le monde dans une entreprise, cette article explique comment configurer la Boîte de réception Prioritaire pour les utilisateurs.
-ms.openlocfilehash: b2c315b6fb4a4c80f245bcf4731b93996753586a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9c3b17c632c2316f3c36a4f79362895d790b1c7b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176090"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010209"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 
@@ -46,7 +46,7 @@ Pour activer ou désactiver la boîte de réception Prioritaire pour tous les ut
   
 L’exemple PowerShell suivant **désactive** la boîte de réception Prioritaire au sein de votre organisation. Mais cela n’empêche pas vos utilisateurs d’y accéder. S’ils le souhaitent, ils peuvent toujours réactiver la boîte de réception Prioritaire sur chacun de leurs clients.  
   
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Pour effectuer ces procédures, vous devez disposer des autorisations appropriées. Pour connaître les autorisations requises, reportez-vous à l'entrée « Règles de transport » de [Autorisations relatives à la conformité et à la stratégie de messagerie](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
@@ -92,7 +92,7 @@ Lorsqu’un utilisateur décide d’utiliser la boîte de réception Prioritaire
 
 Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews, de l’organisation Contoso. Mais cela ne l’empêche pas d’y accéder. S’il le souhaite, il peut toujours réactiver la boîte de réception Prioritaire sur chacun de ses clients. 
   
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Pour effectuer ces procédures, vous devez disposer des autorisations appropriées. Pour connaître les autorisations requises, reportez-vous à l’entrée « Règles de transport » de la rubrique Autorisations relatives à la conformité et à la stratégie de messagerie.
 
@@ -135,7 +135,7 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Utilisez PowerShell pour créer une règle de transport permettant de diriger les messages e-mail vers l’affichage Prioritaire pour tous vos utilisateurs
 
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Pour effectuer ces procédures, vous devez disposer des autorisations appropriées. Pour connaître les autorisations requises, reportez-vous à l'entrée « Règles de transport » de [Autorisations relatives à la conformité et à la stratégie de messagerie](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 

@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer l’authentification multifacteur.
-ms.openlocfilehash: 53f1b0fa9a477ae74b48c96f76f9b2523fe45c10
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023192"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017717"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Gérer l’authentification multifacteur dans Microsoft 365 Lighthouse
 
@@ -67,11 +68,11 @@ Lighthouse ouvre votre client de messagerie par défaut et préremplit le messag
 
 Si vous souhaitez utiliser un autre compte de messagerie, vous pouvez exporter la liste des utilisateurs vers un fichier. Vous pouvez également télécharger des exemples de modèles de messagerie que vous pouvez personnaliser avec la personnalisation de votre entreprise.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Une fois l’authentification multifacteur activée, vous pouvez activer Azure Active Directory réinitialisation de mot de passe en libre-service (Azure AD). Cette fonctionnalité permet aux utilisateurs de modifier ou de réinitialiser leur mot de passe sans intervention de l’administrateur ou du support technique. Pour plus d’informations, consultez [Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
+Une fois l’authentification multifacteur activée, vous pouvez activer la réinitialisation de mot de passe en libre-service Azure Active Directory (Azure AD). Cette fonctionnalité permet aux utilisateurs de modifier ou de réinitialiser leur mot de passe sans intervention de l’administrateur ou du support technique. Pour plus d’informations, consultez [Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Planifier un déploiement Azure Active Directory Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted) (article)\
 [Quelles sont les valeurs par défaut de sécurité ?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) (article)\

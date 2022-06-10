@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5033787f314036f345a00b7f9632851317ed05f0
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188677"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013571"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité du portail Microsoft 365 Lighthouse
 
@@ -37,7 +38,7 @@ Lorsque les utilisateurs accèdent à Lighthouse pour la première fois, ils son
 
 ## <a name="set-up-role-based-access-control"></a>Configurer le contrôle d’accès en fonction du rôle
 
-Le contrôle d’accès en fonction du rôle (RBAC) accorde l’accès aux ressources ou aux informations en fonction des rôles d’utilisateur. L’accès aux données et paramètres du locataire client dans Lighthouse est limité à des rôles spécifiques du programme fournisseur de solutions Cloud (CSP). Pour configurer des rôles RBAC dans Lighthouse, nous vous recommandons d’utiliser des privilèges d’administrateur délégué granulaires (GDAP) pour implémenter des affectations granulaires pour les utilisateurs. Les privilèges d’administrateur délégués (DAP) sont toujours nécessaires pour que le locataire s’intègre correctement, mais les clients GDAP uniquement pourront bientôt intégrer sans dépendance sur DAP. Les autorisations GDAP sont prioritaires lorsque DAP et GDAP coexistent pour un client.
+Le contrôle d’accès en fonction du rôle (RBAC) accorde l’accès aux ressources ou aux informations en fonction des rôles d’utilisateur. L’accès aux données et paramètres client dans Lighthouse est limité à des rôles spécifiques à partir du programme fournisseur de solutions Cloud (fournisseur de solutions Cloud). Pour configurer des rôles RBAC dans Lighthouse, nous vous recommandons d’utiliser des privilèges d’administrateur délégué granulaires (GDAP) pour implémenter des affectations granulaires pour les utilisateurs. Les privilèges d’administrateur délégués (DAP) sont toujours nécessaires pour que le locataire s’intègre correctement, mais les clients GDAP uniquement pourront bientôt intégrer sans dépendance sur DAP. Les autorisations GDAP sont prioritaires lorsque DAP et GDAP coexistent pour un client.
 
 Pour configurer une relation GDAP, consultez [Obtenir des autorisations d’administrateur granulaires pour gérer le service d’un client](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). Pour plus d’informations sur les rôles que nous recommandons d’utiliser Lighthouse, consultez [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
@@ -50,7 +51,7 @@ Pour les actions non liées aux locataires dans Lighthouse (par exemple, intégr
 Les MSP peuvent réduire le nombre de personnes qui disposent d’un accès à un rôle à privilèges élevés pour sécuriser des informations ou des ressources à l’aide de PIM. PIM réduit le risque qu’une personne malveillante accède à des ressources ou que des utilisateurs autorisés affectent par inadvertance une ressource sensible. Les MSP peuvent également accorder aux utilisateurs des rôles à privilèges élevés juste-à-temps pour accéder aux ressources, apporter des modifications importantes et surveiller ce que font les utilisateurs désignés avec leur accès privilégié.
 
 > [!NOTE]
-> L’utilisation de Azure AD PIM nécessite une licence Azure AD Premium P2 dans le locataire partenaire.
+> L’utilisation d’Azure AD PIM nécessite une licence Azure AD Premium P2 dans le locataire partenaire.
 
 Les étapes suivantes élèvent les utilisateurs du locataire partenaire aux rôles de privilèges supérieurs limités dans le temps à l’aide de PIM :
 
@@ -62,14 +63,14 @@ Les étapes suivantes élèvent les utilisateurs du locataire partenaire aux rô
 
 Pour en savoir plus sur PIM, consultez [Qu’est-ce que Privileged Identity Management ?](/azure/active-directory/privileged-identity-management/pim-configure)
 
-## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Configurer l’accès conditionnel en fonction des risques Azure AD
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Configurer l’accès conditionnel Azure AD basé sur les risques
 
-Les MSP peuvent utiliser l’accès conditionnel basé sur les risques pour s’assurer que leurs membres du personnel prouvent leur identité à l’aide de l’authentification multifacteur et en modifiant leur mot de passe lorsqu’ils sont détectés en tant qu’utilisateur à risque (avec des informations d’identification divulguées ou par Azure AD renseignement sur les menaces). Les utilisateurs doivent également se connecter à partir d’un emplacement familier ou d’un appareil inscrit lorsqu’ils sont détectés comme une connexion risquée. D’autres comportements à risque incluent la connexion à partir d’une adresse IP malveillante ou anonyme ou d’un emplacement de déplacement atypique ou impossible, l’utilisation d’un jeton anormal, l’utilisation d’un mot de passe à partir d’un spray de mot de passe ou l’exposition d’autres comportements de connexion inhabituels. Selon le niveau de risque d’un utilisateur, les MSP peuvent également choisir de bloquer l’accès lors de la connexion. Pour en savoir plus sur les risques, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Les MSP peuvent utiliser l’accès conditionnel basé sur les risques pour s’assurer que leurs membres du personnel prouvent leur identité à l’aide de l’authentification multifacteur et en modifiant leur mot de passe lorsqu’ils sont détectés en tant qu’utilisateur à risque (avec des informations d’identification divulguées ou par renseignement sur les menaces Azure AD). Les utilisateurs doivent également se connecter à partir d’un emplacement familier ou d’un appareil inscrit lorsqu’ils sont détectés comme une connexion risquée. D’autres comportements à risque incluent la connexion à partir d’une adresse IP malveillante ou anonyme ou d’un emplacement de déplacement atypique ou impossible, l’utilisation d’un jeton anormal, l’utilisation d’un mot de passe à partir d’un spray de mot de passe ou l’exposition d’autres comportements de connexion inhabituels. Selon le niveau de risque d’un utilisateur, les MSP peuvent également choisir de bloquer l’accès lors de la connexion. Pour en savoir plus sur les risques, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 > [!NOTE]
 > L’accès conditionnel nécessite une licence Azure AD Premium P2 dans le locataire partenaire. Pour configurer l’accès conditionnel, consultez [Configuration de l’accès conditionnel Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Autorisations de réinitialisation de mot de passe](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (article)\
 [Vue d’ensemble des autorisations dans Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\

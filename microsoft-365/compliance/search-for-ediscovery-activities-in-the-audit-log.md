@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez les événements consignés lorsque les utilisateurs auxquels des autorisations eDiscovery sont attribuées effectuent des tâches de recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b94c53d497b5e300cdb0a08dbb5f02daec28c19
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317513"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015493"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Rechercher des activités eDiscovery dans le journal d’audit
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Activités liées à la recherche de contenu et à la découverte électronique (pour Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) effectuées dans portail de conformité Microsoft Purview  ou en exécutant les applets de commande PowerShell correspondantes, elles sont enregistrées dans le journal d’audit. Les événements sont consignés lorsque les administrateurs ou les gestionnaires eDiscovery (ou les autorisations eDiscovery affectées par l’utilisateur) effectuent les tâches de recherche de contenu et eDiscovery (Standard) suivantes dans le portail de conformité :
+Les activités liées à la recherche de contenu et à la découverte électronique (pour Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) qui sont effectuées dans le portail de conformité Microsoft Purview ou en exécutant les applets de commande PowerShell correspondantes sont consignées dans le journal d’audit. Les événements sont consignés lorsque les administrateurs ou les gestionnaires eDiscovery (ou les autorisations eDiscovery affectées par l’utilisateur) effectuent les tâches de recherche de contenu et eDiscovery (Standard) suivantes dans le portail de conformité :
   
 - Création et gestion des cas eDiscovery (Standard) et eDiscovery (Premium)
 
@@ -153,7 +153,7 @@ Le tableau suivant décrit les activités eDiscovery (Premium) journalisées dan
 
 ## <a name="ediscovery-cmdlet-activities"></a>Activités de l’applet de commande eDiscovery
 
-Le tableau suivant répertorie les enregistrements du journal d’audit des applets de commande journalisés lorsqu’un administrateur ou un utilisateur effectue une activité liée à eDiscovery à l’aide du centre de conformité ou en exécutant l’applet de commande correspondante dans le Centre de sécurité & conformité PowerShell. Les informations détaillées dans l’enregistrement du journal d’audit sont différentes pour les activités d’applet de commande répertoriées dans ce tableau et les activités eDiscovery décrites dans la section précédente.
+Le tableau suivant répertorie les enregistrements du journal d’audit des applets de commande journalisés lorsqu’un administrateur ou un utilisateur effectue une activité liée à eDiscovery à l’aide du centre de conformité ou en exécutant l’applet de commande correspondante dans Security & Compliance PowerShell. Les informations détaillées dans l’enregistrement du journal d’audit sont différentes pour les activités d’applet de commande répertoriées dans ce tableau et les activités eDiscovery décrites dans la section précédente.
   
 Comme indiqué précédemment, l’apparition des activités d’applet de commande eDiscovery dans les résultats de la recherche dans le journal d’audit peut prendre jusqu’à 24 heures.
   

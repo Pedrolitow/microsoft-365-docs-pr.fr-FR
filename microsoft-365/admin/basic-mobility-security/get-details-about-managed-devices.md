@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Utilisez Windows PowerShell pour obtenir des détails sur les appareils de mobilité et de sécurité de base de votre organisation.
-ms.openlocfilehash: 4cac15e8377370e4bd2f8b359a39aaf830f13d10
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Utilisez Azure AD PowerShell pour obtenir des détails sur les appareils de mobilité et de sécurité de base de votre organisation.
+ms.openlocfilehash: 816d397f29d6e1726448d92e641856f2a5a31a73
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781070"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007193"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par Mobilité et sécurité de base
 
-Cet article vous montre comment utiliser Windows PowerShell pour obtenir des détails sur les appareils de votre organisation que vous avez configurés pour la mobilité et la sécurité de base.
+Cet article vous montre comment utiliser Azure AD PowerShell pour obtenir des détails sur les appareils de votre organisation que vous avez configurés pour la mobilité et la sécurité de base.
 
 Voici une répartition des détails de l’appareil disponibles.
 
@@ -225,7 +225,7 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Microsoft Connecter a été mis hors service](/collaborate/connect-redirect)
 

@@ -19,19 +19,19 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 31af082f66836ecfbe6a7cd804fd3b7bba2ed4bd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669801"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012381"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -42,7 +42,7 @@ ms.locfileid: "65669801"
 
 [Les règles de réduction de la surface d’attaque (règles](attack-surface-reduction.md) ASR) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Fonctionnalités de réduction de la surface d’attaque dans Windows versions
 
@@ -142,7 +142,7 @@ Les procédures suivantes pour l’activation des règles ASR incluent des instr
 
 4. Sélectionnez **OK** dans les trois volets de configuration. Sélectionnez **Ensuite Créer** si vous créez un fichier endpoint protection ou **Enregistrer** si vous modifiez un fichier existant.
 
-#### <a name="endpoint-security-policy"></a>Stratégie de sécurité des points de terminaison**
+#### <a name="endpoint-security-policy"></a>Stratégie de sécurité des points de terminaison
 
 1. Sélectionnez Réduction de **la surface d’attaque** **endpoint Security**\>. Choisissez une règle ASR existante ou créez-en une. Pour en créer une, sélectionnez **Créer** une stratégie et entrez des informations pour ce profil. Pour **le type de profil**, sélectionnez **Règles de réduction de la surface d’attaque**. Si vous avez choisi un profil existant, sélectionnez **Propriétés**, puis **sélectionnez Paramètres**.
 
@@ -317,7 +317,7 @@ Exemple :
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-user-defined.png" alt-text="Option Activer pour la sécurité des informations d’identification" lightbox="images/asr-user-defined.png":::
 
-1. Tapez **PowerShell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
 
 2. Tapez l’une des applets de commande suivantes. (Reportez-vous à la [référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md) pour plus d’informations, telles que l’ID de règle.)
 

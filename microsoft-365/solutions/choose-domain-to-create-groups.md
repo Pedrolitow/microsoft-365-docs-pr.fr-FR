@@ -1,5 +1,5 @@
 ---
-title: Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes
+title: Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,40 +17,40 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
-description: Apprenez à choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell.
-ms.openlocfilehash: 31b84304643190f343ae9ee74a947ecf6741f135
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Apprenez à choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse e-mail à l’aide de PowerShell.
+ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063309"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012535"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 
-Certaines organisations utilisent des domaines de messagerie distincts pour segmenter différentes parties de leurs activités. Vous pouvez spécifier le domaine à utiliser lorsque vos utilisateurs créent Microsoft 365 groupes.
+Certaines organisations utilisent des domaines de messagerie distincts pour segmenter différentes parties de leurs activités. Vous pouvez spécifier le domaine à utiliser lorsque vos utilisateurs créent des groupes Microsoft 365.
   
-Si votre organisation a besoin que les utilisateurs créent leurs groupes dans des domaines autres que le domaine accepté par défaut de votre entreprise, vous pouvez l’autoriser en configurant des stratégies d’adresse de messagerie (EAP) à l’aide de PowerShell.
+Si votre organisation a besoin que les utilisateurs créent leurs groupes dans des domaines autres que le domaine accepté par défaut de votre entreprise, vous pouvez l’autoriser en configurant des stratégies d’adresse e-mail (EAP) à l’aide de PowerShell.
 
-Avant de pouvoir exécuter les cmdlets PowerShell, téléchargez et installez un module qui vous permettra de parler à votre organisation. Consultez les [Connecter à Exchange Online à l’aide de PowerShell à distance.](/powershell/exchange/connect-to-exchange-online-powershell)
+Avant de pouvoir exécuter les applets de commande PowerShell, téléchargez et installez un module qui vous permettra de communiquer avec votre organisation. Consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="example-scenarios"></a>Exemples de scénarios
 
-Supposons que le domaine principal de votre entreprise soit Contoso.com. Toutefois, le domaine accepté par défaut de votre organisation est service.contoso.com. Cela signifie que les groupes seront créés dans service.contoso.com (par exemple, jimsteam@service.contoso.com).
+Supposons que le domaine principal de votre entreprise est Contoso.com. Mais le domaine accepté par défaut de votre organisation est service.contoso.com. Cela signifie que des groupes seront créés dans service.contoso.com (par exemple, jimsteam@service.contoso.com).
   
 Supposons que vous avez également des sous-domaines configurés dans votre organisation. Vous souhaitez également créer des groupes dans ces domaines :
   
 - students.contoso.com pour les étudiants
     
-- faculty.contoso.com pour les membres du corps enseignant
+- faculty.contoso.com pour les membres du corps professoral
     
-Les deux scénarios suivants expliquent comment effectuer cette tâche.
+Les deux scénarios suivants expliquent comment procéder.
 
 > [!NOTE]
-> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes au EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Consultez [Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) pour plus d’informations sur l’ajout d’un domaine accepté.
+> Lorsque vous avez des paillis EAP, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun EAP supplémentaire n’est évalué et les adresses qui sont estampillées sur le groupe sont conformes à l’EAP correspondant. > Si aucun contrat EAP ne correspond aux critères spécifiés, le groupe est approvisionné dans le domaine accepté par défaut de l’organisation. Pour plus d’informations sur l’ajout d’un domaine [accepté, consultez Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
   
 ### <a name="scenario-1"></a>Scénario 1
 
-L’exemple suivant vous montre comment mettre en service Microsoft 365 groupes de votre organisation dans groups.contoso.com domaine.
+L’exemple suivant vous montre comment approvisionner tous les groupes Microsoft 365 de votre organisation dans le domaine groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -58,71 +58,71 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scénario 2
 
-Supposons que vous vouliez contrôler dans quels sous-domaines Microsoft 365 groupes sont créés. Vous souhaitez :
+Supposons que vous souhaitez contrôler les sous-domaines dans lesquels Microsoft 365 groupes sont créés. Vous souhaitez :
   
-- Groupes créés par des étudiants (utilisateurs dont **le** service est d’étudiants) dans students.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par les étudiants (utilisateurs dont **le service** est défini sur **Étudiants**) dans le domaine students.groups.contoso.com. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- Groupes créés par des membres  du corps enseignant (les utilisateurs dont le service est définie sur Le corps enseignant ou l’adresse **e-mail** contient faculty.contoso.com) ) dans le faculty.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par les membres du corps professoral (utilisateurs dont **le département** est défini sur **Faculty ou adresse e-mail contient faculty.contoso.com)**) dans le domaine faculty.groups.contoso.com. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- Les groupes créés par d’autres personnes sont créés dans groups.contoso.com domaine. Utilisez la commande suivante :
+- Les groupes créés par toute autre personne sont créés dans le domaine groups.contoso.com. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
 
-## <a name="change-email-address-policies"></a>Modifier les stratégies d’adresse de messagerie
+## <a name="change-email-address-policies"></a>Modifier les stratégies d’adresse e-mail
 
-Pour modifier les modèles de priorité ou d’adresse de messagerie d’un EAP existant, utilisez Set-EmailAddressPolicy cmdlet.
+Pour modifier les modèles de priorité ou d’adresse e-mail d’un EAP existant, utilisez l’applet de commande Set-EmailAddressPolicy.
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
 
 ```
 
-La modification d’un EAP n’a aucun impact sur les groupes qui ont déjà été mis en service.
+La modification d’un EAP n’a aucun impact sur les groupes qui ont déjà été approvisionnés.
   
-## <a name="delete-email-address-policies"></a>Supprimer des stratégies d’adresse de messagerie
+## <a name="delete-email-address-policies"></a>Supprimer des stratégies d’adresse e-mail
 
-Pour supprimer un EAP, utilisez l'Remove-EmailAddressPolicy cmdlet.
+Pour supprimer un EAP, utilisez l’applet de commande Remove-EmailAddressPolicy.
   
 ```
 Remove-EmailAddressPolicy -Identity StudentsGroups
 ```
 
-La modification d’un EAP n’a aucun impact sur les groupes qui ont déjà été mis en service.
+La modification d’un EAP n’a aucun impact sur les groupes qui ont déjà été approvisionnés.
   
-## <a name="hybrid-requirements"></a>Exigences hybrides
+## <a name="hybrid-requirements"></a>Configuration hybride requise
 
-Si votre organisation est configurée dans un scénario hybride, consultez Configurer des groupes [Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups) avec Exchange hybride local pour vous assurer que votre organisation répond aux exigences de création de groupes Microsoft 365. 
+Si votre organisation est configurée dans un scénario hybride, consultez [Configurer Microsoft 365 groupes avec des groupes locaux Exchange hybrides](/exchange/hybrid-deployment/set-up-microsoft-365-groups) pour vous assurer que votre organisation répond aux exigences de création de groupes Microsoft 365. 
   
-## <a name="additional-info-about-using-email-address-policies-groups"></a>Informations supplémentaires sur l’utilisation de groupes de stratégies d’adresse de messagerie :
+## <a name="additional-info-about-using-email-address-policies-groups"></a>Informations supplémentaires sur l’utilisation des groupes de stratégies d’adresse e-mail :
 
-Il y a d’autres choses à savoir :
+Il y a quelques autres choses à savoir :
   
-- La rapidité de création des groupes dépend du nombre de P EAP configurés dans votre organisation.
+- La rapidité de création des groupes dépend du nombre de eaps configurés dans votre organisation.
     
 - Les administrateurs et les utilisateurs peuvent également modifier des domaines lorsqu’ils créent des groupes.
     
-- Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés utilisateur) qui sont déjà disponibles. Consultez [propriétés filtrables pour le paramètre -RecipientFilter](/powershell/exchange/recipientfilter-properties) pour les propriétés filtrables pris en charge. 
+- Le groupe d’utilisateurs est déterminé à l’aide des requêtes standard (propriétés utilisateur) qui sont déjà disponibles. Consultez [les propriétés filtrables du paramètre -RecipientFilter](/powershell/exchange/recipientfilter-properties) pour les propriétés filtrables prises en charge. 
     
-- Si vous ne configurez aucun eap pour les groupes, le domaine accepté par défaut est sélectionné pour la création du groupe.
+- Si vous ne configurez pas de eaps pour les groupes, le domaine accepté par défaut est sélectionné pour la création de groupe.
     
-- Si vous supprimez un domaine accepté, vous devez d’abord mettre à jour les PED, sinon la mise en service de groupe sera impactée.
+- Si vous supprimez un domaine accepté, vous devez d’abord mettre à jour les eaps. Sinon, l’approvisionnement de groupe sera affecté.
     
-- Une limite maximale de 100 stratégies d’adresse de messagerie peut être configurée pour une organisation.
+- Une limite maximale de 100 stratégies d’adresse e-mail peut être configurée pour une organisation.
     
 ## <a name="related-content"></a>Contenu connexe
 
-[Recommandations en matière de planification de la gouvernance de la](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) collaboration (article)
+[Recommandations de planification de la gouvernance de collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) (article)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md) (article)
 
-[Créer un groupe Microsoft 365 dans le Centre d’administration](../admin/create-groups/create-groups.md) (article)
+[Créer un groupe Microsoft 365 dans le centre d’administration](../admin/create-groups/create-groups.md) (article)

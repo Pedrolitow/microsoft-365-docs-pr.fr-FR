@@ -1,5 +1,5 @@
 ---
-title: Actualiser votre fichier de table source d’informations exactes et sensibles aux données
+title: Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Actualisez votre fichier de table source d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760842"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008842"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez actualiser votre base de données d’informations sensibles jusqu’à 5 fois toutes les 24 heures. Vous devrez resserrez et chargez votre table source d’informations sensibles.
 
@@ -39,15 +41,15 @@ Vous pouvez actualiser votre base de données d’informations sensibles jusqu�
 
    |Méthode|Procédure|
    |---|---|
-   |Windows PowerShell|Consultez la documentation[ScheduledTasks](/powershell/module/scheduledtasks/) et l’[exemple de script PowerShell](#example-powershell-script-for-task-scheduler) dans cet article|
+   |PowerShell|Consultez la documentation[ScheduledTasks](/powershell/module/scheduledtasks/) et l’[exemple de script PowerShell](#example-powershell-script-for-task-scheduler) dans cet article|
    |API planificateur de tâches|Consultez la documentation relative au [planificateur de tâches](/windows/desktop/TaskSchd/using-the-task-scheduler)|
    |Interface utilisateur Windows|Dans Windows, cliquez sur **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur **planificateur de tâches**, puis sélectionnez **exécuter en tant qu’administrateur**.|
 
-### <a name="example-powershell-script-for-task-scheduler"></a>Exemple de script PowerShell pour le planificateur de tâches 
+## <a name="example-powershell-script-for-task-scheduler"></a>Exemple de script PowerShell pour le planificateur de tâches
 
 Cette section inclut un exemple de script PowerShell que vous pouvez utiliser pour planifier vos tâches de hachage de données et de téléchargement des données hachées :
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Planifier le hachage et le chargement dans une étape combinée
+### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Planifier le hachage et le chargement dans une étape combinée
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +84,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Planifier le hachage et le chargement en tant qu’étapes distinctes
+### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Planifier le hachage et le chargement en tant qu’étapes distinctes
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

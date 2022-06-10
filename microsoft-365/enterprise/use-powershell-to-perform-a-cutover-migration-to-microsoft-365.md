@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Découvrez comment utiliser PowerShell pour déplacer le contenu à partir d’un système de messagerie source en effectuant une migration de basculement vers Microsoft 365.
-ms.openlocfilehash: ede2dfc25897012c5cb7e5469abea49e6db4292e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078688"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008394"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
 
@@ -41,7 +41,7 @@ Durée d'exécution estimée de cette tâche : entre 2 et 5 minutes pour créer 
 
 Des autorisations doivent vous être attribuées avant que vous puissiez exécuter cette procédure. Pour connaître les autorisations nécessaires, consultez l'entrée « Migration » dans un tableau de la rubrique [Autorisations des destinataires](/exchange/recipients-permissions-exchange-2013-help).
 
-Pour utiliser les cmdlets Exchange Online PowerShell, vous devez vous connecter et importer les cmdlets dans votre session Windows PowerShell locale. Pour des instructions, voir [Connexion à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Pour utiliser les cmdlets Exchange Online PowerShell, vous devez vous connecter et importer les cmdlets dans votre session Windows PowerShell locale. Pour obtenir des instructions, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Pour la liste complète des commandes de migration, voir [Cmdlets de déplacement et de migration](/powershell/exchange/).
 

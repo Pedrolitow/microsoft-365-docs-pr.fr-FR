@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment Microsoft 365 Lighthouse pouvez vous aider à sécuriser et gérer les locataires clients dans un emplacement unique.
-ms.openlocfilehash: 218442ee6714ece4c984fbf13478e5c4f3982101
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9b8c2b897b5a5d726435700f50afd6030a340ec0
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173955"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007171"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble de Microsoft 365 Lighthouse
 
@@ -30,12 +31,12 @@ Microsoft 365 Lighthouse est un portail d’administration qui permet aux fourni
 
 Lighthouse simplifie l’intégration des clients en recommandant des lignes de base de configuration de sécurité adaptées aux clients SMB et en fournissant des vues multilocataires dans tous les environnements clients. Avec Lighthouse, les MSP peuvent mettre à l’échelle la gestion de leurs clients, se concentrer sur ce qui est le plus important, trouver et examiner rapidement les risques, et prendre des mesures pour amener leurs clients à un état sain et sécurisé.
 
-Aucun coût supplémentaire n’est associé à l’utilisation de Lighthouse pour gérer les services Microsoft 365 et les appareils connectés. Lighthouse est disponible pour les MSP inscrits au programme fournisseur de solutions Cloud (CSP) qui service les clients SMB. Cela inclut les partenaires CSP qui effectuent des transactions directes avec Microsoft et ceux qui effectuent des transactions via un fournisseur indirect (serveur de distribution).
+Aucun coût supplémentaire n’est associé à l’utilisation de Lighthouse pour gérer les services Microsoft 365 et les appareils connectés. Lighthouse est disponible pour les MSP inscrits au programme fournisseur de solutions Cloud (fournisseur de solutions Cloud) qui service les clients SMB. Cela inclut fournisseur de solutions Cloud partenaires qui effectuent des transactions directes avec Microsoft et ceux qui effectuent des transactions via un fournisseur indirect (distributeur).
 
 > [!IMPORTANT] 
 > Pour utiliser Lighthouse, les MSP et leurs locataires clients doivent répondre aux exigences indiquées dans [Microsoft 365 Lighthouse exigences](m365-lighthouse-requirements.md).
 
-Pour plus d’informations sur le programme CSP, consultez la [vue d’ensemble du programme fournisseur de solutions Cloud](/partner-center/csp-overview).
+Pour plus d’informations sur le programme fournisseur de solutions Cloud, consultez la [vue d’ensemble du programme fournisseur de solutions Cloud](/partner-center/csp-overview).
 
 > [!NOTE]  
 > Une offre similaire, Azure Lighthouse, aide les fournisseurs de services à fournir des services managés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour en savoir plus, consultez [Qu’est-ce qu’Azure Lighthouse ?](/azure/lighthouse/overview)   
@@ -60,10 +61,10 @@ Lighthouse permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 > [!NOTE] 
 > Pour plus d’informations sur l’inscription, consultez [Inscription à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
 [Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)   
 [Vue d’ensemble de la page Conformité de l’appareil dans Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)   
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)   
-[Microsoft Defender pour les PME](../security/defender-business/index.yml) (page de liens)
+[Microsoft Defender pour entreprises](../security/defender-business/index.yml) (page de liens)

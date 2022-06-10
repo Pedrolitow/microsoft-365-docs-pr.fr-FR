@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Recherchez Microsoft 365 références d’applets de commande PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype Entreprise Online et la conformité & sécurité.
-ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Recherchez Microsoft 365 références d’applets de commande PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype Entreprise Online et sécurité & Conformité.
+ms.openlocfilehash: 97372031f928e7862145945c72e522510f7cd30e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101378"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015437"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Références de cmdlet pour les services Microsoft 365
 
@@ -61,11 +61,11 @@ Pour Skype Entreprise rubriques de référence sur les applets de commande Onlin
 
 Pour obtenir des instructions de connexion pour Skype Entreprise PowerShell en ligne, consultez [Gérer Skype Entreprise Online avec PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>Applets de commande PowerShell du Centre de sécurité & conformité
+## <a name="security--compliance-powershell-cmdlets"></a>Applets de commande PowerShell de conformité & de sécurité
 
 Les références d’applets de commande Security & Compliance Center se trouvent dans la section Référence de la [documentation PowerShell sécurité & conformité](/powershell/exchange/scc-powershell).
 
-Pour obtenir des instructions de connexion pour Security & Compliance Center PowerShell, consultez [Connecter au Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Pour obtenir des instructions de connexion pour Security & Compliance PowerShell, consultez [Connecter sur Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="see-also"></a>Voir aussi
 

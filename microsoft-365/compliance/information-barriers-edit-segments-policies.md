@@ -13,12 +13,12 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: a4962ba35ef2a66067acdf2676dbe34e63de99c5
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396227"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014168"
 ---
 # <a name="manage-information-barriers-policies"></a>Gérer les stratégies d’obstacles à l’information
 
@@ -42,7 +42,7 @@ Une fois que vous avez [défini des stratégies d’obstacles à l’information
 | [Résolution des problèmes de cloisonnement de l’information](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Reportez-vous à cet article lorsque vous rencontrez des problèmes inattendus liés aux obstacles à l’information. |
 
 >[!IMPORTANT]
->Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, tel que l’un des éléments suivants :<br>- administrateur général Microsoft 365 Entreprise<br>- Administrateur général<br>- Administrateur de conformité<br>- Gestion de la conformité ib (il s’agit d’un nouveau rôle!)<br><br>Pour en savoir plus sur les prérequis pour les obstacles à l’information, consultez [Prérequis (pour les stratégies d’obstacle à l’information).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> Veillez à [vous connecter au Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+>Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, tel que l’un des éléments suivants :<br>- administrateur général Microsoft 365 Entreprise<br>- Administrateur général<br>- Administrateur de conformité<br>- Gestion de la conformité ib (il s’agit d’un nouveau rôle!)<br><br>Pour en savoir plus sur les prérequis pour les obstacles à l’information, consultez [Prérequis (pour les stratégies d’obstacle à l’information).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> Veillez à [vous connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="edit-user-account-attributes"></a>Modifier les attributs d’un compte d’utilisateur
 

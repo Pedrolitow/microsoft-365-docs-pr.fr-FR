@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche pour permettre aux gestionnaires eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8cfaaec45ceefff89b17b561a5e80bebbdade6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098799"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018050"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurer le filtrage des autorisations pour eDiscovery
 
@@ -59,7 +59,7 @@ Les quatre applets de commande suivantes dans Security & Compliance PowerShell v
 
 - Pour exécuter les applets de commande de filtre de sécurité de conformité, vous devez être membre du groupe de rôles Gestion de l’organisation dans le portail de conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-- Vous devez vous connecter à Exchange Online et à Security & Compliance Center PowerShell pour utiliser les applets de commande de filtre de sécurité de conformité. Cela est nécessaire, car ces applets de commande nécessitent l’accès aux propriétés de boîte aux lettres, c’est pourquoi vous devez vous connecter à Exchange Online PowerShell. Consultez les étapes décrites dans la section suivante.
+- Vous devez vous connecter à Exchange Online et à Security & Compliance PowerShell pour utiliser les applets de commande de filtre de sécurité de conformité. Cela est nécessaire, car ces applets de commande nécessitent l’accès aux propriétés de boîte aux lettres, c’est pourquoi vous devez vous connecter à Exchange Online PowerShell. Consultez les étapes décrites dans la section suivante.
 
 - Consultez la section [More information](#more-information) pour plus d’informations sur les filtres d’autorisations de recherche.
 
@@ -69,7 +69,7 @@ Les quatre applets de commande suivantes dans Security & Compliance PowerShell v
 
 - Il n’existe aucune limite au nombre de filtres d’autorisations de recherche qui peuvent être créés dans une organisation. Toutefois, une requête de recherche peut avoir un maximum de 100 conditions. Dans ce cas, une condition est définie comme un élément connecté à la requête par un opérateur booléen (par exemple **, AND**, **OR** et **NEAR**). La limite du nombre de conditions inclut la requête de recherche elle-même, ainsi que tous les filtres d’autorisations de recherche appliqués à l’utilisateur qui exécute la recherche. Par conséquent, plus vous disposez de filtres d’autorisations de recherche (en particulier si ces filtres sont appliqués au même utilisateur ou groupe d’utilisateurs), plus les chances de dépasser le nombre maximal de conditions pour une recherche sont meilleures. Pour empêcher votre organisation d’atteindre la limite des conditions, conservez le nombre de filtres d’autorisations de recherche dans votre organisation le moins possible pour répondre aux besoins de votre entreprise. Pour plus d’informations, consultez [Configurer les limites de conformité pour les enquêtes eDiscovery](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>Connecter à Exchange Online et au Centre de conformité & de sécurité PowerShell en une seule session
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Connecter à Exchange Online et à la sécurité & conformité PowerShell en une seule session
 
 Avant de pouvoir exécuter correctement le script dans cette section, vous devez télécharger et installer le Exchange Online module PowerShell V2. Pour plus d’informations, consultez [À propos du module PowerShell V2 Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -89,13 +89,13 @@ Avant de pouvoir exécuter correctement le script dans cette section, vous devez
     .\ConnectEXO-SCC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les applets de commande de Exchange Online et de Sécurité & Conformité PowerShell sont importées dans votre session de Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter des applets de commande PowerShell Exchange Online et Security & Compliance Center. Par exemple, vous pouvez exécuter et **obtenir une boîte aux lettres** et **Get-ComplianceSearch**.
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les applets de commande de Exchange Online PowerShell et De sécurité & conformité PowerShell sont disponibles. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter Exchange Online applets de commande PowerShell powershell et de sécurité & conformité. Par exemple, vous pouvez exécuter et **obtenir une boîte aux lettres** et **Get-ComplianceSearch**.
 
 Pour résoudre les erreurs de connexion PowerShell, consultez :
 
 - [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [Se connecter à la sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
@@ -122,7 +122,7 @@ Le paramètre  _Filtres_ spécifie les critères de recherche pour le filtre de 
   |Nom de la propriété  |Exemple  |
   |---------|---------|
   |Alias    |`"Mailbox_Alias -like 'v-'"`         |
-  |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
+  |Société  |`"Mailbox_Company -eq 'Contoso'"`        |
   |CountryOrRegion |`"Mailbox_CountryOrRegion -eq 'United States'"`         |
   |Service |`"Mailbox_Department -eq 'Finance'"`        |
   |||

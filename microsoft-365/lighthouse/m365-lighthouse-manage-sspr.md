@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer la réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 4d618eb80dfd4a37ad5548de997b3d551bcbbf85
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0af624e93ae9321834e147f829a87f09c36dedf7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022358"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017673"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse permet aux partenaires de gérer Azure Active Directory (Azure AD) la réinitialisation de mot de passe en libre-service (SSPR). SSPR permet aux utilisateurs de modifier ou de réinitialiser leur mot de passe sans intervention de l’administrateur ou du support technique. Si le compte d’un utilisateur est verrouillé ou qu’il oublie son mot de passe, il peut suivre les invites pour se débloquer et reprendre le travail. Cette capacité réduit les appels au support technique et la perte de productivité lorsqu’un utilisateur ne peut pas se connecter à son appareil ou à une application.
+Microsoft 365 Lighthouse permet aux partenaires de gérer la réinitialisation de mot de passe en libre-service (SSPR) Azure Active Directory (Azure AD). SSPR permet aux utilisateurs de modifier ou de réinitialiser leur mot de passe sans intervention de l’administrateur ou du support technique. Si le compte d’un utilisateur est verrouillé ou qu’il oublie son mot de passe, il peut suivre les invites pour se débloquer et reprendre le travail. Cette capacité réduit les appels au support technique et la perte de productivité lorsqu’un utilisateur ne peut pas se connecter à son appareil ou à une application.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -71,7 +72,7 @@ Lighthouse ouvre votre client de messagerie par défaut et préremplit l’e-mai
 
 Si vous souhaitez utiliser un autre compte de messagerie, vous pouvez exporter la liste des utilisateurs vers un fichier. Vous pouvez également télécharger des exemples de modèles de messagerie que vous pouvez personnaliser avec la personnalisation de votre entreprise.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Planifier un Azure Active Directory déploiement de réinitialisation de mot de passe en libre-service](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
 [Tutoriel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser des mots de passe à l’aide de Azure Active Directory réinitialisation de mot de passe en libre-service](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
