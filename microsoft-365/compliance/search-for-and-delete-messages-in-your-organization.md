@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de vidage dans le portail de conformité Microsoft Purview pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 9e6159bcd6cdd8a06a310c5de9f07b105dbb4122
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4cf7b3f6aeefc3af71739f91322736354c1b68e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094899"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017239"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -50,7 +50,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
   > [!NOTE]
   > Le groupe de rôles **Gestion de l’organisation** existe à la fois dans Exchange Online et dans le Centre de conformité. Ces groupes de rôles distincts donnent des autorisations différentes. Être membre de la **Gestion des organisations** dans Exchange Online n'octroie pas les autorisations requises pour supprimer des messages électroniques. Si vous n’avez pas le rôle **Rechercher et purger** dans le Centre de conformité (directement ou par le biais d’un groupe de rôles tel que **Gestion de l’organisation**), vous recevrez une erreur à l’étape 3 lorsque vous exécutez l'applet de commande **New-ComplianceSearchAction** avec le message « Impossible de trouver un paramètre correspondant au nom de paramètre « Purge ».
 
-- Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 1](#step-1-connect-to-security--compliance-center-powershell).
+- Pour supprimer des messages, vous devez utiliser Security & Compliance PowerShell. Pour obtenir des instructions sur la façon de se connecter, consultez [Étape 1 : Se connecter à Security & Compliance PowerShell](#step-1-connect-to-security--compliance-powershell).
 
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas conçue pour nettoyer les boîtes aux lettres des utilisateurs.
 
@@ -60,9 +60,9 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
 
 - Les éléments de courrier dans un jeu à réviser dans un cas eDiscovery (Premium) ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un groupe de révision sont stockés dans un emplacement de stockage Azure, et non dans le service actif. Cela signifie qu’elles ne sont pas renvoyées par la recherche de contenu que vous créez à l’étape 1. Pour supprimer des éléments d’un jeu à réviser, vous devez supprimer le cas eDiscovery (Premium) qui contient le jeu à réviser. Pour plus d’informations, consultez [Fermer ou supprimer un cas eDiscovery (Premium)](close-or-delete-case.md).
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Étape 1 : connectez-vous au Centre de sécurité et conformité PowerShell
+## <a name="step-1-connect-to-security--compliance-powershell"></a>Étape 1 : Connectez-vous à Security & Compliance PowerShell
 
-L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+La première étape consiste à se connecter à Security & Compliance PowerShell pour votre organisation. Pour consulter des instructions détaillées, consultez [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Étape 2 : créer une Recherche de contenu pour rechercher les messages à supprimer
 
@@ -121,7 +121,7 @@ Une fois que vous avez créé et affiné une recherche de contenu pour renvoyer 
 > [!NOTE]
 > Comme indiqué précédemment, les éléments de Microsoft Teams retournés par la recherche de contenu ne sont pas supprimés lorsque vous exécutez la commande **New-ComplianceSearchAction -Purge** .
 
-Pour exécuter les commandes suivantes pour supprimer des messages, assurez-vous que vous êtes [connecté à Centre de sécurité et de conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) .
+Pour exécuter les commandes suivantes et supprimer des messages, assurez-vous que vous êtes [connecté à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ### <a name="soft-delete-messages"></a>Supprimer les messages de manière réversible
 

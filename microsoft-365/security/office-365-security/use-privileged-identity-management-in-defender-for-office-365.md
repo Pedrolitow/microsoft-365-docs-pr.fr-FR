@@ -20,12 +20,12 @@ ms.custom:
 description: Apprenez à intégrer PIM afin d’accorder un accès limité dans le temps et juste-à-temps aux utilisateurs pour effectuer des tâches de privilège élevé dans Microsoft Defender pour Office 365, réduisant ainsi les risques pour vos données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e043a671b2416ba1c856c74a53206b06c180f13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 32bc21130d98687f95af2ce6664c0759a716f362
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130667"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010231"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) et pourquoi l’utiliser avec Microsoft Defender pour Office 365
@@ -86,7 +86,7 @@ Dans le portail Microsoft 365 Defender, créez un groupe de rôles personnalisé
 
 ### <a name="nest-the-newly-created-security-group-into-the-role-group"></a>Imbriquer le groupe de sécurité nouvellement créé dans le groupe de rôles
 
-1. [Connectez-vous à Centre de sécurité et de conformité](/powershell/exchange/connect-to-scc-powershell) PowerShell et exécutez la commande suivante :
+1. [Connectez-vous à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la commande suivante :
 
    ```powershell
    Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`

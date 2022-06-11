@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez un verrou de conservation avec les stratégies de rétention et les stratégies d’étiquette de conservation pour vous aider à respecter les exigences réglementaires et à vous protéger des administrateurs malveillants.
-ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 228d4cd1a7778b5352df6d10d31b7e4c25af915f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922216"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016281"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention
 
@@ -58,7 +58,7 @@ Vous devez utiliser PowerShell si vous avez besoin d’utiliser le verrouillage 
 
 Toutes les stratégies de rétention incluant une configuration prennent en charge le Verrouillage de conservation. Pour appliquer le verrouillage de conservation à une stratégie d'étiquettes de conservation, celle-ci ne doit contenir que des étiquettes qui marquent les éléments comme des documents réglementaires.
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Recherchez le nom de la stratégie que vous voulez verrouiller en exécutant [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Par exemple :
     
