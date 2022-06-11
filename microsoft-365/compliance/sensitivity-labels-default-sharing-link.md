@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
-ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286887"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012315"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
 
@@ -58,14 +58,14 @@ Pour appliquer le type de lien de partage par défaut pour les sites, les étiqu
 
 Pour appliquer le type de lien de partage par défaut aux documents dans SharePoint et OneDrive, les étiquettes de confidentialité doivent être activées pour ces services. Si cette fonctionnalité n'est pas encore activée pour votre locataire, afficher [Comment activer les étiquettes de confidentialité pour SharePoint et OneDrive (opt-in)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-Dans une session PowerShell, vous devez vous [connecter à Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) pour configurer les paramètres du type de lien de partage par défaut.
+Dans une session PowerShell, vous devez vous [connecter au PowerShell de sécurité et de conformité d’Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) pour configurer les paramètres du type de lien de partage par défaut.
 
 > [!NOTE]
 > Bien que cela ne soit pas obligatoire, il est plus facile de [créer et de configurer des étiquettes de sensibilité dans le portail](create-sensitivity-labels.md) de conformité Microsoft Purview, puis de modifier ces étiquettes avec les paramètres qui configurent le type de lien de partage par défaut.
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>Comment configurer les paramètres pour le type de lien de partage par défaut ?
 
-Les paramètres de configuration pour le type de lien de partage par défaut utilisent le paramètre PowerShell *AdvancedSettings* avec les cmdlets [Set-Label](/powershell/module/exchange/set-label) et [New-Label](/powershell/module/exchange/new-labelpolicy) du Centre de sécurité [et conformité PowerShell](/powershell/exchange/scc-powershell) :
+Les paramètres de configuration du type de lien de partage par défaut utilisent le paramètre PowerShell *AdvancedSettings* avec les applets de commande [Set-Label](/powershell/module/exchange/set-label) et [New-Label](/powershell/module/exchange/new-labelpolicy) du [ PowerShell de sécurité et de conformité](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope** : les valeurs disponibles sont :
     - **SpecificPeople** : définit le lien de partage par défaut pour le site sur le lien « Personnes spécifiques »
