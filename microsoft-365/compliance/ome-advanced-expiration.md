@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez Microsoft Purview Advanced Message Encryption pour étendre votre sécurité de messagerie en définissant une date d’expiration sur les e-mails via un modèle personnalisé de marque.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188391"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015559"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Microsoft Purview
 
@@ -32,7 +32,7 @@ Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Ent
 
 Si votre organisation dispose d’un abonnement qui n’inclut pas Microsoft Purview Advanced Message Encryption, vous pouvez l’acheter avec le module complémentaire de référence SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le Conformité avancée Office 365 module complémentaire SKU pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou Office 365 références SKU.
 
-Vous pouvez utiliser l’expiration des messages sur les e-mails que vos utilisateurs envoient aux destinataires externes qui utilisent le portail OME pour accéder aux e-mails chiffrés. Vous forcez les destinataires à utiliser le portail OME pour afficher et répondre aux e-mails chiffrés envoyés par votre organisation à l’aide d’un modèle personnalisé de marque qui spécifie une date d’expiration dans Windows PowerShell.
+Vous pouvez utiliser l’expiration des messages sur les e-mails que vos utilisateurs envoient aux destinataires externes qui utilisent le portail OME pour accéder aux e-mails chiffrés. Vous forcez les destinataires à utiliser le portail OME pour afficher et répondre aux e-mails chiffrés envoyés par votre organisation à l’aide d’un modèle personnalisé de marque qui spécifie une date d’expiration dans PowerShell.
 
 En tant qu’administrateur général Office 365, lorsque vous appliquez la marque de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation, vous pouvez également spécifier une expiration pour ces messages électroniques. Avec Microsoft Purview Advanced Message Encryption, vous pouvez créer plusieurs modèles pour les e-mails chiffrés provenant de votre organisation. À l’aide d’un modèle, vous pouvez contrôler la durée pendant laquelle les destinataires ont accès au courrier envoyé par vos utilisateurs.
 

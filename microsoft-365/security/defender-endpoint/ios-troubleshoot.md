@@ -1,7 +1,7 @@
 ---
-title: Résoudre les problèmes et trouver des réponses sur les QUESTIONS liées à Microsoft Defender for Endpoint sur iOS
+title: Résoudre les problèmes et trouver des réponses aux questions relatives à Microsoft Defender pour point de terminaison sur iOS
 description: Résolution des problèmes et FAQ - Microsoft Defender pour point de terminaison sur iOS
-keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, troubleshoot, faq, how to
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, ios, résolution des problèmes, faq, procédure
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bc8cda3fb61ec9338b95eed58f5f0a70e1deb3e1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: ae6e65d99a82bdf4a9c0adbb740c6e5b969f4b68
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469358"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016325"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Résoudre les problèmes et trouver des réponses aux questions fréquentes sur Microsoft Defender pour point de terminaison sur iOS
 
@@ -29,99 +29,97 @@ ms.locfileid: "64469358"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Cette rubrique fournit des informations de dépannage pour vous aider à résoudre les problèmes qui peuvent survenir lorsque vous utilisez Microsoft Defender pour Endpoint sur iOS.
-
-
+Cette rubrique fournit des informations de dépannage pour vous aider à résoudre les problèmes qui peuvent survenir lorsque vous utilisez Microsoft Defender pour point de terminaison sur iOS.
 
 > [!NOTE]
-> Defender pour le point de terminaison sur iOS utiliserait un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+> Defender pour point de terminaison sur iOS utiliserait un VPN pour fournir la fonctionnalité De protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/auto-bouclage qui ne prend pas le trafic en dehors de l’appareil.
 
-## <a name="apps-dont-work-when-vpn-is-turned-on"></a>Les applications ne fonctionnent pas lorsque le VPN est allumé
-Certaines applications cessent de fonctionner lorsqu’un VPN actif est détecté. Vous pouvez désactiver le VPN pendant la durée d’utilisation de ces applications. 
+## <a name="apps-dont-work-when-vpn-is-turned-on"></a>Les applications ne fonctionnent pas lorsque le VPN est activé
+Certaines applications cessent de fonctionner lorsqu’un VPN actif est détecté. Vous pouvez désactiver le VPN pendant que vous utilisez de telles applications.
 
-Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. La [protection web](web-protection-overview.md) permet de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
+Par défaut, Defender pour point de terminaison sur iOS inclut et active la fonctionnalité de protection web. La [protection web](web-protection-overview.md) permet de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
 
-Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certains cas dans l’obligation de désactiver le VPN. Par exemple, vous souhaitez exécuter certaines applications qui ne fonctionnent pas lorsqu’un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN directement à partir de l’application Defender for Endpoint ou en suivant les étapes suivantes :
+Bien qu’il soit activé par défaut, il peut arriver que vous deviez désactiver le VPN. Par exemple, vous souhaitez exécuter des applications qui ne fonctionnent pas lorsqu’un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN directement à partir de l’application Defender pour point de terminaison ou en procédant comme suit :
 
-1. Sur votre appareil iOS, ouvrez **l’application Paramètres**, cliquez ou appuyez sur **Général**, puis **sur VPN**.
-1. Cliquez ou appuyez sur le bouton « i » de Microsoft Defender pour le point de terminaison.
-1. Désactivez la **Connecter à la demande** pour désactiver le VPN.
+1. Sur votre appareil iOS, ouvrez l’application **Paramètres**, cliquez ou appuyez sur **Général**, puis **sur VPN**.
+1. Cliquez ou appuyez sur le bouton « i » pour Microsoft Defender pour point de terminaison.
+1. Désactivez **Connecter à la demande** pour désactiver le VPN.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-vpn-config.png" alt-text="Option Connecter à la demande" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
-> La protection web n’est pas disponible lorsque le VPN est désactivé. Pour ré-activer la Protection Web, ouvrez l’application Microsoft Defender pour le point de terminaison sur l’appareil et activez la protection Web.
+> La protection web ne sera pas disponible lorsque le VPN est désactivé. Pour réactiver la protection web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil et activez la protection web.
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistence avec plusieurs profils VPN
 
-Apple iOS ne prend pas **en charge plusieurs** VPN à l’échelle de l’appareil pour être actifs simultanément. Alors que plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois. Si vous devez utiliser un autre VPN sur l’appareil, vous pouvez désactiver Defender pour le VPN de point de terminaison lorsque vous utilisez l’autre VPN.
+Apple iOS ne prend pas en charge plusieurs VPN à **l’échelle de l’appareil** pour être actifs simultanément. Bien que plusieurs profils VPN puissent exister sur l’appareil, un seul VPN peut être actif à la fois. Si vous devez utiliser un autre VPN sur l’appareil, vous pouvez désactiver Defender pour point de terminaison VPN pendant que vous utilisez l’autre VPN.
 
 ## <a name="battery-consumption"></a>Consommation de batterie
 
-Pour vous fournir une protection en permanence contre les menaces basées sur le web, Microsoft Defender pour point de terminaison doit s’exécuter en arrière-plan en permanence. Cela peut entraîner une augmentation mineure de la consommation globale de la batterie de votre appareil. Si vous voyez un drainage important de la batterie, [envoyez-nous vos commentaires](ios-troubleshoot.md#send-in-app-feedback) et nous examinerons.
+Afin de vous protéger en permanence contre les menaces web, Microsoft Defender pour point de terminaison doit s’exécuter en arrière-plan à tout moment. Cela peut entraîner une légère augmentation de la consommation globale de batterie de votre appareil. Si vous constatez un drainage important de la batterie, [envoyez-nous vos commentaires](ios-troubleshoot.md#send-in-app-feedback) et nous examinerons.
 
-En outre, dans l’Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran est uniquement pour cette durée et est calculée par iOS en fonction d’une multitude de facteurs, y compris l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/de bouc-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est inférieure à ce qui est affiché sur la page Paramètres batterie sur l’appareil.
+En outre, dans l’application Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications qui sont visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran est uniquement pendant cette durée et est calculée par iOS en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour point de terminaison utilise un VPN local/en boucle en arrière-plan pour vérifier le trafic web des sites web malveillants ou des connexions. Les paquets réseau de n’importe quelle application passent par cette vérification, ce qui entraîne le calcul incorrect de l’utilisation de la batterie de Microsoft Defender pour point de terminaison. La consommation réelle de batterie de Microsoft Defender pour point de terminaison est inférieure à celle affichée sur la page Batterie Paramètres sur l’appareil.
 
-Notez que le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
+Notez que le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
 
 ## <a name="data-usage"></a>Utilisation des données
 
-Microsoft Defender pour le point de terminaison utilise un VPN local/loopback pour vérifier le trafic web des sites web ou des connexions malveillants. Pour cette raison, l’utilisation des données de Microsoft Defender pour les points de terminaison peut être incorrectement expliquée. Nous avons également observé que si l’appareil est uniquement sur le réseau cellulaire, l’utilisation des données signalée par le fournisseur de services est très proche de la consommation réelle alors que dans l’application Paramètres, Apple affiche environ 1,5x à 2x de données réelles consommées.
+Microsoft Defender pour point de terminaison utilise un VPN local/de bouclage pour vérifier le trafic web des sites web malveillants ou des connexions. Pour cette raison, Microsoft Defender pour point de terminaison l’utilisation des données peut être incorrectement comptabilisée. Nous avons également observé que si l’appareil se trouve uniquement sur le réseau cellulaire, l’utilisation des données signalée par le fournisseur de services est très proche de la consommation réelle alors que dans l’application Paramètres, les nombres peuvent être inexacts.
 
-Nous avons également des observations similaires avec d’autres services VPN et l’avons signalé à Apple.
+Nous avons également des observations similaires avec d’autres services VPN.
 
-En outre, il est essentiel que Microsoft Defender pour Point de terminaison soit à jour avec nos services de système principal afin de fournir une meilleure protection.
+En outre, il est essentiel que Microsoft Defender pour point de terminaison soient à jour avec nos services principaux afin de fournir une meilleure protection.
 
 ## <a name="report-unsafe-site"></a>Signaler un site non sécurisé
 
-Les sites web de hameçonnage usurpent l’identité de sites web dignes de confiance pour obtenir vos informations personnelles ou financières. Consultez [la page Fournir des commentaires sur la protection](https://www.microsoft.com/wdsi/support/report-unsafe-site) du réseau pour signaler un site web qui pourrait être un site de hameçonnage.
+Les sites web de hameçonnage empruntent l’identité de sites web dignes de confiance pour obtenir vos informations personnelles ou financières. Visitez la page [Fournir des commentaires sur la protection réseau](https://www.microsoft.com/wdsi/support/report-unsafe-site) pour signaler un site web qui pourrait être un site de hameçonnage.
 
 ## <a name="malicious-site-detected"></a>Site malveillant détecté
 
-Microsoft Defender pour le point de terminaison vous protège contre le hameçonnage ou d’autres attaques basées sur le web. Si un site malveillant est détecté, la connexion est bloquée et une alerte est envoyée au portail Microsoft 365 Defender de l’organisation. L’alerte inclut le nom de domaine de la connexion, l’adresse IP distante et les détails du périphérique.
+Microsoft Defender pour point de terminaison vous protège contre le hameçonnage ou d’autres attaques web. Si un site malveillant est détecté, la connexion est bloquée et une alerte est envoyée au portail Microsoft 365 Defender de l’organisation. L’alerte inclut le nom de domaine de la connexion, l’adresse IP distante et les détails de l’appareil.
 
-En outre, une notification s’affiche sur l’appareil iOS. Appuyer sur la notification ouvre l’écran suivant pour que l’utilisateur examine les détails.
+En outre, une notification s’affiche sur l’appareil iOS. L’appui sur la notification ouvre l’écran suivant pour que l’utilisateur passe en revue les détails.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/ios-phish-alert.png" alt-text="Le site signalé comme notification non sûre" lightbox="images/ios-phish-alert.png":::
+> :::image type="content" source="images/ios-phish-alert.png" alt-text="Le site signalé comme notification non sécurisée" lightbox="images/ios-phish-alert.png":::
 
-## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Appareil non visible sur la console Defender for Endpoint après l’intégration.
+## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Appareil introuvable sur la console Defender pour point de terminaison après l’intégration
 
-Après l’intégration, l’appareil peut s’afficher dans l’inventaire des appareils dans la console de sécurité Defender for Endpoint. Assurez-vous également que l’appareil est correctement inscrit auprès Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour que l’intégration réussisse, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès de Azure AD.
+Après l’intégration, l’affichage de l’appareil dans l’inventaire des appareils dans la console de sécurité Defender pour point de terminaison prend quelques heures. Vérifiez également que l’appareil est correctement inscrit auprès de Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour réussir l’intégration, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
 
 > [!NOTE]
-> Parfois, le nom de l’appareil n’est pas cohérent avec celui de Microsoft Endpoint Manager console (Intune). Le nom de l’appareil dans la console Defender pour point de terminaison est au format <username_iPhone/iPad modèle>. Vous pouvez également utiliser Azure AD’ID d’appareil pour identifier l’appareil dans la console Defender for Endpoint.
+> Parfois, le nom de l’appareil n’est pas cohérent avec celui de Microsoft Endpoint Manager console (Intune). Le nom de l’appareil dans la console Defender pour point de terminaison est au format <username_iPhone/iPad modèle>. Vous pouvez également utiliser l’ID d’appareil Azure AD pour identifier l’appareil dans la console Defender pour point de terminaison.
 
 ## <a name="data-and-privacy"></a>Données et confidentialité
 
-Pour plus d’informations sur les données collectées et la confidentialité, voir Informations sur la confidentialité [- Microsoft Defender pour endpoint sur iOS](ios-privacy.md).
+Pour plus d’informations sur les données collectées et la confidentialité, consultez [Informations sur la confidentialité - Microsoft Defender pour point de terminaison sur iOS](ios-privacy.md).
 
 ## <a name="connectivity-issue-on-cellular-network"></a>Problème de connectivité sur le réseau cellulaire
 
-Si vous êtes confronté à des problèmes de connectivité Internet sur le réseau cellulaire, vérifiez si Les données cellulaires de Microsoft Defender pour Endpoint sont activées : Ouvrez l’application Paramètres > MS Defender > assurez-vous que les « données cellulaires » sont activées pour MS Defender.
+Si vous rencontrez des problèmes de connectivité Internet sur le réseau cellulaire, vérifiez si Microsoft Defender pour point de terminaison dispose de données cellulaires activées : ouvrez Paramètres application > MS Defender > vérifiez que « Données cellulaires » est activé pour MS Defender.
 
-Si vous avez encore des problèmes de connectivité, vérifiez si le mode Avion permet de résoudre le problème. Si le problème persiste, [envoyez-nous les journaux](ios-troubleshoot.md#send-in-app-feedback).
+Si vous rencontrez toujours des problèmes de connectivité, vérifiez si l’activation/désactivation du mode Avion permet de résoudre le problème. Si le problème persiste, [envoyez-nous les journaux](ios-troubleshoot.md#send-in-app-feedback).
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problèmes sur les appareils supervisés avec le profil de filtre de contenu installé
 
-Il existe un problème sur les appareils supervisés avec le filtre de contenu Defender for Endpoint installé. Si vous observez une lenteur ou une latence dans la connectivité Internet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution. 
+Il existe un problème sur les appareils supervisés avec le filtre de contenu Defender pour point de terminaison installé. Si vous observez une lenteur ou une latence dans la connectivité Internet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous nous efforçons de résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous aurons une solution. 
 
-## <a name="issues-during-app-updates-from-the-app-store"></a>Problèmes pendant les mises à jour de l’application à partir de l’App Store
+## <a name="issues-during-app-updates-from-the-app-store"></a>Problèmes lors des mises à jour de l’application à partir de l’App Store
 
-Si vous observez des problèmes lors de la mise à jour de l’application via l’App Store (mises à jour automatiques ou manuelles), vous devrez peut-être redémarrer l’appareil. Si cela ne résout pas le problème, vous pouvez désactiver le VPN Defender et effectuer la mise à jour de l’application. Vous pouvez également fournir un commentaire dans l’application pour signaler ce problème.
+Si vous observez des problèmes lorsque l’application est mise à jour via l’App Store (mises à jour automatiques ou mises à jour manuelles), vous devrez peut-être redémarrer l’appareil. Si cela ne résout pas le problème, vous pouvez désactiver le VPN Defender et effectuer la mise à jour de l’application. Vous pouvez également fournir des commentaires dans l’application pour signaler ce problème.
 
 ## <a name="send-in-app-feedback"></a>Envoyer des commentaires dans l’application
 
-Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les sections ci-dessus ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données de diagnostic. Notre équipe examine ensuite les journaux pour fournir la solution appropriée. Les utilisateurs peuvent utiliser les étapes suivantes pour envoyer des commentaires :
+Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les sections ci-dessus ou qui ne peut pas être résolu à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données de diagnostic. Notre équipe examinera ensuite les journaux pour fournir la solution appropriée. Les utilisateurs peuvent utiliser les étapes suivantes pour envoyer des commentaires :
 
-  - Ouvrez l’application MSDefender sur l’appareil iOS/iPadOS.
-  - Appuyez sur Menu (icône de profil) dans le coin supérieur gauche.
-  - **Appuyez sur Envoyer des commentaires**.
-  - Choisissez parmi les options données. Pour signaler un problème, sélectionnez **Je n’aime pas quelque chose**.
-  - Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez **envoyer les données de diagnostic**. Nous vous recommandons d’inclure votre adresse de messagerie afin que l’équipe puisse vous contacter pour obtenir une solution ou un suivi.
-  - **Appuyez sur Envoyer** pour envoyer correctement les commentaires.
+- Ouvrez l’application MSDefender sur l’appareil iOS/iPadOS.
+- Appuyez sur Menu (icône de profil) dans le coin supérieur gauche.
+- Appuyez sur **Envoyer des commentaires**.
+- Choisissez parmi les options données. Pour signaler un problème, sélectionnez **Je n’aime pas quelque chose**.
+- Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez **envoyer des données de diagnostic**. Nous vous recommandons d’inclure votre adresse e-mail afin que l’équipe puisse vous contacter pour obtenir une solution ou un suivi.
+- Appuyez sur **Envoyer** pour envoyer les commentaires.

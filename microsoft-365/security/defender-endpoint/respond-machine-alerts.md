@@ -14,20 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f290af2808db1aa56f39593ec4f9fac68c0f76d8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438814"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014593"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Plans 1 et 2 de Microsoft Defender pour points de terminaison](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender pour les PME](/microsoft-365/security/defender-business/mdb-overview)
+
+[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 Répondez rapidement aux attaques détectées en isolant les appareils ou en collectant un package d’investigation. Après avoir pris des mesures sur les appareils, vous pouvez vérifier les détails de l’activité sur le Centre d’actions.
 
@@ -40,13 +43,14 @@ Les actions de réponse s’exécutent en haut d’une page d’appareil spécif
 - Exécuter une analyse antivirus
 - Restreindre l’exécution des applications
 - Isoler l’appareil
+- Contenir un appareil
 - Consulter un spécialiste des menaces
 - Centre de notifications
 
 [![Image des actions de réponse.](images/response-actions.png)](images/response-actions.png#lightbox)
 
 > [!IMPORTANT]
-> [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) et [Microsoft Defender pour les PME](../defender-business/mdb-overview.md) inclure uniquement les actions de réponse manuelle suivantes :
+> [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) et [Microsoft Defender pour entreprises](../defender-business/mdb-overview.md) inclure uniquement les actions de réponse manuelle suivantes :
 > - Exécuter une analyse antivirus
 > - Isoler l’appareil
 > - Arrêter et mettre en quarantaine un fichier
@@ -89,8 +93,7 @@ Pour plus d’informations sur la réponse en direct, consultez [Examiner les en
 Dans le cadre du processus d’investigation ou de réponse, vous pouvez collecter un package d’investigation à partir d’un appareil. En collectant le package d’investigation, vous pouvez identifier l’état actuel de l’appareil et mieux comprendre les outils et techniques utilisés par l’attaquant.
 
 > [!IMPORTANT]
->
->Ces actions ne sont actuellement pas prises en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md)
+> Ces actions ne sont actuellement pas prises en charge pour les appareils exécutant macOS ou Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md)
 
 Pour télécharger le package (fichier zip) et examiner les événements qui se sont produits sur un appareil
 
@@ -153,8 +156,8 @@ Le Centre d’action affiche les informations d’analyse et la chronologie de l
 
 En plus de contenir une attaque en arrêtant des processus malveillants, vous pouvez également verrouiller un appareil et empêcher les tentatives ultérieures de programmes potentiellement malveillants de s’exécuter.
 
->[!IMPORTANT]
-> - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2016. 
+> [!IMPORTANT]
+> - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2019 ou version ultérieure. 
 > - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender.
 > - Cette action doit répondre aux Windows Defender formats de stratégie d’intégrité du code Application Control et aux exigences de signature. Pour plus d’informations, consultez [les formats de stratégie d’intégrité du code et la signature](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -173,17 +176,17 @@ Lorsqu’une application est restreinte, la notification suivante s’affiche po
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="Message de restriction d’application" lightbox="images/atp-app-restriction.png":::
 
->[!NOTE]
->La notification n’est pas disponible sur Windows Server 2016 et Windows Server 2012 R2.
+> [!NOTE]
+> La notification n’est pas disponible sur Windows Server 2016 et Windows Server 2012 R2.
 
 ## <a name="isolate-devices-from-the-network"></a>Isoler les appareils du réseau
 
 Selon la gravité de l’attaque et la sensibilité de l’appareil, vous pouvez isoler l’appareil du réseau. Cette action peut aider à empêcher l’attaquant de contrôler l’appareil compromis et d’effectuer d’autres activités telles que l’exfiltration de données et le mouvement latéral.
 
 > [!IMPORTANT]
-> - L’isolation des appareils du réseau n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md).
-> - L’isolation complète est disponible pour les appareils sur Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
-> - L’isolation sélective est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure et Windows 11.
+> - L’isolation des appareils du réseau n’est actuellement pas prise en charge pour les appareils exécutant macOS ou Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md).
+> - L’isolation complète est disponible pour les appareils exécutant Windows 11, Windows 10, version 1703 ou ultérieure, Windows Server 2022, Windows Server 2019 et Windows Server 2016.
+> - L’isolation sélective est disponible pour les appareils exécutant Windows 10, version 1709 ou ultérieure et Windows 11.
 > - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 Cette fonctionnalité d’isolation de l’appareil déconnecte l’appareil compromis du réseau tout en conservant la connectivité au service Defender pour point de terminaison, qui continue de surveiller l’appareil.
@@ -205,6 +208,49 @@ Une fois que vous avez sélectionné **Isoler l’appareil** sur la page de l’
 Lorsqu’un appareil est isolé, la notification suivante s’affiche pour informer l’utilisateur que l’appareil est isolé du réseau :
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="Message d’absence de connexion réseau" lightbox="images/atp-notification-isolate.png":::
+
+## <a name="contain-devices-from-the-network"></a>Contenir des appareils à partir du réseau
+
+Lorsque vous avez identifié un appareil non managé compromis ou potentiellement compromis, vous souhaiterez peut-être le contenir à partir du réseau. Lorsque vous avez un appareil, un Microsoft Defender pour point de terminaison appareil intégré bloque la communication entrante et sortante avec cet appareil. Cette action peut aider à empêcher les appareils voisins de se compromettre pendant que l’analyste des opérations de sécurité localise, identifie et corrige la menace sur l’appareil compromis.
+
+> [!NOTE]
+> Le blocage des communications entrantes et sortantes avec un appareil « autonome » est pris en charge sur les appareils intégrés Microsoft Defender pour point de terminaison Windows 10 et Windows Server 2019+.
+
+### <a name="how-to-contain-a-device"></a>Comment contenir un appareil
+
+1. Accédez à la page **Inventaire des appareils** et sélectionnez l’appareil à contenir.
+
+2. Sélectionnez **Contenir l’appareil** dans le menu actions du menu volant de l’appareil.
+
+:::image type="content" alt-text="Capture d’écran du message contextuel contenant l’appareil." source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+
+3. Dans la fenêtre contextuelle contenir l’appareil, tapez un commentaire, puis sélectionnez **Confirmer**.
+
+:::image type="content" alt-text="Capture d’écran de l’élément de menu contenir l’appareil." source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+
+### <a name="contain-a-device-from-the-device-page"></a>Contenir un appareil à partir de la page de l’appareil
+
+Un appareil peut également être contenu à partir de la page de l’appareil en sélectionnant **Contenir l’appareil** dans la barre d’action :
+
+:::image type="content" alt-text="Capture d’écran de l’élément de menu contenir l’appareil sur la page de l’appareil." source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
+
+> [!NOTE]
+> Les détails sur un appareil nouvellement contenu peuvent prendre jusqu’à 5 minutes pour atteindre Microsoft Defender pour point de terminaison appareils intégrés.
+
+> [!IMPORTANT]
+> - Si un appareil autonome modifie son adresse IP, tous les appareils intégrés Microsoft Defender pour point de terminaison le reconnaissent et commencent à bloquer les communications avec la nouvelle adresse IP. L’adresse IP d’origine ne sera plus bloquée (il peut prendre jusqu’à 5 minutes pour voir ces modifications).  
+> - Dans les cas où l’adresse IP de l’appareil contenu est utilisée par un autre appareil sur le réseau, un avertissement s’affiche lors du conteneur de l’appareil, avec un lien vers la chasse avancée (avec une requête préremplie). Cela offre une visibilité aux autres appareils utilisant la même adresse IP pour vous aider à prendre une décision consciente si vous souhaitez continuer à contenir l’appareil.
+> - Dans les cas où l’appareil contenu est un appareil réseau, un avertissement s’affiche avec un message indiquant que cela peut entraîner des problèmes de connectivité réseau (par exemple, contenant un routeur qui agit comme une passerelle par défaut). À ce stade, vous pouvez choisir de contenir ou non l’appareil.
+
+Une fois que vous avez contenu un appareil, si le comportement n’est pas comme prévu, vérifiez que le service du moteur de filtrage de base (BFE) est activé sur les appareils intégrés Defender pour point de terminaison.
+
+### <a name="stop-containing-a-device"></a>Arrêter de contenir un appareil
+
+Vous pourrez arrêter de contenir un appareil à tout moment.
+
+1. Sélectionnez l’appareil dans **l’inventaire** des appareils ou ouvrez la page de l’appareil.
+
+2. Sélectionnez **Libérer à partir de l’endiguement** dans le menu d’action. Cette action restaure la connexion de cet appareil au réseau.
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 

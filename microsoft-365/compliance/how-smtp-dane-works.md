@@ -14,20 +14,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment l’authentification DNS SMTP des entités nommées (DANE) fonctionne pour sécuriser les communications par e-mail entre les serveurs de messagerie.
-ms.openlocfilehash: fa982671aebb7c857c1c55af027d10437091e0dd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131017"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015767"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Le protocole SMTP est le protocole principal utilisé pour transférer des messages entre les serveurs de messagerie et n’est pas sécurisé par défaut. Le protocole TLS (Transport Layer Security) a été introduit il y a des années pour prendre en charge la transmission chiffrée des messages via SMTP. Il est couramment utilisé de manière opportuniste plutôt que comme une exigence, laissant beaucoup de trafic de courrier en texte clair, vulnérable à l’interception par des acteurs malveillants. En outre, SMTP détermine les adresses IP des serveurs de destination via l’infrastructure DNS publique, qui est vulnérable à l’usurpation d’identité et aux attaques de l’intercepteur (MITM). Cela a conduit à la création de nombreuses nouvelles normes pour renforcer la sécurité pour l’envoi et la réception d’e-mails, dont l’une est l’authentification DNS des entités nommées (DANE).
-  
-DANE pour SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) utilise la présence d’un enregistrement TLSA (Transport Layer Security Authentication) dans le jeu d’enregistrements DNS d’un domaine pour signaler un domaine et ses serveurs de messagerie prennent en charge DANE. Si aucun enregistrement TLSA n’est présent, la résolution DNS pour le flux de courrier fonctionne comme d’habitude sans aucune tentative de vérification DANE. L’enregistrement TLSA signale en toute sécurité la prise en charge de TLS et publie la stratégie DANE pour le domaine. Ainsi, l’envoi de serveurs de messagerie peut authentifier correctement les serveurs de messagerie de réception légitimes à l’aide de SMTP DANE. Cela le rend résistant aux attaques de rétrograde et MITM. DANE a des dépendances directes sur DNSSEC, qui fonctionne en signant numériquement des enregistrements pour les recherches DNS à l’aide du chiffrement à clé publique. Les vérifications DNSSEC se produisent sur les programmes de résolution DNS récursifs, les serveurs DNS qui effectuent des requêtes DNS pour les clients. DNSSEC garantit que les enregistrements DNS ne sont pas falsifiés et qu’ils sont authentiques.  
+Le protocole SMTP est le protocole principal utilisé pour transférer des messages entre les serveurs de messagerie et n’est pas sécurisé par défaut. Le protocole TLS (Transport Layer Security) a été introduit il y a des années pour prendre en charge la transmission chiffrée des messages via SMTP. Il est couramment utilisé de manière opportuniste plutôt que comme une exigence, laissant beaucoup de trafic de courrier en texte clair, vulnérable à l’interception par des acteurs malveillants. En outre, SMTP détermine les adresses IP des serveurs de destination via l’infrastructure DNS publique, qui est vulnérable à l’usurpation d’identité et aux attaques de l’intercepteur (MITM). Cela a conduit à la création de nombreuses nouvelles normes pour renforcer la sécurité pour l’envoi et la réception d’e-mails, dont l’une est l’authentification DNS des entités nommées (DANE). 
 
 DANE pour SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) utilise la présence d’un enregistrement TLSA (Transport Layer Security Authentication) dans le jeu d’enregistrements DNS d’un domaine pour signaler un domaine et ses serveurs de messagerie prennent en charge DANE. Si aucun enregistrement TLSA n’est présent, la résolution DNS pour le flux de courrier fonctionne comme d’habitude sans aucune tentative de vérification DANE. L’enregistrement TLSA signale en toute sécurité la prise en charge de TLS et publie la stratégie DANE pour le domaine. Ainsi, l’envoi de serveurs de messagerie peut authentifier correctement les serveurs de messagerie de réception légitimes à l’aide de SMTP DANE. Cela le rend résistant aux attaques de rétrograde et MITM. DANE a des dépendances directes sur DNSSEC, qui fonctionne en signant numériquement des enregistrements pour les recherches DNS à l’aide du chiffrement à clé publique. Les vérifications DNSSEC se produisent sur les programmes de résolution DNS récursifs, les serveurs DNS qui effectuent des requêtes DNS pour les clients. DNSSEC garantit que les enregistrements DNS ne sont pas falsifiés et qu’ils sont authentiques.
 
@@ -51,8 +49,8 @@ Il existe quatre champs configurables uniques au type d’enregistrement TLSA :
 
 |Valeur|Acronyme|Description|
 |---|---|---|
-|01<sup></sup>|PKIX-TA|Le certificat utilisé est l’autorité de certification publique d’ancrage de confiance de la chaîne d’approbation X.509.|
-|11<sup></sup>|PKIX-EE|Le certificat vérifié est le serveur de destination ; Les vérifications DNSSEC doivent vérifier son authenticité.|
+|0<sup>1</sup>|PKIX-TA|Le certificat utilisé est l’autorité de certification publique d’ancrage de confiance de la chaîne d’approbation X.509.|
+|1<sup>1</sup>|PKIX-EE|Le certificat vérifié est le serveur de destination ; Les vérifications DNSSEC doivent vérifier son authenticité.|
 |2|DANE-TA|Utilisez la clé privée du serveur de l’arborescence X.509 qui doit être validée par une ancre de confiance dans la chaîne d’approbation. L’enregistrement TLSA spécifie l’ancre d’approbation à utiliser pour valider les certificats TLS pour le domaine.|
 |3|DANE-EE|Correspond uniquement au certificat du serveur de destination.|
 

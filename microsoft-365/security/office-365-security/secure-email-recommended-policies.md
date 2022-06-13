@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a355ed4c31cf2355ee6166987651da092c7afb33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945470"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015211"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -33,7 +33,7 @@ Cet article explique comment implémenter les stratégies d’accès aux identit
 
 Ces recommandations sont basées sur trois niveaux de sécurité et de protection différents qui peuvent être appliqués en fonction de la granularité de vos besoins : **point de départ**, **entreprise** et **sécurité spécialisée**. Vous trouverez plus d’informations sur ces niveaux de sécurité et les systèmes d’exploitation clients recommandés auxquels cet article fait référence dans la [présentation des configurations et des stratégies de sécurité recommandées](microsoft-365-policies-configurations.md).
 
-Ces recommandations nécessitent que vos utilisateurs utilisent des clients de messagerie modernes, notamment Outlook pour iOS et Android sur les appareils mobiles. Outlook pour iOS et Android assurent la prise en charge des meilleures fonctionnalités de Office 365. Ces applications Outlook mobiles sont également conçues avec des fonctionnalités de sécurité qui prennent en charge l’utilisation mobile et collaborent avec d’autres fonctionnalités de sécurité cloud de Microsoft. Pour plus d’informations, consultez [Outlook faq sur iOS et Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Ces recommandations nécessitent que vos utilisateurs utilisent des clients de messagerie modernes, notamment des Outlook pour les iOS et les Android sur les appareils mobiles. Outlook pour les iOS et les Android assurent la prise en charge des meilleures fonctionnalités de Office 365. Ces applications Outlook mobiles sont également conçues avec des fonctionnalités de sécurité qui prennent en charge l’utilisation mobile et collaborent avec d’autres fonctionnalités de sécurité cloud de Microsoft. Pour plus d’informations, consultez [Outlook pour iOS et Android FAQ](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
 ## <a name="update-common-policies-to-include-email"></a>Mettre à jour les stratégies courantes pour inclure l’e-mail
 
@@ -72,7 +72,7 @@ Vous pouvez limiter la possibilité pour les utilisateurs de télécharger des p
 
 Voici les étapes à effectuer :
 
-1. [Connecter à une session PowerShell à distance Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. Si vous n’avez pas encore de stratégie de boîte aux lettres OWA, créez-en une avec l’applet de commande [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) .
 3. Si vous souhaitez autoriser l’affichage des pièces jointes sans téléchargement, utilisez cette commande :
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Découvrez les limites en vigueur pour les fonctionnalités de recherche de contenu et eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 030e4dd16e2b24504632947a336b244a945813ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f20c33781b8dd9f92091e1b0c459137a4edd33ed
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091718"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014869"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
 
@@ -45,14 +45,14 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique|Aucune limite <sup>1</sup>|
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps dans votre organisation.|30|
 |Nombre maximal de recherches à l’échelle de l’organisation qui peuvent être exécutées en même temps.|3|
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. Cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \|Start-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell.|10|
+|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. Cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \|Start-ComplianceSearch** dans Security & Compliance PowerShell.|10|
 |Nombre maximal d’éléments par boîte aux lettres utilisateur qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.|100|
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur qui peuvent éventuellement être affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche. Les éléments les plus récents sont affichés.|1 000 <sup>2</sup>|
 |Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S’il existe plus de 1 000 boîtes aux lettres contenant du contenu qui correspond à la requête de recherche, au maximum, seules les 1 000 boîtes aux lettres ayant le plus de résultats de recherche sont disponibles en préversion.|1 000|
-|Nombre maximal d’éléments trouvés dans SharePoint et OneDrive Entreprise sites affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche. Les éléments les plus récents sont affichés.|200|
-|Nombre maximal de sites (dans SharePoint et OneDrive Entreprise) qui peuvent être aperçus pour les résultats de la recherche. S’il existe plus de 200 sites au total qui contiennent du contenu qui correspond à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats de recherche seront disponibles en préversion.|200|
+|Nombre maximal d’éléments trouvés dans SharePoint et OneDrive Entreprise sites affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche. Les éléments les plus récents sont affichés.|200 |
+|Nombre maximal de sites (dans SharePoint et OneDrive Entreprise) qui peuvent être aperçus pour les résultats de la recherche. S’il existe plus de 200 sites au total qui contiennent du contenu qui correspond à la requête de recherche, seuls les 200 premiers sites avec le plus de résultats de recherche seront disponibles en préversion.|200 |
 |Nombre maximal d’éléments par boîte aux lettres de dossier public qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.|100|
-|Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres de dossiers publics affichées sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.|200|
+|Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres de dossiers publics affichées sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.|200 |
 |Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être affichées en préversion pour les résultats de la recherche. S’il existe plus de 500 boîtes aux lettres de dossiers publics qui contiennent du contenu qui correspond à la requête de recherche, seules les 500 boîtes aux lettres de dossier public ayant le plus de résultats de recherche seront disponibles en préversion.|500|
 |Taille maximale d’un élément qui peut être affiché sur la page d’aperçu.|10 000 000 octets (environ 9,5 Mo)|
 |Nombre maximal de caractères pour la requête de recherche (y compris les opérateurs et les conditions) pour une recherche. <p> **Note:** Cette limite prend effet une fois la requête développée et inclut les caractères de la requête de mot clé, les filtres d’autorisations de recherche appliqués à l’utilisateur et les URL de tous les emplacements de site. Cela signifie que la requête sera développée par rapport à chacun des mots clés. Par exemple, si une requête de recherche comporte 15 mots clés et des paramètres et conditions supplémentaires, la requête est développée 15 fois, chacune avec les autres paramètres et conditions de la requête. Ainsi, même si le nombre de caractères dans la requête de recherche peut être inférieur à la limite, c’est la requête développée qui peut contribuer à dépasser cette limite.|**Boîtes aux lettres :** 10 000. <p> **Sites :** 4 000 lors de la recherche de tous les sites ou 2 000 lors de la recherche d’un maximum de 20 sites. <sup>3</sup>|

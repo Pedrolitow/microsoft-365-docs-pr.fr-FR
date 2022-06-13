@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
+description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports à l’aide de Security & Compliance PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ef806b9be55b8c39ad26f477d35eb076b22c16b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099276"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018072"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
- La création et la création rapide de rapports de recherches de découverte sont souvent une étape importante dans eDiscovery et les investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que sur la richesse et la qualité de vos recherches. Pour vous aider à effectuer cette opération, le Centre de sécurité & conformité PowerShell propose un ensemble d’applets de commande pour automatiser les tâches de recherche de contenu fastidieuses. Ces scripts offrent un moyen rapide et simple de créer un certain nombre de recherches, puis d’exécuter des rapports des résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions de recherches afin de comparer les résultats que chacun produit. Ces scripts peuvent vous aider à identifier et à éliminer rapidement et efficacement vos données.
+ La création et la création rapide de rapports de recherches de découverte sont souvent une étape importante dans eDiscovery et les investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que sur la richesse et la qualité de vos recherches. Pour vous aider à effectuer cette opération, Security & Compliance PowerShell propose un ensemble d’applets de commande pour automatiser les tâches de recherche de contenu fastidieuses. Ces scripts offrent un moyen rapide et simple de créer un certain nombre de recherches, puis d’exécuter des rapports des résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions de recherches afin de comparer les résultats que chacun produit. Ces scripts peuvent vous aider à identifier et à éliminer rapidement et efficacement vos données.
 
 ## <a name="before-you-create-a-content-search"></a>Avant de créer une recherche de contenu
 
@@ -77,9 +77,9 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
 
 3. Enregistrez le fichier Excel en tant que fichier CSV dans un dossier sur votre ordinateur local. Le script que vous créez à l’étape 3 utilise les informations contenues dans ce fichier CSV pour créer les recherches.
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2 : connectez-vous au Centre de sécurité et conformité PowerShell
+## <a name="step-2-connect-to-security--compliance-powershell"></a>Étape 2 : Connecter à La sécurité & conformité PowerShell
 
-L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+L’étape suivante consiste à vous connecter à Security & Compliance PowerShell pour votre organisation. Pour consulter des instructions détaillées, consultez [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Étape 3 : Exécuter le script pour créer et démarrer les recherches
 

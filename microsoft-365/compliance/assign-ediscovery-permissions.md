@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Attribuez les autorisations nécessaires pour effectuer des tâches liées à eDiscovery à l’aide de la portail de conformité Microsoft Purview.
+description: Attribuez les autorisations nécessaires pour effectuer des tâches liées à eDiscovery à l’aide du portail de conformité Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419437"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013373"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Attribuer des autorisations eDiscovery dans le portail de conformité
 
@@ -59,7 +59,7 @@ Le groupe de rôles eDiscovery principal dans le portail de conformité est appe
 
 - Vous devez être membre du groupe de rôles Gestion de l’organisation ou avoir le rôle Gestion des rôles pour attribuer des autorisations eDiscovery dans le portail de conformité.
 
-- Vous pouvez utiliser l’applet de commande [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) dans security & Compliance Center PowerShell pour ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles gestionnaire eDiscovery. Toutefois, vous ne pouvez pas ajouter de groupe de sécurité à extension messagerie au sous-groupe Administrateurs eDiscovery. Pour [plus d’informations, consultez Plus d’informations](#more-information).
+- Vous pouvez utiliser l’applet de commande [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) dans Security & Compliance PowerShell pour ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles eDiscovery Manager. Toutefois, vous ne pouvez pas ajouter de groupe de sécurité à extension messagerie au sous-groupe Administrateurs eDiscovery. Pour [plus d’informations, consultez Plus d’informations](#more-information).
   
 ## <a name="assign-ediscovery-permissions"></a>Attribution d’autorisations de eDiscovery
 
@@ -67,9 +67,11 @@ Le groupe de rôles eDiscovery principal dans le portail de conformité est appe
   
 2. Dans le volet gauche, sélectionnez **Autorisations**.
 
-3. Dans la page **Autorisations & rôles** , sous **Centre de conformité**, cliquez sur **Rôles**.
+3. Dans la page **Autorisations & rôles** , sous **Solutions Microsoft Purview**, cliquez sur **Rôles**.
 
-4. Dans la page **Rôles du Centre de conformité** , sélectionnez **eDiscovery Manager**.
+   Pour accéder directement à cette page, utilisez <https://compliance.microsoft.com/compliancecenterpermissions>.
+
+4. Dans la page **Groupes de rôles pour les solutions Microsoft Purview** , sélectionnez **eDiscovery Manager**.
   
 5. Dans la page de menu volant **eDiscovery Manager** , effectuez l’une des opérations suivantes en fonction des autorisations eDiscovery que vous souhaitez attribuer.
   
@@ -88,17 +90,16 @@ Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le porta
   
 | Rôle | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
-|Consignataire <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Révision <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
-|Déchiffrer RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
-|Rechercher et vider <br/> | <br/> | <br/> |![Coche](../media/checkmark.png)<br/> | <br/> |
-||||||
+|Gestion des cas|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||
+|Communication||![Coche.](../media/checkmark.png)|||
+|Recherche de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
+|Consignataire||![Coche.](../media/checkmark.png)|||
+|Exporter||![Coche.](../media/checkmark.png)|||
+|Suspension|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
+|Aperçu||![Coche.](../media/checkmark.png)|||
+|Révision||![Marque de vérification.](../media/checkmark.png)||![Coche](../media/checkmark.png)|
+|Déchiffrer RMS||![Coche](../media/checkmark.png)|||
+|Rechercher et vider|||![Coche](../media/checkmark.png)||
   
 Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery répertoriés dans le tableau précédent.
 
@@ -106,7 +107,7 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery ré
 
 Ce rôle permet aux utilisateurs de créer, modifier, supprimer et contrôler l’accès aux cas eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité. Comme expliqué précédemment, le rôle Gestion des cas doit être attribué à un utilisateur avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
 
 - [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md)
 
@@ -138,7 +139,7 @@ Pour plus d’informations, consultez [Work with custodians in eDiscovery (Premi
 
 Le rôle permet aux utilisateurs d’exporter les résultats d’une recherche de contenu vers un ordinateur local. Il leur permet également de préparer les résultats de la recherche pour l’analyse dans eDiscovery (Premium).
 
-Pour plus d’informations sur l’exportation des résultats [de recherche, consultez Exporter les résultats de la recherche à partir de portail de conformité Microsoft Purview](export-search-results.md).
+Pour plus d’informations sur l’exportation des résultats de la recherche, consultez [Exporter les résultats de la recherche à partir du portail de conformité Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Suspension
 
@@ -198,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - Étant donné qu’un administrateur eDiscovery peut afficher et accéder à tous les cas eDiscovery (Standard) et eDiscovery (Premium), il peut auditer et superviser tous les cas et les recherches de conformité associées. Cela peut aider à empêcher toute utilisation abusive des recherches de conformité ou des cas eDiscovery. Étant donné que les administrateurs eDiscovery peuvent accéder aux informations potentiellement sensibles dans les résultats d’une recherche de conformité, vous devez limiter le nombre de personnes qui sont des administrateurs eDiscovery.
 
-- **Puis-je ajouter un groupe en tant que membre du groupe de rôles gestionnaire eDiscovery ?** Comme expliqué précédemment, vous pouvez ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles eDiscovery Manager à l’aide de l’applet de commande **Add-RoleGroupMember** dans le Centre de sécurité & conformité PowerShell. Par exemple, vous pouvez exécuter la commande suivante pour ajouter un groupe de sécurité à extension messagerie au groupe de rôles eDiscovery Manager. 
+- **Puis-je ajouter un groupe en tant que membre du groupe de rôles gestionnaire eDiscovery ?** Comme expliqué précédemment, vous pouvez ajouter un groupe de sécurité à extension messagerie en tant que membre du sous-groupe gestionnaires eDiscovery dans le groupe de rôles eDiscovery Manager à l’aide de l’applet de commande **Add-RoleGroupMember** dans Security & Compliance PowerShell. Par exemple, vous pouvez exécuter la commande suivante pour ajouter un groupe de sécurité à extension messagerie au groupe de rôles eDiscovery Manager. 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
@@ -206,6 +207,6 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
     Exchange groupes de distribution et Groupes Microsoft 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security`. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). La création d’un groupe de sécurité à extension messagerie peut prendre jusqu’à 60 minutes avant d’être ajouté au groupe de rôles gestionnaires eDiscovery.
 
-    Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à extension messagerie un administrateur eDiscovery à l’aide de l’applet de commande **Add-eDiscoveryCaseAdmin** dans le Centre de sécurité & conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
+    Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à extension messagerie un administrateur eDiscovery à l’aide de l’applet de commande **Add-eDiscoveryCaseAdmin** dans Security & Compliance PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
 
     Vous ne pouvez pas non plus ajouter un groupe de sécurité à extension messagerie en tant que membre d’un cas.

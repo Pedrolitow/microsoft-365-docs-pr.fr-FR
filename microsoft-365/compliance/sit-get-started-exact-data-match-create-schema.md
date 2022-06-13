@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9eb4e69aa833e8a355115115e1c965e57d65716c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435278"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017161"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 
@@ -50,7 +50,7 @@ Vous pouvez utiliser cet Assistant pour simplifier le processus de création de 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
-1. Dans le portail de conformité Microsoft Purview de votre locataire, accédez à **Data classificationExact** >  **data matchsEDM** >  **schemas**.
+1. Dans le portail de conformité Microsoft Purview pour votre locataire, accédez à La **classification** > **des données Les données exactes correspondent aux schémas** > **EDM**.
 
 2. Choisissez **Créer un schéma EDM** pour ouvrir le menu volant de configuration de l’Assistant de schéma.
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser cet Assistant pour simplifier le processus de création de 
 
 Si vous avez créé le schéma EDM dans l’Assistant Schéma EDM, vous devez exporter le fichier de schéma EDM au format XML. Vous en aurez besoin dans le [hachage et chargez la table source d’informations sensibles pour la phase de correspondance exacte des données avec les types d’informations sensibles](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Pour exporter le fichier de schéma EDM, utilisez la syntaxe suivante :
 
@@ -175,7 +175,7 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 
    Une fois que vous avez créé le fichier de schéma EDM au format XML, vous devez le charger dans le service cloud.
 
-2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+2. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. Pour charger le schéma de base de données, exécutez la commande suivante :
 

@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment rechercher des utilisateurs.
-ms.openlocfilehash: 60b6f0c2da3ab7c26c1473c17856e10366c3e3ed
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: f09a9b4f42ed0298aa0e89dcf0065eea33e2c7d6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022798"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016633"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Rechercher des utilisateurs dans Microsoft 365 Lighthouse
 
@@ -39,7 +40,7 @@ Microsoft 365 Lighthouse vous permet de rechercher un utilisateur spécifique su
 
 Une fois l’utilisateur trouvé, vous pouvez réinitialiser son mot de passe ou bloquer son compte. Pour plus d’informations, consultez [Réinitialiser le mot de passe de l’utilisateur](m365-lighthouse-reset-user-password.md) ou [bloquer la connexion de l’utilisateur Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Gérer Microsoft 365 comptes d’utilisateur](../enterprise/manage-microsoft-365-accounts.md) (article)\
 [Réinitialiser le mot de passe utilisateur](m365-lighthouse-reset-user-password.md) (article)\

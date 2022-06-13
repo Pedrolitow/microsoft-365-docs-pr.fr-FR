@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 956335dd534cc72a47951e2714f261eb460b665d
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: f2613825e0925e1899268b4682f66b7facc9600d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893046"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015001"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -33,14 +33,11 @@ ms.locfileid: "65893046"
 **S’applique à :**
 
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Cet article répertorie les nouvelles fonctionnalités de la dernière version de Microsoft Defender pour Office 365. Les fonctionnalités actuellement en préversion sont indiquées par **(préversion).**
 
 Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
-
-> [!TIP]
-> Vous n’avez pas encore Microsoft Defender pour Office 365 ? [Contactez les ventes pour démarrer une version d’évaluation](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
 Pour plus d’informations sur les nouveautés des autres produits de sécurité Microsoft Defender, consultez :
 
@@ -49,13 +46,14 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender pour Identity](/defender-for-identity/whats-new)
 - [Nouveautés de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+
 ## <a name="june-2022"></a>Juin 2022
 
-- [simplification de l’expérience de mise en quarantaine , partie 2 dans Microsoft 365 Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687) : simplification de l’expérience de mise en quarantaine 2 avec Microsoft Defender pour Office 365.
+- [simplification de l’expérience de mise en quarantaine partie 2 dans Microsoft 365 Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687) : simplification de l’expérience de mise en quarantaine deuxième partie avec Microsoft Defender pour Office 365.
 
 ## <a name="april-2022"></a>Avril 2022
 
-- [Présentation de la table URLClickEvents dans Microsoft 365 Defender Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096) : présentation de la table UrlClickEvents dans la chasse avancée avec Microsoft Defender pour Office 365.
+- [Présentation de la table URLClickEvents dans Microsoft 365 Defender Repérage avancé](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096) : présentation de la table UrlClickEvents dans la chasse avancée avec Microsoft Defender pour Office 365.
 - [Améliorations manuelles de la correction des e-mails](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365) : ajout d’actions manuelles de vidage de messagerie effectuées dans Microsoft Defender pour Office 365 au Centre d’action unifié Microsoft 365 Defender (M365D) à l’aide d’une nouvelle enquête axée sur les actions.
  
 ## <a name="march-2022"></a>Mars 2022
@@ -64,12 +62,12 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 ## <a name="january-2022"></a>Janvier 2022
 
-- [Mises à jour des expériences de repérage et d’investigation pour Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015) : présentation du panneau de synthèse des e-mails pour les expériences dans Defender pour Office 365, ainsi que des mises à jour de l’expérience pour l’Explorateur de menaces et les détections en temps réel.
+- [Mises à jour des expériences de chasse et d’investigation pour Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015) : présentation du panneau de synthèse des e-mails pour les expériences dans Defender pour Office 365, ainsi que des mises à jour de l’expérience pour l’Explorateur de menaces et les détections en temps réel.
 
 ## <a name="october-2021"></a>Octobre 2021
 
 - [Amélioration DKIM de remise avancée](configure-advanced-delivery.md) : ajout de la prise en charge de l’entrée de domaine DKIM dans le cadre de la configuration de simulation d’hameçonnage tierce.
-- [Sécuriser par défaut](secure-by-default.md) : étendu sécurisé par défaut pour les règles de flux de messagerie Exchange (également appelées règles de transport).
+- [Secure by Default](secure-by-default.md) : Extended Secure by Default pour Exchange règles de flux de messagerie (également appelées règles de transport).
 
 ## <a name="september-2021"></a>Septembre 2021
 
@@ -78,7 +76,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - [Vidéo de l’expérience d’administrateur](https://youtu.be/vnar4HowfpY)
   - [Vidéo de l’expérience de l’utilisateur final](https://youtu.be/s-vozLO43rI)
   - D’autres nouvelles fonctionnalités à venir à l’expérience de quarantaine sont décrites dans ce billet de blog : [Simplifier l’expérience de quarantaine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
-- La redirection du portail par défaut commence, redirigeant les utilisateurs de Security & Compliance vers Microsoft 365 Defender <https://security.microsoft.com>. Pour plus d’informations, consultez : [Redirection de comptes à partir du Centre de sécurité et de conformité Office 365 vers Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
+- La redirection du portail par défaut commence, redirigeant les utilisateurs de La sécurité & conformité vers Microsoft 365 Defender<https://security.microsoft.com>. Pour plus d’informations, consultez : [Redirection de comptes depuis Office 365 Centre de sécurité & conformité vers Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -89,28 +87,28 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 - [Améliorations apportées à l’analyse des e-mails dans les enquêtes automatisées](email-analysis-investigations.md)
 - [Livraison avancée](configure-advanced-delivery.md) : introduction d’une nouvelle fonctionnalité de configuration de la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres d’opération de sécurité.
-- [Liens sécurisés pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [liens Coffre pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Nouvelles stratégies d’alerte pour les scénarios suivants : boîtes aux lettres compromises, hameçonnage de formulaires, courriers malveillants remis en raison de remplacements et arrondi à ZAP
   - Activité suspecte de transfert d’e-mail
   - L’utilisateur ne peut pas partager de formulaires et collecter des réponses.
   - Formulaire bloqué en raison d’une tentative d’hameçonnage potentielle
   - Formulaire marqué d'un indicateur et confirmé comme hameçonnage
   - [Nouvelles stratégies d’alerte pour ZAP](../../compliance/new-defender-alert-policies.md)
-- Les alertes Microsoft Defender pour Office 365 sont désormais intégrées à Microsoft 365 Defender - [File d’attente d’alertes unifiées Microsoft 365 Defender et File d’attente d’alertes unifiées](../defender/investigate-alerts.md)
-- [Les balises utilisateur](user-tags.md) sont désormais intégrées aux expériences d’alerte Microsoft Defender pour Office 365, notamment : la file d’attente d’alertes et les détails dans La sécurité Office 365 & conformité, et l’étendue des stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées.
+- Microsoft Defender pour Office 365 alertes sont désormais intégrées dans Microsoft 365 Defender : [Microsoft 365 Defender file d’attente d’alertes unifiées et file d’attente d’alertes unifiées](../defender/investigate-alerts.md)
+- [Les balises utilisateur](user-tags.md) sont désormais intégrées à Microsoft Defender pour Office 365 expériences d’alerte, notamment : la file d’attente des alertes et les détails dans Office 365 Sécurité & Conformité, et l’étendue des stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées.
   - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le portail Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
 ## <a name="june-2021"></a>Juin 2021
 
-- Nouveau paramètre de conseil de sécurité du premier contact dans les stratégies anti-hameçonnage. Ce conseil de sécurité s’affiche lorsque les destinataires reçoivent d’abord un e-mail d’un expéditeur ou qu’ils ne reçoivent pas souvent d’e-mail d’un expéditeur. Pour plus d’informations sur ce paramètre et la façon de le configurer, consultez les articles suivants :
-  - [Premier conseil de sécurité de contact](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- Nouveau paramètre de conseil de sécurité de premier contact dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent d’abord un e-mail d’un expéditeur ou qu’ils ne reçoivent pas souvent d’e-mail d’un expéditeur. Pour plus d’informations sur ce paramètre et la façon de le configurer, consultez les articles suivants :
+  - [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
   - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Avril/mai 2021
 
 - [Page d’entité](mdo-email-entity-page.md) de messagerie : vue unifiée à 360 degrés d’un e-mail avec des informations enrichies sur les menaces, l’authentification et les détections, les détails de la détonation et une toute nouvelle expérience d’aperçu de l’e-mail.
-- [API de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events) : mises à jour de EmailEvents (RecordType 28) pour ajouter l’action de remise, les emplacements de remise d’origine et les derniers, ainsi que les détails de détection mis à jour.
+- [OFFICE 365 API de gestion](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events) : mises à jour de EmailEvents (RecordType 28) pour ajouter l’action de remise, les emplacements de remise d’origine et les derniers, ainsi que les détails de détection mis à jour.
 - [Analyse des menaces pour Defender pour Office 365](/microsoft-365/security/defender/threat-analytics) : affichez les acteurs actifs des menaces, les techniques populaires et les surfaces d’attaque, ainsi que les rapports détaillés des chercheurs Microsoft sur les campagnes en cours.
 
 ## <a name="februarymarch-2021"></a>février/mars 2021
@@ -126,5 +124,5 @@ Saviez-vous que Microsoft Defender pour Office 365 est disponible dans deux plan
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Feuille de route microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
-- [Description du service Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
+- [description du service Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

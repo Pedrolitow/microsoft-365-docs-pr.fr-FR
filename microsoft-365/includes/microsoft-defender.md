@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender conseils importants
-description: Remarque concernant les recommandations Microsoft 365 Defender importantes.
+description: Remarque concernant les conseils importants en matière de Microsoft 365 Defender.
 ms.date: 09/21/2020
 ms.reviewer: ''
 manager: dansimp

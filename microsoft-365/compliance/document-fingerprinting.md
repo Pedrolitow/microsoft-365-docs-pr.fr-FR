@@ -12,22 +12,22 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 description: Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts sous-jacents à l’empreinte digitale de document et explique comment en créer un à l’aide de PowerShell.
-ms.openlocfilehash: 744b96f693676cf94357034a4404f63f0fbd2c45
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 3df4b7cf6f9fa09e81cf326cc58cc8114c025be9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754475"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014473"
 ---
 # <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. Dans le portail de conformité Microsoft Purview, l’empreinte digitale de document vous permet de protéger plus facilement ces informations en identifiant les formulaires standard utilisés dans toute votre organisation. Cette rubrique décrit les concepts sous-jacents à l’empreinte digitale de document et explique comment en créer un à l’aide de PowerShell.
+Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. Dans le portail de conformité Microsoft Purview, l’empreinte digitale de document facilite la protection de ces informations en identifiant les formulaires standard utilisés dans toute votre organisation. Cette rubrique décrit les concepts sous-jacents à l’empreinte digitale de document et explique comment en créer un à l’aide de PowerShell.
 
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Scénario de base de création d’une empreinte numérique de document
 
-L’empreinte digitale de document est une fonctionnalité Protection contre la perte de données Microsoft Purview (DLP) qui convertit un formulaire standard en un type d’informations sensibles, que vous pouvez utiliser dans les règles de vos stratégies DLP. Par exemple, vous pouvez créer une empreinte numérique de document basée sur un modèle de brevet vierge, puis créer une stratégie DLP qui détecte et bloque tous les modèles de brevet sortants comportant des informations sensibles. Si vous le souhaitez, vous pouvez configurer [des conseils de stratégie](use-notifications-and-policy-tips.md) pour informer les expéditeurs qu’ils peuvent envoyer des informations sensibles, et l’expéditeur doit vérifier que les destinataires sont qualifiés pour recevoir les brevets. Ce processus fonctionne avec n'importe quel formulaire texte utilisé dans votre organisation. Voici d'autres exemples de formulaires que vous pouvez télécharger :
+L’empreinte digitale de document est une fonctionnalité de protection contre la perte de données (DLP) Microsoft Purview qui convertit un formulaire standard en un type d’informations sensibles, que vous pouvez utiliser dans les règles de vos stratégies DLP. Par exemple, vous pouvez créer une empreinte numérique de document basée sur un modèle de brevet vierge, puis créer une stratégie DLP qui détecte et bloque tous les modèles de brevet sortants comportant des informations sensibles. Si vous le souhaitez, vous pouvez configurer [des conseils de stratégie](use-notifications-and-policy-tips.md) pour informer les expéditeurs qu’ils peuvent envoyer des informations sensibles, et l’expéditeur doit vérifier que les destinataires sont qualifiés pour recevoir les brevets. Ce processus fonctionne avec n'importe quel formulaire texte utilisé dans votre organisation. Voici d'autres exemples de formulaires que vous pouvez télécharger :
 
 - Formulaires officiels
 - Formulaires de conformité relatifs à la loi américaine HIPAA (Health Insurance Portability Accountability Act)
@@ -68,7 +68,7 @@ L’empreinte digitale de document ne détecte pas les informations sensibles da
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utiliser PowerShell pour créer un package de règles de classification basé sur l’empreinte digitale de document
 
-Actuellement, vous pouvez créer une empreinte digitale de document uniquement dans le [Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Actuellement, vous pouvez créer une empreinte digitale de document uniquement dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 DLP utilise des packages de règles de classification pour détecter le contenu sensible. Pour créer un package de règles de classification basé sur une empreinte digitale de document, utilisez les applets de **commande New-DlpFingerprint** et **New-DlpSensitiveInformationType** . Étant donné que les résultats de **New-DlpFingerprint** ne sont pas stockés en dehors de la règle de classification des données, vous exécutez toujours **New-DlpFingerprint** et **New-DlpSensitiveInformationType** ou **Set-DlpSensitiveInformationType** dans la même session PowerShell. L'exemple suivant crée une empreinte numérique de document à partir du fichier C:\My Documents\Contoso Employee Template.docx. La nouvelle empreinte est stockée en tant que variable pour que vous puissiez l’utiliser avec la cmdlet **New-DlpSensitiveInformationType** dans la même session PowerShell.
 
@@ -87,7 +87,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Vous pouvez maintenant utiliser l’applet de commande **Get-DlpSensitiveInformationType** pour rechercher tous les packages de règles de classification des données DLP. Dans cet exemple, « Contoso Customer Confidential » fait partie de la liste des packages de règles de classification des données.
 
-Enfin, ajoutez le package de règle de classification des données « Confidentiel client Contoso » à une stratégie DLP dans le portail de conformité Microsoft Purview. Cet exemple montre comment ajouter une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
+Enfin, ajoutez le package de règles de classification des données « Confidentiel client Contoso » à une stratégie DLP dans le portail de conformité Microsoft Purview. Cet exemple montre comment ajouter une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True

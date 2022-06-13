@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez la liste des problèmes connus pour Lighthouse par zone de fonctionnalité.
-ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022767"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016721"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problèmes connus liés à Microsoft 365 Lighthouse
 
@@ -73,10 +74,7 @@ Cet article répertorie les problèmes connus pour Microsoft 365 Lighthouse par 
 
 ## <a name="granular-delegated-admin-privileges-gdap"></a>Privilèges d’administrateur délégués granulaires (GDAP)
 
-> [!NOTE]
-> GDAP est actuellement en [préversion technique](/partner-center/announcements/2022-february#6) (préversion publique) pour permettre aux partenaires d’attribuer des autorisations granulaires avant que GDAP soit généralement disponible.
-
-Actuellement, DAP est nécessaire pour intégrer des clients à Lighthouse. Nous vous recommandons également d’établir GDAP avec vos clients pour permettre un accès délégué plus sécurisé. Bien que DAP et GDAP coexistent, GDAP est prioritaire pour les clients où les deux modèles sont en place. Bientôt, les clients disposant uniquement de GDAP (et pas de DAP) pourront intégrer Lighthouse.<br><br>
+Des privilèges d’administrateur délégués granulaires (GDAP) plus une relation de revendeur indirect ou une relation de privilèges d’administrateur délégué (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Si DAP et GDAP coexistent dans un locataire client, les autorisations GDAP sont prioritaires pour les techniciens MSP dans les groupes de sécurité compatibles GDAP. Bientôt, les clients ayant des relations GDAP uniquement (sans relations de revendeur indirect) pourront intégrer Lighthouse.<br><br>
 
 | Problème | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
@@ -88,7 +86,7 @@ Actuellement, DAP est nécessaire pour intégrer des clients à Lighthouse. Nous
 | ---------------- | ---------------- | ---------------- |
 | **Problèmes de traduction** | Les utilisateurs peuvent rencontrer des problèmes de traduction de langue lorsque la langue de leur navigateur, ou leur sélection dans Lighthouse, est autre que l’anglais. | Pour réduire les problèmes de traduction dans Lighthouse, assurez-vous que la sélection de la langue du navigateur correspond à celle du paramètre de langue dans le portail Lighthouse. Pour modifier la sélection de langue dans Lighthouse, connectez-vous à Lighthouse et sélectionnez l’icône d’engrenage en haut de la page pour ouvrir la page paramètres du portail, sélectionnez **Langue + région**, puis sélectionnez la langue et les formats régionaux appropriés. |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
 [Résoudre les messages d’erreur et les problèmes dans Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\

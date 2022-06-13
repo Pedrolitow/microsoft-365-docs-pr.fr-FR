@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment examiner les journaux d’audit.
-ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: a357d6d4383fb967b09d1ce3dc1be68d7fd2ca4f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188765"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017507"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Examiner les journaux d’audit dans Microsoft 365 Lighthouse
 
@@ -94,11 +95,11 @@ Le tableau suivant répertorie les activités capturées dans les journaux d’a
 | **windowsDefenderScan** | Gestion des menaces | Analyse rapide | MEM |
 | **windowsDefenderUpdateSignatures** | Gestion des menaces | Mettre à jour l’antivirus | MEM |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Utilisez Microsoft API Graph pour accéder à d’autres événements d’audit, si nécessaire. Pour plus d’informations, consultez [Vue d’ensemble de la gestion multilocataire à l’aide de l’API Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
 [Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

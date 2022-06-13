@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les règles de Outlook 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 268e50059ad1b128e583a5be383788b545fa6190
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 370fa7cf6e8003954044290b7c19c3d839b0a145
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874093"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016029"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les règles Outlook et les attaques par injection de formulaires personnalisés
 
@@ -155,7 +155,7 @@ Vous devez disposer de droits d’administrateur général pour exécuter le scr
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Comment arrêter et corriger l’attaque Outlook règles et formulaires
 
-Si vous trouvez des preuves de l’une de ces attaques, la correction est simple. Supprimez simplement la règle ou le formulaire de la boîte aux lettres. Vous pouvez le faire avec le client Outlook ou à l’aide de PowerShell distant pour supprimer des règles.
+Si vous trouvez des preuves de l’une de ces attaques, la correction est simple. Supprimez simplement la règle ou le formulaire de la boîte aux lettres. Vous pouvez le faire avec le client Outlook ou en utilisant Exchange PowerShell pour supprimer des règles.
 
 ### <a name="using-outlook"></a>Utilisation de Outlook
 
@@ -171,11 +171,11 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 ### <a name="using-powershell"></a>Utiliser PowerShell
 
-Il existe deux applets de commande PowerShell distantes que vous pouvez utiliser pour supprimer ou désactiver des règles dangereuses. Suivez simplement les étapes.
+Il existe deux Exchange applets de commande PowerShell que vous pouvez utiliser pour supprimer ou désactiver des règles dangereuses. Suivez simplement les étapes.
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Étapes pour les boîtes aux lettres qui se trouvent sur un serveur Exchange
 
-1. Connecter au serveur Exchange à l’aide de PowerShell distant. Suivez les étapes de [Connecter pour Exchange serveurs à l’aide de PowerShell distant](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. Connecter au serveur Exchange à l’aide de PowerShell distant ou de l’interpréteur de commandes de gestion Exchange. Suivez les étapes décrites dans [Connecter pour Exchange serveurs à l’aide de PowerShell distant](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) ou [ouvrez l’interpréteur de commandes de gestion Exchange](/powershell/exchange/open-the-exchange-management-shell).
 
 2. Si vous souhaitez supprimer complètement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez l’applet de commande [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) .
 
@@ -183,7 +183,7 @@ Il existe deux applets de commande PowerShell distantes que vous pouvez utiliser
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Étapes pour les boîtes aux lettres dans Exchange Online
 
-1. Suivez les étapes de [Connecter pour Exchange Online à l’aide de PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Suivez les étapes de [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Si vous souhaitez supprimer complètement une règle unique, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez l’applet de commande [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) .
 

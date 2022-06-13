@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les stratégies d’audit et d’alerte et les demandes de personnes concernées pour surveiller et répondre aux incidents de données personnelles.
-ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953324"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013263"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveiller et répondre aux incidents de confidentialité des données dans votre organisation
 
@@ -61,7 +61,7 @@ Pour vous aider à prendre en main un schéma de surveillance et de réponse dan
 - Quel type de techniques quotidiennes de surveillance, d’investigation et de création de rapports sont disponibles pour les différents types et sources de données ?
 - Quels mécanismes seront nécessaires pour gérer les demandes de personnes concernées (DSR) et toutes les actions correctives, telles que l’anonymisation, la réaction et la suppression.
 
-## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Audit et stratégies d’alerte dans le Centre de sécurité et de conformité
+## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Audit et stratégies d’alerte dans le portail de conformité Microsoft Purview
 
 Consultez ces articles pour configurer l’audit, l’audit avancé et les stratégies d’alerte :
 
@@ -76,7 +76,7 @@ Pour plus d’informations sur la réponse à une DSR dans Microsoft 365, consul
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Gérer les utilisateurs supprimés dans Microsoft Stream
 
-Par Microsoft Stream, lorsqu’un utilisateur est supprimé de Azure Active Directory (Azure AD), si son nom a été associé à une vidéo Stream publiée avant ce point, son adresse e-mail reste associée à la vidéo. Pour le supprimer, consultez [Gérer les utilisateurs supprimés de Microsoft Stream](/stream/managing-deleted-users).
+Pour Microsoft Stream, lorsqu’un utilisateur est supprimé d’Azure Active Directory (Azure AD), si son nom a été associé à une vidéo Stream publiée avant ce point, son adresse e-mail reste associée à la vidéo. Pour le supprimer, consultez [Gérer les utilisateurs supprimés de Microsoft Stream](/stream/managing-deleted-users).
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestion des risques internes en tant qu’outil d’investigation
 

@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Chatter, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: f0de03fb68b78779b6d1ed057a8b462c5c2a901b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 02c0d8a61668a0d3dd3e663c1cb4915be15d9a08
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097555"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015515"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -193,7 +193,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 - Microsoft OneDrive Entreprise
 
-- Microsoft Teams
+- Microsoft Teams
 
 - Microsoft Yammer
 
@@ -403,7 +403,6 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 - YouTube
 
-
 ### <a name="verba"></a>Verba
 
 [Verba](https://www.verba.com) prend en charge les sources de données tierces suivantes :
@@ -476,7 +475,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
 
 Voici les étapes de création et de configuration d’une boîte aux lettres de données tierce pour l’importation de données dans Microsoft 365. Comme expliqué précédemment, les éléments sont importés dans cette boîte aux lettres si le connecteur partenaire ne peut pas mapper l’ID utilisateur de l’élément à un compte d’utilisateur.
 
- **Effectuez ces tâches dans le Centre d'administration Microsoft 365**
+### <a name="complete-these-tasks-in-the-microsoft-365-admin-center"></a>Effectuez ces tâches dans le Centre d'administration Microsoft 365
 
 1. Créez un compte d’utilisateur et attribuez-lui une licence Exchange Online Plan 2. Consultez [Ajouter des utilisateurs à Microsoft 365](../admin/add-users/add-users.md). Une licence Plan 2 est nécessaire pour placer la boîte aux lettres en attente de litige ou activer une boîte aux lettres d’archivage dont le quota de stockage peut atteindre 1,5 To.
 
@@ -485,9 +484,9 @@ Voici les étapes de création et de configuration d’une boîte aux lettres de
     > [!TIP]
     > Notez les informations d’identification pour ce compte d’utilisateur. Vous devez les fournir à votre partenaire, comme décrit à l’étape 4.
 
- **Effectuer ces tâches dans le centre d’administration Exchange**
+### <a name="complete-these-tasks-in-the-exchange-admin-center"></a>Effectuer ces tâches dans le centre d’administration Exchange
 
-1. Masquez la boîte aux lettres de données tierce du carnet d’adresses et d’autres listes d’adresses de votre organisation ; consultez [Gérer les boîtes aux lettres utilisateur](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Vous pouvez également exécuter la commande PowerShell suivante :
+1. Masquez la boîte aux lettres de données tierce du carnet d’adresses et d’autres listes d’adresses de votre organisation ; consultez [Gérer les boîtes aux lettres utilisateur](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Vous pouvez également exécuter la commande [PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) suivante :
 
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
@@ -509,7 +508,7 @@ Voici les étapes de création et de configuration d’une boîte aux lettres de
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Étape 3 : configurer des boîtes aux lettres d’utilisateurs pour les données tierces
 
-L’étape suivante consiste à configurer les boîtes aux lettres des utilisateurs pour prendre en charge les données tierces. Effectuez ces tâches à l’aide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> ou à l’aide des applets de commande Windows PowerShell correspondantes.
+L’étape suivante consiste à configurer les boîtes aux lettres des utilisateurs pour prendre en charge les données tierces. Effectuez ces tâches à l’aide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> ou à l’aide des applets de commande correspondantes.
 
 1. Activer la boîte aux lettres d’archivage pour chaque utilisateur ; consultez [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et [Activer l’archivage à extension automatique](enable-autoexpanding-archiving.md).
 
@@ -562,17 +561,17 @@ Pour révoquer le consentement d’un connecteur de données tiers, vous pouvez 
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Comme indiqué précédemment, les éléments des sources de données tierces sont importés vers les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur partenaire importe l’élément à l’aide d’un schéma requis par l’API Microsoft 365. Le tableau suivant décrit les propriétés de message d’un élément d’une source de données tierces après son importation vers une boîte aux lettres Exchange en tant que message électronique. Le tableau indique également si la propriété de message est obligatoire. Les propriétés obligatoires doivent être renseignées. Si une propriété obligatoire manque à un élément, il n’est pas importé dans Microsoft 365. Le processus d’importation retourne un message d’erreur expliquant pourquoi un élément n’a pas été importé et quelle propriété est manquante.<br/><br/>
+- Comme indiqué précédemment, les éléments des sources de données tierces sont importés vers les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur partenaire importe l’élément à l’aide d’un schéma requis par l’API Microsoft 365. Le tableau suivant décrit les propriétés de message d’un élément d’une source de données tierces après son importation vers une boîte aux lettres Exchange en tant que message électronique. Le tableau indique également si la propriété de message est obligatoire. Les propriétés obligatoires doivent être renseignées. Si une propriété obligatoire manque à un élément, il n’est pas importé dans Microsoft 365. Le processus d’importation retourne un message d’erreur expliquant pourquoi un élément n’a pas été importé et quelle propriété est manquante.
 
-    |**Propriété de message**|**Obligatoire ?**|**Description**|**Exemple de valeur**|
-    |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |Oui  <br/> |Utilisateur qui a initialement créé ou envoyé l’élément dans la source de données tierces. Le connecteur partenaire tente de mapper l’ID utilisateur de l’élément source (par exemple un handle Twitter) à un compte d’utilisateur pour tous les participants (utilisateurs dans les champs FROM et TO). Une copie du message sera importée dans la boîte aux lettres de chaque participant. Si aucun des participants de l’élément ne peut être mappé à un compte d’utilisateur, l’élément est importé dans la boîte aux lettres d’archivage tierce dans Microsoft 365.  <br/> <br/> Le participant identifié comme expéditeur de l’élément doit avoir une boîte aux lettres active dans l’organisation vers laquelle l’élément est importé. Si l’expéditeur ne dispose pas d’une boîte aux lettres active, l’erreur suivante est renvoyée :<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**TO** <br/> |Oui  <br/> |Utilisateur qui a reçu un élément, le cas échéant, pour un élément dans la source de données.  <br/> | `bob@contoso.com` <br/> |
-    |**OBJET** <br/> |Non  <br/> |Objet de l’élément source.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**DATE** <br/> |Oui  <br/> |Date à laquelle l’élément a été initialement créé ou publié dans la source de données client. Par exemple, date à laquelle un message Twitter a été tweeté.  <br/> | `01 NOV 2015` <br/> |
-    |**CORPS** <br/> |Non  <br/> |Contenu du message ou de la publication. Pour certaines sources de données, le contenu de cette propriété peut être identique au contenu de la propriété **SUBJECT**. Pendant le processus d’importation, le connecteur partenaire tente de maintenir une fidélité totale à partir de la source de contenu que possible. Si possible, les fichiers, les graphiques ou tout autre contenu du corps de l’élément source sont inclus dans cette propriété. Sinon, le contenu de l’élément source est inclus dans la propriété **ATTACHMENT**. Le contenu de cette propriété dépend du connecteur partenaire et de la capacité de la plateforme source.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**ATTACHEMENT** <br/> |Non  <br/> |Si un élément de la source de données (tel qu’un tweet dans Twitter ou une conversation de messagerie instantanée) a un fichier joint ou inclut des images, le partenaire se connecte d’abord pour essayer d’inclure des pièces jointes dans la propriété **BODY** . Si cela n’est pas possible, il est ajouté à la propriété ** ATTACHMENT **. Voici d’autres exemples de pièces jointes : mentions J’aime sur Facebook, métadonnées de la source de contenu et réponses à un message ou une publication.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Oui  <br/> | Il s’agit d’une propriété à valeurs multiples, qui est créée et remplie par le connecteur partenaire. Le format de cette propriété est  `IPM.NOTE.Source.Event`. (Cette propriété doit commencer par  `IPM.NOTE`. Ce format est similaire à celui de la classe de  `IPM.NOTE.X` message.) Cette propriété inclut les informations suivantes :  <br/><br/>`Source`: indique la source de données tierce ; par exemple, Twitter, Facebook ou BlackBerry.  <br/> <br/>  `Event`: indique le type d’activité qui a été effectuée dans la source de données tierce qui a produit les éléments ; par exemple, un tweet sur Twitter ou un billet sur Facebook. Les événements sont propres à la source de données.  <br/> <br/>  L’un des objectifs de cette propriété est de filtrer des éléments spécifiques en fonction de la source de données d’origine d’un élément ou en fonction du type d’événement. Par exemple, lors d’une recherche de découverte électronique, vous pouvez créer une requête de recherche afin de trouver tous les tweets qui ont été publiés par un utilisateur spécifique.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+  |Propriété de message|Obligatoire ?|Description|Exemple de valeur|
+  |---|---|---|---|
+  |**FROM**|Oui|Utilisateur qui a initialement créé ou envoyé l’élément dans la source de données tierces. Le connecteur partenaire tente de mapper l’ID utilisateur de l’élément source (par exemple un handle Twitter) à un compte d’utilisateur pour tous les participants (utilisateurs dans les champs FROM et TO). Une copie du message sera importée dans la boîte aux lettres de chaque participant. Si aucun des participants de l’élément ne peut être mappé à un compte d’utilisateur, l’élément est importé dans la boîte aux lettres d’archivage tierce dans Microsoft 365.  <br/> <br/> Le participant identifié comme expéditeur de l’élément doit avoir une boîte aux lettres active dans l’organisation vers laquelle l’élément est importé. Si l’expéditeur ne dispose pas d’une boîte aux lettres active, l’erreur suivante est renvoyée :<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
+  |**TO**|Oui|Utilisateur qui a reçu un élément, le cas échéant, pour un élément dans la source de données.|`bob@contoso.com`|
+  |**OBJET**|Non|Objet de l’élément source.|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
+  |**DATE**|Oui|Date à laquelle l’élément a été initialement créé ou publié dans la source de données client. Par exemple, date à laquelle un message Twitter a été tweeté.|`01 NOV 2015`|
+  |**CORPS**|Non|Contenu du message ou de la publication. Pour certaines sources de données, le contenu de cette propriété peut être identique au contenu de la propriété **SUBJECT**. Pendant le processus d’importation, le connecteur partenaire tente de maintenir une fidélité totale à partir de la source de contenu que possible. Si possible, les fichiers, les graphiques ou tout autre contenu du corps de l’élément source sont inclus dans cette propriété. Sinon, le contenu de l’élément source est inclus dans la propriété **ATTACHMENT**. Le contenu de cette propriété dépend du connecteur partenaire et de la capacité de la plateforme source.|`Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015`|
+  |**ATTACHEMENT**|Non|Si un élément de la source de données (tel qu’un tweet dans Twitter ou une conversation de messagerie instantanée) a un fichier joint ou inclut des images, le partenaire se connecte d’abord pour essayer d’inclure des pièces jointes dans la propriété **BODY** . Si cela n’est pas possible, il est ajouté à la propriété ** ATTACHMENT **. Voici d’autres exemples de pièces jointes : mentions J’aime sur Facebook, métadonnées de la source de contenu et réponses à un message ou une publication.|`image.gif`|
+  |**MESSAGECLASS**|Oui|Il s’agit d’une propriété à valeurs multiples, qui est créée et remplie par le connecteur partenaire. Le format de cette propriété est  `IPM.NOTE.Source.Event`. (Cette propriété doit commencer par  `IPM.NOTE`. Ce format est similaire à celui de la classe de  `IPM.NOTE.X` message.) Cette propriété inclut les informations suivantes :  <br/><br/>`Source`: indique la source de données tierce ; par exemple, Twitter, Facebook ou BlackBerry.  <br/> <br/>  `Event`: indique le type d’activité qui a été effectuée dans la source de données tierce qui a produit les éléments ; par exemple, un tweet sur Twitter ou un billet sur Facebook. Les événements sont propres à la source de données.  <br/> <br/>  L’un des objectifs de cette propriété est de filtrer des éléments spécifiques en fonction de la source de données d’origine d’un élément ou en fonction du type d’événement. Par exemple, lors d’une recherche de découverte électronique, vous pouvez créer une requête de recherche afin de trouver tous les tweets qui ont été publiés par un utilisateur spécifique.|`IPM.NOTE.Twitter.Tweet`|
 
 - Lorsque les éléments sont importés avec succès dans des boîtes aux lettres dans Microsoft 365, un identificateur unique est retourné à l’appelant dans le cadre de la réponse HTTP. Cet identificateur, appelé  `x-IngestionCorrelationID`, peut être utilisé à des fins de dépannage ultérieures par les partenaires pour le suivi de bout en bout des éléments. Nous recommandons que vos partenaires récupèrent ces informations et les conservent de leur côté. Voici un exemple d’une réponse HTTP avec cet identifiant :
 

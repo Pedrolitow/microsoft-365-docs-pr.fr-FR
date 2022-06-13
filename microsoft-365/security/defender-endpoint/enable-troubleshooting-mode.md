@@ -17,18 +17,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 624dbfe677240dd3c16e4d0f59204971f29504b0
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 25f464719bb8877155fa4fd7e591b0ad266c3305
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872571"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015333"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Démarrage avec le mode de résolution des problèmes dans Microsoft Defender pour point de terminaison (préversion)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 >Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -81,7 +81,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 > [!NOTE]
 > Les modifications apportées à la gestion des stratégies sont appliquées à la machine lorsqu’elle est activement en mode de résolution des problèmes. Toutefois, les modifications n’entreront pas en vigueur tant que le mode de résolution des problèmes n’aura pas expiré. En outre, Antivirus Microsoft Defender mises à jour de la plateforme ne seront pas appliquées pendant le mode de résolution des problèmes. Les mises à jour de plateforme seront appliquées une fois le mode de résolution des problèmes terminé par une mise à jour Windows.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 - Appareil exécutant Windows 10 (version 19044.1618 ou ultérieure), Windows 11, Windows Server 2019 ou Windows Server 2022.
 
@@ -89,7 +89,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
   :---|:---|:---
   21H2/SV1|>=22000.593|[KB5011563 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011563)
   20H1/20H2/21H1|>=19042.1620<br/> >=19041.1620<br/> >=19043.1620|[KB5011543 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011543)
-  Windows Server 2022|>=20348.617|[KB5011558 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
+  Windows Server 2022|>=20348.617|[KB5011558 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551 : Catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
 
 - Pour que le mode de dépannage soit appliqué, Microsoft Defender pour point de terminaison doit être inscrit par le locataire et actif sur l’appareil.
@@ -98,7 +98,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 
 ## <a name="enable-the-troubleshooting-mode"></a>Activer le mode de résolution des problèmes
 
-1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>), puis connectez-vous.
+1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>) et connectez-vous.
 
 2. Accédez à la page de l’appareil/machine pour l’appareil que vous souhaitez activer le mode de résolution des problèmes. Sélectionnez **Activer le mode de résolution des problèmes**. Notez que cela nécessite des autorisations « Gérer les paramètres de sécurité dans Security Center » pour Microsoft Defender pour point de terminaison.
 
@@ -138,7 +138,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(3h)
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
@@ -149,7 +149,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | sort by count_
 ```
@@ -162,7 +162,7 @@ ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range
-| where _tsmodeproperties.TroubleshootingStateChangeReason == "Troubleshooting mode started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
 | where count_ > 5          // choose your max # of TS mode instances for your time range
 ```

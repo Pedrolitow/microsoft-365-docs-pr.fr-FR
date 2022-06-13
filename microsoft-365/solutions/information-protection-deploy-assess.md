@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973471"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015035"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -200,9 +200,9 @@ Le portail de conformité Microsoft Purview est pré-chargé avec plus de 100 ty
 
 Si vous devez identifier et protéger un type d’éléments sensibles propre à l’organisation ou régional, tel qu’un format personnalisé pour les ID d’employé ou d’autres informations personnelles non déjà couvertes par un type d’informations sensibles intégré, vous pouvez créer un type d’informations sensibles personnalisé avec les méthodes suivantes :
 
-- PowerShell
+- Centre de conformité et sécurité PowerShell
 - Règles personnalisées avec correspondance exacte des données (EDM)
-- Via l’interface utilisateur d’administration du Centre de conformité, comme indiqué dans [l’article Utiliser le score de conformité et le Gestionnaire de conformité](information-protection-deploy-compliance.md)
+- Via le portail de conformité Microsoft 365 Purview, comme indiqué dans [l’article Utiliser le score de conformité et le Gestionnaire de conformité](information-protection-deploy-compliance.md)
 
 Vous pouvez également personnaliser un type d’informations sensibles intégré existant.
 
@@ -210,8 +210,8 @@ Pour plus d’informations, consultez ces articles :
 
 - [Personnaliser un type d’informations sensibles intégré](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [En savoir plus sur les types d’informations confidentielles](../compliance/sensitive-information-type-learn-about.md).
-- [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](../compliance/create-a-custom-sensitive-information-type.md)
-- [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Créer un type d’informations sensibles personnalisé dans le portail de conformité Microsoft 365 Purview](../compliance/create-a-custom-sensitive-information-type.md)
+- [Créer un type d’informations sensibles personnalisé dans Security & Compliance PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Explorateur de contenu

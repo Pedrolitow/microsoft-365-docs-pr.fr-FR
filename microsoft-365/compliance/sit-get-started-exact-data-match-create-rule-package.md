@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d18147e576db356a5fb7904c3901003bbf48855e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435256"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017183"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 
@@ -60,7 +60,7 @@ Consultez les [définitions d’entité de type d’informations sensibles](sens
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
-1. Dans le portail de conformité Microsoft Purview de votre locataire, accédez aux **correspondances de données** **Data classificationExact** > .
+1. Dans le portail de conformité Microsoft Purview pour votre locataire, accédez aux **correspondances de données exactes** de **classification** >  des données.
 
 2. Choisissez **Types d’informations sensibles EDM** et **Créer un type d’informations sensibles EDM** pour ouvrir l’Assistant de configuration des types d’informations sensibles.
 
@@ -89,7 +89,7 @@ Consultez les [définitions d’entité de type d’informations sensibles](sens
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>Modifier ou supprimer le modèle de type d’informations sensibles
 
-1. Ouvrir les **correspondances de données** **Compliance centerData** >  **classificationExact** > .
+1. Ouvrir la classification des données **du Centre** >  de **conformité** > **Correspondances exactes des données**.
 
 2. Choisissez les **types d’informations sensibles EDM**.
 
@@ -138,7 +138,7 @@ Dans certains cas, vous devrez peut-être identifier certains numéros d’ident
 
 ## <a name="create-a-rule-package-manually"></a>Créer un package de règles manuellement
 
-Cette procédure vous montre comment créer un fichier au format XML appelé package de règles (avec encodage Unicode), puis le charger dans Microsoft Purview à l’aide des applets de commande PowerShell du Centre de conformité.
+Cette procédure vous montre comment créer un fichier au format XML appelé package de règles (avec encodage Unicode), puis le charger dans Microsoft Purview à l’aide des applets de commande PowerShell sécurité & conformité.
 
 > [!NOTE]
 > Si le sit auquel vous mappez peut détecter des preuves corroborantes multi-mots, les éléments secondaires que vous définissez dans un package de règles créé manuellement peuvent être mappés au SIT. Par exemple, le nom `John Smith` ne correspondrait pas en tant qu’élément secondaire, car nous comparions `John` et `Smith` trouvions le contenu séparément au terme `John Smith` chargé dans l’un des champs, si ce champ de preuve corroborant n’était pas mappé à un SIT capable de détecter ce modèle.

@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772103"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016051"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
@@ -115,7 +115,6 @@ Dans la page **Informations sur l’usurpation d’identité** qui s’affiche a
 - **Infrastructure d’envoi** : également appelée _infrastructure_. L’infrastructure d’envoi sera l’une des valeurs suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source.
   - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
-  - Un domaine DKIM vérifié.
 - **Nombre** de messages : nombre de messages provenant de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi à votre organisation au cours des 7 derniers jours.
 - **Dernière connexion** : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
 - **Type d’usurpation** d’identité : l’une des valeurs suivantes :

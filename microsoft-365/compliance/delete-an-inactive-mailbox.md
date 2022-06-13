@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive Microsoft 365, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772377"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017939"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
@@ -38,7 +38,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir une d
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Avant de supprimer une boîte aux lettres inactive
 
-- Vous devez utiliser Exchange Online PowerShell pour supprimer les conservations d’une boîte aux lettres inactive. Vous ne pouvez pas utiliser le centre d’administration Exchange (EAC) ni le portail de conformité Microsoft Purview pour ces procédures. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Vous devez utiliser Exchange Online PowerShell pour supprimer les conservations d’une boîte aux lettres inactive. Vous ne pouvez pas utiliser le centre d’administration Exchange (EAC) ou le portail de conformité Microsoft Purview pour ces procédures. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Vous pouvez copier le contenu d'une boîte aux lettres inactive vers une autre boîte aux lettres avant de supprimer la conservation et de supprimer une boîte aux lettres inactive. Pour plus d’informations, consultez [Restaurer une boîte aux lettres inactive dans Office 365](restore-an-inactive-mailbox.md).
 
@@ -118,7 +118,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>Supprimer une boîte aux lettres inactive d’une stratégie de rétention d’emplacement spécifique
 
-Utilisez [le Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) pour supprimer une boîte aux lettres inactive d’une stratégie de rétention explicite :
+Utilisez [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) pour supprimer une boîte aux lettres inactive d’une stratégie de rétention explicite :
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>

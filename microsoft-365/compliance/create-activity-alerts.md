@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le portail de conformité Microsoft Purview afin que Microsoft 365 vous envoie des notifications par e-mail lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097005"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018094"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
@@ -128,7 +128,7 @@ Pour réactiver une alerte d’activité, répétez ces étapes, puis cliquez su
     |Supprime définitivement (vide) un message électronique de sa boîte aux lettres.  |Messages supprimés de la boîte aux lettres  | Activités de la boîte aux lettres Exchange  |
     |Envoie un e-mail à partir d’une boîte aux lettres partagée.  |Message envoyé à l’aide d’autorisations Envoyer en tant que  <br/> And  <br/> Message envoyé à l’aide d’autorisations Envoyer de la part de  | Activités de la boîte aux lettres Exchange  |
 
-- Vous pouvez également utiliser les applets de commande **New-ActivityAlert** et **Set-ActivityAlert** dans security & Compliance Center PowerShell pour créer et modifier des alertes d’activité. Gardez à l’esprit les éléments suivants si vous utilisez ces applets de commande pour créer ou modifier des alertes d’activité :
+- Vous pouvez également utiliser les applets de commande **New-ActivityAlert** et **Set-ActivityAlert** dans Security & Compliance PowerShell pour créer et modifier des alertes d’activité. Gardez à l’esprit les éléments suivants si vous utilisez ces applets de commande pour créer ou modifier des alertes d’activité :
 
   - Si vous utilisez une applet de commande pour ajouter une activité à l’alerte qui n’est pas répertoriée dans la liste **déroulante Activités** , un message s’affiche dans la page de propriétés de l’alerte indiquant « Cette alerte comporte des opérations personnalisées qui ne sont pas répertoriées dans le sélecteur ».
 

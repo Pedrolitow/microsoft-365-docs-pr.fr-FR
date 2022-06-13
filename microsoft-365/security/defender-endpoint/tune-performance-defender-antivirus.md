@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419591"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013351"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour Antivirus Microsoft Defender
 
@@ -97,7 +97,7 @@ Pour obtenir des exemples décrivant le processus d'« exportation » et de « c
 
 Pour garantir une sortie lisible par l’ordinateur pour l’exportation avec d’autres systèmes de traitement des données, il est recommandé d’utiliser le paramètre -Raw pour Get-MpPerformanceReport. Voir ci-dessous pour plus d’informations
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Antivirus Microsoft Defender analyseur de performances présente les prérequis suivants :
 
@@ -105,7 +105,7 @@ Antivirus Microsoft Defender analyseur de performances présente les prérequis 
 - Version de la plateforme : 4.18.2108.7+
 - Version de PowerShell : PowerShell version 5.1, PowerShell ISE, Remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
-## <a name="powershell-reference"></a>Référence PowerShell
+## <a name="powershell-reference"></a>Informations de référence sur PowerShell
 
 Deux nouvelles applets de commande PowerShell sont utilisées pour optimiser les performances de Antivirus Microsoft Defender :
 
@@ -150,7 +150,7 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 La commande ci-dessus collecte un enregistrement de performances et l’enregistre dans le chemin d’accès spécifié : **.\Defender-scans.etl**.
 
-##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Exemple 2 : Collecter un enregistrement de performances pour une session PowerShell à distance
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Exemple 2 : Collecter un enregistrement des performances pour une session PowerShell distante
 
 ```powershell
 $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
@@ -160,9 +160,11 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 La commande ci-dessus collecte un enregistrement des performances sur Server02 (comme spécifié par l’argument $s de session de paramètre) et l’enregistre dans le chemin d’accès spécifié : **C:\LocalPathOnServer02\trace.etl** sur Server02.
 
 ##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>Exemple 3 : Collecter un enregistrement de performances en mode non interactif
+
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
+
 La commande ci-dessus collecte un enregistrement des performances pour la durée en secondes spécifiée par le paramètre -Seconds. Ceci est recommandé pour les utilisateurs qui effectuent des regroupements par lots qui ne nécessitent aucune interaction ou invite.
 
 #### <a name="parameters-new-mpperformancerecording"></a>Paramètres : New-MpPerformanceRecording
@@ -192,6 +194,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-seconds"></a>-Secondes
+
 Spécifie la durée de l’enregistrement des performances en secondes. Ceci est recommandé pour les utilisateurs qui effectuent des regroupements par lots qui ne nécessitent aucune interaction ou invite.
 
 ```yaml
@@ -280,11 +283,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+
 ##### <a name="example-5-using--raw-parameter"></a>Exemple 5 : Utilisation du paramètre -Raw
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
+
 L’utilisation de -Raw dans la commande ci-dessus spécifie que la sortie doit être lisible par l’ordinateur et facilement convertible en formats de sérialisation tels que JSON
 
 #### <a name="parameters-get-mpperformancereport"></a>Paramètres : Get-MpPerformanceReport
@@ -312,9 +317,10 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+
 ##### <a name="-raw"></a>-Brut
 
-Spécifie que la sortie de l’enregistrement des performances doit être lisible par l’ordinateur et facilement convertible en formats de sérialisation tels que JSON (par exemple, via la commande Convert-to-JSON). Ceci est recommandé pour les utilisateurs intéressés par le traitement par lots avec d’autres systèmes de traitement des données. 
+Spécifie que la sortie de l’enregistrement des performances doit être lisible par l’ordinateur et facilement convertible en formats de sérialisation tels que JSON (par exemple, via la commande Convert-to-JSON). Ceci est recommandé pour les utilisateurs intéressés par le traitement par lots avec d’autres systèmes de traitement des données.
 
 ```yaml
 Type: <SwitchParameter>
@@ -537,4 +543,4 @@ Si vous recherchez des informations relatives à l’antivirus pour d’autres p
 - [Paramètres de stratégie antivirus macOS pour Antivirus Microsoft Defender pour Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux](linux-preferences.md)
 - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
-- [Configurer Defender pour point de terminaison sur Android](android-configure.md) featuresConfigurer - [Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
+- [Configurer Defender pour point de terminaison sur Android fonctionnalités](android-configure.md)- [Configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

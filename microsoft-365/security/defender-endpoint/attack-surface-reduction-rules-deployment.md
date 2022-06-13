@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)
+title: Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)
 description: Fournit une vue d’ensemble et des instructions préalables sur le déploiement de règles de réduction de la surface d’attaque (ASR).
 keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705535"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017428"
 ---
-# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)
 
 Les surfaces d’attaque sont tous les endroits où votre organisation est vulnérable aux cybermenaces et aux attaques. Les surfaces d’attaque de votre organisation incluent tous les emplacements où un attaquant peut compromettre les appareils ou les réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’attaquer. La configuration des règles de réduction de la surface d’attaque (ASR), l’une des nombreuses fonctionnalités de sécurité disponibles dans Microsoft Defender pour point de terminaison, peut vous aider.
 
@@ -46,7 +46,7 @@ Lors de votre préparation initiale, il est essentiel de comprendre les fonction
 >[!IMPORTANT]
 >Ce guide fournit des images et des exemples pour vous aider à décider comment configurer des règles ASR ; ces images et exemples peuvent ne pas refléter les meilleures options de configuration pour votre environnement.
 
-Avant de commencer, passez [en revue la vue d’ensemble de la réduction de la surface d’attaque](overview-attack-surface-reduction.md) et [la démystification des règles de réduction de la surface d’attaque - Partie 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) pour obtenir des informations de base. Pour comprendre les domaines de couverture et d’impact potentiel, familiarisez-vous avec l’ensemble actuel de règles ASR; consultez la [référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md).  Pendant que vous vous familiarisez avec l’ensemble de règles ASR, prenez note des mappages GUID par règle ; voir : [matrice des règles ASR et des GUID](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+Avant de commencer, passez [en revue la vue d’ensemble de la réduction de la surface d’attaque](overview-attack-surface-reduction.md) et [la démystification des règles de réduction de la surface d’attaque - Partie 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) pour obtenir des informations de base. Pour comprendre les domaines de couverture et d’impact potentiel, familiarisez-vous avec l’ensemble actuel de règles ASR; consultez la [référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md).  Pendant que vous vous familiarisez avec l’ensemble de règles ASR, prenez note des mappages GUID par règle ; voir : [règle ASR à matrice GUID](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
 Les règles ASR ne sont qu’une des fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison. Ce document décrit plus en détail le déploiement efficace de règles ASR pour arrêter les menaces avancées telles que les ransomwares gérés par l’homme et d’autres menaces.  
 
@@ -129,13 +129,13 @@ Comme pour toute nouvelle implémentation à grande échelle susceptible d’avo
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 
-[Tester les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Activer les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Opérationnaliser les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Informations de référence sur les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
+[Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>Référence
 

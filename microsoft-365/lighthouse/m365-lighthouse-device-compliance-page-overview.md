@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page conformité des appareils.
-ms.openlocfilehash: e5440d89a34593655076cb91a348a176590dc52f
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 1d00df09231863dd2d7d110dbf9d3c2600f464dc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023698"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017829"
 ---
 # <a name="overview-of-the-device-compliance-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Conformité de l’appareil dans Microsoft 365 Lighthouse
 
@@ -90,7 +91,7 @@ L’onglet Paramètres comprend également les options suivantes :
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Capture d’écran de l’onglet Paramètres." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

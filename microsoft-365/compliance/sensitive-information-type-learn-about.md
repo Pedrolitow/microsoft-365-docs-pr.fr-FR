@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, les numéros de carte de crédit ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971348"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014231"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -130,7 +130,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -171,7 +171,7 @@ Vous pouvez choisir parmi plusieurs options pour créer des types d’informatio
 
 - **Utiliser EDM** : vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de la classification EDM (Exact Data Match). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Consultez [En savoir plus sur les types d’informations sensibles basés sur des correspondances de données exactes](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-- **Utiliser PowerShell** : vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Voir [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **Utiliser PowerShell** : vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Consultez [Créer un type d’informations sensibles personnalisé dans Security & Compliance PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
 > Des niveaux de confiance améliorés sont disponibles pour une utilisation immédiate dans les services de protection contre la perte de données Microsoft Purview, la protection des informations, la conformité des communications, la gestion du cycle de vie des données et la gestion des enregistrements.

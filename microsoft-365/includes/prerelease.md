@@ -1,6 +1,6 @@
 ---
-title: Clause d’exclusion de responsabilité de version pré-publiée de Microsoft Defender pour point de terminaison
-description: Clause d’exclusion de responsabilité pour la version pré-publiée de Microsoft Defender pour Endpoint.
+title: Microsoft Defender pour point de terminaison exclusion de responsabilité en préversion
+description: Exclusion de responsabilité pour la version préliminaire de Microsoft Defender pour point de terminaison.
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment identifier les différents types de conservation qui peuvent être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f38376fe3d7517b877239a9bb6add5fbf9952d59
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097753"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017895"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -130,9 +130,9 @@ Une fois que vous avez obtenu le GUID d’une conservation appliquée à une bo�
 
 ### <a name="ediscovery-holds"></a>Conservations eDiscovery
 
-Exécutez les commandes suivantes dans security & Compliance Center PowerShell pour identifier une conservation eDiscovery appliquée à la boîte aux lettres. Utilisez le GUID (sans inclure le préfixe UniH) pour la conservation eDiscovery que vous avez identifiée à l’étape 1. 
+Exécutez les commandes suivantes dans Security & Compliance PowerShell pour identifier une conservation eDiscovery appliquée à la boîte aux lettres. Utilisez le GUID (sans inclure le préfixe UniH) pour la conservation eDiscovery que vous avez identifiée à l’étape 1. 
 
-Pour vous connecter à l’interface PowerShell du Centre de sécurité et conformité, consultez [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+Pour vous connecter à Security & Compliance PowerShell, consultez [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 La première commande crée une variable qui contient des informations sur la conservation. Cette variable est utilisée dans les autres commandes. La deuxième commande affiche le nom de la casse eDiscovery à qui la conservation est associée. La troisième commande affiche le nom de la conservation et une liste des boîtes aux lettres aux qui s’appliquent.
 
@@ -163,7 +163,7 @@ Si le GUID du In-Place Hold commence par le `cld` préfixe, veillez à inclure l
 
 ### <a name="microsoft-365-retention-policies"></a>Microsoft 365 stratégies de rétention
 
-[Connecter à Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la commande suivante pour identifier la stratégie de rétention Microsoft 365 (emplacement spécifique ou à l’échelle de l’organisation) appliquée à la boîte aux lettres. Utilisez le GUID (sans inclure le préfixe mbx, skp ou grp ou le suffixe d’action) que vous avez identifié à l’étape 1.
+[Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la commande suivante pour identifier la stratégie de rétention Microsoft 365 (emplacement spécifique ou à l’échelle de l’organisation) appliquée à la boîte aux lettres. Utilisez le GUID (sans inclure le préfixe mbx, skp ou grp ou le suffixe d’action) que vous avez identifié à l’étape 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -292,7 +292,7 @@ Lorsqu’une stratégie de rétention n’est plus appliquée à une boîte aux 
 
 Une fois que vous avez identifié les conservations appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l’exclusion d’une boîte aux lettres inactive d’une stratégie de rétention Microsoft 365. Pour plus d’informations sur l’exécution de tâches liées aux conservations, consultez l’une des rubriques suivantes :
 
-- Exécutez la commande [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) dans [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention où la valeur de la propriété *ExchangeLocation* est égale `All`.
+- Exécutez la commande [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) pour exclure une boîte aux lettres d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. Cette commande ne peut être utilisée que pour les stratégies de rétention où la valeur de la propriété *ExchangeLocation* est égale `All`.
 
 - [Modifier la durée de conservation pour une boîte aux lettres inactive](change-the-hold-duration-for-an-inactive-mailbox.md)
 

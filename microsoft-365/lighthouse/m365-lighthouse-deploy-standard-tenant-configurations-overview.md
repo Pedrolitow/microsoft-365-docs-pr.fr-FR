@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
-ms.openlocfilehash: 7cdae46105ad225a284bf0ffa8860ad36ffb8691
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: dab183f644031ec764208cf6b2bb636933eaba38
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839840"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017073"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
@@ -60,7 +61,7 @@ L’onglet Plan de déploiement contient les informations suivantes :
 |Colonne  |Description  |
 |---------|---------|
 |Étape de déploiement     |  Description de l’étape de déploiement.       |
-|Statut     |État de l’étape de déploiement.         |
+|État     |État de l’étape de déploiement.         |
 |Baseline     |Base de référence à partir de laquelle l’étape de déploiement est dérivée.         |
 |Catégorie     | Indique si l’étape de déploiement est associée à la gestion des appareils, de l’identité ou des données.        |
 |Dernière mise à jour    | Date à laquelle l’étape de déploiement a été mise à jour pour la dernière fois.        |
@@ -84,7 +85,7 @@ Pour chaque étape de déploiement, vous pouvez effectuer les actions suivantes 
 | Examiner et déployer    |  Permet à l’utilisateur de : <ul><li>Une fois pris en charge, comparez les paramètres de configuration de l’étape de déploiement avec les paramètres de toutes les stratégies existantes sans déployer les paramètres sur le locataire.<br>Les étapes de déploiement suivantes prennent en charge la comparaison :</br><ul><li>Configurer une stratégie de conformité des appareils pour Windows 10 et versions ultérieures</li><li>Exiger l’authentification multifacteur pour les utilisateurs finaux</li><li>Exiger l’authentification multifacteur pour les administrateurs</li><li>Bloquer l’authentification héritée</li></ul></li> <li>Déployez les paramètres de configuration sur le locataire.</li></ul>**Note:** Les étapes qui ne prennent pas en charge la possibilité de comparer sans déployer les paramètres sur le locataire vous permettent de passer en revue les paramètres de configuration et de les déployer.|
 | Mettre à jour l’état du plan d’action    |  Permet à l’utilisateur de signaler l’état de son plan d’action pour l’étape de déploiement.      |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) (article)\

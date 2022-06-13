@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier Éléments récupérables pour une boîte aux lettres dans Microsoft 365.
-ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100806"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014991"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -64,7 +64,7 @@ Le reste de cette rubrique décrit les procédures pas à pas permettant de cré
 
 La première étape consiste à créer une balise de rétention personnalisée (appelée balise de stratégie de rétention) pour le dossier Éléments récupérables. Comme expliqué précédemment, cette balise de stratégie de rétention déplace les éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables de la boîte aux lettres d’archivage de l’utilisateur. Vous devez utiliser PowerShell pour créer un RPT pour le dossier Éléments récupérables. Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE).
 
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Exécutez la commande suivante pour créer une balise de stratégie de rétention pour le dossier Éléments récupérables : 
 
@@ -137,7 +137,7 @@ La dernière étape consiste à appliquer la nouvelle stratégie de rétention q
 
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>Utilisation du Centre d’administration Exchange pour appliquer la nouvelle stratégie de rétention
 
-1. Accédez à **RecipientsMailboxes** > .
+1. Accédez aux **boîtes aux lettres destinataires** > .
 
 2. Dans l’affichage liste, sélectionnez la boîte aux lettres à laquelle vous souhaitez appliquer la stratégie de rétention, puis cliquez sur **l’icône Modifier** ![l’édition](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
@@ -147,7 +147,7 @@ La dernière étape consiste à appliquer la nouvelle stratégie de rétention q
 
 Vous pouvez aussi utiliser le Centre d’administration Exchange pour appliquer la stratégie de rétention à plusieurs boîtes aux lettres.
 
-1. Accédez à **RecipientsMailboxes** > .
+1. Accédez aux **boîtes aux lettres destinataires** > .
 
 2. Dans la liste affichée, utilisez les touches Maj ou Ctrl pour sélectionner plusieurs boîtes aux lettres.
 
