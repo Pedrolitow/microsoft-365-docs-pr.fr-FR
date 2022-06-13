@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71f704e8215265409e5cf0edbbb3324d8925b0e3
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463206"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014178"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -77,6 +77,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | Aperçu : 2.58+ lorsque vous [Inclure](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Aperçu : 16.0.14931+ lorsque vous [Inclure](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Prise en charge du format PDF](#pdf-support)| Préversion : déploiement sur le [Canal bêta](https://office.com/insider) |  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquettes de confidentialité dans Outlook
@@ -102,6 +103,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
+|[Prise en charge du format PDF](#pdf-support) | En cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 |
 
 **Notes de bas de page :**
@@ -370,6 +372,8 @@ Informations supplémentaires sur l’étiquetage intégré :
 
 - Lorsque l’étiquette obligatoire est en vigueur, les utilisateurs ne peuvent pas supprimer les étiquettes de niveau de confidentialité des documents, mais peuvent modifier une étiquette existante.
 
+- Quand l’étiquetage obligatoire est en vigueur, l’option Imprimer dans un PDF n’est pas disponible lorsqu’un document est étiqueté ou chiffré. Pour plus d’informations, consultez la section [Prise en charge PDF](#pdf-support) sur cette page.
+
 Pour obtenir des instructions sur l’utilisation de ce paramètre, consultez les informations sur [paramètres de stratégie](sensitivity-labels.md#what-label-policies-can-do).
 
 > [!NOTE]
@@ -399,6 +403,38 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 > Si vous avez configuré les paramètres avancés PowerShell **OutlookDefaultLabel** et **DisableMandatoryInOutlook** à l’aide des cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) ou [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
 > 
 > Les valeurs que vous avez choisies pour ces paramètres PowerShell sont reflétées dans la configuration de la stratégie d’étiquette dans le portail de conformité Microsoft Purview, et elles fonctionnent automatiquement pour les applications Outlook qui prennent en charge ces paramètres. Les autres paramètres avancés de PowerShell restent pris en charge pour le client d’étiquetage unifié Azure Information Protection uniquement.
+
+## <a name="pdf-support"></a>Prise en charge du format PDF
+
+Pour l’étiquetage intégré, utilisez les tables de la section [Fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour identifier les versions minimales prises en charge. Le client d’étiquetage unifié Azure Information Protection ne prend pas en charge les PDF dans les applications Office.
+
+Word, Excel et PowerPoint prennent en charge les méthodes suivantes pour convertir un document Office en document PDF :
+
+- Fichier > Enregistrer sous > PDF 
+- Fichier > Exporter > PDF
+- Partager > Envoyer une copie > PDF
+
+Lorsque le fichier PDF est créé, il hérite de l’étiquette avec les marquages de contenu et le chiffrement. Les fichiers PDF chiffrés peuvent être ouverts avec Microsoft Edge sur Windows ou Mac. Pour obtenir plus d’informations et connaître des lecteurs alternatifs, consultez [Quels lecteurs PDF sont pris en charge pour les PDF protégés ?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+
+
+Scénarios PDF non pris en charge :
+
+- Imprimer au format PDF
+    
+    Si les utilisateurs sélectionnent cette option, ils sont avertis que le document perdra la protection de l’étiquette et le chiffrement (s’il est appliqué) et doivent confirmer s’ils veulent continuer. Si votre stratégie d’étiquette de confidentialité requiert une justification pour supprimer une étiquette ou réduire sa classification, cette invite s’affiche.
+    
+    Étant donné que cette option supprime l’étiquette de confidentialité, cette option ne sera pas disponible pour les utilisateurs si vous utilisez l’étiquetage obligatoire. Cette configuration fait référence au paramètre de stratégie d’étiquette de confidentialité qui oblige les utilisateurs à appliquer une étiquette à leurs e-mails et documents.
+
+- Format PDF/A et chiffrement
+    
+     Ce format PDF conçu pour l’archivage à long terme n’est pas pris en charge lorsque l’étiquette applique un chiffrement et empêche les utilisateurs de convertir des documents Office au format PDF.
+    
+- Protection par mot de passe et chiffrement
+    
+    L’option **Fichier** > **Info** > **Protéger le document** > **Chiffrer avec mot de passe** n’est pas prise en charge lorsque l’étiquette du document applique un chiffrement. Dans ce scénario, l’option Chiffrer avec mot de passe devient indisponible pour les utilisateurs.
+
+Pour plus d’informations sur cette fonctionnalité, consultez l’annonce [Appliquer des étiquettes de confidentialité aux fichiers PDF créés avec les applications Office](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
+
 
 ## <a name="auditing-labeling-activities"></a>Audit des activités d’étiquetage
 

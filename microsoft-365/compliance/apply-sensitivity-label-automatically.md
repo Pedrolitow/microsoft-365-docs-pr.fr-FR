@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 9998f71d275d28f10fc950b978cc13ce7fd3c335
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 3124427ff556cd08a56ee83cf8f83bc4dbf8eb72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840428"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017961"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -409,9 +409,9 @@ Vous pouvez également afficher les résultats de votre stratégie d’étiqueta
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>Utiliser PowerShell pour les stratégies d’étiquetage automatique
 
-Vous pouvez utiliser l’[Interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/scc-powershell) pour créer et configurer les stratégies d’étiquetage automatique. Cela signifie que vous pouvez créer des scripts pour une prise en charge complète de la création et de la maintenance de vos stratégies d’étiquetage automatique, ce qui permet également de spécifier plus efficacement plusieurs URL pour les emplacements OneDrive et SharePoint.
+Vous pouvez utiliser l’[Interface PowerShell Sécurité et conformité](/powershell/exchange/scc-powershell) pour créer et configurer les stratégies d’étiquetage automatique. Cela signifie que vous pouvez créer des scripts pour une prise en charge complète de la création et de la maintenance de vos stratégies d’étiquetage automatique, ce qui permet également de spécifier plus efficacement plusieurs URL pour les emplacements OneDrive et SharePoint.
 
-Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter à l’interface PowerShell Sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
 Pour créer une stratégie d’étiquetage automatique :
 

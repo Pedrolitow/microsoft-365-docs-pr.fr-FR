@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: ceb410d09d9869d87681128f2c6e7b45cd8363cb
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d00ba4a93c6ead4ecde75ac5415ccac08812feb3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753669"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013329"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -34,7 +34,7 @@ La Protection contre la perte de données Microsoft Purview peut identifier, sur
 
 ## <a name="keyword-dictionary-limits"></a>Limites du dictionnaire de mots clés
 
-Il existe une limite de 50 types d’informations sensibles basés sur un dictionnaire de mots clés que vous pouvez créer par client. Pour connaître le nombre de dictionnaires de mots clés de votre client, connectez-vous à l’aide des procédures de la section [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell) pour vous connecter à votre client et exécutez ce script PowerShell.
+Il existe une limite de 50 types d’informations sensibles basés sur un dictionnaire de mots clés que vous pouvez créer par client. Pour connaître le nombre de dictionnaires de mots clés de votre client, connectez-vous à l’aide des procédures de la section [Se connecter à l’interface PowerShell Sécurité et conformité](/powershell/exchange/connect-to-scc-powershell) pour vous connecter à votre client et exécutez ce script PowerShell.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -112,7 +112,7 @@ Procédez comme suit pour créer et importer des mots clés pour un dictionnaire
 
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Création d’un dictionnaire de mots clés à partir d’un fichier avec PowerShell
 
-Lorsque vous avez besoin de créer un dictionnaire volumineux, c’est souvent pour utiliser des mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans ce cas, créez un dictionnaire de mots clés contenant une liste de termes inappropriés à rechercher dans les e-mails externes. Vous devez d’abord vous [connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utiliser les mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans cet exemple, vous allez créer un dictionnaire de mots clés, contenant une liste de langages inappropriés à filtrer dans un courrier électronique externe. Vous devez d’abord [vous connecter à l’interface PowerShell Sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
 1. Copiez les mots clés dans un fichier texte et assurez-vous que chaque mot clé est sur une ligne distincte.
 

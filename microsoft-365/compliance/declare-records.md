@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0e8453bee843131a5781318f7adde8d19bb04d92
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286053"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016809"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
@@ -43,7 +43,7 @@ Vous pouvez soit publier ces étiquettes dans une stratégie d’étiquette de r
 
 Par défaut, l’option d’étiquette de rétention permettant de marquer du contenu en tant qu’enregistrement de réglementation n’apparaît pas dans l’assistant de l’étiquette de rétention. Pour afficher cette option, vous devez commencer par exécuter une commande PowerShell:
 
-1. [Connectez-vous au PowerShell du Centre de sécurité et conformité Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connexion à l’interface PowerShell Sécurité et conformité Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Exécutez la l’applet commande suivant :
 

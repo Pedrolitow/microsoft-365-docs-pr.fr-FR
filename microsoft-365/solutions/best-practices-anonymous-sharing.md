@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 783dfce365b34b694f048c7e65e3158678bea244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128585"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017983"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -87,7 +87,8 @@ Lorsque le partage *Tout le monde* est activé pour votre organisation, le lien 
 
 Vous pouvez réduire ce risque en modifiant le paramètre de lien par défaut en un lien qui fonctionne uniquement pour les personnes internes à votre organisation. Les utilisateurs qui souhaitent partager des documents avec des personnes non authentifiées doivent ensuite sélectionner cette option.
 
-Pour définir le lien de partage de fichier et de dossier par défaut pour l’organisation
+Pour définir le lien de partage de fichier et de dossier par défaut pour l’organisation :
+
 1. Ouvrez le Centre d’administration SharePoint, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage**</a>.
 1. Sous **Liens de fichier et de dossier**, sélectionnez **Uniquement les membres de votre organisation**.
 
@@ -95,7 +96,7 @@ Pour définir le lien de partage de fichier et de dossier par défaut pour l’o
 
 1. Sélectionnez **Enregistrer**.
 
-Pour définir le lien de partage de fichier et de dossier par défaut pour un site spécifique
+Pour définir le lien de partage de fichier et de dossier par défaut pour un site spécifique :
 
 1. Ouvrez le Centre d’administration SharePoint, développez **Sites**, puis sélectionnez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a>.
 1. Sélectionnez le site à modifier, puis sélectionnez **Partage**.
@@ -109,7 +110,8 @@ Pour définir le lien de partage de fichier et de dossier par défaut pour un si
 
 Vous pouvez utiliser la [Protection contre la perte de données (DLP) Microsoft Purview](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage non authentifié de contenu sensible. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité, l’étiquette de rétention ou les informations sensibles d’un fichier proprement dit.
 
-Création d’une stratégie DLP
+Création d’une stratégie DLP :
+
 1. Dans le Centre de conformité Microsoft Purview, accédez à la [Page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
 2. Cliquez sur la stratégie **Créer**.
 3. Sélectionnez **Personnaliser**, puis cliquez sur **Suivant**.
@@ -133,18 +135,11 @@ Création d’une stratégie DLP
 
 ## <a name="protect-against-malicious-files"></a>Se protéger contre les fichiers malveillants
 
-Lorsque vous autorisez des utilisateurs anonymes à télécharger des fichiers, vous accroissez le risque de charger un fichier malveillant. Dans Microsoft 365, vous pouvez utiliser la fonctionnalité *Pièces jointes fiables* de Defender pour Office 365 pour analyser automatiquement les fichiers chargés et mettre en quarantaine les fichiers jugés dangereux.
+Lorsque vous autorisez des utilisateurs anonymes à télécharger des fichiers, vous accroissez le risque de charger un fichier malveillant. Dans les organisations disposant de licences Microsoft Defender pour Office 365 Plan 1 ou Plan 2 (par exemple, dans Microsoft 365 E5 ou en tant que module complémentaire), vous pouvez utiliser la fonctionnalité *Pièces jointes fiables* pour faire détoner les fichiers chargés dans un environnement virtuel en mode bac à sable et mettre en quarantaine les fichiers qui sont jugés dangereux.
 
-Activer les pièces jointes fiables
-1. Ouvrez la [page des Pièces jointes fiables ATP](https://protection.office.com/safeattachmentv2) dans le Centre d’administration de la sécurité et de la conformité.
-2. Cliquez sur **Paramètres globaux**.
-3. Activer ATP pour SharePoint, OneDrive et Microsoft Teams.
+Pour obtenir des instructions, voir [Activer les pièces jointes fiables pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
 
-   ![Capture d’écran du paramètre pièces jointes fiables dans le centre de sécurité et conformité.](../media/safe-attachments-setting.png)
-
-4. Vous pouvez également activer les Documents sécurisés, puis cliquer sur **Enregistrer**
-
-Pour obtenir plus d’informations, voir [ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) et [Activer ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) .
+Si vous avez des licences Microsoft 365 A5 ou E5 Sécurité, vous pouvez également activer (et utiliser) la fonctionnalité *Documents sécurisés*. Pour plus d’informations, consultez [Documents sécurisés dans Microsoft 365 A5 ou E5 Sécurité](../security/office-365-security/safe-docs.md).
 
 ## <a name="add-copyright-information-to-your-files"></a>Ajouter des informations de copyright à vos fichiers
 
