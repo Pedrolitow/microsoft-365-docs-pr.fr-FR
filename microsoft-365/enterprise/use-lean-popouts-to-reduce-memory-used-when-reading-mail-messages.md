@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Cet article contient des informations sur l’utilisation de fenêtres contextuelles allégées pour améliorer les performances de téléchargement des messages dans Outlook sur le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40494b43438a491fc200fd19e3015eed58b17493
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9636fd3beafd169358c4b50cafdc4ac0f9494994
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096279"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012679"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utiliser des fenêtres contextuelles maigres pour réduire la mémoire utilisée lors de la lecture des messages électroniques
 
@@ -29,7 +29,7 @@ Cet article contient des informations pour améliorer les performances de télé
 En tant **qu’administrateur d’application** Office 365, **administrateur général** ou **administrateur d’utilisateur**, vous pouvez configurer Outlook sur le web pour fournir _des fenêtres contextuelles maigres_, une version plus petite et moins gourmande en mémoire de certains messages électroniques dans Microsoft Edge ou Internet Explorer. Lorsque des fenêtres contextuelles maigres sont configurées pour Outlook sur le web, les composants rendus côté serveur sont chargés pour optimiser les performances.
   
 > [!NOTE]
-> Depuis mars 2018, les fenêtres contextuelles allégées ne sont pas disponibles pour les messages qui spécifient des restrictions de droits d’utilisation, telles que la Gestion des droits relatifs à l’information (IRM).
+> À compter de mars 2018, les fenêtres contextuelles maigres ne sont pas disponibles pour les messages qui spécifient des restrictions de droits d’utilisation, telles que l’information Rights Management (IRM).
   
 Ces fonctionnalités continueront de fonctionner dans la fenêtre principale, mais ne sont pas disponibles dans les fenêtres contextuelles maigres :
   
@@ -39,7 +39,7 @@ Ces fonctionnalités continueront de fonctionner dans la fenêtre principale, ma
   
 ## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>Pour configurer des fenêtres contextuelles allégées pour tous les utilisateurs au sein de votre organisation Office 365
   
-1. [Connecter à Exchange Online à l’aide de PowerShell à distance](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Exécutez [l’applet de commande Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) avec le paramètre LeanPopoutEnabled comme suit :
 

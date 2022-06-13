@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment déployer Microsoft 365 Lighthouse lignes de base.
-ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 17eda86e80b928fb8b4f56b0e5c719574e4741f5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131127"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012591"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer Microsoft 365 Lighthouse lignes de base
 
@@ -147,7 +148,7 @@ Le déploiement de l’étape de déploiement dans des instances où il existe d
 
 Des paramètres supplémentaires sont fournis pour votre prise de conscience, mais ne vous obligent pas à prendre des mesures.
 
-Pour plus d’informations sur la gestion des conflits de stratégie, consultez [Azure AD documentation sur l’accès conditionnel](/azure/active-directory/conditional-access/).
+Pour plus d’informations sur la gestion des conflits de stratégie, consultez la [documentation sur l’accès conditionnel Azure AD](/azure/active-directory/conditional-access/).
 
 ## <a name="update-deployment-step-status"></a>Mettre à jour l’état de l’étape de déploiement
 
@@ -164,7 +165,7 @@ Pour plus d’informations sur la gestion des conflits de stratégie, consultez 
     | État de l’action                        | Description      |
     |---------------------------------------|----------------------------------------|
     | Pour résoudre le problème                        | État par défaut de toutes les étapes de déploiement qui n’incluent PAS plusieurs processus d’étape de déploiement.      |
-    | Prévu                           | L’étape de déploiement a été planifiée, mais n’a pas encore été effectuée.                                      |
+    | Planifié                           | L’étape de déploiement a été planifiée, mais n’a pas encore été effectuée.                                      |
     | Risque accepté                     | L’utilisateur a accepté le risque qui aurait autrement été évité en appliquant l’étape de déploiement. |
     | Risque résolu par le biais d’un tiers | Le risque a été résolu par l’implémentation d’une application ou d’un logiciel tiers.             |
     | Résolu par d’autres moyens  | Le risque a été résolu par d’autres moyens, tels que l’implémentation d’un outil interne.    |

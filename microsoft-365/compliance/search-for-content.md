@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092246"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009428"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
@@ -70,7 +70,7 @@ La recherche de contenu est facile à utiliser, mais il s’agit également d’
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
 
-Parfois, vous devez effectuer des tâches de recherche de contenu plus avancées, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser des commandes dans le Centre de sécurité & conformité PowerShell. Pour faciliter cette tâche, nous avons créé un certain nombre de scripts PowerShell security & Compliance Center pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
+Parfois, vous devez effectuer des tâches de recherche de contenu plus avancées, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser des commandes dans Security & Compliance PowerShell. Pour faciliter cette tâche, nous avons créé un certain nombre de scripts PowerShell sécurité & conformité pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
 
 - [Recherchez des dossiers de boîte aux lettres et de site spécifiques (appelés](use-content-search-for-targeted-collections.md)  *regroupements ciblés* ) lorsque vous êtes certain que les éléments sensibles à un cas se trouvent dans ce dossier
 

@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Connectez-vous à votre compte Microsoft 365 administrateur pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
-ms.openlocfilehash: f0eff70b2b95c7e318f8a7e52777d4b684dbd8bf
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Connectez-vous à votre compte d’administrateur Microsoft 365 pour définir certains mots de passe utilisateur individuels pour qu’ils n’expirent jamais à l’aide d’Azure AD PowerShell.
+ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61911532"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010187"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 
@@ -36,22 +36,21 @@ Cet article explique comment définir un mot de passe pour qu’un utilisateur i
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. Voir [vue d’ensemble du Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. Consultez [la vue d’ensemble de la Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview).
 
-Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
+Vous devez être [administrateur général ou administrateur de mot de passe](about-admin-roles.md) pour effectuer ces étapes.
 
-Un administrateur global d’un service cloud Microsoft peut utiliser la Azure Active Directory [PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) pour définir les mots de passe de ne pas expirer pour des utilisateurs spécifiques. Vous pouvez également utiliser des cmdlets [AzureAD](/powershell/module/Azuread) pour supprimer la configuration qui n’expire jamais ou pour voir les mots de passe utilisateur qui ne doivent jamais expirer.
+Un administrateur général d’un service cloud Microsoft peut utiliser le [Azure Active Directory PowerShell pour Graph afin](/powershell/azure/active-directory/install-adv2) de définir des mots de passe qui n’expirent pas pour des utilisateurs spécifiques. Vous pouvez également utiliser des applets de commande [AzureAD](/powershell/module/Azuread) pour supprimer la configuration sans expiration ou pour voir quels mots de passe utilisateur sont définis pour ne jamais expirer.
 
 Ce guide s’applique à d’autres fournisseurs, tels que Intune et Microsoft 365, qui s’appuient également sur Azure AD pour les services d’identité et d’annuaire. L’expiration du mot de passe est la seule partie de la stratégie qui peut être modifiée.
 
+## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Comment vérifier la stratégie d’expiration d’un mot de passe
 
-## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Comment vérifier la stratégie d’expiration pour un mot de passe
-
-Pour plus d’informations sur Get-AzureADUser commande dans le module AzureAD, consultez l’article de référence [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
+Pour plus d’informations sur la commande Get-AzureADUser dans le module AzureAD, consultez l’article de référence [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
 
 Exécutez une des commandes suivantes :
 
-- Pour voir si le mot de passe d’un seul utilisateur est définie pour ne jamais expirer, exécutez l’cmdlet suivante à l’aide de l’UPN (par exemple, *user@contoso.onmicrosoft.com*) ou de l’ID utilisateur de l’utilisateur que vous souhaitez vérifier :
+- Pour voir si le mot de passe d’un seul utilisateur est défini pour ne jamais expirer, exécutez l’applet de commande suivante à l’aide de l’UPN (par exemple, *user@contoso.onmicrosoft.com*) ou de l’ID d’utilisateur de l’utilisateur que vous souhaitez vérifier :
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -67,7 +66,7 @@ Exécutez une des commandes suivantes :
     }
     ```
 
-- Pour voir le paramètre Mot de passe n’expire jamais pour tous les **utilisateurs,** exécutez l’cmdlet suivante :
+- Pour que le paramètre **Mot de passe n’expire jamais** pour tous les utilisateurs, exécutez l’applet de commande suivante :
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -75,7 +74,7 @@ Exécutez une des commandes suivantes :
      }
     ```
 
-- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires en Html sur le bureau de l’utilisateur actuel avec le  **nomReportPasswordNeverExpires.html**
+- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires en Html sur le bureau de l’utilisateur actuel avec le nom  **ReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -83,7 +82,7 @@ Exécutez une des commandes suivantes :
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```
 
-- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le **nomReportPasswordNeverExpires.csv**
+- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le nom **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -100,26 +99,26 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- Pour définir les mots de passe de tous les utilisateurs d’une organisation de sorte qu’ils n’expirent jamais, exécutez l’cmdlet suivante :
+- Pour que les mots de passe de tous les utilisateurs d’une organisation n’expirent jamais, exécutez l’applet de commande suivante :
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> Les comptes d’utilisateur configurés avec le `-PasswordPolicies DisablePasswordExpiration` paramètre sont toujours basés sur l’attribut. `pwdLastSet` En fonction de l’attribut, si vous modifiez l’expiration en , tous les mots de passe qui ont un `pwdLastSet` pwdLastSet plus de 90 jours nécessitent que l’utilisateur les modifie la prochaine fois qu’ils se `-PasswordPolicies None` connectent. Cette modification peut affecter un grand nombre d’utilisateurs.
+> Comptes d’utilisateur configurés avec le `-PasswordPolicies DisablePasswordExpiration` paramètre toujours vieillir en fonction de l’attribut `pwdLastSet` . En fonction de l’attribut `pwdLastSet` , si vous remplacez l’expiration `-PasswordPolicies None`par , tous les mots de passe ayant un pwdLastSet de plus de 90 jours nécessitent que l’utilisateur les modifie la prochaine fois qu’il se connecte. Cette modification peut affecter un grand nombre d’utilisateurs.
 
 ### <a name="set-a-password-to-expire"></a>Définir un mot de passe pour expirer
 
 Exécutez une des commandes suivantes :
 
-- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez l’cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
+- Pour définir le mot de passe d’un utilisateur afin que le mot de passe expire, exécutez l’applet de commande suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
     ```
 
-- Pour définir les mots de passe de tous les utilisateurs de l’organisation afin qu’ils expirent, utilisez la cmdlet suivante :
+- Pour définir les mots de passe de tous les utilisateurs de l’organisation afin qu’ils expirent, utilisez l’applet de commande suivante :
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
@@ -129,4 +128,4 @@ Exécutez une des commandes suivantes :
 
 [Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
 [Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
-[Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)
+[Définir la stratégie d’expiration du mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)

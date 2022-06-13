@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites dans Microsoft 365 multigéographique.
-ms.openlocfilehash: 088d6cf861e70185162a74c0b2d9b029849125de
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 99024a93d3eb68103b4f2c5b99e54bfc80201123
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810591"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008554"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuration eDiscovery dans Microsoft 365 Multi-Geo
 
@@ -37,7 +37,7 @@ Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplac
 
 Pour définir le filtre de sécurité de conformité pour une région :
 
-1. [Connectez-vous au centre de conformité Microsoft 365 Security & PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Connecter pour Microsoft 365 La sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Utilisez la syntaxe suivante :
 

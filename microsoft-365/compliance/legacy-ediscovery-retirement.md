@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery et In-Place Hold (et les applets de commande PowerShell correspondantes) dans Exchange Online seront mises hors service au cours du premier semestre 2020. L’applet de commande Search-Mailbox et Microsoft Purview eDiscovery (Premium) v1.0 sont également mis hors service au cours de la même période.
-ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36883f7edae391ff3461d5d6c135112a4f058671
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094479"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012278"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -32,7 +32,7 @@ Au fil des ans, Microsoft a fourni des outils eDiscovery qui vous permettent de 
 
 À la suite de cette fonctionnalité eDiscovery nouvelle et améliorée dans le portail de conformité, nous retirons les fonctionnalités et fonctionnalités liées à eDiscovery suivantes liées à la recherche de contenu de messagerie dans Exchange Online et Microsoft 365 :
 
-- [Conservations eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [In-Place sur place](/exchange/security-and-compliance/create-or-remove-in-place-holds) dans le centre d’administration Exchange.
+- [eDiscovery inaltérable](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [les conservations sur place](/exchange/security-and-compliance/create-or-remove-in-place-holds) dans le centre d’administration Exchange.
 
 - Les Exchange Online applets de commande PowerShell qui prennent en charge In-Place eDiscovery et In-Place Holds (ces applets de commande sont collectivement identifiées en tant que cmdlets **-MailboxSearch*). Cela inclut les applets de commande suivantes :
 
@@ -173,7 +173,7 @@ Il est possible de migrer In-Place recherches et conservations eDiscovery à par
 
 Conformément à l’avis d’origine annoncé le 1er juillet 2017 dans le centre d’administration Exchange, la fonctionnalité In-Place eDiscovery & Hold et les applets de commande **-MailboxSearch correspondantes\*** sont en cours de mise hors service. Ces applets de commande permettent aux utilisateurs de rechercher, de conserver et d’exporter du contenu de boîte aux lettres pour les demandes légales, réglementaires et publiques.
 
-Étant donné que ces fonctionnalités sont désormais disponibles dans le [<span class="underline">portail de conformité</span>](./microsoft-365-compliance-center.md) et Office 365 Security & Compliance Center PowerShell avec des performances et une extensibilité améliorées, vous devez utiliser ces applets de commande améliorées. Ces applets de commande incluent [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule) et [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
+Étant donné que ces fonctionnalités sont désormais disponibles dans le [<span class="underline">portail de conformité</span>](./microsoft-365-compliance-center.md) et Office 365 Security & Compliance PowerShell avec des performances et une extensibilité améliorées, vous devez utiliser ces applets de commande améliorées. Ces applets de commande incluent [<span class="underline">\*-ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule) et [<span class="underline">\*-ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
 
@@ -225,7 +225,7 @@ Le tableau suivant décrit d’autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Aucune</td>
+<td>Aucun</td>
 <td>Il n’existe aucun remplacement direct de cette fonctionnalité, car elle ne fournit pas l’accès à tous les services Microsoft 365. Consultez la FAQ suivante ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
   <tr class=even>
@@ -254,7 +254,7 @@ Oui, bien que nous supprimions la possibilité de créer et de modifier des rech
 
 ## <a name="search-mailbox-cmdlet"></a>applet de commande Search-Mailbox
 
-L’applet **de commande Search-Mailbox** dans Exchange Online PowerShell est mise hors service, comme annoncé à l’origine dans un avertissement dans la sortie de l’applet de commande à compter de 2018. L’applet **de commande Search-Mailbox** a été utilisée à l’origine pour rechercher dans la boîte aux lettres d’un utilisateur et vider le contenu malveillant. Nous vous recommandons de commencer à utiliser les applets de commande **New-ComplianceSearch** et **New-ComplianceSearchAction** dans Office 365 Centre de sécurité & conformité PowerShell pour rechercher et vider le contenu. Pour une expérience de sécurité intégrée, les [<span class="underline">fonctionnalités de sécurité Microsoft 365</span>](../security/index.yml) offrent une protection robuste contre les menaces pour les e-mails et de nombreux autres services Microsoft.
+L’applet **de commande Search-Mailbox** dans Exchange Online PowerShell est mise hors service, comme annoncé à l’origine dans un avertissement dans la sortie de l’applet de commande à compter de 2018. L’applet **de commande Search-Mailbox** a été utilisée à l’origine pour rechercher dans la boîte aux lettres d’un utilisateur et vider le contenu malveillant. Nous vous recommandons de commencer à utiliser les applets de commande **New-ComplianceSearch** et **New-ComplianceSearchAction** dans Office 365 Security & Compliance PowerShell pour rechercher et vider le contenu. Pour une expérience de sécurité intégrée, les [<span class="underline">fonctionnalités de sécurité Microsoft 365</span>](../security/index.yml) offrent une protection robuste contre les menaces pour les e-mails et de nombreux autres services Microsoft.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
 
@@ -348,15 +348,15 @@ eDiscovery (Premium) v1.0, qui est la version d’eDiscovery (Premium) disponibl
 
 Pour déterminer si votre organisation utilise eDiscovery (Premium) v1.0 :
 
-1. Accédez au portail de conformité, sélectionnez **eDiscoveryCore** >  et ouvrez un cas eDiscovery (Standard).<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+1. Accédez au portail de conformité, sélectionnez **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a> et ouvrez un cas eDiscovery (Standard).
 
 1. Si vous voyez le bouton **Basculer vers eDiscovery (Premium),** cliquez dessus pour accéder à la version 1.0 d’eDiscovery (Premium), qui est en cours de mise hors service. La possibilité de créer et de gérer des cas dans eDiscovery (Standard) n’est pas affectée. Seule la possibilité d’ajouter et d’analyser des données de cas dans eDiscovery (Premium) v1.0 (en cliquant sur **Basculer vers eDiscovery (Premium)**) est en cours de mise hors service.
 
 La nouvelle solution eDiscovery (Premium) dans Microsoft 365 (également appelée *eDiscovery (Premium) v2.0)* fournit toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur le consignatateur pour identifier le contenu dans d’autres Microsoft 365  services, collectez ce contenu, puis ajoutez-le à un ensemble de révisions dans lequel les réviseurs peuvent tirer parti des requêtes de recherche rapide, du balisage et des fonctionnalités d’analyse pour aider à éliminer les documents pertinents. eDiscovery (Premium) inclut désormais un traitement amélioré et des visionneuses natives pour les types de fichiers Microsoft et non-Microsoft, une liste complète des types de fichiers est [ici](./supported-filetypes-ediscovery20.md) et les champs de métadonnées pris en charge sont [ici](./document-metadata-fields-in-advanced-ediscovery.md). En outre, la nouvelle solution eDiscovery (Premium) fournit une puissante fonctionnalité de gestion des conservations des conservations des consignats qui vous permet d’appliquer des conservations au contenu de différents services, d’informer les utilisateurs des conservations et de suivre les réponses des consignatateurs, le tout dans un cas eDiscovery (Premium).
 
-Pour accéder à eDiscovery (Premium) v2.0 :
+Pour accéder à la découverte électronique (Premium) v 2.0 :
 
-Accédez au portail de conformité, sélectionnez **eDiscoveryAdvanced** >  et ouvrez un cas eDiscovery (Standard).<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
+Accédez au portail de conformité, sélectionnez **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a> et ouvrez un cas eDiscovery (Standard).
 
 À ce stade, nous vous recommandons de commencer à migrer votre flux de travail eDiscovery vers la nouvelle fonctionnalité eDiscovery (Premium). Si nécessaire, vous pouvez archiver vos cas eDiscovery (Premium) 1.0 en exportant le contenu et en le stockant hors connexion. Bien que vous puissiez toujours accéder à eDiscovery (Premium) v1.0 dans les cas existants jusqu’au 31 décembre 2020, Support Microsoft ne fournira pas de support après le 1er octobre 2020. Pour plus d’informations, consultez la chronologie suivante.
 

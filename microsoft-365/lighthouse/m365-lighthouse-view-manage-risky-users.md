@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher et gérer les utilisateurs à risque.
-ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022930"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011835"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 
@@ -87,7 +88,7 @@ Pour prendre des mesures sur plusieurs utilisateurs affectés à la fois :
 > [!NOTE]
 > Si l’organisation que vous gérez dispose d’une licence Azure AD Premium P2, il est recommandé d’activer les stratégies d’accès conditionnel basées sur les risques utilisateur. Pour plus d’informations, consultez [Accès conditionnel : Accès conditionnel basé sur les risques utilisateur](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
-## <a name="related-content"></a>Contenu associé
-[Tutoriel : Utiliser les détections de risque pour les connexions utilisateur pour déclencher Azure AD l’authentification multifacteur ou les modifications de mot de passe](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
+## <a name="related-content"></a>Contenu connexe
+[Tutoriel : Utiliser les détections de risque pour les connexions utilisateur pour déclencher l’authentification multifacteur Azure AD ou des modifications de mot de passe](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
 [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (article) \
 [Corriger les risques et débloquer les utilisateurs](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (article)

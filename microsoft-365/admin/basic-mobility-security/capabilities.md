@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base vous aident à sécuriser et à gérer les appareils mobiles avec des stratégies qui contrôlent l’accès à l’organisation Microsoft 365 la messagerie et les documents.
-ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55c2a197959e55e2a74f8691b7181f8ee91b0ea9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435852"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010165"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
 La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, iPad, Android et Windows Téléphones utilisés par les utilisateurs sous licence Microsoft 365 de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui peuvent aider à contrôler l’accès aux e-mails et documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
 
 Suivez le guide des systèmes d’exploitation Microsoft Intune pour connaître le minimum de systèmes d’exploitation pris en charge pour les appareils par Mobilité et sécurité de base. Pour plus d’informations, consultez [Intune systèmes d’exploitation pris en charge](/mem/intune/fundamentals/supported-devices-browsers).
 
@@ -63,7 +63,7 @@ Les applications prises en charge pour les différents types d’appareils mobil
 > [!NOTE]
 >
 > - La prise en charge de iOS versions 10.0 et ultérieures inclut les appareils iPhone et iPad.
-> - La gestion des appareils de système d’exploitation BlackBerry n’est pas prise en charge par la sécurité et la mobilité de base. Utilisez BlackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils de système d’exploitation BlackBerry. Les appareils Blackberry exécutant Android système d’exploitation sont pris en charge en tant qu’appareils Android standard
+> - La gestion des appareils de système d’exploitation BlackBerry n’est pas prise en charge par la sécurité et la mobilité de base. Utilisez BlackBerry Business Services cloud (BBCS) de BlackBerry pour gérer les appareils de système d’exploitation BlackBerry. Les appareils Blackberry exécutant Android système d’exploitation sont pris en charge en tant qu’appareils Android standard
 > - Les utilisateurs ne seront pas invités à s’inscrire et ne seront pas bloqués ou signalés pour violation de stratégie s’ils utilisent le navigateur mobile pour accéder à Microsoft 365 SharePoint sites, documents dans Office Online ou courrier électronique dans Outlook Web App.
 
 Le diagramme suivant montre ce qui se passe lorsqu’un utilisateur avec un nouvel appareil se connecte à une application qui prend en charge le contrôle d’accès avec mobilité et sécurité de base. L’utilisateur ne peut pas accéder aux ressources Microsoft 365 dans l’application jusqu’à ce qu’il inscrive son appareil.
@@ -110,7 +110,7 @@ Les sections suivantes répertorient les paramètres de stratégie que vous pouv
 
 |Nom du paramètre|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|Exiger le chiffrement des données sur les <sup>appareils1</sup>|Non|Oui|Oui|
+|Exiger le chiffrement des données sur les appareils<sup>1</sup>|Non|Oui|Oui|
 
 <sup>1</sup> Avec Samsung Knox, vous pouvez également exiger le chiffrement sur les cartes de stockage.
 
@@ -163,7 +163,7 @@ L’option suivante peut empêcher les utilisateurs d’accéder à leur e-mail 
 
 ## <a name="additional-settings"></a>Paramètres supplémentaires
 
-Vous pouvez définir les paramètres de stratégie supplémentaires suivants à l’aide des applets de commande PowerShell du Centre de sécurité & conformité. Si vous souhaitez en savoir plus, veuillez consulter l’article [Centre de sécurité et de conformité PowerShell](/powershell/exchange/scc-powershell).
+Vous pouvez définir les paramètres de stratégie supplémentaires suivants à l’aide des applets de commande PowerShell sécurité & conformité. Si vous souhaitez en savoir plus, veuillez consulter l’article [Centre de conformité et sécurité PowerShell](/powershell/exchange/scc-powershell).
 
 |Nom du paramètre|iOS|Android|
 |---|---|---|
@@ -230,7 +230,7 @@ Vous pouvez définir ces paramètres de stratégie supplémentaires à l’aide 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Réinitialiser un appareil mobile à distance
 
-Si un appareil est perdu ou volé, vous pouvez supprimer les données sensibles de l’organisation et empêcher l’accès aux ressources de votre organisation Microsoft 365 en effectuant une réinitialisation à partir de **portail de conformité Microsoft Purview** >  **Data loss** **preventionDevice** >  management. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
+Si un appareil est perdu ou volé, vous pouvez supprimer des données d’organisation sensibles et empêcher l’accès aux ressources de votre organisation Microsoft 365 en effectuant une réinitialisation à partir du portail  >  de **conformité Microsoft Purview** Protection contre **la** >  perte de données **Gestion** des appareils. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
 
 Pour plus d’informations, consultez [Réinitialiser un appareil mobile dans Mobilité et sécurité de base](wipe-mobile-device.md).
 

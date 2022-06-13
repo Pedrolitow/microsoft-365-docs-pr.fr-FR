@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Les administrateurs peuvent utiliser les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement exchange hybride.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e532dc629df1ddc2e3ceaa94a639723dae483714
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4af64bd77d820b67314bc37e574afdff3966d21b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077812"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014341"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -46,7 +46,7 @@ Voici la configuration requise et les limitations applicables à l’activation 
   
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
-Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) pour rechercher, afficher un aperçu, et exporter des données de conversation Teams pour des utilisateurs locaux. Vous pouvez également utiliser les applets de commande **\*ComplianceSearch** dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Si un utilisateur Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée un stockage dans le cloud pour l’associer aux données de conversations Teams 1xN de l’utilisateur local. Les données de conversations Teams pour les utilisateurs locaux sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) pour rechercher, afficher un aperçu, et exporter des données de conversation Teams pour des utilisateurs locaux. Vous pouvez également utiliser les applets de commande **\*ComplianceSearch** dans Security & Compliance PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 Le graphique suivant montre comment Teams peut consulter les données de conversation pour les utilisateurs locaux pour pouvoir effectuer des recherches, des aperçus et des exportations.
   
@@ -86,9 +86,9 @@ Voici comment utiliser la recherche de contenu dans le portail de conformité Mi
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Utilisation de PowerShell pour la recherche de données de conversations Teams pour les utilisateurs locaux
 
-Vous pouvez utiliser les applets de commande **New-ComplianceSearch** dans Centre de sécurité et de conformité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Vous pouvez utiliser les applets de commande **New-ComplianceSearch** dans Security & Compliance PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande PowerShell suivante pour créer une recherche de contenu qui recherche des données de conversations Teams pour des utilisateurs locaux.
 

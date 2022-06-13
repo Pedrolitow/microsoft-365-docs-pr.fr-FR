@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’Audit (Premium) de Microsoft Purview. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 0a35177c160e80cef2263382e4a1bc04057963b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099672"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012425"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -102,7 +102,7 @@ Pour modifier une stratégie, sélectionnez-la pour afficher la page de menu vol
 
 > [!IMPORTANT]
 >
-> Si vous utilisez la cmdlet **New-UnifiedAuditLogRetentionPolicy** , il est possible de créer une stratégie de rétention de journal d’audit des types d’enregistrements ou des activités qui ne sont pas disponibles dans l’outil **Créer une stratégie de rétention d’audit** dans le tableau de bord. Dans ce cas, vous ne pouvez pas modifier la stratégie (par exemple, modifier la durée de rétention ou ajouter et supprimer des activités) du tableau de bord **Stratégies de rétention d’audit**. Vous pouvez uniquement afficher et supprimer la stratégie dans le centre de conformité. Pour modifier la stratégie, vous devez utiliser la cmdlet [Set-UnifiedAuditLogRetentionPolicy dans le PowerShell du ](/powershell/module/exchange/set-unifiedauditlogretentionpolicy)Centre de sécurité et de conformité.
+> Si vous utilisez la cmdlet **New-UnifiedAuditLogRetentionPolicy** , il est possible de créer une stratégie de rétention de journal d’audit des types d’enregistrements ou des activités qui ne sont pas disponibles dans l’outil **Créer une stratégie de rétention d’audit** dans le tableau de bord. Dans ce cas, vous ne pouvez pas modifier la stratégie (par exemple, modifier la durée de rétention ou ajouter et supprimer des activités) du tableau de bord **Stratégies de rétention d’audit**. Seul le portail de conformité Microsoft Purview vous permet d’afficher et de supprimer la stratégie. Pour modifier la stratégie, vous devez utiliser l’applet de commande [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) dans Security & Compliance PowerShell.>
 >
 > **Conseil :** Un message affiche en haut de la page de menu volant les stratégies qui doivent être modifiées à l’aide de PowerShell.
 
@@ -112,13 +112,13 @@ Pour supprimer une stratégie, cliquez sur **Supprimer** ![ Supprimer l’icône
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Créer et gérer des stratégies de rétention d’un journal d’audit dans PowerShell
 
-Vous pouvez également utiliser le centre de sécurité & conformité PowerShell pour créer et gérer des stratégies de rétention d’un journal d’audit. L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
+Vous pouvez également utiliser Security & Compliance PowerShell pour créer et gérer des stratégies de rétention du journal d’audit. L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
 
 ### <a name="create-an-audit-log-retention-policy-in-powershell"></a>Créer une stratégie de rétention de journal d’audit dans PowerShell
 
 Pour créer une stratégie de rétention de journal d’audit dans PowerShell, suivez ces étapes :
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande suivante pour créer une stratégie de conservation des journaux d'audit :
 
@@ -143,7 +143,7 @@ Pour plus d’informations, voir [New-UnifiedAuditLogRetentionPolicy](/powershel
 
 ### <a name="view-policies-in-powershell"></a>Afficher des stratégies dans PowerShell
 
-Utilisez la cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) dans le centre de sécurité & conformité PowerShell pour afficher des stratégies de rétention de journal d’audit.
+Pour afficher les stratégies de rétention du journal d’audit, utilisez l’applet de commande [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) dans Security & Compliance PowerShell.
 
 Voici un exemple de commande pour l’affichage des paramètres de stratégies de rétention de journal d’audit au sein de votre organisation. Cette commande trie les stratégies de la priorité la plus élevée à la plus faible.
 
@@ -156,11 +156,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>Modifier des stratégies dans PowerShell
 
-Pour modifier une stratégie de rétention de journal d’audit existante, utilisez la cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) dans le centre de sécurité & conformité PowerShell.
+Pour modifier une stratégie de rétention du journal d’audit existante, utilisez l’applet de commande [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) dans Security & Compliance PowerShell.
 
 ### <a name="delete-policies-in-powershell"></a>Supprimer des stratégies dans PowerShell
 
-Pour supprimer une stratégie de rétention de journal d’audit, utilisez la cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) dans le Centre de sécurité & conformité PowerShell. La suppression de la stratégie de votre organisation peut prendre jusqu’à 30 minutes.
+Pour supprimer une stratégie de rétention du journal d’audit, utilisez l’applet de commande [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) dans Security & Compliance PowerShell. La suppression de la stratégie de votre organisation peut prendre jusqu’à 30 minutes.
 
 ## <a name="more-information"></a>Plus d’informations
 

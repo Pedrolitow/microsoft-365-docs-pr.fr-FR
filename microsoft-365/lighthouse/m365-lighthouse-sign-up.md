@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment vous inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172200"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007127"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -30,7 +31,7 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Microsoft 365 Lighthouse est déployé dans le locataire partenaire uniquement&mdash; dans les locataires clients, mais assurez-vous que vous et vos locataires client répondez aux exigences indiquées dans [Microsoft 365 Lighthouse exigences](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse est déployé dans le locataire partenaire non seulement&mdash;dans les locataires clients, mais assurez-vous que vous et vos locataires client répondez aux exigences indiquées dans [Microsoft 365 Lighthouse exigences](m365-lighthouse-requirements.md).
 
 - Vous devez être administrateur général dans le locataire partenaire auquel vous vous connectez.
 
@@ -38,7 +39,7 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
 
 1. Accédez à la Centre d'administration Microsoft 365 et connectez-vous à l’aide <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> des informations d’identification de votre locataire partenaire. 
 
-1. Accédez à **BillingPurchase** >  **ServicesOther** >  Services.
+1. Accédez à **Billing** > **Purchase Services** > **Other Services**.
 
     Si Microsoft 365 Lighthouse ne figure pas dans la liste des services, sélectionnez **Afficher tous les autres produits de services**.
 
@@ -60,12 +61,12 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
     > [!NOTE]
     > Une fois l’inscription terminée, l’apparition des données client dans Lighthouse peut prendre jusqu’à 48 heures.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 [Configurer la sécurité du portail Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)   
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)   
-[Microsoft 365 Lighthouse et Microsoft Defender pour les PME](../security/defender-business/mdb-lighthouse-integration.md) (article)
+[Microsoft 365 Lighthouse et Microsoft Defender pour entreprises](../security/defender-business/mdb-lighthouse-integration.md) (article)

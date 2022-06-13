@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez rencontrer des erreurs lorsque vous configurez des boîtes aux lettres partagées. Essayez ces solutions si vous rencontrez des problèmes avec des boîtes aux lettres partagées.
-ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437104"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008576"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Résoudre les problèmes liés aux boîtes aux lettres partagées
 
@@ -38,9 +38,9 @@ Si vous voyez des messages d’erreur lors de la création ou de l’utilisation
 
 Si vous voyez le message d’erreur, **l’adresse proxy « smtp:<nom\> de boîte aux lettres partagée » est déjà utilisée par les adresses proxy ou LegacyExchangeDN de «\<name> ». Choisissez une autre adresse proxy**. Cela signifie que vous essayez de donner à la boîte aux lettres partagée un nom déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Il existe deux méthodes pour y parvenir :
 
-  - Utiliser Windows PowerShell. Consultez ce billet de blog pour obtenir des instructions : [Créer des boîtes aux lettres partagées avec le même alias dans différents domaines](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
-    
-  - Nommez la deuxième boîte aux lettres partagée quelque chose de différent du début pour contourner l’erreur. Ensuite, dans le centre d’administration, renommez la boîte aux lettres partagée comme vous le souhaitez.
+- Utilisez Exchange Online PowerShell. Consultez ce billet de blog pour obtenir des instructions : [Créer des boîtes aux lettres partagées avec le même alias dans différents domaines](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+
+- Nommez la deuxième boîte aux lettres partagée quelque chose de différent du début pour contourner l’erreur. Ensuite, dans le centre d’administration, renommez la boîte aux lettres partagée comme vous le souhaitez.
 
 ## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Erreur de ne pas avoir d’autorisations d’envoi lors de l’utilisation d’une boîte aux lettres partagée
 

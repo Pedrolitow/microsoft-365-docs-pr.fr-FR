@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647796"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011581"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -45,7 +45,7 @@ Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêch
 - [Les alertes système par défaut](/microsoft-365/compliance/alert-policies#default-alert-policies) ne sont pas déclenchées pour ces scénarios.
 - [AIR et le clustering dans Defender pour Office 365](office-365-air.md) ignorent ces messages.
 - Spécifiquement pour les simulations d’hameçonnage tierces :
-  - [Administration les soumissions](admin-submission.md) génèrent une réponse automatique indiquant que le message fait partie d’une campagne de simulation d’hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et AIR ne seront pas déclenchés. L’expérience des soumissions d’administrateurs affiche ces messages sous la forme d’une menace simulée.
+  - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique indiquant que le message fait partie d’une campagne de simulation d’hameçonnage et n’est pas une menace réelle. Les alertes et AIR ne seront pas déclenchés. L’expérience des soumissions d’administrateurs affiche ces messages sous la forme d’une menace simulée.
   - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du message de rapport [ou des compléments report phishing](enable-the-report-message-add-in.md), le système ne génère pas d’alerte, d’investigation ou d’incident. Les liens ou fichiers ne seront pas détonés, mais le message s’affiche également sous **l’onglet Messages signalés par l’utilisateur** de la page **Soumissions** .
   - [Coffre Liens dans Defender pour Office 365](safe-links.md) ne bloque pas ou ne fait pas exploser les URL spécifiquement identifiées dans ces messages au moment du clic. Les URL sont toujours encapsulées, mais elles ne sont pas bloquées.
   - [Coffre pièces jointes dans Defender pour Office 365](safe-attachments.md) ne détonent pas les pièces jointes dans ces messages.
@@ -54,19 +54,19 @@ Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêch
 
 <sup>\*\*</sup> Vous pouvez contourner ZAP pour les programmes malveillants en créant une stratégie anti-programme malveillant pour la boîte aux lettres SecOps où ZAP pour les programmes malveillants est désactivé. Pour obtenir des instructions, consultez [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md).
 
-Les messages identifiés par la stratégie de remise avancée ne sont pas des menaces de sécurité. Les messages sont donc marqués avec des remplacements système. Administration expériences affichent ces messages en raison d’un remplacement du système de **simulation d’hameçonnage** ou d’un remplacement du système de **boîte aux lettres SecOps**. Les administrateurs peuvent filtrer et analyser ces remplacements système dans les expériences suivantes :
+Les messages identifiés par la stratégie de remise avancée ne sont pas des menaces de sécurité. Les messages sont donc marqués avec des remplacements système. Les expériences d’administration montrent ces messages en raison d’un remplacement du système de **simulation d’hameçonnage** ou d’un remplacement du système de **boîte aux lettres SecOps** . Les administrateurs peuvent filtrer et analyser ces remplacements système dans les expériences suivantes :
 
-- [Détections en temps réel/Explorateur de menaces dans Defender pour Office 365 plan 2](threat-explorer.md) : Administration pouvez filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
-- Page [d’entité e-mail dans l’Explorateur de menaces/Détections en temps réel](mdo-email-entity-page.md) : Administration pouvez afficher un message autorisé par la stratégie d’organisation par la **boîte aux lettres SecOps** ou la **simulation d’hameçonnage** sous **remplacement de locataire** dans la section **Remplacements**.
-- Rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) : Administration pouvez filtrer en **affichant les données par remplacement du système** dans le menu déroulant et sélectionner pour afficher les messages autorisés en raison d’un remplacement du système de simulation d’hameçonnage. Pour afficher les messages autorisés par le remplacement de la boîte aux lettres SecOps, vous pouvez sélectionner **la répartition du graphique par emplacement de livraison** dans le menu déroulant de **répartition du graphique par raison** .
+- [Détections en temps réel de l’Explorateur de menaces dans Defender pour Office 365 plan 2](threat-explorer.md) : l’administrateur peut filtrer sur la **source de remplacement du système** et sélectionner une **simulation d’hameçonnage** ou une **boîte aux lettres SecOps**.
+- La [page d’entité e-mail dans l’Explorateur de menaces/Détections en temps réel](mdo-email-entity-page.md) : l’administrateur peut afficher un message autorisé par la stratégie d’organisation par la **boîte aux lettres SecOps** ou la **simulation d’hameçonnage** sous **remplacement de locataire** dans la section **Remplacements** .
+- Rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) : l’administrateur peut filtrer par **vue les données par remplacement du système** dans le menu déroulant et sélectionner pour afficher les messages autorisés en raison d’un remplacement du système de simulation d’hameçonnage. Pour afficher les messages autorisés par le remplacement de la boîte aux lettres SecOps, vous pouvez sélectionner **la répartition du graphique par emplacement de livraison** dans le menu déroulant de **répartition du graphique par raison** .
 - [Repérage avancé dans Microsoft Defender pour point de terminaison](../defender-endpoint/advanced-hunting-overview.md) : La simulation d’hameçonnage et les remplacements de système de boîte aux lettres SecOps s’affichent en tant qu’options dans OrgLevelPolicy dans EmailEvents.
-- [Vues de campagne](campaigns.md) : Administration pouvez filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
+- [Vues de campagne](campaigns.md) : l’administrateur peut filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Livraison avancée** , ouvrez <https://security.microsoft.com/advanceddelivery>.
 
-- Pour vous connecter à l’interface PowerShell du Centre de sécurité et conformité, consultez [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+- Pour vous connecter à Security & Compliance PowerShell, consultez [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 - Vous devez disposer d’autorisations pour pouvoir effectuer les procédures décrites dans cet article :
   - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie de remise avancée, vous devez être membre du groupe de **rôles Administrateur** de la sécurité dans le **portail Microsoft 365 Defender** et membre du groupe de **rôles Gestion de l’organisation** dans **Exchange Online**.
@@ -146,9 +146,9 @@ En plus des deux scénarios que la stratégie de remise avancée peut vous aider
 
 - **Faux positifs en cours d’examen** : vous souhaiterez peut-être autoriser temporairement certains messages qui sont toujours analysés par Microsoft via [des soumissions d’administrateurs](admin-submission.md) à signaler les messages connus qui sont incorrectement marqués comme mauvais pour Microsoft (faux positifs). Comme pour tous les remplacements, nous recommandons **_vivement_** que ces allocations soient temporaires.
 
-## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procédures PowerShell du Centre de sécurité & conformité pour les boîtes aux lettres SecOps dans la stratégie de remise avancée
+## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procédures PowerShell de sécurité & conformité pour les boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-Dans security & Compliance Center PowerShell, les éléments de base des boîtes aux lettres SecOps dans la stratégie de remise avancée sont les suivants :
+Dans Security & Compliance PowerShell, les éléments de base des boîtes aux lettres SecOps dans la stratégie de remise avancée sont les suivants :
 
 - **Stratégie de remplacement SecOps** : contrôlée par les **\*applets de commande -SecOpsOverridePolicy** .
 - **Règle de remplacement SecOps** : contrôlée par les **\*applets de commande -SecOpsOverrideRule** .
@@ -279,9 +279,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procédures PowerShell du Centre de sécurité & conformité pour les simulations de hameçonnage tierces dans la stratégie de remise avancée
+## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Sécurité & procédures PowerShell de conformité pour les simulations d’hameçonnage tierces dans la stratégie de remise avancée
 
-Dans Security & Compliance Center PowerShell, les éléments de base des simulations de hameçonnage tierces dans la stratégie de remise avancée sont les suivants :
+Dans Security & Compliance PowerShell, les éléments de base des simulations d’hameçonnage tierces dans la stratégie de remise avancée sont les suivants :
 
 - **Stratégie de remplacement de simulation d’hameçonnage** : contrôlée par les **\*applets de commande -PhishSimOverridePolicy** .
 - **Règle de substitution de simulation d’hameçonnage** : contrôlée par les **\*applets de commande -PhishSimOverrideRule** .
