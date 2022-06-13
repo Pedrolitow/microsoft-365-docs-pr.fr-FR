@@ -13,14 +13,16 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 8e5664149ef571a8fed3a1aee433fa97c9ed8ca4
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760424"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044222"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="summary"></a>Résumé
 
@@ -30,7 +32,7 @@ L’[implémentation du service TLS 1.0 de Microsoft](https://support.microsoft.
 
 Pour plus d’informations sur la marche à suivre pour supprimer les dépendances TLS 1.0 et 1.1, consultez le livre blanc suivant : [Solving the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266) (en anglais uniquement).
 
-Après la mise à niveau vers TLS 1.2, assurez-vous que les suites de chiffrement que vous utilisez sont prises en charge par Azure Front Door. Microsoft 365 et Azure Front Door présentent de légères différences dans la prise en charge de la suite de chiffrement. Pour plus d’informations, consultez [Quelles sont les suites de chiffrement actuelles prises en charge par Azure Front Door ?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
+Après la mise à niveau vers TLS 1.2, assurez-vous que les suites de chiffrement que vous utilisez sont prises en charge par Azure Front Door. Microsoft 365 et Azure Front Door présentent de légères différences dans la prise en charge de la suite de chiffrement. Pour plus d’informations, consultez [Quelles sont les suites de chiffrement actuelles prises en charge par Azure Front Door ?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites)
 
 ## <a name="more-information"></a>Informations supplémentaires
 

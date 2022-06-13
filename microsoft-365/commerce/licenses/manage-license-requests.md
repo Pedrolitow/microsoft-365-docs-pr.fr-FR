@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser des demandes de licence d’utilisateurs pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/22/2022
-ms.openlocfilehash: 802b84445c83c2831e5fd88598cc00fb8b0ab867
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098689"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044244"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
@@ -50,7 +50,7 @@ Si votre organisation a son propre processus de demande, vous pouvez l’utilise
 > [!IMPORTANT]
 > Si vous utilisez votre propre processus de demande, aucune demande n’est affichée sous l’onglet **Demandes** . Les demandes existantes avant d’ajouter votre message continuent d’apparaître jusqu’à ce que vous les approuviez ou les refusiez.
 
-1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , puis sélectionnez l’onglet **Demandes**.
+1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a> **de facturation** > , puis sélectionnez l’onglet **Demandes**.
 2. Sélectionnez **à la place Utiliser votre processus de demande existant**.
 3. Dans le volet droit, dans la zone **Message** , tapez le message que les utilisateurs doivent voir lorsqu’ils demandent une licence. Si vous souhaitez également inclure un lien vers votre stratégie d’organisation ou toute autre documentation, entrez l’URL dans la zone de texte **Lien vers la documentation (facultatif** ).
 4. Sélectionnez **Enregistrer**.
@@ -59,14 +59,14 @@ Lorsque vous revenez à la liste **des demandes** , vous voyez le message **Que 
 
 ## <a name="stop-using-your-own-request-process"></a>Arrêter d’utiliser votre propre processus de demande
 
-1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , puis sélectionnez l’onglet **Demandes**.
+1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a> **de facturation** > , puis sélectionnez l’onglet **Demandes**.
 2. Sélectionnez **à la place Utiliser votre processus de demande existant**.
 3. Dans le volet droit, désactivez la case à cocher **Utiliser le processus de demande de mon organisation** .
 4. Sélectionnez **Enregistrer**.
 
 ## <a name="approve-or-deny-a-license-request"></a>Approuver ou refuser une demande de licence
 
-1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , puis sélectionnez l’onglet **Demandes**.
+1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a> **de facturation** > , puis sélectionnez l’onglet **Demandes**.
 2. Sélectionnez la ligne qui contient la demande que vous souhaitez examiner. Le volet droit affiche des détails sur les utilisateurs qui souhaitent obtenir des licences pour le produit.
 3. Pour refuser l’intégralité de la demande, sélectionnez **Ne pas approuver**, puis, dans la boîte de dialogue, **sélectionnez Ne pas approuver**.
 4. Pour refuser certains utilisateurs pour la demande, mais approuver d’autres utilisateurs, sélectionnez le X par le nom des utilisateurs que vous souhaitez supprimer. Leurs noms sont déplacés sous **Ne pas affecter à ces utilisateurs**.
@@ -81,4 +81,5 @@ Lorsque vous revenez à la liste **des demandes** , vous voyez le message **Que 
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Déplacer des utilisateurs vers un autre abonnement](../subscriptions/move-users-different-subscription.md) (article)\
-[Acheter ou supprimer des licences d’abonnement](buy-licenses.md) (article)
+[Acheter ou supprimer des licences d’abonnement](buy-licenses.md) (article)\
+[FAQ sur l’achat en libre-service](../subscriptions/self-service-purchase-faq.yml)

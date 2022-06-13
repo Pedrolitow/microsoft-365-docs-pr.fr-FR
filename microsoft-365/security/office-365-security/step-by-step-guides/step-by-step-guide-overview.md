@@ -15,14 +15,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: overview
 ms.technology: mdo
-ms.openlocfilehash: cd350cb80930f3e10d159605059cf61e9559beb3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6c31edcbcc523ce1946bb01e723541e48699c1b5
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015290"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043440"
 ---
 # <a name="welcome-to-the-microsoft-defender-for-office-365-step-by-step-guides"></a>Bienvenue dans les Microsoft Defender pour Office 365 guides pas à pas
 

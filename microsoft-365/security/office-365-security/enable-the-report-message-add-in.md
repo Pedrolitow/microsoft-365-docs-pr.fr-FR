@@ -17,16 +17,16 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les compléments d’hameçonnage de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: b0882a37161989248b8c970a5dbe01efc0bcff65
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144836"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043760"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -55,11 +55,11 @@ Si vous êtes administrateur général ou administrateur Exchange Online et que 
 - Le complément Message de rapport et le complément Report Phishing fonctionnent avec la plupart des abonnements Microsoft 365 et les produits suivants :
   - Outlook sur le web
   - Outlook 2013 SP1 ou version ultérieure
-  - Outlook 2016 pour Mac
+  - Outlook 2016 pour Mac
   - Outlook inclus avec les applications Microsoft 365 pour Enterprise
   - application Outlook pour iOS et Android
 
-- Les deux compléments ne sont pas disponibles pour les boîtes aux lettres partagées.
+- Les deux compléments ne sont pas disponibles pour les boîtes aux lettres partagées, de groupe ou déléguées (les compléments seront grisés).
 
 - Les deux compléments ne sont pas disponibles pour les boîtes aux lettres Exchange locales.
 

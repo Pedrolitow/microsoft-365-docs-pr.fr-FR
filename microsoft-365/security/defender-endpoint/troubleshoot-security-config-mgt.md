@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: fbfb20b233f1f942faaddd2a235a55beeb48d2c6
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873785"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043119"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Gérer Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -75,16 +75,17 @@ Pour inscrire correctement des appareils auprès de Azure Active Directory, vous
 
 Par le biais du portail Microsoft Defender pour point de terminaison, les administrateurs de sécurité peuvent désormais résoudre les problèmes de gestion de la sécurité pour l’intégration Microsoft Defender pour point de terminaison.
 
-Dans **l’inventaire des appareils points** \> de terminaison, la colonne **Managed By** a été ajoutée au filtre par canal de gestion (par exemple, MEM).
+Dans **la gestion de la configuration**, le widget **de gestion de la sécurité intégré via MDE** a été ajouté pour présenter la répartition de l’état d’inscription des appareils gérés par Microsoft Defender pour point de terminaison.
 
-:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="Page d’inventaire des appareils" lightbox="./images/device-inventory-mde-error.png":::
+Pour afficher la liste de tous les appareils gérés par Microsoft Defender pour point de terminaison, sélectionnez **Afficher tous les appareils gérés par MDE**.
 
-Pour afficher la liste de tous les appareils qui ont échoué à la gestion de la sécurité pour Microsoft Defender pour point de terminaison processus d’intégration, filtrez la table par **erreur MDE**.
-
-Dans la liste, sélectionnez un appareil spécifique pour afficher les détails de résolution des problèmes dans le panneau latéral, en pointant sur la cause racine de l’erreur et la documentation correspondante.
+Dans la liste, si l’état d’inscription d’un appareil n’est pas « Réussite », sélectionnez l’appareil pour afficher les détails de résolution des problèmes dans le panneau latéral, pointant vers la cause racine de l’erreur et la documentation correspondante.
 
 
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="Critères de filtre appliqués sur la page d’inventaire des appareils" lightbox="./images/secconfig-mde-error.png":::
+
+> [!NOTE] 
+> Nous sommes conscients d’un problème affectant la détection précise des GPM tiers lors de la tentative d’utilisation de la fonctionnalité de gestion de la sécurité et travaillons sur un correctif. 
 
 ## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>Exécuter Microsoft Defender pour point de terminaison l’analyseur client sur Windows
 
@@ -121,7 +122,7 @@ Le tableau suivant répertorie les erreurs et les instructions sur ce qu’il fa
 |Code d'erreur|État de l’inscription|Actions de l’administrateur|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|Erreur générale|L’appareil a été correctement intégré à Microsoft Defender pour point de terminaison. Toutefois, il y a eu une erreur dans le flux de gestion de la configuration de la sécurité. Cela peut être dû au fait que l’appareil ne répond pas aux [conditions préalables pour Microsoft Defender pour point de terminaison canal de gestion](security-config-management.md). L’exécution de [l’analyseur client](https://aka.ms/BetaMDEAnalyzer) sur l’appareil peut aider à identifier la cause racine du problème. Si cela ne vous aide pas, contactez le support technique.|
-| `8`, `44` | problème de configuration Microsoft Endpoint Manager | L’appareil a été correctement intégré à Microsoft Defender pour point de terminaison. Toutefois, Microsoft Endpoint Manager n’a pas été configuré via le centre de Administration pour autoriser Microsoft Defender pour point de terminaison configuration de sécurité. Vérifiez que le [locataire Microsoft Endpoint Manager est configuré et que la fonctionnalité est activée](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
+| `8`, `44` | problème de configuration Microsoft Endpoint Manager | L’appareil a été correctement intégré à Microsoft Defender pour point de terminaison. Toutefois, Microsoft Endpoint Manager n’a pas été configuré via le Centre d’administration pour autoriser Microsoft Defender pour point de terminaison configuration de sécurité. Vérifiez que le [locataire Microsoft Endpoint Manager est configuré et que la fonctionnalité est activée](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|Problème de connectivité|L’appareil a été correctement intégré à Microsoft Defender pour point de terminaison. Toutefois, il y a eu une erreur dans le flux de gestion de la configuration de sécurité qui peut être due à un problème de connectivité. Vérifiez que les [points de terminaison Azure Active Directory et Microsoft Endpoint Manager sont ouverts](security-config-management.md#connectivity-requirements) dans votre pare-feu.|
 |`10`,`42`|Échec général de jointure hybride|L’appareil a été correctement intégré à Microsoft Defender pour point de terminaison. Toutefois, une erreur s’est produite dans le flux de gestion de la configuration de la sécurité et le système d’exploitation n’a pas pu effectuer la jointure hybride. Utilisez [la résolution des problèmes liés aux appareils hybrides joints à Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) pour résoudre les échecs de jointure hybride au niveau du système d’exploitation.|
 |`15`|Incompatibilité de locataire|L’appareil a été correctement intégré à Microsoft Defender pour point de terminaison. Toutefois, le flux de gestion de la configuration de la sécurité a rencontré une erreur, car votre ID de locataire Microsoft Defender pour point de terminaison ne correspond pas à votre ID de locataire Azure Active Directory. Assurez-vous que l’ID de locataire Azure Active Directory de votre locataire Defender pour point de terminaison correspond à l’ID de locataire dans l’entrée SCP de votre domaine. Pour plus d’informations, [résolvez les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison](troubleshoot-security-config-mgt.md).|

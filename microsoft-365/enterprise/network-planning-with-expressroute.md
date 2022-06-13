@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Dans cet article, vous allez découvrir Azure ExpressRoute pour Office 365 et comment l’utiliser pour la planification du réseau.
-ms.openlocfilehash: a284472ad84139a5e76eeab38121d62cf3757829
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095639"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042911"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
@@ -46,7 +46,7 @@ Le tableau suivant met en évidence quelques différences entre les connexions I
 |Connexion directe avec un profil réseau prévisible.  <br/> |Non  <br/> |Oui  <br/> |
 |Connectivité IPv6.  <br/> |Oui  <br/> |Oui  <br/> |
 
-Développez les titres ci-dessous pour obtenir des conseils de planification réseau supplémentaires. Nous avons également enregistré une série de 10 parties [d’Azure ExpressRoute pour Office 365 Training](https://channel9.msdn.com/series/aer) qui s’approfondit.
+Développez les titres ci-dessous pour obtenir des conseils de planification réseau supplémentaires.
 
 ## <a name="existing-azure-expressroute-customers"></a>Clients Azure ExpressRoute existants
 
@@ -62,7 +62,7 @@ Ce tableau décrit les deux types de relations de peering que vous pouvez choisi
 |:-----|:-----|:-----|
 |**Services** <br/> |IaaS : Azure Machines Virtuelles  <br/> |PaaS : services publics Azure  <br/> SaaS : Office 365  <br/> SaaS : Dynamics 365  <br/> |
 |Initiation de connexion**** <br/> |Client à Microsoft  <br/> Microsoft à client  <br/> |Client à Microsoft  <br/> Microsoft à client  <br/> |
-|**Prise en charge de QoS** <br/> |Aucun QoS  <br/> |<sup>QoS1</sup> <br/> |
+|**Prise en charge de QoS** <br/> |Aucun QoS  <br/> |QoS<sup>1</sup> <br/> |
 
 <sup>1 </sup> QoS prend en charge Skype Entreprise uniquement pour le moment.
   
@@ -104,15 +104,15 @@ Lorsque vous envisagez de placer la topologie des options de périmètre réseau
 
 - Les clients sont encouragés à concevoir leur topologie de sécurité/périmètre à utiliser avec ExpressRoute pour Office 365 conformément aux meilleures pratiques en matière de redondance, de haute disponibilité et de récupération d’urgence.
 
-Voici un exemple de Woodgrove Bank qui compare les différentes options de connectivité Azure ExpressRoute avec les modèles de sécurité de périmètre décrits ci-dessus.
+Voici un exemple de Contoso qui compare les différentes options de connectivité Azure ExpressRoute avec les modèles de sécurité de périmètre décrits ci-dessus.
   
 ### <a name="example-1-securing-azure-expressroute"></a>Exemple 1 : Sécurisation d’Azure ExpressRoute
   
-Woodgrove Bank envisage d’implémenter Azure ExpressRoute et après avoir planifié l’architecture optimale pour le [routage avec ExpressRoute pour Office 365](routing-with-expressroute.md) et après avoir utilisé les conseils ci-dessus pour comprendre les besoins en bande passante, ils déterminent la meilleure méthode pour sécuriser leur périmètre.
+Contoso envisage d’implémenter Azure ExpressRoute et après avoir planifié l’architecture optimale pour le [routage avec ExpressRoute pour Office 365](routing-with-expressroute.md) et après avoir utilisé les conseils ci-dessus pour comprendre les besoins en bande passante, ils déterminent la meilleure méthode pour sécuriser leur périmètre.
   
-Pour Woodgrove, une organisation multinationale qui a des emplacements sur plusieurs continents, la sécurité doit s’étendre sur tous les périmètres. L’option de connectivité optimale pour Woodgrove est une connexion à plusieurs points avec plusieurs emplacements de peering dans le monde entier pour répondre aux besoins de leurs employés sur chaque continent. Chaque continent inclut des circuits Azure ExpressRoute redondants au sein du continent et la sécurité doit couvrir tous ces circuits.
+Pour Contoso, une organisation multinationale avec des emplacements sur plusieurs continents, la sécurité doit couvrir tous les périmètres. L’option de connectivité optimale pour Contoso est une connexion à plusieurs points avec plusieurs emplacements de peering dans le monde entier pour répondre aux besoins de leurs employés sur chaque continent. Chaque continent inclut des circuits Azure ExpressRoute redondants au sein du continent et la sécurité doit couvrir tous ces circuits.
   
-L’infrastructure existante de Woodgrove est fiable et peut gérer le travail supplémentaire. Par conséquent, Woodgrove Bank est en mesure d’utiliser l’infrastructure pour sa sécurité Azure ExpressRoute et le périmètre Internet. Si ce n’était pas le cas, Woodgrove pourrait choisir d’acheter plus d’équipement pour compléter leur équipement existant ou pour gérer un autre type de connexion.
+L’infrastructure existante de Contoso est fiable et peut gérer le travail supplémentaire. Par conséquent, Contoso est en mesure d’utiliser l’infrastructure pour sa sécurité Azure ExpressRoute et le périmètre Internet. Si ce n’était pas le cas, Contoso pourrait choisir d’acheter plus d’équipement pour compléter son équipement existant ou pour gérer un autre type de connexion.
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>Haute disponibilité et basculement avec Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
@@ -158,13 +158,13 @@ Nous vous déconseillons d’utiliser un seul circuit ExpressRoute avec Internet
   
 ### <a name="example-2-failover-and-high-availability"></a>Exemple 2 : basculement et haute disponibilité
   
-La conception multi-géographique de la Woodgrove Bank a fait l’objet d’un examen du routage, de la bande passante, de la sécurité et doit maintenant faire l’objet d’une révision de haute disponibilité. Woodgrove considère que la haute disponibilité couvre trois catégories; la résilience, la fiabilité et la redondance.
+La conception multi-géographique de Contoso a fait l’objet d’un examen du routage, de la bande passante, de la sécurité et doit maintenant faire l’objet d’une révision de haute disponibilité. Contoso considère la haute disponibilité comme couvrant trois catégories ; la résilience, la fiabilité et la redondance.
   
-La résilience permet à Woodgrove de se remettre rapidement des défaillances. La fiabilité permet à Woodgrove d’offrir un résultat cohérent au sein du système. La redondance permet à Woodgrove de se déplacer entre une ou plusieurs instances d’infrastructure en miroir.
+La résilience permet à Contoso de récupérer rapidement des défaillances. La fiabilité permet à Contoso d’offrir un résultat cohérent au sein du système. La redondance permet à Contoso de se déplacer entre une ou plusieurs instances d’infrastructure en miroir.
   
-Dans chaque configuration de périphérie, Woodgrove dispose de pare-feu, proxys et IDS redondants. Pour Amérique du Nord, Woodgrove dispose d’une configuration de périphérie dans son centre de données dallas et d’une autre configuration de périphérie dans son centre de données Virginia. L’équipement redondant à chaque emplacement offre une résilience à cet emplacement.
+Dans chaque configuration de périphérie, Contoso dispose de pare-feu, proxys et IDS redondants. Pour Amérique du Nord, Contoso dispose d’une configuration de périphérie dans son centre de données Dallas et d’une autre configuration de périphérie dans son centre de données Virginia. L’équipement redondant à chaque emplacement offre une résilience à cet emplacement.
   
-La configuration réseau de Woodgrove Bank repose sur quelques principes clés :
+La configuration réseau de Contoso repose sur quelques principes clés :
   
 - Dans chaque région géographique, il existe plusieurs circuits Azure ExpressRoute.
 
@@ -172,15 +172,15 @@ La configuration réseau de Woodgrove Bank repose sur quelques principes clés :
 
 - Le routage préférera clairement l’un ou l’autre chemin d’accès en fonction de la disponibilité, de l’emplacement, et ainsi de suite.
 
-- Le basculement entre les circuits Azure ExpressRoute se produit automatiquement sans configuration ou action supplémentaire requise par Woodgrove.
+- Le basculement entre les circuits Azure ExpressRoute se produit automatiquement sans configuration ou action supplémentaire requise par Contoso.
 
-- Le basculement entre les circuits Internet se produit automatiquement sans configuration ou action supplémentaire requise par Woodgrove.
+- Le basculement entre les circuits Internet se produit automatiquement sans configuration ou action supplémentaire requise par Contoso.
 
-Dans cette configuration, avec la redondance au niveau physique et virtuel, Woodgrove Bank est en mesure d’offrir une résilience locale, une résilience régionale et une résilience mondiale de manière fiable. Woodgrove a choisi cette configuration après avoir évalué un seul circuit Azure ExpressRoute par région, ainsi que la possibilité de basculer vers Internet.
+Dans cette configuration, avec la redondance au niveau physique et virtuel, Contoso est en mesure d’offrir une résilience locale, une résilience régionale et une résilience globale de manière fiable. Contoso a choisi cette configuration après avoir évalué un seul circuit Azure ExpressRoute par région, ainsi que la possibilité de basculer vers Internet.
   
-Si Woodgrove ne pouvait pas avoir plusieurs circuits Azure ExpressRoute par région, le routage du trafic provenant de Amérique du Nord vers le circuit Azure ExpressRoute en Asie-Pacifique ajouterait un niveau inacceptable de latence et la configuration du redirecteur DNS requise ajoute de la complexité.
+Si Contoso ne pouvait pas avoir plusieurs circuits Azure ExpressRoute par région, le routage du trafic provenant de Amérique du Nord vers le circuit Azure ExpressRoute en Asie-Pacifique ajouterait un niveau inacceptable de latence et la configuration du redirecteur DNS requise ajoute de la complexité.
   
-L’utilisation d’Internet comme configuration de sauvegarde n’est pas recommandée. Cela rompt le principe de fiabilité de Woodgrove, ce qui entraîne une expérience incohérente à l’aide de la connexion. En outre, une configuration manuelle serait nécessaire pour basculer en tenant compte des publicités BGP qui ont été configurées, de la configuration NAT, de la configuration DNS et de la configuration du proxy. Cette complexité de basculement supplémentaire augmente le temps de récupération et réduit leur capacité à diagnostiquer et à dépanner les étapes impliquées.
+L’utilisation d’Internet comme configuration de sauvegarde n’est pas recommandée. Cela rompt le principe de fiabilité de Contoso, ce qui entraîne une expérience incohérente à l’aide de la connexion. En outre, une configuration manuelle serait nécessaire pour basculer en tenant compte des publicités BGP qui ont été configurées, de la configuration NAT, de la configuration DNS et de la configuration du proxy. Cette complexité de basculement supplémentaire augmente le temps de récupération et réduit leur capacité à diagnostiquer et à dépanner les étapes impliquées.
   
 Vous avez encore des questions sur la façon de planifier et d’implémenter la gestion du trafic ou Azure ExpressRoute ? Lisez le reste de nos [conseils sur le réseau et les performances](./network-planning-and-performance.md) ou le [FAQ Azure ExpressRoute](/azure/expressroute/expressroute-faqs).
   

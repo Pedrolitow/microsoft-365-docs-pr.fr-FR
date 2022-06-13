@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772088"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043728"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -74,16 +74,13 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - **Expéditeurs, URL et fichiers** :
     - Pour ajouter et supprimer des valeurs de la liste d’autorisations/de blocs du locataire, vous devez être membre de
       - **Groupe de rôles Gestion de l’organisation** ou **Administrateur de la sécurité** (**rôle Administrateur de la sécurité**)
       - Groupe **de rôles Opérateur de sécurité** (**Tenant AllowBlockList Manager**).
     - Pour accéder en lecture seule à la liste d’autorisations/de blocs de locataire, vous devez être membre de
       - **Groupe de rôles Lecteur global**
       - **Groupe de rôles Lecteur de sécurité**
-  - **Usurpation d’identité** : une des combinaisons suivantes :
-    - **Gestion de l'organisation**
-    - **Administrateur de sécurité** <u>et</u> **configuration en mode seul** ou gestion de l’organisation **en mode affichage uniquement**.
+      - **Groupe de rôles De configuration en mode affichage uniquement* .
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -468,7 +465,6 @@ Une paire de domaines pour un expéditeur usurpé dans la liste d’autorisation
 - **Infrastructure d’envoi** : cette valeur indique la source des messages de l’utilisateur usurpé. Les valeurs valides sont les suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source (par exemple, fabrikam.com).
   - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
-  - Un domaine DKIM vérifié.
 
 Voici quelques exemples de paires de domaines valides pour identifier les expéditeurs usurpés :
 

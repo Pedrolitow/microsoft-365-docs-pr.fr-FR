@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2bc051baa8d2ac6df9e29f1679402e63c2774cac
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 6c39db3cceec62ef80cf19f34bbf3d89a219a4f3
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679305"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042973"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "65679305"
 > [!IMPORTANT]
 > Cette rubrique contient des instructions sur la définition des préférences pour Defender pour point de terminaison sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources](linux-resources.md#configure-from-the-command-line).
 
-Dans les environnements d’entreprise, Defender pour point de terminaison sur Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l’outil de gestion de votre choix. Les préférences gérées par l’entreprise sont prioritaires sur celles définies localement sur l’appareil. En d’autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration.
+Dans les environnements d’entreprise, Defender pour point de terminaison sur Linux peut être géré via un profil de configuration. Ce profil est déployé à partir de l’outil de gestion de votre choix. Les préférences gérées par l’entreprise sont prioritaires sur celles définies localement sur l’appareil. En d’autres termes, les utilisateurs de votre entreprise ne peuvent pas modifier les préférences définies par le biais de ce profil de configuration. Si des exclusions ont été ajoutées via le profil de configuration managée, elles ne peuvent être supprimées que via le profil de configuration managée. La ligne de commande fonctionne pour les exclusions qui ont été ajoutées localement.
 
 Cet article décrit la structure de ce profil (y compris un profil recommandé que vous pouvez utiliser pour commencer) et des instructions sur la façon de déployer le profil.
 
@@ -53,16 +53,11 @@ Le niveau supérieur du profil de configuration inclut des préférences et des 
 
 La section *antivirusEngine* du profil de configuration est utilisée pour gérer les préférences du composant antivirus du produit.
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|antivirusEngine|
 |**Type de données**|Dictionnaire (préférence imbriqué)|
-|**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
-|
+|**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
 #### <a name="enforcement-level-for-antivirus-engine"></a>Niveau de mise en œuvre pour le moteur antivirus
 
@@ -77,18 +72,12 @@ Spécifie la préférence d’application du moteur antivirus. Il existe trois v
   - La correction automatique des menaces est désactivée.
   - Les mises à jour du renseignement de sécurité sont activées.
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|enforcementLevel|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|real_time (par défaut) <p> on_demand <p> Passif|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.10.72 ou ultérieure.|
-|
-
 
 #### <a name="enabledisable-behavior-monitoring"></a>Activer/désactiver la surveillance du comportement 
 
@@ -102,16 +91,12 @@ Détermine si la fonctionnalité de surveillance et de blocage du comportement e
 |---|---|
 |**Clé**|behaviorMonitoring|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|désactivé (par défaut) <p> activé |
+|**Valeurs possibles**|désactivé (par défaut) <p> activé|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
 
 Spécifie s’il faut démarrer une analyse de processus après le téléchargement de nouvelles mises à jour du renseignement de sécurité sur l’appareil. L’activation de ce paramètre déclenche une analyse antivirus sur les processus en cours d’exécution de l’appareil.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -119,15 +104,10 @@ Spécifie s’il faut démarrer une analyse de processus après le téléchargem
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (valeur par défaut) <p> false|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
-|
 
 #### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Analyser les archives (analyses antivirus à la demande uniquement)
 
 Spécifie s’il faut analyser les archives pendant les analyses antivirus à la demande.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -135,32 +115,21 @@ Spécifie s’il faut analyser les archives pendant les analyses antivirus à la
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (valeur par défaut) <p> false|
 |**Commentaires**|Disponible dans Microsoft Defender pour point de terminaison version 101.45.00 ou ultérieure.|
-|||
 
 #### <a name="degree-of-parallelism-for-on-demand-scans"></a>Degré de parallélisme pour les analyses à la demande
 
 Spécifie le degré de parallélisme pour les analyses à la demande. Cela correspond au nombre de threads utilisés pour effectuer l’analyse et affecte l’utilisation du processeur, ainsi que la durée de l’analyse à la demande.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|maximumOnDemandScanThreads|
 |**Type de données**|Entier|
 |**Valeurs possibles**|2 (valeur par défaut). Les valeurs autorisées sont des entiers compris entre 1 et 64.|
-|**Commentaires**|Disponible dans Microsoft Defender pour point de terminaison version 101.45.00 ou ultérieure.|
-|||
-  
+|**Comments**|Disponible dans Microsoft Defender pour point de terminaison version 101.45.00 ou ultérieure.|
 
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
 
 Spécifie la stratégie de fusion pour les exclusions. Il peut s’agir d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur (`merge`) ou uniquement d’exclusions définies par l’administrateur (`admin_only`). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -168,46 +137,31 @@ Spécifie la stratégie de fusion pour les exclusions. Il peut s’agir d’une 
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 100.83.73 ou ultérieure.|
-|
 
 #### <a name="scan-exclusions"></a>Exclusions d’analyse
 
 Entités qui ont été exclues de l’analyse. Les exclusions peuvent être spécifiées par des chemins d’accès complets, des extensions ou des noms de fichiers.
 (Les exclusions sont spécifiées sous la forme d’un tableau d’éléments, l’administrateur peut spécifier autant d’éléments que nécessaire, dans n’importe quel ordre.)
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|Exclusions|
 |**Type de données**|Dictionnaire (préférence imbriqué)|
 |**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
-|
 
 ##### <a name="type-of-exclusion"></a>Type d’exclusion
 
 Spécifie le type de contenu exclu de l’analyse.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|$type|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|excludedPath <p> excludedFileExtension <p> excludedFileName|
-|
 
 ##### <a name="path-to-excluded-content"></a>Chemin d’accès au contenu exclu
 
 Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au fichier.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -215,47 +169,32 @@ Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|chemins valides|
 |**Commentaires**|Applicable uniquement si *$type* est *excluPath*|
-|
 
 ##### <a name="path-type-file--directory"></a>Type de chemin d’accès (fichier/répertoire)
 
 Indique si la propriété *de chemin d’accès* fait référence à un fichier ou un répertoire.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|isDirectory|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|false (par défaut) <p> true|
-|**Comments**|Applicable uniquement si *$type* est *excluPath*|
-|
+|**Commentaires**|Applicable uniquement si *$type* est *excluPath*|
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>Extension de fichier exclue de l’analyse
 
 Utilisé pour exclure du contenu de l’analyse par extension de fichier.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|Extension|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|extensions de fichier valides|
-|**Comments**|Applicable uniquement si *$type* est *excluFileExtension*|
-|
+|**Commentaires**|Applicable uniquement si *$type* est *excluFileExtension*|
 
 ##### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse*
 
 Spécifie un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple) `cat`ou son chemin d’accès complet (par exemple, `/bin/cat`).
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -263,29 +202,19 @@ Spécifie un processus pour lequel toute l’activité de fichier est exclue de 
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|n’importe quelle chaîne|
 |**Commentaires**|Applicable uniquement si *$type* est *excluFileName*|
-|
 
 #### <a name="allowed-threats"></a>Menaces autorisées
 
 Liste des menaces (identifiées par leur nom) qui ne sont pas bloquées par le produit et qui sont à la place autorisées à s’exécuter.
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|allowedThreats|
 |**Type de données**|Tableau de chaînes|
-|
 
 #### <a name="disallowed-threat-actions"></a>Actions de menace non autorisées
 
 Limite les actions que l’utilisateur local d’un appareil peut effectuer lorsque des menaces sont détectées. Les actions incluses dans cette liste ne sont pas affichées dans l’interface utilisateur.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -293,37 +222,26 @@ Limite les actions que l’utilisateur local d’un appareil peut effectuer lors
 |**Type de données**|Tableau de chaînes|
 |**Valeurs possibles**|autoriser (empêche les utilisateurs d’autoriser les menaces) <p> restore (empêche les utilisateurs de restaurer les menaces à partir de la mise en quarantaine)|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 100.83.73 ou ultérieure.|
-|
 
 #### <a name="threat-type-settings"></a>Paramètres des types de menaces
 
 La préférence *threatTypeSettings* dans le moteur antivirus est utilisée pour contrôler la façon dont certains types de menaces sont gérés par le produit.
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|threatTypeSettings|
 |**Type de données**|Dictionnaire (préférence imbriqué)|
-|**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
-|
+|**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 
 ##### <a name="threat-type"></a>Type de menace
 
 Type de menace pour lequel le comportement est configuré.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|clé|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|potentially_unwanted_application <p> archive_bomb|
-|
 
 ##### <a name="action-to-take"></a>Mesures à prendre
 
@@ -333,24 +251,15 @@ Action à effectuer lorsque vous rencontrez une menace du type spécifié dans l
 - **Bloc** : l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Désactivé** : l’appareil n’est pas protégé contre ce type de menace et rien n’est journalisé.
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|valeur|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|audit (par défaut) <p> Bloc <p> inactif|
-|
 
 #### <a name="threat-type-settings-merge-policy"></a>Stratégie de fusion des paramètres de type de menace
 
 Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peut s’agir d’une combinaison de paramètres définis par l’administrateur et définis par l’utilisateur (`merge`) ou uniquement de paramètres définis par l’administrateur (`admin_only`). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres paramètres pour différents types de menaces.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -358,15 +267,10 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 100.83.73 ou ultérieure.|
-|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Conservation de l’historique des analyses antivirus (en jours)
 
 Spécifiez le nombre de jours pendant lesquels les résultats sont conservés dans l’historique d’analyse sur l’appareil. Les anciens résultats de l’analyse sont supprimés de l’historique. Anciens fichiers mis en quarantaine qui sont également supprimés du disque.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -374,15 +278,10 @@ Spécifiez le nombre de jours pendant lesquels les résultats sont conservés da
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|90 (valeur par défaut). Les valeurs autorisées sont comprises entre 1 jour et 180 jours.|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.04.76 ou ultérieure.|
-|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Nombre maximal d’éléments dans l’historique des analyses antivirus
 
 Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’analyse. Les entrées incluent toutes les analyses à la demande effectuées dans le passé et toutes les détections antivirus.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
@@ -390,52 +289,36 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées vont de 5 000 éléments à 15 000 éléments.|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.04.76 ou ultérieure.|
-|
 
 ### <a name="cloud-delivered-protection-preferences"></a>Préférences de protection fournies par le cloud
 
 L’entrée *cloudService* dans le profil de configuration est utilisée pour configurer la fonctionnalité de protection pilotée par le cloud du produit.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|cloudService|
 |**Type de données**|Dictionnaire (préférence imbriqué)|
 |**Commentaires**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
-|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection fournie par le cloud
 
 Détermine si la protection fournie par le cloud est activée ou non sur l’appareil. Pour améliorer la sécurité de vos services, nous vous recommandons de maintenir cette fonctionnalité activée.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|activé|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (valeur par défaut) <p> false|
-|
 
 #### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender pour point de terminaison, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour apporter des améliorations au produit. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|diagnosticLevel|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|facultatif (par défaut) <p> obligatoire|
-|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les soumissions automatiques d’exemples
 
@@ -445,31 +328,21 @@ Détermine si des échantillons suspects (susceptibles de contenir des menaces) 
 - **Coffre** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
 - **Tous** : tous les exemples suspects sont envoyés à Microsoft.
 
-<br>
-
-****
-
 |Description|Valeur|
 |---|---|
 |**Clé**|automaticSampleSubmissionConsent|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|none <p> safe (par défaut) <p> tout|
-|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Activer/désactiver les mises à jour automatiques du renseignement de sécurité
 
 Détermine si les mises à jour du renseignement de sécurité sont installées automatiquement :
-
-<br>
-
-****
 
 |Description|Valeur|
 |---|---|
 |**Clé**|automaticDefinitionUpdateEnabled|
 |**Type de données**|Valeur booléenne|
 |**Valeurs possibles**|true (valeur par défaut) <p> false|
-|
 
 ## <a name="recommended-configuration-profile"></a>Profil de configuration recommandé
 

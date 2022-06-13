@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier Éléments récupérables pour une boîte aux lettres dans Microsoft 365.
-ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d426afffb1002e1187adafc794d5340d730cc7e7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014991"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044135"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-La stratégie de rétention par défaut Exchange, nommée stratégie *MRM par défaut*, qui est automatiquement appliquée aux nouvelles boîtes aux lettres dans Exchange Online contient une balise de rétention nommée Éléments récupérables 14 jours, qui passe à l’archive. Cette balise de rétention déplace les éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables de la boîte aux lettres d’archivage de l’utilisateur à l’expiration de la période de rétention de 14 jours d’un élément. Pour ce faire, la boîte aux lettres d’archivage de l’utilisateur doit être activée. Si la boîte aux lettres d’archivage n’est pas activée, aucune action n’est effectuée, ce qui signifie que les éléments du dossier Éléments récupérables pour une boîte aux lettres placée en conservation ne sont pas déplacés vers la boîte aux lettres d’archivage après expiration de la période de rétention de 14 jours. Étant donné que rien n’est supprimé d’une boîte aux lettres placée en conservation, il est possible que le quota de stockage pour le dossier Éléments récupérables soit dépassé, en particulier si la boîte aux lettres d’archivage de l’utilisateur n’est pas activée.
+La stratégie de rétention par défaut Exchange, nommée stratégie *MRM par défaut*, qui est automatiquement appliquée aux nouvelles boîtes aux lettres dans Exchange Online contient une balise de rétention nommée Éléments récupérables 14 jours, qui passe à l’archive. Cette balise de rétention déplace les éléments du dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur vers le dossier Éléments récupérables de la boîte aux lettres d’archivage de l’utilisateur à l’expiration de la période de rétention de 14 jours d’un élément. Les e-mails dans le dossier Deletions sont conservés en fonction du paramètre **RetainDeletedItemsFor** et sont déplacés vers d’autres dossiers dans les éléments supprimés récupérables, puis vers la boîte aux lettres d’archivage. Pour ce faire, la boîte aux lettres d’archivage de l’utilisateur doit être activée. Si la boîte aux lettres d’archivage n’est pas activée, aucune action n’est effectuée, ce qui signifie que les éléments du dossier Éléments récupérables pour une boîte aux lettres placée en conservation ne sont pas déplacés vers la boîte aux lettres d’archivage après expiration de la période de rétention de 14 jours. Étant donné que rien n’est supprimé d’une boîte aux lettres placée en conservation, il est possible que le quota de stockage pour le dossier Éléments récupérables soit dépassé, en particulier si la boîte aux lettres d’archivage de l’utilisateur n’est pas activée.
 
 Pour réduire le risque de dépassement de cette limite, le quota de stockage pour le dossier Éléments récupérables passe automatiquement de 30 Go à 100 Go lorsqu’une conservation est placée sur une boîte aux lettres dans Exchange Online. Si la boîte aux lettres d’archivage est activée, le quota de stockage pour le dossier Éléments récupérables dans la boîte aux lettres d’archivage passe également de 30 Go à 100 Go. Si la fonctionnalité d’archivage à extension automatique dans Exchange Online est activée, le quota total de stockage pour la boîte aux lettres d’archivage de l’utilisateur, y compris le dossier Éléments récupérables, est de 1,5 To.
 

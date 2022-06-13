@@ -1,5 +1,5 @@
 ---
-title: Bookings dans Outlook
+title: Réservations dans Outlook
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,50 +9,50 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Utilisez Bookings dans Outlook pour permettre à d’autres personnes de planifier des réunions avec vous dans Outlook.
-ms.openlocfilehash: b77b9b0450f77014e304c232aa46f3427dcbbe22
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 96a150894e27de9f558b81e4f3deaef0d4f3dfa5
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670139"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044087"
 ---
-# <a name="bookings-in-outlook"></a>Bookings dans Outlook
+# <a name="bookings-in-outlook"></a>Réservations dans Outlook
 
-Bookings dans Outlook est une page de planification personnelle basée sur le web qui s’intègre aux informations de disponibilité de votre calendrier Outlook. Bookings dans Outlook permet aux utilisateurs de planifier une réunion ou un rendez-vous avec vous. Vous pouvez créer des types de réunion personnalisés à partager avec d’autres personnes afin qu’elles puissent facilement planifier du temps avec vous en fonction de votre disponibilité et de vos préférences. Vous recevez une confirmation par e-mail et les participants peuvent mettre à jour ou annuler des réunions planifiées avec vous à partir de votre Bookings dans Outlook page.
+Bookings in Outlook est une page de planification personnelle basée sur le web qui s’intègre aux informations de disponibilité de votre calendrier Outlook. Les réservations dans Outlook permettent aux utilisateurs de planifier une réunion ou un rendez-vous avec vous. Vous pouvez créer des types de réunion personnalisés à partager avec d’autres personnes afin qu’elles puissent facilement planifier du temps avec vous en fonction de votre disponibilité et de vos préférences. Vous recevez une confirmation par e-mail et les participants peuvent mettre à jour ou annuler des réunions planifiées avec vous à partir de votre page Bookings dans Outlook.
 
 > [!NOTE]
-> Bookings dans Outlook est disponible uniquement en préversion.
+> Les réservations dans Outlook sont disponibles uniquement en préversion.
 
-Bookings dans Outlook a deux vues différentes :
+Les réservations dans Outlook offrent deux vues différentes :
 
-- **Mode Organisateur** Page de réservation personnelle dans laquelle vous pouvez créer des types de réunion que d’autres personnes peuvent réserver avec vous. Les types de réunion personnalisés vous permettent de personnaliser le moment où vous souhaitez vous rencontrer et la façon dont ce type de réunion est partagé avec d’autres personnes. Vous contrôlez si chaque type de réunion est public pour votre page de planification ou est privé et n’est accessible qu’à un groupe de personnes sélectionné. Vous pouvez également choisir d’ajouter une réunion Teams à toutes les réunions réservées via votre Bookings dans Outlook page. Vous pouvez accéder à votre Bookings dans Outlook page via Outlook sur le web. Une fois votre page configurée et publiée, vous pouvez la partager avec d’autres personnes. Par exemple, vous pouvez l’ajouter à votre signature Outlook.
+- **Mode Organisateur** Page de réservation personnelle dans laquelle vous pouvez créer des types de réunion que d’autres personnes peuvent réserver avec vous. Les types de réunion personnalisés vous permettent de personnaliser le moment où vous souhaitez vous rencontrer et la façon dont ce type de réunion est partagé avec d’autres personnes. Vous contrôlez si chaque type de réunion est public pour votre page de planification ou est privé et n’est accessible qu’à un groupe de personnes sélectionné. Vous pouvez également choisir d’ajouter une réunion Teams à toutes les réunions réservées par le biais de vos réservations dans Outlook page. Vous pouvez accéder à votre page Bookings dans Outlook via Outlook sur le web. Une fois votre page configurée et publiée, vous pouvez la partager avec d’autres personnes. Par exemple, vous pouvez l’ajouter à votre signature Outlook.
 
-- **Affichage planification** Lorsque vous partagez vos Bookings dans Outlook page avec d’autres personnes, l’affichage de planification s’affiche. Les réunions affichées dans l’affichage planification varient selon que vous avez partagé le lien vers votre Bookings dans Outlook page avec des réunions publiques ou si vous avez partagé un lien privé pour une réunion individuelle.
-  - Les réunions publiques peuvent être affichées et planifiées par toute personne disposant de votre Bookings dans Outlook lien de page. Vous contrôlez avec qui vous partagez ce lien. Tous les types de réunions publiques sont visibles par toute personne disposant de votre Bookings dans Outlook lien de page.
+- **Affichage planification** Lorsque vous partagez vos réservations dans Outlook page avec d’autres personnes, l’affichage de planification s’affiche. Les réunions affichées dans l’affichage planification varient selon que vous avez partagé le lien vers votre réservation dans Outlook page avec des réunions publiques ou si vous avez partagé un lien privé pour une réunion individuelle.
+  - Les réunions publiques peuvent être consultées et planifiées par toute personne disposant de votre réservation dans Outlook lien de page. Vous contrôlez avec qui vous partagez ce lien. Tous les types de réunions publiques seront visibles par toute personne disposant de votre réservation dans Outlook lien de page.
   - Les réunions privées peuvent uniquement être consultées par les personnes qui ont le lien pour ce type de réunion. La différence entre les réunions publiques et les réunions privées est que les réunions privées peuvent avoir des liens différents et que les liens expirent après 90 jours. Vous pouvez également définir des liaisons privées pour qu’ils expirent après une réservation unique. Lorsque vous accédez à la vue de planification d’une réunion privée, seul ce type de réunion est visible.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Bookings dans Outlook est disponible dans les abonnements suivants :
+Les réservations dans Outlook sont disponibles dans les abonnements suivants :
 
 - Office 365 : A3, A5, E1, E3, E5, F1, F3
 - Microsoft 365 : A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
 
-Bookings dans Outlook est activée par défaut pour les utilisateurs disposant de ces abonnements.
+Les réservations dans Outlook sont activées par défaut pour les utilisateurs disposant de ces abonnements.
 
-Bookings dans Outlook a besoin du plan de service **Microsoft Bookings** affecté aux utilisateurs pour qu’ils puissent accéder à Bookings. Ce plan de service peut être activé/désactivé par les administrateurs de locataires. Par conséquent, si **Microsoft Bookings** ne leur est pas attribué, Bookings accès sera refusé aux utilisateurs même s’ils se trouvent dans l’une des références SKU répertoriées précédemment.
+Les réservations dans Outlook ont besoin du plan de service **Microsoft Bookings** affecté aux utilisateurs pour qu’ils puissent accéder à Bookings. Ce plan de service peut être activé/désactivé par les administrateurs de locataires. Par conséquent, si **Microsoft Bookings** ne leur est pas attribué, l’accès Bookings sera refusé aux utilisateurs même s’ils se trouvent dans l’une des références SKU répertoriées précédemment.
 
-Pour plus d’informations, consultez [l’Bookings dans Outlook Microsoft 365 élément feuille de route](https://go.microsoft.com/fwlink/?linkid=328648).
+Pour plus d’informations, consultez [l’article Bookings dans Outlook Microsoft 365 feuille de route](https://go.microsoft.com/fwlink/?linkid=328648).
 
 ## <a name="turn-bookings-in-outlook-on-or-off"></a>Activer ou désactiver Bookings dans Outlook  
 
-Bookings dans Outlook peuvent être activées ou désactivées pour l’ensemble de votre organisation ou utilisateurs spécifiques. Lorsque Bookings dans Outlook est activée, les utilisateurs peuvent créer une Bookings dans Outlook page et partager des liens avec d’autres personnes à l’intérieur ou à l’extérieur de votre organisation.
+Les réservations dans Outlook peuvent être activées ou désactivées pour l’ensemble de votre organisation ou utilisateurs spécifiques. Lorsque Bookings dans Outlook est activé, les utilisateurs peuvent créer une page Bookings dans Outlook et partager des liens avec d’autres personnes à l’intérieur ou à l’extérieur de votre organisation.
 
 ### <a name="turn-bookings-in-outlook-on-or-off-for-your-organization-using-powershell"></a>Activer ou désactiver Bookings dans Outlook pour votre organisation à l’aide de PowerShell
 
 Vous devez exécuter les commandes suivantes à l’aide de Exchange Online PowerShell. Pour plus d’informations sur l’exécution d’applets de commande Exchange Online, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour activer ou désactiver Bookings dans Outlook pour votre organisation à l’aide de l’applet de commande PowerShell [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) et exécuter les commandes suivantes.
 
-Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** pour déterminer l’état et activer ou désactiver Bookings dans Outlook pour votre organisation.
+Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** pour connaître l’état et activer ou désactiver Bookings dans Outlook pour votre organisation.
 
 > [!NOTE]
 > Il faut généralement environ 30 à 60 minutes pour que Set-OrganizationConfig commandes prennent effet pour vos utilisateurs.
@@ -79,7 +79,7 @@ Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** 
 
     **R**. Si la valeur de **EwsApplicationAccessPolicy** est **EnforceAllowList**, seules les applications spécifiées dans **EwsAllowList** sont autorisées à accéder à EWS et REST.
 
-    - Pour désactiver Bookings dans Outlook pour votre organisation, supprimez **MicrosoftOWSPersonalBookings**, le cas échéant, **d’EwsAllowList** en exécutant la commande suivante :  
+    - Pour désactiver Bookings dans Outlook pour votre organisation, supprimez **MicrosoftOWSPersonalBookings**, le cas échéant, de **EwsAllowList** en exécutant la commande suivante :  
 
    ```PowerShell
    Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
@@ -93,13 +93,13 @@ Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** 
 
     **B**. Si la valeur de **EwsApplicationAccessPolicy** est **EnforceBlockList**, toutes les applications sont autorisées à accéder à EWS et REST, sauf celles spécifiées dans **EwsBlockList**.
 
-    - Pour désactiver Bookings dans Outlook de votre organisation, ajoutez **MicrosoftOWSPersonalBookings en** exécutant la commande suivante :
+    - Pour désactiver Bookings dans Outlook pour votre organisation, ajoutez **MicrosoftOWSPersonalBookings en** exécutant la commande suivante :
 
    ```PowerShell
    Set-OrganizationConfig -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
-    - Pour activer Bookings dans Outlook en cas de blocage, **supprimez MicrosoftOWSPersonalBookings en** exécutant la commande suivante :
+    - Pour activer Bookings dans Outlook si elle est bloquée, supprimez **MicrosoftOWSPersonalBookings en** exécutant la commande suivante :
 
    ```PowerShell
    Set-OrganizationConfig -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
@@ -112,12 +112,15 @@ Utilisez les commandes **Get-OrganizationConfig** et **Set-OrganizationConfig** 
    ```PowerShell
    Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+   
+  > [!NOTE]
+  > Le paramètre EwsApplicationAccessPolicy définit les applications autres que Entourage, Outlook et Outlook pour Mac peuvent accéder à EWS.
 
 ### <a name="turn-bookings-in-outlook-off-or-on-for-individual-users"></a>Désactiver ou activer Bookings dans Outlook pour les utilisateurs individuels
 
 Utilisez les commandes **Get-CASMailbox** et **Set-CASMailbox** pour vérifier l’état de l’utilisateur et activer ou désactiver Bookings dans Outlook pour les utilisateurs individuels de votre organisation.
 
-1. Vérifiez EwsApplicationAccessPolicy d’une personne en exécutant la commande suivante :
+1. Vérifiez l’accès au contrôle EWS de la personne en exécutant la commande suivante :
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsEnabled

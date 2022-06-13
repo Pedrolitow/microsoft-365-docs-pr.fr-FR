@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 25f464719bb8877155fa4fd7e591b0ad266c3305
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: e89666b6172d7c63d6b7d83cc365d6aed9b6856b
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015333"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044075"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Démarrage avec le mode de résolution des problèmes dans Microsoft Defender pour point de terminaison (préversion)
 
@@ -138,7 +138,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(3h)
-| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 ```
 
@@ -149,7 +149,7 @@ search in (DeviceEvents)
 ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
-| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | sort by count_
 ```
@@ -162,7 +162,7 @@ ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range
-| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
+| where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count()
 | where count_ > 5          // choose your max # of TS mode instances for your time range
 ```

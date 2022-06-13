@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre locataire et vos utilisateurs répondent aux exigences, afin que vous puissiez utiliser le déploiement centralisé pour déployer Office compléments.
-ms.openlocfilehash: 4d135e76034880e1419e296f2c201536be98b4bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093765"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043305"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé de compléments fonctionne pour votre organisation
 
@@ -39,7 +39,7 @@ Une déploiement centralisé offre les avantages suivants :
 - Lorsque l’application Office appropriée démarre, le complément se télécharge automatiquement. Si le complément prend en charge les commandes de complément, le complément apparaît automatiquement dans le ruban dans l’application Office.
 - Les compléments n’apparaissent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe auquel le complément est affecté.
 
-Le déploiement centralisé prend en charge trois plateformes de bureau Windows, Mac et les applications Office en ligne. Le déploiement centralisé prend également en charge iOS et Android (compléments mobiles Outlook uniquement).
+Le déploiement centralisé prend en charge trois plateformes de bureau Windows, Mac et les applications Office en ligne. Le déploiement centralisé prend également en charge les iOS et les Android (compléments mobiles Outlook uniquement).
 
 L’affichage d’un complément pour le client pour tous les utilisateurs peut prendre jusqu’à 24 heures.
 
@@ -124,6 +124,8 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 - Activation d'Office - Si l'utilisateur a activé Office
 - Boîte aux lettres prise en charge - Si l'utilisateur a une boîte aux lettres OAuth
 
+Si vos rapports Microsoft 365 affichent des noms d’utilisateur anonymes au lieu de noms d’utilisateur réels, corrigez ce problème en modifiant le paramètre rapports dans Centre d'administration Microsoft 365. Pour obtenir des instructions détaillées, consultez [Microsoft 365 rapports affichent des noms d’utilisateurs anonymes au lieu de noms d’utilisateurs réels](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
+
 > [!NOTE]
 > L’authentification multifacteur n’est pas prise en charge lors de l’utilisation du module PowerShell de déploiement central. Le module fonctionne uniquement avec l’authentification de base.
 
@@ -158,7 +160,7 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du comp
 
 |Plateforme|Informations de débogage|
 |---|---|
-|Office|Journaux Charles/Fiddler <br/> ID de locataire ([découvrez comment](/onedrive/find-your-office-365-tenant-id)) <br/> Correlationid. Affichez la source de l’une des pages de bureau, recherchez la valeur de l’ID de corrélation et envoyez-la à la prise en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|Bureau|Journaux Charles/Fiddler <br/> ID de locataire ([découvrez comment](/onedrive/find-your-office-365-tenant-id)) <br/> Correlationid. Affichez la source de l’une des pages de bureau, recherchez la valeur de l’ID de corrélation et envoyez-la à la prise en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
 |Clients riches (Windows, Mac)|Journaux Charles/Fiddler <br/> Numéros de build de l’application cliente (de préférence sous la forme d’une capture d’écran à partir d’un **fichier/d’un compte**)|
 
 ## <a name="related-content"></a>Contenu connexe

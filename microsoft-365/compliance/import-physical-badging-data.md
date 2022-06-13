@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 96017d6477f914c799fecbe834abdac22917bfaa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077958"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044013"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de badging physiques (préversion)
 
@@ -55,11 +55,11 @@ La configuration d’un connecteur de badging physique se compose des tâches su
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : Créer une application dans Azure Active Directory
 
-La première étape consiste à créer et à inscrire une application dans Azure Active Directory (Azure AD). L’application correspond au connecteur de badging physique que vous créez à l’étape 3. La création de cette application permet à Azure AD d’authentifier la demande Push pour la charge utile JSON contenant des données de badging physiques. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
+La première étape consiste à créer et à inscrire une application dans Azure Active Directory (Azure AD). L’application correspond au connecteur de badging physique que vous créez à l’étape 3. La création de cette application permet à Azure AD d’authentifier la demande Push pour la charge utile JSON contenant des données de mauvais traitement physiques. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- Azure AD ID d’application (également appelé *ID d’application* ou *ID client*)
+- ID d’application Azure AD (également appelé *ID d’application* ou *ID client*)
 
-- Azure AD secret d’application (également appelé *clé secrète client*)
+- Secret d’application Azure AD (également appelé *clé secrète client*)
 
 - ID de locataire (également appelé *ID de répertoire*)
 
@@ -73,7 +73,7 @@ Le fichier JSON doit être conforme à la définition de schéma requise par le 
 
 |Propriété|Description|Type de données|
 |---|---|---|
-|UserId|Un employé peut avoir plusieurs identités numériques sur les systèmes. L’ID de Azure AD doit déjà être résolu par le système source.|UPN ou adresse e-mail|
+|UserId|Un employé peut avoir plusieurs identités numériques sur les systèmes. L’ID Azure AD doit déjà être résolu par le système source pour l’entrée.|UPN ou adresse e-mail|
 |AssetId|ID de référence de la ressource physique ou du point d’accès physique.|Chaîne alphanumérique|
 |AssetName|Nom convivial de la ressource physique ou du point d’accès physique.|Chaîne alphanumérique|
 |EventTime|Horodatage de l’accès.|Date et heure, au format UTC|
@@ -199,8 +199,8 @@ Après avoir exécuté le script, le fichier JSON contenant les données de badg
 
    |Paramètre|Description|
    |---|---|
-   |tenantId|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenue à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation dans le panneau **Vue d’ensemble** du centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
-   |appId|Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365.|
+   |tenantId|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenue à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation dans le panneau **Vue d’ensemble** du Centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
+   |appId|Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Azure AD l’utilise pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365.|
    |appSecret|Il s’agit du secret d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est également utilisé pour l’authentification.|
    |jobId|Il s’agit de l’ID de travail du connecteur de badging physique que vous avez créé à l’étape 3. Cela permet d’associer les données de badging physiques envoyées au cloud Microsoft avec le connecteur de badging physique.|
    |JsonFilePath|Il s’agit du chemin d’accès du fichier JSON que vous avez créé à l’étape 2 sur l’ordinateur local (celui que vous utilisez pour exécuter le script). Ce fichier doit suivre l’exemple de schéma décrit à l’étape 3.|
@@ -233,7 +233,7 @@ Une fois que vous avez créé le connecteur de badging physique et envoyé (push
 
    ![Le fichier journal du connecteur de badging physique affiche le nombre d’objets du fichier JSON qui ont été chargés.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   Le champ **RecordsSaved** indique le nombre d’objets dans le fichier JSON chargé. Par exemple, si le fichier JSON contient quatre objets, la valeur des champs **RecordsSaved** est 4, si le script a correctement chargé tous les objets du fichier JSON.
+   Le champ **RecordsSaved** indique le nombre d’enregistrements dans le fichier JSON qui ont été chargés. Par exemple, si le fichier JSON contient quatre enregistrements, la valeur des champs **RecordsSaved** est 4 si le script a correctement chargé tous les enregistrements dans le fichier JSON. Le champ **RecordsSkipped** indique le nombre d’enregistrements du fichier JSON qui ont été ignorés. Avant de charger des enregistrements dans le fichier JSON, les ID d’e-mail des enregistrements sont validés. Tout enregistrement avec un ID d’e-mail non valide est ignoré et l’ID e-mail correspondant s’affiche dans le champ **EmailIdsNotSaved**.
 
 Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
 

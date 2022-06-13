@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: MET150
 description: Les applications et services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple Applications Microsoft 365 pour les PME.
 ms.date: 05/12/2022
-ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 56b650a4690151c913855d0007a34d2e2ddcba89
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403225"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043412"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
-Lorsque vous achetez un abonnement à Microsoft 365 pour les entreprises, vous vous inscrivez à un ensemble d’applications et de services que vous payez mensuellement ou annuellement. Les applications et services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est fourni avec chaque produit sur la [page Microsoft 365 pour les petites et moyennes entreprises](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
+Lorsque vous achetez un abonnement à Microsoft 365 pour les entreprises, vous vous inscrivez à un ensemble d’applications et de services que vous payez mensuellement ou annuellement. Les applications et services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est fourni avec chaque produit sur la [page Microsoft 365 pour les petites et moyennes entreprises](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Après avoir acheté un abonnement, vous créez des comptes pour les membres de votre organisation, puis vous attribuez une licence à chaque personne. À mesure que les besoins de votre organisation changent, vous pouvez acheter plus de licences pour accueillir de nouvelles personnes ou réaffecter des licences à d’autres utilisateurs lorsqu’une personne quitte votre organisation.
 
@@ -55,10 +55,10 @@ Si votre abonnement inclut l’un des produits suivants, chaque personne peut in
 Le tableau suivant indique ce qui se produit automatiquement lorsque vous attribuez une licence à quelqu'un :
   
 |Si l'abonnement inclut ce service|Cet événement se produit automatiquement|
-|:-----|:-----|
-|Exchange Online|Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le contrat SLA pour que cette tâche soit terminée, consultez [« Configuration... » messages dans le Centre d'administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
+|---|---|
+|Exchange Online|Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le contrat SLA pour que cette tâche soit terminée, consultez [« Configuration... » messages dans le Centre d'administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.|
-|Skype Entreprise Online|La personne a accès aux fonctionnalités associées à la licence.|
+|Microsoft Teams|La personne a accès aux fonctionnalités associées à la licence.|
 |Applications Microsoft 365 pour les grandes entreprises et Applications Microsoft 365 pour les PME|La personne peut télécharger Office applications sur jusqu’à cinq Mac ou PC, cinq tablettes et cinq smartphones.|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
@@ -74,7 +74,7 @@ Vous n'êtes pas obligé d'attribuer des licences aux boîtes aux lettres de res
 Plusieurs types d'administrateurs peuvent utiliser des licences de différentes façons, en fonction de leur rôle. Le tableau ci-dessous recense les options les plus courantes. Pour consulter la liste complète des rôles et des privilèges d'administrateur, voir [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
   
 |Rôle d’administrateur|Attribuer une licence|Annuler l’affectation d’une licence|Acheter davantage de licences|Supprimer un compte|
-|:-----|:-----|:-----|:-----|:-----|
+|---|:---:|:---:|:---:|:---:|
 |Administrateur de facturation|Non|Non|Oui|Non|
 |Administrateur global|Oui|Oui|Oui|Oui|
 |Administrateur de licences|Oui|Oui|Non|Non|

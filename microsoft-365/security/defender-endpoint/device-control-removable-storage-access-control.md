@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/06/2022
-ms.openlocfilehash: 335dd72bcbdee469f1e0b1c396c934c94d0339fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013718"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043630"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Stockage Access Control amovibles du contrôle d’appareil
 
@@ -125,7 +125,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour point de termi
 
     1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de cas d’usage : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier [Stockage amovible et CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
 
-    2. Groupe 2 : objets usb non approuvés basés sur les propriétés de l’appareil, par exemple, ID de fournisseur/ID de produit, nom convivial – Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier [de Group.xmlusbs non approuvés](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
+    2. Groupe 2 : objets usb non approuvés basés sur les propriétés de l’appareil, par exemple, ID de fournisseur/ID de produit, nom convivial - Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichiers [usBs non approuvés Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     > [!TIP]
     > `&amp;` Remplacez `&` par la valeur.
@@ -149,116 +149,144 @@ Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez
 Pour le déploiement de stratégie dans Intune, le compte doit disposer des autorisations nécessaires pour créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser l’un des rôles intégrés avec ces autorisations.
 
 - Rôle gestionnaire de stratégies et de profils
-
 - Rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lire/Supprimer/Afficher les rapports activées pour les profils de configuration d’appareil
-
 - Administrateur général
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Déploiement de Stockage Access Control amovibles à l’aide de Intune OMA-URI
 
 Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpoint.microsoft.com/>) **> Appareils > Créer un profil > Platform : Windows 10 et versions ultérieures, Type de profil : Modèles > Personnalisé**
 
-1. Activer ou désactiver les Stockage Access Control amovibles (RSAC) :<br> Vous pouvez activer les Stockage Access Control amovibles comme suit : 
-    - Sous **Paramètres de configuration > personnalisés**, cliquez sur **Ajouter**.
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** **en tant qu’activer RSAC** 
+1. Activer ou désactiver les Stockage Access Control amovibles (RSAC) :
 
-        - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+   Vous pouvez activer les Stockage Access Control amovibles comme suit :
 
-        - **Type de données** **en tant qu’entier**
-       
-        - **Valeur** **1**
-        
-           `Disable: 0` `Enable: 1`
+   - Sous **Paramètres de configuration > personnalisés**, cliquez sur **Ajouter**.
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** **en tant qu’activer RSAC**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+     - **Type de données** **en tant qu’entier**
+     - **Valeur** **1**
 
-        - Cliquez sur **Enregistrer**.
-    
-    :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Stockage Access Control amovible" lightbox="images/enable-rsac.png":::
-      
-2. Définir l’application par défaut :<br> 
-    Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie. <br> 
-    Par exemple, vous disposez d’une stratégie Deny ou Allow pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices. Vous définissez le refus par défaut via cette stratégie, puis l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices est bloqué. 
+       `Disable: 0`
+       `Enable: 1`
 
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** en tant que **refus par défaut**
-        - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - Cliquez sur **Enregistrer**.
 
-        - **Type de données** **en tant qu’entier**
-        
-        - **Valeur** **1** ou **2**
-        
-          `DefaultEnforcementAllow = 1`
-          `DefaultEnforcementDeny = 2`
-        - Cliquez sur **Enregistrer**.
-    
-    :::image type="content" source="images/default-deny.png" alt-text="Capture d’écran de la définition de l’application par défaut en tant que refus" lightbox="images/default-deny.png":::    
+   :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Stockage Access Control amovible" lightbox="images/enable-rsac.png":::
 
-3. Auditer le refus par défaut :<br> Vous pouvez créer une stratégie d’audit pour le refus par défaut comme suit :
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** en tant que **refus par défaut d’audit**
-        - **OMA-URI** en tant que     
-          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
-         :::image type="content" source="images/audit-default-deny-1.png" alt-text="Capture d’écran de la création d’une stratégie d’audit de refus par défaut" lightbox="images/audit-default-deny-1.png":::
-        - **Type de données** **sous forme de chaîne (fichier XML)**
-        - **Fichier XML personnalisé** en tant que **fichier audit par défaut Deny.xml** . <br>
-            Chemin du fichier XML : [mdatp-devicecontrol/Audit default Deny.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
-            <br>Utilisez les données XML suivantes pour créer une stratégie d’audit pour le refus par défaut :
+2. Définir l’application par défaut :
 
-            :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Capture d’écran du fichier xml de refus par défaut d’audit":::
-        
-   
-4. ReadOnly - Groupe : vous pouvez créer un groupe de stockage amovible avec un accès ReadOnly comme suit :
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** **d’un groupe Stockage amovible**
-        - **OMA-URI** en tant que   
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
-        :::image type="content" source="images/any-removable-storage-group.png" alt-text="Capture d’écran de la création d’un groupe Stockage amovible" lightbox="images/any-removable-storage-group.png":::
-        - **Type de données** **sous forme de chaîne (fichier XML)**
-        - **XML personnalisé** comme **n’importe quel fichier Stockage amovible et CD-DVD et Group.xmlWPD** <br>
-            Chemin du fichier XML : [mdatp-devicecontrol/Any Removable Stockage and CD-DVD and WPD Group.xml at main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)<br>
-            Utilisez les données XML suivantes pour créer « Any Removable Stockage and CD-DVD and WPD Group » avec l’accès ReadOnly :
-       
-           :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Capture d’écran du fichier xml de groupe en lecture seule":::
-      
-    
-5. ReadOnly - Stratégie : vous pouvez créer une stratégie ReadOnly et l’appliquer au groupe de stockage amovible ReadOnly pour autoriser l’activité de lecture comme suit :
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** comme **autoriser l’activité de lecture**
-        - **OMA-URI** en tant que   `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
-          :::image type="content" source="images/allow-read-activity.png" alt-text="capture d’écran de la stratégie Autoriser l’activité de lecture" lightbox= "images/allow-read-activity.png":::
-        - **Type de données** **sous forme de chaîne (fichier XML)**
-        - **Fichier XML personnalisé** en tant **qu’autorisation Read.xml** <br>
-            Chemin du fichier XML : [mdatp-devicecontrol/Allow Read.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)<br>
-            Utilisez les données XML suivantes pour créer une stratégie ReadOnly et l’appliquer au groupe de stockage amovible ReadOnly : :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Capture d’écran du fichier xml de stratégie en lecture seule":::
-     
+   Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie.
+
+   Par exemple, vous disposez d’une stratégie Deny ou Allow pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices. Vous définissez le refus par défaut via cette stratégie, puis l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices est bloqué.
+
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** en tant que **refus par défaut**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - **Type de données** **en tant qu’entier**
+     - **Valeur** **1** ou **2**
+
+       `DefaultEnforcementAllow = 1`
+       `DefaultEnforcementDeny = 2`
+
+     - Cliquez sur **Enregistrer**.
+
+   :::image type="content" source="images/default-deny.png" alt-text="Capture d’écran de la définition de l’application par défaut en tant que refus" lightbox="images/default-deny.png":::
+
+3. Auditer le refus par défaut :
+
+   Vous pouvez créer une stratégie d’audit pour le refus par défaut comme suit :
+
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** en tant que **refus par défaut d’audit**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+
+       :::image type="content" source="images/audit-default-deny-1.png" alt-text="Capture d’écran de la création d’une stratégie d’audit de refus par défaut" lightbox="images/audit-default-deny-1.png":::
+
+     - **Type de données** **sous forme de chaîne (fichier XML)**
+     - **Fichier XML personnalisé** en tant que **fichier audit par défaut Deny.xml** .
+
+       Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
+
+       Utilisez les données XML suivantes pour créer une stratégie d’audit pour le refus par défaut :
+
+       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Capture d’écran du fichier xml de refus par défaut d’audit":::
+
+4. ReadOnly - Groupe :
+
+   Vous pouvez créer un groupe de stockage amovible avec l’accès ReadOnly comme suit :
+
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** **d’un groupe Stockage amovible**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Capture d’écran de la création d’un groupe Stockage amovible" lightbox="images/any-removable-storage-group.png":::
+
+     - **Type de données** **sous forme de chaîne (fichier XML)**
+       - **XML personnalisé** comme **n’importe quel fichier Stockage amovible et CD-DVD et Group.xmlWPD**
+
+         Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+
+         Utilisez les données XML suivantes pour créer « Any Removable Stockage and CD-DVD and WPD Group » avec l’accès ReadOnly :
+
+         :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Capture d’écran du fichier xml de groupe en lecture seule":::
+
+5. ReadOnly - Stratégie :
+
+   Vous pouvez créer une stratégie ReadOnly et l’appliquer au groupe de stockage amovible ReadOnly pour autoriser l’activité de lecture comme suit :
+
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** comme **autoriser l’activité de lecture**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
+
+       :::image type="content" source="images/allow-read-activity.png" alt-text="Capture d’écran de la stratégie Autoriser l’activité de lecture" lightbox= "images/allow-read-activity.png":::
+
+     - **Type de données** **sous forme de chaîne (fichier XML)**
+     - **Fichier XML personnalisé** en tant **qu’autorisation Read.xml**
+
+       Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
+
+       Utilisez les données XML suivantes pour créer une stratégie ReadOnly et l’appliquer au groupe de stockage amovible ReadOnly :
+
+       :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Capture d’écran du fichier xml de stratégie en lecture seule":::
+
 6. Créer un groupe pour les médias autorisés : vous pouvez créer un groupe de supports autorisés comme suit :
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** en tant que **groupe USB approuvé**
-        - **OMA-URI** en tant que     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
-    :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Capture d’écran de la création d’un groupe usb approuvé" lightbox="images/create-group-allowed-medias.png"::: 
-        - **Type de données** **sous forme de chaîne (fichier XML)** 
-        - **XML personnalisé** en tant que fichier **Group.xmlusb approuvé** <br>
-            Chemin du fichier XML : [mdatp-devicecontrol/Approved USBs Group.xml at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)<br>
-            Utilisez les données XML suivantes pour créer un groupe de supports autorisés : :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Capture d’écran de la création d’un groupe pour le fichier xml medias autorisé":::
-      
-   
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** en tant que **groupe USB approuvé**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+
+       :::image type="content" source="images/create-group-allowed-medias.png" alt-text="Capture d’écran de la création d’un groupe usb approuvé" lightbox="images/create-group-allowed-medias.png":::
+
+     - **Type de données** **sous forme de chaîne (fichier XML)**
+     - **XML personnalisé** en tant que fichier **Group.xmlusb approuvé**
+
+       Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
+
+       Utilisez les données XML suivantes pour créer un groupe de supports autorisés :
+
+       :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Capture d’écran de la création d’un groupe pour un fichier xml multimédia autorisé":::
+
 7. Créer une stratégie pour autoriser le groupe USB approuvé : vous pouvez créer une stratégie pour autoriser le groupe USB approuvé comme suit :
-    - Dans le volet **Ajouter une ligne** , entrez :
-        - **Nom** **en tant qu’autorisation d’accès et informations de fichier d’audit**
-        - **OMA-URI** en tant que     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
-    :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Capture d’écran des informations autoriser l’accès et le fichier d’audit" lightbox= "images/allow-access-audit-file-information-1.png":::
-        - **Type de données** **sous forme de chaîne (fichier XML)** 
-        - **XML personnalisé** en tant **qu’autorisation d’accès complet et d’audit file.xml**  fichier <br>
-            Chemin du fichier XML : [mdatp-devicecontrol/Autoriser les file.xml d’accès et d’audit complets au niveau principal · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)<br>
-            Utilisez les données XML suivantes pour créer une stratégie pour autoriser le groupe USB approuvé : :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Capture d’écran de la création d’une stratégie pour autoriser le fichier XML de groupe USB approuvé":::
-      
-           Que signifie « 47 » dans la politique ? <br> 
-           Il est de 9 + 2 + 36 = 47 : <br>
-           Accès en lecture : 1+8 = 9 <br>
-           Accès en écriture : niveau disque 2 <br>
-           Exécution : 4 + 32 = 36
+   - Dans le volet **Ajouter une ligne** , entrez :
+     - **Nom** **en tant qu’autorisation d’accès et informations de fichier d’audit**
+     - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+
+       :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="Capture d’écran des informations autoriser l’accès et le fichier d’audit" lightbox= "images/allow-access-audit-file-information-1.png":::
+
+     - **Type de données** **sous forme de chaîne (fichier XML)**
+     - **XML personnalisé** en tant **qu’autorisation d’accès complet et d’audit file.xml**  fichier
+
+       Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml>
+
+       Utilisez les données XML suivantes pour créer une stratégie pour autoriser le groupe USB approuvé :
+
+       :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="Capture d’écran de la création d’une stratégie pour autoriser le fichier XML du groupe USB approuvé":::
+
+       Que signifie « 47 » dans la stratégie ? C’est 9 + 2 + 36 = 47 :
+
+       - Accès en lecture : 1 + 8 = 9.
+       - Accès en écriture : niveau disque 2.
+       - Exécution : 4 + 32 = 36.
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Déploiement et gestion d’une stratégie à l’aide de Intune’interface utilisateur
 
@@ -274,68 +302,102 @@ Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez
 
 ### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe
 
-1. Activez ou désactivez les Stockage Access Control amovibles : <br> Vous pouvez activer les Stockage Access Control amovibles (RSAC) comme suit :<br> 
-    - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > fonctionnalités > contrôle d’appareil**
-    - Dans la fenêtre **Contrôle d’appareil** , sélectionnez **Activé**.
-      
-    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Capture d’écran de l’activation de RSAC à l’aide de stratégie de groupe " lightbox="images/enable-rsac-gp.png":::
-      
-2. Définir l’application par défaut : <br> 
-    Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie comme suit : 
-    - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > fonctionnalités > contrôle d’appareil > sélectionner l’application par défaut du contrôle d’appareil**
+1. Activez ou désactivez les Stockage Access Control amovibles :
 
-    - Dans la fenêtre **Sélectionner l’application par défaut du contrôle d’appareil** , sélectionnez **Refuser par défaut** :
-    
-     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Capture d’écran de la définition de l’application par défaut = Refuser à l’aide de stratégie de groupe" lightbox="images/set-default-enforcement-deny-gp.png":::    
+   Vous pouvez activer les Stockage Access Control amovibles (RSAC) comme suit :
 
-3. Auditer le refus par défaut : <br> Utilisez les données XML suivantes pour créer une stratégie d’audit pour le refus par défaut :
-    
-    :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Capture d’écran de l’audit des données xml de refus par défaut":::
-      
-  
-4. ReadOnly - Groupe : <br>
+   - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > fonctionnalités > contrôle d’appareil**
+   - Dans la fenêtre **Contrôle d’appareil** , sélectionnez **Activé**.
+
+   :::image type="content" source="images/enable-rsac-gp.png" alt-text="Capture d’écran de l’activation de RSAC à l’aide de stratégie de groupe " lightbox="images/enable-rsac-gp.png":::
+
+2. Définir l’application par défaut :
+
+   Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie comme suit :
+
+   - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > fonctionnalités > contrôle d’appareil > sélectionner l’application par défaut du contrôle d’appareil**
+
+   - Dans la fenêtre **Sélectionner l’application par défaut du contrôle d’appareil** , sélectionnez **Refuser par défaut** :
+
+   :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Capture d’écran de la définition de l’application par défaut = Refuser à l’aide de stratégie de groupe" lightbox="images/set-default-enforcement-deny-gp.png":::
+
+3. Auditer le refus par défaut :
+
+   Utilisez les données XML suivantes pour créer une stratégie d’audit pour le refus par défaut :
+
+   :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Capture d’écran de l’audit des données xml de refus par défaut":::
+
+4. ReadOnly - Groupe :
+
    Utilisez les données XML suivantes pour créer un groupe de stockage amovible avec accès ReadOnly :
- 
+
    :::image type="content" source="images/read-only-group-gp.png" alt-text="Capture d’écran des données xml de groupe de stockage amovible en lecture seule":::
-      
-    
-5. ReadOnly - Stratégie : <br> Utilisez les données XML suivantes pour créer une stratégie ReadOnly et appliquer au groupe de stockage amovible ReadOnly pour autoriser l’activité de lecture :
-  
+
+5. ReadOnly - Stratégie :
+
+   Utilisez les données XML suivantes pour créer une stratégie ReadOnly et appliquer au groupe de stockage amovible ReadOnly pour autoriser l’activité de lecture :
+
     :::image type="content" source="images/read-only-policy-gp.png" alt-text="Capture d’écran des données XML de stratégie en lecture seule" lightbox="images/read-only-policy-gp.png":::
-        
-   
-6. Créer un groupe pour les supports autorisés : <br> Utilisez les données XML suivantes pour créer un groupe de supports de stockage amovible autorisé :
-    
+
+6. Créer un groupe pour les supports autorisés :
+
+   Utilisez les données XML suivantes pour créer un groupe de supports de stockage amovible autorisé :
+
    :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="Capture d’écran des données xml permettant de créer un groupe pour les supports autorisés" lightbox="images/create-group-allowed-medias-gp.png":::
-      
-    
-7. Créez une stratégie pour autoriser le groupe USB approuvé : <br> Utilisez les données XML suivantes pour créer une stratégie pour autoriser le groupe USB approuvé :
-    
-    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Capture d’écran des données XML permettant de créer une stratégie pour autoriser le groupe USB approuvé à l’aide de stratégie de groupe" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
-      
-   Que signifie « 47 » dans la politique ? <br> Il est de 9 + 2 + 36 = 47 : <br>
-   Accès en lecture : 1+8 = 9 <br>
-   Accès en écriture : niveau disque 2 <br>
-   Exécution : 4 + 32 = 36
 
-8. Combinez des groupes en un seul fichier XML : <br> Vous pouvez combiner des groupes de stratégies de contrôle d’appareil dans un fichier XML comme suit :<br> 
-    - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > contrôle d’appareil > Définir des groupes de stratégies**
-    :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="de contrôle d’appareil Capture d’écran de la capture d’écran Définir des groupes de stratégies de contrôle d’appareil" lightbox="images/define-device-control-policy-grps-gp.png":::
-    - Dans la fenêtre **Définir des groupes de stratégies de contrôle d’appareil** , entrez le chemin d’accès du fichier contenant les données des groupes XML. <br>
-    Chemin du fichier XML : [mdatp-devicecontrol/Demo_Groups.xml à main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)<br>
-    Voici le schéma xml des groupes de stratégies de contrôle d’appareil : :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="capture d’écran de la combinaison de groupes dans un fichier XML":::
+7. Créez une stratégie pour autoriser le groupe USB approuvé :
 
-9. Combinez les stratégies en un seul fichier XML : <br> Vous pouvez combiner des règles de stratégie de contrôle d’appareil dans un fichier XML comme suit :<br> 
-    - Accéder à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > Contrôle d’appareil > Définir des règles**
-    :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="de stratégie de contrôle d’appareil Capture d’écran de la définition des règles de stratégie de contrôle d’appareil" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
-    - Dans la fenêtre **Définir les règles de stratégie de contrôle d’appareil** , sélectionnez **Activé**, puis entrez le chemin d’accès du fichier contenant les données de règles XML. <br>
-    Chemin du fichier XML : [mdatp-devicecontrol/Demo_Policies.xml à main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml)<br>
-    Voici le schéma xml des règles de stratégie de contrôle d’appareil : :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="capture d’écran de la combinaison de stratégies dans un fichier XML":::
+   Utilisez les données XML suivantes pour créer une stratégie pour autoriser le groupe USB approuvé :
 
-10. Définir l’emplacement d’une copie du fichier (preuve) : <br>Si vous souhaitez avoir une copie du fichier (preuve) lorsque l’accès en écriture se produit, vous devez définir l’emplacement où le système peut enregistrer la copie.<br>
+   :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="Capture d’écran des données XML permettant de créer une stratégie pour autoriser le groupe USB approuvé à l’aide de stratégie de groupe" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
+
+   Que signifie « 47 » dans la stratégie ? C’est 9 + 2 + 36 = 47 :
+
+   - Accès en lecture : 1+8 = 9.
+   - Accès en écriture : niveau disque 2.
+   - Exécution : 4 + 32 = 36.
+
+8. Combinez des groupes en un seul fichier XML :
+
+   Vous pouvez combiner des groupes de stratégies de contrôle d’appareil dans un fichier XML comme suit :
+
+   - Accédez  aux modèles \> **d’administration** de configuration \> d’ordinateur **Windows composants** \> **Antivirus Microsoft Defender** \> **Contrôle** \> **d’appareil Définir des groupes de stratégies de contrôle d’appareil**.
+
+    :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Capture d’écran de définir des groupes de stratégies de contrôle d’appareil" lightbox="images/define-device-control-policy-grps-gp.png":::
+
+   - Dans la fenêtre **Définir des groupes de stratégies de contrôle d’appareil** , entrez le chemin d’accès du fichier contenant les données des groupes XML.
+
+     Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
+
+     Voici le schéma xml des groupes de stratégies de contrôle d’appareil :
+
+     :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="Capture d’écran de la combinaison de groupes dans un fichier XML":::
+
+9. Combinez les stratégies en un seul fichier XML :
+
+   Vous pouvez combiner des règles de stratégie de contrôle d’appareil dans un fichier XML comme suit :
+
+   - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > contrôle d’appareil > définir des règles de stratégie de contrôle d’appareil**
+
+     :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Capture d’écran de la définition des règles de stratégie de contrôle d’appareil" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
+
+   - Dans la fenêtre **Définir les règles de stratégie de contrôle d’appareil** , sélectionnez **Activé**, puis entrez le chemin d’accès du fichier contenant les données de règles XML.
+
+     Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml>
+
+     Voici le schéma xml des règles de stratégie de contrôle d’appareil :
+
+    :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="Capture d’écran de la combinaison de stratégies dans un fichier XML":::
+
+10. Définir l’emplacement d’une copie du fichier (preuve) :
+
+    Si vous souhaitez avoir une copie du fichier (preuve) lorsque l’accès en écriture se produit, vous devez définir l’emplacement où le système peut enregistrer la copie.
+
     - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > contrôle d’appareil > Définir l’emplacement distant des données de preuve de contrôle d’appareil**.
-    - Dans la fenêtre **Définir l’emplacement distant des données de preuve de Contrôle d’appareil** , **sélectionnez Activé** et entrez le chemin d’accès du dossier de partage local ou réseau. <br>
-    :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Capture d’écran de l’emplacement distant des données de preuve Définir le contrôle d’appareil" lightbox="images/evidence-data-remote-location-gp.png":::
+
+    - Dans la fenêtre **Définir l’emplacement distant des données de preuve de Contrôle d’appareil** , **sélectionnez Activé** et entrez le chemin d’accès du dossier de partage local ou réseau.
+
+      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Capture d’écran de l’emplacement distant des données de preuve Définir le contrôle d’appareil" lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données de Stockage Access Control amovibles du contrôle d’appareil dans Microsoft Defender pour point de terminaison
 
@@ -365,20 +427,20 @@ DeviceEvents
 ```
 
 ```kusto
-//information of file written to removable storage 
+//information of file written to removable storage
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend Policy = tostring(parsed.Policy)
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId)
 | extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaInstanceId = tostring(parsed.InstanceId)
 | extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend MediaProductId = tostring(parsed.ProductId)
+| extend MediaVendorId = tostring(parsed.VendorId)
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)
 | extend FileInformationOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation)
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
@@ -395,9 +457,9 @@ Vous pouvez générer un GUID via des open source en ligne ou via PowerShell - [
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>Quelles sont les limitations de stratégie et de média de stockage amovibles ?
 
-À partir du centre d’administration Microsoft Endpoint Manager (Intune) ou par le biais de Microsoft API Graph, l’appel principal est effectué via OMA-URI (GET to read ou PATCH to update), et par conséquent, la limitation est la même que n’importe quel profil de configuration personnalisé OMA-URI dans Microsoft, qui est officiellement de 350 000 caractères pour les fichiers XML. 
-    
-Par exemple, si vous avez besoin de deux blocs d’entrées par SID utilisateur pour « Autoriser » /« Auditer autorisé » des utilisateurs spécifiques et de deux blocs d’entrées à la fin de « Refuser », vous serez en mesure de gérer 2 276 utilisateurs. 
+À partir du centre d’administration Microsoft Endpoint Manager (Intune) ou par le biais de Microsoft API Graph, l’appel principal est effectué via OMA-URI (GET to read ou PATCH to update), et par conséquent, la limitation est la même que n’importe quel profil de configuration personnalisé OMA-URI dans Microsoft, qui est officiellement de 350 000 caractères pour les fichiers XML.
+
+Par exemple, si vous avez besoin de deux blocs d’entrées par SID utilisateur pour « Autoriser » /« Auditer autorisé » des utilisateurs spécifiques et de deux blocs d’entrées à la fin de « Refuser », vous serez en mesure de gérer 2 276 utilisateurs.
 
 ### <a name="why-does-the-policy-not-work"></a>Pourquoi la stratégie ne fonctionne-t-elle pas ?
 

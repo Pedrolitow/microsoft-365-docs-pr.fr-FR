@@ -24,3 +24,9 @@
       href: moodle-plugin-configuration.md
     - name: Utiliser Microsoft Teams classes et réunions avec Moodle
       href: teams-classes-meetings-with-moodle.md
+- name: Ouvrir les intégrations LMS
+  items:
+    - name: Configurer et configurer le plug-in Moodle pour Open LMS
+      href: open-lms-plugin-configuration.md
+    - name: Utiliser Microsoft Teams classes et réunions avec Open LMS
+      href: open-lms-teams-classes-and-meetings.md

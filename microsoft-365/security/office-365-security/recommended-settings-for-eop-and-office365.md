@@ -19,16 +19,16 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 921523ea3c1d73dc83c148cc2e61aab416ed9302
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: bd30be87a277d271fece74a9700a60992a562399
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599296"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043024"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -120,7 +120,7 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 > [!NOTE]
 > Les stratégies de courrier indésirable sortant ne font pas partie des stratégies de sécurité prédéfinies Standard ou Strict. Les valeurs **Standard** et **Strict** indiquent nos valeurs **recommandées** dans la stratégie de courrier indésirable sortant par défaut ou dans les stratégies de courrier indésirable sortant personnalisées que vous créez.
 
-|Nom de la fonctionnalité de sécurité|Par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Valeur par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Définir une limite de messages externes** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Définir une limite de messages internes** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
@@ -153,7 +153,7 @@ Pour créer et configurer des stratégies anti-programme malveillant, consultez 
 |**À partir du nom** <br/><br/> _CustomFromName_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Adresse de provenance** <br/><br/> _CustomFromAddress_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Personnaliser les notifications pour les messages des expéditeurs internes**||||Ces paramètres sont utilisés uniquement si **l’option Avertir les expéditeurs internes lorsque des messages sont mis en quarantaine en tant que programmes malveillants** ou **si l’option Informer un administrateur des messages non remis provenant d’expéditeurs internes** est sélectionnée.|
-|**Sujet** <br/><br/> _CustomInternalSubject_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
+|**Subject** <br/><br/> _CustomInternalSubject_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Message** <br/><br/> _CustomInternalBody_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
 |**Personnaliser les notifications pour les messages des expéditeurs externes**||||Ces paramètres sont utilisés uniquement si **l’option Avertir les expéditeurs externes lorsque des messages sont mis en quarantaine en tant que programmes malveillants** ou **si l’option Informer un administrateur des messages non remis provenant d’expéditeurs externes** est sélectionnée.|
 |**Sujet** <br/><br/> _CustomExternalSubject_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`||
@@ -208,10 +208,10 @@ Pour plus d’informations sur ces paramètres, consultez [Les paramètres d’e
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil d’hameçonnage & protection**|||||
-|**Permettre aux utilisateurs de protéger** (protection des utilisateurs empruntés) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Non sélectionnée <br/><br/> `$false` <br/><br/> none|Sélectionné <br/><br/> `$true` <br/><br/> \<list of users\>|Sélectionné <br/><br/> `$true` <br/><br/> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans des rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, le directeur financier et d’autres hauts dirigeants. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration. <br/><br/> Dans les stratégies de sécurité prédéfinies, vous ne pouvez pas spécifier les utilisateurs à protéger. Vous devez désactiver les stratégies de sécurité prédéfinies et utiliser des stratégies anti-hameçonnage personnalisées pour ajouter des utilisateurs dans des rôles clés, comme suggéré.|
+|**Permettre aux utilisateurs de protéger** (protection des utilisateurs empruntés) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Non sélectionnée <br/><br/> `$false` <br/><br/> none|Sélectionné <br/><br/> `$true` <br/><br/> \<list of users\>|Sélectionné <br/><br/> `$true` <br/><br/> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans des rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, le directeur financier et d’autres hauts dirigeants. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
 |**Activer la protection des domaines** (protection de domaine empruntée)|Non sélectionnée|Sélectionné|Sélectionné||
 |**Inclure les domaines que je possède** <br/><br/> _EnableOrganizationDomainsProtection_|Désactivé <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
-|**Inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Désactivé <br/><br/> `$false` <br/><br/> none|Sélectionné <br/><br/> `$true` <br/><br/> \<list of domains\>|Sélectionné <br/><br/> `$true` <br/><br/> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec lesquels vous interagissez fréquemment. <br/><br/> Dans les stratégies de sécurité prédéfinies, vous ne pouvez pas spécifier les domaines custm à protéger. Vous devez désactiver les stratégies de sécurité prédéfinies et utiliser des stratégies anti-hameçonnage personnalisées pour ajouter des domaines personnalisés à protéger comme suggéré.|
+|**Inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Désactivé <br/><br/> `$false` <br/><br/> none|Sélectionné <br/><br/> `$true` <br/><br/> \<list of domains\>|Sélectionné <br/><br/> `$true` <br/><br/> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec lesquels vous interagissez fréquemment.|
 |**Ajouter des expéditeurs et des domaines de confiance** <br/><br/> _ExcludedSenders_ <br/><br/> _ExcludedDomains_|Aucun|Aucun|Aucun|Selon votre organisation, nous vous recommandons d’ajouter des expéditeurs ou des domaines qui sont incorrectement identifiés comme tentatives d’emprunt d’identité.|
 |**Activer l’intelligence de boîte aux lettres** <br/><br/> _EnableMailboxIntelligence_|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`||
 |**Activer l’intelligence pour la protection de l’emprunt d’identité** <br/><br/> _EnableMailboxIntelligenceProtection_|Désactivé <br/><br/> `$false`|Sélectionné <br/><br/> `$true`|Sélectionné <br/><br/> `$true`|Ce paramètre autorise l’action spécifiée pour les détections d’emprunt d’identité par intelligence de boîte aux lettres.|
@@ -244,7 +244,7 @@ Pour configurer ces paramètres, consultez [Activer les pièces jointes Coffre p
 
 Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-|Nom de la fonctionnalité de sécurité|Par défaut|Protection intégrée|Commentaire|
+|Nom de la fonctionnalité de sécurité|Valeur par défaut|Protection intégrée|Commentaire|
 |---|:---:|:---:|---|
 |**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Désactivé <br/><br/> `$false`|Activé <br/><br/> `$true`|Pour empêcher les utilisateurs de télécharger des fichiers malveillants, consultez [Utiliser SharePoint Online PowerShell pour empêcher les utilisateurs de télécharger des fichiers malveillants](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
 |**Activer les documents Coffre pour les clients Office** <br/><br/> _EnableSafeDocs_|Désactivé <br/><br/> `$false`|Activé <br/><br/> `$true`|Cette fonctionnalité est disponible et significative uniquement avec des licences qui ne sont pas incluses dans Defender pour Office 365 (par exemple, Microsoft 365 E5 ou Microsoft 365 E5 Sécurité). Pour plus d’informations, consultez [Coffre Documents dans Microsoft 365 E5](safe-docs.md).|
@@ -285,7 +285,7 @@ Pour configurer ces paramètres, consultez [Configurer les paramètres globaux p
 
 Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-|Nom de la fonctionnalité de sécurité|Par défaut|Protection intégrée|Commentaire|
+|Nom de la fonctionnalité de sécurité|Valeur par défaut|Protection intégrée|Commentaire|
 |---|:---:|:---:|---|
 |**Bloquer les URL suivantes** <br/><br/> _ExcludedUrls_|Vide <br/><br/> `$null`|Vide <br/><br/> `$null`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br/><br/> Pour plus d’informations, consultez [la liste « Bloquer les URL suivantes » pour Coffre liens](safe-links.md#block-the-following-urls-list-for-safe-links).
 |**Utiliser des liens Coffre dans des applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utilisez Coffre Liens dans les applications de bureau et mobiles (iOS et Android) prises en charge Office 365. Pour plus d’informations, consultez [Coffre Paramètres de liens pour les applications Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|

@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Vous avez une question sur le fonctionnement de Microsoft Purview Message Encryption ? Recherchez une réponse ici.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 92311ec82b7c9e5507cba5b0bd1feb457f9f729f
-  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+  ms.openlocfilehash: 4d365174ff7fa7db71939a10de0a57e50dbd4d46
+  ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/10/2022
-  ms.locfileid: "66013065"
+  ms.lasthandoff: 06/13/2022
+  ms.locfileid: "66043041"
 title: FAQ sur le chiffrement des messages
 summary: >
   [!include[Purview banner](../includes/purview-rebrand-banner.md)]
@@ -45,7 +45,7 @@ sections:
       - Microsoft Purview Message Encryption est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft 365 Entreprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, et Office 365 Secteur public G3 et G5. Vous n’avez pas besoin de licences supplémentaires pour recevoir les nouvelles fonctionnalités de protection optimisées par Azure Information Protection.
 
 
-      - Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir Microsoft Purview Message Encryption : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.
+      - Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir Microsoft Purview Message Encryption : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F3, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.
 
 
       - Chaque utilisateur bénéficiant de Microsoft Purview Message Encryption doit être concédé sous licence pour être couvert par la fonctionnalité.
@@ -151,7 +151,7 @@ sections:
       Oui. Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de DLP dans le portail de conformité Microsoft Purview.
   - question: >
       Puis-je personnaliser des messages chiffrés avec la personnalisation de mon entreprise ?
-    answer: "Oui. Pour plus d’informations sur la personnalisation des messages électroniques et du portail OME, consultez Ajouter la marque de votre organisation à vos messages chiffrés. Voir [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
+    answer: "Oui, pour le courrier envoyé à partir d’une boîte aux lettres Exchange Online dans votre organisation ! Pour plus d’informations sur la personnalisation des messages électroniques et du portail OME, consultez [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
   - question: >
       Existe-t-il des fonctionnalités de création de rapports ou des insights pour les e-mails chiffrés ?
     answer: "Il existe un rapport de chiffrement dans le Centre de sécurité et de conformité. Consultez [Afficher les rapports de sécurité par e-mail dans le Centre de sécurité & conformité](../security/office-365-security/view-email-security-reports.md).\n  \n"

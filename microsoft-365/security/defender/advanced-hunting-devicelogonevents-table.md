@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 516b74eb8d1e62194718e0ad3234b3269e07fb83
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: ec3002a30e9b5f20636a272574dcc3d6d00e4389
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731370"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044407"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -58,14 +58,14 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `IsLocalAdmin` | `boolean` | Indicateur booléen indiquant si l’utilisateur est un administrateur local sur l’ordinateur |
 | `LogonId` | `string` | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
 | `RemoteDeviceName` | `string` | Nom de l’ordinateur qui a effectué une opération à distance sur l’ordinateur concerné. Selon l’événement signalé, ce nom peut être un nom de domaine complet (FQDN), un nom NetBIOS ou un nom d’hôte sans informations de domaine |
-| `RemoteIP` | `string` | Adresse IP à laquelle la connexion était en cours |
+| `RemoteIP` | `string` | Adresse IP de l’appareil à partir duquel la tentative d’ouverture de session a été effectuée |
 | `RemoteIPType` | `string` | Type d’adresse IP, par exemple Public, Privé, Réservé, Bouclage, Teredo, FourToSixMapping et Diffusion |
 | `RemotePort` | `int` | Port TCP sur l’appareil distant auquel il était connecté |
 | `InitiatingProcessAccountDomain` | `string` | Domaine du compte qui a exécuté le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | `string` | Nom d’utilisateur du compte qui a exécuté le processus responsable de l’événement |
 | `InitiatingProcessAccountSid` | `string` | Identificateur de sécurité (SID) du compte qui a exécuté le processus responsable de l’événement |
 | `InitiatingProcessAccountUpn` | `string` | Nom d’utilisateur principal (UPN) du compte qui a exécuté le processus responsable de l’événement |
-| ` InitiatingProcessAccountObjectId` | `string` | Azure AD ID d’objet du compte d’utilisateur qui a exécuté le processus responsable de l’événement |
+| ` InitiatingProcessAccountObjectId` | `string` | ID d’objet Azure AD du compte d’utilisateur qui a exécuté le processus responsable de l’événement |
 | `InitiatingProcessIntegrityLevel` | `string` | Niveau d’intégrité du processus qui a initié l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
 | `InitiatingProcessTokenElevation` | `string` | Type de jeton indiquant la présence ou l’absence d’élévation de privilèges Access Control utilisateur (UAC) appliquée au processus qui a initié l’événement |
 | `InitiatingProcessSHA1` | `string` | SHA-1 du processus (fichier image) qui a initié l’événement |

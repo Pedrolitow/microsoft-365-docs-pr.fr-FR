@@ -20,16 +20,16 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 05/12/2022
-ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403291"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044320"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
-Si vous avez plusieurs abonnements, si vous avez des utilisateurs disposant d’une licence pour un abonnement, mais que vous souhaitez les déplacer vers un autre abonnement, vous pouvez remplacer leur licence existante par une licence différente.
+Si vous avez plusieurs produits, si vous avez des utilisateurs disposant d’une licence pour un produit, mais que vous souhaitez les déplacer vers un autre produit, vous pouvez remplacer leur licence existante par une licence différente.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -49,7 +49,7 @@ Vous devez être un administrateur global, de licence ou d'utilisateur pour attr
 
 ::: moniker-end
 
-2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
+2. Cochez les cases en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 
 3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
 
@@ -57,7 +57,7 @@ Vous devez être un administrateur global, de licence ou d'utilisateur pour attr
 
 5. En bas, **sélectionnez Enregistrer les modifications** \> **close**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 

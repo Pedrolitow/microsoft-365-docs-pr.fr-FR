@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre de Administration Microsoft 365
-ms.openlocfilehash: 4d23990253b96e57df04411a2207d089c90711ca
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621812"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043827"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre de Administration Microsoft 365
 
@@ -34,8 +34,8 @@ Le centre Administration Microsoft 365 inclut désormais des métriques de conne
 > [!div class="mx-imgBorder"]
 > ![Page de performances réseau.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->La connectivité réseau dans le Centre d’administration prend en charge les locataires de WW Commercial et d’Allemagne, mais pas Cloud de la communauté du secteur public Moderate, Cloud de la communauté du secteur public High, DoD ou Chine.
+> [!NOTE]
+> La connectivité réseau dans le Centre d’administration prend en charge les locataires de WW Commercial et d’Allemagne, mais pas Cloud de la communauté du secteur public Moderate, Cloud de la communauté du secteur public High, DoD ou Chine.
 
 Lorsque vous accédez pour la première fois à la page de performances réseau, vous devez configurer vos emplacements pour afficher la carte des performances réseau globales, une évaluation réseau étendue à l’ensemble du locataire, le pourcentage de vos utilisateurs travaillant à distance par rapport à l’emplacement, et une liste des problèmes actuels pour prendre des mesures et/ou pour approfondir vos recherches. Dans le volet vue d’ensemble, vous pouvez explorer les métriques et les problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, consultez [la vue d’ensemble des performances réseau dans le centre de Administration Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -202,14 +202,46 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    > [!div class="mx-imgBorder"]
    > ![Message prêt pour l’importation CSV.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## <a name="cqd-tsv-import-for-lan-subnet-office-locations"></a>Importation TSV CQD pour les emplacements de bureau du sous-réseau LAN
+
+Si vous avez chargé des données de génération dans votre tableau de bord qualité des appels, vous pouvez ajouter ces emplacements ici pour commencer à évaluer leur connectivité réseau. Cela n’affecte pas vos emplacements existants.
+
+[Accédez à l’Télécharger de données](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) client dans le tableau de bord qualité des appels. Si vous avez chargé vos données de construction, vous verrez une option pour les télécharger dans un fichier .tsv. Téléchargez le fichier .tsv à partir du tableau de bord qualité des appels, puis chargez-le dans le menu volant CQD en suivant les étapes ci-dessous. Si vous souhaitez créer manuellement le fichier .tsv, alignez le schéma sur celui de Télécharger fichier de données de génération, ou essayez plutôt l’importation CSV pour les emplacements de bureau du sous-réseau LOCAL.
+
+1. Dans la fenêtre Connectivité principale à Microsoft 365, cliquez sur l’onglet **Emplacements**.
+
+2. Cliquez sur le bouton **Gérer plusieurs emplacements** juste au-dessus de la liste des emplacements.
+
+   > [!div class="mx-imgBorder"]
+   > ![Menu Gérer plusieurs emplacements.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. Cliquez sur **Ajouter des emplacements à partir du tableau de bord Qualité** des appels. Le menu volant **Ajouter des emplacements du tableau de bord qualité** des appels s’affiche.
+
+   > [!div class="mx-imgBorder"]
+   > ![Ajoutez des emplacements à partir du menu volant Tableau de bord qualité des appels.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. Cliquez sur le bouton **Parcourir** en regard du **fichier Sélectionner un fichier .tsv pour charger** le champ, puis sélectionnez le fichier TSV enregistré. Vérifiez que la valeur du fichier est séparée par des tabulations.
+
+5. Le fichier est automatiquement validé et analysé dans la liste des emplacements de bureau. En cas d’erreurs de validation, le menu volant **Nous n’avons pas pu charger votre fichier** apparaît pour répertorier les erreurs.
+
+   > [!div class="mx-imgBorder"]
+   > ![Nous n’avons pas pu charger votre menu volant de fichiers.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. S’il n’y a aucune erreur dans le fichier, le message suivant s’affiche : _votre fichier test.tsv est chargé et prêt. Sélectionnez Importer pour charger vos informations._
+
+   > [!div class="mx-imgBorder"]
+   > ![Sélectionnez un fichier .tsc à charger.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. Cliquez sur **Télécharger** bouton en bas du panneau pour charger les emplacements du bureau.
+
 ## <a name="faq"></a>FAQ
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’entrée de service Microsoft 365 ?
 
 La porte d’entrée du service Microsoft 365 est un point d’entrée sur le réseau mondial de Microsoft où Office clients et services mettent fin à leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé que votre connexion réseau soit arrêtée dans la porte d’entrée Microsoft 365 la plus proche.
 
->[!NOTE]
->Microsoft 365 porte d’entrée de service n’a pas de relation directe avec le produit Azure Front Door Service disponible sur la Place de marché Azure.
+> [!NOTE]
+> Microsoft 365 porte d’entrée de service n’a pas de relation directe avec le produit Azure Front Door Service disponible sur la Place de marché Azure.
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’entrée de service Microsoft 365 optimale ?
 

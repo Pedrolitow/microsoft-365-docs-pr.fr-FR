@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil de test de la connectivité du réseau Microsoft 365
-ms.openlocfilehash: 047a1ad10efa20f2c47491a20855a92bf141eb15
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: ac2ec12ac0da2309e1d5ac0c35bbd0462cc68a62
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705578"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043706"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Outil de test de la connectivité du réseau Microsoft 365
 
@@ -163,7 +163,7 @@ L’emplacement recherché à partir de l’adresse IP de sortie du réseau peut
 
 Cet insight réseau aura un impact spécifique sur la sélection de la porte d’entrée du service Exchange Online. Pour résoudre ce problème, la sortie du réseau local et direct doit être un prérequis, puis le résolveur récursif DNS doit se trouver à proximité de cette sortie réseau.
 
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online"></a>Exchange Online
 
 Cette section affiche les résultats des tests liés à Exchange Online.
 
@@ -203,7 +203,7 @@ Pendant le téléchargement de 15 Mo, nous mesurons la latence TCP sur la porte 
 
 Cela montre le nom DNS et l’adresse IP du serveur de porte d’entrée du service SharePoint vers lequel vous avez été dirigé. Il est fourni uniquement pour des informations et il n’existe aucun insight réseau associé.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section affiche les résultats des tests liés à Microsoft Teams.
 
@@ -261,10 +261,17 @@ Vous pouvez l’exécuter en double-cliquant sur l’exécutable dans Windows Ex
 
 La première fois que vous lancez l’exécutable, vous êtes invité à accepter le contrat de licence utilisateur final (CLUF) avant d’effectuer le test. Si vous avez déjà lu et accepté le CLUF, vous pouvez créer un fichier vide appelé Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt dans le répertoire de travail actuel pour le processus exécutable lors de son lancement. Pour accepter le CLUF, vous pouvez taper « y » et appuyer sur Entrée dans la fenêtre de ligne de commande lorsque vous y êtes invité.
 
-L’exécutable accepte un paramètre de ligne de commande de /h pour afficher un lien vers cette documentation d’aide.
+L’exécutable accepte les paramètres de ligne de commande suivants :
+- -h pour afficher un lien vers cette documentation d’aide
+- -testlist &lt;spécifie&gt; les tests à exécuter. Par défaut, seuls les tests de base sont exécutés. Les noms de test valides sont les suivants : all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
+- -filepath &lt;filedir&gt; Directory path of test result files. La valeur autorisée est le chemin absolu ou relatif d’un répertoire accessible
+- -city &lt;city&gt; Pour les champs ville, état et pays, la valeur spécifiée sera utilisée si elle est fournie. S’il n’est pas fourni, Windows Location Services (WLS) est interrogé. Si WLS échoue, l’emplacement est détecté à partir de la sortie réseau des machines 
+- -state state &lt;state&gt;
+- -country &lt;country&gt; 
+- -proxy &lt;account&gt; &lt;password&gt; proxy account name and password can be provided if you require a proxy to access the Internet
 
 ### <a name="results"></a>Résultats
-La sortie des résultats est écrite dans un fichier JSON dans un dossier appelé TestResults qui est créé dans le répertoire de travail actuel du processus, sauf s’il existe déjà. Le format de nom de fichier pour la sortie est connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Les résultats se trouvent dans les nœuds JSON qui correspondent à la sortie affichée sur la page web du site web de l’outil de test de connectivité réseau Microsoft 365. Un nouveau fichier de résultats est créé chaque fois que vous l’exécutez et l’exécutable autonome ne charge pas les résultats sur votre locataire Microsoft pour l’afficher dans les pages de connectivité réseau du Centre d’administration.
+La sortie des résultats est écrite dans un fichier JSON dans un dossier appelé TestResults qui est créé dans le répertoire de travail actuel du processus, sauf s’il existe déjà. Le format de nom de fichier pour la sortie est connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Les résultats se trouvent dans les nœuds JSON qui correspondent à la sortie affichée sur la page web du site web de l’outil de test de connectivité réseau Microsoft 365. Un nouveau fichier de résultats est créé chaque fois que vous l’exécutez et l’exécutable autonome ne charge pas les résultats sur votre locataire Microsoft pour l’afficher dans les pages de connectivité réseau du Centre d’administration. Les codes de porte d’entrée, les longitudes et les latitudes ne sont pas inclus dans le fichier de résultats.
 
 ### <a name="launching-from-windows-file-explorer"></a>Lancement à partir de Windows Explorateur de fichiers
 Vous pouvez simplement double-cliquer sur l’exécutable pour démarrer le test et une fenêtre d’invite de commandes s’affiche.

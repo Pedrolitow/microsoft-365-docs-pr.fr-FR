@@ -21,16 +21,16 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable de l’utilisateur final pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1688e4a56787c9593aae7006a05d52b16558647
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393477"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043471"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Utiliser des notifications de quarantaine pour publier et signaler des messages mis en quarantaine
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,9 @@ Pour les boîtes aux lettres partagées, les notifications de mise en quarantain
 > [!NOTE]
 > Par défaut, les messages mis en quarantaine en tant qu’hameçonnage à haut niveau de confiance, les programmes malveillants, les règles de flux de messagerie (également appelées règles de transport) ou les stratégies de Coffre pièces jointes dans Defender pour Office 365 sont uniquement disponibles pour les administrateurs (par défaut, la stratégie de quarantaine AdminOnlyAccessPolicy est utilisée). Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 >
-> Actuellement, les notifications de quarantaine ne sont pas prises en charge pour les groupes.
+> Les notifications de mise en quarantaine pour les messages envoyés aux groupes de distribution ou aux groupes de sécurité à extension messagerie sont envoyées à tous les membres du groupe.
+>
+> Les notifications de mise en quarantaine pour les messages envoyés à Groupes Microsoft 365 sont envoyées à tous les membres du groupe uniquement si le paramètre **Envoyer des copies des conversations et des événements de groupe aux membres du groupe** est activé.
 
 Lorsque vous recevez une notification de mise en quarantaine, les informations suivantes sont toujours disponibles pour chaque message mis en quarantaine :
 

@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail des applications intégrées dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094657"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043163"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer Microsoft 365 Apps par des partenaires dans le portail des applications intégrées
 
@@ -60,7 +60,7 @@ Vous pouvez gérer les tests et le déploiement de Microsoft 365 Apps achetées 
 
 Vous pouvez rechercher, tester et déployer entièrement des applications publiées qui n’apparaissent pas déjà dans la liste de la page Applications intégrées. En achetant et en concédant des licences aux applications à partir du Centre d’administration, vous pouvez ajouter des applications partenaires Microsoft et Microsoft à votre liste à partir d’un emplacement unique.
 
-1. Dans le centre d’administration, dans le volet de navigation gauche, choisissez **Paramètres**, puis choisissez <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Applications intégrées**</a>.
+1. Dans le centre d’administration, dans le volet de navigation gauche, choisissez **Paramètres**, puis choisissez <a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**Applications intégrées**</a>.
 
 2. Sélectionnez **Obtenir des applications** pour obtenir une vue des applications.
 
@@ -87,7 +87,7 @@ Vous ne pourrez pas déployer une seule application ou Microsoft 365 Apps par pa
 
 - Le même complément est lié à plusieurs offres SaaS.
 - L’offre SaaS est liée à des compléments, mais elle ne s’intègre pas à Microsoft Graph et aucun ID d’application AAD n’est fourni.
-- L’offre SaaS est liée à des compléments, mais AAD ID d’application fourni pour l’intégration de Microsoft Graph est partagé entre plusieurs offres SaaS.
+- L’offre SaaS est liée à des compléments, mais l’ID d’application AAD fourni pour l’intégration de Microsoft Graph est partagé entre plusieurs offres SaaS.
 
 ## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Télécharger applications métier personnalisées pour le test et le déploiement complet
 
@@ -115,7 +115,7 @@ Les compléments offrent les avantages suivants :
 
 - Les compléments n’apparaissent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe auquel le complément est affecté. 
 
-Les compléments sont pris en charge dans trois plateformes de bureau Windows, Mac et Online Office applications. Il est également pris en charge dans iOS et Android (compléments Outlook mobile uniquement). 
+Les compléments sont pris en charge dans trois plateformes de bureau Windows, Mac et Online Office applications. Il est également pris en charge dans iOS et Android (compléments mobiles Outlook uniquement). 
 
 L’affichage d’un complément pour le client pour tous les utilisateurs peut prendre jusqu’à 24 heures. 
 
@@ -289,7 +289,7 @@ Il existe deux cas où un administrateur Exchange ne peut pas déployer un compl
 - Si un complément est lié à au moins deux compléments et applications web, et qu’au moins un de ces compléments est déployé par un autre administrateur (exchange/global) et que l’affectation de l’utilisateur n’est pas uniforme. Nous autorisons uniquement le déploiement de compléments lorsque l’affectation de l’utilisateur est identique pour toutes les applications déjà déployées.  
 
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Quel rôle d’administrateur dois-je accéder aux applications intégrées ?
 

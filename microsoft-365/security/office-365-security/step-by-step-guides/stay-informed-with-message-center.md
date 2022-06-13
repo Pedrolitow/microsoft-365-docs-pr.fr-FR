@@ -15,14 +15,14 @@ ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 16a7f187098bef8a2db8153757369d69ffd83ba2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c1ca632d3809b1599449125c59289f113e477997
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015284"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042129"
 ---
 # <a name="stay-informed-of-upcoming-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>Restez informé des modifications à venir apportées à Microsoft Defender pour Office 365 à l’aide du centre de messages
 

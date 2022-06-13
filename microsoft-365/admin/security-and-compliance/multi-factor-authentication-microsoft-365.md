@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L’authentification multifacteur (MFA) utilise à la fois un mot de passe, qui doit être fort, et une méthode de vérification supplémentaire.
-ms.openlocfilehash: f939b187fc81381dae4959fdf14280bc839dadb0
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: cabb7d3efc6d99c69e7e125c9170ac7367fc3929
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739868"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044057"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Authentification multifacteur pour Microsoft 365
 
@@ -170,9 +170,9 @@ Dans le Portail Azure, vous pouvez :
 - Activer et désactiver les paramètres de sécurité par défaut
 - Configurer des stratégies d’accès conditionnel
 
-Dans le Centre d'administration Microsoft 365, vous pouvez configurer les <a href="https://go.microsoft.com/fwlink/p/?linkid=2169174" target="_blank">paramètres MFA</a> par utilisateur et par service.
+Dans le Centre d'administration Microsoft 365, vous pouvez configurer les <a href="https://go.microsoft.com/fwlink/?LinkId=279980" target="_blank">paramètres MFA</a> par utilisateur et par service.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 [Configurer l’authentification multifacteur pour Microsoft 365](set-up-multi-factor-authentication.md)
 

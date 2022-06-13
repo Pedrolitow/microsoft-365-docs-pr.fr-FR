@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produit dépend de la désaffectation des licences d’utilisateurs spécifiques ou d’un produit spécifique.
 ms.date: 04/22/2022
-ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 23fc9ea04f45cdeb50acb0ec2d62d584974d6499
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465797"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043239"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Annuler l’affectation de licences Microsoft 365 des utilisateurs
 
@@ -112,20 +112,20 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour annuler l’affectati
 
 3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
 
-4. Dans le volet **Gérer les licences de produit**, sélectionnez **Annuler l’affectation des** **modifications allSave** > .
+4. Dans le volet **Gérer les licences de produit** , sélectionnez **Annuler l’affectation de toutes les** > **modifications d’enregistrement**.
 
 5. En bas du volet, sélectionnez **Terminé**.  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Qu’advient-il des données d’un utilisateur lorsque vous supprimez sa licence ?
 
-- Lorsqu’une licence est supprimée d’un utilisateur, Exchange données en ligne associées à ce compte sont conservées pendant 30 jours. Après la période de grâce de 30 jours, les données sont supprimées et ne peuvent pas être récupérées.
+- Lorsqu’une licence est supprimée d’un utilisateur, Exchange Online données associées à ce compte sont conservées pendant 30 jours. Après la période de grâce de 30 jours, les données sont supprimées et ne peuvent pas être récupérées. Toutefois, il est lié à la stratégie de rétention et le contenu qui correspond aux étiquettes de rétention est conservé pour la découverte.
 - Les fichiers enregistrés dans OneDrive Entreprise ne sont pas supprimés, sauf si l’utilisateur est supprimé du Centre d'administration Microsoft 365 ou est supprimé via la synchronisation Active Directory. Pour plus d’informations, consultez [OneDrive rétention et suppression](/onedrive/retention-and-deletion).
 - Lorsque la licence est supprimée, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que recherche de contenu ou eDiscovery (Premium). Pour plus d’informations, consultez « Recherche de boîtes aux lettres déconnectées ou déconnectées » dans [Recherche de contenu dans Microsoft 365](../../compliance/content-search.md).
 - Si vous avez un abonnement Enterprise, comme Office 365 Entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé à l’aide de [boîtes aux lettres inactives](../../compliance/inactive-mailboxes-in-office-365.md). Pour plus d’informations, consultez [Créer et gérer des boîtes aux lettres inactives dans Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 - Pour savoir comment bloquer l’accès d’un utilisateur à Microsoft 365 données après la suppression de sa licence et comment accéder aux données par la suite, consultez [Supprimer un ancien employé](../add-users/remove-former-employee.md).
 - Si vous supprimez la licence d’un utilisateur et qu’il a toujours Office applications installées, il voit [des erreurs de produit et d’activation sans licence dans Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) lorsqu’il utilise Office applications.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 

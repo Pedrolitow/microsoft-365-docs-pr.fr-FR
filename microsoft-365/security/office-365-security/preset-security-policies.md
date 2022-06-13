@@ -16,21 +16,21 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 06db733b50de51750d6c9f7b3dcf14f28cdff414
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915970"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044378"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les stratégies de sécurité prédéfinies fournissent un emplacement centralisé pour appliquer toutes les stratégies de courrier indésirable, de programmes malveillants et de hameçonnage recommandées aux utilisateurs en même temps. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, ils sont définis par nous et sont basés sur nos observations et expériences dans les centres de données pour un équilibre entre le maintien du contenu nocif loin des utilisateurs et d’éviter les interruptions inutiles.
 
@@ -85,18 +85,25 @@ Les stratégies de sécurité prédéfinies utilisent les stratégies correspond
   > Les stratégies de courrier indésirable sortant ne font pas partie des stratégies de sécurité prédéfinies. La stratégie de courrier indésirable sortant par défaut protège automatiquement les membres des stratégies de sécurité prédéfinies. Vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées pour personnaliser la protection des membres des stratégies de sécurité prédéfinies. Pour plus d’informations, consultez [Configurer le filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md).
 
 - **Microsoft Defender pour Office 365 stratégies** : cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 module complémentaire :
-  - Les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 nommées **stratégie de sécurité prédéfinies standard** et stratégie **de sécurité prédéfinies strictes**, qui incluent :
+  - Les stratégies anti-hameçonnage dans Defender pour Office 365 nommées **stratégie de sécurité prédéfinies standard** et stratégie **de sécurité prédéfinies strictes**, qui incluent :
     - Paramètres [d’usurpation d’identité disponibles](set-up-anti-phishing-policies.md#spoof-settings) dans les stratégies anti-hameçonnage EOP.
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Seuils d’hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Coffre lie les stratégies nommées](set-up-safe-links-policies.md) **Stratégie de sécurité prédéfinies standard**, **Stratégie de sécurité prédéfinies stricte** et **Stratégie de protection intégrée**.
   - [Coffre stratégies de pièces jointes nommées](set-up-safe-attachments-policies.md) Stratégie **de sécurité prédéfinies standard**, **Stratégie de sécurité prédéfinies stricte** et **Stratégie de protection intégrée**.
 
-Vous pouvez appliquer des protections EOP à des utilisateurs différents des protections Microsoft Defender pour Office 365.
+Vous pouvez appliquer des protections EOP à différents utilisateurs que les protections Defender pour Office 365, ou appliquer EOP et Defender pour Office 365 aux mêmes destinataires.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Paramètres de stratégie dans les stratégies de sécurité prédéfinies
 
 Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les valeurs des paramètres de **stratégie de protection** **standard**, **strict** et intégré sont décrites dans [les paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité](recommended-settings-for-eop-and-office365.md).
+
+> [!NOTE]
+> Dans Defender pour Office 365 protections, vous devez identifier les expéditeurs pour la [protection de l’emprunt d’identité des utilisateurs](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) et les domaines internes ou externes pour la [protection de l’emprunt d’identité de domaine](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+>
+> Tous les domaines que vous possédez ([domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) reçoivent automatiquement la protection d’emprunt d’identité de domaine dans les stratégies de sécurité prédéfinies.
+>
+> Tous les destinataires reçoivent automatiquement une protection contre l’emprunt d’identité de [l’intelligence de boîte aux lettres](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans les stratégies de sécurité prédéfinies.
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinies et autres stratégies
 
@@ -135,26 +142,75 @@ Par exemple, si un paramètre de sécurité existe dans **la protection Standard
 
 2. Dans la page **Stratégies de sécurité prédéfinies** , cliquez sur **Gérer** dans les sections **Protection standard** ou **Protection stricte** .
 
-3. L’Assistant **Appliquer la protection standard** ou **Appliquer une protection stricte** démarre dans un menu volant. Dans les **protections EOP s’appliquent à** la page, identifiez les destinataires internes auxquels les [protections EOP](#policies-in-preset-security-policies) s’appliquent (conditions de destinataire) :
-   - **Utilisateurs**
-   - **Groupes**
-   - **Domaines**
+3. L’Assistant **Appliquer une protection standard** ou **Appliquer une protection stricte** démarre dans un menu volant.
 
-   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   Dans la page **Appliquer Exchange Online Protection**, identifiez les destinataires internes auxquels les [protections EOP](#policies-in-preset-security-policies) s’appliquent (conditions de destinataire) :
+   - **Tous les destinataires**
+   - **Destinataires spécifiques** :
+     - **Utilisateurs**
+     - **Groupes**
+     - **Domaines**
 
-   Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identifiants (nom, nom d'affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant est affiché dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour voir toutes les valeurs disponibles.
+     Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-   - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
+     Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identifiants (nom, nom d'affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant est affiché dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour voir toutes les valeurs disponibles.
+
+   - **Aucune**
+
+   - **Exclure ces destinataires** : pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s’applique (exceptions de destinataire), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans Microsoft Defender pour Office 365 organisations, vous êtes redispilé dans les **Defender pour Office 365 protections s’appliquent à** la page pour identifier les destinataires internes auxquels les [protections Microsoft Defender pour Office 365](#policies-in-preset-security-policies) s’appliquent vers (conditions du destinataire).
+   > [!NOTE]
+   > Dans les organisations sans Defender pour Office 365, cliquez sur **Suivant** pour accéder à la page **Révision**. Les étapes/pages restantes avant la page **Révision** sont disponibles uniquement dans les organisations avec Defender pour Office 365.
+
+4. Dans la page **Appliquer Defender pour Office 365 protection**, identifiez les destinataires internes auxquels les [protections Defender pour Office 365](#policies-in-preset-security-policies) s’appliquent (conditions de destinataire).
 
    Les paramètres et le comportement sont exactement comme les **protections EOP s’appliquent à** la page de l’étape précédente.
 
+   Vous pouvez également sélectionner **les destinataires précédemment sélectionnés** pour utiliser les mêmes destinataires que ceux que vous avez sélectionnés pour la protection EOP sur la page précédente.
+
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **Vérifier et confirmer vos modifications** , vérifiez vos sélections, puis cliquez sur **Confirmer**.
+5. Dans la page **Protection de l’emprunt d’identité** , cliquez sur **Suivant**.
+
+6. Dans la page **Ajouter des adresses e-mail à marquer en cas d’emprunt d’identité par des attaquants, ajoutez des expéditeurs** internes et externes qui sont protégés par la [protection de l’emprunt d’identité de l’utilisateur](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+   > [!NOTE]
+   > Tous les destinataires reçoivent automatiquement une protection contre l’emprunt d’identité de [l’intelligence de boîte aux lettres](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans les stratégies de sécurité prédéfinies.
+
+   Chaque entrée se compose d’un nom d’affichage et d’une adresse e-mail. Entrez chaque valeur dans les zones, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
+
+   Vous pouvez spécifier un maximum de 350 utilisateurs, et vous ne pouvez pas spécifier le même utilisateur dans les paramètres de protection de l’emprunt d’identité de l’utilisateur dans plusieurs stratégies.
+
+   Pour supprimer une entrée existante de la liste, cliquez sur ![Supprimer l’utilisateur de l’icône de protection d’emprunt d’identité.](../../media/m365-cc-sc-remove.png).
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+7. Dans la page **Ajouter des domaines à marquer en cas d’emprunt d’identité par des attaquants** , ajoutez des domaines internes et externes protégés par la [protection de l’emprunt d’identité de domaine](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+   > [!NOTE]
+   > Tous les domaines que vous possédez ([domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) reçoivent automatiquement la protection d’emprunt d’identité de domaine dans les stratégies de sécurité prédéfinies.
+
+   Tous les expéditeurs des domaines spécifiés sont protégés par la protection de l’emprunt d’identité de domaine.
+
+   Entrez le domaine dans la zone, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
+
+   Pour supprimer une entrée existante de la liste, sélectionnez-la, puis cliquez sur ![Supprimer le domaine de l’icône de protection d’emprunt d’identité.](../../media/m365-cc-sc-remove.png).
+
+   Le nombre maximal de domaines que vous pouvez spécifier pour la protection de l’emprunt d’identité de domaine dans toutes les stratégies anti-hameçonnage est de 50.
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+8. Dans la page **Ajouter des adresses e-mail approuvées et des domaines pour ne pas marquer en tant que page d’emprunt** d’identité, entrez les adresses e-mail et domaines de l’expéditeur que vous souhaitez exclure de la protection contre l’emprunt d’identité. Les messages de ces expéditeurs ne seront jamais marqués comme une attaque d’emprunt d’identité, mais les expéditeurs sont toujours soumis à une analyse par d’autres filtres dans EOP et Defender pour Office 365.
+
+   Entrez l’adresse e-mail ou le domaine dans la zone, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
+
+   Pour supprimer une entrée existante de la liste, sélectionnez-la, puis cliquez sur ![Supprimez les exceptions à l’icône de protection d’emprunt d’identité.](../../media/m365-cc-sc-remove.png).
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+9. Dans la page **Vérifier et confirmer cette** stratégie, vérifiez vos sélections, puis cliquez sur **Confirmer**.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les affectations de stratégies de sécurité prédéfinies Standard et Strict
 
@@ -177,7 +233,7 @@ Par conséquent, nous ne recommandons généralement pas d’exceptions à la st
    - **Groupes**
    - **Domaines**
 
-   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Supprimez les exclusions de l’icône de protection intégrée.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
    Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identifiants (nom, nom d'affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant est affiché dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour voir toutes les valeurs disponibles.
 

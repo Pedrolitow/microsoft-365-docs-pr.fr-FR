@@ -17,18 +17,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f5a1734b267f512f19179e20b7ba66d8f38e1d19
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 1c5a3a9a085f889383f570f0d9fc8dc256e29d4f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874111"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043081"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint-preview"></a>Scénarios de mode de dépannage dans Microsoft Defender pour point de terminaison (préversion)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -36,13 +36,13 @@ ms.locfileid: "65874111"
 > [!IMPORTANT]
 > Certaines informations concernent les produits préversion qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les problèmes liés aux différentes fonctionnalités de l’antivirus Microsoft Defender en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité Enterprise et nécessite un accès Microsoft 365 Defender.
+Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les différents Antivirus Microsoft Defender fonctionnalités en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité d’entreprise et nécessite un accès Microsoft 365 Defender.
 
 ## <a name="scenario-1-unable-to-install-application"></a>Scénario 1 : Impossible d’installer l’application
 
 Si vous souhaitez installer une application mais recevez un message d’erreur indiquant que Antivirus Microsoft Defender et la protection contre les falsifications sont activées, suivez les étapes ci-dessous pour résoudre le problème.
 
-1. Demandez à l’administrateur SOC d’activer le mode de résolution des problèmes. Vous recevrez une notification de Sécurité Windows une fois le mode de résolution des problèmes démarré.  
+1. Demandez à l’administrateur de sécurité d’activer le mode de résolution des problèmes. Vous recevrez une notification de Sécurité Windows une fois le mode de résolution des problèmes démarré.  
 
 2. Connecter à l’appareil (à l’aide de Terminal Services par exemple) avec des autorisations d’administrateur local.  
 
@@ -52,8 +52,9 @@ Si vous souhaitez installer une application mais recevez un message d’erreur i
 
 5. Lancez une invite de commandes PowerShell avec élévation de privilèges et désactivez RTP. 
 
-    - Exécuter `get-mppreference` pour vérifier l’état RTP.
-    - Exécuter `set–mppreference` pour désactiver l’exécution RTP. 
+    - Exécutez cette opération `Get-MpComputerStatus` pour vérifier l’état realTimeProtection.
+    - Exécuter `Set-mppreference -DisableRealtimeMonitoring $true` pour désactiver RTP.
+    - Réexécutez-la `Get-MpComputerStatus` pour vérifier l’état RealTimeProtection.
 
 6. Essayez d’installer l’application.
 
@@ -71,11 +72,11 @@ Parfois, lors d’une analyse planifiée, MsMpEng.exe pouvez consommer un proces
 
 5. Ajoutez des exclusions de processus/de fichier/de dossier/d’extension basées sur les résultats de ProcMon à l’aide de l’une des commandes suivantes (le chemin d’accès, l’extension et les exclusions de processus mentionnés ci-dessous sont uniquement des exemples) : 
 
-    - Set-mppreference -ExclusionPath (par exemple, C:\DB\DataFiles) 
+    - `Set-mppreference -ExclusionPath` (par exemple, C:\DB\DataFiles) 
     
-    - Set-mppreference –ExclusionExtension (par exemple, .dbx) 
+    - `Set-mppreference –ExclusionExtension` (par exemple, .dbx) 
     
-    - Set-mppreference –ExclusionProcess (par exemple, C:\DB\Bin\Convertdb.exe) 
+    - `Set-mppreference –ExclusionProcess` (par exemple, C:\DB\Bin\Convertdb.exe) 
 
 6. Après avoir ajouté l’exclusion, vérifiez si l’utilisation de l’UC a diminué. 
 
@@ -85,7 +86,7 @@ Pour plus d’informations sur Set-MpPreference préférences de configuration d
 
 Lorsque Antivirus Microsoft Defender protection en temps réel est activée, l’application prend beaucoup de temps pour effectuer des tâches de base. Pour désactiver la protection en temps réel et résoudre le problème, suivez les étapes ci-dessous. 
 
-1. Demandez à l’administrateur SOC d’activer le mode de résolution des problèmes sur l’appareil. 
+1. Demandez à l’administrateur de sécurité d’activer le mode de résolution des problèmes sur l’appareil. 
 
 2. Pour désactiver RTP pour ce scénario, commencez par désactiver la protection contre les falsifications. Pour plus d’informations, consultez [Protéger les paramètres de sécurité avec la protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
@@ -93,7 +94,7 @@ Lorsque Antivirus Microsoft Defender protection en temps réel est activée, l�
 
 4. Lancez une invite de commandes PowerShell avec élévation de privilèges. 
 
-    - Set-mppreference -DisableRealtimeMonitoring $true 
+    - `Set-mppreference -DisableRealtimeMonitoring $true` 
 
 5. Après avoir désactivé RTP, vérifiez si l’application est lente. 
 
@@ -105,7 +106,7 @@ La réduction de la surface d’attaque (ASR) n’autorise pas Microsoft Office 
 
 2. Lancez une invite de commandes PowerShell avec élévation de privilèges. 
 
-    - Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions désactivé 
+    - `Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled` 
 
 3. Après avoir désactivé la règle ASR, vérifiez que le plug-in Microsoft Office fonctionne désormais.
 
@@ -119,13 +120,13 @@ La protection réseau bloque le domaine Microsoft, empêchant les utilisateurs d
 
 2. Lancez une invite de commandes PowerShell avec élévation de privilèges. 
 
-    - Set-MpPreference -EnableNetworkProtection Désactivé 
+    - `Set-MpPreference -EnableNetworkProtection Disabled` 
 
 3. Après la désactivation de la protection réseau, vérifiez si le domaine est maintenant autorisé. 
 
 Pour plus d’informations, consultez [Utiliser la protection réseau pour empêcher les connexions à des sites incorrects](network-protection.md). 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Activer le mode de résolution des problèmes](enable-troubleshooting-mode.md)
 - [Protéger les paramètres de sécurité avec la protection contre la falsifiation](prevent-changes-to-security-settings-with-tamper-protection.md)

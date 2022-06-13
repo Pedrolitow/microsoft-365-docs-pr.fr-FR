@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements, tels que des boîtes aux lettres Exchange, des sites SharePoint et OneDrive Entreprise, des Groupes Microsoft 365, des Microsoft Teams et Skype Entreprise conversations. eDiscovery (Standard) et eDiscovery (Premium) fournissent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos investigations.
-ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9262f2773d17f19bd5adaea3eed9e747e343e625
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095859"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043390"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Solutions eDiscovery Microsoft Purview
 
@@ -59,7 +59,7 @@ Le tableau suivant compare les fonctionnalités clés disponibles dans la recher
 |Statistiques de recherche|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
 |Exporter les résultats de la recherche|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
 |Autorisations basées sur des rôles|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
-|Gestion des cas||![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
+|Gestion de cas||![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
 |Placer les emplacements de contenu en attente légale||![Pris en charge.](../media/check-mark.png)|![Pris en charge.](../media/check-mark.png)|
 |Gestion de dépositaire|||![Pris en charge.](../media/check-mark.png)|
 |Notifications de conservation légale|||![Pris en charge.](../media/check-mark.png)|
@@ -145,6 +145,8 @@ Les sections suivantes présentent la configuration minimale requise pour la rec
 
 ### <a name="ediscovery-standard"></a>eDiscovery (Standard)
 
+- Exchange plan en ligne 2
+- Sharepoint online Plan 2
 - abonnement Microsoft 365 E3
 - abonnement Microsoft 365 G3
 - abonnement Microsoft 365 Business Premium

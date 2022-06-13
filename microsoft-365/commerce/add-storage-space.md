@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Ajoutez le stockage de fichiers dans votre abonnement Microsoft 365. Avec un stockage de fichiers supplémentaire, vous pouvez stocker plus de contenu dans SharePoint.
 ms.date: 05/24/2022
-ms.openlocfilehash: a4a86966ccee1632f60b687696b9062ca3446778
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: bd0edd85718acc51559f5e409de4661a756cd787
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678874"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043969"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Ajouter d’autres SharePoint stockage à votre abonnement
 
@@ -70,7 +70,7 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 4. Si nécessaire, choisissez l’abonnement de base, puis entrez le nombre de gigaoctets de stockage que vous souhaitez ajouter.
 5. **Sélectionnez Extraire maintenant**.
 6. Dans la page **À quoi cela ressemble-t-il ?** , vérifiez le nombre de gigaoctets de stockage que vous avez sélectionné, passez en revue les informations de tarification, puis sélectionnez **Suivant**.
-7. Dans la page **Commande complète** , vérifiez le total. Si vous devez apporter des modifications, sélectionnez **Modifier l’ordre**. Si la commande nécessite une vérification de crédit, cochez la case. Lorsque vous avez terminé, sélectionnez **Passer la commande** \> **Aller à Administration Accueil**.
+7. Dans la page **Commande complète** , vérifiez le total. Si vous devez apporter des modifications, sélectionnez **Modifier l’ordre**. Si la commande nécessite une vérification de crédit, cochez la case. Une fois que vous avez terminé, sélectionnez **Passer l’ordre** \> **d’accès à la page d’accueil de l’administrateur**.
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Augmenter ou diminuer votre stockage supplémentaire
 
@@ -104,6 +104,7 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 - Microsoft 365 E3
 - Microsoft 365 E5
 - Microsoft 365 F1
+- Microsoft 365 F3
 
 > [!NOTE]
 > Stockage de fichiers supplémentaire Office 365 est également disponible pour les plans Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DOD.
