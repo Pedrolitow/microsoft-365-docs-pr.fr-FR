@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: 116675ac6736e1761286226a8bf724915627574f
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 4d287d342371a8182a4c9de5742d2d45ca01a1c6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712718"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012470"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -45,12 +45,11 @@ Les configurations décrites dans cet article respectent les recommandations de 
 
 Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées pour chacun d’eux, consultez [Illustrations de documents sur le cloud Microsoft pour les architectes d’entreprise](./cloud-architecture-models.md)
 
-
 ## <a name="three-tiers-at-a-glance"></a>Trois niveaux en un coup d’œil
 
 Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez ces recommandations comme point de départ et ajustez les configurations pour répondre aux besoins de votre organisation. Il est possible que vous n’ayez pas besoin de chaque niveau.
 
-|-|Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
+|&nbsp;|Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
 |:-----|:-----|:-----|:-----|:-----|
 |Équipe privé ou publique|Public|Private|Private|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|
@@ -142,4 +141,4 @@ Commencez par [configurer le niveau de base de la protection](configure-teams-ba
 
 [Sécurité et de la conformité dans Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Stratégies d’alerte dans le Centre de sécurité et de conformité](../compliance/alert-policies.md)
+[Stratégies d’alerte](../compliance/alert-policies.md)

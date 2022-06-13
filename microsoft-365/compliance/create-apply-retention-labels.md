@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285519"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007325"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -94,7 +94,7 @@ Si vous publiez des étiquettes de rétention dans Exchange, l’affichage de ce
 
 Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le portail de conformité Microsoft Purview. Si vous voyez **(erreur)** inclus dans l’état et que les détails des emplacements affichent un message indiquant qu’il faut plus de temps que prévu pour déployer la stratégie ou pour essayer de redéployer la stratégie, essayez d’exécuter la commande [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) ou [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell pour réessayer la distribution de stratégie :
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez une des commandes suivantes :
     

@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772771"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008864"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -170,7 +170,6 @@ Pour les domaines externes, l’utilisateur usurpé est le domaine dans l’adre
 
 - Adresse IP source (divisée en plages CIDR /24)
 - Domaine organisationnel de l’enregistrement DNS inversé (PTR).
-- Domaine DKIM vérifié.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Créer une entrée d’autorisation pour la paire expéditeur/destinataire
 

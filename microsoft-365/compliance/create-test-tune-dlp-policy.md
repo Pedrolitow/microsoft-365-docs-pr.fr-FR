@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez apprendre à créer, tester et paramétrer une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753989"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016963"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Protection contre la perte de données Microsoft Purview (DLP) vous permet d’éviter le partage involontaire ou accidentel d’informations sensibles.
+Microsoft Purview Data Loss Prevention (DLP) vous aide à empêcher le partage involontaire ou accidentel d’informations sensibles.
 
 DLP examine les messages électroniques et les fichiers à la recherche d’informations sensibles, telles qu’un numéro de carte de crédit. À l’aide de DLP, vous pouvez détecter les informations sensibles et prendre des mesures telles que :
 
@@ -94,7 +94,7 @@ Consultez [les définitions d’entité de type d’informations sensibles](sens
 
 Lorsque les risques de fuite de données ne sont pas entièrement évidents, il est difficile de déterminer exactement où vous devez commencer par implémenter DLP. Heureusement, les stratégies DLP peuvent être exécutées en « mode test », ce qui vous permet d’évaluer leur efficacité et leur précision avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le portail de conformité Microsoft Purview, c’est ce que je vais utiliser pour les démonstrations de cet article. Dans le portail de conformité Microsoft Purview, vous trouverez les stratégies DLP sous la stratégie **de protection contre la perte de** >  données **.** Choisissez **Créer une stratégie** pour démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le portail de conformité Microsoft Purview. C’est ce que je vais utiliser pour les démonstrations dans cet article. Dans le portail de conformité Microsoft Purview, vous trouverez les stratégies DLP sous stratégie de **protection contre la perte de** >  données **.** Choisissez **Créer une stratégie** pour démarrer.
 
 Microsoft 365 fournit une gamme de modèles de [stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles sur l’Australie et choisir Finances, Santé et Santé, et Confidentialité.
 
@@ -235,7 +235,7 @@ Lorsque vous êtes heureux que votre stratégie DLP détecte avec précision et 
 
 ![Option permettant d’activer la stratégie.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez de voir quand la stratégie prendra effet, [Connecter à Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) et [exécutez l’applet de commande Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
+Si vous attendez de voir quand la stratégie prendra effet, [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et [exécutez l’applet de commande Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

@@ -22,23 +22,23 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 4757cf72653ffad2caeba45c99d3aabe61517ee4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144638"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007237"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier qui utilise beaucoup un service et atteint des quotas, ou qui n'a peut-être pas du tout besoin d'une licence Microsoft 365. Le modèle de licence perpétuelle ne sera pas inclus dans les rapports. 
-  
+Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier qui utilise beaucoup un service et atteint des quotas, ou qui n'a peut-être pas du tout besoin d'une licence Microsoft 365. Le modèle de licence perpétuelle ne sera pas inclus dans les rapports.
+
 Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
-  
+
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>Regarder : Agir sur un rapport d’utilisation dans Office 365
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
-  
+
 ## <a name="how-to-get-to-the-reports-dashboard"></a>Comment accéder au tableau de bord Rapports ?
 
 ::: moniker range="o365-worldwide"
@@ -60,13 +60,13 @@ Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les donn
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
 Les personnes disposant des autorisations suivantes : 
-  
+
 - Administrateurs généraux : nous vous recommandons de n’attribuer ce rôle qu’à quelques personnes de votre organisation. Cela permet de limiter les risques.
-    
+
 - Administrateurs Exchange
-    
+
 - Administrateurs SharePoint
-    
+
 - Administrateurs Skype Entreprise
 
 - Lecteur global (sans les détails de l’utilisateur)
@@ -78,16 +78,16 @@ Les personnes disposant des autorisations suivantes :
 - Administrateur Teams
 
 - Administrateur des communications Teams
-    
+
 Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-users/about-admin-roles.md) et [Attribuer des rôles d'administrateur](../add-users/assign-admin-roles.md).
-  
+
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Quels sont les rapports d'activité disponibles dans le Centre d'administration ?
 
 Voici les rapports disponibles dans tous les environnements basés sur votre abonnement.
 
-|**Report**|**Public**|**GCC**|**GCC-High**|**DOD**|**Office 365 géré par 21Vianet**|
+|Rapport|Public|GCC|GCC-High|DoD|Office 365 géré par 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|Non<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
+|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
 |[Activité de messagerie](email-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des applications de messagerie](email-apps-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des boîtes aux lettres](mailbox-usage.md)|Oui|Oui|Oui|Oui|Oui|
@@ -105,14 +105,14 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 |[Activité sur Yammer](yammer-activity-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
-|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
+|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
 |[Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
 |[Activité d’organisation de conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
 |[Activité de participation à des conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
 |[Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
-|[Activité Viva Learning](viva-learning-activity.md)|Oui|N/A|N/A|N/A|N/A|
-|[Activité Viva Insights](viva-insights-activity.md)|Oui|Oui|N/A|N/A|S/O|
+|[Activité Viva Learning](viva-learning-activity.md)|Oui|N/A|S/O|S/O|N/A|
+|[Activité Viva Insights](viva-insights-activity.md)|Oui|Oui|N/A|S/O|S/O|
 
 N/A<sup>1</sup> : le rapport est prévu pour être publié à l’avenir. La <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">feuille de route Microsoft 365</a> sera mise à jour avant la publication.
 N/A<sup>2</sup> : le service n’est pas disponible dans l’environnement, donc aucun plan de publication du rapport n’est prévu.
@@ -120,49 +120,46 @@ N/A<sup>2</sup> : le service n’est pas disponible dans l’environnement, donc
 ## <a name="how-to-view-licensing-information"></a>Afficher les informations de licence
 
 - Pour déterminer le nombre de licences attribuées et retirées, dans le Centre d’administration, accédez à la page sur la **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
-    
-- Pour identifier les utilisateurs auxquels une licence est attribuée dans le centre d'administration, sans licence ou invités, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>. 
-  
+
+- Pour identifier les utilisateurs auxquels une licence est attribuée dans le centre d'administration, sans licence ou invités, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Afficher les informations d’utilisation pour un utilisateur spécifique
 
 Utilisez les rapports de service pour déterminer le niveau d’utilisation du service par un utilisateur spécifique. Par exemple, pour déterminer la quantité de stockage de boîte aux lettres consommée par un utilisateur spécifique, ouvrez le rapport Utilisation des boîtes aux lettres et triez les utilisateurs par nom. Si vous avez des milliers d’utilisateurs, exportez le rapport vers Excel pour filtrer la liste rapidement.
-  
+
 Vous ne pouvez pas générer de rapport pour un compte d’utilisateur afin d’obtenir la liste des services associés et le niveau d’utilisation.
 
-Dans certains cas, les nouveaux utilisateurs s’affichent en tant que **Inconnu**. Ceci est généralement dû à des retards dans la création de profils utilisateur.  
-  
+Dans certains cas, les nouveaux utilisateurs s’affichent en tant que **Inconnu**. Ceci est généralement dû à des retards dans la création de profils utilisateur.
+
 ## <a name="show-user-details-in-the-reports"></a>Afficher les détails de l’utilisateur dans les rapports
 
 Par défaut, les détails utilisateur sont masqués pour tous les rapports.
-  
-Votre liste d’utilisateurs se présente comme suit :
- 
-![Rapports : liste d’utilisateurs rendus anonymes.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
+Votre liste d’utilisateurs se présente comme suit :
+
+![Rapports : liste d’utilisateurs rendus anonymes.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 Si vous souhaitez afficher les informations au niveau de l'utilisateur lorsque vous générez vos rapports, un **administrateur général** peut rapidement effectuer cette modification dans le centre d'administration.
 
 Les rapports fournissent des informations sur les données d’utilisation de votre organisation. Par défaut, les rapports affichent des informations avec des noms identifiables pour les utilisateurs, les groupes et les sites. À compter du 1er septembre 2021, nous masquons les informations utilisateur par défaut pour tous les rapports dans le cadre de notre engagement continu à aider les entreprises à prendre en charge leurs lois locales sur la confidentialité.
 
 Les administrateurs globaux peuvent inverser cette modification pour leur client et afficher des informations d’utilisateur identifiables si les pratiques de confidentialité de leur organisation le permettent. Vous pouvez le faire dans le Centre d'administration Microsoft 365 en suivant les étapes suivantes :
-  
+
 1. Dans le Centre d’administration, allez à la page **Paramètres** \> **Paramètres de l’organisation** \> **Services**.
 
-2. Sélectionnez **Rapports**. 
-  
-3. Décochez l’instruction **Afficher les noms d’utilisateur, de groupe et de site masqués dans tous les rapports**, puis enregistrez vos modifications.  
-  
-Il faudra quelques minutes pour que ces modifications prennent effet sur les rapports dans le tableau de bord des rapports. Ce paramètre s'applique également aux rapports d'utilisation de Microsoft 365 dans [Microsoft Graph](/graph/api/resources/report) et [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) et [aux rapports d'utilisation dans le centre d'administration Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft Purview.   
+2. Sélectionnez **Rapports**.
 
-  
+3. Décochez l’instruction **Afficher les noms d’utilisateur, de groupe et de site masqués dans tous les rapports**, puis enregistrez vos modifications.
+
+Il faudra quelques minutes pour que ces modifications prennent effet sur les rapports dans le tableau de bord des rapports. Ce paramètre s'applique également aux rapports d'utilisation de Microsoft 365 dans [Microsoft Graph](/graph/api/resources/report) et [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) et [aux rapports d'utilisation dans le centre d'administration Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft Purview.
+
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 
 Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’utilisation de celui-ci dans un délai de 30 jours. Cet utilisateur sera toujours inclus dans les totaux du graphique d'activité pour les périodes au cours desquelles il a été actif, mais n'apparaîtra pas dans le tableau Détails de l'utilisateur.
-  
+
 Cependant, lorsque vous sélectionnez un jour particulier, jusqu'à 28 jours à compter de la date actuelle, le rapport affiche l'utilisation de l'utilisateur pour ce jour dans le tableau Détails de l'utilisateur.
-  
+
 ## <a name="related-content"></a>Contenu associé
 
-[Rapports dans le Centre de sécurité &amp; Conformité](../../compliance/reports-in-security-and-compliance.md) (article)\
 [Analyse de l'utilisation de Microsoft 365](../usage-analytics/usage-analytics.md) (article)\
 [Personnaliser les rapports dans les données d’analyse de l’utilisation Microsoft 365](../usage-analytics/customize-reports.md) (article)
