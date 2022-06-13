@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: dfe76e31eb5816e53a3f6d4ab598f1737cdebaa1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772680"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014297"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -67,7 +67,7 @@ Si vous n’avez pas encore activé les étiquettes de confidentialité pour les
 
 1. Cette fonctionnalité utilisant une fonctionnalité Azure Active Directory, suivez les instructions de la documentation Azure Active Directory pour activer la prise en charge des étiquettes de confidentialité : [Attribuer des étiquettes de confidentialité à des Groupes Microsoft 365 dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Vous devez à présent synchroniser vos étiquettes de confidentialité avec Azure AD. Tout d’abord, [connectez-vous à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. Vous devez à présent synchroniser vos étiquettes de confidentialité avec Azure AD. Pour commencer, [connectez-vous à l’interface PowerShell Sécurité et conformité](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général.
 
@@ -313,7 +313,7 @@ Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de Sha
 
 1. Ouvrez une session PowerShell avec l’option **Exécuter en tant qu’administrateur** .
 
-2. Si vous ne connaissez pas votre GUID d’étiquette : [connectez-vous à l’interface PowerShell du Centre de sécurité et conformité Office 365](/powershell/exchange/connect-to-scc-powershell) et obtenez la liste des étiquettes de confidentialité et leurs GUID.
+2. Si vous ne connaissez pas votre GUID d’étiquette : [connectez-vous à l’interface PowerShell Sécurité et conformité](/powershell/exchange/connect-to-scc-powershell) et obtenez la liste des étiquettes de confidentialité et leurs GUID.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -421,7 +421,7 @@ Pour vous aider à gérer la coexistence des étiquettes de confidentialité et 
 
 ### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>Utilisez PowerShell pour convertir des classifications de Groupes Microsoft 365 en étiquettes de confidentialité
 
-1. Tout d’abord, [connectez-vous à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Pour commencer, [connectez-vous à l’interface PowerShell Sécurité et conformité](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général :
 
