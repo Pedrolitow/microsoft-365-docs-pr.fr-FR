@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf11e60f3fce46926d297c97a44c7d494942d556
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271877"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014781"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
 
-La classification EDM (Exact Data Match) vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. Lorsque vous devez autoriser les variantes d’une chaîne exacte, vous pouvez utiliser une *correspondance configurable* pour indiquer à Microsoft 365 d’ignorer la casse et certains séparateurs.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La classification EDM (Exact Data Match) vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. Lorsque vous devez autoriser des variantes d’une chaîne exacte, vous pouvez utiliser une *correspondance configurable* pour indiquer à Microsoft Purview d’ignorer la casse et certains délimiteurs.
 
 > [!IMPORTANT]
 > Utilisez cette procédure pour modifier un schéma EDM et un fichier de données existants.
@@ -105,7 +107,7 @@ La classification EDM (Exact Data Match) vous permet de créer des types d’inf
     - \"
     - \,
 
-6. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+6. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
     > Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Elle est disponible pour les clients sous licence E5 uniquement dans le cloud commercial.
@@ -138,6 +140,6 @@ La classification EDM (Exact Data Match) vous permet de créer des types d’inf
 - [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Types d’informations sensibles personnalisés](./sensitive-information-type-learn-about.md)
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

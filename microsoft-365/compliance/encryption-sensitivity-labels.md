@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599230"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014319"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -446,11 +446,13 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 - Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
 
 - Pour que plusieurs utilisateurs modifient un fichier chiffré en même temps, ils doivent tous utiliser Microsoft Office sur le web ou vous avez activé la [co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md) et tous les utilisateurs disposent [d’applications Office qui la prise en charge](sensitivity-labels-coauthoring.md#prerequisites). Si ce n’est pas le cas, mais que les fichiers sont déjà ouverts :
-
+    
   - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
   - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Puis, ils peuvent sélectionner **Ouvrir en Mode Lecture**.
 
-- La fonctionnalité [d'enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dans les applications Office pour iOS et Android est désactivée pour les fichiers cryptés. Cette fonctionnalité est également désactivée pour les fichiers chiffrés sur Windows et Mac si vous n’avez pas activé la [co-auteur pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md). Un message s'affiche indiquant aux utilisateurs que le fichier dispose d'autorisations restreintes qui doivent être supprimées avant que l’Enregistrement automatique puisse être activé.
+- La fonctionnalité [d’enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dans les applications Office est désactivée pour les fichiers chiffrés si vous n’avez pas [activé la co-création pour les fichiers chiffrés avec des étiquettes de confidentialité](sensitivity-labels-coauthoring.md). Un message s'affiche indiquant aux utilisateurs que le fichier dispose d'autorisations restreintes qui doivent être supprimées avant que l’Enregistrement automatique puisse être activé.
+
+- Office pour Windows prend en charge les étiquettes qui appliquent le chiffrement lorsque les utilisateurs ne sont pas connectés à Internet. Toutefois, pour les autres plateformes (macOS, iOS, Android), les utilisateurs doivent être en ligne pour appliquer ces étiquettes dans les applications Office. Le client d’étiquetage unifié Azure Information Protection doit également être en ligne pour appliquer ces étiquettes dans Explorateur de fichiers et PowerShell. Les utilisateurs n’ont pas besoin d’être en ligne pour ouvrir du contenu chiffré. Pour plus d’informations sur l’accès hors connexion, consultez la section [Rights Management utiliser la licence pour l’accès hors connexion ](#rights-management-use-license-for-offline-access) .
 
 - L’ouverture des fichiers chiffrés peut être plus longue dans les applications Office (Windows, Mac, Android et iOS).
 

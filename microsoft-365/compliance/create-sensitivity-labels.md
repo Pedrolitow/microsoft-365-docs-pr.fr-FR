@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
-ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622376"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017029"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -86,9 +86,9 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 > [!IMPORTANT]
 > Dans l'onglet **Étiquettes**, ne pas sélectionner l'onglet **Publier des étiquettes** (ou le bouton **Publier une étiquette** lorsque vous modifiez une étiquette), sauf si vous devez créer une nouvelle stratégie d'étiquette. Plusieurs stratégies d’étiquette sont nécessaires uniquement si les utilisateurs ont besoin d’étiquettes ou de paramètres de stratégie différents. Votre objectif est d’avoir autant de stratégies d’étiquettes que possible, mais il n’est pas rare de n’avoir qu’une seule stratégie d’étiquette par organisation.
 
-### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Paramètres d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
+### <a name="additional-label-settings-with-security--compliance-powershell"></a>Paramètres d’étiquette supplémentaires avec Security & Compliance PowerShell
 
-D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](/powershell/module/exchange/set-label) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
+Des paramètres d’étiquette supplémentaires sont disponibles avec l’applet de commande [Set-Label](/powershell/module/exchange/set-label) de [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 Par exemple :
 
@@ -104,7 +104,7 @@ Suite à cette configuration, les utilisateurs disposant d'applications Office q
 
 Pour les langues que vous devez prendre en charge, utilisez les [identificateurs de langue](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) d'Office (également appelés balises linguistiques), et spécifiez votre propre traduction pour le nom d’étiquette et l’info-bulle.
 
-Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter à l’interface PowerShell Sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
@@ -162,9 +162,9 @@ Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choi
 
 Ce bouton démarre la **Créer une stratégie** configuration, ce qui vous permet de modifier les étiquettes incluses et les paramètres d’étiquette. Une fois la configuration terminée, toutes les modifications sont automatiquement répliquées vers les utilisateurs et services sélectionnés.
 
-### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
+### <a name="additional-label-policy-settings-with-security--compliance-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires avec Security & Compliance PowerShell
 
-Des paramètres de stratégie d’étiquette supplémentaires sont disponibles dans l’applet de commande [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
+Des paramètres de stratégie d’étiquette supplémentaires sont disponibles avec l’applet de commande [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) de [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 Le client de l’étiquetage unifié d’Azure Information Protection prend en charge de nombreux [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), notamment la migration depuis d’autres solutions d’étiquetage et les messages contextuels dans Outlook qui avertissent, justifient ou bloquent l’envoi d’e-mails. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) depuis le guide d’administration de ce client.
 
@@ -176,7 +176,7 @@ Toutefois, dans certains scénarios, les modifications apportées aux étiquette
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Utiliser PowerShell pour les étiquettes de confidentialité ainsi que leurs stratégies
 
-Vous pouvez désormais utiliser l’[Interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/scc-powershell) pour créer et configurer tous les paramètres que vous pouvez voir dans le centre d’administration pour les étiquettes. Cela signifie qu’outre l’utilisation de PowerShell pour les paramètres qui ne sont pas disponibles dans les centres d’administration pour les étiquettes, vous pouvez désormais créer des scripts pour la création et la maintenance des étiquettes de confidentialité et des stratégies d’étiquette de confidentialité. 
+Vous pouvez maintenant utiliser [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) pour créer et configurer tous les paramètres que vous voyez dans votre centre d’administration d’étiquetage. Cela signifie qu’outre l’utilisation de PowerShell pour les paramètres qui ne sont pas disponibles dans les centres d’administration pour les étiquettes, vous pouvez désormais créer des scripts pour la création et la maintenance des étiquettes de confidentialité et des stratégies d’étiquette de confidentialité. 
 
 Consultez la documentation ci-après relative aux paramètres et valeurs pris en charge :
 
