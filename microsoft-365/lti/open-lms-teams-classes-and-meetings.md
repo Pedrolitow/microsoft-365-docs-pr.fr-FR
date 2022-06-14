@@ -12,19 +12,14 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Créez et gérez Teams classes et réunions avec l’interopérabilité Microsoft OneDrive Learning Tools pour Open LMS.
-ms.openlocfilehash: 3f9feb5f45a0f1d814818edcb4171f28ef362fdb
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 108852bf32e63e7d5b8722ef1ee178abf7ea85c3
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044435"
+ms.locfileid: "66057748"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Intégrer Microsoft Teams classes et réunions dans Open LMS
-
-> [!NOTE]
-> Actuellement, les intégrations Open LMS et Microsoft Teams LTI sont disponibles uniquement en préversion privée.
->
->Si vous souhaitez participer au programme de préversion privée, [inscrivez-vous ici](https://m365crmedu.powerappsportals.com/LMSSignup/).
 
 Ce guide fournit les étapes de l’administrateur informatique pour l’inscription des applications LTI Teams Classes et Teams Meetings sur Open LMS.
 

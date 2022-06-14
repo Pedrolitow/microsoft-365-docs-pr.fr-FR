@@ -17,16 +17,16 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417949"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057642"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -180,7 +180,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
      - **Date d’envoi** : **Date de début** et **date de fin**.
@@ -197,11 +197,11 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/email-admin-submission-filters.png":::
 
    - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
-     - **Type**
+     - **Type (Type)**
      - **Raison**
      - **État**
      - **Résultat**
@@ -287,7 +287,7 @@ Si vous avez déployé le [complément Message](enable-the-report-message-add-in
 
 Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer l’e-mail, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable.
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Conversion des messages signalés par l’utilisateur de la boîte aux lettres personnalisée en soumission d’administrateur
+### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir les messages signalés par l’utilisateur de la boîte aux lettres personnalisée en soumission d’administrateur
 
 Si vous avez configuré la boîte aux lettres personnalisée pour intercepter les messages signalés par l’utilisateur sans envoyer les messages à Microsoft, vous pouvez rechercher et envoyer des messages spécifiques à Microsoft à des fins d’analyse.
 

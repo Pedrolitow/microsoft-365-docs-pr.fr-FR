@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043728"
+ms.locfileid: "66057602"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -80,7 +80,7 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
     - Pour accéder en lecture seule à la liste d’autorisations/de blocs de locataire, vous devez être membre de
       - **Groupe de rôles Lecteur global**
       - **Groupe de rôles Lecteur de sécurité**
-      - **Groupe de rôles De configuration en mode affichage uniquement* .
+      - **Groupe de rôles De configuration en mode affichage uniquement** .
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -118,7 +118,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Dernière mise à jour**
      - **Supprimer le**
      - **Notes**
-   - **Spoofing**
+   - **Usurpation**
      - **Utilisateur usurpé**
      - **Envoi d’une infrastructure**
      - **Type d’usurpation** d’identité : valeur **interne** ou **externe**.
@@ -156,7 +156,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **N’expirez jamais**
      - **Dernière date de mise à jour**
      - **Supprimer le**
-   - **Spoofing**
+   - **Usurpation**
      - **Action**
      - **Type d’usurpation d’identité**
    - **Url**

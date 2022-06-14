@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: f5a6ec9cd0d221cd025f4bce71008b9d01749590
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940423"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012877"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -264,11 +264,11 @@ Pour identifier les fichiers dans les e-mails Microsoft Office SharePoint Online
 InformationProtectionLabelId:<GUID>
 ```
 
-Pour trouver le GUID, utilisez [l'applet de commande](/powershell/module/exchange/get-label) Get-Label de [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) :
+Pour trouver le GUID, utilisez l’applet de commande [Get-Label](/powershell/module/exchange/get-label) du [PowerShell de sécurité et conformité](/powershell/exchange/scc-powershell):
 
-````powershell
+```powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
+```
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 
@@ -345,7 +345,7 @@ Lorsque vous appliquez automatiquement des étiquettes de conservation basées s
 
 Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le portail de conformité Microsoft Purview. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
-1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande suivante :
     

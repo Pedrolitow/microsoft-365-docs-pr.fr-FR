@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810963"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014275"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 
@@ -107,7 +107,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
     > [!NOTE]
     > Même lorsque l'audit des boîtes aux lettres activé par défaut est activé, vous pouvez remarquer que les événements d'audit des boîtes aux lettres pour certains utilisateurs ne sont pas trouvés dans les recherches de journaux d'audit dans le portail de conformité ou via l'API d'activité de gestion d'Office 365. Pour plus d'informations, affichez[Plus d'informations sur la journalisation de l'audit des boîtes aux lettres](enable-mailbox-auditing.md#more-information).
 
-- Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
+- Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans le PowerShell Exchange Online :
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -573,8 +573,8 @@ Le tableau suivant décrit les activités de synchronisation dans SharePoint Onl
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|Un utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l'ordinateur de l'utilisateur est membre d'un domaine qui a été ajouté à la liste des domaines (*liste des destinataires approuvés*) pouvant accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
-|Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L'utilisateur essaie d'établir une relation de synchronisation avec un site à partir d'un ordinateur qui n'est pas membre du domaine de votre organisation ou qui est membre d'un domaine qui n'a pas été ajouté à la liste des domaines (appelée *liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents de votre organisation. La relation de synchronisation n'est pas autorisée et l'ordinateur de l'utilisateur ne peut pas synchroniser, télécharger ou charger des fichiers sur une bibliothèque de documents.<br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
+|Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|Un utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l'ordinateur de l'utilisateur est membre d'un domaine qui a été ajouté à la liste des domaines (*liste des destinataires approuvés*) pouvant accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, consultez [Utiliser les applets de commande PowerShell pour activer la synchronisation OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
+|Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L'utilisateur essaie d'établir une relation de synchronisation avec un site à partir d'un ordinateur qui n'est pas membre du domaine de votre organisation ou qui est membre d'un domaine qui n'a pas été ajouté à la liste des domaines (appelée *liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents de votre organisation. La relation de synchronisation n'est pas autorisée et l'ordinateur de l'utilisateur ne peut pas synchroniser, télécharger ou charger des fichiers sur une bibliothèque de documents.<br/><br/> Pour plus d’informations sur cette fonctionnalité, consultez [Utiliser les applets de commande PowerShell pour activer la synchronisation OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
 |Fichiers téléchargés sur l’ordinateur|FileSyncDownloadedFull|L’utilisateur télécharge un fichier sur son ordinateur à partir d’une bibliothèque de documents SharePoint ou de OneDrive Entreprise à l’aide de l’application de synchronisation OneDrive (OneDrive.exe).|
 |Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|Cet événement a été déprécié avec l’ancienne application de synchronisation OneDrive Entreprise (Groove.exe).|
 |Fichiers téléchargés dans la bibliothèque de documents|FileSyncUploadedFull|Un utilisateur charge un nouveau fichier ou les modifications apportées à un fichier dans SharePoint bibliothèque de documents ou de OneDrive Entreprise à l’aide de l’application de synchronisation OneDrive (OneDrive.exe).|
@@ -645,7 +645,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 
 Le tableau suivant répertorie les activités qui peuvent être enregistrées par la journalisation d’audit de la boîte aux lettres. Les activités de boîte aux lettres effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur sont enregistrées automatiquement dans le journal d’audit pendant 90 jours au maximum. Un administrateur peut désactiver la journalisation d’audit des boîtes aux lettres pour tous les utilisateurs de votre organisation. Dans ce cas, aucune action de boîte aux lettres pour un utilisateur n’est enregistrée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).
 
- Vous pouvez également rechercher des activités de boîte aux lettres à l’aide de l’applet de commande [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) dans Exchange Online PowerShell.
+ Vous pouvez également rechercher des activités de boîte aux lettres à l’aide de l’applet de commande [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) dans le [PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|

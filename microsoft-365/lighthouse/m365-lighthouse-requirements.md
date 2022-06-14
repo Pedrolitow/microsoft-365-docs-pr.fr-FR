@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), obtenez une liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 4dae28206ba06b8e942290da29ba6a86b49ca7fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 27d5440b70916ebdb3b761ac4308d3b97ccb27da
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017541"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057770"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ En outre, chaque locataire client MSP doit être éligible à Lighthouse en rép
 
 - Doit avoir configuré l’accès délégué pour que le fournisseur de services managés (MSP) puisse gérer le locataire client*
 - Doit avoir au moins une Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Affaires ou licence Microsoft Defender pour entreprises
-- Ne doit pas avoir plus de 1 000 utilisateurs sous licence
+- Ne doit pas avoir plus de 2 500 utilisateurs sous licence
 
 Des privilèges d’administrateur délégués granulaires (GDAP) plus une relation de revendeur indirect ou une relation de privilèges d’administrateur délégué (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Si DAP et GDAP coexistent dans un locataire client, les autorisations GDAP sont prioritaires pour les techniciens MSP dans les groupes de sécurité compatibles GDAP. Bientôt, les clients ayant des relations GDAP uniquement (sans relations de revendeur indirect) pourront intégrer Lighthouse.
 
@@ -60,7 +60,7 @@ Antivirus Microsoft Defender fait partie du système d’exploitation Windows et
 > [!NOTE]
 > Si vous utilisez une solution antivirus non-Microsoft et que vous n’êtes pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer Microsoft 365 Lighthouse sécurité du portail](m365-lighthouse-configure-portal-security.md) (article)\
 [Vue d’ensemble de la page Conformité de l’appareil dans Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\

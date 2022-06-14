@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: En savoir plus sur la création des notifications pour les activités de correspondance de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 163c1386bed2e1f100a42ab8b22b6404fe6bb145
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 75a0e3c50d9dc540bf76187e6aedcbd5642d250b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760270"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009385"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Créer des notifications pour les activités de correspondance de données exactes
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous [créez des types d’informations sensibles personnalisés avec correspondance exacte de données (EDM),](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)un certain nombre d’activités sont créées dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) Vous pouvez utiliser la cmdlet PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) pour créer des notifications qui vous avertiront de l’événement :
 
@@ -50,7 +52,7 @@ Pour en avoir plus sur les autorisations DLP, consultez la section[Autorisations
 La classification basée sur EDM est incluse dans les abonnements suivants :
 
 - Office 365 E5
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Microsoft 365 E5 Conformité
 - Microsoft E5/A5 Information Protection et gouvernance
 
@@ -58,7 +60,7 @@ Si vous souhaitez en savoir plus les licences DLP, consultez la rubrique [Instru
 
 ## <a name="configure-notifications-for-edm-activities"></a>Configurer les notifications pour les activités EDM
 
-1. Se connecter à l’interface [PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+1. Connectez-vous au [PowerShell de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez l’applet de commande `New-ProtectionAlert` à l’aide de l’activité pour laquelle vous souhaitez créer la notification.  Par exemple, si vous souhaitez être averti de l'exécution de l'action **UploadDataCompleted**, exécutez :
 

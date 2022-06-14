@@ -12,21 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Préparez-vous à intégrer Moodle et Microsoft Teams en configurant et en configurant le plug-in Moodle.
-ms.openlocfilehash: c6c022ee2f567dc917a0be164daf4f39a74996b1
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 4fadcd4c52b1389aee51149e9d5313c7821ab10d
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403209"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057788"
 ---
-# <a name="set-up-and-configure-the-moodle-plugin"></a>Configurer et configurer le plug-in Moodle
+# <a name="set-up-the-moodle-plugin"></a>Configurer le plug-in Moodle
 
 Dans cet article, vous allez apprendre à installer et à configurer le plug-in Moodle LMS pour incorporer Microsoft Teams à votre expérience Moodle.
-
-> [!NOTE]
-> Actuellement, les intégrations Moodle et Microsoft Teams LTI sont disponibles uniquement en préversion privée.
->
->Si vous souhaitez participer au programme de préversion privée, [inscrivez-vous ici](https://m365crmedu.powerappsportals.com/LMSSignup)
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -68,7 +63,7 @@ Installez et téléchargez les éléments suivants avant de poursuivre l’insta
 
 #### <a name="enable-the-openid-connect-authentication-plugin"></a>Activer le plug-in d’authentification OpenID Connecter
 
-1. Accédez à **Site** **AdministrationPluginsAuthentication** >  > , puis **sélectionnez Gérer l’authentification**.
+1. Accédez à **l’authentification** **des plug-ins** >  **d’administration** >  de site, puis **sélectionnez Gérer l’authentification**.
 1. Recherchez le **plug-in d’authentification OpenID Connecter** et sélectionnez l’icône *d’œil* pour l’activer.
 1. Sélectionnez **Paramètres** pour le plug-in afin de vérifier les points de terminaison **d’autorisation** et de **jeton**.
     1. Les valeurs par défaut doivent être les suivantes :
@@ -125,11 +120,11 @@ Utilisez la page de configuration des plug-ins Moodle générée `AppID` et `Key
     1. Entrez l’URL de votre serveur Moodle.
     1. Copiez **l’ID d’application (`AppID`)** et la **clé d’application(`Key`)** générés par le script et enregistrez-les.
 
-1. Revenez à la page d’administration des plug-ins, **Site** **administrationPluginsAuthenticationOpenID** >  >  >  **Connecter**.
+1. Revenez à la page d’administration des plug-ins, **Site administration** > **Plugins** > **Authentication** > **OpenID Connecter**.
 
 1. Collez la `AppID` valeur dans la zone **ID d’application** et la `Key` valeur dans la zone **Clé** , puis **sélectionnez Enregistrer les modifications**.
 
-1. Accédez aux **plug-ins** **Site** **administrationPluginsLocal** >  >  et sélectionnez **Microsoft 365 Integration**.
+1. Accédez aux **plug-ins** > **locaux** **d’administration** >  de site et sélectionnez **Microsoft 365 Intégration**.
 
 1. Dans **Choisir la méthode de connexion**, sélectionnez **Accès à l’application**, puis **sélectionnez Enregistrer à nouveau les modifications** .
 
@@ -154,7 +149,7 @@ Utilisez la page de configuration des plug-ins Moodle générée `AppID` et `Key
     1. Dans la section **Restriction de création** d’utilisateurs, vous pouvez configurer un filtre pour limiter les utilisateurs Azure AD synchronisés avec Moodle.
     1. Dans la section **Synchronisation des cours**, vous pouvez sélectionner l’option de **personnalisation de synchronisation de cours** pour activer la création automatique de groupes et de Teams pour une partie ou la totalité de vos cours Moodle existants.
 
-1. Pour valider les tâches [cron](https://docs.moodle.org/400/en/Cron) et les exécuter manuellement pour la première fois, accédez aux tâches **d’administration** >  **de** siteServerTasksScheduled >  > .
+1. Pour valider les tâches [cron](https://docs.moodle.org/400/en/Cron) et les exécuter manuellement pour la première fois, accédez aux **tâches planifiées** du **serveur** >  **d’administration** >  >  de site.
 
     1. Faites défiler vers le bas et recherchez les **utilisateurs de synchronisation de tâches avec Azure AD** , puis sélectionnez **Exécuter maintenant**.
         1. Cela synchronise l’utilisateur AAD avec votre site Moodle.
@@ -167,7 +162,7 @@ Utilisez la page de configuration des plug-ins Moodle générée `AppID` et `Key
     >
     > Moodle [Cron](https://docs.moodle.org/400/en/Scheduled_tasks) s’exécute selon la planification des tâches. La planification par défaut est une fois par jour à 1h00 dans le fuseau horaire local de votre serveur. Toutefois, le cron doit s’exécuter plus fréquemment pour que tout reste synchronisé.
 
-1. Accédez à **l’onglet Administration** >  **du sitePluginsLocal** >  >  **Microsoft 365'intégration** >  **Teams Paramètres**.
+1. Accédez à l’onglet **Plug-ins** >  >  locaux **d’administration** >  de site **Microsoft 365 Intégration** >  **Teams Paramètres**.
 
 1. Cliquez sur le bouton **Vérifier les paramètres moodle** pour mettre à jour toutes les configurations requises pour que l’intégration Teams fonctionne.
         

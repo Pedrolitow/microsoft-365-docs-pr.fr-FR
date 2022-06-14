@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7124d97c56e414a7c5a47488805bb4134426f073
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419525"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018027"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -550,7 +550,7 @@ Les actions de rétention qui sont journalisées comme événements d’audit so
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 
-Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter au Centre de sécurité et conformité Office 365 – PowerShell](/powershell/exchange/connect-to-scc-powershell). Puis utilisez l’un des cmdlets suivantes :
+Pour utiliser les applets de commande de rétention, vous devez d’abord vous [connecter au PowerShell de sécurité et conformité d’Office 365](/powershell/exchange/connect-to-scc-powershell). Utilisez ensuite l’une des applets de commande suivantes :
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 

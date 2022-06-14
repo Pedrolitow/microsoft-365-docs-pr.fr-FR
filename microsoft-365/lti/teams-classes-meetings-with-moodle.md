@@ -12,19 +12,14 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Créez et gérez Teams classes et réunions avec Microsoft OneDrive Learning Tools Interoperability for Moodle.
-ms.openlocfilehash: a59c4fcb6f6a39f3a75acbaa241d50d25b9d444a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: da65874516dcf196ac91ecea1acc75e3cb719f58
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415500"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057739"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-moodle"></a>Intégrer Microsoft Teams classes et réunions dans Moodle
-
-> [!NOTE]
-> Actuellement, les intégrations Moodle et Microsoft Teams LTI sont disponibles uniquement en préversion privée.
->
->Si vous souhaitez participer au programme de préversion privée, [inscrivez-vous ici](https://m365crmedu.powerappsportals.com/LMSSignup/).
 
 Ce guide fournit les étapes de l’administrateur informatique pour l’inscription des applications LTI Teams Classes et Teams Meetings sur Moodle.
 
@@ -55,7 +50,7 @@ Suivez les [instructions d’installation et de configuration du plug-in Moodle]
 
 7. Ouvrez Moodle dans un autre onglet. Ne fermez pas l’onglet Passerelle Microsoft LMS.
 
-8. Dans Moodle, accédez à **Site** **administrationPluginsActivity** >  >  **modulesExternal** >  **toolsManage** >  **toolsManage**.
+8. Dans Moodle, accédez aux **modules Activité des plug-ins** >  **d’administration** >  de site **Outils externes** >  > **Gérer les outils**.
 
 9. Dans la page **Gérer les outils** , sélectionnez **configurer un outil manuellement**.
 

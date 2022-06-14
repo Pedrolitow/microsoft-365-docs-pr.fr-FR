@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739414"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057712"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -58,7 +58,7 @@ Dans la file d’attente d’alertes par défaut, vous pouvez sélectionner **Fi
 Vous pouvez filtrer les alertes en fonction des critères suivants :
 
 - Severity
-- Statut
+- État
 - Sources de service
 - Entités (ressources impactées)
 - État d’investigation automatisé
@@ -218,3 +218,4 @@ Si nécessaire pour les incidents in-process, poursuivez votre [enquête](invest
 - [Vue d’ensemble des incidents](incidents-overview.md)
 - [Gérer des incidents](manage-incidents.md)
 - [Examiner des incidents](investigate-incidents.md)
+- [Examiner les incidents de perte de données](investigate-dlp.md)
