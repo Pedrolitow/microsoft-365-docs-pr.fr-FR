@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057602"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060935"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -73,14 +73,16 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
-    - Pour ajouter et supprimer des valeurs de la liste d’autorisations/de blocs du locataire, vous devez être membre de
-      - **Groupe de rôles Gestion de l’organisation** ou **Administrateur de la sécurité** (**rôle Administrateur de la sécurité**)
-      - Groupe **de rôles Opérateur de sécurité** (**Tenant AllowBlockList Manager**).
-    - Pour accéder en lecture seule à la liste d’autorisations/de blocs de locataire, vous devez être membre de
-      - **Groupe de rôles Lecteur global**
-      - **Groupe de rôles Lecteur de sécurité**
-      - **Groupe de rôles De configuration en mode affichage uniquement** .
+- Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
+  - Pour ajouter et supprimer des entrées de la liste d’autorisation/de blocage du locataire, vous devez être membre de l’un des groupes de rôles suivants :
+    - **Gestion de l’organisation** (rôle **d’administrateur de la sécurité** ).
+    - **Administrateur de la sécurité** (rôle **d’administrateur de la sécurité** ).
+    - **Opérateur de sécurité** (rôle **Tenant AllowBlockList Manager** ).
+
+  - Pour accéder en lecture seule à la liste d’autorisations/de blocs du locataire, vous devez être membre de l’un des groupes de rôles suivants :
+    - **Groupe de rôles Lecteur général** .
+    - **Groupe de rôles Lecteur de sécurité** .
+    - **Groupe de rôles De configuration en mode affichage uniquement** .
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -482,7 +484,6 @@ Par exemple, vous ajoutez une entrée d’autorisation pour la paire de domaines
 - **Infrastructure** : tms.mx.com
 
 Seuls les messages de cette paire d’infrastructure de domaine *et* d’envoi sont autorisés à usurper. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages des expéditeurs d’autres domaines provenant de tms.mx.com sont vérifiés par l’intelligence par usurpation d’identité.
-
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
 

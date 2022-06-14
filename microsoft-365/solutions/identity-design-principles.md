@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 planification des ressources d’entreprise - Architecture de sécurité
+title: 'À l’identité et au-delà : point de vue d’un architecte'
 description: Découvrez les principales stratégies de conception pour l’architecture Microsoft Enterprise d’Alex Shteynberg, architecte principal technique chez Microsoft.
 ms.author: bcarter
 author: brendacarter
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: ff8fdb34cc69f108b57468d71342a3b1dfb39302
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015079"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060958"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>À l’identité et au-delà : point de vue d’un architecte
 

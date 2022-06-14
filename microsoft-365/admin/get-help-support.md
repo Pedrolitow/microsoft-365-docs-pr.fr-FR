@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3d1b69fef8bd262aada4910c82199203f4cff9ee
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465885"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011779"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtenir un support pour Microsoft 365 pour les entreprises
 
@@ -59,8 +59,12 @@ Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons
 
 ## <a name="phone-support"></a>Support téléphonique
 
-Le support de facturation est proposé en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.\
-Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.\
+Utilisez le menu déroulant ci-dessous pour trouver le numéro correspondant à votre pays ou région.
+
+[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+Les heures d'assistance pour la facturation et l'assistance technique (et les langues) sont indiquées sur la page de chaque pays sélectionné dans la liste déroulante.
+
 Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.
 
 > [!NOTE]
@@ -73,10 +77,6 @@ Vous, en tant qu'administrateur, devez avoir vos informations de compte à dispo
 - **Au Canada, composez le 1 800 865 9408.**
 
 - **Au Royaume-Uni, composez le 0800 032 6417.**
-
-Si le numéro de téléphone du support que vous recherchez ne figure pas dans la liste ci-dessus, utilisez le menu déroulant ci-dessous pour rechercher le numéro de votre pays ou région.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
 ## <a name="small-business-support-with-business-assist"></a>Prise en charge des petites entreprises avec Business Assist
 
@@ -134,8 +134,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 | Niveau de gravité | Description d’opérations et d’assistance | Exemples |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Niveau de gravité A (Critique) | Un ou plusieurs services ne sont pas accessibles ou sont inutilisables. Les délais de production, d'opérations ou de déploiement sont gravement affectés, ou bien la production ou la rentabilité risque d'être gravement affectée. Plusieurs utilisateurs ou services sont affectés. | <ul><li>Problèmes les plus répandus d’envoi ou de réception de messages.</li><li>Site SharePoint en panne.</li><li>Tous les utilisateurs ne peuvent pas envoyer de messages instantanés, rejoindre ou planifier des réunions Skype Entreprise, ou passer des appels Skype Entreprise.</li></ul> |
-| Niveau de gravité B (Haute) | Le service est utilisable mais pas de manière optimale. La situation a un impact modéré sur l’activité et peut être traitée aux heures ouvrables. Un seul utilisateur, client ou service est partiellement affecté. | <ul><li>Le bouton Envoyer dans Outlook est tronqué.</li><li>Le paramétrage est impossible dans le CAE (centre d’administration Exchange), mais il est possible dans PowerShell.
-</li></ul> |
+| Niveau de gravité B (Haute) | Le service est utilisable mais pas de manière optimale. La situation a un impact modéré sur l’activité et peut être traitée aux heures ouvrables. Un seul utilisateur, client ou service est partiellement affecté. | <ul><li>Le bouton Envoyer dans Outlook est tronqué.</li><li>Le paramétrage est impossible depuis l'EAA (Centre d’administration Exchange) mais possible dans Exchange Online PowerShell.</li></ul> |
 | Niveau de gravité C (Non critique) | La situation a un impact minime sur l’activité. Le problème est important mais n’a pas d’impact considérable sur la productivité ou le service actuel pour le client. Un seul utilisateur connaît une interruption partielle mais il existe une solution acceptable. | <ul><li>Comment définir un mot de passe d’utilisateur qui n’expire jamais.</li> <li>L'utilisateur ne peut pas supprimer les informations de contact dans Exchange Online.</li></ul> |
 
 ## <a name="technical-support-initial-response-times"></a>Délais de réponse initiaux d’assistance technique

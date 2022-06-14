@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: c790ee691e6a72228c865b8cdf9911ee83f4dfd4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011567"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043063"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
@@ -76,7 +76,7 @@ Certaines fonctionnalités sont uniquement prises en charge par l’étiquetage 
     - Accès aux services de classification intelligents qui incluent [les classifieurs entraînables](classifier-learn-about.md), [la correspondance exacte des données (EDM)](sit-learn-about-exact-data-match-based-sits.md) et [les entités nommées](named-entities-learn.md)
     - Détection d'informations sensibles au moment de la saisie des utilisateurs
     - Dans Word, les utilisateurs peuvent examiner et supprimer le contenu sensible identifié.
-- [Prise en charge du format PDF](sensitivity-labels-office-apps.md#pdf-support)
+- [Prise en charge du format PDF](sensitivity-labels-office-apps.md#pdf-support) (en préversion)
 - Pour les étiquettes qui permettent aux utilisateurs d'attribuer des permissions, différentes permissions (lecture ou modification) peuvent être accordées aux utilisateurs ou aux groupes.
 - Cryptage uniquement pour les e-mails
 - Visibilité des étiquettes sur la barre d'état

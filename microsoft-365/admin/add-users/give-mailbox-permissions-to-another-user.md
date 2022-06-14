@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Accorder à un utilisateur de Microsoft 365 le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des e-mails à partir de la boîte aux lettres de l'autre utilisateur.
-ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436710"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042371"
 ---
 # <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur Microsoft 365 – Aide de l’administrateur
 
@@ -167,6 +167,8 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 ::: moniker-end
 
+> [!NOTE]
+> Les autorisations **Envoyer en tant que** et **Envoyer de la part de** ne fonctionnent pas dans le client de bureau Outlook avec le paramètre *HiddenFromAddressListsEnabled* sur la boîte aux lettres définie sur **True**, car elles nécessitent que la boîte aux lettres soit visible dans Outlook via la liste d’adresses globale.
 
 ## <a name="related-content"></a>Contenu associé
   
