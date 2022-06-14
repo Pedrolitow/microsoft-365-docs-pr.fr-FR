@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: b43c29ee706fb6d4864227fbfbfe95ad5bbe0495
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930281"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012899"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -82,7 +82,7 @@ Les stratégies de rétention du journal d’audit font partie des nouvelles fon
 1. Avant de créer une stratégie de conservation des journaux d'audit – [éléments clés à connaître](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) avant de créer votre stratégie.
 1. [Créer une stratégie de rétention de journal d’audit](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
 1. [Gérer les stratégies de rétention des journaux d'audit dans le portail de conformité Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier et supprimer les politiques de conservation des audits.
-1. Créez et gérez des stratégies de rétention des journaux d'audit sur PowerShell : vous pouvez également utiliser le Centre de sécurité et de conformité PowerShell pour [créer et gérer des stratégies de rétention des journaux d'audit](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
+1. Créez et gérez des stratégies de rétention des journaux d'audit sur PowerShell : vous pouvez également utiliser Security & Compliance PowerShell pour [créer et gérer des stratégies de rétention des journaux d'audit](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
 
 ## <a name="communication-compliance"></a>Conformité des communications
 
@@ -264,7 +264,7 @@ Pour accéder à la découverte électronique (Premium) ou être ajouté en tant
 
 De plus en plus d'organisations utilisent la solution eDiscovery (Premium) dans Microsoft Purview pour les processus critiques d’eDiscovery. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges.
 
-1. Gérer la découverte électronique (Premium) – [découvrir comment configurer la découverte électronique (Premium), gérer les cas à l'aide du Centre de sécurité et de conformité, gérer un flux de travail dans la découverte électronique (Premium) et analyser les résultats de la recherche de la découverte électronique (Premium)](/learn/modules/manage-advanced-ediscovery).
+1. Gérer la découverte électronique (Premium) – [découvrir comment configurer la découverte électronique (Premium), gérer les cas, gérer un flux de travail dans la découverte électronique (Premium) et analyser les résultats de la recherche de la découverte électronique (Premium)](/learn/modules/manage-advanced-ediscovery).
 1. [Créer un cas eDiscovery à l’aide du nouveau format de cas d’Advance eDiscovery](advanced-ediscovery-new-case-format.md)
 1. [Fermer ou supprimer un cas](close-or-delete-case.md) – Lorsque l'affaire judiciaire ou l'enquête est terminée, vous pouvez fermer ou supprimer.
 
