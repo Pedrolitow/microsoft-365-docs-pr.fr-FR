@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057642"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078923"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
 
@@ -60,7 +60,7 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 - Les administrateurs peuvent envoyer des messages vieux de 30 jours s’ils sont toujours disponibles dans la boîte aux lettres et non purgés par l’utilisateur ou un autre administrateur.
 
-- Les soumissions d’administrateur sont limitées aux tarifs suivants :
+- Administration soumissions sont limitées aux taux suivants :
   - Nombre maximal de soumissions sur une période de 15 minutes : 150 soumissions
   - Mêmes soumissions sur une période de 24 heures : 3 soumissions
   - Mêmes soumissions dans une période de 15 minutes : 1 soumission
@@ -149,13 +149,13 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 > [!NOTE]
 > Si le filtrage des programmes malveillants a remplacé les pièces jointes de message par le fichier d’alerte de programme malveillant Text.txt, vous devez envoyer le message d’origine à partir de la mise en quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et la façon de publier des messages avec des faux positifs de programme malveillant, consultez [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
 
-## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateurs à Microsoft
+## <a name="view-email-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur de messagerie à Microsoft
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
 
-2. Dans la page **Soumissions** , vérifiez que l’onglet **E-mails**, **URL** ou **pièces jointes** est sélectionné.
+2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné.
 
-   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour afficher un maximum de sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour sélectionner les colonnes dont vous avez besoin. Toutes les colonnes peuvent être sélectionnées et affichées dans la grille de soumission. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
      - **Nom de l’envoi**<sup>\*</sup>
      - **Expéditeur**<sup>\*</sup>
      - **Destinataire**
@@ -201,7 +201,6 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
    - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
-     - **Type (Type)**
      - **Raison**
      - **État**
      - **Résultat**
@@ -209,7 +208,105 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
    - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
-### <a name="admin-submission-result-details"></a>Détails du résultat de la soumission de l’administrateur
+## <a name="view-email-attachment-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateurs de pièces jointes à Microsoft
+
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions** , vérifiez que l’onglet **Pièces jointes de l’e-mail** est sélectionné.
+
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour sélectionner les colonnes dont vous avez besoin. Toutes les colonnes peuvent être sélectionnées et affichées dans la grille de soumission. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
+     - **Nom de la pièce jointe**<sup>\*</sup>
+     - **Date d’envoi**<sup>\*</sup>
+     - **Motif de l’envoi**<sup>\*</sup>
+     - **Statut**<sup>\*</sup>
+     - **Résultat**<sup>\*</sup>
+     - **Filtrer le verdict**
+     - **Motif de remise/blocage**
+     - **ID de soumission**
+     - **ID d’objet**
+     - **Action de stratégie**
+     - **Soumis par**
+     - **Étiquettes**<sup>\*</sup>
+     - **Allow**
+
+     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+
+   - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
+     - **Date d’envoi** : **Date de début** et **date de fin**.
+     - **ID de soumission** : valeur GUID affectée à chaque soumission.
+     - **Nom de fichier des pièces jointes**
+     - **Soumis par**
+     - **Motif de l’envoi**
+     - **État**
+     - **Tags**
+
+     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+
+   - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+     - **Aucune**
+     - **Raison**
+     - **État**
+     - **Résultat**
+     - **Tags**
+
+   - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
+
+## <a name="view-urls-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur d’URL à Microsoft
+
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions** , vérifiez que l’onglet **URL** est sélectionné.
+
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour sélectionner les colonnes dont vous avez besoin. Toutes les colonnes peuvent être sélectionnées et affichées dans la grille de soumission. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
+     - **URL**<sup>\*</sup>
+     - **Date d’envoi**<sup>\*</sup>
+     - **Motif de l’envoi**<sup>\*</sup>
+     - **Statut**<sup>\*</sup>
+     - **Résultat**<sup>\*</sup>
+     - **Filtrer le verdict**
+     - **Motif de remise/blocage**
+     - **ID de soumission**
+     - **ID d’objet**
+     - **Action de stratégie**
+     - **Soumis par**
+     - **Étiquettes**<sup>\*</sup>
+     - **Allow**
+
+     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/url-admin-submission-customize-columns.png":::
+
+   - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
+     - **Date d’envoi** : **Date de début** et **date de fin**.
+     - **ID de soumission** : valeur GUID affectée à chaque soumission.
+     - **URL**
+     - **Soumis par**
+     - **Motif de l’envoi**
+     - **État**
+     - **Tags**
+
+     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/url-admin-submission-filters.png":::
+
+   - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+     - **Aucune**
+     - **Raison**
+     - **État**
+     - **Résultat**
+     - **Tags**
+
+   - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
+
+### <a name="admin-submission-result-details"></a>Administration détails du résultat de la soumission
 
 Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats sont affichés dans le menu volant détaillé des soumissions :
 

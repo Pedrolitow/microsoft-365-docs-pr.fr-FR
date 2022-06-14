@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment commencer à utiliser eDiscovery (Standard) dans Microsoft Purview. Après avoir affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des conservations eDiscovery, puis rechercher et exporter du contenu pertinent pour votre enquête.
-ms.openlocfilehash: e224bf22741d0e1599d099802470e231b11fd785
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094943"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078477"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Démarrage avec eDiscovery (Standard) dans Microsoft Purview
 
@@ -37,7 +37,7 @@ Cet article décrit les étapes nécessaires à la configuration d’eDiscovery 
 
 La gestion des licences pour eDiscovery (Standard) nécessite l’abonnement de l’organisation et les licences par utilisateur appropriés.
 
-- **Abonnement à l’organisation :** Pour accéder à eDiscovery (Standard) dans le portail de conformité Microsoft Purview et utiliser les fonctionnalités de conservation et d’exportation, votre organisation doit disposer d’un abonnement Microsoft 365 E3 ou Office 365 E3 ou supérieur. Microsoft 365 les organisations de première ligne doivent disposer d’un abonnement F5.
+- **Abonnement à l’organisation :** Pour accéder à eDiscovery (Standard) dans le portail de conformité Microsoft Purview et utiliser les fonctionnalités de conservation et d’exportation, votre organisation doit disposer d’un Exchange abonnement en ligne Plan 2 ou Microsoft 365 E3 ou Office 365 E3 ou supérieur. Microsoft 365 les organisations de première ligne doivent disposer d’un abonnement F5.
 
 - **Licences par utilisateur :** Pour placer une conservation eDiscovery sur les boîtes aux lettres et les sites, les utilisateurs doivent se voir attribuer l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
 
@@ -109,7 +109,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser eDisco
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité</a> et connectez-vous à l’aide des informations d’identification d’un compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées. Les membres du groupe de rôles Gestion de l’organisation peuvent également créer des cas eDiscovery (Standard).
 
-2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Afficher tout**, puis sur **eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Afficher tout**, puis sur **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. Dans la page **eDiscovery (Standard),** cliquez sur **Créer un cas**.
 

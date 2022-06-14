@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0365f8a9d2f267d7ebc0cfeddd5b7d1d5c16a72a
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418629"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078785"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -90,7 +90,7 @@ Pour plus d’informations, consultez [Gérer les Antivirus Microsoft Defender a
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Tentative de téléchargement d’un fichier de logiciels malveillants factice à partir de Microsoft
 
-Vous pouvez télécharger un exemple de fichier que Antivirus Microsoft Defender détectera et bloquera si vous êtes correctement connecté au cloud. Visitez cette page [https://aka.ms/ioavtest](https://aka.ms/ioavtest) pour télécharger le fichier.
+Vous pouvez télécharger un exemple de fichier que Antivirus Microsoft Defender détectera et bloquera si vous êtes correctement connecté au cloud. Visitez cette page [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) pour télécharger le fichier.
 
 > [!NOTE]
 > Le fichier téléchargé n’est pas exactement un programme malveillant. Il s’agit d’un faux fichier conçu pour tester si vous êtes correctement connecté au cloud.

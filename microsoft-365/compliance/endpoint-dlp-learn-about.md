@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 54f2605e815c98242a66b4d2be844ee59a2699e8
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023368"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078829"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -53,8 +53,8 @@ La protection contre la perte de données de point de terminaison vous permet d�
 |imprimer un document    |Détecte lorsqu'un utilisateur tente d'imprimer un élément protégé sur une imprimante locale ou réseau.|Pris en charge|Pris en charge|auditable et restreint         |
 |copier vers une session à distance|Détecte lorsqu'un utilisateur tente de copier un élément vers une session de bureau à distance |Pris en charge|non pris en charge|  auditable et restreint|
 |copier vers appareil Bluetooth|Détecte lorsqu'un utilisateur tente de copier un élément vers une application Bluetooth non autorisée (telle que définie dans la liste des applications Bluetooth non autorisées dans les paramètres DLP de point de terminaison).|Pris en charge|non pris en charge| auditable et restreint|
-|créer un élément|Détecte lorsqu'un utilisateur crée un article|Pris en charge | |vérifiable|
-|renommer un article|Détecte lorsqu'un utilisateur renomme un article|Pris en charge | |vérifiable|
+|créer un élément|Détecte lorsqu'un utilisateur crée un article|Pris en charge |Pris en charge |vérifiable|
+|renommer un article|Détecte lorsqu'un utilisateur renomme un article|Pris en charge |Pris en charge |vérifiable|
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>Meilleure pratique pour les stratégies DLP de point de terminaison
 
@@ -212,7 +212,7 @@ Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochai
 
 - [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
 - [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)

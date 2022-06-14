@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 05/13/2022
+ms.date: 06/14/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 373072ff1b1a893a8de970ccb6eacbdcd14b48d3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 528693febbb6d02f6ea143d94aaae154d3dfde7e
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014947"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078741"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Examen des éléments partiellement indexés dans eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Une recherche eDiscovery que vous exécutez à partir du portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
+Une recherche eDiscovery que vous exécutez à partir de la portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   
 - Les messages électroniques ont un fichier joint qui ne peut pas être ouvert ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
 
@@ -116,12 +116,13 @@ Voici une liste d’erreurs d’indexation et une description de la cause possib
 | `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque vous atteignez la limite, et la propriété est tronquée.  <br/> |
 
 Les champs d’erreur décrivent les champs affectés par l’erreur de traitement répertoriée dans le champ Étiquettes d’erreur. Si vous effectuez une recherche dans une propriété telle que  `subject` ou  `participants`, les erreurs dans le corps du message n’ont pas d’impact sur les résultats de votre recherche. Cela peut être utile pour déterminer exactement quels éléments partiellement indexés vous devrez peut-être examiner plus en détail.
-  
-## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilisation d’un script PowerShell pour déterminer l’exposition de votre organisation aux éléments de messagerie partiellement indexés
 
-Les étapes suivantes vous montrent comment exécuter un script PowerShell qui recherche tous les éléments dans toutes les boîtes aux lettres Exchange, puis génère un rapport sur le ratio d’éléments de courrier partiellement indexés de votre organisation (par nombre et par taille) et affiche le nombre d’éléments (et leur type de fichier) pour chaque erreur d’indexation qui se produit. Utilisez les descriptions des balises d’erreur dans la section précédente pour identifier l’erreur d’indexation.
+<!--
+## Using a PowerShell script to determine your organization's exposure to partially indexed email items
+
+The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `PartiallyIndexedItems.ps1`.
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
 
    ```powershell
      write-host "**************************************************"
@@ -166,25 +167,26 @@ Les étapes suivantes vous montrent comment exécuter un script PowerShell qui r
      }
    ```
 
-2. [Connecter à Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. Dans Security & Compliance PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script ; par exemple :
+3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
    ```powershell
    .\PartiallyIndexedItems.ps1
    ```
 
-Voici un exemple de sortie retournée par le script.
+Here's an example fo the output returned by the script.
   
-![Exemple de sortie à partir d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de messagerie partiellement indexés.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Example of output from script that generates a report on your organization's exposure to partially indexed email items.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
-> Veuillez prendre en compte les éléments suivants:
+> Note the following:
 >  
-> - Le nombre total et la taille des éléments de messagerie, ainsi que le rapport entre les éléments de messagerie partiellement indexés de votre organisation (par nombre et par taille).
+> - The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size).
 > 
-> - Balises d’erreur de liste et types de fichiers correspondants pour lesquels l’erreur s’est produite.
-  
+> - A list error tags and the corresponding file types for which the error occurred.
+-->
+
 ## <a name="see-also"></a>Voir aussi
 
 [Éléments partiellement indexés dans eDiscovery](partially-indexed-items-in-content-search.md)

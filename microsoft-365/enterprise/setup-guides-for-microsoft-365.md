@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités dans les licences de votre locataire. Recherchez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 451f92aade8a6e7910630629b805065e6910b9de
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 832c551c9f42082d4c55c8a7902a740ef124012d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017117"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078543"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -181,13 +181,13 @@ Les solutions de ce guide vous aideront à obtenir une visibilité sur les activ
 * Avec la solution de conformité des communications, vous pouvez identifier et agir sur les risques de communication pour des éléments tels que la violence au travail, les délits internes, le harcèlement, le code de conduite et les violations de conformité réglementaire.
 * La solution de gestion des risques internes vous aide à identifier, examiner et prendre des mesures en cas de vol de propriété intellectuelle, de fuites de données sensibles, de violations de sécurité, de débordement de données et de violations de confidentialité.
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Guide d’installation de Microsoft Purview Information Protection
+### <a name="microsoft-purview-information-protection-setup-guide"></a>guide d’installation Protection des données Microsoft Purview
 
 Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin d’être certain que vos informations sensibles sont protégées. Utilisez une approche de cycle de vie à quatre étapes consistant à découvrir, à classer, à protéger, puis à contrôler les informations sensibles. Le [Guide de configuration Protection des données Microsoft Purview](https://aka.ms/microsoftpurviewinformationprotectionsetupguide) fournit des conseils sur l’exécution de chacune de ces étapes.
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guide d’installation de Microsoft Purview Data Lifecycle Management
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Guide d’installation Gestion du cycle de vie des données Microsoft Purview
 
-Le [guide d’installation de Microsoft Purview Data Lifecycle Management](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classifiées et gérées conformément aux instructions de cycle de vie spécifiques que vous définissez. Avec ce guide, vous allez apprendre à créer, appliquer automatiquement ou publier des étiquettes de rétention, des stratégies d’étiquette de rétention et des stratégies de rétention appliquées aux enregistrements de contenu et de conformité de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour les appliquer manuellement à des documents individuels.
+Le [guide d’installation Gestion du cycle de vie des données Microsoft Purview](https://aka.ms/migsetupguide) vous fournit les informations dont vous aurez besoin pour configurer et gérer la stratégie de gouvernance de votre organisation, afin de vous assurer que vos données sont classifiées et gérées conformément aux instructions de cycle de vie spécifiques que vous définissez. Avec ce guide, vous allez apprendre à créer, appliquer automatiquement ou publier des étiquettes de rétention, des stratégies d’étiquette de rétention et des stratégies de rétention appliquées aux enregistrements de contenu et de conformité de votre organisation. Vous obtiendrez également des informations sur l’importation de fichiers CSV avec un plan de fichiers pour les scénarios en bloc ou pour les appliquer manuellement à des documents individuels.
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>guide d’installation Microsoft Defender for Cloud Apps
 
@@ -251,6 +251,6 @@ Pour les organisations qui utilisent Configuration Manager, vous pouvez utiliser
 
 Utilisez le [guide de configuration de la cogestion Intune Configuration Manager](https://aka.ms/comanagementsetup) pour configurer des appareils clients Configuration Manager existants et de nouveaux appareils basés sur Internet que votre organisation souhaite co-gérer avec Microsoft Intune et Configuration Manager. La cogestion vous permet de gérer Windows 10 appareils et d’ajouter de nouvelles fonctionnalités aux appareils de votre organisation, tout en bénéficiant des avantages des deux solutions.
 
-#### <a name="school-data-sync-rollover-setup-guide"></a>guide d’installation de la substitution Synchronisation des données scolaires
+### <a name="school-data-sync-rollover-setup-guide"></a>guide d’installation de la substitution Synchronisation des données scolaires
 
 Le [guide de configuration de la substitution SDS](https://aka.ms/sdsrolloversetupguide) fournit les étapes permettant à votre organisation de synchroniser les données d’informations sur les étudiants pour Azure Active Directory et Office 365. Ce guide simplifie le processus de gestion du cycle de vie des termes en créant des groupes Office 365 pour Exchange Online et SharePoint Online, des équipes de classes pour Microsoft Teams et OneNote, ainsi que Intune  pour l’éducation, et l’inscription et l’intégration de l’authentification unique pour les applications tierces. Vous effectuerez le gros plan de fin d’année, le nettoyage et l’archivage des locataires, la préparation de la nouvelle année scolaire et le lancement de la nouvelle année scolaire. Vous pouvez ensuite créer de nouveaux profils à l’aide de la méthode de déploiement de synchronisation qui convient à votre organisation.
