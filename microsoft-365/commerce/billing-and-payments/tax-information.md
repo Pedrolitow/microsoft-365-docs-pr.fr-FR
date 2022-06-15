@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,16 +21,16 @@ ms.custom:
 - AdminTemplateSet
 description: Découvrez le montant des taxes qui vous seront facturées pour votre Microsoft 365 pour un abonnement professionnel dans différentes régions.
 ms.date: 03/17/2021
-ms.openlocfilehash: 35442bc495b6179a844bdbe3a6b98a4f58556140
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731226"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101621"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
-Lorsque vous achetez Microsoft 365 produits et services, les taxes que vous payez sont déterminées par l’une des deux choses suivantes : votre adresse professionnelle ou votre adresse d’expédition, si elle est différente. Si votre organisation se trouve dans le États-Unis, vous devez fournir un numéro d’identification de l’employeur fédéral (FEIN).
+Lorsque vous achetez Microsoft 365 produits et services, les taxes que vous payez sont déterminées par l’une des deux choses suivantes : votre adresse professionnelle ou votre adresse d’expédition, si elle est différente. Si votre organisation se trouve dans le Estados Unidos, vous devez fournir un numéro d’identification de l’employeur fédéral (FEIN).
 
 Les entreprises des pays suivants peuvent fournir leur numéro de TVA ou leur équivalent local :
 
@@ -132,9 +132,9 @@ Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe lo
 
 ## <a name="north-central-and-south-america"></a>Amérique du Nord, centrale et du Sud
 
-Dans le États-Unis, le Canada, le Mexique, le Chili et la Colombie, différents taux d’imposition s’appliquent en fonction de la nature du produit et de votre emplacement.
+Dans le Estados Unidos, au Canada, au Mexique, au Chili et en Colombie, différents taux d’imposition s’appliquent en fonction de la nature du produit et de votre emplacement.
   
-Si votre facturation est effectuée par Microsoft Corporation ([consultez votre facture](view-your-bill-or-invoice.md) et que vous vous êtes inscrit à Microsoft 365 en dehors de la États-Unis, du Canada, de Porto Rico, du Chili et de la Colombie, la taxe n’est généralement pas facturée.
+Si votre facturation est effectuée par Microsoft Corporation ([consultez votre facture](view-your-bill-or-invoice.md) et que vous vous êtes inscrit à Microsoft 365 en dehors de la Estados Unidos, du Canada, de Porto Rico, du Chili et de la Colombie, la taxe n’est généralement pas facturée.
 
 ## <a name="add-your-vat-id"></a>Ajouter votre ID de TVA
 
@@ -148,7 +148,7 @@ Si votre facturation est effectuée par Microsoft Corporation ([consultez votre 
 
 Les taxes de vente sont calculées par rapport au prix unitaire, puis agrégées.
 
-Par exemple :
+Par exemple :
 
 >*(taux d’imposition unitaire X) X quantity = total sales tax*
 

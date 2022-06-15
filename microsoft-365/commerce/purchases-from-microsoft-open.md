@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 entreprise.
 ms.date: 10/21/2020
-ms.openlocfilehash: 2f877438571c261217305651121d33b3f14697b4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 32f4fcc5c6febece9f9680120a41a4a49674f816
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715140"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102435"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Entrez votre clé de produit achetée auprès de Microsoft Open
 
@@ -65,4 +65,4 @@ Les partenaires peuvent consulter la rubrique [Partenaires : utiliser une clé d
   
 Les clients ayant acquis des licences en volume peuvent en apprendre davantage en visitant le site [Ressources et formation sur le Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Ou, si vous voulez parler à une personne, [appelez Support Microsoft](../admin/get-help-support.md).
+Ou, si vous voulez parler à une personne, [appelez pomoc techniczna firmy Microsoft](../admin/get-help-support.md).

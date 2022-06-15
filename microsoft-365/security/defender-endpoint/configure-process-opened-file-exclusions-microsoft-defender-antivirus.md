@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6faca5dde477908010f4426ff9009f383b63c58c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0dd59d2196ebb2c2af80fb53d43a009ff3a367d0
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418607"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102321"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -40,8 +40,6 @@ Cet article explique comment configurer des listes d’exclusions.
 
 ## <a name="examples-of-exclusions"></a>Exemples d’exclusions
 
-<br/><br/>
-
 |Exclusion|Exemple|
 |---|---|
 |Tout fichier sur l’ordinateur ouvert par n’importe quel processus avec un nom de fichier spécifique|La spécification exclut les `test.exe` fichiers ouverts par : <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
@@ -52,13 +50,13 @@ Lorsque vous ajoutez un processus à la liste d’exclusion de processus, Antivi
 
 Les exclusions s’appliquent uniquement à [la protection et à la surveillance en temps réel always-on](configure-real-time-protection-microsoft-defender-antivirus.md). Elles ne s’appliquent pas aux analyses planifiées ou à la demande.
 
-Les modifications apportées avec stratégie de groupe aux listes d’exclusion **s’affichent** dans les listes de [l’application Sécurité Windows](microsoft-defender-security-center-antivirus.md). Toutefois, les modifications apportées à l’application Sécurité Windows **ne s’affichent pas** dans les listes stratégie de groupe.
+Les modifications apportées avec نهج المجموعة aux listes d’exclusion **s’affichent** dans les listes de [l’application Sécurité Windows](microsoft-defender-security-center-antivirus.md). Toutefois, les modifications apportées à l’application Sécurité Windows **ne s’affichent pas** dans les listes نهج المجموعة.
 
-Vous pouvez ajouter, supprimer et examiner les listes pour les exclusions dans stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune et avec l’application Sécurité Windows, et vous pouvez utiliser des caractères génériques pour personnaliser davantage les listes.
+Vous pouvez ajouter, supprimer et examiner les listes pour les exclusions dans نهج المجموعة, Microsoft Endpoint Configuration Manager, Microsoft Intune et avec l’application Sécurité Windows, et vous pouvez utiliser des caractères génériques pour personnaliser davantage les listes.
 
 Vous pouvez également utiliser les applets de commande PowerShell et WMI pour configurer les listes d’exclusions, notamment en examinant vos listes.
 
-Par défaut, les modifications locales apportées aux listes (par les utilisateurs disposant de privilèges d’administrateur ; les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par stratégie de groupe, Configuration Manager ou Intune. Les listes stratégie de groupe sont prioritaires en cas de conflits.
+Par défaut, les modifications locales apportées aux listes (par les utilisateurs disposant de privilèges d’administrateur ; les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par نهج المجموعة, Configuration Manager ou Intune. Les listes نهج المجموعة sont prioritaires en cas de conflits.
 
 Vous pouvez [configurer la fusion des listes d’exclusions définies localement et globalement](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) pour permettre aux modifications locales de remplacer les paramètres de déploiement managé.
 
@@ -72,11 +70,11 @@ Consultez [Configurer des paramètres de restriction d’appareils dans Microsof
 
 Découvrez [comment créer et déployer des stratégies anti-programme malveillant : Paramètres d’exclusion](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) pour plus d’informations sur la configuration de Microsoft Endpoint Manager (current branch).
 
-### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser stratégie de groupe pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
+### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser نهج المجموعة pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
-1. Sur votre ordinateur de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier**.
+1. Sur votre ordinateur de gestion نهج المجموعة, ouvrez la [console de gestion نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), cliquez avec le bouton droit sur l’objet نهج المجموعة que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
-2. Dans **l’éditeur de gestion stratégie de groupe**, **accédez à Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
+2. Dans **l’éditeur de gestion نهج المجموعة**, **accédez à Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
 
 3. Développez l’arborescence pour **Windows composants \> Antivirus Microsoft Defender \> exclusions**.
 
@@ -98,8 +96,6 @@ Le format des applets de commande est le suivant :
 ```
 
 Les éléments suivants sont autorisés en tant que :\<cmdlet\>
-
-<br/><br/>
 
 |Action de configuration|Applet de commande PowerShell|
 |---|---|
@@ -141,8 +137,6 @@ L’utilisation de caractères génériques dans la liste d’exclusion de proce
 En particulier, vous ne pouvez pas utiliser le caractère générique de point d’interrogation (`?`) et le caractère générique astérisque (`*`) ne peut être utilisé qu’à la fin d’un chemin d’accès complet. Vous pouvez toujours utiliser des variables d’environnement (telles que `%ALLUSERSPROFILE%`) comme caractères génériques lors de la définition d’éléments dans la liste d’exclusion de processus.
 
 Le tableau suivant décrit comment les caractères génériques peuvent être utilisés dans la liste d’exclusion de processus :
-
-<br/><br/>
 
 |Caractère générique|Exemple d’utilisation|Exemples de correspondances|
 |---|---|---|

@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 551d2f0f2da872ff24da2bd0d691eea775894c08
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535843"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102567"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports Defender pour Office 365 dans le portail Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -48,7 +48,7 @@ Microsoft Defender pour Office 365 organisations (par exemple, Microsoft 365 E5 
 
 ### <a name="download-reports"></a>Télécharger des rapports existants
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**ReportsEmail**  >  & rapports de collaboration \> **à télécharger**. Pour accéder directement à la page **Rapports à télécharger** , utilisez <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Rapports** > **par e-mail &** rapports de collaboration \> **à télécharger**. Pour accéder directement à la page **Rapports à télécharger** , utilisez <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Page Rapports de collaboration & par e-mail dans le portail Microsoft 365 Defender" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -68,7 +68,7 @@ Microsoft Defender pour Office 365 organisations (par exemple, Microsoft 365 E5 
 > [!NOTE]
 > Ce rapport a été déprécié. Les mêmes informations sont disponibles dans le [rapport d’état de la protection contre les menaces](#threat-protection-status-report).
 
-## <a name="mail-latency-report"></a>Rapport de latence du courrier
+## <a name="mail-latency-report"></a>Rapport de latence de courrier
 
 Le **rapport de latence** du courrier affiche une vue agrégée de la latence de remise et de détonation du courrier au sein de votre organisation. Les délais de remise du courrier dans le service sont affectés par un certain nombre de facteurs, et le temps de livraison absolu en secondes n’est souvent pas un bon indicateur de réussite ou un problème. Un délai de livraison lent un jour peut être considéré comme un délai de livraison moyen un autre jour, ou inversement. Cette opération tente de qualifier la remise des messages en fonction de données statistiques sur les délais de remise observés d’autres messages.
 
@@ -125,7 +125,7 @@ Le rapport **d’état de la protection contre les menaces** est une vue unique 
 
 Le rapport **Meilleurs expéditeurs et destinataires** affiche les principaux destinataires pour les fonctionnalités de protection EOP et Defender pour Office 365. Pour plus d’informations, consultez [le rapport Meilleurs expéditeurs et destinataires](view-email-security-reports.md#top-senders-and-recipients-report).
 
-## <a name="url-protection-report"></a>Rapport de protection des URL
+## <a name="url-protection-report"></a>Rapport sur la protection des URL
 
 Le **rapport de protection des URL** fournit des vues récapitulatives et de tendance pour les menaces détectées et les actions effectuées sur les clics d’URL dans le cadre de [Coffre Liens](safe-links.md). Ce rapport ne contient pas de données de clic des utilisateurs sur lesquels la stratégie de Coffre Liens a été appliquée lorsque **l’option Suivre les clics de l’utilisateur** n’est pas sélectionnée.
 
@@ -149,7 +149,7 @@ La **vue Afficher les données par action de protection par clic d’URL** affic
 - **Bloqué** : cliquez sur bloqué.
 - **Bloqué par l’administrateur du locataire** : les clics sont bloqués dans les stratégies Coffre Liens.
 - **Bloqué et cliqué :** clics bloqués sur lesquels les utilisateurs cliquent jusqu’à l’URL bloquée.
-- **Bloqué par l’administrateur du locataire et cliqué :** l’administrateur a bloqué le lien, mais l’utilisateur a cliqué dessus.
+- **Bloqué par l’administrateur du locataire et cliqué** : Administration a bloqué le lien, mais l’utilisateur a cliqué dessus.
 - **Clic lors de l’analyse** : cliquez sur l’emplacement où les utilisateurs cliquent sur la page d’analyse en attente pour accéder à l’URL.
 - **Analyse en attente** : clique sur les URL en attente d’un verdict d’analyse.
 
@@ -224,10 +224,10 @@ Applets de commande de création de rapports PowerShell :
 
 |Rapport|Rubrique|
 |---|---|
-|Principaux expéditeurs et destinataires|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
-|Principaux programmes malveillants|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Principaux expéditeurs et destinataires|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Programmes les plus malveillants |[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |Trafic de messagerie|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
-|Liens sûrs|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
+|Liens fiables|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
 |Utilisateurs compromis|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |État du flux de courrier|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Utilisateurs usurpés|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
@@ -243,7 +243,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+**Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 

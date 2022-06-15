@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Le moyen le plus simple de mettre à niveau les plans consiste à utiliser l’onglet Mise à niveau dans le centre d’administration. Toutefois, l’onglet Mise à niveau n’est pas toujours pris en charge.
 ms.date: 04/21/2021
-ms.openlocfilehash: 1867a161f8de02e20261553bb4dbb10b92ce523f
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042393"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102255"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
@@ -36,7 +36,7 @@ Lorsque votre entreprise change ou que vous avez besoin de davantage de fonction
 
 Lorsque vous utilisez l’onglet **Mise à niveau** , vous êtes dirigé tout au long du processus d’achat d’un nouveau plan. Tous les utilisateurs reçoivent automatiquement des licences dans le nouveau plan, et votre ancien plan est annulé pour vous.
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre Administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a>.
 2. Sélectionnez l’abonnement que vous souhaitez mettre à niveau.
 3. Dans la page détails de l’abonnement, sous **Détails du produit et mises à niveau**, sélectionnez **Afficher les mises à niveau recommandées pour votre organisation**.
 4. Recherchez le plan vers lequel vous souhaitez effectuer la mise à niveau, puis sélectionnez le bouton **Mettre à niveau** .
@@ -58,7 +58,7 @@ Lorsque vous utilisez l’onglet **Mise à niveau** , les plans vers lequel vous
 
 Si vous souhaitez passer à un plan avec moins de services, vous pouvez [modifier les plans manuellement](change-plans-manually.md) ou [appeler le support](../../admin/get-help-support.md) technique pour obtenir de l’aide.
 
-## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Je souhaite uniquement mettre à niveau certains de mes utilisateurs. Comment faire faites ça ?
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Je souhaite uniquement mettre à niveau certains de mes utilisateurs. 如何实现 faites ça ?
 
 Si vous souhaitez uniquement mettre à niveau certains utilisateurs vers un autre plan, mais que vous devez d’abord acheter le nouvel abonnement, consultez [Modifier les plans manuellement](change-plans-manually.md). Si vous disposez déjà de l’abonnement vers lequel vous souhaitez mettre à niveau les utilisateurs, consultez [Déplacer les utilisateurs vers un autre abonnement](move-users-different-subscription.md).
 
@@ -80,7 +80,7 @@ Pour mettre à niveau automatiquement les plans, tous vos utilisateurs doivent s
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Vous ne pouvez pas mettre à niveau les abonnements pour le moment, car cet abonnement n’est pas entièrement configuré ou le service n’est pas disponible
 
-Par exemple, si l’un des services a un incident, vous ne pourrez pas effectuer la mise à niveau tant que tous les services ne sont pas intègres. Pour voir s’il existe des problèmes d’approvisionnement ou d’intégrité du service, dans le Centre d’administration, accédez à la page **État des services** \> d’intégrité.<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>
+Par exemple, si l’un des services a un incident, vous ne pourrez pas effectuer la mise à niveau tant que tous les services ne sont pas intègres. Pour voir s’il existe des problèmes d’approvisionnement ou d’intégrité du service, dans le Centre d’administration, accédez à la page **Estado de funcionamento dos serviços** \> d’intégrité.<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>
 
 Si vous découvrez qu'un service n'est pas entièrement configuré ou si vous rencontrez un problème d'état du service, attendez quelques heures que votre service redevienne disponible et réessayez. Si vous rencontrez toujours un problème, [appelez le support technique](../../admin/get-help-support.md).
 
@@ -162,7 +162,7 @@ Le jour de la mise à niveau de votre plan, la facturation de votre ancien abonn
 
 [Appelez le support Microsoft](../../admin/get-help-support.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
 [Sauvegarder des données avant de basculer Microsoft 365 pour les plans d’entreprise](back-up-data-before-switching-plans.md) (article)

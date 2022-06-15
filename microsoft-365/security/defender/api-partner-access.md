@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 612cbb4005285f46594bc900cbbc14497b72ffec
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 43bb018abe6a19464d7e52493ed1b4ccd1f15140
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268816"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102413"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Créer une application avec un accès partenaire aux API Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ ms.locfileid: "65268816"
 
 Cette page explique comment créer une application Azure Active Directory qui a un accès programmatique à Microsoft 365 Defender, pour le compte d’utilisateurs sur plusieurs locataires. Les applications mutualisée sont utiles pour servir de grands groupes d’utilisateurs.
 
-Si vous avez besoin d’un accès programmatique à Microsoft 365 Defender pour le compte d’un seul utilisateur, consultez [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md). Si vous avez besoin d’un accès sans un utilisateur défini explicitement (par exemple, si vous écrivez une application ou un démon en arrière-plan), consultez [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md). Si vous n’êtes pas sûr du type d’accès dont vous avez besoin, consultez [Démarrage](api-access.md).
+Si vous avez besoin d’un accès programmatique à Microsoft 365 Defender pour le compte d’un seul utilisateur, consultez [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md). Si vous avez besoin d’un accès sans un utilisateur défini explicitement (par exemple, si vous écrivez une application ou un démon en arrière-plan), consultez [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md). Si vous n’êtes pas sûr du type d’accès dont vous avez besoin, consultez [Első lépések](api-access.md).
 
 Microsoft 365 Defender expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aident à automatiser les flux de travail et à utiliser les fonctionnalités de Microsoft 365 Defender. Cet accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, consultez [Flow du code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -55,7 +55,7 @@ En général, vous devez effectuer les étapes suivantes pour utiliser ces API :
 
 Cet article explique comment :
 
-- Créer une application Azure AD **multilocataire**
+- Créer une application Azure AD **mutualisée**
 - Obtenez le consentement autorisé de votre administrateur d’utilisateurs pour que votre application accède aux Microsoft 365 Defender dont elle a besoin.
 - Obtenir un jeton d’accès pour Microsoft 365 Defender
 - Valider le jeton
@@ -64,7 +64,7 @@ Microsoft 365 Defender expose une grande partie de ses données et actions par l
 
 En général, vous devez effectuer les étapes suivantes pour utiliser les API :
 
-- Créez une application Azure AD **multilocataire**.
+- Créez une application Azure AD **multilocataire** .
 - Obtenez l’autorisation (consentement) de votre administrateur utilisateur pour que votre application accède à Microsoft 365 Defender ressources dont elle a besoin.
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à Microsoft 365 Defender API.
@@ -75,21 +75,21 @@ Les étapes suivantes vous guident dans la création d’une application Azure A
 
 1. Connectez-vous à [Azure](https://portal.azure.com) en tant qu’utilisateur avec le rôle **Administrateur général** .
 
-2. Accédez à **Azure Active Directory** >  **inscriptions d'applications** >  **En savoir plus sur l’inscription**.
+2. Accédez à **Azure Active Directory** >  **App-registraties** >  **En savoir plus sur l’inscription**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Section Inscription d’une application dans le portail Microsoft 365 Defender" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. Dans le formulaire d’inscription :
 
    - Choisissez un nom pour votre application.
-   - Dans **les types de comptes pris en charge**, sélectionnez **Comptes dans n’importe quel annuaire organisationnel (tout Azure AD répertoire) - Multilocataire**.
+   - Dans **les types de comptes pris en charge**, sélectionnez **Comptes dans n’importe quel annuaire organisationnel (tout annuaire Azure AD) - Mutualisé**.
    - Renseignez la section **URI de redirection** . Sélectionnez le type **Web** et attribuez à l’URI **https://portal.azure.com** de redirection .
 
    Une fois que vous avez terminé de remplir le formulaire, **sélectionnez Inscrire**.
 
    :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="Sections d’inscription d’une application dans le portail Microsoft 365 Defender" lightbox="../..//media/atp-api-new-app-partner.png":::
 
-4. Dans la page de votre application, sélectionnez **api PermissionsAdd** >  **permissionAPIs** >  **que mon organisation utilise** >, tapez **Microsoft Threat Protection**, puis sélectionnez **Microsoft Threat Protection**. Votre application peut désormais accéder à Microsoft 365 Defender.
+4. Dans la page de votre application, sélectionnez **Autorisations d’API Ajouter des** >  API **d’autorisation** > **que mon organisation utilise** >, tapez **Microsoft Threat Protection**, puis sélectionnez **Microsoft Threat Protection**. Votre application peut désormais accéder à Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* est un ancien nom pour Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour l’afficher.
@@ -140,15 +140,15 @@ Les étapes suivantes vous guident dans la création d’une application Azure A
 
    Vous devez également demander à votre utilisateur son ID de locataire. L’ID de locataire est l’un des identificateurs utilisés pour acquérir des jetons d’accès.
 
-- **Fait!** Vous avez inscrit une application avec succès !
+- **Terminé !** Vous avez inscrit une application avec succès !
 - Consultez les exemples ci-dessous pour l’acquisition et la validation des jetons.
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur Azure AD jetons, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Pour plus d’informations sur les jetons Azure AD, consultez le [didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous **ne devez jamais coder en dur les secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure 密钥保管库](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, consultez [Gérer les secrets dans vos applications serveur avec Azure 密钥保管库](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 > [!TIP]
 > Dans les exemples suivants, utilisez l’ID de locataire d’un utilisateur pour tester que le script fonctionne.
@@ -183,33 +183,35 @@ return $token
 ### <a name="get-an-access-token-using-c"></a>Obtenir un jeton d’accès à l’aide de C\#
 
 > [!NOTE]
-> Le code suivant a été testé avec Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+> Le code suivant a été testé avec Nuget Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
 > Le package [NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) et Azure AD Authentication Library (ADAL) ont été dépréciés. Aucune nouvelle fonctionnalité n’a été ajoutée depuis le 30 juin 2020.   Nous vous encourageons vivement à effectuer la mise à niveau. Pour plus d’informations, consultez le [guide de migration](/azure/active-directory/develop/msal-migration) .
 
 1. Créez une application console.
-1. Installez NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Installez NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Ajoutez la ligne suivante :
 
     ```C#
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Copiez et collez le code suivant dans votre application (n’oubliez pas de mettre à jour les trois variables : `tenantId`, `clientId`, `appSecret`) :
 
     ```C#
-    string tenantId = ""; // Paste your directory (tenant) ID here
-    string clientId = ""; // Paste your application (client) ID here
-    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.security.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="get-an-access-token-using-python"></a>Obtenir un jeton d’accès à l’aide de Python
@@ -297,5 +299,5 @@ L’exemple suivant montre comment envoyer une demande pour obtenir une liste d�
 - [Créer une application pour accéder aux API Microsoft 365 Defender pour le compte d’un utilisateur](api-create-app-user-context.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
-- [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Gérer les secrets dans vos applications serveur avec Azure 密钥保管库](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Autorisation OAuth 2.0 pour la connexion utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
