@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: f76f6ec18464229fa50ad54a06fc7969abb3dd23
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: edf5d42421aa9fb0c54d0121655e3a31d4a729f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952817"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078763"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -139,7 +139,7 @@ Lorsque **Accès par des applications restreintes** est sélectionné dans une s
 > [!IMPORTANT]
 > L’action (`audit`, `block with override`ou `block`) définie pour les applications figurant dans la liste des applications restreintes s’applique uniquement lorsqu’un utilisateur tente d'***accéder*** à un élément protégé. 
 
-#### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Activités de fichiers pour les applications dans des groupes d’applications restreintes (préversion)
+#### <a name="file-activities-for-apps-in-restricted-app-groups"></a>Activités de fichiers pour les applications dans les groupes d'applications restreints
 
 Les groupes d’applications restreintes sont des collections d’applications que vous créez dans les paramètres DLP, puis que vous ajoutez à une règle dans une stratégie. Lorsque vous ajoutez un groupe d’applications restreintes à une stratégie, vous pouvez prendre les mesures définies dans ce tableau.
 
@@ -154,11 +154,11 @@ Les groupes d’applications restreintes sont des collections d’applications q
 
 #### <a name="how-dlp-applies-restrictions-to-activities"></a>Comment la DLP applique des restrictions aux activités
 
-Les interactions entre les **activités de fichier pour les applications dans les groupes d’applications restreintes (préversion)**, les **activités de fichier pour toutes les applications** et les listes d’**activités d’application restreintes** sont limitées à la même règle.
+Les interactions entre **les activités de fichier pour les applications dans les groupes d’applications restreints**, **les activités de fichier pour toutes les applications** et la liste **des activités d’application restreintes** sont limitées à la même règle.
 
 ##### <a name="restricted-app-groups-overrides"></a>Remplacements de groupes d’applications restreintes
 
-Les configurations définies dans **Activités de fichier pour les applications dans des groupes d’applications restreintes (préversion)** remplacent les configurations de la liste **Activités d’application restreintes** et les **activités de fichier pour toutes les applications** dans la même règle.
+Les configurations définies dans **les activités de fichier pour les applications dans des groupes d’applications restreints** remplacent les configurations de la liste **des activités d’application restreintes** et **des activités de fichier pour toutes les applications** de la même règle.
 
 ##### <a name="restricted-app-activities-and-file-activities-for-all-apps"></a>Activités d’application restreintes et activités de fichier pour toutes les applications
 
@@ -185,7 +185,7 @@ L’utilisateur A ouvre un fichier protégé par DLP à l’aide Bloc-notes. DLP
    
 ##### <a name="file-activities-for-all-apps-only"></a>Activités de fichier pour toutes les applications uniquement
 
-Si une application n’est pas dans **Activités de fichier pour les applications dans des groupes d’applications restreintes (préversion)** ou ne figure pas dans la liste **Activités d’application restreintes** ou se trouve dans la liste **Activités d’application restreintes** avec une action de `Audit only`, ou « Bloquer avec remplacement », toutes les restrictions définies dans les **activités de fichier pour toutes les applications** sont appliquées dans la même règle.  
+Si une application ne figure pas dans **les activités de fichier pour les applications dans des groupes d’applications restreints** ou ne figure pas dans la liste **des activités d’application restreintes** ou se trouve dans la liste **des activités d’application restreintes** avec une action de `Audit only`ou « Bloquer avec remplacement », toutes **les restrictions définies dans les activités de fichier pour toutes les applications** sont appliquées dans la même règle.  
 
 #### <a name="macos-devices"></a>appareils macOS
 

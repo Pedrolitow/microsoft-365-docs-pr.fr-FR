@@ -170,8 +170,6 @@
               href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: Flux de courriers dans EOP
           href: mail-flow-in-eop.md
-        - name: Stratégies concernant les envois des utilisateurs
-          href: user-submission.md
         - name: Ajouter la prise en charge des e-mails entrants anonymes par IPv6
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Installer Application Guard pour Office
@@ -328,6 +326,8 @@
               href: enable-the-report-message-add-in.md
             - name: Signaler les faux positifs et les faux négatifs dans Outlook
               href: report-false-positives-and-false-negatives.md
+            - name: Paramètres des messages signalés par l’utilisateur
+              href: user-submission.md
             - name: Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: Soumettre des programmes malveillants et non malveillants à Microsoft Corporation

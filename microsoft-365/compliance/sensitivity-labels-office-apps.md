@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014178"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078412"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -414,8 +414,9 @@ Word, Excel et PowerPoint prennent en charge les méthodes suivantes pour conver
 - Fichier > Exporter > PDF
 - Partager > Envoyer une copie > PDF
 
-Lorsque le fichier PDF est créé, il hérite de l’étiquette avec les marquages de contenu et le chiffrement. Les fichiers PDF chiffrés peuvent être ouverts avec Microsoft Edge sur Windows ou Mac. Pour obtenir plus d’informations et connaître des lecteurs alternatifs, consultez [Quels lecteurs PDF sont pris en charge pour les PDF protégés ?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Cette action est enregistrée avec l’événement d’audit de **fichier renommé** à partir du groupe d’audit [Des activités](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) de fichier et de page. Dans les résultats de la recherche d’audit dans le portail de conformité, vous verrez les détails de cet événement d’audit afficher **SensitivityLabeledFileRenamed** pour le champ **Activité** .
 
+Lorsque le fichier PDF est créé, il hérite de l’étiquette avec les marquages de contenu et le chiffrement. Les fichiers PDF chiffrés peuvent être ouverts avec Microsoft Edge sur Windows ou Mac. Pour obtenir plus d’informations et connaître des lecteurs alternatifs, consultez [Quels lecteurs PDF sont pris en charge pour les PDF protégés ?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 Scénarios PDF non pris en charge :
 
