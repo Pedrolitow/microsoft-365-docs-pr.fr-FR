@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec80cd12efc3c314f891972b1ac48232f02c072f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097115"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018116"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -200,7 +200,7 @@ Voici quelques éléments à prendre en considération lors de la recherche de b
 
 - Un utilisateur peut parfois avoir une boîte aux lettres active et une boîte aux lettres inactive portant la même adresse SMTP. Dans ce cas, la recherche porte sur la boîte aux lettres que vous sélectionnez en tant qu’emplacement à des fins de recherche de contenu. En d’autres termes, si vous ajoutez la boîte aux lettres d’un utilisateur à une recherche, vous ne pouvez pas supposer que les boîtes aux lettres actives et inactives sont recherchées. Seules les boîtes aux lettres que vous ajoutez explicitement à la recherche font l’objet d’une recherche.
 
-- Vous pouvez utiliser le centre de sécurité et de conformité PowerShell pour créer une recherche de contenu pour effectuer une recherche dans une boîte aux lettres inactive. Pour ce faire, vous devez préalablement ajouter un point (. ) à l’adresse de messagerie du propriétaire de boîte aux lettres inactive. Par exemple, la commande suivante crée une recherche de contenu qui recherche dans une boîte aux lettres inactive l’adresse de courrier pavelb@contoso.onmicrosoft.com:
+- Vous pouvez utiliser PowerShell de sécurité et de conformité pour créer une recherche de contenu pour effectuer la recherche dans une boîte aux lettres inactive. Pour ce faire, vous devez préalablement ajouter un point (. ) à l’adresse de messagerie du propriétaire de boîte aux lettres inactive. Par exemple, la commande suivante crée une recherche de contenu qui recherche dans une boîte aux lettres inactive l’adresse de courrier pavelb@contoso.onmicrosoft.com:
 
    ```powershell
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
