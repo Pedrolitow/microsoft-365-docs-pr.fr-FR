@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078923"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089108"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
 
@@ -180,7 +180,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Option Personnaliser la colonne pour les soumissions d’administrateur de courrier électronique." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
      - **Date d’envoi** : **Date de début** et **date de fin**.
@@ -197,7 +197,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Options de filtre pour les soumissions d’administrateur de courrier électronique." lightbox="../../media/email-admin-submission-filters.png":::
 
    - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
@@ -231,8 +231,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Personnalisez les options de colonne pour les soumissions d’administrateurs de pièces jointes par e-mail.":::
 
    - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
      - **Date d’envoi** : **Date de début** et **date de fin**.
@@ -245,8 +244,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Options de filtre pour les soumissions d’administrateurs de pièces jointes par e-mail.":::
 
    - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
@@ -280,8 +278,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Options de nouvelle colonne Personnaliser pour les soumissions d’administrateurs" lightbox="../../media/url-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Personnalisez les options de colonne pour les soumissions d’administrateur d’URL.":::
 
    - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
      - **Date d’envoi** : **Date de début** et **date de fin**.
@@ -294,8 +291,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Options de nouveau filtre pour les soumissions d’administrateurs" lightbox="../../media/url-admin-submission-filters.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Options de filtre pour les soumissions d’administrateur d’URL.":::
 
    - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**

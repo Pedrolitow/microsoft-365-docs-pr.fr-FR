@@ -1,6 +1,6 @@
 ---
-title: Qu’est-ce que Microsoft Defender pour Entreprises ?
-description: Microsoft Defender entreprise est une solution de cybersécurité pour les petites et moyennes entreprises. Defender entreprise protège contre les menaces sur vos appareils.
+title: Qu’est-ce que Microsoft Defender pour entreprises ?
+description: Microsoft Defender pour entreprises est une solution de cybersécurité pour les petites et moyennes entreprises. Defender entreprise protège contre les menaces sur vos appareils.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,25 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 961a0d2e3f37696c99e8d9227e6b3c3b6c10e03d
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: f9efef4d1b63f35ac544e99a44df0fd99256820a
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923453"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089647"
 ---
-# <a name="what-is-microsoft-defender-for-business"></a>Qu’est-ce que Microsoft Defender pour Entreprises ?
+# <a name="what-is-microsoft-defender-for-business"></a>Qu’est-ce que Microsoft Defender pour entreprises ?
 
-Microsoft Defender entreprise est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Avec cette solution de sécurité de point de terminaison, les appareils de votre entreprise sont mieux protégés contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces. 
+Microsoft Defender pour entreprises est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Avec cette solution de sécurité de point de terminaison, les appareils de votre entreprise sont mieux protégés contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces. 
 
 Cet article décrit ce qui est inclus dans Defender entreprise, avec des liens pour en savoir plus sur ces fonctionnalités.
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
-## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>Vidéo : Protection de niveau entreprise pour les petites et moyennes entreprises
+## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>Vidéo : protection de qualité Enterprise pour les petites et moyennes entreprises
 
 Regardez la vidéo suivante pour en savoir plus sur Defender entreprise : <br/><br/>
 
@@ -43,17 +39,17 @@ Regardez la vidéo suivante pour en savoir plus sur Defender entreprise : <br/><
 
 ## <a name="whats-included-with-defender-for-business"></a>Ce qui est inclus avec Defender entreprise
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Fonctionnalités et fonctionnalités de Microsoft Defender entreprise.":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender pour entreprises fonctionnalités et fonctionnalités.":::
 
 Avec Defender entreprise, vous pouvez protéger les appareils et les données que votre entreprise utilise avec :
 
-- **Sécurité de niveau entreprise**. Defender entreprise offre de puissantes fonctionnalités de sécurité des points de terminaison à partir de notre solution [Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md) de pointe et optimise ces fonctionnalités pour les administrateurs informatiques afin de prendre en charge les petites et moyennes entreprises.
+- **Enterprise sécurité de qualité**. Defender entreprise offre de puissantes fonctionnalités de sécurité des points de terminaison à partir de notre solution [de Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md) de pointe et optimise ces fonctionnalités pour les administrateurs informatiques afin de prendre en charge les petites et moyennes entreprises.
 
 - **Solution de sécurité facile à utiliser**. Defender entreprise offre des expériences rationalisées qui vous guident à agir avec des recommandations et des insights sur la sécurité de vos points de terminaison. Aucune connaissance spécialisée n’est requise, car Defender entreprise offre une configuration pilotée par l’Assistant et des stratégies de sécurité par défaut conçues pour protéger les appareils de votre entreprise dès le premier jour.
 
-- **Flexibilité pour votre environnement**. Defender entreprise peut travailler avec votre environnement d’entreprise, que vous utilisiez Microsoft Intune ou que vous soyez tout nouveau dans Microsoft Cloud. Defender entreprise fonctionne avec les composants intégrés à Windows et avec les applications pour les appareils macOS, iOS et Android.
+- **Flexibilité pour votre environnement**. Defender entreprise peut travailler avec votre environnement d’entreprise, que vous utilisiez Microsoft Intune ou que vous soyez tout nouveau dans le cloud Microsoft. Defender entreprise fonctionne avec les composants intégrés à Windows et avec les applications pour les appareils macOS, iOS et Android.
 
-- **Intégration à Microsoft 365 Lighthouse**. Si vous êtes un fournisseur de services managés (MSP) utilisant [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), d’autres fonctionnalités sont disponibles. Si vos clients utilisent Microsoft 365 Business Premium avec Defender entreprise, vous pouvez afficher les incidents de sécurité et les alertes entre les locataires clients intégrés à Microsoft 365 Lighthouse.
+- **Intégration à Microsoft 365 Lighthouse**. Si vous êtes un fournisseur de services managés (MSP) utilisant [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), d’autres fonctionnalités sont disponibles. Si vos clients utilisent Microsoft 365 Business Premium avec Defender entreprise, vous pouvez afficher les incidents de sécurité et les alertes entre les locataires clients qui sont intégrés à Microsoft 365 Lighthouse.
 
 ## <a name="how-to-use-this-guide"></a>Comment utiliser ce guide
 
@@ -61,15 +57,15 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données qu
 
 - **Fournissez-vous une vue d’ensemble de Defender entreprise afin** de savoir ce qui est inclus et comment il fonctionne
    - Utiliser cet article comme point de départ
-   - [Comparer les fonctionnalités de sécurité dans Microsoft Defender entreprise à d’autres plans](compare-mdb-m365-plans.md) 
-   - [Découvrez comment obtenir Microsoft Defender pour Entreprises](get-defender-business.md)
+   - [Comparer les fonctionnalités de sécurité dans Microsoft Defender pour entreprises à d’autres plans](compare-mdb-m365-plans.md) 
+   - [Découvrez comment obtenir Microsoft Defender pour entreprises](get-defender-business.md)
 
 - **Découvrez comment configurer et configurer vos fonctionnalités de protection contre les menaces** 
-   - [Utiliser le playbook d’évaluation : Microsoft Defender entreprise](trial-playbook-defender-business.md)
+   - [Utilisez le playbook d’évaluation : Microsoft Defender pour entreprises](trial-playbook-defender-business.md)
    - [En savoir plus sur le processus de configuration simplifié](mdb-simplified-configuration.md)
    - [Découvrez comment configurer Et configurer Defender entreprise](mdb-setup-configuration.md)
 
-- **Aide à la prise en main de Defender Entreprise**, à partir du portail Microsoft 365 Defender 
+- **Vous aider à commencer à utiliser Defender entreprise**, en commençant par le portail Microsoft 365 Defender 
    - [Naviguer dans le portail Microsoft 365 Defender](mdb-get-started.md)
    - [Essayer des scénarios, des didacticiels et des simulations](mdb-tutorials.md)
 
@@ -77,8 +73,8 @@ Avec Defender entreprise, vous pouvez protéger les appareils et les données qu
    - [Surveiller ou gérer les appareils](mdb-manage-devices.md)
    - [Afficher ou modifier les stratégies de sécurité](mdb-view-edit-policies.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-- [Essayez le guide interactif : Bien démarrer avec Defender entreprise](https://aka.ms/MDB-GetStartedGuide)
-- [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender entreprise](mdb-simplified-configuration.md)
-- [Découvrez comment obtenir Microsoft Defender pour Entreprises](get-defender-business.md)
+- [Essayez le guide interactif : Démarrage avec Defender entreprise](https://aka.ms/MDB-GetStartedGuide)
+- [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender pour entreprises](mdb-simplified-configuration.md)
+- [Découvrez comment obtenir Microsoft Defender pour entreprises](get-defender-business.md)

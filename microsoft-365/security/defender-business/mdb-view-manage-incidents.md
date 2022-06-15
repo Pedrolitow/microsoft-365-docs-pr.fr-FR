@@ -1,5 +1,5 @@
 ---
-title: Afficher et gérer les incidents dans Microsoft Defender pour les PME
+title: Afficher et gérer les incidents dans Microsoft Defender pour entreprises
 description: Affichez et gérez les alertes, répondez aux menaces, gérez les appareils et passez en revue les actions de correction sur les menaces détectées dans Defender entreprise.
 search.appverid: MET150
 author: denisebmsft
@@ -16,14 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 04c8d32c6bb016d4640094013d1f71eb248a8d6c
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5d28d8b7d0a95d7b8f4311f064729198628881ca
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172713"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089901"
 ---
-# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Afficher et gérer les incidents dans Microsoft Defender pour les PME
+# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Afficher et gérer les incidents dans Microsoft Defender pour entreprises
 
 Lorsque des menaces sont détectées et que des alertes sont déclenchées, des incidents sont créés. L’équipe de sécurité de votre entreprise peut afficher et gérer les incidents dans le portail Microsoft 365 Defender.
 
@@ -33,10 +33,6 @@ Lorsque des menaces sont détectées et que des alertes sont déclenchées, des 
 - [Gravité de l’alerte](#alert-severity)
 - [Étapes suivantes](#next-steps)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="monitor-your-incidents--alerts"></a>Surveiller vos incidents & alertes
 
@@ -51,22 +47,22 @@ Lorsque des menaces sont détectées et que des alertes sont déclenchées, des 
 3. Dans le volet volant, vous pouvez voir le titre de l’alerte, afficher la liste des ressources (telles que les points de terminaison ou les comptes d’utilisateur) qui ont été affectées, prendre des mesures disponibles et utiliser des liens pour afficher plus d’informations et même ouvrir la page de détails de l’alerte sélectionnée. 
 
 > [!TIP]
-> Microsoft Defender pour les PME est conçu pour vous aider à résoudre les menaces détectées en proposant des actions recommandées. Lorsque vous affichez une alerte, recherchez les actions recommandées à effectuer. Prenez également note de la gravité de l’alerte, qui est déterminée non seulement sur la base de la gravité de la menace, mais aussi sur le niveau de risque pour votre entreprise. 
+> Microsoft Defender pour entreprises est conçu pour vous aider à résoudre les menaces détectées en proposant des actions recommandées. Lorsque vous affichez une alerte, recherchez les actions recommandées à effectuer. Prenez également note de la gravité de l’alerte, qui est déterminée non seulement sur la base de la gravité de la menace, mais aussi sur le niveau de risque pour votre entreprise. 
 
 ## <a name="alert-severity"></a>Gravité de l’alerte
 
 Lorsque Antivirus Microsoft Defender attribue une gravité d’alerte en fonction de la gravité absolue d’une menace détectée (programme malveillant) et du risque potentiel pour un point de terminaison individuel (s’il est infecté).
-Microsoft Defender pour les PME affecte une gravité d’alerte en fonction de la gravité du comportement détecté, du risque réel pour un point de terminaison (appareil) et, plus important encore, du risque potentiel pour votre entreprise. Le tableau suivant répertorie quelques exemples :
+Microsoft Defender pour entreprises affecte une gravité d’alerte en fonction de la gravité du comportement détecté, du risque réel pour un point de terminaison (appareil) et, plus important encore, du risque potentiel pour votre entreprise. Le tableau suivant répertorie quelques exemples :
 
 | Scénario | Gravité de l’alerte | Reason |
 |:---|:---|:---|
 | Antivirus Microsoft Defender détecte et arrête une menace avant de causer des dommages. | Informatif | La menace a été arrêtée avant que des dommages n’ont été causés. |
 | Antivirus Microsoft Defender détecte les programmes malveillants qui s’exécutaient au sein de votre entreprise. Le programme malveillant est arrêté et corrigé. | Faible | Bien que certains dommages aient pu être causés à un point de terminaison individuel, le programme malveillant ne représente désormais aucune menace pour votre entreprise. |
-| Les programmes malveillants en cours d’exécution sont détectés par Microsoft Defender pour les PME. Le programme malveillant est bloqué presque immédiatement. | Moyenne ou élevée | Le programme malveillant représente une menace pour les points de terminaison individuels et pour votre entreprise. |
+| Les programmes malveillants en cours d’exécution sont détectés par Microsoft Defender pour entreprises. Le programme malveillant est bloqué presque immédiatement. | Moyenne ou élevée | Le programme malveillant représente une menace pour les points de terminaison individuels et pour votre entreprise. |
 | Un comportement suspect est détecté, mais aucune action de correction n’est encore effectuée. | Faible, moyen ou élevé | La gravité dépend de la mesure dans laquelle le comportement représente une menace pour votre entreprise. |
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
-- [Afficher ou modifier des stratégies d’appareil dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)
+- [Afficher ou modifier des stratégies d’appareil dans Microsoft Defender pour entreprises](mdb-view-edit-policies.md)

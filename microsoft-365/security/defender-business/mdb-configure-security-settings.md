@@ -1,5 +1,5 @@
 ---
-title: Afficher et modifier vos paramètres de sécurité dans Microsoft Defender pour les PME
+title: Afficher et modifier vos paramètres de sécurité dans Microsoft Defender pour entreprises
 description: Afficher et modifier les stratégies et paramètres de sécurité dans Defender entreprise
 search.appverid: MET150
 author: denisebmsft
@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: c7b01355b782a3b08b76f95b31db5b0a9f5e1188
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469170"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090305"
 ---
-# <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender pour les PME
+# <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Afficher et modifier vos stratégies et paramètres de sécurité dans Microsoft Defender pour entreprises
 
-Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour les PME, l’étape suivante consiste à passer en revue vos stratégies de sécurité. Si nécessaire, vous pouvez modifier vos stratégies et paramètres de sécurité. 
+Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour entreprises, l’étape suivante consiste à passer en revue vos stratégies de sécurité. Si nécessaire, vous pouvez modifier vos stratégies et paramètres de sécurité. 
 
 > [!TIP]
 > Defender entreprise inclut des stratégies de sécurité préconfigurées qui utilisent les paramètres recommandés. Toutefois, vous pouvez modifier vos paramètres en fonction des besoins de votre entreprise.
@@ -53,10 +53,6 @@ Utilisez cet article comme guide pour gérer vos stratégies et paramètres de s
 6. [Affichez d’autres paramètres dans le portail Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 7. [Passez à vos étapes suivantes](#next-steps).
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="choose-where-to-manage-security-policies-and-devices"></a>Choisir l’emplacement de gestion des stratégies de sécurité et des appareils
 
@@ -66,7 +62,7 @@ Le tableau suivant peut vous aider à choisir où gérer vos stratégies et appa
 
 | Option | Description |
 |:---|:---|
-| **Utiliser le portail Microsoft 365 Defender** (*recommandé*) | Le portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) peut être votre guichet unique pour gérer les appareils, les stratégies de sécurité et les paramètres de sécurité de votre entreprise. Vous pouvez accéder à vos stratégies et paramètres de sécurité, utiliser votre [tableau de bord Threat & Vulnerability Management](mdb-view-tvm-dashboard.md) et [afficher et gérer les incidents](mdb-view-manage-incidents.md) au même endroit. <br/><br/>Si vous utilisez Intune, les appareils que vous intègrez à Defender Entreprise et vos stratégies de sécurité sont visibles dans le centre d’administration Endpoint Manager. Pour en savoir plus, consultez les articles suivants :<br/>- [Paramètres et Microsoft Intune par défaut de Defender entreprise](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-intune) <br/>- [Pare-feu dans Microsoft Defender pour les PME](mdb-firewall.md)   |
+| **Utiliser le portail Microsoft 365 Defender** (*recommandé*) | Le portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) peut être votre guichet unique pour gérer les appareils, les stratégies de sécurité et les paramètres de sécurité de votre entreprise. Vous pouvez accéder à vos stratégies et paramètres de sécurité, utiliser votre [tableau de bord Threat & Vulnerability Management](mdb-view-tvm-dashboard.md) et [afficher et gérer les incidents](mdb-view-manage-incidents.md) au même endroit. <br/><br/>Si vous utilisez Intune, les appareils que vous intègrez à Defender Entreprise et vos stratégies de sécurité sont visibles dans le centre d’administration Endpoint Manager. Pour en savoir plus, consultez les articles suivants :<br/>- [Paramètres et Microsoft Intune par défaut de Defender entreprise](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-intune) <br/>- [Pare-feu dans Microsoft Defender pour entreprises](mdb-firewall.md)   |
 | **Utiliser le centre d’administration Microsoft Endpoint Manager** | Si votre entreprise utilise déjà Intune pour gérer les stratégies de sécurité, vous pouvez continuer à utiliser le centre d’administration Endpoint Manager pour gérer vos appareils et stratégies de sécurité. Pour en savoir plus, consultez [Gérer la sécurité des appareils avec les stratégies de sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si vous décidez de basculer vers le [processus de configuration simplifié dans Defender entreprise](mdb-simplified-configuration.md), vous serez invité à supprimer les stratégies de sécurité existantes dans Intune pour éviter [les conflits](mdb-troubleshooting.yml) de stratégie ultérieurement. |
 
 > [!IMPORTANT]
@@ -125,7 +121,7 @@ Le filtrage de contenu web est disponible sur les principaux navigateurs web, av
 
 Outre les stratégies de protection, de pare-feu et de filtrage de contenu web de nouvelle génération, Defender entreprise inclut des fonctionnalités de sécurité avancées. Ces fonctionnalités sont préconfigurées à l’aide des paramètres recommandés ; toutefois, vous pouvez les examiner et, si nécessaire, modifier les paramètres en fonction des besoins de votre entreprise.
 
-Pour accéder aux paramètres des fonctionnalités avancées, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** >  **FonctionnalitésEndpointsGeneralAdvanced** >  > .
+Pour accéder aux paramètres des fonctionnalités avancées, dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** >  Fonctionnalités **avancées générales** >  **d’Endpoints** > .
 
 Le tableau suivant décrit les paramètres des fonctionnalités avancées :
 
@@ -163,7 +159,7 @@ Le tableau suivant décrit les paramètres à afficher (et si nécessaire, modif
 | **Microsoft 365 Defender** | **Account** | Affichez les détails, tels que l’emplacement où vos données sont stockées, votre ID de locataire et votre ID d’organisation (organisation). |
 | **Microsoft 365 Defender**  | **Fonctionnalités en préversion**  | Activez les fonctionnalités en préversion pour essayer les fonctionnalités à venir et les nouvelles fonctionnalités. Vous pouvez être parmi les premiers à afficher un aperçu des nouvelles fonctionnalités et à fournir des commentaires. |
 | **Points de terminaison**  | **Notifications par e-mail** | Configurez ou modifiez vos règles de notification par e-mail. Lorsque des vulnérabilités sont détectées ou qu’une alerte est créée, les destinataires spécifiés dans vos règles de notification par e-mail reçoivent un e-mail. [En savoir plus sur les notifications par e-mail](mdb-email-notifications.md). |
-| **Points de terminaison**   | **Gestion des** >  appareils **Intégration** | Intégrer des appareils à Defender entreprise à l’aide d’un script téléchargeable. Pour en savoir plus, consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).   |  
+| **Points de terminaison**   | **Gestion des** >  appareils **Intégration** | Intégrer des appareils à Defender entreprise à l’aide d’un script téléchargeable. Pour en savoir plus, consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).   |  
 | **Points de terminaison**  |  **Gestion des** >  appareils **Désintégrage** | Désintégrez (supprimez) les appareils de Defender pour Entreprises. Lorsque vous déconnectez un appareil, il n’envoie plus de données à Defender entreprise, mais les données reçues avant la désintégrage sont conservées. Pour plus d’informations, consultez [Désintégrage d’un appareil](mdb-offboard-devices.md).  |
 
 ### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>Accéder à vos paramètres dans le portail Microsoft 365 Defender
@@ -178,7 +174,7 @@ Le tableau suivant décrit les paramètres à afficher (et si nécessaire, modif
 
 Passez à une ou plusieurs des tâches suivantes :
 
-- [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md)
-- [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Afficher ou modifier des stratégies dans Microsoft Defender pour les PME](mdb-view-edit-policies.md)
+- [Démarrage à l’aide de Microsoft Defender pour entreprises](mdb-get-started.md)
+- [Gérer les appareils dans Microsoft Defender pour entreprises](mdb-manage-devices.md)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises](mdb-view-edit-policies.md)

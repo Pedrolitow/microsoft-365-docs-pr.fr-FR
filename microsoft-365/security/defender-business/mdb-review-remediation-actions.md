@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les actions de correction dans Microsoft Defender pour les PME
+title: Passer en revue les actions de correction dans Microsoft Defender pour entreprises
 description: Affichez les corrections qui ont été prises sur les menaces détectées avec Defender entreprise. Vous pouvez afficher les actions dans le Centre d’actions dans le portail Microsoft 365 Defender.
 search.appverid: MET150
 author: denisebmsft
@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 438d43548b4318499c44aea65399a7d5a3a5f43d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5c73b840b127770c4581dda4d03b3c95066df515
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174364"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089525"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Passer en revue les actions de correction dans le Centre d’actions
 
@@ -34,10 +34,6 @@ Au fur et à mesure que des menaces sont détectées, des actions de correction 
 - [Comment utiliser le centre de notifications](#how-to-use-the-action-center)
 - [Actions de correction](#remediation-actions)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="how-to-use-the-action-center"></a>Comment utiliser le centre de notifications
 
@@ -51,7 +47,7 @@ Au fur et à mesure que des menaces sont détectées, des actions de correction 
 
 ## <a name="remediation-actions"></a>Actions de correction
 
-Microsoft Defender pour les PME comprend plusieurs actions de correction. Ces actions incluent des actions de réponse manuelles, des actions qui suivent une investigation automatisée et des actions de réponse dynamique.
+Microsoft Defender pour entreprises comprend plusieurs actions de correction. Ces actions incluent des actions de réponse manuelles, des actions qui suivent une investigation automatisée et des actions de réponse dynamique.
 
 Le tableau suivant répertorie les actions de correction disponibles :
 
@@ -63,5 +59,5 @@ Le tableau suivant répertorie les actions de correction disponibles :
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
-- [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
+- [Gérer les appareils dans Microsoft Defender pour entreprises](mdb-manage-devices.md)

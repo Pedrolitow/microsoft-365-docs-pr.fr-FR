@@ -14,12 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: 2c1e21f6e333cd1e5d000fcc7fba0f32a153835d
-  ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+  ms.openlocfilehash: d94aeed225105bf16f2fa057d7c0caf1730eec09
+  ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/17/2022
-  ms.locfileid: "65438726"
+  ms.lasthandoff: 06/15/2022
+  ms.locfileid: "66090517"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -47,16 +47,8 @@ landingContent:
       url: get-defender-business.md
     - text: Utiliser le playbook d’essai
       url: trial-playbook-defender-business.md
-    - text: Ajouter des utilisateurs et attribuer des licences
-      url: mdb-add-users.md
-    - text: Visitez le portail Microsoft 365 Defender
-      url: mdb-get-started.md
     - text: Utiliser l’Assistant Installation
       url: mdb-use-wizard.md
-  - linkListType: tutorial
-    links:
-    - text: Essayer des didacticiels et les simulations
-      url: mdb-tutorials.md
 - title: Aide et autres ressources
   linkLists:
   - linkListType: how-to-guide
@@ -65,73 +57,5 @@ landingContent:
       url: mdb-get-help.md
     - text: Foire aux questions
       url: mdb-faq.yml
-    - text: Résolution des problèmes
-      url: mdb-troubleshooting.yml
-  - linkListType: reference
-    links:
     - text: Glossaire des termes de sécurité
       url: /microsoft-365/business-premium/m365bp-glossary
-    - text: Informations de référence sur l’API
-      url: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
-    - text: Microsoft 365 Business Premium
-      url: /microsoft-365/business-premium/
-    - text: Microsoft 365 Lighthouse
-      url: /microsoft-365/lighthouse/m365-lighthouse-overview
-- title: Installer et configurer
-  linkLists:
-  - linkListType: deploy
-    links:
-    - text: Voir le processus de configuration
-      url: mdb-setup-configuration.md
-    - text: 'Étape 1 : passer en revue les exigences'
-      url: mdb-requirements.md
-    - text: 'Étape 2 : attribuer des rôles et des autorisations'
-      url: mdb-roles-permissions.md
-    - text: 'Étape 3 : configurer les notifications par courrier électronique'
-      url: mdb-email-notifications.md
-    - text: 'Étape 4 : intégrer des appareils'
-      url: mdb-onboard-devices.md
-    - text: Étape 5 – Passer en revue vos stratégies de sécurité
-      url: mdb-view-edit-policies.md
-- title: Afficher et répondre aux menaces
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Afficher votre tableau de bord des menaces
-      url: mdb-view-tvm-dashboard.md
-    - text: Afficher et gérer les incidents
-      url: mdb-view-manage-incidents.md
-    - text: Répondre aux menaces et les atténuer
-      url: mdb-respond-mitigate-threats.md
-    - text: Passer en revue les actions de correction
-      url: mdb-review-remediation-actions.md
-    - text: Afficher et utiliser les rapports
-      url: mdb-reports.md
-- title: Afficher ou modifier les stratégies de sécurité
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Afficher, modifier et créer des stratégies
-      url: mdb-view-edit-create-policies.md
-    - text: Gérer les règles pour les stratégies de pare-feu
-      url: mdb-custom-rules-firewall.md
-  - linkListType: reference
-    links:
-    - text: Ordre de stratégie
-      url: mdb-policy-order.md
-    - text: Paramètres de protection nouvelle génération
-      url: mdb-next-gen-configuration-settings.md
-    - text: Paramètres du pare-feu
-      url: mdb-firewall.md
-- title: Surveiller ou gérer les appareils
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Afficher et surveiller les appareils
-      url: mdb-manage-devices.md
-    - text: Créer des groupes d’appareils
-      url: mdb-create-edit-device-groups.md
-    - text: Intégration des appareils
-      url: mdb-onboard-devices.md
-    - text: Supprimer des appareils
-      url: mdb-offboard-devices.md

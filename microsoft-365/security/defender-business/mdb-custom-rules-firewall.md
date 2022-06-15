@@ -1,5 +1,5 @@
 ---
-title: Gérer des règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender pour les PME
+title: Gérer des règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender pour entreprises
 description: Les règles personnalisées fournissent des exceptions aux stratégies de pare-feu. Vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques dans Defender entreprise.
 search.appverid: MET150
 author: denisebmsft
@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: acc183abcbae89cd952011cfc637161bb409a95f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174516"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090385"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Gérer vos règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender pour les PME
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Gérer vos règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender pour entreprises
 
-Microsoft Defender pour les PME inclut des stratégies de pare-feu qui aident à protéger vos appareils contre le trafic réseau indésirable. Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour vos stratégies de pare-feu. Autrement dit, vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques.
+Microsoft Defender pour entreprises inclut des stratégies de pare-feu qui aident à protéger vos appareils contre le trafic réseau indésirable. Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour vos stratégies de pare-feu. Autrement dit, vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques.
 
-Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consultez Pare-feu dans Microsoft Defender pour les PME](mdb-firewall.md).
+Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consultez Pare-feu dans Microsoft Defender pour entreprises](mdb-firewall.md).
 
 **Cet article explique comment** :
 
@@ -34,16 +34,12 @@ Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consult
 - [Modifier une règle personnalisée pour une stratégie de pare-feu](#edit-a-custom-rule-for-a-firewall-policy)
 - [Supprimer une règle personnalisée](#delete-a-custom-rule)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>Créer une règle personnalisée pour une stratégie de pare-feu
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-2. Accédez à **la configuration endpointsDevice** >  et passez en revue la liste des stratégies.
+2. Accédez à **Endpoints** > **Device Configuration** et passez en revue la liste des stratégies.
 
 3. Dans la section **Pare-feu** , sélectionnez une stratégie existante ou ajoutez une nouvelle stratégie.
 
@@ -66,7 +62,7 @@ Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consult
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-2. Accédez à **la configuration endpointsDevice** >  et passez en revue la liste des stratégies.
+2. Accédez à **Endpoints** > **Device Configuration** et passez en revue la liste des stratégies.
 
 3. Dans la section **Pare-feu** , sélectionnez une stratégie existante ou ajoutez une nouvelle stratégie.
 
@@ -91,7 +87,7 @@ Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consult
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-2. Accédez à **la configuration endpointsDevice** >  et passez en revue la liste des stratégies.
+2. Accédez à **Endpoints** > **Device Configuration** et passez en revue la liste des stratégies.
 
 3. Dans la section **Pare-feu** , sélectionnez une stratégie existante ou ajoutez une nouvelle stratégie.
 
@@ -103,6 +99,6 @@ Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consult
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

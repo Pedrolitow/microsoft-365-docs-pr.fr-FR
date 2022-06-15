@@ -1,6 +1,6 @@
 ---
-title: Obtenir Microsoft Defender pour les PME
-description: Découvrez comment obtenir Microsoft Defender pour les PME, endpoint protection pour les petites et moyennes entreprises.
+title: Obtenir Microsoft Defender pour entreprises
+description: Découvrez comment obtenir Microsoft Defender pour entreprises, endpoint protection pour les petites et moyennes entreprises.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: b5fb9fabad337570744dbd94b76c39d446431cf6
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: daa32cf5b20d62a9574ed90660bfc705ad7ed5e5
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663489"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090539"
 ---
-# <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour les PME
+# <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour entreprises
 
-Si vous n’avez pas encore Microsoft Defender pour les PME, vous pouvez choisir parmi plusieurs options :
+Si vous n’avez pas encore Microsoft Defender pour entreprises, vous pouvez choisir parmi plusieurs options :
 
 - [Essayer ou acheter la version autonome de Defender entreprise](#try-or-buy-microsoft-defender-for-business)
 - [Obtenir Microsoft 365 Business Premium](#get-microsoft-365-business-premium), qui inclut désormais Defender entreprise
@@ -32,14 +32,10 @@ Si vous n’avez pas encore Microsoft Defender pour les PME, vous pouvez choisir
 
 Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu votre e-mail d’acceptation, vous pouvez [activer votre version d’évaluation et attribuer des licences utilisateur](#how-to-activate-your-trial), puis passer à vos [étapes suivantes](#next-steps).
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
-## <a name="try-or-buy-microsoft-defender-for-business"></a>Essayer ou acheter Microsoft Defender pour les PME
+## <a name="try-or-buy-microsoft-defender-for-business"></a>Essayer ou acheter Microsoft Defender pour entreprises
 
-1. Accédez à la page web [Microsoft Defender pour les PME](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business), puis sélectionnez l’option permettant d’essayer ou d’acheter Defender entreprise.
+1. Accédez à la page web [Microsoft Defender pour entreprises](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business), puis sélectionnez l’option permettant d’essayer ou d’acheter Defender entreprise.
 
 2. Lorsque vous recevez votre e-mail avec vos informations de compte et d’abonnement, connectez-vous à l’aide du lien dans votre e-mail.
 
@@ -60,7 +56,7 @@ Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu vo
 
 ## <a name="work-with-a-microsoft-solution-provider"></a>Utiliser un fournisseur de solutions Microsoft
 
-Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendre des offres, notamment Microsoft 365 Business Premium et Microsoft Defender pour les PME. Pour trouver un fournisseur de solutions dans votre région, procédez comme suit :
+Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendre des offres, notamment Microsoft 365 Business Premium et Microsoft Defender pour entreprises. Pour trouver un fournisseur de solutions dans votre région, procédez comme suit :
 
 1. Accédez à la page **Fournisseurs de solutions Microsoft** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
  
@@ -100,9 +96,9 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 > Si vous avez Microsoft 365 Business Premium, vous avez également Microsoft Intune. Vous pouvez utiliser le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour gérer les appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-- [Consultez le playbook d’évaluation : Microsoft Defender pour les PME](trial-playbook-defender-business.md).
-- [Utilisez l’Assistant Installation dans Microsoft Defender pour les PME](mdb-use-wizard.md).
+- [Consultez le playbook d’évaluation : Microsoft Defender pour entreprises](trial-playbook-defender-business.md).
+- [Utilisez l’Assistant Installation dans Microsoft Defender pour entreprises](mdb-use-wizard.md).
 - [Consultez le processus d’installation et de configuration pour Defender Entreprise](mdb-setup-configuration.md).
 - [Découvrez comment obtenir de l’aide et du support pour Defender Entreprise](mdb-get-help.md) (au cas où vous ayiez besoin d’aide).

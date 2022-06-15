@@ -1,5 +1,5 @@
 ---
-title: Intégrer des appareils à Microsoft Defender pour les PME
+title: Intégrer des appareils à Microsoft Defender pour entreprises
 description: Découvrez comment intégrer des appareils à Defender entreprise pour protéger vos appareils du premier jour.
 search.appverid: MET150
 author: denisebmsft
@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 58b2756bead1df85e12e3276d0da475d6882b589
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621319"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088976"
 ---
-# <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour les PME
+# <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
-Avec Microsoft Defender pour les PME, vous avez le choix entre plusieurs options pour intégrer les appareils de votre entreprise. Cet article vous guide tout au long de vos options et inclut une vue d’ensemble du fonctionnement de l’intégration.
+Avec Microsoft Defender pour entreprises, vous avez le choix entre plusieurs options pour intégrer les appareils de votre entreprise. Cet article vous guide tout au long de vos options et inclut une vue d’ensemble du fonctionnement de l’intégration.
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="what-to-do"></a>Procédure
 
@@ -106,7 +102,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 
 4. Cliquez sur **Enregistrer**.
 
-5. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
+5. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).
 
 
 > [!TIP]
@@ -120,7 +116,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 
 2. Partagez cet article avec les utilisateurs de votre organisation : [Inscrire des appareils Windows 10/11 dans Intune](/mem/intune/user-help/enroll-windows-10-device).
 
-3. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
+3. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).
 
 ### <a name="running-a-detection-test-on-a-windows-client"></a>Exécution d’un test de détection sur un client Windows
 
@@ -145,10 +141,10 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, dans le 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils [(clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
-- Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
-- Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).
+- Si vous avez terminé l’intégration des appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour entreprises](mdb-configure-security-settings.md)
+- Consultez [Démarrage à l’aide de Microsoft Defender pour entreprises](mdb-get-started.md).
 
-## <a name="macos"></a>[**macOS**](#tab/macOSdevices)
+## <a name="macos"></a>[**MacOS**](#tab/macOSdevices)
 
 ## <a name="macos-computers"></a>ordinateurs macOS
 
@@ -180,11 +176,11 @@ Lorsque vous exécutez le script local sur un appareil macOS, il crée une appro
 
 8. Sélectionnez **Continuer**, acceptez les termes du contrat de licence, puis entrez votre mot de passe lorsque vous y êtes invité.
 
-9. Vous êtes invité à autoriser l’installation d’un pilote de Microsoft (« Extension système bloquée » ou « L’installation est en attente », ou les deux. Le pilote doit être autorisé à être installé. Pour autoriser l’installation, sélectionnez **Ouvrir les préférences de sécurité** ou **Ouvrir les préférences** >  système **& confidentialité**, puis **sélectionnez Autoriser**.
+9. Vous êtes invité à autoriser l’installation d’un pilote de Microsoft (« Extension système bloquée » ou « L’installation est en attente », ou les deux. Le pilote doit être autorisé à être installé. Pour autoriser l’installation, sélectionnez **Ouvrir les préférences de sécurité** ou **Ouvrir la sécurité des préférences** >  système **& confidentialité**, puis **sélectionnez Autoriser**.
 
 10. Utilisez la commande Python suivante dans Bash pour exécuter le package d’intégration : `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
-11. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
+11. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).
 
 ### <a name="microsoft-intune-for-macos"></a>Microsoft Intune pour macOS
 
@@ -219,11 +215,11 @@ Si votre entreprise préfère que des personnes inscrivent leurs propres apparei
 
 1. Pour vérifier que l’appareil est associé à votre entreprise, utilisez la commande Python suivante dans Bash : `mdatp health --field org_id`.
 
-2. Si vous utilisez macOS 10.15 (Catalina) ou version ultérieure, accordez à Defender pour Entreprise le consentement pour protéger votre appareil. Accédez à **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**. Sélectionnez l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue), puis sélectionnez **Microsoft Defender pour les PME** (ou **Defender pour point de terminaison**, si c’est ce que vous voyez).
+2. Si vous utilisez macOS 10.15 (Catalina) ou version ultérieure, accordez à Defender pour Entreprise le consentement pour protéger votre appareil. Accédez à La sécurité **des préférences** >  système &**l’accès au disque intégral** à **la confidentialité de la confidentialité** >  > . Sélectionnez l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue), puis sélectionnez **Microsoft Defender pour entreprises** (ou **Defender pour point de terminaison**, si c’est ce que vous voyez).
 
 3. Pour vérifier que l’appareil est intégré, utilisez la commande suivante dans Bash : `mdatp health --field real_time_protection_enabled`
 
-4. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
+4. Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
@@ -232,8 +228,8 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, dans le 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
-- Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
-- Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).
+- Si vous avez terminé l’intégration des appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour entreprises](mdb-configure-security-settings.md)
+- Consultez [Démarrage à l’aide de Microsoft Defender pour entreprises](mdb-get-started.md).
 
 ## <a name="mobile-devices"></a>[**appareils mobiles**](#tab/mobiles)
 
@@ -246,10 +242,10 @@ Consultez les ressources suivantes pour obtenir de l’aide sur l’inscription 
 - [Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)
 - [Inscrire des appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)
 
-Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).
+Une fois qu’un appareil a été inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous avez d’autres appareils à intégrer, sélectionnez l’onglet qui correspond au système d’exploitation sur les appareils ([clients Windows, serveur Windows, macOS ou appareils mobiles](#what-to-do)), puis suivez les instructions de cet onglet.
-- Si vous avez terminé l’intégration d’appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les PME](mdb-configure-security-settings.md)
-- Consultez [Démarrage à l’aide de Microsoft Defender pour les PME](mdb-get-started.md).
+- Si vous avez terminé l’intégration des appareils, passez à [l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour entreprises](mdb-configure-security-settings.md)
+- Consultez [Démarrage à l’aide de Microsoft Defender pour entreprises](mdb-get-started.md).

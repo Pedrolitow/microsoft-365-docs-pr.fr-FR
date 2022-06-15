@@ -1,5 +1,5 @@
 ---
-title: Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME
+title: Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises
 description: Comme des menaces sont détectées dans Defender entreprise, vous pouvez prendre des mesures pour répondre à ces menaces. Découvrez comment utiliser la vue d’inventaire des appareils.
 search.appverid: MET150
 author: denisebmsft
@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0481ffdf51b60a40de854ec2e4eb9b9d38d4344a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: b7a911991935407f9d512213c9d76c92106b74c8
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174863"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089559"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises
 
 Le portail Microsoft 365 Defender permet à votre équipe de sécurité de répondre aux menaces détectées et de les atténuer. Cet article vous guide tout au long d’un exemple d’utilisation de Defender entreprise.
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="view-detected-threats"></a>Afficher les menaces détectées
 
@@ -59,5 +55,5 @@ Le portail Microsoft 365 Defender permet à votre équipe de sécurité de répo
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
-- [Gérer les appareils dans Microsoft Defender pour les PME](mdb-manage-devices.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
+- [Gérer les appareils dans Microsoft Defender pour entreprises](mdb-manage-devices.md)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)

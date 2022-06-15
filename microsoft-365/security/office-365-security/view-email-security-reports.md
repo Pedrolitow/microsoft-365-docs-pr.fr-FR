@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 5501477e14bd5053f6adbe597642470854616a5e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078983"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089967"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender
 
@@ -158,7 +158,7 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 - **Date**
 - **Stratégie DLP** (**Afficher les données par DLP Exchange règles de transport** uniquement)
 - **Règle de transport**
-- **Sujet**
+- **Subject**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **Gravité**
@@ -209,7 +209,7 @@ Le tableau des détails sous le graphique affiche les informations suivantes :
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le menu volant qui s’affiche :
 
@@ -424,7 +424,7 @@ Vous pouvez filtrer le graphique et la table de détails en cliquant sur **Filtr
   - **Pending**
   - **Terminée**
 
-Le tableau des détails sous le graphe affiche les mêmes informations et contient les mêmes options **De groupe** ou **personnaliser les colonnes** que dans l’onglet **Soumis pour analyse** de **l’e-mail &** **soumissions** de collaboration\>. Pour plus d’informations, consultez [Afficher les soumissions d’administrateur à Microsoft](admin-submission.md#view-urls-admin-submissions-to-microsoft).
+Le tableau des détails sous le graphe affiche les mêmes informations et contient les mêmes options **De groupe** ou **personnaliser les colonnes** que dans l’onglet **Soumis pour analyse** de **l’e-mail &** **soumissions** de collaboration\>. Pour plus d’informations, consultez [Afficher les soumissions d’administrateur de messagerie à Microsoft](admin-submission.md#view-email-admin-submissions-to-microsoft).
 
 Dans la page **Soumissions** , le bouton **[Exporter](#export-report)** est disponible.
 
@@ -568,7 +568,7 @@ Dans la **vue Afficher les données par courrier indésirable par courrier élec
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
@@ -624,7 +624,7 @@ Dans la **vue Afficher les données par programme malveillant par courrier élec
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection** : valeurs de technologie de détection identiques du graphique.
@@ -852,7 +852,7 @@ Dans la **vue Afficher les données par remplacement système** et **la réparti
 Dans le tableau d’informations sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Remplacement du système**

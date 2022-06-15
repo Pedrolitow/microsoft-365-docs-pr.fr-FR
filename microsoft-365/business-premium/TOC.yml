@@ -4,7 +4,7 @@
       href: index.md
     - name: Comment Microsoft 365 aide votre entreprise
       href: m365bp-secure-users.md
-    - name: Playbook d’évaluation Microsoft 365 Business Premium
+    - name: Microsoft 365 Business Premium playbook d’évaluation
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: "Obtenir Microsoft\_365 Business Premium"
       href: get-microsoft-365-business-premium.md
@@ -38,7 +38,7 @@
           href: m365bp-devices-overview.md
         - name: Configurez l’authentification multi-facteurs.
           href: m365bp-multifactor-authentication.md
-        - name: Installer des applications Office sur des appareils
+        - name: Installer Office applications sur les appareils
           href: m365bp-install-office-apps.md
         - name: Protéger les appareils non gérés
           href: m365bp-protect-pcs-macs.md
@@ -106,6 +106,8 @@
       href: m365bp-maintain-environment.md
     - name: Supprimer des utilisateurs
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Ajouter des utilisateurs
+      href: m365bp-add-users.md
     - name: Supprimer des données sur des appareils
       href: m365bp-remove-company-data.md
     - name: Rétablissement des paramètres d’usine des appareils
@@ -116,7 +118,7 @@
       href: m365bp-glossary.md
     - name: Forum aux questions sur Microsoft 365 Business Premium
       href: microsoft-365-business-faqs.yml
-    - name: Contenu de l’administrateur Microsoft 365
+    - name: Microsoft 365 contenu administrateur
       href: /microsoft-365/admin/
     - name: Configurer AutoPilot
       items:

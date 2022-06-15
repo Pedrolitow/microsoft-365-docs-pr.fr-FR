@@ -1,5 +1,5 @@
 ---
-title: Afficher ou modifier des stratégies dans Microsoft Defender pour les PME
+title: Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises
 description: Découvrez comment afficher, modifier, créer et supprimer des stratégies de cybersécurité dans Defender entreprise. Protégez vos appareils avec des stratégies de sécurité.
 search.appverid: MET150
 author: denisebmsft
@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 85845ec12b8ad43abe965e277f8ea3f6c67e1d7d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c5606c19e4cef64e701d34a5e4ccc2143f51f394
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174180"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090363"
 ---
-# <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender pour les PME
+# <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises
 
-Dans Microsoft Defender pour les PME, les paramètres de sécurité sont configurés via des stratégies appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
+Dans Microsoft Defender pour entreprises, les paramètres de sécurité sont configurés par le biais de stratégies appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
 
 **Cet article explique comment** :
 
@@ -34,10 +34,6 @@ Dans Microsoft Defender pour les PME, les paramètres de sécurité sont configu
 - [Modifier une stratégie existante](#edit-an-existing-policy)
 - [Créer une stratégie](#create-a-new-policy)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="default-policies-in-defender-for-business"></a>Stratégies par défaut dans Defender entreprise
 
@@ -51,7 +47,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
 
-2. Dans le volet de navigation, choisissez **Configuration de l’appareil**. Les stratégies sont organisées par système d’exploitation (par exemple, **Client Windows**) et par type de stratégie (par exemple, **Protection nouvelle génération** et **Pare-feu**). 
+2. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**). 
 
 3. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies sous les catégories **Protection nouvelle génération** et **Pare-feu**. 
 
@@ -61,7 +57,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
 
-2. Dans le volet de navigation, choisissez **Configuration de l’appareil**. Les stratégies sont organisées par système d’exploitation (par exemple, **Client Windows**) et par type de stratégie (par exemple, **Protection nouvelle génération** et **Pare-feu**). 
+2. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**). 
 
 3. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies sous les catégories **Protection nouvelle génération** et **Pare-feu**. 
 
@@ -73,7 +69,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
    - Pour conserver le groupe d’appareils sélectionné tel qu’il est, choisissez **Suivant**.
    - Pour supprimer un groupe d’appareils de la stratégie, sélectionnez **Supprimer**.
-   - Pour configurer un nouveau groupe d’appareils, sélectionnez **Créer un groupe**, puis configurez votre groupe d’appareils. (Pour obtenir de l’aide sur cette tâche, consultez [groupes d’appareils dans Microsoft Defender pour les PME](mdb-create-edit-device-groups.md).)
+   - Pour configurer un nouveau groupe d’appareils, sélectionnez **Créer un groupe**, puis configurez votre groupe d’appareils. (Pour obtenir de l’aide sur cette tâche, consultez [Groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).)
    - Pour appliquer la stratégie à un autre groupe d’appareils, sélectionnez **Utiliser le groupe existant**.
 
    Une fois que vous avez spécifié quels groupes d’appareils doivent recevoir la stratégie, choisissez **Suivant**.
@@ -94,7 +90,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous. 
 
-2. Dans le volet de navigation, choisissez **Configuration de l’appareil**. Les stratégies sont organisées par système d’exploitation (par exemple, **Client Windows**) et par type de stratégie (par exemple, **Protection nouvelle génération** et **Pare-feu**). 
+2. Dans le volet de navigation, choisissez **Configuration du dispositif**. Les stratégies sont organisées par système d'exploitation (comme le **client Windows**) et par type de stratégie (comme la **protection de nouvelle génération** et le **pare-feu**). 
 
 3. Sélectionnez un onglet de système d’exploitation (par exemple, **Clients Windows**), puis passez en revue la liste des stratégies **Protection nouvelle génération**. 
 
@@ -115,7 +111,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
    Pour en savoir plus sur les groupes d’appareils, consultez [Groupes d’appareils dans Defender pour Entreprises](mdb-create-edit-device-groups.md).
 
-8. Sur l’onglet **Paramètres de configuration**, spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, consultez [Paramètres de configuration pour Microsoft Defender pour les PME](mdb-next-gen-configuration-settings.md).
+8. Sur l’onglet **Paramètres de configuration**, spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, consultez [Paramètres de configuration pour Microsoft Defender pour entreprises](mdb-next-gen-configuration-settings.md).
 
 9. Sur l’onglet **Vérifier votre stratégie**, passez en revue les informations générales, les appareils ciblés et les paramètres de configuration. 
 
@@ -128,7 +124,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 Choisissez une ou plusieurs des tâches suivantes :
 
 - [Gérer les appareils](mdb-manage-devices.md)
-- [Créer une stratégie dans Microsoft Defender pour les PME](mdb-create-new-policy.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
+- [Créer une stratégie dans Microsoft Defender pour entreprises](mdb-create-new-policy.md)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

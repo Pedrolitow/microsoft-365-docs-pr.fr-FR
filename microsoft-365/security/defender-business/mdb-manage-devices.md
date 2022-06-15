@@ -1,5 +1,5 @@
 ---
-title: Gérer les appareils dans Microsoft Defender pour les PME
+title: Gérer les appareils dans Microsoft Defender pour entreprises
 description: Découvrez comment ajouter, supprimer et gérer des appareils dans Defender entreprise, endpoint protection pour les petites et moyennes entreprises.
 search.appverid: MET150
 author: denisebmsft
@@ -16,26 +16,22 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 099cddf662b58f918af5aa3b8cc2cb1fea26b0f8
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173078"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090011"
 ---
-# <a name="manage-devices-in-microsoft-defender-for-business"></a>Gérer les appareils dans Microsoft Defender pour les PME
+# <a name="manage-devices-in-microsoft-defender-for-business"></a>Gérer les appareils dans Microsoft Defender pour entreprises
 
-Dans Microsoft Defender pour les PME, vous pouvez gérer les appareils comme suit :
+Dans Microsoft Defender pour entreprises, vous pouvez gérer les appareils comme suit :
 
 - [Afficher la liste des appareils intégrés](#view-the-list-of-onboarded-devices) pour voir leur niveau de risque, leur niveau d’exposition et leur état d’intégrité
 - [Prendre des mesures sur un appareil](#take-action-on-a-device-that-has-threat-detections) qui a des détections de menaces
 - [Intégrer un appareil à Defender pour Entreprises](#onboard-a-device)  
 - [Déconnecter un appareil de Defender entreprise](#offboard-a-device)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
@@ -47,7 +43,7 @@ Dans Microsoft Defender pour les PME, vous pouvez gérer les appareils comme sui
 
 3. Sélectionnez un appareil pour ouvrir son panneau volant, où vous pouvez en savoir plus sur son état et prendre des mesures. 
 
-   Si vous n’avez pas encore d’appareils répertoriés, [intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md)
+   Si vous n’avez pas encore d’appareils répertoriés, [intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Prendre des mesures sur un appareil qui a des détections de menaces
 
@@ -63,7 +59,7 @@ Dans Microsoft Defender pour les PME, vous pouvez gérer les appareils comme sui
 
 ## <a name="onboard-a-device"></a>Intégrer un appareil
 
-Consultez [Intégrer des appareils à Microsoft Defender pour les PME](mdb-onboard-devices.md).
+Consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
 
 ## <a name="offboard-a-device"></a>Annuler l’intégration d’un appareil
 
@@ -71,7 +67,7 @@ Voir [Désintégrage d’un appareil](mdb-offboard-devices.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
 - [Créer ou modifier des groupes d’appareils](mdb-create-edit-device-groups.md)

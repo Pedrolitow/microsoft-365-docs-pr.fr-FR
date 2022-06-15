@@ -4,12 +4,12 @@ description: fichier descriptif
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65601624"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66091433"
 ---
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -123,7 +123,7 @@ Le tableau suivant peut vous aider à comprendre quelles stratégies qui peuvent
 
 Pour prendre en charge Microsoft Defender pour point de terminaison gestion de la configuration de la sécurité via le centre d’administration Microsoft Endpoint Manager, vous devez activer la communication entre elles à partir de chaque console.
 
-1. Connectez-vous au [portail Microsoft 365 Defender](https://security.microsoft.com/) et accédez à **Paramètres** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope et activez les plateformes pour la gestion des paramètres de sécurité :
+1. Connectez-vous au [portail Microsoft 365 Defender](https://security.microsoft.com/) et accédez à **Paramètres** >  **Endpoints** > **Configuration Management** > **Enforcement Scope** et activez les plateformes pour la gestion des paramètres de sécurité :
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Activez Microsoft Defender pour point de terminaison gestion des paramètres dans la console Defender.":::
     
@@ -134,7 +134,7 @@ Pour prendre en charge Microsoft Defender pour point de terminaison gestion de l
   > [!TIP]
   > Utilisez le mode pilote et les balises d’appareil appropriées pour tester et valider votre déploiement sur un petit nombre d’appareils. Sans utiliser le mode pilote, tout appareil qui entre dans l’étendue configurée est automatiquement inscrit.
 
-1. Assurez-vous que les utilisateurs concernés disposent des autorisations nécessaires pour gérer les paramètres de sécurité des points de terminaison dans Microsoft Endpoint Manager ou accordez ces autorisations en configurant un rôle dans le portail Defender. Accédez à **l’élément Paramètres** >  **RolesAdd** >  :
+1. Assurez-vous que les utilisateurs concernés disposent des autorisations nécessaires pour gérer les paramètres de sécurité des points de terminaison dans Microsoft Endpoint Manager ou accordez ces autorisations en configurant un rôle dans le portail Defender. Accédez à **Paramètres** >  **L’élément****Add** : > 
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Créez un rôle dans le portail Defender.":::
 
@@ -158,14 +158,11 @@ Pour prendre en charge Microsoft Defender pour point de terminaison gestion de l
 Microsoft Defender pour point de terminaison prend en charge plusieurs options pour intégrer des appareils. Pour obtenir des conseils [actuels, consultez les outils et méthodes d’intégration pour Windows appareils](/microsoft-365/security/defender-endpoint/security-config-management) dans la documentation defender pour point de terminaison.
 
 
-> [!IMPORTANT]
-> Une fois qu’un appareil est intégré à Microsoft Defender pour point de terminaison, il doit et doit être marqué avec **MDE-Management** avant de pouvoir s’inscrire auprès de Security Management pour Microsoft Defender pour point de terminaison. Pour plus d’informations sur l’étiquetage des appareils dans MDE, consultez [*Créer et gérer des balises d’appareil*](/microsoft-365/security/defender-endpoint/machine-tags).
-
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Coexistence avec Microsoft Endpoint Configuration Manager
 Dans certains environnements, il peut être souhaité d’utiliser la gestion de la sécurité pour Microsoft Defender pour point de terminaison avec [Configuration Manager attachement de locataire](/mem/configmgr/tenant-attach/endpoint-security-get-started). Si vous utilisez les deux, vous devez contrôler la stratégie via un seul canal, car l’utilisation de plusieurs canaux crée la possibilité de conflits et de résultats indésirables.
 
-Pour ce faire, configurez les *paramètres de gestion de la sécurité à l’aide de Configuration Manager* *basculez sur Désactivé*.  Connectez-vous au [portail Microsoft 365 Defender](https://security.microsoft.com/) et accédez à **Paramètres** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope :
+Pour ce faire, configurez les *paramètres de gestion de la sécurité à l’aide de Configuration Manager* *basculez sur Désactivé*.  Connectez-vous au [portail Microsoft 365 Defender](https://security.microsoft.com/) et accédez à **Paramètres** >  **Endpoints** > **Configuration Management** > **Enforcement Scope** :
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Gérez les paramètres de sécurité à l’aide de Configuration Manager paramètre.":::
 
@@ -181,7 +178,7 @@ Pour identifier les appareils inscrits auprès de Microsoft Defender pour point 
 
 1. Connectez-vous [Microsoft Endpoint Manager centre d’administration.](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Accédez aux **appareils DevicesAll** > , puis sélectionnez la colonne **Gérée par** pour trier la vue des appareils.
+2. Accédez à **Appareils** > **Tous les appareils**, puis sélectionnez la colonne **Gérée par** pour trier la vue des appareils.
 
    Les appareils qui s’intègrent à Microsoft Defender pour point de terminaison et qui sont inscrits mais qui ne sont pas gérés par Intune affichent **Microsoft Defender pour point de terminaison** dans la colonne *Gérée par*. Il s’agit des appareils qui peuvent recevoir une stratégie de gestion de la sécurité pour Microsoft Defender pour point de terminaison.
 

@@ -1,6 +1,6 @@
 ---
-title: Pare-feu dans Microsoft Defender pour les PME
-description: Découvrez Windows Defender paramètres de pare-feu dans Defender pour Entreprises. Le pare-feu peut empêcher le trafic réseau indésirable de transiter vers vos appareils d’entreprise.
+title: Pare-feu dans Microsoft Defender pour entreprises
+description: Découvrez Pare-feu Windows Defender paramètres dans Defender entreprise. Le pare-feu peut empêcher le trafic réseau indésirable de transiter vers vos appareils d’entreprise.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9ec6e0b10812c42c90266fd2793557ae6f3b2efc
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172667"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090341"
 ---
-# <a name="firewall-in-microsoft-defender-for-business"></a>Pare-feu dans Microsoft Defender pour les PME
+# <a name="firewall-in-microsoft-defender-for-business"></a>Pare-feu dans Microsoft Defender pour entreprises
 
-Microsoft Defender pour les PME inclut des fonctionnalités de pare-feu avec [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). La protection pare-feu permet de sécuriser les appareils avec des règles qui déterminent le trafic réseau autorisé à entrer ou à circuler à partir d’appareils. 
+Microsoft Defender pour entreprises inclut des fonctionnalités de pare-feu avec [Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). La protection pare-feu permet de sécuriser les appareils avec des règles qui déterminent le trafic réseau autorisé à entrer ou à circuler à partir d’appareils. 
 
 Vous pouvez utiliser la protection pare-feu pour spécifier s’il faut autoriser ou bloquer des connexions sur des appareils à différents emplacements. Par exemple, vos paramètres de pare-feu peuvent autoriser les connexions entrantes sur les appareils connectés au réseau interne de votre entreprise, mais empêcher ces connexions lorsque l’appareil se trouve sur un réseau avec des appareils non approuvés.
 
@@ -33,24 +33,20 @@ Vous pouvez utiliser la protection pare-feu pour spécifier s’il faut autorise
 - [Paramètres de pare-feu par défaut dans Defender pour Entreprises](#default-firewall-settings-in-defender-for-business)
 - [Paramètres de pare-feu que vous pouvez configurer dans Defender entreprise](#firewall-settings-you-can-configure-in-defender-for-business)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Paramètres de pare-feu par défaut dans Defender pour Entreprises
 
-Microsoft Defender pour les PME inclut des stratégies et des paramètres de pare-feu par défaut pour protéger les appareils de votre entreprise dès le premier jour. Dès que les appareils de votre entreprise sont intégrés à Microsoft Defender pour les PME, votre stratégie de pare-feu par défaut fonctionne comme suit :
+Microsoft Defender pour entreprises inclut des stratégies et des paramètres de pare-feu par défaut pour protéger les appareils de votre entreprise dès le premier jour. Dès que les appareils de votre entreprise sont intégrés à Microsoft Defender pour entreprises, votre stratégie de pare-feu par défaut fonctionne comme suit :
 
 - Les connexions sortantes à partir d’appareils sont autorisées par défaut, quel que soit l’emplacement.
 - Lorsque les appareils sont connectés au réseau de votre entreprise, toutes les connexions entrantes sont bloquées par défaut.
 - Lorsque les appareils sont connectés à un réseau public ou privé, toutes les connexions entrantes sont bloquées par défaut.
 
-Dans Microsoft Defender pour les PME, vous pouvez définir des exceptions pour bloquer ou autoriser les connexions entrantes. Vous définissez ces exceptions en créant des règles personnalisées. Consultez [Gérer les règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md).
+Dans Microsoft Defender pour entreprises, vous pouvez définir des exceptions pour bloquer ou autoriser les connexions entrantes. Vous définissez ces exceptions en créant des règles personnalisées. Consultez [Gérer les règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md).
 
 ## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>Paramètres de pare-feu que vous pouvez configurer dans Defender entreprise
 
-Microsoft Defender pour les PME inclut la protection pare-feu par le biais du pare-feu Windows Defender. Le tableau suivant répertorie les paramètres qui peuvent être configurés pour la protection pare-feu dans Microsoft Defender pour les PME.
+Microsoft Defender pour entreprises inclut la protection pare-feu via Pare-feu Windows Defender. Le tableau suivant répertorie les paramètres qui peuvent être configurés pour la protection pare-feu dans Microsoft Defender pour entreprises.
 
 | Paramètre | Description |
 |--|--|
@@ -61,8 +57,8 @@ Microsoft Defender pour les PME inclut la protection pare-feu par le biais du pa
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Gérer les paramètres de pare-feu dans Microsoft Defender pour les PME](mdb-custom-rules-firewall.md)
-- [En savoir plus sur Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
+- [Gérer les paramètres de pare-feu dans Microsoft Defender pour entreprises](mdb-custom-rules-firewall.md)
+- [En savoir plus sur Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

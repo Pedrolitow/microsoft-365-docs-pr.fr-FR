@@ -1,5 +1,5 @@
 ---
-title: Groupes d’appareils dans Microsoft Defender pour les PME
+title: Groupes d’appareils dans Microsoft Defender pour entreprises
 description: Les stratégies de sécurité sont appliquées aux appareils par le biais de groupes d’appareils dans Defender entreprise.
 search.appverid: MET150
 author: denisebmsft
@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d788ee4dac2e922898204fdd13e977c50e66b2e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172223"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090429"
 ---
-# <a name="device-groups-in-microsoft-defender-for-business"></a>Groupes d’appareils dans Microsoft Defender pour les PME
+# <a name="device-groups-in-microsoft-defender-for-business"></a>Groupes d’appareils dans Microsoft Defender pour entreprises
 
-Dans Microsoft Defender pour les PME, les stratégies sont appliquées aux appareils par le biais de certaines collections appelées groupes d’appareils. 
+Dans Microsoft Defender pour entreprises, les stratégies sont appliquées aux appareils par le biais de certaines collections appelées groupes d’appareils. 
 
 **Cet article décrit**:  
 
@@ -34,21 +34,17 @@ Dans Microsoft Defender pour les PME, les stratégies sont appliquées aux appar
 - [Comment afficher un groupe d’appareils existant](#view-an-existing-device-group)
 - [Ce que fait l’option Ajouter tous les appareils](#what-does-the-add-all-devices-option-do)
 
->
-> **Avez-vous un peu de temps ?**
-> Veuillez prendre notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur la sécurité</a>. Vos commentaires sont les bienvenus.
->
 
 ## <a name="what-is-a-device-group"></a>Qu’est-ce qu’un groupe d’appareils ?
 
-Un groupe de périphériques est une collection de périphériques qui sont regroupés en raison de certains critères spécifiques, tels que la version du système d'exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft Defender pour les PME, les stratégies sont appliquées aux appareils à l’aide de groupes d’appareils.
+Un groupe de périphériques est une collection de périphériques qui sont regroupés en raison de certains critères spécifiques, tels que la version du système d'exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft Defender pour entreprises, les stratégies sont appliquées aux appareils à l’aide de groupes d’appareils.
 
 Defender entreprise inclut des groupes d’appareils par défaut que vous pouvez utiliser. Les groupes d’appareils par défaut incluent tous les appareils intégrés à Microsoft Defender pour les PME. Par exemple, il existe un groupe d’appareils par défaut pour Windows appareils. Chaque fois que vous intègrez Windows appareils, ils sont ajoutés automatiquement au groupe d’appareils par défaut.
 
 Vous pouvez également créer des groupes d’appareils pour affecter des stratégies avec des paramètres spécifiques à certains appareils. Par exemple, une stratégie de pare-feu peut être affectée à un ensemble d’appareils Windows et une autre stratégie de pare-feu affectée à un autre ensemble d’appareils Windows. Vous pouvez définir des groupes d’appareils spécifiques à utiliser avec vos stratégies.
 
 > [!NOTE]
-> Lorsque vous créez des stratégies dans Defender entreprise, un ordre de priorité est attribué. Si vous appliquez plusieurs stratégies à un ensemble donné d’appareils, ces appareils recevront la première stratégie appliquée uniquement. Pour plus d’informations, consultez [Comprendre l’ordre des stratégies dans Microsoft Defender pour les PME](mdb-policy-order.md).
+> Lorsque vous créez des stratégies dans Defender entreprise, un ordre de priorité est attribué. Si vous appliquez plusieurs stratégies à un ensemble donné d’appareils, ces appareils recevront la première stratégie appliquée uniquement. Pour plus d’informations, consultez [Comprendre l’ordre des stratégies dans Microsoft Defender pour entreprises](mdb-policy-order.md).
 
 Tous les groupes d’appareils, y compris vos groupes d’appareils par défaut et tous les groupes d’appareils personnalisés que vous définissez, sont stockés dans [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
@@ -116,6 +112,6 @@ Choisissez une ou plusieurs des tâches suivantes :
 
 - [Afficher ou modifier des stratégies](mdb-view-edit-policies.md)
 - [Créer une stratégie](mdb-create-new-policy.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour les PME](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour les PME](mdb-respond-mitigate-threats.md)
+- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
