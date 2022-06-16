@@ -1,5 +1,5 @@
 ---
-title: Créer et gérer des évaluations dans le Gestionnaire de conformité Microsoft Purview
+title: Créer et gérer des évaluations dans Microsoft Purview Gestionnaire de conformité
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Créez des évaluations dans le Gestionnaire de conformité Microsoft Purview pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
-ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Créez des évaluations dans Microsoft Purview Gestionnaire de conformité pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
+ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972560"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115738"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -79,11 +79,11 @@ Vous pouvez créer un groupe lors de la création d’une évaluation. Les group
 
 ## <a name="understand-templates-before-creating-assessments"></a>Comprendre les modèles avant de créer des évaluations
 
-Les modèles d’évaluation contiennent les contrôles et les recommandations d’action pour les évaluations, basés sur des certifications pour différentes réglementations et normes de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que tous les modèles Premium supplémentaires que vous avez achetés.
+Les modèles d’évaluation contiennent les contrôles et les recommandations d’action pour les évaluations, basés sur des certifications pour différentes réglementations et normes de confidentialité. Votre organisation commence par au moins un et peut-être plus **de modèles inclus** disponibles à utiliser, en fonction de votre contrat de licence. Votre organisation peut également acheter des modèles **Premium** supplémentaires.
 
-Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 (ou d’autres produits Microsoft disponibles), et une version universelle qui peut être adaptée pour évaluer d’autres produits que vous utilisez. Vous pouvez choisir le type de modèle approprié pour le produit que vous souhaitez évaluer.
+Chaque modèle existe dans deux versions : une pour une utilisation avec Microsoft 365 (ou d’autres produits Microsoft disponibles), et une version universelle qui peut être adaptée pour évaluer d’autres produits que vous utilisez. Vous pouvez choisir le type de modèle approprié pour le produit que vous souhaitez évaluer.
 
-Pour en savoir plus sur les modèles, consultez [Utilisation des modèles d’évaluation](compliance-manager-templates.md).
+Pour plus d’informations sur les modèles, consultez [En savoir plus sur les modèles d’évaluation dans le Gestionnaire de conformité](compliance-manager-templates.md).
 
 ## <a name="create-assessments"></a>Créer des évaluations
 

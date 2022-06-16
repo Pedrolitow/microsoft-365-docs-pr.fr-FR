@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Recherchez des informations et des ressources à mettre à niveau à partir de SharePoint 2010 et SharePoint Server 2010. Prise en charge des deux extrémités le 13 avril 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ed6cf873442d4fd48cdbf9562e6067fd238384e
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: eba7c6739aef420bc90ef866dbd6f3becbccd8ff
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772749"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115958"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -60,7 +60,7 @@ Cette matrice permet de tracer un cours parmi les options de migration :
 
 |Fin du produit de support|Bonne |Idéale|
 |---|---|---|
-|SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
+|SharePoint Server 2010|SharePoint Server 2013 (local)|SharePoint Online|
 ||SharePoint Server 2013 hybride avec SharePoint Online|SharePoint Server 2016 (local)|
 |||recherche hybride SharePoint cloud|
 
@@ -163,11 +163,11 @@ Vous pouvez décider de déplacer certains de vos sites vers le matériel « per
 
 - *Configuration matérielle/logicielle requise pour :*
 
-    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) |  [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0) |  [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) |  [SharePoint Server 2013](/sharepoint/install/hardware-software-requirements-2013) |  [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *Limites et limites logicielles pour :*
 
-    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) |  [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) |  [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) |  [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) |  [SharePoint Server 2016](/sharepoint/install/software-boundaries-limits-2019)
 
 - *Vue d’ensemble du processus de mise à niveau pour :*
 
@@ -235,11 +235,11 @@ Commencez par savoir que vous répondez aux exigences matérielles et logicielle
 
 - *Configuration matérielle/logicielle requise pour* :
 
-    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) |  [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) |  [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0) |  [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) |  [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14)) |  [SharePoint Server 2013](/sharepoint/install/hardware-software-requirements-2013) |  [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
 
 - *Limites et limites logicielles pour* :
 
-    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12)) |  [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) |  [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) |  [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12)) |  [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14)) |  [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits) |  [SharePoint Server 2016](/sharepoint/install/software-boundaries-limits-2019)
 
 - *Vue d’ensemble du processus de mise à niveau pour* :
 

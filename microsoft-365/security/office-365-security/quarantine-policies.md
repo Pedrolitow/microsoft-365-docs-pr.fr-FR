@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648236"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115672"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -51,9 +51,9 @@ Les autorisations de stratégie de quarantaine individuelles contenues dans les 
 |Autorisation|Pas d’accès|Accès limité|Accès complet|
 |---|:---:|:---:|:---:|
 |**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Préversion** (_PermissionToPreview_)||![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)|||![Marque de vérification.](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|**Préversion** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)|||![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à demander la mise en quarantaine d’un message** (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
 
 Les stratégies de quarantaine par défaut, leurs groupes d’autorisations associés et si les notifications de quarantaine sont activées sont décrites dans le tableau suivant :
@@ -110,7 +110,7 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
        - **Autoriser les destinataires à libérer un message de la quarantaine**
        - **Autoriser les destinataires à demander la libération d’un message de quarantaine**
      - **Sélectionnez des actions supplémentaires que les destinataires peuvent effectuer sur les messages mis en quarantaine** : sélectionnez certaines valeurs, toutes ou aucune des valeurs suivantes :
-       - **Delete**
+       - **Supprimer**
        - **Aperçu**
        - **Bloquer l’expéditeur**
 
@@ -299,7 +299,7 @@ L’intelligence par usurpation d’identité est disponible dans EOP et Defende
 4. Dans la page **Paramètres de protection** , vérifiez que les paramètres suivants sont activés et configurés selon les besoins :
    - **Utilisateurs activés pour la protection** : spécifiez les utilisateurs.
    - **Domaines activés pour la protection** : sélectionnez **Inclure les domaines que je possède** et/ou **Inclure des domaines personnalisés** et spécifiez les domaines.
-   - **Activer l’intelligence de boîte aux lettres**
+   - **Activer la veille des boîtes aux lettres**
    - **Activer l’intelligence pour la protection de l’emprunt d’identité**
    - **Activer l’intelligence par usurpation d’identité**
 
@@ -681,10 +681,13 @@ Si la stratégie de quarantaine affecte les autorisations **d’accès complet**
 
 - **Notifications de quarantaine : les boutons** suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Version**
+  - **Débloquer**
   - **Révision**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Boutons disponibles dans la notification de quarantaine si la stratégie de quarantaine donne à l’utilisateur des autorisations d’accès complet" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> Comme expliqué précédemment, les notifications de quarantaine sont désactivées dans la stratégie de quarantaine par défaut nommée DefaultFullAccessPolicy, même si le groupe **d’autorisations d’accès complet** est affecté à cette stratégie de quarantaine. Les notifications de quarantaine sont disponibles uniquement dans les stratégies de quarantaine personnalisées que vous créez ou dans la stratégie d’accès en quarantaine par défaut nommée NotificationEnabledPolicy ([si cette stratégie est disponible dans votre organisation](#full-access-permissions-and-quarantine-notifications)).
 
 ### <a name="individual-permissions"></a>Autorisations individuelles
 

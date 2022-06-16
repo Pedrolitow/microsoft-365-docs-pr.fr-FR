@@ -3,11 +3,12 @@ title: Connectivité réseau dans le centre de Administration Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre de Administration Microsoft 365
-ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 5c360820c39be6ec1c42ecdfa0a045a51716e408
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043827"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115637"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre de Administration Microsoft 365
 
@@ -35,7 +36,7 @@ Le centre Administration Microsoft 365 inclut désormais des métriques de conne
 > ![Page de performances réseau.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 > [!NOTE]
-> La connectivité réseau dans le Centre d’administration prend en charge les locataires de WW Commercial et d’Allemagne, mais pas Cloud de la communauté du secteur public Moderate, Cloud de la communauté du secteur public High, DoD ou Chine.
+> La connectivité réseau dans le centre Administration prend en charge les locataires de WW Commercial et d’Allemagne, mais pas Cloud de la communauté du secteur public Modéré, Cloud de la communauté du secteur public High, DoD ou Chine.
 
 Lorsque vous accédez pour la première fois à la page de performances réseau, vous devez configurer vos emplacements pour afficher la carte des performances réseau globales, une évaluation réseau étendue à l’ensemble du locataire, le pourcentage de vos utilisateurs travaillant à distance par rapport à l’emplacement, et une liste des problèmes actuels pour prendre des mesures et/ou pour approfondir vos recherches. Dans le volet vue d’ensemble, vous pouvez explorer les métriques et les problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, consultez [la vue d’ensemble des performances réseau dans le centre de Administration Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -47,19 +48,22 @@ Pour commencer, activez votre paramètre d’acceptation d’emplacement pour co
 
 ### <a name="1-enable-windows-location-services"></a>1. Activer Windows Services d’emplacement
 
-Pour cette option, vous devez disposer d’au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prennent en charge les prérequis. OneDrive pour Windows version doit être à jour et installée sur chaque ordinateur. Pour plus d’informations sur OneDrive versions, consultez les [notes de publication OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Les mesures réseau seront bientôt ajoutées à d’autres applications clientes Office 365.
+Pour cette option, vous devez disposer d’au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prennent en charge les prérequis. OneDrive pour Windows version doit être à jour et installée sur chaque ordinateur. Les tests réseau ne sont exécutés qu’une seule fois par jour à un moment aléatoire. Les mesures réseau seront bientôt ajoutées à d’autres applications clientes Office 365.
 
 Windows service d’emplacement doit être autorisé sur les machines. Vous pouvez tester cela en exécutant l’application **Cartes** et en vous localisant vous-même. Il peut être activé sur un seul ordinateur avec **Paramètres | | de confidentialité Emplacement** où le paramètre _Autoriser les applications à accéder à votre emplacement_ doit être activé. Windows le consentement location services peut être déployé sur des PC à l’aide de GPM ou de stratégie de groupe avec le paramètre _LetAppsAccessLocation_.
 
-Vous n’avez pas besoin d’ajouter des emplacements dans le Centre d’administration avec cette méthode, car ils sont automatiquement identifiés à la résolution de ville. Plusieurs emplacements de bureaux dans la même ville ne s’affichent pas lors de l’utilisation de Windows Location Services. Les informations d’emplacement sont arrondies aux 300 mètres les plus proches par 300 mètres afin que les informations d’emplacement plus précises ne soient pas accessibles.
+Vous n’avez pas besoin d’ajouter des emplacements dans le centre Administration avec cette méthode, car ils sont automatiquement identifiés à la résolution de la ville. Plusieurs emplacements de bureaux dans la même ville ne s’affichent pas lors de l’utilisation de Windows Location Services. Les informations d’emplacement sont arrondies aux 300 mètres les plus proches par 300 mètres afin que les informations d’emplacement plus précises ne soient pas accessibles. L’utilisation de Windows Location Services pour les mesures réseau est désactivée par défaut pour les clients. Vous devez l’activer dans le menu volant Connectivité réseau Paramètres Emplacement.
+
+   > [!div class="mx-imgBorder"]
+   > ![Activer l’emplacement](../media/m365-mac-perf/m365-mac-perf-location-enable.png)
 
 Les machines doivent avoir Wi-Fi réseau plutôt qu’un câble ethernet. Les machines avec un câble ethernet ne disposent pas d’informations précises sur l’emplacement.
 
-Les échantillons de mesure et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été remplies.
+Les échantillons de mesure et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été remplies. Office emplacements découverts à partir de Windows Services d’emplacement sont agrégés par ville et sont conservés dans votre vue pendant 90 jours après la réception des échantillons. Si vous choisissez de basculer vers les emplacements de bureau ajoutés par l’administrateur avec les informations du sous-réseau LAN, vous pouvez désactiver Windows Services d’emplacement et masquer tous les emplacements découverts. Ils seront supprimés après la période de 90 jours.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Ajouter des emplacements et fournir des informations de sous-réseau LAN
 
-Pour cette option, ni Windows Services d’emplacement ni Wi-Fi n’est requis. Votre OneDrive pour Windows version doit être à jour et installée sur au moins un ordinateur à l’emplacement.
+Pour cette option, ni Windows Services d’emplacement ni Wi-Fi n’est requis. Votre OneDrive pour Windows version doit être à jour et installée sur au moins un ordinateur à l’emplacement et vous devez connaître les informations de votre sous-réseau LAN pour chacun de vos bureaux. Cette option autorise plusieurs bureaux par ville et vous pouvez nommer vos bureaux. Vous pouvez également les charger à partir d’autres sources.
 
 Veillez à ajouter également des emplacements dans la **page Emplacements** ou à les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de votre sous-réseau LAN office. Dans la boîte de dialogue permettant d’ajouter ou de modifier un emplacement, vous pouvez spécifier un certain nombre de sous-réseaux LAN et un certain nombre de sous-réseaux IP de sortie publique. Les sous-réseaux LAN sont requis et l’un d’eux doit correspondre à l’attribut de sous-réseau LAN sur une évaluation réseau reçue pour que les résultats s’affichent. Les super filets ne sont pas pris en charge et le sous-réseau LAN doit donc correspondre exactement.
 
@@ -73,9 +77,9 @@ Toutes les mesures de test des machines clientes incluent les informations du so
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Collecter manuellement des rapports de test avec l’outil de test de connectivité réseau Microsoft 365
 
-Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur de parcourir [Microsoft 365 test de connectivité réseau](https://connectivity.office.com) sur un ordinateur Windows sur lequel ils disposent d’autorisations administratives. Sur le site web, ils doivent se connecter à leur compte Office 365 pour la même organisation que celle que vous souhaitez voir les résultats. Ensuite, ils doivent cliquer sur **Exécuter le test**. Pendant le test, un test de connectivité EXE a été téléchargé. Ils doivent l’ouvrir et l’exécuter. Une fois les tests terminés, le résultat du test est chargé dans le Centre d’administration.
+Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur de parcourir [Microsoft 365 test de connectivité réseau](https://connectivity.office.com) sur un ordinateur Windows sur lequel ils disposent d’autorisations administratives. Sur le site web, ils doivent se connecter à leur compte Office 365 pour la même organisation que celle que vous souhaitez voir les résultats. Ensuite, ils doivent cliquer sur **Exécuter le test**. Pendant le test, un test de connectivité EXE a été téléchargé. Ils doivent l’ouvrir et l’exécuter. Une fois les tests terminés, le résultat du test est chargé dans le centre Administration.
 
-Les rapports de test sont liés à un emplacement s’ils ont été ajoutés avec des informations de sous-réseau LAN, sinon ils sont affichés à l’emplacement de la ville uniquement.
+Les rapports de test sont liés à un emplacement s’ils ont été ajoutés avec des informations de sous-réseau LAN, sinon ils sont affichés à l’emplacement de la ville découverte uniquement.
 
 Les échantillons de mesure et les emplacements des bureaux doivent commencer à apparaître 2 à 3 minutes après la fin d’un rapport de test. Pour plus d’informations, consultez [Microsoft 365 test de connectivité réseau](office-365-network-mac-perf-onboarding-tool.md).
 

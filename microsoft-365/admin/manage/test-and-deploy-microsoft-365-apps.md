@@ -14,16 +14,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail des applications intégrées dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 862d70fe57974d2940458cb1fa59d05674d7ff58
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043163"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115496"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer Microsoft 365 Apps par des partenaires dans le portail des applications intégrées
 
-Le Centre d'administration Microsoft 365 vous offre la possibilité de déployer des applications mono-magasin, des applications métier personnalisées et des applications partenaires Microsoft 365 à partir d’un emplacement unique. L’emplacement est accessible dans les paramètres du Centre d’administration Microsoft, dans les applications intégrées. La possibilité de rechercher, de tester et de déployer entièrement des applications achetées et sous licence par des partenaires Microsoft à partir du portail des applications intégrées offre la commodité et les avantages dont votre organisation a besoin pour que les services métier soient régulièrement mis à jour et s’exécutent efficacement.
+Le Centre d'administration Microsoft 365 vous offre la possibilité de déployer des applications mono-magasin, des applications métier personnalisées et des applications partenaires Microsoft 365 à partir d’un emplacement unique. L’emplacement est accessible dans les paramètres du centre microsoft Administration, dans les applications intégrées. La possibilité de rechercher, de tester et de déployer entièrement des applications achetées et sous licence par des partenaires Microsoft à partir du portail des applications intégrées offre la commodité et les avantages dont votre organisation a besoin pour que les services métier soient régulièrement mis à jour et s’exécutent efficacement.
 
 Pour plus d’informations sur l’achat et la gestion des licences Microsoft 365 applications auprès de partenaires de votre organisation, consultez [Gérer et déployer des Microsoft 365 Apps à partir du Centre d'administration Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
@@ -242,14 +242,14 @@ Les mises à jour des compléments se produisent comme suit :
 - **Office Complément du Store** : lorsqu’un administrateur sélectionne un complément dans le Office Store, si un complément est mis à jour dans le Office Store, la prochaine fois que les applications Office appropriées démarrent, le complément est mis à jour. L'application web peut changer à tout moment. 
 
 > [!NOTE]
-> Pour Word, Excel et PowerPoint utiliser un [catalogue d’applications SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des compléments sur des utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge de SharePoint compléments requis. Pour Outlook utilisez Exchange panneau de configuration pour déployer dans un environnement local sans connexion à Microsoft 365.  
+> Pour Word, Excel et PowerPoint utilisez un catalogue d’applications [SharePoint](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) pour déployer des compléments sur des utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge de SharePoint compléments requis. Pour Outlook utilisez Exchange panneau de configuration pour déployer dans un environnement local sans connexion à Microsoft 365.  
 
 ## <a name="add-in-states"></a>États de complément
 Un complément peut être **activé ou** **désactivé** . 
 
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
-|**Actif**  <br/> |L’administrateur a chargé le complément et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
+|**Actif**  <br/> |Administration chargé le complément et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
 |**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l'état du complément est modifié en Actif, les utilisateurs et groupes ont de nouveau accès à celui-ci.  <br/> |
 |**Deleted**  <br/> |Un administrateur a supprimé le complément.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> |
  
@@ -284,12 +284,12 @@ Vous pouvez également supprimer un module qui a été déployé.
 
 ## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Scénarios où Exchange administrateur ne peut pas déployer un complément 
 
-Il existe deux cas où un administrateur Exchange ne peut pas déployer un complément :
+Il existe deux cas où un Exchange Administration ne peut pas déployer un complément :
 - Si un complément a besoin d’une autorisation sur MS Graph API et doit obtenir le consentement d’un administrateur général.
 - Si un complément est lié à au moins deux compléments et applications web, et qu’au moins un de ces compléments est déployé par un autre administrateur (exchange/global) et que l’affectation de l’utilisateur n’est pas uniforme. Nous autorisons uniquement le déploiement de compléments lorsque l’affectation de l’utilisateur est identique pour toutes les applications déjà déployées.  
 
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Quel rôle d’administrateur dois-je accéder aux applications intégrées ?
 

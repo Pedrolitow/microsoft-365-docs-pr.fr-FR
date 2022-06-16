@@ -1,5 +1,5 @@
 ---
-title: Pièces jointes sûres
+title: Pièces jointes fiables
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,20 +20,20 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité pièces jointes Coffre dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d069d92eb012211af8dd4e12109ebcae7eb221e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: e50904932b95dabdad627a7a3291659c1c4d9584
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128715"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115936"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>pièces jointes Coffre dans Microsoft Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Coffre Pièces jointes dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournit une couche supplémentaire de protection pour les pièces jointes de courrier qui ont déjà été analysées par [la protection anti-programme malveillant dans Exchange Online Protection (EOP).](anti-malware-protection.md) Plus précisément, Coffre pièces jointes utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soient remises aux destinataires (processus appelé _détonation_).
 
@@ -56,19 +56,19 @@ L’analyse des pièces jointes fiables a lieu dans la même région que l’emp
 > - [Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 > - [Documents sécurisés dans Microsoft 365 E5](safe-docs.md)
 
-## <a name="safe-attachments-policy-settings"></a>paramètres de stratégie Coffre Pièces jointes
+## <a name="safe-attachments-policy-settings"></a>Paramètres de stratégie pièces jointes fiables
 
 Cette section décrit les paramètres des stratégies Coffre Pièces jointes :
 
 - **Coffre réponse de programmes malveillants inconnus pièces jointes** : ce paramètre contrôle l’action de Coffre l’analyse des programmes malveillants pièces jointes dans les messages électroniques. Les options disponibles sont décrites dans le tableau suivant :
 
-  |Option|Effet|Utilisez quand vous souhaitez :|
+  |Option|Effet|Utilisez-la lorsque vous voulez|
   |---|---|---|
-  |**Désactivé**|Les pièces jointes ne sont pas analysées pour rechercher des programmes malveillants par Coffre pièces jointes. Les messages sont toujours analysés pour rechercher les programmes malveillants par [protection anti-programme malveillant dans EOP](anti-malware-protection.md).|Désactivez l’analyse des destinataires sélectionnés. <br/><br/> Empêchez les retards inutiles dans le routage du courrier interne. <br/><br/> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous devez utiliser cette option uniquement pour désactiver Coffre l’analyse des pièces jointes pour les destinataires qui reçoivent uniquement des messages d’expéditeurs approuvés. ZAP ne met pas en quarantaine les messages si Coffre pièces jointes est désactivée et qu’un signal de programme malveillant n’est pas reçu. Pour plus d’informations, consultez [La purge automatique zero-hour](zero-hour-auto-purge.md)**|
-  |**Moniteur**|Remet des messages avec des pièces jointes, puis suit ce qui se passe avec les programmes malveillants détectés. <br/><br/> La remise des messages sécurisés peut être retardée en raison de l’analyse des pièces jointes Coffre.|Découvrez où se trouvent les programmes malveillants détectés dans votre organisation.|
+  |**Désactivé**|Les pièces jointes ne sont pas analysées pour détecter les programmes malveillants par les pièces jointes fiables. Les messages sont toujours analysés pour rechercher les programmes malveillants par [protection anti-programme malveillant dans EOP](anti-malware-protection.md).|Désactivez l’analyse des destinataires sélectionnés. <br/><br/> Évitez les retards inutiles dans le routage du courrier interne. <br/><br/> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous devez utiliser cette option uniquement pour désactiver Coffre l’analyse des pièces jointes pour les destinataires qui reçoivent uniquement des messages d’expéditeurs approuvés. ZAP ne met pas en quarantaine les messages si Coffre pièces jointes est désactivée et qu’un signal de programme malveillant n’est pas reçu. Pour plus d’informations, consultez [La purge automatique zero-hour](zero-hour-auto-purge.md)**|
+  |**Moniteur**|Remet des messages avec des pièces jointes, puis effectue le suivi de ce qui se passe avec les programmes malveillants détectés. <br/><br/> La remise des messages sécurisés peut être retardée en raison de l’analyse des pièces jointes Coffre.|Découvrez où les programmes malveillants détectés sont placés dans votre organisation.|
   |**Bloquer**|Empêche la remise des messages avec des pièces jointes de programmes malveillants détectées. <br/><br/> Les messages sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <br/><br/> Bloque automatiquement les instances futures des messages et pièces jointes. <br/><br/> La remise des messages sécurisés peut être retardée en raison de l’analyse des pièces jointes Coffre.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes de programmes malveillants. <br/><br/> Il s’agit de la valeur par défaut et de la valeur recommandée dans les [stratégies de sécurité prédéfinies](preset-security-policies.md) Standard et Strict.|
-  |**Replace**|Supprime les pièces jointes de programmes malveillants détectées. <br/><br/> Avertit les destinataires que des pièces jointes ont été supprimées. <br/><br/>  Les messages qui contiennent des pièces jointes malveillantes sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <br/><br/> La remise des messages sécurisés peut être retardée en raison de l’analyse des pièces jointes Coffre.|Augmentez la visibilité des destinataires que les pièces jointes ont été supprimées en raison de programmes malveillants détectés.|
-  |**Livraison dynamique**|Remet des messages immédiatement, mais remplace les pièces jointes par des espaces réservés jusqu’à ce que Coffre l’analyse des pièces jointes soit terminée. <br/><br/> Les messages qui contiennent des pièces jointes malveillantes sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <br/><br/> Pour plus d’informations, consultez la section [Dynamic Delivery dans Coffre attachments policies](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cet article.|Évitez les retards de messages lors de la protection des destinataires contre les fichiers malveillants.|
+  |**Replace**|Supprime les pièces jointes de programmes malveillants détectées. <br/><br/> Avertit les destinataires que les pièces jointes ont été supprimées. <br/><br/>  Les messages contenant des pièces jointes malveillantes sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <br/><br/> La remise des messages sécurisés peut être retardée en raison de l’analyse des pièces jointes Coffre.|Augmentez la visibilité des destinataires que les pièces jointes ont été supprimées en raison d’un programme malveillant détecté.|
+  |**Remise dynamique**|Remet les messages immédiatement, mais remplace les pièces jointes par des espaces réservés jusqu’à ce que l’analyse des pièces jointes fiables soit terminée. <br/><br/> Les messages contenant des pièces jointes malveillantes sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <br/><br/> Pour plus d’informations, consultez la section [Dynamic Delivery dans Coffre attachments policies](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cet article.|Évitez les retards de message tout en protégeant les destinataires contre les fichiers malveillants.|
 
   <sup>\*</sup>Les administrateurs peuvent créer et affecter des _stratégies de quarantaine_ dans Coffre stratégies pièces jointes qui définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
@@ -85,6 +85,16 @@ Cette section décrit les paramètres des stratégies Coffre Pièces jointes :
 
   Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
+  > [!IMPORTANT]
+  > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  >
+  > - Le destinataire est : romain@contoso.com
+  > - Le destinataire est membre de : Executives
+  >
+  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  >
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
+
 - **Priorité** : si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
   Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
@@ -98,7 +108,7 @@ L’action de remise dynamique dans les stratégies de Coffre pièces jointes vi
 
 Si une pièce jointe est jugée malveillante, le message est mis en quarantaine.
 
-La plupart des fichiers PDF et des documents Office peuvent être aperçus en mode sans échec pendant Coffre l’analyse des pièces jointes est en cours. Si une pièce jointe n’est pas compatible avec l’aperçu de remise dynamique, les destinataires voient un espace réservé pour la pièce jointe jusqu’à ce que Coffre l’analyse des pièces jointes soit terminée.
+La plupart des fichiers PDF et des documents Office peuvent être affichés en mode sans échec pendant que l’analyse des pièces jointes fiables est en cours. Si une pièce jointe n’est pas compatible avec l’aperçu de remise dynamique, les destinataires voient un espace réservé pour la pièce jointe jusqu’à ce que Coffre l’analyse des pièces jointes soit terminée.
 
 Si vous utilisez un appareil mobile et que les fichiers PDF ne sont pas affichés dans l’aperçu de la livraison dynamique sur votre appareil mobile, essayez d’ouvrir le message dans Outlook sur le web (anciennement Outlook Web App) à l’aide de votre navigateur mobile.
 

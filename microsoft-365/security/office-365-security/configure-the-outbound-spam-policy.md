@@ -19,16 +19,16 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847449"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115826"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -103,9 +103,9 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
 4. Dans la page **Utilisateurs, groupes et domaines** qui s’affiche, identifiez les expéditeurs internes auxquels la stratégie s’applique (conditions de destinataire) :
    - **Utilisateurs** : boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie spécifiés.
-   - **Groupes** :
-     - Membres des groupes de distribution spécifiés ou des groupes de sécurité à extension messagerie.
-     - Groupes Microsoft 365 spécifiée.
+   - **Groupes** :
+     - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+     - Groupes Microsoft 365 spécifiée
    - **Domaines** : tous les expéditeurs dans les [domaines acceptés spécifiés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans votre organisation.
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
@@ -115,6 +115,16 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
    Plusieurs valeurs dans la même condition utilisent la logique OU (par exemple, _\<sender1\>_ ou _\<sender2\>_). Des conditions différentes utilisent la logique ET (par exemple, _\<sender1\>_ et _\<member of group 1\>_).
 
    - **Exclure ces utilisateurs, groupes et domaines** : pour ajouter des exceptions pour les expéditeurs internes auxquels la stratégie s’applique (exceptions de destinataire), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
+
+   > [!IMPORTANT]
+   > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   >
+   > - Le destinataire est : romain@contoso.com
+   > - Le destinataire est membre de : Executives
+   >
+   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+   >
+   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -496,7 +506,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-[Supprimer les utilisateurs bloqués du portail des utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md)
+[Supprimer les utilisateurs bloqués du portail Utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 

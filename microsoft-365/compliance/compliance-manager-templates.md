@@ -1,5 +1,5 @@
 ---
-title: Utilisation de modèles d’évaluation dans le Gestionnaire de conformité Microsoft Purview
+title: En savoir plus sur les modèles d’évaluation dans Microsoft Purview Gestionnaire de conformité
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment utiliser et gérer des modèles pour générer des évaluations dans le Gestionnaire de conformité Microsoft Purview. Créez et modifiez des modèles à l’aide d’un fichier Excel mis en forme.
-ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: Découvrez comment utiliser et gérer des modèles pour générer des évaluations dans Microsoft Purview Gestionnaire de conformité. Créez et modifiez des modèles à l’aide d’un fichier Excel mis en forme.
+ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972780"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116002"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>En savoir plus sur les modèles d’évaluation dans le Gestionnaire de conformité
 
@@ -36,13 +36,16 @@ ms.locfileid: "64972780"
 
 ## <a name="templates-overview"></a>Vue d’ensemble des modèles
 
-Un modèle est un framework de contrôles permettant de créer une évaluation dans le Gestionnaire de conformité. Notre ensemble complet de modèles peut aider votre organisation à se conformer aux exigences nationales, régionales et sectorielles régissant la collecte et l’utilisation des données.
+Un modèle est un framework de contrôles permettant de créer une évaluation dans le Gestionnaire de conformité. Notre ensemble complet de modèles peut aider votre organisation à se conformer aux exigences nationales, régionales et sectorielles régissant la collecte et l’utilisation des données. Nous faisons référence à des modèles du même nom que leur certification ou réglementation sous-jacente, comme le modèle RGPD de l’UE et le modèle ISO/CEI 27701:2019.
 
 ## <a name="template-versions-microsoft-and-universal"></a>Versions de modèle : Microsoft et universel
 
-Nous faisons référence à des modèles du même nom que leur certification ou réglementation sous-jacente, comme le modèle RGPD de l’UE et le modèle ISO/CEI 27701:2019.
+Le Gestionnaire de conformité peut être utilisé pour évaluer différents types de produits. Tous les modèles, à l’exception du modèle par défaut [Base de référence de la protection des données Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment) , sont disponibles en deux versions :
 
-Le Gestionnaire de conformité peut être utilisé pour évaluer différents types de produits. Tous les modèles en dehors de la base de référence sont fournis dans au moins une version qui s’applique à un produit prédéfini, tel que Microsoft 365, et une version universelle qui peut être adaptée à d’autres produits. Les évaluations à partir de modèles universels sont plus généralisées, mais offrent une polyvalence accrue, car elles peuvent vous aider à suivre facilement la conformité de votre organisation sur plusieurs produits.
+1. Version qui s’applique à un produit prédéfini, tel que Microsoft 365 et
+2. Version universelle qui peut être adaptée à d’autres produits.
+
+Les évaluations à partir de modèles universels sont plus généralisées, mais offrent une polyvalence accrue, car elles peuvent vous aider à suivre facilement la conformité de votre organisation sur plusieurs produits.
 
 Notez que les clients us government Community (Cloud de la communauté du secteur public) Moderate, Cloud de la communauté du secteur public High et Department of Defense (DoD) ne peuvent actuellement pas utiliser de modèles universels.
 

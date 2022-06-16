@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment commencer à utiliser eDiscovery (Standard) dans Microsoft Purview. Après avoir affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des conservations eDiscovery, puis rechercher et exporter du contenu pertinent pour votre enquête.
-ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078477"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115870"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Démarrage avec eDiscovery (Standard) dans Microsoft Purview
 
@@ -41,6 +41,10 @@ La gestion des licences pour eDiscovery (Standard) nécessite l’abonnement de 
 
 - **Licences par utilisateur :** Pour placer une conservation eDiscovery sur les boîtes aux lettres et les sites, les utilisateurs doivent se voir attribuer l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
 
+  -  Exchange licence Plan 2 en ligne
+
+   OR
+   
   - Une licence Microsoft 365 E3 ou Office 365 E3 ou ultérieure
 
    OR

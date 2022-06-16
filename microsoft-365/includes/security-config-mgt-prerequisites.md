@@ -4,12 +4,12 @@ description: fichier descriptif
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 31008df3e43c99f3a97dad3dce037b96e3b0c4b5
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/15/2022
-ms.locfileid: "66091433"
+ms.locfileid: "66116225"
 ---
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -33,7 +33,7 @@ Lorsqu’un appareil joint à un domaine crée une approbation avec Azure Active
 - Azure Active Directory Connecter (AAD Connecter) doit être synchronisé avec le locataire utilisé à partir de Microsoft Defender pour point de terminaison
 - La jonction Azure Active Directory hybride doit être configurée dans votre environnement (via la fédération ou AAD Connecter Sync)
 - AAD Connecter Sync doit inclure les objets d’appareil *dans l’étendue* pour la synchronisation avec Azure Active Directory (si nécessaire pour la jointure)
-- Les règles de Connecter AAD pour la synchronisation doivent être modifiées pour Server 2012 R2 (lorsque la prise en charge de Server 2012 R2 est nécessaire)
+- Les règles de Connecter AAD pour la synchronisation [doivent être modifiées pour Server 2012 R2](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect) (lorsque la prise en charge de Server 2012 R2 est nécessaire)
 - Tous les appareils doivent s’inscrire dans le Azure Active Directory du locataire qui héberge Microsoft Defender pour point de terminaison. Les scénarios interlocataires ne sont pas pris en charge. 
 
 ### <a name="connectivity-requirements"></a>Prérequis en matière de connectivité

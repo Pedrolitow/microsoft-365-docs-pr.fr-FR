@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089108"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116033"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
 
@@ -394,3 +394,7 @@ Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un me
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Nouvelles options sur le bouton Action" lightbox="../../media/admin-submission-main-action-button.png":::
+
+Si le message est signalé à Microsoft, la valeur **de soumission convertie en administrateur** passe de **non** à **oui**. Vous pouvez accéder directement à la soumission de l’administrateur en cliquant sur **Afficher la soumission administrateur convertie** à partir du menu de dépassement dans le menu volant de soumission du message signalé par l’utilisateur concerné.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option permettant d’afficher une soumission d’administrateur créée à partir d’un message signalé par l’utilisateur.":::

@@ -17,16 +17,16 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438880"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115892"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -48,9 +48,9 @@ Les principales différences entre les stratégies anti-hameçonnage dans EOP et
 |---|:---:|:---:|
 |Stratégie par défaut créée automatiquement|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Créer des stratégies d'accès externe personnalisées|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Paramètres de stratégie courants<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Paramètres d’usurpation d’identité|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Premier contact conseil de sécurité|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Paramètres de stratégie courants<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Paramètres d’usurpation d’identité|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Premier contact conseil de sécurité|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
 |Paramètres d’emprunt d’identité||![Coche](../../media/checkmark.png)|
 |Seuils d’hameçonnage avancés||![Coche](../../media/checkmark.png)|
 
@@ -86,6 +86,15 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies ant
 
   > [!NOTE]
   > Au moins une sélection dans les **paramètres Utilisateurs, groupes et domaines** est requise dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires du** message <u>auxquels la stratégie s’applique</u>. Les stratégies anti-hameçonnage dans Defender pour Office 365 ont également [des paramètres d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans lesquels vous pouvez spécifier des adresses e-mail d’expéditeur individuel ou des domaines d’expéditeur <u>qui recevront une protection contre l’emprunt d’identité</u>, comme décrit plus loin dans cet article.
+  >
+  > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  >
+  > - Le destinataire est : romain@contoso.com
+  > - Le destinataire est membre de : Executives
+  >
+  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  >
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation d’identité
 

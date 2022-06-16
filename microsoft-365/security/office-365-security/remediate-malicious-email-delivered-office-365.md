@@ -14,16 +14,16 @@ search.appverid: MET150
 description: Correction des menaces
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d584ce10f4e119ec4fe8aa2991c6cac0edd5377c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 6102d1e7d3b7e39787c3787b8bc0851eedbdcefb
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621906"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115540"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les courriers malveillants remis dans Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
@@ -36,6 +36,8 @@ La correction consiste à prendre une mesure prescrite contre une menace. Les e-
 ## <a name="what-you-need-to-know-before-you-begin"></a>Ce que vous devez savoir avant de commencer
 
 Les administrateurs peuvent prendre les mesures nécessaires sur les e-mails, mais pour que ces actions soient approuvées, le rôle *De recherche et de vidage* doit leur être attribué dans les autorisations **e-mail & collaboration** dans le portail Microsoft 365 Defender. Sans le rôle *Rechercher et vider ajouté* à l’un des groupes de rôles, ils ne pourront pas exécuter l’action.
+
+Étant donné que les actions de messagerie créent des investigations automatisées dans le serveur principal, vous devez activer *l’investigation automatisée*. Accédez à **Paramètres** \> **Fonctionnalités avancées des points de** \> terminaison et activez **l’investigation automatisée**.
 
 ## <a name="manual-and-automated-remediation"></a>Correction manuelle et automatisée
 
@@ -55,7 +57,7 @@ Une fois les e-mails sélectionnés par le biais de l’Explorateur, vous pouvez
 
 - Approbation directe : lorsque des actions telles que *le déplacement vers la boîte de réception*, *le déplacement vers le courrier indésirable*, le *déplacement vers des éléments supprimés*, la *suppression réversible* ou la *suppression définitive* sont sélectionnées par le personnel de sécurité disposant des autorisations appropriées, et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée.
 > [!NOTE]
-> Lorsque la correction est lancée, elle génère une alerte et une enquête en parallèle. L’alerte s’affiche dans la file d’attente des alertes avec le nom « Action administrative soumise par un administrateur », ce qui indique que le personnel de sécurité a pris l’action de corriger une entité. Il présente des détails tels que le nom de la personne qui a effectué l’action, la prise en charge du lien d’investigation, l’heure, etc. Il fonctionne vraiment bien de savoir chaque fois qu’une action dure comme la correction est effectuée sur les entités. Toutes ces actions peuvent être suivies sous l’onglet **Actions & Submissions** \> **Action** **centerHistory**  ->  (préversion publique).
+> Lorsque la correction est lancée, elle génère une alerte et une enquête en parallèle. L’alerte s’affiche dans la file d’attente des alertes avec le nom « Action administrative soumise par un administrateur », ce qui indique que le personnel de sécurité a pris l’action de corriger une entité. Il présente des détails tels que le nom de la personne qui a effectué l’action, la prise en charge du lien d’investigation, l’heure, etc. Il fonctionne vraiment bien de savoir chaque fois qu’une action dure comme la correction est effectuée sur les entités. Toutes ces actions peuvent être suivies sous **l’onglet** Historique du **centre**  ->  **d’actions Actions & soumissions** \> (préversion publique).
 
 - Approbation en deux étapes : une action « Ajouter à la correction » peut être effectuée par des administrateurs qui ne disposent pas des autorisations appropriées ou qui doivent attendre pour exécuter l’action. Dans ce cas, les e-mails ciblés sont ajoutés à un conteneur de correction. L’approbation est nécessaire avant l’exécution de la correction.
 
@@ -64,9 +66,9 @@ Une fois les e-mails sélectionnés par le biais de l’Explorateur, vous pouvez
 > [!div class="mx-imgBorder"]
 > [![Courrier avec un programme malveillant dans la page « Zapped » montrant l’heure d’exécution de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Toutes les corrections (approbations directes) créées dans l’Explorateur, la chasse avancée ou par le biais d’une investigation automatisée sont affichées dans le Centre d’actions. Accédez-y via le panneau de navigation gauche sous **l’onglet Actions & Submissions** \> **Action** **centerHistory**  -> .
+Toutes les corrections (approbations directes) créées dans l’Explorateur, la chasse avancée ou par le biais d’une investigation automatisée sont affichées dans le Centre d’actions. Accédez-y via le panneau de navigation gauche sous **l’onglet Historique du centre d’actions Actions & Soumissions**\>.  -> 
 
-Toutes les corrections (approbations directes) qui ont été créées dans l’Explorateur ou la chasse avancée ou par le biais d’une investigation automatisée sont affichées dans le Centre d’actions. Accédez-y via le panneau de navigation gauche sous **l’onglet Actions & Submissions** \> **Action** **centerHistory**  -> . 
+Toutes les corrections (approbations directes) qui ont été créées dans l’Explorateur ou la chasse avancée ou par le biais d’une investigation automatisée sont affichées dans le Centre d’actions. Accédez-y via le panneau de navigation gauche sous **l’onglet Historique du centre d’actions Actions & Soumissions**\>.  ->  
 
 Actions manuelles en attente d’approbation à l’aide du processus d’approbation en deux étapes (1. ajouter à la correction par un membre de l’équipe d’opération de sécurité, 2. examinés et approuvés par un autre membre de l’équipe d’opération de sécurité) sont visibles uniquement dans le **centre** d’action Defender pour Office 365 centre d’action **hérité et** \> non dans les incidents/investigations et le Centre d’action unifiée.
 

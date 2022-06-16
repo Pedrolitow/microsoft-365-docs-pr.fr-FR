@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez Coffre protection des liens dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre Links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b1e013c77005c30872fc5355ae0b0e3f7cae67ca
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739890"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115804"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>liens Coffre dans Microsoft Defender pour Office 365
 
@@ -102,37 +102,37 @@ Le tableau suivant décrit les scénarios de Coffre Liens dans les organisations
 
 Liens fiables analysent le courrier électronique entrant pour les liens hypertexte malveillants connus. Les URL analysées sont réécrites à l’aide du préfixe d’URL standard Microsoft : `https://nam01.safelinks.protection.outlook.com`. Une fois le lien réécrit, il est analysé pour le contenu potentiellement malveillant.
 
-Une fois Coffre Links réécrit une URL, l’URL reste réécrite même si le message est transféré _manuellement_ ou répondu (à la fois aux destinataires internes et externes). Les liens supplémentaires ajoutés au message transféré ou répondu ne sont pas réécrits. Toutefois, dans le cas d’un transfert _automatique_ par des règles de boîte de réception ou un transfert SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final _, sauf si_ ce destinataire est également protégé par Coffre Liens, ou si l’URL a déjà été réécrite dans une communication précédente. Tant que Coffre Liens est activé, les URL sont toujours analysées avant la remise, qu’elles aient été réécrites ou non. Les URL non compressées sont également vérifiées par un appel d’API côté client à Coffre Liens au moment du clic dans Outlook pour Desktop version 16.0.12513 ou ultérieure.
+Une fois que les liens fiables ont réécrit une URL, celle-ci reste réécrite même si la réponse et le transfert du message sont _manuels_ (pour les destinataires internes et externes). Les liens supplémentaires ajoutés au message transféré ou répondu ne sont pas réécrits. Toutefois, dans le cas d’un transfert _automatique_ par des règles de boîte de réception ou un transfert SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final _, sauf si_ ce destinataire est également protégé par Coffre Liens, ou si l’URL a déjà été réécrite dans une communication précédente. Tant que les liens fiables sont activés, les URL sont toujours analysées avant la remise, qu’elles aient été réécrites ou non. Les URL non compressées sont également vérifiées par un appel d’API côté client à Coffre Liens au moment du clic dans Outlook pour Desktop version 16.0.12513 ou ultérieure.
 
 Les paramètres des stratégies de Coffre Liens qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
 - **Activé : Coffre Liens vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans l’e-mail** : active ou désactive Coffre l’analyse des liens dans les messages électroniques. La valeur recommandée est sélectionnée (activée) et entraîne les actions suivantes :
-  - Coffre l’analyse des liens est activée dans Outlook (C2R) sur Windows.
+  - L’analyse des liens fiables est activée dans Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont routées via Coffre Protection des liens lorsqu’ils cliquent sur des URL dans les messages.
   - Lorsque vous cliquez dessus, les URL sont vérifiées par rapport à une liste d’URL malveillantes connues et à la [liste « Bloquer les URL suivantes](#block-the-following-urls-list-for-safe-links) ».
-  - Les URL qui n’ont pas de réputation valide sont détonées de façon asynchrone en arrière-plan.
+  - Les URL qui n'ont pas une réputation valide sont déclenchées de manière asynchrone en arrière-plan.
 
-  Les paramètres suivants sont disponibles uniquement si Coffre l’analyse des liens est activée dans les messages électroniques :
+  Les paramètres suivants sont disponibles uniquement si l’analyse des liens fiables est activée dans les messages électroniques :
 
   - **Appliquer Coffre Liens aux messages électroniques envoyés au sein de l’organisation** : active ou désactive Coffre l’analyse des liens sur les messages envoyés entre les expéditeurs internes et les destinataires internes au sein de la même organisation Exchange Online. La valeur recommandée est sélectionnée (activée).
 
   - **Appliquer une analyse en temps réel des URL pour détecter les liens suspects et les liens qui pointent vers des fichiers** : Permet d'analyser en temps réel les liens, y compris les liens dans les messages électroniques qui pointent vers du contenu téléchargeable. La valeur recommandée est sélectionnée (activée).
 
-  - **Attendez que l’analyse d’URL se termine avant de remettre le message** :
+  - **Attendez la fin de l’analyse des URL avant de remettre le message** :
     - Sélectionné (activé) : les messages qui contiennent des URL sont conservés jusqu’à ce que l’analyse soit terminée. Les messages ne sont remis qu’une fois que les URL sont confirmées comme sûres. Il s’agit de la valeur recommandée.
     - Non sélectionné (désactivé) : si l’analyse d’URL ne peut pas se terminer, remettre le message de toute façon.
 
   - **Ne réécrivez pas d’URL, effectuez des vérifications via l’API SafeLinks uniquement** : si ce paramètre est activé, aucun habillage d’URL n’a lieu. Coffre Liens est appelé exclusivement par le biais d’API au moment du clic d’URL par Outlook clients qui la prennent en charge. La valeur recommandée est désactivée.
 
-- **Suivre les clics de l’utilisateur** : active ou désactive le stockage Coffre Les liens cliquent sur les données pour les URL cliqués dans les messages électroniques. La valeur recommandée est de laisser ce paramètre sélectionné (suivre les clics de l’utilisateur).
+- **Suivre les clics de l’utilisateur** : active ou désactive le stockage Coffre Les liens cliquent sur les données pour les URL cliqués dans les messages électroniques. La valeur recommandée consiste à laisser ce paramètre sélectionné (suivre les clics de l’utilisateur).
 
   Le suivi des clics d’URL pour les liens dans les messages électroniques envoyés entre des expéditeurs internes et des destinataires internes n’est actuellement pas pris en charge.
 
 - **Permettre aux utilisateurs de cliquer sur l’URL d’origine** : autorise ou empêche les utilisateurs de cliquer sur la [page d’avertissement](#warning-pages-from-safe-links) vers l’URL d’origine. La valeur recommandée est désactivée.
 
-- **Afficher la personnalisation de l’organisation sur les pages de notification et d’avertissement** : cette option affiche la personnalisation de votre organisation sur les pages d’avertissement. La personnalisation permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation de la marque, consultez [Personnaliser le thème Microsoft 365 pour votre organisation](../../admin/setup/customize-your-organization-theme.md).
+- **Afficher la personnalisation de l’organisation sur les pages de notification et d’avertissement** : cette option affiche la personnalisation de votre organisation sur les pages d’avertissement. La personnalisation permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation de la personnalisation, consultez [Personnaliser le thème Microsoft 365 pour votre organisation](../../admin/setup/customize-your-organization-theme.md).
 
-  Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict pour les stratégies de Coffre Liens, consultez [Coffre Paramètres de stratégie Liens](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+  Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Stricte pour les politiques Safe Links, consultez [Paramètres des stratégie de liens fiables](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Filtres de destinataires** : vous devez spécifier les conditions de destinataire et les exceptions qui déterminent à qui la stratégie s’applique. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
   - **Le destinataire est**
@@ -140,6 +140,16 @@ Les paramètres des stratégies de Coffre Liens qui s’appliquent aux messages 
   - **Le destinataire est membre de**
 
   Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  >
+  > - Le destinataire est : romain@contoso.com
+  > - Le destinataire est membre de : Executives
+  >
+  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  >
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
 
 - **Priorité** : si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
