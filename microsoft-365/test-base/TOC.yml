@@ -6,7 +6,7 @@
       href: overview.md
 - name: Démarrages rapides
   items:
-    - name: Créer un compte Base de test
+    - name: Création d’un compte de base de test
       href: createaccount.md
     - name: Tester votre application sur Test Base
       items:
@@ -28,7 +28,7 @@
       href: usagecost.md
     - name: Règles d’application/test
       href: rules.md
-- name: Guides des pratiques
+- name: Guides pratiques
   items:
     - name: Test d’application serveur
       href: server.md
@@ -40,6 +40,8 @@
       href: memory.md
     - name: Analyse de la régression de l’UC
       href: cpu.md
+    - name: Demande de modification du niveau d’accès
+      href: accesslevel.md
     - name: API & du Kit de développement logiciel (SDK)
       href: sdkapi.md
 - name: Référence

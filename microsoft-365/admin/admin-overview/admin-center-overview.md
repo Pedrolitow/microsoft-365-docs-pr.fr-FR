@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436138"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129028"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -171,7 +171,7 @@ Pour plus d’informations, consultez [Essayer ou acheter un abonnement Microsof
 
 Nous voulons connaître votre avis ! Le signalement de bogues et le partage de commentaires nous aident à améliorer la Centre d’administration Microsoft 365. Pour envoyer des commentaires, sélectionnez le bouton **Commentaires** en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse e-mail si vous souhaitez qu’une personne de l’équipe Centre d’administration Microsoft 365 effectue le suivi de vos commentaires. Nous ne pouvons pas nous engager à effectuer le suivi de chaque commentaire, mais nous allons essayer !
 
-Vous pouvez également envoyer des commentaires en dehors du centre d’administration sur notre forum UserVoice. Vous pouvez utiliser cette page pour faire des suggestions de fonctionnalités qui peuvent être adoptées par d’autres utilisateurs du forum : [Forum UserVoice pour le nouveau centre d’administration](https://go.microsoft.com/fwlink/?linkid=2024994).
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Qu’en est-il des types spécifiques de rôles informatiques et d’autres espaces de travail tels que Sécurité, Gestion des appareils ou Exchange ?
 

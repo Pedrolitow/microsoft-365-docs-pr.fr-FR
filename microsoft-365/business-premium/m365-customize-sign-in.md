@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personnalisez votre page de connexion avec un avis de confidentialité et de consentement pour Microsoft 365.
-ms.openlocfilehash: fb56a6de2b916f9b9699e0963f9f1cd1bd8bba16
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 34aff0437b08bc5cb34064b5b7ed474e9b2cf094
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893282"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129006"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de connexion avec un avis de confidentialité et de consentement
 
@@ -46,7 +46,7 @@ Les éléments que vous pouvez mettre à jour sont :
 - Logo de la bannière
 - Indication du nom d'utilisateur
 
-Pour des exemples d'avis de confidentialité et de consentement, voir l'annexe A du document [Recherche et saisie d'ordinateurs et obtention de preuves électroniques dans le cadre d'enquêtes criminelles](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+Pour des exemples d'avis de confidentialité et de consentement, voir l'annexe A du document [Recherche et saisie d'ordinateurs et obtention de preuves électroniques dans le cadre d'enquêtes criminelles](https://www.justice.gov/file/442111/download).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

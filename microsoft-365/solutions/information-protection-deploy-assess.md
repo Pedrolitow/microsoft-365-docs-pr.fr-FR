@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015035"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129050"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -210,13 +210,13 @@ Pour plus d’informations, consultez ces articles :
 
 - [Personnaliser un type d’informations sensibles intégré](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [En savoir plus sur les types d’informations confidentielles](../compliance/sensitive-information-type-learn-about.md).
-- [Créer un type d’informations sensibles personnalisé dans le portail de conformité Microsoft 365 Purview](../compliance/create-a-custom-sensitive-information-type.md)
-- [Créer un type d’informations sensibles personnalisé dans Security & Compliance PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](../compliance/create-a-custom-sensitive-information-type.md)
+- [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 
-Un outil important qui permet de déterminer l’occurrence d’éléments sensibles dans votre environnement est le nouvel [Explorateur de contenu](../compliance/data-classification-content-explorer.md) dans le Centre d’administration Microsoft Purview. Il s’agit d’un outil automatisé pour l’analyse initiale et continue de l’ensemble de votre abonnement Microsoft 365 pour l’occurrence de types d’informations sensibles et l’affichage des résultats.
+Un outil important qui permet de déterminer l’occurrence d’éléments sensibles dans votre environnement est le nouvel [Explorateur de contenu](../compliance/data-classification-content-explorer.md) dans le centre d’administration Microsoft Purview. Il s’agit d’un outil automatisé pour l’analyse initiale et continue de l’ensemble de votre abonnement Microsoft 365 pour l’occurrence de types d’informations sensibles et l’affichage des résultats.
 
 Le nouvel outil Explorateur de contenu vous permet d’identifier rapidement les emplacements des éléments sensibles dans votre environnement, à l’aide de types d’informations sensibles intégrés ou personnalisés. Cela peut impliquer l’établissement d’un processus et la responsabilité d’examiner régulièrement la présence et l’emplacement des éléments sensibles.
 

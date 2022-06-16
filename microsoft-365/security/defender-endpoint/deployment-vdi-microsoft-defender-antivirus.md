@@ -14,16 +14,16 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f788c72c9b437dba7528c59adedb3ced21539ada
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872311"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129116"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
@@ -31,13 +31,10 @@ ms.locfileid: "65872311"
 **Plateformes**
 - Windows
 
-En plus des configurations locales ou matérielles standard, vous pouvez également utiliser Antivirus Microsoft Defender dans un environnement de bureau à distance (RDS) ou d’infrastructure de bureau virtuel (VDI) non persistant.
+En plus des configurations locales ou matérielles standard, vous pouvez utiliser Antivirus Microsoft Defender dans un environnement de bureau à distance (RDS) ou d’infrastructure de bureau virtuel (VDI) non persistant. Avec la possibilité de déployer facilement des mises à jour sur des machines virtuelles s’exécutant dans des VM, vous pouvez obtenir des mises à jour sur vos machines rapidement et facilement. Vous n’avez plus besoin de créer et de sceller régulièrement des images d’or, car les mises à jour sont développées dans leurs bits de composant sur le serveur hôte, puis téléchargées directement sur la machine virtuelle lorsqu’elle est activée.
 
-Pour plus d’informations sur Bureau à distance Microsoft services et la prise en charge de VDI, consultez [la documentation Azure Virtual Desktop](/azure/virtual-desktop).
-
-Pour les machines virtuelles basées sur Azure, consultez [Installer Endpoint Protection dans Microsoft Defender pour le cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
-
-Avec la possibilité de déployer facilement des mises à jour sur des machines virtuelles s’exécutant dans des VM, nous avons raccourci ce guide pour vous concentrer sur la façon dont vous pouvez obtenir des mises à jour sur vos machines rapidement et facilement. Vous n’avez plus besoin de créer et de sceller régulièrement des images d’or, car les mises à jour sont développées dans leurs bits de composant sur le serveur hôte, puis téléchargées directement sur la machine virtuelle lorsqu’elle est activée.
+> [!NOTE]
+> Le site `demo.wd.microsoft.com` de démonstration Defender pour point de terminaison est déconseillé et sera supprimé à l’avenir.
 
 Ce guide explique comment configurer vos machines virtuelles pour une protection et des performances optimales, notamment comment :
 
@@ -51,12 +48,12 @@ Ce guide explique comment configurer vos machines virtuelles pour une protection
 
 Vous pouvez également télécharger le [livre blanc Antivirus Microsoft Defender sur l’infrastructure Virtual Desktop](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), qui examine la nouvelle fonctionnalité de mise à jour du renseignement de sécurité partagé, ainsi que les tests de performances et des conseils sur la façon dont vous pouvez tester les performances des antivirus sur votre propre VDI.
 
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
+Pour plus d’informations sur Bureau à distance Microsoft services et la prise en charge de VDI, consultez [la documentation Azure Virtual Desktop](/azure/virtual-desktop).
+
+Pour les machines virtuelles basées sur Azure, consultez [Installer Endpoint Protection dans Microsoft Defender pour le cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > Bien que l’infrastructure VDI puisse être hébergée sur Windows Server 2012 ou Windows Server 2016, les machines virtuelles doivent exécuter Windows 10, 1607 au minimum, en raison de l’augmentation des technologies de protection et des fonctionnalités qui ne sont pas disponibles dans les versions antérieures de Windows.
->
 > Il existe des améliorations des performances et des fonctionnalités dans la façon dont Microsoft Defender AV fonctionne sur les machines virtuelles dans Windows 10 Insider Preview, build 18323 (et versions ultérieures). Nous allons identifier dans ce guide si vous devez utiliser une build Insider Preview ; si elle n’est pas spécifiée, la version minimale requise pour une protection et des performances optimales est Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configurer un partage de fichiers VDI dédié
@@ -114,9 +111,8 @@ Nous vous suggérons de commencer par une fois par jour, mais vous devez essayer
 Les packages de renseignement de sécurité sont généralement publiés toutes les trois à quatre heures. La définition d’une fréquence inférieure à quatre heures n’est pas recommandée, car elle augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
 
 Vous pouvez également configurer votre serveur ou ordinateur unique pour récupérer les mises à jour pour le compte des machines virtuelles à un intervalle et les placer dans le partage de fichiers à des fins de consommation.
-Cela est possible lorsque les appareils disposent des autorisations de partage et NTFS pour l’accès en lecture au partage afin qu’ils puissent récupérer les mises à jour.
+Cela est possible lorsque les appareils disposent des autorisations de partage et NTFS pour l’accès en lecture au partage afin qu’ils puissent récupérer les mises à jour. Pour cela :
 
-Pour cela :
  1. Créez un partage de fichiers SMB/CIFS. 
  
  2. Utilisez l’exemple suivant pour créer un partage de fichiers avec les autorisations de partage suivantes.
@@ -134,7 +130,7 @@ Pour cela :
 
     Pour cet exemple, le partage de fichiers est le suivant :
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Définir une tâche planifiée pour exécuter le script PowerShell
 
@@ -208,7 +204,6 @@ La suppression des notifications empêche les notifications de Antivirus Microso
 
 > [!TIP]
 > Pour ouvrir le Centre d’actions sur Windows 10 ou Windows 11, effectuez l’une des étapes suivantes :
->
 > - À l’extrémité droite de la barre des tâches, sélectionnez l’icône Centre d’actions.
 > - Appuyez sur le bouton Windows touche de logo + A.
 > - Sur un appareil à écran tactile, balayez à partir du bord droit de l’écran.
@@ -231,6 +226,18 @@ La désactivation d’une analyse après une mise à jour empêche l’analyse d
 5. Déployez votre objet de stratégie de groupe comme vous le faites habituellement.
 
 Cette stratégie empêche l’exécution d’une analyse immédiatement après une mise à jour.
+
+## <a name="disable-the-scanonlyifidle-option"></a>Désactiver l’option `ScanOnlyIfIdle`
+
+Utilisez l’applet de commande suivante pour arrêter une analyse rapide ou planifiée chaque fois que l’appareil est inactif s’il est en mode passif.
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+Vous pouvez également désactiver l’option `ScanOnlyIfIdle` dans Antivirus Microsoft Defender par configuration via une stratégie de groupe de domaine ou locale. Cela empêche la contention importante de l’UC dans les environnements à haute densité.
+
+Pour plus d’informations, consultez [Démarrer l’analyse planifiée uniquement lorsque l’ordinateur est activé, mais qu’il n’est pas utilisé](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## <a name="scan-vms-that-have-been-offline"></a>Analyser les machines virtuelles qui ont été hors connexion
 

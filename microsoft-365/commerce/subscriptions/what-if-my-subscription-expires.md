@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 09/16/2021
-ms.openlocfilehash: a96ef700c522577e8d22f734ea6a8a94b410d83a
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102303"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128698"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
@@ -55,7 +55,7 @@ Le tableau suivant explique ce à quoi vous pouvez vous attendre à l'expiration
   
 > [!NOTE]
 >
-> **Qu'est-ce que les « données client » ?** Les données client, comme définies dans les [Conditions d'utilisation du service en ligne Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), font référence à toutes les données, y compris les fichiers texte, audio et image qui sont fournis à Microsoft par le client, ou pour le compte du client, au cours de l'utilisation des services Microsoft 365 par le client. Pour en savoir plus sur la protection des données client, voir le [Prise en main du Portail d’approbation de services Microsoft](../../compliance/get-started-with-service-trust-portal.md).
+> **Qu'est-ce que les « données client » ?** Les données client, comme définies dans les [Conditions d'utilisation du service en ligne Microsoft](https://www.microsoft.com/en-us/licensing/product-licensing/products), font référence à toutes les données, y compris les fichiers texte, audio et image qui sont fournis à Microsoft par le client, ou pour le compte du client, au cours de l'utilisation des services Microsoft 365 par le client. Pour en savoir plus sur la protection des données client, voir le [Prise en main du Portail d’approbation de services Microsoft](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Que se passe-t-il si j’annule un abonnement ?
 

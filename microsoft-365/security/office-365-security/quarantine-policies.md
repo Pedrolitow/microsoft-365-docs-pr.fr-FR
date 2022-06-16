@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115672"
+ms.locfileid: "66128852"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -213,6 +213,9 @@ Les stratégies de quarantaine par défaut, les groupes d’autorisations préd�
 
 ## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>Affecter des stratégies de quarantaine dans les stratégies prises en charge dans le portail Microsoft 365 Defender
 
+> [!NOTE]
+> Les utilisateurs ne peuvent pas publier leurs propres messages qui ont été mis en quarantaine en tant que programmes malveillants (stratégies anti-programmes malveillants) ou hameçonnage à haut niveau de confiance (stratégies anti-courrier indésirable), quelle que soit la façon dont la stratégie de mise en quarantaine est configurée. Au mieux, les administrateurs peuvent configurer la stratégie de quarantaine afin que les utilisateurs puissent demander la publication de leurs programmes malveillants mis en quarantaine ou des messages de hameçonnage à haut niveau de confiance.
+
 ### <a name="anti-spam-policies"></a>Stratégies anti-courrier indésirable
 
 1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à  Stratégies de **collaboration** \> & par e-mail **& règles** \> \> **anti-courrier indésirable** dans la section **Stratégies**.
@@ -326,7 +329,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de quaranta
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les paramètres _Enable\*_ sont nécessaires pour activer les fonctionnalités de protection spécifiques. La valeur par défaut des paramètres _EnableMailboxIntelligence_ et _EnableSpoofIntelligence_ est $true. Vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez de nouvelles stratégies anti-hameçonnage dans PowerShell. Tous les autres paramètres _Enable\*_ doivent avoir la valeur $true afin que vous puissiez définir la valeur Quarantaine dans les paramètres Action correspondants _\*_ pour affecter ensuite une stratégie de quarantaine. Aucun des paramètres _*\Action_ n’a la valeur par défaut Quarantaine.
 
@@ -391,7 +394,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de quaranta
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Lorsque vous créez des stratégies anti-programme malveillant sans utiliser le paramètre QuarantineTag lorsque vous créez une stratégie anti-programme malveillant, la stratégie de quarantaine par défaut pour les détections de programmes malveillants est utilisée (AdminOnlyAccessPolicy).
 
@@ -451,7 +454,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de quaranta
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les valeurs de paramètre _Action_ Block, Replace ou DynamicDelivery peuvent entraîner la mise en quarantaine des messages (la valeur Allow ne met pas en quarantaine les messages). La valeur du paramètre _Action_ est significative uniquement lorsque la valeur du paramètre _Enable_ est `$true`.
 
