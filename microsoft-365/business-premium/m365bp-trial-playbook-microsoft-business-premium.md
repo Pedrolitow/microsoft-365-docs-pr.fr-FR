@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: ba9d7764734ccf47d412b6f95864da737d09251d
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 740d0b394148a84434c13fd4a3fcd38e8c617c03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893483"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089775"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
 
@@ -27,7 +27,7 @@ Bienvenue dans le guide opérationnel d’évaluation Microsoft Business Premium
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configurer la version d’évaluation Microsoft 365 Business Premium
 
-Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), la première étape consiste à tout configurer. 
+Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), la première étape consiste à tout configurer.
 
 > [!Tip]
 > Lorsque des liens dans le guide opérationnel vous éloignent de cet emplacement, revenez simplement à ce guide opérationnel pour continuer.
@@ -64,13 +64,13 @@ Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, 
 
 ## <a name="onboard-and-protect-devices"></a>Intégrer et protéger des appareils
 
-1. Visitez le portail Defender sur security.microsoft.com.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
 2. Exécutez l’[Assistant Installation](../security/defender-business/mdb-use-wizard.md).
 
-3. À présent, [intégrer des appareils](../security/defender-business/mdb-onboard-devices.md).
+3. [Intégration des appareils](../security/defender-business/mdb-onboard-devices.md).
 
-4. Ensuite, [passez en revue les stratégies de sécurité](../security/defender-business/mdb-configure-security-settings.md).
+4. [Évaluer vos stratégies de sécurité](../security/defender-business/mdb-configure-security-settings.md).
 
 ## <a name="use-office-apps-on-devices"></a>Utiliser les applications Office sur les appareils
 
