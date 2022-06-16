@@ -21,12 +21,12 @@ description: Utilisez le portail de conformité Microsoft Purview pour recherche
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014275"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078499"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Rechercher dans le journal d’audit dans le portail de conformité Microsoft Purview
 
@@ -68,6 +68,7 @@ Pourquoi un journal d’audit unifié ? Vous pouvez rechercher dans le journal 
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
+| SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
 
 Pour plus d’informations sur les opérations auditées dans chacun des services répertoriés dans le tableau précédent, voir la section [Activités auditées](#audited-activities) dans cet article.
 
@@ -408,7 +409,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
         [Activités du portail des messages chiffrés](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        
+        [Activités SystemSync] (activités #systemsync)
     :::column-end:::
     :::column:::
         
@@ -447,7 +448,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage de toutes les versions du fichier|FileVersionsAllRecycled|L’utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage d’une version du fichier|FileVersionRecycled|L’utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la Corbeille du site.|
-|Fichier renommé|FileRenamed|Un utilisateur renomme un document sur un site.|
+|Fichier renommé|FileRenamed|L’utilisateur renomme un document.|
 |Fichier restauré|FileRestored|Un utilisateur restaure un document à partir de la Corbeille d’un site.|
 |Fichier téléchargé|FileUploaded|Un utilisateur charge un document vers un dossier sur un site.|
 |Page affichée|PageViewed|Un utilisateur affiche une page sur un site. Ceci n’inclut pas l’utilisation d’un navigateur web pour afficher les fichiers dans une bibliothèque de documents. Une fois qu'un utilisateur a consulté une page, l'événement PageViewed n'est plus enregistré pour le même utilisateur et pour la même page pendant les cinq minutes suivantes.|
@@ -1105,6 +1106,18 @@ Chaque entrée d’audit d’un message suivi contient les champs suivants :
 - OperationStatus : indique si l’opération indiquée a réussi ou échoué.
 - AttachmentName : nom de la pièce jointe.
 - OperationProperties : liste des propriétés facultatives, par exemple le nombre de codes secrets OTP envoyés ou l’objet du courrier.
+
+### <a name="systemsync-activities"></a>Activités SystemSync
+
+Le tableau suivant répertorie les activités de SystemSync enregistrées dans le journal d’audit Microsoft 365.
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Data Share créé|DataShareCreated|Lorsque l’exportation de données est créée par l’utilisateur.|
+|Data Share supprimé|DataShare Supprimé|Lorsque l’exportation de données est supprimée par l’utilisateur.|
+|Générer une copie des données Lake|GenerateCopyOfLakeData|Lorsque la copie de Lake Data est générée.|
+|Télécharger la copie des données Lake|DownloadCopyOfLakeData|Lorsque la copie de Lake Data est téléchargée.|
+
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
