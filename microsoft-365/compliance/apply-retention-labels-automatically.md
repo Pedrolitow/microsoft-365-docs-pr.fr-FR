@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b059a90c8a4f1406e8368cb399ca5de58b2538dd
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012877"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089857"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -326,6 +326,8 @@ Vous devrez créer des stratégies de rétention distinctes si vous souhaitez co
 À prendre en compte lors de l’application automatique d’étiquettes de rétention aux pièces jointes cloud :
 
 - Seules les pièces jointes cloud nouvellement partagées seront automatiquement étiquetées pour la rétention.
+
+- Lorsqu’un utilisateur est ajouté à une conversation Teams et qu’il a accès à l’historique complet de la conversation, cet historique peut inclure des pièces jointes cloud. S’ils ont été partagés dans les 48 heures suivant l’ajout de l’utilisateur à la conversation, les copies actuelles des pièces jointes cloud sont étiquetées automatiquement pour conservation. Les pièces jointes cloud partagées avant cette période ne sont pas prises en charge pour les utilisateurs nouvellement ajoutés.
 
 - Les pièces jointes cloud partagées en dehors Teams et Outlook ne sont pas pris en charge.
 

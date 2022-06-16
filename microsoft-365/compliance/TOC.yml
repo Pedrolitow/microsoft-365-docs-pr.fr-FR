@@ -1,6 +1,8 @@
-- name: Conformité De Microsoft Purview
+- name: Risque et risque Microsoft Purview solutions de conformité
   href: index.yml
-- name: Nouveautés de Microsoft Purview
+- name: En savoir plus sur les risques et solutions de conformité
+  href: purview-compliance.md
+- name: Nouveautés des risques et des risques solutions de conformité
   href: whats-new.md
 - name: Essais de conformité
   items:
@@ -1001,6 +1003,8 @@
           href: set-up-basic-audit.md
         - name: Effectuer une recherche dans le journal d’audit
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Auditer la nouvelle recherche
+          href: audit-new-search.md
         - name: 'Exporter, configurer et afficher des enregistrements du journal d’audit'
           href: export-view-audit-log-records.md
         - name: Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit

@@ -404,6 +404,8 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: Comment configurer des autorisations et des stratégies de quarantaine
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: Restez informé des modifications à venir apportées à Microsoft Defender pour Office 365 à l’aide du centre de messages
+          href: step-by-step-guides/stay-informed-with-message-center.md
         - name: Garantir que vous disposez toujours des contrôles de sécurité optimaux avec des stratégies de sécurité prédéfinies
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
         - name: 'Comment hiérarchiser, gérer, examiner et répondre aux incidents dans Microsoft 365 Defender'

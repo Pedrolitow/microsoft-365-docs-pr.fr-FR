@@ -24,20 +24,23 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la gestion des incidents de sécurité
-ms.openlocfilehash: 1572e9592cc0715ecd2dc95893e8eff9b0c1d724
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6ce5f8527874a150502e5c9b0b1a78b224e2fa78
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101729"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088943"
 ---
 # <a name="security-incident-management"></a>Gestion des incidents de sécurité
 
-Au fur et à mesure que des menaces sont détectées, des actions de correction entrent en jeu. En fonction de la menace particulière et de la façon dont vos paramètres de sécurité sont configurés, les actions sont effectuées automatiquement ou uniquement lors de l’approbation. 
+La sécurité de votre organisation nécessite une surveillance constante et, à mesure que des menaces sont détectées, des actions de correction entrent en jeu. En fonction de la menace particulière et de la configuration de vos paramètres de sécurité, les actions peuvent être effectuées automatiquement ou uniquement après approbation. Approbations doivent se produire régulièrement.
 
-Pour ce faire, utilisez la procédure suivante :
+Regardez une courte vidéo sur une réponse aux incidents classique.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zvew]
+
+Pour en savoir plus sur les réponses aux incidents, procédez comme suit :
 
 1. [Examinez les recommandations de sécurité](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
 1. [Examinez les actions de correction](m365bp-review-remediation-actions-devices.md).
-1. [Répondre à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md)
-
+1. [Répondez à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).
