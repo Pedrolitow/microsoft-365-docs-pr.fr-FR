@@ -1,5 +1,5 @@
 ---
-title: Démarrage avec le mode de résolution des problèmes dans Microsoft Defender pour point de terminaison (préversion)
+title: Démarrage avec le mode de résolution des problèmes dans Microsoft Defender pour point de terminaison
 description: Activez le mode de résolution des problèmes Microsoft Defender pour point de terminaison pour résoudre différents problèmes antivirus.
 keywords: antivirus, résolution des problèmes, mode de résolution des problèmes, protection contre les falsifications, compatibilité
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e89666b6172d7c63d6b7d83cc365d6aed9b6856b
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4525ab2e979a16381ba75d2bdb229fb73d394156
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044075"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139382"
 ---
-# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Démarrage avec le mode de résolution des problèmes dans Microsoft Defender pour point de terminaison (préversion)
+# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Démarrage avec le mode de résolution des problèmes dans Microsoft Defender pour point de terminaison 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +32,6 @@ ms.locfileid: "66044075"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 >Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
-
-> [!IMPORTANT]
-> Certaines informations concernent les produits préversion qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Microsoft Defender pour point de terminaison mode de résolution des problèmes vous permet de résoudre les problèmes liés aux différentes fonctionnalités de l’antivirus Microsoft Defender en les activant à partir de l’appareil et en testant différents scénarios, même s’ils sont contrôlés par la stratégie d’organisation. Le mode de résolution des problèmes est désactivé par défaut et vous oblige à l’activer pour un appareil (et/ou un groupe d’appareils) pendant une durée limitée. Notez qu’il s’agit exclusivement d’une fonctionnalité Enterprise et nécessite un accès Microsoft 365 Defender.
 
@@ -81,7 +78,7 @@ Microsoft Defender pour point de terminaison mode de résolution des problèmes 
 > [!NOTE]
 > Les modifications apportées à la gestion des stratégies sont appliquées à la machine lorsqu’elle est activement en mode de résolution des problèmes. Toutefois, les modifications n’entreront pas en vigueur tant que le mode de résolution des problèmes n’aura pas expiré. En outre, Antivirus Microsoft Defender mises à jour de la plateforme ne seront pas appliquées pendant le mode de résolution des problèmes. Les mises à jour de plateforme seront appliquées une fois le mode de résolution des problèmes terminé par une mise à jour Windows.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 - Appareil exécutant Windows 10 (version 19044.1618 ou ultérieure), Windows 11, Windows Server 2019 ou Windows Server 2022.
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Résumé : Comprendre pourquoi vous devez utiliser PowerShell pour gérer Microsoft 365, dans certains cas plus efficacement et dans d’autres cas par nécessité.'
-ms.openlocfilehash: 114b97ff27ae1b79e58589eb746a261f83dc422f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da00ffe3c492b3bac3da9f435ece89219b4113f
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097929"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139360"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Pourquoi utiliser PowerShell pour Microsoft 365
 
@@ -189,7 +189,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 ```
 
 > [!NOTE]
-> Pour exécuter cette commande, vous devez installer le [module PowerShell en ligne Skype Entreprise](https://www.microsoft.com/download/details.aspx?id=39366).
+> Pour exécuter cette commande, vous devez installer le [module PowerShell en ligne Skype Entreprise](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector).
 
 L’interprétation de cette commande PowerShell est la suivante :
 
@@ -238,7 +238,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!NOTE]
 > Cette commande nécessite l’installation du [module PowerShell SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-L’interprétation de cette commande PowerShell est la suivante : obtenez tous les sites SharePoint dans l’abonnement Microsoft 365 actuel (**Get-SPOSite**) et, pour chaque site, supprimez Ken Meyer de la liste des utilisateurs qui peuvent y accéder (**ForEach {Remove-SPOUser -Site $\_. URL -LoginName « kenmyer\@ litwareinc.com"}**).
+L’interprétation de cette commande PowerShell est la suivante : obtenez tous les sites SharePoint dans l’abonnement Microsoft 365 actuel (**Get-SPOSite**) et, pour chaque site, supprimez Ken Meyer de la liste des utilisateurs qui peuvent y accéder (**ForEach {Remove-SPOUser -Site $\_. URL -LoginName « kenmyer\@litwareinc.com"}**).
 
 Nous disons à Microsoft 365 de supprimer Ken Meyer de tous les sites, y compris ceux auxquels il n’a pas accès. Les résultats montrent donc des erreurs pour les sites auxquels il n’a pas accès. Nous pouvons utiliser une condition supplémentaire sur cette commande pour supprimer Ken Meyer uniquement des sites qui l’ont sur leur liste de connexion. Mais les erreurs retournées ne causent aucun dommage aux sites eux-mêmes. Cette commande peut prendre quelques minutes pour s’exécuter sur des centaines de sites, plutôt que des heures de travail dans le Centre d'administration Microsoft 365.
 
@@ -248,7 +248,7 @@ Voici un autre exemple d’opération en bloc. Utilisez cette commande pour ajou
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-L’interprétation de cette commande PowerShell est la suivante : Obtenez tous les sites SharePoint dans l’abonnement Microsoft 365 actuel et, pour chaque site, autorisez l’accès à Bonnie Kearney en ajoutant son nom de connexion au groupe Membres du site (**ForEach {Add-SPOUser -Site $\_. URL -LoginName « bkearney\@ litwareinc.com » -Group « Members"}**).
+L’interprétation de cette commande PowerShell est la suivante : Obtenez tous les sites SharePoint dans l’abonnement Microsoft 365 actuel et, pour chaque site, autorisez l’accès à Bonnie Kearney en ajoutant son nom de connexion au groupe Membres du site (**ForEach {Add-SPOUser -Site $\_. URL -LoginName « bkearney\@litwareinc.com » -Group « Members"}**).
 
 ## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>PowerShell pour Microsoft 365 est idéal pour filtrer les données
 
@@ -258,7 +258,7 @@ Le Centre d'administration Microsoft 365 fournit plusieurs façons de filtrer vo
 
 Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> vous permet également de combiner des critères de filtre. Par exemple, vous pouvez trouver les boîtes aux lettres de toutes les personnes qui vivent à Bloomington et travaillent dans le service des finances.
 
-Toutefois, il existe des limitations à ce que vous pouvez faire dans le centre d’administration Exchange. Par exemple, vous n’avez pas pu trouver aussi facilement les boîtes aux lettres des personnes qui vivent à Bloomington ou San Diego, *ou* les boîtes aux lettres pour toutes les personnes qui ne vivent pas à Bloomington.
+Mais il existe des limitations à ce que vous pouvez faire dans le centre de Exchange Administration. Par exemple, vous n’avez pas pu trouver aussi facilement les boîtes aux lettres des personnes qui vivent à Bloomington ou San Diego, *ou* les boîtes aux lettres pour toutes les personnes qui ne vivent pas à Bloomington.
 
 Vous pouvez utiliser la commande PowerShell suivante pour Microsoft 365 afin d’obtenir une liste de boîtes aux lettres pour toutes les personnes qui vivent à Bloomington ou San Diego :
 
@@ -378,7 +378,7 @@ Supposons que vous souhaitiez établir un rapport qui présente les informations
 
 - Si l'utilisateur est activé pour Skype Entreprise Online
 
-Vous ne pouvez pas facilement produire un tel rapport dans le Centre d'administration Microsoft 365. Au lieu de cela, vous devez créer un document distinct pour stocker les informations, telles qu’une feuille de calcul Excel. Ensuite, obtenez tous les noms d’utilisateur et les informations de licence à partir du Centre d'administration Microsoft 365, obtenez les informations de boîte aux lettres à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>, obtenez Skype Entreprise informations en ligne à partir du Skype Entreprise  Centre d’administration en ligne, puis combinez ces informations.
+Vous ne pouvez pas facilement produire un tel rapport dans le Centre d'administration Microsoft 365. Au lieu de cela, vous devez créer un document distinct pour stocker les informations, telles qu’une feuille de calcul Excel. Ensuite, obtenez tous les noms d’utilisateur et les informations de licence à partir de la Centre d'administration Microsoft 365, obtenez les informations de boîte aux lettres à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>, obtenez Skype Entreprise informations en ligne à partir de la Skype Entreprise Online Administration centre, puis combinez ces informations.
 
 L’alternative consiste à utiliser un script PowerShell pour compiler le rapport pour vous.
 

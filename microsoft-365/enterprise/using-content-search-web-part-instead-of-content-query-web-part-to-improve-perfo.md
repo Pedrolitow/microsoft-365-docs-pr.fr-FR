@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Découvrez comment améliorer les performances en remplaçant le composant WebPart Requête de contenu par le composant WebPart Recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
-ms.openlocfilehash: 45b43b3071ca39c67283ac70ab92b20e2fc7e21a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4c8a97d24320d5380eccc089737947df9b1a0d0b
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621978"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139494"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du composant WebPart Recherche de contenu au lieu du composant WebPart Requête de contenu pour améliorer les performances dans SharePoint Online
 
@@ -72,6 +72,6 @@ Une fois que vous avez ajouté un composant WebPart Recherche de contenu, vous p
   
 ## <a name="query-building-and-testing-tool"></a>Outil de création et de test de requêtes
 
-Pour obtenir un outil permettant de générer et de tester des requêtes complexes, consultez [l’outil De requête de recherche](https://sp2013searchtool.codeplex.com/) sur Codeplex. 
+Pour obtenir un outil permettant de générer et de tester des requêtes complexes, consultez [l’outil De requête de recherche](https://github.com/pnp/PnP-Tools/tree/master/Solutions/SharePoint.Search.QueryTool#download-the-tool).
   
 

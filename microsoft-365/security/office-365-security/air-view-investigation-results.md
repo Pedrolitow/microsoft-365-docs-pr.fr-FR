@@ -19,12 +19,12 @@ description: Pendant et après une enquête automatisée dans Microsoft 365, vou
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b99573f73d5b53b6ea0e8d0cd1e44b539fa47db9
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 6e3234168383a0dad6d8a9de3fb680b27b7ce6cb
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649074"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139692"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
@@ -42,12 +42,12 @@ Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Microso
 
 L’état de l’enquête indique la progression de l’analyse et des actions. À mesure que l’enquête s’exécute, l’état change pour indiquer si des menaces ont été détectées et si des actions ont été approuvées.
 
-|Statut|Description|
+|État|Description|
 |---|---|
 |**Démarrage**|L’enquête a été déclenchée et attend de commencer à s’exécuter.|
 |**En cours d’exécution**|Le processus d’enquête a commencé et est en cours. Cet état se produit également lorsque les [actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) sont approuvées.|
 |**Aucune menace trouvée**|L’enquête est terminée et aucune menace (compte d’utilisateur, e-mail, URL ou fichier) n’a été identifiée. <p> **CONSEIL** : Si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md).|
-|**Menaces détectées**|L’enquête automatisée a détecté des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> L’état **Des menaces trouvées** peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Les activités utilisateur suivantes sont les suivantes : <ul><li>Événement [de protection contre la perte de données](../../compliance/dlp-learn-about-dlp.md)</li><li>Une anomalie d’envoi de courrier électronique</li><li>Programmes malveillants envoyés</li><li>Hameçonnage envoyé</li></ul> <p> L’enquête n’a détecté aucune URL, fichier ou e-mail malveillant à corriger, et aucune activité de boîte aux lettres à corriger, telle que la désactivation des règles de transfert ou de délégation. <p> **CONSEIL** : Si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md)|
+|**Partiellement examinée**|L’enquête automatisée a détecté des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> L’état **partiellement examiné** peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Les activités utilisateur suivantes sont les suivantes : <ul><li>Événement [de protection contre la perte de données](../../compliance/dlp-learn-about-dlp.md)</li><li>Une anomalie d’envoi de courrier électronique</li><li>Programmes malveillants envoyés</li><li>Hameçonnage envoyé</li></ul> <p> **Remarque** : cet état **partiellement étudié** était auparavant étiqueté comme **menaces trouvées**. <p> L’enquête n’a détecté aucune URL, fichier ou e-mail malveillant à corriger, et aucune activité de boîte aux lettres à corriger, telle que la désactivation des règles de transfert ou de délégation. <p> **CONSEIL** : Si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces](threat-explorer.md)|
 |**Arrêté par le système**|L’enquête s’est arrêtée. Une enquête peut s’arrêter pour plusieurs raisons : <ul><li>Les actions en attente de l’enquête ont expiré. Délai d’attente des actions en attente après l’approbation d’une semaine</li><li>Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut dépasser la capacité de l’enquête à exécuter tous les analyseurs, de sorte que l’investigation s’arrête</li></ul> <p> **CONSEIL** : Si une enquête s’arrête avant que des actions aient été effectuées, essayez d’utiliser [l’Explorateur](threat-explorer.md) de menaces pour rechercher et traiter les menaces.|
 |**Action en attente**|L’enquête a détecté une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action pour corriger cette menace [est en attente d’approbation](air-review-approve-pending-completed-actions.md). <p> L’état **de l’action en attente** est déclenché lorsqu’une menace avec une action correspondante est trouvée. Toutefois, la liste des actions en attente peut augmenter à mesure qu’une enquête s’exécute. Affichez les détails de l’examen pour voir si d’autres éléments sont toujours en attente d’achèvement.|
 |**Corrigé**|L’enquête s’est terminée et toutes les mesures correctives ont été approuvées (indiquées comme entièrement corrigées). <p> **REMARQUE** : Les actions de correction approuvées peuvent avoir des erreurs qui empêchent les actions d’être effectuées. Que les actions de correction soient terminées ou non, l’état de l’examen ne change pas. Afficher les détails de l’enquête.|
@@ -58,7 +58,7 @@ L’état de l’enquête indique la progression de l’analyse et des actions. 
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>), puis connectez-vous.
 2. Dans le volet de navigation, sélectionnez **Centre d’actions**.
 3. Sous les onglets **En attente** ou **Historique** , sélectionnez une action. Son volet volant s’ouvre.
 4. Dans le volet de menu volant, sélectionnez **Ouvrir la page d’investigation**. 
@@ -68,7 +68,7 @@ L’état de l’enquête indique la progression de l’analyse et des actions. 
 
 Certains types d’alertes déclenchent une investigation automatisée dans Microsoft 365. Pour plus d’informations, consultez [les stratégies d’alerte qui déclenchent des investigations automatisées](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
-1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>), puis connectez-vous.
 2. Dans le volet de navigation, sélectionnez **Centre d’actions**.
 3. Sous les onglets **En attente** ou **Historique** , sélectionnez une action. Son volet volant s’ouvre.
 4. Dans le volet de menu volant, sélectionnez **Ouvrir la page d’investigation**.
@@ -91,7 +91,7 @@ Certains types d’alertes déclenchent une investigation automatisée dans Micr
 
 - Les anomalies de volume représentent une menace potentielle et peuvent donc être moins graves que les programmes malveillants ou les menaces de hameçonnage identifiés à l’aide de moteurs antivirus, de détonation ou de réputation malveillante.
 
-- Vous n’avez pas besoin d’approuver chaque action. Si vous n’êtes pas d’accord avec l’action recommandée ou si votre organisation ne choisit pas certains types d’actions, vous pouvez choisir de **rejeter** les actions ou simplement de les ignorer et de ne rien faire.
+- Vous n’êtes pas obligé d’approuver chaque action. Si vous n’êtes pas d’accord avec l’action recommandée ou si votre organisation ne choisit pas certains types d’actions, vous pouvez choisir de **rejeter** les actions ou simplement de les ignorer et de ne prendre aucune action.
 
 - L’approbation et/ou le rejet de toutes les actions permettent à l’enquête de se fermer complètement (l’état est corrigé), tout en laissant certaines actions incomplètes pour que l’état de l’enquête passe à un état partiellement corrigé.
 

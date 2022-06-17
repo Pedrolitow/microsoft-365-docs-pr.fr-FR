@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment obtenir de l’aide et du support.
-ms.openlocfilehash: 5bf61e9563a87ac44219c1c4644153ce98755cb5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: cf0f9e9fd689f8e683b63af4cc8db7a09a1f6240
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017803"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139316"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenir de l’aide et du support pour Microsoft 365 Lighthouse 
 
@@ -40,7 +40,7 @@ Plusieurs options sont disponibles si vous avez besoin d’aide. Tout d’abord,
     3. Dans la liste des services, recherchez **Microsoft 365 suite**, puis développez-la pour afficher tous les services de la suite.
     4. Recherchez **Microsoft 365 Lighthouse** et vérifiez l’intégrité.
 
-- Voir si le problème est répertorié dans [les problèmes connus liés à Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
+- Voir si le problème est répertorié dans [les problèmes connus liés à Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues?view=o365-worldwide).
 
 Si vous rencontrez un problème qui n’est répertorié dans aucune de ces ressources, suivez les instructions de cet article pour afficher les options d’auto-assistance ou pour créer une demande de service.
 

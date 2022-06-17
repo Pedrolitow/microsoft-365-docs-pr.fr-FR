@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: b059a90c8a4f1406e8368cb399ca5de58b2538dd
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 87328b69f2649a1e6a6c6755892e17e7c04aac53
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089857"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128823"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -34,15 +34,13 @@ ms.locfileid: "66089857"
 > Ce scénario n'est pas pris en charge pour [les enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d'organisation telle qu'un ensemble de documents ou une bibliothèque dans Microsoft Office SharePoint Online, ou un dossier dans Exchange. Ces scénarios nécessitent une [stratégie d'étiquette de rétention publiée](create-apply-retention-labels.md).
 
 L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité de les appliquer automatiquement au contenu qui remplit les conditions spécifiées. Dans ce cas, les membres de votre organisation n’ont pas besoin d’appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
-  
+
 Les étiquettes de rétention appliquées automatiquement sont puissantes pour les raisons suivantes :
-  
+
 - Vous n’avez pas besoin de former les utilisateurs concernant l’ensemble de vos classifications.
-    
 - Vous n’avez pas à dépendre des utilisateurs pour classer tout le contenu correctement.
-    
 - Les utilisateurs n’ont plus besoin de connaître les stratégies de gouvernance des données : ils peuvent se concentrer sur leur travail.
-    
+
 Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci ne contient pas encore d’étiquette de rétention appliquée et des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md). Désormais en prévisualisation, vous pouvez également appliquer automatiquement une étiquette de rétention aux pièces jointes dans le cloud qui sont stockées dans SharePoint ou OneDrive.
 
 > [!TIP]
@@ -55,7 +53,7 @@ Les processus d’application automatique d’une étiquette de rétention sont 
 Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 > [!NOTE]
-> Les stratégies automatiques utilisent l’étiquetage côté service avec des conditions pour appliquer automatiquement des étiquettes de rétention. Vous pouvez également appliquer automatiquement une étiquette de rétention avec une stratégie d’étiquette lorsque vous procédez comme suit : 
+> Les stratégies automatiques utilisent l’étiquetage côté service avec des conditions pour appliquer automatiquement des étiquettes de rétention. Vous pouvez également appliquer automatiquement une étiquette de rétention avec une stratégie d’étiquette lorsque vous procédez comme suit :
 >
 > - Application d’une étiquette de rétention à un modèle de compréhension de document dans SharePoint Syntex.
 > - Application d’une étiquette de rétention par défaut pour SharePoint et Outlook
@@ -76,13 +74,13 @@ Déterminez avant de créer votre stratégie d’étiquette de rétention si ell
 Lorsque vous créez une stratégie d’application automatique, vous sélectionnez une étiquette de rétention pour l’appliquer automatiquement à du contenu, en fonction des conditions spécifiées.
 
 1. Dans le [Centre de conformité Microsoft Purview](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
-    
+
     - Si vous utilisez la gestion des enregistrements :
-        - **Solutions** > **Gestion des enregistrements** > > onglet des **Stratégies d’étiquette** > **Appliquer automatiquement une étiquette**
-    
+        - **Solutions** \> **Gestion des enregistrements** \> **onglet** Stratégies des étiquettes\> **Appliquer automatiquement une étiquette**
+
     - Si vous utilisez la solution de gestion du cycle de vie des données :
-        - **Solutions** > **Gestion du cycle de vie des données** > **Stratégies des étiquettes** onglet > **Appliquer automatiquement une étiquette**
-    
+        - **Solutions** \> **Gestion du cycle de vie des données** \> **onglet** Stratégies des étiquettes\> **Appliquer automatiquement une étiquette**
+
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**.
 
 2. Entrez un nom et une description pour cette stratégie d’étiquetage automatique, puis sélectionnez **Suivant**.
@@ -92,11 +90,11 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
 4. Pour choisir **le type** de stratégie de rétention à créer, sélectionnez **Adaptatif** ou **Statique,** en fonction du choix que vous avez effectué à partir des [instructions](#before-you-begin) avant de commencer. Si vous n’avez pas encore créé **d’étendues adaptatives, vous pouvez sélectionner Adaptive**, mais comme il n’y aura aucune étendue adaptative à sélectionner, vous ne pourrez pas terminer l’Assistant avec cette option.
 
 5. En fonction de l’étendue sélectionnée :
-    
-    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement **ajouté un type d’étendue** d’utilisateur, vous pourrez sélectionner Exchange **courrier** électronique, mais pas SharePoint **sites.** 
-    
+
+    - Si vous **avez** choisi Adaptatif : dans la page Choisir les étendues et les **emplacements** de stratégie adaptative, sélectionnez Ajouter des **étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement **ajouté un type d’étendue** d’utilisateur, vous pourrez sélectionner Exchange **courrier** électronique, mais pas SharePoint **sites.**
+
     - Si vous avez choisi **Statique :** dans **la** page Choisir des emplacements pour activer ou désactiver l'un des emplacements. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](retention-settings.md#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
-    
+
     Pour plus d’informations sur les choix d’emplacement, voir [Emplacements.](retention-settings.md#locations)
 
 6. Suivez les instructions de l'assistant pour sélectionner une étiquette de conservation, puis révisez et soumettez vos choix de configuration.
@@ -146,7 +144,7 @@ En outre, les éléments SharePoint qui sont dans les brouillons ou qui n’ont 
 
 > [!IMPORTANT]
 > Pour les e-mails que vous appliquez automatiquement en identifiant des informations sensibles, toutes les boîtes aux lettres sont automatiquement incluses, ce qui inclut les boîtes aux lettres de Microsoft 365 groupes.
-> 
+>
 > Bien que les boîtes aux lettres de groupe soient généralement incluses en sélectionnant l’emplacement des groupes **Microsoft 365,** pour cette configuration de stratégie spécifique, l’emplacement des groupes inclut uniquement les sites SharePoint connectés à un groupe Microsoft 365.
 
 Lorsque vous créez des stratégies d’étiquette de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données (DLP) Microsoft Purview. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Dans l’exemple suivant, les types d’informations sensibles proviennent de la catégorie **Confidentialité** et du modèle **Informations d’identification personnelle (PII) des États-Unis** :
@@ -156,7 +154,7 @@ Lorsque vous créez des stratégies d’étiquette de rétention d’application
 Pour en savoir plus sur les types d’informations de confidentialité, consultez [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Actuellement, les [types d’informations sensibles basés sur la correspondance exacte des données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) et [l'empreinte digitale des documents](document-fingerprinting.md) ne sont pas prises en charge pour ce scénario.
 
 Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tous les types d’informations sensibles, et vous pouvez modifier le niveau de confiance et le nombre d’instances. Dans l’exemple de capture d’écran précédent, ces options ont été modifiées afin qu’une étiquette de rétention soit appliquée automatiquement uniquement lorsque :
-  
+
 - Le type d'informations sensibles détectées a une précision de correspondance (ou [niveau de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)) d'au moins **une confiance moyenne** pour deux des types d'informations sensibles et **une confiance élevée** pour un. De nombreux types d'informations sensibles sont définis avec plusieurs modèles, où un modèle avec une précision de correspondance plus élevée nécessite plus de preuves à trouver (comme des mots-clés, des dates ou des adresses), tandis qu'un modèle avec une précision de correspondance plus faible nécessite moins de preuves. Plus le niveau de confiance est bas, plus il est facile pour le contenu de correspondre à la condition, mais avec un potentiel de plus de faux positifs.
 
 - Le contenu comprend entre 1 et 9 instances de n’importe quel de ces trois types d’informations sensibles. La valeur par défaut de **à** est **N’importe lequel**.
@@ -170,7 +168,7 @@ Lorsque vous utilisez des types d’informations sensibles pour appliquer automa
 
 - Si vous utilisez des types d’informations sensibles personnalisés, ceux-ci ne peuvent pas étiqueter automatiquement des éléments existants dans SharePoint et OneDrive.
 
-- Pour les e-mails, vous ne pouvez pas sélectionner des destinataires spécifiques à inclure ou exclure ; seul le **paramètre Tous les destinataires** est pris en charge et pour cette configuration uniquement, il inclut les boîtes aux lettres de Microsoft 365 groupes. 
+- Pour les e-mails, vous ne pouvez pas sélectionner des destinataires spécifiques à inclure ou exclure ; seul le **paramètre Tous les destinataires** est pris en charge et pour cette configuration uniquement, il inclut les boîtes aux lettres de Microsoft 365 groupes.
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
@@ -192,12 +190,13 @@ Les stratégies d’application automatique basées sur une requête utilisent l
 
 - Pour rechercher les valeurs qui contiennent des espaces ou des caractères spéciaux, utilisez les guillemets (`" "`) pour contenir la phrase; par exemple `subject:"Financial Statements"`.
 
-- Utilisez la propriété *DocumentLink* au lieu de *Path* pour faire correspondre un élément en fonction de son URL. 
+- Utilisez la propriété *DocumentLink* au lieu de *Path* pour faire correspondre un élément en fonction de son URL.
 
 - Les recherches par caractères génériques suffixées (telles que `*cat`) ou les recherches par caractères génériques de sous-chaîne (telles que `*cat*`) ne sont pas prises en charge. Cependant, les recherches par caractères génériques suffixées (telles que `cat*`) sont prises en charge.
 
 - Sachez que les éléments partiellement indexés peuvent être responsables du fait de ne pas étiqueter les éléments que vous attendez, ou d'étiqueter des éléments que vous pensez être exclus de l'étiquetage lorsque vous utilisez l'opérateur NOT. Pour plus d'informations, voir [Éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md).
 
+- Nous vous recommandons de ne pas utiliser d’espaces entre les mots dans les valeurs RefinableStrings sur des documents. RefinableString n’est pas une propriété de saut de mot.
 
 Exemples de requêtes :
 
@@ -213,35 +212,35 @@ Exemples plus complexes :
 
 La requête suivante pour SharePoint identifie des documents Word ou des feuilles de calcul Excel lorsque ces fichiers contiennent les mots clés **mot de passe**, **mots de passe** ou **pw**:
 
-```
+```KQL
 (password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
 ```
 
 La requête Exchange suivante identifie tout document Word ou PDF contenant le mot **accord de confidentialité** ou l’expression **contrat de non-divulgation** lorsque ces documents sont joints à un e-mail :
 
-```
+```KQL
 (nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
 ```
 
-La requête SharePoint suivante identifie les documents qui contiennent un numéro de carte de crédit : 
+La requête SharePoint suivante identifie les documents qui contiennent un numéro de carte de crédit :
 
-```
+```KQL
 sensitivetype:"credit card number"
 ```
 
 La requête suivante contient des mots clés courants pour vous aider à identifier les documents ou les e-mails qui contiennent du contenu juridique :
 
-```
+```KQL
 ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ```
 
-La requête suivante contient des mots clés courants pour vous aider à identifier les documents ou les e-mails des ressources humaines : 
+La requête suivante contient des mots clés courants pour vous aider à identifier les documents ou les e-mails des ressources humaines :
 
-```
+```KQL
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
-Notez que ce dernier exemple utilise la pratique recommandée qui consiste à toujours inclure des opérateurs entre les mots clés. Un espace entre des mots-clés (ou deux expressions property:value) revient au même que l’utilisation de l’opérateur AND. En ajoutant toujours des opérateurs, il est plus facile de voir que cet exemple de requête identifie uniquement le contenu qui contient tous ces mots clés, au lieu du contenu contenant tous les mots clés. Si vous avez l’intention d’identifier le contenu contenant l’un des mots clés, spécifiez ou au lieu de et. Comme cet exemple montre, lorsque vous spécifiez toujours les opérateurs, il est plus facile d’interpréter correctement la requête. 
+Notez que ce dernier exemple utilise la pratique recommandée qui consiste à toujours inclure des opérateurs entre les mots clés. Un espace entre des mots-clés (ou deux expressions property:value) revient au même que l’utilisation de l’opérateur AND. En ajoutant toujours des opérateurs, il est plus facile de voir que cet exemple de requête identifie uniquement le contenu qui contient tous ces mots clés, au lieu du contenu contenant tous les mots clés. Si vous avez l’intention d’identifier le contenu contenant l’un des mots clés, spécifiez ou au lieu de et. Comme cet exemple montre, lorsque vous spécifiez toujours les opérateurs, il est plus facile d’interpréter correctement la requête.
 
 ##### <a name="microsoft-teams-meeting-recordings"></a>Enregistrements de réunion Microsoft Teams
 
@@ -250,7 +249,7 @@ Notez que ce dernier exemple utilise la pratique recommandée qui consiste à to
 
 Pour identifier les enregistrements de réunion Microsoft Teams stockés dans les comptes OneDrive des utilisateurs ou dans SharePoint, spécifiez les éléments suivants pour **l’éditeur de requête de mot clé**:
 
-```
+```KQL
 ProgID:Media AND ProgID:Meeting
 ```
 
@@ -260,7 +259,7 @@ La plupart du temps, les enregistrements de réunion sont enregistrés dans OneD
 
 Pour identifier les fichiers dans les e-mails Microsoft Office SharePoint Online ou OneDrive et Exchange auxquels une [étiquette de confidentialité](sensitivity-labels.md) spécifique est appliquée, spécifiez les éléments suivants pour **l'éditeur de requêtes par mot-clé** :
 
-```
+```KQL
 InformationProtectionLabelId:<GUID>
 ```
 
@@ -310,11 +309,11 @@ Les pièces jointes cloud prises en charge pour cette option sont des fichiers t
 
 Bien que cela ne soit pas obligatoire pour cette option, nous vous recommandons de vous assurer que le traitement des versions est activé pour vos sites SharePoint et comptes OneDrive afin que la version partagée puisse être capturée avec précision. Si le jeu de versions n’est pas activé, la dernière version disponible est conservée. Les documents en brouillon ou qui n’ont jamais été publiés ne sont pas pris en charge.
 
-Lorsque vous sélectionnez une étiquette à utiliser pour appliquer automatiquement des étiquettes **de rétention pour les pièces jointes cloud, assurez-vous que le paramètre de rétention des étiquettes démarre la période de** rétention en fonction de l’étiquette des **éléments.** 
+Lorsque vous sélectionnez une étiquette à utiliser pour appliquer automatiquement des étiquettes **de rétention pour les pièces jointes cloud, assurez-vous que le paramètre de rétention des étiquettes démarre la période de** rétention en fonction de l’étiquette des **éléments.**
 
 Lorsque vous configurez les emplacements de cette option, vous pouvez sélectionner :
 
-- **SharePoint sites** pour les fichiers partagés stockés dans des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 et des sites classiques. 
+- **SharePoint sites** pour les fichiers partagés stockés dans des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 et des sites classiques.
 - **Microsoft 365 groupes pour** les fichiers partagés stockés dans des sites d’équipe connectés Microsoft 365 groupes.
 - OneDrive pour les fichiers **partagés** stockés dans les comptes de OneDrive.
 
@@ -332,17 +331,17 @@ Vous devrez créer des stratégies de rétention distinctes si vous souhaitez co
 - Les pièces jointes cloud partagées en dehors Teams et Outlook ne sont pas pris en charge.
 
 - Les éléments suivants ne sont pas pris en charge en tant que pièces jointes cloud qui peuvent être conservées :
-    - SharePoint sites, pages, listes, formulaires, dossiers, ensembles de documents et pages OneNote pages.
-    - Fichiers partagés par des utilisateurs qui n’ont pas accès à ces fichiers.
-    - Fichiers supprimés ou déplacés avant l’envoi de la pièce jointe cloud. Par exemple, un utilisateur copie et colle une pièce jointe partagée précédemment à partir d’un autre message, sans confirmer au préalable que le fichier est toujours disponible. Ou bien, quelqu’un envoie un ancien message lorsque le fichier est maintenant supprimé.
-    - Fichiers partagés par des invités ou des utilisateurs externes à votre organisation
-    - Fichiers dans les messages électroniques provisoires et les messages qui ne sont pas envoyés
-    - Fichiers vides
+  - SharePoint sites, pages, listes, formulaires, dossiers, ensembles de documents et pages OneNote pages.
+  - Fichiers partagés par des utilisateurs qui n’ont pas accès à ces fichiers.
+  - Fichiers supprimés ou déplacés avant l’envoi de la pièce jointe cloud. Par exemple, un utilisateur copie et colle une pièce jointe partagée précédemment à partir d’un autre message, sans confirmer au préalable que le fichier est toujours disponible. Ou bien, quelqu’un envoie un ancien message lorsque le fichier est maintenant supprimé.
+  - Fichiers partagés par des invités ou des utilisateurs externes à votre organisation
+  - Fichiers dans les messages électroniques provisoires et les messages qui ne sont pas envoyés
+  - Fichiers vides
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Délai d’activation des étiquettes de rétention
 
 Lorsque vous appliquez automatiquement des étiquettes de conservation basées sur des informations sensibles, des mots-clés ou des propriétés interrogeables, ou des classificateurs entraînables, l'application des étiquettes de conservation peut prendre jusqu'à sept jours :
-  
+
 ![Diagramme indiquant quand les étiquettes d’application automatique prennent effet.](../media/retention-labels-autoapply-timings.png)
 
 Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le portail de conformité Microsoft Purview. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
@@ -350,7 +349,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l
 1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande suivante :
-    
+
     ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
     ```
@@ -362,6 +361,7 @@ Pour appliquer automatiquement les politiques d'étiquetage de conservation qui 
 Pour les stratégies d’étiquette de rétention à appliquer automatiquement qui sont configurées pour les pièces jointes dans le cloud : étant donné que cette stratégie s’applique aux nouveaux fichiers partagés plutôt qu’aux fichiers existants, une modification de la configuration de l’étiquette et de la stratégie sélectionnées sera automatiquement appliquée au contenu nouvellement partagé uniquement.
 
 Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou la stratégie créée et enregistrée, notamment :
+
 - Noms pour les étiquettes de rétention et leurs stratégies, le type d’étendue (adaptatif ou statique) et les paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.
 - Option de marquage des éléments comme enregistrement.
 

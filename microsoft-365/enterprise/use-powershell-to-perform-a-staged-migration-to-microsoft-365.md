@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Découvrez comment utiliser PowerShell pour déplacer du contenu à partir d’un système de messagerie source au fil du temps à l’aide d’une migration intermédiaire vers Microsoft 365.
-ms.openlocfilehash: 26c12208c00e6b9b33b0be850a4791ddca804c8c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0c40e617fbd069ab9894d572a5582985194e7a6e
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014209"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139538"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
 
@@ -65,7 +65,7 @@ Avant de migrer des boîtes aux lettres vers Microsoft 365 à l’aide d’une m
 
 - Utilisez Outlook hors de votre réseau d'entreprise pour vous connecter à votre boîte aux lettres Exchange locale.
 
-- Utilisez Microsoft [Remote Connectivity Analyzer](https://https://testconnectivity.microsoft.com/) pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.
+- Utilisez Microsoft [Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/) pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.
 
 - Dans Exchange Online PowerShell, exécutez les commandes suivantes :
 

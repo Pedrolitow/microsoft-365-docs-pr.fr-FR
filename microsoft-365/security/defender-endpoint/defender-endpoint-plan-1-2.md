@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 05/16/2022
+ms.date: 06/17/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 19f5267759f81de60e04659681b3698dd53f320d
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 00db46643d3f2b49003194075c44970a20ba83e9
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102281"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139428"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Comparer Microsoft Defender pour point de terminaison plans
 
@@ -37,11 +37,27 @@ Vous pouvez utiliser cet article pour clarifier la protection fournie par les di
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Comparer les plans Defender pour point de terminaison
 
-| Abonnement | Inclus |
+Le tableau suivant récapitule ce qui est inclus dans chaque plan Defender pour point de terminaison.
+
+| Prévision | Inclus |
 |:---|:---|
-| [Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md) | [Protection de nouvelle génération](defender-endpoint-plan-1.md#next-generation-protection) <br/>(inclut le logiciel anti-programme malveillant et l’antivirus) <p> [Réduction de la surface d’attaque](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Actions de réponse manuelle](defender-endpoint-plan-1.md#manual-response-actions) <p> [Gestion centralisée](defender-endpoint-plan-1.md#centralized-management) <p>[Rapports de sécurité](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis) <p> [Prise en charge des appareils Windows 10, iOS, Android et macOS](defender-endpoint-plan-1.md#cross-platform-support)|
-| [Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md) | Fonctionnalités de Defender pour point de terminaison Plan 1, ainsi que : <p> <p> [Découverte d’appareils](device-discovery.md) <p> [Inventaire des appareils](machines-view-overview.md) <p> [Fonctionnalités de gestion des vulnérabilités Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) <p> [Analyse des menaces](threat-analytics.md) <p> [Examen et réponse automatisés](automated-investigations.md) <p> [Repérage avancé](advanced-hunting-overview.md) <p> [Détection et réponse du point de terminaison](overview-endpoint-detection-response.md) <p> [Spécialistes des menaces Microsoft](microsoft-threat-experts.md) <p>Prise en charge des plateformes [Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md)<br/> (macOS, iOS, Android et Linux) |
-| [Module complémentaire Gestion des vulnérabilités Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) |  Gestion des vulnérabilités Defender supplémentaire pour Defender pour le plan de point de terminaison 2 : <p><p> [Évaluation des bases de référence de sécurité](../defender-vulnerability-management/tvm-security-baselines.md) <p> [Bloquer les applications vulnérables](../defender-vulnerability-management/tvm-block-vuln-apps.md) <p> [Extensions de navigateur](../defender-vulnerability-management/tvm-browser-extensions.md) <p> [Évaluation des certificats numériques](../defender-vulnerability-management/tvm-certificate-inventory.md) <p> [Analyse du partage réseau](../defender-vulnerability-management/tvm-network-share-assessment.md) <p> Prise en charge des plateformes [Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md)<br/> (macOS, iOS, Android et Linux) |
+| [Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md) | <ul><li>[Protection de nouvelle génération](defender-endpoint-plan-1.md#next-generation-protection) (inclut le logiciel anti-programme malveillant et l’antivirus)</li><li>[Réduction de la surface d’attaque](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Actions de réponse manuelle](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Gestion centralisée](defender-endpoint-plan-1.md#centralized-management)</li><li>[Rapports de sécurité](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Prise en charge des appareils Windows 10, iOS, Android et macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
+| [Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md) | Toutes les fonctionnalités de Defender pour point de terminaison Plan 1, ainsi que :<ul><li>[Découverte d’appareils](device-discovery.md)</li><li>[Inventaire des appareils](machines-view-overview.md)</li><li>[Fonctionnalités de gestion des vulnérabilités Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Analyse des menaces](threat-analytics.md)</li><li>[Examen et réponse automatisés](automated-investigations.md)</li><li>[Repérage avancé](advanced-hunting-overview.md)</li><li>[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)</li><li>[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)</li><li>Prise en charge des plateformes [Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
+| [Module complémentaire Gestion des vulnérabilités Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Gestion des vulnérabilités Defender supplémentaire pour Defender pour le plan de point de terminaison 2 :<ul><li>[Évaluation des bases de référence de sécurité](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquer les applications vulnérables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensions de navigateur](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Évaluation des certificats numériques](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Analyse du partage réseau](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Prise en charge des plateformes [Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
+
+## <a name="mixed-licensing-scenarios"></a>Scénarios de licence mixte
+
+Supposons que votre organisation utilise une combinaison d’abonnements de sécurité de point de terminaison Microsoft, tels que Defender pour point de terminaison Plan 1 et Defender pour point de terminaison Plan 2. **Actuellement, l’abonnement de sécurité de point de terminaison Microsoft le plus fonctionnel définit l’expérience de votre locataire**. Dans cet exemple, votre expérience client serait Defender pour point de terminaison Plan 2 pour tous les utilisateurs.
+
+Toutefois, **vous pouvez contacter le support technique et demander un remplacement pour votre expérience client**. Autrement dit, vous pouvez demander un remplacement pour conserver l’expérience Defender pour point de terminaison Plan 1 pour tous les utilisateurs. 
+
+- Pour plus d’informations sur les licences et les termes du produit, consultez [Licences et termes du produit pour Microsoft 365 abonnements](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+- Pour plus d’informations sur la façon de contacter le support technique, consultez [Contact Microsoft Defender pour point de terminaison support](contact-support.md).
+
+> [!TIP]
+> Si votre organisation est une petite ou moyenne entreprise, consultez les articles suivants :
+> - [Qu’est-ce que Microsoft Defender pour entreprises ?](../defender-business/mdb-overview.md)
+> - [Comparez les fonctionnalités de sécurité dans les plans de Microsoft 365 pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md).
 
 ## <a name="start-a-trial"></a>Démarrer un essai
 

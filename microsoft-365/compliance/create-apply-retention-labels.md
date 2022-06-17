@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007325"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128918"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -66,7 +66,7 @@ Déterminez avant de créer votre stratégie d’étiquette de rétention si ell
     - Si vous utilisez la solution de gestion du cycle de vie des données :
         - **Solutions** > **Gestion du cycle de vie des données** > **Stratégies d’étiquettes** onglet > **Publier des étiquettes**
     
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites pour créer la stratégie d’étiquette de rétention. Faites attention au nom que vous choisissez pour la stratégie, car cela ne peut pas être modifié une fois la stratégie enregistrée.
 

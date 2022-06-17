@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20372843af62c28f4aae05c40d714bdfcdca203b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115980"
+ms.locfileid: "66128720"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -177,6 +177,8 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      > <sup>2</sup> Vous pouvez utiliser cette valeur comme condition dans les règles de flux de courrier (ou règles de transport) pour filtrer ou acheminer le message.
      >
      > <sup>3</sup> Une valeur vide pour **Sélectionner une stratégie** signifie que la stratégie de mise en quarantaine par défaut pour ce verdict particulier est utilisé. Lorsque vous modifiez ultérieurement la stratégie anti-courrier indésirable ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche. Pour plus d’informations sur les stratégies de mise en quarantaine par défaut utilisées pour les verdicts de filtrage du courrier indésirable, consultez [ce tableau](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     >
+     > Les utilisateurs ne peuvent pas publier leurs propres messages qui ont été mis en quarantaine en tant que hameçonnage à haute fiabilité. Au mieux, les administrateurs peuvent configurer la stratégie de quarantaine afin que les utilisateurs puissent demander la libération de leurs messages des courriers de hameçonnage à haute fiabilité.
 
    - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période expirée, le message est supprimé et ne peut plus être récupéré. Une valeur valide est comprise entre 1 et 30 jours.
 

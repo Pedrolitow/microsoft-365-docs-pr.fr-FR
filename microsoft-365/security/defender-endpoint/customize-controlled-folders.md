@@ -15,18 +15,18 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217373"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139338"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -101,7 +101,7 @@ Vous pouvez utiliser l’application Sécurité Windows, les stratégie de group
 
 ### <a name="use-mdm-csps-to-protect-additional-folders"></a>Utiliser des CSP GPM pour protéger des dossiers supplémentaires
 
-Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
+Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) (fournisseur de solutions Cloud) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
 
 ## <a name="allow-specific-apps-to-make-changes-to-controlled-folders"></a>Autoriser des applications spécifiques à apporter des modifications à des dossiers contrôlés
 
@@ -160,7 +160,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>Utiliser des CSP MDM pour autoriser des applications spécifiques
 
-Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (CSP) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
+Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (fournisseur de solutions Cloud) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>Autoriser les fichiers exécutables signés à accéder aux dossiers protégés
 
@@ -177,4 +177,4 @@ Pour plus d’informations sur la personnalisation de la notification lorsqu’u
 
 - [Protéger les dossiers importants avec accès contrôlé aux dossiers](controlled-folders.md)
 - [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md)
-- [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
+- [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
