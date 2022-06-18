@@ -223,13 +223,13 @@
         - name: Liste Autoriser/Bloquer du client
           items:
             - name: Gérer la liste Autoriser/Bloquer du client
-              href: tenant-allow-block-list.md
-            - name: Ajouter des blocs dans la liste verte/rouge du locataire
-              href: manage-tenant-blocks.md
-            - name: Ajouter des autorisations dans la liste verte/rouge du client
-              href: manage-tenant-allows.md
-            - name: Modifier et supprimer des entrées dans la liste verte/rouge du client
-              href: modify-remove-entries-tenant-allow-block.md
+              href: manage-tenant-allow-block-list.md
+            - name: Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
+              href: allow-block-email-spoof.md
+            - name: Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
+              href: allow-block-urls.md
+            - name: Autoriser ou bloquer des fichiers utilisant la liste Autoriser/Bloquer des clients
+              href: allow-block-files.md
         - name: Créer des listes d’expéditeurs bloqués
           href: Create-block-sender-lists-in-office-365.md
         - name: Créer des listes d’expéditeurs approuvés
