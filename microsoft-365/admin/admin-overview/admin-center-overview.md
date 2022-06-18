@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129028"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159551"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -108,11 +108,7 @@ Si vous ne savez pas qui contacter au sein de votre entreprise ou établissement
 
 ## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
 
-Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d’administration dans [aide de l’administrateur](Vue d’ensemble du Centre d'administration Microsoft 365](admin-center-overview.md).
-
-<br>
-
-****
+Voici les fonctionnalités et les paramètres que vous trouverez dans la navigation de gauche du centre d’administration. En savoir plus sur les tâches d’administration dans [aide de l’administrateur](/microsoft-365/admin/).
 
 |Menu|Objet|
 |-----|-----|

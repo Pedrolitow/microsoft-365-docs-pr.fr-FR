@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les classifieurs pouvant être formés peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115848"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159573"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -53,7 +53,7 @@ Cette méthode de classification est bien adaptée au contenu qui n’est pas fa
 
 > [!NOTE]
 > En préversion : vous pouvez afficher les classifieurs pouvant être formés dans l’Explorateur de contenu en développant les **classifieurs pouvant être entraînés** dans le panneau filtres. Les classifieurs pouvant être formés affichent automatiquement le nombre d’incidents trouvés dans SharePoint, Teams et OneDrive, sans nécessiter d’étiquetage.
-> Si vous ne souhaitez pas utiliser cette fonctionnalité, vous devez envoyer une demande auprès de Support Microsoft pour désactiver la classification out-of-the-box. Cela désactive l’analyse de votre contenu sensible et étiqueté avant de créer des stratégies d’étiquetage.
+> Si vous ne souhaitez pas utiliser cette fonctionnalité, vous devez envoyer une demande auprès de Support Microsoft. Cela désactive l’affichage de vos données sensibles qui ne sont utilisées dans aucune stratégie d’étiquetage dans l’Explorateur de contenu. Vous pouvez également désactiver l’analyse de vos données. Si l’analyse est désactivée, l’étiquetage de sensibilité et les stratégies DLP avec ces classifieurs ne fonctionnent pas
 
 ### <a name="where-you-can-use-classifiers"></a>Où vous pouvez utiliser des classifieurs
 

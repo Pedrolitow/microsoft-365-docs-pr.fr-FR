@@ -302,8 +302,6 @@
                   href: end-life-cycle-groups-teams-sites-yammer.md
         - name: Collaboration sur des fichiers dans SharePoint avec Microsoft 365
           href: /sharepoint/deploy-file-collaboration
-        - name: Guide OneDrive pour entreprises
-          href: /onedrive/plan-onedrive-enterprise
     - name: Conformité
       items:
         - name: Solutions de risque interne dans Microsoft Purview
