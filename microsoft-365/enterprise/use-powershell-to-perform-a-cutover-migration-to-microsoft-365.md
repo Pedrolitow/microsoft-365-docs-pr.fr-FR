@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Découvrez comment utiliser PowerShell pour déplacer le contenu à partir d’un système de messagerie source en effectuant une migration de basculement vers Microsoft 365.
-ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3761640c42a6907818886e96c9d6355d70073522
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008394"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151203"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
 
@@ -177,13 +177,13 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 
 Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration de l’e-mail vers Microsoft 365 est terminée, il est temps de pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que l’e-mail est remis à vos boîtes aux lettres Microsoft 365. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt.
 
-Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n’est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, [des instructions d’enregistrement MX générales](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx) sont également fournies.
+Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n’est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, [des instructions d’enregistrement MX générales](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online) sont également fournies.
 
 Il faut compter jusqu'à 72 heures pour que les systèmes de messagerie de vos clients et partenaires reconnaissent l'enregistrement MX modifié. Patientez au moins 72 heures avant de procéder à la tâche suivante : [Étape 6 : Supprimez le lot de migration à basculement](#step-6-delete-the-cutover-migration-batch).
 
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Étape 6 : Supprimez le lot de migration à basculement
 
-Après avoir modifié l’enregistrement MX et vérifié que tous les e-mails sont acheminés vers Microsoft 365 boîtes aux lettres, informez les utilisateurs que leur courrier va Microsoft 365. Après cela, vous pouvez supprimer le lot de migration à basculement. Avant de supprimer le lot de migration, vérifiez les points suivants.
+Après avoir modifié l'enregistrement MX et vérifié que tout le courrier est routé vers les boîtes aux lettres Microsoft 365, informez les utilisateurs que leur courrier est envoyé vers Microsoft 365. Après cela, vous pouvez supprimer le lot de migration à basculement. Avant de supprimer le lot de migration, vérifiez les points suivants.
 
 - Tous les utilisateurs utilisent des boîtes aux lettres Microsoft 365. Une fois le lot supprimé, le courrier envoyé aux boîtes aux lettres locales Exchange Server n’est pas copié dans les boîtes aux lettres Microsoft 365 correspondantes.
 
