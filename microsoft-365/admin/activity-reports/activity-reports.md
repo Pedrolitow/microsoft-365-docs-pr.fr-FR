@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007237"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151159"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -87,7 +87,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 
 |Rapport|Public|GCC|GCC-High|DoD|Office 365 géré par 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
+|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
 |[Activité de messagerie](email-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des applications de messagerie](email-apps-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
 |[Utilisation des boîtes aux lettres](mailbox-usage.md)|Oui|Oui|Oui|Oui|Oui|
@@ -113,6 +113,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 |[Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
 |[Activité Viva Learning](viva-learning-activity.md)|Oui|N/A|S/O|S/O|N/A|
 |[Activité Viva Insights](viva-insights-activity.md)|Oui|Oui|N/A|S/O|S/O|
+|[Activité Project](project-activity.md)|Oui|Oui|N/A|S/O|S/O|
 
 N/A<sup>1</sup> : le rapport est prévu pour être publié à l’avenir. La <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">feuille de route Microsoft 365</a> sera mise à jour avant la publication.
 N/A<sup>2</sup> : le service n’est pas disponible dans l’environnement, donc aucun plan de publication du rapport n’est prévu.

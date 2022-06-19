@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7b8ca4e909893ec417d3466f825c2c0a1c5c736a
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016457"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151181"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -162,15 +162,11 @@ Pour en savoir plus sur le fonctionnement des stratégies de rétention pour Yam
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Stratégies de rétention supplémentaires requises pour la prise en charge de Yammer
 
-Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **Groupes Microsoft 365**. 
+Yammer est bien plus que des messages de la communauté et des messages privés. Pour conserver et supprimer des courriers électroniques pour votre réseau Yammer, configurez une stratégie de rétention supplémentaire qui inclut les groupes Microsoft 365 utilisés pour Yammer, à l’aide de l'emplacement **Groupes Microsoft 365**.
 
-Pour conserver et supprimer des fichiers stockés dans Yammer, vous avez besoin d’une stratégie de rétention qui inclut l’emplacement des groupes **Microsoft 365** ou les **emplacements OneDrive comptes** :
+Cet emplacement inclut également les fichiers qui sont chargés dans Yammer communautés. Ces fichiers sont stockés dans le site SharePoint connecté à un groupe pour la Yammer communauté.
 
-- Les fichiers partagés dans les messages privés sont stockés sur le compte OneDrive de l’utilisateur qui a partagé le fichier. 
-
-- Les fichiers téléchargés vers des communautés sont stockés dans le site SharePoint connecté à un groupe pour la Yammer communauté.
-
-Il est possible qu’une stratégie de rétention appliquée à des comptes SharePoint ou OneDrive supprime un fichier référencé dans un message Yammer avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Yammer, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
+Il est possible qu’une stratégie de rétention appliquée à des comptes SharePoint supprime un fichier référencé dans un message Yammer avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Yammer, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint.
 
 ### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Stratégie de rétention pour les emplacements autres que Teams et Yammer
 
