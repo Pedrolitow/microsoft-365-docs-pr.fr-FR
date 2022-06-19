@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 740d0b394148a84434c13fd4a3fcd38e8c617c03
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 364e2ab3e858bb7c2e06701cc9f3fb8374862003
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089775"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139448"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
 
-Bienvenue dans le guide opérationnel d’évaluation Microsoft Business Premium. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours en vous apprenant comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec Defender pour les PME. À l'aide des recommandations de Microsoft, vous apprendrez comment Defender peut vous aider à définir des politiques de protection, à analyser les menaces qui pèsent sur votre organisation et à répondre aux attaques.
+Bienvenue dans le guide opérationnel d’évaluation Microsoft Business Premium. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 30 jours en vous apprenant comment Microsoft 365 Business Premium augmente la productivité et contribue à protéger votre organisation avec des fonctionnalités de sécurité avancées. À l’aide des recommandations de Microsoft, découvrez comment configurer vos fonctionnalités de protection contre les menaces, analyser les menaces détectées et répondre aux cyberattaques.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Configurer la version d’évaluation Microsoft 365 Business Premium
 
@@ -36,11 +36,11 @@ Tout d’abord, [configurez votre version d’évaluation](../business-premium/m
 
 Une fois que vous avez lancé la version d’évaluation et terminé le processus d’installation, l’application des modifications peut prendre jusqu’à 2 heures.
 
-Nous avons configuré automatiquement des stratégies de sécurité [prédéfinies](/security/office-365-security/preset-security-policies.md) dans votre environnement. Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
+Microsoft 365 Business Premium inclut des [stratégies de sécurité prédéfinies](/security/office-365-security/preset-security-policies.md) que vous pouvez utiliser dans votre environnement. Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
 
-- Coffre liens, Coffre pièces jointes et stratégies anti-hameçonnage qui sont limitées à l’ensemble du client ou du sous-ensemble d’utilisateurs que vous avez peut-être choisi au cours du processus de configuration de la version d’évaluation.
+- [Liens fiables](../security/office-365-security/safe-links.md), [pièces jointes fiables](../security/office-365-security/safe-attachments.md)et stratégies [anti-hameçonnage](../security/office-365-security/anti-phishing-protection.md) qui s’appliquent à l’ensemble du locataire ou au sous-ensemble d’utilisateurs que vous avez peut-être choisis pendant le processus de configuration de l’évaluation. (Votre abonnement d’évaluation est destiné à un maximum de 25 utilisateurs.)
 
-- Protection de toutes les fonctionnalités Microsoft 365 Business Premium telles que : SharePoint, OneDrive, les applications Office et Microsoft Teams.
+- Protection des applications de productivité, telles que [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Approsoft Office](/deployoffice/about-microsoft-365-apps) et [Microsoft Teams](/microsoftteams/teams-overview).
 
 ## <a name="add-a-domain"></a>Ajouter un domaine
 
@@ -51,14 +51,14 @@ Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, 
 
 1. Dans le menu du Centre d’administration, choisissez **Configurer** pour démarrer l’Assistant.
 
-2. Sélectionnez **Configurer l’e-mail avec un domaine personnalisé**, puis **utilisez un domaine que vous possédez déjà**, tel que contoso.com.
+2. Sélectionnez **Configurer l’e-mail avec un domaine personnalisé**, puis **utilisez un domaine que vous possédez déjà**, tel que contoso.com`contoso.com`.
 
 3. Suivez les autres étapes de l’Assistant pour terminer le processus.
 
    > [!Important]
-   > Si vous avez acheté un domaine pendant l’inscription, vous ne verrez pas l’étape Ajouter un domaine ici. Accédez à Ajouter des utilisateurs à la place.
+   > Si vous avez acheté un domaine pendant l’inscription, vous ne verrez pas l’étape **Ajouter** un domaine ici. Accédez à **Ajouter des utilisateurs** à la place.
 
-4. Suivez les étapes de l’Assistant pour Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365 qui vérifie que vous êtes le propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir Ajouter un domaine à Microsoft 365.
+4. Suivez les étapes de l’Assistant pour [Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes le propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir [Ajouter un domaine à Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 5. Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec connexion de domaine, le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
 
