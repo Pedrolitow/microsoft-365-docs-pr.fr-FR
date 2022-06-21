@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: bc119e3d45c625ec89cc4edccbeea34508b6b012
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637448"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185190"
 ---
-# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Planifier Bookings fermetures d’entreprises, congés et congés
+# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Planifier les fermetures d’entreprises Bookings, les congés et les congés
 
 Parfois, vous voudrez fermer votre entreprise pour des vacances ou des événements d’équipe, ou vos employés auront besoin de congés lorsqu’ils sont malades, en vacances ou indisponibles pour d’autres raisons. Vous pouvez planifier un congé à partir du calendrier Microsoft Bookings, et l’employé ne sera pas disponible pour les réservations pendant l’heure spécifiée. Une fois l’entreprise rouverte ou les employés de retour au travail, tout le monde sera répertorié sur la page de réservation en fonction de leurs heures de travail établies.
 
@@ -30,11 +30,11 @@ Planifier des fermetures d’entreprise ou des congés d’employés.
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
-1. Choisissez votre calendrier. 
+1. Choisissez votre calendrier.
 
 1. Dans le volet de navigation supérieur, **sélectionnez Ajouter un délai d’attente**.
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings bouton Affichage calendrier et délai d’attente.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Affichage calendrier des réservations et bouton Congé.":::
 
 1. Renseignez les détails, notamment un titre, une date et une heure de début et de fin, un emplacement et des notes supplémentaires.
 
@@ -58,7 +58,7 @@ Lorsqu’un client tente de planifier le service un jour où le bureau est ferm�
 
 1. Dans le volet de navigation supérieur, **sélectionnez Ajouter un délai d’attente**.
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings bouton Affichage calendrier et délai d’attente.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Affichage calendrier des réservations et bouton Congé.":::
 
 1. Renseignez les détails, notamment un titre, une date et une heure de début et de fin, un emplacement et d’autres notes. Si l’employé est absent pendant une journée entière ou plusieurs jours, sélectionnez **Événement de la journée entière**.
 

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de service, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qui sont qualifiés pour fournir le service.
-ms.openlocfilehash: 0c302e8d84274fa2df8eea27362407ded4a468e3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 2daae2139e3d2d4107f4aaed1b94ca655877000a
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637778"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185080"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de service dans Bookings
 
@@ -22,11 +22,15 @@ Lorsque vous définissez vos offres de service dans Microsoft Bookings, vous dé
 
 Vous pouvez également ajouter des informations personnalisées et des URL à la confirmation par e-mail et aux rappels que vous envoyez lorsque quelqu’un réserve un service via votre page de réservation.
 
-## <a name="create-the-service-details"></a>Créer les détails du service
+## <a name="watch-create-a-new-service"></a>Regarder : Créer un service
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
 
-2. Accédez à **Vos** **calendarServices** >  et **sélectionnez Ajouter un nouveau service**.
+## <a name="steps"></a>Étapes
+
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **bookings**.
+
+2. Accédez à Vos **services** **de calendrier** >  et **sélectionnez Ajouter un nouveau service**.
 
 3. Dans la page **Informations de base** , ajoutez vos sélections.
 
@@ -58,9 +62,9 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
    **Prix non défini** : sélectionnez les options de prix qui s’affichent sur la page Self-Service. Si **le prix non défini** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
 
-   **Remarques** : ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que sur l’événement qui apparaît sous l’onglet Calendrier dans l’application web Bookings.
+   **Remarques** : ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que sur l’événement qui apparaît sous l’onglet Calendrier de l’application web Bookings.
 
-   **Nombre maximal de participants par événement** : ce paramètre vous permet de créer des services qui nécessitent la possibilité pour plusieurs personnes de réserver le même temps de rendez-vous et le même personnel (par exemple, un cours de fitness). L’emplacement d’heure de rendez-vous pour le service, le personnel et l’heure sélectionnés sera disponible pour réserver jusqu’à ce que le nombre maximal de participants, spécifié par vous, soit atteint. La capacité de rendez-vous actuelle et les participants peuvent être affichés sous l’onglet Calendrier de l’application web Bookings.
+   **Nombre maximal de participants par événement** : ce paramètre vous permet de créer des services qui nécessitent la possibilité pour plusieurs personnes de réserver le même temps de rendez-vous et le même personnel (par exemple, un cours de fitness). L’emplacement d’heure de rendez-vous pour le service, le personnel et l’heure sélectionnés sera disponible pour réserver jusqu’à ce que le nombre maximal de participants, spécifié par vous, soit atteint. La capacité de rendez-vous et les participants actuels peuvent être affichés sous l’onglet Calendrier de l’application web Bookings.
 
    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings":::
 
@@ -74,7 +78,7 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
      - **Annuler la réservation** Cela annule la réservation et la supprime du calendrier du personnel.
      - **Nouvelle réservation** Cette option permet à l’utilisateur d’accéder à la page Self-Service avec tous les services et le personnel répertoriés, pour planifier une nouvelle réservation.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bouton Gérer Bookings dans Bookings.":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bouton Gérer les réservations dans Bookings.":::
 
       Nous vous recommandons de laisser ce paramètre activé uniquement si vous êtes à l’aise avec les clients qui accèdent à la page Self-Service.
 
@@ -88,7 +92,7 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
 5. **Prix par défaut**  Il s’agit du prix qui s’affiche sur la page Self-Service. Si **le prix non défini** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
 
-6. **Notes** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier de l’application web Bookings.
+6. **Notes** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que sur l’événement qui apparaît sous l’onglet Calendrier de l’application web Bookings.
 
 7. **Les champs personnalisés** peuvent être utiles lors de la collecte d’informations nécessaires chaque fois que le rendez-vous spécifique est réservé. Il peut s’agir, par exemple, d’un fournisseur d’assurance avant une visite à la clinique, d’un type de prêt pour les consultations sur les prêts, d’une grande partie de l’étude pour les conseils universitaires ou d’un ID de candidat pour les entrevues de candidats. Ces champs s’affichent sur la page Booking lorsque vos clients réservent des rendez-vous avec vous et votre personnel.
 
@@ -106,12 +110,12 @@ Vous pouvez également ajouter des informations personnalisées et des URL à la
 
    - Zone d’acceptation sur la page de réservation manuelle et de Self-Service :
 
-     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’adhésion dans Bookings.":::
+     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’acceptation dans Bookings.":::
 
    - Les notifications par SMS se présentent comme suit (notez que SMS notifications ne sont actuellement disponibles que dans Amérique du Nord) :
 
-     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Notification de texte de Bookings.":::
+     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Notification textuelle de Bookings.":::
 
 10. Les **options de planification par défaut** sont activées par défaut. Désactivez le bouton bascule si vous souhaitez personnaliser la façon dont les clients réservent un membre du personnel en particulier.
 
-11. **Options de publication** Choisissez si ce service doit apparaître comme pouvant être réservé sur la page Self-Service, ou pour rendre le service accessible uniquement sous l’onglet Calendrier dans l’application web Bookings.
+11. **Options de publication** Choisissez si ce service doit apparaître comme pouvant être réservé sur la page Self-Service, ou pour rendre le service accessible uniquement sous l’onglet Calendrier dans l’application Web Bookings.

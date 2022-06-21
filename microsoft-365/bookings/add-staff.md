@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Utilisez cette page pour créer votre liste de membres du personnel et gérer les détails des membres du personnel, tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: d5e35ae301acc785803b0c5374b4bc50bbf499e0
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b9acf72e9026b230702ed4cad232a92842b51028
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637227"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185146"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -29,7 +29,7 @@ Bien Bookings est une fonctionnalité de Microsoft 365, tous les membres de votr
 
 ## <a name="steps"></a>Étapes
 
-1. Choisissez votre calendrier dans la page d’accueil. 
+1. Choisissez votre calendrier dans la page d’accueil.
 
 2. Accédez à l’option Personnel dans le volet gauche et **sélectionnez Ajouter un nouveau personnel**.
 

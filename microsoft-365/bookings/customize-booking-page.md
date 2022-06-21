@@ -9,18 +9,24 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft Bookings.
-ms.openlocfilehash: 1c00f87f3447b7002bf647086ee60c756662803d
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: df91e0855615612cfca1fc24a3ddf4cdcb992b0e
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637800"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185102"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
 
 La page De réservation est l’endroit où vous configurez à quoi ressemblera votre page de réservation externe. Une fois que vous avez personnalisé et publié votre page de réservation, les utilisateurs l’utiliseront pour réserver des rendez-vous avec vous.
 
-Pour personnaliser votre page de réservation, connectez-vous à [Office.com](https://office.com), puis accédez à **Bookings** \> **page Booking**. Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les utilisateurs puissent commencer à réserver des rendez-vous avec vous.
+Pour personnaliser votre page de réservation, connectez-vous à [Office.com](https://office.com), puis accédez à la page **Bookings** \> **Booking**. Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les utilisateurs puissent commencer à réserver des rendez-vous avec vous.
+
+## <a name="watch-customize-and-publish-your-booking-page"></a>Regarder : Personnaliser et publier votre page de réservation
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
+
+## <a name="steps"></a>Étapes
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
@@ -34,7 +40,7 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
     La page de réservation interne ressemble à ceci :
 
-    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Page Bookings.":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Page Réservations.":::
 
 - **Contrôle d’accès aux pages de réservation : Exiger un compte Microsoft 365 de mon organisation pour réserver** La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du locataire.
 
@@ -44,7 +50,7 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
 - **Stratégie de planification**, **notifications par e-mail** et **personnel** . Tous ces paramètres sont similaires à ceux disponibles pour chaque service sous l’onglet Services.
 
-- **Disponibilité** Il s’agit d’une option permettant de définir des plages d’heures et de dates spécifiques de disponibilité pour un service. Sinon, Bookings sera défini par défaut sur vos heures d’ouverture. Vous pouvez utiliser l’option **Disponibilité** ici pour des scénarios tels que des jours fériés ou des heures prolongées.
+- **Disponibilité** Il s’agit d’une option permettant de définir des plages d’heures et de dates spécifiques de disponibilité pour un service. Dans le cas contraire, Bookings sera défini par défaut sur vos heures d’ouverture. Vous pouvez utiliser l’option **Disponibilité** ici pour des scénarios tels que des jours fériés ou des heures prolongées.
 
 - **Personnaliser votre page** Choisissez les couleurs et logos qui apparaissent sur la page Self-Service, par exemple pour la cohérence de la marque.
 
@@ -54,21 +60,21 @@ Une fois que vous avez publié votre page de réservation, les clients voient vo
 
 :::image type="content" source="media/bookings-self-service-2.png" alt-text="Page de réservation du client.":::
 
-## <a name="publish-the-booking-page"></a>Publier la page de réservation
+<!-- ## Publish the booking page
 
-Regardez cette vidéo ou suivez les étapes ci-dessous pour publier ou annuler la publication de votre page de réservation.
+Watch this video or follow the steps below to publish or unpublish your booking page.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
+1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. Dans le volet de navigation, sélectionnez **Page Réservation**.
+1. In the navigation pane, select **Booking page**.
 
-1. Vérifiez que vos stratégies de planification sont correctes. Pour plus [d’informations, consultez Définir vos stratégies de planification](set-scheduling-policies.md) .
+1. Verify your scheduling policies are correct. See [Set your scheduling policies](set-scheduling-policies.md) for more information.
 
-1. Sélectionnez **Enregistrer et publier**. Un message de confirmation s’affiche.
+1. Select **Save and publish**. You'll see a confirmation message.
 
-1. Sélectionnez **Ouvrir la page publiée** pour afficher votre page dans un navigateur web.
+1. Select **Open published page** to see your page in a web browser. -->
 
 ## <a name="unpublish-the-booking-page"></a>Annuler la publication de la page de réservation
 

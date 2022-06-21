@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9cae28cc69d67bb18058e2c81cd8235ffce79997
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754397"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185366"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements Advanced Hunting vers votre Hub d’événements Azure
 
@@ -33,7 +33,7 @@ ms.locfileid: "65754397"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Avant de configurer Microsoft 365 Defender pour diffuser des données vers Event Hubs, vérifiez que les conditions préalables suivantes sont remplies :
 
@@ -111,6 +111,23 @@ Pour obtenir les types de données pour les propriétés d’événement, procé
 - Voici un exemple d’événement Device Info :
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="Exemple de requête pour les informations sur l’appareil" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## <a name="estimating-initial-event-hub-capacity"></a>Estimation de la capacité initiale d’Event Hub
+La requête Advanced Hunting suivante peut vous aider à fournir une estimation approximative du débit du volume de données et de la capacité initiale du hub d’événements en fonction des événements/s et du Mo/s estimé. Nous vous recommandons d’exécuter la requête pendant les heures normales de bureau afin de capturer le débit « réel ».
+ 
+```kusto 
+let bytes_ = 500;
+union withsource=MDTables*
+| where Timestamp > startofday(ago(6h))
+| summarize count() by bin(Timestamp, 1m), MDTables
+| extend EPS = count_ /60
+| summarize avg(EPS), estimatedMBPerSec = (avg(EPS) * bytes_ ) / (1024*1024) by MDTables
+| sort by toint(estimatedMBPerSec) desc
+```
+
+## <a name="monitoring-created-resources"></a>Surveillance des ressources créées
+
+Vous pouvez surveiller les ressources créées par l’API de streaming à l’aide **d’Azure Monitor**. Pour plus d’informations, consultez [l’exportation de données de l’espace de travail Log Analytics dans Azure Monitor](/azure/azure-monitor/logs/logs-data-export). 
 
 ## <a name="related-topics"></a>Voir aussi
 

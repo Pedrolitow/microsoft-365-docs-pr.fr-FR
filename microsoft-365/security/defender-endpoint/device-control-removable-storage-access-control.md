@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/06/2022
-ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/20/2022
+ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043630"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185456"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Stockage Access Control amovibles du contrôle d’appareil
 
@@ -290,7 +290,7 @@ Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpo
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Déploiement et gestion d’une stratégie à l’aide de Intune’interface utilisateur
 
-(*Bientôt disponible!*) Cette fonctionnalité sera disponible dans le centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Accédez à la stratégie de création **de la surface d’attaque** >  de **sécurité** >  du point de **terminaison**. Choisissez **Plateforme : Windows 10 et versions ultérieures** avec **Profil : Contrôle d’appareil**.
+Cette fonctionnalité est disponible dans le centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Accédez à la stratégie de création **de la surface d’attaque** >  de **sécurité** >  du point de **terminaison**. Choisissez **Plateforme : Windows 10 et versions ultérieures** avec **Profil : Contrôle d’appareil**.
 
 ## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Déploiement et gestion des Stockage Access Control amovibles à l’aide de stratégie de groupe
 
@@ -447,7 +447,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Écran illustrant le blocage du stockage amovible.":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>Comment générer un GUID pour l’ID de groupe/ID PolicyRule/ID d’entrée ?
 

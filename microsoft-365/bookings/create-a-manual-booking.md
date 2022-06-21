@@ -9,18 +9,24 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Suivez ces instructions pour créer un rendez-vous et affecter un employé via l’application Microsoft Bookings.
-ms.openlocfilehash: 8b7c54a9d8f06ba2f5618ad77049b87a2c212edb
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b53283bfcd446ab89e7a3c3b647504dcc4c557cb
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637822"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185168"
 ---
 # <a name="create-a-manual-booking"></a>Créer une réservation manuelle
 
 Vous pouvez planifier, puis gérer Bookings de deux façons différentes. La première consiste à utiliser une page de réservation autonome ou une page de réservation incorporée que vous ajoutez à votre site web. L’autre solution consiste, pour vous ou l’un de vos employés, à entrer manuellement les réservations, par exemple lorsqu’un client demande un rendez-vous. Cet article décrit le scénario manuel.
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
+## <a name="watch-create-a-manual-booking"></a>Regarder : Créer une réservation manuelle
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zd77]
+
+## <a name="steps"></a>Étapes
+
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **bookings**.
 
 1. Dans le volet de navigation, sélectionnez **Calendrier** \> **Nouveau réservation**.
 

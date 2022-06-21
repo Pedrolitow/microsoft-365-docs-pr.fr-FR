@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1cd395b377d9d9b0a20ef1d01956a27c559afb42
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637249"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185058"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Heures de travail des employés dans Microsoft Bookings
 
@@ -30,7 +30,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-## <a name="customize-employee-working-hours"></a>Personnaliser les heures de travail des employés
+## <a name="steps"></a>Étapes
 
 1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis sélectionnez **Bookings**.
 
@@ -42,7 +42,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures 
 
 1. Utilisez les listes déroulantes pour sélectionner les heures de début et de fin pour chaque jour. Les heures sont disponibles par incréments de 15 minutes.
 
-   ![Image de Bookings écran des heures de travail du personnel.](../media/bookings-staff-hours.png)
+   ![Image de l’écran des heures de travail du personnel de Bookings.](../media/bookings-staff-hours.png)
 
 1. Sélectionnez **+** cette option pour ajouter des sélecteurs de début et de fin.
 
@@ -54,7 +54,7 @@ Lorsque vous planifiez un jour de congé pour un employé, cet employé apparaî
 
 1. Dans l’écran des heures de travail, sélectionnez le **x** à côté du jour où l’employé aura désactivé.
 
-   ![Image de Bookings écran des heures de travail du personnel avec le bouton pointant sur x.](../media/bookings-staff-time-off.png)
+   ![Image de l’écran des heures de travail du personnel de Bookings avec le bouton pointant sur x.](../media/bookings-staff-time-off.png)
 
 1. Si vous souhaitez planifier un jour précédemment marqué comme un jour de congé, sélectionnez le **+** signe en regard du jour que vous souhaitez planifier.
 
