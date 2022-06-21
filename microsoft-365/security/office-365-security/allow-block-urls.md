@@ -1,5 +1,5 @@
 ---
-title: Autoriser ou bloquer des URL à l’aide de la liste d’autorisations/de blocs du locataire
+title: Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des URL dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 72183614b8d74dad5e173b5db51ab35e4d2e6a49
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 69d9b4725e0a2c57dac8bb711655b9e0ff02e3e5
+ms.sourcegitcommit: 7df8adc9e67ab65e413d7ea7bb0dcb9fd2da1a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159787"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185811"
 ---
-# <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des URL à l’aide de la liste d’autorisations/de blocs du locataire
+# <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des URL utilisant la liste Autoriser/Bloquer des clients
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -320,7 +320,9 @@ Autorisez les URL sur la page **Soumissions** dans Microsoft 365 Defender.
 
 6. Dans la liste déroulante **Supprimer après** , spécifiez la durée pendant laquelle vous souhaitez que l’option d’autorisation fonctionne.
 
-7. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
+7. Ajoutez la raison pour laquelle vous ajoutez autoriser à l’aide de la **note facultative**. 
+
+8. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
     :::image type="content" source="../../media/submit-url-for-analysis.png" alt-text="Envoyer l’URL à des fins d’analyse" lightbox="../../media/submit-url-for-analysis.png":::
 

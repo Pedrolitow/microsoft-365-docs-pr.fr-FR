@@ -1,5 +1,5 @@
 ---
-title: Autoriser ou bloquer des fichiers à l’aide de la liste d’autorisations/de blocs du locataire
+title: Autoriser ou bloquer des fichiers utilisant la liste Autoriser/Bloquer des clients
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer des fichiers dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65f5a0706b49312ee4b12a626f7ecd0d600c93df
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: a85af4beda791fb9cc2382a48a701406941d0325
+ms.sourcegitcommit: 7df8adc9e67ab65e413d7ea7bb0dcb9fd2da1a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159799"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185799"
 ---
-# <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des fichiers à l’aide de la liste d’autorisations/de blocs du locataire
+# <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des fichiers utilisant la liste Autoriser/Bloquer des clients
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -91,7 +91,9 @@ Autoriser les fichiers sur la page **Soumissions** dans Microsoft 365 Defender.
 
 6. Dans la liste déroulante **Supprimer après** , spécifiez la durée pendant laquelle vous souhaitez que l’option d’autorisation fonctionne.
 
-7. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
+7. Ajoutez la raison pour laquelle vous ajoutez autoriser à l’aide de la **note facultative**. 
+
+8. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
 
   :::image type="content" source="../../media/submit-email-for-analysis.png" alt-text="Envoyer un e-mail à des fins d’analyse." lightbox="../../media/submit-email-for-analysis.png":::
 
