@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez plus d’informations sur la version d’évaluation des solutions Microsoft Purview et sur la façon de vous inscrire.
-ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188831"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185124"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>À propos de la version d’évaluation des solutions Microsoft Purview
 
@@ -109,7 +109,7 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
    À la fin de la version d’évaluation :
 
   - Vos stratégies existantes resteront allumées, sauf si vous les avez désactivées.
-  - Si vous modifiez des stratégies DLP qui incluent les emplacements Teams ou Appareils à la fin de la version d’essai, ces emplacements seront supprimés de la stratégie.
+  - Vous ne pourrez plus modifier ou ajouter des emplacements Teams ou Appareils dans des stratégies existantes ou nouvelles.
 
 - **eDiscovery**
 
