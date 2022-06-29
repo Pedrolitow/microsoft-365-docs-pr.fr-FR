@@ -1,5 +1,5 @@
 ---
-title: Charges utiles pour l’entraînement de simulation d’attaque
+title: Charges utiles dans l’entraînement de simulation d’attaque
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer et à gérer des charges utiles pour la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: a21e3e72e435e9aaa53fb5fab825be6c490017fe
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840230"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487221"
 ---
-# <a name="payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Formation à la simulation d’attaque pour les charges utiles dans Defender pour Office 365
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Charges utiles dans l’entraînement de simulation d’attaque dans Defender pour Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -178,7 +178,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
      - <https://www.windocyte.com>
 
      > [!NOTE]
-     > Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une simulation. Pour plus d’informations, consultez [URL de simulation d’hameçonnage bloquées par Google Coffre Navigation](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
+     > Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une simulation. Pour plus d’informations, consultez [URL de simulation d’hameçonnage bloquées par la navigation sécurisée google](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
 
    - **Section Contenu de** la pièce jointe : cette section est disponible uniquement si vous avez sélectionné **Lien en pièce jointe** dans la page **Sélectionner la technique** .
 
@@ -190,7 +190,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
      - **Ajouter des balises**
   
-     - **Thème** : Les valeurs disponibles sont : **Activation** du **compte, vérification du compte**, **facturation**, nettoyage du **courrier**, **Document reçu**, **Dépenses**, **Télécopie**, **Rapport financier**, **Messages entrants**, **Facture**, **Élément reçu**, Alerte de **connexion**, **Courrier reçu**, **Autre**, **Mot de passe**, **Paiement**, **Paie**, **Offre personnalisée**, **Quarantaine** , **Travail à distance**, **passer en revue le message**, **mise à jour de sécurité**, **service suspendu**, **signature requise**, **mise à niveau de la boîte aux lettres Stockage**, vérifier la **boîte aux lettres** ou la **messagerie vocale**.
+     - **Thème** : Les valeurs disponibles sont : **Activation** du **compte, vérification du compte**, **facturation**, nettoyage du **courrier**, **Document reçu**, **Dépenses**, **Télécopie**, **Rapport financier**, **Messages entrants**, **Facture**, **Élément reçu**, Alerte de **connexion**, **Courrier reçu**, **Autre**, **Mot de passe**, **Paiement**, **Paie**, **Offre personnalisée**, **Quarantaine** , **Travail à distance**, **Passer en revue le message**, **mise à jour de sécurité**, **service suspendu**, **signature requise**, **mise à niveau du stockage de boîte aux lettres**, vérifier la **boîte aux lettres** ou **la messagerie vocale**.
   
      - **Marque** : Les valeurs disponibles sont **: American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** ou **Autres**.
   
@@ -334,7 +334,7 @@ Sous les **onglets Charges utiles du locataire** ou **Charges utiles globales** 
 
 Sélectionnez la charge utile dans la liste en cochant la case, puis cliquez sur l’icône ![Envoyer un test.](../../media/m365-cc-sc-send-icon.png) **Envoyer un bouton de test** qui s’affiche.
 
-## <a name="related-links"></a>Liens connexes
+## <a name="related-links"></a>Liens associés
 
 [Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Diffuser en continu des événements Microsoft Defender pour point de terminaison vers votre compte Stockage
-description: Découvrez comment configurer Microsoft Defender pour point de terminaison pour diffuser en continu des événements Advanced Hunting vers votre compte Stockage.
+title: Diffuser en continu des événements Microsoft Defender pour point de terminaison vers votre compte de stockage
+description: Découvrez comment configurer Microsoft Defender pour point de terminaison pour diffuser en continu des événements Advanced Hunting vers votre compte de stockage.
 keywords: exportation de données brutes, API de streaming, API, Event Hubs, stockage Azure, compte de stockage, repérage avancé, partage de données brutes
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5d4917e2464964da819af0a06f0b8e4883dfea9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: c94830e4f9dbfe16a8dfafba35aecb5a36efddf5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783884"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493440"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour point de terminaison pour diffuser en continu des événements advanced hunting vers votre compte Stockage
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour point de terminaison pour diffuser en continu des événements de repérage avancé vers votre compte de stockage
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -34,7 +34,7 @@ ms.locfileid: "64783884"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-1. Créez un [compte Stockage](/azure/storage/common/storage-account-overview) dans votre locataire.
+1. Créez un [compte de stockage](/azure/storage/common/storage-account-overview) dans votre locataire.
 
 2. Connectez-vous à votre [locataire Azure](https://ms.portal.azure.com/), accédez à **Abonnements > votre abonnement > fournisseurs de ressources > inscrivez-vous à Microsoft.insights**.
 
@@ -42,21 +42,21 @@ ms.locfileid: "64783884"
 
 1. Connectez-vous à [Microsoft 365 Defender](https://security.microsoft.com) en tant qu'***administrateur général** _ ou _*_Administrateur de sécurité_**.
 
-2. Accédez à la [page Des paramètres d’exportation de données](https://security.microsoft.com/interoperability/dataexport) dans Microsoft 365 Defender.
+2. Accédez à la [page Des paramètres d’exportation de données](https://security.microsoft.com/settings/mtp_settings/raw_data_export) dans Microsoft 365 Defender.
 
 3. Cliquez sur **Ajouter des paramètres d’exportation de données**.
 
 4. Choisissez un nom pour vos nouveaux paramètres.
 
-5. Choisissez **Transférer les événements à stockage Azure**.
+5. Choisissez **Transférer des événements vers stockage Azure**.
 
-6. Tapez votre **ID de ressource de compte Stockage**. Pour obtenir votre **ID de ressource de compte Stockage**, accédez à la page de votre compte Stockage sous [Portail Azure](https://ms.portal.azure.com/) \> onglet \> Propriétés, copiez le texte sous **Stockage ID de ressource de compte** :
+6. Tapez votre **ID de ressource de compte de stockage**. Pour obtenir votre **ID de ressource de compte de stockage**, accédez à la page de votre compte de stockage [sous Portail Azure](https://ms.portal.azure.com/) \> onglet \> Propriétés, copiez le texte sous **l’ID de ressource du compte de stockage** :
 
    :::image type="content" source="images/storage-account-resource-id.png" alt-text="Event Hubs avec l’ID de ressource 1" lightbox="images/storage-account-resource-id.png":::
 
 7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer**.
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schéma des événements dans le compte Stockage
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schéma des événements dans le compte de stockage
 
 - Un conteneur d’objets blob est créé pour chaque type d’événement :
 
@@ -99,9 +99,9 @@ Pour obtenir les types de données pour nos propriétés d’événements, proc�
 
   :::image type="content" source="images/data-types-mapping-query.png" alt-text="Event Hubs avec l’ID de ressource 3" lightbox="images/data-types-mapping-query.png":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble de la chasse avancée](advanced-hunting-overview.md)
 - [API de diffusion en continu Microsoft Defender pour point de terminaison](raw-data-export.md)
 - [Diffuser en continu des événements Microsoft Defender pour point de terminaison vers votre compte de stockage Azure](raw-data-export-storage.md)
-- [documentation du compte stockage Azure](/azure/storage/common/storage-account-overview)
+- [Documentation sur le compte de stockage Azure](/azure/storage/common/storage-account-overview)

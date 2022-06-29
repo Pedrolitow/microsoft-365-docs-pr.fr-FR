@@ -4,8 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble sur la façon de former votre équipe pour protéger votre courrier contre les programmes malveillants, le hameçonnage et d’autres cyberattaques malveillantes, à l’aide des outils de cybersécurité inclus dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 16e1107b67a406c5058d2e83a3f5d955bb748c39
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 7ffefa26e53dcde0f34451db3dfdccd014b9b555
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893166"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493657"
 ---
 # <a name="protect-all-email"></a>Protéger tous les e-mails
 

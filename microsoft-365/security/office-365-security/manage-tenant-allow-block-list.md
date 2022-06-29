@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc32e6827e9751dc72d28b8eff79d1966f43f646
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c1790b908389839b1fd35525d5f8e33b58192d67
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159770"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492163"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 
@@ -33,7 +33,7 @@ ms.locfileid: "66159770"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans Exchange Online boîtes aux lettres, vous pouvez être en désaccord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message incorrect peut être autorisé (un faux négatif).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans Exchange Online boîtes aux lettres, vous pouvez être en désaccord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message incorrect peut être autorisé (un faux négatif).
 
 La liste d’autorisation/de blocage des locataires dans le portail Microsoft 365 Defender vous permet de remplacer manuellement les verdicts de filtrage Microsoft 365. La liste d’autorisation/de blocage du locataire est utilisée pendant le flux de messagerie pour les messages entrants (ne s’applique pas aux messages intra-organisation) et au moment où l’utilisateur clique. Vous pouvez spécifier les types de remplacements suivants :
 
@@ -45,11 +45,11 @@ La liste d’autorisation/de blocage des locataires dans le portail Microsoft 36
 - Fichiers à autoriser.
 - E-mails ou domaines de l’expéditeur à autoriser.
 
-Cet article explique comment configurer des entrées dans la liste verte/bloquée du locataire dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres).
+Cet article explique comment configurer des entrées dans la liste verte/de blocage des locataires dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online  boîtes aux lettres).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
+- Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
 - Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
 
@@ -89,17 +89,13 @@ Cet article explique comment configurer des entrées dans la liste verte/bloqué
 
 ## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’autorisations/blocages du locataire
 
-### <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender
-
-Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
-
-### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser Exchange Online PowerShell ou PowerShell EOP autonome
-
 Pour autoriser ou bloquer des e-mails, consultez [Autoriser ou bloquer les e-mails à l’aide de la liste d’autorisation/de blocage du locataire](allow-block-email-spoof.md).
 
 Pour autoriser ou bloquer des fichiers, consultez [Autoriser ou bloquer des fichiers à l’aide de la liste d’autorisations/de blocs du locataire](allow-block-files.md).
 
 Pour autoriser ou bloquer des URL, consultez [Autoriser ou bloquer des URL à l’aide de la liste d’autorisations/de blocs du locataire](allow-block-urls.md).
+
+Ces articles contiennent les instructions permettant d’ajouter ou de supprimer ou de modifier des entrées dans la liste d’autorisation/de blocage du locataire à l’aide du portail Microsoft 365 Defender et de Exchange Online PowerShell ou de PowerShell EOP autonome.
 
 ### <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
 

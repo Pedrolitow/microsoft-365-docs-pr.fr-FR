@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la sécurité pour Microsoft 365 Business Premium qui fournit des outils de cybersécurité tels que l’authentification multifacteur que vous pouvez utiliser pour empêcher les cyberattaques.
-ms.openlocfilehash: e8e9a2d4e9a7593806c2b8d75a861caa8c8a22ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c6941de1c52eaeaf87f45d5269770fe1fd2585a8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101646"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493665"
 ---
 # <a name="bump-up-security"></a>Augmenter la sécurité
 

@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac43b62c16cd3e1394cec7a1a75e69bf613757ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d9824a738468f14ebfc7cd7bdc3c612c21a0e43c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934332"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493106"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour point de terminaison
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ Selon les produits de sécurité Microsoft que vous utilisez, certaines fonction
 
 ## <a name="enable-advanced-features"></a>Activer les fonctionnalités avancées
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Fonctionnalités avancées des points de terminaison**\>.
+1. Dans le volet de navigation, sélectionnez **Paramètres points** \> **de terminaison Fonctionnalités avancées**\>.
 2. Sélectionnez la fonctionnalité avancée que vous souhaitez configurer et basculez le paramètre entre **Activé** et **Désactivé**.
 3. Cliquez sur **Enregistrer les préférences**.
 
@@ -78,9 +78,9 @@ Cette configuration peut être utilisée pour les scénarios où les opérations
 > [!NOTE]
 > La modification de ce paramètre affecte uniquement les corrélations d’alerte futures.
 
-## <a name="enable-edr-in-block-mode"></a>Activer PEPT en mode bloc
+## <a name="enable-edr-in-block-mode"></a>Activer EDR en mode bloc
 
-La détection et la réponse des points de terminaison (PEPT) en mode bloc offrent une protection contre les artefacts malveillants, même quand Antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’elle est activée, PEPT en mode bloc bloque les artefacts ou comportements malveillants détectés sur un appareil. PEPT en mode bloc fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après la violation.
+La détection et la réponse des points de terminaison (EDR) en mode bloc offrent une protection contre les artefacts malveillants, même lorsque l’antivirus Microsoft Defender s’exécute en mode passif. Lorsqu’il est activé, l’EDR en mode bloc bloque les artefacts ou comportements malveillants détectés sur un appareil. L’EDR en mode bloc fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après la violation.
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertes corrigées autoresolve
 
@@ -98,14 +98,14 @@ Pour les locataires créés sur ou après Windows 10, version 1809, la fonctionn
 
 Le blocage n’est disponible que si votre organisation répond aux exigences suivantes :
 
-- Utilise Antivirus Microsoft Defender comme solution de logiciel anti-programme malveillant actif et,
+- Utilise l’antivirus Microsoft Defender comme solution de logiciel anti-programme malveillant actif et,
 - La fonctionnalité de protection basée sur le cloud est activée
 
 Cette fonctionnalité vous permet de bloquer les fichiers potentiellement malveillants dans votre réseau. Le blocage d’un fichier empêche sa lecture, son écriture ou son exécution sur les appareils de votre organisation.
 
 Pour activer **autoriser ou bloquer** des fichiers :
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> Points de **terminaison Fonctionnalités avancées** **générales** \>  \> \> **Autoriser ou bloquer le fichier**.
+1. Dans le volet de navigation, sélectionnez **Paramètres des** \> **points de terminaison Fonctionnalités avancées générales** \>  \>  \> **Autoriser ou bloquer le fichier**.
 
 1. Activez **et** **désactivez** le paramètre.
  
@@ -129,9 +129,9 @@ Pour plus d’informations, consultez [Gérer les indicateurs](manage-indicators
 ## <a name="tamper-protection"></a>Protection contre les falsifications
 Pendant certains types de cyberattaques, les mauvais acteurs essaient de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos machines. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils.
 
-La protection contre les falsifications verrouille essentiellement Antivirus Microsoft Defender et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes.
+La protection contre les falsifications verrouille essentiellement l’Antivirus Microsoft Defender et empêche la modification de vos paramètres de sécurité par le biais d’applications et de méthodes.
 
-Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender et que la protection basée sur le cloud est activée. Pour plus d’informations, consultez [Utiliser des technologies de nouvelle génération dans Antivirus Microsoft Defender par le biais d’une protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md).
+Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender et que la protection basée sur le cloud est activée. Pour plus d’informations, consultez [Utiliser des technologies de nouvelle génération dans l’antivirus Microsoft Defender via une protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md).
 
 Maintenez la protection contre les falsifications activée pour empêcher les modifications indésirables apportées à votre solution de sécurité et à ses fonctionnalités essentielles.
 
@@ -150,7 +150,7 @@ Pour plus d’informations, consultez [Examiner un compte d’utilisateur](inves
 L’activation de l’intégration Skype Entreprise vous permet de communiquer avec les utilisateurs à l’aide de Skype Entreprise, d’e-mail ou de téléphone. Cette activation peut être pratique lorsque vous devez communiquer avec l’utilisateur et atténuer les risques.
 
 > [!NOTE]
-> Lorsqu’un appareil est isolé du réseau, il existe une fenêtre contextuelle dans laquelle vous pouvez choisir d’activer Outlook et de Skype communications qui permettent les communications à l’utilisateur lorsqu’il est déconnecté du réseau. Ce paramètre s’applique aux communications Skype et Outlook lorsque les appareils sont en mode d’isolation.
+> Lorsqu’un appareil est isolé du réseau, il existe une fenêtre contextuelle dans laquelle vous pouvez choisir d’activer les communications Outlook et Skype, ce qui permet les communications à l’utilisateur lorsqu’il est déconnecté du réseau. Ce paramètre s’applique aux communications Skype et Outlook lorsque les appareils sont en mode isolation.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>intégration Microsoft Defender pour Identity
 
@@ -163,7 +163,7 @@ L’intégration à Microsoft Defender pour Identity vous permet de pivoter dire
 
 Cette fonctionnalité n’est disponible que si vous disposez d’un Office 365 E5 actif ou du module complémentaire Threat Intelligence. Pour plus d’informations, consultez la page du produit Office 365 Entreprise E5.
 
-Lorsque vous activez cette fonctionnalité, vous pouvez incorporer des données de Microsoft Defender pour Office 365 dans Microsoft 365 Defender afin d’effectuer une enquête de sécurité complète sur les boîtes aux lettres Office 365 et les appareils Windows.
+Lorsque vous activez cette fonctionnalité, vous pouvez incorporer des données de Microsoft Defender pour Office 365 dans Microsoft 365 Defender afin d’effectuer une enquête de sécurité complète sur Office 365 boîtes aux lettres et appareils Windows.
 
 > [!NOTE]
 > Vous devez disposer de la licence appropriée pour activer cette fonctionnalité.
@@ -179,7 +179,7 @@ Parmi les deux composants Microsoft Threat Expert, la notification d’attaque c
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-L’activation de ce paramètre transfère les signaux Defender pour point de terminaison à Microsoft Defender for Cloud Apps afin de fournir une visibilité plus approfondie sur l’utilisation des applications cloud. Les données transférées sont stockées et traitées au même emplacement que vos données Defender pour le cloud Apps.
+L’activation de ce paramètre transfère les signaux Defender pour point de terminaison à Microsoft Defender for Cloud Apps afin de fournir une visibilité plus approfondie sur l’utilisation des applications cloud. Les données transférées sont stockées et traitées au même emplacement que vos données Defender pour Cloud Apps.
 
 > [!NOTE]
 > Cette fonctionnalité sera disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10, version 1709 (build du système d’exploitation 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (build du système d’exploitation 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809  (OS Build 17763.379 avec [KB4489899](https://support.microsoft.com/help/4489899)), versions ultérieures Windows 10 ou Windows 11.
@@ -200,11 +200,15 @@ Une fois les étapes d’intégration effectuées sur les deux portails, vous po
 
 Bloquez l’accès aux sites web contenant du contenu indésirable et suivez l’activité web dans tous les domaines. Pour spécifier les catégories de contenu web que vous souhaitez bloquer, créez une [stratégie de filtrage de contenu web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Vérifiez que vous avez une protection réseau en mode bloc lors du déploiement de la [base de référence de sécurité Microsoft Defender pour point de terminaison](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
-## <a name="share-endpoint-alerts-with-microsoft-purview-compliance-portal"></a>Partager des alertes de point de terminaison avec le portail de conformité Microsoft Purview
+## <a name="share-endpoint-alerts-with-microsoft-purview-compliance-portal"></a>Partager des alertes de point de terminaison avec portail de conformité Microsoft Purview
 
-Transfère les alertes de sécurité de point de terminaison et leur état de triage vers le portail de conformité Microsoft Purview, ce qui vous permet d’améliorer les stratégies de gestion des risques internes avec des alertes et de corriger les risques internes avant qu’ils ne causent des dommages. Les données transférées sont traitées et stockées au même emplacement que vos données Office 365.
+Transfère les alertes de sécurité de point de terminaison et leur état de triage à portail de conformité Microsoft Purview, ce qui vous permet d’améliorer les stratégies de gestion des risques internes avec des alertes et de corriger les risques internes avant qu’ils ne causent des dommages. Les données transférées sont traitées et stockées au même emplacement que vos données Office 365.
 
 Après avoir configuré les [indicateurs de violation de stratégie de sécurité dans les paramètres](/microsoft-365/compliance/insider-risk-management-settings#indicators) de gestion des risques internes, les alertes Defender pour point de terminaison sont partagées avec la gestion des risques internes pour les utilisateurs applicables.
+
+## <a name="authenticated-telemetry"></a>Télémétrie authentifiée
+
+Vous pouvez **activer la** télémétrie authentifiée pour empêcher l’usurpation de données de télémétrie dans votre tableau de bord.
 
 ## <a name="microsoft-intune-connection"></a>connexion Microsoft Intune
 
@@ -216,7 +220,7 @@ Defender pour point de terminaison peut être intégré à [Microsoft Intune](/i
 Cette fonctionnalité n’est disponible que si vous disposez des prérequis suivants :
 
 - Un locataire sous licence pour Enterprise Mobility + Security E3 et Windows E5 (ou Microsoft 365 Entreprise E5)
-- Un environnement Microsoft Intune actif, avec des appareils Windows gérés par Intune [Azure AD joints](/azure/active-directory/devices/concept-azure-ad-join/).
+- Un environnement Microsoft Intune actif, avec des appareils Windows gérés par Intune [joints à Azure AD](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### <a name="conditional-access-policy"></a>Stratégie d’accès conditionnel
 

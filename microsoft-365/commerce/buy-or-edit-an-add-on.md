@@ -21,16 +21,16 @@ ms.custom:
 - AdminTemplateSet
 description: Découvrez comment acheter et gérer des modules complémentaires pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/02/2021
-ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101642"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492079"
 ---
-# <a name="buy-or-manage-add-ons"></a>Acheter ou gérer des modules complémentaires
+# <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>Acheter ou gérer des modules complémentaires pour les plans d’entreprise Microsoft 365
 
-De nombreux Microsoft 365 pour les plans d’entreprise ont des modules complémentaires que vous pouvez acheter pour vos abonnements. Les modules complémentaires fournissent d’autres fonctionnalités pour améliorer votre expérience d’abonnement.
+De nombreux plans Microsoft 365 pour les entreprises ont des modules complémentaires que vous pouvez acheter pour vos abonnements. Les modules complémentaires fournissent d’autres fonctionnalités pour améliorer votre expérience d’abonnement.
 
 Il existe deux types de modules complémentaires :
 
@@ -72,7 +72,7 @@ Pour supprimer un abonnement de module complémentaire autonome, vous [annulez l
 
 Vous ne pouvez pas supprimer un module complémentaire traditionnel. Si vous souhaitez supprimer un module complémentaire traditionnel, contactez le support technique pour obtenir de l’aide ([obtenez un support](../admin/get-help-support.md).
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md) (article)\
 [Acheter ou supprimer des licences d’abonnement](licenses/buy-licenses.md) (article)\

@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 8856eade8e271c3b07ec61775c1f462e4b13bcff
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 49e3e2a0d63303b1c5cbdbfd941ba8aaa40594a7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839872"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491700"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Différences entre la compréhension des documents et les modèles de traitement des formulaires 
 
-La compréhension du contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents chargés dans SharePoint bibliothèques de documents, puis d’extraire les informations pertinentes de chaque fichier. Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
+La compréhension du contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents chargés dans les bibliothèques de documents SharePoint, puis d’extraire les informations pertinentes de chaque fichier. Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
 
 La compréhension de contenu vous permet de créer des *modèles* pour identifier et extraire les informations dont vous avez besoin. Les modèles peuvent vous aider à résoudre des problèmes commerciaux liés à la recherche, aux processus commerciaux, à la conformité et bien d’autres.
 
@@ -34,11 +34,11 @@ Vous pouvez utiliser deux types de modèles personnalisés :
 Bien que les deux modèles soient généralement utilisés dans le même but, les principales différences répertoriées ci-dessous affectent ceux que vous pouvez utiliser.
 
 > [!NOTE]
-> Pour plus d’informations sur le traitement des formulaires et les exemples de scénarios de compréhension des documents, consultez [l’Démarrage l’adoption des SharePoint Syntex](./adoption-getstarted.md).
+> Pour plus d’informations sur le traitement des formulaires et les exemples de scénarios de compréhension des documents, consultez la rubrique [Prise en main de l’adoption de SharePoint Syntex](./adoption-getstarted.md).
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenu structuré, contenu non structuré ou contenu semi-structuré
 
-Utilisez des modèles de compréhension de document pour identifier et extraire des données de documents non structurés, comme des lettres ou des contrats, dans lesquels les entités de texte que vous souhaitez extraire se trouvent dans des phrases ou des zones spécifiques du document. Par exemple, un document non structuré peut être une lettre de renouvellement de contrat, qui peut être rédigée de différentes manières. Cependant, des informations existent systématiquement dans le corps de chaque document de renouvellement de contrat, telles que la chaîne de caractères *Date de début du service de* suivi d’une date réelle.
+Utilisez des modèles de compréhension de document pour identifier et extraire des données de documents non structurés, comme des lettres ou des contrats, dans lesquels les entités de texte que vous souhaitez extraire se trouvent dans des phrases ou des zones spécifiques du document. Par exemple, un document non structuré peut être une lettre de renouvellement de contrat, qui peut être rédigée de différentes manières. Toutefois, les informations existent de manière cohérente dans le corps de chaque document de renouvellement de contrat, comme la chaîne `Service start date of` de texte suivie d’une date réelle.
 
 Utilisez des modèles de traitement de formulaire pour identifier les fichiers et extraire des données de documents structurés ou semi-structurés, tels que des formulaires ou des factures. Les modèles de traitement de formulaire sont formés pour comprendre la mise en page de votre formulaire à partir d’exemples de documents et apprendre à rechercher les données que vous devez extraire à partir d’emplacements similaires. En effet, les formulaires ont une mise en page plus structurée et les entités se trouvent à la même place (par exemple, un numéro de sécurité sociale sur un formulaire fiscal).
 
@@ -52,13 +52,13 @@ Les modèles de compréhension de document sont créés et gérés dans un site 
 > [!NOTE]
 > Si vous souhaitez en savoir plus sur les documents input, consultez l’article [Configuration requise et limitations du modèle de traitement de formulaire](/ai-builder/form-processing-model-requirements). 
 
-Les modèles de traitement de formulaire sont créés dans Power Apps [AI Builder](/ai-builder/overview), mais la création commence directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement de formulaire d’une bibliothèque de documents doit être activée pour qu’un utilisateur puisse créer un modèle de traitement des formulaires pour celle-ci. Les administrateurs peuvent activer la création du modèle de traitement de formulaire dans le contenu comprenant les paramètres d’administration. Les modèles de traitement de formulaire utilisent Power Automate flux pour traiter les fichiers lorsqu’ils sont chargés dans la bibliothèque de documents.
+Les modèles de traitement de formulaire sont créés dans Power Apps [AI Builder](/ai-builder/overview), mais la création commence directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement de formulaire d’une bibliothèque de documents doit être activée pour qu’un utilisateur puisse créer un modèle de traitement des formulaires pour celle-ci. Les administrateurs peuvent activer la création du modèle de traitement de formulaire dans le contenu comprenant les paramètres d’administration. Les modèles de traitement de formulaire utilisent des flux Power Automate pour traiter les fichiers lorsqu’ils sont chargés dans la bibliothèque de documents.
 
 Lorsque vous créez un modèle de compréhension de document, vous créez un nouveau [type de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), qui est enregistré dans la galerie Types de contenu SharePoint. Vous pouvez également utiliser des types de contenu existants pour définir votre modèle si nécessaire.
 
 Une fois qu’un type de contenu est créé et associé à un modèle, vous pouvez également le référencer à partir du panneau de propriétés **Type de contenu de site** .
 
-![Capture d’écran du panneau Type de contenu du site montrant le modèle compréhension de Document mis en évidence.](../media/content-understanding/site-content-type-panel.png)
+:::image type="content" source="../media/content-understanding/site-content-type-panel.png" alt-text="Capture d’écran du panneau Type de contenu du site montrant le modèle compréhension de Document mis en évidence." lightbox="../media/content-understanding/site-content-type-panel.png":::
 
 Les modèles de traitement de formulaire créent également de nouveaux [types de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) et sont, eux aussi, stockés dans la galerie Types de contenu SharePoint.
 
@@ -74,11 +74,11 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 
 | Fonctionnalité | Traitement des formulaires | Compréhension de document |
 | ------- | ------- | ------- |
-| Type de modèle : quand utiliser chaque modèle | Formats de fichiers structurés et semi-structurés, par exemple les fichiers PDF pour le contenu des formulaires, tels que les factures ou les bons de commande, où la disposition et la mise en forme sont similaires.  | Les formats de fichiers non structurés ou semi-structurés, par exemple, Office documents où il existe des différences dans la disposition, mais qui restent des informations similaires à extraire. |
+| Type de modèle : quand utiliser chaque modèle | Formats de fichiers structurés et semi-structurés, par exemple les fichiers PDF pour le contenu des formulaires, tels que les factures ou les bons de commande, où la disposition et la mise en forme sont similaires.  | Formats de fichiers non structurés ou semi-structurés, par exemple, documents Office où il existe des différences dans la disposition, mais encore des informations similaires à extraire. |
 | Création de modèles | Modèle créé dans le Générateur d’intelligence artificielle avec un accès transparent à partir d’une bibliothèque de documents SharePoint.| Modèle créé dans SharePoint dans un nouveau site, le centre de contenu. |
 | Type de classification| Le classificateur réglable est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
 | Emplacements | Formé pour une seule bibliothèque de documents.| Peut être appliqué à plusieurs bibliothèques.|
-| Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Office fichiers sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages.|
+| Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Les fichiers Office sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages. Les modèles de compréhension de document prennent en charge les types de fichiers suivants : docx, eml, heic, heif, htm, html, jpeg, jpg, markdown, md, msg, pdf, png, ppt, pptx, rtf, tif, tiff, txt, xls et xlsx.|
 | Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
 | Intégration des fonctionnalités de conformité à Protection des données Microsoft Purview | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité à venir. | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité publiées. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|

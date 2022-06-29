@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 2d6ffd452e04c755fd60fcf7cad0d228005c5510
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 61e0321df75645a3e8ef06867d9e110b7bfd40a2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320091"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491379"
 ---
-# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>&mdash; Microsoft 365 Business Premium cybersécurité pour les petites entreprises
+# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Cybersécurité Microsoft 365 Business Premium &mdash; pour les petites entreprises
 
 Commençons par dire que vous avez fait un choix judicieux en adoptant Microsoft 365 Business Premium et ses outils de productivité de classe mondiale. Conçu avec la cybersécurité à l’esprit, Microsoft 365 Business Premium protéger vos données, appareils et informations. Vous êtes la première et la meilleure défense de votre organisation contre les pirates informatiques et les cyberattaques, y compris les individus aléatoires, le crime organisé, ou les États-nations hautement sophistiqués.
 
@@ -64,12 +64,12 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
-> [!Note]
-> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.md).
+> [!NOTE]
+> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.yml).
 
 ## <a name="train-your-team"></a>[**Entraîner votre équipe**](#tab/Train)
 
@@ -97,16 +97,16 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
-> [!Note]
-> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.md).
+> [!NOTE]
+> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.yml).
 
 ## <a name="safeguard-managed-devices"></a>[**Protéger les appareils gérés**](#tab/Safeguard)
 
-Un appareil sécurisé est surveillé par l’organisation. Dans cette dernière mission critique, vous allez intégrer et inscrire des appareils dans Microsoft Defender pour les PME afin qu’ils soient sécurisés et protégés avec les meilleurs outils disponibles.
+Un appareil sécurisé est surveillé par l’organisation. Dans cette dernière mission critique, vous allez intégrer et inscrire des appareils dans Microsoft Defender pour entreprises afin qu’ils soient sécurisés et protégés avec les meilleurs outils disponibles.
 
 [**Configurez et sécurisez les appareils gérés**](m365bp-protect-devices.md). Prenez les mesures nécessaires pour sécuriser ces appareils afin qu’ils soient surveillés et protégés par l’organisation !
 
@@ -126,9 +126,9 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
-> [!Note]
-> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.md).
+> [!NOTE]
+> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.yml).

@@ -19,16 +19,16 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse de messagerie utilisée pour recevoir des notifications de facturation Microsoft 365 entreprise.
+description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse e-mail utilisée pour recevoir des notifications de facturation pour Microsoft 365 pour les entreprises.
 ms.date: 01/24/2022
-ms.openlocfilehash: 3c03315612b4f3a65dc39d2dcabee639bc578edd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322266"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493372"
 ---
-# <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
+# <a name="change-your-microsoft-365-for-business-billing-addresses"></a>Modifier vos adresses de facturation Microsoft 365 pour les entreprises
 
 Votre facture contient trois adresses :
   
@@ -38,45 +38,45 @@ Votre facture contient trois adresses :
 
 - **Adresse d'utilisation du service** L'adresse de l'endroit où le service est utilisé, généralement le même que l'adresse de **vente**. Si votre organisation compte des utilisateurs distants ou plusieurs sites, nous vous conseillons d'utiliser l'adresse où sont regroupés la plupart de vos utilisateurs.
 
-Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse de messagerie de remplacement pour recevoir des notifications de facturation et modifier l’adresse de messagerie de remplacement pour d’autres administrateurs.
+Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une autre adresse e-mail pour recevoir des notifications de facturation et modifier l’adresse e-mail de remplacement pour d’autres administrateurs.
 
-Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et [Comprendre votre facture](understand-your-invoice2.md).
+Pour en savoir plus sur votre facture, consultez [Afficher votre facture et](view-your-bill-or-invoice.md) [comprendre votre facture.](understand-your-invoice2.md)
 
 ## <a name="change-your-sold-to-address"></a>Modifier votre adresse de vente
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page **Comptes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**de facturation**</a> .
+1. Dans le centre d’administration, accédez à la page Comptes **de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**facturation**</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, allez à la page **Comptes** > **de facturation** .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d’administration</a>, accédez à la page **Comptes de**  > facturation.
 
 ::: moniker-end
 
 2. Sélectionnez **Modifier les informations de compte de facturation**.
 
-3. Mettez à jour les informations de votre organisation, puis sélectionnez **Enregistrer**.
+3. Mettez à jour les informations de votre organisation, puis **sélectionnez Enregistrer**.
   
 ## <a name="change-your-bill-to-address"></a>Modifier votre adresse de facturation
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page **Méthodes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">de paiement de facturation</a> .
+1. Dans le Centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a> de **facturation**\>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, allez à la page **Méthodes** > **de paiement de facturation** .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Modes de paiement** de **facturation**>.
 
 ::: moniker-end
 
-2. Sélectionnez la carte bancaire ou le compte bancaire à modifier.
+2. Sélectionnez la carte de crédit ou le compte bancaire que vous souhaitez modifier.
 
-3. Dans la page **Détails du mode de paiement** , sélectionnez **Modifier**.
+3. Dans la page **détails du mode de paiement** , sélectionnez **Modifier**.
 
 4. Mettez à jour votre adresse de facturation, puis **sélectionnez Enregistrer** \> **terminé**.
 
@@ -92,20 +92,20 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 
-    Si vous utilisez Office 365 géré par 21Vianet en Chine, consultez Afficher votre facture ou obtenez [des Fapiaos pour Office 365 géré par 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+    Si vous utilisez Office 365 géré par 21Vianet en Chine, consultez [Afficher votre facture ou obtenir Fapiaos pour Office 365 géré par 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
 2. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez modifier.
 
-3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service** , **sélectionnez Modifier l’adresse d’utilisation du service**.
+3. Dans la page des détails de l’abonnement, dans la section **Adresse d’utilisation du service** , sélectionnez **Modifier l’adresse d’utilisation du service**.
 
-4. Dans le **volet Modifier l’adresse d’utilisation du service** , mettez à jour votre adresse, puis sélectionnez **Enregistrer**.
+4. Dans le volet **Modifier l’adresse d’utilisation du service** , mettez à jour votre adresse, puis **sélectionnez Enregistrer**.
 
 
 ## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
-[Comprendre votre facture](understand-your-invoice2.md) (article)\
+[Comprendre votre facture ou facture](understand-your-invoice2.md) (article)\
 [Payer votre abonnement](pay-for-your-subscription.md) (article)\
-[Abonnements et facturation - Aide de l’administrateur](../index.yml) (page de liens)
+[Abonnements et facturation - aide Administration](../index.yml) (page de liens)

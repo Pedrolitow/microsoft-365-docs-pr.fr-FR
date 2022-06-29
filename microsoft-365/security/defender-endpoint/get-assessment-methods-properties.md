@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc2686b9ef6a30c9c81d7633ce8a59a0454d622d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 022c5854c955ed9b0faef16455be1af3a81b0997
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838937"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487286"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter des méthodes et des propriétés d’évaluation par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
@@ -53,7 +53,7 @@ Chaque méthode a des appels d’API différents pour obtenir différents types 
 
 - **Réponse JSON**  L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
 
-- **via des fichiers** Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit :
+- **via des fichiers** Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit :
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
   - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.
 
@@ -68,7 +68,7 @@ Retourne toutes les configurations et leur état, par appareil.
 Méthode|Type de données|Description
 :---|:---|:---
 Exporter l’évaluation de la configuration sécurisée **(réponse JSON)**|Sécuriser la configuration par regroupement d’appareils. Voir : [1.2 Properties (réponse JSON)](#12-properties-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour les petites organisations avec moins de 100 K d’appareils. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants.
-Exporter l’évaluation de la configuration sécurisée **(via des fichiers)**|Sécuriser la configuration par regroupement d’appareils. Voir : [1.3 Propriétés (via des fichiers)](#13-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol>
+Exporter l’évaluation de la configuration sécurisée **(via des fichiers)**|Sécuriser la configuration par regroupement d’appareils. Voir : [1.3 Propriétés (via des fichiers)](#13-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol>
 
 ### <a name="12-properties-json-response"></a>1.2 Propriétés (réponse JSON)
 
@@ -77,7 +77,7 @@ Propriété (ID)|Type de données|Description
 configurationCategory|Chaîne|Catégorie ou regroupement auquel la configuration appartient : application, système d’exploitation, réseau, comptes, contrôles de sécurité.
 configurationId|Chaîne|Identificateur unique pour une configuration spécifique.
 configurationImpact|Chaîne|Effet évalué de la configuration au score de configuration global (1-10).
-Configurationname|String|Nom d’affichage de la configuration.
+Configurationname|Chaîne|Nom d’affichage de la configuration.
 configurationSubcategory|Chaîne|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, des fonctionnalités ou fonctionnalités spécifiques.
 deviceId|String|Identificateur unique de l’appareil dans le service.
 deviceName|String|Nom de domaine complet (FQDN) de l’appareil.
@@ -88,7 +88,7 @@ osPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécuti
 osVersion|String|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
 rbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
-recommendationReference|String|Référence à l’ID de recommandation lié au logiciel.
+recommendationReference|Chaîne|Référence à l’ID de recommandation lié au logiciel.
 Timestamp|Chaîne|Dernière fois que la configuration a été vue sur l’appareil.
 
 ### <a name="13-properties-via-files"></a>1.3 Propriétés (via des fichiers)
@@ -107,7 +107,7 @@ Retourne tous les logiciels installés et leurs détails sur chaque appareil.
 |Méthode|Type de données|Description|
 |:---|:---|:---|
 |Exporter l’évaluation de l’inventaire logiciel **(réponse JSON)**|Inventaire logiciel par collection d’appareils. Voir : [2.2 Properties (réponse JSON)](#22-properties-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour les petites organisations avec moins de 100 K d’appareils. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants. |
-| Exporter l’évaluation de l’inventaire logiciel **(via des fichiers)**|Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Propriétés (via des fichiers)](#23-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger des données à partir de stockage Azure comme suit : <ol><li>Appeler l’API pour obtenir la liste des URL de téléchargement avec les données de votre organisation</li><li>Téléchargez les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol> |
+| Exporter l’évaluation de l’inventaire logiciel **(via des fichiers)**|Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Propriétés (via des fichiers)](#23-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger des données à partir du Stockage Azure comme suit : <ol><li>Appeler l’API pour obtenir la liste des URL de téléchargement avec les données de votre organisation</li><li>Téléchargez les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol> |
 
 ### <a name="22-properties-json-response"></a>2.2 Propriétés (réponse JSON)
 
@@ -119,7 +119,7 @@ DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé 
 EndOfSupportDate|Chaîne|Date de fin de la prise en charge de ce logiciel.
 EndOfSupportStatus|Chaîne|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.
 NumberOfWeaknesses|Int|Nombre de faiblesses sur ce logiciel sur cet appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.
 RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
 RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
@@ -144,14 +144,14 @@ Retourne toutes les vulnérabilités connues sur un appareil et leurs détails, 
 Méthode|Type de données|Description
 :---|:---|:---
 Exporter l’évaluation des vulnérabilités logicielles **(réponse JSON)**|Collection d’investigations : [3.2 Propriétés (réponse JSON)](#32-properties-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour les petites organisations avec moins de 100 K d’appareils. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants.
-Exporter l’évaluation des vulnérabilités logicielles **(via des fichiers)**|Entité d’investigation Voir : [3.3 Propriétés (via des fichiers)](#33-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol>
+Exporter l’évaluation des vulnérabilités logicielles **(via des fichiers)**|Entité d’investigation Voir : [3.3 Propriétés (via des fichiers)](#33-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol>
 **Delta exportez** l’évaluation des vulnérabilités logicielles **(réponse JSON)**|Collection d’investigations Voir : [exportation delta des propriétés 3.4 (réponse JSON)](#34-properties-delta-export-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp. <p> L’API extrait les données de votre organisation en tant que réponses JSON. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants. L’évaluation complète des vulnérabilités logicielles (réponse JSON) est utilisée pour obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil. Toutefois, l’appel d’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, corrigées et mises à jour. L’appel d’API d’exportation Delta peut également être utilisé pour calculer différents indicateurs de performance clés tels que « combien de vulnérabilités ont été corrigées ? » ou « Combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? » <p> Étant donné que l’appel d’API d’exportation Delta pour les vulnérabilités logicielles retourne des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme une _exportation complète_.
 
 ### <a name="32-properties-json-response"></a>3.2 Propriétés (réponse JSON)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-CveId|String|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
+CveId|Chaîne|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
 CvssScore|Chaîne|Score CVSS du CVE.
 DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.
 DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
@@ -166,7 +166,8 @@ rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (R
 RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate|Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
 RecommendedSecurityUpdateId|Chaîne|Identificateur des mises à jour de sécurité ou identificateurs applicables pour les articles d’aide ou de base de connaissances (Ko) correspondants.
-Chaîne Registry Paths Array\[\]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
+Chemins d’accès au Registre|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
+SecurityUpdateAvailable|Booléen|Indique si une mise à jour de sécurité est disponible pour le logiciel.
 SoftwareName|Chaîne|Nom du produit logiciel.
 SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.
 SoftwareVersion|Chaîne|Numéro de version du produit logiciel.
@@ -177,14 +178,14 @@ VulnerabilitySeverityLevel|Chaîne|Niveau de gravité affecté à la vulnérabil
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 Exporter des fichiers|chaîne de tableau\[\]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation.
-GeneratedTime|String|Heure à laquelle l’exportation a été générée.
+GeneratedTime|Chaîne|Heure à laquelle l’exportation a été générée.
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 Propriétés (réponse JSON d’exportation delta)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 CveId |Chaîne|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
-CvssScore|String|Score CVSS du CVE.
+CvssScore|Chaîne|Score CVSS du CVE.
 DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.
 DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé sur l’appareil.
@@ -192,10 +193,10 @@ EventTimestamp|Chaîne|Heure à laquelle l’événement delta a été trouvé.
 ExploitabilityLevel|Chaîne|Niveau d’exploitabilité de la vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp|Chaîne|La première fois que le CVE du produit a été vu sur l’appareil.
 ID|Chaîne|Identificateur unique de l’enregistrement.  
-LastSeenTimestamp|String|Dernière fois que le CVE a été vu sur l’appareil.
+LastSeenTimestamp|Chaîne|Dernière fois que le CVE a été vu sur l’appareil.
 OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.
-RbacGroupName|String|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-RecommandationReference|String|Référence à l’ID de recommandation associé à ce logiciel.
+RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate |Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
 RecommendedSecurityUpdateId |Chaîne|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko)
 RegistryPaths |Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
@@ -213,5 +214,5 @@ VulnerabilitySeverityLevel|Chaîne|Niveau de gravité affecté à la vulnérabil
 
 Autres éléments connexes
 
-- [& gestion des vulnérabilités de menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
+- [Gestion des vulnérabilités & des menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
 - [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

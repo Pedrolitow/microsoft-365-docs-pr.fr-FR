@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Effectuez les étapes de migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2b70cdd53797a4985cc76f777401fa33f3e1163
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2358103b3ab6bfee34e88d23f4b3de0d774e34e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939210"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492123"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 3 : Intégration
 
@@ -39,22 +39,22 @@ ms.locfileid: "64939210"
 
 Bienvenue dans **la phase 3 : Intégration** de votre **[migration vers Microsoft Defender pour Office 365](migrate-to-defender-for-office-365.md#the-migration-process)** ! Cette phase de migration comprend les étapes suivantes :
 
-1. [Commencer l’intégration des Teams de sécurité](#step-1-begin-onboarding-security-teams)
+1. [Commencer à intégrer Security Teams](#step-1-begin-onboarding-security-teams)
 2. [(Facultatif) Exempter les utilisateurs pilotes du filtrage par votre service de protection existant](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
 3. [Paramétrer l’intelligence de l’usurpation d’identité](#step-3-tune-spoof-intelligence)
 4. [Paramétrer la protection de l’emprunt d’identité et l’intelligence de boîte aux lettres](#step-4-tune-impersonation-protection-and-mailbox-intelligence)
 5. [Utiliser les données des soumissions d’utilisateurs pour mesurer et ajuster](#step-5-use-data-from-user-submissions-to-measure-and-adjust)
 6. [(Facultatif) Ajouter d’autres utilisateurs à votre pilote et itérer](#step-6-optional-add-more-users-to-your-pilot-and-iterate)
-7. [Étendre Microsoft 365 protection à tous les utilisateurs et désactiver la règle de flux de messagerie SCL=-1](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
+7. [Étendre la protection Microsoft 365 à tous les utilisateurs et désactiver la règle de flux de messagerie SCL=-1](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
 8. [Changer vos enregistrements MX](#step-8-switch-your-mx-records)
 
-## <a name="step-1-begin-onboarding-security-teams"></a>Étape 1 : Commencer à intégrer la sécurité Teams
+## <a name="step-1-begin-onboarding-security-teams"></a>Étape 1 : Commencer à intégrer Security Teams
 
 Si votre organisation dispose d’une équipe de réponse de sécurité, il est maintenant temps de commencer à intégrer Microsoft Defender pour Office 365 dans vos processus de réponse, y compris les systèmes de tickets. Il s’agit d’un sujet entier à lui-même, mais il est parfois négligé. L’implication précoce de l’équipe de réponse de sécurité garantit que votre organisation est prête à faire face aux menaces lorsque vous changez d’enregistrement MX. La réponse aux incidents doit être bien équipée pour gérer les tâches suivantes :
 
 - Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
-  - La gestion par l’administrateur des messages mis en quarantaine est importante. Pour obtenir des instructions, consultez [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
-  - La trace des messages vous permet de voir ce qui est arrivé aux messages à mesure qu’ils entrent ou quittent Microsoft 365. Pour plus d’informations, consultez [La trace des messages dans le centre d’administration moderne Exchange dans Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+  - Administration gestion des messages mis en quarantaine est importante. Pour obtenir des instructions, consultez [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
+  - La trace des messages vous permet de voir ce qui est arrivé aux messages à mesure qu’ils entrent ou quittent Microsoft 365. Pour plus d’informations, consultez la [trace des messages dans le centre d’administration Exchange moderne dans Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identifiez les risques qui peuvent avoir été laissés dans l’organisation.
 - Paramétrez et personnalisez [les alertes pour les](../../compliance/alert-policies.md) processus organisationnels.
 - Gérez la file d’attente d’incidents et corrigez les risques potentiels.
@@ -78,10 +78,10 @@ Si votre organisation n’a pas d’équipe de réponse de sécurité ou de flux
 
 Les autorisations dans Defender pour Office 365 sont basées sur le contrôle d’accès en fonction du rôle (RBAC) et sont expliquées dans Autorisations dans le [portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Voici les points importants à garder à l’esprit :
 
-- Azure AD rôles accordent des autorisations à **toutes les** charges de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le Portail Azure, il dispose d’autorisations d’administrateur de sécurité partout.
-- Les rôles de collaboration & par e-mail dans le portail Microsoft 365 Defender accordent des autorisations au portail Microsoft 365 Defender, au portail de conformité Microsoft Purview et à l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Microsoft 365 Defender, il **dispose d’un** accès Administrateur de sécurité uniquement dans le portail Microsoft 365 Defender, le portail de conformité Microsoft Purview et le Centre de sécurité & conformité.
+- Les rôles Azure AD accordent des autorisations à **toutes les** charges de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le Portail Azure, il dispose d’autorisations d’administrateur de sécurité partout.
+- Les rôles de collaboration & par e-mail dans le portail Microsoft 365 Defender accordent des autorisations au portail Microsoft 365 Defender, au portail de conformité Microsoft Purview et à l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Microsoft 365 Defender, il dispose **d’un** accès Administrateur de sécurité uniquement dans le portail Microsoft 365 Defender, le portail de conformité Microsoft Purview et la conformité & sécurité Centre.
 - De nombreuses fonctionnalités du portail Microsoft 365 Defender sont basées sur Exchange Online applets de commande PowerShell et nécessitent donc l’appartenance à un groupe de rôles dans les rôles correspondants (techniquement, groupes de rôles) dans Exchange Online (en particulier pour l’accès au Exchange Online correspondant  Applets de commande PowerShell).
-- Il existe des rôles de collaboration & e-mail dans le portail Microsoft 365 Defender qui n’ont pas d’équivalent à Azure AD rôles et qui sont importants pour les opérations de sécurité (par exemple, le rôle d’aperçu et le rôle De recherche et de vidage).
+- Dans le portail Microsoft 365 Defender, il existe des rôles e-mail & collaboration qui n’ont pas d’équivalent aux rôles Azure AD et qui sont importants pour les opérations de sécurité (par exemple, le rôle Aperçu et le rôle De recherche et de vidage).
 
 En règle générale, seul un sous-ensemble du personnel de sécurité a besoin de droits supplémentaires pour télécharger des messages directement à partir de boîtes aux lettres utilisateur. Cela nécessite une autorisation supplémentaire que le Lecteur de sécurité n’a pas par défaut.
 
@@ -90,7 +90,7 @@ En règle générale, seul un sous-ensemble du personnel de sécurité a besoin 
 Bien que cette étape ne soit pas obligatoire, vous devez envisager de configurer vos utilisateurs pilotes pour contourner le filtrage par votre service de protection existant. Cette action permet à Defender pour Office 365 de gérer **toutes les** tâches de filtrage et de protection pour les utilisateurs pilotes. Si vous n’exemptez pas vos utilisateurs pilotes de votre service de protection existant, Defender pour Office 365 fonctionne efficacement uniquement en cas d’absence de l’autre service (filtrage des messages qui ont déjà été filtrés).
 
 > [!NOTE]
-> Cette étape est explicitement requise si votre service de protection actuel fournit un habillage de liens, mais que vous souhaitez piloter Coffre fonctionnalités Liens. Le double habillage des liens n’est pas pris en charge.
+> Cette étape est explicitement requise si votre service de protection actuel fournit un habillage de liens, mais que vous souhaitez piloter la fonctionnalité Liens fiables. Le double habillage des liens n’est pas pris en charge.
 
 ## <a name="step-3-tune-spoof-intelligence"></a>Étape 3 : Paramétrer l’intelligence par usurpation d’identité
 
@@ -179,7 +179,7 @@ Si votre organisation utilise un service tiers pour les rapports utilisateur, vo
 
 - Il est également judicieux d’examiner les remplacements inutiles. En d’autres termes, examinez les verdicts que Microsoft 365 aurait fournis sur les messages. Si Microsoft365 a rendu le verdict correct, le besoin de remplacement est considérablement réduit ou éliminé.
 
-## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>Étape 7 : Étendre Microsoft 365 protection à tous les utilisateurs et désactiver la règle de flux de messagerie SCL=-1
+## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>Étape 7 : Étendre la protection Microsoft 365 à tous les utilisateurs et désactiver la règle de flux de messagerie SCL=-1
 
 Effectuez les étapes décrites dans cette section lorsque vous êtes prêt à basculer vos enregistrements MX vers Microsoft 365.
 
@@ -201,20 +201,12 @@ Vous pouvez effectuer une pause à ce stade pour un enregistrement et un réglag
 > [!NOTE]
 >
 > - Lorsque vous basculez l’enregistrement MX pour votre domaine, la propagation des modifications sur Internet peut prendre jusqu’à 48 heures.
->
 > - Nous vous recommandons de réduire la valeur TTL de vos enregistrements DNS pour permettre une réponse plus rapide et une restauration possible (si nécessaire). Vous pouvez revenir à la valeur TTL d’origine une fois le basculement terminé et vérifié.
->
 > - Vous devez envisager de commencer par modifier les domaines qui sont utilisés moins fréquemment. Vous pouvez suspendre et surveiller avant de passer à des domaines plus volumineux. Toutefois, même si vous effectuez cette opération, vous devez toujours vous assurer que tous les utilisateurs et tous les domaines sont couverts par des stratégies, car les domaines SMTP secondaires sont résolus en domaines principaux avant l’application de stratégie.
->   
 > - Plusieurs enregistrements MX pour un domaine unique fonctionnent techniquement, ce qui vous permet d’avoir un routage fractionné, à condition d’avoir suivi toutes les instructions de cet article. Plus précisément, vous devez vous assurer que les stratégies sont appliquées à tous les utilisateurs, que la règle de flux de messagerie SCL=-1 est appliquée uniquement aux messages qui transitent par votre service de protection existant, comme décrit à [l’étape d’installation 3 : Gérer ou créer la règle de flux de messagerie SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Toutefois, cette configuration introduit un comportement qui rend la résolution des problèmes beaucoup plus difficile. Par conséquent, nous ne le recommandons généralement pas, en particulier pendant des périodes prolongées.
->
 > - Avant de basculer vos enregistrements MX, vérifiez que les paramètres suivants ne sont pas activés sur le connecteur entrant du service de protection vers Microsoft 365. En règle générale, un ou plusieurs des paramètres suivants sont configurés pour le connecteur :
->
 >   - **et exiger que le nom d’objet sur le certificat que le partenaire utilise pour s’authentifier avec Office 365 corresponde à ce nom de domaine** (*RestrictDomainsToCertificate*)
->   - **Rejeter les messages électroniques s’ils ne sont pas envoyés à partir de cette plage d’adresses IP** (*RestrictDomainsToIPAddresses*)
->
->   Si le type de connecteur est **Partner** et que l’un de ces paramètres est activé, toutes les remises de courrier à vos domaines échouent après avoir basculé vos enregistrements MX. Vous devez désactiver ces paramètres avant de continuer. Si le connecteur est un connecteur local utilisé pour l’hybride, vous n’avez pas besoin de modifier le connecteur local. Toutefois, vous pouvez toujours vérifier la présence d’un connecteur **partenaire** .
->   
+>   - **Rejeter les messages électroniques s’ils ne sont pas envoyés à partir de cette plage d’adresses IP** (*RestrictDomainsToIPAddresses*) Si le type de connecteur est **Partner** et que l’un de ces paramètres est activé, toutes les remises de courrier à vos domaines échouent après le basculement de vos enregistrements MX. Vous devez désactiver ces paramètres avant de continuer. Si le connecteur est un connecteur local utilisé pour l’hybride, vous n’avez pas besoin de modifier le connecteur local. Toutefois, vous pouvez toujours vérifier la présence d’un connecteur **partenaire** .
 > - Si votre passerelle de messagerie actuelle fournit également la validation des destinataires, vous pouvez vérifier que le domaine est configuré comme faisant [autorité](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans Microsoft 365. Cela peut empêcher les messages de rebond inutiles.
 
 Lorsque vous êtes prêt, basculez l’enregistrement MX pour vos domaines. Vous pouvez migrer tous vos domaines à la fois. Vous pouvez également migrer d’abord des domaines moins fréquemment utilisés, puis migrer le reste ultérieurement.

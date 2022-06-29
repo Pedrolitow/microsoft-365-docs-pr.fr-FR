@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8a6022161b3c5c52fafd6cc17e5bdea50abc9b7e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 491d51b30b45fb99cba9924f947c9566305c2fbc
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419239"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490960"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Créer un processus de déploiement progressif personnalisé pour les mises à jour Microsoft Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "65419239"
 - Windows
 
 > [!NOTE]
-> Cette fonctionnalité nécessite Antivirus Microsoft Defender version 4.18.2106.X ou ultérieure.
+> Cette fonctionnalité nécessite l’antivirus Microsoft Defender version 4.18.2106.X ou ultérieure.
 
 Pour créer votre propre processus de déploiement progressif personnalisé pour les mises à jour Defender, vous pouvez utiliser stratégie de groupe, Microsoft Endpoint Manager et PowerShell.
 
@@ -51,10 +51,10 @@ Le tableau suivant répertorie les paramètres de stratégie de groupe disponibl
 
 |Définition du titre|Description|Emplacement|
 |---|---|---|
-|Sélectionner le canal de lancement de mise à jour mensuelle de la plateforme Microsoft Defender progressif|Activez cette stratégie pour spécifier quand les appareils reçoivent les mises à jour de la plateforme Microsoft Defender pendant le déploiement progressif mensuel. <p> Canal bêta : les appareils définis sur ce canal seront les premiers à recevoir de nouvelles mises à jour. Sélectionnez Canal bêta pour participer à l’identification et à la création de rapports sur les problèmes à Microsoft. Les appareils du Programme Windows Insider sont abonnés à ce canal par défaut. Pour une utilisation dans des environnements de test (manuels) uniquement et un nombre limité d’appareils. <p> Canal actuel (préversion) : les appareils définis sur ce canal recevront les mises à jour les plus tôt pendant le cycle de publication progressif mensuel. Suggéré pour les environnements de préproduction/validation. <p> Canal actuel (intermédiaire) : les appareils recevront des mises à jour après le cycle de mise en production progressif mensuel. Nous vous suggérons de vous appliquer à une petite partie représentative de votre population de production (environ 10 %). <p> Canal actuel (large) : les appareils ne seront mis à jour qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%). <p> Délai critique : les appareils se verront proposer des mises à jour avec un délai de 48 heures. Suggéré pour les environnements critiques uniquement. <p>Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste à jour automatiquement pendant le cycle de mise en production progressive. Convient à la plupart des appareils.|composants Windows\Antivirus Microsoft Defender|
-|Sélectionner le canal de lancement de mise à jour mensuelle du moteur Microsoft Defender progressif|Activez cette stratégie pour spécifier quand les appareils reçoivent les mises à jour du moteur Microsoft Defender pendant le déploiement progressif mensuel. <p> Canal bêta : les appareils définis sur ce canal seront les premiers à recevoir de nouvelles mises à jour. Sélectionnez Canal bêta pour participer à l’identification et à la création de rapports sur les problèmes à Microsoft. Les appareils du Programme Windows Insider sont abonnés à ce canal par défaut. Pour une utilisation dans des environnements de test (manuels) uniquement et un nombre limité d’appareils. <p> Canal actuel (préversion) : les appareils définis sur ce canal recevront les mises à jour les plus tôt pendant le cycle de publication progressif mensuel. Suggéré pour les environnements de préproduction/validation. <p> Canal actuel (intermédiaire) : les appareils recevront des mises à jour après le cycle de mise en production progressif mensuel. Nous vous suggérons de vous appliquer à une petite partie représentative de votre population de production (environ 10 %). <p> Canal actuel (large) : les appareils ne seront mis à jour qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%). <p> Délai critique : les appareils se verront proposer des mises à jour avec un délai de 48 heures. Suggéré pour les environnements critiques uniquement.<p> Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste à jour automatiquement pendant le cycle de mise en production progressive. Convient à la plupart des appareils.|composants Windows\Antivirus Microsoft Defender|
-|Sélectionner le canal de déploiement progressif des mises à jour quotidiennes du renseignement de sécurité Microsoft Defender|Activez cette stratégie pour spécifier quand les appareils reçoivent les mises à jour du renseignement de sécurité Microsoft Defender pendant le déploiement progressif quotidien. <p> Canal actuel (intermédiaire) : les appareils recevront des mises à jour après le cycle de mise en production. Suggéré de s’appliquer à une petite partie représentative de la population de production (environ 10 %). <p> Canal actuel (large) : les appareils ne seront mis à jour qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%). <p>  Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste à jour automatiquement pendant le cycle de publication quotidien. Convient à la plupart des appareils.|composants Windows\Antivirus Microsoft Defender|
-|Désactiver le déploiement progressif des mises à jour de Microsoft Defender|Activez cette stratégie pour désactiver le déploiement progressif des mises à jour Defender. <p> Canal actuel (large) : les appareils définis sur ce canal seront mis à jour en dernier pendant le cycle de mise en production progressive. Idéal pour les machines de centre de données qui reçoivent uniquement des mises à jour limitées. <p> Remarque : ce paramètre s’applique à la fois aux mises à jour mensuelles et quotidiennes de Defender et remplace toutes les sélections de canaux précédemment configurées pour les mises à jour de plateforme et de moteur. <p> Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste dans le canal actuel (par défaut), sauf indication contraire dans des canaux spécifiques pour les mises à jour de plateforme et de moteur. Restez à jour automatiquement pendant le cycle de mise en production progressive. Convient à la plupart des appareils.|composants Windows\Antivirus Microsoft Defender|
+|Sélectionner le canal de lancement de mise à jour mensuelle de la plateforme Microsoft Defender progressif|Activez cette stratégie pour spécifier quand les appareils reçoivent les mises à jour de la plateforme Microsoft Defender pendant le déploiement progressif mensuel. <p> Canal bêta : les appareils définis sur ce canal seront les premiers à recevoir de nouvelles mises à jour. Sélectionnez Canal bêta pour participer à l’identification et à la création de rapports sur les problèmes à Microsoft. Les appareils du Programme Windows Insider sont abonnés à ce canal par défaut. Pour une utilisation dans des environnements de test (manuels) uniquement et un nombre limité d’appareils. <p> Canal actuel (préversion) : les appareils définis sur ce canal recevront les mises à jour les plus tôt pendant le cycle de publication progressif mensuel. Suggéré pour les environnements de préproduction/validation. <p> Canal actuel (intermédiaire) : les appareils recevront des mises à jour après le cycle de mise en production progressif mensuel. Nous vous suggérons de vous appliquer à une petite partie représentative de votre population de production (environ 10 %). <p> Canal actuel (large) : les appareils ne seront mis à jour qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%). <p> Délai critique : les appareils se verront proposer des mises à jour avec un délai de 48 heures. Suggéré pour les environnements critiques uniquement. <p>Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste à jour automatiquement pendant le cycle de mise en production progressive. Convient à la plupart des appareils.|Composants Windows\Antivirus Microsoft Defender|
+|Sélectionner le canal de lancement de mise à jour mensuelle du moteur Microsoft Defender progressif|Activez cette stratégie pour spécifier quand les appareils reçoivent les mises à jour du moteur Microsoft Defender pendant le déploiement progressif mensuel. <p> Canal bêta : les appareils définis sur ce canal seront les premiers à recevoir de nouvelles mises à jour. Sélectionnez Canal bêta pour participer à l’identification et à la création de rapports sur les problèmes à Microsoft. Les appareils du Programme Windows Insider sont abonnés à ce canal par défaut. Pour une utilisation dans des environnements de test (manuels) uniquement et un nombre limité d’appareils. <p> Canal actuel (préversion) : les appareils définis sur ce canal recevront les mises à jour les plus tôt pendant le cycle de publication progressif mensuel. Suggéré pour les environnements de préproduction/validation. <p> Canal actuel (intermédiaire) : les appareils recevront des mises à jour après le cycle de mise en production progressif mensuel. Nous vous suggérons de vous appliquer à une petite partie représentative de votre population de production (environ 10 %). <p> Canal actuel (large) : les appareils ne seront mis à jour qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%). <p> Délai critique : les appareils se verront proposer des mises à jour avec un délai de 48 heures. Suggéré pour les environnements critiques uniquement.<p> Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste à jour automatiquement pendant le cycle de mise en production progressive. Convient à la plupart des appareils.|Composants Windows\Antivirus Microsoft Defender|
+|Sélectionner le canal de déploiement progressif des mises à jour quotidiennes du renseignement de sécurité Microsoft Defender|Activez cette stratégie pour spécifier quand les appareils reçoivent les mises à jour du renseignement de sécurité Microsoft Defender pendant le déploiement progressif quotidien. <p> Canal actuel (intermédiaire) : les appareils recevront des mises à jour après le cycle de mise en production. Suggéré de s’appliquer à une petite partie représentative de la population de production (environ 10 %). <p> Canal actuel (large) : les appareils ne seront mis à jour qu’une fois le cycle de mise en production progressif terminé. Suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (~10-100%). <p>  Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste à jour automatiquement pendant le cycle de publication quotidien. Convient à la plupart des appareils.|Composants Windows\Antivirus Microsoft Defender|
+|Désactiver le déploiement progressif des mises à jour de Microsoft Defender|Activez cette stratégie pour désactiver le déploiement progressif des mises à jour Defender. <p> Canal actuel (large) : les appareils définis sur ce canal seront mis à jour en dernier pendant le cycle de mise en production progressive. Idéal pour les machines de centre de données qui reçoivent uniquement des mises à jour limitées. <p> Remarque : ce paramètre s’applique à la fois aux mises à jour mensuelles et quotidiennes de Defender et remplace toutes les sélections de canaux précédemment configurées pour les mises à jour de plateforme et de moteur. <p> Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste dans le canal actuel (par défaut), sauf indication contraire dans des canaux spécifiques pour les mises à jour de plateforme et de moteur. Restez à jour automatiquement pendant le cycle de mise en production progressive. Convient à la plupart des appareils.|Composants Windows\Antivirus Microsoft Defender|
 |
 
 ## <a name="group-policy"></a>Stratégie de groupe
@@ -62,9 +62,9 @@ Le tableau suivant répertorie les paramètres de stratégie de groupe disponibl
 > [!NOTE]
 > Un modèle Defender ADMX mis à jour sera publié avec la version 21H2 de Windows 10. Une version non localisée est disponible en téléchargement à l’adresse https://github.com/microsoft/defender-updatecontrols.
 
-Vous pouvez utiliser [stratégie de groupe](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) pour configurer et gérer Antivirus Microsoft Defender sur vos points de terminaison.
+Vous pouvez utiliser [stratégie de groupe](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) pour configurer et gérer l’antivirus Microsoft Defender sur vos points de terminaison.
 
-En général, vous pouvez utiliser la procédure suivante pour configurer ou modifier Antivirus Microsoft Defender paramètres de stratégie de groupe :
+En général, vous pouvez utiliser la procédure suivante pour configurer ou modifier les paramètres de stratégie de groupe antivirus Microsoft Defender :
 
 1. Sur votre machine de gestion stratégie de groupe, ouvrez la **console de gestion stratégie de groupe**, cliquez avec le bouton droit sur **l’objet stratégie de groupe** (GPO) que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
@@ -72,7 +72,7 @@ En général, vous pouvez utiliser la procédure suivante pour configurer ou mod
 
 3. Cliquez sur **Modèles d’administration**.
 
-4. Développez l’arborescence pour **Windows composants > Antivirus Microsoft Defender**.
+4. Développez l’arborescence sur **les composants Windows > Antivirus Microsoft Defender**.
 
 5. Développez la section (appelée **Emplacement** dans le tableau de cette rubrique) qui contient le paramètre que vous souhaitez configurer, double-cliquez sur le paramètre pour l’ouvrir et apportez des modifications à la configuration.
 
@@ -84,7 +84,7 @@ Suivez les instructions du lien ci-dessous pour créer une stratégie personnali
 
 [Ajouter des paramètres personnalisés pour les appareils Windows 10 dans Microsoft Intune - Azure \|Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
-Pour plus d’informations sur les fournisseur de solutions Cloud Defender utilisés pour le processus de déploiement progressif, consultez [Defender fournisseur de solutions Cloud](/windows/client-management/mdm/defender-csp).
+Pour plus d’informations sur le fournisseur de solutions CSP Defender utilisé pour le processus de déploiement progressif, consultez [Le fournisseur de solutions Cloud Defender](/windows/client-management/mdm/defender-csp).
 
 ## <a name="powershell"></a>PowerShell
 
@@ -96,7 +96,7 @@ Utilisez les paramètres suivants :
 Set-MpPreference
 -PlatformUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -EngineUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
--DisableGradualRelease True|False
+-DisableGradualRelease 1|0
 -SignaturesUpdatesChannel Staged|Broad|NotConfigured
 ```
 
@@ -104,7 +104,7 @@ Exemple :
 
 Permet `Set-MpPreference -PlatformUpdatesChannel Beta` de configurer les mises à jour de plateforme pour qu’ils arrivent à partir du canal bêta.
 
-Pour plus d’informations sur les paramètres et sur la façon de les configurer, consultez [Set-MpPreference (Antivirus Microsoft Defender)|Microsoft Docs](/powershell/module/defender/set-mppreference).
+Pour plus d’informations sur les paramètres et la façon de les configurer, consultez [Set-MpPreference (Antivirus Microsoft Defender)|Microsoft Docs](/powershell/module/defender/set-mppreference).
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :

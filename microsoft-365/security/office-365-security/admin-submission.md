@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66116033"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487679"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
 
@@ -32,7 +32,7 @@ ms.locfileid: "66116033"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online, les administrateurs peuvent utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails, des URL et des pièces jointes à Microsoft à des fins d’analyse.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, les administrateurs peuvent utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails, des URL et des pièces jointes à Microsoft à des fins d’analyse.
 
 Lorsque vous envoyez un e-mail à des fins d’analyse, vous obtenez :
 
@@ -46,7 +46,7 @@ Lorsque vous envoyez un e-mail à des fins d’analyse, vous obtenez :
 
 Pour d’autres façons d’envoyer des e-mails, des URL et des pièces jointes à Microsoft, consultez [Les messages de rapport et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d’administrateurs dans Microsoft Defender pour Office 365 pour envoyer des messages à Microsoft à des fins d’évaluation. 
+Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d’administrateurs dans Microsoft Defender pour Office 365 pour envoyer des messages à Microsoft à des fins d’évaluation.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
@@ -96,7 +96,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
 
 2. Dans la section **Ajouter l’ID de message réseau ou charger le fichier e-mail** , utilisez l’une des options suivantes :
    - **Ajoutez l’ID de message réseau de messagerie** : il s’agit d’une valeur GUID disponible dans l’en-tête **X-MS-Exchange-Organization-Network-Message-Id** dans le message ou dans l’en-tête **X-MS-Office365-Filtering-Correlation-Id** dans les messages mis en quarantaine.
-   - **Télécharger le fichier e-mail (.msg ou .eml)** : cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
+   - **Charger le fichier e-mail (.msg ou .eml)** : cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
 
 3. Dans la zone **Choisir un destinataire qui a rencontré un problème** , spécifiez le destinataire sur lequel vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si l’e-mail a contourné l’analyse en raison de stratégies d’utilisateur ou d’organisation.
 
@@ -376,11 +376,11 @@ Si vous avez déployé le [complément Message](enable-the-report-message-add-in
 > [!NOTE]
 > Si les organisations sont configurées pour envoyer des messages signalés par l’utilisateur à la boîte aux lettres personnalisée uniquement, les messages signalés apparaissent dans les **messages signalés par l’utilisateur** , mais leurs résultats sont toujours vides (car ils n’auraient pas été réexécuter).
 
-### <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
+## <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
 
 Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer l’e-mail, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable.
 
-### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir les messages signalés par l’utilisateur de la boîte aux lettres personnalisée en soumission d’administrateur
+## <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir les messages signalés par l’utilisateur de la boîte aux lettres personnalisée en soumission d’administrateur
 
 Si vous avez configuré la boîte aux lettres personnalisée pour intercepter les messages signalés par l’utilisateur sans envoyer les messages à Microsoft, vous pouvez rechercher et envoyer des messages spécifiques à Microsoft à des fins d’analyse.
 
@@ -398,3 +398,20 @@ Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un me
 Si le message est signalé à Microsoft, la valeur **de soumission convertie en administrateur** passe de **non** à **oui**. Vous pouvez accéder directement à la soumission de l’administrateur en cliquant sur **Afficher la soumission administrateur convertie** à partir du menu de dépassement dans le menu volant de soumission du message signalé par l’utilisateur concerné.
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option permettant d’afficher une soumission d’administrateur créée à partir d’un message signalé par l’utilisateur.":::
+
+## <a name="view-associated-alert-for-user-and-admin-email-submissions"></a>Afficher l’alerte associée pour les envois de courriers électroniques utilisateur et administrateur
+
+> [!IMPORTANT]
+> Les informations contenues dans cette section s’appliquent uniquement à Defender pour Office 365 plan 2 ou supérieur.
+>
+> Actuellement, les soumissions d’utilisateurs génèrent des alertes uniquement pour les messages signalés comme hameçonnage.
+
+Pour chaque message d’hameçonnage signalé par l’utilisateur et chaque envoi d’e-mail d’administrateur, une alerte correspondante est générée.
+
+Pour afficher l’alerte correspondante pour un message d’hameçonnage signalé par l’utilisateur, sélectionnez l’onglet **Messages signalés par l’utilisateur** , puis double-cliquez sur le message pour ouvrir le menu volant de soumission. Cliquez sur l’icône ![Autres options.](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’options** , puis sélectionnez  **Afficher l’alerte**.
+
+:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Option permettant d’afficher l’alerte associée à partir d’un message d’hameçonnage signalé par l’utilisateur.":::
+
+Pour afficher l’alerte correspondante pour les soumissions de courriers d’administration, sélectionnez l’onglet **e-mails** , puis double-cliquez sur le message pour ouvrir le menu volant de soumission. Sélectionnez **Afficher l’alerte** dans l’option **Ouvrir l’entité d’e-mail** .
+
+:::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Option permettant d’afficher l’alerte associée à partir d’une soumission d’administrateur.":::

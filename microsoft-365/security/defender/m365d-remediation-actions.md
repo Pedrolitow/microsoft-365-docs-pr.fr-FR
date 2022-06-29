@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 5605678a1fcc30719d7f838a16452ba527c554b7
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847046"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492363"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Le tableau suivant récapitule les actions de correction actuellement prises en 
 
 |Actions de correction de l’appareil (point de terminaison)  |Actions de correction des e-mails  |Utilisateurs (comptes)  |
 |:---------|:---------|----------|
-|- Collecter le package d’investigation <br/>- Isoler l’appareil (cette action peut être annulée)<br/>- Machine hors-bord <br/>- Exécution du code de mise en production <br/>- Libération de la quarantaine <br/>- Exemple de requête <br/>- Restreindre l’exécution du code (cette action peut être annulée) <br/>- Exécuter l’analyse antivirus <br/>- Arrêter et mettre en quarantaine      |- Bloquer l’URL (time-of-click)<br/>- Suppression réversible de messages électroniques ou de clusters<br/>- E-mail de mise en quarantaine<br/>- Mettre en quarantaine une pièce jointe<br/>- Désactiver le transfert de courrier externe          |- Désactiver l’utilisateur<br />- Réinitialiser le mot de passe utilisateur<br />- Confirmer que l’utilisateur est compromis          |
+|- Collecter le package d’investigation <br/>- Isoler l’appareil (cette action peut être annulée)<br/>- Machine hors-bord <br/>- Exécution du code de mise en production <br/>- Libération de la quarantaine <br/>- Exemple de requête <br/>- Restreindre l’exécution du code (cette action peut être annulée) <br/>- Exécuter une analyse antivirus <br/>- Arrêter et mettre en quarantaine <br/>- Contenir des appareils à partir du réseau     |- Bloquer l’URL (time-of-click)<br/>- Suppression réversible de messages électroniques ou de clusters<br/>- E-mail de mise en quarantaine<br/>- Mettre en quarantaine une pièce jointe<br/>- Désactiver le transfert de courrier externe          |- Désactiver l’utilisateur<br />- Réinitialiser le mot de passe utilisateur<br />- Confirmer que l’utilisateur est compromis          |
 
 Les actions de correction, qu’elles soient en attente d’approbation ou déjà terminées, peuvent être affichées dans le [Centre d’actions](m365d-action-center.md).
 
@@ -80,8 +80,9 @@ En plus des actions de correction qui suivent des investigations automatisées, 
 - Action de [réponse dynamique](/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche planifiée
 - Action de réponse en direct avec [des API Microsoft Defender pour point de terminaison](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Visiter le Centre de notifications](m365d-action-center.md)
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)
 - [Résoudre les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)
+- [Contenir des appareils à partir du réseau](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)

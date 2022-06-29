@@ -2,11 +2,11 @@
 title: Supprimer des données d'entreprise sur des appareils
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,19 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Découvrez comment utiliser Microsoft 365 pour entreprise pour supprimer les données d'entreprise que vos utilisateurs ont sur leurs appareils ou ordinateurs Windows.
-ms.openlocfilehash: f4f9971e65c65267ee9b4e4f8ee99196f5773355
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 082dbdc11a06a03962594c247dcd6738118a0667
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317441"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490734"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
-
-Cet article s'applique à Microsoft 365 Entreprise Premium.
-
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## <a name="remove-company-data"></a>Supprimer les données de l’entreprise
 

@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d’administration Microsoft 365 en ajoutant un enregistrement DNS sur votre hôte DNS.
-ms.openlocfilehash: ad4654bce8781607a77272dafeb3eb9135c85765
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 64b82aab051af2c9d5444042f27009b4e02f1ad8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922921"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492035"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -159,18 +160,20 @@ Chaque organisation Microsoft 365 peut avoir jusqu’à cinq domaines onmicrosof
 
 Pour ajouter un domaine onmicrosoft.com :
 
-1. Dans le Centre d’administration Microsoft 365, sélectionnez **Paramètres**, puis **Domaines**.
-2. Sélectionnez votre onmicrosoft.com domaine par défaut.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres**, puis **Domaines**.
+
+2. Sélectionnez un domaine *.onmicrosoft.com* existant.
 
     ![Page Domaines.](../../media/onmicrosoft-domains.png)
   
-3. Dans la page Propriétés du domaine, dans la section **À propos de ce domaine** , sélectionnez **Ajouter un domaine onmicrosoft**.
 
-    ![À propos de cette page de domaines.](../../media/add-onmicrosoft-domain-link.png)
+3. Sous l’onglet **Vue d’ensemble** , sélectionnez **Ajouter le domaine onmicrosoft.com**.
 
-4. Dans la page **Ajouter un domaine onmicrosoft** , dans la zone **Nom de domaine** , tapez le nom de votre nouveau domaine onmicrosoft.com. 
+    ![Capture d’écran des propriétés de domaine.](../../media/add-onmicrosoft-domain-link.png)
 
-    ![Capture d’écran de la page Ajouter un domaine onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
+4. Dans la page **Ajouter un domaine onmicrosoft** , dans la zone **Nom de domaine** , entrez le nom de votre nouveau domaine onmicrosoft.com. 
+
+    ![Capture d’écran de l’ajout d’un domaine onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
     > Veillez à vérifier l’orthographe et la précision du nom de domaine que vous avez entré. Vous êtes limité à cinq domaines onmicrosoft.com et ne peuvent pas être supprimés une fois créés.     

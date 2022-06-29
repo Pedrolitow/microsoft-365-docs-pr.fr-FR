@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 109d711623d2a0355851414af3ef0cb1beadf6af
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011581"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490440"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -33,40 +33,40 @@ ms.locfileid: "66011581"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour assurer la [sécurité de votre organisation par défaut](secure-by-default.md), Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement du filtrage pour les messages identifiés comme des programmes malveillants ou un hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la [sécurité de votre organisation par défaut](secure-by-default.md), Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement du filtrage pour les messages identifiés comme des programmes malveillants ou un hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations d’hameçonnage tierces : les attaques** simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 - Boîtes **aux lettres d’opérations de sécurité (SecOps)** : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bons et mauvais).
 
-Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêcher le filtrage des messages _entrants dans ces scénarios spécifiques_.<sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios obtiennent les résultats suivants :
+Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêcher le filtrage des messages _entrants dans ces scénarios spécifiques_ .<sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios obtiennent les résultats suivants :
 
 - Les filtres dans EOP et Microsoft Defender pour Office 365 n’agissent pas sur ces messages.<sup>\*</sup>
 - [Le vidage de zéro heure (ZAP)](zero-hour-auto-purge.md) pour le courrier indésirable et le hameçonnage n’effectue aucune action sur ces messages.<sup>\*\*</sup>
 - [Les alertes système par défaut](/microsoft-365/compliance/alert-policies#default-alert-policies) ne sont pas déclenchées pour ces scénarios.
 - [AIR et le clustering dans Defender pour Office 365](office-365-air.md) ignorent ces messages.
 - Spécifiquement pour les simulations d’hameçonnage tierces :
-  - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique indiquant que le message fait partie d’une campagne de simulation d’hameçonnage et n’est pas une menace réelle. Les alertes et AIR ne seront pas déclenchés. L’expérience des soumissions d’administrateurs affiche ces messages sous la forme d’une menace simulée.
+  - [Administration les soumissions](admin-submission.md) génèrent une réponse automatique indiquant que le message fait partie d’une campagne de simulation d’hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et AIR ne seront pas déclenchés. L’expérience des soumissions d’administrateurs affiche ces messages sous la forme d’une menace simulée.
   - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du message de rapport [ou des compléments report phishing](enable-the-report-message-add-in.md), le système ne génère pas d’alerte, d’investigation ou d’incident. Les liens ou fichiers ne seront pas détonés, mais le message s’affiche également sous **l’onglet Messages signalés par l’utilisateur** de la page **Soumissions** .
-  - [Coffre Liens dans Defender pour Office 365](safe-links.md) ne bloque pas ou ne fait pas exploser les URL spécifiquement identifiées dans ces messages au moment du clic. Les URL sont toujours encapsulées, mais elles ne sont pas bloquées.
-  - [Coffre pièces jointes dans Defender pour Office 365](safe-attachments.md) ne détonent pas les pièces jointes dans ces messages.
+  - [Les liens sécurisés dans Defender pour Office 365](safe-links.md) ne bloquent ni ne détonent les URL spécifiquement identifiées dans ces messages au moment du clic. Les URL sont toujours encapsulées, mais elles ne sont pas bloquées.
+  - [Les pièces jointes sécurisées dans Defender pour Office 365](safe-attachments.md) ne détonent pas les pièces jointes dans ces messages.
 
 <sup>\*</sup> Vous ne pouvez pas contourner le filtrage des programmes malveillants.
 
 <sup>\*\*</sup> Vous pouvez contourner ZAP pour les programmes malveillants en créant une stratégie anti-programme malveillant pour la boîte aux lettres SecOps où ZAP pour les programmes malveillants est désactivé. Pour obtenir des instructions, consultez [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md).
 
-Les messages identifiés par la stratégie de remise avancée ne sont pas des menaces de sécurité. Les messages sont donc marqués avec des remplacements système. Les expériences d’administration montrent ces messages en raison d’un remplacement du système de **simulation d’hameçonnage** ou d’un remplacement du système de **boîte aux lettres SecOps** . Les administrateurs peuvent filtrer et analyser ces remplacements système dans les expériences suivantes :
+Les messages identifiés par la stratégie de remise avancée ne sont pas des menaces de sécurité. Les messages sont donc marqués avec des remplacements système. Administration expériences affichent ces messages en raison d’un remplacement du système de **simulation d’hameçonnage** ou d’un remplacement du système de **boîte aux lettres SecOps**. Les administrateurs peuvent filtrer et analyser ces remplacements système dans les expériences suivantes :
 
-- [Détections en temps réel de l’Explorateur de menaces dans Defender pour Office 365 plan 2](threat-explorer.md) : l’administrateur peut filtrer sur la **source de remplacement du système** et sélectionner une **simulation d’hameçonnage** ou une **boîte aux lettres SecOps**.
-- La [page d’entité e-mail dans l’Explorateur de menaces/Détections en temps réel](mdo-email-entity-page.md) : l’administrateur peut afficher un message autorisé par la stratégie d’organisation par la **boîte aux lettres SecOps** ou la **simulation d’hameçonnage** sous **remplacement de locataire** dans la section **Remplacements** .
-- Rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) : l’administrateur peut filtrer par **vue les données par remplacement du système** dans le menu déroulant et sélectionner pour afficher les messages autorisés en raison d’un remplacement du système de simulation d’hameçonnage. Pour afficher les messages autorisés par le remplacement de la boîte aux lettres SecOps, vous pouvez sélectionner **la répartition du graphique par emplacement de livraison** dans le menu déroulant de **répartition du graphique par raison** .
+- [Détections en temps réel/Explorateur de menaces dans Defender pour Office 365 plan 2](threat-explorer.md) : Administration pouvez filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
+- Page [d’entité e-mail dans l’Explorateur de menaces/Détections en temps réel](mdo-email-entity-page.md) : Administration pouvez afficher un message autorisé par la stratégie d’organisation par la **boîte aux lettres SecOps** ou la **simulation d’hameçonnage** sous **remplacement de locataire** dans la section **Remplacements**.
+- Rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) : Administration pouvez filtrer en **affichant les données par remplacement du système** dans le menu déroulant et sélectionner pour afficher les messages autorisés en raison d’un remplacement du système de simulation d’hameçonnage. Pour afficher les messages autorisés par le remplacement de la boîte aux lettres SecOps, vous pouvez sélectionner **la répartition du graphique par emplacement de livraison** dans le menu déroulant de **répartition du graphique par raison** .
 - [Repérage avancé dans Microsoft Defender pour point de terminaison](../defender-endpoint/advanced-hunting-overview.md) : La simulation d’hameçonnage et les remplacements de système de boîte aux lettres SecOps s’affichent en tant qu’options dans OrgLevelPolicy dans EmailEvents.
-- [Vues de campagne](campaigns.md) : l’administrateur peut filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
+- [Vues de campagne](campaigns.md) : Administration pouvez filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Livraison avancée** , ouvrez <https://security.microsoft.com/advanceddelivery>.
 
-- Pour vous connecter à Security & Compliance PowerShell, consultez [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+- Pour vous connecter à Security & Compliance PowerShell, consultez [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 - Vous devez disposer d’autorisations pour pouvoir effectuer les procédures décrites dans cet article :
   - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie de remise avancée, vous devez être membre du groupe de **rôles Administrateur** de la sécurité dans le **portail Microsoft 365 Defender** et membre du groupe de **rôles Gestion de l’organisation** dans **Exchange Online**.
@@ -75,7 +75,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
   Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md) et [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L’ajout d’utilisateurs au rôle de Azure Active Directory correspondant donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > L’ajout d’utilisateurs au rôle Azure Active Directory correspondant donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des boîtes aux lettres SecOps dans la stratégie de remise avancée
 
@@ -110,7 +110,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées s’affiche
    - **Domaine** : développez ce paramètre et entrez au moins un domaine d’adresse e-mail (par exemple, contoso.com) en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 20 entrées.
 
      > [!NOTE]
-     > Utilisez le domaine de l’adresse `5321.MailFrom` (également appelée adresse **MAIL FROM** , expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la transmission SMTP du message **ou** un domaine DKIM (DomainKeys Identified Mail), comme spécifié par votre fournisseur de simulation de hameçonnage. 
+     > Utilisez le domaine de l’adresse `5321.MailFrom` (également appelée adresse **MAIL FROM** , expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la transmission SMTP du message **ou** un domaine DKIM (DomainKeys Identified Mail), comme spécifié par votre fournisseur de simulation de hameçonnage.
 
    - **Envoi d’adresse IP** : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
      - Adresse IP unique : par exemple, 192.168.1.1.
@@ -121,13 +121,13 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées s’affiche
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
    > [!NOTE]
-   > Pour configurer une simulation d’hameçonnage tierce dans Advanced Delivery, vous devez obtenir les informations suivantes :
-   > 
+   > Pour configurer une simulation d’hameçonnage tierce dans Advanced Delivery, vous devez fournir les informations suivantes :
+   >
    > - Au moins un **domaine** provenant de l’une des sources suivantes :
    >   - Adresse `5321.MailFrom` (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe).
    >   - Domaine DKIM.
    > - Au moins une **adresse IP d’envoi**.
-   > 
+   >
    > Vous pouvez éventuellement inclure **des URL de simulation pour vous** assurer que les URL des messages de simulation ne sont pas bloquées.
    > Vous pouvez spécifier jusqu’à 10 entrées pour chaque champ.
    > Il doit y avoir une correspondance sur au moins un **domaine** et une **adresse IP d’envoi**, mais aucune association entre les valeurs n’est conservée.
@@ -142,9 +142,9 @@ Les entrées de simulation d’hameçonnage tierces que vous avez configurées s
 
 En plus des deux scénarios que la stratégie de remise avancée peut vous aider, il existe d’autres scénarios qui peuvent nécessiter le contournement du filtrage :
 
-- **Filtres tiers** : si l’enregistrement MX de votre domaine *ne pointe pas* vers Office 365 (les messages sont routées ailleurs en premier), [la sécurité par défaut](secure-by-default.md) *n’est pas disponible*. Si vous souhaitez ajouter une protection, vous devez activer le filtrage amélioré pour les connecteurs (également appelé *liste d’ignorer*). Pour plus d’informations, consultez [Gérer le flux de messagerie à l’aide d’un service cloud tiers avec Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). Si vous ne souhaitez pas un filtrage amélioré pour les connecteurs, utilisez des règles de flux de messagerie (également appelées règles de transport) pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers. Pour plus d’informations, consultez [Utiliser des règles de flux de messagerie pour définir la liste de contrôle de contrôle d’accès dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+- **Filtres tiers** : si l’enregistrement MX de votre domaine _ne pointe pas_ vers Office 365 (les messages sont routées ailleurs en premier), [la sécurité par défaut](secure-by-default.md) _n’est pas disponible_. Si vous souhaitez ajouter une protection, vous devez activer le filtrage amélioré pour les connecteurs (également appelé _liste d’ignorer_). Pour plus d’informations, consultez [Gérer le flux de messagerie à l’aide d’un service cloud tiers avec Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). Si vous ne souhaitez pas un filtrage amélioré pour les connecteurs, utilisez des règles de flux de messagerie (également appelées règles de transport) pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers. Pour plus d’informations, consultez [Utiliser des règles de flux de messagerie pour définir la liste de contrôle de contrôle d’accès dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-- **Faux positifs en cours d’examen** : vous souhaiterez peut-être autoriser temporairement certains messages qui sont toujours analysés par Microsoft via [des soumissions d’administrateurs](admin-submission.md) à signaler les messages connus qui sont incorrectement marqués comme mauvais pour Microsoft (faux positifs). Comme pour tous les remplacements, nous recommandons **_vivement_** que ces allocations soient temporaires.
+- **Faux positifs en cours d’examen** : vous souhaiterez peut-être autoriser temporairement certains messages qui sont toujours analysés par Microsoft via [des soumissions d’administrateurs](admin-submission.md) à signaler les messages connus qui sont incorrectement marqués comme mauvais pour Microsoft (faux positifs). Comme pour tous les remplacements, nous recommandons _**vivement**_ que ces allocations soient temporaires.
 
 ## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procédures PowerShell de sécurité & conformité pour les boîtes aux lettres SecOps dans la stratégie de remise avancée
 

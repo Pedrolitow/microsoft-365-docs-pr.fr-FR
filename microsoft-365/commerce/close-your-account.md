@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Lorsque vous fermez votre compte avec Microsoft, toutes les informations relatives à votre compte sont supprimées, y compris les licences, les utilisateurs et les données utilisateur.
 ms.date: 04/02/2021
-ms.openlocfilehash: c036a4cda929d58265a088b15a43772caacb0b94
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102457"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491756"
 ---
-# <a name="close-your-account"></a>Fermer votre compte
+# <a name="close-your-microsoft-account"></a>Fermer votre compte Microsoft
 
 Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations relatives à votre compte sont supprimées. Ces informations incluent les abonnements, les licences, les modes de paiement, les utilisateurs et les données utilisateur.
 
@@ -42,13 +42,13 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Supprimez tous les utilisateurs, à l’exception d’un administrateur général. L’administrateur général effectue les étapes pour fermer le compte. Avant de pouvoir supprimer le répertoire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
-Si les utilisateurs sont synchronisés à partir d’un emplacement local, désactivez d’abord la synchronisation, puis supprimez les utilisateurs dans le répertoire cloud à l’aide des applets de commande Azure-Portal ou Azure PowerShell.
+Si les utilisateurs sont synchronisés à partir d’un emplacement local, désactivez d’abord la synchronisation, puis supprimez les utilisateurs du répertoire cloud à l’aide des applets de commande Portail Azure ou Azure PowerShell.
 
 Pour supprimer des utilisateurs, consultez [l’administrateur de gestion des utilisateurs : Supprimer un ou plusieurs utilisateurs](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
 Vous pouvez également utiliser l’applet de commande PowerShell [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) pour supprimer des utilisateurs en bloc.
 
-Si votre organisation utilise Active Directory qui se synchronise avec Microsoft Azure Active Directory (Azure AD), supprimez plutôt le compte d’utilisateur d’Active Directory. Pour obtenir des instructions, consultez [Suppression en bloc des utilisateurs dans Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
+Si votre organisation utilise Active Directory qui se synchronise avec Microsoft Azure Active Directory (Azure AD), supprimez plutôt le compte d’utilisateur d’Active Directory. Pour obtenir des instructions, consultez [Suppression en bloc d’utilisateurs dans Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : Annuler tous les abonnements actifs
 
@@ -72,7 +72,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Microsoft
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Étape 4 : Désactiver l’authentification multifacteur
 
-1. Connectez-vous au centre d’administration avec un compte глобальный администратор. Pour vérifier les rôles que vous avez, consultez [Vérifier les rôles d’administrateur dans votre organisation](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
+1. Connectez-vous au centre d’administration avec un compte Administrateur général. Pour vérifier les rôles que vous avez, consultez [Vérifier les rôles d’administrateur dans votre organisation](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
 2. Accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a> .
 3. Choisissez **l’authentification multifacteur**.
 4. Dans la page d’authentification multifacteur, désactivez tous les comptes à l’exception du compte d’administrateur général que vous utilisez actuellement.
@@ -82,7 +82,7 @@ Vous pouvez également [utiliser PowerShell pour désactiver l’authentificatio
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Étape 5 : Supprimer le répertoire dans Azure Active Directory
 
-1. Connectez-vous au <a href="https://aad.portal.azure.com/" target="_blank">Centre d’administration Azure AD</a> avec un compte глобальный администратор.
+1. Connectez-vous au <a href="https://aad.portal.azure.com/" target="_blank">Centre d’administration Azure AD</a> avec un compte Administrateur général.
 2. Sélectionner **Azure Active Directory**.
 3. Basculez vers l’organisation que vous souhaitez supprimer.
 4. Sélectionnez **Supprimer le locataire**.
@@ -90,8 +90,8 @@ Vous pouvez également [utiliser PowerShell pour désactiver l’authentificatio
 
 Une fois cette dernière étape terminée, votre compte microsoft est fermé et supprimé.
 
-## <a name="related-content"></a>Contenu associé 
+## <a name="related-content"></a>Contenu connexe 
 
-[Comprendre votre facture pour Microsoft 365 pour les entreprises](./billing-and-payments/understand-your-invoice2.md) (article)\
+[Comprendre votre facture pour Microsoft 365 entreprise](./billing-and-payments/understand-your-invoice2.md) (article)\
 [Annuler votre abonnement](./subscriptions/cancel-your-subscription.md) (article)
 

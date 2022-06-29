@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 20de4c18c46977108c1570ba89bb6daefcf8cfdd
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 2aee32adca1799fca84932991dc128a6a3f64ca7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923399"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492444"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -33,7 +33,7 @@ ms.locfileid: "65923399"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -45,20 +45,14 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 
 La protection réseau permet de protéger les appareils contre les événements Basés sur Internet. La protection réseau est une fonctionnalité de réduction de la surface d’attaque. Il permet d’empêcher les employés d’accéder à des domaines dangereux par le biais d’applications. Les domaines qui hébergent des escroqueries, des exploits et d’autres contenus malveillants sur Internet sont considérés comme dangereux. La protection réseau étend l’étendue de [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de faible réputation (en fonction du domaine ou du nom d’hôte).
 
-La protection réseau étend la protection dans la [protection Web](web-protection-overview.md) au niveau du système d’exploitation. Il fournit la fonctionnalité de protection web disponible dans Microsoft Edge à d’autres navigateurs et applications non-navigateurs pris en charge. La protection réseau offre également une visibilité et un blocage des indicateurs de compromission (IOC) lorsqu’ils sont utilisés avec la [détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison. Par exemple, la protection réseau fonctionne avec vos [indicateurs personnalisés](manage-indicators.md) que vous pouvez utiliser pour bloquer des domaines ou des noms d’hôte spécifiques.
-
-> [!TIP]
-> Consultez le site test de Microsoft Defender pour point de terminaison à [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
+La protection réseau étend la protection dans la [protection Web](web-protection-overview.md) au niveau du système d’exploitation. Il fournit la fonctionnalité de protection web disponible dans Microsoft Edge à d’autres navigateurs et applications non-navigateurs pris en charge. La protection réseau offre également une visibilité et un blocage des indicateurs de compromission (IOC) lorsqu’ils sont utilisés avec la [détection et la réponse](overview-endpoint-detection-response.md) des points de terminaison. Par exemple, la protection réseau fonctionne avec vos [indicateurs personnalisés](manage-indicators.md) que vous pouvez utiliser pour bloquer des domaines ou des noms d’hôtes spécifiques.
 
 Regardez cette vidéo pour découvrir comment la protection réseau permet de réduire la surface d’attaque de vos appareils en cas d’hameçonnage, d’attaques et d’autres contenus malveillants.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
 ## <a name="requirements-for-network-protection"></a>Configuration requise pour la protection réseau
 
-La protection réseau requiert Windows 10 Professionnel ou Entreprise, ainsi que la protection en temps réel de l’antivirus Microsoft Defender.
+La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise), ou Windows Server version 1803 ou ultérieure, et la protection en temps réel de l’Antivirus Microsoft Defender.
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|
@@ -66,34 +60,31 @@ La protection réseau requiert Windows 10 Professionnel ou Entreprise, ainsi que
 
 ## <a name="why-network-protection-is-important"></a>Pourquoi la protection réseau est-elle importante ?
 
-> [!IMPORTANT]
-> Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
-> Les informations sur les fonctionnalités disponibles commercialement suivent les informations de la préversion publique.
-
 La protection réseau fait partie du groupe de solutions de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison. La protection réseau permet de superposer la couche réseau d’URL et d’adresses IP bloquantes. La protection réseau peut empêcher l’accès aux URL à l’aide de certains navigateurs et connexions réseau standard.
 
 Par défaut, la protection réseau protège vos ordinateurs contre les URL malveillantes connues à l’aide du flux SmartScreen, qui bloque les URL malveillantes d’une manière similaire à SmartScreen dans le navigateur Microsoft Edge. La fonctionnalité de protection réseau peut être étendue à :
 
-- Bloquer l’adresse IP/l’URL de votre propre intel de menace (indicateurs)
-- Bloquer les services non approuvés de Microsoft Defender pour Cloud Apps (anciennement Microsoft Cloud App Security)
-- Bloquer les sites en fonction de la catégorie (filtrage de contenu web)
+- Bloquer les adresses IP/URL de votre propre renseignement sur [les menaces (indicateurs](indicator-ip-domain.md))
+- Bloquer les services non approuvés de [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (anciennement Microsoft Cloud App Security)
+- Bloquer les sites en fonction de la catégorie ([filtrage de contenu web](web-content-filtering.md))
 
-La protection réseau est une partie essentielle de la protection et de la pile de réponses Microsoft.
+La protection réseau est une partie essentielle de la pile de réponses et de protection Microsoft.
 
-Pour plus d’informations sur la protection réseau pour Windows Server, Linux, MacOS et MTD, consultez [la recherche proactive des menaces avec repérage avancé](advanced-hunting-overview.md).
+> [!TIP]
+> Pour plus d’informations sur la protection réseau pour Windows Server, Linux, MacOS et Mobile Threat Defense (MTD), consultez [La chasse proactive contre les menaces avec repérage avancé](advanced-hunting-overview.md).
 
 ### <a name="block-command-and-control-c2-attacks"></a>Bloquer les attaques de commande et de contrôle (C2)
 
-Les ordinateurs serveur C2 sont utilisés par les utilisateurs malveillants pour envoyer des commandes à des systèmes compromis par des programmes malveillants, puis exercer un certain type de contrôle sur les systèmes compromis. Les attaques C2 se cachent généralement dans les services cloud tels que le partage de fichiers et les services de messagerie web, ce qui permet aux serveurs C2 d’éviter la détection en se fusionnant avec le trafic classique.
+Les ordinateurs serveur C2 (Command and Control) sont utilisés par les utilisateurs malveillants pour envoyer des commandes à des systèmes compromis par des programmes malveillants, puis exercer un certain type de contrôle sur les systèmes compromis. Les attaques C2 se cachent généralement dans les services cloud tels que le partage de fichiers et les services de messagerie web, ce qui permet aux serveurs C2 d’éviter la détection en se fusionnant avec le trafic classique.
 
 Les serveurs C2 peuvent être utilisés pour lancer des commandes qui peuvent :
 
-- voler des données (par exemple, par hameçonnage)
-- contrôler les ordinateurs compromis dans un botnet
-- interrompre les applications légitimes
-- diffuser des programmes malveillants, tels que les ransomwares
+- Voler des données (par exemple, par hameçonnage)
+- Contrôler les ordinateurs compromis dans un botnet
+- Interrompre les applications légitimes
+- Diffuser des programmes malveillants, tels que les rançongiciels
 
-Le composant Protection réseau de Microsoft Defender pour point de terminaison identifie et bloque les connexions aux infrastructures C2 utilisées dans les attaques par ransomware gérées par l’homme, à l’aide de techniques telles que l’apprentissage automatique et l’identification intelligente des indicateurs de compromission (IoC).
+Le composant de protection réseau de Defender pour point de terminaison identifie et bloque les connexions aux infrastructures C2 utilisées dans les attaques par ransomware gérées par l’homme, à l’aide de techniques telles que l’apprentissage automatique et l’identification intelligente des indicateurs de compromission (IoC).
 
 #### <a name="network-protection-new-toast-notifications"></a>Protection réseau : nouvelles notifications toast
 
@@ -127,7 +118,7 @@ Un utilisateur visite un site web :
 - Si l’URL a une réputation inconnue ou incertaine, une notification toast présente à l’utilisateur les options suivantes :
 
   - **OK** : la notification toast est publiée (supprimée) et la tentative d’accès au site est terminée.
-  - **Débloquer** : l’utilisateur n’a pas besoin d’accéder au portail WDSI (Windows Defender Security Intelligence) pour accéder au site. L’utilisateur aura accès au site pendant 24 heures; à ce stade, le bloc est réactivé pendant 24 heures. L’utilisateur peut continuer à utiliser **Débloquer** pour accéder au site jusqu’à ce que l’administrateur interdise (bloque) le site, supprimant ainsi l’option de **débloquer**.
+  - **Débloquer** : l’utilisateur n’a pas besoin d’accéder au portail Windows Defender Security Intelligence (WDSI) pour accéder au site. L’utilisateur aura accès au site pendant 24 heures; à ce stade, le bloc est réactivé pendant 24 heures. L’utilisateur peut continuer à utiliser **Débloquer** pour accéder au site jusqu’à ce que l’administrateur interdise (bloque) le site, supprimant ainsi l’option de **débloquer**.
   - **Commentaires** : la notification toast présente à l’utilisateur un lien permettant d’envoyer un ticket, que l’utilisateur peut utiliser pour envoyer des commentaires à l’administrateur afin de justifier l’accès au site.
 
   > [!div class="mx-imgBorder"]
@@ -150,7 +141,7 @@ Un utilisateur visite un site web :
 
 Dans sa forme initiale, le ransomware est une menace de marchandise, préprogrammée et axée sur des résultats limités et spécifiques (par exemple, le chiffrement d’un ordinateur). Toutefois, les ransomwares sont devenus une menace sophistiquée qui est pilotée par l’homme, adaptative et axée sur une plus grande échelle et des résultats plus répandus; comme la conservation des ressources ou des données d’une organisation entière contre une rançon.
 
-La prise en charge de la commande et du contrôle (C2) est un élément clé de cette évolution du ransomware et permet à ces attaques de s’adapter à l’environnement qu’elles ciblent. Rompre le lien vers l’infrastructure de commande et de contrôle signifie arrêter la progression d’une attaque à son étape suivante.
+La prise en charge des serveurs de commande et de contrôle (C2) est un élément clé de cette évolution du ransomware et permet à ces attaques de s’adapter à l’environnement qu’elles ciblent. La rupture du lien vers l’infrastructure de commande et de contrôle arrête la progression d’une attaque à l’étape suivante.
 
 #### <a name="detecting-and-remediating-cobaltstrike-public-preview"></a>Détection et correction de CobaltStrike (préversion publique)
 
@@ -158,29 +149,29 @@ CobaltStrike est l’un des frameworks de post-exploitation les plus courants ut
 
 CobaltStrike permet la personnalisation de plusieurs aspects de l’attaque, de la possibilité d’héberger plusieurs écouteurs répondant à différents protocoles, à la façon dont le composant principal côté client (Beacon) doit effectuer l’injection de code et exécuter des travaux post-exploitation. Lorsque Microsoft Defender détecte CobaltStrike, il peut rechercher et collecter intelligemment des indicateurs clés de compromission (IoC). Une fois capturés, ces indicateurs sont partagés dans la pile de produits de Microsoft à des fins de détection et de protection.
 
-La détection des commandes et des contrôles de Microsoft Defender ne se limite pas à CobaltStrike. Microsoft Defender peut capturer les IOC clés de plusieurs familles de programmes malveillants. Les indicateurs sont partagés dans la pile de protection Microsoft pour protéger les clients et les alerter en cas de compromission.
+La détection de commande et de contrôle de Defender pour point de terminaison n’est pas limitée à CobaltStrike. Defender pour point de terminaison peut capturer les E/S clés de plusieurs familles de programmes malveillants. Les indicateurs sont partagés dans la pile de protection Microsoft pour protéger les clients et les alerter en cas de compromission.
 
-Le blocage de la communication de commande et de contrôle peut gravement entraver une attaque ciblée, ce qui donne aux défenseurs le temps de trouver les vecteurs d’entrée initiaux et de les fermer avant une autre tentative d’attaque.
+Le blocage de la communication de commande et de contrôle peut gravement entraver une attaque ciblée, ce qui donne à votre équipe de sécurité le temps de trouver les vecteurs d’entrée initiaux et de les fermer avant une autre tentative d’attaque.
 
 <!-- Hide {this intro with no subsequent list items}
 [For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
 -->
 
-## <a name="smart-screen-unblock"></a>Débloquer l’écran intelligent
+## <a name="smartscreen-unblock"></a>Débloquer SmartScreen
 
-Une nouvelle fonctionnalité de Microsoft Defender pour les indicateurs de point de terminaison permet aux administrateurs de permettre aux utilisateurs finaux de contourner les « avertissements » générés pour certaines URL et adresses IP. Selon la raison pour laquelle l’URL a été bloquée, lorsqu’un bloc d’écran intelligent est rencontré, il peut offrir aux administrateurs la possibilité de débloquer le site jusqu’à 24 heures. Dans ce cas, une notification toast de sécurité Windows s’affiche, ce qui permet à l’utilisateur final de **débloquer** l’URL ou l’adresse IP pendant la période définie.  
+Une nouvelle fonctionnalité des indicateurs Defender pour point de terminaison permet aux administrateurs de permettre aux utilisateurs finaux de contourner les avertissements générés pour certaines URL et adresses IP. Selon la raison pour laquelle l’URL a été bloquée, lorsqu’un bloc SmartScreen est rencontré, il peut offrir aux administrateurs la possibilité de débloquer le site jusqu’à 24 heures. Dans ce cas, une notification toast Sécurité Windows s’affiche, ce qui permet à l’utilisateur final de **débloquer** l’URL ou l’adresse IP pendant la période définie.  
 
  > [!div class="mx-imgBorder"]
- > ![ Notification de sécurité Windows pour la protection réseau](images/network-protection-smart-screen-block-notification.png)
+ > ![notification Sécurité Windows pour la protection réseau](images/network-protection-smart-screen-block-notification.png)
 
-Microsoft Defender pour les administrateurs de points de terminaison peut configurer la fonctionnalité de déblocage d’écran intelligent sur [Microsoft 365 Defender](https://security.microsoft.com/), à l’aide de l’outil de configuration suivant. À partir du portail Microsoft 365 Defender, accédez au chemin d’accès à ConfigToolName.
+Microsoft Defender pour point de terminaison les administrateurs peuvent configurer la fonctionnalité de déblocage SmartScreen à [Microsoft 365 Defender](https://security.microsoft.com/), à l’aide de l’outil de configuration suivant. À partir du portail Microsoft 365 Defender, accédez au chemin d’accès à ConfigToolName.
 
 <!-- Hide {this intro with no subsequent list items}
 [Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
 -->
 
  > [!div class="mx-imgBorder"]
- > ![Configuration du bloc d’écran intelligent de protection réseau ULR et formulaire IP](images/network-protection-smart-screen-block-configuration.png)
+ > ![Configuration de bloc SmartScreen de protection réseau ULR et formulaire IP](images/network-protection-smart-screen-block-configuration.png)
 
 ## <a name="using-network-protection"></a>Utilisation de la protection réseau
 
@@ -189,36 +180,45 @@ La protection réseau est activée par appareil, ce qui est généralement fait 
 > [!NOTE]
 > L’antivirus Microsoft Defender doit être actif pour activer la protection réseau.
 
-Vous pouvez activer la protection réseau en mode **Audit** ou **Bloquer** . Si vous souhaitez évaluer l’impact de l’activation de la protection réseau avant de bloquer les ADRESSEs IP ou LES URL, vous pouvez l’activer en mode Audit pendant un certain temps pour collecter des données sur ce qui serait bloqué. Les journaux d’activité en mode audit lorsque les utilisateurs finaux se sont connectés à une adresse ou à un site qui aurait autrement été bloqué par la protection réseau.
+Vous pouvez activer la protection réseau en mode **Audit** ou **Bloquer** . Si vous souhaitez évaluer l’impact de l’activation de la protection réseau avant de bloquer réellement les adresses IP ou LES URL, vous pouvez activer la protection réseau en mode Audit pendant un certain temps pour collecter des données sur ce qui serait bloqué. Les journaux d’activité en mode audit lorsque les utilisateurs finaux se sont connectés à une adresse ou à un site qui aurait autrement été bloqué par la protection réseau.
 
-## <a name="advanced-hunting"></a>Repérage avancé
+## <a name="advanced-hunting"></a>Recherche avancée de menaces
 
-Si vous utilisez La chasse avancée pour identifier les événements d’audit, vous disposez d’un historique de 30 jours maximum disponible à partir de la console. Voir [Repérage avancé](advanced-hunting-overview.md).
+Si vous utilisez la chasse avancée pour identifier les événements d’audit, vous disposez d’un historique de 30 jours maximum disponible à partir de la console. Voir [Repérage avancé](advanced-hunting-overview.md).
 
-Vous trouverez les données d’audit dans **La chasse avancée** dans le portail Microsoft Defender pour point de terminaison.  
+Vous trouverez les données d’audit dans **La chasse avancée** dans le portail Defender pour point de terminaison ([https://security.microsoft.com](https://security.microsoft.com)).  
 
-Les événements se trouvent dans DeviceEvents avec un ActionType d’ExploitGuardNetworkProtectionAudited. Les blocs sont affichés par ExploitGuardNetworkProtectionBlocked.  
+Les événements sont dans DeviceEvents avec un ActionType de `ExploitGuardNetworkProtectionAudited`. Les blocs sont affichés par `ExploitGuardNetworkProtectionBlocked`.  
 
 L’exemple suivant inclut les actions bloquées :
+
+```kusto
 
 DeviceEvents
 
 - Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
+```
+
  > [!div class="mx-imgBorder"]
  > ![Repérage avancé pour l’audit et l’identification des événements](images/network-protection-advanced-hunting.png)
 
 > [!TIP]
-> Ces entrées ont des données dans la colonne AdditionalFields, ce qui vous donne d’excellentes informations sur l’action. Si vous développez AdditionalFields, vous pouvez également obtenir les champs **: IsAudit**, **ResponseCategory** et **DisplayName**.
+> Ces entrées ont des données dans la colonne **AdditionalFields** , ce qui vous donne d’excellentes informations sur l’action. Si vous développez **AdditionalFields** , vous pouvez également obtenir les champs **: IsAudit**, **ResponseCategory** et **DisplayName**.
 
-DeviceEvents :
+Voici un autre exemple :
 
-- où ActionType contient « ExploitGuardNetworkProtection »
+```kusto
+
+DeviceEvents:
+
+- where ActionType contains "ExploitGuardNetworkProtection"
 - extend ParsedFields=parse_json(AdditionalFields)
 - project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
 - sort by Timestamp desc
 
-La catégorie de réponse vous indique ce qui a provoqué l’événement, par exemple :
+```
+La catégorie Réponse vous indique ce qui a provoqué l’événement, par exemple :
 
 | ResponseCategory | Fonctionnalité responsable de l’événement |
 |:---|:---|
@@ -230,11 +230,11 @@ La catégorie de réponse vous indique ce qui a provoqué l’événement, par e
 
 Pour plus d’informations, consultez [Résolution des problèmes liés aux blocs de points de terminaison](web-protection-overview.md#troubleshoot-endpoint-blocks).
 
-Vous pouvez utiliser la liste des URL et adresses IP obtenues pour déterminer ce qui aurait été bloqué si l’appareil était en mode bloc, ainsi que la fonctionnalité qui les a bloquées. Passez en revue chaque élément de la liste pour identifier les URL ou adresses IP si elles sont nécessaires à votre environnement. Si vous trouvez des entrées qui ont été auditées et qui sont critiques pour votre environnement, créez un indicateur pour les autoriser dans votre réseau. Les indicateurs d’URL/IP d’autorisation sont prioritaires sur n’importe quel bloc.
+Vous pouvez utiliser la liste des URL et adresses IP obtenues pour déterminer ce qui aurait été bloqué si l’appareil était en mode bloc et quelle fonctionnalité les a bloquées. Passez en revue chaque élément de la liste pour identifier les URL ou adresses IP si elles sont nécessaires à votre environnement. Si vous trouvez des entrées qui ont été auditées et qui sont critiques pour votre environnement, créez un indicateur pour les autoriser dans votre réseau. Les indicateurs d’URL/IP d’autorisation sont prioritaires sur n’importe quel bloc.
 
 Une fois que vous avez créé un indicateur, vous pouvez examiner la résolution du problème sous-jacent :
 
-- Écran intelligent : révision des demandes
+- SmartScreen : révision des demandes
 - Indicateur : modifier l’indicateur existant
 - MCA : passer en revue l’application non approuvée
 - WCF : recategorisation des demandes
@@ -250,7 +250,7 @@ Pour plus d’informations sur la création de vos propres rapports Power BI, co
 
 ## <a name="configuring-network-protection"></a>Configuration de la protection réseau
 
-Pour plus d’informations sur l’activation de la protection réseau, consultez **[Activer la protection réseau](enable-network-protection.md)**. Utilisez la stratégie de groupe, PowerShell ou les CSP MDM pour activer et gérer la protection réseau dans votre réseau.
+Pour plus d’informations sur l’activation de la protection réseau, consultez **[Activer la protection réseau](enable-network-protection.md)**. Utilisez stratégie de groupe, PowerShell ou MDM CSP pour activer et gérer la protection réseau dans votre réseau.
 
 Une fois que vous avez activé les services, vous devrez peut-être configurer votre réseau ou pare-feu pour autoriser les connexions entre les services et vos appareils (également appelés points de terminaison).
 
@@ -267,16 +267,18 @@ Vous pouvez également utiliser le [mode audit](audit-windows-defender.md) pour 
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements de protection réseau dans le portail Microsoft 365 Defender
 
-Microsoft Defender pour point de terminaison fournit des rapports détaillés sur les événements et les blocs dans le cadre de ses [scénarios d’investigation des alertes](investigate-alerts.md). Vous pouvez afficher ces détails dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) dans la [file d’attente des alertes](review-alerts.md) ou à l’aide de la [chasse avancée](advanced-hunting-overview.md). Si vous utilisez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la chasse avancée pour voir comment les paramètres de protection réseau affecteraient votre environnement s’ils étaient activés.
+Defender pour point de terminaison fournit des rapports détaillés sur les événements et les blocs dans le cadre de ses [scénarios d’investigation des alertes](investigate-alerts.md). Vous pouvez afficher ces détails dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) dans la [file d’attente des alertes](review-alerts.md) ou à l’aide de la [chasse avancée](advanced-hunting-overview.md). Si vous utilisez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la chasse avancée pour voir comment les paramètres de protection réseau affecteraient votre environnement s’ils étaient activés.
 
 Voici un exemple de requête pour la chasse avancée :
 
 ```kusto
+
 DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
+
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans l’Observateur d’événements Windows
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows observateur d'événements
 
 Vous pouvez consulter le journal des événements Windows pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
 
@@ -286,24 +288,21 @@ Vous pouvez consulter le journal des événements Windows pour voir les événem
 
 Cette procédure crée une vue personnalisée qui filtre pour afficher uniquement les événements suivants liés à la protection réseau :
 
-****
-
 |ID d’événement|Description|
 |---|---|
 |5007|Événement lorsque les paramètres sont modifiés|
 |1125|Événement lorsque la protection réseau se déclenche en mode audit|
 |1126|Événement lorsque la protection réseau se déclenche en mode bloc|
-|
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>Protection réseau et liaison TCP triple
 
-Avec la protection réseau, la détermination de l’autorisation ou du blocage de l’accès à un site est effectuée après la fin de l’établissement de la [liaison triple via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Ainsi, lorsqu’un site est bloqué par la protection réseau, vous pouvez voir un type d’action `ConnectionSuccess` sous `NetworkConnectionEvents` dans le portail Microsoft 365 Defender, même si le site a été bloqué. `NetworkConnectionEvents` sont signalés à partir de la couche TCP et non de la protection réseau. Une fois la négociation triple terminée, l’accès au site est autorisé ou bloqué par la protection réseau.
+Avec la protection réseau, la détermination de l’autorisation ou du blocage de l’accès à un site est effectuée après la fin de l’établissement de la [liaison triple via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Ainsi, lorsqu’un site est bloqué par la protection réseau, vous pouvez voir un type d’action `ConnectionSuccess` sous `NetworkConnectionEvents` le portail Microsoft 365 Defender, même si le site a été bloqué. `NetworkConnectionEvents` sont signalés à partir de la couche TCP et non de la protection réseau. Une fois la négociation triple terminée, l’accès au site est autorisé ou bloqué par la protection réseau.
 
 Voici un exemple de fonctionnement :
 
 1. Supposons qu’un utilisateur tente d’accéder à un site web sur son appareil. Le site est hébergé sur un domaine dangereux et doit être bloqué par la protection réseau.  
 
-2. L’établissement d’une liaison triple via TCP/IP commence. Avant de se terminer, une `NetworkConnectionEvents` action est journalisée et est `ActionType` répertoriée comme `ConnectionSuccess`. Toutefois, dès que le processus de négociation triple est terminé, la protection réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) ; c’est lorsque l’établissement d’une négociation à trois est terminé qu’une détermination est effectuée et que l’accès à un site est bloqué ou autorisé.
+2. L’établissement d’une liaison triple via TCP/IP commence. Avant de se terminer, une `NetworkConnectionEvents` action est journalisée et est `ActionType` répertoriée comme `ConnectionSuccess`. Toutefois, dès que le processus de négociation triple est terminé, la protection réseau bloque l’accès au site. Tout cela se produit rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) ; c’est lorsque l’établissement d’une négociation à trois est terminé qu’une détermination est effectuée et que l’accès à un site est bloqué ou autorisé.
 
 3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la [file d’attente des alertes](alerts-queue.md). Les détails de cette alerte incluent à la fois `NetworkConnectionEvents` et `AlertEvents`. Vous pouvez voir que le site a été bloqué, même si vous avez également un `NetworkConnectionEvents` élément avec l’ActionType de `ConnectionSuccess`.
 
@@ -323,34 +322,29 @@ En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez à l�
 
 ### <a name="alternative-option-for-network-protection"></a>Autre option pour la protection réseau
 
-Pour Windows 10 Entreprise Multisession 1909 et versions ultérieures, utilisés dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
+Pour Windows 10 Entreprise multisession 1909 et versions ultérieures, utilisées dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
 
 1. Utilisez [Activer la protection réseau](enable-network-protection.md) et suivez les instructions pour appliquer votre stratégie.
 
 2. Exécutez les commandes PowerShell suivantes :
-  - `Set-MpPreference -EnableNetworkProtection Enabled`
-  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
-  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
-  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
+
+   - `Set-MpPreference -EnableNetworkProtection Enabled`
+   - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+   - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+   - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>Résolution des problèmes de protection réseau
 
-En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres de proxy du système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service cloud. Pour résoudre le problème de connectivité, les clients disposant de licences E5 doivent configurer l’une des clés de Registre suivantes :
-
-```console
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
-
-```
+En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres de proxy du système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas atteindre le service cloud. Pour résoudre le problème de connectivité, [configurez un proxy statique pour l’antivirus Microsoft Defender](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
 
 ## <a name="optimizing-network-protection-performance"></a>Optimisation des performances de protection réseau
 
-La protection réseau dispose désormais d’une optimisation des performances qui permet au mode Bloc de commencer à inspecter de manière asynchrone les longues connexions une fois validées et autorisées par SmartScreen, ce qui peut permettre une réduction potentielle du coût de l’inspection sur la bande passante et peut également aider à résoudre les problèmes de compatibilité des applications. Cette fonctionnalité d’optimisation est activée par défaut. Vous pouvez désactiver cette fonctionnalité à l’aide de l’applet de commande PowerShell suivante :
+La protection réseau dispose désormais d’une optimisation des performances qui permet au mode Bloc de commencer à inspecter de manière asynchrone les connexions longues après leur validation et leur autorisation par SmartScreen, ce qui peut permettre une réduction potentielle du coût de l’inspection sur la bande passante et peut également aider à résoudre les problèmes de compatibilité des applications. Cette fonctionnalité d’optimisation est activée par défaut. Vous pouvez désactiver cette fonctionnalité à l’aide de l’applet de commande PowerShell suivante :
 
 `Set-MpPreference -AllowSwitchToAsyncInspection $false`
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Évaluer les | de protection réseau](evaluate-network-protection.md) Effectuez un scénario rapide qui illustre le fonctionnement de la fonctionnalité et les événements qui sont généralement créés.
-- [Activer la protection réseau](enable-network-protection.md) | Utilisez la stratégie de groupe, PowerShell ou les CSP MDM pour activer et gérer la protection réseau dans votre réseau.
+- [Activer la protection réseau](enable-network-protection.md) | Utilisez stratégie de groupe, PowerShell ou MDM CSP pour activer et gérer la protection réseau dans votre réseau.
 - [Configuration des fonctionnalités de réduction de la surface d’attaque dans Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

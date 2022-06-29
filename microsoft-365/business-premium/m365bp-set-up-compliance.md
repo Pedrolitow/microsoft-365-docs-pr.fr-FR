@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: 5bf6b8c0ec81389c65532d6ccc33ad9f14a2e97f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ad95e4dc99a9957812ee09ace69d66b169ef7879
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098941"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491896"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 

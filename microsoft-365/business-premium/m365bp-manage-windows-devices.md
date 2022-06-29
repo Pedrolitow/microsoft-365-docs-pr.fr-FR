@@ -2,11 +2,11 @@
 title: Permettre aux appareils Windows 10 reliés à un domaine d'être gérés par Microsoft 365 for business.
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer Microsoft 365 pour protéger les appareils Windows 10 joints à Active Directory en quelques étapes.
-ms.openlocfilehash: 42a9fb553cbebe9e8a49cc15e97555e6b12ca495
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 3d3c4cbe30481a2c74783f943ac0cedbe4004dc5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893120"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489219"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Gérer les appareils Windows avec Microsoft 365 Business Premium
 
@@ -56,7 +56,7 @@ Cette vidéo décrit les étapes à suivre pour configurer ce scénario pour le 
 
 Consultez [Synchroniser les utilisateurs de domaine pour Microsoft 365](../admin/setup/manage-domain-users.md) pour connaître les étapes à suivre.
 
-## <a name="device-actions"></a>Actions de l’appareil
+## <a name="possible-device-actions-and-statuses"></a>Actions et statuts d’appareil possibles
   
 ![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
 

@@ -18,16 +18,16 @@ ms.custom:
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Découvrez comment examiner et approuver ou refuser des demandes de licence d’utilisateurs pour votre abonnement Microsoft 365 entreprise.
+description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/22/2022
-ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b4259c4c04284e47193d827a6a10214669a5c991
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491004"
 ---
-# <a name="manage-license-requests"></a>Gérer les demandes de licence
+# <a name="manage-self-service-license-requests"></a>Gérer les demandes de licence en libre-service
 
 > [!NOTE]
 > Les informations contenues dans cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez la [FAQ sur l’achat en libre-service](../subscriptions/self-service-purchase-faq.yml).
@@ -35,13 +35,13 @@ ms.locfileid: "66044244"
 Si vous désactivez les achats en libre-service dans votre organisation, vous pouvez utiliser les demandes de licences pour gérer le processus de demande de licence pour vos utilisateurs. Lorsqu’un utilisateur tente d’effectuer un achat en libre-service pour un produit que vous avez bloqué, il peut envoyer une demande de licence à vous, l’administrateur. Lorsqu’ils effectuent une demande, ils peuvent ajouter les noms d’autres utilisateurs qui ont également besoin de licences pour le produit.
 
 > [!NOTE]
-> Si vous empêchez les utilisateurs d’effectuer des achats en libre-service, Microsoft ne leur envoie pas d’e-mails marketing. En outre, s’ils utilisent une version d’évaluation d’un produit, ils ne voient pas d’invites pour l’acheter. Pour plus d’informations, consultez [Gérer les achats en libre-service (Administrateur).](../subscriptions/manage-self-service-purchases-admins.md)
+> Si vous empêchez les utilisateurs d’effectuer des achats en libre-service, Microsoft ne leur envoie pas d’e-mails marketing. En outre, s’ils utilisent une version d’évaluation d’un produit, ils ne voient pas d’invites pour l’acheter. Pour en savoir plus, consultez [Gérer les achats en libre-service (Administration).](../subscriptions/manage-self-service-purchases-admins.md)
 
 Pour afficher et gérer les demandes de licence, l’administrateur utilise l’onglet **Demandes** de la page **Licences** . La liste affiche le nom du produit demandé, le nom de la personne qui demande une licence, la date demandée et l’état de la demande. Les administrateurs peuvent filtrer la liste pour afficher les demandes en attente ou terminées. Les demandes sont conservées pendant 30 jours.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur général pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur général pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-your-own-request-process"></a>Utiliser votre propre processus de demande
 
@@ -77,7 +77,7 @@ Lorsque vous revenez à la liste **des demandes** , vous voyez le message **Que 
 9. Fermez le volet droit.
     Les utilisateurs reçoivent un e-mail indiquant que leur demande a été approuvée ou refusée.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Déplacer des utilisateurs vers un autre abonnement](../subscriptions/move-users-different-subscription.md) (article)\

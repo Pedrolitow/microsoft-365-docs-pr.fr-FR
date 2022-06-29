@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez des utilisateurs à Microsoft 365. Protégez votre entreprise, votre pratique ou votre campagne contre les menaces de cybersécurité sur les e-mails, les données et la communication.
-ms.openlocfilehash: d478b37c38b9184e1ec60844025b3fe356fb43dd
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 97ebd115d46a5cc4bce096f809da242bfcbb9ba5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893326"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491170"
 ---
 # <a name="sign-in-to-microsoft-365-business-for-campaigns"></a>Se connecter à Microsoft 365 Business for Campaigns
 
@@ -36,7 +36,7 @@ Si vous vous êtes inscrit à Microsoft 365 for Campaigns (ou Microsoft 365 Busi
 
 Voici comment se connecter :
 
-1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse e-mail que vous avez utilisée lorsque vous vous [êtes inscrit à Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
+1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse e-mail que vous avez utilisée lorsque vous vous [êtes inscrit à Microsoft 365 pour Campagnes](m365-campaigns-sign-up.md).
 
 2. Dans un navigateur, accédez au Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>
 
@@ -50,7 +50,7 @@ Les utilisateurs qui ont été ajoutés à votre abonnement Microsoft 365 for Ca
 
 1. Accédez à <a href="https://office.com" target="_blank">https://office.com</a>.
 
-2. Connectez-vous à l’aide du nom d’utilisateur et du mot de passe du compte. Les utilisateurs disposent de ces informations dans l’e-mail qu’ils reçoivent lorsqu’ils sont ajoutés en tant qu’utilisateurs. S’il ne trouve pas l’e-mail, voir que [l’utilisateur n’a pas reçu d’e-mail d’invitation](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
+2. Connectez-vous à l’aide du nom d’utilisateur et du mot de passe du compte. Les utilisateurs disposent de ces informations dans l’e-mail qu’ils reçoivent lorsqu’ils sont ajoutés en tant qu’utilisateurs. S’il ne trouve pas l’e-mail, vérifiez que [l’utilisateur n’a pas reçu d’e-mail d’invitation](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
 > Fournissez à votre personnel un lien vers le [guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md) pour obtenir de l’aide sur la connexion, l’obtention d’applications Office et l’enregistrement, la copie et le partage de fichiers.

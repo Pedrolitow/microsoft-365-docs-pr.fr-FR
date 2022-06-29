@@ -18,28 +18,28 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898f04826f89e3a33c0cfcca01b717523e7c6122
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974210"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493084"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs fiables dans EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, EOP offre plusieurs façons de s’assurer que les utilisateurs recevront des e-mails d’expéditeurs approuvés. Ces options incluent Exchange règles de flux de courrier (également appelées règles de transport), Outlook Coffre expéditeurs, la liste verte IP (filtrage de connexion) et les listes d’expéditeurs autorisées ou les listes de domaines autorisées dans les stratégies anti-courrier indésirable. Collectivement, vous pouvez considérer ces options comme des _listes d’expéditeurs fiables_.
+Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, EOP offre plusieurs façons de s’assurer que les utilisateurs recevront des e-mails d’expéditeurs approuvés. Ces options incluent les règles de flux de messagerie Exchange (également appelées règles de transport), les expéditeurs approuvés Outlook, la liste d’autorisation IP (filtrage de connexion) et les listes d’expéditeurs autorisées ou les listes de domaines autorisées dans les stratégies anti-courrier indésirable. Collectivement, vous pouvez considérer ces options comme des _listes d’expéditeurs fiables_.
 
 Les listes d’expéditeurs fiables disponibles sont décrites dans la liste suivante, de la plus recommandée au moins recommandée :
 
 1. Règles de flux de messagerie
-2. expéditeurs Outlook Coffre
+2. Expéditeurs sécurisés Outlook
 3. Liste d’autorisations IP (filtrage de connexion)
 4. Listes d’expéditeurs autorisées ou listes de domaines autorisés (stratégies anti-courrier indésirable)
 
@@ -103,14 +103,16 @@ L’exemple suivant suppose que vous avez besoin d’e-mail de contoso.com pour 
 
       :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Paramètres de règle de flux de courrier dans le CAE pour contourner le filtrage du courrier indésirable" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
-## <a name="use-outlook-safe-senders"></a>Utiliser Outlook Coffre expéditeurs
+## <a name="use-outlook-safe-senders"></a>Utiliser des expéditeurs sécurisés Outlook
 
 > [!CAUTION]
-> Cette méthode crée un risque élevé que des attaquants envoient correctement des e-mails à la boîte de réception qui autrement seraient filtrés ; toutefois, les listes d’expéditeurs Coffre ou de domaines Coffre de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
+> Cette méthode crée un risque élevé que des attaquants envoient correctement des e-mails à la boîte de réception qui autrement seraient filtrés ; Toutefois, les listes d’expéditeurs approuvés ou de domaines sécurisés de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
 
-Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses e-mail de l’expéditeur à la liste des expéditeurs Coffre dans la boîte aux lettres. Pour obtenir des instructions, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cela n’est pas souhaitable dans la plupart des cas, car les expéditeurs contournent certaines parties de la pile de filtrage. Même si vous faites confiance à l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler les faux positifs/négatifs à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ont mal compris. Le contournement de la pile de filtrage interfère également avec [ZAP](zero-hour-auto-purge.md).
+Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses e-mail de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette méthode n’est pas souhaitable dans la plupart des cas, car les expéditeurs contournent certaines parties de la pile de filtrage. Même si vous faites confiance à l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres vérifier chaque message, puis [de signaler les faux positifs/négatifs à Microsoft](report-junk-email-messages-to-microsoft.md) si nous nous sommes trompés. Le contournement de la pile de filtrage interfère également avec le [vidage automatique de zéro heure (ZAP).](zero-hour-auto-purge.md)
 
-Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs Coffre d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur`SFV:SFE`, ce qui indique que le filtrage du courrier indésirable, de l’usurpation d’identité et du hameçonnage a été contourné.
+Par conception et pour renforcer la sécurité des boîtes aux lettres Exchange Online, seuls les paramètres de courrier indésirable pour les expéditeurs sécurisés, les expéditeurs bloqués et les domaines bloqués sont reconnus. Les paramètres des domaines sécurisés sont ignorés.
+
+Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur `SFV:SFE`, ce qui indique que le filtrage du courrier indésirable, de l’usurpation d’identité et du hameçonnage a été contourné.
 
 ## <a name="use-the-ip-allow-list"></a>Utiliser la liste d’autorisations IP
 
@@ -151,9 +153,9 @@ Par exemple, supposons que Blue Yonder Airlines ait embauché Margie’s Travel 
 - L’adresse `5321.MailFrom` est blueyonder.airlines@margiestravel.com.
 - L’adresse `5322.From` est blueyonder@news.blueyonderairlines.com, ce que vous verrez dans Outlook.
 
-Coffre listes d’expéditeurs et les listes de domaines sécurisés dans les stratégies anti-courrier indésirable dans EOP inspectent uniquement les `5322.From` adresses, cela est similaire à Outlook Coffre expéditeurs qui utilisent l’adresse`5322.From`.
+Les listes d’expéditeurs approuvés et les listes de domaines sécurisés dans les stratégies anti-courrier indésirable dans EOP inspectent uniquement les `5322.From` adresses, ce qui est similaire à Outlook Safe Senders qui utilise l’adresse `5322.From` .
 
 Pour empêcher le filtrage de ce message, vous pouvez effectuer les étapes suivantes :
 
-- Ajoutez blueyonder@news.blueyonderairlines.com (l’adresse`5322.From`) en tant qu’expéditeur Outlook Coffre.
+- Ajoutez blueyonder@news.blueyonderairlines.com (l’adresse `5322.From` ) en tant qu’expéditeur sûr Outlook.
 - [Utilisez une règle de flux de messagerie](#recommended-use-mail-flow-rules) avec une condition qui recherche les messages de blueyonder@news.blueyonderairlines.com (adresse `5322.From` , blueyonder.airlines@margiestravel.com (le `5321.MailFrom`), ou les deux.

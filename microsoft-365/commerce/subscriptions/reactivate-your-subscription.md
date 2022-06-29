@@ -22,14 +22,14 @@ ms.custom:
 search.appverid: MET150
 description: Les administrateurs peuvent réactiver un abonnement lorsqu’il expire, est désactivé ou annulé, ou si vous avez annulé au milieu d’une période d’abonnement.
 ms.date: 04/07/2021
-ms.openlocfilehash: 7cb93854f4da8e3568eef058009652cdb6b32b96
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1f0d38a3b0b09a581d4ed31a6d9abb9d8f8ea467
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101479"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489445"
 ---
-# <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
+# <a name="reactivate-your-microsoft-subscription"></a>Réactiver votre abonnement Microsoft
 
 Vous pouvez réactiver votre abonnement dans le Centre d’administration si : l’abonnement a expiré, a été désactivé par Microsoft ou si vous l’avez annulé au milieu d’une période d’abonnement.
   

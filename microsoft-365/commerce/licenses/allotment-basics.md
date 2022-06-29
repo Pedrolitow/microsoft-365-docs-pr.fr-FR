@@ -19,14 +19,14 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez la nouvelle fonctionnalité d’allocations.
 ms.date: 05/12/2022
-ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 2ab253bd122fb4f8ec83c38cb623217ec6ae3815
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636083"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489093"
 ---
-# <a name="allotment-basics"></a>Concepts de base de l’allocation
+# <a name="microsoft-365-license-allotment-basics"></a>Concepts de base de l’attribution de licences Microsoft 365
 
 Les allocations de licences vous permettent de définir des limites de licence et de déléguer la gestion de l’attribution de licences aux produits et aux limites de licence que vous sélectionnez.
 
@@ -34,19 +34,19 @@ Les affectations utilisent des licences basées sur des groupes pour attribuer d
 
 Vous pouvez également déléguer la gestion de vos allocations. Les propriétaires d’allocation délégués accèdent au centre d’administration, mais ne peuvent voir et gérer que les licences dans les allocations qu’ils possèdent. Cela fournit une délégation plus granulaire de la gestion des licences au sein de votre organisation.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Vous devez respecter les exigences en matière de licences pour les [licences basées sur un groupe](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
 Vous pouvez utiliser des allocations avec n’importe quel produit disponible pour les utilisateurs :
 
-- Office suites et produits autonomes
-- produits Enterprise et Mobilité
+- Suites Office et produits autonomes
+- Produits d’entreprise et de mobilité
 - Produits Dynamics 365
 
 Les produits suivants ne peuvent pas être utilisés avec des allocations :
 
-- applications Microsoft Store
+- Applications du Microsoft Store
 - Logiciels perpétuels ou logiciels directement affectés à un utilisateur s’il n’y a aucune licence impliquée.
 - Ressources Azure
 

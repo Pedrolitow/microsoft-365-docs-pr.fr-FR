@@ -23,25 +23,25 @@ ms.custom:
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
 ms.date: 06/06/2022
-ms.openlocfilehash: bbeff9310a652a768c92ba3640e84607b8628619
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925080"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489667"
 ---
-# <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
+# <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Acheter ou supprimer des licences Microsoft 365 pour un abonnement
 
 Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour vos abonnements en procédant comme suit.
 
 > [!NOTE]
-> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+> Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur général ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur général ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md).
-- Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise via un partenaire tiers, vous devez acheter des licences supplémentaires via ce partenaire.
+- Si vous avez acheté votre offre Microsoft 365 pour les entreprises ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
 ## <a name="watch-buy-new-licenses"></a>Regarder : Acheter de nouvelles licences
 
@@ -100,13 +100,13 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre facture suivante. Si vous payez annuellement, vous êtes facturé dans un délai d’un mois pour ces modifications.
 - Dans votre prochain relevé de facturation, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons des frais calculés au prorata pour la période avec le nombre de licences d’origine et ajoutons des frais pour le nouveau nombre de licences. Il y a également des frais pour le nombre de licences actuel pour le reste de votre période de facturation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez acheté d’autres licences pour votre abonnement, vous devez ensuite [attribuer ces licences aux utilisateurs de votre organisation](../../admin/manage/assign-licenses-to-users.md).
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous souhaiterez peut-être supprimer le compte de cet utilisateur. Pour en savoir plus, consultez [Supprimer un ancien employé](../../admin/add-users/remove-former-employee.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment identifier les personnes critiques d’une organisation et ajouter la balise de compte prioritaire pour leur fournir une protection supplémentaire.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f240dd7f4679710859ffdeaccc6e935fa5f64e7
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 466061562ba0ccc1a33a9fe6ca58073196f4f7e0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842340"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492179"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configurer et passer en revue les comptes Priority dans Microsoft Defender pour Office 365
 
@@ -40,9 +40,9 @@ Les comptes prioritaires sont plus souvent ciblés par des attaquants et sont g�
 
 La protection de compte prioritaire est activée par défaut pour les utilisateurs critiques pré-identifiés. Toutefois, l’administrateur de sécurité de votre organisation peut également activer la protection de compte prioritaire en procédant comme suit :
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **e-mail &** protection **de compte Priorité** de collaboration\>. Pour accéder directement à la page **de protection du compte Priority** , utilisez <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Paramètres** \> **e-mail &** **protection du compte Priorité** de collaboration\>. Pour accéder directement à la page **de protection du compte Priority** , utilisez <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
-2. Dans la page **Protection du compte Priority** , activez la **protection du compte Priority**.
+2. Dans la page **Protection du compte Prioritaire** , activez **la protection du compte Priority** (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
     > [!div class="mx-imgBorder"]
     > ![Activez la protection du compte Priority.](../../media/mdo-priority-account-protection.png)
@@ -50,7 +50,23 @@ La protection de compte prioritaire est activée par défaut pour les utilisateu
 > [!NOTE]
 > Nous vous déconseillons de désactiver ou de désactiver la protection de compte prioritaire.
 
-### <a name="enable-the-priority-account-tag"></a>Activer la balise de compte Priority
+Si vous souhaitez utiliser Exchange Online PowerShell pour activer la protection de compte prioritaire, procédez comme suit :
+
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) et exécutez la commande suivante :
+
+   ```powershell
+   Set-EmailTenantSettings -EnablePriorityAccountProtection $true
+   ```
+
+2. Pour vérifier que la protection du compte prioritaire est activée, exécutez la commande suivante pour vérifier la valeur de la propriété EnablePriorityAccountProtection :
+
+   ```powershell
+   Get-EmailTenantSettings | Format-List Identity,EnablePriorityAccountProtection
+   ```
+
+   La valeur True signifie que la protection du compte prioritaire est activée. La valeur False signifie que la protection du compte prioritaire est désactivée.
+
+### <a name="assign-the-priority-account-tag-to-users"></a>Affecter la balise de compte Priority aux utilisateurs
 
 Microsoft Defender pour Office 365 prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées comme filtres dans les alertes, les rapports, les incidents, etc.
 

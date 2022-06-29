@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender pour point de terminaison Stockage Access Control amovible du contrôle d’appareil, support de stockage amovible
+title: Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil, support de stockage amovible
 description: Une procédure pas à pas sur Microsoft Defender pour point de terminaison
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/20/2022
-ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.date: 06/24/2022
+ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185456"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490750"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Stockage Access Control amovibles du contrôle d’appareil
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -30,52 +30,54 @@ ms.locfileid: "66185456"
 > [!NOTE]
 > La gestion stratégie de groupe et Intune gestion OMA-URI/Custom Policy de ce produit sont désormais en disponibilité générale (4.18.2106) : consultez le [blog Tech Community : Protéger votre stockage amovible et votre imprimante avec Microsoft Defender pour point de terminaison](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-## <a name="device-control-removable-storage-access-control-overview"></a>Vue d’ensemble de l’Stockage Access Control amovible du contrôle d’appareil
+## <a name="device-control-removable-storage-access-control-overview"></a>Vue d’ensemble de l’Access Control de stockage amovible du contrôle d’appareil
 
-Microsoft Defender pour point de terminaison fonctionnalité de Stockage Access Control amovible de contrôle d’appareil vous permet d’auditer, d’autoriser ou d’empêcher la lecture, l’écriture ou l’exécution d’un accès au stockage amovible avec ou sans exclusion.
+Microsoft Defender pour point de terminaison fonctionnalité de stockage amovible de contrôle d’appareil Access Control vous permet d’auditer, d’autoriser ou d’empêcher l’accès en lecture, en écriture ou en exécution au stockage amovible avec ou sans exclusion.
 
 |Privilège|Autorisation|
 |---|---|
 |Access|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
-|Prise en charge fournisseur de solutions Cloud|Oui|
+|Prise en charge du fournisseur de solutions Cloud|Oui|
 |Prise en charge de l’objet de stratégie de groupe|Oui|
 |Prise en charge basée sur l’utilisateur|Oui|
 |Prise en charge basée sur l’ordinateur|Oui|
 
-Microsoft Defender pour point de terminaison fonctionnalité de Stockage Access Control amovible du contrôle d’appareil vous offre les fonctionnalités suivantes :
+Microsoft Defender pour point de terminaison fonctionnalité de Access Control de stockage amovible device control vous offre les fonctionnalités suivantes :
 
 |Fonctionnalité|Description|Déployer via Intune|Déployer via stratégie de groupe|
 |---|---|---|---|
-|Création de groupes multimédias amovibles|Vous permet de créer un groupe de supports amovibles réutilisable|Étapes 4 et 6 de la section [, déploiement de Stockage Access Control amovibles à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Étape 4 et 6 de la section [, déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Création de stratégie|Vous permet de créer une stratégie pour appliquer chaque groupe de supports amovibles|Étape 5 et 7 de la section [, déploiement de Stockage Access Control amovibles à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Étapes 5 et 7 de la section [Déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Application par défaut|Vous permet de définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie|Étape 2 de la section [, déploiement de Stockage Access Control amovibles à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | Étape 2 de la section [: Déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Activer ou désactiver les Stockage Access Control amovibles|Si vous définissez Désactiver, la stratégie de Stockage Access Control amovible est désactivée sur cet ordinateur.| Étape 1 de la section [, déploiement de Stockage Access Control amovibles à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Étape 1 de la section [, déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
-|Capturer des informations sur le fichier|Vous permet de créer une stratégie pour capturer les informations de fichier lorsque l’accès en écriture se produit|  | Étape 10 de la section [, déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy) |
+|Création de groupes multimédias amovibles|Vous permet de créer un groupe de supports amovibles réutilisable|Étape 4 et 6 de la section [, déploiement de Access Control de stockage amovible à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Étape 4 et 6 de la section [, déploiement de Access Control de stockage amovible à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Création de stratégie|Vous permet de créer une stratégie pour appliquer chaque groupe de supports amovibles|Étape 5 et 7 de la section [, déploiement de Access Control de stockage amovible à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Étapes 5 et 7 de la section [Déploiement de Access Control de stockage amovible à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Application par défaut|Vous permet de définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie|Étape 2 de la section [, déploiement de Access Control de stockage amovible à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | Étape 2 de la section [, déploiement de Access Control de stockage amovible à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Activer ou désactiver les Access Control de stockage amovibles|Si vous définissez Désactiver, il désactive la stratégie de Access Control de stockage amovible sur cet ordinateur| Étape 1 de la section [, déploiement de Access Control de stockage amovible à l’aide de Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| Étape 1 de la section [, déploiement de Access Control de stockage amovible à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy)|
+|Capturer des informations sur le fichier|Vous permet de créer une stratégie pour capturer les informations de fichier lorsque l’accès en écriture se produit|  | Étape 10 de la section [, déploiement de Access Control de stockage amovible à l’aide de stratégie de groupe](#deploying-removable-storage-access-control-by-using-group-policy) |
 
 ### <a name="prepare-your-endpoints"></a>Préparer vos points de terminaison
 
-Déployez des Stockage Access Control amovibles sur des appareils Windows 10 et Windows 11 qui ont un client anti-programme malveillant version **4.18.2103.3 ou ultérieure**.
+Déployez des Access Control de stockage amovibles sur des appareils Windows 10 et Windows 11 qui ont un client anti-programme malveillant version **4.18.2103.3 ou ultérieure**.
 
-- **4.18.2104 ou version ultérieure** : Ajouter SerialNumberId, VID_PID, prise en charge de l’objet de stratégie de groupe basé sur filepath, ComputerSid
+- **4.18.2104 ou version ultérieure** : Ajouter `SerialNumberId`, `VID_PID`, prise en charge de l’objet de stratégie de groupe basée sur filepath, et `ComputerSid`
 
-- **4.18.2105 ou version ultérieure** : Ajout d’une prise en charge générique pour HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, combinaison d’utilisateurs spécifiques sur un ordinateur spécifique, DSD amovible (SSD SanDisk Extreme)/USB Attached SCSI (UAS)
+- **4.18.2105 ou version ultérieure** : ajout de la prise en charge des caractères génériques pour `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`la combinaison d’un utilisateur spécifique sur un ordinateur spécifique, d’un disque SSD amovible (SSD SanDisk Extreme)/d’une prise en charge DESI (USB Attached SCSI)
 
-- **4.18.2107 ou version ultérieure** : Ajouter Windows prise en charge de l’appareil portable (WPD) (pour les appareils mobiles, tels que les tablettes); ajouter AccountName à la [chasse avancée](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+- **4.18.2107 ou version ultérieure** : Ajout de la prise en charge de l’appareil portable Windows (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter `AccountName` à la [chasse avancée](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+
+- **4.18.2205 ou version ultérieure** : développez l’application par défaut de **l’imprimante**. Si vous le définissez sur **Refuser**, il bloque également l’imprimante. Par conséquent, si vous souhaitez uniquement gérer le stockage, veillez à créer une stratégie personnalisée pour autoriser l’imprimante.
 
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
-> Aucun composant Sécurité Windows n’a besoin d’être actif, car vous pouvez exécuter des Stockage Access Control amovibles indépendamment de l’état Sécurité Windows.
+> Aucun composant Sécurité Windows n’a besoin d’être actif, car vous pouvez exécuter le stockage amovible Access Control indépendamment de l’état Sécurité Windows.
 
-## <a name="device-control-removable-storage-access-control-policies"></a>Stratégies de Stockage Access Control amovibles de contrôle d’appareil
+## <a name="device-control-removable-storage-access-control-policies"></a>Stratégies de Access Control de stockage amovibles du contrôle d’appareil
 
 Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockage amovible :
 
 > [!NOTE]
 > Les commentaires utilisant la notation `<!-- COMMENT -->` de commentaire XML peuvent être utilisés dans les fichiers XML de règle et de groupe, mais ils doivent se trouver à l’intérieur de la première balise XML, et non de la première ligne du fichier XML.
 
-### <a name="removable-storage-group"></a>Groupe Stockage amovible
+### <a name="removable-storage-group"></a>Groupe de stockage amovible
 
 |Nom de la propriété|Description|Options|
 |---|---|---|
@@ -98,15 +100,15 @@ Vous pouvez utiliser les propriétés suivantes pour créer la stratégie de con
 | **Options** | Définit s’il faut afficher ou non une notification |**Lorsque l’option Type Allow est sélectionnée** : <p>0 : rien<p>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **Allow** se produit et que le paramètre AuditAllowed est configuré, le système n’envoie pas d’événement. <p>8 : capturez les informations du fichier et disposez d’une copie du fichier comme preuve de l’accès en écriture. <p>16 : capturer les informations de fichier pour l’accès en écriture. <p>**Lorsque le refus de type est sélectionné** : <p>0 : rien<p>4 : désactiver **l’audit refusé** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. <p>**Quand type **AuditAllowed** est sélectionné** : <p>0 : rien <p>1 : rien <p>2 : événement d’envoi<p> **Lorsque **l’audit** de type refusé est sélectionné** : <p>0 : rien <p>1 : afficher la notification <p>2 : événement d’envoi<p>3 : afficher l’événement de notification et d’envoi |
 |AccessMask|Définit l’accès. | **Accès au niveau du disque** : <p>1 : Lecture <p>2 : Écrire <p>4 : Exécuter <p>**Accès au niveau du système de fichiers** : <p>8 : Lecture du système de fichiers <p>16 : Écriture du système de fichiers <p>32 : Exécution du système de fichiers <p><p>Vous pouvez avoir plusieurs accès en effectuant une opération OR binaire. Par exemple, accessMask pour lecture et écriture et exécution est égal à 7 ; AccessMask pour lecture et écriture est 3.|
 
-## <a name="device-control-removable-storage-access-control-scenarios"></a>Scénarios de Stockage Access Control amovibles de contrôle d’appareil
+## <a name="device-control-removable-storage-access-control-scenarios"></a>Scénarios de Access Control de stockage amovibles de contrôle d’appareil
 
-Pour vous aider à vous familiariser avec Microsoft Defender pour point de terminaison Stockage Access Control amovibles, nous avons mis en place des scénarios courants à suivre.
+Pour vous aider à vous familiariser avec Microsoft Defender pour point de terminaison Access Control de stockage amovible, nous avons mis en place des scénarios courants à suivre.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Scénario 1 : Empêcher l’accès en écriture et en exécution à tous, mais autoriser des bases de données approuvées spécifiques
 
 1. Créer des groupes
 
-    1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et de CD/DVD est le suivant : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier [Stockage amovible et CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
+    1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et de CD/DVD est le suivant : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     2. Groupe 2 : Bases de données américaines approuvées en fonction des propriétés de l’appareil. Voici un exemple de cas d’usage : ID d’instance - Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier [Group.xmlusbs approuvés](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
@@ -123,7 +125,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour point de termi
 
 1. Créer des groupes
 
-    1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de cas d’usage : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier [Stockage amovible et CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
+    1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de cas d’usage : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier [De stockage amovible et cd-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     2. Groupe 2 : objets usb non approuvés basés sur les propriétés de l’appareil, par exemple, ID de fournisseur/ID de produit, nom convivial - Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichiers [usBs non approuvés Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
@@ -136,13 +138,13 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour point de termi
 
     2. Stratégie 2 : Auditer l’accès en écriture et en exécution à d’autres personnes. Voici un exemple de cas d’usage : PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** dans l’exemple [scénario 2 Auditer et exécuter l’accès à others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) fichier.
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>Déploiement et gestion des Stockage Access Control amovibles à l’aide de Intune OMA-URI
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>Déploiement et gestion des Access Control de stockage amovibles à l’aide de Intune OMA-URI
 
-La fonctionnalité de Stockage Access Control amovible vous permet d’appliquer une stratégie à l’aide d’OMA-URI à l’utilisateur ou à l’appareil, ou aux deux.
+La fonctionnalité De stockage amovible Access Control vous permet d’appliquer une stratégie à l’aide d’OMA-URI à l’utilisateur ou à l’appareil, ou aux deux.
 
 ### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Pour accéder aux Stockage Access Control amovibles et les utiliser, vous devez disposer d’Microsoft 365 E3 ou de Microsoft 365 E5.
+Avant de commencer à utiliser les Access Control de stockage amovibles, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Pour accéder aux Access Control de stockage amovibles et les utiliser, vous devez disposer d’Microsoft 365 E3 ou de Microsoft 365 E5.
 
 ### <a name="permission"></a>Autorisation
 
@@ -150,19 +152,17 @@ Pour le déploiement de stratégie dans Intune, le compte doit disposer des auto
 
 - Rôle gestionnaire de stratégies et de profils
 - Rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lire/Supprimer/Afficher les rapports activées pour les profils de configuration d’appareil
-- Administrateur général
+- Administrateur global
 
-### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Déploiement de Stockage Access Control amovibles à l’aide de Intune OMA-URI
+### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Déploiement de Access Control de stockage amovible à l’aide de Intune OMA-URI
 
-Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpoint.microsoft.com/>) **> Appareils > Créer un profil > Platform : Windows 10 et versions ultérieures, Type de profil : Modèles > Personnalisé**
+Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>) **> Appareils > Créer un profil > Platform : Windows 10 et versions ultérieures, Type de profil : Modèles > Personnalisé**
 
-1. Activer ou désactiver les Stockage Access Control amovibles (RSAC) :
-
-   Vous pouvez activer les Stockage Access Control amovibles comme suit :
+1. Activez ou désactivez le contrôle d’appareil comme suit :
 
    - Sous **Paramètres de configuration > personnalisés**, cliquez sur **Ajouter**.
    - Dans le volet **Ajouter une ligne** , entrez :
-     - **Nom** **en tant qu’activer RSAC**
+     - **Nom** **en tant qu’activer le contrôle d’appareil**
      - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **Type de données** **en tant qu’entier**
      - **Valeur** **1**
@@ -172,13 +172,13 @@ Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpo
 
      - Cliquez sur **Enregistrer**.
 
-   :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Stockage Access Control amovible" lightbox="images/enable-rsac.png":::
+   :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Access Control de stockage amovible" lightbox="images/enable-rsac.png":::
 
 2. Définir l’application par défaut :
 
-   Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie.
+   Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) pour toutes les fonctionnalités de contrôle d’appareil (`RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`). `PrinterDevices`
 
-   Par exemple, vous disposez d’une stratégie Deny ou Allow pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices. Vous définissez le refus par défaut via cette stratégie, puis l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices est bloqué.
+   Par exemple, vous avez une **stratégie Refuser** ou **Autoriser** pour `RemovableMediaDevices`, mais vous n’avez pas de stratégie pour `CdRomDevices` ou `WpdDevices`. Vous pouvez définir le **refus par défaut** via cette stratégie, puis l’accès en lecture/écriture/exécution à `CdRomDevices` ou `WpdDevices` sera bloqué. Si vous souhaitez uniquement gérer le stockage, veillez à créer une stratégie **Autoriser** pour votre imprimante ; Sinon, cette mise en œuvre par défaut sera également appliquée aux imprimantes.
 
    - Dans le volet **Ajouter une ligne** , entrez :
      - **Nom** en tant que **refus par défaut**
@@ -208,26 +208,26 @@ Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpo
 
        Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
 
-       Utilisez les données XML suivantes pour créer une stratégie d’audit pour le refus par défaut :
+       Utilisez les données XML suivantes pour créer votre stratégie d’audit pour le refus par défaut :
 
        :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Capture d’écran du fichier xml de refus par défaut d’audit":::
 
 4. ReadOnly - Groupe :
 
-   Vous pouvez créer un groupe de stockage amovible avec l’accès ReadOnly comme suit :
+   Vous pouvez créer un groupe de stockage amovible avec un accès ReadOnly comme suit :
 
    - Dans le volet **Ajouter une ligne** , entrez :
-     - **Nom** **d’un groupe Stockage amovible**
+     - **Nom** **de n’importe quel groupe de stockage amovible**
      - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Capture d’écran de la création d’un groupe Stockage amovible" lightbox="images/any-removable-storage-group.png":::
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Capture d’écran de la création d’un groupe de stockage amovible" lightbox="images/any-removable-storage-group.png":::
 
      - **Type de données** **sous forme de chaîne (fichier XML)**
-       - **XML personnalisé** comme **n’importe quel fichier Stockage amovible et CD-DVD et Group.xmlWPD**
+       - **XML personnalisé** en tant que **stockage amovible et cd-DVD et fichier Group.xmlWPD**
 
          Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
 
-         Utilisez les données XML suivantes pour créer « Any Removable Stockage and CD-DVD and WPD Group » avec l’accès ReadOnly :
+         Utilisez les données XML suivantes pour créer « Tout stockage amovible et CD-DVD et groupe WPD » avec accès En lecture seule :
 
          :::image type="content" source="images/read-only-group-xml-file.png" alt-text="Capture d’écran du fichier xml de groupe en lecture seule":::
 
@@ -250,7 +250,7 @@ Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpo
 
        :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="Capture d’écran du fichier xml de stratégie en lecture seule":::
 
-6. Créer un groupe pour les médias autorisés : vous pouvez créer un groupe de supports autorisés comme suit :
+6. Créer un groupe pour le média autorisé : vous pouvez créer votre groupe de supports autorisé comme suit :
    - Dans le volet **Ajouter une ligne** , entrez :
      - **Nom** en tant que **groupe USB approuvé**
      - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
@@ -262,11 +262,11 @@ Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpo
 
        Chemin du fichier XML : <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
 
-       Utilisez les données XML suivantes pour créer un groupe de supports autorisés :
+       Utilisez les données XML suivantes pour créer un groupe de supports autorisé :
 
        :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="Capture d’écran de la création d’un groupe pour un fichier xml multimédia autorisé":::
 
-7. Créer une stratégie pour autoriser le groupe USB approuvé : vous pouvez créer une stratégie pour autoriser le groupe USB approuvé comme suit :
+7. Créez une stratégie pour autoriser le groupe USB approuvé : vous pouvez créer une stratégie pour autoriser le groupe USB approuvé comme suit :
    - Dans le volet **Ajouter une ligne** , entrez :
      - **Nom** **en tant qu’autorisation d’accès et informations de fichier d’audit**
      - **OMA-URI** en tant que `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
@@ -290,32 +290,34 @@ Accédez à Microsoft Endpoint Manager centre d’administration (<https://endpo
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Déploiement et gestion d’une stratégie à l’aide de Intune’interface utilisateur
 
-Cette fonctionnalité est disponible dans le centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Accédez à la stratégie de création **de la surface d’attaque** >  de **sécurité** >  du point de **terminaison**. Choisissez **Plateforme : Windows 10 et versions ultérieures** avec **Profil : Contrôle d’appareil**.
+Cette fonctionnalité est disponible dans le Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>). Accédez à la stratégie de création **de la surface d’attaque** >  de **sécurité** >  du point de **terminaison**. Choisissez **Plateforme : Windows 10 et versions ultérieures** avec **Profil : Contrôle d’appareil**.
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Déploiement et gestion des Stockage Access Control amovibles à l’aide de stratégie de groupe
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>Déploiement et gestion des Access Control de stockage amovibles à l’aide de stratégie de groupe
 
-La fonctionnalité de Stockage Access Control amovible vous permet d’appliquer une stratégie à l’aide de stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
+La fonctionnalité de Access Control de stockage amovible vous permet d’appliquer une stratégie à l’aide de stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
 
 ### <a name="licensing"></a>Licences
 
-Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Pour accéder aux Stockage Access Control amovibles et les utiliser, vous devez disposer d’Microsoft 365 E3 ou de Microsoft 365 E5.
+Avant de commencer à utiliser les Access Control de stockage amovibles, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Pour accéder aux Access Control de stockage amovibles et les utiliser, vous devez disposer d’Microsoft 365 E3 ou de Microsoft 365 E5.
 
-### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Déploiement de Stockage Access Control amovibles à l’aide de stratégie de groupe
+### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>Déploiement de Access Control de stockage amovible à l’aide de stratégie de groupe
 
-1. Activez ou désactivez les Stockage Access Control amovibles :
+1. Activez ou désactivez les Access Control de stockage amovibles :
 
-   Vous pouvez activer les Stockage Access Control amovibles (RSAC) comme suit :
+   Vous pouvez activer le contrôle d’appareil comme suit :
 
-   - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > fonctionnalités > contrôle d’appareil**
+   - Accédez à **Configuration de l’ordinateur > modèles d’administration > composants Windows > fonctionnalités > antivirus Microsoft Defender > le contrôle d’appareil**
    - Dans la fenêtre **Contrôle d’appareil** , sélectionnez **Activé**.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Capture d’écran de l’activation de RSAC à l’aide de stratégie de groupe " lightbox="images/enable-rsac-gp.png":::
 
 2. Définir l’application par défaut :
 
-   Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) sur un média amovible s’il n’existe aucune stratégie comme suit :
+   Vous pouvez définir l’accès par défaut (Refuser ou Autoriser) pour toutes les fonctionnalités de contrôle d’appareil (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
 
-   - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > fonctionnalités > contrôle d’appareil > sélectionner l’application par défaut du contrôle d’appareil**
+   Par exemple, vous disposez d’une stratégie Deny ou Allow pour RemovableMediaDevices, mais vous n’avez pas de stratégie pour CdRomDevices ou WpdDevices. Vous définissez le refus par défaut via cette stratégie, puis l’accès en lecture/écriture/exécution à CdRomDevices ou WpdDevices est bloqué. Si vous souhaitez uniquement gérer le stockage, veillez à créer une stratégie d’autorisation pour l’imprimante. Sinon, cette application par défaut sera également appliquée à l’imprimante.
+
+   - Accédez à **Configuration de l’ordinateur > modèles d’administration > composants Windows > fonctionnalités de > antivirus Microsoft Defender > contrôle d’appareil > sélectionner l’application par défaut du contrôle d’appareil**
 
    - Dans la fenêtre **Sélectionner l’application par défaut du contrôle d’appareil** , sélectionnez **Refuser par défaut** :
 
@@ -361,7 +363,7 @@ Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez
 
    Vous pouvez combiner des groupes de stratégies de contrôle d’appareil dans un fichier XML comme suit :
 
-   - Accédez  aux modèles \> **d’administration** de configuration \> d’ordinateur **Windows composants** \> **Antivirus Microsoft Defender** \> **Contrôle** \> **d’appareil Définir des groupes de stratégies de contrôle d’appareil**.
+   - Accédez à **Modèles d’administration** **de configuration** \> ordinateur **Composants** \> \> Windows Microsoft **Defender Antivirus** \> **Device Control** \> **Définir des groupes de stratégies de contrôle d’appareil**.
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Capture d’écran de définir des groupes de stratégies de contrôle d’appareil" lightbox="images/define-device-control-policy-grps-gp.png":::
 
@@ -377,7 +379,7 @@ Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez
 
    Vous pouvez combiner des règles de stratégie de contrôle d’appareil dans un fichier XML comme suit :
 
-   - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > contrôle d’appareil > définir des règles de stratégie de contrôle d’appareil**
+   - Accédez à **Configuration de l’ordinateur > modèles d’administration > composants Windows > microsoft Defender Antivirus > Device Control > Définir des règles de stratégie de contrôle d’appareil**
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Capture d’écran de la définition des règles de stratégie de contrôle d’appareil" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -393,17 +395,17 @@ Avant de commencer à utiliser les Stockage Access Control amovibles, vous devez
 
     Si vous souhaitez avoir une copie du fichier (preuve) lorsque l’accès en écriture se produit, vous devez définir l’emplacement où le système peut enregistrer la copie.
 
-    - Accédez à **Configuration de l’ordinateur > modèles d’administration > Windows composants > Antivirus Microsoft Defender > contrôle d’appareil > Définir l’emplacement distant des données de preuve de contrôle d’appareil**.
+    - Accédez à **Configuration de l’ordinateur > modèles d’administration > composants Windows > l’antivirus Microsoft Defender > le contrôle d’appareil > définir l’emplacement distant des données de preuve de contrôle d’appareil**.
 
     - Dans la fenêtre **Définir l’emplacement distant des données de preuve de Contrôle d’appareil** , **sélectionnez Activé** et entrez le chemin d’accès du dossier de partage local ou réseau.
 
       :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Capture d’écran de l’emplacement distant des données de preuve Définir le contrôle d’appareil" lightbox="images/evidence-data-remote-location-gp.png":::
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données de Stockage Access Control amovibles du contrôle d’appareil dans Microsoft Defender pour point de terminaison
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données de Access Control de stockage amovibles du contrôle d’appareil dans Microsoft Defender pour point de terminaison
 
-Le [portail Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) affiche les événements déclenchés par le Stockage Access Control amovible du contrôle d’appareil. Pour accéder à la sécurité Microsoft 365, vous devez disposer de l’abonnement suivant :
+Le [portail Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) affiche les événements déclenchés par le Access Control de stockage amovible Device Control. Pour accéder à la sécurité Microsoft 365, vous devez disposer de l’abonnement suivant :
 
-- Microsoft 365 pour les rapports E5
+- Rapports Microsoft 365 pour E5
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
@@ -457,7 +459,7 @@ Vous pouvez générer un GUID via des open source en ligne ou via PowerShell - [
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>Quelles sont les limitations de stratégie et de média de stockage amovibles ?
 
-À partir du centre d’administration Microsoft Endpoint Manager (Intune) ou par le biais de Microsoft API Graph, l’appel principal est effectué via OMA-URI (GET to read ou PATCH to update), et par conséquent, la limitation est la même que n’importe quel profil de configuration personnalisé OMA-URI dans Microsoft, qui est officiellement de 350 000 caractères pour les fichiers XML.
+À partir du Centre d’administration Microsoft Endpoint Manager (Intune) ou par le biais de Microsoft API Graph, l’appel principal est effectué via OMA-URI (GET to read ou PATCH to update), et par conséquent, la limitation est la même que n’importe quel profil de configuration personnalisé OMA-URI dans Microsoft, qui est officiellement de 350 000 caractères pour les fichiers XML.
 
 Par exemple, si vous avez besoin de deux blocs d’entrées par SID utilisateur pour « Autoriser » /« Auditer autorisé » des utilisateurs spécifiques et de deux blocs d’entrées à la fin de « Refuser », vous serez en mesure de gérer 2 276 utilisateurs.
 

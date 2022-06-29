@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les considérations relatives au déploiement et poser fréquemment des questions sur la simulation d’attaque et la formation dans les organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4145dcd073ec97c43ac64eecdbd25c48612a9b83
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 50f82d975e9dc4f534f9223b85fd9e841a3ad725
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649018"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490484"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -34,27 +34,27 @@ ms.locfileid: "65649018"
 
 La formation à la simulation d’attaque permet aux organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 de mesurer et de gérer les risques d’ingénierie sociale en autorisant la création et la gestion de simulations d’hameçonnage alimentées par des charges utiles de hameçonnage réelles et désassurables. La formation hyper-ciblée, dispensée en partenariat avec la sécurité Terranova, permet d’améliorer les connaissances et de modifier le comportement des employés.
 
-Pour plus d’informations sur la prise en main de l’entraînement de simulation d’attaque, consultez [Démarrage l’utilisation de la formation de simulation d’attaque](attack-simulation-training-get-started.md).
+Pour plus d’informations sur la prise en main de la formation à la simulation d’attaque, consultez [Prise en main de la simulation d’attaque](attack-simulation-training-get-started.md).
 
 Bien que toute l’expérience de création et de planification de simulation ait été conçue pour être fluide et sans friction, l’exécution de simulations à l’échelle de l’entreprise nécessite souvent une planification. Cet article aide à relever des défis spécifiques que nous voyons lorsque nos clients exécutent des simulations dans leurs propres environnements.
 
 ## <a name="issues-with-end-user-experiences"></a>Problèmes liés aux expériences des utilisateurs finaux
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>URL de simulation d’hameçonnage bloquées par Google Coffre Navigation
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>URL de simulation d’hameçonnage bloquées par Google Safe Browsing
 
-Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par l’entraînement de simulation d’attaque comme non sécurisées. Google Coffre Navigation dans Google Chrome bloque certaines DES URL de hameçonnage simulées avec un **message d’avance de site trompeur**. Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
+Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par l’entraînement de simulation d’attaque comme non sécurisées. Google Safe Browsing dans Google Chrome bloque certaines DES URL de hameçonnage simulées avec un **message de site trompeur** . Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Avertissement du site trompeur dans Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 Notez que ce problème n’affecte pas Microsoft Edge.
 
-Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par Google Coffre Navigation, [suivez ces instructions](https://support.google.com/chrome/a/answer/7532419) de Google pour autoriser l’accès aux URL.
+Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par Google Safe Browsing, [suivez ces instructions](https://support.google.com/chrome/a/answer/7532419) de Google pour autoriser l’accès aux URL.
 
-Reportez-vous à [Démarrage l’utilisation de l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md) pour obtenir la liste des URL actuellement utilisées par l’entraînement de simulation d’attaque.
+[Reportez-vous à l’option Prise en main de la simulation d’attaque](attack-simulation-training-get-started.md) pour obtenir la liste des URL actuellement utilisées par l’entraînement de simulation d’attaque.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulation d’hameçonnage et URL d’administrateur bloquées par des solutions de proxy réseau et des pilotes de filtre
 
-Les URL de simulation d’hameçonnage et les URL d’administrateur peuvent être bloquées ou supprimées par vos filtres ou appareils de sécurité intermédiaires. Par exemple :
+Les URL de simulation d’hameçonnage et les URL d’administrateur peuvent être bloquées ou supprimées par vos filtres ou appareils de sécurité intermédiaires. Par exemple :
 
 - Pare-feu
 - solutions Web Application Firewall (WAF)
@@ -62,7 +62,7 @@ Les URL de simulation d’hameçonnage et les URL d’administrateur peuvent êt
 
 Bien que nous ayons vu peu de clients bloqués à cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos appareils de sécurité ou filtres en fonction des besoins :
 
-- URL de hameçonnage simulées, comme décrit dans [Démarrage à l’aide de l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md).
+- URL d’hameçonnage simulées, comme décrit dans [Prise en main de l’entraînement de simulation d’attaque](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -121,7 +121,7 @@ Les widgets de la page **Vue d’ensemble** fournissent un instantané rapide de
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>Les messages signalés comme hameçonnage par les utilisateurs n’apparaissent pas dans les rapports de simulation
 
-Les rapports de simulation dans l’entraînement du simulateur d’attaque fournissent des détails sur l’activité des utilisateurs. Par exemple :
+Les rapports de simulation dans l’entraînement du simulateur d’attaque fournissent des détails sur l’activité des utilisateurs. Par exemple :
 
 - Utilisateurs qui ont cliqué sur le lien dans le message.
 - Utilisateurs qui ont abandonné leurs informations d’identification.
@@ -132,7 +132,13 @@ Si les messages signalés comme hameçonnage par les utilisateurs ne sont pas ca
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- non\_ junk@office365.microsoft.com
+- pas\_junk@office365.microsoft.com
+
+### <a name="users-are-assigned-training-after-they-report-a-simulated-message"></a>L’entraînement est attribué aux utilisateurs après qu’ils signalent un message simulé
+
+Si une formation est attribuée aux utilisateurs après avoir déclaré un message de simulation d’hameçonnage, vérifiez si votre organisation dispose d’une **boîte aux lettres personnalisée** configurée dans votre **stratégie de soumission d’utilisateur**. Lors de la configuration d’une **boîte aux lettres personnalisée**, cette boîte aux lettres doit être exclue des stratégies Liens sécurisés et Pièces jointes sécurisées conformément aux [prérequis de la boîte aux lettres personnalisée](user-submission.md).
+
+Si votre organisation dispose d’une **boîte aux lettres personnalisée** configurée et n’a pas configuré les exclusions requises, ces messages peuvent être détonés, ce qui entraîne des affectations de formation.
 
 ## <a name="other-frequently-asked-questions"></a>Autres questions fréquemment posées
 
@@ -163,7 +169,7 @@ Cela dit, vous pouvez créer votre propre charge utile dans le langage de votre 
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Q : Comment puis-je passer à d’autres langues pour mon portail d’administration et mon expérience de formation ?
 
-R : Dans Microsoft 365 ou Office 365, la configuration de la langue est spécifique et centralisée pour chaque compte d’utilisateur. Pour obtenir des instructions sur la modification de votre paramètre de langue, consultez [Modifier votre langue d’affichage et votre fuseau horaire dans Microsoft 365 entreprise](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+R : Dans Microsoft 365 ou Office 365, la configuration du langage est spécifique et centralisée pour chaque compte d’utilisateur. Pour obtenir des instructions sur la modification de votre paramètre de langue, consultez [Modifier votre langue d’affichage et votre fuseau horaire dans Microsoft 365 Entreprise](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
 Notez que la synchronisation de la modification de configuration peut prendre jusqu’à 30 minutes sur tous les services.
 
@@ -188,3 +194,8 @@ R : La remise en fonction de la région utilise l’attribut TimeZone de la boî
 Le même jour, à 9h00, le message de simulation est envoyé à UserB. Avec la remise en fonction de la région, le message n’est pas envoyé à UserA le même jour, car 9h00 heure du Pacifique est 12h00 heure de l’Est. Au lieu de cela, le message est envoyé à UserA à 9h00 heure de l’Est le lendemain.
 
 Ainsi, lors de l’exécution initiale d’une campagne avec la remise prenant en charge la région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent dans l’étendue, les utilisateurs ciblés augmentent.
+
+
+### <a name="q-does-microsoft-collect-or-store-any-information-that-users-enter-at-the-credential-harvest-sign-in-page-used-in-the-credential-harvest-simulation-technique"></a>Q : Microsoft collecte-t-il ou stocke-t-il les informations que les utilisateurs entrent dans la page de connexion de la collecte des informations d’identification, utilisée dans la technique de simulation de collecte des informations d’identification ?
+
+R : Non. Toutes les informations entrées dans la page de connexion de collecte des informations d’identification sont ignorées en mode silencieux. Seul le « clic » est enregistré pour capturer l’événement de compromission. Microsoft ne collecte, ne journalise ni ne stocke les détails que les utilisateurs entrent à cette étape.

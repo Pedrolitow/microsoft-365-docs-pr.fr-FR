@@ -14,7 +14,7 @@
         - name: Planifier votre installation de Microsoft 365 pour les entreprises
           href: setup/plan-your-setup.md
         - name: S’inscrire à Microsoft 365 Business Premium
-          href: ../business-premium/index.md
+          href: ../business-premium/get-microsoft-365-business-premium.md
         - name: "S’inscrire à Microsoft\_365 Business Standard"
           items:
             - name: "S’inscrire à Microsoft\_365 Business Standard"
@@ -50,7 +50,7 @@
         - name: Installer les applications Office
           href: setup/install-applications.md
         - name: Configuration des appareils windows
-          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices
         - name: Configurer des appareils mobiles
           href: setup/set-up-mobile-devices.md
         - name: Configurer Outlook pour Microsoft 365 pour la messagerie professionnelle (vidéo)
@@ -346,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: Activer l’authentification moderne pour Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Menaces détectées par l’antivirus Microsoft Defender
-          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: Guide de la conformité avec le RGPD
           href: security-and-compliance/gdpr-compliance.md
     - name: Gérer les données des appareils et des applications.

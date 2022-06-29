@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 86d2b0b09748a83c9b73430c4c6e371ca2e37f31
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 52dc38d3675ffe15bd781aefaecede9d1783bac3
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838976"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487167"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exporter l’évaluation des vulnérabilités logicielles par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
@@ -40,7 +40,7 @@ Les différents appels d’API obtiennent différents types de données. Étant 
 
 1. [Exporter la **réponse JSON** d’évaluation des vulnérabilités logicielles](#1-export-software-vulnerabilities-assessment-json-response)  L’API extrait toutes les données de votre organisation en tant que réponses Json. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
 
-2. [Exporter l’évaluation des vulnérabilités logicielles **via des fichiers**](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Les fichiers via sont recommandés pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit :
+2. [Exporter l’évaluation des vulnérabilités logicielles **via des fichiers**](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Les fichiers via sont recommandés pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit :
    - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
    - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.
 
@@ -103,7 +103,7 @@ Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
 CveId|Chaîne|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).|CVE-2020-15992
 CvssScore|Chaîne|Score CVSS du CVE.|6.2
-DeviceId|String|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 DiskPaths|Chaîne de tableau\[\]|Preuve de disque indiquant que le produit est installé sur l’appareil.|[ « C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe » ]
 ExploitabilityLevel|Chaîne|Niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
@@ -111,12 +111,13 @@ FirstSeenTimestamp|Chaîne|La première fois que le CVE de ce produit a été vu
 ID|Chaîne|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 LastSeenTimestamp|Chaîne|Dernière fois que le CVE a été vu sur l’appareil.|2020-11-03 10:13:34.8476880
 OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette propriété indique des systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.|Windows 10 et Windows 11
-RbacGroupName|String|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
+RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.|va _--microsoft-_-silverlight
 RecommendedSecurityUpdate (facultatif)|Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.|Mises à jour de sécurité d’avril 2020
-RecommendedSecurityUpdateId (facultatif)|String|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko)|4550961
+RecommendedSecurityUpdateId (facultatif)|Chaîne|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko)|4550961
 RegistryPaths|Chaîne de tableau\[\]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight » ]
-SoftwareName|String|Nom du produit logiciel.|Chrome
+SecurityUpdateAvailable|Booléen|Indique si une mise à jour de sécurité est disponible pour le logiciel.| Les valeurs possibles sont true ou false.
+SoftwareName|Chaîne|Nom du produit logiciel.|Chrome
 SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.|Google
 SoftwareVersion|Chaîne|Numéro de version du produit logiciel.|81.0.4044.138
 VulnerabilitySeverityLevel|Chaîne|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.|Moyen
@@ -157,7 +158,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-edge"
+            "recommendationReference": "va-_-microsoft-_-edge",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f912345baf756462bde6db733b9a9c56ad4_.net_framework_4.0.0.0__",
@@ -182,7 +184,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 13:18:33",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-.net_framework"
+            "recommendationReference": "va-_-microsoft-_-.net_framework",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f912345baf756462dbe6db733d6a9c59ab4_system_center_2012_endpoint_protection_4.10.209.0__",
@@ -207,7 +210,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-system_center_2012_endpoint_protection"
+            "recommendationReference": "va-_-microsoft-_-system_center_2012_endpoint_protection",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f612345bdaf759462dbe6bd733b6a9c59ab4_onedrive_20.245.1206.2__",
@@ -232,7 +236,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 13:18:33",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-onedrive"
+            "recommendationReference": "va-_-microsoft-_-onedrive",
+            "securityUpdateAvailable": true
         },
         {
             "id": "00044f912345daf759462bde6db733b6a9c56ab4_windows_10_10.0.17763.1637__",
@@ -255,7 +260,8 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11"
+            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "securityUpdateAvailable": true
         }
     ],
     "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
@@ -391,7 +397,7 @@ DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.|9eaf3a8b
 DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé sur l’appareil.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|Chaîne|Heure à laquelle cet événement delta a été trouvé.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|String|Niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+ExploitabilityLevel|Chaîne|Niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
 FirstSeenTimestamp|Chaîne|La première fois que le CVE de ce produit a été vu sur l’appareil.|2020-11-03 10:13:34.8476880  
 ID|Chaîne|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!  
 LastSeenTimestamp|Chaîne|Dernière fois que le CVE a été vu sur l’appareil.|2020-11-03 10:13:34.8476880  
@@ -401,7 +407,7 @@ RecommandationReference|string|Référence à l’ID de recommandation associé 
 RecommendedSecurityUpdate |Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.|Mises à jour de sécurité d’avril 2020  
 RecommendedSecurityUpdateId |Chaîne|Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko)|4550961  
 RegistryPaths |Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome » ]  
-SoftwareName|String|Nom du produit logiciel.|Chrome  
+SoftwareName|Chaîne|Nom du produit logiciel.|Chrome  
 SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.|Google  
 SoftwareVersion|Chaîne|Numéro de version du produit logiciel.|81.0.4044.138  
 Statut|Chaîne|**Nouveau** (pour une nouvelle vulnérabilité introduite sur un appareil) (1) **Résolu** (si cette vulnérabilité n’existe plus sur l’appareil, ce qui signifie qu’elle a été corrigée). (2) **Mise à jour** (si une vulnérabilité sur un appareil a changé. Les modifications possibles sont les suivantes : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Fixed
@@ -586,5 +592,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 Autres éléments connexes
 
-- [& gestion des vulnérabilités de menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
+- [Gestion des vulnérabilités & des menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
 - [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

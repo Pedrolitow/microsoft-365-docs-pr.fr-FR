@@ -13,24 +13,25 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
+- adminvideo
 description: Cet article couvre des sujets tels que le transfert de courrier externe, le transfert automatique, les messages 5.7.520 Accès refusé, la désactivation du transfert externe, les messages « Votre administrateur a désactivé le transfert externe », ainsi que la stratégie anti-courrier indésirable sortant.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 672e6af3d2aef76a0c944a05c438061861e20060
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c10433cd858ebe160ac4a38cfee78b57d39b80df
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971900"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487145"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique d’e-mails externes dans Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 En tant qu’administrateur, vous pouvez avoir des exigences de l’entreprise pour restreindre ou contrôler les messages automatiquement transférés aux destinataires externes (destinataires en dehors de votre organisation). Le transfert de courrier électronique peut être utile, mais peut également présenter un risque de sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou vos partenaires.
 
@@ -57,10 +58,10 @@ Pour obtenir des instructions sur la configuration de ces paramètres, consultez
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transfert automatique de courrier électronique
 
-En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique de courrier électronique. Par exemple :
+En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique de courrier électronique. Par exemple :
 
 - [Domaines distants](/exchange/mail-flow-best-practices/remote-domains/remote-domains) pour autoriser ou bloquer le transfert automatique d’e-mails vers certains ou tous les domaines externes.
-- Conditions et actions dans Exchange [règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) pour détecter et bloquer automatiquement les messages transférés aux destinataires externes.
+- Conditions et actions dans [les règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (également appelées règles de transport) pour détecter et bloquer automatiquement les messages transférés aux destinataires externes.
 
 Lorsqu’un paramètre autorise le transfert externe, mais qu’un autre paramètre bloque le transfert externe, le bloc l’emporte généralement. Les exemples sont décrits dans le tableau suivant :
 
@@ -74,9 +75,9 @@ Vous pouvez utiliser ce comportement (par exemple) pour autoriser le transfert a
 
 ## <a name="how-to-find-users-that-are-automatically-forwarding"></a>Comment rechercher des utilisateurs qui sont automatiquement transférés
 
-Vous pouvez voir des informations sur les utilisateurs qui transfèrent automatiquement des messages à des destinataires externes dans le [rapport des messages transférés automatiquement](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) pour les comptes cloud. Pour les utilisateurs locaux qui transfèrent automatiquement leur système de messagerie local via Microsoft 365, vous devez créer une règle de flux de courrier pour suivre ces utilisateurs. Pour obtenir des instructions sur la création d’une règle de flux de messagerie, consultez [Utiliser le CAE pour créer une règle de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule).
+Vous pouvez voir des informations sur les utilisateurs qui transfèrent automatiquement des messages à des destinataires externes dans le [rapport des messages transférés automatiquement](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) pour les comptes cloud. Pour les utilisateurs locaux qui transfèrent automatiquement leur système de messagerie local à Microsoft 365, vous devez créer une règle de flux de messagerie pour suivre ces utilisateurs. Pour obtenir des instructions sur la création d’une règle de flux de messagerie, consultez [Utiliser le CAE pour créer une règle de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule).
 
-Les informations suivantes sont requises pour créer la règle de flux de messagerie dans le centre d’administration Exchange (EAC) :
+Les informations suivantes sont requises pour créer la règle de flux de messagerie dans le Centre d’administration Exchange (EAC) :
 
 - **Appliquez cette règle si** (condition) : **un en-tête** \> de message **correspond à ces modèles de texte**. Notez que vous devrez peut-être cliquer sur **Autres options** pour voir cette option.
   - **Nom de l’en-tête** : `X-MS-Exchange-Inbox-Rules-Loop`

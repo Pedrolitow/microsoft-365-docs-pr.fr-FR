@@ -18,16 +18,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 51eaa6ddcaf50a48ccbd8ffc000a79049c1d9842
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783026"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489467"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Téléchargez [l’outil MDE Client Analyzer](https://aka.ms/mdatpanalyzer) sur l’ordinateur Windows que vous devez examiner.
@@ -55,7 +55,7 @@ En plus de ce qui précède, il existe également une option permettant de [coll
 > [!NOTE]
 > Le Windows 10/11, Windows Server 2019/2022 ou Windows Server 2012R2/2016 avec la [solution unifiée moderne](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) installée, le script de l’analyseur client appelle un fichier exécutable appelé `MDEClientAnalyzer.exe` pour exécuter les tests de connectivité aux URL de service cloud.
 >
-> Sur Windows 8.1, Windows Server 2016 ou toute édition précédente du système d’exploitation où Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable appelé `MDEClientAnalyzerPreviousVersion.exe` pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant Microsoft Monitoring Agent outil `TestCloudConnection.exe` de connectivité pour les URL du canal Cyber Data.
+> Sur Windows 8.1, Windows Server 2016 ou n’importe quelle édition précédente du système d’exploitation où Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable appelé `MDEClientAnalyzerPreviousVersion.exe` pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant l’outil `TestCloudConnection.exe` de connectivité de Microsoft Monitoring Agent pour les URL de canal de cyberdondation.
 
 
 Tous les scripts et modules PowerShell inclus dans l’analyseur sont signés par Microsoft.
@@ -82,7 +82,7 @@ Exemples de contenu après la modification de MDEClientAnalyzer.ps1 :
 >
 > - Version des fenêtres sur lesquelles l’analyseur est exécuté.
 > - Disponibilité du canal du journal des événements sur l’ordinateur.
-> - État de démarrage du capteur PEPT (Sense est arrêté si l’ordinateur n’est pas encore intégré).
+> - État de démarrage du capteur EDR (Sense est arrêté si l’ordinateur n’est pas encore intégré).
 > - Si un paramètre de dépannage avancé a été utilisé avec la commande de l’analyseur.
 
 Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les éléments suivants.
@@ -94,11 +94,11 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 - Dossier SystemInfoLogs \[\]
   - AddRemovePrograms.csv
 
-    Description : Liste des logiciels x86 installés sur les logiciels de système d’exploitation x64 collectés à partir du Registre.
+    Description : Liste des logiciels x64 installés sur le système d’exploitation x64 collectés à partir du Registre.
 
   - AddRemoveProgramsWOW64.csv
 
-    Description : Liste des logiciels x86 installés sur les logiciels de système d’exploitation x64 collectés à partir du Registre.
+    Description : Liste des logiciels x86 installés sur le système d’exploitation x64 collectés à partir du Registre.
 
     - CertValidate.log
 
@@ -156,7 +156,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
   - OperationsManager.evtx
 
-    Description : Exportation du journal des événements Microsoft Monitoring Agent
+    Description : Exportation du journal des événements de Microsoft Monitoring Agent
 
 
 

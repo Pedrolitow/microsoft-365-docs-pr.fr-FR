@@ -6,22 +6,20 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: overview
-ms.date: 04/01/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.topic: how-to
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a03d79da004dab7a68e691c6c2a8ac21ac2b7501
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 7d86b04b1c3883bc5b3da0e429dbbddd8275622f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318179"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489511"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 

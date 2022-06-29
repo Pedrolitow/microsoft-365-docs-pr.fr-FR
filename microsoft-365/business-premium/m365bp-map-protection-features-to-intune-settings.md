@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
-ms.date: 05/20/2022
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -27,17 +26,14 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium mappent aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: e7a2909d158a550575c487e65e03e0f004e28a66
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: cdfd607745326d1d5a95a9e61b3134fb939bcacb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622431"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489573"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection dans Microsoft 365 Business Premium sont mappées aux paramètres Intune
-
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
 
 ## <a name="android-and-ios-application-protection-settings"></a>Paramètres de protection des applications Android et iOS
 
@@ -79,8 +75,7 @@ Le tableau suivant décrit en détail comment les paramètres de stratégie d'ap
 Pour trouver le paramètre Intune, connectez-vous avec vos informations d’identification d’administrateur Microsoft 365 Business Premium, puis accédez à [Portail Azure](https://portal.azure.com). Sélectionnez **Autres services** et tapez Intune dans le **Filtre**. Sélectionnez **Intune App Protection**\>**Stratégie d’application**.
   
  > [!IMPORTANT]
- >
- >Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier uniquement les paramètres Intune qui correspondent aux paramètres disponibles dans Microsoft 365 Business Premium. 
+ > Un abonnement Microsoft 365 Business Premium vous donne une licence pour modifier uniquement les paramètres Intune qui correspondent aux paramètres disponibles dans Microsoft 365 Business Premium. 
   
 Pour explorer les paramètres disponibles, sélectionnez le nom de stratégie souhaité, puis choisissez **Général, Affectations**, **Applications autorisées**, **Applications exemptées**, **Paramètres requis** ou **Paramètres avancés** dans le volet de navigation gauche. 
   

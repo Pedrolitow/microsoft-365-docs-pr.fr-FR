@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679273"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492422"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -60,6 +60,9 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 - [Nouveautés de Defender pour point de terminaison sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour point de terminaison sur Linux](linux-whatsnew.md)
 
+## <a name="june-2022"></a>Juin 2022
+- [Defender pour serveurs Plan 2 s’intègre désormais à la solution unifiée MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>Vous pouvez maintenant commencer à déployer la solution unifiée moderne pour Windows Server 2012 R2 et 2016 sur les serveurs couverts par Defender pour serveurs Plan 2 à l’aide d’un seul bouton.
+
 ## <a name="may-2022"></a>Mai 2022
 - [Protection contre les falsifications pour macOS (préversion)](tamperprotection-macos.md)<br>La protection contre les falsifications permet d’empêcher la suppression non autorisée de Microsoft Defender pour point de terminaison sur macOS.
 
@@ -67,17 +70,17 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="april-2022"></a>Avril 2022
 - [Mise à jour de l’intégration et de la parité des fonctionnalités pour Windows Server 2012 R2 et Windows Server 2016)](configure-server-endpoints.md)<br/> Le nouveau package de solution unifié est désormais en disponibilité générale et facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifié est fourni avec de nombreuses nouvelles améliorations de fonctionnalités.
-- Intégration à Tunnel. Microsoft Defender pour point de terminaison sur iOS peuvent désormais s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Cette fonctionnalité était auparavant disponible uniquement sur Android. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+- Intégration à Tunnel. Microsoft Defender pour point de terminaison sur iOS peut désormais s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Cette fonctionnalité était auparavant disponible uniquement sur Android. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>Janvier 2022
 
 - Améliorations apportées au labo d’évaluation : vous pouvez désormais ajouter des appareils Windows 11 et Linux au labo. 
 
-- Les menaces et les gestion des vulnérabilités pour Android et iOS sont désormais en disponibilité générale. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+- La gestion des menaces et des vulnérabilités pour Android et iOS est désormais en disponibilité générale. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="december-2021"></a>Décembre 2021
 
-- Les menaces et les gestion des vulnérabilités peuvent aider à identifier les vulnérabilités Log4j dans les applications et les composants. [En savoir plus](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
+- La gestion des menaces et des vulnérabilités peut aider à identifier les vulnérabilités Log4j dans les applications et les composants. [En savoir plus](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 - Découvrir les appareils IoT (préversion) : la [découverte](device-discovery.md) d’appareils peut désormais vous aider à trouver des appareils IoT non managés connectés à votre réseau d’entreprise. Cela vous donne une vue unifiée de votre inventaire IoT avec le reste de vos appareils informatiques (stations de travail, serveurs et appareils mobiles).
 
@@ -85,7 +88,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 ## <a name="november-2021"></a>Novembre 2021
 
-- [Gestion de la configuration de la sécurité](security-config-management.md) <br/> Possibilité pour les appareils qui ne sont pas gérés par un Microsoft Endpoint Manager, Microsoft Intune ou Microsoft Endpoint Configuration Manager, de recevoir des configurations de sécurité pour Microsoft Defender directement à partir de Endpoint Manager.
+- [Gestion de la configuration de la sécurité](security-config-management.md) <br/> Possibilité pour les appareils qui ne sont pas gérés par un Endpoint Manager Microsoft, Microsoft Intune ou Microsoft Endpoint Configuration Manager, de recevoir des configurations de sécurité pour Microsoft Defender directement à partir de Endpoint Manager.
 
 - Améliorations apportées à la prise en charge multiplateforme.
 
@@ -99,7 +102,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de réglementer l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité légale, les loisirs et les catégories non catégorisées. Bien que de nombreux sites web qui appartiennent à une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web](web-content-filtering.md).
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - (Préversion) [Microsoft Defender pour point de terminaison plan 1 ](defender-endpoint-plan-1.md) <br/>Defender pour point de terminaison Plan 1 (préversion) est une solution de protection des points de terminaison qui inclut la protection de nouvelle génération, la réduction de la surface d’attaque, la gestion et la création de rapports centralisées, ainsi que des API. Defender pour point de terminaison Plan 1 (préversion) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, qui ont Microsoft 365 E3 et qui n’ont pas encore Microsoft 365 E5. 
 
@@ -111,7 +114,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - (Préversion) [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br>  Le rapport d’intégrité et de conformité des appareils fournit des informations générales sur les appareils de votre organisation.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - [Évaluation des vulnérabilités des logiciels d’exportation Delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout aux [évaluations d’exportation des vulnérabilités et](get-assessment-methods-properties.md) à la collecte d’API de configurations sécurisées. <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON) - qui est utilisée pour obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil - l’appel d’API d’exportation delta est utilisé pour extraire uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, corrigées et mises à jour. L’appel d’API d’exportation Delta peut également être utilisé pour calculer différents indicateurs de performance clés, tels que « le nombre de vulnérabilités qui ont été corrigées » ou « le nombre de nouvelles vulnérabilités ajoutées à une organisation ».
 
@@ -128,12 +131,12 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 - [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet Microsoft Defender pour point de terminaison protéger les données d’une organisation au sein d’une application managée lorsque Intune est utilisé pour gérer des applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, consultez [cette documentation](/mem/intune/apps/mam-faq).
 
-- [intégration Microsoft Tunnel VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel fonctionnalités VPN sont désormais intégrées à Microsoft Defender pour point de terminaison application pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur final simplifiée avec une application de sécurité , offrant à la fois la défense contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes de sécurité et informatiques sont en mesure de maintenir les mêmes expériences d’administration qu’elles connaissent.
+- [Intégration du VPN Microsoft Tunnel](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Les fonctionnalités VPN de Microsoft Tunnel sont désormais intégrées à Microsoft Defender pour point de terminaison application pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur final simplifiée avec une application de sécurité , offrant à la fois la défense contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes de sécurité et informatiques sont en mesure de maintenir les mêmes expériences d’administration qu’elles connaissent.
 
-- [Détection de jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour point de terminaison sur iOS est désormais en disponibilité générale. Cela ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, consultez [la stratégie d’accès conditionnel d’installation basée sur les signaux de risque de l’appareil](/microsoft-365/security/defender-endpoint/ios-configure-features).
+- [Détection jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour point de terminaison sur iOS est désormais en disponibilité générale. Cela ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, consultez [la stratégie d’accès conditionnel d’installation basée sur les signaux de risque de l’appareil](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 - [Gérer la protection contre les falsifications à l’aide du portail Microsoft 365 Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée *attachement de locataire*.
 
 

@@ -1,9 +1,9 @@
 - name: Microsoft Defender pour les PME
   href: index.yml
   items:
-    - name: Vue dʼensemble
+    - name: Présentation
       items:
-        - name: Qu’est-ce que Microsoft Defender pour les PME ?
+        - name: Qu’est-ce que Microsoft Defender pour entreprises ?
           href: mdb-overview.md
         - name: Configuration simplifiée
           href: mdb-simplified-configuration.md
@@ -13,6 +13,8 @@
           href: compare-mdb-m365-plans.md
         - name: Intégration à Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
+        - name: Ressources pour les partenaires
+          href: mdb-partners.md
     - name: Prise en main
       items:
         - name: Obtenir Defender pour les PME
@@ -41,7 +43,7 @@
           href: mdb-configure-security-settings.md
     - name: Afficher et répondre aux menaces détectées
       items:
-        - name: Afficher votre tableau de bord gestion des vulnérabilités
+        - name: Afficher votre tableau de bord de gestion des vulnérabilités
           href: mdb-view-tvm-dashboard.md
         - name: Afficher et gérer les incidents
           href: mdb-view-manage-incidents.md

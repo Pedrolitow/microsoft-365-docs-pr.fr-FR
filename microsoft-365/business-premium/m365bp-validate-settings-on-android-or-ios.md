@@ -2,11 +2,11 @@
 title: Valider les paramètres de protection des applications sur les appareils Android ou iOS
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
@@ -23,18 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium sur vos appareils Android ou iOS. Il est essentiel de définir des paramètres de sécurité pour vos applications afin de protéger les fichiers sur vos applications et appareils mobiles.
-ms.openlocfilehash: 3ddeedc1b9c1303adb9175cd997c69c7b911e4bf
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium sur vos appareils Android ou iOS. Il est essentiel de définir des paramètres de sécurité pour vos applications afin de protéger les fichiers de vos applications et appareils mobiles contre tout type de menaces de sécurité.
+ms.openlocfilehash: c1a4868b7139735571e4e873fa2ff1a7aff199b1
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893064"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489840"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
 
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender entreprise](../security/defender-business/mdb-overview.md)
 
 Suivez les instructions des sections suivantes pour valider les paramètres de protection des applications sur les appareils Android ou iOS.
   
@@ -46,7 +44,7 @@ Après avoir [défini les paramètres de protection des applications pour les ap
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
-1. Dans le [Centre d’administration](https://admin.microsoft.com) Microsoft 365 Business Premium, accédez **à la** stratégie **De modification** des \> stratégies.
+1. Dans le [centre d’administration](https://admin.microsoft.com) Microsoft 365 Business Premium, accédez **à La** **stratégie de modification** des \> stratégies.
 
 2. Choisissez **la stratégie d’application pour Android** pour les paramètres que vous avez créés lors de l’installation, ou une autre stratégie que vous avez créée, et vérifiez qu’elle est appliquée pour Outlook, par exemple. 
 
@@ -74,7 +72,7 @@ Dans le volet **Modifier** la stratégie, choisissez **Modifier** en regard du *
 
     ![Capture d’écran indiquant qu’après trop de tentatives de code confidentiel incorrectes, vous devez réinitialiser votre code confidentiel.](../business-premium/media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. Appuyez sur **Réinitialiser le code confidentiel**. Vous êtes invité à vous connecter avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis à définir un nouveau code confidentiel.
+3. Appuyez sur **Réinitialiser le code confidentiel**. Vous serez invité à vous connecter avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis à définir un nouveau code confidentiel.
 
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Confirmer le fonctionnement du paramètre Obliger les utilisateurs à enregistrer tous les fichiers professionnels dans OneDrive Entreprise
 
@@ -82,7 +80,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../business-premium/media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
+1. Dans l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
 
 2. Ouvrez un e-mail qui contient une pièce jointe et appuyez sur l'icône de flèche vers le bas en regard des informations de la pièce jointe.
 
@@ -99,7 +97,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
 
 Dans le volet **Modifier** la stratégie, choisissez **Modifier** en regard du **contrôle d’accès aux documents Office**, **développez Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur les appareils mobiles** et **assurez-vous que l’option Exiger que les utilisateurs se reconnectent une fois que les applications Office ont été inactives** est définie sur un certain nombre de minutes. Il s’agit de 30 minutes par défaut. 
   
-1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
+1. Dans l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
 
 1. Vous devez maintenant voir la boîte de réception d'Outlook. Ne touchez pas à l'appareil Android pendant au moins 30 minutes (ou toute autre durée supérieure à celle que vous avez spécifiée dans la stratégie). L'appareil va probablement se mettre en veille.
 
@@ -111,7 +109,7 @@ Dans le volet **Modifier** la stratégie, choisissez **Modifier** en regard du *
 
 Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard de **Se prémunir contre la perte ou le vol d'appareils**, développez **Protéger les fichiers professionnels en cas de perte ou de vol des appareils** et vérifiez que l'option **Chiffrer les fichiers professionnels pour les protéger** est **activée** et que l'option **Obliger les utilisateurs à enregistrer tous les fichiers professionnels dans OneDrive Entreprise** est **désactivée**.
   
-1. Sur l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
+1. Dans l’appareil Android de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis entrez un code confidentiel si nécessaire.
 
 1. Ouvrez un e-mail contenant quelques pièces jointes de fichier image.
 
@@ -135,7 +133,7 @@ Une fois que vous avez [défini des configurations d'application pour les appare
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
-1. Dans le [Centre d’administration](https://admin.microsoft.com) Microsoft 365 Business Premium, accédez **à la** stratégie **De modification** des \> stratégies.
+1. Dans le [centre d’administration](https://admin.microsoft.com) Microsoft 365 Business Premium, accédez **à La** **stratégie de modification** des \> stratégies.
 
 1. Choisissez **la stratégie d’application pour iOS pour** les paramètres que vous avez créés lors de l’installation, ou une autre stratégie que vous avez créée, et vérifiez qu’elle est appliquée pour Outlook, par exemple. 
 
@@ -163,7 +161,7 @@ Dans le volet **Modifier** la stratégie, choisissez **Modifier** en regard du *
 
     ![Capture d’écran d’avertissement de réinitialisation du code confidentiel après trop de tentatives incorrectes.](../business-premium/media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-1. Appuyez sur **OK**. Vous êtes invité à vous connecter avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis à définir un nouveau code confidentiel.
+1. Appuyez sur **OK**. Vous serez invité à vous connecter avec les informations d’identification Microsoft 365 Business Premium de l’utilisateur, puis à définir un nouveau code confidentiel.
 
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Confirmer le fonctionnement du paramètre Obliger les utilisateurs à enregistrer tous les fichiers professionnels dans OneDrive Entreprise
 
@@ -177,7 +175,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
 
     ![Tap the Save option after you open an attachment to try to save it.](../business-premium/media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-1. Seule une option pour OneDrive Entreprise devrait être affichée. Si ce n’est pas le cas, appuyez sur **Ajouter un compte** et sélectionnez **OneDrive Entreprise dans** l’écran **Ajouter un compte de stockage** . Indiquez à l’utilisateur final Microsoft 365 Business Premium de se connecter lorsque vous y êtes invité.
+1. Seule une option pour OneDrive Entreprise devrait être affichée. Si ce n’est pas le cas, appuyez sur **Ajouter un compte** et sélectionnez **OneDrive Entreprise** dans l’écran **Ajouter un compte de stockage**. Indiquez l’Microsoft 365 Business Premium de l’utilisateur final pour se connecter lorsque vous y êtes invité.
 
     Appuyez sur **Enregistrer** et sélectionnez **OneDrive Entreprise**.
 

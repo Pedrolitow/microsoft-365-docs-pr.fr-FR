@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment vous inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007127"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489077"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -39,15 +39,11 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
 
 1. Accédez à la Centre d'administration Microsoft 365 et connectez-vous à l’aide <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> des informations d’identification de votre locataire partenaire. 
 
-1. Accédez à **Billing** > **Purchase Services** > **Other Services**.
+2. Accédez à **Billing** > **Purchase Services** > **Microsoft 365 Services**.
+   
+3. Sous **Microsoft 365 Lighthouse**, sélectionnez **Détails**. 
 
-    Si Microsoft 365 Lighthouse ne figure pas dans la liste des services, sélectionnez **Afficher tous les autres produits de services**.
-
-    Si vous rencontrez la page d’erreur Acheter des services, sélectionnez **Afficher les produits** en bas de la page.
-
-1. Sous **Microsoft 365 Lighthouse**, sélectionnez **Détails**. 
-
-1. Sélectionnez **Acheter**.
+4. Sélectionnez **Acheter**.
 
     > [!NOTE]
     > Lighthouse requiert une licence pour le locataire partenaire uniquement. Aucune licence supplémentaire par utilisateur n’est requise pour le partenaire, et aucune licence Lighthouse n’est requise dans n’importe quel locataire client. 
@@ -61,11 +57,11 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
     > [!NOTE]
     > Une fois l’inscription terminée, l’apparition des données client dans Lighthouse peut prendre jusqu’à 48 heures.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Configurer la sécurité du portail Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)   
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)   

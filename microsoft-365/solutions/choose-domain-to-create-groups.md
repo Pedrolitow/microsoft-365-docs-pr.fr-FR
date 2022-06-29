@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Apprenez à choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse e-mail à l’aide de PowerShell.
-ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bd9fad340d136fe4cac228f94f1904761cff7071
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012535"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490894"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 
@@ -31,7 +31,7 @@ Certaines organisations utilisent des domaines de messagerie distincts pour segm
   
 Si votre organisation a besoin que les utilisateurs créent leurs groupes dans des domaines autres que le domaine accepté par défaut de votre entreprise, vous pouvez l’autoriser en configurant des stratégies d’adresse e-mail (EAP) à l’aide de PowerShell.
 
-Avant de pouvoir exécuter les applets de commande PowerShell, téléchargez et installez un module qui vous permettra de communiquer avec votre organisation. Consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Avant de pouvoir exécuter les applets de commande PowerShell, téléchargez et installez un module qui vous permettra de communiquer avec votre organisation. Consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="example-scenarios"></a>Exemples de scénarios
 
@@ -58,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scénario 2
 
-Supposons que vous souhaitez contrôler les sous-domaines dans lesquels Microsoft 365 groupes sont créés. Vous souhaitez :
+Supposons que vous souhaitez contrôler les sous-domaines dans lesquels les groupes Microsoft 365 sont créés. Vous souhaitez :
   
 - Groupes créés par les étudiants (utilisateurs dont **le service** est défini sur **Étudiants**) dans le domaine students.groups.contoso.com. Utilisez la commande suivante :
     
@@ -77,7 +77,9 @@ Supposons que vous souhaitez contrôler les sous-domaines dans lesquels Microsof
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> Ce scénario ne fonctionne pas lorsque l’enregistrement MX pointe vers un filtrage de courrier indésirable tiers.
+ 
 ## <a name="change-email-address-policies"></a>Modifier les stratégies d’adresse e-mail
 
 Pour modifier les modèles de priorité ou d’adresse e-mail d’un EAP existant, utilisez l’applet de commande Set-EmailAddressPolicy.
@@ -101,7 +103,7 @@ La modification d’un EAP n’a aucun impact sur les groupes qui ont déjà ét
   
 ## <a name="hybrid-requirements"></a>Configuration hybride requise
 
-Si votre organisation est configurée dans un scénario hybride, consultez [Configurer Microsoft 365 groupes avec des groupes locaux Exchange hybrides](/exchange/hybrid-deployment/set-up-microsoft-365-groups) pour vous assurer que votre organisation répond aux exigences de création de groupes Microsoft 365. 
+Si votre organisation est configurée dans un scénario hybride, consultez [Configurer des groupes Microsoft 365 avec Exchange hybride local](/exchange/hybrid-deployment/set-up-microsoft-365-groups) pour vous assurer que votre organisation répond aux exigences de création de groupes Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Informations supplémentaires sur l’utilisation des groupes de stratégies d’adresse e-mail :
 
@@ -119,7 +121,7 @@ Il y a quelques autres choses à savoir :
     
 - Une limite maximale de 100 stratégies d’adresse e-mail peut être configurée pour une organisation.
     
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Recommandations de planification de la gouvernance de collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) (article)
 

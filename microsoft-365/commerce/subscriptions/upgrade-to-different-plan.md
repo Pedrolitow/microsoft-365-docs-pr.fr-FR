@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Le moyen le plus simple de mettre à niveau les plans consiste à utiliser l’onglet Mise à niveau dans le centre d’administration. Toutefois, l’onglet Mise à niveau n’est pas toujours pris en charge.
 ms.date: 04/21/2021
-ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102255"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489143"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
+# <a name="upgrade-to-a-different-microsoft-plan"></a>Effectuer une mise à niveau vers un autre plan Microsoft
 
 Lorsque votre entreprise change ou que vous avez besoin de davantage de fonctionnalités, vous pouvez mettre à niveau des plans. La méthode la plus simple consiste à utiliser l’onglet **Mise à niveau** dans le Centre d’administration. Toutefois, l’utilisation de l’onglet **Mise à niveau** n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
 
@@ -36,7 +36,7 @@ Lorsque votre entreprise change ou que vous avez besoin de davantage de fonction
 
 Lorsque vous utilisez l’onglet **Mise à niveau** , vous êtes dirigé tout au long du processus d’achat d’un nouveau plan. Tous les utilisateurs reçoivent automatiquement des licences dans le nouveau plan, et votre ancien plan est annulé pour vous.
 
-1. Dans le centre Administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sélectionnez l’abonnement que vous souhaitez mettre à niveau.
 3. Dans la page détails de l’abonnement, sous **Détails du produit et mises à niveau**, sélectionnez **Afficher les mises à niveau recommandées pour votre organisation**.
 4. Recherchez le plan vers lequel vous souhaitez effectuer la mise à niveau, puis sélectionnez le bouton **Mettre à niveau** .
@@ -58,7 +58,7 @@ Lorsque vous utilisez l’onglet **Mise à niveau** , les plans vers lequel vous
 
 Si vous souhaitez passer à un plan avec moins de services, vous pouvez [modifier les plans manuellement](change-plans-manually.md) ou [appeler le support](../../admin/get-help-support.md) technique pour obtenir de l’aide.
 
-## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Je souhaite uniquement mettre à niveau certains de mes utilisateurs. 如何实现 faites ça ?
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Je souhaite uniquement mettre à niveau certains de mes utilisateurs. Comment faire faites ça ?
 
 Si vous souhaitez uniquement mettre à niveau certains utilisateurs vers un autre plan, mais que vous devez d’abord acheter le nouvel abonnement, consultez [Modifier les plans manuellement](change-plans-manually.md). Si vous disposez déjà de l’abonnement vers lequel vous souhaitez mettre à niveau les utilisateurs, consultez [Déplacer les utilisateurs vers un autre abonnement](move-users-different-subscription.md).
 
@@ -80,7 +80,7 @@ Pour mettre à niveau automatiquement les plans, tous vos utilisateurs doivent s
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Vous ne pouvez pas mettre à niveau les abonnements pour le moment, car cet abonnement n’est pas entièrement configuré ou le service n’est pas disponible
 
-Par exemple, si l’un des services a un incident, vous ne pourrez pas effectuer la mise à niveau tant que tous les services ne sont pas intègres. Pour voir s’il existe des problèmes d’approvisionnement ou d’intégrité du service, dans le Centre d’administration, accédez à la page **Estado de funcionamento dos serviços** \> d’intégrité.<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>
+Par exemple, si l’un des services a un incident, vous ne pourrez pas effectuer la mise à niveau tant que tous les services ne sont pas intègres. Pour voir s’il existe des problèmes d’approvisionnement ou d’intégrité du service, dans le Centre d’administration, accédez à la page **État des services** \> d’intégrité.<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>
 
 Si vous découvrez qu'un service n'est pas entièrement configuré ou si vous rencontrez un problème d'état du service, attendez quelques heures que votre service redevienne disponible et réessayez. Si vous rencontrez toujours un problème, [appelez le support technique](../../admin/get-help-support.md).
 
@@ -118,7 +118,7 @@ Il se peut que vous ne voyiez aucun plan sous l’onglet **Mise à niveau** , ca
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Le plan vers lequel vous souhaitez effectuer la mise à niveau n’est pas une option prise en charge
 
-Lorsque vous mettez à niveau des plans, les plans disponibles pour la mise à niveau sont affichés en fonction des services de votre plan actuel. Vous pouvez uniquement effectuer une mise à niveau vers un plan qui a les mêmes services liés aux données, tels que Exchange Online ou SharePoint Online, ou vers une version supérieure de ceux-ci. Cela garantit que les utilisateurs ne\'perdent pas les données liées à ces services pendant la mise à niveau.
+Lorsque vous mettez à niveau des plans, les plans disponibles pour la mise à niveau sont affichés en fonction des services de votre plan actuel. Vous pouvez uniquement effectuer une mise à niveau vers un plan qui a les mêmes services liés aux données, tels que Exchange Online ou SharePoint Online, ou vers une version supérieure de ces services. Cela garantit que les utilisateurs ne\'perdent pas les données liées à ces services pendant la mise à niveau.
 
 Si votre plan n’est pas éligible à la mise à niveau automatique des plans, vous pouvez peut-être [modifier les plans manuellement](change-plans-manually.md) à la place. Vous pouvez également [appeler le support](../../admin/get-help-support.md) technique pour obtenir de l’aide.
 
@@ -147,7 +147,7 @@ Les utilisateurs de l'ancien abonnement seront automatiquement déplacés vers l
 Si votre ancien abonnement inclut plusieurs services et que vous avez modifié les services auxquels vos utilisateurs sont affectés, vous pouvez en prendre note avant de mettre à niveau les plans afin de pouvoir recréer ces modifications par la suite. Tous les utilisateurs pourront accéder à tous les services dans le nouvel abonnement. Par exemple, si vous avez précédemment acheté Microsoft 365 Business Premium pour les 100 de vos utilisateurs, mais que vous n’avez pas attribué le service SharePoint Online à 50 d’entre eux, cette modification ne sera pas conservée après la mise à niveau des plans.
 
 Si vous avez plusieurs abonnements avant de mettre à niveau des plans et que des utilisateurs ont attribué des licences à plusieurs abonnements, ce modèle d’affectation sera conservé autant que possible dans le nouvel abonnement.
-Toutes les données utilisateur seront conservées pendant la mise à niveau, y compris les boîtes aux lettres Exchange et les SharePoint documents, listes et autres informations en ligne.
+Toutes les données utilisateur seront conservées pendant la mise à niveau, y compris les boîtes aux lettres Exchange et les documents, listes et autres informations SharePoint Online.
   
 ### <a name="billing"></a>Facturation
 
@@ -165,4 +165,4 @@ Le jour de la mise à niveau de votre plan, la facturation de votre ancien abonn
 ## <a name="related-content"></a>Contenu associé
 
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
-[Sauvegarder des données avant de basculer Microsoft 365 pour les plans d’entreprise](back-up-data-before-switching-plans.md) (article)
+[Sauvegarder des données avant de changer de plan Microsoft 365 pour les entreprises](back-up-data-before-switching-plans.md) (article)

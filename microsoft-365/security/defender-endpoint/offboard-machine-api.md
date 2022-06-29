@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: ebfcfe21070656d71c50429cd4653d0e14f7724d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669757"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493216"
 ---
 # <a name="offboard-machine-api"></a>API de l’ordinateur hors carte
 
@@ -79,7 +79,7 @@ L’ID de l’ordinateur se trouve dans l’URL lorsque vous sélectionnez l’a
 
 Nom|Type|Description
 ---|---|---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -98,7 +98,7 @@ Si elle réussit, cette méthode renvoie le code de réponse 200 - Créé et [l�
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de demande.
+Voici un exemple de demande. Si aucun commentaire JSON n’est ajouté, il s’affiche avec le code **400**.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard

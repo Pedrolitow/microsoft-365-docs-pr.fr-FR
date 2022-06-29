@@ -2,8 +2,8 @@
 title: Protégez-vous contre le hameçonnage et d’autres attaques
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et d’autres attaques avec Microsoft 365.
-ms.openlocfilehash: 1b5f276bc8b2f8ffff205679c50e32cbe559d6cb
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: eee5872e3fc9856cd6bc9d58f4fbdf91899f7c00
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893492"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489195"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protégez-vous contre le hameçonnage et d’autres attaques
 
@@ -44,7 +44,7 @@ Outre la protection que Microsoft 365 Business Premium offre contre les attaques
 - **Les programmes malveillants** sont des logiciels malveillants qui peuvent être installés sur votre ordinateur, généralement installés après avoir cliqué sur un lien ou ouvert un document à partir d’un e-mail. Il existe différents types de programmes malveillants (par exemple, ransomware, lorsque votre ordinateur est pris en charge), mais vous ne souhaitez en avoir aucun. 
 
 > [!TIP]
-> Pour en savoir plus sur les concepts de sécurité, consultez notre [glossaire des termes](m365bp-glossary.md).
+> Pour en savoir plus sur les concepts de sécurité, consultez notre [glossaire des termes](m365bp-glossary.yml).
 
 ## <a name="best-practices"></a>Meilleures pratiques
 

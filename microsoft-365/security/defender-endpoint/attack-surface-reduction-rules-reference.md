@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 44f2697f5d56e05a7edfb624d09fd8117034fc8f
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 593eb801505275210862d9b776c6e2dca290ef89
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078358"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493018"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -52,13 +52,13 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 > [!NOTE]
 >
-> Sauf indication contraire, la version minimale Windows&nbsp; 10 est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale Windows&nbsp; Server est la version 1809 ou ultérieure.
+> Sauf indication contraire, la build Windows&nbsp;10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp;Server est la version 1809 ou ultérieure.
 >
-> Les règles de réduction de la surface d’attaque dans Windows&nbsp; Server&nbsp;2012&nbsp;R2 et Windows&nbsp; Server&nbsp;2016 sont disponibles pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Les règles de réduction de la surface d’attaque dans Windows&nbsp;Server&nbsp;2012&nbsp;R2 et Windows&nbsp;Server&nbsp;2016 sont disponibles pour les appareils intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Nom de la règle| &nbsp;Windows 11 <br>et<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>et<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| Nom de la règle| Windows&nbsp;11 <br>et<br> Windows&nbsp;10 | Windows&nbsp;Server <br> 2022 <br>et<br>  Windows&nbsp;Server <br> 2019 | Windows Server | Windows&nbsp;Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows&nbsp;Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> version 1803 (canal Enterprise semi-annuel) ou ultérieure | v | v |
+| [Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> version 1803 (canal d’entreprise semi-annuel) ou ultérieure | v | v |
 | [Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v <br> version 1809 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v | v | v | v | v |
 | [Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
@@ -66,9 +66,9 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 | [Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) | v | v | v | v | v |
 | [Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v | v | N | N |
-| [Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v | v | v | v |
-| [Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v | v | v | v |
-| [Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v | v | v | v |
+| [Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v | v | v | v |
+| [Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v | v | v | v |
+| [Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v | v | v | v |
 | [Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Exclusions de fichiers et de dossiers non prises en charge._ | v <br> version 1903 (build 18362) ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v <br> version 1903 (build 18362) ou ultérieure | N | N |
 | [Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> version 1803 ou ultérieure <sup>[[3](#fn1)]<sup></sup> | v | v | v | v |
 | [Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v | v | v | v |
@@ -77,9 +77,9 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 (<a id="fn1">1</a>) Fait référence à la solution unifiée moderne pour Windows Server 2012 et 2016. Pour plus d’informations, consultez [Intégrer des serveurs Windows au service Defender pour point de terminaison](configure-server-endpoints.md).
 
-(<a id="fn1">2</a>) Pour Windows&nbsp; Server 2016 et Windows&nbsp; Server 2012&nbsp;R2, la version minimale requise de Microsoft Endpoint Configuration Manager est la version 2111.
+(<a id="fn1">2</a>) Pour Windows&nbsp;Server 2016 et Windows&nbsp;Server 2012&nbsp;R2, la version minimale requise de Microsoft Endpoint Configuration Manager est la version 2111.
 
-(<a id="fn1">3</a>) La version et le numéro de build s’appliquent uniquement à Windows&nbsp; 10.
+(<a id="fn1">3</a>) La version et le numéro de build s’appliquent uniquement à Windows&nbsp;10.
 
 ## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de configuration pris en charge
 
@@ -95,9 +95,9 @@ Les liens vers des informations sur les versions du système de gestion de la co
 |[Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v |   | v <br><br> CB 1802 |  v |  v |
 |[Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) | v |   |  v  <br><br> CB 1710 | v  | v  |
 |[Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v |   | v <br><br> CB 1710 | v  | v  |
-|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v |  |v <br><br> CB 1710 | v  | v  |
-|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes) | v |  | v <br><br> CB 1710 | v  | v  |
-|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v |  |v <br><br> CB 1710 | v  | v  |
+|[Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v |  |v <br><br> CB 1710 | v  | v  |
+|[Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes) | v |  | v <br><br> CB 1710 | v  | v  |
+|[Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v |  |v <br><br> CB 1710 | v  | v  |
 |[Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |v   | v  |
 |[Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v |   |   |  v | v  |
 |[Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v |   |v <br><br> CB 1802  | v  | v  |
@@ -109,7 +109,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM est maintenant Microsoft Endpoint Configuration Manager._
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM est désormais Configuration Manager de point de terminaison Microsoft._
 
 ## <a name="per-rule-alert-and-notification-details"></a>Détails des alertes et des notifications par règle
 
@@ -118,9 +118,9 @@ Les notifications toast sont générées pour toutes les règles en mode bloc. L
 Pour les règles avec l'« état de règle » spécifié :
 
 - Les règles ASR avec \<ASR Rule, Rule State\> des combinaisons sont utilisées pour afficher des alertes (notifications toast) sur Microsoft Defender pour point de terminaison uniquement pour les appareils au niveau du bloc cloud élevé. Les appareils qui n’ont pas un niveau de bloc cloud élevé ne génèrent pas d’alertes pour les combinaisons <règle ASR, état de règle>
-- PEPT alertes sont générées pour les règles ASR dans les états spécifiés, mais uniquement pour les appareils au niveau de bloc cloud élevé.
+- Les alertes EDR sont générées pour les règles ASR dans les états spécifiés, mais uniquement pour les appareils au niveau de bloc cloud élevé.
 
-| Nom de la règle : | État de la règle : | Génère des alertes dans PEPT ? <br> (Oui&nbsp;\|&nbsp;Non) | Génère des notifications toast ? <br> (Oui&nbsp;\|&nbsp;Non) |
+| Nom de la règle : | État de la règle : | Génère des alertes dans EDR ? <br> (Oui&nbsp;\|&nbsp;Non) | Génère des notifications toast ? <br> (Oui&nbsp;\|&nbsp;Non) |
 |---|:---:|:---:|:---:|
 |   |   |  _Uniquement pour les appareils au niveau du bloc cloud élevé_ | _En mode bloc uniquement_ |
 |[Bloquer l’abus de pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | v |
@@ -131,9 +131,9 @@ Pour les règles avec l'« état de règle » spécifié :
 |[Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | v |
 |[Bloquer l’exécution de scripts potentiellement masqués](#block-execution-of-potentially-obfuscated-scripts) |  Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Bloquer | v <br> Nécessite un appareil au niveau du bloc cloud élevé  | v <br> Nécessite un appareil au niveau du bloc cloud élevé |
-|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) |   | N | v |
-|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
-|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
+|[Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) |   | N | v |
+|[Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
+|[Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
 |[Bloquer la persistance via l’abonnement aux événements WMI](#block-persistence-through-wmi-event-subscription) |  Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
 |[Bloquer les créations de processus provenant des commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | v |
 |[Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Bloc d’audit&nbsp;\|&nbsp; | Y \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé  | N \| Y <br> Nécessite un appareil au niveau du bloc cloud élevé |
@@ -152,9 +152,9 @@ Pour les règles avec l'« état de règle » spécifié :
 | Empêcher l’exécution de fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste approuvée | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
 | Bloquer l’exécution de scripts potentiellement masqués | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
 | Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé | d3e037e1-3eb8-44c8-a917-57927947596d |
-| Empêcher Office applications de créer du contenu exécutable | 3b576869-a4ec-4529-8536-b80a7769e899 |
-| Empêcher Office applications d’injecter du code dans d’autres processus | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
-| Empêcher Office application de communication de créer des processus enfants | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| Empêcher les applications Office de créer du contenu exécutable | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| Empêcher les applications Office d’injecter du code dans d’autres processus | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| Empêcher l’application de communication Office de créer des processus enfants | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
 | Bloquer la persistance via l’abonnement aux événements WMI <br>* Exclusions de fichiers et de dossiers non prises en charge. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
 | Bloquer les créations de processus provenant des commandes PSExec et WMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
 | Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
@@ -172,7 +172,7 @@ _Le mode d’avertissement_ est un type de mode bloc qui alerte les utilisateurs
 
 Lorsque vous cliquez sur le bouton Autoriser, le bloc est supprimé pendant 24 heures. Après 24 heures, l’utilisateur final doit autoriser à nouveau le bloc. Le mode d’avertissement pour les règles ASR est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté aux règles ASR sur les appareils avec des versions antérieures, la règle est en mode bloqué.
 
-Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant le AttackSurfaceReductionRules_Actions « Avertir ». Par exemple :
+Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant le AttackSurfaceReductionRules_Actions « Avertir ». Par exemple :
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -233,9 +233,9 @@ Dépendances : MDAV
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Empêcher toutes les applications Office de créer des processus enfants
 
-Cette règle empêche Office applications de créer des processus enfants. Office applications incluent Word, Excel, PowerPoint, OneNote et Access.
+Cette règle empêche les applications Office de créer des processus enfants. Les applications Office incluent Word, Excel, PowerPoint, OneNote et Access.
 
-La création de processus enfants malveillants est une stratégie de programmes malveillants courante. Les programmes malveillants qui abusent Office en tant que vecteur exécutent souvent des macros VBA et exploitent le code pour télécharger et tenter d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins bénignes; par exemple générer une invite de commandes ou utiliser PowerShell pour configurer les paramètres du Registre.
+La création de processus enfants malveillants est une stratégie de programmes malveillants courante. Les programmes malveillants qui abusent d’Office en tant que vecteur exécutent souvent des macros VBA et exploitent le code pour télécharger et tenter d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins bénignes; par exemple générer une invite de commandes ou utiliser PowerShell pour configurer les paramètres du Registre.
 
 nom Intune :`Office apps launching child processes`
 
@@ -250,7 +250,7 @@ Type d’action de chasse avancé :
 
 Dépendances : MDAV
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification dans le sous-système de l’autorité de sécurité locale Windows
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows
 
 Cette règle permet d’éviter le vol d’informations d’identification en verrouillant le service de sous-système de l’autorité de sécurité locale (LSASS).
 
@@ -260,7 +260,7 @@ LSASS authentifie les utilisateurs qui se connectent sur un ordinateur Windows. 
 > Dans certaines applications, le code énumère tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous avez une application qui énumère simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée de journal des événements n’indique pas nécessairement une menace malveillante.
   
 > [!IMPORTANT]
-> L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification du sous-système d’autorité de sécurité locale Windows (lsass.exe) » passe de **Non configuré** à **Configuré** et le mode par défaut défini sur **Bloquer**. Toutes les autres règles ASR resteront dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications de l’utilisateur final. Les clients peuvent configurer la règle pour **les modes Audit**, **Avertir** ou **Désactivé** , ce qui remplacera le mode par défaut. Les fonctionnalités de cette règle sont les mêmes, que la règle soit configurée en mode on-by-default ou si vous activez manuellement le mode Bloc.
+> L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification dans le sous-système d’autorité de sécurité locale Windows (lsass.exe) » passe de **Non configuré** à **Configuré** et le mode par défaut défini sur **Bloquer**. Toutes les autres règles ASR resteront dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications de l’utilisateur final. Les clients peuvent configurer la règle pour **les modes Audit**, **Avertir** ou **Désactivé** , ce qui remplacera le mode par défaut. Les fonctionnalités de cette règle sont les mêmes, que la règle soit configurée en mode on-by-default ou si vous activez manuellement le mode Bloc.
 
 nom Intune :`Flag credential stealing from the Windows local security authority subsystem`
 
@@ -280,11 +280,11 @@ Dépendances : MDAV
 Cette règle empêche le lancement des types de fichiers suivants à partir de l’e-mail ouvert dans l’application Microsoft Outlook, ou Outlook.com et d’autres fournisseurs de messagerie web populaires :
 
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
-- Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou JavaScript .js)
+- Fichiers de script (tels qu’un fichier .ps1 PowerShell, Visual Basic .vbs ou JavaScript .js)
 
 nom Intune :`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager nom :`Block executable content from email client and webmail`
+Nom de Microsoft Endpoint Manager :`Block executable content from email client and webmail`
 
 GUID : `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -370,11 +370,11 @@ Type d’action de chasse avancé :
 
 Dépendances : MDAV, AMSI
 
-### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
+### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher les applications Office de créer du contenu exécutable
 
-Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
+Cette règle empêche les applications Office, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant en empêchant l’écriture de code malveillant sur le disque.
 
-Les programmes malveillants qui abusent Office en tant que vecteur peuvent tenter de se décomposer en Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et seraient conservés sur le système. Par conséquent, cette règle se défend contre une technique de persistance commune.
+Les programmes malveillants qui abusent d’Office en tant que vecteur peuvent tenter de sortir d’Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et seraient conservés sur le système. Par conséquent, cette règle se défend contre une technique de persistance commune.
 
 nom Intune :`Office apps/macros creating executable content`
 
@@ -389,11 +389,11 @@ Type d’action de chasse avancé :
 
 Dépendances : MDAV, RPC
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher Office applications d’injecter du code dans d’autres processus
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher les applications Office d’injecter du code dans d’autres processus
 
-Cette règle bloque les tentatives d’injection de code de Office applications vers d’autres processus.
+Cette règle bloque les tentatives d’injection de code des applications Office dans d’autres processus.
 
-Les attaquants peuvent tenter d’utiliser Office applications pour migrer du code malveillant vers d’autres processus via l’injection de code, afin que le code puisse se masquer comme un processus propre.
+Les attaquants peuvent tenter d’utiliser des applications Office pour migrer du code malveillant vers d’autres processus via l’injection de code, afin que le code puisse se masquer comme un processus propre.
 
 Il n’existe aucun objectif commercial légitime connu pour l’utilisation de l’injection de code.
 
@@ -412,11 +412,11 @@ Type d’action de chasse avancé :
 
 Dépendances : MDAV
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
+### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher l’application de communication Office de créer des processus enfants
 
 Cette règle empêche Outlook de créer des processus enfants, tout en autorisant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’abus de vulnérabilités dans Outlook. Il protège également contre [Outlook règles et les attaques de formulaires](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’abus de vulnérabilités dans Outlook. Il protège également contre les [règles et les attaques de formulaires Outlook](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser quand les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
 > Cette règle bloque les conseils de stratégie DLP et les info-bulles dans Outlook. Cette règle s’applique uniquement à Outlook et Outlook.com.
@@ -461,7 +461,7 @@ Dépendances : MDAV, RPC
 Cette règle empêche l’exécution des processus [créés via PsExec](/sysinternals/downloads/psexec) et [WMI](/windows/win32/wmisdk/about-wmi) . PsExec et WMI peuvent exécuter du code à distance. Il existe un risque que des programmes malveillants abusent des fonctionnalités de PsExec et WMI à des fins de commande et de contrôle, ou de propagation d’une infection dans le réseau d’une organisation.
 
 > [!WARNING]
-> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution GPM. Cette règle est incompatible avec la gestion via [Microsoft Endpoint Configuration Manager](/configmgr), car cette règle bloque les commandes WMI utilisées par le client Configuration Manager pour fonctionner correctement.
+> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution GPM. Cette règle est incompatible avec la gestion par le biais de [Microsoft Endpoint Configuration Manager](/configmgr), car cette règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 nom Intune :`Process creation from PSExec and WMI commands`
 

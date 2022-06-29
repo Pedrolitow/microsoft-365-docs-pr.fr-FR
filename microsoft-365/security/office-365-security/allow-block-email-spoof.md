@@ -1,5 +1,5 @@
 ---
-title: Autoriser ou bloquer des e-mails à l’aide de la liste d’autorisation/de blocage du locataire
+title: Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer les e-mails et les entrées d’expéditeur usurpés dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efdd34af13cef4aa4b92b40ad57984469a879010
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: a16a8234b1d0ff2a3647d7f66923faa66784ea72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159811"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493223"
 ---
-# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des e-mails à l’aide de la liste d’autorisation/de blocage du locataire
+# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -79,10 +79,11 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 Autorisez les expéditeurs (ou domaines) sur la page **Soumissions** dans Microsoft 365 Defender.
 
-Notez que les administrateurs ne peuvent pas ajouter d’autorisations directement à la liste d’autorisations/de blocs du locataire. Au lieu de cela, vous utilisez le processus de soumission de l’administrateur pour envoyer le message qui a été bloqué afin que l’URL, le fichier et/ou les expéditeurs correspondants soient ajoutés à la liste d’autorisations/de blocs du locataire. Si aucun bloc du fichier, de l’URL ou de l’expéditeur ne s’est produit, l’autorisation n’est pas créée. Dans la plupart des cas où le message a été déterminé comme un faux positif qui a été bloqué de manière incorrecte, les autorisations sont conservées aussi longtemps que nécessaire pour donner au système le temps de les autoriser naturellement.
+Vous ne pouvez pas modifier directement la liste d’autorisations/de blocs de locataire pour ajouter des entrées d’autorisation. Utilisez plutôt [les soumissions d’administrateur](admin-submission.md) pour envoyer le message bloqué. Cette action ajoute l’URL, le fichier, la paire de domaines de l’expéditeur usurpé d’identité, le domaine emprunté (ou l’utilisateur) et/ou l’expéditeur à la liste d’autorisations/de blocs du locataire. Si l’élément n’a pas été bloqué, l’autorisation n’est pas créée. Dans la plupart des cas où le message a été déterminé comme un faux positif qui a été bloqué de manière incorrecte, l’entrée d’autorisation est supprimée à la date d’expiration spécifiée.
 
 > [!IMPORTANT]
-> Étant donné que Microsoft gère les autorisations pour vous, l’expéditeur, l’URL ou les autorisations de fichier qui ne sont pas nécessaires ou considérées comme incorrectes seront supprimées. Il s’agit de protéger votre environnement et d’éviter une configuration incorrecte des autorisations. Dans les cas où vous n’êtes pas d’accord, un cas de support peut être nécessaire pour vous aider à déterminer pourquoi un message est toujours considéré comme incorrect.
+> - Étant donné que Microsoft gère les entrées d’autorisation pour vous, l’expéditeur inutile, l’URL ou les entrées d’autorisation de fichier qui ne sont pas nécessaires seront supprimées. Ce comportement protège votre organisation et permet d’éviter les entrées d’autorisation mal configurées. Si vous n’êtes pas d’accord avec le verdict, vous devrez peut-être ouvrir une demande de support pour déterminer pourquoi un message est toujours considéré comme incorrect.
+
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Actions & soumissions** \> **soumissions**. Ou, pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
 
@@ -96,7 +97,9 @@ Notez que les administrateurs ne peuvent pas ajouter d’autorisations directeme
 
 6. Dans la liste **déroulante Supprimer après** la liste déroulante, spécifiez la durée pendant laquelle vous souhaitez que l’option d’autorisation fonctionne.
 
-7. Lorsque vous avez terminé, cliquez sur le bouton **Envoyer** .
+7. Ajoutez la raison pour laquelle vous ajoutez l’autorisation à l’aide de la zone **Note facultative** . 
+
+8. Lorsque vous avez terminé, sélectionnez le bouton **Envoyer** .
 
   :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Envoyer des programmes malveillants à Microsoft à des fins d’analyse, par exemple." lightbox="../../media/admin-submission-allow-messages.png":::
 
@@ -164,18 +167,20 @@ Par exemple, vous ajoutez une entrée d’autorisation pour la paire de domaines
 - **Domaine** : gmail.com
 - **Infrastructure** : tms.mx.com
 
-Seuls les messages de cette paire d’infrastructure de domaine *et* d’envoi sont autorisés à usurper. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages des expéditeurs d’autres domaines provenant de tms.mx.com sont vérifiés par l’intelligence par usurpation d’identité.
+Seuls les messages de cette paire d’infrastructure de domaine _et_ d’envoi sont autorisés à usurper. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages des expéditeurs d’autres domaines provenant de tms.mx.com sont vérifiés par l’intelligence par usurpation d’identité.
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>Créer des entrées d’expéditeur usurpées bloquées
 
 ### <a name="use-microsoft-365-defender"></a>Utiliser Microsoft 365 Defender
 
-**Remarques** :
-
-- Seule la _combinaison_ de l’utilisateur usurpé _et_ de l’infrastructure d’envoi définie dans la paire de domaines est spécifiquement autorisée ou bloquée pour l’usurpation d’identité.
-- Lorsque vous configurez une entrée d’autorisation ou de blocage pour une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’insight d’intelligence contre l’usurpation d’identité.
-- Les entrées des expéditeurs usurpés n’expirent jamais.
-- L’usurpation d’identité prend en charge l’autorisation et le blocage.
+> [!NOTE]
+> Les e-mails de ces expéditeurs seront bloqués en tant que _hameçonnage_.
+>
+> Seule la _combinaison_ de l’utilisateur usurpé _et_ de l’infrastructure d’envoi définie dans la paire de domaines est spécifiquement autorisée ou bloquée pour l’usurpation d’identité.
+>
+> Lorsque vous configurez une entrée d’autorisation ou de blocage pour une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’insight d’intelligence contre l’usurpation d’identité.
+>
+> Les entrées des expéditeurs usurpés n’expirent jamais.
 
 1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
 
@@ -205,14 +210,13 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 ## <a name="create-allowed-spoofed-sender-entries"></a>Créer des entrées d’expéditeur usurpées autorisées 
 
-### <a name="use-microsoft-365-defender"></a>Utiliser Microsoft 365 Defender
+### <a name="use-the-tenant-allowblock-list-in-microsoft-365-defender"></a>Utiliser la liste verte/bloquée du locataire dans Microsoft 365 Defender
 
 > [!NOTE]
 >
 > - Seule la _combinaison_ de l’utilisateur usurpé _et_ de l’infrastructure d’envoi définie dans la paire de domaines est spécifiquement autorisée ou bloquée pour l’usurpation d’identité.
 > - Lorsque vous configurez une entrée d’autorisation ou de blocage pour une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’insight d’intelligence contre l’usurpation d’identité.
 > - Les entrées des expéditeurs usurpés n’expirent jamais.
-> - L’usurpation d’identité prend en charge l’autorisation et le blocage. L’URL prend uniquement en charge le bloc.
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Ou, pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -226,6 +230,38 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
    - **Action** : Sélectionnez **Autoriser**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
+
+### <a name="use-admin-submission-in-microsoft-365-defender"></a>Utiliser Administration soumission dans Microsoft 365 Defender
+
+Vous pouvez également autoriser les expéditeurs usurpés d’identité à l’aide de la page **Soumissions** dans Microsoft 365 Defender.
+
+Utilisez [les soumissions d’administrateur](admin-submission.md) pour envoyer le message bloqué. Cette action ajoute l’URL, le fichier, la paire de domaines de l’expéditeur usurpé d’identité, le domaine emprunté (ou l’utilisateur) et/ou l’expéditeur à la liste d’autorisations/de blocs du locataire. Si l’élément n’a pas été bloqué, l’autorisation n’est pas créée. 
+
+> [!IMPORTANT]
+>
+> - L’usurpation d’identité permet de s’occuper de l’usurpation intra-organisation, inter-org et DMARC.
+> - La note facultative dans la soumission de l’administrateur ne s’applique pas à l’usurpation d’identité.
+
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Actions & soumissions** \> **soumissions**. Ou, pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné, puis cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+3. Utilisez le menu volant **Envoyer à Microsoft pour passer en revue** l’envoi d’un message en ajoutant l’ID de message réseau ou en chargeant le fichier e-mail.
+
+4. Dans la section **Sélectionner une raison pour l’envoi à Microsoft**, sélectionnez **Ne doit pas avoir été bloquée (faux positif).**
+
+5. Activez **Autoriser les messages comme cette** option.
+
+6. Dans la liste **déroulante Supprimer après** la liste déroulante, spécifiez la durée pendant laquelle vous souhaitez que l’option d’autorisation fonctionne, bien qu’elle ne s’applique pas à l’usurpation d’identité, car elles n’expirent jamais.
+
+7. Lorsque vous avez terminé, sélectionnez le bouton **Envoyer** .
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Envoyer des programmes malveillants à Microsoft à des fins d’analyse, par exemple." lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+>
+> - La paire de domaines de l’expéditeur usurpé sera créée et visible sous l’onglet **Usurpation** d’identité sous la page **de liste d’autorisations/de blocs du locataire** .
+
 
 ### <a name="use-powershell"></a>Utiliser PowerShell
 
@@ -290,6 +326,38 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
+
+## <a name="create-impersonated-sender-entries"></a>Créer des entrées d’expéditeur empruntées
+
+### <a name="use-admin-submission-in-microsoft-365-defender"></a>Utiliser Administration soumission dans Microsoft 365 Defender
+
+Vous pouvez également autoriser les expéditeurs usurpés d’identité à l’aide de la page **Soumissions** dans Microsoft 365 Defender.
+
+Utilisez [les soumissions d’administrateur](admin-submission.md) pour envoyer le message bloqué. Cette action ajoute l’URL, le fichier, la paire de domaines de l’expéditeur usurpé d’identité, le domaine emprunté (ou l’utilisateur) et/ou l’expéditeur à la liste d’autorisations/de blocs du locataire. Si l’élément n’a pas été bloqué, l’autorisation n’est pas créée. 
+
+> [!IMPORTANT]
+>
+> - L’emprunt d’identité permet de prendre en charge l’emprunt d’identité de domaine et d’utilisateur.
+> - L’emprunt d’identité graphe n’est pas pris en charge à partir d’ici pour l’instant.
+
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Actions & soumissions** \> **soumissions**. Ou, pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné, puis cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+3. Utilisez le menu volant **Envoyer à Microsoft pour passer en revue** l’envoi d’un message en ajoutant l’ID de message réseau ou en chargeant le fichier e-mail.
+
+4. Dans la section **Sélectionner une raison pour l’envoi à Microsoft**, sélectionnez **Ne doit pas avoir été bloquée (faux positif).**
+
+5. Activez **Autoriser les messages comme cette** option.
+
+6. Dans la liste **déroulante Supprimer après** la liste déroulante, spécifiez la durée pendant laquelle vous souhaitez que l’option d’autorisation fonctionne, même si elle ne s’applique pas aux autorisations empruntées, car elles n’expirent jamais.
+
+7. Lorsque vous avez terminé, sélectionnez le bouton **Envoyer** .
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="Envoyer des programmes malveillants à Microsoft à des fins d’analyse, par exemple." lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+> Le domaine usurpé d’identité (ou utilisateur) sera créé et visible dans la section **Expéditeurs et domaines approuvés** de la stratégie anti-hameçonnage à l’adresse <https://security.microsoft.com/antiphishing>.
 
 ## <a name="related-articles"></a>Articles connexes
 
