@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
-ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
+ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66151159"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486316"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -151,6 +152,16 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
 2. Sélectionnez **Rapports**.
 
 3. Décochez l’instruction **Afficher les noms d’utilisateur, de groupe et de site masqués dans tous les rapports**, puis enregistrez vos modifications.
+
+À compter du 23 juin 2022, une API sera progressivement disponible pour tous les environnements pour que les administrateurs généraux modifient ce paramètre sans avoir à visiter le Centre d’administration Microsoft 365. Les détails de l’API sont ci-dessous :  
+
+L’URL est https://graph.microsoft.com/beta/admin/reportSettings 
+
+Deux méthodes ont été approuvées pour cette API :
+
+:::image type="content" source="../../media/api-show-details.png" alt-text="Méthodes d’API.":::
+
+Le rapport contient uniquement une propriété Paramètre de confidentialité. Pour plus d’informations sur l’API Graph, consultez [Utiliser l’API Microsoft Graph](/graph/use-the-api). Les administrateurs généraux peuvent utiliser le Kit de développement logiciel (SDK) ou appeler directement l’API à l’aide de n’importe quel langage de programme doté d’une capacité réseau. Nous vous recommandons d’utiliser l’[Explorateur Graph](/graph/graph-explorer/graph-explorer-overview).
 
 Il faudra quelques minutes pour que ces modifications prennent effet sur les rapports dans le tableau de bord des rapports. Ce paramètre s'applique également aux rapports d'utilisation de Microsoft 365 dans [Microsoft Graph](/graph/api/resources/report) et [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) et [aux rapports d'utilisation dans le centre d'administration Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft Purview.
 

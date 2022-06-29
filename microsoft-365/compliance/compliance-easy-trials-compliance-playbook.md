@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
-ms.openlocfilehash: b43c29ee706fb6d4864227fbfbfe95ad5bbe0495
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.custom: trial-playbook
+ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012899"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530277"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 

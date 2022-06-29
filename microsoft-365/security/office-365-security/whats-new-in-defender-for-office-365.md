@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 82b23047b8013f9916168d46b5b595b326f6d1e5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486904"
+ms.locfileid: "66530529"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -67,6 +67,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 - [Présentation de la table URLClickEvents dans Microsoft 365 Defender Repérage avancé](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096) : présentation de la table UrlClickEvents dans la chasse avancée avec Microsoft Defender pour Office 365.
 - [Améliorations manuelles de la correction des e-mails](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365) : ajout d’actions manuelles de vidage de messagerie effectuées dans Microsoft Defender pour Office 365 au Centre d’action unifié Microsoft 365 Defender (M365D) à l’aide d’une nouvelle enquête axée sur les actions.
+- [Introduction d’une protection différenciée pour les comptes prioritaires dans Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838) : introduction de la disponibilité générale de la protection différenciée pour les comptes prioritaires. 
  
 ## <a name="march-2022"></a>Mars 2022
 

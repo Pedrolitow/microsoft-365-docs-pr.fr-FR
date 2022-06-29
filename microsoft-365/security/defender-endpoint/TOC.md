@@ -326,6 +326,7 @@
 #### [Exclusions de l’antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions basées sur l’extension de fichier et l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions pour les fichiers ouverts par les processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Exclusions de fichiers et de dossiers contextuels](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions pour Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Erreurs courantes à éviter](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 

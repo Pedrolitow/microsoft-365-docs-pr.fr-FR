@@ -1,6 +1,6 @@
 ---
-title: Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles
-description: Utilisez les outils mobile Gestion des appareils pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service Defender pour point de terminaison.
+title: Intégrer des appareils Windows à Defender pour point de terminaison à l’aide de Intune
+description: Utilisez Microsoft Intune pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service Defender pour point de terminaison.
 keywords: intégrer des appareils à l’aide de mdm, gestion des appareils, intégrer des appareils Microsoft Defender pour point de terminaison, mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3e81470cb02742eb94e62118f77f1ae0e8c62f90
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 90c6ec688b19f328f89e2bcabe70b7955086e8da
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599678"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531040"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles
+# <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Intégrer des appareils Windows à Defender pour point de terminaison à l’aide de Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,12 +35,11 @@ ms.locfileid: "65599678"
 
 Vous pouvez utiliser des solutions de gestion des appareils mobiles (GPM) pour configurer Windows 10 appareils. Defender pour point de terminaison prend en charge les GPM en fournissant des OMA-URIs pour créer des stratégies pour gérer les appareils.
 
-
-Pour plus d’informations sur l’utilisation de Defender pour point de terminaison fournisseur de solutions Cloud consultez les fichiers [DDF WindowsAdvancedThreatProtection fournisseur de solutions Cloud](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
+Pour plus d’informations sur l’utilisation de Defender pour endpoint CSP, consultez le fichier DDF [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Si vous utilisez Microsoft Intune, l’appareil MDM doit être inscrit. Sinon, les paramètres ne seront pas appliqués correctement.
+Les appareils doivent être inscrits avec Intune comme solution mobile Gestion des appareils (GPM).
 
 Pour plus d’informations sur l’activation de GPM avec Microsoft Intune, consultez [Inscription de l’appareil (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
@@ -51,21 +50,20 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 Suivez les instructions de [Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
 
-Pour plus d’informations sur l’utilisation de Defender pour point de terminaison fournisseur de solutions Cloud consultez les fichiers [DDF WindowsAdvancedThreatProtection fournisseur de solutions Cloud](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
+Pour plus d’informations sur l’utilisation de Defender pour endpoint CSP, consultez le fichier DDF [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
 > [!NOTE]
 >
 > - La stratégie **État d’intégrité des appareils intégrés** utilise des propriétés en lecture seule et ne peut pas être corrigée.
 > - La configuration de la fréquence de création de rapports de données de diagnostic est disponible uniquement pour les appareils sur Windows 10, version 1703.
+> - L’intégration à Defender pour point de terminaison intégrera l’appareil à [la protection contre la perte de données (DLP),](../../compliance/endpoint-dlp-learn-about.md) qui fait également partie de la conformité à Microsoft 365.
 
-
-Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) ou [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès au déploiement de Microsoft Defender pour point de terminaison.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, consultez [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
 
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Désinstégez et surveillez les appareils à l’aide des outils de Gestion des appareils mobile
+## <a name="offboard-devices-using-mobile-device-management-tools"></a>Désintégrage des appareils à l’aide des outils de Gestion des appareils mobile
 
 Pour des raisons de sécurité, le package utilisé pour désintégrez les appareils expirera 30 jours après la date de téléchargement. Les packages de désintégrage expirés envoyés à un appareil seront rejetés. Lors du téléchargement d’un package de désintégrage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
@@ -74,7 +72,7 @@ Pour des raisons de sécurité, le package utilisé pour désintégrez les appar
 
 1. Obtenez le package de désintégrage à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> :
 
-   1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Offboarding**.
+   1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Points de terminaison** \> De la **désintégration** **de la gestion** \> des appareils.
 
    1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
 
@@ -97,7 +95,7 @@ Pour plus d’informations sur Microsoft Intune paramètres de stratégie, consu
 > [!IMPORTANT]
 > La désintégération entraîne l’arrêt de l’envoi de données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois maximum.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

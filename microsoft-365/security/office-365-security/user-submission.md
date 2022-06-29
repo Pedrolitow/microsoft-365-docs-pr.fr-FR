@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b6586bb781daadb5b19756c9dac6893567f311d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5f2881076679f64633afc1ddcac6a9de7df64acb
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489810"
+ms.locfileid: "66530595"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -48,12 +48,16 @@ La remise de messages signalés par l’utilisateur à une boîte aux lettres pe
 ## <a name="custom-mailbox-prerequisites"></a>Prérequis de boîte aux lettres personnalisée
 
 Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur soient envoyés à votre boîte aux lettres personnalisée :
-
+ 
 - [Identifier la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps dans la stratégie de remise avancée](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [Créez une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) pour la boîte aux **lettres** personnalisée où le vidage automatique de zéro heure (ZAP) pour les programmes malveillants est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
+- [Créer une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) pour la boîte aux lettres personnalisée où
+    - Le vidage automatique de zéro heure (ZAP) pour les programmes **malveillants** est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée). 
+    - l’option de filtre de pièce jointe commune est désactivée (la section \>**Paramètres de protection** **active le filtre de pièces jointes commun** n’est pas sélectionné). 
 
 Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les utilisateurs qui signalent des messages :
+
+- [Assurez-vous que la boîte aux lettres personnalisée ne fait pas partie des stratégies de sécurité prédéfinies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
 - [Créez une stratégie De liens fiables](set-up-safe-links-policies.md) pour la boîte aux lettres personnalisée où l’analyse des liens fiables est désactivée (**sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** la section \> **Messages désactivés**).
 

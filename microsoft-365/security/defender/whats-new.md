@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285015"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530507"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->Les fonctionnalités suivantes sont disponibles en préversion ou en disponibilité générale dans la dernière version de Microsoft 365 Defender.
+Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender. 
 
 Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et collant l’URL suivante dans votre lecteur de flux :
 
@@ -45,12 +45,15 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 Vous pouvez également obtenir des mises à jour de produit et des notifications importantes via le [centre de messages](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="june-2022"></a>Juin 2022
+- (Préversion) Les tables [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) et [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) sont désormais disponibles dans le schéma de chasse avancé. Utilisez ces tables pour rechercher les événements d’évaluation dans Defender Vulnerability Management, notamment l’état des différentes configurations et les états de la surface d’attaque des appareils.
+
 ## <a name="may-2022"></a>Mai 2022
 - (Préversion) Conformément à l’extension récemment annoncée dans une nouvelle catégorie de service appelée [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), nous introduisons la disponibilité de [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) pour la préversion publique. Defender Experts for Hunting s’adresse aux clients qui disposent d’un centre d’opérations de sécurité robuste, mais qui souhaitent que Microsoft les aide à rechercher de manière proactive les menaces sur les données Microsoft Defender, notamment les points de terminaison, les Office 365, les applications cloud et l’identité. 
 
 ## <a name="april-2022"></a>Avril 2022
 - (Préversion) [Des actions](advanced-hunting-take-action.md) peuvent désormais être effectuées sur les messages électroniques directement à partir des résultats de la requête de chasse. Les e-mails peuvent être déplacés vers d’autres dossiers ou supprimés définitivement. 
-- (Préversion) La nouvelle [`UrlClickEvents` table](advanced-hunting-urlclickevents-table.md) de repérage avancé peut être utilisée pour rechercher des menaces telles que des campagnes de hameçonnage et des liens suspects en fonction des informations provenant des clics de liens Coffre dans les messages électroniques, les Microsoft Teams et les applications Office 365.
+- (Préversion) La nouvelle [`UrlClickEvents` table](advanced-hunting-urlclickevents-table.md) de repérage avancé peut être utilisée pour rechercher des menaces telles que des campagnes de hameçonnage et des liens suspects en fonction des informations provenant des clics liens fiables dans les messages électroniques, Microsoft Teams et les applications Office 365.
 
 ## <a name="march-2022"></a>Mars 2022
 
@@ -63,7 +66,7 @@ Vous pouvez également obtenir des mises à jour de produit et des notifications
 
 ## <a name="november-2021"></a>Novembre 2021
 
-- (Préversion) La fonctionnalité de module complémentaire de gouvernance des applications pour Defender pour le cloud Apps est désormais disponible dans Microsoft 365 Defender. La gouvernance des applications fournit une fonctionnalité de gestion de la sécurité et des stratégies conçue pour les applications compatibles OAuth qui accèdent à des données Microsoft 365 par le biais des API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées. [En savoir plus sur la gouvernance des applications](/cloud-app-security/app-governance-manage-app-governance).
+- (Préversion) La fonctionnalité de module complémentaire de gouvernance des applications pour Defender pour Cloud Apps est désormais disponible dans Microsoft 365 Defender. La gouvernance des applications fournit une fonctionnalité de gestion de la sécurité et des stratégies conçue pour les applications compatibles OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées. [En savoir plus sur la gouvernance des applications](/cloud-app-security/app-governance-manage-app-governance).
 - (Préversion) La page de [chasse avancée](advanced-hunting-overview.md) dispose désormais d’une prise en charge multitab, d’un défilement intelligent, d’onglets de schéma rationalisés, d’options de modification rapide pour les requêtes, d’un indicateur d’utilisation des ressources de requête et d’autres améliorations pour rendre l’interrogation plus fluide et plus facile à affiner.
 - (Préversion) Vous pouvez maintenant utiliser le [lien vers la fonctionnalité d’incident](advanced-hunting-link-to-incident.md) pour inclure des événements ou des enregistrements des résultats de la requête de repérage avancé directement dans un incident nouveau ou existant que vous examinez.
 
@@ -87,11 +90,11 @@ Vous pouvez également obtenir des mises à jour de produit et des notifications
 
 - (Préversion) Graphique des incidents
 
-  Un nouvel onglet **Graph** sous l’onglet **Résumé** d’un incident affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée dans votre réseau au fil du temps, l’endroit où elle a démarré et la distance parcourue par l’attaquant.
+  Un nouvel onglet **Graph** de l’onglet **Résumé** d’un incident affiche l’étendue complète de l’attaque, comment l’attaque s’est propagée dans votre réseau au fil du temps, où elle a démarré et jusqu’où l’attaquant est allé.
 
 ## <a name="july-2021"></a>Juillet 2021
 
-- [catalogue de services Professional](https://sip.security.microsoft.com/interoperability/professional_services)
+- [Catalogue de services professionnels](https://sip.security.microsoft.com/interoperability/professional_services)
 
   Améliorez les fonctionnalités de détection, d’investigation et de renseignement sur les menaces de la plateforme avec des connexions partenaires prises en charge.
 
@@ -135,7 +138,7 @@ Vous pouvez également obtenir des mises à jour de produit et des notifications
 
 - [Microsoft 365 Defender rapport d’analyse des menaces](threat-analytics.md)
 
-  L’analytique des menaces vous aide à répondre aux attaques actives et à les réduire. Vous pouvez également en savoir plus sur les tentatives d’attaque bloquées par Microsoft 365 Defender solutions et prendre des mesures préventives qui atténuent le risque d’exposition supplémentaire et augmentent la résilience. Dans le cadre de l’expérience de sécurité unifiée, l’analytique des menaces est désormais disponible pour Microsoft Defender pour point de terminaison et Microsoft Defender pour les titulaires de licences Office E5.
+  L’analytique des menaces vous aide à répondre aux attaques actives et à les réduire. Vous pouvez également en savoir plus sur les tentatives d’attaque bloquées par Microsoft 365 Defender solutions et prendre des mesures préventives qui atténuent le risque d’exposition supplémentaire et augmentent la résilience. Dans le cadre de l’expérience de sécurité unifiée, l’analytique des menaces est désormais disponible pour les titulaires de licences Microsoft Defender pour point de terminaison et Microsoft Defender pour Office E5.
 
 ## <a name="march-2021"></a>Mars 2021
 

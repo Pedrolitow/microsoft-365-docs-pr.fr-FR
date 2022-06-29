@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 80cd8d9b848235fc3486ad1952fa58f9d7d1570d
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935212"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530165"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour les Office 365 exploités par 21Vianet
 
-Cet article décrit les différences entre la prise en charge d’Azure Information Protection (AIP) pour les Office 365 exploités par 21Vianet et les offres commerciales, ainsi que des instructions spécifiques pour la configuration d’AIP pour les clients en Chine&mdash;, qui expliquent comment installer le scanneur local AIP et gérer les travaux d’analyse de contenu.
+Cet article décrit les différences entre la prise en charge d’Azure Information Protection (AIP) pour les Office 365 exploités par 21Vianet et les offres commerciales, ainsi que des instructions spécifiques pour configurer AIP pour les clients en Chine&mdash;, notamment comment installer le scanneur local AIP et gérer les travaux d’analyse de contenu.
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Différences entre AIP pour les Office 365 exploités par 21Vianet et les offres commerciales
 
@@ -37,7 +37,7 @@ Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales
 
 La liste suivante inclut les écarts existants entre AIP pour Office 365 exploitées par 21Vianet et nos offres commerciales à partir de janvier 2021 :
 
-- le chiffrement services AD RMS (Active Directory Rights Management Services) (AD RMS) est pris en charge uniquement dans Applications Microsoft 365 pour les grandes entreprises (build 11731.10000 ou ultérieure). Office Professionnel Plus ne prend pas en charge AD RMS.
+- Le chiffrement AD RMS (Active Directory Rights Management Services) est pris en charge uniquement dans Applications Microsoft 365 pour les grandes entreprises (build 11731.10000 ou ultérieure). Office Professionnel Plus ne prend pas en charge AD RMS.
 
 - La migration d’AD RMS vers AIP n’est actuellement pas disponible.
   
@@ -62,13 +62,13 @@ La liste suivante inclut les écarts existants entre AIP pour Office 365 exploit
 Pour configurer AIP pour les clients en Chine :
 1. [Activez Rights Management pour le locataire](#step-1-enable-rights-management-for-the-tenant).
 
-1. [Ajoutez le principal du service De synchronisation Information Protection Microsoft Purview](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
+1. [Ajoutez le principal du service de synchronisation Protection des données Microsoft](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
 
 1. [Configurez le chiffrement DNS](#step-3-configure-dns-encryption).
 
 1. [Installez et configurez le client d’étiquetage unifié AIP](#step-4-install-and-configure-the-aip-unified-labeling-client).
 
-1. [Configurez des applications AIP sur Windows](#step-5-configure-aip-apps-on-windows).
+1. [Configurez les applications AIP sur Windows](#step-5-configure-aip-apps-on-windows).
 
 1. [Installez le scanneur local AIP et gérez les travaux d’analyse de contenu](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs). 
 
@@ -81,24 +81,24 @@ Pour que le chiffrement fonctionne correctement, RMS doit être activé pour le 
     1. Lancez PowerShell en tant qu’administrateur.
     2. Si le module AIPService n’est pas installé, exécutez `Install-Module AipService`.
     3. Importez le module à l’aide de `Import-Module AipService`.
-    4. Connecter au service à l’aide `Connect-AipService -environmentname azurechinacloud`de .
+    4. Connectez-vous au service à l’aide de `Connect-AipService -environmentname azurechinacloud`.
     5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état est `Enabled`.
 
 2. Si l’état fonctionnel est `Disabled`, exécutez `Enable-AipService`.
 
-### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>Étape 2 : Ajouter le principal du service De synchronisation Information Protection Microsoft Purview
+### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Étape 2 : Ajouter le principal du service de synchronisation Protection des données Microsoft
 
-Le principal du **service Microsoft Purview Information Protection Sync** n’est pas disponible par défaut dans les locataires Azure China et est requis pour Azure Information Protection. Créez ce principal de service manuellement via le module Azure Az PowerShell.
+Le **principal du service de synchronisation Protection des données Microsoft** n’est pas disponible par défaut dans les locataires Azure China et est requis pour Azure Information Protection. Créez ce principal de service manuellement via le module Azure Az PowerShell.
 
 1. Si le module Azure Az n’est pas installé, installez-le ou utilisez une ressource dans laquelle le module Azure Az est préinstallé, comme [Azure Cloud Shell](/azure/cloud-shell/overview). Pour plus d’informations, consultez [Installer le module Azure Az PowerShell](/powershell/azure/install-az-ps).
 
-1. Connecter au service à l’aide de [l’applet de commande Connecter-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de l’environnement `azurechinacloud` :
+1. Connectez-vous au service à l’aide de l’applet [de commande Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de l’environnement `azurechinacloud` :
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. Créez manuellement le principal du **service Microsoft Purview Information Protection Sync** à l’aide de l’applet de commande [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de l’ID `870c4f2e-85b6-4d43-bdda-6ed9a579b725` d’application du service de synchronisation Microsoft Purview Information Protection :
+1. Créez manuellement le **principal du service de synchronisation Protection des données Microsoft** à l’aide de l’applet de commande [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de l’ID `870c4f2e-85b6-4d43-bdda-6ed9a579b725` d’application du service de synchronisation Protection des données Microsoft Purview :
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -108,7 +108,7 @@ Le principal du **service Microsoft Purview Information Protection Sync** n’es
 
 ### <a name="step-3-configure-dns-encryption"></a>Étape 3 : Configurer le chiffrement DNS
 
-Pour que le chiffrement fonctionne correctement, Office applications clientes doivent se connecter à l’instance chine du service et démarrer à partir de là. Pour rediriger des applications clientes vers l’instance de service appropriée, l’administrateur client doit configurer un enregistrement SRV DNS avec des informations sur l’URL Azure RMS. Sans l’enregistrement SRV DNS, l’application cliente tente par défaut de se connecter à l’instance de cloud public et échoue.
+Pour que le chiffrement fonctionne correctement, les applications clientes Office doivent se connecter à l’instance chine du service et démarrer à partir de là. Pour rediriger des applications clientes vers l’instance de service appropriée, l’administrateur client doit configurer un enregistrement SRV DNS avec des informations sur l’URL Azure RMS. Sans l’enregistrement SRV DNS, l’application cliente tente par défaut de se connecter à l’instance de cloud public et échoue.
 
 En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’utilisateur basé sur le domaine appartenant au locataire (par exemple, `joe@contoso.cn`), et non le `onmschina` nom d’utilisateur (par exemple, `joe@contoso.onmschina.cn`). Le nom de domaine du nom d’utilisateur est utilisé pour la redirection DNS vers l’instance de service appropriée.
 
@@ -118,7 +118,7 @@ En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’
 
     1. Lancez PowerShell en tant qu’administrateur.
     2. Si le module AIPService n’est pas installé, exécutez `Install-Module AipService`.
-    3. Connecter au service à l’aide `Connect-AipService -environmentname azurechinacloud`de .
+    3. Connectez-vous au service à l’aide de `Connect-AipService -environmentname azurechinacloud`.
     4. Exécutez cette commande `(Get-AipServiceConfiguration).RightsManagementServiceId` pour obtenir l’ID RMS.
 
 2. Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine, puis ajoutez un nouvel enregistrement SRV.
@@ -197,7 +197,7 @@ Pour plus d’informations, consultez [Qu’est-ce qu’Azure Information Protec
     > Vous pouvez utiliser le même nom de cluster dans la commande [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) pour associer plusieurs nœuds de scanneur au même cluster. L’utilisation du même cluster pour plusieurs nœuds de scanneur permet à plusieurs scanneurs de fonctionner ensemble pour effectuer vos analyses.
     > 
 
-1. Vérifiez que le service est maintenant installé à l’aide **d’Administrative** **ToolsServices** > .
+1. Vérifiez que le service est maintenant installé à l’aide des **services** **Outils** >  d’administration.
 
     Le service installé est nommé **Azure Information Protection Scanner** et est configuré pour s’exécuter à l’aide du compte de service de scanneur que vous avez créé.
 
@@ -206,7 +206,7 @@ Pour plus d’informations, consultez [Qu’est-ce qu’Azure Information Protec
     1. Ouvrez le Portail Azure et créez une application Azure AD pour spécifier un jeton d’accès pour l’authentification. Pour plus d’informations, consultez [Comment étiqueter des fichiers de manière non interactive pour Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     
         > [!TIP]
-        > Lorsque vous créez et configurez Azure AD applications pour la commande [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), le volet **Demander des autorisations d’API** affiche les **API utilisées par mon organisation** à la place de l’onglet **API Microsoft**. Sélectionnez les **API utilisées par mon organisation** pour sélectionner **Azure Rights Management Services**. 
+        > Lors de la création et de la configuration d’applications Azure AD pour la commande [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), le volet **Demander des autorisations d’API** affiche les **API que mon organisation utilise** l’onglet au lieu de l’onglet **API Microsoft**. Sélectionnez les **API utilisées par mon organisation** pour sélectionner **Azure Rights Management Services**. 
         >
 
     1. À partir de l’ordinateur Windows Server, si votre compte de service de scanneur a reçu l’ouverture de session **localement** pour l’installation, connectez-vous avec ce compte et démarrez une session PowerShell. 
@@ -227,9 +227,9 @@ Pour plus d’informations, consultez [Qu’est-ce qu’Azure Information Protec
       Acquired application access token on behalf of CONTOSO\scanner.
       ```
 
-    Le scanneur dispose désormais d’un jeton pour s’authentifier auprès de Azure AD. Ce jeton est valide pendant un an, deux ans ou jamais, en fonction de votre configuration de la clé secrète client **d’application web/API** dans Azure AD. Lorsque le jeton expire, vous devez répéter cette procédure.
+    Le scanneur dispose désormais d’un jeton pour s’authentifier auprès d’Azure AD. Ce jeton est valide pendant un an, deux ans ou jamais, en fonction de votre configuration de la clé secrète client **d’application web/API** dans Azure AD. Lorsque le jeton expire, vous devez répéter cette procédure.
 
-1. Exécutez l’applet de commande [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) pour définir le scanneur pour qu’il fonctionne en mode hors connexion. Exécuter : 
+1. Exécutez l’applet de commande [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) pour définir le scanneur pour qu’il fonctionne en mode hors connexion. Courir:
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off

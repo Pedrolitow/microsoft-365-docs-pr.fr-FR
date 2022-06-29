@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2aee32adca1799fca84932991dc128a6a3f64ca7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492444"
+ms.locfileid: "66530310"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -38,6 +38,8 @@ ms.locfileid: "66492444"
 
 **Plateformes**
 - Windows
+- macOS
+- Linux
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -52,7 +54,7 @@ Regardez cette vidéo pour découvrir comment la protection réseau permet de r�
 
 ## <a name="requirements-for-network-protection"></a>Configuration requise pour la protection réseau
 
-La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise), ou Windows Server version 1803 ou ultérieure, et la protection en temps réel de l’Antivirus Microsoft Defender.
+La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise), Windows Server version 1803 ou ultérieure, macOS version 11 ou ultérieure, ou versions Linux prises en charge par Defender et protection en temps réel de l’Antivirus Microsoft Defender.
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|

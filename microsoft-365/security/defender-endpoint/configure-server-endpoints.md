@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18ca82c4bbcb765eec419cd5b7477df8abbd8515
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490672"
+ms.locfileid: "66531097"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -146,9 +146,19 @@ Contournement:
 3. Importez le certificat dans le magasin « Autorités de certification intermédiaires » approuvé par l’ordinateur local.
 Vous pouvez utiliser la commande PowerShell : Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
+
+Microsoft Defender pour point de terminaison s’intègre en toute transparence à Microsoft Defender pour cloud. Vous pouvez intégrer automatiquement des serveurs, faire en fait apparaître des serveurs surveillés par Microsoft Defender pour cloud dans Defender pour point de terminaison et effectuer des investigations détaillées en tant que client Microsoft Defender pour cloud. 
+
+Pour plus d’informations, consultez [Intégration à Microsoft Defender pour le cloud](azure-server-integration.md). Les serveurs intégrés via Microsoft Defender pour cloud auront leur configuration initiale définie pour exécuter l’Antivirus Defender en [mode passif](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+
+> [!NOTE]
+> - L’intégration entre Microsoft Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge Windows Server 2022, [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+> - La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 clients GCC.
+
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 et Windows Server 2016
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 #### <a name="prerequisites-for-windows-server-2012-r2"></a>Prérequis pour Windows Server 2012 R2
 
@@ -166,7 +176,7 @@ Le package d’installation vérifie si les composants suivants ont déjà été
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Conditions préalables à l’exécution avec des solutions de sécurité tierces
 
-Si vous envisagez d’utiliser une solution de logiciel anti-programme malveillant tiers, vous devez exécuter l’antivirus Microsoft Defender en mode passif. Vous devez vous rappeler de définir le mode passif pendant le processus d’installation et d’intégration.
+Si vous envisagez d’utiliser une solution anti-programme malveillant tierce, vous devez exécuter l’antivirus Microsoft Defender en mode passif. Vous devez vous rappeler de définir le mode passif pendant le processus d’installation et d’intégration.
 
 > [!NOTE]
 > Si vous installez Microsoft Defender pour point de terminaison sur des serveurs avec McAfee Endpoint Security (ENS) ou VirusScan Enterprise (VSE), la version de la plateforme McAfee devra peut-être être mise à jour pour garantir que l’antivirus Microsoft Defender n’est pas supprimé ou désactivé. Pour plus d’informations, notamment les numéros de version spécifiques requis, consultez [l’article du Centre de connaissances McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
@@ -364,7 +374,7 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
 Suivez les étapes décrites dans [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md) pour vérifier que le serveur fait rapport à Defender pour le service point de terminaison.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 
@@ -374,7 +384,7 @@ Vous pouvez déconnecter Windows Server 2012 édition R2, Windows Server 2016, W
 
 - [Désintégrage des appareils à l’aide de stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Désins border des appareils à l’aide de Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Désinstégez et surveillez les appareils à l’aide des outils de Gestion des appareils mobile](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Désintégrage des appareils à l’aide des outils de Gestion des appareils mobile](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 - [Désintégrage des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 Après la désintégration, vous pouvez procéder à la désinstallation du package de solution unifié sur Windows Server 2012 R2 et Windows Server 2016.
