@@ -7,21 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/20/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: d628df3109eafd3d342041784d70b9857e260d81
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623187"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486030"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Afficher et modifier les stratégies de protection des appareils
 

@@ -20,14 +20,14 @@ search.appverid: MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
 ms.date: 04/28/2022
-ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144858"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485976"
 ---
-# <a name="understand-the-proposal-workflow"></a>Comprendre le flux de travail de la proposition
+# <a name="understand-the-microsoft-proposal-workflow"></a>Comprendre le flux de travail de la proposition Microsoft
 
 Une proposition est une offre formelle de Microsoft pour que votre organisation achète des produits et services Microsoft. Vous travaillez directement avec un représentant Microsoft pour déterminer les produits, services et conditions spécifiques de votre proposition.
 
@@ -59,7 +59,7 @@ Les rôles de propriétaire de compte de facturation et de contributeur de compt
 
 ### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Attribuer des rôles dans le Centre d'administration Microsoft 365
 
-1. Dans le Centre d'administration Microsoft 365, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">des comptes BillingBilling</a> > .
+1. Dans le Centre d'administration Microsoft 365, accédez **à la** >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Comptes de facturation</a>.
 2. Dans la page **Comptes de facturation** , dans la section **Rôles de compte de facturation** , sélectionnez **Attribuer des rôles**.
 3. Dans le volet **Attribuer des rôles** , recherchez le nom de la personne à qui vous souhaitez attribuer un rôle.
 4. Sélectionnez la zone correspondant au nom de rôle que vous souhaitez que la personne ait, puis sélectionnez **Affecter**.
@@ -76,7 +76,7 @@ Pour plus d’informations sur les rôles de compte de facturation, consultez [C
 S’il s’agit d’un nouveau compte de facturation et que personne n’a accepté de contrat, vous devenez automatiquement le propriétaire du compte de facturation, à condition que :
 
 - La personne nommée dans la proposition **ou**
-- Êtes déjà un [administrateur général Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) pour votre organisation
+- Êtes-vous déjà [administrateur général Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) pour votre organisation ?
 
 ## <a name="what-is-the-overall-workflow"></a>Quel est le flux de travail global ?
 

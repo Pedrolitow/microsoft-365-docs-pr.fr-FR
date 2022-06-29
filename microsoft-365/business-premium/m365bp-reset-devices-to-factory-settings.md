@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,19 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Découvrez comment utiliser Microsoft 365 Business Premium pour réinitialiser les paramètres d’usine les appareils Windows que vous gérez, en les rétablissant à leurs paramètres d’origine à l’achat.
-ms.openlocfilehash: 960ee445757e2d53e552611e934d777fb5edaebc
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 9c0430c1d9fdee37f6105fc5c3a537c46cefb3be
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623558"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486506"
 ---
 # <a name="reset-windows-devices-to-factory-settings"></a>Réinitialiser les appareils Windows aux paramètres d’usine
-
-Cet article s’applique à Microsoft 365 Business Premium.
-
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Microsoft Defender pour les PME](../security/defender-business/mdb-overview.md).
 
 La rétablissement des paramètres d'usine rétablit les paramètres d'origine d'un appareil (ceux qu'il avait lorsque vous l'avez acheté). Toutes les applications et données qui ont été installées ou enregistrées sur l'appareil après l'achat sont supprimées. Vous pouvez utiliser Microsoft 365 pour les PME pour rétablir aux paramètres d’usine les appareils Windows 10 que vous gérez.
   

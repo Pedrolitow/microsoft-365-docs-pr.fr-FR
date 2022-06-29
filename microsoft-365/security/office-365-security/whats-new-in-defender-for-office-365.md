@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2613825e0925e1899268b4682f66b7facc9600d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015001"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486904"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -49,7 +49,19 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 ## <a name="june-2022"></a>Juin 2022
 
-- [simplification de l’expérience de mise en quarantaine partie 2 dans Microsoft 365 Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687) : simplification de l’expérience de mise en quarantaine deuxième partie avec Microsoft Defender pour Office 365.
+- [L’usurpation d’identité permet d’utiliser la soumission d’administrateur](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender) : créez des entrées d’expéditeur usurpées autorisées à l’aide de la liste d’autorisations/de blocs du locataire.
+
+- [L’emprunt d’identité permet d’utiliser la soumission d’administrateur](allow-block-email-spoof.md#create-impersonated-sender-entries) : l’ajout autorise les expéditeurs usurpés d’identité à l’aide de la page Soumissions dans Microsoft 365 Defender.
+
+- [Afficher la soumission administrateur convertie à partir de la soumission de l’utilisateur](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission) : configurez la boîte aux lettres personnalisée pour intercepter les messages signalés par l’utilisateur sans envoyer les messages à Microsoft à des fins d’analyse.
+
+- [Afficher l’alerte associée pour les soumissions d’utilisateurs et d’administrateurs](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions) : affichez l’alerte correspondante pour chaque message de hameçonnage signalé par l’utilisateur et l’envoi d’e-mail d’administrateur. 
+
+- [Protection d’emprunt d’identité configurable pour les utilisateurs et domaines personnalisés et étendue accrue dans les stratégies prédéfinies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459) :
+  - (Choisissez de) Appliquez des stratégies Strict/Standard prédéfinies à l’ensemble de l’organisation et évitez de sélectionner des utilisateurs, des groupes ou des domaines de destinataires spécifiques, ce qui sécurise tous les utilisateurs destinataires de votre organisation. 
+  - Configurez les paramètres de protection de l’emprunt d’identité pour les utilisateurs personnalisés et les domaines personnalisés dans les stratégies Strict/Standard prédéfinies et protégez automatiquement vos utilisateurs ciblés et le domaine ciblé contre les attaques d’emprunt d’identité.
+
+- [Simplification de l’expérience de quarantaine (deuxième partie) dans Microsoft 365 Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687) : met en évidence des fonctionnalités supplémentaires pour rendre l’expérience de quarantaine encore plus facile à utiliser.
 
 ## <a name="april-2022"></a>Avril 2022
 
@@ -67,7 +79,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="october-2021"></a>Octobre 2021
 
 - [Amélioration DKIM de remise avancée](configure-advanced-delivery.md) : ajout de la prise en charge de l’entrée de domaine DKIM dans le cadre de la configuration de simulation d’hameçonnage tierce.
-- [Secure by Default](secure-by-default.md) : Extended Secure by Default pour Exchange règles de flux de messagerie (également appelées règles de transport).
+- [Sécuriser par défaut](secure-by-default.md) : étendu sécurisé par défaut pour les règles de flux de messagerie Exchange (également appelées règles de transport).
 
 ## <a name="september-2021"></a>Septembre 2021
 
@@ -78,16 +90,16 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - D’autres nouvelles fonctionnalités à venir à l’expérience de quarantaine sont décrites dans ce billet de blog : [Simplifier l’expérience de quarantaine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
 - La redirection du portail par défaut commence, redirigeant les utilisateurs de La sécurité & conformité vers Microsoft 365 Defender<https://security.microsoft.com>. Pour plus d’informations, consultez : [Redirection de comptes depuis Office 365 Centre de sécurité & conformité vers Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
-- [Révision par l’administrateur des messages signalés](admin-review-reported-message.md) : les administrateurs peuvent désormais renvoyer des messages modèles aux utilisateurs finaux après avoir examiné les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et en fonction du verdict de votre administrateur.
+- [Administration examiner les messages signalés](admin-review-reported-message.md) : les administrateurs peuvent désormais renvoyer des messages modèles aux utilisateurs finaux après avoir examiné les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et en fonction du verdict de votre administrateur.
 - [Ajouter des autorisations dans la liste d’autorisation/de blocage du locataire](manage-tenant-allows.md) : vous pouvez maintenant ajouter des entrées d’autorisation à la liste d’autorisation/de blocage du locataire si le message bloqué a été envoyé dans le cadre du processus d’envoi de l’administrateur. Selon la nature du bloc, l’URL, le fichier et/ou l’autorisation de l’expéditeur envoyé sont ajoutés à la liste d’autorisations/de blocs du locataire. Dans la plupart des cas, les autorisations sont ajoutées pour donner au système un certain temps et l’autoriser naturellement si nécessaire. Dans certains cas, Microsoft gère l’autorisation pour vous.
 
 ## <a name="july-2021"></a>Juillet 2021
 
 - [Améliorations apportées à l’analyse des e-mails dans les enquêtes automatisées](email-analysis-investigations.md)
 - [Livraison avancée](configure-advanced-delivery.md) : introduction d’une nouvelle fonctionnalité de configuration de la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres d’opération de sécurité.
-- [liens Coffre pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Liens sécurisés pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Nouvelles stratégies d’alerte pour les scénarios suivants : boîtes aux lettres compromises, hameçonnage de formulaires, courriers malveillants remis en raison de remplacements et arrondi à ZAP
   - Activité suspecte de transfert d’e-mail
   - L’utilisateur ne peut pas partager de formulaires et collecter des réponses.
@@ -98,17 +110,17 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Les balises utilisateur](user-tags.md) sont désormais intégrées à Microsoft Defender pour Office 365 expériences d’alerte, notamment : la file d’attente des alertes et les détails dans Office 365 Sécurité & Conformité, et l’étendue des stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées.
   - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le portail Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
-- Nouveau paramètre de conseil de sécurité de premier contact dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent d’abord un e-mail d’un expéditeur ou qu’ils ne reçoivent pas souvent d’e-mail d’un expéditeur. Pour plus d’informations sur ce paramètre et la façon de le configurer, consultez les articles suivants :
-  - [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- Nouveau paramètre de conseil de sécurité du premier contact dans les stratégies anti-hameçonnage. Ce conseil de sécurité s’affiche lorsque les destinataires reçoivent d’abord un e-mail d’un expéditeur ou qu’ils ne reçoivent pas souvent d’e-mail d’un expéditeur. Pour plus d’informations sur ce paramètre et la façon de le configurer, consultez les articles suivants :
+  - [Premier conseil de sécurité de contact](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
   - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Avril/mai 2021
 
 - [Page d’entité](mdo-email-entity-page.md) de messagerie : vue unifiée à 360 degrés d’un e-mail avec des informations enrichies sur les menaces, l’authentification et les détections, les détails de la détonation et une toute nouvelle expérience d’aperçu de l’e-mail.
-- [OFFICE 365 API de gestion](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events) : mises à jour de EmailEvents (RecordType 28) pour ajouter l’action de remise, les emplacements de remise d’origine et les derniers, ainsi que les détails de détection mis à jour.
+- [API de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events) : Mises à jour à EmailEvents (RecordType 28) pour ajouter l’action de remise, les emplacements de remise d’origine et les derniers, ainsi que les détails de détection mis à jour.
 - [Analyse des menaces pour Defender pour Office 365](/microsoft-365/security/defender/threat-analytics) : affichez les acteurs actifs des menaces, les techniques populaires et les surfaces d’attaque, ainsi que les rapports détaillés des chercheurs Microsoft sur les campagnes en cours.
 
 ## <a name="februarymarch-2021"></a>février/mars 2021
@@ -124,5 +136,5 @@ Saviez-vous que Microsoft Defender pour Office 365 est disponible dans deux plan
 
 ## <a name="see-also"></a>Voir aussi
 
-- [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
+- [Feuille de route microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 - [description du service Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

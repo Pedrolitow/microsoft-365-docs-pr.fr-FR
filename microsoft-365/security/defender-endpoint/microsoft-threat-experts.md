@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b81daa25618fd971f5f29e2672673e8dcd2e35bc
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 38e0145d1df971d651aab0be02c08e46ea70fe70
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159443"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490319"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -46,11 +46,11 @@ Regardez cette vidéo pour découvrir comment Spécialistes des menaces Microsof
 
 > [!NOTE]
 > Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous appliquer au service de repérage des menaces managées.
-> Les experts en menaces ne sont actuellement pas disponibles dans le Microsoft 365 pour les clouds du gouvernement des États-Unis.
+> Les experts en menaces ne sont actuellement pas disponibles dans Microsoft 365 pour les clouds du gouvernement des États-Unis.
 
 Si vous êtes un client Microsoft Defender pour point de terminaison, vous devez demander **Spécialistes des menaces Microsoft - Notifications d’attaque ciblée** pour obtenir des informations et une analyse spéciales qui vous aideront à identifier les menaces les plus critiques dans votre environnement afin de pouvoir y répondre rapidement.
 
-Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifications d’attaque ciblée, accédez à **Paramètres** \> **Fonctionnalités** **avancées** \> **générales** \> \> des points de terminaison **Spécialistes des menaces Microsoft - Notifications d’attaque ciblée** à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
+Pour vous inscrire à Spécialistes des menaces Microsoft - Avantages des notifications d’attaque ciblée, accédez à **Paramètres** Points de terminaison Fonctionnalités \> **avancées** \> **générales** \>  \> **Spécialistes des menaces Microsoft - Notifications d’attaque ciblée** à appliquer. Une fois accepté, vous bénéficiez des avantages des notifications d’attaque ciblée.
 
 Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts à la demande** pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents auxquels votre organisation est confrontée.
 
@@ -67,7 +67,7 @@ Spécialistes des menaces Microsoft - La notification d’attaque ciblée permet
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Spécialistes des menaces Microsoft - Experts à la demande
 
-Les clients peuvent faire appel à nos experts en sécurité directement à partir de Microsoft 365 Defender pour obtenir une réponse rapide et précise. Les experts fournissent des insights nécessaires pour mieux comprendre les menaces complexes qui affectent votre organisation, qu’il s’agit de demandes d’alerte, d’appareils potentiellement compromis, de la cause racine d’une connexion réseau suspecte ou d’informations supplémentaires sur les menaces concernant les campagnes de menaces persistantes avancées en cours. Avec cette fonctionnalité, vous pouvez :
+Les clients peuvent faire appel à nos experts en sécurité directement à partir de Microsoft 365 Defender portail pour obtenir leur réponse. Les experts fournissent des insights nécessaires pour mieux comprendre les menaces complexes qui affectent votre organisation, qu’il s’agit de demandes d’alerte, d’appareils potentiellement compromis, de la cause racine d’une connexion réseau suspecte ou d’informations supplémentaires sur les menaces concernant les campagnes de menaces persistantes avancées en cours. Avec cette fonctionnalité, vous pouvez :
 
 - Obtenir des précisions supplémentaires sur les alertes, notamment la cause racine ou l’étendue de l’incident
 - Clarifier le comportement suspect des appareils et les étapes suivantes si vous êtes confronté à un attaquant avancé

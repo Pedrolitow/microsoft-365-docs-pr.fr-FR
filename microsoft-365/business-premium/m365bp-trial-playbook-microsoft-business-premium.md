@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 364e2ab3e858bb7c2e06701cc9f3fb8374862003
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 2a4cd72cdb173afcce95250f8aa2916c8064cd26
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139448"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486494"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
 
@@ -46,7 +46,7 @@ Microsoft 365 Business Premium inclut des [stratégies de sécurité prédéfini
 
 Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
 
-> [!Note]
+> [!NOTE]
 > Si vous avez acheté un nouveau domaine lorsque vous vous êtes inscrit, votre domaine est configuré et vous pouvez accéder à Ajouter des utilisateurs et attribuer des licences. Accédez au centre d’administration ([https://admin.microsoft.com](https://admin.microsoft.com)).
 
 1. Dans le menu du Centre d’administration, choisissez **Configurer** pour démarrer l’Assistant.

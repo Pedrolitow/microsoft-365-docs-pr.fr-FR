@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d1379836a2d55a8c6c256ce734c40acc5fc48599
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: f5b4cfc38f702bf7ea5affdae13f2215c044fc89
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090495"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486704"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Android
 
@@ -31,10 +31,13 @@ ms.locfileid: "66090495"
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Profil personnel BYOD microsoft defender sur Android Entreprise
+Microsoft Defender pour point de terminaison est désormais pris en charge sur le profil personnel Android Entreprise (BYOD uniquement) avec toutes les fonctionnalités clés, notamment l’analyse des programmes malveillants, la protection contre les liens de hameçonnage, la protection réseau et la gestion des vulnérabilités. Cette prise en charge est associée à [des contrôles de confidentialité](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) pour garantir la confidentialité des utilisateurs sur le profil personnel. Pour plus d’informations, lisez [l’annonce](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) et le [guide de déploiement](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
+
 ## <a name="network-protection"></a>Protection réseau
 La protection réseau sur Microsoft Defender pour point de terminaison est désormais en préversion publique. La protection réseau offre une protection contre les menaces non autorisées Wi-Fi connexes, le matériel non fiable comme les périphériques d’ananas et avertit l’utilisateur si une menace associée est détectée. Les utilisateurs verront également une expérience guidée pour se connecter à des réseaux sécurisés et modifier des réseaux lorsqu’ils sont connectés à une connexion non sécurisée.
 
-Il inclut plusieurs contrôles d’administration pour offrir de la flexibilité, tels que la possibilité de configurer la fonctionnalité à partir du centre Microsoft Endpoint Manager Administration. Les administrateurs peuvent également activer les contrôles de confidentialité pour configurer les données envoyées par Defender pour point de terminaison à partir d’appareils Android. 
+Il inclut plusieurs contrôles d’administration pour offrir de la flexibilité, tels que la possibilité de configurer la fonctionnalité à partir du centre microsoft Endpoint Manager Administration. Les administrateurs peuvent également activer les contrôles de confidentialité pour configurer les données envoyées par Defender pour point de terminaison à partir d’appareils Android. 
 
 Si vous souhaitez participer à cette préversion publique, partagez votre ID de locataire avec nous sur networkprotection@microsoft.com. Pour plus d’informations, consultez [la protection réseau](/microsoft-365/security/defender-endpoint/android-configure).
 
@@ -55,11 +58,11 @@ Microsoft Defender pour point de terminaison est désormais disponible en tant q
 
 Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, consultez [le billet techcommunity ici](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
-## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Modifications d’autorisation à venir pour Microsoft Defender pour point de terminaison en cours d’exécution Android 11 ou version ultérieure (novembre 2021)
+## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Modifications d’autorisation à venir pour Microsoft Defender pour point de terminaison exécutant Android 11 ou version ultérieure (novembre 2021)
 
-Version de publication : 1.0.3501.0301 Mois de publication : novembre 2021 Microsoft Defender pour point de terminaison a publié cette mise à jour requise par [Google](https://developer.android.com/distribute/play-policies#APILevel30) pour la mise à niveau vers Android API 30. Cette modification invite les utilisateurs à demander l’accès à [une nouvelle autorisation de stockage](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play), pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit que la fonctionnalité de sécurité des applications de Defender pour point de terminaison fonctionne sans interruption. Pour plus d’informations, consultez les sections suivantes.
+Version de publication : 1.0.3501.0301 Mois de publication : novembre 2021 Microsoft Defender pour point de terminaison a publié cette mise à jour requise par [Google](https://developer.android.com/distribute/play-policies#APILevel30) pour la mise à niveau vers l’API Android 30. Cette modification invite les utilisateurs à accéder à [une nouvelle autorisation de stockage](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit que la fonctionnalité de sécurité des applications de Defender pour point de terminaison fonctionne sans interruption. Pour plus d’informations, consultez les sections suivantes.
 
-**Comment cela affectera votre organisation :** Ces modifications prendront effet si vous utilisez Microsoft Defender pour point de terminaison sur des appareils exécutant Android 11 ou version ultérieure et que vous mettez à jour Defender pour point de terminaison pour publier la build 1.0.3501.0301 ou ultérieure.
+**Comment cela affectera votre organisation :** Ces modifications prendront effet si vous utilisez Microsoft Defender pour point de terminaison sur les appareils exécutant Android 11 ou version ultérieure et que vous mettez à jour Defender pour point de terminaison pour publier la build 1.0.3501.0301 ou ultérieure.
 
 > [!NOTE]
 > Les nouvelles autorisations de stockage ne peuvent pas être configurées par l’administrateur pour « Approuver automatiquement » via Microsoft Endpoint Manager. L’utilisateur doit prendre des mesures pour fournir l’accès à cette autorisation.
@@ -73,7 +76,7 @@ Version de publication : 1.0.3501.0301 Mois de publication : novembre 2021 Micro
 
 Informez vos utilisateurs et le support technique (le cas échéant) que les utilisateurs doivent accepter les nouvelles autorisations lorsqu’ils sont invités à mettre à jour Defender pour point de terminaison pour générer 1.0.3501.0301 ou version ultérieure. Pour accepter les autorisations, les utilisateurs doivent :
 
-1. Appuyez sur la notification Defender pour point de terminaison dans l’application ou ouvrez l’application Defender pour point de terminaison. Les utilisateurs verront un écran qui répertorie les autorisations nécessaires. Une coche verte est manquante en regard de l’autorisation Stockage.
+1. Appuyez sur la notification Defender pour point de terminaison dans l’application ou ouvrez l’application Defender pour point de terminaison. Les utilisateurs verront un écran qui répertorie les autorisations nécessaires. Une coche verte est manquante en regard de l’autorisation de stockage.
 
 2. Appuyez **sur Commencer**.
 
@@ -82,4 +85,4 @@ Informez vos utilisateurs et le support technique (le cas échéant) que les uti
 4. L’appareil est désormais protégé.
 
   > [!NOTE]
-  > Cette autorisation permet à Microsoft Defender pour point de terminaison d’accéder au stockage sur l’appareil de l’utilisateur, ce qui permet de détecter et de supprimer les applications malveillantes et indésirables. Microsoft Defender pour point de terminaison les accès/analyses Android fichier de package d’application (.apk) uniquement. Sur les appareils dotés d’un profil professionnel, Defender pour point de terminaison analyse uniquement les fichiers liés au travail.
+  > Cette autorisation permet à Microsoft Defender pour point de terminaison d’accéder au stockage sur l’appareil de l’utilisateur, ce qui permet de détecter et de supprimer les applications malveillantes et indésirables. Microsoft Defender pour point de terminaison accède/analyse uniquement au fichier de package d’application Android (.apk). Sur les appareils dotés d’un profil professionnel, Defender pour point de terminaison analyse uniquement les fichiers liés au travail.

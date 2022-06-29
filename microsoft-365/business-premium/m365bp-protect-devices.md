@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/24/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration et de la sécurisation des appareils gérés contre les menaces de sécurité et les cyberattaques. Implémentez des défenses de cybersécurité et une protection des points de terminaison par le biais de l’inscription et de l’intégration de tous les appareils. Découvrez comment configurer des stratégies d’appareil et gérer des groupes d’appareils.
-ms.openlocfilehash: 12a80864c0bd131c96dc57d89d2638521290827e
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: ad5ff8c03fa3749cb764949990a491ae8aa0266a
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319919"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486552"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configurer et sécuriser des appareils gérés
 

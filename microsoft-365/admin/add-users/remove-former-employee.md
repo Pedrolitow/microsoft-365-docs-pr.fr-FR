@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
+- adminvideo
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
@@ -26,17 +27,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Bloquez l’accès à Microsoft 365 afin qu’un ancien employé ne puisse pas se connecter, sécurise les données de l’organisation et autorise les autres employés à accéder à leurs e-mails et OneDrive données.
-ms.openlocfilehash: 3bff5812d1efd6b38f05303de7ec2c078b31cf01
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Bloquez l’accès à Microsoft 365 afin qu’un ancien employé ne puisse pas se connecter, sécurise les données de l’organisation et autorise les autres employés à accéder à leurs e-mails et à leurs données OneDrive.
+ms.openlocfilehash: d8b32a2489735469ecdd2af3b479b0705d33be13
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436314"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486217"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Vue d’ensemble : Supprimer un ancien employé et sécuriser les données
 
-Une question que nous obtenons souvent est la suivante : « Que dois-je faire pour sécuriser les données et protéger l’accès lorsqu’un employé quitte mon organisation ? » Cette série d’articles explique comment bloquer l’accès aux Microsoft 365 afin que ces utilisateurs ne puissent pas se connecter à Microsoft 365, les étapes à suivre pour sécuriser les données de l’organisation et comment autoriser d’autres employés à accéder à la messagerie électronique et aux données OneDrive.
+Une question que nous obtenons souvent est la suivante : « Que dois-je faire pour sécuriser les données et protéger l’accès lorsqu’un employé quitte mon organisation ? » Cette série d’articles explique comment bloquer l’accès à Microsoft 365 afin que ces utilisateurs ne puissent pas se connecter à Microsoft 365, les étapes à suivre pour sécuriser les données de l’organisation et comment autoriser d’autres employés à accéder à la messagerie et aux données OneDrive.
 
 > [!TIP]
 > Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
@@ -45,7 +46,7 @@ Une question que nous obtenons souvent est la suivante : « Que dois-je faire po
 
 Vous devez être administrateur général pour effectuer les étapes de cette solution.
 
-Pour effectuer les étapes de cette série, vous utilisez ces fonctionnalités et fonctionnalités Microsoft 365.
+Pour effectuer les étapes de cette série, vous utilisez ces fonctionnalités et fonctionnalités De Microsoft 365.
 
 |Produit ou composant|Fonctionnalité|
 |---|---|
@@ -73,7 +74,7 @@ Pour effectuer les étapes de cette série, vous utilisez ces fonctionnalités e
 |[Étape 2 : enregistrer le contenu de la boîte aux lettres d’un ancien employé](remove-former-employee-step-2.md)|Cela est utile pour la personne qui va reprendre le travail de l’employé, ou en cas de litige.|
 |[Étape 3 : réinitialiser et bloquer l’appareil mobile d’un ancien employé](remove-former-employee-step-3.md)|Cette étape supprime vos données professionnelles du téléphone ou de la tablette.|
 |[Étape 4 : transférer l’e-mail d’un ancien employé à un autre employé ou convertir en boîte aux lettres partagée](remove-former-employee-step-4.md)|Cette étape vous permet de conserver l'adresse e-mail de l'ancien employé. Si certains de vos clients ou partenaires continuent d'envoyer du courrier à l'adresse de l'ancien employé, celui-ci est reçu par son remplaçant.|
-|[Étape 5 : accorder à un autre employé l’accès aux données OneDrive et Outlook](remove-former-employee-step-5.md)|Si vous supprimez uniquement la licence d'un utilisateur, mais pas le compte, vous pouvez toujours accéder au contenu enregistré dans l'espace OneDrive de l'utilisateur même après 30 jours. <p> Avant de supprimer le compte, vous devez accorder l’accès à son OneDrive et Outlook à un autre utilisateur. Après avoir supprimé le compte d’un employé, le contenu de son OneDrive et de son Outlook est conservé pendant **30** jours. Toutefois, au cours de ces 30 jours, vous pouvez restaurer le compte de l’utilisateur et accéder à son contenu. Si vous restaurez le compte de l’utilisateur, le contenu OneDrive et Outlook reste accessible même après 30 jours.| 
+|[Étape 5 : accorder à un autre employé l’accès aux données OneDrive et Outlook](remove-former-employee-step-5.md)|Si vous supprimez uniquement la licence d'un utilisateur, mais pas le compte, vous pouvez toujours accéder au contenu enregistré dans l'espace OneDrive de l'utilisateur même après 30 jours. <p> Avant de supprimer le compte, vous devez donner accès à oneDrive et Outlook à un autre utilisateur. Après avoir supprimé le compte d’un employé, le contenu dans onedrive et Outlook est conservé pendant **30** jours. Toutefois, au cours de ces 30 jours, vous pouvez restaurer le compte de l’utilisateur et accéder à son contenu. Si vous restaurez le compte de l’utilisateur, le contenu OneDrive et Outlook reste accessible même après 30 jours.| 
 |[Étape 6 : Supprimer et supprimer la licence Microsoft 365 d’un ancien employé](remove-former-employee-step-6.md)|Si vous retirez une licence, vous pouvez l'affecter à quelqu'un d'autre. Vous pouvez également supprimer la licence pour ne plus payer pour celle-ci jusqu'à ce que vous embauchiez une autre personne.  <p> Lorsque vous retirez ou supprimez une licence, les anciens courriers, les contacts et le calendrier de l'utilisateur sont conservés pendant **30 jours** avant d'être supprimés définitivement. Si vous retirez ou supprimez une licence, mais pas le compte, vous pouvez toujours accéder au contenu enregistré dans l'espace OneDrive de l'utilisateur même après 30 jours.  |
 |[Étape 7 : Supprimer le compte d’utilisateur d’un ancien employé](remove-former-employee-step-7.md)|Cela supprime le compte de votre centre d’administration. Ainsi, les choses restent claires et bien organisées.|
 
@@ -93,7 +94,7 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 1. Passez en revue vos résultats, puis sélectionnez **Fermer**.
 
 Après avoir supprimé un utilisateur, vous avez jusqu’à 30 jours pour restaurer son compte.
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Restaurer un utilisateur](restore-user.md) (article)\
 [Ajouter un nouvel employé dans Microsoft 365](add-new-employee.md) (article)\

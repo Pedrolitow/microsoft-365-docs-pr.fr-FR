@@ -6,8 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: overview
-ms.date: 06/03/2022
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -15,12 +14,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 009d26c71d9d268956e582f20c6c74537bdb2f38
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 267845607ddff1edb02d9007796d0481b6d6c444
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893480"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486518"
 ---
 # <a name="work-with-a-microsoft-partner"></a>Collaborer avec un partenaire Microsoft
 

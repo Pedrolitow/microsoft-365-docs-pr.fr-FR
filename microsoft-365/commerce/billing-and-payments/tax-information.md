@@ -19,18 +19,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Découvrez le montant des taxes qui vous seront facturées pour votre Microsoft 365 pour un abonnement professionnel dans différentes régions.
+description: Découvrez le montant des taxes qui vous seront facturées pour votre abonnement Microsoft 365 entreprise dans différentes régions.
 ms.date: 03/17/2021
-ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1c676167f68c37b51c2ccdfc8ac08561e52cbea9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101621"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486534"
 ---
-# <a name="tax-information"></a>Informations fiscales
+# <a name="microsoft-365-tax-information"></a>Informations fiscales Microsoft 365
 
-Lorsque vous achetez Microsoft 365 produits et services, les taxes que vous payez sont déterminées par l’une des deux choses suivantes : votre adresse professionnelle ou votre adresse d’expédition, si elle est différente. Si votre organisation se trouve dans le Estados Unidos, vous devez fournir un numéro d’identification de l’employeur fédéral (FEIN).
+Lorsque vous achetez des produits et services Microsoft 365, les taxes que vous payez sont déterminées par l’une des deux choses suivantes : votre adresse professionnelle ou votre adresse d’expédition, si elle est différente. Si votre organisation se trouve dans le États-Unis, vous devez fournir un numéro d’identification de l’employeur fédéral (FEIN).
 
 Les entreprises des pays suivants peuvent fournir leur numéro de TVA ou leur équivalent local :
 
@@ -102,13 +102,13 @@ Les entreprises des pays suivants peuvent fournir leur numéro de TVA ou leur é
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europe, Moyen Orient et Afrique (EMEA)
 
-Lorsque vous achetez Microsoft 365 services dans la région EMEA, cet achat peut être soumis à Value-Added taxe (TVA).
+Lorsque vous achetez des services Microsoft 365 dans la région EMEA, cet achat peut être soumis à Value-Added taxe (TVA).
   
 - Si vous êtes situé dans un État membre de l’Union européenne, l’Arménie, le Bélarus, la Norvège, la Turquie ou les Émirats arabes unis, et que vous ne fournissez pas votre ID de TVA local valide, Microsoft Ireland Operations Ltd. applique le taux de TVA local actuel, en fonction du pays de facturation sur lequel votre compte est défini.
 
 - Si vous êtes situé au Liechtenstein, en Russie, en Serbie, en Afrique du Sud ou en Suisse, la TVA est appliquée, que vous fournissiez votre ID de TVA ou non.
 
-- Pour les clients de l’UE, avant de pouvoir valider votre ID de TVA, il doit être disponible pour vérification dans le système vies (VIES Exchange) d’informations sur la TVA. Si votre ID de TVA ne peut pas être vérifié, contactez votre administration fiscale locale.
+- Pour les clients de l’UE, avant de pouvoir valider votre ID de TVA, il doit être disponible pour vérification dans le système VIES (VAT Information Exchange System). Si votre ID de TVA ne peut pas être vérifié, contactez votre administration fiscale locale.
 
 Vous pouvez être éligible à la TVA zéro si :
   
@@ -132,9 +132,9 @@ Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe lo
 
 ## <a name="north-central-and-south-america"></a>Amérique du Nord, centrale et du Sud
 
-Dans le Estados Unidos, au Canada, au Mexique, au Chili et en Colombie, différents taux d’imposition s’appliquent en fonction de la nature du produit et de votre emplacement.
+Dans le États-Unis, le Canada, le Mexique, le Chili et la Colombie, différents taux d’imposition s’appliquent en fonction de la nature du produit et de votre emplacement.
   
-Si votre facturation est effectuée par Microsoft Corporation ([consultez votre facture](view-your-bill-or-invoice.md) et que vous vous êtes inscrit à Microsoft 365 en dehors de la Estados Unidos, du Canada, de Porto Rico, du Chili et de la Colombie, la taxe n’est généralement pas facturée.
+Si votre facturation est effectuée par Microsoft Corporation ([consultez votre facture](view-your-bill-or-invoice.md) et que vous vous êtes inscrit à Microsoft 365 en dehors de la États-Unis, du Canada, de Porto Rico, du Chili et de la Colombie, la taxe n’est généralement pas facturée.
 
 ## <a name="add-your-vat-id"></a>Ajouter votre ID de TVA
 
@@ -148,7 +148,7 @@ Si votre facturation est effectuée par Microsoft Corporation ([consultez votre 
 
 Les taxes de vente sont calculées par rapport au prix unitaire, puis agrégées.
 
-Par exemple :
+Par exemple :
 
 >*(taux d’imposition unitaire X) X quantity = total sales tax*
 

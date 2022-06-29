@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/14/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -16,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 774139aa6ccbf0562d5f6a9bf14eb89550e865a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e94a0ee04d45e92d5891c73ba3a70ac2f05cd482
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665951"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485954"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer et configurer Microsoft Defender pour point de terminaison Plan 1
 
@@ -53,9 +52,9 @@ Le tableau suivant répertorie les exigences de base pour Defender pour point de
 
 | Conditions requises | Description |
 |:---|:---|
-| Conditions d'octroi de licence | Defender pour Endpoint Plan 1 |
+| Conditions d'octroi de licence | Defender pour point de terminaison Plan 1 (autonome ou dans le cadre de Microsoft 365 E3 ou A3) |
 | Configuration requise pour le navigateur | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Systèmes d’exploitation | Windows 10, version 1709 ou ultérieure <br/>macOS : 11.5 (Big Sur), 10.15.7 (Catalina) ou 10.14.6 (Mojave) <br/>iOS <br/>Système d’exploitation Android  |
+| Systèmes d’exploitation | Windows 11 ou Windows 10, version 1709 ou ultérieure <br/>macOS (les trois versions les plus récentes sont prises en charge) <br/>iOS <br/>Système d’exploitation Android <br/><br/>Notez que la version autonome de Defender pour point de terminaison Plan 1 n’inclut pas de licences serveur. Pour intégrer des serveurs, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus. Consultez [vue d’ensemble de Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction). |
 | Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>- Royaume-Uni <br/>- États-Unis |
 
 
@@ -102,12 +101,12 @@ Microsoft recommande d’attribuer aux utilisateurs uniquement le niveau d’aut
 
 Le tableau suivant décrit les rôles clés à prendre en compte pour Defender pour point de terminaison dans votre organisation : <br/><br/>
 
-| Rôle | Description |
+| Role | Description |
 |:---|:---|
-| Administrateurs généraux (également appelés administrateurs généraux) <br/><br/> *Il est recommandé de limiter le nombre d’administrateurs généraux.* | Les administrateurs généraux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise pour Microsoft 365 ou pour Microsoft Defender pour point de terminaison Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs généraux sont en mesure d’accéder aux paramètres/de les modifier sur tous les portails Microsoft 365, par exemple : <br/>- Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Administrateurs généraux (également appelés administrateurs généraux) <br/><br/> *Il est recommandé de limiter le nombre d’administrateurs généraux.* | Les administrateurs généraux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise pour Microsoft 365 ou pour Microsoft Defender pour point de terminaison Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs généraux sont en mesure d’accéder aux paramètres/de les modifier sur tous les portails Microsoft 365, par exemple : <br/>- Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Administrateurs de sécurité (également appelés administrateurs de sécurité) | Les administrateurs de sécurité peuvent effectuer des tâches d’opérateur de sécurité ainsi que les tâches suivantes : <br/>- Surveiller les stratégies liées à la sécurité <br/>- Gérer les menaces et les alertes de sécurité <br/>- Afficher les rapports |
 | Opérateur de sécurité | Les opérateurs de sécurité peuvent effectuer des tâches de lecteur de sécurité ainsi que les tâches suivantes : <br/>- Afficher des informations sur les menaces détectées <br/>- Examiner et répondre aux menaces détectées  |
-| Lecteur Sécurité | Les lecteurs de sécurité peuvent effectuer les tâches suivantes : <br/>- Afficher les stratégies liées à la sécurité dans Microsoft 365 services <br/>- Afficher les menaces et alertes de sécurité <br/>- Afficher les rapports  |
+| Lecteur Sécurité | Les lecteurs de sécurité peuvent effectuer les tâches suivantes : <br/>- Afficher les stratégies liées à la sécurité dans les services Microsoft 365 <br/>- Afficher les menaces et alertes de sécurité <br/>- Afficher les rapports  |
 
 
 > [!TIP]
@@ -119,7 +118,7 @@ Lorsque vous êtes prêt à intégrer les points de terminaison de votre organis
 
 |Système d’exploitation de point de terminaison | Méthodes d’intégration|
 |---|---|
-| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
+| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
 | macOS | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | iOS |[Basé sur l’application](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
@@ -134,13 +133,13 @@ Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem) pour gér
 
 Pour configurer votre protection de nouvelle génération dans Microsoft Endpoint Manager, procédez comme suit :
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
 
-2. Sélectionnez **Endpoint** **securityAntivirus** > , puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante, créez une stratégie.)
+2. Sélectionnez **l’antivirus** **de sécurité** >  de point de terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante, créez une stratégie.)
 
 3. Définissez ou modifiez les paramètres de configuration de votre antivirus. Besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
 
-   - [Paramètres pour la stratégie de Windows 10 Antivirus Microsoft Defender dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+   - [Paramètres de Windows 10 stratégie antivirus Microsoft Defender dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configurer Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
 
 4. Lorsque vous avez terminé de spécifier vos paramètres, **choisissez Vérifier + enregistrer**.
@@ -165,9 +164,9 @@ Des règles de réduction de la surface d’attaque sont disponibles sur les app
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Règles de réduction de la surface d’attaque dans le portail Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
 
-2. Choisissez **Endpoint securityAttack** >  **surface reduction** > **+ Create policy**.
+2. Choisissez Réduction de **la surface d’attaque** >  de **sécurité** >  du point de terminaison **+ Créer une stratégie**.
 
 3. Pour **Plateforme**, sélectionnez **Windows 10 et ultérieur**.
 
@@ -201,7 +200,7 @@ Nous vous recommandons d’utiliser Microsoft Endpoint Manager pour configurer l
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Stratégies ASR dans le portail Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous. 
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous. 
 
 2. Sélectionnez Sécurité des points **de** terminaison, puis **Réduction de la surface d’attaque**.
 
@@ -231,9 +230,9 @@ Nous vous recommandons d’utiliser Microsoft Endpoint Manager pour configurer l
 
 Vous pouvez configurer Defender pour point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. Nous vous recommandons d’utiliser Microsoft Endpoint Manager pour configurer vos paramètres de contrôle d’appareil.
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="modèles d’administration Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-admintemplates.png":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Modèles d’administration Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous. 
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous. 
 
 2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
 
@@ -243,9 +242,9 @@ Vous pouvez configurer Defender pour point de terminaison pour bloquer ou autori
 
 4. Sous l’onglet **De base** , nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**. 
 
-5. Sous l’onglet **Paramètres de configuration**, sélectionnez **Tous les Paramètres**. Ensuite, dans la zone de recherche, tapez `Removable` tous les paramètres relatifs aux appareils amovibles.
+5. Sous l’onglet **Paramètres de configuration** , sélectionnez **Tous les paramètres**. Ensuite, dans la zone de recherche, tapez `Removable` tous les paramètres relatifs aux appareils amovibles.
 
-6. Sélectionnez un élément dans la liste, tel que **Toutes les classes Stockage amovibles : Refuser tout accès**, pour ouvrir son volet volant. Le menu volant de chaque paramètre explique ce qui se passe quand il est activé, désactivé ou non configuré. Sélectionnez un paramètre, puis choisissez **OK**. 
+6. Sélectionnez un élément dans la liste, tel que **Toutes les classes de stockage amovibles : Refuser tout accès**, pour ouvrir son volet de menu volant. Le menu volant de chaque paramètre explique ce qui se passe quand il est activé, désactivé ou non configuré. Sélectionnez un paramètre, puis choisissez **OK**. 
 
 7. Répétez l’étape 6 pour chaque paramètre que vous souhaitez configurer. Sélectionnez **Suivant**.
 
@@ -264,9 +263,9 @@ Vous pouvez configurer Defender pour point de terminaison pour bloquer ou autori
 
 Grâce à la protection réseau, vous pouvez protéger votre organisation contre les domaines dangereux susceptibles d’héberger des escroqueries, des exploits et d’autres contenus malveillants sur Internet. Nous vous recommandons d’utiliser Microsoft Endpoint Manager pour activer la protection réseau.
 
-:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Profil endpoint protection dans le portail Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Profil Endpoint Protection dans le portail Microsoft Endpoint Manager" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous. 
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous. 
 
 2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
 
@@ -276,7 +275,7 @@ Grâce à la protection réseau, vous pouvez protéger votre organisation contre
 
 4. Sous l’onglet **De base** , nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**. 
 
-5. Sous l’onglet **Paramètres de configuration**, développez **Protection contre les attaques Microsoft Defender**, puis développez **le filtrage réseau**.
+5. Sous l’onglet **Paramètres de configuration** , développez **Microsoft Defender Exploit Guard**, puis développez **le filtrage réseau**.
 
    Définissez **la protection réseau** sur **Activer**. (Vous pouvez également choisir **Audit** pour voir comment la protection réseau fonctionnera dans votre environnement dans un premier temps.)
 
@@ -301,9 +300,9 @@ Avec la protection web, vous pouvez protéger les appareils de votre organisatio
 
 #### <a name="configure-web-threat-protection"></a>Configurer la protection contre les menaces web
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
  
-2. Choisissez **Endpoint securityAttack** >  **surface reduction**, puis **choisissez + Créer une stratégie**.
+2. Choisissez **La réduction de la surface d’attaque** de **sécurité** >  des points de terminaison, puis **choisissez + Créer une stratégie**.
 
 3. Sélectionnez une plateforme, telle que **Windows 10 et versions ultérieures**, sélectionnez le profil de **protection web**, puis choisissez **Créer**. 
 
@@ -311,7 +310,7 @@ Avec la protection web, vous pouvez protéger les appareils de votre organisatio
 
 5. Sous l’onglet **Paramètres de configuration** , développez **Protection Web**, spécifiez les paramètres dans le tableau suivant, puis choisissez **Suivant**. <br/><br/>
 
-   | Paramètre | Recommandation |
+   | Setting | Recommandation |
    |:---|:---|
    | **Activer la protection réseau** | Défini sur **Activé**. Empêche les utilisateurs de visiter des sites ou domaines malveillants. <br/><br/>Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionnera dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle effectue le suivi des détections en tant qu’événements. |
    | **Exiger SmartScreen pour Version antérieure de Microsoft Edge** | Défini sur **Oui**. Permet de protéger les utilisateurs contre les tentatives d’hameçonnage et les logiciels malveillants. |
@@ -331,9 +330,9 @@ Avec la protection web, vous pouvez protéger les appareils de votre organisatio
 
 #### <a name="configure-web-content-filtering"></a>Configurer le filtrage de contenu web
 
-1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) et connectez-vous.
+1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)), puis connectez-vous.
 
-2. Choisissez **Paramètres** >  **Endpoints**.
+2. Choisissez **Les points de terminaison des** > **paramètres**.
 
 3. Sous **Règles**, choisissez **filtrage de contenu web**, puis **choisissez + Ajouter une stratégie**.
 
@@ -356,21 +355,21 @@ Le pare-feu réseau permet de réduire le risque de menaces de sécurité résea
 
 Pour configurer les paramètres de pare-feu de base, procédez comme suit :
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
 
-2. Choisissez **Endpoint** **securityFirewall** > , puis **choisissez + Créer une stratégie**.
+2. Choisissez **Pare-feu** **de sécurité** >  de point de terminaison, puis **choisissez + Créer une stratégie**.
 
-3. Sélectionnez une plateforme, telle que **Windows 10 et versions ultérieures**, sélectionnez le profil **pare-feu Microsoft Defender**, puis choisissez **Créer**. 
+3. Sélectionnez une plateforme, par exemple **Windows 10 et versions ultérieures**, sélectionnez le profil **Pare-feu Microsoft Defender**, puis choisissez **Créer**. 
 
 4. Sous l’onglet **Informations de base** , spécifiez un nom et une description, puis choisissez **Suivant**.
 
-5. Développez le **Pare-feu Microsoft Defender**, puis faites défiler vers le bas de la liste.
+5. Développez **Pare-feu Microsoft Defender**, puis faites défiler vers le bas de la liste.
 
 6. Définissez chacun des paramètres suivants sur **Oui** :
 
-   - **Activer le Pare-feu Microsoft Defender pour les réseaux de domaine** 
-   - **Activer le Pare-feu Microsoft Defender pour les réseaux privés**
-   - **Activer le Pare-feu Microsoft Defender pour les réseaux publics**
+   - **Activer Pare-feu Microsoft Defender pour les réseaux de domaine** 
+   - **Activer Pare-feu Microsoft Defender pour les réseaux privés**
+   - **Activer Pare-feu Microsoft Defender pour les réseaux publics**
    
    Passez en revue la liste des paramètres sous chacun des réseaux de domaine, des réseaux privés et des réseaux publics. Vous pouvez les laisser définis sur **Non configurés** ou les modifier en fonction des besoins de votre organisation.
 
@@ -385,7 +384,7 @@ Pour configurer les paramètres de pare-feu de base, procédez comme suit :
 9. Sous l’onglet **Vérifier + créer** , passez en revue vos paramètres de stratégie, puis choisissez **Créer**.
 
 > [!TIP]
-> Les paramètres de pare-feu sont détaillés et peuvent sembler complexes. Reportez-vous aux [meilleures pratiques pour configurer Windows Defender Pare-feu](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+> Les paramètres de pare-feu sont détaillés et peuvent sembler complexes. Reportez-vous aux [meilleures pratiques pour configurer Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
 ### <a name="application-control"></a>Contrôle d’application
 
@@ -403,4 +402,4 @@ Pour vous aider à planifier votre déploiement WDAC, consultez les ressources s
 
 Maintenant que vous avez suivi le processus d’installation et de configuration, l’étape suivante consiste à commencer à utiliser Defender pour point de terminaison. 
 
-- [Démarrage avec Defender pour point de terminaison Plan 1](mde-plan1-getting-started.md)
+- [Prise en main de Defender pour point de terminaison Plan 1](mde-plan1-getting-started.md)

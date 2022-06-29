@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Comment installer Office sur tous les appareils dans Microsoft 365 Business Premium.
-ms.openlocfilehash: b05e0330d4119f8c03379a56f541e7a9ca0f8415
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: a0e2295e9d741221cafafc1ed843373937deaa1b
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623565"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486576"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Installer Office sur tous vos appareils
 
@@ -48,7 +48,6 @@ Faites-les effectuer les opérations suivantes :
 3. Les applications Office sont installées. Le processus peut prendre plusieurs minutes. Une fois l’opération terminée, sélectionnez **Fermer**.
 4. Pour installer Microsoft Teams, accédez à la page office.com et choisissez **Teams**.
 5. Obtenez l’application Windows, puis sélectionnez **Exécuter**. Teams affiche une invite à la fin de l’installation.
-
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 Business Premium
 
