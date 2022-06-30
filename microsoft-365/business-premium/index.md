@@ -20,17 +20,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- intro-overview
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 61e0321df75645a3e8ef06867d9e110b7bfd40a2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 213e96c58c822d0d8b40d2e540582eb6a2719ef8
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491379"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556831"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Cybersécurité Microsoft 365 Business Premium &mdash; pour les petites entreprises
 
@@ -64,7 +65,7 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
@@ -97,7 +98,7 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
@@ -126,7 +127,7 @@ Cliquez sur l’infographie pour afficher une version plus grande, ou [télécha
 
 Cliquez ici pour découvrir les [avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 

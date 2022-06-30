@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 Business Premium aide votre entreprise en termes de productivité et de sécurité.
-ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098109"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489878"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Comment Microsoft 365 Business Premium aide votre entreprise
+# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Comment les recommandations de sécurité Microsoft 365 affectent vos utilisateurs
 
 Microsoft 365 Business Premium est une solution économique qui permet aux petites et moyennes entreprises de travailler plus efficacement et en toute sécurité qu’auparavant. Cet article explique comment Microsoft 365 Business Premium peut aider votre entreprise et inclut les sections suivantes :
 

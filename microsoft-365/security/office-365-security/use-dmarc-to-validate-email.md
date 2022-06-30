@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 99c688587e7e09e2726457256f14403e2db73d1e
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772073"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486926"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -134,7 +134,7 @@ Pour obtenir les meilleurs résultats, vérifiez que votre enregistrement TXT SP
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>Étape 3 : configurer DKIM pour votre domaine personnalisé
 
-Une fois que vous avez configuré SPF, vous devez configurer DKIM. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Si vous ne configurez pas DKIM et autorisez à la place Microsoft 365 à utiliser la configuration DKIM par défaut pour votre domaine, DMARC peut échouer. Cet échec peut se produire car la configuration DKIM par défaut utilise votre domaine *onmicrosoft.com* d’origine comme *adresse 5322.From*, et non votre domaine *personnalisé*. Cela crée une incompatibilité entre les adresses *5321.MailFrom* et *5322.From* dans tous les e-mails envoyés depuis votre domaine.
+Une fois que vous avez configuré SPF, vous devez configurer DKIM. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Si vous ne configurez pas DKIM et autorisez à la place Microsoft 365 à utiliser la configuration DKIM par défaut pour votre domaine, DMARC peut échouer. Cet échec peut se produire car la configuration DKIM par défaut utilise votre domaine *onmicrosoft.com* d’origine comme adresse *5321.MailFrom*, et non comme domaine *personnalisé* . Cela crée une incompatibilité entre les adresses *5321.MailFrom* et *5322.From* dans tous les e-mails envoyés depuis votre domaine.
 
 Si des expéditeurs tiers envoient des messages en votre nom et que les adresses 5321.MailFrom et 5322.From de ces messages ne correspondent pas, DMARC rejettera ce message électronique. Pour éviter ce problème, vous devez configurer DKIM en définissant spécifiquement cet expéditeur tiers pour votre domaine. Cela permet à Microsoft 365 d'authentifier les messages envoyés par ce service tiers. Toutefois, cela autorise également d'autres entités, par exemple, Yahoo, Gmail et Comcast, à vérifier le courrier électronique qui leur est envoyé par le tiers comme s'il s'agissait de messages envoyés par vous-même. C'est un avantage, car, d'un côté, cela renforce la confiance que les clients peuvent avoir en votre domaine, quel que soit l'endroit où se trouvent leurs boîtes aux lettres et, de l'autre, Microsoft 365 ne marquera pas un message comme spam pour cause d'usurpation d'identité, car cet e-mail aura été accepté par les vérifications d'authentification pour votre domaine.
 

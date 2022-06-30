@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 764d1c84212e240332449a1a107042a83be01b32
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 912254e5827815f796560bc6979856f4545b0ae9
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554354"
+ms.locfileid: "66556809"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
@@ -119,7 +119,7 @@ Pour copier une stratégie et créer une stratégie, effectuez les étapes suiva
 
 ## <a name="policy-activity-detection"></a>Détection de l’activité de stratégie
 
-Les communications sont analysées toutes les heures à partir de la création des stratégies. Par exemple, si vous créez une stratégie de contenu inappropriée à 11h00, la stratégie collecte les signaux de conformité des communications toutes les heures à partir du moment où la stratégie a été créée. La modification d’une stratégie ne change pas cette fois. Pour afficher la date et l’heure de la dernière analyse d’une stratégie, accédez à la colonne Dernière analyse de stratégie sur la page Stratégie. Après avoir créé une stratégie, l’affichage de la première date et heure de la première analyse de stratégie peut prendre jusqu’à une heure. La date et l’heure de la dernière analyse sont converties en fuseau horaire de votre système local.
+Les communications sont analysées toutes les heures à partir de la création des stratégies. Par exemple, si vous créez une stratégie de contenu inappropriée à 11h00, la stratégie collecte les signaux de conformité des communications toutes les heures à partir du moment où la stratégie a été créée. La modification d’une stratégie ne change pas cette fois. Pour afficher la date et l’heure de la dernière analyse d’une stratégie, accédez à la colonne *Dernière analyse* de stratégie sur la page **Stratégie** . Après avoir créé une stratégie, l’affichage de la première date et heure de la première analyse de stratégie peut prendre jusqu’à une heure. La date et l’heure de la dernière analyse sont converties en fuseau horaire de votre système local.
 
 Le tableau suivant décrit le délai de détection pour les types de contenu pris en charge :
 
@@ -138,7 +138,7 @@ Le tableau suivant décrit le délai de détection pour les types de contenu pri
 
 Pour les stratégies existantes créées avant le 31 juillet 2022, la détection des messages et les alertes correspondant à ces stratégies peut prendre jusqu’à 24 heures. Pour réduire la latence de ces stratégies, [copiez la stratégie existante](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) et créez une stratégie à partir de la copie. Si vous n’avez pas besoin de conserver les données de l’ancienne stratégie, elles peuvent être suspendues ou supprimées.
 
-Pour identifier une stratégie plus ancienne, consultez la colonne Dernière analyse de stratégie sur la page Stratégie. Les anciennes stratégies affichent une date complète pour l’analyse, tandis que les stratégies créées après le 31 juillet 2022 s’affichent il y a 1 heure pour l’analyse. Une autre option pour réduire la latence consiste à attendre le 31 décembre 2022 pour que vos stratégies existantes soient automatiquement migrées vers les nouveaux critères de détection.
+Pour identifier une stratégie plus ancienne, consultez la colonne *Dernière analyse* de stratégie sur la page **Stratégie** . Les anciennes stratégies affichent une date complète pour l’analyse, tandis que les stratégies créées après le 31 juillet 2022 s’affichent *il y a 1 heure* pour l’analyse. Une autre option pour réduire la latence consiste à attendre le 31 décembre 2022 pour que vos stratégies existantes soient automatiquement migrées vers les nouveaux critères de détection.
 
 ## <a name="storage-limit-notification-preview"></a>Notification de limite de stockage (préversion)
 
