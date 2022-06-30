@@ -25,13 +25,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
-ms.date: 04/22/2022
-ms.openlocfilehash: 5402a3f2b1f1e702b0d8f3e8b021206c9131710d
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.date: 06/23/2022
+ms.openlocfilehash: ecca89deaadd55182875e8d3a5d8d74e2aec17eb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465819"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487518"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Attribuer des licences Microsoft 365 aux utilisateurs
 
@@ -57,7 +57,9 @@ Vous pouvez attribuer des licences à des utilisateurs à partir de la page des 
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Utiliser la page licences pour attribuer des licences aux utilisateurs
 
-Lorsque vous utilisez la page **Licences** pour l'attribution de licences, vous attribuez des licences pour un produit spécifique à un maximum de 20 utilisateurs. Dans la page **Licences**, une liste de tous les produits auxquels vous avez des abonnements s’affiche. Vous pouvez également voir le nombre total de licences pour chaque produit, le nombre de licences attribuées et le nombre de licences disponibles.
+La page **Licences** vous permet d’attribuer ou de désattribuer des licences pour jusqu’à 20 utilisateurs à la fois. La page affiche les produits que vous possédez, le nombre de licences disponibles pour chaque produit et le nombre de licences attribuées sur le nombre total de licences disponibles. Le nombre de licences est un total agrégé de licences pour tous les abonnements pour le même nom de produit.
+
+Par exemple, vous pouvez avoir un abonnement pour Microsoft 365 Business Premium qui a 5 licences et un autre abonnement qui a 8 licences pour le même produit. La page **Licences** indique que vous disposez d’un total de 13 licences pour Microsoft 365 Business Premium sur tous vos abonnements. Cela est différent de ce que vous voyez sur la page **Vos produits** , qui affiche une ligne pour chaque abonnement que vous possédez, même s’ils concernent le même produit.
 
 ::: moniker range="o365-worldwide"
 
@@ -79,9 +81,9 @@ Lorsque vous utilisez la page **Licences** pour l'attribution de licences, vous 
 
 4. Sélectionnez **Activer ou désactiver les applications et les services** pour attribuer ou supprimer l’accès à des éléments particuliers.
 
-6. Lorsque vous avez terminé, sélectionnez **Attribuer**, puis choisissez **Fermer**.
+6. Lorsque vous avez terminé, sélectionnez **Affecter**, puis fermez le volet droit.
 
-S’il existe un conflit, un message s’affiche, vous indiquant la nature du problème et comment le résoudre. Par exemple, si vous avez sélectionné des licences contenant des services en conflit, le message d’erreur indique de vérifier les services inclus dans chaque licence et de réessayer.
+En cas de conflit, un message s’affiche pour vous indiquer ce qu’est le problème et comment le résoudre. Par exemple, si vous avez sélectionné des licences contenant des services en conflit, le message d’erreur indique de vérifier les services inclus dans chaque licence et de réessayer.
 
 ## <a name="change-the-apps-and-services-a-user-has-access-to"></a>Modifier les applications et les services auxquels un utilisateur a accès
 
