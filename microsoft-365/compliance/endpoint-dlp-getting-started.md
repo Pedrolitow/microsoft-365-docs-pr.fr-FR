@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la prévention des pertes de données Endpoint pour surveiller les activités des fichiers et mettre en œuvre des actions de protection pour ces fichiers sur les terminaux.
-ms.openlocfilehash: 097ad2ab08d31482413285d3b3d82e6b43255281
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 1b22fbd10c78c638a9cc68acf939a22d5c140549
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952751"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530997"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main des points de terminaison de protection contre la perte de données
 
@@ -41,7 +41,7 @@ Microsoft Endpoint DLP vous permet de surveiller les appareils [Windows 10 inté
 
 Avant de commencer à utiliser point de terminaison DLP, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Pour accéder à la fonctionnalité de points de terminaison DLP et l’utiliser, vous devez disposer de l’un de ces abonnements ou modules complémentaires.
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
 - Microsoft 365 E5 Conformité
 - Microsoft 365 A5 Conformité
@@ -66,7 +66,7 @@ Rubrique | Description
 :---|:---
 [Intégrer les appareils Windows 10 ou 11 à l’aide de la stratégie de groupe](device-onboarding-gp.md) | Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils.
 [Intégrer des appareils Windows 10 ou 11 à l’aide de Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Vous pouvez utiliser Microsoft Endpoint Configuration Manager (current branch) version 1606 ou Microsoft Endpoint Configuration Manager (current branch) version 1602 ou antérieure pour déployer le package de configuration sur les appareils.
-[Intégrer Windows 10 ou 11 appareils à l’aide des outils de gestion des appareils mobiles](device-onboarding-mdm.md) | Utilisez les outils de Gestion des appareils mobiles ou Microsoft Intune pour déployer le package de configuration sur l’appareil.
+[Intégrer les appareils Windows 10 ou 11 à l’aide de Microsoft Intune](device-onboarding-mdm.md) | Utilisez Microsoft Intune pour déployer le package de configuration sur l’appareil.
 [intégrer des appareils Windows 10 ou 11 à l’aide d’un script local](device-onboarding-script.md) | Découvrez comment utiliser le script local pour déployer le package de configuration sur des points de terminaison.
 [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](device-onboarding-vdi.md) | Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 

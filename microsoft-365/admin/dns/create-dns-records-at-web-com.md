@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS au web.com pour Microsoft 365
+title: Connecter vos enregistrements DNS à web.com à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services à web.com pour Microsoft.
-ms.openlocfilehash: 621364bdc0b2e9a2868084f0cb0b8eb8ef61c5b0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: d247ee24c107318289dfbca0ee741d5a04725d25
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780291"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563228"
 ---
-# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Connecter vos enregistrements DNS au web.com pour Microsoft 365
+# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Connecter vos enregistrements DNS à web.com à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Si web.com est votre fournisseur d’hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour les e-mails, Skype Entreprise Online, et ainsi de suite.
 
-Une fois ces enregistrements ajoutés à web.com, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à web.com, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -101,7 +100,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
     |Se réfère|Valeur TXT|Durée de vie|
     |---|---|:----|
-    |@|MS=*msXXXXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
+    |@|MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
 
 1. Sélectionnez **AJOUTER**.
 
@@ -111,7 +110,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 

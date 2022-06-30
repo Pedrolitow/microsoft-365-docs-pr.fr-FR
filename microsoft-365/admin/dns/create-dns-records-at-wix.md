@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur Wix pour Microsoft 365
+title: Connecter vos enregistrements DNS à Wix à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour le courrier électronique, Skype Entreprise Online et d’autres services chez Wix pour Microsoft.
-ms.openlocfilehash: 58d7819e006183a35272811ed791d3236f9fc742
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9ae245481173b99a9cb1221ed0650dc0b91feecd
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780302"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563184"
 ---
-# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Wix pour Microsoft 365
+# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Connecter vos enregistrements DNS à Wix à Microsoft 365
 
 **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Si Wix est votre fournisseur d’hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour les e-mails, Skype Entreprise Online, et ainsi de suite.
 
-Après avoir ajouté ces enregistrements à Wix, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à Wix, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -64,9 +63,9 @@ Avant d’utiliser votre domaine avec Microsoft, nous devons nous assurer que vo
 
    |Nom d’hôte|TXT Value|TTL (Durée de vie)|
    |---|---|---|
-   |Renseigné automatiquement (laissez vide)|MS=*msXXXXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
+   |Renseigné automatiquement (laissez vide)|MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 heure|
 
-5. **SelectSave**.
+5. Sélectionnez **Enregistrer**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Sélectionnez Enregistrer.":::
 
@@ -77,7 +76,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 

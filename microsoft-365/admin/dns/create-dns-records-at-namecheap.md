@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur Namecheap pour Microsoft 365
+title: Connecter vos enregistrements DNS à Namecheap à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services sur Namecheap pour Microsoft.
-ms.openlocfilehash: c4cf31c1ed043a001c3eec7fc245221aeaa1961c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 8af8b88cc2bdd0c819f349e2820d637b99e6d730
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780630"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563338"
 ---
-# <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Namecheap pour Microsoft 365
+# <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connecter vos enregistrements DNS à Namecheap à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Si Namecheap est votre fournisseur d’hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour les e-mails, Skype Entreprise Online, et ainsi de suite.
 
-Après avoir ajouté ces enregistrements à Namecheap, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à Namecheap, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -94,7 +93,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 

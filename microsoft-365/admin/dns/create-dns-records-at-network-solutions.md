@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS dans les solutions réseau pour Microsoft 365
+title: Connecter vos enregistrements DNS auprès de Solutions réseau à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services dans Les solutions réseau pour Microsoft.
-ms.openlocfilehash: 87026bfbbae7398c774bf083e0df8d2c228c7560
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6ebe81c17d02c0cc6126f75f3b6471e01a334db4
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780292"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563272"
 ---
-# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connecter vos enregistrements DNS dans les solutions réseau pour Microsoft 365
+# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connecter vos enregistrements DNS auprès de Solutions réseau à Microsoft 365
 
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
 Si Network Solutions est votre fournisseur d'hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online, etc.
 
-Une fois ces enregistrements ajoutés à Network Solutions, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à Network Solutions, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -88,7 +87,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 

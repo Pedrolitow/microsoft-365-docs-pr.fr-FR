@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur IONOS de 1&1 à Microsoft 365
+title: Connecter vos enregistrements DNS à IONOS par 1&1 à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services à l’adresse 1&1 IONOS pour Microsoft.
-ms.openlocfilehash: 8afdfed0998a262b1df4c95a63e9086e4f71e5b6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b9d7474fe0c442670be961a5436558ea168626dc
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780674"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563426"
 ---
-# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Connecter vos enregistrements DNS sur IONOS de 1&1 à Microsoft 365
+# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Connecter vos enregistrements DNS à IONOS par 1&1 à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
@@ -39,17 +38,17 @@ Si IONOS par 1&1 est votre fournisseur d’hébergement DNS, suivez les étapes 
 
 Vous avez deux options pour configurer des enregistrements DNS pour votre domaine :
 
-- [**Utilisez domain Connecter**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas configuré votre domaine avec un autre fournisseur de services de messagerie, utilisez les étapes Connecter domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
+- [**Utiliser Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas configuré votre domaine avec un autre fournisseur de services de messagerie, suivez les étapes de Connexion au domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
 
     OR
 
 - [**Utiliser les étapes manuelles**](#create-dns-records-with-manual-setup) Vérifiez votre domaine en suivant les étapes manuelles ci-dessous et choisissez quand et quels enregistrements ajouter à votre bureau d’enregistrement de domaines. Cela vous permet de configurer de nouveaux enregistrements MX (courrier), par exemple, à votre convenance.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Utiliser domain Connecter pour vérifier et configurer votre domaine
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Utiliser Domain Connect pour vérifier et configurer votre domaine
 
-Procédez comme suit pour vérifier et configurer automatiquement votre domaine IONOS par 1&1 avec Microsoft 365 :
+Procédez comme suit pour vérifier et configurer automatiquement votre IONOS par 1&1 domaine avec Microsoft 365 :
 
-1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, puis sélectionnez le domaine que vous souhaitez configurer.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Domaines de paramètres** > , puis sélectionnez le domaine que vous souhaitez configurer.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Sélectionnez votre domaine dans Microsoft 365.":::
 
@@ -61,15 +60,15 @@ Procédez comme suit pour vérifier et configurer automatiquement votre domaine 
 
 1. Dans la page Ajouter des enregistrements DNS, **sélectionnez Ajouter des enregistrements DNS**.
 
-1. Sur la page de connexion IONOS par 1&1, connectez-vous à votre compte, sélectionnez **Connecter** et **Autoriser**.
+1. Dans la page de connexion IONOS par 1&1, connectez-vous à votre compte, puis **sélectionnez Se connecter** et **Autoriser**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Sélectionnez Connecter, puis Autoriser.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Sélectionnez Se connecter, puis Autoriser.":::
 
     Cela termine la configuration de votre domaine pour Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>Créer des enregistrements DNS avec une configuration manuelle
 
-Une fois ces enregistrements ajoutés à IONOS par 1&1, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à IONOS par 1&1, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!CAUTION]
 > Notez qu’IONOS de 1&1 n’autorise pas un domaine à avoir à la fois un enregistrement MX et un enregistrement CNAME de découverte automatique de niveau supérieur. Cela limite les méthodes qui s'offrent à vous pour configurer Exchange Online pour Microsoft. Il existe une solution de contournement, mais nous vous recommandons de l’utiliser **uniquement** si vous avez déjà de l’expérience dans la création de sous-domaines à IONOS par 1&1.
@@ -119,7 +118,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 
@@ -219,7 +218,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces [outils de validation](../setup/domains-faq.yml).
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel de manière à n’avoir *qu’un seul* enregistrement SPF incluant les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces[outils de validation SPF](../setup/domains-faq.yml).
 
 > [!NOTE]
 > Si vous vous êtes inscrit auprès de 1und1.de, [connectez-vous ici](https://go.microsoft.com/fwlink/?linkid=859152).
@@ -428,7 +427,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. dans la zone **Alias :** tapez ou copiez et collez uniquement la valeur **Alias** du tableau suivant.
 
-    |Créer un sous-domaine|Alias|
+    |Create Subdomain (Créer un sous-domaine)|Alias|
     |---|---|
     |enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com|
 

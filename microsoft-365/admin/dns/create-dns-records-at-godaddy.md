@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur GoDaddy pour Microsoft 365
+title: Connecter vos enregistrements DNS de GoDaddy à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Apprenez à vérifier votre domaine et à configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services chez GoDaddy pour Microsoft.
-ms.openlocfilehash: 6cf110b55c76ce6c857f13dcd5b0075b309b654f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 150c97d8764247757e233934c5b2d8a3ea9f5b6c
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780344"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563206"
 ---
-# <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Connecter vos enregistrements DNS sur GoDaddy pour Microsoft 365
+# <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Connecter vos enregistrements DNS de GoDaddy à Microsoft 365
 
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
@@ -40,17 +39,17 @@ Si GoDaddy est votre fournisseur d'hébergement DNS, suivez les étapes décrite
 
 Vous avez deux options pour configurer des enregistrements DNS pour votre domaine :
 
-- [**Utilisez domain Connecter**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas configuré votre domaine avec un autre fournisseur de services de messagerie, utilisez les étapes Connecter domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
+- [**Utiliser Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas configuré votre domaine avec un autre fournisseur de services de messagerie, suivez les étapes de Connexion au domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365.
 
    OR
 
 - [**Utiliser les étapes manuelles**](#create-dns-records-with-manual-setup) Vérifiez votre domaine en suivant les étapes manuelles ci-dessous et choisissez quand et quels enregistrements ajouter à votre bureau d’enregistrement de domaines. Cela vous permet de configurer de nouveaux enregistrements MX (courrier), par exemple, à votre convenance.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Utiliser domain Connecter pour vérifier et configurer votre domaine
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Utiliser Domain Connect pour vérifier et configurer votre domaine
 
 Procédez comme suit pour vérifier et configurer automatiquement votre domaine GoDaddy avec Microsoft 365 :
 
-1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, puis sélectionnez le domaine que vous souhaitez configurer.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Domaines de paramètres** > , puis sélectionnez le domaine que vous souhaitez configurer.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Sélectionnez les trois points (autres actions) > **choisissez Démarrer l’installation**.
 
@@ -66,7 +65,7 @@ Procédez comme suit pour vérifier et configurer automatiquement votre domaine 
 
 ## <a name="create-dns-records-with-manual-setup"></a>Créer des enregistrements DNS avec une configuration manuelle
 
-Une fois ces enregistrements ajoutés à GoDaddy, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à GoDaddy, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -112,7 +111,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
   
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 

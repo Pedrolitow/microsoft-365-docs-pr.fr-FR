@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur OVH pour Microsoft 365
+title: Connecter vos enregistrements DNS à OVH à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et les autres services sur OVH pour Microsoft.
-ms.openlocfilehash: 3b3174860a65d13d68b2d5f7773f927dd706f1a0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2f30199f2868aa4b0097186009ac5f9bcb75abce
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780410"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563294"
 ---
-# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Connecter vos enregistrements DNS sur OVH pour Microsoft 365
+# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Connecter vos enregistrements DNS à OVH à Microsoft 365
 
 [Consultez les FAQ des domaines](../setup/domains-faq.yml) si vous ne trouvez pas ce que vous recherchez.
 
@@ -83,7 +82,7 @@ L’enregistrement étant désormais ajouté sur le site de votre bureau d’enr
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 
@@ -121,7 +120,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     > [!NOTE]
     > Par défaut, OVH utilise une notation relative pour localiser la cible. Celle-ci s’ajoute au nom de domaine à la fin de l’enregistrement cible. Pour utiliser une notation absolue, ajoutez un point à l’enregistrement cible, ainsi que montré dans le tableau ci-dessous.
 
-   |Sous-domaine|Durée de vie|Priorité|Target|
+   |Sous-domaine|Durée de vie|Priority|Target|
    |---|---|---|---|
    |(laissez vide)|3600 secondes|0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml).|\<domain-key\>.mail.protection.outlook.com  <br/> **Note:** Obtenez votre *\<domain-key\>* fichier à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|
 

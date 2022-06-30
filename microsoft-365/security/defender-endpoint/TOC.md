@@ -44,32 +44,31 @@
 #### [Utiliser PowerShell, WMI ou MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Scénarios de migration de serveur](server-migration.md)
 
-## [Configurer et intégrer des appareils]()
+## [Intégrer et configurer des appareils]()
 ### [Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison](onboard-configure.md)
-
-
-### [Microsoft Defender pour point de terminaison sur Windows et Windows Server]()
-#### [Outils et méthodes d’intégration pour les points de terminaison Windows](configure-endpoints.md)
-#### [Intégrer des appareils Windows et des serveurs Windows]()
-
-##### [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
-
-##### [Intégrer des appareils Windows et des serveurs Windows]()
-###### [Intégrer Windows Server 2012 R2, 2016, Canal semi-annuel, 2019 et 2022](configure-server-endpoints.md)
-###### [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)
-###### [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
-###### [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-###### [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
-###### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
-###### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-
-#### [Intégration de à Microsoft Defender pour le cloud](azure-server-integration.md)
-
+### [Intégration du client Windows](onboard-windows-client.md)
+#### [Intégrer le client Windows à l’aide d’Intune](configure-endpoints-mdm.md)
+#### [Intégrer le client Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+#### [Intégrer le client Windows à l’aide de stratégie de groupe](configure-endpoints-gp.md)
+#### [Intégrer le client Windows à l’aide d’un script local](configure-endpoints-script.md)
+#### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
+#### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Intégrer des appareils sans accès à Internet](onboard-offline-machines.md)
-#### [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)
-#### [Exécuter des attaques simulées sur des appareils](attack-simulations.md)
-#### [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
-#### [Créer une règle de notification d’intégration ou de retrait](onboarding-notification.md)
+#### [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
+
+
+
+### [Intégration de Windows Server](onboard-windows-server.md)
+#### [Intégrer Windows Server 2012 R2, 2016, Canal semi-annuel, 2019 et 2022](configure-server-endpoints.md)
+#### [Intégrer Windows Server à l’aide de Gestionnaire de configuration](configure-endpoints-sccm.md)
+#### [Intégrer des appareils Windows Server à l’aide de stratégie de groupe](configure-endpoints-gp.md)
+#### [Intégrer Windows Server à l’aide d’un script local](configure-endpoints-script.md)
+#### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
+
+
+
+
+
 
 ### [Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation]()
 #### [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)
@@ -175,6 +174,14 @@
 ###### [FAQ et résolution des problèmes](ios-troubleshoot.md)
 
 ###### [Confidentialité](ios-privacy.md)
+
+
+
+### [Intégration de à Microsoft Defender pour le cloud](azure-server-integration.md)
+### [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)
+### [Exécuter des attaques simulées sur des appareils](attack-simulations.md)
+### [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
+### [Créer une règle de notification d’intégration ou de retrait](onboarding-notification.md)
 
 ### [Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](security-config-management.md)
 

@@ -2,11 +2,11 @@
 title: Utiliser ce guide pas à pas pour ajouter des appareils et un profil Autopilot
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.collection:
 - M365-subscription-management
@@ -26,20 +26,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés par les employés.
-ms.openlocfilehash: afbf793a107e286c28a589e0bbaa1a9d05ae229d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Découvrez comment utiliser Windows Autopilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés par les employés.
+ms.openlocfilehash: 4ab7925f751d987e9508732202908ad10c9d46b7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318849"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491132"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser ce guide pas à pas pour ajouter des appareils et un profil Autopilot
 
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [Vue d’ensemble de Microsoft Defender pour les PME](../security/defender-business/mdb-overview.md).
-
-Vous pouvez utiliser Windows AutoPilot pour configurer de **nouveaux** appareils Windows 10 pour votre entreprise afin qu'ils soient prêts à être utilisés par vos employés dès que vous les leur attribuez.
+Vous pouvez utiliser Windows Autopilot pour configurer de **nouveaux** appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés lorsque vous les donnez à vos employés.
   
 ## <a name="device-requirements"></a>Configuration requise de l’appareil
 
@@ -51,32 +48,32 @@ Les appareils doivent respecter ces exigences :
 
 ## <a name="use-the-setup-guide-to-add-devices-and-profiles"></a>Utiliser le guide de configuration pour ajouter des appareils et des profils
 
-Si vous n'avez pas encore créé de groupes d'appareils et de profils, la meilleure façon de commencer consiste à utiliser le guide pas à pas, mais vous pouvez également [ajouter des appareils Autopilot](m365bp-create-and-edit-autopilot-devices.md) et leur [attribuer des profils](../admin/devices/create-and-edit-autopilot-profiles.md) sans utiliser le guide.
+Si vous n’avez pas encore créé de profils ou de groupes d’appareils, la meilleure façon de commencer consiste à utiliser le guide pas à pas. Vous pouvez également [ajouter des appareils Autopilot](m365bp-create-and-edit-Autopilot-devices.md) et [leur attribuer des profils](../admin/devices/create-and-edit-Autopilot-profiles.md) sans utiliser le guide.
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-1. Dans le volet de navigation de gauche, choisissez **Appareils** \> **AutoPilot**.
+2. Dans le volet de navigation gauche, choisissez **Appareils** \> **Autopilot**.
 
-    ![Dans le Centre d’administration, choisissez les appareils, puis AutoPilot.](../media/AutoPilot.png)
+    ![Dans le Centre d’administration, choisissez les appareils, puis Autopilot.](../media/Autopilot.png)
   
-1. Sur la page **Autopilot**, cliquez ou appuyez sur **Guide de démarrage**.
+3. Dans la page **Autopilot** , cliquez ou **appuyez sur Le guide de démarrage**.
 
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-1. Sur la page **Charger un fichier .csv avec une liste d'appareils**, recherchez l'emplacement où vous avez préparé le fichier .csv, puis cliquez sur **Ouvrir** \> **Suivant**. Le fichier doit avoir trois en-têtes :
+4. Sur la page **Charger un fichier .csv avec une liste d'appareils**, recherchez l'emplacement où vous avez préparé le fichier .csv, puis cliquez sur **Ouvrir** \> **Suivant**. Le fichier doit avoir trois en-têtes :
 
     - Colonne A : Numéro de série de l'appareil
     - Colonne B : ID de produit Windows
     - Colonne C : Hachage du matériel
 
-Vous pouvez obtenir ces informations à partir de votre fournisseur de matériel ou vous pouvez utiliser le [script Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) qui générera un fichier CSV.
+Vous pouvez obtenir ces informations auprès de votre fournisseur de matériel ou utiliser le [script PowerShell Get-WindowsAutopilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutopilotInfo) pour générer un fichier CSV.
 
 Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../admin/misc/device-list.md). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**.
 
 > [!NOTE]
 > Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client inscrive un appareil auprès de Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit Windows (PKID), car cela n’est pas nécessaire pour inscrire un appareil et que le PKID étant NULL dans le CSV de sortie est tout à fait correct. Seuls le numéro de série et le hachage matériel sont renseignés.
 
-4. Sur la page **Attribuer un profil**, vous pouvez choisir un profil existant ou en créer un. Si vous n'en avez pas encore, vous êtes invité à en créer un.
+5. Sur la page **Attribuer un profil**, vous pouvez choisir un profil existant ou en créer un. Si vous n'en avez pas encore, vous êtes invité à en créer un.
 
     Un proﬁl est un ensemble de paramètres qui peuvent être appliqués à un seul appareil ou à un groupe d'appareils.
 
@@ -88,16 +85,16 @@ Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../admin/misc/
 
     - Connecter vos appareils à des comptes Azure Active Directory et les inscrire automatiquement pour qu’ils soient gérés par Microsoft 365 Business Premium.
 
-    Pour plus d’informations, consultez [À propos des paramètres de profil AutoPilot](m365bp-autopilot-profile-settings.md).
+    Pour plus d’informations, consultez [À propos des paramètres du profil Autopilot](m365bp-Autopilot-profile-settings.md).
 
-5. Les autres paramètres sont **Ignorer les paramètres de confidentialité** et **Ne pas autoriser l'utilisateur à devenir administrateur local**. Ils sont tous les deux définis sur **Désactivé** par défaut.
+6. Les autres paramètres sont **Ignorer les paramètres de confidentialité** et **Ne pas autoriser l'utilisateur à devenir administrateur local**. Ils sont tous les deux définis sur **Désactivé** par défaut.
 
     Sélectionnez **Suivant**.
 
-6. **Vous avez terminé** indique que le profil que vous avez créé (ou choisi) sera appliqué au groupe d'appareils que vous avez créé en chargeant la liste d'appareils. Ces paramètres seront appliqués lors de la prochaine connexion des utilisateurs de l'appareil. Choisissez **Fermer**.
+7. **Vous avez terminé** indique que le profil que vous avez créé (ou choisi) sera appliqué au groupe d'appareils que vous avez créé en chargeant la liste d'appareils. Ces paramètres seront appliqués lors de la prochaine connexion des utilisateurs de l'appareil. Choisissez **Fermer**.
 
 ## <a name="related-content"></a>Contenu connexe
 
-- [À propos des paramètres du profil AutoPilot](../business-premium/m365bp-autopilot-profile-settings.md) (article)\
+- [À propos des paramètres de profil Autopilot](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
 - [Options de protection de vos appareils et données d’application](../admin/devices/choose-device-security.md) (article)
 - [Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

@@ -1,5 +1,5 @@
 ---
-title: Connecter vos enregistrements DNS sur Amazon Web Services (AWS) pour Microsoft 365
+title: Connecter vos enregistrements DNS sur Amazon Web Services (AWS) à Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour les e-mails, Skype Entreprise Online et d’autres services sur Amazon Web Services (AWS) pour Microsoft.
-ms.openlocfilehash: d194e425485a45d2c3dc949fc85e74bc957932fb
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2f14bb3234ca48f61cf3fabc0942d35f44b61b60
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780652"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563250"
 ---
-# <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Amazon Web Services (AWS) pour Microsoft 365
+# <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Amazon Web Services (AWS) à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
-Si AWS est votre fournisseur d’hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Online for Business, et ainsi de suite.
+Si AWS est votre fournisseur d’hébergement DNS, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Online Entreprise, et ainsi de suite.
 
-Une fois ces enregistrements ajoutés à AWS, votre domaine est configuré pour fonctionner avec services Microsoft.
+Une fois ces enregistrements ajoutés à AWS, votre domaine est configuré pour fonctionner avec les services Microsoft.
 
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -78,7 +77,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
     |Nom de l’enregistrement|Type d’enregistrement|Valeur|TTL (Seconds)|Stratégie de routage|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)|TXT - Utilisé pour vérifier les expéditeurs de courrier électronique|MS=*msXXXXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|300|Simple|
+    |(Leave this field empty.)|TXT - Utilisé pour vérifier les expéditeurs de courrier électronique|MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|300|Simple|
 
 1. Sélectionnez **Créer des enregistrements**.
 
@@ -90,7 +89,7 @@ Maintenant que vous avez ajouté l’enregistrement sur le site de votre bureau 
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
 
-1. Dans le Centre d’administration, accédez au **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domaines**</a>.
+1. Dans le centre d’administration, accédez aux <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines**</a> **de paramètres**\>.
 
 1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis **sélectionnez Démarrer l’installation**.
 
@@ -103,7 +102,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>Ajoutez un enregistrement MX pour que l’e-mail de votre domaine arrive à Microsoft 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>Ajouter un enregistrement MX pour que les e-mails de votre domaine soient envoyés à Microsoft 365
 
 1. Pour commencer, accédez à la page de vos domaines sur le site AWS en utilisant [ce lien](https://console.aws.amazon.com/route53/home). Avant toute chose, vous serez invité à vous connecter.
 
@@ -136,7 +135,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     |Nom de l’enregistrement|Type d’enregistrement|Valeur|TTL (Seconds)|Stratégie de routage|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)|MX - Spécifie les serveurs de messagerie|0 *\<domain-key\>*.mail.protection.outlook.com. <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Note:** Obtenez votre \<*domain-key*\> compte de Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|300|Routage simple|
+    |(Leave this field empty.)|MX - Spécifie les serveurs de messagerie|0 *\<domain-key\>*.mail.protection.outlook.com. <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Note:** Obtenez le vôtre \<*domain-key*\> à partir de votre compte Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|300|Routage simple|
 
 1. Sélectionnez **Créer des enregistrements**.
 
@@ -183,7 +182,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actif afin d’avoir un enregistrement SPF *unique* qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces [outils de validation](../setup/domains-faq.yml).
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actif afin d’avoir un enregistrement SPF *unique* qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](../../enterprise/external-domain-name-system-records.md). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces[outils de validation SPF](../setup/domains-faq.yml).
 
 1. Pour commencer, accédez à la page de vos domaines sur le site AWS en utilisant [ce lien](https://console.aws.amazon.com/route53/home). Avant toute chose, vous serez invité à vous connecter.
 

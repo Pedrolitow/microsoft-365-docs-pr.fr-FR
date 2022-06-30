@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 23d59cada628b37942d7c97f8fb517eaf6f1e66a
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014319"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556875"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -48,6 +48,9 @@ Enfin, en tant qu’administrateur, lorsque vous configurez une étiquette de co
 - **Permettre aux utilisateurs d'attribuer des autorisations** lorsqu’ils appliquent l’étiquette au contenu. De cette façon, vous pouvez proposer aux membres de votre organisation la souplesse nécessaire pour mieux collaborer et accomplir leur travail.
 
 Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de confidentialité](create-sensitivity-labels.md) dans le portail de conformité Microsoft Purview.
+
+> [!NOTE]
+> Maintenant déployée en préversion, une étiquette de confidentialité dans Outlook peut appliquer la protection S/MIME plutôt que le chiffrement et les autorisations du service Azure Rights Management. Pour plus d’informations, consultez [Configurer une étiquette pour appliquer la protection S/MIME dans Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 ## <a name="understand-how-the-encryption-works"></a>Comprendre comment fonctionne le chiffrement
 

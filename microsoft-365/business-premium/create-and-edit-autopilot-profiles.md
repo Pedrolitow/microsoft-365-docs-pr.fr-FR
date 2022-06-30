@@ -1,12 +1,12 @@
 ---
-title: Créer et modifier des profils AutoPilot
+title: Créer et modifier des profils Autopilot
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -27,34 +27,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: 231f3f762e1266b5529f36e792d1b4e4a5f11f03
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Apprenez à créer un profil Autopilot et à l’appliquer à un appareil, à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
+ms.openlocfilehash: 6f019e494eb073f47921f4adef454c0e48541b49
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320621"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489695"
 ---
-# <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
+# <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils Autopilot
 
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
+Vous pouvez appliquer un [profil de déploiement Windows Autopilot](/mem/autopilot/profiles) aux appareils qui se trouvent dans un [groupe d’appareils](m365bp-device-groups-mdb.md). Les profils de déploiement déterminent l’expérience de déploiement et d’inscription de Windows que les utilisateurs auront. 
 
 ## <a name="create-a-profile"></a>Créer un profil
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. Dans le Centre d'administration Microsoft 365, choisissez **Appareils** \> **AutoPilot**.
+1. Dans le Centre d’administration Microsoft 365, choisissez **Appareils** \> **Autopilot**.
   
-2. Dans la page **AutoPilot**, choisissez l’onglet **Profils**\>**Créer un profil**.
+2. Dans la page **AutoPilot** , choisissez l’onglet **Profils** \> **Créer un profil**.
 
-3. Dans la page **Créer un profil**, entrez un nom pour le profil qui vous aide à l’identifier, par exemple Marketing. Activez le paramètre souhaité, puis choisissez **Enregistrer**. Pour plus d’informations sur les paramètres de profil AutoPilot, consultez [À propos des paramètres de profil AutoPilot](m365bp-autopilot-profile-settings.md).
+3. Dans la page **Créer un profil** , entrez un nom pour le profil qui vous aide à l’identifier, par exemple Marketing. Activez le paramètre souhaité, puis **choisissez Enregistrer**. Pour plus d’informations sur les paramètres de profil Autopilot, consultez [À propos des paramètres de profil Autopilot](m365bp-Autopilot-profile-settings.md).
 
     ![Enter name and turn on settings in the Create profile panel.](./../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Appliquer le profil à un appareil
 
-Après avoir créé un profil, vous pouvez l’appliquer à un appareil ou à un groupe d’appareils. Vous pouvez choisir un profil existant dans le [guide pas à pas](m365bp-add-autopilot-devices-and-profile.md) et l’appliquer à de nouveaux appareils, ou remplacer un profil existant pour un appareil ou un groupe d’appareils.
+Après avoir créé un profil, vous pouvez l’appliquer à un appareil ou à un groupe d’appareils. Vous pouvez choisir un profil existant dans le [guide pas à pas](m365bp-add-Autopilot-devices-and-profile.md) et l’appliquer à de nouveaux appareils, ou remplacer un profil existant pour un appareil ou un groupe d’appareils.
   
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**.
 
@@ -72,7 +71,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 2. Activez la case à cocher en regard d’un nom d’appareil et, dans le panneau **Profil**, mettez à jour les paramètres disponibles \>**Enregistrer**.
 
-    Si vous effectuez cette opération avant qu'un utilisateur connecte l'appareil à Internet, le profil sera appliqué pendant le processus de configuration.
+    Si vous effectuez cette tâche avant qu’un utilisateur connecte l’appareil à Internet, le profil est appliqué au processus d’installation.
 
 ### <a name="delete-a-profile"></a>Supprimer un profil
 
