@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: bbc7735e0c0267db5e69279d7ed81db8c0119e37
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 720b2828ab1e27ccebdd12ceeef0479b64a9bafa
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863439"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530491"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -72,6 +72,9 @@ Dans le cadre de cette configuration, nous activons l’application **Office 365
 
 > [!NOTE]
 > Les modifications des paramètres d'accès inter-clients peuvent prendre jusqu'à trois heures quinze minutes pour prendre effet.
+
+> [!NOTE]
+> Les canaux partagés entre les clouds commerciaux et les cloud de la communauté du secteur public ne sont pas pris en charge.
 
 ### <a name="add-an-organization"></a>Ajouter une organisation
 

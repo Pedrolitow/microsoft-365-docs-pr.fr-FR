@@ -18,12 +18,12 @@ description: Les administrateurs peuvent en savoir plus sur les champs d’en-t�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d9c98446b7963581654c5920c30202f547ce271
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 592a583b572c134dd4ecd33dd18f392f6e9b36ce
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089020"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493062"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur le mode d’affichage de l’en-tête d’un e-ma
 
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Champs d’en-tête de message X-Forefront-Antispam-Report
 
-Une fois que vous avez les informations d’en-tête du message, recherchez l’en-tête de **X-Forefront-Antispam-Report**. Cet en-tête comportera plusieurs paires champ/valeur dans cet en-tête séparées par des points-virgules (;). Par exemple :
+Une fois que vous avez les informations d’en-tête du message, recherchez l’en-tête de **X-Forefront-Antispam-Report**. Cet en-tête comportera plusieurs paires champ/valeur dans cet en-tête séparées par des points-virgules (;). Par exemple :
 
 `...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
 
@@ -63,7 +63,7 @@ Les champs et valeurs individuels sont décrits dans le tableau suivant.
 |Champ|Description|
 |---|---|
 |`ARC`|Le protocole `ARC` contient les champs suivants : <ul><li>`AAR` : enregistre le contenu de l'en-tête **Authentication-Results** à partir de DMARC.</li><li>`AMS` : inclut les signature de chiffrement du message.</li><li>`AS`: comprend les signatures cryptographiques des en-têtes de message. Ce champ contient une balise de validation de la chaîne appelée`"cv="`, qui comprend le résultat de la validation de la chaîne (**none**, **pass**, ou **échec**).</li></ul>|
-|`CAT:`|Catégorie de stratégie de protection appliquée au message : <ul><li>`BULK` : courrier en nombre</li><li>`DIMP` : Emprunt d’identité de domaine.</li><li>`GIMP` : [emprunt d’identité basé sur la veille des boîtes aux lettre](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` ou `HPHISH` : hameçonnage à probabilité élevée</li><li>`HSPM` : courrier indésirable à probabilité élevée</li><li>`MALW` : programme malveillant</li><li>`PHSH` : hameçonnage</li><li>`SPM` : courrier indésirable</li><li>`SPOOF` : erreur de dépassement de données</li><li>`UIMP` : emprunt d’identité d’un utilisateur</li><li>`AMP` : anti-programme malveillant</li><li>`SAP` : pièces jointes fiables</li><li>`OSPM` :courrier indésirable sortant</li></ul> <p> Un message entrant peut être signalé par plusieurs formes de protection et plusieurs analyses de détection. Les stratégies ont des priorités différentes, et la stratégie ayant la priorité la plus élevée s'applique en premier. Pour plus d’informations, voir [Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s'exécutent dans votre courrier électronique](how-policies-and-protections-are-combined.md).|
+|`CAT:`|Catégorie de stratégie de protection appliquée au message : <ul><li>`BULK` : courrier en nombre</li><li>`DIMP` : Emprunt d’identité de domaine.</li><li>`GIMP` : [emprunt d’identité basé sur la veille des boîtes aux lettre](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` ou `HPHISH`: hameçonnage à haut niveau de confiance</li><li>`HSPM` : courrier indésirable à probabilité élevée</li><li>`MALW` : programme malveillant</li><li>`PHSH` : hameçonnage</li><li>`SPM` : courrier indésirable</li><li>`SPOOF` : erreur de dépassement de données</li><li>`UIMP` : emprunt d’identité d’un utilisateur</li><li>`AMP` : anti-programme malveillant</li><li>`SAP` : pièces jointes fiables</li><li>`OSPM` :courrier indésirable sortant</li></ul> <p> Un message entrant peut être signalé par plusieurs formes de protection et plusieurs analyses de détection. Les stratégies ont des priorités différentes, et la stratégie ayant la priorité la plus élevée s'applique en premier. Pour plus d’informations, voir [Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s'exécutent dans votre courrier électronique](how-policies-and-protections-are-combined.md).|
 |`CIP:[IP address]`|Adresse IP de connexion. Vous pouvez utiliser cette adresse IP dans la liste d'adresses IP autorisées ou dans la liste d’adresses IP bloquées. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).|
 |`CTRY`|Le pays source, tel que déterminé par l'adresse IP de connexion, parfois différente de l'adresse IP d'envoi de provenance.|
 |`H:[helostring]`|Chaîne HELO ou EHLO du serveur de courrier de connexion.|
@@ -106,7 +106,7 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
   spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
   ```
 
-  Par exemple :
+  Par exemple :
 
   ```text
   spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
@@ -119,7 +119,7 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
   dkim=<pass|fail (reason)|none> header.d=<domain>
   ```
 
-  Par exemple :
+  Par exemple :
 
   ```text
   dkim=pass (signature was verified) header.d=contoso.com
@@ -132,7 +132,7 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
   dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
   ```
 
-  Par exemple :
+  Par exemple :
 
   ```text
   dmarc=pass action=none header.from=contoso.com

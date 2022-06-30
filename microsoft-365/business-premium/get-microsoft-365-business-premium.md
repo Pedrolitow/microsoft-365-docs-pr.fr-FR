@@ -1,12 +1,12 @@
 ---
-title: Obtenir Microsoft 365 Business Premium
+title: S’inscrire à Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,24 +23,24 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenez Microsoft 365 Business Premium pour protéger votre entreprise contre les menaces de cybersécurité sur les appareils, les e-mails, les données et les communications.
-ms.openlocfilehash: 6df4c10e7c302f95eba00206767a533a8f23db67
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ad58a0578872cf7fcf38bec09cc383450c76a5ff
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100134"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493739"
 ---
-# <a name="how-to-get-microsoft-365-business-premium"></a>Comment obtenir Microsoft 365 Business Premium
+# <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Comment s’inscrire à Microsoft 365 Business Premium
 
-Lorsque vous êtes prêt à obtenir Microsoft 365 Business Premium, plusieurs options s’offrent à vous. Vous pouvez :
+Lorsque vous êtes prêt à vous inscrire à Microsoft 365 Business Premium, plusieurs options s’offrent à vous. Vous pouvez :
 
-- [Essayez ou achetez Microsoft 365 Business Premium vous-même](#get-microsoft-365-business-premium-on-your-own)
+- [Essayez ou achetez Microsoft 365 Business Premium vous-même](#sign-up-for-microsoft-365-business-premium-on-your-own)
 - [Travailler avec un fournisseur de solutions](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 > [!TIP]
 > Si vous recherchez Microsoft 365 for Campaigns, consultez [Comment obtenir Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
-## <a name="get-microsoft-365-business-premium-on-your-own"></a>Obtenez Microsoft 365 Business Premium vous-même
+## <a name="sign-up-for-microsoft-365-business-premium-on-your-own"></a>Inscrivez-vous vous-même à Microsoft 365 Business Premium
 
 1. Visitez la page du produit [Microsoft 365 Business Premium](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 

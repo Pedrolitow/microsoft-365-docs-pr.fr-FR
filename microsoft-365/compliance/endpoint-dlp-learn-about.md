@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: 54f2605e815c98242a66b4d2be844ee59a2699e8
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 015e219d1b3ed41605ae3b331488d8dec6e7751f
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078829"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530901"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -145,7 +145,7 @@ L’intégration et déclassement sont gérés à l’aide de scripts téléchar
 
  Utilisez les procédures décrites dans [Prise en main des points de terminaison Microsoft 365 DLP](endpoint-dlp-getting-started.md) vers les appareils intégrés.
 
-Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/), ces derniers apparaissent automatiquement dans la liste des appareils. Vous pouvez activer **la surveillance des appareils pour** utiliser le point de terminaison DLP.
+Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-onboarding.md), ces derniers apparaissent automatiquement dans la liste des appareils. Cela est dû au fait que l’intégration à Defender intègre également des appareils à DLP. Vous devez uniquement **activer la surveillance des appareils** pour utiliser la protection contre la perte de données du point de terminaison. .
 
 > [!div class="mx-imgBorder"]
 > ![liste des appareils gérés.](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -212,7 +212,7 @@ Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochai
 
 - [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
 - [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
-- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
