@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: f46b142755b02b069a17b189b465779654f67412
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078412"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556787"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -64,6 +64,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |Fonctionnalité |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
 |[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Prise en charge multilingue](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | En cours de révision |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) aux nouveaux documents                                         | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) à des documents existants | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | Aperçu : déploiement sur le[Canal actuel (prévisualisation)](https://office.com/insider) | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Demander une justification pour la modification d'étiquette.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+  <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -90,6 +91,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |Fonctionnalité |Outlook pour Windows |Outlook pour Mac |Outlook sur iOS |Outlook sur Android |Outlook sur le web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
+|[Prise en charge multilingue](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Oui |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Demander une justification pour la modification d'étiquette.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Fournir un lien d’aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
@@ -104,7 +106,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
 |[Prise en charge du format PDF](#pdf-support) | En cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
-|
+|[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En cours de révision | Déploiement : plus de 16,61 <sup>\*</sup>                   | Déploiement : 4.2208+ | Déploiement : 4.2203+ | En cours de révision |
 
 **Notes de bas de page :**
 
@@ -404,6 +406,34 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 > 
 > Les valeurs que vous avez choisies pour ces paramètres PowerShell sont reflétées dans la configuration de la stratégie d’étiquette dans le portail de conformité Microsoft Purview, et elles fonctionnent automatiquement pour les applications Outlook qui prennent en charge ces paramètres. Les autres paramètres avancés de PowerShell restent pris en charge pour le client d’étiquetage unifié Azure Information Protection uniquement.
 
+## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Configurer une étiquette pour appliquer la protection S/MIME dans Outlook
+
+> [!NOTE]
+> Cette fonctionnalité est en cours de déploiement pour l’étiquetage intégré. Identifiez les versions minimales d’Outlook qui prennent en charge cette fonctionnalité à l’aide du [tableau des fonctionnalités d’Outlook](#sensitivity-label-capabilities-in-outlook) sur cette page et de la ligne **Appliquer la protection S/MIME**.
+> 
+> Si vous configurez une étiquette pour appliquer la protection S/MIME mais que l’application Outlook ne la prend pas encore en charge, l’étiquette est toujours affichée dans Outlook et peut être appliquée, mais les paramètres S/MIME sont ignorés. Vous ne pourrez pas sélectionner cette étiquette pour les stratégies d’étiquetage automatique Exchange.
+
+Cette configuration n’est pas disponible dans le Centre de conformité Microsoft Purview. Vous devez utiliser les paramètres avancés PowerShell avec la cmd [Set-Label](/powershell/module/exchange/set-label) ou [New-Label](/powershell/module/exchange/new-label) après vous être [connecté à Office 365 Centre de sécurité et de conformité PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+Utilisez ces paramètres uniquement lorsque vous disposez d’un [déploiement S/MIME](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) opérationnel et que vous souhaitez qu’une étiquette applique automatiquement cette méthode de protection pour les e-mails plutôt [que la protection par défaut qui utilise Rights Management chiffrement à partir de Azure Information Protection](encryption-sensitivity-labels.md). La protection obtenue est la même que lorsqu’un utilisateur sélectionne manuellement les options S/MIME dans Outlook.
+
+|Configuration  |Clé/valeur de paramètre avancée |
+|---------|---------|
+|**Signature numérique S/MIME** | SMimeSign="True" |
+|**Chiffrement S/MIME** | SMimeEncrypt="True"|
+
+L’étiquette que vous configurez pour ces paramètres n’a pas besoin d’être configurée pour le chiffrement dans le portail de conformité. Mais si c’est le cas, la protection S/MIME remplace le chiffrement Rights Management uniquement dans Outlook. Pour les autres applications, l’étiquette applique les paramètres de chiffrement spécifiés dans le portail de conformité Microsoft Purview.
+
+Exemples de commandes PowerShell, où le GUID de l’étiquette de confidentialité est **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeSign="True"}
+
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeEncrypt="True"}
+```
+
+Pour plus d’informations sur la spécification des paramètres avancés de PowerShell, consultez [Conseils PowerShell pour la spécification des paramètres avancés](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 ## <a name="pdf-support"></a>Prise en charge du format PDF
 
 Pour l’étiquetage intégré, utilisez les tables de la section [Fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour identifier les versions minimales prises en charge. Le client d’étiquetage unifié Azure Information Protection ne prend pas en charge les PDF dans les applications Office.
@@ -428,14 +458,13 @@ Scénarios PDF non pris en charge :
 
 - Format PDF/A et chiffrement
     
-     Ce format PDF conçu pour l’archivage à long terme n’est pas pris en charge lorsque l’étiquette applique un chiffrement et empêche les utilisateurs de convertir des documents Office au format PDF.
+     Ce format PDF conçu pour l’archivage à long terme n’est pas pris en charge lorsque l’étiquette applique le chiffrement et empêche les utilisateurs de convertir des documents Office au format PDF. Pour plus d’informations sur la configuration, consultez la documentation stratégie de groupe relative à [l’application de la conformité PDF à la norme ISO 19005-1 (PDF/A).](https://admx.help/?Category=Office2016&Policy=office16.Office.Microsoft.Policies.Windows::L_EnforcePDFcompliancewithISO190051PDFA)
     
 - Protection par mot de passe et chiffrement
     
     L’option **Fichier** > **Info** > **Protéger le document** > **Chiffrer avec mot de passe** n’est pas prise en charge lorsque l’étiquette du document applique un chiffrement. Dans ce scénario, l’option Chiffrer avec mot de passe devient indisponible pour les utilisateurs.
 
 Pour plus d’informations sur cette fonctionnalité, consultez l’annonce [Appliquer des étiquettes de confidentialité aux fichiers PDF créés avec les applications Office](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps).
-
 
 ## <a name="auditing-labeling-activities"></a>Audit des activités d’étiquetage
 
