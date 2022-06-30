@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 32f491e1a124bacf50f0efa553f6b141c08409b9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393239"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489110"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 
-Cet objectif est axé sur la création d’une protection pour tous les PC et Mac Windows 10 non gérés qui ne sont pas inscrits dans Microsoft Intune. Il est très probable que votre petite entreprise ou campagne ait du personnel qui apporte ses propres appareils (BYOD) et ces appareils ne sont pas gérés. Les BYOD incluent les téléphones, tablettes et PC appartenant à l’utilisateur. 
+Cet objectif est axé sur la création d’une protection pour tous les PC et Mac Windows 10 non gérés qui ne sont pas inscrits dans Microsoft Intune. Il est très probable que votre petite entreprise ou votre campagne dispose d'un personnel qui apporte ses propres appareils (BYOD), et que ces appareils ne sont pas toujours disponibles. Les appareils BYOD incluent les téléphones, tablettes et PC appartenant à l’utilisateur.
 
 >[!NOTE]
 >Les utilisateurs BYOD doivent installer et exécuter l’application Portail d'entreprise pour inscrire ces appareils et recevoir l’accès aux ressources de l’entreprise.
@@ -57,6 +57,8 @@ Si vous disposez d’une version antérieure de Windows et que vous utilisez Mic
 **Activer le Pare-feu Windows**<p>
 Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu déjà activé. La désactivation du Pare-feu Windows peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable(s) aux accès non autorisés. Pour obtenir des instructions, consultez [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off).
 
+## <a name="next-mission"></a>Prochaine mission
+
 OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
@@ -75,4 +77,3 @@ Utilisez les paramètres du pare-feu pour protéger votre Mac contre les contact
 ## <a name="next-mission"></a>Prochaine mission
 
 OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
-

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -27,14 +27,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Découvrez les différents états de l’appareil dans la liste des actions de l’appareil dans la page d’accueil de l’administrateur dans Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 00a2b86265c342d131c703b207682e2eeff26b79
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 07024ea6f4e37e32716c8af3e56f4481104ed975
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320799"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489707"
 ---
-# <a name="device-states"></a>États des appareils
+# <a name="device-states-in-microsoft-365-for-business"></a>États des appareils dans Microsoft 365 pour les entreprises
 
 Cet article s’applique à Microsoft 365 Business Premium.
 

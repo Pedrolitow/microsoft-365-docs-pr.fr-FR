@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -26,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment envoyer des messages électroniques chiffrés à l’aide d’Outlook.
-ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e4a25cc59d0d92c1905507b1e5db1253f120849c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316829"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489555"
 ---
-# <a name="encrypt-or-label-sensitive-email"></a>Chiffrer ou étiqueter votre courrier électronique sensible
+# <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Chiffrer ou étiqueter votre e-mail sensible dans Microsoft 365
 
 Vos données et informations sont importantes, et souvent confidentielles. L’objectif ici est de protéger ces informations sensibles en veillant à ce que tout le monde utilise des étiquettes de confidentialité afin que les destinataires de l’e-mail traitent les informations avec le niveau de confidentialité le plus élevé.
 

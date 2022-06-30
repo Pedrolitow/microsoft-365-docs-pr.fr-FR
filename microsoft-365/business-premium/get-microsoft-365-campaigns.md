@@ -1,12 +1,12 @@
 ---
-title: Comment obtenir Microsoft 365 pour les campagnes
+title: Obtenir Microsoft 365 campagnes
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 pour les campagnes afin de protéger votre campagne contre les menaces de cybersécurité pour la messagerie électronique, les données et les communications.
-ms.openlocfilehash: 945948b378bc67bf52f04740fb00220b4606b294
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 993a9796a4e6a264b26231c495661cbba453941c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100112"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493684"
 ---
 # <a name="how-to-get-microsoft-365-for-campaigns"></a>Comment obtenir Microsoft 365 pour les campagnes
 
@@ -77,4 +77,4 @@ Il n’y a pas d’engagement de temps minimal lorsque vous vous inscrivez à Mi
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Lorsque vous recevez votre invitation, [inscrivez-vous à Microsoft 365 pour les campagnes](m365-campaigns-sign-up.md).
+Lorsque vous recevez votre invitation, [Configurez Microsoft 365 pour les campagnes](m365-campaigns-setup.md).
