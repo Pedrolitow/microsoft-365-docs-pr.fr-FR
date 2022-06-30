@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874171"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554464"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -31,7 +31,7 @@ ms.locfileid: "65874171"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
@@ -64,7 +64,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 
 Pendant le processus d’intégration Microsoft Defender pour point de terminaison, les appareils intégrés à MDE sont progressivement renseignés dans l’inventaire des appareils à mesure qu’ils commencent à signaler des données de capteur. Par la suite, l’inventaire des appareils est rempli par les appareils découverts dans votre réseau par le biais du processus de découverte des appareils. L’inventaire des appareils comporte trois onglets qui répertorient les appareils par :
 
-- **Ordinateurs et appareils mobiles** : points de terminaison Enterprise (stations de travail, serveurs et appareils mobiles)
+- **Ordinateurs et appareils mobiles** : points de terminaison d’entreprise (stations de travail, serveurs et appareils mobiles)
 - **Appareils réseau** : appareils tels que les routeurs et les commutateurs
 - **Appareils IoT** : appareils tels que les imprimantes et les caméras
 
@@ -119,12 +119,12 @@ Filtre | Description
 **État d’exclusion** </br> | Filtrez la liste selon que l’appareil a été exclu ou non. Pour plus d’informations, consultez [Exclure les appareils](exclude-devices.md).
 **Plateforme de système d’exploitation** </br>| Filtrer en fonction des plateformes de système d’exploitation que vous souhaitez examiner </br></br>(_Ordinateurs et appareils mobiles et IoT uniquement_)
 **Vu pour la première fois** </br> | Filtrez votre vue en fonction du moment où l’appareil a été vu pour la première fois dans le réseau ou du moment où il a été signalé pour la première fois par le capteur Microsoft Defender pour point de terminaison.</br></br>(_Ordinateurs et appareils mobiles et IoT uniquement_)
-**Version de Windows** </br> | Filtrez par Windows versions que vous souhaitez examiner.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
+**Version de Windows** </br> | Filtrez en fonction des versions de Windows que vous souhaitez examiner.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **État d’intégrité du capteur** </br> | Filtrez selon les états d’intégrité du capteur suivants, pour les appareils intégrés à Microsoft Defender pour point de terminaison :</br> - **Actif** : appareils qui signalent activement des données de capteur au service.</br> - **Inactif** : appareils qui ont cessé d’envoyer des signaux pendant plus de 7 jours. </br> - **Mal configuré** : appareils qui ont altéré les communications avec le service ou qui ne peuvent pas envoyer de données de capteur. </br> Les appareils mal configurés peuvent être classés dans les catégories suivantes : </br>  - Aucune donnée de capteur </br>  - Communications altérées </br>  Pour plus d’informations sur la façon de résoudre les problèmes sur les appareils mal configurés, consultez [La section Corriger les capteurs défectueux](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors).</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **État de l’intégration** </br> | L’état d’intégration indique si l’appareil est actuellement intégré à Microsoft Defender pour point de terminaison ou non. Vous pouvez filtrer selon les états suivants : </br> - **Intégré** : le point de terminaison est intégré à Microsoft Defender pour point de terminaison.  </br> - **Peut être intégré** : le point de terminaison a été découvert dans le réseau en tant qu’appareil pris en charge, mais il n’est pas actuellement intégré. Microsoft recommande vivement l’intégration de ces appareils. </br> - **Non pris en charge** : le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour point de terminaison. </br> - **Informations insuffisantes** : le système n’a pas pu déterminer la prise en charge de l’appareil.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **État de l’antivirus** </br> | Filtrez la vue en fonction de l’état de l’antivirus désactivé, non mis à jour ou inconnu.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
 **Group** </br> | Filtrez la liste en fonction du groupe qui vous intéresse. </br></br> (_Ordinateurs et appareils mobiles uniquement_)
-**Géré par** </br> | Géré par indique comment l’appareil est géré. Vous pouvez filtrer par :</br>- Microsoft Defender pour point de terminaison </br> - Gestion des appareils mobiles (GPM) </br>- Inconnu : cela peut être dû à l’exécution d’une version Windows obsolète, à la mise en place de SCCM ou à un autre GPM tiers.</br></br> (_Ordinateurs et appareils mobiles uniquement_)
+**Géré par** </br> | Géré par indique comment l’appareil est géré. Vous pouvez filtrer par :</br> - Microsoft Defender pour point de terminaison</br> - Microsoft Endpoint Manager (MEM), y compris la cogestion avec Microsoft Configuration Manager via l’attachement de locataire</br>- Microsoft Configuration Manager (ConfigMgr)</br> - Inconnu : cela peut être dû à l’exécution d’une version obsolète de Windows, de la gestion des objets de stratégie de groupe ou d’un autre GPM tiers.</br></br> (_Ordinateurs et appareils mobiles uniquement_) 
 **Type d’appareil** </br> | Filtrez par type d’appareil que vous souhaitez examiner.</br></br> (_Appareils IoT uniquement_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>Utiliser des colonnes pour personnaliser les vues d’inventaire des appareils

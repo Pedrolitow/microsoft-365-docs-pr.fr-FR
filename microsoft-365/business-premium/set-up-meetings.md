@@ -2,11 +2,11 @@
 title: Configurer des réunions en ligne dans Microsoft Business Premium
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twerner
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,14 +25,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des réunions en ligne avec Microsoft Teams dans Microsoft Business Premium.
-ms.openlocfilehash: 01e5d2aa1b556653742a22c1628100044cb29ff2
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4273dee956f4952b4dc2b017c68334ae23e71c0d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623538"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491778"
 ---
-# <a name="set-up-meetings"></a>Organiser des réunions
+# <a name="set-up-meetings-with-microsoft-teams"></a>Configurer des réunions avec Microsoft Teams
 
 Assurez-vous que les membres de l’organisation utilisent Microsoft Teams pour toutes les réunions. Teams fichiers de réunions incluent l’audio, la vidéo et le partage, et comme ils sont en ligne, il y a toujours un espace de réunion et il n’est pas nécessaire d’avoir une salle avec un projecteur ! Microsoft Teams réunions sont un excellent moyen de rencontrer votre personnel à l’intérieur et à l’extérieur de votre organisation.
 

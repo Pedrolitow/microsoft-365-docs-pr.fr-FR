@@ -1,7 +1,7 @@
 ---
-title: Table DeviceFileCertificateInfo dans le schéma de recherche avancé
-description: En savoir plus sur les informations de signature de fichier dans la table DeviceFileCertificateInfo du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, digital signature, certificate, file signing, DeviceFileCertificateInfo
+title: Table DeviceFileCertificateInfo dans le schéma de chasse avancé
+description: En savoir plus sur les informations de signature de fichier dans la table DeviceFileCertificateInfo du schéma de repérage avancé
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, signature numérique, certificat, signature de fichier, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b43b6ad8ed1422830f08358f460b20b16588996
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 019ca8eced735b8a9e24c2b0f3e3baae37757875
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530774"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554552"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -34,7 +34,7 @@ ms.locfileid: "61530774"
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
-Le `DeviceFileCertificateInfo` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les certificats de signature de fichiers. Ce tableau utilise les données obtenues à partir des activités de vérification de certificat effectuées régulièrement sur les fichiers sur les points de terminaison.
+La `DeviceFileCertificateInfo` table du schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur les certificats de signature de fichier. Ce tableau utilise les données obtenues à partir d’activités de vérification de certificat régulièrement effectuées sur des fichiers sur des points de terminaison.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -51,15 +51,15 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Issuer` | `string` | Informations sur l’autorité de certification émettrice |
 | `IssuerHash` | `string` | Valeur de hachage unique identifiant l’autorité de certification émettrice |
 | `CertificateSerialNumber` | `string` | Identificateur du certificat propre à l’autorité de certification émettrice |
-| `CrlDistributionPointUrls` | `string` |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats (CRL) |
+| `CrlDistributionPointUrls` | `string` |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats |
 | `CertificateCreationTime` | `datetime` | Date et heure de création du certificat |
 | `CertificateExpirationTime` | `datetime` | Date et heure d’expiration du certificat |
-| `CertificateCountersignatureTime` | `datetime` | Date et heure de contre-signature du certificat |
-| `IsTrusted` | `boolean` | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs douteux |
-| `IsRootSignerMicrosoft` | `boolean` | Indique si le signataire du certificat racine est Microsoft |
-| `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. | 
+| `CertificateCountersignatureTime` | `datetime` | Date et heure à laquelle le certificat a été contre-signé |
+| `IsTrusted` | `boolean` | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs douteux. |
+| `IsRootSignerMicrosoft` | `boolean` | Indique si le signataire du certificat racine est Microsoft et si le fichier est inclus dans le système d’exploitation Windows |
+| `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. | 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

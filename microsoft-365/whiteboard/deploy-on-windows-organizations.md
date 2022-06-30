@@ -1,5 +1,5 @@
 ---
-title: Déployer Microsoft Whiteboard sur des appareils Windows 10
+title: Déployer le Tableau blanc Microsoft sur des appareils Windows 10
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -11,16 +11,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
-description: Découvrez comment déployer des Microsoft Whiteboard sur des appareils exécutant Windows 10 ou versions ultérieures.
+description: Découvrez comment déployer Microsoft Whiteboard sur des appareils exécutant Windows 10 ou versions ultérieures.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07c55ecb881c3c7c8f6803845d8619c368c65270
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 2ce1ff5b07774d07b3b67404e0b04d42b44759ba
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159765"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553836"
 ---
-# <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Déployer Microsoft Whiteboard sur des appareils Windows 10
+# <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Déployer le Tableau blanc Microsoft sur des appareils Windows 10
 
 Le tableau blanc peut être déployé sur des appareils qui s’exécutent Windows 10 ou ultérieur à l’aide d’Microsoft Intune ou de Microsoft Configuration Manager (anciennement System Center Configuration Manager). Le tableau blanc n’est pas pris en charge sur Windows Server.
 
@@ -33,7 +33,7 @@ Le tableau blanc peut être déployé sur des appareils qui s’exécutent Windo
 
 ## <a name="install-whiteboard-using-microsoft-intune"></a>Installer le Tableau blanc à l’aide de Microsoft Intune
 
-1. Ajoutez le tableau blanc en tant qu’application disponible en suivant les étapes décrites dans cet article : [Ajouter des applications Microsoft Store à Microsoft Intune](/mem/intune/apps/store-apps-windows).
+1. Ajoutez le Tableau blanc en tant qu’application disponible en suivant les étapes décrites dans cet article : [Ajouter des applications du Microsoft Store à Microsoft Intune](/mem/intune/apps/store-apps-windows).
 
 2. Affectez l’application à un groupe en suivant les étapes décrites dans cet article : [Affecter des applications à des groupes avec Microsoft Intune](/mem/intune/apps/apps-deploy).
 
@@ -67,7 +67,7 @@ Le tableau blanc peut être déployé sur des appareils qui s’exécutent Windo
 
 ## <a name="see-also"></a>Voir aussi
 
-[Activer et gérer l’accès au Tableau blanc](enable-whiteboard-access-organizations.md)
+[Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md)
 
 [Gérer les données pour le tableau blanc](manage-data-organizations.md)
 

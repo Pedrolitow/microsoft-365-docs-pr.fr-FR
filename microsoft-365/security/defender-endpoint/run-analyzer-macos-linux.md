@@ -16,25 +16,25 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4dd7193bed1a22e3b88e6bc9201f5a15ddcd9eb
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: fc5944be9fd209898b53203533f568ae7ccec70e
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090451"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554530"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via un scénario d’interface graphique utilisateur
 
-1. Téléchargez l’outil [Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur la machine macOS ou Linux que vous devez examiner.
+1. Téléchargez l’outil [Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
-   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : « AFD674A149F139E80F1AE90E36814DAAC08AAD9E8B0DA20CB1D3FA33B9D0D1AD ».
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : « 94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8 ».
 
 2. Extrayez le contenu de XMDEClientAnalyzer.zip sur l’ordinateur.
 
@@ -101,7 +101,7 @@ Aide sur la syntaxe supplémentaire :
 
 - mde_diagnostic.zip
 
-  Description : Même sortie de diagnostic générée lors de l’exécution de *la création de diagnostic mdatp* sur [l’un ou l’autre macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Description : Même sortie de diagnostic générée lors de l’exécution de *la création de diagnostic mdatp* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
   ou
 

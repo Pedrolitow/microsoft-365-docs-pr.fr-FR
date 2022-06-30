@@ -1,5 +1,5 @@
 ---
-title: Gérer les données pour Microsoft Whiteboard
+title: Gérer les données pour le Tableau blanc Microsoft
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -11,22 +11,22 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
-description: Découvrez la conservation des données pour Microsoft Whiteboard dans Azure et OneDrive Entreprise.
+description: Découvrez la conservation des données pour le Tableau blanc Microsoft dans Azure et OneDrive Entreprise.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 59fc0260b26292391dc6168cb2fda78df5f8b8c7
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 2537750a43b10617251ee1da670f6ebd78e5ce82
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159769"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553860"
 ---
-# <a name="manage-data-for-microsoft-whiteboard"></a>Gérer les données pour Microsoft Whiteboard
+# <a name="manage-data-for-microsoft-whiteboard"></a>Gérer les données pour le Tableau blanc Microsoft
 
 Le contenu du tableau blanc est stocké dans Azure et dans OneDrive Entreprise. Les nouveaux tableaux blancs seront stockés dans OneDrive Entreprise ; la seule exception est que les tableaux blancs démarrés à partir d’un Surface Hub seront stockés dans Azure (qui seront déplacés vers OneDrive Entreprise à l’avenir). Pour plus d’informations, consultez [Gérer le partage dans le Tableau blanc](manage-sharing-organizations.md).
 
 ## <a name="azure-storage-overview"></a>Vue d’ensemble du stockage Azure
 
-Le tableau blanc stocke actuellement le contenu en toute sécurité dans Azure. Les données peuvent être stockées à différents emplacements, en fonction du pays et du moment où le Tableau blanc est passé au stockage de nouveau contenu dans ces emplacements. Pour vérifier l’emplacement de création de nouvelles données, consultez [l’emplacement où sont stockées vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). 
+Le tableau blanc stocke actuellement le contenu en toute sécurité dans Azure. Les données peuvent être stockées à différents emplacements, en fonction du pays et du moment où le Tableau blanc est passé au stockage de nouveau contenu dans ces emplacements. Pour savoir où les nouvelles données sont créées, consultez [l’emplacement de stockage de vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). 
 
 Le contenu dans Azure ne prend pas en charge la protection contre la perte de données (DLP), la découverte électronique, les stratégies de rétention et les fonctionnalités similaires. Le contenu peut être géré à l’aide [d’applets de commande PowerShell de tableau blanc](/powershell/module/whiteboard/) et, au fil du temps, ce contenu doit être migré vers OneDrive Entreprise ou supprimé.
 
@@ -49,15 +49,15 @@ Assurez-vous que tout processus de suppression ou script gère cette modificatio
 
 ## <a name="onedrive-for-business-storage-overview"></a>vue d’ensemble du stockage OneDrive Entreprise
 
-Les tableaux blancs seront créés dans le dossier OneDrive Entreprise de la personne qui démarre le tableau blanc (SharePoint n’est pas encore pris en charge). Ce processus s’applique à tous les tableaux blancs créés dans les applications tableau blanc autonomes, ainsi qu’aux réunions, conversations et canaux Microsoft Teams. La seule exception est que les tableaux blancs démarrés à partir d’un Surface Hub seront stockés dans Azure (qui seront déplacés vers OneDrive Entreprise à l’avenir).
+Les tableaux blancs seront créés dans le dossier OneDrive Entreprise de la personne qui démarre le tableau blanc (SharePoint n’est pas encore pris en charge). Ce processus s’applique à tous les tableaux blancs créés dans les applications de tableau blanc autonomes, ainsi qu’aux réunions, conversations et canaux Microsoft Teams. La seule exception est que les tableaux blancs démarrés à partir d’un Surface Hub seront stockés dans Azure (qui seront déplacés vers OneDrive Entreprise à l’avenir).
 
 Les utilisateurs qui n’ont pas OneDrive Entreprise approvisionnés ne pourront plus créer de tableaux blancs lorsque cette modification sera implémentée. Toutefois, ils peuvent toujours modifier leurs tableaux créés précédemment. Ils peuvent également collaborer sur tous les tableaux blancs partagés avec eux par d’autres personnes qui ont OneDrive Entreprise.
 
-Un tableau blanc moyen peut avoir une taille comprise entre 50 Ko et 1 Mo et se trouver où se trouve votre contenu OneDrive Entreprise. Pour vérifier l’emplacement de stockage des données de votre locataire, consultez [l’emplacement où sont stockées vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examinez ensuite l’emplacement de OneDrive Entreprise.
+Un tableau blanc moyen peut avoir une taille comprise entre 50 Ko et 1 Mo et se trouver où se trouve votre contenu OneDrive Entreprise. Pour savoir où sont stockées les données de votre locataire, consultez [l’emplacement où sont stockées vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examinez ensuite l’emplacement de OneDrive Entreprise.
 
 ### <a name="controls-for-onedrive-for-business-storage"></a>Contrôles pour le stockage OneDrive Entreprise 
 
-Vous pouvez gérer les données de tableau blanc à l’aide de contrôles OneDrive Entreprise existants. Pour plus d’informations, consultez [OneDrive guide pour les entreprises](/onedrive/plan-onedrive-enterprise).
+Vous pouvez gérer les données de tableau blanc à l’aide de contrôles OneDrive Entreprise existants. Pour plus d’informations, consultez le [guide OneDrive pour les entreprises](/onedrive/plan-onedrive-enterprise).
 
 Vous pouvez utiliser des outils OneDrive Entreprise existants pour répondre aux demandes des personnes concernées (DSR) relatives au Règlement général sur la protection des données (RGPD). Si vous souhaitez vous assurer que toutes les modifications précédentes sont supprimées du fichier, vous devez supprimer l’intégralité du fichier.
 
@@ -79,7 +79,7 @@ Contrôles de données prévus pour les versions ultérieures :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Activer et gérer l’accès au Tableau blanc](enable-whiteboard-access-organizations.md)
+[Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md)
 
 [Gérer le partage pour le tableau blanc](manage-sharing-organizations.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Gérer les clients pour Microsoft Whiteboard dans Cloud de la communauté du secteur public environnements high
+title: Gérer les clients pour le Tableau blanc Microsoft dans les environnements GCC High
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -13,17 +13,17 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba1683c63c67ee6a92dcdf252d7895aaed11514d
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: f02be2f581199ee7025425edc8137ce68234e298
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159786"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553926"
 ---
-# <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les clients pour Microsoft Whiteboard dans Cloud de la communauté du secteur public environnements high
+# <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les clients pour le Tableau blanc Microsoft dans les environnements GCC High
 
 >[!NOTE]
-> Ce guide s’applique aux environnements us Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) High.
+> Ces conseils s’appliquent aux environnements US Government Community Cloud (GCC) High.
 
 Les clients de tableau blanc sont actuellement mis à jour pour prendre en charge One Drive for Business.
 
@@ -32,7 +32,7 @@ Les clients de tableau blanc sont actuellement mis à jour pour prendre en charg
 Les clients suivants sont actuellement pris en charge dans le Tableau blanc :
 
 - Application web tableau blanc autonome à l’adresse [https://whiteboard.office365.us](https://whiteboard.office365.us)
-- Microsoft Teams réunions, conversations et canaux à l’aide de Teams bureau et web
+- Réunions, conversations et canaux Microsoft Teams à l’aide du bureau et du web Teams
 - Application tableau blanc autonome pour mobile
 
 ## <a name="clients-planned"></a>Clients planifiés
@@ -42,7 +42,7 @@ Les clients suivants sont prévus pour les prochaines versions de Tableau blanc 
 - Application tableau blanc autonome pour Windows 10 ou versions ultérieures
 - Application tableau blanc autonome pour Surface Hub (peut actuellement être utilisée en mode anonyme)
 - Tableau blanc dans le lanceur d’applications Office.com
-- Tableau blanc des réunions Teams sur Surface Hub et Teams salles de réunion
+- Tableau blanc dans les réunions Teams sur surface Hub et salles de réunion Teams
 - Tableau blanc dans les appels 1:1 dans Teams
 
 >[!NOTE]
@@ -50,8 +50,8 @@ Les clients suivants sont prévus pour les prochaines versions de Tableau blanc 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Activer et gérer l’accès au Tableau blanc - Cloud de la communauté du secteur public Élevé](enable-whiteboard-access-gcc-high.md)
+[Gérer l’accès au Tableau blanc - GCC High](manage-whiteboard-access-gcc-high.md)
 
-[Gérer les données pour le tableau blanc - Cloud de la communauté du secteur public Élevé](manage-data-gcc-high.md)
+[Gérer les données pour le tableau blanc - GCC High](manage-data-gcc-high.md)
 
-[Gérer le partage pour le tableau blanc - Cloud de la communauté du secteur public Élevé](manage-sharing-gcc-high.md)
+[Gérer le partage pour le tableau blanc - GCC High](manage-sharing-gcc-high.md)

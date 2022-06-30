@@ -1,5 +1,5 @@
 ---
-title: Gérer les données des Microsoft Whiteboard dans les environnements Cloud de la communauté du secteur public High
+title: Gérer les données du tableau blanc Microsoft dans les environnements GCC High
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -13,21 +13,21 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment activer, désactiver et gérer l’accès au Tableau blanc.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e5c0041423a89f5336e5797a5c68d48178cae6a0
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 5bb41d806d0db901cf826b05b4a569ccb7bb2c1b
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159781"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553938"
 ---
-# <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les données des Microsoft Whiteboard dans les environnements Cloud de la communauté du secteur public High
+# <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les données du tableau blanc Microsoft dans les environnements GCC High
 
 >[!NOTE]
-> Ce guide s’applique aux environnements us Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) High.
+> Ces conseils s’appliquent aux environnements US Government Community Cloud (GCC) High.
 
-Les données sont stockées sous forme de fichiers .whiteboard dans OneDrive Entreprise. Un tableau blanc moyen peut avoir une taille comprise entre 50 Ko et 1 Mo et se trouver où se trouve votre contenu OneDrive Entreprise. Pour vérifier l’emplacement de création de nouvelles données, consultez [l’emplacement où sont stockées vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examinez l’emplacement de OneDrive Entreprise. Toutes les propriétés qui s’appliquent aux fichiers généraux dans OneDrive Entreprise s’appliquent également au tableau blanc, à l’exception du partage externe.
+Les données sont stockées sous forme de fichiers .whiteboard dans OneDrive Entreprise. Un tableau blanc moyen peut avoir une taille comprise entre 50 Ko et 1 Mo et se trouver où se trouve votre contenu OneDrive Entreprise. Pour savoir où les nouvelles données sont créées, consultez [l’emplacement de stockage de vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examinez l’emplacement de OneDrive Entreprise. Toutes les propriétés qui s’appliquent aux fichiers généraux dans OneDrive Entreprise s’appliquent également au tableau blanc, à l’exception du partage externe.
 
-Vous pouvez gérer les données de tableau blanc à l’aide de contrôles OneDrive Entreprise existants. Pour plus d’informations, consultez [OneDrive guide pour les entreprises](/onedrive/plan-onedrive-enterprise).
+Vous pouvez gérer les données de tableau blanc à l’aide de contrôles OneDrive Entreprise existants. Pour plus d’informations, consultez le [guide OneDrive pour les entreprises](/onedrive/plan-onedrive-enterprise).
 
 Vous pouvez utiliser des outils OneDrive Entreprise existants pour répondre aux demandes des personnes concernées (DSR) relatives au Règlement général sur la protection des données (RGPD). Les fichiers tableau blanc peuvent être déplacés de la même façon que d’autres contenus dans OneDrive Entreprise. Toutefois, il se peut que les liens et les autorisations de partage ne se déplacent pas.
 
@@ -48,12 +48,12 @@ Les contrôles de données suivants sont prévus pour les versions ultérieures 
 - Étiquettes de confidentialité
 - Audit
 - Analyse
-- Stockage de tableaux blancs dans SharePoint sites
+- Stockage de tableaux blancs dans des sites SharePoint
 
 ## <a name="see-also"></a>Voir aussi
 
-[Activer et gérer l’accès au Tableau blanc - Cloud de la communauté du secteur public Élevé](enable-whiteboard-access-gcc-high.md)
+[Gérer l’accès au Tableau blanc - GCC High](manage-whiteboard-access-gcc-high.md)
 
-[Gérer le partage pour le tableau blanc - Cloud de la communauté du secteur public Élevé](manage-sharing-gcc-high.md)
+[Gérer le partage pour le tableau blanc - GCC High](manage-sharing-gcc-high.md)
 
-[Gérer les clients pour le Tableau blanc - Cloud de la communauté du secteur public Élevé](manage-clients-gcc-high.md)
+[Gérer les clients pour le Tableau blanc - GCC High](manage-clients-gcc-high.md)

@@ -1,15 +1,13 @@
 ---
 title: Examiner les actions de correction dans Microsoft 365 Business Premium
-description: Découvrez comment afficher les corrections qui ont été effectuées automatiquement ou qui sont en attente d’approbation dans le Centre de notifications
+description: Découvrez comment afficher les corrections effectuées automatiquement ou en attente d’approbation dans le Centre de notifications.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
@@ -17,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 73790afedc78961562b592d1eb4decd4a8f1b0d4
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893226"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490396"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Examiner les actions de correction dans Microsoft 365 Business Premium
 
@@ -47,7 +45,7 @@ L’envoi d’un fichier en quarantaine, l’arrêt d’un processus ou la suppr
 
 3. Sélectionnez l’onglet **En attente** pour afficher et approuver (ou rejeter) les actions en attente. Ces actions peuvent provenir d’une protection antivirus/anti-programme malveillant, d’investigations automatisées, d’activités de réponse manuelle ou de sessions de réponse en direct.
 
-4. Sélectionnez l’onglet **Historique** pour afficher la liste des actions terminées. 
+4. Sélectionnez l’onglet **Historique** pour afficher la liste des actions terminées.
 
 ## <a name="types-of-remediation-actions"></a>Types d’actions de correction
 

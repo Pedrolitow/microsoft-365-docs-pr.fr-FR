@@ -1,8 +1,8 @@
 ---
-title: Vue d’ensemble des fonctionnalités protection évolutive des points de terminaison
+title: Vue d’ensemble des fonctionnalités de détection et de réponse des points de terminaison
 ms.reviewer: ''
-description: En savoir plus sur les fonctionnalités de protection évolutive des points de terminaison dans Microsoft Defender pour point de terminaison
-keywords: Microsoft Defender pour point de terminaison, protection évolutive des points de terminaison, réponse, détection, cybersécurité, protection
+description: Découvrez les fonctionnalités de détection et de réponse des points de terminaison dans Microsoft Defender pour point de terminaison
+keywords: Microsoft Defender pour point de terminaison, détection et réponse des points de terminaison, réponse, détection, cybersécurité, protection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78f05c9e366d2f8b4d5b4d7697961f0d702581f8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 757064e8867cda8676fd0cf20a662ff04d130e9c
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438523"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554508"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Vue d’ensemble de la détection et de la réponse des points de terminaison
 
@@ -30,14 +30,17 @@ ms.locfileid: "65438523"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Les fonctionnalités de protection évolutive des points de terminaison defender pour point de terminaison fournissent des détections d’attaque avancées qui sont quasiment en temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces.
+Les fonctionnalités de détection et de réponse des points de terminaison dans Defender pour point de terminaison fournissent des détections d’attaque avancées qui sont quasiment en temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces.
 
 Lorsqu’une menace est détectée, les alertes sont créées dans le système à des fins d’analyse par un analyste. Les alertes présentant les mêmes techniques d’attaque ou attribuées au même agresseur sont regroupées dans une entité appelée _incident_. Ce regroupement d’alertes permet plus facilement aux analystes d’étudier les menaces collectivement et d’y répondre.
+
+> [!NOTE]
+> La détection defender pour point de terminaison n’est pas destinée à être une solution d’audit ou de journalisation qui enregistre toutes les opérations ou activités qui se produisent sur un point de terminaison donné. Notre capteur dispose d’un mécanisme de limitation interne, de sorte que le taux élevé d’événements identiques répétés n’inonde pas les journaux.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4o1j5]
 
 > [!IMPORTANT]
-> [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) et [Microsoft Defender pour les PME](../defender-business/mdb-overview.md) inclure uniquement les actions de réponse manuelle suivantes :
+> [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) et [Microsoft Defender pour entreprises](../defender-business/mdb-overview.md) inclure uniquement les actions de réponse manuelle suivantes :
 > - Exécuter une analyse antivirus
 > - Isoler l’appareil
 > - Arrêter et mettre en quarantaine un fichier
@@ -47,7 +50,7 @@ Inspiré par la mentalité de « violation supposée », Defender pour point de 
 
 Les fonctionnalités de réponse vous offrent la possibilité de remédier rapidement aux menaces en agissant sur les entités affectées.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Tableau de bord des opérations de sécurité](security-operations-dashboard.md)
 - [File d’attente des incidents](view-incidents-queue.md)

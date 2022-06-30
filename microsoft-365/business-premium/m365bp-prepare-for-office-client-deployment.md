@@ -2,12 +2,11 @@
 title: Préparer le déploiement du client Office avec Microsoft 365 Business Premium
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 04/01/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: M365-subscription-management
@@ -23,12 +22,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows et les maintenir à jour dans Microsoft 365 Business Premium.
-ms.openlocfilehash: d4e9c16dea6697a428c5f7e51b7c8c1f819c75e4
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: e65b6f0b0eb6c08d2d4cd612a61038ae75aa8030
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622047"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493822"
 ---
 # <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
 
@@ -73,5 +72,5 @@ Le tableau suivant indique l’action que les utilisateurs finaux ou les adminis
 
 ## <a name="next-objective"></a>Objectif suivant
 
-[Examiner et modifier les stratégies d’appareil](m365bp-view-edit-create-mdb-policies.md)
+[Créer des paramètres de protection d’application](m365bp-protection-settings-for-windows-10-devices.md)
   

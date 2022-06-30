@@ -1,6 +1,6 @@
 ---
-title: Protéger macOS paramètres de sécurité avec la protection contre les falsifications
-description: Utilisez la protection contre les falsifications pour empêcher les applications malveillantes de modifier les paramètres de sécurité importants macOS.
+title: Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
+description: Utilisez la protection contre les falsifications pour empêcher les applications malveillantes de modifier les paramètres de sécurité macOS importants.
 keywords: macos, protection contre les falsifications, paramètres de sécurité, programmes malveillants
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1a057f7b8342c7df0db63fd89604d518c1ef3a08
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 594cc36f7e58588b49a1491ce88dcacca2ca5ab4
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810675"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554136"
 ---
-# <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger macOS paramètres de sécurité avec la protection contre les falsifications
+# <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,7 +50,6 @@ Lorsque la protection contre les falsifications est définie sur le mode audit o
 - La création de nouveaux fichiers sous l’emplacement defender pour point de terminaison est enregistrée (auditée)
 - La suppression des fichiers Defender pour point de terminaison est journalisée (auditée)
 - Le changement de nom des fichiers Defender pour point de terminaison est enregistré (audité)
-- Les commandes pour arrêter l’agent échouent
 
 **Mode bloc** :
 
@@ -69,18 +68,18 @@ Vous pouvez configurer le mode de protection contre les falsifications en fourni
 
 > [!NOTE]
 >
-> - La modification du mode s’applique immédiatement. Vous n’avez pas besoin de modifier l’indicateur de fonctionnalité ni de redémarrer Microsoft Defender pour point de terminaison.
+> - La modification du mode s’applique immédiatement.
 > - Si vous avez utilisé JAMF pendant la configuration initiale, vous devez également mettre à jour la configuration à l’aide de JAMF.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Versions prises en charge macOS : Monterey (12), Big Sur (11), Catalina (10.15+)
+- Versions macOS prises en charge : Monterey (12), Big Sur (11), Catalina (10.15+)
 - Version minimale requise pour Defender pour point de terminaison : 101.49.25
 
 **Paramètres fortement recommandés :**
 
-1. Protection de l’intégrité du système (SIP) activée. Pour plus d’informations, consultez [Désactivation et activation de la protection de l’intégrité du système](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
-1. Utilisez un outil de gestion des appareils mobiles (GPM) pour configurer Microsoft Defender pour point de terminaison.
+- Protection de l’intégrité du système (SIP) activée. Pour plus d’informations, consultez [Désactivation et activation de la protection de l’intégrité du système](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
+- Utilisez un outil de gestion des appareils mobiles (GPM) pour configurer Microsoft Defender pour point de terminaison.
 
 ## <a name="configure-tamper-protection-on-macos-devices"></a>Configurer la protection contre les falsifications sur les appareils macOS
 
@@ -92,7 +91,7 @@ Il existe plusieurs façons de configurer la protection contre les falsification
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-Vérifiez que « tamper_protection » est défini sur « désactivé ».
+Vérifiez que « tamper_protection » est défini sur « désactivé » pour observer le changement d’état.
 
 ![Image de la ligne de commande avec la protection contre les falsifications en mode désactiver](images/verify-tp.png)
 
@@ -225,7 +224,7 @@ L’alerte de falsification est déclenchée dans le portail Microsoft 365 Defen
 ### <a name="verify-block-mode-and-audit-modes"></a>Vérifier le mode bloc et les modes d’audit
 
 - À l’aide de la chasse avancée, vous verrez apparaître des alertes de falsification
-- Les événements de falsification se trouvent dans les journaux d’activité des appareils locaux : `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
+- Les événements de falsification se trouvent dans les journaux d’activité des appareils locaux : `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Image du journal de protection contre les falsifications](images/tamper-protection-log.png)
 

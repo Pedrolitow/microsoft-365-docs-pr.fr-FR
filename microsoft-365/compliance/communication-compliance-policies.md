@@ -19,23 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bdb8631f30a42b4d4dcee82a4e0e4a44cb14d691
-ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+ms.openlocfilehash: 764d1c84212e240332449a1a107042a83be01b32
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65889342"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554354"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="policies"></a>Politiques
+## <a name="policies"></a>Stratégies
 
 > [!IMPORTANT]
 > L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité des communications](https://compliance.microsoft.com/supervisoryreview).
 
-Vous créez des stratégies de conformité des communications pour Microsoft 365 organisations dans le portail de conformité Microsoft Purview. Les stratégies de conformité des communications définissent les communications et les utilisateurs susceptibles d’être examinés dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifient qui doit effectuer des révisions. Les utilisateurs auxquels le rôle *d’administrateur de conformité des communications* est attribué peuvent configurer des stratégies, et toute personne ayant ce rôle peut accéder à la page **de conformité des communications** et aux paramètres globaux dans le portail de conformité Microsoft Purview. Si nécessaire, vous pouvez exporter l’historique des modifications vers une stratégie vers un fichier .csv (valeurs séparées par des virgules) qui inclut également l’état des alertes en attente de révision, d’éléments réaffectés et d’éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées quand vous n’en avez plus besoin.
+Vous créez des stratégies de conformité des communications pour Microsoft 365 organisations dans le portail de conformité Microsoft Purview. Les stratégies de conformité des communications définissent les communications et les utilisateurs susceptibles d’être examinés dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifient qui doit effectuer des révisions. Les utilisateurs auxquels le rôle *Administration de conformité des communications* est attribué peuvent configurer des stratégies, et toute personne ayant ce rôle peut accéder à la page **de conformité des communications** et aux paramètres globaux dans le portail de conformité Microsoft Purview. Si nécessaire, vous pouvez exporter l’historique des modifications vers une stratégie vers un fichier .csv (valeurs séparées par des virgules) qui inclut également l’état des alertes en attente de révision, d’éléments réaffectés et d’éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées quand vous n’en avez plus besoin.
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 
@@ -43,17 +43,49 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 
 |**Catégorie**|**Modèle de stratégie**|**Détails**|
 |:-----|:-----|:-----|
-| **Texte inapproprié** | Détecter le texte inapproprié | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage de révision : 100 % <br> - Conditions : classifieurs de menace, de discrimination et de harcèlement ciblé |
-| **Images inappropriées** | Détecter les images inappropriées | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage de révision : 100 % <br> - Conditions : classifieurs d’images adultes et racy |
-| **Informations sensibles** | Surveiller les informations sensibles | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant, interne <br> - Pourcentage de révision : 10 % <br> - Conditions : informations sensibles, modèles de contenu et types, option de dictionnaire personnalisé, pièces jointes de plus de 1 Mo |
-| **Conformité réglementaire** | Surveiller la conformité réglementaire | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : entrant, sortant <br> - Pourcentage de révision : 10 % <br> - Conditions : option de dictionnaire personnalisé, pièces jointes supérieures à 1 Mo |
-| **Conflit d’intérêts** | Surveiller les conflits d’intérêts | - Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype Entreprise <br> - Direction : Interne <br> - Pourcentage de révision : 100 % <br> - Conditions : Aucune |
+| **Texte inapproprié** | Détecter le texte inapproprié | - Emplacements : Exchange Online, Microsoft Teams, Yammer <br> - Direction : entrant, sortant, interne <br> - Pourcentage de révision : 100 % <br> - Conditions : classifieurs de menace, de discrimination et de harcèlement ciblé |
+| **Images inappropriées** | Détecter les images inappropriées | - Emplacements : Exchange Online, Microsoft Teams, Yammer <br> - Direction : entrant, sortant, interne <br> - Pourcentage de révision : 100 % <br> - Conditions : classifieurs d’images adultes et racy |
+| **Informations sensibles** | Surveiller les informations sensibles | - Emplacements : Exchange Online, Microsoft Teams, Yammer <br> - Direction : entrant, sortant, interne <br> - Pourcentage de révision : 10 % <br> - Conditions : informations sensibles, modèles de contenu et types, option de dictionnaire personnalisé, pièces jointes de plus de 1 Mo |
+| **Conformité réglementaire** | Surveiller la conformité réglementaire | - Emplacements : Exchange Online, Microsoft Teams, Yammer <br> - Direction : entrant, sortant <br> - Pourcentage de révision : 10 % <br> - Conditions : option de dictionnaire personnalisé, pièces jointes supérieures à 1 Mo |
+| **Conflit d’intérêts** | Surveiller les conflits d’intérêts | - Emplacements : Exchange Online, Microsoft Teams, Yammer <br> - Direction : Interne <br> - Pourcentage de révision : 100 % <br> - Conditions : Aucune |
 
 Les communications sont analysées toutes les 24 heures à partir de la création des stratégies. Par exemple, si vous créez une stratégie de contenu inappropriée à 11h00, la stratégie collecte les signaux de conformité des communications toutes les 24 heures à 11h00 tous les jours. La modification d’une stratégie ne change pas cette fois. Pour afficher la date et l’heure de la dernière analyse d’une stratégie, accédez à la colonne *Dernière analyse* de stratégie sur la page **Stratégie** . Après avoir créé une stratégie, l’affichage de la première date et heure de la première analyse de stratégie peut prendre jusqu’à 24 heures. La date et l’heure de la dernière analyse sont converties en fuseau horaire de votre système local.
 
-## <a name="pause-a-policy-preview"></a>Suspendre une stratégie (préversion)
+## <a name="user-reported-messages-policy"></a>Stratégie de messages signalés par l’utilisateur
 
-Une fois que vous avez créé une stratégie de conformité des communications, la stratégie peut être temporairement suspendue si nécessaire. La suspension d’une stratégie peut être utilisée pour tester ou dépanner les correspondances de stratégie, ou pour optimiser les conditions de stratégie. Au lieu de supprimer une stratégie dans ces circonstances, la suspension d’une stratégie conserve également les alertes et les messages de stratégie existants pour les examens et examens en cours. La suspension d’une stratégie empêche l’inspection et la génération d’alertes pour toutes les conditions de message utilisateur définies dans la stratégie pendant la pause de la stratégie. Pour suspendre ou redémarrer une stratégie, les utilisateurs doivent être membres du groupe de *rôles Administrateur de conformité des communications* .
+>[!NOTE]
+>La disponibilité des messages signalés par l’utilisateur pour les organisations sous licence et utilisant [la conformité des communications](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) et Microsoft Teams a démarré en mai 2022. Cette fonctionnalité sera disponible d’ici le 31 août 2022 pour toutes les organisations sous licence et utilisant la conformité des communications jusqu’en juillet 2022. Pour les organisations qui commencent à utiliser la conformité des communications après juillet 2022, la disponibilité de la stratégie de messages signalés par l’utilisateur peut prendre jusqu’à 30 jours à compter de la date de votre licence et de la première utilisation de la conformité des communications.
+
+Dans le cadre d’une défense en couches pour détecter et corriger les messages inappropriés dans votre organisation, vous pouvez compléter les stratégies de conformité des communications par des messages signalés par l’utilisateur dans Microsoft Teams. Cette fonctionnalité permet aux utilisateurs de votre organisation de signaler eux-mêmes les messages de conversation personnelles et de groupe internes inappropriés, tels que le harcèlement ou la menace de langue, le partage de contenu pour adultes et le partage d’informations sensibles ou confidentielles, afin de favoriser un environnement de travail sûr et conforme.
+
+Activée par défaut dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal), l’option *Signaler une préoccupation* dans les messages Teams permet aux utilisateurs de votre organisation d’envoyer des messages de conversation internes et de groupe inappropriés pour révision par les réviseurs de conformité des communications pour la stratégie. Ces messages sont pris en charge par une stratégie système par défaut qui prend en charge la création de rapports de messages dans des conversations privées et de groupe Teams.
+
+![La conformité des communications signale une préoccupation.](../media/communication-compliance-report-a-concern-full-menu.png)
+
+Lorsqu’un utilisateur envoie un message de conversation Teams à réviser, le message est copié dans la stratégie de message signalé par l’utilisateur. Les messages signalés restent visibles initialement pour tous les membres de conversation et il n’existe aucune notification aux membres de conversation ou à l’expéditeur indiquant qu’un message a été signalé dans des conversations de canal, privées ou de groupe. Un utilisateur ne peut pas signaler le même message plusieurs fois et le message reste visible pour tous les utilisateurs inclus dans la session de conversation pendant le processus de révision de stratégie.
+
+Pendant le processus de révision, les réviseurs de conformité des communications peuvent effectuer toutes les [actions de correction](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) standard sur le message, y compris la suppression du message de la conversation Teams. Selon la façon dont les messages sont corrigés, l’expéditeur et les destinataires des messages verront différents [messages de notification](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) dans les conversations Teams après la révision.
+
+![Stratégie de messages signalés par l’utilisateur de conformité des communications.](../media/communication-compliance-user-reported-messages-policy.png)
+
+Les messages signalés par l’utilisateur à partir de conversations Teams sont les seuls messages traités par la stratégie de message signalé par l’utilisateur et seuls les réviseurs affectés pour la stratégie peuvent être modifiés. Toutes les autres propriétés de stratégie ne sont pas modifiables. Lorsque la stratégie est créée, les réviseurs initiaux affectés à la stratégie sont tous membres du groupe de *rôles Administrateurs* de conformité des communications (s’il est rempli avec au moins un utilisateur) ou tous les membres du groupe de rôles *Global Administration* de votre organisation. Le créateur de stratégie est un utilisateur sélectionné de manière aléatoire dans le groupe de *rôles Administrateurs de conformité des communications* (s’il est rempli avec au moins un utilisateur) ou un utilisateur sélectionné de manière aléatoire dans le groupe de rôles *Global Administration* de votre organisation.  
+
+Les administrateurs doivent immédiatement affecter des réviseurs personnalisés à cette stratégie selon les besoins de votre organisation. Cela peut inclure des réviseurs tels que votre agent de conformité, l’agent des risques ou les membres de votre service des ressources humaines. Pour personnaliser les réviseurs des messages de conversation envoyés en tant que messages signalés par l’utilisateur, effectuez les étapes suivantes :
+
+1. Connectez-vous [portail de conformité Microsoft Purview](https://compliance.microsoft.com/) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+2. Dans le portail de conformité, accédez à **La conformité des communications**.
+3. Sous l’onglet **Stratégie** , sélectionnez la stratégie *de messages signalés par l’utilisateur* , puis **sélectionnez Modifier**.
+4. Dans le volet **Surveiller les messages signalés par l’utilisateur** , affectez des réviseurs pour la stratégie. Les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
+5. Sélectionnez **Enregistrer**.
+
+L’option *Signaler une préoccupation* est activée par défaut et peut être contrôlée via des stratégies de messagerie Teams dans le [Centre de Administration Teams](/microsoftteams/manage-teams-in-modern-portal). Les utilisateurs de votre organisation recevront automatiquement la stratégie globale, sauf si vous créez et affectez une stratégie personnalisée. Modifiez les paramètres de la stratégie globale ou créez et affectez une ou plusieurs stratégies personnalisées pour activer ou désactiver l’option *Signaler un problème* . Pour en savoir plus, consultez [Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams).  
+
+>[!IMPORTANT]
+>Si vous utilisez PowerShell pour activer ou désactiver l’option de **création de rapports d’utilisateurs finaux** dans le Centre de Administration Teams, vous devez utiliser le [module d’applets de commande Microsoft Teams version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) ou ultérieure.
+
+## <a name="pause-a-policy"></a>Suspendre une stratégie
+
+Une fois que vous avez créé une stratégie de conformité des communications, la stratégie peut être temporairement suspendue si nécessaire. La suspension d’une stratégie peut être utilisée pour tester ou dépanner les correspondances de stratégie, ou pour optimiser les conditions de stratégie. Au lieu de supprimer une stratégie dans ces circonstances, la suspension d’une stratégie conserve également les alertes et les messages de stratégie existants pour les examens et examens en cours. La suspension d’une stratégie empêche l’inspection et la génération d’alertes pour toutes les conditions de message utilisateur définies dans la stratégie pendant la pause de la stratégie. Pour suspendre ou redémarrer une stratégie, les utilisateurs doivent être membres du groupe de *rôles Conformité des communications Administration*.
 
 Pour suspendre une stratégie, accédez à la page **Stratégie** , sélectionnez une stratégie, puis sélectionnez **Suspendre la stratégie** dans la barre d’outils Actions. Dans le volet **Suspendre** la stratégie, vérifiez que vous souhaitez suspendre la stratégie en sélectionnant **Suspendre**. Dans certains cas, l’interruption d’une stratégie peut prendre jusqu’à 24 heures. Une fois la stratégie suspendue, les alertes pour les messages correspondant à la stratégie ne sont pas créées. Toutefois, les messages associés aux alertes qui ont été créées avant la suspension de la stratégie restent disponibles pour l’examen, l’examen et la correction.
 
@@ -68,7 +100,7 @@ L’état de la stratégie pour les stratégies suspendues peut indiquer plusieu
 
 Pour reprendre une stratégie, accédez à la page **Stratégie** , sélectionnez une stratégie, puis sélectionnez **Reprendre la stratégie** dans la barre d’outils Actions. Dans le volet **Stratégie de reprise** , vérifiez que vous souhaitez reprendre la stratégie en sélectionnant **Reprendre**. Dans certains cas, la reprise d’une stratégie peut prendre jusqu’à 24 heures. Une fois la stratégie reprise, des alertes pour les messages correspondant à la stratégie seront créées et seront disponibles pour l’examen, l’examen et la correction.
 
-## <a name="copy-a-policy-preview"></a>Copier une stratégie (préversion)
+## <a name="copy-a-policy"></a>Copier une stratégie
 
 Pour les organisations avec des stratégies de conformité des communications existantes, il peut y avoir des scénarios lors de la création d’une stratégie à partir d’une stratégie existante. La copie d’une stratégie crée un doublon exact d’une stratégie existante, y compris tous les utilisateurs dans l’étendue, tous les réviseurs affectés et toutes les conditions de stratégie. Voici quelques scénarios :
 
@@ -76,7 +108,7 @@ Pour les organisations avec des stratégies de conformité des communications ex
 - **Détecter et examiner les messages inappropriés pour différents groupes d’utilisateurs** : certaines organisations peuvent préférer créer plusieurs stratégies avec la même configuration, mais incluent différents utilisateurs dans l’étendue et différents réviseurs pour chaque stratégie.
 - **Stratégies similaires avec de petites modifications** : pour les stratégies avec des configurations ou des conditions complexes, il peut gagner du temps pour créer une stratégie à partir d’une stratégie similaire.
 
-Pour copier une stratégie, les utilisateurs doivent être membres des groupes de rôles *Conformité des communications* ou *Administration de la conformité* des communications. Une fois qu’une nouvelle stratégie a été créée à partir d’une stratégie existante, l’affichage des messages correspondant à la nouvelle configuration de stratégie peut prendre jusqu’à 24 heures.
+Pour copier une stratégie, les utilisateurs doivent être membres des groupes de *rôles Conformité des communications* ou *Conformité des communications Administration*. Une fois qu’une nouvelle stratégie a été créée à partir d’une stratégie existante, l’affichage des messages correspondant à la nouvelle configuration de stratégie peut prendre jusqu’à 24 heures.
 
 Pour copier une stratégie et créer une stratégie, effectuez les étapes suivantes :
 
@@ -85,41 +117,32 @@ Pour copier une stratégie et créer une stratégie, effectuez les étapes suiva
 3. Dans le volet **Copier** la stratégie, vous pouvez accepter le nom par défaut de la stratégie dans le champ **Nom** de la stratégie ou renommer la stratégie. Le nom de stratégie de la nouvelle stratégie ne peut pas être le même qu’une stratégie active ou désactivée existante. Renseignez le champ **Description** en fonction des besoins.
 4. Si vous n’avez pas besoin de personnalisation supplémentaire de la stratégie, sélectionnez **Copier la stratégie** pour terminer le processus. Si vous devez mettre à jour la configuration de la nouvelle stratégie, sélectionnez **Personnaliser la stratégie**. Cela démarre l’Assistant Stratégie pour vous aider à mettre à jour et à personnaliser la nouvelle stratégie.
 
-## <a name="user-reported-messages-policy"></a>Stratégie de messages signalés par l’utilisateur
+## <a name="policy-activity-detection"></a>Détection de l’activité de stratégie
 
->[!NOTE]
->Les messages signalés par l’utilisateur commenceront à être disponibles pour les organisations sous licence pour [la conformité des communications](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) et Microsoft Teams à compter de mai 2022. Cette fonctionnalité doit être disponible pour toutes les organisations sous licence d’ici le 31 août 2022.
+Les communications sont analysées toutes les heures à partir de la création des stratégies. Par exemple, si vous créez une stratégie de contenu inappropriée à 11h00, la stratégie collecte les signaux de conformité des communications toutes les heures à partir du moment où la stratégie a été créée. La modification d’une stratégie ne change pas cette fois. Pour afficher la date et l’heure de la dernière analyse d’une stratégie, accédez à la colonne Dernière analyse de stratégie sur la page Stratégie. Après avoir créé une stratégie, l’affichage de la première date et heure de la première analyse de stratégie peut prendre jusqu’à une heure. La date et l’heure de la dernière analyse sont converties en fuseau horaire de votre système local.
 
-Dans le cadre d’une défense en couches pour détecter et corriger les messages inappropriés dans votre organisation, vous pouvez compléter les stratégies de conformité des communications par des messages signalés par l’utilisateur dans Microsoft Teams. Cette fonctionnalité permet aux utilisateurs de votre organisation de signaler eux-mêmes des messages inappropriés, tels que le harcèlement ou la menace de langue, le partage de contenu pour adultes et le partage d’informations sensibles ou confidentielles, afin de favoriser un environnement de travail sûr et conforme.
+Le tableau suivant décrit le délai de détection pour les types de contenu pris en charge :
 
-Activée par défaut dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal), l’option *Signaler une préoccupation* dans les messages Teams permet aux utilisateurs de votre organisation d’envoyer des messages inappropriés pour révision par les réviseurs de conformité des communications pour la stratégie. Ces messages sont pris en charge par une stratégie système par défaut qui prend en charge la création de rapports de messages dans les canaux Teams, les conversations de groupe et les conversations privées.
+|**Type de contenu**|**Temps de détection**|
+|:---------------|:--------------------|
+| Contenu du corps de l’e-mail | 1 heure |
+| Contenu du corps Teams | 1 heure |
+| Contenu du corps Yammer | 13 heures |
+| E-mail OCR | 13 heures |
+| Teams OCR | 13 heures |
+| Pièce jointe de l’e-mail | 13 heures |
+| Pièce jointe de l’équipe | 13 heures |
+| Pièces jointes modernes Teams | 13 heures |
+| Métadonnées Teams | 1 heure |
+| Métadonnées de messagerie | 1 heure |
 
-![La conformité des communications signale une préoccupation.](../media/communication-compliance-report-a-concern-full-menu.png)
+Pour les stratégies existantes créées avant le 31 juillet 2022, la détection des messages et les alertes correspondant à ces stratégies peut prendre jusqu’à 24 heures. Pour réduire la latence de ces stratégies, [copiez la stratégie existante](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) et créez une stratégie à partir de la copie. Si vous n’avez pas besoin de conserver les données de l’ancienne stratégie, elles peuvent être suspendues ou supprimées.
 
-Lorsqu’un utilisateur envoie un message de conversation Teams à réviser, le message est copié dans la stratégie de message signalé par l’utilisateur. Les messages signalés restent visibles initialement pour tous les membres de conversation et il n’existe aucune notification aux membres de conversation ou à l’expéditeur indiquant qu’un message a été signalé dans des conversations de canal, privées ou de groupe. Un utilisateur ne peut pas signaler le même message plusieurs fois et le message reste visible pour tous les utilisateurs inclus dans la session de conversation pendant le processus de révision de stratégie. 
-
-Pendant le processus de révision, les réviseurs de conformité des communications peuvent effectuer toutes les [actions de correction](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) standard sur le message, y compris la suppression du message de la conversation Teams. Selon la façon dont les messages sont corrigés, l’expéditeur et les destinataires des messages verront différents [messages de notification](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) dans les conversations Teams après la révision.
-
-![Stratégie de messages signalés par l’utilisateur de conformité des communications.](../media/communication-compliance-user-reported-messages-policy.png)
-
-Les messages signalés par l’utilisateur à partir de conversations Teams sont les seuls messages traités par la stratégie de message signalé par l’utilisateur et seuls les réviseurs affectés pour la stratégie peuvent être modifiés. Toutes les autres propriétés de stratégie ne sont pas modifiables. Lorsque la stratégie est créée, les réviseurs initiaux affectés à la stratégie sont tous membres du groupe de *rôles Administrateurs* de conformité des communications (s’il est rempli avec au moins un utilisateur) ou tous les membres du groupe de rôles *Administrateur général* de votre organisation. Le créateur de stratégie est un utilisateur sélectionné de manière aléatoire dans le groupe de *rôles Administrateurs de conformité des communications* (s’il est rempli avec au moins un utilisateur) ou un utilisateur sélectionné de manière aléatoire dans le groupe de rôles *Administrateur général* de votre organisation.  
-
-Les administrateurs doivent immédiatement affecter des réviseurs personnalisés à cette stratégie selon les besoins de votre organisation. Cela peut inclure des réviseurs tels que votre agent de conformité, l’agent des risques ou les membres de votre service des ressources humaines. Pour personnaliser les réviseurs des messages de conversation envoyés en tant que messages signalés par l’utilisateur, effectuez les étapes suivantes :
-
-1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com/) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
-2. Dans le portail de conformité, accédez à **La conformité des communications**.
-3. Sous l’onglet **Stratégie** , sélectionnez la stratégie *de messages signalés par l’utilisateur* , puis **sélectionnez Modifier**.
-4. Dans le volet **Surveiller les messages signalés par l’utilisateur** , affectez des réviseurs pour la stratégie. Les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
-5. Sélectionnez **Enregistrer**.
-
-L’option *Signaler une préoccupation* est activée par défaut et peut être contrôlée via des stratégies de messagerie Teams dans le [Centre d’administration Teams](/microsoftteams/manage-teams-in-modern-portal). Les utilisateurs de votre organisation recevront automatiquement la stratégie globale, sauf si vous créez et affectez une stratégie personnalisée. Modifiez les paramètres de la stratégie globale ou créez et affectez une ou plusieurs stratégies personnalisées pour activer ou désactiver l’option *Signaler un problème* . Pour en savoir plus, consultez [Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams).  
-
->[!IMPORTANT]
->Si vous utilisez PowerShell pour activer ou désactiver l’option de **création de rapports d’utilisateurs finaux** dans le Centre d’administration Teams, vous devez utiliser le [module d’applets de commande Microsoft Teams version 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) ou ultérieure.
+Pour identifier une stratégie plus ancienne, consultez la colonne Dernière analyse de stratégie sur la page Stratégie. Les anciennes stratégies affichent une date complète pour l’analyse, tandis que les stratégies créées après le 31 juillet 2022 s’affichent il y a 1 heure pour l’analyse. Une autre option pour réduire la latence consiste à attendre le 31 décembre 2022 pour que vos stratégies existantes soient automatiquement migrées vers les nouveaux critères de détection.
 
 ## <a name="storage-limit-notification-preview"></a>Notification de limite de stockage (préversion)
 
-Chaque stratégie de conformité des communications a une taille limite de stockage de 100 Go ou 1 million de messages, selon ce qui est atteint en premier. À mesure que la stratégie approche de ces limites, les e-mails de notification sont automatiquement envoyés aux utilisateurs affectés aux groupes de rôles *Conformité des communications* ou *Administration de la conformité* des communications. Les messages de notifications sont envoyés lorsque la taille de stockage ou le nombre de messages atteint 80, 90 et 95 % de la limite. Lorsque la limite de stratégie est atteinte, la stratégie est automatiquement désactivée et la stratégie cesse de traiter les messages pour les alertes.
+Chaque stratégie de conformité des communications a une taille limite de stockage de 100 Go ou 1 million de messages, selon ce qui est atteint en premier. À mesure que la stratégie approche de ces limites, les e-mails de notification sont automatiquement envoyés aux utilisateurs affectés aux groupes de *rôles Conformité des communications* ou *Conformité des communications Administration*. Les messages de notifications sont envoyés lorsque la taille de stockage ou le nombre de messages atteint 80, 90 et 95 % de la limite. Lorsque la limite de stratégie est atteinte, la stratégie est automatiquement désactivée et la stratégie cesse de traiter les messages pour les alertes.
 
 >[!IMPORTANT]
 >Si une stratégie est désactivée en raison de l’atteinte des limites de stockage et de message, veillez à évaluer comment gérer la stratégie désactivée. Si vous supprimez la stratégie, tous les messages, les pièces jointes associées et les alertes de message seront définitivement supprimés. Si vous devez conserver ces éléments pour une utilisation ultérieure, ne supprimez pas la stratégie désactivée.
@@ -146,7 +169,7 @@ Par défaut, la condition **Direction est** affichée et ne peut pas être suppr
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Vous avez la possibilité d’inclure des types d’informations sensibles dans le cadre de votre stratégie de conformité des communications. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent aider à identifier et protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc. Dans le cadre de [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md), la configuration des informations sensibles peut utiliser des modèles, une proximité de caractères, des niveaux de confiance et même des types de données personnalisés pour identifier et marquer le contenu susceptible d’être sensible. Les types d’informations sensibles par défaut sont les suivants :
+Vous avez la possibilité d’inclure des types d’informations sensibles dans le cadre de votre stratégie de conformité des communications. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent aider à identifier et protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, etc. Dans le cadre de [Learn about Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md), la configuration des informations sensibles peut utiliser des modèles, la proximité des caractères, des niveaux de confiance et même des types de données personnalisés pour identifier et marquer le contenu qui peut être sensible. Les types d’informations sensibles par défaut sont les suivants :
 
 - Financier
 - Santé et médical
@@ -154,7 +177,7 @@ Vous avez la possibilité d’inclure des types d’informations sensibles dans 
 - Type d’informations personnalisées
 
 > [!IMPORTANT]
-> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez [Définitions d’entités de type Informations sensibles](sensitive-information-type-entity-definitions.md).
 
@@ -178,7 +201,7 @@ La conformité des communications utilise des classifieurs intégrés et globaux
 - **Menace** : recherche les menaces de violence ou de dommages physiques à une personne ou à des biens.
 
 > [!NOTE]
-> Les stratégies utilisant des classifieurs inspectent et évaluent les messages dont le nombre de mots est égal ou supérieur à six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour la surveillance des stratégies de conformité des communications pour ce type de contenu.
+> Les stratégies utilisant des classifieurs inspectent et évaluent les messages dont le nombre de mots est égal ou supérieur à six. Les messages contenant moins de six mots ne sont pas évalués dans les stratégies à l’aide de classifieurs. Pour identifier et prendre des mesures sur les messages plus courts contenant du contenu inapproprié, nous vous recommandons d’inclure un dictionnaire de mots clés personnalisé pour les stratégies de conformité de communication qui détectent ce type de contenu.
 
 ### <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
@@ -261,17 +284,17 @@ Pour les stratégies de conformité des communications, les valeurs de stratégi
 > [!NOTE]
 > Les paramètres de déclencheur de seuil de stratégie d’alerte pour les activités prennent en charge une valeur minimale de 3 ou une valeur supérieure pour les stratégies de conformité des communications.
 
-Vous pouvez modifier les paramètres par défaut pour les déclencheurs sur le nombre d’activités, la période pour les activités et pour des utilisateurs spécifiques dans les stratégies d’alerte sur la page **Stratégies d’alerte** dans le portail de conformité Microsoft Purview.
+Vous pouvez modifier les paramètres par défaut pour les déclencheurs sur le nombre d’activités, la période pour les activités et pour des utilisateurs spécifiques dans les stratégies d’alerte dans la page **Stratégies d’alerte** du portail de conformité Microsoft Purview.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Modifier le niveau de gravité d’une stratégie d’alerte
 
 Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d’alerte pour une stratégie de conformité de communication spécifique, effectuez les étapes suivantes :
 
-1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Connectez-vous [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans le portail de conformité Microsoft Purview, accédez à **Stratégies**.
 
-3. Sélectionnez **l’alerte Office 365** dans la page **Stratégies** pour ouvrir la page **Stratégies d’alertes** .
+3. Sélectionnez **Office 365 alerte** dans la page **Stratégies** pour ouvrir la page **Stratégies d’alertes**.
 
 4. Cochez la case de la stratégie de conformité des communications à mettre à jour, puis **sélectionnez Modifier la stratégie**.
 

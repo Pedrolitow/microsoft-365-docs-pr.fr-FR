@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ea99a46d468e6c3d5e7346006da0eb24116067d0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2f745c0f215f19b0d6e4f9fc06b39ba8234fd170
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489944"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554266"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
@@ -41,7 +41,7 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 &ensp;Publication : **24 juin 2022**<br/>
 &ensp;Date de publication : **24 juin 2022**<br/>
 &ensp;Build : **101.71.18**<br/>
-&ensp;Version de version : **30.122042.16880.0**<br/>
+&ensp;Version de version : **30.122052.17118.0**<br/>
 
 
 **Nouveautés**

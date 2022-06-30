@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender pour le stockage et la confidentialité des données des points de terminaison
+title: Microsoft Defender pour point de terminaison le stockage et la confidentialité des données
 description: Découvrez comment Microsoft Defender pour point de terminaison gère la confidentialité et les données qu’il collecte.
-keywords: Microsoft Defender pour le point de terminaison, stockage et confidentialité des données, stockage, confidentialité, gestion des licences, géolocalisation, rétention des données, données
+keywords: Microsoft Defender pour point de terminaison, stockage et confidentialité des données, stockage, confidentialité, licences, géolocalisation, conservation des données, données
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,101 +14,101 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7e6e530406b4211c62d315f26b8f956cf6bf1bde
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d1d8ad0a16129e909476891291c0b2c0f0d54956
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165065"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554137"
 ---
-# <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender pour le stockage et la confidentialité des données des points de terminaison
+# <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender pour point de terminaison le stockage et la confidentialité des données
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Cette section traite de certaines des questions les plus fréquemment posées concernant la confidentialité et la gestion des données pour Defender for Endpoint.
+Cette section aborde certaines des questions les plus fréquemment posées sur la confidentialité et la gestion des données pour Defender pour point de terminaison.
 
 > [!NOTE]
-> Ce document explique les détails relatifs au stockage des données et à la confidentialité relatifs à Defender for Endpoint. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows, voir déclaration de [confidentialité Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576) Pour plus [d’informations, voir](https://go.microsoft.com/fwlink/?linkid=827577) Windows faq sur la confidentialité.
+> Ce document explique les détails sur le stockage des données et la confidentialité liés à Defender pour point de terminaison. Pour plus d’informations sur Defender pour point de terminaison et d’autres produits et services tels que l’antivirus Microsoft Defender et Windows, consultez la [déclaration de confidentialité de Microsoft](https://go.microsoft.com/fwlink/?linkid=827576). Pour plus d’informations, consultez également [la FAQ sur la confidentialité de Windows](https://go.microsoft.com/fwlink/?linkid=827577) .
 
-## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Quelles données Microsoft Defender pour le point de terminaison collecte-t-il ?
+## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Quelles sont les données collectées par Microsoft Defender pour point de terminaison ?
 
-Microsoft Defender pour le point de terminaison collecte et stocke des informations à partir de vos appareils configurés dans un client dédié et séparé propre au service à des fins d’administration, de suivi et de rapport.
+Microsoft Defender pour point de terminaison collecte et stocke des informations à partir de vos appareils configurés dans un client dédié et distinct propre au service à des fins d’administration, de suivi et de création de rapports.
 
-Les informations collectées comprennent les données de fichier (telles que les noms de fichiers, les tailles et les hages), les données de processus (processus en cours d’exécution, hèses), les données de Registre, les données de connexion réseau (IPS et ports hôtes) et les détails des périphériques (tels que les identificateurs de périphérique, les noms et la version du système d’exploitation).
+Les informations collectées incluent les données de fichier (telles que les noms de fichiers, les tailles et les hachages), les données de processus (processus en cours d’exécution, hachages), les données de Registre, les données de connexion réseau (adresses IP et ports hôtes) et les détails de l’appareil (tels que les identificateurs d’appareil, les noms et la version du système d’exploitation).
 
-Microsoft stocke ces données en toute sécurité Microsoft Azure et les maintient conformément aux pratiques de confidentialité de Microsoft et aux stratégies du Centre de [gestion de la confidentialité Microsoft.](https://go.microsoft.com/fwlink/?linkid=827578)
+Microsoft stocke ces données en toute sécurité dans Microsoft Azure et les gère conformément aux pratiques de confidentialité de Microsoft et aux [stratégies du Centre de gestion de la confidentialité Microsoft](https://go.microsoft.com/fwlink/?linkid=827578).
 
-Ces données permettent à Defender for Endpoint de :
+Ces données permettent à Defender pour point de terminaison de :
 
-- Identifier de manière proactive les indicateurs d’attaque dans votre organisation
+- Identifier de manière proactive les indicateurs d’attaque (IOA) dans votre organisation
 - Générer des alertes si une attaque possible a été détectée
-- Fournissez à vos opérations de sécurité une vue des appareils, des fichiers et des URL liés aux signaux de menace de votre réseau, ce qui vous permet d’examiner et d’explorer la présence de menaces de sécurité sur le réseau.
+- Fournissez à vos opérations de sécurité une vue des appareils, fichiers et URL liés aux signaux de menace de votre réseau, ce qui vous permet d’examiner et d’explorer la présence de menaces de sécurité sur le réseau.
 
 Microsoft n’utilise pas vos données pour la publicité.
 
 ## <a name="data-protection-and-encryption"></a>Protection et chiffrement des données
 
-Le service Defender for Endpoint utilise des technologies de protection des données de pointe basées sur Microsoft Azure’infrastructure.
+Le service Defender pour point de terminaison utilise des technologies de protection des données de pointe basées sur l’infrastructure Microsoft Azure.
 
-Il existe différents aspects pertinents pour la protection des données que notre service prend en charge. Le chiffrement est l’un des plus critiques et inclut le chiffrement des données au repos, le chiffrement en cours d’utilisation et la gestion des clés avec le coffre de clés. Pour plus d’informations sur les autres technologies utilisées par le service Defender for Endpoint, consultez la vue d’ensemble du [chiffrement Azure.](/azure/security/security-azure-encryption-overview)
+Notre service s’occupe de divers aspects liés à la protection des données. Le chiffrement est l’un des plus critiques et inclut le chiffrement des données au repos, le chiffrement en vol et la gestion des clés avec Key Vault. Pour plus d’informations sur les autres technologies utilisées par le service Defender pour point de [terminaison, consultez la vue d’ensemble du chiffrement Azure](/azure/security/security-azure-encryption-overview).
 
-Dans tous les scénarios, les données sont chiffrées au minimum à l’aide du chiffrement [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 256 bits.
+Dans tous les scénarios, les données sont chiffrées à l’aide du [chiffrement AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 256 bits au minimum.
 
 ## <a name="data-storage-location"></a>Emplacement de stockage de données
 
-Defender for Endpoint fonctionne dans les centres Microsoft Azure de données de l’Union européenne, du Royaume-Uni ou des États-Unis. Les données client collectées par le service peuvent être stockées dans : (a) l’emplacement géographique du client identifié lors de l’approvisionnement ou, (b) si Defender pour le point de terminaison utilise un autre service en ligne Microsoft pour traiter ces données, la géolocalisation telle que définie par les règles de stockage de données de cet autre service en ligne.
+Defender pour point de terminaison fonctionne dans les centres de données Microsoft Azure dans l’Union européenne, au Royaume-Uni ou dans le États-Unis. Les données client collectées par le service peuvent être stockées dans : (a) l’emplacement géographique du locataire tel qu’identifié lors de l’approvisionnement ou, (b) si Defender pour point de terminaison utilise un autre service en ligne Microsoft pour traiter ces données, la géolocalisation telle que définie par les règles de stockage des données de cet autre service en ligne.
 
-Les données client sous forme pseudonyme peuvent également être stockées dans les systèmes de stockage et de traitement centraux aux États-Unis.
+Les données client sous forme pseudonyme peuvent également être stockées dans les systèmes de stockage et de traitement centraux du États-Unis.
 
-Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Cela permet de réduire au minimum les risques de conformité en sélectionnant activement les emplacements géographiques où vos données résideront.
+Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Cela offre un moyen pratique de réduire les risques de conformité en sélectionnant activement les emplacements géographiques où vos données résideront.
 
-## <a name="is-my-data-isolated-from-other-customer-data"></a>Mes données sont-elles isolées des autres données client ?
+## <a name="is-my-data-isolated-from-other-customer-data"></a>Mes données sont-ils isolées des autres données client ?
 
-Oui, vos données sont isolées par le biais de l’authentification d’accès et de la séparation logique basée sur l’identificateur client. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et aux données génériques que Microsoft fournit.
+Oui, vos données sont isolées par le biais de l’authentification d’accès et de la séparation logique en fonction de l’identificateur du client. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et des données génériques fournies par Microsoft.
 
-## <a name="how-does-microsoft-prevent-malicious-insider-activities-and-abuse-of-high-privilege-roles"></a>Comment Microsoft empêche-t-il les activités malveillantes internes et les abus des rôles à privilège élevé ?
+## <a name="how-does-microsoft-prevent-malicious-insider-activities-and-abuse-of-high-privilege-roles"></a>Comment Microsoft empêche-t-il les activités internes malveillantes et l’abus de rôles à privilèges élevés ?
 
-Les développeurs et les administrateurs Microsoft ont, par conception, reçu des privilèges suffisants pour effectuer leurs tâches d’exploitation et d’évolution du service. Microsoft déploie des combinaisons de contrôles de prévention, de surveillance et de réaction, y compris les mécanismes suivants pour vous protéger contre les activités non autorisées des développeurs et/ou des administrations :
+Les développeurs et administrateurs Microsoft disposent, par conception, de privilèges suffisants pour s’acquitter de leurs tâches affectées afin d’exploiter et de faire évoluer le service. Microsoft déploie des combinaisons de contrôles préventifs, de détection et réactifs, notamment les mécanismes suivants pour vous protéger contre les activités de développement et/ou d’administration non autorisées :
 
-- Contrôle d’accès étroit aux données sensibles
-- Combinaisons de contrôles qui améliorent grandement la détection indépendante des activités malveillantes
-- Plusieurs niveaux de surveillance, de journalisation et de rapport
+- Contrôle d’accès serré aux données sensibles
+- Combinaisons de contrôles qui améliorent considérablement la détection indépendante des activités malveillantes
+- Plusieurs niveaux de surveillance, de journalisation et de création de rapports
 
-En outre, Microsoft effectue des vérifications d’arrière-plan de certains membres du personnel opérationnel et limite l’accès aux applications, aux systèmes et à l’infrastructure réseau en proportion du niveau de vérification en arrière-plan. Le personnel opérationnel suit un processus formel lorsqu’il est requis d’accéder au compte d’un client ou à des informations connexes dans l’exécution de ses tâches.
+En outre, Microsoft effectue des vérifications en arrière-plan de certains membres du personnel des opérations et limite l’accès aux applications, aux systèmes et à l’infrastructure réseau en proportion du niveau de vérification en arrière-plan. Le personnel des opérations suit un processus formel lorsqu’il est tenu d’accéder au compte d’un client ou à des informations connexes dans l’exercice de ses fonctions.
 
-L’accès aux données pour les services déployés dans les centres de données publics Microsoft Azure est accordé uniquement au personnel opérationnel qui a été filtrer et approuvé pour gérer les données soumises à certaines réglementations et exigences gouvernementales, telles que FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4 et CJIS.
+L’accès aux données des services déployés dans les centres de données Microsoft Azure Government est accordé uniquement au personnel d’exploitation qui a été filtré et approuvé pour gérer les données soumises à certaines réglementations et exigences gouvernementales, telles que FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4 et CJIS.
 
-## <a name="is-data-shared-with-other-customers"></a>Les données sont-elles partagées avec d’autres clients ?
+## <a name="is-data-shared-with-other-customers"></a>Les données sont-ils partagées avec d’autres clients ?
 
-Non. Les données client sont isolées des autres clients et ne sont pas partagées. Toutefois, les informations sur les données résultant du traitement par Microsoft et qui ne contiennent pas de données spécifiques au client peuvent être partagées avec d’autres clients. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et aux données génériques que Microsoft fournit.
+Non. Les données client sont isolées des autres clients et ne sont pas partagées. Toutefois, les insights sur les données résultant du traitement Microsoft, et qui ne contiennent pas de données spécifiques au client, peuvent être partagés avec d’autres clients. Chaque client peut uniquement accéder aux données collectées à partir de sa propre organisation et des données génériques fournies par Microsoft.
 
-## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Combien de temps Microsoft stockera-t-il mes données ? Qu’est-ce que la stratégie de rétention des données de Microsoft ?
+## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Combien de temps Microsoft stockera-t-il mes données ? Quelle est la stratégie de rétention des données de Microsoft ?
 
 ### <a name="at-service-onboarding"></a>Lors de l’intégration de service
 
-Par défaut, les données sont conservées pendant 180 jours . toutefois, vous pouvez spécifier la stratégie de rétention des données pour vos données. Cela détermine la durée pendant combien de temps Window Defender pour Endpoint stockera vos données. Vous avez la possibilité de choisir entre un mois et six mois pour répondre aux besoins de conformité réglementaire de votre entreprise.
+Par défaut, les données sont conservées pendant 180 jours ; toutefois, vous pouvez spécifier la stratégie de rétention des données pour vos données. Cela détermine la durée pendant laquelle Microsoft Defender pour point de terminaison stockerez vos données. Il existe une possibilité de choisir entre un mois et six mois pour répondre aux besoins de conformité réglementaire de votre entreprise.
 
 ### <a name="at-contract-termination-or-expiration"></a>À la résiliation ou à l’expiration du contrat
 
-Vos données seront conservées et disponibles pendant la période de grâce ou le mode suspendu de la licence. À la fin de cette période, ces données seront effacées des systèmes de Microsoft pour les rendre irrécables, au plus tard 180 jours après la résiliation ou l’expiration du contrat.
+Vos données seront conservées et seront disponibles pendant que la licence est en période de grâce ou en mode suspendu. À la fin de cette période, ces données seront effacées des systèmes de Microsoft pour les rendre irrécupéables, au plus tard 180 jours après la résiliation ou l’expiration du contrat.
 
-### <a name="advanced-hunting-data"></a>Données de recherche avancée
+### <a name="advanced-hunting-data"></a>Données de chasse avancées
 
 Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes.
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Microsoft peut-il nous aider à maintenir la conformité réglementaire ?
 
-Microsoft fournit aux clients des informations détaillées sur les programmes de sécurité et conformité de Microsoft, notamment des rapports d’audit et des packages de conformité, pour aider les clients à évaluer Defender pour les services Endpoint par rapport à leurs propres exigences légales et réglementaires. Defender pour le point de terminaison a obtenu un certain nombre de certifications, notamment ISO, SOC, FedRAMP High et PCI, et continue d’obtenir des certifications nationales, régionales et spécifiques au secteur.
+Microsoft fournit aux clients des informations détaillées sur les programmes de sécurité et de conformité de Microsoft, notamment les rapports d’audit et les packages de conformité, afin d’aider les clients à évaluer defender pour les services de point de terminaison par rapport à leurs propres exigences légales et réglementaires. Defender pour point de terminaison a obtenu un certain nombre de certifications, notamment ISO, SOC, FedRAMP High et PCI, et continue de poursuivre des certifications nationales, régionales et spécifiques à l’industrie.
 
-En fournissant aux clients des services conformes et vérifiés de manière indépendante, Microsoft leur permet de se conformer plus facilement à l’infrastructure et aux applications qu’ils exécutent.
+En fournissant aux clients des services conformes et vérifiés indépendamment, Microsoft permet aux clients d’obtenir plus facilement la conformité de l’infrastructure et des applications qu’ils exécutent.
 
-Pour plus d’informations sur les rapports de certification Defender for Endpoint, consultez [le Centre de confiance Microsoft.](https://servicetrust.microsoft.com/) 
+Pour plus d’informations sur les rapports de certification Defender pour point de terminaison, consultez [le Centre de gestion de la confidentialité Microsoft](https://servicetrust.microsoft.com/). 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-datastorage-belowfoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-datastorage-belowfoldlink)
