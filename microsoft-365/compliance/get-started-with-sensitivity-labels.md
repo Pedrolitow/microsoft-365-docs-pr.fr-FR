@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: f27f1a475f5880058db40894015dabdec9038be1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 2998c993cd605f0371e728bba1cdea555b5e51e0
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286031"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574209"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -46,7 +46,7 @@ Lorsque vous êtes prêt à protéger les données de votre organisation en util
 
 3. **Publiez les étiquettes.** Après avoir configuré vos étiquettes de confidentialité, publiez-les à l’aide d’une stratégie d’étiquette. Déterminez les utilisateurs et les groupes devant utiliser les étiquettes ainsi que les paramètres de stratégie à utiliser. Une étiquette unique est réutilisable : vous la définissez une fois, puis vous l’incluez dans plusieurs stratégies d’étiquette affectées à différents utilisateurs. Par exemple, vous pouvez piloter vos étiquettes de confidentialité en attribuant une stratégie d’étiquette à quelques utilisateurs seulement. Lorsque vous êtes prêt à déployer les étiquettes dans votre organisation, vous pouvez créer une nouvelle stratégie d’étiquette pour vos étiquettes et spécifier cette fois tous les utilisateurs.
 
-
+> [!TIP]
 > Vous pouvez être éligible à la création automatique d’étiquettes par défaut et à une stratégie d’étiquette par défaut qui s’occupe des étapes 1 à 3 à votre place. Pour plus d'informations, voir [Étiquettes et politiques par défaut pour Microsoft Purview Information Protection](mip-easy-trials.md).
 
 Flux de base pour le déploiement et l'application d'étiquettes de confidentialité :

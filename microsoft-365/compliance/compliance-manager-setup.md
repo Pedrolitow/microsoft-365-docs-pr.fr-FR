@@ -1,5 +1,5 @@
 ---
-title: Démarrage avec le Gestionnaire de conformité Microsoft Purview
+title: Prise en main du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft Purview, et configurez le test automatisé des actions. Gérez l’historique des utilisateurs et filtrez l’affichage de votre tableau de bord.
-ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091024"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574044"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
@@ -31,15 +31,15 @@ ms.locfileid: "65091024"
 
 **Dans cet article :** Cet article vous aide à configurer le Gestionnaire de conformité. Découvrez comment **accéder** au Gestionnaire de conformité, **définir des rôles et des autorisations**, et configurer le **test automatique des actions d’amélioration**. Parcourez **votre tableau de bord du Gestionnaire de conformité** et comprenez les pages principales : la page Actions d’amélioration, la page solutions, la page Évaluations et la page modèles d’évaluation.
 
-## <a name="who-can-access-compliance-manager"></a>Qui pouvez accéder au Gestionnaire de conformité
+## <a name="who-can-access-compliance-manager"></a>Qui peut accéder au Gestionnaire de conformité ?
 
-Le Gestionnaire de conformité est disponible pour les organisations disposant de licences Office 365 et Microsoft 365, ainsi que pour les Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) Moderate, Cloud de la communauté du secteur public les clients high et department of Defense (DoD). La disponibilité et les fonctionnalités de gestion de l’évaluation dépendent de votre contrat de licence.  [Afficher les détails de la description du service](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+Le Gestionnaire de conformité est disponible pour les organisations disposant de licences Office 365 et Microsoft 365, ainsi que pour les clients du Cloud de la communauté du gouvernement des États-Unis (GCC) Moderate, GCC High et Department of Defense (DoD). La disponibilité et les fonctionnalités de gestion de l’évaluation dépendent de votre contrat de licence.  [Afficher les détails de la description du service](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Le Microsoft 365 administrateur général de votre organisation sera probablement le premier utilisateur à accéder au Gestionnaire de conformité. Nous recommandons à l’administrateur général de se connecter et de définir des autorisations utilisateur comme indiqué ci-dessous lors de la première visite du Gestionnaire de conformité.
+L’administrateur général Microsoft 365 de votre organisation sera probablement le premier utilisateur à accéder au Gestionnaire de conformité. Nous recommandons à l’administrateur général de se connecter et de définir des autorisations utilisateur comme indiqué ci-dessous lors de la première visite du Gestionnaire de conformité.
 
-## <a name="sign-in"></a>Se connecter
+## <a name="sign-in"></a>Connexion
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et **connectez-vous** avec votre compte d’administrateur général Microsoft 365.
 2. Sélectionnez **Le Gestionnaire de conformité** dans le volet de navigation gauche. Vous accédez à votre [tableau de bord gestionnaire de conformité](#understand-the-compliance-manager-dashboard).
@@ -55,11 +55,11 @@ Le Gestionnaire de conformité utilise un modèle d’autorisation de contrôle 
 La personne qui détient le rôle d’administrateur général pour votre organisation peut définir des autorisations utilisateur pour le Gestionnaire de conformité. Les autorisations peuvent être définies dans le portail de conformité Microsoft Purview ainsi que dans Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Les clients des environnements U.S. Government Community (Cloud de la communauté du secteur public) High and Department of Defense (DoD) peuvent uniquement définir des autorisations utilisateur et des rôles pour le Gestionnaire de conformité dans Azure AD. Pour obtenir des instructions Azure AD et des définitions de type de rôle, voir ci-dessous.
+> Les clients dans les environnements U.S. Community (GCC) High and Department of Defense (DoD) peuvent uniquement définir des autorisations utilisateur et des rôles pour le Gestionnaire de conformité dans Azure AD. Voir ci-dessous pour obtenir des instructions Azure AD et des définitions de type de rôle.
 
 Pour définir des autorisations et attribuer des rôles dans le portail de conformité Microsoft Purview, suivez les étapes ci-dessous :
 
-1. Accédez au portail de conformité Microsoft Purview, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Autorisations**</a>.
+1. Accédez à la portail de conformité Microsoft Purview, puis sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Autorisations**</a>.
 
 2. Dans la liste déroulante du portail de conformité, sélectionnez **Rôles**.
 
@@ -83,11 +83,11 @@ Les utilisateurs avec des identités Azure AD qui n’ont pas d’abonnements Of
 
 ### <a name="role-types"></a>Types de rôles
 
-Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans le Gestionnaire de conformité. Le tableau montre également comment chaque [rôle Azure AD](/azure/active-directory/roles/permissions-reference) est mappé aux rôles gestionnaire de conformité. Les utilisateurs auront besoin au moins du rôle lecteur du Gestionnaire de conformité, ou Azure AD rôle lecteur global, pour accéder au Gestionnaire de conformité.
+Le tableau ci-dessous présente les fonctions autorisées par chaque rôle dans le Gestionnaire de conformité. Le tableau montre également comment chaque [rôle Azure AD](/azure/active-directory/roles/permissions-reference) est mappé aux rôles gestionnaire de conformité. Les utilisateurs auront besoin au moins du rôle lecteur du Gestionnaire de conformité, ou du rôle lecteur global Azure AD, pour accéder au Gestionnaire de conformité.
 
-| L’utilisateur peut : | Rôle gestionnaire de conformité | rôle Azure AD | 
+| L’utilisateur peut : | Rôle gestionnaire de conformité | Rôle de Azure AD | 
 | :------------- | :-------------: | :------------: |
-| **Lire les données mais ne peut pas les modifier**| Gestionnaire de conformité - Lecteur  | lecteur Azure AD global, lecteur Sécurité |
+| **Lire les données mais ne peut pas les modifier**| Gestionnaire de conformité - Lecteur  | Lecteur Azure AD Global, Lecteur Sécurité |
 | **Modifier les données**| Contribution du Gestionnaire de conformité | Administrateur de conformité |
 | **Modifier les résultats des tests**| Gestionnaire de conformité - Analyste | Administrateur de conformité |
 | **Gérer les évaluations et les données de modèle et de locataire**| Administration du Gestionnaire de conformité | Administrateur de conformité, administrateur des données de conformité, administrateur de sécurité  |
@@ -119,15 +119,23 @@ Pour en savoir plus sur la prise en main des évaluations, consultez la [page É
 Les paramètres du Gestionnaire de conformité dans le portail de conformité Microsoft Purview vous permettent d’activer et de désactiver le test automatique des actions d’amélioration. Les paramètres vous permettent également de gérer les données des utilisateurs associés aux actions d’amélioration, y compris la possibilité de réaffecter des actions d’amélioration à un autre utilisateur.  Seules les personnes ayant un rôle d’administrateur général ou d’administrateur du Gestionnaire de conformité peuvent accéder aux paramètres du Gestionnaire de conformité.
 
 > [!NOTE]
-> La fonctionnalité de test automatisé n’est pas disponible pour les clients dans Cloud de la communauté du secteur public environnements High et DoD, car le degré de sécurisation n’est pas disponible dans ces environnements. Cloud de la communauté du secteur public les clients High et DoD devront implémenter et tester manuellement leurs actions d’amélioration.
+> La fonctionnalité de test automatisé n’est pas disponible pour les clients dans les environnements GCC High et DoD, car le degré de sécurisation n’est pas disponible dans ces environnements. Les clients GCC High et DoD devront implémenter et tester manuellement leurs actions d’amélioration.
 
 ### <a name="set-up-automated-testing"></a>Configurer des tests automatisés
 
-Le Gestionnaire de conformité détecte les signaux provenant d’autres solutions Microsoft Purview auxquelles votre organisation s’abonne, notamment la gestion du cycle de vie des données, la protection des informations, la protection contre la perte de données Microsoft Purview, la conformité des communications et la gestion des risques internes. Dans la page de détails de chaque action d’amélioration, le champ **Logique de test** sous l’onglet **Test** affiche ce qui est nécessaire dans l’autre solution afin que l’action passe et gagne des points vers votre score de conformité.
+Le Gestionnaire de conformité détecte les signaux provenant d’autres solutions Microsoft Purview auxquelles votre organisation peut s’abonner, notamment la gestion du cycle de vie des données, la protection des informations, la Protection contre la perte de données Microsoft Purview, la conformité des communications et la gestion des risques internes. Le Gestionnaire de conformité détecte également les signaux provenant d’actions d’amélioration complémentaires qui sont surveillées par [le degré de sécurisation Microsoft](../security/defender/microsoft-secure-score.md).
 
-Le Gestionnaire de conformité détecte également les signaux provenant d’actions d’amélioration complémentaires qui sont également surveillées par [microsoft Secure Score](../security/defender/microsoft-secure-score.md). À l’aide de ces signaux, le Gestionnaire de conformité peut tester automatiquement certaines actions d’amélioration pour vous, ce qui permet d’optimiser l’efficacité de vos activités de conformité. Lorsqu’une action d’amélioration est testée et implémentée avec succès, vous recevez la quantité complète de points, qui est crédité de votre score de conformité global.
+À l’aide de ces signaux, le Gestionnaire de conformité peut tester automatiquement certaines actions d’amélioration pour vous, ce qui permet d’optimiser l’efficacité de vos activités de conformité. Lorsqu’une action d’amélioration est testée et implémentée avec succès, vous recevez la quantité complète de points, qui est [crédité de votre score de conformité global](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-Les tests automatiques sont activés par défaut pour les organisations qui débutent avec le Gestionnaire de conformité. Lorsque vous déployez Microsoft 365 ou Office 365 pour la première fois, il faut environ sept jours pour collecter complètement les données et les factoriser dans votre score de conformité. Lorsque le test automatisé est activé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du degré de sécurisation.
+**Les tests automatiques sont activés par défaut pour les organisations qui débutent avec le Gestionnaire de conformité.** Lorsque vous déployez Microsoft 365 ou Office 365 pour la première fois, il faut environ sept jours pour collecter complètement les données et les factoriser dans votre score de conformité. Lorsque le test automatisé est activé, la date de test de l’action n’est pas mise à jour, mais son état de test est mis à jour. Lorsque de nouvelles évaluations sont créées, les scores incluent automatiquement les scores de contrôle Microsoft et l’intégration du degré de sécurisation. Pour modifier ou désactiver ce paramètre, consultez [Gérer les paramètres de test automatisé](#manage-automated-testing-settings) ci-dessous.
+
+#### <a name="how-to-tell-which-actions-are-tested-automatically"></a>Comment indiquer quelles actions sont testées automatiquement
+
+Dans votre page **Actions d’amélioration** , **recherchez la colonne source Test** . Si la valeur est répertoriée comme **automatique**, l’action est automatiquement testée par le Gestionnaire de conformité.  Si la valeur est **Manuelle**, l’action est testée par votre organisation. Si la valeur est **Parent**, l’action hérite de l’état de test d’une autre action à laquelle elle est liée. Obtenez des détails sur la [source de test d’action d’amélioration](compliance-manager-improvement-actions.md#update-testing-source).
+
+#### <a name="which-actions-cant-be-tested-automatically"></a>Quelles actions ne peuvent pas être testées automatiquement
+
+Les actions d’amélioration dans les modèles non limités à Microsoft 365 ne sont actuellement pas éligibles aux tests automatiques. Par exemple, les modèles universels, ou un modèle pour Microsoft Azure ou Microsoft Dynamics, n’ont pas d’actions qui peuvent être testées automatiquement. En savoir plus sur [les modèles d’évaluation](compliance-manager-templates.md).
 
 #### <a name="manage-automated-testing-settings"></a>Gérer les paramètres de test automatisé
 
@@ -145,11 +153,8 @@ L’administrateur général de votre organisation peut modifier les paramètres
 
 6. Sélectionnez **Enregistrer** pour enregistrer vos paramètres. Vous recevrez un message de confirmation en haut de votre écran indiquant que votre sélection a été enregistrée. Si vous recevez un avis d’échec, réessayez.
 
-**Note:** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du Gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions globalement.
-
-**En savoir plus**
-- [En savoir plus sur la façon dont la supervision continue contribue à votre score de conformité](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
-- [En savoir plus sur la désignation d’une source de test pour une action d’amélioration](compliance-manager-improvement-actions.md#update-testing-source).
+> [!NOTE]
+> Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du Gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions globalement.
 
 ### <a name="manage-user-history"></a>Gérer l’historique des utilisateurs
 
@@ -246,7 +251,7 @@ Le tableau de bord du Gestionnaire de conformité est conçu pour vous fournir u
 
 Votre score de conformité est mis en évidence en haut. Il affiche un pourcentage basé sur les points réalisables pour mener à bien les actions d’amélioration qui répondent aux principales normes et réglementations de protection des données. Les points des [actions Microsoft](compliance-manager-assessments.md#microsoft-actions-tab), qui sont gérées par microsoft, sont également comptabilisés dans votre score de conformité.
 
-Lorsque vous accédez au Gestionnaire de conformité pour la première fois, votre score initial est basé sur la [base de référence de protection des données Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Cette évaluation de référence, qui est disponible pour toutes les organisations, est un ensemble de contrôles qui inclut des normes et des réglementations communes du secteur. Le Gestionnaire de conformité analyse vos solutions Microsoft 365 existantes et vous donne une évaluation initiale en fonction de vos paramètres de confidentialité et de sécurité actuels. Lorsque vous ajoutez des évaluations pertinentes pour votre organisation, votre score devient plus significatif pour vous.
+Lorsque vous accédez au Gestionnaire de conformité pour la première fois, votre score initial est basé sur la [base de référence de la protection des données Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Cette évaluation de référence, qui est disponible pour toutes les organisations, est un ensemble de contrôles qui inclut des normes et des réglementations communes du secteur. Le Gestionnaire de conformité analyse vos solutions Microsoft 365 existantes et vous donne une évaluation initiale en fonction de vos paramètres de confidentialité et de sécurité actuels. Lorsque vous ajoutez des évaluations pertinentes pour votre organisation, votre score devient plus significatif pour vous.
 
 **En savoir plus :** [Comprendre comment votre score de conformité est calculé](compliance-score-calculation.md).
 
@@ -345,7 +350,7 @@ Il existe deux façons d’agir à partir de cet écran :
 
 1. Sur la ligne de votre solution prévue, sous la colonne **Actions restantes** , sélectionnez le numéro de lien hypertexte. Vous verrez une vue filtrée de l’écran Actions d’amélioration montrant les actions d’amélioration non testées pour cette solution.
 
-2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution** , sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les Microsoft 365 et Office 365 centres de sécurité et de conformité où vous pouvez effectuer l’action recommandée.
+2. Sur la ligne de votre solution prévue, sous la colonne **Ouvrir la solution** , sélectionnez **Ouvrir**. Vous verrez la solution ou l’emplacement dans les centres de sécurité et de conformité Microsoft 365 et Office 365 où vous pouvez effectuer l’action recommandée.
 
 ## <a name="assessments-page"></a>Page Évaluations
 
@@ -356,7 +361,7 @@ Le compteur **de modèles activés** en haut de la page affiche le nombre de mod
 La page Évaluations récapitule les informations clés sur chaque évaluation :
 
 - **Évaluation** : nom de l’évaluation
-- **État** :
+- **Statut** :
   - **Terminé** : tous les contrôles ont l’état « passé », ou au moins un contrôle est passé et les autres sont « hors de portée »
   - **Incomplet** : au moins un contrôle a l’état « échec »
   - **Aucun :** tous les contrôles n’ont pas été testés

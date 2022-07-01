@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363262"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574000"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -29,7 +29,7 @@ ms.locfileid: "65363262"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -67,14 +67,14 @@ Si la clé est manquante, accédez à **SOFTWARE** \> **Microsoft** \> **Windows
 Activez la protection réseau à l’aide de l’une des méthodes suivantes :
 
 - [PowerShell](#powershell)
-- [Mobile Gestion des appareils (MDM)](#mobile-device-management-mdm)
+- [Gestion des périphériques mobiles (GPM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Stratégie de groupe](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
 
-1. Tapez **PowerShell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
 
 2. Entrez l’applet de commande suivante :
 
@@ -92,14 +92,36 @@ Activez la protection réseau à l’aide de l’une des méthodes suivantes :
 
 ### <a name="mobile-device-management-mdm"></a>Gestion des périphériques mobiles (GPM)
 
-Utilisez le fournisseur[./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (fournisseur de solutions Cloud) pour activer ou désactiver la protection réseau ou activer le mode d’audit.
+Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) pour activer ou désactiver la protection réseau ou activer le mode d’audit.
 
 [Mettez à jour la plateforme anti-programme malveillant Microsoft Defender vers la dernière version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) avant d’activer ou de désactiver la protection réseau ou d’activer le mode d’audit.
 
 
-### <a name="microsoft-endpoint-manager"></a>Gestionnaire de point de terminaison Microsoft
+### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-1. Connectez-vous au centre d’administration Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>méthode de base de référence Microsoft Defender pour point de terminaison
+
+1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+2. Accédez aux **bases de référence de sécurité** >  des  >  points de terminaison **Microsoft Defender pour point de terminaison Base de référence**.
+3. Sélectionnez **Créer un profil**, fournissez un nom pour votre profil, puis sélectionnez **Suivant**.
+4. Dans la section **Paramètres de configuration** , accédez aux **règles de réduction de la surface d’attaque** > définir **Bloquer**, **Activer** ou **Auditer** pour **activer la protection réseau**. Sélectionnez **Suivant**.
+5. Sélectionnez les **balises d’étendue** et **les affectations** appropriées selon les besoins de votre organisation.
+7. Passez en revue toutes les informations, puis **sélectionnez Créer**.
+
+#### <a name="antivirus-policy-method"></a>Méthode de stratégie antivirus
+1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+2. Accéder à **l’antivirus de sécurité de point de terminaison** > 
+3. Sélectionner **Créer une stratégie**
+4. Dans le menu volant **Créer une stratégie**, choisissez **Windows 10, Windows 11 et Windows Server** dans la liste **des plateformes**.
+5. Choisissez **l’antivirus Microsoft Defender** dans la liste **des profils** , puis choisissez **Créer**
+6. Indiquez un nom pour votre profil, puis sélectionnez **Suivant**.
+7. Dans la section **Paramètres de configuration** , sélectionnez **Désactivé**, **Activé (mode bloc)** ou **Activé (mode audit)** pour **Activer la protection réseau**, puis **Suivant**.
+8. Sélectionnez les **affectations** et **balises d’étendue** appropriées, selon les besoins de votre organisation.
+9. Passez en revue toutes les informations, puis **sélectionnez Créer**.
+
+#### <a name="configuration-profile-method"></a>Méthode de profil de configuration
+
+1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager (https://endpoint.microsoft.com).
 
 2. Allez dans **Appareils** > **Profils de configuration** > **Créer un profil**.
 
@@ -107,9 +129,9 @@ Utilisez le fournisseur[./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtec
 
 4. Dans le **nom du modèle**, choisissez **Endpoint Protection** dans la liste des modèles, puis sélectionnez **Créer**.
 
-4. Accédez à **Endpoint** **ProtectionBasics** > , indiquez un nom pour votre profil, puis sélectionnez **Suivant**.
+4. Accédez à **Endpoint Protection** > **Basics**, indiquez un nom pour votre profil, puis sélectionnez **Suivant**.
 
-5. Dans la section **Paramètres de configuration**, accédez à **Protection contre les attaques Microsoft Defender** >  **Network filteringNetwork** >  **protectionEnable** >  ou **Audit**. Sélectionnez **Suivant**.
+5. Dans la section **Paramètres de configuration** , accédez à **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Sélectionnez **Suivant**.
 
 6. Sélectionnez les **balises d’étendue**, **les affectations** et **les règles d’applicabilité** appropriées, selon les besoins de votre organisation. Les administrateurs peuvent définir d’autres exigences.
 
@@ -127,7 +149,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender protection réseau Exploit Guard**\>.
+3. Développez l’arborescence sur **les composants** \> Windows **antivirus** \> Microsoft Defender **Windows Defender protection du réseau Exploit Guard**\>.
 
    > [!NOTE]
    > Sur les versions antérieures de Windows, le chemin de stratégie de groupe peut indiquer « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
@@ -147,7 +169,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
 
 1. Ouvrez la console Gestionnaire de configuration.
 
-2. Accédez à **Ressources et conformité** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**.
+2. Accédez à **Assets and Compliance** > **Endpoint Protection** >  **Windows Defender Exploit Guard**.
 
 3. Sélectionnez **Créer une stratégie Exploit Guard** dans le ruban pour créer une stratégie.
    - Pour modifier une stratégie existante, sélectionnez la stratégie, puis sélectionnez **Propriétés** dans le ruban ou dans le menu contextuel. Modifiez l’option **Configurer la protection réseau** à partir de l’onglet **Protection réseau** .  

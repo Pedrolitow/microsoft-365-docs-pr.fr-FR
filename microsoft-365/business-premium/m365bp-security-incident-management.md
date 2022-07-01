@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la gestion des incidents de sécurité
-ms.openlocfilehash: c51282e5ba72d7519e3761bdfdb5c53753d8dad2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b13798d34b0bf353158520e6f9c7cdb20aa77453
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491954"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574171"
 ---
 # <a name="security-incident-management"></a>Gestion des incidents de sécurité
 
@@ -41,5 +41,7 @@ Regardez une courte vidéo sur une réponse aux incidents classique.
 Pour en savoir plus sur les réponses aux incidents, procédez comme suit :
 
 1. [Examinez les recommandations de sécurité](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+
 1. [Examinez les actions de correction](m365bp-review-remediation-actions-devices.md).
+
 1. [Répondez à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).

@@ -1,5 +1,5 @@
 ---
-title: Utilisation des actions d’amélioration dans Microsoft Purview Gestionnaire de conformité
+title: Utilisation des actions d’amélioration dans le Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment implémenter et tester des contrôles en travaillant avec des actions d’amélioration dans Microsoft Purview Gestionnaire de conformité. Attribuez des rapports de travail, de stockage de documentation et d’exportation.
-ms.openlocfilehash: 9dca4f3a742b82a2cf119ceb40b04241d1b5177f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Découvrez comment implémenter et tester des contrôles en travaillant avec des actions d’amélioration dans le Gestionnaire de conformité Microsoft Purview. Attribuez des rapports de travail, de stockage de documentation et d’exportation.
+ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621776"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574275"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Utilisation des actions d’amélioration dans le Gestionnaire de conformité
 
@@ -67,7 +67,7 @@ Une fois que vous avez identifié l’assignateur approprié, assurez-vous qu’
 3. Sélectionnez **Affecter**. L’utilisateur affecté recevra un e-mail expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration.
 
 > [!NOTE]
-> Les clients de Community (Cloud de la communauté du secteur public) high and department of Defense (DoD) du gouvernement des États-Unis ne reçoivent pas d’e-mail lorsque des actions d’amélioration leur sont affectées.
+> Les clients us government community (GCC) High and Department of Defense (DoD) ne reçoivent pas d’e-mail lorsque des actions d’amélioration leur sont affectées.
 
 L’utilisateur affecté peut ensuite effectuer les actions recommandées.
 
@@ -146,7 +146,7 @@ L’historique des tests fournit un rapport téléchargé de tous les changement
 #### <a name="exporting-testing-history"></a>Exportation de l’historique des tests
 Vous pouvez exporter un rapport qui affiche l’historique de toutes les modifications apportées à l’état du test pour une action d’amélioration. Ces rapports sont particulièrement utiles pour surveiller la progression [des actions qui sont automatiquement testées](#automatic-testing-source), car ces actions sont régulièrement ou fréquemment mises à jour en fonction des données de votre locataire.
 
-Dans la page de détails d’une action d’amélioration, sélectionnez l’onglet **Test** . Sous **Historique des tests**, sélectionnez le bouton **Exporter l’historique des tests** . Le rapport est téléchargé en tant que fichier Excel.
+Dans la page de détails d’une action d’amélioration, sélectionnez l’onglet **Test** . Sous **Historique des tests**, sélectionnez le bouton **Exporter l’historique des tests** . Le rapport sera téléchargé sous forme de fichier Excel.
 
 ## <a name="update-testing-source"></a>Mettre à jour la source de test
 
@@ -156,7 +156,9 @@ Le Gestionnaire de conformité vous propose des options pour tester les actions 
 Les actions d’amélioration définies pour les tests manuels sont des actions que vous testez et implémentez manuellement. Vous définissez les états d’implémentation et d’état de test nécessaires, puis chargez tous les fichiers de preuve sous l’onglet **Documents** . Pour certaines actions, il s’agit de la seule méthode disponible pour tester les actions d’amélioration.
 
 #### <a name="automatic-testing-source"></a>Source de test automatique
-Si une action d’implémentation est éligible pour être automatiquement testée par le Gestionnaire de conformité, vous verrez l’option **Automatique** pour tester la source. Le Gestionnaire de conformité détecte les signaux provenant d’autres solutions de conformité que vous avez configurées dans votre environnement Microsoft 365, ainsi que les actions complémentaires que Microsoft Secure Score surveille également. Le champ **Logique de test** sous l’onglet **Test** indique le type de stratégie ou de configuration requis dans une autre solution afin que l’action passe et gagne des points vers votre score de conformité.
+Certaines actions d’amélioration peuvent être automatiquement testées par le Gestionnaire de conformité. [Obtenez des détails sur les](compliance-manager-improvement-actions.md#update-testing-source) actions d’amélioration qui peuvent et ne peuvent pas être testées automatiquement.
+
+Pour les actions d’amélioration qui peuvent être testées automatiquement, vous verrez l’option **Automatique** pour tester la source. Le Gestionnaire de conformité détecte les signaux provenant d’autres solutions de conformité que vous avez configurées dans votre environnement Microsoft 365, ainsi que toutes les actions complémentaires que Microsoft Secure Score surveille également. Le champ **Logique de test** sous l’onglet **Test** indique le type de stratégie ou de configuration requis dans une autre solution afin que l’action passe et gagne des points vers votre score de conformité.
 
 Quand les signaux indiquent qu’une action d’amélioration a été correctement implémentée, vous recevez automatiquement les points éligibles à cette action, qui seront pris en compte dans les scores pour les contrôles et évaluations associés. En savoir plus sur [l’impact de l’évaluation continue sur votre score de conformité](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
@@ -226,7 +228,7 @@ Après avoir sélectionné **Vérifier la mise à jour dans** la page détails d
 Sélectionnez **Accepter la mise à jour** pour accepter toutes les modifications apportées à l’action d’amélioration. **Les modifications acceptées sont permanentes**.
 
 > [!NOTE]
-> Quand vous acceptez une mise à jour d’une action, vous acceptez également les mises à jour d’autres versions ou instances de cette action. Les mises à jour se propagent à l’échelle du locataire pour les actions techniques et propagent les actions non techniques à l’échelle du groupe.
+> Quand vous acceptez une mise à jour d’une action, vous acceptez également les mises à jour d’autres versions ou instances de cette action. Mises à jour propagera les actions techniques à l’échelle du locataire et propagera les actions non techniques à l’échelle du groupe.
 
 Si vous sélectionnez **Annuler**, la mise à jour ne sera pas appliquée à l’action d’amélioration. Toutefois, vous continuerez à voir la notification de **mise à jour en attente** jusqu’à ce que vous acceptiez la mise à jour.
 
@@ -250,4 +252,4 @@ Vous pouvez configurer des alertes pour vous avertir immédiatement lorsque cert
 
 ## <a name="export-a-report"></a>Exporter un rapport
 
-Sélectionnez **Exporter** dans le coin supérieur gauche de votre écran pour télécharger une feuille de calcul Excel contenant toutes vos actions d’amélioration et les catégories de filtre affichées sur la page Actions d’amélioration.
+Sélectionnez **Exporter** dans le coin supérieur gauche de votre écran pour télécharger une feuille de calcul Excel contenant toutes vos actions d’amélioration et les catégories de filtre affichées dans la page Actions d’amélioration.
