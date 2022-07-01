@@ -1,19 +1,17 @@
 - name: Microsoft Whiteboard
   href: index.md
-- name: Tableau blanc pour les organisations
-  items:
-    - name: Activer et gérer l’accès
-      href: enable-whiteboard-access-organizations.md
-    - name: Gestion des données
-      href: manage-data-organizations.md
-    - name: Gérer le partage
-      href: manage-sharing-organizations.md
-    - name: Déployer sur les appareils Windows
-      href: deploy-on-windows-organizations.md
+- name: Gérer l’accès
+  href: manage-whiteboard-access-organizations.md
+- name: Gestion des données
+  href: manage-data-organizations.md
+- name: Gérer le partage
+  href: manage-sharing-organizations.md
+- name: Déployer sur les appareils Windows
+  href: deploy-on-windows-organizations.md
 - name: Tableau blanc pour le secteur public
   items:
-    - name: 'Activer et gérer l’accès : GCC High'
-      href: enable-whiteboard-access-gcc-high.md
+    - name: "Gérer l’accès\_: GCC High"
+      href: manage-whiteboard-access-gcc-high.md
     - name: 'Gérer les données : GCC High'
       href: manage-data-gcc-high.md
     - name: 'Gérer le partage : GCC High'
