@@ -1,6 +1,6 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: index.md
     - name: Comment Microsoft 365 aide votre entreprise
       href: m365bp-secure-users.md
@@ -14,7 +14,7 @@
   items:
     - name: Se connecter et configurer
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -34,7 +34,7 @@
   items:
     - name: Configurer des appareils non gérés (BYOD)
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-devices-overview.md
         - name: Configurez l’authentification multi-facteurs.
           href: m365bp-multifactor-authentication.md
@@ -44,7 +44,7 @@
           href: m365bp-protect-pcs-macs.md
     - name: Utiliser l’e-mail en toute sécurité
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-protect-email-overview.md
         - name: Se protéger contre le hameçonnage et les autres attaques
           href: m365bp-avoid-phishing-and-attacks.md
@@ -52,7 +52,7 @@
           href: send-encrypted-email.md
     - name: Collaborer et partager de manière sécurisée
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: m365bp-collaborate-share-securely.md
         - name: Créer Teams pour la collaboration
           href: create-teams-for-collaboration.md
@@ -64,31 +64,33 @@
           href: create-communications-site.md
 - name: Protéger les appareils gérés
   items:
-    - name: Présentation
-      href: m365bp-protect-devices.md
-    - name: Configurer les appareils gérés
-      href: m365bp-managed-devices-setup.md
-    - name: Intégrer des appareils inscrits et appliquer des stratégies
-      href: m365bp-onboard-devices-mdb.md
-    - name: Protéger les appareils Windows
+    - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Sécuriser les appareils Windows
-          href: m365bp-secure-windows-devices.md
-        - name: Gérer les appareils Windows
-          href: m365bp-manage-windows-devices.md
-        - name: Préparation au déploiement client Office
-          href: m365bp-prepare-for-office-client-deployment.md
-        - name: Créer des paramètres de protection des applications pour les appareils Windows
-          href: m365bp-protection-settings-for-windows-10-devices.md
-        - name: Valider les paramètres d’application sur les appareils Windows
-          href: m365bp-validate-settings-on-windows-10-pcs.md
+        - name: Vue d’ensemble
+          href: m365bp-protect-devices.md
+        - name: Configurer les appareils gérés
+          href: m365bp-managed-devices-setup.md
+        - name: Intégrer des appareils inscrits et appliquer des stratégies
+          href: m365bp-onboard-devices-mdb.md
+        - name: Protéger les appareils Windows
+          items:
+            - name: Sécuriser les appareils Windows
+              href: m365bp-secure-windows-devices.md
+            - name: Gérer les appareils Windows
+              href: m365bp-manage-windows-devices.md
+            - name: Préparation au déploiement client Office
+              href: m365bp-prepare-for-office-client-deployment.md
+            - name: Créer des paramètres de protection des applications pour les appareils Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Valider les paramètres d’application sur les appareils Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
     - name: Examiner et modifier les stratégies d’appareil
       href: m365bp-view-edit-create-mdb-policies.md
     - name: Gérer les groupes d’appareils
       href: m365bp-device-groups-mdb.md
 - name: Gestion des incidents de sécurité
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: m365bp-security-incident-management.md
     - name: Passer en revue les recommandations de sécurité
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -100,7 +102,7 @@
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Gérer votre environnement
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: m365bp-maintain-environment.md
     - name: Supprimer des utilisateurs
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -134,6 +136,8 @@
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: Mappage des fonctionnalités de protection avec les paramètres Intune
       href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Intune rôles d’administrateur
+      href: m365bp-intune-admin-roles-in-the-mac.md
     - name: Configurer le Gestionnaire de conformité
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender pour les PME

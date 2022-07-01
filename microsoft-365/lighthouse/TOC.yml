@@ -70,6 +70,8 @@
       href: m365-lighthouse-mitigate-threats.md
     - name: Vue d’ensemble de la page Sécurité des appareils
       href: m365-lighthouse-device-security-overview.md
+    - name: Vue d’ensemble des messages mis en quarantaine
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: Obtenir de l’aide et de l’assistance
   items:
     - name: Obtenir de l’aide et de l’assistance

@@ -26,18 +26,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 213e96c58c822d0d8b40d2e540582eb6a2719ef8
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 4baa58c4c4b48e761846c8c0ce7982c8e2c4c101
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556831"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574066"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Cybersécurité Microsoft 365 Business Premium &mdash; pour les petites entreprises
 
-Commençons par dire que vous avez fait un choix judicieux en adoptant Microsoft 365 Business Premium et ses outils de productivité de classe mondiale. Conçu avec la cybersécurité à l’esprit, Microsoft 365 Business Premium protéger vos données, appareils et informations. Vous êtes la première et la meilleure défense de votre organisation contre les pirates informatiques et les cyberattaques, y compris les individus aléatoires, le crime organisé, ou les États-nations hautement sophistiqués.
+Commençons par dire que vous avez fait un choix judicieux en adoptant Microsoft 365 Business Premium et ses outils de productivité de classe mondiale. Conçu avec la cybersécurité à l’esprit, Microsoft 365 Business Premium protéger vos données, appareils et informations. Vous êtes la première et la meilleure défense de votre organisation contre les pirates informatiques et les cyberattaques, y compris les individus aléatoires, le crime organisé ou les États-nations hautement sophistiqués.
 
-La tâche qui vous précède est &mdash; de Microsoft 365 Business Premium aider à sécuriser l’avenir de votre organisation ! Approchez cette tâche en effectuant les missions suivantes qui vous aideront à fortifier votre environnement, à former votre équipe et à protéger les appareils gérés. Les missions sont classées par ordre d’importance, et leur exécution est le moyen le plus efficace de déjouer les pirates informatiques, de se protéger contre les ransomwares, et de s’assurer que l’avenir de votre organisation est protégé avec les meilleures défenses de cybersécurité. C’est parti !
+La tâche qui vous précède est &mdash; de Microsoft 365 Business Premium aider à sécuriser l’avenir de votre organisation ! Approchez cette tâche en effectuant les missions suivantes qui vous aideront à fortifier votre environnement, à former les membres de l’organisation et à protéger les appareils gérés. Les missions sont regroupées par éléments que le Administration effectue et les éléments que les membres doivent faire. Leur exécution est le moyen le plus efficace pour déjouer les pirates, se protéger contre les ransomware, et de s’assurer que votre entreprise est protégée avec les meilleures défenses de cybersécurité. C’est parti !
 
 Cliquez sur les onglets ci-dessous pour en savoir plus sur chaque mission et comment configurer Microsoft 365 Business Premium sécurité.
 

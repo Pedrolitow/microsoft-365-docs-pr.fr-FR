@@ -1,5 +1,5 @@
 ---
-title: Guide d'essai des évaluations premium de Microsoft Compliance Manager
+title: Guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,17 +14,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Guide d'essai des évaluations premium de Microsoft Compliance Manager.
-ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
+ms.custom: trial-playbook
+ms.openlocfilehash: 3d41cde8cbf7cb6158573ed158a41dfe42d28dd5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759852"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530994"
 ---
-# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Guide d'essai : évaluations premium de Microsoft Compliance Manager
+# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Guide opérationnel d'essai : évaluations premium du Gestionnaire de conformité Microsoft Purview
 
-Bienvenue dans le guide d'essai des évaluations premium de Microsoft Compliance Manager.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Bienvenue au guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
 
 Ce manuel vous aidera à utiliser au mieux votre version d’évaluation gratuite de 90 jours en vous enseignant comment utiliser l’ensemble complet de modèles d’évaluation premium (modules).
 
@@ -61,7 +64,7 @@ Le Gestionnaire de conformité propose également plus de 300 modèles réglemen
 
 Les licences d’essai vous permettent d’utiliser 25 modèles premium pendant 90 jours. Vous pourrez choisir parmi une liste de plus de 300 modèles premium. Vous n’êtes pas obligé de sélectionner les 25 modèles à la fois. Une fois sélectionnés, les modèles sous licence sont disponibles pour votre utilisation dans les 4 heures après l’obtention de votre licence d’essai.
 
-Il existe deux façons d’activer la version d Premium d’évaluation du module d’évaluation : par le biais du tableau de bord du Gestionnaire de conformité ou de la version d’évaluation Microsoft 365 conformité.
+Il existe deux façons d’activer la version d Premium d’évaluation du module d’évaluation : par le biais du tableau de bord du Gestionnaire de conformité ou de la version d’évaluation Microsoft Purview.
 
 ### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>Activer la version d’essai via le tableau de bord du Gestionnaire de conformité
 

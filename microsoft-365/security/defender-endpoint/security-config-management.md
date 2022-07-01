@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622623"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573913"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager
 
@@ -38,7 +38,7 @@ ms.locfileid: "65622623"
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-La gestion de la sécurité pour Microsoft Defender pour point de terminaison est une fonctionnalité pour les appareils qui ne sont pas gérés par un Microsoft Endpoint Manager, Microsoft Intune ou Microsoft Endpoint Configuration Manager, pour recevoir des configurations de sécurité pour Microsoft Defender directement à partir de Endpoint Manager.
+La gestion de la sécurité pour Microsoft Defender pour point de terminaison est une fonctionnalité permettant aux appareils qui ne sont pas gérés par un Endpoint Manager Microsoft de recevoir des configurations de sécurité pour Microsoft Defender directement à partir de Endpoint Manager.
 
 
 Pour plus d’informations sur la gestion de la configuration de la sécurité, notamment les prérequis, les plateformes prises en charge et bien plus encore, consultez [Gérer les Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
@@ -56,7 +56,7 @@ Pour plus d’informations sur la gestion de la configuration de la sécurité, 
 Si vous rencontrez des problèmes d’inscription, consultez [Résoudre les problèmes d’intégration de Security Configuration Management](troubleshoot-security-config-mgt.md).
 
 > [!NOTE]
-> Cette fonctionnalité ne s’applique pas aux appareils qui sont déjà inscrits à Microsoft Endpoint Manager (Intune ou Configuration Manager). Les appareils inscrits dans Intune continueront de recevoir des stratégies via leur canal de gestion établi.
+> Cette fonctionnalité ne s’applique pas aux appareils qui sont déjà inscrits auprès de Microsoft Endpoint Manager (Intune ou Configuration Manager). Les appareils inscrits dans Intune continueront de recevoir des stratégies via leur canal de gestion établi.
 
 ## <a name="identify-onboarded-devices"></a>Identifier les appareils intégrés
 
@@ -64,9 +64,9 @@ Suivez les étapes suivantes pour vérifier que vos points de terminaison ont te
 
 1.  Vérifiez que l’appareil apparaît dans la section Inventaire des [appareils de Microsoft 365 Defender](https://security.microsoft.com/).
 
-2.  Dans le [portail Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/), vérifiez que l’appareil a bien été inscrit.
+2.  Dans le [portail Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/), vérifiez que l’appareil a été correctement inscrit.
 
-3.  Dans le [Microsoft Endpoint Manager Centre d’administration](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview), vérifiez que l’appareil a été correctement inscrit en le recherchant dans la section **Appareils > Tous les appareils**.
+3.  Dans le [Centre de Endpoint Manager Administration Microsoft](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview), vérifiez que l’appareil a bien été inscrit en le recherchant dans la section **Appareils > Tous les appareils**.
 
 
 ## <a name="offboard-devices"></a>Appareils hors-carte

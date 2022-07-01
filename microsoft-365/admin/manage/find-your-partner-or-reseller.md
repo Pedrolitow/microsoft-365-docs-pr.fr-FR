@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir les coordonnées d’un partenaire avec lequel vous avez travaillé par le passé.
-ms.openlocfilehash: 338ea8e9c1f0fd75143ec97ca7ea06b7ee15a1c5
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir les informations de contact d’un partenaire avec lequel vous avez travaillé dans le passé.
+ms.openlocfilehash: af865ee194cb9efb5c2891e6c73d860604c57bec
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468479"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573755"
 ---
 # <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Rechercher votre partenaire ou revendeur d’abonnements Microsoft 365
 
@@ -39,7 +39,7 @@ En tant qu’administrateur, vous pouvez travailler avec un partenaire pour ache
   
 ## <a name="find-a-new-partner-or-reseller"></a>Rechercher un nouveau partenaire ou revendeur
 
-Si vous êtes prêt à acheter ou à renouveler Microsoft 365 via open volume licensing, ou si vous souhaitez simplement plus d’informations sur l’utilisation d’un partenaire, choisissez une option ci-dessous. 
+Si vous êtes prêt à acheter ou renouveler Microsoft 365 via open volume licensing, ou si vous souhaitez simplement plus d’informations sur l’utilisation d’un partenaire, choisissez une option ci-dessous. 
   
 - [Rechercher un partenaire de service certifié Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -52,7 +52,7 @@ Si vous êtes prêt à acheter ou à renouveler Microsoft 365 via open volume li
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Obtenir des informations sur les partenaires dans le Centre d’administration
 
-1. Dans le Centre d’administration, accédez à la page **des relations Paramètres** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner</a>.
+1. Dans le Centre d’administration, accédez à la page **Relations du partenaire paramètres** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank"></a>
   
 2. Si vous avez un partenaire, le nom et la relation du partenaire avec votre organisation sont répertoriés ici. Pour afficher les informations de contact du partenaire (numéro de téléphone et adresse e-mail), sélectionnez le nom du partenaire.
     
@@ -63,5 +63,3 @@ Si vous êtes prêt à acheter ou à renouveler Microsoft 365 via open volume li
  **Pour les partenaires Microsoft**
   
 [Aide pour les partenaires](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
-  
-
