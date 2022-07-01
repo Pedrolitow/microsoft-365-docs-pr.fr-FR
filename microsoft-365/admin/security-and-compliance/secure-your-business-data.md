@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques pour sécuriser les Microsoft 365 pour les entreprises
+title: Meilleures pratiques pour sécuriser Microsoft 365 pour les entreprises
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -28,25 +28,29 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 44acc5b7b76d1ae355db88e9773982e1d1e1b4d2
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739502"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602931"
 ---
-# <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser les Microsoft 365 pour les entreprises
+# <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser Microsoft 365 pour les entreprises
 
-Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’entreprise de Microsoft, les conseils de cet article vous aident à renforcer la sécurité de votre organisation. Parmi vos choix, Microsoft 365 Business Premium ouvre la voie, car il inclut désormais Microsoft Defender pour les PME et d’autres [protections de sécurité](../../business-premium/get-microsoft-365-business-premium.md). Les actions recommandées présentées ici vous aideront à atteindre les objectifs décrits dans le Manuel de la [campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+
+Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’entreprise de Microsoft, les conseils de cet article vous aident à renforcer la sécurité de votre organisation. Parmi vos choix, Microsoft 365 Business Premium ouvre la voie, car il inclut désormais Microsoft Defender pour entreprises et d’autres [protections de sécurité](../../business-premium/get-microsoft-365-business-premium.md). Les actions recommandées présentées ici vous aideront à atteindre les objectifs décrits dans le Manuel de la [campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy.
 
 > [!TIP]
 > Si vous avez besoin d’aide pour suivre les étapes décrites dans cet article, envisagez de [travailler avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-a-quick-overview-of-security"></a>Regarder : Vue d’ensemble rapide de la sécurité
 
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-Tous les plans Microsoft 365 offrent une protection et une sécurité de base avec l’antivirus Defender, mais avec Microsoft 365 Business Premium vous disposez également de fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils en raison de l’inclusion de Microsoft Defender pour les PME.  Ces fonctionnalités supplémentaires protègent votre organisation contre les menaces en ligne et l’accès non autorisé, ainsi que vous permettent de gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
+Tous les plans Microsoft 365 offrent une protection et une sécurité de base avec l’antivirus Defender, mais avec Microsoft 365 Business Premium vous disposez également de fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils en raison de l’inclusion de Microsoft Defender pour entreprises.  Ces fonctionnalités supplémentaires protègent votre organisation contre les menaces en ligne et l’accès non autorisé, ainsi que vous permettent de gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
 
 ## <a name="security-features-comparison"></a>Comparaison des fonctionnalités de sécurité
 
@@ -61,14 +65,14 @@ Pour en savoir plus sur l’une des fonctionnalités du plan de service, cliquez
 [Se protéger contre les rançongiciels](#protect-against-ransomware) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection pour le courrier électronique et le stockage cloud) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection accrue pour les appareils, les e-mails et le stockage cloud) |
 [Chiffrer les e-mails sensibles](#send-encrypted-email) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [Protéger votre courrier contre les attaques par hameçonnage](#protect-sensitive-emails) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Protection anti-hameçonnage) | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection avancée contre le hameçonnage) |
-[Protéger contre les pièces jointes, fichiers et URL malveillants dans les fichiers e-mail et Office](#protect-against-malicious-attachments-files-and-urls) | | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Coffre liens et pièces jointes Coffre) |
+[Protéger contre les pièces jointes, fichiers et URL malveillants dans les fichiers e-mail et Office](#protect-against-malicious-attachments-files-and-urls) | | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Liens sécurisés et pièces jointes sécurisées) |
 [Augmenter la protection des appareils de votre organisation](#increase-protection-for-your-organizations-devices) | | ![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(protection des appareils de niveau entreprise) |
 
-Vous pouvez rapidement configurer la sécurité et commencer à collaborer en toute sécurité avec les conseils que nous fournissons dans la bibliothèque [Microsoft 365 Business Premium](../../business-premium/index.md). Les informations de Premium d’entreprise ont été développées en partenariat avec l’équipe Microsoft Defending Democracy pour protéger tous les clients des petites entreprises contre les cybermenaces lancées par des cyberattaques sophistiquées et des pirates informatiques.
+Vous pouvez rapidement configurer la sécurité et commencer à collaborer en toute sécurité avec les conseils que nous fournissons dans la bibliothèque [Microsoft 365 Business Premium](../../business-premium/index.md). Les informations Business Premium ont été développées en partenariat avec l’équipe Microsoft Defending Democracy pour protéger tous les clients des petites entreprises contre les cybermenaces lancées par des cyberattaques sophistiquées et des pirates informatiques.
 
-### <a name="about-the-microsoft-365-secure-score"></a>À propos du score de sécurité Microsoft 365
+### <a name="about-the-microsoft-365-secure-score"></a>À propos du degré de sécurisation de Microsoft 365
 
-Il est important que, avant de commencer, vous vérifiez votre [Microsoft 365 degré de sécurisation](../../security/defender/microsoft-secure-score.md) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos Microsoft 365 identités, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre aux recommandations avec une application ou un logiciel tiers. Grâce à des insights supplémentaires et à une meilleure visibilité sur un ensemble plus large de produits et services Microsoft, vous pouvez créer des rapports fiables sur l’intégrité de la sécurité de votre organisation.
+Avant de commencer, il est important de vérifier votre degré de [sécurisation Microsoft 365](../../security/defender/microsoft-secure-score.md) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos identités, données, applications, appareils et infrastructure Microsoft 365. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre aux recommandations avec une application ou un logiciel tiers. Grâce à des insights supplémentaires et à une meilleure visibilité sur un ensemble plus large de produits et services Microsoft, vous pouvez créer des rapports fiables sur l’intégrité de la sécurité de votre organisation.
 
 ![Capture d’écran de Microsoft Secure Score.](../../media/secure-score.png)
 
@@ -85,13 +89,13 @@ Pour voir une vidéo de formation sur la configuration de l’authentification m
 
 Pour la plupart des organisations, les paramètres de sécurité par défaut offrent un bon niveau de sécurité de connexion ajoutée. Pour plus d’informations, consultez [Présentation des paramètres de sécurité par défaut](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) Si votre abonnement est nouveau, les paramètres de sécurité par défaut peuvent déjà être activés automatiquement.
 
-Activez ou désactivez les paramètres de sécurité par défaut dans le volet **Propriétés** pour Azure Active Directory (Azure AD) dans le Portail Azure.
+Activez ou désactivez les paramètres de sécurité par défaut dans le volet **Propriétés** d’Azure Active Directory (Azure AD) dans le Portail Azure.
 
 1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) avec des informations d'identification d'administrateur général.
 
 2. Dans le volet de navigation gauche, sélectionnez **Afficher tout** puis sous **Centres d’administration**, sélectionnez **Azure Active Directory**.
 
-3. Dans le **centre d’administration Azure Active Directory**, choisissez **Azure Active Directory** >  **Properties**.
+3. Dans le Centre d’administration **Azure Active Directory**, choisissez **Propriétés** **Azure Active Directory** > .
 
 4. Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
 
@@ -135,11 +139,11 @@ Votre environnement Microsoft 365 inclut une protection contre les programmes ma
 
 - Utilisation [de stratégies prédéfines pour Microsoft Office 365](../../../microsoft-365/security/office-365-security/preset-security-policies.md).
 - Blocage des pièces jointes avec certains types de fichiers.
-- Utilisation de la protection antivirus/anti-programme malveillant sur vos appareils, en particulier Microsoft Defender pour les PME. Il inclut des fonctionnalités telles que le [rapport d’investigation automatisé](../../security/office-365-security/air-view-investigation-results.md) (AIR) et le tableau de bord de gestion des menaces et des vulnérabilités (TVM). Lorsque Microsoft Defender pour les PME n’est pas votre logiciel antivirus principal, vous pouvez toujours l’exécuter en mode passif et utiliser la protection et la réponse des points de [terminaison (PEPT),](../../security/defender-endpoint/overview-endpoint-detection-response.md) en particulier en [mode bloc](../../security/defender-endpoint/edr-in-block-mode.md) où il fonctionne en arrière-plan pour corriger les artefacts malveillants détectés par les fonctionnalités de PEPT et manqués par le logiciel de détection de virus principal.
+- Utilisation de la protection antivirus/anti-programme malveillant sur vos appareils, en particulier Microsoft Defender pour entreprises. Il inclut des fonctionnalités telles que le [rapport d’investigation automatisé](../../security/office-365-security/air-view-investigation-results.md) (AIR) et le tableau de bord de gestion des menaces et des vulnérabilités (TVM). Lorsque Microsoft Defender pour entreprises n’est pas votre logiciel antivirus principal, vous pouvez toujours l’exécuter en mode passif et utiliser la protection et la réponse de point de [terminaison (EDR),](../../security/defender-endpoint/overview-endpoint-detection-response.md) en particulier en [mode bloc](../../security/defender-endpoint/edr-in-block-mode.md) où il fonctionne en arrière-plan pour corriger les artefacts malveillants détectés par les fonctionnalités d’EDR et manqués par le logiciel détecteur de virus principal.
 
 ### <a name="block-attachments-with-certain-file-types"></a>Bloquer les pièces jointes avec certains types de fichiers
 
-Vous pouvez augmenter la protection contre les programmes malveillants en bloquant les pièces jointes avec les types de fichiers couramment utilisés pour les programmes malveillants. Pour augmenter la protection contre les programmes malveillants dans l’e-mail, regardez une [courte vidéo de formation](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail) ou effectuez les étapes suivantes :
+Vous pouvez augmenter la protection contre les programmes malveillants en bloquant les pièces jointes avec les types de fichiers couramment utilisés pour les programmes malveillants. Pour augmenter la protection contre les programmes malveillants dans l’e-mail, consultez [Espion : augmentez le niveau de protection contre les programmes malveillants dans le courrier](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail) ou effectuez les étapes suivantes :
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, accédez à **e-mail & stratégies de collaboration** \> **& règles** \> **anti-programmes malveillants**  \> dans la section **Stratégies**.
 2. Dans la page **Anti-programme malveillant** , double-cliquez sur **Par défaut**. Un menu volant s’affiche.
@@ -151,7 +155,7 @@ Pour plus d’informations, consultez [Protection anti-programme malveillant dan
 
 ### <a name="use-antivirus-and-anti-malware-protection"></a>Utiliser la protection antivirus et anti-programme malveillant
 
-Antivirus Microsoft Defender fournit une protection antivirus et anti-programme malveillant forte, et est intégré au système d’exploitation Windows.
+L’antivirus Microsoft Defender offre une protection antivirus et anti-programme malveillant renforcée, et est intégré au système d’exploitation Windows.
 
 Si votre organisation utilise Microsoft 365 Business Premium, vous bénéficiez d’une protection supplémentaire des appareils, notamment :
 
@@ -159,7 +163,7 @@ Si votre organisation utilise Microsoft 365 Business Premium, vous bénéficiez 
 - Protection pare-feu
 - Filtrage du contenu web
 
-Ces fonctionnalités sont incluses dans Microsoft Defender pour les PME, une offre qui commencera à être déployée pour Microsoft 365 Business Premium clients, à compter du 1er mars 2022.
+Ces fonctionnalités sont incluses dans Microsoft Defender pour entreprises, une offre qui commencera à être déployée pour Microsoft 365 Business Premium clients, à compter du 1er mars 2022.
 
 [En savoir plus sur Microsoft Defender pour les PME](../../security/defender-business/mdb-overview.md).
 
@@ -173,11 +177,11 @@ Vous pouvez vous protéger contre les ransomwares en créant une ou plusieurs r�
 
 - Utilisez OneDrive pour déplacer des fichiers, afin qu’ils soient toujours contrôlés par l’accès et protégés.
 
-- Avertir les utilisateurs avant d’ouvrir Office pièces jointes de fichier qui incluent des macros. Les ransomware peuvent être masqués à l’intérieur des macros. Nous avertirons donc les utilisateurs de ne pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
+- Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués à l’intérieur des macros. Nous avertirons donc les utilisateurs de ne pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
 
 - Bloquez les types de fichiers qui peuvent contenir des ransomware ou tout autre code malveillant. Nous allons commencer par une liste commune d’exécutables (répertoriées dans le tableau ci-dessous). Si votre organisation utilise l’un de ces types exécutables et que vous vous attendez à ce qu’ils soient envoyés par e-mail, ajoutez-les à la règle précédente (avertir les utilisateurs).
 
-Pour créer une règle de transport de courrier, affichez une [courte vidéo de formation](increase-threat-protection.md#protect-against-ransomware) ou effectuez les étapes suivantes :
+Pour créer une règle de transport de courrier, consultez [Espion : Protéger contre les ransomware](increase-threat-protection.md#watch-protect-against-ransomware) ou effectuez les étapes suivantes :
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
@@ -191,7 +195,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 
 6. Sélectionnez **Enregistrer**.
 
-| Setting | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètre | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : types de fichiers de blocage  <br/> |
 |Appliquez cette règle si . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |
@@ -202,7 +206,7 @@ Pour créer une règle de transport de courrier, affichez une [courte vidéo de 
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants dans [Protéger contre les programmes malveillants](#protect-against-malware).
 
-Si vous souhaitez plus d’informations, consultez :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -213,7 +217,7 @@ Si vous souhaitez plus d’informations, consultez :
 
 ## <a name="protect-sensitive-emails"></a>Protéger les e-mails sensibles
 
-Microsoft 365 inclut Office chiffrement des messages qui vous permet d’envoyer et de recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation, et seuls les destinataires prévus peuvent les afficher. Le chiffrement fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
+Microsoft 365 inclut Le chiffrement des messages Office qui vous permet d’envoyer et de recevoir des messages électroniques chiffrés entre des personnes internes et externes à votre organisation, et seuls les destinataires prévus peuvent les afficher. Le chiffrement fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
 
 > [!Tip]
 > Si un niveau de sécurité plus strict est nécessaire, votre organisation doit également configurer et utiliser l’étiquetage de confidentialité pour les e-mails ou les fichiers. [Les étiquettes de confidentialité](../../compliance/sensitivity-labels.md) permettent de contrôler le contenu, où qu’il aille.
@@ -229,7 +233,7 @@ Pour chiffrer votre e-mail :
 
 ### <a name="receive-encrypted-email"></a>Recevoir un e-mail chiffré
 
-Si le destinataire a Outlook 2013 ou Outlook 2016 et un compte de messagerie Microsoft, il voit une alerte concernant les autorisations restreintes de l’élément dans le volet de lecture. Après avoir ouvert le message, le destinataire peut afficher le message comme n’importe quel autre.
+Si le destinataire a Outlook 2013 ou Outlook 2016 et un compte de messagerie Microsoft, une alerte sur les autorisations restreintes de l’élément s’affiche dans le volet de lecture. Après avoir ouvert le message, le destinataire peut afficher le message comme n’importe quel autre.
 
 Si le destinataire utilise un autre client de messagerie ou un autre compte de messagerie, tel que Gmail ou Yahoo, il voit un lien qui lui permet de se connecter pour lire le message électronique ou de demander un code secret unique pour afficher le message dans un navigateur web. Si les utilisateurs ne reçoivent pas l’e-mail, ils doivent vérifier leur dossier courrier indésirable ou courrier indésirable.
 
@@ -271,11 +275,11 @@ Nous vous recommandons de commencer à utiliser cette protection en créant une 
 
 ## <a name="protect-against-malicious-attachments-files-and-urls"></a>Protéger contre les pièces jointes, fichiers et URL malveillants
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en examinant un e-mail. Microsoft Defender pour Office 365 inclut Coffre protection des pièces jointes, mais cette protection n’est pas activée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sécurisée ou malveillante simplement en examinant un message électronique. Microsoft Defender pour Office 365 inclut la protection des pièces jointes sécurisées, mais cette protection n’est pas activée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
 
-### <a name="set-up-safe-attachments"></a>Configurer Coffre pièces jointes
+### <a name="set-up-safe-attachments"></a>Configurer des pièces jointes sécurisées
 
-Vous pouvez utiliser des stratégies de Coffre pièces jointes prédéfines ou créer les vôtres. Pour créer une stratégie de Coffre pièces jointes, affichez une [courte vidéo de formation](increase-threat-protection.md) ou effectuez les étapes suivantes :
+Vous pouvez utiliser des stratégies de pièces jointes sécurisées prédéfines ou créer les vôtres. Pour créer une stratégie pièces jointes sécurisées, affichez une [courte vidéo de formation](increase-threat-protection.md) ou effectuez les étapes suivantes :
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a> et connectez-vous avec votre compte d’administrateur.
 
@@ -298,9 +302,9 @@ Vous pouvez utiliser des stratégies de Coffre pièces jointes prédéfines ou c
 > [!TIP]
 > Pour plus d’informations, consultez Configurer des stratégies [anti-hameçonnage dans Defender pour Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-### <a name="set-up-safe-links"></a>Configurer des liens Coffre
+### <a name="set-up-safe-links"></a>Configurer des liens fiables
 
-Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Coffre Liens, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les e-mails et les documents Office. La protection est définie par le biais de stratégies de liens Coffre.
+Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Les liens fiables, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les e-mails et les documents Office. La protection est définie par le biais de stratégies de liaisons sécurisées.
 
 Procédez comme suit pour vous protéger contre les attaques :
 
@@ -308,7 +312,7 @@ Procédez comme suit pour vous protéger contre les attaques :
 
 - Ajoutez une nouvelle stratégie destinée à tous les destinataires de votre domaine.
 
-Pour accéder à Coffre Liens, affichez une [courte vidéo de formation](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links) ou effectuez les étapes suivantes :
+Pour accéder à Liens sécurisés, consultez [Espion : Protégez votre courrier contre les attaques par hameçonnage](increase-threat-protection.md#watch-protect-your-email-from-phishing-attacks), ou effectuez les étapes suivantes :
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a> et connectez-vous avec votre compte d’administrateur.
 
@@ -326,33 +330,33 @@ Pour modifier la stratégie par défaut :
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Coffre la stratégie de liens pour tous les destinataires du domaine|
+|Nom|Stratégie de liens sécurisés pour tous les destinataires du domaine|
 |Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez **Activé : les URL sont réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.|
 |Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers|Sélectionnez cette zone.|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 
 > [!TIP]
-> Pour plus d’informations, consultez [Coffre Liens dans Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
+> Pour plus d’informations, consultez [Liens sécurisés dans Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
 
 ## <a name="increase-protection-for-your-organizations-devices"></a>Augmenter la protection des appareils de votre organisation
 
-Antivirus Microsoft Defender est intégré au système d’exploitation Windows et offre une bonne protection contre les virus et les programmes malveillants. Toutefois, vous pouvez renforcer la protection des appareils de votre organisation en les intégrant à Microsoft Defender pour les PME qui est une nouvelle offre pour les petites et moyennes entreprises comme la vôtre et qui est incluse dans [Microsoft 365 Business Premium](../../business-premium/index.md). Avec Defender entreprise, les appareils de votre organisation sont mieux protégés contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces.
+L’antivirus Microsoft Defender est intégré au système d’exploitation Windows et offre une bonne protection contre les virus et les programmes malveillants. Toutefois, vous pouvez renforcer la protection des appareils de votre organisation en les intégrant à Microsoft Defender pour entreprises qui est une nouvelle offre pour les petites et moyennes entreprises comme la vôtre, et qui est incluse dans [Microsoft 365 Business Premium](../../business-premium/index.md). Avec Defender entreprise, les appareils de votre organisation sont mieux protégés contre les ransomware, les programmes malveillants, le hameçonnage et d’autres menaces.
 
-Avec Microsoft 365 Business Premium vous bénéficiez de fonctionnalités de sécurité renforcées telles que la gestion des appareils et la protection avancée contre les menaces. Lorsque vous inscrivez des appareils à Microsoft 365 Entreprise pour Defender, les appareils sont surveillés et protégés par InTune.
+Avec Microsoft 365 Business Premium vous bénéficiez de fonctionnalités de sécurité renforcées telles que la gestion des appareils et la protection avancée contre les menaces. Lorsque vous inscrivez des appareils dans Microsoft 365 Business pour Defender, les appareils sont surveillés et protégés par InTune.
 
 
 Pour en savoir plus, consultez les ressources suivantes :
 
-- [Vue d’ensemble de Microsoft Defender pour les PME](../../security/defender-business/mdb-overview.md)
+- [Vue d’ensemble de Microsoft Defender pour entreprises](../../security/defender-business/mdb-overview.md)
 
-- [Configurer et configurer Microsoft Defender pour les PME](../../security/defender-business/mdb-setup-configuration.md)
+- [Configurer et configurer Microsoft Defender pour entreprises](../../security/defender-business/mdb-setup-configuration.md)
 
-- [Démarrage à l’aide du portail Microsoft 365 Defender](../../security/defender-business/mdb-get-started.md)
+- [Prise en main du portail Microsoft 365 Defender](../../security/defender-business/mdb-get-started.md)
 
 ## <a name="related-content"></a>Contenu connexe
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Gérer et surveiller les comptes prioritaires](../setup/priority-accounts.md) (article)\
-[Microsoft 365 rapports dans le Centre d’administration](../activity-reports/activity-reports.md) (vidéo)\
+[Rapports Microsoft 365 dans le centre d’administration](../activity-reports/activity-reports.md) (vidéo)\
 [Microsoft 365 Business Premium — cybersécurité pour les petites entreprises](/microsoft-365/business-premium/) (article)\
 

@@ -1,7 +1,7 @@
 ---
 title: Évaluer la protection du réseau
-description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants contre qui elle est protégée.
-keywords: Protection du réseau, attaques, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
+description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants auxquels elle protège.
+keywords: Protection réseau, exploits, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,15 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476134"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603921"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -31,24 +30,24 @@ ms.locfileid: "64476134"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[La protection du](network-protection.md) réseau empêche les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet.
+[La protection réseau](network-protection.md) permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux susceptibles d’héberger des escroqueries, des exploits et d’autres contenus malveillants sur Internet.
 
-Cet article vous aide à évaluer la protection du réseau en activant la fonctionnalité et en vous guidant vers un site de test. Les sites de cet article d’évaluation ne sont pas malveillants. Ce sont des sites web spécialement créés qui prétendent être malveillants. Le site réplique le comportement qui se produit si un utilisateur a visité un site ou un domaine malveillant.
+Cet article vous aide à évaluer la protection réseau en activant la fonctionnalité et en vous guidant vers un site de test. Les sites de cet article d’évaluation ne sont pas malveillants. Ce sont des sites web spécialement créés qui prétendent être malveillants. Le site répliquera le comportement qui se produirait si un utilisateur visitait un site ou un domaine malveillant.
 
 > [!TIP]
-> Vous pouvez également consulter le site web des scénarios de démonstration de Microsoft Defender [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent les autres fonctionnalités de protection.
+> Vous pouvez également visiter le site web des scénarios de démonstration Microsoft Defender à [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent d’autres fonctionnalités de protection.
 
 > [!NOTE]
 > Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 
-Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métiers ou qu’elle vous donne une idée de la fréquence des blocages.
+Activez la protection réseau en mode audit pour voir quelles adresses IP et domaines auraient été bloqués. Vous pouvez vous assurer qu’il n’affecte pas les applications métier ou vous faire une idée de la fréquence à laquelle les blocs se produisent.
 
-1. **Tapez powershell** dans la menu Démarrer, cliquez avec le bouton **droit sur Windows PowerShell puis sélectionnez** **Exécuter en tant qu’administrateur**
-2. Entrez l’cmdlet suivante :
+1. Tapez **PowerShell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**
+2. Entrez l’applet de commande suivante :
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
@@ -65,24 +64,24 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
     :::image type="content" source="images/np-notif.png" alt-text="Notification de blocage de connexion" lightbox="images/np-notif.png":::
 
 > [!NOTE]
-> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, [voir Protection du réseau et](network-protection.md#network-protection-and-the-tcp-three-way-handshake) protocole d’accès TCP triple.
+> Les connexions réseau peuvent réussir même si un site est bloqué par la protection réseau. Pour plus d’informations, consultez [la protection réseau et l’établissement d’une liaison TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake) triple.
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows observateur d'événements
 
-Pour passer en revue les applications qui auraient été bloquées, ouvrez l’Observateur d’événements et filtrez l’ID d’événement 1125 dans le journal microsoft-Windows-Windows Defender/opérationnel. Le tableau suivant répertorie tous les événements de protection réseau.
+Pour examiner les applications qui auraient été bloquées, ouvrez observateur d'événements et filtrez l’ID d’événement 1125 dans le journal Microsoft-Windows-Windows Defender/Operational. Le tableau suivant répertorie tous les événements de protection réseau.
 
 | ID d’événement | Fournir/Source | Description |
 |---|---|---|
 | 5007 | Windows Defender (opérationnel) | Événement lorsque les paramètres sont modifiés |
 | 1125 | Windows Defender (opérationnel) | Événement lors de l’audit d’une connexion réseau |
-| 1126 | Windows Defender (opérationnel) | Événement lors du blocage d’une connexion réseau |
+| 1126 | Windows Defender (opérationnel) | Événement lorsqu’une connexion réseau est bloquée |
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection du réseau](network-protection.md)
 
-- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protection réseau et liaison TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
-- [Activer la protection du réseau](enable-network-protection.md)
+- [Activer la protection réseau](enable-network-protection.md)
 
-- [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)
+- [Résoudre les problèmes de protection réseau](troubleshoot-np.md)

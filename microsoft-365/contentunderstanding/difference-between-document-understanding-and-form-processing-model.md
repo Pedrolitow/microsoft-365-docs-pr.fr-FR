@@ -1,5 +1,5 @@
 ---
-title: Différences entre la compréhension des documents et les modèles de traitement des formulaires
+title: Différences entre les modèles personnalisés dans Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les principales différences entre un modèle de compréhension de document et un modèle de traitement de formulaire.
-ms.openlocfilehash: 49e3e2a0d63303b1c5cbdbfd941ba8aaa40594a7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 31f70983b90e758516f92081217010bb6a64acd4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491700"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603789"
 ---
-# <a name="differences-between-document-understanding-and-form-processing-models"></a>Différences entre la compréhension des documents et les modèles de traitement des formulaires 
+# <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Différences entre les modèles personnalisés dans Microsoft SharePoint Syntex 
 
 La compréhension du contenu dans Microsoft SharePoint Syntex vous permet d’identifier et de classer les documents chargés dans les bibliothèques de documents SharePoint, puis d’extraire les informations pertinentes de chaque fichier. Par exemple, lorsque les fichiers sont téléchargés vers une bibliothèque de documents SharePoint, tous les fichiers identifiés comme *Bons de commande* sont classés comme tels, puis affichés dans une vue personnalisée de la bibliothèque de documents. De plus, vous pouvez extraire des informations spécifiques de chaque fichier (par exemple, le *Numéro de bon de commande* et le *Total*) et les afficher sous forme de colonne dans la vue de votre bibliothèque de documents. 
 
@@ -78,7 +78,7 @@ Utilisez le tableau suivant pour comprendre quand utiliser le traitement des for
 | Création de modèles | Modèle créé dans le Générateur d’intelligence artificielle avec un accès transparent à partir d’une bibliothèque de documents SharePoint.| Modèle créé dans SharePoint dans un nouveau site, le centre de contenu. |
 | Type de classification| Le classificateur réglable est utilisé pour donner des indices au système sur les données à extraire.| Classifieur pouvant être formé avec des extracteurs facultatifs utilisant l’apprentissage automatique pour attribuer l’emplacement du document aux données à extraire.|
 | Emplacements | Formé pour une seule bibliothèque de documents.| Peut être appliqué à plusieurs bibliothèques.|
-| Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Les fichiers Office sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages. Les modèles de compréhension de document prennent en charge les types de fichiers suivants : docx, eml, heic, heif, htm, html, jpeg, jpg, markdown, md, msg, pdf, png, ppt, pptx, rtf, tif, tiff, txt, xls et xlsx.|
+| Types de fichiers pris en charge| Entraînez-vous au format PDF, JPG, PNG, un total de 50 Mo et 500 pages.| Entraînez-vous sur 5 à 10 fichiers PDF, Office ou courrier électronique, avec des exemples négatifs.<br>Les fichiers Office sont tronqués à 64 000 caractères. Les fichiers numérisés par OCR sont limités à 20 pages. Consultez [les types de fichiers pris en charge](document-understanding-overview.md#supported-file-types).|
 | Intégration aux métadonnées gérées | Non | Oui, par l’extracteur de l’entité de formation qui fait référence à un champ de métadonnées gérées configurée.|
 | Intégration des fonctionnalités de conformité à Protection des données Microsoft Purview | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité à venir. | Définissez les étiquettes de rétention publiées.<br>Définissez les étiquettes de confidentialité publiées. |
 | Régions pris en charge| Le traitement des formulaires s’appuie sur la plateforme Power. Pour plus d’informations sur la disponibilité globale de la plateforme Power et du Générateur d’intelligence artificielle, consultez [Disponibilité de la plateforme Power](https://dynamics.microsoft.com/geographic-availability/). | Disponible dans toutes les régions.|

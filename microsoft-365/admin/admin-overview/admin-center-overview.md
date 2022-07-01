@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans le Centre d'administration Microsoft 365 pour gérer les tâches courantes ou la vue de tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159551"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601649"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 - [Le Centre d'administration en mode affichage simplifié](#watch-the-admin-center-in-simplified-view)
 - [Le centre d’administration en mode tableau de bord](#watch-the-admin-center-in-dashboard-view)
@@ -38,6 +40,8 @@ ms.locfileid: "66159551"
 Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> a deux modes d’affichage : le mode affichage simplifié permet aux petites organisations de gérer leurs tâches les plus courantes. L’affiche en mode tableau de bord inclut des paramètres et des tâches plus complexes. Vous pouvez basculer entre le deux mode à partir d’un bouton en haut du Centre d’administration.
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>Regarder : le Centre d'administration en mode affichage simplifié
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197911).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -161,7 +165,7 @@ Microsoft 365 est une solution intelligente, incluant Office 365, Windows 10 et 
 - Microsoft 365 Entreprise E3
 - Microsoft 365 Entreprise E5
 
-Pour plus d’informations, consultez [Essayer ou acheter un abonnement Microsoft 365 entreprise](../../commerce/try-or-buy-microsoft-365.md). 
+Pour plus d’informations, consultez [Essayer ou acheter un abonnement Microsoft 365 pour les entreprises](../../commerce/try-or-buy-microsoft-365.md). 
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment le faire savoir à Microsoft ?
 

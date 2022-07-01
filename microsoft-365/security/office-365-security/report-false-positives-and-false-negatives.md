@@ -13,34 +13,34 @@ ms.collection:
 description: Découvrez comment signaler des faux positifs et des faux négatifs dans Outlook à l’aide de la fonctionnalité Message de rapport.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416969"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602135"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des boîtes aux lettres Exchange Online ou locales à l’aide de l’authentification moderne hybride, vous pouvez envoyer des faux positifs (bon e-mail bloqué ou envoyé au dossier indésirable) et de faux négatifs (courrier indésirable ou hameçonnage qui a été remis à la boîte de réception) à Exchange Online Protection (EOP).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des boîtes aux lettres Exchange Online ou locales à l’aide de l’authentification moderne hybride, vous pouvez envoyer des faux positifs (bon e-mail bloqué ou envoyé au dossier indésirable) et de faux négatifs (e-mail indésirable ou hameçonnage qui a été remis à la boîte de réception) à Exchange Online Protection (EOP).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Pour une meilleure expérience d’envoi des utilisateurs, utilisez le complément Message de rapport ou le complément Report Phishing.
 
-- Le complément Message de rapport et le complément Report Phishing fonctionnent pour les Outlook sur toutes les plateformes (Outlook sur le web, iOS, Android et Desktop).
+- Le complément Message de rapport et le complément Report Phishing fonctionnent pour Outlook sur toutes les plateformes (Outlook sur le web, iOS, Android et Desktop).
 
-- Si vous êtes administrateur dans une organisation avec des boîtes aux lettres Exchange Online, utilisez le portail Soumissions dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser la soumission d’administrateur pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
+- Si vous êtes administrateur dans une organisation avec des boîtes aux lettres Exchange Online, utilisez le portail Soumissions dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser Administration Soumission pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
 - Vous pouvez configurer l’envoi de messages directement à Microsoft, une boîte aux lettres que vous spécifiez ou les deux. Pour plus d’informations, consultez [les stratégies d’envoi des utilisateurs](user-submission.md).
 
@@ -50,18 +50,6 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans des boîtes a
 
 Regardez cette courte vidéo pour découvrir comment vous pouvez utiliser Microsoft Defender pour Office 365 pour examiner facilement les soumissions d’utilisateurs afin de déterminer le contenu d’un message et de répondre à la soumission en appliquant l’action de correction appropriée. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
-
-### <a name="turn-off-the-built-in-reporting-experience"></a>Désactiver l’expérience de création de rapports intégrée
-
-Nous ne recommandons pas l’expérience de création de rapports intégrée dans Outlook, car elle ne peut pas utiliser la [stratégie de soumission utilisateur](./user-submission.md). Nous vous recommandons d’utiliser le complément Message de rapport ou le complément Report Phishing à la place.
-
-Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette cmdlet. Pour rechercher les autorisations requises pour exécuter une cmdlet ou un paramètre dans votre organisation, voir [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
-
-Exécutez la commande PowerShell suivante pour désactiver l’expérience de création de rapports intégrée dans Outlook sur le web :
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
 
 ## <a name="use-the-report-message-feature"></a>Utiliser la fonctionnalité Message de rapport
 

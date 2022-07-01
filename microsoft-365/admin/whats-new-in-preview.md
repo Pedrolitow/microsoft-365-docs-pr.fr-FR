@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Le Centre d'administration Microsoft 365 - découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
-ms.openlocfilehash: 198832f09f6b219579f128b7104ecf3ae2fa3446
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679349"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602577"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -42,14 +42,14 @@ Nous ajoutons en permanence de nouvelles fonctionnalités à [la Centre d'admini
 
 Et si vous souhaitez savoir ce qui est nouveau avec d’autres services cloud Microsoft :
 
-- [Nouveautés de Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [Nouveautés d’Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [Nouveautés du Centre d’administration Exchange](/Exchange/whats-new)
 - [Nouveautés de Microsoft Intune](/mem/intune/fundamentals/whats-new)
 - [Nouveautés du portail de conformité Microsoft Purview](/Office365/SecurityCompliance/whats-new)
 - [Nouveautés de Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Nouveautés du Centre d’administration SharePoint](/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](/OfficeUpdates/)
-- [Comment vérifier Windows l’intégrité de la mise en production](/windows/deployment/update/check-release-health)
+- [Comment vérifier l’intégrité des versions de Windows](/windows/deployment/update/check-release-health)
 
 ## <a name="may-2022"></a>Mai 2022
 
@@ -73,7 +73,7 @@ Pour plus d’informations sur ces rôles, consultez [les rôles intégrés Azur
 
 ### <a name="quick-assist"></a>Assistance rapide
 
-Nous avons déplacé Assistance rapide vers le Windows Store pour améliorer les performances et la sécurité de l’application. L’application Windows Assistance rapide vous permet, ainsi qu’à vos utilisateurs finaux, de recevoir ou de fournir une assistance pc via une connexion à distance.
+Nous avons déplacé Assistance rapide vers le Windows Store pour améliorer les performances et la sécurité de l’application. L’application Windows Assistance rapide vous permet, ainsi qu’à vos utilisateurs finaux, de recevoir ou de fournir une assistance SUR PC via une connexion à distance.
 
 Avec la nouvelle application Assistance rapide Store, vous devriez constater une amélioration significative des temps de génération de code secret et une réduction des erreurs d’application.
 
@@ -81,7 +81,7 @@ Pour plus d’informations, consultez [Résoudre les problèmes de PC via une co
 
 ## <a name="april-2022"></a>Avril 2022
 
-### <a name="nps-sentiment-insights"></a>NPS Sentiment Informations
+### <a name="nps-sentiment-insights"></a>NPS Sentiment Insights
 
 NPS Survey Insights est un tableau de bord piloté par l’IA disponible dans le Centre d'administration Microsoft 365.
 
@@ -89,7 +89,7 @@ Dans le Centre d’administration, **accédez aux** > **insights d’enquête NP
 
 Cette fonctionnalité permet aux administrateurs comme vous d’obtenir des insights exploitables dérivés des enquêtes Microsoft NPS auxquelles vos utilisateurs ont répondu. Pour en savoir plus, consultez [les commentaires et insights NPS du produit Microsoft pour votre organisation](manage/manage-feedback-product-insights.md).
 
-En fonction de vos commentaires, nous introduisons une nouvelle fonctionnalité qui identifie le sentiment de chaque commentaire détaillé NPS, afin que vous puissiez découvrir ce que vos utilisateurs ressentent concernant Microsoft 365 produits. Les étiquettes de sentiment telles que **Positive**, **Negative** et **Other** sont affectées aux commentaires détaillés NPS.
+En fonction de vos commentaires, nous introduisons une nouvelle fonctionnalité qui identifie le sentiment de chaque commentaire détaillé NPS, afin que vous puissiez découvrir ce que vos utilisateurs ressentent concernant les produits Microsoft 365. Les étiquettes de sentiment telles que **Positive**, **Negative** et **Other** sont affectées aux commentaires détaillés NPS.
 
 :::image type="content" source="../media/product-feedback-nps-verbatims.png" alt-text="Capture d’écran : Tableau de bord de commentaires sur les produits sous l’onglet Insights des enquêtes NPS":::
 
@@ -142,7 +142,7 @@ Les petites et moyennes entreprises s’appuient souvent sur des partenaires inf
 
 :::image type="content" source="../media/lighthouse.png" alt-text="Capture d’écran : tableau de bord Microsoft 365 Lighthouse":::
 
-Microsoft 365 Lighthouse est un service de partenaire informatique uniquement, et il est disponible pour les partenaires qui sont inscrits au programme fournisseur de solutions Cloud (fournisseur de solutions Cloud) et gèrent les clients qui ont jusqu’à 1 000 utilisateurs sous licence avec Microsoft 365 Business Premium, Microsoft 365 E3 ou Microsoft Defender pour les PME (en préversion). Si vous êtes un partenaire informatique inscrit à Microsoft fournisseur de solutions Cloud, Microsoft 365 Lighthouse est disponible gratuitement pour votre organisation et est conçu pour aider votre entreprise à prendre de l’ampleur et à croître. Pour plus d’informations, consultez la [bibliothèque d’aide Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md).
+Microsoft 365 Lighthouse est un service partenaire informatique uniquement, et il est disponible pour les partenaires inscrits au programme Fournisseur de solutions Cloud (CSP) et gérant des clients qui ont jusqu’à 1 000 utilisateurs sous licence avec Microsoft 365 Business Premium, Microsoft 365 E3 ou Microsoft Defender pour entreprises abonnements (en préversion). Si vous êtes un partenaire informatique inscrit au programme Fournisseur de solutions Cloud Microsoft, Microsoft 365 Lighthouse est disponible gratuitement pour votre organisation et est conçu pour aider votre entreprise à évoluer et à croître. Pour plus d’informations, consultez la [bibliothèque d’aide Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md).
 
 Pour commencer à utiliser Microsoft 365 Lighthouse, consultez [S’inscrire à Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-sign-up.md). Pour en savoir plus sur Microsoft 365 Lighthouse, Defender Entreprise et Microsoft 365 Business Premium, [rejoignez-nous pour notre série de webinaires partenaires](https://aka.ms/M365MDBSeries).
 
@@ -181,7 +181,7 @@ Pour en savoir plus, consultez [les commentaires et insights NPS du produit Micr
 
 ### <a name="microsoft-365-admin-center-video-training"></a>formation vidéo Centre d'administration Microsoft 365
 
-Nous avons mis à jour notre formation vidéo Centre d'administration Microsoft 365. Accédez à la page [Administration bibliothèque de vidéos de formation](admin-video-library.yml) pour découvrir comment configurer et gérer des Microsoft 365 pour votre entreprise.
+Nous avons mis à jour notre formation vidéo Centre d'administration Microsoft 365. Accédez à la page [Administration bibliothèque de vidéos de formation](https://go.microsoft.com/fwlink/?linkid=2197659) pour découvrir comment configurer et gérer Microsoft 365 pour votre entreprise.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Capture d’écran : Affichage de la bibliothèque de formation vidéo du Centre d’administration":::
 
@@ -199,7 +199,7 @@ Nous avons ajouté 2 graphiques appelés **Tendance du volume** et **Tendance du
 
 Le graphique en courbes sous l’onglet **Tendance du volume** met en évidence la tendance si les cas de support augmentent ou diminuent pour votre organisation d’un mois à l’autre. Vous pouvez pointer sur le graphique pour vérifier le nombre de cas de support créés chaque mois.
 
-:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Capture d’écran : Graph qui met en évidence la tendance si les cas de support augmentent ou diminuent pour votre organisation d’un mois à l’autre":::
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Capture d’écran : Graphique qui met en évidence la tendance si les cas de support augmentent ou diminuent pour votre organisation mois après mois":::
 
 La **tendance du volume par graphique produit** affiche les 3 premiers produits de chaque mois avec les cas de support les plus élevés. Nous avons activé le filtrage dans la table et vous pouvez désormais filtrer les résultats par **produit**, **gravité** et **date**.
 
@@ -211,13 +211,13 @@ Nous avons également ajouté 2 nouveaux champs, **Gravité** et **Date de ferme
 
 Pour consulter ces mises à jour dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365</a>, accédez à **Support** > **View Service requests** in left navigation pane.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="microsoft-365-admin-center-search"></a>recherche Centre d'administration Microsoft 365
 
 Nous avons ajouté deux nouvelles catégories à la fonctionnalité de recherche.
 
-- Vous pouvez désormais rechercher Microsoft 365 rôles d’administrateur dans recherche globale et afficher et gérer rapidement les attributions de rôles à partir de n’importe quelle page. Par exemple, recherchez **Intune administrateur**.
+- Vous pouvez désormais rechercher des rôles d’administrateur Microsoft 365 dans recherche globale et afficher et gérer rapidement les attributions de rôles à partir de n’importe quelle page. Par exemple, recherchez **Intune administrateur**.
 
 - Vous pouvez désormais trouver des expériences d’installation simplifiées via recherche globale. Cela peut vous aider, vous et votre équipe, à prendre rapidement en main l’utilisation de nouvelles fonctionnalités. Par exemple, recherchez **le mot de passe défini pour ne jamais expirer**.
 

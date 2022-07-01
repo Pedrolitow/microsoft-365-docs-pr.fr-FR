@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2881076679f64633afc1ddcac6a9de7df64acb
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530595"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602445"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -48,16 +48,16 @@ La remise de messages signalés par l’utilisateur à une boîte aux lettres pe
 ## <a name="custom-mailbox-prerequisites"></a>Prérequis de boîte aux lettres personnalisée
 
 Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur soient envoyés à votre boîte aux lettres personnalisée :
- 
-- [Identifier la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps dans la stratégie de remise avancée](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+
+- [Identifier la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
 - [Créer une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) pour la boîte aux lettres personnalisée où
-    - Le vidage automatique de zéro heure (ZAP) pour les programmes **malveillants** est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée). 
-    - l’option de filtre de pièce jointe commune est désactivée (la section \>**Paramètres de protection** **active le filtre de pièces jointes commun** n’est pas sélectionné). 
+  - Le vidage automatique de zéro heure (ZAP) pour les programmes **malveillants** est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
+  - L’option de filtre de pièce jointe commune est désactivée (la section \>**Paramètres de protection** **active le filtre de pièces jointes commun** n’est pas sélectionné).
 
 Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les utilisateurs qui signalent des messages :
 
-- [Assurez-vous que la boîte aux lettres personnalisée ne fait pas partie des stratégies de sécurité prédéfinies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
+- Assurez-vous que la boîte aux lettres personnalisée ne fait pas partie des [stratégies de sécurité prédéfinies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
 - [Créez une stratégie De liens fiables](set-up-safe-links-policies.md) pour la boîte aux lettres personnalisée où l’analyse des liens fiables est désactivée (**sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** la section \> **Messages désactivés**).
 
@@ -134,7 +134,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 Vous pouvez configurer des outils de création de rapports de messages tiers pour envoyer des messages signalés à la boîte aux lettres personnalisée. Pour ce faire, définissez le **bouton Message de rapport Microsoft Outlook** sur **Désactivé** et définissez la **boîte aux lettres de Mon organisation** sur une boîte aux lettres Office 365 de votre choix.
 
-La seule exigence est que le message d’origine soit inclus en tant que . EML ou . Pièce jointe MSG (non compressée) dans le message envoyé à la boîte aux lettres personnalisée (ne vous contentez pas de transférer le message d’origine à la boîte aux lettres personnalisée). 
+La seule exigence est que le message d’origine soit inclus en tant que . EML ou . Pièce jointe MSG (non compressée) dans le message envoyé à la boîte aux lettres personnalisée (ne vous contentez pas de transférer le message d’origine à la boîte aux lettres personnalisée).
 
  > [!NOTE]
  > Si plusieurs pièces jointes sont présentes dans l’e-mail, la soumission est ignorée. Nous prenons uniquement en charge les e-mails avec une pièce jointe.
@@ -151,7 +151,7 @@ Si vous souhaitez spécifier la raison signalée des messages joints d’origine
 - 2| ou non indésirable :
 - 3| ou hameçonnage :
 
-Par exemple :
+Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`

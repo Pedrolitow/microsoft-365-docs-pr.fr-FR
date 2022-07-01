@@ -1,5 +1,5 @@
 ---
-title: Activer les règles de réduction de la surface d’attaque (ASR)
+title: Activer des règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour implémenter votre déploiement de règles de réduction de la surface d’attaque.
 keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: c3c693a46c3c22749a4e8ff2d572cef56bc06d9b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705513"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603745"
 ---
-# <a name="enable-attack-surface-reduction-asr-rules"></a>Activer les règles de réduction de la surface d’attaque (ASR)
+# <a name="enable-attack-surface-reduction-asr-rules"></a>Activer des règles de réduction de la surface d’attaque (ASR)
 
 L’implémentation de règles de réduction de la surface d’attaque (ASR) déplace le premier anneau de test dans un état fonctionnel activé.
 
@@ -99,7 +98,7 @@ Pour plus d’informations sur chaque règle, consultez la rubrique de référen
 
 2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **Configuration de l’ordinateur**, puis cliquez sur **Modèles d’administration**.
 
-3. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **Protection contre les attaques Microsoft Defender** \> **réduction de la surface d’attaque**.
+3. Développez l’arborescence sur **les composants** \> Windows de **l’antivirus** \> **Microsoft Defender Microsoft Defender Exploit Guard** \> **Pour réduire la surface d’attaque**.
 
 4. Double-cliquez sur le paramètre **Exclure les fichiers et les chemins d’accès du paramètre Règles de réduction de la surface d’attaque** et définissez l’option **sur Activé**. Sélectionnez **Afficher** et entrez chaque fichier ou dossier dans la colonne **Nom de** la valeur. Entrez **0** dans la colonne **Valeur** de chaque élément.
 
@@ -108,7 +107,7 @@ Pour plus d’informations sur chaque règle, consultez la rubrique de référen
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>Utiliser PowerShell pour exclure des fichiers et des dossiers
 
-1. Tapez **PowerShell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
 
 2. Entrez l’applet de commande suivante :
 
@@ -131,12 +130,12 @@ Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée e
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 
-[Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+[Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Planifier le déploiement de règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+[Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Tester les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Opérationnaliser les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Informations de référence sur les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
+[Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)

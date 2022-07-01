@@ -1,5 +1,5 @@
 ---
-title: Augmenter la protection contre les menaces pour les Microsoft 365 pour les entreprises
+title: Augmenter la protection contre les menaces pour Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,28 +24,30 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Microsoft Defender pour Office 365 et protégez les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: c291db6430f864a480c1ecf1ba22799d34e51dcc
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469642"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603334"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Augmenter la protection contre les menaces pour les Microsoft 365 pour les entreprises
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Augmenter la protection contre les menaces pour Microsoft 365 pour les entreprises
 
-Cet article vous aide à renforcer la protection de votre abonnement Microsoft 365 pour vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations s’appliquent aux organisations qui ont un besoin accru de sécurité, comme les cabinets d’avocats et les cliniques de soins de santé.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+
+Cet article vous aide à renforcer la protection dans votre abonnement Microsoft 365 pour vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations s’appliquent aux organisations qui ont un besoin accru de sécurité, comme les cabinets d’avocats et les cliniques de soins de santé.
 
 Avant de commencer, vérifiez votre score de sécurité Office 365. Office 365 degré de sécurisation analyse la sécurité de votre organisation en fonction de vos activités régulières et de vos paramètres de sécurité, et attribue un score. Commencez par prendre note de votre score actuel. Pour augmenter votre score, effectuez les actions recommandées dans cet article. L’objectif n’est pas d’atteindre le score maximal, mais d’être conscient des opportunités de protéger votre environnement qui n’affectent pas négativement la productivité de vos utilisateurs.
 
 Pour plus d’informations, consultez [Microsoft Secure Score](../../security/defender/microsoft-secure-score.md).
 
-## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Augmenter le niveau de protection contre les programmes malveillants dans le courrier
+## <a name="watch-raise-the-level-of-protection-against-malware-in-mail"></a>Regarder : Augmenter le niveau de protection contre les programmes malveillants dans le courrier
 
 Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les programmes malveillants. Vous pouvez augmenter cette protection en bloquant les pièces jointes avec des types de fichiers couramment utilisés pour les programmes malveillants. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Afficher plus**, **Centres d’administration**, puis **Sécurité**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Afficher plus**, **Administration centres**, puis **Sécurité**.
 
 1. Accédez aux **stratégies de collaboration** \> & par e-mail **& les stratégies** \> **de menace**.
 
@@ -55,31 +57,33 @@ Pour augmenter la protection contre les programmes malveillants dans le courrier
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, accédez à **e-mail & stratégies de collaboration** \> **& règles** \> **anti-programmes malveillants**  \> dans la section **Stratégies**.
 
-2. Dans la page **Anti-programme malveillant**, double-cliquez sur **Default (Default).** Un menu volant s’affiche. 
+1. Dans la page **Anti-programme malveillant**, double-cliquez sur **Default (Default).** Un menu volant s’affiche. 
 
-3. Sélectionnez **Modifier les paramètres de protection** en bas du menu volant. 
+1. Sélectionnez **Modifier les paramètres de protection** en bas du menu volant. 
 
-4. sous **Paramètres de protection**, cochez la case en regard **du filtre Activer les pièces jointes courantes**. Les types de fichiers bloqués sont répertoriés directement sous ce contrôle. Veillez à ajouter les types de fichiers suivants :
+1. sous **Paramètres de protection**, cochez la case en regard **du filtre Activer les pièces jointes courantes**. Les types de fichiers bloqués sont répertoriés directement sous ce contrôle. Veillez à ajouter les types de fichiers suivants :
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
    Pour ajouter ou supprimer des types de fichiers, sélectionnez **Personnaliser les types de fichiers** à la fin de la liste.
 
-6. Sélectionnez **Enregistrer.**
+1. Sélectionnez **Enregistrer.**
 
 Pour plus d’informations, consultez [Protection contre les programmes malveillants dans EOP](../../security/office-365-security/anti-malware-protection.md).
 
-## <a name="protect-against-ransomware"></a>Se protéger contre les rançongiciels
+## <a name="watch-protect-against-ransomware"></a>Regarder : Se protéger contre les ransomware
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198018).
 
 Le ransomware restreint l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite d’extorquer de l’argent aux victimes en demandant une « rançon », généralement sous la forme de crypto-monnaies comme Le Bitcoin, en échange de l’accès aux données.
 
-Pour vous protéger contre les ransomwares, créez une ou plusieurs règles de flux de messagerie pour bloquer les extensions de fichier couramment utilisées pour les ransomware. (Vous avez ajouté ces règles dans [l’augmentation du niveau de protection contre les programmes malveillants à](#raise-the-level-of-protection-against-malware-in-mail) l’étape du courrier.) Vous pouvez également avertir les utilisateurs qui reçoivent ces pièces jointes par e-mail.
+Pour vous protéger contre les ransomwares, créez une ou plusieurs règles de flux de messagerie pour bloquer les extensions de fichier couramment utilisées pour les ransomware. (Vous avez ajouté ces règles dans la [montre : augmenter le niveau de protection contre les programmes malveillants à](#watch-raise-the-level-of-protection-against-malware-in-mail) l’étape de courrier.) Vous pouvez également avertir les utilisateurs qui reçoivent ces pièces jointes par e-mail.
 
-Outre les fichiers que vous avez bloqués à l’étape précédente, il est recommandé de créer une règle pour avertir les utilisateurs avant d’ouvrir Office pièces jointes de fichier qui incluent des macros. Les ransomware peuvent être masqués à l’intérieur des macros. Par conséquent, avertissez les utilisateurs de ne pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
+Outre les fichiers que vous avez bloqués à l’étape précédente, il est recommandé de créer une règle pour avertir les utilisateurs avant d’ouvrir des pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués à l’intérieur des macros. Par conséquent, avertissez les utilisateurs de ne pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-1. Dans le Centre d’administration, [https://admin.microsoft.com](https://admin.microsoft.com)choisissez **Exchange** sous **Centres d’administration**.
+1. Dans le centre d’administration, [https://admin.microsoft.com](https://admin.microsoft.com)choisissez **Exchange** sous **Administration centres**.
 
 1. Dans le menu de gauche, choisissez **le flux de courrier**.
  
@@ -89,7 +93,7 @@ Outre les fichiers que vous avez bloqués à l’étape précédente, il est rec
 
 Pour créer une règle de transport de courrier :
 
-1. Accédez au centre <https://admin.microsoft.com>d’administration, puis choisissez **Centres** \> d’administration **Exchange**.
+1. Accédez au centre d’administration, <https://admin.microsoft.com>puis choisissez **Administration centres** \> **Exchange**.
 
 2. Dans la catégorie **de flux de messagerie** , sélectionnez **des règles**.
 
@@ -109,7 +113,7 @@ Pour créer une règle de transport de courrier :
 |Procédez comme suit . . .|Avertir le destinataire avec un message|
 |Fournir le texte du message|N’ouvrez pas ces types de fichiers à partir de personnes que vous ne connaissez pas, car elles peuvent contenir des macros avec du code malveillant.|
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -121,7 +125,7 @@ Les pirates qui accèdent à la boîte aux lettres d’un utilisateur peuvent vo
 
 Pour créer une règle de transport de courrier, procédez comme suit :
 
-1. Dans le Centre d'administration Microsoft 365, sélectionnez **Centres** \> **d’administration Exchange**.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Administration centres** \> **Exchange**.
 
 2. Dans la catégorie **de flux de messagerie** , sélectionnez **des règles**.
 
@@ -141,7 +145,9 @@ Pour créer une règle de transport de courrier, procédez comme suit :
 |Procédez comme suit ...|Bloquer le message . . . rejeter le message et inclure une explication.|
 |Fournir le texte du message|Le transfert automatique d’e-mails en dehors de cette organisation est empêché pour des raisons de sécurité.|
 
-## <a name="protect-your-email-from-phishing-attacks"></a>Protéger votre courrier contre les attaques par hameçonnage
+## <a name="watch-protect-your-email-from-phishing-attacks"></a>Regarder : Protéger votre courrier contre les attaques par hameçonnage
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198014).
 
 Si vous avez configuré un ou plusieurs domaines personnalisés pour votre environnement Office 365 ou Microsoft 365, vous pouvez configurer la protection anti-hameçonnage ciblée. La protection anti-hameçonnage, qui fait partie de Microsoft Defender pour Office 365, peut aider à protéger votre organisation contre les attaques par hameçonnage basées sur l’emprunt d’identité malveillantes et d’autres attaques par hameçonnage. Si vous n’avez pas configuré de domaine personnalisé, vous n’avez pas besoin de le faire.
 
@@ -170,9 +176,11 @@ Nous vous recommandons de commencer à utiliser cette protection en créant une 
 |Ajouter des expéditeurs et domaines de confiance|Ici, vous pouvez ajouter votre propre domaine ou tout autre domaine approuvé.|
 |Appliqué à|Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Cochez la case en regard du nom du domaine, par exemple *contoso.<span><span> com*, dans la liste, puis **sélectionnez Ajouter**. Sélectionnez **Terminé**.|
 
-## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Regarder : Protéger contre les pièces jointes et les fichiers malveillants avec des pièces jointes Coffre
+## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Regarder : Protéger contre les pièces jointes malveillantes et les fichiers avec des pièces jointes sécurisées
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en examinant un e-mail. Microsoft Defender pour Office 365, anciennement appelée Microsoft 365 ATP ou Advanced Threat Protection, inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas activée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198019).
+
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sécurisée ou malveillante simplement en examinant un message électronique. Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 ATP ou Advanced Threat Protection, inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas activée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
@@ -185,7 +193,7 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 1. Choisissez tous les domaines supplémentaires que vous possédez (par exemple, votre domaine onmicrosoft.com) auxquels vous souhaitez appliquer la règle. Sélectionnez **Ajouter**, puis **OK**.
 1. Sélectionnez **Enregistrer**.
 
-Votre règle de pièces jointes sécurisées ATP a été mise à jour. Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir de Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés ont des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
+Votre règle de pièces jointes sécurisées ATP a été mise à jour. Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir d’Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés ont des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
 
 Une fois votre stratégie en place depuis un certain temps, visitez la page Rapports pour voir ce qui a été analysé.
 
@@ -209,19 +217,21 @@ Une fois votre stratégie en place depuis un certain temps, visitez la page Rapp
 
 Pour plus d’informations, consultez Configurer des stratégies [anti-hameçonnage dans Microsoft Defender pour Office 365](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-## <a name="protect-against-phishing-attacks-with-safe-links"></a>Protéger contre les attaques par hameçonnage à l’aide de liens Coffre
+## <a name="watch-protect-against-phishing-attacks-with-safe-links"></a>Regarder : Protéger contre les attaques par hameçonnage avec des liens fiables
 
-Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Coffre Liens, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les e-mails et les documents Office. La protection est définie par le biais de stratégies de liens Coffre.
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198201).
+
+Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Les liens fiables, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les e-mails et les documents Office. La protection est définie par le biais de stratégies de liaisons sécurisées.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 ATP ou Protection avancée contre les menaces, permet de protéger votre entreprise contre les sites malveillants lorsque les utilisateurs cliquent sur des liens dans Office applications.
+Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 ATP ou Protection avancée contre les menaces, permet de protéger votre entreprise contre les sites malveillants lorsque les utilisateurs cliquent sur des liens dans les applications Office.
 
 1. Accédez au [centre d’administration](https://admin.microsoft.com), puis sélectionnez **Configurer**.
 
-1. Faites défiler vers le bas pour **augmenter la protection contre les menaces avancées**. Sélectionnez **Gérer**, puis **Coffre liens**.
+1. Faites défiler vers le bas pour **augmenter la protection contre les menaces avancées**. Sélectionnez **Gérer**, puis **Liens sécurisés**.
 
-1. Sélectionnez **Global Paramètres** et, dans **Bloquer les URL suivantes**, entrez l’URL à bloquer.
+1. Sélectionnez **Paramètres globaux** et, dans **Bloquer les URL suivantes**, entrez l’URL que vous souhaitez bloquer.
 
 Nous vous recommandons d’effectuer les opérations suivantes :
 
@@ -229,7 +239,7 @@ Nous vous recommandons d’effectuer les opérations suivantes :
 
 - Ajoutez une nouvelle stratégie destinée à tous les destinataires de votre domaine.
 
-Pour configurer Coffre Liens, procédez comme suit :
+Pour configurer des liens fiables, effectuez les étapes suivantes :
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a> et connectez-vous avec votre compte d’administrateur.
 
@@ -247,19 +257,19 @@ Pour modifier la stratégie par défaut :
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Coffre la stratégie de liens pour tous les destinataires du domaine|
+|Nom|Stratégie de liens sécurisés pour tous les destinataires du domaine|
 |Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez **Activé : les URL sont réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.|
-|Utiliser Coffre pièces jointes pour analyser le contenu téléchargeable|Sélectionnez cette zone.|
+|Utilisez les pièces jointes approuvées pour analyser le contenu téléchargeable|Sélectionnez cette zone.|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 
-Pour plus d’informations, consultez [Coffre Liens](../../security/office-365-security/safe-links.md).
+Pour plus d’informations, consultez [Liens fiables](../../security/office-365-security/safe-links.md).
 
 ## <a name="go-to-intune-admin-center"></a>Accéder au centre d’administration Intune
 
-1. Connectez-vous à [Portail Azure](https://portal.azure.com/).
+1. Connectez-vous au [portail Azure](https://portal.azure.com/).
 
 2. Sélectionnez **Tous les services** et tapez *Intune* dans la **zone de recherche**.
 
 3. Une fois les résultats affichés, sélectionnez le début en regard **de Microsoft Intune** pour en faire un favori et facile à trouver ultérieurement.
 
-En plus du Centre d’administration, vous pouvez utiliser Intune pour inscrire et gérer les appareils de votre organisation. Pour plus d’informations, consultez [La méthode Fonctionnalités par inscription pour les appareils Windows et les](/intune/enrollment/enrollment-method-capab) [options d’inscription pour les appareils gérés par Intune](/intune/enrollment-options).
+En plus du Centre d’administration, vous pouvez utiliser Intune pour inscrire et gérer les appareils de votre organisation. Pour plus d’informations, consultez [La méthode Fonctionnalités par inscription pour les appareils Windows](/intune/enrollment/enrollment-method-capab) et [les options d’inscription pour les appareils gérés par Intune](/intune/enrollment-options).

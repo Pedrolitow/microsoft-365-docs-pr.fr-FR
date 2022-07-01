@@ -23,19 +23,21 @@ ms.custom:
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
 ms.date: 06/06/2022
-ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489667"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602367"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Acheter ou supprimer des licences Microsoft 365 pour un abonnement
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour vos abonnements en procédant comme suit.
 
 > [!NOTE]
-> Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,6 +46,8 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 - Si vous avez acheté votre offre Microsoft 365 pour les entreprises ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
 ## <a name="watch-buy-new-licenses"></a>Regarder : Acheter de nouvelles licences
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -100,13 +104,13 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre facture suivante. Si vous payez annuellement, vous êtes facturé dans un délai d’un mois pour ces modifications.
 - Dans votre prochain relevé de facturation, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons des frais calculés au prorata pour la période avec le nombre de licences d’origine et ajoutons des frais pour le nouveau nombre de licences. Il y a également des frais pour le nombre de licences actuel pour le reste de votre période de facturation.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous avez acheté d’autres licences pour votre abonnement, vous devez ensuite [attribuer ces licences aux utilisateurs de votre organisation](../../admin/manage/assign-licenses-to-users.md).
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous souhaiterez peut-être supprimer le compte de cet utilisateur. Pour en savoir plus, consultez [Supprimer un ancien employé](../../admin/add-users/remove-former-employee.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

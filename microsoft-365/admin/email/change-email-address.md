@@ -27,14 +27,16 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Remplacez votre adresse e-mail par une adresse e-mail conviviale comme tom@fourthcoffee.com en achetant un nom de domaine et en l’ajoutant à Microsoft 365.
-ms.openlocfilehash: a71e92b48e7091ae243b62ec594cd2be5ce52406
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2c6085ee9c951b9afb3d44460bfd613b63375986
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437280"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602423"
 ---
 # <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>Modifier votre adresse e-mail Microsoft 365 pour utiliser votre domaine personnalisé
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -50,9 +52,11 @@ Votre adresse e-mail initiale dans Office 365 gérée par 21Vianet inclut partne
 
 ::: moniker-end
 
-Lorsque vous modifiez l’e-mail de votre domaine pour qu’il arrive à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine lors de l’installation, tous les e-mails envoyés à ce domaine commencent à Microsoft 365. Avant de modifier l’enregistrement MX, veillez à ajouter des utilisateurs et à créer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des e-mails sur votre domaine. Vous ne souhaitez pas déplacer le courrier électronique de tous les utilisateurs de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses e-mail à la place](../misc/pilot-microsoft-365-from-my-custom-domain.md).
+Lorsque vous modifiez l’e-mail de votre domaine pour qu’il arrive à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine pendant l’installation, tous les e-mails envoyés à ce domaine commencent à être envoyés à Microsoft 365. Veillez à ajouter des utilisateurs et à créer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des e-mails sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les utilisateurs de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses e-mail à la place](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>Configurer la messagerie professionnelle avec un nouveau domaine
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198215).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
 
@@ -88,13 +92,13 @@ Vous devez être un Administrateur général pour procéder à ces étapes.
 
 ::: moniker-end
 
-2. Accédez à la page **SetupDomains** > .
+2. Accédez à la page **Domaines** **d’installation** > .
 
 3. Dans la page **Domaines**, sélectionnez **Ajouter un domaine**.
 
 4. Suivez les étapes pour confirmer que vous êtes propriétaire de votre domaine. Vous serez guidé pour tout configurer correctement avec votre domaine dans Microsoft 365.
 
-5. Accédez aux **utilisateurs UsersActive** > .
+5. Accédez à **Utilisateurs** > **actifs**.
 
 6. Sélectionnez un utilisateur pour modifier son nom d’utilisateur et le remplacer par le domaine que vous venez d’ajouter.
 

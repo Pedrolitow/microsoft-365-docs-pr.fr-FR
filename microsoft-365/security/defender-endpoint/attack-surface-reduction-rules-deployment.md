@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017428"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601199"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)
 
@@ -58,9 +57,9 @@ Comme indiqué dans [Utiliser les règles de réduction de la surface d’attaqu
 
 | Menaces polymorphes | Déplacement latéral & vol d’informations d’identification | Règles des applications de productivité |  Règles d’e-mail | Règles de script | Règles d’erreur |
 |:---|:---|:---|:---|:---|:---|
-| Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à une prévalence (1 000 machines), à un âge (24 heures) ou à des critères de liste approuvée | Bloquer les créations de processus provenant des commandes PSExec et WMI | Empêcher Office applications de créer du contenu exécutable | Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web | Bloquer le code JS/VBS/PS/macro obfusqué | Bloquer l’abus de pilotes signés vulnérables exploités <sup>[[1](#fn1)]<sup></sup>  |
-| Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB | Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Empêcher Office applications de créer des processus enfants |  Empêcher uniquement Office applications de communication de créer des processus enfants | Empêcher JS/VBS de lancer le contenu exécutable téléchargé | |
-| Utiliser une protection avancée contre les ransomware | Bloquer la persistance via l’abonnement aux événements WMI | Empêcher Office applications d’injecter du code dans d’autres processus | Empêcher Office applications de communication de créer des processus enfants | | |
+| Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à une prévalence (1 000 machines), à un âge (24 heures) ou à des critères de liste approuvée | Bloquer les créations de processus provenant des commandes PSExec et WMI | Empêcher les applications Office de créer du contenu exécutable | Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web | Bloquer le code JS/VBS/PS/macro obfusqué | Bloquer l’abus de pilotes signés vulnérables exploités <sup>[[1](#fn1)]<sup></sup>  |
+| Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB | Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Empêcher les applications Office de créer des processus enfants |  Empêcher uniquement les applications de communication Office de créer des processus enfants | Empêcher JS/VBS de lancer le contenu exécutable téléchargé | |
+| Utiliser une protection avancée contre les ransomware | Bloquer la persistance via l’abonnement aux événements WMI | Empêcher les applications Office d’injecter du code dans d’autres processus | Empêcher les applications de communication Office de créer des processus enfants | | |
 | | | Empêcher Adobe Reader de créer des processus enfants | | | |
 
 (<a id="fn1">1</a>) _L’abus de blocage des pilotes signés vulnérables exploités_ n’est actuellement pas disponible dans la sécurité des points de terminaison MEM. Vous pouvez configurer cette règle à l’aide de [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
@@ -74,7 +73,7 @@ Bien que plusieurs méthodes d’implémentation des règles ASR soient possible
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - appareils Windows 10 et Windows 11
-- Microsoft Defender pour point de terminaison licences E5 ou Windows E5
+- licences Microsoft Defender pour point de terminaison E5 ou Windows E5
 
 Pour tirer pleinement parti des règles ASR et des rapports, nous vous recommandons d’utiliser une licence Microsoft 365 Defender E5 ou Windows E5 et A5. En savoir plus : [Configuration minimale requise pour Microsoft Defender pour point de terminaison](minimum-requirements.md).
 
@@ -84,34 +83,34 @@ Pour tirer pleinement parti des règles ASR et des rapports, nous vous recommand
 
 ### <a name="asr-rules-dependencies"></a>Dépendances des règles ASR
 
-Antivirus Microsoft Defender doit être activé et configuré en tant que solution antivirus principale, et doit être en mode suivant :
+L’antivirus Microsoft Defender doit être activé et configuré en tant que solution antivirus principale et doit être en mode suivant :
 
 - Solution antivirus/anti-programme malveillant principale  
 - État : mode actif
 
-Antivirus Microsoft Defender ne doit pas se trouver dans l’un des modes suivants :
+L’Antivirus Microsoft Defender ne doit pas se trouver dans l’un des modes suivants :
 
 - Passif
-- Mode passif avec détection et réponse de point de terminaison (PEPT) en mode bloc
+- Mode passif avec détection et réponse de point de terminaison (EDR) en mode bloc
 - Analyse périodique limitée (LPS)
 - Désactivé
 
-Voir : [Protection et Antivirus Microsoft Defender fournies par le cloud](cloud-protection-microsoft-defender-antivirus.md).
+Consultez : [Protection fournie par le cloud et Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>La protection cloud (MAPS) doit être activée
 
-Antivirus Microsoft Defender fonctionne en toute transparence avec les services cloud Microsoft. Ces services de protection cloud, également appelés Microsoft Advanced Protection Service (MAPS), améliorent la protection en temps réel standard, offrant sans doute la meilleure défense antivirus. La protection cloud est essentielle pour empêcher les violations des programmes malveillants et un composant critique des règles ASR.
-[Activez la protection fournie par le cloud dans Antivirus Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+L’antivirus Microsoft Defender fonctionne en toute transparence avec les services cloud Microsoft. Ces services de protection cloud, également appelés Microsoft Advanced Protection Service (MAPS), améliorent la protection en temps réel standard, offrant sans doute la meilleure défense antivirus. La protection cloud est essentielle pour empêcher les violations des programmes malveillants et un composant critique des règles ASR.
+[Activez la protection fournie par le cloud dans l’Antivirus Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Antivirus Microsoft Defender composants doivent être des versions actuelles
+### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Les composants de l’Antivirus Microsoft Defender doivent être des versions actuelles
 
-Les versions de composant Antivirus Microsoft Defender suivantes ne doivent pas dépasser deux versions antérieures à la version la plus disponible :
+Les versions suivantes du composant Antivirus Microsoft Defender ne doivent pas être plus de deux versions antérieures à la version la plus disponible :
 
-- **Antivirus Microsoft Defender version de mise à jour de la plateforme** : Antivirus Microsoft Defender plateforme est mise à jour tous les mois.
-- **Antivirus Microsoft Defender version du moteur** : Antivirus Microsoft Defender moteur est mis à jour tous les mois.
-- **Antivirus Microsoft Defender renseignement de sécurité** : Microsoft met continuellement à jour le renseignement de sécurité Microsoft Defender (également appelé, définition et signature) pour répondre aux menaces les plus récentes et affiner la logique de détection.
+- **Version de mise à jour de la plateforme antivirus Microsoft Defender**  : la plateforme antivirus Microsoft Defender est mise à jour tous les mois.
+- **Version du moteur antivirus Microsoft Defender** : le moteur antivirus Microsoft Defender est mis à jour tous les mois.
+- **Intelligence de sécurité de l’antivirus Microsoft Defender** - Microsoft met continuellement à jour le renseignement de sécurité Microsoft Defender (également appelé, définition et signature) pour répondre aux menaces les plus récentes et affiner la logique de détection.
 
-Maintenir Antivirus Microsoft Defender versions à jour permet de réduire les résultats faux positifs des règles ASR et d’améliorer Antivirus Microsoft Defender fonctionnalités de détection. Pour plus d’informations sur les versions actuelles et la mise à jour des différents composants Antivirus Microsoft Defender, consultez [Antivirus Microsoft Defender prise en charge de la plateforme](manage-updates-baselines-microsoft-defender-antivirus.md).
+La mise à jour des versions de l’Antivirus Microsoft Defender permet de réduire les résultats faux positifs des règles ASR et d’améliorer les fonctionnalités de détection de l’antivirus Microsoft Defender. Pour plus d’informations sur les versions actuelles et la mise à jour des différents composants de l’Antivirus Microsoft Defender, consultez la prise en charge de la [plateforme antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ### <a name="caveat"></a>Caveat
 
@@ -167,7 +166,7 @@ Comme pour toute nouvelle implémentation à grande échelle susceptible d’avo
 
 [Protection par le cloud et antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-[Activer la protection fournie par le cloud dans Antivirus Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
+[Activer la protection fournie par le cloud dans l’antivirus Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [Configurer et valider des exclusions en fonction de l’extension, du nom ou de l’emplacement](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 

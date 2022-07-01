@@ -25,14 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser Windows 10 PC après avoir configuré Microsoft 365 Business Premium.
-ms.openlocfilehash: 872fce9124f6a27dd884ed9d740baa9d195d8f95
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: a1a7743605992899ed2cfcbb0089e971716d5a13
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663445"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602389"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser des ordinateurs Windows 10
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
@@ -40,17 +42,19 @@ Une fois que vous avez [configuré](/microsoft-365/business-premium/m365bp-setup
 
 ## <a name="watch-secure-your-windows-10-pcs"></a>Regarder : Sécuriser vos PC Windows 10
 
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198200).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
 
 Après avoir configuré la protection des appareils dans Microsoft 365 Business, procédez comme suit pour protéger vos ordinateurs Windows 10.
 
 1. Dans le Centre d’administration Microsoft 365, choisissez <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configuration**</a>.
 
-2. Sous **Sécuriser vos ordinateurs Windows**, sélectionnez **Afficher**.
+2. Sous  **Sécuriser vos ordinateurs Windows** , sélectionnez  **Affichage**.
 
-3. Sélectionnez **Démarrage**.
+3. Sélectionnez  **Prise en main**.
 
-4. Sous **Qui la stratégie doit-elle s’appliquer ?**, choisissez si vos sélections seront appliquées à tous les membres de votre organisation ou à des groupes de sécurité spécifiques.
+4. Sous **À qui la stratégie doit-elle s’appliquer ?**, choisissez si vos sélections seront appliquées à tous les membres de votre organisation ou à des groupes de sécurité spécifiques.
 
 5. Sélectionnez  **Enregistrer les modifications**.
 
@@ -62,9 +66,9 @@ Après avoir configuré la protection des appareils dans Microsoft 365 Business,
 
 3. Dans la page **Sécuriser vos ordinateurs Windows 10**, lisez toutes les informations pour comprendre ce que vous activez et l’impact de l’utilisateur.
 
-    En haut de la page, choisissez **Démarrage**.
+    En haut de la page, **choisissez Prise en main**.
 
-4. Dans le volet **Sécuriser vos ordinateurs Windows 10**, sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, consultez [Secure Windows devices](../../business-premium/m365bp-secure-windows-devices.md) (article). 
+4. Dans le volet **Sécuriser vos ordinateurs Windows 10**, sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, consultez [Les appareils Windows sécurisés](../../business-premium/m365bp-secure-windows-devices.md) (article). 
     
     Pour la plupart des organisations, les options disponibles ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des bases de référence de sécurité prédéfinies pour sécuriser vos appareils Windows 10. Pour plus d’informations, consultez [les bases de référence de sécurité pour les appareils Windows 10](/mem/intune/protect/security-baselines).   
 

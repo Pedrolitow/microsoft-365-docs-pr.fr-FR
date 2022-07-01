@@ -15,26 +15,26 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
+- m365solution-overview
+- m365solution-fpfn
 ms.topic: how-to
 ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 81c41abffc6ec01c127b901ac63b3a5d3b6c5732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5cae5a4b305846617130ecdf7c267ffc4ca13037
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418453"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603965"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
@@ -119,7 +119,7 @@ Si vous avez des alertes qui sont des faux positifs ou qui sont de vrais positif
 
 ## <a name="part-2-review-remediation-actions"></a>Partie 2 : Examiner les actions de correction
 
-[Les actions de correction](manage-auto-investigation.md#remediation-actions), telles que l’envoi d’un fichier en quarantaine ou l’arrêt d’un processus, sont effectuées sur des entités (telles que des fichiers) détectées comme des menaces. Plusieurs types d’actions de correction se produisent automatiquement par le biais d’une investigation automatisée et de Antivirus Microsoft Defender :
+[Les actions de correction](manage-auto-investigation.md#remediation-actions), telles que l’envoi d’un fichier en quarantaine ou l’arrêt d’un processus, sont effectuées sur des entités (telles que des fichiers) détectées comme des menaces. Plusieurs types d’actions de correction se produisent automatiquement par le biais d’une investigation automatisée et de l’Antivirus Microsoft Defender :
 
 - Mettre en quarantaine un fichier
 - Supprimer une clé de Registre
@@ -202,42 +202,42 @@ Une exclusion est une entité, telle qu’un fichier ou une URL, que vous spéci
 
 Pour définir des exclusions entre Microsoft Defender pour point de terminaison, effectuez les tâches suivantes :
 
-- [Définir des exclusions pour Antivirus Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
+- [Définir des exclusions pour l’antivirus Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
 - [Créer des indicateurs « autoriser » pour Microsoft Defender pour point de terminaison](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Antivirus Microsoft Defender exclusions s’appliquent uniquement à la protection antivirus, et non à d’autres fonctionnalités Microsoft Defender pour point de terminaison. Pour exclure les fichiers de manière générale, utilisez des exclusions pour Antivirus Microsoft Defender et [des indicateurs personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators) pour Microsoft Defender pour point de terminaison.
+> Les exclusions de l’antivirus Microsoft Defender s’appliquent uniquement à la protection antivirus, et non à d’autres fonctionnalités Microsoft Defender pour point de terminaison. Pour exclure les fichiers à grande échelle, utilisez des exclusions pour l’antivirus Microsoft Defender et [des indicateurs personnalisés](/microsoft-365/security/defender-endpoint/manage-indicators) pour Microsoft Defender pour point de terminaison.
 
 Les procédures de cette section décrivent comment définir des exclusions et des indicateurs.
 
-### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusions pour Antivirus Microsoft Defender
+### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusions pour l’antivirus Microsoft Defender
 
-En général, vous n’avez pas besoin de définir d’exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à inclure uniquement les fichiers, dossiers, processus et fichiers ouverts par le processus qui génèrent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
+En général, vous ne devez pas avoir besoin de définir des exclusions pour l’antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à inclure uniquement les fichiers, dossiers, processus et fichiers ouverts par le processus qui génèrent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
 
 > [!TIP]
-> Vous avez besoin d’aide pour les exclusions antivirus ? Consultez [Configurer et valider les exclusions pour les analyses Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
+> Vous avez besoin d’aide pour les exclusions antivirus ? Consultez [Configurer et valider les exclusions pour les analyses antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Utiliser Microsoft Endpoint Manager pour gérer les exclusions antivirus (pour les stratégies existantes)
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
 
 2. Choisissez **l’antivirus** **de sécurité** \> de point de terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez créer une stratégie, passez à [la procédure suivante](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. Choisissez **Propriétés**, puis, en regard **des paramètres de configuration**, choisissez **Modifier**.
 
-4. Développez **Antivirus Microsoft Defender exclusions**, puis spécifiez vos exclusions.
+4. Développez **les exclusions antivirus Microsoft Defender** , puis spécifiez vos exclusions.
 
 5. Choisissez **Vérifier + enregistrer**, puis **Enregistrer**.
 
 #### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>Utiliser Microsoft Endpoint Manager pour créer une stratégie antivirus avec exclusions
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
 
 2. Choisissez **l’antivirus** \> **de sécurité de point de terminaison** \> **+ Créer une stratégie**.
 
 3. Sélectionnez une plateforme (par exemple **, Windows 10 et versions ultérieures**, **macOS** ou **Windows 10 et Windows Server**).
 
-4. Pour **Profil**, sélectionnez **Antivirus Microsoft Defender exclusions**, puis **choisissez Créer**.
+4. Pour **Profil**, sélectionnez **Exclusions de l’Antivirus Microsoft Defender**, puis **choisissez Créer**.
 
 5. Spécifiez un nom et une description pour le profil, puis choisissez **Suivant**.
 
@@ -253,7 +253,7 @@ En général, vous n’avez pas besoin de définir d’exclusions pour Antivirus
 
 [Les indicateurs](/microsoft-365/security/defender-endpoint/manage-indicators) (en particulier, les indicateurs de compromission ou les IOC) permettent à votre équipe des opérations de sécurité de définir la détection, la prévention et l’exclusion des entités. Par exemple, vous pouvez spécifier certains fichiers à omettre des analyses et des actions de correction dans Microsoft Defender pour point de terminaison. Vous pouvez également utiliser des indicateurs pour générer des alertes pour certains fichiers, adresses IP ou URL.
 
-Pour spécifier des entités en tant qu’exclusions pour Microsoft Defender pour point de terminaison, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs « autorisés » dans Microsoft Defender pour point de terminaison s’appliquent à la [protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md), [à la protection évolutive des points de terminaison](overview-endpoint-detection-response.md) et à [l’examen automatisé & correction](/microsoft-365/security/defender-endpoint/automated-investigations).
+Pour spécifier des entités en tant qu’exclusions pour Microsoft Defender pour point de terminaison, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs « autorisés » dans Microsoft Defender pour point de terminaison s’appliquent à la [protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md), à la détection et à la réponse des points de [terminaison](overview-endpoint-detection-response.md), ainsi qu’à l’examen [automatisé & correction](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 Des indicateurs « Autoriser » peuvent être créés pour :
 
@@ -269,7 +269,7 @@ Lorsque vous [créez un indicateur « autoriser » pour un fichier, tel qu’un 
 
 Avant de créer des indicateurs pour les fichiers, assurez-vous que les exigences suivantes sont remplies :
 
-- Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir Gérer la [protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
+- L’Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - La version du client Antimalware est 4.18.1901.x ou ultérieure
 - Les appareils exécutent Windows 10, version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016 ou Windows Server 2019 ou Windows Server 2022
 - La [fonctionnalité Bloquer ou autoriser est activée](/microsoft-365/security/defender-endpoint/advanced-features)
@@ -292,7 +292,7 @@ Lorsque vous [créez un indicateur « autoriser » pour un certificat d’applic
 
 Avant de créer des indicateurs pour les certificats d’application, assurez-vous que les exigences suivantes sont remplies :
 
-- Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud](deploy-manage-report-microsoft-defender-antivirus.md)
+- L’Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud](deploy-manage-report-microsoft-defender-antivirus.md)
 - La version du client Antimalware est 4.18.1901.x ou ultérieure
 - Les appareils exécutent Windows 10, version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016 ou Windows Server 2019 ou Windows Server 2022
 - Les définitions de protection contre les virus et les menaces sont à jour
@@ -318,7 +318,7 @@ Si un logiciel malveillant a été détecté en fonction du comportement et que 
 
 1. Accédez à ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, puis exécutez en `MpCmdRun.exe` tant qu’administrateur.
 
-2. Tapez `mpcmdrun.exe -GetFiles`, puis **appuyez sur Entrée**.
+2. Tapez `mpcmdrun.exe -GetFiles`, puis appuyez sur **Entrée**.
 
    Un fichier .cab est généré qui contient différents journaux de diagnostic. L’emplacement du fichier est spécifié dans la sortie de l’invite de commandes. Par défaut, l’emplacement est `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
@@ -351,20 +351,20 @@ Microsoft Defender pour point de terminaison offre une grande variété d’opti
 
 ### <a name="cloud-delivered-protection"></a>Protection fournie par le cloud
 
-Vérifiez le niveau de protection fourni par le cloud pour Antivirus Microsoft Defender. Par défaut, la protection fournie par le cloud est définie sur **Non configuré**, ce qui correspond à un niveau de protection normal pour la plupart des organisations. Si votre protection fournie par le cloud est définie sur **Tolérance Élevée**, **Élevée +** ou **Zéro**, vous pouvez rencontrer un plus grand nombre de faux positifs.
+Vérifiez le niveau de protection fourni par le cloud pour l’antivirus Microsoft Defender. Par défaut, la protection fournie par le cloud est définie sur **Non configuré**, ce qui correspond à un niveau de protection normal pour la plupart des organisations. Si votre protection fournie par le cloud est définie sur **Tolérance Élevée**, **Élevée +** ou **Zéro**, vous pouvez rencontrer un plus grand nombre de faux positifs.
 
 > [!TIP]
 > Pour en savoir plus sur la configuration de votre protection fournie par le cloud, consultez [Spécifier le niveau de protection fourni par le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection fournis par le cloud. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
+Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection fournis dans le cloud. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utilisez Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection fournis par le cloud (pour les stratégies existantes)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utiliser Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection fournis par le cloud (pour les stratégies existantes)
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
 
 2. Choisissez **l’antivirus** **de sécurité** \> de point de terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez créer une stratégie, passez à [la procédure suivante](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
-3. Sous **Gérer**, sélectionnez **Propriétés**. Ensuite, en regard **des paramètres de configuration**, choisissez **Modifier**.
+3. Sous **Gérer**, choisissez **Propriétés**. Ensuite, en regard **des paramètres de configuration**, choisissez **Modifier**.
 
 4. Développez **la protection cloud** et passez en revue votre paramètre actuel dans la ligne de **niveau de protection fournie par le cloud** . Nous vous recommandons de définir la protection fournie par le cloud sur **Non configuré,** ce qui offre une protection forte tout en réduisant les risques d’obtention de faux positifs.
 
@@ -372,7 +372,7 @@ Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-m
 
 #### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Utiliser Microsoft Endpoint Manager pour définir des paramètres de protection fournis par le cloud (pour une nouvelle stratégie)
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
 
 2. Choisissez **Antivirus** \> **de sécurité de point de terminaison** \> **+ Créer une stratégie**.
 
@@ -398,19 +398,19 @@ Les applications potentiellement indésirables (PUA) sont une catégorie de logi
 > [!TIP]
 > Pour en savoir plus sur PUA, consultez [Détecter et bloquer les applications potentiellement indésirables](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
-Selon les applications que votre organisation utilise, vous pouvez obtenir des faux positifs en raison de vos paramètres de protection PUA. Si nécessaire, envisagez d’exécuter la protection PUA en mode audit pendant un certain temps, ou appliquez la protection PUA à un sous-ensemble d’appareils de votre organisation. La protection PUA peut être configurée pour le navigateur Microsoft Edge et pour Antivirus Microsoft Defender.
+Selon les applications que votre organisation utilise, vous pouvez obtenir des faux positifs en raison de vos paramètres de protection PUA. Si nécessaire, envisagez d’exécuter la protection PUA en mode audit pendant un certain temps, ou appliquez la protection PUA à un sous-ensemble d’appareils de votre organisation. La protection PUA peut être configurée pour le navigateur Microsoft Edge et l’antivirus Microsoft Defender.
 
 Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir des paramètres de protection PUA. Toutefois, vous pouvez utiliser d’autres méthodes, telles que [stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour point de terminaison](manage-mde-post-migration.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Utiliser Microsoft Endpoint Manager pour modifier la protection PUA (pour les profils de configuration existants)
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
 
 2. Choisissez les **profils de configuration** **des appareils**\>, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une, passez à [la procédure suivante](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. Sous **Gérer**, choisissez **Propriétés**, puis, en regard **des paramètres de configuration**, **choisissez Modifier**.
 
-4. Sous l’onglet **Paramètres de configuration**, faites défiler vers le bas et développez **Antivirus Microsoft Defender**.
+4. Sous l’onglet **Paramètres de configuration** , faites défiler vers le bas et développez **l’Antivirus Microsoft Defender**.
 
 5. **Définissez Détecter les applications potentiellement indésirables** sur **Audit**. (Vous pouvez le désactiver, mais en utilisant le mode audit, vous pourrez voir les détections.)
 
@@ -418,7 +418,7 @@ Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-m
 
 #### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>Utiliser Microsoft Endpoint Manager pour définir la protection PUA (pour un nouveau profil de configuration)
 
-1. Accédez au centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) et connectez-vous.
 
 2. Choisir les **profils** \> de configuration **des appareils** \> **+ Créer un profil**.
 
@@ -426,7 +426,7 @@ Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem/endpoint-m
 
 4. Sous l’onglet **De base** , spécifiez un nom et une description pour votre stratégie. Sélectionnez **Suivant**.
 
-5. Sous l’onglet **Paramètres de configuration**, faites défiler vers le bas et développez **Antivirus Microsoft Defender**.
+5. Sous l’onglet **Paramètres de configuration** , faites défiler vers le bas et développez **l’Antivirus Microsoft Defender**.
 
 6. **Définissez Détecter les applications potentiellement indésirables** sur **Audit**, puis choisissez **Suivant**. (Vous pouvez désactiver la protection PUA, mais en utilisant le mode audit, vous pourrez voir les détections.)
 

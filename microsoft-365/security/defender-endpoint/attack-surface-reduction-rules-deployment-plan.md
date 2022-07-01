@@ -1,5 +1,5 @@
 ---
-title: Planifier le déploiement de règles de réduction de la surface d’attaque (ASR)
+title: Planifier le déploiement des règles de réduction de surface d’attaque (ASR)
 description: Fournit des conseils pour planifier le déploiement de vos règles de réduction de la surface d’attaque (ASR).
 keywords: Déploiement de règles de réduction de la surface d’attaque, déploiement ASR, activer des règles asr, configurer asr, système de prévention des intrusions de l’hôte, règles de protection, règles anti-exploitation, règles d’exploitation, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer des règles ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 07388ab8f1aac89991423c07fb442017aafb73e6
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 4e538a4e986ad0636c380ec2ba167249221ac3ec
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705294"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602489"
 ---
-# <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planifier le déploiement de règles de réduction de la surface d’attaque (ASR)
+# <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Planifier le déploiement des règles de réduction de surface d’attaque (ASR)
 
 Lors du test des règles de réduction de la surface d’attaque (ASR), il est important de commencer par l’unité commerciale appropriée. Vous souhaiterez commencer par un petit groupe de personnes dans une unité commerciale spécifique. Vous pouvez identifier certains champions ASR au sein d’une unité commerciale particulière qui peuvent fournir un impact réel sur les règles ASR et vous aider à paramétrer votre implémentation.
 
@@ -44,7 +43,7 @@ La façon dont vous sélectionnez l’unité métier pour déployer votre déplo
   - Logiciels
   - Dossiers partagés
   - Utilisation de scripts
-  - macros Office
+  - Macros Office
   - Autres entités affectées par les règles ASR
 
 En fonction des besoins de votre entreprise, vous pouvez décider d’inclure plusieurs unités commerciales pour obtenir un large échantillonnage de logiciels, dossiers partagés, scripts, macros, etc. À l’inverse, vous pouvez décider de limiter l’étendue de votre premier déploiement de règles ASR à une seule unité commerciale, puis de répéter l’intégralité du processus de déploiement des règles ASR à vos autres unités commerciales, une à la fois.
@@ -77,17 +76,17 @@ Les rôles et responsabilités classiques sont les suivants :
 ## <a name="ring-deployment"></a>Déploiement sonnerie
 
 Pour les grandes entreprises, Microsoft recommande de déployer des règles ASR dans des « anneaux ». Les anneaux sont des groupes d’appareils qui sont représentés visuellement sous forme de cercles concentriques qui rayonnent vers l’extérieur comme des anneaux d’arbre qui ne se chevauchent pas. Lorsque l’anneau le plus profond est déployé avec succès, vous pouvez passer l’anneau suivant à la phase de test. Une évaluation approfondie de vos unités commerciales, des champions des règles ASR, des applications et des processus est impérative pour définir vos anneaux.
-Dans la plupart des cas, votre organisation aura conçu des anneaux de déploiement pour les déploiements par phases de mises à jour Windows. Vous pouvez utiliser votre conception d’anneau existante pour implémenter des règles ASR.
+Dans la plupart des cas, votre organisation aura conçu des anneaux de déploiement pour les déploiements par phases des mises à jour Windows. Vous pouvez utiliser votre conception d’anneau existante pour implémenter des règles ASR.
 Voir : [Créer un plan de déploiement pour Windows](/windows/deployment/update/create-deployment-plan)
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiement
 
-[Vue d’ensemble du déploiement des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
+[Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Tester les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Activer les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+[Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Opérationnaliser les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+[Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Informations de référence sur les règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
+[Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)

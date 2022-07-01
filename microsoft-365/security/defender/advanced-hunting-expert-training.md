@@ -20,18 +20,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2036f0b1e749250d42066fc5ea742c550a2f756e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664103"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603316"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation d’expert sur la chasse avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
@@ -40,10 +40,10 @@ Améliorez rapidement vos connaissances de la chasse avancée avec _Tracking the
 
 | Titre | Description | Regarder | Requêtes |
 |---|---|---|---|
-| Episode 1: KQL notions de base | Cet épisode aborde les principes de base de la chasse avancée dans Microsoft 365 Defender. Découvrez les données de chasse avancées disponibles et la syntaxe et les opérateurs KQL de base. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
-| Episode 2: Joins | Continuez à en savoir plus sur les données de repérage avancé et sur la façon de joindre des tables. En savoir plus sur `inner`, `outer`, `unique`et `semi` les jointures, et comprendre les nuances de la jointure par défaut Kusto`innerunique`. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
+| Episode 1 : Notions de base de KQL | Cet épisode aborde les principes de base de la chasse avancée dans Microsoft 365 Defender. Découvrez les données de chasse avancées disponibles et la syntaxe et les opérateurs KQL de base. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
+| Episode 2: Joins | Continuez à en savoir plus sur les données de repérage avancé et sur la façon de joindre des tables. En savoir plus sur `inner`, `outer`, `unique`et `semi` les jointures, et comprendre les nuances de la jointure Kusto `innerunique` par défaut. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | Épisode 3 : Résumé, tableau croisé dynamique et visualisation des données | Maintenant que vous avez appris à filtrer, manipuler et joindre des données, il est temps de synthétiser, quantifier, pivoter et visualiser. Cet épisode décrit l’opérateur `summarize` et les différents calculs, tout en introduisant des tables supplémentaires dans le schéma. Vous allez également apprendre à transformer des jeux de données en graphiques qui peuvent vous aider à extraire des insights. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
-| Episode 4: Nous allons chasser! Application de KQL au suivi des incidents | Dans cet épisode, vous allez apprendre à suivre certaines activités des attaquants. Nous utilisons notre meilleure compréhension des Kusto et de la chasse avancée pour suivre une attaque. Découvrez les astuces réelles utilisées dans le domaine, y compris les AAC de la cybersécurité et comment les appliquer à la réponse aux incidents. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
+| Episode 4: Nous allons chasser! Application de KQL au suivi des incidents | Dans cet épisode, vous allez apprendre à suivre certaines activités des attaquants. Nous utilisons notre meilleure compréhension de Kusto et de la chasse avancée pour suivre une attaque. Découvrez les astuces réelles utilisées dans le domaine, y compris les AAC de la cybersécurité et comment les appliquer à la réponse aux incidents. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
 
 Obtenez une formation plus experte avec *L33TSP3AK : Repérage avancé dans Microsoft 365 Defender*, une série de diffusion web destinée aux analystes qui cherchent à développer leurs connaissances techniques et leurs compétences pratiques dans la conduite d’enquêtes de sécurité à l’aide de la chasse avancée dans Microsoft 365 Defender.
 
@@ -89,6 +89,14 @@ CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```
+
+
+## <a name="other-resources"></a>Autres ressources
+
+| Titre | Description | Regarder |
+|---|---|---|
+|Jointure de tables dans KQL | Découvrez la puissance de joindre des tables pour créer des résultats significatifs. | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| Optimisation des tables dans KQL | Découvrez comment éviter les délais d’expiration lors de l’exécution de requêtes complexes en optimisant vos requêtes. | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
 
 ## <a name="related-topics"></a>Voir aussi
 

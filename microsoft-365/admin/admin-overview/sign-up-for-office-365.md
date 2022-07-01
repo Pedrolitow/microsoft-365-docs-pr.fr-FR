@@ -27,22 +27,24 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Comprenez ce que vous devez savoir sur les dernières versions des programmes Office avant de passer par le processus d’inscription pour Office 365.
+description: Découvrez ce que vous devez savoir sur les dernières versions des programmes Office avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 185931ba308ae547355cb21a2935bb6f9097c8b7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 400c30fd1b6879097afe510f36582c46879c85a5
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636215"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601177"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - aide Administration
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
 
 ::: moniker range="o365-21vianet"
 
-Si vous êtes en Chine, Office 365 exploité par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft ne fonctionne pas avec le service lui-même. 21Vianet fonctionne, fournit et gère la livraison du service. 21Vianet est le plus grand fournisseur de services de centre de données Internet indépendant des opérateurs en Chine, fournissant des services d’hébergement, de réseau managé et d’infrastructure cloud computing. En concédant des licences aux technologies Microsoft, 21Vianet exploite des centres de données Microsoft locaux pour vous permettre d’utiliser services Microsoft tout en conservant vos données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi que le support.
+Si vous êtes en Chine, Office 365 exploité par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft ne fonctionne pas avec le service lui-même. 21Vianet fonctionne, fournit et gère la livraison du service. 21Vianet est le plus grand fournisseur de services de centre de données Internet indépendant des opérateurs en Chine, fournissant des services d’hébergement, de réseau managé et d’infrastructure cloud computing. En concédant des licences aux technologies Microsoft, 21Vianet exploite des centres de données Microsoft locaux pour vous permettre d’utiliser les services Microsoft tout en conservant vos données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi que le support.
   
 > [!NOTE]
 > Ces services sont soumis au droit chinois.
@@ -54,11 +56,14 @@ Vous êtes prêt à vous inscrire ? [Sélectionnez un plan](https://products.off
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="choose-a-plan"></a>Choisir une offre
 
 Avant d’acheter, mettez un peu de réflexion dans le plan pour lequel vous vous inscrivez. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
 
 ## <a name="watch-choose-a-microsoft-365-subscription"></a>Regarder : Choisir un abonnement Microsoft 365
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -93,7 +98,7 @@ Vous n’avez pas besoin d’annuler votre essai. Si vous n’achetez pas l’ab
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
-    > L’adresse e-mail que vous entrez ici est différente de votre adresse e-mail Microsoft 365 (votre nom d’ouverture de session, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
+    > L’adresse e-mail que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom d’ouverture de session, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
   
 - **Nom de connexion (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse e-mail Microsoft 365 initiale, juste pour vous aider à démarrer rapidement.
 

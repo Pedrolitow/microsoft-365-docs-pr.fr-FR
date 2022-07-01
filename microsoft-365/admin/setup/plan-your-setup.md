@@ -23,20 +23,24 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations relatives à la migration vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 29b72079d877e8a7974b2e31b5b2dc65341da912
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 356d4cc1f696c871badcdceeb392c74b510cb49c
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490838"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601155"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article est destiné aux personnes qui se sont abonnées à un plan Microsoft 365 pour les entreprises.
   
 Avant de déplacer votre organisation vers Microsoft 365, vous devez respecter les exigences, les informations dont vous avez besoin et les décisions que vous devez prendre.
 
 ## <a name="overview-of-microsoft-365-for-business-setup"></a>Vue d’ensemble de la configuration de Microsoft 365 pour les entreprises
+
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197910).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 

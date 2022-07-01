@@ -1,5 +1,5 @@
 ---
-title: Essayer ou acheter un abonnement Microsoft 365 entreprise
+title: Essayer ou acheter un abonnement Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -23,14 +23,16 @@ ms.custom:
 search.appverid: GEA150
 description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: d7ead35ebef6431a5e207e7114936d9724948755
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824221"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602533"
 ---
-# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 entreprise
+# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 pour les entreprises
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Microsoft 365 pour les entreprises est un service d’abonnement qui vous permet d’exécuter votre organisation dans le cloud pendant que Microsoft s’occupe de l’informatique pour vous. Microsoft gère les appareils, protège contre les menaces réelles et fournit à votre organisation les derniers logiciels métier. Vous pouvez vous inscrire à un abonnement d’essai gratuit pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME et l’essayer pendant 30 jours.
 
@@ -49,16 +51,16 @@ Microsoft 365 pour les entreprises est un service d’abonnement qui vous permet
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures décrites dans cet article, vous devez être administrateur général ou de facturation pour votre organisation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures décrites dans cet article, vous devez être administrateur général ou de facturation pour votre organisation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Essayer un abonnement d’essai gratuit
 
 Êtes-vous un nouveau client, et vous n’avez pas encore de compte avec Microsoft ? Utilisez ces étapes pour créer un compte et vous inscrire à un abonnement d’essai gratuit de Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 
-1. Accédez au <a href="https://www.aka.ms/office365signup" target="_blank">site Microsoft 365 Products</a>.
+1. Accédez au <a href="https://www.aka.ms/office365signup" target="_blank">site Produits Microsoft 365</a>.
 2. Sélectionnez le plan auquel vous souhaitez vous inscrire, par exemple **Microsoft 365 Business Standard**, faites défiler la page, puis **sélectionnez Essayer gratuitement pendant 1 mois**.
 3. Sur la page suivante, suivez les étapes pour configurer votre compte.
-4. Le processus d’inscription peut prendre plusieurs minutes. Une fois l’opération\' terminée, vous êtes prêt à démarrer l’Assistant Installation de votre abonnement. Pour plus d’informations sur la configuration de votre abonnement, consultez [Étapes suivantes](#next-steps).
+4. Le processus d’inscription peut prendre plusieurs minutes. Une fois l’opération\'terminée, vous êtes prêt à démarrer l’Assistant Installation de votre abonnement. Pour plus d’informations sur la configuration de votre abonnement, consultez [Étapes suivantes](#next-steps).
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>Acheter un abonnement depuis votre version d’essai
 
@@ -72,7 +74,7 @@ Si vous souhaitez acheter votre abonnement avant la fin de votre version d’év
 4. Choisissez un engagement mensuel ou annuel pour votre abonnement, puis sélectionnez **Validation de l'achat**.
 5. Dans la page suivante, vérifiez l’abonnement, puis sélectionnez **Validation de l’achat**.
 6. Sur la page suivante, vérifiez l’adresse de **l’acheteur** et les informations de **facturation** ainsi que **les articles de cette commande**. Si vous souhaitez modifier des informations, sélectionnez **modifier** en regard de la section applicable.
-7. Lorsque vous\' avez terminé, **sélectionnez Accepter le contrat & passer commande**.
+7. Lorsque vous\'avez terminé, **sélectionnez Accepter le contrat & passer commande**.
 
 ## <a name="extend-your-trial"></a>Prolonger votre version d’essai
 
@@ -109,12 +111,14 @@ Si vous disposez déjà d’un abonnement Microsoft 365 pour les entreprises, vo
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>Regarder : Déplacer des utilisateurs vers un autre abonnement
 
+Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
 À mesure que vos utilisateurs changent de rôle, ils peuvent avoir besoin de fonctionnalités qui ne sont pas disponibles dans leur abonnement Microsoft 365 Business Premium actuel. Dans ce cas, vous pouvez ajouter un nouvel abonnement qui inclut ces fonctionnalités et attribuer des licences aux personnes qui en ont besoin.
 
 > [!NOTE]
-> Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la période d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 Lorsque vous achetez un autre abonnement via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, le nouvel abonnement est associé à la même organisation (espace de noms de domaine) que votre abonnement existant. Cela facilite le déplacement des utilisateurs de votre organisation entre les abonnements ou leur attribuer une licence pour l’abonnement supplémentaire dont ils ont besoin.
 
@@ -143,7 +147,7 @@ La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer
 > Les cartes de crédit internationales ne sont pas acceptées.
 ::: moniker-end
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous disposez d’un nouveau compte et que vous configurez votre premier abonnement, vous pouvez utiliser les articles d’installation guidés pour vous aider à commencer.
 
@@ -154,9 +158,9 @@ Si vous disposez d’un nouveau compte et que vous configurez votre premier abon
 
 Si vous disposez déjà d’un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment procéder, consultez [Déplacer les utilisateurs vers un autre abonnement](subscriptions/move-users-different-subscription.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Microsoft 365 pour les vidéos de formation professionnelle](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
+[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../admin/add-users/add-users.md) (article)\
 [Attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md) (article)\
 [Mettre à niveau vers un autre plan](subscriptions/upgrade-to-different-plan.md) (article)\

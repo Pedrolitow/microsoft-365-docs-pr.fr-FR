@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 505308bec005811e174b90cde9e872532ccacdfe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: c4236edcb2b5ec15b7c66be8f4b74ad0a2bc44c7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739480"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603465"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -44,6 +44,8 @@ Après avoir exécuté votre requête, vous pouvez voir le temps d’exécution 
 
 Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la consommation et appliquer les conseils d’optimisation de cet article pour réduire les interruptions résultant du dépassement des quotas ou des paramètres d’utilisation.
 
+Regardez [Optimisation des requêtes KQL](https://www.youtube.com/watch?v=ceYvRuPp5D8) pour voir quelques-unes des méthodes les plus courantes pour améliorer vos requêtes.  
+
 ## <a name="general-optimization-tips"></a>Conseils généraux sur l’optimisation
 
 - **Dimensionner de nouvelles requêtes** : si vous pensez qu’une requête retournera un jeu de résultats volumineux, évaluez-la en premier à l’aide de [l’opérateur count](/azure/data-explorer/kusto/query/countoperator). Utilisez [la limite](/azure/data-explorer/kusto/query/limitoperator) ou son synonyme `take` pour éviter les jeux de résultats volumineux.
@@ -63,7 +65,9 @@ Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la
 - **Analysez, n’extrayez pas** : dans la mesure du possible, utilisez [l’opérateur d’analyse](/azure/data-explorer/kusto/query/parseoperator) ou une fonction d’analyse comme [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Évitez l’opérateur `matches regex` de chaîne ou la [fonction extract(),](/azure/data-explorer/kusto/query/extractfunction) qui utilisent toutes les deux une expression régulière. Réservez l’utilisation de l’expression régulière pour des scénarios plus complexes. [En savoir plus sur les fonctions d’analyse](#parse-strings)
 - **Filtrer les tables et non les expressions** : ne filtrez pas sur une colonne calculée si vous pouvez filtrer sur une colonne de table.
 - **Aucun terme à trois caractères** : évitez de comparer ou de filtrer à l’aide de termes comportant trois caractères ou moins. Ces termes ne sont pas indexés et leur correspondance nécessite plus de ressources.
-- **Project sélectivement** : facilitez la compréhension de vos résultats en projetant uniquement les colonnes dont vous avez besoin. La projection de colonnes spécifiques avant l’exécution de [jointures](/azure/data-explorer/kusto/query/joinoperator) ou d’opérations similaires permet également d’améliorer les performances.
+- **Projeter de manière sélective** : facilitez la compréhension de vos résultats en projetant uniquement les colonnes dont vous avez besoin. La projection de colonnes spécifiques avant l’exécution de [jointures](/azure/data-explorer/kusto/query/joinoperator) ou d’opérations similaires permet également d’améliorer les performances.
+
+
 
 ## <a name="optimize-the-join-operator"></a>Optimiser l’opérateur `join`
 [L’opérateur de jointure](/azure/data-explorer/kusto/query/joinoperator) fusionne des lignes à partir de deux tables en mettant en correspondance des valeurs dans des colonnes spécifiées. Appliquez ces conseils pour optimiser les requêtes qui utilisent cet opérateur.
@@ -186,7 +190,7 @@ Les clients qui exécutent régulièrement plusieurs requêtes doivent suivre la
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-Regardez cette [courte vidéo](https://www.youtube.com/watch?v=ceYvRuPp5D8) pour découvrir comment optimiser le Langage de requête Kusto.  
+
 
 ## <a name="query-scenarios"></a>Scénarios de requête
 
@@ -267,13 +271,13 @@ Il existe différentes fonctions que vous pouvez utiliser pour gérer efficaceme
 | Adresses IPv4 | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Convertissez une adresse IPv4 en entier long. Pour comparer les adresses IPv4 sans les convertir, utilisez [ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Adresses IPv6 | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convertissez une adresse IPv4 ou IPv6 en notation IPv6 canonique. Pour comparer les adresses IPv6, utilisez [ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Pour en savoir plus sur toutes les fonctions d’analyse prises en charge, [consultez Kusto fonctions de chaîne](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
+Pour en savoir plus sur toutes les fonctions d’analyse prises en charge, [consultez les fonctions de chaîne Kusto](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
 
 >[!NOTE]
 >Certaines tables de cet article peuvent ne pas être disponibles dans Microsoft Defender pour point de terminaison. [Activez Microsoft 365 Defender](m365d-enable.md) pour rechercher des menaces à l’aide de sources de données supplémentaires. Vous pouvez déplacer vos flux de travail de chasse avancés de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de migration [des requêtes de chasse avancées à partir de Microsoft Defender pour point de terminaison](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Voir aussi
-- [Kusto documentation sur le langage de requête](/azure/data-explorer/kusto/query/)
+- [Documentation sur le langage de requête Kusto](/azure/data-explorer/kusto/query/)
 - [Paramètres d’utilisation et de quotas](advanced-hunting-limits.md)
 - [Gérer les erreurs de repérage avancées](advanced-hunting-errors.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

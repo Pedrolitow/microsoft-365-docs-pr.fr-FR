@@ -18,19 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 - m365solution-incidentresponse
-- m365solution-scenario
 - m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a4edb82291ff01a4876ad93d688dbbbf19416c05
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: a919e8893fff0486d7a9a3eb89be1822a73ce437
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435366"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603547"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Examiner et répondre avec Microsoft 365 Defender
 
@@ -91,4 +90,4 @@ Pour plus d’informations, consultez [Analyse des menaces dans Microsoft 365 De
 
 Spécialistes des menaces Microsoft : les notifications d’attaque ciblée sont un service de chasse aux menaces managé. Une fois que vous appliquez et que vous êtes accepté, vous recevez des notifications d’attaque ciblée de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation. Spécialistes des menaces Microsoft – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée et vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement supplémentaire.
 
-Pour plus d’informations, consultez [Spécialistes des menaces Microsoft dans Microsoft 365 vue d’ensemble](/microsoft-365/security/defender/microsoft-threat-experts).
+Pour plus d’informations, consultez [Spécialistes des menaces Microsoft dans la vue d’ensemble de Microsoft 365](/microsoft-365/security/defender/microsoft-threat-experts).

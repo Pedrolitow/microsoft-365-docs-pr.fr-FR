@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 2f745c0f215f19b0d6e4f9fc06b39ba8234fd170
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554266"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603503"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
@@ -46,6 +46,7 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 
 **Nouveautés**
 
+- Correctif pour prendre en charge le stockage de définitions dans des emplacements non standard (en dehors de /var) pour les mises à jour de définition v2
 - Correction d’un problème dans le capteur de produit utilisé sur RHEL 6 qui pouvait entraîner un blocage du système d’exploitation
 - `mdatp connectivity test` a été étendu avec une URL supplémentaire dont le produit a besoin pour fonctionner correctement. La nouvelle URL est [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - Jusqu’à présent, le niveau du journal des produits n’était pas conservé entre les redémarrages du produit. À partir de cette version, il existe un nouveau commutateur d’outil de ligne de commande qui conserve le niveau du journal. La nouvelle commande est `mdatp log level persist --level <level>`.

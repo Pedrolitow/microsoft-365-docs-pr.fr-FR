@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8c650e639d1a4629ed25bcc3a7f3a8c28df4b8e8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65740012"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603470"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -37,9 +37,9 @@ ms.locfileid: "65740012"
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
-Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/query/). Vous pouvez utiliser Kusto opérateurs et instructions pour construire des requêtes qui recherchent des informations dans un [schéma](advanced-hunting-schema-tables.md) spécialisé. 
+Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/query/). Vous pouvez utiliser des opérateurs et des instructions Kusto pour construire des requêtes qui recherchent des informations dans un [schéma](advanced-hunting-schema-tables.md) spécialisé. 
 
-Regardez cette courte vidéo pour découvrir les principes de base du langage de requête Kusto pratique.
+Regardez cette courte vidéo pour découvrir les principes de base du langage de requête Kusto.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
  
@@ -133,7 +133,7 @@ Sélectionnez **Exécuter la requête** pour afficher les résultats.
 >[!TIP]
 >Vous pouvez afficher les résultats des requêtes sous forme de graphiques et ajuster rapidement les filtres. Pour obtenir des conseils, [consultez l’utilisation des résultats de la requête](advanced-hunting-query-results.md)
 
-Regardez cette [courte vidéo](https://www.youtube.com/watch?v=8qZx7Pp5XgM) pour découvrir comment utiliser Langage de requête Kusto pour joindre des tables.
+
 
 ## <a name="learn-common-query-operators"></a>Découvrir les opérateurs de requête courants
 
@@ -143,7 +143,7 @@ Vous venez d’exécuter votre première requête et vous avez une idée génér
 |--|--|
 | `where` | Filtre une table sur le sous-ensemble de lignes qui répondent à un prédicat. |
 | `summarize` | Produit une table qui agrège le contenu de la table d’entrée. |
-| `join` | Fusionne les lignes de deux tables pour former une nouvelle table en faisant correspondre les valeurs des colonnes spécifiées de chaque table. |
+| `join` | Fusionne les lignes de deux tables pour former une nouvelle table en faisant correspondre les valeurs des colonnes spécifiées de chaque table. Regardez [Joindre des tables dans KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) pour savoir comment faire.|
 | `count` | Renvoie le nombre d’enregistrements dans le groupe d’enregistrements d’entrée. |
 | `top` | Renvoie les N premiers enregistrements triés par les colonnes spécifiées. |
 | `limit` | Renvoie jusqu’au nombre de lignes spécifié. |
@@ -156,7 +156,7 @@ Pour voir un exemple parlant de ces opérateurs, exécutez-les à partir de la s
 
 ## <a name="understand-data-types"></a>Comprendre les types de données
 
-La chasse avancée prend en charge Kusto types de données, y compris les types courants suivants :
+La chasse avancée prend en charge les types de données Kusto, y compris les types courants suivants :
 
 | Type de données | Description et implications dans les requêtes |
 |--|--|
@@ -166,12 +166,12 @@ La chasse avancée prend en charge Kusto types de données, y compris les types 
 | `int` | Valeur entière 32 bits.  |
 | `long` | Valeur entière 64 bits. |
 
-Pour en savoir plus sur ces types de données, [consultez Kusto types de données scalaires](/azure/data-explorer/kusto/query/scalar-data-types/).
+Pour en savoir plus sur ces types de données, [consultez les types de données scalaires Kusto](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion automatique** : à mesure que vous écrivez des requêtes, la chasse avancée fournit des suggestions à partir de IntelliSense. 
+- **Suggestion automatique** : à mesure que vous écrivez des requêtes, la chasse avancée fournit des suggestions d’IntelliSense. 
 - **Arborescence de schéma** : une représentation de schéma qui inclut la liste des tables et leurs colonnes est fournie en regard de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
 - **[Référence de schéma](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : référence dans le portail avec des descriptions de table et de colonne, ainsi que des types d’événements pris en charge (`ActionType` valeurs) et des exemples de requêtes
 
@@ -202,7 +202,7 @@ La section **Prise en main** fournit quelques requêtes simples utilisant des op
 :::image type="content" source="../../media/get-started-section.png" alt-text="Section **Prise en main** de la page **Repérage avancé** du portail Microsoft 365 Defender" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
->Hormis les exemples de requête de base, vous pouvez également accéder à des [requêtes partagées](advanced-hunting-shared-queries.md) pour des scénarios de repérage de menace spécifiques. Explorez les requêtes partagées sur le côté gauche de la page ou le [dépôt de requêtes GitHub](https://aka.ms/hunting-queries).
+>Hormis les exemples de requête de base, vous pouvez également accéder à des [requêtes partagées](advanced-hunting-shared-queries.md) pour des scénarios de repérage de menace spécifiques. Explorez les requêtes partagées sur le côté gauche de la page ou le [référentiel de requêtes GitHub](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Documentation sur le langage de requête Access
 

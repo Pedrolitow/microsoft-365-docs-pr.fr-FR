@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: e84324d3d37b28daec1a7f5e4498e0427a29a588
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864434"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602915"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -30,6 +30,40 @@ Nous ajoutons continuellement de nouvelles fonctionnalités à [Microsoft 365 Li
 
 > [!NOTE]
 > Certaines fonctionnalités sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, vous devriez la voir bientôt.
+
+## <a name="june-2022"></a>Juin 2022
+
+### <a name="support-for-microsoft-365-e5-customers"></a>Prise en charge des clients Microsoft 365 E5
+
+Nous avons modifié nos exigences d’intégration pour vous permettre d’intégrer Microsoft 365 E5 clients à Microsoft 365 Lighthouse. La liste étendue des licences prises en charge par Microsoft 365 Lighthouse pour l’intégration inclut Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender pour entreprises et Windows 365 pour les entreprises. Les clients qui disposent d’au moins une de ces licences, répondent aux exigences relatives aux autorisations d’accès délégué et ne dépassent pas le nombre maximal d’utilisateurs sous licence peuvent être gérés dans Microsoft 365 Lighthouse.  
+
+Pour obtenir la liste complète des exigences, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+
+### <a name="microsoft-defender-for-business-integration"></a>intégration Microsoft Defender pour entreprises
+
+Microsoft 365 Lighthouse s’intègre maintenant à Microsoft Defender pour entreprises pour vous apporter des insights et des fonctionnalités de gestion associés pour tous vos clients qui ont Microsoft Defender pour entreprises. Pour afficher la liste des appareils clients qui ont été intégrés à Microsoft Defender pour entreprises, sélectionnez **Appareils** dans le volet de navigation gauche dans Microsoft 365 Lighthouse. Pour afficher la liste des incidents et des alertes signalés sur vos locataires clients, accédez à **Device** > **Security**, puis sélectionnez l’onglet **Incidents et alertes** .  
+
+Nous avons également ajouté une étape à la base de référence par défaut pour vous aider à configurer Microsoft Defender pour entreprises pour vos locataires clients. Pour voir cette étape, sélectionnez **Lignes** de base dans le volet de navigation gauche dans Microsoft 365 Lighthouse ou affichez le plan de déploiement pour l’un de vos locataires clients.
+
+### <a name="status-of-quarantined-email-messages"></a>État des messages électroniques mis en quarantaine
+
+Nous avons ajouté de nouvelles fonctionnalités concernant les données de mise en quarantaine par e-mail pour vos locataires gérés. Accessible en sélectionnant **Protection des données** dans le volet de navigation gauche dans Microsoft 365 Lighthouse, cette fonctionnalité vous donne une visibilité sur l’état des messages électroniques mis en quarantaine dans vos locataires clients. Vous pouvez voir des informations consolidées pour le total des volumes de quarantaine et des informations détaillées pour chaque locataire géré afin de vous aider à hiérarchiser tous les locataires qui peuvent nécessiter une action.
+
+### <a name="increase-in-maximum-license-limit"></a>Augmentation de la limite maximale de licence
+
+Nous rendons possible la gestion d’un plus grand nombre de vos clients dans Microsoft 365 Lighthouse en augmentant une fois de plus la limite de licence maximale pour l’intégration des clients. Les clients avec jusqu’à 2 500 licences utilisateur peuvent désormais être intégrés à Microsoft 365 Lighthouse. Nous continuerons d’évaluer cette exigence à l’avenir Microsoft 365 Lighthouse versions. 
+
+Pour plus d’informations, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+
+## <a name="may-2022"></a>Mai 2022
+
+### <a name="redesigned-left-navigation-pane"></a>Volet de navigation gauche repensé
+
+Nous avons donné une nouvelle apparence au volet de navigation gauche dans Microsoft 365 Lighthouse. Vous remarquerez une conception plus épurée, avec des nœuds de niveau supérieur tels que les locataires, les utilisateurs et les appareils qui s’étendent pour afficher les sous-nœuds associés, tels que les utilisateurs à risque, la conformité des appareils et la gestion des menaces. Ce modèle de navigation s’aligne sur le modèle utilisé par d’autres centres d’administration Microsoft 365.
+
+### <a name="enriched-user-details-pane"></a>Volet Des détails utilisateur enrichis
+
+Nous avons repensé le volet des détails de l’utilisateur pour inclure plus d’informations sur l’utilisateur et d’autres actions que vous pouvez effectuer pour mieux gérer les utilisateurs. Il a maintenant la même apparence que le volet des détails de l’utilisateur dans le Centre d'administration Microsoft 365. Pour accéder au volet d’informations utilisateur dans Microsoft 365 Lighthouse, sélectionnez **Utilisateurs** dans le volet de navigation gauche, puis sélectionnez **Rechercher des utilisateurs** ou **Utilisateurs à risque**. Sélectionnez n’importe quel utilisateur pour ouvrir le volet d’informations.
 
 ## <a name="april-2022"></a>Avril 2022
 
@@ -43,7 +77,7 @@ Pour en savoir plus, consultez [Vue d’ensemble des autorisations dans Microsof
 
 ### <a name="windows-365-business-integration-and-management-actions"></a>Windows 365 Affaires actions d’intégration et de gestion
 
-En fonction des commentaires des utilisateurs, nous avons intégré Windows 365 Affaires dans Microsoft 365 Lighthouse. Cela vous aidera à gérer et à surveiller tous les PC cloud de vos clients à partir d’un emplacement unique. 
+En fonction des commentaires des utilisateurs, nous avons intégré Windows 365 Affaires dans Microsoft 365 Lighthouse. Cette intégration vous permet de gérer et de surveiller tous les PC cloud de vos clients à partir d’un emplacement unique. 
 
 En plus de l’intégration à Windows 365 Affaires PC cloud dans Microsoft 365 Lighthouse, vous pouvez désormais effectuer les actions de gestion suivantes :
 
@@ -65,9 +99,9 @@ Microsoft 365 Lighthouse inclut désormais la possibilité pour les MSP d’util
 
 Pour en savoir plus sur GDAP dans Microsoft 365 Lighthouse, consultez [Configurer la sécurité du portail Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md).
 
-### <a name="capability-to-notify-users-to-act-on-non-compliant-devices"></a>Possibilité d’informer les utilisateurs d’agir sur des appareils non conformes
+### <a name="capability-to-notify-users-to-act-on-noncompliant-devices"></a>Possibilité d’informer les utilisateurs d’agir sur des appareils non conformes
 
-Dans le cadre de l’étape de référence de conformité des appareils, nous avons ajouté la possibilité d’informer les utilisateurs d’un locataire client d’agir sur des appareils non conformes. Avec cette modification, une fois que vous appliquez l’étape de déploiement de conformité des appareils pour n’importe quel locataire client, la stratégie de conformité de l’appareil créée dans ce locataire envoie automatiquement une notification aux utilisateurs lorsque leur appareil devient non conforme, leur rappelant de prendre les mesures appropriées pour rétablir la conformité de l’appareil.
+Dans le cadre de l’étape de référence de conformité des appareils, nous avons ajouté la possibilité d’informer les utilisateurs d’un locataire client d’agir sur des appareils non conformes. Avec cette modification, une fois que vous appliquez l’étape de déploiement de conformité des appareils pour n’importe quel locataire client, la stratégie de conformité de l’appareil créée dans ce locataire envoie automatiquement une notification aux utilisateurs lorsque leur appareil devient non conforme leur rappelant de prendre les mesures appropriées pour rétablir la conformité de l’appareil.
 
 ### <a name="deployment-validation-and-reporting"></a>Validation et création de rapports de déploiement
 
@@ -112,13 +146,13 @@ Dans le volet de navigation gauche de Microsoft 365 Lighthouse, sélectionnez **
 
 ## <a name="november-2021"></a>Novembre 2021
 
-### <a name="microsoft-365-services-usage-data"></a>données d’utilisation des services Microsoft 365
+### <a name="microsoft-365-services-usage-data"></a>Données d’utilisation des services Microsoft 365
 
 Vous pouvez désormais afficher les données d’utilisation des services Microsoft 365 à partir de Microsoft 365 Lighthouse. Comprendre comment les clients utilisent leurs services Microsoft 365 est essentiel pour les aider à tirer le meilleur parti de leurs investissements informatiques. Au lieu d’utiliser plusieurs ressources pour afficher des informations sur les différents services de productivité, de sécurité et de conformité de vos clients, Microsoft 365 Lighthouse les agrège en une vue simple et puissante.  
 
 Ces insights peuvent aider à informer vos engagements clients et à offrir plus de valeur à vos clients en vous permettant de les aider à comprendre les services que leurs utilisateurs utilisent activement et où il peut y avoir des opportunités d’améliorer leur sécurité ou leur productivité. 
 
-Pour plus d’informations, consultez [la page Vue d’ensemble des locataires dans Microsoft 365 Lighthouse : Microsoft 365 carte d’utilisation](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+Pour plus d’informations, consultez [vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse : carte d’utilisation Microsoft 365](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>Exchange Online Protection et Microsoft 365 Defender pour Office 365 étape de référence par défaut
 
@@ -136,7 +170,7 @@ Il est désormais possible de filtrer les données par plusieurs balises de loca
 
 ### <a name="capability-to-assign-baseline-configurations-to-specific-azure-active-directory-groups"></a>Possibilité d’affecter des configurations de base de référence à des groupes Azure Active Directory spécifiques
 
-Nous avons ajouté la possibilité d’affecter des configurations de base de référence à des groupes de Azure Active Directory spécifiques (Azure AD) de vos locataires clients à partir de Microsoft 365 Lighthouse. Dans n’importe quelle page d’étape de déploiement, parcourez et sélectionnez les groupes Azure AD spécifiques que vous souhaitez inclure ou exclure, puis déployez les configurations sur votre locataire client.
+Nous avons ajouté la possibilité d’affecter des configurations de base de référence à des groupes Azure Active Directory (Azure AD) spécifiques de vos locataires clients à partir de Microsoft 365 Lighthouse. Dans n’importe quelle page d’étape de déploiement, parcourez et sélectionnez les groupes Azure AD spécifiques que vous souhaitez inclure ou exclure, puis déployez les configurations sur votre locataire client.
 
 ### <a name="improvements-to-risky-users-page"></a>Page Améliorations apportées aux utilisateurs à risque
 
@@ -152,7 +186,7 @@ Vos commentaires sont importants pour nous. Nous avons donc ajouté de nouvelles
 
 Nous avons apporté des modifications à l’expérience de filtrage des locataires pour vous aider à afficher et gérer rapidement les locataires et les balises à partir de n’importe quelle page dans Microsoft 365 Lighthouse. Sélectionnez le filtre **Locataires** en haut de n’importe quelle page, puis parcourez ou entrez le nom du locataire ou de la balise sur lequel vous souhaitez filtrer.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 ### <a name="in-product-email-workflows-to-communicate-with-users"></a>Flux de travail de messagerie dans le produit pour communiquer avec les utilisateurs 
 
@@ -176,7 +210,7 @@ Nous avons modifié nos exigences d’intégration pour vous permettre d’inté
 
 Pour plus d’informations sur les exigences, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="capability-to-add-custom-tags-to-customer-tenants"></a>Possibilité d’ajouter des balises personnalisées aux locataires du client
 
@@ -193,9 +227,9 @@ Avec la nouvelle fonctionnalité des bases de référence, vous pouvez désormai
 - Configurer la stratégie av Defender pour les appareils Windows 
 - Configurer la stratégie de conformité pour les appareils Windows 
 
-Pour suivre ces étapes de déploiement, sélectionnez **Locataires** dans le volet de navigation gauche dans Microsoft 365 phare, sélectionnez un locataire dans la liste des locataires, puis sélectionnez l’onglet **Plan de** déploiement. 
+Pour suivre ces étapes de déploiement, sélectionnez **Locataires** dans le volet de navigation gauche de Microsoft 365 Lighthouse, sélectionnez un locataire dans la liste des locataires, puis sélectionnez l’onglet **Plan de déploiement** . 
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="enhancements-to-tenants-page"></a>Page Améliorations apportées aux locataires
 
