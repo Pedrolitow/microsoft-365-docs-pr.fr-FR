@@ -241,6 +241,28 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: Créer des enregistrements DNS auprès d’un hôte DNS
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            - name: Connectez vos enregistrements DNS auprès d’IONOS par 1&1
+              href: dns/create-dns-records-at-1-1-internet.md
+            - name: Connectez vos enregistrements DNS à 123-reg.co.uk
+              href: dns/create-dns-records-at-123-reg-co-uk.md
+            - name: Connectez vos enregistrements DNS à Amazon Web Services (AWS)
+              href: dns/create-dns-records-at-aws.md
+            - name: Connectez vos enregistrements DNS sur Cloudflare
+              href: dns/create-dns-records-at-cloudflare.md
+            - name: Connectez vos enregistrements DNS sur GoDaddy
+              href: dns/create-dns-records-at-godaddy.md
+            - name: Connectez vos enregistrements DNS à Namecheap
+              href: dns/create-dns-records-at-namecheap.md
+            - name: Connectez vos enregistrements DNS auprès des solutions réseau
+              href: dns/create-dns-records-at-network-solutions.md
+            - name: Connectez vos enregistrements DNS à OVH
+              href: dns/create-dns-records-at-ovh.md
+            - name: Connectez vos enregistrements DNS à web.com
+              href: dns/create-dns-records-at-web-com.md
+            - name: Connectez vos enregistrements DNS à Wix
+              href: dns/create-dns-records-at-wix.md
+            - name: Créer des enregistrements pour Microsoft à l'aide de DNS Windows
+              href: dns/create-dns-records-using-windows-based-dns.md
         - name: Résoudre les problèmes liés aux domaines
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Gérer vos données et vos services

@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 04/20/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,24 +23,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Vue d’ensemble de la configuration pour les campagnes ou d’autres entreprises. Comment configurer la cybersécurité et éviter les cyberattaques.
-ms.openlocfilehash: 3d2aa4a57bf857a855924f834492b2efd6d3f730
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Aperçu de la configuration pour les petites et moyennes entreprises et des campagnes. Comment configurer la cybersécurité et éviter les cyberattaques.
+ms.openlocfilehash: a1eb7bd8daab97dcf15b45c66f0f82aa4ce39169
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101714"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491884"
 ---
 # <a name="fortify-your-organization-with-microsoft-365-business-premium"></a>Fortifier votre organisation avec Microsoft 365 Business Premium
 
-Pour cette première mission, configurez immédiatement vos défenses de sécurité initiales. Connectez-vous, puis lancez [l’Assistant d’installation](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) pour configurer la sécurité globale et les licences pour vos équipes. 
+Maintenant que vous avez Microsoft 365 Business Premium, votre première mission critique consiste à configurer immédiatement des défenses de sécurité initiales. Nous allons vous aider à démarrer.
 
 Vos objectifs sont les suivants :
 
-- S’inscrire et se connecter à Microsoft 365 Business Premium
-- Configurer votre environnement Microsoft 365 Business Premium
+- [Configurez votre environnement Microsoft 365 Business Premium](m365bp-setup.md).
+- [Configurez Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) s’il s’agit de votre abonnement.
 
-Une fois ces objectifs atteints, vous pouvez passer à la [mission suivante](m365bp-security-overview.md).
+Une fois que vous avez atteint ces objectifs, accédez à [augmentez les protections de sécurité](m365bp-security-overview.md).
 
 :::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Configuration de Business Premium":::
-

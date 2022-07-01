@@ -1,8 +1,8 @@
 ---
 title: À propos des paramètres du profil AutoPilot
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 f1.keywords:
@@ -29,25 +29,22 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Les profils AutoPilot vous aident à contrôler la façon dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l’installation de Cortana.
-ms.openlocfilehash: b4528e52c555f17c19f6548cbd9d7cabf4d9cbf5
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 387346c68ad9ff85c3f97e4d8ca8b0ccdb28dcbd
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320323"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490247"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Paramètres du profil AutoPilot
-
-> [!NOTE]
-> Microsoft Defender pour les PME est déployée pour les clients Microsoft 365 Business Premium, à compter du 1er mars 2022. Cette offre fournit des fonctionnalités de sécurité supplémentaires pour les appareils. [En savoir plus sur Defender for Business](../security/defender-business/mdb-overview.md).
+## <a name="autopilot-profile-settings"></a>Paramètres du profil de pilote automatique
 
 Vous pouvez utiliser des profils AutoPilot pour contrôler la façon dont Windows est installé sur les appareils utilisateur. Les profils contiennent les paramètres suivants.
   
 ## <a name="autopilot-default-features-required-that-are-set-automatically"></a>Fonctionnalités par défaut AutoPilot (obligatoires) définies automatiquement
   
-| Paramètre | Description |
+| Setting | Description |
 |:-----|:-----|
 |Ignorer l’inscription Cortana, OneDrive et OEM  |Ignore l’installation d’applications grand public telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut les installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée, car l’appareil sera géré par Microsoft 365 Business Premium.  |
 |Expérience de connexion avec votre marque d’entreprise  |Si votre entreprise dispose d’un [Ajouter la marque de votre entreprise à la page de connexion Microsoft 365](../admin/setup/customize-sign-in-page.md), l’utilisateur de l’appareil bénéficiera de cette expérience lors de la connexion.  |

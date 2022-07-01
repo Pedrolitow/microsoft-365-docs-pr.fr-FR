@@ -2,11 +2,11 @@
 title: Utiliser Microsoft Teams pour la collaboration
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,34 +23,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez pourquoi et comment créer une équipe dans Microsoft Teams afin que votre petite entreprise ou votre campagne puisse collaborer.
-ms.openlocfilehash: ef9c435cbaa7a862164c39244bdb2a865845fa58
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 046a888c0df95bc404bafcddb041e015131e6503
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100156"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489645"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>Utiliser Microsoft Teams pour la collaboration
 
-Microsoft Teams est une application de collaboration qui permet à votre personnel de rester organisé et de discuter, à partir de n’importe quel appareil. Vous pouvez utiliser Microsoft Teams pour avoir des conversations instantanées avec des membres de votre personnel ou des invités externes à votre organisation. Vous pouvez également passer des appels téléphoniques, héberger des réunions et partager des fichiers.
+Microsoft Teams est une application de collaboration qui permet aux membres de l’organisation d’utiliser n’importe quel appareil pour rester organisés et avoir des conversations. Vous pouvez utiliser Microsoft Teams pour avoir des conversations immédiates avec des membres de votre personnel ou des invités extérieurs à votre organisation. Vous pouvez également passer des appels téléphoniques, héberger des réunions et partager des fichiers.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
 1. Créez des équipes privées pour les informations sensibles.
 
-2. Créez une équipe à l’échelle de l’organisation pour communiquer avec tous les membres de votre organisation.
+1. Créez une équipe à l’échelle de l’organisation pour communiquer avec tous les membres de votre organisation.
 
-3. Créez des équipes pour des projets spécifiques et appliquez la protection appropriée en fonction des personnes qui doivent être incluses.
+1. Créez des équipes pour des projets spécifiques et appliquez la protection appropriée en fonction des personnes qui doivent être incluses.
 
-4. Créez des équipes spécifiques pour la communication avec des partenaires externes afin de les séparer de tout ce qui est sensible pour votre entreprise.
+1. Créez des équipes spécifiques pour la communication avec des partenaires externes afin de les séparer de tout ce qui est sensible pour votre entreprise.
 
 Par exemple, une entreprise, un cabinet juridique ou un cabinet de soins de santé pourrait créer les équipes suivantes :
 
-1. **Une équipe à l'échelle d'une entreprise, d'une société ou d'un cabinet** : Il s'agit d'un outil que tout le monde peut utiliser pour les communications et le travail quotidiens dans votre entreprise. Vous pouvez utiliser cette équipe pour publier des annonces ou partager des informations d’intérêt pour l’ensemble de votre entreprise ou votre cabinet.
+1. **Une équipe d’entreprise, d’entreprise ou de pratique :** Cette fonctionnalité est destinée à tous les utilisateurs pour les communications quotidiennes et le travail au sein de votre entreprise. Vous pouvez utiliser cette équipe pour publier des annonces ou partager des informations d’intérêt pour l’ensemble de votre entreprise ou votre cabinet.
 
-2. **Équipes individuelles :** Configurez des équipes pour que les groupes plus petits collaborent sur leur travail quotidien.
+1. **Équipes individuelles :** Configurez des équipes pour que les groupes plus petits collaborent sur leur travail quotidien.
 
-3. **Une équipe ou des équipes de communications externes :** Coordonnez-vous avec vos fournisseurs, partenaires ou clients sans les autoriser à accéder à quelque chose de sensible. Configurez différents canaux pour des groupes spécifiques.
+1. **Une équipe ou des équipes de communications externes :** Coordonnez-vous avec vos fournisseurs, partenaires ou clients sans les autoriser à accéder à quelque chose de sensible. Configurez différents canaux pour des groupes spécifiques.
 
 ![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes pour permettre une communication et une collaboration sécurisées au sein d’une entreprise.](../media/m365-democracy-teams-business-collab.png)
 
@@ -106,7 +106,7 @@ Pour en savoir plus sur Microsoft Teams, consultez [documentation technique Micr
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-> [!Note]
+> [!NOTE]
 > Vous devez être administrateur pour créer une équipe à l’échelle de l’organisation. Pour plus d’informations, consultez [Qu’est-ce qu’un administrateur dans Microsoft 365 ?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="next-objective"></a>Objectif suivant

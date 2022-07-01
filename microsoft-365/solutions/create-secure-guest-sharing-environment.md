@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948350"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490916"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -153,7 +153,7 @@ Il est important de noter que pour les emplacements SharePoint et OneDrive, les 
 
 ## <a name="set-up-web-only-access-for-guests"></a>Configurer l’accès Web uniquement pour les invités
 
-Vous pouvez réduire votre surface d'attaque, puis simplifier l'administration en demandant aux invités d'accéder à vos équipes, sites et fichiers en utilisant uniquement un navigateur Web.
+Vous pouvez demander aux invités d'accéder à vos équipes, sites et fichiers en utilisant uniquement un navigateur web. Cela réduit le risque qu'ils téléchargent des fichiers sensibles et les laissent sur un appareil non géré. Cela est également utile en cas de partage avec des environnements qui utilisent des appareils partagés.
 
 Pour les groupes et équipes Microsoft 365, cette opération s’effectue à l’aide d’une stratégie d’accès conditionnel Azure AD. Pour SharePoint, celui-ci est configuré dans le centre d’administration SharePoint. (Vous pouvez également [utiliser des étiquettes de confidentialité pour restreindre l’accès web uniquement aux invités](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
@@ -258,7 +258,7 @@ Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Créer une stratégie DLP pour supprimer l’accès invité aux fichiers hautement sensibles
 
-Vous pouvez utiliser la [Protection contre la perte de données (DLP) Microsoft Purview](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage de contenu sensible par un invité indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
+Vous pouvez utiliser la [Protection contre la perte de données (DLP) Microsoft Purview](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage indésirable de contenus sensibles par les invités. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
 
 Création d’une stratégie DLP
 

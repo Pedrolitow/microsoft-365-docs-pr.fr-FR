@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble de la configuration de tous les appareils BYOD avec protection contre les cyberattaques et autres menaces et vulnérabilités malveillantes.
-ms.openlocfilehash: 1ecf39d7d08cd76e0279b0de8869ed14550e020f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 666a0b9af03f5b70ff474e310270eab324cb76ba
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491044"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574259"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Configurer des appareils non gérés (BYOD)
 
-Chaque appareil est une attaque possible dans votre réseau et doit être surveillé et géré correctement, même les appareils appartenant à l’utilisateur mais utilisés pour le travail. Dans cette mission critique, vous configurez la protection de tous les appareils non gérés (BYOD), qui sont ceux qui présentent le plus de risques pour votre organisation en raison d’une non-gestion. Il est important de protéger ces appareils dès que possible.
+Chaque appareil est une voie d'attaque possible vers votre réseau et doit être surveillé et géré correctement, même les appareils appartenant à des particuliers mais utilisés dans le cadre du travail. Dans cette mission critique, vous configurez la protection de tous les appareils non gérés (BYOD), qui sont ceux qui présentent le plus de risques pour votre organisation en raison d’une non-gestion. Il est important de protéger ces appareils dès que possible.
 
 Vos objectifs sont les suivants :
 
