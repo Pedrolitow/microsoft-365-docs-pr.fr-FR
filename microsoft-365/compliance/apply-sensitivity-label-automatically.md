@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 2726a55b05ff27caee3c9739ad9d8604ce1a29d6
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 79c0ac8873ba23604f394340bb030c1412a6212a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556919"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574241"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -30,7 +30,7 @@ ms.locfileid: "66556919"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-> [!TIP]
+> [!NOTE]
 > Pour plus d'informations sur l'application automatique d'une étiquette de sensibilité dans la carte de données, voir [Étiquetage dans la carte de données Microsoft Purview](/azure/purview/create-sensitivity-label) .
 
 Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement cette étiquette au contenu lorsque celle-ci répond aux conditions que vous spécifiez.
@@ -72,13 +72,19 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     Spécifique à l’étiquetage automatique pour Exchange :
     
     - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
-        - Pour les fichiers PDF, si l’étiquette applique le chiffrement, ces fichiers, s’ils ne sont pas chiffrés, sont désormais chiffrés à l’aide du [chiffrement des messages](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-). Les paramètres de chiffrement appliqués sont hérités de l’e-mail.
-        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement et que ces fichiers ne sont pas chiffrés, ils sont désormais chiffrés à l’aide du [Chiffrement des messages](ome.md). Les paramètres de chiffrement sont hérités de l’e-mail.
+        - Pour les fichiers PDF, si l'étiquette applique le chiffrement, ces fichiers sont chiffrés en utilisant le [chiffrement des messages](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-). Les paramètres de chiffrement appliqués sont hérités du courrier.
+        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement et que ces fichiers ne sont pas chiffrés, ils sont désormais chiffrés à l’aide du [chiffrement des messages](ome.md). Les paramètres de chiffrement sont hérités du courrier.
     - Si vous avez des règles de flux d'e-mails Exchange ou des stratégies de prévention des pertes de données (DLP) Microsoft Purview qui appliquent le cryptage IRM : Lorsque le contenu est identifié par ces règles ou stratégies et une stratégie d'étiquetage automatique, l'étiquette est appliquée. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’a pas d’étiquette sont remplacés par une étiquette avec tous les paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Si cette étiquette est configurée pour [chiffrement](encryption-sensitivity-labels.md), ce chiffrement est toujours appliqué lorsque l’expéditeur est de votre organisation. Par défaut, ce chiffrement n’est pas appliqué lorsque l’expéditeur est en dehors de votre organisation, mais peut être appliqué en configurant **Paramètres supplémentaires pour messagerie** et en spécifiant un propriétaire Rights Management.
     - Lorsque l’étiquette applique le chiffrement, l’[émetteur Rights Management et propriétaire Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) est la personne qui envoie l’e-mail lorsque l’expéditeur est de votre propre organisation. Lorsque l’expéditeur est en dehors de votre organisation, vous pouvez spécifier un propriétaire Rights Management pour les e-mails entrants étiquetés et chiffrés par votre stratégie.
     - Si l’étiquette est configurée pour appliquer [marquages dynamiques](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), sachez que pour les e-mails entrants, cette configuration peut entraîner l’affichage des noms des personnes extérieures à votre organisation.
+
+> [!TIP]
+> Pour certains nouveaux clients, nous offrons la configuration automatique des paramètres d’étiquetage automatique par défaut pour l’étiquetage côté client et l’étiquetage côté service. Même si vous n’êtes pas éligible à cette configuration automatique, vous pouvez trouver utile de référencer leur configuration. Par exemple, vous pouvez configurer manuellement des étiquettes existantes et créer vos propres stratégies d’étiquetage automatique avec les mêmes paramètres pour accélérer votre déploiement d’étiquetage.
+> 
+> Pour plus d'informations, voir [Étiquettes et politiques par défaut pour Microsoft Purview Information Protection](mip-easy-trials.md).
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
 
@@ -269,7 +275,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
   - Si les étiquettes que vous souhaitez utiliser pour l'étiquetage automatique sont configurées pour utiliser des marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
   - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md) :
     - Lorsque la stratégie d’étiquetage automatique inclut des emplacements pour SharePoint ou OneDrive, l’étiquette doit être configurée pour le paramètre **Attribuer des autorisations maintenant** et **L'accès de l'utilisateur au contenu expire** doit être défini sur **Jamais**.
-    - Lorsque la stratégie d’étiquetage automatique s’applique uniquement à Exchange, vous pouvez configurer l’étiquette pour **Attribuer des autorisations maintenant** ou **Autoriser les utilisateurs à attribuer des autorisations** (pour les options Ne pas transférer ou Chiffrer uniquement). Vous ne pouvez pas appliquer automatiquement une étiquette qui est [configurée pour appliquer la protection S/MIME](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+    - Lorsque la stratégie d’étiquetage automatique s’applique uniquement à Exchange, vous pouvez configurer l’étiquette pour **Attribuer des autorisations maintenant** ou **Autoriser les utilisateurs à attribuer des autorisations** (pour les options Ne pas transférer ou Chiffrer uniquement). Vous ne pouvez pas appliquer automatiquement une étiquette [configurée pour appliquer la protection S/MIME](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
 ### <a name="learn-about-simulation-mode"></a>En savoir plus sur le mode simulation
 
@@ -371,11 +377,11 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
         
         Pour **Affecter un propriétaire Rights Management**, spécifiez un utilisateur unique par une adresse e-mail appartenant à votre organisation. Ne spécifiez pas de contact de messagerie, de boîte aux lettres partagée ou de type de groupe, car ceux-ci ne sont pas pris en charge pour ce rôle.
 
-10. Pour les **décidez si vous voulez tester la stratégie maintenant ou plus tard** page : sélectionnez **exécuter la stratégie en mode de simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode de simulation. Décidez ensuite s’il faut activer automatiquement la stratégie si elle n’est pas modifiée pendant 7 jours :
+10. Pour les **décidez si vous voulez tester la stratégie maintenant ou plus tard** page : sélectionnez **exécuter la stratégie en mode de simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode de simulation. Décidez ensuite s’il faut activer automatiquement la stratégie si elle n’est pas modifiée pendant 7 jours :
     
     ![Tester l’assistant d’attribution automatique d’étiquette de stratégie.](../media/simulation-mode-auto-labeling-wizard.png)
     
-    Si vous n’êtes pas prêt à exécuter la simulation, sélectionnez **Laisser la stratégie désactivée**. 
+    Si vous n’êtes pas prêt à exécuter la simulation, sélectionnez **Quitter la stratégie désactivée**. 
 
 11. Pour la page **Résumé** : consultez la configuration de votre stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez la configuration.
 

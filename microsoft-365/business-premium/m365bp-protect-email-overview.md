@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble sur la façon de former votre équipe pour protéger votre courrier contre les programmes malveillants, le hameçonnage et d’autres cyberattaques malveillantes, à l’aide des outils de cybersécurité inclus dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 7ffefa26e53dcde0f34451db3dfdccd014b9b555
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f22b8c71f88edbbf587ccf7fd7f25f52c7c275bf
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493657"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573828"
 ---
 # <a name="protect-all-email"></a>Protéger tous les e-mails
 
-Comme vous le savez, les e-mails sont riches en attaques malveillantes présentées sous forme de communications inoffensives. En outre, les systèmes de messagerie sont particulièrement vulnérables, car le courrier est géré par tous les membres de l’organisation, et il s’appuie sur des personnes prenant des décisions constamment sûres avec ces communications. Dans cette mission, vous vérifiez que les systèmes de messagerie sont à l’abri des attaquants. 
+Comme vous le savez, les e-mails sont riches en attaques malveillantes présentées sous forme de communications inoffensives. En outre, les systèmes de messagerie sont particulièrement vulnérables, car le courrier est géré par tous les membres de l’organisation, et il s’appuie sur des personnes prenant des décisions constamment sûres avec ces communications. Dans cette mission, découvrez comment les membres des organisations peuvent tous aider à protéger le système contre les attaquants.
 
 Les objectifs de la mission sont les suivants :
 

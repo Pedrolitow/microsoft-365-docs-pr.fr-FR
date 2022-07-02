@@ -21,12 +21,12 @@ description: Les utilisateurs peuvent découvrir comment afficher et gérer les 
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940995"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607672"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -52,7 +52,7 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |**Stratégies anti-hameçonnage**||||
 |Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Stratégies anti-programme malveillant**||||
 |Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants.||||
@@ -62,7 +62,7 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |**Règles de flux de messagerie (règles de transport)**||||
 |Règles de flux de messagerie qui met en quarantaine les messages électroniques.||||
 
-_Les stratégies de mise en quarantaine_ définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine dans les [fonctionnalités prises en charge](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Les stratégies de mise en quarantaine par défaut appliquent les fonctionnalités historiques comme décrit dans le tableau précédent. Les administrateurs peuvent créer et appliquer des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs dans les fonctionnalités prises en charge. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+_Les stratégies de quarantaine_ définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine dans [les fonctionnalités prises en charge](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Les stratégies de mise en quarantaine par défaut appliquent les fonctionnalités historiques comme décrit dans le tableau précédent. Les administrateurs peuvent créer et appliquer des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs dans les fonctionnalités prises en charge. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
 Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail Microsoft 365 Defender ou (si un administrateur a utilisé cette configuration) dans les notifications de mise en quarantaine dans les stratégies de mise en quarantaine.
 
@@ -137,7 +137,11 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 
    Après avoir saisi les critères de recherche, appuyez sur ENTRÉE pour filtrer les résultats.
 
+   > [!NOTE]
+   > La zone **de recherche** de la page **de mise en quarantaine** principale recherche uniquement les éléments en quarantaine dans l’affichage actuel, et non la mise en quarantaine entière. Pour rechercher tous les éléments mis en quarantaine, utilisez l'option **Filtre** et le menu déroulant **Filtres** qui en résulte.
+
 Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pour afficher des détails à son sujet et pour prendre des mesures (par exemple, afficher, déplacer, télécharger ou supprimer le message).
+
 
 ### <a name="view-quarantined-message-details"></a>Afficher les détails des messages mis en quarantaine
 

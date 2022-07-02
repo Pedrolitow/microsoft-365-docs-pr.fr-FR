@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la sécurité pour Microsoft 365 Business Premium qui fournit des outils de cybersécurité tels que l’authentification multifacteur que vous pouvez utiliser pour empêcher les cyberattaques.
-ms.openlocfilehash: c6941de1c52eaeaf87f45d5269770fe1fd2585a8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 52dfacaf5d418ef32da0b450a7f93caffa597218
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493665"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574298"
 ---
 # <a name="bump-up-security"></a>Augmenter la sécurité
 
-Dans cette mission, vous allez augmenter vos défenses de sécurité. Comme vous devez le savoir maintenant, l’accès au compte d’administrateur est une cible à forte valeur ajoutée pour les pirates informatiques, et la protection de ces comptes est essentielle, car l’accès et le contrôle qu’ils fournissent peuvent avoir un impact sur l’ensemble du système. 
+Dans cette mission, vous renforcez vos défenses de sécurité. Comme vous devez le savoir maintenant, l’accès au compte d’administrateur est une cible à forte valeur ajoutée pour les pirates informatiques, et la protection de ces comptes est essentielle, car l’accès et le contrôle qu’ils fournissent peuvent avoir un impact sur l’ensemble du système. 
 
 Pour réussir cette mission, vous allez configurer les différents rôles d’administrateur et des niveaux de sécurité spécifiques pour eux. Vous allez également appliquer les exigences de l’authentification multifacteur et configurer vos paramètres de sécurité par défaut. Restez vigilant : la sécurité et la fiabilité du système s’appuient sur vous.
 

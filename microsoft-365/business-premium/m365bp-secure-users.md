@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 Business Premium aide votre entreprise en termes de productivité et de sécurité.
-ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489878"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574153"
 ---
 # <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Comment les recommandations de sécurité Microsoft 365 affectent vos utilisateurs
 
@@ -67,7 +67,7 @@ Microsoft 365 Business Premium inclut vos applications de productivité Office p
 
 ## <a name="resources-to-train-your-users"></a>Ressources pour former vos utilisateurs
 
-Les recommandations de sécurité fournies dans cette bibliothèque compliquent considérablement l’accès de vos cyberattaques à votre environnement. Toutefois, une partie importante de votre stratégie de sécurité inclut la formation des utilisateurs&mdash; les membres de votre entreprise qui utilisent régulièrement vos systèmes. Les utilisateurs peuvent être votre première ligne de défense. Tout le monde doit savoir comment travailler de manière productive tout en conservant un environnement plus sécurisé. 
+Les recommandations de sécurité fournies dans ces missions rendent beaucoup plus difficile l'accès des cyberattaquants à votre environnement. Toutefois, une partie importante de votre stratégie de sécurité consiste à former les membres de l'organisation&mdash;, c'est-à-dire les contacts de votre entreprise qui utilisent régulièrement vos systèmes. Les utilisateurs peuvent être votre première ligne de défense. Tout le monde doit savoir comment travailler de manière productive tout en conservant un environnement plus sécurisé.
 
 Des ressources sont disponibles pour aider tous les membres de votre organisation à :
 

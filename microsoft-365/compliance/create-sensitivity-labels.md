@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
-ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0f920c91e1e844a4feaab7f9d1d58e88da6791ca
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017029"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573866"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -36,6 +36,11 @@ Toutes les solutions de protection des données Microsoft Purview sont implémen
 Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les applications et autres services. Par exemple, les étiquettes que vous voulez que les utilisateurs voient et appliquent à partir des applications Office.
 
 Puis créez une ou plusieurs stratégies d’étiquette contenant les étiquettes et paramètres de stratégie que vous configurez. La stratégie d’étiquette publie en effet les étiquettes et paramètres pour les utilisateurs et emplacements que vous sélectionnez.
+
+> [!TIP]
+> Si vous n'avez pas encore d’étiquettes de sensibilité, vous pouvez bénéficier de la création automatique d’étiquettes par défaut et d'une stratégie d’étiquettes par défaut. Même si vous aviez des étiquettes, il peut être utile d’afficher la configuration de ces étiquettes par défaut que nous créons pour les nouveaux clients. Par exemple, vous pouvez effectuer les mêmes configurations manuelles pour accélérer votre propre déploiement d’étiquette.
+> 
+> Pour plus d'informations, voir [Étiquettes et politiques par défaut pour Microsoft Purview Information Protection](mip-easy-trials.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -94,7 +99,7 @@ Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
-- Le client d’étiquetage unifié Azure Information Protection prend en charge une liste complète de [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Si vous souhaitez obtenir la liste complète, veuillez consulter la rubrique [Paramètres avancés disponibles pour les étiquettes](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) depuis le guide d’administration de ce client.
+- Les paramètres avancés pris en charge par l’étiquetage intégré sont inclus dans la documentation PowerShell. Pour plus d'aide sur la spécification de ces paramètres avancés PowerShell, consultez la [section Conseils PowerShell pour la spécification des paramètres avancés](#powershell-tips-for-specifying-the-advanced-settings). Pour connaître les autres paramètres avancés pris en charge par le client d'étiquetage unifié de Microsoft AzureInformation Protection, consultez la [documentation du guide d'administration de ce client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels).
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Exemple de configuration d'une étiquette de confidentialité dans différentes langues
 
@@ -122,6 +127,26 @@ Settings=@(
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
 Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+```
+
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
+
+Bien que vous puissiez spécifier une étiquette de niveau de sensibilité par son nom, nous vous recommandons d’utiliser le GUID de l’étiquette pour éviter toute confusion par rapport à la spécification du nom d’étiquette ou du nom complet. Le nom de l’étiquette est unique dans votre client. Vous pouvez donc être sûr de configurer l’étiquette correcte. Le nom d’affichage n’est pas unique et peut entraîner la configuration de l’étiquette incorrecte. Pour trouver le GUID et confirmer l’étendue de l’étiquette :
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
+````
+
+Pour supprimer un paramètre avancé d'une étiquette de sensibilité, utilisez la même syntaxe de paramètre AdvancedSettings, mais spécifiez une valeur de chaîne nulle. Par exemple :
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
+````
+
+Pour vérifier la configuration de votre étiquette, y compris les paramètres avancés, utilisez la syntaxe suivante avec le GUID de votre propre étiquette :
+
+```powershell
+(Get-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e).settings
 ```
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
@@ -166,7 +191,7 @@ Ce bouton démarre la **Créer une stratégie** configuration, ce qui vous perme
 
 Des paramètres de stratégie d’étiquette supplémentaires sont disponibles avec l’applet de commande [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) de [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
-Le client de l’étiquetage unifié d’Azure Information Protection prend en charge de nombreux [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), notamment la migration depuis d’autres solutions d’étiquetage et les messages contextuels dans Outlook qui avertissent, justifient ou bloquent l’envoi d’e-mails. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) depuis le guide d’administration de ce client.
+Cette documentation inclut les paramètres avancés pris en charge par l’étiquetage intégré. Pour connaître les autres paramètres avancés pris en charge par le client d'étiquetage unifié de la Protection des données Azure, consultez la [documentation du guide d'administration de ce client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies).
 
 ## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>Quand s’attendre à ce que de nouvelles étiquettes et modifications prennent effet
 
@@ -184,6 +209,9 @@ Consultez la documentation ci-après relative aux paramètres et valeurs pris en
 - [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy)
 - [Set-Label](/powershell/module/exchange/set-label)
 - [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy)
+
+> [!TIP]
+> Lorsque vous configurez des paramètres avancés pour une étiquette de confidentialité, il peut être utile de référencer les [conseils PowerShell pour spécifier la section Paramètres avancés](#powershell-tips-for-specifying-the-advanced-settings) sur cette page.
 
 Vous pouvez également utiliser [Remove-Label](/powershell/module/exchange/remove-label) et [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) si vous devez créer un script pour la suppression d’étiquettes de confidentialité ou de stratégies d’étiquette de confidentialité. Toutefois, nous vous conseillons de lire la section suivante avant de supprimer des étiquettes de confidentialité.
 
