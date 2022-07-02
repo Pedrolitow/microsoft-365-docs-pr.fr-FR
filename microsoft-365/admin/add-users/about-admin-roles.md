@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Découvrez les rôles d’administrateur, tels que le rôle d’administrateur de service, qui correspondent à des fonctions métier spécifiques et accordent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration.
-ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: cd40eb3421abf21205aac909fa2cb1796d7f0aa2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636237"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601969"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Les rôles d'administration dans le Centre d’administration Microsoft 365
+
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 L’abonnement Microsoft 365 ou Office 365 inclut un ensemble de rôles d'administrateur que vous pouvez attribuer à des utilisateurs de votre organisation à l’aide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Chaque rôle d'administrateur correspond à des fonctions d'entreprise courantes et donne aux personnes de votre organisation des autorisations pour effectuer des tâches spécifiques dans les Centres d'administration.
 
@@ -43,6 +45,8 @@ Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">C
 > Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-what-is-an-admin"></a>Regardez : qu’est-ce qu’un administrateur ?
+
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198028).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
