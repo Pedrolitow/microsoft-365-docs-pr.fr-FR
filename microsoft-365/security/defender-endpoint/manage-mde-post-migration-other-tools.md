@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 51ead270b8e8223b2fd67cfd5fb1cf4e9f8a05d4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603294"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607364"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gérer Microsoft Defender pour point de terminaison avec PowerShell, WMI et MPCmdRun.exe
 
@@ -35,7 +35,6 @@ ms.locfileid: "66603294"
 
 > [!NOTE]
 > Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem) pour gérer les fonctionnalités de protection contre les menaces de votre organisation pour les appareils (également appelés points de terminaison). Endpoint Manager inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) et [Configuration Manager de point de terminaison Microsoft](/mem/configmgr/core/understand/introduction).
->
 > - [En savoir plus sur Endpoint Manager](/mem/endpoint-manager-overview)
 > - [Cogestion des Microsoft Defender pour point de terminaison sur les appareils Windows 10 et Windows 11 avec Configuration Manager et Intune](manage-mde-post-migration-intune.md)
 > - [Gérer Microsoft Defender pour point de terminaison avec Intune](manage-mde-post-migration-intune.md)

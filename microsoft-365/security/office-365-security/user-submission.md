@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602445"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607584"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -49,19 +49,19 @@ La remise de messages signalés par l’utilisateur à une boîte aux lettres pe
 
 Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur soient envoyés à votre boîte aux lettres personnalisée :
 
-- [Identifier la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+- [Identifiez la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 - [Créer une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) pour la boîte aux lettres personnalisée où
-  - Le vidage automatique de zéro heure (ZAP) pour les programmes **malveillants** est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
-  - L’option de filtre de pièce jointe commune est désactivée (la section \>**Paramètres de protection** **active le filtre de pièces jointes commun** n’est pas sélectionné).
+  - Le vidage automatique de zéro heure (ZAP) pour les programmes malveillants est désactivé (la section **Paramètres de protection** > **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionné).
+  - L’option de filtre de pièce jointe commune est désactivée (la section **Paramètres de protection** > **Activer le filtre de pièces jointes communs** n’est pas sélectionnée).
 
-Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les utilisateurs qui signalent des messages :
+Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les messages signalés :
 
 - Assurez-vous que la boîte aux lettres personnalisée ne fait pas partie des [stratégies de sécurité prédéfinies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
-- [Créez une stratégie De liens fiables](set-up-safe-links-policies.md) pour la boîte aux lettres personnalisée où l’analyse des liens fiables est désactivée (**sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** la section \> **Messages désactivés**).
+- [Créez une stratégie Liens fiables](set-up-safe-links-policies.md) pour la boîte aux lettres personnalisée dans laquelle l’analyse des liens sécurisés est désactivée (**sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** la section messages > **Désactivée**).
 
-- [Créez une stratégie de pièces jointes sécurisées](set-up-safe-attachments-policies.md) pour la boîte aux lettres personnalisée dans laquelle l’analyse des pièces jointes sécurisées est désactivée (section \> Réponse aux **programmes malveillants inconnus des pièces jointes sécurisées** **désactivée**).
+- [Créez une stratégie de pièces jointes sécurisées](set-up-safe-attachments-policies.md) pour la boîte aux lettres personnalisée dans laquelle l’analyse des pièces jointes sécurisées, y compris la livraison dynamique, est désactivée (section Réponse aux **programmes malveillants inconnus pièces jointes fiables** > **désactivée**).
 
 Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes les conditions préalables applicables, vous pouvez utiliser les procédures décrites dans cet article pour configurer la boîte aux lettres des soumissions d’utilisateurs.
 
@@ -84,11 +84,11 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Utiliser le portail Microsoft 365 Defender pour configurer la boîte aux lettres des soumissions d’utilisateurs
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Stratégies & règles Stratégies** \> **de menace** \> Les **paramètres de message signalés par l’utilisateur** dans la section **Autres**. Pour accéder directement à la page **Soumissions de l’utilisateur** , utilisez <https://security.microsoft.com/userSubmissionsReportMessage>.
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Stratégies & règles Stratégies** > **de menace** >  Les **paramètres de message signalés par l’utilisateur** dans la section **Autres**. Pour accéder directement à la page **Soumissions de l’utilisateur** , utilisez <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. Dans la page **Soumissions de l’utilisateur** , ce que vous voyez est déterminé par le fait que le paramètre du **bouton Message de rapport Microsoft Outlook** est **désactivé** ou **activé** :
 
-   - Bouton \> **Message de rapport Microsoft Outlook** **Sur** ![ Activer/désactiver](../../media/scc-toggle-on.png) : sélectionnez cette option si vous utilisez le complément Message de rapport, le complément Report Phishing ou le rapport intégré dans Outlook sur le web, puis configurez les paramètres suivants :
+   - Bouton  >  **Message de rapport Microsoft Outlook** **Sur** ![ Activer/désactiver](../../media/scc-toggle-on.png) : sélectionnez cette option si vous utilisez le complément Message de rapport, le complément Report Phishing ou le rapport intégré dans Outlook sur le web, puis configurez les paramètres suivants :
      - **Envoyez les messages signalés à** : Sélectionnez l’une des options suivantes :
        - **Microsoft** : la boîte aux lettres des soumissions utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
        - **Boîte aux lettres de Microsoft et de mon organisation** : dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les soumissions d’utilisateurs sont envoyées à Microsoft à des fins d’analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
@@ -123,7 +123,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
           > Votre e-mail sera envoyé tel quelle à Microsoft à des fins d’analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
 
-   - Bouton \> **Message de rapport Microsoft Outlook** **Désactivé** ![ Désactiver.](../../media/scc-toggle-off.png): sélectionnez cette option si vous utilisez des outils de création de rapports tiers au lieu du complément Message de rapport, du complément De hameçonnage de rapport ou du rapport intégré dans Outlook sur le web, puis configurez les paramètres suivants :
+   - Bouton  >  **Message de rapport Microsoft Outlook** **Désactivé** ![ Désactiver.](../../media/scc-toggle-off.png): sélectionnez cette option si vous utilisez des outils de création de rapports tiers au lieu du complément Message de rapport, du complément De hameçonnage de rapport ou du rapport intégré dans Outlook sur le web, puis configurez les paramètres suivants :
      - Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur**. Dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante qui peut recevoir des e-mails.
 
    - **Bouton Mettre en quarantaine les** messages de rapport : activez cette fonctionnalité si vous souhaitez permettre aux utilisateurs finaux de signaler des messages à partir d’une mise en quarantaine.
@@ -155,8 +155,5 @@ Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
-
-- Ces deux messages sont signalés comme non indésirables en fonction de l’objet.
-- Le reste est ignoré.
 
 Les messages qui ne suivent pas ce format ne s’affichent pas correctement dans le portail Soumissions.

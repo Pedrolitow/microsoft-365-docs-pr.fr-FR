@@ -1,6 +1,6 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Vue d’ensemble
+    - name: Aperçu
       href: index.md
     - name: Comment Microsoft 365 aide votre entreprise
       href: m365bp-secure-users.md
@@ -14,7 +14,7 @@
   items:
     - name: Se connecter et configurer
       items:
-        - name: Vue d’ensemble
+        - name: Aperçu
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -34,7 +34,7 @@
   items:
     - name: Configurer des appareils non gérés (BYOD)
       items:
-        - name: Vue d’ensemble
+        - name: Aperçu
           href: m365bp-devices-overview.md
         - name: Configurez l’authentification multi-facteurs.
           href: m365bp-multifactor-authentication.md
@@ -44,7 +44,7 @@
           href: m365bp-protect-pcs-macs.md
     - name: Utiliser l’e-mail en toute sécurité
       items:
-        - name: Vue d’ensemble
+        - name: Aperçu
           href: m365bp-protect-email-overview.md
         - name: Se protéger contre le hameçonnage et les autres attaques
           href: m365bp-avoid-phishing-and-attacks.md
@@ -74,6 +74,8 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protéger les appareils Windows
           items:
+            - name: Effectuer une mise à niveau vers Windows 10 Professionnel (si nécessaire)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: Sécuriser les appareils Windows
               href: m365bp-secure-windows-devices.md
             - name: Gérer les appareils Windows
@@ -90,7 +92,7 @@
       href: m365bp-device-groups-mdb.md
 - name: Gestion des incidents de sécurité
   items:
-    - name: Vue d’ensemble
+    - name: Aperçu
       href: m365bp-security-incident-management.md
     - name: Passer en revue les recommandations de sécurité
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -102,7 +104,7 @@
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Gérer votre environnement
   items:
-    - name: Vue d’ensemble
+    - name: Aperçu
       href: m365bp-maintain-environment.md
     - name: Supprimer des utilisateurs
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json

@@ -1,6 +1,6 @@
 ---
-title: Phases de déploiement
-description: Découvrez comment déployer Microsoft Defender pour endpoint en préparation, configuration et intégration de points de terminaison à ce service
+title: Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison
+description: Découvrez comment déployer Microsoft Defender pour point de terminaison en préparant, en configurant et en intégrant des points de terminaison à ce service
 keywords: déployer, préparer, configurer, intégrer, phase, déploiement, déploiement, adoption, configuration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,33 +17,33 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c39ef92448317e625f3f2e6948f69a38093b1504
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467706"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607606"
 ---
-# <a name="deployment-phases"></a>Phases de déploiement
+# <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Vue d’ensemble du déploiement Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Découvrez comment déployer Microsoft Defender pour endpoint afin que votre entreprise puisse tirer parti de la protection préventive, de la détection post-violation, de l’examen automatisé et de la réponse.
+Découvrez comment déployer Microsoft Defender pour point de terminaison afin que votre entreprise puisse tirer parti de la protection préventive, de la détection post-violation, de l’investigation automatisée et de la réponse.
 
-Ce guide vous aide à travailler au sein des parties prenantes pour préparer votre environnement, puis intégrer les appareils d’une manière méthodique, en passant de l’évaluation à un projet pilote significatif vers un déploiement complet.
+Ce guide vous aide à travailler entre les parties prenantes pour préparer votre environnement, puis intégrer des appareils de manière méthodique, passant de l’évaluation à un pilote significatif, au déploiement complet.
 
 Chaque section correspond à un article distinct de cette solution.
 
-:::image type="content" source="images/deployment-guide-phases.png" alt-text="Phases de déploiement avec les détails du tableau" lightbox="images/deployment-guide-phases.png":::
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="Phases de déploiement avec les détails de la table" lightbox="images/deployment-guide-phases.png":::
 
 
-:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Résumé des phases de déploiement : préparer, configurer, intégrer" lightbox="images/phase-diagrams/deployment-phases.png":::
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Récapitulatif des phases de déploiement : préparer, configurer, intégrer" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 
@@ -51,18 +51,18 @@ Chaque section correspond à un article distinct de cette solution.
 
 |Phase|Description|
 |---|---|
-|[Phase 1 : préparation](prepare-deployment.md)|Découvrez ce que vous devez prendre en compte lors du déploiement de Defender for Endpoint, comme les approbations des parties prenantes, les considérations sur l’environnement, les autorisations d’accès et l’ordre d’adoption des fonctionnalités.|
-|[Phase 2 : configuration](production-deployment.md)|Obtenez des conseils sur les étapes initiales à suivre pour accéder au portail, telles que la validation des licences, l’exécution de l’Assistant Configuration et la configuration du réseau.|
+|[Phase 1 : préparation](prepare-deployment.md)|Découvrez ce que vous devez prendre en compte lors du déploiement de Defender pour point de terminaison, comme les approbations des parties prenantes, les considérations relatives à l’environnement, les autorisations d’accès et l’ordre d’adoption des fonctionnalités.|
+|[Phase 2 : configuration](production-deployment.md)|Obtenez des conseils sur les étapes initiales à suivre pour accéder au portail, comme la validation des licences, l’exécution de l’Assistant Configuration et la configuration réseau.|
 |[Phase 3 : intégration](onboarding.md)|Découvrez comment utiliser les anneaux de déploiement, les outils d’intégration pris en charge en fonction du type de point de terminaison et la configuration des fonctionnalités disponibles.|
 |
 
-Une fois que vous aurez terminé ce guide, vous serez mis en place avec les autorisations d’accès adéquates, vos points de terminaison seront intégrés et des données de capteur seront signalés au service, et des fonctionnalités telles que la protection nouvelle génération et la réduction de la surface d’attaque seront en place.
+Une fois ce guide terminé, vous êtes configuré avec les autorisations d’accès appropriées, vos points de terminaison sont intégrés et signalent les données de capteur au service, et des fonctionnalités telles que la protection de nouvelle génération et la réduction de la surface d’attaque sont en place.
 
-Quelle que soit l’architecture et la méthode de déploiement de l’environnement [](deployment-strategy.md) que vous choisissez décrites dans les instructions de déploiement de plan, ce guide va vous prendre en charge lors de l’intégration des points de terminaison.
+Quelle que soit l’architecture de l’environnement et la méthode de déploiement que vous choisissez décrites dans les conseils de [déploiement du plan](deployment-strategy.md) , ce guide vous aide à intégrer des points de terminaison.
 
 ## <a name="key-capabilities"></a>Fonctionnalités clés
 
-Bien que Microsoft Defender pour point de terminaison offre de nombreuses fonctionnalités, l’objectif principal de ce guide de déploiement est de vous aider à commencer par l’intégration d’appareils. En plus de l’intégration, ces conseils vous guident avec les fonctionnalités suivantes.
+Bien que Microsoft Defender pour point de terminaison offre de nombreuses fonctionnalités, l’objectif principal de ce guide de déploiement est de vous aider à démarrer en intégrant des appareils. En plus de l’intégration, ces conseils vous permettent de commencer avec les fonctionnalités suivantes.
 
 <br>
 
@@ -70,28 +70,28 @@ Bien que Microsoft Defender pour point de terminaison offre de nombreuses foncti
 
 |Fonctionnalité|Description|
 |---|---|
-|Détection et réponse du point de terminaison|Des fonctionnalités de détection et de réponse de point de terminaison sont mises en place pour détecter, examiner et répondre aux tentatives d’intrusion et aux violations actives.|
+|Détection et réponse du point de terminaison|Les fonctionnalités de détection et de réponse des points de terminaison sont mises en place pour détecter, examiner et répondre aux tentatives d’intrusion et aux violations actives.|
 |Protection de nouvelle génération|Pour renforcer davantage le périmètre de sécurité de votre réseau, Microsoft Defender pour point de terminaison fait appel à une protection nouvelle génération conçue pour intercepter tous les types de menaces émergentes.|
-|Réduction de la surface d'attaque|Fournissez la première ligne de défense dans la pile. En veillant à ce que les paramètres de configuration soient correctement définies et que les techniques d’atténuation des attaques soient appliquées, ces fonctionnalités peuvent résister aux attaques et à l’exploitation.|
+|Réduction de la surface d'attaque|Fournissez la première ligne de défense dans la pile. En veillant à ce que les paramètres de configuration soient correctement définis et que les techniques d’atténuation des attaques soient appliquées, ces fonctionnalités résistent aux attaques et à l’exploitation.|
 |
 
-Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Microsoft Defender pour les points de terminaison. Pour plus d’informations, voir [Conditions requises pour les licences](minimum-requirements.md#licensing-requirements).
+Toutes ces fonctionnalités sont disponibles pour Microsoft Defender pour point de terminaison titulaires de licence. Pour plus d’informations, consultez [Les exigences en matière de licences](minimum-requirements.md#licensing-requirements).
 
 ## <a name="scope"></a>Portée
 
 ### <a name="in-scope"></a>Dans l’étendue
 
-- Utilisation de Microsoft Endpoint Manager et Microsoft Endpoint Configuration Manager pour intégrer des points de terminaison dans le service et configurer des fonctionnalités
-- Activation de Defender pour les fonctionnalités de protection évolutive des points de terminaison de point de terminaison (PEPT)
-- Activation des fonctionnalités DE LAS (Endpoint Endpoint Protection Platform) de Defender for Endpoint
+- Utilisation de Microsoft Endpoint Manager et du point de terminaison Microsoft Configuration Manager pour intégrer des points de terminaison dans le service et configurer des fonctionnalités
+- Activation des fonctionnalités de détection et de réponse de point de terminaison Defender pour point de terminaison (EDR)
+- Activation des fonctionnalités de la plateforme de protection des points de terminaison Defender pour point de terminaison (PPE)
   - Protection de nouvelle génération
   - Réduction de la surface d'attaque
 
 ### <a name="out-of-scope"></a>Non compris
 
-Ce guide de déploiement n’entre pas dans le cadre de ce guide de déploiement :
+Les éléments suivants ne sont pas inclus dans ce guide de déploiement :
 
-- Configuration de solutions tierces qui peuvent s’intégrer à Defender for Endpoint
+- Configuration de solutions tierces qui peuvent s’intégrer à Defender pour point de terminaison
 - Test de pénétration dans un environnement de production
 
 ## <a name="see-also"></a>Voir aussi

@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb9eb8c3f45b0047922be854972d1f96123342cb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115518"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607650"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -66,16 +66,16 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
-  > - Le destinataire est : romain@contoso.com
-  > - Le destinataire est membre de : Executives
+  > - Le destinataire est : romain@contoso.com
+  > - Le destinataire est membre de : Exécutifs
   >
   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
-  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre exécutif. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
-- **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active uniquement la protection des liens Coffre et des pièces jointes Coffre. Ce profil fournit efficacement des stratégies par défaut pour les liens Coffre et les pièces jointes Coffre, qui n’ont jamais eu de stratégies par défaut.
+- **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active uniquement les liens sécurisés et la protection des pièces jointes sécurisées. Ce profil fournit efficacement des stratégies par défaut pour les liens sécurisés et les pièces jointes sécurisées, qui n’ont jamais eu de stratégies par défaut.
 
   Pour **la protection intégrée**, la stratégie de sécurité prédéfinies est activée par défaut pour tous les clients Defender pour Office 365. Bien que nous ne le recommandons pas, vous pouvez également configurer des exceptions en fonction des **utilisateurs**, **des groupes** et **des domaines** afin que la protection ne soit pas appliquée à des utilisateurs spécifiques.
 
@@ -85,22 +85,22 @@ Tant que vous n’affectez pas les stratégies aux utilisateurs, les stratégies
 
 Les stratégies de sécurité prédéfinies utilisent les stratégies correspondantes des différentes fonctionnalités de protection dans EOP et Microsoft Defender pour Office 365. Ces stratégies sont créées _une fois_ que vous avez affecté les stratégies de sécurité prédéfinies **de protection standard** ou **strict** aux utilisateurs. Vous ne pouvez pas modifier les paramètres de ces stratégies.
 
-- **Stratégies Exchange Online Protection (EOP)** : cela inclut les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et des organisations EOP autonomes sans boîtes aux lettres Exchange Online :
+- **stratégies Exchange Online Protection (EOP)** : ces stratégies se trouvent dans toutes les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et des organisations EOP autonomes sans boîtes aux lettres Exchange Online :
 
   - [Stratégies anti-courrier indésirable nommées](configure-your-spam-filter-policies.md) **Stratégie de sécurité prédéfinies standard** et **Stratégie de sécurité prédéfinies strictes**.
   - [Stratégies anti-programme malveillant nommées](configure-anti-malware-policies.md) **stratégie de sécurité prédéfinies standard** et **stratégie de sécurité prédéfinies strictes**.
-  - [Stratégies anti-hameçonnage EOP nommées](set-up-anti-phishing-policies.md#spoof-settings) Stratégie **de sécurité prédéfinie standard** et **Stratégie de sécurité prédéfinie stricte** (paramètres d’usurpation d’identité).
+  - [Les stratégies anti-hameçonnage (protection contre l’usurpation d’identité)](set-up-anti-phishing-policies.md#spoof-settings) **nommées stratégie de sécurité prédéfinies standard** et stratégie **de sécurité prédéfinies strictes** (paramètres d’usurpation d’identité).
 
   > [!NOTE]
   > Les stratégies de courrier indésirable sortant ne font pas partie des stratégies de sécurité prédéfinies. La stratégie de courrier indésirable sortant par défaut protège automatiquement les membres des stratégies de sécurité prédéfinies. Vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées pour personnaliser la protection des membres des stratégies de sécurité prédéfinies. Pour plus d’informations, consultez [Configurer le filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md).
 
-- **Microsoft Defender pour Office 365 stratégies** : cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 module complémentaire :
+- **Microsoft Defender pour Office 365 stratégies** : ces stratégies se trouvent dans des organisations avec des abonnements de module complémentaire Microsoft 365 E5 ou Defender pour Office 365 :
   - Les stratégies anti-hameçonnage dans Defender pour Office 365 nommées **stratégie de sécurité prédéfinies standard** et stratégie **de sécurité prédéfinies strictes**, qui incluent :
     - Paramètres [d’usurpation d’identité disponibles](set-up-anti-phishing-policies.md#spoof-settings) dans les stratégies anti-hameçonnage EOP.
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Seuils d’hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Coffre lie les stratégies nommées](set-up-safe-links-policies.md) **Stratégie de sécurité prédéfinies standard**, **Stratégie de sécurité prédéfinies stricte** et **Stratégie de protection intégrée**.
-  - [Coffre stratégies de pièces jointes nommées](set-up-safe-attachments-policies.md) Stratégie **de sécurité prédéfinies standard**, **Stratégie de sécurité prédéfinies stricte** et **Stratégie de protection intégrée**.
+  - [Stratégies de liens sécurisés](set-up-safe-links-policies.md) nommées stratégie **de sécurité prédéfinies standard**, stratégie **de sécurité prédéfinies stricte** et stratégie **de protection intégrée**.
+  - [Stratégies de pièces jointes sécurisées nommées](set-up-safe-attachments-policies.md) Stratégie **de sécurité prédéfinies standard**, **Stratégie de sécurité prédéfinies stricte** et **Stratégie de protection intégrée**.
 
 Vous pouvez appliquer des protections EOP à différents utilisateurs que les protections Defender pour Office 365, ou appliquer EOP et Defender pour Office 365 aux mêmes destinataires.
 
@@ -122,13 +122,13 @@ Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suiv
 1. Stratégie de sécurité prédéfinies de **protection stricte**
 2. Stratégie de sécurité prédéfinies de **protection standard**
 3. Stratégies de sécurité personnalisées
-4. **Stratégie de sécurité prédéfinies de protection intégrée** et stratégies de sécurité par défaut
+4. **Stratégie de sécurité** prédéfinies de protection intégrée pour les liens sécurisés et les pièces jointes sécurisées, ainsi que les stratégies par défaut pour les logiciels anti-programmes malveillants, anti-courrier indésirable et anti-hameçonnage.
 
-En d’autres termes, les paramètres de la **stratégie de protection stricte** remplacent les paramètres de la stratégie de **protection Standard**, qui remplace les paramètres d’une stratégie personnalisée, qui remplace les paramètres de la stratégie de sécurité prédéfinies de **protection intégrée** (Coffre Liens et pièces jointes Coffre) et de la stratégie par défaut (anti-spam, anti-programmes malveillants et anti-hameçonnage).
+En d’autres termes, les paramètres de la **stratégie de protection stricte** remplacent les paramètres de la **stratégie de protection Standard** , qui remplace les paramètres d’une stratégie personnalisée, qui remplace les paramètres de la stratégie de sécurité prédéfinies de **protection intégrée** (liens sécurisés et pièces jointes sécurisées) et de la stratégie par défaut (anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage).
 
 Par exemple, si un paramètre de sécurité existe dans **la protection Standard** et qu’un administrateur a activé la **protection Standard** pour un utilisateur, le paramètre de **protection Standard** est appliqué au lieu de ce qui est configuré pour ce paramètre dans une stratégie personnalisée ou dans la stratégie par défaut (pour le même utilisateur). Notez que vous pouvez avoir une partie de votre organisation à laquelle vous souhaitez appliquer uniquement la stratégie de **protection** **standard** ou stricte tout en appliquant une stratégie personnalisée à d’autres utilisateurs de votre organisation pour répondre à des besoins spécifiques.
 
-**La protection intégrée** n’affecte pas les destinataires dans les stratégies de liens Coffre ou de pièces jointes Coffre existantes. Si vous avez déjà configuré la **protection standard**, la **protection stricte** ou les liens Coffre personnalisés ou les stratégies de Coffre pièces jointes, ces stratégies sont _toujours_ appliquées _avant_ la **protection intégrée**, de sorte qu’il n’y a aucun impact sur les destinataires qui sont déjà définis dans ces stratégies prédéfinies ou personnalisées existantes.
+**La protection intégrée** n’affecte pas les destinataires dans les stratégies de liens sécurisés ou de pièces jointes sécurisées existantes. Si vous avez déjà configuré la **protection standard**, la **protection stricte** ou les stratégies de liens sécurisés personnalisés ou de pièces jointes sécurisées, ces stratégies sont _toujours_ appliquées _avant_ la **protection intégrée**, de sorte qu’il n’y a aucun impact sur les destinataires qui sont déjà définis dans ces stratégies prédéfinies ou personnalisées existantes.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Affecter des stratégies de sécurité prédéfinies aux utilisateurs
 
@@ -144,7 +144,7 @@ Par exemple, si un paramètre de sécurité existe dans **la protection Standard
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarque** : l’ajout d’utilisateurs au rôle de Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations nécessaires pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité prédéfinies Standard et Strict aux utilisateurs
 
@@ -230,7 +230,7 @@ Pour désactiver la **protection standard** ou les stratégies de sécurité pr�
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-the-built-in-protection-preset-security-policy"></a>Utiliser le portail Microsoft 365 Defender pour modifier les affectations de la stratégie de sécurité prédéfinies de protection intégrée
 
-N’oubliez pas que la stratégie de sécurité prédéfinie de **protection intégrée** est affectée à tous les destinataires et n’affecte pas les destinataires définis dans les stratégies de sécurité prédéfinies de **protection standard** ou **stricte**, ni les liens Coffre personnalisés ou les stratégies de pièces jointes Coffre.
+N’oubliez pas que la stratégie de sécurité prédéfinie de **protection intégrée** est affectée à tous les destinataires et n’affecte pas les destinataires définis dans les stratégies de sécurité prédéfinies de **protection standard** ou **stricte** , ou les stratégies de liaisons sécurisées personnalisées ou de pièces jointes sécurisées.
 
 Par conséquent, nous ne recommandons généralement pas d’exceptions à la stratégie de sécurité prédéfinies de **protection intégrée** .
 
@@ -238,7 +238,7 @@ Par conséquent, nous ne recommandons généralement pas d’exceptions à la st
 
 2. Dans la page **Stratégies de sécurité prédéfinies** , **sélectionnez Ajouter des exclusions (non recommandé)** dans la section **Protection intégrée** .
 
-3. Dans le menu volant **Exclure de la protection intégrée** qui s’affiche, identifiez les destinataires internes exclus de la protection intégrée Coffre Liens et pièces jointes Coffre :
+3. Dans le menu volant **Exclure de la protection intégrée** qui s’affiche, identifiez les destinataires internes exclus de la protection des liens sécurisés et des pièces jointes sécurisées intégrée :
    - **Utilisateurs**
    - **Groupes**
    - **Domaines**

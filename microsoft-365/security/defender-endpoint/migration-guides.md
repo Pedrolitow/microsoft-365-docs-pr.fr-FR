@@ -1,6 +1,6 @@
 ---
-title: Guides de migration pour basculer vers Microsoft Defender pour le point de terminaison
-description: Découvrez comment passer d’une solution non Microsoft 365 Defender à Microsoft Defender for Endpoint
+title: Guides de migration et d’installation pour passer à Microsoft Defender pour point de terminaison
+description: Découvrez comment passer d’une solution non Microsoft 365 Defender à Microsoft Defender pour point de terminaison
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
@@ -10,20 +10,19 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-- m365solution-scenario
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.technology: mde
-ms.openlocfilehash: 31e9a4497ec4d31ab5623b543d4865b627832f1c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d13d5bf8f33d022824e24e8b1fc879f0826d82da
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321506"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607628"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour le point de terminaison
+# <a name="move-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour point de terminaison
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,26 +31,26 @@ ms.locfileid: "62321506"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="migration-guides"></a>Guides de migration
+## <a name="migration-and-setup-guides"></a>Guides de migration et de configuration
 
-Si vous envisagez de passer à Defender pour Endpoint, nous vous aiderons. Dans le tableau suivant, examinez les scénarios. Sélectionnez le scénario qui représente le mieux votre situation et consultez les instructions recommandées.
-
-<br/><br/>
+Si vous envisagez de passer à Defender pour point de terminaison, nous avons des conseils pour vous aider. Dans le tableau suivant, passez en revue les scénarios. Sélectionnez le scénario qui représente le mieux votre situation et consultez les conseils recommandés.
 
 |Scénario|Aide|
 |---|---|
-|Vous n’avez pas encore de solution de protection de point de terminaison en place et vous souhaitez en savoir plus sur Defender for Endpoint. Vous souhaitez voir comment Fonctionne Defender pour Point de terminaison avant de le déployer dans votre environnement.|[Laboratoire d’évaluation de Microsoft Defender for Endpoint](evaluation-lab.md)|
-|Vous avez déjà Defender pour point de terminaison et vous souhaitez obtenir de l’aide pour tout configurer et configurer.|[Guide de déploiement de Microsoft Defender pour point de terminaison](deployment-phases.md)|
-|Vous envisagez de passer d’une solution de protection de point de terminaison non Microsoft à Defender for Endpoint, qui inclut Antivirus Microsoft Defender. Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le changement.|[Passer à Microsoft Defender pour le point de terminaison](switch-to-mde-overview.md)|
-|Vous avez déjà migré ou intégré à Defender for Endpoint. Vous souhaitez de l’aide sur les étapes suivantes, telles que la gestion de vos paramètres de sécurité, la configuration d’autres fonctionnalités ou l’ajustement de vos stratégies de sécurité.|[Gérer Microsoft Defender pour le point de terminaison, après la migration](manage-mde-post-migration.md)|
+|Vous n’avez pas encore de solution endpoint protection en place et vous souhaitez en savoir plus sur Defender pour point de terminaison. Vous souhaitez voir comment Defender pour point de terminaison fonctionne avant de le déployer dans votre environnement.|[laboratoire d’évaluation Microsoft Defender pour point de terminaison](evaluation-lab.md)|
+|Vous disposez déjà de Defender pour point de terminaison et vous souhaitez obtenir de l’aide pour tout configurer.|[Guide de déploiement de Microsoft Defender pour point de terminaison](deployment-phases.md)|
+|Vous envisagez de passer d’une solution de protection de point de terminaison non Microsoft à Defender pour point de terminaison, qui inclut l’antivirus Microsoft Defender. Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le basculement.|[Basculer vers Microsoft Defender pour point de terminaison](switch-to-mde-overview.md)|
+|Vous avez déjà migré ou intégré à Defender pour point de terminaison. Vous souhaitez obtenir de l’aide pour les étapes suivantes, telles que la gestion de vos paramètres de sécurité, la configuration d’autres fonctionnalités ou l’optimisation de vos stratégies de sécurité.|[Gérer Microsoft Defender pour point de terminaison, après la migration](manage-mde-post-migration.md)|
 
 
-## <a name="do-you-have-feedback-for-us"></a>Avez-vous des commentaires à notre place ?
+## <a name="do-you-have-feedback-for-us"></a>Avez-vous des commentaires pour nous?
 
-Dites-nous ce que vous en pensez ! Envoyez vos commentaires au bas de la page. Nous prenons vos commentaires en compte à mesure que nous continuerons d’améliorer et d’ajouter nos conseils de migration.
+Dites-nous ce que vous en pensez ! Envoyez vos commentaires en bas de la page. Nous allons tenir compte de vos commentaires au fur et à mesure que nous continuerons à améliorer et à ajouter à nos conseils de migration.
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection)
 - [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+- [Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)

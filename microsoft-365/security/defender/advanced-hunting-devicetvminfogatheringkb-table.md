@@ -18,23 +18,23 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 056f208f1f7739276319bfaad36225718543b718
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: c654ca395762426072bf8e5e20fd3f62e78a480c
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532708"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607107"
 ---
 # <a name="devicetvminfogatheringkb"></a>DeviceTvmInfoGatheringKB
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 La `DeviceTvmInfoGatheringKB` table du schéma de chasse avancé contient des métadonnées pour [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) données d’événements d’évaluation collectées dans la `DeviceTvmInfoGathering` table. Le `DeviceTvmInfoGatheringKB` tableau contient la liste des différentes évaluations de la surface d’attaque et de configuration utilisées par la collecte d’informations sur la gestion des vulnérabilités Defender pour évaluer les appareils. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
@@ -80,12 +80,11 @@ DeviceTvmInfoGatheringKB
 ```kusto
 // Return all devices on which the TLS version 1.0 is enabled 
 DeviceTvmInfoGathering 
-| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
+| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
 ```
 
+## <a name="related-topics"></a>Voir aussi
 
-
-## <a name="related-topics"></a>Sujets associés
 - [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

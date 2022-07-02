@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: e83306f4af82d8a24745ca5af3d146bb50c41ee7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603393"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607386"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender pour point de terminaison avec Configuration Manager
 
@@ -34,15 +34,12 @@ ms.locfileid: "66603393"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 Nous vous recommandons d’utiliser [Microsoft Endpoint Manager](/mem), qui inclut [les Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) et les [Configuration Manager de point de terminaison Microsoft](/mem/configmgr/core/understand/introduction) (Configuration Manager ) pour gérer les fonctionnalités de protection contre les menaces de votre organisation pour les appareils (également appelés points de terminaison).
 
 - [En savoir plus sur Endpoint Manager](/mem/endpoint-manager-overview)
 - [Cogestion des Microsoft Defender pour point de terminaison sur les appareils Windows 10 et Windows 11 avec Configuration Manager et Intune](manage-mde-post-migration-intune.md)
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configurer Microsoft Defender pour point de terminaison avec Configuration Manager
-
-<br/><br/>
 
 |Tâche|Ressources pour en savoir plus|
 |---|---|

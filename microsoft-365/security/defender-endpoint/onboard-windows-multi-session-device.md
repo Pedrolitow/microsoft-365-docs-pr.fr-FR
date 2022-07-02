@@ -1,6 +1,6 @@
 ---
-title: Intégrer Windows appareils multisession dans Azure Virtual Desktop
-description: En savoir plus dans cet article sur l’intégration Windows des appareils multisession dans Azure Virtual Desktop
+title: Intégrer des appareils Windows dans Azure Virtual Desktop
+description: Découvrir l’intégration d’appareils Windows à Defender pour point de terminaison dans Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, microsoft defender, point de terminaison, intégration
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,26 +15,27 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7a093a3b50d7153c71eecb9707ff8ab0dbef0d20
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013285"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607430"
 ---
-# <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows appareils multisession dans Azure Virtual Desktop
+# <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Intégrer des appareils Windows dans Azure Virtual Desktop
 
 6 minutes pour lire
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows multisession s’exécutant sur Azure Virtual Desktop (AVD)
+- [Windows 10 Entreprise multisession](/microsoft-365/security/defender-endpoint/azure-server-integration)
 
 Microsoft Defender pour point de terminaison prend en charge la surveillance des sessions VDI et Azure Virtual Desktop. En fonction des besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Azure Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil non managé, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour point de terminaison, vous pouvez surveiller ces machines virtuelles pour détecter une activité anormale.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Familiarisez-vous avec [les considérations relatives à l’IDV non persistant](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Bien [qu’Azure Virtual Desktop](/azure/virtual-desktop/overview) ne fournisse pas d’options de non-persistance, il fournit des moyens d’utiliser une image de Windows d’or qui peut être utilisée pour approvisionner de nouveaux hôtes et redéployer des machines. Cela augmente la volatilité dans l’environnement et a donc un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour point de terminaison, ce qui peut réduire la visibilité pour vos analystes de sécurité.
+Familiarisez-vous avec [les considérations relatives à l’IDV non persistant](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1). Bien [qu’Azure Virtual Desktop](/azure/virtual-desktop/overview) ne fournisse pas d’options de non-persistance, il fournit des moyens d’utiliser une image Windows dorée qui peut être utilisée pour approvisionner de nouveaux hôtes et redéployer des machines. Cela augmente la volatilité dans l’environnement et a donc un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour point de terminaison, ce qui peut réduire la visibilité pour vos analystes de sécurité.
 
 > [!NOTE]
 > Selon votre choix de méthode d’intégration, les appareils peuvent apparaître dans Microsoft Defender pour point de terminaison portail comme suit :
@@ -86,7 +87,7 @@ Ce scénario utilise un script centralisé et l’exécute à l’aide d’une s
 
 2. Dans l’éditeur de gestion stratégie de groupe, accédez aux **paramètres du panneau de configuration** **des préférences** \> de **l’ordinateur**\>.
 
-3. Cliquez avec le bouton droit sur **Tâches planifiées**, cliquez sur **Nouveau**, puis sur **Tâche immédiate** (au moins Windows 7).
+3. Cliquez avec le bouton droit sur **Tâches planifiées**, cliquez sur **Nouveau**, puis sur **Tâche immédiate** (Au moins Windows 7).
 
 4. Dans la fenêtre Tâche qui s’ouvre, accédez à l’onglet **Général** . Sous **Options de sécurité,** cliquez sur **Modifier l’utilisateur ou le groupe** et tapez SYSTEM. Cliquez sur **Vérifier les noms** , puis sur OK. NT AUTHORITY\SYSTEM apparaît sous la forme du compte d’utilisateur sous lequel la tâche s’exécutera.
 
@@ -104,12 +105,12 @@ Ce scénario utilise un script centralisé et l’exécute à l’aide d’une s
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Scénario 3 : Intégration à l’aide d’outils de gestion*
 
-Si vous envisagez de gérer vos machines à l’aide d’un outil de gestion, vous pouvez intégrer des appareils avec Microsoft Endpoint Configuration Manager.
+Si vous envisagez de gérer vos machines à l’aide d’un outil de gestion, vous pouvez intégrer des appareils à Microsoft Endpoint Configuration Manager.
 
 Pour plus d’informations, consultez [Intégrer des appareils Windows à l’aide de Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Si vous envisagez d’utiliser la [référence des règles de réduction de la surface](attack-surface-reduction-rules-reference.md) d’attaque, notez que la règle « [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) » ne doit pas être utilisée, car cette règle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager. La règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Si vous envisagez d’utiliser la [référence des règles de réduction de la surface](attack-surface-reduction-rules-reference.md) d’attaque, notez que la règle « [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) » ne doit pas être utilisée, car cette règle est incompatible avec la gestion par le biais de Microsoft Endpoint Configuration Manager. La règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, consultez [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md).
@@ -154,7 +155,7 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 
 #### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Remarque sur les licences : lorsque vous utilisez Windows Enterprise multisession, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence via Microsoft Defender pour point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 sécurité ou Microsoft 365 E5, ou que la machine virtuelle soit sous licence par le biais de Microsoft Defender pour le cloud.
+Remarque sur les licences : lorsque vous utilisez Windows Enterprise multisession, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence par le biais de Microsoft Defender pour point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 Security ou Microsoft 365 E5, ou de disposer d’une licence de machine virtuelle par le biais de Microsoft Defender pour le cloud.
 Les exigences de licence pour Microsoft Defender pour point de terminaison sont disponibles à l’adresse suivante : [Conditions de licence](minimum-requirements.md#licensing-requirements).
 
 ### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils
