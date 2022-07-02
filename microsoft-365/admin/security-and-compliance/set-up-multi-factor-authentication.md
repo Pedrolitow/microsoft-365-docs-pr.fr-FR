@@ -28,14 +28,16 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 00a92a7755c0200d0ad707e84ceb13fac7c978c9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739912"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603866"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Configurer l'authentification multifactorielle pour Microsoft 365
+
+Consultez [l’aide Microsoft 365 pour les petites entreprises](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 L’authentification multifacteur signifie que vous et vos employés devez fournir plusieurs méthodes pour vous connecter à Microsoft 365 est l’un des moyens les plus simples de sécuriser votre entreprise. Basé sur votre compréhension de [l’authentification multi-facteurs (MFA) et de sa prise en charge dans Microsoft 365](multi-factor-authentication-microsoft-365.md), c’est le moment de la configurer et de la déployer dans votre organisation. 
 
@@ -46,6 +48,8 @@ L’authentification multifacteur signifie que vous et vos employés devez fourn
 > Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>Regarder : activer l’authentification multifacteur
+
+Regardez cette vidéo ainsi que d’autres sur notre [Chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197909).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
@@ -108,10 +112,8 @@ Pour plus d’informations sur Azure AD P1 et P2, voir [Tarification Azure Activ
 
 Pour la plupart des abonnements, l’authentification moderne est automatiquement activée, mais si vous avez acheté votre abonnement avant août 2017, il est probable que vous devrez activer l’authentification moderne pour que les fonctionnalités comme l’authentification multi-facteurs fonctionnent dans les clients Windows comme Outlook.
 
-
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, dans le menu de gauche, sélectionnez **Paramètres** \> **Paramètres d’organisation**.
 2. Sous l’onglet **Services**, sélectionnez **Authentification moderne**, puis dans le volet **Authentification moderne**, vérifiez que l’option **Activer l’authentification moderne** est sélectionnée. Choisissez **Enregistrer les modifications**.
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 

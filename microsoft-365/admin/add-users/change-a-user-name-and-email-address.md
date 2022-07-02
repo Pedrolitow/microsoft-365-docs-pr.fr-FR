@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: Découvrez comment un administrateur général Microsoft 365 peut modifier l’adresse e-mail et le nom complet d’un utilisateur lorsque son nom change.
-ms.openlocfilehash: f48cbf3428988ce50b9f8913dd4f6c4e47858b2d
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 420a25df1383bccd4fe93b2ea79d0eeb6f91d982
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466721"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601111"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
+
+Consultez [l’aide Microsoft 365 pour les petites entreprises](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Vous devrez peut-être modifier l’adresse de messagerie et le nom complet d’une personne si, par exemple, elle se marie et change son nom.
 
@@ -41,6 +43,8 @@ Vous devrez peut-être modifier l’adresse de messagerie et le nom complet d’
 > Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-change-a-users-name-or-email-address"></a>Regardez : modifier le nom ou l’adresse de courrier d’un utilisateur
+
+Regardez cette vidéo ainsi que d’autres sur notre [Chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198016).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
