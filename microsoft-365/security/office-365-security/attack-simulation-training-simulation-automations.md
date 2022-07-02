@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et charges utiles spécifiques qui sont lancées lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 1efc6faaae0040e37aafac4faa0a10228d76e766
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739668"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609411"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour l’entraînement de simulation d’attaque
 
@@ -25,7 +25,7 @@ ms.locfileid: "65739668"
 
 **S’applique à** [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-Pour obtenir des informations sur la formation à la simulation d’attaque, consultez [Démarrage l’utilisation de la formation de simulation d’attaque](attack-simulation-training-get-started.md).
+Pour obtenir des informations sur la formation à la simulation d’attaque, consultez [Prise en main de la formation de simulation d’attaque](attack-simulation-training-get-started.md).
 
 Pour créer une automatisation de simulation, procédez comme suit :
 
@@ -67,7 +67,13 @@ Si vous cliquez sur le lien **Afficher les détails** dans la description, un me
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-## <a name="select-payloads"></a>Sélectionner des charges utiles
+## <a name="select-a-payload-and-login-page"></a>Sélectionner une charge utile et une page de connexion
+
+Dans la page **Sélectionner la charge utile et la** connexion, vous devez sélectionner une charge utile existante dans la liste ou créer une charge utile.
+
+Vous pouvez également afficher la page de connexion utilisée dans la charge utile, sélectionner une autre page de connexion à utiliser ou créer une page de connexion à utiliser.
+
+### <a name="payload"></a>Charge
 
 Dans la page **Sélectionner des charges utiles** , sélectionnez l’une des options suivantes :
 
@@ -76,36 +82,32 @@ Dans la page **Sélectionner des charges utiles** , sélectionnez l’une des op
 
 Si vous sélectionnez **Randomiser**, il n’y a rien à configurer sur cette page. Cliquez donc sur **Suivant** pour continuer.
 
-Si vous **sélectionnez Manuellement**, vous devez sélectionner une ou plusieurs charges utiles dans la liste. Les détails suivants s’affichent pour vous aider à choisir :
+Si vous **sélectionnez Manuellement**, vous devez sélectionner une ou plusieurs charges utiles dans la liste. Les détails suivants s’affichent pour chaque charge utile :
 
 - **Nom de la charge utile**
 - **Technique** : vous devez sélectionner au moins une charge utile par technique que vous avez sélectionnée sur la page précédente.
-- **Langue** : langue du contenu de la charge utile. Le catalogue de charges utiles de Microsoft (global) fournit des charges utiles dans plus de 10 langues qui peuvent également être filtrées.
+- **Langue** : Les valeurs disponibles sont : **anglais**, **espagnol**, **allemand**, **japonais**, **Français**, **portugais**, **néerlandais**, **italien**, **suédois**, **chinois (simplifié),****norvégien bokmål**, **polonais**, **russe**, **finnois**, **coréen**, **turc**, **hongrois**, **hébreu**, **thaï**, **arabe**, **vietnamien**, **slovaque**, **grec**, **indonésien**, **roumain**, **slovène**, **croate**, **catalan** ou **autre**.
 - **Taux de clic** : nombre de personnes ayant cliqué sur cette charge utile.
-- **Taux de compromission prédit** : données historiques de la charge utile sur Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette charge utile.
+- **Taux de compromission prédit** : données historiques de la charge utile dans Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette charge utile.
 - **Les simulations lancées** comptent le nombre de fois où cette charge utile a été utilisée dans d’autres simulations.
 
 Dans l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Dans** la zone de recherche, vous pouvez taper une partie du nom de la charge utile et appuyer sur Entrée pour filtrer les résultats.
 
 Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
-- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles préexistante de Microsoft. Les valeurs valides sont les suivantes :
-  - **Global** (intégré)
-  - **Locataire** (personnalisé)
-  - **All**
-
 - **Complexité** : calculée en fonction du nombre d’indicateurs dans la charge utile qui indiquent une attaque possible (fautes d’orthographe, urgence, etc.). D’autres indicateurs sont plus faciles à identifier en tant qu’attaque et indiquent une complexité plus faible. Les valeurs disponibles sont :
-  - **Faible**
-  - **Moyenne**
-  - **Élevée**
 
-- **Langue** : Les valeurs disponibles sont : **anglais**, **espagnol**, **allemand**, **japonais**, **Français**, **portugais**, **néerlandais**, **italien**, **suédois**, **chinois (simplifié),****norvégien bokmål**, **polonais**, **russe**, **finnois**, **coréen**, **turc**, **hongrois**, **hébreu**, **thaï**, **arabe**, **vietnamien**, **slovaque**, **grec**, **indonésien**, **roumain**, **slovène**, **croate**, **catalan** et **autre**.
+  - **High**
+  - **Medium**
+  - **Faible**
+
+- **Language**
 
 - **Ajouter des balises**
 
 - **Filtrez par thème** : Les valeurs disponibles sont : **Activation** du **compte, vérification du compte**, **Facturation**, **Nettoyage du courrier**, **Document reçu**, **Dépenses**, **Télécopie**, **Rapport financier**, **Messages entrants**, **Facture**, **Éléments reçus**, **Alerte de connexion**, **Courrier reçu**, **Mot de passe**, **Paiement**, **Paie**, **Offre personnalisée**, **Quarantaine**, **Travail à distance**, **passer en revue le message**, **mise à jour de sécurité**, **service suspendu**, **signature requise**, **boîte aux lettres de vérification du stockage de boîte aux lettres de mise à niveau**, **messagerie vocale** et **autres**.
 
-- **Filtrer par marque** : Les valeurs disponibles sont **: American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** et **Autres**.
+- **Filtrer par marque** : Les valeurs disponibles sont **: American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** et **Other**.
 
 - **Filtrer par secteur d’activité** : Les valeurs disponibles sont les suivantes : **Services bancaires**, **Services aux entreprises**, **Services à la consommation**, **Éducation**, **Énergie**, **Construction**, **Conseil**, **Services financiers**, **Gouvernement**, **Hôtellerie**, **Assurance**, **Juridique**, **Services Courrier**, **Informatique**, **Santé**, **Fabrication**, **Vente au détail**, **Télécommunications**, **Immobilier**, et **Autres**.
 
@@ -115,14 +117,49 @@ Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
 Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou **Effacer les filtres**.
 
-Si vous sélectionnez une charge utile dans la liste en cliquant sur le nom, les détails sur la charge utile sont affichés dans un menu volant :
+Si vous sélectionnez une charge utile dans la liste en cliquant n’importe où dans la ligne autre que la case à cocher, les détails sur la charge utile sont affichés dans un menu volant :
 
-- L’onglet **Vue d’ensemble** contient un exemple et d’autres détails sur la charge utile.
+- L’onglet **Charge utile** contient un exemple et d’autres détails sur la charge utile.
+- L’onglet **Page de connexion** est décrit dans la section suivante.
 - **L’onglet Simulations lancé** contient le **nom** de la simulation, le **taux de clics**, le **taux compromis** et **l’action**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="L’onglet Charge utile dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
-Lorsque vous avez terminé, cliquez sur **Suivant**.
+### <a name="login-page"></a>Page de connexion
+
+Sélectionnez la charge utile dans la liste en cliquant n’importe où dans la ligne autre que la case à cocher pour ouvrir le menu volant des détails.
+
+L’onglet **Page de connexion** dans le menu volant détails de la charge utile affiche la page de connexion actuellement sélectionnée pour la charge utile.
+
+Pour afficher la page de connexion complète, utilisez les liens **Page 1** et **Page 2** en bas de la page pour les pages de connexion à deux pages.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Onglet Page de connexion dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+Pour modifier la page de connexion utilisée dans la charge utile, cliquez sur l’icône ![Modifier la page de connexion.](../../media/m365-cc-sc-edit-icon.png) **Modifier la page de connexion**.
+
+Dans le menu volant **Sélectionner la page de connexion** qui s’affiche, les informations suivantes s’affichent pour chaque page de connexion :
+
+- **Nom**
+- **Language**
+- **Source** : pour les pages de connexion intégrées, la valeur est **Global**. Pour les pages de connexion personnalisées, la valeur est **Locataire**.
+- **État** : **Prêt** ou **Brouillon**.
+- **Créé par** : Pour les pages de connexion intégrées, la valeur est **Microsoft**. Pour les pages de connexion personnalisées, la valeur est l’UPN de l’utilisateur qui a créé la page de connexion.
+- **Dernière modification**
+- **Actions** : cliquez sur l’icône ![Aperçu.](../../media/m365-cc-sc-eye-icon.png) **Aperçu** pour afficher un aperçu de la page de connexion.
+
+Pour rechercher une page de connexion dans la liste, utilisez l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Zone de recherche** pour rechercher le nom de la page de connexion.
+
+Cliquez sur l’icône ![Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtrez** pour filtrer les pages de connexion par **source** ou **langue**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Page Sélectionner la connexion dans l’onglet Page de connexion dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+Pour créer une page de connexion, cliquez sur [Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant Création d’une page de connexion de l’utilisateur final. Les étapes sont les mêmes que dans les **pages de connexion** de l’onglet **De la bibliothèque de contenu simulé** d’entraînement \> de **simulation d’attaque**. Pour obtenir des instructions, consultez [Créer des pages de connexion](attack-simulation-training-login-pages.md#create-login-pages).
+
+De retour sur la **page Sélectionner la connexion**, vérifiez que la nouvelle page de connexion que vous avez créée est sélectionnée, puis cliquez sur **Enregistrer**.
+
+Dans le menu volant détails de la charge utile, cliquez sur [l’icône Fermer.](../../media/m365-cc-sc-close-icon.png) **Fermez**.
+
+Lorsque vous avez terminé sur la **page Sélectionner une charge utile et connexion**, cliquez sur **Suivant**.
 
 ## <a name="target-users"></a>Utilisateurs ciblés
 
@@ -235,11 +272,11 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 Dans la **page d’accueil** , vous configurez la page web vers laquelle l’utilisateur est amené s’il ouvre la charge utile dans la simulation.
 
-- **Sélectionner la préférence de page d’accueil** : les valeurs disponibles dépendent de vos sélections précédentes sur la page [Sélectionner des charges utiles](#select-payloads) , comme décrit dans le tableau suivant :
+- **Sélectionner la préférence de page d’accueil** : les valeurs disponibles dépendent de vos sélections de charge utile précédentes sur la page [Sélectionner une charge utile et la page de connexion](#select-a-payload-and-login-page) , comme décrit dans le tableau suivant :
 
-  |Sélection sur la page Sélectionner des charges utiles|Valeurs disponibles pour sélectionner la préférence de page d’accueil|
+  |Sélection de la charge utile|Valeurs disponibles pour sélectionner la préférence de page d’accueil|
   |---|---|
-  |Sélectionner manuellement|Utiliser la page d’accueil par défaut de Microsoft <p> Créer votre propre page d’accueil <p> Utiliser une URL personnalisée <p> **Remarque** : L’option **Utiliser une valeur d’URL personnalisée** n’est pas disponible si vous avez précédemment sélectionné **La pièce jointe** ou **Lien vers un programme malveillant** dans la page [Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques) .|
+  |Sélectionner manuellement|Utiliser la page d’accueil par défaut de Microsoft <br><br> Créer votre propre page d’accueil <p> Utiliser une URL personnalisée <p> **Remarque** : L’option **Utiliser une valeur d’URL personnalisée** n’est pas disponible si vous avez précédemment sélectionné **La pièce jointe** ou **Lien vers un programme malveillant** dans la page [Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques) .|
   |Randomize|Utiliser la page d’accueil par défaut de Microsoft|
 
   Les valeurs de **préférence de page d’accueil Select** disponibles et leurs paramètres associés sont décrits dans la liste suivante :
@@ -480,7 +517,7 @@ Dans la page **Détails du lancement** , configurez les paramètres supplémenta
 - **Utilisez des charges utiles uniques dans les simulations au sein d’une automatisation** : par défaut, ce paramètre n’est pas sélectionné.
 - **Cibler les récidivistes** : par défaut, ce paramètre n’est pas sélectionné. Si vous le sélectionnez, configurez le paramètre suivant qui s’affiche :
   - **Entrez le nombre maximal de fois qu’un utilisateur peut être ciblé dans cette automatisation** : entrez une valeur comprise entre 1 et 10.
-- **Envoyer un e-mail de simulation en fonction du paramètre de fuseau horaire actuel de l’utilisateur à partir de Outlook’application web** : par défaut, ce paramètre n’est pas sélectionné.
+- **Envoyer un e-mail de simulation en fonction du paramètre de fuseau horaire actuel de l’utilisateur à partir de l’application web Outlook** : par défaut, ce paramètre n’est pas sélectionné.
 - **Afficher la page de collecte des données interstitielles de la technique drive-by** : ce paramètre n’est disponible que si vous avez sélectionné **l’URL Drive-by** dans la page **[Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques)** . Par défaut, le paramètre est activé (![bouton bascule sur l’icône).](../../media/scc-toggle-on.png)
 
 ## <a name="review-simulation-automation"></a>Passer en revue l’automatisation de simulation

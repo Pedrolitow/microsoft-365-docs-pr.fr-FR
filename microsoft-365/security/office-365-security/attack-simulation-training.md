@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: c1489c2653adbfa05958ca61240a97d837a9dc93
+ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839752"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66609363"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage avec l’entraînement de simulation d’attaque dans Defender pour Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "65839752"
 
 La formation à la simulation d’attaque dans Microsoft Defender pour Office 365 Plan 2 ou Microsoft 365 E5 vous permet d’exécuter des simulations de cyberattaques bénignes au sein de votre organisation. Ces simulations testent vos stratégies et pratiques de sécurité, ainsi que la formation de vos employés pour qu’ils soient plus conscients et diminuent leur sensibilité aux attaques. Cet article vous guide tout au long de la création d’une attaque par hameçonnage simulée à l’aide de l’entraînement de simulation d’attaque.
 
-Pour obtenir des informations sur la formation à la simulation d’attaque, consultez [Démarrage l’utilisation de la formation de simulation d’attaque](attack-simulation-training-get-started.md).
+Pour obtenir des informations sur la formation à la simulation d’attaque, consultez [Prise en main de la formation de simulation d’attaque](attack-simulation-training-get-started.md).
 
 Pour lancer une attaque par hameçonnage simulée, procédez comme suit :
 
@@ -70,39 +70,38 @@ Dans la page **Simulation de nom** , configurez les paramètres suivants :
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-## <a name="select-a-payload"></a>Sélectionner une charge utile
+## <a name="select-a-payload-and-login-page"></a>Sélectionner une charge utile et une page de connexion
 
-Dans la page **Sélectionner la charge utile** , vous devez sélectionner une charge utile existante dans la liste ou créer une charge utile.
+Dans la page **Sélectionner la charge utile et la** connexion, vous devez sélectionner une charge utile existante dans la liste ou créer une charge utile.
 
-Les détails suivants s’affichent dans la liste des charges utiles pour vous aider à choisir :
+Vous pouvez également afficher la page de connexion utilisée dans la charge utile, sélectionner une autre page de connexion à utiliser ou créer une page de connexion à utiliser.
+
+### <a name="payload"></a>Charge
+
+Les détails suivants s’affichent pour chaque charge utile :
 
 - **Nom de la charge utile**
 - **Langue** : langue du contenu de la charge utile. Le catalogue de charges utiles de Microsoft (global) fournit des charges utiles dans plus de 10 langues qui peuvent également être filtrées.
 - **Taux de clic** : nombre de personnes ayant cliqué sur cette charge utile.
-- **Taux de compromission prédit** : données historiques de la charge utile sur Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette charge utile.
+- **Taux de compromission prédit** : données historiques de la charge utile dans Microsoft 365 qui prédit le pourcentage de personnes qui seront compromises par cette charge utile.
 - **Les simulations lancées** comptent le nombre de fois où cette charge utile a été utilisée dans d’autres simulations.
 
 Dans l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Dans** la zone de recherche, vous pouvez taper une partie du nom de la charge utile et appuyer sur Entrée pour filtrer les résultats.
 
 Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
-- **Source** : indique si la charge utile a été créée dans votre organisation ou fait partie du catalogue de charges utiles préexistante de Microsoft. Les valeurs valides sont les suivantes :
-  - **Global** (intégré)
-  - **Locataire** (personnalisé)
-  - **All**
-
 - **Complexité** : calculée en fonction du nombre d’indicateurs dans la charge utile qui indiquent une attaque possible (fautes d’orthographe, urgence, etc.). D’autres indicateurs sont plus faciles à identifier en tant qu’attaque et indiquent une complexité plus faible. Les valeurs disponibles sont :
+  - **High**
+  - **Medium**
   - **Faible**
-  - **Moyenne**
-  - **Élevée**
 
-- **Langue** : Les valeurs disponibles sont le **chinois (simplifié),** le **chinois (traditionnel),****l’anglais**, **le Français**, **l’allemand**, **l’italien**, le **japonais**, **le coréen**, **le portugais**, **le russe**, l’espagnol et le **néerlandais**. 
+- **Langue** : Les valeurs disponibles sont : **anglais**, **espagnol**, **allemand**, **japonais**, **Français**, **portugais**, **néerlandais**, **italien**, **suédois**, **chinois (simplifié),****norvégien bokmål**, **polonais**, **russe**, **finnois**, **coréen**, **turc**, **hongrois**, **hébreu**, **thaï**, **arabe**, **vietnamien**, **slovaque**, **grec**, **indonésien**, **roumain**, **slovène**, **croate**, **catalan** ou **autre**.
 
 - **Ajouter des balises**
 
 - **Filtrez par thème** : Les valeurs disponibles sont : **Activation** du **compte, vérification du compte**, **Facturation**, **Nettoyage du courrier**, **Document reçu**, **Dépenses**, **Télécopie**, **Rapport financier**, **Messages entrants**, **Facture**, **Éléments reçus**, **Alerte de connexion**, **Courrier reçu**, **Mot de passe**, **Paiement**, **Paie**, **Offre personnalisée**, **Quarantaine**, **Travail à distance**, **passer en revue le message**, **mise à jour de sécurité**, **service suspendu**, **signature requise**, **boîte aux lettres de vérification du stockage de boîte aux lettres de mise à niveau**, **messagerie vocale** et **autres**.
 
-- **Filtrer par marque** : Les valeurs disponibles sont **: American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** et **Autres**.
+- **Filtrer par marque** : Les valeurs disponibles sont **: American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** et **Other**.
 
 - **Filtrer par secteur d’activité** : Les valeurs disponibles sont les suivantes : **Services bancaires**, **Services aux entreprises**, **Services à la consommation**, **Éducation**, **Énergie**, **Construction**, **Conseil**, **Services financiers**, **Gouvernement**, **Hôtellerie**, **Assurance**, **Juridique**, **Services Courrier**, **Informatique**, **Santé**, **Fabrication**, **Vente au détail**, **Télécommunications**, **Immobilier**, et **Autres**.
 
@@ -112,20 +111,55 @@ Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
 Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou **Effacer les filtres**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="Page Sélectionner une charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
-
-Si vous sélectionnez une charge utile dans la liste, les détails sur la charge utile sont affichés dans un menu volant :
-
-- L’onglet **Vue d’ensemble** contient un exemple et d’autres détails sur la charge utile.
-- **L’onglet Simulations lancé** contient le **nom** de la simulation, le **taux de clics**, le **taux compromis** et **l’action**.
-
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
-
-Si vous sélectionnez une charge utile dans la liste en cliquant sur le nom, une ![icône Envoyer une charge utile de test.](../../media/m365-cc-sc-create-icon.png) **Le bouton Envoyer un test** s’affiche sur la page principale, où vous pouvez vous envoyer une copie de l’e-mail de charge utile (l’utilisateur actuellement connecté) à des fins d’inspection.
+Si vous sélectionnez une charge utile dans la liste en cochant la case, une ![icône Envoyer une charge utile de test.](../../media/m365-cc-sc-create-icon.png) **Le bouton Envoyer un test** s’affiche sur la page principale, où vous pouvez vous envoyer une copie de l’e-mail de charge utile (l’utilisateur actuellement connecté) à des fins d’inspection.
 
 Pour créer votre propre charge utile, cliquez sur ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **Créez une charge utile**. Pour plus d’informations, consultez [Créer des charges utiles personnalisées pour l’entraînement de simulation d’attaque](attack-simulation-training-payloads.md#create-payloads).
 
-Lorsque vous avez terminé, cliquez sur **Suivant**.
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="Page Sélectionner une charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+
+Si vous sélectionnez une charge utile dans la liste en cliquant n’importe où dans la ligne autre que la case à cocher, les détails sur la charge utile sont affichés dans un menu volant :
+
+- L’onglet **Charge utile** contient un exemple et d’autres détails sur la charge utile.
+- L’onglet **Page de connexion** est décrit dans la section suivante.
+- **L’onglet Simulations lancé** contient le **nom** de la simulation, le **taux de clics**, le **taux compromis** et **l’action**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="L’onglet Charge utile dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+
+### <a name="login-page"></a>Page de connexion
+
+Sélectionnez la charge utile dans la liste en cliquant n’importe où dans la ligne autre que la case à cocher pour ouvrir le menu volant des détails.
+
+L’onglet **Page de connexion** dans le menu volant détails de la charge utile affiche la page de connexion actuellement sélectionnée pour la charge utile.
+
+Pour afficher la page de connexion complète, utilisez les liens **Page 1** et **Page 2** en bas de la page pour les pages de connexion à deux pages.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Onglet Page de connexion dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+
+Pour modifier la page de connexion utilisée dans la charge utile, cliquez sur l’icône ![Modifier la page de connexion.](../../media/m365-cc-sc-edit-icon.png) **Modifier la page de connexion**.
+
+Dans le menu volant **Sélectionner la page de connexion** qui s’affiche, les informations suivantes s’affichent pour chaque page de connexion :
+
+- **Nom**
+- **Language**
+- **Source** : pour les pages de connexion intégrées, la valeur est **Global**. Pour les pages de connexion personnalisées, la valeur est **Locataire**.
+- **État** : **Prêt** ou **Brouillon**.
+- **Créé par** : Pour les pages de connexion intégrées, la valeur est **Microsoft**. Pour les pages de connexion personnalisées, la valeur est l’UPN de l’utilisateur qui a créé la page de connexion.
+- **Dernière modification**
+- **Actions** : cliquez sur l’icône ![Aperçu.](../../media/m365-cc-sc-eye-icon.png) **Aperçu** pour afficher un aperçu de la page de connexion.
+
+Pour rechercher une page de connexion dans la liste, utilisez l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Zone de recherche** pour rechercher le nom de la page de connexion.
+
+Cliquez sur l’icône ![Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtrez** pour filtrer les pages de connexion par **source** ou **langue**.
+
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Page Sélectionner la connexion dans l’onglet Page de connexion dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+
+Pour créer une page de connexion, cliquez sur [Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant Création d’une page de connexion de l’utilisateur final. Les étapes sont les mêmes que dans les **pages de connexion** de l’onglet **De la bibliothèque de contenu simulé** d’entraînement \> de **simulation d’attaque**. Pour obtenir des instructions, consultez [Créer des pages de connexion](attack-simulation-training-login-pages.md#create-login-pages).
+
+De retour sur la **page Sélectionner la connexion**, vérifiez que la nouvelle page de connexion que vous avez créée est sélectionnée, puis cliquez sur **Enregistrer**.
+
+Dans le menu volant détails de la charge utile, cliquez sur [l’icône Fermer.](../../media/m365-cc-sc-close-icon.png) **Fermez**.
+
+Lorsque vous avez terminé sur la **page Sélectionner une charge utile et connexion**, cliquez sur **Suivant**.
 
 ## <a name="target-users"></a>Utilisateurs ciblés
 
@@ -300,7 +334,7 @@ Dans la page **Sélectionner la notification de l’utilisateur final** , sélec
 
 - **Notification microsoft par défaut (recommandée)** : les paramètres supplémentaires suivants sont disponibles sur la page :
 
-  - **Sélectionnez la langue par défaut** : Les valeurs disponibles sont le **chinois (simplifié),** le **chinois (traditionnel),****l’anglais**, **l’Français**, **l’allemand**, **l’italien**, **le japonais**, **le coréen**, **le portugais**, **le russe**, **l’espagnol** et le **néerlandais**.
+  - **Sélectionnez la langue par défaut** : **Les** valeurs disponibles sont : anglais, **espagnol**, **allemand**, **japonais**, **Français**, **portugais**, **néerlandais**, **italien**, **suédois**, **chinois (simplifié),** **norvégien bokmål**, **polonais**, **russe**, **finnois**, **coréen**, **turc**, **hongrois**, **hébreu**, **thaï,** **arabe**, **vietnamien****, slovaque**, **grec**, **indonésien**, **roumain**, **slovène**, **croate**, **catalan** ou **autre**.
 
   - Par défaut, les notifications suivantes sont incluses :
     - **Notification de renforcement positif Microsoft**
