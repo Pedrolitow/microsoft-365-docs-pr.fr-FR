@@ -23,16 +23,20 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: ad95e4dc99a9957812ee09ace69d66b169ef7879
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: db1993a99292f9b90a3b567007b96742b0f359b2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491896"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602407"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
-Votre abonnement Microsoft 365 Business Premium inclut des fonctionnalités de conformité et de confidentialité. Ces fonctionnalités permettent de protéger les données de votre entreprise et de vous aider à sécuriser vos informations sensibles et celles de vos clients. Cet article est conçu pour vous aider à bien démarrer avec vos fonctionnalités de conformité.
+
+Consultez l’[aide de Microsoft 365 Petite Entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+
+Votre abonnement Microsoft 365 Business Premium inclut des fonctionnalités de conformité et de confidentialité. Ces fonctionnalités permettent de protéger les données de votre entreprise et de sécuriser vos informations sensibles et celles de vos clients. Cet article est conçu pour vous aider à bien démarrer avec vos fonctionnalités de conformité.
+
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -72,6 +76,8 @@ Voici comment procéder :
 Pour plus d’informations sur les fonctionnalités de conformité dans Microsoft 365 pour les entreprises, consultez la[documentation Microsoft Purview](../compliance/index.yml).
 
 ## <a name="use-sensitivity-labels"></a>Utiliser des étiquettes de confidentialité
+
+Regardez cette vidéo et d’autres sur notre [Chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198022).
 
 Les étiquettes de confidentialité sont disponibles dans les applications Office (comme Outlook, Word, Excel et PowerPoint). Voici quelques exemples d’étiquettes :
 
