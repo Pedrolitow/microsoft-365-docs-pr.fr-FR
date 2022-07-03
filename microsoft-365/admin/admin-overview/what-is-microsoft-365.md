@@ -21,16 +21,20 @@ search.appverid:
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 00763cd0438a28adbf98b60afed4a463086a2625
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f127ac87d4f3886a623f1c81ef2cec6f53677434
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435808"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601573"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Regardez : Qu’est-ce que Microsoft 365 Business Premium ?
+
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198029).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 

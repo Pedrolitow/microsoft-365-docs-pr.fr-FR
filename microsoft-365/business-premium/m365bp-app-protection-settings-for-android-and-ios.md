@@ -26,18 +26,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Découvrez comment créer, modifier ou supprimer une stratégie de gestion des applications et protéger des fichiers de travail sur des appareils Android ou iOS.
-ms.openlocfilehash: 218646af1ea881d381d5bceca4b8c0138918ee20
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 60bc5b3b69eacf9573dd806734cb47355266d3a5
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489207"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602053"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Définir les paramètres de protection des applications pour les appareils Android ou iOS
+
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article s’applique à Microsoft 365 Business Premium.
 
 ## <a name="watch-secure-office-apps-on-ios"></a>Regarder : Sécuriser les applications Office sur iOS
+
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197828).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 

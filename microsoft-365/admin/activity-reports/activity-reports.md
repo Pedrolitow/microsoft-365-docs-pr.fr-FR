@@ -23,20 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486316"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601605"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier qui utilise beaucoup un service et atteint des quotas, ou qui n'a peut-être pas du tout besoin d'une licence Microsoft 365. Le modèle de licence perpétuelle ne sera pas inclus dans les rapports.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
+Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier qui utilise beaucoup un service et atteint des quotas, ou qui n'a peut-être pas du tout besoin d'une licence Microsoft 365. Le modèle de licence perpétuelle ne sera pas inclus dans les rapports. 
+  
 Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
 
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>Regarder : Agir sur un rapport d’utilisation dans Office 365
+  
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -106,7 +110,7 @@ Voici les rapports disponibles dans tous les environnements basés sur votre abo
 |[Activité sur Yammer](yammer-activity-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
-|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
+|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|No<sup>1</sup>|
 |[Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)|Oui|Oui|S/O<sup>2</sup>|S/O<sup>2</sup>|S/O<sup>2</sup>|
 |[Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|
 |[Activité d’organisation de conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Oui|Oui|No<sup>1</sup>|Non<sup>1</sup>|Oui|

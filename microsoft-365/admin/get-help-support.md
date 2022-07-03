@@ -22,18 +22,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 3d1b69fef8bd262aada4910c82199203f4cff9ee
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 129a774d808cfc0f7f1dc860f72ede7c21ad8f1a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011779"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602853"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>Obtenir un support pour Microsoft 365 pour les entreprises
 
 ::: moniker range="o365-worldwide"
 
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+
 ## <a name="watch-get-help-or-support"></a>Regarder : obtenir de l’aide ou une assistance technique
+
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197598).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -121,7 +125,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 
 | Catégorie d’assistance | Exemples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
+| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
 | Configuration | Problèmes de configuration de service<ul><li>Authentification unique (SSO)</li><li>Synchronisation Active Directory</li></ul> |
 
 > [!NOTE]
