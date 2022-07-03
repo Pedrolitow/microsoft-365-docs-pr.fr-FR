@@ -27,18 +27,21 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: a08f5eb5c0a1bb2a77242f4b661c683310568d81
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d5504edaff4c9d406d218d8ab8333b6d50af406e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092820"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573888"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 
 Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d'ajouter un domaine que vous possédez ou d'en acheter un. Consultez [L’inscription à un abonnement Microsoft 365 Business Standard abonnement](../simplified-signup/signup-business-standard.md).
 
 Dans cet article, nous allons vous aider à passer en revue les étapes d’ajout d’un domaine existant que vous possédez déjà ou d’achat d’un nouveau domaine. Si vous avez acheté un nouveau domaine lorsque vous vous êtes inscrit, votre domaine est configuré et vous pouvez accéder à [Ajouter des utilisateurs et attribuer des licences](#add-users-and-assign-licenses).
+
+> [!Tip]
+> Si vous avez un abonnement Microsoft 365 Business Premium, veuillez consulter la section [Configurer Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
 
 ## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 

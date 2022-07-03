@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Comment configurer des appareils gérés
-ms.openlocfilehash: 990b6a042e57a7964918e7e339bdfc3987c3c477
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: cd65c70f9ed9c2ec43196d792c81fa3e82f4e05d
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490259"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573984"
 ---
 # <a name="set-up-managed-devices"></a>Configurer les appareils gérés
 
 Un appareil « géré » est un appareil sous contrôle et surveillé par l’organisation. Il est donc régulièrement mis à jour et sécurisé. Le fait de disposer d’appareils sous contrôle géré est un objectif essentiel. Pour contrôler ces appareils, ils sont inscrits dans un gestionnaire d’appareils avec Intune et Azure Active Directory Premium, qui sont tous deux inclus dans Microsoft Business Premium. 
 
-Un PC Windows 10 est considéré comme géré une fois que les utilisateurs ont effectué les deux étapes suivantes :
+Un PC Windows 10 ou 11 est considéré comme géré après que les utilisateurs ont effectué les deux étapes suivantes :
 
 1. Configurez les stratégies de protection des appareils et des données dans l’[Assistant Installation](../business/set-up.md).
 
@@ -42,7 +42,7 @@ Un PC Windows 10 est considéré comme géré une fois que les utilisateurs ont 
 
 ## <a name="enroll-devices-in-microsoft-endpoint-manager"></a>Inscrire des appareils dans Microsoft Endpoint Manager
 
-Vous pouvez désormais inscrire des appareils dans Endpoint Manager, accéder à https://endpoint.microsoft.com et sélectionner **Appareils** > **Inscrire des appareils**. 
+Maintenant vous pouvez inscrire les appareils dans Endpoint Manager. Accédez et https://endpoint.microsoft.com sélectionnez **Appareils** > **Inscrire des appareils**. 
 
 :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Utilisez Microsoft Endpoint Manager pour inscrire des appareils."::: 
 

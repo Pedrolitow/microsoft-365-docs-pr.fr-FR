@@ -14,53 +14,47 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7d86b04b1c3883bc5b3da0e429dbbddd8275622f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 70be4a5b7991d038dd1e34c00778de6bb3a67b84
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489511"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573966"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
-Maintenant que vous avez inscrit les appareils, vous devez les intégrer à Microsoft Defender pour les PME pour implémenter la protection de nouvelle génération (antivirus, logiciel anti-programme malveillant et protection fournie par le cloud), la protection pare-feu, le filtrage de contenu web, etc. 
+Microsoft 365 Business Premium comprend Microsoft Defender pour les entreprises, une solution de sécurité des points de terminaison pour les petites et moyennes entreprises. Le Defender pour entreprise offre une protection de nouvelle génération (antivirus, antimalware et protection fournie par le cloud), une protection par pare-feu, un filtrage du contenu Web et bien plus encore pour les appareils de votre entreprise. La protection est appliquée lorsque vous embarquez des appareils. 
 
 Pour intégrer des appareils, vous pouvez choisir parmi plusieurs options :
 
-- [Utiliser l’intégration automatique pour les appareils Windows déjà inscrits dans Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
-
-- [Utiliser un script local pour intégrer des appareils Windows et macOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
-
-- [Utiliser Endpoint Manager pour inscrire des appareils](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows, macOS, iOS et Android), puis appliquer des stratégies Defender entreprise à ces appareils
+- [Embarquement automatique des appareils Windows inscrits dans Microsoft Intune.](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
+- [Un script local pour intégrer les appareils Windows et macOS à Defender pour entreprise](#use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business)
+- [Intune pour inscrire les appareils, y compris les appareils](#use-intune-to-enroll-devices) mobiles (Windows, macOS, iOS et Android), puis appliquer les politiques de Defender pour entreprise à ces appareils.
 
 Cet article inclut également les rubriques suivantes :
 
 - [Comment exécuter un test de détection sur un appareil Windows](#run-a-detection-test-on-a-windows-device)
-
 - [Comment intégrer des appareils progressivement](#onboard-devices-gradually)
-
 - [Comment déconnecter un appareil](#offboard-a-device) si un appareil est remplacé ou si une personne quitte l’organisation
 
 > [!IMPORTANT]
 > Si un problème se produit et que votre processus d’intégration échoue, consultez [Résolution des problèmes Microsoft Defender pour les PME](../security/defender-business/mdb-troubleshooting.yml).
 
-## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager"></a>Utiliser l’intégration automatique pour les appareils Windows déjà inscrits dans Microsoft Endpoint Manager
+## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune"></a>Utilisez l'intégration automatique pour les appareils Windows qui sont déjà inscrits dans Intune.
 
-L’option d’intégration automatique s’applique uniquement aux appareils Windows. L’intégration automatique est disponible si les conditions suivantes sont remplies :
+Vous pouvez intégrer automatiquement les appareils Windows à Defender pour entreprises si ces appareils sont déjà inscrits dans Intune. Defender pour entreprise détecte les appareils clients Windows qui sont inscrits dans Intune et vous invite à choisir si vous voulez embarquer ces appareils automatiquement. Les stratégies et paramètres de sécurité de Defender pour entreprise sont ensuite appliqués à ces appareils. Nous appelons ce processus *embarquement automatique*. Notez que l'option d'embarquement automatique ne s'applique qu'aux appareils Windows. L’intégration automatique est disponible si les conditions suivantes sont remplies :
 
-- Votre organisation utilisait déjà Microsoft Endpoint Manager, Microsoft Intune ou Gestion des appareils mobiles (GAM) dans Microsoft Intune avant de recevoir Defender for Business ( Microsoft 365 Business Premium clients ont déjà Microsoft Intune).
-
-- Vous disposez déjà d’appareils Windows inscrits dans Endpoint Manager.
-
-Si Windows appareils sont déjà inscrits dans Endpoint Manager, Defender pour les PME détecte ces appareils pendant que vous êtes en train de configurer Defender pour les PME. Vous serez invité à indiquer si vous souhaitez utiliser l’intégration automatique pour tout ou partie de vos appareils Windows. Vous pouvez intégrer tous les appareils Windows à la fois, ou sélectionner des appareils spécifiques pour commencer, puis ajouter d’autres appareils ultérieurement.
+- Votre entreprise utilisait déjà le gestionnaire de terminaux Microsoft Endpoint Manager, Microsoft Intune ou Mobile Device Management (MDM) dans Intune avant d'obtenir Defender pour entreprise (les clients Microsoft 365 Business Premium disposent déjà de Microsoft Intune).
+- Vous avez déjà des appareils Windows inscrits dans Intune.
 
 > [!TIP]
-> Nous vous recommandons de sélectionner l’option « Tous les appareils inscrits ». Ainsi, lorsque Windows appareils sont inscrits dans Endpoint Manager ultérieurement, ils sont automatiquement intégrés à Defender pour les PME.
-Pour en savoir plus sur l’intégration automatique, consultez l’étape 2 de [l’Assistant Pour configurer Microsoft Defender pour les PME](../security/defender-business/mdb-use-wizard.md).
+> Lorsque vous êtes invité à utiliser l'intégration automatique, nous vous recommandons de sélectionner l'option «tous les appareils inscrits». Ainsi, lorsque les appareils Windows seront inscrits dans Intune par la suite, ils seront automatiquement intégrés à Defender pour entreprise.
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>Utiliser un script local pour intégrer des appareils Windows et macOS
+Pour en savoir plus sur l'intégration automatique, voir Utiliser[ l'assistant pour configurer Microsoft Defender pour entreprise](../security/defender-business/mdb-use-wizard.md).
 
-Vous pouvez utiliser un script local pour intégrer des appareils Windows et Mac. Lorsque vous exécutez le script d’intégration sur un appareil, il crée une approbation avec Azure Active Directory (si cette approbation n’existe pas déjà), inscrit l’appareil dans Microsoft Endpoint Manager (s’il n’est pas déjà inscrit), puis l’intègre à Defender pour les PME. Cette méthode est utile pour l’intégration d’appareils dans Defender pour les PME. Vous pouvez intégrer jusqu’à 10 appareils à la fois.
+## <a name="use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business"></a>Utiliser un script local pour intégrer les appareils Windows et macOS à Defender pour entreprise
+
+Vous pouvez utiliser un script local pour intégrer des appareils Windows et Mac. Lorsque vous exécutez le script d'intégration sur un appareil, il crée une confiance avec Azure Active Directory (si cette confiance n'existe pas déjà), inscrit l'appareil dans Intune (s'il n'est pas déjà inscrit), puis intègre l'appareil à Defender pour entreprise. Vous pouvez embarquer jusqu'à 10 appareils à la fois en utilisant le script local.
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -73,14 +67,13 @@ Vous pouvez utiliser un script local pour intégrer des appareils Windows et Mac
 5. Suivez les instructions suivantes :
 
    - AAppareils Windows [Intégrer les appareils Windows utilisant un script local](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
-
    - Appareils macOS : [déploiement manuel pour Microsoft Defender pour point de terminaison sur macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
-## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>Utiliser Microsoft Endpoint Manager pour inscrire des appareils
+## <a name="use-intune-to-enroll-devices"></a>Utilisez Intune pour inscrire les appareils
 
 Pour inscrire un appareil, inscrivez-le vous-même ou demandez à vos utilisateurs de se connecter au portail d’entreprise et d’inscrire et d’installer les applications nécessaires. 
 
-Si vous utilisiez déjà Endpoint Manager (qui inclut Microsoft Intune et la gestion des appareils mobiles), avant d’obtenir Defender pour les PME, vous pouvez continuer à utiliser Endpoint Manager pour intégrer les appareils de votre organisation. Avec Endpoint Manager, vous pouvez intégrer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
+Si vous utilisiez déjà Intune ou la gestion des appareils mobiles avant de vous procurer Defender pour entreprise, vous pouvez continuer à utiliser Intune pour intégrer les appareils de votre organisation. Grâce à Intune, vous pouvez embarquer des ordinateurs, des tablettes et des téléphones, y compris des appareils iOS et Android.
 
 Consultez [inscription de l’appareil dans Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
@@ -123,18 +116,17 @@ Si vous souhaitez déconnecter un appareil, utilisez l’une des procédures sui
 
 1. Dans le volet de navigation, choisissez **Paramètres**, puis choisissez **Points de terminaison**.
 
-1. Sous **Gestion des appareils**, choisissez **Retrait**.
+2. Sous **Gestion des appareils**, choisissez **Retrait**.
 
-1. Sélectionnez un système d’exploitation, tel que **Windows 10 et 11**, puis, sous **Désinscrit un appareil**, dans la section **Méthode de déploiement**, choisissez **Script local**. 
+3. Sélectionnez un système d’exploitation, tel que **Windows 10 et 11**, puis, sous **Désinscrit un appareil**, dans la section **Méthode de déploiement**, choisissez **Script local**. 
 
-1. Dans l’écran de confirmation, passez en revue les informations, puis choisissez **Télécharger** pour continuer.
+4. Dans l’écran de confirmation, passez en revue les informations, puis choisissez **Télécharger** pour continuer.
 
-1. Sélectionnez **Télécharger le package de retrait** Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
+5. Sélectionnez **Télécharger le package de retrait** Nous vous recommandons d’enregistrer le package de retrait sur un lecteur amovible.
 
-1. Exécutez le script sur chaque appareil que vous souhaitez déclasser. Vous avez besoin d’aide pour cette tâche ? Consultez les ressources suivantes :   
+6. Exécutez le script sur chaque appareil que vous souhaitez déclasser. Vous avez besoin d’aide pour cette tâche ? Consultez les ressources suivantes :   
 
-   - Appareils Windows : [retirer les appareils Windows à l’aide d’un script local](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
-   
+   - Appareils Windows : [retirer les appareils Windows à l’aide d’un script local](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script) 
    - Appareils macOS : [désinstallation sur macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
