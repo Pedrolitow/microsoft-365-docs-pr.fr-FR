@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9087b2c04f8bc88e23f5b901d29d1067bdd9877e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825121"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616990"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
@@ -34,7 +34,7 @@ ms.locfileid: "64825121"
 
 Pour que Microsoft Secure Score soit un meilleur représentant de votre posture de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [Les nouveautés de Microsoft Secure Score](microsoft-secure-score-whats-coming.md)
 
-Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/securescore le [portail Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/securescore le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
 
 ## <a name="april-2022"></a>Avril 2022
 
@@ -42,14 +42,14 @@ Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/s
 
 ## <a name="december-2021"></a>Décembre 2021
 
-- Activer Coffre pièces jointes en mode bloc
+- Activer les pièces jointes sécurisées en mode bloc
 - Empêcher le partage Exchange Online détails du calendrier avec des utilisateurs externes
-- Activer les documents Coffre pour les clients Office
+- Activer les documents sécurisés pour les clients Office
 - Activer le paramètre de filtre des pièces jointes courant pour les stratégies anti-programme malveillant
 - Vérifier qu’aucun domaine d’expéditeur n’est autorisé pour les stratégies anti-courrier indésirable
-- Créer des stratégies de liens Coffre pour les messages électroniques
+- Créer des stratégies de liens sécurisés pour les messages électroniques
 - Créer des stratégies de vidage automatique de zéro heure pour les programmes malveillants
-- Activez Microsoft Defender pour Office 365 dans SharePoint, OneDrive et Microsoft Teams
+- Activer Microsoft Defender pour Office 365 dans SharePoint, OneDrive et Microsoft Teams
 - Créer des stratégies de vidage automatique de zéro heure pour les messages d’hameçonnage
 - Créer des stratégies de vidage automatique de zéro heure pour les messages indésirables
 - Bloquer l’abus de pilotes signés vulnérables exploités

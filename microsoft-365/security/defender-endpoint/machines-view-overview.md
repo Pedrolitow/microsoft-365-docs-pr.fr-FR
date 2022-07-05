@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554464"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617323"
 ---
 # <a name="device-inventory"></a>Inventaire des appareils
 
@@ -31,7 +31,7 @@ ms.locfileid: "66554464"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
@@ -83,6 +83,11 @@ Utilisez la colonne **État de l’intégration** pour trier et filtrer en fonct
 Dans les onglets **Appareils réseau** et **Appareils IoT** , vous verrez également des informations telles que le fournisseur, le modèle et le type d’appareil :
 
 ![Image de la liste des appareils réseau.](images/device-inventory-networkdevices.png)
+
+> [!NOTE]
+> Les intégrations de découverte d’appareils à [Microsoft Defender pour IoT](/azure/defender-for-iot/organizations/) et [Corelight](https://corelight.com/integrations/iot-security) sont disponibles pour vous aider à localiser, identifier et sécuriser votre inventaire complet des ressources OT/IOT. Les appareils découverts avec ces intégrations s’affichent sous l’onglet **Appareils IoT** . Pour plus d’informations, consultez [Intégrations de découverte d’appareils](device-discovery.md#device-discovery-integrations).
+>
+> Lorsque Defender pour IoT est configuré, vous pouvez également y afficher les appareils. Consultez [Gérer vos appareils IoT avec l’inventaire des appareils pour les organisations](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
 En haut de chaque onglet inventaire des appareils, vous pouvez voir le nombre total d’appareils, le nombre d’appareils qui ne sont pas encore intégrés et le nombre d’appareils identifiés comme étant un risque plus élevé pour votre organisation. Vous pouvez utiliser ces informations pour vous aider à hiérarchiser les appareils pour améliorer la posture de sécurité.
 

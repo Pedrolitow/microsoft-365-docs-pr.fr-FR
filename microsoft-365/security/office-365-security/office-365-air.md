@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Démarrage utiliser des fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365.
+description: Commencez à utiliser les fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca64509321ff43bbe8b7baf7ec7dfa270d9afdc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941520"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617149"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigation et réponse automatisées (AIR) dans Microsoft Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
@@ -81,17 +81,17 @@ Les fonctionnalités AIR sont incluses dans [Microsoft Defender pour Office 365]
 - [Protection contre les programmes malveillants](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Protection anti-hameçonnage](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [liens Coffre et pièces jointes Coffre](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Liens fiables et pièces jointes fiables](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 En outre, veillez à [examiner les stratégies d’alerte de votre organisation](../../compliance/alert-policies.md), en particulier les [stratégies par défaut dans la catégorie Gestion des menaces](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Quelles stratégies d’alerte déclenchent des investigations automatisées ?
 
-Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui permettent d’identifier Exchange les abus d’autorisations d’administrateur, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Plusieurs des stratégies [d’alerte par défaut](../../compliance/alert-policies.md#default-alert-policies) peuvent déclencher des investigations automatisées. Le tableau suivant décrit les alertes qui déclenchent des investigations automatisées, leur gravité dans le portail Microsoft 365 Defender et la façon dont elles sont générées :
+Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui permettent d’identifier les abus d’autorisations d’administrateur Exchange, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Plusieurs des stratégies [d’alerte par défaut](../../compliance/alert-policies.md#default-alert-policies) peuvent déclencher des investigations automatisées. Le tableau suivant décrit les alertes qui déclenchent des investigations automatisées, leur gravité dans le portail Microsoft 365 Defender et la façon dont elles sont générées :
 
 |Alerte|Severity|Comment l’alerte est générée|
 |---|---|---|
-|Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des opérations suivantes se produit : <ul><li>Un utilisateur protégé par [Coffre Liens](safe-links.md) dans votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender pour Office 365</li><li>Les utilisateurs remplacent les pages d’avertissement Coffre Liens (en fonction de la [stratégie de liens Coffre](set-up-safe-links-policies.md) de votre organisation.</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, consultez [Configurer des stratégies de liens Coffre](set-up-safe-links-policies.md).|
+|Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des opérations suivantes se produit : <ul><li>Un utilisateur protégé par [des liens fiables](safe-links.md) dans votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender pour Office 365</li><li>Les utilisateurs remplacent les pages d’avertissement liens sécurisés (en fonction de la [stratégie liens sécurisés](set-up-safe-links-policies.md) de votre organisation.</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, consultez [Configurer des stratégies de liens fiables](set-up-safe-links-policies.md).|
 |Un message électronique est signalé par un utilisateur comme un programme malveillant ou un hameçonnage|**Informatif**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages en tant qu’e-mail de hameçonnage à l’aide du [complément Message de rapport](enable-the-report-message-add-in.md) ou du [complément d’hameçonnage de rapport](enable-the-report-phish-add-in.md).|
 |Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsque tous les messages électroniques contenant des programmes malveillants sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés des boîtes aux lettres Exchange Online à l’aide du [vidage automatique de zéro heure (ZAP).](zero-hour-auto-purge.md)|
 |Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsque tous les messages contenant du hameçonnage sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés des boîtes aux lettres Exchange Online à l’aide de [ZAP](zero-hour-auto-purge.md).|
@@ -120,7 +120,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Les modifications seront bientôt apportées dans votre portail Microsoft 365 Defender
 
-Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous allez voir certaines modifications dans le [portail Microsoft 365 Defender amélioré](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
+Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous allez voir certaines modifications dans le [portail Microsoft 365 Defender amélioré](../defender/microsoft-365-defender-portal.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre d’action unifiée" lightbox="../../media/m3d-action-center-unified.png":::
 
@@ -146,7 +146,7 @@ Le tableau suivant répertorie les modifications et améliorations apportées à
 |**Onglet Entités**|L’onglet **Entités** a un style tab-in-tab qui inclut une vue tout récapitulative et la possibilité de filtrer par type d’entité. **L’onglet Entités** inclut désormais une option **de chasse Go** en plus de l’option **Ouvrir dans l’Explorateur**. Vous pouvez maintenant utiliser [l’Explorateur](threat-explorer.md) ou [la recherche avancée](../defender-endpoint/advanced-hunting-overview.md) pour rechercher des entités et des menaces, et filtrer les résultats.|
 |**Onglet Actions**|L’onglet **Actions** mis à jour inclut désormais un onglet **Actions en attente** et un onglet **Historique des actions** . Les actions peuvent être approuvées (ou rejetées) dans un volet latéral qui s’ouvre lorsque vous sélectionnez une action en attente.|
 |**Onglet Preuves**|Un nouvel onglet **Preuve** affiche les principales conclusions d’entité liées aux actions. Les actions liées à chaque élément de preuve peuvent être approuvées (ou rejetées) dans un volet latéral qui s’ouvre lorsque vous sélectionnez une action en attente.|
-|**Centre de notifications**|Le **centre d’actions** mis à jour (<https://security.microsoft.com/action-center>) regroupe les actions en attente et terminées sur les e-mails, les appareils et les identités. Pour en savoir plus, consultez le Centre d’actions. (Pour en savoir plus, consultez [le Centre d’action](../defender/m365d-action-center.md).)|
+|**Centre d’action**|Le **centre d’actions** mis à jour (<https://security.microsoft.com/action-center>) regroupe les actions en attente et terminées sur les e-mails, les appareils et les identités. Pour en savoir plus, consultez le Centre d’actions. (Pour en savoir plus, consultez [le Centre d’action](../defender/m365d-action-center.md).)|
 |**Page Incidents**|La page **Incidents** met désormais en corrélation plusieurs enquêtes pour fournir une meilleure vue consolidée des enquêtes. ([En savoir plus sur les incidents](../defender/incidents-overview.md).)|
 
 ## <a name="next-steps"></a>Étapes suivantes

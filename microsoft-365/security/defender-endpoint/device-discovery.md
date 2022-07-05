@@ -20,18 +20,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623236"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617301"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +40,7 @@ La protection de votre environnement nécessite l’inventaire des appareils qui
 
 Microsoft Defender pour point de terminaison fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non gérés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. La découverte d’appareils utilise des points de terminaison intégrés, dans votre réseau, pour collecter, sonder ou analyser votre réseau pour découvrir les appareils non gérés. La fonctionnalité de découverte d’appareils vous permet de découvrir :
 
-- Enterprise points de terminaison (stations de travail, serveurs et appareils mobiles) qui ne sont pas encore intégrés à Microsoft Defender pour point de terminaison
+- Points de terminaison d’entreprise (stations de travail, serveurs et appareils mobiles) qui ne sont pas encore intégrés à Microsoft Defender pour point de terminaison
 - Appareils réseau tels que les routeurs et les commutateurs
 - Appareils IoT tels que les imprimantes et les caméras
 
@@ -107,7 +108,7 @@ Pour relever le défi d’obtenir suffisamment de visibilité pour localiser, id
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Évaluation des vulnérabilités sur les appareils découverts
 
-Les vulnérabilités et les risques sur vos appareils, ainsi que sur d’autres appareils non gérés détectés dans le réseau, font partie des flux TVM actuels sous « Sécurité Recommandations » et sont représentés dans les pages d’entité sur le portail.
+Les vulnérabilités et les risques sur vos appareils, ainsi que sur d’autres appareils non gérés détectés dans le réseau, font partie des flux TVM actuels sous « Recommandations de sécurité » et sont représentés dans les pages d’entité sur le portail.
 Recherchez les recommandations de sécurité liées à « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés.
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Tableau de bord des recommandations de sécurité" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
@@ -160,7 +161,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Configurer la découverte d’appareils](configure-device-discovery.md)
 - [FAQ sur la découverte d’appareils](device-discovery-faq.md)

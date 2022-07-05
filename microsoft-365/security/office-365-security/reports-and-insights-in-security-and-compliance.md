@@ -19,19 +19,19 @@ description: Découvrez les rapports intelligents et les insights, et comment le
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54965f7d439f753a1d12f91b584718a52620b51a
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 3dc90846f68d5e3ef5a1b2a003f5afb69cab3c60
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647400"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617083"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les équipes de sécurité peuvent utiliser les rapports intelligents et les insights du Centre de sécurité & conformité pour surveiller l’intégrité et la sécurité de leurs organisations. Ces informations sont présentées dans le **tableau de bord** à l’adresse <https://protection.office.com/insightdashboard>:
 
@@ -40,7 +40,7 @@ Les équipes de sécurité peuvent utiliser les rapports intelligents et les ins
 Les rapports intelligents et les insights sur le **tableau de bord** ont les fonctionnalités suivantes :
 
 - Mettez en évidence les zones problématiques.
-- Recommandations et des liens pour afficher et explorer des données.
+- Recommandations et liens pour afficher et explorer les données.
 - Effectuez des actions rapides.
 
 Par exemple, si les utilisateurs de votre organisation signalent soudainement un grand nombre de courriers électroniques comme courrier indésirable, vous devez vérifier les paramètres de vos stratégies anti-courrier indésirable.
@@ -55,8 +55,8 @@ Le tableau suivant répertorie les rapports disponibles dans le **tableau de bor
 |**Rapports de collaboration & par e-mail** <p> Détections de menaces, tendances des programmes malveillants, utilisateurs ciblés les plus ciblés, détails sur les messages électroniques envoyés et reçus, etc.|<https://security.microsoft.com/emailandcollabreport>|[Afficher les rapports sur la sécurité des e-mails](view-email-security-reports.md) <p> [Afficher les rapports pour Defender pour Office 365](view-reports-for-mdo.md)|
 |**Explorateur** (également appelé Explorateur de **menaces) ou détections en temps réel** <p> Suspicion de programmes malveillants détectés dans les e-mails et les fichiers dans Microsoft 365.|<https://security.microsoft.com/threatexplorer> <p> <https://security.microsoft.com/realtimereports>|[Threat Explorer (et détections en temps réel)](threat-explorer.md)|
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Portail Microsoft 365 Defender](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[Portail Microsoft 365 Defender](../defender/microsoft-365-defender-portal.md)
 
 [Protection contre les menaces dans Office 365](protect-against-threats.md)

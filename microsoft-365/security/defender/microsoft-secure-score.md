@@ -1,7 +1,7 @@
 ---
 title: Degré de sécurisation Microsoft
-description: Décrit le niveau de sécurité Microsoft dans le portail Microsoft 365 Defender, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
+description: Décrit le score de sécurité Microsoft dans le portail Microsoft 365 Defender, comment améliorer votre posture de sécurité et à quoi les administrateurs de sécurité peuvent s’attendre.
+keywords: score de sécurité Microsoft, degré de sécurisation, score de sécurité Office 365, score de sécurité Microsoft, portail Microsoft 365 Defender, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -23,20 +23,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ed80d57d25fea2f3c19b6fe6363f993569c68a92
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 33e4ae46c6ec75d615cf64efe93d7b5bd8a77905
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499445"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616987"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver sur https://security.microsoft.com/securescore le [portail Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans https://security.microsoft.com/securescore le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
 
-En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 de sécurité.
+En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365.
 
 Score sécurisé aide les organisations :  
 
@@ -44,12 +44,12 @@ Score sécurisé aide les organisations :
 * Améliorer leur posture de sécurité en leur offrant des possibilités de découverte, de visibilité, de guide et de contrôle.  
 * Comparer avec des critères de référence et établir des indicateurs de performance clés (KPI).
 
-Regardez cette vidéo pour obtenir une vue d’ensemble rapide du score de sécurité.
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide du degré de sécurisation.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWUPrP]
 
 Les organisations ont accès à des visualisations robustes des métriques et des tendances, à l’intégration à d’autres produits Microsoft, à la comparaison des scores avec des organisations similaires, et bien plus encore. Le score peut également refléter lorsque des solutions tierces ont traité les actions recommandées.
 
-:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Page d’accueil Du score de sécurité Microsoft dans le portail Microsoft 365 Defender microsoft" lightbox="../../media/secure-score/secure-score-home-page.png":::
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Page d’accueil du degré de sécurisation Microsoft dans le portail Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="how-it-works"></a>Comment ça marche
 

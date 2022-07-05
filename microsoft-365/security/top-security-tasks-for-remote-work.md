@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 3c3a6ad89a795a45a0f76f868fbc6d23a52b963b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: bc1dd84e83e5c5f1828e65203585d38acc28de5e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319218"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617257"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité afin de prendre en charge le travail à domicile
 
@@ -36,7 +36,7 @@ Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’
 - [Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)
 - [Microsoft 365 for Campaigns](../business-premium/index.md) (inclut une configuration de sécurité recommandée pour Microsoft 365 Business)
 
-Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recommande d’effectuer les tâches répertoriées dans le tableau suivant qui s’appliquent à votre plan de service. Si, au lieu d’acheter un plan Microsoft 365 entreprise, vous combinez des abonnements, notez les points suivants :
+Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recommande d’effectuer les tâches répertoriées dans le tableau suivant qui s’appliquent à votre plan de service. Si, au lieu d’acheter un plan Microsoft 365 Entreprise, vous combinez des abonnements, notez les points suivants :
 
 - Microsoft 365 E3 inclut Enterprise Mobility + Security (EMS) E3 et Azure AD P1
 - Microsoft 365 E5 inclut EMS E5 et Azure AD P2
@@ -58,13 +58,13 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |11|[Démarrer avec Microsoft Defender pour les applications cloud](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Avant de commencer, vérifiez votre [Microsoft 365 degré de sécurisation](./defender/microsoft-secure-score.md) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos Microsoft 365 identités, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre aux recommandations avec une application ou un logiciel tiers. Les tâches recommandées dans cet article augmenteront votre score.
+Avant de commencer, vérifiez votre [degré de sécurisation Microsoft 365](./defender/microsoft-secure-score.md) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos identités, données, applications, appareils et infrastructure Microsoft 365. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre aux recommandations avec une application ou un logiciel tiers. Les tâches recommandées dans cet article augmenteront votre score.
 
 :::image type="content" source="../media/secure-score.png" alt-text="Écran Microsoft Secure Score dans le portail Microsoft 365 Defender" lightbox="../media/secure-score.png":::
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1 : Activer l’authentification multifacteur (MFA) Azure AD
 
-La meilleure chose à faire pour améliorer la sécurité des employés travaillant à domicile consiste à activer l’authentification multifacteur. Si vous n’avez pas encore de processus en place, traitez-le comme un pilote d’urgence et assurez-vous que vous avez des gens de soutien prêts à aider les employés qui sont bloqués. Comme vous ne pouvez probablement pas distribuer des périphériques de sécurité matériels, utilisez Windows Hello biométrie et des applications d’authentification pour smartphone comme Microsoft Authenticator.
+La meilleure chose à faire pour améliorer la sécurité des employés travaillant à domicile consiste à activer l’authentification multifacteur. Si vous n’avez pas encore de processus en place, traitez-le comme un pilote d’urgence et assurez-vous que vous avez des gens de soutien prêts à aider les employés qui sont bloqués. Comme vous ne pouvez probablement pas distribuer des appareils de sécurité matériels, utilisez Windows Hello biométrie et des applications d’authentification pour smartphone comme Microsoft Authenticator.
 
 Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour inscrire leur appareil à Multi-Factor Authentication avant d’exiger l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement de la maison, continuez et exigez l’authentification multifacteur comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
 
@@ -74,7 +74,7 @@ L’application de ces stratégies ne prendra que quelques minutes, mais soyez p
 
 |Planification|Recommandation|
 |---|---|
-|Microsoft 365 plans (sans Azure AD P1 ou P2)|[Activer les paramètres de sécurité par défaut dans Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.|
+|Plans Microsoft 365 (sans Azure AD P1 ou P2)|[Activer les paramètres de sécurité par défaut dans Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.|
 |Microsoft 365 E3 (avec Azure AD P1)|Utilisez les [Stratégies d’accès conditionnel courantes](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br/>- [Exiger l’authentification multifacteur pour les administrateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (avec Azure AD P2)|En tirant parti d’Azure AD Identity Protection, commencez à implémenter [l’ensemble recommandé par Microsoft d’accès conditionnel et de stratégies associées](./office-365-security/identity-access-policies.md) en créant les stratégies suivantes :<br/> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 
@@ -104,10 +104,10 @@ Pour obtenir une vue d’ensemble, y compris un résumé des plans, consultez [D
 Votre administrateur général peut configurer ces protections :
 
 - [Configuration des stratégies de liens fiables](office-365-security/set-up-safe-links-policies.md)
-- [Configurer les paramètres globaux pour les liens Coffre](office-365-security/configure-global-settings-for-safe-links.md)
+- [Configurer les paramètres globaux pour les liens fiables](office-365-security/configure-global-settings-for-safe-links.md)
 - [Définir des stratégies de pièces jointes fiables](office-365-security/set-up-safe-attachments-policies.md)
 
-Vous devez travailler avec votre administrateur Exchange Online et SharePoint administrateur en ligne pour configurer Defender pour Office 365 pour ces charges de travail :
+Vous devez travailler avec votre administrateur Exchange Online et l’administrateur SharePoint Online pour configurer Defender pour Office 365 pour ces charges de travail :
 
 - [Microsoft Defender pour point de terminaison pour SharePoint, OneDrive et Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
@@ -187,7 +187,7 @@ Si vous autorisez rapidement la plupart de vos employés à travailler à domici
 
 Les éléments réseau tels que les concentrateurs VPN, l’équipement de sortie du réseau central (tels que les proxies et les dispositifs de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS en panne, la fonctionnalité NAT, etc., sont soudainement soumis à une énorme contrainte en raison de la charge de l’ensemble de l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité, associée à une mauvaise expérience utilisateur pour les utilisateurs qui s’adaptent au travail à domicile.
 
-Certaines des protections qui ont traditionnellement été fournies par le routage du trafic via un réseau d’entreprise sont fournies par les applications cloud auxquelles vos utilisateurs accèdent. Si vous avez atteint cette étape dans cet article, vous avez implémenté un ensemble de contrôles de sécurité cloud sophistiqués pour Microsoft 365 services et données. Une fois ces contrôles en place, vous pouvez être prêt à acheminer le trafic des utilisateurs distants directement vers Office 365. Si vous avez toujours besoin d’un lien VPN pour accéder à d’autres applications, vous pouvez améliorer considérablement vos performances et votre expérience utilisateur en implémentant le tunneling fractionné. Une fois que vous avez obtenu un accord au sein de votre organisation, cela peut être effectué en une journée par une équipe réseau bien coordonnée.
+Certaines des protections qui ont traditionnellement été fournies par le routage du trafic via un réseau d’entreprise sont fournies par les applications cloud auxquelles vos utilisateurs accèdent. Si vous avez atteint cette étape dans cet article, vous avez implémenté un ensemble de contrôles de sécurité cloud sophistiqués pour les services et les données Microsoft 365. Une fois ces contrôles en place, vous pouvez être prêt à acheminer le trafic des utilisateurs distants directement vers Office 365. Si vous avez toujours besoin d’un lien VPN pour accéder à d’autres applications, vous pouvez améliorer considérablement vos performances et votre expérience utilisateur en implémentant le tunneling fractionné. Une fois que vous avez obtenu un accord au sein de votre organisation, cela peut être effectué en une journée par une équipe réseau bien coordonnée.
 
 Pour plus d’informations, consultez ces ressources sur Docs :
 
@@ -205,14 +205,14 @@ La formation des utilisateurs peut faire gagner beaucoup de temps et de frustrat
 
 Le [Manuel de la campagne de cybersécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’École Harvard Kennedy fournit d’excellents conseils sur l’établissement d’une culture forte de la sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 
-Microsoft 365 fournit les ressources suivantes pour informer les utilisateurs de votre organisation :
+Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 
 ****
 
 |Concept|Ressources|
 |---|---|
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/) <p>Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs finaux de votre organisation.|
-|Sécurité Microsoft 365|[module Learning : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
+|Sécurité Microsoft 365|[Module d’apprentissage : Sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée auprès de votre organisation.|
 
 En plus de ces conseils, Microsoft recommande à vos utilisateurs d’effectuer les actions décrites dans cet article : [Protéger votre compte et vos appareils contre les pirates et les programmes malveillants](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Ces actions incluent :
@@ -227,13 +227,13 @@ Microsoft recommande également aux utilisateurs de protéger leurs comptes de m
 
 - [Protéger votre compte Gmail avec la vérification en 2 étapes](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11 : Démarrage avec Microsoft Defender for Cloud Apps
+## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11 : Bien démarrer avec Microsoft Defender for Cloud Apps
 
-[Microsoft Defender for Cloud Apps](/cloud-app-security) offre une visibilité enrichie, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre les cybermenaces dans tous vos services cloud. Une fois que vous avez commencé à utiliser Defender pour le cloud Apps, les stratégies de détection d’anomalie sont automatiquement activées, mais Defender pour le cloud Apps a une période d’apprentissage initiale de sept jours pendant laquelle toutes les alertes de détection d’anomalies ne sont pas déclenchées.
+[Microsoft Defender for Cloud Apps](/cloud-app-security) offre une visibilité enrichie, un contrôle sur le déplacement des données et des analyses sophistiquées pour identifier et combattre les cybermenaces dans tous vos services cloud. Une fois que vous avez commencé à utiliser Defender pour Cloud Apps, les stratégies de détection d’anomalies sont automatiquement activées, mais Defender pour Cloud Apps a une période d’apprentissage initiale de sept jours pendant laquelle toutes les alertes de détection d’anomalies ne sont pas déclenchées.
 
-Démarrage maintenant avec Defender pour le cloud Apps. Vous pourrez ensuite configurer des contrôles et une surveillance plus sophistiqués.
+Commencez maintenant à utiliser Defender pour Cloud Apps. Vous pourrez ensuite configurer des contrôles et une surveillance plus sophistiqués.
 
-- [Démarrage rapide : Démarrage avec Defender pour le cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Démarrage rapide : Bien démarrer avec Defender pour Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
 - [Obtenir une analyse comportementale instantanée et la détection des anomalies](/cloud-app-security/anomaly-detection-policy)
 - [En savoir plus sur Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [Passer en revue les nouvelles fonctionnalités](/cloud-app-security/release-notes)
@@ -243,11 +243,11 @@ Démarrage maintenant avec Defender pour le cloud Apps. Vous pourrez ensuite con
 
 Microsoft 365 inclut plusieurs façons de surveiller l’état et de prendre les mesures appropriées. Votre meilleur point de départ est le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, où vous pouvez afficher le [score de sécurité Microsoft](./defender/microsoft-secure-score.md) de votre organisation, ainsi que toutes les alertes ou entités qui nécessitent votre attention.
 
-- [Démarrage avec le portail Microsoft 365 Defender](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
-- [Consultez les portails de sécurité dans Microsoft 365](./defender/portals.md)
+- [Prise en main du portail Microsoft 365 Defender](./defender/microsoft-365-defender-portal.md)
+- [Voir les portails de sécurité dans Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Félicitations ! Vous avez rapidement implémenté certaines des protections de sécurité les plus importantes et votre organisation est beaucoup plus sécurisée. Vous êtes maintenant prêt à aller encore plus loin avec les fonctionnalités de protection contre les menaces (y compris les Microsoft Defender pour point de terminaison), les fonctionnalités de classification et de protection des données et la sécurisation des comptes d’administration. Pour obtenir un ensemble plus approfondi et méthodique de recommandations de sécurité pour Microsoft 365, consultez [Microsoft 365 Security for Business Decision Makers (BDMs).](Microsoft-365-security-for-bdm.md)
+Félicitations ! Vous avez rapidement implémenté certaines des protections de sécurité les plus importantes et votre organisation est beaucoup plus sécurisée. Vous êtes maintenant prêt à aller encore plus loin avec les fonctionnalités de protection contre les menaces (y compris les Microsoft Defender pour point de terminaison), les fonctionnalités de classification et de protection des données et la sécurisation des comptes d’administration. Pour obtenir un ensemble plus approfondi et méthodique de recommandations de sécurité pour Microsoft 365, consultez [Les décideurs en matière de sécurité pour les entreprises (BDM) de Microsoft 365](Microsoft-365-security-for-bdm.md).
 
-Visitez également la nouvelle Defender pour le cloud microsoft sur [docs.microsoft.com/security](/security).
+Visitez également le nouveau Defender pour cloud de Microsoft sur [docs.microsoft.com/security](/security).
