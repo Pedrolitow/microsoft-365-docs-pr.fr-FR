@@ -11,18 +11,16 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: En savoir plus sur les étiquettes et stratégies par défaut de Protection des données Microsoft Purview pour classer et protéger le contenu sensible.
-ms.openlocfilehash: a17ba3e87e219d19d8f88f413bf446664aa094a2
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 46718c5f3ecb79cf112012064d0fbf688e21f6d0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444177"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629418"
 ---
 # <a name="default-labels-and-policies-to-protect-your-data"></a>Étiquettes et stratégies par défaut pour protéger vos données
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les clients éligibles peuvent activer les étiquettes et politiques par défaut pour Protection des données Microsoft Purview : 
 
@@ -131,18 +129,39 @@ Si vous souhaitez modifier la configuration de l'étiquetage automatique côté 
 
 ## <a name="service-side-auto-labeling"></a>Étiquetage automatique côté service 
 
-L'étiquetage automatique côté service permet d'étiqueter les documents sensibles au repos et les e-mails en transit. La stratégie d'étiquetage automatique côté service par défaut crée une stratégie en mode simulation pour les documents stockés dans tous les sites SharePoint ou OneDrive et tous les e-mails envoyés via Exchange Online. En mode simulation, les éléments ne sont pas réellement étiquetés tant que vous n'activez pas la stratégie. Le mode simulation vous permet de prévisualiser les éléments qui seraient étiquetés lorsque la stratégie est activée, de sorte que vous ayez confiance dans la fonction d'étiquetage avant de déployer la stratégie sur votre locataire pour un étiquetage réel. 
+L'étiquetage automatique côté service permet d'étiqueter les documents sensibles au repos et les e-mails en transit. La stratégie d’étiquetage automatique côté service par défaut crée des stratégies qui s’exécutent en mode simulation pour les documents stockés dans tous les sites SharePoint ou OneDrive, ainsi que tous les e-mails envoyés via Exchange Online. 
 
-L'étiquetage automatique côté service par défaut a la configuration suivante : 
+En mode simulation, les éléments ne sont pas étiquetés tant que la stratégie n’est pas activée. Vous pouvez activer manuellement la stratégie ou, à moins que vous ne modifiiez le paramètre par défaut, la stratégie est automatiquement activée si aucune modification n’est apportée à la stratégie dans un délai défini de jours à compter de la fin de la simulation.
+
+> [!NOTE]
+> L’activation automatique des stratégies d’étiquetage automatique est nouvelle et progressivement déployée pour les nouvelles stratégies d’étiquetage automatique. Vous risquez de ne pas voir cette configuration immédiatement ou pour toutes les stratégies.
+
+Dans la plupart des cas, il faut compter 7 jours avant l’activation automatique d’une stratégie qui n’a pas été modifiée. Toutefois, l’activation prendra jusqu’à 25 jours pour les clients qui ont créé un compte après le 23 juin 2022 (inclus), puis ce délai passera à 7 jours après la modification de la stratégie.
+
+Le mode simulation vous permet de prévisualiser les éléments qui seraient étiquetés lorsque la stratégie est activée, de sorte que vous ayez confiance dans la fonction d'étiquetage avant de déployer la stratégie sur votre locataire pour un étiquetage réel. 
+
+Les stratégies d’étiquetage automatique côté service par défaut ont la configuration suivante : 
+
+Pour tous les clients :
 
 - S’il existe entre 1 et 9 instances de numéros de carte de crédit trouvés dans un document ou un e-mail, appliquez l’étiquette de confidentialité **Confidentiel** \ **Tout le monde (sans restriction)**
-
+    
 - S’il existe au moins 10 instances de numéros de carte de crédit dans un document ou un e-mail, appliquez l’étiquette de confidentialité **Confidentiel** \ **Tous les employés** 
 
 > [!NOTE]
 > Si nous avons détecté que vous avez publié vos propres étiquettes de sensibilité, nous vous inviterons à sélectionner l'une de vos propres étiquettes pour votre politique d'étiquetage automatique.
 
-Une fois la simulation terminée, examinez les résultats et, si vous en êtes satisfait, activez la stratégie.
+Concernant les clients qui ont créé un compte après le 23 juin 2022 (inclus), et ceux pour lesquels le client Microsoft 365 se trouve dans la région des États-Unis :
+
+- S’il existe entre 1 et 9 instances de données personnelles aux États-Unis et que des document ou des e-mails comportent des noms complets, appliquez l’étiquette de confidentialité **Confidentiel** \ **Tout le monde (sans restriction)**
+
+- S’il existe au moins 10 instances de données personnelles aux États-Unis et que des document ou des e-mails comportent des noms complets, appliquez l’étiquette de confidentialité **Confidentiel** \ **tous les employés** 
+
+Les clients qui ont créé un compte après le 23 juin 2022 (inclus) ont deux stratégies d’étiquetage automatique pour chaque paramètre. Une stratégie concerne l’emplacement Exchange et l’autre les emplacements SharePoint et OneDrive. Bien que les stratégies soient créées en même temps, la simulation n’est pas immédiatement activée pour SharePoint et OneDrive :
+- Emplacement Exchange : la stratégie d’étiquetage automatique est créée et démarre immédiatement la simulation.
+- Emplacements SharePoint et OneDrive : la stratégie d’étiquetage automatique est créée, mais attend 25 jours avant de démarrer automatiquement la simulation. Ce délai vous donne le temps de créer et d’enregistrer des fichiers à ces emplacements. 
+
+Une fois la simulation terminée, passez en revue les résultats et, si vous en êtes satisfait, activez les stratégies. Déploiement lent à partir du 23 juin 2022, par défaut, les stratégies sont automatiquement activées si elles ne sont pas modifiées dans le délai défini (25 jours initialement pour les nouveaux clients, sinon 7 jours).
 
 Pour plus d'informations sur le mode simulation, voir [En savoir plus sur le mode simulation](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
