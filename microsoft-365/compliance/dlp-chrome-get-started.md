@@ -1,5 +1,5 @@
 ---
-title: Prise en main de l’extension de la conformité Microsoft
+title: Prise en main de l’extension Microsoft Purview
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,24 +19,24 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: 1c4c0a79f65f8a58ed30a9170256ef93b2bb4cef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Préparez, puis déployez l’extension Microsoft Purview.
+ms.openlocfilehash: 9593b75ea9bb858e9cd770ec4f40f4e6d7667a2e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681807"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622940"
 ---
-# <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
+# <a name="get-started-with-microsoft-purview-extension"></a>Démarrage avec l’Extension Microsoft Purview
 
-Utilisez les procédures ci-après pour déployer l’extension de la conformité Microsoft.
+Utilisez les procédures ci-après pour déployer l’extension Microsoft Purview.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour utiliser l’extension de la conformité Microsoft, l’appareil doit être intégré à la protection contre la perte de données du point de terminaison. Consultez ces articles si vous êtes novice en matière de DLP ou de DLP des points d'extrémité.
+Pour utiliser l’extension Microsoft Purview, l’appareil doit être intégré à la protection contre la perte de données du point de terminaison. Consultez ces articles si vous êtes novice en matière de DLP ou de DLP des points d'extrémité.
 
-- [En savoir plus sur l’extension de la conformité Microsoft](dlp-chrome-learn-about.md)
-- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur l’extension Microsoft Purview](dlp-chrome-learn-about.md)
+- [En savoir plus sur la protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
@@ -49,7 +49,7 @@ Pour utiliser l’extension de la conformité Microsoft, l’appareil doit être
 
 Avant de commencer, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Pour accéder à la fonctionnalité de points de terminaison DLP et l’utiliser, vous devez disposer de l’un de ces abonnements ou modules complémentaires.
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
 - Microsoft 365 E5 Conformité
 - Microsoft 365 A5 Conformité
@@ -60,7 +60,7 @@ Pour obtenir des instructions détaillées sur les licences, consultez [instruct
 
 - Votre organisation doit avoir une licence pour la DLP de point de terminaison
 - Vos appareils doivent exécuter Windows 10 x64 build 1809 ou version ultérieure.
-- La version client Antimalware doit être 4.18.2101.9 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application **Sécurité Windows**, sélectionnez l’icône **Paramètres**, puis **À propos de**.
+- L’appareil doit avoir la version du client Antimalware 4.18.2202.x ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application **Sécurité Windows**, sélectionnez l’icône **Paramètres**, puis **À propos de**.
 
 
 ### <a name="permissions"></a>Autorisations
@@ -79,14 +79,14 @@ Les données de la protection contre la perte de données du point de terminaiso
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -96,7 +96,7 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
 ### <a name="overall-installation-workflow"></a>Flux de travail d’installation global
 
-Le déploiement de l’extension de la conformité Microsoft est un processus en plusieurs phases. Vous pouvez choisir de l'installer sur un ordinateur à la fois, ou d'utiliser Microsoft Endpoint Manager ou stratégie de groupe pour les déploiements à l'échelle de l'organisation.
+Le déploiement de l’extension est un processus en plusieurs phases. Vous pouvez choisir de l'installer sur un ordinateur à la fois, ou d'utiliser Microsoft Endpoint Manager ou stratégie de groupe pour les déploiements à l'échelle de l'organisation.
 
 1. [Préparez vos appareils](#prepare-your-devices).
 2. [Configuration de base ordinateur simple Selfhost](#basic-setup-single-machine-selfhost)
@@ -108,7 +108,7 @@ Le déploiement de l’extension de la conformité Microsoft est un processus en
 
 ### <a name="prepare-infrastructure"></a>Préparation de l'infrastructure
 
-Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Windows 10 contrôlés, vous devez supprimer Google Chrome des listes des applications et des navigateurs non autorisés. Pour plus d'informations, voir [Navigateurs non autorisés ](dlp-configure-endpoint-settings.md#unallowed-browsers). Si vous ne le déployez que sur quelques appareils, vous pouvez laisser Chrome sur la liste des navigateurs non autorisés ou des applications non autorisées. L'extension de conformité Microsoft contournera les restrictions des deux listes pour les ordinateurs sur lesquels elle est installée.
+Si vous déployez l'extension sur tous vos appareils Windows 10 contrôlés, vous devez supprimer Google Chrome des listes des applications et des navigateurs non autorisés. Pour plus d'informations, voir [Navigateurs non autorisés ](dlp-configure-endpoint-settings.md#unallowed-browsers). Si vous ne le déployez que sur quelques appareils, vous pouvez laisser Chrome sur la liste des navigateurs non autorisés ou des applications non autorisées. L'extension contournera les restrictions des deux listes pour les ordinateurs sur lesquels elle est installée.
 
 ### <a name="prepare-your-devices"></a>Préparer vos appareils
 
@@ -121,44 +121,17 @@ Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Wi
 
 Il s'agit de la méthode recommandée.
 
-1. Connectez-vous à l'ordinateur Windows 10 sur lequel vous souhaitez installer l'extension de conformité Microsoft, puis exécutez ce script PowerShell en tant qu'administrateur.
+1. Accédez à [Extension Microsoft Purview : Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. Accédez à [Extension de la conformité Microsoft : Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
-
-3. Installez l’extension à l’aide des instructions de la page Chrome Web Store.
+2. Installez l’extension à l’aide des instructions de la page Chrome Web Store.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Déployez à l'aide de Microsoft Endpoint Configuration Manager
 
 Utilisez cette méthode de configuration pour les déploiements à l'échelle de l'entreprise.
 
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Activation de la clé de Registre requise via Microsoft Endpoint Manager
-
-1. Créez un script PowerShell avec le contenu suivant :
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. Connectez-vous au [Centre d’administration Microsoft Endpoint Manager](https://endpoint.microsoft.com).
-
-3. Accédez à **Appareils** > **Scripts** puis sélectionnez **Ajouter**.
-
-4. Accédez à l’emplacement du script créé lorsque vous y avez été invité.
-
-5. Sélectionnez les paramètres suivants :
-    1. Exécuter ce script à l’aide des informations d’identification connectées : NON
-    1. Appliquer la vérification de la signature de script : NON
-    1. Exécuter un script dans l’hôte PowerShell 64 bits : OUI
-
-6. Sélectionnez les groupes d’appareils appropriés et appliquez la stratégie.
-
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Étapes de l'installation forcée de Microsoft Endpoint Manager
 
-Avant d'ajouter l'extension de la conformité Microsoft à la liste des extensions installées de force, il est important d'ingérer l'ADMX de Chrome. Les étapes de ce processus dans Microsoft Endpoint Manager sont documentées par Google : [Gérer le navigateur Chrome avec Microsoft Intune - Aide de Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Avant d'ajouter l'extension à la liste des extensions installées de force, il est important d'ingérer l'ADMX de Chrome. Les étapes de ce processus dans Microsoft Endpoint Manager sont documentées par Google : [Gérer le navigateur Chrome avec Microsoft Intune - Aide de Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  Après avoir ingéré l’ADMX, vous pouvez suivre les étapes ci-dessous pour créer un profil de configuration pour cette extension.
 
@@ -186,39 +159,7 @@ Avant d'ajouter l'extension de la conformité Microsoft à la liste des extensio
 
 ### <a name="deploy-using-group-policy"></a>Déployer à l’aide d’une stratégie de groupe
 
-Si vous ne voulez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser des stratégies de groupe pour déployer l’extension de la conformité Microsoft au sein de votre organisation
-
-1. Vos appareils doivent être gérables via une stratégie de groupe, et vous devez importer tous les ADMX Chrome dans le Store central de stratégies de groupe. Pour plus d’informations, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
-
-2. Créez un script PowerShell en utilisant cette commande PowerShell :
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. Ouvrez la **Console de gestion des stratégies de groupe** et accédez à votre unité d’organisation.
-
-4. Cliquez avec le bouton droit et sélectionnez **Créer un GPO dans ce domaine et lier ici**. Lorsque vous y êtes invité, attribuez un nom descriptif à cet objet de stratégie de groupe (GPO) et terminez sa création.
-
-5. Cliquez avec le bouton droit sur le GPO, puis sélectionnez **Modifier**.
-
-6. Accédez à **Configuration de l'ordinateur** > **Préférences** > **Panneau de configuration Paramètres** > **Tâches planifiées**.
-
-7. Créez une tâche immédiate en faisant un clic droit et en sélectionnant **Nouveau** > **Tâche immédiate (au moins Windows 7)**.
-
-8. Donnez un nom et une description à la tâche.
-
-9. Sélectionnez le compte correspondant pour exécuter la tâche immédiate (par exemple, NT Authority).
-
-10. Sélectionnez **Exécuter avec les autorisations maximales**.
-
-11. Configurez la stratégie pour Windows 10.
-
-12. Dans l’onglet **Actions** , sélectionnez l’action **Démarrer un programme**.
-
-13. Entrez le chemin d’accès au programme/script créé à l’étape 1.
-
-14. Sélectionnez **Appliquer**.
+Si vous ne souhaitez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser des stratégies de groupe pour déployer l’extension au sein de votre organisation.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Ajout de l'extension Chrome à la liste de ForceInstall
 
@@ -263,13 +204,13 @@ Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applicatio
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Utiliser le tableau de bord de gestion des alertes pour afficher les alertes DLP dans Chrome
 
-1. Ouvrez la page **Protection contre la perte de données** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> puis sélectionnez **Alertes**.
+1. Ouvrez la page **Protection contre la perte de données** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portail de conformité Microsoft Purview</a>, puis sélectionnez **Alertes**.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Affichage de données DLP dans l’Explorateur d’activités
 
-1. Ouvrez la [page Classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> puis choisissez **Explorateur d’activités**.
+1. Ouvrez la page [Classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portail de conformité Microsoft Purview</a>, puis choisissez **Explorateur d’activités**.
 
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
 
