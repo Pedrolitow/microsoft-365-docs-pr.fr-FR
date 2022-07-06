@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview les alertes et les stratégies d’alerte du Gestionnaire de conformité
+title: Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,21 +17,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment créer des alertes pour les activités dans Microsoft Purview Gestionnaire de conformité qui peuvent avoir un impact sur votre score de conformité.
-ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: Découvrez comment créer des alertes pour les activités dans le Gestionnaire de conformité Microsoft Purview qui peuvent avoir un impact sur votre score de conformité.
+ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839446"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642237"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview les alertes et les stratégies d’alerte du Gestionnaire de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview
 
 **Dans cet article :** Découvrez comment **définir des alertes** pour certaines activités dans le Gestionnaire de conformité, comment gérer les alertes et comment **créer des stratégies d’alerte** pour définir des conditions d’alerte.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Aperçu
 Le Gestionnaire de conformité peut vous avertir des modifications dès qu’elles se produisent afin que vous puissiez suivre vos objectifs de conformité. Par exemple, vous pouvez configurer des alertes pour vous informer quand la valeur de score d’une action d’amélioration a augmenté ou diminué en raison d’un changement de configuration dans votre locataire, ou lorsqu’une action d’amélioration a été affectée à un utilisateur pour effectuer un travail d’implémentation ou de test. Affichez les [types d’événements](#create-an-alert-policy) pour lesquels vous pouvez créer des alertes.
 
 Pour créer des alertes, vous devez d’abord configurer une stratégie d’alerte pour décrire les conditions qui déclenchent une alerte et la fréquence des notifications. Lorsque nous détectons une correspondance avec vos conditions de stratégie, vous recevez une notification par e-mail avec des détails afin que vous puissiez déterminer s’il faut examiner ou prendre d’autres mesures.
@@ -41,7 +39,7 @@ Toutes les alertes sont répertoriées sous l’onglet **Alertes** dans le Gesti
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Présentation des pages Alertes et Stratégies d’alerte
 
 > [!IMPORTANT]
-> Les utilisateurs doivent avoir le rôle **lecteur sécurité** dans Azure Active Directory (AD) afin d’accéder aux pages **Alertes** et **Stratégies d’alerte** dans le Gestionnaire de conformité. Des rôles supplémentaires de gestionnaire de sécurité et de conformité sont nécessaires pour utiliser des alertes et des stratégies d’alerte. Obtenez les détails ci-dessous dans [Les autorisations de stratégie d’alerte](#alert-policy-permissions).
+> Les utilisateurs doivent avoir le rôle **lecteur Sécurité** dans Azure Active Directory (AD) pour accéder aux pages **Alertes** et **Stratégies d’alerte** dans le Gestionnaire de conformité. Des rôles supplémentaires de gestionnaire de sécurité et de conformité sont nécessaires pour utiliser des alertes et des stratégies d’alerte. Obtenez les détails ci-dessous dans [Les autorisations de stratégie d’alerte](#alert-policy-permissions).
 
 ### <a name="alert-policies-page"></a>Page Stratégies d’alerte
 
@@ -191,7 +189,7 @@ Vous pouvez filtrer votre vue des alertes en sélectionnant la commande **Filtre
 
 - Type d’événement
 - Severity
-- Statut
+- État
 - Utilisateur affecté à
 - Date de détection
 - Nom de la stratégie

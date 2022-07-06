@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Découvrez comment la gestion des enregistrements Microsoft Purview prend en charge les éléments à valeur élevée pour les exigences de conservation des enregistrements métier, légales ou réglementaires.
-ms.openlocfilehash: b14c622d1468cdb91ad1ac8e58c184e650ebbe6c
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1a9d37f138647a36fb7440f15fd74851957b542f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284861"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642325"
 ---
 # <a name="learn-about-records-management"></a>Découvrez la gestion des enregistrements
 
@@ -34,8 +34,6 @@ ms.locfileid: "65284861"
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les organisations de tous types ont besoin d'une solution de gestion des documents pour gérer les documents réglementaires, juridiques et critiques pour l'entreprise dans l'ensemble de leurs données d'entreprise. La gestion des enregistrements pour Microsoft Purview aide une organisation à gérer ses obligations légales, lui donne la possibilité de démontrer sa conformité aux réglementations et augmente l'efficacité en éliminant régulièrement les éléments qui ne doivent plus être conservés, qui n'ont plus de valeur ou qui ne sont plus nécessaires à l'activité de l'entreprise.
 

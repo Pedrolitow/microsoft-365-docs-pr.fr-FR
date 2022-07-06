@@ -17,18 +17,16 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Découvrez comment l’onglet Décider dans eDiscovery (Premium) fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de fichiers de cas de révision.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: abf5ef38f253a99709ad3cb3c02793e36db5e8fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621786"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642039"
 ---
-# <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Les décisions basées sur la pertinence ont pour résultat eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Décisions basées sur les résultats de pertinence dans eDiscovery (Premium)
   
-Dans le module Pertinence dans eDiscovery (Premium), l’onglet Décider fournit des informations supplémentaires pour afficher et utiliser des statistiques de prise de décision pour déterminer la taille de l’ensemble de fichiers de cas de révision.
+Dans le module Pertinence dans eDiscovery (Premium), l’onglet Décider fournit des informations supplémentaires pour afficher et utiliser des statistiques de prise de décision pour déterminer la taille de l’ensemble de fichiers de cas d’examen.
   
 ## <a name="using-the-decide-tab"></a>Utilisation de l’onglet Décider
 

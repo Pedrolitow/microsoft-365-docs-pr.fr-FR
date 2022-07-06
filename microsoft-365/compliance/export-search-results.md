@@ -20,26 +20,24 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: Exportez les résultats de la recherche à partir d’une recherche de contenu dans le portail de conformité Microsoft Purview vers un ordinateur local. Les résultats de l’e-mail sont exportés sous forme de fichiers PST. Le contenu des sites SharePoint et OneDrive Entreprise est exporté en tant que documents Office natifs.
+description: Exportez les résultats de la recherche à partir d’une recherche de contenu dans le portail de conformité Microsoft Purview vers un ordinateur local. Les résultats de l’e-mail sont exportés sous forme de fichiers PST. Le contenu des sites SharePoint et OneDrive Entreprise sont exportés en tant que documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5550bb8ebe7f90bbcbb87df8ca04ff4d83e76c2c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a73120b697441255e6ac53c5bd371d56931d8644
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094523"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641579"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Une fois la recherche de contenu exécutée, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive Entreprise, des copies de documents Office natifs sont exportées. D’autres documents et rapports sont inclus dans les résultats de recherche exportés.
+Une fois la recherche de contenu exécutée, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à partir de SharePoint et de sites OneDrive Entreprise, des copies de documents Office natifs sont exportées. D’autres documents et rapports sont inclus dans les résultats de recherche exportés.
   
-L’exportation des résultats d’une recherche de contenu implique la préparation des résultats, puis leur téléchargement sur un ordinateur local. Ces étapes d’exportation des résultats de recherche s’appliquent également à l’exportation des résultats d’une recherche associée à des cas de découverte électronique Microsoft Purview (Standard).
+L’exportation des résultats d’une recherche de contenu implique la préparation des résultats, puis leur téléchargement sur un ordinateur local. Ces étapes d’exportation des résultats de recherche s’appliquent également à l’exportation des résultats d’une recherche associée à des cas Microsoft Purview eDiscovery (Standard).
   
 ## <a name="before-you-export-search-results"></a>Avant d’exporter les résultats de la recherche
 
-- Pour exporter les résultats de la recherche, vous devez disposer du rôle de gestion d’exportation dans le portail de conformité Microsoft Purview. Ce rôle est affecté au groupe de rôles Gestionnaire de découverte électronique intégré. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour exporter les résultats de la recherche, vous devez disposer du rôle De gestion des exportations dans portail de conformité Microsoft Purview. Ce rôle est affecté au groupe de rôles Gestionnaire de découverte électronique intégré. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
 
 - L’ordinateur que vous utilisez pour exporter les résultats de recherche doit répondre aux exigences système suivantes :
   
@@ -47,12 +45,12 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   
   - Microsoft .NET Framework 4.7 ou version ultérieure
   
-- Vous devez utiliser Microsoft Edge <sup>1</sup> pour exécuter l’outil d’exportation eDiscovery. L’utilisation d’Internet Explorer 11 pour exporter les résultats de la recherche n’est plus prise <sup>en charge2</sup>.
+- Vous devez utiliser Microsoft Edge<sup>1</sup> pour exécuter l’outil d’exportation eDiscovery. L’utilisation d’Internet Explorer 11 pour exporter les résultats de la recherche n’est plus prise en charge<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> Suite aux modifications récentes apportées à Microsoft Edge, ClickOnce prise en charge n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de ClickOnce prise en charge dans Edge, consultez [Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge](configure-edge-to-export-search-results.md). En outre, Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.
+  > <sup>1</sup> Suite aux modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge de ClickOnce dans Edge, consultez [Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge](configure-edge-to-export-search-results.md). En outre, Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.
   >
-  > <sup>2</sup> À compter d’août 2021, Microsoft 365 applications et services ne prendront plus en charge Internet Explorer 11 (IE11) et les utilisateurs peuvent avoir une expérience dégradée ou ne pas pouvoir se connecter à ces applications et services. Ces applications et services seront progressivement supprimés au cours des semaines et des mois à venir pour garantir une fin de support fluide. Chaque application et service sont progressivement supprimés selon des planifications indépendantes. Pour plus d’informations, consultez ce [billet de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+  > <sup>2</sup> À compter d’août 2021, les applications et services Microsoft 365 ne prendront plus en charge Internet Explorer 11 (IE11) et les utilisateurs peuvent avoir une expérience dégradée ou ne pas pouvoir se connecter à ces applications et services. Ces applications et services seront progressivement supprimés au cours des semaines et des mois à venir pour garantir une fin de support fluide. Chaque application et service sont progressivement supprimés selon des planifications indépendantes. Pour plus d’informations, consultez ce [billet de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - L’outil d’exportation eDiscovery que vous utilisez à l’étape 2 pour télécharger les résultats de la recherche ne prend pas en charge l’automatisation (à l’aide d’un script ou d’applets de commande en cours d’exécution). Nous vous recommandons vivement de ne pas automatiser le processus de préparation à l’étape 1 ou le processus de téléchargement à l’étape 2. Si vous automatiser l’un de ces processus, Support Microsoft ne fournira pas d’assistance si vous rencontrez des problèmes.
 
@@ -62,7 +60,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   
 - Lorsque vous exportez des résultats de recherche, les données sont temporairement stockées dans un emplacement de stockage Azure fourni par Microsoft dans le cloud Microsoft avant d’être téléchargées sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, qui est **\*.blob.core.windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données des résultats de la recherche sont supprimées de l’emplacement stockage Azure deux semaines après leur création. 
   
-- Si votre organisation utilise un serveur proxy pour communiquer avec Internet, vous devez définir les paramètres du serveur proxy sur l’ordinateur que vous utilisez pour exporter les résultats de recherche (afin que l’outil d’exportation puisse être authentifié par votre serveur proxy). Pour ce faire, ouvrez le fichier *machine.config* à l’emplacement correspondant à votre version de Windows. 
+- Si votre organisation utilise un serveur proxy pour communiquer avec Internet, vous devez définir les paramètres du serveur proxy sur l’ordinateur que vous utilisez pour exporter les résultats de recherche (afin que l’outil d’exportation puisse être authentifié par votre serveur proxy). Pour ce faire, ouvrez le fichier  *machine.config*  à l’emplacement correspondant à votre version de Windows. 
   
   - **32 bits :** `%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
   
@@ -107,9 +105,9 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
 
       Consultez la section [Plus d’informations](#more-information) pour obtenir une description de la façon dont les éléments partiellement indexés sont exportés. Pour plus d’informations sur les éléments partiellement indexés, consultez [Éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md).
 
-4. Sous **Exporter Exchange contenu,** choisissez l’une des options suivantes :
+4. Sous **Exporter le contenu Exchange,** choisissez l’une des options suivantes :
   
-   ![Exchange options.](../media/ExchangeExportOptions.png)
+   ![Options Exchange.](../media/ExchangeExportOptions.png)
 
     - **Un fichier PST pour chaque boîte aux lettres** : exporte un fichier PST pour chaque boîte aux lettres utilisateur qui contient les résultats de la recherche. Tous les résultats de la boîte aux lettres d’archivage de l’utilisateur sont inclus dans le même fichier PST. Cette option reproduit la structure de dossiers de boîte aux lettres à partir de la boîte aux lettres source.
   
@@ -123,13 +121,13 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
 
    ![Configurez d’autres options d’exportation.](../media/OtherExportOptions.png)
 
-   1. Activez la case à cocher **Activer la déduplication pour Exchange contenu** afin d’exclure les messages en double.
+   1. Activez la case à cocher **Activer la déduplication du contenu Exchange pour** exclure les messages en double.
   
       Si vous sélectionnez cette option, une seule copie d’un message est exportée, même si plusieurs copies du même message sont trouvées dans les boîtes aux lettres qui ont fait l’objet d’une recherche. Le rapport des résultats d’exportation (qui est un fichier nommé Results.csv) contient une ligne pour chaque copie d’un message en double afin que vous puissiez identifier les boîtes aux lettres (ou dossiers publics) qui contiennent une copie du message en double. Pour plus d’informations sur la déduplication et la façon dont les éléments en double sont identifiés, consultez [Déduplication dans les résultats de la recherche eDiscovery](de-duplication-in-ediscovery-search-results.md).
   
-   2. Cochez la case **Inclure les versions des fichiers SharePoint** pour exporter toutes les versions de SharePoint documents. Cette option s’affiche uniquement si les sources de contenu de la recherche incluent des sites SharePoint ou OneDrive Entreprise.
+   2. Cochez la case **Inclure les versions des fichiers SharePoint pour** exporter toutes les versions de documents SharePoint. Cette option s’affiche uniquement si les sources de contenu de la recherche incluent Des sites SharePoint ou OneDrive Entreprise.
   
-   3. Sélectionnez les **fichiers Exporter dans un dossier compressé (compressé). Inclut uniquement les messages individuels et la case à cocher SharePoint documents** pour exporter les résultats de la recherche vers des dossiers compressés. Cette option s’affiche uniquement lorsque vous choisissez d’exporter Exchange éléments en tant que messages individuels et lorsque les résultats de la recherche incluent SharePoint ou OneDrive documents. Cette option est principalement utilisée pour contourner la limite de 260 caractères dans Windows noms de chemin d’accès de fichier lorsque des éléments sont exportés. Consultez les « Noms de fichiers des éléments exportés » dans la section [Plus d’informations](#more-information) .
+   3. Sélectionnez les **fichiers Exporter dans un dossier compressé (compressé). Inclut uniquement les messages individuels et** la case à cocher documents SharePoint permettant d’exporter les résultats de la recherche vers des dossiers compressés. Cette option s’affiche uniquement lorsque vous choisissez d’exporter des éléments Exchange en tant que messages individuels et lorsque les résultats de la recherche incluent des documents SharePoint ou OneDrive. Cette option est principalement utilisée pour contourner la limite de 260 caractères dans les noms de chemins d’accès aux fichiers Windows lorsque des éléments sont exportés. Consultez les « Noms de fichiers des éléments exportés » dans la section [Plus d’informations](#more-information) .
    > [!IMPORTANT]
    > L’exportation de fichiers dans un dossier compressé (compressé) augmente les temps d’exportation.
   
@@ -233,7 +231,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
   - **Erreurs et avertissements** Contient des erreurs et des avertissements pour les fichiers rencontrés lors de l’exportation. Consultez la colonne Détails de l’erreur pour obtenir des informations spécifiques à chaque erreur ou avertissement individuel.
 
-  - **Éléments ignorés** Lorsque vous exportez des résultats de recherche à partir de sites SharePoint et OneDrive Entreprise, l’exportation inclut généralement un rapport d’éléments ignorés (SkippedItems.csv). Les éléments cités dans ce rapport sont généralement des éléments qui ne seront pas téléchargés, tels qu’un dossier ou un ensemble de documents. Ne pas exporter ces types d’éléments est par conception. Pour les autres éléments qui ont été ignorés, les champs « Type d’erreur » et « Détails de l’erreur » dans le rapport d’éléments ignorés indiquent la raison pour laquelle l’élément a été ignoré et n’a pas été téléchargé avec les autres résultats de recherche.
+  - **Éléments ignorés** Lorsque vous exportez des résultats de recherche à partir de SharePoint et de sites OneDrive Entreprise, l’exportation inclut généralement un rapport d’éléments ignorés (SkippedItems.csv). Les éléments cités dans ce rapport sont généralement des éléments qui ne seront pas téléchargés, tels qu’un dossier ou un ensemble de documents. Ne pas exporter ces types d’éléments est par conception. Pour les autres éléments qui ont été ignorés, les champs « Type d’erreur » et « Détails de l’erreur » dans le rapport d’éléments ignorés indiquent la raison pour laquelle l’élément a été ignoré et n’a pas été téléchargé avec les autres résultats de recherche.
 
   - **Trace.log** contient des informations de journalisation détaillées sur le processus d’exportation et peut vous aider à détecter les problèmes lors de l’exportation. Si vous ouvrez un ticket avec Support Microsoft à propos d’un problème lié à l’exportation des résultats de recherche, vous pouvez être invité à fournir ce journal de suivi.
   
@@ -254,7 +252,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
     ![Utilisez la troisième option d’exportation pour exporter uniquement des éléments non indexés.](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
-- Lors de l’exportation des résultats de recherche à partir de sites SharePoint ou OneDrive Entreprise, la possibilité d’exporter des éléments non indexés dépend également de l’option d’exportation que vous sélectionnez et si un site qui a fait l’objet d’une recherche contient un élément indexé qui correspond aux critères de recherche. Par exemple, si vous effectuez une recherche sur des sites SharePoint ou OneDrive Entreprise et qu’aucun résultat de recherche n’est trouvé, aucun élément non indexé de ces sites n’est exporté si vous choisissez la deuxième option d’exportation pour exporter des éléments indexés et non indexés. Si un élément indexé d’un site correspond aux critères de recherche, tous les éléments non indexés de ce site sont exportés lors de l’exportation d’éléments indexés et non indexés. L’illustration suivante décrit les options d’exportation selon qu’un site contient un élément indexé qui correspond aux critères de recherche.
+- Lors de l’exportation des résultats de recherche à partir de sites SharePoint ou OneDrive Entreprise, la possibilité d’exporter des éléments non indexés dépend également de l’option d’exportation que vous sélectionnez et si un site qui a été recherché contient un élément indexé qui correspond aux critères de recherche. Par exemple, si vous effectuez une recherche sur des sites SharePoint ou OneDrive Entreprise spécifiques et qu’aucun résultat de recherche n’est trouvé, aucun élément non indexé de ces sites n’est exporté si vous choisissez la deuxième option d’exportation pour exporter des éléments indexés et non indexés. Si un élément indexé d’un site correspond aux critères de recherche, tous les éléments non indexés de ce site sont exportés lors de l’exportation d’éléments indexés et non indexés. L’illustration suivante décrit les options d’exportation selon qu’un site contient un élément indexé qui correspond aux critères de recherche.
 
     ![Choisissez l’option d’exportation selon qu’un site contient un élément indexé qui correspond aux critères de recherche.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
@@ -264,13 +262,13 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
     c. Tous les éléments partiellement indexés de tous les sites de la recherche sont exportés, qu’un site contienne ou non des éléments qui correspondent aux critères de recherche.
 
-    Si vous choisissez d’exporter des éléments partiellement indexés, les éléments de boîte aux lettres partiellement indexés sont exportés dans un fichier PST distinct, quelle que soit l’option que vous choisissez sous **Exporter Exchange contenu.**
+    Si vous choisissez d’exporter des éléments partiellement indexés, les éléments de boîte aux lettres partiellement indexés sont exportés dans un fichier PST distinct, quelle que soit l’option que vous choisissez sous **Exporter le contenu Exchange**.
 
 - Si des éléments partiellement indexés sont retournés dans les résultats de la recherche (car d’autres propriétés d’éléments partiellement indexés correspondent aux critères de recherche), ceux partiellement indexés sont exportés avec les résultats de recherche réguliers. Par conséquent, si vous choisissez d’exporter à la fois les éléments indexés et les éléments partiellement indexés (en sélectionnant **tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons** , l’option d’exportation), les éléments partiellement indexés exportés avec les résultats réguliers sont répertoriés dans le rapport Results.csv. Elles ne sont pas répertoriées dans le rapport items.csv non indexé.
   
 ### <a name="exporting-individual-messages-or-pst-files"></a>Exportation de messages individuels ou de fichiers PST
   
-- Si le nom du chemin d’accès d’un message dépasse la limite de caractères maximale pour Windows, le nom du chemin d’accès du fichier est tronqué. Toutefois, le nom du chemin d’accès du fichier d’origine est répertorié dans le manifeste et le journal des résultats.
+- Si le nom du chemin d’accès d’un message dépasse la limite de caractères maximale pour Windows, le nom du chemin d’accès au fichier est tronqué. Toutefois, le nom du chemin d’accès du fichier d’origine est répertorié dans le manifeste et le journal des résultats.
   
 - Comme expliqué précédemment, les résultats de la recherche par e-mail sont exportés vers un dossier du système de fichiers. Le chemin d’accès au dossier pour les messages individuels réplique le chemin d’accès au dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 » dans la boîte de réception d’un utilisateur se trouve dans le chemin d’accès  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`du dossier.
 
@@ -288,7 +286,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
 - Outre le déchiffrement des pièces jointes de fichier lors de l’exportation des résultats de recherche, vous pouvez également afficher un aperçu du fichier déchiffré lors de l’aperçu des résultats de la recherche. Vous pouvez uniquement afficher le message électronique protégé par des droits après l’avoir exporté.
 
-- À ce stade, la fonctionnalité de déchiffrement lors de l’exportation des résultats de recherche n’inclut pas de contenu chiffré à partir de sites SharePoint et OneDrive Entreprise. Toutefois, le support sera bientôt disponible pour les documents chiffrés avec les technologies de chiffrement Microsoft et stockés dans SharePoint Online et OneDrive Entreprise.
+- Pour l’instant, la fonctionnalité de déchiffrement lors de l’exportation des résultats de recherche n’inclut pas de contenu chiffré à partir de SharePoint et de sites OneDrive Entreprise. Toutefois, le support sera bientôt disponible pour les documents chiffrés avec les technologies de chiffrement Microsoft et stockés dans SharePoint Online et OneDrive Entreprise.
 
 - Si vous devez empêcher quelqu’un de déchiffrer les messages de protection RMS et les pièces jointes de fichiers chiffrés, vous devez créer un groupe de rôles personnalisé (en copiant le groupe de rôles eDiscovery Manager intégré), puis supprimer le rôle de gestion de déchiffrement RMS du groupe de rôles personnalisé. Ajoutez ensuite la personne dont vous ne souhaitez pas déchiffrer les messages en tant que membre du groupe de rôles personnalisé.
   
@@ -314,10 +312,10 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
 ### <a name="miscellaneous"></a>Divers
   
-- Lors du téléchargement des résultats de la recherche à l’aide de l’outil d’exportation eDiscovery, il est possible que vous receviez l’erreur suivante : `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` il s’agit d’une erreur temporaire, qui se produit généralement à l’emplacement stockage Azure. Pour résoudre ce problème, réessayez [de télécharger les résultats de la recherche](#step-2-download-the-search-results), ce qui redémarrera l’outil d’exportation eDiscovery.
+- Lors du téléchargement des résultats de recherche à l’aide de l’outil d’exportation eDiscovery, il est possible que vous receviez l’erreur suivante : `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` il s’agit d’une erreur temporaire, qui se produit généralement dans l’emplacement stockage Azure. Pour résoudre ce problème, réessayez [de télécharger les résultats de la recherche](#step-2-download-the-search-results), ce qui redémarrera l’outil d’exportation eDiscovery.
 
 - Tous les résultats de la recherche et les rapports d’exportation sont inclus dans un dossier qui porte le même nom que la recherche de contenu. Les courriers électroniques exportés se trouvent dans un dossier nommé **Exchange**. Les documents se trouvent dans un dossier nommé **SharePoint**.
 
-- Les métadonnées du système de fichiers pour les documents sur les sites SharePoint et OneDrive Entreprise sont conservées lorsque les documents sont exportés vers votre ordinateur local. En d’autres termes, les propriétés de document (par exemple, Date de création et Date de la dernière modification) ne sont pas modifiées lorsque les documents sont exportés.
+- Les métadonnées du système de fichiers pour les documents sur SharePoint et les sites OneDrive Entreprise sont conservées lorsque les documents sont exportés vers votre ordinateur local. En d’autres termes, les propriétés de document (par exemple, Date de création et Date de la dernière modification) ne sont pas modifiées lorsque les documents sont exportés.
 
-- Si vos résultats de recherche incluent un élément de liste de SharePoint qui correspond à la requête de recherche, toutes les lignes de la liste sont exportées en plus de l’élément correspondant à la requête de recherche et aux pièces jointes de la liste. La raison de ce comportement est de fournir un contexte pour les éléments de liste retournés dans les résultats de la recherche. Les éléments de liste et pièces jointes supplémentaires peuvent entraîner une différence entre le nombre d’éléments exportés et l’estimation d’origine des résultats de la recherche.
+- Si vos résultats de recherche incluent un élément de liste de SharePoint qui correspond à la requête de recherche, toutes les lignes de la liste sont exportées en plus de l’élément qui correspond à la requête de recherche et aux pièces jointes de la liste. La raison de ce comportement est de fournir un contexte pour les éléments de liste retournés dans les résultats de la recherche. Les éléments de liste et pièces jointes supplémentaires peuvent entraîner une différence entre le nombre d’éléments exportés et l’estimation d’origine des résultats de la recherche.

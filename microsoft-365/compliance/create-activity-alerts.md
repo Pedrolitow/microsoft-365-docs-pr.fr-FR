@@ -19,20 +19,18 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le portail de conformité Microsoft Purview afin que Microsoft 365 vous envoie des notifications par e-mail lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a2f93ed9c0c73dfb6886e0860e63ec38e49294a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018094"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642259"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Vous pouvez créer une alerte d’activité qui vous enverra une notification par e-mail lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont similaires à la recherche d’événements dans le journal d’audit, sauf que vous recevrez un e-mail lorsqu’un événement pour une activité pour laquelle vous avez créé une alerte se produit.
 
- **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activités ou d’activités effectuées par des utilisateurs spécifiques que vous souhaitez vraiment connaître. Au lieu de vous rappeler de rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour Microsoft 365 vous envoyer un e-mail lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint, ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par e-mail qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
+ **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activités ou d’activités effectuées par des utilisateurs spécifiques que vous souhaitez vraiment connaître. Au lieu de vous rappeler de rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour que Microsoft 365 vous envoie un e-mail lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint, ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par e-mail qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
 
 > [!NOTE]
 > Les alertes d’activité sont déconseillées. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le Centre de sécurité et de conformité au lieu de créer des alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte quand un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page **Afficher les alertes** dans le Centre de sécurité et de conformité. Pour plus d’informations, consultez [Stratégies d’alerte](alert-policies.md).
@@ -111,7 +109,7 @@ Pour réactiver une alerte d’activité, répétez ces étapes, puis cliquez su
     > [!TIP]
     > Vous pouvez créer une alerte d’activité pour une seule activité effectuée par n’importe quel utilisateur. Vous pouvez également créer une alerte d’activité qui suit plusieurs activités effectuées par un ou plusieurs utilisateurs.
 
-    Le tableau suivant répertorie certaines activités courantes liées aux documents dans SharePoint ou OneDrive Entreprise.
+    Le tableau suivant répertorie certaines activités courantes liées au document dans SharePoint ou OneDrive Entreprise.
 
     | Lorsqu’un utilisateur effectue cette opération... | Créer une alerte pour cette activité | Groupe d’activités |
     |:-----|:-----|:-----|

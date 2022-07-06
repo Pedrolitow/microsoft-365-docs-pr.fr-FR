@@ -18,19 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Audit de Microsoft Purview (Premium) fournit de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et d’investigation.
-ms.openlocfilehash: 07a441557cacdbb92e9442370210b88d898ccd3b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3f81daf8cafe2f1fa3955dbc175d024e0e9b24ef
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098991"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642303"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Audit de Microsoft Purview (Premium)
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions de la version d’évaluation](compliance-easy-trials.md).
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La [fonctionnalité d'Audit](search-the-audit-log-in-security-and-compliance.md) de Microsoft Purview offre aux organisations une visibilité dans de nombreux types d’activités auditées dans différents services de Microsoft 365. L’audit de Microsoft Purview (Premium) permet aux organisations d’effectuer des enquêtes de conformité et d’investigation en augmentant la rétention des journaux d’audit requis pour mener une enquête, en fournissant l’accès aux événements essentiels (à l’aide de la recherche dans les journaux d’audit dans le portail de conformité Microsoft Purview et l’API Activité de gestion Office 365) qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.
 

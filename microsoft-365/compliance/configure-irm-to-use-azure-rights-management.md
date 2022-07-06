@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Cet article contient des informations sur les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME).
-ms.openlocfilehash: ec60ceb2843c03f3d91c95c2c4eca2d56e393a44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Cet article contient des informations sur Chiffrement de messages Microsoft Purview.
+ms.openlocfilehash: 978d6356531da6b29bfe7b557cb419ba2958f040
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153173"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642215"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurer IRM pour utiliser Azure Rights Management
 
-Avec la publication de nouvelles fonctionnalités pour le chiffrement de messages Office 365 (OME), vous n'avez plus besoin configurer IRM séparément. Microsoft ne recommande pas de configurer de nouveaux déploiements avec d'anciennes versions d'OME hérité et d'IRM avec Azure Rights Management. Pour plus d'informations sur les nouvelles fonctionnalités d'OME, consultez la [FAQ sur le chiffrement de messages Office 365](./ome-faq.yml). Si vous êtes prêt à commencer à utiliser les nouvelles fonctionnalités d'OME au sein de votre organisation, consultez [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365 intégrées en haut de la Protection des informations Azure](./set-up-new-message-encryption-capabilities.md).
+Avec la publication de Chiffrement de messages Microsoft Purview, vous n’avez plus besoin de configurer IRM séparément. Microsoft ne recommande pas de configurer de nouveaux déploiements avec d'anciennes versions d'OME hérité et d'IRM avec Azure Rights Management. Pour plus d’informations sur la Chiffrement de messages Microsoft Purview, consultez la FAQ sur le [chiffrement des messages](./ome-faq.yml). Si vous êtes prêt à commencer à utiliser Chiffrement de messages Microsoft Purview au sein de votre organisation, consultez [Configurer Chiffrement de messages Microsoft Purview](./set-up-new-message-encryption-capabilities.md).

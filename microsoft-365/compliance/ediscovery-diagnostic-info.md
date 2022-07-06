@@ -17,16 +17,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment collecter des informations de diagnostic eDiscovery pour un cas Support Microsoft.
-ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 46c85e822daf82cc88e6bf89ceea97dede3e2276
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014429"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641809"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Collecter des informations de diagnostic eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Parfois, Support Microsoft ingénieurs ont besoin d’informations spécifiques sur votre problème lorsque vous ouvrez un cas de support lié à Microsoft Purview eDiscovery (Standard) ou Microsoft Purview eDiscovery (Premium). Cet article fournit des conseils sur la collecte d’informations de diagnostic pour aider les ingénieurs du support technique à examiner et à résoudre les problèmes. En règle générale, vous n’avez pas besoin de collecter ces informations tant qu’un ingénieur Support Microsoft n’a pas demandé de le faire.
 
@@ -78,17 +76,17 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 ## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>Collecter des informations de diagnostic pour eDiscovery (Premium)
 
-**L’onglet Paramètres** dans un cas eDiscovery (Premium) vous permet de copier rapidement les informations de diagnostic pour le cas. Les informations de diagnostic sont enregistrées dans le Presse-papiers afin de pouvoir les coller dans un fichier texte et les envoyer à Support Microsoft.
+L’onglet **Paramètres** d’un cas eDiscovery (Premium) vous permet de copier rapidement les informations de diagnostic pour le cas. Les informations de diagnostic sont enregistrées dans le Presse-papiers afin de pouvoir les coller dans un fichier texte et les envoyer à Support Microsoft.
 
 1. Accédez au portail de conformité, puis sélectionnez **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
-2. Sélectionnez un cas, puis cliquez sur l’onglet **Paramètres**.
+2. Sélectionnez un cas, puis cliquez sur l’onglet **Paramètres** .
 
 3. Sous **Informations sur la casse**, cliquez sur **Sélectionner**.
 
 4. Dans la page de menu volant, cliquez sur **Actions** > **Copy pour** copier les informations dans le Presse-papiers.
 
-5. Ouvrez un fichier texte (dans Bloc-notes), puis collez les informations dans le fichier texte.
+5. Ouvrez un fichier texte (dans le Bloc-notes), puis collez les informations dans le fichier texte.
 
 6. Enregistrez le fichier texte et nommez-le comme `AeD Diagnostic Info YYYY.MM.DD` suit (par exemple, `AeD Diagnostic Info 2020.11.03`).
 

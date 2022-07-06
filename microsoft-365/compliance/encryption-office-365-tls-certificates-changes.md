@@ -1,6 +1,6 @@
 ---
-title: Modifications du certificat TLS Office
-description: Comment préparer les modifications à venir apportées Office certificats TLS.
+title: Modifications apportées aux certificats TLS Office
+description: Comment préparer les modifications à venir apportées aux certificats TLS Office.
 author: pshelton-skype
 ms.author: pshelton
 manager: toddbeckett
@@ -9,16 +9,16 @@ audience: Developer
 ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 075fb8f4c27401a4622f4ce639c897f2e98bb3e9
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 65b0ffd5d605302dd62369471b65c1ac10aacd40
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450368"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641765"
 ---
 # <a name="office-tls-certificate-changes"></a>Modifications du certificat TLS Office
 
-Microsoft 365 met à jour les services de messagerie, de réunions, de téléphonie, de voix et de vidéo pour utiliser les certificats TLS d’un autre ensemble d’autorités de certification racines. Cette modification est en cours, car l’ac racine actuelle expirera en mai 2025.
+Microsoft 365 met à jour les services de messagerie, de réunions, de téléphonie, de voix et de vidéo pour utiliser des certificats TLS provenant d’un autre ensemble d’autorités de certification racines. Cette modification est en cours, car l’autorité de certification racine actuelle expirera en mai 2025.
 
 Les produits concernés sont les suivants :
 - Microsoft Teams
@@ -37,7 +37,7 @@ Les points de terminaison affectés incluent (mais ne sont pas limités à) :
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-En outre, Teams points de terminaison Skype Entreprise Online dans les instances cloud nationales de Microsoft 365 du gouvernement des États-Unis apportera la même modification, affectant les points de terminaison tels que :
+En outre, Teams et les points de terminaison Skype Entreprise Online dans les instances cloud nationales du gouvernement des États-Unis de Microsoft 365 apporteront les mêmes modifications, affectant les points de terminaison tels que :
 - *.gcc.teams.microsoft.com
 - *.dod.teams.microsoft.us
 - *.gov.teams.microsoft.us
@@ -46,72 +46,72 @@ En outre, Teams points de terminaison Skype Entreprise Online dans les instances
 - *.um-dod.office365.us
 - *.um.office365.us
 
-Cette modification n’affectera pas les certificats, les domaines ou les services utilisés dans les instances cloud nationales de chine ou d’allemagne de Microsoft 365.
+Cette modification n’affecte pas les certificats, domaines ou services utilisés dans les instances cloud nationales de Microsoft 365 en Chine ou en Allemagne.
 
-Toutes les informations de certificat de cet article ont été précédemment fournies dans [Microsoft 365 de](./encryption-office-365-certificate-chains.md) chiffrement au plus tard en octobre 2020.
+Toutes les informations de certificat de cet article ont été précédemment [fournies dans les chaînes de chiffrement Microsoft 365](./encryption-office-365-certificate-chains.md) au plus tard en octobre 2020.
 
 ## <a name="when-will-this-change-happen"></a>Quand cette modification aura-t-elle lieu ?
 
-Les services ont commencé la transition vers les nouvelles CA racines en janvier 2022 et se poursuivent jusqu’en octobre 2022.
+Les services ont commencé à passer aux nouvelles autorités de certification racine en janvier 2022 et se poursuivent jusqu’en octobre 2022.
 
 ## <a name="what-is-changing"></a>Qu’est-ce qui change ?
 
-Aujourd’hui, la plupart des certificats TLS utilisés par Microsoft 365 services sont chaînés jusqu’à l’AC racine suivante :
+Aujourd’hui, la plupart des certificats TLS utilisés par les services Microsoft 365 s’enchaînent jusqu’à l’autorité de certification racine suivante :
 
-| Nom commun de l’ac | Thumbprint (SHA1) |
+| Nom commun de l’autorité de certification | Empreinte numérique (SHA1) |
 |--|--|
 | [Baltimore CyberTrust Root](https://cacerts.digicert.com/BaltimoreCyberTrustRoot.crt) | d4de20d05e66fc53fe1a50882c78db2852cae474 |
 
-avec l’une des CA intermédiaires suivantes :
+avec l’une des autorités de certification intermédiaires suivantes :
 
-| Nom commun de l’ac | Thumbprint (SHA1) |
+| Nom commun de l’autorité de certification | Empreinte numérique (SHA1) |
 |--|--|
 | [Microsoft RSA TLS CA 01](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
 | [Microsoft RSA TLS CA 02](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
 
-Les nouveaux certificats TLS utilisés par Microsoft 365 services de contrôle d’accès sont désormais chaînés jusqu’à l’une des CA racines suivantes :
+Les nouveaux certificats TLS utilisés par les services Microsoft 365 vont maintenant s’enchaîner jusqu’à l’une des autorités de certification racine suivantes :
 
-| Nom commun de l’ac | Thumbprint (SHA1) |
+| Nom commun de l’autorité de certification | Empreinte numérique (SHA1) |
 |--|--|
 | [DigiCert Global Root G2](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt) | df3c24f9bfd666761b268073fe06d1cc8d4f82a4 |
 | [Autorité de certification racine Microsoft RSA 2017](https://www.microsoft.com/pkiops/certs/Microsoft%20RSA%20Root%20Certificate%20Authority%202017.crt) | 73a5e64a3bff8316ff0edccc618a906e4eae4d74 | 
 | [Autorité de certification racine Microsoft ECC 2017](https://www.microsoft.com/pkiops/certs/Microsoft%20ECC%20Root%20Certificate%20Authority%202017.crt) | 999a64c37ff47d9fab95f14769891460eec4c3c5 |
 
-avec l’une des CA intermédiaires suivantes :
+avec l’une des autorités de certification intermédiaires suivantes :
 
-| Nom commun de l’ac | Thumbprint (SHA1) |
+| Nom commun de l’autorité de certification | Empreinte numérique (SHA1) |
 |--|--|
-| [Microsoft Azure TLS émettrice CA 01](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
-| [Microsoft Azure TLS émettrice CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
-| [Microsoft Azure TLS émettrice CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
-| [Microsoft Azure TLS émettrice CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+| [Microsoft Azure TLS Émission CA 01](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
+| [Microsoft Azure TLS émettant l’autorité de certification 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
+| [Microsoft Azure TLS émettant l’autorité de certification 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
+| [Microsoft Azure TLS émettant l’autorité de certification 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
 
 Par exemple, il s’agit d’un certificat valide avec l’une des nouvelles chaînes de certificats :
 
-![Teams chaîne de certificats TLS](../media/teams-tls-certificate-chain.png)
+![Chaîne de certificats TLS Teams](../media/teams-tls-certificate-chain.png)
 
-## <a name="will-this-change-affect-me"></a>Cette modification va-t-elle m’affecter ?
+## <a name="will-this-change-affect-me"></a>Ce changement va-t-il m’affecter ?
 
-L’ac racine « DigiCert Global Root G2 » est largement fiable par les systèmes d’exploitation, notamment Windows, macOS, Android et iOS, et par des navigateurs tels que Microsoft Edge, Chrome, Safari et Firefox. Nous pensons que **la plupart Microsoft 365 clients ne seront pas touchés**. 
+L’autorité de certification racine « DigiCert Global Root G2 » est largement approuvée par les systèmes d’exploitation, notamment Windows, macOS, Android et iOS, et par des navigateurs tels que Microsoft Edge, Chrome, Safari et Firefox. Nous nous attendons à ce que **la plupart des clients Microsoft 365 ne soient pas affectés**. 
 
-Toutefois, **votre application peut être impactée si elle spécifie explicitement une liste d’cas acceptables**. Cette pratique est appelée « épinglage de certificat ». Les clients qui n’ont pas les nouvelles CA racines dans leur liste d’applications de certification acceptables recevront des erreurs de validation de certificat, ce qui peut avoir un impact sur la disponibilité ou la fonction de votre application.
+Toutefois, **votre application peut être affectée si elle spécifie explicitement une liste d’autorités de certification acceptables**. Cette pratique est appelée « épinglage de certificat ». Les clients qui n’ont pas les nouvelles autorités de certification racine dans leur liste d’autorités de certification acceptables recevront des erreurs de validation de certificat, ce qui peut avoir un impact sur la disponibilité ou la fonction de votre application.
 
-Voici quelques méthodes pour détecter si votre application peut être impactée :
+Voici quelques façons de détecter si votre application peut être impactée :
 
-- Recherchez dans votre code source l’empreinte numérique, le nom commun ou d’autres propriétés de l’une des CA intermédiaires trouvées [ici](https://www.microsoft.com/pki/mscorp/cps/default.htm). S’il existe une correspondance, votre application sera impactée. Pour résoudre ce problème, mettez à jour le code source pour ajouter les propriétés des nouvelles CAs. En tant que meilleure pratique, assurez-vous que les CAs peuvent être ajoutées ou modifiées dans un court préavis. Les réglementations du secteur exigent que les certificats d’ac soient remplacés dans un délai de sept jours dans certaines circonstances, de sorte que les applications qui implémentent l’épinglage de certificat doivent réagir rapidement à ces modifications.
+- Recherchez dans votre code source l’empreinte numérique, le nom commun ou d’autres propriétés de l’une des autorités de certification intermédiaires trouvées [ici](https://www.microsoft.com/pki/mscorp/cps/default.htm). S’il existe une correspondance, votre application sera affectée. Pour résoudre ce problème, mettez à jour le code source pour ajouter les propriétés des nouvelles autorités de certification. En guise de bonne pratique, assurez-vous que les autorités de certification peuvent être ajoutées ou modifiées à court préavis. Les réglementations du secteur exigent que les certificats d’autorité de certification soient remplacés dans un délai de sept jours dans certaines circonstances, de sorte que les applications qui implémentent l’épinglage de certificat doivent réagir rapidement à ces modifications.
 
-- .NET expose les fonctions de rappel, qui permettent aux développeurs d’utiliser une logique personnalisée pour déterminer si les certificats sont valides `System.Net.ServicePointManager.ServerCertificateValidationCallback` `System.Net.HttpWebRequest.ServerCertificateValidationCallback` plutôt que de s’appuyer sur le magasin de certificats Windows standard. Un développeur peut ajouter une logique qui recherche un nom commun ou une empreinte numérique spécifique ou n’autorise qu’une ca racine spécifique telle que « CyberTrust Root ». Si votre application utilise ces fonctions de rappel, vous devez vous assurer qu’elle accepte l’ancienne et la nouvelle cae racine et intermédiaire.
+- .NET expose les `System.Net.ServicePointManager.ServerCertificateValidationCallback` fonctions de rappel, `System.Net.HttpWebRequest.ServerCertificateValidationCallback` qui permettent aux développeurs d’utiliser une logique personnalisée pour déterminer si les certificats sont valides plutôt que de s’appuyer sur le magasin de certificats Windows standard. Un développeur peut ajouter une logique qui recherche un nom commun ou une empreinte numérique spécifique ou autorise uniquement une autorité de certification racine spécifique telle que « Baltimore CyberTrust Root ». Si votre application utilise ces fonctions de rappel, vous devez vous assurer qu’elle accepte à la fois l’ancienne et la nouvelle autorité de certification racine et intermédiaire.
 
-- Les applications natives peuvent utiliser `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST`, ce qui permet aux applications natives d’implémenter une logique de validation de certificat personnalisée. L’utilisation de cette notification est rare et nécessite une quantité importante de code personnalisé à implémenter. Comme dans le cas ci-dessus, assurez-vous que votre application accepte l’ancienne et la nouvelle CA racine et intermédiaire. 
+- Les applications natives peuvent utiliser `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST`, ce qui permet aux applications natives d’implémenter une logique de validation de certificat personnalisée. L’utilisation de cette notification est rare et nécessite une quantité importante de code personnalisé à implémenter. À l’instar de ce qui précède, assurez-vous que votre application accepte les autorités de certification racines et intermédiaires anciennes et nouvelles. 
 
-- Si vous utilisez une application qui s’intègre aux API Microsoft Teams, Skype, Skype Entreprise Online ou Microsoft Dynamics et que vous ne savez pas si elle utilise l’épinglage de certificat, vérifiez auprès du fournisseur de l’application.
+- Si vous utilisez une application qui s’intègre à Microsoft Teams, Skype, Skype Entreprise Online ou aux API Microsoft Dynamics et que vous ne savez pas si elle utilise l’épinglage de certificat, contactez le fournisseur de l’application.
 
-- Différents systèmes d’exploitation et runtimes linguistiques qui communiquent avec les services Azure peuvent nécessiter d’autres étapes pour créer et valider correctement les nouvelles chaînes de certificats :
-   - **Linux** : de nombreuses distributions nécessitent que vous ajoutiez des CAs à `/etc/ssl/certs`. Pour obtenir des instructions spécifiques, reportez-vous à la documentation de la distribution.
-   - **Java** : assurez-vous que le magasin de clés Java contient les CA répertoriées ci-dessus.
-   - Windows en cours d’exécution dans des **environnements déconnectés** : les systèmes qui s’exécutent dans des environnements déconnectés doivent être ajoutés à leur magasin par les nouvelles CA racines `Trusted Root Certification Authorities` et les nouvelles CA intermédiaires ajoutées `Intermediate Certification Authorities` à leur magasin.
-   - **Android** : consultez la documentation relative à votre appareil et à votre version d’Android.
-   - **Appareils IoT** ou incorporés : les appareils incorporés tels que les zones supérieure de l’écran de TV sont souvent intégrés avec un ensemble limité de certificats d’autorité racine et ne peuvent pas facilement mettre à jour le magasin de certificats. Si vous écrivez du code ou gérez des déploiements d’appareils IoT ou incorporés personnalisés, assurez-vous que les appareils font confiance aux nouvelles CA racines. Vous devrez peut-être contacter le fabricant de l’appareil.
+- Les différents systèmes d’exploitation et runtimes linguistiques qui communiquent avec les services Azure peuvent nécessiter d’autres étapes pour générer et valider correctement les nouvelles chaînes de certificats :
+   - **Linux** : de nombreuses distributions vous obligent à ajouter des autorités de certification à `/etc/ssl/certs`. Pour obtenir des instructions spécifiques, reportez-vous à la documentation de la distribution.
+   - **Java** : vérifiez que le magasin de clés Java contient les autorités de certification répertoriées ci-dessus.
+   - **Windows s’exécutant dans des environnements déconnectés** : les systèmes qui s’exécutent dans des environnements déconnectés doivent avoir les nouvelles autorités de certification racine ajoutées à leur `Trusted Root Certification Authorities` magasin et les nouvelles autorités de certification intermédiaires ajoutées à leur `Intermediate Certification Authorities` magasin.
+   - **Android** : consultez la documentation de votre appareil et de votre version d’Android.
+   - **IoT ou appareils incorporés** : les appareils incorporés, tels que les zones haut de gamme tv, sont souvent fournis avec un ensemble limité de certificats d’autorité racine et n’ont pas de moyen simple de mettre à jour le magasin de certificats. Si vous écrivez du code pour ou gérez des déploiements d’appareils incorporés ou IoT personnalisés, assurez-vous que les appareils approuvent les nouvelles autorités de certification racine. Vous devrez peut-être contacter le fabricant de l’appareil.
 
 - Si vous avez un environnement dans lequel les règles de pare-feu autorisent les appels sortants uniquement vers des points de terminaison spécifiques, autorisez les URL de liste de révocation de certificats (CRL) ou OCSP (Online Certificate Status Protocol) suivantes :
    - `http://crl3.digicert.com`
@@ -122,7 +122,7 @@ Voici quelques méthodes pour détecter si votre application peut être impacté
    - `http://ocsp.msocsp.com`
    - `http://www.microsoft.com/pkiops`
 
-- Si vous êtes touché par cette modification, vous pouvez voir des messages d’erreur dépendant du type d’environnement que vous exécutez et du scénario dont vous êtes impacté. Vérifiez Windows journaux des événements de l’application, les journaux d’événements CAPI2 et les journaux d’applications personnalisés pour les messages qui ressemblent à :
+- Si cette modification vous affecte, il se peut que des messages d’erreur dépendent du type d’environnement dans lequel vous exécutez et du scénario dans lequel vous êtes affecté. Vérifiez les journaux des événements d’application Windows, les journaux des événements CAPI2 et les journaux d’application personnalisés pour les messages qui ressemblent à ceci :
    ```output
    An operation failed because the following certificate has validation errors:
    
@@ -134,6 +134,55 @@ Voici quelques méthodes pour détecter si votre application peut être impacté
    The root of the certificate chain is not a trusted root authority.
    ```
 
-## <a name="when-can-i-retire-the-old-ca-information"></a>Quand puis-je retirer les anciennes informations de l’ac ?
+## <a name="when-can-i-retire-the-old-ca-information"></a>Quand puis-je mettre hors service les anciennes informations d’autorité de certification ?
 
-Les certificats racines, intermédiaires et feuilles actuels ne seront pas révoqués. Les noms communs de l’ac et/ou les empreintes numériques existants seront requis jusqu’en octobre 2023 au moins en fonction de la durée de vie des certificats existants.
+L’autorité de certification racine, l’autorité de certification intermédiaire et les certificats feuille actuels ne seront pas révoqués. Les noms communs d’autorité de certification existants et/ou les empreintes numériques seront requis au moins jusqu’en octobre 2023 en fonction de la durée de vie des certificats existants.
+
+## <a name="known-issues"></a>Problèmes connus
+
+Dans de très rares cas, les utilisateurs d’entreprise peuvent voir des erreurs de validation de certificat lorsque l’autorité de certification racine « DigiCert Global Root G2 » apparaît comme révoquée. Cela est dû à un bogue Windows connu dans les deux conditions suivantes :
+
+- L’autorité de certification racine se trouve dans le [magasin de certificats CurrentUser\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) et il manque les propriétés et `NotBeforeEKU` les `NotBeforeFileTime`
+- L’autorité de certification racine se trouve également dans le [magasin de certificats LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine), mais possède les propriétés et `NotBeforeEKU` les `NotBeforeFileTime` propriétés
+
+Tous les certificats feuille émis à partir de cette autorité de certification racine après la `NotBeforeFileTime` révoquer. 
+
+Les administrateurs peuvent identifier et résoudre le problème en inspectant le journal CAPI2 pour détecter cette erreur :
+
+```text
+Log Name:      Microsoft-Windows-CAPI2/Operational
+Source:        Microsoft-Windows-CAPI2
+Date:          6/23/2022 8:36:39 AM
+Event ID:      11
+Task Category: Build Chain
+Level:         Error
+[...]
+        <ChainElement>
+          <Certificate fileRef="DF3C24F9BFD666761B268073FE06D1CC8D4F82A4.cer" subjectName="DigiCert Global Root G2" />
+          [...]
+          <TrustStatus>
+            <ErrorStatus value="4000024" CERT_TRUST_IS_REVOKED="true" CERT_TRUST_IS_UNTRUSTED_ROOT="true" CERT_TRUST_IS_EXPLICIT_DISTRUST="true" />
+            <InfoStatus value="10C" CERT_TRUST_HAS_NAME_MATCH_ISSUER="true" CERT_TRUST_IS_SELF_SIGNED="true" CERT_TRUST_HAS_PREFERRED_ISSUER="true" />
+          </TrustStatus>
+          [...]
+          <RevocationInfo freshnessTime="PT0S">
+            <RevocationResult value="80092010">The certificate is revoked.</RevocationResult>
+          </RevocationInfo>
+        </ChainElement>
+      </CertificateChain>
+      <EventAuxInfo ProcessName="Teams.exe" />
+      <Result value="80092010">The certificate is revoked.</Result>
+```
+Notez la présence de l’élément `CERT_TRUST_IS_EXPLICIT_DISTRUST="true"` . 
+
+Vous pouvez vérifier que deux copies de l’autorité de certification racine avec des propriétés différentes `NotBeforeFileTime` sont présentes en exécutant les commandes suivantes `certutil` et en comparant la sortie :
+
+```
+certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+```
+
+Un utilisateur peut résoudre le problème en supprimant la copie de l’autorité de certification racine dans le magasin de `CurrentUser\Root` certificats :
+```
+certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
+```

@@ -12,16 +12,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client.
-ms.openlocfilehash: 93cf56ba30f333697ccb1ef6f4064918e73d4fcf
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: d285d19eb00afdaea6c5c591caf32a9b4a482987
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042437"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642193"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis configurez Microsoft 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d’autres termes, la clé client permet aux clients d’ajouter une couche de chiffrement qui leur appartient, avec leurs clés.
 
@@ -37,11 +35,11 @@ Avant de commencer, vérifiez que vous disposez des abonnements Azure et des lic
 > [!IMPORTANT]
 > Les licences M365/O365 valides qui offrent la clé client M365 sont les suivantes :
 >
-> - Office 365 E5
+> - Office 365 E5
 > - Microsoft 365 E5
 > - Microsoft 365 E5 Conformité
 > - références SKU de gouvernance Microsoft 365 E5 Information Protection &
-> - Microsoft 365 sécurité et conformité pour FLW
+> - Sécurité et conformité de Microsoft 365 pour FLW
 
 Les licences Conformité avancée Office 365 existantes continueront d’être prises en charge.
 
@@ -88,7 +86,7 @@ Effectuez ces tâches dans Azure Key Vault. Vous devez effectuer ces étapes pou
   
 ### <a name="create-two-new-azure-subscriptions"></a>Créer deux abonnements Azure
 
-La clé client nécessite deux abonnements Azure. En guise de bonne pratique, Microsoft vous recommande de créer des abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault ne peuvent être autorisées que pour les applications du même locataire Azure Active Directory (Microsoft Azure Active Directory), vous devez créer les nouveaux abonnements à l’aide du même locataire Azure AD que celui utilisé avec votre organisation où les DEP seront affectés. Par exemple, en utilisant votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir des instructions détaillées, consultez [S’inscrire à Azure en tant qu’organisation](/azure/active-directory/fundamentals/sign-up-organization).
+La clé client nécessite deux abonnements Azure. En guise de bonne pratique, Microsoft vous recommande de créer des abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault ne peuvent être autorisées que pour les applications dans le même locataire Azure Active Directory (Microsoft Azure Active Directory). Vous devez créer les nouveaux abonnements à l’aide du même locataire Azure AD que celui utilisé avec votre organisation où les DEP seront affectés. Par exemple, en utilisant votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir des instructions détaillées, consultez [S’inscrire à Azure en tant qu’organisation](/azure/active-directory/fundamentals/sign-up-organization).
   
 > [!IMPORTANT]
 > La clé client nécessite deux clés pour chaque stratégie de chiffrement des données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de bonne pratique, Microsoft recommande de disposer de membres distincts de votre organisation pour configurer une clé dans chaque abonnement. Vous devez utiliser ces abonnements Azure uniquement pour administrer des clés de chiffrement pour Office 365. Cela protège votre organisation en cas de suppression accidentelle, intentionnelle ou malveillante de l’un de vos opérateurs ou d’une mauvaise gestion des clés dont ils sont responsables.
@@ -99,7 +97,7 @@ Il n’existe aucune limite pratique au nombre d’abonnements Azure que vous po
 
 Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez envoyer la demande d’offre de clé client appropriée dans le [portail Microsoft FastTrack](https://fasttrack.microsoft.com/). Les sélections que vous effectuez dans le formulaire d’offre concernant les désignations autorisées au sein de votre organisation sont essentielles et nécessaires pour terminer l’inscription de la clé client. Les agents de ces rôles sélectionnés au sein de votre organisation garantissent l’authenticité de toute demande de révocation et de destruction de toutes les clés utilisées avec une stratégie de chiffrement des données de clé client. Vous devez effectuer cette étape une fois pour chaque type DEP de clé client que vous envisagez d’utiliser pour votre organisation.
 
-**L’équipe FastTrack ne fournit pas d’assistance avec la clé client. Office 365 utilise simplement le portail FastTrack pour vous permettre de soumettre le formulaire et de nous aider à suivre les offres pertinentes pour la clé client. Une fois que vous avez soumis la demande de FastTrack, contactez l’équipe d’intégration de clé client correspondante pour démarrer le processus d’intégration.**
+**L’équipe FastTrack ne fournit pas d’assistance avec la clé client. Office 365 utilise simplement le portail FastTrack pour vous permettre de soumettre le formulaire et de nous aider à suivre les offres pertinentes pour la clé client. Une fois que vous avez soumis la demande FastTrack, contactez l’équipe d’intégration customer key correspondante pour démarrer le processus d’intégration.**
   
 Pour soumettre une offre pour activer la clé client, procédez comme suit :
   
@@ -111,11 +109,11 @@ Pour soumettre une offre pour activer la clé client, procédez comme suit :
 
 4. Choisissez la carte d’informations pour l’offre qui s’applique à vous :
 
-   - **Plusieurs charges de travail Microsoft 365 :** choisissez **l’aide de la clé de chiffrement de demande pour Microsoft 365** offre.
+   - **Plusieurs charges de travail Microsoft 365 :** Choisissez **l’aide de la clé de chiffrement de demande pour l’offre Microsoft 365** .
 
-   - **Exchange Online et Skype Entreprise :** choisissez **l’aide de la clé de chiffrement de demande pour Exchange** offre.
+   - **Exchange Online et Skype Entreprise :** choisissez **l’aide de la clé de chiffrement de demande pour** l’offre Exchange.
 
-   - **SharePoint fichiers en ligne, OneDrive et Teams :** choisissez **l’aide de la clé de chiffrement de demande pour SharePoint et OneDrive Entreprise** offre.
+   - **Fichiers SharePoint Online, OneDrive et Teams :** Choisissez **l’aide de la clé de chiffrement demander pour SharePoint et OneDrive Entreprise** offre.
 
 5. Une fois que vous avez examiné les détails de l’offre, **choisissez Continuer à l’étape 2**.
 
@@ -123,14 +121,14 @@ Pour soumettre une offre pour activer la clé client, procédez comme suit :
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Inscrire des abonnements Azure pour utiliser une période de rétention obligatoire
 
-La perte temporaire ou permanente de clés de chiffrement racine peut être perturbatrice, voire catastrophique pour le fonctionnement du service, et peut entraîner une perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection renforcée. Toutes les ressources Azure utilisées avec customer key offrent des mécanismes de protection au-delà de la configuration par défaut. Vous pouvez étiqueter ou inscrire des abonnements Azure pour une *période de rétention obligatoire*. Une période de rétention obligatoire empêche l’annulation immédiate et irrévocable de votre abonnement Azure. Les étapes requises pour inscrire des abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l’équipe Microsoft 365. L’exécution de ce processus prendra cinq jours ouvrables. Auparavant, la période de rétention obligatoire était parfois appelée « Ne pas annuler ».
+La perte temporaire ou permanente de clés de chiffrement racine peut être perturbatrice, voire catastrophique pour le fonctionnement du service, et peut entraîner une perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection renforcée. Toutes les ressources Azure utilisées avec customer key offrent des mécanismes de protection au-delà de la configuration par défaut. Vous pouvez étiqueter ou inscrire des abonnements Azure pour une *période de rétention obligatoire*. Une période de rétention obligatoire empêche l’annulation immédiate et irrévocable de votre abonnement Azure. Les étapes requises pour inscrire des abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l’équipe Microsoft 365. Auparavant, la période de rétention obligatoire était parfois appelée « Ne pas annuler ». L’exécution de ce processus prendra cinq jours ouvrables.
   
 > [!IMPORTANT]
 > Avant de contacter l’équipe Microsoft 365, vous devez effectuer les étapes suivantes pour **chaque** abonnement Azure que vous utilisez avec la clé client. Vérifiez que le module [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) est installé avant de commencer.
 
 1. Connectez-vous avec Azure PowerShell. Pour obtenir des instructions, consultez [Se connecter avec Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Exécutez l’applet de commande Register-AzProviderFeature pour inscrire vos abonnements afin d’utiliser une période de rétention obligatoire. Effectuez cette action pour chaque abonnement.
+2. Exécutez l’applet de commande Register-AzProviderFeature pour inscrire vos abonnements afin d’utiliser une période de rétention obligatoire. Effectuez cette action pour **chaque** abonnement.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -140,19 +138,19 @@ La perte temporaire ou permanente de clés de chiffrement racine peut être pert
 ### <a name="contact-the-corresponding-microsoft-alias-to-proceed-with-the-process"></a>Contactez l’alias Microsoft correspondant pour poursuivre le processus
 
 >[!NOTE]
-> Avant de contacter l’alias Microsoft correspondant, vérifiez que vous avez effectué vos demandes de FastTrack pour la clé client M365.
+> Avant de contacter l’alias Microsoft correspondant, vérifiez que vous avez terminé vos demandes FastTrack pour la clé client M365.
 
 - Pour activer la clé client pour l’affectation de DEP à des boîtes aux lettres Exchange Online individuelles, contactez [exock@microsoft.com](mailto:exock@microsoft.com).
 
-- Pour activer la clé client permettant d’affecter des dep pour chiffrer SharePoint contenu en ligne et OneDrive Entreprise (y compris les fichiers Teams) pour tous les utilisateurs locataires, contactez [spock@microsoft.com](mailto:spock@microsoft.com).
+- Pour activer la clé client permettant d’affecter des dep pour chiffrer SharePoint Online et OneDrive Entreprise contenu (y compris les fichiers Teams) pour tous les utilisateurs locataires, contactez [spock@microsoft.com](mailto:spock@microsoft.com).
 
-- Pour activer la clé client permettant d’affecter des dep pour chiffrer le contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, Microsoft Purview Information Protection) pour tous les utilisateurs locataires, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- Pour activer la clé client permettant d’affecter des dep pour chiffrer du contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, Protection des données Microsoft Purview) pour tous les utilisateurs locataires, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
 - Incluez les informations suivantes dans votre e-mail :
 
      **Objet** : Clé client pour \<*Your tenant's fully qualified domain name*\>
 
-     **Corps** : incluez les ID de demande de FastTrack et les ID d’abonnement pour **chacun** des services de clé client auxquels vous souhaitez être intégré. Ces ID d’abonnement sont ceux que vous souhaitez terminer la période de rétention obligatoire et la sortie de Get-AzProviderFeature pour chaque abonnement.
+     **Corps** : incluez les ID de demande FastTrack et les ID d’abonnement pour **chacun** des services de clé client auxquels vous souhaitez être intégré. Ces ID d’abonnement sont ceux que vous souhaitez terminer la période de rétention obligatoire et la sortie de Get-AzProviderFeature pour chaque abonnement.
 
 Le contrat de niveau de service (SLA) pour la fin de ce processus est de cinq jours ouvrables une fois que Microsoft a été informé (et vérifié) que vous avez inscrit vos abonnements pour utiliser une période de rétention obligatoire.
 
@@ -161,18 +159,7 @@ Le contrat de niveau de service (SLA) pour la fin de ce processus est de cinq jo
 Une fois que vous recevez une notification de Microsoft indiquant que l’inscription est terminée, vérifiez l’état de votre inscription en exécutant la commande Get-AzProviderFeature comme suit. S’il est vérifié, la commande Get-AzProviderFeature retourne la valeur **Registered** for the **Registration State** property. Effectuez cette étape pour **chaque** abonnement.
 
    ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
-   ```
-
-Pour terminer le processus, exécutez la commande Register-AzResourceProvider. Effectuez cette étape pour **chaque** abonnement.
-
-   ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
-   ```
-
-   ```powershell
-   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 > [!TIP]
@@ -184,12 +171,12 @@ Pour terminer le processus, exécutez la commande Register-AzResourceProvider. E
 
 Les étapes de création d’un coffre de clés sont documentées dans [Prise en main avec Azure Key Vault](/azure/key-vault/general/overview), qui vous guide tout au long de l’installation et du lancement de Azure PowerShell, de la connexion à votre abonnement Azure, de la création d’un groupe de ressources et de la création d’un coffre de clés dans ce groupe de ressources.
   
-Lorsque vous créez un coffre de clés, vous devez choisir une référence SKU : Standard ou Premium. La référence SKU Standard permet de protéger les clés Azure Key Vault avec des logiciels ( il n’existe aucune protection de clé HSM ) et la référence SKU Premium autorise l’utilisation de modules HSM pour la protection des clés Key Vault. Customer Key accepte les coffres de clés qui utilisent l’une ou l’autre référence SKU, bien que Microsoft vous recommande vivement d’utiliser uniquement la référence SKU Premium. Le coût des opérations avec des clés de chaque type est le même. La seule différence de coût est donc le coût par mois pour chaque clé protégée par HSM. Pour plus d’informations, consultez [Key Vault tarification](https://azure.microsoft.com/pricing/details/key-vault/).
+Lorsque vous créez un coffre de clés, vous devez choisir une référence SKU : Standard ou Premium. La référence SKU Standard permet de protéger les clés Azure Key Vault avec des logiciels ( il n’existe aucune protection de clé HSM ) et la référence SKU Premium autorise l’utilisation de modules HSM pour la protection des clés Key Vault. Customer Key accepte les coffres de clés qui utilisent l’une ou l’autre référence SKU, bien que Microsoft recommande vivement d’utiliser uniquement la référence SKU Premium. Le coût des opérations avec des clés de chaque type est le même. La seule différence de coût est donc le coût par mois pour chaque clé protégée par HSM. Pour plus d’informations, consultez [Key Vault tarification](https://azure.microsoft.com/pricing/details/key-vault/).
   
 > [!IMPORTANT]
-> Utilisez les coffres de clés de référence SKU Premium et les clés protégées par HSM pour les données de production, et utilisez uniquement des coffres de clés de référence SKU standard et des clés à des fins de test et de validation.
+> Utilisez les coffres de clés de référence SKU Premium et les clés protégées par HSM pour les données de production, et utilisez uniquement des coffres de clés de référence SKU Standard et des clés à des fins de test et de validation.
   
-Pour chaque service Microsoft 365 avec lequel vous utiliserez la clé client, créez un coffre de clés dans chacun des deux abonnements Azure que vous avez créés. Par exemple, pour permettre à customer Key d’utiliser des dep pour Exchange Online, SharePoint Online et plusieurs scénarios de charge de travail, vous allez créer trois paires de coffres de clés.
+Pour chaque service Microsoft 365 avec lequel vous utiliserez la clé client, créez un coffre de clés dans chacun des deux abonnements Azure que vous avez créés. Par exemple, pour permettre à customer Key d’utiliser des dep pour Exchange Online, SharePoint Online et des scénarios multi-charges de travail, vous allez créer trois paires de coffres de clés.
   
 Utilisez une convention d’affectation de noms pour les coffres de clés qui reflète l’utilisation prévue du dep avec lequel vous allez associer les coffres. Consultez la section Meilleures pratiques ci-dessous pour connaître les recommandations relatives aux conventions d’affectation de noms.
   
@@ -222,9 +209,9 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
 
 - **Contributeurs de coffre de** clés qui peuvent modifier les autorisations sur le Key Vault Azure lui-même. Vous devez modifier ces autorisations au fur et à mesure que les employés quittent ou rejoignent votre équipe. Dans les rares cas où les administrateurs de coffre de clés ont légitimement besoin d’autorisations pour supprimer ou restaurer une clé, vous devez également modifier les autorisations. Ce jeu de contributeurs de coffre de clés doit avoir le rôle **Contributeur** sur votre coffre de clés. Vous pouvez attribuer ce rôle à l’aide d’Azure Resource Manager. Pour obtenir des instructions détaillées, consultez [Utiliser Role-Based Access Control pour gérer l’accès à vos ressources d’abonnement Azure](/azure/active-directory/role-based-access-control-configure). L’administrateur qui crée un abonnement dispose implicitement de cet accès et de la possibilité d’affecter d’autres administrateurs au rôle Contributeur.
 
-- **Autorisations d’Microsoft 365 applications** pour chaque coffre de clés que vous utilisez pour la clé client, vous devez accorder wrapKey, unwrapKey et obtenir des autorisations sur le principal de service Microsoft 365 correspondant.
+- **Autorisations sur les applications Microsoft 365** pour chaque coffre de clés que vous utilisez pour la clé client, vous devez accorder wrapKey, unwrapKey et obtenir des autorisations sur le principal de service Microsoft 365 correspondant.
 
-  Pour accorder l’autorisation à Microsoft 365 principal de service, exécutez l’applet de commande **Set-AzKeyVaultAccessPolicy** à l’aide de la syntaxe suivante :
+  Pour accorder l’autorisation au principal de service Microsoft 365, exécutez l’applet de commande **Set-AzKeyVaultAccessPolicy** à l’aide de la syntaxe suivante :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -234,7 +221,7 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
    - *le nom du coffre* de clés que vous avez créé.
    - Pour Exchange Online et Skype Entreprise, remplacez *Office 365 appID* par`00000002-0000-0ff1-ce00-000000000000`
    - Pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, remplacez *Office 365 appID* par`00000003-0000-0ff1-ce00-000000000000`
-   - Pour une stratégie multi-charge de travail (Exchange, Teams, Microsoft Purview Information Protection) qui s’applique à tous les utilisateurs locataires, remplacez *Office 365 appID* par`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - Pour une stratégie multi-charge de travail (Exchange, Teams Protection des données Microsoft Purview) qui s’applique à tous les utilisateurs locataires, remplacez *Office 365 appID* par`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   Exemple : Définition des autorisations pour Exchange Online et Skype Entreprise :
 
@@ -242,7 +229,7 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
    ```
 
-  Exemple : Définition d’autorisations pour les fichiers SharePoint Online, OneDrive Entreprise et Teams :
+  Exemple : Définition des autorisations pour les fichiers SharePoint Online, OneDrive Entreprise et Teams :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-SP-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
@@ -259,8 +246,8 @@ Vous devez définir trois ensembles d’autorisations distincts pour chaque coff
 > Veillez à corriger les autorisations sur le service approprié dans lequel vous effectuez l’intégration. Le *nom complet* de chaque service est répertorié ci-dessous :  
   >
   > - Exchange Online et Skype Entreprise : *Office 365 Exchange Online*
-  > - fichiers SharePoint Online, OneDrive et Teams : *Office 365 SharePoint Online*
-  > - Charges de travail Microsoft 365 multiples : *M365DataAtRestEncryption*
+  > - Fichiers SharePoint Online, OneDrive et Teams : *Office 365 SharePoint Online*
+  > - Plusieurs charges de travail Microsoft 365 : *M365DataAtRestEncryption*
   >  
   > Par exemple, l’extrait de code ci-dessous est un exemple de s’assurer que les autorisations sont configurées pour M365DataAtRestEncryption. L’applet de commande ci-dessous avec un coffre nommé *mmcexchangevault* affiche les champs suivants.
   >
@@ -315,7 +302,7 @@ Pour vérifier qu’aucune date d’expiration n’est définie pour vos clés, 
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-La clé client ne peut pas utiliser de clé expirée. Les opérations tentées avec une clé expirée échouent et peuvent entraîner une panne du service. Nous recommandons vivement que les clés utilisées avec la clé client n’aient pas de date d’expiration. Une date d’expiration, une fois définie, ne peut pas être supprimée, mais peut être modifiée à une autre date. Si une clé doit être utilisée avec une date d’expiration définie, remplacez la valeur d’expiration par 12/31/9999. Les clés dont la date d’expiration est définie sur une date autre que le 31/12/9999 ne réussissent pas Microsoft 365 validation.
+La clé client ne peut pas utiliser de clé expirée. Les opérations tentées avec une clé expirée échouent et peuvent entraîner une panne du service. Nous recommandons vivement que les clés utilisées avec la clé client n’aient pas de date d’expiration. Une date d’expiration, une fois définie, ne peut pas être supprimée, mais peut être modifiée à une autre date. Si une clé doit être utilisée avec une date d’expiration définie, remplacez la valeur d’expiration par 12/31/9999. Les clés dont la date d’expiration est définie sur une date autre que le 31/12/9999 ne réussissent pas la validation Microsoft 365.
   
 Pour modifier une date d’expiration qui a été définie sur une valeur autre que le 31/12/9999, exécutez l’applet de commande [Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) comme suit :
   
@@ -328,7 +315,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Vérifier le niveau de récupération de vos clés
 
-Microsoft 365 nécessite que l’abonnement Azure Key Vault soit défini sur Ne pas annuler et que la suppression réversible soit activée pour les clés utilisées par la clé client. Vous pouvez confirmer les paramètres de vos abonnements en examinant le niveau de récupération sur vos clés.
+Microsoft 365 exige que l’abonnement Azure Key Vault soit défini sur Ne pas annuler et que la suppression réversible soit activée pour les clés utilisées par la clé client. Vous pouvez confirmer les paramètres de vos abonnements en examinant le niveau de récupération sur vos clés.
   
 Pour vérifier le niveau de récupération d’une clé, dans Azure PowerShell, exécutez l’applet de commande Get-AzKeyVaultKey comme suit :
   
@@ -356,7 +343,7 @@ Dans Azure PowerShell :
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez effectué les étapes décrites dans cet article, vous êtes prêt à créer et à affecter des dep. Pour obtenir des instructions, consultez [Gérer la clé client](customer-key-manage.md).
 

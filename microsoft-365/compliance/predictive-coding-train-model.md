@@ -13,17 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: 1f94f49f93310ea4b40d588c7c43ecce7ec535cc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment effectuer la première série d’entraînement pour le codage prédictif.
+ms.openlocfilehash: 509e47372655691130be9a4621c973b5e6575f80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091454"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642347"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entraîner un modèle de codage prédictif (préversion)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé un modèle de codage prédictif dans Microsoft Purview eDiscovery (Premium), l’étape suivante consiste à effectuer la première série d’entraînement pour entraîner le modèle sur le contenu pertinent et non pertinent dans votre jeu de révision. Une fois la première série d’entraînement terminée, vous pouvez effectuer des cycles d’entraînement ultérieurs pour améliorer la capacité du modèle à prédire le contenu pertinent et non pertinent.
 
@@ -35,9 +33,9 @@ Pour passer en revue le flux de travail de codage prédictif, consultez [En savo
 
 ## <a name="train-a-model-for-the-first-time"></a>Entraîner un modèle pour la première fois
 
-1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Révision des ensembles**.
+1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Ensembles de révision**.
 
-2. Ouvrez un jeu de révision, puis cliquez sur **le codage prédictif AnalyticsManage** >  (préversion).
+2. Ouvrez un ensemble de révisions, puis cliquez sur **Analytics** > **Manage predictive coding (préversion).**
 
 3. Dans la page **Modèles de codage prédictif (préversion),** sélectionnez le modèle que vous souhaitez entraîner.
 

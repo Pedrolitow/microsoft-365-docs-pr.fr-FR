@@ -19,16 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le rapport pour affiner la stratégie de protection contre la perte de données par défaut de votre organisation.
-ms.openlocfilehash: 893aae6dfbc4e5c9fcf48a8eec53694352ead4f2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d47568f009745edaa8205ce65b4de9b481f58139
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753449"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641491"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Avant même de créer votre première stratégie de Protection contre la perte de données Microsoft Purview (DLP), DLP vous aide à protéger vos informations sensibles avec une stratégie par défaut. Cette stratégie par défaut et sa recommandation (illustrée ci-dessous) permettent de sécuriser votre contenu sensible en vous avertissant lorsque des e-mails ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne externe à votre organisation. Vous verrez cette recommandation sur la page **d’accueil** du portail de conformité Microsoft Purview. 
   
@@ -44,7 +42,7 @@ Le rapport détaillé vous indique quand et combien de contenu contenant des num
   
 Pour protéger les informations sensibles, la stratégie DLP par défaut :
   
-- Détecte quand le contenu dans Exchange, SharePoint et OneDrive contenant au moins un numéro de carte de crédit est partagé avec des personnes extérieures à votre organisation.
+- Détecte quand le contenu dans Exchange, SharePoint et OneDrive qui contient au moins un numéro de carte de crédit est partagé avec des personnes extérieures à votre organisation.
     
 - Affiche un conseil de stratégie et envoie une notification par e-mail aux utilisateurs lorsqu’ils tentent de partager ces informations sensibles avec des personnes extérieures à votre organisation. Pour plus d’informations sur ces options, consultez [Envoyer des notifications par e-mail et afficher des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md).
     
@@ -62,7 +60,7 @@ Pour plus d’informations sur les rapports d’incidents ou la restriction de l
   
 Si vous souhaitez modifier ces options ultérieurement, vous pouvez modifier la stratégie DLP par défaut à tout moment . Consultez la section suivante.
   
-![Paramètres pour le widget nommé Protéger davantage le contenu partagé.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Paramètres du widget nommé Protéger davantage le contenu partagé.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Modifier la stratégie DLP par défaut
 

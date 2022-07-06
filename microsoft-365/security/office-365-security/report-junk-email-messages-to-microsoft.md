@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages, URL, pièces jointes et administrateurs corrects et incorrects à Microsoft à des fins d’analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c967eec1f0bb13523c3e8bdbe2f7a312f35ef27
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 071e6329e16ecfce0e55649869d93ff31dfc9664
+ms.sourcegitcommit: 4a1efedd15146744511378a44a307d44b16f3fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621092"
+ms.locfileid: "66643999"
 ---
 # <a name="report-items-to-microsoft"></a>Signaler des éléments à Microsoft
 
@@ -39,11 +39,11 @@ En outre, les organisations Microsoft 365 avec des administrateurs Microsoft Def
 
 |Méthode|Description|
 |---|---|
-|[Utilisez le portail Soumissions pour envoyer à Microsoft des courriers indésirables, des hameçonnages, des URL et des pièces jointes suspectes](admin-submission.md)|Méthode de création de rapports recommandée pour les administrateurs des organisations avec des boîtes aux lettres Exchange Online (non disponibles dans EOP autonome).|
+|[Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md)|Méthode de création de rapports recommandée pour les administrateurs des organisations avec des boîtes aux lettres Exchange Online (non disponibles dans EOP autonome).|
 |[Activez les modules complémentaires Report Message ou Report Phishing.](enable-the-report-message-add-in.md)|Fonctionne avec Outlook et Outlook sur le web (anciennement Outlook Web App). <br/><br/> Selon votre abonnement, les messages signalés par les utilisateurs avec les compléments sont disponibles dans [le portail Administration Soumissions](admin-submission.md), les [résultats air (Automated investigation and response),](air-view-investigation-results.md) le [rapport des messages signalés par l’utilisateur](view-email-security-reports.md#user-reported-messages-report) et [l’Explorateur](threat-explorer-views.md#email--submissions). <br/><br/> Vous pouvez configurer les messages signalés à copier ou rediriger vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez [les stratégies d’envoi des utilisateurs](user-submission.md).
 |[Signaler les faux positifs et les faux négatifs dans Outlook](report-false-positives-and-false-negatives.md)|Envoyez les faux positifs (e-mails fiables bloqués ou déplacés vers le dossier courrier indésirable) et les faux négatifs (courrier indésirable ou hameçonnage remis dans la boîte de réception) à Exchange Online Protection (EOP) à l’aide de la fonctionnalité Signaler un message.|
 |[Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Découvrez comment créer une règle de flux de courrier (également appelée règle de transport) qui vous avertit lorsque les utilisateurs signalent des messages à Microsoft à des fins d’analyse.|
-|[Envoyer des fichiers suspects à Microsoft à des fins d’analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilisez le site Veille de sécurité Microsoft pour envoyer des pièces jointes et d’autres fichiers.|
+|[Soumettre des programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilisez le site Veille de sécurité Microsoft pour envoyer des pièces jointes et d’autres fichiers.|
 
 > [!NOTE]
 > Lorsque vous signalez une entité de messagerie à Microsoft, nous faisons une copie de tout ce qui est associé à l’e-mail pour l’inclure dans nos révisions d’algorithmes continues. Cette copie inclut le contenu de l’e-mail, les en-têtes d’e-mail et les données associées sur le routage de l’e-mail. Les pièces jointes du message sont également incluses.

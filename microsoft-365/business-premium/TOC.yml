@@ -34,7 +34,7 @@
   items:
     - name: Configurer des appareils non gérés (BYOD)
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-devices-overview.md
         - name: Configurez l’authentification multi-facteurs.
           href: m365bp-multifactor-authentication.md
@@ -52,7 +52,7 @@
           href: send-encrypted-email.md
     - name: Collaborer et partager de manière sécurisée
       items:
-        - name: Vue d’ensemble
+        - name: Aperçu
           href: m365bp-collaborate-share-securely.md
         - name: Créer Teams pour la collaboration
           href: create-teams-for-collaboration.md
@@ -66,7 +66,7 @@
   items:
     - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Vue d’ensemble
+        - name: Aperçu
           href: m365bp-protect-devices.md
         - name: Configurer les appareils gérés
           href: m365bp-managed-devices-setup.md
@@ -104,8 +104,10 @@
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Gérer votre environnement
   items:
-    - name: Aperçu
+    - name: Vue d’ensemble
       href: m365bp-maintain-environment.md
+    - name: Guide d’opérations de sécurité
+      href: m365bp-security-incident-quick-start.md
     - name: Supprimer des utilisateurs
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Ajouter des utilisateurs
