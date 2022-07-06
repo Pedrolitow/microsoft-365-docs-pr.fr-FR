@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances de stratégie DLP, de remplacements ou de faux positifs et voir s’ils sont à la hausse ou à la baisse au fil du temps.
-ms.openlocfilehash: b264a0e0b76397be99d7586ac793dac501b6672e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011615"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641095"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé vos stratégies de protection contre la perte de données (DLP) Microsoft Purview, vous devez vérifier qu’elles fonctionnent comme prévu et vous aider à rester conforme. Avec les rapports DLP dans le portail de conformité Microsoft Purview, vous pouvez afficher rapidement :
 
@@ -62,7 +60,7 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
 
 Tous les rapports DLP peuvent afficher les données de la période de quatre mois la plus récente. Les données les plus récentes peuvent nécessiter jusqu'à 24 heures avant de s’afficher dans les rapports.
 
-Vous trouverez ces rapports dans le tableau de bord **rapports** \> du portail \> de conformité Microsoft Purview **.**
+Vous trouverez ces rapports dans le tableau de bord portail de conformité Microsoft Purview \> **Rapports** \> **.**
 
 ![La stratégie DLP correspond au rapport.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
@@ -82,11 +80,11 @@ Les rapports peuvent afficher des insights et des recommandations dans lesquels 
 
 Pour afficher les rapports DLP dans le Centre de sécurité & conformité, vous devez disposer des éléments suivantes :
 
-- **Rôle Lecteur de sécurité** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans le centre d’administration Exchange.
+- **Rôle Lecteur de sécurité** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans le Centre d’administration Exchange.
 
 - **Rôle De gestion de la conformité DLP en mode affichage uniquement** dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur de sécurité dans le Centre de sécurité & conformité.
 
-- **Rôle Afficher uniquement les destinataires** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation et View-Only Gestion de l’organisation dans le centre d’administration Exchange.
+- **Rôle Afficher uniquement les destinataires** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation et View-Only Gestion de l’organisation dans le Centre d’administration Exchange.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Rechercher les applets de commande pour les rapports DLP
 

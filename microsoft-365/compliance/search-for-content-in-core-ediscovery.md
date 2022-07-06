@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas eDiscovery (Standard).
-ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1c51475602e3a0807932501325e12d93a89fcba3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318921"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638122"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Rechercher du contenu dans un cas eDiscovery (Standard)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Une fois qu’une Microsoft Purview cas eDiscovery (Standard) est créé et que des personnes intéressées par le cas sont mises en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinents pour le cas. Les recherches associées à un cas eDiscovery (Standard) ne sont pas répertoriées dans la page **Recherche de contenu** dans le portail de conformité Microsoft Purview. Ces recherches sont répertoriées dans la page **Recherches** du cas eDiscovery (Standard) à lequel les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
+Une fois qu’un cas Microsoft Purview eDiscovery (Standard) est créé et que des personnes intéressées par le cas sont mises en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinent pour le cas. Les recherches associées à un cas eDiscovery (Standard) ne sont pas répertoriées dans la page **Recherche de contenu** dans le portail de conformité Microsoft Purview. Ces recherches sont répertoriées dans la page **Recherches** du cas eDiscovery (Standard) à lequel les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
 
 Pour créer une recherche eDiscovery (Standard) :
   
@@ -79,6 +77,6 @@ Une fois la recherche terminée, vous pouvez prévisualiser les résultats de re
 
 - Lorsque vous cliquez sur **Choisir des utilisateurs, des groupes ou des équipes** pour spécifier des boîtes aux lettres à rechercher, le sélecteur de boîtes aux lettres affiché est vide. C’est par conception pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur **Choisir des utilisateurs, des groupes ou des équipes**, **tapez** un nom (au moins trois caractères) dans la zone de recherche, activez la case à cocher en regard du nom, puis cliquez sur Choisir.
 
-- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez Microsoft Teams, groupes Yammer ou groupes Office 365, la boîte aux lettres du groupe ou de l’équipe est recherchée ; les boîtes aux lettres des membres du groupe ne sont pas recherchées.
+- Vous pouvez ajouter des boîtes aux lettres inactives, Microsoft Teams, groupes Yammer, groupes Office 365 et groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez Microsoft Teams, des groupes Yammer ou des groupes Office 365, la boîte aux lettres de groupe ou d’équipe est recherchée ; les boîtes aux lettres des membres du groupe ne sont pas recherchées.
 
 - Pour ajouter des sites à la recherche, activez le bouton bascule, puis cliquez sur **Choisir des sites**. Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365.

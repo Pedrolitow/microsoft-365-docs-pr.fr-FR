@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810919"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637282"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Avant de commencer à gérer [les risques internes](insider-risk-management.md) au sein de votre organisation, vos équipes de gestion des technologies de l’information et de la conformité doivent examiner d’importantes activités et considérations de planification. Une compréhension et une planification approfondies du déploiement dans les domaines suivants vous aideront à vous assurer que votre implémentation et votre utilisation des fonctionnalités de gestion des risques internes se déroulent correctement et sont alignées sur les meilleures pratiques pour la solution. 
 
@@ -74,16 +72,16 @@ Vous choisirez parmi ces options de groupe de rôles et actions de solution lors
 
 Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes de rôles de gestion des risques internes et disposer des mêmes autorisations de solution que le groupe de rôles *Insider Risk Management Administration* :
 
-- *administrateur général* Azure Active Directory
-- *administrateur de conformité* Azure Active Directory
+- *Administrateur général* Azure Active Directory
+- *Administrateur de conformité* Azure Active Directory
 - *gestion de l’organisation* portail de conformité Microsoft Purview
 - *Administrateur de conformité* portail de conformité Microsoft Purview
 
 ## <a name="understand-requirements-and-dependencies"></a>Comprendre les exigences et les dépendances
 
-Selon la façon dont vous envisagez d’implémenter des stratégies de gestion des risques internes, vous devez disposer des Microsoft 365 abonnements de licence appropriés et comprendre et planifier certains prérequis de solution.
+Selon la façon dont vous envisagez d’implémenter des stratégies de gestion des risques internes, vous devez disposer des abonnements de licences Microsoft 365 appropriés et comprendre et planifier certains prérequis de solution.
 
-**Licences:** La gestion des risques internes est disponible dans le cadre d’un large éventail d’abonnements de licences Microsoft 365. Pour plus d’informations, consultez l’article [de prise en main de la gestion des risques internes](insider-risk-management-configure.md#subscriptions-and-licensing) .
+**Licences:** La gestion des risques internes est disponible dans le cadre d’une large sélection d’abonnements aux licences Microsoft 365. Pour plus d’informations, consultez l’article [de prise en main de la gestion des risques internes](insider-risk-management-configure.md#subscriptions-and-licensing) .
 
 > [!IMPORTANT]
 > La gestion des risques internes est actuellement disponible dans les locataires hébergés dans des régions géographiques et des pays pris en charge par les dépendances du service Azure. Pour vérifier que la gestion des risques internes est prise en charge pour votre organisation, consultez [la disponibilité des dépendances Azure par pays/région](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -92,10 +90,10 @@ Si vous n’avez pas de plan Microsoft 365 Entreprise E5 et que vous souhaitez e
 
 **Exigences du modèle de stratégie :** Selon le modèle de stratégie que vous choisissez, il existe des exigences que vous devez comprendre et planifier avant de configurer la gestion des risques internes dans votre organisation :
 
-- Lorsque vous utilisez le **modèle De vol de données en quittant le modèle utilisateurs**, vous devez configurer un connecteur rh Microsoft 365 pour importer régulièrement des informations de date de résignation et de résiliation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
+- Lorsque vous utilisez le **modèle De vol de données en quittant le modèle d’utilisateurs** , vous devez configurer un connecteur Rh Microsoft 365 pour importer régulièrement les informations de date de résiliation et de résiliation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
 - Lorsque vous utilisez des modèles de **fuite de données**, vous devez configurer au moins une stratégie de Protection contre la perte de données Microsoft Purview (DLP) pour définir des informations sensibles dans votre organisation et recevoir des alertes de risque interne pour les alertes de stratégie DLP à gravité élevée. Pour obtenir des conseils détaillés sur la configuration de stratégies DLP pour votre organisation, consultez l’article [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md).
 - Lorsque vous utilisez des modèles de violation de stratégie **de sécurité**, vous devez activer Microsoft Defender pour point de terminaison pour l’intégration de la gestion des risques internes dans le Centre de sécurité Defender pour importer des alertes de violation de la sécurité. Pour obtenir des instructions pas à pas pour activer l’intégration de Defender pour point de terminaison à la gestion des risques internes, consultez [Configurer les fonctionnalités avancées dans Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
-- Lorsque vous utilisez des modèles **d’utilisateur dissociés**, vous devez configurer un connecteur rh Microsoft 365 pour importer régulièrement des informations d’état de performances ou de rétrogradation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
+- Lorsque vous utilisez des modèles **utilisateur mécontents** , vous devez configurer un connecteur Microsoft 365 HR pour importer régulièrement des informations d’état de performances ou de rétrogradation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Tester avec un petit groupe d’utilisateurs dans un environnement de production
 
@@ -119,5 +117,5 @@ Partagez la documentation sur la gestion des risques internes avec les parties p
 
 Prêt à configurer la gestion des risques internes pour votre organisation ? Passez en revue les articles suivants :
 
-- [Démarrage avec des paramètres de gestion des risques internes](insider-risk-management-settings.md) pour configurer les paramètres de stratégie globale.
-- [Démarrage avec la gestion des risques internes](insider-risk-management-configure.md) pour configurer les prérequis, créer des stratégies et commencer à recevoir des alertes.
+- [Commencez à utiliser les paramètres de gestion des risques internes](insider-risk-management-settings.md) pour configurer les paramètres de stratégie globale.
+- [Prise en main de la gestion des risques internes](insider-risk-management-configure.md) pour configurer les prérequis, créer des stratégies et commencer à recevoir des alertes.

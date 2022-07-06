@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser l’onglet Test après le calcul Batch dans eDiscovery (Premium) pour tester, comparer et valider la qualité globale du traitement.
-ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5c1fabf677dd305fb91d77e94af0e18304280d45
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095463"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637040"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>Tester l’analyse de pertinence dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
-L’onglet Test dans Microsoft Purview eDiscovery (Premium) vous permet de tester, de comparer et de valider la qualité globale du traitement. Ces tests sont effectués après le calcul Batch. En étiquetant les fichiers de la collection, un expert rend le jugement final sur la pertinence de chaque fichier étiqueté pour l’affaire.
+L’onglet Test de Microsoft Purview eDiscovery (Premium) vous permet de tester, comparer et valider la qualité globale du traitement. Ces tests sont effectués après le calcul Batch. En étiquetant les fichiers de la collection, un expert rend le jugement final sur la pertinence de chaque fichier étiqueté pour l’affaire.
   
 Dans les scénarios à un ou plusieurs problèmes, les tests sont généralement effectués par problème. Les résultats peuvent être affichés après chaque test, et les résultats des tests peuvent être retravaillés avec des exemples de fichiers de test spécifiés.
   

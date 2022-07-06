@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez plus d’informations sur la version d’évaluation des solutions Microsoft Purview et sur la façon de vous inscrire.
-ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185124"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640113"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>À propos de la version d’évaluation des solutions Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les solutions Microsoft Purview contribuent à protéger votre organisation contre les menaces internes résultant d'autorisations inappropriées sur les fichiers et les courriers, et aident votre organisation à se conformer aux exigences réglementaires et commerciales internes.
 
@@ -47,6 +45,7 @@ Les utilisateurs doivent avoir l’un des rôles d’administrateur suivants pou
 - Administrateur de facturation
 - Administrateur de conformité
 - Administrateur général
+- Administrateur de conformité des données
 
 Pour plus d’informations sur les rôles, [consultez à propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 

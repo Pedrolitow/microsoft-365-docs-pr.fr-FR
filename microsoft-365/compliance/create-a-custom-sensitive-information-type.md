@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés dans le Centre de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753515"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638607"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Créer des types d’informations sensibles personnalisés dans le Centre de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si les types d’informations sensibles pré configurés ne répondent pas à vos besoins, vous pouvez créer vos propres types d’informations sensibles personnalisés que vous définissez entièrement, ou vous pouvez copier un des types pré configurés et le modifier.
 

@@ -20,16 +20,14 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment éliminer les résultats de recherche eDiscovery en double afin qu’une seule copie d’un e-mail soit exportée.
-ms.openlocfilehash: 4456ecfb4684562d8ddf7da21c463859f2d9bec2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6a0d4e2b52c6f32b3142414a761a2447805cd58a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091002"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640651"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit le fonctionnement de la dédoublement des résultats de recherche eDiscovery et explique les limitations de l’algorithme de dédoublement.
   
@@ -49,11 +47,11 @@ Pendant le processus d’exportation eDiscovery, ces trois propriétés sont com
   
 Les graphiques suivants montrent comment les messages en double sont affichés dans le **Results.csv** et **Manifest.xml** rapports exportés avec les résultats de la recherche. Ces rapports n’incluent pas les propriétés de messagerie décrites précédemment, qui sont utilisées dans l’algorithme de dédoublement. Au lieu de cela, les rapports incluent la propriété **d’identité** d’élément qui est affectée aux éléments par le magasin Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>rapport Results.csv (affiché dans Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv rapport (affiché dans Excel)
   
 ![Affichage d’informations sur les éléments en double dans le rapport Results.csv.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>rapport Manifest.xml (affiché dans Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml rapport (affiché dans Excel)
   
 ![Affichage d’informations sur les éléments en double dans le rapport Manifest.xml.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   

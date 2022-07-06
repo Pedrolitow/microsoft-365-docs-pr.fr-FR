@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, les numéros de carte de crédit ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014231"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639377"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’identification et la classification des éléments sensibles qui sont sous le contrôle de votre organisation est la première étape de la [discipline Information Protection](./information-protection.md).  Microsoft Purview offre trois façons d’identifier les éléments afin qu’ils puissent être classés :
 
@@ -39,7 +37,7 @@ Microsoft fournit un grand nombre de SIT préconfigurés ou vous pouvez créer l
 
 ## <a name="sensitive-information-types-are-used-in"></a>Les types d’informations sensibles sont utilisés dans
 
-- [Stratégies de protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md)
+- [Protection contre la perte de données Microsoft Purview stratégies](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Étiquettes de rétention](retention.md)
 - [Gestion des risques internes](insider-risk-management.md)
@@ -206,6 +204,6 @@ Vous pouvez choisir parmi plusieurs options pour créer des types d’informatio
 - [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md)
 - [Créer un type d’informations sensibles personnalisé dans PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-Pour savoir comment utiliser des types d’informations sensibles pour se conformer aux réglementations sur la confidentialité des données, consultez [Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Pour savoir comment utiliser des types d’informations sensibles pour se conformer aux réglementations de confidentialité des données, consultez [Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

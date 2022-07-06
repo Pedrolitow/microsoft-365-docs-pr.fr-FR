@@ -16,18 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: En tant qu’administrateur et en tant qu’expéditeur de messages, vous pouvez révoquer certains e-mails chiffrés avec Microsoft Purview Advanced Message Encryption.
-ms.openlocfilehash: 79d09c13755c0c73e4d68598e83ac41344b9281a
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: b27ea41d1d91b825450d39ade96afdef04c0fdea
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187940"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639421"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer les e-mails chiffrés par Advanced Message Encryption
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La révocation des e-mails est proposée dans le cadre du chiffrement avancé des messages Microsoft Purview. Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Pour utiliser les fonctions de révocation et d’expiration d’Advanced Message Encryption, activez l’option **de chiffrement Premium dans Office 365** de votre licence E5.
+La révocation des e-mails est proposée dans le cadre du chiffrement avancé des messages Microsoft Purview. Microsoft Purview Advanced Message Encryption est inclus dans [Microsoft 365 Entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (tarification du personnel à but non lucratif), Office 365 Entreprise E5 (prix du personnel à but non lucratif) et Office 365 Éducation A5. Pour utiliser les fonctions de révocation et d’expiration d’Advanced Message Encryption, activez l’option **Chiffrement Premium dans Office 365** de votre licence E5.
 
 Si votre organisation dispose d’un abonnement qui n’inclut pas Microsoft Purview Advanced Message Encryption, vous pouvez l’acheter avec le module complémentaire de référence SKU Microsoft 365 E5 Conformité pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou le Conformité avancée Office 365 module complémentaire SKU pour Microsoft 365 E3, Microsoft 365 E3 (Prix du personnel à but non lucratif) ou Office 365 références SKU.
 
@@ -42,7 +40,7 @@ Si un message a été chiffré à l’aide de Microsoft Purview Advanced Message
 
 Les administrateurs et les expéditeurs de messages peuvent révoquer des e-mails chiffrés si le destinataire a reçu un e-mail chiffré de marque basé sur un lien. Si le destinataire a reçu une expérience inline native dans un client Outlook pris en charge, vous ne pouvez pas révoquer le message.
 
-Le fait qu’un destinataire reçoive une expérience basée sur des liens ou une expérience inline dépend du type d’identité du destinataire : les destinataires Office 365 et de compte Microsoft (par exemple, les utilisateurs outlook.com) bénéficient d’une expérience inline dans les clients Outlook pris en charge. Tous les autres types de destinataires, tels que les destinataires Gmail et Yahoo, bénéficient d’une expérience basée sur des liens.
+Le fait qu’un destinataire reçoive une expérience basée sur un lien ou une expérience inline dépend du type d’identité du destinataire : Office 365 et les destinataires de compte Microsoft (par exemple, outlook.com utilisateurs) bénéficient d’une expérience inline dans les clients Outlook pris en charge. Tous les autres types de destinataires, tels que les destinataires Gmail et Yahoo, bénéficient d’une expérience basée sur des liens.
 
 Les administrateurs et les expéditeurs de messages peuvent révoquer les messages chiffrés à l’aide du chiffrement appliqué directement à partir de Outlook sur le web. Par exemple, les messages chiffrés avec l’option Chiffrer uniquement.
 
@@ -58,7 +56,7 @@ Une fois qu’un e-mail a été révoqué, le destinataire reçoit une erreur lo
 
 Vous pouvez révoquer un courrier que vous avez envoyé à un seul destinataire qui utilise un compte social tel que gmail.com ou yahoo.com. En d’autres termes, vous pouvez révoquer un e-mail envoyé à un seul destinataire qui a reçu l’expérience basée sur le lien.
 
-Vous ne pouvez pas révoquer un courrier que vous avez envoyé à un destinataire qui utilise un compte professionnel ou scolaire à partir d’Office 365 ou d’un Microsoft 365 ou d’un utilisateur qui utilise un compte Microsoft, par exemple un compte outlook.com. 
+Vous ne pouvez pas révoquer un courrier que vous avez envoyé à un destinataire qui utilise un compte professionnel ou scolaire de Office 365 ou Microsoft 365 ou un utilisateur qui utilise un compte Microsoft, par exemple, un compte outlook.com. 
 
 Pour révoquer un message chiffré que vous avez envoyé, procédez comme suit
 
@@ -76,7 +74,7 @@ Pour révoquer un message chiffré que vous avez envoyé, procédez comme suit
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>Comment révoquer un message chiffré en tant qu’administrateur
 
-Microsoft 365 administrateurs suivent ces étapes générales pour révoquer un e-mail chiffré éligible :
+Les administrateurs Microsoft 365 suivent ces étapes générales pour révoquer un e-mail chiffré éligible :
 
 - Obtenez l’ID de message de l’e-mail.
 - Vérifiez que vous pouvez révoquer le message.
@@ -138,7 +136,7 @@ Pour révoquer le message à l’aide du Centre de conformité de sécurité &am
 
 Pour révoquer un e-mail à l’aide de Windows PowerShell, utilisez l’applet de commande Set-OMEMessageRevocation.
 
-1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez l’applet de commande Set-OMEMessageRevocation comme suit :
 

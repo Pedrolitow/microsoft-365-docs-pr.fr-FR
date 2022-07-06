@@ -13,17 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: da8ea6f996735edb91b7191bbcf90df02e134428
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez les concepts clés et les métriques de l’outil de codage prédictif dans Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 59718c033fb297a7ef583611c207794cd7b69b6f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091476"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640541"
 ---
 # <a name="predictive-coding-reference-preview"></a>Informations de référence sur le codage prédictif (préversion)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit les concepts clés et les métriques de l’outil de codage prédictif dans Microsoft Purview eDiscovery (Premium). Les sections de l’article sont répertoriées par ordre alphabétique.
 

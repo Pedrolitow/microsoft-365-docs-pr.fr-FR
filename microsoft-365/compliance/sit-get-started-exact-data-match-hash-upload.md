@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Hachez et chargez la table source d’informations sensibles pour que les données exactes correspondent aux types d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437632"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641293"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article vous montre comment hacher et charger votre table source d’informations sensibles.
 
@@ -35,14 +33,14 @@ Cet article vous montre comment hacher et charger votre table source d’informa
 Dans cette phase, vous :
 
 1. configurer un groupe de sécurité et un compte d’utilisateur personnalisés
-2. configurer l’outil EDM Télécharger Agent
-3. Utilisez l’outil EDM Télécharger Agent pour le hachage, avec une valeur salt, la table source d’informations sensibles et chargez-la.
+2. configurer l’outil EDM Upload Agent
+3. Utilisez l’outil Agent de chargement EDM pour le hachage, avec une valeur salt, la table source d’informations sensibles et chargez-le.
 
 L’opération de hachage et de chargement peut être effectuée à l’aide d’un ordinateur ou vous pouvez séparer ces deux étapes pour renforcer la sécurité.
 
 Si vous voulez hacher et charger à partir d’un ordinateur, vous devez le faire à partir d’un ordinateur qui peut se connecter directement à votre client Microsoft 365. Cela nécessite que votre fichier de table source d’informations sensibles en texte clair se trouve sur cet ordinateur pour le hachage.
 
-Si vous ne souhaitez pas exposer votre fichier de table source d’informations sensibles en texte clair sur l’ordinateur à accès direct, vous pouvez le hacher sur un ordinateur qui se trouve dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre client Microsoft 365 pour le chargement. Dans le scénario de hachage et de chargement séparés, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
+Si vous ne souhaitez pas exposer votre fichier de table source d’informations sensibles en texte clair sur l’ordinateur à accès direct, vous pouvez le hacher sur un ordinateur qui se trouve dans un emplacement sécurisé, puis copier le fichier de hachage et le fichier salt sur un ordinateur qui peut se connecter directement à votre locataire Microsoft 365 pour le chargement. Dans le scénario de hachage et de chargement séparés, vous aurez besoin d’EDMUploadAgent sur les deux ordinateurs.
 
 > [!IMPORTANT]
 > Si vous avez utilisé l’Assistant Correspondance exacte des données et type d’informations sensibles pour créer votre fichier de schéma, vous ***devez*** télécharger le schéma de cette procédure si vous ne l’avez pas déjà fait. Consultez [l’article Exporter le fichier de schéma EDM au format XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
@@ -78,7 +76,7 @@ Si l’outil indique une incompatibilité dans le nombre de colonnes, cela peut 
 - Un compte professionnel ou scolaire pour Microsoft 365 qui sera ajouté au groupe de sécurité **EDM\_DataUploaders**
 - une machine Windows 10 ou Windows Server 2016 avec .NET version 4.6.2 <!--4.7.2 un comment this around 9/29-->pour l’exécution d’EDMUploadAgent
 - Un répertoire sur votre ordinateur de téléchargement pour :
-  - [EDM Télécharger Agent](#links-to-edm-upload-agent-by-subscription-type)
+  - [Agent de chargement EDM](#links-to-edm-upload-agent-by-subscription-type)
   - votre fichier d’élément sensible au format .csv, .tsv ou pipe (|), **PatientRecords.csv** dans nos exemples
   - les fichiers de hachage et de sel de sortie créés dans cette procédure
   - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
@@ -120,7 +118,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
    >
    > Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
 
-3. Autorisez l’agent Télécharger EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers le répertoire **C:\EDM\Data**, puis exécutez la commande suivante :
+3. Autorisez l’agent de chargement EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers le répertoire **C:\EDM\Data** , puis exécutez la commande suivante :
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -195,7 +193,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. Copiez ces fichiers de manière sécurisée sur l’ordinateur que vous utiliserez pour charger votre fichier de table source d’informations sensibles (PatientRecords) sur votre locataire.
 
-3. Autorisez l’agent Télécharger EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers le répertoire **C:\EDM\Data**, puis exécutez la commande suivante :
+3. Autorisez l’agent de chargement EDM, ouvrez la fenêtre d’invite de commandes en tant qu’administrateur, basculez vers le répertoire **C:\EDM\Data** , puis exécutez la commande suivante :
 
    ```dos
    EdmUploadAgent.exe /Authorize

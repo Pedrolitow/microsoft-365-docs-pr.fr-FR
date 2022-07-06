@@ -19,23 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier dans les recherches exécutées avec les outils eDiscovery dans Office 365.
-ms.openlocfilehash: 694d850d568aee4965530317f9bbc9f95727338c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: db7026672af0e3abfcee524757a63c9747ff06e7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092776"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638563"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche eDiscovery estimés et réels
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Cet article s’applique aux recherches que vous pouvez exécuter à l’aide de l’un des outils eDiscovery Microsoft 365 suivants : 
+Cet article s’applique aux recherches que vous pouvez exécuter à l’aide de l’un des outils Microsoft 365 eDiscovery suivants : 
 
 - Recherche de contenu
 - eDiscovery (Standard)
 
-Lorsque vous exécutez une recherche eDiscovery, l’outil que vous utilisez retourne une estimation du nombre d’éléments (et de leur taille totale) qui correspondent aux critères de recherche. Par exemple, lorsque vous exécutez une recherche dans le portail de conformité Microsoft Purview, les résultats estimés de la recherche sont affichés dans la page de menu volant de la recherche sélectionnée.
+Lorsque vous exécutez une recherche eDiscovery, l’outil que vous utilisez retourne une estimation du nombre d’éléments (et de leur taille totale) qui correspondent aux critères de recherche. Par exemple, lorsque vous exécutez une recherche dans le portail de conformité Microsoft Purview, les résultats estimés de la recherche sont affichés dans la page volante de la recherche sélectionnée.
   
 ![Estimation des résultats affichés dans la page de menu volant de recherche.](../media/EstimatedSearchResults1.png)
   
@@ -81,23 +79,23 @@ Voici quelques raisons pour ces différences :
 
     La raison pour laquelle l’exportation d’éléments non indexés à partir de chaque emplacement de l’organisation peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps nécessaire pour exporter et télécharger les résultats de la recherche.
 
-- **Les éléments non indexés dans SharePoint et OneDrive non inclus dans les estimations de recherche**. Les éléments non indexés des sites SharePoint et des comptes OneDrive Entreprise ne sont pas inclus dans les résultats de recherche estimés. Cela est dû au fait que l’index SharePoint ne contient pas de données pour les éléments non indexés. Seuls les éléments non indexés des boîtes aux lettres sont inclus dans les estimations de recherche. Toutefois, si vous incluez des éléments non indexés lors de l’exportation des résultats de recherche, les éléments non indexés dans SharePoint et OneDrive sont inclus, ce qui augmente le nombre d’éléments réellement exportés. Cela entraîne des différences entre les résultats estimés (qui n’incluent pas les éléments non indexés dans les sites SharePoint et OneDrive) et les éléments réels téléchargés. La règle d’exportation d’éléments non indexés uniquement à partir d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche s’applique toujours dans cette situation.
+- **Éléments non indexés dans SharePoint et OneDrive non inclus dans les estimations de recherche**. Les éléments non indexés des sites SharePoint et des comptes OneDrive Entreprise ne sont pas inclus dans les résultats de recherche estimés. Cela est dû au fait que l’index SharePoint ne contient pas de données pour les éléments non indexés. Seuls les éléments non indexés des boîtes aux lettres sont inclus dans les estimations de recherche. Toutefois, si vous incluez des éléments non indexés lors de l’exportation des résultats de recherche, les éléments non indexés dans SharePoint et OneDrive sont inclus, ce qui augmente le nombre d’éléments réellement exportés. Cela entraîne des différences entre les résultats estimés (qui n’incluent pas les éléments non indexés dans les sites SharePoint et OneDrive) et les éléments réels téléchargés. La règle d’exportation d’éléments non indexés uniquement à partir d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche s’applique toujours dans cette situation.
 
-- **Documentez les versions dans SharePoint et OneDrive**. Lors de la recherche SharePoint sites et de comptes OneDrive, plusieurs versions d’un document ne sont pas incluses dans le nombre estimé de résultats de recherche. Toutefois, vous avez la possibilité d’inclure toutes les versions de document lorsque vous exportez les résultats de la recherche. Si vous incluez des versions de document lors de l’exportation des résultats de recherche, le nombre réel (et la taille totale) des éléments exportés sera augmenté.
+- **Documentez les versions dans SharePoint et OneDrive**. Lors de la recherche de sites SharePoint et de comptes OneDrive, plusieurs versions d’un document ne sont pas incluses dans le nombre de résultats de recherche estimés. Toutefois, vous avez la possibilité d’inclure toutes les versions de document lorsque vous exportez les résultats de la recherche. Si vous incluez des versions de document lors de l’exportation des résultats de recherche, le nombre réel (et la taille totale) des éléments exportés sera augmenté.
 
-- **SharePoint dossiers**. Si les dossiers dans SharePoint correspondent à une requête de recherche, par exemple, la recherche par date, l’estimation de recherche inclut un nombre de ces dossiers avec la dernière plage de dates modifiées (mais pas les éléments de ces dossiers). Lorsque vous exportez les résultats de la recherche, les éléments du dossier sont exportés, mais le dossier réel n’est pas exporté. Le résultat est que le nombre d’éléments exportés sera supérieur au nombre estimé de résultats de recherche. Si un dossier est vide, le nombre de résultats de recherche réels exportés est réduit d’un élément, car le dossier réel n’est pas exporté.
-
-   > [!NOTE]
-   > Lors de l’exécution d’une recherche basée sur une requête, vous pouvez exclure SharePoint dossiers en ajoutant la condition suivante à la requête : `NOT(ContentType:folder)`.
-
-- **SharePoint listes**. Si le nom d’une liste SharePoint correspond à une requête de recherche, l’estimation de recherche inclut un nombre de tous les éléments de la liste. Lorsque vous exportez les résultats de la recherche, la liste (et les éléments de liste) est exportée en tant que fichier CSV unique. Cela réduit le nombre réel d’éléments réellement exportés. Si la liste contient des pièces jointes, les pièces jointes sont exportées en tant que documents distincts, ce qui augmente également le nombre d’éléments exportés.
+- **Dossiers SharePoint**. Si les dossiers dans SharePoint correspondent à une requête de recherche, par exemple, la recherche par date, l’estimation de recherche inclut un nombre de ces dossiers avec la dernière plage de dates modifiées (mais pas les éléments de ces dossiers). Lorsque vous exportez les résultats de la recherche, les éléments du dossier sont exportés, mais le dossier réel n’est pas exporté. Le résultat est que le nombre d’éléments exportés sera supérieur au nombre estimé de résultats de recherche. Si un dossier est vide, le nombre de résultats de recherche réels exportés est réduit d’un élément, car le dossier réel n’est pas exporté.
 
    > [!NOTE]
-   > Lors de l’exécution d’une recherche basée sur une requête, vous pouvez exclure SharePoint listes en ajoutant la condition suivante à la requête : `NOT(ContentType:list)`.
+   > Lors de l’exécution d’une recherche basée sur une requête, vous pouvez exclure les dossiers SharePoint en ajoutant la condition suivante à la requête : `NOT(ContentType:folder)`.
 
-- **Formats de fichiers bruts par rapport aux formats de fichier exportés**. Pour Exchange éléments, la taille estimée des résultats de recherche est calculée à l’aide des tailles de message brutes Exchange. Toutefois, les messages électroniques sont exportés dans un fichier PST ou en tant que messages individuels (qui sont mis en forme en tant que fichiers EML). Ces deux options d’exportation utilisent un format de fichier différent de celui des messages Exchange bruts, ce qui entraîne une taille de fichier exportée totale différente de la taille de fichier estimée.
+- **Listes SharePoint**. Si le nom d’une liste SharePoint correspond à une requête de recherche, l’estimation de recherche inclut un nombre de tous les éléments de la liste. Lorsque vous exportez les résultats de la recherche, la liste (et les éléments de liste) est exportée en tant que fichier CSV unique. Cela réduit le nombre réel d’éléments réellement exportés. Si la liste contient des pièces jointes, les pièces jointes sont exportées en tant que documents distincts, ce qui augmente également le nombre d’éléments exportés.
 
-- **Dédoublement des éléments Exchange pendant l’exportation**. Pour Exchange éléments, la dédoublement réduit le nombre d’éléments exportés. Vous avez la possibilité de dédupliquer les résultats de la recherche lorsque vous les exportez. Pour Exchange messages, cela signifie qu’une seule instance d’un message est exportée, même si ce message peut se trouver dans plusieurs boîtes aux lettres. Les résultats de recherche estimés incluent chaque instance d’un message. Par conséquent, si vous choisissez l’option de dédoublement lors de l’exportation des résultats de recherche, le nombre réel d’éléments exportés peut être considérablement inférieur au nombre estimé d’éléments.
+   > [!NOTE]
+   > Lors de l’exécution d’une recherche basée sur une requête, vous pouvez exclure les listes SharePoint en ajoutant la condition suivante à la requête : `NOT(ContentType:list)`.
+
+- **Formats de fichiers bruts par rapport aux formats de fichier exportés**. Pour les éléments Exchange, la taille estimée des résultats de recherche est calculée à l’aide des tailles de message Exchange brutes. Toutefois, les messages électroniques sont exportés dans un fichier PST ou en tant que messages individuels (qui sont mis en forme en tant que fichiers EML). Ces deux options d’exportation utilisent un format de fichier différent de celui des messages Exchange bruts, ce qui entraîne une taille de fichier exportée totale différente de la taille de fichier estimée.
+
+- **Dédoublement des éléments Exchange pendant l’exportation**. Pour les éléments Exchange, la dédoublement réduit le nombre d’éléments exportés. Vous avez la possibilité de dédupliquer les résultats de la recherche lorsque vous les exportez. Pour les messages Exchange, cela signifie qu’une seule instance d’un message est exportée, même si ce message peut se trouver dans plusieurs boîtes aux lettres. Les résultats de recherche estimés incluent chaque instance d’un message. Par conséquent, si vous choisissez l’option de dédoublement lors de l’exportation des résultats de recherche, le nombre réel d’éléments exportés peut être considérablement inférieur au nombre estimé d’éléments.
 
 Le rapport de résultats de recherche (fichier Results.csv) contient une entrée pour chaque message en double et identifie la boîte aux lettres source où se trouve un message en double. Cela vous permet d’identifier toutes les boîtes aux lettres qui contiennent un message en double.
 

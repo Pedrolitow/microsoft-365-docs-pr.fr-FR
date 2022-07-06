@@ -17,17 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez apprendre à exporter, configurer et afficher Microsoft 365 enregistrements du journal d’audit.
-ms.openlocfilehash: 73771e41c785bbf74c843821400b65a7049b902a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Dans cet article, vous allez apprendre à exporter, configurer et afficher les enregistrements du journal d’audit Microsoft 365.
+ms.openlocfilehash: b528dcd669749198490b028db4bbd18fe313f1ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098083"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640091"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir recherché le journal d’audit et téléchargé les résultats de la recherche dans un fichier CSV, le fichier contient une colonne nommée **AuditData**, qui contient des informations supplémentaires sur chaque événement. Les données de cette colonne sont mises en forme en tant qu’objet JSON, qui contient plusieurs propriétés configurées en tant que paires *property:value* séparées par des virgules. Vous pouvez utiliser la fonctionnalité de transformation JSON dans le Éditeur Power Query dans Excel pour fractionner chaque propriété de l’objet JSON de la colonne **AuditData** en plusieurs colonnes afin que chaque propriété ait sa propre colonne. Cela vous permet de trier et de filtrer une ou plusieurs de ces propriétés, ce qui peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez.
 
@@ -118,7 +116,7 @@ Les résultats de la recherche sont exportés vers un fichier CSV nommé *PowerS
 
 Vous pouvez également utiliser le nom ou la valeur d’énumération pour le type d’enregistrement comme valeur du paramètre *RecordType* . Pour obtenir la liste des noms de types d’enregistrements et leurs valeurs d’énumération correspondantes, consultez la table *AuditLogRecordType* dans [Office 365 schéma de l’API Activité de gestion](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-Vous ne pouvez inclure qu’une seule valeur pour le paramètre *RecordType* . Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez réexécuter les deux commandes précédentes pour spécifier un autre type d’enregistrement et ajouter ces résultats au fichier CSV d’origine. Par exemple, vous exécutez les deux commandes suivantes pour ajouter SharePoint activités de fichier de la même plage de dates au fichier PowerShellAuditlog.csv.
+Vous ne pouvez inclure qu’une seule valeur pour le paramètre *RecordType* . Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez réexécuter les deux commandes précédentes pour spécifier un autre type d’enregistrement et ajouter ces résultats au fichier CSV d’origine. Par exemple, vous exécutez les deux commandes suivantes pour ajouter des activités de fichier SharePoint de la même plage de dates au fichier PowerShellAuditlog.csv.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
@@ -128,10 +126,10 @@ $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -Re
 $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
 ```
 
-## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>Astuces pour l’exportation et l’affichage du journal d’audit
+## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>Conseils pour l’exportation et l’affichage du journal d’audit
 
 Voici quelques conseils et exemples d’exportation et d’affichage du journal d’audit avant et après l’utilisation de la fonctionnalité de transformation JSON pour fractionner la colonne **AuditData** en plusieurs colonnes.
 
-- Filtrez la colonne **RecordType** pour afficher uniquement les enregistrements d’un service ou d’une zone fonctionnelle spécifique. Par exemple, pour afficher les événements liés à SharePoint partage, vous devez sélectionner **14** (valeur d’énumération pour les enregistrements déclenchés par SharePoint activités de partage). Pour obtenir la liste des services qui correspondent aux valeurs d’énumération affichées dans la colonne **RecordType** , consultez [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md).
+- Filtrez la colonne **RecordType** pour afficher uniquement les enregistrements d’un service ou d’une zone fonctionnelle spécifique. Par exemple, pour afficher les événements liés au partage SharePoint, vous devez sélectionner **14** (valeur d’énumération pour les enregistrements déclenchés par les activités de partage SharePoint). Pour obtenir la liste des services qui correspondent aux valeurs d’énumération affichées dans la colonne **RecordType** , consultez [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md).
 
 - Filtrez la colonne **Opérations** pour afficher les enregistrements pour des activités spécifiques. Pour obtenir la liste de la plupart des opérations qui correspondent à une activité pouvant faire l’objet d’une recherche dans l’outil de recherche de journal d’audit dans le portail de conformité, consultez la section « Activités auditées » dans [le journal d’audit](search-the-audit-log-in-security-and-compliance.md#audited-activities).

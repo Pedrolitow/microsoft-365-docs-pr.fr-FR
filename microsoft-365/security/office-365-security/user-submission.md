@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607584"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636422"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -32,7 +32,7 @@ ms.locfileid: "66607584"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir les messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs signalent des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter les messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et à Microsoft). Cette fonctionnalité fonctionne avec les options de création de rapports de messages suivantes :
 
@@ -51,9 +51,9 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - [Identifiez la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- [Créer une stratégie anti-programme malveillant](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) pour la boîte aux lettres personnalisée où
-  - Le vidage automatique de zéro heure (ZAP) pour les programmes malveillants est désactivé (la section **Paramètres de protection** > **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionné).
-  - L’option de filtre de pièce jointe commune est désactivée (la section **Paramètres de protection** > **Activer le filtre de pièces jointes communs** n’est pas sélectionnée).
+- [Créez une stratégie anti-programme malveillant](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies) pour la boîte aux lettres personnalisée avec les paramètres suivants :
+  - Le vidage automatique de zéro heure (ZAP) pour les programmes **malveillants** est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
+  - L’option de filtre de pièce jointe commune est désactivée (la section \>**Paramètres de protection** **active le filtre de pièces jointes commun** n’est pas sélectionné).
 
 Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les messages signalés :
 

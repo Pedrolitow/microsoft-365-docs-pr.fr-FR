@@ -15,22 +15,20 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment configurer des Rights Management d’informations (IRM) dans Exchange Online pour utiliser un serveur AD RMS (Active Directory Rights Management Service).
+description: Découvrez comment configurer la gestion des droits relatifs à l’information (IRM) dans Exchange Online pour utiliser un serveur AD RMS (Active Directory Rights Management Service).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dac33407a9a45da59d0b3a766ab8a695a0f5a076
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5bd4a104d4cceedbdb82c1ff2baac0b547b74fbe
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018138"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637502"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configuration de la Gestion des droits relatifs à l’information (IRM) pour utiliser un serveur AD RMS local
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Pour une utilisation avec des déploiements locaux, gestion des droits relatifs à l’information (IRM) dans Exchange Online utilise Active Directory Rights Management Services (AD RMS), une technologie de protection des informations dans Windows Server 2008 et versions ultérieures. La protection IRM permet d'appliquer un modèle de stratégie de droits AD RMS à un message électronique. Les droits sont attachés au message lui-même afin que la protection se produise en ligne et hors connexion, à l’intérieur et à l’extérieur du pare-feu de votre organisation.
 
-Pour une utilisation avec des déploiements locaux, l’Rights Management d’informations (IRM) dans Exchange Online utilise Active Directory Rights Management Services (AD RMS), une technologie de protection des informations dans Windows Server 2008 et versions ultérieures. La protection IRM permet d'appliquer un modèle de stratégie de droits AD RMS à un message électronique. Les droits sont attachés au message lui-même afin que la protection se produise en ligne et hors connexion, à l’intérieur et à l’extérieur du pare-feu de votre organisation.
-
-Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS. Pour plus d’informations sur l’utilisation de Microsoft Purview Message Encryption avec Azure Active Directory et Azure Rights Management, consultez la FAQ sur le [chiffrement](./ome-faq.yml) des messages.
+Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS. Pour plus d’informations sur l’utilisation de Chiffrement de messages Microsoft Purview avec Azure Active Directory et Azure Rights Management, consultez la FAQ sur le [chiffrement](./ome-faq.yml) des messages.
 
 Pour en savoir plus sur la Gestion des droits relatifs à l'information dans Exchange Online, consultez la rubrique [Gestion des droits relatifs à l'information (IRM) dans Exchange Online](information-rights-management-in-exchange-online.md).
 
@@ -42,9 +40,9 @@ Pour en savoir plus sur la Gestion des droits relatifs à l'information dans Exc
 
 - Le serveur AD RMS doit exécuter Windows Server 2008 ou une version ultérieure. Pour plus d'informations sur le déploiement d'AD RMS, consultez [Installation d'un cluster AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- Pour plus d’informations sur l’installation et la configuration de Windows PowerShell et la connexion au service, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Pour plus d’informations sur l’installation et la configuration de Windows PowerShell et la connexion au service, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cette rubrique, consultez [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Pour plus d’informations sur les raccourcis clavier qui peuvent s’appliquer aux procédures de cette rubrique, consultez [raccourcis clavier pour le Centre d’administration Exchange dans Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).

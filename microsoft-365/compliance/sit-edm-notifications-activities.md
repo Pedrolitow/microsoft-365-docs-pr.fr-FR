@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: En savoir plus sur la création des notifications pour les activités de correspondance de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a0e3c50d9dc540bf76187e6aedcbd5642d250b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 1a9c629e5258efd096ce1412a7a42bc7bc672008
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66009385"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641337"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Créer des notifications pour les activités de correspondance de données exactes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous [créez des types d’informations sensibles personnalisés avec correspondance exacte de données (EDM),](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)un certain nombre d’activités sont créées dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) Vous pouvez utiliser la cmdlet PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) pour créer des notifications qui vous avertiront de l’événement :
 

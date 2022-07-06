@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez les événements consignés lorsque les utilisateurs auxquels des autorisations eDiscovery sont attribuées effectuent des tâches de recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 416cc91a0eb1c97f43c5d279cd47b68c115c3b71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015493"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639355"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Rechercher des activités eDiscovery dans le journal d’audit
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Les activités liées à la recherche de contenu et à la découverte électronique (pour Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) qui sont effectuées dans le portail de conformité Microsoft Purview ou en exécutant les applets de commande PowerShell correspondantes sont consignées dans le journal d’audit. Les événements sont consignés lorsque les administrateurs ou les gestionnaires eDiscovery (ou les autorisations eDiscovery affectées par l’utilisateur) effectuent les tâches de recherche de contenu et eDiscovery (Standard) suivantes dans le portail de conformité :
+Activités liées à la recherche de contenu et à la découverte électronique (pour Microsoft Purview eDiscovery (Standard) et Microsoft Purview eDiscovery (Premium)) effectuées dans portail de conformité Microsoft Purview  ou en exécutant les applets de commande PowerShell correspondantes, elles sont enregistrées dans le journal d’audit. Les événements sont consignés lorsque les administrateurs ou les gestionnaires eDiscovery (ou les autorisations eDiscovery affectées par l’utilisateur) effectuent les tâches de recherche de contenu et eDiscovery (Standard) suivantes dans le portail de conformité :
   
 - Création et gestion des cas eDiscovery (Standard) et eDiscovery (Premium)
 
@@ -52,7 +50,7 @@ Actuellement, vous devez effectuer quelques opérations spécifiques pour affich
 
 2. Dans le volet de navigation gauche du portail de conformité, cliquez sur **Audit**.
 
-3. Dans la liste **déroulante Activités**, sous **activités eDiscovery** ou activités **eDiscovery (Premium),** cliquez sur une ou plusieurs activités à rechercher.
+3. Dans la liste **déroulante Activités** , sous **activités eDiscovery** ou **activités eDiscovery (Premium),** cliquez sur une ou plusieurs activités à rechercher.
 
     > [!NOTE]
     > La liste **déroulante Activités** inclut également un groupe d’activités nommées activités **d’applet de commande eDiscovery** qui retournent des enregistrements à partir du journal d’audit des applets de commande.
@@ -69,7 +67,7 @@ Actuellement, vous devez effectuer quelques opérations spécifiques pour affich
 
     Une page **Détails** s’affiche et contient les propriétés détaillées de l’enregistrement d’événement. Pour afficher des détails supplémentaires, cliquez sur **Plus d’informations**. Pour obtenir une description de ces propriétés, consultez la section [Propriétés détaillées pour les activités eDiscovery](#detailed-properties-for-ediscovery-activities) .
 
-9. Si vous le souhaitez, vous pouvez exporter les résultats de la recherche dans le journal d’audit vers un fichier CSV, puis utiliser la fonctionnalité Excel Power Query pour mettre en forme et filtrer ces enregistrements. Pour plus d’informations, consultez [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
+9. Si vous le souhaitez, vous pouvez exporter les résultats de la recherche dans le journal d’audit dans un fichier CSV, puis utiliser la fonctionnalité Excel Power Query pour mettre en forme et filtrer ces enregistrements. Pour plus d’informations, consultez [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>Activités de découverte électronique
 
@@ -104,7 +102,7 @@ Le tableau suivant décrit les activités de recherche de contenu et eDiscovery 
 |Résultats préliminaires de la recherche de contenu  <br/> |SearchPreviewed  <br/> |N/A  <br/> |Un utilisateur a aperçu les résultats d’une recherche de contenu.  <br/> |
 |Résultats purgés de la recherche de contenu  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a purgé les résultats d’une recherche de contenu en exécutant la commande **New-ComplianceSearchAction -Purge** .  <br/> |
 |Suppression de l’analyse de la recherche de contenu  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Une action de préparation de la recherche de contenu (pour préparer les résultats de la recherche pour eDiscovery (Premium)) a été supprimée. Si l’action de préparation date de moins de deux semaines, les résultats de recherche préparés pour eDiscovery (Premium) ont été supprimés de la zone de stockage Microsoft Azure. Si l’action de préparation était antérieure à 2 semaines, cet événement indique que seule l’action de préparation correspondante a été supprimée.  <br/> |
-|Suppression de l’exportation de la recherche de contenu  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Une action d’exportation de recherche de contenu a été supprimée. Si l’action d’exportation date de moins de deux semaines, les résultats de recherche chargés dans la zone de stockage Microsoft Azure ont été supprimés. Si l’action d’exportation était antérieure à 2 semaines, cet événement indique que seule l’action d’exportation correspondante a été supprimée.  <br/> |
+|Suppression de l’exportation de la recherche de contenu  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Une action d’exportation de recherche de contenu a été supprimée. Si l’action d’exportation date de moins de deux semaines, les résultats de recherche qui ont été chargés dans la zone de stockage Microsoft Azure ont été supprimés. Si l’action d’exportation était antérieure à 2 semaines, cet événement indique que seule l’action d’exportation correspondante a été supprimée.  <br/> |
 |Membre supprimé du cas eDiscovery  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Un utilisateur a été supprimé en tant que membre d’un cas eDiscovery.  <br/> |
 |Suppression des résultats d’aperçu de la recherche de contenu  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |Une action de recherche de contenu en préversion a été supprimée.  <br/> |
 |Suppression de l’action de vidage effectuée lors de la recherche de contenu  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Une action de vidage de recherche de contenu a été supprimée.  <br/> |
@@ -127,7 +125,7 @@ Le tableau suivant décrit les activités eDiscovery (Premium) journalisées dan
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
 |Ajouter des données dans un autre ensemble à réviser|AddWorkingSetQueryToWorkingSet|L’utilisateur a ajouté des documents d’un ensemble à réviser à un autre.|
-|Données ajoutées au groupe à réviser|AddQueryToWorkingSet|L’utilisateur a ajouté les résultats de recherche d’une recherche de contenu associée à un cas eDiscovery (Premium) à un jeu de révision.|
+|Données ajoutées au groupe à réviser|AddQueryToWorkingSet|L’utilisateur a ajouté les résultats de recherche d’une recherche de contenu associée à un cas eDiscovery (Premium) à un ensemble de révisions.|
 |Ajout de données ne relevant pas de Microsoft 365 à un jeu à réviser|AddNonOffice365DataToWorkingSet|L’utilisateur a ajouté des données ne relevant pas de Microsoft 365 à un jeu à réviser.|
 |Ajout de documents corrigés au groupe révision|AddRemediatedData|L’utilisateur charge les documents qui comportent des erreurs d’indexation qui ont été corrigées dans un groupe de révision.|
 |Données analysées dans le groupe révision|RunAlgo|L’utilisateur a exécuté Analytics sur les documents d’un groupe de révision.|
@@ -211,7 +209,7 @@ Le tableau suivant décrit les propriétés incluses dans la page de menu volant
 |ExchangeLocations  <br/> |La Exchange Online boîtes aux lettres incluses dans une recherche de contenu ou mises en attente dans un cas eDiscovery.  <br/> |
 |Exclusions  <br/> |Boîtes aux lettres ou emplacements de site exclus d’une recherche de contenu ou d’une conservation dans un cas eDiscovery.  <br/> |
 |ExtendedProperties  <br/> |Propriétés supplémentaires d’une recherche de contenu, d’une action de recherche de contenu ou d’une conservation dans un cas eDiscovery, tels que le GUID de l’objet et les paramètres d’applet de commande et d’applet de commande correspondants qui ont été utilisés lors de l’activité.  <br/> |
-|ID  <br/> |ID de l’entrée de rapport. L’ID identifie de façon unique l’entrée du journal d’audit.  <br/> |
+|Id  <br/> |ID de l’entrée de rapport. L’ID identifie de façon unique l’entrée du journal d’audit.  <br/> |
 |NonPIIParameters  <br/> |Liste des paramètres (sans aucune valeur) qui ont été utilisés avec l’applet de commande identifiée dans la propriété Operation. Les paramètres répertoriés dans cette propriété sont les mêmes que ceux répertoriés dans la propriété Parameters.  <br/> |
 |ObjectId  <br/> |GUID ou nom de l’objet (par exemple, une recherche de contenu ou un cas eDiscovery (Standard) qui a été créé, accédé, modifié ou supprimé par l’activité répertoriée dans la propriété Operation. Cet objet est également identifié dans la colonne Item dans les résultats de recherche du journal d’audit.  <br/> |
 |ObjectType  <br/> |Type d’objet eDiscovery que l’utilisateur a créé, supprimé ou modifié ; par exemple, une action de recherche de contenu (préversion, exportation ou vidage), un cas eDiscovery ou une recherche de contenu.  <br/> |
@@ -223,7 +221,7 @@ Le tableau suivant décrit les propriétés incluses dans la page de menu volant
 |RecordType  <br/> |Type d’opération indiqué par l’enregistrement. La valeur **18** indique un événement lié à une activité répertoriée dans la section activités de [l’applet de commande eDiscovery](#ediscovery-cmdlet-activities) . La valeur **24** indique un événement lié à une activité répertoriée dans la section [Rechercher et afficher les activités eDiscovery](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |
 |ResultStatus  <br/> |Indique si l’action (indiquée dans la propriété Operation) a réussi ou non.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Indique que l’activité était un événement de centre de conformité. Toutes les activités eDiscovery ont la valeur **0** pour cette propriété.  <br/> |
-|SharepointLocations  <br/> |Les SharePoint sites en ligne inclus dans une recherche de contenu ou mis en attente dans un cas eDiscovery.  <br/> |
+|SharepointLocations  <br/> |Sites SharePoint Online inclus dans une recherche de contenu ou mis en attente dans un cas eDiscovery.  <br/> |
 |StartTime  <br/> |Date et heure en temps universel coordonné (UTC) au démarrage de l’activité eDiscovery.  <br/> |
 |UserId  <br/> |Utilisateur qui a effectué l’activité (spécifiée dans la propriété Operation) qui a entraîné la journalisation de l’enregistrement. Les enregistrements de l’activité eDiscovery effectuées par les comptes système (tels que NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit.  <br/> |
 |UserKey  <br/> |Autre ID pour l’utilisateur identifié dans la propriété UserId. Pour les activités eDiscovery, la valeur de cette propriété est généralement la même que la propriété UserId.  <br/> |

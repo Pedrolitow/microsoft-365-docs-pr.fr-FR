@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Découvrez comment Office 365 administrateurs généraux peuvent appliquer la personnalisation de votre organisation aux messages électroniques chiffrés & contenu du portail de chiffrement.
-ms.openlocfilehash: fb0525b112137bf57007b4188bc461abbb0c3f27
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf6f3b9de64185778be7eeb4da6cc8e537f0305a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016853"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637018"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés Microsoft 365 for business Message Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez appliquer la personnalisation de votre entreprise pour personnaliser l’apparence des messages électroniques de votre organisation et du portail de chiffrement. Vous devez appliquer des autorisations d’administrateur général à votre compte professionnel ou scolaire avant de commencer. Une fois que vous disposez de ces autorisations, utilisez les applets de commande Get-OMEConfiguration et Set-OMEConfiguration dans Exchange Online PowerShell pour personnaliser ces parties des messages électroniques chiffrés :
 
@@ -53,7 +51,7 @@ Si vous souhaitez plus de contrôle, utilisez Microsoft Purview Advanced Message
 - Indique si vous souhaitez autoriser la révocation des e-mails
 - Indiquez si vous souhaitez que les e-mails envoyés à des destinataires externes expirent après un nombre spécifié de jours.
 
-Une fois que vous avez créé les modèles, vous pouvez les appliquer à des e-mails chiffrés à l’aide de Exchange règles de flux de messagerie. Si vous avez Microsoft Purview Advanced Message Encryption, vous pouvez révoquer tout e-mail que vous avez marqué à l’aide de ces modèles.
+Une fois que vous avez créé les modèles, vous pouvez les appliquer à des e-mails chiffrés à l’aide de règles de flux de messagerie Exchange. Si vous avez Microsoft Purview Advanced Message Encryption, vous pouvez révoquer tout e-mail que vous avez marqué à l’aide de ces modèles.
 
 ## <a name="work-with-ome-branding-templates"></a>Utiliser des modèles de personnalisation OME
 
@@ -100,7 +98,7 @@ Pour créer un modèle de personnalisation personnalisé :
    New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```powershell
    New-OMEConfiguration -Identity "Custom branding template"
@@ -138,7 +136,7 @@ Pour supprimer un modèle de personnalisation :
    Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```powershell
    Remove-OMEConfiguration -Identity "Branding template 1"
@@ -151,20 +149,20 @@ Pour supprimer un modèle de personnalisation :
 > [!IMPORTANT]
 > Les applications tierces qui analysent et modifient le courrier peuvent empêcher l’application correcte de la personnalisation OME.
 
-Après avoir modifié le modèle par défaut ou créé de nouveaux modèles de personnalisation, vous pouvez créer Exchange règles de flux de messagerie pour appliquer votre personnalisation en fonction de certaines conditions. Plus important encore, l’e-mail doit être chiffré. Une telle règle applique la personnalisation dans les scénarios suivants :
+Après avoir modifié le modèle par défaut ou créé de nouveaux modèles de personnalisation, vous pouvez créer des règles de flux de messagerie Exchange pour appliquer votre personnalisation en fonction de certaines conditions. Plus important encore, l’e-mail doit être chiffré. Une telle règle applique la personnalisation dans les scénarios suivants :
 
-- Si l’e-mail a été chiffré manuellement par l’utilisateur final à l’aide de Outlook ou Outlook sur le web, anciennement Outlook Web App
-- Si l’e-mail a été automatiquement chiffré par une règle de flux de messagerie Exchange ou une stratégie de protection contre la perte de données Microsoft Purview
+- Si l’e-mail a été chiffré manuellement par l’utilisateur final à l’aide d’Outlook ou de Outlook sur le web, anciennement Outlook Web App
+- Si l’e-mail a été automatiquement chiffré par une règle de flux de messagerie Exchange ou une stratégie de Protection contre la perte de données Microsoft Purview
 
-Pour vous assurer que Microsoft Purview Message Encryption applique votre personnalisation, configurez une règle de flux de messagerie pour chiffrer vos messages électroniques. La priorité de la règle de chiffrement doit être supérieure à la règle de personnalisation afin que la règle de chiffrement soit traitée en premier. Par défaut, si vous créez la règle de chiffrement avant la règle de personnalisation, la règle de chiffrement aura une priorité plus élevée. Pour plus d’informations sur la création d’une règle de flux de messagerie Exchange qui applique le chiffrement, consultez [Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md). Pour plus d’informations sur la définition de la priorité d’une règle de flux de messagerie, consultez [Gérer les règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+Pour vous assurer Chiffrement de messages Microsoft Purview appliquez votre personnalisation, configurez une règle de flux de messagerie pour chiffrer vos messages électroniques. La priorité de la règle de chiffrement doit être supérieure à la règle de personnalisation afin que la règle de chiffrement soit traitée en premier. Par défaut, si vous créez la règle de chiffrement avant la règle de personnalisation, la règle de chiffrement aura une priorité plus élevée. Pour plus d’informations sur la création d’une règle de flux de messagerie Exchange qui applique le chiffrement, consultez [Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md). Pour plus d’informations sur la définition de la priorité d’une règle de flux de messagerie, consultez [Gérer les règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. Dans un navigateur web, à l’aide d’un compte professionnel ou scolaire qui a reçu des autorisations d’administrateur général, [connectez-vous à Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Choisissez la vignette **Administrateur** .
+2. Choisissez la vignette **Administration**.
 
-3. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Centres** \> d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Administration centres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
-4. Dans le CENTRE, accédez aux **règles** de **flux** \> de messagerie et sélectionnez **l’icône Nouveau** ![nouveau.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle**. Pour plus d’informations sur l’utilisation de la CAE, consultez [Exchange centre d’administration dans Exchange Online](/exchange/exchange-admin-center).
+4. Dans le CENTRE, accédez aux **règles** de **flux** \> de messagerie et sélectionnez **l’icône Nouveau** ![nouveau.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle**. Pour plus d’informations sur l’utilisation de la CAE, consultez [le Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center).
 
 5. Dans **Nom**, tapez un nom pour la règle, par exemple Personnalisation pour le service des ventes.
 
@@ -176,7 +174,7 @@ Pour vous assurer que Microsoft Purview Message Encryption applique votre person
 
 7. Si vous avez déjà défini une règle de flux de messagerie pour appliquer le chiffrement, ignorez cette étape. Dans **le cas contraire**, pour configurer la règle de flux de messagerie pour appliquer le chiffrement, sélectionnez **Modifier la sécurité des messages**, puis **appliquez Office 365 chiffrement des messages et la protection des droits**. Sélectionnez un modèle RMS dans la liste, puis choisissez **ajouter une action**.
 
-   La liste des modèles inclut les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous créez. Si la liste est vide, vérifiez que vous avez configuré Microsoft Purview Message Encryption. Pour obtenir des instructions, consultez [Configurer Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, consultez [Configuration et gestion des modèles pour Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Pour plus d’informations sur l’option **Ne pas transférer** , consultez [l’option Ne pas transférer pour les e-mails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Pour plus d’informations sur l’option **Chiffrer uniquement** , consultez [l’option Chiffrer uniquement pour les e-mails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   La liste des modèles inclut les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous créez. Si la liste est vide, vérifiez que vous avez configuré Chiffrement de messages Microsoft Purview. Pour obtenir des instructions, consultez [Configurer Chiffrement de messages Microsoft Purview](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, consultez [Configuration et gestion des modèles pour Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Pour plus d’informations sur l’option **Ne pas transférer** , consultez [l’option Ne pas transférer pour les e-mails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Pour plus d’informations sur l’option **Chiffrer uniquement** , consultez [l’option Chiffrer uniquement pour les e-mails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 8. Dans **Faire ce qui suit**, sélectionnez **Modifier la sécurité** \> des messages **Appliquer la personnalisation aux messages OME**. Ensuite, dans la liste déroulante, sélectionnez un modèle de personnalisation.
 

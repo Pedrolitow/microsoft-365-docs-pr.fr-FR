@@ -12,16 +12,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, découvrez comment la gérer en restaurant les clés AKV, en gérant les autorisations et en créant et en affectant des stratégies de chiffrement des données.
-ms.openlocfilehash: 08fae19a5f0f27ff530c734c46453f885ea9043e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d9f9e992b78b673df08d0c0d5b12ba09cfa9ea84
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015745"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637326"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois que vous avez configuré la clé client, vous devez créer et affecter une ou plusieurs stratégies de chiffrement des données (DEP). Une fois que vous avez affecté vos dep, vous pouvez gérer vos clés comme décrit dans cet article. En savoir plus sur la clé client dans les rubriques connexes.
 
@@ -57,7 +55,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Contoso_Global" -AzureKeyIDs "https://
 
 ### <a name="assign-multi-workload-policy"></a>Attribuer une stratégie multi-charges de travail
 
-Affectez le DEP à l’aide de l’applet de commande Set-M365DataAtRestEncryptionPolicyAssignment. Une fois que vous avez affecté la stratégie, Microsoft 365 chiffre les données avec la clé identifiée dans le DEP.
+Affectez le DEP à l’aide de l’applet de commande Set-M365DataAtRestEncryptionPolicyAssignment. Une fois que vous avez affecté la stratégie, Microsoft 365 chiffre les données avec la clé identifiée dans le dep.
 
 ```powershell
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy <PolicyName or ID>
@@ -75,7 +73,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 Avant de commencer, assurez-vous d’avoir effectué les tâches requises pour configurer Azure Key Vault. Pour plus d’informations, consultez [Configurer la clé client](customer-key-set-up.md). Vous allez effectuer ces étapes dans Exchange Online PowerShell.
 
-Un DEP est associé à un ensemble de clés stockées dans Azure Key Vault. Vous affectez un DEP à une boîte aux lettres dans Microsoft 365. Microsoft 365 utilisera ensuite les clés identifiées dans la stratégie pour chiffrer la boîte aux lettres. Pour créer le DEP, vous avez besoin des URI Key Vault que vous avez obtenus lors de l’installation. Pour plus d’informations, consultez [Obtenir l’URI pour chaque clé Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Un DEP est associé à un ensemble de clés stockées dans Azure Key Vault. Vous affectez un DEP à une boîte aux lettres dans Microsoft 365. Microsoft 365 utilise ensuite les clés identifiées dans la stratégie pour chiffrer la boîte aux lettres. Pour créer le DEP, vous avez besoin des URI Key Vault que vous avez obtenus lors de l’installation. Pour plus d’informations, consultez [Obtenir l’URI pour chaque clé Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Rappelez-vous! Lorsque vous créez un DEP, vous spécifiez deux clés dans deux coffres de clés Azure différents. Créez ces clés dans deux régions Azure distinctes pour garantir la géoredondance.
 
@@ -109,7 +107,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Affecter un DEP à une boîte aux lettres
 
-Affectez le dep à une boîte aux lettres à l’aide de l’applet de commande Set-Mailbox. Une fois que vous avez affecté la stratégie, Microsoft 365 pouvez chiffrer la boîte aux lettres avec la clé identifiée dans le DEP.
+Affectez le dep à une boîte aux lettres à l’aide de l’applet de commande Set-Mailbox. Une fois que vous avez affecté la stratégie, Microsoft 365 peut chiffrer la boîte aux lettres avec la clé identifiée dans le dep.
 
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -125,17 +123,17 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Où *MailUserIdParameter* spécifie un utilisateur de messagerie (également appelé utilisateur à activation du courrier). Pour plus d’informations sur l’applet de commande Set-MailUser, consultez [Set-MailUser](/powershell/module/exchange/set-mailuser).
 
-## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Créer un dep à utiliser avec SharePoint Online, OneDrive Entreprise et Teams fichiers
+## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>Créer un dep à utiliser avec les fichiers SharePoint Online, OneDrive Entreprise et Teams
 
 Avant de commencer, assurez-vous d’avoir effectué les tâches requises pour configurer Azure Key Vault. Pour plus d’informations, consultez [Configurer la clé client](customer-key-set-up.md).
 
-Pour configurer la clé client pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, procédez comme suit dans SharePoint PowerShell en ligne.
+Pour configurer la clé client pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, procédez comme suit dans SharePoint Online PowerShell.
 
-Vous associez un DEP à un ensemble de clés stockées dans Azure Key Vault. Vous appliquez un DEP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique de Office 365, vous pouvez créer un DEP par géo avec la possibilité d’utiliser différentes clés par géo. Si vous n’utilisez pas multigéographique, vous pouvez créer un DEP dans votre organisation pour une utilisation avec SharePoint En ligne, OneDrive Entreprise et Teams fichiers. Microsoft 365 utilise les clés identifiées dans le DEP pour chiffrer vos données dans cette zone géographique. Pour créer le DEP, vous avez besoin des URI Key Vault que vous avez obtenus lors de l’installation. Pour plus d’informations, consultez [Obtenir l’URI pour chaque clé Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
+Vous associez un DEP à un ensemble de clés stockées dans Azure Key Vault. Vous appliquez un DEP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique de Office 365, vous pouvez créer un DEP par géo avec la possibilité d’utiliser différentes clés par géo. Si vous n’utilisez pas multigéographique, vous pouvez créer un DEP dans votre organisation pour une utilisation avec les fichiers SharePoint Online, OneDrive Entreprise et Teams. Microsoft 365 utilise les clés identifiées dans le dep pour chiffrer vos données dans cette zone géographique. Pour créer le DEP, vous avez besoin des URI Key Vault que vous avez obtenus lors de l’installation. Pour plus d’informations, consultez [Obtenir l’URI pour chaque clé Azure Key Vault](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 Rappelez-vous! Lorsque vous créez un DEP, vous spécifiez deux clés dans deux coffres de clés Azure différents. Créez ces clés dans deux régions Azure distinctes pour garantir la géoredondance.
 
-Pour créer un dep, vous devez utiliser SharePoint Online PowerShell.
+Pour créer un DEP, vous devez utiliser SharePoint Online PowerShell.
 
 1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [connectez-vous à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
 
@@ -169,7 +167,7 @@ Pour afficher la liste de toutes les adresses DEP que vous avez créées pour le
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Affecter un dep avant de migrer une boîte aux lettres vers le cloud
 
-Lorsque vous attribuez le DEP, Microsoft 365 chiffre le contenu de la boîte aux lettres à l’aide du dep affecté pendant la migration. Ce processus est plus efficace que la migration de la boîte aux lettres, l’affectation du DEP, puis l’attente du chiffrement, ce qui peut prendre des heures, voire des jours.
+Lorsque vous affectez le DEP, Microsoft 365 chiffre le contenu de la boîte aux lettres à l’aide du dep affecté pendant la migration. Ce processus est plus efficace que la migration de la boîte aux lettres, l’affectation du DEP, puis l’attente du chiffrement, ce qui peut prendre des heures, voire des jours.
 
 Pour affecter un dep à une boîte aux lettres avant de la migrer vers Office 365, exécutez l’applet de commande Set-MailUser dans Exchange Online PowerShell :
 
@@ -348,7 +346,14 @@ Si vous devez revenir aux clés gérées par Microsoft, vous pouvez le faire. Lo
 > [!IMPORTANT]
 > Le désintégrage n’est pas le même qu’un vidage des données. Un vidage de données supprime définitivement les données de votre organisation de Microsoft 365, ce qui n’est pas le cas de la désintégrage. Vous ne pouvez pas effectuer de vidage des données pour une stratégie de charge de travail multiple.
 
-Si vous décidez de ne plus utiliser la clé client pour attribuer des dep à plusieurs charges de travail, vous devez contacter le support Microsoft avec une demande de « désinscription » à partir de la clé client. Demandez à l’équipe de support technique de déposer une demande de service auprès de l’équipe de clé client Microsoft Purview. Contactez m365-ck@service.microsoft.com si vous avez des questions.
+**Si vous décidez de ne plus utiliser la clé client pour attribuer des dep multi-charges de travail, vous devez déposer un ticket de support à l’aide de votre portail d’administration Microsoft et fournir les informations suivantes dans votre demande :**
+
+1. Nom de domaine complet du locataire
+2. Contact client pour la demande de désintégrage
+3. Raison de la désintégration
+4. Ajoutez une note dans le ticket de service indiquant que la demande doit être dirigée vers l’équipe de la clé client M365 et inclure l’incident #
+
+Vous devez toujours conserver vos akv de clé client et clés de chiffrement avec les autorisations appropriées pour que les données soient retentées à l’aide de clés gérées par Microsoft. Veuillez contacter m365-ck@service.microsoft.com si vous avez des questions.
 
 Si vous ne souhaitez plus chiffrer des boîtes aux lettres individuelles à l’aide de dep au niveau de la boîte aux lettres, vous pouvez annuler l’affectation de dep au niveau de la boîte aux lettres de toutes vos boîtes aux lettres.
 
@@ -371,13 +376,13 @@ L’exécution de cette applet de commande désattribue le DEP actuellement affe
 
 Vous contrôlez la révocation de toutes les clés racine, y compris la clé de disponibilité. La clé client vous permet de contrôler l’aspect de la planification de sortie des exigences réglementaires. Si vous décidez de révoquer vos clés pour vider vos données et quitter le service, le service supprime la clé de disponibilité une fois le processus de vidage des données terminé. Cela est pris en charge pour les dep de clé client qui sont affectées à des boîtes aux lettres individuelles.
 
-Microsoft 365 audite et valide le chemin de vidage des données. Pour plus d’informations, consultez le rapport SSAE 18 SOC 2 disponible sur le [portail d’approbation de services](https://servicetrust.microsoft.com/). En outre, Microsoft recommande les documents suivants :
+Microsoft 365 audite et valide le chemin d’accès au vidage des données. Pour plus d’informations, consultez le rapport SSAE 18 SOC 2 disponible sur le [portail d’approbation de services](https://servicetrust.microsoft.com/). En outre, Microsoft recommande les documents suivants :
 
 - [Guide d’évaluation des risques et de conformité pour les institutions financières dans le cloud Microsoft](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [Considérations relatives à la planification de la sortie O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Le vidage du DEP multi-charges de travail n’est pas pris en charge pour la clé client. Le DEP multi-charges de travail est utilisé pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage de ce dep entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement Microsoft 365 services, vous pouvez poursuivre le chemin de suppression de locataire selon le processus documenté. Découvrez [comment supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Le vidage du DEP multi-charges de travail n’est pas pris en charge pour la clé client. Le DEP multi-charges de travail est utilisé pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage de ce dep entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement les services Microsoft 365, vous pouvez poursuivre le chemin de suppression du locataire selon le processus documenté. Découvrez [comment supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Révoquez vos clés client et la clé de disponibilité pour Exchange Online et Skype Entreprise
 
@@ -410,9 +415,9 @@ Pour lancer le chemin de vidage des données, procédez comme suit :
 
     Une fois que Microsoft reçoit le document légal, Microsoft exécute des applets de commande pour déclencher le vidage des données qui supprime d’abord la stratégie, marque les boîtes aux lettres pour suppression définitive, puis supprime la clé de disponibilité. Une fois le processus de vidage des données terminé, les données ont été vidées, sont inaccessibles à Exchange Online et ne sont pas récupérables.
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Révoquer vos clés client et la clé de disponibilité des fichiers SharePoint Online, OneDrive Entreprise et Teams
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Révoquer vos clés client et la clé de disponibilité pour les fichiers SharePoint Online, OneDrive Entreprise et Teams
 
-Le vidage de SharePoint, de OneDrive pour le travail ou l’école, et les fichiers de Teams dep. n’est pas pris en charge dans la clé client. Ces dep multi-charges de travail sont utilisées pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage d’un dep de ce type entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement Microsoft 365 services, vous pouvez poursuivre le chemin de suppression de locataire selon le processus documenté. Découvrez comment [supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+Le vidage de SharePoint, OneDrive pour le travail ou l’école, et les DEP de fichiers Teams ne sont pas pris en charge dans la clé client. Ces dep multi-charges de travail sont utilisées pour chiffrer les données sur plusieurs charges de travail sur tous les utilisateurs locataires. Le vidage d’un dep de ce type entraînerait l’inaccessibilité des données provenant de plusieurs charges de travail. Si vous décidez de quitter complètement les services Microsoft 365, vous pouvez poursuivre le chemin de la suppression de locataire selon le processus documenté. Découvrez comment [supprimer un locataire dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ## <a name="related-articles"></a>Articles connexes
 

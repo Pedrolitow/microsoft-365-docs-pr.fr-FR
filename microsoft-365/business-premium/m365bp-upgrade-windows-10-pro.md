@@ -15,23 +15,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment mettre à niveau vos appareils Windows vers Windows 10 Professionnel avec Microsoft 365 Business Premium.
-ms.openlocfilehash: 56cb32269dac6f78d1c1764d881eefee1ac0ea01
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: fdd17eb35767029090dddab103ce6db3b8b00365
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607694"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641023"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau des appareils Windows vers Windows 10 Professionnel
 
-Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 Business Premium vous permet de mettre à niveau ces appareils vers Windows Pro 10.  
+Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 Business Premium vous permet de mettre à niveau ces appareils vers Windows 10 ou 11 Professionnels.  
 
 Vous pouvez choisir parmi plusieurs méthodes à mettre à niveau :
 
 - [Utiliser Windows Update](#use-windows-update) (recommandé pour la plupart des utilisateurs)
 - [Mettre à niveau votre appareil à l’aide du site de téléchargement de logiciels Microsoft](#upgrade-your-device-using-the-microsoft-software-download-site)
 - [Créer un support d’installation à partir du site de téléchargement de logiciels Microsoft](#create-installation-media-from-the-microsoft-software-download-site)
-- [Acheter des Windows 10 Professionnel à mettre à niveau à partir de Windows 10 Famille](#purchase-windows-10-pro-to-upgrade-from-windows-10-home)
+- [Acheter Windows 10 ou 11 Pro pour effectuer une mise à niveau à partir de Windows 10 Famille](#purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home)
 
 ## <a name="use-windows-update"></a>Utiliser Windows Update
 
@@ -48,7 +48,7 @@ Vous pouvez choisir parmi plusieurs méthodes à mettre à niveau :
 
 ## <a name="upgrade-your-device-using-the-microsoft-software-download-site"></a>Mettre à niveau votre appareil à l’aide du site de téléchargement de logiciels Microsoft
   
-*Sélectionnez cette option si l’appareil que vous utilisez actuellement est le même que celui que vous souhaitez mettre à jour.* 
+*La méthode Windows Update est préférée. Toutefois, vous pouvez sélectionner cette option si l’appareil que vous utilisez actuellement est le même que celui que vous souhaitez mettre à jour.* 
 
 1. Accédez au [site de téléchargement de logiciels Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951).
 
@@ -65,7 +65,7 @@ Vous pouvez choisir parmi plusieurs méthodes à mettre à niveau :
 > [!NOTE]
 > Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 Business Premium vous permet de mettre à niveau ces appareils vers Windows Pro 10.
 
-## <a name="purchase-windows-10-pro-to-upgrade-from-windows-10-home"></a>Acheter des Windows 10 Professionnel à mettre à niveau à partir de Windows 10 Famille
+## <a name="purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home"></a>Acheter Windows 10 ou 11 Pro pour effectuer une mise à niveau à partir de Windows 10 Famille
 
 *Sélectionnez cette option pour les appareils qui exécutent Windows 10 Famille.*
 

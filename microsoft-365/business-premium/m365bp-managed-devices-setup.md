@@ -2,8 +2,8 @@
 title: Configurer les appareils gérés
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Comment configurer des appareils gérés
-ms.openlocfilehash: cd65c70f9ed9c2ec43196d792c81fa3e82f4e05d
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 0ebaf9246daa9f364702954c657a1af7e7e262f2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573984"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636993"
 ---
 # <a name="set-up-managed-devices"></a>Configurer les appareils gérés
 

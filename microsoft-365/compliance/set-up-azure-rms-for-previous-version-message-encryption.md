@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: La version précédente de Office 365 Message Encryption dépend de Microsoft Azure Rights Management (anciennement appelé Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 66447d601d86f1863cf060a3ad097686bb58be98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: La version précédente de Office 365 Message Encryption dépend de Microsoft Azure Rights Management (anciennement Windows Azure Active Directory Rights Management).
+ms.openlocfilehash: 386056c282ea5f4ad996cc7ae7c50926436fe720
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016237"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641359"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurer Azure Rights Management pour la version précédente de Message Encryption
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cette rubrique décrit les étapes à suivre pour activer et configurer Azure Rights Management (RMS), qui fait partie d’Azure Information Protection, à utiliser avec la version précédente de Office 365 Message Encryption (OME).
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Cet article s’applique uniquement à la version précédente d’OME
 
-Si vous n’avez pas encore déplacé votre organisation vers Microsoft Purview Message Encryption, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier le passage à Microsoft Purview Message Encryption dès qu’il est raisonnable pour votre organisation. Pour obtenir des instructions, consultez [Configurer Microsoft Purview Message Encryption](set-up-new-message-encryption-capabilities.md). Si vous souhaitez en savoir plus sur le fonctionnement des nouvelles fonctionnalités en premier, consultez [Chiffrement](ome.md) des messages. Le reste de cet article fait référence au comportement OME avant la publication de Microsoft Purview Message Encryption.
+Si vous n’avez pas encore déplacé votre organisation vers Chiffrement de messages Microsoft Purview, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande d’effectuer un plan pour passer à Chiffrement de messages Microsoft Purview dès qu’il est raisonnable pour votre organisation. Pour obtenir des instructions, consultez [Configurer Chiffrement de messages Microsoft Purview](set-up-new-message-encryption-capabilities.md). Si vous souhaitez en savoir plus sur le fonctionnement des nouvelles fonctionnalités en premier, consultez [Chiffrement](ome.md) des messages. Le reste de cet article fait référence au comportement OME avant la publication de Chiffrement de messages Microsoft Purview.
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Conditions préalables à l’utilisation de la version précédente de Office 365 Message Encryption
 <a name="warmprereqs"> </a>
@@ -52,7 +50,7 @@ Vous devez activer Azure Rights Management afin que les utilisateurs de votre or
 Un TPD est un fichier XML qui contient des informations sur les paramètres de gestion des droits de votre organisation. Par exemple, le TPD contient des informations sur le certificat de licence de serveur (SLC) utilisé pour la signature et le chiffrement des certificats et des licences, les URL utilisées pour les licences et la publication, et ainsi de suite. Vous importez le TPD dans votre organisation à l’aide de PowerShell.
 
 > [!IMPORTANT]
-> Auparavant, vous pouviez choisir d’importer des TDT à partir du service AD RMS (Active Directory Rights Management Service) dans votre organisation. Toutefois, cela vous empêchera d’utiliser Microsoft Purview Message Encryption et n’est pas recommandé. Si votre organisation est actuellement configurée de cette façon, Microsoft vous recommande de créer un plan de migration de votre Active Directory local RMS vers azure Information Protection basé sur le cloud. Pour plus d’informations, consultez [Migration d’AD RMS vers Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Vous ne pourrez pas utiliser Microsoft Purview Message Encryption tant que vous n’aurez pas terminé la migration vers Azure Information Protection.
+> Auparavant, vous pouviez choisir d’importer des TDT à partir du service Active Directory Rights Management (AD RMS) dans votre organisation. Toutefois, cela vous empêchera d’utiliser Chiffrement de messages Microsoft Purview et n’est pas recommandé. Si votre organisation est actuellement configurée de cette façon, Microsoft vous recommande de créer un plan de migration de votre Active Directory local RMS vers azure Information Protection basé sur le cloud. Pour plus d’informations, consultez [Migration d’AD RMS vers Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Vous ne pourrez pas utiliser Chiffrement de messages Microsoft Purview tant que vous n’aurez pas terminé la migration vers Azure Information Protection.
 
 **Pour importer des TPD à partir d’Azure RMS** :
 
@@ -96,7 +94,7 @@ Un TPD est un fichier XML qui contient des informations sur les paramètres de g
 
    Entre autres choses, cette applet de commande vérifie la connectivité avec le service Azure Rights Management, télécharge le TPD et vérifie sa validité.
 
-6. Exécutez l’applet de commande [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) comme suit pour empêcher Azure Rights Management modèles d’être disponibles dans Outlook sur le web et Outlook :
+6. Exécutez l’applet de commande [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) comme suit pour désactiver la disponibilité des modèles Azure Rights Management dans Outlook sur le web et Outlook :
 
    ```powershell
    Set-IRMConfiguration -ClientAccessServerEnabled $false
@@ -110,17 +108,17 @@ Un TPD est un fichier XML qui contient des informations sur les paramètres de g
 
 8. Pour vérifier que vous avez correctement importé le TPD et activé Azure Rights Management, utilisez l’applet de commande Test-IRMConfiguration pour tester Azure Rights Management fonctionnalités. Pour plus d'informations, consultez « Exemple 1 » dans la rubrique [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>J’ai configuré la version précédente d’OME avec Active Directory Rights Management pas Azure Information Protection, que dois-je faire ?
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>J’ai la version précédente d’OME configurée avec Active Directory Rights Management et non Azure Information Protection, que dois-je faire ?
 <a name="importTPDs"> </a>
 
-Vous pouvez continuer à utiliser vos règles de flux de messagerie Office 365 Message Encryption existantes avec Active Directory Rights Management, mais vous ne pouvez pas configurer ou utiliser Microsoft Purview Message Encryption. Au lieu de cela, vous devez migrer vers Azure Information Protection. Pour plus d’informations sur la migration et ce que cela signifie pour votre organisation, consultez [Migration d’AD RMS vers Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
+Vous pouvez continuer à utiliser vos règles de flux de messagerie Office 365 Message Encryption existantes avec Active Directory Rights Management, mais vous ne pouvez pas configurer ou utiliser Chiffrement de messages Microsoft Purview. Au lieu de cela, vous devez migrer vers Azure Information Protection. Pour plus d’informations sur la migration et ce que cela signifie pour votre organisation, consultez [Migration d’AD RMS vers Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
 
 ## <a name="next-steps"></a>Étapes suivantes
 <a name="importTPDs"> </a>
 
-Une fois que vous avez terminé Azure Rights Management configuration, si vous souhaitez activer Le chiffrement des messages Microsoft Purview, consultez [Configurer Microsoft Purview Message Encryption](./set-up-new-message-encryption-capabilities.md).
+Une fois que vous avez terminé Azure Rights Management configuration, si vous souhaitez activer Chiffrement de messages Microsoft Purview, voir [Configurer Chiffrement de messages Microsoft Purview](./set-up-new-message-encryption-capabilities.md).
 
-Une fois que vous avez configuré votre organisation pour utiliser Microsoft Purview Message Encryption, vous êtes prêt à [définir des règles de flux de courrier](define-mail-flow-rules-to-encrypt-email.md).
+Une fois que vous avez configuré votre organisation pour utiliser Chiffrement de messages Microsoft Purview, vous êtes prêt à [définir des règles de flux de messagerie](define-mail-flow-rules-to-encrypt-email.md).
 
 ## <a name="related-topics"></a>Voir aussi
 <a name="importTPDs"> </a>

@@ -13,19 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de données pour importer des données de dossiers médicaux électroniques (DSE) de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: 90f50628e255267baeff7d39c776f9a6bf8cc426
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (DSE) à partir de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
+ms.openlocfilehash: be5429ea1a5fb4e2e2be6a7029f2401fcbdab94e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077904"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641381"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit DSE de santé (préversion)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données d’audit pour l’activité des utilisateurs dans le système DSE (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système de DSE de santé incluent des données relatives aux événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit des DSE de santé peuvent être utilisées par la [Microsoft 365 solution de gestion des risques internes](insider-risk-management.md) pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
+Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données d’audit pour l’activité des utilisateurs dans le système DSE (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système de DSE de santé incluent des données relatives aux événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit des DSE de santé peuvent être utilisées par la [solution de gestion des risques internes](insider-risk-management.md) Microsoft 365 pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
 
 La configuration d’un connecteur Healthcare se compose des tâches suivantes :
 
@@ -41,7 +39,7 @@ La configuration d’un connecteur Healthcare se compose des tâches suivantes :
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur Healthcare à l’étape 3. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Healthcare à l’étape 3 doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Vous devez déterminer comment récupérer ou exporter les données à partir du système de DSE de santé de votre organisation (quotidiennement) et créer un fichier texte décrit à l’étape 2. Le script que vous exécutez à l’étape 4 envoie (push) les données du fichier texte au point de terminaison de l’API.
 
@@ -49,11 +47,11 @@ La configuration d’un connecteur Healthcare se compose des tâches suivantes :
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : Créer une application dans Azure Active Directory
 
-La première étape consiste à créer et à inscrire une application dans Azure Active Directory (Azure AD). L’application correspond au connecteur Healthcare que vous créez à l’étape 3. La création de cette application permet à Azure AD d’authentifier la demande Push pour le fichier texte contenant des données d’audit de DSE de santé. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
+La première étape consiste à créer et à inscrire une application dans Azure Active Directory (Azure AD). L’application correspond au connecteur Healthcare que vous créez à l’étape 3. La création de cette application permet à Azure AD d’authentifier la demande Push pour le fichier texte contenant des données d’audit DSE de santé. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- Azure AD ID d’application (également appelé *ID d’application* ou *ID client*)
+- ID d’application Azure AD (également appelé *ID d’application* ou *ID client*)
 
-- Azure AD secret d’application (également appelé *clé secrète client*)
+- Secret d’application Azure AD (également appelé *clé secrète client*)
 
 - ID de locataire (également appelé *ID de répertoire*)
 
@@ -68,10 +66,10 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs qui sont nécessaires pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrillance avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Field|Catégorie|
+|Champ|Catégorie|
 |:----|:----------|
-| Nom de *l’événement timeEvent<br/>* de création<br/>ID de station de travail<br/>Section d’événements<br/>Catégorie de l'événement |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système de DSE de santé.|
-| Patient Reg Id<br/>Prénom *du<br/> patient Prénom <br/>Patient* <br/>Ligne d’adresse du patient 1* <br/>Ligne d’adresse du patient 2<br/>Ville du patient* <br/>Code postal du patient*  <br/>État du patient <br/>Pays du patient <br/>Service des patients              | Ces champs sont utilisés pour identifier les informations de profil des patients.|
+| Nom de *l’événement heure<br/>* de création<br/>ID de station de travail<br/>Section d’événements<br/>Catégorie de l'événement |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système de DSE de santé.|
+| Patient Reg Id<br/>Nom du *patient prénom patient prénom <br/>patient nom de famille<br/>* <br/>Ligne d’adresse du patient 1* <br/>Ligne d’adresse du patient 2<br/>Ville du patient* <br/>Code postal du patient*  <br/>État du patient <br/>Pays du patient <br/>Service des patients              | Ces champs sont utilisés pour identifier les informations de profil des patients.|
 | Raison de l’accès restreint*<br/> Commentaire d’accès restreint | Ces champs sont utilisés pour identifier l’accès aux enregistrements restreints.|
 | Adresse e-mail (UPN) ou SamAccountName*<br/>Nom d’utilisateur de l’employé <br/> ID d’employé <br/> Nom de l’employé <sup>1</sup> <br/> Prénom de l’employé <sup>1</sup> | Ces champs sont utilisés pour identifier les informations de profil d’employé pour la correspondance d’adresse et de nom requises pour déterminer l’accès aux enregistrements famille/voisin/employé. |
 |||
@@ -99,7 +97,7 @@ L’étape suivante consiste à créer un connecteur Healthcare dans le portail 
 
 6. Dans la page méthode **de mappage de fichiers** , sélectionnez l’une des options suivantes, puis cliquez sur **Suivant**.
 
-   - **Télécharger un exemple de fichier**. Si vous sélectionnez cette option, cliquez sur **Télécharger exemple de fichier** pour charger le fichier que vous avez préparé à l’étape 2. Cette option vous permet de sélectionner rapidement les noms de colonnes dans votre fichier texte dans une liste déroulante pour mapper les colonnes au schéma requis pour le connecteur de soins de santé. 
+   - **Chargez un exemple de fichier**. Si vous sélectionnez cette option, cliquez sur **Charger l’exemple de fichier** pour charger le fichier que vous avez préparé à l’étape 2. Cette option vous permet de sélectionner rapidement les noms de colonnes dans votre fichier texte dans une liste déroulante pour mapper les colonnes au schéma requis pour le connecteur de soins de santé. 
 
     Ou
 
@@ -133,7 +131,7 @@ Vous pouvez également cliquer sur **Modifier** pour modifier l’ID Azure App o
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-healthcare-ehr-auditing-data"></a>Étape 4 : Exécuter l’exemple de script pour charger vos données d’audit de DSE de santé
 
-La dernière étape de la configuration d’un connecteur Healthcare consiste à exécuter un exemple de script qui charge les données d’audit DSE de santé dans le fichier texte (que vous avez créé à l’étape 1) dans le cloud Microsoft. Plus précisément, le script charge les données dans le connecteur Healthcare. Après avoir exécuté le script, le connecteur Healthcare que vous avez créé à l’étape 3 importe les données d’audit des DSE de santé à votre organisation Microsoft 365 où elles sont accessibles par d’autres outils de conformité, tels que la solution de gestion des risques Insider. Après avoir exécuté le script, envisagez de planifier une tâche pour l’exécuter automatiquement tous les jours afin que les données d’arrêt des employés les plus actuelles soient chargées dans le cloud Microsoft. Voir [(Facultatif) Étape 6 : Planifier l’exécution automatique du script](#optional-step-6-schedule-the-script-to-run-automatically).
+La dernière étape de la configuration d’un connecteur Healthcare consiste à exécuter un exemple de script qui charge les données d’audit DSE de santé dans le fichier texte (que vous avez créé à l’étape 1) dans le cloud Microsoft. Plus précisément, le script charge les données dans le connecteur Healthcare. Après avoir exécuté le script, le connecteur de soins de santé que vous avez créé à l’étape 3 importe les données d’audit de DSE dans votre organisation Microsoft 365, où elles sont accessibles par d’autres outils de conformité, tels que la solution de gestion des risques Insider. Après avoir exécuté le script, envisagez de planifier une tâche pour l’exécuter automatiquement tous les jours afin que les données d’arrêt des employés les plus actuelles soient chargées dans le cloud Microsoft. Voir [(Facultatif) Étape 6 : Planifier l’exécution automatique du script](#optional-step-6-schedule-the-script-to-run-automatically).
 
 > [!NOTE]
 > Comme indiqué précédemment, la taille maximale du fichier texte qui contient les données d’audit est de 3 Go. Le nombre maximal de lignes est de 5 millions. Le script que vous exécutez dans cette étape prend environ 30 à 40 minutes pour importer les données d’audit à partir de fichiers texte volumineux. En outre, le script divise les fichiers texte volumineux en blocs plus petits de 100 000 lignes, puis importe ces blocs de manière séquentielle.
@@ -160,8 +158,8 @@ Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs v
 
 |Paramètre  |Description|
 |:----------|:----------|
-|tenantId|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenue à l’étape 1. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue d’ensemble** du centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
-|appId|Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365.|
+|tenantId|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue d’ensemble** du Centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
+|appId|Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Azure AD l’utilise pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365.|
 |appSecret|Il s’agit du secret d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
 |jobId|Il s’agit de l’ID de travail du connecteur Healthcare que vous avez créé à l’étape 3. Cela permet d’associer les données d’audit de DSE de santé chargées dans le cloud Microsoft au connecteur Healthcare.|
 |Filepath|Il s’agit du chemin d’accès au fichier texte (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès au fichier ; sinon, utilisez des guillemets simples.|
@@ -173,7 +171,7 @@ Voici un exemple de syntaxe pour le script de connecteur Healthcare utilisant de
 .\HealthcareConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\healthcare_audit_records.csv'
 ```
 
-Si le chargement réussit, le script affiche le **message Télécharger Réussi**.
+Si le chargement réussit, le script affiche le message **De réussite** du chargement.
 
 > [!NOTE]
 > Si vous rencontrez des problèmes lors de l’exécution de la commande précédente en raison de stratégies d’exécution, consultez [À propos des stratégies d’exécution](/powershell/module/microsoft.powershell.core/about/about_execution_policies) et [de Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des conseils sur la définition des stratégies d’exécution.
@@ -198,7 +196,7 @@ Pour vous assurer que les données d’audit les plus récentes de votre systèm
 
 Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Windows Démarrer, puis **tapez** **Planificateur de tâches**.
+1. Sur votre ordinateur local, cliquez sur le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
 
 2. Cliquez sur l’application **Du planificateur de tâches** pour l’ouvrir.
 
@@ -214,7 +212,7 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
 6. Sélectionnez l’onglet Déclencheurs, cliquez sur **Nouveau**, puis effectuez les **opérations suivantes** :
 
-    1. Sous **Paramètres**, sélectionnez l’option **Quotidienne**, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
+    1. Sous **Paramètres**, sélectionnez l’option **Quotidienne** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
 
     2. Sous **Paramètres avancés**, vérifiez que la case à cocher **Activé** est cochée.
 

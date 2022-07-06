@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623294"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637348"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’Explorateur de contenus vous permet d’afficher en mode natif les éléments qui ont été récapitulés dans la page de vue d’ensemble.
 

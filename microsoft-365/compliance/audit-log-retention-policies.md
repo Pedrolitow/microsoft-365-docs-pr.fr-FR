@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’Audit (Premium) de Microsoft Purview. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf9f06fbce71af479ed089f912d440ba6c840b29
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012425"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639201"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez créer et gérer des stratégies de rétention des journaux d’audit dans le portail de conformité Microsoft Purview. Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’Audit (Premium) de Microsoft Purview. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation. Vous pouvez conserver des journaux d’audit pendant 10 ans. Vous pouvez créer des stratégies en fonction des critères suivants :
 

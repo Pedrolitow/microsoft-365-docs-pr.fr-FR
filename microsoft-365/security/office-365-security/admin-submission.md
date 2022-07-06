@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails suspects, des courriers suspects de hameçonnage, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
+description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 17083a248e31d5ae1eff3c088497f071bcac643b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487679"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639443"
 ---
-# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -188,7 +188,7 @@ Le message signalé sera marqué comme un faux positif ou un faux négatif. Une 
      - **ID de message réseau**
      - **Sender**
      - **Destinataire**
-     - **Name**
+     - **Nom**
      - **Soumis par**
      - **Motif de l’envoi**
      - **État**

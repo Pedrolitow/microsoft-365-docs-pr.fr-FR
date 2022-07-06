@@ -19,19 +19,17 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer l’audit (Premium) afin que vous puissiez effectuer des investigations judiciaires lorsque des comptes d’utilisateurs sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
-ms.openlocfilehash: f1c858964ee3cb5e6cdfcdb7416468318393ebba
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cet article explique comment configurer l’audit (Premium) afin que vous puissiez effectuer des investigations légales lorsque des comptes d’utilisateurs sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
+ms.openlocfilehash: adffd696a3eca2d51fb5325cd79c1ba26e58936c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097951"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639333"
 ---
-# <a name="set-up-microsoft-purview-audit-premium"></a>Configurer l’audit Microsoft Purview (Premium)
+# <a name="set-up-microsoft-purview-audit-premium"></a>Configurer Microsoft Purview Audit (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Si votre organisation dispose d’un abonnement et d’une licence d’utilisateur final qui prend en charge l’audit (Premium), effectuez les étapes suivantes pour configurer et utiliser les fonctionnalités supplémentaires dans Audit (Premium).
+Si votre organisation dispose d’un abonnement et d’une licence d’utilisateur final qui prend en charge Audit (Premium), effectuez les étapes suivantes pour configurer et utiliser les fonctionnalités supplémentaires dans Audit (Premium).
 
 ![Flux de travail pour configurer l’audit (Premium).](../media/AdvancedAuditWorkflow.png)
 
@@ -39,11 +37,11 @@ Si votre organisation dispose d’un abonnement et d’une licence d’utilisate
 
 Les fonctionnalités d’audit (Premium) telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
 
-1. Dans le Centre d'administration Microsoft 365, accédez aux **utilisateurs UsersActive** > , puis sélectionnez un utilisateur.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
+1. Dans le Centre d'administration Microsoft 365, accédez à **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs**</a>, puis sélectionnez un utilisateur.
 
 2. Dans la page déroulante des propriétés de l’utilisateur, cliquez sur **Licences et applications**.
 
-3. Dans la section **Licences** , vérifiez que l’utilisateur se voit attribuer une licence E5 ou qu’une licence de module complémentaire appropriée lui est attribuée. Pour obtenir la liste des licences qui prennent en charge l’audit (Premium), consultez [Les exigences en matière de licences d’audit (Premium](auditing-solutions-overview.md#audit-premium-1)).
+3. Dans la section **Licences** , vérifiez que l’utilisateur se voit attribuer une licence E5 ou qu’une licence de module complémentaire appropriée lui est attribuée. Pour obtenir la liste des licences qui prennent en charge l’audit (Premium), consultez [Les exigences en matière de licences Audit (Premium](auditing-solutions-overview.md#audit-premium-1)).
 
 4. Développez la section **Applications** et vérifiez que la case à cocher **Audit avancé Microsoft 365** est activée.
 
@@ -51,11 +49,11 @@ Les fonctionnalités d’audit (Premium) telles que la possibilité d’enregist
 
    La journalisation des enregistrements d’audit pour MailItemsAccessed et Send commence dans les 24 heures. Vous devez effectuer l’étape 3 pour commencer la journalisation de deux autres événements d’audit (Premium) : SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint.
 
-En outre, si vous avez personnalisé les actions de boîte aux lettres qui sont journalisées sur les boîtes aux lettres utilisateur ou les boîtes aux lettres partagées, les nouveaux événements d’audit (Premium) publiés par Microsoft ne seront pas automatiquement audités sur ces boîtes aux lettres. Pour plus d’informations sur la modification des actions de boîte aux lettres auditées pour chaque type de connexion, consultez la section « Modifier ou restaurer les actions de boîte aux lettres enregistrées par défaut » dans [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+En outre, si vous avez personnalisé les actions de boîte aux lettres qui sont journalisées sur les boîtes aux lettres utilisateur ou les boîtes aux lettres partagées, les nouveaux événements d’audit (Premium) publiés par Microsoft ne sont pas automatiquement audités sur ces boîtes aux lettres. Pour plus d’informations sur la modification des actions de boîte aux lettres auditées pour chaque type de connexion, consultez la section « Modifier ou restaurer les actions de boîte aux lettres enregistrées par défaut » dans [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## <a name="step-2-enable-audit-premium-events"></a>Étape 2 : Activer les événements d’audit (Premium)
 
-Vous devez activer la journalisation de deux événements d’audit (Premium) (SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint) lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online. Pour permettre l’audit de ces deux événements pour les utilisateurs, exécutez la commande suivante (pour chaque utilisateur) dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
+Vous devez activer deux événements d’audit (Premium) (SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint) pour être enregistrés lorsque les utilisateurs effectuent des recherches dans Exchange Online et SharePoint Online. Pour permettre l’audit de ces deux événements pour les utilisateurs, exécutez la commande suivante (pour chaque utilisateur) dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -75,4 +73,4 @@ En plus de la stratégie par défaut qui conserve les enregistrements d’audit 
 
 ## <a name="step-4-search-for-audit-premium-events"></a>Étape 4 : Rechercher des événements d’audit (Premium)
 
-Maintenant que vous avez configuré l’audit (Premium) pour votre organisation, vous pouvez rechercher des événements d’audit essentiels (Premium) et d’autres activités lors de la réalisation d’investigations judiciaires. Une fois l’étape 1 et l’étape 2 terminées, vous pouvez rechercher dans le journal d’audit les événements d’audit (Premium) et d’autres activités pendant les investigations judiciaires sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité. Pour plus d’informations sur la conduite d’une enquête judiciaire sur les comptes d’utilisateur compromis à l’aide de l’événement MailItemsAccessed Audit (Premium), consultez [Utiliser l’audit (Premium) pour examiner les comptes compromis](mailitemsaccessed-forensics-investigations.md).
+Maintenant que vous avez configuré Audit (Premium) pour votre organisation, vous pouvez rechercher des événements d’audit essentiels (Premium) et d’autres activités lors de la réalisation d’enquêtes judiciaires. Une fois l’étape 1 et l’étape 2 terminées, vous pouvez rechercher dans le journal d’audit les événements d’audit (Premium) et d’autres activités pendant les investigations judiciaires sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité. Pour plus d’informations sur la conduite d’une enquête judiciaire sur les comptes d’utilisateur compromis à l’aide de l’événement MailItemsAccessed Audit (Premium), consultez [Utiliser l’audit (Premium) pour examiner les comptes compromis](mailitemsaccessed-forensics-investigations.md).

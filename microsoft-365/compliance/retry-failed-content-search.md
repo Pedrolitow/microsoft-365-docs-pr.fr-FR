@@ -16,16 +16,14 @@ search.appverid:
 ms.assetid: ''
 description: Au cours d’une enquête, vous pouvez utiliser le bouton Nouvelle tentative pour résoudre les recherches de contenu qui comportent des erreurs d’emplacement de contenu.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5345b346e8c66f6983d67081839248e4c66be7d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c524be95ac72f44e58b03958694d26c52a401e40
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090426"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638166"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Réessayer une recherche de contenu pour résoudre une erreur d’emplacement de contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous utilisez la recherche de contenu dans le Centre de sécurité et de conformité pour rechercher un grand nombre de boîtes aux lettres, vous pouvez obtenir des erreurs de recherche similaires à l’erreur :
 
@@ -54,7 +52,7 @@ Le redémarrage de la recherche entraîne souvent des erreurs similaires sur dif
 
 Cela entraîne la nouvelle tentative de recherche uniquement pour les boîtes aux lettres qui ont échoué. Lorsque vous réessayez la recherche, les autres résultats qui ont été retournés avec succès sont conservés.
 
-## <a name="tips-to-avoid-content-location-errors"></a>Astuces pour éviter les erreurs d’emplacement de contenu
+## <a name="tips-to-avoid-content-location-errors"></a>Conseils pour éviter les erreurs d’emplacement de contenu
 
 Voici quelques causes supplémentaires d’erreurs d’emplacement de contenu et quelques conseils pour vous aider à les éviter lors de la recherche d’un grand nombre de boîtes aux lettres.
 

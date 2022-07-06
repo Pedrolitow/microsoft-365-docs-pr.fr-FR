@@ -14,65 +14,61 @@ metadata:
   search.appverid:
   - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-  description: Vous avez une question sur le fonctionnement de Microsoft Purview Message Encryption ? Recherchez une réponse ici.
+  description: Vous avez une question sur le fonctionnement de Chiffrement de messages Microsoft Purview ? Recherchez une réponse ici.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4d365174ff7fa7db71939a10de0a57e50dbd4d46
-  ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+  ms.openlocfilehash: 0c20c671352c62b5c71f6c5369fd89aab99528ae
+  ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/13/2022
-  ms.locfileid: "66043041"
+  ms.lasthandoff: 07/06/2022
+  ms.locfileid: "66640585"
 title: FAQ sur le chiffrement des messages
-summary: >
-  [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-
-  Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici. Jetez également un coup d’œil aux [questions fréquemment posées sur la protection des données dans Azure Information Protection](/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure Information Protection.
+summary: "\nVous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici. Jetez également un coup d’œil aux [questions fréquemment posées sur la protection des données dans Azure Information Protection](/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure Information Protection.\n"
 sections:
 - name: Ignoré
   questions:
-  - question: Qu’est-ce que Microsoft Purview Message Encryption (OME) ?
-    answer: Microsoft Purview Message Encryption combine le chiffrement des e-mails et les fonctionnalités de gestion des droits. Les fonctionnalités de gestion des droits sont optimisées par Azure Information Protection.
+  - question: Qu’est-ce que Chiffrement de messages Microsoft Purview (OME) ?
+    answer: Chiffrement de messages Microsoft Purview combine le chiffrement des e-mails et les fonctionnalités de gestion des droits. Les fonctionnalités de gestion des droits sont optimisées par Azure Information Protection.
   - question: >
-      Qui pouvez utiliser Le chiffrement des messages Microsoft Purview ?
-    answer: "Vous pouvez utiliser Microsoft Purview Message Encryption dans les conditions suivantes :\n  \n- Si vous n’avez jamais configuré Office 365 chiffrement des messages (OME) ou IRM pour Exchange Online dans Office 365.\n\n- Si vous avez configuré OME et IRM, vous pouvez suivre ces étapes si vous utilisez le service Azure Rights Management à partir d’Azure Information Protection.\n\n- Si vous utilisez Exchange Online avec active directory Rights Management service (AD RMS), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Une fois la migration terminée, vous pouvez configurer microsoft Purview Message Encryption.\n\n  Si vous choisissez de continuer à utiliser AD RMS local avec Exchange Online au lieu de migrer vers Azure Information Protection, vous ne pourrez pas utiliser Microsoft Purview Message Encryption.\n"
+      Qui peut utiliser Chiffrement de messages Microsoft Purview ?
+    answer: "Vous pouvez utiliser Chiffrement de messages Microsoft Purview dans les conditions suivantes :\n  \n- Si vous n’avez jamais configuré Office 365 chiffrement des messages (OME) ou IRM pour Exchange Online dans Office 365.\n\n- Si vous avez configuré OME et IRM, vous pouvez suivre ces étapes si vous utilisez le service Azure Rights Management à partir d’Azure Information Protection.\n\n- Si vous utilisez Exchange Online avec le service Active Directory Rights Management (AD RMS), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Une fois la migration terminée, vous pouvez configurer Chiffrement de messages Microsoft Purview.\n\n  Si vous choisissez de continuer à utiliser AD RMS local avec Exchange Online au lieu de migrer vers Azure Information Protection, vous ne pourrez pas utiliser Chiffrement de messages Microsoft Purview.\n"
   - question: >
-      Quels abonnements dois-je utiliser microsoft Purview Message Encryption ?
+      Quels abonnements dois-je utiliser Chiffrement de messages Microsoft Purview ?
     answer: >
-      Pour utiliser Microsoft Purview Message Encryption, vous avez besoin de l’un des plans suivants :
+      Pour utiliser Chiffrement de messages Microsoft Purview, vous avez besoin de l’un des plans suivants :
 
 
-      - Microsoft Purview Message Encryption est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft 365 Entreprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, et Office 365 Secteur public G3 et G5. Vous n’avez pas besoin de licences supplémentaires pour recevoir les nouvelles fonctionnalités de protection optimisées par Azure Information Protection.
+      - Chiffrement de messages Microsoft Purview est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft 365 Entreprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, et Office 365 Secteur public G3 et G5. Vous n’avez pas besoin de licences supplémentaires pour recevoir les nouvelles fonctionnalités de protection optimisées par Azure Information Protection.
 
 
-      - Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir Microsoft Purview Message Encryption : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F3, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.
+      - Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir des Chiffrement de messages Microsoft Purview : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F3, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.
 
 
-      - Chaque utilisateur bénéficiant de Microsoft Purview Message Encryption doit être concédé sous licence pour être couvert par la fonctionnalité.
+      - Chaque utilisateur bénéficiant de Chiffrement de messages Microsoft Purview doit disposer d’une licence pour être couvert par la fonctionnalité.
 
 
-      - Pour obtenir la liste complète, consultez les [descriptions du service Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) pour Microsoft Purview Message Encryption.
+      - Pour obtenir la liste complète, consultez les [descriptions de service Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) pour Chiffrement de messages Microsoft Purview.
   - question: >
       Puis-je utiliser Exchange Online avec BYOK (Apportez votre propre clé) dans Azure Information Protection ?
-    answer: "Oui. Microsoft vous recommande d’effectuer les étapes de configuration de BYOK avant de configurer Microsoft Purview Message Encryption.\n  \nPour plus d’informations sur BYOK, consultez [Planification et implémentation de votre clé de locataire Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
+    answer: "Oui. Microsoft vous recommande d’effectuer les étapes de configuration de BYOK avant de configurer Chiffrement de messages Microsoft Purview.\n  \nPour plus d’informations sur BYOK, consultez [Planification et implémentation de votre clé de locataire Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
   - question: >
-      Microsoft Purview Message Encryption et BYOK avec Azure Information Protection modifier l’approche de Microsoft à l’égard des demandes de données tierces telles que les assignations ?
-    answer: "Non. Microsoft Purview Message Encryption et l’option permettant de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux assignations d’application de la loi. OME, avec BYOK pour Azure Information Protection, a été conçu pour les organisations axées sur la conformité. Microsoft prend au sérieux les demandes tierces de données client. En tant que fournisseur de services cloud, nous défendons toujours la confidentialité de vos données. Dans le cas où nous obtenons une assignation, nous essayons toujours de rediriger le tiers directement vers vous pour obtenir les informations. (Lisez le blog de Brad Smith : [Protection des données des clients contre l’espionnage gouvernemental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les demandes de données tierces, consultez [Répondre aux demandes du gouvernement et de l’application de la loi pour accéder aux données des clients](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) sur le Centre de gestion de la confidentialité Microsoft. En outre, consultez « Divulgation des données client » dans les [conditions des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
+      Les Chiffrement de messages Microsoft Purview et BYOK avec Azure Information Protection modifient-ils l’approche de Microsoft à l’égard des demandes de données tierces telles que les assignations ?
+    answer: "Non. Chiffrement de messages Microsoft Purview et la possibilité de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux assignations à comparaître. OME, avec BYOK pour Azure Information Protection, a été conçu pour les organisations axées sur la conformité. Microsoft prend au sérieux les demandes tierces de données client. En tant que fournisseur de services cloud, nous défendons toujours la confidentialité de vos données. Dans le cas où nous obtenons une assignation, nous essayons toujours de rediriger le tiers directement vers vous pour obtenir les informations. (Lisez le blog de Brad Smith : [Protection des données des clients contre l’espionnage gouvernemental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les demandes de données tierces, consultez [Répondre aux demandes du gouvernement et de l’application de la loi pour accéder aux données des clients](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) sur le Centre de gestion de la confidentialité Microsoft. En outre, consultez « Divulgation des données client » dans les [conditions des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
-      Comment cette fonctionnalité est-elle liée aux fonctionnalités héritées de Office 365 Message Encryption (OME) et d’information Rights Management (IRM) ?
-    answer: "Microsoft Purview Message Encryption est une évolution des solutions IRM et OME héritées existantes. Le tableau suivant fournit plus de détails.\n  \n**Comparaison du chiffrement de messages OME, IRM et Microsoft Purview hérité**\n\n| Fonctionnalité | Versions précédentes d’OME | IRM | Chiffrement des messages Microsoft Purview |\n|:-----|:-----|:-----|:-----|\n|**Envoi d’un e-mail chiffré**|Uniquement par le biais de règles de flux de messagerie Exchange|Utilisateur final initié à partir de Outlook pour Windows, Outlook pour Mac ou Outlook sur le web; ou par le biais de règles de flux de messagerie Exchange|Utilisateur final initié à partir de Outlook pour Windows, Outlook pour Mac ou Outlook sur le web; ou via des règles de flux de messagerie|\n|**Gestion des droits**|-|Option Ne pas transférer et modèles personnalisés|Option Ne pas transférer, option chiffrer uniquement, modèles par défaut et personnalisés|\n|**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|\n|**Expérience pour le destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes ont reçu uniquement des e-mails chiffrés dans Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des e-mails dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS , ou par le biais d’un portail web, qu’ils se trouvent ou non dans la même organisation ou dans une organisation quelconque. Le portail OME ne nécessite aucun téléchargement distinct.|\n|**Prise en charge de Bring Your Own Key**|Non disponible|Non disponible| BYOK pris en charge|\n"
+      Comment cette fonctionnalité est-elle liée aux fonctionnalités héritées Office 365 Message Encryption (OME) et IRM (Information Rights Management) ?
+    answer: "Chiffrement de messages Microsoft Purview est une évolution des solutions IRM et OME héritées existantes. Le tableau suivant fournit plus de détails.\n  \n**Comparaison d’OME, IRM et Chiffrement de messages Microsoft Purview hérités**\n\n| Fonctionnalité | Versions précédentes d’OME | IRM | Chiffrement des messages Microsoft Purview |\n|:-----|:-----|:-----|:-----|\n|**Envoi d’un e-mail chiffré**|Uniquement par le biais de règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web; ou via des règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook pour Windows, Outlook pour Mac ou Outlook sur le web; ou via des règles de flux de messagerie|\n|**Gestion des droits**|-|Option Ne pas transférer et modèles personnalisés|Option Ne pas transférer, option chiffrer uniquement, modèles par défaut et personnalisés|\n|**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|\n|**Expérience pour le destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes ont reçu uniquement des e-mails chiffrés dans Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des e-mails dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils se trouvent ou non dans la même organisation ou dans une organisation. Le portail OME ne nécessite aucun téléchargement distinct.|\n|**Prise en charge de Bring Your Own Key**|Non disponible|Non disponible| BYOK pris en charge|\n"
   - question: >
-      Comment faire activer Le chiffrement des messages Microsoft Purview pour mon organisation ?
-    answer: "Voir [Configurer le chiffrement des messages Microsoft Purview](set-up-new-message-encryption-capabilities.md).\n  \n"
+      Comment faire activer Chiffrement de messages Microsoft Purview pour mon organisation ?
+    answer: "Voir [Configurer Chiffrement de messages Microsoft Purview](set-up-new-message-encryption-capabilities.md).\n  \n"
   - question: >
       La version précédente d’OME sera-t-elle déconseillée ?
     answer: >
       Vous pouvez toujours utiliser la version précédente d’OME. Elle ne sera pas dépréciée pour l’instant. Toutefois, nous encourageons vivement les organisations à utiliser la solution de chiffrement de messages nouvelle et améliorée. Si vous n’avez pas encore déployé OME, vous ne pouvez pas configurer un nouveau déploiement de la version précédente d’OME.
   - question: >
-      Mon organisation utilise active directory Rights Management, puis-je utiliser cette fonctionnalité ?
-    answer: "Non. Si vous utilisez Exchange Online avec active directory Rights Management service (AD RMS), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms).\n  \n"
+      Mon organisation utilise Active Directory Rights Management. Puis-je utiliser cette fonctionnalité ?
+    answer: "Non. Si vous utilisez Exchange Online avec le service Active Directory Rights Management (AD RMS), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms).\n  \n"
   - question: >
-      Mon organisation dispose d’un déploiement hybride Exchange. Puis-je utiliser cette fonctionnalité ?
+      Mon organisation dispose d’un déploiement Exchange Hybride. Puis-je utiliser cette fonctionnalité ?
     answer: "Les utilisateurs locaux peuvent envoyer des messages chiffrés à l’aide de règles de flux de courrier Exchange Online. Pour ce faire, vous devez acheminer les e-mails via Exchange Online. Pour plus d’informations, consultez [la partie 2 : Configurer le flux du courrier de votre serveur de messagerie vers Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).\n  \n"
   - question: >
       Quel client de messagerie dois-je utiliser pour créer un message chiffré ? Quelles applications sont prises en charge pour l’envoi de messages protégés ?
@@ -80,22 +76,22 @@ sections:
   - question: >
       Quels clients de messagerie sont pris en charge pour lire et répondre aux e-mails protégés ?
     answer: >
-      Microsoft 365 les utilisateurs peuvent lire et répondre à partir de Outlook pour Windows et Mac (2013 et 2016), Outlook sur le web et Outlook mobile (Android et iOS). Vous pouvez également utiliser le iOS client de messagerie natif si votre organisation l’autorise. Si vous n’êtes pas un utilisateur Microsoft 365, vous pouvez lire et répondre aux messages chiffrés sur le web via votre navigateur web.
+      Les utilisateurs de Microsoft 365 peuvent lire et répondre à partir d’Outlook pour Windows et Mac (2013 et 2016), Outlook sur le web et Outlook mobile (Android et iOS). Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous n’êtes pas un utilisateur Microsoft 365, vous pouvez lire et répondre aux messages chiffrés sur le web via votre navigateur web.
   - question: >
       Quels clients de messagerie prennent en charge les e-mails protégés par chiffrement uniquement ?
     answer: >
-      Microsoft 365 les utilisateurs peuvent utiliser Outlook pour les versions PC 2019 et Microsoft 365 pour créer des messages protégés par la stratégie de chiffrement uniquement.  Cela signifie que les messages auxquels la nouvelle stratégie de chiffrement uniquement est appliquée peuvent être lus directement dans Outlook sur le web, dans Outlook pour iOS et Android, et maintenant Outlook pour les versions PC 2019 et Microsoft 365.
+      Les utilisateurs de Microsoft 365 peuvent utiliser Outlook pour PC versions 2019 et Microsoft 365 pour créer des messages protégés par la stratégie de chiffrement uniquement.  Cela signifie que les messages auxquels la nouvelle stratégie de chiffrement uniquement est appliquée peuvent être lus directement dans Outlook sur le web, dans Outlook pour iOS et Android, et maintenant dans Outlook pour PC versions 2019 et Microsoft 365.
   - question: >
       Existe-t-il une limite de taille pour les messages que vous pouvez envoyer avec OME ?
     answer: >
-      Oui. La taille maximale des messages que vous pouvez envoyer avec Microsoft Purview Message Encryption, y compris les pièces jointes, est de 25 Mo. Pour plus d’informations, consultez [Les limites des messages](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+      Oui. La taille maximale du message que vous pouvez envoyer avec Chiffrement de messages Microsoft Purview, y compris les pièces jointes, est de 25 Mo. Pour plus d’informations, consultez [Les limites des messages](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
   - question: >
       Quel type de messages le portail OME prend-il en charge ?
     answer: >
       Le portail OME prend uniquement en charge le courrier. Le portail ne prend pas en charge d’autres types de messages tels que le calendrier ou la messagerie vocale.
   - question: >
       Quels types de fichiers sont pris en charge en tant que pièces jointes dans les e-mails protégés ? Les pièces jointes héritent-ils des stratégies de protection associées aux e-mails protégés ?
-    answer: "Vous pouvez joindre n’importe quel type de fichier à un courrier protégé. À une exception près, les stratégies de protection sont appliquées uniquement aux formats de fichier mentionnés dans les [types de fichiers pris en charge par le client Azure Information Protection](/information-protection/rms-client/client-admin-guide-file-types). Microsoft Purview Message Encryption ne prend pas en charge les versions 97-2003 des programmes Office suivants : Word (.doc), Excel (.xls) et PowerPoint (.ppt).\n\nSi un format de fichier est pris en charge, tel qu’un fichier Word, Excel ou PowerPoint, le fichier est toujours protégé, même après le téléchargement de la pièce jointe par le destinataire. Par exemple, supposons qu’une pièce jointe est protégée par Ne pas transférer. Le destinataire d’origine télécharge le fichier, crée un message à un nouveau destinataire et attache le fichier. Lorsque le nouveau destinataire reçoit le fichier, il ne peut pas ouvrir le fichier protégé.\n  \n"
+    answer: "Vous pouvez joindre n’importe quel type de fichier à un courrier protégé. À une exception près, les stratégies de protection sont appliquées uniquement aux formats de fichier mentionnés dans les [types de fichiers pris en charge par le client Azure Information Protection](/information-protection/rms-client/client-admin-guide-file-types). Chiffrement de messages Microsoft Purview ne prend pas en charge les versions 97-2003 des programmes Office suivants : Word (.doc), Excel (.xls) et PowerPoint (.ppt).\n\nSi un format de fichier est pris en charge, tel qu’un fichier Word, Excel ou PowerPoint, le fichier est toujours protégé, même après le téléchargement de la pièce jointe par le destinataire. Par exemple, supposons qu’une pièce jointe est protégée par Ne pas transférer. Le destinataire d’origine télécharge le fichier, crée un message à un nouveau destinataire et attache le fichier. Lorsque le nouveau destinataire reçoit le fichier, il ne peut pas ouvrir le fichier protégé.\n  \n"
   - question: >
       Les pièces jointes de fichier PDF sont-ils prises en charge ?
     answer: >
@@ -105,7 +101,7 @@ sections:
       Pour Outlook sur le web, Outlook pour iOS et Outlook pour Android, vous pouvez chiffrer les fichiers PDF que vous envoyez sans aucune autre étape. Ces clients prennent en charge le chiffrement PDF en mode natif.
 
 
-      Outlook bureau ne prend pas en charge le chiffrement des pièces jointes de fichier PDF en mode natif. Au lieu de cela, vous devez configurer Exchange règles de flux de messagerie ou DLP pour appliquer d’abord le chiffrement aux pièces jointes PDF. Lorsque vous envoyez du courrier à partir de Outlook Desktop avec une pièce jointe PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, le service applique la protection Microsoft Purview Message Encryption de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe de fichier PDF protégée.
+      Outlook Desktop ne prend pas en charge en mode natif le chiffrement des pièces jointes de fichier PDF. Au lieu de cela, vous devez configurer des règles de flux de messagerie Exchange ou DLP pour appliquer d’abord le chiffrement aux pièces jointes PDF. Lorsque vous envoyez du courrier à partir d’Outlook Desktop avec une pièce jointe PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, il applique la protection Chiffrement de messages Microsoft Purview de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe de fichier PDF protégée.
 
 
       Pour activer le chiffrement des pièces jointes PDF, exécutez la commande suivante dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) :
@@ -118,19 +114,19 @@ sections:
       ```
 
 
-      Le chiffrement PDF vous permet de protéger les documents PDF sensibles par le biais d’une communication sécurisée ou d’une collaboration sécurisée. Pour tous les clients Outlook, les messages et les pièces jointes PDF non protégés héritent de la protection Microsoft Purview Message Encryption de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de courrier dans Exchange Online. En outre, si un utilisateur Outlook sur le web attache un document PDF non protégé et applique une protection au message, le message hérite de la protection du message. Les utilisateurs peuvent uniquement ouvrir les pièces jointes chiffrées dans les applications qui prennent en charge les fichiers PDF protégés (par exemple, le portail OME et azure Information Protection Viewer).
+      Le chiffrement PDF vous permet de protéger les documents PDF sensibles par le biais d’une communication sécurisée ou d’une collaboration sécurisée. Pour tous les clients Outlook, les messages et les pièces jointes PDF non protégés héritent de la protection Chiffrement de messages Microsoft Purview de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de courrier dans Exchange Online. En outre, si un utilisateur Outlook sur le web attache un document PDF non protégé et applique une protection au message, le message hérite de la protection du message. Les utilisateurs peuvent uniquement ouvrir les pièces jointes chiffrées dans les applications qui prennent en charge les fichiers PDF protégés (par exemple, le portail OME et azure Information Protection Viewer).
 
 
       > [!IMPORTANT]
 
-      > Outlook client de bureau ne prend pas en charge le chiffrement PDF.
+      > Le client de bureau Outlook ne prend pas en charge le chiffrement PDF.
   - question: >
       Les pièces jointes SharePoint Online ou OneDrive Entreprise sont-elles prises en charge ?
     answer: >
-      Not yet. SharePoint pièces jointes en ligne ou OneDrive Entreprise ne sont pas prises en charge et les utilisateurs finaux peuvent chiffrer un courrier, mais pas les pièces jointes cloud.
+      Not yet. Les pièces jointes SharePoint Online ou OneDrive Entreprise ne sont pas prises en charge et les utilisateurs finaux peuvent chiffrer un courrier, mais pas les pièces jointes cloud.
   - question: >
       Quels clients de messagerie prennent en charge la préversion des pièces jointes chiffrées dans les e-mails protégés ?
-    answer: "Lorsque les pièces jointes sont protégées par un courrier protégé, Outlook clients offrent la possibilité de prévisualiser directement le document. Outlook prend en charge la préversion des documents Office (docx, xlsx, pptx, doc, xls, ppt). Outlook sur le web prend en charge la préversion des documents Office (docx, xlsx, pptx) et PDF.  \n"
+    answer: "Lorsque les pièces jointes sont protégées par un courrier protégé, les clients Outlook offrent la possibilité d’afficher un aperçu direct du document. Outlook prend en charge la préversion des documents Office (docx, xlsx, pptx, doc, xls, ppt). Outlook sur le web prend en charge la préversion des documents Office (docx, xlsx, pptx) et PDF.  \n"
   - question: >
       Quels clients de messagerie prennent en charge la révocation des e-mails protégés ?
     answer: >
@@ -158,7 +154,7 @@ sections:
   - question: >
       Puis-je utiliser le chiffrement des messages avec des fonctionnalités de conformité telles que eDiscovery ?
     answer: >
-      Oui, la plupart des messages protégés par Microsoft Purview Message Encryption sont détectables. Le courrier protégé par Microsoft Purview Message Encryption que vous recevez d’une autre organisation Microsoft 365 dont la personnalisation personnalisée est appliquée via une règle de flux de messagerie est indétectable par votre service eDiscovery. En d’autres termes, si le courrier n’est pas accessible par le biais de la boîte aux lettres de l’utilisateur, mais qu’il ne s’affiche que par le biais d’un lien vers le portail OME, le courrier ne peut pas faire l’objet d’une recherche. Pour plus [d’informations, consultez les activités eDiscovery qui prennent en charge les éléments chiffrés](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) .
+      Oui, la plupart des messages protégés par Chiffrement de messages Microsoft Purview sont détectables. Chiffrement de messages Microsoft Purview courrier protégé que vous recevez d’une autre organisation Microsoft 365 avec une personnalisation appliquée par le biais d’une règle de flux de messagerie est indétectable par votre service eDiscovery. En d’autres termes, si le courrier n’est pas accessible par le biais de la boîte aux lettres de l’utilisateur, mais qu’il ne s’affiche que par le biais d’un lien vers le portail OME, le courrier ne peut pas faire l’objet d’une recherche. Pour plus [d’informations, consultez les activités eDiscovery qui prennent en charge les éléments chiffrés](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) .
   - question: >
       Puis-je supprimer le chiffrement de l’e-mail ?
     answer: >
@@ -199,13 +195,13 @@ sections:
 
       > [!NOTE]
 
-      > Android et iOS utiliseraient l’application mobile Office pour afficher les pièces jointes chiffrées, et non directement dans Outlook mobile.
+      > Android et iOS utiliseraient l’application mobile Office pour afficher les pièces jointes chiffrées, et non directement dans Outlook Mobile.
 
 
       Il existe actuellement deux limitations connues :
 
 
-      - Vous ne pouvez pas ouvrir les pièces jointes aux e-mails que vous recevez sur des appareils mobiles à l’aide de Outlook mobile.
+      - Vous ne pouvez pas ouvrir les pièces jointes aux e-mails que vous recevez sur des appareils mobiles à l’aide d’Outlook Mobile.
 
 
       - Dans Outlook Win32, pour les utilisateurs affectés à une boîte aux lettres partagée via un groupe de sécurité avec e-mail, l’utilisateur voit un message de notification pour afficher le courrier chiffré à l’aide d’un navigateur web.  Pour afficher le courrier chiffré directement dans Outlook Win32, Outlook et Azure Information Protection clients d’étiquetage unifiés exigent que l’utilisateur soit directement affecté à la boîte aux lettres partagée avec les autorisations d’accès complet et le mappage automatique activés. Le mappage automatique est activé par défaut pour Exchange Online.
@@ -214,7 +210,7 @@ sections:
       **Pour affecter un utilisateur à la boîte aux lettres partagée**
 
 
-      1. [Connecter à Exchange Online PowerShell.aspx](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)).
+      1. [Connectez-vous à Exchange Online PowerShell.aspx](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)).
 
 
       2. Exécutez l’applet de commande Add-MailboxPermission avec le paramètre Demapping automatique. Cet exemple donne à Ayla des autorisations d’accès complet à une boîte aux lettres de support.
@@ -225,7 +221,7 @@ sections:
   - question: >
       L’accès délégué est-il pris en charge avec l’ouverture de messages chiffrés ? Même si un délégué a un accès complet à la boîte aux lettres d’un autre utilisateur ?
     answer: >
-      L’accès délégué au courrier chiffré est pris en charge dans Outlook sur le web, Outlook pour Mac, Outlook pour iOS et Outlook pour Android.  Outlook pour Windows ne prend pas en charge l’accès délégué.
+      L’accès délégué à la messagerie chiffrée est pris en charge dans Outlook sur le web, Outlook pour Mac, Outlook pour iOS et Outlook pour Android.  Outlook pour Windows ne prend pas en charge l’accès délégué.
   - question: >
       Combien de temps ai-je accès au courrier dans le portail OME ?
     answer: >

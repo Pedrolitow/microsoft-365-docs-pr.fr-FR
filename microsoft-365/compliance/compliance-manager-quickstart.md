@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de configuration et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: a4699e48c76aa041e0bc8ef3e35308ffb5f0e79c
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 99031b0d93fef74f788f9a42b906dffc58545014
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554178"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638711"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft Purview pour gérer la conformité de votre organisation aux réglementations, aux stratégies et aux normes.
 

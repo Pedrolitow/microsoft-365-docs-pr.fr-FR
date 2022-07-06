@@ -25,19 +25,17 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: documentation de référence sur la protection contre la perte de données
-ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5a52d79a073a9735d5c32ce3a9646ccacf1a0dcb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017283"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636466"
 ---
 # <a name="data-loss-prevention-reference"></a>Informations de référence sur la protection contre la perte de données
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
-> Il s’agit d’une rubrique de référence qui n’est plus la ressource principale pour les informations de protection contre la perte de données (DLP) Microsoft Purview. Le jeu de contenu DLP est mis à jour et restructuré. Les rubriques traitées dans cet article passeront aux articles nouveaux et mis à jour. Pour plus d’informations sur la protection contre la perte de données, consultez [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
+> Il s’agit d’une rubrique de référence qui n’est plus la ressource principale pour les informations Protection contre la perte de données Microsoft Purview (DLP). Le jeu de contenu DLP est mis à jour et restructuré. Les rubriques traitées dans cet article passeront aux articles nouveaux et mis à jour. Pour plus d’informations sur la protection contre la perte de données, consultez [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -73,7 +71,7 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>Créer et gérer des stratégies DLP
 
-Vous créez et gérez des stratégies DLP sur la page de protection contre la perte de données dans le portail de conformité Microsoft Purview.
+Vous créez et gérez des stratégies DLP sur la page de protection contre la perte de données du portail de conformité Microsoft Purview.
 
 ![Page de protection contre la perte de données dans le portail de conformité Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
@@ -530,9 +528,9 @@ La protection contre la perte de données évalue le contenu pouvant être index
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 
-Lorsque vous créez une stratégie DLP qui inclut Exchange Online comme emplacement, la stratégie est synchronisée à partir du portail de conformité Microsoft Purview vers Exchange Online, puis de Exchange Online à Outlook sur le web et Outlook.
+Lorsque vous créez une stratégie DLP qui inclut Exchange Online en tant qu’emplacement, la stratégie est synchronisée entre le portail de conformité Microsoft Purview et Exchange Online, puis de Exchange Online à Outlook sur le web  et Outlook.
 
-Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les conseils de stratégie, puisque le contenu en cours de création est évalué par rapport aux stratégies DLP. Une fois qu’un message est envoyé, il est évalué par rapport aux stratégies DLP en tant que partie normale du flux de messagerie, ainsi que les règles de flux de messagerie Exchange (également appelées règles de transport) et les stratégies DLP créées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Les stratégies DLP analysent le message ainsi que les éventuelles pièces jointes.
+Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les conseils de stratégie, puisque le contenu en cours de création est évalué par rapport aux stratégies DLP. Une fois qu’un message est envoyé, il est évalué par rapport aux stratégies DLP dans le cadre normal du flux de messagerie, ainsi que les règles de flux de messagerie Exchange (également appelées règles de transport) et les stratégies DLP créées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>. Les stratégies DLP analysent le message ainsi que les éventuelles pièces jointes.
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office
 
@@ -544,11 +542,11 @@ L’évaluation des stratégies DLP dans Office est conçue pour ne pas avoir d�
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Évaluation des stratégies dans Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams en tant qu’emplacement, la stratégie est synchronisée à partir du portail de conformité Microsoft Purview avec des comptes d’utilisateur et Microsoft Teams canaux et messages de conversation. Selon la configuration des stratégies DLP, lorsque quelqu’un tente de partager des informations sensibles dans une conversation ou un message de canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Consultez l’article sur la [protection contre la perte de données et Microsoft Teams](dlp-microsoft-teams.md) pour obtenir plus d’informations à ce sujet.
+Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacement, la stratégie est synchronisée entre le portail de conformité Microsoft Purview et les comptes d’utilisateur, les canaux et les messages de conversation Microsoft Teams. Selon la configuration des stratégies DLP, lorsque quelqu’un tente de partager des informations sensibles dans une conversation ou un message de canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Consultez l’article sur la [protection contre la perte de données et Microsoft Teams](dlp-microsoft-teams.md) pour obtenir plus d’informations à ce sujet.
 
 ## <a name="permissions"></a>Autorisations
 
-Par défaut, les administrateurs généraux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations sur le portail de conformité Microsoft Purview. Par défaut, votre administrateur de locataire a accès à cet emplacement et peut accorder aux agents de conformité et à d’autres personnes l’accès au portail de conformité Microsoft Purview, sans leur accorder toutes les autorisations d’un administrateur client. Pour ce faire, nous vous recommandons d’effectuer les opérations suivantes :
+Par défaut, les administrateurs généraux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations sur le portail de conformité Microsoft Purview. Par défaut, votre administrateur de locataire a accès à cet emplacement et peut accorder aux agents de conformité et à d’autres personnes l’accès au portail de conformité Microsoft Purview, sans leur accorder toutes les autorisations d’un administrateur de locataire. Pour ce faire, nous vous recommandons d’effectuer les opérations suivantes :
 
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
 
@@ -568,11 +566,11 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 Pour utiliser la plupart des applets de commande pour le portail de conformité Microsoft Purview, vous devez :
 
-1. [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](/powershell/module/exchange/export-dlppolicycollection).
 
-Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, ***les applets de commande pour les rapports DLP sont disponibles dans Exchange Online PowerShell, et non dans le portail de conformité Microsoft Purview PowerShell***. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
+Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, ***les applets de commande des rapports DLP sont disponibles dans Exchange Online PowerShell, et non dans portail de conformité Microsoft Purview PowerShell***. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
 
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner des documents dans un ensemble de révisions et les utiliser individuellement dans un autre ensemble dans un cas de découverte électronique Microsoft Purview (Premium).
+description: Découvrez comment sélectionner des documents dans un ensemble de révisions et les utiliser individuellement dans un autre ensemble dans un cas Microsoft Purview eDiscovery (Premium).
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 599af9e2060497738076cd702e9e3dd31f5db06d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4fc1548903ebea3a42d1612c8e9c74be32bbe0ba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094138"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640961"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Ajouter des données à partir d’un groupe de révision à un autre groupe de révision.
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans certains cas, il peut être nécessaire de sélectionner des documents dans un ensemble de révisions et de les utiliser individuellement dans un autre ensemble de révisions. Cette fonctionnalité est particulièrement utile si vous avez éliminé du contenu dans un ensemble de révision et que vous voulez exécuter des analyses sur le sous-ensemble de données.
 

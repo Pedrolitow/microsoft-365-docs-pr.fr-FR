@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment filtrer des données à l’aide de la fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 lorsque vous importez des fichiers PST dans Microsoft 365.
-ms.openlocfilehash: 5ff78126f9e2d02181635433d7a94ede0e191c8d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1a9483d77ff575b643d4ab9717d286b608bea35d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099738"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640069"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST qui sont réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
   
@@ -60,21 +58,21 @@ Le graphique suivant montre le processus d’importation intelligente et met en 
     
   - [Utiliser l’expédition de disque pour importer des fichiers PST dans Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Une fois que vous avez créé un travail d’importation à l’aide du chargement réseau, l’état du travail d’importation dans la page Importer dans le Centre de sécurité & conformité est défini sur **Analyse en cours**, ce qui signifie que Microsoft 365 analyse les données dans les fichiers PST que vous avez chargés. Cliquez sur **Refreshrefresh**![.](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour l’état du travail d’importation. 
+- Une fois que vous avez créé un travail d’importation à l’aide du chargement réseau, l’état du travail d’importation sur la page Importer dans le Centre de sécurité & conformité est défini sur **Analyse en cours**, ce qui signifie que Microsoft 365 analyse les données dans les fichiers PST que vous avez chargés. Cliquez sur **Actualiser**![l’actualisation.](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour l’état du travail d’importation. 
     
-- Pour les travaux d’importation d’expédition de lecteur, les données sont analysées par Microsoft 365 une fois que le personnel du centre de données Microsoft a reçu votre disque dur et chargé les fichiers PST dans la zone de stockage Azure de votre organisation.
+- Pour les travaux d’importation d’expédition de lecteur, les données seront analysées par Microsoft 365 une fois que le personnel du centre de données Microsoft aura reçu votre disque dur et chargé les fichiers PST dans la zone de stockage Azure de votre organisation.
   
 ## <a name="filter-data-that-gets-imported-to-mailboxes"></a>Filtrer les données importées dans les boîtes aux lettres
 
 Après avoir créé un travail d’importation PST, procédez comme suit pour filtrer les données avant de les importer dans Office 365.
   
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation.
+1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification d’un compte administrateur dans votre organisation.
     
-2. Dans le volet gauche du portail de conformité, cliquez sur **Importation** de **gestion du cycle de** \> vie des données.
+2. Dans le volet gauche du portail de conformité, cliquez sur **Gestion du cycle de vie des données** \> **Importer**.
     
-    Les travaux d’importation de votre organisation sont répertoriés sous l’onglet **Importation**. La valeur **Analyse terminée** dans la colonne **État** indique les travaux d’importation qui ont été analysés par Microsoft 365 et qui sont prêts à être importés.
+    Les travaux d’importation de votre organisation sont répertoriés sous l’onglet **Importation** . La valeur **Analyse terminée** dans la colonne **État** indique les travaux d’importation qui ont été analysés par Microsoft 365 et qui sont prêts à être importés.
     
-    ![L’état complet de l’analyse indique Microsoft 365 a analysé les données dans les fichiers PST.](../media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
+    ![L’état complet de l’analyse indique que Microsoft 365 a analysé les données dans les fichiers PST.](../media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
 3. Sélectionnez le travail d’importation à effectuer, puis cliquez sur **Importer pour Office 365**.
   
@@ -90,7 +88,7 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
   
     a. Cliquez sur **Oui, je veux le filtrer avant d’importer** pour découper les données que vous importez, puis cliquez sur **Suivant**.
   
-    La page **Importer des données vers Office 365 page** s’affiche avec des insights détaillés sur les données de l’analyse qui Microsoft 365 effectuée. 
+    La page **Importer des données dans Office 365 page** s’affiche avec des insights détaillés sur les données de l’analyse effectuée par Microsoft 365. 
   
     ![Microsoft 365 affiche des insights détaillés sur les données à partir de son analyse des fichiers PST.](../media/4881205f-0288-4c32-a440-37e2160295f2.png)
   
@@ -102,14 +100,14 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
   
     Vous pouvez configurer ces filtres :
   
-      - **Âge** : sélectionnez un âge afin que seuls les éléments plus nouveaux que l’âge spécifié soient importés. Consultez la section [Plus d’informations](#more-information) pour obtenir une description de la façon dont Microsoft 365 détermine les compartiments d’âge pour le filtre **Âge**. 
+      - **Âge** : sélectionnez un âge afin que seuls les éléments plus nouveaux que l’âge spécifié soient importés. Consultez la section [Plus d’informations](#more-information) pour obtenir une description de la façon dont Microsoft 365 détermine les compartiments d’âge pour le filtre **Âge** . 
   
       - **Type** : cette section affiche tous les types de messages qui ont été trouvés dans les fichiers PST pour le travail d’importation. Vous pouvez décocher une case en regard d’un type de message que vous souhaitez exclure. Vous ne pouvez pas exclure l’autre type de message. Consultez la section [Plus d’informations](#more-information) pour obtenir la liste des éléments de boîte aux lettres inclus dans la catégorie Autres.
   
-      - **Utilisateurs** : vous pouvez exclure les messages envoyés ou reçus par des personnes spécifiques. Pour exclure les personnes qui apparaissent dans le champ From:, To: field, or the Cc: field of messages, cliquez sur **Exclure les utilisateurs** en regard de ce type de destinataire. Tapez l’adresse e-mail (adresse SMTP) de la personne, cliquez sur **l’icône AddNew**![.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) pour les ajouter à la liste des utilisateurs exclus pour ce type de destinataire, puis cliquez sur **Enregistrer** pour enregistrer la liste des utilisateurs exclus. 
+      - **Utilisateurs** : vous pouvez exclure les messages envoyés ou reçus par des personnes spécifiques. Pour exclure les personnes qui apparaissent dans le champ From:, To: field, or the Cc: field of messages, cliquez sur **Exclure les utilisateurs** en regard de ce type de destinataire. Tapez l’adresse e-mail (adresse SMTP) de la personne, puis cliquez sur **Ajouter**![une nouvelle icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) pour les ajouter à la liste des utilisateurs exclus pour ce type de destinataire, puis cliquez sur **Enregistrer** pour enregistrer la liste des utilisateurs exclus. 
   
         > [!NOTE]
-        > Microsoft 365 n’affiche pas les insights de données résultant de la définition du filtre **Contacts**. Toutefois, si vous définissez ce filtre pour exclure les messages envoyés ou reçus par des personnes spécifiques, ces messages seront exclus pendant le processus d’importation réel. 
+        > Microsoft 365 n’affiche pas les insights de données résultant de la définition du filtre **Contacts** . Toutefois, si vous définissez ce filtre pour exclure les messages envoyés ou reçus par des personnes spécifiques, ces messages seront exclus pendant le processus d’importation réel. 
   
     c. Cliquez sur **Appliquer** dans la page **Autres options de filtrage** pour enregistrer vos paramètres de filtre. 
   
@@ -135,7 +133,7 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Comment Microsoft 365 déterminer les incréments du filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodatage envoyé ou reçu de chaque élément (si un élément a un horodatage envoyé et reçu, la date la plus ancienne est sélectionnée). Ensuite, Microsoft 365 examine la valeur d’année de cet horodatage et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés comme valeurs dans la liste déroulante du filtre **Âge** . Par exemple, si un fichier PST contient des messages de 2016, 2015 et 2014, les valeurs du filtre **Âge** sont **1 an**, **2 ans** et **3 ans**.
+- Comment Microsoft 365 détermine-t-il les incréments pour le filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodatage envoyé ou reçu de chaque élément (si un élément a un horodatage envoyé et reçu, la date la plus ancienne est sélectionnée). Microsoft 365 examine ensuite la valeur d’année de cet horodatage et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés comme valeurs dans la liste déroulante du filtre **Âge** . Par exemple, si un fichier PST contient des messages de 2016, 2015 et 2014, les valeurs du filtre **Âge** sont **1 an**, **2 ans** et **3 ans**.
   
 - Le tableau suivant répertorie les types de messages inclus dans la catégorie **Autre** dans le filtre **Type** de la page **Plus d’options** (voir l’étape 5b de la procédure précédente). Actuellement, vous ne pouvez pas exclure les éléments de la catégorie « Autres » lorsque vous importez des fichiers PST dans Office 365. 
   
@@ -144,7 +142,7 @@ Après avoir créé un travail d’importation PST, procédez comme suit pour fi
     |IPM. Activité  <br/> |Entrées de journal  <br/> |
     |IPM. Document  <br/> |Documents et fichiers (non joints à un e-mail)  <br/> |
     |IPM. Fichier  <br/> |(identique à IPM. Document)  <br/> |
-    |IPM. Note.IMC.Notification  <br/> |Rapports envoyés par Internet Mail Connecter, qui est la passerelle Exchange Server vers Internet  <br/> |
+    |IPM. Note.IMC.Notification  <br/> |Rapports envoyés par Internet Mail Connect, qui est la passerelle Exchange Server vers Internet  <br/> |
     |IPM. Note.Microsoft.Fax  <br/> |Télécopie de messages  <br/> |
     |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply d’absence du bureau  <br/> |
     |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Réponses envoyées par une règle de boîte de réception  <br/> |

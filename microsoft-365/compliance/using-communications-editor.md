@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’Éditeur de communications pour modifier le texte et fusionner les variables de champ lors de la mise en forme de votre contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b44f6090f4a8bc9b09bb7934477741effc30ff6e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 910d25b80775284b8b12d803e722579d987558cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098403"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636962"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous définissez le contenu de votre portail, les notifications de conservation légale et les rappels/escalades associés, vous pouvez utiliser l’Éditeur de communications pour mettre en forme et personnaliser dynamiquement votre contenu.
 

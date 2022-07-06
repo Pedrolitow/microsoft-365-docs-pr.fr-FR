@@ -15,18 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de la recherche eDiscovery.
-ms.openlocfilehash: 135c83f734e0687c8d477ab434d0aa539224f39a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e2387f403854561c9906f252ad39be740c62ae19
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100828"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638783"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche eDiscovery à partir des différents outils Microsoft eDiscovery, la taille par défaut d’un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Une raison de le faire est qu’un fichier PST peut tenir sur un support amovible, tel qu’un DVD, un disque compact ou un lecteur USB. 
+Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche eDiscovery à partir des différents outils Microsoft eDiscovery, la taille par défaut d’un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Une raison de le faire est qu’un fichier PST peut tenir sur un support amovible, tel qu’un DVD, un disque compact ou un lecteur USB. 
   
 > [!NOTE]
 > L’outil d’exportation eDiscovery est utilisé pour exporter les résultats de recherche lors de l’utilisation de l’outil de recherche de contenu dans le portail de conformité Microsoft Purview.
@@ -56,7 +54,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
    
 3. Remplacez la `PstSizeLimitInBytes` valeur par la taille maximale souhaitée d’un fichier PST lorsque vous exportez les résultats de la recherche, puis enregistrez le fichier. 
     
-4. Dans Windows’Explorateur, cliquez ou double-cliquez sur le fichier .reg que vous avez créé dans les étapes précédentes.
+4. Dans l’Explorateur Windows, cliquez ou double-cliquez sur le fichier .reg que vous avez créé dans les étapes précédentes.
     
 5. Dans la fenêtre Access Control utilisateur, cliquez sur **Oui** pour permettre à l’Éditeur du Registre d’apporter la modification. 
     

@@ -13,16 +13,14 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 9edbbb463d04447ee4babcd66b4d6e320663209a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044222"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639751"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="summary"></a>Résumé
 
@@ -43,7 +41,7 @@ Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur ut
   > [!NOTE]
   > Pour le flux de messagerie entrant SMTP, après la dépréciation de TLS 1.0 et 1.1, nous n’accepterons que la connexion TLS 1.2. Toutefois, nous continuerons à accepter la connexion SMTP qui n’est pas chiffrée sans TLS. Bien que nous ne recommandons pas la transmission de courrier électronique sans chiffrement.
 
-Vous devez mettre à jour les applications qui appellent Microsoft 365 API sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. .NET 4.5 est défini par défaut sur TLS 1.1. Pour mettre à jour votre configuration .NET, consultez [Comment activer TLS (Transport Layer Security) 1.2 sur les clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+Vous devez mettre à jour les applications qui appellent des API Microsoft 365 sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. .NET 4.5 est défini par défaut sur TLS 1.1. Pour mettre à jour votre configuration .NET, consultez [Comment activer TLS (Transport Layer Security) 1.2 sur les clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 Les clients suivants ne peuvent pas utiliser TLS 1.2. Mettez à jour vos clients pour garantir un accès illimité au service.
 
@@ -77,7 +75,7 @@ Si vous utilisez une infrastructure sur site pour des scénarios hybrides ou les
 Les ressources suivantes fournissent des conseils pour vous assurer que vos clients utilisent TLS 1.2 ou une version ultérieure et pour désactiver TLS 1.0 et 1.1.
 
 - Pour les clients Windows 7 qui se connectent à Office 365, assurez-vous que TLS 1.2 est le protocole sécurisé défini par défaut dans WinHTTP sous Windows. Pour plus d’informations, accédez à [KB 3140245 - Mise à jour pour activer TLS 1.1 et TLS 1.2 en tant que protocoles sécurisés par défaut dans WinHTTP sous Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
-- [Suites de chiffrement TLS prises en charge par Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
+- [Suites de chiffrement TLS prises en charge par Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
 - Pour résoudre les problèmes de faible utilisation de TLS en supprimant les dépendances TLS 1.0 et 1.1, accédez à [Prise en charge de TLS 1.2 sous Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
 - [La nouvelle fonctionnalité IIS](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) facilite la recherche de clients sur [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) et [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) qui se connectent au service en utilisant des protocoles de sécurité faibles.
 - Obtenez plus d’informations sur la façon de [résoudre le problème TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).

@@ -11,16 +11,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 42084e764ffaf93f59e0225194db331c2ac952db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66009428"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637858"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez l'outil de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher rapidement des e-mails dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
   
@@ -40,7 +38,7 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
 
 - [Afficher les statistiques des mots clés](view-keyword-statistics-for-content-search.md) pour les résultats d’une recherche, puis affiner la requête si nécessaire
 
-- [Recherchez des données tierces](use-content-search-to-search-third-party-data-that-was-imported.md) que votre organisation a importées dans Microsoft 365
+- [Rechercher des données tierces](use-content-search-to-search-third-party-data-that-was-imported.md) que votre organisation a importées dans Microsoft 365
 
 - [Conservez les destinataires CCI](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) afin de pouvoir les rechercher
 
@@ -62,7 +60,7 @@ La recherche de contenu est facile à utiliser, mais il s’agit également d’
 
 - [Résultats de recherche estimés et réels](differences-between-estimated-and-actual-ediscovery-search-results.md) , ainsi que les raisons pour lesquelles il peut y avoir des différences entre eux lorsque vous exportez et téléchargez des résultats de recherche
 
-- [Éléments partiellement indexés dans Exchange et SharePoint](partially-indexed-items-in-content-search.md) et comment les inclure ou les exclure lorsque vous exportez et téléchargez des résultats de recherche
+- [Éléments partiellement indexés dans Exchange et SharePoint et](partially-indexed-items-in-content-search.md) comment les inclure ou les exclure lorsque vous exportez et téléchargez des résultats de recherche
 
 - [Examiner les éléments partiellement indexés](investigating-partially-indexed-items-in-ediscovery.md) et déterminer l’exposition de votre organisation à ces éléments
 

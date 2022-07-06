@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 604938426dfd8818647a5fa7b71069b4527ec877
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530310"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636444"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -33,7 +33,7 @@ ms.locfileid: "66530310"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -144,20 +144,6 @@ Un utilisateur visite un site web :
 Dans sa forme initiale, le ransomware est une menace de marchandise, préprogrammée et axée sur des résultats limités et spécifiques (par exemple, le chiffrement d’un ordinateur). Toutefois, les ransomwares sont devenus une menace sophistiquée qui est pilotée par l’homme, adaptative et axée sur une plus grande échelle et des résultats plus répandus; comme la conservation des ressources ou des données d’une organisation entière contre une rançon.
 
 La prise en charge des serveurs de commande et de contrôle (C2) est un élément clé de cette évolution du ransomware et permet à ces attaques de s’adapter à l’environnement qu’elles ciblent. La rupture du lien vers l’infrastructure de commande et de contrôle arrête la progression d’une attaque à l’étape suivante.
-
-#### <a name="detecting-and-remediating-cobaltstrike-public-preview"></a>Détection et correction de CobaltStrike (préversion publique)
-
-CobaltStrike est l’un des frameworks de post-exploitation les plus courants utilisés dans les attaques par rançongiciels gérées par l’homme. Les équipes Threat Intelligence de Microsoft assurent le suivi _des tactiques, techniques et procédures_ (TTP) sur plusieurs groupes d’activités qui déploient des ransomwares pour identifier les modèles de comportement qui peuvent être utilisés pour se défendre contre des stratégies et des vecteurs de menace spécifiques utilisés par des acteurs malveillants. Ces groupes d’activités ransomware, à un moment donné du cycle de vie des attaques, impliquent le déploiement d’une balise CobaltStrike sur l’ordinateur d’une victime pour activer l’activité manuelle au clavier.
-
-CobaltStrike permet la personnalisation de plusieurs aspects de l’attaque, de la possibilité d’héberger plusieurs écouteurs répondant à différents protocoles, à la façon dont le composant principal côté client (Beacon) doit effectuer l’injection de code et exécuter des travaux post-exploitation. Lorsque Microsoft Defender détecte CobaltStrike, il peut rechercher et collecter intelligemment des indicateurs clés de compromission (IoC). Une fois capturés, ces indicateurs sont partagés dans la pile de produits de Microsoft à des fins de détection et de protection.
-
-La détection de commande et de contrôle de Defender pour point de terminaison n’est pas limitée à CobaltStrike. Defender pour point de terminaison peut capturer les E/S clés de plusieurs familles de programmes malveillants. Les indicateurs sont partagés dans la pile de protection Microsoft pour protéger les clients et les alerter en cas de compromission.
-
-Le blocage de la communication de commande et de contrôle peut gravement entraver une attaque ciblée, ce qui donne à votre équipe de sécurité le temps de trouver les vecteurs d’entrée initiaux et de les fermer avant une autre tentative d’attaque.
-
-<!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
--->
 
 ## <a name="smartscreen-unblock"></a>Débloquer SmartScreen
 

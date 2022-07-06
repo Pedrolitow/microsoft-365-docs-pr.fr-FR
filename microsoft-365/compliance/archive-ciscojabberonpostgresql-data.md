@@ -15,20 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Cisco Jabber sur PostgreSQL vers Microsoft 365.
-ms.openlocfilehash: a435ee321d14c6eddf445f6dddcfdecc86c1963b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 9dd35756931c8d60538601332555dbc5cbf108b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318809"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636642"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configurer un connecteur pour archiver Cisco Jabber sur les données PostgreSQL
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la plateforme Cisco Jabber vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Cisco Jabber sur PostgreSQL](https://www.veritas.com/insights/merge1/jabber) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les messages, les conversations et le contenu partagé de Cisco Jabber sur PostgreSQL au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois que les données Cisco Jabber sur PostgreSQL sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Cisco Jabber sur PostgreSQL pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux politiques gouvernementales et réglementaires.
+Une fois que les données Cisco Jabber sur PostgreSQL sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Cisco Jabber sur PostgreSQL pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-cisco-jabber-on-postgresql-data"></a>Vue d’ensemble de l’archivage de Cisco Jabber sur les données PostgreSQL
 
@@ -40,7 +38,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Une fois toutes les 24 heures, les éléments Cisco Jabber sur PostgreSQL sont copiés sur le site Veritas Merge1. Le connecteur convertit également les éléments Cisco Jabber sur PostgreSQL au format de message électronique.
 
-3. Le connecteur Cisco Jabber sur PostgreSQL que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Jabber vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Cisco Jabber sur PostgreSQL que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Jabber vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email du mappage* automatique des utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier Boîte de réception nommé **Cisco Jabber sur PostgreSQL** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email* . Chaque élément Jabber contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
@@ -48,9 +46,9 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte Merge1 pour les connecteurs Microsoft. Pour ce faire, contactez le [support technique veritas](https://www.veritas.com/content/support/en_US). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur Cisco Jabber sur PostgreSQL à l’étape 1 (et le termine à l’étape 3). Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Cisco Jabber sur PostgreSQL à l’étape 1 (et le termine à l’étape 3) doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données Veritas est en préversion publique dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données Veritas est en préversion publique dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-postgresql-connector"></a>Étape 1 : Configurer le connecteur Cisco Jabber sur PostgreSQL
 
@@ -76,7 +74,7 @@ Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mapp
 
 Pour mapper les utilisateurs et terminer la configuration du connecteur dans le portail de conformité, procédez comme suit :
 
-1. Dans la page **Mapper Cisco Jabber sur PostgreSQL pour Microsoft 365 page utilisateurs**, activez le mappage automatique des utilisateurs. Les éléments Cisco Jabber sur PostgreSQL incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Map Cisco Jabber sur PostgreSQL users to Microsoft 365 users** , activez le mappage automatique des utilisateurs. Les éléments Cisco Jabber sur PostgreSQL incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez sur **Suivant**, passez en revue vos paramètres, puis accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

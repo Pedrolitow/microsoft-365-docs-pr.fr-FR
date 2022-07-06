@@ -1,6 +1,6 @@
 ---
 title: Attributs du cloisonnement de l’information
-description: Cet article est une référence pour les attributs de compte d’utilisateur Azure Active Directory que vous pouvez utiliser pour définir des segments d’obstacles à l’information.
+description: Cet article est une référence pour les attributs de compte d’utilisateur Azure Active Directory que vous pouvez utiliser pour définir des segments d’obstacles aux informations.
 keywords: Microsoft 365, Microsoft Purview, conformité, obstacles à l’information
 ms.author: robmazz
 author: robmazz
@@ -14,16 +14,14 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e09331fb819d2b00764cd6dacd1687ade8ee116c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: a1549a0cb3bf03056b37a75175c3b24416bec7b5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396264"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639773"
 ---
 # <a name="information-barriers-attributes"></a>Attributs du cloisonnement de l’information
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Certains attributs dans Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs dans les barrières à l’information (IB). Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies IB. Par exemple, vous pouvez utiliser **Department** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille simultanément pour deux services).
 
@@ -43,11 +41,11 @@ Les attributs répertoriés dans cet article peuvent être utilisés pour défin
 
     - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), consultez [Configurer les propriétés du compte d’utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
-    - Pour modifier un compte unique, consultez [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Pour modifier un compte unique, consultez [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Définissez des segments à l’aide de PowerShell](information-barriers-policies.md#define-segments-using-powershell), comme dans les exemples suivants :
 
-    |**Exemple**|**Cmdlet**|
+    |**Exemple**|**Applet de commande**|
     |:----------|:---------|
     | Définir un segment appelé Segment1 à l’aide de l’attribut Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
     | Définir un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup ») | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
@@ -60,10 +58,10 @@ Les attributs répertoriés dans cet article peuvent être utilisés pour défin
 
 Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les barrières à l’information.
 
-|**Azure Active Directory nom<br/> de propriété (nom d’affichage LDAP)**|**nom de la propriété Exchange**|
+|**Nom<br/> de la propriété Azure Active Directory (nom complet LDAP)**|**Nom de la propriété Exchange**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Company | Company |
+| Société | Société |
 | Service | Service |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |

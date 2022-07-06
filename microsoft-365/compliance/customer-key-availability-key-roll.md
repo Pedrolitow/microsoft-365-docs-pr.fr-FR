@@ -12,26 +12,24 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment restaurer les clés racine du client stockées dans Azure Key Vault qui sont utilisées avec la clé client. Les services incluent des fichiers Exchange Online, Skype Entreprise, SharePoint Online, OneDrive Entreprise et Teams.
-ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 474df9b4776df09b4a46ca002f506155606bdb52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017331"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636488"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Echanger ou alterner entre une clé client ou de disponibilité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > Exécutez uniquement une clé de chiffrement que vous utilisez avec la clé client lorsque vos exigences de sécurité ou de conformité vous imposent de la déployer. En outre, ne supprimez pas les clés qui sont ou ont été associées à des stratégies. Lorsque vous roulez vos clés, le contenu est chiffré avec les clés précédentes. Par exemple, bien que les boîtes aux lettres actives soient rechiffrées fréquemment, les boîtes aux lettres inactives, déconnectées et désactivées peuvent toujours être chiffrées avec les clés précédentes. SharePoint Online effectue une sauvegarde du contenu à des fins de restauration et de récupération. Il peut donc toujours y avoir du contenu archivé à l’aide de clés plus anciennes.
 
 ## <a name="about-rolling-the-availability-key"></a>À propos du déploiement de la clé de disponibilité
 
-Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement restaurer (faire pivoter) les clés que vous possédez dans Azure Key Vault. Microsoft 365 cumule les clés de disponibilité selon une planification définie en interne. Il n’existe aucun contrat de niveau de service (SLA) orienté client pour ces rouleaux de clés. Microsoft 365 fait pivoter la clé de disponibilité à l’aide Microsoft 365 code de service dans un processus automatisé et non manuel. Les administrateurs Microsoft peuvent lancer le processus de lancement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin de clés secrètes de disponibilité n’est pas approvisionné pour les administrateurs Microsoft. Le déploiement de clé de disponibilité utilise le même mécanisme que celui utilisé pour générer initialement la clé. Pour plus d’informations sur la clé de disponibilité, consultez [Comprendre la clé de disponibilité](customer-key-availability-key-understand.md).
+Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement restaurer (faire pivoter) les clés que vous possédez dans Azure Key Vault. Microsoft 365 cumule les clés de disponibilité selon une planification définie en interne. Il n’existe aucun contrat de niveau de service (SLA) orienté client pour ces rouleaux de clés. Microsoft 365 fait pivoter la clé de disponibilité à l’aide du code de service Microsoft 365 dans un processus automatisé non manuel. Les administrateurs Microsoft peuvent lancer le processus de lancement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin de clés secrètes de disponibilité n’est pas approvisionné pour les administrateurs Microsoft. Le déploiement de clé de disponibilité utilise le même mécanisme que celui utilisé pour générer initialement la clé. Pour plus d’informations sur la clé de disponibilité, consultez [Comprendre la clé de disponibilité](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
-> Exchange Online et les clés de disponibilité Skype Entreprise peuvent être déployées efficacement par les clients qui créent un dep, car une clé de disponibilité unique est générée pour chaque DEP que vous créez. Les clés de disponibilité des fichiers SharePoint Online, OneDrive Entreprise et Teams existent au niveau de la forêt et sont partagées entre les dep et les clients, ce qui signifie que le déploiement se produit uniquement à une planification définie en interne par Microsoft. Pour atténuer le risque de ne pas déployer la clé de disponibilité chaque fois qu’un nouveau DEP est créé, SharePoint, OneDrive et Teams de restaurer la clé intermédiaire de locataire (TIK), la clé encapsulée par les clés racine du client et la clé de disponibilité, chaque fois qu’un nouveau DEP est créé.
+> Exchange Online et les clés de disponibilité Skype Entreprise peuvent être déployées efficacement par les clients qui créent un dep, car une clé de disponibilité unique est générée pour chaque DEP que vous créez. Les clés de disponibilité pour les fichiers SharePoint Online, OneDrive Entreprise et Teams existent au niveau de la forêt et sont partagées entre les DEP et les clients, ce qui signifie que le déploiement ne se produit qu’à une planification définie en interne par Microsoft. Pour atténuer le risque de ne pas déployer la clé de disponibilité chaque fois qu’un nouveau DEP est créé, SharePoint, OneDrive et Teams déploient la clé intermédiaire de locataire (TIK), la clé encapsulée par les clés racine du client et la clé de disponibilité, chaque fois qu’un nouveau DEP est créé.
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>Demander une nouvelle version de chaque clé racine existante à restaurer
 
@@ -85,9 +83,9 @@ Pour demander à customer Key d’utiliser la nouvelle clé pour chiffrer les bo
 
 2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID de la boîte aux lettres, suivez les étapes [décrites dans Déterminer le dep affecté à une boîte aux lettres](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). La valeur de cette propriété change une fois que le service applique la clé mise à jour.
   
-## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Mettre à jour les clés des fichiers SharePoint Online, OneDrive Entreprise et Teams
+## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Mettre à jour les clés pour les fichiers SharePoint Online, OneDrive Entreprise et Teams
 
-SharePoint Online vous permet uniquement de rouler une clé à la fois. Si vous souhaitez déployer les deux clés dans un coffre de clés, attendez la fin de la première opération. Microsoft vous recommande d’échelonner vos opérations pour éviter ce problème. Lorsque vous roulez l’une des clés Azure Key Vault associées à un DEP utilisé avec SharePoint Online et OneDrive Entreprise, vous devez mettre à jour le dep pour pointer vers la nouvelle clé. Cela ne fait pas pivoter la clé de disponibilité.
+SharePoint Online vous permet uniquement de déployer une clé à la fois. Si vous souhaitez déployer les deux clés dans un coffre de clés, attendez la fin de la première opération. Microsoft vous recommande d’échelonner vos opérations pour éviter ce problème. Lorsque vous roulez l’une des clés Azure Key Vault associées à un DEP utilisé avec SharePoint Online et OneDrive Entreprise, vous devez mettre à jour le dep pour qu’il pointe vers la nouvelle clé. Cela ne fait pas pivoter la clé de disponibilité.
 
 1. Exécutez l’applet de commande Update-SPODataEncryptionPolicy comme suit :
   

@@ -2,8 +2,8 @@
 title: Installer Office applications sur tous les appareils dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Comment installer Office sur tous les appareils dans Microsoft 365 Business Premium.
-ms.openlocfilehash: a0e2295e9d741221cafafc1ed843373937deaa1b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486576"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637798"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Installer Office sur tous vos appareils
 

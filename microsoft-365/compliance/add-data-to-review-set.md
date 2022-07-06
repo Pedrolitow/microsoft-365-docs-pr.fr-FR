@@ -18,28 +18,26 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un ensemble de cas eDiscovery (Premium).
-ms.openlocfilehash: cda1a7fcf33a5fc1b299fd2d66f7241ab1cef229
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 48371521edef225b63b6b06170dc422881122034
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100960"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640939"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à examiner et analyser ces résultats de recherche, vous pouvez les ajouter à un ensemble de révisions dans le cas présent. La copie des données d’origine dans le jeu de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés tels que la détection des thèmes, la détection en quasi-double et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données non Microsoft 365 à un jeu de révision afin de pouvoir examiner ces données en plus des données que vous collectez à partir de Microsoft 365.
+Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à examiner et analyser ces résultats de recherche, vous pouvez les ajouter à un ensemble de révisions dans le cas présent. La copie des données d’origine dans le jeu de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés tels que la détection des thèmes, la détection en quasi-double et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données autres que Microsoft 365 à un ensemble de révisions afin de pouvoir passer en revue ces données en plus des données que vous collectez auprès de Microsoft 365.
 
 Lorsque vous ajoutez les résultats d’une recherche à un ensemble de révisions (les ensembles de révision dans un cas sont répertoriés sous l’onglet **Ensembles** de révision), les éléments suivants se produisent :
 
 - La recherche est réexécutée. Cela signifie que les résultats de recherche réels copiés dans le jeu de révision peuvent être différents des résultats estimés qui ont été retournés lors de la dernière exécution de la recherche.
 
-- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans les services en direct et copiés vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans les services en direct et copiés vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 - Tous les éléments (y compris le contenu et les métadonnées) sont réindexés afin que toutes les données du jeu de révision puissent faire l’objet d’une recherche complète pendant la révision des données de cas. La réindexation des données entraîne des recherches approfondies et rapides lorsque vous effectuez une recherche dans les données de l’ensemble de révisions pendant l’enquête de cas.
 
-- Un fichier chiffré à l’aide d’une [technologie de chiffrement Microsoft](encryption.md) et attaché à un message électronique retourné dans les résultats de la recherche est déchiffré lorsque le message électronique et le fichier joint sont ajoutés au jeu de révision. Vous pouvez examiner et interroger le fichier déchiffré dans l’ensemble de révisions. Le rôle de déchiffrement RMS doit vous être attribué pour ajouter des pièces jointes déchiffrées à un jeu de révision. Pour plus d’informations, consultez [Déchiffrement dans les outils eDiscovery de Microsoft Purview](ediscovery-decryption.md).
+- Un fichier chiffré à l’aide d’une [technologie de chiffrement Microsoft](encryption.md) et attaché à un message électronique retourné dans les résultats de la recherche est déchiffré lorsque le message électronique et le fichier joint sont ajoutés au jeu de révision. Vous pouvez examiner et interroger le fichier déchiffré dans l’ensemble de révisions. Le rôle de déchiffrement RMS doit vous être attribué pour ajouter des pièces jointes déchiffrées à un jeu de révision. Pour plus d’informations, consultez [Déchiffrement dans Microsoft Purview eDiscovery outils](ediscovery-decryption.md).
 
 Pour ajouter des données à un ensemble de révisions, cliquez sur une recherche sous l’onglet **Recherches** , puis cliquez sur **Ajouter des résultats pour passer en revue le jeu** dans la page de menu volant.
 
@@ -47,15 +45,15 @@ Vous pouvez ajouter à un jeu de révision existant ou en créer un.  Si vous aj
 
 ![Sélectionnez un ensemble de révisions et configurez les options de collecte.](../media/AeD_AddToReviewSet.png)
 
-L’ajout de données à un groupe de révision est un processus à long terme. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie à l’emplacement stockage Azure (ce processus de copie est également appelé *ingestion*), puis la réindexation des éléments. Vous pouvez suivre la progression de l’onglet **Travaux** ou de l’onglet **Recherches** en surveillant l’état dans les **données ajoutées pour passer en revue** la colonne set. Une fois le traitement du jeu de révision terminé, cliquez sur l’onglet **Ensembles** de révision dans le cas, puis cliquez sur l’ensemble de révisions pour démarrer le processus de filtrage, d’examen, d’étiquetage et d’exportation des données dans l’ensemble de révisions.
+L’ajout de données à un groupe de révision est un processus à long terme. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie vers l’emplacement stockage Azure (ce processus de copie est également appelé *ingestion*), puis la réindexation des éléments. Vous pouvez suivre la progression de l’onglet **Travaux** ou de l’onglet **Recherches** en surveillant l’état dans les **données ajoutées pour passer en revue** la colonne set. Une fois le traitement du jeu de révision terminé, cliquez sur l’onglet **Ensembles** de révision dans le cas, puis cliquez sur l’ensemble de révisions pour démarrer le processus de filtrage, d’examen, d’étiquetage et d’exportation des données dans l’ensemble de révisions.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Définir les options permettant d’étendre votre collection pour révision
 
 Lorsque vous ajoutez le contenu d’une recherche à un ensemble de révisions existant ou nouveau, vous disposez des options suivantes pour collecter le contenu à réviser :
 
-- **Inclure des versions de SharePoint (bêta)** : utilisez cette option pour activer la collecte de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés à l’ensemble de révision.
+- **Inclure des versions de SharePoint (bêta)** : utilisez cette option pour activer la collection de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés à l’ensemble de révision.
 
-- **Options de récupération** de conversation : les éléments ajoutés à l’ensemble de révisions sont activés pour les conversations thread afin d’aider à passer en revue le contenu dans le contexte de la conversation aller-retour. Pour plus d’informations, consultez [Examiner les conversations dans eDiscovery (Premium).](conversation-review-sets.md)
+- **Options de récupération** de conversation : les éléments ajoutés à l’ensemble de révisions sont activés pour les conversations thread afin d’aider à passer en revue le contenu dans le contexte de la conversation aller-retour. Pour plus d’informations, consultez [La révision des conversations dans eDiscovery (Premium).](conversation-review-sets.md)
 
 - **Activer la récupération pour les pièces jointes modernes** : utilisez cette option pour inclure des pièces jointes modernes ou des fichiers liés dans la collection pour une révision ultérieure. Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche liées aux pièces jointes modernes, consultez [les champs de métadonnées de document dans eDiscovery (Premium).](document-metadata-fields-in-Advanced-eDiscovery.md)
 
@@ -73,6 +71,6 @@ Après avoir sélectionné et configuré l’une des options précédentes, choi
 
 ## <a name="optical-character-recognition"></a>Reconnaissance optique des caractères
 
-Lorsque vous ajoutez des résultats de recherche à un jeu de révision, la fonctionnalité de reconnaissance optique des caractères (OCR) dans eDiscovery (Premium) extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. afin de l’examiner et de l’analyser de manière plus approfondie. La reconnaissance optique des caractères est prise en charge pour les fichiers isolés, les pièces jointes et les images incorporées. Pour obtenir la liste des formats de fichier image pris en charge pour OCR, consultez [Types de fichiers pris en charge dans eDiscovery (Premium).](supported-filetypes-ediscovery20.md#image)
+Lorsque vous ajoutez des résultats de recherche à un jeu de révision, la fonctionnalité de reconnaissance optique de caractères (OCR) dans eDiscovery (Premium) extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. afin de l’examiner et de l’analyser de manière plus approfondie. La reconnaissance optique des caractères est prise en charge pour les fichiers isolés, les pièces jointes et les images incorporées. Pour obtenir une liste des formats de fichiers image pris en charge par l' OCR, consultez la section Types de fichiers [pris en charge dans eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
 
 Vous devez activer la fonctionnalité OCR pour chaque cas que vous créez dans eDiscovery (Premium). Pour plus d’informations, consultez [Configurer les paramètres de recherche et d’analytique](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

@@ -19,24 +19,22 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports à l’aide de Security & Compliance PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: be456c737188f02cfad245d4a1dc4661f2c611a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018072"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638585"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  La création et la création rapide de rapports de recherches de découverte sont souvent une étape importante dans eDiscovery et les investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que sur la richesse et la qualité de vos recherches. Pour vous aider à effectuer cette opération, Security & Compliance PowerShell propose un ensemble d’applets de commande pour automatiser les tâches de recherche de contenu fastidieuses. Ces scripts offrent un moyen rapide et simple de créer un certain nombre de recherches, puis d’exécuter des rapports des résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions de recherches afin de comparer les résultats que chacun produit. Ces scripts peuvent vous aider à identifier et à éliminer rapidement et efficacement vos données.
 
 ## <a name="before-you-create-a-content-search"></a>Avant de créer une recherche de contenu
 
-- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le portail de conformité Microsoft Purview pour exécuter les scripts décrits dans cette rubrique.
+- Vous devez être membre du groupe de rôles eDiscovery Manager dans le portail de conformité Microsoft Purview pour exécuter les scripts décrits dans cette rubrique.
 
-- Pour collecter la liste des URL des sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, consultez [Créer une liste de tous les OneDrive emplacements de votre organisation](/onedrive/list-onedrive-urls).
+- Pour collecter la liste des URL des sites OneDrive Entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l’étape 1, consultez [Créer une liste de tous les emplacements OneDrive de votre organisation](/onedrive/list-onedrive-urls).
 
 - Veillez à enregistrer tous les fichiers que vous créez dans cette rubrique dans le même dossier. Cela facilite l’exécution des scripts.
 
@@ -46,7 +44,7 @@ ms.locfileid: "66018072"
 
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Étape 1 : Créer un fichier CSV qui contient des informations sur les recherches que vous souhaitez exécuter
 
-Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cette étape contient une ligne pour chaque utilisateur qui souhaite effectuer une recherche. Vous pouvez rechercher la boîte aux lettres Exchange Online de l’utilisateur (qui inclut la boîte aux lettres d’archivage, si elle est activée) et son site OneDrive Entreprise. Vous pouvez également rechercher uniquement la boîte aux lettres ou le site OneDrive Entreprise. Vous pouvez également rechercher n’importe quel site de votre organisation SharePoint Online. Le script que vous exécutez à l’étape 3 crée une recherche distincte pour chaque ligne du fichier CSV.
+Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cette étape contient une ligne pour chaque utilisateur qui souhaite effectuer une recherche. Vous pouvez rechercher la boîte aux lettres Exchange Online de l’utilisateur (qui inclut la boîte aux lettres d’archivage, si elle est activée) et son site OneDrive Entreprise. Vous pouvez également rechercher uniquement la boîte aux lettres ou le site OneDrive Entreprise. Vous pouvez également effectuer une recherche sur n’importe quel site de votre organisation SharePoint Online. Le script que vous exécutez à l’étape 3 crée une recherche distincte pour chaque ligne du fichier CSV.
 
 1. Copiez et collez le texte suivant dans un fichier .txt à l’aide du Bloc-notes. Enregistrez ce fichier dans un dossier sur votre ordinateur local. Vous allez également enregistrer les autres scripts dans ce dossier.
 
@@ -71,13 +69,13 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
    |`ExchangeLocation`|Adresse SMTP de la boîte aux lettres de l’utilisateur.|
    |`SharePointLocation`|URL du site OneDrive Entreprise de l’utilisateur ou URL de n’importe quel site de votre organisation. Pour l’URL de OneDrive Entreprise sites, utilisez ce format : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
    |`ContentMatchQuery`|Requête de recherche pour la recherche. Pour plus d’informations sur la création d’une requête de recherche, consultez [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).|
-   |`StartDate`|Pour l’e-mail, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents sur des sites SharePoint ou OneDrive Entreprise, date de la dernière modification d’un document.|
-   |`EndDate`|Pour l’e-mail, date à laquelle un message a été envoyé par l’utilisateur ou avant celui-là. Pour les documents sur des sites SharePoint ou OneDrive Entreprise, date de la dernière modification d’un document ou avant celle-ci.|
+   |`StartDate`|Pour l’e-mail, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents sur des sites SharePoint ou OneDrive Entreprise, la date à laquelle un document a été modifié pour la dernière fois ou après celui-ci.|
+   |`EndDate`|Pour l’e-mail, date à laquelle un message a été envoyé par l’utilisateur ou avant celui-là. Pour les documents sur des sites SharePoint ou OneDrive Entreprise, date de la dernière modification d’un document ou avant celui-ci.|
    |
 
 3. Enregistrez le fichier Excel en tant que fichier CSV dans un dossier sur votre ordinateur local. Le script que vous créez à l’étape 3 utilise les informations contenues dans ce fichier CSV pour créer les recherches.
 
-## <a name="step-2-connect-to-security--compliance-powershell"></a>Étape 2 : Connecter à La sécurité & conformité PowerShell
+## <a name="step-2-connect-to-security--compliance-powershell"></a>Étape 2 : Se connecter à Security & Compliance PowerShell
 
 L’étape suivante consiste à vous connecter à Security & Compliance PowerShell pour votre organisation. Pour consulter des instructions détaillées, consultez [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

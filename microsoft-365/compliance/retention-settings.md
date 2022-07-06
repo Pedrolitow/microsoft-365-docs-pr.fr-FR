@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: d4bb28255a809737b44324fdcccfc456c6a73dfb
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772615"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639641"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 De nombreux paramètres de rétention sont communs aux stratégies de rétention et aux stratégies d’étiquette de rétention. Utiliser les informations suivantes pour vous aider à configurer ces paramètres pour conserver de manière proactive le contenu, supprimer du contenu ou les deux, conserver, puis supprimer le contenu.
 

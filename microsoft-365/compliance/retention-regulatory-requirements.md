@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à répondre aux exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des enregistrements.
-ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286425"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638144"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des enregistrements
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez les ressources de cette page pour vous aider à répondre aux exigences réglementaires spécifiques en matière de gestion du cycle de vie des données et de gestion des enregistrements dans Microsoft 365. Chaque section de ce document se concentre sur une ou plusieurs réglementations apparentées, et inclut des recommandations existantes ou une évaluation tierce de la configuration de Microsoft 365 pour vous aider dans les conditions décrites.
 

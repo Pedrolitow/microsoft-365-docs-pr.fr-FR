@@ -15,18 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044013"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641425"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de badging physiques (préversion)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de badging physiques, telles que les événements d’accès physique bruts de l’employé ou les alarmes d’accès physique générées par le système de badging de votre organisation. Des exemples de points d’accès physiques sont une entrée d’un bâtiment ou une entrée dans une salle de serveur ou un centre de données. Les données de badging physiques peuvent être utilisées par la [solution Microsoft 365 de gestion des risques internes](insider-risk-management.md) pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation.
+Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de badging physiques, telles que les événements d’accès physique bruts de l’employé ou les alarmes d’accès physique générées par le système de badging de votre organisation. Des exemples de points d’accès physiques sont une entrée d’un bâtiment ou une entrée dans une salle de serveur ou un centre de données. Les données de badging physiques peuvent être utilisées par la [solution de gestion des risques internes](insider-risk-management.md) Microsoft 365 pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation.
 
 La configuration d’un connecteur de badging physique se compose des tâches suivantes :
 
@@ -42,16 +40,16 @@ La configuration d’un connecteur de badging physique se compose des tâches su
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur de mise en échec physique à l’étape 3. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur de badging physique à l’étape 3 doit disposer du rôle de Administration du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
-   > Le rôle Administrateur du connecteur de données n’est actuellement pas pris en charge dans les environnements US Government Cloud de la communauté du secteur public High et DoD. Par conséquent, l’utilisateur qui crée le connecteur RH dans Cloud de la communauté du secteur public environnements High et DoD doit se voir attribuer le rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle d’exportation d’importation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, consultez les sections [Créer des groupes de rôles](/Exchange/permissions-exo/role-groups#create-role-groups) ou [Modifier des groupes de rôles](/Exchange/permissions-exo/role-groups#modify-role-groups) dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+   > Le rôle Administration connecteur de données n’est actuellement pas pris en charge dans les environnements US Government GCC High et DoD. Par conséquent, l’utilisateur qui crée le connecteur RH dans les environnements GCC High et DoD doit se voir attribuer le rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle d’exportation d’importation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, consultez les sections [Créer des groupes de rôles](/Exchange/permissions-exo/role-groups#create-role-groups) ou [Modifier des groupes de rôles](/Exchange/permissions-exo/role-groups#modify-role-groups) dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 - Vous devez déterminer comment récupérer ou exporter les données à partir du système de badging physique de votre organisation (quotidiennement) et créer un fichier JSON décrit à l’étape 2. Le script que vous exécutez à l’étape 4 envoie (push) les données du fichier JSON au point de terminaison de l’API.
 
 - L’exemple de script que vous exécutez à l’étape 4 envoie (push) les données de badging physiques du fichier JSON à l’API du connecteur afin qu’elles puissent être utilisées par la solution de gestion des risques internes. Cet exemple de script n’est pas pris en charge dans le cadre d’un programme ou d’un service de support standard Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
-- Ce connecteur est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur est disponible dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Étape 1 : Créer une application dans Azure Active Directory
 
@@ -77,7 +75,7 @@ Le fichier JSON doit être conforme à la définition de schéma requise par le 
 |AssetId|ID de référence de la ressource physique ou du point d’accès physique.|Chaîne alphanumérique|
 |AssetName|Nom convivial de la ressource physique ou du point d’accès physique.|Chaîne alphanumérique|
 |EventTime|Horodatage de l’accès.|Date et heure, au format UTC|
-|AccessStatus|Valeur de `Success` ou `Failed`|Chaîne|
+|AccessStatus|Valeur de `Success` ou `Failed`|String|
 |||
 
 Voici un exemple de fichier JSON conforme au schéma requis :
@@ -172,7 +170,7 @@ L’étape suivante consiste à créer un connecteur de mise en échec physique 
 
 L’étape suivante de la configuration d’un connecteur de badging physique consiste à exécuter un script qui envoie (push) les données de badging physiques dans le fichier JSON (que vous avez créé à l’étape 2) au point de terminaison d’API que vous avez créé à l’étape 1. Nous fournissons un exemple de script pour votre référence et vous pouvez choisir de l’utiliser ou de créer votre propre script pour publier le fichier JSON sur le point de terminaison de l’API.
 
-Après avoir exécuté le script, le fichier JSON contenant les données de badging physiques est envoyé à votre organisation Microsoft 365 où elle est accessible par la solution de gestion des risques internes. Nous vous recommandons de publier des données de badging physiques quotidiennement. Pour ce faire, vous pouvez automatiser le processus de génération du fichier JSON tous les jours à partir de votre système de badging physique, puis planifier le script pour envoyer (push) les données.
+Après avoir exécuté le script, le fichier JSON contenant les données de badging physiques est envoyé à votre organisation Microsoft 365, où elle est accessible par la solution de gestion des risques internes. Nous vous recommandons de publier des données de badging physiques quotidiennement. Pour ce faire, vous pouvez automatiser le processus de génération du fichier JSON tous les jours à partir de votre système de badging physique, puis planifier le script pour envoyer (push) les données.
 
 > [!NOTE]
 > Le nombre maximal d’enregistrements dans le fichier JSON qui peuvent être traités par l’API est de 50 000 enregistrements.
@@ -199,7 +197,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de badg
 
    |Paramètre|Description|
    |---|---|
-   |tenantId|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenue à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation dans le panneau **Vue d’ensemble** du Centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
+   |tenantId|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation dans le panneau **Vue d’ensemble** du Centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
    |appId|Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Azure AD l’utilise pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365.|
    |appSecret|Il s’agit du secret d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est également utilisé pour l’authentification.|
    |jobId|Il s’agit de l’ID de travail du connecteur de badging physique que vous avez créé à l’étape 3. Cela permet d’associer les données de badging physiques envoyées au cloud Microsoft avec le connecteur de badging physique.|
@@ -212,7 +210,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de badg
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Si le chargement réussit, le script affiche le **message Télécharger Réussi**.
+   Si le chargement réussit, le script affiche le message **De réussite** du chargement.
 
    Si vous avez plusieurs fichiers JSON, vous devez exécuter le script pour chaque fichier.
 
@@ -243,7 +241,7 @@ Pour vous assurer que les dernières données de badging physiques de votre orga
 
 Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Windows Démarrer, puis **tapez** **Planificateur de tâches**.
+1. Sur votre ordinateur local, cliquez sur le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
 
 2. Cliquez sur l’application **Du planificateur de tâches** pour l’ouvrir.
 
@@ -259,7 +257,7 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
 6. Sélectionnez l’onglet Déclencheurs, cliquez sur **Nouveau**, puis effectuez les **opérations suivantes** :
 
-   1. Sous **Paramètres**, sélectionnez l’option **Quotidienne**, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
+   1. Sous **Paramètres**, sélectionnez l’option **Quotidienne** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
 
    2. Sous **Paramètres avancés**, vérifiez que la case à cocher **Activé** est cochée.
 

@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment récupérer le contenu d’une boîte aux lettres inactive dans Office 365 en la convertissant en nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive.
-ms.openlocfilehash: 2c679407cb4f7203bb69d88c871bd844694a7c47
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: f09104703807532770c7ea5b660e1088589883ec
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101555"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639663"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une boîte aux lettres inactive (qui est un type de boîte aux lettres supprimée de manière réversible) est utilisée pour conserver l’adresse e-mail d’un ancien employé après son départ de votre organisation. Si cet employé retourne dans votre organisation ou si un autre employé assume les responsabilités de l’ancien employé, il existe deux façons de rendre le contenu de la boîte aux lettres inactive accessible à un utilisateur :
 
@@ -44,7 +42,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir d'aut
 
 ## <a name="requirements-to-recover-an-inactive-mailbox"></a>Configuration requise pour récupérer une boîte aux lettres inactive
 
-- Vous devez utiliser Exchange Online PowerShell pour récupérer une boîte aux lettres inactive. Vous ne pouvez pas utiliser le centre d’administration Exchange (EAC) ni le portail de conformité Microsoft Purview pour cette procédure. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Vous devez utiliser Exchange Online PowerShell pour récupérer une boîte aux lettres inactive. Vous ne pouvez pas utiliser le Centre d’administration Exchange (EAC) ou le portail de conformité Microsoft Purview pour cette procédure. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Exécutez la commande suivante pour obtenir les informations d'identité pour les boîtes aux lettres inactives de votre organisation.
 
@@ -85,9 +83,9 @@ Une fois que vous avez récupéré une boîte aux lettres inactive, un compte d�
 
   - La conservation appliquée à une boîte aux lettres inactive est modifiée ou supprimée en fonction du type de conservation appliqué à la boîte aux lettres inactive avant sa récupération.
     
-    - **Microsoft 365 stratégie de rétention avec le verrou de conservation.** Si la boîte aux lettres inactive a été incluse dans une stratégie de rétention dotée d’un [verrou de conservation](retention-preservation-lock.md), la boîte aux lettres récupérée est affectée à la même stratégie de rétention.
+    - **Stratégie de rétention Microsoft 365 avec verrouillage de conservation.** Si la boîte aux lettres inactive a été incluse dans une stratégie de rétention dotée d’un [verrou de conservation](retention-preservation-lock.md), la boîte aux lettres récupérée est affectée à la même stratégie de rétention.
     
-    - **Microsoft 365 stratégie de rétention sans verrou de conservation.** La boîte aux lettres inactive est supprimée de la stratégie de rétention Microsoft 365. Toutefois, la conservation des litiges est activée sur la boîte aux lettres récupérée pour empêcher la suppression du contenu de boîte aux lettres en fonction des stratégies de rétention à l’échelle de l’organisation qui suppriment du contenu antérieur à un âge spécifique. Vous pouvez conserver la suspension du litige ou la supprimer. Pour plus d’informations, consultez [Créer une conservation des litiges](create-a-litigation-hold.md).
+    - **Stratégie de rétention Microsoft 365 sans verrou de conservation.** La boîte aux lettres inactive est supprimée de la stratégie de rétention Microsoft 365. Toutefois, la conservation des litiges est activée sur la boîte aux lettres récupérée pour empêcher la suppression du contenu de boîte aux lettres en fonction des stratégies de rétention à l’échelle de l’organisation qui suppriment du contenu antérieur à un âge spécifique. Vous pouvez conserver la suspension du litige ou la supprimer. Pour plus d’informations, consultez [Créer une conservation des litiges](create-a-litigation-hold.md).
 
     - **Conservation des litiges.** Si la conservation des litiges a été activée pour la boîte aux lettres inactive, elle est supprimée de la boîte aux lettres récupérée.
 
@@ -103,7 +101,7 @@ Une fois que vous avez récupéré une boîte aux lettres inactive, un compte d�
 
 - **Que faire si la période de rétention de la boîte aux lettres inactive n'a pas expiré ?** Si une boîte aux lettres inactive a été supprimée (récupérable) il y a moins de 30 jours, vous ne pouvez pas utiliser la commande **New-Mailbox -InactiveMailbox** pour la récupérer. Vous devez le récupérer en restaurant le compte d’utilisateur correspondant. Pour plus d’informations, consultez [Supprimer un utilisateur de votre organisation](../admin/add-users/delete-a-user.md).
 
-- **Comment savoir si la période de rétention de boîte aux lettres supprimée (récupérable) pour une boîte aux lettres inactive a expiré ?** Exécutez la commande suivante :
+- **Comment savoir si la période de rétention de boîte aux lettres supprimée (récupérable) pour une boîte aux lettres inactive a expiré ?** Exécutez la commande suivante :
     
   ```powershell
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
@@ -112,4 +110,4 @@ Une fois que vous avez récupéré une boîte aux lettres inactive, un compte d�
     - S’il n’existe aucune valeur pour la propriété **ExternalDirectoryObjectId** , la période de rétention de la boîte aux lettres a expiré et vous pouvez récupérer la boîte aux lettres inactive en exécutant la commande **New-Mailbox -InactiveMailbox** .
     - S’il existe une valeur pour la propriété **ExternalDirectoryObjectId** , la période de rétention de boîte aux lettres supprimée de manière réversible n’a pas expiré et vous devez récupérer la boîte aux lettres [en restaurant le compte d’utilisateur](../admin/add-users/delete-a-user.md).
 
-- **Pensez à activer la boîte aux lettres d'archivage après avoir récupéré une boîte aux lettres inactive.** Ainsi, l'utilisateur qui revient ou le nouvel employé peut déplacer les anciens messages vers la boîte aux lettres d'archivage. Et lorsque la conservation de rétention expire, la stratégie d’archivage qui fait partie de la stratégie de rétention MRM par défaut Exchange affectée à Exchange Online boîtes aux lettres déplace les éléments de deux ans ou plus vers la boîte aux lettres d’archivage. Si vous n'activez pas la boîte aux lettres d'archivage, les éléments antérieurs à deux ans restent dans la boîte aux lettres principale de l'utilisateur. Pour plus d’informations, consultez [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md).
+- **Pensez à activer la boîte aux lettres d'archivage après avoir récupéré une boîte aux lettres inactive.** Ainsi, l'utilisateur qui revient ou le nouvel employé peut déplacer les anciens messages vers la boîte aux lettres d'archivage. Et lorsque la conservation de rétention expire, la stratégie d’archivage qui fait partie de la stratégie de rétention Exchange MRM par défaut affectée aux boîtes aux lettres Exchange Online déplace les éléments de deux ans ou plus vers la boîte aux lettres d’archivage. Si vous n'activez pas la boîte aux lettres d'archivage, les éléments antérieurs à deux ans restent dans la boîte aux lettres principale de l'utilisateur. Pour plus d’informations, consultez [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md).

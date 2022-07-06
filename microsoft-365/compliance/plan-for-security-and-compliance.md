@@ -1,5 +1,5 @@
 ---
-title: Planifier la conformité de &amp; la sécurité
+title: Planifier la sécurité et la conformité
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,32 +17,32 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2a238f4d4c5598e9628bb6bb7adb607b7c24c6cb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 6ecc9d01f82393aa20f8993abfffd6cca78c656f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679519"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639817"
 ---
-# <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de &amp; la sécurité
+# <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de la sécurité &amp;
 
-La gestion de la sécurité et de la conformité est un partenariat. Vous êtes responsable de la protection de vos données, identités et appareils, tandis que Microsoft protège en toute sécurité Microsoft 365 services. Vous pouvez utiliser Microsoft 365 et Enterprise Mobility + Security (EMS) ensemble pour vous aider à atteindre le niveau de protection approprié pour votre organisation.
+La gestion de la sécurité et de la conformité est un partenariat. Vous êtes responsable de la protection de vos données, identités et appareils, tandis que Microsoft protège vigoureusement les services Microsoft 365. Vous pouvez utiliser Microsoft 365 et Enterprise Mobility + Security (EMS) ensemble pour vous aider à atteindre le niveau de protection approprié pour votre organisation.
   
-## <a name="step-1-review-capabilities"></a>Étape 1 : Examiner les fonctionnalités
+## <a name="step-1-review-capabilities"></a>Étape 1 : Passer en revue les fonctionnalités
 
-Orientez-vous vers les fonctionnalités de protection des informations dans l’affiche Protection Office 365 informations. 
+Orientez-vous vers les fonctionnalités de protection des informations dans le Information Protection pour Office 365 affiche. 
   
-[Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365](../solutions/information-protection-deploy.md)
+[Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)
   
-## <a name="step-2-check-your-secure-score"></a>Étape 2 : Vérifier votre score de sécurité
+## <a name="step-2-check-your-secure-score"></a>Étape 2 : Vérifier votre degré de sécurisation
 
-Après avoir Microsoft 365 abonnement, prenez note de votre score de départ. Secure Score fournit des suggestions de configuration que vous pouvez prendre pour augmenter votre score. L’objectif est de prendre en compte les opportunités que vous pouvez prendre pour protéger votre environnement, ce qui n’affectera pas la productivité de vos utilisateurs.
+Après avoir configuré votre abonnement Microsoft 365, notez votre score de départ. Le degré de sécurisation fournit des suggestions de configuration que vous pouvez prendre pour augmenter votre score. L’objectif est d’être conscient des opportunités que vous pouvez prendre pour protéger votre environnement, ce qui n’affectera pas négativement la productivité de vos utilisateurs.
   
-- [Présentation du score Office 365 sécurisé](../security/defender/microsoft-secure-score.md)
+- [Présentation du score de sécurité Office 365](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Étape 3 : Planifier la protection de l’accès pour les identités et les appareils
 
-La protection de l’accès Microsoft 365 données et services de votre entreprise est essentielle pour la protection contre les cyberattaques et la protection contre la perte de données.
+La protection de l’accès à vos données et services Microsoft 365 est essentielle pour la défense contre les cyberattaques et la protection contre la perte de données.
   
 - [Protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
     
@@ -52,19 +52,19 @@ La protection de l’accès Microsoft 365 données et services de votre entrepri
   
 ## <a name="step-4-plan-data-protection-based-on-data-sensitivity"></a>Étape 4 : Planifier la protection des données en fonction de la sensibilité des données
 
-Examiner et planifier les fonctionnalités de protection des fichiers organisées par trois niveaux de protection.
+Passez en revue et planifiez les fonctionnalités de protection des fichiers organisées par trois niveaux de protection.
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre Microsoft 365 conformité de &amp; la sécurité
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre de conformité de sécurité &amp; Microsoft 365
 
-Le Centre &amp; de conformité de sécurité vous offre une vue unique des contrôles que vous utiliserez pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et l’examen. 
+Le Centre de conformité de la sécurité &amp; vous offre une vue unique des contrôles que vous allez utiliser pour gérer le spectre de la sécurité Microsoft 365, notamment la gestion des menaces, la gouvernance des données et la recherche et l’investigation. 
   
-- [Go to the Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
+- [Accédez au Centre de conformité de la sécurité &amp;](./microsoft-365-compliance-center.md)
     
-- [Autorisations dans le Centre de conformité de &amp; sécurité](~/security/office-365-security/protect-against-threats.md)
+- [Autorisations dans le Centre de conformité de la sécurité &amp;](~/security/office-365-security/protect-against-threats.md)
     
-- [Accorder aux utilisateurs l’accès au Centre de conformité de &amp; la sécurité](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Permettre aux utilisateurs d’accéder au Centre de conformité de la sécurité &amp;](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Étape 6 : Utiliser des scénarios de sécurité de bout en bout comme points de départ
 
@@ -74,12 +74,12 @@ Utilisez ces configurations recommandées comme point de départ pour les scéna
     
 - [Contoso dans le cloud de Microsoft](../enterprise/contoso-case-study.md)
     
-## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 et tableaux de bord d’administration
+## <a name="microsoft-365-admin-centers-and-dashboards"></a>Centres d’administration et tableaux de bord Microsoft 365
 
-Configurer vos paramètres de sécurité et de conformité dans ces centres d’administration et tableaux de bord pour protéger Microsoft 365 environnement
+Configurer vos paramètres de sécurité et de conformité dans ces centres d’administration et tableaux de bord pour protéger votre environnement Microsoft 365
   
-|**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
+|**Subscription**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  SharePoint centre d’administration et OneDrive Entreprise’administration centrale  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d’administration SharePoint et centre d’administration OneDrive Entreprise  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |
