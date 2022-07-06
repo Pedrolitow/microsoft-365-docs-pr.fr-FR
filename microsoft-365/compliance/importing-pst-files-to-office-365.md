@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser le service d’importation dans le portail de conformité Microsoft Purview pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: c1a7cd9a2c2c0a3ee564710461796c690c7391b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 254d9cc31e4d8be88671ca59de176a308ae008a8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092754"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636114"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>En savoir plus sur l’importation des fichiers PST de votre organisation
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Cet article est destiné aux administrateurs. Essayez-vous d’importer des fichiers PST dans votre propre boîte aux lettres ? Consultez [Importer le courrier électronique, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075).

@@ -18,17 +18,15 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Découvrez comment utiliser l’outil de recherche de journaux d’audit Microsoft 365 pour résoudre les problèmes de support courants pour les comptes de messagerie.
-ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment utiliser l’outil de recherche de journaux d’audit Microsoft 365 pour résoudre les problèmes courants de support pour les comptes de messagerie.
+ms.openlocfilehash: d97e8e074c2d0e14bb75fd46a512cacb6827047a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097181"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633848"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit pour examiner les problèmes de support courants
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article explique comment utiliser l’outil de recherche dans les journaux d’audit pour vous aider à examiner les problèmes de support courants. Cela inclut l’utilisation du journal d’audit pour :
 
@@ -42,7 +40,7 @@ Cet article explique comment utiliser l’outil de recherche dans les journaux d
 
 ## <a name="using-the-audit-log-search-tool"></a>Utilisation de l’outil de recherche dans les journaux d’audit
 
-Chacun des scénarios de résolution des problèmes décrits dans cet article est basé sur l’utilisation de l’outil de recherche dans les journaux d’audit dans le portail de conformité Microsoft Purview. Cette section répertorie les autorisations requises pour effectuer une recherche dans le journal d’audit et décrit les étapes d’accès et d’exécution des recherches dans les journaux d’audit. Chaque section de scénario explique comment configurer une requête de recherche dans le journal d’audit et ce qu’il faut rechercher dans les informations détaillées dans les enregistrements d’audit qui correspondent aux critères de recherche.
+Chacun des scénarios de résolution des problèmes décrits dans cet article est basé sur l’utilisation de l’outil de recherche de journaux d’audit dans le portail de conformité Microsoft Purview. Cette section répertorie les autorisations requises pour effectuer une recherche dans le journal d’audit et décrit les étapes d’accès et d’exécution des recherches dans les journaux d’audit. Chaque section de scénario explique comment configurer une requête de recherche dans le journal d’audit et ce qu’il faut rechercher dans les informations détaillées dans les enregistrements d’audit qui correspondent aux critères de recherche.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l’outil de recherche de journal d’audit
 
@@ -84,10 +82,10 @@ L’adresse IP correspondant à une activité effectuée par n’importe quel ut
 
 Voici comment configurer une requête de recherche dans le journal d’audit pour ce scénario :
 
-**Activités:** Si elle est pertinente pour votre cas, sélectionnez une activité spécifique à rechercher. Pour résoudre les problèmes de comptes compromis, envisagez de sélectionner **l’utilisateur connecté à l’activité de boîte aux lettres** sous **Exchange activités de boîte aux lettres**. Cette opération retourne des enregistrements d’audit montrant l’adresse IP utilisée lors de la connexion à la boîte aux lettres. Sinon, laissez ce champ vide pour retourner les enregistrements d’audit pour toutes les activités. 
+**Activités:** Si elle est pertinente pour votre cas, sélectionnez une activité spécifique à rechercher. Pour résoudre les problèmes de comptes compromis, envisagez de sélectionner **l’utilisateur connecté à** l’activité de boîte aux **lettres sous activités de boîte aux lettres Exchange**. Cette opération retourne des enregistrements d’audit montrant l’adresse IP utilisée lors de la connexion à la boîte aux lettres. Sinon, laissez ce champ vide pour retourner les enregistrements d’audit pour toutes les activités. 
 
 > [!TIP]
-> Le fait de laisser ce champ vide renvoie les activités **UserLoggedIn**, qui est une activité Azure Active Directory qui indique qu’une personne s’est connectée à un compte d’utilisateur. Utilisez le filtrage dans les résultats de la recherche pour afficher les enregistrements **d’audit UserLoggedIn** .
+> Le fait de laisser ce champ vide renvoie les activités **UserLoggedIn** , qui est une activité Azure Active Directory qui indique qu’une personne s’est connectée à un compte d’utilisateur. Utilisez le filtrage dans les résultats de la recherche pour afficher les enregistrements **d’audit UserLoggedIn** .
 
 **Date de début** et **date de fin :** sélectionnez une plage de dates applicable à votre enquête.
 
@@ -143,7 +141,7 @@ Les actions de boîte aux lettres enregistrées par défaut incluent les actions
 
 Voici comment configurer une requête de recherche dans le journal d’audit pour ce scénario :
 
-**Activités:** Sous **Exchange activités de boîte aux lettres**, sélectionnez une ou les deux activités suivantes :
+**Activités:** Sous **activités de boîte aux lettres Exchange**, sélectionnez une ou les deux activités suivantes :
 
 - **Messages supprimés du dossier Éléments supprimés :** Cette activité correspond à l’action d’audit de boîte aux lettres **SoftDelete** . Cette activité est également journalisée lorsqu’un utilisateur supprime définitivement un élément en le sélectionnant et en appuyant sur **Maj+Supprimer**. Une fois qu’un élément a été supprimé définitivement, l’utilisateur peut le récupérer jusqu’à ce que la période de rétention des éléments supprimés expire.
 
@@ -183,11 +181,11 @@ Lorsque les utilisateurs créent une règle de boîte de réception pour leur bo
 
 Voici comment configurer une requête de recherche dans le journal d’audit pour ce scénario :
 
-**Activités:** Sous **Exchange activités de boîte aux lettres**, sélectionnez une ou les deux activités suivantes :
+**Activités:** Sous **activités de boîte aux lettres Exchange**, sélectionnez une ou les deux activités suivantes :
 
-- **New-InboxRule Créez une règle de boîte de réception à partir de Outlook Web App**. Cette activité retourne des enregistrements d’audit lorsque des règles de boîte de réception sont créées à l’aide Outlook application web ou Exchange Online PowerShell.
+- **New-InboxRule Créez une règle de boîte de réception à partir d’Outlook Web App**. Cette activité retourne des enregistrements d’audit lorsque des règles de boîte de réception sont créées à l’aide d’une application web Outlook ou Exchange Online PowerShell.
 
-- **Mise à jour des règles de boîte de réception à partir de Outlook client**. Cette activité retourne des enregistrements d’audit lorsque des règles de boîte de réception sont créées, modifiées ou supprimées à l’aide du client de bureau Outlook.
+- **Mise à jour des règles de boîte de réception à partir du client Outlook**. Cette activité retourne des enregistrements d’audit lorsque des règles de boîte de réception sont créées, modifiées ou supprimées à l’aide du client de bureau Outlook.
 
 **Date de début** et **date de fin :** sélectionnez une plage de dates applicable à votre enquête.
 
@@ -211,7 +209,7 @@ d. Le champ **UserId** indique l’utilisateur qui a créé la règle de boîte 
 
 Lorsque vous examinez les enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements qui indiquent qu’un utilisateur externe a été authentifié par Azure Active Directory et s’est connecté avec succès à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) s’est connecté avec succès à contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs disposant d’un compte Microsoft (MSA), comme un Outlook.com ou Live.com, se sont connectés avec succès à votre organisation. Dans ces situations, l’activité auditée est **connectée par l’utilisateur**. 
 
-Ce comportement est inhérent au produit. Azure Active Directory (Azure AD), le service d’annuaire, autorise une *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive dans votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie que seul Azure AD vérifie que l’utilisateur est bien celui qu’il prétend être. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de Azure AD l’authentification de l’utilisateur. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Elle indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct accède aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
+Ce comportement est inhérent au produit. Azure Active Directory (Azure AD), le service d’annuaire, autorise une *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive dans votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie que seul Azure AD vérifie que l’utilisateur est celui qu’il prétend être. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct accède aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
 
 > [!NOTE]
 > Azure AD autorise l’authentification directe uniquement pour les *applications tierces*, telles que SharePoint Online et OneDrive Entreprise. Elle n’est pas autorisée pour les autres applications tierces.
@@ -220,7 +218,7 @@ Voici un exemple et des descriptions des propriétés pertinentes dans un enregi
 
 ![Exemple d’enregistrement d’audit pour une authentification directe réussie.](../media/PassThroughAuth1.png)
 
-   a. Ce champ indique que l’utilisateur qui a tenté d’accéder à une ressource de votre organisation est introuvable dans le Azure AD de votre organisation.
+   a. Ce champ indique que l’utilisateur qui a tenté d’accéder à une ressource de votre organisation est introuvable dans Azure AD de votre organisation.
 
    b. Ce champ affiche l’UPN de l’utilisateur externe qui a tenté d’accéder à une ressource dans votre organisation. Cet ID d’utilisateur est également identifié dans les propriétés **User** et **UserId** de l’enregistrement d’audit.
 
@@ -228,7 +226,7 @@ Voici un exemple et des descriptions des propriétés pertinentes dans un enregi
 
    d. Cela indique que l’authentification directe a réussi. En d’autres termes, l’utilisateur a été authentifié avec succès par Azure AD. 
 
-   e. La valeur **RecordType** de **15** indique que l’activité auditée (UserLoggedIn) est un événement d’ouverture de session stS (Secure Token Service) dans Azure AD.
+   e. La valeur **RecordType** de **15** indique que l’activité auditée (UserLoggedIn) est un événement d’ouverture de session STS (Secure Token Service) dans Azure AD.
 
 Pour plus d’informations sur les autres propriétés affichées dans un enregistrement d’audit UserLoggedIn, consultez les informations de schéma liées à Azure AD dans [Office 365 schéma de l’API Activité de gestion](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
 
@@ -236,9 +234,9 @@ Voici deux exemples de scénarios qui aboutiraient à une activité d’audit **
 
   - Un utilisateur disposant d’un compte Microsoft (tel que SaraD@outlook.com) a essayé d’accéder à un document dans un compte OneDrive Entreprise dans fourthcoffee.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour SaraD@outlook.com dans fourthcoffee.onmicrosoft.com.
 
-  - Un utilisateur disposant d’un compte professionnel ou scolaire dans une organisation (par exemple, pilarp@fabrikam.onmicrosoft.com) a tenté d’accéder à un site SharePoint dans contoso.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour pilarp@fabrikam.com dans contoso.onmicrosoft.com.
+  - Un utilisateur disposant d’un compte professionnel ou scolaire dans une organisation (par exemple, pilarp@fabrikam.onmicrosoft.com) a essayé d’accéder à un site SharePoint dans contoso.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour pilarp@fabrikam.com dans contoso.onmicrosoft.com.
 
-### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Astuces pour examiner les connexions réussies résultant de l’authentification directe
+### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Conseils pour examiner les connexions réussies résultant de l’authentification directe
 
 - Recherchez dans le journal d’audit les activités effectuées par l’utilisateur externe identifié dans **l’enregistrement d’audit connecté par l’utilisateur** . Tapez l’UPN de l’utilisateur externe dans la zone **Utilisateurs** et utilisez une plage de dates si pertinente pour votre scénario. Par exemple, vous pouvez créer une recherche à l’aide des critères de recherche suivants :
 
@@ -246,7 +244,7 @@ Voici deux exemples de scénarios qui aboutiraient à une activité d’audit **
 
     Outre les activités **connectées par l’utilisateur** , d’autres enregistrements d’audit peuvent être retournés, tels que ceux qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé, modifié ou téléchargé un document qui a été partagé avec lui.
 
-- Recherchez SharePoint activités de partage qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** l’enregistrement d’audit. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).
+- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** l’enregistrement d’audit. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).
 
 - Exportez les résultats de la recherche dans le journal d’audit qui contiennent des enregistrements pertinents pour votre investigation afin que vous puissiez utiliser Excel pour rechercher d’autres activités liées à l’utilisateur externe. Pour plus d’informations, consultez  [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).
 

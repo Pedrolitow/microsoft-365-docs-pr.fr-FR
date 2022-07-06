@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les modèles d’évaluation dans Microsoft Purview Gestionnaire de conformité
+title: En savoir plus sur les modèles d’évaluation dans le Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,17 +17,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment utiliser et gérer des modèles pour générer des évaluations dans Microsoft Purview Gestionnaire de conformité. Créez et modifiez des modèles à l’aide d’un fichier Excel mis en forme.
-ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Découvrez comment utiliser et gérer des modèles pour générer des évaluations dans le Gestionnaire de conformité Microsoft Purview. Créez et modifiez des modèles à l’aide d’un fichier Excel mis en forme.
+ms.openlocfilehash: ac4d3fb6f7a43aa642b9d8b343a68c9f38f29e25
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66116002"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635642"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>En savoir plus sur les modèles d’évaluation dans le Gestionnaire de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez **comment fonctionnent les modèles** et **comment les gérer à** partir de votre page modèles d’évaluation. Obtenez des instructions pour **créer** des modèles, **étendre** et **modifier** des modèles existants, **mettre en forme vos données de modèle avec Excel** et exporter des **rapports** de modèles.
 
@@ -47,14 +45,14 @@ Le Gestionnaire de conformité peut être utilisé pour évaluer différents typ
 
 Les évaluations à partir de modèles universels sont plus généralisées, mais offrent une polyvalence accrue, car elles peuvent vous aider à suivre facilement la conformité de votre organisation sur plusieurs produits.
 
-Notez que les clients us government Community (Cloud de la communauté du secteur public) Moderate, Cloud de la communauté du secteur public High et Department of Defense (DoD) ne peuvent actuellement pas utiliser de modèles universels.
+Notez que les clients us government community (GCC) Moderate, GCC High et Department of Defense (DoD) ne peuvent actuellement pas utiliser de modèles universels.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilité et gestion des licences des modèles
 
 Il existe deux catégories de modèles dans le Gestionnaire de conformité : inclus et Premium.
 
 1. **Les modèles inclus sont accordés** par votre licence gestionnaire de conformité et couvrent les principales réglementations et exigences. Pour en savoir plus sur les modèles disponibles dans le cadre de votre contrat de licence, consultez [les détails des licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
-2. **Premium modèles** pour couvrir des besoins et des scénarios supplémentaires peuvent être obtenus en achetant des licences de modèle.
+2. Les **modèles Premium** pour couvrir des besoins et des scénarios supplémentaires peuvent être obtenus en achetant des licences de modèle.
 
 Lorsque vous commencez à créer des évaluations, le Gestionnaire de conformité effectue le suivi du nombre de modèles actifs afin de pouvoir surveiller votre utilisation. Pour en savoir plus, consultez [modèles actifs et inactifs](compliance-manager-templates.md#active-and-inactive-templates).
 
@@ -64,20 +62,20 @@ Affichez la [liste complète des modèles disponibles](compliance-manager-templa
 
 Les licences de modèle peuvent être obtenues par une ou plusieurs de ces méthodes, en fonction de votre contrat de licence du Gestionnaire de conformité. Une fois votre achat finalisé, les modèles doivent être disponibles dans votre locataire dans les 48 heures.
 
-**Commercial et Cloud de la communauté du secteur public Modéré**
+**Commercial et GCC Moderate**
 
-Les comptes commerciaux et Cloud de la communauté du secteur public Modérés peuvent acheter des licences de modèle dans le Centre d’administration ([en savoir plus sur les abonnements, les licences et la facturation](/microsoft-365/commerce/)). Sélectionnez la quantité de licences que vous souhaitez acheter et votre plan de paiement.
+Les comptes commerciaux et GCC Moderate peuvent acheter des licences de modèle dans le Centre d’administration ([en savoir plus sur les abonnements, les licences et la facturation](/microsoft-365/commerce/)). Sélectionnez la quantité de licences que vous souhaitez acheter et votre plan de paiement.
 
 Liens d’achat :
 
 - [Commerciale](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [Cloud de la communauté du secteur public modéré](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
 
-Vous pouvez également acquérir des licences par le biais de votre participation au [programme fournisseur de solutions Cloud](https://partner.microsoft.com/membership/cloud-solution-provider) ou [à la gestion des licences en volume](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+Vous pouvez également acquérir des licences par le biais de votre participation au [programme fournisseur de solutions cloud](https://partner.microsoft.com/membership/cloud-solution-provider) ou [à la gestion des licences en volume](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
-**Cloud de la communauté du secteur public comptes High et DOD**
+**Comptes GCC High et DOD**
 
-Cloud de la communauté du secteur public comptes High et DOD doivent acheter des licences de modèle par le biais [de licences en volume](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+Les comptes GCC High et DOD doivent acheter des licences de modèle par le biais [de licences en volume](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 ### <a name="try-out-premium-templates"></a>Essayer des modèles Premium
 
@@ -85,9 +83,9 @@ Pour tester des modèles Premium avant d’effectuer un achat, vous pouvez égal
 
 Si votre organisation dispose d’une licence commerciale pour le Gestionnaire de conformité, vous pouvez apprendre à démarrer votre version d’évaluation à [l’adresse About the free trial for Microsoft Purview Compliance Manager Premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
-Si votre organisation est sous licence Cloud de la communauté du secteur public ou DOD, choisissez le lien d’évaluation approprié pour votre organisation :
+Si votre organisation est sous licence GCC ou DOD, choisissez le lien d’évaluation approprié pour votre organisation :
 
-- [Cloud de la communauté du secteur public modéré](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
@@ -108,7 +106,7 @@ Par exemple, si votre compteur affiche 2/5, cela signifie que votre organisation
 
 Si votre compteur affiche 5/2, cela indique que votre organisation dépasse ses limites et doit acheter 3 des modèles Premium utilisés.
 
-Les modèles d’un produit prédéfini, tels que Microsoft 365, ont une licence conjointe avec les versions universelles du même modèle. Cela vous permet d’utiliser la même certification sous-jacente sur plusieurs produits. L’utilisation de l’une ou des deux versions du même modèle ne comptera qu’un seul modèle activé.
+Les modèles d’un produit prédéfini, comme Microsoft 365, ont des licences conjointes avec les versions universelles du même modèle. Cela vous permet d’utiliser la même certification sous-jacente sur plusieurs produits. L’utilisation de l’une ou des deux versions du même modèle ne comptera qu’un seul modèle activé.
 
 Pour plus d’informations, consultez les [instructions relatives aux licences du Gestionnaire de conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
@@ -124,7 +122,7 @@ Pour créer votre propre modèle pour les évaluations personnalisées dans le G
 
 ## <a name="modify-an-assessment-template"></a>Modifier un modèle d’évaluation
 
-Lorsque vous travaillez avec des évaluations dans le Gestionnaire de conformité, vous pouvez modifier un modèle d’évaluation que vous avez créé. Le processus est similaire au processus de création de modèle, en ce que vous allez charger un fichier Excel mis en forme avec vos données de modèle. Pour en savoir plus sur la façon d’apporter des modifications et la conservation des données que vous souhaitez toujours conserver, consultez [Modifier un modèle d’évaluation](compliance-manager-templates-modify.md).
+Lorsque vous travaillez avec des évaluations dans le Gestionnaire de conformité, vous pouvez modifier un modèle d’évaluation que vous avez créé. Le processus est similaire au processus de création de modèle, dans le cas où vous allez charger un fichier Excel mis en forme avec vos données de modèle. Pour en savoir plus sur la façon d’apporter des modifications et la conservation des données que vous souhaitez toujours conserver, consultez [Modifier un modèle d’évaluation](compliance-manager-templates-modify.md).
 
 ## <a name="extend-an-assessment-template"></a>Étendre un modèle d’évaluation
 
@@ -132,12 +130,12 @@ Le Gestionnaire de conformité offre la possibilité d’ajouter vos propres con
 
 ## <a name="format-assessment-template-data-in-excel"></a>Mettre en forme les données du modèle d’évaluation dans Excel
 
-Lorsque vous créez, modifiez ou étendez des modèles d’évaluation dans le Gestionnaire de conformité, vous travaillez avec Excel feuilles de calcul qui utilisent un format et un schéma spécifiques. Ces spécifications doivent être suivies pour que les fichiers soient importés correctement. Pour en savoir plus, consultez [Formater les données du modèle d’évaluation dans Excel](compliance-manager-templates-format-excel.md).
+Lorsque vous créez, modifiez ou étendez des modèles d’évaluation dans le Gestionnaire de conformité, vous travaillez avec des feuilles de calcul Excel qui utilisent un format et un schéma spécifiques. Ces spécifications doivent être suivies pour que les fichiers soient importés correctement. Pour plus d’informations, consultez [Formater les données du modèle d’évaluation dans Excel](compliance-manager-templates-format-excel.md).
 
 ## <a name="export-a-template"></a>Exporter un modèle
 
 Vous pouvez exporter un fichier Excel qui contient toutes les données d’un modèle. Vous devez exporter un modèle pour le modifier, car il s’agit du fichier Excel que vous modifiez et chargez dans le [processus de modification](compliance-manager-templates-modify.md). Vous pouvez également exporter un modèle pour référence si vous souhaitez utiliser des données à partir de celui-ci lors de la construction d’un nouveau modèle personnalisé.
 
-Pour exporter votre modèle, accédez à la page des détails de votre modèle et sélectionnez le bouton **Exporter vers Excel**.
+Pour exporter votre modèle, accédez à la page des détails de votre modèle et sélectionnez le bouton **Exporter vers Excel** .
 
 Notez que lors de l’exportation d’un modèle que vous avez étendu à partir d’un modèle gestionnaire de conformité, le fichier exporté contient uniquement les attributs que vous avez ajoutés au modèle. Le fichier exporté n’inclut pas les données de modèle d’origine fournies par Microsoft. Pour obtenir un tel rapport, consultez les instructions [d’exportation d’un rapport d’évaluation](compliance-manager-assessments.md#export-an-assessment-report).

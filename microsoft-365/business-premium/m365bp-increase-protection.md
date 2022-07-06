@@ -25,20 +25,20 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: 7917fa7e0530724c201db8b118ea2adedc7c3a62
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573844"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631934"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
 
-Dans cet objectif, vous augmentez votre protection contre les menaces avec Microsoft 365 Business Premium. Il est essentiel de protéger votre entreprise contre le hameçonnage, les programmes malveillants et d’autres menaces. Cet objectif inclut des informations sur les éléments suivants :
+Dans cet objectif, vous augmentez votre protection contre les menaces avec Microsoft 365 Business Premium. Il est essentiel de protéger votre entreprise contre le hameçonnage, les programmes malveillants et d’autres menaces. Cet article contient également des informations sur :
 
 - [Les stratégies de sécurité prédéfinies](#review-and-apply-preset-security-policies) qui peuvent faire gagner beaucoup de temps dans l’installation et la configuration.
-- [Stratégies de sécurité personnalisées](#create-custom-security-policies) que vous pouvez définir en fonction des besoins de votre entreprise
-- Comment [ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [Stratégies de sécurité personnalisées](#create-custom-security-policies) que vous pouvez définir en fonction des besoins de votre entreprise.
+- [Comment ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Stratégies d’alerte](#review-your-alert-policies) qui surveillent des fichiers spécifiques et comment ils sont utilisés.
 
 ## <a name="review-and-apply-preset-security-policies"></a>Examiner et appliquer des stratégies de sécurité prédéfinies

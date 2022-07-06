@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Découvrez comment activer ou désactiver les boîtes aux lettres d’archivage pour prendre en charge la conservation des messages, la découverte électronique et les exigences de conservation de votre organisation.
-ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772421"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635532"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Activer l’archivage des boîtes aux lettres dans le portail de conformité Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’archivage dans Microsoft 365 (également appelé *Archivage local*) fournit aux utilisateurs de l’espace de stockage de boîtes aux lettres supplémentaire. Pour plus d’informations, consultez [En savoir plus sur les boîtes aux lettres d’archivage](archive-mailboxes.md).
 

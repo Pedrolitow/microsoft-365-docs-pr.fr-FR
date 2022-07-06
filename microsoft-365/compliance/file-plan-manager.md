@@ -17,18 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
-ms.openlocfilehash: 67844e521aeec2257440aea34a79f0b96333f7f9
-ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+ms.openlocfilehash: 4257f7306767f1ede04edfc949419b1ab7477d8b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65889364"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635368"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Bien que vous puissiez créer et gérer des étiquettes de conservation à partir de la **gestion du cycle de vie des** données dans le portail de conformité Microsoft Purview, le plan de classement à partir de la **gestion des enregistrements** offre des capacités de gestion supplémentaires :
 
@@ -207,7 +205,7 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 |Notes|Chaîne|Non|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les utilisateurs. Cette description s’affiche lorsque les utilisateurs pointent sur l’étiquette dans les applications telles que Outlook, SharePoint et OneDrive. Si vous laissez cette propriété vide, une description est affichée par défaut, qui décrit les paramètres de rétention de l’étiquette. |
 |IsRecordLabel|Chaîne|Non, sauf si **Réglementaire** est **TRUE**|Cette propriété indique si l’étiquette marque le contenu comme un enregistrement. Les valeurs valides sont les suivantes :</br>**VRAI** : l’étiquette marque l’élément comme un enregistrement qui ne peut donc pas être supprimé. </br>**FALSE** : l’étiquette ne marque pas le contenu comme un enregistrement. Il s’agit de la valeur par défaut.</br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionAction, RetentionDuration et RetentionType doivent également être spécifiés.|
 |RetentionAction|Chaîne|Non, sauf si **RetentionDuration**, **RetentionType** ou **ReviewerEmail** sont spécifiés|Cette propriété spécifie l’action à effectuer après l’expiration de la valeur spécifiée par la propriété RetentionDuration (si spécifiée). Les valeurs valides sont les suivantes : </br>**Delete** : les éléments antérieurs à la valeur spécifiée par la propriété RetentionDuration sont supprimés.</br>**Keep** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et ne rien faire à l’expiration de la période. </br>**KeepAndDelete** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et les supprimer à l’expiration de la période. </br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionDuration et RetentionType doivent également être spécifiés. |
-|RetentionDuration|Chaîne|Non, sauf si **RetentionAction** ou **RetentionType** sont spécifiés|Cette propriété spécifie le nombre de jours pendant lesquels conserver le contenu. Les valeurs valides sont les suivantes : </br>**Unlimited** : les éléments sont conservés indéfiniment. </br>**_n_*: entier positif en jours ; par exemple, **365**. Le nombre maximal pris en charge est de 24 855, soit 68 ans. Si vous avez besoin de plus de temps que ce maximum, utilisez Illimité à la place.</br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionAction et RetentionType doivent également être spécifiés.
+|RetentionDuration|Chaîne|Non, sauf si **RetentionAction** ou **RetentionType** sont spécifiés|Cette propriété spécifie le nombre de jours pendant lesquels conserver le contenu. Les valeurs valides sont les suivantes : </br>**Unlimited** : les éléments sont conservés indéfiniment. </br>**_n_*: entier positif en jours ; par exemple, **365**. Le nombre maximal pris en charge est de 36 525, soit 100 ans. Si vous avez besoin de plus de temps que ce maximum, utilisez Illimité à la place.</br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionAction et RetentionType doivent également être spécifiés.
 |RetentionType|Chaîne|Non, sauf si **RetentionAction** ou **RetentionDuration** sont spécifiés|Cette propriété spécifie si la durée de rétention (si spécifiée) est calculée à partir de la date de création du contenu, de la date de l’événement, de la date d’étiquetage ou de la date de dernière modification. Les valeurs valides sont les suivantes : </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, RetentionAction et RetentionDuraction doivent également être spécifiés.|
 |ReviewerEmail|SmtpAddress|Non|Lorsque cette propriété est spécifiée, une révision avant destruction est déclenchée à l’expiration de la durée de la rétention. Cette propriété spécifie l’adresse électronique d’un réviseur dans votre client pour l’action de rétention **KeepAndDelete**. </br> </br> Vous pouvez inclure l’adresse e-mail des utilisateurs individuels, des groupes de distribution ou des groupes de sécurité dans votre client. Spécifiez plusieurs adresses e-mail en les séparant par des points-virgules. </br> </br> Dépendances de groupe : lorsque cette propriété est spécifiée, **RetentionAction** (doit être **KeepAndDelete**), **RetentionDuration** et **RetentionType** doivent également être spécifiés.|
 |ReferenceId|Chaîne|Non|Cette propriété spécifie la valeur affichée dans l’**ID de référence** du descripteur du plan de gestion de fichiers que vous pouvez utiliser comme valeur unique pour votre organisation.| 

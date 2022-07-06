@@ -12,20 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données de Skype Entreprise vers Microsoft 365.
-ms.openlocfilehash: 8b824a8ac0db74d639c402bdec9e0894078b2dea
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 4301519561c75d4c76cdd47b7adae544f5170585
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415945"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632859"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurer un connecteur pour archiver les données Skype Entreprise
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la plateforme Skype Entreprise vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Skype Entreprise](https://www.veritas.com/en/au/insights/merge1/skype-for-business) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les messages entre les utilisateurs, les conversations persistantes et les messages de conférence de Skype Entreprise au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois que Skype Entreprise données sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Skype Entreprise pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois Skype Entreprise données stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Skype Entreprise pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>Vue d’ensemble de l’archivage Skype Entreprise données
 
@@ -37,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Toutes les 24 heures, Skype Entreprise éléments sont copiés sur le site Veritas Merge1. Le connecteur convertit également Skype Entreprise éléments au format de message électronique.
 
-3. Le connecteur Skype Entreprise que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Skype Entreprise vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Skype Entreprise que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Skype Entreprise vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email du mappage* automatique des utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **Skype Entreprise** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email* . Chaque élément Skype Entreprise contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
@@ -45,9 +43,9 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte Merge1 pour les connecteurs Microsoft. Pour ce faire, contactez le [support technique veritas](https://www.veritas.com/form/requestacall/ms-connectors-contact.html). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur Skype Entreprise à l’étape 1 (et le termine à l’étape 3) doit se faire attribuer le rôle Administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Skype Entreprise à l’étape 1 (et le termine à l’étape 3) doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données Veritas est en préversion publique dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données Veritas est en préversion publique dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-the-skype-for-business-connector"></a>Étape 1 : Configurer le connecteur Skype Entreprise
 
@@ -73,7 +71,7 @@ Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mapp
 
 Pour mapper les utilisateurs et terminer la configuration du connecteur dans le portail de conformité, procédez comme suit :
 
-1. Dans la page **Map Skype Entreprise utilisateurs à Microsoft 365 utilisateurs**, activez le mappage automatique des utilisateurs. Les éléments Skype Entreprise incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Carte Skype Entreprise utilisateurs vers les utilisateurs Microsoft 365**, activez le mappage automatique des utilisateurs. Les éléments Skype Entreprise incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez sur **Suivant**, passez en revue vos paramètres, puis accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

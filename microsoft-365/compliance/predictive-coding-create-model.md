@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment créer un modèle de codage prédictif dans eDiscovery (Premium). Il s’agit de la première étape de l’utilisation des fonctionnalités de Machine Learning dans eDiscovery (Premium) pour vous aider à identifier le contenu pertinent et non pertinent dans un ensemble de révisions.
-ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1105ff05d323ded2297a92d7b12b44a78c35b11f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099650"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635740"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Créer un modèle de codage prédictif (préversion)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La première étape de l’utilisation des fonctionnalités de Machine Learning du codage prédictif dans eDiscovery (Premium) consiste à créer un modèle de codage prédictif. Après avoir créé un modèle, vous pouvez l’entraîner à identifier le contenu pertinent et non pertinent dans un ensemble de révisions.
 
@@ -39,9 +37,9 @@ Pour passer en revue le flux de travail de codage prédictif, consultez [En savo
 
 ## <a name="create-a-model"></a>Créer un modèle
 
-1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Révision des ensembles**.
+1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Ensembles de révision**.
 
-2. Ouvrez un jeu de révision, puis cliquez sur **le codage prédictif AnalyticsManage** >  (préversion).
+2. Ouvrez un ensemble de révisions, puis cliquez sur **Analytics** > **Manage predictive coding (préversion).**
 
    ![Cliquez sur le menu déroulant Analyser dans l’ensemble de révision pour accéder à la page de codage prédictif.](..\media\ManagePredictiveCoding.png)
 
@@ -63,6 +61,6 @@ Après avoir créé un modèle, les éléments suivants se produisent en arrièr
 
 - Le système sélectionne au hasard 40 éléments du jeu de révision à inclure dans le jeu d’entraînement pour la première série d’entraînement. Par conséquent, la première série d’entraînement inclut 50 éléments pour l’étiquetage : 40 éléments du jeu d’apprentissage et 10 éléments du jeu de contrôles.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez créé un modèle pour un ensemble de révisions, l’étape suivante consiste à effectuer des cycles d’entraînement pour « enseigner » le modèle afin d’identifier le contenu pertinent pour votre investigation. Pour plus d’informations, consultez [Entraîner un modèle de codage prédictif](predictive-coding-train-model.md).

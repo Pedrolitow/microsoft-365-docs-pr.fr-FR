@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview liste des modèles du Gestionnaire de conformité
+title: Liste des modèles du Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,26 +16,24 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview Gestionnaire de conformité fournit des modèles pour l’élaboration d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et industrielles.
-ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+description: Le Gestionnaire de conformité Microsoft Purview fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et sectorielles.
+ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692780"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631202"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Affichez la liste complète des **modèles disponibles** pour la création d’évaluations dans le Gestionnaire de conformité.
 
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Aperçu
 
-[Microsoft Purview Gestionnaire de conformité](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
+[Le Gestionnaire de conformité Microsoft Purview](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
 Les modèles sont ajoutés au Gestionnaire de conformité à mesure que de nouvelles lois et réglementations sont adoptées. Le Gestionnaire de conformité met également à jour ses modèles lorsque les lois ou réglementations sous-jacentes changent. Apprenez-en davantage sur la [révision et l’acceptation des mises à jour](compliance-manager-assessments.md#accept-updates-to-assessments).
 
@@ -43,7 +41,7 @@ Les modèles sont ajoutés au Gestionnaire de conformité à mesure que de nouve
 
 Vous trouverez ci-dessous la liste complète des modèles dans le Gestionnaire de conformité. Les noms de modèles correspondent à la réglementation ou à la certification associée. Le cas échéant, les liens dans les noms de modèles ci-dessous vous mènent à la documentation associée sur cette norme, réglementation ou loi.
 
-Chaque modèle (à l’exception du modèle par défaut base de référence de protection des [données Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)) est disponible dans au moins une version conçue pour une utilisation avec un produit spécifique, tel que Microsoft 365, ainsi qu’une version universelle que vous pouvez utiliser pour évaluer d’autres produits de votre choix. Pour en savoir plus sur les options de modèle, consultez [En savoir plus sur les modèles d’évaluation](compliance-manager-templates.md).
+Chaque modèle (à l’exception du modèle par défaut base de référence de la [protection des données Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment) ) est disponible dans au moins une version conçue pour être utilisée avec un produit spécifique, tel que Microsoft 365, ainsi qu’une version universelle que vous pouvez utiliser pour évaluer d’autres produits de votre choix. Pour en savoir plus sur les options de modèle, consultez [En savoir plus sur les modèles d’évaluation](compliance-manager-templates.md).
 
 Vous pouvez également sélectionner des modèles individuels dans le Gestionnaire de conformité pour afficher plus d’informations à leur sujet, notamment une description de la réglementation et des propriétés du modèle. Lisez la section **À propos** d’un résumé.
 
@@ -72,7 +70,7 @@ Un ou plusieurs des modèles répertoriés ci-dessous sont inclus dans le cadre 
 - NIST 800-53 Revs. 4 et 5
 
 > [!NOTE]
-> Pour les clients us government Community (Cloud de la communauté du secteur public) Moderate, Cloud de la communauté du secteur public High et Department of Defense (DoD) : les modèles CMMC (Cybersecurity Maturity Model Certification) niveaux 1 à 5 sont inclus, en plus des modèles répertoriés ci-dessus.
+> Pour les clients us government community (GCC) Moderate, GCC High et Department of Defense (DoD) : les modèles CMMC (Cybersecurity Maturity Model Certification) niveaux 1 à 5 sont inclus, en plus des modèles répertoriés ci-dessus.
 
 ## <a name="preview-templates"></a>Modèles d’aperçu
 
@@ -89,7 +87,7 @@ Les modèles répertoriés ci-dessous sont actuellement disponibles en préversi
 - ISO 27018:2019 pour Azure (préversion)
 - ISO 27018:2019 pour Dynamics 365 (préversion)
 
-## <a name="premium-templates"></a>modèles Premium
+## <a name="premium-templates"></a>Modèles Premium
 
 Les modèles répertoriés ci-dessous peuvent être achetés par votre organisation.
 
@@ -376,7 +374,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - EudraLex - Règles régissant les médicaments dans l’Union européenne  
 - European Network and Information Security Agency (ENISA) - Cloud Computing Information Assurance Framework  
 - Finlande - Loi sur la protection des données  
-- Critères finlandais pour l’évaluation de la sécurité des informations des services cloud
+- Critères finnois pour l’évaluation de la sécurité des informations de Services cloud
 - France - Loi sur la protection des données  
 - Loi géorgienne sur la protection des données personnelles  
 - Allemagne - Texte annoté de la configuration minimale requise pour la gestion des risques  
@@ -440,7 +438,7 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 
 - Canada - Violation du Règlement sur les garanties de sécurité  
 - Canada - Colombie-Britannique - Sécurité & de la confidentialité de l’information - FOIPPA  
-- [Canada - Office du Guide Self-Assessment sur la cybersécurité des institutions financières](/compliance/regulatory/offering-osfi-canada)  
+- [Canada - Guide de Self-Assessment du Bureau du surintendant des institutions financières sur la cybersécurité](/compliance/regulatory/offering-osfi-canada)  
 - Canada - Personal Health Information Protection Act (PHIPA) 2020  
 - Canada - Personal Information Protection and Electronic Documents Act (PIPEDA)  
 - Canada - Protégé B

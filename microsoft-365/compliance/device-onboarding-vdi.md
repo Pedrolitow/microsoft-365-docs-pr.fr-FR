@@ -13,25 +13,25 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Déployez le package de configuration sur un appareil vDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données de point de terminaison Microsoft 365.
-ms.openlocfilehash: 6bfb0f69198afbcc9d2949d583e151631cc7953b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Déployez le package de configuration sur un appareil vDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données de point de terminaison.
+ms.openlocfilehash: 8a54d4ce3cfb4b3ba6571f2aee63cd60c2a6d71f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760622"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636136"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégrer des appareils d’infrastructure de bureau virtuel non persistants
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
-- [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Gestion des risques internes](insider-risk-management.md)
 
 - Appareils vDI (Virtual Desktop Infrastructure)
 
 > [!WARNING]
-> Microsoft 365 la prise en charge de la protection contre la perte de données de point de terminaison pour Windows Virtual Desktop prend en charge les scénarios de session unique. Les scénarios multisession sur Windows Virtual Desktop ne sont actuellement pas pris en charge.
+> La prise en charge de la protection contre la perte de données de point de terminaison pour Windows Virtual Desktop prend en charge les scénarios de session unique. Les scénarios multisession sur Windows Virtual Desktop ne sont actuellement pas pris en charge.
 
 ## <a name="onboard-vdi-devices"></a>Intégrer des appareils VDI
 
@@ -45,7 +45,7 @@ Il peut y avoir des défis associés lors de l’intégration des VDIs. Voici le
 - Intégration anticipée instantanée de sessions de courte durée, qui doivent être intégrées à Microsoft 365 avant l’approvisionnement réel.
 - Le nom de l’appareil est généralement réutilisé pour les nouvelles sessions.
 
-Les appareils VDI peuvent apparaître dans le centre de conformité Microsoft 365 comme suit :
+Les appareils VDI peuvent apparaître dans le portail de conformité Microsoft Purview comme suit :
 
 - Entrée unique pour chaque appareil.
 Notez que dans ce cas, le *même* nom d’appareil doit être configuré lors de la création de la session, par exemple à l’aide d’un fichier de réponses sans assistance.
@@ -56,9 +56,9 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 > [!WARNING]
 > Pour les environnements où les configurations de ressources sont faibles, la procédure de démarrage VDI peut ralentir le processus d’intégration de l’appareil.
 
-1. Obtenez le fichier de configuration VDI .zip (*DeviceCompliancePackage.zip*) à partir du Centre de [conformité Microsoft](https://compliance.microsoft.com).
+1. Obtenez le fichier .zip du package de configuration VDI (*DeviceCompliancePackage.zip*) à partir de [portail de conformité Microsoft Purview](https://compliance.microsoft.com).
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** >  **Device onboardingOnboarding** > .
+2. Dans le volet de navigation, sélectionnez **Paramètres** > **Intégration de l’appareil** > **.**
 
 3. Dans le champ **Méthode de déploiement** , sélectionnez les **scripts d’intégration VDI pour les points de terminaison non persistants**.
 
@@ -73,7 +73,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
     > [!NOTE]
     > Si vous ne voyez pas le `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` dossier, il peut être masqué. Vous devez choisir l’option **Afficher les fichiers et dossiers masqués** dans Explorateur de fichiers.
 
-8. Ouvrez une fenêtre d’éditeur de stratégie de groupe local et accédez à **Configuration** >  de l’ordinateur **Windows Paramètres** >  **ScriptsStartup** > .
+8. Ouvrez une fenêtre d’éditeur de stratégie de groupe local et accédez au **démarrage** **des scripts de paramètres** >  >  Windows **de configuration** >  de l’ordinateur.
 
    > [!NOTE]
    > Les stratégie de groupe de domaine peuvent également être utilisées pour intégrer des appareils VDI non persistants.
@@ -82,11 +82,11 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
    **Pour une entrée unique pour chaque appareil**
 
-   Sélectionnez l’onglet **Scripts PowerShell**, puis cliquez sur **Ajouter** (Windows’Explorateur s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script `Onboard-NonPersistentMachine.ps1`PowerShell d’intégration.
+   Sélectionnez l’onglet **Scripts PowerShell** , puis cliquez sur **Ajouter** (l’Explorateur Windows s’ouvre directement dans le chemin où vous avez copié le script d’intégration précédemment). Accédez au script `Onboard-NonPersistentMachine.ps1`PowerShell d’intégration.
 
    **Pour plusieurs entrées pour chaque appareil** :
 
-   Sélectionnez l’onglet **Scripts**, puis cliquez sur **Ajouter** (Windows’Explorateur s’ouvre directement dans le chemin d’accès où vous avez copié le script d’intégration précédemment). Accédez au script `DeviceComplianceOnboardingScript.cmd`Bash d’intégration.
+   Sélectionnez l’onglet **Scripts** , puis cliquez sur **Ajouter** (l’Explorateur Windows s’ouvre directement dans le chemin où vous avez copié le script d’intégration précédemment). Accédez au script `DeviceComplianceOnboardingScript.cmd`Bash d’intégration.
 
 10. Testez votre solution :
     1. Créez un pool avec un seul appareil.
@@ -116,11 +116,11 @@ Pour plus d’informations sur les commandes DISM et la maintenance hors connexi
 
 - [Modifier une image Windows à l’aide de DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [Options de Command-Line de gestion des images DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Réduire la taille du magasin de composants dans une image de Windows hors connexion](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Réduire la taille du magasin de composants dans une image Windows hors connexion](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Si la maintenance hors connexion n’est pas une option viable pour votre environnement VDI non persistant, vous devez effectuer les étapes suivantes pour garantir la cohérence et l’intégrité des capteurs :
 
-1. Après avoir démarré l’image d’or pour la maintenance ou la mise à jour corrective en ligne, exécutez un script de désintégrage pour désactiver le capteur de surveillance d’appareil Microsoft 365. Pour plus d’informations, consultez [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. Après avoir démarré l’image d’or pour la maintenance ou la mise à jour corrective en ligne, exécutez un script de désintégrage pour désactiver le capteur de surveillance des appareils Microsoft 365. Pour plus d’informations, consultez [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. Vérifiez que le capteur est arrêté en exécutant la commande ci-dessous dans une fenêtre CMD :
 
@@ -142,7 +142,7 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 
 5. Refermez l’image dorée comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer des appareils Windows 10 et Windows 11 à l’aide de stratégie de groupe](device-onboarding-gp.md)
 - [Intégrer des appareils Windows 10 et Windows 11 à l’aide de Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)

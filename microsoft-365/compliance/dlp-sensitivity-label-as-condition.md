@@ -20,16 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Ln savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: bf0fcb327b2869e21a54de22822d0d51c72e25b8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55803a2c354890264f99753af2aa6337cf49182a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438455"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632396"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser les [étiquettes de confidentialité](sensitivity-labels.md) comme condition dans les stratégies DLP pour ces emplacements :
 

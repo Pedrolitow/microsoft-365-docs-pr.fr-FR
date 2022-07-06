@@ -18,18 +18,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Des conseils pratiques pour déployer Microsoft Purview Information Protection dans votre organisation.
-ms.openlocfilehash: fa826e7b9761ebcff34dd9ae6f7c2ee1b268bade
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 3b62cf6165447288275a7a8c02a64ab27b41d607
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759843"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635258"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Déployer une solution de protection des informations avec Microsoft Purview
 
 >*[Licences de sécurité et de conformité Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Votre stratégie de protection des informations est déterminée par les besoins de votre entreprise. De nombreuses organisations doivent se conformer aux réglementations, aux lois et aux pratiques commerciales. En outre, les organisations doivent protéger les informations propriétaires, telles que les données pour des projets spécifiques.
 

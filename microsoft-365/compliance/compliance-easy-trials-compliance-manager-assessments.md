@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des versions d’évaluation premium du Gestionnaire de conformité Microsoft Purview.
-ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187753"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631268"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>À propos de l’essai gratuit pour les évaluations Premium du Gestionnaire de conformité Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le Gestionnaire de conformité vous permet de gérer les exigences de conformité de votre organisation et d’évaluer et d’améliorer votre score de conformité. Les évaluations que vous créez sont basées sur des modèles qui correspondent aux réglementations gouvernementales et aux normes du secteur dans le monde entier.  
 

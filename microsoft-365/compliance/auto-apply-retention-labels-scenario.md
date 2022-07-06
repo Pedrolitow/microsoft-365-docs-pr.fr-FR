@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: ad8d4f48aa104db18256d62fc5034d1fb38b2817
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ed054995943fc5366539fb6bc524757a6a6f820e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286513"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632968"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit la gestion du cycle de vie des documents stockés dans SharePoint à l’aide d’étiquettes de rétention appliquées automatiquement et de la rétention basée sur les événements.
 

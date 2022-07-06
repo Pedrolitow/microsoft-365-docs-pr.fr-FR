@@ -16,16 +16,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft Purview eDiscovery (Premium) dans Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (CJC), qui utilisent un jeu de caractères sur deux octets.
-ms.openlocfilehash: e6399136713ff7be4b3c065de05b587a3f942b01
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095903"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636202"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Prise en charge du langage CJC pour eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) prend en charge les langues de jeu de caractères sur deux octets (notamment le chinois simplifié, le chinois traditionnel, le japonais et le coréen, qui sont collectivement appelés langues *CJC*) pour les scénarios avancés suivants dans un ensemble de révisions :
 
@@ -39,7 +37,7 @@ Microsoft Purview eDiscovery (Premium) prend en charge les langues de jeu de car
 
 **Comment faire créer une recherche pour collecter des éléments qui contiennent des caractères CJC ?**
 
-Vous pouvez utiliser des caractères CJK pour [les recherches de mots clés](building-search-queries.md#keyword-searches), [les requêtes de mots clés et les conditions de recherche](keyword-queries-and-search-conditions.md) lors de la recherche de contenu dans eDiscovery (Premium). La recherche de caractères CJK est également prise en charge lors de la recherche de contenu dans Microsoft Purview eDiscovery (Standard) et recherche de contenu.
+Vous pouvez utiliser des caractères CJK pour [les recherches de mots clés](building-search-queries.md#keyword-searches), [les requêtes de mots clés et les conditions de recherche](keyword-queries-and-search-conditions.md) lors de la recherche de contenu dans eDiscovery (Premium). La recherche de caractères CJC est également prise en charge lors de la recherche de contenu dans Microsoft Purview eDiscovery (Standard) et recherche de contenu.
 
 Nous fournissons la prise en charge de CJK pour tous les [opérateurs de recherche](keyword-queries-and-search-conditions.md#search-operators) et [conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions), y compris les opérateurs booléens **AND**, **OR**, **NOT** et **NEAR**.
 

@@ -1,5 +1,5 @@
 ---
-title: Archiver des données Slack eDiscovery à Microsoft 365 à l’aide d’un connecteur de données fourni par Microsoft
+title: Archiver des données Slack eDiscovery dans Microsoft 365 à l’aide d’un connecteur de données fourni par Microsoft
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -12,18 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données Slack eDiscovery fourni par Microsoft pour importer et archiver des données de messagerie instantanée.
-ms.openlocfilehash: 65d7b666390c132995882ca4e8d027064482df13
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 138a93449b4b2a9ce7b57b4c240f2e42c553d818
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320673"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631478"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurer un connecteur pour archiver les données Slack eDiscovery (préversion)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Le connecteur de données Slack eDiscovery fourni par Microsoft vous permet d’importer et d’archiver des données de messagerie instantanée (telles que des messages, des pièces jointes, des liens et des révisions) à partir des espaces de travail Slack de votre organisation vers Microsoft 365. Le connecteur de données extrait les données de l’API Slack, les convertit au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365. Une fois les données Slack importées, vous pouvez appliquer des solutions de conformité, telles que la conservation des litiges, Microsoft Purview la découverte électronique (Premium), la conformité des communications et les paramètres de rétention au contenu Slack. L’utilisation d’un connecteur de données Slack eDiscovery pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Le connecteur de données Slack eDiscovery fourni par Microsoft vous permet d’importer et d’archiver des données de messagerie instantanée (telles que des messages, des pièces jointes, des liens et des révisions) à partir des espaces de travail Slack de votre organisation vers Microsoft 365. Le connecteur de données extrait les données de l’API Slack, les convertit au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365. Une fois les données Slack importées, vous pouvez appliquer des solutions de conformité, telles que la conservation des litiges, les Microsoft Purview eDiscovery (Premium), la conformité des communications et les paramètres de rétention au contenu Slack. L’utilisation d’un connecteur de données Slack eDiscovery pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Vue d’ensemble de l’archivage des données Slack eDiscovery
 
@@ -45,7 +43,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Obtenez le nom d’utilisateur et le mot de passe du compte d’entreprise Slack de votre organisation. Vous utilisez ces informations d’identification pour vous connecter à ce compte lorsque vous créez le connecteur de données. Il est également recommandé de configurer l’approvisionnement automatique d’utilisateurs dans votre organisation Slack pour utiliser l’authentification unique (SSO). [Rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur Slack eDiscovery. Ce rôle est nécessaire pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité Microsoft Purview. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Slack eDiscovery doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est nécessaire pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité Microsoft Purview. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Étape 1 : Créer un connecteur Slack eDiscovery
 
@@ -77,7 +75,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 5. Cliquez sur **Autoriser** pour autoriser l’application à administrer votre organisation.
 
-   Une fois que vous avez cliqué sur **Autoriser**, la page Slack se ferme et la page **Mapper les utilisateurs Slack eDiscovery à Microsoft 365 page utilisateurs** dans l’Assistant Connecteur s’affiche.
+   Une fois que vous avez cliqué sur **Autoriser**, la page Slack se ferme et la page **Mapper les utilisateurs Slack eDiscovery à des utilisateurs Microsoft 365** dans l’Assistant Connecteur s’affiche.
 
 ## <a name="step-3-specify-the-users-to-import-data-for"></a>Étape 3 : Spécifier les utilisateurs pour lequel importer des données
 
@@ -89,11 +87,11 @@ Sélectionnez l’une des options suivantes pour spécifier les utilisateurs don
 
 ## <a name="step-4-map-users-and-select-data-types-to-import"></a>Étape 4 : Mapper les utilisateurs et sélectionner les types de données à importer
 
-1. Configurez l’une des options suivantes ou les deux pour mapper les utilisateurs Slack à leurs boîtes aux lettres Microsoft 365.
+1. Configurez une ou les deux options suivantes pour mapper les utilisateurs Slack à leurs boîtes aux lettres Microsoft 365.
 
-   - **Mappage automatique des utilisateurs**. Sélectionnez cette option pour mapper automatiquement les noms d’utilisateur Slack à Microsoft 365 boîtes aux lettres. Le connecteur utilise la valeur de la propriété *Email* , que contient chaque message ou élément Slack. Cette propriété est remplie avec une adresse e-mail de chaque participant du message. Si le connecteur peut associer les adresses e-mail aux utilisateurs Microsoft 365 correspondants, l’élément est importé dans la boîte aux lettres Microsoft 365 de ces utilisateurs. Pour utiliser cette option, l’authentification unique doit être configurée pour votre organisation Slack.
+   - **Mappage automatique des utilisateurs**. Sélectionnez cette option pour mapper automatiquement les noms d’utilisateur Slack aux boîtes aux lettres Microsoft 365. Le connecteur utilise la valeur de la propriété *Email* , que contient chaque message ou élément Slack. Cette propriété est remplie avec une adresse e-mail de chaque participant du message. Si le connecteur peut associer les adresses e-mail aux utilisateurs Microsoft 365 correspondants, l’élément est importé dans la boîte aux lettres Microsoft 365 de ces utilisateurs. Pour utiliser cette option, l’authentification unique doit être configurée pour votre organisation Slack.
 
-   - **Mappage d’utilisateur personnalisé**. Vous avez également la possibilité d’utiliser le mappage d’utilisateurs personnalisé au lieu (ou en plus) du mappage automatique des utilisateurs. Avec cette option, vous devez créer et charger un fichier CSV qui mappe l’ID de membre Slack des utilisateurs à leur adresse e-mail Microsoft 365. Pour ce faire, cliquez sur **Télécharger le modèle de mappage CSV**, remplissez le fichier CSV avec l’ID de membre Slack et Microsoft 365 adresse e-mail pour tous les utilisateurs de votre organisation, puis sélectionnez et chargez le fichier CSV dans l’Assistant. Veillez à ne pas modifier les en-têtes de colonne dans le fichier CSV. Voici un exemple de fichier de mappage CSV :
+   - **Mappage d’utilisateur personnalisé**. Vous avez également la possibilité d’utiliser le mappage d’utilisateurs personnalisé au lieu (ou en plus) du mappage automatique des utilisateurs. Avec cette option, vous devez créer et charger un fichier CSV qui mappe l’ID de membre Slack des utilisateurs à leur adresse e-mail Microsoft 365. Pour ce faire, cliquez sur **Télécharger le modèle de mappage CSV**, remplissez le fichier CSV avec l’ID de membre Slack et l’adresse e-mail Microsoft 365 pour tous les utilisateurs de votre organisation, puis sélectionnez et chargez le fichier CSV dans l’Assistant. Veillez à ne pas modifier les en-têtes de colonne dans le fichier CSV. Voici un exemple de fichier de mappage CSV :
 
      |**ExternalUserId**  | **O365UserMailbox**   |
      |:-------------------|:-----------------------|
@@ -105,11 +103,11 @@ Sélectionnez l’une des options suivantes pour spécifier les utilisateurs don
    > [!TIP]
    > Les ID de membre pour les utilisateurs peuvent être obtenus en cliquant sur le ... Bouton Plus dans le profil d’un utilisateur, puis sélectionnant **Copier l’ID de membre**. Vous pouvez également utiliser la [méthode API Slack users.list](https://api.slack.com/methods/users.list) pour obtenir les ID de tous les membres d’une équipe Slack.
 
-   Si vous activez le mappage automatique des utilisateurs et fournissez un fichier de mappage personnalisé, le connecteur examine d’abord le fichier de mappage personnalisé pour mapper l’utilisateur Slack à une boîte aux lettres Microsoft 365. Si le connecteur ne trouve pas de Microsoft 365 utilisateur valide qui correspond à l’utilisateur Slack, le connecteur utilise la propriété *Email* de l’élément Slack. Si le connecteur ne trouve pas de Microsoft 365 utilisateur valide dans le fichier de mappage personnalisé ou la propriété *Email* de l’élément de message, l’élément n’est pas importé.
+   Si vous activez le mappage automatique des utilisateurs et fournissez un fichier de mappage personnalisé, le connecteur examine d’abord le fichier de mappage personnalisé pour mapper l’utilisateur Slack à une boîte aux lettres Microsoft 365. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide qui correspond à l’utilisateur Slack, le connecteur utilise la propriété *Email* de l’élément Slack. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou la propriété *Email* de l’élément de message, l’élément n’est pas importé.
 
 2. Dans la page **Sélectionner les types de données à importer** , sélectionnez les types de données Slack que vous souhaitez importer. Si vous souhaitez importer des messages à partir de tous les canaux, sélectionnez toutes les options. Sinon, sélectionnez uniquement les types de données que vous souhaitez importer.
 
-     En plus des messages Slack, vous pouvez également spécifier d’autres types de contenu Slack à importer dans Microsoft 365. 
+     Outre les messages Slack, vous pouvez également spécifier d’autres types de contenu Slack à importer dans Microsoft 365. 
 
 3. Après avoir configuré les types de données à importer, cliquez sur **Suivant**, passez en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour créer le connecteur.
 

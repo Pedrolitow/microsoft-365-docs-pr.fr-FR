@@ -20,16 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit (Standard) afin que vous puissiez commencer à rechercher les activités d’audit effectuées par les utilisateurs et les administrateurs de votre organisation.
-ms.openlocfilehash: d9f685bd0438faa785f070b6b03707cda0184305
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 17f9e24f4c3159186011d3faefbd8796f51cc5ce
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091696"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632198"
 ---
-# <a name="set-up-microsoft-purview-audit-standard"></a>Configurer l’audit Microsoft Purview (Standard)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="set-up-microsoft-purview-audit-standard"></a>Configurer Microsoft Purview Audit (Standard)
 
 Microsoft Purview Audit (Standard) dans Microsoft 365 vous permet de rechercher des enregistrements d’audit pour les activités effectuées dans les différents services Microsoft 365 par les utilisateurs et les administrateurs. Étant donné que l’audit (Standard) est activé par défaut pour la plupart des organisations Microsoft 365 et Office 365, vous n’avez besoin que de quelques opérations avant que vous et d’autres membres de votre organisation puissiez rechercher dans le journal d’audit.
 
@@ -53,7 +51,7 @@ Pour obtenir la liste des exigences d’abonnement et de licence pour l’audit 
 
 Les administrateurs et les membres des équipes d’investigation doivent se voir attribuer le rôle journaux d’audit ou journaux d’audit View-Only dans Exchange Online pour effectuer une recherche dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Les administrateurs globaux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l'organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
-La capture d’écran suivante montre les deux rôles liés à l’audit attribués au groupe de rôles Gestion de l’organisation dans le centre d’administration Exchange.
+La capture d’écran suivante montre les deux rôles liés à l’audit attribués au groupe de rôles Gestion de l’organisation dans le Centre d’administration Exchange.
 
 ![Auditer les rôles attribués au groupe de rôles dans Exchange Online.](../media/EACAuditRoles.png)
 

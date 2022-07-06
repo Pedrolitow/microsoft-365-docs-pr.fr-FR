@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530277"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633782"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Bienvenue dans le guide opérationnel d’essai des solutions de conformité Microsoft Purview. Ce guide opérationnel vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir les fonctionnalités robustes et complètes des produits de conformité et de sécurité Microsoft Purview.
 

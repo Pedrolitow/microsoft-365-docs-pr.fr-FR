@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Communications dans un cas eDiscovery (Premium) pour envoyer, collecter et suivre les notifications de conservation légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 21090274f385d6a3354852134764a1f53a311f10
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e97630c75c05412e22afa17daaa1897f8627adf1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094987"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634674"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer un avis de conservation légale
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 À l’aide des communications de consignation eDiscovery (Premium), les organisations peuvent gérer leur flux de travail autour de la communication avec les consignatateurs. Grâce à l’outil Communications, les équipes juridiques peuvent systématiquement envoyer, collecter et suivre les notifications de conservation légale. Le processus de création flexible permet également aux équipes de personnaliser le flux de travail de notification de conservation et le contenu des avis envoyés aux consignatateurs.
 
@@ -48,7 +46,7 @@ La première étape consiste à spécifier les détails appropriés pour les avi
 
     - **Nom** : il s’agit du nom de la communication.
 
-    - **Agent d’émission** : la liste déroulante affiche les utilisateurs de votre organisation qui peuvent être sélectionnés en tant qu’agent émetteur pour la communication. Chaque communication envoyée aux consignats sera envoyée au nom de l’agent d’émission sélectionné. La liste des utilisateurs dans la liste déroulante se compose des membres du cas et des agents d’émission à l’échelle de l’organisation. Ces agents d’émission sont ajoutés par un administrateur eDiscovery et sont disponibles dans tous les cas eDiscovery (Premium) dans votre organisation. Pour plus d’informations, consultez [Gérer les agents d’émission](advanced-ediscovery-issuing-officers.md).
+    - **Agent d’émission** : la liste déroulante affiche les utilisateurs de votre organisation qui peuvent être sélectionnés en tant qu’agent émetteur pour la communication. Chaque communication envoyée aux consignats sera envoyée au nom de l’agent d’émission sélectionné. La liste des utilisateurs dans la liste déroulante se compose des membres du cas et des agents d’émission à l’échelle de l’organisation. Ces agents d’émission sont ajoutés par un administrateur eDiscovery et sont disponibles dans tous les cas eDiscovery (Premium) de votre organisation. Pour plus d’informations, consultez [Gérer les agents d’émission](advanced-ediscovery-issuing-officers.md).
 
     - **Sélectionner un modèle de communication** : la liste déroulante affiche les modèles de la bibliothèque communications dans la page des paramètres eDiscovery (Premium). Si vous sélectionnez un modèle, il s’affiche sur le **contenu définir le portail** comme point de départ pour le texte de la notification que vous créez. Si vous ne sélectionnez pas de modèle, vous devrez créer l’avis vous-même à partir de zéro. Pour plus d’informations sur les modèles de communication, consultez [Gérer les modèles de communication des consignatateurs](advanced-ediscovery-communications-library.md).
 
@@ -91,7 +89,7 @@ Pour créer une notification d’émission :
 
 4. Spécifiez le contenu ou des instructions supplémentaires que vous souhaitez fournir au consignateur (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’émission.
 
-5. Cliquez sur **Enregistrer**.
+5. Cliquez sur **Save (Enregistrer)**.
 
 ### <a name="re-issuance-notification"></a>notification Re-Issuance
 
@@ -107,7 +105,7 @@ Pour créer une notification de rééditance :
 
 4. Spécifiez le contenu ou des instructions supplémentaires que vous souhaitez fournir au consignateur (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de rééditation.
 
-5. Cliquez sur **Enregistrer**.
+5. Cliquez sur **Save (Enregistrer)**.
 
 > [!NOTE]
 > Si le contenu du portail est modifié (dans la page Définir le contenu du **portail** dans l’Assistant **Modification de la communication** ), la notification de réélation est automatiquement envoyée à tous les consignatateurs affectés à l’avis. Une fois la notification envoyée, les consignatateurs sont invités à confirmer à nouveau leur avis de suspension. Si vous avez configuré des flux de travail de rappel ou d’escalade, ceux-ci redémarrent également. Pour plus d’informations sur les autres événements de gestion de cas qui déclenchent des communications, consultez [Événements qui déclenchent des notifications](#events-that-trigger-notifications).
@@ -199,7 +197,7 @@ Une fois que vous avez examiné les paramètres et que vous avez cliqué sur **E
 
 Le tableau suivant décrit les événements du processus de gestion de cas qui se déclenchent lorsque les différents types de notifications sont envoyés aux consignataires.
 
-|Type de communication|Déclencher |
+|Type de communication|Déclencheur |
 |:---------|:---------|
 |Avis d’émission|Création initiale de la notification. Vous pouvez également renvoyer manuellement une notification de suspension. |
 |Avis de rééditance|Mise à jour du contenu du portail dans la page **Définir le contenu du portail** dans l’Assistant **Modification de la communication** .|

@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classifieur Microsoft 365 est un outil que vous pouvez entraîner pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et entraîner un classifieur personnalisé et comment le réentraîner pour augmenter la précision.
-ms.openlocfilehash: d3a7639ed31dc42688cffbffb151049659a41660
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173188"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631378"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Un classifieur Microsoft 365 formable est un outil que vous pouvez entraîner pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier l’élément pour l’application des étiquettes de confidentialité Office, des stratégies de conformité des communications et des stratégies d’étiquette de rétention.
+Un classifieur pouvant être entraîné Microsoft 365 est un outil que vous pouvez entraîner pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier l’élément pour l’application des étiquettes de confidentialité Office, des stratégies de conformité des communications et des stratégies d’étiquette de rétention.
 
 La création d’un classifieur entraîné personnalisé implique d’abord de lui donner des échantillons qui sont sélectionnés par l’homme et correspondent positivement à la catégorie. Ensuite, après avoir traité ces éléments, vous testez la capacité des classifieurs à prédire en lui donnant un mélange d’échantillons positifs et négatifs. Cet article vous montre comment créer et entraîner un classifieur personnalisé et comment améliorer les performances des classifieurs et classifieurs préentraînés personnalisés tout au long de leur durée de vie grâce au réentraînement.
 
@@ -60,7 +58,7 @@ Vous aurez besoin de comptes disposant des autorisations suivantes pour utiliser
 
 - Scénario de stratégie d’étiquette de rétention : rôles gestion des enregistrements et gestion de la rétention 
 - Scénario de stratégie d’étiquette de confidentialité : Administrateur de sécurité, Administrateur de conformité, Administrateur des données de conformité
-- Scénario de stratégie de conformité des communications : Administrateur de la gestion des risques internes, administrateur de révision de surveillance 
+- Scénario de stratégie de conformité des communications : Administration de gestion des risques internes, administrateur de révision de surveillance 
 
 > [!IMPORTANT]
 > Par défaut, seul l’utilisateur qui crée un classifieur personnalisé peut entraîner et passer en revue les prédictions effectuées par ce classifieur.
@@ -103,12 +101,12 @@ Une fois que le classifieur pouvant être formé a traité suffisamment d’éch
    > [!IMPORTANT]
    > Assurez-vous que les éléments de votre ensemble de semences sont des exemples **forts** de la catégorie. Le classifieur pouvant être formé génère initialement son modèle en fonction de ce que vous l’amorçez. Le classifieur suppose que tous les échantillons de semences sont des positifs forts et n’a aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
 
-2. Placez le contenu d’amorçage dans un dossier SharePoint Online dédié à la conservation *du contenu de départ uniquement*. Notez le site, la bibliothèque et l’URL du dossier.
+2. Placez le contenu d’amorçage dans un dossier SharePoint Online dédié à *la conservation du contenu de départ uniquement*. Notez le site, la bibliothèque et l’URL du dossier.
 
    > [!TIP]
    > Si vous créez un site et un dossier pour vos données initiales, autorisez au moins une heure l’indexation de cet emplacement avant de créer le classifieur pouvant être formé qui utilisera ces données initiales.
 
-3. Connectez-vous au portail de conformité Microsoft Purview avec accès au rôle d’administrateur de conformité ou d’administrateur de sécurité, puis ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender classification</a> **portalData** > .
+3. Connectez-vous à portail de conformité Microsoft Purview avec l’accès au rôle d’administrateur de conformité ou d’administrateur de la sécurité et ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender données du portail</a> > **classification**.
 
 4. Choisissez l’onglet **Classifieurs pouvant être formés** .
 
@@ -116,7 +114,7 @@ Une fois que le classifieur pouvant être formé a traité suffisamment d’éch
 
 6. Renseignez les valeurs appropriées pour les champs et `Description` les `Name` champs de la catégorie d’éléments que vous souhaitez que ce classifieur formable identifie.
 
-7. Sélectionnez l’URL SharePoint site, bibliothèque et dossier en ligne pour le site de contenu de départ à l’étape 2. Choisissez `Add`.
+7. Sélectionnez le site SharePoint Online, la bibliothèque et l’URL du dossier pour le site de contenu de départ à l’étape 2. Choisissez `Add`.
 
 8. Passez en revue les paramètres et choisissez `Create trainable classifier`.
 
@@ -129,14 +127,14 @@ Une fois que le classifieur pouvant être formé a traité suffisamment d’éch
 
 11. Collectez au moins 200 éléments de contenu de test (10 000 maximum) pour obtenir de meilleurs résultats. Il doit s’agir d’un mélange d’éléments qui sont des positifs forts, des négatifs forts et certains qui sont un peu moins évidents dans leur nature. Consultez les [extensions de nom de fichier analysées par défaut et les types de fichiers analysés dans SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) pour les types de fichiers pris en charge.
 
-12. Placez le contenu du test dans un dossier SharePoint Online dédié à *la conservation du contenu de test uniquement*. Notez l’URL du site, de la bibliothèque et du dossier SharePoint Online.
+12. Placez le contenu du test dans un dossier SharePoint Online dédié à la conservation *du contenu de test uniquement*. Notez le site, la bibliothèque et l’URL du dossier SharePoint Online.
 
     > [!TIP]
     > Si vous créez un site et un dossier pour vos données de test, autorisez au moins une heure l’indexation de cet emplacement avant de créer le classifieur pouvant être formé qui utilisera ces données initiales.
 
 13. Choisissez `Add items to test`.
 
-14. Sélectionnez l’URL SharePoint site, bibliothèque et dossier en ligne pour le site de contenu de test à l’étape 12. Choisissez `Add`.
+14. Sélectionnez le site SharePoint Online, la bibliothèque et l’URL du dossier pour le site de contenu de test à l’étape 12. Choisissez `Add`.
 
 15. Terminez l’Assistant en `Done`choisissant . Le traitement des fichiers de test prend jusqu’à une heure pour votre classifieur pouvant être formé.
 
@@ -159,4 +157,4 @@ Une fois que le classifieur pouvant être formé a traité suffisamment d’éch
 
 20. Publiez le classifieur.
 
-21. Une fois votre classifieur publié, il sera disponible en tant que condition dans [Office l’étiquetage automatique avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), appliquez [automatiquement la stratégie d’étiquette de rétention en fonction d’une condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et de [la conformité des communications](communication-compliance.md).
+21. Une fois votre classifieur publié, il sera disponible en tant que condition dans [l’étiquetage automatique Office avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), puis [appliquez automatiquement la stratégie d’étiquette de rétention en fonction d’une condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et de la [conformité des communications](communication-compliance.md).

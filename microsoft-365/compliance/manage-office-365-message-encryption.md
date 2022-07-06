@@ -19,16 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Une fois que vous avez terminé de configurer Office 365 chiffrement des messages (OME), découvrez comment personnaliser votre déploiement de plusieurs façons.
-ms.openlocfilehash: 2e39f811ec23b2f3b068ef5684fca479850a8744
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b3d7ffe5db987b9fb3bd29682c8e101ffd99946a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014825"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635280"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois que vous avez terminé de configurer Office 365 chiffrement des messages (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer l’activation des codes de passe uniques, l’affichage du bouton **Chiffrer** dans Outlook sur le web, etc. Les tâches décrites dans cet article décrivent comment procéder.
 
@@ -110,15 +108,15 @@ En tant qu’administrateur, vous pouvez gérer l’affichage de ce bouton pour 
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
    ```
 
-## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Activer le déchiffrement côté service des messages électroniques pour iOS utilisateurs de l’application de messagerie
+## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Activer le déchiffrement côté service des messages électroniques pour les utilisateurs d’applications de messagerie iOS
 
-L’application de messagerie iOS ne peut pas déchiffrer les messages protégés par Office 365 Chiffrement des messages. En tant qu’administrateur Microsoft 365, vous pouvez appliquer le déchiffrement côté service pour les messages remis à l’application de messagerie iOS. Lorsque vous choisissez d’utiliser le déchiffrement côté service, le service envoie une copie déchiffrée du message à l’appareil iOS. L’appareil client stocke une copie déchiffrée du message. Le message conserve également des informations sur les droits d’utilisation, même si l’application de messagerie iOS n’applique pas les droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer le message même s’il n’avait pas à l’origine les droits de le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite l’Microsoft 365 serveur de messagerie, comme le transfert du message, le serveur n’autorise pas l’action si l’utilisateur n’a pas initialement le droit d’utilisation de le faire. Toutefois, les utilisateurs finaux peuvent contourner la restriction d’utilisation « Ne pas transférer » en transférant le message à partir d’un autre compte dans l’application de messagerie iOS. Que vous configuriez ou non le déchiffrement côté service du courrier, les pièces jointes à des messages chiffrés et protégés par des droits ne peuvent pas être affichées dans l’application de messagerie iOS.
+L’application de messagerie iOS ne peut pas déchiffrer les messages protégés par Office 365 Chiffrement des messages. En tant qu’administrateur Microsoft 365, vous pouvez appliquer le déchiffrement côté service pour les messages remis à l’application de messagerie iOS. Lorsque vous choisissez d’utiliser le déchiffrement côté service, le service envoie une copie déchiffrée du message à l’appareil iOS. L’appareil client stocke une copie déchiffrée du message. Le message conserve également des informations sur les droits d’utilisation, même si l’application de messagerie iOS n’applique pas les droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer le message même s’il n’avait pas à l’origine les droits de le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, telle que le transfert du message, le serveur n’autorise pas l’action si l’utilisateur n’a pas initialement le droit d’utilisation de le faire. Toutefois, les utilisateurs finaux peuvent contourner la restriction d’utilisation « Ne pas transférer » en transférant le message à partir d’un autre compte au sein de l’application de messagerie iOS. Que vous configuriez ou non le déchiffrement côté service du courrier, les pièces jointes à des messages chiffrés et protégés par des droits ne peuvent pas être affichées dans l’application de messagerie iOS.
 
-Si vous choisissez de ne pas autoriser l’envoi de messages déchiffrés à iOS utilisateurs de l’application de messagerie, les utilisateurs reçoivent un message indiquant qu’ils ne disposent pas des droits nécessaires pour afficher le message. Par défaut, le déchiffrement côté service des messages électroniques n’est pas activé.
+Si vous choisissez de ne pas autoriser l’envoi de messages déchiffrés aux utilisateurs de l’application de messagerie iOS, les utilisateurs reçoivent un message indiquant qu’ils ne disposent pas des droits nécessaires pour afficher le message. Par défaut, le déchiffrement côté service des messages électroniques n’est pas activé.
 
 Pour plus d’informations et pour obtenir une vue de l’expérience client, consultez [Afficher les messages chiffrés sur votre iPhone ou iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf).
 
-### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Pour déterminer si iOS utilisateurs de l’application de messagerie peuvent afficher les messages protégés par Office 365 Chiffrement des messages
+### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Pour déterminer si les utilisateurs d’applications de messagerie iOS peuvent afficher les messages protégés par Office 365 Chiffrement des messages
 
 1. Utilisez un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation et connectez-vous à Exchange Online PowerShell. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -128,7 +126,7 @@ Pour plus d’informations et pour obtenir une vue de l’expérience client, co
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
    ```
 
-   Par exemple, pour configurer le service pour déchiffrer les messages avant qu’ils ne soient envoyés à des applications non mises en lumière comme l’application de messagerie iOS :
+   Par exemple, pour configurer le service afin de déchiffrer les messages avant qu’ils ne soient envoyés à des applications non redessinées comme l’application de messagerie iOS :
 
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
@@ -147,7 +145,7 @@ Pour plus d’informations et pour obtenir une vue de l’expérience client, co
 
 Normalement, lorsque vous utilisez Office 365 chiffrement des messages, les pièces jointes sont automatiquement chiffrées. En tant qu’administrateur, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes que les utilisateurs téléchargent à partir d’un navigateur web.
 
-Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également des informations sur les droits d’utilisation, même si le navigateur n’applique pas les droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe même s’il n’avait pas à l’origine les droits nécessaires. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite l’Microsoft 365 serveur de messagerie, comme le transfert de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’a pas initialement le droit d’utilisation de le faire.
+Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également des informations sur les droits d’utilisation, même si le navigateur n’applique pas les droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe même s’il n’avait pas à l’origine les droits nécessaires. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, telle que le transfert de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’a pas initialement le droit d’utilisation de le faire.
 
 Que vous configuriez ou non le déchiffrement côté service des pièces jointes, les utilisateurs ne peuvent pas afficher de pièces jointes à des messages chiffrés et protégés par des droits dans l’application de messagerie iOS.
 
@@ -213,13 +211,13 @@ Vous pouvez utiliser des modèles de personnalisation personnalisés pour forcer
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Personnaliser l’apparence des messages électroniques et du portail OME
 
-Pour plus d’informations sur la façon dont vous pouvez personnaliser Microsoft Purview Message Encryption pour votre organisation, consultez [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md). Pour pouvoir suivre et révoquer des messages chiffrés, vous devez ajouter votre personnalisation au portail OME.
+Pour plus d’informations sur la façon dont vous pouvez personnaliser Chiffrement de messages Microsoft Purview pour votre organisation, consultez [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md). Pour pouvoir suivre et révoquer des messages chiffrés, vous devez ajouter votre personnalisation au portail OME.
 
-## <a name="disable-microsoft-purview-message-encryption"></a>Désactiver le chiffrement des messages Microsoft Purview
+## <a name="disable-microsoft-purview-message-encryption"></a>Désactiver Chiffrement de messages Microsoft Purview
 
-Nous espérons qu’elle n’y arrivera pas, mais si nécessaire, la désactivation de Microsoft Purview Message Encryption est très simple. Tout d’abord, vous devez supprimer toutes les règles de flux de courrier que vous avez créées qui utilisent Microsoft Purview Message Encryption. Pour plus d’informations sur la suppression des règles de flux de messagerie, consultez [Gérer les règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Ensuite, effectuez ces étapes dans Exchange Online PowerShell.
+Nous espérons qu’elle n’y arrivera pas, mais si nécessaire, la désactivation de Chiffrement de messages Microsoft Purview est très simple. Tout d’abord, vous devez supprimer toutes les règles de flux de courrier que vous avez créées qui utilisent Chiffrement de messages Microsoft Purview. Pour plus d’informations sur la suppression des règles de flux de messagerie, consultez [Gérer les règles de flux de courrier](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Ensuite, effectuez ces étapes dans Exchange Online PowerShell.
 
-### <a name="to-disable-microsoft-purview-message-encryption"></a>Pour désactiver le chiffrement des messages Microsoft Purview
+### <a name="to-disable-microsoft-purview-message-encryption"></a>Pour désactiver Chiffrement de messages Microsoft Purview
 
 1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, connectez-vous à Exchange Online PowerShell. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -229,7 +227,7 @@ Nous espérons qu’elle n’y arrivera pas, mais si nécessaire, la désactivat
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-3. Désactivez Microsoft Purview Message Encryption en exécutant l’applet de commande Set-IRMConfiguration avec le paramètre AzureRMSLicensingEnabled défini sur false :
+3. Désactivez la Chiffrement de messages Microsoft Purview en exécutant l’applet de commande Set-IRMConfiguration avec le paramètre AzureRMSLicensingEnabled défini sur false :
 
    ```powershell
    Set-IRMConfiguration -AzureRMSLicensingEnabled $false

@@ -12,20 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Cisco Webex DataParser 17a-4 pour importer et archiver des données Cisco Webex dans Microsoft 365.
-ms.openlocfilehash: ae5309bd0022474e657694bf7c9be34b71bf8c56
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 988abd7f4cfbe01bc50d775e92109f75c68dcdcc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318621"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633012"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Configurer un connecteur pour archiver les données Cisco Webex
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Utilisez [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) de 17a-4 LLC pour importer et archiver des données de la plateforme Cisco Webex vers les boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Cisco Webex configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Cisco Webex DataParser convertit les données Cisco Webex au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
-Utilisez [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) de 17a-4 LLC pour importer et archiver des données de la plateforme Cisco Webex vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. DataParser inclut un connecteur Cisco Webex configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Cisco Webex DataParser convertit les données Cisco Webex au format d’e-mail, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
-
-Une fois que les données Cisco Webex sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Cisco Webex pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois que les données Cisco Webex sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Cisco Webex pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-cisco-webex-data"></a>Vue d’ensemble de l’archivage des données Cisco Webex
 
@@ -37,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Régulièrement, les éléments Cisco Webex sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
-3. Le connecteur Cisco Webex DataParser que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages à un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Cisco Webex DataParser que vous créez dans le portail de conformité Microsoft Purview se connecte à DataParser et transfère les messages à un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Un sous-dossier du dossier Boîte de réception nommé **Cisco Webex DataParser** est créé dans les boîtes aux lettres utilisateur, et les éléments Cisco Webex sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email* . Chaque élément Cisco Webex contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
@@ -45,15 +43,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte DataParser pour les connecteurs Microsoft. Pour ce faire, contactez [le 17a-4 LLC](https://www.17a-4.com/contact/). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur Cisco Webex DataParser à l’étape 1 (et le termine à l’étape 3) doit se faire attribuer le rôle Administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Cisco Webex DataParser à l’étape 1 (et le termine à l’étape 3) doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données 17a-4 est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données 17a-4 est disponible dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-a-cisco-webex-dataparser-connector"></a>Étape 1 : Configurer un connecteur Cisco Webex DataParser
 
 La première étape consiste à accéder à la page Connecteurs de données dans le portail de conformité et à créer un connecteur 17a-4 pour les données Cisco Webex.
 
-1. Accédez à <https://compliance.microsoft.com> **Data connectorsCisco** >  **Webex DataParser**, puis cliquez dessus.
+1. Accédez aux <https://compliance.microsoft.com> **connecteurs** >  de données **Cisco Webex DataParser**, puis cliquez dessus.
 
 2. Dans la page de description **du produit Cisco Webex DataParser** , cliquez sur **Ajouter un connecteur**.
 
@@ -69,7 +67,7 @@ Collaborez avec le support 17a-4 pour configurer le connecteur Cisco Webex DataP
 
 ## <a name="step-3-map-users"></a>Étape 3 : Mapper les utilisateurs
 
-Le connecteur Cisco Webex DataParser mappe automatiquement les utilisateurs à leurs adresses e-mail Microsoft 365 avant d’importer des données dans Microsoft 365.
+Le connecteur Cisco Webex DataParser mappe automatiquement les utilisateurs à leurs adresses de messagerie Microsoft 365 avant d’importer des données dans Microsoft 365.
 
 ## <a name="step-4-monitor-the-cisco-webex-dataparser-connector"></a>Étape 4 : Surveiller le connecteur Cisco Webex DataParser
 

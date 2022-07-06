@@ -13,16 +13,14 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a84b8e712de53b0abae81a05bbe1b2bef3237beb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014168"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635302"
 ---
 # <a name="manage-information-barriers-policies"></a>Gérer les stratégies d’obstacles à l’information
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une fois que vous avez [défini des stratégies d’obstacles à l’information,](information-barriers-policies.md) vous devrez peut-être apporter des modifications à ces stratégies ou à vos segments d’utilisateur, dans le cadre de la [résolution des problèmes](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) ou de la maintenance régulière.
 
@@ -58,7 +56,7 @@ Utilisez cette procédure pour modifier les attributs utilisés pour segmenter l
 
 3. Modifiez un ou plusieurs comptes d’utilisateur pour inclure des valeurs pour l’attribut que vous avez sélectionné à l’étape précédente. Pour effectuer cette action, utilisez l’une des procédures suivantes :
 
-    - Pour modifier un compte unique, consultez [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Pour modifier un compte unique, consultez [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
     - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), consultez [Configurer les propriétés du compte d’utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 

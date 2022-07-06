@@ -16,19 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Modifiez le registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du portail de conformité Microsoft Purview.
-ms.openlocfilehash: 3f44c30b2fe3459e44f2d1c5a2d372e57774eeb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du portail de conformité Microsoft Purview.
+ms.openlocfilehash: 55a5405d516b0bf3daaca5970a25794b468a5119
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094965"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636180"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous utilisez l’outil eDiscovery Export pour exporter les résultats d’une recherche de contenu dans le portail de conformité Microsoft Purview, l’outil crée et exporte automatiquement deux rapports qui contiennent des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier Results.csv et le fichier Manifest.xml (consultez la section [Forum aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) dans cette rubrique pour obtenir une description détaillée de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de Registre. 
+Lorsque vous utilisez l’outil eDiscovery Export pour exporter les résultats d’une recherche de contenu dans le portail de conformité Microsoft Purview, l’outil crée et exporte automatiquement deux rapports qui contiennent des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier Results.csv et le fichier Manifest.xml (consultez la section [Forum aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) dans cette rubrique pour obtenir une description détaillée de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de Registre. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Créer des paramètres de Registre pour désactiver les rapports d’exportation
 
@@ -40,7 +38,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
     
     - **Results.csv**
     
-      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier de .reg; par exemple, DisableResultsCsv.reg.
+      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier .reg ; par exemple, DisableResultsCsv.reg.
     
       ```text
       Windows Registry Editor Version 5.00
@@ -49,14 +47,14 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
 
     - **Manifest.xml**
     
-      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier .reg; par exemple, DisableManifestXml.reg.
+      Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier .reg ; par exemple, DisableManifestXml.reg.
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. Dans Windows’Explorateur, cliquez ou double-cliquez sur le fichier .reg que vous avez créé dans les étapes précédentes.
+3. Dans l’Explorateur Windows, cliquez ou double-cliquez sur le fichier .reg que vous avez créé dans les étapes précédentes.
     
 4. Dans la fenêtre Access Control utilisateur, cliquez sur **Oui** pour permettre à l’Éditeur du Registre d’apporter la modification. 
     
@@ -74,7 +72,7 @@ Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les
     
     - **Results.csv**
     
-        Ouvrez le fichier DisableResultsCsv.reg dans Bloc-notes, remplacez la valeur `False` `True`par , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il ressemble à ceci :
+        Ouvrez le fichier DisableResultsCsv.reg dans le Bloc-notes, remplacez la valeur  `False`  `True`par , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il ressemble à ceci :
     
         ```text
         Windows Registry Editor Version 5.00
@@ -83,14 +81,14 @@ Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les
 
     - **Manifest.xml**
     
-        Ouvrez le fichier DisableManifestXml.reg dans Bloc-notes, remplacez la valeur `False` `True`par , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il ressemble à ceci :
+        Ouvrez le fichier DisableManifestXml.reg dans le Bloc-notes, remplacez la valeur  `False`  `True`par , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il ressemble à ceci :
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
 
-3. Dans Windows’Explorateur, cliquez ou double-cliquez sur un fichier .reg que vous avez modifié à l’étape précédente.
+3. Dans l’Explorateur Windows, cliquez ou double-cliquez sur un fichier .reg que vous avez modifié à l’étape précédente.
     
 4. Dans la fenêtre Access Control utilisateur, cliquez sur **Oui** pour permettre à l’Éditeur du Registre d’apporter la modification. 
     

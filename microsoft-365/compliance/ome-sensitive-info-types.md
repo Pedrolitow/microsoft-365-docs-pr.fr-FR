@@ -20,18 +20,16 @@ description: Découvrez comment créer une stratégie de type d’informations s
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 908ec1cf55d8bee06ce9b3b6ccc8eb699d2ba291
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0974c30882177eb9fc46c2a2fcf65bc2edb43078
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012282"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633430"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement des messages
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous pouvez utiliser des règles de flux de messagerie Exchange ou la protection contre la perte de données (DLP) Microsoft Purview pour créer une stratégie de type d’informations sensibles avec Office 365 Chiffrement des messages. Pour créer une règle de flux de messagerie Exchange, vous pouvez utiliser le centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange (EAC)</a> ou PowerShell.
+Vous pouvez utiliser des règles de flux de messagerie Exchange ou la protection contre la perte de données (DLP) Microsoft Purview pour créer une stratégie de type d’informations sensibles avec Office 365 Chiffrement des messages. Pour créer une règle de flux de messagerie Exchange, vous pouvez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange (EAC)</a> ou PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans le CAE
 
@@ -43,7 +41,7 @@ Utilisez un compte professionnel ou scolaire disposant d’autorisations d’adm
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Exemple de règle de flux de messagerie créée avec PowerShell
 
-Exécutez les commandes suivantes dans PowerShell pour créer une règle de flux de courrier Exchange qui chiffre automatiquement les e-mails envoyés en dehors de votre organisation avec l’option chiffrer uniquement si les e-mails ou leurs pièces jointes contiennent les types d’informations sensibles suivants :
+Exécutez les commandes suivantes dans PowerShell pour créer une règle de flux de messagerie Exchange qui chiffre automatiquement les e-mails envoyés en dehors de votre organisation avec l’option chiffrer uniquement si les e-mails ou leurs pièces jointes contiennent les types d’informations sensibles suivants :
 
 - Numéro de routage ABA
 - Numéro de carte de crédit
@@ -69,7 +67,7 @@ Une fois que Microsoft a chiffré un message, les destinataires ont un accès il
 Vous souhaiterez peut-être mettre à jour la documentation et le matériel de formation des utilisateurs finaux applicables pour préparer les membres de votre organisation à cette modification. Partagez ces ressources Office 365 Message Encryption avec vos utilisateurs selon les besoins :
 
 - [Envoyer, afficher et répondre à des messages chiffrés dans Outlook pour PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [vidéo Microsoft 365 Essentials : Chiffrement des messages](https://youtu.be/CQR0cG_iEUc)
+- [Vidéo Microsoft 365 Essentials : Chiffrement des messages](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Afficher ces modifications dans le journal d’audit
 
@@ -81,4 +79,4 @@ Microsoft 365 audite cette activité et la met à la disposition des administrat
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Pour désactiver ou personnaliser la stratégie de types d’informations sensibles
 
-Une fois que vous avez créé la règle de flux de messagerie Exchange, vous pouvez [désactiver ou modifier la règle](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) en accédant aux **règles** de **flux** >  de courrier dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> et en désactivant la règle « *Chiffrer les e-mails sensibles sortants (règle out of box)* ».
+Une fois que vous avez créé la règle de flux de messagerie Exchange, vous pouvez [désactiver ou modifier la règle](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) en accédant aux **règles** de **flux** >  de messagerie dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> et en désactivant la règle « *Chiffrer les e-mails sensibles sortants (règle out of box)* ».

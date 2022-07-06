@@ -16,22 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Une fois que vous avez créé et itéré sur un brouillon de collection, vous pouvez le valider dans un ensemble de révisions. Lorsque vous validez un brouillon de collection, les éléments collectés sont ajoutés à l’ensemble de révisions dans le cas. Une fois les éléments collectés dans l’ensemble de révisions, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: c798981d485b6128e76ea3f0c0fbf189b4f9634a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e635489383026df0d8097a300eb49178dcffb6b5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090470"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632704"
 ---
-# <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Valider un brouillon de collection dans un ensemble de révisions dans eDiscovery (Premium)
+# <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Valider un brouillon de collection dans un jeu de révision dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous êtes satisfait des éléments que vous avez collectés dans une collection brouillon et que vous êtes prêt à les analyser, les étiqueter et les examiner, vous pouvez ajouter une collection à un ensemble de révisions dans le cas présent. Lorsque vous validez un brouillon de collection dans un ensemble de révisions, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 vers un jeu de révision. Un ensemble de révisions est un emplacement stockage Azure sécurisé fourni par Microsoft dans le cloud Microsoft.
+Lorsque vous êtes satisfait des éléments que vous avez collectés dans une collection brouillon et que vous êtes prêt à les analyser, les étiqueter et les examiner, vous pouvez ajouter une collection à un ensemble de révisions dans le cas présent. Lorsque vous validez un brouillon de collection dans un jeu de révision, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 vers un ensemble de révisions. Un ensemble de révisions est un emplacement de stockage Azure sécurisé fourni par Microsoft dans le cloud Microsoft.
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Valider une collection au brouillon vers un ensemble de révisions
 
-1. Dans le portail de conformité Microsoft Purview, ouvrez le cas microsoft Purview eDiscovery (Premium), puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
+1. Dans le portail de conformité Microsoft Purview, ouvrez le cas Microsoft Purview eDiscovery (Premium), puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
 
    ![Liste des collections dans un cas.](../media/CommitDraftCollections1.png)
 
@@ -40,7 +38,7 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans une co
 
 2. Dans la page **Collections** , sélectionnez le brouillon de collection que vous souhaitez valider dans un ensemble de révisions.
 
-3. En bas de la page de menu volant, sélectionnez **la** **collection ActionsEdit** > .
+3. En bas de la page de menu volant, sélectionnez La **collection Édition** **d’actions** > .
 
 4. Dans l’Assistant Modification de collection, cliquez sur **Suivant** jusqu’à ce que la page **Enregistrer le brouillon ou collecter** s’affiche.
 
@@ -54,16 +52,16 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans une co
 
       ![Configurez des paramètres de collecte supplémentaires.](../media/AeDAdditionalCollectionSettings.png).
 
-       a. **Teams et Yammer messages** : sélectionnez cette option pour ajouter des threads de conversation à la collection qui incluent les éléments de conversation renvoyés par la requête de recherche dans la collection. Cela signifie que la conversation de conversation qui contient des éléments qui correspondent aux critères de recherche est reconstruite. Cela vous permet de passer en revue les éléments de conversation dans le contexte de la conversation aller-retour. Pour plus d’informations, consultez [Threading conversation dans eDiscovery (Premium).](conversation-review-sets.md)
+       a. **Messages Teams et Yammer** : sélectionnez cette option pour ajouter des threads de conversation à la collection qui incluent les éléments de conversation retournés par la requête de recherche dans la collection. Cela signifie que la conversation de conversation qui contient des éléments qui correspondent aux critères de recherche est reconstruite. Cela vous permet de passer en revue les éléments de conversation dans le contexte de la conversation aller-retour. Pour plus d’informations, consultez [Threading de conversation dans eDiscovery (Premium).](conversation-review-sets.md)
 
        b. **Pièces jointes cloud** : sélectionnez cette option pour inclure des pièces jointes modernes ou des fichiers liés lorsque les résultats de la collection sont ajoutés au jeu de révision. Cela signifie que le fichier cible d’une pièce jointe moderne ou d’un fichier lié est ajouté au jeu de révision.
 
        > [!NOTE]
-       > Les deux options permettant de collecter les Teams contextuels et les messages Yammer et les pièces jointes cloud sont sélectionnées par défaut (et grisées) pour les cas qui ont été créés à l’aide du nouveau format de cas. Pour plus d’informations, consultez [Utiliser le nouveau format de cas](advanced-ediscovery-new-case-format.md).
+       > Les deux options permettant de collecter des messages Teams et Yammer contextuels et des pièces jointes cloud sont sélectionnées par défaut (et grisées) pour les cas qui ont été créés à l’aide du nouveau format de cas. Pour plus d’informations, consultez [Utiliser le nouveau format de cas](advanced-ediscovery-new-case-format.md).
 
        c. **Éléments partiellement indexés** : sélectionnez cette option pour ajouter des éléments partiellement indexés à partir de sources de données supplémentaires au jeu de révision. Si la collection a recherché des sources de données supplémentaires (comme spécifié dans la page **Emplacements supplémentaires** dans l’Assistant Collections), il peut y avoir des éléments partiellement indexés à partir de ces emplacements que vous souhaitez ajouter au jeu de révision. Les sources de données custodiales et non-custodiales n’ont généralement pas d’éléments partiellement indexés. Cela est dû au fait que le processus d’indexation avancé réindexe les éléments lorsque des sources de données custodiales et non liées à la garde sont ajoutées à un cas. En outre, l’ajout d’éléments partiellement indexés augmente le nombre d’éléments ajoutés au jeu de révision. <p> Une fois les éléments partiellement indexés ajoutés au jeu de révision, vous pouvez appliquer un filtre pour afficher spécifiquement ces éléments. Pour plus d’informations, consultez [Filtrer les éléments partiellement indexés](review-set-search.md#filter-partially-indexed-items)
 
-      d. **SharePoint versions** : sélectionnez cette option pour activer la collecte de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés à l’ensemble de révision. Une fois les versions de document ajoutées au jeu de révision, 
+      d. **Versions de SharePoint** : sélectionnez cette option pour activer la collection de toutes les versions d’un document SharePoint en fonction des limites de version et des paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés à l’ensemble de révision. Une fois les versions de document ajoutées au jeu de révision, 
 
    4. Configurez les paramètres pour définir l’échelle de la collection à ajouter au jeu de révision :
 
@@ -87,9 +85,9 @@ Lorsque vous validez un brouillon de collection dans un ensemble de révisions, 
 
 - La requête de recherche de collection est réexécutée. Cela signifie que les résultats de recherche réels copiés dans l’ensemble de révisions peuvent être différents des résultats estimés qui ont été retournés lors de la dernière exécution de la recherche de collection.
 
-- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans le service en direct et copiés vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans le service en direct et copiés vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
-- Les SharePoint chiffrés et les documents OneDrive et les fichiers chiffrés joints aux messages électroniques retournés dans les résultats de recherche sont déchiffrés lorsque vous validez la collection dans un ensemble de révisions. Vous pouvez examiner et interroger les fichiers déchiffrés dans le jeu de révisions. Pour plus d’informations, consultez [Déchiffrement dans Microsoft 365 outils eDiscovery](ediscovery-decryption.md).
+- Les documents SharePoint et OneDrive chiffrés et les fichiers chiffrés joints aux messages électroniques retournés dans les résultats de la recherche sont déchiffrés lorsque vous validez la collection dans un ensemble de révisions. Vous pouvez examiner et interroger les fichiers déchiffrés dans le jeu de révisions. Pour plus d’informations, consultez [Déchiffrement dans les outils eDiscovery de Microsoft 365](ediscovery-decryption.md).
 
 - La fonctionnalité de reconnaissance optique de caractères (OCR) extrait le texte des images et inclut le texte de l’image avec le contenu ajouté à un jeu de révision. Pour plus d’informations, consultez la section [Reconnaissance optique des caractères](#optical-character-recognition) de cet article.
 
@@ -97,6 +95,6 @@ Lorsque vous validez un brouillon de collection dans un ensemble de révisions, 
 
 ## <a name="optical-character-recognition"></a>Reconnaissance optique des caractères
 
-Lorsque vous validez une collection dans un jeu de révision, la fonctionnalité de reconnaissance optique de caractères (OCR) dans eDiscovery (Premium) extrait automatiquement le texte des images et inclut le texte de l’image avec le contenu ajouté à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. afin de l’examiner et de l’analyser de manière plus approfondie. La reconnaissance optique des caractères est prise en charge pour les fichiers isolés, les pièces jointes et les images incorporées. Pour obtenir la liste des formats de fichier image pris en charge pour OCR, consultez [Types de fichiers pris en charge dans eDiscovery (Premium).](supported-filetypes-ediscovery20.md#image)
+Lorsque vous validez une collection dans un jeu de révision, la fonctionnalité de reconnaissance optique de caractères (OCR) dans eDiscovery (Premium) extrait automatiquement le texte des images et inclut le texte de l’image avec le contenu ajouté à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. afin de l’examiner et de l’analyser de manière plus approfondie. La reconnaissance optique des caractères est prise en charge pour les fichiers isolés, les pièces jointes et les images incorporées. Pour obtenir une liste des formats de fichiers image pris en charge par l' OCR, consultez la section Types de fichiers [pris en charge dans eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
 
 Vous devez activer la fonctionnalité OCR pour chaque cas que vous créez dans eDiscovery (Premium). Pour plus d’informations, consultez [Configurer les paramètres de recherche et d’analytique](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

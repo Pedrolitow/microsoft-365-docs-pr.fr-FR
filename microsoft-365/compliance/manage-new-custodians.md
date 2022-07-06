@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des consignats dans un cas eDiscovery (Premium).
+description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des consignatateurs dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ea05e2f0b19c23b236f7b64eb3a425fdb29cc39
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: baffcb9d601d95d4be78cf47fcbc3037daff86c8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077954"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634025"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Gérer les consignats dans un cas eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La page **Consignations** de l’onglet **Sources de données** dans un cas de découverte électronique Microsoft Purview (Premium) contient une liste de tous les consignatateurs qui ont été ajoutés au cas. Une fois que vous avez ajouté des consignatateurs à un cas, les détails relatifs à chaque consignateur sont automatiquement collectés à partir de Azure Active Directory et sont visibles dans eDiscovery (Premium).
+La page **Gardiens** de l’onglet **Sources de données** d’un cas Microsoft Purview eDiscovery (Premium) contient une liste de tous les consignatateurs qui ont été ajoutés au cas. Une fois que vous avez ajouté des consignatateurs à un cas, les détails sur chaque consignateur sont automatiquement collectés à partir d’Azure Active Directory et sont consultables dans eDiscovery (Premium).
 
 ## <a name="view-custodian-details"></a>Afficher les détails du consignatateur
 
@@ -58,7 +56,7 @@ Pour afficher les détails d’un consigna ateur, cliquez sur celui-ci dans la l
 
   ![Emplacements des données du consignateur et informations de conservation.](../media/CustodianHoldDetails.PNG)
 
-  - **Emplacements de garde**. Affiche le nombre et le type de sources de données (boîtes aux lettres, sites et Teams) associées au consignat et faisant partie du cas.
+  - **Emplacements de garde**. Affiche le nombre et le type de sources de données (boîtes aux lettres, sites et Teams) associées au consignateur et faisant partie du cas.
 
     - Chaque emplacement de données affiche son état de conservation. Valeurs possibles pour l’état de conservation : **En attente**, **Non en attente** et **En cours**.
 
@@ -70,7 +68,7 @@ Pour afficher les détails d’un consigna ateur, cliquez sur celui-ci dans la l
 
 Pour mettre à jour les sources de données associées à un consignateur :
 
-1. Accédez à **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
+1. Accédez à  **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
   
 2. Cliquez sur l’onglet **Sources de données** .
   
@@ -78,26 +76,26 @@ Pour mettre à jour les sources de données associées à un consignateur :
 
     ![Modifier les sources de données.](../media/EditCustodianDataSource.PNG)
   
-4. Pour ajouter ou supprimer la boîte aux lettres principale et OneDrive compte du consignateur :
+4. Pour ajouter ou supprimer la boîte aux lettres principale et le compte OneDrive pour le consignateur :
 
     - Développez le consignateur pour afficher les emplacements de données principaux qui ont été précédemment associés au consignateur.
 
-    - Cliquez sur **Modifier** en regard de boîte **aux lettres** ou **OneDrive** pour ajouter la boîte aux lettres ou l’emplacement OneDrive du consignateur.
+    - Cliquez sur **Modifier** en regard de Boîte **aux lettres** ou **OneDrive** pour ajouter la boîte aux lettres ou l’emplacement OneDrive du consignateur.
 
-    - Sélectionnez **Effacer** en regard de la **boîte aux lettres** ou **OneDrive** pour supprimer la boîte aux lettres ou le compte OneDrive du consignateur d’être associé en tant qu’emplacement de données pour ce consignateur.
+    - Sélectionnez **Effacer** en regard de boîte **aux lettres** ou **OneDrive** pour supprimer la boîte aux lettres du consignateur ou le compte OneDrive d’être associé en tant qu’emplacement de données pour ce consignateur.
 
-5. Pour ajouter ou supprimer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à un consignateur spécifique, cliquez sur **Modifier** en regard du service pour ajouter un emplacement de données.
+5. Pour ajouter ou supprimer d’autres boîtes aux lettres, sites, équipes ou groupes Yammer à un consignaateur spécifique, cliquez sur **Modifier** en regard du service pour ajouter un emplacement de données.
 
    - **Exchange** : permet d’associer d’autres boîtes aux lettres au consignateur. Tapez dans la zone de recherche le nom ou l’alias (au moins trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au consignateur, puis cliquez sur **Ajouter**.
 
-   - **SharePoint** : permet d’associer des sites SharePoint au consignateur. Sélectionnez un site dans la liste ou recherchez un site en tapant une URL dans la zone de recherche. Sélectionnez les sites à affecter au consignateur, puis cliquez sur **Ajouter**.
+   - **SharePoint** : permet d’associer des sites SharePoint au consignaateur. Sélectionnez un site dans la liste ou recherchez un site en tapant une URL dans la zone de recherche. Sélectionnez les sites à affecter au consignateur, puis cliquez sur **Ajouter**.
 
-   - **Teams** : permet d’attribuer le Microsoft Teams dont le consignateur est actuellement membre. Sélectionnez les équipes à affecter au consignateur, puis cliquez sur **Ajouter**. Une fois que vous avez ajouté une équipe, le système identifie et localise automatiquement la boîte aux lettres de site et de groupe SharePoint associée à cette équipe et les affecte au consignateur.
+   - **Teams** : permet d’affecter à Microsoft Teams dont le gardien est actuellement membre. Sélectionnez les équipes à affecter au consignateur, puis cliquez sur **Ajouter**. Une fois que vous avez ajouté une équipe, le système identifie et localise automatiquement le site SharePoint et la boîte aux lettres de groupe associé à cette équipe et les affecte au consignateur.
 
-   - **Yammer** : permet d’affecter les groupes Yammer dont le dépositaire est actuellement membre. Sélectionnez les groupes à affecter au consignateur, puis cliquez sur **Ajouter**. Une fois que vous avez ajouté une équipe, le système identifie et localise automatiquement la boîte aux lettres de site et de groupe SharePoint associée à ce groupe et les affecte au consignateur.
+   - **Yammer** : permet d’affecter les groupes Yammer dont le consignateur est actuellement membre. Sélectionnez les groupes à affecter au consignateur, puis cliquez sur **Ajouter**. Une fois que vous avez ajouté une équipe, le système identifie et localise automatiquement le site SharePoint et la boîte aux lettres de groupe associés à ce groupe, puis les affecte au consignateur.
 
    > [!NOTE]
-   > Vous pouvez utiliser les sélecteurs **d’emplacements Exchange** et **SharePoint** pour associer n’importe quelle boîte aux lettres ou site de votre organisation, y compris les équipes ou les groupes Yammer dont un gardien n’est pas membre, à un consignateur. Pour ce faire, vous devez ajouter la boîte aux lettres et le site associés à chaque équipe ou Yammer groupe.
+   > Vous pouvez utiliser les sélecteurs d’emplacement **Exchange** et **SharePoint** pour associer n’importe quelle boîte aux lettres ou site de votre organisation, y compris les équipes ou les groupes Yammer dont un gardien n’est pas membre, à un gardien. Pour ce faire, vous devez ajouter la boîte aux lettres et le site associés à chaque équipe ou groupe Yammer.
 
 6. Après avoir modifié les emplacements de données du consignateur, cliquez sur **Suivant** pour accéder à la page **Paramètres de** conservation.  
 
@@ -111,7 +109,7 @@ Lorsqu’un consignateur est ajouté à un cas, les données situées dans les s
 
 Pour déclencher le processus de réindexation pour traiter les éléments partiellement indexés :
 
-1. Accédez à **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
+1. Accédez à  **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
 
 2. Cliquez sur l’onglet **Sources** .
 
@@ -123,7 +121,7 @@ Pour déclencher le processus de réindexation pour traiter les éléments parti
 
 La réindexation des données des consignats est un processus de longue durée ; le travail correspondant qui est créé est nommé **Réindexation des données de consignation**. Vous pouvez suivre la progression de l’onglet **Travaux** ou de l’onglet **Consignations** en surveillant l’état dans la colonne **d’état du travail d’indexation** .
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -137,7 +135,7 @@ Si vous libérez un consignaculateur après la publication d’un avis de mise e
 
 Pour libérer un consigna ateur :
 
-1. Accédez à **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
+1. Accédez à  **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
 
 2. Cliquez sur l’onglet **Sources** .
 

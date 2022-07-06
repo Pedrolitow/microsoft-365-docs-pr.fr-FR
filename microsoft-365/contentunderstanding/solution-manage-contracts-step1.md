@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’une solution Microsoft 365.
-ms.openlocfilehash: 7d2874260ce7a307aa42c67ba571104ed4c4da87
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 2d9967cc432cb4d75bebbc67b7b9b0a812baa031
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368086"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631978"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
 
@@ -65,15 +65,15 @@ La première étape consiste à créer votre modèle de contrat.
 
 Vous devez ajouter au moins cinq exemples de fichiers qui sont des documents de contrat, et un exemple de fichier qui n’est pas un document de contrat (par exemple, une instruction de travail). 
 
-1. Dans la page **Modèles > Contrat**, sous **Exemples de fichiers** **Key actionsAdd** > , sélectionnez **Ajouter des fichiers**.
+1. Dans la page **Modèles > Contrat**, sous **Actions** >  clés **Ajouter des exemples de fichiers**, sélectionnez **Ajouter des fichiers**.
 
    ![Capture d’écran montrant la page Contrats avec l’option Ajouter des exemples de fichiers mise en évidence.](../media/content-understanding/key-actions-add-example-files.png)
 
-2. Dans la page **Sélectionner des exemples de fichiers pour votre** modèle, ouvrez le dossier Contrat, sélectionnez les fichiers que vous souhaitez utiliser, puis sélectionnez **Ajouter**. Si vous n’avez pas d’exemples de fichiers, sélectionnez **Télécharger** pour les ajouter.
+2. Dans la page **Sélectionner des exemples de fichiers pour votre** modèle, ouvrez le dossier Contrat, sélectionnez les fichiers que vous souhaitez utiliser, puis sélectionnez **Ajouter**. Si vous n’avez pas d’exemples de fichiers, **sélectionnez Charger** pour les ajouter.
 
 #### <a name="label-the-files-as-positive-or-negative-examples"></a>Étiqueter les fichiers en tant qu’exemples positifs ou négatifs
 
-1. Dans la page **Modèles > Contrat**, sous **Fichiers Key actionsClassify** >  **et exécuter l’entraînement**, sélectionnez **Former le classifieur**.
+1. Dans la page **Modèles > Contrat**, sous **Actions** >  clés **Classifier les fichiers et exécuter l’entraînement**, sélectionnez **Former le classifieur**.
 
    ![Capture d’écran montrant la page Contrats avec l’option Classifier les fichiers et exécuter l’entraînement mise en évidence.](../media/content-understanding/key-actions-classify-files.png)
 
@@ -117,7 +117,7 @@ Vous pouvez tester votre modèle Contract sur des exemples de fichiers qu’il n
 
 ### <a name="create-and-train-an-extractor"></a>Créer et entraîner un extracteur
 
-1. Dans la page **Modèles > Contrat**, sous **Actions** >  **clésCréer et entraîner des extracteurs**, **sélectionnez Créer un extracteur**.
+1. Dans la page **Modèles > Contrat**, sous **Actions** >  clés **Créer et entraîner des extracteurs**, **sélectionnez Créer un extracteur**.
 
    ![Capture d’écran montrant la page Contrats avec l’option Créer et entraîner des extracteurs mise en évidence.](../media/content-understanding/key-actions-create-extractors.png)
 
@@ -149,7 +149,7 @@ Vous pouvez créer une explication qui fournit un indicateur sur le format d’e
 - 14 octobre 2019
 - Lundi 14 octobre 2019
 
-Pour identifier la *date de début du contrat*, vous pouvez créer une explication de modèle.
+Pour identifier la *date de début du contrat*, vous pouvez créer une explication.
 
 1. Dans la section **Explications** , sélectionnez **Nouveau** , puis **Vide**.
 
@@ -157,7 +157,7 @@ Pour identifier la *date de début du contrat*, vous pouvez créer une explicati
 
     a. Dans le champ **Nom** , tapez le nom de l’explication (par exemple *, Date*).
 
-    b. Dans le champ **Type d’explication** , sélectionnez **La liste des modèles**.
+    b. Dans le champ **Type d’explication** , sélectionnez **Liste d’expressions**.
 
     c. Dans le champ **Valeur** , indiquez la variation de date tel qu’ils apparaissent dans les exemples de fichiers. Par exemple, si certaines dates apparaissent au format 0/00/0000, vous devez entrer les variations qui apparaissent dans vos documents, par exemple :
 
@@ -182,11 +182,11 @@ Vous pouvez tester votre modèle Contract sur des exemples de fichiers qu’il n
 
 Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
-1. Dans la page **Modèles > Contrat**, sous **Modèle Key ActionsApply** >  **pour les bibliothèques**, **sélectionnez Appliquer le modèle**.
+1. Dans la page **Modèles > Contrat**, sous **Actions** >  clés **Appliquer le modèle aux bibliothèques**, **sélectionnez Appliquer le modèle**.
 
    ![Capture d’écran montrant la page Contrats avec l’option Appliquer le modèle aux bibliothèques mise en évidence.](../media/content-understanding/key-actions-apply-model.png)
 
-2. Dans le panneau **Ajouter un contrat**, sélectionnez le site SharePoint qui contient la bibliothèque de documents à laquelle vous souhaitez appliquer le modèle. Si le site n’apparaît pas dans la liste, utilisez la zone de recherche pour le trouver. Sélectionnez **Ajouter**.
+2. Dans le panneau **Ajouter un contrat** , sélectionnez le site SharePoint qui contient la bibliothèque de documents à laquelle vous souhaitez appliquer le modèle. Si le site n’apparaît pas dans la liste, utilisez la zone de recherche pour le trouver. Sélectionnez **Ajouter**.
 
     > [!NOTE]
     > Vous devez disposer d’autorisations *Gérer la liste* ou de droits *Modifier* sur la bibliothèque de documents à laquelle vous appliquez le modèle.
@@ -197,11 +197,11 @@ Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
 5. Sélectionnez **Ajouter** pour appliquer le modèle à la bibliothèque.
 
-6. Dans la page **Modèles > Contrat**, dans la section **Bibliothèques avec ce modèle**, vous verrez l’URL du site SharePoint répertorié.
+6. Dans la page **Modèles > Contrat** , dans la section **Bibliothèques avec ce modèle** , vous verrez l’URL du site SharePoint répertoriée.
 
     ![Capture d’écran de la page d’accueil contrat montrant les bibliothèques avec cette section de modèle.](../media/content-understanding/contract-libraries-with-this-model.png)
 
-7. Sous **Paramètres** >  **Paramètreslibrary** :
+7. Sous **Paramètres des paramètres** > **de la bibliothèque** :
 
    - Ajoutez une colonne nommée **État** et **sélectionnez Choix** comme type de colonne.
    - Appliquez les valeurs **In review**, **Approved** et **Rejected** .

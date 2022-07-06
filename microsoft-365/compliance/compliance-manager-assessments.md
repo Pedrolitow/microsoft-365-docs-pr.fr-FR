@@ -1,5 +1,5 @@
 ---
-title: Créer et gérer des évaluations dans Microsoft Purview Gestionnaire de conformité
+title: Créer et gérer des évaluations dans le Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,17 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Créez des évaluations dans Microsoft Purview Gestionnaire de conformité pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
-ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Créez des évaluations dans le Gestionnaire de conformité Microsoft Purview pour vous aider à répondre aux exigences des réglementations et des certifications qui sont importantes pour votre organisation.
+ms.openlocfilehash: 6eeb77e1e5d6adea3489764626910e63ce443a2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115738"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633562"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez comment personnaliser le Gestionnaire de conformité pour votre organisation en créant et en gérant **des évaluations**. Cet article vous guide tout au long de la création d’évaluations, de leur organisation en **groupes**, de l’utilisation **des contrôles**, de l’acceptation des **mises à jour** et de l’exportation des **rapports** d’évaluation.
 
@@ -183,7 +181,7 @@ Découvrez [comment les contrôles et les actions d’amélioration sont suivis 
 
 Lorsqu’une mise à jour est disponible pour une évaluation, une notification s’affiche et vous avez la possibilité d’accepter la mise à jour ou de la différer ultérieurement.
 
-Des mises à jour sont disponibles pour les évaluations basées sur des modèles Microsoft, tels que ceux conçus pour une utilisation avec Microsoft 365. Si votre organisation utilise des modèles universels pour évaluer d’autres produits, l’héritage peut ne pas être pris en charge. Pour plus d’informations, consultez [Étendre les modèles d’évaluation](compliance-manager-templates-extend.md).
+Mises à jour sont disponibles pour les évaluations basées sur des modèles Microsoft, tels que ceux conçus pour une utilisation avec Microsoft 365. Si votre organisation utilise des modèles universels pour évaluer d’autres produits, l’héritage peut ne pas être pris en charge. Pour plus d’informations, consultez [Étendre les modèles d’évaluation](compliance-manager-templates-extend.md).
 
 ### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
@@ -194,7 +192,7 @@ Si Microsoft met à jour un modèle de Gestionnaire de conformité que vous avez
 Les évaluations personnalisées que vous créez ne reçoivent aucune mise à jour de modèle de Microsoft. Les évaluations personnalisées peuvent recevoir des mises à jour des actions d’amélioration, mais toutes les mises à jour Microsoft pour contrôler le mappage entre les évaluations et les actions d’amélioration ne s’appliquent pas aux modèles personnalisés.
 
 > [!NOTE]
-> Les mises à jour des évaluations s’appliquent uniquement au niveau du groupe. Si vous avez deux évaluations générées à partir du même modèle qui existent dans deux groupes différents, chaque évaluation aura une notification de mise à jour en attente, et vous devrez accepter la mise à jour de chaque évaluation de son groupe respectif individuellement.
+> Mises à jour aux évaluations s’appliquent uniquement au niveau du groupe. Si vous avez deux évaluations générées à partir du même modèle qui existent dans deux groupes différents, chaque évaluation aura une notification de mise à jour en attente, et vous devrez accepter la mise à jour de chaque évaluation de son groupe respectif individuellement.
 
 #### <a name="where-youll-see-assessment-update-notifications"></a>Où vous verrez les notifications de mise à jour d’évaluation
 
@@ -230,7 +228,7 @@ Si vous êtes en train d’effectuer une évaluation, vous souhaiterez peut-êtr
 
 ## <a name="export-an-assessment-report"></a>Exporter un rapport d’évaluation
 
-Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes en matière de conformité au sein de votre organisation ou pour les auditeurs et les régulateurs externes. Dans la page des détails de votre évaluation, sélectionnez le bouton **Générer un rapport** en haut de la page, ce qui crée un fichier Excel que vous pouvez enregistrer et partager.
+Vous pouvez exporter une évaluation vers un fichier Excel pour les parties prenantes de conformité de votre organisation ou pour les auditeurs externes et les régulateurs. Dans la page des détails de votre évaluation, sélectionnez le bouton **Générer un rapport** en haut de la page, ce qui crée un fichier Excel que vous pouvez enregistrer et partager.
 
 Le rapport est un instantané de l’évaluation à la date et à l’heure de l’exportation. Il contient les détails des contrôles gérés par vous et Microsoft, y compris l’état de l’implémentation, la date de test et les résultats des tests.
 

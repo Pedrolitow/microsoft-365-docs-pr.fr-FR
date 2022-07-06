@@ -10,30 +10,22 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: ''
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos dans votre campagne avec Microsoft Teams et SharePoint. Microsoft 365 Business Premium inclut Teams qui est un excellent moyen de partager des fichiers et des vidéos en toute sécurité.
-ms.openlocfilehash: 666b9b6bfaeecb39445f1c9b9056ca87d0e9a20c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: a09edb2ae1865bbc9e574bc8c28dd6388f442a98
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489533"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634872"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Partager des fichiers et des vidéos dans un environnement sécurisé
-
 
 Il est également important de veiller à ce que tous les membres de l’organisation contrôlent qui peut voir et modifier des fichiers, et ce qu’ils soient stockés dans un emplacement sécurisé avec les autorisations appropriées appliquées. Les utilisateurs peuvent utiliser Microsoft 365 Teams Business Premium pour stocker des fichiers, puis partager les fichiers à l’intérieur ou à l’extérieur de l’entreprise, du cabinet ou de la campagne. Vous pouvez également envoyer un lien SharePoint. L’envoi d’un lien plutôt que d’une pièce jointe signifie que vous savez qui voit et modifie les fichiers, et qu’ils ne peuvent pas être affichés ou modifiés sans autorisation.
 

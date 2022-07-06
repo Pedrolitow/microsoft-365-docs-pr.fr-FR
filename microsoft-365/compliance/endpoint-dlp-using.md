@@ -18,16 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les emplacements de protection contre la perte de données de point de terminaison.
-ms.openlocfilehash: 5ca57dfad74dea26e16fa415eead8a0a85eb9673
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 9107759e137d7b8dd86253f9c6567b76686d2518
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952795"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632374"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]  
 
 Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et la manière dont elles se trouvent dans les stratégies DLP, nous avons rassemblé certains scénarios que vous pouvez suivre.
 
@@ -259,7 +257,7 @@ Cette configuration vous permet de garantir la sécurité de vos données tout e
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Intégrer les appareils Windows 10 et Windows 11 dans une vue d’ensemble de Microsoft Purview](/microsoft-365/compliance/device-onboarding-overview)
+- [Intégrer les appareils Windows 10 et Windows 11 dans la vue d’ensemble de Microsoft Purview](/microsoft-365/compliance/device-onboarding-overview)
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (ADD) adhésion](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

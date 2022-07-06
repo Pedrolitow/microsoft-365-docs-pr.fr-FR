@@ -1,5 +1,5 @@
 ---
-title: Gérer les jeux de révision dans eDiscovery (Premium)
+title: Gérer les ensembles de révision dans eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment gérer des ensembles de révision afin de pouvoir analyser, interroger, afficher, baliser et exporter des données dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d81bfa83126210bcaf80fe05b89b26a091e4192f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 48b2bc1b4ad64606416c2191f2a191973e1d7c73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078842"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634090"
 ---
-# <a name="manage-review-sets-in-ediscovery-premium"></a>Gérer les jeux de révision dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="manage-review-sets-in-ediscovery-premium"></a>Gérer les ensembles de révision dans eDiscovery (Premium)
 
 Les ensembles de révision sont un ensemble statique de documents dans lequel vous pouvez analyser, interroger, afficher, baliser et exporter des données dans un cas. Pour plus d’informations sur l’exécution de ces tâches, consultez :
 
@@ -50,7 +48,7 @@ Dans la page de menu volant **Ajouter un ensemble de révisions** , tapez un nom
 
 ![Nouvel ensemble de révision répertorié sous l’onglet Ensemble de révisions.](../media/AeDnewreviewset.png)
 
-Il existe trois façons d’ajouter des données à un jeu de révision dans un cas eDiscovery (Premium).
+Il existe trois façons d’ajouter des données à un ensemble de révisions dans un cas eDiscovery (Premium).
 
 ![Trois façons d’ajouter à un ensemble de révision.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 

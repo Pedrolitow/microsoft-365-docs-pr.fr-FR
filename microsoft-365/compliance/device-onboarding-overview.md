@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: 876bd3f2d825fc1b698d3c7b9a76b1c7f115aedf
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 630a159327dc5ce177caf819b21e77ec40929866
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187896"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635576"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **S’applique à :**
 

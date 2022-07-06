@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de Microsoft Intune
-ms.openlocfilehash: 99a407b2b0c8d6a506cd138078b3f35cf9e5a232
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: e5cc3ff25895f3eb7557566eb8a38722a1aee35f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952971"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632352"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de Intune
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>Intégrer et déconnecter des appareils macOS dans les solutions Microsoft Purview à l’aide d’Intune
 
 Vous pouvez utiliser Intune pour intégrer des appareils macOS dans des solutions Microsoft Purview.
 
@@ -38,7 +36,7 @@ Vous pouvez utiliser Intune pour intégrer des appareils macOS dans des solution
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Assurez-vous que vos [appareils macOS sont intégrés à Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et inscrits dans l’application [Portail d'entreprise](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Vérifiez que vous avez accès au [centre de Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home).
+- Assurez-vous d’avoir accès au [Centre microsoft Endpoint Manager](https://endpoint.microsoft.com/#home).
 - Cela prend en charge macOS version Catalina 10.15 et versions ultérieures.
 - Créez les groupes d’utilisateurs auxquels vous allez affecter les mises à jour de configuration.
 - Installer le navigateur v95+ Edge sur vos appareils macOS 
@@ -142,7 +140,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 ```
 -->
 
-2. Ouvrez les **profils Microsoft Endpoint Manager** **centerDevicesConfiguration** >  > .
+2. Ouvrez les **profils de configuration** **des appareils** >  **du centre** >  de Endpoint Manager Microsoft.
 
 1. Choisir : **Créer un profil** 
 
@@ -170,13 +168,13 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
         1. définir le moteur `passive mode` = `true` antivirus ou `false`. À utiliser `true`si vous déployez DLP uniquement. Utilisez `false` ou n’affectez pas de valeur si vous déployez DLP et Microsoft Defender pour point de terminaison (MDE).
     1. **netfilter.mobileconfig**
  
-1. Ouvrez **les** **profils DevicesConfiguration** > . Vous devez y voir vos profils créés.
+1. Ouvrez les **profils de configuration** **des appareils** > . Vous devriez y voir vos profils créés.
 
 1. Dans la page **Profils de configuration**, choisissez le profil que vous venez de créer, dans cet exemple *AccessibilityformacOS*, puis choisissez État de l’appareil pour afficher la liste des appareils et l’état de déploiement du profil de configuration.
 
 ### <a name="get-the-device-onboarding-package"></a>Obtenir le package d’intégration d’appareil
 
-1. Dans **le Centre de conformité**, ouvrez **Paramètres** >  **Device Onboarding** et choisissez **Intégration**.
+1. Dans **le Centre de conformité** , **ouvrez Paramètres** > **de l’intégration des appareils** et choisissez **Intégration**.
  
 1. Pour **sélectionner le système d’exploitation à démarrer le processus d’intégration** , choisissez **macOS**.
  
@@ -186,7 +184,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="deploy-the-onboarding-package"></a>Déployer le package d’intégration
 
-1. Ouvrez les **profils Microsoft Endpoint Manager** **centerDevicesConfiguration** >  > .
+1. Ouvrez les **profils de configuration** **des appareils** >  **du centre** >  de Endpoint Manager Microsoft.
 
 1. Choisissez : **Créer un profil**. 
 
@@ -209,7 +207,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="enable-system-extension"></a>Activer l’extension système
 
-1. Dans le **centre Microsoft Endpoint Manager**, sélectionnez **Créer un profil** sous **Profils de configuration**
+1. Dans le **centre microsoft Endpoint Manager**, sélectionnez **Créer un profil** sous **Profils de configuration**
 
 1. Choisir:
     1. **Platform = macOS**
@@ -236,7 +234,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="get-the-installation-package"></a>Obtenir le package d’installation
 
-1. Dans **le Centre de conformité**, ouvrez **Paramètres** >  **Device Onboarding** et choisissez **Intégration**.
+1. Dans **le Centre de conformité** , **ouvrez Paramètres** > **de l’intégration des appareils** et choisissez **Intégration**.
  
 1. Pour **sélectionner le système d’exploitation pour commencer le processus d’intégration** , choisissez **macOS**
  
@@ -257,7 +255,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 > [!NOTE]
 > La désintégration entraîne l’arrêt de l’envoi de données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées jusqu’à six mois.
 
-2. Dans **Microsoft Endpoint Manager centre**, ouvrez **les** **profils DevicesConfiguration** > . Vous devez y voir vos profils créés.
+2. Dans **le centre Microsoft Endpoint Manager**, ouvrez les **profils de configuration** **des appareils** > . Vous devez y voir vos profils créés.
 
 1. Dans la page **Profils de configuration** , choisissez le profil *wdav.pkg.intunemac* .
 

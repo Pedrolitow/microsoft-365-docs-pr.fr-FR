@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans eDiscovery (Premium) qui peuvent empêcher le traitement approprié du contenu.
+description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans eDiscovery (Premium) susceptibles d’empêcher un traitement correct du contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e119458281a81ab41f8034ce76e65a5946536204
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2052e60e1c27e2b3e138124e5d268477f6a9cd18
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093106"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634354"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La correction d’erreur permet aux administrateurs eDiscovery de corriger les problèmes de données qui empêchent Microsoft Purview eDiscovery (Premium) de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités, car les fichiers sont verrouillés ou chiffrés. À l’aide de la correction des erreurs, les administrateurs eDiscovery peuvent télécharger des fichiers contenant ces erreurs, supprimer la protection par mot de passe, puis charger les fichiers corrigés.
 
@@ -37,7 +35,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 > [!NOTE]
 > Si l’Assistant Correction d’erreur est fermé à tout moment pendant la procédure suivante, vous pouvez revenir à la session de correction des erreurs à partir de l’onglet **Traitement** en sélectionnant **Corrections** dans le menu déroulant **Affichage** .
 
-1. Sous l’onglet **Traitement** dans le cas eDiscovery (Premium), sélectionnez **Erreurs** dans le menu déroulant **Affichage**, puis sélectionnez un ensemble de révisions ou l’intégralité du cas dans le menu déroulant **Étendue**. Cette section affiche toutes les erreurs provenant du cas ou de l’erreur d’un jeu à réviser spécifique.
+1. Sous l’onglet **Traitement** du cas eDiscovery (Premium), sélectionnez **Erreurs** dans le menu déroulant **Affichage** , puis sélectionnez un ensemble de révisions ou l’intégralité du cas dans le menu déroulant **Étendue** . Cette section affiche toutes les erreurs provenant du cas ou de l’erreur d’un jeu à réviser spécifique.
 
    ![Correction d’erreur.](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
@@ -62,7 +60,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     ![Préparez la correction des erreurs.](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Vous devez utiliser AzCopy v8.1 pour utiliser correctement la commande fournie sur la page **Télécharger des fichiers** . Vous devez également utiliser AzCopy v8.1 pour charger les fichiers à l’étape 10. Pour installer cette version d’AzCopy, consultez [Transférer des données avec AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Si la commande AzCopy fournie échoue, consultez [Résolution des problèmes liés à AzCopy dans eDiscovery (Premium)](troubleshooting-azcopy.md).
+    > Vous devez utiliser AzCopy v8.1 pour utiliser correctement la commande fournie sur la page **Télécharger des fichiers** . Vous devez également utiliser AzCopy v8.1 pour charger les fichiers à l’étape 10. Pour installer cette version d’AzCopy, consultez [Transférer des données avec AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Si la commande AzCopy fournie échoue, consultez [Résolution des problèmes liés à AzCopy dans eDiscovery (Premium).](troubleshooting-azcopy.md)
 
     Les fichiers que vous avez sélectionnés sont téléchargés à l’emplacement que vous avez spécifié à l’étape 5. Dans le dossier parent (par exemple, **C:\Remediation**), la structure de sous-dossiers suivante est créée automatiquement :
 
@@ -85,9 +83,9 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 7. Après avoir téléchargé les fichiers, vous pouvez les corriger avec un outil approprié. Pour les fichiers protégés par mot de passe, vous pouvez utiliser plusieurs outils de décodage de mot de passe. Si vous connaissez les mots de passe des fichiers, vous pouvez les ouvrir et supprimer la protection par mot de passe.
 
-8. Revenez à eDiscovery (Premium) et à l’Assistant Correction des erreurs, puis cliquez sur **Suivant : Télécharger fichiers**.  Cette opération vous permet de passer à la page suivante dans laquelle vous pouvez maintenant télécharger les fichiers.
+8. Revenez à eDiscovery (Premium) et à l’Assistant Correction des erreurs, puis cliquez sur **Suivant : Charger des fichiers**.  Cette opération vous permet de passer à la page suivante dans laquelle vous pouvez maintenant télécharger les fichiers.
 
-    ![fichiers Télécharger.](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Charger des fichiers.](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Spécifiez le dossier parent où se trouvent les fichiers corrigés dans la zone de texte **Chemin d’accès à l’emplacement des fichiers**. Là encore, le dossier parent doit avoir la même structure de sous-dossier que celle qui a été créée lorsque vous avez téléchargé les fichiers.
 
@@ -103,7 +101,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 ## <a name="remediating-errors-in-container-files"></a>Correction des erreurs dans les fichiers conteneur
 
-Dans les situations où le contenu d’un fichier conteneur (tel qu’un fichier .zip) ne peut pas être extrait par eDiscovery (Premium), les conteneurs peuvent être téléchargés et le contenu développé dans le même dossier que celui où réside le conteneur d’origine. Les fichiers développés sont attribués au conteneur parent comme s’il avait été initialement développé par eDiscovery (Premium). Le processus fonctionne comme décrit ci-dessus, à l’exception du chargement d’un fichier unique en tant que fichier de remplacement.  Lorsque vous chargez des fichiers corrigés, n’incluez pas le fichier conteneur d’origine.
+Dans les situations où le contenu d’un fichier conteneur (tel qu’un fichier .zip) ne peut pas être extrait par eDiscovery (Premium), les conteneurs peuvent être téléchargés et le contenu développé dans le même dossier que celui où réside le conteneur d’origine. Les fichiers développés sont attribués au conteneur parent comme s’il avait été développé à l’origine par eDiscovery (Premium). Le processus fonctionne comme décrit ci-dessus, à l’exception du chargement d’un fichier unique en tant que fichier de remplacement.  Lorsque vous chargez des fichiers corrigés, n’incluez pas le fichier conteneur d’origine.
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correction des erreurs en chargeant le texte extrait
 

@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231712"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632616"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser l'outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour rechercher du contenu en place tel que des courriels, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données Microsoft 365 basées sur le cloud :
   
@@ -52,7 +50,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 - Dans un déploiement Exchange hybride, vous ne pouvez pas utiliser l’outil Recherche de contenu pour rechercher des e-mails des boîtes aux lettres locales. Vous pouvez uniquement utiliser l’outil pour rechercher des boîtes mail dans le cloud.
 
-- Dans un déploiement Exchange hybride, vous pouvez rechercher des données de conversation Teams dans des boîtes aux lettres locales. Pour plus d'informations, consultez [Données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
+- Dans un déploiement Exchange hybride, vous pouvez rechercher des données de conversation Teams dans des boîtes aux lettres locales. Pour plus d'informations, consultez [Données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="create-and-run-a-search"></a>Créer et exécuter une recherche
   

@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez la fonctionnalité de reconstruction de conversation dans Microsoft Purview eDiscovery (Premium) (appelée thread de conversation) pour reconstruire, examiner et exporter des conversations de conversation dans des groupes Microsoft Teams et Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 075424bc6db144e86406b10ce9a4f4d28c1b937f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43b9bccd06ab9ca5ac94f48efa40b1c06707dde5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097071"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634784"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Thread de conversation dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La messagerie instantanée est un moyen pratique de poser des questions, de partager des idées ou de communiquer rapidement au sein d’un large public. Comme les plateformes de messagerie instantanée, comme les groupes Microsoft Teams et Yammer, deviennent essentielles à la collaboration d’entreprise, les organisations doivent évaluer la façon dont leur flux de travail eDiscovery traite ces nouvelles formes de communication et de collaboration.
+La messagerie instantanée est un moyen pratique de poser des questions, de partager des idées ou de communiquer rapidement au sein d’un large public. Comme les plateformes de messagerie instantanée, comme les groupes Microsoft Teams et Yammer, deviennent essentielles à la collaboration d’entreprise, les organisations doivent évaluer la façon dont leur flux de travail eDiscovery résout ces nouvelles formes de communication et de collaboration.
 
 La fonctionnalité de reconstruction de conversation dans Microsoft Purview eDiscovery (Premium) est conçue pour vous aider à identifier le contenu contextuel et à produire des vues de conversation distinctes. Cette fonctionnalité vous permet d’examiner efficacement et rapidement les conversations de messages instantanés complètes (également appelées *conversations thread*) générées dans des plateformes telles que Microsoft Teams.
 
@@ -50,9 +48,9 @@ Voici quelques définitions pour vous aider à commencer à utiliser la reconstr
 
 - **Conversation:** Représente un regroupement d’un ou plusieurs messages. Dans différentes applications, les conversations peuvent être représentées de différentes manières. Dans certaines applications, il existe une action explicite qui résulte de la réponse à un message existant. Les conversations sont formées explicitement à la suite de cette action de l’utilisateur. Par exemple, voici une capture d’écran d’une conversation de canal dans Microsoft Teams.
 
-   ![Microsoft Teams conversation de canal.](../media/threadedchat.png)
+   ![Conversation de canal Microsoft Teams.](../media/threadedchat.png)
 
-   Dans d’autres applications (telles que les messages de conversation de groupe dans Teams), il n’existe pas de chaîne de réponse formelle et les messages apparaissent à la place comme un « fleuve plat de messages » au sein d’un seul thread. Dans ces applications de types, les conversations sont déduites d’un groupe de messages qui se produisent dans un certain temps. Ce « regroupement souple » de messages (par opposition à une chaîne de réponse) représente la conversation « aller et retour » sur un sujet spécifique qui l’intéresse.
+   Dans d’autres applications (par exemple, les messages de conversation de groupe dans Teams), il n’existe pas de chaîne de réponse formelle et les messages apparaissent à la place comme un « fleuve plat de messages » au sein d’un thread unique. Dans ces applications de types, les conversations sont déduites d’un groupe de messages qui se produisent dans un certain temps. Ce « regroupement souple » de messages (par opposition à une chaîne de réponse) représente la conversation « aller et retour » sur un sujet spécifique qui l’intéresse.
 
 ## <a name="step-1-create-a-draft-collection"></a>Étape 1 : Créer un brouillon de collection
 
@@ -60,7 +58,7 @@ Une fois que vous avez identifié les consignats et les emplacements de contenu 
 
 ## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Étape 2 : Valider un brouillon de collection dans un ensemble de révisions
 
-Une fois que vous avez examiné et finalisé la requête de recherche dans une collection, vous pouvez ajouter les résultats de la recherche à un ensemble de révisions. Lorsque vous ajoutez vos résultats de recherche dans un ensemble de révisions, les données d’origine sont copiées dans une zone stockage Azure pour faciliter le processus de révision et d’analyse. Pour plus d’informations sur l’ajout de résultats de recherche à un ensemble de révisions, consultez [Commit a draft collection to a review set](commit-draft-collection.md).
+Une fois que vous avez examiné et finalisé la requête de recherche dans une collection, vous pouvez ajouter les résultats de la recherche à un ensemble de révisions. Lorsque vous ajoutez vos résultats de recherche dans un jeu de révision, les données d’origine sont copiées dans une zone de stockage Azure pour faciliter le processus de révision et d’analyse. Pour plus d’informations sur l’ajout de résultats de recherche à un ensemble de révisions, consultez [Commit a draft collection to a review set](commit-draft-collection.md).
 
 Lorsque vous ajoutez des éléments de conversations à un ensemble de révisions, vous pouvez utiliser l’option conversations thread pour collecter des messages contextuels à partir de conversations qui contiennent des éléments qui correspondent aux critères de recherche de la collection. Une fois que vous avez sélectionné l’option de conversation de thread, les événements suivants peuvent se produire :
 
@@ -110,7 +108,7 @@ Plus précisément, vous pouvez exporter des conversations de conversation enti�
 
 ## <a name="more-information"></a>Plus d’informations
 
-Pour en savoir plus sur la façon d’examiner les données de cas dans eDiscovery (Premium), consultez les articles suivants :
+Pour en savoir plus sur la façon de passer en revue les données de cas dans eDiscovery (Premium), consultez les articles suivants :
 
 - [Interroger et filtrer du contenu dans un jeu à réviser](review-set-search.md)
 - [Étiqueter les documents d’un jeu à réviser](tagging-documents.md)

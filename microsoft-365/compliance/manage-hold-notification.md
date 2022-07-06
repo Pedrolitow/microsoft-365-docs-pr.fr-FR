@@ -15,25 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez le flux de travail de communication dans eDiscovery (Premium) pour suivre l’état de vos notifications de conservation légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 95417d54f7a84439b0321e31f0d6c0f2236af047
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez le flux de travail de communication dans eDiscovery (Premium) pour suivre l’état de vos notifications d’attente légale et, si nécessaire, les mettre à jour et les renvoyer.
+ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093962"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632242"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Une fois que vous avez lancé votre flux de travail de notification de conservation légale, vous pouvez utiliser le flux de travail de communication dans Microsoft Purview eDiscovery (Premium) pour suivre l’état de vos communications. L’onglet Communications contient une liste de toutes les notifications dans votre cas eDiscovery (Premium). Vous pouvez voir des détails tels que le nombre de consignats qui ont été affectés ou qui ont accepté l’avis.
+Une fois que vous avez lancé votre flux de travail de notification de conservation légale, vous pouvez utiliser le flux de travail de communications dans Microsoft Purview eDiscovery (Premium) pour suivre l’état de vos communications. L’onglet Communications contient la liste de toutes les notifications dans votre cas eDiscovery (Premium). Vous pouvez voir des détails tels que le nombre de consignats qui ont été affectés ou qui ont accepté l’avis.
 
 ## <a name="monitor-acknowledgments"></a>Surveiller les accusés de réception
 
 Une fois que vous avez sélectionné une communication dans l’onglet **Communications** , vous pouvez afficher la liste des consignatateurs qui ont reconnu un avis de suspension. 
 
-1. Dans le Centre de conformité, accédez à **eDiscovery > eDiscovery (Premium)**.
+1. Dans le centre de conformité, accédez à **eDiscovery > eDiscovery (Premium).**
 
 2. Sélectionnez un cas, puis cliquez sur l’onglet **Communications** .
 
@@ -47,7 +45,7 @@ Parfois, les consignats perdent le suivi des messages électroniques dans leur t
 
 Pour réexécuter un avis de suspension à un consignateur :
 
-1. Dans eDiscovery (Premium), sélectionnez un cas, puis cliquez sur l’onglet **Communications**.
+1. Dans eDiscovery (Premium), sélectionnez un cas, puis cliquez sur l’onglet **Communications** .
 
 2. Sélectionnez une communication pour afficher la page de menu volant de **communication du consignateur** .
 
@@ -68,13 +66,13 @@ Si un dépositaire n’a pas reconnu la notification de suspension, le flux de t
 
 Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
-1. Dans eDiscovery (Premium), sélectionnez un cas, puis cliquez sur l’onglet **Communications**.
+1. Dans eDiscovery (Premium), sélectionnez un cas, puis cliquez sur l’onglet **Communications** .
 
 2. Sélectionnez l’avis de suspension que vous souhaitez mettre à jour, puis cliquez sur **Modifier** dans la page de menu volant de **communication du consignateur** .
 
 3. Dans l’Assistant **Modifier la communication** , cliquez sur **Définir le contenu du portail** dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis.
 
-4. Cliquez sur **Enregistrer**.
+4. Cliquez sur **Save (Enregistrer)**.
 
 L’avis de réexélation sera envoyé à tous les consignats affectés à la notification de conservation légale. En outre, si l’avis de rappel ou d’escalade est activé, les flux de travail de ces types d’avis redémarrent.
 

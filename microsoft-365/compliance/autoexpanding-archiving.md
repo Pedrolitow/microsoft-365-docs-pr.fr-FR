@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l'archivage en auto-expansion, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: fc3e40e72ad287e7d7e696557422420cccbd4ee1
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: d039e63310ed7db92f2e625f8bbdd0ff4d0c97cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922436"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632682"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>En savoir plus sur l’archivage à extension automatique
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans Office 365, les boîtes aux lettres d’archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go de stockage supplémentaire sont disponibles. Dans le passé, lorsque le quota de stockage de 100 Go était atteint, les organisations deviez contacter Microsoft pour demander de l’espace de stockage supplémentaire pour une boîte aux lettres d’archivage. Ce n’est plus le cas.
 

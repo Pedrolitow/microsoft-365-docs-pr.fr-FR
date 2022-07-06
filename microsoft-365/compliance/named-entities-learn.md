@@ -16,25 +16,23 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les entités nommées vous aident à détecter des éléments sensibles contenant des noms de personnes, des adresses physiques et des termes médicaux via des stratégies de protection contre la perte de données
-ms.openlocfilehash: 6c20932216953d64abe4515b529bba66b2561647
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 013d2453190c692eeb3ae9a0dfd48437bded1f0c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973198"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633496"
 ---
 # <a name="learn-about-named-entities"></a>En savoir plus sur les entités nommées
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-*Les entités nommées sont des* [types d’informations sensibles](sensitive-information-type-learn-about.md) (SIT). Ce sont des classifieurs complexes basés sur des dictionnaires et des modèles que vous pouvez utiliser pour détecter les noms de personnes, les adresses physiques et les conditions médicales. Vous pouvez les voir dans le **portail de conformité Microsoft Purview > classification des données > types d’informations sensibles**. Voici une liste partielle des emplacements où vous pouvez utiliser des SIT :
+*Les entités nommées sont des* [types d’informations sensibles](sensitive-information-type-learn-about.md) (SIT). Ce sont des classifieurs complexes basés sur des dictionnaires et des modèles que vous pouvez utiliser pour détecter les noms de personnes, les adresses physiques et les conditions médicales. Vous pouvez les voir dans la **classification portail de conformité Microsoft Purview > données > types d’informations sensibles**. Voici une liste partielle des emplacements où vous pouvez utiliser des SIT :
 
 
-- [Stratégies de protection contre la perte de données Microsoft Purview (DLP)](dlp-learn-about-dlp.md) 
+- [Protection contre la perte de données Microsoft Purview stratégies (DLP)](dlp-learn-about-dlp.md) 
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Gestion des risques internes](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
-- [Microsoft Purview Information Protection](apply-sensitivity-label-automatically.md)
+- [Protection de l'information Microsoft Purview](apply-sensitivity-label-automatically.md)
 - [Gestion du cycle de vie des données](information-governance.md)
 - [Gestion des enregistrements](records-management.md)
 - [Microsoft Purview eDiscovery](ediscovery.md)
@@ -68,7 +66,7 @@ Voici quelques exemples de SIT d’entité nommée. Vous pouvez les trouver tout
 
 ## <a name="examples-of-enhanced-dlp-policies"></a>Exemples de stratégies DLP améliorées
 
-Voici quelques exemples de stratégies DLP améliorées qui utilisent des SIT d’entité nommée. Vous pouvez les trouver toutes les 10 dans le **portail de conformité Microsoft Purview > protection contre la perte de données > créer une stratégie**. Les modèles améliorés peuvent être utilisés dans la protection contre la perte de données et l’étiquetage automatique.
+Voici quelques exemples de stratégies DLP améliorées qui utilisent des SIT d’entité nommée. Vous trouverez les 10 éléments dans la **portail de conformité Microsoft Purview > protection contre la perte de données > Créer une stratégie**. Les modèles améliorés peuvent être utilisés dans la protection contre la perte de données et l’étiquetage automatique.
 
 |Catégorie de stratégie  |Modèle  |Description  |
 |---------|---------|---------|

@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse d’un cas de découverte électronique (Premium) Microsoft Purview.
+description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse d’un cas Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: af34a790881cad2af5d278cf187b963f0aa58146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099826"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634828"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Analyser les données d’un ensemble de révisions dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque le nombre de documents collectés est important, il peut être difficile de les examiner tous. Microsoft Purview eDiscovery (Premium) fournit un certain nombre d’outils pour analyser les documents afin de réduire le volume de documents à examiner sans perte d’informations et pour vous aider à organiser les documents de manière cohérente. Pour en savoir plus sur ces fonctionnalités, consultez :
 
@@ -44,7 +42,7 @@ Pour analyser les données d’un jeu de révision :
 
 2. Ouvrez l’ensemble de révisions à analyser.
 
-3. Cliquez sur Le document **AnalyticsRun** >  **& l’analyse des e-mails**.
+3. Cliquez sur **Le document d’exécution d’analyse** >  & l’analyse du courrier électronique.
 
    ![Sélectionnez Exécuter le document & l’analyse des e-mails dans la liste déroulante Analytics](..\media\RunAnalytics1.png)
 
@@ -72,12 +70,12 @@ La liste suivante décrit le résultat de la requête de filtre en termes de con
 
 - **Documents et autres**. Filtre les documents en double. Seuls les documents qui sont uniques dans l’ensemble de révisions sont affichés.
 
-- **Teams conversations**. Toutes les conversations Teams (et Yammer) dans le jeu de révision sont affichées.
+- **Conversations Teams**. Toutes les conversations Teams (et Yammer) dans le jeu de révision sont affichées.
 
-Pour plus d’informations sur les types inclusifs et l’unicité des documents, consultez [threading e-mail dans eDiscovery (Premium)](email-threading-in-advanced-ediscovery.md).
+Pour plus d’informations sur les types inclusifs et l’unicité des documents, consultez [threading e-mail dans eDiscovery (Premium).](email-threading-in-advanced-ediscovery.md)
 
 > [!NOTE]
-> Pendant la préversion publique [du nouveau format de cas](advanced-ediscovery-new-case-format.md) dans eDiscovery (Premium), la requête de filtre **For Review** n’a pas retourné Teams ou Yammer conversations pour les jeux de révision (dans les cas qui utilisent le format de cas volumineux) créées avant le 4 novembre 2021. Ce problème a été résolu. Cela signifie que si vous réappliquez la requête **For Review** à un ensemble de révisions dans un cas qui utilise le format de cas volumineux, d’autres éléments correspondant à la requête de filtre peuvent être affichés, car toutes les conversations Teams ou Yammer sont incluses.
+> Pendant la préversion publique [du nouveau format de cas](advanced-ediscovery-new-case-format.md) dans eDiscovery (Premium), la requête de filtre **For Review** n’a pas renvoyé les conversations Teams ou Yammer pour les jeux de révision (dans les cas qui utilisent le format de cas volumineux) créés avant le 4 novembre 2021. Ce problème a été résolu. Cela signifie que si vous réappliquez la requête **For Review** à un ensemble de révisions dans un cas qui utilise le format de cas volumineux, d’autres éléments correspondant à la requête de filtre peuvent être affichés, car toutes les conversations Teams ou Yammer sont incluses.
 
 ## <a name="analytics-report"></a>Rapport d’analyse
 
@@ -85,7 +83,7 @@ Pour afficher le rapport d’analyse d’un ensemble de révisions :
 
 1. Ouvrez le jeu de révisions.
 
-2. Cliquez sur **Rapports AnalyticsShow** > .
+2. Cliquez sur **Afficher les rapports** **Analytics** > .
 
 Le rapport **Analytics** comporte sept composants de l’analyse :
 

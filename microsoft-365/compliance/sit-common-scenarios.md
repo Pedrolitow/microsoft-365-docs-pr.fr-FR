@@ -15,117 +15,117 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Comment implémenter des scénarios de cas d’utilisation des types d’informations sensibles courants
+description: Comment implémenter des scénarios de cas d’usage courants de types d’informations sensibles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39afa17fc7bf258848de9d5554b3dd56a1ce21b5
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 54945a3ac6f13ed541cef212305f713d8b5d2b73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525735"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633364"
 ---
 # <a name="common-usage-scenarios-for-sensitive-information-types"></a>Scénarios d’usage courants pour les types d’informations sensibles
 
-Cet article explique comment implémenter certains scénarios courants d’utilisation de type d’informations sensibles (SIT). Vous pouvez utiliser ces procédures comme exemples et les adapter à vos besoins spécifiques.
+Cet article explique comment implémenter des scénarios de cas d’utilisation courants de type d’informations sensibles (SIT). Vous pouvez utiliser ces procédures comme exemples et les adapter à vos besoins spécifiques.
 
 ## <a name="protect-credit-card-numbers"></a>Protéger les numéros de carte de crédit
 
-Contoso Bank doit classer les numéros de carte de crédit qu’elle émettra comme sensibles. Leurs cartes de crédit commencent par un ensemble de modèles à six chiffres. Ils souhaitent personnaliser la définition de carte de crédit « out of the box » pour détecter uniquement les numéros de carte de crédit en commençant par leurs modèles à six chiffres.
+Contoso Bank doit classer les numéros de carte de crédit qu’ils émettent comme sensibles. Leurs cartes de crédit commencent par un ensemble de modèles à six chiffres. Ils souhaitent personnaliser la définition de carte de crédit pour détecter uniquement les numéros de carte de crédit à partir de leurs modèles à six chiffres.
 
 **Solution suggérée**
 
-1. Créez une copie de la carte de crédit SIT. Utilisez les étapes pour [copier et modifier un type d’informations sensibles](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) afin de copier la carte de crédit SIT.
+1. Créez une copie de la carte de crédit SIT. Suivez les étapes pour [copier et modifier un type d’informations sensibles](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) afin de copier la carte de crédit SIT.
 1. Modifiez le modèle de confiance élevée. Suivez les étapes de [modification ou de suppression du modèle de type d’informations sensibles](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
-1. Ajoutez la vérification « commence par » et ajoutez la liste des chiffres bin (formatés & sans mise en forme). Par exemple, pour vous assurer que seules les cartes de crédit commençant par 411111 & 433512 doivent être considérées comme valides, ajoutez les informations suivantes à la liste 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
-1. Répétez l’étape 2 & 3 pour le modèle de faible niveau de confiance.
+1. Ajoutez la case à cocher « commence par » et ajoutez la liste des chiffres bin (mis en forme & non mis en forme). Par exemple, pour vous assurer que seules les cartes de crédit commençant par 411111 & 433512 doivent être considérées comme valides, ajoutez ce qui suit à la liste 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
+1. Répétez l’étape 2 & 3 pour le modèle de faible confiance.
 
 ## <a name="test-numbers-similar-to-social-security-numbers"></a>Numéros de test similaires aux numéros de sécurité sociale
 
-Contoso a identifié quelques numéros de test à neuf chiffres qui déclenchent des correspondances de faux positifs dans la stratégie de protection contre la perte de données (DLP) du numéro de sécurité sociale (SSN). Ils souhaitent exclure ces numéros de la liste des correspondances valides pour SSN.
+Contoso a identifié quelques numéros de test à neuf chiffres qui déclenchent des correspondances de faux positifs dans la stratégie de protection contre la perte de données (DLP) Microsoft Purview (Social Security Number). Ils souhaitent exclure ces nombres de la liste des correspondances valides pour SSN.
 
 **Solution suggérée**
 
-1. Créez une copie du SSN SIT. Utilisez les étapes pour [copier et modifier un type d’informations sensibles](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) afin de copier le sit SSN.
+1. Créez une copie du sit SSN. Suivez les étapes pour [copier et modifier un type d’informations sensibles](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) pour copier le sit SSN.
 1. Modifiez le modèle de confiance élevée. Suivez les étapes de [modification ou de suppression du modèle de type d’informations sensibles](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
-1. Ajoutez les nombres à exclure dans la vérification supplémentaire « Exclure des valeurs spécifiques ». Par exemple, pour exclure les & 23923532 239-23-532, l’ajout 23923532 suffit.
-1. Répétez également l’étape 2 & 3 pour d’autres modèles de confiance
+1. Ajoutez les nombres à exclure dans la vérification supplémentaire « Exclure des valeurs spécifiques ». Par exemple, pour exclure le & 23923532 239-23-532, il suffit d’ajouter 23923532
+1. Répétez l’étape 2 & 3 pour d’autres modèles de confiance.
 
-## <a name="phone-numbers-in-signature-trigger-match"></a>Téléphone dans la correspondance de déclencheur de signature
+## <a name="phone-numbers-in-signature-trigger-match"></a>Correspondance des numéros de téléphone dans le déclencheur de signature
 
-Contoso basé en Australie trouve que les numéros de téléphone dans les signatures électroniques déclenchent une correspondance pour leur stratégie DLP numéro d’entreprise en Australie.
+Contoso, basé en Australie, constate que les numéros de téléphone dans les signatures électroniques déclenchent une correspondance pour leur stratégie DLP de numéro d’entreprise en Australie.
 
 **Solution suggérée**
 
-Ajoutez un groupe « non » dans les éléments de prise en charge à l’aide d’une liste de mots clés contenant des mots clés couramment utilisés dans la signature d’e-mails tels que « Téléphone », « Mobile », « e-mail », « Merci et merci », etc. Conservez la proximité de cette liste de mots clés à une valeur plus petite comme 50 caractères pour une meilleure précision. Pour plus d’informations, [consultez La mise en place des types d’informations sensibles personnalisés](create-a-custom-sensitive-information-type.md).
+Ajoutez un groupe « not » dans les éléments de prise en charge à l’aide d’une liste de mots clés contenant des mots clés couramment utilisés dans la signature de l’e-mail comme « Phone », « Mobile », « email », « Thanks and regards », etc. Conservez la proximité de cette liste de mots clés avec une valeur inférieure comme 50 caractères pour une meilleure précision. Pour plus d’informations, consultez [Prise en main des types d’informations sensibles personnalisés](create-a-custom-sensitive-information-type.md).
 
 ## <a name="unable-to-trigger-aba-routing-policy"></a>Impossible de déclencher la stratégie de routage ABA
 
-La stratégie DLP ne peut pas déclencher la stratégie de numéro de routage ABA dans les fichiers Excel de grande taille, car le mot clé requis ne se trouve pas dans 300 caractères.
+La stratégie DLP ne peut pas déclencher la stratégie de numéro de routage ABA dans les fichiers Excel volumineux, car le mot clé requis est introuvable dans les 300 caractères.
 
 **Solution suggérée**
 
-Créez une copie du sit intégré et modifiez-la pour modifier la proximité de la liste de mots clés de « 300 caractères » à « Anywhere in the document ».
+Créez une copie du SIT intégré et modifiez-le pour que la proximité de la liste de mots clés passe de « 300 caractères » à « N’importe où dans le document ».
 
 > [!TIP]
-> Vous pouvez modifier la liste des mots clés pour inclure/exclure des mots clés pertinents pour votre organisation.
+> Vous pouvez modifier la liste de mots clés pour inclure/exclure des mots clés pertinents pour votre organisation.
 
-## <a name="unable-to-detect-credit-card-numbers-with-unusual-delimiters"></a>Impossible de détecter les numéros de carte de crédit avec des délimiteur inhabituels
+## <a name="unable-to-detect-credit-card-numbers-with-unusual-delimiters"></a>Impossible de détecter les numéros de carte de crédit avec des délimiteurs inhabituels
 
-Contoso Bank a remarqué que certains de leurs employés partagent des numéros de carte de crédit avec « / » comme délimiteur, par exemple 4111/1111/1111/1111, qui n’est pas détecté par la définition de carte de crédit standard. Contoso souhaite définir sa propre regex et la valider à l’aide de LuhnCheck.
+Contoso Bank a remarqué que certains de ses employés partagent des numéros de carte de crédit avec « / » comme délimiteur, par exemple 4111/1111/1111/11111, ce qui n’est pas détecté par la définition de carte de crédit hors limite. Contoso souhaite définir son propre expression régulière et la valider à l’aide de LuhnCheck.
 
 **Solution suggérée**
 
-1. Créez une copie de la carte de crédit SIT à l’aide des étapes de personnalisation d’un [type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
+1. Créez une copie de la carte de crédit SIT en suivant les étapes décrites dans [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
 1. Ajouter un nouveau modèle
-1. Dans l’élément principal, sélectionnez une expression régulière
-1. Définissez l’expression régulière qui inclut « / » dans le cadre de l’expression régulière, puis choisissez validateur et sélectionnez luhncheck ou func_credit_card pour vous assurer que l’expression régulière passe également le LuhnCheck.
+1. Dans l’élément principal, sélectionnez l’expression régulière
+1. Définissez l’expression régulière qui inclut « / » dans l’expression régulière, puis choisissez le validateur, puis sélectionnez luhncheck ou func_credit_card pour vous assurer que l’expression régulière passe également le LuhnCheck.
 
-## <a name="ignore-a-disclaimer-notice"></a>Ignorer une notification d’exclusion de responsabilité
+## <a name="ignore-a-disclaimer-notice"></a>Ignorer un avis d’exclusion de responsabilité
 
-De nombreuses organisations ajoutent des clauses d’exclusion de responsabilité juridiques, des déclarations de divulgation, des signatures ou d’autres informations en haut ou en bas des messages électroniques qui entrent ou quittent leur organisation et, dans certains cas, même au sein des organisations. Les employés eux-mêmes ont placé des signatures, notamment des guillemets de motivation, des messages sociaux, etc. Une clause d’exclusion de responsabilité ou une signature peut contenir les termes présents dans le lexicon d’un cc et générer un grand nombre de faux positifs.  
+De nombreuses organisations ajoutent des exclusions de responsabilité légales, des déclarations de divulgation, des signatures ou d’autres informations en haut ou en bas des messages électroniques qui entrent ou quittent leur organisation et dans certains cas même au sein de l’organisation. Les employés eux-mêmes mettent des signatures, notamment des citations de motivation, des messages sociaux, et ainsi de suite. Une clause d’exclusion de responsabilité ou une signature peut contenir les termes qui sont présents dans le lexique d’un CC et peuvent générer un grand nombre de faux positifs.  
 
-Par exemple, une clause d’exclusion de responsabilité classique peut contenir des mots comme sensibles ou confidentiels et une stratégie qui recherche des informations sensibles les détecte comme un incident, entraînant un grand nombre de faux positifs. Ainsi, fournir aux clients la possibilité d’ignorer la clause d’exclusion de responsabilité peut réduire les faux positifs et augmenter l’efficacité de l’équipe de conformité.
+Par exemple, une clause d’exclusion de responsabilité classique peut contenir des mots comme sensibles ou confidentiels, et une stratégie recherchant des informations sensibles la détecte comme un incident, ce qui entraîne de nombreux faux positifs. Ainsi, offrir aux clients la possibilité d’ignorer la clause d’exclusion de responsabilité peut réduire les faux positifs et augmenter l’efficacité de l’équipe de conformité.
 
 ### <a name="example-of-disclaimer"></a>Exemple de clause d’exclusion de responsabilité
 
-Prenons la clause d’exclusion de responsabilité suivante :
+Prenez en compte la clause d’exclusion de responsabilité suivante :
 
 AVIS IMPORTANT : Ce message électronique est destiné à être reçu uniquement par les personnes autorisées à recevoir les informations confidentielles qu'il peut contenir. Les messages électroniques aux clients de Contoso peuvent contenir des informations confidentielles et privilégiées. Veuillez ne pas lire, copier, transférer ou stocker ce message si vous n’êtes pas un destinataire attendu de celui-ci. Si vous avez reçu ce message par erreur, veuillez le transférer à l’expéditeur et le supprimer complètement de votre système informatique.
 
-Si la sit a été configurée pour détecter un mot clé confidentiel, le modèle appelle une correspondance chaque fois qu’une clause d’exclusion de responsabilité est utilisée dans l’e-mail, ce qui génère un grand nombre de faux positifs.
+Si le SIT a été configuré pour détecter un mot clé confidentiel, le modèle appelle une correspondance chaque fois qu’une exclusion de responsabilité est utilisée dans l’e-mail, ce qui entraîne un grand nombre de faux positifs.
 
 ### <a name="ignore-disclaimer-using-prefix-and-suffix-in-sit"></a>Ignorer la clause d’exclusion de responsabilité à l’aide du préfixe et du suffixe dans SIT
 
 Une façon d’ignorer les instances de mots clés dans la clause d’exclusion de responsabilité consiste à exclure les instances de mots clés qui sont précédées d’un préfixe et suivies d’un suffixe.
 
-Considérez cette clause d’exclusion de responsabilité :
+Prenez en compte cette clause d’exclusion de responsabilité :
 
-REMARQUE IMPORTANTE : ce message électronique est destiné uniquement aux personnes autorisées à recevoir les  informations confidentielles **qu’il peut contenir**. Les messages électroniques aux clients de Contoso peuvent contenir des informations confidentielles et privilégiées. Veuillez ne pas lire, copier, transférer ou stocker ce message si vous n’êtes pas un destinataire attendu de celui-ci. Si vous avez reçu ce message par erreur, veuillez le transférer à l’expéditeur et le supprimer complètement de votre système informatique.
+REMARQUE IMPORTANTE : Ce message électronique est destiné à être reçu uniquement par les personnes *autorisées à recevoir les* informations confidentielles **qu’il peut contenir**. Les messages électroniques aux clients de Contoso peuvent contenir des informations confidentielles et privilégiées. Veuillez ne pas lire, copier, transférer ou stocker ce message si vous n’êtes pas un destinataire attendu de celui-ci. Si vous avez reçu ce message par erreur, veuillez le transférer à l’expéditeur et le supprimer complètement de votre système informatique.
 
-Nous avons deux instances du mot clé « confidentiel » et si nous configurons la sit pour ignorer les instances de ce mot clé précédées de préfixes (italique dans l’exemple) et suivies de suffixes (en gras dans l’exemple), nous pouvons parvenir à ignorer les clauses d’exclusion de responsabilité dans la plupart des cas.
+Nous avons deux instances du mot clé « confidentiel » et si nous configurons le SIT pour ignorer les instances de ce mot clé précédées de préfixes (italique dans l’exemple) et suivies de suffixes (mis en gras dans l’exemple), nous pouvons parvenir à ignorer les exclusions de responsabilité dans la plupart des cas.
 
 Pour ignorer la clause d’exclusion de responsabilité à l’aide du préfixe et du suffixe :
 
-1. Ajoutez des vérifications supplémentaires dans la sit actuelle pour exclure le préfixe et le texte de suffixe du mot clé que nous voulons ignorer dans la clause d’exclusion de responsabilité.
-1. Choisissez d’exclure le préfixe et, dans la zone de texte **Préfixes** , entrez **des informations**.
-1. Choisissez d’exclure le suffixe et, dans la zone de texte **Suffixes** , entrez **et avez des privilèges juridiques**.
-1. Répétez ce processus pour les autres instances des mots clés dans la clause d’exclusion de responsabilité, comme illustré dans le graphique suivant.
+1. Ajoutez des vérifications supplémentaires dans le sit actuel pour exclure le texte du préfixe et du suffixe au mot clé que nous voulons ignorer dans la clause d’exclusion de responsabilité.
+1. Choisissez d’exclure le préfixe et, dans la zone de texte **Préfixes** , **entrez les informations correspondantes**.
+1. Choisissez d’exclure le suffixe et, dans la zone de texte **Suffixes** , entrez **et légalement privilégiés**.
+1. Répétez ce processus pour d’autres instances des mots clés dans la clause d’exclusion de responsabilité, comme illustré dans le graphique suivant.
 
 ### <a name="ignore-disclaimer-by-excluding-secondary-elements"></a>Ignorer la clause d’exclusion de responsabilité en excluant les éléments secondaires
 
-Une autre façon d’ajouter une liste d’éléments de prise en charge (instances dans une clause d’exclusion de responsabilité) qui doit être exclue consiste à exclure les éléments secondaires.
+Une autre façon d’ajouter une liste d’éléments de prise en charge (instances dans la clause d’exclusion de responsabilité) qui doit être exclue consiste à exclure les éléments secondaires.
 
-Considérez cette clause d’exclusion de responsabilité :
+Prenez en compte cette clause d’exclusion de responsabilité :
 
 AVIS IMPORTANT : Ce message électronique est destiné à être reçu uniquement par les personnes autorisées à recevoir les informations confidentielles qu'il peut contenir. Les messages électroniques aux clients de Contoso peuvent contenir des informations confidentielles et privilégiées. Veuillez ne pas lire, copier, transférer ou stocker ce message si vous n’êtes pas un destinataire attendu de celui-ci. Si vous avez reçu ce message par erreur, veuillez le transférer à l’expéditeur et le supprimer complètement de votre système informatique.
 
-Nous avons deux instances du mot clé « confidentiel » dans cet exemple. Si nous configurons la sit pour ignorer les instances de ce mot clé dans la clause d’exclusion de responsabilité (soulignée en rouge), nous pouvons dans la plupart des cas ignorer les clauses d’exclusion de responsabilité.
+Dans cet exemple, nous avons deux instances du mot clé « confidentiel ». Si nous configurons le SIT pour ignorer les instances de ce mot clé dans la clause d’exclusion de responsabilité (soulignée en rouge), nous pouvons parvenir à ignorer les exclusions de responsabilité dans la plupart des cas.
 
-:::image type="content" source="../media/sit-scenario-edit-pattern.png" alt-text="Vous pouvez ajouter des conditions supplémentaires au modèle pour exclure des instances supplémentaires dans la clause d’exclusion de responsabilité.":::
+:::image type="content" source="../media/sit-scenario-edit-pattern.png" alt-text="Vous pouvez ajouter d’autres conditions au modèle pour exclure des instances supplémentaires dans la clause d’exclusion de responsabilité.":::
 
 Pour ignorer la clause d’exclusion de responsabilité à l’aide d’éléments secondaires :
 
-1. **Sélectionnez Pas un de ces groupes** dans les éléments de prise en charge.
+1. Sélectionnez **Aucun de ces** groupes dans les éléments de prise en charge.
 1. Ajoutez les instances de clause d’exclusion de responsabilité que nous voulons ignorer en tant que liste/dictionnaire de mots clés.
-1. Ajoutez les mots clés en tant que nouvelle ligne que nous voulons ignorer. N’oubliez pas que la longueur de chaque texte ne peut pas être plus de 50 caractères.
-1. Définissez la proximité de cet élément à 50 à 60 caractères de l’élément principal.
+1. Ajoutez les mots clés sous la forme d’une nouvelle ligne que nous voulons ignorer. N’oubliez pas que la longueur de chaque texte ne peut pas dépasser 50 caractères.
+1. Définissez la proximité de cet élément à moins de 50 à 60 caractères de l’élément principal.

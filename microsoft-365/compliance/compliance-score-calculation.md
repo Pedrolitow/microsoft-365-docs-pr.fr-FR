@@ -15,21 +15,19 @@ search.appverid:
 - MET150
 description: Découvrez comment le Gestionnaire de conformité Microsoft Purview calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 07a168bd32e73502380260db748fd145648c69ae
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a33cbe9c4ea5b12ab0fec40068ba7dcd2f561e4e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971173"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635674"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez comment le Gestionnaire de conformité calcule un score de conformité pour votre organisation. Cet article explique comment **interpréter votre score**, ce que comprend l’évaluation **de la base de référence de protection des données** , la **surveillance continue** et **comment différents types d’actions sont gérés et notés**.
 
 > [!IMPORTANT]
-> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles clients en fonction de votre environnement réglementaire. Ces services sont soumis aux conditions générales des conditions générales du [produit](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également [Microsoft 365 conseils de gestion des licences pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles clients en fonction de votre environnement réglementaire. Ces services sont soumis aux conditions générales des conditions générales du [produit](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également les [conseils de gestion des licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="how-to-read-your-compliance-score"></a>Comment lire votre score de conformité
 
@@ -47,9 +45,9 @@ Une valeur de score est affectée à trois niveaux :
 
 Le score de conformité global est calculé à l’aide de scores d’action, où chaque action Microsoft est comptée une fois, chaque action technique que vous gérez est comptée une fois et chaque action non technique que vous gérez est comptée une fois par groupe. Cette logique est conçue pour fournir la comptabilité la plus précise de la façon dont les actions sont implémentées et testées dans votre organisation. Vous remarquerez peut-être que votre score de conformité global peut différer de la moyenne de vos scores d’évaluation. En savoir plus ci-dessous sur la [façon dont les actions sont notées](#action-types-and-points).
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur Microsoft 365 ligne de base de protection des données
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur la base de référence de la protection des données Microsoft 365
   
-Le Gestionnaire de conformité vous donne un score initial basé sur la base de référence de protection des données Microsoft 365. Cette base de référence est un ensemble de contrôles qui inclut des réglementations et des normes clés pour la protection des données et la gouvernance générale des données. Cette base de référence tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (Organisation internationale pour la normalisation), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du RGPD (Règlement général sur la protection des données de l’Union européenne).
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base de protection des données Microsoft 365. Cette base de référence est un ensemble de contrôles qui inclut des réglementations et des normes clés pour la protection des données et la gouvernance générale des données. Cette base de référence tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (Organisation internationale pour la normalisation), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du RGPD (Règlement général sur la protection des données de l’Union européenne).
 
 Votre score initial est calculé en fonction de l’évaluation par défaut de la base de référence de protection des données fournie à toutes les organisations. Lors de votre première visite, le Gestionnaire de conformité collecte déjà les signaux de vos solutions Microsoft 365. Vous verrez en un coup d’œil les performances de votre organisation par rapport aux principales normes et réglementations de protection des données, et vous verrez les suggestions de mesures d’amélioration à prendre.
 
@@ -104,7 +102,7 @@ Les actions se voient attribuer une valeur de score selon qu’elles sont obliga
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Actions préventives, de détection et correctives
   
-- Les **actions préventives** gèrent des risques spécifiques. Par exemple, la protection des informations au repos à l’aide du chiffrement est une action préventive contre les attaques et les violations. La répartition des tâches est également une action préventive qui permet de gérer les conflits d’intérêts, puis de lutter contre la fraude.
+-  Les **actions préventives** portent sur des risques spécifiques. Par exemple, la protection des informations au repos par chiffrement est une action préventive contre les attaques et les violations. La séparation des fonctions est une action préventive pour gérer les conflits d'intérêts et se prémunir contre la fraude.
   
 - **Les actions de détection** surveillent activement les systèmes pour identifier les conditions irrégulières ou les comportements qui représentent des risques, ou qui peuvent être utilisés pour détecter les intrusions ou les violations. Les exemples incluent l’audit de l’accès système et les actions d’administration privilégiées. Les audits de conformité réglementaire sont un type d’action de détection utilisé pour rechercher les problèmes de processus.
   
@@ -112,7 +110,7 @@ Les actions se voient attribuer une valeur de score selon qu’elles sont obliga
   
 Chaque action a une valeur affectée dans le Gestionnaire de conformité en fonction du risque qu’elle représente :
 
-|**Type (Type)**|**Score attribué**|
+|**Type**|**Score attribué**|
 |:-----|:-----|
 | Obligatoire préventif | 27 |
 | Discrétionnaire préventive | 9  |

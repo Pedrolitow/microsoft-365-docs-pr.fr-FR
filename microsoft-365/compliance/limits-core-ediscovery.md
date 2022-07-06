@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article décrit les limites du cas eDiscovery (Standard) dans Microsoft 365.
-ms.openlocfilehash: 6cc058bee09563d6a9914b9602b2fc6a3bfdf7f6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fe564bfb26bf586ba6ff6567dae057ecb1065296
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093040"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634134"
 ---
 # <a name="limits-in-ediscovery-standard"></a>Limites dans eDiscovery (Standard)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le tableau suivant répertorie les limites pour les cas eDiscovery (Standard) et les conservations associées à un cas eDiscovery (Standard). Pour plus d’informations sur Microsoft Purview eDiscovery (Standard), consultez [Vue d’ensemble d’eDiscovery (Standard).](./get-started-core-ediscovery.md)
     
@@ -34,7 +32,7 @@ Le tableau suivant répertorie les limites pour les cas eDiscovery (Standard) et
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation.  <br/> |Aucune limite  <br/> |
   |Nombre maximal de conservations de cas pour une organisation.  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres dans une conservation unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |1 000  <br/> |
+  |Nombre maximal de boîtes aux lettres en conservation unique. Cette limite inclut le total combiné des boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |1 000  <br/> |
   |Nombre maximal de sites dans une conservation unique. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Groupes Microsoft 365, Microsoft Teams et Yammer.  <br/> |100  <br/> |
   |Nombre maximal de cas affichés sur la page d’accueil eDiscovery (Standard) et nombre maximal d’éléments affichés dans les onglets Conservations, Recherches et Exportation dans un cas. <sup>1</sup> |1 000|
 

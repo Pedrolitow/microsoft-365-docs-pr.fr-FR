@@ -15,26 +15,24 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: Les administrateurs du cloud us government peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
-ms.openlocfilehash: 4404eb9cd70ed41616fa5ed9b775b55c4c59e192
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Les administrateurs du cloud us government peuvent configurer un connecteur de données pour importer des données d’employés à partir du système de ressources humaines de leur organisation vers Microsoft 365. Cela vous permet d’utiliser les données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de poser une menace interne à votre organisation.
+ms.openlocfilehash: df9932af0588e95ea35fef24c8b9508676433d22
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092390"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634310"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurer un connecteur pour importer des données RH dans le gouvernement des États-Unis
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de ressources humaines (RH) dans votre organisation du gouvernement des États-Unis. Les données relatives aux RH incluent la date à laquelle un employé a présenté sa démission et la date du dernier jour de l’employé. Ces données RH peuvent ensuite être utilisées par les solutions de protection des informations Microsoft, telles que la [solution de gestion des risques internes](insider-risk-management.md), pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation. La configuration d’un connecteur RH consiste à créer une application dans Azure Active Directory utilisée pour l’authentification par connecteur, à créer un fichier de mappage CSV qui contient vos données RH, à créer un connecteur de données dans le centre de conformité, puis à exécuter un script (planifié) qui ingère les données RH dans le fichier CSV dans le cloud Microsoft. Ensuite, le connecteur de données est utilisé par l’outil de gestion des risques internes pour accéder aux données RH qui ont été importées dans votre Microsoft 365 organisation du gouvernement des États-Unis.
+Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données de ressources humaines (RH) dans votre organisation du gouvernement des États-Unis. Les données relatives aux RH incluent la date à laquelle un employé a présenté sa démission et la date du dernier jour de l’employé. Ces données RH peuvent ensuite être utilisées par les solutions de protection des informations Microsoft, telles que la [solution de gestion des risques internes](insider-risk-management.md), pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation. La configuration d’un connecteur RH consiste à créer une application dans Azure Active Directory utilisée pour l’authentification par connecteur, à créer un fichier de mappage CSV qui contient vos données RH, à créer un connecteur de données dans le centre de conformité, puis à exécuter un script (planifié) qui ingère les données RH du fichier CSV dans le cloud Microsoft. Ensuite, le connecteur de données est utilisé par l’outil de gestion des risques internes pour accéder aux données RH qui ont été importées dans votre organisation Microsoft 365 US Government.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur RH à l’étape 3. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur RH à l’étape 3 doit disposer du rôle Administration connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
    > [!NOTE]
-   > Le rôle Administrateur du connecteur de données n’est actuellement pas pris en charge dans les environnements US Government Cloud de la communauté du secteur public High et DoD. Par conséquent, l’utilisateur qui crée le connecteur RH dans Cloud de la communauté du secteur public environnements High et DoD doit se voir attribuer le rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle d’exportation d’importation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, consultez les sections [Créer des groupes de rôles](/Exchange/permissions-exo/role-groups#create-role-groups) ou [Modifier des groupes de rôles](/Exchange/permissions-exo/role-groups#modify-role-groups) dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+   > Le rôle Administration connecteur de données n’est actuellement pas pris en charge dans les environnements US Government GCC High et DoD. Par conséquent, l’utilisateur qui crée le connecteur RH dans les environnements GCC High et DoD doit se voir attribuer le rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle d’exportation d’importation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, consultez les sections [Créer des groupes de rôles](/Exchange/permissions-exo/role-groups#create-role-groups) ou [Modifier des groupes de rôles](/Exchange/permissions-exo/role-groups#modify-role-groups) dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 - Vous devez déterminer comment récupérer ou exporter les données à partir du système RH de votre organisation (régulièrement) et les ajouter au fichier CSV décrit à l’étape 2. Le script que vous exécutez à l’étape 4 charge les données RH dans le fichier CSV dans le cloud Microsoft.
 
@@ -44,9 +42,9 @@ Vous pouvez configurer un connecteur de données dans le portail de conformité 
 
 La première étape consiste à créer et à inscrire une application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permet à Azure AD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application sera également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour charger vos données RH dans le cloud Microsoft. Lors de la création de cette application Azure AD, veillez à enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- Azure AD ID d’application (également appelé *ID d’application* ou *ID client*)
+- ID d’application Azure AD (également appelé *ID d’application* ou *ID client*)
 
-- Azure AD secret d’application (également appelé *clé secrète client*)
+- Secret d’application Azure AD (également appelé *clé secrète client*)
 
 - ID de locataire (également appelé *ID de répertoire*)
 
@@ -143,9 +141,9 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    | Paramètre | Description |
    |:-----|:-----|:-----|
-   |`tenantId`|ID de votre organisation Microsoft 365 que vous avez obtenue à l’étape 1. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue d’ensemble** du centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
-   |`appId` |ID d’application Azure AD pour l’application que vous avez créée à Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
-   |`appSecret`|Le secret d’application Azure AD pour l’application que vous avez créée à Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
+   |`tenantId`|ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue d’ensemble** du Centre d’administration Azure AD. Cela permet d’identifier votre organisation.|
+   |`appId` |ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Azure AD l’utilise pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. |
+   |`appSecret`|Secret d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
    |`jobId`|ID de travail du connecteur RH que vous avez créé à l’étape 3. Cela permet d’associer les données RH chargées dans le cloud Microsoft au connecteur RH.|
    |`csvFilePath`|Chemin d’accès du fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès au fichier ; sinon, utilisez des guillemets simples.|
    |||
@@ -156,7 +154,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Si le chargement réussit, le script affiche le **message Télécharger Réussi**.
+   Si le chargement réussit, le script affiche le message **De réussite** du chargement.
 
    > [!NOTE]
    > Si vous rencontrez des problèmes lors de l’exécution de la commande précédente en raison de stratégies d’exécution, consultez [À propos des stratégies d’exécution](/powershell/module/microsoft.powershell.core/about/about_execution_policies) et [de Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des conseils sur la définition des stratégies d’exécution.
@@ -185,7 +183,7 @@ Pour vous assurer que les dernières données RH de votre organisation sont disp
 
 Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Windows Démarrer, puis **tapez** **Planificateur de tâches**.
+1. Sur votre ordinateur local, cliquez sur le bouton Démarrer de Windows, puis **tapez** **Planificateur de tâches**.
 
 2. Cliquez sur l’application **Du planificateur de tâches** pour l’ouvrir.
 
@@ -201,7 +199,7 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
 6. Sélectionnez l’onglet Déclencheurs, cliquez sur **Nouveau**, puis effectuez les **opérations suivantes** :
 
-   1. Sous **Paramètres**, sélectionnez l’option **Quotidienne**, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
+   1. Sous **Paramètres**, sélectionnez l’option **Quotidienne** , puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
    
    1. Sous **Paramètres avancés**, vérifiez que la case à cocher **Activé** est cochée.
    
@@ -217,7 +215,7 @@ Vous pouvez utiliser l’application Planificateur de tâches dans Windows pour 
 
    1. Dans la zone **Ajouter des arguments (facultatif),** collez la commande de script que vous avez exécutée à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   1. Dans la zone **Démarrer (facultatif),** collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. Dans la zone **Démarrer (facultatif),** collez l’emplacement du dossier du script que vous avez exécuté à l’étape 4. Par exemple : `C:\Users\contosoadmin\Desktop\Scripts`.
 
    1. Cliquez sur **Ok** pour enregistrer les paramètres de la nouvelle action.
 

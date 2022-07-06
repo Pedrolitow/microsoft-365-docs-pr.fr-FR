@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Créez et gérez des boîtes aux lettres inactives qui conservent le contenu des boîtes aux lettres supprimées dans Microsoft 365.
-ms.openlocfilehash: b7a33101135b43357b095af6864b54c618abd84d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 15a9db1099eb687195d5c54b12d5bfca9a8c6f22
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417399"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634618"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les boîtes aux lettres inactives vous permettent de conserver les courriers électroniques des anciens employés après leur départ de votre organisation et sont accessibles par des personnes autorisées qui ont reçu [des autorisations eDiscovery pour des raisons légales](assign-ediscovery-permissions.md) ou de conformité. Par exemple, les administrateurs, les agents de conformité et les gestionnaires d’enregistrements qui peuvent ensuite utiliser la recherche de contenu pour rechercher et exporter le contenu d’une boîte aux lettres inactive. Les boîtes aux lettres inactives ne peuvent pas recevoir de courriers, et n'apparaissent pas dans le carnet d'adresses partagé de votre organisation ou d'autres listes.
 
@@ -42,7 +40,7 @@ Rendre une boîte aux lettres inactive nécessite une conservation de la boîte 
 
 Pour rendre une boîte aux lettres inactive, vous devez lui attribuer une licence Exchange Online Plan 2 (ou une licence plan 1 Exchange Online avec une licence de module complémentaire Archivage Exchange Online) afin qu’une conservation puisse être appliquée à la boîte aux lettres avant sa suppression. Une fois le compte d’utilisateur supprimé, toute licence Exchange Online associée au compte d’utilisateur sera disponible pour être attribuée à un nouvel utilisateur.
 
-Nous vous recommandons d’utiliser Microsoft 365 rétention pour appliquer la conservation sur la boîte aux lettres. D’autres méthodes sont abordées dans [En savoir plus sur les boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md).
+Nous vous recommandons d’utiliser la rétention Microsoft 365 pour appliquer la conservation sur la boîte aux lettres. D’autres méthodes sont abordées dans [En savoir plus sur les boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md).
 
 La meilleure façon de supprimer une boîte aux lettres consiste à supprimer le compte d’utilisateur correspondant dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Pour plus d’informations sur la suppression de comptes d’utilisateur, consultez [Supprimer un utilisateur de votre organisation](../admin/add-users/delete-a-user.md). Toutefois, vous pouvez également supprimer la boîte aux lettres à l’aide de l’applet de commande **Remove-Mailbox** dans Exchange Online PowerShell. Pour plus d’informations, consultez [Supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes).
 
@@ -52,12 +50,12 @@ Le tableau suivant résume le processus de création d'une boîte aux lettres in
 
 |À...|Vous devez…|Résultat|
 |---|---|---|
-|Conserver le contenu de la boîte aux lettres indéfiniment après le départ d’un employé de l’organisation|1. Appliquez Microsoft 365 paramètres de rétention avec des actions de conservation pour la boîte aux lettres (stratégie de rétention) ou des éléments de courrier spécifiques (une ou plusieurs étiquettes de rétention). <br /><br> 2. Attendez que les paramètres de rétention soient appliqués. <br /><br> 3. Supprimez le compte Microsoft 365 de l’utilisateur.|Tout le contenu de la boîte aux lettres inactive qui a des paramètres de rétention appliqués, y compris les éléments du dossier Éléments récupérables, est conservé indéfiniment.|
-|Conserver tout le contenu de la boîte aux lettres pendant une période spécifique après le départ d’un employé de l’organisation, puis supprimer la boîte aux lettres|1. Appliquez une stratégie de rétention Microsoft 365 à la boîte aux lettres avec des paramètres de rétention qui conservent, puis suppriment des éléments à l’expiration de la période de rétention. <br /><br> 2. Attendez que les paramètres de rétention soient appliqués. <br /><br> 3. Supprimez le compte Microsoft 365 de l’utilisateur.|Lorsque la période de rétention d’un élément de boîte aux lettres expire, l’élément est déplacé vers le dossier Éléments récupérables, puis il est définitivement supprimé (purgé) de la boîte aux lettres inactive lorsque la période de rétention des éléments supprimés (pour Exchange boîtes aux lettres) expire. La période de rétention de la stratégie de rétention Microsoft 365 est toujours basée sur la date d’origine à laquelle un élément de boîte aux lettres a été reçu ou créé.|
+|Conserver le contenu de la boîte aux lettres indéfiniment après le départ d’un employé de l’organisation|1. Appliquez des paramètres de rétention Microsoft 365 avec des actions de rétention pour la boîte aux lettres (stratégie de rétention) ou des éléments de messagerie spécifiques (une ou plusieurs étiquettes de rétention). <br /><br> 2. Attendez que les paramètres de rétention soient appliqués. <br /><br> 3. Supprimez le compte Microsoft 365 de l’utilisateur.|Tout le contenu de la boîte aux lettres inactive qui a des paramètres de rétention appliqués, y compris les éléments du dossier Éléments récupérables, est conservé indéfiniment.|
+|Conserver tout le contenu de la boîte aux lettres pendant une période spécifique après le départ d’un employé de l’organisation, puis supprimer la boîte aux lettres|1. Appliquez une stratégie de rétention Microsoft 365 à la boîte aux lettres avec des paramètres de rétention qui conservent, puis suppriment des éléments à l’expiration de la période de rétention. <br /><br> 2. Attendez que les paramètres de rétention soient appliqués. <br /><br> 3. Supprimez le compte Microsoft 365 de l’utilisateur.|Lorsque la période de rétention d’un élément de boîte aux lettres expire, l’élément est déplacé vers le dossier Éléments récupérables, puis supprimé définitivement (purgé) de la boîte aux lettres inactive lorsque la période de rétention des éléments supprimés (pour les boîtes aux lettres Exchange) expire. La période de rétention de la stratégie de rétention Microsoft 365 est toujours basée sur la date d’origine à laquelle un élément de boîte aux lettres a été reçu ou créé.|
 
 
 > [!NOTE]
-> Si Microsoft 365 paramètres de rétention configurés pour conserver ou conserver, puis supprimer du contenu, est déjà appliqué à la boîte aux lettres ou aux éléments de boîte aux lettres, ou si une conservation de litige est déjà placée sur une boîte aux lettres, ou alors il vous suffit de supprimer le compte d’utilisateur correspondant pour créer une boîte aux lettres inactive.
+> Si les paramètres de rétention De Microsoft 365 configurés pour conserver ou conserver puis supprimer du contenu sont déjà appliqués à la boîte aux lettres ou aux éléments de boîte aux lettres, ou si une conservation des litiges est déjà placée sur une boîte aux lettres, ou alors il vous suffit de supprimer le compte d’utilisateur correspondant pour créer une boîte aux lettres inactive.
 
 
 ## <a name="view-a-list-of-inactive-mailboxes"></a>Afficher la liste des boîtes aux lettres inactives
@@ -66,7 +64,7 @@ Pour afficher la liste des boîtes aux lettres inactives de votre organisation :
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification d’un Administrateur général ou d’un compte d’administrateur de conformité dans votre organisation.
 
-2. Dans le volet de navigation gauche, **sélectionnez Afficher tout**, puis sélectionnez Stratégies **de gestion** >  du cycle de vie **des données**.
+2. Dans le volet de navigation gauche, **sélectionnez Afficher tout**, puis sélectionnez Stratégies de **rétention de la gestion** >  du cycle de vie des **données**.
 
 3. Sélectionnez l’option **Boîte aux lettres inactive** :
 

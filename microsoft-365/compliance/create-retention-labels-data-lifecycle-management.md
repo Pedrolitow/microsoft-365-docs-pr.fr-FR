@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer des étiquettes de rétention pour les exceptions aux stratégies de rétention pour la gestion du cycle de vie des données afin de pouvoir conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin.
-ms.openlocfilehash: 082297e7d967493dc2ca4bb73be408b320e1775c
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285921"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632572"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Créer des étiquettes de rétention pour les exceptions à vos stratégies de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans le cadre de votre stratégie de gouvernance des données pour conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin, vous devrez peut-être créer quelques étiquettes de rétention pour les éléments qui nécessitent des exceptions à vos stratégies de rétention.
 

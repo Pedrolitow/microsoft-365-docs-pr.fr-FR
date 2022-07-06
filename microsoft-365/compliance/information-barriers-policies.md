@@ -16,16 +16,14 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74da3ee1c2b3339a66ff205989dd978fdd00a530
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396242"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632264"
 ---
 # <a name="get-started-with-information-barriers"></a>Démarrer avec le cloisonnement de l’information
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article explique comment configurer des stratégies d’obstacles à l’information (IB) dans votre organisation. Plusieurs étapes sont impliquées. Veillez donc à passer en revue l’ensemble du processus avant de commencer à configurer les stratégies IB.
 
@@ -46,7 +44,7 @@ Avant de commencer à utiliser IB, vous devez confirmer votre abonnement Microso
 - Microsoft 365 E3/A3/A1 + le module complémentaire conformité Microsoft 365 E5/A5
 - Microsoft 365 E3/A3/A1 + le module complémentaire de gestion des risques internes Microsoft 365 E5/A5
 
-Pour plus d’informations, consultez [Microsoft 365 conseils sur les licences pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Pour plus d’informations, consultez [l’aide relative aux licences Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Pour [gérer les stratégies IB](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
 
@@ -71,7 +69,7 @@ Lorsque vous configurez IB, vous travaillez avec plusieurs objets et concepts.
     > Pour *les stratégies d’autorisation* , les groupes et les utilisateurs non IB ne sont pas visibles par les utilisateurs inclus dans les segments et stratégies IB. Si vous avez besoin que les groupes et les utilisateurs non IB soient visibles par les utilisateurs inclus dans les segments et stratégies ib, vous devez utiliser des stratégies *de bloc* .
 
 - **L’application** de stratégie est effectuée une fois que toutes les stratégies IB sont définies et que vous êtes prêt à les appliquer dans votre organisation.
-- **Visibilité des utilisateurs et groupes non IB**. Les utilisateurs et les groupes non IB sont des utilisateurs et des groupes exclus des segments et des stratégies ib. Selon le type de stratégies IB (bloquer ou autoriser), le comportement de ces utilisateurs et de ces groupes varie en Microsoft Teams, SharePoint, OneDrive et dans votre liste d’adresses globale. Pour les utilisateurs définis dans *les stratégies d’autorisation* , les groupes et utilisateurs non IB ne sont pas visibles par les utilisateurs inclus dans les segments et les stratégies IB. Pour les utilisateurs définis dans les stratégies de *bloc* , les groupes et les utilisateurs non IB sont visibles par les utilisateurs inclus dans les segments et stratégies IB.
+- **Visibilité des utilisateurs et groupes non IB**. Les utilisateurs et les groupes non IB sont des utilisateurs et des groupes exclus des segments et des stratégies ib. Selon le type de stratégies IB (bloquer ou autoriser), le comportement de ces utilisateurs et de ces groupes diffère dans Microsoft Teams, SharePoint, OneDrive et dans votre liste d’adresses globale. Pour les utilisateurs définis dans *les stratégies d’autorisation* , les groupes et utilisateurs non IB ne sont pas visibles par les utilisateurs inclus dans les segments et les stratégies IB. Pour les utilisateurs définis dans les stratégies de *bloc* , les groupes et les utilisateurs non IB sont visibles par les utilisateurs inclus dans les segments et stratégies IB.
 - **Prise en charge des groupes**. Seuls les groupes modernes sont actuellement pris en charge dans ib et les listes de distribution/groupes de sécurité sont traités comme des groupes non IB.
 - **Comptes d’utilisateur masqués/désactivés**. Pour les comptes masqués/désactivés dans votre organisation, le paramètre *HiddenFromAddressListEnabled* est automatiquement défini sur *True* lorsque les comptes d’utilisateurs sont masqués ou désactivés. Dans les organisations compatibles ib, ces comptes ne peuvent pas communiquer avec tous les autres comptes d’utilisateur. Dans Microsoft Teams, toutes les conversations, y compris ces comptes, sont verrouillées ou les utilisateurs sont automatiquement supprimés des conversations.
 
@@ -79,7 +77,7 @@ Lorsque vous configurez IB, vous travaillez avec plusieurs objets et concepts.
 
 | **Étapes** | **Ce qui est impliqué** |
 |:------|:----------------|
-| **Étape 1** : [Vérifier que les conditions préalables sont remplies](#step-1-make-sure-prerequisites-are-met) | - Vérifiez que vous disposez des abonnements et autorisations requis <br/>vérifier que votre annuaire inclut des données pour la segmentation des utilisateurs.<br/>- Activer [la recherche par nom pour Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>vous assurer que l’enregistrement d’audit est activé.<br/>vous assurer qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. <br/>- Fournir le consentement de l’administrateur pour Microsoft Teams (les étapes sont incluses) |
+| **Étape 1** : [Vérifier que les conditions préalables sont remplies](#step-1-make-sure-prerequisites-are-met) | - Vérifiez que vous disposez des abonnements et autorisations requis <br/>vérifier que votre annuaire inclut des données pour la segmentation des utilisateurs.<br/>- Activer [la recherche par nom pour Microsoft Teams](/microsoftteams/teams-scoped-directory-search)<br/>vous assurer que l’enregistrement d’audit est activé.<br/>vous assurer qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. <br/>- Fournir le consentement de l’administrateur pour Microsoft Teams (étapes incluses) |
 | **Étape 2** : [Segmenter les utilisateurs de votre organisation](#step-2-segment-users-in-your-organization) | - Déterminer les stratégies nécessaires<br/>- Créer une liste de segments à définir<br/>- Identifier les attributs à utiliser<br/>- Définir des segments en termes de filtres de stratégie |
 | **Étape 3** : [Créer des stratégies d’obstacles à l’information](#step-3-create-ib-policies) | - Créer vos stratégies (ne s’appliquent pas encore)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
 | **Étape 4** : [Appliquer des stratégies d’obstacle à l’information](#step-4-apply-ib-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
@@ -92,7 +90,7 @@ En plus des abonnements et autorisations requis, assurez-vous que les exigences 
 
 - **Données d’annuaire** : assurez-vous que la structure de votre organisation est reflétée dans les données d’annuaire. Pour effectuer cette action, assurez-vous que les attributs de compte d’utilisateur (tels que l’appartenance au groupe, le nom du service, etc.) sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes :
   - [Attributs pour les stratégies d’obstacle aux informations](information-barriers-attributes.md)
-  - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 - **Recherche d’annuaires délimités** : avant de définir la première stratégie IB de votre organisation, vous devez [activer la recherche d’annuaires délimités dans Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Attendez au moins 24 heures après l’activation de la recherche d’annuaire délimitée avant de configurer ou de définir des stratégies IB.
@@ -101,13 +99,13 @@ En plus des abonnements et autorisations requis, assurez-vous que les exigences 
 
 - **Supprimer les stratégies de carnet d’adresses Exchange Online existantes** : avant de définir et d’appliquer des stratégies IB, vous devez supprimer toutes les stratégies de carnet d’adresses Exchange Online existantes dans votre organisation. Les stratégies IB sont basées sur des stratégies de carnet d’adresses et les stratégies ABP existantes ne sont pas compatibles avec les ABA créées par IB. Pour supprimer vos stratégies de carnet d’adresses existantes, consultez [Supprimer une stratégie de carnet d’adresses dans Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Pour plus d’informations sur les politiques et les Exchange Online de l’IB, consultez [Obstacles à l’information et Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Gérer à l’aide de PowerShell (facultatif)** : les segments et stratégies IB peuvent être définis et gérés dans Office 365 PowerShell sécurité & conformité. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les applets de commande et les paramètres PowerShell si vous choisissez d’utiliser PowerShell pour configurer et gérer des segments et des stratégies IB. Vous aurez également besoin du module PowerShell Azure Active Directory si vous choisissez cette option de configuration.
-  - [Connecter à la sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell)
+- **Gérer à l’aide de PowerShell (facultatif)** : les segments et stratégies IB peuvent être définis et gérés dans Office 365 PowerShell sécurité & conformité. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les applets de commande et les paramètres PowerShell si vous choisissez d’utiliser PowerShell pour configurer et gérer des segments et des stratégies IB. Vous aurez également besoin du module Azure Active Directory PowerShell si vous choisissez cette option de configuration.
+  - [Se connecter à la sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell)
   - [Installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2)
 
-- **Consentement de l’administrateur pour ib dans Microsoft Teams** : lorsque vos stratégies IB sont en place, elles peuvent supprimer les utilisateurs de conformité non IB des groupes (par exemple, Teams canaux, qui sont basés sur des groupes). Cette configuration permet de garantir que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies IB de fonctionner comme prévu dans Microsoft Teams.
+- **Administration consentement pour IB dans Microsoft Teams** : lorsque vos stratégies IB sont en place, elles peuvent supprimer les utilisateurs non conformes à l’IB des groupes (par exemple, les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de garantir que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies IB de fonctionner comme prévu dans Microsoft Teams.
 
-   1. Prérequis : [installez Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2).
+   1. Prérequis : [Installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2).
 
    2. Exécutez les applets de commande Windows PowerShell suivantes dans cet ordre:
 
@@ -154,14 +152,14 @@ En plus de votre liste initiale de stratégies, dressez une liste de segments po
 Déterminez les attributs dans les données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *MemberOf* ou l’un des attributs IB pris en charge. Assurez-vous que vous avez des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. Pour plus d’informations, consultez les [attributs pris en charge pour IB](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire ont des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de continuer à configurer IB. Pour obtenir de l’aide à ce sujet, consultez les ressources suivantes :<br/>- [Configurer les propriétés du compte d’utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire ont des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de continuer à configurer IB. Pour obtenir de l’aide à ce sujet, consultez les ressources suivantes :<br/>- [Configurer les propriétés du compte d’utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-the-compliance-portal"></a>Définir des segments à l’aide du portail de conformité
 
 Pour définir des segments dans le portail de conformité, procédez comme suit :
 
 1. Connectez-vous au [portail de conformité](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation.
-2. Dans le portail de conformité, sélectionnez **Information** **barriersSegments** > .
+2. Dans le portail de conformité, sélectionnez **Segments des obstacles à l’information** > .
 3. Dans la page **Segments** , sélectionnez **Nouveau segment** pour créer et configurer un nouveau segment.
 4. Dans la page **Nom** , entrez un nom pour le segment. Vous ne pouvez pas renommer un segment une fois qu’il a été créé.
 5. Sélectionnez **Suivant**.
@@ -247,7 +245,7 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 Pour définir des stratégies dans le portail de conformité, procédez comme suit :
 
 1. Connectez-vous au [portail de conformité](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation.
-2. Dans le portail de conformité, sélectionnez **Information** **barriersPolicies** > .
+2. Dans le portail de conformité, sélectionnez **Stratégies d’obstacles à l’information** > .
 3. Dans la page **Stratégies** , sélectionnez **Créer une stratégie** pour créer et configurer une stratégie IB.
 4. Dans la page **Nom** , entrez un nom pour la stratégie, puis sélectionnez **Suivant**.
 5. Dans la page **Segment affecté** , **sélectionnez Choisir un segment**. Utilisez la zone de recherche pour rechercher un segment par nom ou faites défiler pour sélectionner le segment dans la liste affichée. Sélectionnez **Ajouter** pour ajouter le segment sélectionné à la stratégie. Vous ne pouvez sélectionner qu’un seul segment.
@@ -294,7 +292,7 @@ Lorsque vous souhaitez autoriser un segment à communiquer avec un seul autre se
 Pour définir des stratégies dans le portail de conformité, procédez comme suit :
 
 1. Connectez-vous au [portail de conformité](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation.
-2. Dans le portail de conformité, sélectionnez **Information** **barriersPolicies** > .
+2. Dans le portail de conformité, sélectionnez **Stratégies d’obstacles à l’information** > .
 3. Dans la page **Stratégies** , sélectionnez **Créer une stratégie** pour créer et configurer une stratégie IB.
 4. Dans la page **Nom** , entrez un nom pour la stratégie, puis sélectionnez **Suivant**.
 5. Dans la page **Segment affecté** , **sélectionnez Choisir un segment**. Utilisez la zone de recherche pour rechercher un segment par nom ou faites défiler pour sélectionner le segment dans la liste affichée. Sélectionnez **Ajouter** pour ajouter le segment sélectionné à la stratégie. Vous ne pouvez sélectionner qu’un seul segment.
@@ -341,7 +339,7 @@ Les stratégies IB ne sont pas en vigueur tant que vous ne les avez pas définie
 Pour appliquer des stratégies dans le portail de conformité, procédez comme suit :
 
 1. Connectez-vous au [portail de conformité](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation.
-2. Dans le portail de conformité, sélectionnez **l’application** **Information barriersPolicy** > .
+2. Dans le portail de conformité, sélectionnez Application **de stratégie d’obstacles** > **à l’information**.
 3. Dans la page **Application des stratégies** , **sélectionnez Appliquer toutes les stratégies** pour appliquer toutes les stratégies IB de votre organisation.
 
     >[!NOTE]
@@ -388,22 +386,22 @@ Des ressources sont disponibles pour vous aider à gérer vos stratégies d’ib
 - Pour modifier, arrêter ou supprimer des stratégies d’ib, consultez [Gérer les stratégies d’obstacles à l’information](information-barriers-edit-segments-policies.md).
 - Si un problème se produit avec l’IB, consultez [Résolution des problèmes liés aux obstacles à l’information](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 
-## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Étape 5 : Configuration des obstacles à l’information sur les SharePoint et les OneDrive
+## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Étape 5 : Configuration des obstacles à l’information sur SharePoint et OneDrive
 
-Si vous configurez IB pour SharePoint et OneDrive, vous devez activer IB sur ces services. Vous devez également activer IB sur ces services si vous configurez IB pour Microsoft Teams. Lorsqu’une équipe est créée dans Microsoft Teams équipe, un site SharePoint est automatiquement créé et associé à Microsoft Teams pour l’expérience de fichiers. Les stratégies IB ne sont pas honorées par défaut sur ce nouveau site et fichiers SharePoint.
+Si vous configurez IB pour SharePoint et OneDrive, vous devez activer IB sur ces services. Vous devez également activer IB sur ces services si vous configurez IB pour Microsoft Teams. Lorsqu’une équipe est créée dans l’équipe Microsoft Teams, un site SharePoint est automatiquement créé et associé à Microsoft Teams pour l’expérience de fichiers. Les stratégies IB ne sont pas honorées par défaut sur ce nouveau site et fichiers SharePoint.
 
-Pour activer ib dans SharePoint et OneDrive, suivez les instructions et les étapes décrites dans l’article [Utiliser les obstacles à l’information avec SharePoint](/sharepoint/information-barriers) article.
+Pour activer IB dans SharePoint et OneDrive, suivez les instructions et les étapes de l’article [Utiliser les obstacles à l’information avec SharePoint](/sharepoint/information-barriers) .
 
 ## <a name="step-6-information-barriers-modes"></a>Étape 6 : Modes de barrières d’information
 
 Les modes peuvent aider à renforcer l’accès, le partage et l’appartenance à une ressource Microsoft 365 en fonction du mode IB de la ressource. Les modes sont pris en charge sur les sites Groupes Microsoft 365, Microsoft Teams, OneDrive et SharePoint et sont automatiquement activés dans votre configuration IB nouvelle ou existante.
 
-Les modes IB suivants sont pris en charge sur Microsoft 365 ressources :
+Les modes IB suivants sont pris en charge sur les ressources Microsoft 365 :
 
 | **Mode** | **Description** | **Exemple** |
 |:-----|:------------|:--------|
 | **Ouvert** | Aucune stratégie ou segment IB n’est associé à la ressource Microsoft 365. N’importe qui peut être invité à être membre de la ressource. | Un site d’équipe créé pour l’événement de pique-nique pour votre organisation. |
-| **Owner Moderated (préversion)** | La stratégie IB de la ressource Microsoft 365 est déterminée à partir de la stratégie IB du propriétaire de la ressource. Les propriétaires de ressources peuvent inviter n’importe quel utilisateur à la ressource en fonction de leurs stratégies IB. Ce mode est utile lorsque votre entreprise souhaite autoriser la collaboration entre les utilisateurs de segment incompatibles qui sont modérés par le propriétaire. Seul le propriétaire de la ressource peut ajouter de nouveaux membres en fonction de sa stratégie IB. | Le vice-président des ressources humaines souhaite collaborer avec les VPs of Sales and Research. Nouveau site SharePoint défini avec le mode IB *Owner Moderated* pour ajouter les utilisateurs des segments Ventes et Recherche au même site. Il incombe au propriétaire de s’assurer que les membres appropriés sont ajoutés à la ressource. |
+| **Owner Moderated (préversion)** | La stratégie IB de la ressource Microsoft 365 est déterminée à partir de la stratégie IB du propriétaire de la ressource. Les propriétaires de ressources peuvent inviter n’importe quel utilisateur à la ressource en fonction de leurs stratégies IB. Ce mode est utile lorsque votre entreprise souhaite autoriser la collaboration entre les utilisateurs de segment incompatibles qui sont modérés par le propriétaire. Seul le propriétaire de la ressource peut ajouter de nouveaux membres en fonction de sa stratégie IB. | Le vice-président des ressources humaines souhaite collaborer avec les VPs of Sales and Research. Nouveau site SharePoint qui est défini avec le mode IB *Owner Moderated* pour ajouter les utilisateurs des segments Ventes et Recherche au même site. Il incombe au propriétaire de s’assurer que les membres appropriés sont ajoutés à la ressource. |
 | **Implicite** | La stratégie ib ou les segments de la ressource Microsoft 365 sont hérités de la stratégie IB des membres de la ressource. Le propriétaire peut ajouter des membres tant qu’ils sont compatibles avec les membres existants de la ressource. Ce mode est le mode IB par défaut pour Microsoft Teams. | L’utilisateur du segment Ventes crée une équipe Microsoft Teams pour collaborer avec d’autres segments compatibles de l’organisation. |
 | **Explicit** | La stratégie IB de la ressource Microsoft 365 correspond aux segments associés à la ressource. Le propriétaire de la ressource ou l’administrateur SharePoint peut gérer les segments de la ressource.  | Un site créé uniquement pour permettre aux membres du segment Ventes de collaborer en associant le segment Ventes au site.   |
 

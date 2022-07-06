@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le portail de conformité Microsoft Purview pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: ec80cd12efc3c314f891972b1ac48232f02c072f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a028cfc80dfdba7bea0ddbf89b6f528d5e0726ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018116"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634806"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article décrit les fonctionnalités de la recherche du contenu.
 

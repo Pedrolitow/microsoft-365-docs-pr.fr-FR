@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) facilite la gestion du flux de travail de notification de conservation légale autour de la notification aux consignatateurs dans les enquêtes juridiques.
-ms.openlocfilehash: 59acf9dd561b46a7e7b970ffcd2c4c505f0b5a1c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 371ede05fc1d17caf8ec8a449dab2f386ac53628
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097731"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635214"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>Utiliser les communications dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) permet aux services juridiques de simplifier leurs processus de suivi et de distribution des notifications de conservation légale. L’outil de communication de consignation permet aux services juridiques de gérer et d’automatiser l’ensemble du processus de conservation légale, des notifications initiales aux rappels et aux escalades, le tout dans un même emplacement.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implémentez les fonctionnalités de la protection des données Microsoft Purview pour vous aider à protéger les informations sensibles où qu’elles se trouvent ou voyagent.
-ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 4b221bb0019147d7527ee5b8692af9717204b44f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294644"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636092"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Protéger vos données sensibles avec Microsoft Purview
 
@@ -31,8 +31,6 @@ ms.locfileid: "65294644"
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Implémentez des fonctionnalités de la **Protection des données Microsoft Purview** (anciennement appelée Protection des données Microsoft) pour vous aider à découvrir, classifier et protéger des informations sensibles où qu’elles se trouvent ou voyagent.
 

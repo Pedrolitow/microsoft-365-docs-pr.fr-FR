@@ -16,16 +16,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: cb8471ffea418ac47921777a0ee9594fa73fe4ac
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930216"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632638"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tâches rapides pour bien démarrer avec la conformité dans Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si vous débutez avec Microsoft Purview et que vous vous demandez par où commencer, cet article fournit des conseils sur les principes de base et hiérarchise les tâches de conformité importantes. Cet article vous aidera à prendre rapidement en main la gestion et la surveillance de vos données, la protection des informations et la réduction des risques internes.
 
@@ -35,7 +33,7 @@ Une fois que vous avez effectué ces tâches de conformité de base, envisagez d
 
 ## <a name="task-1-configure-compliance-permissions"></a>Tâche 1 : Configurer les autorisations de conformité
 
-Il est important de gérer les membres de votre organisation qui ont accès au portail de conformité Microsoft Purview pour afficher le contenu et effectuer des tâches de gestion. Microsoft 365 fournit des rôles d’administration spécifiques à la conformité et à l’utilisation des outils inclus dans le portail de conformité Microsoft Purview.
+Il est important de gérer les membres de votre organisation qui ont accès aux portail de conformité Microsoft Purview pour afficher le contenu et effectuer des tâches de gestion. Microsoft 365 fournit des rôles d’administration spécifiques à la conformité et à l’utilisation des outils inclus dans le portail de conformité Microsoft Purview.
 
 Commencez par attribuer des autorisations de conformité aux personnes de votre organisation afin qu’elles puissent effectuer ces tâches et empêcher les personnes non autorisées d’accéder à des zones en dehors de leurs responsabilités. Avant de commencer à configurer et à implémenter des solutions de conformité incluses dans Microsoft 365, vous devez vous assurer que vous avez affecté les personnes appropriées à **l’administrateur des données de conformité** et aux rôles d’administrateur de conformité. Vous devez également affecter des utilisateurs au rôle de lecteur général Azure Active Directory pour afficher les données dans le Gestionnaire de conformité.
 
@@ -115,7 +113,7 @@ Pour obtenir des conseils pas à pas sur l’utilisation de l’Explorateur de c
 
 L’Explorateur d’activités vous aide à surveiller ce qui est fait avec vos éléments sensibles classifiés et étiquetés dans :
 
-- Microsoft Office SharePoint Online
+- SharePoint
 - Exchange
 - OneDrive
 
@@ -152,7 +150,7 @@ Pour obtenir des instructions pas à pas pour définir des types d’information
 
 ### <a name="prevent-data-loss"></a>Évitez les pertes de données
 
-Les [stratégies de protection contre la perte de données (DLP) Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) vous permettent d’identifier, de surveiller et de protéger automatiquement les informations sensibles au sein de votre organisation Microsoft 365. Utilisez des stratégies DLP pour identifier les éléments sensibles dans les services Microsoft, empêcher le partage accidentel d’éléments sensibles et aider les utilisateurs à apprendre à rester conformes sans interrompre leur flux de travail.
+[Protection contre la perte de données Microsoft Purview (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) vous permet d’identifier, de surveiller et de protéger automatiquement les informations sensibles au sein de votre organisation Microsoft 365. Utilisez des stratégies DLP pour identifier les éléments sensibles dans les services Microsoft, empêcher le partage accidentel d’éléments sensibles et aider les utilisateurs à apprendre à rester conformes sans interrompre leur flux de travail.
 
 Pour obtenir des instructions pas à pas pour configurer des stratégies DLP, [créez, testez et paramétrez une stratégie DLP](/microsoft-365/compliance/create-test-tune-dlp-policy). Pour plus d’informations sur les licences de gestion des pertes de données, consultez les [conseils de gestion des licences Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 

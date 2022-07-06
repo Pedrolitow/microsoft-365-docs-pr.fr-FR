@@ -18,24 +18,22 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas eDiscovery (Standard) dans Microsoft 365.
-ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 144bb7248753894c72accebbf3e87ab2d7d82d2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318655"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634266"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Exporter du contenu à partir d’un cas eDiscovery (Standard)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Une fois qu’une recherche associée à un cas Microsoft Purview eDiscovery (Standard) est exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou en tant que messages individuels. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive Entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
+Une fois qu’une recherche associée à un cas Microsoft Purview eDiscovery (Standard) est exécutée, vous pouvez exporter les résultats de la recherche. Lorsque vous exportez des résultats de recherche, les éléments de boîte aux lettres sont téléchargés dans des fichiers PST ou en tant que messages individuels. Lorsque vous exportez du contenu à partir de SharePoint et de sites OneDrive Entreprise, des copies de documents Office natifs et d’autres documents sont exportées. Un fichier Results.csv qui contient des informations sur chaque élément exporté et un fichier manifeste (au format XML) qui contient des informations sur chaque résultat de recherche est également exporté.
   
-## <a name="export-search-results"></a>Exportation des résultats de recherche
+## <a name="export-search-results"></a>Exporter les résultats de la recherche
 
 1. Accédez à la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> et connectez-vous à l’aide des informations d’identification du compte d’utilisateur qui a reçu les autorisations eDiscovery appropriées.
 
-2. Dans le volet de navigation gauche du portail de conformité, **sélectionnez Afficher tout**, puis **sélectionnez eDiscoveryeDiscovery** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(Standard).**</a>
+2. Dans le volet de navigation gauche du portail de conformité, **sélectionnez Afficher tout**, puis sélectionnez **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**eDiscovery (Standard).**</a>
 
 3. Dans la page **eDiscovery (Standard),** cliquez sur le nom du cas dans lequel vous souhaitez créer la conservation.
 
@@ -50,7 +48,7 @@ Une fois qu’une recherche associée à un cas Microsoft Purview eDiscovery (St
    > [!NOTE]
    > Lorsque vous exportez des résultats de recherche, vous avez la possibilité d’activer la dédoublement afin qu’une seule copie d’un e-mail soit exportée, même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont fait l’objet d’une recherche. Pour plus d’informations sur la déduplication et la façon dont les éléments en double sont identifiés, consultez [Déduplication dans les résultats de la recherche eDiscovery](de-duplication-in-ediscovery-search-results.md).
 
-   Une fois que vous avez démarré l’exportation, les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont transférés vers un emplacement de stockage Azure fourni par Microsoft dans le cloud Microsoft.
+   Une fois l’exportation démarrée, les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont transférés vers un emplacement de stockage Azure fourni par Microsoft dans le cloud Microsoft.
   
 6. Cliquez sur l’onglet **Exportations** dans le cas pour afficher la liste des travaux d’exportation.
   

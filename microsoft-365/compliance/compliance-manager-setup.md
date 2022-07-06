@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Définissez les rôles et les autorisations utilisateur du Gestionnaire de conformité Microsoft Purview, et configurez le test automatisé des actions. Gérez l’historique des utilisateurs et filtrez l’affichage de votre tableau de bord.
-ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574044"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634762"
 ---
 # <a name="get-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Cet article vous aide à configurer le Gestionnaire de conformité. Découvrez comment **accéder** au Gestionnaire de conformité, **définir des rôles et des autorisations**, et configurer le **test automatique des actions d’amélioration**. Parcourez **votre tableau de bord du Gestionnaire de conformité** et comprenez les pages principales : la page Actions d’amélioration, la page solutions, la page Évaluations et la page modèles d’évaluation.
 

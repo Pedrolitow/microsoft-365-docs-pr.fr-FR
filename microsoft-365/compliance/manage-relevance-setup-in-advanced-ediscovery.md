@@ -16,16 +16,14 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lisez les recommandations pour configurer la formation de Pertinence dans eDiscovery (Premium) pour noter les fichiers par pertinence et générer des résultats analytiques.
-ms.openlocfilehash: be9347468ef39fd5d6ae254ff4eb662a795f4f0b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6c6d1b88f9cbb92d44a040f1f060b860252df263
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098513"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635236"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Gérer la configuration de Pertinence dans eDiscovery (Premium) (classique)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Microsoft Purview eDiscovery (Premium) nécessite l’utilisation d’Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5 pour votre organisation. Si vous ne disposez pas de cette offre et que vous souhaitez essayer eDiscovery (Premium), vous pouvez [vous inscrire pour bénéficier d’un essai gratuit d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

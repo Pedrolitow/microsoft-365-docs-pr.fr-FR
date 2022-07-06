@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données des réunions Veritas Zoom dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: a04b0ba1c20bda73c86a8fad9e912d3ff9d9271f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données des réunions Veritas Zoom dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: 3a2d63071ba29baa40c8d7a656e7e7437f9348bd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318346"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631356"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurer un connecteur pour archiver les données des réunions zoom
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de Zoom Meetings vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [Zoom Meetings](https://globanet.com/zoom/) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu des réunions (y compris les conversations, les fichiers enregistrés et les métadonnées) du compte Zoom Meetings au format de message électronique, puis importe ces éléments dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
-Une fois les données des réunions zoom stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Zoom Meetings pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données des réunions zoom stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Zoom Meetings pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-zoom-meetings-data"></a>Vue d’ensemble de l’archivage des données des réunions zoom
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données des réunions de zoom dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données des réunions zoom dans Microsoft 365.
 
 ![Zoom sur le flux de travail d’archivage des réunions.](../media/ZoomMeetingsConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Une fois toutes les 24 heures, les éléments de réunion des réunions Zoom sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
 
-3. Le connecteur Zoom Meetings que vous créez dans le portail de conformité, se connecte au Veritas Merge1 tous les jours et transfère les messages de réunion à un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Zoom Meetings que vous créez dans le portail de conformité, se connecte au Veritas Merge1 tous les jours et transfère les messages de réunion vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments de réunion convertis dans les boîtes aux lettres de certains utilisateurs à l’aide de la valeur de la propriété *e-mail et du mappage* automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier Boîte de réception nommé **Réunions de zoom** est créé dans les boîtes aux lettres utilisateur et les éléments de réunion sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email* . Chaque élément de réunion contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de la réunion.
 
@@ -45,7 +43,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte Veritas Merge1 pour les connecteurs Microsoft. Pour créer ce compte, contactez le [support technique Veritas](https://globanet.com/ms-connectors-contact). Vous vous connecterez à ce compte lorsque vous créerez le connecteur à l’étape 1.
 
-- Obtenez le nom d’utilisateur et le mot de passe du compte Zoom Business ou Zoom Enterprise de votre organisation. Vous devez vous connecter à ce compte à l’étape 2 lorsque vous configurez le connecteur Zoom Meetings.
+- Obtenez le nom d’utilisateur et le mot de passe du compte Zoom Business ou Zoom Entreprise de votre organisation. Vous devez vous connecter à ce compte à l’étape 2 lorsque vous configurez le connecteur Zoom Meetings.
 
 - Créez les applications suivantes dans la [Place de marché Zoom](https://marketplace.zoom.us) :
 
@@ -57,15 +55,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
   Pour obtenir des instructions pas à pas sur la création des applications OAuth et JWT, consultez le [Guide d’utilisation des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
-- L’utilisateur qui crée le connecteur Zoom Meetings à l’étape 1 (et le termine à l’étape 3) doit se voir attribuer le rôle Administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Zoom Meetings à l’étape 1 (et le termine à l’étape 3) doit se voir attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données Veritas est en préversion publique dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données Veritas est en préversion publique dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-the-zoom-meetings-connector"></a>Étape 1 : Configurer le connecteur Zoom Meetings
 
 La première étape consiste à accéder aux **connecteurs de données** dans le portail de conformité et à créer un connecteur Zoom Meetings.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) **Data connectorsZoom** >  Meetings, puis cliquez **dessus**.
+1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez sur **Réunions de zoom** **des connecteurs** >  de données.
 
 2. Dans la page de description **du produit Zoom Meetings** , cliquez sur **Ajouter un connecteur**.
 
@@ -83,9 +81,9 @@ Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mapp
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Étape 3 : Mapper les utilisateurs et terminer la configuration du connecteur
 
-1. Dans la page **Mapper des utilisateurs externes à Microsoft 365**, activez le mappage automatique des utilisateurs.
+1. Dans la page **Mapper des utilisateurs externes à des utilisateurs Microsoft 365** , activez le mappage automatique des utilisateurs.
 
-   Les éléments De réunions de zoom incluent une propriété appelée *e-mail* qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+   Les éléments De réunions de zoom incluent une propriété appelée *e-mail* qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur
 
 2. Cliquez sur **Suivant**, passez en revue vos paramètres et accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

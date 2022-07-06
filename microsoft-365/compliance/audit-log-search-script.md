@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer un grand nombre d'enregistrements d'audit à chaque fois que vous l'exécutez. Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: 8799f1a4ddf2ef7dd536ccb3e6e70a4b731b4cd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0c1d8d6ab8f6a2c8a0dc6a1c858a164c2f4ff494
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100850"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632836"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La sécurité, la conformité et l’audit sont désormais une priorité absolue pour les administrateurs informatiques du monde actuel. Microsoft 365 offre plusieurs fonctionnalités intégrées pour aider les organisations à gérer la sécurité, la conformité et l’audit. En particulier, la journalisation d’audit unifiée peut vous aider à examiner les incidents de sécurité et les problèmes de conformité. Vous pouvez récupérer les journaux d’audit à l’aide des méthodes suivantes :
 
@@ -64,9 +62,9 @@ La première étape consiste à se connecter à Exchange Online PowerShell. Vous
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>Étape 2 : modifier et exécuter le script pour récupérer les enregistrements d’audit
 
-Une fois que vous êtes connecté à Exchange Online PowerShell, l’étape suivante consiste à créer, modifier et exécuter le script afin de récupérer les données d’audit. Les sept premières lignes du script de recherche dans le journal d’audit contiennent les variables suivantes que vous pouvez modifier pour configurer votre recherche. Consultez le tableau à l’étape 2 pour obtenir une description de ces variables.
+Une fois que vous êtes connecté à Exchange Online PowerShell, l’étape suivante consiste à créer, modifier et exécuter le script afin de récupérer les données d’audit. Les sept premières lignes du script de recherche dans le journal d’audit contiennent les variables suivantes que vous pouvez modifier pour configurer votre recherche. Consultez le tableau à l’étape 2 pour obtenir une description de ces variables.
 
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide du suffixe de nom de fichier .ps1. Par exemple, SearchAuditLog.ps1.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide du suffixe de nom de fichier .ps1. Par exemple, SearchAuditLog.ps1.
 
    ```powershell
    #Modify the values for the following variables to configure the audit log search.

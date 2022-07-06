@@ -2,8 +2,8 @@
 title: À propos des rôles d'administration Intune dans le Centre d’administration Microsoft 365
 f1.keywords:
 - CSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Le Centre d’administration Microsoft 365 vous permet de gérer certains rôles Microsoft Intune, qui sont mappés aux fonctions métier et donnent des autorisations pour effectuer des tâches spécifiques.
-ms.openlocfilehash: 6058e08750bd5f2ee330d97669a7fe48ab591d73
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ad630e7eac800e3c3c931f7ac6244c1e19e117a8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574350"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631809"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
 
@@ -52,14 +52,14 @@ Voici les rôles intégrés que vous pouvez attribuer :
 
 |Rôle d’administrateur     |À qui doit être affecté ce rôle ?  |
 |---------|---------|
-|Gestionnaire d’applications     |   Attribuez le rôle de gestionnaire d'applications aux utilisateurs qui gèrent le cycle de vie des applications pour les applications mobiles, qui configurent les applications gérées par des stratégies et qui affichent les informations sur les appareils et les profils de configuration.  |
-|Opérateur du support technique     |   Attribuez le rôle d’opérateur du support technique aux utilisateurs qui attribuent des applications et des stratégies aux utilisateurs et aux appareils. |
-|Administrateur de rôle Intune    |   Attribuez le rôle d'administrateur de rôle Intune aux utilisateurs qui peuvent attribuer des autorisations Intune à d'autres administrateurs et gérer des rôles Intune personnalisés et intégrés.   |
-|Gestionnaire des stratégies et des profils     |   Attribuez le rôle de gestionnaire des stratégies et des profils aux utilisateurs qui gèrent la stratégie de conformité, les profils de configuration et l'inscription Apple.   |
-|Opérateur en lecture seule     |   Attribuez le rôle d’opérateur en lecture seule aux utilisateurs qui peuvent uniquement consulter les utilisateurs, les appareils, les détails d’inscription et les configurations.   |
-|Administrateur scolaire     |   Attribuez le rôle d'administrateur scolaire aux utilisateurs pour un accès complet à la gestion des appareils, des applications et des configurations Windows 10 et iOS dans Intune pour l'éducation.   |
-|Administrateur de PC en cloud     |   Un administrateur de PC en cloud computing a un accès en lecture et en écriture à toutes les fonctionnalités de PC en cloud computing situées dans la lame de PC en cloud computing.   |
-|Lecteur PC en cloud     |   Un lecteur de PC en cloud computing a un accès en lecture à toutes les fonctionnalités du PC en cloud computing situées dans la lame du PC en cloud computing.   |
+|**Gestionnaire d’applications**     |   Attribuez le rôle de gestionnaire d'applications aux utilisateurs qui gèrent le cycle de vie des applications pour les applications mobiles, qui configurent les applications gérées par des stratégies et qui affichent les informations sur les appareils et les profils de configuration.  |
+|**Opérateur du support technique**     |   Attribuez le rôle d’opérateur du support technique aux utilisateurs qui attribuent des applications et des stratégies aux utilisateurs et aux appareils. |
+|**Administrateur de rôle Intune**    |   Attribuez le rôle d'administrateur de rôle Intune aux utilisateurs qui peuvent attribuer des autorisations Intune à d'autres administrateurs et gérer des rôles Intune personnalisés et intégrés.   |
+|**Gestionnaire des stratégies et des profils**     |   Attribuez le rôle de gestionnaire des stratégies et des profils aux utilisateurs qui gèrent la stratégie de conformité, les profils de configuration et l'inscription Apple.   |
+|**Opérateur en lecture seule**     |   Attribuez le rôle d’opérateur en lecture seule aux utilisateurs qui peuvent uniquement consulter les utilisateurs, les appareils, les détails d’inscription et les configurations.   |
+|**Administrateur scolaire**     |   Attribuez le rôle d'administrateur scolaire aux utilisateurs pour un accès complet à la gestion des appareils, des applications et des configurations Windows 10-11 et iOS dans Intune pour l'éducation.   |
+|**Administrateur de PC en cloud**     |   Un administrateur de PC en cloud computing a un accès en lecture et en écriture à toutes les fonctionnalités de PC en cloud computing situées dans la lame de PC en cloud computing.   |
+|**Lecteur PC en cloud**     |   Un lecteur de PC en cloud computing a un accès en lecture à toutes les fonctionnalités du PC en cloud computing situées dans la lame du PC en cloud computing.   |
 
 ## <a name="microsoft-intune-custom-roles"></a>Rôles personnalisés de Microsoft Intune
 
