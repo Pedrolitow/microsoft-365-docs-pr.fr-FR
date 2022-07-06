@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Configurer SharePoint Online
-ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 3511719e4f396141217a2b4711f642c675ac781e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463140"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617235"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -57,13 +57,13 @@ Les utilisateurs qui créent des modèles dans un [site de centre de contenu](/m
 
 ### <a name="licensing"></a>Gestion des licences
 
-Pour utiliser SharePoint Syntex, votre organisation doit avoir un abonnement à SharePoint Syntex, et chaque utilisateur doit avoir les licences suivantes :
+Pour utiliser SharePoint Syntex, votre organisation doit avoir un abonnement à SharePoint Syntex, et chaque utilisateur doit avoir les licences suivantes : SharePoint Syntex licences incluent les applications suivantes, qui doivent toutes être affectées :
 
 - SharePoint Syntex
 - SharePoint Syntex : Type DPO
 - Service de données courant pour SharePoint Syntex
 
-Pour utiliser le traitement des formulaires, vous avez également besoin de AI Builder crédits. Si vous avez au moins 300 utilisateurs sous licence, une allocation de AI Builder crédits est fournie chaque mois.
+Pour utiliser le traitement des formulaires, vous avez également besoin de AI Builder crédits. Pour chaque utilisateur sous licence de SharePoint Syntex, une allocation de crédits AI Builder est fournie chaque mois.
 
 Pour plus d’informations sur les licences SharePoint Syntex, voir [Gestion des licences SharePoint Syntex](syntex-licensing.md)
 

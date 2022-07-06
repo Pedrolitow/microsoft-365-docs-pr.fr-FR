@@ -18,17 +18,17 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c1354d69ea1b645ee419ce7635c49e65a0557f26
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1b8cb5b55cc0605df0040bcc6b3a75498ef1ea4a
+ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487860"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66612170"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
 > [!IMPORTANT]
-> Les clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) peuvent avoir été confrontés à une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour cette nouvelle version de la build du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour. Consultez [Versions mensuelles de la plateforme et du moteur](#monthly-platform-and-engine-versions) (dans cet article).
+> Les clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour au moins cette nouvelle version de moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour. Consultez les [Versions mensuelles de la plateforme et du moteur](#monthly-platform-and-engine-versions) (dans cet article).
 
 **S’applique à :**
 - [Plans 1 et 2 de Microsoft Defender pour points de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -119,7 +119,7 @@ Aucun problème connu
 </details><details>
 <summary>Mars 2022 *MISE À JOUR* (Plateforme : 4.18.2203.5 | Moteur : 1.1.19200.5)</summary>
 
-Les *Clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version antérieure. Il est recommandé aux clients de mettre à jour vers cette nouvelle version de moteur du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour.*
+Les *Clients qui ont appliqué la mise à jour du moteur Microsoft Defender de mars 2022 (**1.1.19100.5**) ont peut-être rencontré une utilisation élevée des ressources (processeur et/ou mémoire). Microsoft a publié une mise à jour (**1.1.19200.5**) qui résout les bogues introduits dans la version précédente. Il est recommandé aux clients de mettre à jour vers au moins cette nouvelle version de moteur du moteur antivirus (**1.1.19200.5**). Pour vous assurer que les problèmes de performances sont entièrement résolus, il est recommandé de redémarrer les ordinateurs après l’application de la mise à jour.*
 
 &ensp;Version de mise à jour de la veille de sécurité : **1.363.817.0**<br/>
 &ensp;Publiée : **22 avril 2022**<br/>
@@ -748,6 +748,21 @@ Nous vous recommandons de mettre à jour vos Windows 10 (éditions Entreprise, P
 Pour plus d’informations, consultez [Mise à jour de Microsoft Defender pour les images d’installation du système d’exploitation Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220629.5</summary>
+
+&ensp;Version du package : **20220629.5**<br/>
+&ensp;Version de la plateforme : **4.18.2205.7**<br/>
+&ensp;Version du moteur : **1.1.19300.2**<br/>
+&ensp;Version de signature : **1.369.220.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+
+<br/>
+</details><details>
 <summary>20220603.3</summary>
 
 &ensp;Version du package : **20220603.3**<br/>

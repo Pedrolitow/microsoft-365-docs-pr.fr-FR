@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: ac51e20b786b2e21d3bb83bd7900e56fb8fac513
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: e84205a0357e87f28a77f5186265cf421add1483
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241562"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640761"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -44,7 +44,7 @@ Vous pouvez également gérer ces fonctionnalités sur la page classification de
 - [Explorateur de contenu](data-classification-content-explorer.md)
 - [Explorateur d’activités](data-classification-activity-explorer.md)
 
-Vous trouverez la classification des données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender</a> > **Classification** > **Classification des données**.
+Vous trouverez la classification des données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender</a> > **Classification** > **Classification des données**.
 
 Suivez une visite guidée par vidéo sur nos fonctionnalités de classification de données.
 
@@ -72,14 +72,14 @@ La classification de données analyse votre contenu sensible et le contenu étiq
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -134,7 +134,7 @@ La carte étiquettes de rétention les plus utilisées vous indique le nombre d�
 
 > [!NOTE]
 > Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucun contenu n’a eu d’étiquette appliquée. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
->- [Prise en main de la gouvernance des informations](get-started-with-information-governance.md)
+>- [Prise en main de la gestion du cycle de vie des données](get-started-with-data-lifecycle-management.md)
 
 ## <a name="top-activities-detected"></a>Principales activités détectées
 

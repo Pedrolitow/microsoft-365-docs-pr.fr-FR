@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble de la configuration de Microsoft 365 Entreprise pour les campagnes ou d’autres entreprises
-ms.openlocfilehash: 2deeac236ff9bac0459e160c9400c134b622cca5
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9a265ee291bce197fd59f6a27a2ad5c85392945
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491210"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642637"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuration de Microsoft 365 Entreprises
 
@@ -63,7 +63,7 @@ Voici comment se connecter :
 
 4. En haut à droite de la page, recherchez la **préversion sur le** contrôle. Sélectionnez **Aperçu** pour pouvoir utiliser tous les contrôles décrits dans [la protection bump up pour votre campagne](m365bp-security-overview.md).
 
-### <a name="staff-sign-in"></a>Connexion du personnel
+## <a name="how-your-staff-will-sign-in"></a>Comment votre personnel se connectera-t-il ?
 
 Les utilisateurs qui ont été ajoutés à votre abonnement Microsoft 365 pour Campagnes(ou Microsoft 365 Entreprise Premium) peuvent se connecter en procédant comme suit :
 
@@ -74,13 +74,13 @@ Les utilisateurs qui ont été ajoutés à votre abonnement Microsoft 365 pour C
 > [!TIP]
 > Fournissez à votre personnel un lien vers le [guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md) pour obtenir de l’aide sur la connexion, l’obtention d’applications Office et l’enregistrement, la copie et le partage de fichiers.
 
-### <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de connexion avec un avis de confidentialité et de consentement
+## <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de connexion avec un avis de confidentialité et de consentement
 
 Votre entreprise ou votre campagne peut permettre aux organismes chargés de l'application de la loi d'engager plus facilement des poursuites contre les cybercriminels en ajoutant un avis de confidentialité et de consentement sur votre page d'inscription.
 
 Vous pouvez personnaliser votre page de connexion avec votre marque. Vous pouvez également ajouter du texte pour aider vos utilisateurs à se connecter, ou pour indiquer les exigences légales ou les restrictions d'accès aux ressources de Microsoft 365.
 
-### <a name="customize-the-text-on-your-sign-in-page"></a>Personnaliser le texte de votre page de connexion
+## <a name="customize-the-text-on-your-sign-in-page"></a>Personnaliser le texte de votre page de connexion
 
 Pour mettre à jour les éléments personnalisables de la page de connexion, vous devez être un administrateur global. Pour des instructions spécifiques, [voir l'article sur l'ajout d'une marque d'entreprise](/azure/active-directory/fundamentals/customize-branding).
 
@@ -92,6 +92,14 @@ Les éléments que vous pouvez mettre à jour sont :
 - Indication du nom d'utilisateur
 
 Pour des exemples d'avis de confidentialité et de consentement, voir l'annexe A du document [Recherche et saisie d'ordinateurs et obtention de preuves électroniques dans le cadre d'enquêtes criminelles](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+
+## <a name="visual-guide-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Guide visuel : protégez-vous et protégez votre campagne contre les menaces numériques
+
+Pour aider votre personnel à découvrir les étapes à suivre pour protéger votre campagne contre les cybermenaces, utilisez ce guide téléchargeable :
+
+[![Image pour sécuriser votre infographie « protégez votre campagne ».](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+
+[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## <a name="next-objective"></a>Objectif suivant
 
