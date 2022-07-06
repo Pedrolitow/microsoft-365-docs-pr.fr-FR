@@ -17,20 +17,18 @@ search.appverid:
 - MET150
 description: Actualisez votre fichier de table source d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008842"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621664"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualiser votre fichier de table source d’informations sensibles correspondant exactement aux données 
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Vous pouvez actualiser votre base de données d’informations sensibles jusqu’à 5 fois toutes les 24 heures. Vous devrez resserrez et chargez votre table source d’informations sensibles.
 
-1. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format .csv, au format .tsv ou au format délimité par canal (|). Conservez le même nom de fichier et le même emplacement que ceux que vous avez utilisés lors du hachage et du chargement précédents du fichier. Pour plus d’informations sur l’exportation de vos données sensibles et leur mise au format correct, consultez [Exporter les données sources pour obtenir des informations exactes sur la correspondance des données en fonction du type d’informations sensibles](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) .
+1. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format délimité .csv, .tsv ou pipe (|). Conservez le même nom de fichier et le même emplacement que ceux que vous avez utilisés lors du hachage et du chargement précédents du fichier. Pour plus d’informations sur l’exportation de vos données sensibles et leur mise au format correct, consultez [Exporter les données sources pour obtenir des informations exactes sur la correspondance des données en fonction du type d’informations sensibles](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) .
 
       > [!NOTE]
       > Si aucune modification n’est apportée à la structure (noms de champs) du fichier de table source d’informations sensibles, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence. Consultez, [Gérez votre schéma de correspondance de données exact](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) pour les étapes de modification ou de suppression d’un schéma. Consultez la page [Créer des données exactes correspondant au type d’informations sensibles/au package de règle](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) pour les étapes de modification ou de suppression de votre package sit/rule EDM.

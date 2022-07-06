@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez un verrou de conservation avec les stratégies de rétention et les stratégies d’étiquette de conservation pour vous aider à respecter les exigences réglementaires et à vous protéger des administrateurs malveillants.
-ms.openlocfilehash: 228d4cd1a7778b5352df6d10d31b7e4c25af915f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 88f875b201dbfdb633985506aee29acf99e2adb7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016281"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622610"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > Actuellement, les [étendues de stratégie adaptative ne](retention.md#adaptive-or-static-policy-scopes-for-retention) sont pas en charge.

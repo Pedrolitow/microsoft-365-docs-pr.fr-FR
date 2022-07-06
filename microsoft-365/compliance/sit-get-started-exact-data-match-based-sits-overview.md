@@ -15,18 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Démarrage la création de types d’informations sensibles basés sur des correspondances de données exactes.
+description: Commencez à créer des types d’informations sensibles basés sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 592a4c7342af9ffe5c18d0d25b99b12cd1b3e212
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 27a4f113e401076374ef0e52cd54133e46a21b52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294666"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622038"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La création et la mise à disposition d’un type d’informations sensibles basé sur EDM (EDM) sont un processus en plusieurs phases. Ils peuvent être utilisés dans les stratégies de protection contre la perte de données Microsoft Purview, eDiscovery et certaines tâches de gouvernance du contenu Cet article décrit le flux de travail et les liens vers les procédures pour chacune des phases
 
@@ -58,10 +56,10 @@ La correspondance exacte des données est disponible dans les régions suivantes
 - Royaume-Uni
 - États-Unis
 - DoD des États-Unis
-- Cloud de la communauté du secteur public des États-Unis
+- GCC des États-Unis
 - US GCCH
 
-Vous pouvez déterminer la région dans laquelle votre locataire héberge les données au repos en suivant les procédures décrites dans [l’emplacement où vos données client Microsoft 365 sont stockées](../enterprise/o365-data-locations.md) et en faisant référence aux emplacements des centres de données dans le même article.
+Vous pouvez déterminer la région dans laquelle votre locataire héberge les données au repos en suivant les procédures décrites dans [l’emplacement où sont stockées vos données client Microsoft 365](../enterprise/o365-data-locations.md) et en faisant référence aux emplacements de la ville du centre de données dans le même article.
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
@@ -86,7 +84,7 @@ Consultez la [description du service de protection contre la perte de données](
 |---|---|
 |[Phase 1 : Exporter des données sources pour le type d’informations sensibles basé sur la correspondance exacte des données](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|-Accès en lecture aux données sensibles|
 |[Phase 2 : Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- Accès à l’Assistant Type d’informations sensibles dans le Centre d'administration Microsoft 365 </br>- accès à [Centre d'administration Microsoft 365 via PowerShell sécurité & conformité](/powershell/exchange/connect-to-scc-powershell) |
-|[Phase 3 : Hachage et chargement de la table source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|-Groupe de sécurité personnalisé et compte d’utilisateur </br>- **Hachage et chargement à partir d’un ordinateur** : accès administrateur local à un ordinateur disposant d’un accès Direct à Internet et pour héberger l’agent EDM Télécharger </br>- **Hachage et chargement à partir d’ordinateurs distincts** : accès administrateur local à un ordinateur disposant d’un accès Internet direct et hébergement de l’agent de Télécharger EDM pour le chargement et l’accès administrateur local à un ordinateur sécurisé pour héberger l’agent EDM Télécharger pour hachager la table source d’informations sensibles </br>- Accès en lecture au fichier de table source d’informations sensibles </br> le fichier de schéma |
+|[Phase 3 : Hachage et chargement de la table source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|-Groupe de sécurité personnalisé et compte d’utilisateur </br>- **Hachage et chargement à partir d’un ordinateur** : accès administrateur local à un ordinateur disposant d’un accès Internet direct et pour héberger l’agent de chargement EDM </br>- **Hachage et chargement à partir d’ordinateurs distincts** : accès administrateur local à un ordinateur disposant d’un accès Internet direct et hébergement de l’agent de chargement EDM pour le chargement et l’accès administrateur local à un ordinateur sécurisé pour héberger l’agent de chargement EDM pour hacher la table source d’informations sensibles </br>- Accès en lecture au fichier de table source d’informations sensibles </br> le fichier de schéma |
 |[Phase 4 : Créer des données exactes correspondant au type d’informations sensibles/au package de règle](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- Accès au portail de conformité Microsoft Purview |
 |[Tester un type d’informations sensibles correspondant exactement aux données](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - Accès au portail de conformité Microsoft Purview
 

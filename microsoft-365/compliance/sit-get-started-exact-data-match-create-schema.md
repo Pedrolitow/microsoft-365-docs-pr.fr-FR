@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017161"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622016"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez créer le schéma et EDM SIT à l’aide de [l’Assistant Utiliser le schéma de correspondance exacte des données et le modèle de type d’informations sensibles](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) ou [manuellement](#create-exact-data-match-schema-manually-and-upload). Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
 
@@ -50,7 +48,7 @@ Vous pouvez utiliser cet Assistant pour simplifier le processus de création de 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
-1. Dans le portail de conformité Microsoft Purview pour votre locataire, accédez à La **classification** > **des données Les données exactes correspondent aux schémas** > **EDM**.
+1. Dans le portail de conformité Microsoft Purview de votre locataire, accédez à La **classification** > **des données Les données exactes correspondent aux schémas** > **EDM**.
 
 2. Choisissez **Créer un schéma EDM** pour ouvrir le menu volant de configuration de l’Assistant de schéma.
 

@@ -1,5 +1,5 @@
 ---
-title: Migrer les recherches et conservations eDiscovery héritées vers le portail de conformité Microsoft Purview
+title: Migrer des recherches et des conservations eDiscovery héritées vers le portail de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,18 +15,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 607b66d863c0584ce1bb06c069de7870245cb167
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010085"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622588"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrer les recherches et conservations eDiscovery héritées vers le portail de conformité
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Le portail de conformité Microsoft Purview offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment des cas d’organisation de votre contenu par matière, des ensembles de révision pour passer en revue le contenu et l’analytique afin d’éliminer les données à examiner, telles que le regroupement en quasi-double, le thread de messagerie, l’analyse des thèmes et le codage prédictif.
+Le portail de conformité Microsoft Purview offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment des cas d’organisation de votre contenu par matière, des ensembles de révision pour passer en revue le contenu et l’analytique afin d’éliminer les données à examiner, telles que le regroupement en quasi-double, le thread de messagerie, l’analyse des thèmes et la prédictive  Codage.
 
 Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des conseils de base sur la façon de migrer In-Place recherches eDiscovery et les conservations du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> vers le portail de conformité.
 
@@ -37,11 +35,11 @@ Pour aider les clients à tirer parti des fonctionnalités nouvelles et amélior
 
 - Vous devez installer le module Exchange Online V2. Pour les instructions, consultez [Installer et gérer le module EXO v2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-- Vous devez être membre du groupe de rôles eDiscovery Manager dans le portail de conformité pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles Gestion de la découverte dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>.
+- Vous devez être membre du groupe de rôles eDiscovery Manager dans le portail de conformité pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles Gestion des découvertes dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
 - Cet article fournit des conseils sur la création d’une conservation eDiscovery. La stratégie de conservation sera appliquée aux boîtes aux lettres via un processus asynchrone. Lors de la création d’une conservation eDiscovery, vous devez créer une CaseHoldPolicy et caseHoldRule, sinon la conservation ne sera pas créée et les emplacements de contenu ne seront pas mis en attente.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Étape 1 : Connecter pour Exchange Online PowerShell et la sécurité & conformité PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>Étape 1 : Se connecter à Exchange Online PowerShell et à la sécurité & conformité PowerShell
 
 La première étape consiste à se connecter à Exchange Online PowerShell et à Security & Compliance PowerShell dans la même fenêtre PowerShell. Vous pouvez copier les commandes suivantes, les coller dans une fenêtre PowerShell, puis les exécuter. Vous serez invité à entrer des informations d’identification.
 
@@ -50,7 +48,7 @@ Connect-IPPSSession
 Connect-ExchangeOnline -UseRPSSession
 ```
 
-Pour obtenir des instructions détaillées, consultez [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et [Connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Pour obtenir des instructions détaillées, consultez [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>Étape 2 : Obtenir la liste des recherches In-Place eDiscovery à l’aide de Get-MailboxSearch
 
@@ -139,7 +137,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 Pour vous assurer que tout est correctement configuré, accédez au portail de conformité à [https://compliance.microsoft.com](https://compliance.microsoft.com)l’adresse **eDiscovery > Core**.
 
-![Portail de conformité Microsoft Purview eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
+![portail de conformité Microsoft Purview eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
 Le cas que vous avez créé à l’étape 3 est répertorié sur la page **eDiscovery (Standard).** Ouvrez le cas, puis notez la conservation que vous avez créée à l’étape 4 dans la liste sous l’onglet **Conservation** . Vous pouvez sélectionner la conservation pour afficher les détails sur la page de menu volant, y compris le nombre de boîtes aux lettres aux lesquelles la conservation est appliquée et l’état de distribution.
 
@@ -175,4 +173,4 @@ Si vous migrez une recherche In-Place eDiscovery, mais que vous ne l’associez 
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Pour plus d’informations sur le portail de conformité, consultez [Vue d’ensemble du portail de conformité Microsoft Purview](microsoft-365-compliance-center.md).
+- Pour plus d’informations sur le portail de conformité, consultez [Vue d’ensemble des portail de conformité Microsoft Purview](microsoft-365-compliance-center.md).

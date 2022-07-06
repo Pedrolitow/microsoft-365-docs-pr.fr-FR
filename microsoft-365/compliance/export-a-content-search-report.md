@@ -22,16 +22,14 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le portail de conformité Microsoft Purview, vous pouvez exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de la recherche et un document contenant des informations détaillées sur chaque élément qui serait exporté.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35e0a0b13594a6396ae1f757e3a1fc8a3e952173
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 294ea5ec35e141606c1197613bf5e7dc908a4ac7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093062"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624264"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Au lieu d’exporter l’ensemble complet des résultats de recherche à partir d’une recherche de contenu dans le portail de conformité Microsoft Purview (ou à partir d’une recherche associée à un cas Microsoft Purview eDiscovery (Standard), vous pouvez exporter les mêmes rapports générés lorsque vous exportez les résultats de recherche réels.
   
@@ -49,12 +47,12 @@ Lorsque vous exportez un rapport, les fichiers de rapport sont téléchargés da
   
   - Microsoft .NET Framework 4.7 ou version ultérieure
   
-- Vous devez utiliser Microsoft Edge <sup>1</sup> pour exécuter l’outil d’exportation eDiscovery. L’utilisation d’Internet Explorer 11 pour exporter les résultats de la recherche n’est plus prise <sup>en charge2</sup>.
+- Vous devez utiliser Microsoft Edge<sup>1</sup> pour exécuter l’outil d’exportation eDiscovery. L’utilisation d’Internet Explorer 11 pour exporter les résultats de la recherche n’est plus prise en charge<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> Suite aux modifications récentes apportées à Microsoft Edge, ClickOnce prise en charge n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de ClickOnce prise en charge dans Edge, consultez [Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge](configure-edge-to-export-search-results.md). En outre, Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.
+  > <sup>1</sup> Suite aux modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge de ClickOnce dans Edge, consultez [Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge](configure-edge-to-export-search-results.md). En outre, Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.
   > 
-  > <sup>2</sup> À compter d’août 2021, Microsoft 365 applications et services ne prendront plus en charge Internet Explorer 11 (IE11) et les utilisateurs peuvent avoir une expérience dégradée ou ne pas pouvoir se connecter à ces applications et services. Ces applications et services seront progressivement supprimés au cours des semaines et des mois à venir pour garantir une fin de support fluide. Chaque application et service sont progressivement supprimés selon des planifications indépendantes. Pour plus d’informations, consultez ce [billet de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+  > <sup>2</sup> À compter d’août 2021, les applications et services Microsoft 365 ne prendront plus en charge Internet Explorer 11 (IE11) et les utilisateurs peuvent avoir une expérience dégradée ou ne pas pouvoir se connecter à ces applications et services. Ces applications et services seront progressivement supprimés au cours des semaines et des mois à venir pour garantir une fin de support fluide. Chaque application et service sont progressivement supprimés selon des planifications indépendantes. Pour plus d’informations, consultez ce [billet de blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - Si la taille totale estimée des résultats retournés par la recherche dépasse 2 To, l’exportation des rapports échoue. Pour exporter correctement les rapports, essayez de limiter l’étendue et de réexécuter la recherche afin que la taille estimée des résultats soit inférieure à 2 To.
 
@@ -84,7 +82,7 @@ La première étape consiste à préparer le rapport pour le téléchargement su
   
     - **Seuls les éléments dont le format n’est pas reconnu sont chiffrés ou qui n’ont pas été indexés pour d’autres raisons**. Cette option exporte uniquement des informations sur les éléments non indexés.
 
-4. Configurez l’option **Activer la dédoublement pour Exchange contenu**.
+4. Configurez l’option **Activer la dédoublement pour le contenu Exchange** .
   
    - Si vous sélectionnez cette option, le nombre de messages en double (avant la déduplication et après la déduplication) est inclus dans le rapport récapitulatif d’exportation. En outre, une seule copie d’un message est incluse dans le fichier manifest.xml. Toutefois, le rapport des résultats d’exportation contient une ligne pour chaque copie d’un message en double afin que vous puissiez identifier les boîtes aux lettres qui contiennent une copie du message en double. Pour plus d’informations sur les rapports exportés, consultez [ce qui est inclus dans le rapport](#whats-included-in-the-report).
 
@@ -92,9 +90,9 @@ La première étape consiste à préparer le rapport pour le téléchargement su
 
      Pour plus d’informations sur la déduplication et la façon dont les éléments en double sont identifiés, consultez [Déduplication dans les résultats de la recherche eDiscovery](de-duplication-in-ediscovery-search-results.md).
 
-5. Cliquez sur **Générer un rapport**.
+5. Cliquez sur **Générer le rapport**.
 
-   Les rapports de recherche sont préparés pour le téléchargement, ce qui signifie que les documents de rapport sont chargés à un emplacement stockage Azure dans le cloud Microsoft. L'opération peut prendre plusieurs minutes.
+   Les rapports de recherche sont préparés pour le téléchargement, ce qui signifie que les documents de rapport sont chargés vers un emplacement stockage Azure dans le cloud Microsoft. L'opération peut prendre plusieurs minutes.
 
 Consultez la section suivante pour obtenir des instructions pour télécharger les rapports de recherche exportés.
   
@@ -167,4 +165,4 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
   
 - **Trace.log :** Journal de suivi qui contient des informations de journalisation détaillées sur le processus d’exportation et qui peut aider à détecter les problèmes lors de l’exportation. Si vous ouvrez un ticket avec Support Microsoft à propos d’un problème lié à l’exportation de rapports de recherche, vous pouvez être invité à fournir ce journal de suivi.
 
-- **Éléments non indexés :** Document Excel qui contient des informations sur les éléments non indexés inclus dans les résultats de la recherche. Si vous n’incluez pas d’éléments non indexés lorsque vous générez le rapport de résultats de recherche, ce rapport est toujours téléchargé, mais il est vide.
+- **Éléments non indexés :** Document Excel qui contient des informations sur les éléments non indexés inclus dans les résultats de recherche. Si vous n’incluez pas d’éléments non indexés lorsque vous générez le rapport de résultats de recherche, ce rapport est toujours téléchargé, mais il est vide.

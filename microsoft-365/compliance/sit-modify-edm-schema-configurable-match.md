@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a90f81136bf6aa78aa11d732deca19ecd1d59b9c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014781"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622060"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La classification EDM (Exact Data Match) vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. Lorsque vous devez autoriser des variantes d’une chaîne exacte, vous pouvez utiliser une *correspondance configurable* pour indiquer à Microsoft Purview d’ignorer la casse et certains délimiteurs.
 

@@ -17,29 +17,29 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment modifier un dictionnaire de mots clés dans le centre Microsoft 365 conformité.
-ms.openlocfilehash: acdf8b24aced21ed2f576fd57a3c685ef14debea
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Découvrez comment modifier un dictionnaire de mots clés dans le portail de conformité Microsoft Purview.
+ms.openlocfilehash: 8b2f2256be506f0ba01dc059bf0ac54e84c481c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271813"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621708"
 ---
 # <a name="modify-a-keyword-dictionary"></a>Modifier un dictionnaire de mots clés
 
-Vous devrez peut-être modifier des mots clés dans l’un de vos dictionnaires de mots clés ou modifier l’un des dictionnaires intégrés. Vous pouvez le faire via PowerShell ou via le Centre de conformité.
+Vous devrez peut-être modifier des mots clés dans l’un de vos dictionnaires de mots clés ou modifier l’un des dictionnaires intégrés. Pour ce faire, vous pouvez utiliser PowerShell ou le Centre de conformité.
 
 ## <a name="modify-a-keyword-dictionary-in-compliance-center"></a>Modifier un dictionnaire de mots clés dans le Centre de conformité
 
-Les dictionnaires de mots clés peuvent être utilisés en tant `Primary elements` `Supporting elements` que modèles de type d’informations sensibles (SIT). Vous pouvez modifier un dictionnaire de mots clés lors de la création d’un sit ou d’un sit existant. Par exemple, pour modifier un dictionnaire de mots clés existant :
+Les dictionnaires de mots clés peuvent être utilisés en tant que `Primary elements` modèles de type d’informations sensibles (SIT) ou `Supporting elements` dans celui-ci. Vous pouvez modifier un dictionnaire de mots clés lors de la création d’un SIT ou d’un SIT existant. Par exemple, pour modifier un dictionnaire de mots clés existant :
 
-1. Ouvrez le modèle qui possède le dictionnaire de mots clés que vous souhaitez mettre à jour.
-2. Recherchez le dictionnaire de mots clés que vous souhaitez mettre à jour et sélectionnez Modifier.
-3. A effectuer vos modifications à l’aide d’un mot clé par ligne.
+1. Ouvrez le modèle qui contient le dictionnaire de mots clés à mettre à jour.
+2. Recherchez le dictionnaire de mots clés à mettre à jour et choisissez Modifier.
+3. Apportez vos modifications à l’aide d’un mot clé par ligne.
 
-   ![capture d’écran des mots clés de modification.](../media/edit-keyword-dictionary.png)
+   ![capture d’écran de la modification des mots clés.](../media/edit-keyword-dictionary.png)
 
-4. Choose `Done`.
+4. Choisissez `Done`.
 
 ## <a name="modify-a-keyword-dictionary-using-powershell"></a>Modifier un dictionnaire de mots clés à l’aide de PowerShell
 
@@ -51,9 +51,9 @@ Tout d’abord, récupérez l’objet dictionnaire :
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-L’impression `$dict` affiche les différentes propriétés. Les mots clés eux-mêmes sont stockés dans un objet sur le système arrière, `$dict.KeywordDictionary` mais contiennent une représentation sous la chaîne de ces mots clés, que vous utiliserez pour modifier le dictionnaire.
+L’impression `$dict` affiche les différentes propriétés. Les mots clés eux-mêmes sont stockés dans un objet sur le serveur principal, mais `$dict.KeywordDictionary` ils contiennent une représentation sous forme de chaîne, que vous utiliserez pour modifier le dictionnaire.
 
-Avant de modifier le dictionnaire, vous devez revenir à la chaîne de termes en tableau à l’aide de la `.split(',')` méthode. Ensuite, vous nettoyerez les espaces `.trim()` indésirables entre les mots clés avec la méthode, en laissant uniquement les mots clés à travailler.
+Avant de modifier le dictionnaire, vous devez transformer la chaîne de termes en tableau à l’aide de la `.split(',')` méthode. Ensuite, vous allez nettoyer les espaces indésirables entre les mots clés avec la `.trim()` méthode, en laissant uniquement les mots clés à utiliser.
 
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -98,7 +98,7 @@ Exécutez cette commande pour supprimer réellement les termes de la liste :
 $updatedTerms = $terms | Where-Object {$_ -notin $termsToRemove}
 ```
 
-Exécutez la commande `$updatedTerms` pour afficher la liste des termes mise à jour. La sortie de la commande ressemble à ceci (les termes spécifiés ont été supprimés) :
+Exécutez la commande `$updatedTerms` pour afficher la liste mise à jour des termes. La sortie de la commande ressemble à ceci (les termes spécifiés ont été supprimés) :
 
 ```powershell
 aarskog's syndrome
@@ -133,7 +133,7 @@ Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 Set-DlpKeywordDictionary -Identity "Diseases" -FileData ([System.IO.File]::ReadAllBytes('C:myPath\terms.txt'))
 ```
 
-Le dictionnaire a maintenant été mis à jour sur place. Le `Identity` champ prend le nom du dictionnaire. Si vous souhaitez `Set-` également modifier le nom de votre dictionnaire à l’aide de la cmdlet, `-Name` il vous suffit d’ajouter le paramètre à ce qui est indiqué ci-dessus avec votre nouveau nom de dictionnaire.
+Le dictionnaire a maintenant été mis à jour sur place. Le `Identity` champ prend le nom du dictionnaire. Si vous souhaitez également modifier le nom de votre dictionnaire à l’aide de l’applet `Set-` de commande, il vous suffit d’ajouter le `-Name` paramètre à ce qui précède avec votre nouveau nom de dictionnaire.
 
 ## <a name="see-also"></a>Voir aussi
 

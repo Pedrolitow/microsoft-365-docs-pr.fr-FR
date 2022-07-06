@@ -11,21 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Reuters FX de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
-ms.openlocfilehash: d7566691ea4030d852aa4075a8bfe7088e71bf62
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Reuters FX de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données à partir de sources de données tierces dans Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces.
+ms.openlocfilehash: defc9ddf4003c35b976ec06b7a4cc8e28328954b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320147"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624684"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-fx-data"></a>Configurer un connecteur pour archiver les données Reuters FX
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données de la plateforme Reuters FX vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas vous fournit un connecteur [Reuters FX](https://globanet.com/reuters-fx/) configuré pour capturer des éléments à partir de la source de données tierce (régulièrement), puis importer ces éléments dans Microsoft 365. Le connecteur convertit les devises et les taux de change du compte Reuters FX au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois que les données Reuters FX sont stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Reuters FX pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données Reuters FX stockées dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la découverte électronique, les stratégies de rétention et les étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Reuters FX pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-reuters-fx-data"></a>Vue d’ensemble de l’archivage des données Reuters FX
 
@@ -37,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Toutes les 24 heures, les éléments Reuters FX sont copiés sur le site Veritas Merge1. Le connecteur convertit également les éléments au format de message électronique.
 
-3. Le connecteur Reuters FX que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Reuters FX que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère le contenu vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique d’utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier du dossier Boîte de réception nommé **Reuters FX** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres vers laquelle importer des éléments à l’aide de la valeur de la propriété *Email* . Chaque élément Reuters FX contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
@@ -45,15 +43,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte Veritas Merge1 pour les connecteurs Microsoft. Pour créer un compte, contactez [le support technique Veritas](https://globanet.com/contact-us). Vous devez vous connecter à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée le connecteur Reuters FX à l’étape 1 (et le termine à l’étape 3). Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur Reuters FX à l’étape 1 (et le termine à l’étape 3) doit avoir le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données Veritas est en préversion publique dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données Veritas est en préversion publique dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-the-reuters-fx-connector"></a>Étape 1 : Configurer le connecteur Reuters FX
 
-La première étape consiste à accéder à la page **Connecteurs de données** dans le Microsoft 365 et à créer un connecteur pour les données Reuters FX.
+La première étape consiste à accéder à la page **Connecteurs de données** dans Microsoft 365 et à créer un connecteur pour les données Reuters FX.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) **Data connectorsReuters** >  FX, puis cliquez **dessus**.
+1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) et cliquez sur **Connecteurs** >  de données **Reuters FX**.
 
 2. Dans la page de description du produit **Reuters FX** , cliquez sur **Ajouter un connecteur**.
 
@@ -73,7 +71,7 @@ Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mapp
 
 Pour mapper les utilisateurs et terminer la configuration du connecteur dans le portail de conformité, suivez les étapes ci-dessous :
 
-1. Dans la page **Map Reuters FX users to Microsoft 365 users**, activez le mappage automatique des utilisateurs.
+1. Dans la page **Map Reuters FX users to Microsoft 365 users** , activez le mappage automatique des utilisateurs.
 
    Les éléments Reuters FX incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 

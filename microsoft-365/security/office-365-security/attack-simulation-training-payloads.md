@@ -1,5 +1,5 @@
 ---
-title: Charges utiles dans l’entraînement de simulation d’attaque
+title: Charges utiles pour la formation à la simulation d’attaque
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer et à gérer des charges utiles pour la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487221"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621290"
 ---
 # <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Charges utiles dans l’entraînement de simulation d’attaque dans Defender pour Office 365
 
@@ -101,7 +101,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
    ![Créez une charge utile sous l’onglet Charges utiles du locataire dans Payloads in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **Créer une charge utile** est également disponible sur la page **Sélectionner la charge utile** de l’Assistant création de simulation. Pour plus d’informations, consultez [Simuler une attaque par hameçonnage dans Defender pour Office 365](attack-simulation-training.md).
+   > ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **La création d’une charge utile** est également disponible à l’étape **sélectionner la charge utile et la page de connexion** de l’Assistant création de simulation. Pour plus d’informations, consultez [Créer une simulation : sélectionner une charge utile et une page de connexion](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > À tout moment pendant l’Assistant création, vous pouvez cliquer sur **Enregistrer et fermer** pour enregistrer votre progression et continuer à configurer la charge utile ultérieurement. Vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant la notification sous l’onglet **Charges utiles du locataire** dans **Charges utiles**, puis en ![cliquant sur l’icône Modifier la charge utile.](../../media/m365-cc-sc-edit-icon.png) **Modifiez la charge utile**. La charge utile partiellement terminée aura la valeur **d’état** **Draft**.
 

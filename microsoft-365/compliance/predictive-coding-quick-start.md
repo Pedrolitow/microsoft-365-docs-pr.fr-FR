@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment commencer à utiliser le module de codage prédictif dans eDiscovery (Premium). Cet article vous guide tout au long du processus de bout en bout d’utilisation du codage prédictif pour identifier le contenu d’un ensemble de révisions le plus pertinent pour votre investigation.
-ms.openlocfilehash: ac8e31540fbe817b83b5fd0bdae2fadea7040b1a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddf1762545765424891108f50cceea17999f0920
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100788"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625080"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Démarrage rapide : Codage prédictif dans eDiscovery (Premium) (préversion)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article présente un guide de démarrage rapide pour l’utilisation du codage prédictif dans Microsoft Purview eDiscovery (Premium). Le module de codage prédictif utilise des fonctionnalités de Machine Learning intelligentes pour vous aider à éliminer de grands volumes de contenu de cas qui ne sont pas pertinents pour votre investigation. Pour ce faire, créez et entraînez vos propres modèles de codage prédictif qui vous aident à hiérarchiser les éléments les plus pertinents à examiner.
 
@@ -39,9 +37,9 @@ Pour obtenir une vue d’ensemble détaillée du codage prédictif, consultez [E
 
 La première étape consiste à créer un modèle de codage prédictif dans l’ensemble de révisions
 
-1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Révision des ensembles**.
+1. Dans le portail de conformité Microsoft Purview, ouvrez un cas eDiscovery (Premium), puis sélectionnez l’onglet **Ensembles de révision**.
 
-2. Ouvrez un jeu de révision, puis cliquez sur **le codage prédictif AnalyticsManage** >  (préversion).
+2. Ouvrez un ensemble de révisions, puis cliquez sur **Analytics** > **Manage predictive coding (préversion).**
 
    ![Cliquez sur le menu déroulant Analyser dans l’ensemble de révision pour accéder à la page de codage prédictif.](..\media\ManagePredictiveCoding.png)
 
@@ -59,7 +57,7 @@ Pour obtenir des instructions plus détaillées, consultez [Créer un modèle de
 
 Après avoir créé le modèle, l’étape suivante consiste à terminer la première série d’entraînement en étiquetant les éléments comme pertinents ou non pertinents.
 
-1. Ouvrez le jeu de révisions, puis cliquez sur **le codage prédictif AnalyticsManage** >  (préversion).
+1. Ouvrez le jeu de révisions, puis cliquez sur **Analytics** > **Manage predictive coding (préversion).**
 
 2. Dans la page **Modèles de codage prédictif (préversion),** sélectionnez le modèle que vous souhaitez entraîner.
 

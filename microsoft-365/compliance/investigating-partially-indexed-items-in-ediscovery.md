@@ -17,19 +17,17 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 528693febbb6d02f6ea143d94aaae154d3dfde7e
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir d’Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
+ms.openlocfilehash: 1e048cece931ecefe395a5a26bbfb840c8b831f6
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078741"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625102"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Examen des éléments partiellement indexés dans eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Une recherche eDiscovery que vous exécutez à partir de la portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont Exchange des éléments de boîte aux lettres et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
+Une recherche eDiscovery que vous exécutez à partir de la portail de conformité Microsoft Purview inclut automatiquement des éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et OneDrive Entreprise sites qui, pour une raison quelconque, n’ont pas été entièrement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont correctement indexés, car ils sont dans les [limites d’indexation des messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont retournés en tant qu’éléments partiellement indexés lorsque vous exécutez une recherche eDiscovery :
   
 - Les messages électroniques ont un fichier joint qui ne peut pas être ouvert ; il s’agit de la cause la plus courante des éléments de courrier partiellement indexés.
 
@@ -47,7 +45,7 @@ Après avoir exécuté une recherche eDiscovery, le nombre total et la taille de
   
 - Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus à la fois dans le nombre (et la taille) des éléments de résultats de recherche et des éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l’élément est inclus uniquement avec l’ensemble des résultats de la recherche ; il n’est pas inclus en tant qu’élément partiellement indexé.
 
-- Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive *ne sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées de la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche eDiscovery. Par exemple, si vous recherchez uniquement des sites, le nombre estimé d’éléments partiellement indexés est égal à zéro.
+- Les éléments partiellement indexés situés dans les sites SharePoint et OneDrive *ne sont pas* inclus dans l’estimation des éléments partiellement indexés affichés dans les statistiques détaillées pour la recherche. Toutefois, les éléments partiellement indexés peuvent être exportés lorsque vous exportez les résultats d’une recherche eDiscovery. Par exemple, si vous recherchez uniquement des sites, le nombre estimé d’éléments partiellement indexés est égal à zéro.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcul du ratio d’éléments partiellement indexés dans votre organisation
 
@@ -111,7 +109,7 @@ Voici une liste d’erreurs d’indexation et une description de la cause possib
 | `parseroutputsize` <br/> |La sortie de l’analyse d’une pièce jointe était trop grande et devait être tronquée.  <br/> |
 | `parserunknowntype` <br/> |Une pièce jointe avait un type de fichier que Microsoft 365 n’a pas pu détecter.  <br/> |
 | `parserunsupportedtype` <br/> |Une pièce jointe avait un type de fichier que Office 365 pouvait détecter, mais l’analyse de ce type de fichier n’est pas prise en charge.  <br/> |
-| `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans Exchange Store était trop grande pour être récupérée et le message n’a pas pu être traité. Cela se produit généralement uniquement pour la propriété de corps d’un e-mail.  <br/> |
+| `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans Exchange Store était trop importante pour être récupérée et le message n’a pas pu être traité. Cela se produit généralement uniquement pour la propriété de corps d’un e-mail.  <br/> |
 | `retrieverrms` <br/> |Le récupérateur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque vous atteignez la limite, et la propriété est tronquée.  <br/> |
 

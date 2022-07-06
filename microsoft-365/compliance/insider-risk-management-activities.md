@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759865"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622962"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’examen des activités des utilisateurs à risque est une première étape importante dans la réduction des risques internes pour votre organisation. Ces risques peuvent être des activités qui génèrent des alertes à partir de stratégies de gestion des risques internes, ou des risques liés à des activités détectées par des stratégies, mais qui ne créent pas immédiatement une alerte de gestion des risques internes pour les utilisateurs. Vous pouvez examiner ces types d’activités à l’aide des **rapports d’activité utilisateur (préversion)** ou du **tableau de bord Alerte**.
 
@@ -30,7 +28,7 @@ L’examen des activités des utilisateurs à risque est une première étape im
 
 Les rapports d’activité utilisateur vous permettent d’examiner les activités de certains utilisateurs pendant une période définie sans avoir à les affecter temporairement ou explicitement à une stratégie de gestion des risques internes. Dans la plupart des scénarios de gestion des risques internes, les utilisateurs sont explicitement définis dans les stratégies, et ils peuvent avoir des alertes de stratégie (en fonction du déclenchement d’événements) et des scores de risque associés aux activités. Toutefois, dans certains scénarios, vous souhaiterez peut-être examiner les activités des utilisateurs qui ne sont pas explicitement définis dans une stratégie. Ces activités peuvent être destinées aux utilisateurs auxquels vous avez reçu un conseil sur l’utilisateur et les activités potentiellement risquées, ou aux utilisateurs qui n’ont généralement pas besoin d’être affectés à une stratégie de gestion des risques internes.
 
-Une fois que vous avez configuré des indicateurs dans la page de gestion des risques internes **Paramètres**, l’activité utilisateur est détectée pour l’activité à risque associée aux indicateurs sélectionnés. Vous n’avez pas besoin de configurer une stratégie pour que les rapports d’activité utilisateur détectent et signalent les activités à risque par les utilisateurs de votre organisation. Les activités incluses dans les rapports d’activité utilisateur ne nécessitent pas de déclenchement d’événements pour que les activités soient affichées. Cette configuration signifie que toutes les activités détectées pour l’utilisateur sont disponibles pour révision, qu’il ait un événement déclencheur ou qu’il crée une alerte. Les rapports sont créés par utilisateur et peuvent inclure toutes les activités pour une période personnalisée de 90 jours. Plusieurs rapports pour le même utilisateur ne sont pas pris en charge.
+Une fois que vous avez configuré des indicateurs dans la page **Paramètres de gestion des risques internes** , l’activité utilisateur est détectée pour l’activité à risque associée aux indicateurs sélectionnés. Vous n’avez pas besoin de configurer une stratégie pour que les rapports d’activité utilisateur détectent et signalent les activités à risque par les utilisateurs de votre organisation. Les activités incluses dans les rapports d’activité utilisateur ne nécessitent pas de déclenchement d’événements pour que les activités soient affichées. Cette configuration signifie que toutes les activités détectées pour l’utilisateur sont disponibles pour révision, qu’il ait un événement déclencheur ou qu’il crée une alerte. Les rapports sont créés par utilisateur et peuvent inclure toutes les activités pour une période personnalisée de 90 jours. Plusieurs rapports pour le même utilisateur ne sont pas pris en charge.
 
 Après avoir examiné les activités d’un utilisateur, les enquêteurs peuvent ignorer les activités individuelles comme étant bénignes, partager ou envoyer par e-mail un lien vers le rapport avec d’autres enquêteurs, ou choisir d’affecter temporairement ou explicitement l’utilisateur à une stratégie de gestion des risques internes. Les utilisateurs doivent être affectés au groupe de *rôles Insider Risk Management Investigators* pour afficher la page **Rapports d’activité des utilisateurs** .  
 
@@ -163,7 +161,7 @@ Le graphique **d’activité utilisateur** est l’un des outils les plus puissa
 1. **Filtres de temps** : par défaut, les trois derniers mois d’activités affichés dans le graphique d’activité utilisateur. Vous pouvez facilement filtrer l’affichage du graphique en sélectionnant les onglets *6 Mois*, *3 Mois* ou *1 Mois* dans le graphique en bulles.
 2. **Activité et détails des alertes de risque** : les activités à risque sont affichées visuellement sous forme de bulles colorées dans le graphique d’activité utilisateur. Les bulles sont créées pour différentes catégories de risques et. Sélectionnez une bulle pour afficher les détails de chaque activité à risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
-    - Catégorie **d’activité de risque**. Par exemple, *des e-mails avec des pièces jointes envoyées en dehors de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
+    - Catégorie **d’activité de risque**. Par exemple, *les e-mails avec des pièces jointes envoyées en dehors de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
     - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
     - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou e-mail associé à l’activité à risque sont également disponibles.
 3. **Filtres et tri (préversion)** :
@@ -241,7 +239,7 @@ Une fois le cas créé, les enquêteurs et les analystes peuvent gérer et agir 
 
 Pour réduire le nombre d’éléments plus anciens qui fournissent une valeur actuelle limitée, la conservation et les limites suivantes s’appliquent aux alertes de gestion des risques internes, aux cas et aux rapports d’activité des utilisateurs :
 
-|Élément|Rétention/limite|
+|Item|Rétention/limite|
 |---|---|
 |Alertes avec l’état de révision des besoins|120 jours après la création de l’alerte, puis supprimé automatiquement|
 |Cas actifs (et artefacts associés)|Rétention indéfinie, jamais expirer|

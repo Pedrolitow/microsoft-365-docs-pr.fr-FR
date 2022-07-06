@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: 0e8453bee843131a5781318f7adde8d19bb04d92
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6a68f63c3f304ed4a5f3d79445cd713125327bd2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016809"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624286"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Pour déclarer des documents et courriers électroniques comme [enregistrements](records-management.md#records), utilisez [des étiquettes de rétention](retention.md#retention-labels) qui servent à marquer du contenu comme **enregistrement** ou **enregistrement réglementaire**.
 

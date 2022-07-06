@@ -374,7 +374,6 @@
       items:
         - name: Méthodes de protection des données des appareils et des applications
           href: devices/choose-device-security.md
-        - name: Validation des paramètres sur Android ou iOS
         - name: Mobility + Security de Base
           items:
             - name: Vue d’ensemble de la fonction Mobility + Security de Base

@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de la conformité Microsoft 365 pour les notes de publication de caractères à double octets (préversion)
+title: Prise en charge de Microsoft Purview pour les notes de publication de caractères à double octets (préversion)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication pour la prise en charge des jeux de caractères à double octets.
-ms.openlocfilehash: 2de0e67c78ac558f4bdc2648790e49fad86e3178
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 593e1db04c5e4dc56bc4cc1a7fd11d907d4fe09d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595051"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622412"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Prise en charge des notes de publication des jeux de caractères à double octets
 
@@ -30,7 +30,7 @@ ms.locfileid: "64595051"
 - Korean
 - Japanese
 
-Cette prise en charge est disponible pour les types d’informations sensibles et les dictionnaires de mots-clés et sera reflétée dans la protection contre la perte de données (Exchange Online, Share Point Online, OneDrive Entreprise et Teams), la conformité des communications, l’étiquetage automatique dans les applications Office et Microsoft Defender for Cloud Apps.
+Cette prise en charge est disponible pour les types d’informations sensibles et les dictionnaires de mots-clés et sera reflétée dans la protection contre la perte de données Microsoft Purview (pour Exchange Online, Share Point Online, OneDrive Entreprise et Teams), la conformité des communications, la détection automatique dans les applications Office et Microsoft Defender for Cloud Apps.
 
 ## <a name="known-issues"></a>Problèmes détectés
 

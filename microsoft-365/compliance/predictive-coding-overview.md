@@ -13,19 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Le nouveau module de codage prédictif dans eDiscovery (Premium) utilise le Machine Learning pour analyser les éléments d’un ensemble de révisions sur prédictifs qui sont pertinents pour votre cas ou votre enquête.
-ms.openlocfilehash: cc0db62b4ec7d632dae70347aaba5644138bcdce
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Le nouveau module de codage prédictif dans eDiscovery (Premium) utilise le Machine Learning pour analyser les éléments d’un ensemble de révisions afin de déterminer les éléments pertinents pour votre cas ou votre investigation.
+ms.openlocfilehash: 3ea3d59aa2387b1a762e66fd11942ed96a6288a2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100762"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625036"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>En savoir plus sur le codage prédictif dans eDiscovery (Premium) (préversion)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Le module de codage prédictif dans eDiscovery (Premium) utilise les fonctionnalités d’apprentissage automatique intelligentes pour vous aider à réduire la quantité de contenu à examiner. Le codage prédictif vous permet de réduire et d’éliminer de grands volumes de contenu de cas dans un ensemble d’éléments pertinents que vous pouvez classer par ordre de priorité pour révision. Pour ce faire, créez et entraînez vos propres modèles de codage prédictif qui vous aident à hiérarchiser la révision des éléments les plus pertinents d’un ensemble de révisions.
+Le module de codage prédictif dans eDiscovery (Premium) utilise les fonctionnalités de Machine Learning intelligentes pour vous aider à réduire la quantité de contenu à examiner. Le codage prédictif vous permet de réduire et d’éliminer de grands volumes de contenu de cas dans un ensemble d’éléments pertinents que vous pouvez classer par ordre de priorité pour révision. Pour ce faire, créez et entraînez vos propres modèles de codage prédictif qui vous aident à hiérarchiser la révision des éléments les plus pertinents d’un ensemble de révisions.
 
 Le module de codage prédictif est conçu pour simplifier la gestion d’un modèle au sein d’un ensemble de révisions et fournir une approche itérative de l’entraînement de votre modèle afin que vous puissiez commencer plus rapidement avec les fonctionnalités de Machine Learning dans eDiscovery (Premium). Pour commencer, vous pouvez créer un modèle, étiqueter jusqu’à 50 éléments comme pertinents ou non pertinents. Le système utilise cette formation pour appliquer des scores de prédiction à chaque élément du jeu de révision. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents). Si vous souhaitez entraîner des modèles avec des taux d’accuracies et de rappel plus élevés, vous pouvez continuer à étiqueter les éléments dans les cycles d’entraînement suivants jusqu’à ce que le modèle se stabilise.  
 

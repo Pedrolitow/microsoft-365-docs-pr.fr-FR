@@ -1,5 +1,5 @@
 ---
-title: Démarrage avec des cas eDiscovery (Standard) dans Microsoft Purview
+title: Prise en main des cas eDiscovery (Standard) dans Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment commencer à utiliser eDiscovery (Standard) dans Microsoft Purview. Après avoir affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des conservations eDiscovery, puis rechercher et exporter du contenu pertinent pour votre enquête.
-ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 2bbd7c0bdeb1a23274deacb5b70e83ba45aacdc5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115870"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624308"
 ---
-# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Démarrage avec eDiscovery (Standard) dans Microsoft Purview
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Bien démarrer avec eDiscovery (Standard) dans Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview eDiscovery (Standard) dans Microsoft Purview fournit un outil eDiscovery de base que les organisations peuvent utiliser pour rechercher et exporter du contenu dans Microsoft 365 et Office 365. Vous pouvez également utiliser eDiscovery (Standard) pour placer une conservation eDiscovery sur des emplacements de contenu, tels que des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des Microsoft Teams. Rien n’est nécessaire pour déployer eDiscovery (Standard), mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à utiliser eDiscovery (Standard) pour rechercher, exporter et conserver du contenu.
+Microsoft Purview eDiscovery (Standard) dans Microsoft Purview fournit un outil eDiscovery de base que les organisations peuvent utiliser pour rechercher et exporter du contenu dans Microsoft 365 et Office 365. Vous pouvez également utiliser eDiscovery (Standard) pour placer une conservation eDiscovery sur les emplacements de contenu, tels que les boîtes aux lettres Exchange, les sites SharePoint, les comptes OneDrive et Microsoft Teams. Rien n’est nécessaire pour déployer eDiscovery (Standard), mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à utiliser eDiscovery (Standard) pour rechercher, exporter et conserver du contenu.
 
 Cet article décrit les étapes nécessaires à la configuration d’eDiscovery (Standard). Cela inclut la garantie des licences appropriées requises pour accéder à eDiscovery (Standard) et placer une conservation eDiscovery sur les emplacements de contenu, ainsi que l’attribution d’autorisations à votre équipe informatique, juridique et d’enquête afin qu’elle puisse accéder aux cas et les gérer. Cet article fournit également une vue d’ensemble générale de l’utilisation de cas pour rechercher et exporter du contenu.
 
@@ -37,11 +35,11 @@ Cet article décrit les étapes nécessaires à la configuration d’eDiscovery 
 
 La gestion des licences pour eDiscovery (Standard) nécessite l’abonnement de l’organisation et les licences par utilisateur appropriés.
 
-- **Abonnement à l’organisation :** Pour accéder à eDiscovery (Standard) dans le portail de conformité Microsoft Purview et utiliser les fonctionnalités de conservation et d’exportation, votre organisation doit disposer d’un Exchange abonnement en ligne Plan 2 ou Microsoft 365 E3 ou Office 365 E3 ou supérieur. Microsoft 365 les organisations de première ligne doivent disposer d’un abonnement F5.
+- **Abonnement à l’organisation :** Pour accéder à eDiscovery (Standard) dans le portail de conformité Microsoft Purview et utiliser les fonctionnalités de conservation et d’exportation, votre organisation doit disposer d’un abonnement Exchange online Plan 2 ou Microsoft 365 E3 ou Office 365 E3 ou supérieur. Les organisations de première ligne Microsoft 365 doivent avoir un abonnement F5.
 
 - **Licences par utilisateur :** Pour placer une conservation eDiscovery sur les boîtes aux lettres et les sites, les utilisateurs doivent se voir attribuer l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
 
-  -  Exchange licence Plan 2 en ligne
+  -  Licence Exchange Online Plan 2
 
    OR
    
@@ -53,7 +51,7 @@ La gestion des licences pour eDiscovery (Standard) nécessite l’abonnement de 
 
    OR
 
-  - Microsoft 365 licence de module complémentaire conformité F5 ou F5 Security & Compliance  
+  - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on license  
 
   AND
 
@@ -63,9 +61,9 @@ La gestion des licences pour eDiscovery (Standard) nécessite l’abonnement de 
 
 Pour obtenir des informations et des conseils sur la sécurité et la conformité :
 
-- Téléchargez et consultez la section eDiscovery et audit dans la [table de comparaison Microsoft 365](https://aka.ms/M365EnterprisePlans).
+- Téléchargez et consultez la section eDiscovery et audit dans le [tableau Comparaison microsoft 365](https://aka.ms/M365EnterprisePlans).
 
-- Consultez les [instructions Microsoft 365 relatives à la conformité des & de sécurité - Descriptions de service | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+- Consultez les [conseils microsoft 365 pour la conformité & de sécurité - Descriptions de service | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : Attribuer des autorisations eDiscovery
 
@@ -73,7 +71,7 @@ Pour accéder à eDiscovery (Standard) ou être ajouté en tant que membre d’u
 
 Effectuez les étapes suivantes pour ajouter des utilisateurs au groupe de rôles gestionnaire eDiscovery :
 
-1. Accédez au portail de conformité et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre Microsoft 365 ou Office 365 organisation.
+1. Accédez au portail de conformité et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365 ou Office 365.
 
 2. Dans la page Autorisations, sélectionnez le groupe de <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**rôles**</a> **gestionnaire eDiscovery** .
 
@@ -129,7 +127,7 @@ Si vous créez un cas à l’étape 3 et que vous êtes la seule personne à uti
 
 1. Dans la page **eDiscovery (Standard)** du portail de conformité, cliquez sur le nom du cas auquel vous souhaitez ajouter des membres.
 
-2. Dans la page d’accueil du cas, sélectionnez l’onglet **Paramètres**, puis sélectionnez **Autorisations d’accès &**.
+2. Dans la page d’accueil du cas, sélectionnez l’onglet **Paramètres** , puis sélectionnez **Accès & autorisations**.
 
 3. Dans la page de menu volant **Accès & autorisations** , sous **Membres**, cliquez sur **Ajouter** pour ajouter des membres au cas.
 
@@ -162,4 +160,4 @@ Pour commencer à utiliser eDiscovery (Standard), voici un flux de travail simpl
 
    - Modifiez une requête et réexécutez la recherche.
 
-3. **[Exportez et téléchargez les résultats de la recherche](export-content-in-core-ediscovery.md)**. Une fois que vous avez recherché et trouvé des données pertinentes pour votre enquête, vous pouvez les exporter hors de Office 365 pour examen par des personnes extérieures à l’équipe d’enquête. L’exportation de données est un processus en deux étapes. La première étape consiste à exporter les résultats d’une recherche dans le cas de Office 365. Pour ce faire, copiez les résultats d’une recherche dans un emplacement stockage Azure fourni par Microsoft. L’étape suivante consiste à utiliser l’outil d’exportation eDiscovery pour télécharger le contenu sur un ordinateur local. En plus des fichiers de données exportés, le package d’exportation contient un rapport d’exportation, un rapport récapitulatif et un rapport d’erreur.
+3. **[Exportez et téléchargez les résultats de la recherche](export-content-in-core-ediscovery.md)**. Une fois que vous avez recherché et trouvé des données pertinentes pour votre enquête, vous pouvez les exporter hors de Office 365 pour examen par des personnes extérieures à l’équipe d’enquête. L’exportation de données est un processus en deux étapes. La première étape consiste à exporter les résultats d’une recherche dans le cas de Office 365. Pour ce faire, copiez les résultats d’une recherche vers un emplacement de stockage Azure fourni par Microsoft. L’étape suivante consiste à utiliser l’outil d’exportation eDiscovery pour télécharger le contenu sur un ordinateur local. En plus des fichiers de données exportés, le package d’exportation contient un rapport d’exportation, un rapport récapitulatif et un rapport d’erreur.

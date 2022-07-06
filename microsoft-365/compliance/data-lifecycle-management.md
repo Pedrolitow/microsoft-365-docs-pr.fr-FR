@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: Apprenez comment la gestion du cycle de vie des données Microsoft Purview vous aide à conserver ce dont vous avez besoin et à supprimer ce dont vous n'avez pas besoin.
-ms.openlocfilehash: d5d91bef4332722d148bfdf136df03e75bb85734
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d783ef7f97b45f21f6c90f2aa0230120634abd93
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286864"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624396"
 ---
 # <a name="learn-about-data-lifecycle-management"></a>En savoir plus sur la gestion du cycle de vie des données
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La gestion du cycle de vie des données Microsoft Purview (anciennement Microsoft Information Governance) vous fournit des outils et des capacités pour conserver le contenu que vous devez conserver et supprimer le contenu que vous ne devez pas conserver. La conservation et la suppression de contenu sont souvent nécessaires pour la conformité et les exigences réglementaires, mais la suppression de contenu qui n’a plus de valeur commerciale vous aide également à gérer les risques et la responsabilité. Par exemple, cela réduit la surface d’attaque.
 

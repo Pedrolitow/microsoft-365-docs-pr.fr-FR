@@ -22,18 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle conservation associée à un cas eDiscovery dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: 04d41936e437740a39ab73aeafb9ca40b914dd2f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ebfe9bf2fc2784e8c590b949912aa15c1b773cc0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012745"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621642"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery (Standard)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Security & Compliance PowerShell fournit des applets de commande qui vous permettent d’automatiser des tâches fastidieuses liées à la création et à la gestion de cas eDiscovery. Actuellement, l’utilisation de l’affaire Microsoft Purview eDiscovery (Standard) dans le portail de conformité Microsoft Purview pour mettre un grand nombre d’emplacements de contenu de consignation en attente prend du temps et de la préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise à la conservation. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
+Security & Compliance PowerShell fournit des applets de commande qui vous permettent d’automatiser des tâches fastidieuses liées à la création et à la gestion de cas eDiscovery. Actuellement, l’utilisation de l’affaire Microsoft Purview eDiscovery (Standard) dans le portail de conformité Microsoft Purview pour mettre en attente un grand nombre d’emplacements de contenu de consigna tion prend du temps et de la préparation. Par exemple, avant de créer une conservation, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise à la conservation. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
 
 Le script vous invite à entrer le nom du domaine Mon site de votre organisation (par exemple, `contoso` dans l’URL https://contoso-my.sharepoint.com), le nom d’un cas eDiscovery existant, le nom de la nouvelle conservation associée au cas, une liste d’adresses e-mail des utilisateurs que vous souhaitez mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l’URL du site OneDrive Entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et OneDrive Entreprise site pour chaque utilisateur de la liste à la conservation. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation.
 
@@ -55,7 +53,7 @@ Voici les étapes à suivre pour y parvenir :
 
 - Le script ajoute la liste des utilisateurs à une nouvelle conservation associée à un cas existant. Assurez-vous que le cas auquel vous souhaitez associer la conservation est créé avant d’exécuter le script.
 
-- Le script de cet article prend en charge l’authentification moderne lors de la connexion à Security & Compliance PowerShell et SharePoint Online Management Shell. Vous pouvez utiliser le script tel qu’il est si vous êtes un Microsoft 365 ou une organisation Microsoft 365 Cloud de la communauté du secteur public. Si vous êtes une organisation Office 365 Allemagne, une organisation Microsoft 365 Cloud de la communauté du secteur public High ou une organisation DoD Microsoft 365, vous devrez modifier le script pour l’exécuter correctement. Plus précisément, vous devez modifier la ligne `Connect-IPPSSession` et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour votre type d’organisation) pour vous connecter à Security & Compliance PowerShell. Pour plus d’informations, consultez les exemples de [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Le script de cet article prend en charge l’authentification moderne lors de la connexion à Security & Compliance PowerShell et SharePoint Online Management Shell. Vous pouvez utiliser le script tel qu’il est si vous êtes une organisation Microsoft 365 ou Microsoft 365 GCC. Si vous êtes une organisation Office 365 Allemagne, une organisation Microsoft 365 GCC High ou une organisation Microsoft 365 DoD, vous devrez modifier le script pour l’exécuter correctement. Plus précisément, vous devez modifier la ligne `Connect-IPPSSession` et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour votre type d’organisation) pour vous connecter à Security & Compliance PowerShell. Pour plus d’informations, consultez les exemples dans [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - Le script se déconnecte automatiquement de Security & Compliance PowerShell et SharePoint Online Management Shell.
 
@@ -65,9 +63,9 @@ Voici les étapes à suivre pour y parvenir :
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Étape 1 : installer SharePoint Online Management Shell
 
-La première étape consiste à installer le SharePoint Online Management Shell s’il n’est pas déjà installé sur votre ordinateur local. Vous n’avez pas besoin d’utiliser l’interpréteur de commandes dans cette procédure, mais vous devez l’installer, car il contient les prérequis requis par le script que vous exécutez à l’étape 3. Ces conditions préalables permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive Entreprise.
+La première étape consiste à installer SharePoint Online Management Shell s’il n’est pas déjà installé sur votre ordinateur local. Vous n’avez pas besoin d’utiliser l’interpréteur de commandes dans cette procédure, mais vous devez l’installer, car il contient les prérequis requis par le script que vous exécutez à l’étape 3. Ces prérequis permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive Entreprise.
 
-Accédez à [configurer l’environnement SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et effectuez les étapes 1 et 2 pour installer le SharePoint Online Management Shell sur votre ordinateur local.
+Accédez à [Configurer l’environnement SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et effectuez les étapes 1 et 2 pour installer SharePoint Online Management Shell sur votre ordinateur local.
 
 ## <a name="step-2-generate-a-list-of-users"></a>Étape 2 : Générer une liste d’utilisateurs
 
@@ -87,7 +85,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 - **Vos informations d’identification d’utilisateur :** Le script utilise vos informations d’identification pour se connecter à Security & Compliance PowerShell. Il utilisera également ces informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL OneDrive Entreprise pour la liste des utilisateurs.
 
-- **Nom de votre domaine SharePoint :** le script vous invite à entrer ce nom pour qu’il puisse se connecter au <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>. Il utilise également le nom de domaine pour les URL OneDrive de votre organisation. Par exemple, si l’URL de votre centre d’administration est `https://contoso-admin.sharepoint.com` et que l’URL de OneDrive est`https://contoso-my.sharepoint.com`, vous devez entrer `contoso` lorsque le script vous demande votre nom de domaine.
+- **Nom de votre domaine SharePoint :** Le script vous invite à entrer ce nom pour qu’il puisse se connecter au <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. Il utilise également le nom de domaine pour les URL OneDrive de votre organisation. Par exemple, si l’URL de votre centre d’administration est et que l’URL de OneDrive l’est `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com`, vous devez entrer `contoso` lorsque le script vous demande votre nom de domaine.
 
 - **Nom du cas :** Nom d’un cas existant. Le script crée une conservation associée à ce cas.
 

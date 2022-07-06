@@ -2,8 +2,8 @@
 title: Guide opérationnel d’évaluation de Microsoft Defender pour Entreprise Premium
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 2a4cd72cdb173afcce95250f8aa2916c8064cd26
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 96bfec80e828ec88866da740622ca252eaabf9e4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486494"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624646"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
 
@@ -29,8 +29,8 @@ Bienvenue dans le guide opérationnel d’évaluation Microsoft Business Premium
 
 Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), la première étape consiste à tout configurer.
 
-> [!Tip]
-> Lorsque des liens dans le guide opérationnel vous éloignent de cet emplacement, revenez simplement à ce guide opérationnel pour continuer.
+> [!TIP]
+> Enregistrez ce guide opérationnel dans les favoris de votre navigateur. Lorsque des liens dans le guide opérationnel vous éloignent de cet emplacement, revenez simplement à ce guide opérationnel pour continuer.
 
 Tout d’abord, [configurez votre version d’évaluation](../business-premium/m365bp-setup.md) !
 

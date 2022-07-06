@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: Identifiez les applets de commande PowerShell pour la rétention qui prennent en charge la configuration à grande échelle, l’automatisation ou qui peuvent être nécessaires pour les scénarios de configuration avancés.
-ms.openlocfilehash: 5e31fb7b92dbc1dc83af8f7047041a7d0b4b23b2
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612148"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625982"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez les sections suivantes pour identifier les principales applets de commande PowerShell disponibles pour les stratégies de rétention et les étiquettes de rétention dont vous pourriez avoir besoin pour la configuration à grande échelle, les scripts automatisés ou les scénarios de configuration avancés. Pour obtenir la liste complète des applets de commande, consultez la [liste de stratégie et de rétention de conformité](/powershell/module/exchange#policy-and-compliance-retention) de la documentation PowerShell.
 

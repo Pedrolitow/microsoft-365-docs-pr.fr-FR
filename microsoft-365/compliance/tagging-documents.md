@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: L’étiquetage des documents dans un ensemble de révisions permet de supprimer le contenu inutile et d’identifier le contenu pertinent dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 358f62c83cdecd1aee92a2ca56db09b732ea3d9d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2cd1243f520be21cf27c810a5f2dc2e4a033a33f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099606"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623736"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Baliser des documents dans un ensemble de révisions dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 L’organisation du contenu dans un ensemble de révisions est importante pour effectuer différents flux de travail dans le processus eDiscovery. Cela inclut les opérations suivantes :
 
@@ -75,7 +73,7 @@ Avant d’appliquer des balises aux éléments d’un jeu de révision, vous dev
 
 3. Dans la page **Étiquettes** , sélectionnez **Ajouter une section**.
 
-4. Tapez un titre de groupe de balises et une description facultative, puis cliquez **surAve**.
+4. Tapez un titre de groupe de balises et une description facultative, puis cliquez sur **Enregistrer**.
 
 5. Sélectionnez le menu déroulant à trois points en regard du titre du groupe de balises, puis cliquez sur **Case à cocher Ajouter** ou **Bouton Ajouter une option**.
 
@@ -105,7 +103,7 @@ Une fois la structure des balises en place, les réviseurs peuvent appliquer des
 
       - **Inclure les éléments de famille associés** : cette option applique la même balise aux éléments de famille associés aux éléments étiquetés.  *Les éléments de famille* sont des éléments qui partagent la même valeur de propriété de métadonnées **FamilyId** . Par exemple, un document joint à un message électronique partage le même **FamilyId** que le message électronique. Par conséquent, si cette option est sélectionnée pour cet exemple, l’e-mail et le document sont marqués, même si le document peut ne pas être inclus dans la liste des éléments de l’ensemble de révisions.
 
-      - **Inclure les éléments de conversation associés** : cette option applique la même balise à tous les éléments qui se trouvent dans le même Teams ou Yammer conversation que les éléments marqués. *Les éléments de conversation* sont des éléments qui partagent la même valeur de propriété de métadonnées **ConversationId** . Tous les messages, billets et fichier de transcription correspondant d’une conversation partagent le même **ConversationId**. Si cette option est sélectionnée, tous les éléments de la même conversation (et du même fichier de transcription) sont marqués, même si certains de ces éléments de conversation peuvent ne pas être inclus dans la liste des éléments de jeu de révision. Pour plus d’informations sur les éléments de conversation, consultez la section « Regroupement » dans le [flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+      - **Inclure les éléments de conversation associés** : cette option applique la même balise à tous les éléments qui se trouvent dans la même conversation Teams ou Yammer que les éléments marqués. *Les éléments de conversation* sont des éléments qui partagent la même valeur de propriété de métadonnées **ConversationId** . Tous les messages, billets et fichier de transcription correspondant d’une conversation partagent le même **ConversationId**. Si cette option est sélectionnée, tous les éléments de la même conversation (et du même fichier de transcription) sont marqués, même si certains de ces éléments de conversation peuvent ne pas être inclus dans la liste des éléments de jeu de révision. Pour plus d’informations sur les éléments de conversation, consultez la section « Regroupement » dans le [flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
       - **Aucun** : cette option n’applique pas de balises aux éléments de famille ou aux éléments de conversation. Il applique uniquement les balises aux éléments sélectionnés ou à tous les éléments de la liste d’ensembles de révision.
 

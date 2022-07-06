@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Téléchargez des audits tiers, découvrez comment Microsoft sécurise les données client et savez comment vous pouvez vous conformer aux normes ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: 8247eee98d9c039e05aca2b621881f56b59c2ee5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fdd60478266ee4ef55f550aa04a62d9e1148856e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077831"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622390"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Certification de service dans le Centre de sécurité et conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez l’assurance de service dans le Centre de sécurité & conformité pour accéder à des documents qui décrivent diverses rubriques, notamment : 
   
@@ -43,7 +41,7 @@ Vous pouvez également découvrir comment Office 365 pouvez aider les clients à
     
 - Programme FedRAMP (Federal Risk and Authorization Management Program)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui pouvez accéder à Office 365 Service Assurance et comment ?
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui peut accéder à Office 365 Service Assurance et comment ?
 
  **Les nouveaux clients et les clients qui évaluent Microsoft services en ligne** peuvent accéder à Service Assurance qui est inclus dans Office 365 Entreprise plans E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer Service Assurance, vous pouvez vous [inscrire pour une version d’évaluation de Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
@@ -58,7 +56,7 @@ Lorsque vous accédez à Service Assurance pour la première fois, la première 
     
     ![Affiche la page paramètres du Centre de protection.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
-2. Dans la page **Paramètres**, sélectionnez la flèche vers le bas en regard de **Région** et vérifiez les régions appropriées pour votre organisation. 
+2. Dans la page **Paramètres** , sélectionnez la flèche vers le bas en regard de **Région** et vérifiez les régions appropriées pour votre organisation. 
     
 3. Sélectionnez la flèche vers le bas en regard de **l’industrie** et vérifiez les secteurs d’activité appropriés pour votre organisation. 
     

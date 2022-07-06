@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014517"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625586"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cet article vous montre comment créer un fichier de *package de règles* XML qui définit des [types d’informations sensibles](sensitive-information-type-entity-definitions.md) personnalisés. Cet article décrit un type d’informations sensibles personnalisé qui identifie un ID d’employé. Vous pouvez utiliser l’exemple de code XML de cet article comme point de départ pour votre propre fichier XML.
 
@@ -372,7 +370,7 @@ Lorsque vous avez terminé, votre élément RulePack doit ressembler à ce qui s
 
 ## <a name="validators"></a>Validateurs
 
-Microsoft 365 expose des processeurs de fonction pour les SIT couramment utilisés en tant que validateurs. Voici une liste d’entre eux.
+Microsoft 365 expose les processeurs de fonction pour les SIT couramment utilisés en tant que validateurs. Voici une liste d’entre eux.
 
 ### <a name="list-of-currently-available-validators"></a>Liste des validateurs actuellement disponibles
 
@@ -452,7 +450,7 @@ Dans cet exemple, un validateur de date est défini pour une partie RegEx dont l
 
 ## <a name="changes-for-exchange-online"></a>Modifications pour Exchange Online
 
-Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Vos types d’informations sensibles personnalisés peuvent désormais être utilisés à la fois dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> et dans le Centre de conformité. Dans le cadre de cette amélioration, vous devez utiliser Security & Compliance PowerShell pour importer vos types d’informations sensibles personnalisés . Vous ne pouvez plus les importer à partir de Exchange Online PowerShell. Vos types d’informations sensibles personnalisés continueront à fonctionner comme d’habitude. Toutefois, l’affichage dans le centre d’administration Exchange des modifications apportées aux types d’informations sensibles personnalisés dans le centre de conformité peut prendre au maximum une heure.
+Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Vos types d’informations sensibles personnalisés peuvent désormais être utilisés à la fois dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> et dans le Centre de conformité. Dans le cadre de cette amélioration, vous devez utiliser Security & Compliance PowerShell pour importer vos types d’informations sensibles personnalisés . Vous ne pouvez plus les importer à partir de Exchange Online PowerShell. Vos types d’informations sensibles personnalisés continueront à fonctionner comme d’habitude. Toutefois, l’affichage dans le centre d’administration Exchange des modifications apportées aux types d’informations sensibles personnalisés dans le centre de conformité peut prendre au maximum une heure.
 
 Notez que, dans le centre de conformité, vous pouvez utiliser la cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** pour charger un package de règles. (Auparavant, dans le centre d’administration Exchange, vous utilisiez la cmdlet **ClassificationRuleCollection**.)
 

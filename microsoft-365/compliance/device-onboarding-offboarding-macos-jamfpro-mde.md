@@ -1,5 +1,5 @@
 ---
-title: Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Pro JAMF pour les clients Microsoft Defender pour point de terminaison
+title: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,24 +13,22 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Découvrez comment intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de Pro JAMF pour les clients Microsoft Defender pour point de terminaison
-ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: Découvrez comment intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro pour les clients Microsoft Defender pour point de terminaison
+ms.openlocfilehash: 97ab1dbccc28cd1f9d14635c2fa351d0295202c1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953380"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622918"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Pro JAMF pour les clients Microsoft Defender pour point de terminaison
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison
 
 Vous pouvez utiliser JAMF Pro pour intégrer des appareils macOS dans des solutions Microsoft Purview.
 
 > [!IMPORTANT]
 > Utilisez cette procédure ***si vous avez*** déployé Microsoft Defender pour point de terminaison (MDE) sur vos appareils macOS
 
-**S’applique à :**
+**S’applique à :**
 
 - Les clients qui ont déployé MDE sur leurs appareils macOS.
 - [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
@@ -39,7 +37,7 @@ Vous pouvez utiliser JAMF Pro pour intégrer des appareils macOS dans des soluti
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Assurez-vous que vos [appareils macOS sont gérés via JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) et associés à une identité (Azure AD upn joint) via JAMF Connecter ou Intune.
+- Assurez-vous que vos [appareils macOS sont gérés via JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) et associés à une identité (UPN joint à Azure AD) via JAMF Connect ou Intune.
 - Installer le navigateur v95+ Edge sur vos appareils macOS
 
 ## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Intégrer des appareils dans des solutions Microsoft Purview à l’aide de JAMF Pro
@@ -82,19 +80,19 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Mettez à jour le profil d’accès au disque complet existant avec le fichier **fulldisk.mobileconfig** .
 
-1. Télécharger le fichier **fulldisk.mobileconfig** à JAMF. Reportez-vous au [déploiement de profils de configuration personnalisés à l’aide de Pro JAMF](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. Chargez le fichier **fulldisk.mobileconfig** dans JAMF. Reportez-vous au [déploiement de profils de configuration personnalisés à l’aide de JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Accorder l’accès d’accessibilité à DLP
 
 1. Utilisez le fichier accessibility.mobileconfig que vous avez téléchargé précédemment.
 
-1. Télécharger à JAMF, comme décrit dans [le déploiement de profils de configuration personnalisés à l’aide de Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. Chargez sur JAMF comme décrit dans [le déploiement de profils de configuration personnalisés à l’aide de Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="check-the-macos-device"></a>Vérifier l’appareil macOS 
 
 1. Redémarrez l’appareil macOS.
 
-1. Ouvrez System **PreferencesProfiles** > .
+1. Ouvrez **les profils de préférences** >  système.
 
 1. Vous devriez voir :
     - Accessiblity

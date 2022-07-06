@@ -14,21 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de Microsoft Intune pour les clients MDE
-ms.openlocfilehash: c6b374ad3c35ba3441e82412d9897132006d0559
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952839"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623028"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de Intune pour les clients Microsoft Defender pour point de terminaison
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison
 
 > [!IMPORTANT]
 > Utilisez cette procédure ***si vous avez*** déployé Microsoft Defender pour point de terminaison (MDE) sur vos appareils macOS
 
-**S’applique à :**
+**S’applique à :**
 
 - Les clients qui ont déployé MDE sur leurs appareils macOS.
 - [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
@@ -38,7 +36,7 @@ ms.locfileid: "64952839"
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Assurez-vous que vos [appareils macOS sont intégrés à Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et inscrits dans l’application [Portail d'entreprise](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Vérifiez que vous avez accès au [centre de Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)
+- Assurez-vous d’avoir accès au [Centre microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)
 - Cela prend en charge macOS version Catalina 10.15 et versions ultérieures
 - Installer le navigateur v95+ Edge sur vos appareils macOS 
 
@@ -63,7 +61,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="create-system-configuration-profiles"></a>Créer des profils de configuration système
 
-1. Ouvrez les **profils Microsoft Endpoint Manager** **centerDevicesConfiguration** >  > .
+1. Ouvrez les **profils de configuration** **des appareils** >  **du centre** >  de Endpoint Manager Microsoft.
 
 1. Choisissez : **Créer un profil**. 
 
@@ -84,7 +82,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Passez en revue vos paramètres et **choisissez Créer** pour déployer la configuration.
 
-1. Ouvrez **les** **profils DevicesConfiguration** > . Vous devez y voir vos profils créés.
+1. Ouvrez les **profils de configuration** **des appareils** > . Vous devriez y voir vos profils créés.
 
 1. Dans la page **Profils de configuration**, choisissez le profil que vous venez de créer, dans cet exemple *AccessibilityformacOS*, puis choisissez État de l’appareil pour afficher la liste des appareils et l’état de déploiement du profil de configuration.
 
@@ -109,7 +107,7 @@ accès au disque complet     |[fulldisk.mobileconfig](https://github.com/microso
 > [!IMPORTANT]
 > La désintégération entraîne l’arrêt de l’envoi de données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois maximum.
 
-1. Dans **Microsoft Endpoint Manager centre**, ouvrez **les** **profils DevicesConfiguration** > . Vous devez y voir vos profils créés.
+1. Dans **le centre Microsoft Endpoint Manager**, ouvrez les **profils de configuration** **des appareils** > . Vous devez y voir vos profils créés.
 
 2. Dans la page **Profils de configuration** , choisissez le profil de préférences MDE.
 

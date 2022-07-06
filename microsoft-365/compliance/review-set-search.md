@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment créer et exécuter une requête dans un ensemble de révisions afin d’organiser le contenu pour une révision plus efficace dans un cas de découverte électronique Microsoft Purview (Premium).
+description: Découvrez comment créer et exécuter une requête dans un ensemble de révisions afin d’organiser le contenu pour une révision plus efficace dans un cas Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 44f4b9d6aed92a6593f5c6c70322656e4c770c3d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b40ab6818b4063a0b160ab9a41fdded6f7e7d37e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090914"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623758"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans la plupart des cas, il sera utile d’approfondir le contenu d’un ensemble de révisions et de l’organiser pour faciliter une révision plus efficace. L’utilisation de filtres et de requêtes dans un jeu de révision vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre révision.
 
@@ -34,7 +32,7 @@ Dans la plupart des cas, il sera utile d’approfondir le contenu d’un ensembl
 
 Dans un ensemble de révisions, il existe cinq filtres par défaut qui sont pré-chargés dans l’ensemble de révisions :
 
-- Mots clés
+- Mots-clés
 - Date
 - Expéditeur/auteur
 - Objet/titre
@@ -81,7 +79,7 @@ Il existe plusieurs types de filtres :
 
 - **Options de** recherche : un filtre d’options de recherche fournit une liste des valeurs possibles (chaque valeur est affichée avec une case à cocher que vous pouvez sélectionner) pour des champs particuliers dans la révision. Ce filtre est utilisé pour les champs, tels que « Expéditeur », où il existe un nombre fini de valeurs possibles dans le jeu de révision.
 
-- **Mot clé** : une condition de mot clé est une instance spécifique de condition de texte libre que vous pouvez utiliser pour rechercher des termes. Vous pouvez également utiliser KQL langage de requête dans ce type de filtre. Pour plus d’informations, consultez les sections Langage de requête et Générateur de requêtes avancé de cet article.
+- **Mot clé** : une condition de mot clé est une instance spécifique de condition de texte libre que vous pouvez utiliser pour rechercher des termes. Vous pouvez également utiliser le langage de requête KQL dans ce type de filtre. Pour plus d’informations, consultez les sections Langage de requête et Générateur de requêtes avancé de cet article.
 
 ## <a name="include-and-exclude-filter-relationships"></a>Inclure et exclure des relations de filtre
 
@@ -103,7 +101,7 @@ Pour supprimer une requête de filtre, ouvrez le panneau de filtre et sélection
 
 ## <a name="query-language"></a>Langage de requête
 
-En plus d’utiliser des filtres, vous pouvez également utiliser un langage de requête de type KQL dans le filtre mots clés pour générer votre requête de recherche de jeu de révisions. Le langage de requête pour les requêtes d’ensemble de révision prend en charge les opérateurs booléens standard, tels que **AND**, **OR**, **NOT** et **NEAR**. Il prend également en charge un caractère générique à caractère unique (?) et un caractère générique à caractères multiples (*).
+En plus d’utiliser des filtres, vous pouvez également utiliser un langage de requête de type KQL dans le filtre Mots clés pour générer votre requête de recherche de jeu de révisions. Le langage de requête pour les requêtes d’ensemble de révision prend en charge les opérateurs booléens standard, tels que **AND**, **OR**, **NOT** et **NEAR**. Il prend également en charge un caractère générique à caractère unique (?) et un caractère générique à caractères multiples (*).
 
 ## <a name="advanced-query-builder"></a>Générateur de requêtes avancé
 
@@ -113,7 +111,7 @@ Vous pouvez également créer des requêtes plus avancées pour rechercher des d
 
   ![Ajoutez un filtre KQL.](../media/AddKQLFilter.png)
 
-2. Sélectionnez le filtre **KQL**, puis cliquez sur **Ouvrir le générateur de requêtes**.
+2. Sélectionnez le filtre **KQL** , puis cliquez sur **Ouvrir le générateur de requêtes**.
 
    Dans ce panneau, vous pouvez créer des requêtes KQL complexes à l’aide du générateur de requêtes. Vous pouvez ajouter des conditions ou ajouter des groupes de conditions constitués de plusieurs conditions qui sont logiquement connectées par des relations **AND** ou **OR** .
 
@@ -131,7 +129,7 @@ Pour l’instant, il n’existe pas d’option de filtre dans un ensemble de ré
 
 3. Validez la nouvelle collection dans le même jeu de révision. Mais cette fois, ajoutez les éléments partiellement indexés à partir des sources de données supplémentaires. Étant donné que les éléments de la collection que vous avez créée à l’étape 1 ont déjà été ajoutés au jeu de révision, seuls les éléments partiellement indexés de la deuxième collection sont ajoutés au jeu de révision.
 
-4. Une fois les deux collections ajoutées au jeu de révision, accédez à l’ensemble de révisions, puis sélectionnez **Ensembles ManageLoad** > .
+4. Une fois les deux collections ajoutées au jeu de révision, accédez à l’ensemble de révisions, puis sélectionnez **Gérer** >  les **jeux de charge**.
 
 5. Copiez ou notez **l’ID de chargement** pour la deuxième collection (celle que vous avez créée à l’étape 2). Le nom de la collection est identifié dans la colonne **Informations sources** .
 

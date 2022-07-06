@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez apprendre à créer, tester et paramétrer une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016963"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624728"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Data Loss Prevention (DLP) vous aide à empêcher le partage involontaire ou accidentel d’informations sensibles.
+Protection contre la perte de données Microsoft Purview (DLP) vous permet d’éviter le partage involontaire ou accidentel d’informations sensibles.
 
 DLP examine les messages électroniques et les fichiers à la recherche d’informations sensibles, telles qu’un numéro de carte de crédit. À l’aide de DLP, vous pouvez détecter les informations sensibles et prendre des mesures telles que :
 
@@ -94,9 +92,9 @@ Consultez [les définitions d’entité de type d’informations sensibles](sens
 
 Lorsque les risques de fuite de données ne sont pas entièrement évidents, il est difficile de déterminer exactement où vous devez commencer par implémenter DLP. Heureusement, les stratégies DLP peuvent être exécutées en « mode test », ce qui vous permet d’évaluer leur efficacité et leur précision avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le portail de conformité Microsoft Purview. C’est ce que je vais utiliser pour les démonstrations dans cet article. Dans le portail de conformité Microsoft Purview, vous trouverez les stratégies DLP sous stratégie de **protection contre la perte de** >  données **.** Choisissez **Créer une stratégie** pour démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le Centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le portail de conformité Microsoft Purview, c’est ce que je vais utiliser pour les démonstrations de cet article. Dans le portail de conformité Microsoft Purview, vous trouverez les stratégies DLP sous la stratégie **de protection contre la perte de** >  données **.** Choisissez **Créer une stratégie** pour démarrer.
 
-Microsoft 365 fournit une gamme de modèles de [stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles sur l’Australie et choisir Finances, Santé et Santé, et Confidentialité.
+Microsoft 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles sur l’Australie et choisir Finances, Santé et Santé, et Confidentialité.
 
 ![Option permettant de choisir le pays ou la région.](../media/DLP-create-test-tune-choose-country.png)
 
@@ -112,13 +110,13 @@ Choisissez les emplacements auxquels la stratégie s’appliquera. Les stratégi
 
 ![Option permettant de choisir tous les emplacements.](../media/DLP-create-test-tune-choose-locations.png)
 
-À la première étape **Paramètres** stratégie, acceptez simplement les valeurs par défaut pour l’instant. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon point de départ.
+À la première étape **des paramètres** de stratégie, acceptez simplement les valeurs par défaut pour l’instant. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon point de départ.
 
 ![Options permettant de personnaliser le type de contenu à protéger.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Après avoir cliqué sur Suivant**, une page plus **Paramètres** de stratégie avec plus d’options de personnalisation s’affiche. Pour une stratégie que vous testez simplement, voici où vous pouvez commencer à effectuer des ajustements.
+Après avoir cliqué sur Suivant**, une page plus **de paramètres** de stratégie s’affiche avec plus d’options de personnalisation. Pour une stratégie que vous testez simplement, voici où vous pouvez commencer à effectuer des ajustements.
 
-- J’ai désactivé les conseils de stratégie pour l’instant, ce qui est une étape raisonnable à prendre si vous ne faites que tester les choses et ne voulez pas afficher quoi que ce soit pour les utilisateurs encore. Les conseils de stratégie affichent des avertissements aux utilisateurs indiquant qu’ils sont sur le point de violer une stratégie DLP. Par exemple, un utilisateur Outlook voit un avertissement indiquant que le fichier qu’il a joint contient des numéros de carte de crédit et que son e-mail est rejeté. L’objectif des conseils de stratégie est d’arrêter le comportement non conforme avant qu’il ne se produise.
+- J’ai désactivé les conseils de stratégie pour l’instant, ce qui est une étape raisonnable à prendre si vous ne faites que tester les choses et ne voulez pas afficher quoi que ce soit pour les utilisateurs encore. Les conseils de stratégie affichent des avertissements aux utilisateurs indiquant qu’ils sont sur le point de violer une stratégie DLP. Par exemple, un utilisateur Outlook voit un avertissement indiquant que le fichier qu’il a joint contient des numéros de carte de crédit et entraîne le rejet de son e-mail. L’objectif des conseils de stratégie est d’arrêter le comportement non conforme avant qu’il ne se produise.
 - J’ai également réduit le nombre d’instances de 10 à 1, de sorte que cette stratégie détectera tout partage de données pii australiennes, pas seulement le partage en bloc des données.
 - J’ai également ajouté un autre destinataire à l’e-mail du rapport d’incident.
 
@@ -194,7 +192,7 @@ Après avoir enregistré ces modifications dans les paramètres de stratégie, j
 
 ![Option permettant d’afficher les conseils de stratégie en mode test.](../media/DLP-create-test-tune-show-policy-tips.png)
 
-Côté serveur (ou côté cloud si vous préférez), la modification peut ne pas prendre effet immédiatement, en raison de différents intervalles de traitement. Si vous apportez une modification de stratégie DLP qui affichera de nouveaux conseils de stratégie à un utilisateur, l’utilisateur risque de ne pas voir les modifications prendre effet immédiatement dans son client Outlook, qui vérifie les modifications de stratégie toutes les 24 heures. Si vous souhaitez accélérer les tests, vous pouvez utiliser ce correctif de Registre pour [effacer le dernier horodatage de téléchargement de la clé PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook téléchargez les dernières informations de stratégie la prochaine fois que vous les redémarrez et commencez à composer un e-mail.
+Côté serveur (ou côté cloud si vous préférez), la modification peut ne pas prendre effet immédiatement, en raison de différents intervalles de traitement. Si vous apportez une modification de stratégie DLP qui affichera de nouveaux conseils de stratégie à un utilisateur, l’utilisateur risque de ne pas voir les modifications prendre effet immédiatement dans son client Outlook, qui vérifie les modifications de stratégie toutes les 24 heures. Si vous souhaitez accélérer les tests, vous pouvez utiliser ce correctif de Registre pour [effacer le dernier horodatage de téléchargement de la clé PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook télécharge les dernières informations de stratégie la prochaine fois que vous le redémarrez et commencez à composer un e-mail.
 
 Si vous avez activé les conseils de stratégie, l’utilisateur commence à voir les conseils dans Outlook et peut vous signaler des faux positifs lorsqu’ils se produisent.
 
@@ -235,7 +233,7 @@ Lorsque vous êtes heureux que votre stratégie DLP détecte avec précision et 
 
 ![Option permettant d’activer la stratégie.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez de voir quand la stratégie prendra effet, [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et [exécutez l’applet de commande Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
+Si vous attendez de voir quand la stratégie prendra effet, [connectez-vous à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) et [exécutez l’applet de commande Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

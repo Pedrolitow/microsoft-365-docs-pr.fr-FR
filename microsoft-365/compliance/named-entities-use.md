@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti d’entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 0cdf544eddf873f3bbf761bd613641433dd2da6b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637183"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623701"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Utiliser des entités nommées dans vos stratégies de protection contre la perte de données
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lisez [en savoir plus sur les entités nommées](named-entities-learn.md) avant de commencer à les utiliser.
 
@@ -54,7 +52,7 @@ Vous pouvez utiliser des SIT d’entité nommées et des stratégies améliorée
 Les SIT d’entité nommée et les stratégies améliorées ne sont pas pris en charge pour :
 
 - Référentiels locaux
-- Power BI
+- Power BI
 
 ## <a name="create-and-edit-enhanced-policies"></a>Créer et modifier des stratégies améliorées
 
@@ -62,8 +60,8 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures de [créati
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>Charges de travail et services qui prennent en charge les entités nommées
 
-- **Microsoft 365 eDiscovery prend en** charge l’utilisation d’entités nommées dans les services Substrate.
-- **Microsoft Defender for Cloud Apps** prend en charge l’utilisation d’entités nommées dans les stratégies Defender pour le cloud Apps dans le portail des applications Defender pour le cloud.
+- **Microsoft 365 eDiscovery** prend en charge l’utilisation d’entités nommées dans les services Substrate.
+- **Microsoft Defender for Cloud Apps** prend en charge l’utilisation d’entités nommées dans les stratégies Defender pour Cloud Apps dans le portail d’applications Defender pour cloud.
 - **Insider Risk Management** prend en charge l’utilisation d’entités nommées dans les services Substrate.
 - **Gestion des enregistrements** prend en charge l’utilisation d’entités nommées.
 - **Exact Data Match Sensitive Information Types** prend en charge l’utilisation d’entités nommées.
@@ -74,15 +72,15 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures de [créati
 
 |Charge de travail/services  |Prise en charge des entités nommées  |
 |---------|---------|
-|Office conseil de stratégie des clients Win32    |Non pris en charge  |
-|Office conseil de stratégie des clients WAC    |Pris en charge         |
+|Conseil de stratégie des clients Office Win32    |Non pris en charge  |
+|Conseil de stratégie des clients Office WAC    |Pris en charge         |
 |Conseil de stratégie OWA     |Non pris en charge         |
-|Outlook conseil de stratégie     |Non pris en charge |
+|Conseil de stratégie Outlook     |Non pris en charge |
 |Points de terminaison (Windows 10 et 11 appareils)     |Pris en charge  |
-|règles de transport Exchange     |Pris en charge |
+|Règles de transport Exchange     |Pris en charge |
 |OneDrive Entreprise données au repos     |Pris en charge         |
-|SharePoint les données au repos en ligne     |Pris en charge         |
-|Teams données au repos     |Pris en charge         |
+|Données au repos SharePoint Online     |Pris en charge         |
+|Données teams au repos     |Pris en charge         |
 |Données au repos des messages électroniques     |Prise en charge pour les locataires avec le plan de service de confidentialité         |
 |Microsoft Defender for Cloud Apps     |Pris en charge         |
 
@@ -90,17 +88,17 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures de [créati
 
 |Charge de travail/services |Prise en charge des entités nommées  |
 |---------|---------|
-|Office clients Win32 hors connexion   |Pris en charge, l’utilisateur doit sélectionner l’étiquette et appliquer manuellement |
-|Clients Win32 en ligne Office en ligne|Pris en charge avec l’ancien schéma de confiance |
-|Outlook en ligne   |Pris en charge avec l’ancien schéma de confiance  |
-|Office client WAC     |Pris en charge |
+|Clients Office Win32 hors connexion   |Pris en charge, l’utilisateur doit sélectionner l’étiquette et appliquer manuellement |
+|Clients Office Win32 en ligne|Pris en charge avec l’ancien schéma de confiance |
+|Outlook online   |Pris en charge avec l’ancien schéma de confiance  |
+|Client Office WAC     |Pris en charge |
 |OWA     |Pris en charge |
-|transport Exchange     |Pris en charge |
+|Transport Exchange     |Pris en charge |
 |OneDrive Entreprise données au repos     |Pris en charge |
-|SharePoint les données au repos en ligne|Pris en charge|
+|Données au repos SharePoint Online|Pris en charge|
 |Scanneur Azure Information Protection (AIP)|Non pris en charge|
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 |Problème  |Impact  |
 |---------|---------|
@@ -122,7 +120,7 @@ Voici quelques pratiques que vous pouvez utiliser lorsque vous créez ou modifie
 - Vous pouvez utiliser [des simulations d’étiquetage automatique](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) pour tester la précision des SIT d’entité nommée. Exécutez une simulation à l’aide d’une entité nommée SIT pour voir quels éléments correspondent à la stratégie. Avec ces informations, vous pouvez affiner la précision en ajustant le nombre d’instances et les niveaux de confiance dans vos stratégies personnalisées ou les conditions de modèle améliorées. Vous pouvez itérer des simulations jusqu’à ce que la précision soit à l’endroit souhaité, avant de déployer une stratégie DLP ou d’étiquetage automatique contenant des entités nommées en production. Voici une vue d’ensemble du flux :
 
 1. Identifiez le SIT ou la combinaison de SIT que vous souhaitez tester en mode simulation, personnalisé ou cloné et modifié.
-1. Identifiez ou créez une étiquette de confidentialité à appliquer lorsque la stratégie d’étiquetage automatique trouve une correspondance dans Exchange, des sites SharePoint ou des comptes OneDrive.
+1. Identifiez ou créez une étiquette de confidentialité à appliquer lorsque la stratégie d’étiquetage automatique trouve une correspondance dans les comptes Exchange, SharePoint ou OneDrive.
 1. Créer une stratégie d’étiquetage automatique de confidentialité qui utilise le SIT de l’étape 1 et avec les mêmes conditions et exceptions que celle qui sera utilisée dans votre stratégie DLP
 1. Exécuter la simulation de stratégie
 1. Afficher les résultats
@@ -131,7 +129,7 @@ Voici quelques pratiques que vous pouvez utiliser lorsque vous créez ou modifie
 
 
 ## <a name="for-further-information"></a>Pour plus d’informations
-- [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Découvrez les entités nommées](named-entities-learn.md).
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)

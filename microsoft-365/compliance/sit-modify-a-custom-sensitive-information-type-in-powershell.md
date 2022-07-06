@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment modifier des informations sensibles personnalisées à l’aide de PowerShell.
-ms.openlocfilehash: deb50679702cec69187392337511b4dde2d1ceb3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 639a52526924d3068ce2d1cd38006a1773b6d098
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014385"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621959"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>Modifier un type d’informations sensibles personnalisé à l’aide de PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans Security & Compliance PowerShell, la modification d’un type d’informations sensibles personnalisé vous oblige à :
 

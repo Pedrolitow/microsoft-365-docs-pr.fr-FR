@@ -2,8 +2,8 @@
 title: Collaborer et partager en toute sécurité dans Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble sur la façon de collaborer et de partager des fichiers et de communiquer en toute sécurité à l’aide de Teams dans Microsoft 365 Business Premium. Dans l’environnement fermé fourni par Teams, les fichiers et les communications sont exempts de cybermenaces et de cyberattaques.
-ms.openlocfilehash: 093507502e6bcf6b9a6cdfcf1ce8264f47b6e94c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5fbc31f41d74b8b267a15356d5648266070b6fa1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489183"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621582"
 ---
 # <a name="collaborate-and-share-securely"></a>Collaborer et partager de manière sécurisée
 
@@ -36,11 +36,11 @@ Maintenant que vous êtes protégé par les applications Office Microsoft 365 Bu
 
 Vos objectifs sont les suivants :
 
-- [Créez Teams pour la collaboration](create-teams-for-collaboration.md)
-- [Organiser des réunions](set-up-meetings.md)
-- [Partager des fichiers et des vidéos](share-files-and-videos.md)
-- [Créer un site de communication](create-communications-site.md)
+- [Créez Teams pour la collaboration](create-teams-for-collaboration.md).
+- [Organisez des réunions](set-up-meetings.md).
+- [Partagez des fichiers et des vidéos](share-files-and-videos.md).
+- [Créez un site de communication](create-communications-site.md).
 
-Une fois ces objectifs atteints, démarrez votre [mission finale](m365bp-protect-devices.md).
+Une fois ces objectifs atteints, démarrez votre mission finale : [Protéger des appareils gérés](m365bp-protect-devices.md).
 
 :::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="Collaborer et partager de manière sécurisée":::

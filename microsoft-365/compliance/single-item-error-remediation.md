@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Vous pouvez corriger une erreur de traitement dans un document d’un jeu de révision dans eDiscovery (Premium) sans avoir à suivre le processus de correction des erreurs en bloc.
-ms.openlocfilehash: e8ace66eefadf5ce959bc01150ba21e232429131
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Vous pouvez corriger une erreur de traitement dans un document dans un ensemble de révisions dans eDiscovery (Premium) sans avoir à suivre le processus de correction des erreurs en bloc.
+ms.openlocfilehash: cb1b7248ff02a4aafce529b764efdf7408a05386
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092346"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622170"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>Correction des erreurs d’élément unique dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-La correction des erreurs permet aux utilisateurs de Microsoft Purview eDiscovery (Premium) de corriger les problèmes de données qui empêchent eDiscovery (Premium) de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités, car ces fichiers sont verrouillés ou chiffrés. Auparavant, vous ne pouviez corriger les erreurs en bloc qu’à l’aide de [ce flux de travail](error-remediation-when-processing-data-in-advanced-ediscovery.md). Mais parfois, il n’est pas judicieux de corriger les erreurs dans plusieurs fichiers lorsque vous ne savez pas si l’un de ces fichiers répond au cas que vous examinez. Il peut également ne pas être judicieux de corriger les erreurs avant que vous ayez eu l’occasion de passer en revue les métadonnées de fichier (par exemple, l’emplacement du fichier ou qui avaient accès) pour vous aider à prendre des décisions préalables en matière de réactivité. Une nouvelle fonctionnalité appelée *correction d’erreur d’élément unique* permet aux gestionnaires eDiscovery d’afficher les métadonnées des fichiers avec une erreur de traitement et, si nécessaire, de corriger l’erreur directement dans le jeu de révision. L’article explique comment identifier, ignorer et corriger des fichiers avec des erreurs de traitement dans un ensemble de révisions.
+La correction des erreurs permet aux utilisateurs Microsoft Purview eDiscovery (Premium) de corriger les problèmes de données qui empêchent eDiscovery (Premium) de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traités, car ces fichiers sont verrouillés ou chiffrés. Auparavant, vous ne pouviez corriger les erreurs en bloc qu’à l’aide de [ce flux de travail](error-remediation-when-processing-data-in-advanced-ediscovery.md). Mais parfois, il n’est pas judicieux de corriger les erreurs dans plusieurs fichiers lorsque vous ne savez pas si l’un de ces fichiers répond au cas que vous examinez. Il peut également ne pas être judicieux de corriger les erreurs avant que vous ayez eu l’occasion de passer en revue les métadonnées de fichier (par exemple, l’emplacement du fichier ou qui avaient accès) pour vous aider à prendre des décisions préalables en matière de réactivité. Une nouvelle fonctionnalité appelée *correction d’erreur d’élément unique* permet aux gestionnaires eDiscovery d’afficher les métadonnées des fichiers avec une erreur de traitement et, si nécessaire, de corriger l’erreur directement dans le jeu de révision. L’article explique comment identifier, ignorer et corriger des fichiers avec des erreurs de traitement dans un ensemble de révisions.
 
 ## <a name="identify-documents-with-errors"></a>Identifier les documents avec des erreurs
 
@@ -55,7 +53,7 @@ Il peut arriver que vous deviez corriger une erreur de traitement dans des docum
 
 Pour corriger un document unique, procédez comme suit :
 
-1. Cliquez sur **DownloadDownload**  >  original pour télécharger une copie du fichier sur un ordinateur local.
+1. Cliquez sur **Télécharger** > **l’original** pour télécharger une copie du fichier sur un ordinateur local.
 
    ![Téléchargez le document avec l’erreur de traitement.](../media/SIERimage5.png)
 

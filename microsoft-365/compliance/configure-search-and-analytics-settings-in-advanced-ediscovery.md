@@ -16,19 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Configurez les paramètres microsoft Purview eDiscovery (Premium) qui s’appliquent à tous les ensembles de révisions dans un cas. Cela inclut des paramètres pour l’analytique et la reconnaissance optique des caractères.
-ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Configurez Microsoft Purview eDiscovery paramètres (Premium) qui s’appliquent à tous les ensembles de révisions dans un cas. Cela inclut des paramètres pour l’analytique et la reconnaissance optique des caractères.
+ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097137"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624562"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configurer les paramètres de recherche et d’analytique dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous pouvez configurer les paramètres de chaque cas de découverte électronique Microsoft Purview (Premium) pour contrôler les fonctionnalités suivantes.
+Vous pouvez configurer les paramètres de chaque cas Microsoft Purview eDiscovery (Premium) pour contrôler les fonctionnalités suivantes.
 
 - Quasi-doublons et thread de courrier
 
@@ -42,7 +40,7 @@ Vous pouvez configurer les paramètres de chaque cas de découverte électroniqu
 
 Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
-1. Dans la page **eDiscovery (Premium),** sélectionnez le cas.
+1. Sur la page **eDiscovery (Premium)**, sélectionnez le cas.
 
 2. Sous l’onglet **Paramètres**, sous **Recherche et analyse**, cliquez sur **Sélectionner**.
 
@@ -70,11 +68,11 @@ Dans cette section, vous pouvez définir des paramètres pour les thèmes. Pour 
 
 - **Inclure des nombres dans les thèmes :** Lorsqu’ils sont activés, les nombres (qui identifient un thème) sont inclus lors de la génération de thèmes. 
 
-- **Ajustez dynamiquement le nombre maximal de thèmes :** Dans certaines situations, il se peut qu’il n’y ait pas suffisamment de documents dans un ensemble de révisions pour produire le nombre souhaité de thèmes. Lorsque ce paramètre est activé, eDiscovery (Premium) ajuste dynamiquement le nombre maximal de thèmes au lieu de tenter d’appliquer le nombre maximal de thèmes.
+- **Ajustez dynamiquement le nombre maximal de thèmes :** Dans certaines situations, il se peut qu’il n’y ait pas suffisamment de documents dans un ensemble de révisions pour produire le nombre souhaité de thèmes. Lorsque ce paramètre est activé, eDiscovery (Premium) ajuste le nombre maximal de thèmes de façon dynamique plutôt que de tenter de le faire respecter.
 
 ## <a name="review-set-query"></a>Requête de jeu à réviser
 
-Si vous sélectionnez la case à cocher **Créer automatiquement une recherche enregistrée pour révision après l’analyse**, eDiscovery (Premium) génère automatiquement la requête d’ensemble de révision nommée **For Review.** 
+Si vous sélectionnez la case à cocher **Créer automatiquement une recherche enregistrée pour révision après l’analyse** , eDiscovery (Premium) génère automatiquement la requête d’ensemble de révision nommée **For Review.** 
 
 ![Requête for review générée automatiquement.](../media/AeDForReviewQuery.png)
 
@@ -92,7 +90,7 @@ Lorsque ce paramètre est activé, le traitement OCR est exécuté sur les fichi
 
 - Lorsque du contenu provenant d’autres sources de données (qui ne sont pas associés à un consignat et ajoutés au cas dans une source de données non gardienne) est ajouté à un jeu de révision.
 
-Une fois les données ajoutées à un jeu de révision, le texte de l’image peut être révisé, recherché, étiqueté et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. Pour plus d’informations, voir :
+Une fois les données ajoutées à un jeu de révision, le texte de l’image peut être révisé, recherché, étiqueté et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu de révision. Pour plus d’informations, consultez l’article suivant :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 

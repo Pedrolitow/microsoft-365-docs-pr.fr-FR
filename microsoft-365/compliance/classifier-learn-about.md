@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Les classifieurs pouvant être formés peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 0c47d019b3508bdd8d8fba1f1b4303c7f4c9579d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159573"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621202"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La classification et l’étiquetage du contenu afin qu’il puisse être protégé et géré correctement constituent le point de départ de la discipline de protection des informations. Microsoft 365 a trois façons de classer le contenu.
 
@@ -52,12 +50,12 @@ Les étiquettes de confidentialité et de rétention peuvent ensuite être appli
 Cette méthode de classification est bien adaptée au contenu qui n’est pas facile à identifier par les méthodes manuelles ou automatisées de mise en correspondance des modèles. Cette méthode de classification consiste davantage à utiliser un classifieur pour identifier un élément en fonction de ce qu’est l’élément, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples de contenu que vous souhaitez classifier.
 
 > [!NOTE]
-> En préversion : vous pouvez afficher les classifieurs pouvant être formés dans l’Explorateur de contenu en développant les **classifieurs pouvant être entraînés** dans le panneau filtres. Les classifieurs pouvant être formés affichent automatiquement le nombre d’incidents trouvés dans SharePoint, Teams et OneDrive, sans nécessiter d’étiquetage.
+> En préversion : vous pouvez afficher les classifieurs pouvant être formés dans l’Explorateur de contenu en développant les **classifieurs pouvant être entraînés** dans le panneau filtres. Les classifieurs pouvant être formés affichent automatiquement le nombre d’incidents détectés dans SharePoint, Teams et OneDrive, sans nécessiter d’étiquetage.
 > Si vous ne souhaitez pas utiliser cette fonctionnalité, vous devez envoyer une demande auprès de Support Microsoft. Cela désactive l’affichage de vos données sensibles qui ne sont utilisées dans aucune stratégie d’étiquetage dans l’Explorateur de contenu. Vous pouvez également désactiver l’analyse de vos données. Si l’analyse est désactivée, l’étiquetage de sensibilité et les stratégies DLP avec ces classifieurs ne fonctionnent pas
 
 ### <a name="where-you-can-use-classifiers"></a>Où vous pouvez utiliser des classifieurs
 
-Les classifieurs peuvent être utilisés comme condition pour [Office l’étiquetage automatique avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), [l’application automatique d’une stratégie d’étiquette de rétention en fonction d’une condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et de [la conformité des communications](communication-compliance.md).
+Les classifieurs peuvent être utilisés comme condition pour [l’étiquetage automatique Office avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), appliquer [automatiquement une stratégie d’étiquette de rétention en fonction d’une condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et dans la [conformité des communications](communication-compliance.md).
 
 Les étiquettes de confidentialité peuvent utiliser des classifieurs comme conditions. [Consultez Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md).
 
@@ -73,7 +71,7 @@ Les étiquettes de confidentialité peuvent utiliser des classifieurs comme cond
 
 Microsoft 365 est fourni avec plusieurs classifieurs préformés :
 
-- **Adult, racy et gory** : détecte les images de ces types. Les images doivent avoir une taille comprise entre 50 kilo-octets (Ko) et 4 mégaoctets (Mo) et être supérieures à 50 x 50 pixels dans les dimensions hauteur x largeur. L’analyse et la détection sont prises en charge pour Exchange Online messages électroniques et Microsoft Teams canaux et conversations. Détecte le contenu dans les fichiers .jpeg, .png, .gif et .bmp.
+- **Adult, racy et gory** : détecte les images de ces types. Les images doivent avoir une taille comprise entre 50 kilo-octets (Ko) et 4 mégaoctets (Mo) et être supérieures à 50 x 50 pixels dans les dimensions hauteur x largeur. L’analyse et la détection sont prises en charge pour Exchange Online messages électroniques, ainsi que les canaux et conversations Microsoft Teams. Détecte le contenu dans les fichiers .jpeg, .png, .gif et .bmp.
 
 - **Contrats** : détecte le contenu relatif aux contrats juridiques tels que les contrats de non-divulgation, les déclarations de travail, les contrats de prêt et de bail, les contrats d’emploi et de non-concurrence. Détecte le contenu dans les fichiers .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 
@@ -142,7 +140,7 @@ Lorsque les classifieurs préformés ne répondent pas à vos besoins, vous pouv
 
 Vous commencez à créer un classifieur entraîné personnalisé en lui fournissant des exemples qui sont certainement dans la catégorie. Une fois qu’il traite ces exemples, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à savoir si un élément donné appartient à la catégorie que vous créez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions.
 
-Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, et classifie le contenu. Après avoir publié le classifieur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires similaire au processus de formation initial.
+Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, puis classifie le contenu. Après avoir publié le classifieur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires similaire au processus de formation initial.
 
 Par exemple, vous pouvez créer des classifieurs pouvant être formés pour :
 

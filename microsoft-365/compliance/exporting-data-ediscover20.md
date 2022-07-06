@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment exporter ou télécharger du contenu à partir d’un ensemble de révisions pour des présentations ou des révisions externes dans un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d4ee1627587196527987afec5a675b9440ea806e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2650e38509baa11cbd93e014f13d15e734ee02c3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096939"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624132"
 ---
 # <a name="export-case-data-in-ediscovery-premium"></a>Exporter des données de cas dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Il existe trois façons d’exporter des données à partir d’un ensemble de révisions :
 

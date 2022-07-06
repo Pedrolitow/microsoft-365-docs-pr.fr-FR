@@ -19,19 +19,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer eDiscovery (Premium) afin que vous puissiez commencer à créer et gérer des cas. Il décrit également les abonnements et licences Microsoft requis. Après avoir effectué quelques étapes rapides, l’outil eDiscovery (Premium) est prêt à être utilisé.
-ms.openlocfilehash: b23203d374b7ecf2f447c2f6b906345537ec6cf4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Cet article explique comment configurer eDiscovery (Premium) pour que vous puissiez commencer à créer et gérer des cas. Il décrit également les abonnements et licences Microsoft requis. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery (Premium) est prêt à être utilisé.
+ms.openlocfilehash: 0b96506c9a7b52b6e4aa1e9d14f1e5d2330fee19
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092412"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622852"
 ---
 # <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configurer Microsoft Purview eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter des données qui répondent aux investigations internes et externes de votre organisation. Rien n’est nécessaire pour déployer eDiscovery (Premium), mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à créer et utiliser des cas eDiscovery (Premium) pour gérer vos investigations.
+Microsoft Purview eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter des données qui répondent aux investigations internes et externes de votre organisation. Rien n’est nécessaire pour déployer eDiscovery (Premium), mais il existe certaines tâches prérequises qu’un administrateur informatique et un responsable eDiscovery doivent effectuer avant que votre organisation puisse commencer à créer et utiliser des cas eDiscovery (Premium) pour gérer vos investigations.
 
 Cet article décrit les étapes suivantes nécessaires à la configuration d’eDiscovery (Premium).
 
@@ -45,11 +43,11 @@ La gestion des licences pour eDiscovery (Premium) nécessite l’abonnement à l
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : Attribuer des autorisations eDiscovery
 
-Pour accéder à eDiscovery (Premium) ou être ajouté en tant que membre d’un cas eDiscovery (Premium), un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles eDiscovery Manager dans le portail de conformité Microsoft Purview. Les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery (Premium). Ils peuvent ajouter et supprimer des membres, placer les consignats et les emplacements de contenu en attente, gérer les notifications de suspension légale, créer et modifier des recherches associées dans un cas, ajouter des résultats de recherche à un jeu de révision, analyser les données dans un jeu de révision, et exporter et télécharger à partir d’un cas eDiscovery (Premium).
+Pour accéder à eDiscovery (Premium) ou être ajouté en tant que membre d’un cas eDiscovery (Premium), un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles eDiscovery Manager dans le portail de conformité Microsoft Purview. Les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery (Premium). Ils peuvent ajouter et supprimer des membres, placer les consignats et les emplacements de contenu en attente, gérer les notifications de conservation légale, créer et modifier des recherches associées dans un cas, ajouter des résultats de recherche à un jeu de révision, analyser des données dans un jeu de révision, et exporter et télécharger à partir d’un cas eDiscovery (Premium).
 
 Effectuez les étapes suivantes pour ajouter des utilisateurs au groupe de rôles gestionnaire eDiscovery :
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portail de conformité</a> et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portail de conformité</a>et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans la page Autorisations, sélectionnez le groupe de **rôles** **gestionnaire eDiscovery** .
 
@@ -67,11 +65,11 @@ Effectuez les étapes suivantes pour ajouter des utilisateurs au groupe de rôle
 
 Il existe deux sous-groupes dans le groupe de rôles gestionnaire eDiscovery. Ces sous-groupes ont différents rôles.
 
-- **Gestionnaire eDiscovery** : peut afficher et gérer les cas eDiscovery (Premium) qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne peut pas afficher ou ouvrir le cas dans la page eDiscovery (Premium) du centre de conformité. En général, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe eDiscovery Manager.
+- **Gestionnaire eDiscovery** : peut afficher et gérer les cas eDiscovery (Premium) qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne peut pas afficher ou ouvrir le cas sur la page eDiscovery (Premium) dans le Centre de conformité. En général, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe eDiscovery Manager.
 
 - **Administrateur eDiscovery** : peut effectuer toutes les tâches de gestion de cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
 
-  - Affichez tous les cas répertoriés dans la page eDiscovery (Premium).
+  - Afficher tous les cas répertoriés sur la page de la découverte électronique.
   
   - Gérer tous les cas au sein l’organisation après s’être ajouté en tant que membre du cas.
 
@@ -90,6 +88,6 @@ Pour plus d’informations sur la configuration et l’utilisation du modèle de
 > [!NOTE]
 > Il s’agit d’une étape facultative que vous pouvez effectuer à tout moment. Le fait de ne pas implémenter le modèle de détection des privilèges avocat-client ne vous empêche pas de créer et d’utiliser des cas eDiscovery (Premium).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Après avoir configuré eDiscovery (Premium), vous êtes prêt à [créer un cas](create-and-manage-advanced-ediscoveryv2-case.md).

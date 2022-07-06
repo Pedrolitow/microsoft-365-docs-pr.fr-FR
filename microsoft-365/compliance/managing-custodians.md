@@ -17,23 +17,21 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser l’outil de gestion des consignats dans eDiscovery (Premium) pour gérer les données d’une affaire juridique.
-ms.openlocfilehash: 360e66c3244b614624b6817f7fe95d9204c34bef
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment utiliser l’outil de gestion des consignats dans eDiscovery (Premium) pour gérer les données d’un cas juridique.
+ms.openlocfilehash: e52dc21b084916f2cec2f3a638dfba0def8ca589
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096653"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622456"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Collaborer avec des consignatateurs et des sources de données non liées à la garde dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsqu’une organisation répond à une enquête juridique, le flux de travail autour de l’identification, de la conservation et de la collecte de contenu potentiellement pertinent est basé sur les personnes de l’organisation qui sont les gardiens des données pertinentes. Dans eDiscovery, ces personnes sont appelées *« dépositaires de données* » (ou simplement *« dépositaires* ») et sont définies comme « personnes ayant le contrôle administratif d’un document ou d’un fichier électronique ». Par exemple, le consignataire d’un courrier électronique peut être le propriétaire de la boîte aux lettres contenant le message concerné.
 
 En outre, il peut y avoir du contenu situé dans des boîtes aux lettres et des sites qui ne sont pas associés à un consignateur, mais qui est pertinent pour le cas. Les emplacements de contenu où les consignataires de cas n’ont pas de contrôle administratif, mais peuvent être propriétaires de données pertinentes, sont appelés *sources de données non liées à la garde*.
 
-Dans un cas de découverte électronique (Premium), les équipes juridiques peuvent ajouter des personnes dans leur organisation en tant que consignataires et identifier et conserver des sources de données de garde telles que des boîtes aux lettres Exchange, des comptes OneDrive et des sites SharePoint et Teams. Ils peuvent également identifier et conserver des sources de données non liées à la garde. À l’aide de l’outil intégré de gestion des consignations et des sources de données dans eDiscovery (Premium), les organisations peuvent sécuriser les informations stockées électroniquement contre une suppression accidentelle (ou intentionnelle). Cela vous permet d’éliminer le processus fastidieux et sujet aux erreurs d’avoir à effectuer manuellement les processus de conservation légale.
+Dans un cas eDiscovery (Premium), les équipes juridiques peuvent ajouter des personnes dans leur organisation en tant que consignataires et identifier et conserver les sources de données de garde telles que les boîtes aux lettres Exchange, les comptes OneDrive et les sites SharePoint et Teams. Ils peuvent également identifier et conserver des sources de données non liées à la garde. En utilisant l’outil intégré de gestion des consignations et des sources de données dans eDiscovery (Premium), les organisations peuvent sécuriser les informations stockées électroniquement contre une suppression accidentelle (ou intentionnelle). Cela vous permet d’éliminer le processus fastidieux et sujet aux erreurs d’avoir à effectuer manuellement les processus de conservation légale.
 
 Pour plus d’informations sur l’utilisation des consignats, consultez les articles suivants :
 

@@ -19,16 +19,14 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Pour les administrateurs : découvrez comment activer l’archivage à extension automatique, qui fournit à vos utilisateurs un stockage supplémentaire pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’archivage à extension automatique pour l’ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f1155eaf95a8cf814561650acee4784e8c469df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 16fa0a1a53572d0680160441b237cc7ceb27f712
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012758"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622874"
 ---
 # <a name="enable-auto-expanding-archiving"></a>Activer l'archivage à expansion automatique
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez utiliser la Exchange Online fonctionnalité d’archivage à extension automatique pour activer un espace de stockage supplémentaire pour les boîtes aux lettres d’archivage. Lorsque l’archivage de développement automatique est activé, un espace de stockage supplémentaire est automatiquement ajouté à la boîte aux lettres d’archivage d’un utilisateur jusqu’à ce qu’il atteigne la limite de stockage de 1,5 To. Vous pouvez activer l’archivage de développement automatique pour tous les membres de votre organisation ou uniquement pour des utilisateurs spécifiques. Pour plus d’informations sur le développement automatique de l’archivage, consultez [En savoir plus sur l’archivage à extension automatique](autoexpanding-archiving.md).
 
@@ -48,7 +46,7 @@ Vous pouvez utiliser la Exchange Online fonctionnalité d’archivage à extensi
 
 - Le développement automatique de l’archivage vous empêche de récupérer ou de restaurer une [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). Cela signifie que si vous activez l’archivage de développement automatique pour une boîte aux lettres et que la boîte aux lettres est rendue inactive à une date ultérieure, vous ne pourrez pas [récupérer la boîte aux lettres inactive](recover-an-inactive-mailbox.md) (en la convertissant en boîte aux lettres active) ou la [restaurer](restore-an-inactive-mailbox.md) (en fusionnant le contenu en une boîte aux lettres existante). Si l’archivage à extension automatique est activé sur une boîte aux lettres inactive, la seule façon de récupérer des données consiste à utiliser l’outil de recherche de contenu dans le portail de conformité Microsoft Purview pour exporter les données de la boîte aux lettres et les importer vers une autre boîte aux lettres. Pour plus d’informations, consultez la section « Boîtes aux lettres inactives et archives à développement automatique » dans [En savoir plus sur les boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
-- Vous ne pouvez pas utiliser le centre d’administration Exchange ou le portail de conformité Microsoft Purview pour activer l’archivage à extension automatique. Vous devez utiliser Exchange Online PowerShell. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Vous ne pouvez pas utiliser le Centre d’administration Exchange ou le portail de conformité Microsoft Purview pour activer l’archivage à extension automatique. Vous devez utiliser Exchange Online PowerShell. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Activer l’archivage à extension automatique pour l’ensemble de votre organisation
 
@@ -83,7 +81,7 @@ Cet espace supplémentaire est ajouté pour éviter les problèmes de stockage q
     ```
 
 > [!IMPORTANT]
-> Dans un déploiement hybride Exchange, vous ne pouvez pas utiliser la commande **Enable-Mailbox -AutoExpandingArchive** pour activer l’archivage de développement automatique pour un utilisateur spécifique dont la boîte aux lettres principale est locale et dont la boîte aux lettres d’archivage est basée sur le cloud. Pour activer l’archivage à extension automatique pour les boîtes aux lettres d’archivage basées sur le cloud dans un déploiement hybride Exchange, vous devez exécuter la commande **Set-OrganizationConfig -AutoExpandingArchive** dans Exchange Online PowerShell afin d’activer l’archivage à extension automatique pour l’ensemble de l’organisation. Si les boîtes aux lettres primaires et d’archivage d’un utilisateur sont basées sur le cloud, vous pouvez utiliser la commande **Enable-Mailbox -AutoExpandingArchive** pour activer l’archivage de développement automatique pour cet utilisateur spécifique.
+> Dans un déploiement hybride Exchange, vous ne pouvez pas utiliser la commande **Enable-Mailbox -AutoExpandingArchive** pour activer l’archivage à extension automatique pour un utilisateur spécifique dont la boîte aux lettres principale est locale et dont la boîte aux lettres d’archivage est basée sur le cloud. Pour activer l’archivage à extension automatique pour les boîtes aux lettres d’archivage basées sur le cloud dans un déploiement hybride Exchange, vous devez exécuter la commande **Set-OrganizationConfig -AutoExpandingArchive** dans Exchange Online PowerShell afin d’activer l’archivage de développement automatique pour l’ensemble de l’organisation. Si les boîtes aux lettres primaires et d’archivage d’un utilisateur sont basées sur le cloud, vous pouvez utiliser la commande **Enable-Mailbox -AutoExpandingArchive** pour activer l’archivage de développement automatique pour cet utilisateur spécifique.
   
 ## <a name="verify-that-auto-expanding-archiving-is-enabled"></a>Vérifier que l’archivage à développement automatique est activé
 
@@ -127,9 +125,9 @@ Gardez à l’esprit les éléments suivants après avoir activé l’archivage 
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 
-- L’archivage à extension automatique est pris en charge pour les boîtes aux lettres d’archivage basées sur le cloud dans un déploiement hybride Exchange pour les utilisateurs disposant d’une boîte aux lettres principale locale. Toutefois, une fois l’archivage auto-développé activé pour une boîte aux lettres d’archivage basée sur le cloud, vous ne pouvez pas désintégrant cette boîte aux lettres d’archivage vers l’organisation Exchange locale. L’archivage à extension automatique n’est pris en charge pour les boîtes aux lettres locales dans aucune version de Exchange Server.
+- L’archivage à extension automatique est pris en charge pour les boîtes aux lettres d’archivage basées sur le cloud dans un déploiement hybride Exchange pour les utilisateurs disposant d’une boîte aux lettres principale locale. Toutefois, une fois l’archivage auto-développé activé pour une boîte aux lettres d’archivage basée sur le cloud, vous ne pouvez pas désintégrant cette boîte aux lettres d’archivage dans l’organisation Exchange locale. L’archivage à extension automatique n’est pris en charge pour les boîtes aux lettres locales dans aucune version de Exchange Server.
 
-- Pour obtenir la liste des clients Outlook que les utilisateurs peuvent utiliser pour accéder aux éléments de la zone de stockage supplémentaire dans leur boîte aux lettres d’archivage, consultez la section « Outlook conditions requises pour accéder aux éléments d’une archive développée automatiquement » dans [En savoir plus sur l’archivage à extension automatique](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- Pour obtenir la liste des clients Outlook que les utilisateurs peuvent utiliser pour accéder aux éléments de la zone de stockage supplémentaire dans leur boîte aux lettres d’archivage, consultez la section « Conditions requises d’Outlook pour accéder aux éléments d’une archive développée automatiquement » dans [En savoir plus sur l’archivage à extension automatique](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
 
 - Comme expliqué précédemment, 10 Go sont ajoutés au quota de stockage de la boîte aux lettres d’archive principale de l’utilisateur (et au dossier Éléments récupérables si la boîte aux lettres est en attente) lorsque vous **exécutez la commande Enable-Mailbox -AutoExpandingArchive** . Cela fournit un stockage supplémentaire jusqu’à ce que l’espace de stockage développé automatiquement soit approvisionné (ce qui peut prendre jusqu’à 30 jours). Cet espace de stockage supplémentaire n’est pas ajouté lorsque vous **exécutez Set-OrganizationConfig -AutoExpandingArchive** pour activer l’archivage à extension automatique pour toutes les boîtes aux lettres de votre organisation. Si vous avez activé l’archivage de développement automatique pour l’ensemble de l’organisation, mais que vous devez ajouter 10 Go d’espace de stockage supplémentaire pour un utilisateur spécifique, vous pouvez exécuter la commande **Enable-Mailbox -AutoExpandingArchive** sur cette boîte aux lettres. Vous recevrez une erreur indiquant que l’archivage de développement automatique a déjà été activé, mais que l’espace de stockage supplémentaire sera ajouté à la boîte aux lettres.
 

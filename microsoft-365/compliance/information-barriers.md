@@ -17,18 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5db5fbe81913666f052cbd664e8a7f813da6a7c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396198"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621114"
 ---
 # <a name="learn-about-information-barriers"></a>En savoir plus sur les obstacles aux informations
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Les barrières à l’information (IB) est une solution de conformité qui vous permet de restreindre la communication bidirectionnelle et la collaboration entre les groupes et les utilisateurs dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Souvent utilisé dans les secteurs hautement réglementés, IB peut aider à éviter les conflits d’intérêts et à protéger les informations internes entre les utilisateurs et les domaines organisationnels.
+Microsoft Purview Information Barriers (IB) est une solution de conformité qui vous permet de restreindre la communication bidirectionnelle et la collaboration entre les groupes et les utilisateurs dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Souvent utilisé dans les secteurs hautement réglementés, IB peut aider à éviter les conflits d’intérêts et à protéger les informations internes entre les utilisateurs et les domaines organisationnels.
 
 Lorsque des stratégies d’ib sont en place, les utilisateurs qui ne doivent pas communiquer ou partager des fichiers avec d’autres utilisateurs spécifiques ne peuvent pas trouver, sélectionner, discuter ou appeler ces utilisateurs. Les stratégies IB mettent automatiquement en place des contrôles pour détecter et empêcher toute communication et collaboration non autorisées entre des groupes et des utilisateurs définis. Les stratégies IB sont indépendantes des [limites de conformité](/microsoft-365/compliance/set-up-compliance-boundaries) pour les investigations eDiscovery qui contrôlent les emplacements de contenu utilisateur que les gestionnaires eDiscovery peuvent rechercher.
 
@@ -57,7 +55,7 @@ Dans Microsoft Teams, les stratégies IB déterminent et empêchent les types de
 - Partage d’un fichier avec un autre utilisateur
 - Accès à un fichier via le partage d’un lien
 
-Si les utilisateurs effectuant ces activités dans Microsoft Teams sont inclus dans une stratégie IB pour empêcher l’activité, ils ne pourront pas continuer. En outre, toutes les personnes incluses dans une stratégie d’ib peuvent être potentiellement empêchées de communiquer avec d’autres utilisateurs dans Microsoft Teams. Lorsque les personnes affectées par les stratégies d’IB font partie de la même conversation d’équipe ou de groupe, elles peuvent être supprimées de ces sessions de conversation et les communications avec le groupe peuvent ne pas être autorisées.
+Si les utilisateurs qui effectuent ces activités dans Microsoft Teams sont inclus dans une stratégie IB pour empêcher l’activité, ils ne pourront pas continuer. En outre, toutes les personnes incluses dans une stratégie d’ib peuvent être potentiellement empêchées de communiquer avec d’autres utilisateurs dans Microsoft Teams. Lorsque les personnes affectées par les stratégies d’IB font partie de la même conversation d’équipe ou de groupe, elles peuvent être supprimées de ces sessions de conversation et les communications avec le groupe peuvent ne pas être autorisées.
 
 Pour plus d’informations, consultez [les obstacles à l’information dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
 
@@ -76,9 +74,9 @@ Pour plus d’informations, consultez [Les obstacles à l’information dans Sha
 
 Les stratégies IB ne sont pas disponibles pour restreindre la communication et la collaboration entre les groupes et les utilisateurs dans les messages électroniques. Les stratégies IB sont basées sur [Exchange Online stratégies de carnet d’adresses (APS).](/exchange/address-books/address-book-policies/address-book-policies) Les ABA permettent aux organisations d’affecter virtuellement des utilisateurs à des groupes spécifiques afin de fournir des vues personnalisées du carnet d’adresses global (GAL) de l’organisation. Lorsque des stratégies IB sont créées, les ABA pour les stratégies sont automatiquement créées. À mesure que les stratégies d’ib sont ajoutées dans votre organisation, la structure et le comportement de votre gal changeront pour se conformer aux stratégies IB.
 
-Avant de définir et d’appliquer des stratégies IB, vous devez supprimer toutes les stratégies de carnet d’adresses Exchange existantes dans votre organisation. Les stratégies IB sont basées sur des stratégies de carnet d’adresses et les stratégies ABP existantes ne sont pas compatibles avec les ABA créées par IB. Pour supprimer vos stratégies de carnet d’adresses existantes, consultez [Supprimer une stratégie de carnet d’adresses dans Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Une fois les stratégies IB activées et si vous avez activé le carnet d’adresses hiérarchique, tous les utilisateurs non inclus dans un segment IB voient le [carnet d’adresses hiérarchique](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange en ligne.
+Avant de définir et d’appliquer des stratégies IB, vous devez supprimer toutes les stratégies de carnet d’adresses Exchange existantes dans votre organisation. Les stratégies IB sont basées sur des stratégies de carnet d’adresses et les stratégies ABP existantes ne sont pas compatibles avec les ABA créées par IB. Pour supprimer vos stratégies de carnet d’adresses existantes, consultez [Supprimer une stratégie de carnet d’adresses dans Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Une fois les stratégies IB activées et si vous avez activé le carnet d’adresses hiérarchique, tous les utilisateurs non inclus dans un segment IB voient le [carnet d’adresses hiérarchique](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
 
-Seuls Exchange Online déploiements sont actuellement pris en charge pour les stratégies IB. Si votre organisation doit définir et contrôler les communications par e-mail, envisagez d’utiliser [Exchange règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Seuls Exchange Online déploiements sont actuellement pris en charge pour les stratégies IB. Si votre organisation doit définir et contrôler les communications par e-mail, envisagez d’utiliser des [règles de flux de messagerie Exchange](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 

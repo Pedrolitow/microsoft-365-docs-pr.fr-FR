@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Découvrez les types d’informations sensibles basés sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415923"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621994"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Les types d’informations sensibles](sensitive-information-type-learn-about.md) sont utilisés pour aider à identifier les éléments sensibles afin que vous puissiez les empêcher d’être partagés par inadvertance ou de manière inappropriée, pour faciliter la localisation des données pertinentes dans eDiscovery et pour appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) en fonction des éléments suivants :
 
@@ -46,7 +44,7 @@ Mais que se passe-t-il si vous souhaitez un type d’informations sensibles pers
 
 ![Classification basée sur EDM.](../media/EDMClassification.png)
 
-La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. De plus, vous pouvez utiliser la classification basée sur EDM avec des stratégies, telles que [Microsoft Purview des stratégies de protection contre la perte de données](dlp-learn-about-dlp.md) ou [des stratégies de fichiers Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. De plus, vous pouvez utiliser la classification basée sur EDM avec des stratégies, telles que des [stratégies de protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md) ou [des stratégies de fichiers Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Protection des données Microsoft Purview prend en charge les langues de jeu de caractères sur deux octets pour :
@@ -101,13 +99,25 @@ Proximité : nombre de caractères entre l’élément principal et l’élémen
 
 Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Les champs principaux sont les éléments pour lesquels tout votre contenu sera recherché et qui doivent suivre un modèle défini pour être identifiés. Lorsque l’élément principal est trouvé dans les éléments analysés, EDM recherche ensuite les éléments *secondaires* ou de prise en charge, qui n’ont pas besoin de suivre un modèle et leur proximité avec l’élément principal. EDM requiert que l’élément principal soit d’abord détectable via un SIT existant. Consultez les [définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md) pour obtenir la liste complète des SIT disponibles. Vous devez trouver l’une de celles qui détectent la classe que vous souhaitez que votre sit EDM détecte. Par exemple, si votre schéma SIT EDM comporte le numéro de sécurité sociale des États-Unis comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au [numéro de sécurité sociale (SSN) SIT des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) .
 
-
 ## <a name="how-matching-works"></a>Fonctionnement de la correspondance
 
 EDM recherche des correspondances en comparant le contenu qu’il trouve à une table de données sensibles que vous définissez. Le test de correspondance est effectué à l’aide d’une combinaison de règles et de modèles traditionnels pour vous assurer que les données correspondantes sont une instance réelle de données que vous souhaitez rechercher et protéger. À la base, EDM fonctionne en comparant les chaînes de vos documents et e-mails aux valeurs d’une table de données sensibles que vous fournissez pour déterminer si les valeurs de votre contenu sont présentes dans la table en comparant des hachages de chiffrement unidirectionnels.
 
 > [!TIP]
 > Une pratique courante consiste à combiner l’utilisation de types d’informations sensibles EDM et les types d’informations sensibles standard sur lesquels ils sont basés dans les règles DLP, avec différents seuils. Par exemple, vous pouvez utiliser un type d’informations sensibles EDM qui recherche des numéros de sécurité sociale et d’autres données, avec des exigences strictes et une faible tolérance où une ou plusieurs correspondances entraînent une alerte DLP, et utiliser le type d’informations sensibles standard, comme le numéro de sécurité sociale intégré aux États-Unis pour des nombres plus élevés.  
+
+## <a name="services-that-edm-supports"></a>Services pris en charge par EDM
+
+
+|Service  |Emplacements  |
+|---------|---------|
+| Protection contre la perte de données Microsoft Purview    | - SharePoint online </br>- OneDrive Entreprise </br>- Conversation Teams </br>- Exchange Online </br>- Appareils       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive Entreprise        |
+|Étiquetage automatique (côté service)     |- SharePoint online </br>- OneDrive Entreprise </br>- Exchange Online         |
+|Étiquetage automatique (côté client)     |- Word </br>- Excel </br>- PowerPoint </br>- Clients de bureau Exchange         |
+|Clé gérée par le client     |- SharePoint online </br>- OneDrive Entreprise </br>- Conversation Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clients de bureau Exchange </br>- Appareils         |
+|eDiscovery     |- SharePoint online </br>- OneDrive Entreprise </br>- Conversation Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clients de bureau Exchange  |
+|Gestion des risques internes     |- SharePoint online </br>- OneDrive Entreprise </br>- Conversation Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Clients de bureau Exchange      |
 
 ## <a name="see-also"></a>Voir aussi
 

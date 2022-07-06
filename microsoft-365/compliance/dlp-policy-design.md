@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment concevoir une stratégie de protection contre la perte de données (DLP)
-ms.openlocfilehash: 2d7c370ab34eea2c708769674495a2c51f1a3fcf
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 32204659da3adcc2fd868568bf3a7bd909e5f2f9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782036"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623006"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>Concevoir une stratégie de protection contre la perte de données
 
@@ -30,9 +30,9 @@ Prendre le temps de concevoir une stratégie avant de l’implémenter vous perm
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-Si vous débutez avec Microsoft 365 DLP, il est utile d’utiliser ces articles avant de commencer à concevoir une stratégie :
+Si vous débutez avec microsoft Purview DLP, il est utile d’utiliser ces articles avant de commencer à concevoir une stratégie :
 
-- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) : cet article vous présente la discipline de protection contre la perte de données et l’implémentation de DLP par Microsoft
+- [En savoir plus sur Protection contre la perte de données Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) : cet article vous présente la discipline de protection contre la perte de données et l’implémentation de DLP par Microsoft
 - [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) : en suivant cet article, vous allez :
   - [Identifier les parties prenantes](dlp-overview-plan-for-dlp.md#identify-stakeholders)
   - [Décrire les catégories d’informations sensibles à protéger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -56,7 +56,7 @@ N’oubliez pas, dans la [vue d’ensemble de la configuration de stratégie DLP
 
 Par exemple, voici un premier brouillon fictif d’une déclaration d’intention qui fournit des réponses aux quatre questions suivantes :
 
-*« Nous sommes une organisation basée aux États-Unis, et nous devons détecter Office documents qui contiennent des informations sensibles sur les soins de santé couverts par l’HIPPA qui sont stockées dans OneDrive/SharePoint et nous protéger contre le partage de ces informations dans Teams des messages de conversation et de canal, et empêcher tout le monde de les partager avec des tiers non autorisés . »*
+*« Nous sommes une organisation basée aux États-Unis, et nous devons détecter les documents Office qui contiennent des informations sensibles sur les soins de santé couverts par HIPPA stockées dans OneDrive/SharePoint et nous protéger contre le partage de ces informations dans les messages de conversation et de canal Teams et empêcher tout le monde de les partager avec des tiers non autorisés ».*
 
 Lorsque vous développez une conception de stratégie, vous allez probablement modifier et étendre l’instruction.
 
@@ -66,9 +66,9 @@ Nous allons décomposer l’exemple d’instruction brouillon et la mapper aux p
 
 |Statement|Réponse à la question de configuration et mappage de configuration|
 |---|---|
-|« Nous sommes une organisation américaine, et nous devons détecter Office documents qui contiennent des informations sensibles sur les soins de santé couverts par HIPPA...|- **Quoi surveiller** : Office docs, utilisez le modèle [HIPAA (Health Insurance Act) des États-Unis](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Conditions d’une correspondance** : (préconfigurée mais modifiable) : l’élément contient le numéro DEA (U.SSN and Drug Enforcement Agency), la Classification internationale des maladies (ICD-9-CM), la Classification internationale des maladies (ICD-10-CM), le contenu est partagé avec des personnes extérieures à mon organisation  </br> - conduit les conversations à clarifier le seuil de déclenchement pour la détection, comme [les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels) et le [nombre d’instances](dlp-policy-reference.md#content-contains) (appelé tolérance de fuite).|
-|... qui sont stockés dans OneDrive/SharePoint et se protègent contre le partage de ces informations Teams les messages de conversation et de canal...|- **Où surveiller** : [étendue de l’emplacement](dlp-policy-reference.md#locations) en incluant ou en excluant OneDrive et SharePoint sites et Teams comptes de conversation/canal ou groupes de distribution.|
-|... et empêcher tout le monde de partager ces éléments avec des tiers non autorisés.|- **Actions à effectuer** : [vous ajoutez](dlp-policy-reference.md#actions) *Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements* </br> - dirige la conversation sur les actions à entreprendre lorsqu’une stratégie est déclenchée, notamment les actions de protection telles que les restrictions de partage, les actions de sensibilisation telles que les notifications et les alertes, et les actions d’autonomisation des utilisateurs comme autoriser les remplacements d’une action de blocage par l’utilisateur|
+|« Nous sommes une organisation américaine, et nous devons détecter les documents Office qui contiennent des informations sensibles sur les soins de santé couverts par HIPPA...|- **Quoi surveiller** : Documentation Office, utiliser le modèle [HIPAA (Health Insurance Act) des États-Unis](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Conditions d’une correspondance** : (préconfigurée mais modifiable) : l’élément contient le numéro DEA (U.SSN and Drug Enforcement Agency), la Classification internationale des maladies (ICD-9-CM), la Classification internationale des maladies (ICD-10-CM), le contenu est partagé avec des personnes extérieures à mon organisation  </br> - conduit les conversations à clarifier le seuil de déclenchement pour la détection, comme [les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels) et le [nombre d’instances](dlp-policy-reference.md#content-contains) (appelé tolérance de fuite).|
+|... qui sont stockés dans OneDrive/SharePoint et qui protègent contre les informations partagées par la conversation Teams et les messages de canal...|- **Emplacement à surveiller** :  [étendue de l’emplacement](dlp-policy-reference.md#locations) en incluant ou en excluant les sites OneDrive et SharePoint et les comptes de conversation/canal Teams ou les groupes de distribution.|
+|... et empêcher tout le monde de partager ces éléments avec des tiers non autorisés.|- **Actions à effectuer** : [vous ajoutez](dlp-policy-reference.md#actions) *Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365* </br> - dirige la conversation sur les actions à entreprendre lorsqu’une stratégie est déclenchée, notamment les actions de protection telles que les restrictions de partage, les actions de sensibilisation telles que les notifications et les alertes, et les actions d’autonomisation des utilisateurs comme autoriser les remplacements d’une action de blocage par l’utilisateur|
 
 Cet exemple ne couvre pas tous les points de configuration d’une stratégie DLP. Il doit être développé. Mais il devrait vous faire penser dans la bonne direction que vous développez vos propres déclarations d’intention de stratégie DLP.
 

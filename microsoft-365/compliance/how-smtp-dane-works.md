@@ -14,16 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment l’authentification DNS SMTP des entités nommées (DANE) fonctionne pour sécuriser les communications par e-mail entre les serveurs de messagerie.
-ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015767"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625146"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Le protocole SMTP est le protocole principal utilisé pour transférer des messages entre les serveurs de messagerie et n’est pas sécurisé par défaut. Le protocole TLS (Transport Layer Security) a été introduit il y a des années pour prendre en charge la transmission chiffrée des messages via SMTP. Il est couramment utilisé de manière opportuniste plutôt que comme une exigence, laissant beaucoup de trafic de courrier en texte clair, vulnérable à l’interception par des acteurs malveillants. En outre, SMTP détermine les adresses IP des serveurs de destination via l’infrastructure DNS publique, qui est vulnérable à l’usurpation d’identité et aux attaques de l’intercepteur (MITM). Cela a conduit à la création de nombreuses nouvelles normes pour renforcer la sécurité pour l’envoi et la réception d’e-mails, dont l’une est l’authentification DNS des entités nommées (DANE). 
 
@@ -93,7 +91,7 @@ Actuellement, SMTP DANE entrant n’est pas pris en charge pour Exchange Online.
 
 Par guide d’implémentation RFC pour SMTP DANE, un enregistrement TLSA composé du champ Utilisation du certificat défini sur 3, du champ Sélecteur défini sur 1 et du champ Type de correspondance défini sur 1 est recommandé.
 
-## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online Mail Flow avec SMTP DANE
+## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online Flux de messagerie avec SMTP DANE
 
 Le processus de flux de messagerie pour Exchange Online avec SMTP DANE, illustré dans le graphique de flux ci-dessous, valide la sécurité des enregistrements de domaine et de ressource via DNSSEC, la prise en charge de TLS sur le serveur de messagerie de destination, et que le certificat du serveur de messagerie de destination correspond à ce qui est attendu en fonction de son enregistrement TLSA associé.
 
@@ -103,7 +101,7 @@ Il n’existe que deux scénarios où un échec SMTP DANE entraîne le blocage d
 
 - Tous les enregistrements MX du domaine de destination ont des enregistrements TLSA et aucun des certificats du serveur de destination ne correspond à ce qui était attendu pour les données d’enregistrement TSLA, ou une connexion TLS n’est pas prise en charge par le serveur de destination.
 
-:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Exchange flux de messagerie en ligne avec SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
+:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Flux de messagerie en ligne Exchange avec SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
 
 ## <a name="related-technologies"></a>Technologies associées
 
@@ -118,7 +116,7 @@ Il n’existe que deux scénarios où un échec SMTP DANE entraîne le blocage d
 
 Actuellement, il existe quatre codes d’erreur pour DANE lors de l’envoi d’e-mails avec Exchange Online. Microsoft met activement à jour cette liste de codes d’erreur. Les erreurs sont visibles dans :
 
-1. Le Exchange portail du Centre d’administration via la vue Détails de la trace des messages.
+1. Le portail Exchange Administration Center via la vue Détails de la trace des messages.
 2. DRS générés lorsqu’un message n’est pas envoyé en raison d’une défaillance DANE ou DNSSEC.
 3. Outil Analyseur de connectivité à distance [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
@@ -142,14 +140,14 @@ Cela indique généralement un problème avec le serveur de messagerie de destin
 
 1. Vérifiez que l’adresse e-mail de destination a été correctement entrée.
 2. Avertissez l’administrateur de messagerie de destination que vous avez reçu ce code d’erreur afin qu’il puisse déterminer si le serveur de destination est configuré correctement pour recevoir des messages à l’aide de TLS.
-3. Réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Centre d’administration.
+3. Réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Administration Center.
 
 ### <a name="troubleshooting-57322-certificate-expired"></a>Résolution des problèmes liés à l’expiration du certificat 5.7.322
 
 Un certificat X.509 valide qui n’a pas expiré doit être présenté au serveur de messagerie d’envoi. Les certificats X.509 doivent être renouvelés après leur expiration, généralement tous les ans. Après avoir reçu le message :
 
 1. Avertissez l’administrateur de l’e-mail de destination que vous avez reçu ce code d’erreur et fournissez la chaîne de code d’erreur.
-2. Laissez le temps au certificat du serveur de destination d’être renouvelé et à l’enregistrement TLSA d’être mis à jour pour référencer le nouveau certificat. Ensuite, réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Centre d’administration.
+2. Laissez le temps au certificat du serveur de destination d’être renouvelé et à l’enregistrement TLSA d’être mis à jour pour référencer le nouveau certificat. Ensuite, réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Administration Center.
 
 ### <a name="troubleshooting-57323-tlsa-invalid"></a>Résolution des problèmes 5.7.323 tlsa-invalid
 
@@ -163,7 +161,7 @@ Ce code d’erreur est lié à une configuration incorrecte d’enregistrement T
 Après avoir reçu le message :
 
 1. Avertissez l’administrateur de l’e-mail de destination que vous avez reçu ce code d’erreur et fournissez-lui la chaîne de code d’erreur.
-2. Laissez le temps à l’administrateur de messagerie de destination de passer en revue la configuration DANE et la validité du certificat du serveur de messagerie. Ensuite, réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Centre d’administration.
+2. Laissez le temps à l’administrateur de messagerie de destination de passer en revue la configuration DANE et la validité du certificat du serveur de messagerie. Ensuite, réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Administration Center.
 
 ### <a name="troubleshooting-57324-dnssec-invalid"></a>Résolution des problèmes 5.7.324 dnssec-invalid
 
@@ -172,7 +170,7 @@ Ce code d’erreur est généré lorsque le domaine de destination a indiqué qu
 Après avoir reçu le message :
 
 1. Avertissez l’administrateur de l’e-mail de destination que vous avez reçu ce code d’erreur et fournissez-lui la chaîne de code d’erreur.
-2. Laissez le temps à l’administrateur de messagerie de destination de passer en revue la configuration DNSSEC de son domaine. Ensuite, réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Centre d’administration.
+2. Laissez le temps à l’administrateur de messagerie de destination de passer en revue la configuration DNSSEC de son domaine. Ensuite, réessayez d’envoyer l’e-mail et passez en revue les détails de la trace du message dans le portail Exchange Administration Center.
 
 ## <a name="troubleshooting-receiving-emails-with-smtp-dane"></a>Résolution des problèmes de réception d’e-mails avec SMTP DANE
 

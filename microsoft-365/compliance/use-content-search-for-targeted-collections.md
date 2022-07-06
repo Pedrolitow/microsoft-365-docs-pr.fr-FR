@@ -19,21 +19,19 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le portail de conformité Microsoft Purview pour effectuer une collection ciblée, qui recherche des éléments dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015537"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623670"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les collections ciblées
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-L’outil de recherche de contenu dans le portail de conformité Microsoft Purview ne fournit pas de moyen direct dans l’interface utilisateur de rechercher des dossiers spécifiques dans Exchange boîtes aux lettres ou SharePoint et OneDrive Entreprise sites. Toutefois, il est possible de rechercher des dossiers spécifiques ( *appelés regroupements ciblés*) en spécifiant la propriété d’ID de dossier pour la propriété e-mail ou chemin d’accès (DocumentLink) pour les sites dans la syntaxe de requête de recherche réelle. L’utilisation de la recherche de contenu pour effectuer une collection ciblée est utile lorsque vous êtes certain que les éléments sensibles à un cas ou à des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Vous pouvez utiliser le script de cet article pour obtenir l’ID de dossier des dossiers de boîte aux lettres ou le chemin d’accès (DocumentLink) pour les dossiers d’un SharePoint et d’un site OneDrive Entreprise. Vous pouvez ensuite utiliser l’ID de dossier ou le chemin d’accès dans une requête de recherche pour renvoyer les éléments situés dans le dossier.
+L’outil de recherche de contenu dans le portail de conformité Microsoft Purview ne fournit pas de moyen direct dans l’interface utilisateur de rechercher des dossiers spécifiques dans des boîtes aux lettres Exchange ou sharePoint et OneDrive Entreprise sites. Toutefois, il est possible de rechercher des dossiers spécifiques ( *appelés regroupements ciblés*) en spécifiant la propriété d’ID de dossier pour la propriété e-mail ou chemin d’accès (DocumentLink) pour les sites dans la syntaxe de requête de recherche réelle. L’utilisation de la recherche de contenu pour effectuer une collection ciblée est utile lorsque vous êtes certain que les éléments sensibles à un cas ou à des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Vous pouvez utiliser le script de cet article pour obtenir l’ID de dossier des dossiers de boîte aux lettres ou le chemin d’accès (DocumentLink) pour les dossiers sur un site SharePoint et OneDrive Entreprise. Vous pouvez ensuite utiliser l’ID de dossier ou le chemin d’accès dans une requête de recherche pour renvoyer les éléments situés dans le dossier.
 
 > [!NOTE]
-> Pour renvoyer du contenu situé dans un dossier d’un SharePoint ou d’un site OneDrive Entreprise, le script de cette rubrique utilise la propriété gérée DocumentLink au lieu de la propriété Path. La propriété DocumentLink est plus robuste que la propriété Path, car elle retourne tout le contenu d’un dossier, tandis que la propriété Path ne retourne pas certains fichiers multimédias.
+> Pour renvoyer du contenu situé dans un dossier d’un site SharePoint ou OneDrive Entreprise, le script de cette rubrique utilise la propriété gérée DocumentLink au lieu de la propriété Path. La propriété DocumentLink est plus robuste que la propriété Path, car elle retourne tout le contenu d’un dossier, tandis que la propriété Path ne retourne pas certains fichiers multimédias.
 
 ## <a name="before-you-run-a-targeted-collection"></a>Avant d’exécuter une collection ciblée
 
@@ -41,7 +39,7 @@ L’outil de recherche de contenu dans le portail de conformité Microsoft Purvi
 
 - Vous devez également disposer du rôle Destinataires du courrier dans votre organisation Exchange Online. Cela est nécessaire pour exécuter l’applet de commande **Get-MailboxFolderStatistics** , qui est incluse dans le script. Par défaut, le rôle Destinataires du courrier est attribué aux groupes de rôles Gestion de l’organisation et Gestion des destinataires dans Exchange Online. Pour plus d’informations sur l’attribution d’autorisations dans Exchange Online, consultez [Gérer les membres du groupe de rôles](/exchange/manage-role-group-members-exchange-2013-help). Vous pouvez également créer un groupe de rôles personnalisé, lui attribuer le rôle Destinataires du courrier, puis ajouter les membres qui doivent exécuter le script à l’étape 1. Pour plus d'informations, consultez la rubrique [Gérer des groupes de rôles](/Exchange/permissions-exo/role-groups).
 
-- Le script de cet article prend en charge l’authentification moderne. Vous pouvez utiliser le script tel qu’il est si vous êtes un Microsoft 365 ou une organisation Microsoft 365 Cloud de la communauté du secteur public. Si vous êtes une organisation Office 365 Allemagne, une organisation Microsoft 365 Cloud de la communauté du secteur public High ou une organisation DoD Microsoft 365, vous devrez modifier le script pour l’exécuter correctement. Plus précisément, vous devez modifier la ligne `Connect-ExchangeOnline` et utiliser le paramètre *ExchangeEnvironmentName* (et la valeur appropriée pour votre type d’organisation) pour vous connecter à Exchange Online PowerShell.  En outre, vous devez modifier la ligne `Connect-IPPSSession` et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour votre type d’organisation) pour vous connecter à Security & Compliance PowerShell. Pour plus d’informations, consultez les exemples de [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) et [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Le script de cet article prend en charge l’authentification moderne. Vous pouvez utiliser le script tel qu’il est si vous êtes une organisation Microsoft 365 ou Microsoft 365 GCC. Si vous êtes une organisation Office 365 Allemagne, une organisation Microsoft 365 GCC High ou une organisation Microsoft 365 DoD, vous devrez modifier le script pour l’exécuter correctement. Plus précisément, vous devez modifier la ligne `Connect-ExchangeOnline` et utiliser le paramètre *ExchangeEnvironmentName* (et la valeur appropriée pour votre type d’organisation) pour vous connecter à Exchange Online PowerShell.  En outre, vous devez modifier la ligne `Connect-IPPSSession` et utiliser les paramètres *ConnectionUri* et *AzureADAuthorizationEndpointUri* (et les valeurs appropriées pour votre type d’organisation) pour vous connecter à Security & Compliance PowerShell. Pour plus d’informations, consultez les exemples dans [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) and [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - Chaque fois que vous exécutez le script, une nouvelle session PowerShell distante est créée. Cela signifie que vous pouvez utiliser toutes les sessions PowerShell distantes disponibles. Pour éviter cela, exécutez les commandes suivantes pour déconnecter vos sessions PowerShell distantes actives.
 
@@ -57,13 +55,13 @@ L’outil de recherche de contenu dans le portail de conformité Microsoft Purvi
 
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Étape 1 : Exécuter le script pour obtenir la liste des dossiers d’une boîte aux lettres ou d’un site
 
-Le script que vous exécutez dans cette première étape retourne une liste de dossiers de boîte aux lettres ou SharePoint et OneDrive Entreprise dossiers, ainsi que l’ID de dossier ou le chemin correspondant pour chaque dossier. Lorsque vous exécutez ce script, il vous invite à fournir les informations suivantes.
+Le script que vous exécutez dans cette première étape retourne une liste de dossiers de boîte aux lettres ou de dossiers SharePoint et OneDrive Entreprise, ainsi que l’ID de dossier ou le chemin correspondant pour chaque dossier. Lorsque vous exécutez ce script, il vous invite à fournir les informations suivantes.
 
-- **Adresse e-mail ou URL du site** : tapez une adresse e-mail du consignateur pour renvoyer une liste de dossiers de boîte aux lettres et d’ID de dossier Exchange. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour retourner une liste de chemins d’accès pour le site spécifié. Voici quelques exemples :
+- **Adresse e-mail ou URL du site** : tapez une adresse e-mail du consignateur pour renvoyer une liste de dossiers et d’ID de dossier de boîte aux lettres Exchange. Ou tapez l’URL d’un site SharePoint ou d’un site OneDrive Entreprise pour retourner une liste de chemins d’accès pour le site spécifié. Voici quelques exemples :
 
-  - **Exchange** :`stacig@contoso.onmicrosoft.com`
+  - **Exchange** : `stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint** :`https://contoso.sharepoint.com/sites/marketing`
+  - **SharePoint** : `https://contoso.sharepoint.com/sites/marketing`
 
   - **OneDrive Entreprise** :`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
@@ -210,7 +208,7 @@ L’exemple de l’étape 2 montre la requête utilisée pour rechercher le sous
 
 ### <a name="script-output-for-site-folders"></a>Sortie de script pour les dossiers de site
 
-Si vous obtenez le chemin de la propriété **documentlink** à partir de sites SharePoint ou OneDrive Entreprise, le script se connecte à Security & Compliance PowerShell, crée une recherche de contenu qui recherche des dossiers sur le site, puis affiche une liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe de **documentlink** à l’URL du dossier. Étant donné que la propriété **documentlink** est une propriété pouvant faire l’objet d’une recherche, vous allez utiliser `documentlink:<path>` la paire property:value dans une requête de recherche à l’étape 2 pour rechercher ce dossier. Le script affiche un maximum de 100 dossiers de site. S’il existe plus de 100 dossiers de site, les dossiers les plus récents sont affichés.
+Si vous obtenez le chemin de la propriété **documentlink** à partir de sites SharePoint ou OneDrive Entreprise, le script se connecte à Security & Compliance PowerShell, crée une recherche de contenu qui recherche des dossiers sur le site, puis affiche la liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe de **documentlink** à l’URL du dossier. Étant donné que la propriété **documentlink** est une propriété pouvant faire l’objet d’une recherche, vous allez utiliser `documentlink:<path>` la paire property:value dans une requête de recherche à l’étape 2 pour rechercher ce dossier. Le script affiche un maximum de 100 dossiers de site. S’il existe plus de 100 dossiers de site, les dossiers les plus récents sont affichés.
 
 Voici un exemple de la sortie retournée par le script pour les dossiers de site.
 
@@ -236,11 +234,11 @@ Une fois que vous avez exécuté le script pour collecter une liste d’ID de do
 
 5. Effectuez l’une des opérations suivantes, selon que vous effectuez une recherche dans un dossier de boîte aux lettres ou un dossier de site :
 
-    - En regard **de Exchange courrier électronique**, cliquez sur **Choisir des utilisateurs, des groupes ou des équipes,** puis ajoutez la même boîte aux lettres que celle que vous avez spécifiée lorsque vous avez exécuté le script à l’étape 1.
+    - En regard de **l’e-mail Exchange**, cliquez sur **Choisir des utilisateurs, des groupes ou des équipes,** puis ajoutez la même boîte aux lettres que celle que vous avez spécifiée lorsque vous avez exécuté le script à l’étape 1.
 
       Ou
 
-    - En regard **de SharePoint sites**, cliquez sur **Choisir des sites**, puis ajoutez la même URL de site que celle que vous avez spécifiée lorsque vous avez exécuté le script à l’étape 1.
+    - En regard des **sites SharePoint**, cliquez sur **Choisir des sites** , puis ajoutez la même URL de site que celle que vous avez spécifiée lorsque vous avez exécuté le script à l’étape 1.
 
 6. Après avoir enregistré l’emplacement de contenu à rechercher, cliquez sur **Enregistrer & exécuter**, tapez un nom pour la recherche de contenu, puis cliquez sur **Enregistrer** pour démarrer la recherche de collection ciblée.
 

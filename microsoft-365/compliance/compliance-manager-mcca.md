@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment utiliser Configuration Analyzer pour Microsoft Purview pour être opérationnel rapidement avec le Gestionnaire de conformité Microsoft Purview.
-ms.openlocfilehash: d2e5fbc0d928fb5931139a274cf9cce5bdc4d983
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 96d44dd310361e8a9ca2c4239448ced863abaddc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573944"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621158"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Analyseur de configuration pour Microsoft Purview (CAMP)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Découvrez comment installer et exécuter l’outil Configuration Analyzer for Microsoft Purview (CAMP) pour commencer rapidement avec Microsoft Purview Compliance Manager.
 

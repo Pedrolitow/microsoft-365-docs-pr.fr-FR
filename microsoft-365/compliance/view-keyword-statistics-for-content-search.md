@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser la fonctionnalité de statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc8e249f62b0dbfbeaa6bcf32e7873ca2ff5b36d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: df1ebeeb7b420be3dbe6ccac6174078008b7f0e8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318069"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623582"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Afficher les statistiques pour les résultats de la recherche eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé et exécuté une recherche de contenu ou une recherche associée à un cas Microsoft Purview eDiscovery (Standard), vous pouvez afficher des statistiques sur les résultats estimés de la recherche. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés dans la page de menu volant de recherche), les statistiques de requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et l’identité des emplacements de contenu qui ont les éléments les plus correspondants.
   
@@ -43,7 +41,7 @@ Pour afficher les statistiques d’une recherche de contenu ou d’une recherche
 
      OR
 
-   - Cliquez sur **eDiscoveryeDiscovery** >  **(Standard),** sélectionnez un cas, puis sélectionnez une recherche sous l’onglet **Recherches** pour afficher la page de menu volant.
+   - Cliquez sur **eDiscovery** > **eDiscovery (Standard),** sélectionnez un cas, puis sélectionnez une recherche sous l’onglet **Recherches** pour afficher la page volante.
 
 2. Dans la page volante de la recherche sélectionnée, cliquez sur l’onglet **Statistiques de la recherche** .
   
@@ -69,7 +67,7 @@ Cette section affiche des statistiques sur la requête de recherche et le nombre
 
 ![Rapport de condition.](../media/SearchContentReportNoKeywordList.png)
 
-- **Type d’emplacement** : type d’emplacement de contenu auquel les statistiques de requête s’appliquent. La valeur de **Exchange** indique un emplacement de boîte aux lettres ; une valeur de **SharePoint** indique un emplacement de site.
+- **Type d’emplacement** : type d’emplacement de contenu auquel les statistiques de requête s’appliquent. La valeur **d’Exchange** indique un emplacement de boîte aux lettres ; une valeur **de SharePoint** indique un emplacement de site.
 
 - **Partie** : partie de la requête de recherche à qui les statistiques s’appliquent. **Primary** indique l’intégralité de la requête de recherche. **Le mot clé** indique que les statistiques de la ligne concernent un mot clé spécifique. Si vous utilisez une liste de mots clés pour la requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d’informations, consultez [Obtenir les statistiques des mots clés pour les recherches](#get-keyword-statistics-for-searches).
 

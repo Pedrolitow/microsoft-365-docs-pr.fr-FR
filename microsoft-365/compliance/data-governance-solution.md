@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Conseils normatifs pour déployer Microsoft Purview pour votre organisation afin de régir vos données en fonction des exigences réglementaires ou de conformité.
-ms.openlocfilehash: 5a7ef3f26ed21cc8ad97aeea3ed97cb1938cd837
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: fbfc208a860b8f062b424912207718ece2055b3b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754249"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623334"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Déployer une solution de gouvernance des données avec Microsoft Purview
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez **Gestion du cycle de vie des données Microsoft Purview** (anciennement appelé Gouvernance des informations Microsoft) et **Gestion des enregistrements Microsoft Purview** pour régir vos données Microsoft 365 à des fins de conformité ou de réglementation.
 

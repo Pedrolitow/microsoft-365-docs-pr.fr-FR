@@ -20,16 +20,14 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 67d21d3e5a057960a4d3fa92bfaa709345cf38ff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754673"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624584"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La méthode la plus simple et la plus courante pour bien démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans le portail de conformité Microsoft Purview. Vous pouvez utiliser l’un de ces modèles en l’état ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
 
@@ -53,7 +51,7 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
 
 Utilisez le rôle **Gestion de la conformité DLP en mode affichage uniquement** pour créer un groupe de rôles avec des privilèges d’affichage uniquement pour les stratégies DLP et les rapports DLP.
 
-Pour plus d’informations, consultez la rubrique [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
+Pour plus d’informations, consultez la rubrique [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md).
   
 Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP pour ne pas appliquer de stratégies.
 
@@ -61,14 +59,14 @@ Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP 
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
+Voici une liste des rôles applicables. Pour en savoir plus sur ces informations, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md)
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
+Voici une liste des groupes de rôles applicables. Pour en savoir plus, consultez [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -82,8 +80,6 @@ Voici une liste des groupes de rôles applicables en préversion. Pour en savoir
 
 2. Dans le portail de conformité Microsoft Purview \> gauche  **solutions de** navigation \> Stratégies \> **de protection contre la perte de** \> \> données **+ Créer une stratégie**.
 
-    ![Créez un bouton de stratégie.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous avez besoin \> **.**
 
 4. Nommez la stratégie \> **Suivant**.
@@ -105,11 +101,11 @@ Voici une liste des groupes de rôles applicables en préversion. Pour en savoir
 
    Pour inclure ou exclure un emplacement entier tel que tous les e-mails Exchange ou tous les comptes OneDrive, activez ou désactivez **l’état** de cet emplacement.
 
-   Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive Entreprise, activez **l’état**, puis cliquez sur les liens sous **Inclure** pour choisir des sites ou des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site.
+   Pour inclure uniquement des sites SharePoint ou des comptes OneDrive Entreprise spécifiques, activez **l’état**, puis cliquez sur les liens sous **Inclure** pour choisir des sites ou des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site.
 
    ![Options pour les emplacements où une stratégie DLP peut être appliquée.](../media/all-locations.png)
 
-   Dans cet exemple, pour protéger les informations sensibles stockées dans tous les comptes OneDrive Entreprise, désactivez **l’état** pour **Exchange e-mail** et **les sites SharePoint**, puis laissez l’état activé pour **OneDrive comptes**.
+   Dans cet exemple, pour protéger les informations sensibles stockées dans tous les comptes OneDrive Entreprise, désactivez **l’état** pour les sites de **messagerie Exchange** et **SharePoint** et laissez l’état activé pour les **comptes OneDrive**.
 
 7. Choisissez **Vérifier et personnaliser les paramètres par défaut dans le modèle** \> **Suivant**.
 
@@ -121,7 +117,7 @@ Voici une liste des groupes de rôles applicables en préversion. Pour en savoir
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams les messages de conversation et de canal 
+    1. Messages de conversation et de canal Teams 
 
 10. Cliquez sur **Suivant**.
 

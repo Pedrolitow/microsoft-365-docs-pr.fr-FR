@@ -16,17 +16,15 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez des cas eDiscovery dans le portail de conformité Microsoft Purview pour gérer l’enquête juridique de votre organisation.
-ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Utilisez les cas eDiscovery dans le portail de conformité Microsoft Purview pour gérer l’enquête juridique de votre organisation.
+ms.openlocfilehash: 9db3a1e9ad831c74c9468121eaa0800875c74e5a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010063"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623802"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les organisations ont de nombreuses raisons de répondre à une affaire juridique impliquant certains cadres ou d’autres employés de votre organisation. Cela peut impliquer la recherche et la conservation rapides d’informations spécifiques à l’investigation dans la messagerie, les documents, les conversations par messagerie instantanée et d’autres emplacements de contenu utilisés par les personnes dans leurs tâches quotidiennes. Vous pouvez effectuer ces activités et de nombreuses autres activités similaires à l’aide des outils de cas eDiscovery dans le centre de sécurité et de conformité.
   
@@ -58,7 +56,7 @@ La solution Microsoft Purview eDiscovery (Premium) dans Microsoft 365 s’appuie
 
 eDiscovery (Premium) nécessite un abonnement E5 pour votre organisation Microsoft 365 ou Office 365. Pour plus d’informations sur les licences, consultez [Configurer eDiscovery (Premium).](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
-Voici une vue d’ensemble rapide du flux de travail intégré dans eDiscovery (Premium). Pour plus d’informations, consultez [Gérer le flux de travail eDiscovery (Premium).](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
+Voici une vue d’ensemble rapide du flux de travail intégré dans eDiscovery (Premium). Pour plus d’informations, consultez [Gérer le flux de travail eDiscovery (Premium](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)).
 
 - [Créez un cas](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) pour commencer.
 

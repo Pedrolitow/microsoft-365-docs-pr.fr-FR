@@ -15,21 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3a2d678f8e653d65007369c2db5ddd8c72a71c66
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923278"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622830"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Insider Risk Management est une solution de conformité qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risque interne vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris agir sur les cas et faire remonter les cas à Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+Gestion des risques internes Microsoft Purview est une solution de conformité qui permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risque interne vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, y compris agir sur les cas et faire remonter les cas à Microsoft eDiscovery (Premium) si nécessaire. Les analystes des risques de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
 
 Pour plus d’informations et une vue d’ensemble du processus de planification pour traiter les activités à risque au sein de votre organisation, consultez [Démarrage d’un programme de gestion des risques internes](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -89,7 +87,7 @@ L’identification et la résolution des activités à risque internes et des pr
 
 ![Flux de travail de gestion des risques internes.](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>Politiques
+### <a name="policies"></a>Stratégies
 
 [Les stratégies de gestion des risques internes](insider-risk-management-policies.md) sont créées à l’aide de modèles et de conditions de stratégie prédéfinis qui définissent les événements déclencheurs et les indicateurs de risque examinés dans votre organisation. Ces conditions incluent la façon dont les indicateurs de risque sont utilisés pour les alertes, les utilisateurs inclus dans la stratégie, les services prioritaires et la période de surveillance.
 
@@ -149,8 +147,8 @@ Une fois les cas examinés, les réviseurs peuvent agir rapidement pour résoudr
 
 Dans des situations plus graves, vous devrez peut-être partager les informations sur les cas de gestion des risques internes avec d’autres réviseurs ou services de votre organisation. La gestion des risques internes est étroitement intégrée à d’autres solutions Microsoft Purview pour vous aider à résoudre les risques de bout en bout.
 
-- **eDiscovery (Premium)** : l’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas vers Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
-- **Intégration des API de gestion Office 365 (préversion)** : la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services SIEM (Security Information and Event Management) via les API de gestion Office 365. Avoir accès aux informations d’alerte dans la plateforme le mieux adapté aux processus de risque de votre organisation vous donne plus de flexibilité dans la façon d’agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec les API de gestion Office 365, consultez [Exporter des alertes](insider-risk-management-settings.md#export-alerts).
+- **eDiscovery (Premium)** : l’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas à Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
+- **intégration des API de gestion Office 365 (préversion)** : la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services SIEM (Security Information and Event Management) via les API de gestion Office 365. Avoir accès aux informations d’alerte dans la plateforme le mieux adapté aux processus de risque de votre organisation vous donne plus de flexibilité dans la façon d’agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec Office 365 API de gestion, consultez [Exporter des alertes](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]
 > Merci pour vos commentaires et votre support pendant la préversion du connecteur ServiceNow. Nous avons décidé de mettre fin à la préversion du connecteur ServiceNow et de ne plus prendre en charge la gestion des risques internes le 30 novembre 2020. Nous évaluons activement d’autres méthodes pour fournir aux clients l’intégration de ServiceNow dans la gestion des risques internes.
@@ -173,7 +171,7 @@ Dans la plupart des cas, les utilisateurs font de leur mieux pour gérer correct
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Violations intentionnelles ou involontaires de la stratégie de sécurité (préversion)
 
-Les utilisateurs ont généralement un grand degré de contrôle lors de la gestion de leurs appareils dans l’espace de travail moderne. Ce contrôle peut inclure des autorisations d’installation ou de désinstallation des applications nécessaires à l’exécution de leurs tâches ou la possibilité de désactiver temporairement les fonctionnalités de sécurité des appareils. Que cette activité soit accidentelle, accidentelle ou malveillante, cette conduite peut présenter un risque pour votre organisation et il est important d’identifier et d’agir pour réduire le risque. Pour vous aider à identifier ces activités de sécurité à risque, les modèles de violation de stratégie de sécurité de gestion des risques internes suivants évaluent les indicateurs de risque de sécurité et utilisent les alertes Microsoft Defender pour point de terminaison pour fournir des insights sur les activités liées à la sécurité :
+Les utilisateurs ont généralement un grand degré de contrôle lors de la gestion de leurs appareils dans l’espace de travail moderne. Ce contrôle peut inclure des autorisations d’installation ou de désinstallation des applications nécessaires à l’exécution de leurs tâches ou la possibilité de désactiver temporairement les fonctionnalités de sécurité des appareils. Que cette activité soit accidentelle, accidentelle ou malveillante, cette conduite peut présenter un risque pour votre organisation et il est important d’identifier et d’agir pour réduire le risque. Pour vous aider à identifier ces activités de sécurité à risque, les modèles de violation de stratégie de sécurité de gestion des risques internes suivants évaluent les indicateurs de risque de sécurité et utilisent Microsoft Defender pour point de terminaison alertes pour fournir des insights sur les activités liées à la sécurité :
 
 - [Violations générales de la stratégie de sécurité (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Violations de stratégie de sécurité par des utilisateurs sortants (préversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

@@ -19,16 +19,14 @@ description: Découvrir comment accéder à Azure Active Directory, qui est incl
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: cc0863184aa00fdc26532267a56936b2ed93270b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6e274f286893adaeecb81b519b72dc5ba7927a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078820"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625938"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Utiliser votre abonnement Azure Active Directory gratuit
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si votre organisation a un abonnement payant à Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite ou d’autres services Microsoft, vous disposez d’un abonnement gratuit à Microsoft Azure Active Directory. Vous et les autres administrateurs pouvez utiliser Azure AD pour créer et gérer les comptes d’utilisateur et de groupe. Pour utiliser Azure AD, ouvrez le Portail Azure et connectez-vous à votre compte.
 

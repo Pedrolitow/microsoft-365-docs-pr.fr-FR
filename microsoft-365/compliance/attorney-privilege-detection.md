@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez le modèle de détection des privilèges avocat-client pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas de découverte électronique Microsoft Purview (Premium).
-ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez le modèle de détection des privilèges avocat-client pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas de Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 9f81ff216ecf0045aec69191b3a61916b6ea3081
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094028"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624628"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Configurer la détection des privilèges avocat-client dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Un aspect important et coûteux de la phase de révision d’un processus eDiscovery consiste à examiner les documents pour le contenu privilégié. Microsoft Purview eDiscovery (Premium) fournit une détection basée sur l’apprentissage automatique du contenu privilégié pour rendre ce processus plus efficace. Cette fonctionnalité est appelée *détection de privilèges avocat-client*.
+Un aspect important et coûteux de la phase de révision d’un processus eDiscovery consiste à examiner les documents pour le contenu privilégié. Microsoft Purview eDiscovery (Premium) fournit une détection basée sur le Machine Learning du contenu privilégié pour rendre ce processus plus efficace. Cette fonctionnalité est appelée *détection de privilèges avocat-client*.
 
 ## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
 
@@ -63,13 +61,13 @@ Une personne qui est administrateur eDiscovery dans votre organisation (membre d
 
    ![Sélectionner les paramètres eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet **Analyse**, puis activez le bouton bascule détection des **privilèges du client-avocat**.
+2. Dans la page **Paramètres** , sélectionnez l’onglet **Analyse** , puis activez le bouton bascule détection des **privilèges du client-avocat** .
 
    ![Cliquez sur basculer pour activer la détection des privilèges du client-avocat](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
 3. Cliquez sur **Enregistrer** pour enregistrer la modification.
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Étape 2 : Télécharger une liste d’avocats (facultatif)
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Étape 2 : Charger une liste d’avocats (facultatif)
 
 Pour tirer pleinement parti du modèle de détection des privilèges avocat-client et utiliser les résultats de la détection has **attorney** ou **potentially privileged** qui a été décrite précédemment, nous vous recommandons de charger une liste d’adresses e-mail pour les avocats et le personnel juridique qui travaillent pour votre organisation.
 
@@ -77,7 +75,7 @@ Pour charger une liste d’avocats à utiliser par le modèle de détection de p
 
 1. Créez un fichier .csv (sans ligne d’en-tête), puis ajoutez l’adresse de messagerie de chaque personne appropriée sur une ligne distincte. Enregistrez ce fichier sur votre ordinateur local.
 
-2. Dans **la page Paramètres** eDiscovery (Premium), sélectionnez l’onglet **Analyse**.
+2. Dans la page **Paramètres** eDiscovery (Premium), sélectionnez l’onglet **Analyse** .
 
    La page **de privilèges avocat-client** s’affiche, et le bouton bascule **de détection des privilèges du client-avocat** est activé.
 
@@ -111,7 +109,7 @@ L’un des principaux moyens d’afficher les résultats de la détection du pri
 
 ### <a name="step-2-analyze-a-review-set"></a>Étape 2 : Analyser un ensemble de révisions
 
-Lorsque vous analysez les documents d’un ensemble de révisions, le modèle de détection des privilèges avocat-client s’exécute également et les propriétés correspondantes (décrites dans [Comment fonctionne-t-il ?](#how-does-it-work)) sont ajoutées à chaque document de l’ensemble de révision. Pour plus d’informations sur l’analyse des données dans l’ensemble de révisions, consultez [Analyser les données dans un jeu de révision dans eDiscovery (Premium)](analyzing-data-in-review-set.md).
+Lorsque vous analysez les documents d’un ensemble de révisions, le modèle de détection des privilèges avocat-client s’exécute également et les propriétés correspondantes (décrites dans [Comment fonctionne-t-il ?](#how-does-it-work)) sont ajoutées à chaque document de l’ensemble de révision. Pour plus d’informations sur l’analyse des données dans l’ensemble de révisions, consultez [Analyser les données dans un jeu de révision dans eDiscovery (Premium).](analyzing-data-in-review-set.md)
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Étape 3 : Utiliser le groupe de balises actives pour passer en revue le contenu privilégié
 

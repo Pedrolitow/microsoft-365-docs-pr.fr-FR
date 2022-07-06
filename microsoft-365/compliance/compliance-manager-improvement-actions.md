@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment implémenter et tester des contrôles en travaillant avec des actions d’amélioration dans le Gestionnaire de conformité Microsoft Purview. Attribuez des rapports de travail, de stockage de documentation et d’exportation.
-ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574275"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625498"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Utilisation des actions d’amélioration dans le Gestionnaire de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Dans cet article :** Cet article explique comment **gérer votre flux de travail de conformité** avec des actions d’amélioration. Découvrez comment **affecter des actions d’amélioration** pour l’implémentation et les tests, **gérer les mises à jour** et exporter **des rapports**.
 
