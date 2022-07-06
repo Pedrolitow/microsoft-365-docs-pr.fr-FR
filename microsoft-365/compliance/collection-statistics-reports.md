@@ -15,17 +15,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment accéder aux statistiques et aux rapports et les utiliser pour les projets de regroupements et de collections qui ont été validés dans un ensemble de révisions dans Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 54d5fde3ee9d75a0ad592a81d04b860267c16eeb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez comment accéder et utiliser des statistiques et des rapports pour les projets de regroupements et de regroupements qui ont été validés dans un ensemble de révisions dans Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 1f9047a047e5c2c4abd01f0cac39ab6cb97e27da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092456"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626840"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Statistiques et rapports de collecte dans Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir créé un brouillon de collection, vous pouvez afficher des statistiques sur les éléments récupérés, tels que les emplacements de contenu qui contiennent le plus d’éléments correspondant aux critères de recherche et le nombre d’éléments retournés par la requête de recherche. Vous pouvez également afficher un aperçu d’un sous-ensemble des résultats.
 
@@ -51,7 +49,7 @@ Cette section affiche un résumé graphique des éléments estimés retournés p
 
 Cette section affiche des statistiques sur la requête de recherche de collection et le nombre d’éléments estimés correspondant à différentes parties de la requête de recherche. Vous pouvez utiliser ces statistiques pour analyser le nombre d’éléments qui correspondent à chaque composant de la requête de recherche. Cela peut vous aider à affiner les critères de recherche pour la collection et, si nécessaire, à affiner l’étendue de la collection.
 
-- **Type d’emplacement** : type d’emplacement de contenu auquel les statistiques de requête s’appliquent. La valeur de **Exchange** indique un emplacement de boîte aux lettres ; une valeur de **SharePoint** indique un emplacement de site.
+- **Type d’emplacement** : type d’emplacement de contenu auquel les statistiques de requête s’appliquent. La valeur **d’Exchange** indique un emplacement de boîte aux lettres ; une valeur **de SharePoint** indique un emplacement de site.
 
 - **Partie** : partie de la requête de recherche à qui les statistiques s’appliquent. **Primary** indique l’intégralité de la requête de recherche. **Le mot clé** indique que les statistiques de la ligne concernent un mot clé spécifique. Si vous utilisez une liste de mots clés lorsque vous utilisez la requête de recherche dans la collection, les statistiques de chaque composant de la requête sont incluses dans ce tableau.
 
@@ -96,7 +94,7 @@ Cette section de l’onglet **Résumé** contient des statistiques et d’autres
  
    Un élément parent peut contenir plusieurs éléments enfants. Par exemple, un e-mail est un élément parent s’il contient un fichier attaché ou s’il a une pièce jointe cloud. Dans ce cas, le fichier attaché ou le fichier cible de la pièce jointe cloud est considéré comme un élément enfant. Lorsque vous validez une collection, les éléments parents et les éléments enfants correspondants (tels que les fichiers attachés et les pièces jointes cloud) sont ajoutés à l’ensemble de révisions en tant qu’éléments ou fichiers individuels.
 
-- **Éléments enfants**. Nombre d’éléments enfants ajoutés au jeu de révision. Seuls les éléments enfants qui sont des pièces jointes de fichier et des pièces jointes cloud sont ajoutés à l’ensemble de révisions en tant que fichiers individuels. D’autres types d’éléments enfants, tels que les signatures électroniques et les images, sont extraits d’un élément parent, puis traités par reconnaissance optique de caractères (OCR) pour extraire du texte de l’élément enfant. Le texte extrait de ces types d’éléments enfants est ensuite ajouté à son élément parent afin que vous puissiez l’afficher dans le jeu de révision. En n’ajoutant pas d’éléments enfants à l’ensemble de révision en tant que fichier distinct, eDiscovery (Premium) simplifie le processus de révision en limitant le nombre d’éléments potentiellement non pertinents dans l’ensemble de révisions.
+- **Éléments enfants**. Nombre d’éléments enfants ajoutés au jeu de révision. Seuls les éléments enfants qui sont des pièces jointes de fichier et des pièces jointes cloud sont ajoutés à l’ensemble de révisions en tant que fichiers individuels. D’autres types d’éléments enfants, tels que les signatures électroniques et les images, sont extraits d’un élément parent, puis traités par reconnaissance optique de caractères (OCR) pour extraire du texte de l’élément enfant. Le texte extrait de ces types d’éléments enfants est ensuite ajouté à son élément parent afin que vous puissiez l’afficher dans le jeu de révision. En n’ajoutant pas d’éléments enfants à l’ensemble de révision en tant que fichier distinct, eDiscovery (Premium) permet de simplifier le processus de révision en limitant le nombre d’éléments potentiellement non pertinents dans l’ensemble de révisions.
 
 - **Éléments uniques**. Nombre d’éléments uniques ajoutés au jeu de révision. Les éléments uniques sont uniques à l’ensemble de révisions. Tous les éléments sont uniques lorsque la première collection est ajoutée à un nouvel ensemble de révisions, car il n’y avait aucun élément précédent dans le jeu de révision.
 
@@ -130,7 +128,7 @@ Lorsque vous exécutez un brouillon de collection, une estimation du nombre d’
 
 - **Options de configuration de collection**. Lorsque vous validez un brouillon de collection dans un ensemble de révisions, vous devez choisir d’inclure des threads de conversation, des pièces jointes cloud et des versions de document. Aucun de ces éléments ajoutés à l’ensemble d’examens n’est inclus dans les estimations de la collection brouillon. Ils sont identifiés et collectés uniquement lorsque vous validez la collection. La sélection de ces options augmente probablement le nombre d’éléments ajoutés à l’ensemble de révisions. 
 
-    Par exemple, plusieurs versions de SharePoint documents ne sont pas incluses dans l’estimation de la collection brouillon. Toutefois, si vous sélectionnez l’option permettant d’inclure toutes les versions de document lorsque vous validez un brouillon de collection, le nombre réel (et la taille totale) des éléments ajoutés au jeu de révision augmente.
+    Par exemple, plusieurs versions de documents SharePoint ne sont pas incluses dans l’estimation de la collection brouillon. Toutefois, si vous sélectionnez l’option permettant d’inclure toutes les versions de document lorsque vous validez un brouillon de collection, le nombre réel (et la taille totale) des éléments ajoutés au jeu de révision augmente.
 
     Pour plus d’informations sur ces options, consultez [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium).
 
@@ -140,6 +138,6 @@ Voici d’autres raisons pour lesquelles les résultats estimés d’un brouillo
 
 - **Modifications qui se produisent entre le moment où l’estimation et la validation des collections provisoires** sont effectuées. Lorsque vous validez un brouillon de collection dans un ensemble de révisions, la recherche est réexécutée pour collecter les éléments les plus récents dans l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires aient été créés, envoyés ou supprimés qui répondent aux critères de recherche entre la dernière exécution de la collection brouillon et le moment où la collection brouillon est validée dans un ensemble de révisions. Il est également possible que les éléments qui se trouvaient dans l’index de recherche lorsque les résultats de la collection brouillon ont été estimés ne soient plus présents, car ils ont été vidés d’une source de données avant de valider la collection. Une façon d’atténuer ce problème consiste à spécifier une plage de dates pour une collection. Une autre méthode consiste à placer une conservation sur les emplacements de contenu afin que les éléments soient conservés et ne puissent pas être vidés.
 
-- **Éléments non indexés**. Si le brouillon de la collection incluait la recherche de toutes les boîtes aux lettres Exchange ou de tous les sites SharePoint, seuls les éléments non indexés des emplacements de contenu qui contiennent des éléments qui correspondent aux critères de collection seront ajoutés au jeu de révision. En d’autres termes, si aucun résultat n’est trouvé dans une boîte aux lettres ou un site, les éléments non indexés de cette boîte aux lettres ou de ce site ne seront pas ajoutés au jeu de révision. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d’éléments correspondant à la requête de collection) seront inclus dans les résultats estimés de la collection.
+- **Éléments non indexés**. Si le brouillon de la collection incluait la recherche dans toutes les boîtes aux lettres Exchange ou tous les sites SharePoint, seuls les éléments non indexés des emplacements de contenu qui contiennent des éléments qui correspondent aux critères de collection seront ajoutés au jeu de révision. En d’autres termes, si aucun résultat n’est trouvé dans une boîte aux lettres ou un site, les éléments non indexés de cette boîte aux lettres ou de ce site ne seront pas ajoutés au jeu de révision. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d’éléments correspondant à la requête de collection) seront inclus dans les résultats estimés de la collection.
 
     Sinon, si le brouillon de la collection incluait des emplacements de contenu spécifiques (ce qui signifie que des boîtes aux lettres ou des sites spécifiques spécifiés sur la page **Emplacements supplémentaires** dans l’Assistant De collection brouillon), les éléments non indexés (qui ne sont pas exclus par les critères de collection) des emplacements de contenu spécifiés dans la recherche seront exportés. Dans ce cas, le nombre estimé d’éléments non indexés et le nombre d’éléments non indexés ajoutés au jeu de révision doivent être identiques.

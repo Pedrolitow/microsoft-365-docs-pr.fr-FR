@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les balises intelligentes vous permettent d’appliquer les fonctionnalités de Machine Learning lors de l’examen du contenu dans un cas eDiscovery (Premium). Utilisez des groupes de balises actives pour afficher les résultats des modèles de détection de Machine Learning, tels que le modèle de privilège avocat-client.
-ms.openlocfilehash: e9b791d632ea6a1a84472ac5ad00b4a45fea294d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 30d2d6f30f09fe8fb6772a4fb46c6895b174991f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095507"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629076"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configurer des balises actives dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Les fonctionnalités de Machine Learning (ML) dans Microsoft Purview eDiscovery (Premium) peuvent vous aider à rendre le processus de décision plus efficace lors de l’examen des documents de cas dans un ensemble de révisions. Les balises intelligentes sont un moyen d’apporter les fonctionnalités ML à l’endroit où les décisions sont enregistrées : lors de l’étiquetage des documents lors de la révision. Lorsque vous créez un groupe de balises actives, les décisions qui sont le résultat du modèle ML que vous avez associé au groupe de balises actives s’affichent en ligne avec les balises du groupe de balises. Cela permet de voir les informations de résultats ML en ligne lorsque vous examinez des documents spécifiques.
+Les fonctionnalités de Machine Learning (ML) dans Microsoft Purview eDiscovery (Premium) peuvent vous aider à rendre le processus de décision plus efficace lors de l’examen des documents de cas dans un ensemble de révisions. Les balises intelligentes sont un moyen d’apporter les fonctionnalités ML à l’endroit où les décisions sont enregistrées : lors de l’étiquetage des documents pendant la révision. Lorsque vous créez un groupe de balises actives, les décisions qui sont le résultat du modèle ML que vous avez associé au groupe de balises actives s’affichent en ligne avec les balises du groupe de balises. Cela permet de voir les informations sur les résultats ml en ligne lorsque vous examinez des documents spécifiques.
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Comment configurer un groupe de balises actives
 

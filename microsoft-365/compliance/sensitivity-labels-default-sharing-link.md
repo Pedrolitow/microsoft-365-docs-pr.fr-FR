@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
-ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012315"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628570"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Comme configuration supplémentaire aux paramètres que vous voyez dans le portail de conformité Microsoft Purview pour les [étiquettes de sensibilité](sensitivity-labels.md) , vous pouvez utiliser ces étiquettes pour configurer les paramètres pour le type de lien de partage par défaut pour un site SharePoint ou un compte OneDrive, et pour des documents individuels. Ces paramètres sont automatiquement sélectionnés, mais ne sont pas très visibles pour les utilisateurs lorsqu'ils sélectionnent le bouton **Partager** dans leurs applications Office. Par exemple :
 
@@ -92,6 +90,8 @@ Exemples PowerShell, où le GUID de l’étiquette de sensibilité est **8faca7b
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
+Pour plus d’informations sur la spécification des paramètres avancés de PowerShell, consultez [Conseils PowerShell pour la spécification des paramètres avancés](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 Pour configurer les paramètres du type de lien de partage par défaut pour un site, la portée [de l'étiquette de sensibilité](sensitivity-labels.md#label-scopes) doit inclure les **groupes et les sites** lorsque vous créez l'étiquette de sensibilité dans le portail de conformité Microsoft Purview. Une fois créé, le paramètre **Site, UnifiedGroup** dans la colonne **Étendue** de la page **Étiquettes** s’affiche et le paramètre *ContentType* PowerShell affiche également cette même valeur. Pour les documents, l’étendue doit inclure **fichiers & courriers électroniques**, qui s’affiche en tant **que fichier, courrier électronique**. Ensuite :
 
 - Lorsque l’étendue inclut **groupes & sites**, vous pouvez appliquer l’étiquette à un site, qui définit le type de lien de partage par défaut pour ce site. Pour plus d’informations sur l’application d’une étiquette de confidentialité à un site, afficher [Comment appliquer des étiquettes de niveau de confidentialité aux conteneurs](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
@@ -100,18 +100,3 @@ Pour configurer les paramètres du type de lien de partage par défaut pour un s
 
 > [!TIP]
 > Vous pouvez également spécifier que l’étiquette est l’étiquette de confidentialité par défaut à appliquer aux nouveaux sites ou nouveaux documents, en tant que paramètre de stratégie [d’étiquette](sensitivity-labels.md#what-label-policies-can-do).
-
-### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
-
-Bien que vous puissiez spécifier l'étiquette de sensibilité par son nom, nous recommandons d'utiliser le GUID de l'étiquette afin d'éviter toute confusion potentielle en spécifiant le nom de l'étiquette ou le nom d'affichage. Pour trouver le GUID et confirmer la portée de l'étiquette :
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
-````
-
-Pour supprimer l’un de ces paramètres avancés d’une étiquette de confidentialité, utilisez la même syntaxe de paramètre AdvancedSettings, mais spécifiez une valeur de chaîne null. Par exemple :
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
-

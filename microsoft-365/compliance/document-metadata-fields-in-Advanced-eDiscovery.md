@@ -1,5 +1,5 @@
 ---
-title: Champs de métadonnées de document dans eDiscovery (Premium)
+title: Les champs de métadonnées des documents dans la découverte électronique
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées des documents dans un ensemble de révisions dans un cas dans Microsoft Purview eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: d0e188d227e3000ba6811204c74cf746b00bc0e2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a6fc8479d3ecd2b89c0331220fb7f88f46bda1e4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097775"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629748"
 ---
-# <a name="document-metadata-fields-in-ediscovery-premium"></a>Champs de métadonnées de document dans eDiscovery (Premium)
+# <a name="document-metadata-fields-in-ediscovery-premium"></a>Les champs de métadonnées des documents dans la découverte électronique
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Le tableau suivant répertorie les champs de métadonnées des documents d’un ensemble de révisions dans un cas dans Microsoft Purview eDiscovery (Premium). Le tableau fournit les informations suivantes :
+Le tableau suivant répertorie les champs de métadonnées des documents dans un jeu de révision dans un cas dans Microsoft Purview eDiscovery (Premium). Le tableau fournit les informations suivantes :
 
 - **Nom** du **champ et nom du champ d’affichage :** nom du champ de métadonnées et nom du champ affiché lors de l’affichage des métadonnées de fichier d’un document sélectionné dans un jeu de révision. Certains champs de métadonnées ne sont pas inclus lors de l’affichage des métadonnées de fichier d’un document. Ces champs sont mis en surbrillance avec un astérisque (*).
 
@@ -38,7 +36,7 @@ Le tableau suivant répertorie les champs de métadonnées des documents d’un 
 - **Description:** Description du champ de métadonnées.
 
 > [!NOTE]
-> Le champ **Mots clés** dans la [recherche de l’ensemble de révision](./review-set-search.md) utilise le langage de requête de mot clé (KQL). Les champs répertoriés dans la colonne **Nom de champ pouvant** faire l’objet d’une recherche peuvent être utilisés dans le champ **Mots clés** d’une recherche d’ensemble de révision pour former des requêtes complexes sans avoir à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la [référence de syntaxe du langage de requête](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) de mot clé.
+> Le champ **Mots clés** dans la [recherche de l’ensemble de révision](./review-set-search.md) utilise le langage KQL (Keyword Query Language). Les champs répertoriés dans la colonne **Nom de champ pouvant** faire l’objet d’une recherche peuvent être utilisés dans le champ **Mots clés** d’une recherche d’ensemble de révision pour former des requêtes complexes sans avoir à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, consultez la [référence de syntaxe du langage de requête](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) de mot clé.
 
 <br>
 
@@ -53,22 +51,22 @@ Le tableau suivant répertorie les champs de métadonnées des documents d’un 
 |Cc|Cc|Email_cc|Champ Cc pour les types de messages. Format **DisplayName \<SMTPAddress\>**.|
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu dans Office 365.|
 |Chemin d’accès composé|CompoundPath|Compound_path|Chemin lisible par l’homme qui décrit la source de l’élément.|
-|Contenu*|Contenu||Texte extrait de l’élément.|
+|Contenu*|Content||Texte extrait de l’élément.|
 |Corps de la conversation|ConversationBody||Corps de conversation de l’élément.|
-|Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour Teams conversations 1:1 et de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, consultez le flux de travail [eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour les conversations teams 1:1 et de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, consultez le [flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |ID de la famille de conversations|ConversationFamilyID|ConversationFamilyID|ID qui identifie les éléments individuels d’une conversation ainsi que les éléments connexes de la conversation.|
 |Conversation Index||Conversation_index|Index de conversation du message.|
-|Nom de la conversation||ConversationName|Ce champ dépend du type de contenu.<br>**Teams conversation 1:1 :** 40 premiers caractères du premier message.<br>**Teams conversation 1:N :** nom de la conversation de groupe ; s’il n’est pas disponible, les 40 premiers caractères du premier message.<br>**Teams Channel Post :** Publier le titre ou la sous-tête d’annonce ; s’il n’est pas disponible, les 40 premiers caractères du premier message.|
+|Nom de la conversation||ConversationName|Ce champ dépend du type de contenu.<br>**Conversation Teams 1:1 :** 40 premiers caractères du premier message.<br>**Conversation Teams 1:N :** Nom de la conversation de groupe ; s’il n’est pas disponible, les 40 premiers caractères du premier message.<br>**Billet de canal Teams :** Post title or announcement subhead; s’il n’est pas disponible, les 40 premiers caractères du premier message.|
 |Heure pdf de la conversation|ConversationPdfTime||Date de création de la version PDF de la conversation.|
 |Temps d’arrêt de la rédaction de conversation|ConversationRedactionBurnTime||Date à laquelle la version PDF de la conversation a été créée pour la conversation.|
 |Rubrique de conversation|ConversationTopic||Rubrique de conversation de l’élément.|
-|Conversation Type|ConversationType|ConversationType|Type de conversation de conversation. Les valeurs sont les suivantes : <br>**Teams 1:1 et les conversations de groupe et toutes les conversations Yammer :** Groupe<br>**canaux Teams et canaux privés :** Canal|
+|Conversation Type|ConversationType|ConversationType|Type de conversation de conversation. Les valeurs sont les suivantes : <br>**Conversations de groupe et teams 1:1 et toutes les conversations Yammer :** Groupe<br>**Canaux Teams et canaux privés :** Canal|
 |Contient le message supprimé|ContainsDeletedMessage|ContainsDeletedMessage|Indique si la transcription de conversation inclut un message supprimé|
 |Contient le message modifié|ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription de conversation inclut un message modifié|
-|titre de l’annonce Teams|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Titre d’une [annonce teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
+|Titre de l’annonce Teams|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Titre d’une [annonce teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour l’utilisation interne de Microsoft uniquement.|
 |Consignataire|Consignataire|Consignataire|Nom du consignateur à lequel l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>**E-mail** : date d’envoi<br>**Pièces jointes par e-mail** : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>**Documents incorporés** : date de dernière modification du document ; s’il n’est pas disponible, date de la dernière modification du parent<br>**Documents SPO (y compris les pièces jointes modernes)** : date de la dernière modification du document ; s’il n’est pas disponible, SharePoint date de dernière modification<br>**Documents non Office 365** : date de dernière modification<br>**Réunions** : date de début de la réunion<br>**Messagerie vocale** : date d’envoi<br>**MESSAGE INSTANTANÉ** : Date d’envoi<br>**Teams** : Date d’envoi|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>**E-mail** : date d’envoi<br>**Pièces jointes par e-mail** : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>**Documents incorporés** : date de dernière modification du document ; s’il n’est pas disponible, date de la dernière modification du parent<br>**Documents SPO (y compris les pièces jointes modernes)** : date de la dernière modification du document ; s’il n’est pas disponible, date de dernière modification de SharePoint<br>**Documents non Office 365** : date de dernière modification<br>**Réunions** : date de début de la réunion<br>**Messagerie vocale** : date d’envoi<br>**MESSAGE INSTANTANÉ** : Date d’envoi<br>**Teams** : date d’envoi|
 |Commentaires sur le document|DocComments|Doc_comments|Commentaires des métadonnées du document.|
 |Entreprise de documents||Doc_company|Société à partir des métadonnées du document.|
 |Date de création du document|CreatedTime|Doc_date_created|Créez la date à partir des métadonnées du document.|
@@ -100,7 +98,7 @@ Le tableau suivant répertorie les champs de métadonnées des documents d’un 
 |FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les uns des autres (même contenu et toutes les mêmes pièces jointes).|
 |ID de famille|FamilyId|Family_ID|Regroupe les pièces jointes et les éléments extraits de l’e-mail et des conversations avec son élément parent. Cela inclut la conversation ou l’e-mail, ainsi que toutes les pièces jointes et éléments extraits.|
 |Taille de la famille||Family_size|Nombre de documents dans la famille.|
-|Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br>Pour le contenu de Exchange : **e-mail** ou **pièce jointe**. <br>Pour le contenu de Teams ou de Yammer : **Conversations**.|
+|Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br>Pour le contenu d’Exchange : **e-mail** ou **pièce jointe**. <br>Pour le contenu de Teams ou Yammer : **Conversations**.|
 |ID de fichier|FileId|File_ID|Identificateur de document unique dans le cas.|
 |Date de création du système de fichiers||File_system_date_created|Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365).|
 |Date de modification du système de fichiers||File_system_date_modified|Date de modification du système de fichiers (s’applique uniquement aux données non Office 365).|
@@ -122,7 +120,7 @@ Le tableau suivant répertorie les champs de métadonnées des documents d’un 
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par le serveur Exchange ; par exemple, **IPM. Note**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de dernière modification à partir des métadonnées du document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de charge dans lequel l’élément a été ajouté à un jeu de révision.|
-|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement d’origine des documents.<p>**Données importées** - Données non Office 365<br>**Teams** - Microsoft Teams<br>**Exchange** - boîtes aux lettres Exchange<br>**SharePoint** - sites SharePoint<br>**OneDrive** - comptes OneDrive|
+|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement d’origine des documents.<p>**Données importées** - Données non Office 365<br>**Teams** - Microsoft Teams<br>**Exchange** - Boîtes aux lettres Exchange<br>**SharePoint** - Sites SharePoint<br>**OneDrive** - Comptes OneDrive|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour l’échange, il s’agit de l’adresse SMTP de la boîte aux lettres ; pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |||Marked_as_pivot|Ce fichier est le tableau croisé dynamique dans un jeu de doublons proche.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque jeu de doublons exacts est marqué comme représentant.|
@@ -137,10 +135,10 @@ Le tableau suivant répertorie les champs de métadonnées des documents d’un 
 |Tri ND/ET : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation du jeu de threads d’e-mail (ET) et du jeu en quasi-double (ND). Ce champ est utilisé pour un tri efficace au moment de l’examen. Un **D** est préfixé en jeux ND et un **E** est préfixé en jeux ET.|
 |Tri ND/ET : y compris les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu en quasi-double (ND). Ce champ est utilisé pour un tri efficace au moment de l’examen. Un **D** est préfixé en jeux ND et un **E** est préfixé en jeux ET. Chaque élément de messagerie d’un ensemble ET est suivi de ses pièces jointes appropriées.|
 |Near Duplicate Set||ND_set|Les éléments similaires au document croisé dynamique partagent les mêmes ND_set.|
-|Auteurs O365||O365_authors|Auteur à partir de SharePoint.|
+|Auteurs O365||O365_authors|Créer à partir de SharePoint.|
 |O365 créé par||O365_created_by|Créé à partir de SharePoint.|
 |Date O365 créée||O365_date_created|Date de création à partir de SharePoint.|
-|O365ModifiedDate||O365_date_modified|Date à laquelle un document (ou version de document) collecté à partir de SharePoint ou OneDrive Entreprise a été modifié. Il s’agit de la même date modifiée que celle affichée dans l’historique des versions dans le SharePoint et OneDrive expérience utilisateur.|
+|O365ModifiedDate||O365_date_modified|Date à laquelle un document (ou version de document) collecté à partir de SharePoint ou OneDrive Entreprise a été modifié. Il s’agit de la même date modifiée que celle affichée dans l’historique des versions dans l’expérience utilisateur SharePoint et OneDrive.|
 |O365 modifié par||O365_modified_by|Modifié par SharePoint ou OneDrive.|
 |Autres consignats|DedupedCustodians|Deduped_custodians|Liste des consignats de documents qui sont des doublons exacts (pour le courrier électronique, en fonction du contenu ; pour les documents, en fonction du hachage).|
 |Autres ID de fichier|DedupedFileIds|Deduped_file_IDs|Liste des ID de fichier des documents qui sont des doublons exacts (pour l’e-mail, en fonction du contenu ; pour les documents, en fonction du hachage).|
@@ -175,17 +173,17 @@ Le tableau suivant répertorie les champs de métadonnées des documents d’un 
 |Sujet|Sujet|Email_subject|Objet du message.|
 |Objet/titre|SubjectTitle||Champ calculé composé de l’objet ou du titre de l’élément.|
 |Balises|Balises|Balises|Balises appliquées dans un ensemble de révisions.|
-|Nom du canal|Canal|ChannelName|Il s’agit du nom du canal Teams. S’applique uniquement à Microsoft Teams contenu.|
-|Nom de l’équipe|TeamName|TeamName|**Teams :** nom de l’équipe<br>**Yammer :** nom Community|
+|Nom du canal|Canal|ChannelName|Il s’agit du nom du canal Teams. S’applique uniquement au contenu Microsoft Teams.|
+|Nom de l’équipe|TeamName|TeamName|**Équipes:** Nom de l’équipe<br>**Yammer:** Nom de la communauté|
 |Liste de thèmes|ThemesList|Themes_list|Les thèmes sont répertoriés comme calculés pour l’analytique.|
-|Titre|Titre|Doc_title|Titre des métadonnées du document. Titre des métadonnées du document. Pour Teams et Yammer contenu, il s’agit de la valeur de la propriété ConversationName.|
+|Titre|Titre|Doc_title|Titre des métadonnées du document. Titre des métadonnées du document. Pour le contenu Teams et Yammer, il s’agit de la valeur de la propriété ConversationName.|
 |À|À|Email_to|Champ Pour les types de messages. Format **DisplayName\<SmtpAddress>**|
 |Unique dans l’ensemble de courriers électroniques|UniqueInEmailSet||**False** s’il existe un doublon de la pièce jointe dans son jeu de courriers électroniques.|
 |ID de groupe de versions||Version_Group_Id|Regroupe les différentes versions du même document.|
-|VersionNumber||Version_Number|Numéro de version d’un document collecté à partir de SharePoint ou OneDrive Entreprise. Il s’agit du même numéro de version que celui affiché dans l’historique des versions dans le SharePoint et OneDrive expérience utilisateur.|
+|VersionNumber||Version_Number|Numéro de version d’un document collecté à partir de SharePoint ou OneDrive Entreprise. Il s’agit du même numéro de version que celui affiché dans l’historique des versions dans l’expérience utilisateur SharePoint et OneDrive.|
 |A été corrigé|WasRemediated|Was_Remediated|**True** si l’élément a été corrigé, sinon **False**.|
 |Statistiques|WordCount|Word_count|Nombre de mots dans l’élément.|
 |||||
 
 > [!NOTE]
-> Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche lors de la recherche Office 365 emplacements de contenu lorsque vous collectez des données pour un cas eDiscovery (Premium), consultez requêtes de mots [clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+> Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche lors de la recherche Office 365 emplacements de contenu lorsque vous collectez des données pour un cas eDiscovery (Premium), consultez [requêtes de mots clés et conditions de recherche de contenu](keyword-queries-and-search-conditions.md).

@@ -17,20 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Découvrez les limites en vigueur pour les fonctionnalités de recherche de contenu et eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: f20c33781b8dd9f92091e1b0c459137a4edd33ed
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 79078818ca3975dcbfee0ce72b93f1c3d6039802
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014869"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629528"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Différentes limites sont appliquées aux outils de recherche eDiscovery dans le portail de conformité Microsoft Purview. Cela inclut les recherches exécutées sur la page **de recherche de contenu** et les recherches associées à un cas eDiscovery sur la page **eDiscovery (Standard).** Ces limites contribuent à maintenir la santé et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites des recherches eDiscovery ou de l’indexation des e-mails, mais vous devez les connaître afin de pouvoir prendre en compte ces limites lors de la planification, de l’exécution et de la résolution des problèmes liés aux recherches eDiscovery.
 
-Pour connaître les limites liées à l’outil Microsoft Purview eDiscovery (Premium), consultez [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
+Pour connaître les limites liées à l’outil Microsoft Purview eDiscovery (Premium), consultez [Limites dans eDiscovery (Premium)](limits-ediscovery20.md)
 
 ## <a name="search-limits"></a>Limites de la recherche
 
@@ -66,7 +64,7 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 >
 > <sup>2</sup> L’objectif de la page d’aperçu est d’afficher un échantillon limité des résultats. Même pour les recherches massives avec des milliers de résultats, le nombre d’éléments affichés sur la page d’aperçu peut, et souvent, être bien inférieur à la valeur maximale possible de 1 000. Pour afficher les résultats complets de la recherche, vous devez exporter les résultats.
 >
-> <sup>3</sup> Lors de la recherche SharePoint et OneDrive Entreprise emplacements, les caractères dans les URL des sites recherchés sont comptabilisés dans cette limite.
+> <sup>3</sup> Lors de la recherche dans SharePoint et OneDrive Entreprise emplacements, les caractères dans les URL des sites recherchés sont comptabilisés dans cette limite.
 >
 > <sup>4</sup> Pour les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se produit dans un document, mais pas là où il se produit dans le document. Pour effectuer une requête d’expression (valeur de mot clé avec guillemets doubles), nous devons comparer la position dans le document pour les mots de l’expression. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expression. Dans ce cas, nous étendons en interne la requête avec tous les mots possibles auxquels le préfixe se développe ; par exemple, `"time*"` peut s’étendre à `"time OR timer OR times OR timex OR timeboxed OR ..."`. Le nombre maximal de variantes que le mot peut développer, et non le nombre de documents correspondant à la requête, est de 10 000. Il n’existe aucune limite supérieure pour les termes autres que les termes d’expression.
 
@@ -102,7 +100,7 @@ Le tableau suivant répertorie les limites lors de l’exportation des résultat
 |Nombre maximal d’exportations simultanées pouvant être exécutées en même temps au sein de votre organisation <p> **Note:** L’exécution d’un **rapport uniquement** compte pour les exportations simultanées totales de votre organisation. Si trois utilisateurs effectuent 3 exportations chacune, une seule autre exportation peut être effectuée. Qu’il s’agisse de l’exportation d’un rapport ou de résultats de recherche, aucune autre exportation ne peut être effectuée tant que l’exportation n’est pas terminée.|10|
 |Nombre maximal d’exportations qu’un seul utilisateur peut exécuter à tout moment|3|
 |Nombre maximal de boîtes aux lettres pour les résultats de recherche qui peuvent être téléchargés à l’aide de l’outil d’exportation eDiscovery|100 000|
-|Taille maximale du fichier PST pouvant être exporté <p> **Note:** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de recherche de la boîte aux lettres sont exportés dans deux fichiers PST distincts (ou plus). Si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera placé dans des fichiers PST supplémentaires si la taille totale des résultats de recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). Les résultats de recherche d’une boîte aux lettres spécifique ne seront pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour lequel contient tous les messages d’un dossier unique et que les résultats de recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront placés dans des fichiers PST supplémentaires en fonction de la date d’envoi.|10 Go|
+|Taille maximale du fichier PST pouvant être exporté <p> **Note:** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de recherche de la boîte aux lettres sont exportés dans deux fichiers PST distincts (ou plus). Si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera placé dans des fichiers PST supplémentaires si la taille totale des résultats de recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md). Les résultats de recherche d’une boîte aux lettres spécifique ne seront pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour lequel contient tous les messages d’un dossier unique et que les résultats de recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront placés dans des fichiers PST supplémentaires en fonction de la date d’envoi.|10 Go|
 |Taux auquel les résultats de recherche des boîtes aux lettres et des sites sont chargés vers un emplacement de stockage Azure fourni par Microsoft.|Maximum de 2 Go par heure|
 
 ## <a name="indexing-limits-for-email-messages"></a>Limites d’indexation pour les messages électroniques

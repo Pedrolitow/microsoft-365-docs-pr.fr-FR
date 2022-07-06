@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de capture de pages web à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 1509cf4694fec8a3fdf8bf4e375a27267ab41a11
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de capture de page web à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
+ms.openlocfilehash: f73f7fd0328b1e64437ea4ccb52259f461b4d41d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317024"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630594"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurer un connecteur pour archiver les données de page web
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Utilisez un connecteur Veritas dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages web vers des boîtes aux lettres utilisateur de votre organisation Microsoft 365. Veritas fournit un connecteur [de capture de pages web](https://globanet.com/webpage-capture) qui capture des pages web spécifiques (et tous les liens sur ces pages) dans un site web spécifique ou un domaine entier. Le connecteur convertit le contenu de la page web au format PDF, PNG ou fichier personnalisé, puis attache les fichiers convertis à un message électronique, puis importe ces éléments de courrier dans des boîtes aux lettres utilisateur dans Microsoft 365.
 
-Une fois le contenu de la page web stocké dans des boîtes aux lettres utilisateur, vous pouvez appliquer Microsoft Purview fonctionnalités telles que la conservation des litiges, eDiscovery et les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur de capture de pages web pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois le contenu de la page web stocké dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, eDiscovery, ainsi que des stratégies de rétention et des étiquettes de rétention. L’utilisation d’un connecteur De capture de page web pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-webpage-data"></a>Vue d’ensemble de l’archivage des données de page web
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver le contenu de la page web dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver le contenu d’une page web dans Microsoft 365.
 
 ![Flux de travail d’archivage pour les données de page web.](../media/WebPageCaptureConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Une fois toutes les 24 heures, les éléments sources de la page web sont copiés sur le site Veritas Merge1. Le connecteur convertit et attache également le contenu d’une page web à un e-mail.
 
-3. Le connecteur Capture de page web que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère les éléments de la page web vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur De capture de page web que vous créez dans le portail de conformité, se connecte au site Veritas Merge1 tous les jours et transfère les éléments de la page web vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments de page web convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique d’utilisateurs, comme décrit à [l’étape 3](#step-3-map-users-and-complete-the-connector-setup). Un sous-dossier dans le dossier Boîte de réception nommé **Capture de page web** est créé dans les boîtes aux lettres de l’utilisateur, et les éléments de la page web sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la propriété *Email* . Chaque élément de page web contient cette propriété, qui est remplie avec les adresses e-mail fournies lorsque vous configurez le connecteur Capture de page web à [l’étape 2](#step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site).
 
@@ -47,15 +45,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Vous devez utiliser la prise en charge de Veritas pour configurer un format de fichier personnalisé dans lequel convertir les éléments de page web. Pour plus d’informations, consultez le [Guide de l’utilisateur des connecteurs tiers Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
-- L’utilisateur qui crée le connecteur De capture de page web à l’étape 1 (et le termine à l’étape 3) doit avoir le rôle d’administrateur du connecteur de données. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée le connecteur De capture de page web à l’étape 1 (et le termine à l’étape 3) doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données Veritas est en préversion publique dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données Veritas est en préversion publique dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-the-webpage-capture-connector"></a>Étape 1 : Configurer le connecteur De capture de page web
 
 La première étape consiste à accéder aux **connecteurs de données** et à créer un connecteur pour les données sources de page web.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) Data **connectorsWebpage Capture**, puis cliquez **dessus** > .
+1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez sur **Capture de page web** **des connecteurs** >  de données.
 
 2. Dans la page de description du produit **Capture de page web** , cliquez sur **Ajouter un connecteur**.
 
@@ -75,7 +73,7 @@ Une fois que vous avez cliqué sur **Enregistrer & Terminer**, la page De **mapp
 
 Pour mapper les utilisateurs et terminer la configuration du connecteur dans le portail de conformité, suivez les étapes ci-dessous :
 
-1. Dans la page **Capture de page web de carte pour Microsoft 365 page utilisateurs**, activez le mappage automatique des utilisateurs. Les éléments de capture de page web incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Capture de page Web de carte des utilisateurs vers les utilisateurs Microsoft 365** , activez le mappage automatique des utilisateurs. Les éléments de capture de page web incluent une propriété appelée *Email*, qui contient des adresses e-mail pour les utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez sur **Suivant**, passez en revue vos paramètres et accédez à la page **Connecteurs de données** pour voir la progression du processus d’importation du nouveau connecteur.
 

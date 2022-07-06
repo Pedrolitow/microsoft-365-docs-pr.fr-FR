@@ -21,28 +21,26 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkSPO
 description: Découvrez comment utiliser une stratégie de protection contre la perte de données (DLP) pour protéger les documents qui ont des propriétés à partir d’un système tiers.
-ms.openlocfilehash: 1b73f1441909c49534c17cef47804021ca2824dd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c57a7b60377cf401a0e29e33ce524c4180b9f725
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007259"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626356"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+les stratégies Protection contre la perte de données Microsoft Purview (DLP) peuvent utiliser des propriétés de classification ou des propriétés d’élément pour identifier les éléments sensibles. Par exemple, vous pouvez utiliser :
 
-Les stratégies de protection contre la perte de données (DLP) Microsoft Purview peuvent utiliser des propriétés de classification ou des propriétés d’élément pour identifier les éléments sensibles. Par exemple, vous pouvez utiliser :
-
-- Windows propriétés de l’infrastructure de classification des fichiers de serveur (FCI)
-- SharePoint propriétés du document
+- Propriétés de l’infrastructure de classification des fichiers Windows Server
+- Propriétés du document SharePoint
 - propriétés du document système tiers
 
 ![Diagramme montrant Office 365 et système de classification externe.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-Par exemple, votre organisation peut utiliser Windows FCI serveur pour identifier des éléments avec des données personnelles telles que des numéros de sécurité sociale, puis classer le document en définissant la propriété **Informations d’identification personnelle** sur **Haute**, **Modérée**, **Faible**, **Publique** ou **Non,** en fonction du type et du nombre d’occurrences de données personnelles trouvées dans le document.
+Par exemple, votre organisation peut utiliser l’instance FCI Windows Server pour identifier des éléments avec des données personnelles telles que des numéros de sécurité sociale, puis classifier le document en définissant la propriété **Informations d’identification personnelle** sur **Haute**, **Modérée**, **Faible**, **Publique** ou **Non,** en fonction du type et du nombre d’occurrences de données personnelles trouvées dans le document.
 
-Dans Microsoft 365, vous pouvez créer une stratégie DLP qui identifie les documents dont la propriété est définie sur des valeurs spécifiques, telles que **High** et **Medium**, puis effectue une action telle que le blocage de l’accès à ces fichiers. La même stratégie peut disposer d’une autre règle qui exécute une action différente si la propriété est définie sur **Faible**, telle que l’envoi d’une notification par courrier électronique. De cette façon, DLP s’intègre à Windows server FCI et peut aider à protéger Office documents chargés ou partagés sur Microsoft 365 à partir de Windows serveurs de fichiers basés sur le serveur.
+Dans Microsoft 365, vous pouvez créer une stratégie DLP qui identifie les documents dont la propriété est définie sur des valeurs spécifiques, telles que **High** et **Medium**, puis effectue une action telle que le blocage de l’accès à ces fichiers. La même stratégie peut disposer d’une autre règle qui exécute une action différente si la propriété est définie sur **Faible**, telle que l’envoi d’une notification par courrier électronique. De cette façon, DLP s’intègre à l’instance FCI Windows Server et peut aider à protéger les documents Office chargés ou partagés vers Microsoft 365 à partir de serveurs de fichiers Windows Server.
 
 Une stratégie DLP recherche simplement une paire nom/valeur de propriété spécifique. N’importe quelle propriété de document peut être utilisée, tant que la propriété possède une propriété gérée correspondante pour la recherche SharePoint. Par exemple, une collection de sites SharePoint peut utiliser un type de contenu nommé **Relevé de voyage** avec un champ obligatoire nommé **Client**. Lorsqu’une personne crée un relevé de voyage, elle doit entrer le nom du client. Cette paire nom/valeur de propriété peut également être utilisée dans une stratégie DLP, par exemple si vous souhaitez une règle qui bloque l’accès au document pour les invités lorsque le champ **Client** contient **Contoso**.
 
@@ -50,7 +48,7 @@ Si vous souhaitez appliquer votre stratégie DLP au contenu avec des étiquettes
 
 ## <a name="before-you-create-the-dlp-policy"></a>Avant de créer la stratégie DLP
 
-Avant de pouvoir utiliser une propriété Windows Server FCI ou une autre propriété dans une stratégie DLP, vous devez créer une propriété gérée dans le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>. Voilà pourquoi.
+Avant de pouvoir utiliser une propriété windows Server FCI ou une autre propriété dans une stratégie DLP, vous devez créer une propriété gérée dans le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>. Voilà pourquoi.
 
 Exemples
 
@@ -69,11 +67,11 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
-2. Dans le volet de navigation de gauche, choisissez **Centres** \> **d’administration SharePoint**. Vous êtes maintenant dans le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centre d’administration SharePoint</a>.
+2. Dans la navigation de gauche, choisissez **Administration centres** \> **SharePoint**. Vous êtes maintenant dans le <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centre d’administration SharePoint</a>.
 
 3. Dans le volet de navigation de gauche, choisissez **rechercher** \> dans la page \> **Administration** de la recherche **Gérer le schéma de recherche**.
 
-   ![page d’administration de recherche dans SharePoint centre d’administration.](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+   ![page d’administration de recherche dans le Centre d’administration SharePoint.](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
 4. Dans la page \> **Propriétés gérées****, nouvelle propriété gérée**.
 
@@ -87,7 +85,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 8. Sous **Mappages aux propriétés analysées** \> **, ajoutez un mappage**.
 
-9. Dans la boîte \> de dialogue **de sélection de propriété analysée**, recherchez et sélectionnez la propriété analysée qui correspond à la propriété Windows Server FCI ou à une autre propriété que vous utiliserez dans votre stratégie DLP \> **OK**.
+9. Dans la boîte \> de dialogue **de sélection de propriété analysée**, recherchez et sélectionnez la propriété analysée qui correspond à la propriété windows Server FCI ou à une autre propriété que vous utiliserez dans votre stratégie DLP \> **OK**.
 
    ![boîte de dialogue de sélection de propriété analysée.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
@@ -95,7 +93,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Création d’une stratégie DLP qui utilise une propriété ICF ou une autre propriété
 
-Dans cet exemple, une organisation utilise FCI sur ses serveurs de fichiers Windows serveur. Plus précisément, elle utilise la propriété de classification FCI nommée **Informations d’identification personnelle** avec des valeurs possibles **: High**, **Moderate**, **Low**, **Public** et **Not PII**. Ils souhaitent maintenant utiliser leur classification FCI existante dans leurs stratégies DLP dans Office 365.
+Dans cet exemple, une organisation utilise FCI sur ses serveurs de fichiers Windows Server ; plus précisément, ils utilisent la propriété de classification FCI nommée **Informations d’identification personnelle** avec des valeurs possibles **de haute**, **moyenne**, **faible**, **publique** et **non piI**. Ils souhaitent maintenant utiliser leur classification FCI existante dans leurs stratégies DLP dans Office 365.
 
 D’abord, ils suivent les étapes ci-dessus pour créer une propriété gérée dans SharePoint Online, qui est mappée sur la propriété analysée créée automatiquement à partir de la propriété ICF.
 
@@ -109,7 +107,7 @@ Ensuite, ils créent une stratégie DLP avec deux règles qui utilisent toutes l
 
 Les **propriétés de document de condition contiennent l’une de ces valeurs** n’est temporairement pas disponible dans le portail de conformité Microsoft Purview, mais vous pouvez toujours utiliser cette condition dans Security & Compliance PowerShell. Vous pouvez utiliser les `New\Set\Get-DlpCompliancePolicy` applets de commande pour utiliser une stratégie DLP et utiliser les `New\Set\Get-DlpComplianceRule` applets de commande avec le `ContentPropertyContainsWords` paramètre pour ajouter la condition **Que les propriétés document contiennent l’une de ces valeurs**.
 
-1. [Connecter à La sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Créez la stratégie à l’aide de `New-DlpCompliancePolicy`.
 
@@ -127,7 +125,7 @@ Les **propriétés de document de condition contiennent l’une de ces valeurs**
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows server FCI inclut de nombreuses propriétés intégrées, notamment **les informations d’identification personnelle** utilisées dans cet exemple. Les valeurs possibles pour chaque propriété peuvent être différentes pour chaque organisation. Les valeurs **High**, **Moderate** et **Low** utilisées ici ne sont qu’un exemple. Pour votre organisation, vous pouvez afficher les propriétés de classification Windows Server FCI avec leurs valeurs possibles dans le Resource Manager serveur de fichiers sur le serveur de fichiers Windows serveur. Pour plus d’informations, consultez [Créer une propriété de classification](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
+   Windows Server FCI inclut de nombreuses propriétés intégrées, y compris les **informations d’identification personnelle** utilisées dans cet exemple. Les valeurs possibles pour chaque propriété peuvent être différentes pour chaque organisation. Les valeurs **High**, **Moderate** et **Low** utilisées ici ne sont qu’un exemple. Pour votre organisation, vous pouvez afficher les propriétés de classification des instances FCI Windows Server avec leurs valeurs possibles dans le serveur de fichiers Resource Manager sur le serveur de fichiers Windows Server. Pour plus d’informations, consultez [Créer une propriété de classification](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
 
 Lorsque vous avez terminé, votre stratégie doit avoir deux nouvelles règles qui utilisent toutes les deux les **propriétés document contenant l’une de ces conditions de valeurs** . Cette condition n’apparaît pas dans l’interface utilisateur, bien que les autres conditions, actions et paramètres apparaissent.
 
@@ -148,7 +146,7 @@ Pour plus d’informations, voir [Demander manuellement l’analyse et la réind
 
 ### <a name="reindex-a-site-optional"></a>Réindexer un site (facultatif)
 
-1. Sur le site, choisissez **Paramètres** (icône d’engrenage en haut à droite) \> **Paramètres de site**.
+1. Sur le site, choisissez **Paramètres** (icône d’engrenage en haut à droite) \> **Paramètres du site**.
 
 2. Sous **Rechercher**, choisissez Rechercher et le **site de réindexation** **de disponibilité** \> hors connexion.
 

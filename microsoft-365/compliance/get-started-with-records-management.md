@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère des contenus à forte valeur pour les obligations légales, professionnelles, ou réglementaires, mais vous ne savez pas où commencer ? Lisez des instructions pratiques pour démarrer.
-ms.openlocfilehash: 86d6f21963b33fde59cb498868b8ecec315e1ad8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286777"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629670"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Etes-vous prêt à démarrer la gestion de contenus à forte valeur de votre organisation relatifs aux obligations légales, professionnelles, ou réglementaires à l’aide d’une solution de gestion des enregistrements dans Microsoft 365? Suivez ces instructions pour démarrer :
 
@@ -85,6 +83,7 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
 |Obtenez une preuve de destruction permanente du contenu à la fin de sa période de rétention.|[Destruction des enregistrements](disposition.md#disposition-of-records) |
 | Contrôler la manière dont les paramètres conserver et supprimer sont appliqués aux éléments | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
+| Créer et gérer par programmation des étiquettes de rétention, une rétention basée sur des événements et automatiser des tâches répétitives pour la gestion des enregistrements | [API Microsoft Graph pour la gestion des enregistrements (préversion)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 

@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Vous pouvez ajouter des agents d’émission à l’échelle de l’organisation dans eDiscovery (Premium) afin qu’ils puissent être ajoutés à n’importe quelle communication de garde dans n’importe quel cas de votre organisation.
-ms.openlocfilehash: 894da37088599d1c8b0f9d473bf64311a09cc566
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Vous pouvez ajouter des agents d’émission à l’échelle de l’organisation dans eDiscovery (Premium) afin qu’ils puissent être ajoutés à n’importe quelle communication de garde dans tous les cas de votre organisation.
+ms.openlocfilehash: 0a3383f9f725a7d5afacd1cab504eefc97b91fd3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093633"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627688"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Gérer les agents émetteurs dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous ou d’autres personnes créez une notification de suspension ou tout autre type de communication envoyé à un utilisateur qui est un gardien au cas où, vous devez spécifier un agent émetteur. La notification est envoyée au consignat pour le compte de l’agent émetteur spécifié. Par exemple, un parajuriste de votre organisation peut être responsable de la création et de l’envoi de notifications de conservation aux consignatateurs dans un cas. Dans ce scénario, le parajuriste peut spécifier un avocat dans l’organisation en tant qu’agent d’émission. Qui peut être spécifié en tant qu’agent d’émission ? Il existe deux types d’utilisateurs qui peuvent être sélectionnés en tant qu’agent d’émission pour une communication de consignation :
+Lorsque vous ou d’autres personnes créez une notification de suspension ou tout autre type de communication envoyé à un utilisateur qui est un gardien au cas où, vous devez spécifier un agent émetteur. La notification est envoyée au consignat pour le compte de l’agent émetteur spécifié. Par exemple, un parajuriste de votre organisation peut être responsable de la création et de l’envoi de notifications de conservation aux consignatateurs dans un cas. Dans ce scénario, le parajuriste peut spécifier un avocat dans l’organisation en tant qu’agent d’émission. Qui peut être spécifié en tant qu’agent d’émission? Il existe deux types d’utilisateurs qui peuvent être sélectionnés en tant qu’agent d’émission pour une communication de consignation :
 
 - Tout membre du cas spécifique dont la communication est envoyée au nom de.
 
@@ -41,15 +39,15 @@ Cet article explique comment ajouter et supprimer des utilisateurs à la liste d
 
 - L’utilisateur ajouté en tant qu’agent d’émission doit disposer d’une boîte aux lettres active dans votre organisation Microsoft 365.
 
-- Votre organisation peut avoir un maximum de 15 agents émetteurs. Les membres d’un cas qui peuvent être spécifiés en tant qu’agent d’émission ne sont pas comptabilisés dans cette limite. Cette limite s’applique uniquement au nombre d’utilisateurs qui peuvent être ajoutés à la page **Agents** d’émission dans eDiscovery (Premium).
+- Votre organisation peut avoir un maximum de 15 agents émetteurs. Les membres d’un cas qui peuvent être spécifiés en tant qu’agent d’émission ne sont pas comptabilisés dans cette limite. Cette limite s’applique uniquement au nombre d’utilisateurs qui peuvent être ajoutés à la page **Agents d’émission** dans eDiscovery (Premium).
 
 ## <a name="add-an-issuing-officer"></a>Ajouter un agent d’émission
 
-1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur **les paramètres eDiscovery (Premium**).
+1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur les **paramètres eDiscovery (Premium**).
 
    ![Sélectionner les paramètres eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet **Agents d’émission** pour afficher la page **Gérer les agents émetteurs**.
+2. Dans la page **Paramètres** , sélectionnez l’onglet **Agents d’émission** pour afficher la page **Gérer les agents émetteurs** .
 
    ![Page des paramètres des agents d’émission.](..\media\AeDIssuingOfficers1.png)
 
@@ -59,9 +57,9 @@ Une fois que vous avez ajouté des utilisateurs en tant qu’agents d’émissio
 
 ## <a name="remove-an-issuing-officer"></a>Supprimer un agent d’émission
 
-1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur **les paramètres eDiscovery (Premium**).
+1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur les **paramètres eDiscovery (Premium**).
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet **Agents d’émission**.
+2. Dans la page **Paramètres** , sélectionnez l’onglet **Agents d’émission** .
 
 3. Sélectionnez un ou plusieurs utilisateurs dans la liste des agents d’émission, puis cliquez sur **Supprimer**.
 

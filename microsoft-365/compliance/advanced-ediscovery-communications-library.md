@@ -15,35 +15,33 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Vous pouvez ajouter des modèles de communication de consignation (tels qu’un modèle de notification de conservation) dans eDiscovery (Premium) afin qu’ils puissent être utilisés dans tous les cas dans votre organisation.
-ms.openlocfilehash: faf4ea91ae6f160b2ba7388a7cfea8ad6cb9797b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Vous pouvez ajouter des modèles de communication de consignation (tels qu’un modèle de notification de conservation) dans eDiscovery (Premium) afin qu’ils puissent être utilisés dans tous les cas de votre organisation.
+ms.openlocfilehash: 0ae8496178cd27a395de66e18355ccd675006486
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097269"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630816"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>Gérer les modèles de communication des consignatateurs dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous ou d’autres utilisateurs créez une notification de conservation ou d’autres types de communications de consignation, vous deviez créer le document de communication à partir de zéro à l’aide de l’éditeur de communications sous l’onglet **Communications** dans un cas eDiscovery (Premium). À présent, nous avons publié une nouvelle fonctionnalité qui vous permet de créer des modèles de communication qui peuvent être utilisés pour créer des communications dans tous les cas de votre organisation. Une fois les modèles de communication créés, ils sont disponibles pour être utilisés dans un cas. Cela signifie que les parajuristes ou d’autres utilisateurs qui créent des communications de consignat ne doivent pas commencer de zéro pour générer une notification. Au lieu de cela, ils peuvent sélectionner un modèle pour générer la notification envoyée à un consignateur.
+Lorsque vous ou d’autres utilisateurs créez une notification d’attente ou d’autres types de communications de consignation, vous deviez créer le document de communication à partir de zéro à l’aide de l’éditeur de communications sous l’onglet **Communications** dans un cas eDiscovery (Premium). À présent, nous avons publié une nouvelle fonctionnalité qui vous permet de créer des modèles de communication qui peuvent être utilisés pour créer des communications dans tous les cas de votre organisation. Une fois les modèles de communication créés, ils sont disponibles pour être utilisés dans un cas. Cela signifie que les parajuristes ou d’autres utilisateurs qui créent des communications de consignat ne doivent pas commencer de zéro pour générer une notification. Au lieu de cela, ils peuvent sélectionner un modèle pour générer la notification envoyée à un consignateur.
 
 Cet article explique comment créer des modèles de communication à l’échelle de l’organisation et les sélectionner lors de la création d’une notification de consignation pour un cas eDiscovery (Premium) spécifique.
 
 ## <a name="before-you-create-templates-in-the-communications-library"></a>Avant de créer des modèles dans la bibliothèque communications
 
-- Vous devez être administrateur eDiscovery dans votre organisation pour ajouter ou supprimer des modèles dans la bibliothèque communications dans eDiscovery (Premium). Pour plus d’informations, consultez [Affecter des autorisations eDiscovery dans le portail de conformité Microsoft Purview](assign-ediscovery-permissions.md)  
+- Vous devez être administrateur eDiscovery dans votre organisation pour ajouter ou supprimer des modèles dans la bibliothèque Communications dans eDiscovery (Premium). Pour plus d’informations, consultez [Affecter des autorisations eDiscovery dans le portail de conformité Microsoft Purview](assign-ediscovery-permissions.md)  
 
 - Votre organisation peut avoir un maximum de 50 modèles dans la bibliothèque communications.
 
 ## <a name="create-a-communications-template"></a>Créer un modèle de communication
 
-1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur **les paramètres eDiscovery (Premium**).
+1. Dans le portail de conformité, accédez à [eDiscovery (Premium),](https://go.microsoft.com/fwlink/p/?linkid=2173764) puis cliquez sur les **paramètres eDiscovery (Premium**).
 
    ![Sélectionner les paramètres eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet **Bibliothèque de communications**.
+2. Dans la page **Paramètres** , sélectionnez l’onglet **Bibliothèque de communications** .
 
 3. Dans la page **Bibliothèque de communications** , cliquez sur **Créer**.
 

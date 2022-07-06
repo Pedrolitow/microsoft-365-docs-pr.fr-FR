@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas eDiscovery (Standard). Cela inclut la fermeture d’un cas, la réouverture d’un dossier fermé et la suppression d’un cas.
-ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 5c2efd96f563eb2947b17e1cc857613d27981dac
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318313"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628856"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Fermer, rouvrir et supprimer un cas eDiscovery (Standard)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Cet article explique comment fermer, rouvrir et supprimer Microsoft Purview cas eDiscovery (Standard) dans Microsoft 365.
+Cet article explique comment fermer, rouvrir et supprimer des cas Microsoft Purview eDiscovery (Standard) dans Microsoft 365.
 
 ## <a name="close-a-case"></a>Fermer un cas
 
@@ -44,7 +42,7 @@ Lorsque l’affaire juridique ou l’enquête prise en charge par une affaire eD
 
 Pour fermer un cas :
   
-1. Dans le portail de conformité, cliquez sur **eDiscoveryeDiscovery** >  **(Standard)** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
+1. Dans le portail de conformité, cliquez sur **eDiscovery** > **eDiscovery (Standard)** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
 
 2. Cliquez sur le nom du cas que vous souhaitez fermer.
 
@@ -66,7 +64,7 @@ Pour fermer un cas :
 
 Lorsque vous rouvrez une affaire, les conservations eDiscovery qui étaient en place lorsque l’affaire a été classée ne seront pas automatiquement rétablies. Une fois le cas rouvert, vous devez accéder à la page **Conservations** et activer les conservations précédentes. Pour activer une conservation, sélectionnez-la pour afficher la page de menu volant, puis réglez la bascule **État** sur **Activer**.
   
-1. Dans le portail de conformité, cliquez sur **eDiscoveryCore** >  pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
+1. Dans le portail de conformité, cliquez sur **eDiscovery** > **Core** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
 
 2. Cliquez sur le nom du cas que vous souhaitez rouvrir.
 
@@ -104,7 +102,7 @@ Pour supprimer une conservation eDiscovery :
 
 Pour supprimer un cas :
 
-1. Dans le portail de conformité, cliquez sur **eDiscoveryeDiscovery** >  **(Standard)** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
+1. Dans le portail de conformité, cliquez sur **eDiscovery** > **eDiscovery (Standard)** pour afficher la liste des cas eDiscovery (Standard) dans votre organisation.
 
 2. Cliquez sur le nom du cas à supprimer.
 

@@ -1,5 +1,5 @@
 ---
-title: Exporter des documents vers un compte stockage Azure d’organisation
+title: Exporter des documents vers un compte de stockage Azure d’organisation
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,43 +15,41 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: Exportez les documents d’un ensemble de révisions vers un compte stockage Azure, puis utilisez Explorateur Stockage Azure pour les télécharger sur un ordinateur local.
-ms.openlocfilehash: e0dfe3eb37ea440c93dc7753c7c4206d8d33c1f3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Exportez les documents d’un ensemble de révisions vers un compte de stockage Azure, puis utilisez Explorateur Stockage Azure pour les télécharger sur un ordinateur local.
+ms.openlocfilehash: 87e7f04f2e21becb5320c3bca999d7e0ff4900b2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098623"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626488"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exporter des documents dans un ensemble de révisions vers un compte stockage Azure
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsque vous exportez des documents à partir d’un ensemble de révisions dans un cas eDiscovery (Premium), vous avez la possibilité de les exporter vers un compte stockage Azure géré par votre organisation. Si vous utilisez cette option, les documents sont chargés à votre emplacement stockage Azure. Une fois exportés, vous pouvez accéder aux documents (et les télécharger sur un ordinateur local ou à un autre emplacement) à l’aide de la Explorateur Stockage Azure. Cet article fournit des instructions sur l’exportation de documents vers votre compte stockage Azure et l’utilisation du Explorateur Stockage Azure pour vous connecter à un emplacement stockage Azure pour télécharger les documents exportés. Pour plus d’informations sur Explorateur Stockage Azure, consultez [Utiliser Explorateur Stockage Azure](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Lorsque vous exportez des documents à partir d’un ensemble de révisions dans un cas eDiscovery (Premium), vous avez la possibilité de les exporter vers un compte de stockage Azure géré par votre organisation. Si vous utilisez cette option, les documents sont chargés vers votre emplacement stockage Azure. Une fois exportés, vous pouvez accéder aux documents (et les télécharger sur un ordinateur local ou à un autre emplacement) à l’aide de la Explorateur Stockage Azure. Cet article fournit des instructions sur l’exportation de documents vers votre compte de stockage Azure et l’utilisation du Explorateur Stockage Azure pour se connecter à un emplacement de stockage Azure afin de télécharger les documents exportés. Pour plus d’informations sur Explorateur Stockage Azure, consultez [Utiliser Explorateur Stockage Azure](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>Avant d’exporter des documents à partir d’un ensemble de révisions
 
-- Vous devez fournir un jeton de signature d’accès partagé (SAP) pour votre compte stockage Azure et l’URL d’un conteneur spécifique dans le compte de stockage pour exporter des documents à partir d’un jeu de révision. Veillez à les avoir à portée de main (par exemple, copiés dans un fichier texte) lorsque vous effectuez l’étape 2
+- Vous devez fournir un jeton de signature d’accès partagé (SAP) pour votre compte de stockage Azure et l’URL d’un conteneur spécifique dans le compte de stockage pour exporter des documents à partir d’un ensemble de révisions. Veillez à les avoir à portée de main (par exemple, copiés dans un fichier texte) lorsque vous effectuez l’étape 2
 
-  - **Jeton SAS** : veillez à obtenir le jeton SAS pour votre compte stockage Azure (et non pour le conteneur). Vous pouvez générer un jeton SAS pour votre compte dans stockage Azure. Pour ce faire, accédez au compte stockage Azure, puis sélectionnez **Partager la signature d’accès** sous les paramètres **Paramètres** dans le panneau du compte de stockage. Utilisez les paramètres par défaut et autorisez tous les types de ressources lorsque vous générez le jeton SAS.
+  - **Jeton SAS** : veillez à obtenir le jeton SAS pour votre compte de stockage Azure (et non pour le conteneur). Vous pouvez générer un jeton SAS pour votre compte dans Stockage Azure. Pour ce faire, accédez au compte de stockage Azure, puis sélectionnez **Partager la signature d’accès** sous les **paramètres des paramètres** dans le panneau du compte de stockage. Utilisez les paramètres par défaut et autorisez tous les types de ressources lorsque vous générez le jeton SAS.
 
-  - **URL** du conteneur : vous devez créer un conteneur dans lequel charger les documents du jeu de révision, puis obtenir une copie de l’URL du conteneur ; par exemple, `https://ediscoverydata.blob.core.windows.net/exportdata`. Pour obtenir l’URL, accédez au conteneur dans stockage Azure, puis sélectionnez **Propriétés** sous la section **Paramètres** dans le panneau conteneur.
+  - **URL** du conteneur : vous devez créer un conteneur dans lequel charger les documents du jeu de révision, puis obtenir une copie de l’URL du conteneur ; par exemple, `https://ediscoverydata.blob.core.windows.net/exportdata`. Pour obtenir l’URL, accédez au conteneur dans Stockage Azure, puis sélectionnez **Propriétés** sous la section **Paramètres** dans le panneau conteneur.
 
-- Téléchargez et installez le Explorateur Stockage Azure. Pour obtenir des instructions, consultez [Explorateur Stockage Azure outil](https://go.microsoft.com/fwlink/p/?LinkId=544842). Vous utilisez cet outil pour vous connecter au conteneur dans votre compte stockage Azure et télécharger les documents que vous avez exportés à l’étape 1.
+- Téléchargez et installez le Explorateur Stockage Azure. Pour obtenir des instructions, consultez [Explorateur Stockage Azure outil](https://go.microsoft.com/fwlink/p/?LinkId=544842). Vous utilisez cet outil pour vous connecter au conteneur dans votre compte de stockage Azure et télécharger les documents que vous avez exportés à l’étape 1.
 
 ## <a name="step-1-export-the-documents-from-a-review-set"></a>Étape 1 : Exporter les documents à partir d’un ensemble de révisions
 
-La première étape consiste à créer un travail d’exportation pour exporter des documents à partir d’un ensemble de révisions. Pour obtenir des instructions plus détaillées sur toutes les options d’exportation, consultez [Exporter des documents à partir d’un ensemble de révisions](export-documents-from-review-set.md). La procédure suivante met en évidence les paramètres d’exportation de documents vers le compte stockage Azure de votre organisation.
+La première étape consiste à créer un travail d’exportation pour exporter des documents à partir d’un ensemble de révisions. Pour obtenir des instructions plus détaillées sur toutes les options d’exportation, consultez [Exporter des documents à partir d’un ensemble de révisions](export-documents-from-review-set.md). La procédure suivante met en évidence les paramètres d’exportation de documents vers le compte de stockage Azure de votre organisation.
 
 1. Dans le portail de conformité Microsoft Purview, ouvrez le cas eDiscovery (Premium), sélectionnez l’onglet **Ensembles** de révision, puis sélectionnez l’ensemble de révisions à exporter.
 
-2. Dans le jeu de révision, cliquez sur **ActionExport** > .
+2. Dans le jeu de révision, cliquez sur **Exportation d’action** > .
 
 3. Dans la page de menu volant **Options d’exportation** , tapez un nom (obligatoire) et une description (facultatif) pour l’exportation.
 
 4. Configurez les paramètres dans les sections documents, métadonnées, contenu et options. Pour plus d’informations sur ces paramètres, consultez [Exporter des documents à partir d’un ensemble de révisions](export-documents-from-review-set.md).
 
-5. Dans la section **Options de sortie**, sélectionnez la **structure de répertoire condensée exportée vers votre option de compte stockage Azure**.
+5. Dans la section **Options de sortie** , sélectionnez la **structure de répertoire condensée exportée vers votre option de compte de stockage Azure** .
 
 6. Collez l’URL du conteneur et le jeton SAS de votre compte de stockage dans les champs correspondants.
 
@@ -61,9 +59,9 @@ La première étape consiste à créer un travail d’exportation pour exporter 
 
 ## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>Étape 2 : Obtenir l’URL SAS à partir du travail d’exportation
 
-L’étape suivante consiste à obtenir l’URL SAS générée après la création du travail d’exportation à l’étape 1. Vous utilisez l’URL SAS pour vous connecter au conteneur dans votre compte stockage Azure vers lequel vous avez exporté les documents du jeu de révisions.
+L’étape suivante consiste à obtenir l’URL SAS générée après la création du travail d’exportation à l’étape 1. Vous utilisez l’URL SAS pour vous connecter au conteneur dans votre compte de stockage Azure vers lequel vous avez exporté les documents de l’ensemble de révisions.
 
-1. Dans la page **eDiscovery (Premium),** accédez au cas, puis cliquez sur l’onglet **Exportations**.
+1. Dans la page **eDiscovery (Premium),** accédez au cas, puis cliquez sur l’onglet **Exportations** .
 
 2. Dans l'onglet **Exportations** cliquez sur la tâche d'exportation que vous souhaitez télécharger. Il s’agit du travail d’exportation que vous avez créé à l’étape 1.
 
@@ -72,19 +70,19 @@ L’étape suivante consiste à obtenir l’URL SAS générée après la créati
    ![Copiez l’URL SAS affichée sous Emplacements.](../media/eDiscoExportJob.png)
 
    > [!TIP]
-   > L’URL SAS affichée dans le travail d’exportation est une concaténation de l’URL du conteneur et du jeton SAS pour votre compte stockage Azure. Vous pouvez le copier à partir du travail d’exportation ou le créer vous-même en combinant l’URL et le jeton SAS.
+   > L’URL SAS affichée dans le travail d’exportation est une concaténation de l’URL du conteneur et du jeton SAS pour votre compte de stockage Azure. Vous pouvez le copier à partir du travail d’exportation ou le créer vous-même en combinant l’URL et le jeton SAS.
 
-## <a name="step-3-connect-to-the-azure-storage-container"></a>Étape 3 : Connecter au conteneur stockage Azure
+## <a name="step-3-connect-to-the-azure-storage-container"></a>Étape 3 : Se connecter au conteneur stockage Azure
 
-La dernière étape consiste à utiliser la Explorateur Stockage Azure et l’URL SAS pour vous connecter au conteneur de votre compte stockage Azure et télécharger les documents exportés sur un ordinateur local.
+La dernière étape consiste à utiliser la Explorateur Stockage Azure et l’URL SAS pour vous connecter au conteneur dans votre compte de stockage Azure et télécharger les documents exportés sur un ordinateur local.
 
 1. Démarrez la Explorateur Stockage Azure que vous avez téléchargée et installée.
 
-2. Cliquez sur l’icône **Ouvrir Connecter Boîte de dialogue**.
+2. Cliquez sur l’icône **Ouvrir la boîte de dialogue Connecter** .
 
    ![Cliquez sur l’icône Ajouter un compte.](../media/AzureStorageConnect.png)
 
-3. Dans la **Connecter de stockage Azure** page, cliquez sur **Conteneur d’objets blob**.
+3. Dans la page **Se connecter au stockage Azure** , cliquez sur **Conteneur d’objets blob**.
 
 4. Dans la page **Sélectionner la méthode d’authentification** , sélectionnez l’option **signature d’accès partagé (SAP),** puis cliquez sur **Suivant**.
 
@@ -94,13 +92,13 @@ La dernière étape consiste à utiliser la Explorateur Stockage Azure et l’UR
 
     Notez que le nom du conteneur s’affiche dans la zone **Nom d’affichage** . Vous pouvez modifier ce nom.
 
-6. Cliquez sur **Suivant** pour afficher la page **récapitulative**, puis cliquez sur **Connecter**.
+6. Cliquez sur **Suivant** pour afficher la page **récapitulative** , puis cliquez sur **Se connecter**.
 
-    Le nœud **conteneurs d’objets blob** (sous **Stockage Comptes** >  **(conteneurs attachés)** \> est ouvert.
+    Le nœud **conteneurs d’objets blob** (sous **Comptes** >  de stockage **(conteneurs attachés)** \> est ouvert.
 
     ![Exportez les travaux dans le nœud conteneurs d’objets blob.](../media/AzureStorageConnect5.png)
 
-    Il contient un conteneur nommé avec le nom complet de l’étape 5. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez téléchargée dans le conteneur de votre compte stockage Azure. Ces dossiers sont nommés avec un ID qui correspond à l’ID du travail d’exportation. Vous trouverez ces ID d’exportation (et le nom de l’exportation) sous **les informations de support** sur la page de menu volant pour chaque **tâche de préparation des données pour l’exportation** répertoriée sous l’onglet **Travaux** dans le cas eDiscovery (Premium).
+    Il contient un conteneur nommé avec le nom complet de l’étape 5. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez téléchargée dans le conteneur de votre compte de stockage Azure. Ces dossiers sont nommés avec un ID qui correspond à l’ID du travail d’exportation. Vous trouverez ces ID d’exportation (et le nom de l’exportation) sous **les informations de support** sur la page de menu volant pour chaque **tâche de préparation des données pour l’exportation** répertoriée sous l’onglet **Travaux** dans le cas eDiscovery (Premium).
 
 7. Double-cliquez sur le dossier du travail d’exportation pour l’ouvrir.
 
@@ -121,7 +119,7 @@ La dernière étape consiste à utiliser la Explorateur Stockage Azure et l’UR
 
 - Le dossier du travail d’exportation contient les éléments suivants. Les éléments réels dans le dossier d’exportation sont déterminés par les options d’exportation configurées lors de la création du travail d’exportation. Pour plus d’informations sur ces options, consultez [Exporter des documents à partir d’un ensemble de révisions](export-documents-from-review-set.md).
 
-  - Export_load_file.csv : ce fichier CSV est un rapport d’exportation détaillé qui contient des informations sur chaque document exporté. Le fichier se compose d’une colonne pour chaque propriété de métadonnées d’un document. Pour obtenir la liste et la description des métadonnées incluses dans ce rapport, consultez la colonne **Nom du champ Exporté** dans la table dans [les champs de métadonnées document dans eDiscovery (Premium).](document-metadata-fields-in-advanced-ediscovery.md)
+  - Export_load_file.csv : ce fichier CSV est un rapport d’exportation détaillé qui contient des informations sur chaque document exporté. Le fichier se compose d’une colonne pour chaque propriété de métadonnées d’un document. Pour obtenir la liste et la description des métadonnées incluses dans ce rapport, consultez la colonne **Nom du champ Exporté** dans la table dans [les champs de métadonnées de document dans eDiscovery (Premium).](document-metadata-fields-in-advanced-ediscovery.md)
 
   - Summary.txt : fichier texte qui contient un résumé de l’exportation, y compris les statistiques d’exportation.
 

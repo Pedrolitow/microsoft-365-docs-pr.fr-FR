@@ -12,22 +12,20 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 description: Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts sous-jacents à l’empreinte digitale de document et explique comment en créer un à l’aide de PowerShell.
-ms.openlocfilehash: 3df4b7cf6f9fa09e81cf326cc58cc8114c025be9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 1ad29126783b9d824789b06020b8f925be00ffbb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014473"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627622"
 ---
 # <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. Dans le portail de conformité Microsoft Purview, l’empreinte digitale de document facilite la protection de ces informations en identifiant les formulaires standard utilisés dans toute votre organisation. Cette rubrique décrit les concepts sous-jacents à l’empreinte digitale de document et explique comment en créer un à l’aide de PowerShell.
+Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. Dans le portail de conformité Microsoft Purview, l’empreinte digitale de document vous permet de protéger plus facilement ces informations en identifiant les formulaires standard utilisés dans toute votre organisation. Cette rubrique décrit les concepts sous-jacents à l’empreinte digitale de document et explique comment en créer un à l’aide de PowerShell.
 
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Scénario de base de création d’une empreinte numérique de document
 
-L’empreinte digitale de document est une fonctionnalité de protection contre la perte de données (DLP) Microsoft Purview qui convertit un formulaire standard en un type d’informations sensibles, que vous pouvez utiliser dans les règles de vos stratégies DLP. Par exemple, vous pouvez créer une empreinte numérique de document basée sur un modèle de brevet vierge, puis créer une stratégie DLP qui détecte et bloque tous les modèles de brevet sortants comportant des informations sensibles. Si vous le souhaitez, vous pouvez configurer [des conseils de stratégie](use-notifications-and-policy-tips.md) pour informer les expéditeurs qu’ils peuvent envoyer des informations sensibles, et l’expéditeur doit vérifier que les destinataires sont qualifiés pour recevoir les brevets. Ce processus fonctionne avec n'importe quel formulaire texte utilisé dans votre organisation. Voici d'autres exemples de formulaires que vous pouvez télécharger :
+L’empreinte digitale de document est une fonctionnalité Protection contre la perte de données Microsoft Purview (DLP) qui convertit un formulaire standard en un type d’informations sensibles, que vous pouvez utiliser dans les règles de vos stratégies DLP. Par exemple, vous pouvez créer une empreinte numérique de document basée sur un modèle de brevet vierge, puis créer une stratégie DLP qui détecte et bloque tous les modèles de brevet sortants comportant des informations sensibles. Si vous le souhaitez, vous pouvez configurer [des conseils de stratégie](use-notifications-and-policy-tips.md) pour informer les expéditeurs qu’ils peuvent envoyer des informations sensibles, et l’expéditeur doit vérifier que les destinataires sont qualifiés pour recevoir les brevets. Ce processus fonctionne avec n'importe quel formulaire texte utilisé dans votre organisation. Voici d'autres exemples de formulaires que vous pouvez télécharger :
 
 - Formulaires officiels
 - Formulaires de conformité relatifs à la loi américaine HIPAA (Health Insurance Portability Accountability Act)
@@ -41,7 +39,7 @@ Dans l'idéal, votre organisation a pour habitude professionnelle d'utiliser cer
 Vous avez probablement déjà deviné que les documents n'ont pas d'empreintes digitales réelles, mais le nom contribue à expliquer la fonctionnalité. De la même manière que les empreintes digitales d'une personne répondent à des modèles uniques, les documents répondent à des modèles de mots uniques. Lorsque vous chargez un fichier, DLP identifie le modèle de mot unique dans le document, crée une empreinte digitale de document basée sur ce modèle et utilise cette empreinte digitale de document pour détecter les documents sortants contenant le même modèle. C'est pourquoi le téléchargement d'un formulaire ou d'un modèle permet de créer le type d'empreinte numérique de document le plus efficace. Toute personne qui remplit un formulaire utilise le même ensemble de mots d'origine, puis ajoute ses propres mots au document. Tant que le document sortant n’est pas protégé par mot de passe et contient tout le texte du formulaire d’origine, DLP peut déterminer si le document correspond à l’empreinte digitale du document.
 
 > [!IMPORTANT]
-> Pour l’instant, DLP peut utiliser l’empreinte digitale de document comme méthode de détection dans Exchange en ligne uniquement.
+> Pour l’instant, DLP peut utiliser l’empreinte digitale de document comme méthode de détection dans Exchange Online uniquement.
 
 L’exemple suivant montre ce qui se passe si vous créez une empreinte numérique de document basée sur un modèle de brevet, mais vous pouvez utiliser n’importe quel formulaire comme base pour la création d’une empreinte numérique de document.
 
@@ -87,13 +85,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Vous pouvez maintenant utiliser l’applet de commande **Get-DlpSensitiveInformationType** pour rechercher tous les packages de règles de classification des données DLP. Dans cet exemple, « Contoso Customer Confidential » fait partie de la liste des packages de règles de classification des données.
 
-Enfin, ajoutez le package de règles de classification des données « Confidentiel client Contoso » à une stratégie DLP dans le portail de conformité Microsoft Purview. Cet exemple montre comment ajouter une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
+Enfin, ajoutez le package de règle de classification des données « Confidentiel client Contoso » à une stratégie DLP dans le portail de conformité Microsoft Purview. Cet exemple montre comment ajouter une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-Vous pouvez également utiliser le package de règles de classification des données dans les règles de flux de messagerie dans Exchange Online, comme illustré dans l’exemple suivant. Pour exécuter cette commande, vous devez d’abord [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Notez également que la synchronisation du package de règles entre le portail de conformité Microsoft Purview et le centre d’administration Exchange prend du temps.
+Vous pouvez également utiliser le package de règles de classification des données dans les règles de flux de messagerie dans Exchange Online, comme illustré dans l’exemple suivant. Pour exécuter cette commande, vous devez d’abord vous [connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Notez également que la synchronisation du package de règles entre le portail de conformité Microsoft Purview et le centre d’administration Exchange prend du temps.
 
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

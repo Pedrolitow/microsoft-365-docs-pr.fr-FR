@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017183"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628504"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Créer des données exactes correspondant au type d’informations sensibles/au package de règles
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez créer un type d’informations sensibles (SIT) de correspondance de données exacte (SIT) à [l’aide du schéma EDM et de l’Assistant SIT](#use-the-edm-schema-and-sit-wizard) dans le Centre de conformité ou créer [manuellement](#create-a-rule-package-manually) le fichier XML du package de règles. Vous pouvez également combiner les deux à l’aide d’une méthode pour créer le schéma et le modifier ultérieurement à l’aide de l’autre méthode.
 
@@ -60,7 +58,7 @@ Consultez les [définitions d’entité de type d’informations sensibles](sens
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
-1. Dans le portail de conformité Microsoft Purview pour votre locataire, accédez aux **correspondances de données exactes** de **classification** >  des données.
+1. Dans le portail de conformité Microsoft Purview de votre locataire, accédez à la **classification** > **des données Correspondances exactes des données**.
 
 2. Choisissez **Types d’informations sensibles EDM** et **Créer un type d’informations sensibles EDM** pour ouvrir l’Assistant de configuration des types d’informations sensibles.
 
@@ -107,7 +105,7 @@ Cela correspondrait à chaque mot ou numéro individuel dans un document ou un e
 
 **Adresses e-mail** : les adresses e-mail peuvent être faciles à identifier, mais étant donné qu’elles sont si courantes dans le contenu, elles peuvent entraîner une charge importante dans le système si elles sont utilisées comme champ principal. Utilisez-les uniquement comme preuve secondaire. S’ils doivent être utilisés comme preuve principale, essayez de définir un type d’informations sensibles personnalisé qui utilise la logique pour exclure leur utilisation en tant que `From` ou `To` champs dans les e-mails, et d’exclure ceux avec l’adresse e-mail de votre entreprise afin de réduire le nombre de chaînes inutiles qui doivent être mises en correspondance.
 
-**Téléphone nombres** : Téléphone nombres peuvent se présenter dans de nombreux formats différents, y compris ou à l’exclusion des préfixes de pays, des codes régionaux et des séparateurs. Pour réduire les faux négatifs tout en maintenant la charge au minimum, utilisez-les uniquement comme éléments secondaires, excluez tous les séparateurs probables, comme les parenthèses et les tirets, et incluez uniquement dans votre table de données sensible la partie qui sera toujours présente dans le numéro de téléphone.
+**Numéros de téléphone** : les numéros de téléphone peuvent être dans de nombreux formats différents, y compris ou à l’exclusion des préfixes de pays, des codes régionaux et des séparateurs. Pour réduire les faux négatifs tout en maintenant la charge au minimum, utilisez-les uniquement comme éléments secondaires, excluez tous les séparateurs probables, comme les parenthèses et les tirets, et incluez uniquement dans votre table de données sensible la partie qui sera toujours présente dans le numéro de téléphone.
 
 **Noms de la personne** : n’utilisez pas les noms de la personne comme éléments principaux si vous utilisez un type d’informations sensibles basé sur une expression régulière comme élément de classification pour ce type EDM, car ils sont difficiles à distinguer des mots courants.
 
@@ -206,7 +204,7 @@ Cette procédure vous montre comment créer un fichier au format XML appelé pac
       </RulePackage>
       ```
 
-2. Télécharger le package de règles en exécutant la commande PowerShell suivante :
+2. Chargez le package de règles en exécutant la commande PowerShell suivante :
 
    ```powershell
    New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('.\\rulepack.xml'))

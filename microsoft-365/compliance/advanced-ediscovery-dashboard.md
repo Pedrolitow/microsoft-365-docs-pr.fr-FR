@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le tableau de bord Microsoft Purview eDiscovery (Premium) pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
-ms.openlocfilehash: 00d4c6648d74fdf459965ed410dd43c73e698c23
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 225cc0d732023322b87e0e04c2cca1455fb0ff87
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097863"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629054"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Tableau de bord eDiscovery (Premium) pour les jeux de révision
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Dans certains cas, dans Microsoft Purview eDiscovery (Premium), vous pouvez avoir un grand volume de documents et de messages électroniques qui doivent être examinés. Avant de commencer le processus de révision, vous souhaiterez peut-être analyser rapidement votre corpus pour identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision. Pour ce faire, vous pouvez utiliser le tableau de bord eDiscovery (Premium) pour les ensembles de révision afin d’analyser rapidement votre corpus.
 
@@ -39,7 +37,7 @@ Dans certains cas, dans Microsoft Purview eDiscovery (Premium), vous pouvez avoi
   
 4. Dans la liste déroulante **résultats individuels**, cliquez sur **Rechercher un affichage du profil**. 
 
-   ![DashbordPivot.](../media/dashboardpivot.png)
+   ![DashboardPivot.](../media/dashboardpivot.png)
 
    La page **d’affichage du profil de recherche** s’affiche ; La première fois que vous affichez cette page, trois widgets par défaut sont affichés.
 
@@ -69,7 +67,7 @@ Dans certains cas, dans Microsoft Purview eDiscovery (Premium), vous pouvez avoi
 
 1. Cliquez **sur ...** dans la barre de titre du widget, puis cliquez sur **Appliquer la condition**.
 
-   ![Bord.](../media/searchprofilehome.png)
+   ![Accueil du tableau de bord.](../media/searchprofilehome.png)
 
 2. Dans la page de menu volant, cliquez sur un élément dans la clé du widget ou le graphique du widget pour créer un filtre.
 

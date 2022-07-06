@@ -21,21 +21,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 36d3ca7d820d31843df535eddd6c253d0c1f951e
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: ba5778ccf00525d78da05127d41ffd3f52a4bf83
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810941"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626418"
 ---
 # <a name="learn-about-communication-compliance"></a>En savoir plus sur la conformité des communications
 
 > [!TIP]
 > *Saviez-vous que vous pouvez essayer les versions Premium des neuf solutions Microsoft Purview gratuitement ?* Utilisez la version d’évaluation des solutions Purview de 90 jours pour découvrir comment des fonctionnalités Purview robustes peuvent aider votre organisation à répondre à ses besoins de conformité. Microsoft 365 E3 et Office 365 E3 clients peuvent être démarrés maintenant sur le [Hub d’essais du portail de conformité Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Découvrez plus d’informations sur [les personnes qui peuvent s’inscrire et les conditions d’évaluation](compliance-easy-trials.md).
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Conformité des communications Microsoft Purview est une solution à risque interne qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les e-mails analysés, les Microsoft Teams, les Yammer ou les communications tierces au sein de votre organisation et prendre les mesures appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
+Conformité des communications Microsoft Purview est une solution à risque interne qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les e-mails analysés, Microsoft Teams, Yammer ou les communications tierces de votre organisation et prendre les mesures appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
 
 Les stratégies de conformité des communications dans Microsoft 365 vous aident à surmonter de nombreux défis modernes liés à la conformité et aux communications internes et externes, notamment :
 
@@ -52,7 +50,7 @@ Pour obtenir les dernières présentations Ignite pour la conformité des commun
 - [Favoriser une culture de sécurité et d’inclusion avec la conformité des communications](https://www.youtube.com/watch?v=oLVzxcaef3w)
 - [Découvrez comment réduire les risques de communication au sein de votre organisation](https://www.youtube.com/watch?v=vzARb1YaxGo)
 - [Respecter les exigences de conformité réglementaire avec la conformité aux communications](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [Mieux avec Microsoft Teams - En savoir plus sur les dernières fonctionnalités natives Teams intégrées dans la conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+- [Mieux avec Microsoft Teams - En savoir plus sur les dernières fonctionnalités intégrées natives de Teams dans la conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Pour obtenir une vue d’ensemble rapide de la conformité des communications, consultez la vidéo [Détecter le harcèlement au travail et répondre avec la conformité des communications](https://youtu.be/z33ji7a7Zho) sur le [canal Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -107,13 +105,13 @@ Les workflows de correction intégrés vous permettent d’identifier et d’agi
 - **Correspondance** de stratégie de conversation : les messages dans les conversations sont regroupés par correspondances de stratégie pour vous donner plus de visibilité sur la façon dont les conversations sont liées à vos stratégies de communication. Par exemple, la correspondance de stratégie de conversation dans la vue *Alertes en attente* affiche automatiquement tous les messages d’un canal Teams qui ont des correspondances pour votre stratégie de contenu inapproprié. Les autres messages de la conversation qui ne correspondent pas à la stratégie de contenu inapproprié ne s’affichent pas.
 - **Mise en évidence des mots-clés** :Les conditions de la stratégie de correspondance des termes sont mises en évidence dans l’affichage du message pour permettre aux relecteurs de localiser et de rectifier rapidement les alertes de stratégie.
 - **Détection exacte et quasi dupliquée** : en plus de rechercher des termes exacts correspondant aux stratégies de conformité des communications, la détection à proximité des doublons regroupe des termes et des messages textuels similaires pour accélérer votre processus de révision.
-- **Reconnaissance optique des caractères (OCR) (préversion)** : analysez, détectez et examinez le texte imprimé et manuscrit dans les images incorporées ou attachées à des messages électroniques ou Microsoft Teams conversation.
+- **Reconnaissance optique des caractères (OCR) (préversion)** : analysez, détectez et examinez du texte imprimé et manuscrit dans des images incorporées ou jointes à des messages électroniques ou de conversation Microsoft Teams.
 - **Nouveaux filtres** : examinez et corrigez les alertes de stratégie plus rapidement avec des filtres de messages pour plusieurs champs, notamment l’expéditeur, le destinataire, la date, les domaines et bien plus encore.
 - **Amélioration des affichages de messages** : les actions d’investigation et de correction sont désormais plus rapides avec les nouvelles vues de source et de texte des messages. Les pièces jointes de message sont désormais visibles pour fournir un contexte complet lors de l’exécution d’actions de correction.
 - **Historique des utilisateurs** : la vue historique de toutes les activités de correction des messages utilisateur, telles que les notifications passées et les escalades pour les correspondances de stratégie, fournit désormais aux réviseurs plus de contexte pendant le processus de flux de travail de correction. Les premières instances ou répétitions de correspondances de stratégie pour les utilisateurs sont désormais archivées et facilement visibles.
 - **Notification détectée par le modèle** : de nombreuses actions de harcèlement et d’intimidation ont lieu au fil du temps et impliquent la récurrence d’instances du même comportement par un utilisateur. La nouvelle notification détectée par le modèle affichée dans les détails de l’alerte permet d’attirer l’attention sur ces alertes et ce type de comportement.
 - **Traduction** : examinez rapidement les détails des messages dans huit langues à l’aide de la prise en charge de la traduction dans le flux de travail de correction. Les messages dans d’autres langues sont automatiquement convertis en la langue d’affichage du réviseur.
-- **Détection des pièces jointes** : analysez, détectez et examinez le contenu lié (pièces jointes modernes) à partir de OneDrive et de Microsoft Teams qui correspondent aux classifieurs de stratégie et aux conditions de Microsoft Teams messages. Le contenu de la pièce jointe est automatiquement extrait dans un fichier texte pour une révision et une action détaillées.
+- **Détection des pièces jointes** : analysez, détectez et examinez le contenu lié (pièces jointes modernes) de OneDrive et Microsoft Teams qui correspondent aux classifieurs de stratégie et aux conditions des messages Microsoft Teams. Le contenu de la pièce jointe est automatiquement extrait dans un fichier texte pour une révision et une action détaillées.
 
 ### <a name="actionable-insights"></a>Informations exploitables
 
@@ -127,11 +125,10 @@ De nouveaux tableaux de bord interactifs pour les alertes, correspondances de st
 
 Les stratégies de conformité des communications analysent et capturent les messages sur plusieurs canaux de communication pour vous aider à examiner et à corriger rapidement les problèmes de conformité :
 
-- **Microsoft Teams** : les communications de conversation pour les canaux [de Microsoft Teams](/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité des communications en tant que source de canal autonome ou avec d’autres services Microsoft 365. Vous devez ajouter manuellement des utilisateurs individuels, des groupes de distribution ou des canaux Microsoft Teams spécifiques lorsque vous sélectionnez des utilisateurs et des groupes à superviser dans une stratégie de conformité des communications. Teams les utilisateurs peuvent également signaler eux-mêmes les messages inappropriés dans les canaux privés et de groupe et les conversations à des fins de révision et de correction.
-- **Exchange Online** : toutes les boîtes aux lettres hébergées sur [Exchange Online](/Exchange/exchange-online) de votre organisation Microsoft 365 sont éligibles à l’analyse. Les e-mails et pièces jointes correspondant aux conditions de stratégie de conformité des communications sont instantanément disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est désormais un canal source facultatif et n’est plus nécessaire dans les stratégies de conformité des communications.
+- **Microsoft Teams** : les communications de conversation pour les canaux [Microsoft Teams](/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité des communications en tant que source de canal autonome ou avec d’autres services Microsoft 365. Vous devez ajouter manuellement des utilisateurs individuels, des groupes de distribution ou des canaux Microsoft Teams spécifiques lorsque vous sélectionnez des utilisateurs et des groupes à superviser dans une stratégie de conformité des communications. Les utilisateurs Teams peuvent également signaler eux-mêmes les messages inappropriés dans les canaux privés et de groupe et les conversations à des fins de révision et de correction.
+- **Exchange Online** : toutes les boîtes aux lettres hébergées sur [Exchange Online](/Exchange/exchange-online) dans votre organisation Microsoft 365 peuvent être scannées. Les e-mails et pièces jointes correspondant aux conditions de stratégie de conformité des communications sont instantanément disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est désormais un canal source facultatif et n’est plus nécessaire dans les stratégies de conformité des communications.
 - **Yammer** : les messages privés et les conversations de la communauté publique dans [Yammer](/yammer/yammer-landing-page) sont pris en charge dans les stratégies de conformité des communications. Yammer est un canal facultatif qui doit être en [mode natif](/yammer/configure-your-yammer-network/overview-native-mode) pour prendre en charge l’analyse de messages et de pièces jointes.
-- **Skype Entreprise Online** : les stratégies de conformité des communications prennent en charge l’analyse des communications de conversation et les pièces jointes associées dans [Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online).
-- **Sources tierces** : vous pouvez analyser les messages de [sources tierces](archiving-third-party-data.md) à la recherche de données importées dans des boîtes aux lettres de votre organisation Microsoft 365. La conformité des communications prend en charge les connexions à plusieurs plateformes populaires, dont Instant Bloomberg et d’autres.
+- **Sources tierces** : vous pouvez analyser les messages de [sources tierces](archiving-third-party-data.md) pour rechercher les données importées dans des boîtes aux lettres de votre organisation Microsoft 365. La conformité des communications prend en charge les connexions à plusieurs plateformes populaires, dont Instant Bloomberg et d’autres.
 
 Pour en savoir plus sur la prise en charge des canaux de messagerie dans les stratégies de conformité des communications, consultez [Détecter les signaux de canal avec la conformité des communications](communication-compliance-channels.md).
 
@@ -158,10 +155,10 @@ Vous pouvez choisir parmi les modèles de stratégie suivants dans le portail de
 - **Surveiller la conformité aux réglementations financières** : utilisez ce modèle pour créer rapidement une stratégie afin d’analyser les communications à la recherche de références aux termes financiers standard associés aux normes réglementaires.
 - **Surveiller les conflits d’intérêts** : utilisez ce modèle pour créer rapidement une stratégie de surveillance des communications entre deux groupes ou deux utilisateurs afin d’éviter les conflits d’intérêts.
 - **Stratégie personnalisée :** utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection individuelles et la quantité de contenu à surveiller et à réviser dans votre organisation.
-- **Stratégie de messages signalés par** l’utilisateur : cette stratégie système prend en charge les messages signalés par l’utilisateur à partir de messages de canal, de groupe et de conversation privée. Activé par défaut dans le centre d’administration Teams.
+- **Stratégie de messages signalés par** l’utilisateur : cette stratégie système prend en charge les messages signalés par l’utilisateur à partir de messages de canal, de groupe et de conversation privée. Activé par défaut dans le Centre d’administration Teams.
 
 >[!TIP]
->Utilisez [les actions recommandées](communication-compliance-configure.md#recommended-actions-preview) pour déterminer si vous avez besoin d’une stratégie de type d’informations sensibles ou si vous devez mettre à jour des stratégies de contenu inappropriées existantes.
+>Utilisez [les actions recommandées](communication-compliance-configure.md#recommended-actions) pour déterminer si vous avez besoin d’une stratégie de type d’informations sensibles ou si vous devez mettre à jour des stratégies de contenu inappropriées existantes.
 
 ### <a name="investigate"></a>Examiner
 
@@ -183,7 +180,7 @@ L’étape suivante consiste à corriger les problèmes de conformité des commu
 - **Réaffecter à un autre réviseur** : parfois, le réviseur initial d’un problème doit être saisi par d’autres réviseurs pour résoudre l’incident. Vous pouvez facilement transmettre les problèmes de message aux réviseurs d’autres zones de votre organisation dans le cadre du processus de résolution.
 - **Marquer comme un faux positif** : les messages détectés de façon incorrecte comme correspondances pour les stratégies de conformité peuvent arriver dans le processus de révision. Vous pouvez marquer ces types d'alertes comme mal classées, soumettre des commentaires à Microsoft sur la mauvaise classification pour aider à améliorer les classificateurs globaux et résoudre automatiquement le problème.
 - **Supprimer le message dans Teams (aperçu)** : les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés qui sont supprimés sont remplacés par une notification indiquant que le message a été supprimé pour cause de violation de la politique.
-- **Transférer pour enquête** : dans les situations les plus graves, vous devrez peut-être partager les informations relatives à la conformité des communications avec d'autres examinateurs de votre organisation. La conformité de la communication est étroitement intégrée aux autres fonctionnalités de Microsoft Purview pour vous aider à résoudre les risques de bout en bout. L’escalade d’un cas d’enquête vous permet de transférer les données et la gestion du cas vers Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
+- **Transférer pour enquête** : dans les situations les plus graves, vous devrez peut-être partager les informations relatives à la conformité des communications avec d'autres examinateurs de votre organisation. La conformité de la communication est étroitement intégrée aux autres fonctionnalités de Microsoft Purview pour vous aider à résoudre les risques de bout en bout. L’escalade d’un cas à des fins d’enquête vous permet de transférer les données et la gestion du cas à Microsoft Purview eDiscovery (Premium). eDiscovery (Premium) fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 
 ### <a name="monitor"></a>Surveiller
 
@@ -194,5 +191,5 @@ Le suivi et la gestion des problèmes de conformité identifiés par les straté
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 - Pour plus d’informations sur la planification, consultez [Planifier la conformité des communications](communication-compliance-plan.md).
-- Consultez [l’étude de cas pour Contoso](communication-compliance-case-study.md) et découvrez comment ils ont rapidement configuré une stratégie de conformité des communications pour surveiller le contenu inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer.
+- Consultez [l’étude de cas pour Contoso](communication-compliance-case-study.md) et découvrez comment ils ont rapidement configuré une stratégie de conformité des communications pour surveiller le contenu inapproprié dans Les communications Microsoft Teams, Exchange Online et Yammer.
 - Pour configurer la conformité des communications pour votre organisation Microsoft 365, consultez [Configurer la conformité des communications](communication-compliance-configure.md).

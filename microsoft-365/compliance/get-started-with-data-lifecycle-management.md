@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Prêt à commencer à régir les données de votre organisation, mais vous ne savez pas par où commencer ? Lisez des instructions prescriptives pour commencer.
-ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864457"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629664"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Prise en main de la gestion du cycle de vie des données
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous êtes prêt à commencer à gouverner les données de votre organisation en conservant le contenu que vous devez conserver et en supprimant les autres contenus ? Pour commencer, utilisez les conseils suivants pour la gestion du cycle de vie des données Microsoft Purview (anciennement Microsoft Information Governance) :
 

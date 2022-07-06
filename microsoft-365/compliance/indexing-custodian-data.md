@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un consignateur est ajouté à un cas eDiscovery (Premium), tout contenu considéré comme partiellement indexé est retraité pour le rendre entièrement consultable.
-ms.openlocfilehash: 2a4cea13291bd592cf47a61b500a4f3a6012ac85
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0d0474306415a59615960cc15580af0f67dc49aa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096675"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629550"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Lorsqu’un consignateur est ajouté à un cas eDiscovery (Premium), tout contenu considéré comme partiellement indexé ou ayant eu des erreurs d’indexation est réindexé. Ce processus de réindexation est appelé *indexation avancée*. Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou comporte des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en charge ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancé.
+Lorsqu’un dépositaire est ajouté à un cas eDiscovery (Premium), tout contenu considéré comme partiellement indexé ou ayant eu des erreurs d’indexation est réindexé. Ce processus de réindexation est appelé *indexation avancée*. Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou comporte des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en charge ou les limites d’indexation de taille de fichier. Pour les fichiers SharePoint, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancé.
 
 Pour en savoir plus sur la prise en charge du traitement et les éléments partiellement indexés, consultez :
 
@@ -41,9 +39,9 @@ Pour en savoir plus sur la prise en charge du traitement et les éléments parti
 
 ## <a name="viewing-advanced-indexing-results"></a>Affichage des résultats de l’indexation avancée
 
-Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du retraitement.  Dans la vue Résultats de l’indexation avancée sous l’onglet **Traitement** d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride*.  L’index hybride est l’emplacement où eDiscovery (Premium) stocke le contenu retraité.
+Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du retraitement.  Dans la vue Résultats de l’indexation avancée sous l’onglet **Traitement** d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride*.  L'index hybride est l'endroit où la découverte électronique (Premium) stocke le contenu retraité.
 
-Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, voir :
+Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, consultez l’article suivant :
 
 - [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
@@ -51,7 +49,7 @@ Cette vue inclut également le nombre d’éléments qui nécessitent une correc
 
 ## <a name="updating-the-advanced-index-for-custodians"></a>Mise à jour de l’index avancé pour les consignatateurs
 
-Lorsqu’un consignateur est ajouté à un cas eDiscovery (Premium), tous les éléments partiellement indexés sont retraités. Toutefois, à mesure que le temps passe, des éléments partiellement indexés peuvent être ajoutés à la boîte aux lettres ou au compte OneDrive d’un utilisateur.  Si nécessaire, vous pouvez mettre à jour l’index pour un consignateur spécifique. Pour plus d’informations, consultez [Gérer les consignatateurs dans un cas eDiscovery (Premium).](manage-new-custodians.md#reindex-custodian-data) Vous pouvez également mettre à jour l’index de tous les consignats dans un cas en cliquant sur **l’index De mise à jour** sous l’onglet **Traitement** .
+Lorsqu’un dépositaire est ajouté à un cas eDiscovery (Premium), tous les éléments partiellement indexés sont retraités. Toutefois, à mesure que le temps passe, des éléments partiellement indexés peuvent être ajoutés à la boîte aux lettres ou au compte OneDrive d’un utilisateur.  Si nécessaire, vous pouvez mettre à jour l’index pour un consignateur spécifique. Pour plus d’informations, consultez [Gérer les consignatateurs dans un cas eDiscovery (Premium).](manage-new-custodians.md#reindex-custodian-data) Vous pouvez également mettre à jour l’index de tous les consignats dans un cas en cliquant sur **l’index De mise à jour** sous l’onglet **Traitement** .
 
 > [!NOTE]
 > La mise à jour des index de consignation est un processus long. Il est recommandé de ne pas mettre à jour les index plusieurs fois par jour dans un cas.

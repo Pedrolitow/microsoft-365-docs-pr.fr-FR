@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469379"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628702"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les cas sont au cœur de la gestion des risques internes et vous permettent d’examiner et d’agir en profondeur sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les cas sont créés manuellement à partir d’alertes dans des situations où une action supplémentaire est nécessaire pour résoudre un problème lié à la conformité pour un utilisateur. Chaque cas est limité à un seul utilisateur et plusieurs alertes pour l’utilisateur peuvent être ajoutées à un cas existant ou à un nouveau cas.
 
@@ -57,7 +55,7 @@ La file d’attente de cas répertorie tous les cas actifs et fermés pour votre
 
 Utilisez le contrôle **De recherche** pour rechercher des noms de cas pour du texte spécifique et utilisez le filtre de cas pour trier les cas selon les attributs suivants :
 
-- Statut
+- État
 - Heure d'ouverture du cas, date de début et la date de fin
 - Dernière mise à jour, date de début et la date de fin
 
@@ -137,7 +135,7 @@ L’Explorateur de contenu est un outil puissant avec des fonctionnalités de re
 
 ![Explorateur de contenu de cas de gestion des risques internes.](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>Notes de cas
+### <a name="case-notes"></a>Notes sur le cas
 
 L’onglet **Notes** de cas dans le cas est l’endroit où les analystes de risque et les enquêteurs partagent des commentaires, des commentaires et des insights sur leur travail pour le cas. Les notes sont des ajouts permanents à un cas et ne peuvent pas être modifiées ou supprimées une fois la note enregistrée. Lors de la création d’un cas à partir d’une alerte, les commentaires entrés dans la boîte de dialogue **Confirmer l’alerte et créer un cas de risque internes** sont automatiquement ajoutés comme note de cas.
 
@@ -165,7 +163,7 @@ Pour ajouter un contributeur à un cas :
 1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com), accédez à **La gestion des risques internes** et sélectionnez l’onglet **Cas**.
 2. Sélectionnez un cas, puis sélectionnez l’onglet **Contributeurs** .
 3. Sélectionnez **Ajouter un contributeur**.
-4. Dans la boîte de dialogue **Ajouter un contributeur** , commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir de la Azure Active Directory de votre abonnement client.
+4. Dans la boîte de dialogue **Ajouter un contributeur** , commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir d’Azure Active Directory de votre abonnement client.
 5. Sélectionnez **Ajouter** pour ajouter l’utilisateur en tant que contributeur ou **sélectionnez Annuler** fermer la boîte de dialogue sans ajouter l’utilisateur en tant que contributeur.
 
 ## <a name="case-actions"></a>Actions de cas
@@ -188,7 +186,7 @@ Pour envoyer une notification à l’utilisateur affecté à un cas :
 
 ### <a name="escalate-for-investigation"></a>Réaffecter pour examen
 
-Faites remonter le cas de l’investigation utilisateur dans les situations où une révision juridique supplémentaire est nécessaire pour l’activité à risque de l’utilisateur. Cette escalade ouvre un nouveau cas Microsoft Purview eDiscovery (Premium) dans votre organisation Microsoft 365. La découverte électronique (Premium) fournit un flux de travail de bout en bout pour préserver, collecter, examiner, analyser et exporter le contenu qui répond aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’escalade vers un cas eDiscovery (Premium) à partir d’un cas de gestion des risques internes aide votre équipe juridique à prendre les mesures appropriées et à gérer la conservation du contenu. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
+Faites remonter le cas de l’investigation utilisateur dans les situations où une révision juridique supplémentaire est nécessaire pour l’activité à risque de l’utilisateur. Cette escalade ouvre un nouveau cas de Microsoft Purview eDiscovery (Premium) dans votre organisation Microsoft 365. La découverte électronique (Premium) fournit un flux de travail de bout en bout pour préserver, collecter, examiner, analyser et exporter le contenu qui répond aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’escalade vers un cas eDiscovery (Premium) à partir d’un cas de gestion des risques internes aide votre équipe juridique à prendre les mesures appropriées et à gérer la conservation du contenu. Pour en savoir plus sur les cas eDiscovery (Premium), consultez [Vue d’ensemble de Microsoft Purview eDiscovery (Premium).](overview-ediscovery-20.md)
 
 Pour faire remonter un cas à une enquête utilisateur :
 
@@ -198,11 +196,11 @@ Pour faire remonter un cas à une enquête utilisateur :
 4. Passez en revue les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Confirmer** pour créer le cas d’investigation utilisateur ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de cas d’enquête utilisateur.
 
-Une fois que le cas de gestion des risques internes a été remonté à un nouveau cas d’enquête utilisateur, vous pouvez examiner le nouveau cas dans la zone **eDiscoveryAdvanced** >  dans le portail de conformité Microsoft Purview.
+Une fois que le cas de gestion des risques internes a été remonté à un nouveau cas d’enquête utilisateur, vous pouvez examiner le nouveau cas dans la zone **eDiscovery** > **Advanced** dans le portail de conformité Microsoft Purview.
 
-### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Exécuter des tâches automatisées avec des flux de Power Automate pour le cas
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Exécuter des tâches automatisées avec des flux Power Automate pour le cas
 
-À l’aide des flux de Power Automate recommandés, les enquêteurs et les analystes des risques peuvent rapidement prendre des mesures pour :
+À l’aide des flux Power Automate recommandés, les enquêteurs et les analystes des risques peuvent rapidement prendre des mesures pour :
 
 - Demander des informations auprès des rh ou des entreprises sur un utilisateur dans un cas de risque interne
 - Avertir le responsable lorsqu’un utilisateur a une alerte de risque interne
@@ -212,16 +210,16 @@ Une fois que le cas de gestion des risques internes a été remonté à un nouve
 Pour exécuter, gérer ou créer des flux Power Automate pour un cas de gestion des risques internes :
 
 1. Sélectionnez **Automatiser** dans la barre d’outils de l’action de cas. 
-2. Choisissez le flux de Power Automate à exécuter, puis sélectionnez **Exécuter le flux**. 
+2. Choisissez le flux Power Automate à exécuter, puis sélectionnez **Exécuter le flux**. 
 3. Une fois le flux terminé, sélectionnez **Terminé**.
 
-Pour en savoir plus sur Power Automate flux pour la gestion des risques internes, consultez [Prise en main des paramètres de gestion des risques internes](insider-risk-management-settings.md#power-automate-flows-preview).
+Pour en savoir plus sur les flux Power Automate pour la gestion des risques internes, consultez [Prise en main des paramètres de gestion des risques internes](insider-risk-management-settings.md#power-automate-flows-preview).
 
 ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Afficher ou créer une équipe Microsoft Teams pour le cas
 
-Lorsque Microsoft Teams’intégration pour la gestion des risques internes est activée dans les paramètres, une équipe Microsoft Teams est automatiquement créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Les enquêteurs et les analystes des risques peuvent rapidement ouvrir Microsoft Teams et accéder directement à l’équipe pour un cas en sélectionnant **Afficher Microsoft Teams équipe** dans la barre d’outils d’action de cas.
+Lorsque l’intégration de Microsoft Teams pour la gestion des risques internes est activée dans les paramètres, une équipe Microsoft Teams est automatiquement créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Les enquêteurs et les analystes des risques peuvent rapidement ouvrir Microsoft Teams et accéder directement à l’équipe pour un cas en sélectionnant **Afficher l’équipe Microsoft Teams** dans la barre d’outils d’action de cas.
 
-Pour les cas ouverts avant d’activer l’intégration de l’équipe Microsoft, les enquêteurs et les analystes des risques peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant **Créer Microsoft Teams équipe** dans la barre d’outils d’action de cas.
+Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs et les analystes des risques peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant **Créer une équipe Microsoft Teams** dans la barre d’outils d’action de cas.
 
 Lorsqu’un cas est résolu, l’équipe Microsoft associée est automatiquement archivée (masquée et convertie en lecture seule).
 

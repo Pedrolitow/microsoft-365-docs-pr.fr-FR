@@ -12,20 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS à partir du réseau TELUS dans Microsoft 365. Cela vous permet d’archiver les données de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 9199c38960cbc3e238f6ea8a47a06935c7867b69
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 215f185aa655f031151799f77889976bca799766
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099694"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628944"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurer un connecteur pour archiver les données du réseau TELUS
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Utilisez le connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver les données du service SMS (Short Messaging Service) à partir du réseau TELUS de votre organisation. Après avoir configuré et configuré un connecteur, il se connecte au réseau TELUS de votre organisation une fois par jour et importe des données SMS dans des boîtes aux lettres dans Microsoft 365.
 
-Utilisez le connecteur TeleMessage dans le portail de conformité Microsoft Purview pour importer et archiver des données sms (Short Messaging Service) à partir du réseau TELUS de votre organisation. Après avoir configuré et configuré un connecteur, il se connecte au réseau TELUS de votre organisation une fois par jour et importe des données SMS dans des boîtes aux lettres dans Microsoft 365.
-
-Une fois les SMS stockés dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu et Microsoft 365 stratégies de rétention aux données TELUS. Par exemple, vous pouvez rechercher des messages SMS TELUS à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données TELUS à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur réseau TELUS pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les sms stockés dans des boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données TELUS. Par exemple, vous pouvez rechercher des messages SMS TELUS à l’aide de la recherche de contenu ou associer la boîte aux lettres contenant les données TELUS à un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur réseau TELUS pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-telus-network-data"></a>Vue d’ensemble de l’archivage des données du réseau TELUS
 
@@ -37,11 +35,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. En temps réel, les SMS du réseau TELUS de votre organisation sont copiés sur le site TeleMessage.
 
-3. Le connecteur réseau TELUS que vous créez dans le portail de conformité se connecte au site TeleMessage tous les jours et transfère les sms des 24 dernières heures vers un emplacement stockage Azure sécurisé dans le cloud Microsoft. Le connecteur convertit également le contenu des SMS au format de message électronique.
+3. Le connecteur réseau TELUS que vous créez dans le portail de conformité se connecte au site TeleMessage tous les jours et transfère les SMS des 24 dernières heures vers un emplacement de stockage Azure sécurisé dans le cloud Microsoft. Le connecteur convertit également le contenu des SMS au format de message électronique.
 
 4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **ARCHIVEUR RÉSEAU SMS TELUS** est créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y sont importés. Le connecteur effectue un mappage à l’aide de la valeur de la propriété *d’adresse e-mail de l’utilisateur* . Chaque SMS contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message SMS.
 
-   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse e-mail de l’utilisateur* , vous pouvez également implémenter un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse e-mail Microsoft 365 correspondante pour les utilisateurs de votre organisation. Si vous activez le mappage automatique des utilisateurs et le mappage personnalisé, pour chaque élément TELUS, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas de Microsoft 365 utilisateur valide qui correspond au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs dans la propriété d’adresse e-mail de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse e-mail de l’élément TELUS, l’élément n’est pas importé.
+   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse e-mail de l’utilisateur* , vous pouvez également implémenter un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse e-mail Microsoft 365 correspondante pour les utilisateurs de votre organisation. Si vous activez le mappage automatique des utilisateurs et le mappage personnalisé, pour chaque élément TELUS, le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide qui correspond au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs dans la propriété d’adresse e-mail de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse e-mail de l’élément TELUS, l’élément n’est pas importé.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -55,15 +53,15 @@ Certaines des étapes d’implémentation requises pour archiver les données du
 
 - Vos employés doivent disposer de téléphones mobiles appartenant à l’entreprise et responsables de l’entreprise sur le réseau mobileTELUS. L’archivage des messages dans Microsoft 365 n’est pas disponible pour les appareils BYOD (Bring Your Own Devices) appartenant aux employés.
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée un connecteur réseau TELUS. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée un connecteur réseau TELUS doit se faire attribuer le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ce connecteur de données TeleMessage est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données TeleMessage est disponible dans les environnements GCC dans le cloud Microsoft 365 US Government. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui ne font pas partie de l’infrastructure Microsoft 365 et ne sont donc pas couverts par les engagements de Microsoft Purview et de protection des données. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="create-a-telus-network-connector"></a>Créer un connecteur réseau TELUS
 
 Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur réseau TELUS dans le portail de conformité. Le connecteur utilise les informations que vous fournissez pour se connecter au site TeleMessage et transférer des sms vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com/) Data **connectorsTELUS Network**, puis cliquez **dessus** > .
+1. Accédez, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez sur **Connecteurs** >  de données **RÉSEAU TELUS**.
 
 2. Dans la page de description du produit **du réseau TELUS** , cliquez sur **Ajouter un connecteur**
 

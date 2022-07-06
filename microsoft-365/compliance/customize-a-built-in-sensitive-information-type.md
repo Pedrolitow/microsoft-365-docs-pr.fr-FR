@@ -18,16 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment créer un type d’informations sensibles personnalisé qui vous permettra d’utiliser des règles répondant aux besoins de votre organisation.
-ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 14fb645a4b7f58f609995bc71edae24090c83cc7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016413"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630982"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Lorsque vous recherchez des informations de contenu sensible vous devez décrire ces informations dans ce que l'on appelle une *règle*. La protection contre la perte de données Microsoft Purview (DLP) comprend des règles pour les types d'informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d'informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d'informations potentielles relatives aux cartes de crédit.
 

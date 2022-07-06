@@ -20,16 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Afficher l’aperçu d’un exemple de résultats renvoyés par une recherche de contenu ou une recherche eDiscovery (Standard) dans le portail de conformité Microsoft Purview.
-ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f369148c6f898c4150d0c86f898640f71ab367a0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099628"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628592"
 ---
 # <a name="preview-ediscovery-search-results"></a>Afficher un aperçu des résultats de la recherche de découverte électronique
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Après avoir exécuté une recherche de contenu ou une recherche associée à un cas Microsoft Purview eDiscovery (Standard), vous pouvez afficher un aperçu d’un exemple des résultats renvoyés par la recherche. L’aperçu des éléments renvoyés par la requête de recherche peut vous aider à déterminer si la recherche retourne les résultats que vous espériez, ou si vous devez modifier la requête de recherche et réexécuter la recherche.
 

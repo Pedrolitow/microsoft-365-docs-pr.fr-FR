@@ -19,29 +19,27 @@ description: Utilisez l’outil de gestion des consignataires eDiscovery (Premiu
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 6f55ad389fe24e87e693e6523c7008713c6bc54b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3ead391eee7fc35a66a0d9472278ee75878de4df
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096565"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626994"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Microsoft Purview eDiscovery (Premium) est désormais intégré à l’outil de recherche de journal d’audit existant dans le portail de conformité Microsoft Purview. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion des consignataires eDiscovery (Premium) pour faciliter votre enquête en accédant facilement à l’activité et en recherchant des consignataires dans votre cas.
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Microsoft Purview eDiscovery (Premium) est désormais intégré à l’outil de recherche de journal d’audit existant dans le portail de conformité Microsoft Purview. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion des consignataires eDiscovery (Premium) pour faciliter votre enquête en accédant facilement à l’activité et en recherchant les consignataires dans votre cas.
 
 ## <a name="get-permissions"></a>Obtenir des autorisations
 
-Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Pour permettre à un utilisateur de rechercher dans le journal d’audit eDiscovery (Premium) avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le View-Only rôle Journaux d’audit ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
+Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit de la découverte électronique (Premium) avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
 
 > [!IMPORTANT]
 > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page Autorisations du portail de conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Étape 1 : Rechercher dans le journal d’audit les activités effectuées par un dépositaire
 
-1. Accédez à **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
+1. Accédez à  **eDiscovery > eDiscovery (Premium)** et ouvrez le cas.
   
 2. Cliquez sur l’onglet **Sources** .
   

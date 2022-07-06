@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
 ms.custom: trial-playbook
-ms.openlocfilehash: 3d41cde8cbf7cb6158573ed158a41dfe42d28dd5
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 6f788bf3e69aa088e87b0d1e6dfc3e0356b7984e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530994"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626378"
 ---
 # <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Guide opérationnel d'essai : évaluations premium du Gestionnaire de conformité Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Bienvenue au guide opérationnel d’essai gratuit d’évaluations premium du Gestionnaire de conformité Microsoft Purview
 

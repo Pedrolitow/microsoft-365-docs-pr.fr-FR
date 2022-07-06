@@ -14,24 +14,22 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Lors d’une analyse eDiscovery (Premium), le thread de messagerie analyse une conversation e-mail et sépare chaque message en différentes catégories.
+description: Lors d’une analyse eDiscovery (Premium), le thread de messagerie analyse une conversation par e-mail et sépare chaque message en différentes catégories.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6aa8bfdccf2f7430da1aa00ed444a9c218525ee8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: a17f746cb0c88fb68e4654d0dd7de528135d62ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622144"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629704"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>Thread d’e-mail dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Envisagez une conversation par e-mail qui se passe depuis un certain temps. Dans la plupart des cas, le dernier message du thread d’e-mail inclut le contenu de tous les messages précédents. Par conséquent, l’examen du dernier message donne un contexte complet de la conversation qui s’est produite dans le thread. Le threading d’e-mail identifie ces messages afin que les réviseurs puissent passer en revue une fraction des documents collectés sans perdre de contexte.
 
 ## <a name="what-does-email-threading-do"></a>Que fait le thread d’e-mail ?
 
-Le thread d’e-mail analyse chaque thread de messagerie et le décompose en messages individuels. Chaque thread de messagerie est une chaîne de messages individuels. Microsoft Purview eDiscovery (Premium) analyse tous les messages électroniques de l’ensemble de révision pour déterminer si un message électronique a un contenu unique ou si la chaîne (messages parents) est entièrement contenue dans le message final dans le thread d’e-mail. Les messages électroniques sont divisés en quatre valeurs inclusives :
+Le thread d’e-mail analyse chaque thread de messagerie et le décompose en messages individuels. Chaque thread de messagerie est une chaîne de messages individuels. Microsoft Purview eDiscovery (Premium) analyse tous les messages électroniques de l’ensemble de révision pour déterminer si un message électronique a un contenu unique ou si la chaîne (messages parents) est entièrement contenue dans le message final dans le thread de messagerie. Les messages électroniques sont divisés en quatre valeurs inclusives :
 
 - **Inclusif** : un e-mail *inclusif* est le dernier message électronique d’un thread de messagerie et contient tout le contenu précédent de ce thread de messagerie.
 
@@ -45,4 +43,4 @@ Le thread d’e-mail analyse chaque thread de messagerie et le décompose en mes
 
 En un coup d’œil, cela ressemble à des regroupements de conversations dans Outlook. Toutefois, il existe des distinctions importantes. Considérez une conversation par e-mail qui a été dupliquée en deux conversations ; par exemple, une personne a répondu à un e-mail qui n’est pas le plus récent de la conversation, de sorte que les deux derniers e-mails de la conversation ont tous les deux un contenu unique.
 
-Outlook regrouperait toujours les e-mails dans une conversation unique ; la lecture du dernier e-mail signifierait qu’il manque le contexte de l’avant-dernier e-mail, qui contient également du contenu unique. Étant donné que le thread d’e-mail analyse chaque e-mail dans des composants individuels et les compare, le thread d’e-mail marque les deux derniers e-mails comme inclusifs, ce qui garantit que vous ne manquerez aucun contexte tant que vous lirez tous les e-mails marqués comme inclusifs.
+Outlook regrouperait toujours les e-mails en une seule conversation ; La lecture du dernier e-mail signifierait qu’il manque le contexte de l’avant-dernier e-mail, qui contient également du contenu unique. Étant donné que le thread d’e-mail analyse chaque e-mail dans des composants individuels et les compare, le thread d’e-mail marque les deux derniers e-mails comme inclusifs, ce qui garantit que vous ne manquerez aucun contexte tant que vous lirez tous les e-mails marqués comme inclusifs.

@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Découvrez comment restaurer (ou fusionner) le contenu d’une boîte aux lettres inactive vers une boîte aux lettres existante.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66f9e75a76b4fb1bda0f9ae0f70cfe12c816d2bb
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438222"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629220"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Une boîte aux lettres inactive (qui est un type de boîte aux lettres supprimée de manière réversible) est utilisée pour conserver l’adresse e-mail d’un ancien employé après son départ de votre organisation. Si un autre employé assume les responsabilités de l'employé qui est parti ou si ce dernier réintègre votre organisation, deux méthodes vous permettent de mettre à disposition le contenu de la boîte aux lettres inactive :
 
@@ -44,7 +42,7 @@ Pour [plus d’informations](#more-information) sur les différences entre la re
 
 ## <a name="requirements-to-restore-an-inactive-mailbox"></a>Configuration requise pour restaurer une boîte aux lettres inactive
 
-- Vous devez utiliser Exchange Online PowerShell pour restaurer une boîte aux lettres inactive. Vous ne pouvez pas utiliser le centre d’administration Exchange (EAC) ni le portail de conformité Microsoft Purview pour cette procédure. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Connecter pour Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Vous devez utiliser Exchange Online PowerShell pour restaurer une boîte aux lettres inactive. Vous ne pouvez pas utiliser le Centre d’administration Exchange (EAC) ou le portail de conformité Microsoft Purview pour cette procédure. Pour obtenir des instructions détaillées sur l’utilisation de Exchange Online PowerShell, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Exécutez la commande suivante dans Exchange Online PowerShell pour obtenir des informations d’identité pour les boîtes aux lettres inactives de votre organisation.
 

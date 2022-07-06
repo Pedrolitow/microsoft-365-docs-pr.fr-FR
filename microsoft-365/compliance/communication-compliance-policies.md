@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 912254e5827815f796560bc6979856f4545b0ae9
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: c371de57ab6fdd4b7869b676680bb8f922798438
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556809"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626466"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="policies"></a>Stratégies
 
@@ -177,7 +175,7 @@ Vous avez la possibilité d’inclure des types d’informations sensibles dans 
 - Type d’informations personnalisées
 
 > [!IMPORTANT]
-> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez [Définitions d’entités de type Informations sensibles](sensitive-information-type-entity-definitions.md).
 
@@ -249,7 +247,7 @@ Chaque mot que vous entrez et séparez par une virgule est appliqué séparémen
 
 > [!IMPORTANT]
 >
-> Lors de l’importation d’un fichier de dictionnaire personnalisé, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
+> Lors de l’importation d’un fichier de dictionnaire personnalisé, chaque mot ou expression doit être séparé par un retour chariot et sur une ligne distincte. Par exemple :
 >
 > *Banquier* <br>
 > *Confidentiel* <br>

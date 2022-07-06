@@ -16,22 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez des versions historiques dans eDiscovery (Premium) pour collecter du contenu à partir de toutes les versions de documents stockés dans SharePoint et OneDrive.
-ms.openlocfilehash: 2b71d79fae15b5bc8bafbf32fc189dad9b314d40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3706da8c9383dfdd3d6b41f309f8b84920648842
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092544"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627732"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>Configurer des versions historiques dans eDiscovery (Premium) (préversion)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 La fonctionnalité de versions historiques dans eDiscovery (Premium) permet aux responsables eDiscovery de votre organisation de rechercher et de collecter du contenu à partir de toutes les versions de documents stockés dans SharePoint Online et OneDrive Entreprise. Vous pouvez ensuite ajouter ce contenu à un ensemble de révisions à des fins d’analyse et de révision. Cela vous permet de rechercher et de passer en revue le contenu d’une version spécifique d’un document qui peut être pertinente pour un cas ou une enquête, même si la dernière version du même document ne contient pas les informations pertinentes.
 
-Pour prendre en charge la fonctionnalité de versions historiques dans eDiscovery (Premium), SharePoint administrateurs doivent activer le contrôle de version pour les sites de leur organisation. Ensuite, lorsque les utilisateurs modifient des documents dans SharePoint ou OneDrive, des versions régulières implicites sont créées lorsque le document est enregistré (ou enregistré automatiquement). SharePoint contrôle de version permet de suivre l’activité effectuée sur SharePoint éléments (y compris les documents, les événements et les tâches). Cette fonctionnalité de contrôle de version laisse une piste d’audit qui peut fournir des preuves dans les enquêtes juridiques. Ces versions antérieures d’un document sont disponibles pour l’organisation, qui peut être tenue de partager ces versions qui ont du contenu sensible ou pertinent lors de la découverte judiciaire dans une affaire juridique.
+Pour prendre en charge la fonctionnalité de versions historiques dans eDiscovery (Premium), les administrateurs SharePoint doivent activer le contrôle de version pour les sites de leur organisation. Ensuite, lorsque les utilisateurs modifient des documents dans SharePoint ou OneDrive, des versions régulières implicites sont créées lorsque le document est enregistré (ou enregistré automatiquement). Le contrôle de version SharePoint permet le suivi de l’activité effectuée sur les éléments SharePoint (y compris les documents, les événements et les tâches). Cette fonctionnalité de contrôle de version laisse une piste d’audit qui peut fournir des preuves dans les enquêtes juridiques. Ces versions antérieures d’un document sont disponibles pour l’organisation, qui peut être tenue de partager ces versions qui ont du contenu sensible ou pertinent lors de la découverte judiciaire dans une affaire juridique.
 
-Une fois qu’un administrateur eDiscovery a activé les versions historiques de l’organisation pour des sites SharePoint spécifiques, le service push de contenu SharePoint analyse toutes les versions majeures et mineures des documents sur les sites activés, puis envoie ces versions pour indexation. Une fois le processus d’analyse et d’indexation terminé, les documents et leurs versions sont disponibles pour la recherche eDiscovery. Tant qu’une version spécifique est accessible (par historique des versions), cette version est détectable dans une recherche de collection eDiscovery (Premium).
+Une fois qu’un administrateur eDiscovery a activé les versions historiques de l’organisation pour des sites SharePoint spécifiques, le service Push de contenu SharePoint analyse toutes les versions majeures et mineures des documents sur les sites activés, puis envoie ces versions à des fins d’indexation. Une fois le processus d’analyse et d’indexation terminé, les documents et leurs versions sont disponibles pour la recherche eDiscovery. Tant qu’une version spécifique est accessible (par historique des versions), cette version est détectable dans une recherche de collection eDiscovery (Premium).
 
 ## <a name="set-up-historical-versions"></a>Configurer les versions historiques
 
@@ -52,7 +50,7 @@ L’étape suivante consiste à activer les versions historiques dans eDiscovery
 
    ![Sélectionner les paramètres eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. Dans la page **Paramètres**, sélectionnez l’onglet **Versions historiques (préversion),** puis activez le bouton bascule du **contrôle client Versions historiques**.
+2. Dans la page **Paramètres** , sélectionnez l’onglet **Versions historiques (préversion),** puis activez le bouton bascule du **contrôle client Versions historiques** .
 
    ![Activer le bouton bascule pour activer les versions historiques](..\media\HistoricalVersions2.png)
 
@@ -60,14 +58,14 @@ L’étape suivante consiste à activer les versions historiques dans eDiscovery
 
 3. Cliquez sur **Oui** pour activer les versions historiques.
 
-### <a name="step-3-activate-sharepoint-sites"></a>Étape 3 : Activer SharePoint sites
+### <a name="step-3-activate-sharepoint-sites"></a>Étape 3 : Activer les sites SharePoint
 
-Une fois que vous avez activé les versions historiques de votre organisation, la dernière étape consiste à activer SharePoint sites pour prendre en charge les versions historiques. Lorsque vous activez un site (en l’ajoutant à une liste de sites sous l’onglet **Versions historiques** ), le site est recradé et toutes les versions des documents stockés sur ce site sont indexées pour recherche.
+Une fois que vous avez activé les versions historiques de votre organisation, la dernière étape consiste à activer les sites SharePoint pour prendre en charge les versions historiques. Lorsque vous activez un site (en l’ajoutant à une liste de sites sous l’onglet **Versions historiques** ), le site est recradé et toutes les versions des documents stockés sur ce site sont indexées pour recherche.
 
 > [!NOTE]
 > Il existe une limite de 100 activations de site par organisation pendant la préversion publique des versions historiques. Une activation est comptabilisée dans cette limite chaque fois que vous activez ou désactivez un site pour les versions historiques. Si vous activez plusieurs sites, chaque site est compté comme une activation unique. Le nombre total d’activations s’affiche sous l’onglet **Versions historiques** .
 
-1. Sous l’onglet **Versions historiques** de la page **Paramètres** eDiscovery (Premium), cliquez sur **Activer** pour activer les sites pour les versions historiques.
+1. Sous l’onglet **Versions historiques** de la page Paramètres eDiscovery (Premium), cliquez sur **Activer** pour activer les sites pour les versions **historiques**.
 
    ![Cliquez sur Activer pour activer les sites pour les versions historiques](..\media\HistoricalVersions3.png)  
 

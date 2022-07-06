@@ -19,18 +19,16 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015789"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626576"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Les stratégies de protection contre la perte de données (DLP) Microsoft Purview ont de nombreux composants à configurer. Pour créer une stratégie efficace, vous devez comprendre quel est l’objectif de chaque composant et comment sa configuration modifie le comportement de la stratégie. Cet article fournit une anatomie détaillée d’une stratégie DLP.
+les stratégies Protection contre la perte de données Microsoft Purview (DLP) ont de nombreux composants à configurer. Pour créer une stratégie efficace, vous devez comprendre quel est l’objectif de chaque composant et comment sa configuration modifie le comportement de la stratégie. Cet article fournit une anatomie détaillée d’une stratégie DLP.
 
 ## <a name="policy-templates"></a>Modèles de stratégie 
 
@@ -105,13 +103,13 @@ Une stratégie DLP peut rechercher et protéger des éléments qui contiennent d
 
 |Emplacement  |Inclure/exclure l’étendue  |État des données  |Prérequis supplémentaires |
 |---------|---------|---------|---------|
-|e-mail Exchange en ligne |groupe de distribution | données en mouvement| Non |
-|sites en ligne SharePoint   |sites       | données au repos </br> données utilisées | Non|
+|E-mail Exchange en ligne |groupe de distribution | données en mouvement| Non |
+|Sites en ligne SharePoint   |sites       | données au repos </br> données utilisées | Non|
 |Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données utilisées|Non|
 |conversation et messages de canal Teams     | compte ou groupe de distribution |données en mouvement </br> données utilisées |  Non       |
 |Microsoft Defender for Cloud Apps   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Appareils  |utilisateurs ou groupe         |données au repos </br>  données utilisées </br>  données en mouvement         |- [En savoir plus sur la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md) </br>- [Démarrage avec protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Référentiels locaux (partages de fichiers et SharePoint)    |Référentiel         | données au repos         | - [En savoir plus sur le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-learn.md) </br> - [Démarrage avec le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Appareils  |utilisateurs ou groupe         |données au repos </br>  données utilisées </br>  données en mouvement         |- [En savoir plus sur la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md) </br>- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Référentiels locaux (partages de fichiers et SharePoint)    |Référentiel         | données au repos         | - [En savoir plus sur le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-learn.md) </br> - [Prise en main du scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| Espaces | données utilisées | Non|
 
 Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
@@ -125,14 +123,14 @@ Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive sp
 Les stratégies DLP détectent les éléments sensibles en les mettant en correspondance avec un type d’informations sensibles (SIT), une étiquette de confidentialité ou une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. Lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par la façon dont il peut être défini par un emplacement unique. 
 
 > [!IMPORTANT]
-> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prend en charge la détection d’éléments sensibles par un ou plusieurs sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint sites ***et*** Teams emplacements de messages de conversation et de canal, la stratégie prend uniquement en charge la détection des éléments sensibles par SIT.
+> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez des sites SharePoint uniquement, la stratégie prend en charge la détection d’éléments sensibles par un ou plusieurs sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez des sites SharePoint ***et*** des emplacements de messages de conversation et de canal Teams, la stratégie prend uniquement en charge la détection des éléments sensibles par SIT.
 
 |Emplacement| Le contenu peut être défini par SIT| Le contenu peut être défini sur une étiquette de confidentialité| Le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
-|e-mail Exchange en ligne|Oui| Oui| Non|
-|sites en ligne SharePoint| Oui| Oui| Oui|
+|E-mail Exchange en ligne|Oui| Oui| Non|
+|Sites en ligne SharePoint| Oui| Oui| Oui|
 |Les comptes OneDrive Entreprise| Oui| Oui| Oui|
-|Teams messages de conversation et de canal | Oui| Non| Non|
+|Messages de conversation et de canal Teams | Oui| Non| Non|
 |Appareils |Oui | Oui|  Non|
 |Microsoft Defender for Cloud Apps | Oui| Oui| Oui|
 |Référentiels locaux| Oui| Oui| Non|
@@ -167,7 +165,7 @@ Les règles sont la logique métier des stratégies DLP. Elles se composent des 
 
 #### <a name="hosted-service-workloads"></a>Charges de travail de service hébergées
 
-Pour les charges de travail de service hébergées, comme Exchange Online, SharePoint Online et OneDrive Entreprise, chaque règle se voit attribuer une priorité dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+Pour les charges de travail de service hébergées, telles que Exchange Online, SharePoint Online et OneDrive Entreprise, chaque règle reçoit une priorité dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
   
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
 
@@ -227,7 +225,7 @@ La règle recherche uniquement la présence d’étiquettes de **confidentialit�
 Les SIT ont un [**niveau de confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfini que vous pouvez modifier si nécessaire. Pour plus d’informations, consultez [Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
 
 > [!IMPORTANT]
-> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Contexte de condition
 
@@ -299,7 +297,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - La propriété du document est
 - L’extension de fichier est
 
-##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Conditions prises en charge Teams les messages de conversation et de canal
+##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Conditions prises en charge par les messages de conversation et de canal Teams
 
 - Le contenu contient
 - Le contenu est partagé à partir de Microsoft 365
@@ -368,9 +366,9 @@ l’exception serait la suivante :
 
 ### <a name="actions"></a>Actions 
 
-Tout élément qui le fait via les filtres inclus ***conditions** _ et _*_exceptions exclusives_*_ aura toutes les _*_actions_*_ définies dans la règle qui lui est appliquée. Vous devrez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ *Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements**, vous devez choisir parmi les options suivantes :
+Tout élément qui le fait via les filtres inclus ***conditions** _ et _*_exceptions exclusives_*_ aura toutes les _*_actions_*_ définies dans la règle qui lui est appliquée. Vous devrez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ *Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365**, vous devez choisir parmi les options suivantes :
 
-- Empêcher les utilisateurs d’accéder au contenu partagé SharePoint, OneDrive et Teams
+- Empêcher les utilisateurs d’accéder au contenu SharePoint, OneDrive et Teams partagé
     - Bloquez tout le monde. Seuls le propriétaire du contenu, le dernier modificateur et l’administrateur de site continueront d’avoir accès
     - Bloquez uniquement les personnes extérieures à votre organisation. Les utilisateurs au sein de votre organisation continueront d’avoir accès.
 - Chiffrer les courriers (applicable uniquement au contenu dans Exchange)
@@ -378,11 +376,11 @@ Tout élément qui le fait via les filtres inclus ***conditions** _ et _*_except
 Les actions disponibles dans une règle dépendent des emplacements sélectionnés. Si vous sélectionnez un seul emplacement pour la stratégie à appliquer, les actions disponibles sont répertoriées ci-dessous.
 
 > [!IMPORTANT]
-> Pour SharePoint documents en ligne et OneDrive Entreprise emplacements seront bloqués de manière proactive juste après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
+> Pour SharePoint Online et OneDrive Entreprise les documents d’emplacements seront bloqués de manière proactive juste après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
 
-#### <a name="exchange-location-actions"></a>actions d’emplacement Exchange
+#### <a name="exchange-location-actions"></a>Actions d’emplacement Exchange
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 - Définir des en-têtes
 - Supprimer l’en-tête
 - Rediriger le message vers des utilisateurs spécifiques
@@ -397,17 +395,17 @@ Les actions disponibles dans une règle dépendent des emplacements sélectionn�
 - Modifier l’objet de l’e-mail
 - Ajouter une clause d’exclusion de responsabilité HTML
 
-#### <a name="sharepoint-sites-location-actions"></a>actions d’emplacement de sites SharePoint
+#### <a name="sharepoint-sites-location-actions"></a>Actions d’emplacement des sites SharePoint
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 
-#### <a name="onedrive-account-location-actions"></a>OneDrive actions d’emplacement de compte
+#### <a name="onedrive-account-location-actions"></a>Actions d’emplacement de compte OneDrive
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 
-#### <a name="teams-chat-and-channel-messages-actions"></a>actions de conversation Teams et de messages de canal
+#### <a name="teams-chat-and-channel-messages-actions"></a>Actions de conversation teams et de messages de canal
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 
 #### <a name="devices-actions"></a>Actions des appareils
 
@@ -417,7 +415,7 @@ Pour utiliser ces paramètres, vous devez configurer des options dans **les para
 
 L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour plus d’informations, consultez [les activités de point de terminaison sur laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-Lorsque vous sélectionnez **Auditer ou restreindre les activités sur Windows appareils**, vous pouvez limiter les activités utilisateur par domaine de service ou navigateur, et définir l’étendue des actions effectuées par DLP :
+Lorsque vous sélectionnez **Auditer ou restreindre les activités sur les appareils Windows**, vous pouvez restreindre les activités utilisateur par domaine de service ou navigateur, et définir l’étendue des actions effectuées par DLP :
 
 - Toutes les applications
 - Par une liste d’applications restreintes que vous définissez
@@ -457,7 +455,7 @@ Pour plus d’informations, consultez [applications restreintes et groupes d’a
 
 #### <a name="microsoft-defender-for-cloud-apps-actions"></a>actions Microsoft Defender for Cloud Apps
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 - Restreindre les applications tierces
 
 #### <a name="on-premises-repositories-actions"></a>Actions de référentiels locaux
@@ -471,9 +469,9 @@ Pour plus d’informations, consultez [applications restreintes et groupes d’a
 
 #### <a name="actions-available-when-you-combine-locations"></a>Actions disponibles lorsque vous combinez des emplacements
 
-Si vous sélectionnez Exchange et tout autre emplacement unique auquel la stratégie doit être appliquée, le
+Si vous sélectionnez Exchange et tout autre emplacement unique pour la stratégie à appliquer, le
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 
 et
 
@@ -483,7 +481,7 @@ actions seront disponibles.
 
 Si vous sélectionnez au moins deux emplacements non Exchange pour la stratégie à appliquer, le
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 
 AND
 
@@ -493,12 +491,12 @@ actions seront disponibles.
 
 Par exemple, si vous sélectionnez Exchange et Appareils comme emplacements, ces actions sont disponibles :
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 - Auditer ou restreindre les activités sur les appareils Windows
 
 Si vous sélectionnez Appareils et Microsoft Defender for Cloud Apps, ces actions sont disponibles :
 
-- Restreindre l’accès ou chiffrer le contenu dans Microsoft 365 emplacements
+- Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365
 - Auditer ou restreindre les activités sur les appareils Windows
 - Restreindre les applications tierces
 
@@ -527,7 +525,25 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 
 > [!IMPORTANT]
 > - Les e-mails de notification sont envoyés sans protection.
-> - Les notifications par e-mail sont prises en charge uniquement pour les services Microsoft 365.
+> - Les notifications par e-mail sont uniquement prises en charge pour les services Microsoft 365.
+
+#### <a name="email-notifications-support-by-selected-location"></a>Prise en charge des notifications par e-mail par emplacement sélectionné
+
+|Emplacement sélectionné  |Notifications par e-mail prises en charge  |
+|---------|---------|
+|Appareils     |- Non pris en charge         |
+|Exchange + Appareils     |- Pris en charge pour Exchange </br>- Non pris en charge pour les appareils  |
+|Exchange    |- Pris en charge        |
+|SharePoint + Appareils  |- Pris en charge pour SharePoint </br>- Non pris en charge pour les appareils         |
+|SharePoint    |- Pris en charge |
+|Exchange + SharePoint    |- Pris en charge pour Exchange </br>- Pris en charge pour SharePoint  |
+|Appareils + SharePoint + Exchange    |- Non pris en charge pour les appareils </br>- Pris en charge pour SharePoint </br> Pris en charge pour Exchange |
+|Teams    |- Non pris en charge |
+|OneDrive Entreprise   |- Pris en charge         |
+|OneDrive Entreprise + Appareils     |- Pris en charge pour OneDrive Entreprise </br>- Non pris en charge pour les appareils         |
+|Power-BI|- Non pris en charge|
+|Microsoft Defender for Cloud Apps|- Non pris en charge|
+|Référentiels locaux|- Non pris en charge|
 
 Vous pouvez également donner aux utilisateurs la possibilité de [remplacer la stratégie](#user-overrides), afin qu’ils ne soient pas bloqués s’ils ont un besoin commercial valide ou si la stratégie détecte un faux positif.
 
@@ -536,8 +552,11 @@ Les options de configuration des notifications utilisateur et des conseils de st
 - Exchange
 - SharePoint
 - OneDrive
-- Teams conversation et canal
+- Conversation et canal Teams
 - Defender for Cloud Apps
+
+
+
 
 
 Vous pouvez activer/désactiver les notifications utilisateur pour différentes applications Microsoft. Consultez [les informations de référence sur les conseils de stratégie de protection contre la perte de données](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
@@ -548,9 +567,9 @@ Vous pouvez activer/désactiver les notifications utilisateur pour différentes 
 
 et personnalisez le texte de l’e-mail, l’objet et le texte de l’info-bulle de stratégie.
 
-![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Conversation et canal, et Defender pour le cloud Apps](../media/dlp-user-notification-non-devices.png)
+![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Chat and Channel et Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-Si vous avez sélectionné Appareils uniquement, vous obtiendrez toutes les mêmes options disponibles pour Exchange, SharePoint, OneDrive, Teams Conversation et canal et Defender pour le cloud Apps, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur le Windows 10 appareil.
+Si vous avez sélectionné Appareils uniquement, vous obtenez toutes les mêmes options disponibles pour Exchange, SharePoint, OneDrive, Teams Chat and Channel et Defender for Cloud Apps, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
 
@@ -618,6 +637,19 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
+#### <a name="blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business"></a>Blocage et notifications dans SharePoint Online et OneDrive Entreprise
+
+Ce tableau présente le comportement de blocage et de notification DLP pour les stratégies qui sont étendues à SharePoint Online et OneDrive Entreprise.
+
+|Conditions  |Configuration des actions |Configuration de la notification utilisateur|Configuration des rapports d’incidents |Comportement de blocage et de notification|
+|---------|---------|---------|---------|---------|
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**     |Aucune action n’est configurée         |- **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné         |- **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** définie **sur Activé** </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**         |- Les notifications sont envoyées uniquement lorsqu’un fichier est partagé avec un utilisateur externe et qu’un utilisateur externe accède au fichier.  |
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **uniquement avec des personnes au sein de mon organisation**        | Aucune action n’est configurée         |-  **Notifications utilisateur définies** **sur Activé**   </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné  </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné    |  - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**       |- Les notifications sont envoyées lorsqu’un fichier est chargé |
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**    | - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OndeDrive et Teams partagés** est sélectionné </br>- **Bloquer uniquement les personnes extérieures à votre organisation** est sélectionné          |- **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné  |  - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**             | - L’accès à un fichier sensible est bloqué dès qu’il est chargé </br>- Notifications envoyées lorsque du contenu est partagé à partir de Microsoft 365 avec des personnes extérieures à mon organisation         |
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation** |  - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OndeDrive et Teams partagés** est sélectionné </br>- **Bloquer tout le monde** est sélectionné        | - **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné         | - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**        |Les notifications sont envoyées lorsqu’un fichier est partagé avec un utilisateur externe et qu’un utilisateur externe accède à ce fichier.         |
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**     |- **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Bloquer uniquement les personnes qui ont reçu l’accès au contenu via l’option « Toute personne ayant le lien »** est sélectionnée.         |  - **Notifications utilisateur définies** **sur Activé** </br>- **Notifier les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné.  </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné     |- **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé**   </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**       |Les notifications sont envoyées dès qu’un fichier est chargé         |
+
+
 ### <a name="user-overrides"></a>Remplacements par l’utilisateur
 
 L’objectif des **remplacements d’utilisateurs** est de donner aux utilisateurs un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur les éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils puissent continuer leur travail. Les remplacements d’utilisateurs sont activés uniquement lorsque la notification aux **utilisateurs dans les services Office 365 avec un conseil de stratégie** est activée. Par conséquent, les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie. 
@@ -657,7 +689,7 @@ Les alertes peuvent être envoyées chaque fois qu’une activité correspond à
 
 ![envoyer une alerte chaque fois qu’une règle correspond ou s’agréger au fil du temps en moins de rapports](../media/dlp-incident-reports-aggregation.png)
 
-DLP analyse les e-mails différemment de ce qu’il ne fait SharePoint en ligne ou OneDrive Entreprise éléments. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux messages électroniques et génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
+DLP analyse les e-mails différemment de sharePoint Online ou d’éléments OneDrive Entreprise. Dans SharePoint Online et OneDrive Entreprise, DLP analyse les éléments existants, ainsi que les nouveaux et génère un rapport d’incident chaque fois qu’une correspondance est trouvée. Dans Exchange Online, DLP analyse uniquement les nouveaux messages électroniques et génère un rapport en cas de correspondance de stratégie. DLP ***ne peut pas*** analyser ou mettre en correspondance les éléments de messagerie existants qui sont stockés dans une boîte aux lettres ou une archive.
 
 ### <a name="additional-options"></a>Options supplémentaires
 

@@ -17,16 +17,14 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 00c7e809fd878b677947dc1db2a55c612ef04997
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097049"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631070"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une conservation pour litige
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Vous pouvez placer une boîte aux lettres en attente de litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions d’origine des éléments modifiés. Lorsque vous placez une boîte aux lettres utilisateur en attente de litige, le contenu de la boîte aux lettres d’archivage de l’utilisateur (si elle est activée) est également conservé. Lorsque vous créez une conservation, vous pouvez spécifier une durée de conservation (également appelée *conservation basée sur le temps*) afin que les éléments supprimés et modifiés soient conservés pendant une période spécifiée, puis supprimés définitivement de la boîte aux lettres. Ou vous pouvez simplement conserver le contenu indéfiniment (appelé *conservation infinie*) ou jusqu’à ce que la conservation litige soit supprimée. Si vous spécifiez une période de conservation, elle est calculée à partir de la date de réception d’un message ou de la création d’un élément de boîte aux lettres. 
   
@@ -51,7 +49,7 @@ Pour placer une boîte aux lettres Exchange Online en attente de litige, une lic
 
 Voici les étapes à suivre pour placer une boîte aux lettres en attente de litige à l’aide de la Centre d'administration Microsoft 365.
 
-1. Accédez à la <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centre d'administration Microsoft 365</a>, puis cliquez sur **Utilisateurs** >  **Actif utilisateur.**
+1. Accédez à la <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centre d'administration Microsoft 365</a>, puis cliquez sur **Utilisateurs** > **actifs**.
 
 2. Sélectionnez l’utilisateur que vous souhaitez placer en conservation pour litige.
 

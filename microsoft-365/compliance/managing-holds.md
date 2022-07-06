@@ -21,22 +21,20 @@ description: Découvrez comment placer des conservations sur les consignataires 
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: bc69481c8d59408ce22c238fc80d8ceb67685cf9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: f7c47afe74c4d48036160d0fbb0c9717f884bc46
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128387"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629440"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Gérer les conservations dans eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Vous pouvez utiliser un cas Microsoft Purview eDiscovery (Premium) pour créer des conservations afin de conserver le contenu susceptible d’être pertinent pour votre cas. À l’aide des fonctionnalités de conservation eDiscovery (Premium), vous pouvez placer des conservations sur les consignatateurs et leurs sources de données. En outre, vous pouvez placer une conservation non-custodiale sur les boîtes aux lettres et les sites OneDrive Entreprise. Vous pouvez également placer une conservation sur la boîte aux lettres du groupe, SharePoint site et OneDrive Entreprise site pour un groupe Microsoft 365. De même, vous pouvez placer une conservation sur la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en attente, le contenu est conservé jusqu’à ce que vous libériez le consignateur, que vous supprimiez un emplacement de données spécifique ou que vous supprimiez entièrement la stratégie de conservation.
+Vous pouvez utiliser un cas Microsoft Purview eDiscovery (Premium) pour créer des conservations afin de conserver le contenu susceptible d’être pertinent pour votre cas. À l’aide des fonctionnalités de conservation eDiscovery (Premium), vous pouvez placer des conservations sur les consignats et leurs sources de données. En outre, vous pouvez placer une conservation non-custodiale sur les boîtes aux lettres et les sites OneDrive Entreprise. Vous pouvez également placer une conservation sur la boîte aux lettres de groupe, le site SharePoint et OneDrive Entreprise site pour un groupe Microsoft 365. De même, vous pouvez placer une conservation sur la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en attente, le contenu est conservé jusqu’à ce que vous libériez le consignateur, que vous supprimiez un emplacement de données spécifique ou que vous supprimiez entièrement la stratégie de conservation.
 
 ## <a name="manage-custodian-based-holds"></a>Gérer les conservations basées sur les consignats
 
-Dans certains cas, vous pouvez avoir un ensemble de consignataires que vous avez identifiés et que vous avez décidé de conserver leurs données pendant le cas. Dans eDiscovery (Premium), lorsque ces consignatateurs sont mis en attente, l’utilisateur et ses sources de données sélectionnées sont automatiquement ajoutés à une stratégie de conservation des consignatateurs.
+Dans certains cas, vous pouvez avoir un ensemble de consignataires que vous avez identifiés et que vous avez décidé de conserver leurs données pendant le cas. Dans eDiscovery (Premium), lorsque ces consignats sont mis en attente, l’utilisateur et ses sources de données sélectionnées sont automatiquement ajoutés à une stratégie de conservation des consignatateurs.
 
 Pour afficher la stratégie de conservation du consignatien :
 
@@ -74,17 +72,17 @@ Pour créer une conservation non gardienne pour un cas eDiscovery (Premium) :
   
 8. Choisissez les emplacements de contenu que vous souhaitez mettre en attente. Vous pouvez mettre en attente des boîtes aux lettres, des sites et des dossiers publics.
 
-   1. **Exchange e-mail** : cliquez sur **Choisir des utilisateurs, des groupes ou des équipes,** puis cliquez à nouveau sur **Choisir des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Microsoft 365 ou une équipe Microsoft. Sélectionnez l’utilisateur, le groupe, la case à cocher d’équipe, cliquez sur **Choisir**, puis cliquez sur **Terminé**.
+   1. **E-mail Exchange** : cliquez sur **Choisir des utilisateurs, des groupes ou des équipes,** puis cliquez à nouveau sur **Choisir des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Microsoft 365 ou une équipe Microsoft. Sélectionnez l’utilisateur, le groupe, la case à cocher d’équipe, cliquez sur **Choisir**, puis cliquez sur **Terminé**.
 
       > [!NOTE]
       > Lorsque vous cliquez sur **Choisir des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente, le sélecteur de boîte aux lettres affiché est vide. C’est par conception pour améliorer les performances. Pour ajouter des personnes à cette liste, tapez un nom (au moins 3 caractères) dans la zone de recherche.
 
-   1. **SharePoint Sites** - Cliquez sur Choisir des **sites**, puis cliquez à nouveau sur **Choisir les sites** pour spécifier SharePoint et OneDrive Entreprise sites à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Cliquez sur **Choisir**, puis sur **Terminé**.
+   1. **Sites SharePoint** - Cliquez sur **Choisir des sites**, puis cliquez à nouveau sur **Choisir les sites** pour spécifier SharePoint et OneDrive Entreprise sites à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Cliquez sur **Choisir**, puis sur **Terminé**.
 
       > [!NOTE]
-      > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). Dans les rares cas où l’UPN d’une personne est modifié, son URL de OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation non-custodiale et que son nom d’utilisateur principal est modifié, vous devez mettre à jour la conservation et pointer vers la nouvelle URL de OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
+      > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation non-custodiale et que son nom d’utilisateur principal est modifié, vous devez mettre à jour la conservation et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
-   1. **Exchange dossiers publics** : déplacez le bouton bascule vers la position Tout pour mettre tous les dossiers publics de votre organisation Exchange Online en attente. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur bascule défini sur **Aucun** si vous ne souhaitez pas mettre une suspension sur les dossiers publics.
+   1. **Dossiers publics Exchange** : déplacez le commutateur bascule vers la position Tout pour mettre tous les dossiers publics de votre organisation Exchange Online en attente. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur bascule défini sur **Aucun** si vous ne souhaitez pas mettre une suspension sur les dossiers publics.
 
 9. Lorsque vous avez terminé d’ajouter des emplacements de contenu à la conservation, cliquez sur **Suivant**.
   
@@ -101,18 +99,18 @@ Pour créer une conservation non gardienne pour un cas eDiscovery (Premium) :
 12. Passez en revue vos paramètres, puis cliquez sur **Créer cette conservation**.
 
 > [!NOTE]
-> Lorsque vous créez une conservation basée sur une requête, tout le contenu des emplacements sélectionnés est initialement mis en attente. Par la suite, tout contenu qui ne correspond pas à la requête spécifiée est effacé de la conservation tous les sept à 14 jours. Toutefois, une conservation basée sur une requête n’efface pas le contenu si plus de cinq conservations de n’importe quel type sont appliquées à un emplacement de contenu ou si un élément présente des problèmes d’indexation.
+> Lorsque vous créez une conservation basée sur une requête, tout le contenu des emplacements sélectionnés est initialement mis en attente. Après l’exécution du travail du minuteur dans Exchange ou SharePoint, tout contenu qui ne correspond pas à la requête spécifiée est effacé de la conservation. Une fois que le nombre de caractères dans toutes les requêtes sur un emplacement unique dépasse 10 000 caractères, l’emplacement entier est mis en attente. 
 
 > [!NOTE]
 > Si l’adresse SMTP de l’utilisateur change après la mise en attente de la boîte aux lettres de l’utilisateur, la boîte aux lettres reste en attente. Pour utiliser la nouvelle adresse SMTP pour placer la conservation, créez une nouvelle conservation.
 
-## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Mettre en attente les groupes Microsoft Teams et Office 365
+## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Mettre en attente Microsoft Teams et les groupes Office 365
 
 Microsoft Teams repose sur des groupes Office 365. Par conséquent, leur mise en attente dans eDiscovery (Premium) est similaire.
 
-- **Comment faire mapper un site Groupes Microsoft 365 ou Microsoft Teams supplémentaire à un gardien ? Et qu’en est-il de placer une conservation non-custodiale sur Groupes Microsoft 365 et Microsoft Teams?** Microsoft Teams repose sur Groupes Microsoft 365. Par conséquent, les mettre en attente dans un cas eDiscovery est similaire. Gardez à l’esprit les éléments suivants lorsque vous placez Groupes Microsoft 365 et Microsoft Teams en attente.
+- **Comment faire mapper un Groupes Microsoft 365 supplémentaire ou un site Microsoft Teams à un dépositaire ? Et qu’en est-il de placer une conservation non-custodiale sur Groupes Microsoft 365 et Microsoft Teams ?** Microsoft Teams repose sur Groupes Microsoft 365. Par conséquent, les mettre en attente dans un cas eDiscovery est similaire. Gardez à l’esprit les éléments suivants lorsque vous placez Groupes Microsoft 365 et Microsoft Teams en attente.
 
-  - Pour mettre le contenu situé dans Groupes Microsoft 365 et Microsoft Teams en attente, vous devez spécifier la boîte aux lettres et SharePoint site associé à un groupe ou une équipe.
+  - Pour mettre en attente le contenu situé dans Groupes Microsoft 365 et Microsoft Teams, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
   
   - Exécutez l’applet **de commande Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe Microsoft 365 ou d’une équipe Microsoft. Il s’agit d’un bon moyen d’obtenir l’URL du site associé à un groupe Microsoft 365 ou à une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé Senior Leadership Team :
 
@@ -127,8 +125,8 @@ Microsoft Teams repose sur des groupes Office 365. Par conséquent, leur mise en
     > [!NOTE]
     > Pour exécuter l'applet de commande Get-UnifiedGroup, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-  - Lorsque la boîte aux lettres d’un utilisateur est recherchée, aucun groupe Microsoft 365 ou équipe Microsoft dont l’utilisateur est membre ne sera recherché. De même, lorsque vous placez une conservation de groupe ou d’équipe Microsoft Microsoft 365, seules la boîte aux lettres de groupe et le site de groupe sont mis en attente ; les boîtes aux lettres et les sites OneDrive Entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement en tant que consignateurs ou placez leurs sources de données en attente. Par conséquent, si vous devez mettre un groupe Microsoft 365 ou l’équipe Microsoft en attente pour un consignateur spécifique, envisagez de mapper le site de groupe et la boîte aux lettres de groupe au consignateur (voir Managing Custodians in eDiscovery (Premium)). Si le groupe Microsoft 365 ou l’équipe Microsoft n’est pas attribuable à un seul consignataire, envisagez d’ajouter la source à une conservation non gardienne.
-  - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés de la page [**HomeGroups**](https://go.microsoft.com/fwlink/p/?linkid=2052855)  >  dans le Centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+  - Lorsque la boîte aux lettres d’un utilisateur est recherchée, aucun groupe Microsoft 365 ou équipe Microsoft dont l’utilisateur est membre ne sera recherché. De même, lorsque vous placez une conservation microsoft 365 Group ou Microsoft Team, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente ; les boîtes aux lettres et les sites OneDrive Entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement en tant que consignateurs ou placez leurs sources de données en attente. Par conséquent, si vous devez mettre un groupe Microsoft 365 ou une équipe Microsoft en attente pour un consignateur spécifique, envisagez de mapper le site de groupe et la boîte aux lettres de groupe au consignateur (voir Managing Custodians in eDiscovery (Premium)). Si le groupe Microsoft 365 ou l’équipe Microsoft n’est pas attribuable à un seul consignataire, envisagez d’ajouter la source à une conservation non gardienne.
+  - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés de la page [**Groupes**](https://go.microsoft.com/fwlink/p/?linkid=2052855) **d’accueil** >  dans le Centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -137,11 +135,11 @@ Microsoft Teams repose sur des groupes Office 365. Par conséquent, leur mise en
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-  - Les conversations de canal qui font partie d’un canal Microsoft Teams sont stockées dans la boîte aux lettres associée à l’équipe. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez mettre la boîte aux lettres et le site SharePoint Microsoft Team en attente pour conserver les conversations et les fichiers dans un canal.
+  - Les conversations de canal qui font partie d’un canal Microsoft Teams sont stockées dans la boîte aux lettres associée à l’équipe. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez mettre la boîte aux lettres microsoft team et le site SharePoint en attente pour conserver les conversations et les fichiers dans un canal.
   
-  - Vous pouvez également stocker les conversations qui font partie de la liste de conversations dans Microsoft Teams dans la boîte aux lettres des utilisateurs qui participent à la conversation.  Les fichiers qu’un utilisateur partage dans des conversations de conversation sont stockés dans le site OneDrive Entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez mettre les boîtes aux lettres des utilisateurs individuels et les sites OneDrive Entreprise en attente pour conserver les conversations et les fichiers dans la liste des conversations.
+  - Vous pouvez également stocker les conversations qui font partie de la liste des conversations dans Microsoft Teams dans la boîte aux lettres des utilisateurs qui participent à la conversation.  Les fichiers qu’un utilisateur partage dans des conversations de conversation sont stockés dans le site OneDrive Entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez mettre les boîtes aux lettres des utilisateurs individuels et les sites OneDrive Entreprise en attente pour conserver les conversations et les fichiers dans la liste des conversations.
   
   - Chaque équipe Microsoft ou canal d’équipe contient un Wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez mettre en attente le contenu du Wiki en mettant le site SharePoint de l’équipe en attente.
 
     > [!NOTE]
-    > La possibilité de conserver le contenu Wiki d’une équipe Microsoft ou d’un canal d’équipe (lorsque vous mettez en attente le site SharePoint de l’équipe) a été publiée le 22 juin 2017. Si un site d’équipe est en attente, le contenu wiki sera conservé à compter de cette date. Toutefois, si un site d’équipe est en attente et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été conservé.
+    > La possibilité de conserver le contenu Wiki d’une équipe Microsoft ou d’un canal d’équipe (lorsque vous mettez le site SharePoint de l’équipe en attente) a été publiée le 22 juin 2017. Si un site d’équipe est en attente, le contenu wiki sera conservé à compter de cette date. Toutefois, si un site d’équipe est en attente et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été conservé.

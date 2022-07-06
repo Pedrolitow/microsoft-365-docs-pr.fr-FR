@@ -15,27 +15,27 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 2cca9cc073ca08c7fabb19511a4253e4a682057a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 3bfeadd0008b548b8193333b3509e82831b162c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760710"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630012"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-configuration-manager"></a>Intégrer des appareils Windows 10 et Windows 11 à l’aide de Configuration Manager
 
 **S’applique à :**
 
-- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
-- [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Gestion des risques internes](insider-risk-management.md)
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Intégrer des appareils à l’aide de System Center Configuration Manager
 
-1. Obtenez le fichier de package de configuration .zip (*DeviceComplianceOnboardingPackage.zip*) à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/).
+1. Obtenez le fichier de package de configuration .zip (*DeviceComplianceOnboardingPackage.zip*) à partir de [portail de conformité Microsoft Purview](https://compliance.microsoft.com/).
 
-2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a> >  **Device OnboardingOnboarding** > .
+2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a> > **de l’intégration des** >  appareils **.**
 
-3. Dans le champ **Méthode de déploiement**, sélectionnez **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
+3. Dans le champ **Méthode de déploiement**, sélectionnez Point de terminaison **Microsoft Configuration Manager 2012/2012 R2/1511/1602**.
 
 4. Sélectionnez **Télécharger le package** et enregistrez le fichier .zip.
 
@@ -46,17 +46,17 @@ ms.locfileid: "64760710"
 7. Choisissez une collection d’appareils prédéfinie sur laquelle déployer le package.
 
 > [!NOTE]
-> Microsoft 365 protection des informations ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Assurez-vous que les utilisateurs effectuent une opération OOBE après avoir exécuté Windows installation ou mise à niveau.
+> La protection des informations Microsoft 365 ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) ). Assurez-vous que les utilisateurs effectuent une opération OOBE après avoir exécuté l’installation ou la mise à niveau de Windows.
 
 > [!TIP]
-> Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, consultez [Exécuter un test de détection sur un appareil Pertahanan Microsoft untuk Titik Akhir nouvellement intégré](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
+> Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, consultez [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
 >
 > Notez qu’il est possible de créer une règle de détection sur une application Configuration Manager pour vérifier en permanence si un appareil a été intégré. Une application est un type d’objet différent d’un package et d’un programme.
 > Si un appareil n’est pas encore intégré (en raison de l’achèvement OOBE en attente ou d’une autre raison), Configuration Manager réessayez d’intégrer l’appareil jusqu’à ce que la règle détecte le changement d’état.
 >
 > Ce comportement peut être effectué en créant une règle de détection vérifiant si la valeur de Registre « OnboardingState » (de type REG_DWORD) = 1.
 > Cette valeur de Registre se trouve sous « HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status ».
-Pour plus d’informations, consultez [Configurer les méthodes de détection dans System Center Configuration Manager 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
+Pour plus d’informations, consultez [Configurer les méthodes de détection dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
 
 ### <a name="configure-sample-collection-settings"></a>Configurer des exemples de paramètres de collecte
 
@@ -88,7 +88,7 @@ Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations sur la conformité System Center Configuration Manager, consultez [Présentation des paramètres de conformité dans System Center Configuration Manager 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
+Pour plus d’informations sur la conformité System Center Configuration Manager, consultez [Présentation des paramètres de conformité dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
@@ -138,19 +138,19 @@ Pour des raisons de sécurité, le package utilisé pour désintégrez les appar
 > [!NOTE]
 > Les stratégies d’intégration et de désintégrage ne doivent pas être déployées simultanément sur le même appareil, sinon cela provoquera des collisions imprévisibles.
 
-### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Désintégrage des appareils à l’aide de Microsoft Endpoint Configuration Manager branche active
+### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Désins border des appareils à l’aide du point de terminaison Microsoft Configuration Manager current branch
 
-Si vous utilisez Microsoft Endpoint Configuration Manager branche active, consultez [Créer un fichier de configuration de désintégrage](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+Si vous utilisez le point de terminaison Microsoft Configuration Manager current branch, consultez [Créer un fichier de configuration de désintégrage](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils hors carte utilisant System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils hors-carte utilisant System Center 2012 R2 Configuration Manager
 
-1. Obtenez le package de désintégrage à partir de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> :
+1. Obtenez le package de désintégrage à partir de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a> :
 
-2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a> >   **Device onboardingOffboarding**> .
+2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a> >  **De l’intégration de l’appareil**> **hors-bord**.
 
 3. Sélectionnez Windows 10 comme système d’exploitation.
 
-4. Dans le champ **Méthode de déploiement**, sélectionnez **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
+4. Dans le champ **Méthode de déploiement**, sélectionnez Point de terminaison **Microsoft Configuration Manager 2012/2012 R2/1511/1602**.
 
 5. Sélectionnez **Télécharger le package** et enregistrez le fichier .zip.
 
@@ -165,13 +165,13 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche active, consul
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Si vous utilisez Microsoft Endpoint Configuration Manager branche active, utilisez le tableau de bord intégré Pertahanan Microsoft untuk Titik Akhir dans la console Configuration Manager. Pour plus d’informations, consultez [Microsoft Defender Advanced Threat Protection - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+Si vous utilisez le point de terminaison Microsoft Configuration Manager branche actuelle, utilisez le tableau de bord Microsoft Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, consultez [Microsoft Defender Advanced Threat Protection - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center Configuration Manager R2 2012, la surveillance se compose de deux parties :
+Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 
 1. Confirmer que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est exécuté avec succès) sur les appareils de votre réseau.
 
-2. Vérifier que les appareils sont conformes au service d’intégration d’appareil Microsoft 365 (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
+2. Vérifier que les appareils sont conformes au service d’intégration d’appareils Microsoft 365 (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>Vérifier que le package de configuration a été correctement déployé
 
@@ -187,9 +187,9 @@ Si vous utilisez System Center Configuration Manager R2 2012, la surveillance se
 
     ![Configuration Manager montrant un déploiement réussi sans erreur.](../media/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>Vérifiez que les appareils sont conformes au service de protection contre la perte de données de point de terminaison Microsoft 365
+### <a name="check-that-the-devices-are-compliant-with-the-endpoint-data-loss-prevention-service"></a>Vérifier que les appareils sont conformes au service de protection contre la perte de données de point de terminaison
 
-Vous pouvez définir une règle de conformité pour l’élément de configuration dans System Center Configuration Manager 2012 R2 pour surveiller votre déploiement.
+Vous pouvez définir une règle de conformité pour l’élément de configuration dans System Center 2012 R2 Configuration Manager pour surveiller votre déploiement.
 
 > [!NOTE]
 > Cette procédure et cette entrée de Registre s’appliquent à Endpoint DLP ainsi qu’à Defender pour point de terminaison.
@@ -204,13 +204,13 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Pour plus d’informations, consultez [Présentation des paramètres de conformité dans System Center Configuration Manager R2 2012](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
+Pour plus d’informations, consultez [Présentation des paramètres de conformité dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer des appareils Windows 10 et Windows 11 à l’aide de stratégie de groupe](device-onboarding-gp.md)
 - [Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles](device-onboarding-mdm.md)
 - [Intégrer les appareils Windows 10 et Windows 11 en utilisant un script local](device-onboarding-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](device-onboarding-vdi.md)
-- [Exécuter un test de détection sur un appareil Pertahanan Microsoft untuk Titik Akhir nouvellement intégré](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Résoudre les problèmes d’intégration de Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

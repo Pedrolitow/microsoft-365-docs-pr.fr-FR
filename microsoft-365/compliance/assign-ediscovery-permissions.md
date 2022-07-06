@@ -16,20 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Attribuez les autorisations nécessaires pour effectuer des tâches liées à eDiscovery à l’aide du portail de conformité Microsoft Purview.
+description: Attribuez les autorisations nécessaires pour effectuer des tâches liées à eDiscovery à l’aide de la portail de conformité Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: f8ba8873523372d599e6a40bccb5a1312b2bfe67
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013373"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628900"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Attribuer des autorisations eDiscovery dans le portail de conformité
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si vous souhaitez que les utilisateurs utilisent l’un des [outils liés à eDiscovery](ediscovery.md) dans le portail de conformité Microsoft Purview, vous devez leur attribuer les autorisations appropriées. Pour ce faire, le moyen le plus simple consiste à ajouter à la personne le groupe de **rôles** approprié sur la page Autorisations dans le portail de conformité. Cette rubrique décrit les autorisations requises pour effectuer des tâches eDiscovery.
 
@@ -53,7 +51,7 @@ Le groupe de rôles eDiscovery principal dans le portail de conformité est appe
   Pour les raisons pour lesquelles vous souhaiterez peut-être des administrateurs eDiscovery dans votre organisation, consultez [Plus d’informations](#more-information).
 
 > [!NOTE]
-> Pour analyser les données d’un utilisateur à l’aide d’eDiscovery (Premium), une licence Office 365 E5 ou Microsoft 365 E5 doit être attribuée à l’utilisateur (le gardien des données). Les utilisateurs disposant d’une licence Office 365 E1 ou Office 365 ou Microsoft 365 E3 peuvent également se faire attribuer une licence de module complémentaire Microsoft 365 E5 Conformité ou Microsoft 365 eDiscovery et Audit. Les administrateurs, les agents de conformité ou le personnel juridique affectés à des cas en tant que membres et qui utilisent eDiscovery (Premium) pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur les licences eDiscovery (Premium), consultez [Abonnements et licences dans eDiscovery (Premium).](overview-ediscovery-20.md#subscriptions-and-licensing)
+> Pour analyser les données d’un utilisateur à l’aide d’eDiscovery (Premium), une licence Office 365 E5 ou Microsoft 365 E5 doit être attribuée à l’utilisateur (le gardien des données). Les utilisateurs disposant d’une licence Office 365 E1 ou Office 365 ou Microsoft 365 E3 peuvent également se faire attribuer une licence de module complémentaire Microsoft 365 E5 Conformité ou Microsoft 365 eDiscovery et Audit. Les administrateurs, les agents de conformité ou le personnel juridique affectés aux cas en tant que membres et qui utilisent eDiscovery (Premium) pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur les licences eDiscovery (Premium), consultez [Abonnements et licences dans eDiscovery (Premium).](overview-ediscovery-20.md#subscriptions-and-licensing)
   
 ## <a name="before-you-assign-permissions"></a>Avant d’attribuer des autorisations
 
@@ -88,16 +86,16 @@ Dans la page **Autorisations** du portail de conformité, vous pouvez également
 
 Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le portail de conformité et indique les groupes de rôles intégrés auxquels chaque rôle est attribué par défaut.
   
-| Rôle | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
+| Role | Administrateur de conformité | eDiscovery Manager & Administrator | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||
+|Gestion des cas|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
 |Communication||![Coche.](../media/checkmark.png)|||
 |Recherche de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
 |Consignataire||![Coche.](../media/checkmark.png)|||
 |Exporter||![Coche.](../media/checkmark.png)|||
 |Suspension|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
-|Aperçu||![Coche.](../media/checkmark.png)|||
-|Révision||![Marque de vérification.](../media/checkmark.png)||![Coche](../media/checkmark.png)|
+|Aperçu||![Marque de vérification.](../media/checkmark.png)|||
+|Révision||![Coche.](../media/checkmark.png)||![Coche](../media/checkmark.png)|
 |Déchiffrer RMS||![Coche](../media/checkmark.png)|||
 |Rechercher et vider|||![Coche](../media/checkmark.png)||
   
@@ -107,7 +105,7 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery ré
 
 Ce rôle permet aux utilisateurs de créer, modifier, supprimer et contrôler l’accès aux cas eDiscovery (Standard) et eDiscovery (Premium) dans le portail de conformité. Comme expliqué précédemment, le rôle Gestion des cas doit être attribué à un utilisateur avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez l’article suivant :
 
 - [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md)
 
@@ -115,23 +113,23 @@ Pour plus d’informations, voir :
 
 ### <a name="communication"></a>Communication
 
-Ce rôle permet aux utilisateurs de gérer toutes les communications avec les consignatateurs identifiés dans un cas eDiscovery (Premium). Cela inclut la création de notifications de conservation, de rappels de conservation et d’escalades vers la gestion. L’utilisateur peut également suivre l’accusé de réception des notifications de conservation et gérer l’accès au portail des consignats utilisé par chaque gardien pour suivre les communications pour les cas où ils ont été identifiés en tant que consignat.
+Ce rôle permet aux utilisateurs de gérer toutes les communications avec les consignats identifiés dans un cas eDiscovery (Premium). Cela inclut la création de notifications de conservation, de rappels de conservation et d’escalades vers la gestion. L’utilisateur peut également suivre l’accusé de réception des notifications de conservation et gérer l’accès au portail des consignats utilisé par chaque gardien pour suivre les communications pour les cas où ils ont été identifiés en tant que consignat.
 
 Pour plus d’informations, consultez [Work with communications in eDiscovery (Premium).](managing-custodian-communications.md)
 
 ### <a name="compliance-search"></a>Recherche de conformité
 
-Ce rôle permet aux utilisateurs d’exécuter l’outil Recherche de contenu dans le portail de conformité pour rechercher des boîtes aux lettres et des dossiers publics, SharePoint sites en ligne, sites OneDrive Entreprise, conversations Skype Entreprise, groupes Microsoft 365 et Microsoft Teams, et groupes Yammer. Ce rôle permet à un utilisateur d’obtenir une estimation des résultats de la recherche et de créer des rapports d’exportation, mais d’autres rôles sont nécessaires pour lancer des actions de recherche de contenu telles que l’aperçu, l’exportation ou la suppression des résultats de recherche.
+Ce rôle permet aux utilisateurs d’exécuter l’outil Recherche de contenu dans le portail de conformité pour rechercher des boîtes aux lettres et des dossiers publics, des sites SharePoint Online, des sites OneDrive Entreprise, des conversations Skype Entreprise, des groupes Microsoft 365 et Des groupes Microsoft Teams et Yammer. Ce rôle permet à un utilisateur d’obtenir une estimation des résultats de la recherche et de créer des rapports d’exportation, mais d’autres rôles sont nécessaires pour lancer des actions de recherche de contenu telles que l’aperçu, l’exportation ou la suppression des résultats de recherche.
 
 Dans recherche de contenu et eDiscovery (Standard), les utilisateurs auxquels le rôle Recherche de conformité est attribué mais qui n’ont pas le rôle Aperçu peuvent afficher un aperçu des résultats d’une recherche dans laquelle l’action d’aperçu a été lancée par un utilisateur auquel le rôle Aperçu a été attribué. L’utilisateur sans rôle Aperçu peut afficher un aperçu des résultats jusqu’à deux semaines après la création de l’action de préversion initiale.
 
 De même, les utilisateurs de recherche de contenu et eDiscovery (Standard) qui se voient attribuer le rôle Recherche de conformité mais qui n’ont pas le rôle Exporter peuvent télécharger les résultats d’une recherche dans laquelle l’action d’exportation a été lancée par un utilisateur auquel le rôle d’exportation est attribué. L’utilisateur sans rôle d’exportation peut télécharger les résultats d’une recherche jusqu’à deux semaines après la création de l’action d’exportation initiale. Après cela, ils ne peuvent pas télécharger les résultats, sauf si une personne ayant le rôle Exporter redémarre l’exportation.
 
-La période de grâce de deux semaines pour l’aperçu et l’exportation des résultats de recherche (sans les rôles de recherche et d’exportation correspondants) ne s’applique pas à eDiscovery (Premium). Les rôles d’aperçu et d’exportation doivent être attribués aux utilisateurs pour afficher un aperçu et exporter du contenu dans eDiscovery (Premium).
+La période de grâce de deux semaines pour l’aperçu et l’exportation des résultats de recherche (sans les rôles de recherche et d’exportation correspondants) ne s’applique pas à eDiscovery (Premium). Les rôles Aperçu et Exportation doivent être attribués aux utilisateurs pour afficher un aperçu et exporter du contenu dans eDiscovery (Premium).
 
 ### <a name="custodian"></a>Consignataire
 
-Ce rôle permet aux utilisateurs d’identifier et de gérer les consignatateurs pour les cas eDiscovery (Premium) et d’utiliser les informations de Azure Active Directory et d’autres sources pour rechercher des sources de données associées aux consignatateurs. L’utilisateur peut associer d’autres sources de données telles que des boîtes aux lettres, des sites SharePoint et des Teams à des consignatateurs dans un cas. L’utilisateur peut également placer une conservation légale sur les sources de données associées aux consignataires pour conserver le contenu dans le contexte d’un cas.
+Ce rôle permet aux utilisateurs d’identifier et de gérer les consignatateurs pour les cas eDiscovery (Premium) et d’utiliser les informations d’Azure Active Directory et d’autres sources pour rechercher les sources de données associées aux consignatateurs. L’utilisateur peut associer d’autres sources de données telles que des boîtes aux lettres, des sites SharePoint et Teams à des consignatateurs dans un cas. L’utilisateur peut également placer une conservation légale sur les sources de données associées aux consignataires pour conserver le contenu dans le contexte d’un cas.
 
 Pour plus d’informations, consultez [Work with custodians in eDiscovery (Premium).](managing-custodians.md)
 
@@ -139,7 +137,7 @@ Pour plus d’informations, consultez [Work with custodians in eDiscovery (Premi
 
 Le rôle permet aux utilisateurs d’exporter les résultats d’une recherche de contenu vers un ordinateur local. Il leur permet également de préparer les résultats de la recherche pour l’analyse dans eDiscovery (Premium).
 
-Pour plus d’informations sur l’exportation des résultats de la recherche, consultez [Exporter les résultats de la recherche à partir du portail de conformité Microsoft Purview](export-search-results.md).
+Pour plus d’informations sur l’exportation des résultats [de recherche, consultez Exporter les résultats de la recherche à partir de portail de conformité Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>Suspension
 
@@ -161,7 +159,7 @@ Ce rôle permet aux utilisateurs d’accéder aux jeux de révision dans [eDisco
 
 ### <a name="rms-decrypt"></a>Déchiffrer RMS
 
-Ce rôle permet aux utilisateurs d’afficher les messages électroniques protégés par des droits lors de l’aperçu des résultats de recherche et d’exporter les messages électroniques protégés par des droits déchiffrés. Ce rôle permet également aux utilisateurs d’afficher (et d’exporter) un fichier chiffré à l’aide d’une [technologie de chiffrement Microsoft](encryption.md) lorsque le fichier chiffré est joint à un message électronique inclus dans les résultats d’une recherche eDiscovery. En outre, ce rôle permet aux utilisateurs d’examiner et d’interroger les pièces jointes chiffrées qui sont ajoutées à un ensemble de révisions dans eDiscovery (Premium). Pour plus d’informations sur le déchiffrement dans eDiscovery, consultez [Déchiffrement dans Microsoft 365 outils eDiscovery](ediscovery-decryption.md).
+Ce rôle permet aux utilisateurs d’afficher les messages électroniques protégés par des droits lors de l’aperçu des résultats de recherche et d’exporter les messages électroniques protégés par des droits déchiffrés. Ce rôle permet également aux utilisateurs d’afficher (et d’exporter) un fichier chiffré à l’aide d’une [technologie de chiffrement Microsoft](encryption.md) lorsque le fichier chiffré est joint à un message électronique inclus dans les résultats d’une recherche eDiscovery. En outre, ce rôle permet aux utilisateurs d’examiner et d’interroger les pièces jointes chiffrées qui sont ajoutées à un ensemble de révisions dans eDiscovery (Premium). Pour plus d’informations sur le déchiffrement dans eDiscovery, consultez [Déchiffrement dans les outils eDiscovery de Microsoft 365](ediscovery-decryption.md).
 
 ### <a name="search-and-purge"></a>Rechercher et vider
 
@@ -169,7 +167,7 @@ Ce rôle permet aux utilisateurs d’effectuer la suppression en bloc des donné
 
 ## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>Ajout de groupes de rôles en tant que membres de cas eDiscovery
 
-Vous pouvez ajouter des groupes de rôles en tant que membres de cas eDiscovery (Standard) et eDiscovery (Premium) afin que les membres des groupes de rôles puissent accéder aux cas attribués et effectuer des tâches. Les rôles attribués au groupe de rôles définissent ce que les membres du groupe de rôles peuvent faire. Ensuite, l’ajout d’un groupe de rôles en tant que membre du cas permet aux membres d’accéder à ces tâches et d’effectuer ces tâches dans un cas spécifique. Pour plus d’informations sur l’ajout de groupes de rôles en tant que membres de cas, consultez :
+Vous pouvez ajouter des groupes de rôles en tant que membres des cas eDiscovery (Standard) et eDiscovery (Premium) afin que les membres des groupes de rôles puissent accéder aux tâches et les effectuer dans les cas attribués. Les rôles attribués au groupe de rôles définissent ce que les membres du groupe de rôles peuvent faire. Ensuite, l’ajout d’un groupe de rôles en tant que membre du cas permet aux membres d’accéder à ces tâches et d’effectuer ces tâches dans un cas spécifique. Pour plus d’informations sur l’ajout de groupes de rôles en tant que membres de cas, consultez :
 
 - [Prise en main d’eDiscovery (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
@@ -205,7 +203,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange groupes de distribution et Groupes Microsoft 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security`. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a> ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). La création d’un groupe de sécurité à extension messagerie peut prendre jusqu’à 60 minutes avant d’être ajouté au groupe de rôles gestionnaires eDiscovery.
+    Les groupes de distribution Exchange et les Groupes Microsoft 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security`. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). La création d’un groupe de sécurité à extension messagerie peut prendre jusqu’à 60 minutes avant d’être ajouté au groupe de rôles gestionnaires eDiscovery.
 
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à extension messagerie un administrateur eDiscovery à l’aide de l’applet de commande **Add-eDiscoveryCaseAdmin** dans Security & Compliance PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
 

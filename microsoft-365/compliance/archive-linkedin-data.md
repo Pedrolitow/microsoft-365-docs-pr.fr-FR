@@ -15,32 +15,30 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn vers Microsoft 365.
-ms.openlocfilehash: 352e33ed4c78dd57533312e3f7c37bb3357216f3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d018237a7cd0d4171be8a9f104ee4ccd745f2228
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095969"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630629"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages LinkedIn Company. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte pour la page LinkedIn Company spécifique une fois toutes les 24 heures. Le connecteur convertit les messages publiés dans la page Entreprise en message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
-Utilisez un connecteur dans le portail de conformité Microsoft Purview pour importer et archiver des données à partir de pages LinkedIn Company. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte pour la page LinkedIn Company spécifique une fois toutes les 24 heures. Le connecteur convertit les messages publiés sur la page Entreprise en message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
-
-Une fois les données de page LinkedIn Company stockées dans une boîte aux lettres, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation du litige, la recherche de contenu, l’archivage In-Place, l’audit et Microsoft 365 stratégies de rétention aux données LinkedIn. Par exemple, vous pouvez rechercher ces éléments à l’aide de la recherche de contenu ou associer la boîte aux lettres de stockage à un consignateur dans un cas de découverte électronique Microsoft Purview (Premium). La création d’un connecteur pour importer et archiver des données LinkedIn dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données de page LinkedIn Company stockées dans une boîte aux lettres, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation du contentieux, la recherche de contenu, l’archivage In-Place, l’audit et les stratégies de rétention Microsoft 365 aux données LinkedIn. Par exemple, vous pouvez rechercher ces éléments à l’aide de la recherche de contenu ou associer la boîte aux lettres de stockage à un consignateur dans un cas Microsoft Purview eDiscovery (Premium). La création d’un connecteur pour importer et archiver des données LinkedIn dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
-- Le rôle Administrateur du connecteur de données doit être attribué à l’utilisateur qui crée un connecteur page d’entreprise LinkedIn. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administrateur du connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- L’utilisateur qui crée un connecteur Page d’entreprise LinkedIn doit avoir le rôle de connecteur de données Administration. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le portail de conformité. Ce rôle est ajouté par défaut à plusieurs groupes de rôles. Pour obtenir la liste de ces groupes de rôles, consultez la section « Rôles dans les centres de sécurité et de conformité » dans [Autorisations dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Un administrateur de votre organisation peut également créer un groupe de rôles personnalisé, attribuer le rôle Administration connecteur de données, puis ajouter les utilisateurs appropriés en tant que membres. Pour obtenir des instructions, consultez la section « Créer un groupe de rôles personnalisé » dans [Autorisations dans le portail de conformité Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Vous devez disposer des informations d’identification de connexion (adresse e-mail, numéro de téléphone et mot de passe) d’un compte d’utilisateur LinkedIn qui est administrateur de la page d’entreprise LinkedIn que vous souhaitez archiver. Vous utilisez ces informations d’identification pour vous connecter à LinkedIn lors de la configuration du connecteur.
 
-- Le connecteur LinkedIn peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments LinkedIn par jour, aucun de ces éléments n’est importé dans Microsoft 365.
+- Le connecteur LinkedIn peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments LinkedIn par jour, aucun de ces éléments ne sera importé dans Microsoft 365.
 
 ## <a name="create-a-linkedin-connector"></a>Créer un connecteur LinkedIn
 
-1. Accédez aux <https://compliance.microsoft.com> pages **de l’entreprise Data connectorsLinkedIn** > , puis cliquez dessus.
+1. Accédez aux <https://compliance.microsoft.com>**pages LinkedIn Company** **des connecteurs de données**, puis cliquez dessus > .
 
 2. Dans la page produit **des pages d’entreprise LinkedIn** , cliquez sur **Ajouter un connecteur**.
 
@@ -60,7 +58,7 @@ Une fois les données de page LinkedIn Company stockées dans une boîte aux let
 
 6. Sélectionnez la page d’entreprise à partir de laquelle vous souhaitez archiver les éléments, puis cliquez sur **Suivant**.
 
-7. Dans la page **Choisir l’emplacement de stockage**, cliquez dans la zone, sélectionnez l’adresse e-mail d’une boîte aux lettres Microsoft 365 vers laquelle les éléments LinkedIn seront importés, puis cliquez sur **Suivant**. Les éléments sont importés dans le dossier de boîte de réception de cette boîte aux lettres.
+7. Dans la page **Choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse e-mail d’une boîte aux lettres Microsoft 365 vers laquelle les éléments LinkedIn seront importés, puis cliquez sur **Suivant**. Les éléments sont importés dans le dossier de boîte de réception de cette boîte aux lettres.
 
 8. Cliquez sur **Suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer la configuration du connecteur.
 

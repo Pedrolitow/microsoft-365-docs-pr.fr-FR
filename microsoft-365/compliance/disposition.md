@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 34ac1a9d3b62cd0806318582f7baef76947d7670
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: d72cc68bb093c3b49c7f79847916c5cbc5fe5a2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463261"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630100"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilisez la page **Disposition** de la **gestion des documents du portail de conformité** Microsoft Purview pour gérer les examens de disposition et afficher les [métadonnées](records-management.md#records) des documents qui ont été automatiquement supprimés à la fin de leur période de conservation.
 

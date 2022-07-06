@@ -16,21 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez les étapes à suivre pour étiqueter, puis utiliser un exemple de formation de 40 fichiers pendant l’étape de formation pertinence d’eDiscovery (Premium).
-ms.openlocfilehash: 3e2deb66658aacc8fdd50f2dea5ba082afb8a5e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Découvrez les étapes à suivre pour baliser, puis utiliser un exemple d’entraînement de 40 fichiers pendant l’étape d’apprentissage pertinence d’eDiscovery (Premium).
+ms.openlocfilehash: 8f3d92564d908344155b55b5f84dc6357324a388
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090382"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627258"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Formation sur l’étiquetage et la pertinence dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Cet article décrit la procédure d’utilisation du module de formation Pertinence dans Microsoft Purview eDiscovery (Premium).
   
-Une fois l’évaluation terminée dans eDiscovery (Premium) et que vous entrez dans l’étape de formation Pertinence, un exemple d’apprentissage de 40 fichiers est introduit dans l’onglet Balise pour le balisage.
+Une fois l’évaluation terminée dans eDiscovery (Premium) et que vous entrez dans l’étape d’entraînement Pertinence, un échantillon d’apprentissage de 40 fichiers est introduit dans l’onglet Balise pour le balisage.
   
 ## <a name="performing-relevance-training"></a>Exécution d’une formation sur la pertinence
 

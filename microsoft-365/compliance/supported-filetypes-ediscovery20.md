@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Liste des types de fichiers pris en charge dans Microsoft 365 eDiscovery (Premium), y compris les types de fichiers image pris en charge par la fonctionnalité OCR dans eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 422200b3015ff86566507cbe3f63bc2a75a84bea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: faa367800653e320621336e98f9e8fc684b222ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095793"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631026"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>Types de fichiers pris en charge dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) prend en charge de nombreux types de fichiers à différents niveaux. Les types de fichiers de support sont décrits dans les tableaux suivants de cet article. Cette liste n’est pas finalisée et nous ajouterons de nouveaux types de fichiers à mesure que nous continuerons nos tests de validation. Ces tableaux indiquent si un type de fichier est pris en charge pour l’extraction de texte (et la reconnaissance optique de caractères ou l’extraction de texte OCR pour les fichiers image), visible dans la visionneuse native et prend également en charge la visionneuse Annotate dans eDiscovery (Premium).
 
@@ -241,7 +239,7 @@ Microsoft Purview eDiscovery (Premium) prend en charge de nombreux types de fich
 |application/vnd.oasis.opendocument.text|Oui|Oui|Oui|Oui|Oui|.odt|
 |
 
-## <a name="other"></a>Autres
+## <a name="other"></a>Autre
 
 <br>
 

@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 998f074529089f5c0309f6799900a628915d3959
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893391"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630492"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Utiliser les rapports et audits de conformité des communications
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="reports"></a>Rapports
 
@@ -89,16 +87,15 @@ Utilisez l’option *Exporter* pour créer un fichier .csv contenant les détail
     - Notification de l’utilisateur
     - Cas créé
 
-- **Type d’informations sensibles par emplacement** (préversion) : passez en revue et exportez des informations sur la détection des types d’informations sensibles et les sources associées dans les stratégies de conformité des communications. Inclut le total global et la répartition spécifique des instances de type d’informations sensibles dans les sources configurées dans votre organisation. Les valeurs de chaque source tierce sont affichées dans des colonnes distinctes dans le fichier .csv. Voici quelques exemples :
+- **Type d’informations sensibles par emplacement** (préversion) : passez en revue et exportez des informations sur la détection des types d’informations sensibles et les sources associées dans les stratégies de conformité des communications. Inclut le total global et la répartition spécifique des instances de type d’informations sensibles dans les sources configurées dans votre organisation. Les valeurs de chaque source tierce sont affichées dans des colonnes distinctes dans le fichier .csv. En voici quelques exemples :
 
     - **E-mail** : types d’informations sensibles détectés dans les e-mails Exchange.
     - **Teams** : types d’informations sensibles détectés dans les canaux et les messages de conversation Microsoft Teams.
-    - **Skype Entreprise** : Types d’informations sensibles détectés dans les communications Skype Entreprise.
     - **Yammer** : types d’informations sensibles détectés dans les boîtes de réception, les publications, les conversations et les réponses Yammer.
     - **Sources tierces** : types d’informations sensibles détectés pour les activités associées à des connecteurs tiers configurés dans votre organisation. Pour afficher la répartition des sources tierces pour un type d’informations sensibles spécifique dans le rapport, placez la souris sur la valeur du type d’informations sensibles dans la colonne source tierce.
     - **Autre** : types d’informations sensibles utilisés pour le traitement interne du système. La sélection ou la désélection de cette source pour le rapport n’affecte aucune valeur.
 
-### <a name="message-details-report-preview"></a>Rapport des détails du message (préversion)
+### <a name="message-details-report"></a>Rapport des détails du message
 
 Créez des rapports personnalisés et examinez les détails des messages contenus dans des stratégies spécifiques sous l’onglet **Stratégies** . Ces rapports peuvent être utilisés pour toutes les révisions de messages et pour créer un instantané de rapport pour l’état des messages pendant une période personnalisable. Après avoir créé un rapport, vous pouvez afficher et télécharger le rapport de détails sous la forme d’un fichier .csv sous l’onglet **Rapports de détails** du message.
 
@@ -106,7 +103,7 @@ Créez des rapports personnalisés et examinez les détails des messages contenu
 
 Pour créer un rapport de détails de message, effectuez les étapes suivantes :
 
-1. Connectez-vous au portail de conformité Microsoft Purview avec un compte membre du groupe de *rôles Enquêteurs de conformité des communications* .
+1. Connectez-vous au portail de conformité Microsoft Purview avec un compte membre du groupe de *rôles Enquêteurs de conformité des communications*.
 2. Accédez à l’onglet **Stratégies** , sélectionnez une stratégie, puis **sélectionnez Créer un rapport de détails de message**.
 3. Dans le volet **Créer un rapport de détails du message** , entrez un nom pour le rapport dans le champ **Nom** du rapport.
 4. Dans **Choisir une plage de dates**, sélectionnez une *date de début* et une *date de fin* pour le rapport.
@@ -146,18 +143,18 @@ Dans certains cas, vous devez fournir des informations aux auditeurs de régleme
 > [!IMPORTANT]
 > L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Lorsque les activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
 
-Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Vous devez disposer des rôles *d’administrateur général* ou *d’administrateur de conformité* des communications pour exporter les activités de mise à jour. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Pour exporter les activités de mise à jour, vous devez disposer des rôles *de Administration Administration globale* ou de *conformité* des communications. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
-|**Field**|**Détails**|
+|**Champ**|**Détails**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de mise à jour a été effectuée dans une stratégie. |
 | **ID utilisateur** | Utilisateur qui a effectué l’activité de mise à jour dans une stratégie. |
 | **Operations** | Opérations de mise à jour effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la principale source de données pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des séparateurs de virgules. |
 
-Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Les rôles *Administrateur général* ou *Administrateur de conformité des communications* doivent vous être attribués pour exporter les activités de révision. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Pour exporter les activités de révision, vous devez disposer des rôles *Administration globale* ou Conformité des communications *Administration*. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
-|**Field**|**Détails**|
+|**Champ**|**Détails**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité de révision a été effectuée dans une stratégie. |
 | **ID utilisateur** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |

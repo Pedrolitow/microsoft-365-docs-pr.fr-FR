@@ -17,18 +17,16 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment afficher et interpréter l’état et les résultats de la formation pertinence pour les problèmes de cas dans eDiscovery (Premium).
-ms.openlocfilehash: dd2eecbcd347125b1728851d873068b37f82aced
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dce726553d5664714f9c479113ae00abd91aafff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093984"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627346"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>Suivre l’analyse de pertinence dans eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
-Dans Microsoft Purview eDiscovery (Premium), l’onglet Suivi de pertinence affiche la validité calculée de l’entraînement pertinence effectué sous l’onglet Balise et indique l’étape suivante à effectuer dans le processus d’apprentissage itératif dans Pertinence. 
+Dans Microsoft Purview eDiscovery (Premium), l’onglet Suivi de la pertinence affiche la validité calculée de l’entraînement pertinence effectué sous l’onglet Balise et indique l’étape suivante à effectuer dans le processus d’apprentissage itératif dans Pertinence. 
   
 ## <a name="tracking-relevance-training-status"></a>Suivi de l’état de l’entraînement pertinence
 
@@ -61,7 +59,7 @@ Dans Microsoft Purview eDiscovery (Premium), l’onglet Suivi de pertinence affi
 
 ### <a name="reaching-stable-training-levels"></a>Atteindre des niveaux d’entraînement stables
 
-Une fois que les fichiers d’évaluation ont atteint un niveau stable d’apprentissage, eDiscovery (Premium) est prêt pour le calcul Batch.
+Une fois que les fichiers d’évaluation ont atteint un niveau stable d’entraînement, eDiscovery (Premium) est prêt pour le calcul Batch.
   
 > [!NOTE]
 > En règle générale, après trois exemples d’entraînement stables, l’étape suivante est « Calcul batch ». Il peut y avoir des exceptions, par exemple, lorsque des modifications ont été apportées à l’étiquetage des fichiers à partir d’exemples antérieurs ou lorsque des fichiers initiaux ont été ajoutés. 
@@ -81,7 +79,7 @@ Si vous souhaitez importer de nouveaux fichiers après le calcul Batch, l’admi
   
 ### <a name="assessing-tagging-consistency"></a>Évaluation de la cohérence de l’étiquetage
 
-S’il existe des incohérences dans l’étiquetage des fichiers, cela peut affecter l’analyse. Le processus de cohérence de balisage eDiscovery (Premium) peut être utilisé lorsque les résultats ne sont pas optimaux ou que la cohérence est en doute. Une liste de fichiers éventuellement étiquetés de manière incohérente est retournée et peut être examinée et retalée, si nécessaire.
+S’il existe des incohérences dans l’étiquetage des fichiers, cela peut affecter l’analyse. Le processus de cohérence de balisage eDiscovery (Premium) peut être utilisé lorsque les résultats ne sont pas optimaux ou que la cohérence est incertaine. Une liste de fichiers éventuellement étiquetés de manière incohérente est retournée et peut être examinée et retalée, si nécessaire.
   
 > [!NOTE]
 > Après sept cycles d’entraînement ou plus après l’évaluation, la cohérence de l’étiquetage peut être affichée dans Le **problème** \> de **suivi** \> **de pertinence** \> **Résultats détaillés** \> Progression de l’apprentissage **.** Cette révision est effectuée pour un problème à la fois.
@@ -108,9 +106,9 @@ Sous l’onglet **Suivi de la pertinence\>**, développez la ligne d’un probl�
   
 ![Récapitulatif du balisage du suivi de la pertinence.](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
-Un mot clé est une chaîne, un mot, une expression ou une séquence unique de mots dans un fichier identifié par eDiscovery (Premium) comme indicateur significatif de la pertinence d’un fichier. Les colonnes « Include » répertorient le mot clé et les pondérations dans les fichiers marqués comme pertinents, et les colonnes « Exclure » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
+Un mot clé est une chaîne unique, un mot, une expression ou une séquence de mots dans un fichier identifié par eDiscovery (Premium) comme indicateur significatif de la pertinence d’un fichier. Les colonnes « Include » répertorient le mot clé et les pondérations dans les fichiers marqués comme pertinents, et les colonnes « Exclure » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
 eDiscovery (Premium) attribue des valeurs de poids de mot clé négatives ou positives. Plus le poids est élevé, plus la probabilité qu’un fichier dans lequel le mot clé apparaît soit affectée à un score de pertinence plus élevé pendant le calcul Batch.
   
@@ -130,7 +128,7 @@ Le volet **Progression** de l’apprentissage comprend un graphique de progressi
 
 - **Avertissement** : de nombreux fichiers peuvent être étiquetés de manière incohérente. (Lumière rouge affichée)
 
-**Graphique de progression** de l’entraînement : indique le degré de stabilité de l’entraînement de pertinence après de nombreux cycles d’entraînement de pertinence par rapport à la valeur de mesure F. À mesure que nous nous déplaçons de gauche à droite dans le graphique, l’intervalle de confiance se réduit et est utilisé, avec la mesure F, par eDiscovery (Premium) Pertinence pour déterminer la stabilité lorsque les résultats de l’entraînement pertinence sont optimisés.
+**Graphique de progression** de l’entraînement : indique le degré de stabilité de l’entraînement de pertinence après de nombreux cycles d’entraînement de pertinence par rapport à la valeur de mesure F. À mesure que nous nous déplaçons de gauche à droite dans le graphique, l’intervalle de confiance se rétrécit et est utilisé, avec la mesure F, par la pertinence eDiscovery (Premium) pour déterminer la stabilité lorsque les résultats de l’entraînement pertinence sont optimisés.
   
 > [!NOTE]
 > La pertinence utilise F2, une métrique de mesure F où Recall reçoit deux fois plus de poids que precision. Pour les cas avec une richesse élevée (plus de 25 %), la pertinence utilise F1 (ratio 1:1). Le ratio de mesure F peut être configuré dans les **paramètres avancés** de **configuration** \> de pertinence.

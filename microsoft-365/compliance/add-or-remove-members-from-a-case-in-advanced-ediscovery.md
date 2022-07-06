@@ -17,20 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment ajouter ou supprimer les membres qui peuvent accéder à un cas lors de la gestion d’un cas eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 85a8673e7e3c31ab12cda0109f6c06762adeabf3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b3ed53ee897e88d70a7b1322999e5b81de8ed81
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091872"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627710"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Ajouter ou supprimer des membres à partir d’un cas
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Vous pouvez ajouter ou supprimer des membres pour gérer les utilisateurs pouvant accéder au cas. Toutefois, avant qu’un membre puisse accéder à un cas eDiscovery (Premium) (et effectuer des tâches dans le cas), vous devez ajouter l’utilisateur au groupe de rôles eDiscovery Manager sur la page **Autorisations** du portail de conformité Microsoft Purview. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](./assign-ediscovery-permissions.md).
 
-Vous pouvez ajouter ou supprimer des membres pour gérer les utilisateurs pouvant accéder au cas. Toutefois, avant qu’un membre puisse accéder à un cas eDiscovery (Premium) (et effectuer des tâches dans le cas), vous devez ajouter l’utilisateur au groupe de rôles eDiscovery Manager sur la page **Autorisations** dans le portail de conformité Microsoft Purview. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](./assign-ediscovery-permissions.md).
-
-1. Dans la page **eDiscovery (Premium),** accédez au cas auquel vous souhaitez ajouter un membre.
+1. Dans la page de la **découverte électronique (Premium)**, accédez au cas auquel vous voulez ajouter un membre.
 
 2. Cliquez sur l’onglet **Paramètres**, puis cliquez sur **Sélectionner** dans la vignette **Accès et autorisations**.
 

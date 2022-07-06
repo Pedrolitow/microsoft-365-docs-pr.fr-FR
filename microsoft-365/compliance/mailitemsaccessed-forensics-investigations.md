@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: 5ff3c078dfd29b5b44bfac5f04b329bf014507ea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2c6d8030ba90f213f665036157b3efe0c267e80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090936"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629462"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Utiliser l’audit Microsoft Purview (Premium) pour analyser des comptes compromis
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Un compte d’utilisateur compromis (également appelé *prise de contrôle de compte*) est un type d’attaque permettant à une personne malveillante d’accéder à un compte utilisateur et d'agir à sa place. Ces types d’attaques peuvent parfois occasionner des dommages plus importants que ceux que la personne malveillante a initialement prévu. Lors de l'analyse de comptes de messagerie compromis, considérez que beaucoup plus de données de courrier sont compromises par rapport à ce qui peut être indiqué en suivant la présence réelle de l’attaquant. Selon le type de données figurant dans les messages électroniques, vous devez supposer que les informations sensibles ont été compromises, ou font face à des sanctions pour infraction à un règlement, sauf si vous pouvez prouver que les informations sensibles n’ont pas été exposées. Par exemple, les organisations réglementées par le HIPAA sont confrontées à des amendes importantes s’il s'avère que des informations sur la santé des patients ont été exposées. Dans ces cas, il est peu probable que les personnes malveillantes s'intéressent aux dossiers contenant des renseignements médicaux protégés (PHI), mais les organisations doivent tout de même signaler les violations de données, sauf si elles peuvent prouver le cas contraire.
 

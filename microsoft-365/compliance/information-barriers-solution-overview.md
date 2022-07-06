@@ -1,6 +1,6 @@
 ---
 title: Obstacles aux informations
-description: Découvrez comment configurer des obstacles à l’information dans Microsoft Purview.
+description: Découvrez comment configurer des barrières à l’information dans Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, conformité, obstacles à l’information
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -16,20 +16,18 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: aaba1c642d4615d3eb5163736450f3f8f3c27062
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 21ad4f0cc6614bed3c579a8025d83200446fec18
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396176"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627236"
 ---
 # <a name="information-barriers"></a>Obstacles aux informations
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations et prend en charge les moyens de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques si nécessaire. Cela peut inclure des situations ou des scénarios dans lesquels vous souhaitez restreindre la communication et la collaboration entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Cela peut également inclure des situations où vous devez restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation pour protéger les informations internes.
 
-Microsoft Purview Barrières de l’information (IB) est prise en charge dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Un administrateur de conformité ou un administrateur ib peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs dans Microsoft Teams. Les stratégies IB peuvent être utilisées pour des situations comme celles-ci :
+Microsoft Purview Information Barriers (IB) est pris en charge dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Un administrateur de conformité ou un administrateur ib peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs dans Microsoft Teams. Les stratégies IB peuvent être utilisées pour des situations comme celles-ci :
 
 - L’utilisateur du groupe de commerçants de jour ne doit pas communiquer ni partager de fichiers avec l’équipe marketing
 - Le personnel financier travaillant sur des informations confidentielles de l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de son organisation

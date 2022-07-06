@@ -18,16 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: edf5d42421aa9fb0c54d0121655e3a31d4a729f6
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078763"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629946"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 De nombreux aspects du comportement de protection contre la perte de données (DLP) des points de terminaison sont contrôlés par des paramètres configurés de manière centralisée. Les paramètres sont appliqués à toutes les stratégies DLP pour les appareils.
 
@@ -63,7 +61,7 @@ Avant de commencer, vous devez configurer vos paramètres DLP.
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
 
-L’analyse et la protection de classification avancées permettent au service de classification de données basé sur le cloud Microsoft Purview, plus avancé, d’analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti des techniques de classification telles que la classification de [correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), les [entités nommées](named-entities-learn.md) et les [classificateurs pouvant être formés](classifier-learn-about.md) dans vos stratégies DLP.
+L’analyse et la protection de classification avancées permettent au service de classification de données basé sur le cloud Microsoft Purview, plus avancé, d’analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti des techniques de classification telles que la classification de [correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) et des [entités nommées](named-entities-learn.md) dans vos stratégies DLP.
 
 Lorsque la classification avancée est activée, le contenu est envoyé de l’appareil local aux services cloud à des fins d’analyse et de classification. Si l’utilisation de la bande passante est un problème, vous pouvez définir une limite sur la quantité pouvant être utilisée sur une plage de 24 heures. La limite est configurée dans les paramètres DLP du point de terminaison et est appliquée par appareil. Si vous définissez une limite d’utilisation de la bande passante et qu’elle est dépassée, DLP cesse d’envoyer le contenu utilisateur au cloud. À ce stade, la classification des données se poursuit localement sur l’appareil, mais la classification utilisant la correspondance exacte des données, les entités nommées et les classificateurs pouvant être entraînés n’est pas disponible. Lorsque l’utilisation cumulative de la bande passante redevient inférieure à la limite définie sur la plage de 24 heures, la communication avec les services cloud reprend.
 

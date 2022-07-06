@@ -1,5 +1,5 @@
 ---
-title: Modifier des modèles d’évaluation dans le Gestionnaire de conformité Microsoft
+title: Modifier des modèles d’évaluation dans le Gestionnaire de conformité Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,17 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment modifier des modèles d’évaluation dans le Gestionnaire de conformité Microsoft.
-ms.openlocfilehash: 589e13e766e35d38eed985a0e7bb9e21544c370d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Découvrez comment modifier des modèles d’évaluation dans le Gestionnaire de conformité Microsoft Purview.
+ms.openlocfilehash: f21ff61f6bb06f00d1db8381e3760e7c4b5343aa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758528"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630408"
 ---
-# <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modifier des modèles d’évaluation dans le Gestionnaire de conformité Microsoft
+# <a name="modify-assessment-templates-in-microsoft-purview-compliance-manager"></a>Modifier des modèles d’évaluation dans le Gestionnaire de conformité Microsoft Purview
 
-Lorsque vous travaillez avec des évaluations dans le Gestionnaire de conformité, vous pouvez modifier un modèle d’évaluation que vous avez créé. Le processus est similaire au processus de [création de modèle](compliance-manager-templates-create.md), en ce que vous allez charger un fichier Excel mis en forme avec vos données de modèle.
+Lorsque vous travaillez avec des évaluations dans le Gestionnaire de conformité, vous pouvez modifier un modèle d’évaluation que vous avez créé. Le processus est similaire au processus de [création de modèle](compliance-manager-templates-create.md) , dans le cas où vous allez charger un fichier Excel mis en forme avec vos données de modèle.
 
 Toutefois, il existe des détails à prendre en compte lorsque vous mettez en forme votre fichier avec des modifications apportées aux données de modèle existantes. **Nous vous recommandons de consulter attentivement ces instructions pour vous assurer que vous ne remplacez pas les données existantes que vous souhaitez conserver.**
 
@@ -103,8 +103,8 @@ Lorsque vous importez votre feuille de calcul dans le modèle, votre contrôle e
 Une fois votre fichier Excel terminé et enregistré, procédez comme suit.
 
 1. Rouvrez la page du modèle d’évaluation et sélectionnez votre modèle. Dans la page de détails de votre modèle, sélectionnez **Modifier le modèle** pour lancer l’Assistant modification.
-2. Dans **l’écran Télécharger fichier**, **sélectionnez Parcourir** pour rechercher et charger votre fichier Excel.
-3. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier chargé. Sélectionnez **Suivant** pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier**).
+2. Dans l’écran **Charger un fichier** , **sélectionnez Parcourir** pour rechercher et charger votre fichier Excel.
+3. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier chargé. Sélectionnez **Suivant** pour continuer (si vous devez modifier le fichier, **sélectionnez Charger un autre fichier**).
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se produit si la mise en forme de votre feuille de calcul est incorrecte ou s’il existe des informations non valides dans certains champs.
 
 4. L’écran **Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant**.

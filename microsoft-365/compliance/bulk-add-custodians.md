@@ -14,27 +14,25 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez l’outil d’importation en bloc pour ajouter rapidement plusieurs consignatateurs et leurs sources de données associées à un cas dans Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: a9274ebd01a034af82eec510b4e16534150e2216
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez l’outil d’importation en bloc pour ajouter rapidement plusieurs consignats et leurs sources de données associées à un cas dans Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: f50304711b12cbcf0b42f0cb185d29d085924108
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097797"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626862"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>Importer des consignats dans un cas eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Pour les cas Microsoft Purview eDiscovery (Premium) qui impliquent de nombreux consignats, vous pouvez importer plusieurs consignatateurs à la fois à l’aide d’un fichier CSV qui contient les informations nécessaires pour les ajouter à un cas. L’outil des consignats d’importation valide également le fichier CSV avant la création du travail d’importation. Cela signifie que vous pouvez corriger toutes les erreurs dans le fichier CSV au lieu d’attendre que le travail d’importation soit terminé avant d’apprendre qu’il existe des erreurs qui empêchent l’ajout d’un consignateur au cas.
+Pour les cas Microsoft Purview eDiscovery (Premium) qui impliquent de nombreux consignateurs, vous pouvez importer plusieurs consignats à la fois à l’aide d’un fichier CSV qui contient les informations nécessaires pour les ajouter à un cas. L’outil des consignats d’importation valide également le fichier CSV avant la création du travail d’importation. Cela signifie que vous pouvez corriger toutes les erreurs dans le fichier CSV au lieu d’attendre que le travail d’importation soit terminé avant d’apprendre qu’il existe des erreurs qui empêchent l’ajout d’un consignateur au cas.
 
 ## <a name="before-you-import-custodians"></a>Avant d’importer des consignatateurs
 
-- Vous pouvez importer un maximum de 1 000 consignats (lignes) par fichier CSV.
+- Vous pouvez importer un maximum de 1 000 consignats (lignes) par fichier CSV. Notez que l’importation simultanée de 1 000 consignats peut entraîner des erreurs de délai d’expiration et certains consignatateurs risquent d’échouer à l’importation. Pour corriger ce problème, répétez l’importation et les consignataires ayant échoué doivent être importés. Pour éviter les délais d’expiration, nous vous recommandons d’importer 200 consignatateurs à la fois.
 
 - Vous pouvez associer jusqu’à 500 sources de données pour chaque dépositaire.  
 
-- Vous pouvez uniquement importer des consignatateurs qui font partie des Azure Active Directory de votre organisation.
+- Vous pouvez uniquement importer des consignatateurs qui font partie d’Azure Active Directory de votre organisation.
 
 - Chaque consigna ateur doit avoir une adresse e-mail unique.
 
@@ -42,9 +40,9 @@ Pour les cas Microsoft Purview eDiscovery (Premium) qui impliquent de nombreux c
 
 ## <a name="import-custodians"></a>Importer des consignats
 
-1. Ouvrez le cas eDiscovery (Premium) et sélectionnez l’onglet **Sources de données**.
+1. Ouvrez le cas eDiscovery (Premium) et sélectionnez l’onglet **Sources de données** .
 
-2. Cliquez sur **Ajouter des** **consignats** De source  >  de donnéesImport.
+2. Cliquez sur Ajouter des **consignatateurs d’importation** de **source** >  de données.
 
 3. Dans la page De l’Assistant **Obtention d’un modèle** , cliquez sur **Télécharger le modèle CSV** pour télécharger un fichier CSV de modèle de dépôt.
 
@@ -52,9 +50,9 @@ Pour les cas Microsoft Purview eDiscovery (Premium) qui impliquent de nombreux c
 
 4. Ajoutez les informations de garde au fichier CSV et enregistrez-les sur votre ordinateur local. Pour plus d’informations sur les propriétés requises dans le fichier CSV, consultez la section fichier [CSV du consignateur](#custodian-csv-file) .
 
-5. Une fois que vous avez préparé le fichier CSV avec les informations de conservation, revenez à l’onglet **Sources** de données, puis cliquez à nouveau sur Ajouter **des consignatateurs** De **source** >  de donnéesImport.
+5. Une fois que vous avez préparé le fichier CSV avec les informations de conservation, revenez à l’onglet **Sources** de données, puis cliquez à nouveau sur Ajouter **des consignatateurs d’importation** de **source** >  de données.
 
-6. Dans la **page Télécharger’Assistant Fichier CSV**, cliquez sur **Télécharger fichier csv**, puis chargez le fichier CSV qui contient les informations de conservation.
+6. Dans la page de l’Assistant **Chargement de fichier CSV** , cliquez sur **Charger le fichier csv** , puis chargez le fichier CSV qui contient les informations de conservation.
 
    Après avoir chargé le fichier CSV, l’Assistant Importation valide le fichier CSV. S’il existe des erreurs de validation, l’Assistant affiche une bannière d’erreur avec un lien pour afficher les erreurs.
 
@@ -64,7 +62,7 @@ Pour les cas Microsoft Purview eDiscovery (Premium) qui impliquent de nombreux c
 
 7. Une fois le fichier CSV validé, cliquez sur **Suivant** , puis sur **Importer** pour démarrer le travail d’importation.
 
-Après avoir démarré le travail d’importation, eDiscovery (Premium) effectue les opérations suivantes :
+Une fois que vous avez démarré le travail d’importation, eDiscovery (Premium) effectue les opérations suivantes :
 
 - Crée un travail nommé **BulkAddCustodian** sous l’onglet **Travaux** du cas.
 
@@ -84,7 +82,7 @@ Après avoir téléchargé le modèle de consignatateur CSV, vous pouvez ajouter
 |**Exchange activé** | Valeur TRUE/FALSE à inclure ou à ne pas inclure dans la boîte aux lettres du consignateur.      |
 |**OneDrive activé** | Valeur TRUE/FALSE à inclure ou non dans le compte OneDrive Entreprise du consignat. |
 |**Is OnHold**        | Valeur TRUE/FALSE pour indiquer si les sources de données du consignateur doivent être mises en attente. <sup>1</sup>     |
-|**Type de charge de travail 1**         |Valeur de chaîne indiquant le type de source de données à associer au consignateur. Les valeurs admises sont les suivantes : <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- <sup>TeamsMailbox2</sup><br/>- YammerMailbox2.<sup></sup> Les valeurs précédentes de ces types de charge de travail respectent la casse. Le fichier CSV contient des colonnes pour trois types de charge de travail et leurs emplacements de charge de travail correspondants. Vous pouvez ajouter un total de 500 types et emplacements de charge de travail.|
+|**Type de charge de travail 1**         |Valeur de chaîne indiquant le type de source de données à associer au consignateur. Les valeurs admises sont les suivantes : <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<sup>2</sup><br/>- YammerMailbox<sup>2</sup>. Les valeurs précédentes de ces types de charge de travail respectent la casse. Le fichier CSV contient des colonnes pour trois types de charge de travail et leurs emplacements de charge de travail correspondants. Vous pouvez ajouter un total de 500 types et emplacements de charge de travail.|
 |**Emplacement de la charge de travail 1**     | Selon votre type de charge de travail, il s’agit de l’emplacement de la source de données. Par exemple, l’adresse e-mail d’une boîte aux lettres Exchange ou l’URL d’un site SharePoint. |
 |||
 

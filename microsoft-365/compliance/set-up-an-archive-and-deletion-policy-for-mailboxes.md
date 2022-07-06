@@ -23,16 +23,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Comment créer une stratégie d’archivage et de suppression mrm (Messaging Records Management) personnalisée pour déplacer automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 9ea642dc9d6aa4e66938703b45a8af0bab53476f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7002f28d5926ac02cf01e7ab26b02cddfbd58404
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012999"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626048"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personnaliser une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Les administrateurs Microsoft Purview peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la [boîte aux lettres d’archivage](archive-mailboxes.md) d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres.
 
@@ -83,7 +81,7 @@ Dans cette étape, vous allez créer les trois balises de rétention personnalis
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (étiquette personnalisée pour le dossier Éléments supprimés)
 
-Pour créer de nouvelles balises de rétention, vous allez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange dans</a> votre organisation Exchange Online. Veillez à utiliser la version classique de l’EAC.
+Pour créer de nouvelles balises de rétention, vous allez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange (EAC)</a> dans votre organisation Exchange Online. Veillez à utiliser la version classique de l’EAC.
   
 1. Accédez à [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) et connectez-vous à l’aide de vos informations d’identification.
   
@@ -99,7 +97,7 @@ Tout d’abord, vous allez créer une balise de stratégie par défaut (DPT) d�
 
 2. Dans la **nouvelle balise appliquée automatiquement à la page de boîte aux lettres entière (par défaut),** renseignez les champs suivants : 
 
-    ![Paramètres pour créer une balise de stratégie d’archive par défaut.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Paramètres permettant de créer une balise de stratégie d’archivage par défaut.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
    1. **Nom** Tapez un nom pour la nouvelle balise de rétention. 
 
@@ -121,7 +119,7 @@ Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une st
 
 2. Dans la **nouvelle balise appliquée automatiquement à la page de boîte aux lettres entière (par défaut),** renseignez les champs suivants : 
 
-    ![Paramètres créer une balise de stratégie par défaut de suppression.](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Paramètres permettant de créer une balise de stratégie par défaut de suppression.](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
    1. **Nom** Tapez un nom pour la nouvelle balise de rétention. 
 
@@ -143,7 +141,7 @@ La dernière balise de rétention à créer est une balise de stratégie de rét
 
 2. Dans la **nouvelle balise appliquée automatiquement à une page de dossiers par défaut** , renseignez les champs suivants :
 
-    ![Paramètres créer une balise de stratégie de rétention pour le dossier Éléments supprimés.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Paramètres permettant de créer une balise de stratégie de rétention pour le dossier Éléments supprimés.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **Nom** Tapez un nom pour la nouvelle balise de rétention. 
 

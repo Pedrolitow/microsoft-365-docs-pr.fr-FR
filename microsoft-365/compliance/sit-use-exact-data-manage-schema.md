@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier ou supprimer votre schéma de correspondance exacte des données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29cfefbd6bf9bb9f92fe5ed7664575ec75adfa12
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fb8a9d014bb4654ce39b0bb6312f8b20cd6d781e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014671"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629142"
 ---
 # <a name="manage-your-exact-data-match-schema"></a>Gérer votre schéma de correspondance exacte des données
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="editing-the-schema-for-edm-based-classification-manually"></a>Modification manuelle du schéma pour la classification basée sur EDM
 
@@ -37,7 +35,7 @@ Si vous souhaitez apporter des modifications à votre schéma EDM, par exemple l
 
 1. Modifiez votre fichier **edm.xml** (il s’agit du fichier décrit dans le [schéma Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)).
 
-2. [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. Pour mettre à jour votre schéma de base de données, exécutez la commande suivante :
 
@@ -65,7 +63,7 @@ Si vous souhaitez apporter des modifications à votre schéma EDM, par exemple l
 
 Si vous souhaitez supprimer le schéma que vous utilisez pour la classification basée sur EDM, procédez comme suit :
 
-1. [Connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [Se connecter à Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Exécutez la commande suivante, en remplaçant le nom du magasin de données « dossiers des patients » par celui que vous souhaitez supprimer (à l’aide du magasin patientrecords comme exemple) :
 
