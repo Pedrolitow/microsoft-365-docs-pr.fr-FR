@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: 32f491e1a124bacf50f0efa553f6b141c08409b9
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5a1239f84e801c6327eb18c1049e410cc0859bdb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489110"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631769"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 
@@ -40,38 +40,48 @@ Cet objectif est axé sur la création d’une protection pour tous les PC et Ma
 
 Il est essentiel de vous assurer que vos utilisateurs de première ligne suivent ces instructions afin que les fonctionnalités de sécurité minimales soient configurées sur tous les appareils BYOD.
 
-## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
+## <a name="windows-10-or-11"></a>[Windows 10 ou 11](#tab/Windows10-11)
 
-**Activer le chiffrement d’appareil**<p>
+## <a name="windows-10-or-11"></a>Windows 10 ou 11
+
+### <a name="turn-on-device-encryption"></a>Activer le chiffrement d’appareil
+
 Le chiffrement d’appareil est disponible sur un large éventail d’appareils Windows et permet de protéger vos données en les chiffrant. Si vous activez le chiffrement de l’appareil, seules les personnes autorisées pourront accéder à votre appareil et à vos données. Pour obtenir des instructions, consultez [activer le chiffrement d’appareil](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) .
 
  Si le chiffrement de l’appareil n’est pas disponible sur votre appareil, vous pouvez activer le [chiffrement BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) standard à la place. (BitLocker n’est pas disponible sur Windows 10 Home edition.) 
 
-**Protéger votre appareil avec Windows Secutity**<p>
-Si vous avez Windows 10, vous obtenez la dernière protection antivirus avec Windows Security. Lorsque vous démarrez Windows 10 pour la première fois, Windows Security est activé et vous aide activement à protéger votre PC en recherchant les programmes malveillants, les virus et les menaces de sécurité. Windows Security utilise une protection en temps réel pour analyser tout ce que vous téléchargez ou exécutez sur votre PC.
+### <a name="protect-your-device-with-windows-security"></a>Protéger votre appareil avec Windows Secutity
+
+Si vous avez Windows 10 ou 11, vous obtenez la dernière protection antivirus avec Windows Security. Lorsque vous démarrez Windows 10 pour la première fois, Windows Security est activé et vous aide activement à protéger votre PC en recherchant les programmes malveillants, les virus et les menaces de sécurité. Windows Security utilise une protection en temps réel pour analyser tout ce que vous téléchargez ou exécutez sur votre PC.
 
 Windows Update télécharge automatiquement les mises à jour de sécurité Windows pour assurer la sécurité de votre PC et le protéger contre les menaces.
 
 Si vous disposez d’une version antérieure de Windows et que vous utilisez Microsoft Security Essentials, il est judicieux de passer à Windows Security. Pour plus d’informations, consultez [protéger mon appareil avec Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-**Activer le Pare-feu Windows**<p>
-Vous devez toujours exécuter le Pare-feu Windows même si un autre pare-feu déjà activé. La désactivation du Pare-feu Windows peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable(s) aux accès non autorisés. Pour obtenir des instructions, consultez [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off).
+### <a name="turn-on-windows-defender-firewall"></a>Activation du pare-feu Windows Defender
+
+Vous devez toujours exécuter le Pare-feu Windows Defender même si un autre pare-est activé. La désactivation du Pare-feu Windows Defender peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable(s) aux accès non autorisés. Pour obtenir des instructions, consultez [Activer ou désactiver le Pare-feu Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off).
 
 ## <a name="next-mission"></a>Prochaine mission
 
 OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
 
-## <a name="mac"></a>[Mac](#tab/Mac)
+## <a name="macos"></a>[MacOS](#tab/macOS)
 
-**Utiliser FileVault pour chiffrer votre disque Mac**<p>
+## <a name="macos"></a>macOS
+
+### <a name="use-filevault-to-encrypt-your-mac-disk"></a>Utiliser FileVault pour chiffrer votre disque Mac
+
 Le chiffrement du disque protège les données en cas de perte ou de vol des appareil. Le chiffrement intégral du disque FileVault permet d’empêcher les accès non autorisés aux informations sur votre disque de démarrage. Pour obtenir des instructions, consultez [Utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac.](https://support.apple.com/HT204837)
 
-**Protéger votre Mac contre les programmes malveillants**<p>
+### <a name="protect-your-mac-from-malware"></a>Protéger votre Mac contre les programmes malveillants
+
 Microsoft vous recommande d’installer et d’utiliser un antivirus fiable sur votre Mac. Consultez l’article suivant pour obtenir la liste des choix suivants : [meilleur antivirus Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
 Vous pouvez également réduire le risque de logiciels malveillants en utilisant des logiciels provenant uniquement de sources fiables. Les paramètres des préférences Sécurité et confidentialité vous permettent de spécifier les sources des logiciels installés sur votre Mac. Pour plus d’informations, consultez [Protéger votre Mac contre les programmes malveillants](https://support.apple.com/kb/PH25087).
 
-**Activer la protection pare-feu**<p>
+### <a name="turn-on-firewall-protection"></a>Activez la protection du pare-feu
+
 Utilisez les paramètres du pare-feu pour protéger votre Mac contre les contacts indésirables émanant d’autres ordinateurs lorsque vous êtes connecté à Internet ou à un réseau. Sans cette protection, votre Mac peut être plus vulnérable aux accès non autorisés. Pour obtenir des instructions, consultez [À propos de pare-feu d’applications](https://support.apple.com/HT201642).
 
 ## <a name="next-mission"></a>Prochaine mission

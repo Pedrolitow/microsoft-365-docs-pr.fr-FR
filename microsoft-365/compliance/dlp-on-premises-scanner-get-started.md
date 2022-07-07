@@ -1,5 +1,5 @@
 ---
-title: Prise en main du scanner local de protection contre la perte de données Microsoft 365
+title: Prise en main du scanner local de protection contre la perte de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,17 +19,17 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Configurer un scanneur local de protection contre la perte de données Microsoft 365
-ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: Configurer un scanner local de prévention des pertes de données
+ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159482"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625432"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Prise en main du scanneur local de protection contre la perte de données(préversion)
 
-Cet article décrit les conditions préalables et la configuration du scanneur de protection contre la perte de données Microsoft 365.
+Cet article vous guide à travers les conditions préalables et la configuration du scanneur local de protection contre la perte de données Microsoft Purview.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -60,14 +60,14 @@ Les données du scanneur local de protection contre la perte de données peuvent
 
 Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -100,7 +100,7 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
    > [!IMPORTANT]
    > N'oubliez pas que l'analyseur exécute une analyse delta du référentiel par défaut et que les fichiers qui ont déjà été analysés lors du cycle d'analyse précédent seront ignorés, sauf si le fichier a été modifié ou si vous avez lancé une nouvelle analyse complète. Une nouvelle analyse complète peut être lancée à l'aide de l'option **Analyser tous les fichiers** dans l'interface utilisateur ou en exécutant **Start-AIPScan-Reset**.
 
-6.  Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365.
+6.  Ouvrez la page [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Portail de conformité Microsoft Purview.
 
 7. Choisissez **Créer une stratégie** et créez une stratégie DLP de test. Consultez [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md) si vous avez besoin d’aide pour créer une stratégie. N’oubliez pas de l’exécuter à l’essai jusqu’à ce que vous soyez à l’aise avec cette fonctionnalité. Utilisez les paramètres suivants pour votre stratégie :
     1. Limitez la règle du scanneur local de protection contre la perte de données à des emplacements spécifiques si nécessaire. Si vous définissez les **emplacements** comme **Tous**, tous les fichiers analysés par le scanneur seront soumis à la règle de correspondance et d'application du DLP.
@@ -124,7 +124,7 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
 ### <a name="viewing-dlp-on-premises-scanner-alerts-in-dlp-alerts-management-dashboard"></a>Affichage des alertes du scanneur local de protection contre la perte de données dans le tableau de bord de Gestion des alertes DLP
 
-1. Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365, puis sélectionnez **Alertes**.
+1. Ouvrez la page [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le **Portail de conformité Microsoft Purview**, puis sélectionnez Alertes.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
@@ -133,7 +133,7 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 > [!NOTE]
 > Le scanneur local nécessite que l’audit soit activé. L’audit Microsoft 365 est activé par défaut.
 
-1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
+1. Ouvrez la [page Classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le Portail de conformité Microsoft Purview, puis choisissez Explorateur d’activités.
 
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos emplacements de scanneur local.
 
