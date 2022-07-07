@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: b0c9e5793ec0ffc97cbbac0308a7e362da279e1b
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057712"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663640"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -174,10 +174,90 @@ Si des alertes similaires ont déjà été classifiées dans le passé, vous pou
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Exemple de sélection de recommandations pour une alerte":::
 
-**L’onglet Recommandations** fournit des actions et des conseils à l’étape suivante pour l’examen, la correction et la prévention. Voici un exemple.
+**L’onglet Recommandations** fournit les actions et conseils suivants pour l’examen, la correction et la prévention. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Exemple de recommandations d’alerte":::
 
+ 
+## <a name="suppress-an-alert"></a>Supprimer une alerte
+
+En tant qu’analyste soc (Security Operations Center), l’un des principaux problèmes consiste à trier le nombre d’alertes déclenchées quotidiennement. Pour les alertes de priorité inférieure, un analyste est toujours requis pour trier et résoudre l’alerte qui tend à être un processus manuel. Le temps d’un analyste SOC est précieux, car il souhaite se concentrer uniquement sur les alertes de gravité élevée et de priorité élevée.
+
+La suppression des alertes permet d’ajuster et de gérer les alertes à l’avance. Cela simplifie la file d’attente des alertes et permet de gagner du temps en masquant ou en résolvant automatiquement les alertes, chaque fois qu’un comportement organisationnel attendu se produit et que les conditions de règle sont remplies. 
+
+Vous pouvez créer des conditions de règle basées sur des « types de preuves » tels que des fichiers, des processus, des tâches planifiées et de nombreux autres types de preuves qui déclenchent l’alerte. Après avoir créé la règle, l’utilisateur peut appliquer la règle sur l’alerte sélectionnée ou sur tout type d’alerte qui remplit les conditions de règle pour supprimer l’alerte. 
+
+> [!NOTE]
+> La suppression des alertes n’est pas recommandée. Toutefois, dans certaines situations, une application métier interne connue ou des tests de sécurité déclenchent une activité attendue et vous ne souhaitez pas voir ces alertes. Vous pouvez donc créer une règle de suppression pour l’alerte. 
+
+### <a name="create-rule-conditions-to-suppress-alerts"></a>Créer des conditions de règle pour supprimer des alertes
+
+Pour créer une règle de suppression pour les alertes :
+
+1. Sélectionnez l’alerte examinée. Dans la page d’alerte principale, sélectionnez **Créer une règle de suppression** dans la section Détails du résumé de la page d’alerte. 
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Capture d’écran de l’action Créer une règle de séparation.":::
+
+2. Dans le volet **Créer une règle de suppression** , sélectionnez **uniquement ce type d’alerte** pour appliquer la règle à l’alerte sélectionnée.
+
+    Toutefois, pour appliquer la règle sur n’importe quel type d’alerte qui répond aux conditions de règle, sélectionnez **N’importe quel type d’alerte en fonction des conditions IOC**.
+ 
+    Les EIC sont des indicateurs tels que des fichiers, des processus, des tâches planifiées et d’autres types de preuves qui déclenchent l’alerte.
+     
+3. Dans la section **IOCs** , sélectionnez **N’importe quel IOC** pour supprimer l’alerte, quelle que soit la « preuve » à l’origine de l’alerte. 
+
+    Pour définir plusieurs conditions de règle, **sélectionnez Choisir les E/S**. Utilisez **AND**, **OU** et les options de regroupement pour créer une relation entre ces plusieurs « types de preuves » à l’origine de l’alerte.
+ 
+    1. Par exemple, dans la section **Conditions** , sélectionnez le **rôle d’entité** de preuve de déclenchement : Déclencheur, **Égal à** , puis sélectionnez le type de preuve dans la liste déroulante. 
+
+    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Capture d’écran de la liste déroulante des types de preuves." lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+
+    2. Toutes les propriétés de cette « preuve » sont automatiquement renseignées en tant que nouveau sous-groupe dans les champs respectifs ci-dessous.
+    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Capture d’écran des propriétés du remplissage automatique des preuves." lightbox="../../media/investigate-alerts/properties-evidence.png" :::
+
+    > [!NOTE]
+    > Les valeurs de condition ne respectent pas la casse. 
+
+    3. Vous pouvez modifier et/ou supprimer les propriétés de cette « preuve » en fonction de vos besoins (à l’aide de caractères génériques, quand cela est pris en charge).
+
+    4. Outre les fichiers et les processus, le script AMSI, l’événement WMI et les tâches planifiées sont quelques-uns des types de preuves que vous pouvez sélectionner dans la liste déroulante des types de preuves.
+    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Capture d’écran d’autres types de preuves." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
+
+    5. Pour ajouter un autre IOC, cliquez sur **Ajouter un filtre**. 
+    > [!NOTE]
+    > L’ajout d’au moins un IOC à la condition de règle est nécessaire pour supprimer tout type d’alerte.
+    
+4. Vous pouvez également sélectionner **Remplir automatiquement toutes les E/S associées à l’alerte 7** dans la section **IOC** pour ajouter tous les types de preuves liés à l’alerte et leurs propriétés à la fois dans la section **Conditions** .
+    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Capture d’écran du remplissage automatique de toutes les E/S liées aux alertes." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
+
+5. Dans la section **Étendue** , définissez l’étendue dans la sous-section **Conditions** en sélectionnant un appareil spécifique, plusieurs appareils, groupes d’appareils, l’ensemble de l’organisation ou par utilisateur.
+    > [!NOTE]
+    > Vous devez avoir Administration autorisation lorsque **l’étendue** est définie uniquement pour **l’utilisateur**. Administration autorisation n’est pas requise lorsque **l’étendue** est définie pour **l’utilisateur** avec **l’appareil**, les **groupes d’appareils**.
+
+:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Capture d’écran du volet Créer une règle de suppression : Conditions, Étendue, Action.":::
+ 
+6. Dans la section **Action** , effectuez l’action appropriée : **Masquer l’alerte** ou **Résoudre l’alerte**.
+    Entrez **Nom**, **Commentaire**, puis cliquez sur **Enregistrer**.
+
+7. **Empêchez le blocage des E/S par la suite :**<br>
+Une fois que vous avez enregistré la règle de suppression, dans la page de **création de la règle de suppression réussie** qui s’affiche, vous pouvez ajouter les IOC sélectionnés en tant qu’indicateurs à la « liste verte » et les empêcher d’être bloqués à l’avenir. <br>
+Toutes les E/S liées aux alertes s’affichent dans la liste. <br>
+Les E/S sélectionnées dans les conditions de suppression sont sélectionnées par défaut.
+      1. Par exemple, vous pouvez ajouter des fichiers à autoriser à la **preuve Select (IOC) à autoriser**. Par défaut, le fichier qui a déclenché l’alerte est sélectionné.
+      1. Entrez l’étendue de **l’étendue Select à appliquer**. Par défaut, l’étendue de l’alerte associée est sélectionnée.
+      1. Cliquez sur **Save (Enregistrer)**. À présent, le fichier n’est pas bloqué, car il figure dans la liste verte.
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Capture d’écran de la création d’une règle de suppression réussie. ":::
+
+8.  La nouvelle fonctionnalité d’alerte de suppression est disponible par défaut. <br> Toutefois, vous pouvez revenir à l’expérience précédente dans Microsoft 365 Defender portail en accédant à **Paramètres > points de terminaison > suppression d’alerte**, puis désactiver la **création de nouvelles règles de suppression activée** pour activer le basculement. 
+ 
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Capture d’écran du bouton bascule pour activer/désactiver la fonctionnalité de création de règles de suppression.":::
+
+9.  **Modifiez les règles existantes :** <br> Vous pouvez toujours ajouter ou modifier les conditions de règle et l’étendue des règles nouvelles ou existantes dans le portail Microsoft Defender, en sélectionnant la règle appropriée et en cliquant sur **Modifier la règle**.    
+    Pour modifier des règles existantes, **assurez-vous que la création de nouvelles règles de suppression activée** bascule est activée.         
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Capture d’écran de la règle de suppression de modification.":::
+  
 ## <a name="resolve-an-alert"></a>Résoudre une alerte
 
 Une fois que vous avez terminé l’analyse d’une alerte et qu’elle peut être résolue, accédez au volet **Gérer les alertes** pour l’alerte ou des alertes similaires et marquez l’état **comme Résolu** , puis classifiez-le comme **vrai positif** avec un type de menace, une **activité informationnelle, attendue** avec un type d’activité ou un **Faux positif**.
@@ -200,16 +280,16 @@ Si les deux sont vraies, SecOps marque l’alerte comme voyage légitime et la r
 
 Pour créer l’automatisation, vous aurez besoin d’un jeton d’API avant de pouvoir connecter Power Automate à Microsoft Defender for Cloud Apps.
 
-1. Cliquez sur **Paramètres**, sélectionnez **Extensions de sécurité**, puis cliquez sur **Ajouter un jeton** dans l’onglet **Jetons d’API**.
+1. Cliquez sur **Paramètres**, sélectionnez **Extensions de sécurité**, puis cliquez sur **Ajouter un jeton** dans l’onglet **Jetons d’API** .
 
 2. Indiquez un nom pour votre jeton, puis cliquez sur **Générer**. Enregistrez le jeton car vous en aurez besoin ultérieurement.
 
 ### <a name="create-an-automated-flow"></a>Créer un flux automatisé
 
-Regardez cette courte vidéo pour découvrir comment l’automatisation fonctionne efficacement pour créer un flux de travail fluide et comment connecter Power Automate à Defender pour le cloud Apps. 
+Regardez cette courte vidéo pour découvrir comment l’automatisation fonctionne efficacement pour créer un flux de travail fluide et comment connecter Power Automate à Defender pour Cloud Apps. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête](investigate-incidents.md).
 

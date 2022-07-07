@@ -1,5 +1,5 @@
 ---
-title: Centre d'administration Microsoft 365 Teams rapports d’utilisation des applications
+title: Centre d'administration Microsoft 365 rapports d’utilisation des applications Teams
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,29 +21,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez des insights sur les applications Microsoft Teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft Teams à partir des rapports Microsoft 365.
-ms.openlocfilehash: de12133d16cd2b53140ccf2fafafc76abc064776
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 22e176235a455b288e078cfd5cd135beff5d668d
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781772"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662995"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>rapports Microsoft 365 dans le Centre d’administration - utilisation de l’appareil Microsoft Teams
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation des appareils Microsoft Teams
 
-Le tableau de bord Microsoft 365 Rapports vous montre la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
+Le tableau de bord Rapports Microsoft 365 affiche la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
   
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Accéder au rapport Utilisation des applications Microsoft Teams
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton **Afficher plus** sur la carte d’activité Microsoft Teams.
+2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton **Afficher plus** dans la carte d’activité Microsoft Teams.
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpréter le rapport Utilisation des applications Microsoft Teams
 
-Vous pouvez afficher l’utilisation de l’appareil dans le rapport Teams en choisissant l’onglet **Utilisation de l’appareil**.<br/>![rapports Microsoft 365 - utilisation de l’appareil Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+Vous pouvez afficher l’utilisation de l’appareil dans le rapport Teams en choisissant l’onglet **Utilisation de l’appareil** .<br/>![Rapports Microsoft 365 - Utilisation des appareils Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-**Sélectionnez Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.  <br/> ![Teams rapport d’appareil utilisateur : choisissez des colonnes.](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+**Sélectionnez Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.  
 
-Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+![Rapport d’appareil utilisateur Teams : choisissez des colonnes.](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+
+Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. 
 
 Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
@@ -64,4 +66,4 @@ Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observe
 ## <a name="see-also"></a>Voir aussi
 [Rapport d’activité des utilisateurs de Microsoft Teams](../activity-reports/microsoft-teams-user-activity-preview.md) 
 
-[rapport d’activité d’utilisation Microsoft Teams](../activity-reports/microsoft-teams-usage-activity.md) 
+[Rapport d’activité d’utilisation de Microsoft Teams](../activity-reports/microsoft-teams-usage-activity.md) 

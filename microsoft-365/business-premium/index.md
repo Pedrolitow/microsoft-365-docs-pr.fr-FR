@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 2e8a5a5c9a1d4e9fcdcb75a3b7b9d4d6e3284e2f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3752393e32ab151edcaa8166eabe862ad3f90c2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634972"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663105"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Cybersécurité Microsoft 365 Business Premium &mdash; pour les petites entreprises
 
@@ -39,10 +39,6 @@ La tâche qui vous précède est la suivante : laissez Microsoft 365 Business Pr
 
 L’exécution de toutes les missions est le moyen le plus efficace de déjouer les pirates informatiques, de se protéger contre les ransomwares et de garantir que l’avenir de votre organisation est protégé avec les meilleures défenses de cybersécurité. C’est parti !
 
-Utilisez les onglets suivants pour découvrir chaque mission et comment configurer Microsoft 365 Business Premium sécurité.
-
-## <a name="fortify-your-environment"></a>[**Fortifier votre environnement**](#tab/Fortify)
-
 ## <a name="fortify-your-environment"></a>Fortifier votre environnement
 
 Dans ces premières missions, vous vous connectez et configurez vos murs de défense initiaux, en commençant par les protections d’accès au compte.
@@ -51,30 +47,7 @@ Dans ces premières missions, vous vous connectez et configurez vos murs de déf
 
 2. [**Augmenter les protections contre la cybersécurité**](m365bp-security-overview.md). Configurez des mesures de sécurité de première ligne critiques pour empêcher les cyberattaques.
 
-[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium protège vos applications, stockage de fichiers, courrier électronique, appareils et identités.":::](m365bp-setup-overview.md)
-
-## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
-
-Les conseils de ces missions sont basés sur la méthodologie de confiance zéro et aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy. Vous pouvez télécharger un résumé.
-
-Cliquez (ou appuyez) sur l’infographie pour afficher une version plus grande, ou [téléchargez une copie de l’affiche du playbook Cybersecurity](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) !
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Le playbook sur la cybersécurité" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[Obtenez le fichier PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>Comment Microsoft 365 Business Premium aide votre entreprise
-
-Microsoft 365 Business Premium est une solution complète de sécurité et de collaboration pour les petites et moyennes entreprises. [En savoir plus sur les avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
-
-## <a name="next-steps"></a>Prochaines étapes
-
-Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
-
-> [!NOTE]
-> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.yml).
-
-## <a name="train-your-team"></a>[**Former votre équipe**](#tab/Train)
+[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Diagramme illustrant vos missions avec Fortify Your Environment sélectionné.":::](m365bp-setup-overview.md)
 
 ## <a name="train-your-team"></a>Former votre équipe
 
@@ -86,30 +59,7 @@ Nous avons inclus un ensemble de missions ici avec certains objectifs qui doiven
 
 3. [**Collaborez et partagez en toute sécurité**](m365bp-collaborate-share-securely.md). Les objectifs de cette mission vous obligent à configurer le partage de fichiers sécurisé pour tous les membres de l’organisation.
 
-[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium protège vos applications, stockage de fichiers, e-mail, appareils et identités.":::](m365bp-devices-overview.md)
-
-## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
-
-Les conseils de ces missions sont basés sur la méthodologie de confiance zéro et aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy. Vous pouvez télécharger un résumé.
-
-Cliquez (ou appuyez) sur l’infographie pour afficher une version plus grande, ou [téléchargez une copie de l’affiche du playbook Cybersecurity](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) !
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Le playbook sur la cybersécurité" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[Obtenez le fichier PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>Comment Microsoft 365 Business Premium aide votre entreprise
-
-Microsoft 365 Business Premium est une solution complète de sécurité et de collaboration pour les petites et moyennes entreprises. [En savoir plus sur les avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
-
-## <a name="next-steps"></a>Prochaines étapes
-
-Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
-
-> [!NOTE]
-> Si un terme ou une directive n’est pas clair, consultez le [glossaire des termes](m365bp-glossary.yml).
-
-## <a name="safeguard-managed-devices"></a>[**Protéger les appareils gérés**](#tab/Safeguard)
+[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Diagramme illustrant vos missions avec l’option Entraîner votre équipe sélectionnée.":::](m365bp-devices-overview.md)
 
 ## <a name="safeguard-managed-devices"></a>Protéger les appareils gérés
 
@@ -117,7 +67,7 @@ Les appareils gérés sont plus sûrs, car ils sont surveillés pour détecter l
 
 - [**Configurez et sécurisez les appareils gérés**](m365bp-protect-devices.md). Prenez les mesures nécessaires pour sécuriser ces appareils afin qu’ils soient surveillés et protégés par l’organisation !
 
-[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium protège vos applications, stockage de fichiers, e-mail, appareils et identités.":::](m365bp-protect-devices.md)
+[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Diagramme décrivant vos missions avec les appareils gérés de protection sélectionnés.":::](m365bp-protect-devices.md)
 
 ## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
 
@@ -129,11 +79,11 @@ Cliquez (ou appuyez) sur l’infographie pour afficher une version plus grande, 
 
 [Obtenez le fichier PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>Comment Microsoft 365 Business Premium aide votre entreprise
+## <a name="learn-more-about-how-microsoft-365-business-premium-helps-your-business"></a>En savoir plus sur la façon dont Microsoft 365 Business Premium aide votre entreprise
 
 Microsoft 365 Business Premium est une solution complète de sécurité et de collaboration pour les petites et moyennes entreprises. [En savoir plus sur les avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 

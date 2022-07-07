@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produit dépend de la désaffectation des licences d’utilisateurs spécifiques ou d’un produit spécifique.
 ms.date: 06/23/2022
-ms.openlocfilehash: 87e62b8c39e5ba0a8f61caeea3560438a716881d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 956391e8eeda1d17fdba76cf406a0291d1850b6f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486173"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663501"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Annuler l’affectation de licences Microsoft 365 aux utilisateurs
 
@@ -48,9 +48,9 @@ Vous pouvez désattribuer des licences d’utilisateurs sur la page **Utilisateu
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Utiliser la page Licences pour annuler l’affectation des licences
 
-La page **Licences** vous permet d’attribuer ou de désaffecter des licences pour jusqu’à 20 utilisateurs à la fois. La page affiche les produits dont vous êtes propriétaire, le nombre de licences disponibles pour chaque produit et le nombre de licences attribuées sur le nombre total de licences disponibles. Le nombre de licences est un total agrégé de licences pour tous les abonnements pour le même nom de produit.
+La page **Licences** vous permet d’attribuer ou de désattribuer des licences pour jusqu’à 20 utilisateurs à la fois. La page affiche les produits que vous possédez, le nombre de licences disponibles pour chaque produit et le nombre de licences attribuées sur le nombre total de licences disponibles. Le nombre de licences est un total agrégé de licences pour tous les abonnements pour le même nom de produit.
 
-Par exemple, vous pouvez avoir un abonnement pour Microsoft 365 Business Premium qui a 5 licences, et un autre qui a 8 licences pour le même produit. La page **Licences** indique que vous disposez d’un total de 13 licences pour Microsoft 365 Business Premium sur tous vos abonnements. Cela est différent de ce que vous voyez sur la page **Vos produits** , qui affiche une ligne pour chaque abonnement que vous possédez, même s’ils concernent le même produit.
+Par exemple, vous pouvez avoir un abonnement pour Microsoft 365 Business Premium qui a 5 licences et un autre abonnement qui a 8 licences pour le même produit. La page **Licences** indique que vous disposez d’un total de 13 licences pour Microsoft 365 Business Premium sur tous vos abonnements. Cela est différent de ce que vous voyez sur la page **Vos produits** , qui affiche une ligne pour chaque abonnement que vous possédez, même s’ils concernent le même produit.
 
 ::: moniker range="o365-worldwide"
 
@@ -127,9 +127,9 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour annuler l’affectati
 - Pour savoir comment bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de sa licence et comment accéder aux données par la suite, consultez [Supprimer un ancien employé](../add-users/remove-former-employee.md).
 - Si vous supprimez la licence d’un utilisateur et que les applications Office sont toujours installées, il voit [des erreurs de produit et d’activation sans licence dans Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) lorsqu’il utilise des applications Office.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](../../managed-desktop/get-started/assign-licenses.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
+Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](assign-licenses-to-users.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 
 ## <a name="related-content"></a>Contenu associé
 

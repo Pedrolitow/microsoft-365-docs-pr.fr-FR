@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a89d90f462528631d97c4f2e81c24f6ffbcd4189
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: c8294d5e3ba9faf240d438f3e8c1c3df3a66b414
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573917"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662221"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité macOS avec la protection contre les falsifications
 
@@ -76,8 +76,9 @@ Vous pouvez configurer le mode de protection contre les falsifications en fourni
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Versions macOS prises en charge : Monterey (12), Big Sur (11), Catalina (10.15+)
-- Version minimale requise pour Defender pour point de terminaison : 101.49.25
+- Versions macOS prises en charge : Monterey (12), Big Sur (11), Catalina (10.15+).
+- Version minimale requise pour Defender pour point de terminaison : 101.70.19.
+- Vous devez être sur un canal de mise à jour hors production ([préversion ou bêta](/deployoffice/office-insider/deploy/microsoft-autoupdate)), tandis que la fonctionnalité de protection contre les falsifications est en préversion. Si vous êtes sur le canal de production, le mode de protection contre les falsifications configuré est ignoré.
 
 **Paramètres fortement recommandés :**
 
@@ -94,9 +95,49 @@ Il existe plusieurs façons de configurer la protection contre les falsification
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-Vérifiez que « tamper_protection » est défini sur « désactivé » pour observer le changement d’état.
+Vérifiez que « tamper_protection » est défini sur « désactivé » ou « audit » pour observer le changement d’état.
+Assurez-vous également que « release_ring » ne signale pas « Production ».
 
-![Image de la ligne de commande avec la protection contre les falsifications en mode désactiver](images/verify-tp.png)
+```bash
+mdatp health
+```
+
+```console
+healthy                                     : true
+health_issues                               : []
+licensed                                    : true
+engine_version                              : "1.1.19300.3"
+app_version                                 : "1.0.0"
+org_id                                      : "..."
+log_level                                   : "info"
+machine_guid                                : "..."
+release_ring                                : "InsiderFast"
+product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+cloud_enabled                               : true
+cloud_automatic_sample_submission_consent   : "safe"
+cloud_diagnostic_enabled                    : false
+passive_mode_enabled                        : false
+real_time_protection_enabled                : true
+real_time_protection_available              : true
+real_time_protection_subsystem              : "endpoint_security_extension"
+network_events_subsystem                    : "network_filter_extension"
+device_control_enforcement_level            : "audit"
+tamper_protection                           : "audit"
+automatic_definition_update_enabled         : true
+definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+definitions_updated_minutes_ago             : 5
+definitions_version                         : "1.369.896.0"
+definitions_status                          : "up_to_date"
+edr_early_preview_enabled                   : "disabled"
+edr_device_tags                             : []
+edr_group_ids                               : ""
+edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+conflicting_applications                    : []
+network_protection_status                   : "stopped"
+data_loss_prevention_status                 : "disabled"
+full_disk_access_enabled                    : true
+```
 
 ### <a name="manual-configuration"></a>Configuration manuelle
 
@@ -113,7 +154,46 @@ Vérifiez que « tamper_protection » est défini sur « désactivé » pour obs
 
 2. Vérifiez le résultat.
 
-    ![Image du résultat de la commande de configuration manuelle](images/result-manual-config.png)
+  ```bash
+  mdatp health
+  ```
+
+  ```console
+  healthy                                     : true
+  health_issues                               : []
+  licensed                                    : true
+  engine_version                              : "1.1.19300.3"
+  app_version                                 : "1.0.0"
+  org_id                                      : "..."
+  log_level                                   : "info"
+  machine_guid                                : "..."
+  release_ring                                : "InsiderFast"
+  product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+  cloud_enabled                               : true
+  cloud_automatic_sample_submission_consent   : "safe"
+  cloud_diagnostic_enabled                    : false
+  passive_mode_enabled                        : false
+  real_time_protection_enabled                : true
+  real_time_protection_available              : true
+  real_time_protection_subsystem              : "endpoint_security_extension"
+  network_events_subsystem                    : "network_filter_extension"
+  device_control_enforcement_level            : "audit"
+  tamper_protection                           : "block"
+  automatic_definition_update_enabled         : true
+  definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+  definitions_updated_minutes_ago             : 5
+  definitions_version                         : "1.369.896.0"
+  definitions_status                          : "up_to_date"
+  edr_early_preview_enabled                   : "disabled"
+  edr_device_tags                             : []
+  edr_group_ids                               : ""
+  edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+  edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+  conflicting_applications                    : []
+  network_protection_status                   : "stopped"
+  data_loss_prevention_status                 : "disabled"
+  full_disk_access_enabled                    : true
+  ```
 
 Notez que « tamper_protection » est maintenant défini sur « block ».
 
@@ -210,9 +290,7 @@ Le résultat affiche « block » si la protection contre les falsifications est 
 
 ![Image de la protection contre les falsifications en mode bloc](images/tp-block-mode.png)
 
-Vous pouvez également exécuter l’exécution complète `mdatp health` et rechercher le « tamper_protection » dans la sortie :
-
-![Image de la protection contre les falsifications en mode bloc](images/health-tp-audit.png)
+Vous pouvez également exécuter l’exécution complète `mdatp health` et rechercher le « tamper_protection » dans la sortie
 
 ## <a name="verify-tamper-protection-preventive-capabilities"></a>Vérifier les fonctionnalités préventives de protection contre les falsifications
 

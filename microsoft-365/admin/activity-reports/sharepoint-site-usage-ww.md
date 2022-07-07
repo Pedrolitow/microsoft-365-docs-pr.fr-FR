@@ -1,5 +1,5 @@
 ---
-title: Centre d'administration Microsoft 365 SharePoint rapports d’utilisation du site
+title: Centre d'administration Microsoft 365 rapports d’utilisation du site SharePoint
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,17 +21,17 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenez le rapport d’utilisation SharePoint site pour savoir combien de fichiers les utilisateurs stockent dans SharePoint sites, combien sont utilisés activement et le stockage total consommé.
-ms.openlocfilehash: a99884863db3ffc1f2577358abef6d287d01e2d1
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Obtenez le rapport d’utilisation du site SharePoint pour savoir combien de fichiers les utilisateurs stockent dans les sites SharePoint, combien sont utilisés activement et le stockage total consommé.
+ms.openlocfilehash: 0be00d712ba4a65ff14b10aadd6f74f2d5f82b43
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846990"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662699"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>rapports Microsoft 365 dans le Centre d’administration - utilisation du site SharePoint
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Rapports Microsoft 365 dans le centre d’administration - Utilisation du site SharePoint
 
-En tant qu’administrateur Microsoft 365, le tableau de bord Rapports affiche la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Par exemple, vous pouvez obtenir une vue générale de la valeur que vous obtenez de SharePoint en termes de nombre total de fichiers que les utilisateurs stockent dans SharePoint sites, du nombre de fichiers utilisés activement et du stockage consommé sur tous ces sites. Ensuite, vous pouvez explorer le rapport de l'utilisation du site SharePoint pour comprendre les tendances et les détails par niveau de site. 
+En tant qu’administrateur Microsoft 365, le tableau de bord Rapports vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Par exemple, vous pouvez obtenir une vue générale de la valeur que vous obtenez de SharePoint en termes de nombre total de fichiers que les utilisateurs stockent dans les sites SharePoint, du nombre de fichiers utilisés activement et du stockage consommé sur tous ces sites. Ensuite, vous pouvez explorer le rapport de l'utilisation du site SharePoint pour comprendre les tendances et les détails par niveau de site. 
 
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Comment accéder au Rapport Utilisation du site SharePoint
 
@@ -56,17 +56,17 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
   
 ## <a name="interpret-the-sharepoint-site-usage-report"></a>Interpréter le rapport d’utilisation du site SharePoint
 
-Vous pouvez afficher l’utilisation du site dans le rapport SharePoint en choisissant l’onglet **Utilisation du site**.
+Vous pouvez afficher l’utilisation du site dans le rapport SharePoint en choisissant l’onglet **Utilisation du site** .
 
-:::image type="content" alt-text="rapports Microsoft 365 - Rapport d’utilisation du site Microsoft SharePoint." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
+:::image type="content" alt-text="Rapports Microsoft 365 - Rapport d’utilisation du site Microsoft SharePoint." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
 
 **Sélectionnez Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.
 
-:::image type="content" alt-text="SharePoint rapport d’utilisation du site : choisissez des colonnes." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
+:::image type="content" alt-text="Rapport d’utilisation du site SharePoint : choisissez des colonnes." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
-Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter**. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. 
 
-Le **rapport d’utilisation du site SharePoint** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
+Le rapport **d’utilisation du site SharePoint** peut être consulté pour connaître les tendances des 7 derniers jours, 30 jours, 90 ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
 |Métrique|Description|
 |:-----|:-----|

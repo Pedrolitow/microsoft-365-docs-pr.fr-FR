@@ -16,29 +16,24 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 8301119b0169e0ee2ac56cc7a85b3037ccb75907
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 6b0c67aeac244b214e5c017511192225be05d454
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090561"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663193"
 ---
-# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord Threat & Vulnerability Management dans Microsoft Defender pour entreprises
+# <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Utiliser votre tableau de bord de gestion des vulnérabilités dans Microsoft Defender pour entreprises
 
-Microsoft Defender pour entreprises inclut un tableau de bord Threat & Vulnerability Management conçu pour économiser du temps et des efforts de votre équipe de sécurité. En plus de fournir un score d’exposition, vous pouvez également afficher des informations sur les appareils exposés et les recommandations de sécurité. Vous pouvez utiliser votre tableau de bord Threat & Vulnerability Management pour :
+Microsoft Defender pour entreprises inclut un tableau de bord de gestion des vulnérabilités conçu pour économiser du temps et des efforts de votre équipe de sécurité. En plus de fournir un score d’exposition, vous pouvez également afficher des informations sur les appareils exposés et les recommandations de sécurité. Vous pouvez utiliser votre tableau de bord de gestion des vulnérabilités & les menaces pour :
 
 - Afficher votre score d’exposition, qui est associé aux appareils de votre entreprise
-- Affichez vos principales recommandations de sécurité, telles que la résolution des problèmes de communication avec les appareils, l’activation de la protection pare-feu ou la mise à jour des définitions Antivirus Microsoft Defender
+- Affichez vos principales recommandations en matière de sécurité, telles que la résolution des problèmes de communication avec les appareils, l’activation de la protection pare-feu ou la mise à jour des définitions de l’Antivirus Microsoft Defender
 - Afficher les activités de correction, telles que les fichiers envoyés en quarantaine ou les vulnérabilités détectées sur les appareils
-
-Vous voulez voir comment cela fonctionne ? Regardez cette vidéo, qui décrit [Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
 
 [En savoir plus sur Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Didacticiels et simulations dans Microsoft Defender pour entreprises](mdb-tutorials.md)
 - [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md)

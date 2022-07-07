@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport Groupes Microsoft 365 pour obtenir des insights sur l’activité des groupes de votre organisation et voir combien de groupes sont créés et utilisés.
-ms.openlocfilehash: ec9f544214345de0cacd00580772867bd1e5312d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dce585ddb496be67b1045baa4b7cea0dc3b7fc24
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486272"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662677"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Rapports Microsoft 365 dans le Centre d’administration - Groupes Microsoft 365
 
@@ -48,7 +48,7 @@ Vous pouvez afficher les activations dans le rapport Office 365 en choisissant l
 
 :::image type="content" alt-text="Office 365 le rapport d’activité des groupes : choisissez des colonnes." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2 000 utilisateurs, pour filtrer et trier, vous devez exporter les données.
+Vous pouvez également exporter les données du rapport dans un fichier Excel .csv en sélectionnant le lien **Exporter** . Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. 
 
 Le rapport de **groupes** peut être consulté pour les tendances des 7 derniers jours, 30 jours, 90 jours ou 180 jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
 
