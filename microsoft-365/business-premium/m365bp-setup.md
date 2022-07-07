@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6edfd60b5f5a3d10200191cd676fb66fa72ec1ba
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556765"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686006"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -38,7 +38,7 @@ Assurez-vous de respecter les exigences suivantes avant de commencer votre proce
 | Abonnement | Microsoft 365 Business Premium ou Microsoft 365 campagnes <br/><br/> Pour démarrer une version d’évaluation ou acheter votre abonnement, consultez les articles suivants : <br/>- [Obtenir Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Obtenir Microsoft 365 campagnes](get-microsoft-365-campaigns.md) |
 | Autorisations  | Pour terminer le processus de configuration initiale, vous devez être Administrateur général. [En savoir plus sur les rôles d’administrateur](../admin/add-users/about-admin-roles.md). |
 | Configuration requise pour le navigateur | Microsoft Edge, Safari, Chrome ou Firefox. [En savoir plus sur les exigences du navigateur](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Système d’exploitation | **Windows** : Windows 11, Windows 10, Windows 8.1, Windows Server 2019 ou version ultérieure, ou Windows Server 2016<br/><br/>**macOS** : l’une des trois versions les plus récentes de macOS |
+| Système d’exploitation | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS** : l’une des trois versions les plus récentes de macOS <br/>Actuellement, Microsoft 365 Business Premium et la version autonome de Microsoft Defender entreprise ne prennent pas en charge les serveurs.  |
 
 > [!TIP]
 > Pour plus d’informations sur Microsoft 365, Office et la configuration système requise, consultez [Microsoft 365 et ressources Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).

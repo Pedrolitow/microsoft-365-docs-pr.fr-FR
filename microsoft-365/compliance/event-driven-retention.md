@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: 953661a63c961273d54fde1041e4d85c5d786c26
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac4e80872cbe377025e213a387c7be7f89a208b7
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622984"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685940"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
@@ -34,22 +34,22 @@ ms.locfileid: "66622984"
 Lorsque vous conservez du contenu, la période de rétention est souvent basée sur l’ancienneté du contenu. Par exemple, vous pouvez conserver des documents pendant sept ans à compter de leur création, puis les supprimer. Cependant, lorsque vous configurez [étiquettes de rétention](retention.md#retention-labels), vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement.
   
 Exemples d'utilisation de la rétention basée sur les événements :
-  
+
 - **Employés quittant l'organisation** Supposons que les dossiers des employés doivent être conservés pendant 10 ans à partir du moment où un employé quitte l'organisation. Après 10 ans, tous les documents relatifs à l'embauche, au rendement et au licenciement de cet employé doivent être éliminés. L'événement qui déclenche la période de rétention de 10 ans est le départ de l'employé de l'organisation. 
-    
+
 - **Expiration du contrat** Supposons que tous les enregistrements relatifs aux contrats doivent être conservés pendant cinq ans à compter de l'expiration du contrat. L'événement qui déclenche la période de conservation de cinq ans est l'expiration du contrat. 
-    
+
 - **Durée de vie des produits** Votre organisation a peut-être des exigences de rétention liées à la dernière date de fabrication de produits pour le contenu tel que des spécifications techniques. Dans ce cas, la dernière date de fabrication est l’événement qui déclenche la période de rétention. 
-    
-La rétention basée sur les événements est généralement utilisée dans le cadre d'un processus de gestion des documents. En d'autres termes :
+
+La rétention basée sur les événements, parfois également appelée « rétention pilotée par les événements », est généralement utilisée avec les processus de gestion des enregistrements. En d'autres termes :
 
 - Les étiquettes de rétention basées sur des événements marquent également généralement les éléments en tant qu'enregistrement, dans le cadre d'une solution de gestion des enregistrements. Pour plus d'informations, voir [En savoir plus sur la gestion des enregistrements](records-management.md).
 
 - Un document qui a été déclaré comme un enregistrement, mais dont l'événement déclencheur n'a pas encore eu lieu, est conservé indéfiniment. Tant qu’un événement n’a pas déclenché la période de rétention de ce document qui expire par la suite, les enregistrements ne peuvent pas être supprimés définitivement.
 
-- Les étiquettes de rétention basées sur des événements déclenchent généralement une révision de disposition à la fin de la période de rétention, afin qu'un gestionnaire d'enregistrements puisse manuellement réviser et éliminer le contenu. Pour plus d'informations, voir [Disposition du contenu](disposition.md).
+- Les étiquettes de rétention basées sur des événements déclenchent souvent une révision de destruction à la fin de la période de rétention, afin qu’un gestionnaire d’enregistrements puisse examiner et supprimer manuellement le contenu. Si vous souhaitez en savoir plus, consultez la page [Destruction de contenu](disposition.md).
 
-Une étiquette de rétention basée sur un événement a les mêmes fonctionnalités que n'importe quelle étiquette de rétention dans Microsoft 365. Pour plus d'informations, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention](retention.md).
+Une étiquette de rétention basée sur un événement a les mêmes fonctionnalités que n’importe quelle étiquette de rétention dans Microsoft Purview. Pour plus d’informations, voir [En savoir plus sur les stratégies et les étiquettes de rétention](retention.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Compréhension de la relation entre les types d’événements, les étiquettes, les événements et les ID d’élément
 
@@ -77,14 +77,14 @@ Il est important de comprendre que si vous ne spécifiez pas d'identifiant ou de
 
 Enfin, n’oubliez pas que chaque étiquette de rétention a ses propres paramètres de rétention. Dans cet exemple, ils indiquent tous 10 ans, mais il est possible qu’un événement déclenche des étiquettes de rétention dont la période de rétention est différente.
   
-## <a name="how-to-set-up-event-driven-retention"></a>Configuration des rétentions basées sur des événements
+## <a name="how-to-set-up-event-based-retention"></a>Comment configurer la rétention basée sur les événements
 
-Flux de travail général pour la rétention basée sur un événement :
+Flux de travail de haut niveau pour la rétention basée sur les événements :
   
-![Diagramme du flux de travail de la configuration des rétentions basées sur des événements.](../media/event-based-retention-process.png)
+![Diagramme de workflow pour la configuration de la rétention basée sur les événements.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Consultez [Gérer le cycle de vie des documents sauvegardés sur SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint afin d'appliquer automatiquement des étiquettes de rétention et exécuter la rétention basée sur un événement.
+> Consultez [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md) pour obtenir un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint pour appliquer automatiquement des étiquettes de rétention et implémenter la rétention basée sur les événements.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 

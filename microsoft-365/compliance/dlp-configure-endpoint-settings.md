@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629946"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686226"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -63,7 +63,7 @@ Avant de commencer, vous devez configurer vos paramètres DLP.
 
 L’analyse et la protection de classification avancées permettent au service de classification de données basé sur le cloud Microsoft Purview, plus avancé, d’analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti des techniques de classification telles que la classification de [correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) et des [entités nommées](named-entities-learn.md) dans vos stratégies DLP.
 
-Lorsque la classification avancée est activée, le contenu est envoyé de l’appareil local aux services cloud à des fins d’analyse et de classification. Si l’utilisation de la bande passante est un problème, vous pouvez définir une limite sur la quantité pouvant être utilisée sur une plage de 24 heures. La limite est configurée dans les paramètres DLP du point de terminaison et est appliquée par appareil. Si vous définissez une limite d’utilisation de la bande passante et qu’elle est dépassée, DLP cesse d’envoyer le contenu utilisateur au cloud. À ce stade, la classification des données se poursuit localement sur l’appareil, mais la classification utilisant la correspondance exacte des données, les entités nommées et les classificateurs pouvant être entraînés n’est pas disponible. Lorsque l’utilisation cumulative de la bande passante redevient inférieure à la limite définie sur la plage de 24 heures, la communication avec les services cloud reprend.
+Lorsque la classification avancée est activée, le contenu est envoyé de l’appareil local aux services cloud à des fins d’analyse et de classification. Si l’utilisation de la bande passante est un problème, vous pouvez définir une limite sur la quantité pouvant être utilisée sur une plage de 24 heures. La limite est configurée dans les paramètres DLP du point de terminaison et est appliquée par appareil. Si vous définissez une limite d’utilisation de la bande passante et qu’elle est dépassée, DLP cesse d’envoyer le contenu utilisateur au cloud. À ce stade, la classification des données se poursuit localement sur l’appareil, mais la classification utilisant la correspondance exacte des données, les entités nommées et les classificateurs pouvant être entraînés n’est pas disponible. Lorsque l'utilisation cumulée de la bande passante tombe en dessous de la limite de 24 heures glissantes, la communication avec les services cloud reprendra.
 
 Si l’utilisation de la bande passante n’est pas un problème, vous sélectionnez **Aucune limite** pour autoriser une utilisation illimitée de la bande passante.
 
@@ -251,9 +251,12 @@ Utiliser le format de nom de domaine complet du domaine de service sans la fin `
 
 Par exemple :
 
- `www.contoso.com` 
 
-Les caractères génériques ne sont pas pris en charge.
+| Input | Comportement de correspondance des URL |
+|---|---|
+| **CONTOSO.COM** |**Correspond au nom de domaine spécifié et à tout sous-site** : <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/toutsoussite1 <p>*://contoso.com/toutsoussite1/toutsoussite2 (etc.) <p>**Ne correspond pas aux sous-domaines ou aux domaines non spécifiés** : <p>*://toutsousdomaine.contoso.com <p>*://toutsousdomaine.contoso.com.AU |
+| ***.CONTOSO.COM** |**Correspond au nom de domaine spécifié, à tout sous-domaine et à tout site** : <p>*://contoso.com <p>*://contoso.com/toutsoussite <p>*://contoso.com/toutsoussite1/toutsoussite2 <p>*://toutsousdomaine.contoso.com/ <p>*://toutsousdomaine.contoso.com/toutsoussite/ <p>*://toutsousdomaine1.toutsousdomaine2.contoso.com/toutsoussite/ <p>*://toutsousdomaine1.toutsousdomaine2.contoso.com/toutsoussite1/toutsoussite2 (etc.) <p>**Ne correspond pas aux domaines non spécifiés** <p>*://toutsousdomaine.contoso.com.AU/ |
+| **`www.contoso.com`** |**Correspond au nom de domaine spécifié** : <p>`www.contoso.com` <p>**Ne correspond pas à des domaines ou sous-domaines non spécifiés** <p>*://toutsousdomaine.contoso.com/, dans ce cas, vous devez placer le nom de domaine FQDN lui-même `www.contoso.com`|
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Paramètres supplémentaires pour le point de terminaison DLP
 

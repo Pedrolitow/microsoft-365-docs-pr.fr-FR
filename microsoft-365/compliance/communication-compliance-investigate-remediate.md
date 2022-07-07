@@ -20,16 +20,16 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 39a30b7fcc853ac96d14df4fa04f9e727f98628c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
+ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686028"
+ms.locfileid: "66687123"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
-Une fois que vous avez configuré vos stratégies de conformité des communications, vous commencerez à recevoir des alertes dans le portail de conformité Microsoft Purview pour les problèmes de message qui correspondent à vos conditions de stratégie. Suivez les instructions de flux de travail ici pour examiner et corriger les problèmes d’alerte.
+Une fois que vous avez configuré vos [stratégies de conformité des communications](/microsoft-365/compliance/communication-compliance-policies), vous commencerez à recevoir des alertes dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com) pour les problèmes de message qui correspondent à vos conditions de stratégie. Suivez les instructions de flux de travail ici pour examiner et corriger les problèmes d’alerte.
 
 ## <a name="investigate-alerts"></a>Examiner des alertes
 

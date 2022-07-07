@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 0d0e99442ac11a92ce99d922ac170dc6939d56e1
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: cf6a2ec63de23eab72d33f9e9cbff13854f6cc3d
+ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686314"
+ms.locfileid: "66687101"
 ---
 # <a name="communication-compliance"></a>Conformité des communications
 
@@ -41,4 +41,4 @@ Utilisez les étapes suivantes pour configurer la conformité des communications
 ## <a name="more-information-about-communication-compliance"></a>Plus d’informations sur la conformité des communications
 
 - [Examiner et corriger les alertes](/microsoft-365/compliance/communication-compliance-investigate-remediate)
-- [Étude de cas - Contoso configure rapidement une stratégie de contenu inappropriée pour les communications Microsoft Teams, Exchange et Yammer](/microsoft-365/compliance/communication-compliance-case-study)
+- [Étude de cas : Contoso configure rapidement une stratégie de contenu inappropriée pour les communications Microsoft Teams, Exchange et Yammer](/microsoft-365/compliance/communication-compliance-case-study)
