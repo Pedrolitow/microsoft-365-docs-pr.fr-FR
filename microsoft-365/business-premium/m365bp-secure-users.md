@@ -10,9 +10,6 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
@@ -24,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 Business Premium aide votre entreprise en termes de productivité et de sécurité.
-ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: c8620bd687e297151fd6ccabac7f8d01a66457ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574153"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631747"
 ---
-# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Comment les recommandations de sécurité Microsoft 365 affectent vos utilisateurs
+# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Comment Microsoft 365 Business Premium aide votre entreprise
 
-Microsoft 365 Business Premium est une solution économique qui permet aux petites et moyennes entreprises de travailler plus efficacement et en toute sécurité qu’auparavant. Cet article explique comment Microsoft 365 Business Premium peut aider votre entreprise et inclut les sections suivantes :
+Microsoft 365 Business Premium est une solution économique qui permet aux petites et moyennes entreprises de travailler plus efficacement et en toute sécurité qu’auparavant. Cet article décrit comment Microsoft 365 Business Premium peut aider votre entreprise ou votre campagne. Le présent article contient les sections suivantes :
 
 - [Vidéo : 5 principaux avantages de Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Fonctionnalités de productivité et de sécurité avancées](#productivity-and-security) qui vous permettent de gérer votre entreprise de manière plus sécurisée, sur tous les appareils et à partir de n’importe où
@@ -87,6 +84,8 @@ Notre guide sur les menaces numériques décrit différents types de menaces et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. Obtenez [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) ou [Microsoft 365 pour les campagnes](get-microsoft-365-campaigns.md).
+1. Obtenez soit [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), soit[ Microsoft 365 pour les campagnes](get-microsoft-365-campaigns.md).
 
 2. [Démarrez le processus d’installation](m365bp-setup-overview.md).
+
+3. [Renforcer la sécurité](m365bp-security-overview.md).

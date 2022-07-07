@@ -2,8 +2,8 @@
 title: Gestion des incidents de sécurité
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la gestion des incidents de sécurité
-ms.openlocfilehash: b13798d34b0bf353158520e6f9c7cdb20aa77453
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1b21adb5d173dff5bb9cfcda6e71faa9f2ff0bd4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574171"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633216"
 ---
 # <a name="security-incident-management"></a>Gestion des incidents de sécurité
 
@@ -42,6 +42,8 @@ Pour en savoir plus sur les réponses aux incidents, procédez comme suit :
 
 1. [Examinez les recommandations de sécurité](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
 
-1. [Examinez les actions de correction](m365bp-review-remediation-actions-devices.md).
+2. [Examiner les menaces détectées et prendre des mesures](m365bp-review-threats-take-action.md).
 
-1. [Répondez à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).
+3. [Examinez les actions de correction](m365bp-review-remediation-actions-devices.md).
+
+4. [Répondez à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).

@@ -1,5 +1,5 @@
 ---
-title: Utiliser le scanner local de prévention des pertes de données Microsoft 365
+title: Utiliser le scanner local de prévention des pertes de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Découvrez comment utiliser le scanneur de protection contre la perte de données Microsoft 365 en local pour analyser les données au repos, puis implémenter des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint locales.
-ms.openlocfilehash: d726bfccf7dff2e95e3ccf996544f1db26bf09a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Apprenez à utiliser le scanner de prévention des pertes de données sur site pour analyser les données au repos et mettre en œuvre des actions de protection pour les partages de fichiers sur site et les dossiers et bibliothèques de documents SharePoint sur site.
+ms.openlocfilehash: ae5ffce9e664ada6e7476bb02b40f4a5c279d441
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203146"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624176"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Utiliser le scanner local de prévention des pertes de données Microsoft 365 
+# <a name="use-the-data-loss-prevention-on-premises-scanner"></a>Utilisez le scanner de prévention des pertes de données sur site.
 
-Pour vous familiariser avec les fonctionnalités locales DLP et la manière dont elles se trouvent dans les stratégies DLP, nous avons rassemblé certains scénarios que vous pouvez suivre.
+Pour vous familiariser avec les fonctions de prévention des pertes de données sur site de Microsoft Purview et la manière dont elles apparaissent dans les politiques DLP, nous avons élaboré quelques scénarios à suivre.
 
 > [!IMPORTANT]
 > Ces scénarios locaux DLP ne sont pas les procédures officielles de création et de réglage des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez utiliser les stratégies DLP dans les situations générales suivantes :
@@ -48,7 +48,7 @@ Les données du scanneur local DLP apparaissent dans plusieurs zones
 
 #### <a name="microsoft-365-audit-log"></a>Journal d’audit Microsoft 365
 
-Les correspondances de règle DLP sont disponibles dans l'interface utilisateur du journal d'audit, voir [Rechercher le journal d'audit dans le centre de conformité](search-the-audit-log-in-security-and-compliance.md) ou accessible par [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) dans PowerShell.
+Les correspondances des règles DLP sont disponibles dans l'interface utilisateur du journal d'audit, voir [Rechercher le journal d'audit dans le portail](search-the-audit-log-in-security-and-compliance.md) de conformité Microsoft Purview ou accessibles par [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### <a name="aip"></a>AIP
 

@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Le portail Microsoft 365 Defender et Centre de conformité Microsoft 365 fournissent des recommandations pour la gouvernance des données en fonction de la configuration actuelle de votre organisation et vous permet de configurer les éléments en quelques clics. Certaines de ces recommandations détectent du contenu spécifique dans votre organisation, puis fournissent les étapes recommandées pour la gestion de ce contenu. Par exemple, une recommandation peut détecter les éléments qui contiennent du contenu critique pour l’entreprise (par exemple, le privilège avocat-client ou les informations NDA), puis vous permettre d’appliquer automatiquement une étiquette de rétention à ces éléments pour vous assurer qu’ils sont classifiés et conservés en fonction des besoins. Cette rubrique répertorie les recommandations de gouvernance des données que vous pouvez voir et décrit le contenu est détecté au déclenchement de chacun d’eux.
-ms.openlocfilehash: cddd73fdd0c21605549450968db182883ab7e6ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Le portail Microsoft 365 Defender et le portail de conformité Microsoft Purview fournissent des recommandations pour la gouvernance des données sur la base de la configuration actuelle de votre organisation et vous permettent de configurer les choses en quelques clics. Certaines de ces recommandations détectent du contenu spécifique dans votre organisation, puis fournissent les étapes recommandées pour la gestion de ce contenu. Par exemple, une recommandation peut détecter les éléments qui contiennent du contenu critique pour l’entreprise (par exemple, le privilège avocat-client ou les informations NDA), puis vous permettre d’appliquer automatiquement une étiquette de rétention à ces éléments pour vous assurer qu’ils sont classifiés et conservés en fonction des besoins. Cette rubrique répertorie les recommandations de gouvernance des données que vous pouvez voir et décrit le contenu est détecté au déclenchement de chacun d’eux.
+ms.openlocfilehash: 27fcc5dd07695be355fc15ba2145ffa5540673ca
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110966"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637304"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Comment le contenu est identifié pour consulter des recommandations de gouvernance des données
 
-Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender et</a> le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> fournissent des recommandations pour la gouvernance des données en fonction de la configuration actuelle de votre organisation et vous permettent de configurer les choses en quelques clics. Certaines de ces recommandations détectent du contenu spécifique dans votre organisation, puis fournissent les étapes recommandées pour la gestion de ce contenu. Par exemple, une recommandation peut détecter les éléments qui contiennent du contenu critique pour l’entreprise (par exemple, le privilège avocat-client ou les informations NDA), puis vous permettre d’appliquer automatiquement une étiquette de rétention à ces éléments pour vous assurer qu’ils sont classifiés et conservés en fonction des besoins.
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank"> le portail</a> de conformité Microsoft Purview fournissent des recommandations pour la gouvernance des données en fonction de la configuration actuelle de votre organisation et vous permettent de configurer les choses en quelques clics. Certaines de ces recommandations détectent du contenu spécifique dans votre organisation, puis fournissent les étapes recommandées pour la gestion de ce contenu. Par exemple, une recommandation peut détecter les éléments qui contiennent du contenu critique pour l’entreprise (par exemple, le privilège avocat-client ou les informations NDA), puis vous permettre d’appliquer automatiquement une étiquette de rétention à ces éléments pour vous assurer qu’ils sont classifiés et conservés en fonction des besoins.
 
 Cette rubrique répertorie les recommandations de gouvernance des données que vous pouvez voir et décrit le contenu est détecté au déclenchement de chacun d’eux.
 
