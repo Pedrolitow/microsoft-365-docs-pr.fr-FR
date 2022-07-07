@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 48affe223db5f2c1a63246b7d4ff473188cabd63
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640917"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662313"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -148,7 +148,7 @@ Pour l’étiquetage intégré dans Office applications, vérifiez les [versions
 
 Le client d'étiquetage unifié Azure Information Protection prend en charge l'étiquetage automatique uniquement pour les types d'informations sensibles intégrés et personnalisés, et ne prend pas en charge les classificateurs pouvant être formés ou les types d'informations sensibles qui utilisent la correspondance exacte des données (EDM) ou les entités nommées.
 
-Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Assurez-vous que **Fichiers et e-mails** est sélectionné comme étendue de l’étiquette :
+Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Assurez-vous que **Éléments** est sélectionné comme étendue de l’étiquette :
 
 ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/filesandemails-scope-options-sensitivity-label.png)
 

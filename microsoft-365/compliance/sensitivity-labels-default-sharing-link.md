@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
-ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0e2fbe762483ff3997484b32448ce96711147e43
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628570"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663171"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>Utilisez les étiquettes de confidentialité pour configurer le type de lien de partage par défaut pour les sites et les documents dans SharePoint et OneDrive.
 
@@ -92,11 +92,11 @@ Exemples PowerShell, où le GUID de l’étiquette de sensibilité est **8faca7b
 
 Pour plus d’informations sur la spécification des paramètres avancés de PowerShell, consultez [Conseils PowerShell pour la spécification des paramètres avancés](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
-Pour configurer les paramètres du type de lien de partage par défaut pour un site, la portée [de l'étiquette de sensibilité](sensitivity-labels.md#label-scopes) doit inclure les **groupes et les sites** lorsque vous créez l'étiquette de sensibilité dans le portail de conformité Microsoft Purview. Une fois créé, le paramètre **Site, UnifiedGroup** dans la colonne **Étendue** de la page **Étiquettes** s’affiche et le paramètre *ContentType* PowerShell affiche également cette même valeur. Pour les documents, l’étendue doit inclure **fichiers & courriers électroniques**, qui s’affiche en tant **que fichier, courrier électronique**. Ensuite :
+Pour configurer les paramètres du type de lien de partage par défaut pour un site, la portée [de l'étiquette de sensibilité](sensitivity-labels.md#label-scopes) doit inclure les **groupes et les sites** lorsque vous créez l'étiquette de sensibilité dans le portail de conformité Microsoft Purview. Une fois créé, le paramètre **Site, UnifiedGroup** dans la colonne **Étendue** de la page **Étiquettes** s’affiche et le paramètre *ContentType* PowerShell affiche également cette même valeur. Pour les documents, l’étendue doit inclure **Éléments**, qui s’affiche en tant que **Fichier, e-mail**. Ensuite :
 
 - Lorsque l’étendue inclut **groupes & sites**, vous pouvez appliquer l’étiquette à un site, qui définit le type de lien de partage par défaut pour ce site. Pour plus d’informations sur l’application d’une étiquette de confidentialité à un site, afficher [Comment appliquer des étiquettes de niveau de confidentialité aux conteneurs](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- Lorsque la portée de l'étiquette de sensibilité comprend les **fichiers et les e-mails**, vous pouvez appliquer l'étiquette aux documents, ce qui définit le type de lien de partage par défaut pour ce document. L'étiquette peut être appliquée [manuellement](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) ou [automatiquement](apply-sensitivity-label-automatically.md).
+- Lorsque l’étendue de l’étiquette de confidentialité inclut **Éléments**, vous pouvez appliquer l’étiquette aux documents, ce qui définit le type de lien de partage par défaut pour ce document. Elle peut être appliquée [manuellement](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) ou [automatiquement](apply-sensitivity-label-automatically.md).
 
 > [!TIP]
 > Vous pouvez également spécifier que l’étiquette est l’étiquette de confidentialité par défaut à appliquer aux nouveaux sites ou nouveaux documents, en tant que paramètre de stratégie [d’étiquette](sensitivity-labels.md#what-label-policies-can-do).

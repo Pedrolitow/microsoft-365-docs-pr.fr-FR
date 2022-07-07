@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628680"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662531"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -50,7 +50,7 @@ Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la cl
 
 Avant d’activer les étiquettes de confidentialité pour les conteneurs et de configurer les étiquettes de confidentialité pour les nouveaux paramètres, les utilisateurs peuvent afficher et appliquer des étiquettes de confidentialité dans leurs applications. Par exemple, à partir de Word :
 
-![Étiquette de confidentialité affichée dans l’application de bureau Word.](../media/sensitivity-label-word.png)
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Étiquette de confidentialité affichée dans l’application de bureau Word." lightbox="../media/sensitivity-label-word.png"
 
 Une fois que vous avez activé et configuré des étiquettes de confidentialité pour les conteneurs, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité aux sites d’équipe Microsoft, aux groupes Microsoft 365 et aux sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
 
@@ -301,7 +301,7 @@ La liste déroulante affiche les noms d’étiquette pour la sélection, et l’
 
 Lorsque l’étiquette est appliquée et que les utilisateurs accèdent au site, ils voient le nom de l’étiquette et les stratégies appliquées. Par exemple, ce site est étiqueté comme **confidentiel** et le paramètre de confidentialité est défini sur **privé** :
 
-![Un site avec une étiquette de confidentialité appliquée](../media/sensitivity-label-site.png)
+:::image type ="content" source="../media/sensitivity-label-site.png" alt-text="Un site avec une étiquette de confidentialité appliquée" lightbox="../media/sensitivity-label-site.png":::
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Utiliser PowerShell pour appliquer une étiquette de confidentialité à plusieurs sites
 
@@ -341,7 +341,7 @@ Cette série de commandes vous permet d’étiqueter plusieurs sites de votre cl
 
 Pour afficher, trier et rechercher les étiquettes de confidentialité appliquées, utilisez <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sites actifs**</a> dans le nouveau Centre d’administration SharePoint. Vous devrez peut-être d’abord ajouter la colonne de **Confidentialité**:
 
-![Colonne Confidentialité de la page Sites actifs.](../media/manage-site-sensitivity-labels.png)
+:::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="Colonne de sensibilité sur la page Sites actifs." lightbox="../media/manage-site-sensitivity-labels.png"
 
 Pour plus d’informations sur la gestion des sites à partir de la page sites actifs, y compris l’ajout d’une colonne, voir [Gérer les sites dans le nouveau centre d’administration SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 
@@ -451,7 +451,7 @@ Pour vous aider à gérer la coexistence des étiquettes de confidentialité et 
 ## <a name="auditing-sensitivity-label-activities"></a>Audit sur les activités des étiquettes de confidentialité
 
 > [!IMPORTANT]
-> Si vous utilisez la séparation des étiquettes en sélectionnant uniquement l’étendue **Groupes et sites** pour les étiquettes qui protègent les conteneurs : en raison de la **non-concordance de la sensibilité au document détectée** des événements d’audit et des e-mails décrite dans cette section, envisagez de [classer ces étiquettes](sensitivity-labels.md#label-priority-order-matters) avant celles qui ont une étendue pour **Fichiers et e-mails**. 
+> Si vous utilisez la séparation des étiquettes en sélectionnant uniquement l’étendue **Groupes et sites** pour les étiquettes qui protègent les conteneurs : en raison de la **Non-concordance de la sensibilité au document détectée** des événements d’audit et des e-mails décrite dans cette section, envisagez de [classer ces étiquettes](sensitivity-labels.md#label-priority-order-matters) avant celles qui ont une étendue pour **Éléments**. 
 
 Si un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et son document comporte une étiquette de confidentialité [plus élevée](sensitivity-labels.md#label-priority-order-matters) que celle du site, cette action n’est pas bloquée. Par exemple, vous avez appliqué l’étiquette **Général** à un site SharePoint, et une personne télécharge un document étiqueté comme **Confidentiel**. Une étiquette de confidentialité ayant une priorité plus élevée identifie un contenu plus sensible qu’un contenu présentant un ordre de priorité plus faible, cette situation peut devenir un problème de sécurité.
 

@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753845"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663809"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -53,7 +53,7 @@ Depuis le 1er octobre 2021, les paiements automatiques en Inde peuvent bloquer c
 
 [En savoir plus sur la réglementation de la Reserve Bank of India concernant les paiements récurrents](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-Le 1er juillet 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Pour se conformer à ce règlement, Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter un mode de paiement et effectuer un paiement unique pour tous les abonnements et profils de facturation.
+Le 30 septembre 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Pour se conformer à ce règlement, Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter un mode de paiement et effectuer un paiement unique pour tous les abonnements et profils de facturation.
 
 [En savoir plus sur la réglementation de réserve de la Banque d’Inde pour le stockage par carte](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
