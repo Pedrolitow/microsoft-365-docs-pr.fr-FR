@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les compléments d’hameçonnage de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0882a37161989248b8c970a5dbe01efc0bcff65
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 636effd1f3d9f0fd824ead4ed59e48fdee26ef20
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043760"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685698"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 
@@ -31,12 +31,12 @@ ms.locfileid: "66043760"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser la soumission d’administrateur pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
-Les compléments Report Message and Report Phishing pour Outlook et Outlook sur le web (anciennement Outlook Web App) facilitent le signalement de faux positifs (e-mail marqué comme incorrect) ou de faux négatifs (e-mail incorrect autorisé) à Microsoft et à ses affiliés à des fins d’analyse.
+Les compléments Report Message et Report Phishing pour Outlook et Outlook sur le web (anciennement Outlook Web App) facilitent le signalement de faux positifs (e-mail marqué comme incorrect) ou de faux négatifs (e-mail incorrect autorisé) à Microsoft et à ses affiliés pour analyse.
 
 Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection des e-mails. Par exemple, supposons que les utilisateurs signalent de nombreux messages à l’aide du complément Report Phishing. Ces informations apparaissent dans le tableau de bord de sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage doivent peut-être être mises à jour.
 
@@ -48,16 +48,16 @@ Le complément Report Phishing offre la possibilité de signaler uniquement les 
 
 Si vous êtes un utilisateur individuel, vous pouvez activer les deux compléments pour vous-même.
 
-Si vous êtes administrateur général ou administrateur Exchange Online et que Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le complément Message de rapport et le complément Report Phishing pour votre organisation. Les deux compléments sont désormais disponibles via [le déploiement centralisé](../../admin/manage/centralized-deployment-of-add-ins.md).
+Si vous êtes administrateur général ou administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez activer le complément Message de rapport et le complément Report Phishing pour votre organisation. Les deux compléments sont désormais disponibles via [le déploiement centralisé](../../admin/manage/centralized-deployment-of-add-ins.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Le complément Message de rapport et le complément Report Phishing fonctionnent avec la plupart des abonnements Microsoft 365 et les produits suivants :
   - Outlook sur le web
   - Outlook 2013 SP1 ou version ultérieure
-  - Outlook 2016 pour Mac
-  - Outlook inclus avec les applications Microsoft 365 pour Enterprise
-  - application Outlook pour iOS et Android
+  - Outlook 2016 pour Mac
+  - Outlook inclus avec les applications Microsoft 365 pour Entreprise
+  - Application Outlook pour iOS et Android
 
 - Les deux compléments ne sont pas disponibles pour les boîtes aux lettres partagées, de groupe ou déléguées (les compléments seront grisés).
 
@@ -72,6 +72,9 @@ Si vous êtes administrateur général ou administrateur Exchange Online et que 
 - Pour plus d’informations sur la façon de signaler un message à l’aide de la fonctionnalité Message de rapport, consultez [Signaler les faux positifs et les faux négatifs dans Outlook](report-false-positives-and-false-negatives.md).
 
 - Les organisations qui disposent d’une solution de filtrage d’URL ou de sécurité (par exemple, un proxy et/ou un pare-feu) doivent avoir ipagave.azurewebsites.net et outlook.office.com points de terminaison autorisés à être atteints sur le protocole HTTPS.
+
+> [!IMPORTANT]
+> Pour afficher les messages signalés à Microsoft sous l’onglet <https://security.microsoft.com/reportsubmission>**Messages signalés par l’utilisateur**, ne désactivez pas l’expérience de création de rapports intégrée.
 
 ## <a name="get-the-report-message-add-in"></a>Obtenir le complément Message de rapport
 
@@ -104,7 +107,7 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 > [!NOTE]
 > L’apparition du complément dans votre organisation peut prendre jusqu’à 12 heures.
 
-1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), accédez à **Paramètres** \> **applications intégrées**. Cliquez sur **Obtenir des applications**.
+1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), accédez à **Paramètres des** **applications intégrées**\>. Cliquez sur **Obtenir des applications**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Les applications intégrées Centre d'administration Microsoft 365." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
@@ -142,7 +145,7 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>Modifier les paramètres du complément Message de rapport
 
-1. Dans le Centre d'administration Microsoft 365, accédez à **Paramètres** \> **applications intégrées** \. Recherchez et sélectionnez ensuite **le complément Message** de rapport.
+1. Dans le Centre d'administration Microsoft 365, accédez à **Paramètres des** **applications intégrées** \> \. Recherchez et sélectionnez ensuite **le complément Message** de rapport.
 
 2. Dans le menu volant qui s’affiche, **sélectionnez Modifier les utilisateurs** pour modifier les paramètres utilisateur.
 
@@ -179,7 +182,7 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 > [!NOTE]
 > L’apparition du complément dans votre organisation peut prendre jusqu’à 12 heures.
 
-1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), accédez à **Paramètres** \> **applications intégrées**. Cliquez sur **Obtenir des applications**.
+1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), accédez à **Paramètres des** **applications intégrées**\>. Cliquez sur **Obtenir des applications**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Les applications intégrées Centre d'administration Microsoft 365." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
@@ -194,7 +197,7 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>Modifier les paramètres du complément Report Phishing
 
-1. Dans le Centre d'administration Microsoft 365, accédez à **Paramètres** \> **applications intégrées** \. Ensuite, recherchez et sélectionnez **le complément Signaler l’hameçonnage** .
+1. Dans le Centre d'administration Microsoft 365, accédez à **Paramètres des** **applications intégrées** \> \. Ensuite, recherchez et sélectionnez **le complément Signaler l’hameçonnage** .
 
 2. Dans le menu volant qui s’affiche, **sélectionnez Modifier les utilisateurs** pour modifier les paramètres utilisateur.
 

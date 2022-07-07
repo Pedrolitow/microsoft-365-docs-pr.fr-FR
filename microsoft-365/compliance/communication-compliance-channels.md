@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0769dd3cfd64f611162803952a1e39b9241ac2ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 21897bcfc21cac7e6eb2ceeff3e20280595c539b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638661"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686460"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Détecter les signaux des canaux à l’aide de la conformité des communications
 
@@ -59,9 +59,9 @@ Utilisez les configurations de gestion de groupe suivantes pour superviser les c
 
 - **Pour les communications de conversation Teams :** Affectez des utilisateurs individuels ou attribuez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
 - **Pour les communications de canal Teams :** Affectez chaque canal Microsoft Teams ou groupe Microsoft 365 que vous souhaitez analyser qui contient un utilisateur spécifique à la stratégie de conformité des communications. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft Teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications. Si un membre du canal est un utilisateur supervisé au sein d’une stratégie et que la direction *entrante* est configurée dans une stratégie, tous les messages envoyés dans le canal sont sujets à révision et les correspondances de stratégie potentielles (même pour les utilisateurs du canal qui ne sont pas explicitement supervisés). Par exemple, l’utilisateur A est le propriétaire ou un membre d’un canal. L’utilisateur B et l’utilisateur C sont membres du même canal et utilisent la langue correspondant à la stratégie de contenu inappropriée qui supervise uniquement les correspondances de stratégie de création de l’utilisateur A. L’utilisateur B et l’utilisateur C créent des correspondances pour les conversations au sein du canal, même s’ils ne sont pas directement supervisés dans la stratégie de contenu inappropriée. Les conversations teams entre l’utilisateur B et l’utilisateur C qui se trouvent en dehors du canal qui inclut l’utilisateur A ne seraient pas soumises à la stratégie de contenu inappropriée qui inclut l’utilisateur A. Pour exclure les membres du canal de la supervision lorsque d’autres membres du canal sont explicitement supervisés, désactivez le paramètre de direction de communication *entrante* dans la stratégie de conformité des communications applicable.
-- **Pour les communications de conversation Teams avec des environnements de messagerie hybrides** : la conformité des communications peut détecter les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe qui ont activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Lors de la création d’une stratégie de conformité des communications, vous affectez ce groupe de distribution comme sélection **d’utilisateurs et de groupes supervisés** dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation du stockage cloud et de la prise en charge teams pour les utilisateurs locaux, consultez [Rechercher des données de conversation Teams pour les utilisateurs locaux](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **Pour les communications de conversation Teams avec des environnements de messagerie hybrides** : la conformité des communications peut détecter les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe qui ont activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Lors de la création d’une stratégie de conformité des communications, vous affectez ce groupe de distribution comme sélection **d’utilisateurs et de groupes supervisés** dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation du stockage cloud et de la prise en charge teams pour les utilisateurs locaux, consultez [Rechercher des données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-## <a name="exchange-email"></a>E-mails Exchange
+## <a name="exchange-email"></a>Messagerie électronique Exchange
 
 Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles à l’analyse des messages. Le traitement des messages électroniques exchange et des pièces jointes correspondant aux conditions de stratégie de conformité des communications peut prendre environ 24 heures. Les types de pièces jointes prises en charge pour la conformité des communications sont les mêmes que les [types de fichiers pris en charge pour les inspections du contenu des règles de flux de messagerie Exchange](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -73,6 +73,6 @@ Yammer doit être en [mode natif](/yammer/configure-your-yammer-network/overview
 
 ## <a name="third-party-sources"></a>Sources tierces
 
-Vous pouvez analyser les communications à la recherche de données importées dans des boîtes aux lettres de votre organisation Microsoft 365 à partir de sources tierces comme [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack](archive-slack-data.md), [Zoom](archive-zoommeetings-data.md), SMS et bien d’autres. Pour obtenir la liste complète des connecteurs pris en charge dans la conformité des communications, consultez [Archiver des données tierces](archiving-third-party-data.md).
+Vous pouvez analyser les communications à la recherche de données importées dans des boîtes aux lettres de votre organisation Microsoft 365 à partir de sources tierces comme [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS et bien d’autres. Pour obtenir la liste complète des connecteurs pris en charge dans la conformité des communications, consultez [Archiver des données tierces](/microsoft-365/compliance/archiving-third-party-data).
 
 Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir affecter le connecteur à une stratégie de conformité des communications. La section **Sources tierces** de l’Assistant Stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.

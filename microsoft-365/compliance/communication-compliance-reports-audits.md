@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630492"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686394"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Utiliser les rapports et audits de conformité des communications
 
@@ -103,7 +103,7 @@ Créez des rapports personnalisés et examinez les détails des messages contenu
 
 Pour créer un rapport de détails de message, effectuez les étapes suivantes :
 
-1. Connectez-vous au portail de conformité Microsoft Purview avec un compte membre du groupe de *rôles Enquêteurs de conformité des communications*.
+1. Connectez-vous au portail de conformité Microsoft Purview avec un compte membre du groupe de *rôles Enquêteurs de conformité des communications* .
 2. Accédez à l’onglet **Stratégies** , sélectionnez une stratégie, puis **sélectionnez Créer un rapport de détails de message**.
 3. Dans le volet **Créer un rapport de détails du message** , entrez un nom pour le rapport dans le champ **Nom** du rapport.
 4. Dans **Choisir une plage de dates**, sélectionnez une *date de début* et une *date de fin* pour le rapport.
@@ -141,9 +141,9 @@ Les rapports de détails du message contiennent les informations suivantes pour 
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver la supervision des activités et des communications des utilisateurs. Ces informations peuvent être un résumé de toutes les activités associées à une stratégie organisationnelle définie ou chaque fois qu’une stratégie de conformité des communications change. Les stratégies de conformité des communications ont des pistes d’audit intégrées pour une préparation complète pour les audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication pour fournir une preuve des procédures de surveillance.
 
 > [!IMPORTANT]
-> L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Lorsque les activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
+> L’audit doit être activé pour votre organisation avant l’enregistrement des événements de conformité des communications. Pour activer l’audit, consultez [Activer le journal d’audit](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Lorsque les activités déclenchent des événements capturés dans le journal d’audit Microsoft 365, l’affichage de ces événements dans les stratégies de conformité des communications peut prendre jusqu’à 48 heures.
 
-Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Pour exporter les activités de mise à jour, vous devez disposer des rôles *de Administration Administration globale* ou de *conformité* des communications. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de mise à jour de la stratégie de conformité des communications, sélectionnez le contrôle **Exporter les mises à jour** de stratégie sur la page principale pour toute stratégie. Vous devez disposer des rôles *d’administrateur général* ou *d’administrateur de conformité* des communications pour exporter les activités de mise à jour. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
 |**Champ**|**Détails**|
 |:-----|:-----|
@@ -152,7 +152,7 @@ Pour afficher les activités de mise à jour de la stratégie de conformité des
 | **Operations** | Opérations de mise à jour effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la principale source de données pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des séparateurs de virgules. |
 
-Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Pour exporter les activités de révision, vous devez disposer des rôles *Administration globale* ou Conformité des communications *Administration*. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
+Pour afficher les activités de révision de conformité des communications pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page **Vue d’ensemble** d’une stratégie spécifique. Les rôles *Administrateur général* ou *Administrateur de conformité des communications* doivent vous être attribués pour exporter les activités de révision. Cette action génère un fichier d’audit au format .csv qui contient les informations suivantes :
 
 |**Champ**|**Détails**|
 |:-----|:-----|
@@ -161,7 +161,7 @@ Pour afficher les activités de révision de conformité des communications pour
 | **Operations** | Opérations de révision effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la principale source de données pour toutes les activités de révision de stratégie. Toutes les activités de révision sont enregistrées et séparées par des délimiteurs de virgules. |
 
-Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Pour en savoir plus sur les stratégies de rétention des journaux d’audit, consultez [Gérer les stratégies de rétention des journaux d’audit](audit-log-retention-policies.md).
+Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Pour en savoir plus sur les stratégies de rétention des journaux d’audit, consultez [Gérer les stratégies de rétention des journaux d’audit](/microsoft-365/compliance/audit-log-retention-policies).
 
 Par exemple, l’exemple suivant retourne les activités pour toutes les activités d’examen de surveillance (stratégies et règles) :
 

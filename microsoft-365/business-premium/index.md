@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: f3752393e32ab151edcaa8166eabe862ad3f90c2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 0fec3c5117759cc0cdb5d13fe8c04809cfcf8356
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663105"
+ms.locfileid: "66685918"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Cybersécurité Microsoft 365 Business Premium &mdash; pour les petites entreprises
 
@@ -51,7 +51,7 @@ Dans ces premières missions, vous vous connectez et configurez vos murs de déf
 
 ## <a name="train-your-team"></a>Former votre équipe
 
-Nous avons inclus un ensemble de missions ici avec certains objectifs qui doivent être achevés par votre équipe. Vous devez vous assurer que les appareils de l’équipe sont protégés, que l’équipe est formée pour utiliser le partage de courrier et de fichiers en toute sécurité, et pour reconnaître et signaler les menaces.
+Nous avons inclus un ensemble de missions ici avec certains objectifs qui doivent être achevés par votre équipe (tous les employés). Vous devez vous assurer que les appareils de l’équipe sont protégés et que votre équipe est formée pour utiliser le partage de fichiers et de courrier électronique en toute sécurité, et qu’elle est en mesure de reconnaître et de signaler les menaces.
 
 1. [**Configurez des appareils BYOD**](m365bp-protect-pcs-macs.md). Dans cette mission, vous configurez tous les appareils non managés (BYOD) afin qu’ils fassent partie en toute sécurité de l’écosystème.
 
@@ -65,7 +65,7 @@ Nous avons inclus un ensemble de missions ici avec certains objectifs qui doiven
 
 Les appareils gérés sont plus sûrs, car ils sont surveillés pour détecter les menaces. Dans cette dernière mission critique, vous allez intégrer et inscrire des appareils dans Defender entreprise afin qu’ils soient sécurisés et protégés avec les meilleurs outils disponibles.
 
-- [**Configurez et sécurisez les appareils gérés**](m365bp-protect-devices.md). Prenez les mesures nécessaires pour sécuriser ces appareils afin qu’ils soient surveillés et protégés par l’organisation !
+- [**Configurez et sécurisez les appareils gérés**](m365bp-protect-devices.md). Prenez les mesures nécessaires pour sécuriser ces appareils afin qu’ils soient surveillés et protégés par l’organisation.
 
 [:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Diagramme décrivant vos missions avec les appareils gérés de protection sélectionnés.":::](m365bp-protect-devices.md)
 

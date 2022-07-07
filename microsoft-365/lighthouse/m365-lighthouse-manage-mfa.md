@@ -16,13 +16,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer l’authentification multifacteur.
-ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment gérer l’authentification multifacteur.
+ms.openlocfilehash: d7874988f4316015afb58a40651bc6e85cf88f2a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017717"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686204"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Gérer l’authentification multifacteur dans Microsoft 365 Lighthouse
 
@@ -36,43 +36,46 @@ Les conditions suivantes doivent être remplies pour qu’un locataire apparaiss
 
 - Le locataire client doit disposer d’une licence Azure AD Premium pour chaque utilisateur. Pour plus d’informations sur les licences qui prennent en charge l’authentification multifacteur, consultez [Fonctionnalités et licences pour Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing).
 
-- Le locataire client doit être actif dans Microsoft 365 Lighthouse. Pour savoir comment déterminer si un locataire est actif, consultez [Microsoft 365 Lighthouse vue d’ensemble de la liste de locataires](/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
+- Le locataire client doit être actif dans Microsoft 365 Lighthouse. Pour savoir comment déterminer si un locataire est actif, consultez la [vue d’ensemble de la liste des locataires Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
 
 ## <a name="enable-mfa-for-a-tenant"></a>Activer l’authentification multifacteur pour un locataire
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **utilisateurs** > .
 
-2. Sélectionnez l’onglet **Authentification multifacteur** .
+2. Sous l’onglet **Authentification multifacteur** , recherchez un locataire qui n’utilise pas l’authentification multifacteur, puis sélectionnez ce locataire pour ouvrir le volet des détails du locataire.
 
-3. Dans la liste des locataires, sélectionnez un locataire pour ouvrir le volet d’informations.
+3. Sous l’onglet **Activation de l’authentification multifacteur** , sous **authentification multifacteur avec paramètres de sécurité par défaut**, **sélectionnez Activer les paramètres de sécurité par défaut**.
 
-4. Sous l’onglet **Activation de l’authentification multifacteur** , sous **authentification multifacteur avec paramètres de sécurité par défaut**, **sélectionnez Activer les paramètres de sécurité par défaut**.
-
-5. Sélectionnez **Enregistrer les modifications**.
+4. Sélectionnez **Enregistrer les modifications**.
 
 Pour activer l’authentification multifacteur via l’accès conditionnel, consultez [Tutoriel : Sécuriser les événements de connexion utilisateur avec Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>Avertir les utilisateurs qui ne sont pas inscrits à l’authentification multifacteur
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **utilisateurs** > .
 
-2. Sélectionnez l’onglet **Authentification multifacteur** .
+2. Sous l’onglet **Authentification multifacteur** , recherchez les locataires dont les utilisateurs ne sont pas inscrits à l’authentification multifacteur, puis sélectionnez le locataire pour ouvrir le volet d’informations du locataire.
 
-3. Dans la liste des locataires, sélectionnez un locataire pour ouvrir le volet d’informations.
+3. Sélectionnez **Utilisateurs non inscrits à l’onglet MFA** .
 
-4. Sous **l’onglet Utilisateur non inscrit pour l’authentification multifacteur** , sélectionnez les utilisateurs que vous souhaitez notifier.
+4. Sélectionnez tous les autres utilisateurs de la liste qui doivent s’inscrire à l’authentification multifacteur, puis sélectionnez **Créer un e-mail**.
 
-5. Sélectionnez **Créer un e-mail**.
+> [!TIP]
+> Si l’un des comptes d’utilisateur de la liste est des comptes d’accès d’urgence ou des comptes de service pour lesquels vous ne souhaitez pas exiger l’authentification multifacteur, sélectionnez ces comptes d’utilisateur, puis **sélectionnez Exclure les utilisateurs**. Les comptes d’utilisateur exclus n’apparaissent plus dans la liste des utilisateurs non inscrits pour l’authentification multifacteur.
+
+> [!NOTE]
+> Si des comptes de boîte aux lettres partagés ou des comptes d’utilisateurs inactifs apparaissent dans la liste des utilisateurs non inscrits à l’authentification multifacteur, nous vous recommandons de bloquer la connexion pour ces comptes afin qu’ils n’apparaissent plus dans cette liste.
+
 
 Lighthouse ouvre votre client de messagerie par défaut et préremplit le message électronique avec des instructions pour s’inscrire à l’authentification multifacteur. Tous les utilisateurs sélectionnés seront inclus sur la ligne CCI. Si vous préférez envoyer des e-mails individuellement aux utilisateurs, vous pouvez sélectionner l’icône d’e-mail en regard du nom d’utilisateur.
 
 Si vous souhaitez utiliser un autre compte de messagerie, vous pouvez exporter la liste des utilisateurs vers un fichier. Vous pouvez également télécharger des exemples de modèles de messagerie que vous pouvez personnaliser avec la personnalisation de votre entreprise.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois l’authentification multifacteur activée, vous pouvez activer la réinitialisation de mot de passe en libre-service Azure Active Directory (Azure AD). Cette fonctionnalité permet aux utilisateurs de modifier ou de réinitialiser leur mot de passe sans intervention de l’administrateur ou du support technique. Pour plus d’informations, consultez [Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse](m365-lighthouse-manage-sspr.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Planifier un déploiement Azure Active Directory Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted) (article)\
 [Quelles sont les valeurs par défaut de sécurité ?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) (article)\

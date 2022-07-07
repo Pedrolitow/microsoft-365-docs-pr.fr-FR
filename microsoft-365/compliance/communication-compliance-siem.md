@@ -1,5 +1,5 @@
 ---
-title: Conformité de la communication avec les solutions SIEM
+title: Utiliser la conformité des communications avec les solutions SIEM
 description: Découvrez l’intégration de la conformité des communications aux solutions SIEM.
 keywords: Microsoft 365, Microsoft Purview, conformité, conformité des communications
 f1.keywords:
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4d9ee561e033e98919063d1f344aa3207a6bb6cd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 247999954e6ff69fdfbd2ff681bb79c0bf22c8bc
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626532"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686116"
 ---
-# <a name="communication-compliance-with-siem-solutions"></a>Conformité de la communication avec les solutions SIEM
+# <a name="use-communication-compliance-with-siem-solutions"></a>Utiliser la conformité des communications avec les solutions SIEM
 
-[La conformité des communications](communication-compliance.md) est une solution à risque interne dans Microsoft Purview qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les solutions SIEM (Security Information and Event Management) telles que [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
+[La conformité des communications](/microsoft-365/compliance/communication-compliance) est une solution à risque interne dans Microsoft Purview qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les solutions SIEM (Security Information and Event Management) telles que [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
 
 Un besoin courant pour les organisations consiste à intégrer les alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message offensant à un autre employé et ce message est détecté par une surveillance de stratégie de conformité des communications pour le contenu inapproprié. Ces événements sont suivis dans l’audit Microsoft 365 (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM pour l’organisation à partir d’événements surveillés dans l’audit Microsoft 365 associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis ils examinent et corrigent l’alerte dans la solution de conformité des communications.
 
@@ -133,6 +133,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## <a name="resources"></a>Ressources
 
-- [Audit de conformité des communications](communication-compliance-reports-audits.md#audit)
-- [Audit de Microsoft Purview (Premium)](advanced-audit.md)
+- [Audit de conformité des communications](/microsoft-365/compliance/communication-compliance-reports-audits#audit)
+- [Audit de Microsoft Purview (Premium)](/microsoft-365/compliance/advanced-audit)
 - [Référence de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)

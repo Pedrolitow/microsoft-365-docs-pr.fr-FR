@@ -20,12 +20,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.date: 05/26/2022
-ms.openlocfilehash: a20b576a5ce988bc23bd3be0ede1961a008085ca
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: cb7d4bec9ae41d05be5b588f78a5197ed9ccbac0
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754629"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685632"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
@@ -41,13 +41,13 @@ Si la facturation périodique est désactivée pour un profil de facturation, vo
 
 ## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nouvelles réglementations de la Reserve Bank of India
 
-Depuis le 1er octobre 2021, les paiements automatiques en Inde pourraient bloquer certaines transactions par carte de crédit, en particulier les transactions dépassant 5 000 INR. En raison de ce règlement, vous devrez peut-être effectuer des paiements manuellement dans le Centre d'administration Microsoft 365. Ces règlements n’affecteront pas le montant total que vous êtes facturé pour votre utilisation.
+Depuis le 1er octobre 2021, les paiements automatiques en Inde peuvent bloquer certaines transactions par carte de crédit, en particulier les transactions dépassant 5 000 INR. En raison de cette réglementation, vous devrez peut-être effectuer des paiements manuellement dans le Centre d’administration Microsoft 365. Ces réglementations n’affecteront pas le montant total facturé pour votre utilisation.
 
-[Apprenez-en davantage sur la réglementation de la Banque de réserve de l’Inde pour les paiements périodiques](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+[En savoir plus sur la réglementation de la Reserve Bank of India concernant les paiements récurrents](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-Le 1er juillet 2022, Microsoft et d’autres commerçants en ligne ne stockeront plus les informations de carte de crédit. Pour se conformer à ce règlement, Microsoft supprimera tous les détails des cartes stockées du Centre d'administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter un mode de paiement et effectuer un paiement unique pour tous les abonnements et profils de facturation.
+Le 30 septembre 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Pour se conformer à ce règlement, Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter un mode de paiement et effectuer un paiement unique pour tous les abonnements et profils de facturation.
 
-[Découvrez la réglementation de la Banque de réserve de l’Inde pour le stockage de cartes](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+[En savoir plus sur la réglementation de réserve de la Banque d’Inde pour le stockage par carte](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 

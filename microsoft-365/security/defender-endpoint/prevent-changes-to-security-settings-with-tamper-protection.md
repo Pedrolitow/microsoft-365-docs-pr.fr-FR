@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f8d44cd032e658e28242c89f3fbd938bfd1fb320
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490550"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686138"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -42,7 +42,7 @@ La protection contre les falsifications est disponible pour les appareils qui ex
 
 - Windows 11
 - Multisession Windows 11 Entreprise 
-- Windows 10
+- Windows 10
 - Windows 10 Entreprise à sessions multiples
 - Windows Server 2022
 - Windows Server 2019
@@ -65,6 +65,7 @@ Pendant certains types de cyberattaques, les mauvais acteurs essaient de désact
 - Suppression des mises à jour du renseignement de sécurité
 - Désactivation des actions automatiques sur les menaces détectées
 - Suppression des notifications dans l’application Sécurité Windows
+- Désactivation de l’analyse des archives et des fichiers réseau
 
 ### <a name="how-it-works"></a>Mode de fonctionnement
 
@@ -175,7 +176,7 @@ Si votre organisation utilise Microsoft Endpoint Manager (MEM), vous pouvez acti
  
 ### <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Gérer la protection contre les falsifications pour votre organisation avec Configuration Manager, version 2006
 
-Si vous utilisez la [version 2006 de Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows 10 Entreprise multisession, Windows 11 Windows 11 Entreprise multisession, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée *attachement de locataire*. L’attachement de locataire vous permet de synchroniser vos appareils Configuration Manager locaux uniquement dans le Centre d’administration Microsoft Endpoint Manager, puis de fournir des stratégies de configuration de sécurité de point de terminaison aux regroupements locaux & appareils.
+Si vous utilisez la [version 2006 de Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows 10 Entreprise multisession, Windows 11 Windows 11 Entreprise  multisession, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée *attachement de locataire*. L’attachement de locataire vous permet de synchroniser vos appareils Configuration Manager locaux uniquement dans le Centre d’administration Microsoft Endpoint Manager, puis de fournir des stratégies de configuration de sécurité de point de terminaison aux regroupements locaux & appareils.
 
 > [!NOTE]
 > La procédure peut être utilisée pour étendre la protection contre les falsifications aux appareils exécutant Windows 10, Windows 10 Entreprise multisession, Windows 11, Windows 11 Entreprise multisession, Windows Server 2019 et Windows Server 2022. Veillez à examiner les prérequis et d’autres informations dans les ressources mentionnées dans cette procédure. Pour Windows Server 2012 R2 exécutant la solution unifiée moderne [version 2203 de Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) est requise.
@@ -240,7 +241,7 @@ Lorsqu’une tentative de falsification est détectée, une alerte est déclench
 
 La protection contre les falsifications s’intègre aux fonctionnalités de gestion des vulnérabilités [& des menaces](next-gen-threat-and-vuln-mgt.md) . [Les recommandations de sécurité](tvm-security-recommendation.md) incluent la garantie que la protection contre les falsifications est activée. Par exemple, vous pouvez effectuer une recherche sur la *falsification*. Dans les résultats, vous pouvez sélectionner **Activer la protection contre les falsifications** pour en savoir plus et l’activer.
 
-Pour en savoir plus sur threat & Vulnerability Management, consultez [Dashboard Insights - Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
+Pour en savoir plus sur la gestion des [vulnérabilités & des menaces, consultez Tableau de bord Insights - Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 

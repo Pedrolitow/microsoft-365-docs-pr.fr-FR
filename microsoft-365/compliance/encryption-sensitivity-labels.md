@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f41fbec0018008d2a59ad8960a7a0cd89f1a556
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625388"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663783"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -81,13 +81,13 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>La configuration d’une étiquette pour le chiffrement
 
-1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Fichiers et e-mails** pour l’étendue de l’étiquette : 
+1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Éléments** pour l’étendue de l’étiquette : 
     
-    ![Options d’étendue des étiquettes de confidentialité pour les fichiers et les e-mails.](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, assurez-vous de sélectionner **Chiffrer les fichiers et les e-mails**.
+2. Sur la page **Choisir les paramètres de protection pour les éléments étiquetés**, assurez-vous de sélectionner **Chiffrer les éléments**.
     
-    ![Options de protection d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/protection-options-sensitivity-label.png)
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Options de protection d’étiquette de confidentialité pour les éléments." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  Sur la page **Chiffrement**, sélectionnez l’une des options suivantes :
     
@@ -97,7 +97,7 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
     
     - **Configurer les paramètres de chiffrement** : active le chiffrement et rend les paramètres de chiffrement visibles :
         
-        ![Options de chiffrement d’une étiquette de confidentialité.](../media/encrytion-options-sensitivity-label.png)
+        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="Options de chiffrement d’une étiquette de confidentialité."lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         Vous trouverez des instructions pour ces paramètres dans la section [Configurer les paramètres de chiffrement](#configure-encryption-settings).
 
@@ -412,7 +412,7 @@ Les nouveaux utilisateurs que vous ajoutez pourront ouvrir des documents et des 
 
 Cette configuration présente l’avantage de ne pas avoir à spécifier des utilisateurs, groupes ou domaines pour chiffrer un courrier électronique ou un document. Le contenu reste chiffré et vous pouvez spécifier les droits d’utilisation, la date d’expiration et l’accès hors connexion.
 
-N’utilisez cette configuration que lorsque vous n’avez pas besoin de restreindre les utilisateurs autorisés à ouvrir le document ou le courrier protégé. [Plus d’informations sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users)
+Utilisez cette configuration uniquement lorsque vous n’avez pas besoin de restreindre les utilisateurs autorisés à ouvrir le document ou le courrier protégé. Plus d’informations sur ce paramètre. En savoir plus [sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users).
 
 1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** assurez-vous que l'option **Attribuer maintenant des autorisations est sélectionnée**.
 

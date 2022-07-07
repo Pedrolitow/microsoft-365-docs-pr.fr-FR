@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Protection des donn
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: db050d3e26f19901e98052be5051b9eebce21990
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637946"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663455"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -134,13 +134,13 @@ Cette configuration d’étendue vous permet d’utiliser des étiquettes de con
 
 ![Options d’étendue des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
-Par défaut, l’étendue **Fichiers et e-mails** est toujours sélectionnée. Les autres étendues sont sélectionnées par défaut lorsque les fonctionnalités sont activées pour votre client :
+Par défaut, l’étendue **Éléments** est toujours sélectionnée. Les autres étendues sont sélectionnées par défaut lorsque les fonctionnalités sont activées pour votre client :
 
 - **Groupes et sites** : [activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
 - **Ressources de données schématisées** : [étiqueter automatiquement votre contenu dans Mappage de données Microsoft Purview](/azure/purview/create-sensitivity-label)
 
-Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
+Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des éléments n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
 
 ![Options non disponibles pour les étiquettes de confidentialité.](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -148,7 +148,7 @@ Pour ces pages dont les options ne sont pas disponibles, sélectionnez **Suivant
 
 ### <a name="label-priority-order-matters"></a>Priorité des étiquettes (l’ordre est important)
 
-Lorsque vous créez des étiquettes de niveau de confidentialité dans votre centre d'administration, elles apparaissent sous forme de liste sur l’onglet **Niveau de confidentialité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important, car il reflète leur priorité. Il est préférable que l’étiquette de niveau de confidentialité la plus restrictive, telle que Hautement confidentiel, s’affiche en **bas** de la liste, et la moins restrictive, par exemple Public, s’affiche en **haut**.
+Lorsque vous créez des étiquettes de confidentialité dans le Portail de conformité Microsoft Purview, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
 
 Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Toutefois, cette option ne s’applique pas aux sous-étiquettes qui partagent la priorité de leur étiquette parente.
 

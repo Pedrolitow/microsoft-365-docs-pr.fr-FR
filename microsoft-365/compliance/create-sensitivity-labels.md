@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour toutes les solutions de protection des données Microsoft Purview : créer, configurer et publier des étiquettes de confidentialité pour classifier et protéger les données de votre organisation.'
-ms.openlocfilehash: ad7e9c9aeea0a1ef05f79214afd60ac479ba2e66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 486cc10888ebb66a657aa21930fe306073ac1868
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625520"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663523"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -50,7 +50,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 2. Dans la page **Étiquettes** , sélectionnez **+ Créer une étiquette** pour démarrer la nouvelle configuration d’étiquette de confidentialité : 
     
-    ![Créer une étiquette de confidentialité.](../media/create-sensitivity-label-full.png)
+    :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Créer une étiquette de confidentialité." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
     > Par défaut, les clients n’ont pas d’étiquettes. Vous devez alors en créer. Les étiquettes de l’exemple d’image montrent les étiquettes par défaut qui ont été [déplacées à partir d’Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
@@ -59,7 +59,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
     ![Étendues des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
-    - Si **Fichiers et e-mails** est sélectionné, vous pouvez configurer les paramètres qui s’appliquent aux applications qui prennent en charge les étiquettes de confidentialité, telles qu’Office Word et Outlook. Si cette option n’est pas sélectionnée, vous verrez la première page de ces paramètres, mais vous ne pourrez pas les configurer et les étiquettes ne seront pas disponibles à la sélection pour les utilisateurs dans ces applications.
+    - Si **Éléments** est sélectionné, vous pouvez configurer les paramètres qui s’appliquent aux applications qui prennent en charge les étiquettes de confidentialité, telles qu’Office Word et Outlook. Si cette option n’est pas sélectionnée, vous verrez la première page de ces paramètres, mais vous ne pourrez pas les configurer et les étiquettes ne seront pas disponibles à la sélection pour les utilisateurs dans ces applications.
 
     - Si **Groupes et sites** est sélectionné, vous pouvez configurer les paramètres qui s’appliquent aux groupes Microsoft 365 et aux sites pour Teams et SharePoint. Si vous n’avez pas sélectionné cette option, vous verrez la première page de ces paramètres, mais vous ne pourrez pas les configurer et les utilisateurs ne pourront pas sélectionner étiquettes pour les groupes et le site.
 
@@ -153,7 +153,7 @@ Pour vérifier la configuration de votre étiquette, y compris les paramètres a
 
 2. Sélectionnez la page **Stratégies des étiquettes**, puis **Publier l’étiquette** pour démarrer la configuration **Créer une stratégie** :
     
-    ![Publier des étiquettes.](../media/publish-sensitivity-labels-full.png)
+   :::image type="content" source="../media/publish-sensitivity-labels-full.png" alt-text="Publier des étiquettes." lightbox="../media/publish-sensitivity-labels-full.png":::
     
     > [!NOTE]
     > Par défaut, les clients n’ont pas de stratégies d’étiquette. Vous devez alors créer. 
@@ -167,7 +167,7 @@ Pour vérifier la configuration de votre étiquette, y compris les paramètres a
 
 5. Suivez les invites pour configurer les paramètres de stratégie.
 
-    Les paramètres de stratégie que vous voyez correspondent à l’étendue des étiquettes que vous avez sélectionnées. Par exemple, si vous avez sélectionné des étiquettes qui ont uniquement le **Files & e-mails** étendue, vous ne voyez pas les paramètres de stratégie **Appliquez cette étiquette par défaut aux groupes et sites** et **Demander les utilisateurs à appliquer une étiquette à leurs groupes et sites**.
+    Les paramètres de stratégie qui s’affichent correspondent à l’étendue des étiquettes que vous avez sélectionnées. Par exemple, si vous avez sélectionné des étiquettes dont l’étendue est uniquement **Éléments**, vous ne voyez pas les paramètres de stratégie **Appliquer cette étiquette par défaut aux groupes et sites** et **Demander aux utilisateurs d’appliquer une étiquette à leurs groupes et sites**.
 
     Si vous souhaitez en savoir plus sur ces paramètres, veuillez consulter la rubrique [Fonction des stratégies d’étiquette](sensitivity-labels.md#what-label-policies-can-do) depuis les informations générales, puis utiliser l’aide de l’Assistant pour les paramètres individuels.
 
