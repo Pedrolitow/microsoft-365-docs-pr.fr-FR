@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Protection des donn
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685962"
+ms.locfileid: "66687803"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -85,7 +85,7 @@ Lorsque vous attribuez une étiquette de confidentialité à du contenu, elle re
 
 - **Permanentes.** Étant donné que l’étiquette est stockée dans les métadonnées des fichiers et des e-mails, l’étiquette reste avec le contenu, quel que soit l’emplacement où elle est enregistrée ou stockée. L'identification unique d’étiquette devient la base pour appliquer et faire respecter les stratégies que vous configurez.
 
-Lorsqu'elle est visualisée par les utilisateurs de votre organisation, une étiquette de confidentialité s’affiche comme une balise sur les applications qu’ils utilisent et peut être facilement intégrée à leurs flux de travail existants.
+Lorsqu'elle est visualisée par les utilisateurs de votre organisation, une étiquette de confidentialité s’affiche comme une balise sur les applications qu’ils utilisent et peut être facilement intégrée à leur flux de travail existant.
 
 Chaque élément qui prend en charge les étiquettes de confidentialité peut se voir appliquer une étiquette de confidentialité unique. Les documents et les e-mails peuvent se voir appliquer à la fois une étiquette de confidentialité et une [étiquette de rétention](retention.md#retention-labels).
 
@@ -134,11 +134,11 @@ Cette configuration d’étendue vous permet d’utiliser des étiquettes de con
 
 ![Options d’étendue des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
-Par défaut, l’étendue **Éléments** est toujours sélectionnée. Les autres étendues sont sélectionnées par défaut lorsque les fonctionnalités sont activées pour votre client :
+L’étendue **Éléments** (précédemment nommée **Fichiers et courriers**) est, par défaut, toujours sélectionnée. Les autres étendues sont sélectionnées par défaut lorsque les fonctionnalités sont activées pour votre client :
 
-- **Groupes et sites** : [activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **Groupes et sites** : voir [Activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Ressources de données schématisées** : [étiqueter automatiquement votre contenu dans Mappage de données Microsoft Purview](/azure/purview/create-sensitivity-label)
+- **Ressources de données schématisées** : voir [Étiqueter automatiquement votre contenu dans Mappage de données Microsoft Purview](/azure/purview/create-sensitivity-label)
 
 Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des éléments n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
 
