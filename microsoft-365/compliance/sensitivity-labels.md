@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Protection des donn
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663455"
+ms.locfileid: "66685962"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -71,7 +71,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Classifier du contenu sans utiliser les paramètres de protection.** Vous pouvez également simplement affecter une étiquette en tant que résultat d’une classification de contenu. Cette action fournit aux utilisateurs un mappage visuel de classification des noms d’étiquettes de votre organisation et ils peuvent utiliser les étiquettes pour générer des rapports d’usage et afficher les données d’activité pour votre contenu sensible. En se basant sur ces informations, vous pouvez toujours choisir d’appliquer les paramètres de protection plus tard.
 
-Dans tous ces cas, les étiquettes de confidentialité dans Microsoft 365 peuvent vous permettre d’effectuer les bonnes actions sur le bon contenu. Avec les étiquettes de confidentialité, vous pouvez classifier les données dans votre organisation et appliquer les paramètres de protection en fonction de cette classification.
+Dans tous ces cas, les étiquettes de confidentialité de Microsoft Purview peuvent vous aider à prendre les bonnes mesures sur le contenu approprié. Ces dernières vous permettent de classifier des données dans toute votre organisation et d’appliquer des paramètres de protection basés sur cette classification. Cette protection reste ensuite avec le contenu.
 
 Pour plus d’informations sur ces actions et d’autres scénarios pris en charge par les étiquettes de confidentialité, consultez [Scénarios courants pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). De nouvelles fonctionnalités sont constamment développées qui prennent en charge les étiquettes de confidentialité. Vous trouverez donc peut-être utile de faire référence à la [Feuille de route Microsoft 365](https://aka.ms/MIPC/Roadmap).
 
@@ -83,9 +83,9 @@ Lorsque vous attribuez une étiquette de confidentialité à du contenu, elle re
 
 - **Texte clair.** Une étiquette étant stockée sous forme de texte clair dans les métadonnées pour les fichiers et les courriers, les applications et services tiers peuvent la lire, puis appliquer leurs propres actions de protection, le cas échéant.
 
-- **Permanentes.** Une étiquette étant stockée dans des métadonnées pour des fichiers et des courriers, l’étiquette circule avec le contenu, peu importe l’emplacement d’enregistrement ou de stockage. L’identification d’étiquette unique devient la base pour l’application et le respect des stratégies que vous configurez.
+- **Permanentes.** Étant donné que l’étiquette est stockée dans les métadonnées des fichiers et des e-mails, l’étiquette reste avec le contenu, quel que soit l’emplacement où elle est enregistrée ou stockée. L'identification unique d’étiquette devient la base pour appliquer et faire respecter les stratégies que vous configurez.
 
-Lorsqu’elle est affichée par les utilisateurs, l’étiquette de confidentialité ressemble à une balise sur les applications qu’ils utilisent et elle peut facilement être intégrée à son flux de travail existant.
+Lorsqu'elle est visualisée par les utilisateurs de votre organisation, une étiquette de confidentialité s’affiche comme une balise sur les applications qu’ils utilisent et peut être facilement intégrée à leurs flux de travail existants.
 
 Chaque élément qui prend en charge les étiquettes de confidentialité peut se voir appliquer une étiquette de confidentialité unique. Les documents et les e-mails peuvent se voir appliquer à la fois une étiquette de confidentialité et une [étiquette de rétention](retention.md#retention-labels).
 
@@ -247,8 +247,7 @@ Si vous utilisez le client AIP, consultez [Pourquoi choisir l’étiquetage int�
 
 ### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
 
-> [!NOTE]
-> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le Portail Azure a été retirée le **31 mars 2021**. En savoir plus dans l’[Avis de désapprobation](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
+La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le Portail Azure a été retirée le **31 mars 2021**. En savoir plus dans l’[Avis de désapprobation](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
 
 Si votre client n’est pas encore sur la [plateforme d’étiquetage unifié](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), vous devez d’abord activer l’étiquette unifiée avant d’utiliser des étiquettes de confidentialité. Pour voir les instructions, consultez [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](/azure/information-protection/configure-policy-migrate-labels).
 
@@ -262,4 +261,4 @@ Vous pouvez également en savoir plus sur les [solutions de partenaires intégr�
 
 Pour la planification et les instructions relatives au déploiement, notamment les informations relatives aux licences, les autorisations, la stratégie de déploiement, une liste de scénarios pris en charge et la documentation de l’utilisateur final, consultez [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
 
-Pour découvrir comment utiliser des étiquettes de confidentialité afin de respecter les réglementations en matière de confidentialité des données, voir [Déployer la protection des informations pour les réglementations en matière de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+Pour découvrir comment utiliser des étiquettes de confidentialité pour se conformer aux réglementations sur la confidentialité des données, consultez [Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md).
