@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: Examiner et corriger les alertes de conformité des communications
           href: communication-compliance-investigate-remediate.md
-        - name: En savoir plus sur les audits et les rapports de la conformité des communications
+        - name: Utiliser les rapports de conformité des communications et les audits
           href: communication-compliance-reports-audits.md
-        - name: Conformité de la communication avec les solutions SIEM
+        - name: Utiliser la conformité des communications avec les solutions SIEM
           href: communication-compliance-siem.md
         - name: "Étude de cas\_: Contoso configure rapidement une stratégie de contenu inappropriée."
           href: communication-compliance-case-study.md

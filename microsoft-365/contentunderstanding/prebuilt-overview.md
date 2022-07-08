@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les modèles prédéfinis dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: d43a608885864f5c81a8938010a0a52a2c4998a6
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 47579f640e02874545177946534d81f1350104cd
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916224"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66687671"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble des modèles prédéfinis dans Microsoft SharePoint Syntex
 
@@ -33,7 +33,7 @@ Comme les modèles de compréhension de document, les modèles prédéfinis sont
 
 Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour l’appliquer à toute bibliothèque de documents SharePoint à laquelle vous avez accès.  
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 - Formats de fichier pris en charge : JPEG, PNG, BMP, TIFF et PDF (texte incorporé ou analysé).
 
@@ -53,9 +53,9 @@ Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour
 
 ### <a name="file-limitations"></a>Limitations de fichier
 
-Notez les différences suivantes concernant Microsoft Office fichiers textuels et les fichiers analysés par OCR (PDF, image ou TIFF) :
+Notez les différences suivantes concernant les fichiers texte Microsoft Office et les fichiers analysés par OCR (PDF, image ou TIFF) :
 
-- Office fichiers : tronqué à 64 000 caractères (lors de l’exécution sur des fichiers dans une bibliothèque de documents).
+- Fichiers Office : tronqués à 64 000 caractères (lorsqu’ils sont exécutés sur des fichiers dans une bibliothèque de documents).
 
 - Fichiers numérisés par OCR : la limite est de 20 pages.  
 
@@ -63,12 +63,9 @@ Notez les différences suivantes concernant Microsoft Office fichiers textuels e
 
 - Si deux modèles prédéfinis ou plus sont appliqués à la même bibliothèque, le fichier est classé à l’aide du modèle qui a le score de confiance moyen le plus élevé. Les entités extraites proviennent uniquement du modèle appliqué.
 
-- Si un modèle prédéfini est appliqué à une bibliothèque qui a un modèle de compréhension de document, le fichier est classé à l’aide du modèle de compréhension de document et des extracteurs formés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle prédéfini, les colonnes sont remplies à l’aide de ces valeurs extraites.
-
 - Si un modèle prédéfini est appliqué à une bibliothèque qui a un modèle de traitement de formulaire personnalisé, le fichier est classé à l’aide du modèle prédéfini et des extracteurs détectés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle de traitement de formulaire, les colonnes sont remplies à l’aide de ces valeurs extraites.
 
 - L’application de plusieurs modèles de traitement de formulaire personnalisés à une bibliothèque n’est pas prise en charge.
-
 
 ## <a name="see-also"></a>Voir aussi
 
