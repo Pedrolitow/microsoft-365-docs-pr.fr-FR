@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Guide opérationnel d'essai des solutions de conformité Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ab54e60dbb127ac5f5cdffc835d0d00dc423d38
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633782"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696247"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Guide opérationnel d'essai : solutions Microsoft Purview
 
@@ -184,7 +184,7 @@ Les étendues de stratégie adaptatives vous permettent de cibler dynamiquement 
 
 Les politiques utilisant des champs d'application adaptatifs restent à jour au fur et à mesure que l'organisation change avec l'arrivée ou le départ de nouveaux employés. De plus, ils ne sont pas soumis aux limites précédentes de 100/1 000 emplacements inclus dans une police.
 
-- Créez une portée de stratégie adaptative et utilisez-la avec une stratégie de rétention
+- Créez une [portée de stratégie adaptative](retention.md#adaptive-or-static-policy-scopes-for-retention) et utilisez-la avec une stratégie de rétention
 
 ### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>Étape 2 : Automatiser l’étiquetage pour appliquer une étiquette à tous les éléments par défaut
 
@@ -384,7 +384,7 @@ Pour activer l'analyse des risques d'initiés, vous devez être membre de Inside
 
 **Gérer les éléments à valeur élevée pour les exigences de conservation des enregistrements professionnels, légaux ou réglementaires** :
 
-Utilisez les fonctionnalités de gestion des enregistrements Microsoft Purview pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Tirez parti des fonctionnalités d’automatisation de la création à la collaboration, pour déclarer des enregistrements, conserver le contenu et les supprimer à la fin.
+Utilisez les fonctionnalités intégrées de gestion des enregistrements Microsoft Purview pour automatiser le calendrier de conservation des enregistrements réglementaires, juridiques et critiques de l'entreprise. Tirez parti des fonctionnalités d’automatisation de la création à la collaboration, pour déclarer des enregistrements, conserver le contenu et les supprimer à la fin.
 
 ### <a name="step-1-mark-contents-as-records"></a>Étape 1 : Marquer le contenu en tant qu’enregistrements  
 
@@ -393,7 +393,7 @@ Utilisez les fonctionnalités de gestion des enregistrements Microsoft Purview p
 
 Lorsque le contenu est déclaré un enregistrement, des restrictions sont imposées à l'élément en termes d'actions autorisées ou bloquées, des activités supplémentaires concernant les éléments sont enregistrées et vous disposez d'une preuve de disposition si les éléments sont supprimés à la fin de leur période de conservation.
 
-- Créer une étiquette de rétention qui déclare le contenu en tant qu'enregistrement ou enregistrement réglementaire
+- Créer une étiquette de rétention qui [déclare le contenu en tant qu'enregistrement ou enregistrement réglementaire](declare-records.md)
 
 ### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Étape 2 : Vérifier le contenu à approuver avant sa suppression définitive
 
@@ -402,7 +402,7 @@ Lorsque le contenu est déclaré un enregistrement, des restrictions sont impos�
 
 À la fin de la période de rétention, les utilisateurs que vous spécifiez (« réviseurs ») seront invités à examiner le contenu et à approuver l'action d'élimination permanente. Cela prend en charge si une action différente de la suppression est plus appropriée, comme l’affectation d’une période de rétention différente au contenu ou la suspension de la suppression pour un audit.
 
-- Créer une étiquette de rétention qui utilise la révision de disposition
+- [Créer une étiquette de rétention qui utilise la révision de disposition](disposition.md#disposition-reviews)
 
 ### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>Étape 3 : Appliquer automatiquement des étiquettes au contenu qui correspond à des conditions spécifiques
 
@@ -411,9 +411,9 @@ Lorsque le contenu est déclaré un enregistrement, des restrictions sont impos�
 
 L'application automatique d'étiquettes évite aux utilisateurs d'avoir à effectuer manuellement les activités d'étiquetage. Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci ne contient pas encore d’étiquette de rétention appliquée et des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des classifieurs pouvant être formés.
 
-- Application automatique d’étiquettes de rétention au contenu incluant des types spécifiques d’informations sensibles
-- Appliquer automatiquement des étiquettes de rétention au contenu à l'aide de classificateurs pouvant être entraînés
-- Application automatique des étiquettes de rétention comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
+- [Application automatique d’étiquettes de rétention au contenu incluant des types spécifiques d’informations sensibles](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Appliquer automatiquement des étiquettes de rétention au contenu à l'aide de classificateurs pouvant être entraînés](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [Application automatique des étiquettes de rétention comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 ## <a name="additional-trials-and-add-ons"></a>Essais et modules complémentaires supplémentaires
 
