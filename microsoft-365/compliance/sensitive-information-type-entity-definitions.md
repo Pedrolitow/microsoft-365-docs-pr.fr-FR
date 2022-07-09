@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: De nombreux types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et montre ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
-ms.openlocfilehash: 2d81410b86ca9a90b12dbaa850e36d8803af0d79
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 45ec1e04181de6bb6d3a7c15b9efa219fbe2d43e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622422"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696116"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -132,7 +132,6 @@ En outre, les modèles qu’un humain considérerait comme indicatifs de noms so
 
 - Français
 - Bulgare
-- Chinois
 - Croate
 - Tchèque
 - Danois
@@ -11597,7 +11596,7 @@ Cette entité nommée non groupée détecte les modèles liés à l’adresse ph
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Moyenne
+Moyen
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>Modes de vie liés aux conditions médicales
 
@@ -18510,7 +18509,7 @@ Cette entité nommée non groupée détecte les modèles liés à l’adresse ph
 
 ### <a name="confidence-level"></a>Niveau de confiance
 
-Moyen
+Moyenne
 
 ## <a name="us-social-security-number-ssn"></a>Numéro de sécurité sociale (SSN) des États-Unis
 

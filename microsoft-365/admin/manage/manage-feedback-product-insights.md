@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez les scores de promoteur Net (NPS) de vos utilisateurs finaux pour voir ce qu’ils pensent des produits et services Microsoft.
-ms.openlocfilehash: ec261553a5713d9e12205cbf4c88611a128bc48b
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: c7afd214359922c7946e3cb972ec6aced90857e0
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217351"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696203"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Commentaires et insights NPS du produit Microsoft pour votre organisation
 
-En tant qu’administrateur d’une organisation Microsoft 365, vous pouvez accéder aux enquêtes de produit NPS envoyées par Microsoft et obtenir des insights.  
+En tant qu’administrateur d’une organisation Microsoft 365, vous pouvez accéder aux enquêtes produit NPS envoyées par Microsoft et obtenir des insights.  
 
-Les enquêtes NPS (Net Promoter Score) recueillent les commentaires des utilisateurs et mesurent la probabilité que les utilisateurs disent qu’ils recommandent des produits et des services à leurs amis et collègues. Ces données peuvent être utilisées auprès de votre organisation pour déterminer les stratégies d’adoption et de déploiement de Microsoft 365 produits et services.
+Les enquêtes NPS (Net Promoter Score) recueillent les commentaires des utilisateurs et mesurent la probabilité que les utilisateurs disent qu’ils recommandent des produits et des services à leurs amis et collègues. Ces données peuvent être utilisées auprès de votre organisation pour déterminer les stratégies d’adoption et de déploiement des produits et services Microsoft 365.
 
 Nous utilisons des enquêtes NPS et des commentaires de vos utilisateurs finaux pour vous fournir des insights sur les produits et services Microsoft. Ces informations peuvent vous aider à identifier les produits et services que les utilisateurs finaux de votre organisation utilisent, ainsi qu’à identifier les problèmes et à les résoudre rapidement. Avec ces informations, vous pouvez :
 
@@ -49,16 +49,16 @@ Vous devez être [administrateur](../add-users/about-admin-roles.md) pour affich
 
 ## <a name="nps-survey-insights"></a>Insights d’enquête NPS
 
-1. Dans le Centre d’administration, accédez aux **insights de l’enquête** **HealthProduct** >  **feedbackNPS** > .
+1. Dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/), accédez aux **insights d’enquête NPS** **de commentaires** sur les produits  >  de **santé** > .
 2. À partir de la page **Insights de l’enquête NPS** , accédez à la page pour afficher les insights d’enquête liés à NPS pour votre organisation.
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Capture d’écran : Graphique principal NPS (Net Promoter Score)":::
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Capture d’écran : Graphique principal NPS (Net Promoter Score)" lightbox="../../media/product-feedback-main-page.png":::
 
 ### <a name="top-topic-filters"></a>Principaux filtres de rubrique
 
 Nous avons identifié les thèmes courants des commentaires des utilisateurs. Ensuite, nous avons utilisé des modèles Machine Learning qui entraînent les jeux de données et organisent automatiquement les commentaires en **rubriques principales**. Vous pouvez ensuite identifier les cinq premières rubriques avec le plus grand volume de commentaires détaillés.  
 
-:::image type="content" source="../../media/top-topics-filter.png" alt-text="Capture d’écran : Cinq rubriques avec les commentaires les plus détaillés":::
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="Capture d’écran : Cinq rubriques avec les commentaires les plus détaillés" lightbox="../../media/top-topics-filter.png":::
 
 > [!NOTE]
 > Nous ne publions un sujet intelligent qu’une fois qu’il répond à une barre de qualité minimale définie en partenariat avec des experts en la matière. Les métriques de précision et de rappel sont utilisées pour déterminer la même chose.
@@ -84,7 +84,7 @@ Les rubriques actuellement disponibles sont les suivantes :
 - Précision textuelle - 92 %
 - Rappel détaillé - 89 %
 
-**Général Compliment** fait référence aux commentaires des clients qui ont un sentiment positif et qui ne tiennent pas dans d’autres rubriques.
+**L’éloge général** fait référence aux commentaires des clients qui ont un sentiment positif et qui ne tiennent pas dans d’autres rubriques.
 
 - Précision textuelle - 93 %
 - Rappel détaillé - 98 %
@@ -138,7 +138,7 @@ Les graphiques sont filtrés par l’évaluation NPS comme suit :
 - Les passifs sont des clients qui sont satisfaits du service, mais pas assez pour recommander votre produit ou service.
 - Promoteurs - Clients heureux qui sont loyaux, enthousiastes et sont susceptibles de recommander votre produit ou service.
 
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Capture d’écran : Graphique montrant la probabilité de recommander une application à un ami ou un collègue":::
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Capture d’écran : Graphique montrant la probabilité de recommander une application à un ami ou un collègue" lightbox="../../media/how-likely-recommend.png":::
 
 ### <a name="export-to-csv-and-search"></a>Exporter vers CSV et rechercher
 
@@ -157,11 +157,11 @@ Vous pouvez filtrer par **canaux**, **produits**, **plateformes** et **types de 
 
 Les commentaires peuvent être envoyés sur **différentes plateformes** comme Android, iOS, Mac et Windows. Ce filtre vous permet de filtrer les commentaires en fonction de la plateforme sur laquelle il a été soumis.
 
-La majorité des Microsoft 365 pour les **produits** professionnels se trouvent sous ce filtre. Utilisez ce filtre pour sélectionner les produits qui ont reçu des commentaires.
+La majorité des **produits** Microsoft 365 pour entreprises se trouvent sous ce filtre. Utilisez ce filtre pour sélectionner les produits qui ont reçu des commentaires.
 
 Utilisez **les types de commentaires** (définis uniquement sur les types de commentaires NPS) pour filtrer les commentaires que nous collectons.
 
-:::image type="content" source="../../media/feedback-filters.png" alt-text="Capture d’écran : Graphique montrant les types de commentaires":::
+:::image type="content" source="../../media/feedback-filters.png" alt-text="Capture d’écran : Graphique montrant les types de commentaires" lightbox="../../media/feedback-filters.png":::
 
 ### <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

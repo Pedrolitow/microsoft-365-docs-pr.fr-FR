@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531097"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695862"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -53,7 +53,7 @@ Vous devez suivre les étapes générales suivantes pour intégrer correctement 
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Illustration du flux d’intégration pour les serveurs Windows et les appareils Windows 10" lightbox="images/server-onboarding-tools-methods.png":::
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
+## <a name="integration-with-microsoft-defender-for-servers"></a>Intégration à Microsoft Defender pour serveurs
 
 Microsoft Defender pour point de terminaison s’intègre en toute transparence à Microsoft Defender pour serveurs. Vous pouvez intégrer automatiquement des serveurs, faire en fait apparaître des serveurs surveillés par Microsoft Defender pour cloud dans Defender pour point de terminaison et effectuer des investigations détaillées en tant que client Microsoft Defender pour cloud.
 
@@ -196,6 +196,9 @@ Si vous utilisez Windows Server Update Services (WSUS) et/ou Microsoft Endpoint 
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>ÉTAPE 1 : Télécharger les packages d’installation et d’intégration
 
 Vous devez télécharger les packages **d’installation** et **d’intégration** à partir du portail.
+
+> [!NOTE]
+> Le package d’installation est mis à jour tous les mois. Veillez à télécharger le dernier package avant l’utilisation.
 
 > [!div class="mx-imgBorder"]
 > ![Image du tableau de bord d’intégration](images/install-agent-onboard.png)
@@ -374,7 +377,7 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
 Suivez les étapes décrites dans [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md) pour vérifier que le serveur fait rapport à Defender pour le service point de terminaison.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 
@@ -397,7 +400,7 @@ Pour les autres versions de serveur Windows, vous avez deux options pour déconn
 > [!NOTE]
 > Ces instructions de désintégrage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez les Microsoft Defender pour point de terminaison précédentes pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Les instructions pour migrer vers la nouvelle solution unifiée se trouvent [dans les scénarios de migration de serveur dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/server-migration).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)

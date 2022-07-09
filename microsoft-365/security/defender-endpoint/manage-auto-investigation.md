@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 06e2c6c5269b32b29be87f44635d65b9c610c344
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535865"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695613"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Passer en revue les actions de correction à la suite d’une investigation automatisée
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)
 
@@ -61,7 +61,7 @@ Qu’elle soit effectuée automatiquement ou après approbation, une enquête au
 
 ## <a name="review-pending-actions"></a>Examiner les actions en attente
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et connectez-vous.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a> et connectez-vous.
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**.
 
@@ -78,7 +78,7 @@ Qu’elle soit effectuée automatiquement ou après approbation, une enquête au
 
 ## <a name="review-completed-actions"></a>Passer en revue les actions terminées
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et connectez-vous.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a> et connectez-vous.
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**.
 
@@ -95,14 +95,14 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 |<ul><li>Investigation automatisée</li><li>Actions de réponse manuelles (voir la note ci-dessous)</li><li>Antivirus Microsoft Defender</li></ul>|<ul><li>Désactiver un pilote</li><li>Isoler l’appareil</li><li>Mettre en quarantaine un fichier</li><li>Supprimer une clé de Registre</li><li>Supprimer une tâche planifiée</li><li>Restreindre l'exécution de code</li><li>Arrêter un service</li></ul>|
 
 > [!NOTE]
-> [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) et [Microsoft Defender pour les PME](../defender-business/mdb-overview.md) inclure uniquement les actions de réponse manuelle suivantes :
+> [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) et [Microsoft Defender pour entreprises](../defender-business/mdb-overview.md) inclure uniquement les actions de réponse manuelle suivantes :
 >
 > - Exécuter une analyse antivirus
 > - Isoler l’appareil
 > - Arrêter et mettre en quarantaine un fichier
 > - Ajouter un indicateur pour bloquer ou autoriser un fichier
 >
-> Pour plus d’informations, consultez [Comparer les plans Microsoft Defender pour point de terminaison](defender-endpoint-plan-1-2.md) et [Comparer les fonctionnalités de sécurité dans Microsoft 365 plans pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md).
+> Pour plus d’informations, consultez [Comparer Microsoft Defender pour point de terminaison plans](defender-endpoint-plan-1-2.md) et [Comparer les fonctionnalités de sécurité dans les plans Microsoft 365 pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md).
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Pour annuler plusieurs actions à la fois
 
@@ -127,9 +127,9 @@ Les niveaux d’automatisation déterminent si certaines actions de correction s
 |Paramètre de groupe d’appareils|Résultats des investigations automatisées|Procédure|
 |---|---|---|
 |**Complet : corriger automatiquement les menaces**<br/>(recommandé)|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Les actions de correction appropriées sont effectuées automatiquement.|[Passer en revue les actions terminées](#review-completed-actions)|
-|**Complet : corriger automatiquement les menaces**|Un verdict de *suspect* est rendu pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation pour continuer.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
+|**Complet : corriger automatiquement les menaces**|Un verdict de *suspect* est rendu pour un élément de preuve. <p> Les actions de correction appropriées sont effectuées automatiquement.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
 |**Semi - exiger l’approbation de toute correction**|Un verdict de *malveillance* ou *de suspect* est rendu pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation pour continuer.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
-|**Semi - Exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Si l’artefact est un fichier ou un exécutable et qu’il se trouve dans un répertoire de système d’exploitation, tel que le dossier Windows ou le dossier Des fichiers programme, des actions de correction sont en attente d’approbation. <p> Si l’artefact *ne* se trouve pas dans un répertoire de système d’exploitation, des actions de correction sont effectuées automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
+|**Semi - Exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Si l’artefact est un fichier ou un exécutable et qu’il se trouve dans un répertoire de système d’exploitation, tel que le dossier Windows ou le dossier Program Files, les actions de correction sont en attente d’approbation. <p> Si l’artefact *ne* se trouve pas dans un répertoire de système d’exploitation, des actions de correction sont effectuées automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
 |**Semi - Exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *suspect* est rendu pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions).|
 |**Semi - Exiger l’approbation pour la correction des dossiers non temporaires**|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Si l’artefact est un fichier ou un exécutable qui ne se trouve pas dans un dossier temporaire, tel que le dossier de téléchargements ou le dossier temporaire de l’utilisateur, les actions de correction sont en attente d’approbation. <p> Si l’artefact est un fichier ou un exécutable qui *se trouve* dans un dossier temporaire, des actions de correction sont effectuées automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
 |**Semi - Exiger l’approbation pour la correction des dossiers non temporaires**|Un verdict de *suspect* est rendu pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|

@@ -9,12 +9,12 @@ audience: Developer
 ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 65b0ffd5d605302dd62369471b65c1ac10aacd40
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d5390c97c097bdbf52e496336e3a239d975a88aa
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641765"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696225"
 ---
 # <a name="office-tls-certificate-changes"></a>Modifications du certificat TLS Office
 
@@ -143,7 +143,8 @@ L’autorité de certification racine, l’autorité de certification intermédi
 Dans de très rares cas, les utilisateurs d’entreprise peuvent voir des erreurs de validation de certificat lorsque l’autorité de certification racine « DigiCert Global Root G2 » apparaît comme révoquée. Cela est dû à un bogue Windows connu dans les deux conditions suivantes :
 
 - L’autorité de certification racine se trouve dans le [magasin de certificats CurrentUser\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) et il manque les propriétés et `NotBeforeEKU` les `NotBeforeFileTime`
-- L’autorité de certification racine se trouve également dans le [magasin de certificats LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine), mais possède les propriétés et `NotBeforeEKU` les `NotBeforeFileTime` propriétés
+- L’autorité de certification racine se trouve dans le [magasin de certificats LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine), mais possède les propriétés et `NotBeforeEKU` les propriétés `NotBeforeFileTime`
+- L’autorité de certification racine n’est PAS dans le [magasin de certificats LocalMachine\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
 
 Tous les certificats feuille émis à partir de cette autorité de certification racine après la `NotBeforeFileTime` révoquer. 
 
@@ -182,7 +183,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-Un utilisateur peut résoudre le problème en supprimant la copie de l’autorité de certification racine dans le magasin de `CurrentUser\Root` certificats :
+Un utilisateur peut résoudre le problème en supprimant la copie de l’autorité de certification racine dans le `CurrentUser\Root` magasin de certificats en procédant comme ceci :
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+ou 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+La première approche crée une boîte de dialogue Windows qu’un utilisateur doit cliquer alors que la deuxième approche ne le fait pas. 
