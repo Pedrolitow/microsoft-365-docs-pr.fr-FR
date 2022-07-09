@@ -20,7 +20,7 @@
   items:
     - name: Configurer les paramètres de confidentialité
       href: configure-privacy-settings.md
-    - name: Demandes RGPD
+    - name: Gérer les demandes RGPD
       href: gdpr-requests.md
 - name: Tableau blanc pour le secteur public
   items:
