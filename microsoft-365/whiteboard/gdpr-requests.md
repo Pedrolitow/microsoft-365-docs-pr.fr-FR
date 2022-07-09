@@ -1,5 +1,5 @@
 ---
-title: Gérer les demandes de personnes concernées par le RGPD dans le Tableau blanc Microsoft
+title: Gérer les demandes des personnes concernées par le GDPR dans Microsoft Whiteboard
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -11,36 +11,36 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
-description: Découvrez comment exporter, transférer ou supprimer des informations personnelles à partir du Tableau blanc Microsoft.
+description: Découvrez comment exporter, transférer ou supprimer des informations personnelles de Microsoft Whiteboard.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: e35aa6825814043eb91c2d24c7426e7b4489bb76
 ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2022
 ms.locfileid: "66687612"
 ---
-# <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Gérer les demandes de personnes concernées par le RGPD dans le Tableau blanc Microsoft
+# <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Gérer les demandes des personnes concernées par le GDPR dans Microsoft Whiteboard
 
-Le Règlement général sur la protection des données (RGPD) donne aux utilisateurs le droit de gérer les données personnelles collectées par une organisation. Ces droits peuvent être exercés par le biais d’une demande de sujet de données (DSR).
+Le règlement général sur la protection des données (RGPD) donne des droits aux utilisateurs pour gérer les données personnelles collectées par une organisation. Ces droits peuvent être exercés par le biais d'une demande de la personne concernée (DPC).
 
-Cet article fournit des informations sur l’exportation, le transfert ou la suppression d’informations personnelles à partir du Tableau blanc Microsoft.
+Cet article fournit des informations sur la manière d'exporter, de transférer ou de supprimer des informations personnelles de Microsoft Whiteboard.
 
 ## <a name="export-a-whiteboard"></a>Exporter un tableau blanc
 
 ### <a name="on-windows-10"></a>Sur Windows 10
 
-Sur Windows 10, procédez comme suit :
+Sur Windows 10, effectuez les étapes suivantes :
 
 1. Sélectionnez le bouton **Plus** (**...**) pour le tableau blanc que vous souhaitez exporter. 
 
-2. Sélectionnez **Exporter l’image (png).**
+2. Sélectionnez **Exporter une image (png)**.
 
-3. Dans la fenêtre qui s’ouvre, sélectionnez un emplacement où enregistrer l’image.
+3. Dans la fenêtre qui s’ouvre, sélectionnez l’emplacement dans lequel enregistrer l’image.
 
 ### <a name="on-ios-or-the-web"></a>Sur iOS ou sur le web
 
-Sur iOS ou sur le web, procédez comme suit :
+Sur iOS ou sur le web, effectuez les étapes suivantes :
 
 1. Ouvrez le tableau blanc à exporter.
 
@@ -48,21 +48,21 @@ Sur iOS ou sur le web, procédez comme suit :
 
 3. Effectuez l'une des opérations suivantes :
 
-   - Dans le Tableau blanc pour iOS, sélectionnez **Exporter l’image (png).**
+   - Dans Whiteboard pour iOS, sélectionnez **Exporter une image (png)**.
 
-   - Dans tableau blanc pour le web, sélectionnez **Exporter l’image (SVG).**
+   - Dans Whiteboard pour le web, sélectionnez **Exporter l’image (SVG).**
 
-4. Dans la fenêtre qui s’ouvre, sélectionnez un emplacement où enregistrer l’image.
+4. Dans la fenêtre qui s’ouvre, sélectionnez l’emplacement dans lequel enregistrer l’image.
 
 ## <a name="transfer-a-whiteboard"></a>Transférer un tableau blanc
 
-Pour transférer un tableau blanc, contactez votre administrateur informatique pour lui faire modifier la propriété des tableaux blancs que vous souhaitez transférer.
+Pour transférer un tableau blanc, contactez votre administrateur informatique et demandez-lui de changer la propriété des tableaux blancs que vous souhaitez transférer.
 
 ## <a name="delete-a-whiteboard"></a>Supprimer un tableau blanc
 
-Pour supprimer un tableau blanc, procédez comme suit :
+Pour supprimer un tableau blanc, effectuez les étapes suivantes :
 
-1. Sélectionnez le bouton **Plus** (**...**) du tableau blanc à supprimer.
+1. Sélectionnez le bouton **Plus** (**...**) du tableau blanc que vous souhaitez supprimer.
 
 2. Sélectionnez **Supprimer**.
 
