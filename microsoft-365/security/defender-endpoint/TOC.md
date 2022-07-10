@@ -43,6 +43,7 @@
 #### [Utiliser la stratégie de groupe](manage-mde-post-migration-group-policy-objects.md)
 #### [Utiliser PowerShell, WMI ou MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Scénarios de migration de serveur](server-migration.md)
+##### [Migration de serveurs de Microsoft Monitoring Agent vers la solution unifiée](application-deployment-via-mecm.md)
 
 ## [Intégrer et configurer des appareils]()
 ### [Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison](onboard-configure.md)
@@ -245,7 +246,7 @@
 ### [Réduction de la surface d’attaque]()
 #### [Présentation de la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
 #### [Règles de réduction de la surface d’attaque (ASR)]()
-##### [Découvrez les règles du RSA](attack-surface-reduction.md)
+##### [Découvrez les règles du RSA](attack-surface-reduction.md).
 ##### [Guide de déploiement des règles de réduction de surface d’attaque (ASR)]()
 ###### [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
 ###### [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)

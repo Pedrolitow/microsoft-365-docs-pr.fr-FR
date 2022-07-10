@@ -20,24 +20,24 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
-ms.date: 06/02/2022
-ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/07/2022
+ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490362"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695701"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Annuler votre abonnement Microsoft
 
 Si vous souhaitez annuler votre abonnement, le moyen le plus simple consiste à [désactiver la facturation périodique](renew-your-subscription.md). Lorsque vous désactivez la facturation périodique, vous pouvez continuer à utiliser votre abonnement jusqu’à ce qu’il expire à la fin de la période d’abonnement. Si vous souhaitez annuler immédiatement, utilisez les informations et les étapes décrites dans cet article pour ce faire.
 
+Vous pouvez annuler votre essai gratuit à tout moment pour arrêter les frais futurs. Après votre essai gratuit d’un mois, les frais d’abonnement applicables vous seront facturés.
+
 > [!IMPORTANT]
-> - Cet article s'applique uniquement aux abonnements Dynamics 365, Intune, Power Platform et Microsoft 365 pour les entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
+> - Cet article s'applique uniquement aux abonnements Dynamics 365, Intune, Power Platform, Windows 365 et Microsoft 365 pour les entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
 > - Si vous avez acheté votre abonnement auprès d’un représentant Microsoft ou d’un partenaire revendeur, vous avez sept jours pour annuler un remboursement au prorata. Contactez votre vendeur ou partenaire pour vous aider à annuler votre abonnement. [En savoir plus sur les partenaires](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
 > - Si votre organisation se trouve au Chili et que vous avez acheté votre abonnement par le biais d’un partenaire au Chili, vous avez 10 jours pour annuler un remboursement au prorata.
-
-Si vous souhaitez annuler votre abonnement, le moyen le plus simple consiste à [désactiver la facturation périodique](renew-your-subscription.md). Lorsque vous désactivez la facturation périodique, vous pouvez continuer à utiliser votre abonnement jusqu’à ce qu’il expire à la fin de la période d’abonnement. Si vous souhaitez annuler immédiatement, utilisez les informations et les étapes décrites dans cet article pour ce faire.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -58,9 +58,6 @@ Vous ne pouvez annuler et recevoir un crédit ou un remboursement au prorata que
 Si vous devez annuler dans les sept jours suivant le début ou le renouvellement de votre abonnement, accédez à [Étapes d’annulation de votre abonnement](#steps-to-cancel-your-subscription) plus loin dans cet article.
 
 Si plus de sept jours se sont écoulés, [désactivez la facturation périodique](renew-your-subscription.md). Cela empêche le renouvellement de votre abonnement à la fin de sa période.  Vous conservez l’accès à vos produits et services pour le reste de votre abonnement. Si vous avez un abonnement annuel et que vous payez mensuellement, vous êtes facturé chaque mois pour le reste de votre période d’abonnement.
-
-> [!NOTE]
-> Annulez votre essai gratuit à tout moment pour arrêter les frais futurs. Après votre essai gratuit d’un mois, les frais d’abonnement applicables vous seront facturés.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Si vous n'avez pas de profil de facturation
 
