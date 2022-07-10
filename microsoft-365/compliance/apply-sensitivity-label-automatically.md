@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662313"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696046"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -194,8 +194,7 @@ Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, s�
 
 ![Options pour les classifieurs pouvant être formés et les étiquettes de confidentialité.](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. N’utilisez pas ce classificateur et si vous l’utilisez actuellement, nous vous recommandons de déplacer vos processus d’entreprise hors de celui-ci et d’utiliser plutôt les classifieurs pré-formés **Harcèlement ciblé**, **Vulgarité** et **Menace**.
+Les classifieurs préentraînés disponibles sont souvent mis à jour. Il peut donc y avoir plus d’entrées à sélectionner que celles affichées dans cette capture d’écran.
 
 Pour plus d’informations sur ces classifieurs, voir [En savoir plus sur les classifieurs de formation](classifier-learn-about.md).
 
