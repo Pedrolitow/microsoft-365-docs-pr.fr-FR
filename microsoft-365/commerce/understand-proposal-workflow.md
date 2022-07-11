@@ -19,21 +19,21 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
-ms.date: 04/28/2022
-ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/11/2022
+ms.openlocfilehash: e6e24d56346f67c40f114cf7ab23345d4511b026
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485976"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714068"
 ---
 # <a name="understand-the-microsoft-proposal-workflow"></a>Comprendre le flux de travail de la proposition Microsoft
 
-Une proposition est une offre formelle de Microsoft pour que votre organisation achète des produits et services Microsoft. Vous travaillez directement avec un représentant Microsoft pour déterminer les produits, services et conditions spécifiques de votre proposition.
+Une proposition est une offre formelle de Microsoft pour que votre organisation achète des produits et services Microsoft. Les propositions représentent des commandes volumineuses que le service informatique ou d’approvisionnement de votre organisation passe avec Microsoft.
 
-Un représentant Microsoft rédige une proposition qui contient les éléments dont vous et votre représentant avez discuté. Le représentant vous envoie un e-mail contenant un lien vers le portail de la Place de marché Azure. Le site contient la proposition préparée spécifiquement pour vous et votre organisation.
+Avant le début du flux de travail de la proposition, votre service d’approvisionnement travaille directement avec un représentant Microsoft désigné pour déterminer les produits et services spécifiques dont votre organisation a besoin. Ensuite, votre représentant Microsoft rédige une proposition et envoie à votre service d’approvisionnement un e-mail contenant un lien pour accepter la proposition dans le portail de la Place de marché Azure. Le site contient la proposition préparée spécifiquement pour vous et votre organisation.
 
-Une fois que vous avez reçu l’e-mail de notification, suivez le lien vers le site de proposition. Une fois connecté au site, vous pouvez démarrer le processus d’examen des propositions.
+Après avoir suivi le lien et vous être connecté au site de proposition, vous pouvez démarrer le processus d’examen de la proposition. Une fois que vous avez terminé l’examen et l’extraction de la proposition, vous recevez une facture pour les produits achetés conformément au plan de facturation que vous avez sélectionné. Pour savoir comment la facturation fonctionne pour les propositions, consultez [Comprendre la facturation ci-dessous](#understand-invoicing) .
 
 ## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Conditions préalables à l’achat d’articles avec une proposition
 
@@ -53,7 +53,7 @@ Le Contrat client Microsoft (MCA) permet à une organisation d’acheter des pro
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Autorisations nécessaires pour signer un contrat ou payer des articles
 
-Vous devez être propriétaire d’un compte de facturation ou contributeur de compte de facturation pour signer un contrat ou acheter des produits et services. Si vous êtes administrateur général, mais que vous n’avez pas l’un de ces rôles, vous pouvez vous les attribuer vous-même. Si vous n’êtes pas administrateur général, demandez à votre administrateur général ou propriétaire de compte de facturation de vous attribuer l’un des rôles.
+Vous devez être propriétaire d’un compte de facturation ou contributeur de compte de facturation pour signer un contrat ou acheter des produits et services. Si vous êtes administrateur général, mais que vous n’avez pas l’un de ces rôles, vous pouvez vous les attribuer vous-même. Si vous n’êtes pas administrateur général, demandez à votre administrateur général ou propriétaire du compte de facturation de vous attribuer l’un des rôles.
 
 Les rôles de propriétaire de compte de facturation et de contributeur de compte de facturation sont attribués à l’aide de l’une des méthodes suivantes.
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur les rôles de compte de facturation, consultez [C
 
 S’il s’agit d’un nouveau compte de facturation et que personne n’a accepté de contrat, vous devenez automatiquement le propriétaire du compte de facturation, à condition que :
 
-- La personne nommée dans la proposition **ou**
+- La personne nommée dans la proposition ou
 - Êtes-vous déjà [administrateur général Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) pour votre organisation ?
 
 ## <a name="what-is-the-overall-workflow"></a>Quel est le flux de travail global ?
@@ -88,7 +88,7 @@ Le flux de travail de la proposition globale se présente comme suit :
 - Vous passez en revue la proposition, acceptez le MCA si nécessaire et terminez le processus de caisse.
   > [!IMPORTANT]
   > Vous devez être autorisé à signer un MCA au nom de votre organisation. Si vous n’avez pas cette autorité, quelqu’un qui le fait doit effectuer cette étape.
-- Une fois l’extraction terminée, vous bénéficiez de liens supplémentaires pour configurer vos produits et services.
+- Une fois l’extraction terminée, vous avez plus de liens pour configurer vos produits et services.
 
 ## <a name="proposal-terms"></a>Termes de la proposition
 
@@ -98,7 +98,7 @@ Le tableau suivant contient les termes et définitions qui apparaissent dans vot
 |---|---|
 | Compte de facturation | Compte utilisé pour gérer les paramètres, les factures, les modes de paiement et les produits de votre compte. |
 | Profil de facturation | Informations sur votre organisation qui vous permettent de personnaliser les éléments inclus dans votre facture et le mode de paiement de vos factures. Le profil de facturation inclut le nom du compte de facturation, les modes de paiement utilisés pour le profil de facturation spécifique, les informations de contact, les paramètres de facture et les autorisations qui vous permettent de modifier le profil de facturation, de payer les factures et d’acheter des produits et services. |
-| Contrats existants | Tout accord que votre organisation a déjà en place avec Microsoft. Cela peut inclure, sans s’y limiter, un Accord Entreprise, un Contrat de services & produit Microsoft ou Contrat client Microsoft. |
+| Contrats existants | Tout accord que votre organisation a déjà en place avec Microsoft. Les contrats peuvent inclure, sans s’y limiter, un Accord Entreprise, un Contrat de services & produit Microsoft ou Contrat client Microsoft. |
 | Contrat client Microsoft (MCA) | Un contrat qui décrit les conditions générales du compte détenu par votre organisation auprès de Microsoft. |
 | Représentant Microsoft | Un représentant Microsoft autorisé qui prépare une proposition pour vous et votre organisation. |
 | Organisation | Entité juridique qui utilise des produits, technologies ou services Microsoft. |
@@ -113,7 +113,7 @@ Une fois connecté, la première chose à faire est de consulter les information
 
 La section **Votre organisation** affiche le compte de facturation qui lui est associé. Les informations de compte de facturation sont extraites d’un compte de facturation existant ou créées pour vous par le représentant Microsoft. Si votre organisation est une filiale d’une autre organisation, vous voyez également une section **De l’organisation** responsable avec le nom et l’adresse de cette organisation.
 
-S’il s’agit de la première fois que votre organisation établit une relation commerciale avec Microsoft et que vous n’avez pas encore signé de mca, si les informations de **votre organisation** ou **de votre organisation responsable** sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un MCA, vous pouvez consulter et modifier l’adresse et les informations de contact de votre organisation sur la page [Comptes de facturation](https://go.microsoft.com/fwlink/p/?linkid=2084771) dans le Centre d'administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service](../admin/get-help-support.md).
+Si cette commande est la première fois que votre organisation établit une relation commerciale avec Microsoft et que vous n’avez pas encore signé de mca, si les informations de **votre organisation** ou **de votre organisation responsable** sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un MCA, vous pouvez consulter et modifier l’adresse et les informations de contact de votre organisation sur la page [Comptes de facturation](https://go.microsoft.com/fwlink/p/?linkid=2084771) dans le Centre d'administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de support pour la mettre à jour. [Découvrez comment ouvrir une demande de support](../admin/get-help-support.md).
 
 ### <a name="your-information"></a>Vos informations
 
@@ -154,7 +154,7 @@ La page de sortie contient les sections suivantes :
 
 Cette section affiche le compte de facturation utilisé pour la proposition. Si vous devez modifier des informations, sélectionnez le lien **Modifier** . Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID d’impôt doit être lié au pays répertorié dans la section **Vendre à** . Si vous disposez d’une exonération fiscale, vous devez ouvrir un ticket de support pour demander le statut d’exonération fiscale.
 
-Pour en savoir plus sur les ID d’impôt et sur la façon de demander l’exonération fiscale, consultez [l’information fiscale](billing-and-payments/tax-information.md).
+Pour en savoir plus sur les ID d’impôt et sur la façon de demander l’exonération fiscale, consultez [les informations fiscales microsoft 365](billing-and-payments/tax-information.md).
 
 ### <a name="billed-to"></a>Facturé à
 
@@ -164,7 +164,7 @@ Pour plus d’informations sur les profils de facturation, consultez [Gérer les
 
 ### <a name="proposal-items-in-this-order"></a>Éléments de proposition dans cet ordre
 
-Cette section affiche la liste de tous les éléments inclus dans la proposition. La liste peut inclure une ou plusieurs des catégories suivantes :
+Cette section affiche une liste de tous les éléments inclus dans la proposition, qui peut inclure une ou plusieurs des catégories suivantes :
 
 - **Termes supplémentaires** Liste des modifications apportées à la MCA qui contiennent des termes pour votre organisation. Par exemple, cette liste peut inclure des termes HIPAA ou RGPD.
 - **Acheter maintenant** Liste des éléments que vous payez lors de l’extraction à la fin du flux de travail d’acceptation de la proposition.
@@ -190,6 +190,6 @@ Si vous êtes un client Azure existant avec un Accord Entreprise et que vous sig
 
 ## <a name="understand-invoicing"></a>Comprendre la facturation
 
-Une fois que vous avez extrait et terminé votre commande, une facture initiale est envoyée dans les 24 à 48 heures. Après cela, vous recevez des factures vers le 5 de chaque mois. La facture mensuelle contient des frais du mois précédent. Si vous avez des crédits pour votre compte, ils sont déduits des crédits monétaires de votre profil de facturation et appliqués à votre solde de facture. Le solde restant après l’application des crédits est le solde dû. Vous disposez de 30 jours à compter de la date de facturation pour payer la facture.
+Une fois que vous avez extrait et terminé votre commande, une facture initiale est envoyée dans les 24 à 48 heures. Après cela, vous recevez des factures environ le cinquième de chaque mois. La facture mensuelle contient des frais du mois précédent. Si vous avez des crédits pour votre compte, ils sont déduits des crédits monétaires de votre profil de facturation et appliqués à votre solde de facture. Le solde restant après l’application des crédits est le solde dû. Vous disposez de 30 jours à compter de la date de facturation pour payer la facture.
 
 Les instructions de paiement pour l’emplacement d’envoi des transferts de chèque ou de virement sont incluses dans la copie PDF de votre facture. Pour afficher ou télécharger votre facture, consultez [Afficher votre facture.](billing-and-payments/view-your-bill-or-invoice.md)

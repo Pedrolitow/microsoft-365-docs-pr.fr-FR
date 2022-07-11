@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de l’e-mail et du document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 3ff2143a170531b527850b4805cb9a79f10afb5e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4de131ea9dc8b1f7df486dd5c6ead7eee677869e
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623868"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714550"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes de mots clés et conditions de recherche pour eDiscovery
 
@@ -140,27 +140,27 @@ Le tableau suivant répertorie les propriétés de contact indexées et que vous
 |Surname|Nom dans la propriété **Last** name.|
 |Titre|Titre dans la propriété **Titre du travail** .|
 
-## <a name="searchable-sensitive-data-types"></a>Types de données sensibles utilisables dans une requête
+<!--## Searchable sensitive data types
 
-Vous pouvez utiliser les outils de recherche eDiscovery dans le portail de conformité pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur SharePoint et OneDrive Entreprise sites. Pour ce faire, utilisez la `SensitiveType` propriété et le nom (ou l’ID) d’un type d’informations sensibles dans une requête de mot clé. Par exemple, la requête `SensitiveType:"Credit Card Number"` retourne des documents qui contiennent un numéro de carte de crédit. La requête  `SensitiveType:"U.S. Social Security Number (SSN)"` retourne des documents qui contiennent un numéro de sécurité sociale américain.
+You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
-Pour afficher la liste des types d’informations sensibles que vous pouvez rechercher, accédez aux **classifications de données Types** **d’informations sensibles** \> dans le portail de conformité. Vous pouvez également utiliser l’applet de commande **Get-DlpSensitiveInformationType** dans Security & Compliance PowerShell pour afficher une liste de types d’informations sensibles.
+To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
 
-Pour plus d’informations sur la création de requêtes à l’aide de la `SensitiveType` propriété, consultez [Formulaire d’une requête pour rechercher des données sensibles stockées sur des sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-### <a name="limitations-for-searching-sensitive-data-types"></a>Limitations pour la recherche de types de données sensibles
+<!--### Limitations for searching sensitive data types
 
-- Pour rechercher des types d’informations sensibles personnalisés, vous devez spécifier l’ID du type d’informations sensibles dans la `SensitiveType` propriété. L’utilisation du nom d’un type d’informations sensibles personnalisé (comme indiqué dans l’exemple pour les types d’informations sensibles intégrés dans la section précédente) ne retourne aucun résultat. Utilisez la colonne **Publisher** de la page **Types d’informations sensibles** dans le centre de conformité (ou la propriété **Publisher** dans PowerShell) pour différencier les types d’informations sensibles intégrés et personnalisés. Les types de données sensibles intégrés ont une valeur pour `Microsoft Corporation` la propriété **Publisher** .
+- To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
 
-  Pour afficher le nom et l’ID des types de données sensibles personnalisés dans votre organisation, exécutez la commande suivante dans Security & Compliance PowerShell :
+  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
   ```
 
-  Vous pouvez ensuite utiliser l’ID dans la `SensitiveType` propriété de recherche pour renvoyer des documents qui contiennent le type de données sensibles personnalisé ; par exemple, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
+  Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- Vous ne pouvez pas utiliser les types d’informations sensibles et la `SensitiveType` propriété de recherche pour rechercher des données sensibles au repos dans Exchange Online boîtes aux lettres. Cela inclut les messages de conversation 1:1, les messages de conversation de groupe 1:N et les conversations de canal d’équipe dans Microsoft Teams, car tout ce contenu est stocké dans des boîtes aux lettres. Toutefois, vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour protéger les données de messagerie sensibles en transit. Pour plus d’informations, consultez [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md) et [rechercher et rechercher des données personnelles](/compliance/regulatory/gdpr).
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).-->
 
 ## <a name="search-operators"></a>Opérateurs de recherche
 

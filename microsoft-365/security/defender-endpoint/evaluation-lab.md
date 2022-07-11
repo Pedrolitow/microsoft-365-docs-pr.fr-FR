@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8a369aba012d7de23f72501ef1ce042750c57f7d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679437"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714594"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>laboratoire d’évaluation Microsoft Defender pour point de terminaison
 
@@ -43,7 +43,7 @@ Avec l’expérience de configuration simplifiée, vous pouvez vous concentrer s
 
 Vous aurez un accès complet aux puissantes fonctionnalités de la plateforme, telles que les investigations automatisées, la chasse avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète que Defender pour point de terminaison offre.
 
-Vous pouvez ajouter des appareils Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu) qui sont préconfigurés pour que les dernières versions du système d’exploitation et les composants de sécurité appropriés soit installés, ainsi que Office standard 2019.
+Vous pouvez ajouter des appareils Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu) qui sont préconfigurés pour que les dernières versions du système d’exploitation et les composants de sécurité appropriés soit installés, ainsi qu’Office 2019 Standard.
 
 Vous pouvez également installer des simulateurs de menaces. Defender pour point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender pour point de terminaison sans avoir à quitter le portail.
 
@@ -66,7 +66,7 @@ Pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.m
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
-## <a name="get-started-with-the-lab"></a>Démarrage avec le labo
+## <a name="get-started-with-the-lab"></a>Prise en main du labo
 
 Vous pouvez accéder au labo à partir du menu. Dans le menu de navigation, sélectionnez **Évaluation et didacticiels > laboratoire d’évaluation**.
 
@@ -107,7 +107,7 @@ Une fois le processus d’installation du labo terminé, vous pouvez ajouter des
 
 Lorsque vous ajoutez un appareil à votre environnement, Defender pour point de terminaison configure un appareil bien configuré avec les détails de la connexion. Vous pouvez ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu).
 
-L’appareil sera configuré avec la version la plus récente du système d’exploitation et Office 2019 Standard, ainsi que d’autres applications telles que Java, Python et SysIntenals.
+L’appareil sera configuré avec la version la plus récente du système d’exploitation et d’Office 2019 Standard, ainsi que d’autres applications telles que Java, Python et SysIntenals.
 
 Si vous avez choisi d’ajouter un simulateur de menaces pendant la configuration du labo, l’agent du simulateur de menaces est installé sur tous les appareils que vous ajoutez.
 
@@ -125,7 +125,7 @@ Les composants de sécurité suivants sont préconfigurés sur les appareils de 
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus Microsoft Defender sera activé (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’exécuter votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, consultez [Configurer la protection always on](configure-real-time-protection-microsoft-defender-antivirus.md).
+> L’Antivirus Microsoft Defender est activé (pas en mode audit). Si l’Antivirus Microsoft Defender vous empêche d’exécuter votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, consultez [Configurer la protection always on](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 Les paramètres d’investigation automatisée dépendent des paramètres du locataire. Elle sera configurée pour être semi-automatisée par défaut. Pour plus [d’informations, consultez Vue d’ensemble des enquêtes automatisées](automated-investigations.md).
 
@@ -159,10 +159,7 @@ Les paramètres d’investigation automatisée dépendent des paramètres du loc
    > Dans la colonne **d’état du simulateur** , vous pouvez pointer sur l’icône d’informations pour connaître l’état d’installation d’un agent.
 
 
-## <a name="add-a-domain-controller-preview"></a>Ajouter un contrôleur de domaine (préversion)
-
-> [!IMPORTANT]
-> Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+## <a name="add-a-domain-controller"></a>Ajouter un contrôleur de domaine 
 
 Ajoutez un contrôleur de domaine pour exécuter des scénarios complexes tels que le déplacement latéral et les attaques multiphases sur plusieurs appareils.
 
@@ -219,9 +216,9 @@ Si vous recherchez une simulation prédéfine, vous pouvez utiliser nos [scénar
 > [!NOTE]
 > La connexion aux appareils de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
 
-1. Connecter à votre appareil et exécutez une simulation d’attaque en sélectionnant **Connecter**.
+1. Connectez-vous à votre appareil et exécutez une simulation d’attaque en sélectionnant **Se connecter**.
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="Bouton Connecter pour les appareils de test" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="images/test-machine-table.png" alt-text="Bouton Se connecter pour les appareils de test" lightbox="images/test-machine-table.png":::
 
 
    :::image type="content" source="images/remote-connection.png" alt-text="Écran de connexion bureau à distance" lightbox="images/remote-connection.png":::

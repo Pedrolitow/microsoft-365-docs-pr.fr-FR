@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 07/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez la solution eDiscovery (Premium) dans Microsoft Purview. Cet article fournit une vue d’ensemble d’eDiscovery (Premium) dans Microsoft Purview, un outil qui vous aide à gérer les investigations internes et externes. Il décrit également les raisons commerciales de l’utilisation d’eDiscovery (Premium) pour gérer vos enquêtes juridiques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5331ada9baf364f62c44c63a5e2e5b2b4d060292
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639839"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714572"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Vue d’ensemble de Microsoft Purview eDiscovery (Premium)
 
@@ -93,38 +93,9 @@ Le flux de travail intégré d’eDiscovery (Premium) dans Microsoft 365 s’ali
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et licences
 
-La gestion des licences pour eDiscovery (Premium) nécessite l’abonnement à l’organisation et les licences par utilisateur appropriés.
+Pour plus d’informations sur les licences qui permettent à un utilisateur de bénéficier d’eDiscovery (Premium), consultez les [conseils microsoft 365 sur la sécurité & conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) et consultez la section « eDiscovery and auditing » dans le [tableau de comparaison Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145). 
 
-- **Abonnement à l’organisation :** Pour accéder à eDiscovery (Premium) dans le portail de conformité Microsoft Purview, votre organisation doit disposer de l’une des options suivantes :
-
-  - Abonnement Microsoft 365 E5 ou Office 365 E5
-  
-  - Abonnement Microsoft 365 E3 avec le module complémentaire E5 conformité
-
-  - Microsoft 365 E3 abonnement avec E5 eDiscovery et le module complémentaire Audit
-
-  - Microsoft 365 Éducation abonnement A5 ou Office 365 Éducation A5
-
-   Si vous n’avez pas de plan Microsoft 365 E5 existant et que vous souhaitez essayer eDiscovery (Premium), vous pouvez [ajouter Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou [vous inscrire à une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 E5.
-
-- **Licences par utilisateur :** Pour ajouter un utilisateur en tant que consignateur dans un cas Advance eDiscovery, cet utilisateur doit se voir attribuer l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
-
-  - Microsoft 365 : Les utilisateurs doivent se faire attribuer l’une des conditions suivantes :
-  
-    - Microsoft 365 E5 licence, une licence de module complémentaire conformité E5 ou un module complémentaire E5 eDiscovery et Audit
-
-    - Un module complémentaire de conformité F5 ou de sécurité & conformité F5 doit être attribué aux utilisateurs de première ligne Microsoft 365
-
-    - Microsoft 365 Éducation utilisateurs doivent disposer d’une licence A5
-
-  - Office 365 : une licence Office 365 E5 ou Office 365 Éducation A5 doit être attribuée aux utilisateurs.
-
-Pour plus d’informations sur les licences, téléchargez et consultez la section « eDiscovery and auditing » dans la [table de comparaison Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
-
-Pour plus d’informations sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> Les utilisateurs ont uniquement besoin d’une licence E5 ou A5 (ou de la licence de module complémentaire approprié) pour être ajoutés en tant que consignatateurs à un cas eDiscovery (Premium). Les administrateurs informatiques, les responsables eDiscovery, les avocats, les techniciens juridiques ou les enquêteurs qui utilisent eDiscovery (Premium) pour gérer les cas et examiner les données de cas n’ont pas besoin d’une licence E5, A5 ou de module complémentaire.
+Pour plus d’informations sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>Prise en main de la découverte électronique (Premium)
 

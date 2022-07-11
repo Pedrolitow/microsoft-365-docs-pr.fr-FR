@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0949e979bfc2f0e2f784342e2a7c2f326908b49d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492422"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714616"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -60,17 +60,23 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 - [Nouveautés de Defender pour point de terminaison sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour point de terminaison sur Linux](linux-whatsnew.md)
 
+
+## <a name="july-2022"></a>Juillet 2022
+- - [Ajouter des appareils de contrôleur de domaine - Amélioration du laboratoire d’évaluation](evaluation-lab.md#add-a-domain-controller)<br>Désormais en disponibilité générale : ajoutez un contrôleur de domaine pour exécuter des scénarios complexes tels que le déplacement latéral et les attaques multiphases sur plusieurs appareils.
+
+
+
 ## <a name="june-2022"></a>Juin 2022
 - [Defender pour serveurs Plan 2 s’intègre désormais à la solution unifiée MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>Vous pouvez maintenant commencer à déployer la solution unifiée moderne pour Windows Server 2012 R2 et 2016 sur les serveurs couverts par Defender pour serveurs Plan 2 à l’aide d’un seul bouton.
 
 ## <a name="may-2022"></a>Mai 2022
 - [Protection contre les falsifications pour macOS (préversion)](tamperprotection-macos.md)<br>La protection contre les falsifications permet d’empêcher la suppression non autorisée de Microsoft Defender pour point de terminaison sur macOS.
 
-- [Ajouter des appareils de contrôleur de domaine - Amélioration du laboratoire d’évaluation (préversion)](evaluation-lab.md#add-a-domain-controller-preview)<br>Ajoutez un contrôleur de domaine pour exécuter des scénarios complexes tels que le déplacement latéral et les attaques multiphases sur plusieurs appareils.
+- [Ajouter des appareils de contrôleur de domaine - Amélioration du laboratoire d’évaluation (préversion)](evaluation-lab.md#add-a-domain-controller)<br>Ajoutez un contrôleur de domaine pour exécuter des scénarios complexes tels que le déplacement latéral et les attaques multiphases sur plusieurs appareils.
 
 ## <a name="april-2022"></a>Avril 2022
 - [Mise à jour de l’intégration et de la parité des fonctionnalités pour Windows Server 2012 R2 et Windows Server 2016)](configure-server-endpoints.md)<br/> Le nouveau package de solution unifié est désormais en disponibilité générale et facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifié est fourni avec de nombreuses nouvelles améliorations de fonctionnalités.
-- Intégration à Tunnel. Microsoft Defender pour point de terminaison sur iOS peut désormais s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Cette fonctionnalité était auparavant disponible uniquement sur Android. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+- Intégration à Tunnel. Microsoft Defender pour point de terminaison sur iOS peut désormais s’intégrer à Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Cette fonctionnalité était auparavant disponible uniquement sur Android. [Si vous souhaitez en savoir plus](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>Janvier 2022
 

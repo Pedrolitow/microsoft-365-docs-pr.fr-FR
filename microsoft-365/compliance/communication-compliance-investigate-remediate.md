@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
-ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
+ms.openlocfilehash: daa8eeab7f62b760b45e6c1571972dcd0ee83ae6
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687123"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714484"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -88,28 +88,6 @@ Le tableau suivant décrit les détails du filtre :
 
     ![Contrôles détaillés du filtre de conformité des communications.](../media/communication-compliance-filter-detail-controls.png)
 
-### <a name="using-near-and-exact-duplicate-analysis"></a>Utilisation de l’analyse de doublons proche et exacte
-
-Les stratégies de conformité des communications analysent et pré-groupent automatiquement les doublons de messages proches et exacts sans étapes de configuration supplémentaires. Cette vue vous permet d’agir rapidement sur des messages similaires un par un ou en tant que groupe, ce qui réduit la charge d’examen des messages pour les réviseurs. Au fur et à mesure que des doublons sont détectés, les contrôles **Doublons proches** et/ou les contrôles **Doublons exacts** sont affichés dans la barre d’outils action de correction. Cette vue n’est pas disponible si des doublons proches ou exacts sont introuvables.
-
-#### <a name="to-remediate-duplicates"></a>Pour corriger les doublons
-
-1. Connectez-vous au [portail de conformité Microsoft Purview](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
-
-2. Dans le portail de conformité Microsoft Purview, accédez à **La conformité des communications**.
-
-3. Sélectionnez l’onglet **Stratégies** , puis sélectionnez une stratégie à examiner, double-cliquez pour ouvrir la page **Stratégie** .
-
-4. Dans la page **Stratégie** , sélectionnez l’onglet **En attente** ou **Résolu** pour afficher les messages en double.
-
-5. Sélectionnez les **contrôles Near Duplicates** ou **Exact Duplicates** pour ouvrir la page des détails des doublons.
-
-6. Sélectionnez un ou plusieurs messages pour corriger les contrôles d’action pour ces messages.
-
-7. Sélectionnez **Résoudre**, **Notifier**, **Escalader** ou **Télécharger** pour appliquer l’action aux messages en double sélectionnés comme filtre par défaut.
-
-8. Sélectionnez **Fermer** après avoir effectué les actions de correction sur les messages.
-
 ## <a name="remediate-alerts"></a>Corriger les alertes
 
 Quel que soit l’endroit où vous commencez à réviser les alertes ou le filtrage que vous configurez, l’étape suivante consiste à prendre des mesures pour résoudre le problème. Démarrez votre correction d’alerte à l’aide du flux de travail suivant dans les pages **Stratégie** ou **Alertes** .
@@ -142,7 +120,7 @@ Maintenant que vous avez examiné les détails du message pour l’alerte, vous 
 - **Balisez** le message comme *étant conforme*, *non conforme* ou *contestable* en ce qui concerne les stratégies et les normes de votre organisation. L’ajout de balises et de commentaires d’étiquetage vous permet de microfiltrer les alertes de stratégie pour les escalades ou dans le cadre d’autres processus de révision internes. Une fois le balisage terminé, vous pouvez également choisir de résoudre le message pour le déplacer hors de la file d’attente de révision en attente.
 - **Notifier** : vous pouvez utiliser le contrôle **Notify** pour affecter un modèle d’avis personnalisé à l’alerte et envoyer un avis d’avertissement à l’utilisateur. Choisissez le modèle d’avis approprié configuré dans la zone **Paramètres de conformité des** communications, puis sélectionnez **Envoyer** pour envoyer un rappel à l’utilisateur qui a envoyé le message et résoudre le problème.
 - **Escalade** : à l’aide du contrôle **Escalate** , vous pouvez choisir qui d’autre dans votre organisation doit passer en revue le message. Choisissez parmi une liste de réviseurs configurés dans la stratégie de conformité des communications pour envoyer une notification par e-mail demandant une révision supplémentaire de l’alerte de message. Le réviseur sélectionné peut utiliser un lien figurant dans la notification par courrier électronique pour accéder directement aux éléments qui y sont réaffectés pour révision.
-- **Escalade pour investigation** : à l’aide de **l’instruction Escalate pour le contrôle d’investigation** , vous pouvez créer un [cas eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) pour les messages uniques ou multiples. Vous fournirez un nom et des notes pour le nouveau cas, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté en tant que consignateur de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne résout pas ou ne crée pas de balise pour le message. Vous pouvez sélectionner un total de 100 messages lors de la création d’un cas eDiscovery (Premium) pendant le processus de correction. Les messages dans tous les canaux de communication surveillés par la conformité des communications sont pris en charge. Par exemple, vous pouvez sélectionner 50 conversations Microsoft Teams, 25 e-mails Exchange Online et 25 messages Yammer lorsque vous ouvrez un nouveau cas eDiscovery (Premium) pour un utilisateur.
+- **Escalade pour investigation** : à l’aide de **l’instruction Escalate pour le contrôle d’investigation** , vous pouvez créer un [cas eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) pour les messages uniques ou multiples. Vous fournirez un nom et des notes pour le nouveau cas, et l’utilisateur qui a envoyé le message correspondant à la stratégie est automatiquement affecté en tant que consignateur de cas. Vous n’avez pas besoin d’autorisations supplémentaires pour gérer le cas. La création d’un cas ne résout pas ou ne crée pas de balise pour le message. Vous pouvez sélectionner un total de 100 messages lors de la création d’un cas eDiscovery (Premium) pendant le processus de correction. Les messages dans tous les canaux de communication surveillés par la conformité des communications sont pris en charge. Par exemple, vous pouvez sélectionner 50 conversations Microsoft Teams, 25 Exchange Online messages électroniques et 25 messages Yammer lorsque vous ouvrez un nouveau cas eDiscovery (Premium) pour un utilisateur.
 - **Supprimer un message dans Teams** : à l’aide du **contrôle Supprimer le message dans le contrôle Teams** , vous pouvez bloquer les messages et le contenu inappropriés identifiés dans les alertes provenant des canaux Microsoft Teams et des conversations de groupe et 1:1. Cela inclut les messages de conversation Teams signalés par les utilisateurs et les messages de conversation détectés à l’aide de stratégies de conformité de communication basées sur le machine learning et le classifieur. Les messages et le contenu supprimés sont remplacés par un conseil de stratégie qui explique qu’il est bloqué et la stratégie qui s’applique à sa suppression de la vue. Un lien est fourni aux destinataires dans le conseil de stratégie pour en savoir plus sur la stratégie applicable et le processus de révision. L’expéditeur reçoit un conseil de stratégie pour le message bloqué et le contenu, mais peut passer en revue les détails du message bloqué et du contenu pour le contexte concernant la suppression.
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>Étape 4 : Déterminer si les détails du message doivent être archivés en dehors de la conformité des communications
@@ -156,7 +134,7 @@ Les détails des messages peuvent être exportés ou téléchargés si vous deve
 Les clients disposant d’abonnements Microsoft 365 qui incluent la conformité des communications n’ont pas besoin de licences Power Automate supplémentaires pour utiliser le modèle Power Automate de conformité des communications par défaut recommandé. Le modèle par défaut peut être personnalisé pour prendre en charge votre organisation et couvrir les principaux scénarios de conformité des communications. Si vous choisissez d’utiliser des fonctionnalités Power Automate Premium dans ces modèles, créez un modèle personnalisé à l’aide du connecteur Microsoft Purview ou utilisez des modèles Power Automate pour d’autres zones de conformité dans Microsoft Purview, vous aurez peut-être besoin de licences Power Automate supplémentaires.
 
 > [!IMPORTANT]
-> Recevez-vous des invites pour une validation de licence supplémentaire lors du test des flux Power Automate ? Votre organisation n’a peut-être pas encore reçu de mises à jour de service pour cette fonctionnalité en préversion. Des mises à jour sont en cours de déploiement et toutes les organisations disposant d’abonnements Microsoft 365 qui incluent la conformité des communications doivent disposer d’une prise en charge des licences pour les flux créés à partir des modèles Power Automate recommandés d’ici le 30 octobre 2020.
+> Recevez-vous des invites pour une validation de licence supplémentaire lors du test des flux Power Automate ? Votre organisation n’a peut-être pas encore reçu de mises à jour de service pour cette fonctionnalité en préversion. Mises à jour sont en cours de déploiement et toutes les organisations disposant d’abonnements Microsoft 365 qui incluent la conformité des communications doivent disposer d’une prise en charge des licences pour les flux créés à partir des modèles Power Automate recommandés d’ici le 30 octobre 2020.
 
 ![Conformité des communications Power Automate.](../media/communication-compliance-power-automate.png)
 

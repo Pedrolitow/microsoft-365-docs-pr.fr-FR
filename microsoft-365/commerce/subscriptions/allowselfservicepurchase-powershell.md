@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment utiliser l’applet de commande PowerShell AllowSelfServicePurchase pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530835"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714703"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -108,6 +108,10 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Affaires avec Windows Hybrid Benefit | CFQ7TTC0HX99 |
 | Microsoft 365 F3 | CFQ7TTC0LH05 |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N |
+| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
+| Application supplémentaire Dynamics 365 Marketing | CFQ7TTC0LHVK |
+| Dynamics 365 Marketing - Application non prod supplémentaire | CFQ7TTC0LHWM |
 
 *Ces ID ont changé. Si vous avez précédemment bloqué des produits à l’aide des anciens ID, ils sont automatiquement bloqués à l’aide des nouveaux ID. Aucun travail supplémentaire n’est nécessaire.
 
