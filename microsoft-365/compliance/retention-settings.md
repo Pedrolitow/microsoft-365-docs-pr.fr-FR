@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639641"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695745"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -407,7 +407,7 @@ Avant de configurer la rétention, familiarisez-vous tout d’abord avec les lim
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>Réétiquetage à la fin de la période de rétention
 
 > [!NOTE]
-> Cette option est actuellement déployée en version préliminaire et est susceptible d’être modifiée.
+> Cette option est en aperçu et est sujette à modifications.
 
 Lorsque vous configurez une étiquette de rétention pour appliquer automatiquement une autre étiquette de rétention à la fin de la période de rétention, l’élément est alors soumis aux paramètres de rétention de l’étiquette de rétention nouvellement sélectionnée. Cette option vous permet de modifier automatiquement les paramètres de rétention de l’élément.
 

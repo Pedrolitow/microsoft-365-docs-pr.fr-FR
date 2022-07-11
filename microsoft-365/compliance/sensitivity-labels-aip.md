@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 0a521dbabd6a9db52dd8405beabab29400d38d82
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628614"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696159"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
@@ -109,6 +109,8 @@ Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide 
 Vous pouvez également désactiver ou supprimer de manière interactive le complément Office **Microsoft Azure Information Protection** de Word, Excel, PowerPoint et Outlook. Cette méthode est appropriée pour un ordinateur unique et des tests ad-hoc. Pour obtenir de instructions, consultez [Afficher, gérer et installer des compléments dans les programmes Office (pour les utilisateurs)](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 Quelle que soit la méthode choisie, les modifications prennent effet au redémarrage des applications Office.
+
+Si, après avoir apporté ces modifications, le bouton **Sensibilité** ne s’affiche pas sur le ruban Office, vérifiez si l’étiquetage de confidentialité a été [désactivé](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows).  Bien qu’il ne s’agisse pas de la configuration par défaut, un administrateur peut avoir défini explicitement cette configuration à l’aide de stratégie de groupe ou en modifiant directement le Registre.
 
 > [!NOTE]
 > Les étiquettes intégrées nécessitent une édition d’abonnement des applications Office. Si vous disposez d’éditions autonomes d’Office, parfois appelées « Office Perpetual », nous vous recommandons d’effectuer une mise à niveau vers Microsoft 365 Apps for Enterprise pour tirer parti des [dernières fonctionnalités d’étiquetage](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).

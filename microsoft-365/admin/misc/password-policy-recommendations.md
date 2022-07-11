@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: bd33d98a33d136f06bfe8e7741bb14c79f0a6160
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 474dbaf6877c3b4da9cd9d345e53cd95b2f42452
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043207"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695569"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recommandations en matière de stratégie de mot de passe pour Microsoft 365
 
@@ -61,7 +61,7 @@ Les pratiques pour mot de passe recommandées sont classées en plusieurs catég
 
 La diversité des mots de passe représente l’objectif principal d’un système de mot de passe sécurisé. Votre stratégie de mot de doit contenir de nombreux mots de passe différents qui sont de plus difficiles à deviner. Voici quelques recommandations pour garantir la sécurité de votre organisation.
   
-- Conserver une exigence de longueur minimale de 14 caractères
+- Appliquer une exigence de longueur minimale de huit caractères
 
 - N'exigez pas de composition de caractères. For exemple, \*&amp;(^%$
 
