@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: c7f60dbb29d2755ba41661ab3aea6b20b97cef06
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6935f82830aa8a6700d4088ee4954cf11f67adef
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640519"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714681"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -93,7 +93,7 @@ Lorsque la politique de rétention consiste à conserver puis à supprimer :
 
 Pour les deux voies du diagramme :
 
-1. **Si un message de conversation ou de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention, le message d’origine est copié (s’il est modifié) ou déplacé (s’il est supprimé) dans le dossier SubstrateHolds. Le message y est stocké pendant au moins 1 jour. Lorsque la période de rétention expire, le message est supprimé définitivement lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
+1. **Si un message de conversation ou de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention, le message d’origine est copié (s’il est modifié) ou déplacé (s’il est supprimé) dans le dossier SubstrateHolds. Lorsqu’un utilisateur supprime un message Teams, bien que le message disparaisse de l’application Teams, le message ne va pas dans le dossier SubstrateHolds pendant 21 jours. Le message est stocké dans le dossier SubstrateHolds pendant au moins 1 jour. Lorsque la période de rétention expire, le message est supprimé définitivement lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
 
 2. **Si un message de conversation ou de canal n’est pas supprimé** par l’utilisateur, et pour les messages actuels après modification, le message est déplacé vers le dossier SubstrateHolds après expiration de la période de rétention. Cette action prend généralement entre 1 et 7 jours à compter de la date d’expiration. Lorsque le message se trouve dans le dossier SubstrateHolds, il y est stocké pendant au moins 1 jour. Ensuite, il est supprimé définitivement lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours). 
 
@@ -111,13 +111,13 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
 
-1. **Si un message de conversation ou de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention : le message d’origine est copié (s’il est modifié) ou déplacé (s’il est supprimé) dans le dossier SubstrateHolds, et y est conservé pendant au moins 1 jour. Si la stratégie de rétention est configurée pour une conservation indéfinie, l’élément reste là. Si la stratégie de rétention comporte une date de fin pour la période de rétention et que celle-ci expire, le message est définitivement supprimé lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
+1. **Si un message de conversation ou de canal est modifié ou supprimé** par un utilisateur pendant la période de rétention : Le message original est copié (s’il est modifié) ou déplacé (s’il est supprimé) dans le dossier SubstrateHolds. Lorsqu’un utilisateur supprime un message Teams, bien que le message disparaisse de l’application Teams, le message ne va pas dans le dossier SubstrateHolds pendant 21 jours. Le message est stocké dans le dossier SubstrateHolds pendant au moins 1 jour. Si la stratégie de rétention est configurée pour une conservation indéfinie, l’élément reste là. Si la stratégie de rétention comporte une date de fin pour la période de rétention et que celle-ci expire, le message est définitivement supprimé lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
 
 2. **Si le message de conversation ou de canal n’est pas modifié ou supprimé** par l’utilisateur, et pour les messages actuels après modification pendant la période de rétention : rien ne se passe avant et après la période de rétention ; le message reste dans son emplacement d’origine.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de suppression uniquement
 
-1. **Si le message de conversation ou de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention : le message d’origine est copié (s’il est modifié) ou déplacé (s’il est supprimé) dans le dossier SubstrateHolds. Le message y est conservé pendant au moins 1 jour et définitivement supprimé lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
+1. **Si le message de conversation ou de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention : le message d’origine est copié (s’il est modifié) ou déplacé (s’il est supprimé) dans le dossier SubstrateHolds.  Lorsqu’un utilisateur supprime un message Teams, bien que le message disparaisse de l’application Teams, le message ne va pas dans le dossier SubstrateHolds pendant 21 jours. Le message est stocké dans le dossier SubstrateHolds pendant au moins 1 jour et supprimé définitivement lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
 
 2. **Si un message de conversation ou de canal n’est pas supprimé** par l’utilisateur pendant la période de rétention : au terme de la période de rétention, le message est déplacé vers le dossier SubstrateHolds. Cette action prend généralement entre 1 et 7 jours à compter de la date d’expiration. Le message y est conservé pendant au moins 1 jour, puis définitivement supprimé lors de la prochaine exécution du travail du minuteur (généralement entre 1 et 7 jours).
 
@@ -145,9 +145,9 @@ Résultats de la rétention :
     - Au 5e jour, le message est copié dans le dossier SubstrateHolds où il peut toujours être recherché à l’aide des outils eDiscovery pour une durée minimale de 7 ans à compter du premier jour (période de rétention).
 
 - Pour le message (modifié) actuel :
-    - Au 30e jour, le message est déplacé vers le dossier SubstrateHolds où il peut toujours être recherché à l’aide des outils eDiscovery pour une durée minimale de 7 ans à compter du premier jour (période de rétention).
+    - Au 30e jour, le message n’est plus affiché dans l'application Teams et est déplacé vers le dossier SubstrateHolds après 21 jours, où il reste consultable avec les outils d’eDiscovery pendant au moins 7 ans à compter du premier jour (la période de rétention).
 
-Si l’utilisateur avait supprimé le message actuel après la période de rétention spécifique, au lieu de la période de rétention, le message serait toujours déplacé vers le dossier SubstrateHolds. Toutefois, maintenant que la période de rétention a expiré, le message sera définitivement supprimé après une durée minimale de 1 jour, puis généralement dans un délai de 1 à 7 jours.
+Si l’utilisateur avait supprimé le message en cours après la période de rétention spécifiée, au lieu de la période de rétention, le message serait quand même déplacé vers le dossier SubstrateHolds après 21 jours. Toutefois, maintenant que la période de rétention a expiré, le message sera définitivement supprimé après une durée minimale de 1 jour, puis généralement dans un délai de 1 à 7 jours.
 
 ##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Exemple 2 : conserver pendant 30 jours, puis supprimer
 
