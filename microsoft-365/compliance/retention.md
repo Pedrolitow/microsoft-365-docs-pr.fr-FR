@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les stratégies & les étiquettes de rétention pour conserver ou supprimer automatiquement du contenu
+title: En savoir plus sur les stratégies de rétention et les étiquettes à conserver ou supprimer
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: c78bcae040ae1c210c58923b924f099a5ec396bc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Découvrez les stratégies de rétention et les étiquettes de rétention pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
+ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622522"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714528"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
