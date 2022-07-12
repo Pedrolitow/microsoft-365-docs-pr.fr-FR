@@ -11,16 +11,16 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb65e1ad898427c3f0a2fc1ba9a13685c1617bc1
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: c41b463c7262c5be6df43d1c9e808060a75d15c0
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416275"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717665"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -42,7 +42,7 @@ Cet article présente la fonctionnalité antivirus/logiciel anti-programme malve
 
 Bloquer à la première consultation est une fonctionnalité de protection de nouvelle génération de protection contre les menaces qui détecte un nouveau programme malveillant et le bloque en quelques secondes. La fonctionnalité Bloquer à la première consultation est activée lorsque certains paramètres de sécurité sont activés. Ces paramètres sont les suivants :
 
-- Protection fournie par le cloud ;
+- [Protection cloud](cloud-protection-microsoft-defender-antivirus.md) :
 - Un échantillon spécifique d’expiration de l'envoi (tel que 50 secondes) et
 - Un blocage des fichiers de niveau élevé.
 
@@ -150,15 +150,6 @@ Vous pouvez confirmer que Bloquer à la première consultation est activé sur d
 >
 > - Si les paramètres de condition préalable sont configurés et déployés à l’aide d’une stratégie de groupe, les paramètres décrits dans cette section seront grisés et non disponibles pour une utilisation sur des points de terminaison individuels.
 > - Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
-
-## <a name="validate-block-at-first-sight-is-working"></a>Confirmer que le fonctionnement de Bloquer à la première consultation
-
-Pour valider le fonctionnement de la fonctionnalité, téléchargez le [Fichier d’exemple de Bloquer à la première consultation](https://demo.wd.microsoft.com/Page/BAFS). Pour télécharger le fichier, vous avez besoin d’un compte dans Azure AD auquel le rôle Administrateur de sécurité ou le rôle Administrateur général est attribué.
-
-Pour valider le fonctionnement de la protection activée pour le cloud, suivez les instructions dans [Valider les connexions entre votre réseau et le cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="turn-off-block-at-first-sight"></a>Désactiver la fonctionnalité Bloquer à la première consultation
 
