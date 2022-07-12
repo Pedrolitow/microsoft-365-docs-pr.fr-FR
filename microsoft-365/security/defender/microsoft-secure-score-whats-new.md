@@ -21,20 +21,45 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616990"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717181"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Pour que Microsoft Secure Score soit un meilleur représentant de votre posture de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [Les nouveautés de Microsoft Secure Score](microsoft-secure-score-whats-coming.md)
+Pour que Microsoft Secure Score soit un meilleur représentant de votre posture de sécurité, nous continuons à ajouter de nouvelles fonctionnalités et des actions d’amélioration.
+
+Plus vous effectuez d’actions d’amélioration, plus votre degré de sécurisation sera élevé. Pour plus d’informations, consultez [Microsoft Secure Score](microsoft-secure-score.md).
 
 Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/securescore le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="june-2022"></a>Juin 2022
+
+- De nouvelles recommandations Microsoft Defender pour point de terminaison et Gestion des vulnérabilités Microsoft Defender sont désormais disponibles en tant qu’actions d’amélioration du degré de sécurisation :
+
+  - Interdire l’accès hors connexion aux partages
+  - Supprimer l’autorisation d’écriture de partage définie sur **Tout le monde**
+  - Supprimer des partages du dossier racine
+  - Définir l’énumération basée sur l’accès aux dossiers pour les partages
+  - Mettre à jour Microsoft Defender pour point de terminaison composants principaux
+
+- Une nouvelle recommandation Microsoft Defender pour Identity est disponible en tant qu’action d’amélioration du degré de sécurisation :
+
+  - Résoudre les configurations de domaine non sécurisées
+
+- Une nouvelle recommandation de [gouvernance des applications](/defender-cloud-apps/app-governance-manage-app-governance) est désormais disponible en tant qu’action d’amélioration du degré de sécurisation :
+
+  - Réglementer les applications avec le consentement des comptes prioritaires
+
+- Les nouvelles recommandations Salesforce et ServiceNow sont désormais disponibles en tant qu’actions d’amélioration du degré de sécurisation pour Microsoft Defender for Cloud Apps clients. Pour plus d’informations, consultez la [vue d’ensemble de SaaS Security Posture Management](https://aka.ms/saas_security_posture_management).
+
+>[!Note]
+>Les contrôles Salesforce et ServiceNow sont désormais disponibles en préversion publique.
 
 ## <a name="april-2022"></a>Avril 2022
 

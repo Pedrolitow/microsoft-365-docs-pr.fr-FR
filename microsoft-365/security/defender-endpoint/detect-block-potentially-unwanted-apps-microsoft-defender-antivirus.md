@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468303"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717755"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -87,12 +87,6 @@ La notification s’affiche dans [la liste de quarantaine dans l’application S
 Vous pouvez activer la protection contre les applications potentiellement indésirables (PUA) avec [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [la stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) ou via les [cmdlets PowerShell](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
 Vous pouvez également utiliser la protection contre les applications potentiellement indésirables (PUA) dans le mode audit pour détecter les applications potentiellement indésirables (PUA) sans les bloquer. Les détections sont capturées dans le journal des événements Windows.
-
-> [!TIP]
-> Visitez le site web de démonstration Microsoft Defender pour point de terminaison sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) pour vérifier que la fonctionnalité est opérationnelle et voir comment elle fonctionne.
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 La protection contre les applications potentiellement indésirables (PUA) dans le mode audit est utile si votre entreprise effectue une vérification de la conformité en matière de sécurité d’un logiciel interne et vous voulez éviter tout faux positif.
 

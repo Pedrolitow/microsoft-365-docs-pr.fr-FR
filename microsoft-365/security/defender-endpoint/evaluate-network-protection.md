@@ -16,12 +16,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603921"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717843"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -35,12 +35,6 @@ ms.locfileid: "66603921"
 [La protection réseau](network-protection.md) permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux susceptibles d’héberger des escroqueries, des exploits et d’autres contenus malveillants sur Internet.
 
 Cet article vous aide à évaluer la protection réseau en activant la fonctionnalité et en vous guidant vers un site de test. Les sites de cet article d’évaluation ne sont pas malveillants. Ce sont des sites web spécialement créés qui prétendent être malveillants. Le site répliquera le comportement qui se produirait si un utilisateur visitait un site ou un domaine malveillant.
-
-> [!TIP]
-> Vous pouvez également visiter le site web des scénarios de démonstration Microsoft Defender à [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent d’autres fonctionnalités de protection.
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 

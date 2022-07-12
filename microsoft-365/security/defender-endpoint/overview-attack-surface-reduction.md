@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438089"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717131"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -51,7 +51,7 @@ Les surfaces d’attaque sont tous les endroits où votre organisation est vuln�
 
 Pour configurer la réduction de la surface d’attaque dans votre environnement, procédez comme suit :
 
-1. [Activez l’isolation matérielle pour Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
+1. [Activez l’isolation basée sur le matériel pour Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
 2. Activez le contrôle d’application.
 
@@ -76,7 +76,7 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 > [!TIP]
 > Dans la plupart des cas, lorsque vous configurez des fonctionnalités de réduction de la surface d’attaque, vous pouvez choisir parmi plusieurs méthodes :
 >
-> - Microsoft Endpoint Manager (qui inclut désormais Microsoft Intune et Microsoft Endpoint Configuration Manager)
+> - Microsoft Endpoint Manager (qui inclut désormais Microsoft Intune et Configuration Manager de point de terminaison Microsoft)
 > - Stratégie de groupe
 > - Cmdlets PowerShell
 
@@ -95,17 +95,11 @@ Vous pouvez activer le mode audit lors du test du fonctionnement des fonctionnal
 
 Les fonctionnalités ne bloquent pas ou n’empêchent pas la modification d’applications, de scripts ou de fichiers. Toutefois, le journal des événements Windows enregistre les événements comme si les fonctionnalités étaient entièrement activées. Avec le mode audit, vous pouvez passer en revue le journal des événements pour voir quel impact la fonctionnalité aurait eue si elle était activée.
 
-Pour rechercher les entrées auditées, accédez à **Applications et Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
+Pour rechercher les entrées auditées, accédez à **Applications et Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Opérationnel**.
 
 Utilisez Defender pour point de terminaison pour obtenir plus de détails pour chaque événement. Ces détails sont particulièrement utiles pour examiner les règles de réduction de la surface d’attaque. L’utilisation de la console Defender pour point de terminaison vous permet [d’examiner les problèmes dans le cadre de la chronologie des alertes et des scénarios d’investigation](investigate-alerts.md).
 
 Vous pouvez activer le mode audit à l’aide de stratégie de groupe, PowerShell et des fournisseurs de services de configuration (CSP).
-
-> [!TIP]
-> Vous pouvez également visiter le site web Windows Defender Testground à [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités fonctionnent et voir comment elles fonctionnent.
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 | Options d’audit | Comment activer le mode audit | Comment afficher des événements |
 |---|---|---|
@@ -136,7 +130,7 @@ Obtenez des rapports détaillés sur les événements, les blocs et les avertiss
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Utiliser des vues personnalisées pour passer en revue les fonctionnalités de réduction de la surface d’attaque
 
-Créez des vues personnalisées dans le Windows observateur d'événements pour afficher uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer une vue personnalisée en tant que fichier XML. Vous pouvez copier le code XML directement à partir de cette page.
+Créez des vues personnalisées dans windows observateur d'événements pour afficher uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer une vue personnalisée en tant que fichier XML. Vous pouvez copier le code XML directement à partir de cette page.
 
 Vous pouvez également accéder manuellement à la zone d’événements qui correspond à la fonctionnalité.
 
@@ -163,7 +157,7 @@ Vous pouvez également accéder manuellement à la zone d’événements qui cor
 
 #### <a name="copy-the-xml-directly"></a>Copier le code XML directement
 
-1. Tapez **l’observateur d’événements** dans le menu Démarrer et ouvrez le **observateur d'événements Windows**.
+1. Tapez **l’observateur d’événements** dans le menu Démarrer et ouvrez le **observateur d'événements** Windows.
 
 2. Dans le volet gauche, sous **Actions**, **sélectionnez Créer une vue personnalisée...**
 
@@ -231,12 +225,12 @@ Vous pouvez également accéder manuellement à la zone d’événements qui cor
 
 ### <a name="list-of-attack-surface-reduction-events"></a>Liste des événements de réduction de la surface d’attaque
 
-Tous les événements de réduction de la surface d’attaque se trouvent sous **les journaux des applications et des services > Microsoft > Windows**, puis le dossier ou le fournisseur, comme indiqué dans le tableau suivant.
+Tous les événements de réduction de la surface d’attaque se trouvent sous **les journaux des applications et des services > Microsoft > Windows** , puis le dossier ou le fournisseur, comme indiqué dans le tableau suivant.
 
-Vous pouvez accéder à ces événements dans Windows Observateur d’événements :
+Vous pouvez accéder à ces événements dans la visionneuse d’événements Windows :
 
 1. Ouvrez le menu **Démarrer** et tapez **l’observateur d’événements**, puis sélectionnez le **résultat observateur d'événements**.
-2. Développez **les journaux des applications et des services > Microsoft > Windows**, puis accédez au dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
+2. Développez **les journaux des applications et des services > Microsoft > Windows** , puis accédez au dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
 3. Double-cliquez sur le sous-élément pour afficher les événements. Faites défiler les événements pour trouver celui que vous recherchez.
 
    ![Animation montrant l’utilisation de observateur d'événements.](images/event-viewer.gif)
@@ -247,30 +241,30 @@ Vous pouvez accéder à ces événements dans Windows Observateur d’événemen
 
 |Fonctionnalité|Fournisseur/source|ID d’événement|Description|
 |---|---|:---:|---|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|1|Audit ACG|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|2|Forcer ACG|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|3|Ne pas autoriser l’audit des processus enfants|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|4|Ne pas autoriser le blocage des processus enfants|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|5|Bloquer l’audit des images à faible intégrité|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|6 |Bloquer le blocage des images à faible intégrité|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|7 |Bloquer l’audit des images distantes|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|8 |Bloquer le blocage des images distantes|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|9 |Désactiver l’audit des appels système win32k|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|10|Désactiver le blocage des appels système win32k|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|11|Audit de la protection d’intégrité du code|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|12 |Blocage de la protection d’intégrité du code|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13|Audit EAF|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|14|Forcer EAF|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|15|Audit EAF+|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|16|Forcer EAF+|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|17 |Audit IAF|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|18 |Forcer IAF|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|19|Audit de StackPivot ROP|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|20|Forcer StackPivot ROP|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)| 21|Audit de CallerCheck ROP|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|22|Forcer CallerCheck ROP|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|23|Audit de SimExec ROP|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|24|Forcer SimExec ROP|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|1|Audit ACG|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|2|Forcer ACG|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|3|Ne pas autoriser l’audit des processus enfants|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|4|Ne pas autoriser le blocage des processus enfants|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|5|Bloquer l’audit des images à faible intégrité|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|6 |Bloquer le blocage des images à faible intégrité|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|7 |Bloquer l’audit des images distantes|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|8 |Bloquer le blocage des images distantes|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|9 |Désactiver l’audit des appels système win32k|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|10|Désactiver le blocage des appels système win32k|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|11|Audit de la protection d’intégrité du code|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|12 |Blocage de la protection d’intégrité du code|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|13|Audit EAF|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|14|Forcer EAF|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|15|Audit EAF+|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|16|Forcer EAF+|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|17 |Audit IAF|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|18 |Forcer IAF|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|19|Audit de StackPivot ROP|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|20|Forcer StackPivot ROP|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)| 21|Audit de CallerCheck ROP|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|22|Forcer CallerCheck ROP|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|23|Audit de SimExec ROP|
+|Exploit Protection|Atténuations de sécurité (mode noyau/mode utilisateur)|24|Forcer SimExec ROP|
 |Exploit Protection|WER-Diagnostics|5|Bloquer CFG|
 |Exploit Protection|Win32K (opérationnel)|260|Police non approuvée|
 |Protection réseau|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
@@ -286,7 +280,7 @@ Vous pouvez accéder à ces événements dans Windows Observateur d’événemen
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1121|Événement lorsque la règle se déclenche en mode bloc|
 
 >[!NOTE]
-> Du point de vue de l’utilisateur, les notifications en mode d’avertissement ASR sont effectuées en tant que notification toast Windows pour les règles de réduction de la surface d’attaque.
+> Du point de vue de l’utilisateur, les notifications en mode d’avertissement ASR sont effectuées en tant que notification Toast Windows pour les règles de réduction de la surface d’attaque.
 >
 > Dans ASR, la protection réseau fournit uniquement les modes d’audit et de blocage.
 
@@ -298,8 +292,8 @@ Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusi
 |:---|:---|
 | [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et conservez l’intégrité d’un système au démarrage et pendant son exécution. Validez l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation des conteneurs pour Microsoft Edge afin de vous protéger contre les sites web malveillants. |
 | [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilisez le contrôle d’application pour que vos applications puissent gagner en confiance pour s’exécuter. |
-| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite Antivirus Microsoft Defender). |
-| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite Antivirus Microsoft Defender). |
+| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite l’antivirus Microsoft Defender). |
+| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite l’antivirus Microsoft Defender). |
 | [Exploit Protection](exploit-protection.md) | Protégez les systèmes d’exploitation et les applications utilisés par votre organisation contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
 | [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les supports utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |
 | [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement de règles de réduction de la surface d’attaque. |
@@ -308,4 +302,4 @@ Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusi
 | [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Affiche les étapes de transition des règles de réduction de la surface d’attaque du mode test (audit) au mode actif et activé (bloquer). |
 | [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Fournit des informations sur les activités quotidiennes d’examen et de maintenance. |
 | [Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md) | Fournit des détails sur chaque règle de réduction de la surface d’attaque. |
-| [Règles de réduction de la surface d’attaque](attack-surface-reduction.md) | Réduisez les vulnérabilités (surfaces d’attaque) de vos applications grâce à des règles intelligentes qui permettent d’arrêter le programme malveillant. (Nécessite Antivirus Microsoft Defender). |
+| [Règles de réduction de la surface d’attaque](attack-surface-reduction.md) | Réduisez les vulnérabilités (surfaces d’attaque) de vos applications grâce à des règles intelligentes qui permettent d’arrêter le programme malveillant. (Nécessite l’antivirus Microsoft Defender). |

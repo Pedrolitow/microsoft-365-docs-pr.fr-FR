@@ -17,18 +17,18 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 00c2f6f490a09e76e097a20419f8d8137b32a467
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840384"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717279"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -42,7 +42,7 @@ ms.locfileid: "65840384"
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
-L’accès contrôlé aux dossiers permet de protéger vos données précieuses contre les applications malveillantes et les menaces, telles que les ransomwares. L’accès contrôlé aux dossiers protège vos données en vérifiant les applications par rapport à une liste d’applications connues et approuvées. Pris en charge sur les clients Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11, l’accès contrôlé aux dossiers peut être activé à l’aide de l’application Sécurité Windows, Microsoft Endpoint Configuration Manager ou Intune (pour les appareils gérés).
+L’accès contrôlé aux dossiers permet de protéger vos données précieuses contre les applications malveillantes et les menaces, telles que les ransomwares. L’accès contrôlé aux dossiers protège vos données en vérifiant les applications par rapport à une liste d’applications connues et approuvées. Pris en charge sur les clients Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11, l’accès contrôlé aux dossiers peut être activé à l’aide de l’application Sécurité Windows, du point de terminaison Microsoft Configuration Manager ou Intune (pour les appareils gérés).
 
 > [!NOTE]
 > Les moteurs de script ne sont pas approuvés et vous ne pouvez pas leur permettre d’accéder à des dossiers protégés contrôlés. Par exemple, PowerShell n’est pas approuvé par l’accès contrôlé aux dossiers, même si vous l’autorisez avec [des indicateurs de certificat et de fichier](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -68,10 +68,7 @@ L’accès contrôlé aux dossiers est particulièrement utile pour protéger vo
 
 Les [dossiers protégés](#review-controlled-folder-access-events-in-windows-event-viewer) incluent des dossiers système courants (y compris les secteurs de démarrage) et vous pouvez [ajouter d’autres dossiers](customize-controlled-folders.md#protect-additional-folders). Vous pouvez également [autoriser les applications](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) à leur donner accès aux dossiers protégés.
 
-Vous pouvez utiliser le [mode audit](audit-windows-defender.md) pour évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également visiter le site web Windows Defender Test ground à [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
+Vous pouvez utiliser le [mode audit](audit-windows-defender.md) pour évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé.
 
 L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
 
@@ -80,13 +77,13 @@ L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes
 - Windows 2012 R2
 - Windows 2016
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- Windows Server 2022
+- Windows Server 2022
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows dossiers système sont protégés par défaut
+## <a name="windows-system-folders-are-protected-by-default"></a>Les dossiers système Windows sont protégés par défaut
 
-Windows dossiers système sont protégés par défaut, ainsi que plusieurs autres dossiers :
+Les dossiers système Windows sont protégés par défaut, ainsi que plusieurs autres dossiers :
 
-Les dossiers protégés incluent des dossiers système courants (y compris les secteurs de démarrage) et vous pouvez ajouter des dossiers supplémentaires. Vous pouvez également autoriser les applications à leur donner accès aux dossiers protégés.  Les dossiers de systèmes Windows qui sont protégés par défaut sont les suivants :
+Les dossiers protégés incluent des dossiers système courants (y compris les secteurs de démarrage) et vous pouvez ajouter des dossiers supplémentaires. Vous pouvez également autoriser les applications à leur donner accès aux dossiers protégés.  Les dossiers des systèmes Windows qui sont protégés par défaut sont les suivants :
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -100,14 +97,14 @@ Les dossiers protégés incluent des dossiers système courants (y compris les s
 
 Les dossiers par défaut apparaissent dans le profil de l’utilisateur, sous **ce PC**.
    > [!div class="mx-imgBorder"]
-   > ![Dossiers de systèmes protégés Windows par défaut](images/defaultfolders.png)
+   > ![Dossiers de systèmes windows par défaut protégés](images/defaultfolders.png)
 
 > [!NOTE]
 > Vous pouvez configurer des dossiers supplémentaires en tant que dossiers protégés, mais vous ne pouvez pas supprimer les dossiers système Windows qui sont protégés par défaut.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Configuration requise pour l’accès contrôlé aux dossiers
 
-L’accès contrôlé aux dossiers nécessite l’activation [Antivirus Microsoft Defender protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md).
+L’accès contrôlé aux dossiers nécessite l’activation de la [protection en temps réel de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans le portail Microsoft 365 Defender
 
@@ -124,10 +121,10 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows observateur d'événements
 
-Vous pouvez consulter le journal des événements Windows pour voir les événements créés lorsque l’accès contrôlé aux dossiers bloque (ou audite) une application :
+Vous pouvez consulter le journal des événements Windows pour voir les événements qui sont créés lorsque des blocs d’accès contrôlés aux dossiers (ou auditent) une application :
 
 1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et extrayez le fichier *cfa-events.xml* à un emplacement facilement accessible sur l’appareil.
-2. Tapez **l’observateur d’événements** dans le menu Démarrer pour ouvrir le Windows observateur d'événements.
+2. Tapez **l’observateur d’événements** dans le menu Démarrer pour ouvrir le observateur d'événements Windows.
 3. Dans le volet gauche, sous **Actions**, sélectionnez **Importer un affichage personnalisé...**.
 4. Accédez à *l’emplacement* où vous avez extraitcfa-events.xmlet sélectionnez-le. Vous pouvez également [copier le code XML directement](event-views.md).
 5. Sélectionnez **OK**.
@@ -155,4 +152,4 @@ Vous pouvez utiliser l’application Sécurité Windows pour afficher la liste d
    - Pour supprimer un dossier, sélectionnez-le, puis **sélectionnez Supprimer**.
 
 > [!NOTE]
-> [Windows dossiers système sont protégés](#windows-system-folders-are-protected-by-default) par défaut et vous ne pouvez pas les supprimer de la liste.
+> Les [dossiers système Windows sont protégés](#windows-system-folders-are-protected-by-default) par défaut et vous ne pouvez pas les supprimer de la liste.

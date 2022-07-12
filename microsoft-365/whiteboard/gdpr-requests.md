@@ -13,12 +13,12 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment exporter, transférer ou supprimer des informations personnelles de Microsoft Whiteboard.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e35aa6825814043eb91c2d24c7426e7b4489bb76
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
-ms.translationtype: HT
+ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687612"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717739"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Gérer les demandes des personnes concernées par le GDPR dans Microsoft Whiteboard
 
@@ -28,9 +28,9 @@ Cet article fournit des informations sur la manière d'exporter, de transférer 
 
 ## <a name="export-a-whiteboard"></a>Exporter un tableau blanc
 
-### <a name="on-windows-10"></a>Sur Windows 10
+### <a name="on-windows"></a>Sur Windows
 
-Sur Windows 10, effectuez les étapes suivantes :
+Sur Windows, procédez comme suit :
 
 1. Sélectionnez le bouton **Plus** (**...**) pour le tableau blanc que vous souhaitez exporter. 
 
@@ -66,6 +66,13 @@ Pour supprimer un tableau blanc, effectuez les étapes suivantes :
 
 2. Sélectionnez **Supprimer**.
 
+Pour supprimer un fichier de tableau blanc dans OneDrive Entreprise, procédez comme suit :
+
+1.  Accédez au dossier Tableaux blancs dans OneDrive.
+
+2.  Cliquez avec le bouton droit sur le fichier de tableau blanc à supprimer.
+
+3. Sélectionnez **Supprimer**.
+
 >[!WARNING]
 > Cela supprimera définitivement le tableau blanc sélectionné.
-

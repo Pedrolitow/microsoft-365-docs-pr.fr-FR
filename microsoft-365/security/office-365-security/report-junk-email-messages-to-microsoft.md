@@ -1,5 +1,5 @@
 ---
-title: Signaler le courrier indésirable, le courrier indésirable, le hameçonnage et les e-mails suspects à Microsoft
+title: Signaler les courriers indésirables, les courriers indésirables, le hameçonnage, les e-mails suspects et les fichiers à Microsoft
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: Comment faire signaler un e-mail suspect à Microsoft ? Signaler des messages, des URL, des pièces jointes à Microsoft à des fins d’analyse. Apprenez à signaler les courriers indésirables et les e-mails de hameçonnage.
+description: Comment faire signaler un e-mail ou un fichier suspect à Microsoft ? Signaler des messages, des URL, des pièces jointes et des fichiers à Microsoft à des fins d’analyse. Apprenez à signaler les courriers indésirables et les e-mails de hameçonnage.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67b4d0a2dc3f52c66c1fea406a51005daa43093a
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 3ccb01e63011b48fa341b7ce3198b05505940a01
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714440"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717777"
 ---
-# <a name="how-do-i-report-a-suspicious-email-to-microsoft"></a>Comment faire signaler un e-mail suspect à Microsoft ?
+# <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>Comment faire signaler un e-mail ou un fichier suspect à Microsoft ?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "66714440"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Vous vous demandez ce qu’il faut faire avec les e-mails suspects ? Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, *les utilisateurs* et *les administrateurs ont différentes* façons de signaler un message électronique suspect, une URL ou une pièce jointe à Microsoft.
+Vous vous demandez ce qu’il faut faire avec des e-mails ou des fichiers suspects ? Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, *les utilisateurs* et *les administrateurs ont différentes* façons de signaler un message électronique suspect, une URL ou une pièce jointe à Microsoft.
 
 En outre, les organisations Microsoft 365 avec des administrateurs Microsoft Defender pour point de terminaison disposent également de plusieurs méthodes de création de rapports de fichiers.
 

@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e06b2a37f45ccf0febc35e31d33ece55c03e3303
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: c38136aa8d6616613968de5ef352e326c41c4137
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492057"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717821"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -38,10 +38,6 @@ Pour garantir que la protection fournie par le cloud de l’Antivirus Microsoft 
 
 > [!IMPORTANT]
 > Cet article contient des informations sur la configuration des connexions réseau uniquement pour l’antivirus Microsoft Defender. Si vous utilisez Microsoft Defender pour point de terminaison (qui inclut l’antivirus Microsoft Defender), consultez [Configurer le proxy d’appareil et les paramètres de connectivité Internet pour Defender pour point de terminaison](configure-proxy-internet.md).
-
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Autoriser les connexions au service cloud antivirus Microsoft Defender
 

@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes liés aux règles de réduction de la surface d’attaque
-description: Ressources et exemple de code pour résoudre les problèmes avec les règles de réduction de la surface d’attaque dans Microsoft Defender for Endpoint.
-keywords: résoudre les problèmes, erreur, corriger, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
+description: Ressources et exemple de code pour résoudre les problèmes liés aux règles de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison.
+keywords: dépannage, erreur, correctif, windows defender, par exemple, asr, règles, hanches, résolution des problèmes, audit, exclusion, faux positif, cassé, blocage, Microsoft Defender pour point de terminaison
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c503c3ed4cfea4ed0645cf18a9c9bf4ebe4a5ade
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9c884ab9a4ee2180d3c491c4257fb04129c40bc9
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807247"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717213"
 ---
-# <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes de règles de réduction de la surface d’attaque
+# <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes liés aux règles de réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,80 +32,75 @@ ms.locfileid: "62807247"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Lorsque vous utilisez des [règles de réduction de la surface](attack-surface-reduction.md) d’attaque, vous pouvez être face à des problèmes, tels que :
+Lorsque vous utilisez [des règles de réduction de la surface d’attaque](attack-surface-reduction.md) , vous pouvez rencontrer des problèmes, tels que :
 
-- Une règle bloque un fichier, un processus ou effectue une autre action qu’elle ne devrait pas (faux positif)
-- Une règle ne fonctionne pas comme décrit, ou ne bloque pas un fichier ou un processus qu’elle doit (faux négatifs)
+- Une règle bloque un fichier, un processus ou effectue une autre action qu’elle ne doit pas (faux positif)
+- Une règle ne fonctionne pas comme décrit ou ne bloque pas un fichier ou un processus qu’elle doit (faux négatif)
 
-La résolution de ces problèmes se fait en quatre étapes :
+Il existe quatre étapes pour résoudre ces problèmes :
 
-1. [Confirmer les conditions préalables](#confirm-prerequisites)
+1. [Confirmer les prérequis](#confirm-prerequisites)
 2. [Utiliser le mode audit pour tester la règle](#use-audit-mode-to-test-the-rule)
 3. [Ajouter des exclusions pour la règle spécifiée](#add-exclusions-for-a-false-positive) (pour les faux positifs)
-4. [Envoyer les journaux de support](#collect-diagnostic-data-for-file-submissions)
+4. [Envoyer les journaux d’activité de support](#collect-diagnostic-data-for-file-submissions)
 
-## <a name="confirm-prerequisites"></a>Confirmer les conditions préalables
+## <a name="confirm-prerequisites"></a>Confirmer les prérequis
 
-Les règles de réduction de la surface d’attaque fonctionnent uniquement sur les appareils qui ont les conditions suivantes :
+Les règles de réduction de la surface d’attaque fonctionnent uniquement sur les appareils avec les conditions suivantes :
 
-- Les points de terminaison Windows 10 Entreprise, version 1709 (également appelée Fall Creators Update).
+- Les points de terminaison s’exécutent Windows 10 Entreprise, version 1709 (également appelée Fall Creators Update).
 
-- Les points de terminaison utilisent Antivirus Microsoft Defender comme seule application de protection antivirus. [L’utilisation d’une autre application antivirus entraîne Antivirus Microsoft Defender se désactive elle-même](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+- Les points de terminaison utilisent l’Antivirus Microsoft Defender comme seule application de protection antivirus. [L’utilisation d’une autre application antivirus entraîne la désactivation de l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 - [La protection en temps réel](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) est activée.
 
-- Le mode audit n’est pas activé. Utilisez la stratégie de groupe pour définir la règle sur **Désactivé** (valeur : **0**) comme décrit dans Activer les règles de réduction [de la surface d’attaque](enable-attack-surface-reduction.md).
+- Le mode Audit n’est pas activé. Utilisez stratégie de groupe pour définir la règle sur **Désactivé** (valeur : **0**), comme décrit dans [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md).
 
-Si ces conditions préalables ont toutes été remplies, procédez à l’étape suivante pour tester la règle en mode audit.
+Si ces conditions préalables ont toutes été remplies, passez à l’étape suivante pour tester la règle en mode audit.
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>Utiliser le mode audit pour tester la règle
 
-Vous pouvez consulter le site web de base de test Windows Defender à [l’adresse demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les règles de réduction de la surface d’attaque fonctionnent généralement pour les scénarios et processus pré-configurés sur un appareil, ou vous pouvez utiliser le mode audit, qui permet aux règles de signaler uniquement.
+Suivez ces instructions dans [Utiliser l’outil de démonstration pour voir comment fonctionnent les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md) pour tester la règle spécifique avec laquelle vous rencontrez des problèmes.
 
-> [!NOTE]
-> Le site de démonstration Defender for Endpoint demo.wd.microsoft.com est supprimé et sera supprimé à l’avenir.
+1. Activez le mode audit pour la règle spécifique que vous souhaitez tester. Utilisez stratégie de groupe pour définir la règle en **mode Audit** (valeur : **2**), comme décrit dans Activer les règles de [réduction de la surface d’attaque](enable-attack-surface-reduction.md). Le mode Audit permet à la règle de signaler le fichier ou le processus, mais elle l’autorise toujours à s’exécuter.
 
-Suivez ces instructions dans l’outil de démonstration pour voir comment fonctionnent les règles de réduction de [la surface](evaluate-attack-surface-reduction.md) d’attaque pour tester la règle spécifique avec qui vous rencontrez des problèmes.
+2. Effectuez l’activité à l’origine d’un problème (par exemple, ouvrez ou exécutez le fichier ou le processus qui doit être bloqué, mais qui est autorisé).
 
-1. Activez le mode audit pour la règle spécifique que vous souhaitez tester. Utilisez la stratégie de groupe pour définir la règle sur **le mode Audit** (valeur : **2**) comme décrit dans Activer les règles de réduction [de la surface d’attaque](enable-attack-surface-reduction.md). Le mode audit permet à la règle de signaler le fichier ou le processus, tout en lui permettant de s’exécuter.
+3. [Passez en revue les journaux des événements de règle de réduction de la surface d’attaque](attack-surface-reduction.md) pour voir si la règle aurait bloqué le fichier ou le processus si la règle avait été définie sur **Activé**.
 
-2. Effectuez l’activité à l’origine d’un problème (par exemple, ouvrir ou exécuter le fichier ou le processus qui doit être bloqué mais qui est autorisé).
+Si une règle ne bloque pas un fichier ou un processus que vous attendez doit bloquer, vérifiez d’abord si le mode d’audit est activé.
 
-3. [Consultez les journaux des événements](attack-surface-reduction.md) de règle de réduction de la surface d’attaque pour voir si la règle aurait bloqué le fichier ou le processus si la règle avait été définie sur **Activé**.
+Le mode Audit a peut-être été activé pour tester une autre fonctionnalité, ou par un script PowerShell automatisé, et n’a peut-être pas été désactivé une fois les tests terminés.
 
-Si une règle ne bloque pas un fichier ou un processus que vous attendez qu’il bloque, vérifiez d’abord si le mode audit est activé.
+Si vous avez testé la règle avec l’outil de démonstration et le mode audit, et que les règles de réduction de la surface d’attaque fonctionnent sur des scénarios préconfigurés, mais que la règle ne fonctionne pas comme prévu, passez à l’une des sections suivantes en fonction de votre situation :
 
-Le mode audit a peut-être été activé pour tester une autre fonctionnalité, ou par un script PowerShell automatisé, et n’a peut-être pas été désactivé une fois les tests terminés.
+1. Si la règle de réduction de la surface d’attaque bloque quelque chose qu’elle ne doit pas bloquer (également appelée faux positif), vous pouvez [d’abord ajouter une exclusion de règle de réduction de la surface d’attaque](#add-exclusions-for-a-false-positive).
 
-Si vous avez testé la règle avec l’outil de démonstration et avec le mode audit, et que les règles de réduction de la surface d’attaque fonctionnent sur des scénarios pré-configurés, mais que la règle ne fonctionne pas comme prévu, vous devez passer à l’une des sections suivantes en fonction de votre situation :
-
-1. Si la règle de réduction de la surface d’attaque bloque un contrôle qu’elle ne doit pas bloquer (également appelé faux positif), vous pouvez d’abord ajouter une exclusion de règle de réduction de [la surface d’attaque](#add-exclusions-for-a-false-positive).
-
-2. Si la règle de réduction de la surface d’attaque ne bloque pas quelque chose qu’elle doit bloquer (également appelé faux négatif), vous pouvez passer immédiatement à la dernière étape, en collectant les données de [diagnostic](#collect-diagnostic-data-for-file-submissions) et en nous envoyant le problème.
+2. Si la règle de réduction de la surface d’attaque ne bloque pas un élément qu’elle doit bloquer (également appelé faux négatif), vous pouvez passer immédiatement à la dernière étape, [en collectant les données de diagnostic et en nous soumettant le problème](#collect-diagnostic-data-for-file-submissions).
 
 ## <a name="add-exclusions-for-a-false-positive"></a>Ajouter des exclusions pour un faux positif
 
-Si la règle de réduction de la surface d’attaque bloque quelque chose qu’elle ne doit pas bloquer (également appelé faux positif), vous pouvez ajouter des exclusions pour empêcher les règles de réduction de la surface d’attaque d’évaluer les fichiers ou dossiers exclus.
+Si la règle de réduction de la surface d’attaque bloque quelque chose qu’elle ne doit pas bloquer (également appelée faux positif), vous pouvez ajouter des exclusions pour empêcher les règles de réduction de la surface d’attaque d’évaluer les fichiers ou dossiers exclus.
 
-Pour ajouter une exclusion, voir [Personnaliser la réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
+Pour ajouter une exclusion, consultez [Personnaliser la réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
 
 > [!IMPORTANT]
-> Vous pouvez spécifier des fichiers et dossiers individuels à exclure, mais vous ne pouvez pas spécifier des règles individuelles.
-> Cela signifie que tous les fichiers ou dossiers exclus seront exclus de toutes les règles de la asr.
+> Vous pouvez spécifier des fichiers et des dossiers individuels à exclure, mais vous ne pouvez pas spécifier de règles individuelles.
+> Cela signifie que tous les fichiers ou dossiers exclus seront exclus de toutes les règles ASR.
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Signaler un faux positif ou un faux négatif
 
-Utilisez le Windows Defender d’envoi [web Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) pour signaler un faux négatif ou un faux positif pour la protection du réseau. Avec un abonnement Windows E5, vous pouvez également fournir un lien vers [n’importe quelle alerte associée](alerts-queue.md).
+Utilisez le [formulaire de soumission web Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) pour signaler un faux positif négatif ou faux pour la protection réseau. Avec un abonnement Windows E5, vous pouvez également [fournir un lien vers n’importe quelle alerte associée](alerts-queue.md).
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Collecter des données de diagnostic pour les soumissions de fichiers
 
-Lorsque vous signalez un problème avec les règles de réduction de la surface d’attaque, vous êtes invité à collecter et soumettre des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes.
+Lorsque vous signalez un problème avec les règles de réduction de la surface d’attaque, vous êtes invité à collecter et à envoyer des données de diagnostic qui peuvent être utilisées par les équipes de support et d’ingénierie Microsoft pour aider à résoudre les problèmes.
 
-1. Ouvrez une invite de commandes avec élévation de élévation de Windows Defender répertoire :
+1. Ouvrez une invite de commandes avec élévation de privilèges et accédez au répertoire Windows Defender :
 
    ```console
    cd "c:\program files\windows defender"
@@ -117,7 +112,7 @@ Lorsque vous signalez un problème avec les règles de réduction de la surface 
    mpcmdrun -getfiles
    ```
 
-3. Par défaut, ils sont enregistrés dans `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Joignez le fichier au formulaire d’envoi.
+3. Par défaut, ils sont enregistrés dans `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Attachez le fichier au formulaire d’envoi.
 
 ## <a name="related-articles"></a>Articles connexes
 

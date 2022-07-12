@@ -17,20 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
-ms.openlocfilehash: d817ab74d6dd24e644561684073189e68cf7e072
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007281"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717557"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Utilisateurs dans Microsoft 365 Lighthouse 
 
-Microsoft 365 Lighthouse vous permet de gérer les utilisateurs entre les comptes clients en sélectionnant **Utilisateurs** dans le volet de navigation gauche pour ouvrir la page Utilisateurs. À partir de cette page, vous pouvez rechercher des utilisateurs et évaluer et agir sur l’état de sécurité de vos comptes d’utilisateur. Vous pouvez également afficher des insights sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation de mot de passe en libre-service.  
+Microsoft 365 Lighthouse vous permet de gérer les utilisateurs entre les comptes clients en sélectionnant l’un des liens sous **Utilisateurs** dans le volet de navigation gauche. À partir de la page Utilisateurs, vous pouvez rechercher des utilisateurs et évaluer et agir sur l’état de sécurité de vos comptes d’utilisateur. Vous pouvez également afficher des insights sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation de mot de passe en libre-service.  
   
 ## <a name="search-users-tab"></a>Onglet Rechercher des utilisateurs  
   
-Sous l’onglet Rechercher des utilisateurs, vous pouvez rapidement rechercher des utilisateurs spécifiques dans les locataires et effectuer des actions de gestion des utilisateurs de base, telles que la réinitialisation d’un mot de passe de compte.
+Sous l’onglet Rechercher des utilisateurs, vous pouvez rapidement rechercher des utilisateurs spécifiques dans les locataires et effectuer des tâches courantes de gestion des utilisateurs, telles que la mise à jour des informations de compte d’utilisateur, la réinitialisation des mots de passe, l’attribution de licences et la gestion des groupes d’utilisateurs, de la boîte aux lettres ou de OneDrive.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Capture d’écran de l’onglet Rechercher des utilisateurs.":::
 
@@ -39,7 +39,7 @@ Sous l’onglet Rechercher des utilisateurs, vous pouvez rapidement rechercher d
 L’onglet Utilisateurs à risque affiche les comptes d’utilisateur sur vos locataires qui ont été marqués pour un comportement à risque. Sélectionnez l’un des utilisateurs pour afficher plus d’informations sur un risque détecté ou pour atténuer un risque en réinitialisant le mot de passe d’un utilisateur ou en bloquant la connexion. Pour plus d’informations sur les types de risques et la détection, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 L’onglet Utilisateurs à risque comprend également les options suivantes :
-- **Exportation:** Sélectionnez cette option pour exporter les données de conformité des appareils vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Exportation:** Sélectionnez cette option pour exporter les données de conformité des appareils vers un fichier de valeurs séparées par des virgules Excel (.csv).
 - **Actualiser:** Sélectionnez cette option pour récupérer les données de conformité des appareils les plus actuelles.
 - **Vérifiez que les utilisateurs sont compromis :** Sélectionnez cette option pour confirmer que l’utilisateur a été compromis.
 - **Ignorer le ou les risques d’utilisateurs :** Sélectionnez cette option pour ignorer le risque de l’utilisateur.  
@@ -60,7 +60,7 @@ L’onglet Réinitialisation de mot de passe affiche des informations détaillé
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Capture d’écran de l’onglet Réinitialisation du mot de passe.":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

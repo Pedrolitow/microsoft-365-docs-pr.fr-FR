@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre Microsoft 365 pour les factures professionnelles.
 ms.date: 05/24/2022
-ms.openlocfilehash: 594ad923c186410ad17085425fc0702d1a245ef9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 57120632cfe0b3543b228dfaca5955dfa31e4358
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670243"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717865"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -38,7 +38,7 @@ Votre facture fournit un récapitulatif des frais pour votre abonnement et inclu
 
 ## <a name="how-often-and-when-am-i-billed"></a>À quelle fréquence et quand suis-je facturé ?
 
-Selon la fréquence de facturation que vous avez choisie lors de l’achat de votre abonnement, vous recevez une facture mensuelle, trimestrielle, semi-annuelle ou annuelle. Le temps écoulé depuis la date de la dernière facture est appelé *Période de facturation* et figure sur la première page de la facture. Cette période représente la plage de dates pendant laquelle les frais s’accumulent pour la facture actuelle. Si vous avez apporté une modification à votre abonnement en dehors de cette plage de dates, comme l’ajout ou la suppression de licences, les frais associés apparaissent sur la facture pour la période de facturation suivante.
+Selon la fréquence de facturation que vous avez choisie lors de l’achat de votre abonnement, vous recevez une facture mensuelle ou annuelle. Le temps écoulé depuis la date de la dernière facture est appelé *Période de facturation* et figure sur la première page de la facture. Cette période représente la plage de dates pendant laquelle les frais s’accumulent pour la facture actuelle. Si vous avez apporté une modification à votre abonnement en dehors de cette plage de dates, comme l’ajout ou la suppression de licences, les frais associés apparaissent sur la facture pour la période de facturation suivante.
 
 À partir de la page 2 de la facture, les frais sont regroupés par *Période de service*. La période de service correspond à la plage de dates pendant laquelle vous êtes facturé pour utiliser le service.
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f1a1517e072c3a1c07f8792281092392dd1ff210
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438858"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717093"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
@@ -42,17 +42,6 @@ Microsoft Defender pour point de terminaison inclut une protection nouvelle gén
 
 > [!TIP]
 > La protection de nouvelle génération est incluse dans Microsoft Defender pour Endpoint Plan 1 et Plan 2. [En savoir plus sur Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md) La protection de nouvelle génération est également incluse dans Microsoft Defender pour les PME et Microsoft 365 Business Premium. [Comparez les fonctionnalités de sécurité dans les plans de Microsoft 365 pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md).
-
-## <a name="try-a-demo"></a>Essayez une version de démonstration !
-
-Visitez le [site web de démonstration Microsoft Defender pour point de terminaison](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour confirmer que les fonctionnalités de protection fonctionnent et les découvrir à l’aide des scénarios de la version de démonstration :
-
-- Protection fournie par le cloud
-- Protection Bloquer à la première consultation (BAFS)
-- Protection contre des applications potentiellement indésirables (PUA)
-
-> [!NOTE]
-> Le site de démonstration Defender pour point de terminaison sur demo.wd.microsoft.com est déconseillé et sera supprimé à l’avenir.
 
 ## <a name="configure-next-generation-protection-services"></a>Configurer les services de protection nouvelle génération
 

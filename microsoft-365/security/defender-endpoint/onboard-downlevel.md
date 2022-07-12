@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554398"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717209"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -73,20 +73,20 @@ Les étapes suivantes sont requises pour activer cette intégration :
 
 Passez en revue les détails suivants pour vérifier la configuration minimale requise :
 
-- Installer le [correctif cumulatif mensuel de février 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Installer le [correctif cumulatif mensuel de février 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) - Lien de téléchargement direct à partir du catalogue Windows Update est disponible [ici](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)
+
+- Installer la [mise à jour de la pile de maintenance du 12 mars 2019 (ou version ultérieure)](https://support.microsoft.com/topic/servicing-stack-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1-march-12-2019-b4dc0cff-d4f2-a408-0cb1-cb8e918feeba) - Lien de téléchargement direct à partir du catalogue Windows Update est disponible [ici](https://www.catalog.update.microsoft.com/search.aspx?q=4490628)
+
+- Installer la [mise à jour de la prise en charge de la signature de code SHA-2](https://support.microsoft.com/topic/sha-2-code-signing-support-update-for-windows-server-2008-r2-windows-7-and-windows-server-2008-september-23-2019-84a8aad5-d8d9-2d5c-6d78-34f9aa5f8339) - Le lien de téléchargement direct à partir du catalogue Windows Update est disponible [ici](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419)
 
   > [!NOTE]
   > Applicable uniquement pour Windows Server 2008 R2, Windows 7 SP1 Entreprise et Windows 7 SP1 Professionnel.
 
 - Installer la [mise à jour pour l’expérience client et la télémétrie de diagnostic](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-- Installer [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (ou version ultérieure) ou [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+- Installer [Microsoft .Net Framework 4.5.2 ou version ultérieure](https://www.microsoft.com/en-US/download/details.aspx?id=42642)
 
     > [!NOTE]
-    > Applicable uniquement pour Windows Server 2008 R2, Windows 7 SP1 Entreprise et Windows 7 SP1 Professionnel.
-    >
-    > N’installez pas .NET Framework 4.0.x, car il annule l’installation ci-dessus.
-    >
     > L’installation de .NET 4.5 peut vous obliger à redémarrer votre ordinateur après l’installation.
 
 - Répondez à la configuration système minimale requise pour l’agent Azure Log Analytics. Pour plus d’informations, consultez [Collecter des données à partir d’ordinateurs de votre environnement avec Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
