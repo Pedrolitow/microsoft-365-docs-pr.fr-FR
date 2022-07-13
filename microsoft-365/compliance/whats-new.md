@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 828389ded4e62b7cc7f7bbb1a0da8ef3534b6a58
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637780"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756746"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Nouveautés des solutions de conformité et de risque Microsoft Purview
 
@@ -40,6 +40,47 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 > - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Et visitez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités de Microsoft 365 qui ont été lancées, qui sont en cours de déploiement, qui sont en cours de développement, qui ont été annulées ou qui ont été publiées précédemment.
+
+## <a name="june-2022"></a>Juin 2022
+
+### <a name="compliance-manager"></a>Gestionnaire de conformité
+
+- [Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview](compliance-manager-alert-policies.md) : ajout de trois rôles ADD qui disposent des autorisations nécessaires pour créer ou modifier des stratégies d’alerte.
+- [Analyseur de configuration pour Microsoft Purview](compliance-manager-mcca.md) : nouveau nom et liens de référence mis à jour pour cet outil de prise en main du Gestionnaire de conformité anciennement nommé « Microsoft Compliance Configuration Analyzer ».
+
+### <a name="data-loss-prevention"></a>Protection contre la perte de données
+
+- De nombreuses mises à jour de page pour les captures d’écran de marque Microsoft Purview.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Gestion du cycle de vie des données et gestion des enregistrements
+
+- En préversion : [Microsoft API Graph pour la gestion des enregistrements](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Demandes de droits d’objet](/privacy/priva/subject-rights-requests) : mises à jour importantes et restructuration du contenu SRR pour mieux aider les utilisateurs à chaque étape de progression; détails ci-dessous.
+  - [Découvrez Demandes de droits des personnes concernées Priva](/privacy/priva/subject-rights-requests) : une articulation plus claire de la propriété de valeur client et du plan général du processus SRR.
+  - [Comprendre les pages de flux de travail et de détails](/privacy/priva/subject-rights-requests-workflow) : décrit les étapes à suivre pour effectuer une demande, indiquer une progression manuelle ou automatique et établir une liaison avec du contenu détaillé; une section explique comment interpréter et utiliser la page de détails d’une demande, y compris le nouvel onglet « Historique ».
+  - [Créez une demande et définissez des paramètres de recherche](/privacy/priva/subject-rights-requests-create) : un nouveau cadrage avec des sous-titres expliquant qu’il existe maintenant deux façons de créer une requête : par le biais d’une méthode personnalisée à l’aide d’un processus guidé et par le biais de la nouvelle fonctionnalité d’utilisation d’un modèle, dont les paramètres de recherche visent à récupérer le contenu le plus pertinent pour la situation.
+  - [Estimation et récupération des données](/privacy/priva/subject-rights-requests-data-retrieval) : explique pourquoi certaines demandes s’interrompent à l’étape de l’estimation des données et comment ajuster la recherche en conséquence ; explique également comment définir une demande de pause avant de passer automatiquement à la récupération des données.
+  - [Passez en revue les données d’une demande de droits d’objet](/privacy/priva/subject-rights-requests-data-review) : les nouvelles fonctionnalités de fichier d’importation permettent aux utilisateurs d’importer des fichiers à partir d’emplacements autres que Microsoft 365, ou des fichiers autrement non récupérés par la recherche, dans l’onglet Données collectées.
+  - [Générer des rapports et fermer des demandes](/privacy/priva/subject-rights-requests-reports) : précise quand les packages de données finaux sont générés et quels types de fichiers ils incluent.
+  - [Intégrer et étendre via Microsoft API Graph et Power Automate](/privacy/priva/subject-rights-requests-automate) - révision du titre de cette page Power Automate précédente et contenu de page développé pour inclure API Graph contenu et liens de référence qui vivaient précédemment sur une autre page.
+
+### <a name="sensitive-information-types"></a>Types d'informations sensibles
+
+- [En savoir plus sur les types d’informations sensibles basés sur des correspondances de données exactes](sit-learn-about-exact-data-match-based-sits.md) : ajout d’une section sur les services pris en charge par EDM.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- En préversion : [prise en charge PDF pour les applications Office](sensitivity-labels-office-apps.md#pdf-support), qui inclut la conversion de documents au format PDF, l’héritage de l’étiquette avec les marquages visuels et le chiffrement. L’impression au format PDF n’est pas prise en charge et cette option devient indisponible pour les utilisateurs si leur stratégie d’étiquette est configurée pour l’étiquetage obligatoire.
+- En préversion : la boîte de dialogue que les utilisateurs voient quand leur stratégie d’étiquette est configurée pour exiger une justification pour supprimer ou rétrograder une étiquette est mise à jour pour avertir les utilisateurs que leur réponse typée ne doit pas inclure de données sensibles. La capture d’écran de la section [Quelles stratégies d’étiquette peuvent faire](sensitivity-labels.md#what-label-policies-can-do) montre cette boîte de dialogue mise à jour qui fera son chemin dans les canaux de déploiement Office pour une utilisation en production.
+- En préversion : [La prise en charge d’Outlook pour appliquer la protection S/MIME](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) commence à peine à être déployée sur les plateformes clientes.
+- Pour [les stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy), un nouveau paramètre qui peut activer automatiquement la stratégie s’il n’est pas modifié dans un nombre défini de jours.
+
+### <a name="trainable-classifiers"></a>Classifieurs entraînables
+
+- [En savoir plus sur les classifieurs pouvant être formés](classifier-learn-about.md) : ajout du classifieur pouvant être entraîné pour les images Adult, Racy et Gory.
 
 ## <a name="may-2022"></a>Mai 2022
 
@@ -293,32 +334,3 @@ Pour relever les défis du milieu de travail décentralisé et riche en données
 - Nouvelles [fonctionnalités de surveillance pour les](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) stratégies d’étiquetage automatique.
 - Déploiement à présent : étiquette par défaut pour les documents existants et texte de justification pour Office sur le Web.
 - Annoncé pour juillet Semi-Annual Enterprise Channel avec la version 2202+: Co-création et audit pour Outlook.
-
-## <a name="december-2021"></a>Décembre 2021
-
-### <a name="compliance-and-service-assurance"></a>Conformité et assurance du service
-
-- [Notification de violation Azure, Dynamics 365 et Windows dans le cadre du RGPD](/compliance/regulatory/gdpr-breach-notification) : mise à jour pour préciser que les clients n’ont pas besoin d’utiliser un service payant tel que Defender pour le cloud pour recevoir des notifications de sécurité et de confidentialité
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Flux de travail eDiscovery (Premium) pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - mis à jour avec un nouveau guide de référence rapide téléchargeable pour la gestion du contenu Teams dans eDiscovery (Premium)
-
-### <a name="data-lifecycle-management"></a>Gestion du cycle de vie des données
-
-- [Activer les boîtes aux lettres d’archivage dans le centre de conformité](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - Ajout d’une section sur le nouvel outil de diagnostic pour les boîtes aux lettres d’archivage
-- [Utiliser le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - L’importation PST prend désormais en charge AzCopy v10
-- [Restaurer une boîte aux lettres inactive](restore-an-inactive-mailbox.md) - procédure révisée pour restaurer une boîte aux lettres inactive en ajoutant d’abord LegacyExchangeDN de boîte aux lettres inactive à la boîte aux lettres cible
-
-### <a name="information-protection"></a>Protection des informations
-
-- [Déployer une solution de protection des informations avec Microsoft Purview](information-protection-solution.md) - Nouvelles instructions pas à pas pour les clients qui recherchent une feuille de route normative pour déployer Protection des données Microsoft Purview
-
-### <a name="retention-and-records-management"></a>Conservation et gestion des enregistrements
-
-- Nouvelles instructions sur le [temps nécessaire à l’application des stratégies de rétention](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- Déploiement des nouveaux paramètres de locataire : paramètre de gestion des enregistrements qui empêche la modification des propriétés pour les éléments SharePoint étiquetés marqués comme un enregistrement et verrouillés, et autre paramètre pour empêcher les utilisateurs de déverrouiller les éléments marqués comme enregistrement
-
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-
-- L’étiquetage obligatoire et une étiquette par défaut pour Power BI sont désormais en disponibilité générale (GA)

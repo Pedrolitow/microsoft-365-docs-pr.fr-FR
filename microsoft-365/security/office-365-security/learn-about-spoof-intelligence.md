@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3be83ee7174934439643320f2ac9d0db72d745bd
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016051"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756646"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
@@ -36,7 +36,7 @@ ms.locfileid: "66016051"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’identité. EOP utilise **le renseignement sur l’usurpation** d’identité dans le cadre de la défense globale de votre organisation contre le hameçonnage. Pour plus d’informations, consultez [la protection contre l’usurpation d’identité dans EOP](anti-spoofing-protection.md).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’identité. EOP utilise **le renseignement sur l’usurpation** d’identité dans le cadre de la défense globale de votre organisation contre le hameçonnage. Pour plus d’informations, consultez [la protection contre l’usurpation d’identité dans EOP](anti-spoofing-protection.md).
 
 Lorsqu’un expéditeur usurpe une adresse e-mail, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie des e-mails à votre organisation. Les attaquants qui usurpent les expéditeurs pour envoyer du courrier indésirable ou de hameçonnage doivent être bloqués. Toutefois, dans certains scénarios, les expéditeurs légitimes s’usurpent. Par exemple :
 
@@ -56,7 +56,7 @@ En permettant aux expéditeurs connus d’envoyer des messages usurpés à parti
 
 De même, vous pouvez examiner les expéditeurs usurpés qui ont été autorisés par le renseignement sur l’usurpation d’identité et bloquer manuellement ces expéditeurs de l’insight d’intelligence d’usurpation d’identité.
 
-Le reste de cet article explique comment utiliser l’information sur l’usurpation d’identité dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres).
+Le reste de cet article explique comment utiliser les informations d’usurpation d’identité dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online  boîtes aux lettres).
 
 > [!NOTE]
 >
@@ -64,7 +64,9 @@ Le reste de cet article explique comment utiliser l’information sur l’usurpa
 >
 > - L’insight sur l’usurpation d’identité et l’onglet **Usurpation** d’identité dans la liste Autoriser/Bloquer du locataire remplacent les fonctionnalités de la stratégie de renseignement sur l’usurpation d’identité qui était disponible sur la page de stratégie anti-courrier indésirable dans le Centre de sécurité & conformité.
 >
->- L’information sur l’usurpation d’identité affiche 7 jours de données. **L’applet de commande Get-SpoofIntelligenceInsight** affiche 30 jours de données.
+> - L’information sur l’usurpation d’identité affiche 7 jours de données. **L’applet de commande Get-SpoofIntelligenceInsight** affiche 30 jours de données.
+>
+> - Les dernières données disponibles datent de 3 à 4 jours.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -73,9 +75,9 @@ Le reste de cet article explique comment utiliser l’information sur l’usurpa
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - Pour modifier la stratégie de renseignement d’usurpation d’identité ou activer ou désactiver l’usurpation d’identité, vous devez être membre de 
-    -   **Gestion de l'organisation**
-    -   **Administrateur de sécurité** <u>et</u> **configuration en mode seul** ou gestion de l’organisation **en mode affichage uniquement**.
+  - Pour modifier la stratégie d’usurpation d’identité ou activer ou désactiver l’usurpation d’identité, vous devez être membre de l’un des groupes de rôles suivants :
+    - **Gestion de l'organisation**
+    - **Administrateur de sécurité** <u>et</u> **configuration en mode seul** ou gestion de l’organisation **en mode affichage uniquement**.
   - Pour accéder en lecture seule à la stratégie de renseignement sur l’usurpation d’identité, vous devez être membre des groupes de **rôles Lecteur général** ou **Lecteur de sécurité** .
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
@@ -122,7 +124,7 @@ Dans la page **Informations sur l’usurpation d’identité** qui s’affiche a
   - **Externe** : l’expéditeur usurpé se trouve dans un domaine externe.
 - **Action** : cette valeur est **autorisée** ou **bloquée** :
   - **Autorisé** : L’authentification par e-mail explicite du domaine a échoué vérifie [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) et [DMARC](use-dmarc-to-validate-email.md). Toutefois, le domaine a passé nos vérifications d’authentification par e-mail implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action anti-usurpation d’identité n’a été effectuée sur le message.
-  - **Bloqué** : les messages de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi sont marqués comme incorrects par l’intelligence par usurpation d’identité. L’action effectuée sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est **Déplacer le message vers le dossier Courrier indésirable**). Pour plus d’informations, consultez Configurer les stratégies [anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
+  - **Bloqué** : les messages de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi sont marqués comme incorrects par l’intelligence par usurpation d’identité. L’action effectuée sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est **Déplacer le message vers le dossier Courrier indésirable**). Pour plus d’informations, consultez [Paramètres exclusifs des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 Vous pouvez cliquer sur les en-têtes de colonne sélectionnés pour trier les résultats.
 

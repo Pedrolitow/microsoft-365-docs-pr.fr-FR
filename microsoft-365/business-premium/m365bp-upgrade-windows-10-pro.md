@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment mettre à niveau vos appareils Windows vers Windows 10 Professionnel avec Microsoft 365 Business Premium.
-ms.openlocfilehash: fdd17eb35767029090dddab103ce6db3b8b00365
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5440dcd91ac32dcc11f9f7c44c404b81d57a0c73
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641023"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756808"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau des appareils Windows vers Windows 10 Professionnel
 
@@ -81,6 +81,6 @@ Vous pouvez choisir parmi plusieurs méthodes à mettre à niveau :
 
 [Activer Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227#WindowsVersion=Windows_10)
 
-[Vidéos de formation Microsoft 365 Entreprise](../admin/admin-video-library.yml)
+[Vidéos de formation Microsoft 365 Entreprise](https://go.microsoft.com/fwlink/?linkid=2197659)
 
 

@@ -21,19 +21,19 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 6e265490eb5afee275debcdd1eb073f11bb845e3
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416489"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66766558"
 ---
 # <a name="learn-how-to-manage-the-log4shell-vulnerability-in-microsoft-defender-for-endpoint"></a>Découvrez comment gérer la vulnérabilité Log4Shell dans Microsoft Defender pour point de terminaison
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 La vulnérabilité Log4Shell est une vulnérabilité d’exécution de code à distance (RCE) trouvée dans la bibliothèque de journalisation Apache Log4j 2. Étant donné qu’Apache Log4j 2 est couramment utilisé par de nombreuses applications logicielles et services en ligne, il représente une situation complexe et à haut risque pour les entreprises à travers le monde. Appelé « Log4Shell » ([CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228), [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046) ), il introduit un nouveau vecteur d’attaque que les attaquants peuvent exploiter pour extraire des données et déployer des ransomware dans une organisation.
 
@@ -42,7 +42,7 @@ La vulnérabilité Log4Shell est une vulnérabilité d’exécution de code à d
 
 ## <a name="overview-of-discovery-monitoring-and-mitigation-capabilities"></a>Vue d’ensemble des fonctionnalités de découverte, de surveillance et d’atténuation
 
-Menaces et gestion des vulnérabilités vous offrent les fonctionnalités suivantes pour vous aider à identifier, surveiller et atténuer l’exposition de votre organisation à la vulnérabilité Log4Shell :
+La gestion des menaces et des vulnérabilités vous offre les fonctionnalités suivantes pour vous aider à identifier, surveiller et atténuer l’exposition de votre organisation à la vulnérabilité Log4Shell :
 
 - **Découverte** : la détection des appareils exposés, à la fois Microsoft Defender pour point de terminaison les appareils intégrés et les appareils qui ont été découverts mais qui ne sont pas encore intégrés, est basée sur des logiciels vulnérables et des fichiers vulnérables détectés sur le disque.
 - **Sensibilisation aux menaces :** Vue consolidée pour évaluer l’exposition de votre organisation. Cette vue montre votre exposition au niveau de l’appareil et du logiciel, et donne accès à des détails sur des fichiers vulnérables tels que la dernière fois qu’il a été vu, la dernière fois qu’il a été exécuté et la dernière fois qu’il a été exécuté avec des ports ouverts. Vous pouvez utiliser ces informations pour hiérarchiser vos actions de correction. L’affichage des données relatives aux appareils exposés sur le tableau de bord peut prendre jusqu’à 24 heures.
@@ -54,7 +54,7 @@ Menaces et gestion des vulnérabilités vous offrent les fonctionnalités suivan
 >
 > La prise en charge sur Linux nécessite Microsoft Defender pour point de terminaison client Linux version 101.52.57 (30.121092.15257.0) ou version ultérieure.
 >
-> La prise en charge sur macOS nécessite Microsoft Defender pour point de terminaison macOS version client 20.121111.15416.0 ou ultérieure.
+> La prise en charge sur macOS nécessite Microsoft Defender pour point de terminaison version du client macOS 20.121111.15416.0 ou ultérieure.
 >
 >Pour plus d’informations sur les versions prises en charge, consultez [Plateformes et fonctionnalités des systèmes d’exploitation pris en charge](tvm-supported-os.md).
 
@@ -64,11 +64,11 @@ Les fonctionnalités de Gestion des menaces et des vulnérabilités incorporées
 
 Les appareils intégrés sont évalués à l’aide de fonctionnalités de Gestion des menaces et des vulnérabilités incorporées existantes qui peuvent détecter des logiciels et des fichiers vulnérables.
 
-Pour la détection sur les appareils découverts mais pas encore intégrés, la détection Log4j doit être activée. Cela lance les sondes de la même façon que la découverte d’appareils sonde activement votre réseau. Cela inclut la détection à partir de plusieurs points de terminaison intégrés (appareils Windows 10+ et Windows Server 2019+) et la détection uniquement au sein de sous-réseaux pour détecter les appareils vulnérables et exposés à distance à CVE-2021-44228.
+Pour la détection sur les appareils découverts mais pas encore intégrés, la détection Log4j doit être activée. Cela lance les sondes de la même façon que la découverte d’appareils sonde activement votre réseau. Cela inclut la détection à partir de plusieurs points de terminaison intégrés (Windows 10+ et les appareils Windows Server 2019+ et la détection uniquement dans les sous-réseaux, pour détecter les appareils vulnérables et exposés à distance à CVE-2021-44228.
 
 Pour activer la détection Log4 :
 
-1. Accédez à **Paramètres** >  **Device** **discoveryDiscovery** >  setup
+1. Accéder au **programme d’installation** de **découverte** >  **d’appareils settings** > 
 2. Sélectionnez **Activer la détection Log4j2 (CVE-2021-44228)**
 3. Sélectionnez **Enregistrer**.
 
@@ -83,12 +83,12 @@ Par exemple, User-Agent : ${jndi:dns://192.168.1.3:5353/MDEDiscoveryUser-Agent} 
 
 ## <a name="vulnerable-software-and-files-detection"></a>Détection de logiciels et de fichiers vulnérables
 
-Menaces et gestion des vulnérabilités fournit des couches de détection pour vous aider à découvrir :
+La gestion des menaces et des vulnérabilités fournit des couches de détection pour vous aider à découvrir :
 
 - **Logiciels vulnérables** : la découverte est basée sur des énumérations de plateforme commune (CPE) d’application installées qui sont connues pour être vulnérables à l’exécution du code distant Log4j.
 - **Fichiers vulnérables :** Les fichiers en mémoire et les fichiers du système de fichiers sont évalués. Ces fichiers peuvent être des fichiers jar Log4j-core avec la version vulnérable connue ou un fichier Uber-JAR qui contient une classe de recherche jndi vulnérable ou un fichier log4j-core vulnérable. Plus précisément, il :
 
-  - détermine si un fichier JAR contient un fichier Log4j vulnérable en examinant les fichiers JAR et en recherchant le fichier suivant : \\META-INFmavenorg.apache.logging.log4jlog4j-corepom.properties\\\\\\\\ . Si ce fichier existe, la version de Log4j est lue et extraite.
+  - détermine si un fichier JAR contient un fichier Log4j vulnérable en examinant les fichiers JAR et en recherchant le fichier suivant : \\META-INF\\maven\\org.apache.logging.log4j log4j-core\\\\pom.properties . Si ce fichier existe, la version de Log4j est lue et extraite.
   - recherche le fichier JndiLookup.class à l’intérieur du fichier JAR en recherchant les chemins qui contiennent la chaîne « /log4j/core/lookup/JndiLookup.class » : si le fichier JndiLookup.class existe, Gestion des menaces et des vulnérabilités détermine si ce fichier JAR contient un fichier Log4j avec la version définie dans pom.properties.
   - recherche les fichiers JAR Log4j-core vulnérables incorporés dans un fichier JAR imbriqué en recherchant les chemins qui contiennent l’une de ces chaînes :
     - lib/log4j-core-
@@ -108,12 +108,12 @@ Ce tableau décrit les fonctionnalités de recherche prises en charge par les pl
 
 ## <a name="learn-about-your-log4shell-exposure-and-mitigation-options"></a>En savoir plus sur vos options d’exposition et d’atténuation Log4Shell
 
-### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord menaces et gestion des vulnérabilités
+### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord de gestion des menaces et des vulnérabilités
 
 Utilisez le tableau de bord Gestion des menaces et des vulnérabilités pour voir votre exposition actuelle.
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Vulnerability** **managementDashboardThreat** >  >  **awareness:**
-:::image type="content" source="images/awareness_dashboard.png" alt-text="The threat awareness widget on the gestion des vulnérabilités dashboard" lightbox="images/awareness_dashboard.png":::
+1. Dans le portail Microsoft 365 Defender, accédez au **tableau** >  de bord de **gestion des** >  vulnérabilités Sensibilisation **aux menaces :**
+ :::image type="content" source="images/awareness_dashboard.png" alt-text="widget de sensibilisation aux menaces dans le tableau de bord de gestion des vulnérabilités" lightbox="images/awareness_dashboard.png":::
 2. Sélectionnez **Afficher les détails des vulnérabilités** pour afficher la vue consolidée de l’exposition de votre organisation.
 :::image type="content" source="images/view_vulnerability_details.png" alt-text="Page détails de la vulnérabilité pour CVE-2021-44228 (Log4j)" lightbox="images/view_vulnerability_details.png":::
 3. Choisissez l’onglet approprié pour voir votre exposition décomposée par :
@@ -145,7 +145,7 @@ Le tableau ci-dessous répertorie les états d’atténuation potentiels :
 |:---|:---|
 | Solution de contournement appliquée | _Windows_ : La variable d’environnement LOG4J_FORMAT_MSG_NO_LOOKUPS a été observée avant le dernier redémarrage de l’appareil. <br/><br/> _Linux + macOS_ : tous les processus en cours d’exécution ont LOG4J_FORMAT_MSG_NO_LOOKUPS=true dans ses variables d’environnement. |
 | Solution de contournement en attente de redémarrage | La variable d’environnement LOG4J_FORMAT_MSG_NO_LOOKUPS est définie, mais aucun redémarrage suivant n’a été détecté. |
-| Non appliqué | _Windows_ : La variable d’environnement LOG4J_FORMAT_MSG_NO_LOOKUPS n’a pas été observée. <br/><br/> _Linux + macOS_ : tous les processus en cours d’exécution n’ont pas LOG4J_FORMAT_MSG_NO_LOOKUPS=true dans ses variables d’environnement, et l’action d’atténuation n’a pas été appliquée sur l’appareil. |
+| Non appliqué | _Windows_ : la variable d’environnement LOG4J_FORMAT_MSG_NO_LOOKUPS n’a pas été observée. <br/><br/> _Linux + macOS_ : tous les processus en cours d’exécution n’ont pas LOG4J_FORMAT_MSG_NO_LOOKUPS=true dans ses variables d’environnement, et l’action d’atténuation n’a pas été appliquée sur l’appareil. |
 | Partiellement atténué | _Linux + macOS_ : bien que l’action d’atténuation ait été appliquée sur l’appareil, tous les processus en cours d’exécution n’ont pas LOG4J_FORMAT_MSG_NO_LOOKUPS=true dans ses variables d’environnement. |
 |Non applicable | Appareils qui ont des fichiers vulnérables qui ne figurent pas dans la plage de versions de l’atténuation. |
 |Inconnu | L’état d’atténuation n’a pas pu être déterminé pour l’instant. |
@@ -170,15 +170,15 @@ La modification prend effet après le redémarrage de l’appareil.
 
 **_Pour Linux :_**
 
-1. Ouvrez le fichier /etc/environment et supprimez la ligne LOG4JFORMATMSGNOLOOKUPS\_\_\_\_=true
-2. Supprimer le fichier /etc/systemd/system.conf.d/log4jdisablejndilookups.conf\_\_\_
-3. Supprimer le fichier /etc/systemd/user.conf.d/log4jdisablejndilookups.conf\_\_\_
+1. Ouvrez le fichier /etc/environment et supprimez la ligne LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS=true
+2. Supprimez le fichier /etc/systemd/system.conf.d/log4j\_disable\_jndi\_lookups.conf
+3. Supprimer le fichier /etc/systemd/user.conf.d/log4j\_désactiver\_jndi\_lookups.conf
 
 La modification prend effet après le redémarrage de l’appareil.
 
 **_Pour macOS :_**
 
-Supprimez le setenv de fichier. LOG4JFORMATMSGNOLOOKUPS.plist\_\_\_\_ dans les dossiers suivants :
+Supprimez le setenv de fichier. LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist dans les dossiers suivants :
 
 - */Library/LaunchDaemons/*
 - */Library/LaunchAgents/*
@@ -236,5 +236,5 @@ Vous pouvez utiliser la requête de repérage avancée suivante pour identifier 
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Vue d’ensemble des menaces et des gestion des vulnérabilités](http://next-gen-threat-and-vuln-mgt.md)
+- [Vue d’ensemble de la gestion des menaces et des vulnérabilités](http://next-gen-threat-and-vuln-mgt.md)
 - [Recommandations en matière de sécurité](tvm-security-recommendation.md)

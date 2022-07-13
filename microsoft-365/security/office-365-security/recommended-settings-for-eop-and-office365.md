@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7798bc177cf6d3a864644fdfa6563ced14cd0ab8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4abfee62caea6e11b525f558bb4e6e8408655c17
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489769"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756824"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -78,7 +78,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, consultez 
 |Action de détection **d’hameçonnage** <p> _PhishSpamAction_|**Déplacer le message vers le dossier Courrier indésirable**<sup>\*</sup> <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|<sup>\*</sup> La valeur par défaut est **Déplacer le message vers le dossier Courrier indésirable** dans la stratégie anti-courrier indésirable par défaut et dans les nouvelles stratégies anti-courrier indésirable que vous créez dans PowerShell. La valeur par défaut est **le message de mise en quarantaine** dans les nouvelles stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender.|
 |**Action de détection de hameçonnage à haut niveau de confiance** <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |Action de détection **en bloc** <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|**Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** <p> _QuarantineRetentionPeriod_|15 jours<sup>\*</sup>|30 jours|30 jours|<sup>\*</sup> La valeur par défaut est 15 jours dans la stratégie anti-courrier indésirable par défaut et dans les nouvelles stratégies anti-courrier indésirable que vous créez dans PowerShell. La valeur par défaut est 30 jours dans les nouvelles stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender courrier indésirable. <p> Cette valeur affecte également les messages mis en quarantaine par des stratégies anti-hameçonnage. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).|
+|**Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** <p> _QuarantineRetentionPeriod_|15 jours<sup>\*</sup>|30 jours|30 jours|<sup>\*</sup> La valeur par défaut est 15 jours dans la stratégie anti-courrier indésirable par défaut et dans les nouvelles stratégies anti-courrier indésirable que vous créez dans PowerShell. La valeur par défaut est 30 jours dans les nouvelles stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender courrier indésirable. <p> Cette valeur affecte également les messages mis en quarantaine par des stratégies anti-hameçonnage. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).|
 |**Activer les conseils de sécurité relatifs au courrier indésirable** <p> _InlineSafetyTipsEnabled_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |Activer le vidage automatique de zéro heure (ZAP) pour les messages de hameçonnage <p> _PhishZapEnabled_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |Activer ZAP pour les messages indésirables <p> _SpamZapEnabled_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
@@ -92,7 +92,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, consultez 
 
 Pour plus d’informations sur les paramètres du filtre anti-courrier indésirable avancé (ASF) dans les stratégies anti-courrier indésirable, consultez [les paramètres du filtre anti-courrier indésirable avancé (ASF) dans EOP](advanced-spam-filtering-asf-options.md).
 
-|Nom de la fonctionnalité de sécurité|Valeur par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Liens d'image vers des sites distants** <p> _IncreaseScoreWithImageLinks_|Désactivé|Désactivé|Désactivé||
 |**Adresse IP numérique dans l'URL** <p> _IncreaseScoreWithNumericIps_|Désactivé|Désactivé|Désactivé||
@@ -120,11 +120,11 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 > [!NOTE]
 > Les stratégies de courrier indésirable sortant ne font pas partie des stratégies de sécurité prédéfinies Standard ou Strict. Les valeurs **Standard** et **Strict** indiquent nos valeurs **recommandées** dans la stratégie de courrier indésirable sortant par défaut ou dans les stratégies de courrier indésirable sortant personnalisées que vous créez.
 
-|Nom de la fonctionnalité de sécurité|Valeur par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Recommandé<br/>Standard|Recommandé<br/>Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Définir une limite de messages externes** <p> _RecipientLimitExternalPerHour_|0|500|400|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
-|**Définir une limite de messages internes** <p> _RecipientLimitInternalPerHour_|0|1 000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
-|**Définir une limite quotidienne de messages** <p> _RecipientLimitPerDay_|0|1 000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
+|**Définir une limite de messages internes** <p> _RecipientLimitInternalPerHour_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
+|**Définir une limite quotidienne de messages** <p> _RecipientLimitPerDay_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Restriction imposée aux utilisateurs qui atteignent la limite de messages** <p> _ActionWhenThresholdReached_|**Empêcher l’utilisateur d’envoyer des messages électroniques jusqu’au lendemain** <p> `BlockUserForToday`|**Empêcher l’utilisateur d’envoyer des messages** <p> `BlockUser`|**Empêcher l’utilisateur d’envoyer des messages** <p> `BlockUser`||
 |**Règles de transfert automatique** <p> _AutoForwardingMode_|**Automatique - Contrôlé par le système** <p> `Automatic`|**Automatique - Contrôlé par le système** <p> `Automatic`|**Automatique - Contrôlé par le système** <p> `Automatic`|
 |**Envoyer une copie des messages sortants qui dépassent ces limites à ces utilisateurs et groupes** <p> _BccSuspiciousOutboundMail_ <p> _BccSuspiciousOutboundAdditionalRecipients_|Non sélectionnée <p> `$false` <p> Vide|Non sélectionnée <p> `$false` <p> Vide|Non sélectionnée <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. <p> Ce paramètre fonctionne uniquement dans la stratégie de courrier indésirable sortant par défaut. Cela ne fonctionne pas dans les stratégies de courrier indésirable sortant personnalisées que vous créez.|
@@ -203,10 +203,10 @@ Pour plus d’informations sur ces paramètres, consultez [Les paramètres d’e
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil d’hameçonnage & protection**|||||
-|**Permettre aux utilisateurs de protéger** (protection des utilisateurs empruntés) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> aucune|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans des rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, le directeur financier et d’autres hauts dirigeants. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
+|**Permettre aux utilisateurs de protéger** (protection des utilisateurs empruntés) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans des rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, le directeur financier et d’autres hauts dirigeants. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
 |**Activer la protection des domaines** (protection de domaine empruntée)|Non sélectionnée|Sélectionné|Sélectionné||
 |**Inclure les domaines que je possède** <p> _EnableOrganizationDomainsProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
-|**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> aucune|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec lesquels vous interagissez fréquemment.|
+|**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec lesquels vous interagissez fréquemment.|
 |**Ajouter des expéditeurs et des domaines de confiance** <p> _ExcludedSenders_ <p> _ExcludedDomains_|Aucun|Aucun|Aucun|Selon votre organisation, nous vous recommandons d’ajouter des expéditeurs ou des domaines qui sont incorrectement identifiés comme tentatives d’emprunt d’identité.|
 |**Activer la veille des boîtes aux lettres** <p> _EnableMailboxIntelligence_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Activer l’intelligence pour la protection de l’emprunt d’identité** <p> _EnableMailboxIntelligenceProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ce paramètre autorise l’action spécifiée pour les détections d’emprunt d’identité par intelligence de boîte aux lettres.|
@@ -239,7 +239,7 @@ Pour configurer ces paramètres, consultez [Activer les pièces jointes sécuris
 
 Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-|Nom de la fonctionnalité de sécurité|Valeur par défaut|Protection intégrée|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Protection intégrée|Commentaire|
 |---|:---:|:---:|---|
 |**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Désactivé <p> `$false`|Activé <p> `$true`|Pour empêcher les utilisateurs de télécharger des fichiers malveillants, consultez [Utiliser SharePoint Online PowerShell pour empêcher les utilisateurs de télécharger des fichiers malveillants](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
 |**Activer les documents sécurisés pour les clients Office** <p> _EnableSafeDocs_|Désactivé <p> `$false`|Activé <p> `$true`|Cette fonctionnalité est disponible et significative uniquement avec des licences qui ne sont pas incluses dans Defender pour Office 365 (par exemple, Microsoft 365 E5 ou Microsoft 365 E5 Sécurité). Pour plus d’informations, consultez [Documents sécurisés dans Microsoft 365 E5](safe-docs.md).|
@@ -280,12 +280,9 @@ Pour configurer ces paramètres, consultez [Configurer les paramètres globaux p
 
 Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-|Nom de la fonctionnalité de sécurité|Valeur par défaut|Protection intégrée|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Protection intégrée|Commentaire|
 |---|:---:|:---:|---|
 |**Bloquer les URL suivantes** <p> _ExcludedUrls_|Vide <p> `$null`|Vide <p> `$null`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <p> Pour plus d’informations, consultez [la liste « Bloquer les URL suivantes » pour les liens sécurisés](safe-links.md#block-the-following-urls-list-for-safe-links). <p> **Remarque** : vous pouvez désormais gérer les entrées d’URL de bloc dans la [liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). La liste « Bloquer les URL suivantes » est en cours de dépréciation. Nous allons essayer de migrer des entrées existantes de la liste « Bloquer les URL suivantes » pour bloquer les entrées d’URL dans la liste d’autorisations/de blocs du locataire. Les messages contenant l’URL bloquée seront mis en quarantaine.|
-|**Utiliser des liens sécurisés dans Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Utilisez des liens sécurisés dans les applications de bureau et mobiles (iOS et Android) prises en charge Office 365. Pour plus d’informations, consultez [les paramètres liens fiables pour les applications Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Ne pas suivre le moment où les utilisateurs cliquent sur des liens protégés dans Office 365 applications** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|La désactivation de ce paramètre (en définissant _TrackClicks_ sur `$true`) suit les clics des utilisateurs dans les applications Office 365 prises en charge.|
-|**Ne laissez pas les utilisateurs cliquer sur l’URL d’origine dans Office 365 applications** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|L’activation de ce paramètre (en définissant _AllowClickThrough_ `$false`sur ) empêche le clic sur l’URL d’origine dans les applications Office 365 prises en charge.|
 
 #### <a name="safe-links-policy-settings"></a>Coffre de stratégie liens
 
@@ -310,6 +307,9 @@ Dans PowerShell, vous utilisez les applets de commande [New-SafeLinksPolicy](/po
 |**Ne réécrivez pas les URL suivantes dans l’e-mail** <p> _DoNotRewriteUrls_|Non sélectionnée <p> Blanc|Non sélectionnée <p> Blanc|Non sélectionnée <p> Blanc|Non sélectionnée <p> Blanc|Nous n’avons aucune recommandation spécifique pour ce paramètre. <p> **Remarque** : L’objectif de la liste « Ne pas réécrire les URL suivantes » est d’ignorer l’habillage des liens sécurisés des URL spécifiées. Au lieu d’utiliser cette liste, vous pouvez désormais [créer des entrées d’URL d’autorisation dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-allow-url-entries).|
 |**Action pour les URL potentiellement malveillantes dans Microsoft Teams**||||||
 |**Activé : Liens fiables vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** <p> _EnableSafeLinksForTeams_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
+|**Utiliser des liens sécurisés dans Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Utilisez des liens sécurisés dans les applications de bureau et mobiles (iOS et Android) prises en charge Office 365. Pour plus d’informations, consultez [les paramètres liens fiables pour les applications Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Ne pas suivre le moment où les utilisateurs cliquent sur des liens protégés dans Office 365 applications** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|La désactivation de ce paramètre (en définissant _TrackClicks_ sur `$true`) suit les clics des utilisateurs dans les applications Office 365 prises en charge.|
+|**Ne laissez pas les utilisateurs cliquer sur l’URL d’origine dans Office 365 applications** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|L’activation de ce paramètre (en définissant _AllowClickThrough_ `$false`sur ) empêche le clic sur l’URL d’origine dans les applications Office 365 prises en charge.|
 |**Cliquer sur les paramètres de protection**||||||
 |**Suivre les clics de l’utilisateur** <p> _TrackUserClicks_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Permettre aux utilisateurs de cliquer sur l’URL d’origine** <p> _AllowClickThrough_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Non sélectionnée <p> `$false`|Non sélectionnée <p> `$false`|La désactivation de ce paramètre (en définissant _AllowClickThrough_ sur `$false`) empêche le clic sur l’URL d’origine.|

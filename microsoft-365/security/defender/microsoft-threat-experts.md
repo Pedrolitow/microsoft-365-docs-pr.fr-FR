@@ -1,8 +1,8 @@
 ---
-title: Vue d’ensemble de Microsoft Threat Experts dans Microsoft 365 Defender
+title: Spécialistes des menaces Microsoft dans Microsoft 365 Defender vue d’ensemble
 ms.reviewer: ''
-description: Microsoft Threat Experts fournit une couche supplémentaire d’expertise à Microsoft 365 Defender.
-keywords: service de chasse aux menaces managée, repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Microsoft Threat Experts
+description: Spécialistes des menaces Microsoft fournit une couche supplémentaire d’expertise pour Microsoft 365 Defender.
+keywords: service de chasse aux menaces managée, service de repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: d256aea992eda2426ab719bf3ee67c2fa0d3c9ea
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: bf40aa8ede1f65d22bd319b3a2fcfe82c778e754
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922392"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756702"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Vue d’ensemble de Microsoft Threat Experts dans Microsoft 365
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>vue d’ensemble de Spécialistes des menaces Microsoft dans Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,27 +36,27 @@ ms.locfileid: "65922392"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Threat Experts - Les notifications d’attaque ciblée sont un service de repérage des menaces managé. Une fois que vous appliquez et que vous êtes accepté, vous recevez des notifications d’attaque ciblée de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation.
-Microsoft Threat Experts – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement.
+Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notification d’attaque ciblée) sont un service de chasse aux menaces managée. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d’attaque de point de terminaison de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation.
+Spécialistes des menaces Microsoft – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement.
 
-## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Appliquer pour Microsoft Threat Experts – Notifications d’attaque ciblée
+## <a name="apply-for-endpoint-attack-notifications"></a>Appliquer pour les notifications d’attaque de point de terminaison
 
 > [!IMPORTANT]
-> Avant de présenter votre demande, veillez à discuter des conditions d’éligibilité pour Microsoft Threat Experts – Notifications d’attaque ciblée avec votre fournisseur de services techniques Microsoft et votre équipe de compte.
+> Avant de présenter votre demande, veillez à discuter des conditions d’éligibilité pour les notifications d’attaque de point de terminaison avec votre fournisseur de services techniques Microsoft et votre équipe de compte.
 
-Si vous disposez déjà de Microsoft Defender pour point de terminaison et de Microsoft 365 Defender, vous pouvez demander microsoft threat experts – Targeted Attack Notifications via son portail Microsoft 365 Defender. Accédez aux **paramètres > points de terminaison > fonctionnalités générales > avancées > Microsoft Threat Experts – Notifications d’attaque ciblée**, puis **sélectionnez Appliquer**. Pour obtenir une description complète [, consultez Configurer les fonctionnalités de Microsoft Threat Experts](./configure-microsoft-threat-experts.md) .
+Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 365 Defender, vous pouvez demander des notifications d’attaque de point de terminaison via leur portail Microsoft 365 Defender. Accédez aux **paramètres > points de terminaison > fonctionnalités générales > avancées > notifications d’attaque de** point de terminaison, puis **sélectionnez Appliquer**. Pour obtenir une description complète, consultez [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md).
 
 :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Option Fonctionnalités avancées dans le volet de navigation gauche de la page Points de terminaison dans le portail Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
-Une fois votre application approuvée, vous commencerez à recevoir des notifications d’attaque ciblée chaque fois que les experts en menace détectent une menace pour votre environnement.
+Une fois votre application approuvée, vous commencerez à recevoir des notifications d’attaque de point de terminaison chaque fois que les experts en menace détectent une menace pour votre environnement.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Microsoft Threat Experts - Experts à la demande
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Spécialistes des menaces Microsoft - Experts à la demande
 
-Contactez votre représentant Microsoft pour vous abonner à Experts à la demande.  Pour plus d’informations [, consultez Configurer les fonctionnalités de Microsoft Threat Experts](./configure-microsoft-threat-experts.md) .
+Contactez votre représentant Microsoft pour vous abonner à Experts à la demande.  Pour plus d’informations, consultez [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md).
 
-## <a name="receive-targeted-attack-notification"></a>Recevoir une notification d’attaque ciblée
+## <a name="receive-endpoint-attack-notification"></a>Recevoir une notification d’attaque de point de terminaison
 
-La fonctionnalité Microsoft Threat Experts – Targeted Attack Notification fournit une chasse proactive aux menaces les plus importantes sur votre réseau. Nos experts en menaces recherchent les intrusions de l’adversaire humain, les attaques au clavier et les attaques avancées, telles que le cyberespionage. Ces notifications s’affichent sous la forme d’une nouvelle alerte. Le service de chasse managé comprend :
+La fonctionnalité de notification d’attaque de point de terminaison fournit une chasse proactive pour les menaces les plus importantes sur votre réseau. Nos experts en menaces recherchent les intrusions de l’adversaire humain, les attaques au clavier et les attaques avancées, telles que le cyberespionage. Ces notifications s’affichent sous la forme d’une nouvelle alerte. Le service de chasse managé comprend :
 
 - Surveillance et analyse des menaces, réduction du temps de séjour et du risque pour votre entreprise
 - Intelligence artificielle entraînée par hunter pour découvrir et cibler à la fois les attaques connues et les menaces émergentes
@@ -102,4 +102,4 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les fonctionnalités de Microsoft Threat Experts](./configure-microsoft-threat-experts.md)
+- [Configurer les fonctionnalités de Spécialistes des menaces Microsoft](./configure-microsoft-threat-experts.md)
