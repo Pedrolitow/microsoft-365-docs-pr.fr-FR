@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Defender pour les PME
-summary: Une sécurité des terminaux simple et complète pour vous aider à protéger votre entreprise, afin que vous puissiez vous concentrer sur l’essentiel. Microsoft Defender pour les PME est disponible sous forme de la souscription autonome et est inclus dans Microsoft 365 Business Premium.
+summary: Une sécurité des terminaux simple et complète pour vous aider à protéger votre entreprise, afin que vous puissiez vous concentrer sur l’essentiel. Defender entreprise est disponible sous la forme d’un abonnement autonome et est inclus dans Microsoft 365 Business Premium.
 metadata:
   title: Documentation Microsoft Defender pour les PME
   description: Defender for Business est une solution de cybersécurité pour les petites et moyennes entreprises. Protéger les appareils avec une sécurité de niveau entreprise à un prix abordable.
@@ -14,12 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: d94aeed225105bf16f2fa057d7c0caf1730eec09
-  ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+  ms.openlocfilehash: 0db947d3a791618db0e6316f09dcd760b35d5c0b
+  ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/15/2022
-  ms.locfileid: "66090517"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66771348"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -31,6 +31,8 @@ landingContent:
       url: mdb-simplified-configuration.md
     - text: Comparer les offres pour les petites et moyennes entreprises
       url: compare-mdb-m365-plans.md
+    - text: Ressources pour les partenaires Microsoft
+      url: mdb-partners.md
     - text: Intégration à Microsoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
   - linkListType: how-to-guide
@@ -49,6 +51,8 @@ landingContent:
       url: trial-playbook-defender-business.md
     - text: Utiliser l’Assistant Installation
       url: mdb-use-wizard.md
+    - text: Activer les fonctionnalités d’aperçu
+      url: mdb-preview.md
 - title: Aide et autres ressources
   linkLists:
   - linkListType: how-to-guide
