@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Protection des donn
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687803"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714133"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -130,7 +130,7 @@ Lorsque vous créez une étiquette de confidentialité, vous êtes invité à co
 - Les paramètres d’étiquette que vous pouvez configurer pour cette étiquette
 - L’emplacement où l’étiquette sera visible par les utilisateurs
 
-Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Vous pouvez également sélectionner l’étendue des ressources Mappage de données Microsoft Purview :
+Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux éléments tels que les documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Vous pouvez également sélectionner l’étendue des ressources de données schématisées pour Microsoft Purview Data Map :
 
 ![Options d’étendue des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 

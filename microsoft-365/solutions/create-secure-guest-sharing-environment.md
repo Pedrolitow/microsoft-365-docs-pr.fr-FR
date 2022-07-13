@@ -1,5 +1,5 @@
 ---
-title: Créer un environnement de partage d’invités sécurisé
+title: Créer un environnement de partage invité plus sécurisé
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,17 +18,17 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+description: Découvrez les options disponibles pour créer un environnement de partage invité sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
+ms.openlocfilehash: ce635d96cf793b0c655b02ccdb9e7077cd245bb4
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490916"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714725"
 ---
-# <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
+# <a name="create-a-more-secure-guest-sharing-environment"></a>Créer un environnement de partage invité plus sécurisé
 
-Dans cet article, nous allons découvrir de nombreuses options permettant de créer un environnement de partage d’invités sécurisé dans Microsoft 365. Voici des exemples pour vous donner une idée des options disponibles. Vous pouvez utiliser ces procédures dans différentes combinaisons pour répondre aux besoins de sécurité et de conformité de votre organisation.
+Dans cet article, nous allons découvrir de nombreuses options permettant de créer un environnement de partage invité dans Microsoft 365. Voici des exemples pour vous donner une idée des options disponibles. Vous pouvez utiliser ces procédures dans différentes combinaisons pour répondre aux besoins de sécurité et de conformité de votre organisation.
 
 Cet article contient les rubriques suivantes :
 
