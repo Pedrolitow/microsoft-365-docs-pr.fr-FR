@@ -15,18 +15,19 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: ae2866d2cabf21616b7aea74220dcf5ce8e4d4eb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651364"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750295"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Étape 3. Configurer des stratégies de conformité pour des appareils avec Intune
 
-L’inscription d’appareils à Intune vous permet d’obtenir une sécurité et un contrôle encore plus importants des données dans votre environnement. [Étape 2. Inscrivez des appareils pour Intune](manage-devices-with-intune-enroll.md) des détails sur la façon d’y parvenir à l’aide de Intune. Cet article traite de l’étape suivante qui consiste à configurer les stratégies de conformité des appareils. 
+L’inscription d’appareils à Intune vous permet d’obtenir une sécurité et un contrôle encore plus importants des données dans votre environnement. [Étape 2. Inscrire les appareils dans Intune](manage-devices-with-intune-enroll.md) explique comment réaliser cette opération à l'aide d'Intune. Cet article traite de l’étape suivante qui consiste à configurer les stratégies de conformité des appareils. 
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-step-2.png#lightbox)
 
