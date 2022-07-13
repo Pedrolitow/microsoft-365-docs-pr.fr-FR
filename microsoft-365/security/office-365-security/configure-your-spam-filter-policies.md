@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780b7bc788cb38578e3729fac88a7c9d081f6732
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128720"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714747"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -225,7 +225,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
    >
    > Le blocage manuel des domaines en ajoutant les domaines à la liste des domaines bloqués n’est pas dangereux, mais il peut augmenter votre charge de travail administratif. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
    >
-   > Dans certains cas, nos filtres ne recevront pas un message, que vous n’acceptiez pas le verdict de filtrage ou que nos systèmes prennent du temps pour y parvenir. Dans ce cas, la liste verte et la liste rouge sont disponibles pour remplacer les verdicts de filtrage actuels. Toutefois, vous devez utiliser ces listes avec parcimonie et temporairement : les listes longs peuvent devenir ingérables et notre pile de filtrage doit faire ce qu’elle est supposée faire. Si vous prévoyez de conserver un domaine autorisé pendant une période prolongée, vous devez indiquer à l'expéditeur de vérifier que son domaine est authentifié et de le configurer pour qu'il soit rejeté par DMARC s'il ne l'est pas.
+   > Dans certains cas, nos filtres ne recevront pas un message, que vous n’acceptiez pas le verdict de filtrage ou que nos systèmes prennent du temps pour y parvenir. Dans ce cas, la liste verte et la liste rouge sont disponibles pour remplacer les verdicts de filtrage actuels. Toutefois, vous devez utiliser ces listes avec parcimonie et temporairement : les listes longs peuvent devenir ingérables et notre pile de filtrage doit faire ce qu’elle est supposée faire. Si vous prévoyez de conserver un domaine autorisé pendant une période prolongée, vous devez indiquer à l'expéditeur de vérifier que son domaine est authentifié et de le configurer pour qu'il soit authentifié et défini sur le rejet DMARC s'il ne l'est pas.
 
    Les étapes permettant d’ajouter des entrées à l’une des listes sont les mêmes :
 
