@@ -11,10 +11,12 @@
           href: trial-playbook-defender-business.md
         - name: Comparer les offres pour les petites et moyennes entreprises
           href: compare-mdb-m365-plans.md
-        - name: Intégration à Microsoft 365 Lighthouse
-          href: mdb-lighthouse-integration.md
+        - name: Fonctionnalités de préversion
+          href: mdb-preview.md
         - name: Ressources pour les partenaires
           href: mdb-partners.md
+        - name: Intégration à Microsoft 365 Lighthouse
+          href: mdb-lighthouse-integration.md
     - name: Prise en main
       items:
         - name: Obtenir Defender pour les PME
@@ -75,6 +77,8 @@
           href: mdb-offboard-devices.md
     - name: Informations de référence
       items:
+        - name: Comment obtenir des serveurs Microsoft Defender pour entreprises (préversion)
+          href: get-defender-business-servers.md
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
         - name: Foire aux questions

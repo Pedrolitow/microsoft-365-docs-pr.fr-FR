@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a21c3b1779c3a8ffa32ca4bbd777b377536ec870
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089459"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772618"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Attribuer des rôles et des autorisations dans Microsoft Defender pour entreprises
 
-Pour effectuer des tâches dans le portail Microsoft 365 Defender, telles que la configuration de Microsoft Defender pour entreprises, l’affichage de rapports ou l’exécution d’actions de réponse sur les menaces détectées, des autorisations appropriées doivent être attribuées à votre équipe de sécurité. Les autorisations sont accordées par le biais de rôles attribués dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou dans [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+Pour effectuer des tâches dans le portail Microsoft 365 Defender, telles que la configuration de Defender entreprise, l’affichage de rapports ou l’exécution d’actions de réponse sur les menaces détectées, des autorisations appropriées doivent être attribuées à votre équipe de sécurité. Les autorisations sont accordées par le biais de rôles qui sont affectés dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou dans [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Procédure
 
@@ -39,9 +39,9 @@ Le tableau suivant décrit les trois rôles qui peuvent être attribués dans De
 
 | Niveau d’autorisation | Description |
 |:---|:---|
-| **Administrateurs généraux** (également appelés administrateurs généraux) <br/><br/> *Il est recommandé de limiter le nombre d’administrateurs généraux.* | Les administrateurs généraux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise pour Microsoft 365 ou pour Microsoft Defender pour entreprises est un administrateur général par défaut. <br/><br/> Les administrateurs généraux sont en mesure d’accéder aux paramètres/de les modifier sur tous les portails Microsoft 365, par exemple : <br/>- Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) |
-| **Administrateurs de sécurité** (également appelés administrateurs de sécurité) | Les administrateurs de sécurité peuvent effectuer les tâches suivantes : <br/>- Afficher et gérer les stratégies de sécurité <br/>- Afficher et gérer les menaces et alertes de sécurité (ces activités incluent la prise d’actions de réponse sur les points de terminaison) <br/>- Afficher les informations et les rapports de sécurité |
-| **Lecteur de sécurité** | Les lecteurs de sécurité peuvent effectuer les tâches suivantes : <br/>- Afficher les stratégies de sécurité <br/>- Afficher les menaces et alertes de sécurité <br/>- Afficher les informations et les rapports de sécurité  |
+| **Administrateurs généraux** (également appelés administrateurs généraux) <p> *Il est recommandé de limiter le nombre d’administrateurs généraux.* | Les administrateurs généraux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise pour Microsoft 365 ou Defender Entreprise est un administrateur général par défaut. <p> Les administrateurs généraux peuvent modifier les paramètres de tous les portails Microsoft 365, par exemple : <ul><li>Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **Administrateurs de sécurité** (également appelés administrateurs de sécurité) | Les administrateurs de sécurité peuvent effectuer les tâches suivantes : <ul><li>Afficher et gérer les stratégies de sécurité</li><li>Afficher et gérer les menaces et alertes de sécurité (ces activités incluent la prise d’actions de réponse sur les points de terminaison)</li><li>Afficher les informations et les rapports de sécurité</li></ul> |
+| **Lecteur de sécurité** | Les lecteurs de sécurité peuvent effectuer les tâches suivantes :<ul><li>Afficher les stratégies de sécurité</li><li>Afficher les menaces et les alertes de sécurité</li><li>Afficher les informations et les rapports de sécurité</li></ul>  |
 
 
 ## <a name="view-or-edit-role-assignments"></a>Afficher ou modifier des attributions de rôles
@@ -57,9 +57,9 @@ Le tableau suivant décrit les trois rôles qui peuvent être attribués dans De
    - Lecteur Sécurité
 
    > [!IMPORTANT]
-   > Microsoft recommande d’accorder aux utilisateurs l’accès uniquement à ce dont ils ont besoin pour effectuer leurs tâches. Nous appelons ce concept *le privilège minimum* pour les autorisations. Pour plus d’informations, consultez [les meilleures pratiques pour l’accès le moins privilégié pour les applications](/azure/active-directory/develop/secure-least-privileged-access). 
+   > Microsoft vous recommande d’accorder aux utilisateurs l’accès uniquement à ce dont ils ont besoin pour effectuer leurs tâches. Nous appelons ce concept *le privilège minimum* pour les autorisations. Pour plus d’informations, consultez [les meilleures pratiques pour l’accès le moins privilégié pour les applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. Dans le volet latéral, sélectionnez le lien **Gérer les membres dans Azure AD** . Cette action vous amène à Azure Active Directory (Azure AD) où vous pouvez afficher et gérer vos attributions de rôles.
+4. Dans le volet latéral, sélectionnez le lien **Gérer les membres dans Azure AD** . Cette action vous permet d’accéder à Azure Active Directory (Azure AD), où vous pouvez afficher et gérer vos attributions de rôles.
 
 5. Sélectionnez un utilisateur pour ouvrir son profil, puis choisissez **Rôles attribués**.
 
@@ -72,7 +72,7 @@ Si vous n’avez pas encore ajouté d’utilisateurs à votre abonnement, consul
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Passez à :
+Atteindre:
 
 - [Étape 3 : Configurer des notifications par e-mail](mdb-email-notifications.md)
-- [Étape 4 : Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md)
+- [Étape 4 : Intégrer des appareils à Defender entreprise](mdb-onboard-devices.md)

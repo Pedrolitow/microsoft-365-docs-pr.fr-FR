@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: cb584d01f2ca135a25ef715fe7152c1fe33ce0f3
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090385"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772706"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Gérer vos règles personnalisées pour les stratégies de pare-feu dans Microsoft Defender pour entreprises
 
-Microsoft Defender pour entreprises inclut des stratégies de pare-feu qui aident à protéger vos appareils contre le trafic réseau indésirable. Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour vos stratégies de pare-feu. Autrement dit, vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques.
+Defender entreprise inclut des stratégies de pare-feu qui aident à protéger vos appareils contre le trafic réseau indésirable. Vous pouvez utiliser des règles personnalisées pour définir des exceptions pour vos stratégies de pare-feu. Autrement dit, vous pouvez utiliser des règles personnalisées pour bloquer ou autoriser des connexions spécifiques.
 
-Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consultez Pare-feu dans Microsoft Defender pour entreprises](mdb-firewall.md).
+Pour en savoir plus sur les stratégies et les paramètres de pare-feu, consultez [Pare-feu dans Defender pour Entreprises](mdb-firewall.md).
 
 **Cet article explique comment** :
 
@@ -99,6 +99,6 @@ Pour en savoir plus sur les stratégies et les paramètres de [pare-feu, consult
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
+- [Afficher et gérer les incidents dans Defender entreprise](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Defender entreprise](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

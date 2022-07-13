@@ -1,5 +1,5 @@
 ---
-title: Protection contre les menaces dans Microsoft Defender pour Office 365, anti-programme malveillant, anti-hameçonnage, anti-courrier indésirable, liens Coffre, pièces jointes Coffre, vidage automatique zéro heure (ZAP), configuration de la sécurité MDO
+title: Protection contre les menaces dans Microsoft Defender pour Office 365, anti-programmes malveillants, anti-hameçonnage, anti-courrier indésirable, liens sécurisés, pièces jointes sécurisées, vidage automatique de zéro heure (ZAP), configuration de la sécurité MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,21 +20,21 @@ description: Les administrateurs peuvent en savoir plus sur la protection contre
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d067035d5eaf3c7a4febac6feeab0c56cd707728
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4a7dd91dde78e816ed579d2f16744ec90b67675
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941432"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772125"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Voici un guide de démarrage rapide qui décompose la configuration de Defender pour Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, ne savez pas par où commencer, ou si vous apprenez le *mieux, utilisez* ces conseils comme liste de vérification et comme point de départ.
 
@@ -58,7 +58,7 @@ Les fonctionnalités de protection contre les menaces sont incluses dans *tous l
 |Protection anti-programme malveillant|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protection anti-hameçonnage|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection anti-courrier indésirable|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protection contre les URL et fichiers malveillants dans les e-mails et les documents Office (liens Coffre et pièces jointes Coffre)|[Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protection contre les URL et fichiers malveillants dans les e-mails et les documents Office (liens sécurisés et pièces jointes sécurisées)|[Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
@@ -67,7 +67,7 @@ Pour configurer Defender pour Office 365 stratégies, vous devez disposer d’un
 |Rôle ou groupe de rôles|Où en savoir plus|
 |---|---|
 |administrateur général|[À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrateur de sécurité|[Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Administrateur de sécurité|[Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
 Pour en savoir plus, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
@@ -103,7 +103,7 @@ Pour obtenir des instructions détaillées sur la configuration des stratégies 
 
 Pour plus d’informations sur les paramètres recommandés pour les stratégies anti-hameçonnage, consultez [les paramètres de stratégie anti-hameçonnage EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) et [les paramètres de stratégie anti-hameçonnage dans Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-La procédure suivante décrit comment configurer la stratégie anti-hameçonnage par défaut. Paramètres disponibles uniquement dans Defender pour Office 365 sont clairement marquées.
+La procédure suivante décrit comment configurer la stratégie anti-hameçonnage par défaut. Les paramètres disponibles uniquement dans Defender pour Office 365 sont clairement marqués.
 
 1. Ouvrez la page **Anti-hameçonnage** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com/antiphishing>.
 
@@ -127,13 +127,13 @@ La procédure suivante décrit comment configurer la stratégie anti-hameçonnag
      - **Section Actions** de message : Configurez les paramètres suivants :
        - **Si le message est détecté comme un utilisateur emprunt d’identité**<sup>\*</sup> : sélectionnez **Mettre en quarantaine le message**. Une zone **Appliquer la stratégie de quarantaine** s’affiche où vous sélectionnez la stratégie de [quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection d’emprunt d’identité de l’utilisateur.
        - **Si le message est détecté comme un domaine**<sup>\*</sup> emprunté : sélectionnez **Mettre en quarantaine le message**. Une zone **Appliquer la stratégie de quarantaine** s’affiche où vous sélectionnez la stratégie de [quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection d’emprunt d’identité de domaine.
-       - **Si l’intelligence de boîte aux lettres détecte un utilisateur emprunt d’identité**<sup>\*</sup> : sélectionnez **Déplacer le message vers les dossiers courrier indésirable des destinataires** (Standard) ou **Mettez le message en quarantaine** (Strict). Si vous sélectionnez **Mettre en quarantaine le message**, une zone **Appliquer la stratégie de mise en quarantaine** s’affiche où vous sélectionnez la [stratégie de quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection d’intelligence de boîte aux lettres.
-       - **Si le message est détecté comme usurpation d’identité** : sélectionnez **Déplacer le message vers les dossiers courrier indésirable des destinataires** (Standard) ou **Mettez le message en quarantaine** (strict).  Si vous sélectionnez **Mettre en quarantaine le message**, une zone **Appliquer la stratégie de mise en quarantaine** s’affiche, où vous sélectionnez la [stratégie de quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’identité.
+       - **Si l’intelligence de boîte aux lettres détecte un utilisateur emprunt d’identité**<sup>\*</sup> : sélectionnez **Déplacer le message vers les dossiers Courrier indésirable Email des destinataires (** Standard) ou **Mettez le message en quarantaine** (Strict). Si vous sélectionnez **Mettre en quarantaine le message**, une zone **Appliquer la stratégie de mise en quarantaine** s’affiche où vous sélectionnez la [stratégie de quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection d’intelligence de boîte aux lettres.
+       - **Si le message est détecté comme usurpation d’identité** : sélectionnez **Déplacer le message vers les dossiers Courrier indésirable Email des destinataires** (Standard) ou **Mettez le message en quarantaine** (Strict).  Si vous sélectionnez **Mettre en quarantaine le message**, une zone **Appliquer la stratégie de mise en quarantaine** s’affiche, où vous sélectionnez la [stratégie de quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’identité.
      - **Conseils de sécurité & section Indicateurs** : Configurez les paramètres suivants :
-       - **Afficher le premier contact conseil de sécurité** : Sélectionner (activer).
-       - **Afficher l’emprunt d’identité de l’utilisateur conseil de sécurité**<sup>\*</sup> : Sélectionner (activer).
-       - **Afficher l’emprunt d’identité de domaine conseil de sécurité**<sup>\*</sup> : Sélectionner (activer).
-       - **Afficher les caractères inhabituels d’emprunt d’identité de l’utilisateur conseil de sécurité**<sup>\*</sup> : Sélectionner (activer).
+       - **Afficher le premier conseil de sécurité du contact** : Sélectionnez (activer).
+       - **Afficher l’info-bulle de sécurité de l’emprunt d’identité de l’utilisateur** : Sélectionnez (activer).<sup>\*</sup>
+       - **Afficher l’info-bulle de sécurité d’emprunt d’identité de domaine** : Sélectionnez (activer).<sup>\*</sup>
+       - **Afficher le conseil de sécurité des caractères inhabituels d’emprunt d’identité de l’utilisateur** : Sélectionner (activer).<sup>\*</sup>
        - **Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’identité** : Sélectionner (activer).
        - **Afficher la balise « via »** : Sélectionner (activer).
 
@@ -162,11 +162,11 @@ Pour plus d’informations sur les paramètres recommandés pour la lutte contre
 
    - **Section Actions** : Cliquez sur **Modifier les actions**. Dans le menu volant qui s’affiche, configurez les paramètres suivants :
      - **Section Actions de message** :
-       - **Courrier indésirable** : vérifiez que **le dossier Déplacer le message vers courrier indésirable** est sélectionné (Standard) ou sélectionnez **Message de quarantaine** (Strict).
+       - **Courrier indésirable** : vérifiez que **le dossier Déplacer le message vers le courrier indésirable Email** est sélectionné (Standard) ou sélectionnez **Message de quarantaine** (Strict).
        - **Courrier indésirable à haut niveau de confiance** : sélectionnez **le message de mise en quarantaine**.
        - **Hameçonnage** : sélectionner le **message de mise en quarantaine**.
        - **Hameçonnage à haut niveau de confiance** : vérifiez que les **messages de quarantaine** sont sélectionnés.
-       - **En bloc** : vérifiez que **le dossier Déplacer le message vers courrier indésirable** est sélectionné (Standard) ou sélectionnez **Message de quarantaine** (Strict).
+       - **En bloc** : vérifiez que **le dossier Déplacer le message vers le courrier indésirable Email** est sélectionné (Standard) ou sélectionnez **Message de quarantaine** (Strict).
 
        Pour chaque action dans laquelle vous sélectionnez **Message de mise en quarantaine**, une zone **de stratégie de mise en quarantaine s’affiche** , dans laquelle vous sélectionnez la [stratégie de quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine par la protection anti-courrier indésirable.
 
@@ -186,104 +186,91 @@ Pour plus d’informations sur les paramètres recommandés pour la lutte contre
 
 Pour obtenir des instructions détaillées sur la configuration des stratégies anti-courrier indésirable, consultez Configurer les stratégies [anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Partie 4 : Protection contre les URL et fichiers malveillants (liens Coffre et pièces jointes Coffre dans Defender pour Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Partie 4 : Protection contre les URL et fichiers malveillants (liens sécurisés et pièces jointes sécurisées dans Defender pour Office 365)
 
-La protection contre les URL et fichiers malveillants est disponible dans les abonnements qui incluent [Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Il est configuré via [Coffre pièces jointes](safe-attachments.md) et [les stratégies de liens Coffre](safe-links.md).
+La protection contre les URL et fichiers malveillants est disponible dans les abonnements qui incluent [Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Il est configuré via [des pièces jointes sécurisées et des](safe-attachments.md) [stratégies de liens fiables](safe-links.md) .
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Coffre stratégies de pièces jointes dans Microsoft Defender pour Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
-Pour plus d’informations sur les paramètres recommandés pour les pièces jointes Coffre, consultez .[ Coffre paramètres des pièces jointes](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+Pour plus d’informations sur les paramètres recommandés pour les pièces jointes sécurisées, consultez . [Paramètres des pièces jointes sécurisées](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-1. Ouvrez la page **Coffre Pièces jointes** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com/safeattachmentv2>.
+1. Ouvrez la page **Pièces jointes sécurisées** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com/safeattachmentv2>.
 
-2. Dans la page **Coffre Pièces jointes**, cliquez sur **Paramètres globaux**, puis configurez les paramètres suivants dans le menu volant qui s’affiche :
+2. Dans la page **Pièces jointes sécurisées** , cliquez sur **Paramètres globaux**, puis configurez les paramètres suivants dans le menu volant qui s’affiche :
    - **Activez Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** : activez ce paramètre (![activer/désactiver).](../../media/scc-toggle-on.png)
 
      > [!IMPORTANT]
-     > **Avant d’activer Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams, vérifiez que la journalisation d’audit est activée dans votre organisation**. Cette action est généralement effectuée par une personne qui a le rôle Journaux d’audit attribué dans Exchange Online. Pour plus d’informations, consultez [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md) !
+     > **Avant d’activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, vérifiez que la journalisation d’audit est activée dans votre organisation**. Cette action est généralement effectuée par une personne qui a le rôle Journaux d’audit attribué dans Exchange Online. Pour plus d’informations, consultez [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md) !
 
-   - **Activez Coffre Documents pour Office clients** : activez ce paramètre (![activer/désactiver).](../../media/scc-toggle-on.png) Notez que cette fonctionnalité est disponible et significative uniquement avec les types de licences requis. Pour plus d’informations, consultez [Coffre Documents dans Microsoft 365 E5](safe-docs.md).
-   - **Autoriser les utilisateurs à cliquer via la vue protégée même si Coffre documents ont identifié le fichier comme malveillant** : vérifiez que ce paramètre est désactivé (![désactiver).](../../media/scc-toggle-off.png))
+   - **Activer les documents sécurisés pour les clients Office** : activez ce paramètre (![activer/désactiver).](../../media/scc-toggle-on.png) Notez que cette fonctionnalité est disponible et significative uniquement avec les types de licences requis. Pour plus d’informations, consultez [Documents sécurisés dans Microsoft 365 E5](safe-docs.md).
+   - **Autoriser les utilisateurs à cliquer sur l’affichage protégé même si des documents sécurisés ont identifié le fichier comme malveillant** : vérifiez que ce paramètre est désactivé (![désactiver).](../../media/scc-toggle-off.png))
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**
 
-3. De retour sur la page **Coffre Pièces jointes**, cliquez sur ![Créer une icône.](../../media/m365-cc-sc-create-icon.png)
+3. De retour sur la page **Pièces jointes sécurisées**, cliquez sur ![l’icône Créer.](../../media/m365-cc-sc-create-icon.png)
 
-4. Dans l’Assistant **Création d’une stratégie de Coffre pièces jointes** qui s’ouvre, configurez les paramètres suivants :
+4. Dans l’Assistant **Création d’une stratégie de pièces jointes sécurisées** qui s’ouvre, configurez les paramètres suivants :
    - **Nommez votre page de stratégie** :
      - **Nom** : entrez quelque chose d’unique et de descriptif.
      - **Description** : entrez une description facultative.
    - **Page Utilisateurs et domaines** : étant donné qu’il s’agit de votre première stratégie et que vous souhaitez probablement optimiser la couverture, envisagez d’entrer vos [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans la zone **Domaines** . Sinon, vous pouvez utiliser les zones **Utilisateurs** et **groupes** pour un contrôle plus précis. Vous pouvez spécifier des exceptions en sélectionnant **Exclure ces utilisateurs, groupes et domaines et** en entrant des valeurs.
-   - **page Paramètres** :
-     - **Coffre pièces jointes réponse de programme malveillant inconnu** : Sélectionnez **Bloquer**.
+   - **Page Paramètres** :
+     - **Réponse de programmes malveillants inconnus pièces jointes fiables** : Sélectionnez **Bloquer**.
      - **Stratégie de quarantaine** : la valeur par défaut est vide, ce qui signifie que la stratégie AdminOnlyAccessPolicy est utilisée. Les stratégies de quarantaine définissent ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine et si les utilisateurs reçoivent des notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
      - **Redirection de la pièce jointe avec les pièces jointes détectées** : **activez la redirection** : activez ce paramètre (sélectionnez) et entrez une adresse e-mail pour recevoir les messages détectés.
-     - **Appliquez la réponse de détection Coffre Pièces jointes si l’analyse ne peut pas se terminer (délai d’expiration ou erreurs)** : vérifiez que ce paramètre est sélectionné.
+     - **Appliquez la réponse de détection des pièces jointes sécurisées si l’analyse ne peut pas se terminer (délai d’expiration ou erreurs)** : vérifiez que ce paramètre est sélectionné.
 
 5. Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
 
-6. (Recommandé) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez l’applet de commande **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre _DisallowInfectedFileDownload_ défini `$true` sur SharePoint PowerShell en ligne.
+6. (Recommandé) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez l’applet de commande **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre _DisallowInfectedFileDownload_ défini `$true` sur SharePoint Online PowerShell.
    - `$true` bloque toutes les actions (à l’exception de Supprimer) pour les fichiers détectés. Les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers détectés.
    - `$false` bloque toutes les actions, à l’exception de Delete et Download. Les utilisateurs peuvent choisir d’accepter le risque et de télécharger un fichier détecté.
 
-7. Autorisez jusqu’à 30 minutes pour que vos modifications se propagent à tous les centres de données Microsoft 365.
+7. Autorisez jusqu’à 30 minutes pour que vos modifications s’étendent à tous les centres de données Microsoft 365.
 
-Pour obtenir des instructions détaillées sur la configuration des stratégies Coffre pièces jointes et des paramètres globaux pour Coffre pièces jointes, consultez les rubriques suivantes :
+Pour obtenir des instructions détaillées sur la configuration des stratégies de pièces jointes sécurisées et des paramètres globaux pour les pièces jointes sécurisées, consultez les rubriques suivantes :
 
-- [Configurer des stratégies de pièces jointes Coffre dans Microsoft Defender pour Office 365](set-up-safe-attachments-policies.md)
+- [Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365](set-up-safe-attachments-policies.md)
 - [Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
 - [Documents sécurisés dans Microsoft 365 E5](safe-docs.md)
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Coffre des stratégies de liens dans Microsoft Defender pour Office 365
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Stratégies de liens sécurisés dans Microsoft Defender pour Office 365
 
-Pour plus d’informations sur les paramètres recommandés pour les liens Coffre, consultez [Coffre Paramètres de liens](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+Pour plus d’informations sur les paramètres recommandés pour les liens sécurisés, consultez [Les paramètres liens fiables](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-1. Ouvrez la page **Liens Coffre** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com/safelinksv2>.
+1. Ouvrez la page **Liens sécurisés** dans le portail Microsoft 365 Defender, <https://security.microsoft.com/safelinksv2>puis cliquez sur ![Créer une icône.](../../media/m365-cc-sc-create-icon.png)
 
-2. Dans la page **liens Coffre**, cliquez sur **Paramètres globaux**, puis configurez les paramètres suivants dans le menu volant qui s’affiche :
-   - **Paramètres qui s’appliquent au contenu dans la section applications Office 365 prises en charge** :
-     - **Utilisez Coffre Liens dans Office 365 applications** : vérifiez que ce paramètre est activé (![activer/désactiver).](../../media/scc-toggle-on.png)
-     - **Ne suivez pas le moment où les utilisateurs cliquent sur des liens protégés dans Office 365 applications** : désactivez ce paramètre (![désactivez.](../../media/scc-toggle-off.png)).
-     - **Ne laissez pas les utilisateurs cliquer sur l’URL d’origine dans Office 365 applications** : vérifiez que ce paramètre est activé (![activer/désactiver).](../../media/scc-toggle-on.png)
-
-   Lorsque vous avez terminé, cliquez sur **Enregistrer**
-
-3. De retour sur la page **liens Coffre**, cliquez sur ![l’icône Créer.](../../media/m365-cc-sc-create-icon.png)
-
-4. Dans l’Assistant **Créer Coffre Liens** qui s’ouvre, configurez les paramètres suivants :
+2. Dans l’Assistant **Créer des liens fiables** qui s’ouvre, configurez les paramètres suivants :
    - **Nommez votre page de stratégie** :
      - **Nom** : entrez quelque chose d’unique et de descriptif.
      - **Description** : entrez une description facultative.
    - **Page Utilisateurs et domaines** : étant donné qu’il s’agit de votre première stratégie et que vous souhaitez probablement optimiser la couverture, envisagez d’entrer vos [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans la zone **Domaines** . Sinon, vous pouvez utiliser les zones **Utilisateurs** et **groupes** pour un contrôle plus précis. Vous pouvez spécifier des exceptions en sélectionnant **Exclure ces utilisateurs, groupes et domaines et** en entrant des valeurs.
    - **Url & cliquez sur la page des paramètres de protection** :
      - **Action sur les URL potentiellement malveillantes dans la section e-mails** :
-       - **Activé : Coffre Liens vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans l’e-mail** : sélectionnez son paramètre (activer).
-       - **Appliquer Coffre liens vers les messages électroniques envoyés au sein de l’organisation** : sélectionnez ce paramètre (activer).
+       - **Activé : Liens fiables vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans l’e-mail** : sélectionnez son paramètre (activer).
+       - **Appliquer des liens sécurisés aux messages électroniques envoyés au sein de l’organisation** : sélectionnez ce paramètre (activer).
        - **Appliquez l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** : sélectionnez ce paramètre (activer).
-       - **Attendez que l’analyse d’URL se termine avant de remettre le message** : Sélectionnez ce paramètre (activer).
-       - **Ne réécrivez pas d’URL, effectuez des vérifications via Coffre API Links uniquement** : vérifiez que ce paramètre n’est pas sélectionné (désactiver).
-     - **Ne réécrivez pas les URL suivantes dans l’e-mail** : nous n’avons aucune recommandation spécifique pour ce paramètre. Pour plus d’informations, consultez [les listes « Ne pas réécrire les URL suivantes » dans les stratégies Coffre Liens](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
-     - **Action pour les URL potentiellement malveillantes dans Microsoft Teams** section :
-       - ***Activé : Coffre Liens vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** : sélectionnez ce paramètre (activer).
+         - **Attendez que l’analyse d’URL se termine avant de remettre le message** : Sélectionnez ce paramètre (activer).
+       - **Ne réécrivez pas les URL, effectuez des vérifications via l’API Liens fiables uniquement** : vérifiez que ce paramètre n’est pas sélectionné (désactivez).
+     - **Ne réécrivez pas les URL suivantes dans l’e-mail** : nous n’avons aucune recommandation spécifique pour ce paramètre. Pour plus d’informations, consultez [les listes « Ne pas réécrire les URL suivantes » dans les stratégies liens fiables](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Action pour les URL potentiellement malveillantes dans la section Microsoft Teams** :
+       - ***Activé : Liens fiables vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** : sélectionnez ce paramètre (activer).
      - **Cliquez sur la section Paramètres de protection** :
        - **Suivre les clics de l’utilisateur** : vérifiez que ce paramètre est sélectionné (activé).
-       - **Laissez les utilisateurs cliquer sur l’URL d’origine** : désactivez ce paramètre (non sélectionné).
-       - **Afficher la marque de l’organisation sur les pages de notification et d’avertissement** : la sélection de ce paramètre (activation) n’est significative qu’après avoir suivi les instructions fournies dans [Personnaliser le thème Microsoft 365 pour que votre organisation](../../admin/setup/customize-your-organization-theme.md) charge le logo de votre entreprise.
+         - **Laissez les utilisateurs cliquer sur l’URL d’origine** : désactivez ce paramètre (non sélectionné).
+         - **Afficher la personnalisation de l’organisation sur les pages de notification et d’avertissement** : la sélection de ce paramètre (activation) n’est significative qu’après avoir suivi les instructions du [thème Personnaliser 365 pour que votre organisation](../../admin/setup/customize-your-organization-theme.md) charge le logo de votre entreprise.
    - **Page de notification** :
-     - **Comment voulez-vous informer les utilisateurs ?** section : Si vous le souhaitez, vous pouvez sélectionner **Utiliser le texte de notification personnalisé** pour entrer le texte de notification personnalisé à utiliser. Vous pouvez également sélectionner **Utiliser Traducteur Microsoft pour la localisation automatique afin** de traduire le texte de notification personnalisé dans la langue de l’utilisateur. Sinon, laissez **utiliser le texte de notification par défaut** sélectionné.
+     - **Comment voulez-vous informer les utilisateurs ?** section : Si vous le souhaitez, vous pouvez sélectionner **Utiliser le texte de notification personnalisé** pour entrer le texte de notification personnalisé à utiliser. Vous pouvez également sélectionner **Utiliser Microsoft Translator pour la localisation automatique afin** de traduire le texte de notification personnalisé dans la langue de l’utilisateur. Sinon, laissez **utiliser le texte de notification par défaut** sélectionné.
 
-5. Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+3. Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
 
-Pour obtenir des instructions détaillées sur la configuration des stratégies de liens Coffre et des paramètres globaux pour Coffre Liens, consultez les rubriques suivantes :
-
-- [Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365](set-up-safe-links-policies.md)
-- [Configurer les paramètres globaux des liens Coffre dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md)
+Pour obtenir des instructions détaillées sur la configuration des stratégies de liens fiables et des paramètres globaux pour les liens sécurisés, consultez [Configurer des stratégies de liens fiables dans Microsoft Defender pour Office 365](set-up-safe-links-policies.md).
 
 ### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>À présent, configurez des alertes pour les fichiers détectés dans SharePoint Online ou OneDrive Entreprise
 
 Pour recevoir une notification lorsqu’un fichier dans SharePoint Online ou OneDrive Entreprise a été identifié comme malveillant, vous pouvez configurer une alerte comme décrit dans cette section.
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la stratégie **d’alerte** des **règles** \> de & de collaboration \> & par **e-mail**.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & stratégie** **d’alerte** **de règles** \> de & polices de collaboration\>.
 
 2. Dans la page **Stratégie d’alerte** , cliquez sur **Nouvelle stratégie d’alerte**.
 
@@ -303,14 +290,14 @@ Pour recevoir une notification lorsqu’un fichier dans SharePoint Online ou One
 
 5. Dans la page **Définir vos destinataires** , configurez les paramètres suivants :
    - **Envoyer des notifications par e-mail** : vérifiez que ce paramètre est sélectionné.
-   - **Destinataires d’e-mail** : sélectionnez un ou plusieurs administrateurs généraux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
+   - **Email destinataires** : sélectionnez un ou plusieurs administrateurs généraux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
    - **Limite de notification quotidienne** : vérifiez **qu’aucune limite n’est** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**
 
 6. Dans la page **Vérifier vos paramètres** , passez en revue vos paramètres, vérifiez **que Oui, activez-le immédiatement** , puis cliquez sur **Terminer**
 
-Pour en savoir plus sur les stratégies d’alerte, consultez [Stratégies d’alerte dans le portail de conformité Microsoft Purview](../../compliance/alert-policies.md).
+Pour en savoir plus sur les stratégies d’alerte, consultez Stratégies [d’alerte dans le portail de conformité Microsoft Purview](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > Une fois la configuration terminée, utilisez ces liens pour démarrer les investigations de charge de travail :
@@ -326,6 +313,6 @@ Après avoir configuré les fonctionnalités de protection contre les menaces, v
 
 |Procédure|Ressources pour en savoir plus|
 |---|---|
-|Découvrez comment les fonctionnalités de protection contre les menaces fonctionnent pour votre organisation en consultant les rapports|[Rapports de sécurité par e-mail](view-email-security-reports.md) <p> [Rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
-|Passez régulièrement en revue et modifiez vos stratégies de protection contre les menaces en fonction des besoins|[Degré de sécurisation](../defender/microsoft-secure-score.md) <p> [Microsoft 365 fonctionnalités d’investigation et de réponse aux menaces](./office-365-ti.md)|
+|Découvrez comment les fonctionnalités de protection contre les menaces fonctionnent pour votre organisation en consultant les rapports|[Email rapports de sécurité](view-email-security-reports.md) <p> [Rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md) <p> [Threat Explorer](threat-explorer.md)|
+|Passez régulièrement en revue et modifiez vos stratégies de protection contre les menaces en fonction des besoins|[Degré de sécurisation](../defender/microsoft-secure-score.md) <p> [Fonctionnalités d’investigation et de réponse aux menaces Microsoft 365](./office-365-ti.md)|
 |Surveiller les nouvelles fonctionnalités et mises à jour du service|[Options de publication standard et ciblée](../../admin/manage/release-options-in-office-365.md) <p> [Centre de messages](../../admin/manage/message-center.md) <p> [Feuille de route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

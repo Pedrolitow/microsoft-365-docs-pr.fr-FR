@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3c3c6fd32d03e5df84d35d399d963c28c3d745a6
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115826"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772081"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "66115826"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les e-mails sortants envoyés via EOP sont automatiquement vérifiés pour le courrier indésirable et l’activité d’envoi inhabituelle.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les e-mails sortants envoyés via EOP sont automatiquement vérifiés pour le courrier indésirable et l’activité d’envoi inhabituelle.
 
-Le courrier indésirable sortant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou la liste SCL) et sont acheminés via le pool de remise à haut risque pour protéger la réputation du service ([c’est-à-dire](high-risk-delivery-pool-for-outbound-messages.md), garder Microsoft 365 serveurs de messagerie source hors des listes de blocs IP). Les administrateurs sont automatiquement avertis de l’activité de messagerie sortante suspecte et des utilisateurs bloqués via des [stratégies d’alerte](../../compliance/alert-policies.md).
+Le courrier indésirable sortant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou la liste SCL) et sont acheminés via le pool de remises à haut risque pour aider à protéger la réputation du service ( [c’est-à-dire](high-risk-delivery-pool-for-outbound-messages.md) , empêcher les serveurs de messagerie source Microsoft 365 de se trouver hors des listes de blocs IP). Les administrateurs sont automatiquement avertis de l’activité de messagerie sortante suspecte et des utilisateurs bloqués via des [stratégies d’alerte](../../compliance/alert-policies.md).
 
 EOP utilise des stratégies de courrier indésirable sortant dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
 Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie de courrier indésirable sortant par défaut. Pour une plus grande granularité, vous pouvez également créer des stratégies de courrier indésirable sortantes personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
-Vous pouvez configurer des stratégies de courrier indésirable sortant dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour organisations sans boîtes aux lettres Exchange Online).
+Vous pouvez configurer des stratégies de courrier indésirable sortant dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres).
 
 Les éléments de base d’une stratégie de courrier indésirable sortant dans EOP sont les suivants :
 
@@ -85,7 +85,7 @@ Pour augmenter l’efficacité du filtrage du courrier indésirable sortant, vou
 
 - Pour connaître les paramètres recommandés pour les stratégies de courrier indésirable sortant, consultez [les paramètres de stratégie de filtrage du courrier indésirable sortant EOP](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
-- Les [stratégies d’alerte](../../compliance/alert-policies.md) par défaut nommées Limite d’envoi de courriers **électroniques dépassées**, **modèles d’envoi de courrier suspect détectés** et **utilisateur limité à l’envoi de messages électroniques** envoient déjà des notifications par e-mail aux membres du groupe **TenantAdmins** (**administrateurs généraux**) concernant l’activité de courrier sortant inhabituelle et les utilisateurs bloqués en raison du courrier indésirable sortant. Pour plus d’informations, consultez [Vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Nous vous recommandons d’utiliser ces stratégies d’alerte plutôt que les options de notification dans les stratégies de courrier indésirable sortant.
+- Les [stratégies d’alerte par défaut nommées](../../compliance/alert-policies.md) **Email limite d’envoi dépassée**, **les modèles d’envoi de courriers suspects détectés** et **l’utilisateur restreint à l’envoi de messages électroniques** envoient déjà des notifications par e-mail aux membres du groupe **TenantAdmins** (**administrateurs généraux**) concernant l’activité de courrier sortant inhabituelle et les utilisateurs bloqués en raison d’un courrier indésirable sortant. Pour plus d’informations, consultez [Vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Nous vous recommandons d’utiliser ces stratégies d’alerte plutôt que les options de notification dans les stratégies de courrier indésirable sortant.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Utiliser le portail Microsoft 365 Defender pour créer des stratégies de courrier indésirable sortant
 
@@ -117,14 +117,14 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
    - **Exclure ces utilisateurs, groupes et domaines** : pour ajouter des exceptions pour les expéditeurs internes auxquels la stratégie s’applique (exceptions de destinataire), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    > [!IMPORTANT]
-   > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
-   > - Le destinataire est : romain@contoso.com
-   > - Le destinataire est membre de : Executives
+   > - Le destinataire est : romain@contoso.com
+   > - Le destinataire est membre de : Exécutifs
    >
-   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >
-   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
+   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -142,14 +142,14 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
      Pour toutes les actions, les expéditeurs spécifiés dans **l’utilisateur ne peuvent pas envoyer de** stratégie d’alerte par e-mail (et dans le désormais redondant **Notifier ces utilisateurs et groupes si un expéditeur est bloqué en raison de l’envoi d’un paramètre de courrier indésirable sortant** plus loin sur cette page) reçoivent des notifications par e-mail.
 
-     - **Empêchez l’utilisateur d’envoyer des messages électroniques jusqu’au jour suivant** : il s’agit de la valeur par défaut. Les notifications par e-mail sont envoyées et l’utilisateur ne pourra plus envoyer de messages avant le lendemain, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
+     - **Empêchez l’utilisateur d’envoyer des messages électroniques jusqu’au jour suivant** : il s’agit de la valeur par défaut. Email notifications sont envoyées et l’utilisateur ne pourra plus envoyer de messages avant le lendemain, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
        - La stratégie d’alerte nommée **User restricted from sending email** notifie les administrateurs (par e-mail et sur la page **Incidents & alerts** \> **View alerts** ).
        - Tous les destinataires spécifiés dans la stratégie **Avertir des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi d’un paramètre de courrier indésirable sortant** dans la stratégie sont également avertis.
        - L’utilisateur ne pourra pas envoyer d’autres messages jusqu’au lendemain, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
-     - **Empêcher l’utilisateur d’envoyer des messages électroniques** : des notifications par e-mail sont envoyées, l’utilisateur est ajouté aux **utilisateurs restreints** <https://security.microsoft.com/restrictedusers> dans le portail Microsoft 365 Defender et l’utilisateur ne peut pas envoyer de courrier électronique tant qu’il n’a pas été supprimé des **utilisateurs restreints** par un administrateur. Une fois qu’un administrateur a supprimé l’utilisateur de la liste, il ne sera plus limité pour ce jour-là. Pour obtenir des instructions, consultez [Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable](removing-user-from-restricted-users-portal-after-spam.md).
-     - **Aucune action, alerte uniquement** : des notifications par e-mail sont envoyées.
+     - **Empêcher l’utilisateur d’envoyer des messages électroniques** : Email notifications sont envoyées, l’utilisateur est ajouté aux **utilisateurs restreints** <https://security.microsoft.com/restrictedusers> dans le portail Microsoft 365 Defender et l’utilisateur ne peut pas envoyer d’e-mail tant qu’il n’a pas été supprimé des **utilisateurs restreints** par un administrateur. Une fois qu’un administrateur a supprimé l’utilisateur de la liste, il ne sera plus limité pour ce jour-là. Pour obtenir des instructions, consultez [Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Aucune action, alerte uniquement** : Email notifications sont envoyées.
 
-   - **Règles de transfert** : utilisez les paramètres de cette section pour contrôler le transfert automatique d’e-mails par **Exchange Online boîtes aux lettres** aux expéditeurs externes. Pour plus d’informations, consultez [Contrôle du transfert automatique d’e-mails externes dans Microsoft 365](external-email-forwarding.md).
+   - **Règles de transfert** : utilisez les paramètres de cette section pour contrôler le transfert automatique d’e-mails par **Exchange Online boîtes aux lettres** aux expéditeurs externes. Pour plus d’informations, consultez [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
 
      > [!NOTE]
      > Lorsque le transfert automatique est désactivé, le destinataire reçoit un rapport de non-remise (également appelé NDR ou message de rebond) si les expéditeurs externes envoient un e-mail à une boîte aux lettres sur laquelle le transfert est en place. Si le message est envoyé par un expéditeur interne **et** que la méthode de transfert est le [transfert de boîte aux lettres](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (également appelé _transfert SMTP_), l’expéditeur interne obtient la valeur NDR. L’expéditeur interne n’obtient pas de NDR si le transfert s’est produit en raison d’une règle de boîte de réception.
@@ -305,7 +305,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 Cet exemple crée une stratégie de filtrage du courrier indésirable sortant nommée Contoso Executives avec les paramètres suivants :
 
-- Les limites de débit des destinataires sont limitées aux valeurs plus petites que les valeurs par défaut. Pour plus d’informations, consultez [Les limites d’envoi entre Microsoft 365 options](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+- Les limites de débit des destinataires sont limitées aux valeurs plus petites que les valeurs par défaut. Pour plus d’informations, consultez [Les limites d’envoi dans les options Microsoft 365](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - Une fois que l’une des limites est atteinte, l’utilisateur n’est pas autorisé à envoyer des messages.
 

@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c5606c19e4cef64e701d34a5e4ccc2143f51f394
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 209af419462d6894e80b1d05955a58a78572e525
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090363"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772738"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises
 
-Dans Microsoft Defender pour entreprises, les paramètres de sécurité sont configurés par le biais de stratégies appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
+Dans Defender entreprise, les paramètres de sécurité sont configurés via des stratégies appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
 
 **Cet article explique comment** :
 
@@ -69,7 +69,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
    - Pour conserver le groupe d’appareils sélectionné tel qu’il est, choisissez **Suivant**.
    - Pour supprimer un groupe d’appareils de la stratégie, sélectionnez **Supprimer**.
-   - Pour configurer un nouveau groupe d’appareils, sélectionnez **Créer un groupe**, puis configurez votre groupe d’appareils. (Pour obtenir de l’aide sur cette tâche, consultez [Groupes d’appareils dans Microsoft Defender pour entreprises](mdb-create-edit-device-groups.md).)
+   - Pour configurer un nouveau groupe d’appareils, sélectionnez **Créer un groupe**, puis configurez votre groupe d’appareils. (Pour obtenir de l’aide sur cette tâche, consultez [Groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).)
    - Pour appliquer la stratégie à un autre groupe d’appareils, sélectionnez **Utiliser le groupe existant**.
 
    Une fois que vous avez spécifié quels groupes d’appareils doivent recevoir la stratégie, choisissez **Suivant**.
@@ -111,7 +111,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
    Pour en savoir plus sur les groupes d’appareils, consultez [Groupes d’appareils dans Defender pour Entreprises](mdb-create-edit-device-groups.md).
 
-8. Sur l’onglet **Paramètres de configuration**, spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, consultez [Paramètres de configuration pour Microsoft Defender pour entreprises](mdb-next-gen-configuration-settings.md).
+8. Sur l’onglet **Paramètres de configuration**, spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, consultez [Paramètres de configuration pour Defender entreprise](mdb-next-gen-configuration-settings.md).
 
 9. Sur l’onglet **Vérifier votre stratégie**, passez en revue les informations générales, les appareils ciblés et les paramètres de configuration. 
 
@@ -124,7 +124,7 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 Choisissez une ou plusieurs des tâches suivantes :
 
 - [Gérer les appareils](mdb-manage-devices.md)
-- [Créer une stratégie dans Microsoft Defender pour entreprises](mdb-create-new-policy.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
+- [Créer une stratégie dans Defender entreprise](mdb-create-new-policy.md)
+- [Afficher et gérer les incidents dans Defender entreprise](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Defender entreprise](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

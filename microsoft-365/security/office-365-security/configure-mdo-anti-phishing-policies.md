@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78eab2c8c6624764f65ed5db9abf5a6a0621af83
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: f36ed4c02c333480ed5cff5dc21db43d432ce5aa
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115584"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772398"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -87,7 +87,7 @@ Pour augmenter l’efficacité de la protection anti-hameçonnage dans Defender 
 
 La création d’une stratégie anti-hameçonnage personnalisée dans le portail Microsoft 365 Defender crée la règle anti-hameçonnage et la stratégie anti-hameçonnage associée en même temps en utilisant le même nom pour les deux.
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **anti-hameçonnage** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
 2. Dans la page **Anti-hameçonnage** , cliquez sur ![l’icône Créer.](../../media/m365-cc-sc-create-icon.png) **Création**.
 
@@ -113,14 +113,14 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    > [!IMPORTANT]
-   > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
-   > - Le destinataire est : romain@contoso.com
-   > - Le destinataire est membre de : Executives
+   > - Le destinataire est : romain@contoso.com
+   > - Le destinataire est membre de : Exécutifs
    >
-   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >
-   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
+   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -219,7 +219,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
      - **Si le message est détecté comme un utilisateur emprunt d’identité** : ce paramètre n’est disponible que si vous avez sélectionné **Activer la protection des utilisateurs** sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste déroulante pour les messages où l’expéditeur est l’un des utilisateurs protégés que vous avez spécifiés sur la page précédente :
        - **N’appliquez aucune action**
        - **Rediriger le message vers d’autres adresses e-mail**
-       - **Déplacer le message vers les dossiers courrier indésirable des destinataires**
+       - **Déplacer le message vers les dossiers de Email indésirables des destinataires**
        - **Mettre en quarantaine le message** : si vous sélectionnez cette action, une zone Appliquer la stratégie de **quarantaine** s’affiche où vous sélectionnez la stratégie de quarantaine qui s’applique aux messages mis en quarantaine par la protection d’emprunt d’identité de l’utilisateur. Les stratégies de quarantaine définissent ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine et si les utilisateurs reçoivent des notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
          Une valeur de stratégie **appliquer la mise en quarantaine** vide signifie que la stratégie de quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’emprunt d’identité d’utilisateur). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou affichez les paramètres, le nom de la stratégie de quarantaine par défaut s’affiche.
@@ -230,7 +230,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
      - **Si le message est détecté comme un domaine emprunté :** ce paramètre n’est disponible que si vous avez sélectionné **Activer les domaines à protéger** sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste déroulante pour les messages où l’adresse e-mail de l’expéditeur se trouve dans l’un des domaines protégés que vous avez spécifiés sur la page précédente :
        - **N’appliquez aucune action**
        - **Rediriger le message vers d’autres adresses e-mail**
-       - **Déplacer le message vers les dossiers courrier indésirable des destinataires**
+       - **Déplacer le message vers les dossiers de Email indésirables des destinataires**
        - **Mettre en quarantaine le message** : si vous sélectionnez cette action, une zone Appliquer la stratégie de **quarantaine** s’affiche où vous sélectionnez la stratégie de quarantaine qui s’applique aux messages mis en quarantaine par la protection d’emprunt d’identité de domaine.
 
          Une valeur de **stratégie appliquer en quarantaine** vide signifie que la stratégie de quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’emprunt d’identité de domaine). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou affichez les paramètres, le nom de la stratégie de quarantaine par défaut s’affiche.
@@ -241,7 +241,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
      - **Si l’intelligence de boîte aux lettres détecte un utilisateur emprunt d’identité** : ce paramètre n’est disponible que si vous avez sélectionné **Activer l’intelligence pour la protection de l’emprunt d’identité** sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste déroulante pour les messages identifiés comme tentatives d’emprunt d’identité par l’intelligence de boîte aux lettres :
        - **N’appliquez aucune action**
        - **Rediriger le message vers d’autres adresses e-mail**
-       - **Déplacer le message vers les dossiers courrier indésirable des destinataires**
+       - **Déplacer le message vers les dossiers de Email indésirables des destinataires**
        - **Mettre en quarantaine le message** : si vous sélectionnez cette action, une zone Appliquer la stratégie de **mise en quarantaine** s’affiche où vous sélectionnez la stratégie de quarantaine qui s’applique aux messages mis en quarantaine par la protection d’intelligence de boîte aux lettres. Les stratégies de quarantaine définissent ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine et si les utilisateurs reçoivent des notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
          Une valeur de stratégie **appliquer la mise en quarantaine** vide signifie que la stratégie de quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’intelligence de boîte aux lettres). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou affichez les paramètres, le nom de la stratégie de quarantaine par défaut s’affiche.
@@ -250,17 +250,17 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
        - **Supprimer le message avant qu’il ne soit remis**
 
      - **Si le message est détecté comme usurpation d’identité** : ce paramètre n’est disponible que si vous avez sélectionné **Activer l’intelligence de l’usurpation d’identité** sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste déroulante pour les messages provenant d’expéditeurs usurpés bloqués :
-       - **Déplacer le message vers les dossiers courrier indésirable des destinataires**
+       - **Déplacer le message vers les dossiers de Email indésirables des destinataires**
        - **Mettre en quarantaine le message** : si vous sélectionnez cette action, une zone Appliquer la stratégie de **mise en quarantaine** s’affiche, où vous sélectionnez la stratégie de quarantaine qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’identité. Les stratégies de quarantaine définissent ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine et si les utilisateurs reçoivent des notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
          Une valeur de stratégie **appliquer la mise en quarantaine** vide signifie que la stratégie de quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’usurpation d’identité). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou affichez les paramètres, le nom de la stratégie de quarantaine par défaut s’affiche.
 
    - **Conseils de sécurité & indicateurs** : Configurez les paramètres suivants :
-     - **Afficher le premier conseil de sécurité de contact** : pour plus d’informations, consultez [l’conseil de sécurité premier contact](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - **Afficher l’emprunt d’identité de l’utilisateur conseil de sécurité** : ce paramètre n’est disponible que si vous avez sélectionné **Activer la protection des utilisateurs** sur la page précédente.
-     - **Afficher l’emprunt d’identité de domaine conseil de sécurité** : ce paramètre est disponible uniquement si vous avez sélectionné **Activer les domaines à protéger** sur la page précédente.
-     - **Afficher les caractères inhabituels d’emprunt d’identité utilisateur conseil de sécurité** Ce paramètre est disponible uniquement si vous avez sélectionné **Activer les utilisateurs pour protéger** ou **Activer les domaines à protéger** sur la page précédente.
-     - **Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation** d’identité : ce paramètre est disponible uniquement si vous avez sélectionné **Activer l’intelligence de l’usurpation d’identité** sur la page précédente. Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans la zone From de Outlook si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas [l’authentification](email-validation-and-authentication.md#composite-authentication) DMARC ou composite.
+     - **Afficher le premier conseil de sécurité de contact** : pour plus d’informations, consultez [premier conseil de sécurité de contact](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **Afficher l’info-bulle de sécurité d’emprunt d’identité de l’utilisateur** : ce paramètre est disponible uniquement si vous avez sélectionné **Activer la protection des utilisateurs** sur la page précédente.
+     - **Afficher l’info-bulle de sécurité d’emprunt d’identité de domaine** : ce paramètre n’est disponible que si vous avez sélectionné **Activer les domaines à protéger** sur la page précédente.
+     - **Afficher le conseil de sécurité des caractères inhabituels d’emprunt d’identité de l’utilisateur** Ce paramètre n’est disponible que si vous avez sélectionné **Activer les utilisateurs pour protéger** ou **Activer les domaines à protéger** sur la page précédente.
+     - **Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation** d’identité : ce paramètre est disponible uniquement si vous avez sélectionné **Activer l’intelligence de l’usurpation d’identité** sur la page précédente. Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans la zone From d’Outlook si le message ne réussit pas les vérifications SPF ou DKIM **et** que le message ne passe pas [l’authentification](email-validation-and-authentication.md#composite-authentication) DMARC ou composite.
      - **Afficher la balise « via »** : ce paramètre est disponible uniquement si vous avez sélectionné **Activer l’intelligence de l’usurpation d’identité** sur la page précédente. Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse From si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM** . La valeur par défaut est activée (sélectionnée). Pour la désactiver, désactivez la case à cocher.
 
      Pour activer un paramètre, cochez la case. Pour la désactiver, désactivez la case à cocher.
@@ -275,7 +275,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies anti-hameçonnage
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies**.
+1. Dans le portail Microsoft 365 Defender, accédez à Email & Stratégies de  **collaboration** \> **& stratégies** **anti-hameçonnage** des règles \> \> dans la section **Stratégies**.
 
 2. Dans la page **Anti-hameçonnage** , les propriétés suivantes s’affichent dans la liste des stratégies anti-hameçonnage :
 
@@ -288,7 +288,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les stratégies anti-hameçonnage
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **anti-hameçonnage** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
 2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -302,7 +302,7 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 Vous ne pouvez pas désactiver la stratégie anti-hameçonnage par défaut.
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **anti-hameçonnage** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
 2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
@@ -327,7 +327,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 - Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie anti-hameçonnage qu’après la avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle anti-hameçonnage (qui peut affecter la priorité des règles existantes).
 - Les stratégies anti-hameçonnage sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie a la valeur **Priority** 0). La stratégie anti-hameçonnage par défaut a la valeur de priorité **la plus basse**, et vous ne pouvez pas la modifier.
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **anti-hameçonnage** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
 2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
@@ -344,7 +344,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 
 Lorsque vous utilisez le portail Microsoft 365 Defender pour supprimer une stratégie anti-hameçonnage personnalisée, la règle anti-hameçonnage et la stratégie anti-hameçonnage correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-hameçonnage par défaut.
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **anti-hameçonnage** dans la section **Stratégies**. Pour accéder directement à la page **Anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
 2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom de la stratégie.
 

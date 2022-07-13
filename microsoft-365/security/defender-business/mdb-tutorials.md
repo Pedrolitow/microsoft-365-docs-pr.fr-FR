@@ -15,40 +15,40 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e491e6d093396e54983e96eb1ca96c5e713565ba
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 029be738b8c916ec4eb16970ae2d2ff3c460f639
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089173"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771971"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Didacticiels et simulations dans Microsoft Defender pour entreprises
 
-Si vous venez de terminer la configuration de Microsoft Defender pour entreprises, vous vous demandez peut-être par où commencer pour en savoir plus sur le fonctionnement de Defender Entreprise. Cet article décrit certains scénarios à essayer, ainsi que plusieurs didacticiels et simulations disponibles pour Defender Entreprise. Ces ressources sont conçues pour vous aider à voir comment Defender entreprise peut fonctionner pour votre entreprise.
+Cet article décrit certains scénarios à essayer, ainsi que plusieurs didacticiels et simulations disponibles pour Defender Entreprise. Ces ressources montrent comment Defender entreprise peut fonctionner pour votre entreprise.
 
 
 ## <a name="try-these-scenarios"></a>Essayez ces scénarios
 
-Le tableau suivant récapitule plusieurs scénarios à essayer avec Defender entreprise :
+Le tableau suivant récapitule plusieurs scénarios à essayer avec Defender entreprise.
 
 | Scénario  | Description  |
 |---------|---------|
-| Intégrer des appareils en utilisant un script local     | Dans Defender entreprise, vous pouvez intégrer des appareils Windows et macOS à l’aide d’un script que vous téléchargez et exécutez sur chaque appareil. Le script crée une approbation avec Azure Active Directory (Azure AD) (si cette approbation n’existe pas déjà), inscrit l’appareil avec Microsoft Intune (si vous avez Intune) et l’intègre à Defender entreprise. Pour en savoir plus, consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).         |
-| Intégrer des appareils à l’aide du centre d’administration Microsoft Endpoint Manager     | Si vous utilisiez déjà Intune avant d’obtenir Defender entreprise, vous pouvez continuer à utiliser Endpoint Manager centre d’administration pour intégrer des appareils. Essayez d’intégrer vos appareils Windows, macOS, iOS et Android avec Microsoft Intune. Pour plus d’informations, consultez [Inscription des appareils dans Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
-| Modifier les stratégies de sécurité     | Si vous gérez vos stratégies de sécurité dans Defender entreprise, utilisez la page **de configuration de l’appareil** pour afficher et, si nécessaire, modifier vos stratégies. Defender entreprise est fourni avec des stratégies par défaut qui utilisent les paramètres recommandés pour sécuriser les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez conserver vos stratégies par défaut, les modifier et définir les vôtres en fonction des besoins de votre entreprise. Pour en savoir plus, consultez [Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises](mdb-view-edit-policies.md).        |
-| Exécuter une attaque simulée   | Plusieurs didacticiels et simulations sont disponibles dans Defender entreprise. Ces didacticiels et simulations sont conçus pour vous montrer de première main comment les fonctionnalités de protection contre les menaces de Defender entreprise peuvent fonctionner pour votre entreprise. Vous pouvez également utiliser une attaque simulée comme exercice d’entraînement pour votre équipe. Pour essayer un ou plusieurs didacticiels, consultez les [didacticiels recommandés pour Microsoft Defender pour entreprises](#recommended-tutorials-for-defender-for-business).         |
-| Afficher les incidents dans Microsoft 365 Lighthouse     | Si vous êtes un [Fournisseur de solutions Microsoft Cloud](/partner-center/enrolling-in-the-csp-program) à l’aide de Microsoft 365 Lighthouse, vous pouvez afficher les incidents sur les locataires de vos clients dans votre portail Microsoft 365 Lighthouse. Pour en savoir plus, consultez [Microsoft 365 Lighthouse et Microsoft Defender pour entreprises](mdb-lighthouse-integration.md).       |
+| Intégrer des appareils en utilisant un script local     | Dans Defender entreprise, vous pouvez intégrer des appareils Windows et Mac à l’aide d’un script que vous téléchargez et exécutez sur chaque appareil. Le script crée une approbation avec Azure Active Directory (Azure AD), si cette approbation n’existe pas déjà ; inscrit l’appareil avec Microsoft Intune, si vous avez Intune; et l’intègre à Defender entreprise. Pour plus d’informations, consultez [Intégrer des appareils à Defender entreprise](mdb-onboard-devices.md).         |
+| Intégrer des appareils à l’aide du Centre d’administration Microsoft Endpoint Manager     | Si vous utilisiez déjà Intune avant d’obtenir Defender entreprise, vous pouvez continuer à utiliser Endpoint Manager centre d’administration pour intégrer des appareils. Essayez d’intégrer vos appareils Windows, Mac, iOS et Android avec Microsoft Intune. Pour plus d’informations, consultez [Inscription des appareils dans Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
+| Modifier les stratégies de sécurité     | Si vous gérez vos stratégies de sécurité dans Defender entreprise, utilisez la page **de configuration de l’appareil** pour afficher et modifier vos stratégies. Defender entreprise est fourni avec des stratégies par défaut qui utilisent les paramètres recommandés pour sécuriser les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez conserver les stratégies par défaut, les modifier et définir vos propres stratégies en fonction des besoins de votre entreprise. Pour en savoir plus, consultez [Afficher ou modifier des stratégies dans Defender entreprise](mdb-view-edit-policies.md).        |
+| Exécuter une attaque simulée   | Plusieurs didacticiels et simulations sont disponibles dans Defender entreprise. Ces didacticiels et simulations montrent comment les fonctionnalités de protection contre les menaces de Defender entreprise peuvent fonctionner pour votre entreprise. Vous pouvez également utiliser une attaque simulée comme exercice d’entraînement pour votre équipe. Pour essayer les didacticiels, consultez [didacticiels recommandés pour Defender entreprise](#recommended-tutorials-for-defender-for-business).         |
+| Afficher les incidents dans Microsoft 365 Lighthouse     | Si vous êtes fournisseur de [solutions cloud Microsoft](/partner-center/enrolling-in-the-csp-program) à l’aide de Microsoft 365 Lighthouse, vous pouvez afficher les incidents sur les locataires de vos clients dans votre portail Microsoft 365 Lighthouse. Pour en savoir plus, consultez [Microsoft 365 Lighthouse et Defender entreprise](mdb-lighthouse-integration.md).       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Didacticiels recommandés pour Defender entreprise
 
-Le tableau suivant décrit les didacticiels recommandés pour les clients Defender Entreprise :
+Le tableau suivant décrit les didacticiels recommandés pour les clients Defender entreprise.
 
 | Didacticiel  | Description  |
 |---------|---------|
-| **Document drops backdoor**     | Simuler une attaque qui introduit des programmes malveillants basés sur des fichiers sur un appareil de test. Le didacticiel explique comment obtenir et utiliser le fichier de simulation et ce qu’il faut surveiller dans le portail Microsoft 365 Defender. <br/><br/>Ce didacticiel nécessite l’installation de Microsoft Word sur votre appareil de test.   |
-| **Didacticiel sur la réponse en direct**     | Découvrez comment utiliser des commandes de base et avancées avec Live Response. Découvrez comment localiser un fichier suspect, corriger le fichier et collecter des informations sur un appareil.   |
-| **Gestion des vulnérabilités & des menaces (scénarios principaux)**     | Découvrez Gestion des menaces et des vulnérabilités dans trois scénarios : <br/><br/>1. Réduisez l’exposition aux menaces et aux vulnérabilités de votre entreprise. <br/>2. Demandez une correction. <br/>3. Créez une exception pour les recommandations de sécurité. <br/><br/> Menace et gestion des vulnérabilités utilise une approche basée sur les risques pour la découverte, la hiérarchisation et la correction des vulnérabilités et des configurations incorrectes des points de terminaison.      |
+| **Document Drops Backdoor**     | Simuler une attaque qui introduit des programmes malveillants basés sur des fichiers sur un appareil de test. Le didacticiel explique comment utiliser le fichier de simulation et ce qu’il faut surveiller dans le portail Microsoft 365 Defender. <p>Ce didacticiel nécessite l’installation de Microsoft Word sur votre appareil de test.   |
+| **Réponse en direct**     | Découvrez comment utiliser des commandes de base et avancées avec Live Response. Découvrez comment localiser un fichier suspect, corriger le fichier et collecter des informations sur un appareil.   |
+| **Gestion des vulnérabilités & des menaces (scénarios principaux)**     | Découvrez Gestion des menaces et des vulnérabilités dans trois scénarios :<ol><li>Réduisez l’exposition aux menaces et aux vulnérabilités de votre entreprise.</li><li>Demandez une correction.</li><li>Créez une exception pour les recommandations de sécurité.</li></ol> <p> Threat & Vulnerability Management utilise une approche basée sur les risques pour la découverte, la hiérarchisation et la correction des vulnérabilités et des erreurs de configuration des points de terminaison.      |
 
 Chaque didacticiel inclut un document pas à pas qui explique le scénario, son fonctionnement et ce qu’il faut faire.
 
@@ -63,13 +63,13 @@ Chaque didacticiel inclut un document pas à pas qui explique le scénario, son 
 
 3. Choisissez l’un des didacticiels suivants :
 
-   - **Document drops backdoor**
-   - **Didacticiel sur la réponse en direct**
+   - **Document Drops Backdoor**
+   - **Réponse en direct**
    - **Gestion des vulnérabilités & des menaces (scénarios principaux)**
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Gérer les appareils dans Microsoft Defender pour entreprises](mdb-manage-devices.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
+- [Gérer les appareils dans Defender entreprise](mdb-manage-devices.md)
+- [Afficher et gérer les incidents dans Defender entreprise](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Defender entreprise](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)

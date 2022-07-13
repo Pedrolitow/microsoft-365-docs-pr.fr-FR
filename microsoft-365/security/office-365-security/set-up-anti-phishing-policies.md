@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115892"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770996"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "66115892"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, des organisations de Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online et Microsoft Defender pour Office 365 organisations.
+Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online et Microsoft Defender pour Office 365 organisations.
 
 Voici quelques exemples d’organisations Microsoft Defender pour Office 365 :
 
@@ -50,7 +50,7 @@ Les principales différences entre les stratégies anti-hameçonnage dans EOP et
 |Créer des stratégies d'accès externe personnalisées|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Paramètres de stratégie courants<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Paramètres d’usurpation d’identité|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Premier contact conseil de sécurité|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Premier conseil de sécurité de contact|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
 |Paramètres d’emprunt d’identité||![Coche](../../media/checkmark.png)|
 |Seuils d’hameçonnage avancés||![Coche](../../media/checkmark.png)|
 
@@ -87,18 +87,18 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies ant
   > [!NOTE]
   > Au moins une sélection dans les **paramètres Utilisateurs, groupes et domaines** est requise dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires du** message <u>auxquels la stratégie s’applique</u>. Les stratégies anti-hameçonnage dans Defender pour Office 365 ont également [des paramètres d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans lesquels vous pouvez spécifier des adresses e-mail d’expéditeur individuel ou des domaines d’expéditeur <u>qui recevront une protection contre l’emprunt d’identité</u>, comme décrit plus loin dans cet article.
   >
-  > Plusieurs conditions ou exceptions différentes ne sont pas additives ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
-  > - Le destinataire est : romain@contoso.com
-  > - Le destinataire est membre de : Executives
+  > - Le destinataire est : romain@contoso.com
+  > - Le destinataire est membre de : Exécutifs
   >
-  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
-  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes de cadres. S’il n’est pas membre du groupe, la politique s’applique toujours à lui.
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation d’identité
 
-L’usurpation d’identité se fait lorsque l’adresse From d’un message électronique (l’adresse de l’expéditeur affichée dans les clients de messagerie) ne correspond pas au domaine de la source de courrier. Pour plus d’informations sur l’usurpation d’identité, consultez [la protection contre l’usurpation](anti-spoofing-protection.md) d’identité dans Microsoft 365.
+L’usurpation d’identité se fait lorsque l’adresse From d’un message électronique (l’adresse de l’expéditeur affichée dans les clients de messagerie) ne correspond pas au domaine de la source de courrier. Pour plus d’informations sur l’usurpation d’identité, consultez [la protection contre l’usurpation d’identité dans Microsoft 365](anti-spoofing-protection.md).
 
 Les paramètres d’usurpation d’identité suivants sont disponibles dans les stratégies anti-hameçonnage dans EOP et Defender pour Office 365 :
 
@@ -117,7 +117,7 @@ Les paramètres d’usurpation d’identité suivants sont disponibles dans les 
 
 - **Indicateurs d’expéditeur non authentifiés** : disponibles dans la section **Conseils de sécurité & les indicateurs** uniquement lorsque l’intelligence de l’usurpation d’identité est activée. Consultez les détails de la section suivante.
 - **Actions** : pour les messages provenant d’expéditeurs usurpés bloqués (automatiquement bloqués par l’intelligence par usurpation d’identité ou bloqués manuellement dans la liste d’autorisations/blocages du locataire), vous pouvez également spécifier l’action à effectuer sur les messages :
-  - **Déplacer des messages vers les dossiers courrier indésirable des destinataires** : il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable. Pour plus d’informations, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Déplacer des messages vers les dossiers Junk Email des destinataires** : il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier Junk Email. Pour plus d’informations, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Mettre en quarantaine le message** : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
@@ -142,23 +142,23 @@ Pour empêcher l’ajout du point d’interrogation ou de l’étiquette aux mes
 
 Pour plus d’informations, consultez [Identifier les messages suspects dans Outlook.com et Outlook sur le web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
-## <a name="first-contact-safety-tip"></a>Premier contact conseil de sécurité
+## <a name="first-contact-safety-tip"></a>Premier conseil de sécurité de contact
 
-Les paramètres **Afficher le premier contact conseil de sécurité** sont disponibles dans EOP et Defender pour Office 365 organisations, et n’ont aucune dépendance vis-à-vis des paramètres de protection de l’usurpation d’identité ou de l’usurpation d’identité. Le conseil de sécurité est présenté aux destinataires dans les scénarios suivants :
+Les paramètres **d’info-sécurité Afficher le premier contact** sont disponibles dans EOP et Defender pour Office 365 organisations, et n’ont aucune dépendance vis-à-vis des paramètres de protection de l’usurpation d’identité ou de l’usurpation d’identité. Le conseil de sécurité est présenté aux destinataires dans les scénarios suivants :
 
 - La première fois qu’ils reçoivent un message d’un expéditeur
 - Ils ne reçoivent pas souvent de messages de l’expéditeur.
 
-:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="Première conseil de sécurité de contact pour les messages avec un seul destinataire" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="Premier conseil de sécurité de contact pour les messages avec un seul destinataire" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Premier contact conseil de sécurité pour les messages avec plusieurs destinataires" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Premier conseil de sécurité de contact pour les messages avec plusieurs destinataires" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 Cette fonctionnalité ajoute une couche supplémentaire de protection de sécurité contre les attaques d’emprunt d’identité potentielles. Nous vous recommandons donc de l’activer.
 
-Le premier contact conseil de sécurité remplace également la nécessité de créer des règles de flux de messagerie (également appelées règles de transport) qui **ajoutent l’en-tête nommé X-MS-Exchange-EnableFirstContactSafetyTip** par la valeur **Enable** to messages (bien que cette fonctionnalité soit toujours disponible).
+Le premier conseil de sécurité des contacts remplace également la nécessité de créer des règles de flux de courrier (également appelées règles de transport) qui **ajoutent l’en-tête nommé X-MS-Exchange-EnableFirstContactSafetyTip** avec la valeur **Enable** to messages (bien que cette fonctionnalité soit toujours disponible).
 
 > [!NOTE]
-> Si le message comporte plusieurs destinataires, indique si le pourboire est affiché et à qui est basé sur un modèle majoritaire. Si la majorité des destinataires n’ont jamais reçu ou ne reçoivent pas souvent de messages de l’expéditeur, les destinataires concernés recevront l’info-bulle **« Certaines personnes qui ont reçu ce message ...** ». Si vous craignez que ce comportement expose les habitudes de communication d’un destinataire à un autre, vous ne devez pas activer le premier contact conseil de sécurité et continuer à utiliser des règles de flux de courrier à la place.
+> Si le message comporte plusieurs destinataires, indique si le pourboire est affiché et à qui est basé sur un modèle majoritaire. Si la majorité des destinataires n’ont jamais reçu ou ne reçoivent pas souvent de messages de l’expéditeur, les destinataires concernés recevront l’info-bulle **« Certaines personnes qui ont reçu ce message ...** ». Si vous êtes préoccupé par le fait que ce comportement expose les habitudes de communication d’un destinataire à un autre, vous ne devez pas activer le premier conseil de sécurité de contact et continuer à utiliser des règles de flux de courrier à la place.
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres exclusifs dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -206,7 +206,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 - **Actions** : choisissez l’action à exécuter pour les messages entrants qui contiennent des tentatives d’emprunt d’identité contre les utilisateurs protégés et les domaines protégés dans la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés et l’emprunt d’identité des domaines protégés :
   - **N’appliquez aucune action**
   - **Rediriger le message vers d’autres adresses e-mail** : envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
-  - **Déplacer les messages vers les dossiers courrier indésirable des destinataires** : le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable. Pour plus d’informations, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Déplacer les messages vers les dossiers de Email indésirables des destinataires** : le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable Email. Pour plus d’informations, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Mettre en quarantaine le message** : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
@@ -231,7 +231,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 - **Activer la protection de l’emprunt d’identité d’intelligence** : activez ce paramètre pour spécifier l’action à effectuer sur les messages pour les détections d’emprunt d’identité à partir des résultats de l’intelligence de boîte aux lettres :
   - **N’appliquez aucune action** : notez que cette valeur a le même résultat que l’activation de l’intelligence de boîte **aux lettres** , mais la désactivation **de la protection activer l’emprunt d’identité du renseignement**.
   - **Rediriger le message vers d’autres adresses e-mail**
-  - **Déplacer le message vers les dossiers courrier indésirable des destinataires**
+  - **Déplacer le message vers les dossiers de Email indésirables des destinataires**
   - **Mettre en quarantaine le message** : si vous sélectionnez cette action, vous pouvez également sélectionner la stratégie de quarantaine qui s’applique aux messages mis en quarantaine par la protection d’intelligence de boîte aux lettres. Les stratégies de quarantaine définissent ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine et si les utilisateurs reçoivent des notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
   - **Remettre le message et ajouter d’autres adresses à la ligne CCI**
   - **Supprimer le message avant qu’il ne soit remis**

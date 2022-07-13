@@ -15,20 +15,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: daa32cf5b20d62a9574ed90660bfc705ad7ed5e5
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090539"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771304"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour entreprises
 
+Defender entreprise est une nouvelle solution de sécurité de point de terminaison conçue spécialement pour les petites et moyennes entreprises (jusqu’à 300 employés). Cet article explique comment obtenir Defender entreprise.
+
 Si vous n’avez pas encore Microsoft Defender pour entreprises, vous pouvez choisir parmi plusieurs options :
 
-- [Essayer ou acheter la version autonome de Defender entreprise](#try-or-buy-microsoft-defender-for-business)
-- [Obtenir Microsoft 365 Business Premium](#get-microsoft-365-business-premium), qui inclut désormais Defender entreprise
-- [Collaborez avec un fournisseur de solutions Microsoft](#work-with-a-microsoft-solution-provider) qui peut vous aider à tout configurer et configurer
+- [Essayez ou achetez la version autonome de Defender entreprise](#try-or-buy-microsoft-defender-for-business).
+- [Obtenez Microsoft 365 Business Premium](#get-microsoft-365-business-premium), qui inclut désormais Defender entreprise.
+- [Collaborez avec un fournisseur de solutions Microsoft](#work-with-a-microsoft-solution-provider) qui peut vous aider à tout configurer.
 
 Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu votre e-mail d’acceptation, vous pouvez [activer votre version d’évaluation et attribuer des licences utilisateur](#how-to-activate-your-trial), puis passer à vos [étapes suivantes](#next-steps).
 
@@ -76,7 +78,7 @@ Lorsque vous recevez votre e-mail d’acceptation, voici comment activer votre a
 
 3. Lorsque vous vous connectez pour la première fois, vous accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). Consultez [la vue d’ensemble de la Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
-4. Exécutez l’une des procédures suivantes :<br/>
+4. Utilisez l’une des procédures suivantes, en fonction de votre scénario :<br/>
 
    | Scénario | Procedure |
    |:---|:---|
@@ -90,10 +92,10 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 |Portail  |Description  |
 |---------|---------|
 | Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez la Centre d'administration Microsoft 365 pour activer votre version d’évaluation et vous connecter pour la première fois.<p> Vous allez également utiliser le Centre d'administration Microsoft 365 pour : <ul><li>Ajouter ou supprimer des utilisateurs.</li><li>Attribuez des licences utilisateur.</li><li>Affichez vos produits et services.</li><li>Effectuez les tâches d’installation de votre abonnement Microsoft 365.</li></ul><p>Pour en savoir plus, consultez [Vue d’ensemble de l’Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer.<p>Vous allez utiliser le portail Microsoft 365 Defender pour : <ul><li>Affichez vos appareils et stratégies de protection des appareils.</li><li>Affichez les menaces détectées et prenez des mesures.</li><li>Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.</li></ul><p>Pour en savoir plus, consultez [Démarrage à l’aide du portail Microsoft 365 Defender](mdb-get-started.md).        |
+| Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer.<p>Vous allez utiliser le portail Microsoft 365 Defender pour : <ul><li>Affichez vos appareils et stratégies de protection des appareils.</li><li>Affichez les menaces détectées et prenez des mesures.</li><li>Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.</li></ul><p>Pour en savoir plus, consultez [Prise en main du portail Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
-> Si vous avez Microsoft 365 Business Premium, vous avez également Microsoft Intune. Vous pouvez utiliser le centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour gérer les appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).
+> Si vous avez Microsoft 365 Business Premium, vous avez également Microsoft Intune. Vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour gérer les appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).
 
 
 ## <a name="next-steps"></a>Prochaines étapes

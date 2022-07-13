@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Effectuez les étapes nécessaires pour commencer la migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34e975be9a937177706fd7db6605d2ef25edcad3
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 899cf3894936ac154e61ef56204294d526aab33e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043542"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772015"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 2 : Configuration
 
@@ -54,8 +54,8 @@ Les groupes de distribution sont requis dans Microsoft 365 pour les aspects suiv
   Comme nous l’avons décrit à [l’étape 2 d’intégration : (facultatif) Exemptez les utilisateurs pilotes du filtrage par votre service de protection existant](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service), vous devez envisager d’exempter ces mêmes utilisateurs pilotes de l’analyse par votre service de protection existant. Éliminer la possibilité de filtrage par votre service de protection existant et de s’appuyer exclusivement sur Defender pour Office 365 est la meilleure et la plus proche représentation de ce qui va se passer une fois votre migration terminée.
 
 - **Test de fonctionnalités de protection Defender pour Office 365 spécifiques** : même pour les utilisateurs pilotes, vous ne souhaitez pas tout activer en même temps. L’utilisation d’une approche intermédiaire pour les fonctionnalités de protection qui sont en vigueur pour vos utilisateurs pilotes facilitera considérablement la résolution des problèmes et l’ajustement. Avec cette approche à l’esprit, nous recommandons les groupes de distribution suivants :
-  - **Un groupe pilote Coffre Attachments** : Par exemple, **MDOPilot\_SafeAttachments**
-  - **Un groupe pilote Coffre Links** : Par exemple, **MDOPilot\_SafeLinks**
+  - **Groupe pilote Pièces jointes sécurisées** : Par exemple, **MDOPilot\_SafeAttachments**
+  - **Un groupe pilote Safe Links** : Par exemple, **MDOPilot\_SafeLinks**
   - **Groupe pilote pour les paramètres de stratégie anti-courrier indésirable et anti-hameçonnage Standard** : Par exemple, **MDOPilot\_SpamPhish\_Standard**
   - **Groupe pilote pour les paramètres de stratégie anti-courrier indésirable et anti-hameçonnage stricts** : Par exemple, **MDOPilot\_SpamPhish\_Strict**
 
@@ -71,7 +71,7 @@ Lorsque vous êtes prêt à commencer le test, ajoutez ces groupes en tant qu’
 
 - Si vous souhaitez expérimenter des paramètres qui diffèrent **considérablement** de nos valeurs recommandées Standard ou Strict, vous devez envisager de créer et d’utiliser des groupes de distribution supplémentaires et spécifiques pour les utilisateurs pilotes dans ces scénarios. Vous pouvez utiliser l’analyseur de configuration pour voir à quel point vos paramètres sont sécurisés. Pour obtenir des instructions, consultez [l’analyseur de configuration pour connaître les stratégies de protection dans EOP et Microsoft Defender pour Office 365](configuration-analyzer-for-security-policies.md).
 
-  Pour la plupart des organisations, la meilleure approche consiste à commencer par des stratégies qui s’alignent étroitement avec nos paramètres Standard recommandés. Après avoir reçu autant d’observations et de commentaires que vous pouvez le faire dans votre intervalle de temps disponible, vous pouvez passer à des paramètres plus agressifs ultérieurement. La protection et la remise de l’emprunt d’identité au dossier Courrier indésirable et remise en quarantaine peuvent nécessiter une personnalisation.
+  Pour la plupart des organisations, la meilleure approche consiste à commencer par des stratégies qui s’alignent étroitement avec nos paramètres Standard recommandés. Après avoir reçu autant d’observations et de commentaires que vous pouvez le faire dans votre intervalle de temps disponible, vous pouvez passer à des paramètres plus agressifs ultérieurement. La protection et la remise de l’emprunt d’identité au dossier Junk Email et la remise en quarantaine peuvent nécessiter une personnalisation.
 
   Si vous utilisez des stratégies personnalisées, assurez-vous qu’elles sont appliquées _avant_ les stratégies qui contiennent nos paramètres recommandés pour la migration. Si un utilisateur est identifié dans plusieurs stratégies du même type (par exemple, anti-hameçonnage), une seule stratégie de ce type est appliquée à l’utilisateur (en fonction de la valeur de priorité de la stratégie). Pour plus d’informations, consultez [Ordre et priorité de la protection par e-mail](how-policies-and-protections-are-combined.md).
 
@@ -81,7 +81,7 @@ La possibilité pour les utilisateurs d’identifier les faux positifs ou les fa
 
 Vous pouvez spécifier une boîte aux lettres Exchange Online pour recevoir des messages que les utilisateurs signalent comme malveillants ou non malveillants. Pour plus d’instructions, consultez [paramètres de message signalés par l’utilisateur](user-submission.md). Cette boîte aux lettres peut recevoir des copies des messages que vos utilisateurs ont envoyés à Microsoft, ou la boîte aux lettres peut intercepter les messages sans les signaler à Microsoft (vous êtes l’équipe de sécurité qui peut analyser et envoyer manuellement les messages). Toutefois, cette approche d’interception ne permet pas au service de régler et d’apprendre automatiquement.
 
-Vous devez également confirmer que toutes les utilisateurs du pilote disposent d’une application de création de rapports de messages prise en charge dans Outlook compatible avec la soumission d’utilisateurs. Ces applications sont les suivantes :
+Vous devez également confirmer que tous les utilisateurs du pilote disposent d’une application de création de rapports de messages prise en charge dans Outlook compatible avec la soumission d’utilisateurs. Ces applications sont les suivantes :
 
 - [Complément Message de rapport](enable-the-report-message-add-in.md)
 - [Complément Report Phishing](enable-the-report-phish-add-in.md)
@@ -93,9 +93,9 @@ Au lieu de s’appuyer sur des données qui sont soutenues par l’expérience d
 
 ## <a name="step-3-maintain-or-create-the-scl-1-mail-flow-rule"></a>Étape 3 : Gérer ou créer la règle de flux de messagerie SCL=-1
 
-Étant donné que votre e-mail entrant est routé via un autre service de protection situé devant Microsoft 365, il est très probable que vous ayez déjà une règle de flux de courrier (également appelée règle de transport) dans Exchange Online qui définit le niveau de confiance du courrier indésirable (SCL) de tous les messages entrants sur la valeur -1 (ignorer le filtrage du courrier indésirable). La plupart des services de protection tiers encouragent cette règle de flux de messagerie SCL=-1 pour Microsoft 365 clients qui souhaitent utiliser leurs services.
+Étant donné que votre e-mail entrant est acheminé via un autre service de protection qui se trouve devant Microsoft 365, il est très probable que vous ayez déjà une règle de flux de courrier (également appelée règle de transport) dans Exchange Online qui définit le niveau de confiance du courrier indésirable (SCL) de tous les messages entrants sur la valeur -1 (ignorer le filtrage du courrier indésirable). La plupart des services de protection tiers encouragent cette règle de flux de messagerie SCL=-1 pour les clients Microsoft 365 qui souhaitent utiliser leurs services.
 
-Si vous utilisez un autre mécanisme pour remplacer la pile de filtrage Microsoft (par exemple, une liste d’autorisation IP), nous vous recommandons de passer à l’utilisation d’une règle de flux de messagerie SCL=-1 **tant que** tous les messages Internet entrants dans Microsoft 365 proviennent du service de protection tiers (aucun flux de courrier directement à partir d’Internet dans Microsoft 365).
+Si vous utilisez un autre mécanisme pour remplacer la pile de filtrage Microsoft (par exemple, une liste d’adresses IP autorisées), nous vous recommandons de passer à l’utilisation d’une règle de flux de messagerie SCL=-1 **tant que** tous les messages Internet entrants dans Microsoft 365 proviennent du service de protection tiers (aucun flux de courrier directement à partir d’Internet vers Microsoft 365).
 
 La règle de flux de messagerie SCL=-1 est importante pendant la migration pour les raisons suivantes :
 
@@ -108,7 +108,7 @@ Pour plus d’informations, consultez [Utiliser des règles de flux de courrier 
 
 **Remarques** :
 
-- Si vous envisagez d’autoriser la messagerie Internet à transiter par votre service de protection existant **et** directement dans Microsoft 365 en même temps, vous devez limiter la règle de flux de courrier SCL=-1 (courrier qui contourne le filtrage du courrier indésirable) au courrier qui est passé par votre service de protection existant uniquement. Vous ne souhaitez pas que les messages Internet non filtrés arrivent dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
+- Si vous envisagez d’autoriser la messagerie Internet à transiter par votre service de protection existant **et** directement dans Microsoft 365 en même temps, vous devez restreindre la règle de flux de courrier SCL=-1 (courrier qui contourne le filtrage du courrier indésirable) aux messages qui sont passés par votre service de protection existant uniquement. Vous ne souhaitez pas que les messages Internet non filtrés arrivent dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 
   Pour identifier correctement le courrier qui a déjà été analysé par votre service de protection existant, vous pouvez ajouter une condition à la règle de flux de messagerie SCL=-1. Par exemple :
 
@@ -137,34 +137,32 @@ En créant des stratégies de production, même si elles ne sont pas appliquées
 > [!IMPORTANT]
 > Les stratégies peuvent être étendues aux utilisateurs, aux groupes ou aux domaines. Nous ne recommandons pas de mélanger les trois dans une stratégie, car seuls les utilisateurs qui correspondent aux trois seront inclus dans l’étendue de la stratégie. Pour les stratégies pilotes, nous vous recommandons d’utiliser des groupes ou des utilisateurs. Pour les stratégies de production, nous vous recommandons d’utiliser des domaines. Il est extrêmement important de comprendre que **seul** le domaine de messagerie principal de l’utilisateur détermine si l’utilisateur entre dans l’étendue de la stratégie. Par conséquent, si vous basculez l’enregistrement MX pour le domaine secondaire d’un utilisateur, assurez-vous que son domaine principal est également couvert par une stratégie.
 
-### <a name="create-pilot-safe-attachments-policies"></a>Créer des stratégies pilote Coffre pièces jointes
+### <a name="create-pilot-safe-attachments-policies"></a>Créer des stratégies de pièces jointes fiables pour le pilote
 
-[Coffre pièces jointes](safe-attachments.md) est la fonctionnalité de Defender pour Office 365 la plus simple à activer et à tester avant de changer d’enregistrement MX. Coffre pièces jointes présente les avantages suivants :
+[Les pièces jointes sécurisées](safe-attachments.md) sont la fonctionnalité de Defender pour Office 365 la plus simple à activer et à tester avant de changer d’enregistrement MX. Les pièces jointes sécurisées offrent les avantages suivants :
 
 - Configuration minimale.
 - Très faible probabilité de faux positifs.
 - Comportement similaire à la protection anti-programme malveillant, qui est toujours activée et non affectée par la règle de flux de messagerie SCL=-1.
 
-Créez une stratégie de Coffre pièces jointes pour vos utilisateurs pilotes.
+Créez une stratégie de pièces jointes sécurisées pour vos utilisateurs pilotes.
 
-Pour connaître les paramètres recommandés, consultez [Paramètres de stratégie Coffre pièces jointes recommandés](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Notez que les recommandations Standard et Strict sont les mêmes. Pour créer la stratégie, consultez [Configurer Coffre stratégies pièces jointes](set-up-safe-attachments-policies.md). Veillez à utiliser le groupe **MDOPilot\_SafeAttachments** comme condition de la stratégie (à qui la stratégie s’applique).
-
-> [!IMPORTANT]
-> Aujourd’hui, il n’existe aucune stratégie de Coffre pièces jointes par défaut. Avant de changer d’enregistrement MX, nous vous recommandons d’avoir une stratégie de Coffre Pièces jointes qui protège l’ensemble de l’organisation.
-
-### <a name="create-pilot-safe-links-policies"></a>Créer des stratégies de liens Coffre pilote
+Pour connaître les paramètres recommandés, consultez les [paramètres de stratégie Pièces jointes fiables recommandés](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Notez que les recommandations Standard et Strict sont les mêmes. Pour créer la stratégie, consultez [Configurer des stratégies de pièces jointes sécurisées](set-up-safe-attachments-policies.md). Veillez à utiliser le groupe **MDOPilot\_SafeAttachments** comme condition de la stratégie (à qui la stratégie s’applique).
 
 > [!NOTE]
-> Nous ne prenons pas en charge l’habillage ou la réécriture de liens déjà encapsulés ou réécrits. Si votre service de protection actuel encapsule ou réécrit déjà des liens dans des messages électroniques, vous devez désactiver cette fonctionnalité pour vos utilisateurs pilotes. Une façon de s’assurer que cela ne se produit pas consiste à exclure le domaine d’URL de l’autre service dans la stratégie de liens Coffre.
->
-> Coffre Protection des liens pour les applications Office prises en charge est un paramètre global qui s’applique à tous les utilisateurs sous licence. Vous pouvez l’activer ou le désactiver globalement, pas pour des utilisateurs spécifiques. Pour plus d’informations, consultez [Configurer Coffre Protection des liens pour les applications Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+> La stratégie de sécurité prédéfinie de **protection intégrée** offre une protection des pièces jointes sécurisées à tous les destinataires qui ne sont pas définis dans les stratégies pièces jointes sécurisées. Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
-Créez une stratégie de liens Coffre pour vos utilisateurs pilotes. Les chances de faux positifs dans Coffre Liens sont également assez faibles, mais vous devez envisager de tester la fonctionnalité sur un plus petit nombre d’utilisateurs pilotes que Coffre pièces jointes. Étant donné que la fonctionnalité a un impact sur l’expérience utilisateur, vous devez envisager un plan d’éducation des utilisateurs.
+### <a name="create-pilot-safe-links-policies"></a>Créer des stratégies de liens fiables pilotes
 
-Pour connaître les paramètres recommandés, consultez [Les paramètres de stratégie Coffre Liens recommandés](recommended-settings-for-eop-and-office365.md#safe-links-settings). Notez que les recommandations Standard et Strict sont les mêmes. Pour créer la stratégie, consultez [Configurer les stratégies Coffre Liens](set-up-safe-links-policies.md). Veillez à utiliser le groupe **MDOPilot\_SafeLinks** comme condition de la stratégie (à qui la stratégie s’applique).
+> [!NOTE]
+> Nous ne prenons pas en charge l’habillage ou la réécriture de liens déjà encapsulés ou réécrits. Si votre service de protection actuel encapsule ou réécrit déjà des liens dans des messages électroniques, vous devez désactiver cette fonctionnalité pour vos utilisateurs pilotes. Une façon de s’assurer que cela ne se produit pas consiste à exclure le domaine d’URL de l’autre service dans la stratégie Liens fiables.
 
-> [!IMPORTANT]
-> Aujourd’hui, il n’existe aucune stratégie de liens Coffre par défaut. Avant de changer d’enregistrement MX, nous vous recommandons d’avoir une stratégie de liens Coffre qui protège l’ensemble de l’organisation.
+Créez une stratégie de liens fiables pour vos utilisateurs pilotes. Les chances de faux positifs dans les liens sécurisés sont également assez faibles, mais vous devez envisager de tester la fonctionnalité sur un plus petit nombre d’utilisateurs pilotes que les pièces jointes sécurisées. Étant donné que la fonctionnalité a un impact sur l’expérience utilisateur, vous devez envisager un plan d’éducation des utilisateurs.
+
+Pour connaître les paramètres recommandés, consultez les [paramètres de stratégie Liens fiables recommandés](recommended-settings-for-eop-and-office365.md#safe-links-settings). Notez que les recommandations Standard et Strict sont les mêmes. Pour créer la stratégie, consultez [Configurer des stratégies liens sécurisés](set-up-safe-links-policies.md). Veillez à utiliser le groupe **MDOPilot\_SafeLinks** comme condition de la stratégie (à qui la stratégie s’applique).
+
+> [!NOTE]
+> La **stratégie de sécurité** prédéfinie de protection intégrée offre une protection des liens sécurisés à tous les destinataires qui ne sont pas définis dans les stratégies liens sécurisés. Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
 ### <a name="create-pilot-anti-spam-policies"></a>Créer des stratégies pilotes anti-courrier indésirable
 
@@ -182,7 +180,7 @@ Créez deux stratégies anti-hameçonnage pour les utilisateurs pilotes :
 - Stratégie qui utilise les paramètres Standard, à l’exception des actions de détection d’emprunt d’identité, comme décrit ci-dessous. Utilisez le groupe **MDOPilot\_SpamPhish\_Standard** comme condition de la stratégie (à qui la stratégie s’applique).
 - Stratégie qui utilise les paramètres Strict, à l’exception des actions de détection d’emprunt d’identité comme décrit ci-dessous. Utilisez le groupe **MDOPilot\_SpamPhish\_Strict** comme condition de la stratégie (à qui la stratégie s’applique). Cette stratégie doit avoir une priorité plus élevée (nombre inférieur) que la stratégie avec les paramètres Standard.
 
-Pour les détections d’usurpation d’identité, l’action Standard recommandée est **Déplacer le message vers les dossiers courrier indésirable des destinataires**, et l’action stricte recommandée est **Mettre le message en quarantaine**. Utilisez l’insight d’intelligence de l’usurpation d’identité pour observer les résultats. Les remplacements sont expliqués dans la section suivante. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
+Pour les détections d’usurpation d’identité, l’action Standard recommandée est **Déplacer le message vers les dossiers Junk Email des destinataires**, et l’action stricte recommandée est **Mettre le message en quarantaine**. Utilisez l’insight d’intelligence de l’usurpation d’identité pour observer les résultats. Les remplacements sont expliqués dans la section suivante. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
 
 Pour les détections d’emprunt d’identité, ignorez les actions standard et strictes recommandées pour les stratégies pilotes. Utilisez plutôt la valeur **Ne pas appliquer d’action** pour les paramètres suivants :
 
@@ -192,7 +190,7 @@ Pour les détections d’emprunt d’identité, ignorez les actions standard et 
 
 Utilisez l’insight d’emprunt d’identité pour observer les résultats. Pour plus d’informations, consultez [l’insight sur l’emprunt d’identité dans Defender pour Office 365](impersonation-insight.md).
 
-Vous allez paramétrer la protection contre l’usurpation d’identité (ajuster les autorisations et les blocs) et activer chaque action de protection d’emprunt d’identité pour mettre en quarantaine ou déplacer les messages vers le dossier Courrier indésirable (en fonction des recommandations standard ou strictes). Vous pouvez observer les résultats et ajuster leurs paramètres si nécessaire.
+Vous allez paramétrer la protection contre l’usurpation d’identité (ajuster les autorisations et les blocs) et activer chaque action de protection d’emprunt d’identité pour mettre en quarantaine ou déplacer les messages vers le dossier Junk Email (en fonction des recommandations Standard ou Strict). Vous pouvez observer les résultats et ajuster leurs paramètres si nécessaire.
 
 Pour plus d’informations, voir les rubriques suivantes :
 

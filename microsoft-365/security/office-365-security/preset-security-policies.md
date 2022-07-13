@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607650"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772059"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -71,9 +71,9 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
   > - Le destinataire est : romain@contoso.com
   > - Le destinataire est membre de : Exécutifs
   >
-  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
-  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre exécutif. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 - **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active uniquement les liens sécurisés et la protection des pièces jointes sécurisées. Ce profil fournit efficacement des stratégies par défaut pour les liens sécurisés et les pièces jointes sécurisées, qui n’ont jamais eu de stratégies par défaut.
 
@@ -144,11 +144,11 @@ Par exemple, si un paramètre de sécurité existe dans **la protection Standard
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque** : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité prédéfinies Standard et Strict aux utilisateurs
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** dans la section **Stratégies modèles**. Pour accéder directement à la page **Stratégies de sécurité prédéfinies** , utilisez <https://security.microsoft.com/presetSecurityPolicies>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **prédéfinies** dans la section **Stratégies modèles**. Pour accéder directement à la page **Stratégies de sécurité prédéfinies** , utilisez <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. Dans la page **Stratégies de sécurité prédéfinies** , cliquez sur **Gérer** dans les sections **Protection standard** ou **Protection stricte** .
 
@@ -234,7 +234,7 @@ N’oubliez pas que la stratégie de sécurité prédéfinie de **protection int
 
 Par conséquent, nous ne recommandons généralement pas d’exceptions à la stratégie de sécurité prédéfinies de **protection intégrée** .
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** dans la section **Stratégies modèles**. Pour accéder directement à la page **Stratégies de sécurité prédéfinies** , utilisez <https://security.microsoft.com/presetSecurityPolicies>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **prédéfinies** dans la section **Stratégies modèles**. Pour accéder directement à la page **Stratégies de sécurité prédéfinies** , utilisez <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. Dans la page **Stratégies de sécurité prédéfinies** , **sélectionnez Ajouter des exclusions (non recommandé)** dans la section **Protection intégrée** .
 
@@ -253,6 +253,6 @@ Par conséquent, nous ne recommandons généralement pas d’exceptions à la st
 
 Pour vérifier que vous avez correctement affecté la stratégie de **sécurité de protection standard** ou **stricte** à un utilisateur, utilisez un paramètre de protection où la valeur par défaut est différente du paramètre de **protection Standard** , qui est différent du paramètre **de protection strict** .
 
-Par exemple, pour les e-mails détectés comme courrier indésirable (courrier indésirable non fiable), vérifiez que le message est remis au dossier Courrier indésirable pour les utilisateurs de **la protection Standard** et mis en quarantaine pour les utilisateurs de **la protection stricte** .
+Par exemple, pour les e-mails détectés comme courrier indésirable (courrier indésirable non fiable), vérifiez que le message est remis au dossier Junk Email pour les utilisateurs de **la protection Standard** et mis en quarantaine pour les utilisateurs de **la protection stricte**.
 
-Ou, pour le [courrier en bloc](bulk-complaint-level-values.md), vérifiez que la valeur BCL 6 ou supérieure remet le message au dossier Courrier indésirable pour les utilisateurs de **protection Standard** , et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de **la protection stricte** .
+Ou, pour le [courrier en bloc](bulk-complaint-level-values.md), vérifiez que la valeur BCL 6 ou supérieure remet le message au dossier Junk Email pour les utilisateurs de **protection Standard**, et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de **la protection stricte**.

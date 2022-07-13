@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 099cddf662b58f918af5aa3b8cc2cb1fea26b0f8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 735f9e04a9176ce1b6626a050429c0b7323a7c0b
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090011"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772924"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Gérer les appareils dans Microsoft Defender pour entreprises
 
-Dans Microsoft Defender pour entreprises, vous pouvez gérer les appareils comme suit :
+Dans Defender entreprise, vous pouvez gérer les appareils comme suit :
 
 - [Afficher la liste des appareils intégrés](#view-the-list-of-onboarded-devices) pour voir leur niveau de risque, leur niveau d’exposition et leur état d’intégrité
 - [Prendre des mesures sur un appareil](#take-action-on-a-device-that-has-threat-detections) qui a des détections de menaces
@@ -35,7 +35,7 @@ Dans Microsoft Defender pour entreprises, vous pouvez gérer les appareils comme
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
-:::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Capture d’écran de l’inventaire des appareils":::
+:::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Capture d'écran de l'inventaire des appareils":::
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -43,7 +43,7 @@ Dans Microsoft Defender pour entreprises, vous pouvez gérer les appareils comme
 
 3. Sélectionnez un appareil pour ouvrir son panneau volant, où vous pouvez en savoir plus sur son état et prendre des mesures. 
 
-   Si vous n’avez pas encore d’appareils répertoriés, [intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md)
+   Si vous n’avez pas encore d’appareils répertoriés, [intégrer des appareils à Defender entreprise](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Prendre des mesures sur un appareil qui a des détections de menaces
 
@@ -59,7 +59,7 @@ Dans Microsoft Defender pour entreprises, vous pouvez gérer les appareils comme
 
 ## <a name="onboard-a-device"></a>Intégrer un appareil
 
-Consultez [Intégrer des appareils à Microsoft Defender pour entreprises](mdb-onboard-devices.md).
+Consultez [Intégrer des appareils à Defender pour Entreprises](mdb-onboard-devices.md).
 
 ## <a name="offboard-a-device"></a>Annuler l’intégration d’un appareil
 
@@ -67,7 +67,7 @@ Voir [Désintégrage d’un appareil](mdb-offboard-devices.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
-- [Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises](mdb-respond-mitigate-threats.md)
+- [Afficher et gérer les incidents dans Defender entreprise](mdb-view-manage-incidents.md)
+- [Répondre aux menaces et les atténuer dans Defender entreprise](mdb-respond-mitigate-threats.md)
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
 - [Créer ou modifier des groupes d’appareils](mdb-create-edit-device-groups.md)

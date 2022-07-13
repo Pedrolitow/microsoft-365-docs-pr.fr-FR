@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies liens sécurisés et des paramètres de liens sécurisés globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d006cd49392b80c826e23ef0d63f954d81249c0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487024"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771392"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -39,13 +39,13 @@ ms.locfileid: "66487024"
 
 Les liens sécurisés dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournissent l’analyse d’URL des messages électroniques entrants dans le flux de courrier, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, consultez [Liens sécurisés dans Microsoft Defender pour Office 365](safe-links.md).
 
-Bien qu’il n’existe aucune stratégie de liens fiables par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de liens sécurisés personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
+Bien qu’il n’existe aucune stratégie de liens fiables par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des liens sécurisés à tous les destinataires (utilisateurs qui ne sont pas définis dans des stratégies de sécurité personnalisées ou standard ou strictes). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md).
 
 Vous pouvez également utiliser les procédures décrites dans cet article pour créer des stratégies de liens fiables qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques.
 
 > [!NOTE]
 >
-> Vous configurez les paramètres globaux pour la protection des liens sécurisés **en dehors** des stratégies liens sécurisés. Pour obtenir des instructions, consultez [Configurer les paramètres globaux des liens sécurisés dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
+> Vous configurez la liste « Bloquer les URL suivantes » dans les paramètres globaux pour la protection des liens sécurisés **en dehors** des stratégies liens sécurisés. Pour obtenir des instructions, consultez [Configurer les paramètres globaux des liens sécurisés dans Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md).
 >
 > Les administrateurs doivent prendre en compte les différents paramètres de configuration des liens sécurisés. L’une des options disponibles consiste à inclure des informations d’identification des utilisateurs dans liens sécurisés. Cette fonctionnalité permet aux équipes d’opérations de sécurité (SecOps) d’examiner les compromissions potentielles de l’utilisateur, de prendre des mesures correctives et de limiter les violations coûteuses.
 
@@ -78,7 +78,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   . - Le groupe de rôles **Gestion de l’organisation en mode affichage uniquement** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la fonctionnalité.
 
 - Pour connaître les paramètres recommandés pour les stratégies liens fiables, consultez [les paramètres de stratégie Liens sécurisés](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
@@ -91,7 +91,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 La création d’une stratégie de liens fiables personnalisée dans le portail Microsoft 365 Defender crée la règle de liens sécurisés et la stratégie de liens sécurisés associée en même temps en utilisant le même nom pour les deux.
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**l’adresse e-mail &** stratégies de collaboration \> **& stratégies** **de menace** \> des règles \> **, liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies **de menace** \> **des règles** \> **liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
 
 2. Dans la page **Liens sécurisés** , cliquez sur ![l’icône Créer.](../../media/m365-cc-sc-create-icon.png) **Création**.
 
@@ -123,46 +123,79 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
    > - Le destinataire est : romain@contoso.com
    > - Le destinataire est membre de : Exécutifs
    >
-   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre des groupes exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >
-   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre exécutif. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **Paramètres de protection** qui s’affiche, configurez les paramètres suivants :
-   - **Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages** : Sélectionnez **Activé** pour activer la protection des liens sécurisés pour les liens dans les messages électroniques. Si vous activez ce paramètre, les paramètres suivants sont disponibles :
-     - **Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** : sélectionnez cette option pour activer l’analyse en temps réel des liens dans les messages électroniques. Si vous activez ce paramètre, le paramètre suivant est disponible :
-       - **Attendez la fin de l’analyse d’URL avant de remettre le message** : sélectionnez cette option pour attendre la fin de l’analyse d’URL en temps réel avant de remettre le message.
-     - **Appliquer des liens sécurisés aux messages électroniques envoyés au sein de l’organisation** : sélectionnez cette option pour appliquer la stratégie Liens sécurisés aux messages entre les expéditeurs internes et les destinataires internes.
-   - **Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** : Sélectionnez **Activé** pour activer la protection des liens sécurisés pour les liens dans Teams. Notez que l’application de ce paramètre peut prendre jusqu’à 24 heures.
+5. Sur **l’URL & cliquez sur la page des paramètres de protection** qui s’affiche, configurez les paramètres suivants :
+
+   - **Action sur les URL potentiellement malveillantes dans la section e-mails** :
+     - **Activé : liens sécurisés vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans l’e-mail** : sélectionnez cette option pour activer la protection des liens sécurisés pour les liens dans les messages électroniques. Si vous sélectionnez cette option, les paramètres suivants sont disponibles :
+       - **Appliquer des liens sécurisés aux messages électroniques envoyés au sein de l’organisation** : sélectionnez cette option pour appliquer la stratégie Liens sécurisés aux messages entre les expéditeurs internes et les destinataires internes.
+       - **Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** : sélectionnez cette option pour activer l’analyse en temps réel des liens dans les messages électroniques. Si vous sélectionnez cette option, le paramètre suivant est disponible :
+         - **Attendez la fin de l’analyse d’URL avant de remettre le message** : sélectionnez cette option pour attendre la fin de l’analyse d’URL en temps réel avant de remettre le message.
+       - **Ne réécrivez pas les URL, effectuez des vérifications via l’API SafeLinks uniquement** : sélectionnez cette option pour empêcher l’habillage d’URL. Les liens sécurisés sont appelés exclusivement par le biais d’API au moment du clic d’URL par les clients Outlook qui la prennent en charge.
+
+       - **Ne réécrivez pas les URL suivantes dans la section e-mail** : Cliquez sur **Gérer (nn) URL** pour autoriser l’accès à des URL spécifiques qui seraient autrement bloquées par des liens fiables.
+
+     > [!NOTE]
+     > L’objectif de la liste « Ne pas réécrire les URL suivantes » est d’ignorer l’habillage des liens sécurisés de ces URL. Au lieu d’utiliser cette liste, vous pouvez désormais [créer des entrées d’URL d’autorisation dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-allow-url-entries).
+
+     1. Dans gérer **les URL pour ne pas réécrire** le menu volant qui s’affiche, cliquez sur ![l’icône Ajouter des URL.](../../media/m365-cc-sc-create-icon.png) **Ajoutez des URL**.
+     2. Dans le menu volant **Ajouter des URL** qui s’affiche, tapez l’URL ou la valeur souhaitée, sélectionnez l’entrée qui apparaît sous la zone, puis cliquez sur **Enregistrer**. Répétez cette étape autant de fois que nécessaire.
+
+        Pour la syntaxe d’entrée, consultez [la syntaxe Entrée pour la liste « Ne pas réécrire les URL suivantes](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list) ».
+
+        Pour supprimer une entrée, cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de l’entrée.
+
+        Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+     3. De retour sur les **URL Gérer pour ne pas réécrire** le menu volant, cliquez sur **Terminé** ou effectuez la maintenance dans la liste des entrées :
+
+        Pour supprimer des entrées de la liste, vous pouvez utiliser l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Zone de recherche** pour rechercher l’entrée.
+
+        Pour sélectionner une seule entrée, cliquez sur la valeur dans la colonne **URL** .
+
+        Pour sélectionner plusieurs entrées une par une, cliquez sur la zone vide à gauche de la valeur.
+
+        Pour sélectionner toutes les entrées, cliquez sur la zone vide à gauche de l’en-tête de colonne **URL** .
+
+        Une ou plusieurs entrées sélectionnées, cliquez sur le bouton ![Icône Ajouter des URL.](../../media/m365-cc-sc-create-icon.png) ou ![Icône Effacer.](../../media/m365-cc-sc-delete-icon.png) icônes qui s’affichent.
+
+        Lorsque vous avez terminé, cliquez sur **Terminé**.
+
+   - **Actions pour les URL potentiellement malveillantes dans la section Microsoft Teams** :
+     - **Activé : Liens fiables vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** : sélectionnez cette option pour activer la protection des liens sécurisés pour les liens dans Teams. Notez que l’application de ce paramètre peut prendre jusqu’à 24 heures.
 
      > [!NOTE]
      > Actuellement, la protection des liens sécurisés pour Microsoft Teams n’est pas disponible dans Microsoft 365 GCC High ou Microsoft 365 DoD.
 
-   - **Suivre les clics de l’utilisateur** : laissez cette option sélectionnée pour activer le suivi des clics de l’utilisateur sur les URL dans les messages électroniques.
-   - **Permettre aux utilisateurs de cliquer sur l’URL d’origine** : désactivez cette option pour empêcher les utilisateurs de cliquer sur l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
-   - **Ne réécrivez pas les URL suivantes** : autorise l’accès aux URL spécifiées qui seraient autrement bloquées par des liens fiables.
+   - **Actions pour les URL potentiellement malveillantes dans la section Applications Microsoft Office** :
+     - **Activé : Liens fiables vérifie une liste de liens connus et malveillants lorsque les utilisateurs cliquent sur des liens dans les applications Microsoft Office** : sélectionnez cette option pour activer la protection des liens sécurisés pour les liens dans les fichiers dans les applications de bureau, mobiles et web Office prises en charge.
 
-     > [!NOTE]
-     > L’objectif de la liste « Ne pas réécrire les URL suivantes » est d’ignorer l’habillage liens fiables des URL spécifiées. Au lieu d’utiliser cette liste, vous pouvez désormais [créer des entrées d’URL d’autorisation dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-allow-url-entries).
+   - **Cliquez sur la section Paramètres de protection** :
+     - **Suivre les clics de l’utilisateur** : laissez cette option sélectionnée pour activer le suivi des clics de l’utilisateur sur les URL. Si vous sélectionnez cette option, les options suivantes sont disponibles :
+       - **Permettre aux utilisateurs de cliquer sur l’URL d’origine** : désactivez cette option pour empêcher les utilisateurs de cliquer sur l’URL d’origine dans les [pages d’avertissement](safe-links.md#warning-pages-from-safe-links).
+       - **Afficher la personnalisation de l’organisation sur les pages de notification et d’avertissement** : pour plus d’informations sur la personnalisation de la personnalisation, consultez [Personnaliser le thème Microsoft 365 pour votre organisation](../../admin/setup/customize-your-organization-theme.md).
 
-     Dans la zone, tapez l’URL ou la valeur souhaitée, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
+   Pour plus d’informations sur ces paramètres, consultez :
 
-     Pour supprimer une entrée existante, cliquez sur ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de l’entrée.
-
-     Pour la syntaxe d’entrée, consultez [la syntaxe Entrée pour la liste « Ne pas réécrire les URL suivantes](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list) ».
-
-   Pour plus d’informations sur ces paramètres, consultez les [paramètres Liens sécurisés pour les messages électroniques](safe-links.md#safe-links-settings-for-email-messages) et [les paramètres Liens sécurisés pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   - [Paramètres liens sécurisés pour les messages électroniques](safe-links.md#safe-links-settings-for-email-messages).
+   - [Paramètres liens sécurisés pour Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   - [Paramètres liens sécurisés pour les applications Office](safe-links.md#safe-links-settings-for-office-apps).
+   - [Cliquez sur paramètres de protection dans les stratégies Liens fiables](safe-links.md#click-protection-settings-in-safe-links-policies)
 
    Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict, consultez [les paramètres de stratégie Liens sécurisés](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-6. Dans la page **Notification** qui s’affiche, sélectionnez l’une des valeurs suivantes pour **savoir comment informer vos utilisateurs :**
+6. Dans la page **Notification** qui s’affiche, sélectionnez l’une des valeurs suivantes pour **Comment voulez-vous informer vos utilisateurs ?** :
    - **Utiliser le texte de notification par défaut**
-   - **Utilisez le texte de notification personnalisé** : si vous sélectionnez cette valeur (la longueur ne peut pas dépasser 200 caractères), les paramètres suivants s’affichent :
-     - **Utiliser Microsoft Translator pour la localisation automatique**
-     - **Texte de notification personnalisé** : entrez le texte de notification personnalisé dans cette zone.
+   - **Utilisez le texte de notification personnalisé** : si vous sélectionnez cette valeur, les paramètres suivants s’affichent :
+     - **Utiliser Traducteur Microsoft pour la localisation automatique**
+     - **Texte de notification personnalisée** : entrez le texte de notification personnalisé dans cette zone (la longueur ne peut pas dépasser 200 caractères).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -174,7 +207,7 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies liens fiables
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**l’adresse e-mail &** stratégies de collaboration \> **& stratégies** **de menace** \> des règles \> **, liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies **de menace** \> **des règles** \> **liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
 
 2. Dans la page **Liens sécurisés** , les propriétés suivantes s’affichent dans la liste des stratégies liens fiables :
    - **Name**
@@ -195,7 +228,7 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Activer ou désactiver des stratégies de liens fiables
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**l’adresse e-mail &** stratégies de collaboration \> **& stratégies** **de menace** \> des règles \> **, liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies **de menace** \> **des règles** \> **liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
 
 2. Dans la page **Liens sécurisés** , sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -220,7 +253,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 - Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie Liens sécurisés qu’une fois que vous l’avez créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle de liaisons sécurisées (qui peut affecter la priorité des règles existantes).
 - Les stratégies liens sécurisés sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie a la valeur **Priorité** 0). Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**l’adresse e-mail &** stratégies de collaboration \> **& stratégies** **de menace** \> des règles \> **, liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies **de menace** \> **des règles** \> **liens sécurisés** dans la section **Stratégies**. Pour accéder directement à la page **Liens fiables** , utilisez <https://security.microsoft.com/safelinksv2>.
 
 2. Dans la page **Liens sécurisés** , sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -235,7 +268,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Utiliser le portail Microsoft 365 Defender pour supprimer les stratégies liens sécurisés
 
-1. Dans le portail Microsoft 365 Defender, accédez aux **liens sécurisés** **des stratégies de & collaboration** \> **& les** \> stratégies de **protection** \> contre les règles dans la section **Stratégies**.
+1. Dans le portail Microsoft 365 Defender, accédez à Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **des règles** \> **liens sécurisés** dans la section **Stratégies**.
 
 2. Dans la page **Liens sécurisés** , sélectionnez une stratégie dans la liste en cliquant sur le nom. En haut du menu volant des détails de la stratégie qui s’affiche, cliquez sur l’![icône Autres actions. ](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’actions**\>![icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png)**Supprimer la stratégie**.
 
@@ -273,7 +306,7 @@ La création d'une stratégie de liens fiables dans PowerShell est un processus 
 Pour créer une stratégie de liens sécurisés, utilisez cette syntaxe :
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForOffice <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -284,16 +317,17 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 Cet exemple crée une stratégie de liens sécurisés nommée Contoso All avec les valeurs suivantes :
 
-- Activez l’analyse et la réécriture d’URL dans les courriers électroniques.
+- Activez l’analyse d’URL et la réécriture d’URL dans les messages électroniques.
+  - Activez l’analyse et la réécriture d’URL pour les messages internes.
+  - Activez l’analyse en temps réel des URL cliqués, y compris les liens cliqués qui pointent vers des fichiers.
+    - Attendez la fin de l'analyse des URL avant de délivrer le message.
 - Activez l’analyse d’URL dans Teams.
-- Activez l’analyse en temps réel des URL cliqués, y compris les liens cliqués qui pointent vers des fichiers.
-- Attendez la fin de l'analyse des URL avant de délivrer le message.
-- Activez l’analyse et la réécriture d’URL pour les messages internes.
+- Activez l’analyse des URL dans les applications Office prises en charge.
 - Suivez les clics utilisateur liés à la protection des liens sécurisés (nous n’utilisons pas le paramètre _TrackUserClicks_ , et la valeur par défaut est $true).
 - N’autorisez pas les utilisateurs à cliquer sur l’URL d’origine.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForOffice $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, consultez New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).

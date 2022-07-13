@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: 5a1239f84e801c6327eb18c1049e410cc0859bdb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631769"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773078"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 
@@ -66,9 +66,9 @@ Vous devez toujours exécuter le Pare-feu Windows Defender même si un autre pa
 
 OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
 
-## <a name="macos"></a>[MacOS](#tab/macOS)
+## <a name="mac"></a>[Mac](#tab/Mac)
 
-## <a name="macos"></a>macOS
+## <a name="mac"></a>Mac
 
 ### <a name="use-filevault-to-encrypt-your-mac-disk"></a>Utiliser FileVault pour chiffrer votre disque Mac
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7661619ccb60bb55020a8e241c341b11fe45abd1
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5883b5af4101f9227e43009a148344b82fdfb5ef
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487330"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772684"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 
@@ -38,17 +38,17 @@ ms.locfileid: "66487330"
 ## <a name="before-you-begin"></a>Avant de commencer
 
 > [!NOTE]
-> Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous appliquer à Spécialistes des menaces Microsoft - Service de repérage des menaces managées de notification d’attaque ciblée.
+> Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous appliquer au service de repérage des menaces managées Endpoint Attack Notifications.
 
 Assurez-vous que Defender pour point de terminaison est déployé dans votre environnement avec des appareils inscrits, et pas seulement sur une configuration de laboratoire.
 
-Si vous êtes un client Defender pour point de terminaison, vous devez demander **Spécialistes des menaces Microsoft - Notifications d’attaque ciblée** pour obtenir des informations et une analyse spéciales pour identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts à la demande** afin de consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
+Si vous êtes un client Defender pour point de terminaison, vous devez demander **des notifications d’attaque** de point de terminaison pour obtenir des insights et une analyse spéciaux afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts à la demande** afin de consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft - Service Notifications d’attaque ciblée
+## <a name="apply-for-endpoint-attack-notifications-service"></a>Appliquer pour le service Endpoint Attack Notifications
 
 Si vous êtes déjà client Defender pour point de terminaison, vous pouvez appliquer via le portail Microsoft 365 Defender.
 
-1. Dans le volet de navigation, accédez à **Paramètres > Général > Fonctionnalités avancées > Spécialistes des menaces Microsoft - Notifications d’attaque ciblée**.
+1. Dans le volet de navigation, accédez à **Paramètres > Fonctionnalités générales > avancées > notifications d’attaque de point de terminaison**.
 
 2. Cliquez sur **Appliquer**.
 
@@ -62,9 +62,9 @@ Si vous êtes déjà client Defender pour point de terminaison, vous pouvez appl
 
    :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Message de confirmation de l’application Spécialistes des menaces Microsoft" lightbox="images/mte-applicationconfirmation.png":::
 
-Une fois accepté, vous recevrez un e-mail de bienvenue et vous **verrez** la modification du bouton Appliquer à un bouton bascule « activé ». Si vous souhaitez vous retirer du service Notifications d’attaque ciblée, faites glisser le bouton bascule « désactivé », puis cliquez sur **Enregistrer les préférences** en bas de la page.
+Une fois accepté, vous recevrez un e-mail de bienvenue et vous **verrez** la modification du bouton Appliquer à un bouton bascule « activé ». Si vous souhaitez vous retirer du service Endpoint Attack Notifications, faites glisser le bouton bascule « désactivé », puis cliquez sur **Enregistrer les préférences** en bas de la page.
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Où vous verrez les notifications d’attaque ciblées provenant de Spécialistes des menaces Microsoft
+## <a name="where-youll-see-the-endpoint-attack-notifications-from-microsoft-threat-experts"></a>Où vous verrez les notifications d’attaque de point de terminaison à partir de Spécialistes des menaces Microsoft
 
 Vous pouvez recevoir une notification d’attaque ciblée de Spécialistes des menaces Microsoft via le support suivant :
 
@@ -74,15 +74,15 @@ Vous pouvez recevoir une notification d’attaque ciblée de Spécialistes des m
 - [Table DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) dans la chasse avancée
 - Votre e-mail, si vous choisissez de le configurer
 
-Pour recevoir des notifications d’attaque ciblées par e-mail, créez une règle de notification par e-mail.
+Pour recevoir des notifications d’attaque de point de terminaison par e-mail, créez une règle de notification par e-mail.
 
 ### <a name="create-an-email-notification-rule"></a>Créer une règle de notification par e-mail
 
 Vous pouvez créer des règles pour envoyer des notifications par e-mail aux destinataires de notification. Pour plus d’informations, consultez  [Configurer les notifications d’alerte](configure-email-notifications.md) pour créer, modifier, supprimer ou résoudre les problèmes de notification par e-mail.
 
-## <a name="view-the-targeted-attack-notification"></a>Afficher la notification d’attaque ciblée
+## <a name="view-the-endpoint-attack-notifications"></a>Afficher les notifications d’attaque de point de terminaison
 
-Vous commencerez à recevoir une notification d’attaque ciblée de Spécialistes des menaces Microsoft dans votre e-mail après avoir configuré votre système pour recevoir une notification par e-mail.
+Vous commencerez à recevoir des notifications d’attaque de point de terminaison à partir de Spécialistes des menaces Microsoft dans votre e-mail après avoir configuré votre système pour recevoir une notification par e-mail.
 
 1. Cliquez sur le lien dans l’e-mail pour accéder au contexte d’alerte correspondant dans le tableau de bord balisé avec **les experts en menaces**.
 
@@ -137,21 +137,21 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 - Je reçois aujourd’hui une alerte impaire pour le nombre anormal de connexions ayant échoué à partir de l’appareil d’un utilisateur à profil élevé. Je ne trouve pas d’autres preuves concernant ces tentatives de connexion. Comment Defender pour point de terminaison peut-il voir ces tentatives ? Quel type de connexions sont surveillées ?
 - Pouvez-vous donner plus de contexte ou d’insights sur cette alerte : « Un comportement suspect par un utilitaire système a été observé ».
 
-### <a name="possible-machine-compromise"></a>Compromission possible de l’ordinateur
+### <a name="possible-device-compromise"></a>Compromission possible de l’appareil
 
 - Pouvez-vous nous aider à répondre à la raison pour laquelle nous voyons « Processus inconnu observé ? » Ce message ou cette alerte est fréquemment affiché sur de nombreux appareils. Nous apprécions toute entrée pour préciser si ce message ou cette alerte est lié à une activité malveillante.
 - Pouvez-vous vous aider à valider une compromission possible sur le système suivant le [date] avec des comportements similaires à ceux de la détection de programmes malveillants [nom du programme malveillant] précédente sur le même système en [mois] ?
 
 ### <a name="threat-intelligence-details"></a>Détails du renseignement sur les menaces
 
-- Nous avons détecté un e-mail de hameçonnage qui a remis un document Word malveillant à un utilisateur. Le document Word malveillant a provoqué une série d’événements suspects, qui ont déclenché plusieurs alertes Defender pour point de terminaison pour les programmes malveillants [nom du programme malveillant]. Avez-vous des informations sur ce programme malveillant ? Si oui, pouvez-vous m’envoyer un lien ?
+- Nous avons détecté un e-mail de hameçonnage qui a remis un document Word malveillant à un utilisateur. Le document Word malveillant a provoqué une série d’événements suspects, qui ont déclenché plusieurs alertes endpoint Attack Notifications pour les programmes malveillants [nom du programme malveillant]. Avez-vous des informations sur ce programme malveillant ? Si oui, pouvez-vous m’envoyer un lien ?
 - J’ai récemment vu une [référence de médias sociaux, par exemple, Twitter ou blog] post sur une menace qui cible mon industrie. Pouvez-vous m’aider à comprendre la protection fournie par Defender pour point de terminaison contre cet acteur de menace ?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>communications d’alerte de Spécialistes des menaces Microsoft
 
-- Votre équipe de réponse aux incidents peut-elle nous aider à traiter la notification d’attaque ciblée que nous avons obtenue ?
-- J’ai reçu cette notification d’attaque ciblée de Spécialistes des menaces Microsoft. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
-- J’ai reçu une notification d’attaque ciblée de Spécialistes des menaces Microsoft. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
+- Votre équipe de réponse aux incidents peut-elle nous aider à traiter les notifications d’attaque de point de terminaison que nous avons obtenues ?
+- J’ai reçu cette notification d’attaque de point de terminaison de Spécialistes des menaces Microsoft. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
+- J’ai reçu des notifications d’attaque de point de terminaison de Spécialistes des menaces Microsoft. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
 
   > [!NOTE]
   > Spécialistes des menaces Microsoft est un service de repérage de cybersécurité géré et non un service de réponse aux incidents. Toutefois, vous pouvez collaborer avec votre propre équipe de réponse aux incidents pour résoudre les problèmes qui nécessitent une réponse aux incidents. Si vous n’avez pas votre propre équipe de réponse aux incidents et que vous souhaitez obtenir l’aide de Microsoft, vous pouvez contacter l’équipe de réponse aux incidents de cybersécurité CSS (CIRT). Ils peuvent ouvrir un ticket pour vous aider à répondre à votre demande.

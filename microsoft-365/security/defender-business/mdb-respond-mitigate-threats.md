@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b7a911991935407f9d512213c9d76c92106b74c8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 9330584979bc6c47204809a0408be7950c0d5612
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089559"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772814"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Répondre aux menaces et les atténuer dans Microsoft Defender pour entreprises
 
@@ -38,22 +38,22 @@ Le portail Microsoft 365 Defender permet à votre équipe de sécurité de répo
 
 3. Sélectionnez un bouton ou un lien sur la carte pour afficher plus d’informations et prendre des mesures. Par exemple, notre carte **Appareils à risque** comprend un bouton **Afficher les détails** . Si vous sélectionnez ce bouton, nous accédons à la page **d’inventaire** des appareils, comme illustré dans l’image suivante :
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Capture d’écran de l’inventaire des appareils":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Capture d'écran de l'inventaire des appareils":::
 
    La page **Inventaire des** appareils répertorie les appareils d’entreprise, ainsi que leur niveau de risque et leur niveau d’exposition.
 
-4. Sélectionnez un élément, tel qu’un appareil. Un volet volant s’ouvre et affiche plus d’informations sur les alertes et les incidents générés pour cet élément, comme illustré dans l’image suivante :  
+4. Sélectionnez un élément, tel qu’un appareil. Un volet déroulant s'ouvre et affiche plus d'informations sur les alertes et les incidents générés pour cet élément, comme illustré dans l'image suivante :  
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="Capture d’écran du volet volant d’un appareil sélectionné":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="Capture d'écran du volet déroulant pour un appareil sélectionné":::
 
-5. Dans le menu volant, affichez les informations affichées. Sélectionnez les points de suspension (...) pour ouvrir un menu qui répertorie les actions disponibles, comme illustré dans l’image suivante : 
+5. Sur le menu déroulant, affichez les informations affichées. Sélectionnez les points de suspension (...) pour ouvrir un menu qui répertorie les actions disponibles, comme illustré dans l'image suivante : 
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Capture d’écran des actions disponibles pour un appareil sélectionné":::
+   :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Capture d'écran des actions disponibles pour un appareil sélectionné":::
 
-6. Sélectionnez une action disponible. Par exemple, vous pouvez choisir **Exécuter l’analyse antivirus**, ce qui Antivirus Microsoft Defender démarrera une analyse rapide sur l’appareil. Vous pouvez également sélectionner **Lancer une investigation automatisée** pour déclencher une enquête automatisée sur l’appareil.
+6. Sélectionnez une action disponible. Par exemple, vous pouvez choisir **Exécuter une analyse antivirus**, ce qui entraînera le lancement d'une analyse rapide de l'antivirus Microsoft Defender sur l'appareil. Vous pouvez également sélectionner **Lancer une enquête automatisée** pour déclencher une enquête automatisée sur l'appareil.
 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les actions de correction dans le Centre d’actions](mdb-review-remediation-actions.md)
-- [Gérer les appareils dans Microsoft Defender pour entreprises](mdb-manage-devices.md)
-- [Afficher et gérer les incidents dans Microsoft Defender pour entreprises](mdb-view-manage-incidents.md)
+- [Gérer les appareils dans Defender entreprise](mdb-manage-devices.md)
+- [Afficher et gérer les incidents dans Defender entreprise](mdb-view-manage-incidents.md)

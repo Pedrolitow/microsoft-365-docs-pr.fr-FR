@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender pour Office 365
-ms.openlocfilehash: 086ea200b6f8519c487622d02ba2d2fc8347f68a
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554200"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773254"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de l’essai Microsoft Defender pour Office 365
 
@@ -62,9 +62,9 @@ Une version d’évaluation permet aux organisations de configurer et de configu
 Par défaut, ces stratégies sont étendues à tous les utilisateurs de l’organisation, mais pendant ou après la configuration de la version d’évaluation, vous pouvez modifier l’attribution de stratégie à des utilisateurs spécifiques.
 
 > [!NOTE]
-> Vos stratégies anti-courrier indésirable existantes sont probablement configurées avec l’action **Déplacer le message vers le dossier Courrier indésirable** pour le verdict de courrier indésirable à haut niveau de confiance dans les stratégies anti-courrier indésirable. Le modèle Standard pour les stratégies de sécurité prédéfinies utilise le **message de mise en quarantaine** de l’action pour le courrier indésirable à haut niveau de confiance, et les stratégies de sécurité prédéfinies sont toujours appliquées avant les stratégies anti-courrier indésirable personnalisées ou la stratégie anti-courrier indésirable par défaut. Pour plus d’informations sur les paramètres par défaut, Standard et Strict, consultez [Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité](recommended-settings-for-eop-and-office365.md).
+> Vos stratégies anti-courrier indésirable existantes sont probablement configurées avec le **dossier Déplacer le message vers le courrier indésirable Email** pour le verdict de courrier indésirable à haut niveau de confiance dans les stratégies anti-courrier indésirable. Le modèle Standard pour les stratégies de sécurité prédéfinies utilise le **message de mise en quarantaine** de l’action pour le courrier indésirable à haut niveau de confiance, et les stratégies de sécurité prédéfinies sont toujours appliquées avant les stratégies anti-courrier indésirable personnalisées ou la stratégie anti-courrier indésirable par défaut. Pour plus d’informations sur les paramètres par défaut, Standard et Strict, consultez [Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité](recommended-settings-for-eop-and-office365.md).
 
-D’autres charges de travail sont également disponibles pour la protection (par exemple, [pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md) et [liens sécurisés pour les applications Office 365 prises en charge](safe-links.md#safe-links-settings-for-office-365-apps).
+D’autres charges de travail sont également disponibles pour la protection (par exemple, [pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md) et [liens sécurisés pour les applications Office prises en charge](safe-links.md#safe-links-settings-for-office-apps).
 
 Pendant la configuration de l’essai, la fonctionnalité de réponse qui est exclusive à Defender pour Office 365 Plan 2 (par exemple, [AIR](office-365-air.md) et [l’Explorateur de menaces](threat-explorer.md) est également configurée pour l’ensemble de l’organisation. Aucune étendue de stratégie n’est requise.
 

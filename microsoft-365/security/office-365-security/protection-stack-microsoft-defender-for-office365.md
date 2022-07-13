@@ -14,12 +14,12 @@ description: Suivez le chemin d’un message entrant via la pile de filtrage des
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4548beaf8d3071006114a65fd95c16b06e8a875d
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648170"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772037"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -62,7 +62,7 @@ Les fonctionnalités de l’intelligence de l’expéditeur sont essentielles po
 
 1. Les déclencheurs et alertes de **détection de compromission** de compte sont déclenchés lorsqu’un compte a un comportement anormal, cohérent avec la compromission. Dans certains cas, le compte d’utilisateur est bloqué et empêché d’envoyer d’autres messages électroniques tant que le problème n’est pas résolu par l’équipe des opérations de sécurité d’une organisation.
 
-2. **L’authentification par e-mail** implique à la fois des méthodes configurées par le client et des méthodes configurées dans le cloud, afin de s’assurer que les expéditeurs sont autorisés et authentifiés. Ces méthodes résistent à l’usurpation d’identité.
+2. **Email l’authentification** implique à la fois des méthodes configurées par le client et des méthodes configurées dans le cloud, afin de s’assurer que les expéditeurs sont des expéditeurs autorisés et authentiques. Ces méthodes résistent à l’usurpation d’identité.
     - **SPF** peut rejeter des messages basés sur des enregistrements TXT DNS qui répertorient les adresses IP et les serveurs autorisés à envoyer des messages au nom de l’organisation.
     - **DKIM** fournit une signature chiffrée qui authentifie l’expéditeur.
     - **DMARC** permet aux administrateurs de marquer SPF et DKIM comme requis dans leur domaine et applique l’alignement entre les résultats de ces deux technologies.
@@ -90,7 +90,7 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Le filtrage de phase 3 dans MDO est le filtrage de contenu" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
-1. **Les règles de transport** (également appelées règles de flux de courrier ou règles de transport Exchange) permettent à un administrateur d’effectuer un large éventail d’actions lorsqu’un large éventail de conditions est remplie pour un message. Tous les messages qui transitent par votre organisation sont évalués par rapport aux règles /règles de transport de flux de courrier activées.
+1. **Les règles de transport** (également appelées règles de flux de messagerie ou règles de transport Exchange) permettent à un administrateur d’effectuer un large éventail d’actions lorsqu’un large éventail de conditions sont remplies pour un message. Tous les messages qui transitent par votre organisation sont évalués par rapport aux règles /règles de transport de flux de courrier activées.
 
 2. L’**Antivirus Microsoft Defender** et deux *moteurs antivirus tiers* sont utilisés pour détecter tous les programmes malveillants connus dans les pièces jointes.
 
@@ -106,7 +106,7 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 8. Les **Heuristiques de contenu** peuvent détecter des messages suspects en fonction de la structure et de la fréquence des mots dans le corps du message, à l’aide de modèles d’apprentissage automatique.
 
-9. **Coffre pièces jointes bac à** sable (sandbox) chaque pièce jointe pour Defender pour Office 365 clients, en utilisant l’analyse dynamique pour détecter les menaces jamais vues auparavant.
+9. **Les pièces jointes sécurisées sont des bacs** à sable (sandbox) pour chaque pièce jointe pour Defender pour Office 365 clients, en utilisant l’analyse dynamique pour détecter les menaces jamais vues auparavant.
 
 10. La **Détonation de contenu lié** traite chaque URL liée à un fichier dans un e-mail comme une pièce jointe, la mettant en bac à sable asynchrone au moment de la remise.
 
@@ -114,11 +114,11 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 ## <a name="phase-4---post-delivery-protection"></a>Phase 4 - Protection post-remise
 
-La dernière étape a lieu après la remise de courrier ou de fichier, agissant sur le courrier qui se trouve dans différentes boîtes aux lettres et fichiers et liens qui apparaissent dans les clients comme Microsoft Teams.
+La dernière étape a lieu après la remise du courrier ou des fichiers, en agissant sur le courrier qui se trouve dans différentes boîtes aux lettres et fichiers et liens qui apparaissent dans des clients tels que Microsoft Teams.
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Le filtrage de phase 4 dans Defender pour Office 365 est la protection après remise" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. Les **Liens fiables** sont la protection au moment du clic de Defender pour Office 365. Chaque URL de chaque message est encapsulée pour pointer vers les serveurs Microsoft Coffre Links. Lorsqu’une URL est cliqué, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable de manière asynchrone pour mettre à jour sa réputation.
+1. Les **Liens fiables** sont la protection au moment du clic de Defender pour Office 365. Chaque URL de chaque message est encapsulée pour pointer vers les serveurs Microsoft Safe Links. Lorsqu’une URL est cliqué, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable de manière asynchrone pour mettre à jour sa réputation.
 
 2. **Le vidage automatique de zéro heure (ZAP) pour le hameçonnage** détecte et neutralise rétroactivement les messages de hameçonnage malveillants qui ont déjà été remis aux boîtes aux lettres Exchange Online.
 
@@ -130,9 +130,9 @@ La dernière étape a lieu après la remise de courrier ou de fichier, agissant 
 
 6. **Les compléments Message** de rapport permettent aux utilisateurs de signaler facilement les faux positifs (bon e-mail, marqués par erreur comme *mauvais*) ou les faux négatifs (e-mail incorrect marqué comme *bon*) à Microsoft pour une analyse plus approfondie.
 
-7. **Coffre Liens pour les clients Office** offre la même protection Coffre liens en mode natif, à l’intérieur de clients Office tels que Word, PowerPoint et Excel.
+7. **Les liens sécurisés pour les clients Office** offrent la même protection de temps de clic des liens sécurisés, en mode natif, à l’intérieur des applications Office prises en charge comme Word, PowerPoint et Excel.
 
-8. **La protection des OneDrive, des SharePoint et des Teams** offre la même protection Coffre pièces jointes contre les fichiers malveillants, en mode natif, à l’intérieur de OneDrive, SharePoint et Microsoft Teams.
+8. **La protection pour OneDrive, SharePoint et Teams** offre la même protection des pièces jointes sécurisées contre les fichiers malveillants, en mode natif, à l’intérieur de OneDrive, SharePoint et Microsoft Teams.
 
 9. Lorsqu’une URL qui pointe vers un fichier est sélectionnée après la remise, la **détonation de contenu lié** affiche une page d’avertissement jusqu’à ce que le bac à sable du fichier soit terminé et que l’URL soit jugée sécurisée.
 
