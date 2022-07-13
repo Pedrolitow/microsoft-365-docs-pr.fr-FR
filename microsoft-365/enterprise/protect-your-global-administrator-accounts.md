@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +25,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès privilégié à votre locataire Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 6aebdd79f2870ca25ab866bccb66c1d1f680f701
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930194"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749328"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Étape 2. Protéger vos comptes privilégiés Microsoft 365
 
@@ -45,7 +48,7 @@ Microsoft fournit des fonctionnalités pour protéger votre organisation, mais e
     
 2. Configurez l’authentification multifacteur (MFA) pour vos comptes privilégiés Microsoft 365 dédiés et utilisez la forme la plus forte d’authentification secondaire.
 
-3. Protégez les comptes privilégiés avec les recommandations relatives à l’identité confiance Zéro et à l’accès aux appareils.
+3. Protégez les comptes privilégiés avec Confiance nulle des recommandations d’identité et d’accès aux appareils.
 
 > [!NOTE]
 > Pour sécuriser vos rôles privilégiés, consultez [les meilleures pratiques pour les rôles Azure AD](/azure/active-directory/roles/best-practices) afin de sécuriser l’accès privilégié à votre locataire.
@@ -86,7 +89,7 @@ Si l’infrastructure de sécurité de la méthode de vérification renforcée s
   
 Pour plus d’informations, consultez [MFA pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Protéger les comptes d’administrateur avec l’identité confiance Zéro et les recommandations d’accès aux appareils
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Protéger les comptes d’administrateur avec des recommandations d’identité Confiance nulle et d’accès aux appareils
 
 Pour garantir une main-d’œuvre sécurisée et productive, Microsoft fournit un ensemble de recommandations pour [l’accès aux identités et aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md). Pour l’identité, utilisez les recommandations et les paramètres de ces articles :
 
@@ -141,7 +144,7 @@ Pour plus d’informations, consultez [Privileged Access Management](/office365/
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Logiciel SIEM (Security Information and Event Management) pour la journalisation Microsoft 365
 
-Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure des alertes et des événements de sécurité Microsoft 365 dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD à votre SEIM. Voir [Présentation de l’intégration des journaux Azure](/azure/security/security-azure-log-integration-overview).
+Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure des alertes et des événements de sécurité Microsoft 365 dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD à votre SEIM. Voir [Présentation de Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Étape suivante
 

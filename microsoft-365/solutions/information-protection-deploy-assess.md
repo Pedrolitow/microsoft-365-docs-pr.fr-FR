@@ -15,18 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: Déterminez les réglementations relatives à la confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: e881ff4eb9561525fed42775d8f56b6842dc1719
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129050"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748305"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques liés à la confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
-L’évaluation des réglementations de confidentialité des données et des risques auxquels votre organisation est soumise est une première étape avant d’implémenter les actions d’amélioration associées, y compris les actions réalisables avec Microsoft 365 fonctionnalités et services.
+L’évaluation des réglementations de confidentialité des données et des risques auxquels votre organisation est soumise est une première étape avant d’implémenter les actions d’amélioration associées, y compris les actions réalisables avec les fonctionnalités et services Microsoft 365.
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Réglementations potentiellement applicables en matière de confidentialité des données
 
@@ -52,7 +53,7 @@ Dans le États-Unis, il s’agit de la California Consumer Protection Act ([CCPA
 
 Dans le monde entier, d’autres exemples incluent la Loi d’implémentation du RGPD national (BDSG) allemande, la Loi brésilienne sur la protection des données (LGPD) et bien d’autres.
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mappage des réglementations aux catégories de contrôle technique Microsoft 365
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mappage de réglementation aux catégories de contrôle technique Microsoft 365
 
 La plupart des réglementations relatives à la confidentialité des données ont des exigences qui se chevauchent. Vous devez donc comprendre les réglementations auxquelles elles sont soumises avant d’élaborer un schéma de contrôle technique.
 
@@ -118,7 +119,7 @@ Voici un exemple des différents types de données pour les services typiques d�
 
 ![Types de données personnelles.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-La plupart des données personnelles soumises à une réglementation sur la confidentialité des données sont généralement collectées et stockées en dehors de Microsoft 365. Toutes les données personnelles provenant d’applications web ou mobiles destinées aux consommateurs doivent avoir été exportées de ces applications vers Microsoft 365 afin d’être soumises à l’examen de la confidentialité des données dans Microsoft 365.
+La plupart des données personnelles soumises à la réglementation sur la confidentialité des données sont généralement collectées et stockées en dehors de Microsoft 365. Toutes les données personnelles provenant d’applications web ou mobiles destinées aux consommateurs doivent avoir été exportées de ces applications vers Microsoft 365 afin d’être soumises à l’examen de la confidentialité des données dans Microsoft 365.
 
 Votre exposition à la confidentialité des données dans Microsoft 365 peut être plus limitée par rapport à vos applications web et systèmes CRM, que cette solution ne traite pas.
 
@@ -166,7 +167,7 @@ Comprendre votre exposition aux risques et à la réglementation de la confident
 
 Si vous n’avez pas de données personnelles provenant de consommateurs dans votre environnement Microsoft 365 ou qu’elles sont limitées à certaines parties de l’environnement et que la nécessité d’un contrôle technique est fondée sur l’exposition des données de type consommateur, ce contrôle technique ne peut être utilisé que dans des parties à haut risque de l’environnement, pas partout.
 
-Bien qu’une recommandation d’organisation externe ou d’un ensemble de contrôles standard, par exemple à partir du Gestionnaire de conformité dans Microsoft 365, puisse aider à éclairer votre stratégie de contrôle, votre choix d’implémentation doit être piloté par la sensibilisation à l’inventaire des données pour quantifier votre exposition réelle aux risques.
+Bien qu’une recommandation d’organisation externe ou d’ensemble de contrôles standard, telle que le Gestionnaire de conformité dans Microsoft 365, puisse aider à orienter votre stratégie de contrôle, votre choix d’implémentation doit être piloté par la sensibilisation à l’inventaire des données pour quantifier votre exposition réelle aux risques.
 
 La plupart des organisations auront une certaine exposition à l’un des scénarios ci-dessus. Il est important d’adopter une approche holistique de l’évaluation.
 
@@ -190,7 +191,7 @@ L’évaluation du RGPD se compose des sections suivantes :
 
 Cette étape implique l’identification de types d’informations sensibles particuliers soumis à des contrôles réglementaires spécifiques, ainsi que l’occurrence de ces types dans votre environnement Microsoft 365.
 
-La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la recherche de conformité, eDiscovery, eDiscovery (Premium), DLP et audit.
+La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la Recherche de conformité, eDiscovery, eDiscovery (Premium), DLP et audit.
 
 Avec la nouvelle solution **de classification des données** dans le portail de conformité Microsoft Purview, cela est devenu beaucoup plus facile avec la fonctionnalité [Explorateur](../compliance/data-classification-content-explorer.md) de contenu, qui fonctionne avec des types d’informations sensibles intégrés ou personnalisés, y compris ceux liés aux données personnelles.
 
@@ -216,11 +217,11 @@ Pour plus d’informations, consultez ces articles :
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 
-Un outil important qui permet de déterminer l’occurrence d’éléments sensibles dans votre environnement est le nouvel [Explorateur de contenu](../compliance/data-classification-content-explorer.md) dans le centre d’administration Microsoft Purview. Il s’agit d’un outil automatisé pour l’analyse initiale et continue de l’ensemble de votre abonnement Microsoft 365 pour l’occurrence de types d’informations sensibles et l’affichage des résultats.
+Un outil important qui permet de déterminer l’occurrence d’éléments sensibles dans votre environnement est le nouvel [Explorateur de contenu](../compliance/data-classification-content-explorer.md) dans le Centre d’administration Microsoft Purview. Il s’agit d’un outil automatisé pour l’analyse initiale et continue de l’ensemble de votre abonnement Microsoft 365 pour l’occurrence de types d’informations sensibles et l’affichage des résultats.
 
 Le nouvel outil Explorateur de contenu vous permet d’identifier rapidement les emplacements des éléments sensibles dans votre environnement, à l’aide de types d’informations sensibles intégrés ou personnalisés. Cela peut impliquer l’établissement d’un processus et la responsabilité d’examiner régulièrement la présence et l’emplacement des éléments sensibles.
 
-En plus des autres étapes mises en évidence dans cet article, cela fournit un point de départ pour identifier l’exposition globale au risque, la préparation et l’emplacement des éléments sensibles à protéger par le biais de la configuration et de la surveillance planifiées Microsoft 365.
+En plus des autres étapes mises en évidence dans cet article, cela constitue un point de départ pour identifier l’exposition globale au risque, la préparation et l’emplacement des éléments sensibles à protéger par le biais de la configuration et de la surveillance planifiées de Microsoft 365.
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Autres méthodes pour identifier les données personnelles dans votre environnement
 

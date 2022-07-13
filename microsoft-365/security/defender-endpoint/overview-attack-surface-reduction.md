@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717131"
+ms.locfileid: "66748998"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -53,21 +53,25 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 
 1. [Activez l’isolation basée sur le matériel pour Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. Activez le contrôle d’application.
+2. [Activer les règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment.md)
+
+3. Activez le contrôle d’application.
 
    1. Passez en revue les stratégies de base dans Windows. Consultez [les exemples de stratégies de base](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. Consultez le [guide de conception Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
    3. Reportez-vous au [déploiement de stratégies de contrôle d’application Windows Defender (WDAC](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)).
 
-3. [Activez l’accès contrôlé aux dossiers](enable-controlled-folders.md).
+4. [Activez l’accès contrôlé aux dossiers](enable-controlled-folders.md).
 
-4. [Activez la protection réseau](enable-network-protection.md).
+5. [Protection de stockage amovible](device-control-removable-storage-protection.md)
 
-5. [Activez la protection contre les attaques](enable-exploit-protection.md).
+6. [Activez la protection réseau](enable-network-protection.md).
 
-6. [Déployez des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment.md).
+7. Vue [d’ensemble de l’activation de la protection web](web-protection-overview.md)
 
-7. Configurez votre pare-feu réseau.
+8. [Activez la protection contre les attaques](enable-exploit-protection.md).
+
+9. Configurez votre pare-feu réseau.
 
    1. Obtenez une vue d’ensemble des [Pare-feu Windows Defender avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
    2. Utilisez le [guide de conception Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour décider de la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
@@ -296,7 +300,7 @@ Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusi
 | [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite l’antivirus Microsoft Defender). |
 | [Exploit Protection](exploit-protection.md) | Protégez les systèmes d’exploitation et les applications utilisés par votre organisation contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
 | [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les supports utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |
-| [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement de règles de réduction de la surface d’attaque. |
+| [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement des règles de réduction de la surface d’attaque, suivis de conseils pas à pas pour le test, l’activation et la surveillance. |
 | [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Répertorie les étapes recommandées pour le déploiement des règles de réduction de la surface d’attaque. |
 | [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md) | Fournit des étapes pour utiliser le mode audit pour tester les règles de réduction de la surface d’attaque. |
 | [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Affiche les étapes de transition des règles de réduction de la surface d’attaque du mode test (audit) au mode actif et activé (bloquer). |

@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 51e441dbebd247e041768e02875e635c9dfa7098
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 5a5b1e6a08b91eba8ecd256a5ba80954305853ee
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602467"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750119"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Étape 3. Activer et piloter Microsoft Defender pour Office 365
 
@@ -41,7 +42,7 @@ Suivez les étapes ci-dessous pour activer et piloter Microsoft Defender pour Of
 
 Le tableau suivant décrit les étapes de l’illustration.
 
-| Numéro d’étape | Lien  |Description  |
+| Numéro d’étape | Liens  |Description  |
 |---------|---------|---------|
 |1|[Passer en revue les exigences d’architecture et les concepts clés](eval-defender-office-365-architecture.md)    | Comprenez l’architecture de Defender pour Office et assurez-vous que votre environnement Exchange Online répond aux prérequis de l’architecture.       |
 |2|[Activer l’environnement d’évaluation](eval-defender-office-365-enable-eval.md)     |   Suivez les étapes pour configurer l’environnement d’évaluation.      |

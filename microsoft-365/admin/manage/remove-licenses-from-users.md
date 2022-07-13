@@ -22,22 +22,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: La méthode que vous utilisez pour désattribuer des licences de produit dépend de la désaffectation des licences d’utilisateurs spécifiques ou d’un produit spécifique.
-ms.date: 06/23/2022
-ms.openlocfilehash: 956391e8eeda1d17fdba76cf406a0291d1850b6f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.date: 07/12/2022
+ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663501"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748382"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Annuler l’affectation de licences Microsoft 365 aux utilisateurs
 
 Vous pouvez désattribuer des licences d’utilisateurs sur la page **Utilisateurs actifs** ou sur la page **Licences** . La méthode que vous utilisez varie selon que vous souhaitez annuler l’affectation de licences de produits à des utilisateurs spécifiques ou désattribuer des licences utilisateur à partir d’un produit spécifique.
 
 > [!NOTE]
-> 
+>
 > - En tant qu’administrateur, vous ne pouvez pas attribuer ou annuler des attributions de licences pour un abonnement d’achat en libre-service acheté par un utilisateur de votre organisation. Vous pouvez [prendre le contrôle d’un abonnement d’achat en libre-service](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), puis attribuer ou annuler des attributions de licences.
-> 
+>
 > - Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -48,9 +48,9 @@ Vous pouvez désattribuer des licences d’utilisateurs sur la page **Utilisateu
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Utiliser la page Licences pour annuler l’affectation des licences
 
-La page **Licences** vous permet d’attribuer ou de désattribuer des licences pour jusqu’à 20 utilisateurs à la fois. La page affiche les produits que vous possédez, le nombre de licences disponibles pour chaque produit et le nombre de licences attribuées sur le nombre total de licences disponibles. Le nombre de licences est un total agrégé de licences pour tous les abonnements pour le même nom de produit.
+La page **Licences** vous permet d’attribuer ou de désattribuer des licences pour jusqu’à 20 utilisateurs à la fois. La page affiche les produits que vous possédez, le nombre de licences disponibles pour chaque produit et le nombre de licences attribuées sur le nombre total de licences disponibles.
 
-Par exemple, vous pouvez avoir un abonnement pour Microsoft 365 Business Premium qui a 5 licences et un autre abonnement qui a 8 licences pour le même produit. La page **Licences** indique que vous disposez d’un total de 13 licences pour Microsoft 365 Business Premium sur tous vos abonnements. Cela est différent de ce que vous voyez sur la page **Vos produits** , qui affiche une ligne pour chaque abonnement que vous possédez, même s’ils concernent le même produit.
+La page **Licences** affiche un total agrégé de licences pour tous les abonnements pour le même nom de produit. Par exemple, vous pouvez avoir un abonnement pour Microsoft 365 Business Premium qui a 5 licences et un autre abonnement qui a 8 licences pour le même produit. La page **Licences** indique que vous disposez d’un total de 13 licences pour Microsoft 365 Business Premium sur tous vos abonnements. Cela est différent de ce que vous voyez sur la page **Vos produits** , qui affiche une ligne pour chaque abonnement que vous possédez, même s’ils concernent le même produit.
 
 ::: moniker range="o365-worldwide"
 
@@ -64,13 +64,13 @@ Par exemple, vous pouvez avoir un abonnement pour Microsoft 365 Business Premium
 
 ::: moniker-end
 
-1. Sélectionnez un produit.
+2. Sélectionnez un produit.
 
-2. Activez les cases à cocher des utilisateurs pour lesquels vous souhaitez annuler l’affectation des licences.
+3. Activez les cases à cocher des utilisateurs pour lesquels vous souhaitez annuler l’attribution de licences.
 
-3. Sélectionnez **Annuler l’affectation des licences**.
+4. Sélectionnez **Annuler l’affectation des licences**.
 
-4. Dans la zone **Annuler l’affectation des licences** , sélectionnez **Annuler l’affectation**.
+5. Dans la zone **Annuler l’affectation des licences** , sélectionnez **Annuler l’affectation**.
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Utiliser la page Utilisateurs actifs pour annuler l’affectation de licences
 
@@ -127,7 +127,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour annuler l’affectati
 - Pour savoir comment bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de sa licence et comment accéder aux données par la suite, consultez [Supprimer un ancien employé](../add-users/remove-former-employee.md).
 - Si vous supprimez la licence d’un utilisateur et que les applications Office sont toujours installées, il voit [des erreurs de produit et d’activation sans licence dans Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) lorsqu’il utilise des applications Office.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous ne [réattribuez pas les licences inutilisées à d’autres utilisateurs](assign-licenses-to-users.md), envisagez [de supprimer les licences de votre abonnement](../../commerce/licenses/buy-licenses.md) afin de ne pas payer plus de licences que nécessaire.
 

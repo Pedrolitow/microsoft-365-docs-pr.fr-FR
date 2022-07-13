@@ -18,14 +18,15 @@ ms.collection:
 - deploy security baselines
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 68ce5f263f24d4ab3271425815834870c71f2a4a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eab30a8a0801dcbdf95bee3c33f54a920850a6db
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938969"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749240"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux bases de référence de sécurité
 

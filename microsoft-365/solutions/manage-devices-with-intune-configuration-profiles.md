@@ -16,14 +16,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: fe137e626d5199f1709504d025411586965ae9fd
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 3b8993c02ce6a5c1885997f6c56c40c22ee85321
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737422"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749306"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 
@@ -48,7 +49,7 @@ Pour l’instant, déployez simplement la base de référence de sécurité MDM 
 
 Plus tard, lorsque Microsoft Defender pour point de terminaison est installé et que vous avez connecté Intune, déployez les bases de référence de Defender pour point de terminaison. Cette rubrique est traitée dans l’article suivant de cette série : [Étape 6. Surveillez les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).
 
-Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST ?](https://docs.microsoft.com/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
+Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST ?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Personnaliser les profils de configuration pour votre organisation
 

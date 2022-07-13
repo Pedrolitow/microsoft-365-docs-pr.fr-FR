@@ -14,14 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: Renforcez la sécurité des connexions de vos utilisateurs à l’aide de l’authentification multifacteur (MFA) et d’autres fonctionnalités.
-ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 56ccd1df24bbfb09920cb0c7138ed2e5dc9ca3cb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090272"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749965"
 ---
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Étape 3 : Protéger vos comptes d’utilisateur Microsoft 365
 

@@ -19,17 +19,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 0c7facc2ac5a20b21a6862b115b62c576ebaeb1f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 35acb32c9a27ec32c78f4f247257d589a9fefc04
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972186"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750053"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies d’accès aux identités et aux appareils Confiance nulle courantes
 
-Cet article décrit les stratégies d’accès aux identités et aux appareils Confiance nulle courantes recommandées pour sécuriser l’accès aux services cloud Microsoft 365, y compris les applications locales publiées avec Azure Active Directory (Azure AD) Proxy d'application.
+Cet article décrit les stratégies d’accès aux identités et aux appareils Confiance nulle courantes recommandées pour sécuriser l’accès aux services cloud Microsoft 365, notamment les applications locales publiées avec Azure Active Directory (Azure AD) Proxy d'application.
 
 Cette aide explique comment déployer les stratégies recommandées dans un environnement nouvellement approvisionné. La configuration de ces stratégies dans un environnement lab distinct vous permet de comprendre et d’évaluer les stratégies recommandées avant de mettre en lots le déploiement dans vos environnements de préproduction et de production. Votre environnement nouvellement approvisionné peut être cloud uniquement ou hybride pour refléter vos besoins d’évaluation.
 
@@ -63,12 +64,12 @@ Pour vous donner le temps d’accomplir ces tâches, nous vous recommandons d’
 ||[Exiger des applications approuvées et une protection des applications](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes à l’aide d’iOS, iPadOS ou Android.|Microsoft 365 E3 ou E5|
 |**Enterprise**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *faible*, *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 ou Microsoft 365 E3 avec le module complémentaire Sécurité E5|
 ||[Définir des stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme.|Microsoft 365 E3 ou E5|
-||[Exiger des PC et des appareils mobiles conformes](#require-compliant-pcs-and-mobile-devices)|Applique la gestion Intune pour les PC (Windows ou macOS) et les téléphones ou tablettes (iOS, iPadOS ou Android).|Microsoft 365 E3 ou E5|
+||[Exiger des PC et des appareils mobiles conformes](#require-compliant-pcs-and-mobile-devices)|Applique Intune gestion pour les PC (Windows ou macOS) et les téléphones ou tablettes (iOS, iPadOS ou Android).|Microsoft 365 E3 ou E5|
 |**Sécurité spécialisée**|[*Toujours* exiger l’authentification multifacteur](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 ou E5|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Affectation de stratégies à des groupes et des utilisateurs
 
-Avant de configurer des stratégies, identifiez les Azure AD groupes que vous utilisez pour chaque niveau de protection. En règle générale, la protection des points de départ s’applique à tous les membres de l’organisation. Un utilisateur inclus pour le point de départ et la protection d’entreprise aura toutes les stratégies de point de départ appliquées, ainsi que les stratégies d’entreprise. La protection est cumulative et la stratégie la plus restrictive est appliquée.
+Avant de configurer des stratégies, identifiez les groupes Azure AD que vous utilisez pour chaque niveau de protection. En règle générale, la protection des points de départ s’applique à tous les membres de l’organisation. Un utilisateur inclus pour le point de départ et la protection d’entreprise aura toutes les stratégies de point de départ appliquées, ainsi que les stratégies d’entreprise. La protection est cumulative et la stratégie la plus restrictive est appliquée.
 
 Une pratique recommandée consiste à créer un groupe Azure AD pour l’exclusion de l’accès conditionnel. Ajoutez ce groupe à toutes vos stratégies d’accès conditionnel dans la valeur **Exclure** du paramètre **Utilisateurs et groupes** dans la section **Affectations** . Cela vous donne une méthode pour fournir l’accès à un utilisateur pendant que vous résolvez les problèmes d’accès. Cette solution est recommandée en tant que solution temporaire uniquement. Surveillez les modifications apportées à ce groupe et assurez-vous que le groupe d’exclusion est utilisé uniquement comme prévu.
 
@@ -84,9 +85,9 @@ Voici les résultats :
 
   Dans ce cas, les membres du groupe Du personnel exécutif correspondent à la fois au point de départ et aux stratégies d’accès conditionnel d’entreprise. Les contrôles d’accès pour les deux stratégies sont combinés, ce qui dans ce cas équivaut à la stratégie d’accès conditionnel d’entreprise.
 
-- Les membres du groupe Top Secret Project X sont toujours requis pour utiliser l’authentification multifacteur
+- Les membres du groupe Top Secret Project X sont toujours tenus d’utiliser l’authentification multifacteur
 
-  Dans ce cas, les membres du groupe Top Secret Project X correspondent au point de départ et aux stratégies d’accès conditionnel de sécurité spécialisées. Les contrôles d’accès pour les deux stratégies sont combinés. Étant donné que le contrôle d’accès pour la stratégie d’accès conditionnel de sécurité spécialisée est plus restrictif, il est utilisé.
+  Dans ce cas, les membres du groupe Projet X top secret correspondent à la fois au point de départ et aux stratégies d’accès conditionnel de sécurité spécialisées. Les contrôles d’accès pour les deux stratégies sont combinés. Étant donné que le contrôle d’accès pour la stratégie d’accès conditionnel de sécurité spécialisée est plus restrictif, il est utilisé.
 
 Soyez prudent lors de l’application de niveaux de protection plus élevés aux groupes et aux utilisateurs. Par exemple, les membres du groupe Top Secret Project X doivent utiliser l’authentification multifacteur chaque fois qu’ils se connectent, même s’ils ne travaillent pas sur le contenu de sécurité spécialisé pour Project X.
 
@@ -96,7 +97,7 @@ Tous les groupes Azure AD créés dans le cadre de ces recommandations doivent �
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Exiger l’authentification multifacteur en fonction du risque de connexion
 
-Vos utilisateurs doivent s’inscrire à l’authentification multifacteur avant d’en exiger l’utilisation. Si vous avez Microsoft 365 E5, Microsoft 365 E3 avec le module complémentaire sécurité E5, Office 365 avec EMS E5 ou des licences Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’authentification multifacteur. Le [travail requis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs auprès de l’authentification multifacteur.
+Vos utilisateurs doivent s’inscrire à l’authentification multifacteur avant d’en exiger l’utilisation. Si vous avez Microsoft 365 E5, Microsoft 365 E3 avec le module complémentaire sécurité E5, Office 365 avec EMS E5 ou des licences de Azure AD Premium P2 individuelles, vous pouvez utiliser la stratégie d’inscription MFA avec Azure AD Identity Protection pour exiger que les utilisateurs s’inscrivent à l’authentification multifacteur. Le [travail requis](identity-access-prerequisites.md) inclut l’inscription de tous les utilisateurs auprès de l’authentification multifacteur.
 
 Une fois vos utilisateurs inscrits, vous pouvez exiger l’authentification multifacteur pour la connexion avec une nouvelle stratégie d’accès conditionnel.
 
@@ -109,7 +110,7 @@ Les tableaux suivants décrivent les paramètres de stratégie d’accès condit
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionner des utilisateurs et des groupes > Utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateur pilotes.|
 ||Exclure|**Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée temporairement en fonction des besoins.|
@@ -129,7 +130,7 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Grant access**||Sélectionner|
 |||**Exiger l’authentification multifacteur**|Chèque|
@@ -149,7 +150,7 @@ Consultez [cet article](../../enterprise/microsoft-365-client-support-multi-fact
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionner des utilisateurs et des groupes > Utilisateurs et groupes** : sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateur pilotes.|
 ||Exclure|**Utilisateurs et groupes** : sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée temporairement en fonction des besoins.|
@@ -158,7 +159,7 @@ Dans la section **Affectations** :
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Bloquer l’accès**||Sélectionner|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
@@ -197,7 +198,7 @@ Enfin, sélectionnez **Activé** pour **appliquer la stratégie**, puis **sélec
 
 Envisagez d’utiliser l’outil [What if](/azure/active-directory/active-directory-conditional-access-whatif) pour tester la stratégie.
 
-Utilisez cette stratégie conjointement avec [Configurer Azure AD protection par mot de passe](/azure/active-directory/authentication/concept-password-ban-bad), qui détecte et bloque les mots de passe faibles connus et leurs variantes, ainsi que des termes faibles supplémentaires spécifiques à votre organisation. L’utilisation de Azure AD protection par mot de passe garantit que les mots de passe modifiés sont forts.
+Utilisez cette stratégie conjointement avec [Configurer la protection par mot de passe Azure AD](/azure/active-directory/authentication/concept-password-ban-bad), qui détecte et bloque les mots de passe faibles connus et leurs variantes, ainsi que des termes faibles supplémentaires spécifiques à votre organisation. L’utilisation de la protection par mot de passe Azure AD garantit que les mots de passe modifiés sont forts.
 
 ## <a name="apply-app-data-protection-policies"></a>Appliquer des stratégies de protection des données APP
 
@@ -205,13 +206,13 @@ Les API définissent les applications autorisées et les actions qu’elles peuv
 
 Le framework de protection des données des stratégies de protection des applications est organisé en trois niveaux de configuration distincts, chaque niveau s’appuyant sur le niveau précédent :
 
-- **Niveau 1 : Enterprise protection des données de base** garantit que les applications sont protégées avec un code confidentiel et chiffrées et effectue des opérations de réinitialisation sélectives. Pour les appareils Android, ce niveau valide l’attestation des appareils Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et présente l’informatique ainsi que le nombre des utilisateurs aux stratégies de protection des applications.
-- **Niveau 2 : Enterprise protection améliorée des données** introduit des mécanismes de prévention des fuites de données APP et des exigences minimales du système d’exploitation. Il s’agit de la configuration qui s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires.
-- **Niveau 3 : Enterprise protection élevée des données** introduit des mécanismes de protection avancée des données, une configuration améliorée du code confidentiel et APP Mobile Threat Defense. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
+- **Niveau 1 : La protection des données de base de l’entreprise** garantit que les applications sont protégées par un code confidentiel et chiffrées et effectue des opérations de réinitialisation sélectives. Pour les appareils Android, ce niveau valide l’attestation des appareils Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et présente l’informatique ainsi que le nombre des utilisateurs aux stratégies de protection des applications.
+- **Niveau 2 : La protection améliorée des données d’entreprise** introduit des mécanismes de prévention des fuites de données APP et des exigences minimales du système d’exploitation. Il s’agit de la configuration qui s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires.
+- **Niveau 3 : La protection élevée des données d’entreprise** introduit des mécanismes de protection avancée des données, une configuration améliorée du code confidentiel et app mobile threat defense. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
 
 Pour afficher les recommandations spécifiques pour chaque niveau de configuration et les applications minimales à protéger, consultez [Framework de protection des données à l’aide de stratégies de protection des applications](/mem/intune/apps/app-protection-framework).
 
-À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de protection de point de départ et de Enterprise correspondent étroitement aux paramètres de protection des données améliorés de niveau 2 entreprise. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de protection des données élevées d’entreprise de niveau 3.
+À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement aux paramètres de protection des données améliorés de niveau 2 entreprise. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de protection des données élevées d’entreprise de niveau 3.
 
 |Niveau de protection|Stratégie de protection des applications|Plus d’informations|
 |---|---|---|
@@ -219,7 +220,7 @@ Pour afficher les recommandations spécifiques pour chaque niveau de configurati
 |Entreprise|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent à jour les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Sécurité spécialisée|[Protection élevée des données d’entreprise de niveau 3](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent à jour uniquement les paramètres de stratégie ci-dessous pour implémenter plus de contrôles et une configuration plus sophistiquée que le niveau 2.|
 
-Pour créer une stratégie de protection des applications pour chaque plateforme (iOS et Android) dans Microsoft Endpoint Manager à l’aide des paramètres du framework de protection des données, vous pouvez :
+Pour créer une stratégie de protection des applications pour chaque plateforme (iOS et Android) au sein de Microsoft Endpoint Manager à l’aide des paramètres de l’infrastructure de protection des données, vous pouvez :
 
 1. Créez manuellement les stratégies en suivant les étapes décrites dans [Comment créer et déployer des stratégies de protection des applications avec Microsoft Intune](/mem/intune/apps/app-protection-policies).
 2. Importez l’exemple [Intune modèles JSON de](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) l’infrastructure de configuration de stratégie de protection des applications avec les [scripts PowerShell de Intune](https://github.com/microsoftgraph/powershell-intune-samples).
@@ -230,7 +231,7 @@ Pour appliquer les stratégies Protection d'applications que vous avez appliqué
 
 L’application de stratégies Protection d'applications nécessite un ensemble de stratégies décrites dans [Exiger une stratégie de protection des applications pour l’accès aux applications cloud avec l’accès conditionnel](/azure/active-directory/conditional-access/app-protection-based-conditional-access). Ces stratégies sont incluses dans cet ensemble recommandé de stratégies de configuration d’identité et d’accès.
 
-Pour créer la stratégie d’accès conditionnel qui nécessite des applications approuvées et une protection d’application, suivez les étapes décrites dans [Exiger des applications clientes approuvées ou une stratégie de protection des applications avec des appareils mobiles](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices), qui autorise uniquement les comptes au sein d’applications mobiles protégées par des stratégies Protection d'applications à accéder à Microsoft 365 points de terminaison.
+Pour créer la stratégie d’accès conditionnel qui nécessite des applications approuvées et une protection d’application, suivez les étapes décrites dans [Exiger des applications clientes approuvées ou une stratégie de protection des applications avec des appareils mobiles](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices), qui autorise uniquement les comptes au sein d’applications mobiles protégées par des stratégies Protection d'applications à accéder aux points de terminaison Microsoft 365.
 
    > [!NOTE]
    > Cette stratégie garantit que les utilisateurs mobiles peuvent accéder à tous les points de terminaison Microsoft 365 à l’aide des applications applicables.
@@ -258,7 +259,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="define-device-compliance-policies"></a>Définir des stratégies de conformité des appareils
 
-Les stratégies de conformité des appareils définissent les exigences que les appareils doivent remplir pour être déterminées comme conformes. Vous créez Intune stratégies de conformité des appareils à partir du centre d’administration Microsoft Endpoint Manager.
+Les stratégies de conformité des appareils définissent les exigences que les appareils doivent remplir pour être déterminées comme conformes. Vous créez Intune stratégies de conformité des appareils à partir du Centre d’administration Microsoft Endpoint Manager.
 
 Vous devez créer une stratégie pour chaque plateforme PC, téléphone ou tablette :
 
@@ -269,7 +270,7 @@ Vous devez créer une stratégie pour chaque plateforme PC, téléphone ou table
 - Windows 8.1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
-Pour créer des stratégies de conformité des appareils, connectez-vous au [centre d’administration Microsoft Endpoint Manager](https://endpoint.microsoft.com) avec vos informations d’identification d’administrateur, puis accédez aux stratégies de **conformité** \> **des appareils** \> **.** Sélectionner **Créer une stratégie**.
+Pour créer des stratégies de conformité des appareils, connectez-vous au [Centre microsoft Endpoint Manager Administration](https://endpoint.microsoft.com) avec vos informations d’identification d’administrateur, puis accédez aux stratégies de **conformité** \> **des appareils** \> **.** Sélectionner **Créer une stratégie**.
 
 Pour que les stratégies de conformité des appareils soient déployées, elles doivent être affectées à des groupes d’utilisateurs. Vous attribuez une stratégie après avoir créé et enregistré celle-ci. Dans le centre d’administration, sélectionnez la stratégie, puis sélectionnez **Affectations**. Après avoir sélectionné les groupes que vous souhaitez recevoir la stratégie, **sélectionnez Enregistrer** pour enregistrer cette affectation de groupe et déployer la stratégie.
 
@@ -296,7 +297,7 @@ Pour les appareils supervisés :
 - Sécurité renforcée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration permet d’effectuer des contrôles de partage de données et de bloquer l’accès aux périphériques USB. Cette configuration s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires sur un appareil.
 - Haute sécurité (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques présentant un risque unique élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration applique des stratégies de mot de passe plus fortes, désactive certaines fonctions d’appareil, applique des restrictions de transfert de données supplémentaires et exige l’installation d’applications par le biais du programme d’achat en volume d’Apple.
 
-À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de protection point de départ et Enterprise correspondent étroitement aux paramètres de sécurité améliorés de niveau 2. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de sécurité de niveau 3.
+À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement aux paramètres de sécurité améliorés de niveau 2. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de sécurité de niveau 3.
 
 |Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
@@ -310,12 +311,12 @@ Pour afficher les recommandations spécifiques en matière de conformité des ap
 
 Android Enterprise prend en charge plusieurs scénarios d’inscription, dont deux sont couverts dans le cadre de ce framework :
 
-- [Profil professionnel Android Enterprise](/intune/android-work-profile-enroll) : ce modèle d’inscription est généralement utilisé pour les appareils personnels, où le service informatique souhaite fournir une limite de séparation claire entre les données professionnelles et personnelles. Les stratégies contrôlées par le service informatique garantissent que les données de travail ne peuvent pas être transférées dans le profil personnel.
-- [Android Enterprise appareils entièrement gérés](/intune/android-fully-managed-enroll) : ces appareils appartiennent à l’entreprise, sont associés à un seul utilisateur et sont utilisés exclusivement à des fins professionnelles et non personnelles.
+- [Profil professionnel Android Entreprise](/intune/android-work-profile-enroll) : ce modèle d’inscription est généralement utilisé pour les appareils personnels, où le service informatique souhaite fournir une limite de séparation claire entre les données professionnelles et personnelles. Les stratégies contrôlées par le service informatique garantissent que les données de travail ne peuvent pas être transférées dans le profil personnel.
+- [Appareils Android Enterprise entièrement gérés](/intune/android-fully-managed-enroll) : ces appareils appartiennent à l’entreprise, sont associés à un seul utilisateur et sont utilisés exclusivement à des fins professionnelles et non personnelles.
 
 L’infrastructure de configuration de sécurité Android Enterprise est organisée en plusieurs scénarios de configuration distincts, fournissant des conseils pour le profil professionnel et les scénarios entièrement gérés.
 
-Pour les appareils android Enterprise profil professionnel :
+Pour les appareils de profil professionnel Android Entreprise :
 
 - Sécurité renforcée du profil professionnel (niveau 2) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données professionnelles ou scolaires. Cette configuration introduit des exigences de mot de passe, sépare les données professionnelles et personnelles, et valide l’attestation des appareils Android.
 - Sécurité élevée du profil professionnel (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques présentant un risque unique élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration introduit la protection contre les menaces mobiles ou Microsoft Defender pour point de terminaison, définit la version minimale d’Android, applique des stratégies de mot de passe plus fortes et restreint davantage la séparation professionnelle et personnelle.
@@ -326,9 +327,9 @@ Pour les appareils Android Entreprise entièrement gérés :
 - Sécurité renforcée entièrement managée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration applique des stratégies de mot de passe plus fortes et désactive les fonctionnalités utilisateur/compte.
 - Haute sécurité complètement managée (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques présentant un risque unique élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration augmente la version minimale d’Android, introduit la défense contre les menaces mobiles ou Microsoft Defender pour point de terminaison, et applique des restrictions d’appareil supplémentaires.
 
-À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de protection point de départ et Enterprise correspondent étroitement à la sécurité de base de niveau 1 pour les appareils personnels et aux paramètres de sécurité améliorés de niveau 2 pour les appareils entièrement gérés. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de sécurité de niveau 3.
+À l’aide des principes [décrits dans Confiance nulle configurations d’identité et d’accès aux appareils](microsoft-365-policies-configurations.md), les niveaux de point de départ et de protection d’entreprise correspondent étroitement à la sécurité de base de niveau 1 pour les appareils personnels et aux paramètres de sécurité améliorés de niveau 2 pour les appareils entièrement gérés. Le niveau de protection de sécurité spécialisé est étroitement lié aux paramètres de sécurité de niveau 3.
 
-Pour les appareils android Enterprise profil professionnel :
+Pour les appareils de profil professionnel Android Entreprise :
 
 |Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
@@ -344,7 +345,7 @@ Pour afficher les recommandations spécifiques en matière de conformité des ap
 
 Les paramètres suivants sont recommandés pour les PC exécutant Windows 10 et versions ultérieures, comme configuré à **l’étape 2 : Paramètres de conformité**, du processus de création de stratégie.
 
-Pour **connaître l’intégrité de l’appareil > Windows règles d’évaluation du service d’attestation** d’intégrité, consultez ce tableau.
+Pour **connaître l’intégrité de l’appareil > règles d’évaluation du service d’attestation d’intégrité Windows**, consultez ce tableau.
 
 |Propriétés|Valeur|Action|
 |---|---|---|
@@ -364,7 +365,7 @@ Pour **la sécurité du système**, consultez ce tableau.
 ||Mots de passe simples|Bloquer|Sélectionner|
 ||Type de mot de passe|Valeur par défaut de l’appareil|Sélectionner|
 ||Longueur minimale du mot de passe|6 |Type|
-||Nombre maximal de minutes d’inactivité avant demande du mot de passe|15 |Type <p> Ce paramètre est pris en charge pour les versions Android 4.0 et ultérieures ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et versions ultérieures.|
+||Nombre maximal de minutes d’inactivité avant demande du mot de passe|15|Type <p> Ce paramètre est pris en charge pour les versions Android 4.0 et ultérieures ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41|Type|
 ||Nombre de mots de passe précédents avant d’autoriser leur réutilisation|5|Type|
 ||Exiger un mot de passe lorsque l’appareil retourne un état inactif (Mobile et Holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|

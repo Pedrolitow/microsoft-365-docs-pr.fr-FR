@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
-ms.openlocfilehash: 8a953c76a3461b0f6dbf1b3663d5cef41f038371
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 61191da794c065a46d709d443982849ec4c4d3e3
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049118"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747942"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Étape 4. Exiger des appareils sains et conformes avec Intune
 

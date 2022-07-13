@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Découvrez comment utiliser le score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bd0ae7f748a2a3cd5ff52b6363780032033ead44
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947448"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748690"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -31,13 +32,13 @@ Microsoft Purview Compliance Manager peut vous aider à gérer les amélioration
 Cet article fournit des conseils sur l’utilisation de cet outil à des fins de confidentialité des données.
 
 > [!NOTE]
-> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles clients en fonction de votre environnement réglementaire. Ces services sont soumis aux conditions générales des conditions générales des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910). Voir aussi [Microsoft 365 conseils de gestion des licences pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles clients en fonction de votre environnement réglementaire. Ces services sont soumis aux conditions générales des conditions générales des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également les [conseils de gestion des licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Prise en main du Gestionnaire de conformité
 
 #### <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de conformité](../compliance/compliance-manager.md) est un outil d’évaluation des risques basé sur le flux de travail dans le portail de conformité Microsoft Purview pour la gestion des activités de conformité réglementaire liées aux services cloud Microsoft. Dans le cadre de votre abonnement Microsoft 365 ou Azure Active Directory (Azure AD), le Gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le modèle de responsabilité partagée pour les services cloud Microsoft.
+[Le Gestionnaire de conformité](../compliance/compliance-manager.md) est un outil d’évaluation des risques basé sur le flux de travail dans le portail de conformité Microsoft Purview pour gérer les activités de conformité réglementaire liées aux services cloud Microsoft. Dans le cadre de votre abonnement Microsoft 365 ou Azure Active Directory (Azure AD), le Gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le modèle de responsabilité partagée pour les services cloud Microsoft.
 
 **Prêt à utiliser des évaluations**
 
@@ -58,14 +59,14 @@ Le guide de [démarrage rapide du Gestionnaire de conformité](../compliance/com
 - [Première visite : familiarisez-vous avec le Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Utilisation de votre tableau de bord gestionnaire de conformité
     - Comprendre votre score de conformité
-    - Learning sur les actions d’amélioration
+    - En savoir plus sur les actions d’amélioration
     - Présentation des évaluations et des modèles
 - [Montée en puissance : configurer le Gestionnaire de conformité pour gérer vos activités de conformité](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Création et gestion de votre première évaluation
     - Exécution de travaux d’implémentation et de test sur des actions d’amélioration pour effectuer des contrôles dans vos évaluations
     - Comprendre l’impact des différentes actions sur votre score de conformité
 - [Montée en puissance : utiliser des fonctionnalités avancées pour répondre à vos besoins personnalisés](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Création de vos évaluations personnalisées pour suivre les produits non Microsoft 365
+    - Création de vos évaluations personnalisées pour suivre les produits non-Microsoft 365
     - Modification de modèles existants pour ajouter ou supprimer des contrôles
     - Configuration des tests automatisés des actions d’amélioration
 
@@ -79,9 +80,9 @@ Comme indiqué dans l’article de calcul du score de conformité, les contrôle
 
 L’interface utilisateur de l’administrateur du score de conformité ne répertorie pas ces paramètres et ne fournit pas la possibilité de les filtrer. Toutefois, si vous téléchargez le modèle associé à partir du Gestionnaire de conformité, le jeu de données résultant répertorie ces paramètres pour la plupart des réglementations.
 
-Pour les contrôles techniques, le Gestionnaire de conformité met automatiquement à jour le score d’action d’amélioration une fois l’action correctement implémentée et testée. D’autres actions&mdash; de contrôle non techniques sont aussi nombreuses que celles qui sont opérationnelles ou liées à la documentation&mdash; à enregistrer manuellement comme implémentée avant que les points ne soient comptabilisés dans votre score.
+Pour les contrôles techniques, le Gestionnaire de conformité met automatiquement à jour le score d’action d’amélioration une fois l’action correctement implémentée et testée. D’autres actions&mdash;de contrôle non techniques, telles que celles qui sont opérationnelles ou liées à la documentation&mdash;, doivent être enregistrées manuellement comme implémentées avant que les points ne soient comptabilisés dans votre score.
 
-Vous êtes nombreux également à implémenter certaines actions d’amélioration à d’autres fins&mdash;, par exemple en utilisant des étiquettes de rétention pour des raisons autres que la conformité&mdash; à la réglementation sur la confidentialité des données. Vous pourriez obtenir un crédit pour l’utilisation d’une telle fonctionnalité, même si elle est utilisée à d’autres fins, et non dans le cadre d’une action de conformité délibérée.
+Vous êtes également nombreux à implémenter certaines actions d’amélioration à d’autres fins, par exemple en utilisant des&mdash;étiquettes de rétention pour des raisons autres que la conformité&mdash;au règlement sur la confidentialité des données afin d’obtenir un crédit pour l’utilisation d’une telle fonctionnalité, même si elle est utilisée à d’autres fins, et non dans le cadre d’une action de conformité délibérée.
 
 Votre score de conformité doit être considéré comme une mesure relative pour suivre l’amélioration à grande échelle. Vous ne devriez pas poursuivre un score parfait.
 

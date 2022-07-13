@@ -1,5 +1,5 @@
 ---
-title: Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365
+title: Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -15,24 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
-description: Configurez la protection des informations dans Microsoft 365 pour les réglementations de confidentialité des données telles que le RGPD et la Loi sur la confidentialité des consommateurs de Californie (CCPA), y compris les Microsoft Teams, les SharePoint et les e-mails.
-ms.openlocfilehash: ece8483773d3e2f5cdafe90bd93e11c52e2ba838
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Configurez la protection des informations dans Microsoft 365 pour les réglementations de confidentialité des données telles que le RGPD et le CCPA (California Consumer Privacy Act), notamment Microsoft Teams, SharePoint et le courrier électronique.
+ms.openlocfilehash: bd2e1a580794a59bf2364b3b4a1d1c157e5eab56
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939013"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748888"
 ---
-# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations de confidentialité des données avec Microsoft 365
+# <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
 Votre organisation peut être soumise à des réglementations régionales de confidentialité des données qui vous obligent à protéger, gérer et fournir des droits et un contrôle sur les informations personnelles stockées dans votre infrastructure informatique, y compris localement et dans le cloud. Le meilleur exemple de réglementation de la confidentialité des données est le Règlement général sur la protection des données (RGPD) de l’Union européenne. Le non-respect des réglementations sur la confidentialité des données peut entraîner des amendes substantielles.
 
-Des exemples de types de données dans Microsoft 365 incluent des sessions de conversation dans Microsoft Teams, des e-mails dans Exchange et des fichiers dans SharePoint et OneDrive. Cette solution fournit des conseils sur la façon d’évaluer les risques et de prendre les mesures appropriées pour protéger les données personnelles dans Microsoft 365. Cela inclut l’identification des informations personnelles afin que vous puissiez protéger, régir et répondre aux incidents de confidentialité des données.
+Les sessions de conversation dans Microsoft Teams, les e-mails dans Exchange et les fichiers dans SharePoint et OneDrive sont des exemples de types de données dans Microsoft 365. Cette solution fournit des conseils sur la façon d’évaluer les risques et de prendre les mesures appropriées pour protéger les données personnelles dans Microsoft 365. Cela inclut l’identification des informations personnelles afin que vous puissiez protéger, régir et répondre aux incidents de confidentialité des données.
 
 ![Qu’est-ce que la protection des informations pour les réglementations sur la confidentialité des données?](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-Des informations supplémentaires sont également fournies sur l’utilisation de Microsoft 365 contrôles d’identité, d’appareil et de protection contre les menaces pour vos besoins en matière de confidentialité des données.
+Des informations supplémentaires sont également fournies sur l’utilisation des contrôles d’identité, d’appareil et de protection contre les menaces Microsoft 365 pour vos besoins en matière de confidentialité des données.
 
 Regardez cette vidéo de présentation du processus de déploiement.
 <br>
@@ -53,7 +54,7 @@ Ces fonctionnalités et fonctionnalités Microsoft 365 vous aident à répondre 
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation des conseils dans cette solution
 
-Pour vous aider à comprendre les outils Microsoft 365 disponibles pour vous aider à respecter une ou plusieurs réglementations relatives à la confidentialité, ces conseils sont organisés en sections.
+Pour vous aider à comprendre les outils Microsoft 365 disponibles pour vous aider à respecter une ou plusieurs réglementations liées à la confidentialité, ces conseils sont organisés en sections.
 
 ![Étapes d’implémentation de la protection des informations pour les réglementations de confidentialité des données.](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
@@ -73,7 +74,7 @@ Pour plus d’informations, consultez [Évaluer les risques liés à la confiden
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Suivi : Exécuter des évaluations des risques et vérifier votre score de conformité
 
-Le Gestionnaire de conformité, disponible dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, vous offre une possibilité intégrée de suivre et de gérer les actions d’amélioration globales, ainsi que celles liées à plusieurs réglementations de confidentialité des données qui s’appliquent à vous.
+Le Gestionnaire de conformité, disponible dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, vous offre une capacité intégrée de suivre et de gérer les actions d’amélioration globales, ainsi que celles liées à plusieurs réglementations de confidentialité des données qui s’appliquent à vous.
 
 Vous pouvez utiliser des modèles d’évaluation intégrés spécifiques à chaque règlement, où vous pouvez suivre les éléments d’action pour chaque modèle d’évaluation sélectionné, afficher des contrôles réglementaires spécifiques et les associer à des actions spécifiques.
 
@@ -85,7 +86,7 @@ Microsoft 365 fournit des fonctionnalités d’identité, d’appareil et de pro
 
 Pour plus d’informations, consultez [Utiliser la protection des identités, des appareils et des menaces pour la réglementation de la confidentialité des données](information-protection-deploy-identity-device-threat.md).
 
-Cet article décrit brièvement ce que les réglementations sur la confidentialité des données appellent généralement dans ces domaines et fournit une liste des solutions de Microsoft 365 connexes, avec des liens vers plus d’informations pour vous aider à répondre à toutes les exigences d’implémentation.
+Cet article décrit brièvement ce que les réglementations sur la confidentialité des données appellent généralement dans ces domaines et fournit une liste des solutions Microsoft 365 associées, avec des liens vers plus d’informations pour vous aider à répondre à toutes les exigences d’implémentation.
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
@@ -101,11 +102,11 @@ Les réglementations sur la confidentialité des données appellent des contrôl
 
 Pour plus d’informations, consultez [Régir les informations soumises à la réglementation sur la confidentialité des données dans votre organisation](information-protection-deploy-govern.md).
 
-Bien que les réglementations relatives à la confidentialité des données puissent être vagues en ce qui concerne la gouvernance&mdash; des informations, l’article sur la conservation, la suppression et l’archivage&mdash; de cet article présente les principaux schémas de contrôle que vous pouvez utiliser pour répondre aux besoins de gouvernance des informations pour la confidentialité des données dans votre organisation.
+Bien que les réglementations sur la confidentialité des données puissent être vagues en ce qui concerne la gouvernance&mdash;des informations, telles que la conservation, la suppression et l’archivage&mdash;volontaires, cet article présente les principaux schémas de contrôle que vous pouvez utiliser pour répondre aux besoins de gouvernance des informations pour la confidentialité des données dans votre organisation.
 
 ## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Examiner : surveiller, examiner et répondre aux incidents de confidentialité des données
 
-Il existe Microsoft 365 fonctionnalités disponibles pour vous aider à surveiller, examiner et répondre aux incidents de confidentialité des données au sein de votre organisation lorsque vous mettez en œuvre les fonctionnalités associées.
+Des fonctionnalités Microsoft 365 sont disponibles pour vous aider à surveiller, examiner et répondre aux incidents de confidentialité des données au sein de votre organisation lorsque vous mettez en œuvre les fonctionnalités associées.
 
 Il peut être important de disposer de processus, de procédures et d’autres documents pour l’utilisation de ces fonctionnalités pour démontrer la conformité aux organismes de réglementation.
 
@@ -120,7 +121,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir com
 
 |Formation :|Protéger les informations d’entreprise avec Microsoft 365|
 |:---|:---|
-|![Teams’icône d’entraînement de la protection des informations.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à préparer les certifications Microsoft 365 Certified: Security Administrator Associate et Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 heure - chemin d’accès Learning - 5 modules|
+|![Icône d’entraînement de la protection des informations Teams.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à préparer les certifications Microsoft 365 Certified: Security Administrator Associate et Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 heure - Parcours d'apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
@@ -129,7 +130,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir com
 
 |Formation :|Protégez l’identité et l’accès avec Azure Active Directory Domain Services|
 |:---|:---|
-|![Icône d’entraînement d’identité et d’accès.](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - chemin Learning - 6 modules|
+|![Icône d’entraînement d’identité et d’accès.](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d'apprentissage - 6 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-identity-overview/introduction/)

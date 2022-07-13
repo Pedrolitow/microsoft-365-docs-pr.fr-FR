@@ -17,14 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-overview
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 1f5b512c18c1ca6014881f93714320a6887bd9df
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 40e4e87b7a0d955c41a130ae512913b3a1133688
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923365"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748030"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 

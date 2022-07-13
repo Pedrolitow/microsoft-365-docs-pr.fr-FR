@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717181"
+ms.locfileid: "66750207"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
@@ -40,7 +40,7 @@ Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/s
 
 ## <a name="june-2022"></a>Juin 2022
 
-- De nouvelles recommandations Microsoft Defender pour point de terminaison et Gestion des vulnérabilités Microsoft Defender sont désormais disponibles en tant qu’actions d’amélioration du degré de sécurisation :
+- De nouvelles recommandations Microsoft Defender pour point de terminaison et Gestion des vulnérabilités Microsoft Defender sont désormais disponibles sous forme d’actions d’amélioration du degré de sécurisation :
 
   - Interdire l’accès hors connexion aux partages
   - Supprimer l’autorisation d’écriture de partage définie sur **Tout le monde**

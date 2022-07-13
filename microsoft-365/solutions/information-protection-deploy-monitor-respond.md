@@ -15,20 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: Utilisez les stratégies d’audit et d’alerte et les demandes de personnes concernées pour surveiller et répondre aux incidents de données personnelles.
-ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2a19154b9b0602eded09e6521dc285c00fd56a10
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013263"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748283"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveiller et répondre aux incidents de confidentialité des données dans votre organisation
 
-Microsoft 365 fonctionnalités sont disponibles pour vous aider à surveiller, examiner et répondre aux incidents de confidentialité des données au sein de votre organisation lorsque vous mettez en œuvre les fonctionnalités associées. Il peut également être important de disposer de processus, de procédures et d’autres documents pour chacun d’eux pour démontrer la conformité aux organismes de réglementation.
+Les fonctionnalités de Microsoft 365 sont disponibles pour vous aider à surveiller, examiner et répondre aux incidents de confidentialité des données au sein de votre organisation lorsque vous mettez en œuvre les fonctionnalités associées. Il peut également être important de disposer de processus, de procédures et d’autres documents pour chacun d’eux pour démontrer la conformité aux organismes de réglementation.
 
-Cela inclut ce qui suit : 
+Cela comprend : 
 
 - Stratégies d’audit et d’alerte
 - Demandes d’objet de données (y compris la recherche de contenu et eDiscovery)
@@ -56,7 +57,7 @@ Les réglementations sur la confidentialité des données demandent généraleme
 
 Votre organisation peut également souhaiter effectuer des activités de surveillance et de réponse à d’autres fins, telles que d’autres besoins de conformité ou pour des raisons commerciales. L’établissement de votre système de surveillance et de réponse pour la confidentialité des données doit être effectué dans le cadre de la planification globale de la surveillance et de la réponse, de l’implémentation et de la gestion.
 
-Pour vous aider à prendre en main un schéma de surveillance et de réponse dans Microsoft 365 pour les réglementations sur la confidentialité des données, cet article répertorie des fonctionnalités utiles dans Microsoft 365 pour répondre à des questions telles que : 
+Pour vous aider à prendre en main un schéma de surveillance et de réponse dans Microsoft 365 pour les réglementations sur la confidentialité des données, cet article répertorie les fonctionnalités utiles de Microsoft 365 pour répondre à des questions telles que : 
 
 - Quel type de techniques quotidiennes de surveillance, d’investigation et de création de rapports sont disponibles pour les différents types et sources de données ?
 - Quels mécanismes seront nécessaires pour gérer les demandes de personnes concernées (DSR) et toutes les actions correctives, telles que l’anonymisation, la réaction et la suppression.
@@ -72,7 +73,7 @@ Consultez ces articles pour configurer l’audit, l’audit avancé et les strat
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes de personnes concernées pour le RGPD et le CCPA
 
-Pour plus d’informations sur la réponse à une DSR dans Microsoft 365, consultez [demandes de personnes concernées pour le RGPD et le CCPA](/compliance/regulatory/gdpr-dsr-Office365).
+Pour plus d’informations sur la réponse à une DSR dans Microsoft 365, consultez [demandes de personnes concernées pour le RGPD et le CCPA](/compliance/regulatory/gdpr-dsr-Office365) .
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Gérer les utilisateurs supprimés dans Microsoft Stream
 
@@ -80,4 +81,4 @@ Pour Microsoft Stream, lorsqu’un utilisateur est supprimé d’Azure Active Di
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestion des risques internes en tant qu’outil d’investigation
 
-[La gestion des risques internes](../compliance/insider-risk-management.md) est une fonctionnalité du portail de conformité Microsoft Purview qui vous permet de réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque au sein de votre organisation.
+[La gestion des risques internes](../compliance/insider-risk-management.md) est une fonctionnalité de l’portail de conformité Microsoft Purview pour vous aider à réduire les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque au sein de votre organisation.

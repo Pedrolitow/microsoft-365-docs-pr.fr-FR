@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
-description: Déployez Microsoft 365 fonctionnalités de sécurité et de conformité et protégez vos informations personnelles.
-ms.openlocfilehash: 0876cc1ff51b133e22d13b4c7fbc9a575db32d26
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Déployez les fonctionnalités de sécurité et de conformité de Microsoft 365 et protégez vos informations personnelles.
+ms.openlocfilehash: ca2f500c5a6f09bf051137de2b637feb5a00f391
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943280"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750273"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
@@ -33,12 +34,12 @@ Ces contrôles se trouvent dans les domaines de solution suivants :
 - Étiquettes de confidentialité
 - Protection contre la perte de données Microsoft Purview (DLP)
 - Chiffrement des messages Microsoft Purview
-- Teams et les contrôles d’accès aux sites
+- Contrôles d’accès Teams et sites
 
 ![Services clés pour protéger les informations personnelles soumises à la réglementation sur la confidentialité des données.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
-> Cette solution décrit les fonctionnalités de sécurité et de conformité pour protéger les informations soumises aux réglementations en matière de confidentialité des données. Pour obtenir la liste complète des fonctionnalités de sécurité dans Microsoft 365, consultez [Microsoft 365 documentation sur la sécurité](../security/index.yml). Pour obtenir la liste complète des fonctionnalités de conformité dans Microsoft 365, consultez la [documentation de Microsoft Purview](../compliance/index.yml).
+> Cette solution décrit les fonctionnalités de sécurité et de conformité pour protéger les informations soumises aux réglementations en matière de confidentialité des données. Pour obtenir la liste complète des fonctionnalités de sécurité dans Microsoft 365, consultez la [documentation sur la sécurité de Microsoft 365](../security/index.yml). Pour obtenir la liste complète des fonctionnalités de conformité dans Microsoft 365, consultez [la documentation de Microsoft Purview](../compliance/index.yml).
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Réglementations sur la confidentialité des données qui ont un impact sur les contrôles de protection des informations
 
@@ -58,7 +59,7 @@ Les réglementations sur la confidentialité des données pour la protection des
 - Application basée sur les risques des mécanismes de protection.
 - Utilisation du chiffrement le cas échéant.
 
-Votre organisation peut également vouloir protéger Microsoft 365 contenu à d’autres fins, telles que d’autres besoins de conformité ou pour des raisons commerciales. L’établissement de votre schéma de protection des informations pour la confidentialité des données doit être effectué dans le cadre de la planification, de l’implémentation et de la gestion globales de la protection des informations.
+Votre organisation peut également vouloir protéger le contenu Microsoft 365 à d’autres fins, telles que d’autres besoins de conformité ou pour des raisons professionnelles. L’établissement de votre schéma de protection des informations pour la confidentialité des données doit être effectué dans le cadre de la planification, de l’implémentation et de la gestion globales de la protection des informations.
 
 Pour vous aider à prendre en main un schéma de protection des informations dans Microsoft 365, la section suivante inclut une courte liste des fonctionnalités associées et des actions d’amélioration pour Microsoft 365. La liste inclut des fonctionnalités et des actions d’amélioration qui s’appliquent aux réglementations sur la confidentialité des données. Toutefois, la liste n’inclut pas les technologies plus anciennes s’il existe une fonctionnalité plus récente qui remplace en grande partie l’ancienne. Par exemple, la gestion des droits relatifs à l’information (IRM) pour SharePoint et OneDrive n’est pas incluse dans la liste, mais les étiquettes de confidentialité sont incluses.
 
@@ -77,7 +78,7 @@ Les [solutions de protection des informations](../compliance/information-protect
 
 En outre, la protection au niveau du site et de la bibliothèque est un mécanisme important à inclure dans tout schéma de protection.
 
-Pour plus d’informations sur les autres fonctionnalités de protection des informations en dehors de Microsoft 365, consultez :
+Pour plus d’informations sur d’autres fonctionnalités de protection des informations en dehors de Microsoft 365, consultez :
 
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
@@ -86,7 +87,7 @@ Pour plus d’informations sur les autres fonctionnalités de protection des inf
 
 ## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-Les étiquettes de confidentialité de Microsoft Purview Information Protection vous permettent de classifier et de protéger les données de votre organisation sans entraver la productivité des utilisateurs et leur capacité à collaborer.
+Les étiquettes de confidentialité de Protection des données Microsoft Purview vous permettent de classifier et de protéger les données de votre organisation sans entraver la productivité des utilisateurs et leur capacité à collaborer.
 
 > [!div class="mx-imgBorder"]
 > ![Étiquettes de confidentialité dans Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
@@ -99,7 +100,7 @@ Effectuez ces activités avant d’implémenter l’une des fonctionnalités bas
    - **Besoins de l'entreprise** Établissez les raisons métier de l’application d’étiquettes de confidentialité dans votre entreprise. Par exemple, vos exigences de confidentialité des données pour la protection des informations.
    - **Fonctionnalités d’étiquette de confidentialité.** L’étiquetage de sensibilité peut devenir complexe. Veillez donc à lire la [documentation sur les étiquettes de confidentialité](../compliance/sensitivity-labels.md) avant de commencer.
    - **Éléments clés à retenir** Les étiquettes de confidentialité sont gérées dans le portail de conformité Microsoft Purview, mais les options de ciblage et d’application varient considérablement.
-      - Il existe des étiquettes de confidentialité pour les sites, les groupes et les Teams au niveau du conteneur (les paramètres ne s’appliquent pas au contenu à l’intérieur du conteneur). Elles sont publiées aux utilisateurs et aux groupes qui les appliquent lorsqu’un site, un groupe ou une équipe est approvisionné.
+      - Il existe des étiquettes de confidentialité pour les sites, les groupes et Teams au niveau du conteneur (les paramètres ne s’appliquent pas au contenu à l’intérieur du conteneur). Elles sont publiées aux utilisateurs et aux groupes qui les appliquent lorsqu’un site, un groupe ou une équipe est approvisionné.
       - Il existe des étiquettes de confidentialité pour le contenu actif. Ils sont également publiés sur des utilisateurs ou des groupes, qui les appliquent manuellement ou qui sont appliqués automatiquement quand :
         - Le fichier est ouvert/modifié/enregistré, sur le bureau de l’utilisateur ou sur un site SharePoint.
         - Un e-mail est rédigé et envoyé.
@@ -114,7 +115,7 @@ Effectuez ces activités avant d’implémenter l’une des fonctionnalités bas
 
       Si vous envisagez d’utiliser l’étiquetage de confidentialité moderne pour la protection des e-mails et que des méthodes de chiffrement de messagerie existantes comme OME sont en place, elles peuvent coexister, mais vous devez comprendre les scénarios dans lesquels l’une ou l’autre des méthodes doit être appliquée. Consultez [Office 365 nouvelles fonctionnalités de chiffrement des messages (OME),](#office-365-message-encryption-ome-new-capabilities) qui inclut un tableau comparant la protection moderne des types d’étiquettes de confidentialité à la protection basée sur OME.
 
-3. Planifier l’intégration à un schéma de protection de l’information plus large. En plus de la coexistence avec OME, les étiquettes de confidentialité peuvent être utilisées parallèlement à des fonctionnalités telles que la protection contre la perte de données (DLP) microsoft Purview et Microsoft Defender for Cloud Apps. Consultez [Protéger vos données avec Microsoft Purview](../compliance/information-protection.md) pour atteindre vos objectifs de protection des informations liées à la confidentialité des données.
+3. Planifier l’intégration à un schéma de protection de l’information plus large. En plus de la coexistence avec OME, les étiquettes de confidentialité peuvent être utilisées parallèlement à des fonctionnalités telles que Protection contre la perte de données Microsoft Purview (DLP) et Microsoft Defender for Cloud Apps. Consultez [Protéger vos données avec Microsoft Purview](../compliance/information-protection.md) pour atteindre vos objectifs de protection des informations liées à la confidentialité des données.
 
 4. Développez une classification d’étiquette de confidentialité et un schéma de contrôle. Consultez [classification des données et taxonomie des étiquettes de confidentialité](https://aka.ms/dataclassificationwhitepaper).
 
@@ -134,15 +135,15 @@ Effectuez ces activités avant d’implémenter l’une des fonctionnalités bas
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Créer et déployer des étiquettes de confidentialité pour les sites, les groupes et les équipes
 
-Lorsque vous créez [des étiquettes de confidentialité](../compliance/sensitivity-labels-teams-groups-sites.md) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, vous pouvez désormais les appliquer à ces conteneurs :
+Lorsque vous créez [des étiquettes de confidentialité](../compliance/sensitivity-labels-teams-groups-sites.md) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, vous pouvez désormais les appliquer aux conteneurs suivants :
 
-- sites Microsoft Teams
-- groupes Microsoft 365 (anciennement groupes Office 365)
-- sites SharePoint
+- Sites Microsoft Teams
+- Groupes Microsoft 365 (anciennement groupes Office 365)
+- Sites SharePoint
 
 Utilisez les paramètres d’étiquette suivants pour renforcer la protection du contenu de ces conteneurs :
 
-- Confidentialité (publique ou privée) de Microsoft 365 sites Teams connectés à un groupe
+- Confidentialité (publique ou privée) des sites Teams connectés au groupe Microsoft 365
 - Accès des utilisateurs externes
 - Accès à partir d’appareils enregistrés
 
@@ -150,7 +151,7 @@ Pour la confidentialité des données, afin d’empêcher le partage externe pou
 
 ### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Créer et déployer des étiquettes de confidentialité pour le contenu
 
-Les étiquettes de confidentialité appliquées aux fichiers vous permettent de chiffrer leur contenu, de filigraner le contenu et de définir d’autres contrôles pour Office contenu des applications, notamment Outlook et Office sur le Web.
+Les étiquettes de confidentialité appliquées aux fichiers vous permettent de chiffrer leur contenu, de filigraner le contenu et de définir d’autres contrôles pour le contenu des applications Office, notamment Outlook et Office sur le Web.
 
 Lorsque vous êtes prêt à commencer à protéger les données de votre organisation avec des étiquettes de confidentialité :
 
@@ -158,7 +159,7 @@ Lorsque vous êtes prêt à commencer à protéger les données de votre organis
 2. **Définissez l’incidence possible de chaque étiquette.** Configurez les paramètres de protection que vous voulez associer à chaque étiquette. Par exemple, vous souhaiterez peut-être que le contenu de sensibilité inférieure (par exemple, une étiquette « Général ») ne soit appliqué qu’à un en-tête ou à un pied de page, tandis que le contenu de sensibilité plus élevé (par exemple, une étiquette « Confidentiel ») doit avoir un filigrane et que le chiffrement soit activé.
 3. **Publiez les étiquettes.** Après avoir configuré vos étiquettes de confidentialité, publiez-les à l’aide d’une stratégie d’étiquette. Déterminez les utilisateurs et les groupes devant utiliser les étiquettes ainsi que les paramètres de stratégie à utiliser. Une seule étiquette est réutilisable. Vous le définissez une seule fois, puis vous pouvez l’inclure dans plusieurs stratégies d’étiquette affectées à différents utilisateurs.
 
-Une fois que vous publiez des étiquettes de confidentialité à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, elles commencent à apparaître dans [Office applications](../compliance/sensitivity-labels-office-apps.md) pour que les utilisateurs classifient et protègent le contenu lors de sa création ou de sa modification.
+Une fois que vous publiez des étiquettes de confidentialité à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, elles commencent à apparaître dans les [applications Office](../compliance/sensitivity-labels-office-apps.md) pour que les utilisateurs classent et protègent le contenu lors de sa création ou de sa modification.
 
 ![Flux de déploiement d’étiquettes de confidentialité dans Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -179,9 +180,9 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 
 L’étiquetage automatique prend en charge la recommandation d’une étiquette aux utilisateurs, ainsi que l’application automatique d’une étiquette. Dans les deux cas, l’utilisateur décide d’accepter ou de refuser l’étiquette afin de garantir l’étiquetage correct du contenu.
 
-Cet étiquetage côté client présente un délai minimal pour les documents, car l’étiquette peut être appliquée avant même que le document ne soit enregistré. Cependant, toutes les applications clientes ne prennent pas en charge l’étiquetage automatique. Cette fonctionnalité est prise en charge par le client d’étiquetage unifié Azure Information Protection et [certaines versions d’applications Office](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Cet étiquetage côté client présente un délai minimal pour les documents, car l’étiquette peut être appliquée avant même que le document ne soit enregistré. Cependant, toutes les applications clientes ne prennent pas en charge l’étiquetage automatique. Cette fonctionnalité est prise en charge par le client d’étiquetage unifié Azure Information Protection et [certaines versions des applications Office](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Pour obtenir des instructions de configuration, consultez [Comment configurer l’étiquetage automatique pour Office applications](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Pour obtenir des instructions de configuration, consultez [Comment configurer l’étiquetage automatique pour les applications Office](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Pour la confidentialité des données, vous appliquez automatiquement des étiquettes de confidentialité pour le contenu contenant des informations personnelles sensibles.
 
@@ -197,7 +198,7 @@ Pour la confidentialité des données dans les sites concernés, envoyez (push) 
 
 ## <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-Vous pouvez utiliser [la protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) dans Microsoft 365 pour détecter, avertir et bloquer les partages risqués, involontaires ou inappropriés, tels que le partage de données contenant des informations personnelles, à la fois en interne et en externe.
+Vous pouvez utiliser [la protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) dans Microsoft 365 pour détecter, avertir et bloquer les partages risqués, involontaires ou inappropriés, tels que le partage de données contenant des informations personnelles, en interne et en externe.
 
 DLP vous permet d’effectuer les opérations suivantes :
 
@@ -208,11 +209,11 @@ DLP vous permet d’effectuer les opérations suivantes :
 
 ### <a name="supported-workloads-for-dlp"></a>Charges de travail prises en charge pour DLP
 
-Avec une stratégie DLP dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, vous pouvez identifier, surveiller et protéger automatiquement les éléments sensibles dans de nombreux emplacements de Microsoft 365, tels que Exchange Online, SharePoint, OneDrive et Microsoft Teams.
+Avec une stratégie DLP dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portail de conformité Microsoft Purview</a>, vous pouvez identifier, surveiller et protéger automatiquement les éléments sensibles dans de nombreux emplacements dans Microsoft 365, tels que Exchange Online, SharePoint, OneDrive et Microsoft Teams.
 
 Par exemple, vous pouvez identifier n’importe quel document contenant un numéro de carte de crédit stocké dans n’importe quel site OneDrive, ou vous pouvez surveiller uniquement les sites OneDrive de personnes spécifiques.
 
-Vous pouvez également surveiller et protéger les éléments sensibles dans les versions installées localement de Excel, PowerPoint et Word, qui incluent la possibilité d’identifier les éléments sensibles et d’appliquer des stratégies DLP. DLP assure une surveillance continue lorsque les utilisateurs partagent du contenu à partir de ces applications Office.
+Vous pouvez également surveiller et protéger les éléments sensibles dans les versions installées localement d’Excel, PowerPoint et Word, qui incluent la possibilité d’identifier les éléments sensibles et d’appliquer des stratégies DLP. DLP assure une surveillance continue lorsque les utilisateurs partagent du contenu à partir de ces applications Office.
 
 > [!div class="mx-imgBorder"]
 > ![Charges de travail prises en charge pour DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
@@ -303,7 +304,7 @@ Voici quelques scénarios de protection des données qui utilisent ensemble des 
 
 ## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 nouvelles fonctionnalités de chiffrement des messages (OME)
 
-Les utilisateurs utilisent souvent le courrier électronique pour échanger des éléments sensibles, tels que des informations sur la santé des patients ou des informations sur les clients et les employés. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
+Les utilisateurs utilisent souvent le courrier électronique pour échanger des éléments sensibles, tels que des informations sur la santé des patients ou des informations sur les clients et les employés. Le chiffrement de messages vous permet de vous assurer que seuls les destinataires prévus peuvent afficher le contenu des courriers.
 
 Avec [OME](../compliance/ome.md), vous pouvez envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. OME fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie. OME permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
 
@@ -325,12 +326,12 @@ L’OME et les étiquettes de confidentialité appliquées aux e-mails avec chif
 | Parties externes <br> Communiquer et collaborer en toute sécurité avec les utilisateurs externes/consommateurs | Oui : destinataires prédéfinir dans l’étiquette | Recommander une protection juste-à-temps en fonction des destinataires |
 | Interne + partenaires, avec expiration/révocation <br> Contrôler l’accès à la messagerie et au contenu avec des utilisateurs internes et des partenaires approuvés avec expiration et révocation | Recommandation : protection entièrement personnalisée avec durée d’accès, l’utilisateur peut suivre et révoquer manuellement des fichiers | Non : pas de révocation ou d’expiration pour le courrier interne |
 | Parties externes avec expiration/révocation <br> Contrôler l’accès à la messagerie et au contenu avec les utilisateurs externes/consommateurs avec expiration et révocation | Oui : l’utilisateur peut suivre manuellement les fichiers | Recommandation (E5) : l’administrateur peut révoquer le courrier du Centre de sécurité & conformité |
-| Etiquetage automatique <br> L’organisation souhaite protéger automatiquement les courriers/pièces jointes avec du contenu sensible spécifique et/ou des destinataires spécifiques | Recommandation (E5) : l’étiquetage automatique dans les clients Exchange et Outlook augmente les règles de flux de messagerie et la stratégie DLP | Oui : règles de flux de messagerie et stratégie DLP avec chiffrer uniquement ou ne pas transférer la protection |
+| Etiquetage automatique <br> L’organisation souhaite protéger automatiquement les courriers/pièces jointes avec du contenu sensible spécifique et/ou des destinataires spécifiques | Recommandation (E5) - Étiquetage automatique dans les clients Exchange et Outlook, augmente les règles de flux de messagerie et la stratégie DLP | Oui : règles de flux de messagerie et stratégie DLP avec chiffrer uniquement ou ne pas transférer la protection |
 ||||
 
 Il y aura également des différences entre les expériences de l’utilisateur final et de l’administrateur entre ces deux méthodes.
 
-## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams avec protection pour les données hautement sensibles
+## <a name="teams-with-protection-for-highly-sensitive-data"></a>Équipes avec protection pour les données hautement sensibles
 
 Pour les organisations qui envisagent de stocker des données personnelles soumises aux réglementations de confidentialité des données dans Teams, consultez [Configurer une équipe avec isolation de sécurité](secure-teams-security-isolation.md), qui fournit des instructions détaillées et des étapes de configuration pour :
 

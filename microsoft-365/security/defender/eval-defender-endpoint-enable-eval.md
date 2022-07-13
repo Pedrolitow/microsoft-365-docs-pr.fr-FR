@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2acde87daaff88ec9ce7458218919342a9f1edd8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 0e3cd7a16b45a7dfd78011d7753866069d3144dc
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782498"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748866"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour point de terminaison environnement d’évaluation
 
@@ -47,25 +48,25 @@ Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defende
 
 ## <a name="step-1-check-license-state"></a>Étape 1. Vérifier l’état de la licence
 
-Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle a été correctement approvisionnée. Pour ce faire, vous pouvez utiliser le Centre d’administration ou le **portail Microsoft Azure**.
+Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle a été correctement approvisionnée. Pour ce faire, vous pouvez utiliser le Centre d’administration ou le **Portail Azure Microsoft**.
 
 
-1. Pour afficher vos licences, accédez au **portail Microsoft Azure** et accédez à la section des [licences du portail Microsoft Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Pour afficher vos licences, accédez à **Microsoft Portail Azure** et accédez à la [section licence Microsoft Portail Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Page Licences Azure dans le portail Microsoft 365 Defender" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. Sinon, dans le centre d’administration, accédez à **BillingSubscriptions** > .
+1. Vous pouvez également accéder aux **abonnements** de **facturation** >  dans le Centre d’administration.
 
     À l’écran, vous verrez toutes les licences approvisionnées et leur **état** actuel.
 
-    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Page Licences de facturation dans le portail Microsoft Azure" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Page Licences de facturation dans microsoft Portail Azure" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 2. Intégrer des points de terminaison à l’aide des outils de gestion pris en charge
 
 Après avoir vérifié que l’état de la licence a été correctement approvisionné, vous pouvez commencer à intégrer des appareils au service. 
 
-Dans le but d’évaluer Microsoft Defender pour point de terminaison, nous vous recommandons de choisir quelques appareils Windows sur lesquels effectuer l’évaluation.
+Pour évaluer Microsoft Defender pour point de terminaison, nous vous recommandons de choisir deux appareils Windows sur lesquels effectuer l’évaluation.
 
 Vous pouvez choisir d’utiliser l’un des outils de gestion pris en charge, mais Intune fournit une intégration optimale. Pour plus d’informations, consultez [Configurer Microsoft Defender pour point de terminaison dans Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
@@ -81,8 +82,8 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 Point de terminaison | Options de l’outil
 :---|:---
-**Fenêtres** | [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md), [stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/ Mobile Gestionnaire de périphériques](../defender-endpoint/configure-endpoints-mdm.md), [ Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [intégration à Microsoft Defender pour le cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**MacOS** | [Scripts locaux](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [Pro JAMF](../defender-endpoint/mac-install-with-jamf.md), [mobile Gestion des appareils](../defender-endpoint/mac-install-with-other-mdm.md)
+**Fenêtres** | [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md), [stratégie de groupe](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/Mobile Gestionnaire de périphériques](../defender-endpoint/configure-endpoints-mdm.md), [Configuration Manager de point de terminaison Microsoft](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [intégration à Microsoft Defender pour le cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
+**MacOS** | [Scripts locaux](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Mobile Gestion des appareils](../defender-endpoint/mac-install-with-other-mdm.md)
 **Serveur Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [Basé sur l’application](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)

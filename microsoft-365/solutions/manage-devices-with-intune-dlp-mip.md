@@ -18,15 +18,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
 description: Implémentez le point de terminaison DLP en travaillant avec votre équipe de protection et de gouvernance d’information pour créer des stratégies DLP pour votre organisation.
-ms.openlocfilehash: 3670dd7e204562d2974ae815babe541c608bfacf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d8544a0ddeb0327d50baa87407a152c559afcb74
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943214"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749218"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7. Implémenter la protection contre la perte de données (DLP) avec des fonctionnalités de protection des informations
 
