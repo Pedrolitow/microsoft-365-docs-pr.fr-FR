@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717755"
+ms.locfileid: "66747920"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -44,7 +44,9 @@ Voici quelques exemples :
 > [!TIP]
 > Pour d’autres exemples et une discussion sur les critères que nous utilisons pour étiqueter des applications auxquelles il convient que les fonctionnalités de sécurité accordent une attention particulière, voir [Comment Microsoft identifie les programmes malveillants et les applications potentiellement indésirables](/windows/security/threat-protection/intelligence/criteria).
 
-Les applications potentiellement indésirables peuvent augmenter le risque que votre réseau soit infecté par un vrai programme malveillant, rendre les infections de programme malveillant plus difficiles à détecter ou gaspiller des ressources informatiques pour les nettoyer. La protection PUA est prise en charge sur Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 et Windows Server 2016. Dans Windows 10 (version 2004 et ultérieure), l’Antivirus Microsoft Defender bloque les applications considérées par défaut comme applications potentiellement indésirables pour les appareils Entreprise (E5).
+Les applications potentiellement indésirables peuvent augmenter le risque que votre réseau soit infecté par un vrai programme malveillant, rendre les infections de programme malveillant plus difficiles à détecter ou coûter du temps et des efforts à vos équipes informatiques et de sécurité pour les nettoyer. La protection PUA est prise en charge sur Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 et Windows Server 2016. Si l’abonnement de votre organisation inclut [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md), l’Antivirus Microsoft Defender bloque les applications considérées comme PUA par défaut sur les appareils Windows. 
+
+[Découvrez plus en détails les services de Windows Entreprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise).
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -76,7 +78,7 @@ Bien que Microsoft Defender pour point de terminaison ait sa propre liste de blo
 La fonctionnalité de protection contre les applications potentiellement indésirables (PUA) dans l’Antivirus Microsoft Defender peut détecter et bloquer les applications potentiellement indésirables (PUA) sur les points de terminaison dans votre réseau.
 
 > [!NOTE]
-> Cette fonctionnalité est disponible dans Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 et Windows Server 2016.
+> Cette fonctionnalité est disponible dans Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 et Windows Server 2016.
 
 L’Antivirus Microsoft Defender bloque les fichiers détectés d’applications potentiellement indésirables (PUA) et toutes les tentatives pour les télécharger, déplacer, exécuter ou installer. Les fichiers d’applications potentiellement indésirables (PUA) sont ensuite déplacés vers la mise en quarantaine. Lorsqu’un fichier d’applications potentiellement indésirables (PUA) est détecté sur un point de terminaison, l’Antivirus Microsoft Defender envoie une notification à l’utilisateur ([sauf si les notifications sont désactivées](configure-notifications-microsoft-defender-antivirus.md)) dans le même format que les autres détections de menaces. La notification est précédée par `PUA:` pour indiquer son contenu.
 
@@ -86,9 +88,7 @@ La notification s’affiche dans [la liste de quarantaine dans l’application S
 
 Vous pouvez activer la protection contre les applications potentiellement indésirables (PUA) avec [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [la stratégie de groupe](/azure/active-directory-domain-services/manage-group-policy) ou via les [cmdlets PowerShell](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
-Vous pouvez également utiliser la protection contre les applications potentiellement indésirables (PUA) dans le mode audit pour détecter les applications potentiellement indésirables (PUA) sans les bloquer. Les détections sont capturées dans le journal des événements Windows.
-
-La protection contre les applications potentiellement indésirables (PUA) dans le mode audit est utile si votre entreprise effectue une vérification de la conformité en matière de sécurité d’un logiciel interne et vous voulez éviter tout faux positif.
+Vous pouvez également utiliser la protection contre les applications potentiellement indésirables (PUA) dans le mode audit pour détecter les applications potentiellement indésirables (PUA) sans les bloquer. Les détections sont capturées dans le journal des événements Windows. La protection contre les applications potentiellement indésirables (PUA) dans le mode audit est utile si votre entreprise effectue une vérification de la conformité en matière de sécurité d’un logiciel interne et vous voulez éviter tout faux positif.
 
 ### <a name="use-intune-to-configure-pua-protection"></a>Utiliser Intune pour configurer la protection contre les applications potentiellement indésirables (PUA)
 

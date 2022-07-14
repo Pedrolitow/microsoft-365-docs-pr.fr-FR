@@ -2,7 +2,7 @@
 
 ## [Vue d’ensemble]()
 ### [Qu’est-ce que Microsoft Defender pour point de terminaison ?](microsoft-defender-endpoint.md)
-### [Playbook d’évaluation : tirez le meilleur parti de votre version d’évaluation](defender-endpoint-trial-playbook.md)
+### [Playbook d’évaluation : tirez le meilleur parti de votre version d’évaluation](defender-endpoint-trial-playbook.md).
 ### [Comparer les plans de Défenseur pour points de terminaison](defender-endpoint-plan-1-2.md)
 ### [Configuration minimale requise](minimum-requirements.md)
 ### [Qu’est-ce qui est nouveau dans Microsoft Defender pour point de terminaison ?](whats-new-in-microsoft-defender-endpoint.md)
@@ -262,6 +262,12 @@
 ##### [Évaluer l’accès contrôlé aux dossiers](evaluate-controlled-folder-access.md)
 ##### [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md)
 ##### [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
+#### [Contrôle des appareils]()
+##### [Protection de stockage amovible](device-control-removable-storage-protection.md)
+##### [Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)
+##### [Installation d’appareil](mde-device-control-device-installation.md)
+##### [Protection de l’Imprimante de Contrôle d’Appareil](printer-protection.md)
+##### [Rapports sur le contrôle des périphériques](device-control-report.md)
 #### [Exploit Protection]()
 ##### [Protéger les appareils contre les codes malveillants exploitant une faille de sécurité](exploit-protection.md)
 ##### [Évaluer la protection contre les codes malveillants exploitant une faille de sécurité](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [Protéger votre réseau](network-protection.md)
 ##### [Évaluer la protection du réseau](evaluate-network-protection.md)
 ##### [Activer la protection du réseau](enable-network-protection.md)
+#### [Protection web]()
+##### [Vue d’ensemble de la protection web](web-protection-overview.md)
+##### [Protection contre les menaces web]()
+###### [Vue d’ensemble de la protection contre les menaces web](web-threat-protection.md)
+###### [Surveiller la sécurité web](web-protection-monitoring.md)
+###### [Répondre aux menaces web](web-protection-response.md)
+##### [Filtrage du contenu web](web-content-filtering.md)
+
 
 ### Protection de nouvelle génération
 #### [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
@@ -353,21 +367,6 @@
 ##### [Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Protection web]()
-##### [Vue d’ensemble de la protection web](web-protection-overview.md)
-##### [Protection contre les menaces web]()
-###### [Vue d’ensemble de la protection contre les menaces web](web-threat-protection.md)
-###### [Surveiller la sécurité web](web-protection-monitoring.md)
-###### [Répondre aux menaces web](web-protection-response.md)
-##### [Filtrage du contenu web](web-content-filtering.md)
-
-#### [Contrôle des appareils]()
-##### [Protection de stockage amovible](device-control-removable-storage-protection.md)
-##### [Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)
-##### [Installation d’appareil](mde-device-control-device-installation.md)
-##### [Protection de l’Imprimante de Contrôle d’Appareil](printer-protection.md)
-##### [Rapports sur le contrôle des périphériques](device-control-report.md)
-
 #### [Blocage et confinement comportementaux]()
 ##### [Blocage et confinement comportementaux](behavioral-blocking-containment.md)
 ##### [Blocage comportemental du client](client-behavioral-blocking.md)
@@ -379,9 +378,6 @@
 
 #### [Augmenter la conformité dans la base de référence de sécurité](configure-machines-security-baseline.md)
 #### [Optimiser les détections et le déploiement de la règle de réduction de la surface d'attaque](configure-machines-asr.md)
-
-## [Conseils sur les menaces actives et les campagnes]()
-### [Gérer la vulnérabilité Log4Shell](tvm-manage-log4shell-guidance.md)
 
 ## [Examiner et répondre aux menaces]()
 ### [Détection et réponse du point de terminaison]()

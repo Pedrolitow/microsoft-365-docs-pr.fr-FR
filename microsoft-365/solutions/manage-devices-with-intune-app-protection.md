@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e421a62d3b1fa60df7a64a5b9a94e6e46b0a139f
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: 829d650b6d815a84203e43e7256442bfee6bac0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651508"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749284"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Étape 1. Implémenter des stratégies de protection des applications
 
@@ -61,4 +62,4 @@ Pour configurer ces stratégies, utilisez les instructions et les paramètres re
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Passez à [l’étape 2. Inscrire des appareils à Intune](manage-devices-with-intune-enroll.md). 
+Acédez à [Étape 2. Inscrivez des appareils dans la gestion avec Intune](manage-devices-with-intune-enroll.md). 

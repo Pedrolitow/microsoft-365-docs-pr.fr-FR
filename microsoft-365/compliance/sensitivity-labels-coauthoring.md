@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: e82249f3d42eb71345bb998d16a6c2a24e11130c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628636"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749196"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -74,10 +74,10 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
 - Les étiquettes de confidentialité [doivent être activées pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) pour le client. Si cette fonctionnalité n’est pas déjà activée, elle sera automatiquement activée lorsque vous sélectionnerez le paramètre pour activer la co-édition pour les fichiers avec des étiquettes de niveau de confidentialité.
 
 - Microsoft 365 Apps for enterprise :
-    - **Windows** : Version minimale 2107 du canal actuel ou du canal Enterprise mensuel, ou version minimale 2202 à partir du canal Entreprise semi-annuel (préversion)
+    - **Windows** : Version minimale 2107 du canal actuel ou du canal Enterprise mensuel, ou version minimale 2202 à partir du canal Entreprise semi-annuel (préversion)
     - **macOS** : version minimale 16.51
-    - **iOS**: désormais en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 2.58
-    - **Android**: désormais en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 16.0.14931
+    - **iOS** : en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 2.58.
+    - **Android** : en préversion lorsque vous [choisissez](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) la version minimale 16.0.14931.
 
 - Tous les outils opérationnels, applications et services de votre client doivent prendre en charge la nouvelle [métadonnée d’étiquetage](#metadata-changes-for-sensitivity-labels). Si vous utilisez l’une des versions suivantes, vérifiez les versions minimales requises :
     
