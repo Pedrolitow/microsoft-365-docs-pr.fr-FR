@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c8847915fdf9ed587fea410670f5b37194dfa8ae
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663809"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787119"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -47,15 +47,15 @@ Les cartes de débit, de crédit et les informations bancaires sont acceptées p
 - Vous devez être un administrateur global ou de facturation pour effectuer les étapes décrites dans cet article. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
 - Le mode de paiement choisi à la validation de l’achat est le mode qui sera utilisé pour toutes les périodes de facturation futures. Vous pouvez le modifier à tout moment.
 
-## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Nouvelles réglementations de la Reserve Bank of India
+## <a name="directives-from-the-reserve-bank-of-india"></a>Directives de la Banque de réserve de l'Inde
 
-Depuis le 1er octobre 2021, les paiements automatiques en Inde peuvent bloquer certaines transactions par carte de crédit, en particulier les transactions dépassant 5 000 INR. En raison de cette réglementation, vous devrez peut-être effectuer des paiements manuellement dans le Centre d’administration Microsoft 365. Ces réglementations n’affecteront pas le montant total facturé pour votre utilisation.
+Actuellement, certaines transactions par carte de crédit, notamment celles qui dépassent 5 000 INR, sont bloquées en raison d'une directive de la Banque de réserve de l'Inde. Cela pourrait affecter les paiements automatiques, ce qui signifie que vous pourriez devoir effectuer des paiements manuellement dans le centre d'administration de Microsoft 365. Cette directive n’affecte pas les frais d’utilisation. 
 
-[En savoir plus sur la réglementation de la Reserve Bank of India concernant les paiements récurrents](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+[En savoir plus sur la réglementation de la Banque de réserve de l'Inde concernant les paiements récurrents](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-Le 30 septembre 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Pour se conformer à ce règlement, Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter un mode de paiement et effectuer un paiement unique pour tous les abonnements et profils de facturation.
+À compter du 30 septembre 2022, Microsoft et d’autres marchands en ligne ne stockeront plus les informations de carte de crédit. Microsoft supprimera tous les détails de la carte stockée du Centre d’administration Microsoft 365. Pour éviter une interruption de service, vous devez ajouter et vérifier un mode de paiement pour tous les abonnements et profils de facturation.
 
-[En savoir plus sur la réglementation de réserve de la Banque d’Inde pour le stockage par carte](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+[Découvrez la directive Banque de réserve de l'Inde pour le stockage de cartes](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Payer par carte de crédit, carte de débit, ou compte bancaire
 

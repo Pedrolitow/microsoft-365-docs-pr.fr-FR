@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 720b2828ab1e27ccebdd12ceeef0479b64a9bafa
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530491"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747882"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -71,7 +71,7 @@ Azure AD connexion directe B2B est désactivée par défaut. Pour permettre la c
 Dans le cadre de cette configuration, nous activons l’application **Office 365**, qui inclut Teams et les services intégrés à Teams tels que SharePoint.
 
 > [!NOTE]
-> Les modifications des paramètres d'accès inter-clients peuvent prendre jusqu'à trois heures quinze minutes pour prendre effet.
+> Les modifications apportées aux paramètres d’accès entre tenants (clients/locataires) peuvent prendre jusqu'à six heures pour prendre effet.
 
 > [!NOTE]
 > Les canaux partagés entre les clouds commerciaux et les cloud de la communauté du secteur public ne sont pas pris en charge.
@@ -82,7 +82,7 @@ Ajoutez chaque organisation avec laquelle vous souhaitez participer à des canau
 
 Pour ajouter une organisation
 1. Connectez-vous à [Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte Administrateur général ou Administrateur de la sécurité.
-1. Sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (prévisualisation).**
+1. Sélectionnez **Identities externes**, puis sélectionnez **Paramètres d’accès inter-clients**.
 1. Sélectionnez **Paramètres de l’organisation**.
 1. Sélectionnez **Ajouter une organisation**.
 1. Dans le volet **Ajouter une organisation**, tapez le nom de domaine complet (ou l’ID de locataire) de l’organisation, puis appuyez sur Entrée.
@@ -94,7 +94,7 @@ Pour ajouter une organisation
 Suivez cette procédure pour chaque organisation dans laquelle vous souhaitez inviter des participants externes.
 
 Pour configurer les paramètres entrants d’une organisation
-1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (préversion)**.
+1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités Externes**, puis **Paramètres d’accès inter-clients**.
 1. Sélectionnez le lien d’accès entrant pour l’organisation que vous souhaitez modifier.
 1. Sous l’onglet **Connexion directe B2B**, choisissez **Personnaliser les paramètres**.
 1. Sous l’onglet **Utilisateurs et groupes externes** , choisissez **Autoriser l’accès** et **Tous les utilisateurs et groupes**. (Vous pouvez choisir **Sélectionner des utilisateurs et des groupes externes** si vous souhaitez limiter l’accès à des utilisateurs et groupes spécifiques, tels que ceux qui ont signé un accord de confidentialité.)
@@ -108,7 +108,7 @@ Pour configurer les paramètres entrants d’une organisation
 Suivez cette procédure pour chaque organisation dans laquelle vous souhaitez que vos utilisateurs puissent participer à des canaux partagés externes.
 
 Pour configurer les paramètres sortants d’une organisation
-1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (préversion)**.
+1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités Externes**, puis **Paramètres d’accès inter-clients**.
 1. Sélectionnez le lien d’accès sortant pour l’organisation que vous souhaitez modifier.
 1. Sous l’onglet **Connexion directe B2B**, choisissez **Personnaliser les paramètres**.
 1. Sous l’onglet **Utilisateurs et groupes externes**, choisissez **Autoriser l’accès** et définissez **S’applique à** pour tous les utilisateurs.

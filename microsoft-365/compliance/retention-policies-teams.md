@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 6935f82830aa8a6700d4088ee4954cf11f67adef
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 08385988da41d633d864a28637f9667887e6269e
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714681"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787097"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -102,7 +102,7 @@ Pour les deux voies du diagramme :
 
 Lorsque la période de rétention expire et qu'un message est déplacé vers le dossier SubstrateHolds, une opération de suppression est communiquée au service de conversation backend Azure, qui relaie ensuite la même opération à l'application cliente Teams. Les retards dans cette communication ou la mise en cache peuvent expliquer pourquoi, pendant une courte période, les utilisateurs continuent de voir ces messages dans leur application Teams.
 
-Dans ce scénario où le service de conversation Azure reçoit une commande de suppression en raison d’une stratégie de rétention, le message correspondant dans l’application cliente Teams est supprimé pour tous les utilisateurs de la conversation. Certains de ces utilisateurs peuvent être issus d’une autre organisation, avoir une stratégie de rétention avec une période de rétention plus longue ou aucune stratégie de rétention qui leur est affectée. Pour ces utilisateurs, les copies des messages sont toujours stockées dans leurs boîtes aux lettres et restent utilisables dans une recherche de découverte électronique jusqu’à ce que les messages soient définitivement supprimés par une autre stratégie de rétention.
+Dans ce scénario où le service de conversation Azure reçoit une commande de suppression en raison d’une stratégie de rétention, le message correspondant dans l’application cliente Teams est supprimé pour tous les utilisateurs de la conversation. Parfois, ce [comportement peut sembler inattendu](/microsoftteams/troubleshoot/teams-im-presence/messages-unexpectedly-deleted-retention-policy), car certains de ces utilisateurs peuvent provenir d’une autre organisation, avoir une stratégie de rétention avec une période de rétention plus longue ou aucune stratégie de rétention ne leur est affectée. Pour ces utilisateurs, les copies des messages sont toujours stockées dans leurs boîtes aux lettres et restent utilisables dans une recherche de découverte électronique jusqu’à ce que les messages soient définitivement supprimés par une autre stratégie de rétention.
 
 > [!IMPORTANT]
 > Les messages visibles dans l’application Teams ne reflètent pas exactement s’ils sont conservés ou définitivement supprimés pour des raisons de conformité.
