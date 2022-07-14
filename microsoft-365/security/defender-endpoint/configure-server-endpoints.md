@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695862"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795419"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -158,7 +158,7 @@ Pour plus d’informations, consultez [Intégration à Microsoft Defender pour l
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 et Windows Server 2016
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 #### <a name="prerequisites-for-windows-server-2012-r2"></a>Prérequis pour Windows Server 2012 R2
 
@@ -298,11 +298,10 @@ Vous pouvez utiliser le [script du programme d’installation](server-migration.
     ```
 
     > [!NOTE]
-    > Si vous devez résoudre les problèmes d’installation de l’agent, ajoutez « -etl -log » aux paramètres de script install.ps1.
-    >
+
     > Le paramètre de stratégie d’exécution recommandé est `Allsigned`. Cela nécessite l’importation du certificat de signature du script dans le magasin serveurs de publication approuvés de l’ordinateur local si le script s’exécute en tant que système sur le point de terminaison.
 
-    Remplacez \\servername-or-dfs-space\share-name par le chemin UNC, en utilisant le nom de domaine complet (FQDN) du fichier *install.ps1* partagé. Le package d’installation md4ws.msi doit être placé dans le même répertoire.  Vérifiez également que les autorisations du chemin UNC autorisent l’accès en lecture au compte d’ordinateur qui installe la plateforme.
+    Remplacez \\servername-or-dfs-space\share-name par le chemin UNC, en utilisant le nom de domaine complet (FQDN) du fichier *install.ps1* partagé. Le package d’installation md4ws.msi doit être placé dans le même répertoire.  Assurez-vous que les autorisations du chemin UNC autorisent l’accès en écriture au compte d’ordinateur qui installe le package, pour prendre en charge la création de fichiers journaux. Si vous souhaitez désactiver la création de fichiers journaux (non recommandé), vous pouvez utiliser les paramètres -noETL -noETW.
 
     Pour les scénarios dans lesquels vous souhaitez que l’antivirus Microsoft Defender coexiste avec des solutions anti-programme malveillant non Microsoft, ajoutez le paramètre $Passive pour définir le mode passif pendant l’installation.
 
@@ -377,7 +376,7 @@ Après l’intégration de l’appareil, vous pouvez choisir d’exécuter un te
 
 Suivez les étapes décrites dans [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md) pour vérifier que le serveur fait rapport à Defender pour le service point de terminaison.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 

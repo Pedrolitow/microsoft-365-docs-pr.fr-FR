@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771993"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795375"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparer les fonctionnalités de sécurité dans les plans Microsoft 365 pour les petites et moyennes entreprises
 
@@ -48,7 +48,7 @@ Defender entreprise est également disponible en tant qu’abonnement autonome e
 |protection Email|Oui <br/>[analyse Email avec l’antivirus Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Oui <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[analyse Email avec l’antivirus Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |Protection anti-courrier indésirable|Oui<br/>Pour les appareils|Oui <ul><li>Pour les appareils</li><li>Pour le contenu des e-mails Microsoft 365, tels que les messages et les pièces jointes</li></ul>|
 |Protection anti-programme malveillant|Oui<br/>Pour les appareils|Oui<ul><li>Pour les appareils</li><li>Pour le contenu des e-mails Microsoft 365, tels que les messages et les pièces jointes</li></ul>|
-|[Protection de nouvelle génération](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protection antivirus et anti-programme malveillant)|Oui<br/>L’antivirus Microsoft Defender est inclus dans Windows 10 et versions ultérieures|Oui <ul><li>L’antivirus Microsoft Defender est inclus dans Windows 10 et versions ultérieures</li><li>Stratégies de protection de nouvelle génération pour les appareils intégrés</li></ul>|
+|[Protection de nouvelle génération](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protection antivirus et anti-programme malveillant pour les appareils intégrés)|Oui |Oui |
 |[Réduction de la surface d’attaque](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Règles ASR dans Windows 10 ou version ultérieure et protection pare-feu)|Oui|Oui|
 |[Détection et réponse du point de terminaison](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(détection basée sur le comportement et actions de réponse manuelles)|Oui|Oui|
 |[Examen et réponse automatisés](../defender-endpoint/automated-investigations.md)|Oui|Oui|
@@ -94,7 +94,7 @@ Defender entreprise apporte les fonctionnalités de niveau entreprise de Defende
 
 (<a id="fn7">7</a>) La possibilité d’afficher les incidents entre locataires à l’aide de Defender pour point de terminaison est une nouveauté !
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Consultez la configuration requise pour Microsoft Defender pour entreprises](mdb-requirements.md)
 - [Obtenir Microsoft Defender pour entreprises](get-defender-business.md)

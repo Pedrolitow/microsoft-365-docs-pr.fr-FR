@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les compléments d’hameçonnage de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636effd1f3d9f0fd824ead4ed59e48fdee26ef20
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f1d51499558780f1b20fa5f6955e7c4a7c2ff5e8
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685698"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795441"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 
@@ -31,10 +31,10 @@ ms.locfileid: "66685698"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser la soumission d’administrateur pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
+> Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser la page **Soumissions** dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Utiliser Administration Soumission pour envoyer des courriers indésirables, des hameçonnages, des URL et des fichiers suspects à Microsoft](admin-submission.md).
 
 Les compléments Report Message et Report Phishing pour Outlook et Outlook sur le web (anciennement Outlook Web App) facilitent le signalement de faux positifs (e-mail marqué comme incorrect) ou de faux négatifs (e-mail incorrect autorisé) à Microsoft et à ses affiliés pour analyse.
 
@@ -205,3 +205,24 @@ Une fois le complément installé et activé, les icônes suivantes s’affichen
     > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Menu volant d’hameçonnage de rapport." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. Pour supprimer le complément, **sélectionnez Supprimer l’application** sous **Actions** dans le même menu volant.
+
+## <a name="get-the-report-message-or-the-report-phishing-add-ins-for-the-gcc-and-gcch-users"></a>Obtenir le message de rapport ou les compléments d’hameçonnage de rapport pour les utilisateurs GCC et GCCH
+
+Si vous êtes administrateur de Government Community Cloud High (GCCH) ou de Cloud de la communauté du gouvernement (GCC), procédez comme suit pour obtenir le message de rapport ou les compléments d’hameçonnage de rapport pour votre organisation. Notez que si vous êtes un utilisateur individuel, vous ne pouvez pas obtenir le complément à l’aide de Microsoft AppSource.
+
+> [!NOTE]
+> L’apparition du complément dans votre organisation peut prendre jusqu’à 24 heures. 
+
+1. Dans le Centre d'administration Microsoft 365, accédez aux **compléments Paramètres**\>, puis sélectionnez **Déployer un complément**. 
+
+2. Le menu volant **Déployer un nouveau complément** s’ouvre. Cliquez sur **Suivant**, puis **sélectionnez Charger des applications personnalisées**.  
+
+3. Sélectionnez **J’ai une URL pour le fichier manifeste**. Utilisez les URL suivantes pour obtenir le [message de rapport](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) et les compléments [d’hameçonnage](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) de rapport. 
+
+4. Choisissez les utilisateurs qui auront accès au complément, sélectionnez une méthode de déploiement, puis sélectionnez **Déployer**. 
+
+5. Pour configurer entièrement les paramètres, consultez les [paramètres de message signalés par l’utilisateur](user-submission.md). 
+
+## <a name="use-the-report-message-or-the-report-phishing-add-ins"></a>Utiliser le message de rapport ou les compléments d’hameçonnage de rapport
+
+Vous pouvez utiliser le message de rapport ou les compléments d’hameçonnage de rapport pour envoyer des faux positifs (bon e-mail bloqué ou envoyé au dossier indésirable) et des faux négatifs (courrier indésirable ou hameçonnage qui a été remis à la boîte de réception) dans Outlook. Pour plus d’informations, consultez [Signaler les faux positifs et les faux négatifs dans Outlook](report-false-positives-and-false-negatives.md).

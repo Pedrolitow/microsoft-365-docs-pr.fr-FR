@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 07/11/2022
+ms.date: 07/14/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,47 +17,60 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d90e39028f563c7b3913f6fd0dbf97222d1068d2
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: d41c228ceeae0dcd373f98c6dcd89bf88b0feacd
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720432"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795397"
 ---
-# <a name="compare-microsoft-defender-for-endpoint-plans"></a>Comparer Microsoft Defender pour point de terminaison plans
+# <a name="compare-microsoft-endpoint-security-plans"></a>Comparer les plans de sécurité des points de terminaison Microsoft
 
-Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Defender pour point de terminaison fournit une protection avancée contre les menaces qui inclut l’antivirus, les logiciels anti-programme malveillant, l’atténuation des ransomwares et bien plus encore, ainsi que la gestion centralisée et la création de rapports. Vous pouvez choisir parmi les options suivantes pour Microsoft Defender pour point de terminaison :
+Les plans de sécurité des points de terminaison Microsoft, tels que Microsoft Defender pour point de terminaison et Microsoft 365 Defender, ont été conçus pour aider les organisations d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Microsoft Defender pour entreprises et Microsoft 365 Business Premium offrent des fonctionnalités similaires, optimisées pour les petites et moyennes entreprises. Ces plans fournissent une protection avancée contre les menaces avec la protection antivirus et anti-programme malveillant, l’atténuation des ransomwares, et bien plus encore, ainsi que la gestion centralisée et la création de rapports. 
+
+Cet article vous aide à clarifier ce qui est inclus dans les plans suivants : 
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour les PME](../defender-business/mdb-overview.md)
+- [Microsoft 365 Business Premium](../../business-premium/index.md)
 
-Vous pouvez utiliser cet article pour clarifier la protection fournie par les différentes fonctionnalités disponibles dans Defender pour point de terminaison Plan 1, Defender pour point de terminaison Plan 2, le nouveau module complémentaire Gestion des vulnérabilités Defender et Microsoft 365 Defender.
+> [!IMPORTANT]
+> Cet article fournit un résumé des fonctionnalités de protection contre les menaces dans les plans de sécurité des points de terminaison Microsoft ; toutefois, il ne s’agit pas d’une description de service ou d’un document de contrat de licence. Pour plus d’informations, consultez les [instructions relatives aux licences Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="compare-defender-for-endpoint-plans"></a>Comparer les plans Defender pour point de terminaison
+## <a name="compare-microsoft-endpoint-security-plans"></a>Comparer les plans de sécurité des points de terminaison Microsoft
 
-Le tableau suivant récapitule ce qui est inclus dans chaque plan Defender pour point de terminaison.
+Le tableau suivant récapitule ce qui est inclus dans les plans de sécurité des points de terminaison Microsoft.
 
 | Planification | Inclus |
 |:---|:---|
-| [Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md) | <ul><li>[Protection de nouvelle génération](defender-endpoint-plan-1.md#next-generation-protection) (inclut le logiciel anti-programme malveillant et l’antivirus)</li><li>[Réduction de la surface d’attaque](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Actions de réponse manuelle](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Gestion centralisée](defender-endpoint-plan-1.md#centralized-management)</li><li>[Rapports de sécurité](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Prise en charge des appareils Windows 10, iOS, Android os et macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
-| [Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md) | Toutes les fonctionnalités de Defender pour point de terminaison Plan 1, ainsi que :<ul><li>[Découverte d’appareils](device-discovery.md)</li><li>[Inventaire des appareils](machines-view-overview.md)</li><li>[Fonctionnalités de gestion des vulnérabilités Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Analyse des menaces](threat-analytics.md)</li><li>[Examen et réponse automatisés](automated-investigations.md)</li><li>[Repérage avancé](advanced-hunting-overview.md)</li><li>[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)</li><li>[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
-| [Module complémentaire Gestion des vulnérabilités Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Fonctionnalités de gestion des vulnérabilités Defender supplémentaires pour Defender pour le plan de point de terminaison 2 :<ul><li>[Évaluation des bases de référence de sécurité](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquer les applications vulnérables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensions de navigateur](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Évaluation des certificats numériques](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Analyse du partage réseau](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
 | [Microsoft 365 Defender](../defender/microsoft-365-defender.md) | Les services sont les suivants : <ul><li>[Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md)</li><li>[Gestion des vulnérabilités Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md)</li><li>[Microsoft Defender pour Office 365](../office-365-security/overview.md)</li><li>[Microsoft Defender pour l’identité](/defender-for-identity/)</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/)</li></ul>|
+| [Defender pour point de terminaison Plan 1](defender-endpoint-plan-1.md) <sup>[[1](#fn1)]</sup> | <ul><li>[Protection de nouvelle génération](defender-endpoint-plan-1.md#next-generation-protection) (inclut le logiciel anti-programme malveillant et l’antivirus)</li><li>[Réduction de la surface d’attaque](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [Actions de réponse manuelle](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Gestion centralisée](defender-endpoint-plan-1.md#centralized-management)</li><li>[Rapports de sécurité](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Prise en charge des appareils Windows 10, iOS, Android os et macOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
+| [Defender pour point de terminaison Plan 2](microsoft-defender-endpoint.md) <sup>[[2](#fn2)]</sup> | Toutes les fonctionnalités de Defender pour point de terminaison Plan 1, ainsi que :<ul><li>[Découverte d’appareils](device-discovery.md)</li><li>[Inventaire des appareils](machines-view-overview.md)</li><li>[Fonctionnalités de gestion des vulnérabilités Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Analyse des menaces](threat-analytics.md)</li><li>[Examen et réponse automatisés](automated-investigations.md)</li><li>[Repérage avancé](advanced-hunting-overview.md)</li><li>[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)</li><li>[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
+| [Module complémentaire Gestion des vulnérabilités Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Fonctionnalités de gestion des vulnérabilités Defender supplémentaires pour Defender pour le plan de point de terminaison 2 :<ul><li>[Évaluation des bases de référence de sécurité](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Bloquer les applications vulnérables](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Extensions de navigateur](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Évaluation des certificats numériques](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Analyse du partage réseau](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>Prise en charge des [plateformes Windows](configure-endpoints.md) (client et serveur) et [non Windows](configure-endpoints-non-windows.md) (macOS, iOS, Android et Linux)</li></ul> |
+| [Defender pour Entreprises](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup> <br/>et<br/>[Microsoft 365 Business Premium](../../business-premium/index.md) | [Les services optimisés pour les petites et moyennes entreprises](../defender-business/compare-mdb-m365-plans.md) sont les suivants : <ul><li>protection Email</li><li>Protection anti-courrier indésirable</li><li>Protection anti-programme malveillant</li><li>Protection de nouvelle génération</li><li>Réduction de la surface d'attaque</li><li>Détection et réponse du point de terminaison</li><li>Enquêtes et réponses automatisées </li><li>Gestion des menaces et des vulnérabilités</li><li>Rapports centralisés</li><li>API (pour l’intégration avec des applications personnalisées ou des solutions de création de rapports)</li><li>[Intégration à Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
-> [!IMPORTANT]
-> Les versions autonomes de Defender pour point de terminaison Plan 1 et Plan 2 n’incluent pas de licences serveur. Pour intégrer des serveurs, tels que des points de terminaison exécutant Windows Server ou Linux, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus. Consultez [vue d’ensemble de Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
+(<a id="fn1">1</a>) Microsoft Defender pour point de terminaison plan 1 est disponible en tant qu’abonnement autonome pour les clients commerciaux et éducatifs. Il est également inclus dans Microsoft 365 E3/A3.
 
-Microsoft Defender pour point de terminaison plan 1 est disponible en tant que licence d’abonnement utilisateur autonome pour les clients commerciaux et éducatifs. Il est également inclus dans Microsoft 365 E3/A3.
-
-Microsoft Defender pour point de terminaison Plan 2, précédemment appelé Microsoft Defender pour point de terminaison, est disponible sous forme de licence autonome et dans le cadre des plans suivants :
+(<a id="fn2">2</a>) Microsoft Defender pour point de terminaison plan 2, précédemment appelé Microsoft Defender pour point de terminaison, est disponible en tant qu’abonnement autonome. Il est également inclus dans les plans suivants :
 
 - Windows 11 Entreprise E5/A5
 - Windows 10 Entreprise E5/A5
 - Microsoft 365 E5/A5/G5 (qui inclut Windows 10 ou Windows 11 Entreprise E5)
 - sécurité Microsoft 365 E5/A5/G5/F5
 - Conformité & de sécurité Microsoft 365 F5
+
+(<a id="fn3">3</a>) Microsoft Defender pour entreprises est disponible en tant qu’abonnement autonome pour les petites et moyennes entreprises. Il est également inclus dans le cadre de Microsoft 365 Business Premium. Ces plans offrent des fonctionnalités de sécurité avancées avec une configuration et une configuration simplifiées.
+
+## <a name="options-for-onboarding-servers"></a>Options d’intégration des serveurs
+
+Les versions autonomes de Defender entreprise, Defender pour point de terminaison Plan 1 et 2 et Microsoft 365 Business Premium n’incluent pas de licences serveur. Pour intégrer des serveurs, choisissez parmi les options suivantes :
+
+- **Defender pour serveurs plan 1 ou Plan 2** dans le cadre de l’offre [Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus. Consultez [vue d’ensemble de Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
+
+- **Microsoft Defender pour entreprises serveurs (préversion)** pour les petites et moyennes entreprises. Découvrez [comment obtenir Microsoft Defender pour entreprises serveurs (préversion).](../defender-business/get-defender-business-servers.md)
 
 ## <a name="mixed-licensing-scenarios"></a>Scénarios de licence mixte
 

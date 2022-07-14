@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 3b11cd3fa74d822baf0d4662fea43e53c6e5ef3e
-  ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+  ms.openlocfilehash: 405f96858ece26d624ad53db5a49b27bf538dbe4
+  ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66772191"
+  ms.lasthandoff: 07/14/2022
+  ms.locfileid: "66795353"
 title: Microsoft Defender pour entreprises - Forum aux questions et réponses
 summary: >
   Utilisez cet article pour obtenir des réponses aux questions que vous pourriez avoir sur Defender entreprise.
@@ -49,10 +49,12 @@ sections:
   - question: Combien d’appareils puis-je intégrer et sécuriser avec Defender Entreprise ?
     answer: >
       Vous pouvez intégrer et sécuriser jusqu’à cinq appareils clients par licence utilisateur.
-  - question: Defender pour Entreprise prend-il en charge les serveurs ?
-    answer: "La prise en charge du serveur est maintenant en préversion ! Découvrez [comment obtenir Microsoft Defender pour entreprises serveurs (préversion).](get-defender-business-servers.md)  \n"
   - question: Defender entreprise protège-t-il les appareils clients Mac, Android et iOS/iPadOS ?
     answer: "Oui. Defender entreprise prend en charge la protection pour les appareils Mac, Android et iOS/iPadOS. Voir [Appareils intégrés](mdb-onboard-devices.md).\n\n- Vous pouvez intégrer des appareils Mac à l’aide d’un script local dans le portail Microsoft 365 Defender. \n- Pour intégrer des appareils Android et iOS/iPadOS, vous devez disposer d’une licence pour [Microsoft Intune](/mem/intune/). Intune est inclus dans Microsoft 365 Business Premium et peut être acheté pour Defender entreprise (autonome).\n\nUne simplification accrue pour les appareils Mac, iOS/iPadOS et Android figure dans la feuille de route. \n"
+  - question: Defender pour Entreprise prend-il en charge les serveurs ?
+    answer: "La prise en charge du serveur est maintenant en préversion ! Découvrez [comment obtenir Microsoft Defender pour entreprises serveurs (préversion).](get-defender-business-servers.md)  \n\nLorsque la licence de serveurs Microsoft Defender pour entreprises devient en disponibilité générale (GA), elle est proposée en tant que module complémentaire à Microsoft 365 Business Premium et à la version autonome de Defender for Business. En disponibilité générale, Microsoft Defender pour entreprises serveurs sont facturés à 3 $ par instance de serveur. À ce stade, vous pouvez acheter une licence pour chaque serveur intégré, ou choisir de déconnecter les serveurs de Defender entreprise.\n"
+  - question: Quelle est la différence entre les serveurs Microsoft Defender pour entreprises et Microsoft Defender pour serveurs Plan 1 et Plan 2 ?
+    answer: "Les serveurs Defender entreprise sont un module complémentaire de Defender entreprise et Microsoft 365 Business Premium uniquement. Il offre une expérience de sécurité de point de terminaison unique pour les clients et les serveurs dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) pour les entreprises comptant jusqu’à 300 employés. Avec un processus de configuration simplifié et des options d’intégration des appareils, Defender entreprise permet aux clients qui n’ont pas nécessairement d’arrière-plan de sécurité de configurer, configurer et utiliser Defender pour serveurs ou Defender pour le cloud pour protéger les appareils de l’entreprise. \n\nDefender pour serveurs Plan 1/Plan 2 est une offre axée sur l’entreprise qui peut être achetée avec n’importe quel autre plan cloud Microsoft. Les plans 1 et 2 de Defender pour serveurs font partie de [Microsoft Defender pour le cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). La chasse avancée aux menaces avec six mois de conservation des données et le service Spécialistes des menaces Microsoft sont disponibles avec Defender pour serveurs Plan 1 ou Plan 2.\n\nDefender pour cloud est une plateforme CSPM (Cloud Security Posture Management) et cloud de protection des charges de travail (CWPP) pour toutes vos ressources Azure, locales et multiclouds (Amazon AWS et Google GCP). L’expérience d’administrateur de Defender pour cloud réside dans le Portail Azure ([https://portal.azure.com](https://portal.azure.com)).\n"
   - question: Puis-je configurer plusieurs stratégies de filtrage de contenu web dans Defender entreprise ?
     answer: "Actuellement, Defender entreprise ne prend en charge qu’une seule stratégie de filtrage web uniforme par locataire Defender entreprise. \n\nConsultez [Configurer le filtrage de contenu web](mdb-configure-security-settings.md#set-up-web-content-filtering).\n"
   - question: Puis-je utiliser des logiciels antivirus/anti-programme malveillant non Microsoft avec Defender entreprise ?
