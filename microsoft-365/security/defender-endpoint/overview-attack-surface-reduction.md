@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: bbed1512f5d51860f8f24ea29c2b0f73cbe7d9eb
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748998"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787185"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -63,11 +63,11 @@ Pour configurer la réduction de la surface d’attaque dans votre environnement
 
 4. [Activez l’accès contrôlé aux dossiers](enable-controlled-folders.md).
 
-5. [Protection de stockage amovible](device-control-removable-storage-protection.md)
+5. Activer [la protection du stockage amovible](device-control-removable-storage-protection.md)
 
 6. [Activez la protection réseau](enable-network-protection.md).
 
-7. Vue [d’ensemble de l’activation de la protection web](web-protection-overview.md)
+7. Activer [la protection web](web-protection-overview.md)
 
 8. [Activez la protection contre les attaques](enable-exploit-protection.md).
 
@@ -92,6 +92,7 @@ Dans le cadre de l’équipe de sécurité de votre organisation, vous pouvez co
 - Exploit Protection
 - Protection réseau
 - Accès contrôlé aux dossiers
+- Contrôle des appareils
 
 Le mode Audit vous permet de voir un enregistrement de ce qui *se serait* passé si vous aviez activé la fonctionnalité.
 
@@ -112,9 +113,7 @@ Vous pouvez activer le mode audit à l’aide de stratégie de groupe, PowerShel
 | L’audit s’applique à tous les événements | [Activer la protection réseau](enable-network-protection.md) | [Événements de protection réseau](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | L’audit s’applique aux atténuations individuelles | [Activer la protection la protection contre les codes malveillants exploitant une faille de sécurité](enable-exploit-protection.md) | [Exploiter les événements de protection](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-### <a name="attack-surface-reduction-asr-rules"></a>Règles de réduction de la surface d’attaque (ASR)
-
-Les règles de réduction de la surface d’attaque (ASR) sont prédéfinies pour renforcer les surfaces d’attaque courantes et connues. Il existe plusieurs méthodes que vous pouvez utiliser pour implémenter des règles de réduction de la surface d’attaque. La méthode recommandée est documentée dans les rubriques de déploiement des règles de réduction de la surface d’attaque (ASR) suivantes :
+Par exemple, vous pouvez tester les règles de réduction de la surface d’attaque en mode audit avant de les activer (mode bloc). Les règles de réduction de la surface d’attaque (ASR) sont prédéfinies pour renforcer les surfaces d’attaque courantes et connues. Il existe plusieurs méthodes que vous pouvez utiliser pour implémenter des règles de réduction de la surface d’attaque. La méthode recommandée est documentée dans les rubriques de déploiement des règles de réduction de la surface d’attaque (ASR) suivantes :
 
 - [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
 - [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)
@@ -294,16 +293,13 @@ Comme mentionné dans la vidéo, Defender pour point de terminaison inclut plusi
 
 | Article | Description |
 |:---|:---|
-| [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et conservez l’intégrité d’un système au démarrage et pendant son exécution. Validez l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation des conteneurs pour Microsoft Edge afin de vous protéger contre les sites web malveillants. |
 | [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilisez le contrôle d’application pour que vos applications puissent gagner en confiance pour s’exécuter. |
-| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite l’antivirus Microsoft Defender). |
-| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite l’antivirus Microsoft Defender). |
-| [Exploit Protection](exploit-protection.md) | Protégez les systèmes d’exploitation et les applications utilisés par votre organisation contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
-| [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les supports utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |
-| [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement des règles de réduction de la surface d’attaque, suivis de conseils pas à pas pour le test, l’activation et la surveillance. |
-| [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Répertorie les étapes recommandées pour le déploiement des règles de réduction de la surface d’attaque. |
-| [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md) | Fournit des étapes pour utiliser le mode audit pour tester les règles de réduction de la surface d’attaque. |
-| [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Affiche les étapes de transition des règles de réduction de la surface d’attaque du mode test (audit) au mode actif et activé (bloquer). |
-| [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Fournit des informations sur les activités quotidiennes d’examen et de maintenance. |
 | [Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md) | Fournit des détails sur chaque règle de réduction de la surface d’attaque. |
-| [Règles de réduction de la surface d’attaque](attack-surface-reduction.md) | Réduisez les vulnérabilités (surfaces d’attaque) de vos applications grâce à des règles intelligentes qui permettent d’arrêter le programme malveillant. (Nécessite l’antivirus Microsoft Defender). |
+| [Guide de déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md) | Présente les informations de vue d’ensemble et les prérequis pour le déploiement des règles de réduction de la surface d’attaque, suivis de conseils pas à pas pour le test (mode audit), l’activation (mode bloc) et la surveillance. |
+| [Accès contrôlé aux dossiers](controlled-folders.md) | Empêchez les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système de clés (nécessite l’antivirus Microsoft Defender). |
+| [Contrôle des appareils](device-control-report.md) | Protège contre la perte de données en surveillant et en contrôlant les supports utilisés sur les appareils, tels que le stockage amovible et les lecteurs USB, dans votre organisation. |
+| [Exploit Protection](exploit-protection.md) | Protégez les systèmes d’exploitation et les applications utilisés par votre organisation contre l’exploitation. Exploit Protection fonctionne également avec des solutions antivirus tierces. |
+| [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et conservez l’intégrité d’un système au démarrage et pendant son exécution. Validez l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation des conteneurs pour Microsoft Edge afin de vous protéger contre les sites web malveillants. |
+| [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite l’antivirus Microsoft Defender). |
+| [Tester des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-test.md) | Fournit des étapes pour utiliser le mode audit pour tester les règles de réduction de la surface d’attaque. |
+| [Protection web](web-protection-overview.md) | La protection web vous permet de sécuriser vos appareils contre les menaces web et vous aide à réglementer le contenu indésirable. |

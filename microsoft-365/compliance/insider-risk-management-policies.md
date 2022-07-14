@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 22682a801123d4f8c24cbc11e2d0e35d42228bba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627280"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787867"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -340,7 +340,7 @@ Finalisez les étapes suivantes pour gérer une stratégie existante :
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez gérer.
 3. Sur la page détaillée de la stratégie, sélectionnez **Modifier une stratégie**.
 4. Dans l’Assistant Stratégie, vous ne pouvez pas modifier les éléments suivants :
-    - **Modèle de stratégie** : le modèle utilisé pour définir le type des indicateurs de risque contrôlés par la stratégie.
+    - **Modèle de** stratégie : modèle utilisé pour définir les types d’indicateurs de risque détectés par la stratégie.
     - **Nom** : nom convivial de la stratégie
 5. Sur la page **Nom et description**, mettez à jour la description de la stratégie dans le champ **Description**.
 6. Sélectionnez **Suivant** pour continuer.

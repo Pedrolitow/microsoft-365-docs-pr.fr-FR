@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622830"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787207"
 ---
 # <a name="learn-about-insider-risk-management"></a>En savoir plus sur la gestion des risques internes Microsoft
 
@@ -89,7 +89,7 @@ L’identification et la résolution des activités à risque internes et des pr
 
 ### <a name="policies"></a>Stratégies
 
-[Les stratégies de gestion des risques internes](insider-risk-management-policies.md) sont créées à l’aide de modèles et de conditions de stratégie prédéfinis qui définissent les événements déclencheurs et les indicateurs de risque examinés dans votre organisation. Ces conditions incluent la façon dont les indicateurs de risque sont utilisés pour les alertes, les utilisateurs inclus dans la stratégie, les services prioritaires et la période de surveillance.
+[Les stratégies de gestion des risques internes](insider-risk-management-policies.md) sont créées à l’aide de modèles et de conditions de stratégie prédéfinis qui définissent les événements déclencheurs et les indicateurs de risque examinés dans votre organisation. Ces conditions incluent la façon dont les indicateurs de risque sont utilisés pour les alertes, les utilisateurs inclus dans la stratégie, les services prioritaires et la période de détection.
 
 Vous pouvez choisir parmi les modèles de stratégie suivants pour prendre rapidement en main la gestion des risques internes :
 

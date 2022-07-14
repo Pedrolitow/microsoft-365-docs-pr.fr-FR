@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Windows 365 (PC cloud).
-ms.openlocfilehash: b96660f2666d7edce383a1d2e222e23d9b17a5b3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dded3bc455a66a77ae325f1d6a54660a88846c1e
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017463"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787229"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse  
   
@@ -33,7 +33,7 @@ Pour plus d’informations sur Windows 365, voir [Qu’est-ce que Windows 365 ?]
 > [!IMPORTANT]
 > Vous devez accéder à [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) pour provisionner des PC cloud pour chaque locataire client avant de pouvoir les gérer dans Lighthouse. Vous ne pouvez pas approvisionner à partir de Lighthouse.
 
-Une fois que vous avez approvisionné des PC cloud pour votre locataire client, la carte Windows 365 de la page d’accueil Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’être actionnés, comme le nombre de PC cloud qui n’ont pas pu être approvisionnés et les échecs de connexion réseau Azure. Pour obtenir un état détaillé, sélectionnez le bouton de la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC cloud affectés à vos locataires clients, afficher la liste de tous les PC cloud que vous gérez et les locataires auxquels ils sont affectés, et afficher les connexions réseau Azure entre vos locataires clients et Azure Active Directory (Azure AD) et leur état.
+Une fois que vous avez approvisionné des PC cloud pour votre locataire client, la carte Windows 365 sur la page d’accueil de Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’être actionnés, comme le nombre de PC cloud qui n’ont pas pu être approvisionnés et les échecs de connexion réseau Azure. Pour obtenir un état détaillé, sélectionnez le bouton de la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC cloud affectés à vos locataires clients, afficher la liste de tous les PC cloud que vous gérez et les locataires auxquels ils sont affectés, et afficher les connexions réseau Azure entre vos locataires clients et Azure Active Directory (Azure AD) et leur état.
 
 ## <a name="overview-tab"></a>Onglet Overview
 
@@ -46,7 +46,7 @@ Pour obtenir des informations d’état détaillées pour un client particulier,
 L’onglet Vue d’ensemble comprend également les options suivantes :
 
 - **Actualiser:** Sélectionnez cette option pour récupérer les données de PC cloud les plus actuelles.
-- **Exportation:** Sélectionnez cette option pour exporter des données de PC cloud vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Exportation:** Sélectionnez cette option pour exporter des données de PC cloud vers un fichier de valeurs séparées par des virgules Excel (.csv).
 - **Rechercher:** Entrez des mots clés pour localiser rapidement un PC cloud spécifique dans la liste.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Capture d’écran de l’onglet Vue d’ensemble Windows 365." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
@@ -62,7 +62,7 @@ Vous pouvez afficher tous les PC cloud et leur état d’approvisionnement dans 
 - **Nom de l’appareil :** Intune nom de l’appareil , un identificateur unique pour un PC cloud.
 - **Locataire:** Client dans lequel un PC cloud a été approvisionné.
 - **Statut:** État d’approvisionnement du PC cloud.
-- **Type de licence :** Enterprise ou Entreprise.
+- **Type de licence :** Entreprise ou Entreprise.
 - **Spécifications:** Configuration matérielle du PC cloud.
 
 Pour voir quels locataires ont des PC cloud avec un état d’approvisionnement spécifique, sélectionnez cet état dans la barre count-annotation pour filtrer la liste. Pour afficher les états d’approvisionnement de PC cloud pour un ou plusieurs locataires clients spécifiques, utilisez le menu déroulant **Locataires** pour filtrer la liste.
@@ -71,10 +71,11 @@ Sélectionnez n’importe quel PC cloud dans la liste pour afficher plus de dét
 - **Redémarrer:** Sélectionnez cette option pour redémarrer l’appareil. 
 - **Reprovisionnement :** Sélectionnez cette option pour réinitialiser l’appareil. Vous pouvez également afficher la stratégie d’approvisionnement dans le lien Microsoft Endpoint Manager.
 - **Renommer:** Sélectionnez cette option pour renommer l’appareil affecté à un utilisateur.
+- **Modifier le type de compte :** Sélectionnez le type de compte pour l’utilisateur : Utilisateur standard (recommandé) ou Administrateur local.
 
 L’onglet Tous les PC cloud inclut également les options suivantes :
 
-- **Exportation:** Sélectionnez cette option pour exporter des données de PC cloud vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Exportation:** Sélectionnez cette option pour exporter des données de PC cloud vers un fichier de valeurs séparées par des virgules Excel (.csv).
 - **Actualiser:** Sélectionnez cette option pour récupérer les données de PC cloud les plus actuelles.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement un PC cloud spécifique dans la liste.
 
@@ -94,7 +95,7 @@ Si vous devez prendre des mesures ou résoudre les problèmes d’une connexion 
 
 L’onglet Connexions réseau Azure inclut également les options suivantes :
 
-- **Exportation:** Sélectionnez cette option pour exporter les données de connexion vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Exportation:** Sélectionnez cette option pour exporter les données de connexion vers un fichier de valeurs séparées par des virgules Excel (.csv).
 - **Actualiser:** Sélectionnez cette option pour récupérer les données de connexion les plus actuelles.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement une connexion spécifique.
 

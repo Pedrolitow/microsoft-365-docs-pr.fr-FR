@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8030a842f36f30fdc267a81e4736abdf8f4328f5
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: c641a8699f59454bcc756cb0910f18a125d953e6
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685896"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787669"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -159,11 +159,11 @@ Utilisez le graphique suivant pour vous aider à configurer des groupes dans vot
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie <br> Groupes Microsoft 365 avec appartenance dynamique |
 | Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbriqués <br> Groupes de sécurité à extension messagerie |
 
-Lorsque vous affectez un *groupe de distribution* dans la stratégie, la stratégie surveille tous les e-mails et conversations Teams de chaque utilisateur du *groupe de distribution*. Lorsque vous affectez un *groupe Microsoft 365* dans la stratégie, la stratégie détecte tous les e-mails et conversations Teams envoyés au *groupe Microsoft 365** et non les e-mails et conversations individuels reçus par chaque membre du groupe. L’utilisation de groupes de distribution dans les stratégies de conformité des communications est recommandée afin que les e-mails individuels et les conversations Teams de chaque utilisateur soient automatiquement surveillés.
+Lorsque vous affectez un *groupe de distribution* dans la stratégie, la stratégie détecte tous les e-mails et conversations Teams de chaque utilisateur du *groupe de distribution*. Lorsque vous affectez un *groupe Microsoft 365* dans la stratégie, la stratégie détecte tous les e-mails et conversations Teams envoyés au *groupe Microsoft 365** et non les e-mails et conversations individuels reçus par chaque membre du groupe. L’utilisation de groupes de distribution dans les stratégies de conformité des communications est recommandée afin que les e-mails individuels et les conversations Teams de chaque utilisateur soient détectés automatiquement.
 
-Si vous êtes une organisation avec un déploiement Exchange local ou un fournisseur de messagerie externe et que vous souhaitez détecter les conversations Microsoft Teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Plus loin dans ces étapes, vous allez affecter ce groupe de distribution comme **sélection d’utilisateurs et de groupes supervisés** dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation du stockage cloud et de la prise en charge teams pour les utilisateurs locaux, consultez [Rechercher des données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+Si vous êtes une organisation avec un déploiement exchange local ou un fournisseur de messagerie externe et que vous souhaitez détecter les conversations Microsoft Teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes. Plus loin dans ces étapes, vous allez affecter ce groupe de distribution comme **sélection d’utilisateurs et de groupes supervisés** dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation du stockage cloud et de la prise en charge teams pour les utilisateurs locaux, consultez [Rechercher des données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-Pour gérer les utilisateurs supervisés dans les grandes organisations d’entreprise, vous devrez peut-être surveiller tous les utilisateurs dans les grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de conformité de communication globale pour le groupe affecté. Cela vous permet de surveiller des milliers d’utilisateurs avec une stratégie unique et de mettre à jour la stratégie de conformité des communications à mesure que de nouveaux employés rejoignent votre organisation.
+Pour gérer les utilisateurs supervisés dans les grandes entreprises, vous devrez peut-être détecter les messages de tous les utilisateurs dans les grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de conformité de communication globale pour le groupe affecté. Cela vous permet de détecter les messages de milliers d’utilisateurs avec une stratégie unique et de mettre à jour la stratégie de conformité des communications à mesure que de nouveaux employés rejoignent votre organisation.
 
 1. Créez un [groupe de distribution](/powershell/module/exchange/new-distributiongroup) dédié pour votre stratégie globale de conformité des communications avec les propriétés suivantes : assurez-vous que ce groupe de distribution n’est pas utilisé à d’autres fins ou à d’autres services Office 365.
 
@@ -226,7 +226,7 @@ Pour plus d’informations sur la configuration de Yammer en mode natif, consult
 
     - Confirmez ou mettez à jour le nom de la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
 
-    - Choisissez les utilisateurs ou groupes à superviser, notamment les utilisateurs ou les groupes que vous souhaitez exclure. Lorsque vous utilisez le modèle de conflit d’intérêts, vous sélectionnez deux groupes ou deux utilisateurs à surveiller pour les communications internes.
+    - Choisissez les utilisateurs ou groupes à superviser, notamment les utilisateurs ou les groupes que vous souhaitez exclure. Lorsque vous utilisez le modèle de conflit d’intérêts, vous sélectionnez deux groupes ou deux utilisateurs pour détecter les communications internes.
 
     - Choisissez les réviseurs de la stratégie. Les réviseurs sont des utilisateurs individuels et tous les réviseurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online. Les réviseurs ajoutés ici sont les réviseurs parmi lesquels vous pouvez choisir lors de l’escalade d’une alerte dans le flux de travail d’investigation et de correction. Lorsque les réviseurs sont ajoutés à une stratégie, ils reçoivent automatiquement un e-mail qui les avertit de l’attribution à la stratégie et fournit des liens vers des informations sur le processus de révision.
 
@@ -310,7 +310,7 @@ Vous pouvez également choisir d’activer l’anonymisation pour les noms d’u
 
 ## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Étape 8 (facultatif) : Tester votre stratégie de conformité des communications
 
-Une fois que vous avez créé une stratégie de conformité des communications, il est judicieux de la tester pour vous assurer que les conditions que vous avez définies sont correctement appliquées par la stratégie. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP) Microsoft Purview](/microsoft-365/compliance/create-test-tune-dlp-policy) si vos stratégies de conformité des communications incluent des types d’informations sensibles. Veillez à laisser à vos stratégies le temps de s’activer afin que les communications que vous souhaitez tester soient capturées.
+Une fois que vous avez créé une stratégie de conformité des communications, il est judicieux de la tester pour vous assurer que les conditions que vous avez définies sont correctement appliquées par la stratégie. Vous pouvez également [tester vos stratégies Protection contre la perte de données Microsoft Purview (DLP)](/microsoft-365/compliance/create-test-tune-dlp-policy) si vos stratégies de conformité des communications incluent des types d’informations sensibles. Veillez à laisser à vos stratégies le temps de s’activer afin que les communications que vous souhaitez tester soient capturées.
 
 Procédez comme suit pour tester votre stratégie de conformité des communications :
 
@@ -319,13 +319,13 @@ Procédez comme suit pour tester votre stratégie de conformité des communicati
 2. Envoyez un e-mail, une conversation Microsoft Teams ou un message Yammer qui répond aux critères que vous avez définis dans la stratégie de conformité des communications. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Veillez à déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop souples.
 
     > [!NOTE]
-    > Le traitement complet des messages électroniques dans une stratégie peut prendre environ 24 heures. Le traitement complet des communications dans Microsoft Teams, Yammer et des plateformes tierces peut prendre environ 48 heures dans une stratégie.
+    > Email messages peuvent prendre environ 24 heures pour être entièrement traités dans une stratégie. Le traitement complet des communications dans Microsoft Teams, Yammer et des plateformes tierces peut prendre environ 48 heures dans une stratégie.
 
 3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité des communications. Accédez aux **alertes** de **conformité** >  des communications pour afficher les alertes de vos stratégies.
 
 4. Corrigez l’alerte à l’aide des contrôles de correction et vérifiez que l’alerte est correctement résolue.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez effectué ces étapes pour créer votre première stratégie de conformité des communications, vous commencerez à recevoir des alertes à partir d’indicateurs d’activité après 24 à 48 heures. Configurez des stratégies supplémentaires en fonction des besoins en suivant les instructions de l’étape 5 de cet article.
 

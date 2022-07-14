@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 247999954e6ff69fdfbd2ff681bb79c0bf22c8bc
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 2413cee978fa2fe66a2672e307e8cad12a7b803b
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686116"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787032"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>Utiliser la conformité des communications avec les solutions SIEM
 
 [La conformité des communications](/microsoft-365/compliance/communication-compliance) est une solution à risque interne dans Microsoft Purview qui permet de réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les solutions SIEM (Security Information and Event Management) telles que [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
 
-Un besoin courant pour les organisations consiste à intégrer les alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message offensant à un autre employé et ce message est détecté par une surveillance de stratégie de conformité des communications pour le contenu inapproprié. Ces événements sont suivis dans l’audit Microsoft 365 (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM pour l’organisation à partir d’événements surveillés dans l’audit Microsoft 365 associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis ils examinent et corrigent l’alerte dans la solution de conformité des communications.
+Un besoin courant pour les organisations consiste à intégrer les alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message offensant à un autre employé et ce message est détecté par une stratégie de conformité des communications pour le contenu inapproprié. Ces événements sont suivis dans l’audit Microsoft 365 (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM pour l’organisation à partir d’événements inclus dans l’audit Microsoft 365 associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis ils examinent et corrigent l’alerte dans la solution de conformité des communications.
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertes de conformité des communications dans l’audit Microsoft 365
 

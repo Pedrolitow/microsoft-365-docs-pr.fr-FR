@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d2f2eb77dd143f82ced98f8fce424cc729e26df7
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632264"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787801"
 ---
 # <a name="get-started-with-information-barriers"></a>Démarrer avec le cloisonnement de l’information
 
@@ -403,7 +403,8 @@ Les modes IB suivants sont pris en charge sur les ressources Microsoft 365 :
 | **Ouvert** | Aucune stratégie ou segment IB n’est associé à la ressource Microsoft 365. N’importe qui peut être invité à être membre de la ressource. | Un site d’équipe créé pour l’événement de pique-nique pour votre organisation. |
 | **Owner Moderated (préversion)** | La stratégie IB de la ressource Microsoft 365 est déterminée à partir de la stratégie IB du propriétaire de la ressource. Les propriétaires de ressources peuvent inviter n’importe quel utilisateur à la ressource en fonction de leurs stratégies IB. Ce mode est utile lorsque votre entreprise souhaite autoriser la collaboration entre les utilisateurs de segment incompatibles qui sont modérés par le propriétaire. Seul le propriétaire de la ressource peut ajouter de nouveaux membres en fonction de sa stratégie IB. | Le vice-président des ressources humaines souhaite collaborer avec les VPs of Sales and Research. Nouveau site SharePoint qui est défini avec le mode IB *Owner Moderated* pour ajouter les utilisateurs des segments Ventes et Recherche au même site. Il incombe au propriétaire de s’assurer que les membres appropriés sont ajoutés à la ressource. |
 | **Implicite** | La stratégie ib ou les segments de la ressource Microsoft 365 sont hérités de la stratégie IB des membres de la ressource. Le propriétaire peut ajouter des membres tant qu’ils sont compatibles avec les membres existants de la ressource. Ce mode est le mode IB par défaut pour Microsoft Teams. | L’utilisateur du segment Ventes crée une équipe Microsoft Teams pour collaborer avec d’autres segments compatibles de l’organisation. |
-| **Explicit** | La stratégie IB de la ressource Microsoft 365 correspond aux segments associés à la ressource. Le propriétaire de la ressource ou l’administrateur SharePoint peut gérer les segments de la ressource.  | Un site créé uniquement pour permettre aux membres du segment Ventes de collaborer en associant le segment Ventes au site.   |
+| **Explicit** | La stratégie IB de la ressource Microsoft 365 correspond aux segments associés à la ressource. Le propriétaire de la ressource ou l’administrateur SharePoint peut gérer les segments de la ressource. | Un site créé uniquement pour permettre aux membres du segment Ventes de collaborer en associant le segment Ventes au site. |
+| **Mixte (préversion)** | Applicable uniquement à OneDrive. La stratégie IB de OneDrive correspond aux segments associés à OneDrive. Le propriétaire de la ressource ou l’administrateur OneDrive peut gérer les segments de la ressource. | Un OneDrive créé pour permettre aux membres du segment Ventes de collaborer est autorisé à être partagé avec des utilisateurs non agrégés. |
 
 Pour plus d’informations sur les modes IB et la façon dont ils sont configurés entre les services, consultez les articles suivants :
 
@@ -419,8 +420,8 @@ Pour voir comment une organisation peut aborder la définition de segments et de
 
 Contoso compte cinq départements : *RH*, *Sales*, *Marketing*, *Research* et *Manufacturing*. Pour rester conformes aux réglementations du secteur, les utilisateurs de certains services ne sont pas censés communiquer avec d’autres services, comme indiqué dans le tableau suivant :
 
-| Segment | Peut communiquer avec | Impossible de communiquer avec |
-|:----------|:--------------|:-----------------|
+| **Segment** | **Peut communiquer avec** | **Impossible de communiquer avec** |
+|:------------|:-------------------------|:---------------------------|
 | HR | Tout le monde | (aucune restriction) |
 | Ventes | RH, Marketing, Fabrication | Recherche |
 | Marketing | Tout le monde | (aucune restriction) |

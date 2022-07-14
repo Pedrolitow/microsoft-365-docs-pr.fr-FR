@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 21897bcfc21cac7e6eb2ceeff3e20280595c539b
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: ccf46df1ecbe2fb2e55e461cc27a5b7af088e7b9
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686460"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787449"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Détecter les signaux des canaux à l’aide de la conformité des communications
 
@@ -32,7 +32,7 @@ Avec les stratégies de conformité des communications, vous pouvez choisir d’
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Les communications de conversation dans les canaux Microsoft Teams publics et privés et les conversations individuelles peuvent être analysées. Lorsque les utilisateurs sont affectés à une stratégie de conformité des communications avec la couverture Microsoft Teams sélectionnée, les communications de conversation pour les utilisateurs sont automatiquement surveillées dans toutes les équipes Microsoft où les utilisateurs sont membres. La couverture Microsoft Teams est automatiquement incluse pour les modèles de stratégie prédéfinis et est sélectionnée par défaut dans le modèle de stratégie personnalisé. Le traitement des conversations Teams correspondant aux conditions de stratégie de conformité des communications peut prendre jusqu’à 48 heures.
+Les communications de conversation dans les canaux Microsoft Teams publics et privés et les conversations individuelles peuvent être analysées. Lorsque les utilisateurs sont affectés à une stratégie de conformité des communications avec la couverture Microsoft Teams sélectionnée, les communications de conversation pour les utilisateurs sont automatiquement détectées dans toutes les Équipes Microsoft où les utilisateurs sont membres. La couverture Microsoft Teams est automatiquement incluse pour les modèles de stratégie prédéfinis et est sélectionnée par défaut dans le modèle de stratégie personnalisé. Le traitement des conversations Teams correspondant aux conditions de stratégie de conformité des communications peut prendre jusqu’à 48 heures.
 
 Pour les conversations privées et les canaux privés, les stratégies de conformité des communications prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels) et l’analyse moderne des pièces jointes. La prise en charge des canaux partagés dans Teams est gérée automatiquement et ne nécessite pas de modifications supplémentaires de la configuration de conformité des communications. Le tableau suivant récapitule le comportement de conformité des communications lors du partage de canaux Teams avec des groupes et des utilisateurs :
 
@@ -59,7 +59,7 @@ Utilisez les configurations de gestion de groupe suivantes pour superviser les c
 
 - **Pour les communications de conversation Teams :** Affectez des utilisateurs individuels ou attribuez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
 - **Pour les communications de canal Teams :** Affectez chaque canal Microsoft Teams ou groupe Microsoft 365 que vous souhaitez analyser qui contient un utilisateur spécifique à la stratégie de conformité des communications. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft Teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications. Si un membre du canal est un utilisateur supervisé au sein d’une stratégie et que la direction *entrante* est configurée dans une stratégie, tous les messages envoyés dans le canal sont sujets à révision et les correspondances de stratégie potentielles (même pour les utilisateurs du canal qui ne sont pas explicitement supervisés). Par exemple, l’utilisateur A est le propriétaire ou un membre d’un canal. L’utilisateur B et l’utilisateur C sont membres du même canal et utilisent la langue correspondant à la stratégie de contenu inappropriée qui supervise uniquement les correspondances de stratégie de création de l’utilisateur A. L’utilisateur B et l’utilisateur C créent des correspondances pour les conversations au sein du canal, même s’ils ne sont pas directement supervisés dans la stratégie de contenu inappropriée. Les conversations teams entre l’utilisateur B et l’utilisateur C qui se trouvent en dehors du canal qui inclut l’utilisateur A ne seraient pas soumises à la stratégie de contenu inappropriée qui inclut l’utilisateur A. Pour exclure les membres du canal de la supervision lorsque d’autres membres du canal sont explicitement supervisés, désactivez le paramètre de direction de communication *entrante* dans la stratégie de conformité des communications applicable.
-- **Pour les communications de conversation Teams avec des environnements de messagerie hybrides** : la conformité des communications peut détecter les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe qui ont activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Lors de la création d’une stratégie de conformité des communications, vous affectez ce groupe de distribution comme sélection **d’utilisateurs et de groupes supervisés** dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation du stockage cloud et de la prise en charge teams pour les utilisateurs locaux, consultez [Rechercher des données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+- **Pour les communications de conversation Teams avec des environnements de messagerie hybrides** : la conformité des communications peut détecter les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe qui ont activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes. Lors de la création d’une stratégie de conformité des communications, vous affectez ce groupe de distribution comme sélection **d’utilisateurs et de groupes supervisés** dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation du stockage cloud et de la prise en charge teams pour les utilisateurs locaux, consultez [Rechercher des données de conversation Teams pour les utilisateurs locaux](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="exchange-email"></a>Messagerie électronique Exchange
 
@@ -69,7 +69,7 @@ Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre a
 
 Les messages privés et les conversations publiques et les pièces jointes associées dans les communautés Yammer peuvent être analysés. Lorsqu’un utilisateur est ajouté à la stratégie de conformité des communications qui inclut Yammer comme canal défini, les communications entre toutes les communautés Yammer dont l’utilisateur est membre sont incluses dans le processus d’analyse. Le traitement des conversations et pièces jointes Yammer correspondant aux conditions de stratégie de conformité des communications peut prendre jusqu’à 24 heures. 
 
-Yammer doit être en [mode natif](/yammer/configure-your-yammer-network/overview-native-mode) pour les stratégies de conformité des communications afin de surveiller les communications et pièces jointes Yammer. En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online.
+Yammer doit être en [mode natif](/yammer/configure-your-yammer-network/overview-native-mode) pour que les stratégies de conformité des communications détectent les communications et pièces jointes Yammer. En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online.
 
 ## <a name="third-party-sources"></a>Sources tierces
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 544c31205469bcb810bd3f05d9f686d650df6269
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a671e25dabf5dc9c526e6e3a931a71035b908cc3
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638188"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787823"
 ---
 # <a name="insider-risk-management-audit-log"></a>Journal d’audit de la gestion des risques internes
 
@@ -25,9 +25,9 @@ Le journal d’audit de la gestion des risques internes vous permet de rester in
 
 ![Journal d’audit de la gestion des risques internes.](../media/insider-risk-audit-log.png)
 
-Le journal d’audit est automatiquement et immédiatement mis à jour chaque fois que des activités surveillées se produisent et que le journal conserve des informations sur l’activité pendant 180 jours (environ six mois). Après 180 jours, les données de l’activité sont définitivement supprimées du journal.
+Le journal d’audit est automatiquement et immédiatement mis à jour chaque fois que des activités détectées se produisent et le journal conserve des informations sur l’activité pendant 180 jours (environ six mois). Après 180 jours, les données de l’activité sont définitivement supprimées du journal.
 
-Les zones incluses dans la surveillance des activités sont les suivantes :
+Les zones incluses dans la détection d’activité sont les suivantes :
 
 - Stratégies
 - Cas
@@ -43,7 +43,7 @@ Pour afficher et exporter des données à partir du journal d’audit, les utili
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Afficher l’activité dans le journal d’audit des risques internes
 
-Pour afficher l’activité de fonctionnalité surveillée pour la gestion des risques internes, accédez au lien du **journal d’audit des risques internes** et sélectionnez-le dans la zone supérieure droite de l’onglet gestion des risques internes. Par défaut, les informations suivantes s’affichent pour les activités de gestion des risques internes :
+Pour afficher l’activité de fonctionnalité détectée pour la gestion des risques internes, accédez au lien du **journal d’audit des risques internes** et sélectionnez-le dans la zone supérieure droite de l’onglet Gestion des risques internes. Par défaut, les informations suivantes s’affichent pour les activités de gestion des risques internes :
 
 - **Activité:** Description de l’activité effectuée dans la solution de gestion des risques internes par un utilisateur.
 - **Catégorie:** Zone ou élément où l’activité a été effectuée. Par exemple, vous verrez *Stratégies* comme catégorie lors de l’exécution d’activités de modification de stratégie.

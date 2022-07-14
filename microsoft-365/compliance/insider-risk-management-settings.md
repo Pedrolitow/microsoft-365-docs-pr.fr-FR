@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d830da841eb67db19e81cdf6a0e079c2161ae9d9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5e9f9eb04d2fb239c69aacd8927cde7f295c7716
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625190"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787537"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques internes
 
@@ -85,7 +85,7 @@ Pour définir les indicateurs de stratégie de risque interne activés dans tout
 ### <a name="enable-device-indicators-and-onboard-windows-devices"></a>Activer les indicateurs d’appareil et intégrer des appareils Windows
 <a name="OnboardDevices"> </a>
 
-Pour activer la surveillance des activités à risque sur les appareils Windows et inclure des indicateurs de stratégie pour ces activités, vos appareils Windows doivent répondre aux exigences suivantes et vous devez effectuer les étapes d’intégration suivantes.
+Pour permettre la détection des activités à risque sur les appareils Windows et inclure des indicateurs de stratégie pour ces activités, vos appareils Windows doivent répondre aux exigences suivantes et vous devez effectuer les étapes d’intégration suivantes.
 
 #### <a name="step-1-prepare-your-endpoints"></a>Étape 1 : Préparer vos points de terminaison
 
@@ -228,7 +228,7 @@ Pour chacun des paramètres de domaine suivants, vous pouvez entrer jusqu’à 5
 - **Domaines non autorisés :** En spécifiant des domaines non autorisés, l’activité qui a lieu avec ces domaines aura des scores de risque *plus élevés* . Certains exemples sont des activités impliquant le partage de contenu avec une personne (par exemple, l’envoi d’e-mails à une personne ayant une adresse gmail.com) et lorsque les utilisateurs téléchargent du contenu sur un appareil à partir de l’un de ces domaines non autorisés.
 - **Domaines autorisés :** Certaines activités liées aux domaines autorisés sont ignorées par vos stratégies et ne génèrent pas d’alertes. Ces activités sont les suivantes :
 
-    - E-mail envoyé à des domaines externes
+    - Email envoyés à des domaines externes
     - Fichiers, dossiers, sites partagés avec des domaines externes
     - Fichiers chargés vers des domaines externes (à l’aide du navigateur Microsoft Edge)
 
@@ -268,7 +268,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | PolicyId | GUID de la stratégie de gestion des risques internes qui a déclenché l’alerte. |
 | Severity | Gravité de l’alerte. Les valeurs sont *Élevée*, *Moyenne* ou *Faible*. |
 | Source | Source de l’alerte. La valeur est *Office 365 Sécurité & Conformité*. |
-| État | État de l’alerte. Les valeurs sont *actives* (*révision des besoins* en cas de risque interne), *examen* (*confirmé* dans le risque interne), *Résolu* (*Résolu* dans le risque interne), *Ignoré* (*ignoré* dans le risque interne). |
+| Statut | État de l’alerte. Les valeurs sont *actives* (*révision des besoins* en cas de risque interne), *examen* (*confirmé* dans le risque interne), *Résolu* (*Résolu* dans le risque interne), *Ignoré* (*ignoré* dans le risque interne). |
 | Version | Version du schéma d’alerte de sécurité et de conformité. |
 
 Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le [schéma commun de l’API activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
@@ -348,7 +348,7 @@ L’identification de l’accès aux ressources physiques prioritaires et la cor
 
 Une fois les ressources physiques prioritaires activées et le [connecteur de données de badging physique](import-physical-badging-data.md) configuré, la gestion des risques internes intègre les signaux de vos systèmes de contrôle physique et d’accès à d’autres activités à risque de l’utilisateur. En examinant les modèles de comportement entre les systèmes d’accès physique et en mettant en corrélation ces activités avec d’autres événements à risque interne, la gestion des risques internes peut aider les enquêteurs de conformité et les analystes à prendre des décisions de réponse plus éclairées pour les alertes. L’accès aux ressources physiques prioritaires est noté et identifié dans les insights différemment de l’accès aux ressources non prioritaires.
 
-Par exemple, votre organisation dispose d’un système de badging pour les utilisateurs qui surveille et approuve l’accès physique aux zones de projet normales de travail et sensibles. Vous avez plusieurs utilisateurs travaillant sur un projet sensible et ces utilisateurs reviendront à d’autres domaines de votre organisation une fois le projet terminé. À mesure que le projet sensible touche à sa fin, vous voulez vous assurer que le travail du projet reste confidentiel et que l’accès aux zones du projet est étroitement contrôlé.
+Par exemple, votre organisation dispose d’un système de badging pour les utilisateurs qui régit et approuve l’accès physique aux zones de projet normales de travail et sensibles. Vous avez plusieurs utilisateurs travaillant sur un projet sensible et ces utilisateurs reviendront à d’autres domaines de votre organisation une fois le projet terminé. À mesure que le projet sensible touche à sa fin, vous voulez vous assurer que le travail du projet reste confidentiel et que l’accès aux zones du projet est étroitement contrôlé.
 
 Vous choisissez d’activer le connecteur de données de badging physique dans Microsoft 365 pour importer les informations d’accès à partir de votre système de badging physique et spécifier des ressources physiques prioritaires dans la gestion des risques internes. En important des informations à partir de votre système de badging et en mettant en corrélation les informations d’accès physique avec d’autres activités à risque identifiées dans la gestion des risques internes, vous remarquez que l’un des utilisateurs du projet accède aux bureaux du projet après des heures normales de travail et exporte également de grandes quantités de données vers un service de stockage cloud personnel à partir de sa zone de travail normale. Cette activité d’accès physique associée à l’activité en ligne peut pointer vers le vol de données et les enquêteurs et analystes de conformité peuvent prendre les mesures appropriées en fonction des circonstances pour cet utilisateur.
 
@@ -548,7 +548,7 @@ Effectuez les étapes suivantes pour activer l’analytique des risques internes
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Affichage des insights analytiques et création de stratégies
 
-Une fois la première analyse analytique terminée pour votre organisation, les membres du groupe de rôles *Insider Risk Management Administration* reçoivent automatiquement une notification par e-mail et peuvent afficher les informations initiales et les recommandations relatives aux activités potentiellement risquées de vos utilisateurs. Les analyses quotidiennes se poursuivent, sauf si vous désactivez l’analytique pour votre organisation. Des notifications par e-mail aux administrateurs sont fournies pour chacune des trois catégories d’analyse dans l’étendue (fuites de données, vol et exfiltration) après la première instance d’activité de votre organisation. Les notifications par e-mail ne sont pas envoyées aux administrateurs pour la détection des activités de suivi résultant des analyses quotidiennes. Si l’analytique dans l’analytique **des paramètres** de gestion  >  des  > **risques Insider****est** désactivée, puis réactivée dans votre organisation, les notifications par e-mail automatiques sont réinitialisées et les e-mails sont envoyés aux membres du groupe de rôles *Insider Risk Management Administration* pour de nouveaux insights d’analyse.
+Une fois la première analyse analytique terminée pour votre organisation, les membres du groupe de rôles *Insider Risk Management Administration* reçoivent automatiquement une notification par e-mail et peuvent afficher les informations initiales et les recommandations relatives aux activités potentiellement risquées de vos utilisateurs. Les analyses quotidiennes se poursuivent, sauf si vous désactivez l’analytique pour votre organisation. Email notifications aux administrateurs sont fournies pour chacune des trois catégories d’analyse dans l’étendue (fuites de données, vol et exfiltration) après la première instance d’activité de votre organisation. Email notifications ne sont pas envoyées aux administrateurs pour la détection des activités de suivi résultant des analyses quotidiennes. Si l’analytique dans l’analytique **des paramètres** de gestion  >  des  > **risques Insider****est** désactivée, puis réactivée dans votre organisation, les notifications par e-mail automatiques sont réinitialisées et les e-mails sont envoyés aux membres du groupe de rôles *Insider Risk Management Administration* pour de nouveaux insights d’analyse.
 
 Pour afficher les risques potentiels pour votre organisation, accédez à l’onglet **Vue d’ensemble** et sélectionnez **Afficher les résultats** dans la carte **d’analyse des risques Insider** . Si l’analyse de votre organisation n’est pas terminée, vous verrez un message indiquant que l’analyse est toujours active.
 

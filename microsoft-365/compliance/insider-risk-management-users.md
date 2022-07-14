@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 05adeb86c5e4da5119a5aae184721ec667564b49
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 14c0d5127f4b370d78b54512d8780d1cc7dfbf67
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629484"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787647"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Tableau de bord Utilisateurs de la gestion des risques internes
 
@@ -44,7 +44,7 @@ Le **tableau de bord Utilisateurs** affiche automatiquement tous les utilisateur
 
 Le **tableau de bord Utilisateurs** inclut les utilisateurs ajoutés aux stratégies de gestion des risques internes après un événement inhabituel en dehors du flux de travail de gestion des risques internes. L’ajout temporaire d’utilisateurs (à partir du tableau de bord Stratégies) est également un moyen de commencer à noter l’activité des utilisateurs pour une stratégie de gestion des risques internes pour tester la stratégie, même si un connecteur requis n’est pas configuré.
 
-Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités utilisateur des 90 derniers jours sont notées et ajoutées à la chronologie de **l’activité utilisateur** . Par exemple, un utilisateur n’est pas actuellement affecté à des scores de risque pour une stratégie de risque interne et l’utilisateur a des activités de fuite de données signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de *fuites de données* pour une durée désignée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont **affichés dans le tableau de bord Utilisateurs** , car les exigences en matière d’événements de déclenchement sont levées.
+Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités utilisateur des 90 derniers jours sont notées et ajoutées à la chronologie de **l’activité utilisateur** . Par exemple, un utilisateur n’est pas actuellement affecté à des scores de risque pour une stratégie de risque interne et l’utilisateur a des activités de fuite de données signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de détection à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de *fuites de données* pour une durée désignée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont **affichés dans le tableau de bord Utilisateurs** , car les exigences en matière d’événements de déclenchement sont levées.
 
 > [!NOTE]
 > L’apparition de nouveaux utilisateurs ajoutés manuellement dans le tableau de **bord Utilisateurs** peut prendre plusieurs heures. L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés manuellement, sélectionnez l’utilisateur dans le **tableau de bord Utilisateurs** et ouvrez **l’onglet Activité utilisateur** dans le volet d’informations.
