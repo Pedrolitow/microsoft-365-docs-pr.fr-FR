@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696159"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756669"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
@@ -176,6 +176,7 @@ Les configurations suivantes du complément AIP ne sont pas encore prises en cha
 Bien que de nouvelles fonctionnalités pour l'étiquetage intégré soient ajoutées en permanence, le module complémentaire AIP Office prend en charge les fonctionnalités suivantes dont la disponibilité n’est pas prévue dans les futures versions de l'étiquetage intégré :
 
 - Application des étiquettes aux formats Microsoft Office 97-2003, tels que les fichiers .doc.
+- Journalisation de l’utilisation locale dans le journal des événements Windows
 - Ordinateurs déconnectés de façon permanente
 - Des éditions autonomes d'Office (parfois appelées « Office perpétuelle ») plutôt que des éditions sur abonnement.
 
