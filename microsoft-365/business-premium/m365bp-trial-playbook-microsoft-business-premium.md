@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: 96bfec80e828ec88866da740622ca252eaabf9e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ecb341673d3cf9469cbf2814d8c4486a01d4fc3f
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624646"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772536"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
 
@@ -63,6 +63,9 @@ Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, 
 5. Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec connexion de domaine, le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
 
 ## <a name="onboard-and-protect-devices"></a>Intégrer et protéger des appareils
+
+> [!NOTE]
+> La possibilité d’intégrer des points de terminaison exécutant Windows Server ou Linux Server est désormais disponible en préversion ! Consultez [Intégrer des appareils à Microsoft Defender pour les PME](../security/defender-business/mdb-onboard-devices.md).
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
