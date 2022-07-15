@@ -2,7 +2,7 @@
 
 ## [Vue d’ensemble]()
 ### [Qu’est-ce que Microsoft Defender pour point de terminaison ?](microsoft-defender-endpoint.md)
-### [Playbook d’évaluation : tirez le meilleur parti de votre version d’évaluation](defender-endpoint-trial-playbook.md).
+### [Playbook d’évaluation : tirez le meilleur parti de votre version d’évaluation](defender-endpoint-trial-playbook.md)
 ### [Comparer les plans de Défenseur pour points de terminaison](defender-endpoint-plan-1-2.md)
 ### [Configuration minimale requise](minimum-requirements.md)
 ### [Qu’est-ce qui est nouveau dans Microsoft Defender pour point de terminaison ?](whats-new-in-microsoft-defender-endpoint.md)
