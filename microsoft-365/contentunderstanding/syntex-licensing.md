@@ -13,16 +13,16 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: En savoir plus sur les licences pour SharePoint Syntex
-ms.openlocfilehash: 7a7f310cb9c925fdb98a38ee12335abde91ea1db
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839327"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787493"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Gestion des licences pour SharePoint Syntex
 
-Pour utiliser SharePoint Syntex, votre organisation doit disposer d’un abonnement à SharePoint Syntex et chaque utilisateur SharePoint Syntex doit disposer d’une licence. Si vous annulez votre abonnement SharePoint Syntex à une date ultérieure (ou si votre version d’évaluation expire), les utilisateurs ne pourront plus créer, publier ou exécuter des modèles de compréhension de document ou de traitement de formulaire. En outre, les rapports des magasins à terme, l'importation de la taxonomie SKOS et la poussée des types de contenu ne seront plus disponibles. Aucun modèle, contenu ou métadonnées ne sera supprimé et les autorisations de site ne seront pas modifiées.
+Pour utiliser SharePoint Syntex, chaque utilisateur Syntex doit disposer d’une licence. Si vous annulez vos licences SharePoint Syntex à une date ultérieure (ou si votre version d’évaluation expire), les utilisateurs ne pourront plus créer, publier ou exécuter des modèles de compréhension de document ou de traitement de formulaire. En outre, les rapports des magasins à terme, l'importation de la taxonomie SKOS et la poussée des types de contenu ne seront plus disponibles. Aucun modèle, contenu ou métadonnées ne sera supprimé et les autorisations de site ne seront pas modifiées.
  
 > [!NOTE] 
 > SharePoint Syntex est une licence d’extension et exige que les utilisateurs disposent également d’une licence pour Microsoft 365.
