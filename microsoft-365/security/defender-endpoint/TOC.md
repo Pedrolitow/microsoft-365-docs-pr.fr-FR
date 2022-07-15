@@ -247,7 +247,7 @@
 ### [Réduction de la surface d’attaque]()
 #### [Présentation de la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
 #### [Règles de réduction de la surface d’attaque (ASR)]()
-##### [Découvrez les règles du RSA](attack-surface-reduction.md).
+##### [Découvrez les règles du RSA](attack-surface-reduction.md)
 ##### [Guide de déploiement des règles de réduction de surface d’attaque (ASR)]()
 ###### [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
 ###### [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)

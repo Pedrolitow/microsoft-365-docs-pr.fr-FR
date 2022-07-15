@@ -105,7 +105,7 @@ Dans la section **Résultats détaillés** du rapport, l’analyseur client four
 
 Par exemple, dans le cadre du flux d’intégration De la gestion de la sécurité, il est nécessaire que l’ID de locataire Azure Active Directory dans votre locataire Microsoft Defender pour point de terminaison corresponde à l’ID de locataire SCP qui apparaît dans la section **Détails de la gestion** de la configuration des appareils des rapports. Le cas échéant, la sortie du rapport recommande d’effectuer cette vérification.
 
-:::image type="content » source="images/detailed-results.png » alt-text="La page affichant les résultats détaillés » lightbox="images/detailed-results.png »
+:::image type="content" source="images/detailed-results.png" alt-text="La page affichant les résultats détaillés" lightbox="images/detailed-results.png"
 
 ## <a name="general-troubleshooting"></a>Résolution des problèmes généraux
 
