@@ -1,7 +1,7 @@
 ---
-title: Fonction FileProfile() dans le recherche avancée d’Microsoft 365 Defender
-description: Découvrez comment utiliser FileProfile() pour enrichir des informations sur les fichiers dans vos résultats de requête de recherche avancée
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
+title: FileProfile() fonction dans la chasse avancée pour Microsoft 365 Defender
+description: Découvrez comment utiliser FileProfile() pour enrichir des informations sur les fichiers dans vos résultats de requête de repérage avancés
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, FileProfile, profil de fichier, fonction, enrichissement
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,40 +18,40 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2cd8c91717af8390160bf45a625ae3a3044ee387
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 3e530bd9c1e6af58c83a88fc16b5ac4f9aee60e0
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531482"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797926"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes aux `FileProfile()` fichiers trouvés par la requête. [](advanced-hunting-overview.md)
+La `FileProfile()` fonction est une fonction d’enrichissement dans la [chasse avancée](advanced-hunting-overview.md) qui ajoute les données suivantes aux fichiers trouvés par la requête.
 
-| Colonne | Type de données | Description |
+| Column | Type de données | Description |
 |------------|---------------|-------------|
 | `SHA1` | `string` | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `SHA256` | `string` | SHA-256 du fichier à qui l’action enregistrée a été appliquée |
-| `MD5` | `string` | Hachage MD5 du fichier à l’application de l’action enregistrée |
+| `SHA256` | `string` | SHA-256 du fichier auquel l’action enregistrée a été appliquée |
+| `MD5` | `string` | Hachage MD5 du fichier auquel l’action enregistrée a été appliquée |
 | `FileSize` | `int` | Taille du fichier en octets |
-| `GlobalPrevalence` | `int` | Nombre d’instances de l’entité observées globalement par Microsoft |
-| `GlobalFirstSeen` | `datetime` | Date et heure à laquelle l’entité a été observée pour la première fois par Microsoft globalement |
-| `GlobalLastSeen` | `datetime` | Date et heure de la dernière observation de l’entité par Microsoft au niveau global |
+| `GlobalPrevalence` | `int` | Nombre d’instances de l’entité observées par Microsoft globalement |
+| `GlobalFirstSeen` | `datetime` | Date et heure auxquelles l’entité a été observée pour la première fois par Microsoft globalement |
+| `GlobalLastSeen` | `datetime` | Date et heure de la dernière observation de l’entité par Microsoft à l’échelle mondiale |
 | `Signer` | `string` | Informations sur le signataire du fichier |
 | `Issuer` | `string` | Informations sur l’autorité de certification émettrice |
 | `SignerHash` | `string` | Valeur de hachage unique identifiant le signataire |
-| `IsCertificateValid` | `boolean` | Si le certificat utilisé pour signer le fichier est valide |
-| `IsRootSignerMicrosoft` | `boolean` | Indique si le signataire du certificat racine est Microsoft |
-| `SignatureState` | `string` | État de la signature du fichier : SignedValid - le fichier est signé avec une signature valide, SignedInvalid - le fichier est signé mais le certificat n’est pas valide, Non signé - le fichier n’est pas signé, Inconnu - les informations sur le fichier ne peuvent pas être récupérées
-| `IsExecutable` | `boolean` | Si le fichier est un fichier Exécutable portable (PE) |
-| `ThreatName` | `string` | Nom de détection des programmes malveillants ou autres menaces détectés |
+| `IsCertificateValid` | `boolean` | Indique si le certificat utilisé pour signer le fichier est valide |
+| `IsRootSignerMicrosoft` | `boolean` | Indique si le signataire du certificat racine est Microsoft et si le fichier est intégré au système d’exploitation Windows |
+| `SignatureState` | `string` | État de la signature de fichier : SignedValid - le fichier est signé avec une signature valide, SignedInvalid - le fichier est signé, mais le certificat n’est pas valide, Non signé - le fichier n’est pas signé, Inconnu - les informations sur le fichier ne peuvent pas être récupérées
+| `IsExecutable` | `boolean` | Indique si le fichier est un fichier exécutable portable (PE) |
+| `ThreatName` | `string` | Nom de détection des programmes malveillants ou autres menaces détectées |
 | `Publisher` | `string` | Nom de l’organisation qui a publié le fichier |
 | `SoftwareName` | `string` | Nom du produit logiciel |
 
@@ -63,16 +63,16 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Arguments
 
-- **x**— colonne d’ID de fichier à utiliser : `SHA1` , , ou ; fonction utilise si non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` spécifié
-- **y**— limite au nombre d’enregistrements à enrichir, de 1 à 1 000 ; utilise 100 si non spécifié
+- **x** : colonne d’ID de fichier à utiliser : `SHA1`, `SHA256`, `InitiatingProcessSHA1`ou `InitiatingProcessSHA256`; fonction utilise `SHA1` si elle n’est pas spécifiée
+- **y**— limite au nombre d’enregistrements à enrichir, de 1 à 1 000; la fonction utilise 100 si elle n’est pas spécifiée
 
 
 >[!TIP]
-> Les fonctions d’enrichissement afficheront des informations supplémentaires uniquement lorsqu’elles sont disponibles. La disponibilité des informations varie et dépend d’un grand nombre de facteurs. Veillez à prendre cela en compte lors de l’utilisation de FileProfile() dans vos requêtes ou lors de la création de détections personnalisées. Pour de meilleurs résultats, nous vous recommandons d’utiliser la fonction FileProfile() avec SHA1.
+> Les fonctions d’enrichissement affichent des informations supplémentaires uniquement lorsqu’elles sont disponibles. La disponibilité de l’information varie et dépend de nombreux facteurs. Veillez à prendre cela en compte lors de l’utilisation de FileProfile() dans vos requêtes ou lors de la création de détections personnalisées. Pour de meilleurs résultats, nous vous recommandons d’utiliser la fonction FileProfile() avec SHA1.
 
 ## <a name="examples"></a>Exemples
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project uniquement la colonne SHA1 et l’enrichir
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projeter uniquement la colonne SHA1 et l’enrichir
 
 ```kusto
 DeviceFileEvents
@@ -82,7 +82,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers à faible prévalence
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et répertorier les fichiers à faible prévalence
 
 ```kusto
 DeviceFileEvents

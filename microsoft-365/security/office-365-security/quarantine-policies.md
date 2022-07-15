@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490097"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798143"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -50,8 +50,8 @@ Les autorisations de stratégie de quarantaine individuelles contenues dans les 
 
 |Autorisation|Pas d’accès|Accès limité|Accès complet|
 |---|:---:|:---:|:---:|
-|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Préversion** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)<sup>\*</sup>|||![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à demander la mise en quarantaine d’un message** (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
@@ -98,7 +98,9 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Étape 1 : Créer des stratégies de quarantaine dans le portail Microsoft 365 Defender
 
-1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à **l’e-mail &** stratégies de collaboration \> & stratégies de **menace** \> **de règles** \> **en quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
+1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à Email & stratégies de **collaboration** \> **& stratégies** de **menace de** \> règles \> **en quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="Page stratégie de mise en quarantaine dans le portail Microsoft 365 Defender." lightbox="../../media/mdo-quarantine-policy-page.png":::
 
 2. Dans la page **Stratégies de quarantaine** , cliquez sur ![l’icône Ajouter une stratégie personnalisée.](../../media/m365-cc-sc-create-icon.png) **Ajouter une stratégie personnalisée**.
 
@@ -203,7 +205,7 @@ Dans les fonctionnalités _de protection prises en charge_ qui met en quarantain
 |[Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) : <ul><li>**Courrier indésirable** (_SpamAction_)</li><li>**Courrier indésirable à haut niveau de confiance** (_HighConfidenceSpamAction_)</li><li>**Hameçonnage** (_PhishSpamAction_)</li><li>**Hameçonnage à haut niveau de confiance** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Oui|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li><li>AdminOnlyAccessPolicy (aucun accès)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li></ul>|
 |Stratégies anti-hameçonnage: <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protection de l’emprunt d’identité dans Defender pour Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) :<ul><li>**Si le message est détecté en tant qu’utilisateur emprunt d’identité** (_TargetedUserProtectionAction_)</li><li>**Si le message est détecté comme un domaine usurpé d’identité** (_TargetedDomainProtectionAction_)</li><li>**Si l’intelligence de boîte aux lettres détecte et emprunte l’identité de l’utilisateur** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Oui|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li><li>Protection de l’emprunt d’identité :<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (accès complet)</li></ul></li></ul>|
 |[Stratégies anti-programme malveillant](configure-anti-malware-policies.md) : tous les messages détectés sont toujours mis en quarantaine.|Oui|AdminOnlyAccessPolicy (aucun accès)|
-|[Protection des pièces jointes sécurisées](safe-attachments.md) : <ul><li>Messages électroniques contenant des pièces jointes mises en quarantaine en tant que programmes malveillants par des stratégies de pièces jointes sécurisées (_Activer_ et _action_)</li><li>Fichiers mis en quarantaine en tant que programmes [malveillants par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Oui</li><li>Non</li></ul>|<ul><li>AdminOnlyAccessPolicy (aucun accès)</li><li>s/o</li></ul>|
+|[Protection des pièces jointes sécurisées](safe-attachments.md) : <ul><li>Email messages avec des pièces jointes mises en quarantaine comme programmes malveillants par des stratégies de pièces jointes sécurisées (_Activer_ et _action_)</li><li>Fichiers mis en quarantaine en tant que programmes [malveillants par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Oui</li><li>Non</li></ul>|<ul><li>AdminOnlyAccessPolicy (aucun accès)</li><li>s/o</li></ul>|
 |[Règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : **Remettre le message à la quarantaine hébergée** (_quarantaine_).|Non|s/o|
 
 <sup>\*</sup> Comme [décrit précédemment dans cet article](#full-access-permissions-and-quarantine-notifications), votre organisation peut utiliser NotificationEnabledPolicy au lieu de DefaultFullAccessPolicy. La seule différence entre ces deux stratégies de quarantaine est que les notifications de quarantaine sont activées dans NotificationEnabledPolicy et désactivées dans DefaultFullAccessPolicy.
@@ -220,7 +222,7 @@ Les stratégies de quarantaine par défaut, les groupes d’autorisations préd�
 
 ### <a name="anti-spam-policies"></a>Stratégies anti-courrier indésirable
 
-1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à  Stratégies de **collaboration** \> & par e-mail **& règles** \> \> **anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à Email & stratégies de **collaboration** \> **& règles** \> **anti-courrier**  \> indésirable dans la section **Stratégies**.
 
    Ou, pour accéder directement à la page **Ant-spam policies** , utilisez <https://security.microsoft.com/antispam>.
 
@@ -248,7 +250,7 @@ Si vous préférez utiliser PowerShell pour attribuer des stratégies de quarant
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - La valeur par défaut des paramètres _PhishSpamAction_ et _HighConfidencePhishAction_ est Quarantine. Vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez de nouvelles stratégies de filtre de courrier indésirable dans PowerShell. Pour les paramètres _SpamAction_, _HighConfidenceSpamAction_ et _BulkSpamAction_ dans les stratégies anti-courrier indésirable nouvelles ou existantes, la stratégie de quarantaine n’est effective que si la valeur est Quarantaine.
 
@@ -289,7 +291,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 L’intelligence par usurpation d’identité est disponible dans EOP et Defender pour Office 365. La protection de l’emprunt d’identité de l’utilisateur, la protection de l’emprunt d’identité de domaine et l’intelligence de boîte aux lettres sont disponibles uniquement dans Defender pour Office 365. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
 
-1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à **e-mail & stratégies de collaboration** \> **& règles** \>  \> **anti-hameçonnage** dans la section **Stratégies**.
+1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à Email &  stratégies de **collaboration** \> **& règles** \>  \> de protection contre le hameçonnage dans la section **Stratégies**.
 
    Ou, pour accéder directement à la page **Ant-spam policies** , utilisez <https://security.microsoft.com/antiphishing>.
 
@@ -372,7 +374,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="anti-malware-policies"></a>Stratégies anti-programme malveillant
 
-1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à **e-mail & stratégies de collaboration** \> **& règles** \> **anti-programmes malveillants**  \> dans la section **Stratégies**.
+1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à Email & stratégies de **collaboration** \> **& règles** \> **de** \> protection **contre les programmes malveillants** dans la section **Stratégies**.
 
    Ou, pour accéder directement à la page **Anti-programme malveillant** , utilisez <https://security.microsoft.com/antimalwarev2>.
 
@@ -428,7 +430,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Stratégies de pièces jointes sécurisées dans Defender pour Office 365
 
-1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à Stratégies de **collaboration** \> & par e-mail **& règles** \> Sur **les pièces jointes sécurisées des** **stratégies** \> de menace dans la section **Stratégies**.
+1. Dans le [portail Microsoft 365 Defender](https://security.microsoft.com), accédez à Email & stratégies de **collaboration** \> **& règles** - **Pièces jointes sécurisées des** **stratégies** \> \> de menace dans la section **Stratégies**.
 
    Ou, pour accéder directement à la page **Pièces jointes sécurisées** , utilisez <https://security.microsoft.com/safeattachmentv2>.
 
@@ -492,7 +494,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Les paramètres globaux des stratégies de quarantaine vous permettent de personnaliser les notifications de quarantaine envoyées aux destinataires de messages mis en quarantaine si les notifications de quarantaine sont activées dans la stratégie de quarantaine. Pour plus d’informations sur ces notifications, consultez [Notifications de quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Stratégies de collaboration** \> e-mail & **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
+1. Dans le portail Microsoft 365 Defender, accédez à Email & stratégies de **collaboration** \> **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
 
 2. Dans la page **Stratégies de quarantaine** , sélectionnez **Paramètres globaux**.
 
@@ -531,9 +533,11 @@ Les paramètres globaux des stratégies de quarantaine vous permettent de person
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
+   :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Menu volant des paramètres de notification de mise en quarantaine dans le portail Microsoft 365 Defender." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
+
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Afficher les stratégies de quarantaine dans le portail Microsoft 365 Defender
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Stratégies de collaboration** \> e-mail & **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
+1. Dans le portail Microsoft 365 Defender, accédez à Email & stratégies de **collaboration** \> **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
 
 2. La page **Stratégies de quarantaine** affiche la liste des stratégies par **nom** et date de **dernière mise à jour** .
 
@@ -569,7 +573,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous ne pouvez pas modifier les stratégies de quarantaine intégrées nommées AdminOnlyAccessPolicy ou DefaultFullAccessPolicy. Vous pouvez modifier la stratégie intégrée nommée NotificationEnabledPolicy ([si vous l’avez](#full-access-permissions-and-quarantine-notifications)) et les stratégies de quarantaine personnalisées.
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Stratégies de collaboration** \> e-mail & **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
+1. Dans le portail Microsoft 365 Defender, accédez à Email & stratégies de **collaboration** \> **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
 
 2. Dans la page **Stratégies de quarantaine** , sélectionnez la stratégie en cliquant sur le nom.
 
@@ -606,7 +610,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
   Si la stratégie de quarantaine est utilisée, [remplacez la stratégie de quarantaine affectée](#step-2-assign-a-quarantine-policy-to-supported-features) avant de la supprimer.
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Stratégies de collaboration** \> e-mail & **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
+1. Dans le portail Microsoft 365 Defender, accédez à Email & stratégies de **collaboration** \> **& règles** \> **Stratégies de menace** \> **Stratégies de quarantaine** dans la section **Règles**. Ou, pour accéder directement à la page **Stratégies de quarantaine** , utilisez <https://security.microsoft.com/quarantinePolicies>.
 
 2. Dans la page **Stratégies de quarantaine** , sélectionnez la stratégie de quarantaine personnalisée à supprimer en cliquant sur le nom.
 

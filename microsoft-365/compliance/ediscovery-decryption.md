@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment les outils microsoft 365 eDiscovery gèrent les documents chiffrés attachés aux e-mails et stockés dans SharePoint Online et OneDrive Entreprise.
-ms.openlocfilehash: 5e94c7b09745d017d5fa91d39a58c9d5351e911a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770852"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798080"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils microsoft 365 eDiscovery
 
@@ -35,7 +35,7 @@ Avant cette nouvelle fonctionnalité, seul le contenu d’un e-mail protégé pa
 
 ## <a name="supported-encryption-technologies"></a>Technologies de chiffrement prises en charge
 
-Pour Exchange, les outils Microsoft eDiscovery prennent en charge les éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies sont Azure Rights Management (Azure RMS)<sup>3</sup> et Protection des données Microsoft Purview (en particulier les étiquettes de confidentialité). Pour plus d’informations sur les technologies de chiffrement Microsoft, consultez [Chiffrement](encryption.md). Le contenu chiffré par S/MIME ou des technologies de chiffrement tierces n’est pas pris en charge. Par exemple, l’aperçu ou l’exportation de contenu chiffré avec des technologies non Microsoft n’est pas pris en charge.
+Pour Exchange, les outils Microsoft eDiscovery prennent en charge les éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies sont Azure Rights Management (Azure RMS)<sup>3</sup> et Protection des données Microsoft Purview (en particulier les étiquettes de confidentialité). Pour plus d’informations sur les technologies de chiffrement Microsoft, consultez [Chiffrement](encryption.md) et les différentes options de [chiffrement de messagerie](email-encryption.md#comparing-email-encryption-options-available-in-office-365) disponibles. Le contenu chiffré par S/MIME ou des technologies de chiffrement tierces n’est pas pris en charge. Par exemple, l’aperçu ou l’exportation de contenu chiffré avec des technologies non Microsoft n’est pas pris en charge.
 
 > [!NOTE]
 > Le déchiffrement des messages électroniques envoyés avec un [modèle de personnalisation Chiffrement de messages Microsoft Purview personnalisé](add-your-organization-brand-to-encrypted-messages.md) n’est pas pris en charge par les outils Microsoft eDiscovery. Lorsque vous utilisez un modèle de personnalisation OME, les messages électroniques sont remis au portail OME au lieu de la boîte aux lettres du destinataire. Par conséquent, vous ne pourrez pas utiliser les outils eDiscovery pour rechercher des messages chiffrés, car ces messages ne sont jamais reçus par la boîte aux lettres du destinataire.
@@ -91,7 +91,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
 ## <a name="notes"></a>Notes
 
-<sup>1 Les</sup> fichiers chiffrés situés sur un ordinateur local et les pièces jointes cloud copiées dans un e-mail ne sont pas déchiffrés et indexés pour eDiscovery. 
+<sup>1 Les</sup> fichiers chiffrés situés sur un ordinateur local et copiés dans un e-mail ne sont pas déchiffrés et indexés pour eDiscovery. Pour eDiscovery (Premium), les e-mails chiffrés et les pièces jointes dans la boîte aux lettres des destinataires doivent être indexés de manière avancée pour être déchiffrés. Pour plus d’informations sur l’indexation avancée, consultez [Indexation avancée des données de consignation](indexing-custodian-data.md).
 
 <sup>2</sup> Seuls les éléments étiquetés dans le service en ligne SharePoint sont déchiffrés, tout le reste n’est pas pris en charge, y compris l’étiquetage ou le chiffrement dans le client avant le chargement, les modèles ou paramètres RMS de bibliothèque de documents hérités, SMIME ou toute autre norme, etc. Voir [Activer les étiquettes de confidentialité pour les fichiers Office](sensitivity-labels-sharepoint-onedrive-files.md).
 
