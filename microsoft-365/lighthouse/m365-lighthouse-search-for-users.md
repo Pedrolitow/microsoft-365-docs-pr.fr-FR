@@ -17,31 +17,29 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment rechercher des utilisateurs.
-ms.openlocfilehash: f09a9b4f42ed0298aa0e89dcf0065eea33e2c7d6
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 44e043c144fd35e42f2f5ea937670007ce8b3c62
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016633"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823504"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Rechercher des utilisateurs dans Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse vous permet de rechercher un utilisateur spécifique sur tous les locataires actifs. Cela vous permet de trouver rapidement un utilisateur sans avoir à naviguer dans différents locataires.
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **de la recherche d’utilisateurs**.
 
-2. Sélectionnez l’onglet **Rechercher des utilisateurs** .
+2. Dans la zone de recherche, entrez un nom d’affichage ou un nom d’utilisateur principal (UPN).
 
-3. Dans la zone de recherche, entrez un nom d’affichage ou un nom d’utilisateur principal (UPN).
-
-4. Dans la liste des résultats de la recherche, sélectionnez l’utilisateur que vous souhaitez rechercher.
+3. Dans la liste des résultats de la recherche, sélectionnez l’utilisateur que vous souhaitez rechercher.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Une fois l’utilisateur trouvé, vous pouvez réinitialiser son mot de passe ou bloquer son compte. Pour plus d’informations, consultez [Réinitialiser le mot de passe de l’utilisateur](m365-lighthouse-reset-user-password.md) ou [bloquer la connexion de l’utilisateur Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Gérer Microsoft 365 comptes d’utilisateur](../enterprise/manage-microsoft-365-accounts.md) (article)\
+[Gérer les comptes d’utilisateur Microsoft 365](../enterprise/manage-microsoft-365-accounts.md) (article)\
 [Réinitialiser le mot de passe utilisateur](m365-lighthouse-reset-user-password.md) (article)\
 [Bloquer la connexion utilisateur Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md) (article)

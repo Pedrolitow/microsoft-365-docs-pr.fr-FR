@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1790b908389839b1fd35525d5f8e33b58192d67
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d8ac90e8e9b7b955457c9bd90cae68e18cb69915
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492163"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822196"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 
@@ -31,7 +31,7 @@ ms.locfileid: "66492163"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans Exchange Online boîtes aux lettres, vous pouvez être en désaccord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message incorrect peut être autorisé (un faux négatif).
 
@@ -65,7 +65,7 @@ Cet article explique comment configurer des entrées dans la liste verte/de bloc
   - Hachages de fichier = 64
   - URL = 250
 
-- Une entrée doit être active dans les 30 minutes.
+- Une entrée doit être active dans un délai de 30 minutes, mais il peut prendre jusqu’à 24 heures pour que l’entrée soit active.
 
 - Par défaut, les entrées de la liste d’autorisations/de blocs du locataire expirent après 30 jours. Vous pouvez spécifier une date ou les définir pour qu’elles n’expirent jamais (pour le type de bloc d’entrées).
 
@@ -210,7 +210,7 @@ Nous vous recommandons de laisser les entrées expirer automatiquement après 30
    - **Url**
    - **Files**
 
-3. Sélectionnez l’entrée à supprimer, puis cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**.
+3. Sélectionnez l’entrée à supprimer, puis cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
 
 4. Dans la boîte de dialogue d’avertissement qui s’affiche, cliquez sur **Supprimer**.
 

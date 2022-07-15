@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c743b54e27bc9caa60bb6b4e24191d626ece6fcf
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490506"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823161"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune
 
@@ -154,7 +154,14 @@ Suivez les étapes ci-dessous pour ajouter Microsoft Defender pour point de term
         - Choisissez **profil professionnel uniquement** en tant que type de profil.
         - Cliquez sur **Sélectionner l’application**, choisissez **Microsoft Defender ATP**, sélectionnez **OK** , puis **Suivant**.
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" Volet Détails de l’application associée" lightbox="images/android-create-app.png":::
+        :::image type="content" source="images/android-create-app.png" alt-text=" Capture d’écran du volet Détails de l’application associée." lightbox="images/android-create-app.png":::
+     
+    1. Sélectionnez **Autorisations > Ajouter**. Dans la liste, sélectionnez les autorisations d’application disponibles > **OK**.
+    2. Sélectionnez une option pour chaque autorisation à accorder avec cette stratégie :
+
+       - **Invite** : invite l’utilisateur à accepter ou refuser.
+       - **Octroi automatique** : approuve automatiquement sans en informer l’utilisateur.
+       - **Refus automatique** : refuse automatiquement sans en informer l’utilisateur. 
 
     1. Dans la page **Paramètres** , accédez à la section **Paramètres de configuration** et choisissez **« Utiliser le concepteur de configuration »** au format Paramètres de configuration. 
 
@@ -231,7 +238,7 @@ Defender pour point de terminaison prend en charge les stratégies de configurat
 
    Dans la page **Affectations** , sélectionnez le groupe d’utilisateurs auquel cette stratégie de configuration d’application serait affectée. **Choisissez Sélectionner des groupes** à inclure et en sélectionnant le groupe applicable, puis sélectionnez **Suivant**. Le groupe sélectionné ici est généralement le même groupe que celui auquel vous attribuez Microsoft Defender pour point de terminaison application Android.
 
-   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Volet Affectation du profil de configuration des appareils dans les restrictions d’appareil" lightbox="images/4autosetupofvpn.png":::
+   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Capture d’écran du volet Affectation du profil de configuration des appareils dans les restrictions d’appareil." lightbox="images/4autosetupofvpn.png":::
 
 5. Dans la page **Vérifier + créer** qui vient ensuite, passez en revue toutes les informations, puis sélectionnez **Créer**.
 Le profil de configuration de l’appareil est maintenant affecté au groupe d’utilisateurs sélectionné.
@@ -310,7 +317,7 @@ Les organisations peuvent communiquer avec leurs utilisateurs pour protéger leu
 > 1. Le portail d’entreprise doit être activé sur un profil personnel.
 > 2. Microsoft Defender doit déjà être installé et actif dans le profil professionnel.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)

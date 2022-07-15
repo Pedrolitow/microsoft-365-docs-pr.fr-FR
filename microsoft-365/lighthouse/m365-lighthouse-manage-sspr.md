@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer la réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 0af624e93ae9321834e147f829a87f09c36dedf7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5b727aee4e5ae9906ade6d6a53c01b54273956af
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017673"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823526"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse
 
@@ -32,49 +32,43 @@ Microsoft 365 Lighthouse permet aux partenaires de gérer la réinitialisation d
 
 Les conditions suivantes doivent être remplies pour qu’un locataire apparaisse dans la liste :
 
-- Le locataire client doit disposer d’une licence Azure AD Premium pour chaque utilisateur. Pour plus d’informations sur les licences qui prennent en charge la [réinitialisation de mot de passe en libre-service, consultez les conditions de licence pour Azure Active Directory réinitialisation de mot de passe en libre-service](/azure/active-directory/authentication/concept-sspr-licensing).
+- Le locataire client doit disposer d’une licence Azure AD Premium pour chaque utilisateur. Pour plus d’informations sur les licences qui prennent en charge la [réinitialisation de mot de passe en libre-service Azure Active Directory, consultez les exigences de licence](/azure/active-directory/authentication/concept-sspr-licensing).
 
 - Le locataire client doit être actif dans Lighthouse. Pour savoir comment déterminer si un locataire est actif, consultez [vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
 ## <a name="view-sspr-tenant-status"></a>Afficher l’état du locataire SSPR
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
-
-2. Sélectionnez l’onglet **Réinitialisation du mot de passe** .
+- Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialiser le mot de passe** **utilisateur** > .
 
 L’onglet Réinitialisation de mot de passe fournit une vue d’ensemble des locataires qui ont activé la réinitialisation de mot de passe via les paramètres recommandés, le nombre d’utilisateurs qui ne se sont pas inscrits à SSPR et une répartition détaillée par locataire de la progression du déploiement SSPR au sein des organisations que vous gérez.
 
 ## <a name="enable-sspr-for-a-tenant"></a>Activer SSPR pour un locataire
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialisation du mot de passe** **utilisateur** > .
 
-2. Sélectionnez l’onglet **Réinitialisation du mot de passe** .
+2. Sous l’onglet **Réinitialisation du mot de passe** , sélectionnez un locataire dans la liste pour ouvrir le volet d’informations.
 
-3. Dans la liste des locataires, sélectionnez un locataire pour ouvrir le volet d’informations.
+3. Sélectionnez **Modifier les paramètres SSPR dans Azure Active Directory** pour accéder à Azure Active Directory (Azure AD).
 
-4. Sélectionnez **Modifier les paramètres SSPR dans Azure Active Directory** pour accéder à Azure Active Directory (Azure AD).
-
-5. Dans Azure AD, activez SSPR pour tous les utilisateurs ou les utilisateurs sélectionnés. Pour en savoir plus, consultez [didacticiel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser les mots de passe à l’aide de Azure Active Directory réinitialisation de mot de passe en libre-service](/azure/active-directory/authentication/tutorial-enable-sspr).
+4. Dans Azure AD, activez SSPR pour tous les utilisateurs ou les utilisateurs sélectionnés. Pour en savoir plus, consultez [tutoriel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser des mots de passe à l’aide de la réinitialisation de mot de passe en libre-service Azure Active Directory](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 ## <a name="notify-users-to-register-for-sspr"></a>Avertir les utilisateurs de s’inscrire à SSPR
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialisation du mot de passe** **utilisateur** > .
 
-2. Sélectionnez l’onglet **Réinitialisation du mot de passe** .
+2. Sous l’onglet **Réinitialisation du mot de passe** , sélectionnez un locataire dans la liste pour ouvrir le volet d’informations.
 
-3. Dans la liste des locataires, sélectionnez un locataire pour ouvrir le volet d’informations.
+3. Sélectionnez les utilisateurs que vous souhaitez notifier.
 
-4. Sélectionnez les utilisateurs que vous souhaitez notifier.
-
-5. Sélectionnez **Créer un e-mail**.
+4. Sélectionnez **Créer un e-mail**.
 
 Lighthouse ouvre votre client de messagerie par défaut et préremplit l’e-mail avec des instructions pour s’inscrire à SSPR. Tous les utilisateurs sélectionnés seront inclus sur la ligne CCI. Si vous préférez envoyer des e-mails individuellement aux utilisateurs, vous pouvez sélectionner l’icône d’e-mail en regard du nom d’utilisateur.
 
 Si vous souhaitez utiliser un autre compte de messagerie, vous pouvez exporter la liste des utilisateurs vers un fichier. Vous pouvez également télécharger des exemples de modèles de messagerie que vous pouvez personnaliser avec la personnalisation de votre entreprise.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Planifier un Azure Active Directory déploiement de réinitialisation de mot de passe en libre-service](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
-[Tutoriel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser des mots de passe à l’aide de Azure Active Directory réinitialisation de mot de passe en libre-service](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
+[Planifier un déploiement de réinitialisation de mot de passe en libre-service Azure Active Directory](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
+[Tutoriel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser des mots de passe à l’aide de la réinitialisation de mot de passe en libre-service Azure Active Directory](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
 [Comment activer et configurer SSPR dans Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (vidéo)\
 [Gérer l’authentification multifacteur dans Microsoft 365 Lighthouse](m365-lighthouse-manage-mfa.md) (article)

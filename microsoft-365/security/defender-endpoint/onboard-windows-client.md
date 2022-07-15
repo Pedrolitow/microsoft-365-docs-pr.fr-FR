@@ -16,18 +16,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 95fcb9c86b6b733e0597768a1705aca2b971dc8c
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 60b7e78902dff29278e3fe960e016e38c10cf296
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532713"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822155"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-client"></a>Client Windows d’intégration de Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Protection contre la perte de données (DLP) de point de terminaison](/microsoft-365/compliance/endpoint-dlp-learn-about)
@@ -43,8 +43,8 @@ En général, vous allez identifier le client que vous insérez, puis suivre l�
 
 :::image type="content" source="images/onboarddevices.png" alt-text="Intégrer des appareils" lightbox="images/onboarddevices.png":::
 
-## <a name="related-topics"></a>Sujets associés
-- [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+## <a name="related-topics"></a>Voir aussi
+- [Intégrer des appareils Windows à l’aide de Microsoft Intune](configure-endpoints-mdm.md)
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)

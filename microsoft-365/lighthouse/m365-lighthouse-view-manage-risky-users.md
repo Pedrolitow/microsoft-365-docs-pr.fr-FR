@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher et gérer les utilisateurs à risque.
-ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b4f34ccfafa1a002a9c798924641eaeeebdb04fe
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011835"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823416"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 
@@ -51,15 +51,13 @@ Les conditions suivantes doivent être remplies pour que les utilisateurs puisse
 
 Dans Azure AD Identity Protection, les détections de risques incluent toutes les actions suspectes identifiées liées aux comptes d’utilisateur dans Azure AD.
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque utilisateurs**.
 
-2. Sélectionnez l’onglet **Utilisateurs risqués** .
+2. Sous l’onglet **Utilisateurs à** risque, passez en revue les utilisateurs de la liste avec un état **de risque À risque**.
 
-3. Passez en revue les utilisateurs de la liste avec un état de risque **à risque**.
+3. Sélectionnez **Afficher les détections de risque** pour obtenir des informations détaillées sur les risques détectés pour chaque utilisateur. Pour plus d’informations sur les types de risques et la détection, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-4. Sélectionnez **Afficher les détections de risque** pour obtenir des informations détaillées sur les risques détectés pour chaque utilisateur. Pour plus d’informations sur les types de risques et la détection, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
-
-5. Pour chaque utilisateur, évaluez les détections de risques et sélectionnez l’une des actions suivantes, le cas échéant :
+4. Pour chaque utilisateur, évaluez les détections de risques et sélectionnez l’une des actions suivantes, le cas échéant :
 
     - Réinitialiser le mot de passe : modifiez ou réinitialisez le mot de passe de l’utilisateur.
 
@@ -73,9 +71,11 @@ Dans Azure AD Identity Protection, les détections de risques incluent toutes le
 
 Pour prendre des mesures sur plusieurs utilisateurs affectés à la fois :
 
-1. Sous l’onglet **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez effectuer une action.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque utilisateurs**.
 
-2. Choisissez l’une des actions suivantes à effectuer :
+2. Sous l’onglet **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez effectuer une action.
+
+3. Choisissez l’une des actions suivantes à effectuer :
 
     - Réinitialiser le mot de passe
 
@@ -88,7 +88,7 @@ Pour prendre des mesures sur plusieurs utilisateurs affectés à la fois :
 > [!NOTE]
 > Si l’organisation que vous gérez dispose d’une licence Azure AD Premium P2, il est recommandé d’activer les stratégies d’accès conditionnel basées sur les risques utilisateur. Pour plus d’informations, consultez [Accès conditionnel : Accès conditionnel basé sur les risques utilisateur](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 [Tutoriel : Utiliser les détections de risque pour les connexions utilisateur pour déclencher l’authentification multifacteur Azure AD ou des modifications de mot de passe](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
 [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (article) \
 [Corriger les risques et débloquer les utilisateurs](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (article)

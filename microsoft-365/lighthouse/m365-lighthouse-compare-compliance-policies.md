@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment comparer les paramètres de stratégie de conformité des appareils.
-ms.openlocfilehash: 5b82067f7d06ddd599a0e8da73825e536cf2d3fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008416"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822898"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Comparer les paramètres de stratégie de conformité des appareils dans Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Assurez-vous que les appareils disposent d’une licence Microsoft Intune et son
 
 ## <a name="compare-policy-settings"></a>Comparer les paramètres de stratégie
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Appareils**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Conformité des appareils** > .
 
 2. Cliquez sur l'onglet **Stratégies**.
 
@@ -47,11 +47,11 @@ Assurez-vous que les appareils disposent d’une licence Microsoft Intune et son
 
 5. Sélectionnez **Comparer**.
 
-Vous pouvez filtrer les résultats pour voir **Paramètres qui diffèrent**, **Paramètres qui correspondent** ou **paramètres configurés**.
+Vous pouvez filtrer les résultats pour afficher **les paramètres qui diffèrent**, **les paramètres correspondants** ou **les paramètres configurés**.
 
 ## <a name="configure-a-policy-setting"></a>Configurer un paramètre de stratégie
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Appareils**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Conformité des appareils** > .
 
 2. Cliquez sur l'onglet **Stratégies**.
 
@@ -65,7 +65,7 @@ Vous pouvez filtrer les résultats pour voir **Paramètres qui diffèrent**, **P
 
 Lorsque vous apportez des ajustements de stratégie, veillez à évaluer vos modifications par rapport à vos paramètres de base de référence actuels. Pour plus d’informations, consultez [Vue d’ensemble de l’utilisation des bases de référence pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Qu’est-ce que l’inscription des appareils dans Intune ?](/mem/intune/enrollment/device-enrollment) (article)  
 [Utiliser des stratégies de conformité pour définir des règles pour les appareils que vous gérez avec Intune](/mem/intune/protect/device-compliance-get-started) (article)  

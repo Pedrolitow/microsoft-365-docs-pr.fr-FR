@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment réapprovisionner un Windows 365 PC Cloud dans Microsoft 365 Lighthouse.
-ms.openlocfilehash: 4c292b3feda03045703be03d81006bd274239e6b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9ce402d1db83b07653c3e93a5e1e1c25406ae3e9
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017525"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822938"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Réapprovisionner un Windows 365 PC Cloud dans Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Vous devez être administrateur de PC cloud dans le locataire partenaire.
 
 ## <a name="reprovision-a-windows-365-cloud-pc"></a>Réapprovisionner un Windows 365 PC Cloud
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Windows 365**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Appareils** >  **Windows 365**.
 
 2. Sélectionnez l’onglet **Tous les PC cloud** .
 
@@ -51,7 +51,7 @@ Vous devez être administrateur de PC cloud dans le locataire partenaire.
 
 ## <a name="check-the-device-action-status"></a>Vérifier l’état de l’action de l’appareil
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Windows 365**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Appareils** >  **Windows 365**.
 
 2. Sélectionnez l’onglet **Tous les PC cloud** .
 
@@ -61,7 +61,7 @@ Vous devez être administrateur de PC cloud dans le locataire partenaire.
 
 L’onglet affiche toutes les actions actuelles mises en file d’attente pour cet appareil, y compris le type d’action, l’état et l’horodatage.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de l’approvisionnement](/windows-365/enterprise/provisioning) (article)\
 [Modifier les stratégies d’approvisionnement](/windows-365/enterprise/edit-provisioning-policy) (article)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements médicaux électroniques (EHR) du système Epic de votre organisation vers Microsoft 365. Cela vous permet d’utiliser les données DSE Epic dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: c2caef93a8bb1c5cb272e0420b0c3ab8cfe4499b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624044"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822776"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit d’ehR Epic (préversion)
 
@@ -36,6 +36,8 @@ La configuration d’un connecteur Epic se compose des tâches suivantes :
 - Exécution d’un script pour envoyer (push) les enregistrements d’audit d’ehr epic au point de terminaison de l’API.
 
 - Vous pouvez également planifier l’exécution automatique du script pour importer des enregistrements d’audit.
+
+Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 

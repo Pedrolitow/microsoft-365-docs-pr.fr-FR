@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher un PC cloud d’entreprise ayant échoué à la connexion réseau.
-ms.openlocfilehash: 20ec4d5157e215de29f8777a7a177cf51f912383
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 273e0737cbe59d9ecae40fad0c114f58881a5d05
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015719"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823400"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Afficher une connexion réseau d’entreprise pc cloud ayant échoué dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires clients et Azure Active Directory (Azure AD). Lorsqu’un PC cloud a une connexion réseau ayant échoué, vous pouvez afficher des informations détaillées dans le centre d’administration Microsoft Endpoint Manager.
+Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires clients et Azure Active Directory (Azure AD). Lorsqu’un PC cloud a une connexion réseau ayant échoué, vous pouvez afficher des informations détaillées dans le Centre d’administration Microsoft Endpoint Manager.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -35,7 +35,7 @@ Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires cli
 
 ## <a name="view-a-failed-network-connection"></a>Afficher une connexion réseau ayant échoué
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Windows 365**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Appareils** >  **Windows 365**.
 
 2. Sélectionnez l’onglet **Connexions réseau Azure** .
 
@@ -43,13 +43,13 @@ Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires cli
 
 4. Dans la liste filtrée, sélectionnez **Afficher les détails de la connexion dans Microsoft Endpoint Manager** en regard de la connexion à examiner.
 
-5. Dans le centre d’administration Microsoft Endpoint Manager, sélectionnez **Afficher les détails** pour en savoir plus sur l’erreur.
+5. Dans le Centre d’administration Microsoft Endpoint Manager, sélectionnez **Afficher les détails** pour en savoir plus sur l’erreur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour résoudre les problèmes de connexion, consultez [Résolution des problèmes de connexion réseau locale](/windows-365/enterprise/troubleshoot-on-premises-network-connection).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Contrôle d’accès en fonction du rôle pc cloud ](/windows-365/enterprise/role-based-access)(article)\
 [Jonction de domaine Active Directory](/windows-365/enterprise/troubleshoot-on-premises-network-connection#active-directory-domain-join) (article)\

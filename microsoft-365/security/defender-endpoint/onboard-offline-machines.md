@@ -1,7 +1,7 @@
 ---
-title: Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
+title: Intégrer des appareils sans accès Internet à Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Intégrer des appareils sans accès à Internet afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint
+description: Intégrer des appareils sans accès Internet afin qu’ils puissent envoyer des données de capteur au capteur Microsoft Defender pour point de terminaison
 keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,64 +15,52 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83f0f53e2d2376975f853d826531e749732416b7
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 33b539018f479c1b023a656ab056ca892d27e526
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754308"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822178"
 ---
-# <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
+# <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Intégrer des appareils sans accès Internet à Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Pour les appareils sans connexion Internet directe, l’utilisation d’une solution proxy est l’approche recommandée. Pour les anciens appareils Windows intégrés à l’aide de la solution MMA précédente, l’utilisation de la solution de passerelle OMS offre une autre approche. Pour plus d’informations sur les méthodes d’intégration, consultez les articles suivants :
+- [Intégrer des versions antérieures de Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [Intégrer des serveurs au service Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 
-Pour intégrer des appareils sans accès à Internet, vous devez suivre les étapes générales suivantes :
+> [!IMPORTANT]
+> - Windows ou Windows Server dans des environnements déconnectés doit être en mesure de mettre à jour les listes d’approbation de certificats hors connexion via un fichier interne ou un serveur web.
+> - Pour plus d’informations sur la mise à jour des listes CTL hors connexion, consultez [Configurer un fichier ou un serveur web pour télécharger les fichiers CTL](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
 
-> [!IMPORTANT] 
-> Les étapes suivantes s’appliquent uniquement aux appareils exécutant des versions Windows à l’aide de la solution MMA. Pour plus d’informations, [voir Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+## <a name="devices-running-windows-10-or-later-windows-server-2012-r2-or-later-linux-and-macos"></a>Appareils exécutant Windows 10 ou version ultérieure, Windows Server 2012 R2 ou version ultérieure, Linux et macOS
+
+Selon le système d’exploitation, le proxy à utiliser pour Microsoft Defender pour point de terminaison peut être configuré automatiquement, généralement à l’aide de la découverte automatique ou d’un fichier de configuration automatique, ou statiquement spécifique aux services Defender pour point de terminaison exécutés sur l’appareil.
+
+- Pour les appareils Windows, consultez [Configurer le proxy d’appareil et les paramètres de connectivité Internet](/microsoft-365/security/defender-endpoint/configure-proxy-internet)
+- Pour les appareils Linux, consultez [Configurer Microsoft Defender pour point de terminaison sur Linux pour la découverte de proxy statique](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration)
+- Pour les appareils macOS, veuillez référencer [Microsoft Defender pour point de terminaison sur Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac#network-connections)
+
+## <a name="windows-devices-running-the-previous-mma-based-solution"></a>Appareils Windows exécutant la solution MMA précédente
 
 > [!NOTE]
-> - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les périphériques Windows ou Windows Server déconnectés lorsqu’il est configuré via le Registre ou l’GPO « TelemetryProxyServer ».
-> - Pour Windows ou Windows Server : alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy ou une appliance standard.
-> - En outre, Windows ou Windows Server dans les environnements déconnectés doit être en mesure de mettre à jour les listes d’autorisation de certificat hors connexion via un fichier interne ou un serveur web.
-> - Pour plus d’informations sur la mise à jour des fichiers CTL hors connexion, voir Configurer un fichier ou un serveur [web pour télécharger les fichiers CTL](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
+> - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les appareils Windows ou Windows Server déconnectés lorsqu’il est configuré via le registre « TelemetryProxyServer » ou l’objet de stratégie de groupe.
+> - Pour Windows ou Windows Server , bien que vous puissiez utiliser TelemetryProxyServer, il doit pointer vers un appareil proxy standard ou une appliance.
 
-Pour plus d’informations sur les méthodes d’intégration, consultez les articles suivants :
-- [Intégrer des versions antérieures de Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
-- [Intégrer des serveurs au service Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
-- [Configurer les paramètres de proxy du dispositif et de connectivité Internet](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
-
-## <a name="devices-running-the-previous-mma-based-solution"></a>Appareils exécutant la solution MMA précédente
-
-- Configurer Azure Log Analytics (anciennement appelé passerelle OMS) pour qu’il agisse en tant que proxy ou hub :
+- Configurez Azure Log Analytics (anciennement passerelle OMS) pour agir en tant que proxy ou hub :
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vers la clé d’espace de travail Defender for Endpoint & ID
+  - [Installer et configurer Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) pointent vers la clé de l’espace de travail Defender pour point de terminaison & ID
 
 [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 
-- Appareils hors connexion dans le même réseau d’Azure Log Analytics
-  - Configurez MMA pour qu’il pointe vers :
-    - Adresse IP Azure Log Analytics en tant que proxy
-    - Clé d’espace de travail Defender for Endpoint & ID
+### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender pour le cloud
 
-### <a name="azure-virtual-machines"></a>Machines virtuelles Azure
-
-- Pour les appareils exécutant la solution MMA précédente, configurer Azure Log Analytics Gateway (anciennement passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
-    - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vers la clé d’espace de travail Defender for Endpoint & ID
-- Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS
-    - Configurer l’adresse IP Azure Log Analytics en tant que proxy
-    - ID de clé d’espace de & Azure Log Analytics
-- Microsoft Defender pour le cloud
-    - [Espace de travail Analyse des \> journaux de stratégie de sécurité](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-    - [Détection des menaces \> : autoriser Defender pour le point de terminaison à accéder à mes données](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-
-    Pour plus d’informations, voir [Working with security policies](/azure/security-center/tutorial-security-policy).
+- Passez en revue la section prérequis dans [Protéger vos points de terminaison avec la solution EDR intégrée de Defender pour Cloud : Microsoft Defender pour point de terminaison](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)

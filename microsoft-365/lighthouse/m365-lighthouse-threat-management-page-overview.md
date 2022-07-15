@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page gestion des menaces.
-ms.openlocfilehash: 3d7376b2438ca24cdcf9b6e73d8bfb2cc7daa6de
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2bf9a778e5a8c9c22ea290356bb5e16d6553b009
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012557"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823472"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Gestion des menaces dans Microsoft 365 Lighthouse 
 
@@ -30,9 +30,9 @@ ms.locfileid: "66012557"
 
 - Windows
 
-Antivirus Microsoft Defender protège les locataires, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows.  
+L’Antivirus Microsoft Defender protège les locataires, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les logiciels malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows.  
   
-Pour accéder à la page Gestion des menaces dans Microsoft 365 Lighthouse, sélectionnez **Gestion des menaces** dans le volet de navigation gauche pour afficher la posture de sécurité de vos locataires clients contre les menaces. Vous verrez des locataires, des utilisateurs et des appareils qui nécessitent votre attention et des recommandations qui vous aideront à réduire les risques.  
+Pour accéder à la page gestion des menaces dans Microsoft 365 Lighthouse, sélectionnez **Gestion des menaces** **des appareils** >  dans le volet de navigation gauche pour afficher la posture de sécurité de vos locataires clients contre les menaces. Vous verrez des locataires, des utilisateurs et des appareils qui nécessitent votre attention et des recommandations qui vous aideront à réduire les risques.  
   
 ## <a name="overview-tab"></a>Onglet Overview  
   
@@ -58,7 +58,7 @@ Le tableau suivant répertorie les différents états de menace et leur définit
 | État de la menace | Définition |
 |---|---|
 | Actif | La menace est active sur l’appareil. |
-| Aucun état | L’état de la menace n’est pas disponible. Exécutez une analyse complète sur l’appareil pour que Antivirus Microsoft Defender réétection de la menace. |
+| Aucun état | L’état de la menace n’est pas disponible. Exécutez une analyse complète sur l’appareil pour que l’Antivirus Microsoft Defender redéecte la menace. |
 | Échec de l’action | L’appareil n’est pas à risque. Une action a échoué, mais une menace potentielle a été arrêtée et n’est pas active sur l’appareil. Exécutez une analyse complète sur l’appareil. |
 | Étapes manuelles requises | La menace a été arrêtée, mais elle nécessite une étape manuelle, telle qu’une analyse complète ou un redémarrage de l’appareil. |
 | Analyse complète requise | Une analyse complète de l’appareil est nécessaire. |
@@ -66,16 +66,16 @@ Le tableau suivant répertorie les différents états de menace et leur définit
 | Corrigé avec des échecs non critiques | La menace a été corrigée et aucune autre action n’est nécessaire. |
 | Quarantaine | La menace a été mise en quarantaine. Aucune autre action n’est nécessaire. |
 | Supprimé | La menace a été supprimée de l’appareil. Aucune autre action n’est nécessaire. |
-| Nettoyé | Antivirus Microsoft Defender a récupéré et désinfecté des fichiers. Aucune autre action n’est nécessaire. |
+| Nettoyé | L’Antivirus Microsoft Defender a récupéré et désinfecté des fichiers. Aucune autre action n’est nécessaire. |
 | Autorisé | La menace est autorisée par un administrateur à rester sur l’appareil. | 
 
 ## <a name="antivirus-protection-tab"></a>Onglet Protection antivirus
 
-L’onglet Protection antivirus de la page gestion des menaces affiche les appareils sur tous vos locataires et leur état de protection Antivirus Microsoft Defender. Vous pouvez évaluer l’état et prendre des mesures pour un ou plusieurs appareils susceptibles d’être vulnérables. Vous pouvez également sélectionner un appareil pour afficher plus d’informations, telles que Vue d’ensemble de l’appareil, Menaces actuelles et État de l’action de l’appareil.
+L’onglet Protection antivirus de la page gestion des menaces affiche les appareils sur tous vos locataires et leur état de protection antivirus Microsoft Defender. Vous pouvez évaluer l’état et prendre des mesures pour un ou plusieurs appareils susceptibles d’être vulnérables. Vous pouvez également sélectionner un appareil pour afficher plus d’informations, telles que Vue d’ensemble de l’appareil, Menaces actuelles et État de l’action de l’appareil.
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Capture d’écran de l’onglet Antivirus.":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)

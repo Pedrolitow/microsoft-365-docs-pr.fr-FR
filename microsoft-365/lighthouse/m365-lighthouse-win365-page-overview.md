@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Windows 365 (PC cloud).
-ms.openlocfilehash: dded3bc455a66a77ae325f1d6a54660a88846c1e
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 1698c9298981778cb01e01715b794dd43a4daf3c
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787229"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823461"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse  
   
@@ -33,7 +33,7 @@ Pour plus d’informations sur Windows 365, voir [Qu’est-ce que Windows 365 ?]
 > [!IMPORTANT]
 > Vous devez accéder à [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) pour provisionner des PC cloud pour chaque locataire client avant de pouvoir les gérer dans Lighthouse. Vous ne pouvez pas approvisionner à partir de Lighthouse.
 
-Une fois que vous avez approvisionné des PC cloud pour votre locataire client, la carte Windows 365 sur la page d’accueil de Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’être actionnés, comme le nombre de PC cloud qui n’ont pas pu être approvisionnés et les échecs de connexion réseau Azure. Pour obtenir un état détaillé, sélectionnez le bouton de la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC cloud affectés à vos locataires clients, afficher la liste de tous les PC cloud que vous gérez et les locataires auxquels ils sont affectés, et afficher les connexions réseau Azure entre vos locataires clients et Azure Active Directory (Azure AD) et leur état.
+Une fois que vous avez approvisionné des PC cloud pour votre locataire client, la carte Windows 365 sur la page d’accueil de Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’être actionnés, comme le nombre de PC cloud qui n’ont pas pu être approvisionnés et les échecs de connexion réseau Azure. Pour obtenir un état détaillé, sélectionnez le bouton de la carte Windows 365 (ou sélectionnez **Appareils** >  **Windows 365** dans le volet de navigation gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC cloud affectés à vos locataires clients, afficher la liste de tous les PC cloud que vous gérez et les locataires auxquels ils sont affectés, et afficher les connexions réseau Azure entre vos locataires clients et Azure Active Directory (Azure AD) et leur état.
 
 ## <a name="overview-tab"></a>Onglet Overview
 
@@ -101,7 +101,7 @@ L’onglet Connexions réseau Azure inclut également les options suivantes :
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Capture d’écran de l’onglet Connexions réseau Azure." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Qu’est-ce que Windows 365 ?](/windows-365/overview) (article)\
 [Windows 365 vue d’ensemble de la gestion des appareils pour les PC cloud](/windows-365/enterprise/device-management-overview) (article)\

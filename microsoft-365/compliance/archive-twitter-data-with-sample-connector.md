@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
-ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 83558b4a2f188853b4deac31cf636476480a2557
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625546"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822244"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur Microsoft pour archiver les données Twitter (préversion)
 
@@ -29,6 +29,8 @@ Utilisez un connecteur dans le portail de conformité Microsoft Purview pour imp
 Une fois les données Twitter importées, vous pouvez appliquer aux données Twitter des fonctionnalités de Microsoft Purview telles que la conservation des litiges, la recherche de contenu, l’archivage In-Place, l’audit et les stratégies de rétention Microsoft 365. Par exemple, lorsqu’une boîte aux lettres est placée en attente de litige ou affectée à une stratégie de rétention, les données Twitter sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Twitter sont stockées avec un consignateur dans un cas Microsoft Purview eDiscovery (Premium). L’utilisation d’un connecteur pour importer et archiver des données Twitter dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 Une fois les données Twitter importées, vous pouvez appliquer des fonctionnalités Microsoft Purview telles que la conservation des litiges, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données stockées dans la boîte aux lettres. Par exemple, vous pouvez rechercher des données Twitter à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données sont stockées avec un consignateur dans un cas eDiscovery (Premium). L’utilisation d’un connecteur pour importer et archiver des données Twitter dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+
+Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 

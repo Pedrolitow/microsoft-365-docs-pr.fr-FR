@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données du système de badging physique de leur organisation vers Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e34706e7fc6be5d813d718e0d927859ca91d9ee8
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641425"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823106"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de badging physiques (préversion)
 
@@ -37,6 +37,8 @@ La configuration d’un connecteur de badging physique se compose des tâches su
 - Exécution d’un script pour envoyer (push) les données de badging physiques au point de terminaison de l’API.
 
 - Si vous le souhaitez, vous pouvez planifier l’exécution automatique du script pour importer des données actuellement incorrectes physiques.
+
+Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
@@ -231,7 +233,7 @@ Une fois que vous avez créé le connecteur de badging physique et envoyé (push
 
    ![Le fichier journal du connecteur de badging physique affiche le nombre d’objets du fichier JSON qui ont été chargés.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   Le champ **RecordsSaved** indique le nombre d’enregistrements dans le fichier JSON qui ont été chargés. Par exemple, si le fichier JSON contient quatre enregistrements, la valeur des champs **RecordsSaved** est 4 si le script a correctement chargé tous les enregistrements dans le fichier JSON. Le champ **RecordsSkipped** indique le nombre d’enregistrements du fichier JSON qui ont été ignorés. Avant de charger des enregistrements dans le fichier JSON, les ID d’e-mail des enregistrements sont validés. Tout enregistrement avec un ID d’e-mail non valide est ignoré et l’ID e-mail correspondant s’affiche dans le champ **EmailIdsNotSaved**.
+   Le champ **RecordsSaved** indique le nombre d’enregistrements dans le fichier JSON qui ont été chargés. Par exemple, si le fichier JSON contient quatre enregistrements, la valeur des champs **RecordsSaved** est 4 si le script a correctement chargé tous les enregistrements dans le fichier JSON. Le champ **RecordsSkipped** indique le nombre d’enregistrements du fichier JSON qui ont été ignorés. Avant de charger des enregistrements dans le fichier JSON, les ID Email des enregistrements sont validés. Tout enregistrement avec un ID de Email non valide est ignoré et l’ID de Email correspondant s’affiche dans le champ **EmailIdsNotSaved**
 
 Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
 

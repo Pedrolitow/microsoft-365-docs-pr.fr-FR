@@ -2,7 +2,7 @@
 
 ## [Vue d’ensemble]()
 ### [Qu’est-ce que Microsoft Defender pour point de terminaison ?](microsoft-defender-endpoint.md)
-### [Playbook d’évaluation : tirez le meilleur parti de votre version d’évaluation](defender-endpoint-trial-playbook.md)
+### [Playbook d’évaluation : tirez le meilleur parti de votre version d’évaluation](defender-endpoint-trial-playbook.md).
 ### [Comparer les plans de Défenseur pour points de terminaison](defender-endpoint-plan-1-2.md)
 ### [Configuration minimale requise](minimum-requirements.md)
 ### [Qu’est-ce qui est nouveau dans Microsoft Defender pour point de terminaison ?](whats-new-in-microsoft-defender-endpoint.md)
@@ -55,7 +55,6 @@
 #### [Intégrer le client Windows à l’aide d’un script local](configure-endpoints-script.md)
 #### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 #### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Intégrer des appareils sans accès à Internet](onboard-offline-machines.md)
 #### [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Intégration de à Microsoft Defender pour le cloud](azure-server-integration.md)
 ### [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)
 ### [Exécuter des attaques simulées sur des appareils](attack-simulations.md)
+### [Intégrer des appareils sans accès à Internet](onboard-offline-machines.md)
 ### [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
 ### [Créer une règle de notification d’intégration ou de retrait](onboarding-notification.md)
 
@@ -247,7 +247,7 @@
 ### [Réduction de la surface d’attaque]()
 #### [Présentation de la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
 #### [Règles de réduction de la surface d’attaque (ASR)]()
-##### [Découvrez les règles du RSA](attack-surface-reduction.md)
+##### [Découvrez les règles du RSA](attack-surface-reduction.md).
 ##### [Guide de déploiement des règles de réduction de surface d’attaque (ASR)]()
 ###### [Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment.md)
 ###### [Planifier le déploiement des règles de réduction de surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-plan.md)

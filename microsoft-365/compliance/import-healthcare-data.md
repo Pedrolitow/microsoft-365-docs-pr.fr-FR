@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (DSE) à partir de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: be5429ea1a5fb4e2e2be6a7029f2401fcbdab94e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641381"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822954"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit DSE de santé (préversion)
 
@@ -36,6 +36,8 @@ La configuration d’un connecteur Healthcare se compose des tâches suivantes :
 - Exécution d’un script pour envoyer (push) les données d’audit DSE de santé au point de terminaison de l’API.
 
 - Vous pouvez également planifier l’exécution automatique du script pour importer les données d’audit.
+
+Si vous souhaitez participer à la préversion, contactez l’équipe à dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
@@ -71,7 +73,7 @@ Le tableau suivant répertorie les champs qui sont nécessaires pour activer les
 | Nom de *l’événement heure<br/>* de création<br/>ID de station de travail<br/>Section d’événements<br/>Catégorie de l'événement |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système de DSE de santé.|
 | Patient Reg Id<br/>Nom du *patient prénom patient prénom <br/>patient nom de famille<br/>* <br/>Ligne d’adresse du patient 1* <br/>Ligne d’adresse du patient 2<br/>Ville du patient* <br/>Code postal du patient*  <br/>État du patient <br/>Pays du patient <br/>Service des patients              | Ces champs sont utilisés pour identifier les informations de profil des patients.|
 | Raison de l’accès restreint*<br/> Commentaire d’accès restreint | Ces champs sont utilisés pour identifier l’accès aux enregistrements restreints.|
-| Adresse e-mail (UPN) ou SamAccountName*<br/>Nom d’utilisateur de l’employé <br/> ID d’employé <br/> Nom de l’employé <sup>1</sup> <br/> Prénom de l’employé <sup>1</sup> | Ces champs sont utilisés pour identifier les informations de profil d’employé pour la correspondance d’adresse et de nom requises pour déterminer l’accès aux enregistrements famille/voisin/employé. |
+| Email Address (UPN) ou SamAccountName*<br/>Nom d’utilisateur de l’employé <br/> ID d’employé <br/> Nom de l’employé <sup>1</sup> <br/> Prénom de l’employé <sup>1</sup> | Ces champs sont utilisés pour identifier les informations de profil d’employé pour la correspondance d’adresse et de nom requises pour déterminer l’accès aux enregistrements famille/voisin/employé. |
 |||
 
 > [!NOTE] 

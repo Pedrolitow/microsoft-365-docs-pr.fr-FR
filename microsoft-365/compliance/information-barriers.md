@@ -17,16 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621114"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823382"
 ---
 # <a name="learn-about-information-barriers"></a>En savoir plus sur les obstacles aux informations
 
-Microsoft Purview Information Barriers (IB) est une solution de conformité qui vous permet de restreindre la communication bidirectionnelle et la collaboration entre les groupes et les utilisateurs dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Souvent utilisé dans les secteurs hautement réglementés, IB peut aider à éviter les conflits d’intérêts et à protéger les informations internes entre les utilisateurs et les domaines organisationnels.
+Microsoft Purview Information Barriers (IB) est une solution de conformité qui vous permet de restreindre la communication bidirectionnelle et la collaboration entre les groupes et les utilisateurs dans Microsoft Teams, SharePoint et OneDrive. Souvent utilisé dans les secteurs hautement réglementés, IB peut aider à éviter les conflits d’intérêts et à protéger les informations internes entre les utilisateurs et les domaines organisationnels.
 
 Lorsque des stratégies d’ib sont en place, les utilisateurs qui ne doivent pas communiquer ou partager des fichiers avec d’autres utilisateurs spécifiques ne peuvent pas trouver, sélectionner, discuter ou appeler ces utilisateurs. Les stratégies IB mettent automatiquement en place des contrôles pour détecter et empêcher toute communication et collaboration non autorisées entre des groupes et des utilisateurs définis. Les stratégies IB sont indépendantes des [limites de conformité](/microsoft-365/compliance/set-up-compliance-boundaries) pour les investigations eDiscovery qui contrôlent les emplacements de contenu utilisateur que les gestionnaires eDiscovery peuvent rechercher.
 
@@ -61,7 +61,7 @@ Pour plus d’informations, consultez [les obstacles à l’information dans Mic
 
 ## <a name="information-barriers-and-sharepoint-and-onedrive"></a>Obstacles à l’information et SharePoint et OneDrive
 
-Dans SharePoint Online et OneDrive, les stratégies IB détectent et empêchent les types de collaboration non autorisés suivants :
+Dans SharePoint et OneDrive, les stratégies IB détectent et empêchent les types de collaboration non autorisés suivants :
 
 - Ajout d’un membre à un site
 - Accès au site ou au contenu par un utilisateur
