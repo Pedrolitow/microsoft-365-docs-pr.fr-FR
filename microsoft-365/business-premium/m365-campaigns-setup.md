@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble de la configuration de Microsoft 365 Entreprise pour les campagnes ou d’autres entreprises
-ms.openlocfilehash: d9a265ee291bce197fd59f6a27a2ad5c85392945
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5e8669b92297688119e9262e0d2f14d1ecfae3a2
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642637"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770936"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Configuration de Microsoft 365 Entreprises
 
@@ -44,7 +44,7 @@ Assurez-vous de respecter les exigences suivantes avant de commencer votre proce
 | Abonnement | Microsoft 365 Business Premium ou Microsoft 365 campagnes <br/><br/> Pour démarrer une version d’évaluation ou acheter votre abonnement, consultez les articles suivants : <br/>- [Obtenir Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Obtenir Microsoft 365 campagnes](get-microsoft-365-campaigns.md) |
 | Autorisations  | Pour terminer le processus de configuration initiale, vous devez être Administrateur général. [En savoir plus sur les rôles d’administrateur](../admin/add-users/about-admin-roles.md). |
 | Configuration requise pour le navigateur | Microsoft Edge, Safari, Chrome ou Firefox. [En savoir plus sur les exigences du navigateur](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Système d’exploitation | **Windows** : Windows 11, Windows 10, Windows 8.1, Windows Server 2019 ou version ultérieure, ou Windows Server 2016<br/><br/>**macOS** : l’une des trois versions les plus récentes de macOS |
+| Système d’exploitation | **Windows** : Windows 11, Windows 10, Windows 8.1, Windows Server 2019 ou version ultérieure, ou Windows Server 2016<br/><br/>**Mad** : L’une des trois versions les plus récentes de macOS. |
 
 > [!TIP]
 > Pour plus d’informations sur Microsoft 365, Office et la configuration système requise, consultez [Microsoft 365 et ressources Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -103,4 +103,4 @@ Pour aider votre personnel à découvrir les étapes à suivre pour protéger vo
 
 ## <a name="next-objective"></a>Objectif suivant
 
-Une fois que vous avez atteint ces objectifs, accédez à [augmentez les protections de sécurité](m365bp-security-overview.md).
+Une fois que vous avez atteint ces objectifs, passez à [renforcer la sécurité](m365bp-security-overview.md).
