@@ -23,30 +23,30 @@ search.appverid:
 - BCS160
 - MET150
 description: Comment configurer des appareils gérés
-ms.openlocfilehash: 0ebaf9246daa9f364702954c657a1af7e7e262f2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a5498fc89a135a90d192b2b7ddb7165527e13123
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636993"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773118"
 ---
 # <a name="set-up-managed-devices"></a>Configurer les appareils gérés
 
-Un appareil « géré » est un appareil sous contrôle et surveillé par l’organisation. Il est donc régulièrement mis à jour et sécurisé. Le fait de disposer d’appareils sous contrôle géré est un objectif essentiel. Pour contrôler ces appareils, ils sont inscrits dans un gestionnaire d’appareils avec Intune et Azure Active Directory Premium, qui sont tous deux inclus dans Microsoft Business Premium. 
-
-Un PC Windows 10 ou 11 est considéré comme géré après que les utilisateurs ont effectué les deux étapes suivantes :
+Un appareil « géré » est un appareil sous contrôle et surveillé par l’organisation. Il est donc régulièrement mis à jour et sécurisé. Le fait de disposer d’appareils sous contrôle géré est un objectif essentiel. Pour contrôler ces appareils, ils sont inscrivez-les dans un gestionnaire d’appareils avec Microsoft Intune et Azure Active Directory Premium, qui sont tous deux inclus dans Microsoft Business Premium.
 
 1. Configurez les stratégies de protection des appareils et des données dans l’[Assistant Installation](../business/set-up.md).
 
 2. Connectez l’ordinateur à [Azure Active Directory](../business/set-up-windows-devices.md) avec son nom d’utilisateur et son mot de passe Microsoft 365. 
 
-## <a name="enroll-devices-in-microsoft-endpoint-manager"></a>Inscrire des appareils dans Microsoft Endpoint Manager
+## <a name="enroll-devices-in-intune"></a>Inscrire des appareils dans Intune
 
-Maintenant vous pouvez inscrire les appareils dans Endpoint Manager. Accédez et https://endpoint.microsoft.com sélectionnez **Appareils** > **Inscrire des appareils**. 
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) et connectez-vous.
 
-:::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Utilisez Microsoft Endpoint Manager pour inscrire des appareils."::: 
+2. Sélectionnez **Appareils** > **Inscrire des appareils**. 
 
-Suivez les instructions d’inscription d’appareils spécifiques ci-dessous.
+   :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Utilisez Microsoft Endpoint Manager pour inscrire des appareils."::: 
+
+3. Suivez les instructions d’inscription d’appareils spécifiques ci-dessous.
 
 ### <a name="for-windows-enrollment"></a>Pour l’inscription Windows :
 
@@ -76,5 +76,5 @@ Suivez les instructions d’inscription d’appareils spécifiques ci-dessous.
 
 ## <a name="next-objective"></a>Objectif suivant
 
-Utilisez les conseils suivants pour [intégrer les appareils](m365bp-onboard-devices-mdb.md).
+Suivez les instructions suivantes pour [intégrer des appareils vers les fonctionnalités de Defender for Business](m365bp-onboard-devices-mdb.md).
 
