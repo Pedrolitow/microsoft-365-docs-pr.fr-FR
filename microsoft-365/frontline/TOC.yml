@@ -1,0 +1,149 @@
+- name: Microsoft 365 for frontline workers
+  href: index.yml
+  items:
+    - name: Prise en main de Microsoft 365 for frontline workers
+      href: flw-overview.md
+    - name: Choisissez vos scénarios
+      href: flw-choose-scenarios.md
+    - name: Essayez Microsoft 365 for frontline workers
+      href: flw-trial.md
+    - name: Installer et configurer
+      items:
+        - name: Vue d’ensemble
+          href: flw-deploy-overview.md
+        - name: 'Gestionnaires : mettez votre équipe au travail'
+          href: get-up-and-running.md
+        - name: Commencez par un déploiement pilote
+          href: flw-pilot.md
+        - name: Configurer Microsoft 365 et Teams
+          items:
+            - name: Configurer Microsoft 365 et les services associés
+              href: flw-setup-microsoft-365.md
+            - name: Déployer des équipes à grande échelle
+              href: deploy-teams-at-scale.md
+            - name: Intégrer vos utilisateurs à l’Assistant Intégration
+              href: flw-onboarding-wizard.md
+        - name: Gestion des appareils
+          items:
+            - name: Gérer les appareils partagés et personnels
+              href: flw-devices.md
+            - name: Se connecter à Teams
+              href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Se déconnecter de Teams
+              href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Configurer les paramètres Teams pour les employés de première ligne
+          items:
+            - name: Personnaliser les applications Teams pour vos employés de première ligne
+              href: pin-teams-apps-based-on-license.md
+            - name: Packages de stratégie Teams pour les responsables et les travailleurs de première ligne
+              href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Messagerie sécurisée
+              href: messaging-policies-hc.md
+            - name: Délégation de messages
+              href: hc-delegates.md
+        - name: Passer de l’entreprise à l’employé de première ligne
+          items:
+            - name: Options de licence pour les employés de première ligne
+              href: flw-licensing-options.md
+            - name: Considérations relatives au passage de E à F
+              href: switch-from-enterprise-to-frontline.md
+    - name: Communications
+      items:
+        - name: Collaboration de l’équipe de première ligne
+          href: flw-team-collaboration.md
+        - name: Communications d’entreprise avec les employés de première ligne
+          href: flw-corp-comms.md
+    - name: Bien-être et engagement
+      items:
+        - name: Impliquez vos employés et concentrez-vous sur le bien-être
+          href: flw-wellbeing-engagement.md
+    - name: Formation et intégration
+      items:
+        - name: Intégrer et former des employés
+          href: flw-onboarding-training.md
+    - name: Gestion de la planification
+      items:
+        - name: Prise en main de Shifts pour Teams
+          href: shifts-for-teams-landing-page.md
+        - name: Gérer les propriétaires de planification pour la gestion de shift
+          href: schedule-owner-for-shift-management.md
+        - name: Gérez l’accès basé sur les roulements dans Teams
+          href: manage-shift-based-access-flw.md
+        - name: Connecteurs de Plannings
+          items:
+            - name: Vue d’ensemble
+              href: shifts-connectors.md
+            - name: Utiliser l’Assistant Connexion Shifts pour configurer une connexion à Blue Yonder WFM
+              href: shifts-connector-wizard.md
+            - name: Utiliser PowerShell pour configurer une connexion à Blue Yonder WFM
+              href: shifts-connector-blue-yonder-powershell-setup.md
+            - name: Utiliser PowerShell pour gérer vos Shifts dans la connexion à Blue Yonder WFM
+              href: shifts-connector-powershell-manage.md
+    - name: Processus numérisés
+      items:
+        - name: Simplifiez les processus d’entreprise
+          href: simplify-business-processes.md
+    - name: Rendez-vous virtuels
+      items:
+        - name: Vue d’ensemble
+          href: virtual-appointments.md
+        - name: Rendez-vous virtuels avec Bookings et Teams
+          href: bookings-virtual-visits.md
+        - name: Rendez-vous virtuels avec Teams – Intégration à Cerner EHR
+          href: ehr-admin-cerner.md
+        - name: Rendez-vous virtuels avec Teams – Intégration à Epic EHR
+          href: ehr-admin-epic.md
+        - name: Rapport des rendez-vous virtuels du connecteur DMI
+          href: ehr-connector-report.md
+        - name: Rapport d’utilisation des visites virtuelles
+          href: virtual-visits-usage-report.md
+        - name: Gérer l’expérience de connexion sur les navigateurs
+          href: browser-join.md
+        - name: Aidez vos clients et clients à utiliser des rendez-vous virtuels
+          href: virtual-appointments-toolkit.md
+    - name: Solutions spécifiques à des secteurs
+      items:
+        - name: Services financiers
+          href: teams-for-financial-services.md
+        - name: Santé
+          items:
+            - name: Vue d’ensemble
+              href: teams-in-hc.md
+            - name: Modèles d’équipe de santé
+              href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Packages de stratégie Teams pour les soins de santé
+              href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Commerce
+          items:
+            - name: Vue d’ensemble
+              href: teams-for-retail-landing-page.md
+            - name: Utiliser les modèles d’équipe au détail
+              href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Production
+          href: teams-for-manufacturing.md
+    - name: Applications pour les employés de première ligne
+      items:
+        - name: À propos des applications dans Microsoft Teams
+          href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Vue d’ensemble de la gestion des applications dans Microsoft Teams
+          href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l'application Approbations
+          href: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Shifts
+          href: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Mises à jour
+          href: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Listes
+          href: /microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Compliment
+          href: /microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Microsoft Teams pour RealWear
+          href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Shifts
+          href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: FAQ sur les données Shifts
+          href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Tâches
+          href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Gérer l’application Talkie Walkie
+          href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json

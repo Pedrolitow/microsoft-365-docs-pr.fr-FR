@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: En savoir plus sur les licences pour SharePoint Syntex
-ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787493"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822266"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Gestion des licences pour SharePoint Syntex
 
@@ -52,8 +52,8 @@ Si vous planifiez d’utiliser un environnement Power Platform personnalisé, vo
 Accédez au [Centre d’administration Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) pour vérifier vos crédits et leur utilisation.
   
 ## <a name="additional-term-store-features"></a>Fonctionnalités supplémentaires du magasin de termes
- 
-Un abonnement à SharePoint Syntex propose les fonctionnalités de magasin de termes supplémentaires suivantes :
+
+Le fait de disposer d'une ou de plusieurs licences SharePoint Syntex dans votre organisation permet aux administrateurs SharePoint de bénéficier des fonctionnalités supplémentaires de la base de données terminologique suivantes :
  
 - Importation de l’ensemble de termes basé sur SKOS
 - Envoi de types de contenu d’entreprise à un site hub, qui les ajoute également aux sites associés et aux listes ou bibliothèques nouvellement créées
