@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0557f53ee50189969f7e2225cabd74354b28055
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f5f404df8d8cbf5d4ac755c17c2a6c07717d8360
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640475"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797970"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -104,7 +104,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
 |[Prise en charge du format PDF](#pdf-support) | En cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
-|[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En cours de révision | Déploiement : plus de 16,61 <sup>\*</sup>                   | Déploiement : 4.2208+ | Déploiement : 4.2203+ | En cours de révision |
+|[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En cours de révision | Déploiement : plus de 16,61 <sup>\*</sup>                   | Déploiement : 4.2226+ | Déploiement : 4.2203+ | En cours de révision |
 
 **Notes de bas de page :**
 
