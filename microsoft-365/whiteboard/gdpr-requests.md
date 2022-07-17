@@ -15,7 +15,7 @@ description: Découvrez comment exporter, transférer ou supprimer des informati
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
 ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2022
 ms.locfileid: "66717739"
@@ -30,7 +30,7 @@ Cet article fournit des informations sur la manière d'exporter, de transférer 
 
 ### <a name="on-windows"></a>Sur Windows
 
-Sur Windows, procédez comme suit :
+Sur Windows 10, effectuez les étapes suivantes :
 
 1. Sélectionnez le bouton **Plus** (**...**) pour le tableau blanc que vous souhaitez exporter. 
 
@@ -66,7 +66,7 @@ Pour supprimer un tableau blanc, effectuez les étapes suivantes :
 
 2. Sélectionnez **Supprimer**.
 
-Pour supprimer un fichier de tableau blanc dans OneDrive Entreprise, procédez comme suit :
+Pour supprimer un fichier de tableau blanc dans OneDrive Entreprise, procédez comme suit :
 
 1.  Accédez au dossier Tableaux blancs dans OneDrive.
 
