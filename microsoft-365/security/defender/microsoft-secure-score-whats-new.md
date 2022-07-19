@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750207"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855018"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
@@ -36,7 +36,7 @@ Pour que Microsoft Secure Score soit un meilleur représentant de votre posture 
 
 Plus vous effectuez d’actions d’amélioration, plus votre degré de sécurisation sera élevé. Pour plus d’informations, consultez [Microsoft Secure Score](microsoft-secure-score.md).
 
-Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/securescore le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
+Le score de sécurité Microsoft se trouve dans <https://security.microsoft.com/securescore> le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
 
 ## <a name="june-2022"></a>Juin 2022
 
@@ -58,8 +58,8 @@ Le score de sécurité Microsoft se trouve dans https://security.microsoft.com/s
 
 - Les nouvelles recommandations Salesforce et ServiceNow sont désormais disponibles en tant qu’actions d’amélioration du degré de sécurisation pour Microsoft Defender for Cloud Apps clients. Pour plus d’informations, consultez la [vue d’ensemble de SaaS Security Posture Management](https://aka.ms/saas_security_posture_management).
 
->[!Note]
->Les contrôles Salesforce et ServiceNow sont désormais disponibles en préversion publique.
+> [!NOTE]
+> Les contrôles Salesforce et ServiceNow sont désormais disponibles en préversion publique.
 
 ## <a name="april-2022"></a>Avril 2022
 

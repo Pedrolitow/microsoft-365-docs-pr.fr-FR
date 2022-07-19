@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b301a0bd62e0826a9ae089f51f591f575a918e0f
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756768"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855040"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -58,7 +58,7 @@ Pour plus d’informations, consultez [Configurer les fonctionnalités Spéciali
 
 ## <a name="endpoint-attack-notification"></a>Notification d’attaque de point de terminaison
 
-La notification d’attaque de point de terminaison fournit une chasse proactive aux menaces les plus importantes pour votre réseau, notamment les intrusions d’adversaires humains, les attaques mains-à-clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affichent sous la forme d’une nouvelle alerte. Le service de chasse managé comprend :
+Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notification d’attaque ciblée) permettent de rechercher de manière proactive les menaces les plus importantes pour votre réseau, notamment les intrusions d’adversaires humains, les attaques au clavier ou les attaques avancées telles que le cyber-espionnage. Ces notifications s’affichent sous la forme d’une nouvelle alerte. Le service de chasse managé comprend :
 
 - Surveillance et analyse des menaces, réduction du temps de séjour et des risques pour l’entreprise
 - Intelligence artificielle entraînée par hunter pour découvrir et hiérarchiser les attaques connues et inconnues

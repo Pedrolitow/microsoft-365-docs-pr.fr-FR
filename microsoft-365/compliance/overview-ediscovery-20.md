@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez la solution eDiscovery (Premium) dans Microsoft Purview. Cet article fournit une vue d’ensemble d’eDiscovery (Premium) dans Microsoft Purview, un outil qui vous aide à gérer les investigations internes et externes. Il décrit également les raisons commerciales de l’utilisation d’eDiscovery (Premium) pour gérer vos enquêtes juridiques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714572"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855084"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Vue d’ensemble de Microsoft Purview eDiscovery (Premium)
 
@@ -83,7 +83,7 @@ Le flux de travail intégré d’eDiscovery (Premium) dans Microsoft 365 s’ali
 
 - **Collection.** Une fois que vous avez identifié (et conservé) les sources de données pertinentes pour l’enquête, vous pouvez utiliser l’outil de recherche intégré dans eDiscovery (Premium) pour rechercher et collecter des données en direct à partir des sources de données de garde (et des sources de données non liées à la garde, le cas échéant) qui peuvent être pertinentes pour le cas.
 
-- **Traitement.** Une fois que vous avez collecté toutes les données pertinentes pour le cas, l’étape suivante consiste à les traiter pour une révision et une analyse plus poussées. Dans eDiscovery (Premium), les données sur place que vous avez identifiées lors de la phase de collecte sont copiées vers un emplacement de stockage Azure (appelé *ensemble de révisions*), ce qui vous fournit une vue statique des données de cas. 
+- **Traitement.** Une fois que vous avez collecté toutes les données pertinentes pour le cas, l’étape suivante consiste à les traiter pour une révision et une analyse plus poussées. Dans eDiscovery (Premium), les données sur place que vous avez identifiées lors de la phase de collecte sont copiées vers un emplacement de stockage Azure (appelé *ensemble de révisions*), ce qui vous fournit une vue statique des données de cas.
 
 - **Examen.** Une fois les données ajoutées à un jeu de révision, vous pouvez afficher des documents spécifiques et exécuter des requêtes supplémentaires pour réduire les données à ce qui est le plus pertinent pour le cas. Peut également annoter et baliser des documents spécifiques.
 
@@ -93,9 +93,9 @@ Le flux de travail intégré d’eDiscovery (Premium) dans Microsoft 365 s’ali
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et licences
 
-Pour plus d’informations sur les licences qui permettent à un utilisateur de bénéficier d’eDiscovery (Premium), consultez les [conseils microsoft 365 sur la sécurité & conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) et consultez la section « eDiscovery and auditing » dans le [tableau de comparaison Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145). 
+Pour plus d’informations sur les licences qui permettent à un utilisateur de bénéficier d’eDiscovery (Premium), consultez les [conseils microsoft 365 sur la sécurité & conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) et consultez la section « eDiscovery and auditing » dans le [tableau de comparaison Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-Pour plus d’informations sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users).
+Pour plus d’informations sur l’attribution de licences, consultez [Affecter des licences aux utilisateurs](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>Prise en main de la découverte électronique (Premium)
 
