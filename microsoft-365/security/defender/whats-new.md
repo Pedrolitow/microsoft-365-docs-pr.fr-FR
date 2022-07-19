@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616988"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843562"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -44,6 +44,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 Vous pouvez également obtenir des mises à jour de produit et des notifications importantes via le [centre de messages](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+
+## <a name="july-2022"></a>Juillet 2022
+- (Préversion) Les participants à la préversion publique microsoft Defender Experts for Hunting peuvent désormais se réjouir de recevoir des rapports mensuels pour les aider à comprendre les menaces que le service de chasse a exposées dans leur environnement, ainsi que les alertes générées par leurs produits Microsoft 365 Defender. Pour plus d’informations, [reportez-vous au rapport Comprendre les experts Defender pour la chasse dans Microsoft 365 Defender](defender-experts-report.md).
 
 ## <a name="june-2022"></a>Juin 2022
 - (Préversion) Les tables [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) et [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) sont désormais disponibles dans le schéma de chasse avancé. Utilisez ces tables pour rechercher les événements d’évaluation dans Defender Vulnerability Management, notamment l’état des différentes configurations et les états de la surface d’attaque des appareils.

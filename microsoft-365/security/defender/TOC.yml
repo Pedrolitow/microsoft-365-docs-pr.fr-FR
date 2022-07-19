@@ -348,6 +348,8 @@
           items:
             - name: Vue d’ensemble
               href: defenderexpertsforhuntingprev.md
+            - name: Comprendre les rapports des experts Defender pour le repérage
+              href: defender-experts-report.md
         - name: Playbooks rançongiciels
           items:
             - name: Détection des attaques par rançongiciels gérées par l’homme avec Microsoft 365 Defender

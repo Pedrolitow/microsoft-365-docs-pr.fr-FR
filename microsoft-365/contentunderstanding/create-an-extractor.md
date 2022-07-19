@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 20edce834ee9a55a9c748d59751a2f38ed08f85f
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842119"
+ms.locfileid: "66843519"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
@@ -47,9 +47,9 @@ Vous devez créer un extracteur pour chaque entité dans le document à extraire
     ![Capture d’écran de la partie Paramètres avancés du panneau Nouvel extracteur d’entité montrant l’option Type de colonne.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > Pour les extracteurs avec le type **de colonne Ligne unique de texte**, la limite de caractères maximale est de 255. Tous les caractères que vous sélectionnez dépassent la limite sont tronqués. Pour sélectionner plus de 255 caractères, choisissez le type **de colonne Plusieurs lignes de texte lors de** la création de l’extracteur.
+    > Pour les extracteurs avec le type **de colonne Ligne unique de texte**, la limite de caractères maximale est de 255. Tous les caractères que vous sélectionnez dépassent la limite sont tronqués. Pour sélectionner plus de 255 caractères, choisissez plusieurs **lignes de type de colonne de texte lors de** la création de l’extracteur.
     >
-    >Par défaut, **plusieurs lignes de texte** sont créées avec une limite à la quantité de texte qui peut être ajoutée. Dans ce cas, le texte extrait peut apparaître tronqué. Si cela se produit, le paramètre de colonne **Autoriser une longueur illimitée dans les bibliothèques de documents** peut être utilisé pour supprimer la limite.
+    >Par défaut, **plusieurs lignes de colonnes de texte** sont créées avec une limite à la quantité de texte qui peut être ajoutée. Dans ce cas, le texte extrait peut apparaître tronqué. Si cela se produit, le paramètre de colonne **Autoriser une longueur illimitée dans les bibliothèques de documents** peut être utilisé pour supprimer la limite.
 
 3. Lorsque vous avez terminé, sélectionnez **Créer**.
 

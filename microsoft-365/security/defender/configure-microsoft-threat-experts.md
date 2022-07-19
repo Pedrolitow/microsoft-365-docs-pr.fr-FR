@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e61a59e769052d69494d327b2e1770f643375ab9
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772103"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843454"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft via Microsoft 365 Defender
 
@@ -51,8 +51,6 @@ Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 36
 1. Dans le volet de navigation, accédez à **Paramètres > Points de terminaison > Fonctionnalités générales > avancées > notifications d’attaque de point de terminaison**.
 
 2. Sélectionnez **Appliquer**.
-
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Page paramètres Spécialistes des menaces Microsoft dans le portail Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 3. Entrez votre adresse e-mail afin que Microsoft puisse vous contacter à propos de votre application.
 
@@ -94,7 +92,7 @@ Si vous êtes déjà un client Microsoft Defender pour point de terminaison, vou
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulter un expert en menaces Microsoft sur les activités suspectes de cybersécurité au sein de votre organisation
 
-Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail Microsoft 365 Defender. Les experts peuvent vous aider à comprendre les menaces complexes et les notifications d’attaque ciblées. Collaborez avec des experts pour plus d’informations sur les alertes et les incidents, ou pour obtenir des conseils sur la gestion des compromissions. Obtenez des insights sur le contexte de renseignement sur les menaces décrit par le tableau de bord de votre portail.
+Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail Microsoft 365 Defender. Les experts peuvent vous aider à comprendre les menaces complexes et les notifications d’attaque de point de terminaison. Collaborez avec des experts pour plus d’informations sur les alertes et les incidents, ou pour obtenir des conseils sur la gestion des compromissions. Obtenez des insights sur le contexte de renseignement sur les menaces décrit par le tableau de bord de votre portail.
 
 > [!NOTE]
 >
