@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 91460c63b2286a8c2be4e5fe1aa94ea5ee31fec7
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686226"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882387"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -257,6 +257,17 @@ Par exemple :
 | **CONTOSO.COM** |**Correspond au nom de domaine spécifié et à tout sous-site** : <p>*://contoso.com<p>*://contoso.com/ <p>*://contoso.com/toutsoussite1 <p>*://contoso.com/toutsoussite1/toutsoussite2 (etc.) <p>**Ne correspond pas aux sous-domaines ou aux domaines non spécifiés** : <p>*://toutsousdomaine.contoso.com <p>*://toutsousdomaine.contoso.com.AU |
 | ***.CONTOSO.COM** |**Correspond au nom de domaine spécifié, à tout sous-domaine et à tout site** : <p>*://contoso.com <p>*://contoso.com/toutsoussite <p>*://contoso.com/toutsoussite1/toutsoussite2 <p>*://toutsousdomaine.contoso.com/ <p>*://toutsousdomaine.contoso.com/toutsoussite/ <p>*://toutsousdomaine1.toutsousdomaine2.contoso.com/toutsoussite/ <p>*://toutsousdomaine1.toutsousdomaine2.contoso.com/toutsoussite1/toutsoussite2 (etc.) <p>**Ne correspond pas aux domaines non spécifiés** <p>*://toutsousdomaine.contoso.com.AU/ |
 | **`www.contoso.com`** |**Correspond au nom de domaine spécifié** : <p>`www.contoso.com` <p>**Ne correspond pas à des domaines ou sous-domaines non spécifiés** <p>*://toutsousdomaine.contoso.com/, dans ce cas, vous devez placer le nom de domaine FQDN lui-même `www.contoso.com`|
+
+#### <a name="sensitive-service-domains-preview"></a>Domaines de service sensibles (préversion)
+
+Lorsque vous répertoriez un site web dans des domaines de services sensibles, vous pouvez auditer, bloquer avec remplacement ou bloquer les utilisateurs lorsqu’ils tentent d’effectuer les opérations suivantes :
+
+- imprimer à partir d’un site web
+- copier des données à partir d’un site web
+- enregistrer un site web en tant que fichiers locaux
+
+Chaque site web doit être répertorié dans un groupe de sites web et l’utilisateur doit accéder au site web via Microsoft Edge. Les domaines de service sensibles (préversion) sont utilisés conjointement avec une stratégie DLP pour les appareils. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 
+
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Paramètres supplémentaires pour le point de terminaison DLP
 

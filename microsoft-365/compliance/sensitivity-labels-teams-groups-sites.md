@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662531"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882272"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md) pour classifier et protéger les documents et les messages électroniques, vous pouvez également utiliser des étiquettes de confidentialité pour protéger du contenu dans les conteneurs suivants : sites Microsoft Teams, Microsoft 365 Groups ([anciennement les groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) et les sites Microsoft Office SharePoint Online. Pour cette protection au niveau du conteneur, utilisez les paramètres d’étiquettes suivants : 
+En plus d’utiliser des [étiquettes de confidentialité](sensitivity-labels.md) pour protéger les documents et les e-mails, vous pouvez également utiliser des étiquettes de confidentialité pour protéger le contenu dans les conteneurs suivants : sites Microsoft Teams, groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) et sites SharePoint. Pour cette protection au niveau du conteneur, utilisez les paramètres d’étiquette suivants :
 
 - Confidentialité (privée ou publique) de sites Teams et groupes Microsoft 365
 - Accès des utilisateurs externes
@@ -42,9 +42,11 @@ Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md
 > [!IMPORTANT]
 > Les paramètres pour les appareils non gérés et les contextes d’authentification fonctionnent conjointement avec l’accès conditionnel Azure Active Directory. Vous devez configurer cette fonctionnalité dépendante si vous souhaitez utiliser une étiquette de confidentialité pour ces paramètres. Des informations supplémentaires sont incluses dans les instructions qui suivent.
 
-Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement les paramètres de classification et de protection configurés au site ou au groupe.
+Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement la catégorie de confidentialité et les paramètres de protection configurés au site ou au groupe.
 
-Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la classification ni des paramètres pour les fichiers et e-mails, tels que les marques visuelles et le chiffrement. Pour que les utilisateurs puissent étiqueter leurs documents sur des sites SharePoint ou des sites d’équipe, assurez-vous que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la catégorie de confidentialité ou des paramètres pour les fichiers et les e-mails, tels que les marquages de contenu et le chiffrement. Pour que les utilisateurs puissent étiqueter leurs documents sur des sites SharePoint ou des sites d’équipe, assurez-vous que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Les étiquettes de conteneur ne prennent pas en charge l’affichage d’[autres langues](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) et n’affichent la langue d’origine que pour le nom et la description de l’étiquette.
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utilisation des étiquettes de confidentialité pour Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
