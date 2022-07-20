@@ -13,17 +13,17 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conformité et comment configurer les paramètres de confidentialité dans le Tableau blanc Microsoft.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fcdd5a61e772d273fc9620219e7772afcdcc4312
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842103"
+ms.locfileid: "66882781"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Configurer les paramètres de confidentialité dans le Tableau blanc Microsoft
 
 >[!NOTE]
-> Si vos utilisateurs souhaitent en savoir plus sur les paramètres de confidentialité par défaut et la façon dont les données de diagnostic sont collectées, dirigez-les vers la [confidentialité et la conformité du Tableau blanc Microsoft](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
+> Si vous ou vos utilisateurs souhaitez en savoir plus sur les paramètres de confidentialité par défaut, les expériences connectées facultatives et la façon dont les données de diagnostic sont collectées, dirigez-les vers la [confidentialité et la conformité du Tableau blanc Microsoft](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
 
 Si vous êtes l’administrateur du Tableau blanc Microsoft pour votre organisation, vous pouvez contrôler les éléments suivants :
 
@@ -31,13 +31,13 @@ Si vous êtes l’administrateur du Tableau blanc Microsoft pour votre organisat
 
 - Indique si les expériences connectées facultatives dans le Tableau blanc sont disponibles pour vos utilisateurs.
 
-Pour configurer le niveau des données de diagnostic, connectez-vous au [Centre d'administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) avec votre compte d’administrateur. À partir de la page d’accueil du centre d’administration, accédez à **Afficher tous les paramètres > > paramètres de l’organisation > tableau blanc**.
+Pour configurer le niveau des données de diagnostic, connectez-vous au [Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) avec votre compte d’administrateur. À partir de la page d’accueil du centre d’administration, accédez à **Afficher tous les paramètres > > paramètres de l’organisation > tableau blanc**.
 
-Pour configurer la disponibilité d’expériences connectées facultatives, utilisez le service de stratégie [cloud Office](https://docs.microsoft.com/deployoffice/admincenter/overview-office-cloud-policy-service) dans le [centre d’administration Microsoft 365 Apps](https://config.office.com). Connectez-vous avec votre compte d’administrateur et accédez à **Personnalisation > Gestion des stratégies**. La stratégie que vous souhaitez configurer est nommée : **Autoriser l’utilisation d’expériences connectées facultatives supplémentaires dans Office**.
+Pour configurer la disponibilité d’expériences connectées facultatives, utilisez le service de stratégie [cloud Office](/deployoffice/admincenter/overview-office-cloud-policy-service) dans le [centre d’administration Microsoft 365 Apps](https://config.office.com). Connectez-vous avec votre compte d’administrateur et accédez à **Personnalisation > Gestion des stratégies**. La stratégie que vous souhaitez configurer est nommée : **Autoriser l’utilisation d’expériences connectées facultatives supplémentaires dans Office**.
 
 ## <a name="diagnostic-data-setting-for-your-organization"></a>Paramètre de données de diagnostic pour votre organisation
 
-Vous pouvez choisir le niveau de [données de diagnostic](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1#diagnostic_data)collectées et envoyées à Microsoft à propos du logiciel client Tableau blanc s’exécutant sur les appareils de votre organisation. Les données de diagnostic facultatives sont envoyées à Microsoft, sauf si vous modifiez le paramètre dans le Centre d'administration Microsoft 365. Si vous choisissez d’envoyer des données de diagnostic facultatives, les données de diagnostic requises sont également incluses.
+Vous pouvez choisir le niveau de données de diagnostic collectées et envoyées à Microsoft à propos du logiciel client Tableau blanc s’exécutant sur les appareils de votre organisation. Les données de diagnostic facultatives sont envoyées à Microsoft, sauf si vous modifiez le paramètre dans le Centre d'administration Microsoft 365. Si vous choisissez d’envoyer des données de diagnostic facultatives, les données de diagnostic requises sont également incluses.
 
 En plus de **Obligatoire** ou **Facultatif**, il existe également le choix ni l’un **ni l’autre**. Si vous choisissez cette option, aucune donnée de diagnostic sur le logiciel client Tableau blanc en cours d’exécution sur l’appareil de l’utilisateur n’est envoyée à Microsoft. Toutefois, cette option limite considérablement la capacité de Microsoft à détecter, diagnostiquer et corriger les problèmes que vos utilisateurs peuvent rencontrer lors de l’utilisation du Tableau blanc.
 
@@ -45,7 +45,7 @@ Vos utilisateurs ne pourront pas modifier le niveau de données de diagnostic de
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>Paramètre d’expériences connectées facultatif pour votre organisation
 
-Vous pouvez choisir de mettre des [expériences connectées facultatives](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1?storagetype=live#optional) dans le Tableau blanc à la disposition de vos utilisateurs. Ces expériences connectées seront disponibles pour vos utilisateurs, sauf si vous modifiez le paramètre dans le Centre d'administration Microsoft 365.
+Vous pouvez choisir de mettre des expériences connectées facultatives dans le Tableau blanc à la disposition de vos utilisateurs. Ces expériences connectées seront disponibles pour vos utilisateurs, sauf si vous modifiez le paramètre dans le Centre d'administration Microsoft 365. 
 
 Ces expériences connectés sont différentes car elles ne sont pas couvertes par le contrat commerciale de votre organisation avec Microsoft. Les expériences connectées facultatives supplémentaires offertes par Microsoft directement à vos utilisateurs sont régies par le [Contrat de services Microsoft](https://www.microsoft.com/servicesagreement) au lieu des [Conditions d'utilisation des services en ligne](https://www.microsoft.com/licensing/product-licensing/products).
 

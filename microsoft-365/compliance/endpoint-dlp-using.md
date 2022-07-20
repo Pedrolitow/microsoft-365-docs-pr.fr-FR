@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les emplacements de protection contre la perte de données de point de terminaison.
-ms.openlocfilehash: 9107759e137d7b8dd86253f9c6567b76686d2518
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f58c7aec00a91ebc63b410abdd4c6342eef47a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632374"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66881992"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -128,7 +128,6 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 Dans ce scénario, la synchronisation des fichiers avec l’étiquette de confidentialité **Hautement confidentiel** sur OneDrive est bloquée. Il s’agit d’un scénario complexe avec plusieurs composants et procédures. Vous aurez besoin de :
 
 - Un compte d’utilisateur AAD à cibler et un ordinateur Windows 10 intégré qui synchronise déjà un dossier OneDrive local avec le stockage cloud OneDrive.
-- Microsoft Word installé sur l’ordinateur Windows 10 cible
 - Étiquettes de confidentialité configurées et publiées : consultez [Démarrer avec les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) et [Créer et configurer des étiquettes de confidentialité et leurs stratégies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 Il existe trois procédures.
@@ -234,7 +233,7 @@ Il existe trois procédures.
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Scénario 5 : Limiter le partage involontaire à des applications et services en nuage non autorisés.
 
-Avec Endpoint DLP et le navigateur Web Edge, vous pouvez restreindre le partage involontaire d'éléments sensibles vers des applications et services en nuage non autorisés. Edge comprend quand un élément est restreint par une politique DLP et applique les restrictions d'accès.
+Avec Endpoint DLP et le navigateur Web Microisoft Edge, vous pouvez restreindre le partage involontaire d'éléments sensibles vers des applications et services en nuage non autorisés. Edge comprend quand un élément est restreint par une politique DLP et applique les restrictions d'accès.
 
 Lorsque vous sélectionnez **Appareils** comme emplacement dans une politique DLP correctement configurée et que vous utilisez le navigateur Microsoft Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent aux contrôles de votre politique DLP. Au lieu de cela, les utilisateurs sont redirigés vers des Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
 
@@ -249,6 +248,58 @@ Pour utiliser cette restriction, vous devrez configurer trois éléments importa
 Vous pouvez continuer à ajouter de nouveaux services, applications et stratégies pour développer et augmenter vos restrictions afin de répondre aux besoins de votre entreprise et de protéger les données sensibles. 
 
 Cette configuration vous permet de garantir la sécurité de vos données tout en évitant les restrictions inutiles qui empêchent les utilisateurs d’accéder aux éléments non sensibles et de les empêcher de les partager.
+
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de services sensibles (aperçu)
+
+Utilisez ce scénario lorsque vous souhaitez auditer, bloquer avec neutralisation ou bloquer ces activités d'utilisateur sur un site Web.
+
+- imprimer à partir d’un site web
+- copier des données à partir d’un site web
+- enregistrer un site web en tant que fichiers locaux
+
+L’utilisateur doit accéder au site web via Microsoft Edge.
+
+### <a name="supported-syntax-for-designating-websites-in-a-website-group"></a>Syntaxe prise en charge pour désigner des sites web dans un groupe de sites web
+
+Vous pouvez utiliser une syntaxe flexible pour inclure et exclure des domaines, sous-domaines, sites web et sous-sites dans vos groupes de sites web.
+
+- utiliser `*` comme caractère générique pour spécifier tous les domaines ou tous les sous-domaines
+- utiliser `/` comme terminateur à la fin d’une URL pour étendre uniquement à ce site spécifique.
+
+Lorsque vous ajoutez une URL sans fin, `/`cette URL est limitée à ce site et à tous les sous-sites.
+
+Cette syntaxe s’applique à tous les sites web http/https.
+
+Voici quelques exemples :
+
+
+|URL que vous ajoutez au groupe de sites web  |L’URL correspondra  | L’URL ne correspond pas|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
+
+### <a name="configure-sensitive-service-domains"></a>Configurer des domaines de service sensibles
+
+1. Dans le portail de conformité Microsoft Purview, ouvrez **Prévention des pertes de données** > **Paramètres Endpoint DLP** > **Restrictions de navigateur et de domaine aux données sensibles** > **Domaines de service sensibles** .
+1. Sélectionnez **Ajouter un nouveau groupe de domaines de service sensibles**.
+1. Nommez le groupe.
+1. Sélectionnez le **type de correspondance** que vous souhaitez. Vous pouvez sélectionner **l’URL**, **l’adresse IP** et la **plage d’adresses IP**.
+1. Tapez la valeur appropriée dans l’option **Ajouter de nouveaux domaines de service à ce groupe**. Vous pouvez ajouter plusieurs sites web à un groupe et utiliser des caractères génériques pour couvrir les sous-domaines.  Par exemple, www.contoso.com uniquement pour le site web de niveau supérieur ou *.contoso.com pour corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Stratégies**.
+1. Créez et définissez une politique qui s'applique uniquement aux **dispositifs**. Pour plus d’informations sur la création [d’une stratégie, consultez, créez, testez et paramétrez une stratégie DLP](create-test-tune-dlp-policy.md) .
+1. Créez une règle qui utilise **l’utilisateur qui a accédé à un site sensible à partir de Edge**, et l’action **Auditer ou restreindre les activités lorsque les utilisateurs accèdent à des sites sensibles dans le navigateur Microsoft Edge sur les appareils Windows**.
+1. Dans l’action, sélectionnez **Ajouter ou supprimer des groupes de sites sensibles**.
+1. Sélectionnez les **groupes de sites sensibles** souhaités.
+1. Sélectionnez **Ajouter**.
+1. Sélectionnez les activités de l'utilisateur que vous souhaitez surveiller ou restreindre et les actions que la DLP doit entreprendre en réponse à ces activités.
+1. Terminez la configuration de la règle et de la stratégie et appliquez-la.
+
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)

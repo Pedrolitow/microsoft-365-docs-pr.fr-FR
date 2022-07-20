@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac809f5a976da1d6c83d36f24e93c3aacd997850
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626576"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882014"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -309,6 +309,9 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 ##### <a name="conditions-devices-supports"></a>Conditions prises en charge par les appareils
 
 - Le contenu contient
+- (préversion) L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles (préversion](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) ).
+- L’extension de fichier est
+- Le type de fichier est
 - Consultez les activités de point de terminaison sur [laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Conditions prises en charge par Microsoft Defender for Cloud Apps
@@ -391,8 +394,8 @@ Les actions disponibles dans une règle dépendent des emplacements sélectionn�
 - Ajouter un destinataire à la zone CCI
 - Ajouter le gestionnaire de l’expéditeur en tant que destinataire
 - Suppression du chiffrement des messages O365 et de la protection des droits
-- Ajouter l’objet de l’e-mail
-- Modifier l’objet de l’e-mail
+- Prepend Email Subject
+- Modifier Email objet
 - Ajouter une clause d’exclusion de responsabilité HTML
 
 #### <a name="sharepoint-sites-location-actions"></a>Actions d’emplacement des sites SharePoint
@@ -409,9 +412,11 @@ Les actions disponibles dans une règle dépendent des emplacements sélectionn�
 
 #### <a name="devices-actions"></a>Actions des appareils
 
+<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- (préversion) Auditer ou limiter les activités lorsque les utilisateurs accèdent à des sites web sensibles dans le navigateur Microsoft Edge sur les appareils Windows. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles (préversion](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) ).
 - Auditer ou restreindre les activités sur les appareils Windows
 
-Pour utiliser ces paramètres, vous devez configurer des options dans **les paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
+Pour l’utiliser `Audit or restrict activities on Windows devices`, vous devez configurer des options dans **les paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
 
 L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour plus d’informations, consultez [les activités de point de terminaison sur laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
@@ -525,11 +530,11 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 
 > [!IMPORTANT]
 > - Les e-mails de notification sont envoyés sans protection.
-> - Les notifications par e-mail sont uniquement prises en charge pour les services Microsoft 365.
+> - Email notifications sont prises en charge uniquement pour les services Microsoft 365.
 
-#### <a name="email-notifications-support-by-selected-location"></a>Prise en charge des notifications par e-mail par emplacement sélectionné
+#### <a name="email-notifications-support-by-selected-location"></a>prise en charge des notifications Email par emplacement sélectionné
 
-|Emplacement sélectionné  |Notifications par e-mail prises en charge  |
+|Emplacement sélectionné  |notifications Email prises en charge  |
 |---------|---------|
 |Appareils     |- Non pris en charge         |
 |Exchange + Appareils     |- Pris en charge pour Exchange </br>- Non pris en charge pour les appareils  |
@@ -538,7 +543,7 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 |SharePoint    |- Pris en charge |
 |Exchange + SharePoint    |- Pris en charge pour Exchange </br>- Pris en charge pour SharePoint  |
 |Appareils + SharePoint + Exchange    |- Non pris en charge pour les appareils </br>- Pris en charge pour SharePoint </br> Pris en charge pour Exchange |
-|Teams    |- Non pris en charge |
+|Équipes    |- Non pris en charge |
 |OneDrive Entreprise   |- Pris en charge         |
 |OneDrive Entreprise + Appareils     |- Pris en charge pour OneDrive Entreprise </br>- Non pris en charge pour les appareils         |
 |Power-BI|- Non pris en charge|

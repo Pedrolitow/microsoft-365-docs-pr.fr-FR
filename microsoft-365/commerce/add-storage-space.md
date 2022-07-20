@@ -1,11 +1,11 @@
 ---
-title: Ajouter d’autres SharePoint stockage à votre abonnement
+title: Ajouter davantage de stockage SharePoint à votre abonnement
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinms, jmueller
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,22 +23,22 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkSPO
 search.appverid: MET150
-description: Ajoutez le stockage de fichiers dans votre abonnement Microsoft 365. Avec un stockage de fichiers supplémentaire, vous pouvez stocker plus de contenu dans SharePoint.
+description: Ajoutez le stockage de fichiers dans votre abonnement Microsoft 365. Avec un stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint.
 ms.date: 05/24/2022
-ms.openlocfilehash: bd0edd85718acc51559f5e409de4661a756cd787
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a8029f9b51c678b80e4a8fde77d02663da6e89af
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043969"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882493"
 ---
-# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Ajouter d’autres SharePoint stockage à votre abonnement
+# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Ajouter davantage de stockage SharePoint à votre abonnement
 
 Si vous commencez à manquer de stockage pour vos sites SharePoint, vous pouvez ajouter du stockage à votre abonnement si votre plan est éligible. Si vous ne voyez pas le **Stockage de fichiers supplémentaire Office 365** dans la liste des modules complémentaires disponibles, cela signifie que votre plan n’est pas éligible. Pour plus d’informations, consultez [Est-ce que mon plan est éligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Si vous avez acheté votre abonnement par le biais de licences en volume ou d’une fournisseur de solutions Cloud, vous ne pouvez pas acheter **Stockage de fichiers supplémentaire Office 365** pour votre organisation directement auprès de Microsoft. Contactez votre représentant ou partenaire pour obtenir de l’aide.
-> Pour plus d’informations sur OneDrive stockage, consultez [Définir l’espace de stockage par défaut pour OneDrive utilisateurs](/onedrive/set-default-storage-space).
+> Si vous avez acheté votre abonnement par le biais de licences en volume ou d’un fournisseur de solutions Cloud, vous ne pouvez pas acheter **Stockage de fichiers supplémentaire Office 365** pour votre organisation directement auprès de Microsoft. Contactez votre représentant ou partenaire pour obtenir de l’aide.
+> Pour plus d’informations sur le stockage OneDrive, consultez [Définir l’espace de stockage par défaut pour les utilisateurs OneDrive](/onedrive/set-default-storage-space).
 
 > [!TIP]
 > Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
@@ -49,7 +49,7 @@ Vous devez être administrateur général ou SharePoint pour effectuer les tâch
 
 ## <a name="view-available-storage"></a>Afficher le stockage disponible
 
-1. Dans le centre d’administration SharePoint, accédez aux <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites actifs**</a> et connectez-vous avec un compte disposant [des autorisations d’administrateur](/sharepoint/sharepoint-admin-role) pour votre organisation.
+1. Dans le Centre d’administration SharePoint, accédez aux <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sites actifs**</a> et connectez-vous avec un compte disposant [d’autorisations d’administrateur](/sharepoint/sharepoint-admin-role) pour votre organisation.
 
 2. Dans le coin supérieur droit de la page, consultez la quantité d’espace de stockage utilisé sur tous les sites, ainsi que l’espace de stockage total de votre abonnement. Si votre organisation a configuré multigéographique dans Office 365, la barre affiche également la quantité de stockage utilisée dans tous les emplacements géographiques.
 
@@ -70,7 +70,7 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 4. Si nécessaire, choisissez l’abonnement de base, puis entrez le nombre de gigaoctets de stockage que vous souhaitez ajouter.
 5. **Sélectionnez Extraire maintenant**.
 6. Dans la page **À quoi cela ressemble-t-il ?** , vérifiez le nombre de gigaoctets de stockage que vous avez sélectionné, passez en revue les informations de tarification, puis sélectionnez **Suivant**.
-7. Dans la page **Commande complète** , vérifiez le total. Si vous devez apporter des modifications, sélectionnez **Modifier l’ordre**. Si la commande nécessite une vérification de crédit, cochez la case. Une fois que vous avez terminé, sélectionnez **Passer l’ordre** \> **d’accès à la page d’accueil de l’administrateur**.
+7. Dans la page **Commande complète** , vérifiez le total. Si vous devez apporter des modifications, sélectionnez **Modifier l’ordre**. Si la commande nécessite une vérification de crédit, cochez la case. Lorsque vous avez terminé, sélectionnez **Passer la commande** \> **Aller à Administration Accueil**.
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Augmenter ou diminuer votre stockage supplémentaire
 
@@ -107,8 +107,8 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 - Microsoft 365 F3
 
 > [!NOTE]
-> Stockage de fichiers supplémentaire Office 365 est également disponible pour les plans Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DOD.
+> Stockage de fichiers supplémentaire Office 365 est également disponible pour les plans GCC, GCC High et DOD.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer les limites de stockage de site](/sharepoint/manage-site-collection-storage-limits) (article)

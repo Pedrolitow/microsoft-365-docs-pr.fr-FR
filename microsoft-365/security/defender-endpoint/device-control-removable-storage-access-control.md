@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1900487e4249c344981630d7a11aafd02862f863
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490750"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882116"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 
@@ -152,9 +152,11 @@ Pour le déploiement de stratégie dans Intune, le compte doit disposer des auto
 
 - Rôle gestionnaire de stratégies et de profils
 - Rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lire/Supprimer/Afficher les rapports activées pour les profils de configuration d’appareil
-- Administrateur global
+- Administrateur général
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Déploiement de Access Control de stockage amovible à l’aide de Intune OMA-URI
+
+Pour bloquer une classe de stockage amovible spécifique, mais autoriser un média spécifique, vous pouvez utiliser « IncludedIdList a group through PrimaryId and ExcludedIDList a group through DeviceId/HardwareId/etc. ».
 
 Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpoint.microsoft.com/>) **> Appareils > Créer un profil > Platform : Windows 10 et versions ultérieures, Type de profil : Modèles > Personnalisé**
 
@@ -170,7 +172,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
        `Disable: 0`
        `Enable: 1`
 
-     - Cliquez sur **Enregistrer**.
+     - Cliquez sur **Save (Enregistrer)**.
 
    :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Access Control de stockage amovible" lightbox="images/enable-rsac.png":::
 
@@ -189,7 +191,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - Cliquez sur **Enregistrer**.
+     - Cliquez sur **Save (Enregistrer)**.
 
    :::image type="content" source="images/default-deny.png" alt-text="Capture d’écran de la définition de l’application par défaut en tant que refus" lightbox="images/default-deny.png":::
 
