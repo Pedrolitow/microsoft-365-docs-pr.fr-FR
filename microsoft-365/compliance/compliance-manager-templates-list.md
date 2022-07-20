@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft Purview fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et sectorielles.
-ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631202"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895094"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -31,7 +31,7 @@ ms.locfileid: "66631202"
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Passez en revue les détails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Vue d’ensemble
 
 [Le Gestionnaire de conformité Microsoft Purview](compliance-manager.md) fournit un ensemble complet de modèles pour la création d’évaluations. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et propres au secteur qui régissent la collecte et l’utilisation des données.
 
@@ -295,7 +295,8 @@ Les modèles répertoriés ci-dessous peuvent être achetés par votre organisat
 - Victoria Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - Chine - Spécification de sécurité des informations personnelles  
-- Loi sur la cybersécurité de la République populaire de Chine  
+- Loi sur la cybersécurité de la République populaire de Chine
+- Hong Kong - Code of Banking Practice and Payment Card
 - Hong Kong - Ordonnance sur les données personnelles (confidentialité)  
 - India Information Technology (pratiques et procédures de sécurité raisonnables et données ou informations personnelles sensibles)
 - Inde - Loi sur les technologies de l’information  

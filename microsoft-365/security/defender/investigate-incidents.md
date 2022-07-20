@@ -15,26 +15,22 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-- incidentresponse
-- m365solution-incidentresponse
-- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 8138c07ab871ab1a6a8d89df980c914983bbb58e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 441f9ce5824c1de82a5629e4c0ba9192ed89a529
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666941"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895072"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -82,7 +78,7 @@ Sous l’onglet **Alertes** , vous pouvez afficher la file d’attente des alert
 
 - Gravité.
 - Entités impliquées dans l’alerte.
-- Source des alertes (Microsoft Defender pour Identity, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Defender pour le cloud  Applications et module complémentaire de gouvernance des applications).
+- Source des alertes (Microsoft Defender pour Identity, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Defender pour Cloud Apps et le module complémentaire de gouvernance des applications).
 - La raison pour laquelle ils étaient liés.
 
 Voici un exemple.
@@ -177,9 +173,9 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
 
 ## <a name="graph-preview"></a>Graph (préversion)
 
-**L’onglet Graph** affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée dans votre réseau au fil du temps, l’endroit où elle a démarré et la distance parcourue par l’attaquant. Il connecte les différentes entités suspectes qui font partie de l’attaque avec leurs ressources associées, telles que les utilisateurs, les appareils et les boîtes aux lettres. 
+L’onglet **Graph** indique l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée dans votre réseau au fil du temps, l’endroit où elle a démarré et la distance parcourue par l’attaquant. Il connecte les différentes entités suspectes qui font partie de l’attaque avec leurs ressources associées, telles que les utilisateurs, les appareils et les boîtes aux lettres. 
 
-À partir de l’onglet **Graph**, vous pouvez :
+Sous l’onglet **Graph** , vous pouvez :
 
 1. Lisez les alertes et les nœuds du graphique tels qu’ils se sont produits au fil du temps pour comprendre la chronologie de l’attaque.
 
@@ -195,7 +191,7 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Mise en surbrillance d’alerte sur la page Graph" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si nécessaire :
 

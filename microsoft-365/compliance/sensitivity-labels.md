@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Protection des donn
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 57dcda57c29c15d8bf3896e983a95f358fd6ac1c
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714133"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842149"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -148,7 +148,7 @@ Pour ces pages dont les options ne sont pas disponibles, sélectionnez **Suivant
 
 ### <a name="label-priority-order-matters"></a>Priorité des étiquettes (l’ordre est important)
 
-Lorsque vous créez des étiquettes de confidentialité dans le Portail de conformité Microsoft Purview, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
+Lorsque vous créez vos étiquettes de sensibilité dans le portail de conformité Microsoft Purview, elles apparaissent dans une liste sur l'onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
 
 Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Toutefois, cette option ne s’applique pas aux sous-étiquettes qui partagent la priorité de leur étiquette parente.
 
@@ -222,7 +222,7 @@ Vous pouvez créer et publier autant d’étiquettes de confidentialité que vou
 
 ### <a name="label-policy-priority-order-matters"></a>Stratégie de priorité des étiquettes (l’ordre est important)
 
-Pour rendre vos étiquettes de confidentialité accessibles aux utilisateurs, vous devez les publier dans une stratégie de confidentialité d’étiquette qui apparaît dans une liste sous l’onglet **Stratégies de confidentialité** sur la page **Stratégies d’étiquettes**. À l’instar des étiquettes de confidentialité (voir la section [Priorité des étiquettes (l’ordre est important)](#label-priority-order-matters)), l’ordre des stratégies d’étiquette de confidentialité est important, car il reflète leur priorité. La stratégie d’étiquette dont la priorité est la plus faible est affichée **en haut**, et celle dont la priorité est la plus haute est affichée **en bas**.
+Vous mettez vos étiquettes de sensibilité à la disposition des utilisateurs en les publiant dans une stratégie d'étiquettes de sensibilité qui apparaît dans une liste sur la page **Stratégies d'étiquettes**. Tout comme les étiquettes de sensibilité (voir [Priorité des étiquettes (l'ordre est important](#label-priority-order-matters)) ), l'ordre des stratégies d'étiquettes de sensibilité est important car il reflète leur priorité : La stratégie d'étiquetage ayant la priorité la plus faible est affichée en haut de la liste avec le **numéro d'ordre** le plus bas, et la stratégie d'étiquetage ayant la priorité la plus élevée est affichée en bas de la liste avec le **numéro d'ordre le plus** élevé.
 
 Une stratégie d’étiquette comprend les éléments suivants :
 
@@ -230,14 +230,18 @@ Une stratégie d’étiquette comprend les éléments suivants :
 - les utilisateurs et les groupes auxquels la stratégie sera attribuée avec des étiquettes.
 - l’étendue de la stratégie et des paramètres de stratégie pour cette étendue (comme l’étiquette par défaut pour les fichiers et les e-mails).
 
-Vous pouvez inclure un utilisateur dans plusieurs stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité et paramètres de ces stratégies. En cas de conflit dans les paramètres de plusieurs stratégies, les paramètres de la stratégie ayant la priorité la plus élevée (position la plus forte) sont appliqués. En d’autres termes, la priorité la plus élevée l’emporte pour chaque paramètre.
+Vous pouvez inclure un utilisateur dans plusieurs stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité et paramètres de ces stratégies. En cas de conflit entre les paramètres de plusieurs politiques, les paramètres de la stratégie ayant la priorité la plus élevée (numéro d'ordre le plus élevé) sont appliqués. En d’autres termes, la priorité la plus élevée l’emporte pour chaque paramètre.
 
-Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Vous devrez peut-être déplacer la stratégie vers le bas. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
+Si vous ne voyez pas le comportement du paramètre de stratégie d'étiquette que vous attendez pour un utilisateur ou un groupe, vérifiez l'ordre des stratégies d'étiquette de sensibilité. Vous devrez peut-être déplacer la stratégie vers le bas. Pour réorganiser les stratégies d'étiquetage, sélectionnez une stratégie d'étiquetage de sensibilité > choisissez l'ellipse Actions pour cette entrée > **Déplacer vers le bas** ou **Déplacer vers le haut**. Par exemple :
 
 ![Option déplacer dans la page pour les stratégies d’étiquette de confidentialité.](../media/sensitivity-label-policy-priority.png)
 
+Dans notre exemple de capture d'écran qui montre trois stratégies d'étiquetage, tous les utilisateurs se voient attribuer la stratégie d'étiquetage standard, il est donc approprié qu'elle ait la priorité la plus basse (numéro d'ordre le plus bas de 0). Seuls les utilisateurs du département informatique se voient attribuer la deuxième stratégie qui porte le numéro d'ordre 1. Pour ces utilisateurs, s'il y a des conflits de paramètres entre leur stratégie et la stratégie standard, les paramètres de leur stratégie l'emportent car ils ont un numéro d'ordre plus élevé. 
+
+De même pour les utilisateurs du service juridique, qui se voient attribuer la troisième stratégie avec des paramètres distincts. Il est probable que ces utilisateurs aient des paramètres plus stricts, il est donc approprié que leur stratégie ait le numéro d'ordre le plus élevé. Il est peu probable qu'un utilisateur du service juridique fasse partie d'un groupe qui est également affecté à la stratégie du service informatique. Mais si c'est le cas, l'ordre numéro 2 (numéro d'ordre le plus élevé) garantit que les paramètres du département juridique sont toujours prioritaires en cas de conflit.
+
 > [!NOTE]
-> N’oubliez pas : en cas de conflit de paramètres pour un utilisateur à qui plusieurs stratégies ont été affectées, le paramètre de la stratégie ayant la priorité la plus élevée (position la plus faible) est appliqué.
+> N'oubliez pas : en cas de conflit de paramètres pour un utilisateur auquel plusieurs stratégies ont été attribuées, le paramètre de la stratégie attribuée ayant le numéro d'ordre le plus élevé est appliqué.
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Étiquettes de niveau de confidentialité et étiquettes Azure Information Protection
 

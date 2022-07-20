@@ -16,24 +16,24 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d2d137ea2a97bb183187ca83eb12a34ab336bc53
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1856548b8cb3fd1c8b09844d04adaa21f6fd8776
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665995"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892915"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer une révision post-incident de votre premier incident
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer une révision post-incident de votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le National Institute of Standards and Technology (NIST) recommande qu’une fois que toutes les mesures ont été prises pour se remettre de l’attaque, les organisations doivent examiner l’incident pour en tirer des enseignements et améliorer la posture de sécurité ou les processus. L’évaluation des différents aspects de la gestion des incidents devient importante pour la préparation de l’incident suivant.

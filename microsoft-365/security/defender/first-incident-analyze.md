@@ -16,24 +16,24 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c58bc4eb30c819ae0cbc1654173e8d9dc4ecb7a7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664917"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893636"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Lorsque vous passez du temps à établir, implémenter et maintenir des mesures de sécurité conformément aux normes de l’organisation, vous pouvez configurer des solutions de sécurité pour vous aider à identifier rapidement les risques et menaces de sécurité. Microsoft 365 Defender vous permet de détecter, de trier et d’examiner les incidents par le biais de son expérience à volet unique où vous pouvez trouver les informations dont vous avez besoin pour prendre des décisions en temps opportun.
@@ -44,7 +44,7 @@ Une fois qu’un incident de sécurité est détecté, Microsoft 365 Defender pr
 
 Microsoft 365 Defender reçoit des alertes et des événements de plusieurs plateformes de sécurité Microsoft en tant que sources de détection pour créer une image holistique et un contexte d’activité malveillante. Les sources de détection possibles sont les suivantes :
 
-- [Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md) est une solution protection évolutive des points de terminaison (PEPT) qui utilise l’antivirus Microsoft Defender et la protection avancée contre les menaces compatible avec le cloud à l’aide de Microsoft Security Graph. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’investigation automatisée et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
+- [Microsoft Defender pour point de terminaison](../defender-endpoint/microsoft-defender-endpoint.md) est une solution de détection et de réponse de point de terminaison (EDR) qui utilise l’antivirus Microsoft Defender et la protection avancée contre les menaces compatible avec le cloud à l’aide de Microsoft Security Graph. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’investigation automatisée et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
 - [Microsoft Defender pour Identity](/defender-for-identity/what-is) est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Domain Services) Active Directory local pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) agit en tant que gardien pour répartit l’accès en temps réel entre vos utilisateurs d’entreprise et les ressources cloud qu’ils utilisent, où que vos utilisateurs se trouvent et quel que soit l’appareil qu’ils utilisent.
 - [Microsoft Defender pour Office 365](../office-365-security/overview.md) protège votre organisation contre les menaces malveillantes dans les e-mails, les liens (URL) et les outils de collaboration.

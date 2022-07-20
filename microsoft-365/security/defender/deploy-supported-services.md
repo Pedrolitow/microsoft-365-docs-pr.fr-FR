@@ -16,25 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4ac6186f3ec8ca7d4888a995b2352ec50529e4f1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf2e95a4d129280537f1d7a9d7dcf1b76b492ead
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664895"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893768"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -49,7 +49,7 @@ Une licence Microsoft 365 E5, E5 Security, A5 ou A5 Security ou une combinaison 
 | ------ | ------ |
 | Microsoft Defender pour point de terminaison | Suite endpoint protection basée sur de puissants capteurs comportementaux, l’analytique cloud et l’intelligence des menaces |
 |Microsoft Defender pour Office 365 | Protection avancée pour vos applications et données dans Office 365, y compris la messagerie électronique et d’autres outils de collaboration |
-| Microsoft Defender pour Identity | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
+| Microsoft Defender pour l’identité | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Defender for Cloud Apps | Identifier et combattre les cybermenaces dans vos services cloud microsoft et tiers |
 
 ## <a name="deployed-services-and-functionality"></a>Services et fonctionnalités déployés
@@ -72,9 +72,9 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 
 | Service | Données (signaux & informations corrélées) | Correction & portée de réponse |
 | ------ | ------ | ------ |
-| Microsoft Defender pour point de terminaison |<ul><li>États de point de terminaison et événements bruts</li><li>Détections et alertes de point de terminaison, notamment antivirus, PEPT, réduction de la surface d’attaque</li><li>Informations sur les fichiers et autres entités observées sur les points de terminaison</li></ul> | Points de terminaison |
-|Microsoft Defender pour Office 365 |<ul><li>États de messagerie et de boîte aux lettres et événements bruts</li><li>Détections d’e-mails, de pièces jointes et de liens</li></ul> | <ul><li>Boîtes aux lettres</li><li>comptes Microsoft 365</li></ul> |
-| Microsoft Defender pour Identity |<ul><li>Signaux Active Directory, y compris les événements d’authentification</li><li>Détections comportementales liées à l’identité</li></ul> | Identités |
+| Microsoft Defender pour point de terminaison |<ul><li>États de point de terminaison et événements bruts</li><li>Détections et alertes de point de terminaison, notamment antivirus, EDR, réduction de la surface d’attaque</li><li>Informations sur les fichiers et autres entités observées sur les points de terminaison</li></ul> | Points de terminaison |
+|Microsoft Defender pour Office 365 |<ul><li>États de messagerie et de boîte aux lettres et événements bruts</li><li>détections de Email, de pièces jointes et de liens</li></ul> | <ul><li>Boîtes aux lettres</li><li>Comptes Microsoft 365</li></ul> |
+| Microsoft Defender pour l’identité |<ul><li>Signaux Active Directory, y compris les événements d’authentification</li><li>Détections comportementales liées à l’identité</li></ul> | Identités |
 | Microsoft Defender for Cloud Apps |<ul><li>Détection d’applications et de services cloud non approuvés (informatique fantôme)</li><li>Exposition des données aux applications cloud</li><li>Activité de menace associée aux applications cloud</li></ul> | Applications cloud |
 
 ## <a name="deploy-the-services"></a>Déployer les services
@@ -96,5 +96,5 @@ Une fois que vous avez déployé les services pris en charge, [activez Microsoft
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 - [Microsoft Defender pour point de terminaison vue d’ensemble](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender pour Office 365 vue d’ensemble](../office-365-security/defender-for-office-365.md)
-- [Vue d’ensemble de Microsoft Defender pour les applications cloud](/cloud-app-security/what-is-cloud-app-security)
+- [Vue d’ensemble de Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender pour Identity vue d’ensemble](/azure-advanced-threat-protection/what-is-atp)

@@ -9,26 +9,22 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la configuration et de la sécurisation des appareils gérés contre les menaces de sécurité et les cyberattaques. Implémentez des défenses de cybersécurité et une protection des points de terminaison par le biais de l’inscription et de l’intégration de tous les appareils. Découvrez comment configurer des stratégies d’appareil et gérer des groupes d’appareils.
-ms.openlocfilehash: 119b54dd2a00e02fcef9a7caa0406638ec06a261
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 599ded6105f050cc1bd37c8214277f7a0f5ee091
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630834"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894402"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Configurer et sécuriser des appareils gérés
 

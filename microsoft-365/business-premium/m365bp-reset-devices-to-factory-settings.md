@@ -9,28 +9,19 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection:
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC
+ms.date: 07/19/2022
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Découvrez comment utiliser Microsoft 365 Business Premium pour réinitialiser les paramètres d’usine les appareils Windows que vous gérez, en les rétablissant à leurs paramètres d’origine à l’achat.
-ms.openlocfilehash: 9c0430c1d9fdee37f6105fc5c3a537c46cefb3be
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: adccfb7dcada98d8999ed960ab99730d2fc15f26
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486506"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893568"
 ---
 # <a name="reset-windows-devices-to-factory-settings"></a>Réinitialiser les appareils Windows aux paramètres d’usine
 
