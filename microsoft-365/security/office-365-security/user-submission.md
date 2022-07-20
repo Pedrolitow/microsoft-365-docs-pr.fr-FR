@@ -1,11 +1,11 @@
 ---
-title: Paramètres des messages signalés par l’utilisateur
+title: Paramètres d’e-mail signalés par l’utilisateur pour le courrier indésirable, le hameçonnage, comme courrier malveillant
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 07/19/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
+description: Comment configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs. Créer une boîte aux lettres pour les messages que les utilisateurs signalent comme courrier indésirable, hameçonnage, malveillant ou non malveillant.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
+ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636422"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66885529"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -32,22 +32,24 @@ ms.locfileid: "66636422"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir les messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs signalent des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter les messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et à Microsoft). Cette fonctionnalité fonctionne avec les options de création de rapports de messages suivantes :
+Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, vous pouvez diriger le courrier vers une boîte aux lettres lorsque les utilisateurs signalent du courrier indésirable, du hameçonnage, des messages malveillants ou même pas malveillants. Lorsque les utilisateurs signalent des e-mails à l’aide de différentes options de création de rapports, les administrateurs peuvent utiliser cette boîte aux lettres pour intercepter ces messages électroniques (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et à Microsoft).
+
+Cette fonctionnalité fonctionne avec les options de création de rapports de messages suivantes :
 
 - [Complément Message de rapport](enable-the-report-message-add-in.md)
 - [Complément Report Phishing](enable-the-report-phish-add-in.md)
 - [Outils de création de rapports tiers](#third-party-reporting-tools)
 
-La remise de messages signalés par l’utilisateur à une boîte aux lettres personnalisée plutôt que directement à Microsoft permet à vos administrateurs de signaler manuellement et de manière sélective les messages à Microsoft à l’aide [de Administration soumission](admin-submission.md). Ces paramètres étaient auparavant appelés stratégie d’envoi d’utilisateurs.
+La remise de messages signalés par l’utilisateur à une boîte aux lettres personnalisée plutôt que directement à Microsoft permet aux administrateurs de signaler manuellement et de manière sélective les messages électroniques à Microsoft à l’aide [de Administration soumission](admin-submission.md). *Ces paramètres étaient auparavant appelés stratégie d’envoi d’utilisateurs*.
 
   > [!NOTE]
   > Si la création de rapports a été [désactivée dans Outlook sur le web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l’activation des messages signalés par l’utilisateur ici remplace ce paramètre et permet aux utilisateurs de signaler à nouveau des messages dans Outlook sur le web.
 
 ## <a name="custom-mailbox-prerequisites"></a>Prérequis de boîte aux lettres personnalisée
 
-Utilisez les articles suivants pour configurer les conditions préalables requises afin que les messages signalés par l’utilisateur soient envoyés à votre boîte aux lettres personnalisée :
+Utilisez les articles ci-dessous pour configurer les prérequis pour que les messages électroniques signalés par l’utilisateur accèdent à votre boîte aux lettres personnalisée :
 
 - [Identifiez la boîte aux lettres personnalisée en tant que boîte aux lettres SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -55,7 +57,7 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
   - Le vidage automatique de zéro heure (ZAP) pour les programmes **malveillants** est désactivé (la section \> Paramètres de protection **Activer le vidage automatique de zéro heure pour les programmes malveillants** n’est pas sélectionnée).
   - L’option de filtre de pièce jointe commune est désactivée (la section \>**Paramètres de protection** **active le filtre de pièces jointes commun** n’est pas sélectionné).
 
-Si vous avez Microsoft Defender pour Office 365, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’affecte pas les messages signalés :
+**Si vous avez Microsoft Defender pour Office 365**, vous devez également configurer les paramètres suivants afin que notre filtrage avancé n’ait pas d’impact sur les e-mails signalés :
 
 - Assurez-vous que la boîte aux lettres personnalisée ne fait pas partie des [stratégies de sécurité prédéfinies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
@@ -63,7 +65,7 @@ Si vous avez Microsoft Defender pour Office 365, vous devez également configure
 
 - [Créez une stratégie de pièces jointes sécurisées](set-up-safe-attachments-policies.md) pour la boîte aux lettres personnalisée dans laquelle l’analyse des pièces jointes sécurisées, y compris la livraison dynamique, est désactivée (section Réponse aux **programmes malveillants inconnus pièces jointes fiables** > **désactivée**).
 
-Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes les conditions préalables applicables, vous pouvez utiliser les procédures décrites dans cet article pour configurer la boîte aux lettres des soumissions d’utilisateurs.
+Une fois que vous avez vérifié que votre boîte aux lettres répond aux prérequis, vous pouvez utiliser le reste de cet article pour configurer la boîte aux lettres des envois d’utilisateurs.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -82,7 +84,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
   - [Activer ou désactiver l’accès à Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Règles d’accès client dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Utiliser le portail Microsoft 365 Defender pour configurer la boîte aux lettres des soumissions d’utilisateurs
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox-for-emails"></a>Utiliser le portail Microsoft 365 Defender pour configurer la boîte aux lettres des envois d’utilisateurs pour les e-mails
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Stratégies & règles Stratégies** > **de menace** >  Les **paramètres de message signalés par l’utilisateur** dans la section **Autres**. Pour accéder directement à la page **Soumissions de l’utilisateur** , utilisez <https://security.microsoft.com/userSubmissionsReportMessage>.
 
@@ -130,7 +132,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 3. Lorsque vous avez terminé, cliquez sur **Confirmer**. Pour effacer ces valeurs, cliquez sur **Restaurer**.
 
-## <a name="third-party-reporting-tools"></a>Outils de création de rapports tiers
+## <a name="third-party-email-reporting-tools"></a>Outils de création de rapports par e-mail tiers
 
 Vous pouvez configurer des outils de création de rapports de messages tiers pour envoyer des messages signalés à la boîte aux lettres personnalisée. Pour ce faire, définissez le **bouton Message de rapport Microsoft Outlook** sur **Désactivé** et définissez la **boîte aux lettres de Mon organisation** sur une boîte aux lettres Office 365 de votre choix.
 
@@ -151,7 +153,7 @@ Si vous souhaitez spécifier la raison signalée des messages joints d’origine
 - 2| ou non indésirable :
 - 3| ou hameçonnage :
 
-Par exemple :
+Par exemple :
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
