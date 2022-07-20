@@ -9,34 +9,30 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Protégez les appareils non gérés ou BYOD contre les cyberattaques avec Microsoft 365 Business Premium. Comment configurer la cybersécurité pour les PC et Mac Windows.
-ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: c6010661d11be2af064ddd3d5250f1cf9baacc09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773078"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894358"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Protéger les PC et Mac Windows non gérés dans Microsoft 365 Business Premium
 
 Cet objectif est axé sur la création d’une protection pour tous les PC et Mac Windows 10 non gérés qui ne sont pas inscrits dans Microsoft Intune. Il est très probable que votre petite entreprise ou votre campagne dispose d'un personnel qui apporte ses propres appareils (BYOD), et que ces appareils ne sont pas toujours disponibles. Les appareils BYOD incluent les téléphones, tablettes et PC appartenant à l’utilisateur.
 
->[!NOTE]
->Les utilisateurs BYOD doivent installer et exécuter l’application Portail d'entreprise pour inscrire ces appareils et recevoir l’accès aux ressources de l’entreprise.
+> [!NOTE]
+> Les utilisateurs BYOD doivent installer et exécuter l’application Portail d'entreprise pour inscrire ces appareils et recevoir l’accès aux ressources de l’entreprise.
 
 Il est essentiel de vous assurer que vos utilisateurs de première ligne suivent ces instructions afin que les fonctionnalités de sécurité minimales soient configurées sur tous les appareils BYOD.
 
@@ -86,4 +82,4 @@ Utilisez les paramètres du pare-feu pour protéger votre Mac contre les contact
 
 ## <a name="next-mission"></a>Prochaine mission
 
-OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation du système de messagerie](m365bp-protect-email-overview.md) contre le hameçonnage et d’autres attaques.
+OK, mission terminée ! À présent, nous allons travailler sur la [sécurisation de l’utilisation des e-mails contre le](m365bp-protect-email-overview.md) hameçonnage et d’autres attaques.

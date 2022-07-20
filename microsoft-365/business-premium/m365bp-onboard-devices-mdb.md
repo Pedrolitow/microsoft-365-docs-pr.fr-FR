@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 0578aa2e672a0d485057ac983ed85d10828c952d
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772267"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893972"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
@@ -71,13 +72,9 @@ Consultez [inscription de l’appareil dans Microsoft Intune](/mem/intune/enroll
 
 ## <a name="what-about-servers"></a>Qu’en est-il des serveurs ?
 
-Les serveurs ne sont pas pris en charge par défaut dans Microsoft 365 Business Premium et Defender entreprise. Toutefois, la possibilité d’intégrer un serveur, tel qu’un point de terminaison exécutant Windows Server ou Linux Server, est désormais en préversion. Veillez à passer en revue les exigences avant d’intégrer un serveur :
+Par défaut, les serveurs ne sont pas pris en charge dans Microsoft 365 Business Premium et la version autonome de Defender for Business. Toutefois, **la possibilité d’intégrer un serveur, tel qu’un point de terminaison exécutant Windows Server ou Linux Server, est désormais en préversion** ! 
 
-- Vous disposez d’une licence serveur pour chaque instance de serveur dans Microsoft 365 Business Premium ou Defender for Business (autonome).
-- Le paramètre **des fonctionnalités en préversion** est activé. Dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** > **Endpoints** > **Général** > **Fonctions avancées** > **Fonctions de prévisualisation**.
-- L’étendue de mise en œuvre de Windows Server est activée. Accédez à **Paramètres** > **points de terminaison** > **la gestion de la configuration** > **l’étendue application**. Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.
-
-Pour obtenir des instructions détaillées, consultez l’onglet **Serveurs** de [l’intégration des appareils à Microsoft Defender entreprise](../security/defender-business/mdb-onboard-devices.md) .
+Consultez [Comment obtenir des serveurs Microsoft Defender entreprise (préversion).](../security/defender-business/get-defender-business-servers.md)
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>Exécuter un test de détection sur un appareil nouvellement intégré
 
