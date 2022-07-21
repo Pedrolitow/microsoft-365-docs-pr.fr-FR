@@ -322,7 +322,7 @@
               href: mfi-domain-mail-flow-status-insight.md
         - name: Signaler les messages et fichiers à Microsoft Corporation
           items:
-            - name: Signaler les messages et fichiers à Microsoft Corporation
+            - name: Comment faire signaler un e-mail ou un fichier suspect à Microsoft
               href: report-junk-email-messages-to-microsoft.md
             - name: Envois par l’administrateur
               href: admin-submission.md
