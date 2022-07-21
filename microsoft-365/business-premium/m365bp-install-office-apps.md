@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Comment installer Office sur tous les appareils dans Microsoft 365 Business Premium.
-ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 112e83a0473dc9c0e8019c2b0a63a04fb7b72f7c
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637798"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894578"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Installer Office sur tous vos appareils
 
@@ -43,10 +39,10 @@ Pour tous les membres de l’organisation, les applications Microsoft Office son
 
 Faites-les effectuer les opérations suivantes :
 
-1. Accédez à office.com. Vous devrez peut-être vous connecter avec votre compte professionnel.
+1. Accédez à [https://office.com](https://office.com)et connectez-vous à l’aide de votre compte professionnel.
 2. Sélectionnez **Installer Office**  >   **Microsoft 365 apps**  >  **Exécuter**, puis sélectionnez **Oui**.
 3. Les applications Office sont installées. Le processus peut prendre plusieurs minutes. Une fois l’opération terminée, sélectionnez **Fermer**.
-4. Pour installer Microsoft Teams, accédez à la page office.com et choisissez **Teams**.
+4. Pour installer Microsoft Teams, accédez à la [page office.com](https://office.com), puis choisissez  **Teams**.
 5. Obtenez l’application Windows, puis sélectionnez **Exécuter**. Teams affiche une invite à la fin de l’installation.
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils mobiles pour les utilisateurs Microsoft 365 Business Premium
