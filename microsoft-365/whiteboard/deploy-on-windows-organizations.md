@@ -1,7 +1,7 @@
 ---
 title: Déployer le Tableau blanc Microsoft sur des appareils Windows 10
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment déployer Microsoft Whiteboard sur des appareils exécutant Windows 10 ou versions ultérieures.
-ms.openlocfilehash: 31341bc446313c54d95e14efdf569ba6e0b5263f
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 96670b594babd8a2c61723ceab6ef826c1229764
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917186"
+ms.locfileid: "66943461"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Déployer le Tableau blanc Microsoft sur des appareils Windows 10
 

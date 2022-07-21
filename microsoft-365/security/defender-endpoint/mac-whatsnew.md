@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e2c90fce172a1b7f9d3cbf9a16b105e56402ec49
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: f49132b67f51872cf9b5f07e6cca4c659d955b80
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882626"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943483"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
@@ -35,6 +35,26 @@ ms.locfileid: "66882626"
 Pour plus d’informations sur les Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation : 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur Linux](linux-whatsnew.md) 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Jul-2022 (Build : 101.73.77 | Version de version : 20.122062.17377.0)</summary>
+
+&ensp;Publication : **21 juillet 2022**<br/>
+&ensp;Date de publication : **21 juillet 2022**<br/>
+&ensp;Build : **101.73.77**<br/>
+&ensp;Version de version : **20.122062.17377.0**<br/>
+&ensp;Version du moteur : **1.1.19200.3**<br/>
+&ensp;Version de signature : **1.367.1011.0**<br/>
+
+**Nouveautés**
+
+- Ajout d’une option pour [configurer le calcul de hachage de fichier](mac-preferences.md#configure-file-hash-computation-feature)
+- À partir de cette build, le produit aura le nouveau moteur anti-programme malveillant par défaut
+- Améliorations des performances pour les opérations de copie de fichiers
+- Correctifs de bogue
+
+<br/>
+</details>
 
 <details>
   <summary>Jul-2022 (Build : 101.71.18 | Version de version : 20.122052.17118.0)</summary>

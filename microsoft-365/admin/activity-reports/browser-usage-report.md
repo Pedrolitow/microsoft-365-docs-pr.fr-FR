@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662154"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942054"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation du navigateur Microsoft
 
@@ -48,10 +48,10 @@ Le graphique **Utilisateurs actifs** affiche le nombre total d’utilisateurs ac
 
 Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes.
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Username** | Adresse e-mail de l’utilisateur qui s’est connecté aux services Microsoft 365 à l’aide de Microsoft Edge.|
-| **Microsoft Edge utilisé**| DDisplays a tick mark if the Microsoft 365 services user connected with Microsoft Edge.|
+| **Microsoft Edge utilisé**| Affiche une graduation si l’utilisateur des services Microsoft 365 est connecté à Microsoft Edge.|
 
 Sélectionnez l’icône **Choisir des colonnes** pour ajouter ou supprimer des colonnes du rapport.
 

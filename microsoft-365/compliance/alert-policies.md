@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: bf896a5c6b801631a96779ad2b1c099c6b89c6a8
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797992"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942076"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -155,7 +155,6 @@ Le tableau indique également les Office 365 Entreprise et Office 365 plan du go
 |**Une campagne de programmes malveillants a été détectée et bloquée**|Génère une alerte lorsqu’une personne tente d’envoyer un nombre anormalement élevé de messages électroniques contenant un certain type de programmes malveillants aux utilisateurs de votre organisation. Si cet événement se produit, les messages infectés sont bloqués par Microsoft et ne sont pas remis aux boîtes aux lettres. Cette stratégie a un paramètre **de gravité faible** .|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Campagne de programmes malveillants détectée dans SharePoint et OneDrive**|Génère une alerte lorsqu’un volume anormalement élevé de programmes malveillants ou de virus est détecté dans des fichiers situés dans des sites SharePoint ou des comptes OneDrive de votre organisation. Cette stratégie a un paramètre **de gravité élevée** .|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Programme malveillant non invalidé car ZAP est désactivé**| Génère une alerte lorsque Microsoft détecte la remise d’un message malveillant à une boîte aux lettres, car Zero-Hour vidage automatique des messages phish est désactivé. Cette stratégie a un paramètre **de gravité d’information** . |Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
-|**Hameçonnage remis parce que le dossier Courrier indésirable d’un utilisateur est désactivé**|Génère une alerte lorsque Microsoft détecte que le dossier Courrier indésirable d’un utilisateur est désactivé, ce qui permet la remise d’un message de hameçonnage à haut niveau de confiance à une boîte aux lettres. Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Phish livré en raison d’un remplacement ETR**|Génère une alerte quand Microsoft détecte une règle de transport Exchange (ETR) qui a autorisé la remise d’un message d’hameçonnage à haut niveau de confiance à une boîte aux lettres. Cette stratégie a un paramètre **de gravité d’information** . Pour plus d’informations sur les règles de transport Exchange (règles de flux de messagerie), consultez [les règles de flux de courrier (règles de transport) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Phish remis en raison d’une stratégie d’autorisation IP**|Génère une alerte lorsque Microsoft détecte une stratégie d’autorisation IP qui a autorisé la remise d’un message de hameçonnage à haut niveau de confiance à une boîte aux lettres. Cette stratégie a un paramètre **de gravité d’information** . Pour plus d’informations sur la stratégie d’autorisation IP (filtrage de connexion), consultez [Configurer la stratégie de filtre de connexion par défaut - Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Le hameçonnage n’est pas zappé, car ZAP est désactivé**| Génère une alerte lorsque Microsoft détecte la remise d’un message de hameçonnage à haut niveau de confiance à une boîte aux lettres, car Zero-Hour vidage automatique des messages phish est désactivé. Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
@@ -265,31 +264,31 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
+|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
-|Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
+|Gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
 |Analyste Information Protection||![Marque de vérification.](../media/checkmark.png)|||||
-|Enquêteur Information Protection||![Marque de vérification.](../media/checkmark.png)|||||
-|Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
-|Configuration de l’organisation||||||![Marque de vérification.](../media/checkmark.png)|
+|Enquêteur Information Protection||![Coche.](../media/checkmark.png)|||||
+|Gérer les alertes||||||![Coche.](../media/checkmark.png)|
+|Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
 |Aperçu|||||||
-|Gestion des enregistrements|![Coche.](../media/checkmark.png)||||||
-|Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
+|Gestion des enregistrements|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion de la rétention|![Marque de vérification.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrer RMS|||||||
-|Gestion des rôles||||![Coche.](../media/checkmark.png)|||
+|Gestion des rôles||||![Marque de vérification.](../media/checkmark.png)|||
 |Rechercher et vider|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
-|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
 |Vue Service Assurance|||||||
 |Administrateur de révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||
 |View-Only Gestion des appareils|||||||
-|View-Only gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
+|View-Only gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
 |View-Only gérer les alertes||||||![Coche](../media/checkmark.png)|
 |Afficher uniquement les destinataires|||![Coche](../media/checkmark.png)||||
 |gestion des enregistrements View-Only|![Coche](../media/checkmark.png)||||||

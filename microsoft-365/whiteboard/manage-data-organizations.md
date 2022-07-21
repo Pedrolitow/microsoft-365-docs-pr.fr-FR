@@ -1,7 +1,7 @@
 ---
 title: Gérer les données pour le Tableau blanc Microsoft
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conservation des données pour le Tableau blanc Microsoft dans Azure et OneDrive Entreprise.
-ms.openlocfilehash: 103a48b01aa7ad87d0e3f84e6093344ea9cce0f0
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 88ebe6de6983823e6f782f006ac2aa58cfe9af93
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917626"
+ms.locfileid: "66943043"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Gérer les données pour le Tableau blanc Microsoft
 

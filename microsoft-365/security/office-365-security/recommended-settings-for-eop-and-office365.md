@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc9fd823bac4bd3dca3ba9234c3d7fb6c15a6fc4
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787141"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943864"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -65,7 +65,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, consultez 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil d’e-mail en bloc & propriétés de courrier indésirable**|||||
-|**Seuil d’e-mail en bloc** <br><br> _BulkThreshold_|7 |6 |4|Pour plus d’informations, consultez le [niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md).|
+|**Seuil d’e-mail en bloc** <br><br> _BulkThreshold_|7 |6|4|Pour plus d’informations, consultez le [niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Ce paramètre est disponible uniquement dans PowerShell.|
 |**Augmenter les paramètres de score de courrier indésirable**|Désactivé|Désactivé|Désactivé|Tous ces paramètres font partie de l’Advanced Spam Filter (ASF). Pour plus d’informations, consultez les [paramètres ASF dans la section stratégies anti-courrier indésirable](#asf-settings-in-anti-spam-policies) de cet article.|
 |**Marquer comme paramètres de courrier indésirable**|Désactivé|Désactivé|Désactivé|La plupart de ces paramètres font partie d’ASF. Pour plus d’informations, consultez les [paramètres ASF dans la section stratégies anti-courrier indésirable](#asf-settings-in-anti-spam-policies) de cet article.|
@@ -304,7 +304,7 @@ Dans PowerShell, vous utilisez les applets de commande [New-SafeLinksPolicy](/po
 |**Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** <br><br> _ScanUrls_|Non sélectionnée <br><br> `$false`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
 |**Attendre la fin de l’analyse de l’URL avant de remettre le message** <br><br> _DeliverMessageAfterScan_|Non sélectionnée <br><br> `$false`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
 |**Ne pas réécrire d’URL, effectuer des vérifications via l’API liens fiables uniquement** <br><br> _DisableURLRewrite_|Non sélectionnée <br><br> `$false`|Sélectionné <br><br> `$true`|Non sélectionnée <br><br> `$false`|Non sélectionnée <br><br> `$false`||
-|**Ne pas réécrire les URL suivantes dans un e-mail** <br><br> _DoNotRewriteUrls_|Vide <br><br> `$null`|Vide <br><br> `$null`|Vide <br><br> `$null`|Vide <br><br> `$null`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br><br> **Remarque** : L’objectif de la liste « Ne pas réécrire les URL suivantes » est d’ignorer l’habillage des liens sécurisés des URL spécifiées. Au lieu d’utiliser cette liste, vous pouvez désormais [créer des entrées d’URL d’autorisation dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-allow-url-entries).|
+|**Ne pas réécrire les URL suivantes dans un e-mail** <br><br> _DoNotRewriteUrls_|Vide <br><br> `$null`|Vide <br><br> `$null`|Vide <br><br> `$null`|Vide <br><br> `$null`|Nous n’avons aucune recommandation spécifique pour ce paramètre. <br><br> **Remarque** : les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’URL d’autorisation dans la liste d’autorisations/blocages du locataire](allow-block-urls.md#create-allow-url-entries) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.|
 |**Action pour les URL potentiellement malveillantes dans Microsoft Teams**||||||
 |**Activé : Liens fiables vérifie une liste de liens malveillants connus lorsque les utilisateurs cliquent sur des liens dans Microsoft Teams** <br><br> _EnableSafeLinksForTeams_|Non sélectionnée <br><br> `$false`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
 |**Action pour les URL potentiellement malveillantes dans les applications Microsoft Office**||||||

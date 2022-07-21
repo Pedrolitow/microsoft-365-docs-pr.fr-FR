@@ -1,7 +1,7 @@
 ---
 title: Gérer les demandes des personnes concernées par le GDPR dans Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment exporter, transférer ou supprimer des informations personnelles de Microsoft Whiteboard.
-ms.openlocfilehash: 53498dfc3309ab001bf4e1265f08c050ae464e61
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 97b960082621c6a728740d5fd747da73540b2ac7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917208"
+ms.locfileid: "66943000"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Gérer les demandes des personnes concernées par le GDPR dans Microsoft Whiteboard
 

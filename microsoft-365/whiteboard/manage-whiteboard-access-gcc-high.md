@@ -1,7 +1,7 @@
 ---
 title: Gérer l’accès au Tableau blanc Microsoft pour les environnements GCC High
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment activer, désactiver et gérer des données de tableau blanc.
-ms.openlocfilehash: e1a3ccfd08a4dab8115c8bedf7be49a6be34cd92
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 2f79f53ce68dd9179b2b652f46a4245b9ed6ffdb
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917353"
+ms.locfileid: "66942425"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>Gérer l’accès au Tableau blanc Microsoft pour les environnements GCC High
 

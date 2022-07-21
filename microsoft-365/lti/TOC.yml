@@ -8,7 +8,7 @@
   items:
     - name: Utiliser Microsoft OneDrive LTI avec Canvas
       href: onedrive-lti.md
-    - name: Utiliser Microsoft Teams classes avec Canvas
+    - name: Utiliser des classes Microsoft Teams avec Canvas
       href: teams-classes-with-canvas.md
     - name: Utiliser des réunions Microsoft Teams avec Canvas
       href: teams-meetings-with-canvas.md
@@ -16,17 +16,21 @@
   items:
     - name: Utiliser Microsoft OneDrive LTI avec Blackboard
       href: onedrive-lti-blackboard.md
-    - name: Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
+    - name: Utiliser des classes Microsoft Teams avec Blackboard Learn Ultra
       href: teams-classes-with-blackboard.md
 - name: Intégrations moodle
   items:
     - name: Configurer et configurer le plug-in Moodle
       href: moodle-plugin-configuration.md
-    - name: Utiliser Microsoft Teams classes et réunions avec Moodle
+    - name: Utiliser les classes et réunions Microsoft Teams avec Moodle
       href: teams-classes-meetings-with-moodle.md
 - name: Ouvrir les intégrations LMS
   items:
     - name: Configurer et configurer le plug-in Moodle pour Open LMS
       href: open-lms-plugin-configuration.md
-    - name: Utiliser Microsoft Teams classes et réunions avec Open LMS
+    - name: Utiliser les classes et réunions Microsoft Teams avec Open LMS
       href: open-lms-teams-classes-and-meetings.md
+- name: Intégrations desire2Learn Brightspace
+  items:
+    - name: Utiliser des classes et des réunions Microsoft Teams avec Brightspace
+      href: teams-classes-meetings-with-brightspace.md

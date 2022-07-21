@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/12/2022
+ms.date: 07/21/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Les journaux d’accès sont disponibles pour les messages chiffrés récupérés via le portail des messages chiffrés.
-ms.openlocfilehash: 50656d1695d8fc3d6e81de6afc03b3f4e3c5ccee
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393223"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942627"
 ---
-# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption-preview"></a>Journal d’activité du portail de messages chiffré par Microsoft Purview Advanced Message Encryption (préversion)
+# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Journal d’activité du portail de messages chiffré par Microsoft Purview Advanced Message Encryption
 
 Les journaux d’accès sont disponibles pour les messages chiffrés via le portail des messages chiffrés qui permet à votre organisation de déterminer quand les messages sont lus et transférés par vos destinataires externes. Pour vous assurer que les journaux sont disponibles pour tous les destinataires externes, vous devez appliquer un modèle de personnalisation personnalisé aux e-mails protégés envoyés par votre organisation aux destinataires externes qui appliquent une expérience de portail. Voir [Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md).
 

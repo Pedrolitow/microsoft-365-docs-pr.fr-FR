@@ -18,12 +18,12 @@ ms.custom: ''
 description: Comment configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs. Créer une boîte aux lettres pour les messages que les utilisateurs signalent comme courrier indésirable, hameçonnage, malveillant ou non malveillant.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
-ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+ms.openlocfilehash: 02356f03f60e2bfc0c6c7de992fdc0c4331f3a4c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66885529"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942513"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -40,7 +40,7 @@ Cette fonctionnalité fonctionne avec les options de création de rapports de me
 
 - [Complément Message de rapport](enable-the-report-message-add-in.md)
 - [Complément Report Phishing](enable-the-report-phish-add-in.md)
-- [Outils de création de rapports tiers](#third-party-reporting-tools)
+- [Outils de création de rapports tiers](user-submission.md#third-party-email-reporting-tools)
 
 La remise de messages signalés par l’utilisateur à une boîte aux lettres personnalisée plutôt que directement à Microsoft permet aux administrateurs de signaler manuellement et de manière sélective les messages électroniques à Microsoft à l’aide [de Administration soumission](admin-submission.md). *Ces paramètres étaient auparavant appelés stratégie d’envoi d’utilisateurs*.
 

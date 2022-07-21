@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez la protection des liens sécurisés dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez les liens fiables Teams et consultez les graphiques des messages Liens fiables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64fd5ec3086647c3cfa8a5719becc2e92af9867f
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 27c9f6c36959394eadea727e81fe0dde35e66993
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772147"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943930"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -116,15 +116,22 @@ Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais l
 > - Le destinataire est : romain@contoso.com
 > - Le destinataire est membre de : Exécutifs
 >
-> La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+> La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
 >
-> De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+> De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 ## <a name="safe-links-settings-for-email-messages"></a>Paramètres liens sécurisés pour les messages électroniques
 
-Liens fiables analysent le courrier électronique entrant pour les liens hypertexte malveillants connus. Les URL analysées sont réécrites à l’aide du préfixe d’URL standard Microsoft : `https://nam01.safelinks.protection.outlook.com`. Une fois le lien réécrit, il est analysé pour le contenu potentiellement malveillant.
+Liens fiables analysent le courrier électronique entrant pour les liens hypertexte malveillants connus. Les URL analysées sont réécrites ou _encapsulées_ à l’aide du préfixe d’URL standard Microsoft : `https://nam01.safelinks.protection.outlook.com`. Une fois le lien réécrit, il est analysé pour le contenu potentiellement malveillant.
 
-Une fois que les liens fiables ont réécrit une URL, celle-ci reste réécrite même si la réponse et le transfert du message sont _manuels_ (pour les destinataires internes et externes). Les liens supplémentaires ajoutés au message transféré ou répondu ne sont pas réécrits. Toutefois, dans le cas d’un transfert _automatique_ par les règles de boîte de réception ou le transfert SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final _, sauf si_ ce destinataire est également protégé par des liens fiables ou si l’URL a déjà été réécrite dans une communication précédente. Tant que les liens fiables sont activés, les URL sont toujours analysées avant la remise, qu’elles aient été réécrites ou non. Les URL non compressées seront également vérifiées par un appel d’API côté client à liens sécurisés au moment du clic dans Outlook pour Desktop version 16.0.12513 ou ultérieure.
+Une fois que les liens fiables ont réécrit une URL, celle-ci reste réécrite même si la réponse et le transfert du message sont _manuels_ (pour les destinataires internes et externes). Les liens supplémentaires ajoutés au message transféré ou répondu ne sont pas réécrits.
+
+Dans le cas d’un transfert _automatique_ par des règles de boîte de réception ou un transfert SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final _, sauf si_ l’une des instructions suivantes est vraie :
+
+- Le destinataire est également protégé par des liens fiables.
+- L’URL a déjà été réécrite dans une communication précédente.
+
+Tant que la protection des liens sécurisés est activée, les URL sont analysées avant la remise des messages, que les URL soient réécrites ou non. Dans les versions prises en charge d’Outlook (Outlook pour Desktop version 16.0.12513 ou ultérieure), les URL non compressées sont vérifiées par un appel d’API côté client aux liens fiables au moment du clic.
 
 Les paramètres des stratégies liens fiables qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
@@ -144,7 +151,7 @@ Les paramètres des stratégies liens fiables qui s’appliquent aux messages é
       - Sélectionné (activé) : les messages qui contiennent des URL sont conservés jusqu’à ce que l’analyse soit terminée. Les messages ne sont remis qu’une fois que les URL sont confirmées comme sûres. Il s’agit de la valeur recommandée.
       - Non sélectionné (désactivé) : si l’analyse d’URL ne peut pas se terminer, remettre le message de toute façon.
 
-  - **Ne réécrivez pas d’URL, effectuez des vérifications via l’API SafeLinks uniquement** : si ce paramètre est sélectionné (activé), aucun habillage d’URL n’a lieu. Les liens sécurisés sont appelés exclusivement par le biais d’API au moment du clic d’URL par les clients Outlook qui la prennent en charge. La valeur recommandée est sélectionnée (activée).
+  - **Ne réécrivez pas d’URL, effectuez des vérifications via l’API SafeLinks uniquement** : si ce paramètre est sélectionné (activé), aucun habillage d’URL n’a lieu. Dans les versions prises en charge d’Outlook (Outlook pour Desktop version 16.0.12513 ou ultérieure), les liens fiables sont appelés exclusivement via des API au moment du clic de l’URL.
 
   Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Stricte pour les politiques Safe Links, consultez [Paramètres des stratégie de liens fiables](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -306,7 +313,7 @@ Les exemples des valeurs que vous pouvez entrer et leurs résultats sont décrit
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listes « Ne pas réécrire les URL suivantes » dans les stratégies liens fiables
 
 > [!NOTE]
-> L’objectif de la liste « Ne pas réécrire les URL suivantes » est d’ignorer l’habillage liens fiables des URL spécifiées. Au lieu d’utiliser cette liste, vous pouvez désormais [créer des entrées d’URL d’autorisation dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-allow-url-entries).
+> Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’URL d’autorisation dans la liste d’autorisations/blocages du locataire](allow-block-urls.md#create-allow-url-entries) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
 
 Chaque stratégie De liens fiables contient une liste **Ne pas réécrire les URL suivantes** que vous pouvez utiliser pour spécifier des URL qui ne sont pas réécrites par l’analyse des liens fiables. En d’autres termes, la liste permet aux utilisateurs inclus dans la stratégie d’accéder aux URL spécifiées qui seraient autrement bloquées par des liens fiables. Vous pouvez configurer différentes listes dans différentes stratégies de liens fiables. Le traitement des stratégies s’arrête après l’application de la première stratégie (probablement la priorité la plus élevée) à l’utilisateur. Par conséquent, une seule option **Ne réécrivez pas la liste d’URL suivante** est appliquée à un utilisateur qui est inclus dans plusieurs stratégies de liens fiables actives.
 

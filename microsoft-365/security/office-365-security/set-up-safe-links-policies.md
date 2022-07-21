@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies liens sécurisés et des paramètres de liens sécurisés globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5b6d69614adcc34f24450e51c3067a13922493c5
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771392"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943842"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -123,9 +123,9 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
    > - Le destinataire est : romain@contoso.com
    > - Le destinataire est membre de : Exécutifs
    >
-   > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+   > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
    >
-   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+   > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -140,8 +140,8 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
 
        - **Ne réécrivez pas les URL suivantes dans la section e-mail** : Cliquez sur **Gérer (nn) URL** pour autoriser l’accès à des URL spécifiques qui seraient autrement bloquées par des liens fiables.
 
-     > [!NOTE]
-     > L’objectif de la liste « Ne pas réécrire les URL suivantes » est d’ignorer l’habillage des liens sécurisés de ces URL. Au lieu d’utiliser cette liste, vous pouvez désormais [créer des entrées d’URL d’autorisation dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#create-allow-url-entries).
+         > [!NOTE]
+         > Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’URL d’autorisation dans la liste d’autorisations/blocages du locataire](allow-block-urls.md#create-allow-url-entries) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
 
      1. Dans gérer **les URL pour ne pas réécrire** le menu volant qui s’affiche, cliquez sur ![l’icône Ajouter des URL.](../../media/m365-cc-sc-create-icon.png) **Ajoutez des URL**.
      2. Dans le menu volant **Ajouter des URL** qui s’affiche, tapez l’URL ou la valeur souhaitée, sélectionnez l’entrée qui apparaît sous la zone, puis cliquez sur **Enregistrer**. Répétez cette étape autant de fois que nécessaire.

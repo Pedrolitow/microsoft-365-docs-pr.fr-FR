@@ -1,7 +1,7 @@
 ---
 title: Ressources pour Microsoft Defender pour point de terminaison sur Mac
-description: Ressources pour Microsoft Defender pour le point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
+description: Ressources pour Microsoft Defender pour point de terminaison sur Mac, notamment comment la désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c8580e1bc0869f28da1b23a813bba9d2f3c612e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767219"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943615"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -36,7 +36,7 @@ ms.locfileid: "62767219"
 
 ## <a name="collecting-diagnostic-information"></a>Collecte d’informations de diagnostic
 
-Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, exécutez le système pendant un certain temps et rétablissez le niveau de journalisation par défaut.
+Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, exécutez le système pendant un certain temps et restaurez le niveau de journalisation par défaut.
 
 1. Augmenter le niveau de journalisation :
 
@@ -50,10 +50,10 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 
 2. Reproduire le problème
 
-3. Exécutez `sudo mdatp diagnostic create` cette session pour enregistrer les journaux microsoft Defender pour les points de terminaison. Les fichiers sont stockés dans une archive .zip de données. Cette commande imprime également le chemin d’accès du fichier à la sauvegarde une fois l’opération réussie.
+3. Exécutez cette commande `sudo mdatp diagnostic create` pour sauvegarder les journaux d’activité Microsoft Defender pour point de terminaison. Les fichiers sont stockés dans une archive .zip. Cette commande affiche également le chemin d’accès du fichier à la sauvegarde une fois l’opération réussie.
 
    > [!TIP]
-   > Par défaut, les journaux de diagnostic sont enregistrés dans `/Library/Application Support/Microsoft/Defender/wdavdiag/`. Pour modifier le répertoire dans lequel les journaux de diagnostic sont enregistrés, `--path [directory]` passez à la commande ci-dessous, `[directory]` en remplaçant par le répertoire souhaité.
+   > Par défaut, les journaux de diagnostic sont enregistrés `/Library/Application Support/Microsoft/Defender/wdavdiag/`dans . Pour modifier le répertoire dans lequel les journaux de diagnostic sont enregistrés, passez à la commande ci-dessous `--path [directory]` , en remplaçant `[directory]` le répertoire souhaité.
 
    ```bash
    sudo mdatp diagnostic create
@@ -73,23 +73,23 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
    Log level configured successfully
    ```
 
-## <a name="logging-installation-issues"></a>Journalisation des problèmes d’installation
+## <a name="logging-installation-issues"></a>Problèmes d’installation de la journalisation
 
-Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
 
-Le journal détaillé sera enregistré dans `/Library/Logs/Microsoft/mdatp/install.log`. Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
+Le journal détaillé sera enregistré `/Library/Logs/Microsoft/mdatp/install.log`dans . Si vous rencontrez des problèmes pendant l’installation, envoyez-nous ce fichier afin que nous puissions vous aider à diagnostiquer la cause.
 
 ## <a name="uninstalling"></a>Désinstallation
 
-Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint sur macOS. Notez que bien que la désinstallation gérée de manière centralisée soit disponible sur JAMF, elle n’est pas encore disponible pour les Microsoft Intune.
+Il existe plusieurs façons de désinstaller Microsoft Defender pour point de terminaison sur macOS. Notez que si la désinstallation gérée de manière centralisée est disponible sur JAMF, elle n’est pas encore disponible pour Microsoft Intune.
 
 ### <a name="interactive-uninstallation"></a>Désinstallation interactive
 
-- **Ouvrez Finder > Applications**. Cliquez avec le bouton **droit sur Microsoft Defender pour le point > déplacer vers la corbeille**.
+- Ouvrez **Finder > Applications**. Cliquez avec le bouton droit sur **Microsoft Defender pour point de terminaison > Déplacer vers la corbeille**.
 
 ### <a name="supported-output-types"></a>Types de sortie pris en charge
 
-Prend en charge les types de sortie de format tableau et JSON. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
+Prend en charge les types de sortie au format table et JSON. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie au format de sortie de votre choix à l’aide des commandes suivantes :
 
 `-output json`
 
@@ -101,60 +101,61 @@ Prend en charge les types de sortie de format tableau et JSON. Pour chaque comma
 
 ## <a name="configuring-from-the-command-line"></a>Configuration à partir de la ligne de commande
 
-Les tâches importantes, telles que le contrôle des paramètres du produit et le déclenchement d’analyses à la demande, peuvent être réalisées à partir de la ligne de commande :
+Des tâches importantes, telles que le contrôle des paramètres de produit et le déclenchement d’analyses à la demande, peuvent être effectuées à partir de la ligne de commande :
 
-|Group|Scénario|Commande|
+|Groupe|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuration|Activer/désactiver la protection cloud|`mdatp config cloud --value [enabled/disabled]`|
 |Configuration|Activer/désactiver les diagnostics de produit|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
-|Configuration|Activer/désactiver l’envoi automatique d’échantillons|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|Configuration|Activer/désactiver la soumission automatique d’exemples|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
 |Configuration|Ajouter un nom de menace à la liste autorisée|`mdatp threat allowed add --name [threat-name]`|
 |Configuration|Supprimer un nom de menace de la liste autorisée|`mdatp threat allowed remove --name [threat-name]`|
-|Configuration|Liste de tous les noms de menaces autorisés|`mdatp threat allowed list`|
+|Configuration|Répertorier tous les noms de menaces autorisés|`mdatp threat allowed list`|
 |Configuration|Activer la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |Configuration|Désactiver la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |Configuration|Activer le mode audit pour la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|Configuration|Activer/désactiver le mode antivirus passif|`mdatp config passive-mode --value [enabled/disabled]`|
+|Configuration|Activer/désactiver le mode passif antivirus|`mdatp config passive-mode --value [enabled/disabled]`|
 |Configuration|Configurer le degré de parallélisme pour les analyses à la demande|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
-|Configuration|Activer/désactiver les analyses après les mises à jour des informations de sécurité|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|Configuration|Activer/désactiver l’analyse d’archivage (analyses à la demande uniquement)|`mdatp config scan-archives --value [enabled/disabled]`|
-|Diagnostics|Modifier le niveau de journal|`mdatp log level set --level [error/warning/info/verbose]`|
+|Configuration|Activer/désactiver les analyses après les mises à jour du renseignement de sécurité|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Activer/désactiver l’analyse des archives (analyses à la demande uniquement)|`mdatp config scan-archives --value [enabled/disabled]`|
+|Configuration|Activer/désactiver le calcul de hachage de fichier|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
+|Diagnostics|Modifier le niveau du journal|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Générer des journaux de diagnostic|`mdatp diagnostic create --path [directory]`|
-|Intégrité|Vérifier l’état du produit|`mdatp health`|
-|Intégrité|Vérifier l’attribut d’un produit de harpon|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Intégrité|Vérifier l’intégrité du produit|`mdatp health`|
+|Intégrité|Rechercher un attribut de produit spefic|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
 |Protection|Analyser un chemin d’accès|`mdatp scan custom --path [path] [--ignore-exclusions]`|
-|Protection|Faire une analyse rapide|`mdatp scan quick`|
-|Protection|Faire une analyse complète|`mdatp scan full`|
+|Protection|Effectuer une analyse rapide|`mdatp scan quick`|
+|Protection|Effectuer une analyse complète|`mdatp scan full`|
 |Protection|Annuler une analyse à la demande en cours|`mdatp scan cancel`|
-|Protection|Demander une mise à jour des informations de sécurité|`mdatp definitions update`|
-|PEPT|Balise Set/Remove, prise en charge uniquement par GROUP|`mdatp edr tag set --name GROUP --value [name]`|
-|PEPT|Supprimer une balise de groupe de l’appareil|`mdatp edr tag remove --tag-name [name]`|
-|PEPT|Ajouter un ID de groupe|`mdatp edr group-ids --group-id [group]`|
+|Protection|Demander une mise à jour du renseignement de sécurité|`mdatp definitions update`|
+|EDR|Définir/supprimer une balise, uniquement prise en charge par GROUP|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|Supprimer une balise de groupe de l’appareil|`mdatp edr tag remove --tag-name [name]`|
+|EDR|Ajouter un ID de groupe|`mdatp edr group-ids --group-id [group]`|
 
-### <a name="how-to-enable-autocompletion"></a>Comment activer lacompletion automatique
+### <a name="how-to-enable-autocompletion"></a>Comment activer l’autocomplétion
 
-Pour activer lacompletion automatique dans Bash, exécutez la commande suivante et redémarrez la session Terminal :
+Pour activer l’autocomplétion dans Bash, exécutez la commande suivante et redémarrez la session terminal :
 
 ```bash
 echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
-Pour activer lacompletion automatique dans zsh :
+Pour activer l’autocomplétion dans zsh :
 
-- Vérifiez si lacompletion automatique est activée sur votre appareil :
+- Vérifiez si l’autocomplétion est activée sur votre appareil :
 
    ```zsh
    cat ~/.zshrc | grep autoload
    ```
 
-- Si la commande précédente ne produit aucune sortie, vous pouvez activer lacomplémentation automatique à l’aide de la commande suivante :
+- Si la commande précédente ne produit aucune sortie, vous pouvez activer l’autocomplétion à l’aide de la commande suivante :
 
    ```zsh
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Exécutez les commandes suivantes pour activer lacompletion automatique pour Microsoft Defender pour Endpoint sur macOS et redémarrez la session Terminal :
+- Exécutez les commandes suivantes pour activer l’autocomplétion pour Microsoft Defender pour point de terminaison sur macOS et redémarrer la session terminal :
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
@@ -162,10 +163,10 @@ Pour activer lacompletion automatique dans zsh :
    sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine Microsoft Defender pour point de terminaison client
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp`. Les fichiers sont nommés d’après l’threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list`.
+`/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp`. Les fichiers sont nommés d’après l’ID de suivi des menaces. Les trackingIds actuels sont affichés avec `mdatp threat list`.
 
-## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
+## <a name="microsoft-defender-for-endpoint-portal-information"></a>informations sur le portail Microsoft Defender pour point de terminaison
 
-PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) sont désormais arrivées, sur le blog Microsoft Defender for Endpoint, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans le Centre de sécurité Microsoft Defender pour Endpoint.
+Les [fonctionnalités EDR pour macOS sont désormais disponibles](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801), sur le blog Microsoft Defender pour point de terminaison, fournit des conseils détaillés sur ce à quoi s’attendre dans Microsoft Defender pour point de terminaison Security Center.

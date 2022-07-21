@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23d216e4fb831ef6425bff93bf3fc0063a263852
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089713"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943571"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir les préférences pour Microsoft Defender pour point de terminaison sur Linux
 
@@ -93,6 +93,17 @@ Détermine si la fonctionnalité de surveillance et de blocage du comportement e
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|désactivé (par défaut) <p> activé|
 |**Commentaires**|Disponible dans Defender pour point de terminaison version 101.45.00 ou ultérieure.|
+
+#### <a name="configure-file-hash-computation-feature"></a>Configurer la fonctionnalité de calcul de hachage de fichier
+
+Active ou désactive la fonctionnalité de calcul de hachage de fichier. Lorsque cette fonctionnalité est activée, Defender pour point de terminaison calcule les hachages des fichiers qu’il analyse. Notez que l’activation de cette fonctionnalité peut avoir un impact sur les performances de l’appareil. Pour plus d’informations, consultez : [Créer des indicateurs pour les fichiers](indicator-file.md).
+
+|Description|Valeur|
+|---|---|
+|**Clé**|enableFileHashComputation|
+|**Type de données**|Chaîne|
+|**Valeurs possibles**|désactivé (par défaut) <p> activé|
+|**Commentaires**|Disponible dans Defender pour point de terminaison version 101.73.77 ou ultérieure.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
 
@@ -320,13 +331,30 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Def
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|facultatif <p> obligatoire (par défaut)|
 |
+
+#### <a name="configure-cloud-block-level"></a>Configurer le niveau de bloc cloud
+
+Ce paramètre détermine l’agressivité de Defender pour point de terminaison dans le blocage et l’analyse des fichiers suspects. Si ce paramètre est activé, Defender pour point de terminaison sera plus agressif lors de l’identification des fichiers suspects à bloquer et analyser ; sinon, il sera moins agressif et, par conséquent, bloquer et analyser avec moins de fréquence. Il existe cinq valeurs pour définir le niveau de bloc cloud :
+
+- Normal (`normal`) : niveau de blocage par défaut.
+- Modéré (`moderate`) : fournit le verdict uniquement pour les détections à haut niveau de confiance.
+- Élevé (`high`) : bloque de manière agressive les fichiers inconnus tout en optimisant les performances (plus de chances de bloquer les fichiers non dangereux).
+- High Plus (`high_plus`) : bloque de manière agressive les fichiers inconnus et applique des mesures de protection supplémentaires (peuvent avoir un impact sur les performances de l’appareil client).
+- Tolérance zéro () :`zero_tolerance` bloque tous les programmes inconnus.
+
+|Description|Valeur|
+|---|---|
+|**Clé**|cloudBlockLevel|
+|**Type de données**|Chaîne|
+|**Valeurs possibles**|normal (par défaut) <p> Modérée <p> Haute <p> high_plus <p> zero_tolerance|
+|**Commentaires**|Disponible dans Defender pour point de terminaison version 101.56.62 ou ultérieure.|
   
 #### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les soumissions automatiques d’exemples
 
 Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Il existe trois niveaux pour contrôler la soumission d’exemples :
 
 - **Aucun** : aucun exemple suspect n’est envoyé à Microsoft.
-- **Coffre** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
+- **Sans risque** : seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
 - **Tous** : tous les exemples suspects sont envoyés à Microsoft.
 
 |Description|Valeur|

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez apprendre à créer, tester et paramétrer une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624728"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943307"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -204,7 +204,7 @@ Les modèles de stratégie DLP ne sont pas parfaits dès le départ. Il est prob
 
 Voici un exemple de faux positif. Cet e-mail est inoffensif. L’utilisateur fournit son numéro de téléphone mobile à une personne et inclut sa signature par e-mail.
 
-![E-mail montrant des informations de faux positifs.](../media/DLP-create-test-tune-false-positive-email.png)
+![Email montrant des informations faussement positives.](../media/DLP-create-test-tune-false-positive-email.png)
  
 Mais l’utilisateur voit un conseil de stratégie l’avertissant que l’e-mail contient des informations sensibles, plus précisément, un numéro de permis de conduire australien.
 
@@ -225,7 +225,7 @@ Une autre option consiste à augmenter le nombre d’instances afin qu’un faib
 
 En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de la correspondance (ou le niveau de confiance). Si votre type d’informations sensibles a plusieurs modèles, vous pouvez ajuster la précision de la correspondance dans votre règle afin que votre règle corresponde uniquement à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de correspondance de votre règle afin qu’elle corresponde uniquement au modèle avec le niveau de confiance le plus élevé. Pour plus d’informations sur les niveaux de confiance, consultez [Comment utiliser le niveau de confiance pour régler vos règles](data-loss-prevention-policies.md#match-accuracy).
 
-Enfin, si vous souhaitez obtenir encore un peu plus d’avancées, vous pouvez personnaliser n’importe quel type d’informations sensibles . Par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots clés pour le [numéro de licence du pilote australien, afin d’éliminer](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) le faux positif déclenché ci-dessus. Pour savoir comment procéder à l’aide de XML et PowerShell, consultez [la personnalisation d’un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
+Enfin, si vous souhaitez obtenir un peu plus avancé, vous pouvez personnaliser n’importe quel type d’informations sensibles. Par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots clés pour le [numéro de licence des pilotes australiens](sit-defn-australia-drivers-license-number.md), afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment procéder à l’aide de XML et PowerShell, consultez [la personnalisation d’un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activer une stratégie DLP
 

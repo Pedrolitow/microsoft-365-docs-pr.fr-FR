@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
-description: Identifiez les applets de commande PowerShell pour la rétention qui prennent en charge la configuration à grande échelle, l’automatisation ou qui peuvent être nécessaires pour les scénarios de configuration avancés.
-ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Identifiez les applets de commande PowerShell pour la rétention Microsoft 365 qui prennent en charge la configuration à grande échelle, l’automatisation ou qui peuvent être nécessaires pour des scénarios de configuration avancés.
+ms.openlocfilehash: bdbda5de65421fa73f45a278e2346777835062d9
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625982"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66941989"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 
@@ -32,7 +32,7 @@ Avant d’utiliser ces applets de commande, vous devez d’abord vous [connecter
 
 Dans les descriptions qui suivent, une stratégie de rétention peut faire référence à une stratégie de rétention (aucune étiquette) ou à une stratégie d’étiquette de rétention. Chaque stratégie définit s’il est statique ou adaptatif et les emplacements de la stratégie à appliquer. La stratégie nécessite ensuite une règle pour terminer la configuration.
 
-Par exemple :
+Par exemple :
 - Une stratégie de rétention a besoin d’une règle qui définit les paramètres de rétention, tels que la conservation pendant cinq ans, puis la suppression.
 
 Lorsque vous utilisez des étiquettes de rétention, celles-ci contiennent les paramètres de rétention et leurs stratégies ont besoin de règles différentes :

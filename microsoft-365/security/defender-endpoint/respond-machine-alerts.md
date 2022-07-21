@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fe312e24a6d6acf174739f2ef45358ed136ec939
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014593"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942605"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -120,26 +120,26 @@ Le package contient les dossiers suivants :
 |Autoruns|Contient un ensemble de fichiers qui représentent chacun le contenu du registre d’un point d’entrée de démarrage automatique connu (ASEP) pour aider à identifier la persistance de l’attaquant sur l’appareil. <p> <div class="alert"><b>NOTE:</b> Si la clé de Registre est introuvable, le fichier contient le message suivant : « ERREUR : Le système n’a pas trouvé la clé ou la valeur de Registre spécifiée ».<div>|
 |Programmes installés|Ce fichier .CSV contient la liste des programmes installés qui peuvent vous aider à identifier ce qui est actuellement installé sur l’appareil. Pour plus d’informations, consultez [Win32_Product classe](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent aider à identifier la connectivité aux URL suspectes, l’infrastructure de commande et de contrôle (C&C) de l’attaquant, tout déplacement latéral ou les connexions à distance. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte établie par un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui a été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut les deux entrées préchargées à partir du fichier Hosts local et tous les enregistrements de ressources récemment obtenus pour les requêtes de nom résolues par l’ordinateur. Cela peut aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les cartes peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions rendez-vous.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>NOTE:</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’investigation. Pour plus d’informations sur la création du fichier journal du [pare-feu, consultez Configurer le Pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|Fichiers de prérécupération|Windows fichiers de prérécupération sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont peut-être été supprimées, mais qui se trouvent toujours dans la liste des fichiers de prérécupération. <ul><li>Dossier de prérécupération : contient une copie des fichiers de prérécupération à partir de `%SystemRoot%\Prefetch`. REMARQUE : Il est suggéré de télécharger une visionneuse de fichiers de prérécupération pour afficher les fichiers de prérécupération.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour effectuer le suivi en cas d’échec de copie dans le dossier de prérécupération.</li></ul>|
+|Fichiers de prérécupération|Les fichiers Prérécupération Windows sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont peut-être été supprimées, mais qui se trouvent toujours dans la liste des fichiers de prérécupération. <ul><li>Dossier de prérécupération : contient une copie des fichiers de prérécupération à partir de `%SystemRoot%\Prefetch`. REMARQUE : Il est suggéré de télécharger une visionneuse de fichiers de prérécupération pour afficher les fichiers de prérécupération.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour effectuer le suivi en cas d’échec de copie dans le dossier de prérécupération.</li></ul>|
 |Processus|Contient un fichier .CSV répertoriant les processus en cours d’exécution et permet d’identifier les processus en cours d’exécution sur l’appareil. Cela peut être utile lors de l’identification d’un processus suspect et de son état.|
 |Tâches planifiées|Contient un fichier .CSV répertoriant les tâches planifiées, qui peut être utilisé pour identifier les routines exécutées automatiquement sur un appareil choisi afin de rechercher le code suspect qui a été configuré pour s’exécuter automatiquement.|
 |Journal des événements de sécurité|Contient le journal des événements de sécurité, qui contient des enregistrements d’activité de connexion ou de déconnexion, ou d’autres événements liés à la sécurité spécifiés par la stratégie d’audit du système. <p><div class="alert"><b>NOTE:</b> Ouvrez le fichier journal des événements à l’aide de l’Observateur d’événements.</div>|
 |Services|Contient un fichier .CSV qui répertorie les services et leurs états.|
-|sessions SMB (Server Message Block) Windows|Répertorie l’accès partagé aux fichiers, imprimantes et ports série et communications diverses entre les nœuds d’un réseau. Cela peut aider à identifier l’exfiltration de données ou le mouvement latéral. <p> Contient des fichiers pour SMBInboundSessions et SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> S’il n’y a aucune session (entrante ou sortante), vous obtenez un fichier texte qui vous indique qu’aucune session SMB n’a été trouvée.</div>|
-|System Information|Contient un fichier SystemInformation.txt qui répertorie les informations système telles que la version du système d’exploitation et les cartes réseau.|
+|Sessions SMB (Windows Server Message Block)|Répertorie l’accès partagé aux fichiers, imprimantes et ports série et communications diverses entre les nœuds d’un réseau. Cela peut aider à identifier l’exfiltration de données ou le mouvement latéral. <p> Contient des fichiers pour SMBInboundSessions et SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> S’il n’y a aucune session (entrante ou sortante), vous obtenez un fichier texte qui vous indique qu’aucune session SMB n’a été trouvée.</div>|
+|Informations système|Contient un fichier SystemInformation.txt qui répertorie les informations système telles que la version du système d’exploitation et les cartes réseau.|
 |Répertoires temporaires|Contient un ensemble de fichiers texte qui répertorie les fichiers situés dans %Temp% pour chaque utilisateur du système. <p> Cela peut aider à suivre les fichiers suspects qu’un attaquant peut avoir déposés sur le système. <p> <div class="alert"><b>NOTE:</b> Si le fichier contient le message suivant : « Le système ne trouve pas le chemin spécifié », cela signifie qu’il n’y a pas de répertoire temporaire pour cet utilisateur, et peut-être parce que l’utilisateur ne s’est pas connecté au système.</div>|
 |Utilisateurs et groupes|Fournit une liste de fichiers qui représentent chacun un groupe et ses membres.|
 |WdSupportLogs|Fournit les MpCmdRunLog.txt et les MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> Ce dossier ne sera créé que le Windows 10, version 1709 ou ultérieure, avec le correctif cumulatif de février 2020 ou une version plus récente installée : <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 et 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|Ce fichier est un résumé de la collection de packages d’investigation, il contient la liste des points de données, la commande utilisée pour extraire les données, l’état d’exécution et le code d’erreur en cas d’échec. Vous pouvez utiliser ce rapport pour suivre si le package inclut toutes les données attendues et identifier s’il y a eu des erreurs.|
 |
 
-## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Exécuter Antivirus Microsoft Defender l’analyse sur les appareils
+## <a name="run-microsoft-defender-antivirus-scan-on-devices"></a>Exécuter l’analyse antivirus Microsoft Defender sur les appareils
 
 Dans le cadre du processus d’investigation ou de réponse, vous pouvez lancer à distance une analyse antivirus pour identifier et corriger les programmes malveillants susceptibles d’être présents sur un appareil compromis.
 
 > [!IMPORTANT]
 > - Cette action n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md)
-> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. Microsoft Defender AV peut être en mode passif. Pour plus d’informations, consultez [Antivirus Microsoft Defender compatibilité](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Une analyse de l’antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. Microsoft Defender AV peut être en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Vous avez sélectionné **Exécuter l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 
@@ -158,7 +158,7 @@ En plus de contenir une attaque en arrêtant des processus malveillants, vous po
 
 > [!IMPORTANT]
 > - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2019 ou version ultérieure. 
-> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender.
+> - Cette fonctionnalité est disponible si votre organisation utilise l’antivirus Microsoft Defender.
 > - Cette action doit répondre aux Windows Defender formats de stratégie d’intégrité du code Application Control et aux exigences de signature. Pour plus d’informations, consultez [les formats de stratégie d’intégrité du code et la signature](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction peut aider à empêcher un attaquant de contrôler les appareils compromis et d’effectuer d’autres activités malveillantes.
@@ -187,7 +187,7 @@ Selon la gravité de l’attaque et la sensibilité de l’appareil, vous pouvez
 > - L’isolation des appareils du réseau n’est actuellement pas prise en charge pour les appareils exécutant macOS ou Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md).
 > - L’isolation complète est disponible pour les appareils exécutant Windows 11, Windows 10, version 1703 ou ultérieure, Windows Server 2022, Windows Server 2019 et Windows Server 2016.
 > - L’isolation sélective est disponible pour les appareils exécutant Windows 10, version 1709 ou ultérieure et Windows 11.
-> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouvent derrière un tunnel VPN complet ne pourront pas atteindre le service cloud Microsoft Defender pour point de terminaison une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionné pour Microsoft Defender pour point de terminaison et le trafic lié à la protection cloud de l’Antivirus Microsoft Defender.
 
 Cette fonctionnalité d’isolation de l’appareil déconnecte l’appareil compromis du réseau tout en conservant la connectivité au service Defender pour point de terminaison, qui continue de surveiller l’appareil.
 
@@ -210,6 +210,9 @@ Lorsqu’un appareil est isolé, la notification suivante s’affiche pour infor
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="Message d’absence de connexion réseau" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="contain-devices-from-the-network"></a>Contenir des appareils à partir du réseau
+ 
+> [!NOTE]
+> Les fonctionnalités de contenu sont actuellement en préversion publique. Pour en savoir plus sur les nouvelles fonctionnalités de la préversion Microsoft 365 Defender et être parmi les premiers à essayer les fonctionnalités à venir en activant l’expérience de préversion, consultez [les fonctionnalités en préversion dans Micrsoft 365 Defender](../defender/preview.md).
 
 Lorsque vous avez identifié un appareil non managé compromis ou potentiellement compromis, vous souhaiterez peut-être le contenir à partir du réseau. Lorsque vous avez un appareil, un Microsoft Defender pour point de terminaison appareil intégré bloque la communication entrante et sortante avec cet appareil. Cette action peut aider à empêcher les appareils voisins de se compromettre pendant que l’analyste des opérations de sécurité localise, identifie et corrige la menace sur l’appareil compromis.
 
@@ -217,7 +220,7 @@ Lorsque vous avez identifié un appareil non managé compromis ou potentiellemen
 > Le blocage des communications entrantes et sortantes avec un appareil « autonome » est pris en charge sur les appareils intégrés Microsoft Defender pour point de terminaison Windows 10 et Windows Server 2019+.
 
 ### <a name="how-to-contain-a-device"></a>Comment contenir un appareil
-
+ 
 1. Accédez à la page **Inventaire des appareils** et sélectionnez l’appareil à contenir.
 
 2. Sélectionnez **Contenir l’appareil** dans le menu actions du menu volant de l’appareil.
