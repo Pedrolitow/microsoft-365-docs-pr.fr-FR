@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Recherchez des ressources sur la configuration et la gestion du Tableau blanc Microsoft.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70f1252d8a583fc317af30a6eaaa6ccaf0df7a1e
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554116"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917319"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Présentation du Tableau blanc Microsoft
 
@@ -31,7 +30,7 @@ Les ressources de cette section vous aident à en savoir plus sur le Tableau bla
 | Si vous recherchez ces informations | Accédez à cette ressource |
 |:-----|:-----|
 |Découvrez comment obtenir le Tableau blanc Microsoft|[Page du produit Tableau blanc Microsoft](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)|
-|Rechercher des ressources dans le Centre de ressources Microsoft Tech Community|[Blog sur le tableau blanc Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
+|Rechercher des ressources dans le centre de ressources Microsoft Tech Community|[Blog sur le tableau blanc Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
 |Regarder des vidéos pour découvrir des conseils utiles|[Microsoft Whiteboard YouTube channel](https://www.youtube.com/c/MicrosoftWhiteboard/videos/Microsoft%20Whiteboard)|
 |Obtenir des conseils sur le Tableau blanc Microsoft pour les utilisateurs finaux|[Aide de Microsoft Whiteboard](https://support.microsoft.com/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
 
@@ -43,10 +42,13 @@ Les ressources de cette section aident l’administrateur de votre organisation 
 
 | Si vous recherchez ces informations | Accédez à cette ressource |
 |:-----|:-----|
-|Découvrez comment configurer et gérer l’accès au Tableau blanc pour votre organisation|[Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md)|
+|Découvrez comment configurer le tableau blanc pour votre organisation|[Configurer et utiliser le Tableau blanc](/surface-hub/whiteboard-collaboration)|
+|Déployer le Tableau blanc sur des appareils qui exécutent Windows 10 ou une version ultérieure à l’aide de Microsoft Intune ou de Microsoft Configuration Manager|[Déployer le Tableau blanc Microsoft sur des appareils Windows](deploy-on-windows-organizations.md)|
+|Découvrez comment gérer l’accès au Tableau blanc pour votre organisation|[Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md)|
 |Rechercher l’emplacement de stockage du contenu et des données de votre tableau blanc dans Azure et OneDrive Entreprise  |[Gérer les données pour le tableau blanc](manage-data-organizations.md)  |
 |Découvrez l’expérience de partage dans Teams et comment partager des liens vers des utilisateurs spécifiques  |[Gérer le partage pour le tableau blanc](manage-sharing-organizations.md)  |
-|Déployer le Tableau blanc sur des appareils qui exécutent Windows 10 ou une version ultérieure à l’aide de Microsoft Intune ou de Microsoft Configuration Manager  |[Déployer le tableau blanc sur Windows](deploy-on-windows-organizations.md)  |
+|Découvrez comment configurer les paramètres de confidentialité et les données de diagnostic pour le Tableau blanc |[Configurer les paramètres de confidentialité dans le Tableau blanc](configure-privacy-settings.md)  |
+|Découvrez comment gérer les exigences du Règlement général sur la protection des données (RGPD) pour les données personnelles collectées dans le Tableau blanc |[Gérer les demandes de personnes concernées par le RGPD dans le Tableau blanc](gdpr-requests.md)  |
 
 ### <a name="for-government"></a>Pour le gouvernement
 

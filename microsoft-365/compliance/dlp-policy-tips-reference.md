@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638342"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917274"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Référence des conseils de stratégie de prévention contre la perte de données
 
@@ -404,4 +404,5 @@ Notez que les types d’informations sensibles personnalisés seront également 
 |**Applications cloud tierces**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie de protection contre la perte de données ne sont pas pris en charge sur les applications cloud tierces|
 |**Local**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
 |**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sous-ensemble|Sous-ensemble|Consultez [Outlook 2013 et versions ultérieures, ainsi que la prise en charge des applications Office sur le Bureau qui affichent des conseils de stratégie pour certains types d’informations sensibles uniquement](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur SharePoint Online ou les sites OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/externe)</li><li>Notifier l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaît pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Pour plus d’informations[, consultez les conseils de stratégie dans Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
+|**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sous-ensemble|Sous-ensemble|Les stratégies de protection contre la perte de données dans Power BI sont en préversion publique. </br></br> Les conseils de stratégie et les alertes d’administration sont pris en charge. |
 ||||||

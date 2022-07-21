@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment définir et gérer des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 60d5188b9288b1e131e36e145f7abb98a34d5ead
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d4e520a236c3658106a8311df0beed7f6c54ac4e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627644"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918021"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurer et afficher des alertes pour les stratégies de protection contre la perte de données
 
@@ -63,6 +63,7 @@ Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) qui sont �
 
 - **Configuration des alertes à événement unique** : les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 peuvent créer des stratégies d’alerte uniquement lorsqu’une alerte est déclenchée chaque fois qu’une activité se produit.
 - **Configuration d’alerte agrégée** : pour configurer des stratégies d’alerte agrégées en fonction d’un seuil, vous devez disposer de l’une des configurations suivantes :
+  - Un abonnement A5
   - Un abonnement E5 ou G5
   - Un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
     - Office 365 – Protection avancée contre les menaces Plan 2
@@ -125,7 +126,7 @@ Pour utiliser le tableau de bord de gestion des alertes DLP :
     | Catégorie          | Nom de la propriété                 | Description                                                                | Types d’événements applicables                   |
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*Détails de l’événement*||
-    |      | Id                            | ID unique associé à l’événement                                        | Tous les événements                               |
+    |      | ID                            | ID unique associé à l’événement                                        | Tous les événements                               |
     |                   | Emplacement                      | Charge de travail dans laquelle l’événement a été détecté                                      | Tous les événements                               |
     |                   | Temps d’activité              | Heure de l’activité de l’utilisateur à l’origine de la violation DLP                    | Tous les événements                               |
     |*Entités impactées*||
@@ -133,7 +134,7 @@ Pour utiliser le tableau de bord de gestion des alertes DLP :
     |                   | Nom d'hôte                      | Nom d’hôte de l’ordinateur sur lequel la violation DLP a été détectée              | Événements d’appareils                           |
     |                   | Adresse IP                    | Adresse IP de l’ordinateur                                                  | Événements d’appareils                           |
     |                   | File path                     | Chemin absolu du fichier impliqué dans la violation                        | Événements SharePoint, OneDrive et Appareils |
-    |                   | Destinataires de l’e-mail              | Destinataires de l’e-mail qui a violé la stratégie DLP                       | Événements Exchange                          |
+    |                   | Email destinataires              | Destinataires de l’e-mail qui a violé la stratégie DLP                       | Événements Exchange                          |
     |                   | Sujet de l’e-mail                 | Objet de l’e-mail qui a violé la stratégie DLP                          | Événements Exchange                          |
     |                   | Pièces jointes             | Noms des pièces jointes dans l’e-mail qui ont violé la stratégie DLP         | Événements Exchange                          |
     |                   | Propriétaire du site                    | Nom du propriétaire du site                                                     | Événements SharePoint et OneDrive           |

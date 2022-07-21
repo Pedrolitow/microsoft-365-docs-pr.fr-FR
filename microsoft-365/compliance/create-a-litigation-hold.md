@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,16 +17,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4a1c7992952e10939aaa1029888455bb05fc4986
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631070"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918043"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une conservation pour litige
 
-Vous pouvez placer une boîte aux lettres en attente de litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions d’origine des éléments modifiés. Lorsque vous placez une boîte aux lettres utilisateur en attente de litige, le contenu de la boîte aux lettres d’archivage de l’utilisateur (si elle est activée) est également conservé. Lorsque vous créez une conservation, vous pouvez spécifier une durée de conservation (également appelée *conservation basée sur le temps*) afin que les éléments supprimés et modifiés soient conservés pendant une période spécifiée, puis supprimés définitivement de la boîte aux lettres. Ou vous pouvez simplement conserver le contenu indéfiniment (appelé *conservation infinie*) ou jusqu’à ce que la conservation litige soit supprimée. Si vous spécifiez une période de conservation, elle est calculée à partir de la date de réception d’un message ou de la création d’un élément de boîte aux lettres. 
+Vous pouvez placer une boîte aux lettres en attente de litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions d’origine des éléments modifiés. Lorsque vous placez une boîte aux lettres utilisateur en attente de litige, le contenu de la boîte aux lettres d’archivage de l’utilisateur (si elle est activée) est également conservé. Lorsque vous créez une conservation, vous pouvez spécifier une durée de conservation (également appelée *conservation basée sur le temps*) afin que les éléments supprimés et modifiés soient conservés pendant une période spécifiée, puis supprimés définitivement de la boîte aux lettres. Ou vous pouvez simplement conserver le contenu indéfiniment (appelé *conservation infinie*) ou jusqu’à ce que la conservation litige soit supprimée. Si vous spécifiez une période de conservation, elle est calculée à partir de la date de réception d’un message ou de la création d’un élément de boîte aux lettres.
   
 Voici ce qui se passe lorsque vous créez une conservation des litiges.
   
@@ -43,7 +43,7 @@ Voici ce qui se passe lorsque vous créez une conservation des litiges.
 Pour placer une boîte aux lettres Exchange Online en attente de litige, une licence Exchange Online Plan 2 doit lui être attribuée. Si une licence Exchange Online Plan 1 est attribuée à une boîte aux lettres, vous devez lui attribuer une licence Archivage Exchange Online distincte pour la mettre en attente.
 
 > [!NOTE]
-> Pour Office 365 Éducation organisations, la conservation des litiges est prise en charge dans les abonnements Office 365 A1, qui incluent une licence Exchange Online Plan 1 avec des fonctionnalités supplémentaires. Pour plus d’informations, consultez la section « fonctionnalités Exchange Online » dans la [description du service Office 365 Éducation](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
+> Pour Office 365 Éducation organisations, la conservation des litiges est prise en charge dans les abonnements Office 365 A1, qui incluent une licence Exchange Online Plan 2 avec des fonctionnalités supplémentaires. Pour plus d’informations, consultez la section « fonctionnalités Exchange Online » dans la [description du service Office 365 Éducation](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Mettre une boîte aux lettres en attente pour litige
 

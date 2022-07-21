@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment exporter des données sources pour un type d’informations sensibles basé sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 913870afeef443c5b346172099b0cd47db13e52e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760688"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918065"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données
 
@@ -33,7 +33,7 @@ Une fois que les données ont été exportées dans l’un des formats pris en c
 
 ## <a name="defining-your-edm-sensitive-type"></a>Définition de votre type sensible EDM
 
-Lors de la définition de votre type sensible EDM, l’une des décisions les plus critiques est de déterminer quels champs seront les champs principaux. Les champs principaux doivent suivre un modèle détectable et être définis en tant que champs pouvant faire l’objet d’une recherche (colonnes) dans votre schéma EDM. Les champs secondaires n’ont pas besoin de suivre un modèle, car ils seront comparés à tous les texte qui entourent les correspondances avec les champs principaux.
+Lors de la définition de votre type sensible EDM, l’une des décisions les plus critiques consiste à définir les champs qui seront des champs principaux. Les champs principaux doivent suivre un modèle détectable et être définis en tant que champs pouvant faire l’objet d’une recherche (colonnes) dans votre schéma EDM. Les champs secondaires n’ont pas besoin de suivre un modèle, car ils seront comparés à tous les texte qui entourent les correspondances avec les champs principaux.
 
 Utilisez ces règles pour déterminer les colonnes que vous devez utiliser comme champs principaux :
 
@@ -45,7 +45,7 @@ Par exemple, si vous avez les colonnes `full name`, `date of birth`, `account nu
 
 ## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>Enregistrer des données sensibles au format .csv, .tsv ou séparés par des canaux
 
-1. Identifiez les informations sensibles que vous voulez utiliser. Exportez les données vers une application, telle que Microsoft Excel, et enregistrez le fichier dans un fichier texte. Le fichier peut être enregistré au format .csv (valeurs séparées par des virgules), .tsv (valeurs séparées par des tabulations) ou séparés par des canaux (|). Le format .tsv est recommandé dans les cas où vos valeurs de données peuvent inclure des virgules, telles que des adresses postales.
+1. Identifiez les informations sensibles que vous voulez utiliser. Exportez les données vers une application telle que Microsoft Excel et enregistrez le fichier dans un fichier texte. Le fichier peut être enregistré au format .csv (valeurs séparées par des virgules), .tsv (valeurs séparées par des tabulations) ou séparés par des canaux (|). Le format .tsv est recommandé dans les cas où vos valeurs de données peuvent inclure des virgules, telles que des adresses postales.
 Le fichier de données peut inclure au maximum :
    - 100 millions de lignes de données sensibles
    - 32 colonnes (champs) par source de données
@@ -53,7 +53,7 @@ Le fichier de données peut inclure au maximum :
 
 2. Structurez les données sensibles dans le fichier .csv ou .tsv de telle sorte que la première ligne inclut les noms des champs utilisés pour la classification basée sur EDM. Dans votre fichier, vous pouvez avoir des noms de champs tels que « ssn », « birthdate », « firstname », « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé *PatientRecords.csv*. Ses colonnes incluent *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, etc.
 
-3. Prêtez attention au format des champs de données sensibles. En particulier, les champs qui peuvent contenir des virgules dans leur contenu, par exemple, une adresse postale qui contient la valeur « Seattle, WA » serait analysée comme deux champs distincts lorsqu’elles sont analysées si le format .csv est sélectionné. Pour éviter cela, utilisez le format .tsv ou entourez la virgule contenant des valeurs par des guillemets doubles dans la table de données sensible. Si les virgules contenant des valeurs contiennent également des espaces, vous devez créer un SIT personnalisé qui correspond au format correspondant. Par exemple, un SIT qui détecte une chaîne à plusieurs mots avec des virgules et des espaces.
+3. Faites attention au format des champs de données sensibles ; en particulier, les champs qui peuvent contenir des virgules dans leur contenu. Par exemple, une adresse postale qui contient la valeur « Seattle, WA » est analysée en tant que deux champs distincts lorsqu’elle est analysée si le format .csv est sélectionné. Pour éviter cela, utilisez le format .tsv ou entourez la virgule contenant des valeurs par des guillemets doubles dans la table de données sensible. Si les virgules contenant des valeurs contiennent également des espaces, vous devez créer un SIT personnalisé qui correspond au format correspondant. Par exemple, un SIT qui détecte une chaîne à plusieurs mots avec des virgules et des espaces.
 
 ## <a name="next-step"></a>Étape suivante
 

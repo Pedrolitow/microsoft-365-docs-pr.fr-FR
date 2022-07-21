@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur d’activités vous permet de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: fc74e8c5e11834b14c6aa8a3f80d43e20c43ec11
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642017"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917999"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activités
 
@@ -99,7 +99,7 @@ Voici une liste des groupes de rôles applicables en préversion. Pour en savoir
 
 L’Explorateur d’activités collecte des informations d’activité à partir des journaux d’audit sur plusieurs sources d’activités. Pour plus d’informations sur l’activité d’étiquetage dans l’Explorateur d’activités, consultez [Événements d’étiquetage disponibles dans l’Explorateur d’activités](data-classification-activity-explorer-available-events.md).
 
-**Activités d’étiquette de confidentialité** et **activités d’étiquetage de rétention à partir d’applications natives** Office, complément Azure Information Protection, SharePoint Online, Exchange Online (étiquettes de confidentialité uniquement) et OneDrive. En voici quelques exemples :
+Activités **d’étiquette de confidentialité** et **activités d’étiquetage de rétention à partir d’applications natives** Office, client et scanneur d’étiquetage unifié Azure Information Protection (AIP), SharePoint Online, Exchange Online (étiquettes de confidentialité uniquement) et OneDrive. En voici quelques exemples :
 
 - Étiquette appliqué
 - Étiquette modifiée (mise à niveau, rétrogradée ou supprimé)

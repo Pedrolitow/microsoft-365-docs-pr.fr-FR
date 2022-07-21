@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 828a5c5d61c1b662f42e34ae95825dbc5994c816
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689149"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917582"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
-En tant qu'administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer puis baliser le contenu de votre organisation afin de contrôler où il va, de le protéger où qu'il soit et de vous assurer qu'il est préservé et supprimé en fonction des besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](retention.md#retention-labels) et la classification des informations sensibles par types. Plusieurs méthodes s’offrent à vous pour effectuer la découverte, l’évaluation et le balisage, mais le résultat final est de disposer d’un grand nombre de documents et de messages électroniques balisés et classifiés avec ces étiquettes. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
+En tant qu’administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer et baliser le contenu de votre organisation afin de contrôler sa circulation, de le protéger peut importe son emplacement et vous assurer qu’il est conservé et supprimé selon les besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](retention.md#retention-labels) et la classification des informations sensibles par types. Il existe différentes façons de procéder à la découverte, l’évaluation et le balisage, mais au final, vous pouvez avoir un très grand nombre de documents et d’e-mails marqués et classés avec l’une de ces étiquettes, ou les deux. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
 
 - le nombre d’éléments qui ont été classifiés en tant que types d’informations sensibles et la nature de ces classifications
 - les étiquettes de confidentialité les plus utilisées dans Microsoft 365 et Azure Information Protection

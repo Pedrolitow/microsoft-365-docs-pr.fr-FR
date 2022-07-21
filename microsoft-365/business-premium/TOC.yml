@@ -1,6 +1,6 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Aperçu
+    - name: Vue d’ensemble
       href: index.md
     - name: Comment Microsoft 365 aide votre entreprise
       href: m365bp-secure-users.md
@@ -14,7 +14,7 @@
   items:
     - name: Se connecter et configurer
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -44,7 +44,7 @@
           href: m365bp-protect-pcs-macs.md
     - name: Utiliser l’e-mail en toute sécurité
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-protect-email-overview.md
         - name: Se protéger contre le hameçonnage et les autres attaques
           href: m365bp-avoid-phishing-and-attacks.md
@@ -52,7 +52,7 @@
           href: send-encrypted-email.md
     - name: Collaborer et partager de manière sécurisée
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-collaborate-share-securely.md
         - name: Créer Teams pour la collaboration
           href: create-teams-for-collaboration.md
@@ -66,7 +66,7 @@
   items:
     - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-protect-devices.md
         - name: Configurer les appareils gérés
           href: m365bp-managed-devices-setup.md
@@ -92,7 +92,7 @@
       href: m365bp-device-groups-mdb.md
 - name: Gestion des incidents de sécurité
   items:
-    - name: Aperçu
+    - name: Vue d’ensemble
       href: m365bp-security-incident-management.md
     - name: Passer en revue les recommandations de sécurité
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -108,12 +108,12 @@
       href: m365bp-maintain-environment.md
     - name: Guide d’opérations de sécurité
       href: m365bp-security-incident-quick-start.md
-    - name: Supprimer des utilisateurs
-      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Ajouter des utilisateurs
       href: m365bp-add-users.md
     - name: Réinitialiser les mots de passe
       href: m365bp-reset-passwords.md
+    - name: Supprimer les utilisateurs qui sont partis
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Supprimer des données sur des appareils
       href: m365bp-remove-company-data.md
     - name: Rétablissement des paramètres d’usine des appareils

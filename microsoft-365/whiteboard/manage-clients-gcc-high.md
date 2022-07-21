@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f02be2f581199ee7025425edc8137ce68234e298
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: bdf4edea4891aaed4d0325aca132818ea351c70e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66553926"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917252"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les clients pour le Tableau blanc Microsoft dans les environnements GCC High
 

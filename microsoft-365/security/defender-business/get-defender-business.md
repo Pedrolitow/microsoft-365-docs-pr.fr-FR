@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771304"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917882"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour entreprises
 
@@ -30,7 +31,7 @@ Si vous n’avez pas encore Microsoft Defender pour entreprises, vous pouvez cho
 
 - [Essayez ou achetez la version autonome de Defender entreprise](#try-or-buy-microsoft-defender-for-business).
 - [Obtenez Microsoft 365 Business Premium](#get-microsoft-365-business-premium), qui inclut désormais Defender entreprise.
-- [Collaborez avec un fournisseur de solutions Microsoft](#work-with-a-microsoft-solution-provider) qui peut vous aider à tout configurer.
+- [Collaborez avec un partenaire Microsoft](#work-with-a-microsoft-partner) qui peut vous aider à tout configurer.
 
 Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu votre e-mail d’acceptation, vous pouvez [activer votre version d’évaluation et attribuer des licences utilisateur](#how-to-activate-your-trial), puis passer à vos [étapes suivantes](#next-steps).
 
@@ -56,17 +57,22 @@ Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu vo
 
 3. Une fois que vous êtes inscrit à Microsoft 365 Business Premium, vous recevez un e-mail contenant un lien pour vous connecter et commencer. Passez à [Configurer Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
 
-## <a name="work-with-a-microsoft-solution-provider"></a>Utiliser un fournisseur de solutions Microsoft
+## <a name="work-with-a-microsoft-partner"></a>Collaborer avec un partenaire Microsoft
 
 Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendre des offres, notamment Microsoft 365 Business Premium et Microsoft Defender pour entreprises. Pour trouver un fournisseur de solutions dans votre région, procédez comme suit :
 
-1. Accédez à la page **Fournisseurs de solutions Microsoft** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
- 
-2. Dans la zone de recherche, renseignez votre emplacement et la taille de votre entreprise. 
+1. Accédez à [Parcourir les partenaires](https://appsource.microsoft.com/marketplace/partner-dir).
 
-3. Dans la zone **Rechercher des produits, services, compétences, secteurs d’activité**, placer `Microsoft 365`, puis sélectionner **Go**.
+2. Dans le volet **Filtres** , spécifiez des critères de recherche, par exemple :
 
-4. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit. Votre fournisseur peut vous aider à vous inscrire à Defender entreprise.
+   - Votre emplacement
+   - Taille de votre organisation
+   - **Domaines d’intérêt**, tels que **la sécurité** et/ou **la protection contre les menaces** 
+   - **Services**, tels que **les licences ou les** **services managés (MSP)**
+
+   Dès que vous sélectionnez un ou plusieurs critères, la liste des partenaires est mise à jour.
+
+3. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
 
 ## <a name="how-to-activate-your-trial"></a>Comment activer votre version d’évaluation
 

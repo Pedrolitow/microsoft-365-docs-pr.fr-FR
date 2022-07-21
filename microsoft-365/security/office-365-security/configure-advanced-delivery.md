@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 109d711623d2a0355851414af3ef0cb1beadf6af
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490440"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917560"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -57,7 +57,7 @@ Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêch
 Les messages identifiés par la stratégie de remise avancée ne sont pas des menaces de sécurité. Les messages sont donc marqués avec des remplacements système. Administration expériences affichent ces messages en raison d’un remplacement du système de **simulation d’hameçonnage** ou d’un remplacement du système de **boîte aux lettres SecOps**. Les administrateurs peuvent filtrer et analyser ces remplacements système dans les expériences suivantes :
 
 - [Détections en temps réel/Explorateur de menaces dans Defender pour Office 365 plan 2](threat-explorer.md) : Administration pouvez filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
-- Page [d’entité e-mail dans l’Explorateur de menaces/Détections en temps réel](mdo-email-entity-page.md) : Administration pouvez afficher un message autorisé par la stratégie d’organisation par la **boîte aux lettres SecOps** ou la **simulation d’hameçonnage** sous **remplacement de locataire** dans la section **Remplacements**.
+- La [page d’entité Email dans l’Explorateur de menaces/Détections en temps réel](mdo-email-entity-page.md) : Administration pouvez afficher un message autorisé par la stratégie d’organisation par la **boîte aux lettres SecOps** ou la **simulation d’hameçonnage** sous **Remplacement de locataire** dans la section **Remplacements**.
 - Rapport [d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) : Administration pouvez filtrer en **affichant les données par remplacement du système** dans le menu déroulant et sélectionner pour afficher les messages autorisés en raison d’un remplacement du système de simulation d’hameçonnage. Pour afficher les messages autorisés par le remplacement de la boîte aux lettres SecOps, vous pouvez sélectionner **la répartition du graphique par emplacement de livraison** dans le menu déroulant de **répartition du graphique par raison** .
 - [Repérage avancé dans Microsoft Defender pour point de terminaison](../defender-endpoint/advanced-hunting-overview.md) : La simulation d’hameçonnage et les remplacements de système de boîte aux lettres SecOps s’affichent en tant qu’options dans OrgLevelPolicy dans EmailEvents.
 - [Vues de campagne](campaigns.md) : Administration pouvez filtrer sur la **source de remplacement du système** et sélectionner la **simulation d’hameçonnage** ou **la boîte aux lettres SecOps**.
@@ -75,15 +75,15 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
   Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md) et [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L’ajout d’utilisateurs au rôle Azure Active Directory correspondant donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > L’ajout d’utilisateurs au rôle Azure Active Directory correspondant donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender _et_ les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** dans la section **Règles**. Pour accéder directement à la page **Livraison avancée** , utilisez <https://security.microsoft.com/advanceddelivery>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **avancées** dans la section **Règles**. Pour accéder directement à la page **Livraison avancée** , utilisez <https://security.microsoft.com/advanceddelivery>.
 
 2. Dans la page **De remise avancée** , vérifiez que l’onglet Boîte **aux lettres SecOps** est sélectionné, puis effectuez l’une des étapes suivantes :
    - Cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
-   - S’il n’existe aucune simulation de hameçonnage configurée, cliquez sur **Ajouter**.
+   - S’il n’existe aucune boîte aux lettres SecOps configurée, cliquez sur **Ajouter**.
 
 3. Dans le menu volant **Modifier les boîtes aux lettres SecOps** qui s’ouvre, entrez une boîte aux lettres Exchange Online existante que vous souhaitez désigner comme boîte aux lettres SecOps en effectuant l’une des étapes suivantes :
    - Cliquez dans la zone, laissez la liste des boîtes aux lettres résoudre, puis sélectionnez la boîte aux lettres.
@@ -99,7 +99,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées s’affiche
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations d’hameçonnage tierces dans la stratégie de remise avancée
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** dans la section **Règles**. Pour accéder directement à la page **Livraison avancée** , utilisez <https://security.microsoft.com/advanceddelivery>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **avancées** dans la section **Règles**. Pour accéder directement à la page **Livraison avancée** , utilisez <https://security.microsoft.com/advanceddelivery>.
 
 2. Dans la page **Livraison avancée** , sélectionnez l’onglet **Simulation d’hameçonnage** , puis effectuez l’une des étapes suivantes :
    - Cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
@@ -116,6 +116,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées s’affiche
      - Adresse IP unique : par exemple, 192.168.1.1.
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
+
    - **URL de simulation pour autoriser** : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation d’hameçonnage qui ne doivent pas être bloquées ou détonées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, consultez [la syntaxe d’URL de la liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Ces URL sont encapsulées au moment du clic, mais elles ne sont pas bloquées.
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.

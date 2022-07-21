@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conformité et comment configurer les paramètres de confidentialité dans le Tableau blanc Microsoft.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882781"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917230"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Configurer les paramètres de confidentialité dans le Tableau blanc Microsoft
 
@@ -31,7 +30,7 @@ Si vous êtes l’administrateur du Tableau blanc Microsoft pour votre organisat
 
 - Indique si les expériences connectées facultatives dans le Tableau blanc sont disponibles pour vos utilisateurs.
 
-Pour configurer le niveau des données de diagnostic, connectez-vous au [Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) avec votre compte d’administrateur. À partir de la page d’accueil du centre d’administration, accédez à **Afficher tous les paramètres > > paramètres de l’organisation > tableau blanc**.
+Pour configurer le niveau des données de diagnostic, connectez-vous au [Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview) avec votre compte d’administrateur. À partir de la page d’accueil du centre d’administration, accédez à **Afficher tous les paramètres > > paramètres de l’organisation > tableau blanc**.
 
 Pour configurer la disponibilité d’expériences connectées facultatives, utilisez le service de stratégie [cloud Office](/deployoffice/admincenter/overview-office-cloud-policy-service) dans le [centre d’administration Microsoft 365 Apps](https://config.office.com). Connectez-vous avec votre compte d’administrateur et accédez à **Personnalisation > Gestion des stratégies**. La stratégie que vous souhaitez configurer est nommée : **Autoriser l’utilisation d’expériences connectées facultatives supplémentaires dans Office**.
 

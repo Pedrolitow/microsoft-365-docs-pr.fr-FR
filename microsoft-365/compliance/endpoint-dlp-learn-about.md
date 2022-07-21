@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: d711a61c1c61df94311dfd409e94330bb8696d88
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2adc24b4809689137ae067ce09cda8caebea2a0e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641743"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917142"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -42,7 +42,7 @@ Vous pouvez utiliser la protection contre la perte de données (DLP) de Microsof
 
 La protection contre la perte de données de point de terminaison vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 ou macOS.
 
-|Activité |Description  |Windows 10 1809 et ultérieures/ Windows 11| macOS Catalina 10.15| Auditable/restrictable|
+|Activité |Description  |Windows 10 1809 et ultérieures/ Windows 11| macOS Catalina 10.15 ou version ultérieure | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
 |téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S’il utilise un navigateur répertorié dans DLP en tant que navigateur non autorisé, l’activité de chargement est bloquée et l’utilisateur est redirigé pour utiliser Microsoft Edge . Microsoft Edge autorisez ou bloquez le chargement ou l’accès en fonction de la configuration de la stratégie DLP         |Pris en charge | Pris en charge|auditable et restreint|
 |copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.|Pris en charge|Pris en charge         | auditable et restreint|

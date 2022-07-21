@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées à l’identité en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: 24f4cbc8feda3689a3a6f7ee49a876cd205939f3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489165"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892724"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Authentification multifacteur et sécurité par défaut.
 
@@ -39,8 +35,8 @@ Pour plus d’informations sur les paramètres de sécurité par défaut et les 
 
 Cet article fournit des informations sur :
 
-- [Paramètres de sécurité par défaut](#security-defaults)(adapté à la plupart des entreprises)
-- [Access conditionnel](#conditional-access) (pour les entreprises avec des exigences de sécurité plus strictes)
+- **[Paramètres de sécurité par défaut](#security-defaults)** (adapté à la plupart des entreprises)
+- **[Accès conditionnel](#conditional-access)** (pour les entreprises avec des exigences de sécurité plus strictes)
 
 > [!NOTE]
 > Si vous utilisez des stratégies d’accès conditionnel, vous devez les désactiver avant d’utiliser les paramètres de sécurité par défaut. Vous pouvez utiliser les paramètres de sécurité par défaut ou les stratégies d’accès conditionnel, mais vous ne pouvez pas utiliser les deux en même temps.
