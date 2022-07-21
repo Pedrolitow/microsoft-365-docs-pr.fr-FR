@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: 1900487e4249c344981630d7a11aafd02862f863
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 508bb081d2f5bfcc83538141d6abb28f857bda6e
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882116"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912799"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 
@@ -312,6 +312,9 @@ Avant de commencer à utiliser les Access Control de stockage amovibles, vous de
    - Dans la fenêtre **Contrôle d’appareil** , sélectionnez **Activé**.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Capture d’écran de l’activation de RSAC à l’aide de stratégie de groupe " lightbox="images/enable-rsac-gp.png":::
+
+> [!NOTE]
+> Si vous ne voyez pas ces objets de stratégie de groupe, vous devez ajouter un modèle d’administration de stratégie de groupe. vous pouvez télécharger le modèle d’administration (WindowsDefender.adml et WindowsDefender.admx) à partir de https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples.
 
 2. Définir l’application par défaut :
 

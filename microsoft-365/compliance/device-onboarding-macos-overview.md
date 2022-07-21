@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: 59ccb78060c7749f5690015dc4bab948a88e5222
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630035"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912756"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
 
@@ -67,7 +67,7 @@ Endpoint DLP prend en charge ces navigateurs sur macOS Catalina 10.15 ou version
 
 Consultez les [conseils relatifs aux licences Microsoft 365 pour la protection des informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-## <a name="activities-that-can-be-restricted-on-macos"></a>Activités qui peuvent être restreintes sur macOS 
+## <a name="activities-that-can-be-audited-and-restricted-on-macos"></a>Activités pouvant être auditées et restreintes sur macOS 
 
 Une fois qu’un appareil macOS est intégré aux solutions Microsoft Purview, vous pouvez surveiller et restreindre ces actions avec des stratégies de protection contre la perte de données (DLP).
 
@@ -110,7 +110,7 @@ Rubrique | Description
 |[Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de JAMF Pro pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-jamfpro-mde.md)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Tableau de prise en charge pour les conseils de stratégie DLP dans les applications Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

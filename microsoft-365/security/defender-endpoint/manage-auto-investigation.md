@@ -9,6 +9,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 696787189ca14b4609681fb77308c38be206e269
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695613"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912605"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Passer en revue les actions de correction à la suite d’une investigation automatisée
 
@@ -126,8 +127,7 @@ Les niveaux d’automatisation déterminent si certaines actions de correction s
 
 |Paramètre de groupe d’appareils|Résultats des investigations automatisées|Procédure|
 |---|---|---|
-|**Complet : corriger automatiquement les menaces**<br/>(recommandé)|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Les actions de correction appropriées sont effectuées automatiquement.|[Passer en revue les actions terminées](#review-completed-actions)|
-|**Complet : corriger automatiquement les menaces**|Un verdict de *suspect* est rendu pour un élément de preuve. <p> Les actions de correction appropriées sont effectuées automatiquement.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
+|**Complet : corriger automatiquement les menaces**<br/>(recommandé)|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Les actions de correction appropriées sont effectuées automatiquement.|[Passer en revue les actions terminées](#review-completed-actions) |
 |**Semi - exiger l’approbation de toute correction**|Un verdict de *malveillance* ou *de suspect* est rendu pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation pour continuer.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
 |**Semi - Exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *malveillance* est rendu pour un élément de preuve. <p> Si l’artefact est un fichier ou un exécutable et qu’il se trouve dans un répertoire de système d’exploitation, tel que le dossier Windows ou le dossier Program Files, les actions de correction sont en attente d’approbation. <p> Si l’artefact *ne* se trouve pas dans un répertoire de système d’exploitation, des actions de correction sont effectuées automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
 |**Semi - Exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *suspect* est rendu pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions).|
