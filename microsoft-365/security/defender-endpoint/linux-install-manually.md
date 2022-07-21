@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35358ec572fbb6ed0a7256e9af6be73db04e5f59
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a38c94ff225c0792a1e6f13d1a57a68a8c322cff
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822066"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944062"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer manuellement Microsoft Defender pour point de terminaison sur Linux
 
@@ -79,7 +79,6 @@ Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentai
     |---|---|
     |Pour RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
     |Pour RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
-    <!--|Pour RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |Pour Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Pour Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -197,10 +196,10 @@ Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentai
 - Installez la clé publique Microsoft GPG :
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
-- Installez le pilote https s’il n’est pas déjà présent :
+- Installez le pilote HTTPS s’il n’est pas déjà installé :
 
     ```bash
     sudo apt-get install apt-transport-https

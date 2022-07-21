@@ -12,16 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez comment effectuer des tâches clés de gestion de passerelle Microsoft LMS, notamment l’affichage, la suppression, la modification et la résolution des problèmes.
-ms.openlocfilehash: 769670a710e24d89dd3e201ac433ac8ccbcffd1a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414793"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944106"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Gérer la passerelle Microsoft LMS pour n’importe quel LMS
 
-La passerelle Microsoft LMS s’intègre à plusieurs LMS, notamment Canvas, Blackboard et Moodle.
+La passerelle Microsoft LMS s’intègre à plusieurs LMS, notamment Canvas, Blackboard, Moodle et Brightspace.
 
 Dans cet article, les administrateurs informatiques trouveront des instructions sur les principales tâches de gestion de passerelle Microsoft LMS.
 
