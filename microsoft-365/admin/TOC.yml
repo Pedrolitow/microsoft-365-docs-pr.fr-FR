@@ -364,6 +364,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Gérer et surveiller les comptes de priorité
           href: setup/priority-accounts.md
+        - name: Augmenter la protection contre les menaces pour Microsoft 365 pour les PME
+          href: security-and-compliance/increase-threat-protection.md
         - name: Activer le délai d’expiration de la session inactive
           href: manage/idle-session-timeout-web-apps.md
         - name: Activer l’authentification moderne pour Office 2013

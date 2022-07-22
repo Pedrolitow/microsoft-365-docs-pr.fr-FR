@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 0161071c1dbfb8941c4f89a45ac2de52d58a2236
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui utilisent des étiquettes de confidentialité pour protéger les données de votre organisation.
+ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641513"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949324"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 

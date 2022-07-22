@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez les étiquettes de confidentialité de Protection des données Microsoft Purview pour classifier et protéger le contenu sensible.
+description: Découvrez comment les étiquettes de confidentialité de Microsoft Purview Information Protection peuvent protéger le contenu sensible de votre organisation, où qu’il soit stocké.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57dcda57c29c15d8bf3896e983a95f358fd6ac1c
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 5a525e96529416aca0670873921eea7703506af4
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842149"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942779"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
