@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535589"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949500"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -48,14 +48,14 @@ Il existe trois façons de créer des indicateurs pour les fichiers :
 
 Il est important de comprendre les prérequis suivants avant de créer des indicateurs pour les fichiers :
 
-- Cette fonctionnalité est disponible si votre organisation utilise **Antivirus Microsoft Defender (en mode actif)** et que **la protection basée sur le cloud est activée**. Pour plus d’informations, consultez [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Cette fonctionnalité est disponible si votre organisation utilise **l’antivirus Microsoft Defender (en mode actif)** et que **la protection basée sur le cloud est activée**. Pour plus d’informations, consultez [Gérer la protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La version du client Antimalware doit être 4.18.1901.x ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 - Pris en charge sur les appareils avec Windows 10, version 1703 ou ultérieure, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
     
    > [!NOTE]
-   > Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [Intégrer des serveurs Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. Les indicateurs de fichier personnalisés avec les actions Autoriser, Bloquer et Corriger sont désormais également disponibles dans la [préversion publique pour les fonctionnalités améliorées du moteur anti-programme malveillant pour macOS et Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [les serveurs Windows intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. Les indicateurs de fichier personnalisés avec les actions Autoriser, Bloquer et Corriger sont désormais également disponibles dans la [préversion publique pour les fonctionnalités améliorées du moteur anti-programme malveillant pour macOS et Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - Pour commencer à bloquer des fichiers, vous devez [d’abord activer la fonctionnalité « bloquer ou autoriser »](advanced-features.md) dans Paramètres.
 
@@ -66,7 +66,7 @@ Cette fonctionnalité est conçue pour empêcher le téléchargement de logiciel
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Créer un indicateur pour les fichiers à partir de la page paramètres
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Indicateurs de** points de **terminaison** \> (sous **Règles**).
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> Points de **terminaison Indicateurs** \> (sous **Règles**).
 
 2. Sélectionnez l’onglet **Hachages de** fichier.
 
@@ -90,9 +90,9 @@ Les fichiers automatiquement bloqués par un indicateur ne s’affichent pas dan
 > [!IMPORTANT]
 > Les informations contenues dans cette section (**préversion publique pour le moteur d’investigation et de correction automatisée**) concernent le produit de préversion qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Les actions actuellement prises en charge pour le fichier IOC sont autoriser, auditer et bloquer et corriger. Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à envoyer à vos équipes d’opérations de sécurité et de vous assurer que seules les alertes requises sont déclenchées.
+Les actions actuellement prises en charge pour l’ioc de fichier sont autoriser, auditer et bloquer et corriger. Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à envoyer à vos équipes d’opérations de sécurité et de vous assurer que seules les alertes requises sont déclenchées.
 
-Dans Microsoft 365 Defender, accédez à **Paramètres** >  EndpointsIndicatorsAdd >  >  **New File Hash**.
+Dans Microsoft 365 Defender, accédez à **Paramètres** > **Les indicateurs de points de terminaison** >  > **ajoutent un nouveau hachage de fichier**.
 
 Choisissez de bloquer et de corriger le fichier.
 
@@ -113,7 +113,9 @@ Choisissez si vous souhaitez générer une alerte sur l’événement de bloc de
 > - Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils gagne.
 > - Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage de l’IoC de fichier est réduite. Toutefois, l’activation `EnableFileHashComputation` peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers volumineux à partir d’un partage réseau sur votre appareil local, en particulier via une connexion VPN, peut avoir un effet sur les performances de l’appareil.
 >
-> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, consultez [Defender fournisseur de solutions Cloud](/windows/client-management/mdm/defender-csp).
+> Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, consultez [defender CSP](/windows/client-management/mdm/defender-csp).
+>
+> Pour plus d’informations sur la configuration de cette fonctionnalité sur Defender pour point de terminaison sur Linux et macOS, consultez [Configurer la fonctionnalité de calcul de hachage de fichier sur Linux](linux-preferences.md#configure-file-hash-computation-feature) et [configurer la fonctionnalité de calcul de hachage de fichier sur macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>Préversion publique : Fonctionnalités de chasse avancées
 
@@ -148,21 +150,21 @@ L’activité d’action de réponse peut également être visible dans la chron
 Le conflit de gestion des stratégies Cert et File IoC suit l’ordre ci-dessous :
 
 - Si le fichier n’est pas autorisé par Windows Defender Application Control et AppLocker appliquent la stratégie/stratégies de mode, **bloquez**
-- Sinon, si le fichier est autorisé par l’exclusion Antivirus Microsoft Defender, **autorisez**
+- Sinon, si le fichier est autorisé par l’exclusion de l’Antivirus Microsoft Defender, **autorisez**
 - Sinon, si le fichier est bloqué ou averti par un bloc ou avertit l’IoC du fichier, **bloquez/avertissez**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier d’autorisation, **autorisez**
 - Sinon, si le fichier est bloqué par des règles ASR, CFA, AV, SmartScreen, puis **Bloquer**
 - Sinon **, autoriser** (passe Windows Defender Application Control & stratégie AppLocker, aucune règle IoC ne s’applique à celle-ci)
 
 >[!NOTE]
-> Dans les situations où Antivirus Microsoft Defender est défini sur **Bloquer**, mais que Defender pour point de terminaison est défini sur **Autoriser**, la stratégie est définie par défaut sur **Autoriser**.
+> Dans les situations où l’antivirus Microsoft Defender est défini sur **Bloquer**, mais que Defender pour point de terminaison est défini sur **Autoriser**, la stratégie est définie par défaut sur **Autoriser**.
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie du hachage plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 gagnera une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 
 > [!WARNING]
 > La gestion des conflits de stratégie pour les fichiers et les certificats diffère de la gestion des conflits de stratégie pour les domaines/URL/adresses IP.
 
-Les fonctionnalités d’application vulnérables des menaces et des gestion des vulnérabilités utilisent les E/S de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
+Les fonctionnalités d’application vulnérables de la gestion des menaces et des vulnérabilités utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
 ### <a name="examples"></a>Exemples
 
@@ -176,7 +178,7 @@ Les fonctionnalités d’application vulnérables des menaces et des gestion des
 |Règle de réduction de la surface d’attaque|Bloquer|Autoriser|Autoriser|
 |Windows Defender Application Control|Autoriser|Bloquer|Autoriser|
 |Windows Defender Application Control|Bloquer|Autoriser|Bloquer|
-|exclusion Antivirus Microsoft Defender|Autoriser|Bloquer|Autoriser|
+|Exclusion de l’antivirus Microsoft Defender|Autoriser|Bloquer|Autoriser|
 |
 
 ## <a name="see-also"></a>Voir aussi

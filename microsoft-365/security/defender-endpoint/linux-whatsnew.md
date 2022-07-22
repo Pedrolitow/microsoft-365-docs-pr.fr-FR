@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603503"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949434"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -34,6 +34,28 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 
 - [Nouveautés de Defender pour point de terminaison sur macOS](mac-whatsnew.md)
 - [Nouveautés de Defender pour point de terminaison sur iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Jul-2022 (Build : 101.73.77 | Version de version : 30.122062.17377.0)</summary>
+
+&ensp;Publication : **21 juillet 2022**<br/>
+&ensp;Publication : **21 juillet 2022**<br/>
+&ensp;Build : **101.73.77**<br/>
+&ensp;Version de version : **30.122062.17377.0**<br/>
+&ensp;Version du moteur : **1.1.19200.3**<br/>
+&ensp;Version de signature : **1.367.1011.0**<br/>
+
+
+**Nouveautés**
+
+- Ajout d’une option pour [configurer le calcul de hachage de fichier](linux-preferences.md#configure-file-hash-computation-feature)
+- À partir de cette build, le produit aura le nouveau moteur anti-programme malveillant par défaut
+- Améliorations des performances pour les opérations de copie de fichiers
+- Correctifs de bogue
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Juin-2022 (Build : 101.71.18 | Version de version : 30.122052.17118.0)</summary>

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c8fd4be82e9ff778db136db314faa6c100240856
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: d283876f8e68943d45ab2dbca4ef8455a5dce038
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607496"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949053"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
@@ -188,9 +188,15 @@ Pour plus d’informations sur SecOps sur les produits Microsoft, consultez les 
 
 Vous pouvez configurer Microsoft 365 Defender pour informer votre personnel avec un e-mail concernant les nouveaux incidents ou les mises à jour des incidents existants. Vous pouvez choisir d’obtenir des notifications en fonction des facteurs suivants :
 
-- Gravité de l’incident.
-- Groupe d’appareils.
-- Uniquement lors de la première mise à jour par incident.
+- Gravité de l’alerte
+- Sources d’alerte 
+- Groupe d’appareils
+
+**Choisissez de recevoir des notifications par e-mail uniquement pour une source de service spécifique** : vous pouvez facilement sélectionner des sources de service spécifiques pour lesquelles vous souhaitez recevoir des notifications par e-mail.
+ 
+**Obtenez plus de granularité avec des sources de détection spécifiques** : vous ne pouvez recevoir des notifications que pour une source de détection spécifique. 
+
+**Définissez la gravité par détection ou source de service** : vous pouvez choisir d’obtenir des notifications par e-mail uniquement sur des gravités spécifiques par source. Par exemple, vous pouvez recevoir une notification pour les alertes moyenne et élevée pour EDR et toutes les gravités pour les experts Microsoft Defender.  
 
 La notification par e-mail contient des détails importants sur l’incident, comme le nom, la gravité et les catégories de l’incident, entre autres. Vous pouvez également accéder directement à l’incident et commencer votre analyse immédiatement. Pour plus d’informations, consultez [Examiner les incidents](investigate-incidents.md).
 
@@ -204,17 +210,17 @@ De même, si votre organisation utilise le contrôle d’accès en fonction du r
 
 Suivez ces étapes pour créer une règle et personnaliser les paramètres de notification par courrier électronique.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres > Microsoft 365 Defender > notifications par e-mail d’incident**.
+1. Accédez à [Microsoft 365 Defender](https://security.microsoft.com) dans le volet de navigation, sélectionnez **Paramètres > Microsoft 365 Defender > notifications par e-mail d’incident**.
 2. Sélectionnez **Ajouter un élément**.
 3. Dans la page **De base** , tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
 4. Dans la page **Paramètres de** notification, configurez :
     - **Gravité de l’alerte** : choisissez les gravités d’alerte qui déclencheront une notification d’incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
     - **Étendue du groupe d’appareils** : vous pouvez spécifier tous les groupes d’appareils ou sélectionner dans la liste des groupes d’appareils de votre client.
-    - **Notifier uniquement lors de la première occurrence par incident** : sélectionnez si vous souhaitez recevoir une notification uniquement sur la première alerte qui correspond à vos autres sélections. Les mises à jour ou alertes ultérieures liées à l’incident n’envoient pas de notifications supplémentaires.
+    - **Envoyer une seule notification par incident** : sélectionnez si vous souhaitez une notification par incident.
     - **Inclure le nom de l’organisation dans l’e-mail** : sélectionnez si vous souhaitez que le nom de votre organisation apparaisse dans la notification par courrier électronique.
     - **Inclure un lien de portail propre au client** : sélectionnez si vous souhaitez ajouter un lien avec l’ID de client dans la notification par courrier électronique pour accéder à un client Microsoft 365 spécifique.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Page Paramètres de notification pour les notifications par e-mail d’incident dans le portail Microsoft 365 Defender." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Capture d’écran de la page Paramètres de notification pour les notifications par e-mail d’incident dans le portail Microsoft 365 Defender." lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
 
 5. Sélectionnez **Suivant**. Dans la page **Destinataires** , ajoutez les adresses e-mail qui recevront les notifications d’incident. Sélectionnez **Ajouter** après avoir tapé chaque nouvelle adresse e-mail. Pour tester les notifications et vérifier que les destinataires les reçoivent dans les boîtes de réception, sélectionnez **Envoyer un e-mail de test**.
 6. Sélectionnez **Suivant**. Dans la page **Vérifier la règle** , passez en revue les paramètres de la règle, puis sélectionnez **Créer une règle**. Les destinataires commenceront à recevoir des notifications d’incident par e-mail en fonction des paramètres.
@@ -222,6 +228,8 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 Pour modifier une règle existante, sélectionnez-la dans la liste des règles. Dans le volet portant le nom de la règle, **sélectionnez Modifier la règle** et apportez vos modifications aux pages **Informations de base**, **Paramètres de** notification et **Destinataires** .
 
 Pour supprimer une règle, sélectionnez-la dans la liste des règles. Dans le volet portant le nom de la règle, **sélectionnez Supprimer**.
+
+Une fois que vous avez obtenu la notification, vous pouvez accéder directement à l’incident et démarrer votre enquête immédiatement. Pour plus d’informations sur l’examen des incidents, consultez [Examiner les incidents dans Microsoft 365 Defender](investigate-incidents.md).
 
 ## <a name="training-for-security-analysts"></a>Formation pour les analystes de sécurité
 
@@ -234,7 +242,7 @@ Utilisez ce module d’apprentissage de Microsoft Learn pour comprendre comment 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/defender-investigate-incidents/)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez les étapes répertoriées en fonction de votre niveau d’expérience ou de votre rôle au niveau de votre équipe de sécurité.
 

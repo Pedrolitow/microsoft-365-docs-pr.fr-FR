@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au Centre de conformité, de mettre à jour les fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756746"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949148"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Nouveautés des solutions de conformité et de risque Microsoft Purview
 
@@ -45,7 +45,7 @@ Qu’il s’agisse d’ajouter de nouvelles solutions au [portail de conformité
 
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
-- [Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview](compliance-manager-alert-policies.md) : ajout de trois rôles ADD qui disposent des autorisations nécessaires pour créer ou modifier des stratégies d’alerte.
+- [Alertes et stratégies d’alerte du Gestionnaire de conformité Microsoft Purview](compliance-manager-alert-policies.md) : ajout de trois rôles AAD disposant des autorisations nécessaires pour créer ou modifier des stratégies d’alerte.
 - [Analyseur de configuration pour Microsoft Purview](compliance-manager-mcca.md) : nouveau nom et liens de référence mis à jour pour cet outil de prise en main du Gestionnaire de conformité anciennement nommé « Microsoft Compliance Configuration Analyzer ».
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez les types d’informations sensibles basés sur des correspondances de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 25a48a13e66803dec592680c0ad0e9c01b611dc0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621994"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949280"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
 
@@ -97,7 +97,7 @@ Proximité : nombre de caractères entre l’élément principal et l’élémen
 
 ### <a name="primary-and-secondary-support-elements"></a>Éléments de support principal et secondaire
 
-Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Les champs principaux sont les éléments pour lesquels tout votre contenu sera recherché et qui doivent suivre un modèle défini pour être identifiés. Lorsque l’élément principal est trouvé dans les éléments analysés, EDM recherche ensuite les éléments *secondaires* ou de prise en charge, qui n’ont pas besoin de suivre un modèle et leur proximité avec l’élément principal. EDM requiert que l’élément principal soit d’abord détectable via un SIT existant. Consultez les [définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md) pour obtenir la liste complète des SIT disponibles. Vous devez trouver l’une de celles qui détectent la classe que vous souhaitez que votre sit EDM détecte. Par exemple, si votre schéma SIT EDM comporte le numéro de sécurité sociale des États-Unis comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au [numéro de sécurité sociale (SSN) SIT des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) .
+Lorsque vous créez un sit EDM, vous définissez un champ *d’élément principal* dans le package de règles. Les champs principaux sont les éléments pour lesquels tout votre contenu sera recherché et qui doivent suivre un modèle défini pour être identifiés. Lorsque l’élément principal est trouvé dans les éléments analysés, EDM recherche ensuite les éléments *secondaires* ou de prise en charge, qui n’ont pas besoin de suivre un modèle et leur proximité avec l’élément principal. EDM requiert que l’élément principal soit d’abord détectable via un SIT existant. Consultez les [définitions d’entité de type d’informations sensibles](sensitive-information-type-entity-definitions.md) pour obtenir la liste complète des SIT disponibles. Vous devez trouver l’une de celles qui détectent la classe que vous souhaitez que votre sit EDM détecte. Par exemple, si votre schéma SIT EDM comporte le numéro de sécurité sociale des États-Unis comme élément principal, lorsque vous créez votre schéma EDM, vous l’avez associé au [numéro de sécurité sociale (SSN) SIT des États-Unis](sit-defn-us-social-security-number.md) .
 
 ## <a name="how-matching-works"></a>Fonctionnement de la correspondance
 
