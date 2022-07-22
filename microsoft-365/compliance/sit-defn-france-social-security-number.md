@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de sécurité sociale en France
+title: Définition d’entité du numéro de sécurité sociale français (INSEE)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’information sensible du numéro de sécurité sociale (INSEE) en France.
+description: Définition d’entité du type d’informations sensibles du numéro de sécurité sociale français (INSEE).
 ms.openlocfilehash: 3378b452e8136e5ca62fe49932ba23949eb6a85d
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950873"
 ---
-# <a name="france-social-security-number-insee"></a>Numéro de sécurité sociale en France (INSEE)
+# <a name="france-social-security-number-insee"></a>Numéro de sécurité sociale français (INSEE)
 
 ## <a name="format"></a>Format
 
@@ -48,15 +48,15 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_french_insee` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_fr_insee` trouvé.
+- La fonction `Func_french_insee` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_fr_insee` est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- `Func_french_insee` Fonction ou `Func_fr_insee` recherche du contenu qui correspond au modèle.
+- La fonction `Func_french_insee` ou `Func_fr_insee` trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -81,23 +81,23 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 - code sécu
 - d’identité nationale
-- Insee
-- fssn #
+- insee
+- fssn#
 - le numéro d’identification nationale
 - le code de la sécurité sociale
 - id national
 - numéro d’identification nationale
 - n° d’identité
-- non. d’identité
+- N° d’identité
 - numéro d’assurance
 - numéro d’identité
 - numéro d’identité
 - numéro de sécu
 - numéro de sécurité sociale
 - n° d’identité
-- non. d’identite
-- Ssn
-- Ssn #
+- N° d’identité
+- nss
+- nss#
 - sécurité sociale
 - securité sociale
 - securite sociale

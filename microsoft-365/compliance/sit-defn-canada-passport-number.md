@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de passeport canada
+title: Définition d’entité du numéro de passeport canadien
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro de passeport du Canada.
+description: Définitions d’entité de type d’informations sensibles du numéro de passeport canadien.
 ms.openlocfilehash: 5a645a71bd9cdb27727fd493bcd09ceca7340c22
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950163"
@@ -42,10 +42,10 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_canada_passport_number` régulière recherche le contenu qui correspond au modèle.
-- Un mot clé à partir ou `Keyword_canada_passport_number` `Keyword_passport` est trouvé.
+- L’expression régulière `Regex_canada_passport_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_canada_passport_number`ou `Keyword_passport` est trouvé.
 
 ```xml
 <!-- Canada Passport Number -->
@@ -78,18 +78,18 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Numéro de passeport
 - N° de passeport
 - # Passeport
-- Passeport #
+- #Passeport
 - PassportID
-- Passportno
-- passportnumber
+- N° de passeport
+- numéropasseport
 - パスポート
 - パスポート番号
-- パのポートのNum
+- パスポートのNum
 - パスポート＃
 - Numéro de passeport
 - Passeport n°
 - Passeport numéro
 - # Passeport
-- Passeport #
+- # Passeport
 - PasseportNon
 - Passeportn °

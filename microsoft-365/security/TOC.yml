@@ -44,8 +44,6 @@
           href: ./defender-business/index.yml
     - name: Microsoft 365 Entreprise
       href: ../enterprise/index.yml
-    - name: "Microsoft\_365\_Entreprise"
-      href: ./index.yml
     - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: Gérer le contenu actif dans les documents Office

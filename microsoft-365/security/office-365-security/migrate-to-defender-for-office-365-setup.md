@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-defender-office365
+- m365solution-mdo-migration
 ms.custom: migrationguides
 description: Effectuez les étapes nécessaires pour commencer la migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 26eb779e3c1123d9c8586aebcaddea671c0c9c09
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9fc63db0c51c4e8478b426cc37002fbfcb23f6d1
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943886"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969472"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 2 : Configuration
 
@@ -106,7 +106,7 @@ La règle de flux de messagerie SCL=-1 est importante pendant la migration pour 
 
 Pour plus d’informations, consultez [Utiliser des règles de flux de courrier pour définir le niveau de confiance du courrier indésirable dans les messages dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-**Remarques** :
+**Remarques** :
 
 - Si vous envisagez d’autoriser la messagerie Internet à transiter par votre service de protection existant **et** directement dans Microsoft 365 en même temps, vous devez restreindre la règle de flux de courrier SCL=-1 (courrier qui contourne le filtrage du courrier indésirable) aux messages qui sont passés par votre service de protection existant uniquement. Vous ne souhaitez pas que les messages Internet non filtrés arrivent dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 

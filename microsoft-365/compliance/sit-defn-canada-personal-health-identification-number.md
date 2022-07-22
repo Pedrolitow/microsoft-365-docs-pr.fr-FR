@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité PHIN (Personal Health Identification Number) du Canada
+title: Définition d’entité du numéro d’identification médicale personnel du Canada (PHIN)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’information sensible PHIN (Personal Health Identification Number) canada.
+description: Définition d’entité du type d’informations sensibles du numéro d’identification médicale personnel du Canada (PHIN).
 ms.openlocfilehash: 0d2ac2f8deeb4cb9139d0ab66cb02bbd4bccd7c8
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950142"
 ---
-# <a name="canada-personal-health-identification-number-phin"></a>Numéro d’identification de la santé personnelle du Canada (PHIN)
+# <a name="canada-personal-health-identification-number-phin"></a>Numéro d’identification de santé personnel du Canada (BDC)
 
 ## <a name="format"></a>Format
 
@@ -42,10 +42,10 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_canada_phin` régulière recherche le contenu qui correspond au modèle.
-- Au moins deux mots clés proviennent ou `Keyword_canada_phin` `Keyword_canada_provinces` sont trouvés.
+- L’expression régulière `Regex_canada_phin` trouve un contenu qui correspond au modèle.
+- Au moins deux mots clés de `Keyword_canada_phin` ou `Keyword_canada_provinces` sont trouvés.
 
 ```xml
 <!-- Canada PHIN -->
@@ -83,7 +83,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 ### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- Québec
+- Quebec
 - Territoires du Nord-Ouest
 - Ontario
 - Colombie-britannique

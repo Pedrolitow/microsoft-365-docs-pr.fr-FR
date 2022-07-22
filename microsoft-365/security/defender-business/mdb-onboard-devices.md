@@ -15,13 +15,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: 9b4228ba31594e8c6893d4bc45e2fc1994139231
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+- m365solution-mdb-setup
+ms.openlocfilehash: 6894b4a936af81cbd51dad34bbf6edf704e910a7
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772213"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969405"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
@@ -252,8 +252,8 @@ Choisissez le système d’exploitation de votre serveur :
 
 > [!IMPORTANT]
 > **La possibilité d’intégrer des points de terminaison Windows Server est actuellement en préversion**. Veillez à respecter les exigences suivantes avant d’intégrer un point de terminaison Windows Server :
-> - Le paramètre **des fonctionnalités d’aperçu** est activé. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), accédez aux **fonctionnalités d’aperçu** **des fonctionnalités** >  > **avancées générales** > **des** >  points de terminaison des paramètres.
-> - L’étendue d’application de Windows Server est activée. Accédez à **l’étendue d’application** de **la gestion de la configuration** > **des paramètres** >  >  des points de terminaison. Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.
+> - Le paramètre **des fonctionnalités en préversion** est activé. Dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** > **Endpoints** > **Général** > **Fonctions avancées** > **Fonctions de prévisualisation**.
+> - L’étendue de mise en œuvre de Windows Server est activée. Accédez à **Paramètres** > **points de terminaison** > **la gestion de la configuration** > **l’étendue application**. Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.
 
 Vous pouvez intégrer une instance de Windows Server à Defender entreprise à l’aide d’un script local.
 
@@ -307,7 +307,7 @@ Une fois la commande exécutée, la fenêtre d’invite de commandes se ferme au
 
 > [!IMPORTANT]
 > **La possibilité d’intégrer des points de terminaison de serveur Linux est actuellement en préversion**. Veillez à respecter les exigences suivantes avant d’intégrer un point de terminaison de serveur Linux :
-> - Le paramètre **des fonctionnalités d’aperçu** est activé. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), accédez aux **fonctionnalités d’aperçu** **des fonctionnalités** >  > **avancées générales** > **des** >  points de terminaison des paramètres.
+> - Le paramètre **des fonctionnalités en préversion** est activé. Dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** > **Endpoints** > **Général** > **Fonctions avancées** > **Fonctions de prévisualisation**.
 > - Vous remplissez les [conditions préalables pour Microsoft Defender pour point de terminaison sur Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).
 
 ### <a name="onboard-linux-server-endpoints"></a>Intégrer des points de terminaison de serveur Linux

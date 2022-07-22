@@ -15,13 +15,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: 1114bebe4b57f89989b0e21a3d73a72fd1b3e99e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+- m365solution-mdb-setup
+ms.openlocfilehash: 1cb133a11bf0c59bcff117721badddc87e44a96c
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772880"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970075"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>exigences de Microsoft Defender pour entreprises
 
@@ -45,7 +45,7 @@ Le tableau suivant répertorie les exigences de base dont vous avez besoin pour 
 | Autorisations  | Pour vous inscrire à Defender entreprise, vous devez être un Administration global.<p>Pour accéder au portail Microsoft 365 Defender, l’un des rôles suivants doit être attribué [aux utilisateurs dans Azure AD](mdb-roles-permissions.md) :<ul><li>Lecteur de sécurité</li><li>Administrateur de la sécurité</li><li>Administrateur global</li></ul>Pour en savoir plus, consultez [Rôles et autorisations dans Defender entreprise](mdb-roles-permissions.md). |
 | Configuration requise pour le navigateur | Microsoft Edge ou Google Chrome |
 | Système d’exploitation d’appareil client | Pour gérer les appareils dans le portail Microsoft 365 Defender, vos appareils doivent exécuter l’un des systèmes d’exploitation suivants : <ul><li>Windows 10 ou 11 Entreprises</li><li>Windows 10 ou 11 professionnels</li><li>Windows 10 ou 11 Entreprise</li><li>Mac (les trois versions les plus actuelles sont prises en charge)</li></ul><p>Vérifiez que [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) est installé sur les appareils Windows. <p>Si vous gérez déjà des appareils dans Microsoft Intune, vous pouvez continuer à utiliser le Centre d’administration Microsoft Endpoint Manager. Dans ce cas, les autres systèmes d’exploitation suivants sont pris en charge : <ul><li>iOS et iPadOS</li><li>Système d’exploitation Android</li></ul> |
-| Configuration requise pour le serveur | Si vous envisagez d’intégrer une instance de Windows Server ou Linux Server, vous devez répondre aux exigences suivantes : <ul><li>Le paramètre **des fonctionnalités d’aperçu** est activé. Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), accédez aux **fonctionnalités d’aperçu** **des fonctionnalités** >  > **avancées générales** > **des** >  points de terminaison des paramètres.</li><li>L’étendue de mise en œuvre de Windows Server est activée. Dans le portail Microsoft 365 Defender, accédez à **l’étendue d’application** de **la gestion de la configuration** >  des **paramètres** > **des points de terminaison** > . Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.</li><li>Les points de terminaison Linux Server répondent aux [conditions préalables pour Microsoft Defender pour point de terminaison sur Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).</li></ul> |
+| Configuration requise pour le serveur | Si vous envisagez d’intégrer une instance de Windows Server ou Linux Server, vous devez répondre aux exigences suivantes : <ul><li>Le paramètre **des fonctionnalités en préversion** est activé. Dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com)), accédez à **Paramètres** > **Endpoints** > **Général** > **Fonctions avancées** > **Fonctions de prévisualisation**.</li><li>L’étendue de mise en œuvre de Windows Server est activée. Dans le portail Microsoft 365 Defender, accédez à **l’étendue d’application** de **la gestion de la configuration** >  des **paramètres** > **des points de terminaison** > . Sélectionnez **Utiliser MDE pour appliquer les paramètres de configuration de sécurité à partir de MEM**, sélectionnez  **Windows Server**, puis **sélectionnez Enregistrer**.</li><li>Les points de terminaison Linux Server répondent aux [conditions préalables pour Microsoft Defender pour point de terminaison sur Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).</li></ul> |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) est utilisé pour gérer les autorisations utilisateur et les groupes d’appareils. Azure AD est inclus dans votre abonnement Defender entreprise. 

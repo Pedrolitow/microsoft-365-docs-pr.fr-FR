@@ -18,13 +18,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
+- m365solution-asr-rules
 ms.date: 1/18/2022
-ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: c503af0931b60b6ef54ae070a377c2ffda5a9f50
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601199"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969307"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles de réduction de surface d’attaque (ASR)
 
@@ -55,7 +56,7 @@ Comme indiqué dans [Utiliser les règles de réduction de la surface d’attaqu
 
 <br/>
 
-| Menaces polymorphes | Déplacement latéral & vol d’informations d’identification | Règles des applications de productivité |  Règles d’e-mail | Règles de script | Règles d’erreur |
+| Menaces polymorphes | Déplacement latéral & vol d’informations d’identification | Règles des applications de productivité |  règles de Email | Règles de script | Règles d’erreur |
 |:---|:---|:---|:---|:---|:---|
 | Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à une prévalence (1 000 machines), à un âge (24 heures) ou à des critères de liste approuvée | Bloquer les créations de processus provenant des commandes PSExec et WMI | Empêcher les applications Office de créer du contenu exécutable | Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web | Bloquer le code JS/VBS/PS/macro obfusqué | Bloquer l’abus de pilotes signés vulnérables exploités <sup>[[1](#fn1)]<sup></sup>  |
 | Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB | Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Empêcher les applications Office de créer des processus enfants |  Empêcher uniquement les applications de communication Office de créer des processus enfants | Empêcher JS/VBS de lancer le contenu exécutable téléchargé | |
@@ -70,7 +71,7 @@ Comme indiqué dans [Utiliser les règles de réduction de la surface d’attaqu
 
 Bien que plusieurs méthodes d’implémentation des règles ASR soient possibles, ce guide est basé sur une infrastructure composée des éléments suivants :
 
-- Azure Active Directory
+- Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - appareils Windows 10 et Windows 11
 - licences Microsoft Defender pour point de terminaison E5 ou Windows E5

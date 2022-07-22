@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro d’identification fiscale en France
+title: Définition d’entité du numéro d’identifiant fiscal français
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’information sensible du numéro d’identification fiscale en France.
+description: Définitions d’entité du type d’informations sensibles du numéro d’identifiant fiscal français.
 ms.openlocfilehash: bf2ed39cd451d860cc841bce5db773ea17c3d1ae
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950862"
@@ -36,7 +36,7 @@ ms.locfileid: "66950862"
 
 13 chiffres
 
-- Un chiffre qui doit être 0, 1, 2 ou 3
+- Un chiffre doit être 0, 1, 2 ou 3
 - Un chiffre
 - Un espace (facultatif) 
 - Deux chiffres
@@ -45,7 +45,7 @@ ms.locfileid: "66950862"
 - Un espace (facultatif) 
 - Trois chiffres
 - Un espace (facultatif) 
-- Trois chiffres de vérification
+- Trois chiffres de contrôle
 
 ## <a name="checksum"></a>Somme de contrôle
 
@@ -53,14 +53,14 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_france_eu_tax_file_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_france_eu_tax_file_number` trouvé.
+- La fonction `Func_france_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_france_eu_tax_file_number` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_france_eu_tax_file_number` recherche le contenu qui correspond au modèle.
+- La fonction `Func_france_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -84,20 +84,20 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
-- numéro d’identification fiscale
+- numéro d'identification fiscale
 - id fiscal
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#

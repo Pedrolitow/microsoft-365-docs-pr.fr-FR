@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-defender-office365
+- m365solution-mdo-migration
 ms.custom: migrationguides
 description: Effectuez les étapes de migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2358103b3ab6bfee34e88d23f4b3de0d774e34e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492123"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969395"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 3 : Intégration
 
@@ -79,9 +79,9 @@ Si votre organisation n’a pas d’équipe de réponse de sécurité ou de flux
 Les autorisations dans Defender pour Office 365 sont basées sur le contrôle d’accès en fonction du rôle (RBAC) et sont expliquées dans Autorisations dans le [portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Voici les points importants à garder à l’esprit :
 
 - Les rôles Azure AD accordent des autorisations à **toutes les** charges de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le Portail Azure, il dispose d’autorisations d’administrateur de sécurité partout.
-- Les rôles de collaboration & par e-mail dans le portail Microsoft 365 Defender accordent des autorisations au portail Microsoft 365 Defender, au portail de conformité Microsoft Purview et à l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Microsoft 365 Defender, il dispose **d’un** accès Administrateur de sécurité uniquement dans le portail Microsoft 365 Defender, le portail de conformité Microsoft Purview et la conformité & sécurité Centre.
+- Email & rôles de collaboration dans le portail Microsoft 365 Defender accordent des autorisations au portail Microsoft 365 Defender, au portail de conformité Microsoft Purview et à l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Microsoft 365 Defender, il dispose **d’un** accès Administrateur de sécurité uniquement dans le portail Microsoft 365 Defender, le portail de conformité Microsoft Purview et la conformité & sécurité Centre.
 - De nombreuses fonctionnalités du portail Microsoft 365 Defender sont basées sur Exchange Online applets de commande PowerShell et nécessitent donc l’appartenance à un groupe de rôles dans les rôles correspondants (techniquement, groupes de rôles) dans Exchange Online (en particulier pour l’accès au Exchange Online correspondant  Applets de commande PowerShell).
-- Dans le portail Microsoft 365 Defender, il existe des rôles e-mail & collaboration qui n’ont pas d’équivalent aux rôles Azure AD et qui sont importants pour les opérations de sécurité (par exemple, le rôle Aperçu et le rôle De recherche et de vidage).
+- Il existe Email & rôles de collaboration dans le portail Microsoft 365 Defender qui n’ont pas d’équivalent aux rôles Azure AD et qui sont importants pour les opérations de sécurité (par exemple, le rôle d’aperçu et le rôle De recherche et de vidage).
 
 En règle générale, seul un sous-ensemble du personnel de sécurité a besoin de droits supplémentaires pour télécharger des messages directement à partir de boîtes aux lettres utilisateur. Cela nécessite une autorisation supplémentaire que le Lecteur de sécurité n’a pas par défaut.
 
@@ -110,7 +110,7 @@ Une fois que vous avez eu suffisamment de temps pour observer les résultats de 
 
 - Protection de l’emprunt d’identité de **l’utilisateur : mettez le message en quarantaine** pour Standard et Strict.
 - Protection de l’emprunt d’identité de domaine : **mettez en quarantaine le message** pour Standard et Strict.
-- Protection d’intelligence de **boîte aux lettres : déplacer le message vers les dossiers courrier indésirable des destinataires** pour standard ; **Mettez le message en quarantaine** pour Strict.
+- Protection d’intelligence de **boîte aux lettres : déplacer le message vers les dossiers Junk Email des destinataires** pour Standard ; **Mettez le message en quarantaine** pour Strict.
 
 Plus vous surveillez les résultats de la protection de l’emprunt d’identité sans agir sur les messages, plus vous devrez identifier les autorisations ou les blocs qui peuvent être nécessaires. Envisagez d’utiliser un délai entre l’activation de chaque protection suffisamment importante pour permettre l’observation et l’ajustement.
 
@@ -123,7 +123,7 @@ Bien que l’intelligence de boîte aux lettres ait été configurée pour ne pr
 
 Lorsque vous êtes prêt, effectuez les étapes suivantes pour permettre à l’intelligence de boîte aux lettres d’agir sur les messages détectés comme des tentatives d’emprunt d’identité :
 
-- Dans la stratégie anti-hameçonnage avec les paramètres de protection Standard, modifiez la valeur de **Si l’intelligence de boîte aux lettres détecte un utilisateur emprunt d’identité** pour **déplacer le message vers les dossiers Courrier indésirable des destinataires**.
+- Dans la stratégie anti-hameçonnage avec les paramètres de protection Standard, modifiez la valeur de **Si l’intelligence de boîte aux lettres détecte un utilisateur usurpé d’identité** pour **déplacer le message vers les dossiers Courrier indésirable Email des destinataires**.
 
 - Dans la stratégie anti-hameçonnage avec les paramètres de protection stricte, remplacez la valeur de **If mailbox intelligence detects and empruntersonated user** from to **Quarantine the message**.
 
@@ -159,8 +159,8 @@ Utilisez les fonctionnalités suivantes pour surveiller et itérer les paramètr
 
 - [Mise en quarantaine](manage-quarantined-messages-and-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
-- [Rapports de sécurité par e-mail](view-email-security-reports.md)
-- [rapports Defender pour Office 365](view-reports-for-mdo.md)
+- [Email rapports de sécurité](view-email-security-reports.md)
+- [Rapports Defender pour Office 365](view-reports-for-mdo.md)
 - [Insights sur le flux de courrier](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Rapports de flux de courrier](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 

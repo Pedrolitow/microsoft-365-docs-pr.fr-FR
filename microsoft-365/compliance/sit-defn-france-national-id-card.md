@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité de carte d’identité nationale (CNI) en France
+title: Définition d’entité de la Carte nationale d’identité (CNI) en France
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’information sensible de carte d’identité nationale (CNI) en France.
+description: Définitions d’entité des type d’informations sensibles de la Carte nationale d’identité (CNI) en France.
 ms.openlocfilehash: 35a6481e657d20a83ed1b80a6d06ad8ebf1c9cdf
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950881"
 ---
-# <a name="france-national-id-card-cni"></a>Carte d’identité nationale de France (CNI)
+# <a name="france-national-id-card-cni"></a>Carte d’ID nationale (CNI) en France
 
 ## <a name="format"></a>Format
 
@@ -42,10 +42,10 @@ Non
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance faible ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- L’expression `Regex_france_cni` régulière recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_france_eu_national_id_card` trouvé.
+- L’expression régulière `Regex_france_cni` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_france_eu_national_id_card` est trouvé.
 
 ```xml
     <!-- France CNI -->
@@ -62,13 +62,13 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 ### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - numéro de carte
-- carte nationale d’identité
-- carte nationale d’idenite no
-- Cni #
-- Cni
+- carte nationale d'identité
+- carte nationale d'identité no
+- cni#
+- cni
 - compte bancaire
 - numéro d’identification nationale
-- identité nationale
-- nationalidno #
-- numéro d’assurance maladie
+- nationale d’identité
+- nationalidno#
+- numéro d'assurance maladie
 - numéro de carte vitale
