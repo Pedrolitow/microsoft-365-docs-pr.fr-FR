@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: d2703947d2cebc5818793362e55b8eae9cec2ed8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Yammer afin de pouvoir gérer la rétention automatique ou la suppression des messages Yammer pour votre organisation.
+ms.openlocfilehash: c449dd7a562d770eea38e955897cb7bf977cd91e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639619"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944018"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 

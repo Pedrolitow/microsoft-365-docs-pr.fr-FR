@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère des contenus à forte valeur pour les obligations légales, professionnelles, ou réglementaires, mais vous ne savez pas où commencer ? Lisez des instructions pratiques pour démarrer.
-ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui gèrent du contenu à valeur élevée dans Microsoft 365 pour vos obligations légales, commerciales ou réglementaires.
+ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629670"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944194"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
