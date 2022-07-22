@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,22 +19,22 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la gestion des incidents de sécurité
-ms.openlocfilehash: bf748a87fcdbc3898caf6fb86c68a51823da5ba3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 9f99dda8b1226e051b17dcd4a7a96c236c222fa7
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892680"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917916"
 ---
 # <a name="security-incident-management"></a>Gestion des incidents de sécurité
 
-La sécurité de votre organisation nécessite une surveillance constante et, à mesure que des menaces sont détectées, des actions de correction entrent en jeu. En fonction de la menace particulière et de la configuration de vos paramètres de sécurité, les actions peuvent être effectuées automatiquement ou uniquement après approbation. Approbations doivent se produire régulièrement.
+Une fois que vous avez défini et configuré vos fonctionnalités de sécurité dans Microsoft 365 Business Premium, votre équipe de sécurité peut surveiller et traiter les menaces détectées. Lorsque des menaces sont détectées, des alertes sont générées et des incidents sont créés. Des actions de remédiation peuvent être prises en compte pour atténuer les menaces. 
 
-Regardez une courte vidéo sur une réponse aux incidents classique.
+Souhaitez-vous découvrir comment cela fonctionne ? Regardez cette courte vidéo sur une réponse typique à un incident.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zvew]
 
-Pour en savoir plus sur les réponses aux incidents, procédez comme suit :
+Pour en savoir plus sur les réponses aux incidents, consultez les articles suivants :
 
 1. [Examinez les recommandations de sécurité](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
 

@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 3fb316c0780ccb5c854e12dae8bde450c877f1d2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Découvrez le fonctionnement de la rétention Microsoft 365 pour SharePoint et OneDrive, à l’aide de stratégies de rétention et d’étiquettes de rétention pour gérer la rétention automatique ou la suppression des données pour votre organisation.
+ms.openlocfilehash: 2acfeb8dd370bc3e87f3efb25290434edc2a0152
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629186"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942911"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 

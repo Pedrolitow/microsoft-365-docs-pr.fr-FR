@@ -18,19 +18,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Prêt à commencer à régir les données de votre organisation, mais vous ne savez pas par où commencer ? Lisez des instructions prescriptives pour commencer.
-ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui gèrent le cycle de vie des données de votre organisation.
+ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629664"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942381"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Prise en main de la gestion du cycle de vie des données
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Vous êtes prêt à commencer à gouverner les données de votre organisation en conservant le contenu que vous devez conserver et en supprimant les autres contenus ? Pour commencer, utilisez les conseils suivants pour la gestion du cycle de vie des données Microsoft Purview (anciennement Microsoft Information Governance) :
+Êtes-vous prêt à commencer à gérer le cycle de vie des données de votre organisation en conservant le contenu que vous devez conserver et en supprimant les autres contenus ? Pour commencer, utilisez les conseils suivants pour la gestion du cycle de vie des données Microsoft Purview (anciennement Microsoft Information Governance) :
 
 1. **Comprendre le fonctionnement de la rétention et de la suppression** dans Microsoft 365, puis identifier les charges de travail qui nécessitent une stratégie de rétention et si vous devez créer des étiquettes de rétention pour les exceptions : [En savoir plus sur la rétention](retention.md)
     

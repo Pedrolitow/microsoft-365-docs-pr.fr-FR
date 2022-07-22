@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez les stratégies de rétention et les étiquettes de rétention pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+description: Découvrez les stratégies de rétention et les étiquettes de rétention Microsoft 365 pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas afin de gérer les données de votre organisation.
+ms.openlocfilehash: 24750145bb1361ede8d7519a1d08c74baafdf10d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714528"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949302"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -292,13 +292,13 @@ Scénario : par défaut, le contenu des comptes OneDrive des utilisateurs est au
 
 2. Vous créez et configurez une étiquette de rétention qui conserve du contenu de façon définitive et l’ajoutez à une stratégie d’étiquette que vous publiez sur tous les comptes OneDrive. Vous expliquez aux utilisateurs comment appliquer manuellement cette étiquette à des documents spécifiques, qui ne doivent pas être supprimés automatiquement, même s’ils n’ont pas été modifiés depuis cinq ans.
 
-Exemple pour conserver des éléments plus longtemps**
+#### <a name="example-to-retain-items-for-longer"></a>Exemple pour conserver des éléments plus longtemps
 
 Scénario : par défaut, les éléments SharePoint sont automatiquement conservés puis supprimés après cinq ans, mais les documents de certaines bibliothèques doivent être conservés pendant dix ans.
 
 1. Vous créez et configurez une stratégie de rétention qui conserve et supprime automatiquement le contenu au bout de cinq ans, puis appliquez la stratégie à toutes les instances SharePoint et Groupes Microsoft 365.
 
-2. Vous créez et configurez une étiquette de rétention qui conserve automatiquement le contenu pendant dix ans. Vous publiez cette étiquette pour les administrateurs de site SharePoint, afin qu’ils puissent l’appliquer en tant qu’étiquette par défaut pour être héritée par tous les éléments dans des bibliothèques de documents spécifiques.
+2. Vous créez et configurez une étiquette de rétention qui conserve automatiquement le contenu pendant dix ans. Vous ajoutez cette étiquette à une stratégie d’étiquette que vous publiez sur toutes les instances SharePoint et Groupes Microsoft 365 afin que les administrateurs SharePoint puissent ensuite l’appliquer en tant qu’étiquette par défaut à hériter sur tous les éléments dans des bibliothèques de documents spécifiques.
 
 #### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Exemple de suppression d’éléments sur une période plus courte
 
