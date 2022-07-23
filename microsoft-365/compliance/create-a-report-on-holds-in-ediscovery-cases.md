@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées aux cas eDiscovery.
-ms.openlocfilehash: 9820eba0e29a510a1881a9349f63c7e2d9650728
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8f3c3d56e59508c061776643e743a1ff5c2fe2db
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625476"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66984044"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Utiliser un script pour créer un rapport sur les conservations dans les cas eDiscovery
 
@@ -145,7 +145,7 @@ Une fois que vous êtes connecté à Security & Compliance PowerShell, l’étap
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casestatus $cc.Status -casetype $cc.casetype -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
@@ -195,7 +195,7 @@ Une fois que vous êtes connecté à Security & Compliance PowerShell, l’étap
 
    ![Sortie après l’exécution du script CaseHoldsReport.ps1.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Plus d'informations
 
 Le cas contient le rapport créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque conservation. Comme expliqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations sur toutes les conservations de votre organisation. Pour plus d’informations sur les conservations de cas, consultez [les cas eDiscovery](./get-started-core-ediscovery.md).
 

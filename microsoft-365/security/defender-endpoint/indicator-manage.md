@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72509f7480d54819fc29f40bab0e2bf65dcd8660
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622020"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66983958"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -35,7 +35,7 @@ ms.locfileid: "65622020"
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Indicateurs de** points de **terminaison** \> (sous **Règles**).
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> Points de **terminaison Indicateurs** \> (sous **Règles**).
 
 2. Sélectionnez l’onglet du type d’entité que vous souhaitez gérer.
 
@@ -47,7 +47,7 @@ Vous pouvez également choisir de charger un fichier CSV qui définit les attrib
 
 Téléchargez l’exemple de fichier CSV pour connaître les attributs de colonne pris en charge.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Indicateurs de** points de **terminaison** \> (sous **Règles**).
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> Points de **terminaison Indicateurs** \> (sous **Règles**).
 
 2. Sélectionnez l’onglet du type d’entité pour lequel vous souhaitez importer des indicateurs.
 
@@ -62,20 +62,20 @@ Téléchargez l’exemple de fichier CSV pour connaître les attributs de colonn
 
 Le tableau suivant présente les paramètres pris en charge.
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-indicatorValue|Chaîne|Identité de l’entité [Indicateur](ti-indicator.md) . **Obligatoire**
+indicatorValue|String|Identité de l’entité [Indicateur](ti-indicator.md) . **Obligatoire**
 action|Énum|Action qui sera effectuée si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-title|Chaîne|Titre de l’alerte d’indicateur. **Obligatoire**
-description|Chaîne| Description de l’indicateur. **Obligatoire**
+title|String|Titre de l’alerte d’indicateur. **Obligatoire**
+description|String| Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAAA-MM-DDTHH:MM:SS.0Z. L’indicateur est supprimé si le délai d’expiration est écoulé et que tout ce qui se passe au moment de l’expiration se produit à la valeur de secondes (SS). **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
 recommendedActions|String|Actions recommandées pour les alertes d’indicateur TI. **Optional**
-rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupes RBAC auxquels l’indicateur serait appliqué. **Optional**
+rbacGroups|String|Liste séparée par des virgules des groupes RBAC auxquels l’indicateur serait appliqué. **Optional**
 category|String|Catégorie de l’alerte. Exemples : l’exécution et l’accès aux informations d’identification. **Optional**
-mitretechniques|Chaîne|Code/id des techniques MITRE (séparés par des virgules). Pour plus d’informations, consultez [Enterprise tactiques](https://attack.mitre.org/tactics/enterprise/). **Optionnel** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
-GenerateAlert|Chaîne|Indique si l’alerte doit être générée. Les valeurs possibles sont : True ou False. **Optional**
+mitretechniques|String|Code/id des techniques MITRE (séparés par des virgules). Pour plus d’informations, consultez [Tactiques d’entreprise](https://attack.mitre.org/tactics/enterprise/). **Optionnel** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
+GenerateAlert|String|Indique si l’alerte doit être générée. Les valeurs possibles sont : True ou False. **Optional**
 
 > [!NOTE]
 > La notation de routage Inter-Domain sans classe (CIDR) pour les adresses IP n’est pas prise en charge.
