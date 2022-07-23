@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 description: Découvrez comment exporter, transférer ou supprimer des informations personnelles de Microsoft Whiteboard.
 ms.openlocfilehash: 97b960082621c6a728740d5fd747da73540b2ac7
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66943000"

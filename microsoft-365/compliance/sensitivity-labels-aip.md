@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756669"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970163"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
@@ -110,7 +110,7 @@ Vous pouvez également désactiver ou supprimer de manière interactive le compl
 
 Quelle que soit la méthode choisie, les modifications prennent effet au redémarrage des applications Office.
 
-Si, après avoir apporté ces modifications, le bouton **Sensibilité** ne s’affiche pas sur le ruban Office, vérifiez si l’étiquetage de confidentialité a été [désactivé](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows).  Bien qu’il ne s’agisse pas de la configuration par défaut, un administrateur peut avoir défini explicitement cette configuration à l’aide de stratégie de groupe ou en modifiant directement le Registre.
+Si, après avoir apporté ces modifications, le bouton **Sensibilité** ne s’affiche pas sur le ruban Office, vérifiez si l’étiquetage de confidentialité a été [désactivé](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows). Bien qu’il ne s’agisse pas de la configuration par défaut, un administrateur peut avoir défini explicitement cette configuration à l’aide de stratégie de groupe ou en modifiant directement le Registre.
 
 > [!NOTE]
 > Les étiquettes intégrées nécessitent une édition d’abonnement des applications Office. Si vous disposez d’éditions autonomes d’Office, parfois appelées « Office Perpetual », nous vous recommandons d’effectuer une mise à niveau vers Microsoft 365 Apps for Enterprise pour tirer parti des [dernières fonctionnalités d’étiquetage](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
@@ -150,7 +150,7 @@ Utilisez les informations suivantes pour vous aider à identifier si vous utilis
 | **Catégorie : Cryptage** | |
 |Autorisations définies par l'administrateur | ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](encryption-sensitivity-labels.md#assign-permissions-now) |
 |Permissions définies par l'utilisateur <br> - Ne pas transférer pour Outlook <br> – Permissions personnalisées des utilisateurs et des groupes pour Word, Excel, PowerPoint| ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|Permissions définies par l'utilisateur <br> – Autorisations personnalisées à l'échelle de l'organisation en spécifiant les domaines pour Word, Excel, PowerPoint. | En cours de planification ou de développement |
+|Permissions définies par l'utilisateur <br> – Autorisations personnalisées à l'échelle de l'organisation en spécifiant les domaines pour Word, Excel, PowerPoint. | [Dans la préversion](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |Co-auteur et AutoSave | ![Pris en charge.](../media/yes-icon.png) <br>[Si vous souhaitez en savoir plus](sensitivity-labels-coauthoring.md) |
 |Cryptage à double clé | En cours de planification ou de développement |
 |Révocation de documents pour les utilisateurs | En cours de révision |

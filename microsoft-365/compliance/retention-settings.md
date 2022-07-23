@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres de rétention pour conserver ou supprimer automatiquement du contenu
+title: Configurer les paramètres de rétention Microsoft 365 pour conserver ou supprimer automatiquement du contenu
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+description: Découvrez les paramètres que vous pouvez configurer pour les stratégies de conservation et les étiquettes de conservation de Microsoft 365 afin de conserver ou de supprimer les données de votre organisation.
+ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695745"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943329"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
