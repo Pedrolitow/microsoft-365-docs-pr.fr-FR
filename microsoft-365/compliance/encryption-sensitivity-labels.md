@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663783"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970225"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -288,7 +288,7 @@ Vous pouvez utiliser les options suivantes pour autoriser les utilisateurs à at
 
     Cette option est prise en charge par le client d’étiquetage unifié Azure Information Protection et par certaines applications qui utilisent un étiquetage intégré. Pour les applications qui ne supportent pas cette fonctionnalité, l’étiquette n’est pas visible pour les utilisateurs, ou peut l’être pour des raisons de cohérence, mais elle ne peut pas être appliquée avec un message explicatif aux utilisateurs.
     
-    Pour vérifier quelles applications utilisant l’étiquetage intégré prennent en charge cette option, utilisez le [tableau des fonctionnalités pour Word, Excel et PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) et la ligne **Permettre aux utilisateurs d’attribuer des autorisations : – Invitez les utilisateurs**.
+    Pour vérifier quelles applications qui utilisent l’étiquetage intégré prennent en charge cette option, utilisez le [Tableau des fonctionnalités pour Word, Excel et PowerPoint,](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) ainsi que les lignes **Permettre aux utilisateurs d’attribuer des autorisations**.
 
 Lorsque les options sont prises en charge, utilisez le tableau suivant pour déterminer le moment où les utilisateurs voient l’étiquette de confidentialité :
 
@@ -343,6 +343,16 @@ Pour l’étiquetage intégré et pour le client d’étiquetage unifié Azure I
 
 > [!TIP]
 > Si les utilisateurs étaient familiarisés avec la configuration des autorisations personnalisées avec le client d’étiquetage unifié Azure Information Protection avant que la [co-création](sensitivity-labels-coauthoring.md)ne soit activée, il peut vous être utile de passer en revue le mappage des niveaux d’autorisation aux droits d’utilisation individuels : droits inclus dans les [niveaux](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)d’autorisation.
+
+#### <a name="support-for-organization-wide-custom-permissions"></a>Prise en charge des autorisations personnalisées à l’échelle de l’organisation
+
+Désormais déployé en préversion pour l’étiquetage intégré dans Windows, les utilisateurs peuvent spécifier un nom de domaine qui s’appliquera à tous les utilisateurs d’une organisation propriétaire du domaine et qui est dans Azure Active Directory. Cette fonctionnalité assure [la parité avec le client d’étiquetage unifié Azure Information Protection](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+
+![Boîte de dialogue mise à jour pour prendre en charge les autorisations personnalisées à l’échelle de l’organisation.](../media/org-wide-custom-permissions-dialog.png)
+
+Par exemple, un utilisateur tape « @contoso.com » (ou « contoso.com ») et accorde un accès en lecture. Étant donné que Contoso Corporation possède le domaine contoso.com, tous les utilisateurs de ce domaine et tous les autres domaines appartenant à l’organisation dans Azure Active Directory se verront accorder un accès en lecture.
+
+Il est important d’informer les utilisateurs que l’accès n’est pas limité uniquement aux utilisateurs du domaine spécifié. Par exemple, « @sales.contoso.com » ne restreindrait pas l’accès aux utilisateurs uniquement dans le sous-domaine des ventes, mais accordait également l’accès aux utilisateurs du domaine marketing.contoso.com, et même aux utilisateurs avec un espace de noms disjoint dans le même locataire Azure Active Directory.
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Exemples de configurations pour les paramètres de chiffrement
 
