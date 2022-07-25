@@ -19,54 +19,54 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur la mise en quarantaine Exchange Online Protection (EOP) qui contient des messages potentiellement dangereux ou indésirables.
+description: Les administrateurs peuvent en savoir plus sur la quarantaine dans Exchange Online Protection (EOP) qui contient des messages potentiellement dangereux ou indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac2d1bf550fd340c1e94ed5f3503352b40ba6556
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c61154054669032a23c9cbdb0d11344ef78ec281
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682766"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002469"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Messages électroniques mis en quarantaine dans EOP et Defender pour Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, la mise en quarantaine est disponible pour contenir les messages potentiellement dangereux ou indésirables.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, la mise en quarantaine est disponible pour contenir des messages potentiellement dangereux ou indésirables.
 
-Les stratégies anti-programme malveillant met automatiquement en quarantaine un _message si des_ pièces jointes contiennent des programmes malveillants. Pour plus d’informations, voir [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md).
+Les stratégies anti-programme malveillant mettent automatiquement en quarantaine un message si _une_ pièce jointe contient des programmes malveillants. Pour plus d’informations, consultez [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md).
 
-Par défaut, la protection anti-courrier indésirable met en quarantaine les messages de hameçonnage et de hameçonnage à haut niveau de confiance, et envoie le courrier indésirable, le courrier indésirable à niveau de confiance élevé et les messages électroniques en masse dans le dossier Courrier indésirable de l’utilisateur. Toutefois, vous pouvez également créer et personnaliser des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable, le courrier indésirable à niveau de confiance élevé et les messages électroniques en nombre. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+Par défaut, les stratégies anti-courrier indésirable met en quarantaine les messages de hameçonnage et de hameçonnage à haut niveau de confiance, et fournissent le courrier indésirable, le courrier indésirable à haut niveau de confiance et les messages électroniques en bloc dans le dossier Courrier indésirable Email de l’utilisateur. Toutefois, vous pouvez également créer et personnaliser des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable, le courrier indésirable à haut niveau de confiance et les messages électroniques en bloc. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-Les utilisateurs et les administrateurs peuvent travailler avec les messages mis en quarantaine :
+Les utilisateurs et les administrateurs peuvent travailler avec des messages mis en quarantaine :
 
-- _Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire ou non pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités prise en charge). Les stratégies de mise en quarantaine par défaut appliquent les fonctionnalités historiques comme décrit ci-dessous. Les administrateurs peuvent créer et appliquer des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs, ainsi que des notifications de mise en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+- _Les stratégies de quarantaine_ définissent ce que les utilisateurs sont autorisés à faire ou non aux messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités prises en charge). Les stratégies de quarantaine par défaut appliquent les fonctionnalités historiques, comme décrit ci-dessous. Les administrateurs peuvent créer et appliquer des stratégies de quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs, et activent également les notifications de quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
-- Les administrateurs peuvent utiliser tous les types de messages mis en quarantaine pour tous les utilisateurs. Par défaut, seuls les administrateurs peuvent utiliser des messages mis en quarantaine en tant que programmes malveillants, hameçonnage à haut niveau de confiance ou suite à des règles de flux de messagerie (également appelées règles de transport). Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
+- Les administrateurs peuvent utiliser tous les types de messages mis en quarantaine pour tous les utilisateurs. Par défaut, seuls les administrateurs peuvent utiliser des messages qui ont été mis en quarantaine sous forme de programmes malveillants, de hameçonnage à haut niveau de confiance ou à la suite de règles de flux de courrier (également appelées règles de transport). Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 
-- Par défaut, les utilisateurs peuvent travailler avec des messages mis en quarantaine lorsqu’ils sont destinataires et que le message a été mis en quarantaine en tant que courrier indésirable, courrier électronique en masse ou hameçonnage (sans hameçonnage à haut niveau de confiance). Pour plus d’informations, voir [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur dans EOP](find-and-release-quarantined-messages-as-a-user.md).
+- Par défaut, les utilisateurs peuvent utiliser des messages mis en quarantaine lorsqu’ils sont destinataires et que le message a été mis en quarantaine en tant que courrier indésirable, courrier électronique en bloc ou hameçonnage (hameçonnage non fiable). Pour plus d’informations, consultez [Rechercher et libérer des messages mis en quarantaine en tant qu’utilisateur dans EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-  Pour empêcher les utilisateurs de gérer leurs propres messages de hameçonnage mis en quarantaine, les administrateurs peuvent affecter une stratégie de mise en quarantaine qui refuse l’accès aux messages mis en quarantaine à partir du verdict de filtrage du courrier d’hameçonnage dans les stratégies anti-courrier indésirable. Pour plus d’informations, voir [Assign quarantine policies in anti-spam](quarantine-policies.md#anti-spam-policies) [policiesQuarantine policies](quarantine-policies.md).
+  Pour empêcher les utilisateurs de gérer leurs propres messages de hameçonnage mis en quarantaine, les administrateurs peuvent attribuer une stratégie de quarantaine qui refuse l’accès aux messages mis en quarantaine à partir du verdict de filtrage des **e-mails de hameçonnage** dans les stratégies anti-courrier indésirable. Pour plus d’informations, consultez [Affecter des stratégies de quarantaine dans les stratégies anti-courrier indésirable](quarantine-policies.md#anti-spam-policies)[Stratégies de quarantaine](quarantine-policies.md).
 
-- Les administrateurs et les utilisateurs peuvent signaler les faux positifs à Microsoft en quarantaine.
+- Les administrateurs et les utilisateurs peuvent signaler des faux positifs à Microsoft en quarantaine.
 
-- La durée de mise en quarantaine des messages mis en quarantaine avant leur expiration varie en fonction de la raison pour laquelle le message a été mis en quarantaine. Les fonctionnalités qui met en quarantaine les messages et leurs périodes de rétention correspondantes sont décrites dans le tableau suivant :
+- La durée pendant laquelle les messages mis en quarantaine sont maintenus en quarantaine avant leur expiration varie en fonction de la raison pour laquelle le message a été mis en quarantaine. Les fonctionnalités qui mettent en quarantaine les messages et leurs périodes de rétention correspondantes sont décrites dans le tableau suivant :
 
-  |Raison de la mise en quarantaine :|Période de rétention par défaut|Personnalisable ?|Commentaires|
+  |Raison de la mise en quarantaine :|Période de rétention par défaut|Personnalisable?|Commentaires|
   |---|---|:---:|---|
-  |Messages mis en quarantaine par des stratégies anti-courrier indésirable : courrier indésirable, courrier indésirable à niveau de confiance élevé, hameçonnage, hameçonnage à haut niveau de confiance ou en bloc.|15 jours : <ul><li>Dans la stratégie anti-courrier indésirable par défaut.</li><li>Dans les stratégies anti-courrier indésirable que vous créez dans PowerShell.</li></ul> <p> 30 jours dans les stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender courrier indésirable.|Oui|Vous pouvez configurer (réduire) cette valeur dans les stratégies anti-courrier indésirable. Pour plus d’informations, voir le paramètre Conserver le courrier indésirable en quarantaine pendant ce nombre de **jours (**_QuarantineRetentionPeriod_) dans Configurer des stratégies [anti-courrier indésirable](configure-your-spam-filter-policies.md).|
-  |Messages mis en quarantaine par les stratégies anti-hameçonnage : veille contre l’usurpation d’adresse dans EOP ; emprunt d’identité d’utilisateur, emprunt d’identité de domaine ou intelligence de boîte aux lettres dans Defender pour Office 365.|30 jours|Oui|Cette période de rétention est également contrôlée par le paramètre Conserver le courrier indésirable en quarantaine pendant ce nombre de **jours (**_QuarantineRetentionPeriod_) dans les stratégies **anti-courrier** indésirable. La période de rétention utilisée est la valeur de la première stratégie **anti-courrier** indésirable correspondante dans qui le destinataire est défini.|
-  |Messages mis en quarantaine par des stratégies anti-programme malveillant (messages malveillants).|15 jours|Non||
-  |Messages mis en quarantaine par les stratégies Coffre pièces jointes dans Defender pour Office 365 (messages malveillants).|15 jours|Non||
-  |Messages mis en quarantaine par des règles de flux de messagerie : l’action consiste à remettre le **message** en quarantaine hébergé (_mise en quarantaine_).|30 jours|Non||
-  |Fichiers mis en quarantaine par Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams (fichiers malveillants).|15 jours|Non||
+  |Messages mis en quarantaine par des stratégies anti-courrier indésirable : courrier indésirable, courrier indésirable à haut niveau de confiance, hameçonnage, hameçonnage à haut niveau de confiance ou en bloc.|15 jours : <ul><li>Dans la stratégie anti-courrier indésirable par défaut.</li><li>Dans les stratégies anti-courrier indésirable que vous créez dans PowerShell.</li></ul> <p> 30 jours dans les stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender.|Oui|Vous pouvez configurer (inférieur) cette valeur dans les stratégies anti-courrier indésirable. Pour plus d’informations, consultez le paramètre **Conserver le courrier indésirable en quarantaine pour ce nombre de jours** (_QuarantineRetentionPeriod_) dans [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
+  |Messages mis en quarantaine par des stratégies anti-hameçonnage : renseignement sur l’usurpation d’identité dans EOP ; l’emprunt d’identité de l’utilisateur, l’emprunt d’identité de domaine ou l’intelligence de boîte aux lettres dans Defender pour Office 365.|30 jours|Oui|Cette période de rétention est également contrôlée par le paramètre **Conserver le courrier indésirable en quarantaine pour ce nombre de jours** (_QuarantineRetentionPeriod_) dans les stratégies **anti-courrier indésirable** . La période de rétention utilisée est la valeur de la première stratégie **anti-courrier indésirable** correspondante dans laquelle le destinataire est défini.|
+  |Messages mis en quarantaine par des stratégies anti-programme malveillant (messages malveillants).|30 jours|Non||
+  |Messages mis en quarantaine par des stratégies de pièces jointes sécurisées dans Defender pour Office 365 (messages de programmes malveillants).|30 jours|Non||
+  |Messages mis en quarantaine par des règles de flux de courrier : l’action consiste **à remettre le message à la mise en quarantaine hébergée** (_quarantaine_).|30 jours|Non||
+  |Fichiers mis en quarantaine par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams (fichiers de programmes malveillants).|30 jours|Non||
 
-  Lorsqu’un message arrive à expiration de la quarantaine, vous ne pouvez pas le récupérer.
+  Quand un message expire de la quarantaine, vous ne pouvez pas le récupérer.
 
-Pour plus d’informations sur la mise en quarantaine, consultez [la faq sur la mise en quarantaine](quarantine-faq.yml).
+Pour plus d’informations sur la quarantaine, consultez [faq sur la quarantaine](quarantine-faq.yml).
