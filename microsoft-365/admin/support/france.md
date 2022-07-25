@@ -14,7 +14,7 @@ description: Découvrez comment contacter le support technique pour votre pays o
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 68b06e8451fa254b03673181e3e6a1c6ec126d1a
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372551"
