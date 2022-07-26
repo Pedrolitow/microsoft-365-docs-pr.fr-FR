@@ -17,12 +17,12 @@ description: Sécurité dans Office 365, d’Exchange Online Protection aux plan
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: a5a7a4e78ae3b160b565e253d315d94fc5b6b53a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 2b141e50ab3db79dfd0a072c6738d1894e27e0ad
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940907"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004536"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité de Microsoft Defender pour Office 365
 
