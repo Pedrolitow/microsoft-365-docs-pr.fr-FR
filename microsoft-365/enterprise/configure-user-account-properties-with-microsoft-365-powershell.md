@@ -1,5 +1,5 @@
 ---
-title: Configurer Microsoft 365 propriétés de compte d’utilisateur avec PowerShell
+title: Configurer les propriétés du compte d’utilisateur Microsoft 365 avec PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,23 +18,23 @@ ms.custom:
 - PowerShell
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: Utilisez PowerShell pour Microsoft 365 afin de configurer les propriétés de comptes d’utilisateur individuels ou multiples dans votre locataire Microsoft 365.
-ms.openlocfilehash: 3a1aa77a6af3995d7cd4d072b6b6c6047bf89942
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Utilisez PowerShell pour Microsoft 365 pour configurer les propriétés de comptes d’utilisateur individuels ou multiples dans votre locataire Microsoft 365.
+ms.openlocfilehash: 14d302bca030b8310c4956c44cccab91d357233f
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091344"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019942"
 ---
-# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer Microsoft 365 propriétés de compte d’utilisateur avec PowerShell
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer les propriétés du compte d’utilisateur Microsoft 365 avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> pour configurer les propriétés des comptes d’utilisateur de votre locataire Microsoft 365. Dans PowerShell, vous pouvez également effectuer cette opération, ainsi que d’autres choses que vous ne pouvez pas faire dans le Centre d’administration.
+Vous pouvez utiliser la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> pour configurer les propriétés des comptes d’utilisateur de votre locataire Microsoft 365. Dans PowerShell, vous pouvez également effectuer cette opération, ainsi que d’autres choses que vous ne pouvez pas faire dans le Centre d’administration.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Pour configurer les propriétés des comptes d’utilisateur dans la Azure Active Directory PowerShell pour Graph module, utilisez l’applet de commande [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser) et spécifiez les propriétés à définir ou à modifier.
+Pour configurer les propriétés des comptes d’utilisateur dans le module Azure Active Directory PowerShell pour Graph, utilisez l’applet de commande [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser) et spécifiez les propriétés à définir ou à modifier.
 
 Tout [d’abord, connectez-vous à votre locataire Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
@@ -114,7 +114,7 @@ En utilisant une variable *$upn*, vous pouvez apporter des modifications à des 
 ```powershell
 $userName="Belinda Newman"
 $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
+Set-AzureADUser -ObjectID $upn -UsageLocation FR
 ```
 
 ### <a name="change-properties-for-all-user-accounts"></a>Modification des propriétés de tous les comptes d’utilisateur
@@ -122,21 +122,21 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 Pour modifier les propriétés de tous les utilisateurs, vous pouvez utiliser une combinaison des applets de commande **Get-AzureADUser** et **Set-AzureADUser** . L’exemple suivant modifie l’emplacement d’utilisation de tous les utilisateurs en *France* :
   
 ```powershell
-Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation FR
 ```
 
 Cette commande indique à PowerShell d’effectuer les opérations suivantes :
   
 1. Obtenez toutes les informations sur les comptes d’utilisateur (**Get-AzureADUser) et envoyez-les** à la commande suivante (**|**).
 
-1. Définissez l’emplacement de l’utilisateur sur France (**Set-AzureADUser -UsageLocation « FR »**).
+1. Définissez l’emplacement de l’utilisateur sur France (**Set-AzureADUser -UsageLocation FR**).
 
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Modification des propriétés d’un ensemble spécifique de comptes d’utilisateur
 
 Pour modifier les propriétés d’un ensemble spécifique de comptes d’utilisateur, vous pouvez utiliser une combinaison des applets de commande **Get-AzureADUser**, **Where** et **Set-AzureADUser** . L’exemple suivant modifie l’emplacement d’utilisation de tous les utilisateurs du service Comptabilité en *France* :
   
 ```powershell
-Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation FR
 ```
 
 Cette commande indique à PowerShell d’effectuer les opérations suivantes :
@@ -145,7 +145,7 @@ Cette commande indique à PowerShell d’effectuer les opérations suivantes :
 
 1.  Recherchez tous les comptes d’utilisateur dont la propriété *Department* est définie sur « Accounting » (**Où {$_. Department -eq « Accounting"}**), et envoyer les informations obtenues à la commande suivante (**|**).
 
-1. Définissez l’emplacement de l’utilisateur sur France (**Set-AzureADUser -UsageLocation « FR »**).
+1. Définissez l’emplacement de l’utilisateur sur France (**Set-AzureADUser -UsageLocation FR**).
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -233,7 +233,7 @@ En utilisant une variable *$upn*, vous pouvez apporter des modifications à des 
 ```powershell
 $userName="<display name>"
 $upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
+Set-MsolUser -UserPrincipalName $upn -UsageLocation FR
 ```
 
 ### <a name="change-properties-for-all-user-accounts"></a>Modification des propriétés de tous les comptes d’utilisateur
@@ -241,21 +241,21 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 Pour modifier les propriétés de tous les utilisateurs, utilisez une combinaison des applets de commande **Get-MsolUser** et **Set-MsolUser** . L’exemple suivant modifie l’emplacement d’utilisation de tous les utilisateurs en *France* :
   
 ```powershell
-Get-MsolUser | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Set-MsolUser -UsageLocation FR
 ```
 
 Cette commande indique à PowerShell d’effectuer les opérations suivantes :
   
 1. Obtenez toutes les informations pour les comptes d’utilisateur (**Get-MsolUser) et envoyez-les** à la commande suivante (**|**).
 
-1. Définissez l’emplacement de l’utilisateur sur France (**Set-MsolUser -UsageLocation « FR »**).
+1. Définissez l’emplacement de l’utilisateur sur France (**Set-MsolUser -UsageLocation FR**).
 
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Modification des propriétés d’un ensemble spécifique de comptes d’utilisateur
 
 Pour modifier les propriétés d’un ensemble spécifique de comptes d’utilisateur, vous pouvez utiliser une combinaison des applets de commande **Get-MsolUser**, **Where** et **Set-MsolUser** . L’exemple suivant modifie l’emplacement d’utilisation de tous les utilisateurs du service Comptabilité en *France* :
   
 ```powershell
-Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation FR
 ```
 
 Cette commande indique à PowerShell d’effectuer les opérations suivantes :
@@ -264,7 +264,7 @@ Cette commande indique à PowerShell d’effectuer les opérations suivantes :
 
 1. Recherchez tous les comptes d’utilisateur dont la propriété *Department* est définie sur « Accounting » (**Où {$_. Department -eq « Accounting"}**) et envoyer les informations obtenues à la commande suivante (**|**).
 
-1. Définissez l’emplacement de l’utilisateur sur France (**Set-MsolUser -UsageLocation « FR »**).
+1. Définissez l’emplacement de l’utilisateur sur France (**Set-MsolUser -UsageLocation FR**).
 
 ## <a name="see-also"></a>Voir aussi
 

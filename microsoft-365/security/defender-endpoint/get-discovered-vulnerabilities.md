@@ -1,7 +1,7 @@
 ---
 title: Obtenir les vulnérabilités découvertes
 description: Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
-keywords: api, api graphe, api prises en charge, obtenir, lister, fichier, informations, vulnérabilités découvertes, api & gestion des vulnérabilités menaces, api Microsoft Defender pour point de terminaison tvm
+keywords: api, api graphe, api prises en charge, get, list, file, information, vulnérabilités découvertes, api de gestion des menaces & de gestion des vulnérabilités, api Microsoft Defender pour point de terminaison tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,24 +15,26 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b3271637b1b275fe26d07975d0592bf1e7ae672
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 95e350a6288ecefabe86aaa7b802deae0ffafaa1
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840472"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020008"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtenir les vulnérabilités découvertes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? En savoir plus sur la façon dont vous pouvez vous inscrire à la [Gestion des vulnérabilités Microsoft Defender préversion publique](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

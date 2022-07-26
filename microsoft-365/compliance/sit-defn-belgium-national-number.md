@@ -18,29 +18,29 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’information sensible de numéro national belge.
+description: Définition d’entité de type d’informations sensibles de numéro national belge.
 ms.openlocfilehash: 5fc644a8dcb275cba2986139dfdd16444e47c218
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950809"
 ---
-# <a name="belgium-national-number"></a>Numéro national belge
+# <a name="belgium-national-number"></a>Numéro national en Belgique
 
 ## <a name="format"></a>Format
 
-11 chiffres plus délimiteurs facultatifs
+11 chiffres plus des délimiteurs facultatifs
 
 ## <a name="pattern"></a>Modèle
 
 11 chiffres plus des délimiteurs :
 
-- six chiffres et deux périodes facultatives au format YY. MM.DD pour la date de naissance
+- six chiffres et deux points facultatifs au format AA.MM.JJ pour la date de naissance 
 - Délimiteur facultatif à partir d’un point, d’un tiret, d’un espace
-- trois chiffres séquentiels (impairs pour les mâles, même pour les femelles)
+- trois chiffres séquentiels (impairs pour les hommes, pairs pour les femmes)
 - Délimiteur facultatif à partir d’un point, d’un tiret, d’un espace
-- deux chiffres de vérification
+- deux chiffres de contrôle
 
 ## <a name="checksum"></a>Somme de contrôle
 
@@ -48,15 +48,15 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_belgium_national_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keyword_belgium_national_number` trouvé.
+- La fonction `Func_belgium_national_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keyword_belgium_national_number` est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance faible ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_belgium_national_number` recherche le contenu qui correspond au modèle.
+- La fonction `Func_belgium_national_number` trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -77,58 +77,58 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 ### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
 - belasting aantal
-- Bnn #
-- Bnn
-- carte d’identité
+- bnn#
+- bnn
+- Carte d’identité
 - identifiant national
-- identifiantnational #
+- #identifiantnational
 - identificatie
-- Identification
+- identification
 - identifikation
 - identifikationsnummer
 - identifizierung
 - identité
 - identiteit
 - identiteitskaart
-- Identité
+- identité
 - inscription
 - numéro national
 - registre national
-- nationalnumber #
-- nationalnumber
-- Nif #
-- Nif
+- #numéronational
+- numéronational
+- n#if
+- nif
 - numéro d’assuré
 - numéro de registre national
 - numéro de sécurité
 - numéro d’identification
 - numéro d’immatriculation
 - numéro national
-- numéronational #
+- #numéronational
 - numéro d’ID personnel
 - personalausweis
-- personalidnumber #
+- #numéroidpersonnel
 - registratie
-- Enregistrement
+- inscription
 - registrationsnumme
 - registrierung
 - numéro de sécurité sociale
-- Ssn #
-- Ssn
+- nss#
+- nss
 - steuernummer
 - id fiscal
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#

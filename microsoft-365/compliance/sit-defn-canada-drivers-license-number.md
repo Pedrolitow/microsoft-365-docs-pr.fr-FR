@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de permis de conduire canada
+title: Définition d’entité du numéro de permis de conduire du Canada
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible sur le numéro de permis de conduire au Canada.
+description: Définitions d’entité de type d’informations sensibles du numéro de permis de conduire du Canada.
 ms.openlocfilehash: a42af206eef8508bd971fad60d213c15f131e2b2
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997695"
@@ -34,7 +34,7 @@ Varie selon la province
 
 ## <a name="pattern"></a>Modèle
 
-Différents modèles couvrant :
+Des modèles variés couvrant :
 
 - Alberta
 - Colombie-britannique
@@ -124,28 +124,28 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keyword_canada_drivers_license"></a>Keyword_canada_drivers_license
 
-- DL
-- DLS
-- CDL
-- CDLS
-- DriverLic
+- PC
+- PC
+- PCD
+- PCD
+- PermisConduire
 - DriverLics
 - DriverLicense
 - DriverLicenses
 - DriverLicence
-- DriverLicences
+- PermisConduire
 - Permis conduire
 - Permis conduire
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
-- DriversLic
+- PermisConduire
 - DriversLics
 - DriversLicence
 - DriversLicences
 - DriversLicense
-- DriversLicenses
+- PermisConduire
 - Permis conduire
 - Permis conduire
 - Permis de conduire
@@ -153,23 +153,23 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - Permis de conduire
 - Permis de conduire
 - Driver’Lic
-- Driver’Lics
-- Driver’License
-- Licences de pilote
-- Permis de conduire
-- Permis de conduire
+- Permisconduire
+- Permisdeconduire
+- Permisdeconduire
+- Permisdeconduire
+- Driver’Licences
 - Permis conduire
 - Permis conduire
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
-- Driver’sLic
-- Driver’sLics
-- Driver’sLicense
-- Driver’sLicenses
-- Driver’sLicence
-- Driver’sLicences
+- PermisConduire
+- Driver'sLics
+- Driver'sLicense
+- Driver'sLicenses
+- Driver'sLicence
+- PermisConduire
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
@@ -185,60 +185,60 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - # carte d’identification
 - carte d’identification
 - cartes d’identification
-- idcard
+- carte d’identification
 - numéro d’identification
 - numéros d’identification
 - # identification
 - # identification
 - carte d’identification
 - cartes d’identification
-- Identification
-- DL #
-- DLS #
-- CDL #
-- CDLS #
-- DriverLic #
-- DriverLics #
-- DriverLicense #
-- DriverLicenses #
-- DriverLicence #
-- DriverLicences #
+- identification
+- # PC
+- # PC
+- # PCD
+- # PCD
+- #PermisConduire
+- DriverLics#
+- DriverLicense#
+- DriverLicenses#
+- DriverLicence#
+- DriverLicences#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
 - #Permis de conduire
 - #Permis de conduire
-- DriversLic #
-- DriversLics #
-- DriversLicense #
-- DriversLicenses #
-- DriversLicence #
-- DriversLicences #
+- #PermisConduire
+- DriversLics#
+- DriversLicense#
+- DriversLicenses#
+- DriversLicence#
+- #PermisConduire
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver’Lic #
-- Driver’Lics #
-- Driver’License #
-- Licences de pilote #
-- Permis de conduire #
-- Permis de conduire #
+- Driver’Lic#
+- #Permisconduire
+- #Permisdeconduire
+- #Permisdeconduire
+- #Permisdeconduire
+- Driver’Licences#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver’sLic #
-- Driver’sLics #
-- Driver’sLicense #
-- Driver’sLicenses #
-- Driver’sLicence #
-- Driver’sLicences #
+- #PermisConduire
+- Driver'sLics#
+- Driver'sLicense#
+- Driver'sLicenses#
+- Driver'sLicence#
+- #PermisConduire
 - #Permisconduire
 - #Permisconduire
 - #Permis de conduire
@@ -246,11 +246,11 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - #Permis de conduire
 - #Permis de conduire
 - Permis de conduire #
-- Id #
-- Id #
+- id#
+- #ids
 - #carte carte d’identification
 - #cartes carte d’identification
-- idcard #
+- idcard#
 - #carte d’identification
 - #cartes d’identification
-- Identification #
+- #identification

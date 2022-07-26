@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité des adresses physiques au Canada
+title: Définition d’entité des adresses physiques en France
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définitions d’entité de type d’informations sensibles des adresses physiques au Canada.
-ms.openlocfilehash: 29912499ec92b3c1d8c52a76ad0bb8ad2051b5ee
+description: Définition d’entité de type d’informations sensibles des adresses physiques en France.
+ms.openlocfilehash: 1c1831265c74ab980f9b3252e7ab8c8dcb84fca8
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997219"
+ms.locfileid: "66995980"
 ---
-# <a name="canada-physical-addresses"></a>Adresses physiques du Canada
+# <a name="france-physical-addresses"></a>Adresses physiques françaises
 
-Cette entité nommée non groupée détecte les modèles liés à une adresse physique au Canada. Elle est également incluse dans l’entité nommée [Toutes les adresses physiques](sit-defn-all-physical-addresses.md) (SIT).
+Cette entité nommée non groupée détecte les modèles liés à une adresse physique en France. Elle est également incluse dans l’entité nommée [Toutes les adresses physiques](sit-defn-all-physical-addresses.md) (SIT).
 
 ## <a name="confidence-level"></a>Niveau de confiance
 

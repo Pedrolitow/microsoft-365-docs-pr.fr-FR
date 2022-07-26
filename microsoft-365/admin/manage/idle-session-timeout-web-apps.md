@@ -11,16 +11,19 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Définissez la durée de la session de l’utilisateur dans Microsoft 365 avant son expiration.
-ms.openlocfilehash: 15de72fef4dc45705b78dc83941faff1d835d6ae
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756624"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019920"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Délai d’expiration de session inactif pour Microsoft 365
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
+
+> [!IMPORTANT]
+> Le délai d’expiration de la session inactive n’est pas disponible pour Microsoft 365 géré par 21Vianet ou Microsoft 365 Germany.
 
 Utilisez le délai d’inactivité de session pour configurer une stratégie sur la durée pendant laquelle les utilisateurs sont inactifs dans votre organisation avant de se déconnecter des applications web Microsoft 365. Cela permet de protéger les données d’entreprise sensibles et ajoute une autre couche de sécurité pour les utilisateurs finaux qui travaillent sur des appareils non professionnels ou partagés.
 
@@ -74,10 +77,7 @@ Lorsqu’un utilisateur a été inactif dans les applications web Microsoft 365 
 
 - Dans ce cas, les utilisateurs ne seront pas déconnectés.
     - S’ils obtiennent l’authentification unique (SSO) dans l’application web à partir du compte joint à l’appareil ou s’ils ont sélectionné **Rester connecté** au moment de la connexion. Pour plus d’informations sur le masquage de cette option pour votre organisation, consultez [Ajouter une personnalisation à la page de connexion de votre organisation](/azure/active-directory/fundamentals/customize-branding).
-    - S’ils se trouve sur un appareil géré (un appareil conforme ou joint à un domaine) et utilisent un navigateur pris en charge comme Microsoft Edge ou Google Chrome (avec [l’extension Comptes Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Pour que cette fonctionnalité ne se déclenche pas sur un appareil managé, un abonnement Azure AD Premium P1 ou P2 éligible et une stratégie d’accès conditionnel spécifique sont requis. Pour plus d’informations, voir ci-dessous.
-
-> [!IMPORTANT]
-> Le délai d’expiration de la session inactive n’est pas disponible pour Microsoft 365 géré par 21Vianet ou Microsoft 365 Allemagne.
+    - S’ils se trouve sur un appareil géré (un appareil conforme ou joint à un domaine) et utilisent un navigateur pris en charge comme Microsoft Edge ou Google Chrome (avec [l’extension Comptes Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Pour que cette fonctionnalité se déclenche sur un appareil non managé, un abonnement Azure AD Premium P1 ou P2 éligible et une stratégie d’accès conditionnel spécifique sont requis. Pour plus d’informations, voir ci-dessous.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>Délai d’expiration de session inactif sur les appareils non gérés  
 

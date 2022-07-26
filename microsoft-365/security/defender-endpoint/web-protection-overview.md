@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4184948316e683a59b45b9397aaea74260e290ee
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664169"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020646"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -106,14 +107,14 @@ Le tableau ci-dessous récapitule certaines configurations courantes qui présen
 
 ****
 
-|Stratégie d’indicateur personnalisé|Stratégie de menace web|Stratégie WCF|stratégie Defender pour le cloud Apps|Résultat|
+|Stratégie d’indicateur personnalisé|Stratégie de menace web|Stratégie WCF|Stratégie Defender pour Cloud Apps|Résultat|
 |---|---|---|---|---|
 |Autoriser|Bloquer|Bloquer|Bloquer|Autoriser (remplacement de la protection web)|
 |Autoriser|Autoriser|Bloquer|Bloquer|Autoriser (exception WCF)|
 |Avertir|Bloquer|Bloquer|Bloquer|Avertir (remplacer)|
 |
 
-Les adresses IP internes ne sont pas prises en charge par les indicateurs personnalisés. Pour une stratégie d’avertissement lorsqu’elle est contournée par l’utilisateur final, le site est débloqué pendant 24 heures pour cet utilisateur par défaut. Cette période peut être modifiée par l’administrateur et transmise par le service cloud SmartScreen. La possibilité de contourner un avertissement peut également être désactivée dans Microsoft Edge à l’aide de CSP pour les blocs de menaces web (programmes malveillants/hameçonnage). Pour plus d’informations, consultez [Microsoft Edge Paramètres SmartScreen](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
+Les adresses IP internes ne sont pas prises en charge par les indicateurs personnalisés. Pour une stratégie d’avertissement lorsqu’elle est contournée par l’utilisateur final, le site est débloqué pendant 24 heures pour cet utilisateur par défaut. Cette période peut être modifiée par le Administration et transmise par le service cloud SmartScreen. La possibilité de contourner un avertissement peut également être désactivée dans Microsoft Edge à l’aide du fournisseur de solutions Cloud pour les blocs de menaces web (programmes malveillants/hameçonnage). Pour plus d’informations, consultez [Paramètres SmartScreen de Microsoft Edge](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
 ## <a name="protect-browsers"></a>Protéger les navigateurs
 
@@ -144,14 +145,14 @@ Le tableau ci-dessous présente les réponses et leurs fonctionnalités corrél�
 
 ## <a name="advanced-hunting-for-web-protection"></a>Repérage avancé pour la protection web
 
-Kusto requêtes de repérage avancé peuvent être utilisées pour résumer les blocs de protection web de votre organisation pendant 30 jours maximum. Ces requêtes utilisent les informations répertoriées ci-dessus pour faire la distinction entre les différentes sources de blocs et les résumer de manière conviviale. Par exemple, la requête ci-dessous répertorie tous les blocs WCF provenant de Microsoft Edge.
+Les requêtes Kusto dans la chasse avancée peuvent être utilisées pour résumer les blocs de protection web dans votre organisation pendant 30 jours maximum. Ces requêtes utilisent les informations répertoriées ci-dessus pour faire la distinction entre les différentes sources de blocs et les résumer de manière conviviale. Par exemple, la requête ci-dessous répertorie tous les blocs WCF provenant de Microsoft Edge.
 
 ```kusto
 DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 De même, vous pouvez utiliser la requête ci-dessous pour répertorier tous les blocs WCF provenant de la protection réseau (par exemple, un bloc WCF dans un navigateur tiers). Notez que l’ActionType a été mis à jour et que « Experience » a été remplacé par « ResponseCategory ».
@@ -173,7 +174,7 @@ Si un utilisateur visite une page web qui présente un risque de programmes malv
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="Page bloquée par Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
-S’il est bloqué par WCF ou un indicateur personnalisé, une page de blocs s’affiche dans Microsoft Edge indiquant à l’utilisateur que ce site est bloqué par son organisation.
+S’il est bloqué par WCF ou un indicateur personnalisé, une page de blocs s’affiche dans Microsoft Edge qui indique à l’utilisateur que ce site est bloqué par son organisation.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="Page bloquée par votre organisation" lightbox="../../media/web-protection-indicator-blockpage.png":::

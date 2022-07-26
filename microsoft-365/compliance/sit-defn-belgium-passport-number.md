@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de passeport en Belgique
+title: Définition d’entité du numéro de passeport belge
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro de passeport en Belgique.
+description: Définition d’entité de type d’informations sensibles du numéro de passeport belge.
 ms.openlocfilehash: accf853a7c832ba1a7fb8a3f25da7fa688181a20
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997310"
@@ -34,7 +34,7 @@ deux lettres suivies de six chiffres sans espaces ni délimiteurs
 
 ## <a name="pattern"></a>Modèle
 
-deux lettres et suivies de six chiffres
+deux lettres majuscules suivies de six chiffres
 
 ## <a name="checksum"></a>Somme de contrôle
 
@@ -46,7 +46,7 @@ non applicable
 
 - L’expression régulière `Regex_belgium_eu_passport_number` trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_belgium_eu_passport_number` est trouvé.
-- L’expression `Regex_eu_passport_date2` régulière recherche la date au format MM YY DD ou un mot clé à partir ou `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` trouvé
+- L’expression `Regex_eu_passport_date2` régulière recherche la date au format JJ MM AA ou un mot clé à partir de `Keywords_eu_passport_date` ou de `Keywords_belgium_eu_passport_number` trouvé
 
 Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
@@ -83,15 +83,15 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Passeport #
-- Passeport #
+- #passeport
+- # passeport
 - passportid
-- Passeports
-- passportno
-- passport no
+- passeports
+- N° de passeport
+- N° de passeport
 - numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
@@ -101,7 +101,7 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Carte Passeport
+- Carte de passeport
 - Passeport livre
 - Pass-Nr
 - Passnummer

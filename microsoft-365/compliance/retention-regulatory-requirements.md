@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressources pour vous aider à répondre aux exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des enregistrements.
-ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b3fe0a6c22645f67c99053a45e76e6dc9439e513
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638144"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019986"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Exigences réglementaires en matière de gestion du cycle de vie des données et de gestion des enregistrements
 
@@ -44,11 +44,11 @@ Ce rapport vous aide à comprendre la manière dont les aspects système de la l
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17A-4(f), FINRA 4511(c) et CFTC 1.31(c)-(d)
 
-**Évaluation Cohasset ; règle Microsoft 365 ; règle 17a-4(f) de la SEC ; stockage immuable pour SharePoint, OneDrive, Teams, Exchange et Skype** - [Télécharger l’évaluation](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+**Évaluation Cohasset : Microsoft 365 : règle 17a-4(f) de la SEC – Stockage immuable pour SharePoint, OneDrive, Exchange, Teams et Skype** - [Télécharger l’évaluation](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Charges de travail applicables : SharePoint, OneDrive, Teams, Exchange et Skype Entreprise
+Charges de travail applicables : SharePoint, OneDrive, Teams, Exchange et Yammer
 
-Publié en novembre 2020, ce rapport a été créé en partenariat avec Cohasset Associates, Inc. (Cohasset) pour évaluer les fonctionnalités des services Microsoft 365 pour l’enregistrement, le stockage et la gestion des demandes d’enregistrement électronique, comme spécifié par :  
+Dernière version mise à disposition en juillet 2022, ce rapport a été créé en partenariat avec Cohasset Associates, Inc. (Cohasset) pour évaluer les fonctionnalités des services Microsoft 365 pour l’enregistrement, le stockage et la gestion des conditions requises pour les enregistrements électronique, comme spécifié par :  
 
 - Dans 17 CFR § 240.17a-4(f), la SEC (Securities and Exchange Commission), réglemente les membres, courtiers ou les négociants Exchange.  
 

@@ -1,5 +1,5 @@
 ---
-title: Définition d’entité numéro de passeport en France
+title: Définition d’entité du numéro de passeport français
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de passeport en France.
+description: Définitions d’entité de type d’informations sensibles du numéro de passeport français.
 ms.openlocfilehash: f358edd8955b17e89354af536381327957eb38bc
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997530"
 ---
 # <a name="france-passport-number"></a>Numéro de passeport français
 
-Cette entité est disponible dans le type d’informations sensibles Numéro de passeport de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
+Cette entité est disponible dans le type d’informations sensibles du numéro de passeport de l’UE. Il est également disponible en tant qu’entité de type d’informations sensibles autonome.
 
 ## <a name="format"></a>Format
 
@@ -36,7 +36,7 @@ neuf chiffres et lettres
 
 ## <a name="pattern"></a>Modèle
 
-neuf chiffres et lettres :
+neuf chiffres et lettres :
 
 - deux chiffres
 - deux lettres (non sensibles à la casse)
@@ -52,7 +52,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 
 - La fonction `Func_fr_passport` trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste `Keywords_eu_passport_number`ou `Keywords_france_eu_passport_number` est trouvé.
-- L’expression `Regex_eu_passport_date3` régulière recherche la date au format DD MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
+- L’expression `Regex_eu_passport_date3` régulière recherche la date au format JJ MM AAAA ou un mot clé `Keywords_eu_passport_date` est trouvé
 
 Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
@@ -87,24 +87,24 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- Passeport #
-- Passeport #
-- passportid
-- Passeports
-- passportno
-- passport no
+- #passeport
+- # passeport
+- passportID
+- passeports
+- n° de passeport
+- n° de passeport
 - numéropasseport
 - numéro de passeport
-- passportnumbers
+- numérospasseport
 - numéros de passeport
 
 ### <a name="keywords_france_eu_passport_number"></a>Keywords_france_eu_passport_number
 
 - numéro de passeport
-- passeport n °
-- passeport non
-- passeport #
-- passeport #
+- passeport n°
+- passeport numéro
+- # passeport
+- #passeport
 - passeportnon
 - passeportn °
 - passeport français

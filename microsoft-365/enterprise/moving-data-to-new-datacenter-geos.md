@@ -15,23 +15,23 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles zones géographiques de centre de données Office 365 et comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle zone géographique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c70d59edba9cd35710b315adc8f93d6139fd2595
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f93ba661f723a3f26473a8a08b81d408fd1b99d0
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873575"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020382"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données de base vers de nouvelles zones géographiques de centre de données Microsoft 365
 
-Nous continuons à ouvrir de nouvelles zones géographiques de centre de données pour Microsoft 365 services. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
+Nous continuons à ouvrir de nouvelles zones géographiques de centre de données pour les services Microsoft 365. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
 
 Les données client principales sont un terme qui fait référence à un sous-ensemble de données client, notamment :
 
 - Exchange Online contenu de boîte aux lettres (corps de l’e-mail, entrées de calendrier et contenu des pièces jointes)
-- SharePoint contenu du site en ligne et les fichiers stockés dans ce site
+- Contenu du site SharePoint Online et fichiers stockés dans ce site
 - Fichiers chargés dans OneDrive Entreprise
-- Teams les messages de conversation, y compris les messages privés, les messages de canal et les images utilisés dans les conversations
+- Messages de conversation Teams, y compris les messages privés, les messages de canal et les images utilisés dans les conversations
   
 Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous offrons aux clients existants répertoriés dans le tableau ci-dessous une option permettant de demander une migration anticipée des données client principales de leur organisation au repos vers leur nouvelle zone géographique de centre de données.
   
@@ -51,6 +51,7 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |**Norvège**| Union européenne | Norvège | Avril 2020 |
 |**Brésil**| Amériques | Brésil | Novembre 2020 |
 |**Suède**| Union européenne | Suède | Novembre 2021 |
+|**Qatar**| Union européenne | Qatar | Août 2022 |
 
 À compter du 1er octobre 2020, les clients disposant d’un abonnement Office 365 Éducation inclus dans le locataire ne sont pas éligibles à la migration.
 
@@ -58,7 +59,7 @@ La liste complète de l'ensemble des régions de centre de données, des centres
   
 ## <a name="data-residency-option"></a>Option de résidence des données
 
-Nous fournissons une option de résidence des données aux clients éligibles Microsoft 365 qui sont couverts par les zones géographiques du centre de données répertoriées dans le tableau ci-dessus. Avec cette option, les clients éligibles ayant des exigences de résidence des données peuvent demander la migration des données client principales de leur organisation au repos vers leur nouvelle zone géographique de centre de données.  Microsoft proposera une échéance validée à tous les clients éligibles qui demandent la migration pendant la fenêtre d’inscription.  Consultez la page [Comment demander votre déplacement de données](request-your-data-move.md) pour plus d’informations sur la fenêtre d’inscription ouverte pour la zone géographique de votre centre de données et les étapes à suivre pour vous inscrire au programme.  Les déplacements de données peuvent prendre jusqu'à 24 mois à compter de la fin de la période de demande.
+Nous fournissons une option de résidence des données aux clients Microsoft 365 éligibles qui sont couverts par les zones géographiques du centre de données répertoriées dans le tableau ci-dessus. Avec cette option, les clients éligibles ayant des exigences de résidence des données peuvent demander la migration des données client principales de leur organisation au repos vers leur nouvelle zone géographique de centre de données.  Microsoft proposera une échéance validée à tous les clients éligibles qui demandent la migration pendant la fenêtre d’inscription.  Consultez la page [Comment demander votre déplacement de données](request-your-data-move.md) pour plus d’informations sur la fenêtre d’inscription ouverte pour la zone géographique de votre centre de données et les étapes à suivre pour vous inscrire au programme.  Les déplacements de données peuvent prendre jusqu'à 24 mois à compter de la fin de la période de demande.
 
 Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données.
 
@@ -68,7 +69,7 @@ Les déplacements de données sont des opérations de service principales qui on
 
 Les déplacements de données vers la nouvelle zone géographique du centre de données sont effectués sans coût supplémentaire pour le client.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
 
@@ -78,4 +79,4 @@ Les déplacements de données vers la nouvelle zone géographique du centre de d
   
 [Services Azure par région](https://azure.microsoft.com/regions/)
 
-[Teams expérience dans une location Microsoft 365 multigéographique](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Expérience Teams dans une location multigéographique Microsoft 365](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

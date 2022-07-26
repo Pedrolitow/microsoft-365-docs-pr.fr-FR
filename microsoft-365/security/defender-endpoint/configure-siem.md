@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664499"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020558"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Intégrer vos outils SIEM à Microsoft Defender pour point de terminaison
 
@@ -29,7 +29,7 @@ ms.locfileid: "64664499"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 ## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>Ingérer des alertes à l’aide des outils de gestion des informations et des événements de sécurité (SIEM)
@@ -38,7 +38,7 @@ ms.locfileid: "64664499"
 >
 > [Microsoft Defender pour point de terminaison alerte](alerts.md) est composée d’un ou de plusieurs événements suspects ou malveillants qui se sont produits sur l’appareil et de leurs détails connexes. L’API d’alerte Microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées pour chaque alerte. Pour plus d’informations, consultez [Les méthodes d’alerte, les propriétés et](alerts.md) [les alertes de liste](get-alerts.md).
 
-Microsoft Defender pour point de terminaison prend en charge les outils SIEM (Security Information and Event Management) qui ingèrent des informations à partir de votre locataire d’entreprise dans Azure Active Directory (AAD) à l’aide du protocole d’authentification OAuth 2.0 pour un AAD  application représentant la solution ou le connecteur SIEM spécifique installé dans votre environnement.
+Microsoft Defender pour point de terminaison prend en charge les outils SIEM (Security Information and Event Management) qui ingèrent des informations à partir de votre locataire d’entreprise dans Azure Active Directory (AAD) à l’aide du protocole d’authentification OAuth 2.0 pour une application AAD inscrite représentant la solution ou le connecteur SIEM spécifique installé dans votre environnement.
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
@@ -74,6 +74,15 @@ Utilisation du module complémentaire Microsoft 365 Defender pour Splunk qui pre
 
 Pour plus d’informations sur le module complémentaire Microsoft 365 Defender pour Splunk, consultez [splunkbase](https://splunkbase.splunk.com/app/4959/).
 
+### <a name="datadog"></a>Datadog
+
+Microsoft 365 Defender pour l’intégration de point de terminaison à Datadog prend en charge :
+
+- Ingestion d’alertes et d’incidents Microsoft Defender pour point de terminaison
+- Tableaux de bord qui permettent de surveiller les métriques entre les points de terminaison, les menaces et les vulnérabilités, ainsi que les logiciels
+
+Pour plus d’informations sur l’intégration, consultez [La Place de marché Datadog](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
+
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
 Le nouveau SmartConnector pour Microsoft 365 Defender ingère les incidents qui contiennent des alertes de tous les produits Microsoft 365 Defender, y compris à partir de Microsoft Defender pour point de terminaison, dans ArcSight et les mappe à son Infrastructure d’événements commun (CEF).
@@ -91,6 +100,6 @@ Les nouveaux clients ne sont plus intégrés à l’aide du module DSM (Device S
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Ingestion d’événements Microsoft Defender pour point de terminaison à partir de l’API de streaming d’événements Microsoft 365 Defender
 
-Microsoft 365 Defender données d’événement de streaming incluent des alertes et d’autres événements provenant de Microsoft Defender pour point de terminaison et d’autres produits Microsoft Defender. Ces événements peuvent être diffusés en continu vers un compte stockage Azure ou vers Azure Event Hubs. Le modèle d’intégration via event hubs est actuellement pris en charge par Splunk et IBM QRadar.
+Microsoft 365 Defender données d’événement de streaming incluent des alertes et d’autres événements provenant de Microsoft Defender pour point de terminaison et d’autres produits Microsoft Defender. Ces événements peuvent être diffusés en continu vers un compte de stockage Azure ou vers Azure Event Hubs. Le modèle d’intégration via event hubs est actuellement pris en charge par Splunk et IBM QRadar.
 
 Pour plus d’informations, consultez [Microsoft 365 Defender intégration SIEM](../defender/configure-siem-defender.md).

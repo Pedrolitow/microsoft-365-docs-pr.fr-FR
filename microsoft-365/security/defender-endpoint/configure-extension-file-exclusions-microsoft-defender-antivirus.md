@@ -7,19 +7,20 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720476"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020420"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -30,15 +31,16 @@ ms.locfileid: "66720476"
 - Antivirus Microsoft Defender
 
 **Plateformes**
+
 - Windows
 
-Vous pouvez définir des exclusions pour l’antivirus Microsoft Defender qui s’appliquent aux [analyses planifiées](schedule-antivirus-scans.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection et à la surveillance en temps réel en permanence](configure-real-time-protection-microsoft-defender-antivirus.md). **En règle générale, vous n’avez pas besoin d’appliquer des exclusions**. Si vous avez besoin d’appliquer des exclusions, vous pouvez choisir parmi plusieurs types différents :
+Vous pouvez définir des exclusions pour l’antivirus Microsoft Defender qui s’appliquent aux [analyses planifiées](schedule-antivirus-scans.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection et à la surveillance en temps réel en permanence](configure-real-time-protection-microsoft-defender-antivirus.md). **En règle générale, vous n’avez pas besoin d’appliquer des exclusions**. Si vous devez appliquer des exclusions, vous pouvez choisir parmi les éléments suivants :
 
 - Exclusions basées sur les extensions de fichier et les emplacements des dossiers (décrits dans cet article)
 - [Exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Les exclusions de l’Antivirus Microsoft Defender ne s’appliquent pas à d’autres fonctionnalités Microsoft Defender pour point de terminaison, telles que les [règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction.md) et l’accès [contrôlé aux dossiers](controlled-folders.md). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes de détection et de réponse de point de terminaison (EDR) et d’autres détections.
+> Les exclusions de l’Antivirus Microsoft Defender ne s’appliquent pas à d’autres fonctionnalités Microsoft Defender pour point de terminaison, telles que les [règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction.md) et l’accès [contrôlé aux dossiers](controlled-folders.md). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes de détection de point de terminaison et de réponse (EDR) et d’autres détections.
 > Pour exclure les fichiers de manière générale, ajoutez-les aux [indicateurs personnalisés](manage-indicators.md) Microsoft Defender pour point de terminaison.
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -47,7 +49,7 @@ Consultez [Recommandations pour définir des exclusions](configure-exclusions-mi
 
 ## <a name="exclusion-lists"></a>Listes d’exclusions
 
-Pour exclure certains fichiers des analyses de l’Antivirus Microsoft Defender, vous modifiez vos listes d’exclusion. L’Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d’entreprise, la gestion des bases de données et d’autres scénarios et situations d’entreprise.
+Pour exclure certains fichiers des analyses de l’Antivirus Microsoft Defender, modifiez vos listes d’exclusion. L’Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques, tels que ceux utilisés dans la gestion d’entreprise, la gestion des bases de données et d’autres scénarios et situations d’entreprise.
 
 > [!NOTE]
 > Les exclusions s’appliquent également aux [détections d’applications potentiellement indésirables (PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) ).
@@ -73,9 +75,9 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 - N’excluez pas les lecteurs réseau mappés. Spécifiez le chemin d’accès réseau réel.
 
-- Les dossiers qui sont des points d’analyse créés après le démarrage du service Antivirus Microsoft Defender et qui ont été ajoutés à la liste d’exclusion ne seront pas inclus. Redémarrez le service (en redémarrant Windows) pour les nouveaux points d’analyse à reconnaître comme cible d’exclusion valide.
+- Les dossiers qui sont des points d’analyse sont créés après le démarrage du service Antivirus Microsoft Defender, et ceux qui ont été ajoutés à la liste d’exclusion ne seront pas inclus. Redémarrez le service en redémarrant Windows pour les nouveaux points d’analyse à reconnaître comme cible d’exclusion valide.
 
-- Les exclusions s’appliquent aux [analyses planifiées](scheduled-catch-up-scans-microsoft-defender-antivirus.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md), mais pas à Defender pour point de terminaison. Pour définir des exclusions entre Defender pour point de terminaison, utilisez [des indicateurs personnalisés](manage-indicators.md).
+- Les exclusions s’appliquent aux [analyses planifiées](scheduled-catch-up-scans-microsoft-defender-antivirus.md), aux [analyses à la demande](run-scan-microsoft-defender-antivirus.md) et à la [protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md), mais pas à toutes les fonctionnalités de Defender pour point de terminaison. Pour définir des exclusions entre Defender pour point de terminaison, utilisez [des indicateurs personnalisés](manage-indicators.md).
 
 - Par défaut, les modifications locales apportées aux listes (par les utilisateurs disposant de privilèges d’administrateur, y compris les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par stratégie de groupe, Configuration Manager ou Intune. Les listes stratégie de groupe sont prioritaires en cas de conflits. En outre, les modifications apportées à la liste d’exclusion avec stratégie de groupe sont visibles dans [l’application Sécurité Windows](microsoft-defender-security-center-antivirus.md).
 
@@ -103,7 +105,7 @@ Découvrez [comment créer et déployer des stratégies anti-programme malveilla
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. Dans l’**Éditeur de gestion des stratégies de groupe** accédez à **Configuration de l’ordinateur** et sélectionnez **Modèles d’administration**.
+2. Dans **l’éditeur de gestion stratégie de groupe**, accédez à **la configuration de l’ordinateur**, puis sélectionnez **Modèles d’administration**.
 
 3. Développez l’arborescence vers **les composants** \> Windows **Antivirus Windows Defender** \> **exclusions**.
 
@@ -202,7 +204,7 @@ Le tableau suivant décrit comment utiliser les caractères génériques et four
 
 |Caractère générique|Exemples|
 |---|---|
-|`*` (astérisque) <p> Dans **les inclusions de nom de fichier et d’extension de fichier**, l’astérisque remplace n’importe quel nombre de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossier,** l’astérisque remplace un seul dossier. Utilisez plusieurs `*` barres obliques avec des dossiers `\` pour indiquer plusieurs dossiers imbriqués. Après avoir mis en correspondance le nombre de dossiers génériques et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` Comprend `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier dans `C:\somepath\Archives\Data` et ses sous-dossiers, ainsi que `C:\somepath\Authorized\Data` ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut tout fichier dans `C:\Serv\Primary\Denied\Backup` et ses sous-dossiers et `C:\Serv\Secondary\Allowed\Backup` ses sous-dossiers|
+|`*` (astérisque) <p> Dans **les inclusions de nom de fichier et d’extension de fichier**, l’astérisque remplace n’importe quel nombre de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossier,** l’astérisque remplace un seul dossier. Utilisez plusieurs `*` barres obliques avec des dossiers `\` pour indiquer plusieurs dossiers imbriqués. Après avoir mis en correspondance le nombre de dossiers génériques et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` Comprend `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier dans `C:\somepath\Archives\Data` et ses sous-dossiers, ainsi que `C:\somepath\Authorized\Data` ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier dans `C:\Serv\Primary\Denied\Backup` et ses sous-dossiers, ainsi que `C:\Serv\Secondary\Allowed\Backup` ses sous-dossiers|
 |`?` (Point d’interrogation)  <p> Dans **les inclusions de nom de fichier et d’extension de fichier**, le point d’interrogation remplace un caractère unique et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossier**, le point d’interrogation remplace un caractère unique dans un nom de dossier. Après avoir mis en correspondance le nombre de dossiers génériques et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` Comprend `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut n’importe quel fichier dans `C:\somepath\P\Data` et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclurait n’importe quel fichier dans `C:\somepath\test01\Data` et ses sous-dossiers|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée.|`%ALLUSERSPROFILE%\CustomLogFiles` inclurait `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
@@ -219,7 +221,7 @@ Le tableau suivant répertorie et décrit les variables d’environnement de com
 
 |Cette variable d’environnement système...|Redirige vers ce|
 |---|---|
-|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%`|`C:\Windows\system32\config\systemprofile\Appdata\Roaming`|
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
@@ -275,10 +277,10 @@ Le tableau suivant répertorie et décrit les variables d’environnement de com
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Users\UserName`|
-|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Windows\system32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\system32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\system32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\system32\config\systemprofile\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>Examiner la liste des exclusions
 
@@ -291,7 +293,7 @@ Vous pouvez récupérer les éléments de la liste d’exclusion à l’aide de 
 - [Application Sécurité Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> Les modifications apportées à la liste d’exclusion avec stratégie de groupe **s’affichent** dans les listes de [l’application Sécurité Windows](microsoft-defender-security-center-antivirus.md).
+> Les modifications apportées à la liste d’exclusion avec stratégie de groupe **s’affichent** dans les listes de [Sécurité Windows’application](microsoft-defender-security-center-antivirus.md).
 > Les modifications apportées à l’application Sécurité Windows **ne s’affichent pas** dans les listes stratégie de groupe.
 
 Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières :

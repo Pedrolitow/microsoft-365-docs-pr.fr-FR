@@ -19,26 +19,29 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Utilisez les conseils du service d’utilisation des boîtes aux lettres pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîtes aux lettres.
-ms.openlocfilehash: 22583cbc6c6495d07caa3f920eeacb6bcd1d7536
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 58cbd5880b32b5297f0faae26a5a3369a2e6b66c
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810547"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019964"
 ---
 # <a name="service-advisories-for-mailbox-utilization-in-exchange-online-monitoring"></a>Conseils de service pour l’utilisation des boîtes aux lettres dans Exchange Online surveillance
 
-Nous avons publié un nouveau Exchange Online avis de service qui vous informe des boîtes aux lettres en attente qui risquent d’atteindre ou de dépasser leur quota. Ces avis de service fournissent une visibilité sur le nombre de boîtes aux lettres de votre organisation qui peuvent nécessiter une intervention de l’administrateur.
+Nous avons publié un nouvel avis de service Exchange Online qui vous informe des boîtes aux lettres en attente qui risquent d’atteindre ou de dépasser leur quota. Ces avis de service fournissent une visibilité sur le nombre de boîtes aux lettres de votre organisation qui peuvent nécessiter une intervention de l’administrateur.
 
 Ces avis de service sont affichés dans le Centre d'administration Microsoft 365. Pour afficher ces avis de service, accédez à **Health** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**État des services**</a> >  **Exchange Online**, puis cliquez sur l’onglet **Problèmes actifs**. Voici un exemple d’avis de service d’utilisation de boîte aux lettres.
 
 :::image type="content" alt-text="Alerte du service d’utilisation des boîtes aux lettres." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-Pour afficher la liste des boîtes aux lettres qui approchent de leur quota de stockage (appelé *rapport d’utilisation de la boîte aux lettres*), cliquez sur le lien mis en surbrillance dans la capture d’écran suivante. Ce lien s’affiche dans l’avis de service.
+Pour afficher la liste des boîtes aux lettres qui approchent de leur quota de stockage, sélectionnez le lien mis en surbrillance dans la capture d’écran suivante pour accéder au rapport d’utilisation de votre boîte aux lettres. Ce lien s’affiche dans l’avis de service.
 
 :::image type="content" alt-text="Lien vers le rapport d’utilisation de la boîte aux lettres." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Sinon, l’URL directe vers le rapport d’utilisation de la boîte aux lettres est <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
+
+> [!NOTE]
+> Les informations du rapport d’utilisation de la boîte aux lettres peuvent être 24 heures de retard sur l’alerte d’avis du service d’utilisation de votre boîte aux lettres.
 
 ## <a name="what-do-these-service-advisories-indicate"></a>Que indiquent ces avis de service ?
 
@@ -68,7 +71,7 @@ Le tableau suivant répertorie le nombre de boîtes aux lettres en attente qui a
 
 |# Mailboxes ProhibitSendReceiveQuota (Avertissement) |# Mailboxes ProhibitSendReceiveQuota (Critique) |# Mailboxes RecoverableItemsQuota (Avertissement) |# Mailboxes RecoverableItemsQuota (Critique)** |
 |:--------------|:--------------|:------------------|:--------------- |
-| 1             | 1             | 6                  | 0               |
+| 1             | 1             | 6                 | 0               |
 ||||
 
 L’action que les administrateurs peuvent effectuer pour ces boîtes aux lettres consiste à augmenter le quota pour le dossier Éléments récupérables. Pour plus d’informations, consultez [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md).
@@ -101,7 +104,7 @@ La liste suivante décrit chaque colonne du tableau précédent.
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   La valeur de la propriété **Name** est le nom de la stratégie de rétention qui s’affiche sur la page **Stratégies de rétention** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d’administration Exchange</a>.
+   La valeur de la propriété **Name** est le nom de la stratégie de rétention qui s’affiche sur la page **Stratégies de rétention** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
 - **MailboxType** : spécifie le type de boîte aux lettres à laquelle la stratégie est affectée. Les valeurs incluent *Primary* (boîtes aux lettres sans archive) ou *PrimaryWithArchive* (boîtes aux lettres avec une archive). Si la valeur de cette colonne est *Primary*, vous devez activer l’archive pour les boîtes aux lettres (la colonne **Boîte aux** lettres indique le nombre de ces boîtes aux lettres) qui sont affectées à la stratégie. Sinon, une stratégie d’archive ou une balise d’archive personnelle ne fonctionnera pas, car il n’y a pas d’archive vers qui déplacer des éléments.
 
@@ -117,8 +120,8 @@ La liste suivante décrit chaque colonne du tableau précédent.
 
 Si vous ne prenez pas d’action pour résoudre les problèmes de quota, vous pouvez vous attendre à voir ce type d’avis de service tous les sept jours. Les avis de service suivants peuvent contenir des nombres de boîtes aux lettres plus élevés pour les autres boîtes aux lettres qui approchent de leur quota. Si vous prenez des mesures pour résoudre les problèmes de quota, cet avis de service se produit uniquement lorsqu’une autre boîte aux lettres avec des problèmes de quota est identifiée.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Plus d'informations
 
-- Pour plus d’informations sur la résolution et la résolution des problèmes de boîte aux lettres d’archivage, consultez [Microsoft Purview résolution des problèmes](/office365/troubleshoot/microsoft-365-compliance-welcome).
+- Pour plus d’informations sur la résolution et la résolution des problèmes de boîte aux lettres d’archivage, consultez [la résolution des problèmes de Microsoft Purview](/office365/troubleshoot/microsoft-365-compliance-welcome).
 
 - Pour obtenir des conseils sur l’identification des conservations placées sur une boîte aux lettres, consultez [Comment identifier le type de conservation placé sur une boîte aux lettres](../compliance/identify-a-hold-on-an-exchange-online-mailbox.md).
