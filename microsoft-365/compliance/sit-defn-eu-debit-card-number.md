@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de carte de débit de l’UE
+title: Définition de l’entité du numéro de carte de débit de l’UE
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro de carte de débit de l’UE.
+description: Définition d’entité de type d’entité de type d’information sensible du numéro de carte de débit de l’UE.
 ms.openlocfilehash: 53e7ea3475786032d2871092e3c7e6c39697958c
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997750"
@@ -50,7 +50,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
     - Un mot clé figurant dans la liste `Keyword_card_terms_dict` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_card_security_terms_dict` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_card_expiration_terms_dict` est trouvé.
-    - La fonction `Func_expiration_date` trouve une date au format de date approprié.
+    - La fonction `Func_expiration_date` trouve une date au format correct.
 - La somme de contrôle est correcte.
 
 ```xml
@@ -77,7 +77,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - numéro de carte
 - n° carte
 - numéro de sécurité
-- Cc #
+- # CC
 
 ### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
@@ -87,15 +87,15 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - american express
 - americanexpress
 - americano espresso
-- Amex
+- amex
 - carte de retrait
 - cartes de retrait
 - atm kaart
 - atmcard
-- cartes d’atmcard
+- cartes de retrait
 - atmkaart
 - atmkaarten
-- Bancontact
+- bancontact
 - carte bancaire
 - bankkaart
 - titulaire de la carte
@@ -105,9 +105,9 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - numéros de carte
 - type de carte
 - cardano numerico
-- Détenteur
-- Titulaires
-- cardnumber
+- cardholder
+- titulaires de la carte
+- numéro de carte
 - cardnumbers
 - carta bianca
 - Carta credito
@@ -131,33 +131,33 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - ccn
 - carte de vérification
 - cartes de vérification
-- coche
-- cartes de contrôle
+- checkcard
+- cartes de vérification
 - chequekaart
-- Cirrus
+- cirrus
 - cirrus-edc-maestro
 - controlekaart
 - controlekaarten
 - carte de crédit
 - cartes de crédit
-- Creditcard
+- creditcard
 - cartes de crédit
 - debetkaart
 - debetkaarten
 - carte de débit
 - cartes de débit
 - debitcard
-- cartes de débit
+- debitcards
 - debito automatico
 - diners club
-- Dinersclub
-- Découvrir
+- dinersclub
+- discover
 - discover card
 - discover cards
 - discovercard
 - discovercards
 - débito automático
-- Edc
+- edc
 - eigentümername
 - carte de crédit européenne
 - hoofdkaart
@@ -165,14 +165,14 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - in viaggio
 - japanese card bureau
 - japanse kaartdienst
-- Jcb
-- Kaart
+- jcb
+- kaart
 - kaart num
 - kaartaantal
 - kaartaantallen
 - kaarthouder
 - kaarthouders
-- Karte
+- karte
 - karteninhaber
 - karteninhabers
 - kartennr
@@ -183,15 +183,15 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - kreditkarteninstitut
 - kreditkartennummer
 - kreditkartentyp
-- Maestro
+- maestro
 - master card
 - master cards
-- Mastercard
-- Mastercard
-- Mc
+- mastercard
+- mastercards
+- mc
 - mister cash
 - n carta
-- Carta
+- carta
 - no de tarjeta
 - no do cartao
 - no do cartão
@@ -199,7 +199,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - N° do cartao
 - N° do cartão
 - nr carta
-- Nr. Carta
+- nr. carta
 - numeri di scheda
 - numero carta
 - numero de cartao
@@ -236,10 +236,10 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - schede matrici
 - scoprono la scheda
 - scoprono le schede
-- Solo
+- solo
 - supporti di scheda
 - supporto di scheda
-- Interrupteur
+- switch
 - tarjeta atm
 - tarjeta credito
 - tarjeta de atm
@@ -250,14 +250,14 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - tarjetahabiente
 - tipo della scheda
 - ufficio giapponese della
-- Scheda
+- scheda
 - v pay
 - v-pay
-- Visa
+- visa
 - visa plus
 - visa electron
-- Visto
-- Visum
+- visto
+- visum
 - vpay
 
 ### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
@@ -270,29 +270,29 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - cod seguranca
 - cod segurança
 - cod sicurezza
-- Cod. Seg
-- Cod. seguranca
-- Cod. Segurança
-- Cod. Sicurezza
+- cod. seg
+- cod. seguranca
+- cod. segurança
+- cod. sicurezza
 - codice di sicurezza
 - codice di verifica
-- Codigo
+- codigo
 - codigo de seguranca
 - codigo de segurança
 - crittogramma
-- Cryptogramme
+- cryptogramme
 - cryptogramme
 - cv2
 - cvc
-- Cvc2
-- cvn
-- Cvv
-- Cvv2
+- cvc2
+- nvc
+- cvv
+- cvv2
 - cód seguranca
 - cód segurança
-- cód. seguranca
-- cód. Segurança
-- Código
+- cód seguranca
+- cód segurança
+- código
 - código de seguranca
 - código de segurança
 - de kaart controle
@@ -309,7 +309,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - numero de verificacao
 - numero dell’edizione
 - numero di identificazione della
-- Scheda
+- scheda
 - numero di sicurezza
 - numero van veiligheid
 - numéro de sécurité
@@ -347,14 +347,14 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - datum afloop
 - datum van exp
 - de afloop
-- Espira
-- Espira
+- espira
+- espira
 - date d’exp
 - exp datum
 - expiration
-- Expirer
-- Expire
-- Expiration
+- expire
+- expire
+- expiration
 - fecha de expiracion
 - fecha de venc
 - gultig bis
@@ -366,7 +366,7 @@ Une stratégie DLP a une confiance élevée ayant détecté ce type d’informat
 - valable
 - validade
 - valido hasta
-- Valor
+- valor
 - venc
 - vencimento
 - vencimiento

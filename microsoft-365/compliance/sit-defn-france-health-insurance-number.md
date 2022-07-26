@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro d’assurance maladie en France
+title: Définition de l’entité du numéro d’assurance maladie en France
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,20 +18,20 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro d’assurance maladie en France.
+description: Définitions de l’entité du type d’informations sensibles du numéro d’identifiant fiscal français.
 ms.openlocfilehash: c62a50553c985bbe6a4e4f8c640772902f7b4bd0
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996419"
 ---
 # <a name="france-health-insurance-number"></a>Numéro d’assurance maladie en France
 
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
+Ce type d’informations sensibles est uniquement disponible pour une utilisation dans les éléments suivants :
 
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
+- Stratégies de protection contre la perte de données
+- Stratégies de conformité des communications
 - gestion du cycle de vie des données
 - gestion des enregistrements
 - Microsoft Defender for Cloud Apps
@@ -58,8 +58,8 @@ Non
 
 Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- le regex `Regex_France_Health_Insurance_Number` recherche le contenu qui correspond au modèle.
-- un mot clé à partir de `Keyword_France_Health_Insurance_Number` est trouvé.
+- le regex `Regex_France_Health_Insurance_Number` trouve un contenu qui correspond au modèle.
+- un mot clé figurant dans la liste `Keyword_France_Health_Insurance_Number` est trouvé.
 
 ```xml
       <!-- France Health Insurance Number -->

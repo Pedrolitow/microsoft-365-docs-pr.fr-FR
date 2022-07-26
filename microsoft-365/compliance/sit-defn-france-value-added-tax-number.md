@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de taxe sur la valeur ajoutée en France
+title: Définition d’entité du numéro de taxe sur la valeur ajoutée en France
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de taxe à valeur ajoutée en France.
+description: Définition d’entité du type d’informations sensibles du numéro de taxe sur la valeur ajoutée en France.
 ms.openlocfilehash: 782030e563b59540b721ecfd40ee7470a2aaaa87
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996640"
@@ -44,14 +44,14 @@ Modèle alphanumérique de 13 caractères
 
 Modèle alphanumérique de 13 caractères :
 
-- deux lettres - FR (ne respectant pas la casse)
+- deux lettres : FR (ne respectant pas la casse)
 - un espace ou un trait d’union facultatif
 - deux lettres ou chiffres
-- un espace, un point, un trait d’union ou une virgule facultatif
+- un espace, un point, un trait d’union ou une virgule facultative
 - trois chiffres
-- un espace, un point, un trait d’union ou une virgule facultatif
+- un espace, un point, un trait d’union ou une virgule facultative
 - trois chiffres
-- un espace, un point, un trait d’union ou une virgule facultatif
+- un espace, un point, un trait d’union ou une virgule facultative
 - trois chiffres
 
 ## <a name="checksum"></a>Somme de contrôle
@@ -86,10 +86,10 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 ### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
 - numéro de tva
-- vat no
-- Tva #
+- nº de TVA
+- nº de TVA
 - taxe sur la valeur ajoutée
-- siren identification no numéro d’identification taxe sur valeur ajoutée
+- identification siren aucun numéro d’identification taxe sur valeur ajoutée
 - taxe valeur ajoutée
 - taxe sur la valeur ajoutée
 - n° tva

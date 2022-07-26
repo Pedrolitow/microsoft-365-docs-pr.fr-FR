@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de service de santé du Canada
+title: Définition d’entité du numéro d’identification médicale personnel du Canada (PHIN)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro de service de santé du Canada.
+description: Définition d’entité du type d’informations sensibles du numéro d’identification médicale du Canada.
 ms.openlocfilehash: ea98e3861b1969506ecbd4f35f23d72b8f92a295
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997694"
@@ -69,6 +69,6 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - services spécialisés
 - accident automobile
 - hôpital pour malades
-- Psychiatre
+- psychiatrist
 - indemnisation des salariés
-- Handicap
+- handicap

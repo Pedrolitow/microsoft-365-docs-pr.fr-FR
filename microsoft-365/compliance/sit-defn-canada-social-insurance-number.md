@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro d’assurance sociale du Canada
+title: Définition d’entité du numéro d’assurance sociale du Canada
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro d’assurance sociale du Canada.
+description: Définitions d’entité de type d’informations sensibles du numéro d’assurance sociale du Canada.
 ms.openlocfilehash: 9af5cc026da5ac6bd414ebd80ded934efb90effb
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996710"
@@ -30,11 +30,11 @@ ms.locfileid: "66996710"
 
 ## <a name="format"></a>Format
 
-neuf chiffres avec des traits d’union ou des espaces facultatifs
+Neuf chiffres avec éventuellement des traits d’union ou des espaces
 
 ## <a name="pattern"></a>Modèle
 
-Formaté:
+Mis en forme :
 
 - trois chiffres
 - un trait d’union ou un espace
@@ -53,10 +53,10 @@ Oui
 Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction Func_canadian_sin trouve un contenu qui correspond au modèle.
-- Au moins deux des modèles suivants :
+- Au moins deux des modèles suivants :
     - Un mot clé figurant dans la liste `Keyword_sin` est trouvé.
     - Un mot clé figurant dans la liste `Keyword_sin_collaborative` est trouvé.
-    - La fonction `Func_eu_date` trouve une date au format de date approprié.
+    - La fonction `Func_eu_date` trouve une date au format correct.
 - La somme de contrôle est correcte.
 
 Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
@@ -90,14 +90,14 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - assoc
 - assurance sociale
 - numéro d’assurance sociale
-- Péchés
+- sins
 - nss
 - ssns
 - sécurité sociale
 - numéro d’assurance sociale
 - numéro d’identification nationale
 - id national
-- Péché #
+- sin#
 - ass soc
 - ass sociale
 
