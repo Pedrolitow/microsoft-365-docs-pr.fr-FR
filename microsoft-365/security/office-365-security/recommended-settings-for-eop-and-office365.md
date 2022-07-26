@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943864"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004364"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -242,7 +242,7 @@ Dans PowerShell, vous utilisez l’applet de commande [Set-AtpPolicyForO365](/po
 |Nom de la fonctionnalité de sécurité|Par défaut|Protection intégrée|Commentaire|
 |---|:---:|:---:|---|
 |**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** <br><br> _EnableATPForSPOTeamsODB_|Désactivé <br><br> `$false`|Activé <br><br> `$true`|Pour empêcher les utilisateurs de télécharger des fichiers malveillants, consultez [Utiliser SharePoint Online PowerShell pour empêcher les utilisateurs de télécharger des fichiers malveillants](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**Activer les documents sécurisés pour les clients Office** <br><br> _EnableSafeDocs_|Désactivé <br><br> `$false`|Activé <br><br> `$true`|Cette fonctionnalité est disponible et significative uniquement avec des licences qui ne sont pas incluses dans Defender pour Office 365 (par exemple, Microsoft 365 E5 ou Microsoft 365 E5 Sécurité). Pour plus d’informations, consultez [Documents sécurisés dans Microsoft 365 E5](safe-docs.md).|
+|**Activer les documents sécurisés pour les clients Office** <br><br> _EnableSafeDocs_|Désactivé <br><br> `$false`|Activé <br><br> `$true`|Cette fonctionnalité est disponible et significative uniquement avec des licences qui ne sont pas incluses dans Defender pour Office 365 (par exemple, Microsoft 365 A5 ou Microsoft 365 E5 Sécurité). Pour plus d’informations, consultez [Documents sécurisés dans Microsoft 365 A5 ou E5 Sécurité](safe-docs.md).|
 |**Autoriser les utilisateurs à cliquer via la vue protégée même si des documents sécurisés ont identifié le fichier comme malveillant** <br><br> _AllowSafeDocsOpen_|Désactivé <br><br> `$false`|Désactivé <br><br> `$false`|Ce paramètre est lié aux documents sécurisés.|
 
 #### <a name="safe-attachments-policy-settings"></a>Paramètres de stratégie pièces jointes fiables

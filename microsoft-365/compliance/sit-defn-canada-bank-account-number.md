@@ -1,5 +1,5 @@
 ---
-title: Définition de l’entité numéro de compte bancaire du Canada
+title: Définition d’entité de numéro de compte bancaire au Canada
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Définition d’entité de type d’entité de type d’information sensible de numéro de compte bancaire du Canada.
+description: Définition d’entité de type d’information sensible du numéro de compte bancaire du Canada.
 ms.openlocfilehash: c7008b17ff532a55dfefc079a07fc8e95f789b04
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996670"
