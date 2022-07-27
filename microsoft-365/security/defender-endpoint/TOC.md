@@ -16,6 +16,7 @@
 #### [Maintenance et opérations](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis](gov.md)
 ### [Microsoft Defender pour point de terminaison sur les plateformes non Windows](non-windows.md)
+### [Compatibilité des solutions antivirus avec Defender pour point de terminaison](defender-compatibility.md)
 
 
 ## [Évaluer les fonctionnalités](evaluation-lab.md)
@@ -203,6 +204,7 @@
 
 #### [Autorisations]()
 ##### [Utiliser des autorisations de base pour accéder au portail](basic-permissions.md)
+##### [Attribuer l’accès utilisateur au centre de sécurité Microsoft Defender](assign-portal-access.md).
 ##### [Gérer l’accès au portail à l’aide de RBAC](rbac.md)
 ###### [Créer et gérer des rôles](user-roles.md)
 ###### [Créer et gérer des groupes d’appareils](machine-groups.md)
@@ -256,8 +258,9 @@
 ###### [Activer des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Utiliser des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Référence des règles de réduction de la surface d’attaque (ASR)](attack-surface-reduction-rules-reference.md)
+##### [Résoudre les problèmes liés aux règles de réduction de la surface d’attaque (ASR)](troubleshoot-asr-rules.md)
 ##### [Activer les méthodes de configuration alternatives des règles ASR](enable-attack-surface-reduction.md)
-##### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
+#### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
 #### [Accès contrôlé aux dossiers]()
 ##### [Protéger les dossiers](controlled-folders.md)
 ##### [Évaluer l’accès contrôlé aux dossiers](evaluate-controlled-folder-access.md)
@@ -292,6 +295,7 @@
 ### Protection de nouvelle génération
 #### [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
 ##### [Vue d’ensemble de l’antivirus Microsoft Defender](microsoft-defender-antivirus-windows.md)
+##### [Antivirus Microsoft Defender dans Windows](microsoft-defender-antivirus-windows.md)
 ##### [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour point de terminaison](why-use-microsoft-defender-antivirus.md)
 ##### [Mieux ensemble : Antivirus Microsoft Defender et Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Évaluer l’antivirus Microsoft Defender](evaluate-microsoft-defender-antivirus.md)
@@ -302,6 +306,7 @@
 ##### [Spécifier le niveau de protection cloud](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ##### [Protection cloud et soumission d’échantillons](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)
+#### [Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau](specify-additional-definitions-network-traffic-inspection-mdav.md)
 #### [Protéger les paramètres de sécurité avec la protection contre la falsifiation](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [ Activer le bloquage à première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 #### [Configurer le délai de blocage du cloud](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
@@ -335,6 +340,7 @@
 ##### [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 ##### [Spécifier si les utilisateurs peuvent modifier localement les paramètres de stratégie Microsoft Defender Antivirus](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 ##### [Spécifier si les utilisateurs peuvent voir ou interagir avec l’ interface utilisateur Microsoft Defender Antivirus](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+##### [Activer la mise hors service des définitions](turn-on-definition-retirement.md)
 
 #### [Déployer et signaler sur l’antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Déployer et activer l’antivirus Microsoft Defender](deploy-microsoft-defender-antivirus.md)
@@ -362,6 +368,8 @@
 ##### [Intégrité de l’appareil et rapports sur la conformité](machine-reports.md)
 ##### [Résoudre les problèmes de performances liés à la protection en temps réel](troubleshoot-performance-issues.md) 
 ##### [Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour](troubleshoot-reporting.md)
+##### [Collecter les données de diagnostic de Antivirus Microsoft Defender](collect-diagnostic-data.md)
+##### [Collecter des données de diagnostic pour une mise à jour de la conformité de l’antivirus Microsoft Defender](collect-diagnostic-data-update-compliance.md)
 ##### [Ajuster la performance de l’Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
 
 #### Résolution des problèmes de l’antivirus Microsoft Defender
@@ -454,12 +462,14 @@
 #### [Vue d’ensemble d’ERA](automated-investigations.md)
 #### [Niveaux d'automatisation dans ERA](automation-levels.md)
 #### [Configurer les fonctionnalités ERA](configure-automated-investigations-remediation.md)
+#### [Consulter les détails et les résultats d'un examen automatisé](autoir-investigation-results.md)
 
 ### [Spécialistes des menaces Microsoft]()
 #### [Vue d’ensemble des spécialistes des menaces Microsoft](microsoft-threat-experts.md)
 #### [Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft](configure-microsoft-threat-experts.md)
 
-
+### [Protection de nouvelle génération]()
+#### [Exécuter et personnaliser des analyses planifiées et à la demande](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## Référence
 ### [Comprendre les concepts de veille des menaces](threat-indicator-concepts.md)
@@ -547,11 +557,13 @@
 ####### [Obtenir l’ordinateur par ID](get-machine-by-id.md)
 ####### [Obtenir le journal de l’ordinateur sur les utilisateurs](get-machine-log-on-users.md)
 ####### [Obtenir les alertes liées à l’ordinateur](get-machine-related-alerts.md)
+####### [Obtenir l’API de collecte des états de sécurité des machines](get-machinesecuritystates-collection.md)
 ####### [Obtenir les logiciels installés](get-installed-software.md)
 ####### [Obtenir les vulnérabilités découvertes](get-discovered-vulnerabilities.md)
 ####### [Obtenir les recommandations de sécurité](get-security-recommendations.md)
 ####### [Ajouter ou supprimer les balises de l’ordinateur](add-or-remove-machine-tags.md)
 ####### [Rechercher des ordinateurs par IP](find-machines-by-ip.md)
+####### [Rechercher des informations sur l’appareil par adresse IP interne](find-machine-info-by-ip.md)
 ####### [Rechercher des ordinateurs par balise](find-machines-by-tag.md)
 ####### [Obtenir des Ko manquants](get-missing-kbs-machine.md)
 ####### [Définir la valeur de l’appareil](set-device-value.md)
@@ -607,6 +619,7 @@
 ####### [Répertorier les ordinateurs par logiciel](get-machines-by-software.md)
 ####### [Répertorier les vulnérabilités par logiciel](get-vuln-by-software.md)
 ####### [Obtenir des Ko manquants](get-missing-kbs-software.md)
+####### [Obtenir l’API de collecte de la base de connaissances](get-machinegroups-collection.md)
 
 ###### [Utilisateur]()
 ####### [Méthodes de l’utilisateur](user.md)
@@ -618,6 +631,8 @@
 ####### [Répertorier des vulnérabilités](get-all-vulnerabilities.md)
 ####### [Répertorier les vulnérabilités par ordinateur et logiciel](get-all-vulnerabilities-by-machines.md)
 ####### [Obtenir la vulnérabilité par ID](get-vulnerability-by-id.md)
+####### [Obtenir l’API de mappage CVE-KB](get-cvekbmap-collection.md)
+####### [Obtenir l’API de collecte de la base de connaissances](get-kbinfo-collection.md)
 ####### [Répertorier les ordinateurs par vulnérabilité](get-machines-by-vulnerability.md)
 
 ##### [Utilisation des API : exemples]()
@@ -626,6 +641,7 @@
 ###### [Repérage avancé à l’aide de Python](run-advanced-query-sample-python.md)
 ###### [Repérage avancé à l’aide de PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Utilisation des requêtes OData](exposed-apis-odata-samples.md)
+###### [Chasse avancée guide de l’API Repérage avancé avec PowerShell](exposed-apis-full-sample-powershell.md)
 
 
 #### [API de diffusion en continu de données brutes]()
