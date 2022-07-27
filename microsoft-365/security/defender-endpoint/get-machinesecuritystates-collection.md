@@ -1,10 +1,10 @@
 ---
-title: API obtenir la collection d’états de sécurité des ordinateurs
-description: Récupérez une collection d’états de sécurité d’appareil à l’aide de Microsoft Defender for Endpoint.
-keywords: api, api de graphique, api pris en charge, obtenir, appareil, sécurité, état
+title: Obtenir l’API de collecte des états de sécurité des machines
+description: Récupérez une collection d’états de sécurité des appareils à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, appareil, sécurité, état
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,21 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 91df2aab70b2bb8edb46700feefdae59df4ac68b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c7750868c557ba4ebb4c37584b69e710ae1a449b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166901"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051445"
 ---
-# <a name="get-machines-security-states-collection-api"></a>API obtenir la collection d’états de sécurité des ordinateurs
+# <a name="get-machines-security-states-collection-api"></a>Get Machines security states collection API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -63,13 +63,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite : 200 - OK.
+En cas de réussite - 200 OK.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
@@ -80,7 +80,7 @@ Content-type: application/json
 
 Voici un exemple de réponse.
 
-*L’ID de* champ contient l’ID de l’appareil et est égal à l’ID *de* champ * dans les informations sur les appareils.
+*L’ID de* champ contient l’ID d’appareil et est égal à *l’ID* de champ* dans les informations sur les appareils.
 
 ```json
 HTTP/1.1 200 OK

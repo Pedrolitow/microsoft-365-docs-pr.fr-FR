@@ -11,22 +11,21 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843562"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051533"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender. 
 
@@ -50,6 +49,10 @@ Vous pouvez également obtenir des mises à jour de produit et des notifications
 
 ## <a name="june-2022"></a>Juin 2022
 - (Préversion) Les tables [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) et [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) sont désormais disponibles dans le schéma de chasse avancé. Utilisez ces tables pour rechercher les événements d’évaluation dans Defender Vulnerability Management, notamment l’état des différentes configurations et les états de la surface d’attaque des appareils.
+
+- La nouvelle carte de réponse d’examen automatisé & dans le portail Microsoft 365 Defender fournit une vue d’ensemble des actions de correction en attente.
+L’équipe des opérations de sécurité peut afficher toutes les actions en attente d’approbation et le temps imparti pour approuver ces actions dans la carte elle-même. L’équipe de sécurité peut accéder rapidement au Centre d’actions et prendre les mesures de correction appropriées. La carte de réponse & d’examen automatisé contient également un lien vers la page Automatisation complète. Cela permet à l’équipe des opérations de sécurité de gérer efficacement les alertes et d’effectuer des actions de correction en temps voulu.
+
 
 ## <a name="may-2022"></a>Mai 2022
 - (Préversion) Conformément à l’extension récemment annoncée dans une nouvelle catégorie de service appelée [Microsoft Security Experts](https://aka.ms/MicrosoftSecurityExperts), nous introduisons la disponibilité de [Microsoft Defender Experts for Hunting](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) pour la préversion publique. Defender Experts for Hunting s’adresse aux clients qui disposent d’un centre d’opérations de sécurité robuste, mais qui souhaitent que Microsoft les aide à rechercher de manière proactive les menaces sur les données Microsoft Defender, notamment les points de terminaison, les Office 365, les applications cloud et l’identité. 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917560"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051181"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -38,10 +38,10 @@ Pour assurer la [sécurité de votre organisation par défaut](secure-by-default
 - **Simulations d’hameçonnage tierces : les attaques** simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 - Boîtes **aux lettres d’opérations de sécurité (SecOps)** : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bons et mauvais).
 
-Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêcher le filtrage des messages _entrants dans ces scénarios spécifiques_ .<sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios obtiennent les résultats suivants :
+Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêcher le filtrage <sup>\*</sup> des messages _entrants dans ces scénarios spécifiques_. La stratégie de remise avancée garantit que les messages dans ces scénarios obtiennent les résultats suivants :
 
 - Les filtres dans EOP et Microsoft Defender pour Office 365 n’agissent pas sur ces messages.<sup>\*</sup>
-- [Le vidage de zéro heure (ZAP)](zero-hour-auto-purge.md) pour le courrier indésirable et le hameçonnage n’effectue aucune action sur ces messages.<sup>\*\*</sup>
+- [Le vidage de zéro heure (ZAP)](zero-hour-auto-purge.md) pour le courrier indésirable et le hameçonnage n’effectue aucune action sur ces messages<sup>\*\*</sup>.
 - [Les alertes système par défaut](/microsoft-365/compliance/alert-policies#default-alert-policies) ne sont pas déclenchées pour ces scénarios.
 - [AIR et le clustering dans Defender pour Office 365](office-365-air.md) ignorent ces messages.
 - Spécifiquement pour les simulations d’hameçonnage tierces :

@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison dans Microsoft 365 Defender
 description: En savoir plus sur les modifications apportées à la Centre de sécurité Microsoft Defender à Microsoft 365 Defender
 keywords: Bien démarrer avec Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, MDO, MDE, portail de sécurité, portail de sécurité Defender
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617191"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051511"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender pour point de terminaison dans Microsoft 365 Defender
 
@@ -116,7 +116,7 @@ Ce tableau est une référence rapide des modifications entre le Centre de sécu
 |---------|---------|
 | Rapports  | Consultez les rapports pour les points de terminaison et la collaboration par e-mail &, notamment la protection contre les menaces, l’intégrité et la conformité des appareils et les appareils vulnérables. |
 | Intégrité  |  Il est actuellement lié à la page « État des services » du [Centre d'administration Microsoft 365](https://admin.microsoft.com/). |
-| Paramètres |  Gérez vos paramètres pour Microsoft 365 Defender, points de terminaison, e-mail & collaboration, identités et découverte d’appareils.   |
+| Paramètres |  Gérez vos paramètres pour les Microsoft 365 Defender, les points de terminaison, la collaboration Email &, les identités et la découverte d’appareils.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Navigation et fonctionnalités de sécurité Microsoft 365
 
@@ -172,7 +172,7 @@ Afficher des rapports, modifier vos paramètres, et modifier les rôles d’un u
 
 Si vous utilisez [l’API SIEM Defender pour](../defender-endpoint/enable-siem-integration.md) point de terminaison, vous pouvez continuer à le faire. Nous avons ajouté de nouveaux liens sur la charge utile de l’API qui pointent vers la page d’alerte ou la page d’incident dans le portail de sécurité Microsoft 365. Les nouveaux champs d’API incluent LinkToMTP et IncidentLinkToMTP. Pour plus d’informations, consultez [Redirection de comptes de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
-### <a name="email-alerts"></a>Alertes par e-mail
+### <a name="email-alerts"></a>alertes Email
 
 Vous pouvez continuer à utiliser des alertes par e-mail pour Defender pour point de terminaison. Nous avons ajouté de nouveaux liens dans les e-mails qui pointent vers la page d’alerte ou la page d’incident dans Microsoft 365 Defender. Pour plus d’informations, consultez [Redirection de comptes de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
@@ -182,6 +182,6 @@ La connexion à plusieurs locataires simultanément dans la même session de nav
 
 ## <a name="related-information"></a>Informations connexes
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender pour point de terminaison dans Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Redirection de comptes de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)

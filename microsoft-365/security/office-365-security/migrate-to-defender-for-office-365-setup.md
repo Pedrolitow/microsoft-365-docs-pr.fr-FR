@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Effectuez les étapes nécessaires pour commencer la migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fc63db0c51c4e8478b426cc37002fbfcb23f6d1
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 69af51bbd39339b07af8f0832a113184afaf725b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969472"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051687"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 2 : Configuration
 
@@ -63,7 +63,7 @@ Pour plus de clarté, nous allons utiliser ces noms de groupes spécifiques tout
 
 Lorsque vous êtes prêt à commencer le test, ajoutez ces groupes en tant qu’exceptions à [la règle de flux de messagerie SCL=-1](#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Lorsque vous créez des stratégies pour les différentes fonctionnalités de protection dans Defender pour Office 365, vous allez utiliser ces groupes comme conditions qui définissent à qui la stratégie s’applique.
 
-**Remarques** :
+**Remarques** :
 
 - Les termes Standard et Strict proviennent de nos [paramètres de sécurité recommandés](recommended-settings-for-eop-and-office365.md), qui sont également utilisés dans les [stratégies de sécurité prédéfinies](preset-security-policies.md). Dans l’idéal, nous vous conseillons de définir vos utilisateurs pilotes dans les stratégies de sécurité prédéfinies Standard et Strict, mais nous ne pouvons pas le faire. Pourquoi ? Étant donné que vous ne pouvez pas personnaliser les paramètres dans les stratégies de sécurité prédéfinies (en particulier, les actions effectuées sur les messages). Lors de vos tests de migration, vous souhaiterez voir ce que Defender pour Office 365 ferait aux messages, vérifier que c’est ce que vous voulez faire et éventuellement ajuster les configurations de stratégie pour autoriser ou empêcher ces résultats.
 
@@ -85,7 +85,7 @@ Vous devez également confirmer que tous les utilisateurs du pilote disposent d�
 
 - [Complément Message de rapport](enable-the-report-message-add-in.md)
 - [Complément Report Phishing](enable-the-report-phish-add-in.md)
-- Outils de création de rapports tiers pris en charge, comme décrit [ici](user-submission.md#third-party-email-reporting-tools)
+- Outils de création de rapports tiers pris en charge, comme décrit [ici](user-submission.md#third-party-reporting-tools-options).
 
 Ne sous-estimez pas l’importance de cette étape. Les données des soumissions d’utilisateurs vous donnent la boucle de commentaires dont vous avez besoin pour vérifier une bonne expérience cohérente de l’utilisateur final avant et après la migration. Ces commentaires vous aident à prendre des décisions éclairées en matière de configuration de stratégie, ainsi qu’à fournir à votre gestion des rapports soutenus par des données indiquant que la migration s’est déroulée sans problème.
 
@@ -106,7 +106,7 @@ La règle de flux de messagerie SCL=-1 est importante pendant la migration pour 
 
 Pour plus d’informations, consultez [Utiliser des règles de flux de courrier pour définir le niveau de confiance du courrier indésirable dans les messages dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-**Remarques** :
+**Remarques** :
 
 - Si vous envisagez d’autoriser la messagerie Internet à transiter par votre service de protection existant **et** directement dans Microsoft 365 en même temps, vous devez restreindre la règle de flux de courrier SCL=-1 (courrier qui contourne le filtrage du courrier indésirable) aux messages qui sont passés par votre service de protection existant uniquement. Vous ne souhaitez pas que les messages Internet non filtrés arrivent dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 

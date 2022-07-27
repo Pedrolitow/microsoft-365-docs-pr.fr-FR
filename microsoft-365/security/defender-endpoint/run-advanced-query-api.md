@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 3a916f3fe15e979f6d432e3a834453b04afe5a63
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020624"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051775"
 ---
 # <a name="advanced-hunting-api"></a>API de chasse avancée
 
@@ -50,11 +50,11 @@ ms.locfileid: "67020624"
    - Appels d’API : jusqu’à 45 appels par minute, jusqu’à 1 500 appels par heure.
    - Durée d’exécution : 10 minutes de temps d’exécution toutes les heures et 3 heures d’exécution par jour.
 
-4. La durée d’exécution maximale d’une seule requête est de 10 minutes.
+4. Le temps d’exécution maximal d’une requête unique est de 200 secondes.
 
 5. La réponse 429 représente l’atteinte de la limite de quota par nombre de demandes ou par processeur. Lisez le corps de la réponse pour comprendre quelle limite a été atteinte.
 
-6. La taille maximale du résultat d’une requête ne peut pas dépasser 124 Mo. Si la valeur est dépassée, http 400 Demande incorrecte avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimiser votre requête en limitant la quantité de résultats et réessayer » s’affiche.
+6. La taille maximale du résultat d’une requête ne peut pas dépasser 124 Mo. Si la valeur est dépassée, http 400 Demande incorrecte avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimiser votre requête en limitant le nombre de résultats et réessayer » s’affiche.
 
 ## <a name="permissions"></a>Autorisations
 

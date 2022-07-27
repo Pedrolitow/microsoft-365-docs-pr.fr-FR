@@ -18,12 +18,12 @@ ms.custom: ''
 description: Playbook normatif pour le personnel SecOps afin de gérer Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 97d7a03843fd9c4059bbaa99fa6a406919133026
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647271"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051071"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guide des opérations de sécurité Microsoft Defender pour Office 365
 
@@ -57,8 +57,8 @@ Votre plan de triage pour la surveillance de la file d’attente d’incidents d
 1. **Un clic d’URL potentiellement malveillant a été détecté**.
 2. **L’utilisateur ne peut pas envoyer de courrier électronique**.
 3. **Modèles d’envoi de courrier suspect détectés**.
-4. **E-mail signalé par l’utilisateur comme un programme malveillant ou hameçonnage**, et **plusieurs utilisateurs ont signalé l’e-mail comme un programme malveillant ou hameçonnage**.
-5. **Messages électroniques contenant un fichier malveillant supprimé après la remise**, **messages électroniques contenant une URL malveillante supprimée après la remise** et **messages électroniques d’une campagne supprimée après remise**.
+4. **Email signalés par l’utilisateur comme des programmes malveillants ou des hameçonnages**, et **plusieurs utilisateurs ont signalé des courriers électroniques comme des programmes malveillants ou des hameçonnages**.
+5. **Email messages contenant un fichier malveillant supprimé après la remise**, **Email messages contenant une URL malveillante supprimée après la remise** et **Email messages d’une campagne supprimés après la remise**.
 6. **Phish remis en raison d’un remplacement ETR**, **Phish remis parce que le dossier Courrier indésirable d’un utilisateur est désactivé** et **Phish remis en raison d’une stratégie d’autorisation IP**
 7. **Un programme malveillant n’est pas zappé car ZAP est désactivé** et **Phish n’est pas zappé car ZAP est désactivé**.
 
@@ -66,10 +66,10 @@ La gestion des files d’attente d’incidents et les personnages responsables s
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Triage des incidents dans la file d’attente incidents à <https://security.microsoft.com/incidents-queue>.|Journalière|Vérifiez que tous les incidents de gravité **moyenne** et **élevée** de Defender pour Office 365 sont triés.|Équipe des opérations de sécurité|
-|Examinez et prenez des mesures de réponse sur les incidents.|Journalière|Examinez tous les incidents et effectuez activement les actions de réponse recommandées ou manuelles.|Équipe des opérations de sécurité|
-|Résolvez les incidents.|Journalière|Si l’incident a été corrigé, résolvez l’incident. La résolution de l’incident résout toutes les alertes actives liées et associées.|Équipe des opérations de sécurité|
-|Classifier les incidents.|Journalière|Classifiez les incidents comme vrai ou faux. Pour les alertes vraies, spécifiez le type de menace. Cette classification permet à votre équipe de sécurité de voir les modèles de menaces et de défendre votre organisation contre elles.|Équipe des opérations de sécurité|
+|Triage des incidents dans la file d’attente incidents à <https://security.microsoft.com/incidents-queue>.|En jours|Vérifiez que tous les incidents de gravité **moyenne** et **élevée** de Defender pour Office 365 sont triés.|Équipe des opérations de sécurité|
+|Examinez et prenez des mesures de réponse sur les incidents.|En jours|Examinez tous les incidents et effectuez activement les actions de réponse recommandées ou manuelles.|Équipe des opérations de sécurité|
+|Résolvez les incidents.|En jours|Si l’incident a été corrigé, résolvez l’incident. La résolution de l’incident résout toutes les alertes actives liées et associées.|Équipe des opérations de sécurité|
+|Classifier les incidents.|En jours|Classifiez les incidents comme vrai ou faux. Pour les alertes vraies, spécifiez le type de menace. Cette classification permet à votre équipe de sécurité de voir les modèles de menaces et de défendre votre organisation contre elles.|Équipe des opérations de sécurité|
 
 ### <a name="manage-false-positive-and-false-negative-detections"></a>Gérer les détections de faux positifs et de faux négatifs
 
@@ -85,16 +85,16 @@ La gestion des faux positifs et faux négatifs et les personnages responsables s
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Envoyez des faux positifs et des faux négatifs à Microsoft à l’adresse <https://security.microsoft.com/reportsubmission>.|Journalière|Fournissez des signaux à Microsoft en signalant des détections incorrectes d’e-mail, d’URL et de fichiers.|Équipe des opérations de sécurité|
-|Analysez les détails de la soumission de l’administrateur.|Journalière|Comprenez les facteurs suivants pour les soumissions que vous faites à Microsoft : <ul><li>Ce qui a provoqué le faux positif ou le faux négatif.</li><li>État de votre configuration Defender pour Office 365 au moment de la soumission.</li><li>Indique si vous devez apporter des modifications à votre configuration Defender pour Office 365.</li></ul>|Équipe des opérations de sécurité <br/><br/> Administration de la sécurité|
-|Ajoutez des entrées de bloc dans la liste d’autorisations/de blocs du locataire à l’adresse <https://security.microsoft.com/tenantAllowBlockList>.|Journalière|Utilisez la liste d’autorisation/de blocage du locataire pour ajouter des entrées de bloc pour les détections d’URL, de fichier ou d’expéditeur faux négatifs si nécessaire.|Équipe des opérations de sécurité|
-|Libérer les faux négatifs de la quarantaine.|Journalière|Une fois que le destinataire a confirmé que le message a été mis en quarantaine incorrectement, vous pouvez libérer ou approuver les demandes de mise en production pour les utilisateurs. <br/><br/> Pour contrôler ce que les utilisateurs peuvent faire pour leurs propres messages mis en quarantaine (y compris la mise en production ou la demande de mise en quarantaine), consultez [Stratégies de quarantaine](quarantine-policies.md).|Équipe des opérations de sécurité <br/><br/> Équipe de messagerie|
+|Envoyez des faux positifs et des faux négatifs à Microsoft à l’adresse <https://security.microsoft.com/reportsubmission>.|En jours|Fournissez des signaux à Microsoft en signalant des détections incorrectes d’e-mail, d’URL et de fichiers.|Équipe des opérations de sécurité|
+|Analysez les détails de la soumission de l’administrateur.|En jours|Comprenez les facteurs suivants pour les soumissions que vous faites à Microsoft : <ul><li>Ce qui a provoqué le faux positif ou le faux négatif.</li><li>État de votre configuration Defender pour Office 365 au moment de la soumission.</li><li>Indique si vous devez apporter des modifications à votre configuration Defender pour Office 365.</li></ul>|Équipe des opérations de sécurité <br/><br/> Administration de la sécurité|
+|Ajoutez des entrées de bloc dans la liste d’autorisations/de blocs du locataire à l’adresse <https://security.microsoft.com/tenantAllowBlockList>.|En jours|Utilisez la liste d’autorisation/de blocage du locataire pour ajouter des entrées de bloc pour les détections d’URL, de fichier ou d’expéditeur faux négatifs si nécessaire.|Équipe des opérations de sécurité|
+|Libérer les faux négatifs de la quarantaine.|En jours|Une fois que le destinataire a confirmé que le message a été mis en quarantaine incorrectement, vous pouvez libérer ou approuver les demandes de mise en production pour les utilisateurs. <br/><br/> Pour contrôler ce que les utilisateurs peuvent faire pour leurs propres messages mis en quarantaine (y compris la mise en production ou la demande de mise en quarantaine), consultez [Stratégies de quarantaine](quarantine-policies.md).|Équipe des opérations de sécurité <br/><br/> Équipe de messagerie|
 
 ### <a name="review-phishing-and-malware-campaigns-that-resulted-in-delivered-mail"></a>Passer en revue les campagnes de hameçonnage et de programmes malveillants qui ont abouti à la remise du courrier
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Passez en revue les campagnes de messagerie.|Journalière|[Passez en revue les campagnes de messagerie](campaigns.md) ciblant votre organisation sur <https://security.microsoft.com/campaigns>. Concentrez-vous sur les campagnes qui ont abouti à la remise des messages aux destinataires. <br/><br/> Supprimez les messages des campagnes qui existent dans les boîtes aux lettres des utilisateurs. Cette action est requise uniquement lorsqu’une campagne contient des e-mails qui n’ont pas déjà été corrigés par des actions d’incidents, un [vidage automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) ou une correction manuelle.|Équipe des opérations de sécurité|
+|Passez en revue les campagnes de messagerie.|En jours|[Passez en revue les campagnes de messagerie](campaigns.md) ciblant votre organisation sur <https://security.microsoft.com/campaigns>. Concentrez-vous sur les campagnes qui ont abouti à la remise des messages aux destinataires. <br/><br/> Supprimez les messages des campagnes qui existent dans les boîtes aux lettres des utilisateurs. Cette action est requise uniquement lorsqu’une campagne contient des e-mails qui n’ont pas déjà été corrigés par des actions d’incidents, un [vidage automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) ou une correction manuelle.|Équipe des opérations de sécurité|
 
 ## <a name="weekly-activities"></a>Activités hebdomadaires
 
@@ -107,7 +107,7 @@ Dans Defender pour Office 365, vous pouvez utiliser les rapports suivants pour p
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Passez en revue les rapports de détection des e-mails à l’adresse suivante : <ul><li><https://security.microsoft.com/reports/TPSAggregateReportATP></li><li><https://security.microsoft.com/mailflowStatusReport?viewid=type></li></ul>|Hebdomadaire|Passez en revue les tendances de détection des courriers malveillants, du hameçonnage et du courrier indésirable par rapport aux bons e-mails. L’observation au fil du temps vous permet de voir les modèles de menace et de déterminer si vous devez ajuster vos stratégies de Defender pour Office 365.|Administration de la sécurité <br/><br/> Équipe des opérations de sécurité|
+|Passez en revue les rapports de détection des e-mails à l’adresse suivante : <ul><li><https://security.microsoft.com/reports/TPSAggregateReportATP></li><li><https://security.microsoft.com/mailflowStatusReport?viewid=type></li></ul>|En semaines|Passez en revue les tendances de détection des courriers malveillants, du hameçonnage et du courrier indésirable par rapport aux bons e-mails. L’observation au fil du temps vous permet de voir les modèles de menace et de déterminer si vous devez ajuster vos stratégies de Defender pour Office 365.|Administration de la sécurité <br/><br/> Équipe des opérations de sécurité|
 
 ### <a name="track-and-respond-to-emerging-threats-using-threat-analytics"></a>Suivre et répondre aux menaces émergentes à l’aide de l’analytique des menaces
 
@@ -115,7 +115,7 @@ Utilisez [l’analyse des menaces](/microsoft-365/security/defender-endpoint/thr
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Passez en revue les menaces dans l’analyse des menaces à l’adresse <https://security.microsoft.com/threatanalytics3>.|Hebdomadaire|L’analyse des menaces fournit une analyse détaillée, y compris les éléments suivants : <ul><li>E/S par E/S.</li><li>Requêtes de chasse sur les acteurs de menaces actifs et leurs campagnes.</li><li>Techniques d’attaque populaires et nouvelles.</li><li>Vulnérabilités critiques.</li><li>Surfaces d’attaque courantes.</li><li>Programmes malveillants répandus.</li></ul>|Équipe des opérations de sécurité <br/><br/> Équipe de chasse aux menaces|
+|Passez en revue les menaces dans l’analyse des menaces à l’adresse <https://security.microsoft.com/threatanalytics3>.|En semaines|L’analyse des menaces fournit une analyse détaillée, y compris les éléments suivants : <ul><li>E/S par E/S.</li><li>Requêtes de chasse sur les acteurs de menaces actifs et leurs campagnes.</li><li>Techniques d’attaque populaires et nouvelles.</li><li>Vulnérabilités critiques.</li><li>Surfaces d’attaque courantes.</li><li>Programmes malveillants répandus.</li></ul>|Équipe des opérations de sécurité <br/><br/> Équipe de chasse aux menaces|
 
 ### <a name="review-top-targeted-users-for-malware-and-phishing"></a>Examiner les principaux utilisateurs ciblés pour les programmes malveillants et le hameçonnage
 
@@ -123,15 +123,15 @@ Utilisez l’onglet **[Principaux utilisateurs ciblés](threat-explorer.md#top-t
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Passez en revue l’onglet **Utilisateurs principaux ciblés** dans l’Explorateur de menaces à l’adresse <https://security.microsoft.com/threatexplorer>.|Hebdomadaire|Utilisez les informations pour décider si vous devez ajuster les stratégies ou les protections pour ces utilisateurs. Ajoutez les utilisateurs affectés aux [comptes Priority](/microsoft-365/admin/setup/priority-accounts) pour bénéficier des avantages suivants : <ul><li>Visibilité supplémentaire lorsque des incidents les affectent.</li><li>Heuristiques personnalisées pour les modèles de flux de messagerie des cadres (protection prioritaire des comptes).</li><li>[Rapport sur les problèmes de messagerie pour les comptes prioritaires](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)</li></ul>|Administration de la sécurité <br/><br/> Équipe des opérations de sécurité|
+|Passez en revue l’onglet **Utilisateurs principaux ciblés** dans l’Explorateur de menaces à l’adresse <https://security.microsoft.com/threatexplorer>.|En semaines|Utilisez les informations pour décider si vous devez ajuster les stratégies ou les protections pour ces utilisateurs. Ajoutez les utilisateurs affectés aux [comptes Priority](/microsoft-365/admin/setup/priority-accounts) pour bénéficier des avantages suivants : <ul><li>Visibilité supplémentaire lorsque des incidents les affectent.</li><li>Heuristiques personnalisées pour les modèles de flux de messagerie des cadres (protection prioritaire des comptes).</li><li>[Email problèmes liés au rapport des comptes prioritaires](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)</li></ul>|Administration de la sécurité <br/><br/> Équipe des opérations de sécurité|
 
 ### <a name="review-top-malware-and-phishing-campaigns-that-target-your-organization"></a>Passez en revue les principales campagnes de hameçonnage et de programmes malveillants ciblant votre organisation
 
-Les vues de campagne révèlent les attaques par hameçonnage et les programmes malveillants contre votre organisation. Pour plus d’informations, consultez [Vues de campagne dans Microsoft Defender pour Office 365](campaigns.md).
+Les vues de campagne révèlent les attaques par hameçonnage et les programmes malveillants contre votre organisation. Pour plus d’informations, consultez [Affichages de campagne dans Microsoft Defender pour Office 365](campaigns.md).
 
 |Activité|Cadence|Description|Persona|
 |---|---|---|---|
-|Utilisez **les vues de campagne** pour passer en <https://security.microsoft.com/campaigns> revue les attaques par hameçonnage et les programmes malveillants qui vous affectent.|Hebdomadaire|Découvrez les attaques et techniques et ce que Defender pour Office 365 a pu identifier et bloquer. <br/><br/> Pour plus d’informations sur une campagne, utilisez télécharger le rapport sur les **menaces** dans les vues de campagne.|Équipe des opérations de sécurité|
+|Utilisez **les vues de campagne** pour passer en <https://security.microsoft.com/campaigns> revue les attaques par hameçonnage et les programmes malveillants qui vous affectent.|En semaines|Découvrez les attaques et techniques et ce que Defender pour Office 365 a pu identifier et bloquer. <br/><br/> Pour plus d’informations sur une campagne, utilisez télécharger le rapport sur les **menaces** dans les vues de campagne.|Équipe des opérations de sécurité|
 
 ## <a name="ad-hoc-activities"></a>Activités ad hoc
 
@@ -172,7 +172,7 @@ Les vues de campagne révèlent les attaques par hameçonnage et les programmes 
 
 ### <a name="learn-about-microsoft-defender-for-office-365-tools-and-processes"></a>En savoir plus sur Microsoft Defender pour Office 365 outils et processus
 
-Les membres de l’équipe chargée des opérations de sécurité et de la réponse doivent intégrer Defender pour Office 365 outils et fonctionnalités aux processus d’investigation et de réponse existants. Learning sur les nouveaux outils et fonctionnalités peut prendre du temps, mais il s’agit d’une partie essentielle du processus d’intégration. Le moyen le plus simple pour SecOps et les membres de l’équipe de sécurité de messagerie d’en savoir plus sur Defender pour Office 365 consiste à utiliser le contenu de formation disponible dans le cadre du contenu de formation Ninja à <https://aka.ms/mdoninja>.
+Les membres de l’équipe chargée des opérations de sécurité et de la réponse doivent intégrer Defender pour Office 365 outils et fonctionnalités aux processus d’investigation et de réponse existants. L’apprentissage des nouveaux outils et fonctionnalités peut prendre du temps, mais il s’agit d’une partie essentielle du processus d’intégration. Le moyen le plus simple pour SecOps et les membres de l’équipe de sécurité de messagerie d’en savoir plus sur Defender pour Office 365 consiste à utiliser le contenu de formation disponible dans le cadre du contenu de formation Ninja à <https://aka.ms/mdoninja>.
 
 Le contenu est structuré pour différents niveaux de connaissances (fondamentaux, intermédiaires et avancés) avec plusieurs modules par niveau.
 
@@ -187,12 +187,12 @@ Les autorisations de gestion des Defender pour Office 365 dans le portail Micros
 
 Les autorisations suivantes (rôles et groupes de rôles) sont disponibles dans Defender pour Office 365 et peuvent être utilisées pour accorder l’accès aux membres de l’équipe de sécurité :
 
-- **Rôles Azure AD** : rôles centralisés qui attribuent des autorisations pour _tous les_ services Microsoft 365, y compris les Defender pour Office 365. Vous pouvez afficher les rôles Azure AD et les utilisateurs affectés dans le portail Microsoft 365 Defender, mais vous ne pouvez pas les gérer directement là-bas. Au lieu de cela, vous gérez les rôles et les membres Azure AD dans <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Les rôles les plus fréquents utilisés par les équipes de sécurité sont les suivants :
+- **Rôles Azure AD** : rôles centralisés qui attribuent des autorisations pour _tous les_ services Microsoft 365, y compris Defender pour Office 365. Vous pouvez afficher les rôles Azure AD et les utilisateurs affectés dans le portail Microsoft 365 Defender, mais vous ne pouvez pas les gérer directement là-bas. Au lieu de cela, vous gérez les rôles et les membres Azure AD dans <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>. Les rôles les plus fréquents utilisés par les équipes de sécurité sont les suivants :
   - **Administrateur de sécurité**
   - **Opérateur de sécurité**
   - **Lecteur de sécurité**
 
-- **E-mail & rôles de collaboration** : rôles et groupes de rôles qui accordent des autorisations spécifiques à Microsoft Defender pour Office 365. Les rôles suivants ne sont pas disponibles dans Azure AD, mais peuvent être importants pour les équipes de sécurité :
+- **Email & rôles de collaboration** : rôles et groupes de rôles qui accordent des autorisations spécifiques à Microsoft Defender pour Office 365. Les rôles suivants ne sont pas disponibles dans Azure AD, mais peuvent être importants pour les équipes de sécurité :
 
   - **Rôle d’aperçu** : attribuez ce rôle aux membres de l’équipe qui doivent afficher un aperçu ou télécharger des messages électroniques dans le cadre des activités d’investigation. Permet aux utilisateurs [d’afficher un aperçu et de télécharger](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) des messages électroniques dans des boîtes aux lettres cloud à l’aide de la [page d’entité de messagerie](mdo-email-entity-page.md#email-preview-for-cloud-mailboxes).
 
@@ -201,7 +201,7 @@ Les autorisations suivantes (rôles et groupes de rôles) sont disponibles dans 
     - Enquêteur de données
     - Le gestionnaire eDiscovery
 
-    Pour attribuer ce rôle à un groupe de rôles nouveau ou existant, consultez [Modifier le courrier électronique & l’appartenance au rôle de collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    Pour attribuer ce rôle à un groupe de rôles nouveau ou existant, consultez [Modifier Email & l’appartenance au rôle de collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
   - **Rôle de recherche et de vidage** : approuvez la suppression des messages malveillants comme recommandé par AIR ou effectuez des actions manuelles sur les messages dans des expériences de chasse telles que l’Explorateur de menaces.
 
@@ -210,7 +210,7 @@ Les autorisations suivantes (rôles et groupes de rôles) sont disponibles dans 
     - Enquêteur de données
     - Gestion de l’organisation
 
-    Pour attribuer ce rôle à un groupe de rôles nouveau ou existant, consultez [Modifier le courrier électronique & l’appartenance au rôle de collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    Pour attribuer ce rôle à un groupe de rôles nouveau ou existant, consultez [Modifier Email & l’appartenance au rôle de collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
   - **Gestionnaire AllowBlockList du locataire** : gérez les entrées d’autorisation et de blocage dans la [liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md). Le blocage des URL, des fichiers (à l’aide du hachage de fichier) ou des expéditeurs est une action de réponse utile à effectuer lors de l’examen des e-mails malveillants qui ont été remis.
 
@@ -295,15 +295,15 @@ Désignez la boîte aux lettres personnalisée dans laquelle les messages signal
 >
 > - La boîte aux lettres personnalisée est une boîte aux lettres Exchange Online.
 > - L’outil de création de rapports tiers doit inclure le message signalé d’origine en tant que message non compressé. EML ou . Pièce jointe MSG dans le message envoyé à la boîte aux lettres personnalisée (ne vous contentez pas de transférer le message d’origine à la boîte aux lettres personnalisée).
-> - La boîte aux lettres personnalisée requiert des prérequis spécifiques pour permettre la remise de messages potentiellement incorrects. Pour plus d’informations, consultez [les prérequis de la boîte aux lettres personnalisée](user-submission.md#custom-mailbox-prerequisites).
+> - La boîte aux lettres personnalisée requiert des prérequis spécifiques pour permettre la remise de messages potentiellement incorrects. Pour plus d’informations, consultez [configuration requise pour la boîte aux lettres des soumissions d’utilisateurs](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
 
-Lorsque l’utilisateur a signalé l’arrivée d’e-mails dans la boîte aux lettres personnalisée, Defender pour Office 365 génère automatiquement l’alerte nommée **e-mail signalée par l’utilisateur sous forme de programme malveillant ou de hameçonnage**. Cette alerte lance un [playbook AIR](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). Le playbook effectue une série d’étapes d’investigation automatisée :
+Lorsque l’utilisateur a signalé l’arrivée d’e-mails dans la boîte aux lettres personnalisée, Defender pour Office 365 génère automatiquement l’alerte nommée **Email signalée par l’utilisateur comme un programme malveillant ou un hameçonnage**. Cette alerte lance un [playbook AIR](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). Le playbook effectue une série d’étapes d’investigation automatisée :
 
 - Collectez des données sur l’e-mail spécifié.
 - Collectez des données sur les menaces et les entités liées à cet e-mail. Les entités peuvent inclure des fichiers, des URL et des destinataires.
 - Fournissez des actions recommandées à l’équipe SecOps en fonction des résultats de l’enquête.
 
-**Les e-mails signalés par l’utilisateur sous forme d’alertes de programmes malveillants ou de hameçonnage**, les enquêtes automatisées et leurs actions recommandées sont automatiquement corrélés aux incidents dans Microsoft 365 Defender. Cette corrélation simplifie davantage le processus de triage et de réponse pour les équipes de sécurité. Si plusieurs utilisateurs signalent les mêmes messages ou des messages similaires, tous les utilisateurs et messages sont corrélés dans le même incident.
+**Email signalés par l’utilisateur comme des alertes de programmes malveillants ou de hameçonnage**, les enquêtes automatisées et leurs actions recommandées sont automatiquement corrélées aux incidents dans Microsoft 365 Defender. Cette corrélation simplifie davantage le processus de triage et de réponse pour les équipes de sécurité. Si plusieurs utilisateurs signalent les mêmes messages ou des messages similaires, tous les utilisateurs et messages sont corrélés dans le même incident.
 
 Les données provenant d’alertes et d’investigations dans Defender pour Office 365 sont automatiquement comparées aux alertes et aux investigations dans les autres produits Microsoft 365 Defender :
 

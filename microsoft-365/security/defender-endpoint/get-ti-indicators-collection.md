@@ -1,8 +1,8 @@
 ---
-title: API Des indicateurs de liste
+title: List Indicators API
 description: Découvrez comment utiliser l’API Indicateurs de liste pour récupérer une collection de tous les indicateurs actifs dans Microsoft Defender pour point de terminaison.
-keywords: api, api publique, api pris en charge, collection d’indicateurs
-ms.prod: w10
+keywords: api, api publique, api prises en charge, collection d’indicateurs
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: adc3cfecba10431a909b72f875442d80b6638f03
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1679f5f1b38ac3857b07625a883e267229eda8c6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283736"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051049"
 ---
-# <a name="list-indicators-api"></a>API Des indicateurs de liste
+# <a name="list-indicators-api"></a>List Indicators API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,29 +38,29 @@ ms.locfileid: "61283736"
 
 ## <a name="api-description"></a>Description de l’API
 
-Extrait une collection de tous les indicateurs [actifs.](ti-indicator.md)
+Récupère une collection de tous les [indicateurs actifs](ti-indicator.md).
 
-Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
+Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
 
-La requête OData est prise en charge sur `$filter` : , , , , , , , `application` , , , `createdByDisplayName` et `expirationTime` `generateAlert` les `title` `rbacGroupNames` `rbacGroupIds` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` `severity` propriétés.
+La requête OData `$filter` est prise en charge sur : `application`, , `createdByDisplayName``expirationTime`, `generateAlert`, `title`, `rbacGroupNames`, `rbacGroupIds`, , `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `action`et `severity` les propriétés.
 <br>```$stop``` avec une valeur maximale de 10 000. 
 <br>```$skip```.
 
-Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+Consultez des exemples dans [les requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>Limites
 
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Prise en main](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Ti.ReadWrite|« Lire et écrire des indicateurs »
-Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
-Déléguée (compte professionnel ou scolaire)|Ti.ReadWrite|« Lire et écrire des indicateurs »
+Application|Ti.ReadWrite|« Indicateurs de lecture et d’écriture »
+Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
+Déléguée (compte professionnel ou scolaire)|Ti.ReadWrite|« Indicateurs de lecture et d’écriture »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -72,7 +72,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -80,22 +80,22 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une collection [d’entités Indicator.](ti-indicator.md)
+Si elle réussit, cette méthode renvoie 200, code de réponse OK avec une collection d’entités [d’indicateur](ti-indicator.md) .
 
 > [!NOTE]
-> Si l’application dispose de l’autorisation « Ti.ReadWrite.All » , elle est exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
+> Si l’application a l’autorisation « Ti.ReadWrite.All », elle est exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
 
 ## <a name="example-1"></a>Exemple 1
 
-### <a name="example-1-request"></a>Exemple de requête 1
+### <a name="example-1-request"></a>Exemple de demande 1
 
-Voici un exemple de demande qui obtient tous les indicateurs
+Voici un exemple de requête qui obtient tous les indicateurs
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
-### <a name="example-1-response"></a>Réponse de l’exemple 1
+### <a name="example-1-response"></a>Exemple de réponse 1
 
 Voici un exemple de réponse.
 
@@ -150,15 +150,15 @@ Content-type: application/json
 
 ## <a name="example-2"></a>Exemple 2
 
-### <a name="example-2-request"></a>Exemple 2 de requête
+### <a name="example-2-request"></a>Exemple de demande 2
 
-Voici un exemple de demande qui obtient tous les indicateurs avec l’action « AlertAndBlock » 
+Voici un exemple de requête qui obtient tous les indicateurs avec l’action « AlertAndBlock » 
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
-### <a name="example-2-response"></a>Réponse de l’exemple 2
+### <a name="example-2-response"></a>Exemple de réponse 2
 
 Voici un exemple de réponse.
 

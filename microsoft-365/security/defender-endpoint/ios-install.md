@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a81f125f9f32a5b4bdafd6d4656699fa17caa82
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 53f21b5db99bb8d01e06f724f9fbc822ba2332e5
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669967"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050957"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour point de terminaison sur iOS
 
@@ -40,7 +40,7 @@ Cette rubrique décrit le déploiement de Defender pour point de terminaison sur
 
 - Vérifiez que vous avez accès au Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-- Assurez-vous iOS’inscription est effectuée pour vos utilisateurs. Les utilisateurs doivent disposer d’une licence Defender pour point de terminaison affectée afin d’utiliser Defender pour point de terminaison sur iOS. Reportez-vous à [Affecter des licences aux utilisateurs](/azure/active-directory/users-groups-roles/licensing-groups-assign) pour obtenir des instructions sur la façon d’attribuer des licences.
+- Vérifiez que l’inscription iOS est effectuée pour vos utilisateurs. Les utilisateurs doivent disposer d’une licence Defender pour point de terminaison affectée afin d’utiliser Defender pour point de terminaison sur iOS. Reportez-vous à [Affecter des licences aux utilisateurs](/azure/active-directory/users-groups-roles/licensing-groups-assign) pour obtenir des instructions sur la façon d’attribuer des licences.
 
 > [!NOTE]
 > Microsoft Defender pour point de terminaison sur iOS est disponible dans le [App Store Apple](https://aka.ms/mdatpiosappstore).
@@ -49,24 +49,24 @@ Cette rubrique décrit le déploiement de Defender pour point de terminaison sur
 
 Déployez Defender pour point de terminaison sur iOS via Portail d'entreprise Intune.
 
-### <a name="add-ios-store-app"></a>Ajouter iOS application du Store
+### <a name="add-ios-store-app"></a>Ajouter une application du Store iOS
 
-1. Dans le [Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez à **Apps** ->  **iOS/iPadOS** -> **Add** ->  **iOS store app**, puis cliquez sur **Sélectionner**.
+1. Dans le [Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez à **Apps** -> **iOS/iPadOS** -> **Add** -> **iOS Store app** , puis cliquez sur **Sélectionner**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-1.png" alt-text="Onglet Ajouter des applications dans le centre de Microsoft Endpoint Manager Administration" lightbox="images/ios-deploy-1.png":::
+    > :::image type="content" source="images/ios-deploy-1.png" alt-text="Onglet Ajouter des applications dans le Centre de Endpoint Manager Administration Microsoft" lightbox="images/ios-deploy-1.png":::
 
 1. Dans la page **Ajouter une application**, cliquez sur **Rechercher dans le App Store** et tapez **Microsoft Defender pour point de terminaison** dans la barre de recherche. Dans la section résultats de la recherche, cliquez sur *Microsoft Defender pour point de terminaison*, puis sur **Sélectionner**.
 
 1. Sélectionnez **iOS 11.0** comme système d’exploitation minimal. Passez en revue les autres informations sur l’application, puis cliquez sur **Suivant**.
 
-1. Dans la section **Affectations** , accédez à la section **Obligatoire** et sélectionnez **Ajouter un groupe**. Vous pouvez ensuite choisir le ou les groupes d’utilisateurs que vous souhaitez cibler Defender pour point de terminaison sur iOS application. Cliquez sur **Sélectionner** , puis **sur Suivant**.
+1. Dans la section **Affectations** , accédez à la section **Obligatoire** et sélectionnez **Ajouter un groupe**. Vous pouvez ensuite choisir le ou les groupes d’utilisateurs que vous souhaitez cibler Defender pour point de terminaison sur l’application iOS. Cliquez sur **Sélectionner** , puis **sur Suivant**.
 
     > [!NOTE]
     > Le groupe d’utilisateurs sélectionné doit se composer de Intune utilisateurs inscrits.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-2.png" alt-text="Onglet Ajouter un groupe dans le centre de Microsoft Endpoint Manager Administration" lightbox="images/ios-deploy-2.png":::
+    > :::image type="content" source="images/ios-deploy-2.png" alt-text="Onglet Ajouter un groupe dans le Centre de Endpoint Manager Administration Microsoft" lightbox="images/ios-deploy-2.png":::
 
 1. Dans la section *Vérifier + créer* , vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer**. Dans quelques instants, l’application Defender pour point de terminaison doit être créée correctement, et une notification doit s’afficher dans le coin supérieur droit de la page.
 
@@ -77,7 +77,7 @@ Déployez Defender pour point de terminaison sur iOS via Portail d'entreprise In
 
 ## <a name="complete-deployment-for-supervised-devices"></a>Déploiement complet pour les appareils supervisés
 
-Le Microsoft Defender pour point de terminaison sur iOS application dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, compte tenu des fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Il peut également fournir une protection web **sans configurer de VPN local sur l’appareil**. Cela offre aux utilisateurs finaux une expérience transparente tout en étant protégés contre le hameçonnage et d’autres attaques basées sur le web.
+Le Microsoft Defender pour point de terminaison sur l’application iOS dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, compte tenu des fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Il peut également fournir une protection web **sans configurer de VPN local sur l’appareil**. Cela offre aux utilisateurs finaux une expérience transparente tout en étant protégés contre le hameçonnage et d’autres attaques basées sur le web.
 
 ### <a name="configure-supervised-mode-via-intune"></a>Configurer le mode supervisé via Intune
 
@@ -86,14 +86,14 @@ Ensuite, configurez le mode supervisé pour l’application Defender pour point 
    > [!NOTE]
    > Cette stratégie de configuration d’application pour les appareils supervisés s’applique uniquement aux appareils gérés et doit être ciblée pour TOUS les appareils iOS gérés comme meilleure pratique.
 
-1. Connectez-vous au [centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) et accédez **aux** \> stratégies \> de **configuration d’application** **d’applications Ajouter**. Sélectionnez **Appareils gérés**.
+1. Connectez-vous au Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) et accédez à **l’ajout** \> de stratégies \> de **configuration d’application** **d’applications**. Sélectionnez **Appareils gérés**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Administration Center4.](images/ios-deploy-4.png)
 
 1. Dans la page Créer une stratégie de *configuration d’application* , fournissez les informations suivantes :
     - Nom de la stratégie
-    - Plateforme : Sélectionnez iOS/iPadOS
+    - Plateforme : Sélectionner iOS/iPadOS
     - Application ciblée : sélectionnez **Microsoft Defender pour point de terminaison** dans la liste
 
     > [!div class="mx-imgBorder"]
@@ -120,7 +120,7 @@ Ensuite, configurez le mode supervisé pour l’application Defender pour point 
 1. Ensuite, vous devez déployer un profil personnalisé sur des appareils iOS supervisés. Ceci est destiné aux fonctionnalités améliorées de lutte contre le hameçonnage. Suivez les étapes ci-dessous :
 
     - Télécharger le profil de configuration à partir de [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
-    - Accéder aux **appareils** ->  **iOS/profils** -> **de configuration** iPadOS  -> **Créer un profil**
+    - Accéder aux **appareils** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Administration Center7.](images/ios-deploy-7.png)
@@ -152,9 +152,11 @@ Cette étape simplifie le processus d’intégration en configurant le profil VP
     - Identificateur VPN = com.microsoft.scmx
     - Dans les paires clé-valeur, entrez la clé **AutoOnboard** et définissez la valeur **sur True**.
     - Type de VPN automatique = VPN à la demande
-    - Sélectionnez **Ajouter** pour **les règles à la demande** et sélectionnez **Je souhaite effectuer les opérations suivantes = Connecter VPN**, **je souhaite limiter à = Tous les domaines**.
+    - Sélectionnez **Ajouter** pour **les règles à la demande** , puis sélectionnez **Je souhaite effectuer les opérations suivantes : Connexion VPN**, **je souhaite limiter à = Tous les domaines**.
 
     :::image type="content" source="images/ios-deploy-8.png" alt-text="Onglet Paramètres de configuration du profil VPN" lightbox="images/ios-deploy-8.png":::
+    - Pour imposer que le VPN ne peut pas être désactivé sur l’appareil des utilisateurs, les administrateurs peuvent sélectionner **Oui** pour **empêcher les utilisateurs de désactiver le VPN automatique**. Par défaut, il n’est pas configuré et les utilisateurs peuvent désactiver le VPN uniquement dans les paramètres.
+    - Pour permettre aux utilisateurs de modifier le bouton bascule VPN à partir de l’application, ajoutez **EnableVPNToggleInApp = TRUE**, dans les paires clé-valeur. Par défaut, les utilisateurs ne peuvent pas modifier le bouton bascule à partir de l’application.
 
 1. Cliquez sur Suivant et affectez le profil aux utilisateurs ciblés.
 1. Dans la section *Vérifier + créer* , vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer**.
@@ -164,7 +166,7 @@ Cette étape simplifie le processus d’intégration en configurant le profil VP
 
 
 > [!NOTE]
-> Aucune interaction tactile ne peut être configurée sur iOS appareils inscrits sans affinité utilisateur (appareils sans utilisateur ou appareils partagés).
+> Aucune interaction tactile ne peut être configurée sur les appareils iOS inscrits sans affinité utilisateur (appareils sans utilisateur ou appareils partagés).
 
 Les administrateurs peuvent configurer Microsoft Defender pour point de terminaison pour déployer et s’activer en mode silencieux. Dans ce flux, l’administrateur crée un profil de déploiement et l’utilisateur est simplement informé de l’installation. Defender pour point de terminaison est automatiquement installé sans que l’utilisateur doive ouvrir l’application. Suivez les étapes ci-dessous pour configurer le déploiement sans contact ou silencieux de Defender pour point de terminaison sur les appareils iOS inscrits :
 
@@ -179,9 +181,12 @@ Les administrateurs peuvent configurer Microsoft Defender pour point de terminai
     - Identificateur VPN = com.microsoft.scmx
     - Dans les paires clé-valeur, entrez la clé **SilentOnboard** et définissez la valeur sur **True**.
     - Type de VPN automatique = VPN à la demande
-    - Sélectionnez **Ajouter** pour **les règles à la demande** et sélectionnez **Je souhaite effectuer les opérations suivantes = Connecter VPN**, **je souhaite limiter à = Tous les domaines**.
+    - Sélectionnez **Ajouter** pour **les règles à la demande** , puis sélectionnez **Je souhaite effectuer les opérations suivantes : Connexion VPN**, **je souhaite limiter à = Tous les domaines**.
 
     :::image type="content" source="images/ios-deploy-9.png" alt-text="Page Configuration du profil VPN" lightbox="images/ios-deploy-9.png":::
+
+    - Pour imposer que le VPN ne peut pas être désactivé sur l’appareil des utilisateurs, les administrateurs peuvent sélectionner **Oui** pour **empêcher les utilisateurs de désactiver le VPN automatique**. Par défaut, il n’est pas configuré et les utilisateurs peuvent désactiver le VPN uniquement dans les paramètres.
+    - Pour permettre aux utilisateurs de modifier le bouton bascule VPN à partir de l’application, ajoutez **EnableVPNToggleInApp = TRUE**, dans les paires clé-valeur. Par défaut, les utilisateurs ne peuvent pas modifier le bouton bascule à partir de l’application.
 
 1. Sélectionnez **Suivant** et affectez le profil aux utilisateurs ciblés.
 1. Dans la section *Vérifier + créer* , vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer**.
@@ -196,7 +201,7 @@ Une fois la configuration ci-dessus effectuée et synchronisée avec l’apparei
 
 ## <a name="complete-onboarding-and-check-status"></a>Terminer l’intégration et vérifier l’état
 
-1. Une fois que Defender pour point de terminaison sur iOS a été installé sur l’appareil, l’icône de l’application s’affiche.
+1. Une fois defender pour point de terminaison sur iOS installé sur l’appareil, l’icône de l’application s’affiche.
 
     :::image type="content" source="images/41627a709700c324849bf7e13510c516.png" alt-text="Une description de téléphone intelligent générée automatiquement" lightbox="images/41627a709700c324849bf7e13510c516.png":::
 
@@ -209,23 +214,23 @@ Une fois la configuration ci-dessus effectuée et synchronisée avec l’apparei
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Configurer Microsoft Defender pour point de terminaison pour le mode supervisé
 
-Le Microsoft Defender pour point de terminaison sur iOS application dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, compte tenu des fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Pour tirer parti de ces fonctionnalités, l’application Defender pour point de terminaison doit savoir si un appareil est en mode supervisé.
+Le Microsoft Defender pour point de terminaison sur l’application iOS dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, compte tenu des fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Pour tirer parti de ces fonctionnalités, l’application Defender pour point de terminaison doit savoir si un appareil est en mode supervisé.
 
 ### <a name="configure-supervised-mode-via-intune"></a>Configurer le mode supervisé via Intune
 
 Intune vous permet de configurer l’application Defender pour iOS via une stratégie de App Configuration.
 
    > [!NOTE]
-   > Cette stratégie de configuration d’application pour les appareils supervisés s’applique uniquement aux appareils gérés et doit être ciblée pour tous les appareils gérés iOS comme meilleure pratique.
+   > Cette stratégie de configuration d’application pour les appareils supervisés s’applique uniquement aux appareils gérés et doit être ciblée pour tous les appareils iOS gérés comme meilleure pratique.
 
-1. Connectez-vous au [centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) et accédez **aux** \> stratégies \> de **configuration d’application** **d’applications Ajouter**. Cliquez sur **Appareils gérés**.
+1. Connectez-vous au Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) et accédez à **l’ajout** \> de stratégies \> de **configuration d’application** **d’applications**. Cliquez sur **Appareils gérés**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-deploy-4.png" alt-text="Option Appareils managés" lightbox="images/ios-deploy-4.png":::
 
 1. Dans la page Créer une stratégie de *configuration d’application* , fournissez les informations suivantes :
     - Nom de la stratégie
-    - Plateforme : Sélectionnez iOS/iPadOS
+    - Plateforme : Sélectionner iOS/iPadOS
     - Application ciblée : sélectionnez **Microsoft Defender pour point de terminaison** dans la liste
 
     > [!div class="mx-imgBorder"]
@@ -252,4 +257,4 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Configurer la stratégie de protection des applications pour inclure les signaux de risque defender pour point de terminaison (MAM)](ios-install-unmanaged.md)
-- [Configurer Defender pour point de terminaison sur iOS fonctionnalités](ios-configure-features.md)
+- [Configurer Defender pour point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)

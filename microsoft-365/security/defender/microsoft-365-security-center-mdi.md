@@ -2,7 +2,7 @@
 title: Microsoft Defender pour Identity dans Microsoft 365 Defender
 description: En savoir plus sur les modifications apportées à la Microsoft Defender pour Identity à Microsoft 365 Defender
 keywords: Bien démarrer avec Microsoft 365 Defender, Microsoft Defender pour Identity, NDI
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 53c43c3196a22a97b2f11105f5145bd62229b137
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: efcb57a8ecc1b323f35f7b4fde9f4ebcee99e851
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714817"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051116"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft Defender pour Identity dans Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ Le tableau ci-dessous répertorie les modifications apportées à la navigation 
 | Page Appareil                | Microsoft 365 Defender page Appareil                           |
 | Page De groupe                 | volet latéral des groupes Microsoft 365 Defender                      |
 | Page d’alerte                 | page d’alerte Microsoft 365 Defender                            |
-| Recherche                     | recherche Microsoft 365 Defender                                |
+| Rechercher                     | recherche Microsoft 365 Defender                                |
 | Centre d’intégrité              | Paramètres -> Identités -> Capteurs                            |
 | Activités d’entité          | Recherche avancée de menaces                                             |
 | Paramètres                   | Paramètres - identités >                                       |

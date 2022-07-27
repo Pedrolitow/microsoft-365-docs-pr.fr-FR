@@ -5,7 +5,7 @@ description: Découvrez la section rapport d’analyste de chaque rapport d’an
 keywords: rapport d’analyste, analyse des menaces, détections, requêtes de repérage avancées, atténuations,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,18 +20,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 396be53e4c238a8de21082f025762a1a4243b57c
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731139"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051489"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprendre le rapport d’analyste dans l’analyse des menaces dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -73,24 +73,24 @@ Bien que vous puissiez utiliser l’onglet **Exposition & atténuations** pour �
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Comprendre comment chaque menace peut être détectée
 
-Le rapport d’analyste fournit également les détections des fonctionnalités Antivirus Microsoft Defender et _protection évolutive des points de terminaison_ (PEPT).
+Le rapport d’analyste fournit également les détections de l’Antivirus Microsoft Defender et des fonctionnalités de _détection et de réponse_ des points de terminaison (EDR).
 
 ### <a name="antivirus-detections"></a>Détections antivirus
 
-Ces détections sont disponibles sur les appareils avec [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activés. Lorsque ces détections se produisent sur les appareils qui ont été intégrés à Microsoft Defender pour point de terminaison, elles déclenchent également des alertes qui éclairent les graphiques du rapport.
+Ces détections sont disponibles sur les appareils sur lesquels [l’Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) est activé. Lorsque ces détections se produisent sur les appareils qui ont été intégrés à Microsoft Defender pour point de terminaison, elles déclenchent également des alertes qui éclairent les graphiques du rapport.
 
 >[!NOTE]
 >Le rapport d’analyste répertorie également **les détections génériques** qui peuvent identifier un large éventail de menaces, en plus des composants ou des comportements spécifiques à la menace suivie. Ces détections génériques ne se reflètent pas dans les graphiques.
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertes de détection et de réponse de point de terminaison (PEPT)
+### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertes de détection et de réponse de point de terminaison (EDR)
 
-PEPT alertes sont déclenchées pour [les appareils intégrés à Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender pour point de terminaison et d’autres fonctionnalités de point de terminaison, telles que l’antivirus, la protection réseau, la protection contre les falsifications, qui servent de sources de signal puissantes.
+Des alertes EDR sont déclenchées pour [les appareils intégrés à Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender pour point de terminaison et d’autres fonctionnalités de point de terminaison, telles que l’antivirus, la protection réseau, la protection contre les falsifications, qui servent de sources de signal puissantes.
 
-À l’instar de la liste des détections antivirus, certaines alertes PEPT sont conçues pour signaler de manière générique les comportements suspects qui peuvent ne pas être associés à la menace suivie. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun des graphiques du rapport.
+À l’instar de la liste des détections antivirus, certaines alertes EDR sont conçues pour signaler de manière générique les comportements suspects qui peuvent ne pas être associés à la menace suivie. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun des graphiques du rapport.
 
-### <a name="email-related-detections-and-mitigations"></a>Détections et atténuations liées aux e-mails
+### <a name="email-related-detections-and-mitigations"></a>détections et atténuations liées à Email
 
-Les détections liées aux e-mails et les atténuations de Microsoft Defender pour Office 365 sont incluses dans les rapports d’analystes en plus des données de point de terminaison déjà disponibles à partir de Microsoft Defender pour point de terminaison.
+Email détections et atténuations liées aux Microsoft Defender pour Office 365 sont incluses dans les rapports d’analystes en plus des données de point de terminaison déjà disponibles à partir de Microsoft Defender pour point de terminaison.
 
 Les informations de tentative d’e-mail empêchées vous donnent des informations sur la cible de la menace que votre organisation a abordée dans le rapport d’analyste, même si l’attaque a été effectivement bloquée avant la remise ou remise au dossier courrier indésirable.
 

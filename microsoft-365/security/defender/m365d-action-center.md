@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,17 +23,14 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 631849997fffc0e4f90a9aa9d1850646b764a52a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b82d40a1bc12b480851de3ecaec639717b3c00c7
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493484"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051797"
 ---
 # <a name="the-action-center"></a>Centre de notifications
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 - Microsoft 365 Defender
@@ -68,28 +66,34 @@ Vous pouvez utiliser le Centre d’actions unifié si vous disposez des autorisa
 > [!TIP]
 > Pour en savoir plus, consultez [Configuration requise](./prerequisites.md).
 
+Vous pouvez accéder à la liste des actions en attente d’approbation de deux manières différentes :
+
+- Accédez à [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); ou
+- Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans la carte de réponse & examen automatisé, **sélectionnez Approuver dans le Centre d’actions**.
+
 ## <a name="using-the-action-center"></a>Utilisation du centre d’actions
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> et connectez-vous. 
-2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-Lorsque vous visitez le centre d’action, deux onglets s’affichent : **Actions en attente** et **Historique**. Le tableau suivant récapitule ce que vous verrez sous chaque onglet :
+2. Dans le volet de navigation, choisissez **Centre de notifications**. Ou, dans la carte de réponse & examen automatisé, **sélectionnez Approuver dans le Centre d’action**.
 
-|Tab  |Description  |
-|---------|---------|
-|**Pending**     | Affiche une liste des actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, fichier de mise en quarantaine). <p>**CONSEIL** : Veillez à examiner et approuver (ou rejeter) les actions en attente dès que possible afin que vos enquêtes automatisées puissent se terminer en temps voulu.       |
-|**Historique**     | Sert de journal d’audit pour les actions qui ont été effectuées, par exemple : <br/>- Mesures correctives prises à la suite d’enquêtes automatisées <br/>- Actions de correction effectuées sur des messages électroniques, des fichiers ou des URL suspects ou malveillants<br/>- Actions de correction approuvées par votre équipe des opérations de sécurité <br/>- Commandes exécutées et actions de correction appliquées pendant les sessions Live Response<br/>- Actions de correction effectuées par votre protection antivirus <p>Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées](m365d-autoir-actions.md#undo-completed-actions)).        |
+3. Utilisez les onglets **Actions en attente** et **Historique** . Le tableau suivant récapitule ce que vous verrez sous chaque onglet :
 
-Vous pouvez personnaliser, trier, filtrer et exporter des données dans le Centre d’actions.
+   |Tab  |Description  |
+   |---------|---------|
+   |**Pending**     | Affiche une liste des actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, fichier de mise en quarantaine). <br/><br/>Veillez à examiner et approuver (ou rejeter) les actions en attente dès que possible afin que vos enquêtes automatisées puissent se terminer en temps voulu.       |
+   |**Historique**     | Sert de journal d’audit pour les actions qui ont été effectuées, par exemple : <br/>- Mesures correctives prises à la suite d’enquêtes automatisées <br/>- Actions de correction effectuées sur des messages électroniques, des fichiers ou des URL suspects ou malveillants<br/>- Actions de correction approuvées par votre équipe des opérations de sécurité <br/>- Commandes exécutées et actions de correction appliquées pendant les sessions Live Response<br/>- Actions de correction effectuées par votre protection antivirus<br/><br/>Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées](m365d-autoir-actions.md#undo-completed-actions)).        |
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Fonctionnalités de tri, de filtrage et de personnalisation du centre d’actions" lightbox="../../media/m3d-action-center-columnsfilters.png":::
+4. Vous pouvez personnaliser, trier, filtrer et exporter des données dans le Centre d’actions.
 
-- Sélectionnez un en-tête de colonne pour trier les éléments dans l’ordre croissant ou décroissant.
-- Utilisez le filtre de période pour afficher les données du dernier jour, semaine, 30 jours ou 6 mois.
-- Choisissez les colonnes que vous souhaitez afficher.
-- Spécifiez le nombre d’éléments à inclure sur chaque page de données.
-- Utilisez des filtres pour afficher uniquement les éléments que vous souhaitez voir.
-- Sélectionnez **Exporter** pour exporter les résultats vers un fichier .csv.
+   :::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Capture d’écran montrant les fonctionnalités de tri, de filtrage et de personnalisation du Centre d’actions." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+
+   - Sélectionnez un en-tête de colonne pour trier les éléments dans l’ordre croissant ou décroissant.
+   - Utilisez le filtre de période pour afficher les données du dernier jour, semaine, 30 jours ou 6 mois.
+   - Choisissez les colonnes que vous souhaitez afficher.
+   - Spécifiez le nombre d’éléments à inclure sur chaque page de données.
+   - Utilisez des filtres pour afficher uniquement les éléments que vous souhaitez voir.
+   - Sélectionnez **Exporter** pour exporter les résultats vers un fichier .csv.
 
 ## <a name="actions-tracked-in-the-action-center"></a>Actions suivies dans le centre d’actions
 

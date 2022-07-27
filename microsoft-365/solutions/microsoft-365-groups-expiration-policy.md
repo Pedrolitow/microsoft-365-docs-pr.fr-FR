@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 41a179dc714063a66ba34aeb676321badfc5f947
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720454"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050653"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -64,7 +64,9 @@ La durée de vie du groupe est spécifiée en jours et peut être définie sur 1
 
 Si le groupe n’a pas de propriétaire, les e-mails d’expiration sont envoyés à l’administrateur spécifié.
 
-Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes sélectionnés (jusqu’à 500) ou la désactiver complètement en sélectionnant **Aucun**. Notez qu’actuellement, vous ne pouvez pas avoir de stratégies différentes pour différents groupes.
+Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes sélectionnés (jusqu’à 500) ou la désactiver complètement en sélectionnant **Aucun**. Lorsque vous sélectionnez **Aucun** , tous les groupes actifs et en attente de vérification n’ont aucune date d’expiration. Toutefois, les groupes qui sont déjà arrivés à expiration ne sont pas affectés.
+
+Notez qu’actuellement, vous ne pouvez pas avoir de stratégies différentes pour différents groupes.
 
 ![Capture d’écran des paramètres d’expiration des groupes dans Azure Active Directory.](../media/azure-groups-expiration-settings.png)
 

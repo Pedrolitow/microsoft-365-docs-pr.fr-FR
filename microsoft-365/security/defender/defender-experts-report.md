@@ -5,7 +5,7 @@ description: Le service Defender Experts for Hunting publie des rapports mensuel
 keywords: rapport d’analyste, rapport d’experts defender, détections, notifications d’experts defender, chasse, notifications, catégories de menaces, rapports de chasse
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cf768ce5dec194f2f1514a29e7cb98c6d753223
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 5e083a9b0edd4895a2349d6508a30528bd86db5b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842185"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050716"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Comprendre le rapport Defender Experts for Hunting dans Microsoft 365 Defender
 
@@ -83,7 +83,7 @@ Les tactiques MITRE ATT&CK représentent des objectifs adversaires, ce qu’ils 
 5.  Évasion de défense 
 6.  Accès aux informations d’identification
 7.  Découverte
-8.  Mouvement latéral    
+8.  Déplacement latéral    
 9.  Collection
 10. Commande et contrôle
 11. Exfiltration    

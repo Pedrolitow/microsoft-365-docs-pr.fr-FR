@@ -2,7 +2,7 @@
 title: Fournir un accès au fournisseur de services de sécurité managé (MSSP)
 description: En savoir plus sur les modifications apportées par le Centre de sécurité Microsoft Defender au portail Microsoft 365 Defender
 keywords: Prise en main du portail Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour point de terminaison, MDO, MDE, volet unique de verre, portail convergé, portail de sécurité, portail de sécurité Defender
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4eccd4d6140810bae4caef5e194082aeb3054217
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102369"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050717"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité managé (MSSP) 
 
@@ -123,7 +123,7 @@ Pour implémenter une solution d’accès délégué multilocataire, procédez c
 
     Exemple : `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
-2. Approuvez ou refusez les demandes dans la section **Approbations** de l’interface utilisateur.
+2. Approuvez ou refusez **les demandes** dans la section Approbations de l’interface utilisateur.
 
      À ce stade, l’accès aux analystes a été approvisionné et chaque analyste doit être en mesure d’accéder au portail Microsoft 365 Defender du client :
 

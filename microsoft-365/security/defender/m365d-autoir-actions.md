@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,19 +24,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 43c48081a86e33cd918bc4de8f01859bc1107583
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1dc09357f2b16a0d00dc995ff2a9e10285ccb81b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666831"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050675"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le Centre d’actions
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les fonctionnalités de protection contre les menaces dans Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
@@ -47,7 +45,12 @@ Les fonctionnalités de protection contre les menaces dans Microsoft 365 Defende
 > [!NOTE]
 > Vous devez disposer des [autorisations appropriées](m365d-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction. Pour plus d’informations, consultez les [prérequis](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
-## <a name="review-pending-actions-in-the-action-center"></a>Passer en revue les actions en attente dans le Centre d’actions
+Pour accéder au Centre d’actions, effectuez l’une des étapes suivantes :
+
+- Accédez à [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); ou
+- Dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), dans la carte de réponse & examen automatisé, **sélectionnez Approuver dans le Centre d’actions**.
+
+## <a name="review-pending-actions-in-the-action-center"></a>Examiner les actions en attente dans le centre d'action
 
 Il est important d’approuver (ou de refuser) les actions en attente dès que possible de sorte que vos enquêtes automatisées puissent se poursuivre et se terminer dans un délai raisonnable. 
 

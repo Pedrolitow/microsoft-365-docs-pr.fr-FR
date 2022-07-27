@@ -1,8 +1,8 @@
 ---
-title: API d’importation d’indicateurs
-description: Découvrez comment utiliser le lot d’importation de l’API d’indicateur dans Microsoft Defender pour le point de terminaison.
-keywords: api, api pris en charge, envoyer, ti, indicateur, mettre à jour
-ms.prod: w10
+title: API Importer des indicateurs
+description: Découvrez comment utiliser le lot d’importation de l’API Indicateur dans Microsoft Defender pour point de terminaison.
+keywords: api, api prises en charge, submit, ti, indicator, update
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 7306489e537e583055e037ce9d8ce04add248844
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c2e53fdf2c8786c8f9e605d822024eeef4ed170e
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283700"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051599"
 ---
-# <a name="import-indicators-api"></a>API d’importation d’indicateurs
+# <a name="import-indicators-api"></a>API Importer des indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,25 +38,25 @@ ms.locfileid: "61283700"
 
 ## <a name="api-description"></a>Description de l’API
 
-Envoie ou met à jour le lot [d’entités](ti-indicator.md) d’indicateurs.
+Envoie ou Mises à jour lot d’entités [d’indicateur](ti-indicator.md).
 
-La notation CIDR pour les IPs n’est pas prise en charge.
+La notation CIDR pour les adresses IP n’est pas prise en charge.
 
 ## <a name="limitations"></a>Limites
 
-1. Les limites de taux pour cette API sont de 30 appels par minute.
-2. Il existe une limite de 15 000 indicateurs [actifs](ti-indicator.md) par client.
-3. La taille de lot maximale pour un appel d’API est de 500.
+1. Les limitations de débit pour cette API sont de 30 appels par minute.
+2. Il existe une limite de 15 000 [indicateurs actifs](ti-indicator.md) par locataire.
+3. La taille maximale du lot pour un appel d’API est de 500.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Prise en main](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Ti.ReadWrite|« Lire et écrire des indicateurs »
-Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
-Déléguée (compte professionnel ou scolaire)|Ti.ReadWrite|« Lire et écrire des indicateurs »
+Application|Ti.ReadWrite|« Indicateurs de lecture et d’écriture »
+Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
+Déléguée (compte professionnel ou scolaire)|Ti.ReadWrite|« Indicateurs de lecture et d’écriture »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -68,21 +68,21 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
+Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
 
 Paramètre|Type|Description
 :---|:---|:---
-Indicateurs|List<[Indicator](ti-indicator.md)>|Liste des [indicateurs](ti-indicator.md). **Obligatoire**
+Indicateurs|[List<Indicator](ti-indicator.md)>|Liste des [indicateurs](ti-indicator.md). **Obligatoire**
 
 ## <a name="response"></a>Réponse
 
-- Si elle réussit, cette méthode renvoie un code de réponse 200 - OK avec une liste de résultats d’importation par indicateur, voir l’exemple ci-dessous.
-- Si elle ne réussit pas : cette méthode retourne 400 - Demande non bonne. Une demande incorrecte indique généralement un corps incorrect.
+- Si elle réussit, cette méthode renvoie le code de réponse 200 - OK avec une liste de résultats d’importation par indicateur, voir l’exemple ci-dessous.
+- Si elle ne réussit pas : cette méthode retourne 400 - Requête incorrecte. Une requête incorrecte indique généralement un corps incorrect.
 
 ## <a name="example"></a>Exemple
 

@@ -3,7 +3,7 @@ title: Analyse des menaces dans Microsoft 365 Defender
 ms.reviewer: ''
 description: Découvrez les menaces émergentes et les techniques d’attaque et comment les arrêter. Évaluez leur impact sur votre organisation et évaluez la résilience de votre organisation.
 keywords: analyse des menaces, évaluation des risques, Microsoft 365 Defender, M365D, état d’atténuation, configuration sécurisée, Microsoft Defender pour Office 365, Microsoft Defender pour Office 365  analyse des menaces, analyse des menaces MDO, données MDE et MDO d’analyse des menaces intégrées, intégration des données d’analyse des menaces, analyse intégrée Microsoft 365 Defender des menaces
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b034445951a0b8f52e995ff3372a2b0404f8cbfb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731016"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050785"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Analyse des menaces dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analytiq
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-Vous pouvez accéder à l’analytique des menaces à partir du côté supérieur gauche de Microsoft 365 barre de navigation du portail de sécurité, ou à partir d’une carte de tableau de bord dédiée qui affiche les principales menaces pour votre organisation, à la fois en termes d’impact et en termes d’exposition.
+Vous pouvez accéder à l’analytique des menaces à partir du côté supérieur gauche de la barre de navigation du portail de sécurité Microsoft 365, ou à partir d’une carte de tableau de bord dédiée qui affiche les principales menaces pour votre organisation, à la fois en termes d’impact et en termes d’exposition.
 
 :::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Page d’accueil de l’analyse des menaces" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
@@ -71,7 +71,7 @@ Chaque rapport fournit une analyse d’une menace suivie et des conseils détail
 Le tableau de bord Analyse des menaces ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) met en évidence les rapports les plus pertinents pour votre organisation. Il récapitule les menaces dans les sections suivantes :
 
 - **Menaces** les plus récentes : répertorie les derniers rapports sur les menaces publiés ou mis à jour, ainsi que le nombre d’alertes actives et résolues.
-- **Menaces à fort impact** : répertorie les menaces qui ont le plus d’impact sur votre organisation. Cette section répertorie les menaces avec le plus grand nombre d’alertes actives et résolues en premier.
+- **Menaces à fort impact** : répertorie les menaces qui ont le plus d’impact sur votre organisation. Cette section répertorie d’abord les menaces avec le plus grand nombre d’alertes actives et résolues.
 - **Exposition la plus élevée** : répertorie d’abord les menaces présentant les niveaux d’exposition les plus élevés. Le niveau d’exposition d’une menace est calculé à l’aide de deux informations : la gravité des vulnérabilités associées à la menace et le nombre d’appareils de votre organisation qui peuvent être exploités par ces vulnérabilités.
 
 Sélectionnez une menace dans le tableau de bord pour afficher le rapport correspondant à cette menace.
@@ -84,7 +84,7 @@ _Tableau de bord Analyse des menaces. Vous pouvez également sélectionner le ch
 
 Chaque rapport d’analyse des menaces fournit des informations dans plusieurs sections :
 
-- [**Aperçu**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
+- [**Vue d’ensemble**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
 - [**Rapport d’analystes**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**Incidents connexes**](#related-incidents-view-and-manage-related-incidents)
 - [**Ressources impactées**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
@@ -207,9 +207,9 @@ Pour configurer des notifications par e-mail pour les rapports d’analyse des m
 
 1. Sélectionnez **Paramètres** dans la barre latérale Microsoft 365 Defender. Sélectionnez **Microsoft 365 Defender** dans la liste des paramètres.
  
-![Capture d’écran avec « Paramètres » et « Microsoft 365 Defender » mis en surbrillance en rouge](../../media/threat-analytics/ta_create_notification_0.png)
+![Capture d’écran avec « Paramètres » et « Microsoft 365 Defender » mis en évidence en rouge](../../media/threat-analytics/ta_create_notification_0.png)
 
-2. Choisissez **Notifications** >  par **e-mailThreat Analytics**, puis sélectionnez le bouton **+ Créer une règle de notification**. Un menu volant s’affiche.
+2. Choisissez **Email notifications Analyse des menaces** > , puis sélectionnez le bouton **+ Créer une règle de notification**. Un menu volant s’affiche.
 
 ![Capture d’écran avec « + Créer une règle de notification » en rouge](../../media/threat-analytics/ta_create_notification_1.png)
 
@@ -243,14 +243,14 @@ Pour configurer des notifications par e-mail pour les rapports d’analyse des m
 ## <a name="additional-report-details-and-limitations"></a>Détails et limitations supplémentaires du rapport
 
 > [!NOTE]
-> Dans le cadre de l’expérience de sécurité unifiée, l’analytique des menaces est désormais disponible non seulement pour Microsoft Defender pour point de terminaison, mais également pour Microsoft Defender pour les titulaires de licences Office E5.
+> Dans le cadre de l’expérience de sécurité unifiée, l’analytique des menaces est désormais disponible non seulement pour Microsoft Defender pour point de terminaison, mais également pour les titulaires de licence Microsoft Defender pour Office E5.
 >
-> Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans données Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender ( Microsoft Defender pour point de terminaison).
+> Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender ( Microsoft Defender pour point de terminaison).
 
 Pour accéder aux rapports d’analyse des menaces, vous avez besoin de certains rôles et autorisations. Pour plus d’informations, consultez [rôles personnalisés dans le contrôle d’accès en fonction du rôle pour Microsoft 365 Defender](custom-roles.md).
 
 - Pour afficher les alertes, les incidents ou les données de ressources affectées, vous devez disposer d’autorisations sur Microsoft Defender pour Office ou Microsoft Defender pour point de terminaison données d’alertes, ou les deux.
-- Pour afficher les tentatives d’e-mail empêchées, vous devez disposer d’autorisations sur Microsoft Defender pour Office données de chasse.
+- Pour afficher les tentatives d’e-mail empêchées, vous devez disposer d’autorisations sur les données de repérage Microsoft Defender pour Office.
 - Pour afficher les atténuations, vous devez disposer d’autorisations pour Gestion des menaces et des vulnérabilités données dans Microsoft Defender pour point de terminaison.
 
 Lorsque vous examinez les données d’analyse des menaces, n’oubliez pas les facteurs suivants :
@@ -258,7 +258,7 @@ Lorsque vous examinez les données d’analyse des menaces, n’oubliez pas les 
 - Les graphiques reflètent uniquement les atténuations suivies. Consultez la vue d’ensemble du rapport pour obtenir des atténuations supplémentaires qui ne sont pas affichées dans les graphiques.
 - Les atténuations ne garantissent pas une résilience complète. Les atténuations fournies reflètent les meilleures actions possibles nécessaires pour améliorer la résilience.
 - Les appareils sont considérés comme « indisponibles » s’ils n’ont pas transmis de données au service.
-- Les statistiques relatives aux antivirus sont basées sur Antivirus Microsoft Defender paramètres. Les appareils avec des solutions antivirus tierces peuvent apparaître comme étant « exposés ».
+- Les statistiques relatives aux antivirus sont basées sur les paramètres de l’Antivirus Microsoft Defender. Les appareils avec des solutions antivirus tierces peuvent apparaître comme étant « exposés ».
 
 ## <a name="related-articles"></a>Articles connexes
 

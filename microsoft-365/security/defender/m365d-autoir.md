@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,18 +22,18 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 332802150235ec6f47c4bdea34b34edb94ea1b90
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: deb0a7be8dcf359c901d714006ea3b46862586fb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731326"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050741"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Enquête et réponse automatisées dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Si votre organisation utilise [Microsoft 365 Defender](microsoft-365-defender.md), votre équipe chargée des opérations de sécurité reçoit une alerte dans le portail Microsoft 365 Defender chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux apparemment sans fin de menaces qui peuvent entrer, les équipes de sécurité sont souvent confrontées au défi de résoudre le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe chargée des opérations de sécurité à traiter les menaces plus efficacement et plus efficacement.
@@ -54,7 +55,7 @@ Dans Microsoft 365 Defender, l’investigation et la réponse automatisées avec
 
 ## <a name="your-own-virtual-analyst"></a>Votre propre analyste virtuel
 
-Imagine avoir un analyste virtuel dans votre équipe des opérations de sécurité de niveau 1 ou 2. L’analyste virtuel est fidèle aux étapes recommandées par les opérations de sécurité pour examiner et corriger les menaces. L’analyste virtuel peut travailler 24 h/24, 7 j/7, avec une capacité illimitée, et prendre une charge importante d’investigations et de correction des menaces. Un tel analyste virtuel pourrait réduire considérablement le temps de réponse, libérant votre équipe des opérations de sécurité pour d’autres menaces importantes ou des projets stratégiques. Si ce scénario ressemble à de la science-fiction, ce n’est pas le cas ! Un tel analyste virtuel fait partie de votre suite Microsoft 365 Defender, et son nom est *une investigation et une réponse automatisées*.
+Imaginez avoir un analyste virtuel dans votre équipe des opérations de sécurité de niveau 1 ou 2. L’analyste virtuel est fidèle aux étapes recommandées par les opérations de sécurité pour examiner et corriger les menaces. L’analyste virtuel peut travailler 24 h/24, 7 j/7, avec une capacité illimitée, et prendre une charge importante d’investigations et de correction des menaces. Un tel analyste virtuel pourrait réduire considérablement le temps de réponse, libérant votre équipe des opérations de sécurité pour d’autres menaces importantes ou des projets stratégiques. Si ce scénario ressemble à de la science-fiction, ce n’est pas le cas ! Un tel analyste virtuel fait partie de votre suite Microsoft 365 Defender, et son nom est *une investigation et une réponse automatisées*.
 
 Les fonctionnalités d’investigation et de réponse automatisées permettent à votre équipe des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et les incidents de sécurité. Grâce à l’examen et à la réponse automatisés, vous pouvez réduire les coûts liés aux activités d’investigation et de réponse et tirer le meilleur parti de votre suite de protection contre les menaces. Les fonctionnalités d’investigation et de réponse automatisées aident votre équipe des opérations de sécurité à :
 
@@ -90,7 +91,7 @@ Dans Microsoft 365 Defender, chaque investigation automatisée met en corrélati
 |:---------|:---------|
 |Appareils (également appelés points de terminaison ou machines) |[Defender pour point de terminaison](../defender-endpoint/automated-investigations.md) |      
 |Utilisateurs Active Directory locaux, comportement d’entité et activités     |[Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) |      
-|Contenu de l’e-mail (messages électroniques pouvant contenir des fichiers et des URL)     |[Defender pour Office 365](../office-365-security/defender-for-office-365.md) |
+|Email contenu (messages électroniques pouvant contenir des fichiers et des URL)     |[Defender pour Office 365](../office-365-security/defender-for-office-365.md) |
 
 > [!NOTE]
 > Toutes les alertes ne déclenchent pas une investigation automatisée, et toutes les investigations n’entraînent pas des actions de correction automatisées. Cela dépend de la façon dont l’investigation et la réponse automatisées sont configurées pour votre organisation. Consultez [Configurer les fonctionnalités d’investigation et de réponse automatisées](m365d-configure-auto-investigation-response.md).
@@ -98,6 +99,15 @@ Dans Microsoft 365 Defender, chaque investigation automatisée met en corrélati
 ## <a name="viewing-a-list-of-investigations"></a>Affichage d’une liste d’investigations
 
 Pour afficher les enquêtes, accédez à la page **Incidents** . Sélectionnez un incident, puis sélectionnez l’onglet **Investigations** . Pour en savoir plus, consultez [Détails et résultats d’une enquête automatisée](m365d-autoir-results.md).
+
+## <a name="automated-investigation--response-card"></a>Carte de réponse & d’investigation automatisée 
+
+La nouvelle carte de réponse d’examen automatisé & est disponible dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Cette nouvelle carte permet de voir le nombre total d’actions de correction disponibles. La carte donne également une vue d’ensemble de toutes les alertes et du temps d’approbation requis pour chaque alerte.
+
+:::image type="content" source="../../media/automated-investigation-response-card.png" alt-text="Capture d’écran montrant la carte de réponse & d’investigation automatisée.":::
+
+À l’aide de la carte de réponse & d’enquête automatisée, votre équipe chargée des opérations de sécurité peut accéder rapidement au Centre d’actions en sélectionnant le lien **Approuver dans le Centre d’actions** , puis en effectuant les actions appropriées. La carte permet à votre équipe des opérations de sécurité de gérer plus efficacement les actions en attente d’approbation. 
+
 
 ## <a name="training-for-security-analysts"></a>Formation pour les analystes de sécurité
 
