@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 334e94844c16a386d2b96cd34627877c7584a6bc
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787471"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037707"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -101,7 +101,7 @@ Vous choisirez parmi ces options de groupe de rôles et actions de solution lors
 |Afficher & exporter les journaux d’audit|Oui|Non|Non|Non|Oui|
 
 > [!IMPORTANT]
-> Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de *rôles Insider Risk Management* ou *Insider Risk Management Administration* (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’accède pas à un scénario « zéro administrateur » si des utilisateurs spécifiques quittent votre organisation.
+> Assurez-vous d’avoir toujours au moins un utilisateur dans les groupes de rôles intégrés *Insider Risk Management* ou *Insider Risk Management Administration* (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’entre pas dans un scénario d'« administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
 
 Les membres des rôles suivants peuvent affecter des utilisateurs à des groupes de rôles de gestion des risques internes et disposer des mêmes autorisations de solution que le groupe de rôles *Insider Risk Management Administration* :
 

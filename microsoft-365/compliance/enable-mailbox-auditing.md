@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: La journalisation de l’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelé « audit de boîte aux lettres par défaut » ou « audit de boîte aux lettres activé par défaut »). Cette configuration signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, où vous pouvez rechercher les activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: c59e1e552f6598287c10adfb2661ec4d358529f9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: edf73e41d5f8f2f977d9f1256ac9a2299be182d6
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627390"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037202"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -35,7 +35,7 @@ Voici quelques avantages de l’audit de boîte aux lettres activé par défaut 
 
 - L’audit est automatiquement activé lorsque vous créez une boîte aux lettres. Vous n’avez pas besoin de l’activer manuellement pour les nouveaux utilisateurs.
 - Vous n’avez pas besoin de gérer les actions de boîte aux lettres auditées. Un ensemble prédéfini d’actions de boîte aux lettres est audité par défaut pour chaque type d’ouverture de session (Administration, Délégué et Propriétaire).
-- Lorsque Microsoft publie une nouvelle action de boîte aux lettres, l’action peut être automatiquement ajoutée à la liste des actions de boîte aux lettres qui sont auditées par défaut (sous réserve que l’utilisateur dispose de la licence appropriée). Cela signifie que vous n’avez pas besoin de surveiller l’ajout de nouvelles actions sur les boîtes aux lettres.
+- Lorsque Microsoft publie une nouvelle action de boîte aux lettres, l’action peut être ajoutée automatiquement à la liste des actions de boîte aux lettres auditées par défaut (sous réserve que l’utilisateur dispose de la licence appropriée). Cela signifie que vous n’avez pas besoin de surveiller l’ajout de nouvelles actions sur les boîtes aux lettres.
 - Vous disposez d’une stratégie d’audit de boîte aux lettres cohérente au sein de votre organisation (car vous auditez les mêmes actions pour toutes les boîtes aux lettres).
 
 > [!NOTE]
@@ -66,7 +66,7 @@ Le tableau suivant présente les types de boîtes aux lettres actuellement pris 
 |---|:---:|
 |Boîtes aux lettres utilisateur|![Marque de vérification.](../media/checkmark.png)|
 |Boîtes aux lettres partagées|![Marque de vérification.](../media/checkmark.png)|
-|Boîtes aux lettres de groupe Microsoft 365|![Coche.](../media/checkmark.png)|
+|Boîtes aux lettres de groupe Microsoft 365|![Marque de vérification.](../media/checkmark.png)|
 |Boîtes aux lettres de ressources||
 |Boîtes aux lettres de dossiers publics||
 
@@ -97,9 +97,9 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Bien que cette valeur soit acceptée comme action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**ApplyRecord**|Un élément est étiqueté en tant qu’enregistrement.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|
-|**Copier**|Un message a été copié dans un autre dossier.|![Marque de vérification.](../media/checkmark.png)|||
-|**Créer**|Un élément a été créé dans le dossier Calendrier, Contacts, Brouillon, Notes ou Tâches de la boîte aux lettres (par exemple, une demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification.](../media/checkmark.png)|
-|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque** : les enregistrements d’audit pour les actions de liaison de dossier effectuées par les délégués sont consolidés. Un enregistrement d’audit est généré pour l’accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||
+|**Copier**|Un message a été copié dans un autre dossier.|![Coche.](../media/checkmark.png)|||
+|**Create**|Un élément a été créé dans le dossier Calendrier, Contacts, Brouillon, Notes ou Tâches de la boîte aux lettres (par exemple, une demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification.](../media/checkmark.png)|
+|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque** : les enregistrements d’audit pour les actions de liaison de dossier effectuées par les délégués sont consolidés. Un enregistrement d’audit est généré pour l’accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|L’utilisateur s’est connecté à sa boîte aux lettres.|||![Coche](../media/checkmark.png)|
 |**MailItemsAccessed**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs disposant de licences E5/A5/G5. Pour plus d’informations, consultez [Configurer Microsoft Purview Audit (Premium).](set-up-advanced-audit.md) <br/><br/> Les données de messagerie sont accessibles par les protocoles de messagerie et les clients.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
@@ -107,7 +107,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 |**ModifyFolderPermissions**|Bien que cette valeur soit acceptée comme action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**Déplacer**|Un message a été déplacé vers un autre dossier.|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**RecordDelete**|Un élément étiqueté en tant qu’enregistrement a été supprimé de manière réversible (déplacé vers le dossier Éléments récupérables). Les éléments étiquetés en tant qu’enregistrements ne peuvent pas être supprimés définitivement (supprimés du dossier Éléments récupérables).|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|**RecordDelete**|Un élément étiqueté en tant qu’enregistrement a été supprimé de manière réversible (déplacé vers le dossier Éléments récupérables). Les éléments étiquetés en tant qu’enregistrements ne peuvent pas être supprimés définitivement (supprimés du dossier Éléments récupérables).|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Bien que cette valeur soit acceptée comme action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**SearchQueryInitiated**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs disposant de licences E5/A5/G5. Pour plus d’informations, consultez [Configurer Microsoft Purview Audit (Premium).](set-up-advanced-audit.md) <br/><br/> Une personne utilise Outlook (Windows, Mac, iOS, Android ou Outlook sur le web) ou l’application Courrier pour Windows 10 pour rechercher des éléments dans une boîte aux lettres.|||![Coche](../media/checkmark.png)|
 |**Send**|**Remarque** : cette valeur est disponible uniquement pour les utilisateurs disposant de licences E5/A5/G5. Pour plus d’informations, consultez [Configurer Microsoft Purview Audit (Premium).](set-up-advanced-audit.md) <br/><br/> L’utilisateur envoie un e-mail, répond à un e-mail ou transfère un e-mail.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
@@ -116,7 +116,6 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans la
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**Mettre à jour**|Un message ou l’une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|Une autre étiquette de rétention est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention qui lui est affectée).|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l’utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d’une règle sont remplies, telles que le déplacement d’un message vers un dossier spécifié ou la suppression d’un message.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 
@@ -133,13 +132,13 @@ N’oubliez pas qu’un administrateur disposant de l’autorisation d’accès 
 
 |Action de boîte aux lettres|Description|Administrateur|Délégué|Propriétaire|
 |---|---|:---:|:---:|:---:|
-|**Créer**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
+|**Create**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**Mettre à jour**|Un message ou une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
+|**Mettre à jour**|Un message ou l’une de ses propriétés a été modifié.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Vérifier que les actions de boîte aux lettres par défaut sont journalisées pour chaque type d’ouverture de session
 
@@ -298,7 +297,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Pour l’instant, vous ne pouvez pas désactiver l’audit de boîte aux lettres pour les boîtes aux lettres spécifiques lorsque l’audit de boîte aux lettres activé par défaut est activé dans votre organisation. Par exemple, la définition de la propriété de boîte aux *lettres AuditEnabled* sur **False** est ignorée.
 
-Toutefois, vous pouvez toujours utiliser l’applet de commande **Set-MailboxAuditBypassAssociation** dans Exchange Online PowerShell pour empêcher *toutes les* actions de boîte aux lettres des utilisateurs spécifiés d’être journalisées, quel que soit l’endroit où les actions se produisent. Par exemple :
+Toutefois, vous pouvez toujours utiliser l’applet de commande **Set-MailboxAuditBypassAssociation** dans Exchange Online PowerShell pour empêcher *toutes les* actions de boîte aux lettres des utilisateurs spécifiés d’être journalisées, quel que soit l’endroit où les actions se produisent. Par exemple :
 
 - Les actions du propriétaire de boîte aux lettres effectuées par les utilisateurs contournés ne sont pas journalisées.
 - Les actions déléguées effectuées par les utilisateurs contournés sur les boîtes aux lettres d’autres utilisateurs (y compris les boîtes aux lettres partagées) ne sont pas journalisées.
@@ -318,7 +317,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 La valeur **True** indique que la journalisation de l’audit de boîte aux lettres est contournée pour l’utilisateur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Plus d'informations
 
 - Bien que la journalisation de l’audit de boîte aux lettres soit activée par défaut pour toutes les organisations, seuls les utilisateurs disposant de licences E5 retournent les événements du journal d’audit de boîte aux lettres [dans les recherches de journaux d’audit dans le portail de conformité Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) ou via [l’API d’activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference) **par défaut**.
 

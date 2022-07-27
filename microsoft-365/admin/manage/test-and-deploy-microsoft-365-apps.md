@@ -14,24 +14,24 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail des applications intégrées dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 862d70fe57974d2940458cb1fa59d05674d7ff58
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3592cea8c7da906376bfd0cd8e08a71d1d298278
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115496"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037581"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer Microsoft 365 Apps par des partenaires dans le portail des applications intégrées
 
-Le Centre d'administration Microsoft 365 vous offre la possibilité de déployer des applications mono-magasin, des applications métier personnalisées et des applications partenaires Microsoft 365 à partir d’un emplacement unique. L’emplacement est accessible dans les paramètres du centre microsoft Administration, dans les applications intégrées. La possibilité de rechercher, de tester et de déployer entièrement des applications achetées et sous licence par des partenaires Microsoft à partir du portail des applications intégrées offre la commodité et les avantages dont votre organisation a besoin pour que les services métier soient régulièrement mis à jour et s’exécutent efficacement.
+Le Centre d'administration Microsoft 365 vous offre la possibilité de déployer des applications de magasin unique, des applications métier personnalisées et des applications partenaires Microsoft 365 à partir d’un emplacement unique. L’emplacement est accessible dans les paramètres du centre microsoft Administration, dans les applications intégrées. La possibilité de rechercher, de tester et de déployer entièrement des applications achetées et sous licence par des partenaires Microsoft à partir du portail des applications intégrées offre la commodité et les avantages dont votre organisation a besoin pour que les services métier soient régulièrement mis à jour et s’exécutent efficacement.
 
-Pour plus d’informations sur l’achat et la gestion des licences Microsoft 365 applications auprès de partenaires de votre organisation, consultez [Gérer et déployer des Microsoft 365 Apps à partir du Centre d'administration Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
+Pour plus d’informations sur l’achat et la gestion des licences d’applications Microsoft 365 auprès de partenaires de votre organisation, consultez [Gérer et déployer des Microsoft 365 Apps à partir du Centre d'administration Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
 Pour plus d’informations sur la façon dont les partenaires créent ces applications, consultez [Comment planifier une offre SaaS pour la Place de marché commerciale](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Le portail des applications intégrées est uniquement accessible aux administrateurs généraux et disponible uniquement pour les clients du monde entier. Cette fonctionnalité n’est pas disponible dans les clouds souverains et gouvernementaux.
+Le portail des applications intégrées est disponible uniquement pour les clients du monde entier et est accessible par les administrateurs généraux, les lecteurs généraux et les administrateurs Exchange. Cette fonctionnalité n’est pas disponible dans les clouds souverains et gouvernementaux.
 
-Le portail des applications intégrées affiche une liste d’applications, qui inclut des applications uniques et des applications Microsoft 365 des partenaires déployés par votre organisation. Seules les applications web, les applications SPFx, les compléments Office et les applications Teams sont répertoriées. Pour les applications web, vous pouvez voir deux types d’applications.
+Le portail des applications intégrées affiche une liste d’applications, qui inclut les applications uniques et les applications Microsoft 365 de partenaires déployés par votre organisation. Seules les applications web, les applications SPFx, les compléments Office et les applications Teams sont répertoriées. Pour les applications web, vous pouvez voir deux types d’applications.
 
 - Applications SaaS disponibles dans appsource.microsoft.com et pouvant être déployées par des administrateurs qui donnent leur consentement pour le compte de l’organisation.
 - Applications de la galerie SAML liées à des compléments Office.
@@ -40,7 +40,7 @@ Le portail des applications intégrées affiche une liste d’applications, qui 
 
 Vous pouvez gérer les tests et le déploiement de Microsoft 365 Apps achetées et sous licence auprès de partenaires.
 
-1. Dans le Centre d’administration, sélectionnez **Paramètres**, puis sélectionnez **Applications intégrées**.
+1. Dans le Centre d’administration, sélectionnez **Paramètres**, puis les **applications intégrées**.
 
 2. Choisissez une application avec **l’état** **d’autres applications disponibles** pour ouvrir le volet **Gérer** . L’état **d’un plus grand nombre d’applications disponibles** vous permet de savoir qu’il y a plus d’intégrations des éditeurs de logiciels indépendants qui ne sont pas encore déployées.
 
@@ -64,7 +64,7 @@ Vous pouvez rechercher, tester et déployer entièrement des applications publi�
 
 2. Sélectionnez **Obtenir des applications** pour obtenir une vue des applications.
 
-3. Dans la **page Microsoft 365 Apps** applications publiées, sélectionnez l’application que vous souhaitez déployer en choisissant **Obtenir maintenant**. Les applications affichées sont principalement word, PowerPoint, Excel, Outlook compléments, applications Teams et applications SharePoint (basées sur SharePoint Framework technologie). Acceptez les autorisations et **sélectionnez Continuer**.
+3. Dans la **page Microsoft 365 Apps** applications publiées, sélectionnez l’application que vous souhaitez déployer en choisissant **Obtenir maintenant**. Les applications affichées sont principalement word, PowerPoint, Excel, compléments Outlook, applications Teams et SharePoint (basées sur SharePoint Framework technologie). Acceptez les autorisations et **sélectionnez Continuer**.
 
 5. Sélectionnez **Déployer** en haut de la page en regard du message qui fait référence à l’attente de déploiement.
 
@@ -89,13 +89,13 @@ Vous ne pourrez pas déployer une seule application ou Microsoft 365 Apps par pa
 - L’offre SaaS est liée à des compléments, mais elle ne s’intègre pas à Microsoft Graph et aucun ID d’application AAD n’est fourni.
 - L’offre SaaS est liée à des compléments, mais l’ID d’application AAD fourni pour l’intégration de Microsoft Graph est partagé entre plusieurs offres SaaS.
 
-## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Télécharger applications métier personnalisées pour le test et le déploiement complet
+## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Charger des applications métier personnalisées pour le test et le déploiement complet
 
-1. Dans le centre d’administration, dans le volet de navigation gauche, choisissez **Paramètres**, puis **applications intégrées**.
+1. Dans le centre d’administration, dans le volet de navigation de gauche, choisissez **Paramètres** , puis **Applications intégrées**.
 
-2. Sélectionnez **Télécharger applications personnalisées**. Seule une ligne personnalisée d’applications pour Word, PowerPoint, Excel et Outlook est prise en charge.
+2. Sélectionnez **Charger des applications personnalisées**. Seule une ligne personnalisée d’applications pour Word, PowerPoint, Excel et Outlook est prise en charge.
 
-3. Télécharger le fichier manifeste à partir de votre appareil ou ajoutez un lien URL. Certaines applications vous obligent à ajouter des utilisateurs avant de pouvoir sélectionner Déployer.
+3. Chargez le fichier manifeste à partir de votre appareil ou ajoutez un lien URL. Certaines applications vous obligent à ajouter des utilisateurs avant de pouvoir sélectionner Déployer.
 
 4. Sélectionnez **Ajouter des utilisateurs**, choisissez **Est-ce un déploiement de test**, puis choisissez **Organisation entière** ou **Utilisateurs/groupes spécifiques** ou **Juste moi**.
 
@@ -107,15 +107,15 @@ Vous ne pourrez pas déployer une seule application ou Microsoft 365 Apps par pa
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>Préparer le déploiement de compléments dans des applications intégrées
 
-Office compléments vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir Commencer à utiliser votre complément Office). 
+Les compléments Office vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir Démarrer à l’aide de votre complément Office). 
 
 Les compléments offrent les avantages suivants : 
 
-- Lorsque l’application Office appropriée démarre, le complément se télécharge automatiquement. Si le complément prend en charge les commandes de complément, le complément apparaît automatiquement dans le ruban dans l’application Office. 
+- Lorsque l’application Office appropriée démarre, le complément se télécharge automatiquement. Si le complément prend en charge les commandes de complément, le complément apparaît automatiquement dans le ruban au sein de l’application Office. 
 
-- Les compléments n’apparaissent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe auquel le complément est affecté. 
+- Les compléments n’apparaissent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé d’Azure Active Directory ou d’un groupe auquel le complément est affecté. 
 
-Les compléments sont pris en charge dans trois plateformes de bureau Windows, Mac et Online Office applications. Il est également pris en charge dans iOS et Android (compléments mobiles Outlook uniquement). 
+Les compléments sont pris en charge dans trois plateformes de bureau, les applications Windows, Mac et Office en ligne. Il est également pris en charge dans iOS et Android (compléments Outlook Mobile uniquement). 
 
 L’affichage d’un complément pour le client pour tous les utilisateurs peut prendre jusqu’à 24 heures. 
 
@@ -123,32 +123,32 @@ Aujourd’hui, les administrateurs Exchange et les administrateurs généraux pe
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-Le déploiement de compléments nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3). Les utilisateurs doivent également être connectés Office à l’aide de leur ID d’organisation) et avoir des boîtes aux lettres Exchange Online et actives Exchange Online. Votre répertoire d’abonnement doit être dans ou fédéré pour Azure Active Directory. 
+Le déploiement de compléments nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3). Les utilisateurs doivent également être connectés à Office à l’aide de leur ID d’organisation) et avoir des boîtes aux lettres Exchange Online et actives Exchange Online. Votre répertoire d’abonnement doit être dans ou fédéré vers Azure Active Directory. 
 
 Le déploiement ne prend pas en charge les éléments suivants : 
 
 - des compléments ciblant Word, Excel ou PowerPoint dans Office 2013 ; 
 - un service d'annuaire local ; 
-- Déploiement de complément dans une boîte aux lettres Exchange local 
+- Déploiement de complément dans une boîte aux lettres exchange locale 
 - Déploiement de compléments COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO). 
-- Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online tels que Microsoft 365 Apps pour Les Entreprises et Microsoft 365 Apps pour Enterprise.  
+- Déploiements de Microsoft 365 qui n’incluent pas d’Exchange Online tels que Microsoft 365 Apps entreprise et Microsoft 365 Apps pour Entreprise.  
 
-### <a name="office-requirements"></a>Exigences en matière de Office 
+### <a name="office-requirements"></a>Configuration requise pour Office 
 
-Pour Les compléments Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’une des options suivantes : 
-- Sur un appareil Windows, version 1704 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3). 
+Pour les compléments Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’une des options suivantes : 
+- Sur un appareil Windows, version 1704 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), Office 365 Entreprise licences (E1/E3/E5/F3) ou Microsoft 365 Entreprise licences (E3/E5/F3). 
 - Sur un Mac, version 15.34 ou ultérieure. 
 
 Pour Outlook, vos utilisateurs doivent utiliser l’une des options suivantes : 
-- Version 1701 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3). 
+- Version 1701 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), Office 365 Entreprise licences (E1/E3/E5/F3) ou Microsoft 365 Entreprise licences (E3/E5/F3). 
 - Version 1808 ou ultérieure de Office Professionnel Plus 2019 ou Office Standard 2019. 
 - Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou Office Standard 2016 (MSI).
     > [!NOTE]
-    > Les versions MSI de Outlook affichent les compléments installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes compléments ».  
+    > Les versions MSI d’Outlook affichent les compléments installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes compléments ».  
 - Version 15.0.4937.1000 ou ultérieure de Office Professionnel Plus 2013 (MSI) ou Office Standard 2013 (MSI).
 - Version 16.0.9318.1000 ou ultérieure de Office 2016 pour Mac. 
-- Version 2.75.0 ou ultérieure de Outlook mobile pour iOS. 
-- Version 2.2.145 ou ultérieure de Outlook mobile pour Android. 
+- Version 2.75.0 ou ultérieure d’Outlook Mobile pour iOS. 
+- Version 2.2.145 ou ultérieure d’Outlook Mobile pour Android. 
 
 
 
@@ -171,13 +171,13 @@ Dans l’exemple suivant, Sandra, Sheila et le groupe Sales Department sont affe
 
 La manière la plus simple de détecter si un groupe contient des groupes imbriqués consiste à afficher la carte de visite du groupe dans Outlook. Si vous entrez le nom du groupe dans le champ **À** d’un e-mail, puis sélectionnez le nom du groupe lorsqu’il sera résolu, il vous indiquera s’il contient des utilisateurs ou des groupes imbriqués. Dans l'exemple ci-dessous, l'onglet **Membres** de la carte de visite Outlook du groupe Test n'affiche aucun utilisateur et seulement deux sous-groupes. 
 
-![Onglet Membres de Outlook carte de visite.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Onglet Membres de la carte de visite Outlook.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 Vous pouvez effectuer la requête inverse en résolvant le groupe pour voir s'il est membre d'un groupe. Dans l'exemple ci-dessous, vous pouvez voir sous l'onglet <b>Appartenance</b> de la carte de visite Outlook que le Sous-groupe 1 est membre du groupe Test. 
 
 ![Onglet Appartenance de la carte de visite Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Notez que vous pouvez utiliser le Azure Active Directory API Graph pour exécuter des requêtes afin de rechercher la liste des groupes au sein d’un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
+Notez que vous pouvez utiliser l’API Graph Azure Active Directory pour exécuter des requêtes afin de rechercher la liste des groupes au sein d’un groupe. Pour plus d'informations, voir [Opérations sur les groupes | Référence de l'API Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
 
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement des compléments Office 
 Pour déployer des compléments à l’aide d’une approche progressive, nous vous recommandons les éléments suivants : 
@@ -199,14 +199,14 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
 
 4. Sélectionnez **Tout le monde**, **utilisateurs/groupes spécifiques** ou **Juste moi** pour spécifier à qui le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. Si vous testez le complément, sélectionnez **S’agit-il d’un déploiement de test**. 
 
-5. Sélectionnez **Suivant**. Toutes les fonctionnalités et autorisations de l’application sont affichées dans un seul volet, ainsi que des informations de certification si l’application a Microsoft 365 certification. La sélection du logo de certification permet à l’utilisateur de voir plus de détails sur la certification.  
+5. Sélectionnez **Suivant**. Toutes les fonctionnalités et autorisations de l’application sont affichées dans un seul volet, ainsi que des informations de certification si l’application a la certification Microsoft 365. La sélection du logo de certification permet à l’utilisateur de voir plus de détails sur la certification.  
 
 6. Passez en revue, puis sélectionnez **Terminer le déploiement**.  
 
 7. Une icône verte « tick » s’affiche lorsque le complément est déployé. Suivez les instructions sur la page pour tester le complément. 
 
 > [!NOTE]
-> Les utilisateurs devront peut-être relancer Office pour afficher l’icône de complément sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application. 
+> Les utilisateurs devront peut-être relancer Office pour afficher l’icône de complément dans le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application. 
 
 Il est recommandé d’informer les utilisateurs et les groupes que le complément déployé est disponible. Envisagez d’envoyer un e-mail qui décrit quand et comment utiliser le complément. Incluez ou créez un lien pour aider le contenu ou les FAQ susceptibles d’aider les utilisateurs s’ils rencontrent des problèmes avec le complément. 
 
@@ -225,12 +225,12 @@ Les administrateurs généraux et les administrateurs Exchange peuvent affecter 
 La bonne option pour votre organisation dépend de votre configuration. Toutefois, nous vous recommandons d’effectuer des affectations à l’aide de groupes. En tant qu’administrateur, il peut être plus facile de gérer les compléments en utilisant des groupes et en contrôlant l’appartenance à ces groupes plutôt que d’affecter des utilisateurs individuels à chaque fois. Dans certains cas, vous souhaiterez peut-être restreindre l’accès à un petit ensemble d’utilisateurs en effectuant des affectations à des utilisateurs spécifiques en les affectant manuellement. 
 
 ### <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des compléments Office 
-Office compléments combinent un fichier manifeste XML qui contient des métadonnées sur le complément, mais qui pointe surtout vers une application web qui contient tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
+Les compléments Office combinent un fichier manifeste XML qui contient des métadonnées sur le complément, mais qui pointe surtout vers une application web qui contient tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
 - afficher des données. 
 - lire le document d'un utilisateur pour fournir des services contextuels. 
 - lire et écrire des données vers le document d'un utilisateur et à partir de celui-ci pour fournir une valeur à cet utilisateur.  
 
-Pour plus d’informations sur les types et les fonctionnalités des compléments Office, consultez [Office vue d’ensemble de la plateforme de compléments](/office/dev/add-ins/overview/office-add-ins), en particulier la section « Anatomie d’un complément Office ». 
+Pour plus d’informations sur les types et les fonctionnalités des compléments Office, consultez [la vue d’ensemble de la plateforme des compléments Office](/office/dev/add-ins/overview/office-add-ins), en particulier la section « Anatomie d’un complément Office ». 
 
 Pour interagir avec le document de l'utilisateur, le complément doit déclarer les autorisations dont il a besoin dans le fichier manifeste. Un modèle d'autorisations d'accès d'une API JavaScript à cinq niveaux fournit la base de la confidentialité et de la sécurité pour les utilisateurs des compléments du volet Office. La plupart des compléments de l'Office Store sont au niveau ReadWriteDocument. Presque tous les compléments prennent en charge le niveau ReadDocument au minimum. Pour plus d'informations sur les niveaux d'autorisation, voir [Demande d'autorisations pour l'utilisation d'API dans les compléments de contenu et du volet Office](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
@@ -239,10 +239,10 @@ Lors de la mise à jour d'un manifeste, les modifications standard sont apporté
 Les mises à jour des compléments se produisent comme suit : 
 - **Complément métier : dans** ce cas, lorsqu’un administrateur a chargé explicitement un manifeste, le complément requiert que l’administrateur charge un nouveau fichier manifeste pour prendre en charge les modifications de métadonnées. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment. 
 
-- **Office Complément du Store** : lorsqu’un administrateur sélectionne un complément dans le Office Store, si un complément est mis à jour dans le Office Store, la prochaine fois que les applications Office appropriées démarrent, le complément est mis à jour. L'application web peut changer à tout moment. 
+- **Complément Office Store** : lorsqu’un administrateur sélectionne un complément à partir de l’Office Store, si un complément est mis à jour dans l’Office Store, la prochaine fois que les applications Office appropriées démarrent, le complément est mis à jour. L'application web peut changer à tout moment. 
 
 > [!NOTE]
-> Pour Word, Excel et PowerPoint utilisez un catalogue d’applications [SharePoint](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) pour déployer des compléments sur des utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge de SharePoint compléments requis. Pour Outlook utilisez Exchange panneau de configuration pour déployer dans un environnement local sans connexion à Microsoft 365.  
+> Pour Word, Excel et PowerPoint, utilisez un catalogue d’applications [SharePoint](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) pour déployer des compléments sur des utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des compléments SharePoint requis. Pour Outlook, utilisez le panneau de configuration Exchange pour déployer dans un environnement local sans connexion à Microsoft 365.  
 
 ## <a name="add-in-states"></a>États de complément
 Un complément peut être **activé ou** **désactivé** . 
@@ -270,11 +270,14 @@ Après le déploiement, les administrateurs peuvent également gérer l'accès d
 9. Si l’application a l’état **Mise à jour en attente**, vous pouvez cliquer sur l’application pour ouvrir le volet **Gérer** et mettre à jour l’application. 
 10. Pour mettre à jour simplement les utilisateurs, sélectionnez l’onglet **Utilisateurs** et apportez la modification appropriée. Sélectionnez **Mettre à jour** après avoir apporté vos modifications.  
 
+> [!NOTE]
+> Seul l’administrateur qui a déployé le complément ou un administrateur général peut gérer ce complément.
+
 ## <a name="delete-an-add-in"></a>Suppression d’un complément
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, sélectionnez **Paramètres**, puis sélectionnez **Applications intégrées**.
+1. Dans le centre d’administration, sélectionnez **Paramètres**, puis les **applications intégrées** .
 2. Sélectionnez n’importe quelle ligne pour afficher le volet de gestion. 
 3. Sélectionnez l’onglet **Configuration** . 
 4. Sélectionnez le complément à supprimer, puis **sélectionnez Supprimer**.  
@@ -282,10 +285,11 @@ Vous pouvez également supprimer un module qui a été déployé.
 > [!NOTE]
 >  Si le complément a été déployé par un autre administrateur, le bouton Supprimer est désactivé. Seul l’administrateur qui a déployé l’application ou un administrateur général peut supprimer le complément.
 
-## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Scénarios où Exchange administrateur ne peut pas déployer un complément 
+## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Scénarios où l’administrateur Exchange ne peut pas déployer un complément 
 
-Il existe deux cas où un Exchange Administration ne peut pas déployer un complément :
-- Si un complément a besoin d’une autorisation sur MS Graph API et doit obtenir le consentement d’un administrateur général.
+Il existe deux cas où un Administration Exchange ne peut pas déployer un complément :
+
+- Si un complément a besoin d’une autorisation sur les API MS Graph et a besoin du consentement d’un administrateur général.
 - Si un complément est lié à au moins deux compléments et applications web, et qu’au moins un de ces compléments est déployé par un autre administrateur (exchange/global) et que l’affectation de l’utilisateur n’est pas uniforme. Nous autorisons uniquement le déploiement de compléments lorsque l’affectation de l’utilisateur est identique pour toutes les applications déjà déployées.  
 
 
@@ -293,7 +297,7 @@ Il existe deux cas où un Exchange Administration ne peut pas déployer un compl
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Quel rôle d’administrateur dois-je accéder aux applications intégrées ?
 
-Seuls les administrateurs généraux peuvent accéder aux applications intégrées. Les applications intégrées ne s’affichent pas dans la navigation de gauche pour les autres administrateurs.
+Seuls les administrateurs généraux et les administrateurs Exchange peuvent accéder aux applications intégrées. Les applications intégrées ne s’affichent pas dans la navigation de gauche pour les autres administrateurs.
 
 ### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Pourquoi le complément s’affiche-t-il dans la navigation de gauche sous Paramètre, mais pas dans les applications intégrées ?
 
@@ -304,11 +308,11 @@ Il peut y avoir quelques raisons :
 
 ### <a name="what-apps-can-i-deploy-from-integrated-apps"></a>Quelles applications puis-je déployer à partir d’applications intégrées ?
 
-Les applications intégrées permettent le déploiement de Web Apps, d’applications Teams, de Excel, de PowerPoint, de Word, de compléments Outlook et d’applications SPFx. Pour les compléments, les applications intégrées prennent en charge le déploiement pour Exchange boîtes aux lettres en ligne et non des boîtes aux lettres Exchange locales.
+Les applications intégrées permettent le déploiement d’Web Apps, d’applications Teams, d’Excel, de PowerPoint, de Word, de compléments Outlook et d’applications SPFx. Pour les compléments, les applications intégrées prennent en charge le déploiement vers des boîtes aux lettres Exchange online et non sur des boîtes aux lettres Exchange locales.
 
 ### <a name="can-administrators-delete-or-remove-apps"></a>Les administrateurs peuvent-ils supprimer ou supprimer des applications ?
 
-Oui. Les administrateurs généraux peuvent supprimer ou supprimer des applications.
+Seul l’administrateur qui a déployé l’application ou le complément ou un administrateur général peut la supprimer ou la supprimer.
 
 - Sélectionnez une application dans l’affichage liste. Sous l’onglet **Configuration** , sélectionnez les applications à supprimer.  
 

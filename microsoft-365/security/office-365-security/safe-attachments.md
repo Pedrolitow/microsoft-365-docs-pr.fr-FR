@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité Pièces jointes sécurisées dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd2a037ee8ffc87f64bf01b794b468242976fa0b
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 6ba76616e931810aadaeded61a30386c84e46029
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772596"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037531"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
@@ -39,6 +39,8 @@ Les pièces jointes sécurisées dans [Microsoft Defender pour Office 365](defen
 
 La protection des pièces jointes fiables pour les messages électroniques est contrôlée par des stratégies de pièces jointes fiables. Bien qu’il n’existe aucune stratégie de pièces jointes sécurisées par défaut, la stratégie de sécurité prédéfinie de **protection intégrée** fournit une protection des pièces jointes sécurisées à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de pièces jointes sécurisées personnalisées). Pour plus d’informations, consultez [Stratégies de sécurité prédéfinies dans EOP et Microsoft Defender pour Office 365](preset-security-policies.md). Vous pouvez également créer des stratégies de pièces jointes sécurisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques. Pour obtenir des instructions, consultez [Configurer des stratégies de pièces jointes sécurisées dans Microsoft Defender pour Office 365](set-up-safe-attachments-policies.md).
 
+Si une pièce jointe de fichier est chiffrée ou protégée par mot de passe, elle ne peut pas être examinée par les pièces jointes sécurisées. Le message contenant la pièce jointe est remis et le destinataire ne reçoit aucun avertissement indiquant que le fichier n’a pas été analysé par les pièces jointes sécurisées.
+
 Le tableau suivant décrit les scénarios de pièces jointes sécurisées dans Microsoft 365 et les organisations Office 365 qui incluent des Microsoft Defender pour Office 365 (en d’autres termes, le manque de licences n’est jamais un problème dans les exemples).
 
 |Scénario|Résultat|
@@ -46,7 +48,7 @@ Le tableau suivant décrit les scénarios de pièces jointes sécurisées dans M
 |Aucune stratégie de pièces jointes sécurisées n’est configurée dans l’organisation Microsoft 365 E5 de Pat.|Pat est protégé par des pièces jointes sécurisées en raison de la stratégie de sécurité prédéfinie de **protection intégrée** qui s’applique à tous les destinataires qui ne sont pas autrement définis dans les stratégies pièces jointes sécurisées.|
 |L’organisation de Lee a une stratégie de pièces jointes sécurisées qui s’applique uniquement aux employés financiers. Lee est membre du service des ventes.|Lee et le reste du service des ventes sont protégés par des pièces jointes sécurisées en raison de la stratégie de sécurité prédéfinie de **protection intégrée** qui s’applique à tous les destinataires qui ne sont pas autrement définis dans les stratégies pièces jointes sécurisées.|
 |Hier, un administrateur de l’organisation de Jean a créé une stratégie de pièces jointes sécurisées qui s’applique à tous les employés. Plus tôt dans la journée, Jean a reçu un e-mail contenant une pièce jointe.|Jean est protégé par des pièces jointes sécurisées en raison de cette stratégie de pièces jointes sécurisées personnalisée. <br/><br/> En règle générale, l’application d’une nouvelle stratégie prend environ 30 minutes.|
-|L’organisation de Chris a des stratégies de pièces jointes sécurisées de longue date pour tous les membres de l’organisation. Chris reçoit un e-mail contenant une pièce jointe, puis transmet le message aux destinataires externes.|Chis est protégé par des pièces jointes sécurisées. <br/><br/> Si les destinataires externes d’une organisation Microsoft 365, les messages transférés sont également protégés par des pièces jointes sécurisées.|
+|L’organisation de Chris a des stratégies de pièces jointes sécurisées de longue date pour tous les membres de l’organisation. Chris reçoit un e-mail contenant une pièce jointe, puis transmet le message aux destinataires externes.|Chis est protégé par des pièces jointes sécurisées. <br/><br/> Si les destinataires externes se trouvent dans une organisation Microsoft 365, les messages transférés sont également protégés par des pièces jointes sécurisées.|
 
 L’analyse des pièces jointes fiables a lieu dans la même région que l’emplacement de vos données Microsoft 365. Pour plus d’informations sur la géographie du centre de données, consultez [Où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
 
@@ -91,9 +93,9 @@ Cette section décrit les paramètres des stratégies pièces jointes sécurisé
   > - Le destinataire est : romain@contoso.com
   > - Le destinataire est membre de : Exécutifs
   >
-  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
-  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 - **Priorité** : si vous créez plusieurs stratégies, vous pouvez spécifier l’ordre dans lequel elles sont appliquées. Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 

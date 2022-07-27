@@ -15,12 +15,12 @@ ms.custom:
 - it-pro
 - intro-overview
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: ccbc91dbaf49b8470f90ca8ea732c6a9580058bf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6c79427f48867f5da7cf869e4856ad6b31dc6ed1
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096741"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037663"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -37,7 +37,6 @@ Microsoft 365 pour entreprise inclut :
 |Applications locales et applications en cloud, et services de productivité|Comprend à la fois Microsoft 365 Apps for enterprise, les dernières applications Office pour PC et Mac (comme Word, Excel, PowerPoint, Outlook et d’autres), et une suite complète de services en ligne pour la messagerie électronique, le stockage de fichiers, la collaboration, les réunions, etc.|
 |Windows 10 Entreprise|Répond aux besoins des grandes et moyennes organisations. Il s’agit de la version la plus productive et la plus sécurisée de Windows pour les utilisateurs. Pour les professionnels de l’informatique, il fournit également une gestion complète du déploiement, des appareils et des applications.|
 |Gestion des appareils et services de sécurité avancés|Inclut Microsoft Intune, qui est un service de gestion de la mobilité en entreprise basé sur le cloud qui permet à votre personnel d'être productif tout en protégeant les données de votre organisation.|
-|||
 
 ## <a name="plans"></a>Plans
 
@@ -48,7 +47,6 @@ Microsoft 365 pour entreprise est disponible en trois plans.
 |E3|Accédez aux produits et fonctionnalités de base de Microsoft 365 pour améliorer en toute sécurité la productivité sur le lieu de travail et stimuler l'innovation.|
 |E5|Accédez aux derniers produits et fonctionnalités de Microsoft 365. Il s'agit notamment de Defender pour Office 365, des outils de sécurité et des outils de collaboration. Ce plan comprend toutes les capacités de l'E3, plus des outils avancés de sécurité, de voix et d'analyse des données.|
 |F3|Entrez en contact avec vos travailleurs de première ligne grâce à des outils et des ressources spécialement conçus pour les aider à faire leur meilleur travail.|
-|||
 
 Si vous avez Microsoft 365 E3, vous pouvez également obtenir ces modules complémentaires :
 

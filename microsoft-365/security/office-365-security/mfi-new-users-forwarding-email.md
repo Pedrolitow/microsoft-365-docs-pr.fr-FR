@@ -9,110 +9,110 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: ''
-description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux utilisateurs qui envoient des courriers électroniques dans le Centre de sécurité & conformité pour examiner quand les utilisateurs de leur organisation envoient des messages à de nouveaux domaines.
+description: Les administrateurs peuvent apprendre à utiliser les nouveaux utilisateurs qui transfèrent des informations sur les e-mails dans le Centre de sécurité & conformité pour déterminer quand les utilisateurs de leur organisation transfèrent des messages vers de nouveaux domaines.
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 43938a8d6648d5e0ed510ebb6badb1721bacc961
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470260"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037619"
 ---
-# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nouveaux utilisateurs qui envoient des informations sur le courrier électronique dans le Centre de sécurité & conformité
+# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nouveaux utilisateurs transférant des informations sur les e-mails dans le Centre de sécurité & conformité
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Il est suspect lorsque de nouveaux comptes d’utilisateurs de votre organisation commencent soudainement à envoyer des messages électroniques à des domaines externes.
+Il est suspect lorsque de nouveaux comptes d’utilisateurs de votre organisation commencent soudainement à transférer des messages électroniques vers des domaines externes.
 
-**L’aperçu** des nouveaux domaines transmis par courrier électronique dans le Centre de sécurité [&](https://protection.office.com) conformité vous informe lorsque des utilisateurs nouvellement créés dans votre organisation sont en train de forwarder des messages vers des domaines externes. Cette condition peut indiquer que des comptes d’administrateur compromis ont été utilisés pour créer les nouveaux utilisateurs. Si vous pensez que les comptes ont été compromis, voir Répondre [à un compte de messagerie compromis](responding-to-a-compromised-email-account.md).
+Les **nouveaux utilisateurs qui transfèrent des informations sur les e-mails** dans le [Centre de sécurité & conformité](https://protection.office.com) vous avertit lorsque les utilisateurs nouvellement créés dans votre organisation transfèrent des messages vers des domaines externes. Cette condition peut indiquer que des comptes d’administrateur compromis ont été utilisés pour créer les nouveaux utilisateurs. Si vous pensez que les comptes ont été compromis, consultez [Répondre à un compte de messagerie compromis](responding-to-a-compromised-email-account.md).
 
-Cette information apparaît uniquement lorsque le problème est détecté et apparaît sur la page du rapport [de forwarding](view-mail-flow-reports.md#forwarding-report) .
+Cet aperçu s’affiche uniquement lorsque le problème est détecté et s’affiche sur la page [du rapport de transfert](view-mail-flow-reports.md#forwarding-report) .
 
-:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="Informations sur les nouveaux utilisateurs qui ont transmis le courrier électronique" lightbox="../../media/mfi-new-users-forwarding-email.png":::
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="Informations sur le transfert d’e-mails par les nouveaux utilisateurs" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
-Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport de [modifications](#forwarding-modifications-report) de report, comme décrit plus loin dans cet article.
+Lorsque vous cliquez sur le widget, un menu volant s’affiche, dans lequel vous trouverez plus d’informations sur les messages transférés, y compris un lien vers le [rapport des modifications de transfert](#forwarding-modifications-report) , comme décrit plus loin dans cet article.
 
-:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="Le volant Détails qui s’affiche après avoir cliqué sur l’aperçu du courrier électronique nouveaux utilisateurs" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="Menu volant Détails qui s’affiche après avoir cliqué sur les nouveaux utilisateurs qui transfèrent des informations sur les e-mails" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
-Vous pouvez également vous rendre sur cette page de détails lorsque vous sélectionnez l’aperçu après avoir cliqué sur Afficher tout dans la zone Recommandations  & informations les plus **détaillées** **(** \> Tableau de bord de **rapports ou ).** <https://protection.office.com/insightdashboard>
+Vous pouvez également accéder à cette page de détails lorsque vous sélectionnez l’insight après avoir cliqué sur **Afficher tout** dans la zone **Informations principales & recommandations** (**Tableau de bord** **des rapports** \> ou <https://protection.office.com/insightdashboard>).
 
-Vous pouvez cliquer sur le **rapport Voir associé au lien d’informations** pour vous rendre dans le rapport de **modifications de forwarding** , comme décrit dans la section suivante.
+Vous pouvez cliquer sur le **rapport Voir associé au lien Insight** pour accéder au **rapport des modifications de transfert** , comme décrit dans la section suivante.
 
-## <a name="forwarding-modifications-report"></a>Rapport de modifications de forwarding
+## <a name="forwarding-modifications-report"></a>Rapport de transfert des modifications
 
-Le **rapport de modifications de forwarding** affiche des détails sur les messages qui sont automatiquement transmis par des expéditeurs de votre organisation :
+Le **rapport des modifications de transfert** affiche des détails sur les messages qui sont automatiquement transférés à partir d’expéditeurs de votre organisation :
 
-- Comptes nouvellement créés qui relaient des messages vers des domaines externes.
-- Comptes qui envoient des messages à des domaines externes qui n’ont jamais été transmis par d’autres expéditeurs de votre organisation.
+- Comptes nouvellement créés qui transfèrent des messages à des domaines externes.
+- Comptes qui transfèrent des messages vers des domaines externes qui n’ont jamais été transférés par d’autres expéditeurs de votre organisation.
 
-Ces types de messages transmis peuvent poser un risque de sécurité ou de conformité, et peuvent indiquer des comptes compromis.
+Ces types de messages transférés peuvent présenter un risque de sécurité ou de conformité, et peuvent indiquer des comptes compromis.
 
-Le rapport contient des données pendant 90 jours au plus. Par défaut, le rapport affiche les données des 7 derniers jours.
+Le rapport contient des données pendant 90 jours maximum. Par défaut, le rapport affiche les données des 7 derniers jours.
 
-Ce rapport n’est pas directement disponible dans le tableau de bord de [flux de messagerie](mail-flow-insights-v2.md) ou dans le tableau [de bord Rapports](view-mail-flow-reports.md). En plus de cliquer sur le rapport **Voir** associé au lien Informations dans l’aperçu des nouveaux utilisateurs qui envoient des e-mails, vous pouvez obtenir le rapport en :
+Ce rapport n’est pas directement disponible dans le [tableau de bord](mail-flow-insights-v2.md) Flux de courrier ou dans le [tableau de bord Rapports](view-mail-flow-reports.md). En plus de cliquer sur le **rapport Voir associé au lien d’insights** dans l’aperçu des **nouveaux utilisateurs qui transfèrent** des informations sur les e-mails, vous accédez au rapport en :
 
-- Cliquez sur le **lien du rapport de notifications** de forwarding dans les détails de l’aperçu des nouveaux domaines transmis par [courrier électronique](mfi-new-domains-being-forwarded-email.md).
+- Cliquez sur le lien du **rapport de notifications de transfert** dans les détails des [nouveaux domaines transférés par e-mail](mfi-new-domains-being-forwarded-email.md).
 - Ouverture <https://protection.office.com/reportv2?id=MailFlowNewForwarding>.
 
-### <a name="report-view-for-the-forwarding-modifications-report"></a>Affichage du rapport pour le rapport de modifications de report
+### <a name="report-view-for-the-forwarding-modifications-report"></a>Vue Rapport pour le rapport de modifications de transfert
 
-Les graphiques suivants sont disponibles dans l’affichage de rapport :
+Les graphiques suivants sont disponibles dans la vue rapport :
 
-- **Afficher les données pour : Nouveaux utilisateurs de forwarding** :
+- **Afficher les données pour : Nouveaux utilisateurs de transfert** :
 
-    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="Affichage Nouveaux utilisateurs de forwarding dans le rapport de modifications de forwarding" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="Affichage Des nouveaux utilisateurs de transfert dans le rapport des modifications de transfert" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
-- **Afficher les données pour : Nouveaux domaines de forwarding** :
+- **Afficher les données pour : Nouveaux domaines de transfert** :
 
-    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="Affichage Nouveaux domaines transmis dans le rapport de modifications de forwarding" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="Vue Nouveaux domaines transférés dans le rapport des modifications de transfert" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de rapport, vous pouvez spécifier une plage de dates avec **date de début** et **date de fin**.
 
-### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vue de table Détails pour le rapport de modifications de report
+### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vue de table Détails pour le rapport des modifications de transfert
 
-Si vous cliquez **sur Afficher le tableau des détails**, les informations affichées dépendent du graphique que vous regardiez :
+Si vous cliquez sur **Afficher la table de détails**, les informations affichées dépendent du graphique que vous examiniez :
 
-- **Afficher les données pour : Nouveaux utilisateurs de forwarding** :
+- **Afficher les données pour : Nouveaux utilisateurs de transfert** :
 
   - **Nom** : adresse e-mail de l’expéditeur.
-  - **Type de forwarding**
+  - **Type de transfert**
   - **Adresse du destinataire**
   - **Détails**
   - **Count**
-  - **Première date d’avance**
+  - **Première date de transfert**
 
-- **Afficher les données pour : Nouveaux domaines de forwarding** :
+- **Afficher les données pour : Nouveaux domaines de transfert** :
 
   - **Nom** : domaine de messagerie de l’expéditeur.
-  - **Type de forwarding**
+  - **Type de transfert**
   - **Adresse du destinataire**
   - **Détails**
   - **Count**
-  - **Première date d’avance**
+  - **Première date de transfert**
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec **date de début** et **date de fin**.
 
-Si vous sélectionnez une ligne dans le tableau, un volant **Détails** s’affiche avec les informations suivantes :
+Si vous sélectionnez une ligne dans le tableau, un menu volant **Détails** s’affiche avec les informations suivantes :
 
-- **Nom** : il s’agit de l’adresse e-mail de l’expéditeur (à partir de l’affichage Afficher les données pour : Affichage des nouveaux **utilisateurs** de **forwarding**) ou du domaine de messagerie de l’expéditeur (à partir de l’affichage Afficher les données pour : Nouvel affichage des nouveaux domaines de forwarding).
-- **Type de forwarding**
+- **Nom** : il s’agit de l’adresse e-mail de l’expéditeur (à partir de **l’affichage Afficher les données pour : Affichage des nouveaux utilisateurs de transfert** ) ou du domaine de messagerie de l’expéditeur (à partir de **l’affichage Afficher les données pour : Nouvel affichage des domaines de transfert** ).
+- **Type de transfert**
 - **Destinataire**
 - **Détails**
 - **Count**
 - **Date de début**
-- **Recommandation** : à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le Centre d'administration Microsoft 365.
+- **Recommandation** : À partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le Centre d'administration Microsoft 365.
 
-  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="The Details flyout from the details table of the New forwarding users view in the Forwarding modifications report" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="Menu volant Détails de la table de détails de la vue Nouveaux utilisateurs de transfert dans le rapport des modifications de transfert" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
-Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport**.
+Pour revenir à la vue Rapports, cliquez sur **Afficher le rapport**.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité](mail-flow-insights-v2.md).
+Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, consultez [les insights de flux de courrier dans le Centre de sécurité & conformité](mail-flow-insights-v2.md).
