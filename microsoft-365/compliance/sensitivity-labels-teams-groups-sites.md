@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882272"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037641"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -59,7 +59,7 @@ Une fois que vous avez activé et configuré des étiquettes de confidentialité
 ![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> Les étiquettes de confidentialité pour les conteneurs prennent en charge les [canaux partagés Teams](/MicrosoftTeams/shared-channels), actuellement en préversion. Si une équipe a des canaux partagés, elle hérite automatiquement des paramètres d’étiquette de confidentialité de son équipe parente, et cette étiquette ne peut pas être supprimée ou remplacée par une autre étiquette.
+> Les étiquettes de confidentialité pour les conteneurs prennent en charge [les canaux partagés Teams](/MicrosoftTeams/shared-channels). Si une équipe a des canaux partagés, elle hérite automatiquement des paramètres d’étiquette de confidentialité de son équipe parente, et cette étiquette ne peut pas être supprimée ou remplacée par une autre étiquette.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Comment activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes
 

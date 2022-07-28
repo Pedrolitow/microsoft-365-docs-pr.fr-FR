@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 0f0fa2da9c41700216b0142827897980870f006d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627666"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037729"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -74,7 +74,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 ### <a name="retention-policy-for-teams-locations"></a>Stratégie de rétention pour les emplacements Teams
 
 > [!NOTE]
-> Les stratégies de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en préversion. Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
+> Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
 
 1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
 

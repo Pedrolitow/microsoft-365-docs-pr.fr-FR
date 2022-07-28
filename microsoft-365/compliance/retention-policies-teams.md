@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Microsoft Teams afin de pouvoir gérer la rétention automatique ou la suppression des messages Teams pour votre organisation.
-ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943395"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037511"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -44,7 +44,7 @@ Pour les autres charges de travail, consultez:
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
 > [!NOTE]
-> Les politiques de rétention prennent désormais en charge les [canaux partagés](/MicrosoftTeams/shared-channels), actuellement en aperçu. Tous les canaux partagés héritent des paramètres de rétention du canal parent.
+> Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Tous les canaux partagés héritent des paramètres de rétention du canal parent.
 
 Les messages de conversation, les messages de canal et les messages de canal privé Teams peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte contenu dans les messages, les éléments suivants peuvent être conservés pour des raisons de conformité : images incorporées, tableaux, liens hypertexte et liens vers d’autres messages et fichiers Teams, et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation et les messages de canal privé incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
 

@@ -1,7 +1,7 @@
 ---
-title: API d’entité d’alerte de mise à jour
-description: Découvrez comment mettre à jour une alerte Microsoft Defender pour le point de terminaison à l’aide de cette API. Vous pouvez mettre à jour l’état, la détermination, la classification et les propriétés assignedTo.
-keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, ID
+title: Mettre à jour l’API d’entité d’alerte
+description: Découvrez comment mettre à jour une alerte Microsoft Defender pour point de terminaison à l’aide de cette API. Vous pouvez mettre à jour l’état, la détermination, la classification et les propriétés assignedTo.
+keywords: api, api graphe, api prises en charge, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4efe1460374350d054bbe6d19543c75454d7b5ce
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 141f57f50b8400c0fdf2b40e9d8190be96b0fe1b
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370319"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059811"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 
@@ -38,31 +38,31 @@ ms.locfileid: "61370319"
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
-Met à jour les propriétés de l’alerte [existante.](alerts.md)
+Mises à jour propriétés de [l’alerte](alerts.md) existante.
 
-L’envoi **de commentaire** est disponible avec ou sans mise à jour des propriétés.
+La soumission de **commentaire** est disponible avec ou sans mise à jour des propriétés.
 
-Les propriétés updatables `status` sont : , , et `determination` `classification` `assignedTo` .
+Les propriétés pouvant être mises à jour sont : `status`, `determination`, `classification`et `assignedTo`.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez mettre à jour les alertes disponibles dans l’API. Pour plus d’informations, voir [Alertes de liste.](get-alerts.md)
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez mettre à jour les alertes disponibles dans l’API. Pour plus d’informations, consultez [Alertes de liste](get-alerts.md).
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Alerts.ReadWrite.All|« Lire et écrire toutes les alertes »
+Application|Alerts.ReadWrite.All|« Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (pour plus d’informations, voir [Créer et gérer des rôles)](user-roles.md)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes [d’appareils](machine-groups.md)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes » (pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md) )
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -79,29 +79,32 @@ Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissons les valeurs des champs appropriés qui doivent être mis à jour.
+Dans le corps de la demande, fournissez les valeurs des champs pertinents qui doivent être mis à jour.
 
-Les propriétés existantes qui ne sont pas incluses dans le corps de la demande conserveront leurs valeurs précédentes ou seront recalculées en fonction des modifications apportées aux autres valeurs de propriété.
+Les propriétés existantes qui ne sont pas incluses dans le corps de la demande conservent leurs valeurs précédentes ou sont recalculées en fonction des modifications apportées à d’autres valeurs de propriété.
 
-Pour de meilleures performances, vous ne devez pas inclure de valeurs existantes qui n’ont pas changé.
+Pour de meilleures performances, vous ne devez pas inclure les valeurs existantes qui n’ont pas changé.
 
 Propriété|Type|Description
 :---|:---|:---
-État|Chaîne|Spécifie l’état actuel de l’alerte. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
+État|String|Spécifie l’état actuel de l’alerte. Les valeurs de propriété sont : « New », « InProgress » et « Resolved ».
 assignedTo|String|Propriétaire de l’alerte
-Classification|String|Spécifie la spécification de l’alerte. Les valeurs de propriété sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
-Détermination|Chaîne|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+Classification|String|Spécifie la spécification de l’alerte. Les valeurs de propriété sont : « Unknown », « FalsePositive », « TruePositive ».
+Détermination|String|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other »
 Commentaire|Chaîne|Commentaire à ajouter à l’alerte.
+
+>[!NOTE]
+>Vers le 29 août 2022, les valeurs de détermination d’alerte précédemment prises en charge (« Apt » et « SecurityPersonnel ») seront déconseillées et ne seront plus disponibles via l’API.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et l’entité d’alerte dans le corps de la réponse avec les propriétés mises à jour. [](alerts.md) Si l’alerte avec l’ID spécifié n’a pas été trouvée - 404 - In trouvé.
+Si elle réussit, cette méthode retourne 200 OK et l’entité [d’alerte](alerts.md) dans le corps de la réponse avec les propriétés mises à jour. Si l’alerte avec l’ID spécifié est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 PATCH https://api.securitycenter.microsoft.com/api/alerts/121688558380765161_2136280442

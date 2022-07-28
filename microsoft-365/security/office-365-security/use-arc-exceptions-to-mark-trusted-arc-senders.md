@@ -18,12 +18,12 @@ ms.custom:
 description: La chaîne de réception authentifiée (ARC) est une authentification par e-mail qui tente de préserver les résultats de l’authentification sur les appareils et les flux de courriers indirects qui se présentent entre l’expéditeur et le destinataire. Voici comment créer des exceptions pour vos expéditeurs ARC approuvés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b3057350f8b1a652a08da8c878a47e191af04d0
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "66991885"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059642"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Créer une liste d’expéditeurs ARC approuvés pour approuver des flux de courriers indirects *légitimes*
 
@@ -107,7 +107,7 @@ header.from=contoso.com;compauth=pass reason=130
 
 **Les administrateurs peuvent également configurer des configurations ARC avec Exchange Online PowerShell.**
 
-1. Connexion à Exchange Online PowerShell
+1. Connectez-vous à Exchange Online PowerShell.
 2. Connect-ExchangeOnline
 3. Pour ajouter ou mettre à jour un domaine dans un sealer ARC approuvé :
 </br>
@@ -140,6 +140,6 @@ Ici, vous voyez la même organisation **après avoir su créer un sealer ARC app
 
 ## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>Étapes suivantes : Après avoir configuré ARC pour Microsoft 365 Defender pour Office
 
-Après l’installation, vérifiez vos en-têtes ARC avec [l’analyseur d’en-tête de message](/connectivity-analyzer/message-header-analyzer).
+Après l’installation, vérifiez vos en-têtes ARC avec [l’analyseur d’en-tête de message](https://mha.azurewebsites.net).
 
 Passez en revue les étapes de configuration [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) et [DMARC](use-dmarc-to-validate-email.md).

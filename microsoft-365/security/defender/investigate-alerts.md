@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b0c9e5793ec0ffc97cbbac0308a7e362da279e1b
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 9b2e3e540538c3757d49264d93929b1dc9c836ca
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663640"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059774"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -121,7 +121,7 @@ Microsoft 365 Defender alertes peuvent provenir de solutions telles que Microsof
 
 La section **Actions effectuées** contient une liste des ressources affectées, telles que les boîtes aux lettres, les appareils et les utilisateurs affectés par cette alerte. 
 
-Vous pouvez également sélectionner **Afficher dans le centre d’actions** pour afficher l’onglet **Historique** du **centre d’actions** dans le portail Microsoft 365 Defender. 
+Vous pouvez également sélectionner **Afficher dans le centre d’actions** pour afficher l’onglet **Historique** du **centre d’actions** dans le portail Microsoft 365 Defender.
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Suivre le rôle d’une alerte dans l’histoire de l’alerte
 
@@ -147,16 +147,14 @@ Le volet **Gérer les alertes** vous permet d’afficher ou de spécifier :
 - État de l’alerte (Nouveau, Résolu, En cours).
 - Compte d’utilisateur auquel l’alerte a été attribuée.
 - Classification de l’alerte :
-
-   - **Non défini** (valeur par défaut).
-
-   - **Vrai positif** avec un type de menace. Utilisez cette classification pour les alertes qui indiquent avec précision une menace réelle. Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci.
-
-   - **Activité informationnelle attendue** avec un type d’activité. Utilisez les options de cette catégorie pour classer les alertes pour les tests de sécurité, l’activité de l’équipe rouge et le comportement inhabituel attendu des applications et des utilisateurs approuvés.
-
-   - **Faux positif** pour les types d’alertes qui ont été créés même en l’absence d’activité malveillante. La classification des alertes en tant que faux positifs permet Microsoft 365 Defender d’améliorer sa qualité de détection.
-
+     - **Non défini** (valeur par défaut).
+     - **Vrai positif** avec un type de menace. Utilisez cette classification pour les alertes qui indiquent avec précision une menace réelle. Si vous spécifiez ce type de menace, votre équipe de sécurité voit les modèles de menaces et agit pour défendre votre organisation contre elles.
+     - **Activité informationnelle attendue** avec un type d’activité. Utilisez cette option pour les alertes qui sont techniquement précises, mais qui représentent un comportement normal ou une activité de menace simulée. Vous souhaitez généralement ignorer ces alertes, mais attendez-vous à ce qu’elles soient similaires à l’avenir, où les activités sont déclenchées par des attaquants ou des programmes malveillants réels. Utilisez les options de cette catégorie pour classer les alertes pour les tests de sécurité, l’activité de l’équipe rouge et le comportement inhabituel attendu des applications et des utilisateurs approuvés.
+     - **Faux positif** pour les types d’alertes qui ont été créés même en l’absence d’activité malveillante ou pour une fausse alerte. Utilisez les options de cette catégorie pour classer les alertes identifiées par erreur comme des événements ou des activités normaux comme malveillants ou suspects. Contrairement aux alertes pour l'« activité informationnelle et attendue », qui peuvent également être utiles pour intercepter les menaces réelles, vous ne souhaitez généralement pas voir ces alertes à nouveau. La classification des alertes en tant que faux positifs permet Microsoft 365 Defender d’améliorer sa qualité de détection.
 - Commentaire sur l’alerte.
+
+>[!NOTE]
+> Vers le 29 août 2022, les valeurs de détermination d’alerte précédemment prises en charge (« Apt » et « SecurityPersonnel ») seront déconseillées et ne seront plus disponibles via l’API.
 
 > [!NOTE]
 > Une façon de gérer les alertes via l’utilisation de balises. La fonctionnalité d’étiquetage pour Microsoft Defender pour Office 365 est déployée de façon incrémentielle et est actuellement en préversion. <br>
@@ -245,7 +243,7 @@ Toutes les E/S liées aux alertes s’affichent dans la liste. <br>
 Les E/S sélectionnées dans les conditions de suppression sont sélectionnées par défaut.
       1. Par exemple, vous pouvez ajouter des fichiers à autoriser à la **preuve Select (IOC) à autoriser**. Par défaut, le fichier qui a déclenché l’alerte est sélectionné.
       1. Entrez l’étendue de **l’étendue Select à appliquer**. Par défaut, l’étendue de l’alerte associée est sélectionnée.
-      1. Cliquez sur **Save (Enregistrer)**. À présent, le fichier n’est pas bloqué, car il figure dans la liste verte.
+      1. Cliquez sur **Enregistrer**. À présent, le fichier n’est pas bloqué, car il figure dans la liste verte.
 
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Capture d’écran de la création d’une règle de suppression réussie. ":::
 
@@ -289,7 +287,7 @@ Pour créer l’automatisation, vous aurez besoin d’un jeton d’API avant de 
 Regardez cette courte vidéo pour découvrir comment l’automatisation fonctionne efficacement pour créer un flux de travail fluide et comment connecter Power Automate à Defender pour Cloud Apps. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête](investigate-incidents.md).
 
