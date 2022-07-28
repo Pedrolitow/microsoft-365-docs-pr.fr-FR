@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0185b214d0b566fd387d753988e76fef0ee675b8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943820"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056567"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -64,7 +64,7 @@ mise à jour : 23/06/2021
 |Santé et médical| Canada Health Information Act (HIA) |- [Numéro de passeport du Canada](sit-defn-canada-passport-number.md) </br> - [Numéro d’assurance sociale du Canada](sit-defn-canada-social-insurance-number.md) </br> - [Numéro du service de santé du Canada](sit-defn-canada-health-service-number.md) </br> - [Numéro d’identification de la santé personnelle du Canada](sit-defn-canada-personal-health-identification-number.md)|
 |Santé et médical| Canada Personal Health Information Act (PHIA) Manitoba|- [Numéro d’assurance sociale du Canada](sit-defn-canada-social-insurance-number.md) </br> - [Numéro du service de santé du Canada](sit-defn-canada-health-service-number.md) </br> - [Numéro d’identification de la santé personnelle du Canada](sit-defn-canada-personal-health-identification-number.md)|
 |Santé et médical| Canada Personal Health Act (PHIPA) Ontario |- [Numéro de passeport du Canada](sit-defn-canada-passport-number.md) </br> - [Numéro d’assurance sociale du Canada](sit-defn-canada-social-insurance-number.md) </br> - [Numéro du service de santé du Canada](sit-defn-canada-health-service-number.md) </br> - [Numéro d’identification de la santé personnelle du Canada](sit-defn-canada-personal-health-identification-number.md)|
-|Santé et médical| ROYAUME-UNI. Access to Medical Reports Act|- [Numéro de service de santé national du Royaume-Uni](sit-defn-uk-national-health-service-number.md) </br> - [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md)|
+|Santé et médical| Royaume-Uni Access to Medical Reports Act|- [Numéro de service de santé national du Royaume-Uni](sit-defn-uk-national-health-service-number.md) </br> - [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md)|
 |Santé et médical| Loi américaine sur l’assurance maladie (HIPAA) améliorée|</br> - [Classification internationale des maladies (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [Classification internationale des maladies (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md) </br> - [Tous les noms complets](sit-defn-all-full-names.md) </br> - [Toutes les conditions générales médicales](sit-defn-all-medical-terms-conditions.md) </br> - [Adresses physiques américaines](sit-defn-us-physical-addresses.md)|
 |Santé et médical| U.S. Health Insurance Act (HIPAA)| - [Classification internationale des maladies (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [Classification internationale des maladies (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md)|
 |Confidentialité| Australie Privacy Act Enhanced|- [Numéro de permis de conduire en Australie](sit-defn-australia-drivers-license-number.md) </br> - [Numéro de passeport en Australie](sit-defn-australia-passport-number.md) </br> - [Tous les noms complets](sit-defn-all-full-names.md) </br> - [Toutes les conditions générales médicales](sit-defn-all-medical-terms-conditions.md) </br> - [Adresses physiques de l’Australie](sit-defn-australia-physical-addresses.md)|
@@ -85,10 +85,10 @@ mise à jour : 23/06/2021
 |Confidentialité| Amélioration de la protection des informations personnelles au Japon|- [Numéro d’assurance sociale du Japon (SIN)](sit-defn-japan-social-insurance-number.md) </br> - [Japon Mon numéro - Personnel](sit-defn-japan-my-number-personal.md)</br> - [Numéro de passeport au Japon](sit-defn-japan-passport-number.md) </br> - [Numéro de permis de conduire au Japon](sit-defn-japan-drivers-license-number.md)</br> - [Tous les noms complets](sit-defn-all-full-names.md)</br> - [Adresses physiques du Japon](sit-defn-all-physical-addresses.md)|
 |Confidentialité| Japan Protection of Personal Information|- [Numéro d’inscription des résidents du Japon](sit-defn-japan-resident-registration-number.md)</br> - [Numéro d’assurance sociale du Japon (SIN)](sit-defn-japan-social-insurance-number.md)|
 |Confidentialité| Données d’identification personnelle (PII) de l’Arabie saoudite|- [ID national de l’Arabie saoudite](sit-defn-saudi-arabia-national-id.md)|
-|Confidentialité| ROYAUME-UNI. Data Protection Act|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sit-defn-us-uk-passport-number.md) </br> - [Code SWIFT](sit-defn-swift-code.md)|
-|Confidentialité| ROYAUME-UNI. Privacy and Electronic Communications Regulations|- [Code SWIFT](sit-defn-swift-code.md)|
-|Confidentialité| ROYAUME-UNI. Personally Identifiable Information (PII) Data|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sit-defn-us-uk-passport-number.md)|
-|Confidentialité| ROYAUME-UNI. Personal Information Online Code of Practice (PIOCP)|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Numéro de service de santé national du Royaume-Uni](sit-defn-uk-national-health-service-number.md) </br> - [Code SWIFT](sit-defn-swift-code.md)|
+|Confidentialité| Royaume-Uni Data Protection Act|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sit-defn-us-uk-passport-number.md) </br> - [Code SWIFT](sit-defn-swift-code.md)|
+|Confidentialité| Royaume-Uni Privacy and Electronic Communications Regulations|- [Code SWIFT](sit-defn-swift-code.md)|
+|Confidentialité| Royaume-Uni Personally Identifiable Information (PII) Data|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sit-defn-us-uk-passport-number.md)|
+|Confidentialité| Royaume-Uni Personal Information Online Code of Practice (PIOCP)|- [Numéro d’assurance nationale du Royaume-Uni (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Numéro de service de santé national du Royaume-Uni](sit-defn-uk-national-health-service-number.md) </br> - [Code SWIFT](sit-defn-swift-code.md)|
 |Confidentialité| U.S Patriot Act amélioré|- [Numéro de carte de crédit](sit-defn-credit-card-number.md) </br> - [Numéro de compte bancaire américain](sit-defn-us-bank-account-number.md)</br> - [Numéro d’identification du contribuable (ITIN) des États-Unis](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sit-defn-us-social-security-number.md)</br> - [Tous les noms complets](sit-defn-all-full-names.md)</br> - [Adresses physiques américaines](sit-defn-us-physical-addresses.md)|
 |Confidentialité| U.S. Patriot Act|- [Numéro de carte de crédit](sit-defn-credit-card-number.md) </br> - [Numéro de compte bancaire américain](sit-defn-us-bank-account-number.md)</br> - [Numéro d’identification du contribuable (ITIN) des États-Unis](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sit-defn-us-social-security-number.md)|
 |Confidentialité| Données d’identification personnelle (PII) améliorées aux États-Unis|- [Numéro d’identification du contribuable (ITIN) des États-Unis](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sit-defn-us-social-security-number.md)</br> - [Numéro de passeport des États-Unis/Du Royaume-Uni](sit-defn-us-uk-passport-number.md)</br> - [Tous les noms complets](sit-defn-all-full-names.md)</br> - [Adresses physiques américaines](sit-defn-us-physical-addresses.md)|
@@ -110,7 +110,7 @@ Une stratégie DLP peut rechercher et protéger des éléments qui contiennent d
 |Microsoft Defender for Cloud Apps   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Appareils  |utilisateurs ou groupe         |données au repos </br>  données utilisées </br>  données en mouvement         |- [En savoir plus sur la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md) </br>- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Référentiels locaux (partages de fichiers et SharePoint)    |Référentiel         | données au repos         | - [En savoir plus sur le scanneur local de protection contre la perte de données](dlp-on-premises-scanner-learn.md) </br> - [Prise en main du scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| Espaces | données utilisées | Non|
+|Power BI| Espaces | données utilisées | Non|
 
 Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
 
@@ -134,10 +134,13 @@ Les stratégies DLP détectent les éléments sensibles en les mettant en corres
 |Appareils |Oui | Oui|  Non|
 |Microsoft Defender for Cloud Apps | Oui| Oui| Oui|
 |Référentiels locaux| Oui| Oui| Non|
-|PowerBI|Oui | Oui| Non|
+|Power BI|Oui | Oui| Non|
 
 > [!NOTE]
-> DLP prend en charge la détection des étiquettes de confidentialité sur les e-mails et les pièces jointes Voir, [Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP prend en charge (en préversion) l’utilisation de classifieurs pouvant être formés comme condition pour détecter les documents sensibles. Le contenu peut être défini par des classifieurs pouvant être formés dans des Exchange Online, des sites Sharepoint Online, des comptes OneDrive Entreprise, des canaux de conversation et des appareils Teams. Pour plus d’informations, consultez [Classifieurs pouvant être formés](classifier-learn-about.md).
+
+> [!NOTE]
+> DLP prend en charge la détection des étiquettes de confidentialité sur les e-mails et les pièces jointes. Pour plus d’informations, consultez [Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## <a name="rules"></a>Rules
 
@@ -154,7 +157,7 @@ Les règles sont la logique métier des stratégies DLP. Elles se composent des 
 - [**Conditions**](#conditions) qui, lorsqu’elle est mise en correspondance, déclenchent la stratégie
 - [**Exceptions**](#exceptions) aux conditions
 - [**Actions**](#actions) à effectuer lorsque la stratégie est déclenchée
-- [**Notifications**](#user-notifications-and-policy-tips) utilisateur pour informer vos utilisateurs lorsqu’ils font quelque chose qui déclenche une stratégie et les aider à les informer sur la façon dont votre organisation souhaite que les informations sensibles soient traitées
+- [**Notifications utilisateur**](#user-notifications-and-policy-tips) pour informer vos utilisateurs lorsqu’ils font quelque chose qui déclenche une stratégie et les aider à les informer sur la façon dont votre organisation souhaite que les informations sensibles soient traitées
 - [**Les remplacements d’utilisateurs**](#user-overrides) lorsqu’ils sont configurés par un administrateur permettent aux utilisateurs de substituer de manière sélective une action de blocage
 - [**Rapports d’incidents**](#incident-reports) qui informent les administrateurs et d’autres parties prenantes clés lorsqu’une correspondance de règle se produit
 - [**Options supplémentaires**](#additional-options) qui définissent la priorité pour l’évaluation des règles et peuvent arrêter le traitement des règles et des stratégies.
@@ -165,7 +168,7 @@ Les règles sont la logique métier des stratégies DLP. Elles se composent des 
 
 #### <a name="hosted-service-workloads"></a>Charges de travail de service hébergées
 
-Pour les charges de travail de service hébergées, telles que Exchange Online, SharePoint Online et OneDrive Entreprise, chaque règle reçoit une priorité dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+Pour les charges de travail de service hébergées, telles que Exchange Online, SharePoint Online et OneDrive Entreprise, chaque règle reçoit une priorité dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la première priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite.
   
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
 
@@ -173,7 +176,7 @@ Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’o
   
 - Règle 1 : informe seulement les utilisateurs
 - Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur
-- *Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur*
+- *Règle 3 : informe les utilisateurs, restreint l’accès et n’autorise pas les remplacements d’utilisateurs*
 - Règle 4 : restreint l’accès
 
 Les règles 1, 2 et 4 seraient évaluées, mais pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la règle la plus restrictive est appliquée.
@@ -190,7 +193,7 @@ La priorité des règles sur les points de terminaison est également affectée 
 
 Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec l’application la plus restrictive [sur les activités de point](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) de terminaison est celle qui est appliquée sur le contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est prioritaire sur les autres règles, car elle est la plus restrictive.
 
-- Règle 1 : audite uniquement toutes les activités 
+- Règle 1 : audite uniquement toutes les activités
 - *Règle 2 : bloque toutes les activités*
 - Règle 3 : bloque toute activité avec l’option permettant à l’utilisateur final de remplacer
 
@@ -217,12 +220,13 @@ Les conditions sont inclusives et vous définissez ce que vous souhaitez que la 
 - [types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [étiquettes de confidentialité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+- [Classifieurs pouvant être formés](classifier-learn-about.md) (en préversion) 
 
-selon [l’emplacement auquel](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer la stratégie. 
+selon [l’emplacement auquel](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer la stratégie.
 
-La règle recherche uniquement la présence d’étiquettes de **confidentialité** et **d’étiquettes de rétention** que vous sélectionnez. 
+La règle recherche uniquement la présence d’étiquettes de **confidentialité** et **d’étiquettes de rétention** que vous sélectionnez.
 
-Les SIT ont un [**niveau de confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfini que vous pouvez modifier si nécessaire. Pour plus d’informations, consultez [Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+Les SIT ont un [**niveau de confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfini que vous pouvez modifier si nécessaire. Pour plus d’informations, consultez [Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
 > Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
@@ -543,7 +547,7 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 |SharePoint    |- Pris en charge |
 |Exchange + SharePoint    |- Pris en charge pour Exchange </br>- Pris en charge pour SharePoint  |
 |Appareils + SharePoint + Exchange    |- Non pris en charge pour les appareils </br>- Pris en charge pour SharePoint </br> Pris en charge pour Exchange |
-|Teams    |- Non pris en charge |
+|Équipes    |- Non pris en charge |
 |OneDrive Entreprise   |- Pris en charge         |
 |OneDrive Entreprise + Appareils     |- Pris en charge pour OneDrive Entreprise </br>- Non pris en charge pour les appareils         |
 |Power-BI|- Non pris en charge|
@@ -650,8 +654,8 @@ Ce tableau présente le comportement de blocage et de notification DLP pour les 
 |---------|---------|---------|---------|---------|
 |- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**     |Aucune action n’est configurée         |- **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné         |- **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** définie **sur Activé** </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**         |- Les notifications sont envoyées uniquement lorsqu’un fichier est partagé avec un utilisateur externe et qu’un utilisateur externe accède au fichier.  |
 |- **Le contenu est partagé à partir de Microsoft 365** </br>- **uniquement avec des personnes au sein de mon organisation**        | Aucune action n’est configurée         |-  **Notifications utilisateur définies** **sur Activé**   </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné  </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné    |  - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**       |- Les notifications sont envoyées lorsqu’un fichier est chargé |
-|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**    | - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OndeDrive et Teams partagés** est sélectionné </br>- **Bloquer uniquement les personnes extérieures à votre organisation** est sélectionné          |- **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné  |  - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**             | - L’accès à un fichier sensible est bloqué dès qu’il est chargé </br>- Notifications envoyées lorsque du contenu est partagé à partir de Microsoft 365 avec des personnes extérieures à mon organisation         |
-|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation** |  - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OndeDrive et Teams partagés** est sélectionné </br>- **Bloquer tout le monde** est sélectionné        | - **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné         | - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**        |Les notifications sont envoyées lorsqu’un fichier est partagé avec un utilisateur externe et qu’un utilisateur externe accède à ce fichier.         |
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**    | - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OneDrive et Teams partagés** est sélectionné </br>- **Bloquer uniquement les personnes extérieures à votre organisation** est sélectionné          |- **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné  |  - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**             | - L’accès à un fichier sensible est bloqué dès qu’il est chargé </br>- Notifications envoyées lorsque du contenu est partagé à partir de Microsoft 365 avec des personnes extérieures à mon organisation         |
+|- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation** |  - **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Empêcher les utilisateurs de recevoir des e-mails ou d’accéder aux fichiers SharePoint, OneDrive et Teams partagés** est sélectionné </br>- **Bloquer tout le monde** est sélectionné        | - **Notifications utilisateur définies** **sur Activé** </br>- **Avertir les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné         | - **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé** </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**        |Les notifications sont envoyées lorsqu’un fichier est partagé avec un utilisateur externe et qu’un utilisateur externe accède à ce fichier.         |
 |- **Le contenu est partagé à partir de Microsoft 365** </br>- **avec des personnes extérieures à mon organisation**     |- **Restreindre l’accès ou chiffrer le contenu dans les emplacements Microsoft 365** est sélectionné </br>- **Bloquer uniquement les personnes qui ont reçu l’accès au contenu via l’option « Toute personne ayant le lien »** est sélectionnée.         |  - **Notifications utilisateur définies** **sur Activé** </br>- **Notifier les utilisateurs dans Office 365 service avec un conseil de stratégie** est sélectionné.  </br>- **Notifier l’utilisateur qui a envoyé, partagé ou modifié le contenu pour la dernière fois** est sélectionné     |- **Envoyer une alerte aux administrateurs lorsqu’une correspondance de règle est** définie **sur Activé**   </br>- **Envoyer une alerte chaque fois qu’une activité correspond à la règle** est sélectionnée </br>- **Utiliser les rapports d’incidents par e-mail pour vous avertir lorsqu’une correspondance de stratégie est** définie **sur Activé**       |Les notifications sont envoyées dès qu’un fichier est chargé         |
 
 

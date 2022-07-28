@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
-ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 0c4a0fd7f715fec45cbb359ef21b448941451a0a
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717557"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056699"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Utilisateurs dans Microsoft 365 Lighthouse 
 
@@ -34,7 +34,7 @@ Sous l’onglet Rechercher des utilisateurs, vous pouvez rapidement rechercher d
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Capture d’écran de l’onglet Rechercher des utilisateurs.":::
 
-## <a name="risky-users-tab"></a>Onglet Utilisateurs à risque
+## <a name="risky-users-tab"></a>Onglet Utilisateurs risqués
 
 L’onglet Utilisateurs à risque affiche les comptes d’utilisateur sur vos locataires qui ont été marqués pour un comportement à risque. Sélectionnez l’un des utilisateurs pour afficher plus d’informations sur un risque détecté ou pour atténuer un risque en réinitialisant le mot de passe d’un utilisateur ou en bloquant la connexion. Pour plus d’informations sur les types de risques et la détection, consultez [Qu’est-ce que le risque ?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 

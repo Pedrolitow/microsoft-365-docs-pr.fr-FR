@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment bloquer un compte d’utilisateur si vous pensez qu’il est compromis afin que les utilisateurs ne puissent pas se connecter.
-ms.openlocfilehash: feb683c93da25580e41f36a81a89c2be35f8cc85
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: b9e02ba0696d76ec58ec880e12001cdc6800430c
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822000"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056502"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Bloquer la connexion utilisateur Microsoft 365 Lighthouse
 
@@ -38,19 +38,19 @@ Vous pouvez bloquer un compte d’utilisateur si vous pensez qu’il est comprom
 
 4. Dans le volet d’informations de l’utilisateur, sélectionnez **Bloquer la connexion**.
 
-5. Dans le volet Gérer l’état de connexion, sélectionnez **Empêcher les utilisateurs de se connecter**.
+5. Dans le volet **Bloquer la connexion** , sélectionnez **Bloquer la connexion de cet utilisateur**.
 
-6. Sélectionnez **Enregistrer**.
+6. Sélectionnez **Enregistrer les modifications**.
 
 ## <a name="block-sign-in-for-risky-users"></a>Bloquer la connexion pour les utilisateurs à risque
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
 2. Sous l’onglet **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez effectuer une action.
 
 3. Sélectionnez **Bloquer la connexion**.
 
-4. Dans le volet Gérer l’état de connexion, sélectionnez **Empêcher les utilisateurs de se connecter**.
+4. Dans le volet **Gérer l’état de** connexion, sélectionnez **Empêcher les utilisateurs de se connecter**.
 
 5. Cliquez sur **Enregistrer**.
 

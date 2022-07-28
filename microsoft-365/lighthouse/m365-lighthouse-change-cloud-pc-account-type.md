@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment définir ou modifier un type de compte PC cloud Windows 365 Affaires.
-ms.openlocfilehash: 398f1fb73e94ccb6a5e599ad1414988bc99284f2
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: c1cb1e8a8e6f850aa73fe05360289d280c4b9eb2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037773"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056003"
 ---
 # <a name="change-a-windows-365-business-cloud-pc-account-type-in-microsoft-365-lighthouse"></a>Modifier un type de compte PC cloud Windows 365 Affaires dans Microsoft 365 Lighthouse
 
@@ -51,7 +51,7 @@ Vous devez être administrateur Windows 365 ou administrateur général dans le 
 
 5.  Dans la liste des PC cloud, sélectionnez le PC cloud pour lequel vous souhaitez modifier le type de compte.
 
-6.  Dans le volet **d’informations du PC cloud** , **sélectionnez Modifier le type de compte**.
+6.  Dans le volet d’informations du PC cloud, **sélectionnez Modifier le type de compte**.
 
 7.  Dans le volet **Modifier le type de compte DE PC Cloud** , sélectionnez le type de compte pour le PC cloud, puis **sélectionnez Enregistrer**.
 

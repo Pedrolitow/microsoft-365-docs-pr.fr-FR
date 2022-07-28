@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez la liste des problèmes connus pour Lighthouse par zone de fonctionnalité.
-ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
-ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
+ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160817"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056853"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problèmes connus liés à Microsoft 365 Lighthouse
 
@@ -32,7 +32,7 @@ Cet article répertorie les problèmes connus pour Microsoft 365 Lighthouse par 
 
 | Problème | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **L’agent du support technique ne peut pas réinitialiser un mot de passe utilisateur** | Les techniciens du fournisseur de services managés (MSP) qui sont membres du groupe Agent du support technique ne peuvent pas réinitialiser les mots de passe des utilisateurs dans les locataires du client. Lorsqu’il tente de réinitialiser le mot de passe d’un utilisateur, il reçoit le message d’erreur suivant : « Vous n’êtes pas autorisé à le faire. [En savoir plus](m365-lighthouse-configure-portal-security.md) » | Pour contourner le problème d’autorisations, les agents du support technique doivent réinitialiser les mots de passe à l’aide du Centre d'administration Microsoft 365 ou du Azure Active Directory. |
+| **L’agent du support technique ne peut pas réinitialiser un mot de passe utilisateur** | Les techniciens du fournisseur de services managés (MSP) qui sont membres du groupe Agent du support technique ne peuvent pas réinitialiser les mots de passe des utilisateurs dans les locataires du client. Lorsqu’il tente de réinitialiser le mot de passe d’un utilisateur, il reçoit le message d’erreur suivant : « Vous n’êtes pas autorisé à le faire. [En savoir plus](m365-lighthouse-configure-portal-security.md) » | Pour contourner le problème d’autorisations, les agents du support technique doivent réinitialiser les mots de passe à l’aide du Centre d'administration Microsoft 365 ou d’Azure Active Directory. |
 
 ## <a name="devices"></a>Appareils
 
@@ -44,7 +44,7 @@ Cet article répertorie les problèmes connus pour Microsoft 365 Lighthouse par 
 
 | Problème | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Le nom de la menace est manquant** | Lorsque les techniciens MSP affichent la liste des menaces à partir de la page Gestion des menaces, le nom de la menace peut manquer à certaines menaces. Cela se produit lorsque l’appareil sur lequel la menace a été détectée a été récemment supprimé de Intune. | Le problème sera résolu dans les 48 heures. Aucune étape supplémentaire n’est requise. |
+| **Le nom de la menace est manquant** | Lorsque les techniciens MSP affichent la liste des menaces à partir de la page de gestion des menaces, le nom de la menace peut manquer à certaines menaces. Cela se produit lorsque l’appareil sur lequel la menace a été détectée a été récemment supprimé de Intune. | Le problème sera résolu dans les 48 heures. Aucune étape supplémentaire n’est requise. |
 
 ## <a name="baselines"></a>Bases de référence
 
@@ -86,7 +86,7 @@ Des privilèges délégués granulaires Administration (GDAP) plus une relation 
 | ---------------- | ---------------- | ---------------- |
 | **Problèmes de traduction** | Les utilisateurs peuvent rencontrer des problèmes de traduction de langue lorsque la langue de leur navigateur, ou leur sélection dans Lighthouse, est autre que l’anglais. | Pour réduire les problèmes de traduction dans Lighthouse, assurez-vous que la sélection de la langue du navigateur correspond à celle du paramètre de langue dans le portail Lighthouse. Pour modifier la sélection de langue dans Lighthouse, connectez-vous à Lighthouse et sélectionnez l’icône d’engrenage en haut de la page pour ouvrir la page paramètres du portail, sélectionnez **Langue + région**, puis sélectionnez la langue et les formats régionaux appropriés. |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
 [Résoudre les messages d’erreur et les problèmes dans Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602915"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056611"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -43,7 +43,7 @@ Pour obtenir la liste complète des exigences, consultez [Configuration requise 
 
 Microsoft 365 Lighthouse s’intègre maintenant à Microsoft Defender pour entreprises pour vous apporter des insights et des fonctionnalités de gestion associés pour tous vos clients qui ont Microsoft Defender pour entreprises. Pour afficher la liste des appareils clients qui ont été intégrés à Microsoft Defender pour entreprises, sélectionnez **Appareils** dans le volet de navigation gauche dans Microsoft 365 Lighthouse. Pour afficher la liste des incidents et des alertes signalés sur vos locataires clients, accédez à **Device** > **Security**, puis sélectionnez l’onglet **Incidents et alertes** .  
 
-Nous avons également ajouté une étape à la base de référence par défaut pour vous aider à configurer Microsoft Defender pour entreprises pour vos locataires clients. Pour voir cette étape, sélectionnez **Lignes** de base dans le volet de navigation gauche dans Microsoft 365 Lighthouse ou affichez le plan de déploiement pour l’un de vos locataires clients.
+Nous avons également ajouté une étape à la base de référence par défaut pour vous aider à configurer Microsoft Defender pour entreprises pour vos locataires clients. Pour voir cette étape, sélectionnez **Lignes de base** dans le volet de navigation gauche dans Microsoft 365 Lighthouse ou affichez le plan de déploiement pour l’un de vos locataires clients.
 
 ### <a name="status-of-quarantined-email-messages"></a>État des messages électroniques mis en quarantaine
 
@@ -63,7 +63,7 @@ Nous avons donné une nouvelle apparence au volet de navigation gauche dans Micr
 
 ### <a name="enriched-user-details-pane"></a>Volet Des détails utilisateur enrichis
 
-Nous avons repensé le volet des détails de l’utilisateur pour inclure plus d’informations sur l’utilisateur et d’autres actions que vous pouvez effectuer pour mieux gérer les utilisateurs. Il a maintenant la même apparence que le volet des détails de l’utilisateur dans le Centre d'administration Microsoft 365. Pour accéder au volet d’informations utilisateur dans Microsoft 365 Lighthouse, sélectionnez **Utilisateurs** dans le volet de navigation gauche, puis sélectionnez **Rechercher des utilisateurs** ou **Utilisateurs à risque**. Sélectionnez n’importe quel utilisateur pour ouvrir le volet d’informations.
+Nous avons repensé le volet des détails de l’utilisateur pour inclure plus d’informations sur l’utilisateur et d’autres actions que vous pouvez effectuer pour mieux gérer les utilisateurs. Il a maintenant la même apparence que le volet des détails de l’utilisateur dans le Centre d'administration Microsoft 365. Pour accéder au volet d’informations utilisateur dans Microsoft 365 Lighthouse, sélectionnez **Utilisateurs** dans le volet de navigation gauche, puis sélectionnez **Rechercher des utilisateurs** ou **utilisateurs à risque**. Sélectionnez n’importe quel utilisateur pour ouvrir le volet d’informations.
 
 ## <a name="april-2022"></a>Avril 2022
 
@@ -152,7 +152,7 @@ Vous pouvez désormais afficher les données d’utilisation des services Micros
 
 Ces insights peuvent aider à informer vos engagements clients et à offrir plus de valeur à vos clients en vous permettant de les aider à comprendre les services que leurs utilisateurs utilisent activement et où il peut y avoir des opportunités d’améliorer leur sécurité ou leur productivité. 
 
-Pour plus d’informations, consultez [vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse : carte d’utilisation Microsoft 365](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+Pour plus d’informations, consultez [la page Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse : section Utilisation des services Microsoft 365](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>Exchange Online Protection et Microsoft 365 Defender pour Office 365 étape de référence par défaut
 
@@ -194,7 +194,7 @@ Nous avons facilité la communication avec les utilisateurs de vos locataires cl
 
 ### <a name="capability-to-take-action-on-noncompliant-devices"></a>Possibilité d’agir sur les appareils non conformes
 
-Nous avons introduit la possibilité de synchroniser ou de redémarrer un ou plusieurs appareils sur plusieurs locataires clients. Cette fonctionnalité permet de s’assurer que les appareils de vos clients sont protégés contre les risques. Pour extraire cette fonctionnalité, sélectionnez **Appareils** dans le volet de navigation gauche dans Microsoft 365 Lighthouse, puis sélectionnez l’onglet **Appareils**. Recherchez les options **De synchronisation** et **de redémarrage** au-dessus de la liste des appareils. Vous pouvez également accéder à ces options à partir du volet détails de l’appareil de n’importe quel appareil.
+Nous avons introduit la possibilité de synchroniser ou de redémarrer un ou plusieurs appareils sur plusieurs locataires clients. Cette fonctionnalité permet de s’assurer que les appareils de vos clients sont protégés contre les risques. Pour extraire cette fonctionnalité, sélectionnez **Appareils** dans le volet de navigation gauche dans Microsoft 365 Lighthouse, puis sélectionnez l’onglet **Appareils**. Recherchez les options **Synchroniser** et **redémarrer** au-dessus de la liste des appareils. Vous pouvez également accéder à ces options à partir du volet détails de l’appareil de n’importe quel appareil.
 
 ### <a name="capability-to-monitor-and-manage-windows-365-cloud-pcs"></a>Possibilité de surveiller et de gérer Windows 365 PC cloud
 

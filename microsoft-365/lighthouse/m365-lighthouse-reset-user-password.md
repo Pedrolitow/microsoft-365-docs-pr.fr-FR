@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment réinitialiser un mot de passe pour un seul utilisateur ou pour plusieurs utilisateurs à risque sur différents locataires.
-ms.openlocfilehash: 9fd748a3ed79a0f22a9ea4360b9a9a2c90dfb0e0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822022"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055875"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Réinitialiser un mot de passe utilisateur dans Microsoft 365 Lighthouse
 
@@ -38,7 +38,7 @@ Microsoft 365 Lighthouse vous permet de modifier ou de réinitialiser les mots d
 
 4. Dans le volet d’informations de l’utilisateur, sélectionnez **Réinitialiser le mot de passe**.
 
-5. Dans le volet Réinitialiser le mot de passe, sélectionnez **Générer automatiquement un mot de passe** ou **Laissez-moi créer un mot de passe**.
+5. Dans le volet **Réinitialiser le mot de passe** , sélectionnez **Générer automatiquement un mot de passe** ou **Laissez-moi créer un mot de passe**.
 
     - Si vous choisissez de créer un mot de passe, entrez un mot de passe.
 
@@ -48,13 +48,13 @@ Microsoft 365 Lighthouse vous permet de modifier ou de réinitialiser les mots d
 
 ## <a name="reset-a-password-for-a-risky-user"></a>Réinitialiser un mot de passe pour un utilisateur à risque
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
 2. Sous l’onglet **Utilisateurs à** risque, sélectionnez un utilisateur à risque dans la liste.
 
 3. Cliquez sur **Réinitialiser le mot de passe**.
 
-4. Dans le volet Réinitialiser le mot de passe, sélectionnez **Générer automatiquement un mot de passe** ou **Laissez-moi créer un mot de passe**.
+4. Dans le volet **Réinitialiser le mot de passe** , sélectionnez **Générer automatiquement un mot de passe** ou **Laissez-moi créer un mot de passe**.
 
    - Si vous choisissez de créer un mot de passe, entrez un mot de passe.
 

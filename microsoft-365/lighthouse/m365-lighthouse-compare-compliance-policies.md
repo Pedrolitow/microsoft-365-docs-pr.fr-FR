@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment comparer les paramètres de stratégie de conformité des appareils.
-ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9640fcb1438de70c6283c177e64c12fb6da57349
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822898"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056589"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Comparer les paramètres de stratégie de conformité des appareils dans Microsoft 365 Lighthouse
 
@@ -55,13 +55,13 @@ Vous pouvez filtrer les résultats pour afficher **les paramètres qui diffèren
 
 2. Cliquez sur l'onglet **Stratégies**.
 
-3. Dans la liste, sélectionnez un nom de stratégie.
+3. Dans la liste des stratégies, sélectionnez la stratégie que vous souhaitez afficher.
 
-4. Dans le volet Détails de la stratégie, sélectionnez **Afficher cette stratégie dans Microsoft Endpoint Manager**.
+4. Dans le volet d’informations de stratégie, sélectionnez **Afficher cette stratégie dans Microsoft Endpoint Manager**.
 
 5. Dans MEM, modifiez les paramètres de stratégie en fonction des besoins.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Lorsque vous apportez des ajustements de stratégie, veillez à évaluer vos modifications par rapport à vos paramètres de base de référence actuels. Pour plus d’informations, consultez [Vue d’ensemble de l’utilisation des bases de référence pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798143"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056875"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -250,7 +250,7 @@ Si vous préférez utiliser PowerShell pour attribuer des stratégies de quarant
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - La valeur par défaut des paramètres _PhishSpamAction_ et _HighConfidencePhishAction_ est Quarantine. Vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez de nouvelles stratégies de filtre de courrier indésirable dans PowerShell. Pour les paramètres _SpamAction_, _HighConfidenceSpamAction_ et _BulkSpamAction_ dans les stratégies anti-courrier indésirable nouvelles ou existantes, la stratégie de quarantaine n’est effective que si la valeur est Quarantaine.
 
@@ -516,7 +516,7 @@ Les paramètres globaux des stratégies de quarantaine vous permettent de person
 
      Procédez comme suit pour personnaliser les notifications de quarantaine en fonction de la langue du destinataire :
 
-     1. Sélectionnez la langue dans la zone **Choisir la langue** . La valeur par défaut est **Par défaut**, autrement dit l’anglais.
+     1. Sélectionnez la langue dans la zone **Choisir la langue** . La valeur par défaut est **Default**, ce qui signifie la langue par défaut de l’organisation Microsoft 365. Pour plus d’informations, consultez [Comment définir les paramètres de langue et de région pour Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
      2. Entrez les valeurs du **nom d’affichage** et **de la clause d’exclusion de responsabilité**. Les valeurs doivent être uniques pour chaque langue. Si vous essayez de réutiliser un **nom d’affichage** ou une valeur **d’exclusion** de responsabilité pour plusieurs langues, une erreur s’affiche lorsque vous cliquez sur **Enregistrer**.
      3. Cliquez sur le bouton **Ajouter**.
      4. Répétez les étapes précédentes pour créer un maximum de trois notifications de quarantaine personnalisées en fonction de la langue du destinataire. Une zone sans étiquette affiche les langues que vous avez configurées :

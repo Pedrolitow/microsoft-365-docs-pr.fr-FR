@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez la page Locataires.
-ms.openlocfilehash: 28ca99b32021be0ad5efbf29a858df7bad253078
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: e6da14bb6ad87b54f33b2c0a6bf612c2ba025725
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016517"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056743"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Locataires dans Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse vous permet de gérer les comptes de locataire en séle
 
 La page Locataires comprend également les options suivantes :
 
-- **Exportation:** Sélectionnez cette option pour exporter les données du locataire vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Exportation:** Sélectionnez cette option pour exporter les données du locataire vers un fichier de valeurs séparées par des virgules Excel (.csv).
 - **Gérer les balises :** Sélectionnez cette option pour ajouter, modifier ou supprimer une balise.
 - **Attribuer des balises :** Sélectionnez cette option pour affecter une balise à un locataire.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement un locataire spécifique dans la liste.
@@ -86,11 +86,11 @@ Pour afficher des informations détaillées sur le locataire, sélectionnez un l
 
 ### <a name="overview-tab"></a>Onglet Overview
 
-Sous l’onglet Vue d’ensemble, vous pouvez afficher la vue d’ensemble du locataire, les informations de contact et Microsoft 365 l’utilisation du service.
+Sous l’onglet Vue d’ensemble, vous pouvez afficher la vue d’ensemble du locataire, les informations de contact et l’utilisation du service Microsoft 365.
 
-#### <a name="tenant-overview-card"></a>Carte vue d’ensemble du locataire
+#### <a name="tenant-overview-section"></a>Section Vue d’ensemble du locataire
 
-La carte vue d’ensemble du locataire fournit des informations sur le locataire à partir de son compte Microsoft 365.<br><br>
+La section Vue d’ensemble du locataire fournit des informations sur le locataire à partir de son compte Microsoft 365.<br><br>
 
 | Informations sur le locataire    | Description|
 |-----------------------|------------------|
@@ -101,40 +101,40 @@ La carte vue d’ensemble du locataire fournit des informations sur le locataire
 | Nombre total d'utilisateurs    |Nombre d’utilisateurs affectés dans le locataire. Vous pouvez sélectionner ce numéro pour ouvrir la page Utilisateurs de ce locataire.|
 | Nombre total d’appareils|Nombre d’appareils inscrits dans le locataire. Vous pouvez sélectionner ce numéro pour ouvrir la page Appareils de ce locataire.|
 
-#### <a name="contacts-card"></a>Carte de visite
+#### <a name="contacts-section"></a>Section Contacts
 
-La carte Contacts vous permet d’entrer des informations pour les contacts clés au sein des locataires que vous gérez, par exemple :
+La section Contacts fournit des informations sur les contacts clés au sein des locataires que vous gérez, par exemple :
 
 - Nom
 - Titre
 - Phone
 - E-mail
-- Notes
+- Remarques
 
-La section Notes est un champ de texte que vous pouvez utiliser pour enregistrer des informations clés pour le locataire, telles que les préférences d’engagement, l’emplacement, le fuseau horaire et des détails sur leur rôle au sein de l’organisation.
+La colonne **Notes** affiche des informations pour le locataire, telles que les préférences d’engagement, l’emplacement, le fuseau horaire et des détails sur leur rôle au sein de l’organisation.
 
-Pour modifier les détails ou supprimer un contact existant, sélectionnez le nom du contact dans la liste. Dans le volet **Modifier le contact** , modifiez ou supprimez le contact. Pour ajouter un autre contact, sélectionnez **+Ajouter un contact**.
+Pour modifier les détails, ajouter des notes ou supprimer un contact existant, sélectionnez le nom du contact dans la liste. Dans le volet **Modifier le contact** , modifiez ou supprimez le contact. Pour ajouter un autre contact, sélectionnez **+Ajouter un contact**.
 
-#### <a name="microsoft-365-usage-card"></a>carte d’utilisation Microsoft 365
+#### <a name="microsoft-365-services-usage-section"></a>Section Utilisation des services Microsoft 365
 
-Lighthouse fournit des insights sur l’utilisation des services Microsoft 365, y compris le nombre d’utilisateurs au sein d’un locataire disposant d’une licence et utilisant activement chaque service. Active indique le nombre d’utilisateurs ou d’appareils qui se sont connectés au service au moins une fois au cours des 28 derniers jours. La modification indique la modification des utilisateurs actifs et des appareils depuis le mois dernier.
+Lighthouse fournit des insights sur l’utilisation des services Microsoft 365, notamment le nombre d’utilisateurs au sein d’un locataire qui disposent d’une licence et utilisent activement chaque service. La colonne **Utilisateurs actifs & appareils** indique le nombre d’utilisateurs ou d’appareils qui se sont connectés au service au moins une fois au cours des 28 derniers jours. La colonne **Modifier l’activité** indique la modification des utilisateurs actifs et des appareils depuis le mois dernier.
 
-La carte d’utilisation Microsoft 365 contient deux sections :
+La section Utilisation des **services Microsoft 365** contient deux sous-sections :
 
 - **Microsoft 365 Lighthouse services :** services qui peuvent être gérés dans le portail Lighthouse.
-- **Services Microsoft 365 supplémentaires :** services inclus dans la suite Microsoft 365, mais qui ne peuvent pas être gérés dans le portail Microsoft 365 Lighthouse pour l’instant.
+- **Autres services Microsoft 365 :** Services inclus dans la suite Microsoft 365, mais qui ne peuvent pas être gérés dans le portail Microsoft 365 Lighthouse pour l’instant.
 
-### <a name="deployment-plans-tab"></a>Onglet Plans de déploiement
+### <a name="deployment-plan-tab"></a>Onglet Plan de déploiement
 
 L’onglet Plans de déploiement fournit l’état du plan de déploiement d’un locataire. Les étapes de déploiement de la liste sont basées sur la base de référence appliquée au locataire. Pour afficher les détails de l’étape de déploiement, sélectionnez une étape de déploiement dans la liste.
 
-L’onglet Plans de déploiement comprend également les options suivantes :
+L’onglet Plan de déploiement comprend également les options suivantes :
 
-- **Exportation:** Sélectionnez cette option pour exporter les données d’étape de déploiement vers un fichier Excel valeurs séparées par des virgules (.csv).
+- **Exportation:** Sélectionnez cette option pour exporter les données d’étape de déploiement vers un fichier de valeurs séparées par des virgules Excel (.csv).
 - **Actualiser:** Sélectionnez cette option pour récupérer les données d’étape de déploiement les plus actuelles.
 - **Rechercher:** Entrez des mots clés pour localiser rapidement une étape de déploiement spécifique dans la liste.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\

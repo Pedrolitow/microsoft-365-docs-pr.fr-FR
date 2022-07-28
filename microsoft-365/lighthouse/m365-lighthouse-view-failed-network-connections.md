@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher un PC cloud d’entreprise ayant échoué à la connexion réseau.
-ms.openlocfilehash: 273e0737cbe59d9ecae40fad0c114f58881a5d05
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e557c2cd01851c77d11aadf75e20b394b2944987
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823400"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055853"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Afficher une connexion réseau d’entreprise pc cloud ayant échoué dans Microsoft 365 Lighthouse
 
@@ -39,13 +39,13 @@ Microsoft 365 Lighthouse fournit l’état de connexion entre vos locataires cli
 
 2. Sélectionnez l’onglet **Connexions réseau Azure** .
 
-3. Dans la section Résumé de la connexion, sélectionnez **Connexions ayant échoué**.
+3. Dans la barre de couleur count-annotation, sélectionnez **Connexions ayant échoué**.
 
 4. Dans la liste filtrée, sélectionnez **Afficher les détails de la connexion dans Microsoft Endpoint Manager** en regard de la connexion à examiner.
 
 5. Dans le Centre d’administration Microsoft Endpoint Manager, sélectionnez **Afficher les détails** pour en savoir plus sur l’erreur.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour résoudre les problèmes de connexion, consultez [Résolution des problèmes de connexion réseau locale](/windows-365/enterprise/troubleshoot-on-premises-network-connection).
 

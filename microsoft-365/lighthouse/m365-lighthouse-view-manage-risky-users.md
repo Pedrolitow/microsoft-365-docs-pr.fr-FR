@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment afficher et gérer les utilisateurs à risque.
-ms.openlocfilehash: b4f34ccfafa1a002a9c798924641eaeeebdb04fe
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6f3fdaca1b89561e623d195faa4804c431e43a69
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823416"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055831"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Afficher et gérer les utilisateurs à risque dans Microsoft 365 Lighthouse
 
@@ -51,7 +51,7 @@ Les conditions suivantes doivent être remplies pour que les utilisateurs puisse
 
 Dans Azure AD Identity Protection, les détections de risques incluent toutes les actions suspectes identifiées liées aux comptes d’utilisateur dans Azure AD.
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
 2. Sous l’onglet **Utilisateurs à** risque, passez en revue les utilisateurs de la liste avec un état **de risque À risque**.
 
@@ -71,7 +71,7 @@ Dans Azure AD Identity Protection, les détections de risques incluent toutes le
 
 Pour prendre des mesures sur plusieurs utilisateurs affectés à la fois :
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque utilisateurs**.
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Utilisateurs** > **à risque**.
 
 2. Sous l’onglet **Utilisateurs à risque** , sélectionnez l’ensemble des utilisateurs sur lesquels vous souhaitez effectuer une action.
 

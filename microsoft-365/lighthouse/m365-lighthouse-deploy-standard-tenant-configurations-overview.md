@@ -17,22 +17,22 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment utiliser des bases de référence pour déployer des configurations de locataire standard.
-ms.openlocfilehash: 064968cd75804167493e696f08c3bec764598c94
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 9261be531db428c3d081e87c6717dfc8710a5026
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749152"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056633"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation de bases de référence Microsoft 365 Lighthouse pour déployer des configurations de locataire standard 
 
 Microsoft 365 Lighthouse lignes de base offrent un moyen reproductible et évolutif de gérer les paramètres de sécurité Microsoft 365 sur plusieurs locataires clients. Les bases de référence fournissent des configurations de locataire standard qui déploient des stratégies de sécurité de base et des normes de conformité qui sécurisent les utilisateurs, les appareils et les données de vos locataires.
 
-Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de Lighthouse. Pour appliquer une ligne de base à un locataire, sélectionnez **Locataires** dans le volet de navigation gauche, puis sélectionnez un locataire. Ensuite, accédez à l’onglet **Plans** de déploiement pour commencer le déploiement.
+Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de Lighthouse. Pour appliquer une ligne de base à un locataire, sélectionnez **Locataires** dans le volet de navigation gauche, puis sélectionnez un locataire. Ensuite, accédez à l’onglet **Plan de déploiement** pour commencer le déploiement.
 
 ## <a name="lighthouse-baseline"></a>Ligne de base du phare
 
-Les configurations de référence lighthouse sont conçues pour garantir que tous les locataires gérés sont sécurisés et conformes. Sélectionnez **Lignes de base** dans le volet de navigation gauche pour afficher la ligne de base par défaut qui s’applique à tous les locataires.  Pour afficher les étapes de déploiement incluses dans la ligne de base par défaut, sélectionnez **Afficher la ligne de base** pour ouvrir la page **De référence par défaut** . Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
+Les configurations de référence lighthouse sont conçues pour garantir que tous les locataires gérés sont sécurisés et conformes. Sélectionnez **Lignes de base** dans le volet de navigation gauche pour afficher la ligne de base par défaut qui s’applique à tous les locataires. Pour afficher les étapes de déploiement incluses dans la ligne de base par défaut, sélectionnez **Afficher la ligne de base** pour ouvrir la page **De référence par défaut** . Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Capture d’écran de la page De référence par défaut.":::
 
@@ -62,7 +62,7 @@ L’onglet Plan de déploiement contient les informations suivantes :
 |Colonne  |Description  |
 |---------|---------|
 |Étape de déploiement     |  Description de l’étape de déploiement.       |
-|Statut     |État de l’étape de déploiement.         |
+|État     |État de l’étape de déploiement.         |
 |Baseline     |Base de référence à partir de laquelle l’étape de déploiement est dérivée.         |
 |Catégorie     | Indique si l’étape de déploiement est associée à la gestion des appareils, de l’identité ou des données.        |
 |Dernière mise à jour    | Date à laquelle l’étape de déploiement a été mise à jour pour la dernière fois.        |

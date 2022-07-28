@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer l’authentification multifacteur.
-ms.openlocfilehash: 79690fb052c611fd9d89cf0cdbde8fc8b3f37832
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695635"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056458"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Gérer l’authentification multifacteur dans Microsoft 365 Lighthouse
 
@@ -40,11 +40,11 @@ Les conditions suivantes doivent être remplies pour qu’un locataire apparaiss
 
 ## <a name="enable-mfa-for-a-tenant"></a>Activer l’authentification multifacteur pour un locataire
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **utilisateurs** > .
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **Utilisateurs** > .
 
 2. Sous l’onglet **Authentification multifacteur** , recherchez un locataire qui n’utilise pas l’authentification multifacteur, puis sélectionnez ce locataire pour ouvrir le volet des détails du locataire.
 
-3. Sous l’onglet **Activation de l’authentification multifacteur** , sous **authentification multifacteur avec paramètres de sécurité par défaut**, **sélectionnez Activer les paramètres de sécurité par défaut**.
+3. Sous l’onglet **Activation de l’authentification multifacteur** , sous **MFA avec paramètres de sécurité par défaut**, **sélectionnez Activer la sécurité par défaut**.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
@@ -52,7 +52,7 @@ Pour activer l’authentification multifacteur via l’accès conditionnel, cons
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>Avertir les utilisateurs qui ne sont pas inscrits à l’authentification multifacteur
 
-1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **utilisateurs** > .
+1. Dans le volet de navigation gauche de Lighthouse, sélectionnez **Authentification multifacteur** **Utilisateurs** > .
 
 2. Sous l’onglet **Authentification multifacteur** , recherchez les locataires dont les utilisateurs ne sont pas inscrits à l’authentification multifacteur, puis sélectionnez le locataire pour ouvrir le volet d’informations du locataire.
 

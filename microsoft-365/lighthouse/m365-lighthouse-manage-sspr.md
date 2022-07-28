@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer la réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 5b727aee4e5ae9906ade6d6a53c01b54273956af
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 4760953d3d25c925dbe1bad6e2c67f43c621761b
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823526"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055919"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Gérer la réinitialisation de mot de passe en libre-service dans Microsoft 365 Lighthouse
 
@@ -38,7 +38,7 @@ Les conditions suivantes doivent être remplies pour qu’un locataire apparaiss
 
 ## <a name="view-sspr-tenant-status"></a>Afficher l’état du locataire SSPR
 
-- Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialiser le mot de passe** **utilisateur** > .
+- Dans le volet de navigation gauche de Lighthouse, sélectionnez **Réinitialisation du mot de passe** **utilisateur** > .
 
 L’onglet Réinitialisation de mot de passe fournit une vue d’ensemble des locataires qui ont activé la réinitialisation de mot de passe via les paramètres recommandés, le nombre d’utilisateurs qui ne se sont pas inscrits à SSPR et une répartition détaillée par locataire de la progression du déploiement SSPR au sein des organisations que vous gérez.
 

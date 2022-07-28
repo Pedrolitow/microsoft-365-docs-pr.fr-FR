@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Windows 365 (PC cloud).
-ms.openlocfilehash: 1698c9298981778cb01e01715b794dd43a4daf3c
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: f1f385032c33a2e7a9740e8bd6b363c5f135da23
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823461"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056666"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse  
   
@@ -39,7 +39,7 @@ Une fois que vous avez approvisionné des PC cloud pour votre locataire client, 
 
 Sous l’onglet Vue d’ensemble, la barre d’annotation de nombre de couleurs affiche le nombre total de PC cloud ou de connexions réseau Azure sur tous vos locataires clients qui ont les états suivants : Connexions réseau ayant échoué, Non approvisionné, Échec de l’approvisionnement et Déprovisionnement bientôt.
 
-Vous pouvez voir une répartition des états de PC cloud pour chaque locataire client dans la liste sous la barre d’annotation. Pour voir quels locataires ont des PC cloud avec un état spécifique, sélectionnez cet état dans la barre count-annotation pour filtrer la liste. Pour afficher les états des PC cloud pour un ou plusieurs locataires clients spécifiques, utilisez le menu déroulant **Locataires** pour filtrer la liste.
+Vous pouvez voir une répartition des états des PC cloud pour chaque locataire client dans la liste sous la barre d’annotation de nombre. Pour voir quels locataires ont des PC cloud avec un état spécifique, sélectionnez cet état dans la barre count-annotation pour filtrer la liste. Pour afficher les états des PC cloud pour un ou plusieurs locataires clients spécifiques, utilisez le menu déroulant **Locataires** pour filtrer la liste.
 
 Pour obtenir des informations d’état détaillées pour un client particulier, sélectionnez une valeur sous l’une des colonnes d’état de ce locataire. Selon la colonne dans laquelle se trouve la valeur, l’onglet **Connexions réseau Azure** ou **Tous les PC cloud** s’ouvre et affiche plus d’informations.
 
@@ -55,7 +55,7 @@ L’onglet Vue d’ensemble comprend également les options suivantes :
 
 Sous l’onglet Tous les PC cloud, la barre d’annotation de nombre de couleurs affiche le nombre total d’ordinateurs cloud sur tous vos locataires clients ayant les états suivants : Provisionné, Non approvisionné, Échec de l’approvisionnement et Déprovisionnement bientôt.
 
-Vous pouvez afficher tous les PC cloud et leur état d’approvisionnement dans la liste sous la barre d’annotation. Les informations suivantes sont fournies :
+Vous pouvez afficher tous les PC cloud et leur état d’approvisionnement dans la liste sous la barre count-annotation. Les informations suivantes sont fournies :
 
 - **Nom du PC cloud :** Nom affecté au PC cloud.
 - **Utilisateur:** Utilisateur pour lequel un PC cloud a été approvisionné ou a tenté d’être approvisionné.

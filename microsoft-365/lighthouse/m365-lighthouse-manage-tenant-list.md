@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment gérer votre liste de locataires.
-ms.openlocfilehash: deba0800ee422982e7379d7797d23a977602bbb9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839774"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056524"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Gérer votre liste de locataires dans Microsoft 365 Lighthouse
 
@@ -46,7 +46,7 @@ Pour gérer les balises de locataire, vous devez :
 
 2. Sélectionnez **Gérer les balises**.
 
-3. Dans le volet **Gérer les balises** , sélectionnez **Ajouter une balise**.
+3. Dans le volet **Gérer les balises** , sélectionnez **Créer une balise**.
 
 4. Entrez un nom et une description.
 
@@ -74,7 +74,7 @@ Pour gérer les balises de locataire, vous devez :
 
 4. Sélectionnez une balise dans la liste. Vous ne pouvez sélectionner qu’une seule étiquette à la fois.
 
-Les balises déjà affectées au locataire auront une coche à droite du nom de la balise. Vous pouvez également affecter une balise à plusieurs locataires en cochant la case en regard de chaque locataire de la liste, en sélectionnant **Attribuer des balises**, puis en sélectionnant une balise dans la liste.
+Les balises déjà affectées au locataire ont une coche à droite du nom de la balise. Vous pouvez également affecter une balise à plusieurs locataires en cochant la case en regard de chaque locataire de la liste, en sélectionnant **Attribuer des balises**, puis en sélectionnant une balise dans la liste.
 
 > [!NOTE]
 > Vous pouvez créer jusqu’à 30 balises uniques et les affecter à autant de locataires que nécessaire.
@@ -87,7 +87,9 @@ Les balises déjà affectées au locataire auront une coche à droite du nom de 
 
 3. Dans le volet **Gérer les balises** , sélectionnez la balise à supprimer.
 
-4. Sélectionnez **Supprimer la balise**.
+4. Sélectionnez **Supprimer**.
+
+5. Dans la boîte de dialogue de confirmation, sélectionnez **Confirmer**.
 
 ## <a name="remove-a-tag"></a>Supprimer une balise
 

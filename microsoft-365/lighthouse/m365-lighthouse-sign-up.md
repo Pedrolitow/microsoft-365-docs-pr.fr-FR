@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment vous inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03ab19f55d7ab46c798daf0e0b49836739e1e9fd
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489077"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056831"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -50,9 +50,9 @@ Cet article fournit des instructions sur la façon de s’inscrire à Microsoft 
 
     Pour vérifier que Lighthouse a été correctement ajouté à votre locataire, recherchez Microsoft 365 Lighthouse sous **Facturation > Vos produits** dans le Centre d'administration Microsoft 365.
 
-1. Si vous n’êtes pas redirigé vers le portail Lighthouse, accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+5. Si vous n’êtes pas redirigé vers le portail Lighthouse, accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. Sélectionnez **Accepter & Continuer** à compléter la modification de l’accord de partenaire.
+6. Sélectionnez **Accepter & Continuer** à compléter la modification de l’accord de partenaire.
 
     > [!NOTE]
     > Une fois l’inscription terminée, l’apparition des données client dans Lighthouse peut prendre jusqu’à 48 heures.

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment déployer Microsoft 365 Lighthouse lignes de base.
-ms.openlocfilehash: 17eda86e80b928fb8b4f56b0e5c719574e4741f5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0f31a4ef985eb6cbaf58f2f2d65b8269b25d83b2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012591"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056809"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer Microsoft 365 Lighthouse lignes de base
 
@@ -50,9 +50,9 @@ Assurez-vous que vous et vos locataires clients répondez aux exigences indiqué
     | Catégorie        | Indique si l’étape de déploiement est associée à la gestion des appareils, de l’identité ou des données. |
     | Dernière mise à jour    | Date à laquelle l’étape de déploiement a été mise à jour pour la dernière fois.                             |
 
-4. Dans la liste, sélectionnez une étape de déploiement à examiner.
+4. Dans la liste des étapes de déploiement, sélectionnez l’étape de déploiement à examiner.
 
-    La page Étape de déploiement fournit les informations suivantes :
+    La page de détails de l’étape de déploiement fournit les informations suivantes :
 
     | Colonne            | Description |
     |-------------------|-----------------------------------------------------------------------------------------------|
@@ -62,14 +62,14 @@ Assurez-vous que vous et vos locataires clients répondez aux exigences indiqué
     | Référence SKU requise   | Références SKU requises pour effectuer l’étape de déploiement.                                      |
     | Impact sur les utilisateurs    | Impact du déploiement de l’étape sur les utilisateurs du locataire.                             |
     | Pour vos utilisateurs | Les liens vers les ressources que les utilisateurs du locataire peuvent trouver utiles.                             |
-    | Étapes suivantes     | Liens et conseils concernant les étapes suivantes applicables.                                |
+    | Prochaines étapes     | Liens et conseils concernant les étapes suivantes applicables.                                |
 
-    Les étapes de déploiement incluent un ou plusieurs processus qui doivent être terminés. La page Étape de déploiement comprend un tableau qui répertorie chaque processus inclus dans l’étape de déploiement et fournit les informations suivantes :
+    Les étapes de déploiement incluent un ou plusieurs processus qui doivent être terminés. La page détails de l’étape de déploiement inclut un tableau qui répertorie chaque processus inclus dans l’étape de déploiement et fournit les informations suivantes :
 
     | Colonne            | Description |
     |-------------------|-------------------------------------------------------------|
-    | Nom du processus      | Nom du processus, qui, lorsqu’il est sélectionné, ouvre l’onglet Processus applicable.          |
-    | État            | État détecté de ces configurations de paramètre incluses dans le processus de déploiement.           |
+    | Nom du processus      | Nom du processus, qui, lorsqu’il est sélectionné, ouvre l’onglet de processus applicable.          |
+    | État            | État détecté des configurations de paramètre incluses dans le processus de déploiement.           |
     | Portail de gestion | Portail par le biais duquel les paramètres de configuration associés au processus sont gérés. |
 
 ## <a name="deploy-a-deployment-step"></a>Déployer une étape de déploiement
@@ -80,11 +80,11 @@ Assurez-vous que vous et vos locataires clients répondez aux exigences indiqué
 
 3. Sélectionnez l’onglet **Plan de déploiement** .
 
-4. Dans la liste des étapes de déploiement, sélectionnez une étape de déploiement que vous souhaitez déployer.
+4. Dans la liste des étapes de déploiement, sélectionnez l’étape de déploiement que vous souhaitez déployer.
 
 5. Sélectionnez **Vérifier et déployer**.
 
-6. Dans le volet **Confirmer les configurations** , sélectionnez **Déployer**.
+6. Dans le volet **Confirmer la configuration** , sélectionnez **Déployer**.
 
 ## <a name="test-a-deployment-step"></a>Tester une étape de déploiement
 
@@ -96,17 +96,17 @@ Pour les étapes de déploiement déployées via des stratégies d’accès cond
 
 3. Sélectionnez l’onglet **Plan de déploiement** .
 
-4. Dans la liste des étapes de déploiement, sélectionnez une étape de déploiement que vous souhaitez déployer.
+4. Dans la liste des étapes de déploiement, sélectionnez l’étape de déploiement que vous souhaitez déployer.
 
 5. Sélectionnez **Vérifier et déployer**.
 
-6. Dans le volet **Confirmer les configurations** , sélectionnez **Tester ces paramètres sans déploiement**.
+6. Dans le volet **Confirmer la configuration** , sélectionnez **Tester ces paramètres sans déploiement**.
 
 7. Sélectionnez **Tester**.
 
-Le volet Confirmer les configurations se ferme et affiche la comparaison de stratégie. Chaque stratégie au sein du locataire existant est répertoriée dans la table des paramètres détectés.
+Le volet **Confirmer la configuration** se ferme et affiche la comparaison de stratégie. Chaque stratégie au sein du locataire existant est répertoriée dans la table des paramètres détectés.
 
-La table paramètres détectés répertorie chaque stratégie existante et résume le nombre de paramètres et, entre parenthèses, le nombre d’utilisateurs qui se trouvent dans l’un des états suivants :
+La table paramètres détectés répertorie chaque stratégie existante et résume le nombre de paramètres et, entre parenthèses, le nombre d’utilisateurs qui ont l’un des états suivants :
 
 | État         | Description
 |-------------|------------------------------------------------------------|
@@ -114,7 +114,7 @@ La table paramètres détectés répertorie chaque stratégie existante et résu
 | Paramètres manquants     | Nombre total de paramètres de configuration dans le plan de déploiement qui manquent une valeur dans le locataire.      |
 | Paramètres en conflit | Nombre total de paramètres de configuration dans le plan de déploiement qui ont une valeur conflictuelle dans le locataire. |
 
-Les paramètres détectés peuvent également être affichés dans une table modulaire qui fournit les détails des paramètres de configuration pour chaque stratégie au niveau du paramètre et de l’utilisateur et qui peut être triée selon chacun des états de paramètres suivants :
+Vous pouvez également afficher les paramètres détectés dans une table modulaire qui fournit les détails des paramètres de configuration pour chaque stratégie au niveau du paramètre et de l’utilisateur, et vous pouvez trier la table en fonction des états de paramètre suivants :
 
 | État         | Description
 |-------------|------------------------------------------------------------|
@@ -124,13 +124,13 @@ Les paramètres détectés peuvent également être affichés dans une table mod
 | Paramètres en conflit | Nombre total de paramètres de configuration dans le plan de déploiement qui ont une valeur conflictuelle dans le locataire. |
 | Paramètres supplémentaires       | Nombre total de paramètres de configuration avec une valeur dans le locataire, mais aucune valeur dans le plan de déploiement.     |
 
-Une fois cette comparaison effectuée, Lighthouse met automatiquement à jour l’état détecté, l’état du déploiement et l’état de l’étape de déploiement.
+Lorsque cette comparaison est effectuée, Lighthouse met automatiquement à jour l’état détecté, l’état du déploiement et l’état de l’étape de déploiement.
 
-S’il n’existe aucune stratégie à comparer, sélectionnez Vérifier et déployer pour rouvrir le volet Confirmer les configurations, puis sélectionnez Déployer.
+S’il n’existe aucune stratégie à comparer, **sélectionnez Vérifier et déployer** pour rouvrir le volet **Confirmer la configuration** , puis sélectionnez **Déployer**.
 
 S’il existe des stratégies existantes à comparer, vous pouvez :
 
-- Modifiez les paramètres de configuration du plan de déploiement et retestez-les par rapport aux stratégies existantes, **sélectionnez Vérifier et déployer** pour rouvrir le volet Confirmer les configurations, ajustez les paramètres de configuration souhaités, cochez la case, puis sélectionnez **Tester** en bas du volet.
+- Modifiez les paramètres de configuration du plan de déploiement et retestez-les par rapport aux stratégies existantes, **sélectionnez Vérifier et déployer** pour rouvrir le volet **Confirmer la configuration** , ajustez les paramètres de configuration souhaités, cochez la case, puis sélectionnez **Tester** en bas du volet.
 
 - Modifiez les stratégies existantes dans le portail de gestion applicable pour rapprocher les différences par :
   - Application des paramètres manquants
@@ -142,9 +142,9 @@ Pour chaque processus de déploiement qui peut être automatisé via Lighthouse,
 - L’état détecté indique dans quelle mesure les paramètres de ce processus sont actuellement déployés.
 - L’état du déploiement correspond à l’état du dernier déploiement sur le locataire.
 
-Les étapes de déploiement peuvent être déployées indépendamment des stratégies existantes, mais ne seront pas considérées comme terminées tant qu’il n’y a pas de paramètres en conflit. L’échec de la résolution de ces paramètres conflictuels peut avoir un impact sur l’expérience utilisateur. 
+Vous pouvez déployer des étapes de déploiement, quelles que soient les stratégies existantes, mais elles ne seront pas considérées comme terminées tant qu’il n’y a pas de paramètres en conflit. L’échec de la résolution de ces paramètres conflictuels peut avoir un impact sur l’expérience utilisateur. 
 
-Le déploiement de l’étape de déploiement dans des instances où il existe des paramètres égaux dans le locataire à partir d’une stratégie existante entraîne la duplication des paramètres existants au sein du locataire, mais n’affecte pas l’expérience utilisateur. 
+Le déploiement de l’étape de déploiement dans des instances où des paramètres égaux sont présents dans le locataire à partir d’une stratégie existante entraîne la duplication des paramètres existants au sein du locataire, mais n’affecte pas l’expérience utilisateur. 
 
 Des paramètres supplémentaires sont fournis pour votre prise de conscience, mais ne vous obligent pas à prendre des mesures.
 
@@ -152,24 +152,24 @@ Pour plus d’informations sur la gestion des conflits de stratégie, consultez 
 
 ## <a name="update-deployment-step-status"></a>Mettre à jour l’état de l’étape de déploiement
 
-1. Dans la page de navigation de gauche, sélectionnez **Locataires**.
+1. Dans la page de navigation de gauche dans Lighthouse, sélectionnez **Locataires**.
 
 2. Dans la liste des locataires, sélectionnez le locataire que vous souhaitez afficher.
 
 3. Sélectionnez l’onglet **Plan de déploiement** .
 
-4. Dans la liste des étapes de déploiement, sélectionnez une étape de déploiement à mettre à jour.
+4. Dans la liste des étapes de déploiement, sélectionnez l’étape de déploiement à mettre à jour.
 
 5. Dans la liste déroulante **Adresse à** , sélectionnez un état d’action.
 
-    | État de l’action                        | Description      |
-    |---------------------------------------|----------------------------------------|
-    | Pour résoudre le problème                        | État par défaut de toutes les étapes de déploiement qui n’incluent PAS plusieurs processus d’étape de déploiement.      |
-    | Planifié                           | L’étape de déploiement a été planifiée, mais n’a pas encore été effectuée.                                      |
-    | Risque accepté                     | L’utilisateur a accepté le risque qui aurait autrement été évité en appliquant l’étape de déploiement. |
-    | Risque résolu par le biais d’un tiers | Le risque a été résolu par l’implémentation d’une application ou d’un logiciel tiers.             |
-    | Résolu par d’autres moyens  | Le risque a été résolu par d’autres moyens, tels que l’implémentation d’un outil interne.    |
-    | Configuration manuelle appliquée      | La configuration prescrite dans le plan de déploiement a été appliquée manuellement.                         |
+    | État de l’action | Description |
+    |--|--|
+    | Pour résoudre le problème | État par défaut de toutes les étapes de déploiement qui n’incluent PAS plusieurs processus d’étape de déploiement. |
+    | Planifié | L’étape de déploiement a été planifiée, mais n’a pas encore été effectuée. |
+    | Risque accepté | L’utilisateur a accepté le risque qui aurait autrement été évité en appliquant l’étape de déploiement. |
+    | Risque résolu par le biais d’un tiers | Le risque a été résolu par l’implémentation d’une application ou d’un logiciel tiers. |
+    | Résolu par d’autres moyens | Le risque a été résolu par d’autres moyens, tels que l’implémentation d’un outil interne. |
+    | Configuration manuelle appliquée | La configuration prescrite dans le plan de déploiement a été appliquée manuellement. |
 
 ## <a name="share-deployment-step"></a>Étape de déploiement de partage
 
@@ -179,7 +179,7 @@ Pour plus d’informations sur la gestion des conflits de stratégie, consultez 
 
 3. Sélectionnez l’onglet **Plan de déploiement** .
 
-4. Dans la liste des étapes de déploiement, sélectionnez une étape de déploiement que vous souhaitez partager.
+4. Dans la liste des étapes de déploiement, sélectionnez l’étape de déploiement que vous souhaitez partager.
 
 5. Dans la liste déroulante **Partager** , sélectionnez l’une des options suivantes.
 
@@ -191,7 +191,7 @@ Pour plus d’informations sur la gestion des conflits de stratégie, consultez 
     Le lien permet à toute personne disposant d’autorisations dans votre organisation d’afficher le plan de déploiement du locataire.
 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de l’utilisation de Microsoft 365 Lighthouse lignes de base pour déployer des configurations de locataire standard](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Vue d’ensemble de la page Windows 365 (PC cloud) dans Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)\

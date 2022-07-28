@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment atténuer les menaces avec l’Antivirus Microsoft Defender.
-ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 005e1c527b8989b7689740e54229768decaebbc3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822044"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055941"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Atténuer les menaces dans Microsoft 365 Lighthouse avec l’antivirus Microsoft Defender
 
@@ -100,7 +100,7 @@ Pour mettre à jour l’Antivirus Microsoft Defender sur un seul appareil :
 
 Vous pouvez obtenir des mises à jour pour plusieurs appareils en cochant la case en regard de chaque nom d’appareil dans la liste, puis sélectionnez **Mettre à jour l’antivirus**.
 
-Si vous devez créer une stratégie, sélectionnez **Mettre à jour** la stratégie dans le volet détails de l’appareil. Lighthouse vous redirige vers Microsoft Endpoint Manager (MEM). Pour plus d’informations sur la création d’une stratégie, consultez [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+Si vous devez créer une stratégie, sélectionnez **Mettre à jour la stratégie** dans le volet détails de l’appareil. Lighthouse vous redirige vers Microsoft Endpoint Manager (MEM). Pour plus d’informations sur la création d’une stratégie, consultez [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## <a name="check-pending-antivirus-actions-on-a-device"></a>Vérifier les actions antivirus en attente sur un appareil
 
