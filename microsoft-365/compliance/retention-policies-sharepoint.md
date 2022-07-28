@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le fonctionnement de la rétention Microsoft 365 pour SharePoint et OneDrive, à l’aide de stratégies de rétention et d’étiquettes de rétention pour gérer la rétention automatique ou la suppression des données pour votre organisation.
-ms.openlocfilehash: 2acfeb8dd370bc3e87f3efb25290434edc2a0152
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d3648fd7ce86fbf9c3c81a8c0609598dbe2a2067
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942911"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037159"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -144,11 +144,15 @@ Seules les pages et sections sont touchées par les paramètres de rétention qu
 
 La gestion des versions est une fonctionnalité de toutes les listes de documents et bibliothèques dans Microsoft Office SharePoint Online et OneDrive. Par défaut, la gestion des versions conserve un minimum de 500 versions majeures, bien que vous puissiez augmenter cette limite. Pour plus d'informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Lorsqu’un document avec plusieurs versions est soumis à des paramètres de rétention pour conserver le contenu, les versions copiées dans la bibliothèque de conservation et de préservation des documents sont des éléments distincts. Si vous avez configuré les paramètres de rétention pour suppression à la fin de la période de rétention :
+Lorsqu’un document comportant des versions est soumis à des paramètres de conservation pour conserver ce contenu, la façon dont les versions sont stockées dans la bibliothèque de conservation et de préservation des documents a changé en juillet 2022 pour améliorer les performances. Actuellement déployées sur les clients, toutes les versions du fichier sont conservées dans un seul fichier dans la bibliothèque de conservation et de préservation des documents. Avant la modification, les versions étaient copiées dans la bibliothèque de conservation et de préservation des documents en tant que fichiers distincts et, après la modification, restent en tant que fichiers distincts.
+
+Si vous avez configuré les paramètres de rétention pour suppression à la fin de la période de rétention :
 
 - Si la période de rétention est basée sur la date de création du contenu, chaque version comporte la même date d’expiration que le document d’origine. Le document d’origine et toutes ses versions expirent en même temps.
 
-- Si la période de rétention est basée sur la date de la dernière modification du contenu, chaque version possède sa propre date d’expiration basée sur la date à laquelle le document d’origine a été modifié pour créer cette version. Le document d’origine et ses versions expirent séparément l’un de l’autre.
+- Si la période de conservation est basée sur la date de la dernière modification du contenu :
+    - **Après la modification où toutes les versions du fichier sont conservées dans un seul fichier dans la bibliothèque de conservation et de préservation des documents** : chaque version a la même date d’expiration que la dernière version du document. La dernière version du document et ses versions expirent toutes en même temps.
+    - **Avant la modification où les versions ont été copiées dans la bibliothèque de conservation et de préservation des documents en tant que fichiers distincts** : chaque version a sa propre date d’expiration en fonction du moment où le document d’origine a été modifié pour créer cette version. Le document d’origine et ses versions expirent séparément les uns des autres.
 
 Lorsque l’action de rétention consiste à supprimer le document, elle supprime simultanément toutes les versions absentes de la bibliothèque de conservation et de préservation des documents, en fonction de la version actuelle.
 
