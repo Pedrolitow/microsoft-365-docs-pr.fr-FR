@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696046"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069600"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -457,7 +457,9 @@ Pour plus d’informations sur les applets de commande PowerShell qui prennent e
 
 Bien que l'étiquetage automatique soit l'un des moyens les plus efficaces de classer, d'étiqueter et de protéger les fichiers Office que possède votre organisation, vérifiez si vous pouvez le compléter par l'une des méthodes suivantes pour augmenter la portée de votre étiquetage :
 
-- Avec SharePoint Syntex, vous pouvez [appliquer une étiquette de confidentialité à un modèle de compréhension de document](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), afin que les documents identifiés dans une bibliothèque SharePoint soient automatiquement étiquetés.
+- Pour les bibliothèques de documents SharePoint, vous pouvez appliquer une étiquette de confidentialité par défaut pour les fichiers nouveaux et modifiés. Pour plus d’informations, consultez [Configurer une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint](sensitivity-labels-sharepoint-default-label.md).
+
+- Avec SharePoint Syntex, vous pouvez [appliquer une étiquette de confidentialité à un modèle de compréhension de document](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), afin que les documents identifiés dans une bibliothèque de documents SharePoint soient automatiquement étiquetés.
 
 - Lorsque vous utilisez le[Client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) :
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Configurez une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint pour les documents nouveaux et non étiquetés.
-ms.openlocfilehash: b0a94e3390533f5350f317316a811c17fc34aa28
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069796"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071330"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configurer une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint
 
@@ -29,6 +29,8 @@ ms.locfileid: "67069796"
 
 > [!NOTE]
 > Cette fonctionnalité est progressivement déployée en préversion et peut être modifiée. Il s’agit également d’une fonctionnalité Premium avec des détails de licence à fournir lorsque la fonctionnalité devient en disponibilité générale (GA).
+> 
+> Pour lire l’annonce en préversion, consultez le [billet Yammer](https://www.yammer.com/askipteam/threads/1846702701985792).
 
 Lorsque SharePoint est [activé pour les étiquettes de confidentialité](sensitivity-labels-sharepoint-onedrive-files.md), vous pouvez configurer une étiquette par défaut pour les bibliothèques de documents. Ensuite, les nouveaux fichiers chargés dans cette bibliothèque ou les fichiers existants modifiés dans la bibliothèque verront cette étiquette appliquée s’ils n’ont pas déjà d’étiquette de confidentialité, ou s’ils ont une étiquette de confidentialité, mais avec une [priorité inférieure](sensitivity-labels.md#label-priority-order-matters).
 
@@ -59,6 +61,8 @@ Résumé des résultats :
 ## <a name="requirements"></a>Configuration requise
 
 - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+- [La gestion des droits relatifs à l’information SharePoint (IRM) n’est pas activée pour la bibliothèque](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). Cette ancienne technologie n’est pas compatible avec l’utilisation d’une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint. Si une bibliothèque est activée pour irm, vous ne pourrez pas sélectionner une étiquette de confidentialité par défaut.
 
 ## <a name="limitations"></a>Limites
 
