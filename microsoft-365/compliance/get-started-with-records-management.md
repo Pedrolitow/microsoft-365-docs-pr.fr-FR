@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui gèrent du contenu à valeur élevée dans Microsoft 365 pour vos obligations légales, commerciales ou réglementaires.
-ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944194"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069522"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
@@ -43,6 +43,9 @@ Etes-vous prêt à démarrer la gestion de contenus à forte valeur de votre org
 
     - [Publier des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
     - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
+
+> [!TIP]
+> Si vous migrez des enregistrements vers Microsoft 365 et que vous devez vérifier qu’ils n’ont pas été modifiés, consultez [Validation des enregistrements migrés](records-management.md#validating-migrated-records).
 
 ## <a name="subscription-and-licensing-requirements"></a>Conditions d’abonnement et de licence
 

@@ -1020,6 +1020,8 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Configurer une étiquette de confidentialité par défaut pour des bibliothèques SharePoint
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: Activer la co-édition pour les documents chiffrés par des étiquettes de confidentialité
           href: sensitivity-labels-coauthoring.md
         - name: Définir le type de lien de partage par défaut en utilisant les étiquettes de confidentialité

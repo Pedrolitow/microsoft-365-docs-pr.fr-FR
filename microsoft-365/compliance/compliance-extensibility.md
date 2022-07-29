@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft Purview à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: 8cda9ea3a5ef69af69ab802ca21aa8c4c0e716b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621180"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071544"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilité de Microsoft Purview et Microsoft Priva
 
@@ -41,7 +41,7 @@ Il existe deux blocs de construction clés pour l’extensibilité de conformit�
 
 Microsoft fournit des connecteurs de données tiers qui peuvent être configurés dans le portail de conformité Microsoft Purview. Pour obtenir la liste des connecteurs de données fournis par Microsoft, consultez la table [des connecteurs de données tiers](archiving-third-party-data.md#third-party-data-connectors) . La table des connecteurs de données tiers récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après avoir importé et archivé des données dans Microsoft 365, ainsi que des liens vers les instructions pas à pas pour chaque connecteur.
 
-Pour en savoir plus sur les connecteurs de données Microsoft 365, consultez [Archivage de données tierces](archiving-third-party-data.md). Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le portail de conformité, vous pouvez travailler avec un partenaire qui peut vous fournir un connecteur personnalisé. Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, consultez [Travailler avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md).
+Pour en savoir plus sur les connecteurs de données Microsoft Purview, consultez [Archivage de données tierces](archiving-third-party-data.md). Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le portail de conformité, vous pouvez travailler avec un partenaire qui peut vous fournir un connecteur personnalisé. Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, consultez [Travailler avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md).
 
 ### <a name="prerequisites-for-data-connectors"></a>Prérequis pour les connecteurs de données
 
@@ -105,7 +105,7 @@ Pour connaître les exigences en matière de licences pour l’utilisation des A
 
 Avec [les connecteurs Microsoft Graph](/microsoftsearch/connectors-overview), les organisations peuvent indexer des données tierces afin qu’elles apparaissent dans les résultats de recherche Microsoft. Cette fonctionnalité élargit les types de sources de contenu disponibles dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus vaste. Les données tierces peuvent être hébergées localement ou dans des clouds publics ou privés. À compter d’eDiscovery (Premium), nous allons activer la préversion par les développeurs de la valeur de conformité intégrée des applications connectées à Microsoft 365. Cela permet la conformité des applications qui s’intègrent à l’écosystème Microsoft 365 pour permettre aux utilisateurs d’avoir des expériences de conformité transparentes. Pour en savoir plus sur l’intégration des API connecteur Microsoft Graph dans l’affichage de vos applications, consultez [Créer, mettre à jour et supprimer des connexions dans Microsoft Graph](/graph/connecting-external-content-connectors-api-overview).
 
-### <a name="microsoft-graph-api-for-records-management-preview"></a>Microsoft API Graph pour la gestion des enregistrements (préversion)
+### <a name="microsoft-graph-api-for-records-management-preview"></a>API Microsoft Graph pour la gestion des enregistrements (préversion)
 
 Les organisations de tous types ont besoin d’une solution de gestion des enregistrements pour gérer les enregistrements critiques dans leurs données. [Gestion des enregistrements Microsoft Purview](records-management.md) permet à une organisation de gérer ses obligations légales, de démontrer la conformité aux réglementations et d’accroître l’efficacité avec la disposition régulière d’éléments qui ne sont plus nécessaires.
 

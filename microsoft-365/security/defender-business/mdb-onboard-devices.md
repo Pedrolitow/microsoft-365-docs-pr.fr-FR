@@ -10,22 +10,23 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/28/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 6894b4a936af81cbd51dad34bbf6edf704e910a7
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: a692a82af0329c991ca153323552fd2a16c16547
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969405"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071456"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
-Avec Defender Entreprise, vous avez le choix entre plusieurs options pour intégrer les appareils de votre entreprise. Cet article vous guide tout au long de ces options et fournit une vue d’ensemble du fonctionnement de l’intégration.
+Avec Defender pour entreprise, vous avez le choix entre plusieurs options pour l'intégration des appareils de votre entreprise. Cet article vous guide tout au long de ces options et fournit une vue d’ensemble du fonctionnement de l’intégration.
 
 ## <a name="what-to-do"></a>Procédure
 
@@ -41,7 +42,7 @@ Avec Defender Entreprise, vous avez le choix entre plusieurs options pour intég
 
 ## <a name="windows-10-and-11"></a>Windows 10 et 11
 
-Choisissez l’une des options suivantes pour intégrer des appareils clients Windows à Defender entreprise :
+Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :
 
 - [Script local](#local-script-for-windows-10-and-11) (pour l’intégration manuelle d’appareils dans le portail Microsoft 365 Defender)
 - [stratégie de groupe](#group-policy-for-windows-10-and-11) (si vous utilisez déjà stratégie de groupe dans votre organisation)
@@ -152,7 +153,7 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, accédez
 > [!NOTE]
 > Nous vous recommandons d’utiliser un [script local pour intégrer Mac](#local-script-for-mac). Bien que vous puissiez [configurer l’inscription pour Mac à l’aide de Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer Mac à Defender for Business. 
 
-Choisissez l’une des options suivantes pour intégrer Mac :
+Choisissez l'une des options suivantes pour le Mac embarqué :
 
 - [Script local pour Mac](#local-script-for-mac) (*recommandé*)
 - [Intune pour Mac](#intune-for-mac)
@@ -338,12 +339,16 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, accédez
 
 Vous aurez besoin de Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Si vous avez [Microsoft 365 Business Premium](../../business/index.yml), vous avez Intune. 
 
-Consultez les ressources suivantes pour obtenir de l’aide sur l’inscription de ces appareils dans Intune :
+Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :
 
 - [Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)
-- [Inscrire des appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)
+- [Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)
 
 Une fois qu’un appareil est inscrit dans Intune, vous pouvez l’ajouter à un groupe d’appareils. [En savoir plus sur les groupes d’appareils dans Defender entreprise](mdb-create-edit-device-groups.md).
+
+## <a name="view-a-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
+
+Pour afficher la liste des appareils intégrés à Defender entreprise, accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dans le volet de navigation, sous **Points de terminaison**, choisissez **Inventaire des appareils**.
 
 ## <a name="next-steps"></a>Prochaines étapes
 

@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632638"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071500"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Tâches rapides pour bien démarrer avec la conformité dans Microsoft Purview
 
@@ -37,7 +37,7 @@ Il est important de gérer les membres de votre organisation qui ont accès aux 
 
 Commencez par attribuer des autorisations de conformité aux personnes de votre organisation afin qu’elles puissent effectuer ces tâches et empêcher les personnes non autorisées d’accéder à des zones en dehors de leurs responsabilités. Avant de commencer à configurer et à implémenter des solutions de conformité incluses dans Microsoft 365, vous devez vous assurer que vous avez affecté les personnes appropriées à **l’administrateur des données de conformité** et aux rôles d’administrateur de conformité. Vous devez également affecter des utilisateurs au rôle de lecteur général Azure Active Directory pour afficher les données dans le Gestionnaire de conformité.
 
-Pour obtenir des instructions détaillées sur la configuration des autorisations et l’attribution de personnes à des rôles d’administrateur, consultez [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Pour obtenir des instructions détaillées sur la configuration des autorisations et l’attribution de personnes à des rôles d’administrateur, consultez [Autorisations dans le portail de conformité Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Tâche 2 : Connaître votre état de conformité
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Découvrez comment la gestion des enregistrements Microsoft Purview prend en charge les éléments à valeur élevée pour les exigences de conservation des enregistrements métier, légales ou réglementaires.
-ms.openlocfilehash: 1a9d37f138647a36fb7440f15fd74851957b542f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 326731a80659b58368c41bff7894567e14e2d000
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642325"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069521"
 ---
 # <a name="learn-about-records-management"></a>Découvrez la gestion des enregistrements
 
@@ -114,6 +114,21 @@ Lorsque vous appliquez une étiquette de rétention à un élément de liste qui
 > De plus, une étiquette réglementaire ne peut être appliquée à un document extrait dans SharePoint.
 >
 > En raison de ces restrictions et de l’irréversibilité de ces actions, assurez-vous que vous devez vraiment utiliser les enregistrements réglementaires avant de sélectionner cette option pour les étiquettes de rétention. Pour empêcher la configuration accidentelle, cette option n’est pas disponible par défaut, mais doit d’abord être activée à l’aide de PowerShell. Des instructions sont incluses dans [Déclarer les enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
+
+## <a name="validating-migrated-records"></a>Validation des enregistrements migrés
+
+Si vous migrez des enregistrements vers SharePoint ou OneDrive, vous devrez peut-être valider que ces enregistrements n’ont pas été modifiés et conservent leur état d’immuabilité. Par exemple, vous utilisez une solution de migration et devez respecter les conditions requises de chaîne de responsabilité pour vos enregistrements. Les propriétés et méthodes de fichier classiques souvent utilisées pour ce type de validation, telles que la taille de fichier ou le hachage de fichier, peuvent ne pas être suffisantes, car SharePoint met automatiquement à jour les métadonnées d’un fichier lors de son chargement.
+
+Au lieu de cela, pour valider vos enregistrements migrés, vous pouvez utiliser la valeur de la propriété `vti_writevalidationtoken`, qui est un hachage XOR encodé au format Base64 du fichier avant sa modification par SharePoint. Procédez comme suit :
+
+1. Générez le hachage XOR du fichier d’origine à l’aide de l’algorithme QuickXorHash. Pour en savoir plus, consultez [Extraits de code : algorithme QuickXorHash](/onedrive/developer/code-snippets/quickxorhash).
+
+2. Encodez au format Base64 le hachage XOR. Pour plus d'informations, voir [Documentation de la méthode Base64Encode](/windows/win32/seccrypto/utilities-base64encode).
+
+3. Une fois le fichier migré, récupérez la valeur de la propriété `vti_writevalidationtoken` à partir du fichier chargé.
+
+4. Comparez la valeur générée à l’étape 2 avec la valeur récupérée à l’étape 3. Ces deux valeurs doivent correspondre. Si c’est le cas, vous avez vérifié que l’enregistrement n’a pas changé.
+
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez la liste des problèmes connus pour Lighthouse par zone de fonctionnalité.
-ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 8ad247917a8dfdad7362576079edd9bdec7302ba
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056853"
+ms.locfileid: "67069557"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problèmes connus liés à Microsoft 365 Lighthouse
 
@@ -33,6 +33,8 @@ Cet article répertorie les problèmes connus pour Microsoft 365 Lighthouse par 
 | Problème | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **L’agent du support technique ne peut pas réinitialiser un mot de passe utilisateur** | Les techniciens du fournisseur de services managés (MSP) qui sont membres du groupe Agent du support technique ne peuvent pas réinitialiser les mots de passe des utilisateurs dans les locataires du client. Lorsqu’il tente de réinitialiser le mot de passe d’un utilisateur, il reçoit le message d’erreur suivant : « Vous n’êtes pas autorisé à le faire. [En savoir plus](m365-lighthouse-configure-portal-security.md) » | Pour contourner le problème d’autorisations, les agents du support technique doivent réinitialiser les mots de passe à l’aide du Centre d'administration Microsoft 365 ou d’Azure Active Directory. |
+| **Aucune donnée ne s’affiche sous l’onglet OneDrive dans le volet détails de l’utilisateur** | Lorsqu’un technicien MSP tente d’afficher les données OneDrive sous l’onglet OneDrive dans le volet d’informations de l’utilisateur, il voit le message : « OneDrive n’est pas configuré pour cet utilisateur. Demandez à la personne d’aller à portal.office.com/onedrive pour la configurer. Ça peut prendre un certain temps. Si vous voyez toujours ce message 24 heures plus tard, contactez le support technique. » | L’onglet OneDrive ne prend pas en charge l’authentification déléguée pour l’instant. Pour contourner le problème, les techniciens MSP doivent afficher les données OneDrive dans le Centre d'administration Microsoft 365 en se connectant à l’aide des informations d’identification du client. |
+
 
 ## <a name="devices"></a>Appareils
 

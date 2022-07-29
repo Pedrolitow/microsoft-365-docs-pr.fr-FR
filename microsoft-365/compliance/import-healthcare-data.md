@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (DSE) à partir de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données DSE dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 00d0419a2db39642b87797254f89dc1c721b69e2
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822954"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071522"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit DSE de santé (préversion)
 
-Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données d’audit pour l’activité des utilisateurs dans le système DSE (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système de DSE de santé incluent des données relatives aux événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit des DSE de santé peuvent être utilisées par la [solution de gestion des risques internes](insider-risk-management.md) Microsoft 365 pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
+Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des données d’audit pour l’activité des utilisateurs dans le système DSE (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système de DSE de santé incluent des données relatives aux événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit DSE de santé peuvent être utilisées par la solution Microsoft Purview [Insider Risk Management](insider-risk-management.md) pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
 
 La configuration d’un connecteur Healthcare se compose des tâches suivantes :
 

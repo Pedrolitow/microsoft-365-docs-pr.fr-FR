@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements médicaux électroniques (EHR) du système Epic de votre organisation vers Microsoft 365. Cela vous permet d’utiliser les données DSE Epic dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6ff5719e61e754ba907daef36bb927cb2ad71d50
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822776"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071588"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurer un connecteur pour importer des données d’audit d’ehR Epic (préversion)
 
-Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des enregistrements d’audit pour l’activité des utilisateurs dans le système Epic Electronic Healthcare Records (EHR) de votre organisation. Les enregistrements d’audit de votre système Epic EHR incluent des enregistrements pour les événements liés à l’accès aux dossiers d’intégrité d’un patient. Les enregistrements d’audit ehr épiques peuvent être utilisés par la [solution de gestion des risques internes](insider-risk-management.md) Microsoft 365 pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
+Vous pouvez configurer un connecteur de données dans le portail de conformité Microsoft Purview pour importer des enregistrements d’audit pour l’activité des utilisateurs dans le système Epic Electronic Healthcare Records (EHR) de votre organisation. Les enregistrements d’audit de votre système Epic EHR incluent des enregistrements pour les événements liés à l’accès aux dossiers d’intégrité d’un patient. Les enregistrements d’audit ehr épiques peuvent être utilisés par la solution Microsoft Purview [Insider Risk Management](insider-risk-management.md) pour protéger votre organisation contre tout accès non autorisé aux informations sur les patients.
 
 La configuration d’un connecteur Epic se compose des tâches suivantes :
 
@@ -100,7 +100,7 @@ L’étape suivante consiste à créer un connecteur Epic dans le portail de con
 
    Une page d’état s’affiche pour confirmer la création du connecteur. Cette page contient deux éléments importants dont vous avez besoin pour effectuer l’étape suivante afin d’exécuter l’exemple de script pour charger vos données d’enregistrements d’audit DSE Epic.
 
-    Passer en revue la page avec l’ID de travail et le lien vers github pour l’exemple de script
+    Passer en revue la page avec l’ID de travail et le lien vers GitHub pour obtenir un exemple de script
 
     1. **ID du travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez la copier à partir de cette page ou de la page de menu volant du connecteur.
 
