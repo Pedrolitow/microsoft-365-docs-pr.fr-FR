@@ -16,18 +16,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 309baa41f217cbac9a865317084f284b3d22961b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: f52dd982c9a418af9184389e8e83e6077326ee80
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554222"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099995"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,6 +41,18 @@ Le déploiement de Microsoft Defender pour point de terminaison est un processus
 - Configurer les fonctionnalités du service
 
 :::image type="content" source="images/deployment-steps.png" alt-text="Processus d’intégration et de configuration" lightbox="images/deployment-steps.png":::
+
+## <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
+
+Nous vous recommandons d’utiliser Privileged Identity Management pour gérer vos rôles afin de fournir un audit, un contrôle et une révision d’accès supplémentaires pour les utilisateurs disposant d’autorisations d’annuaire.
+
+Defender pour point de terminaison prend en charge deux façons de gérer les autorisations :
+
+- **Gestion des autorisations de base** : définit les autorisations sur un accès complet ou en lecture seule. Les utilisateurs disposant de rôles d’administrateur général ou d’administrateur de sécurité dans Azure Active Directory (Azure AD) ont un accès complet. Le rôle lecteur de sécurité dispose d’un accès en lecture seule et n’accorde pas l’accès pour afficher l’inventaire des machines/appareils.
+
+- **Contrôle d’accès en fonction du rôle (RBAC)** : définit des autorisations granulaires en définissant des rôles, en affectant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. consultez [Gérer l’accès au portail à l’aide du contrôle d’accès en fonction du rôle](rbac.md).
+
+Nous vous recommandons d’utiliser RBAC pour vous assurer que seuls les utilisateurs disposant d’une justification métier peuvent accéder à Defender pour point de terminaison.
 
 ## <a name="onboard-devices-to-the-service"></a>Intégrer des appareils à des services
 Vous devez accéder à la section d’intégration du portail Defender pour point de terminaison pour intégrer l’un des appareils pris en charge. Selon l’appareil, vous serez guidé avec les étapes appropriées et les options d’outils de gestion et de déploiement fournies pour l’appareil. 

@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e083a9b0edd4895a2349d6508a30528bd86db5b
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050716"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099918"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Comprendre le rapport Defender Experts for Hunting dans Microsoft 365 Defender
 

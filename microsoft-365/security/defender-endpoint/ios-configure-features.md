@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7712b1b65db62625b853567f2d739d5f16787eb9
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 0e1971ba9b2c65dd02411d237ab3886c58fa7003
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051819"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099280"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>configurer Microsoft Defender pour point de terminaison sur les fonctionnalités iOS
 
@@ -79,7 +79,7 @@ Cette configuration est disponible à la fois pour les appareils inscrits (GPM) 
     - Dans [le Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez **aux** >  stratégies  >  de **configuration d’applications****Ajouter** >  des **appareils gérés**.
     - Donnez à la stratégie un nom, **Platform > iOS/iPadOS**.
     - Sélectionnez Microsoft Defender pour point de terminaison comme application cible.
-    - Dans la page Paramètres, sélectionnez Utiliser le concepteur de configuration et ajoutez  **WebProtection** comme clé et type valeur **booléen**.
+    - Dans la page Paramètres, sélectionnez Utiliser le concepteur de configuration et ajoutez **WebProtection** comme clé et type valeur **booléen**.
         - Par défaut, **WebProtection= true**.
         - Administration devez rendre **WebProtection = false** pour désactiver la protection web.
         - Defender envoie la pulsation au portail Microsoft 365 Defender chaque fois que l’utilisateur ouvre l’application.
@@ -90,7 +90,7 @@ Cette configuration est disponible à la fois pour les appareils inscrits (GPM) 
     - Dans [le Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), accédez aux stratégies  >  de **configuration d’application** **d’applications** > **Pour ajouter** >  des **applications gérées**.
     - Donner à la stratégie un nom.
     - Sous Sélectionner les applications publiques, choisissez Microsoft Defender pour point de terminaison comme application cible.
-    - Dans la page Paramètres, sous Paramètres de configuration général, ajoutez  **WebProtection** comme clé et valeur **false**.
+    - Dans la page Paramètres, sous Paramètres de configuration général, ajoutez **WebProtection** comme clé et valeur **false**.
         - Par défaut, **WebProtection= true**.
         - Administration devez rendre **WebProtection = false** pour désactiver la protection web.
         - Defender envoie la pulsation au portail Microsoft 365 Defender chaque fois que l’utilisateur ouvre l’application.

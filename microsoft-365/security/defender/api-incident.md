@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: bd8c98d533fd5186285a099b4991d527a6302274
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059739"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100072"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender l’API incidents et le type de ressource incidents
 
@@ -76,7 +76,7 @@ assignedTo | chaîne | Propriétaire de l’incident.
 Sévérité  | Énum | Gravité de l’incident. Les valeurs possibles sont : ```UnSpecified```, ```Informational```, ```Low```, ```Medium```et ```High```.
 status | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles sont : ```Active```, ```InProgress```, ```Resolved```, et ```Redirected```
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont ```Unknown```, ```FalsePositive``` et ```TruePositive```.
-Détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
+détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
 étiquettes | string List | Liste des balises d’incident.
 commentaires | Liste des commentaires d’incident | L’objet Commentaire d’incident contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
 alertes | Liste des alertes | Liste des alertes associées. Consultez des exemples dans la documentation [de l’API List incidents](api-list-incidents.md) .

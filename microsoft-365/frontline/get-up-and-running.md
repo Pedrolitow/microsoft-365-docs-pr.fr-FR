@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 2d6ca7dad014279c5a30e5150d9df659381bf2d1
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 0bc2940bc45a4090a4e1a5399ff1c4493326d050
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822509"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100116"
 ---
 # <a name="managers---get-your-team-started-with-microsoft-365-for-frontline-workers"></a>Responsables – Démarrer avec votre équipe dans Microsoft 365 for frontline workers
 

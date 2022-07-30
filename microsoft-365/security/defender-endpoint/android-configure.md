@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ffaaf3984afdb6e5d87210fc23e7463d41b7ee4
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 231bd79e0c825b38d44ca45c078cbe4d7aa432c0
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493250"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100138"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour point de terminaison pour des fonctionnalités Android
 
@@ -230,7 +230,7 @@ Utilisez les étapes suivantes pour activer la confidentialité pour les utilisa
 
 L’utilisation de ce contrôle de confidentialité n’aura pas d’impact sur la vérification de conformité de l’appareil ou l’accès conditionnel. Par exemple, les appareils avec une application malveillante ont toujours un niveau de risque « Moyen ».
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Découvrez comment intégrer le connecteur DMI Teams pour permettre aux prestataires de santé de votre organisation d’effectuer des rendez-vous virtuels avec des patients ou d’autres fournisseurs dans Teams directement à partir du système DMI Cerner.
-ms.openlocfilehash: eeb851e0f040d714dd55c5d1b262507a6b5eaf83
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9388ec0fef16fb15221044e387c485586acc1a64
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822442"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099874"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Rendez-vous virtuels avec Teams – Intégration à Cerner EHR
 
@@ -53,7 +53,7 @@ Cet article explique comment installer et configurer le connecteur DSE Teams pou
 
 Avant d’intégrer le connecteur DSE Teams dans votre organisation de santé, vous devez disposer des éléments suivants :
 
-- Un abonnement actif à Microsoft Cloud for Healthcare ou un abonnement à l’offre autonome du connecteur EHR Microsoft Teams.
+- Un abonnement actif à Microsoft Cloud for Healthcare ou un abonnement à l’offre de connecteur autonome DMI Teams.
 - Les utilisateurs disposent d’une licence Microsoft 365 ou Office 365 appropriée qui inclut les réunions Teams.
 - Teams est adopté et utilisé dans votre organisation de santé.
 - Vos systèmes répondent à toutes les [exigences en matière de logiciels et de navigateurs](/microsoftteams/hardware-requirements-for-the-teams-app) pour Teams.

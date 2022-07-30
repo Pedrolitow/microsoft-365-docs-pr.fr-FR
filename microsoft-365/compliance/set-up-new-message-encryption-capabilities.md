@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797948"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099456"
 ---
 # <a name="set-up-message-encryption"></a>Configurer le chiffrement des messages
 
@@ -60,7 +60,7 @@ Pour obtenir des instructions, consultez [Comment activer ou confirmer l’état
 
 Il s’agit d’une étape facultative. Autoriser Microsoft à gérer la clé racine pour Azure Information Protection est le paramètre par défaut et la meilleure pratique recommandée pour la plupart des organisations. Si cela est le cas, vous n’avez rien à faire.
 
-Il existe de nombreuses raisons, par exemple des exigences de conformité, qui peuvent nécessiter de créer et gérer votre propre clé racine (également connue sous le nom Utilisation de votre propre clé (BYOK)). Si c’est le cas, nous vous recommandons d’effectuer les étapes requises avant de configurer le chiffrement de messages Microsoft Purview. Pour plus d’informations, reportez-vous à [Planification et implémentation de votre clé de client Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).
+Il existe de nombreuses raisons, par exemple des exigences de conformité, qui peuvent nécessiter la génération et la gestion de votre propre clé racine, également appelée « bring your own key » (BYOK). Si c’est le cas, nous vous recommandons d’effectuer les étapes requises avant de configurer le chiffrement de messages Microsoft Purview. Pour plus d’informations, reportez-vous à [Planification et implémentation de votre clé de client Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).
 
 ## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>Vérifier la configuration du chiffrement de messages Microsoft Purview dans le PowerShell Exchange Online
 
@@ -70,7 +70,7 @@ Vous pouvez vérifier que votre client Microsoft 365 est correctement configuré
 
 2. Exécutez la cmdlet Get-IRMConfiguration.
 
-     Vous devez voir une valeur de $True pour le paramètre AzureRMSLicensingEnabled, ce qui indique que le chiffrement de messages Microsoft Purview est configuré dans votre locataire. Si ce n’est pas le cas, utilisez Set-IRMConfiguration pour définir la valeur d’AzureRMSLicensingEnabled sur $True pour activer le chiffrement de messages Microsoft Purview.
+     Vous devez voir une valeur de `$True` pour le paramètre AzureRMSLicensingEnabled, ce qui indique que le Chiffrement de messages Microsoft Purview est configuré dans votre client. Si ce n’est pas le cas, utilisez Set-IRMConfiguration pour définir la valeur d’AzureRMSLicensingEnabled sur `$True` pour activer le Chiffrement de messages Microsoft Purview.
 
 3. Exécutez la cmdlet Test-IRMConfiguration en utilisant la syntaxe suivante :
 
@@ -106,10 +106,10 @@ Vous pouvez vérifier que votre client Microsoft 365 est correctement configuré
 
    - Les noms des modèles par défaut peuvent être différents de ceux affichés ci-dessus. Pour plus d’informations, reportez-vous à [Configurer et gérer des modèles pour Azure Information Protection](/azure/information-protection/configure-policy-templates).
 
-4. Si le test échoue avec un message d’erreur **Échec de l’acquisition des modèles RMS**, exécutez les commandes suivantes et exécutez l’applet de commande Test-IRMConfiguration pour vérifier que ça marche.
+4. Si le test échoue avec un message d’erreur **Échec de l’acquisition des modèles RMS**, exécutez les commandes suivantes et exécutez l’applet de commande Test-IRMConfiguration pour vérifier que ça marche. Connectez-vous au [module AIPService](/powershell/module/aipservice/?view=azureipps) pour exécuter l’applet de commande.
 
    ```powershell
-   $RMSConfig = Get-AadrmConfiguration
+   $RMSConfig = Get-AipServiceConfiguration
    $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
    Set-IRMConfiguration -LicensingLocation $LicenseUri
    Set-IRMConfiguration -InternalLicensingEnabled $true

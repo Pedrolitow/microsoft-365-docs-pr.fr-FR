@@ -17,22 +17,22 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31aaf297fd3622eede2e1532ad60a20666d1bd07
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882856"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099060"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances AuditD liés à Microsoft Defender pour point de terminaison sur Linux 
 
 Cet article fournit des conseils sur la résolution des problèmes de performances liés à AuditD que vous pouvez rencontrer avec Microsoft Defender pour point de terminaison sur Linux. 
 
-**Fond:** 
+**Arrière-plan:** 
 
 - Microsoft Defender pour point de terminaison sur les distributions de système d’exploitation Linux utilise l’infrastructure AuditD pour collecter certains types d’événements de télémétrie. 
 
-- Les événements système capturés par les règles ajoutées à `/etc/audit/rules.d/` ajoutent à audit.log(s) et peuvent affecter l’audit de l’hôte et la collecte en amont.  
+- Les événements système capturés par les règles ajoutées à `/etc/audit/rules.d/` ajoutent à l’audit.log(s) et peuvent affecter l’audit de l’hôte et la collecte en amont.  
 
 - Les événements ajoutés par Microsoft Defender pour point de terminaison sur Linux sont marqués avec `mdatp` une clé. 
 

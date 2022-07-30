@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf677fc81a20b7e86d9b66505dd8968c0a31272b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 08514bd1637a9619274bc45951af2dc2762881f5
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633122"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099885"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l’information (IRM) à une liste ou une bibliothèque
 
@@ -73,7 +73,7 @@ Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pou
 |Sélectionnez cette option si vous souhaitez restreindre l’accès au contenu à une période spécifiée. Si vous sélectionnez cette option, les licences d’émission des utilisateurs pour accéder au contenu expireront après le nombre de jours spécifié, et les utilisateurs devront revenir sur le serveur pour vérifier leurs informations d’identification et télécharger une nouvelle copie.|Activez la case à cocher **Après le téléchargement, les droits d’accès au document expireront après ces jours (1-365),** puis spécifiez le nombre de jours pendant lesquels vous souhaitez que le document soit visible.|
 | Empêchez les personnes de charger des documents qui ne prennent pas en charge la gestion des droits relatifs à la gestion des droits relatifs à l’information dans cette liste ou cette bibliothèque. Si vous sélectionnez cette option, les utilisateurs ne pourront charger aucun des types de fichiers suivants : les types de fichiers qui n’ont pas de logiciels de protection IRM correspondants installés sur tous les serveurs web frontaux. Types de fichiers que SharePoint Server 2010 ne peut pas déchiffrer. Types de fichiers protégés par IRM dans un autre programme.|Activez la case à cocher **Ne pas autoriser les utilisateurs à charger des documents qui ne prennent pas en charge** irm.|
 |Supprimez les autorisations restreintes de cette liste ou bibliothèque à une date spécifique.|Activez la case à cocher **Arrêter la restriction d’accès à la bibliothèque** , puis sélectionnez la date souhaitée.|
-|Contrôlez l’intervalle pendant lequel les informations d’identification sont mises en cache pour le programme sous licence pour ouvrir le document.|Sélectionnez les **utilisateurs qui doivent vérifier leurs informations d’identification à l’aide de cette case à cocher intervalle (jours),** puis entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.|
+|Contrôlez l’intervalle pendant lequel les informations d’identification Azure RMS sont mises en cache pour le programme sous licence pour ouvrir le document.|Sélectionnez les **utilisateurs qui doivent vérifier leurs informations d’identification à l’aide de cette case à cocher intervalle (jours),** puis entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.|
 |Autorisez la protection de groupe afin que les utilisateurs puissent partager avec les membres du même groupe.|Sélectionnez **Autoriser la protection du groupe**, puis entrez le nom du groupe pour le partage.|
 
 8. Une fois que vous avez terminé de sélectionner les options souhaitées, sélectionnez **OK**.

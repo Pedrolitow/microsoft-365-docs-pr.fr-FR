@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: 508bb081d2f5bfcc83538141d6abb28f857bda6e
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 7b16821f1e4e7b8829615d836bde52dd71a43a96
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912799"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099368"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 
@@ -82,8 +82,8 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |Nom de la propriété|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, un ID unique, représente le groupe et sera utilisé dans la stratégie.||
-|**DescriptorIdList**|Répertoriez les propriétés de l’appareil que vous souhaitez utiliser pour couvrir le groupe. Pour chaque propriété d’appareil, consultez [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés respectent la casse. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices``WpdDevices`<p>**BusId** : Par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de façon unique l’appareil dans le système, par exemple. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` Le nombre à la fin (par exemple &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: correspond à cette paire exacte VID/PID<p>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <p>`0751_`: faire correspondre n’importe quel média avec VID=0751|
-|**Matchtype**|Quand plusieurs propriétés d’appareil sont utilisées dans le `DescriptorIDList`, MatchType définit la relation.|**MatchAll** : tous les attributs sous la `DescriptorIdList` relation will be **And** ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système vérifie si l’USB répond aux deux valeurs. <p> **MatchAny** : les attributs sous DescriptorIdList seront **ou** la relation ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système effectue l’application tant que l’USB a une valeur **DeviceID** ou **InstanceID** identique.|
+|**DescriptorIdList**|Répertoriez les propriétés de l’appareil que vous souhaitez utiliser pour couvrir le groupe. Pour chaque propriété d’appareil, consultez [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés respectent la casse. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices``WpdDevices`<p>**BusId** : Par exemple, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId** : InstancePathId est une chaîne qui identifie de façon unique l’appareil dans le système, par exemple. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` Le nombre à la fin (par exemple &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**Pid**<p>**VID_PID**<p>`0751_55E0`: correspond à cette paire exacte VID/PID<p>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <p>`0751_`: faire correspondre n’importe quel média avec VID=0751|
+|**MatchType**|Quand plusieurs propriétés d’appareil sont utilisées dans le `DescriptorIDList`, MatchType définit la relation.|**MatchAll** : tous les attributs sous la `DescriptorIdList` relation will be **And** ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système vérifie si l’USB répond aux deux valeurs. <p> **MatchAny** : les attributs sous DescriptorIdList seront **ou** la relation ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système effectue l’application tant que l’USB a une valeur **DeviceID** ou **InstanceID** identique.|
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
 Vous pouvez utiliser les propriétés suivantes pour créer la stratégie de contrôle d’accès :
@@ -172,7 +172,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
        `Disable: 0`
        `Enable: 1`
 
-     - Cliquez sur **Save (Enregistrer)**.
+     - Cliquez sur **Enregistrer**.
 
    :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Access Control de stockage amovible" lightbox="images/enable-rsac.png":::
 
@@ -191,7 +191,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - Cliquez sur **Save (Enregistrer)**.
+     - Cliquez sur **Enregistrer**.
 
    :::image type="content" source="images/default-deny.png" alt-text="Capture d’écran de la définition de l’application par défaut en tant que refus" lightbox="images/default-deny.png":::
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059738"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100050"
 ---
 # <a name="update-incidents-api"></a>API Mettre à jour les incidents
 
@@ -84,7 +84,7 @@ Propriété|Type|Description
 statut|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles sont : `Active`, `Resolved`et `Redirected`.
 assignedTo|string|Propriétaire de l’incident.
 classification|Énum|Spécification de l’incident. Les valeurs possibles sont `Unknown`, `FalsePositive` et `TruePositive`.
-Détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
+détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
 étiquettes|string List|Liste des balises d’incident.
 comment|string|Commentaire à ajouter à l’incident.
 

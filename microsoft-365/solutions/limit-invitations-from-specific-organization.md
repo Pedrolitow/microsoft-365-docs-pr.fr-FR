@@ -1,5 +1,5 @@
 ---
-title: Limiter les personnes qui peuvent être invitées par une organisation
+title: Limiter les personnes pouvant être invitées par une organisation
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -15,78 +15,78 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: Découvrez comment limiter les utilisateurs qui peuvent être invités en tant que participant à un canal partagé ou invité à une organisation spécifique.
-ms.openlocfilehash: 599f83a4464498f7a964f02a955f802cb8545432
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Découvrez comment limiter les utilisateurs qui peuvent être invités en tant que participant de canal invité ou partagé à une organisation spécifique.
+ms.openlocfilehash: 9298d0f6cb251d9734a8cfb4036e305bb603b680
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716065"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099786"
 ---
-# <a name="limit-who-can-be-invited-by-an-organization"></a>Limiter les personnes qui peuvent être invitées par une organisation
+# <a name="limit-who-can-be-invited-by-an-organization"></a>Limiter les personnes pouvant être invitées par une organisation
 
-Si vous collaborez avec une autre organisation et que vous souhaitez limiter les personnes qui peuvent y être invitées en tant qu’invité ou membre de canal partagé dans Teams, vous pouvez spécifier qui peut être invité dans les paramètres d’accès entre clients dans Azure Active Directory.
+Si vous collaborez avec une autre organisation et souhaitez limiter qui peut être invité à cette organisation en tant qu’invité ou membre de canal partagé dans Teams, vous pouvez spécifier qui peut être invité dans les paramètres d’accès entre locataires dans Azure Active Directory.
 
 > [!NOTE]
-> L’application des modifications apportées aux paramètres d’accès entre locataires peut prendre deux heures.
+> La prise en compte des modifications apportées aux paramètres d’accès entre locataires peut prendre six heures.
 
 ## <a name="create-a-security-group"></a>Créer un groupe de sécurité
 
 Le moyen le plus simple de spécifier qui peut être invité à une autre organisation consiste à utiliser un groupe de sécurité. Vous pouvez utiliser un groupe de sécurité avec une appartenance définie ou un groupe de sécurité dynamique. Vous pouvez utiliser un groupe de sécurité existant ou en créer un à cet effet.
 
 Pour créer un groupe de sécurité
-1. Connectez-vous [à Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte d’administrateur général ou d’administrateur de sécurité.
+1. Connectez-vous à [Azure Active Directory](https://aad.portal.azure.com) à l’aide d’un compte Administrateur général ou Administrateur de la sécurité.
 1. Dans la page **Active Directory** , sélectionnez **Groupes** , puis **Nouveau groupe**.
 1. Choisissez **Sécurité** pour le **type de groupe**.
 1. Tapez un **nom de groupe.** 
-1. Vous pouvez éventuellement ajouter une description pour le groupe.
-1. Pour **Azure AD rôles peuvent être affectés au groupe**, choisissez **Non**.
-1. Sélectionnez un type d’appartenance **prédéfiny (obligatoire).**
-1. Ajoutez des propriétaires et des membres de groupe ou [une](/azure/active-directory/enterprise-users/groups-dynamic-membership) requête dynamique si vous utilisez l’appartenance utilisateur dynamique.
-1. Sélectionnez **Créer**. Votre groupe est créé et prêt pour que vous ajoutiez des membres.
+1. Si vous le souhaitez, ajoutez une description pour le groupe.
+1. Pour que les **rôles Azure AD puissent être attribués au groupe**, choisissez **Non**.
+1. Sélectionnez un **type d’appartenance** prédéfini (obligatoire).
+1. Ajoutez des propriétaires de groupe et des membres ou une [requête dynamique](/azure/active-directory/enterprise-users/groups-dynamic-membership) si vous utilisez l’appartenance utilisateur dynamique.
+1. Sélectionnez **Créer**. Votre groupe est créé et prêt pour vous permettre d’ajouter des membres.
 
 ## <a name="add-an-organization"></a>Ajouter une organisation
 
-Pour définir des règles de collaboration avec une autre organisation, vous devez l’ajouter aux paramètres Azure AD’accès entre les locataires. Si vous n’avez pas encore ajouté l’organisation, suivez cette procédure pour l’ajouter.
+Pour définir des règles de collaboration avec une autre organisation, vous devez ajouter cette organisation aux paramètres d’accès multilocataire Azure AD. Si vous n’avez pas encore ajouté l’organisation, suivez cette procédure pour l’ajouter.
 
 Pour ajouter une organisation
-1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez Paramètres d’accès entre locataires **(prévisualisation)**.1. Sélectionnez **Paramètres organisationnels**.
+1. Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis les **paramètres d’accès entre locataires (préversion)** 1. Sélectionnez **Paramètres de l’organisation**.
 1. Sélectionnez **Ajouter une organisation**.
-1. Dans le **volet Ajouter une organisation** , tapez le nom de domaine complet (ou ID de client) de l’organisation.
+1. Dans le volet **Ajouter une organisation**, tapez le nom de domaine complet (ou l’ID de locataire) de l’organisation.
 1. Sélectionnez l’organisation dans les résultats de la recherche, puis sélectionnez **Ajouter**.
-1. L’organisation apparaît dans la liste **Paramètres organisationnels** . À ce stade, tous les paramètres d’accès de cette organisation sont hérités de vos paramètres par défaut.
+1. L’organisation apparaît dans la liste **Paramètres de l’organisation**. À ce stade, tous les paramètres d’accès de cette organisation sont hérités de vos paramètres par défaut.
 
-## <a name="choose-who-can-be-invited-by-an-organization"></a>Choisir les personnes qui peuvent être invitées par une organisation
+## <a name="choose-who-can-be-invited-by-an-organization"></a>Choisir qui peut être invité par une organisation
 
-Il existe deux options pour limiter les personnes qui peuvent être invitées à une organisation :
+Il existe deux options pour limiter les personnes pouvant être invitées à une organisation :
 
-- Limiter les personnes qui peuvent être invitées en tant qu’invité. Cela empêche l’ajout d’utilisateurs au compte de l’autre Azure AD en tant qu’invité. Cela empêche le partage de fichiers, dossiers, sites, équipes et groupes Microsoft 365 avec des personnes qui ne font pas partie du groupe de sécurité.
-- Limiter les personnes qui peuvent être ajoutées à un canal partagé externe. Cela empêche les personnes qui ne font pas du groupe de sécurité d’être ajoutées aux canaux partagés de l’autre organisation.
+- Limitez les personnes pouvant être invitées en tant qu’invité. Cela empêche les utilisateurs d’être ajoutés à Azure AD de l’autre organisation en tant qu’invité. Il empêche le partage de fichiers, dossiers, sites, équipes et groupes Microsoft 365 avec des personnes qui ne font pas partie du groupe de sécurité.
+- Limitez les personnes qui peuvent être ajoutées à un canal partagé externe. Cela empêche les personnes qui ne sont pas dans le groupe de sécurité d’être ajoutées aux canaux partagés de l’autre organisation.
 
-Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez Paramètres d’accès entre **locataires (prévisualisation).**
+Dans [Azure Active Directory](https://aad.portal.azure.com), sélectionnez **Identités externes**, puis sélectionnez **Paramètres d’accès entre locataires (préversion)**.
 
-Pour limiter les personnes qui peuvent être invitées en tant qu’invité
+Pour limiter qui peut être invité en tant qu’invité
 1. Sélectionnez le lien d’accès sortant pour l’organisation que vous souhaitez modifier.
-1. Sous **l’onglet Collaboration B2B** , choisissez **Personnaliser les paramètres**.
-1. Sous **État d’accès**, **sélectionnez Autoriser l’accès**.
-1. Sous **Cible**, **sélectionnez Sélectionner des utilisateurs externes et des groupes**.
+1. Sous l’onglet **Collaboration B2B** , choisissez **Personnaliser les paramètres**.
+1. Sous **État d’Accès**, choisissez **Autoriser l’accès**.
+1. Sous **Cible**, **choisissez Sélectionner des utilisateurs et des groupes externes**.
 1. Sélectionnez le lien pour ajouter des utilisateurs et des groupes.
 1. Recherchez et sélectionnez le groupe de sécurité que vous souhaitez utiliser.
-1. Choisissez **Sélectionner**.
-1. **Sélectionnez Enregistrer** et fermez le **blade des paramètres d’accès sortant**.
+1. Choisir **Sélectionner**.
+1. Sélectionnez **Enregistrer** et fermez le panneau **Paramètres d’accès sortant** .
 
 
-Pour limiter les personnes qui peuvent être invitées en tant que participant au canal partagé
+Pour limiter les personnes pouvant être invitées en tant que participant de canal partagé
 1. Sélectionnez le lien d’accès sortant pour l’organisation que vous souhaitez modifier.
-1. Sous **l’onglet Connexion directe B2B** , choisissez **Personnaliser les paramètres**.
-1. Sous **État d’accès**, **sélectionnez Autoriser l’accès**.
-1. Sous **Cible**, **sélectionnez Sélectionner des utilisateurs externes et des groupes**.
+1. Sous l’onglet **Connexion directe B2B**, choisissez **Personnaliser les paramètres**.
+1. Sous **État d’Accès**, choisissez **Autoriser l’accès**.
+1. Sous **Cible**, **choisissez Sélectionner des utilisateurs et des groupes externes**.
 1. Sélectionnez le lien pour ajouter des utilisateurs et des groupes.
 1. Recherchez et sélectionnez le groupe de sécurité que vous souhaitez utiliser.
-1. Choisissez **Sélectionner**.
-1. **Sélectionnez Enregistrer** et fermez le **blade des paramètres d’accès sortant**.
+1. Choisir **Sélectionner**.
+1. Sélectionnez **Enregistrer** et fermez le panneau **Paramètres d’accès sortant** .
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Vue d’ensemble de la connexion directe B2B](/azure/active-directory/external-identities/b2b-direct-connect-overview)
 

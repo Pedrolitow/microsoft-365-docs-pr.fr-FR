@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: 2adc24b4809689137ae067ce09cda8caebea2a0e
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 37992558c1621ab476fa3a481776f0d3a7e55df4
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917142"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099478"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -143,7 +143,7 @@ L’intégration et déclassement sont gérés à l’aide de scripts téléchar
 
  Utilisez les procédures décrites dans [Prise en main des points de terminaison Microsoft 365 DLP](endpoint-dlp-getting-started.md) vers les appareils intégrés.
 
-Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-onboarding.md), ces derniers apparaissent automatiquement dans la liste des appareils. Cela est dû au fait que l’intégration à Defender intègre également des appareils à DLP. Vous devez uniquement **activer la surveillance des appareils** pour utiliser la protection contre la perte de données du point de terminaison. .
+Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-onboarding.md), ces derniers apparaissent automatiquement dans la liste des appareils. Cela est dû au fait que l’intégration à Defender intègre également des appareils à DLP. Vous devez uniquement **Activer la surveillance des appareils** pour utiliser la protection contre la perte de données du point de terminaison. .
 
 > [!div class="mx-imgBorder"]
 > ![liste des appareils gérés.](../media/endpoint-dlp-learn-about-2-device-list.png)

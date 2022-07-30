@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: f36d79aa4902991e07355fc6bfd3a6add1ae0fe0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e4047d051a12c34f18cf8d13de2f5827cdc5c426
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992411"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100094"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>Rendez-vous virtuels avec Microsoft Teams
 
@@ -55,7 +55,7 @@ Pour en savoir plus, reportez-vous à la rubrique :
 
 ## <a name="teams-electronic-health-record-ehr-connector"></a>Connecteur de dossier médical informatisé Teams (DMI)
 
-Si votre organisation de soins de santé utilise un système DMI, vous pouvez utiliser le connecteur DMI Teams pour intégrer Teams pour une expérience de soins virtuels plus transparente. Un abonnement actif au Cloud Microsoft pour les services de santé ou un abonnement à l’offre autonome du connecteur DMI Microsoft Teams.
+Si votre organisation de soins de santé utilise un système DMI, vous pouvez utiliser le connecteur DMI Teams pour intégrer Teams pour une expérience de soins virtuels plus transparente. Le connecteur DSE Teams nécessite un abonnement actif à Microsoft Cloud for Healthcare ou un abonnement à l’offre autonome du connecteur DMI Microsoft Teams.
 
 Après avoir configuré le connecteur DMI Teams, les cliniciens peuvent lancer des visites avec des patients et des consultations avec d’autres fournisseurs dans Teams directement à partir du système DMI.
 
