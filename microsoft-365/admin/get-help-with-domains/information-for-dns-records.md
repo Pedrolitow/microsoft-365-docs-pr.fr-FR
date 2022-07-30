@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -23,13 +24,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS afin de connecter votre domaine à Microsoft 365 abonnement.
-ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS pour connecter votre domaine à votre abonnement Microsoft 365.
+ms.openlocfilehash: 653161734a8b0a2f188c8f8a54909ed86bf3fd5f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316798"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084005"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
@@ -39,7 +40,7 @@ ms.locfileid: "63316798"
 
 ::: moniker range="o365-worldwide"
 
-1. Dans la Centre d'administration Microsoft 365, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. Dans le Centre d'administration Microsoft 365, accédez à la page **Domaines de paramètres**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 ::: moniker-end
 
@@ -49,23 +50,23 @@ ms.locfileid: "63316798"
 
 ::: moniker-end
     
-2. Dans la page **Domaines** , sélectionnez votre domaine, puis **démarrez l’installation**. Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
+2. Dans la page **Domaines** , sélectionnez votre domaine, puis **sélectionnez Démarrer l’installation**. Revenez à l'Assistant de configuration de domaines pour afficher la valeur spécifique que vous devez ajouter.
     
-3. Dans la page **Vérification du** domaine, sélectionnez Ajouter un enregistrement **TXT aux enregistrements DNS** du domaine, puis sélectionnez **Continuer**.
+3. Dans la page **Vérification du domaine** , sélectionnez **Ajouter un enregistrement TXT aux enregistrements DNS du domaine**, puis **sélectionnez Continuer**.
     
-4. Copiez **la valeur TXT** affichée. Il se ressemble à ceci : **MS=msXXXXXXXX**. 
+4. Copiez la **valeur TXT** affichée. Il ressemble à ceci : **MS=msXXXXXXXX**. 
     
-5. Go to [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md), and follow the steps to add records at your DNS host’s website.
+5. Accédez à [Ajouter des enregistrements DNS pour connecter votre domaine](create-dns-records-at-any-dns-hosting-provider.md), puis suivez les étapes pour ajouter des enregistrements sur le site web de votre hôte DNS.
     
-6. Suivez les étapes de création de l’enregistrement TXT (ou enregistrement MX) sur votre hôte DNS, puis vérifiez de nouveau le domaine dans Microsoft 365.
+6. Suivez les étapes de création de l’enregistrement TXT (ou enregistrement MX) sur votre hôte DNS, puis vérifiez le domaine dans Microsoft 365.
 
-7. Supprimez l’enregistrement TXT (ou enregistrement MX) de votre hôte DNS une fois que le domaine est vérifié Microsoft 365.
+7. Supprimez l’enregistrement TXT (ou enregistrement MX) de votre hôte DNS une fois le domaine vérifié dans Microsoft 365.
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Étape 2 : Rechercher la valeur d’enregistrement MX pour le courrier électronique et bien plus encore
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Étape 2 : Rechercher la valeur de l’enregistrement MX pour l’e-mail et bien plus encore
 
 ::: moniker range="o365-worldwide"
 
-1. Dans la Centre d'administration Microsoft 365, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. Dans le Centre d'administration Microsoft 365, accédez à la page **Domaines de paramètres**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 ::: moniker-end
 
@@ -77,13 +78,13 @@ ms.locfileid: "63316798"
     
 2. Dans la page **Domaines**, sélectionnez votre domaine.
     
-3. Choose **Manage DNS**, select **More OptionsAdd** >  **your own DNS** and select **Continue** to see the DNS records to add.
+3. Choisissez  **Gérer DNS**, sélectionnez **Autres options** > **Ajouter votre propre DNS** , puis **sélectionnez Continuer** pour afficher les enregistrements DNS à ajouter.
     
     Il est recommandé de conserver ces informations disponibles tandis que vous apportez des modifications à votre hôte DNS, pour que vous puissiez copier et coller les valeurs.
     
     Les groupes d'enregistrements DNS figurant dans cette page dépendent des choix disponibles sous **Intention de domaine**.
     
-4. Go to [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md), and follow the steps to add records at your DNS host’s website.
+4. Accédez à [Ajouter des enregistrements DNS pour connecter votre domaine](create-dns-records-at-any-dns-hosting-provider.md), puis suivez les étapes pour ajouter des enregistrements sur le site web de votre hôte DNS.
 
 5. Suivez la procédure de création des enregistrements auprès de votre hôte DNS.
 

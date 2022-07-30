@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -20,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos fichiers vers OneDrive.
-ms.openlocfilehash: 589bfc5649cfea9090d8933b31b73184439d8f6a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: e660b8e0bab2a35d8c1bbcc548e1e1d379da3a40
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603833"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084034"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Déplacer des fichiers vers OneDrive Entreprise
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 ## <a name="watch-move-your-files-to-onedrive-for-business"></a>Regarder : Déplacer vos fichiers vers OneDrive Entreprise
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198202).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198202).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 

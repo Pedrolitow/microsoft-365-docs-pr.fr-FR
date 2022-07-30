@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - adminvideo
@@ -23,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations relatives à la migration vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 356d4cc1f696c871badcdceeb392c74b510cb49c
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 384d0573237104609937ad7627de1784a21a6158
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601155"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086470"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article est destiné aux personnes qui se sont abonnées à un plan Microsoft 365 pour les entreprises.
   
@@ -40,7 +41,7 @@ Avant de déplacer votre organisation vers Microsoft 365, vous devez respecter l
 
 ## <a name="overview-of-microsoft-365-for-business-setup"></a>Vue d’ensemble de la configuration de Microsoft 365 pour les entreprises
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197910).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197910).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 

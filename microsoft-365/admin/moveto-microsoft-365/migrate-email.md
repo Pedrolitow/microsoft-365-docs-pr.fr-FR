@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 pour les entreprises.
-ms.openlocfilehash: be7637816f80ecba3c56db644114d5ddb00caeb7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602035"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087372"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer la messagerie professionnelle et le calendrier à partir de Google Workspace
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 ## <a name="watch-migrate-business-email-and-calendar-from-google-workspace"></a>Regarder : Migrer la messagerie et le calendrier professionnels à partir de Google Workspace
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198034).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 

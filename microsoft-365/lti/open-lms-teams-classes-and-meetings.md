@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Créez et gérez des classes et des réunions Teams avec l’interopérabilité des outils d’apprentissage Microsoft pour Open LMS.
-ms.openlocfilehash: 25babbafb4a8640b389fd655ddf63b23665d8c9d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 264f9a2129d36b1d6ab3dae2afdb14973f3deac5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943241"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086448"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Intégrer des classes et des réunions Microsoft Teams dans Open LMS
 
@@ -29,7 +29,7 @@ Pour plus d’informations sur la gestion de toutes les applications LTI pour n�
 
 Pour que l’intégration entre Open LMS et Teams fonctionne correctement, Open LMS et Teams doivent être configurés pour communiquer entre eux.
 
-Suivez les [instructions d’installation et de configuration du plug-in Moodle](open-lms-plugin-configuration.md).
+Suivez les [instructions d’installation et de configuration des plug-ins Moodle LMS](open-lms-plugin-configuration.md).
 
 ## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>Inscrire Microsoft Teams LTI pour une utilisation dans Open LMS
 

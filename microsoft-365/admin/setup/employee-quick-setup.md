@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -20,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aidez vos employés à apprendre à configurer Office applications qu’ils utilisent Microsoft 365 Business Premium.
-ms.openlocfilehash: f25b569218bae636b3c8edb1d46fc1b8bbcf6fe0
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Aidez vos employés à apprendre à configurer des applications Office qu’ils utilisent Microsoft 365 Business Premium.
+ms.openlocfilehash: 435b1627e5a86a1981a5aedb09d7e69fdaf4d2a3
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468873"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086492"
 ---
 # <a name="employee-quick-setup-in-microsoft-365-for-business"></a>Configuration rapide des employés dans Microsoft 365 pour les entreprises
 
@@ -34,7 +35,7 @@ Vous débutez avec Microsoft 365 pour les entreprises ? :::image type="icon" sou
 
 :::image type="content" source="../../media/m365-employee-quick-setup.png" alt-text="Image montrant les étapes de configuration rapide des employés.":::
 
-## <a name="1-sign-in-to-office"></a>1. Connectez-vous à Office
+## <a name="1-sign-in-to-office"></a>1. Se connecter à Office
 
 1. Accédez à [Office.com](https://office.com) et sélectionnez **Se connecter**.
 1. Tapez votre adresse e-mail et votre mot de passe Microsoft 365, puis **connectez-vous**.
@@ -63,8 +64,8 @@ Vous débutez avec Microsoft 365 pour les entreprises ? :::image type="icon" sou
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. Enregistrer ou copier des fichiers dans OneDrive
 
-- Enregistrez des documents dans **OneDrive** à partir du menu **Enregistrer sous** dans Office applications.
-    :::image type="content" source="../../media/save-onedrive.png" alt-text="Imge que qui est comment enregistrer sous OneDrive.":::
+- Enregistrez des documents dans **OneDrive** à partir du menu **Enregistrer sous** dans les applications Office.
+    :::image type="content" source="../../media/save-onedrive.png" alt-text="Indiquez qui comment enregistrer sur OneDrive.":::
 
 - Vous pouvez également copier des fichiers du Bureau ou du dossier Documents dans **OneDrive**.
 
@@ -77,15 +78,15 @@ Vous débutez avec Microsoft 365 pour les entreprises ? :::image type="icon" sou
 
 1. Partagez vos documents avec d'autres personnes à l'aide du bouton **Partager**.
 
-    :::image type="content" source="../../media/share-office-doc.png" alt-text="Icône Partager dans un application Office.":::
+    :::image type="content" source="../../media/share-office-doc.png" alt-text="Icône Partager dans une application Office.":::
 
 1. Entrez l'adresse de courrier des destinataires, choisissez les autorisations de lecture ou de modification, insérez un message et sélectionnez **Partager**.
 1. Vous pouvez également utiliser l'option **Obtenir un lien de partage** située en bas de l'écran.
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. Obtenir Outlook sur votre téléphone
 
-- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou de Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre adresse e-mail et votre mot de passe.
+- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou de Google Play Store. Ouvrez-le, **choisissez Prise en main** et ajoutez votre adresse e-mail et votre mot de passe.
 - Vous pouvez également ouvrir Outlook sur un appareil Android ou iOS et accéder aux **Paramètres**.
 
     Sélectionnez **Ajouter un compte**, **Ajouter un compte de courrier**, puis entrez votre adresse de courrier et votre mot de passe.
-- Sur un **Windows Phone**, choisissez **Paramètres**, **e-mail + comptes**, **Ajouter un compte**, puis **Exchange**.
+- Sur un **Windows Phone**, choisissez **Paramètres**, **Email + comptes**, **Ajouter un compte**, puis **Exchange**.

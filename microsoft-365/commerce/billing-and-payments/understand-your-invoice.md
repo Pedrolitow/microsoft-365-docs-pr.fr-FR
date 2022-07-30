@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_billing
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 ms.date: 05/04/2021
-ms.openlocfilehash: 4d5bd00726004d0e9dce3f6d284546ba81fb7edd
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 40c278a5855bcb53808f812fc3b4383ecbea540b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101775"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084958"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -150,7 +151,7 @@ Si vous avez des questions ou si vous avez besoin d’aide relativement à votre
 
 ## <a name="related-content"></a>Contenu associé
 
-[Comprendre votre facture pour Microsoft 365 pour les entreprises](understand-your-invoice2.md) (article)\
-[Suivre Microsoft ग्राहक अनुबंध solde de crédit Azure](/azure/billing/billing-mca-check-azure-credits-balance) (article)\
-[Passer en revue votre facture Microsoft ग्राहक अनुबंध](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)\
-[Első lépések avec votre compte de facturation Microsoft ग्राहक अनुबंध](/azure/billing/billing-mca-overview) (article)
+[Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
+[Suivre Contrat client Microsoft solde de crédit Azure](/azure/billing/billing-mca-check-azure-credits-balance) (article)\
+[Passez en revue votre facture Contrat client Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)\
+[Prise en main de votre compte de facturation Contrat client Microsoft](/azure/billing/billing-mca-overview) (article)

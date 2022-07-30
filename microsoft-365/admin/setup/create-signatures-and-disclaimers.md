@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
@@ -27,22 +28,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Gérez les signatures par e-mail, y compris les clauses d’exclusion de responsabilité légales ou les déclarations de divulgation pour tous les messages électroniques qui entrent ou quittent votre organisation.
-ms.openlocfilehash: 47e6a862441b5c2725a48cae20669541b8a69f87
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602809"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087284"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des exclusions de responsabilité à l’échelle de l’organisation
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
  Vous pouvez gérer les signatures par e-mail en ajoutant une signature par e-mail, une clause d’exclusion de responsabilité légale ou une déclaration de divulgation aux messages électroniques qui entrent ou quittent votre organisation. Vous pouvez configurer celle-ci pour qu'elle s'applique à tous les messages entrants et sortants, comme illustré ci-dessous. Ou vous pouvez l'appliquer à certains messages, comme ceux contenant des mots ou des modèles de texte spécifiques.
 
 ## <a name="watch-create-a-company-wide-email-signature"></a>Regarder : Créer une signature électronique à l’échelle de l’entreprise
   
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198031).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -122,7 +123,7 @@ Pour obtenir ces fonctionnalités et d’autres pour gérer les signatures par e
 
 Pour plus d’informations sur l’utilisation de PowerShell, consultez les [clauses d’exclusion de responsabilité, les signatures, les pieds de page ou les en-têtes à l’échelle de l’organisation dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)\
 [Paramètres de messagerie](../email/office-365-user-email-settings.md) utilisateur (article)\

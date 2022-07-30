@@ -14,21 +14,22 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Configurez mobilité et sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en effectuant des actions telles que la réinitialisation à distance d’un appareil.
-ms.openlocfilehash: 04480e59177dc9b51bc50e413715e0ad82c7f461
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 0658db2546a72cc35da79e396af42ae54e23e6a7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863167"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084430"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
-La mobilité et la sécurité de base intégrées pour Microsoft 365 vous permet de sécuriser et de gérer les appareils mobiles des utilisateurs tels que les iPhone, les iPad, les Android et les téléphones Windows. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
+La mobilité et la sécurité de base intégrées pour Microsoft 365 vous aide à sécuriser et à gérer les appareils mobiles des utilisateurs tels que les iPhone, les iPad, les Android et les téléphones Windows. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
 Vous avez des questions ? Pour obtenir une FAQ pour vous aider à répondre aux questions courantes, consultez Les [questions fréquentes (FAQ) sur la mobilité et la sécurité de base](frequently-asked-questions.yml). N’oubliez pas que vous ne pouvez pas utiliser un compte d’administrateur délégué pour gérer la mobilité et la sécurité de base. Pour plus d’informations, consultez [Partenaires : Offre d’administration déléguée](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
@@ -48,7 +49,7 @@ Lorsque le service est prêt, effectuez les étapes suivantes pour terminer l’
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Étape 1 : (Obligatoire) Configurer des domaines pour la mobilité et la sécurité de base
 
-Si vous n’avez pas de domaine personnalisé associé à Microsoft 365 ou si vous ne gérez pas Windows appareils, vous pouvez ignorer cette section. Sinon, vous devez ajouter des enregistrements DNS pour le domaine sur votre hôte DNS. Si vous avez déjà ajouté les enregistrements, dans le cadre de la configuration de votre domaine avec Microsoft 365, vous êtes tous définis. Après avoir ajouté les enregistrements, Microsoft 365 utilisateurs de votre organisation qui se connectent à leur appareil Windows avec une adresse e-mail qui utilise votre domaine personnalisé sont redirigés pour s’inscrire à Mobilité et sécurité de base.
+Si vous n’avez pas de domaine personnalisé associé à Microsoft 365 ou si vous ne gérez pas d’appareils Windows, vous pouvez ignorer cette section. Sinon, vous devez ajouter des enregistrements DNS pour le domaine sur votre hôte DNS. Si vous avez déjà ajouté les enregistrements, dans le cadre de la configuration de votre domaine avec Microsoft 365, vous êtes tous définis. Après avoir ajouté les enregistrements, les utilisateurs microsoft 365 de votre organisation qui se connectent à leur appareil Windows avec une adresse e-mail qui utilise votre domaine personnalisé sont redirigés pour s’inscrire à Mobilité et sécurité de base.
 
 Vous avez besoin d’aide pour configurer les enregistrements ? Recherchez votre bureau d’enregistrement de domaines et sélectionnez le nom du bureau d’enregistrement pour accéder à l’aide pas à pas pour créer un enregistrement DNS dans la liste fournie dans [Ajouter des enregistrements DNS pour connecter votre domaine](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Utilisez ces instructions pour créer des enregistrements CNAME décrits dans [Simplifier l’inscription Windows sans Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
@@ -56,13 +57,13 @@ Après avoir ajouté les deux enregistrements CNAME, revenez au Centre de sécur
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Étape 2 : (Obligatoire) Configurer un certificat APNs pour les appareils iOS
 
-Pour gérer iOS appareils tels que iPad et iPhone, vous devez créer un certificat APNs.
+Pour gérer des appareils iOS comme iPad et iPhone, vous devez créer un certificat APNs.
 
 1. Connectez-vous à Microsoft 365 avec votre compte d’administrateur général.
 
 2. Accédez à la [Centre d'administration Microsoft 365](https://portal.office.com/adminportal/home?#/MifoDevices), puis choisissez **Certificat APNs pour iOS**.
 
-4. Dans la page Paramètres certificat de notification Push Apple, choisissez **Suivant**.
+4. Dans la page Paramètres du certificat de notification Push Apple, choisissez **Suivant**.
 
 5. Sélectionnez **Télécharger votre fichier CSR** et enregistrez la demande de signature de certificat quelque part sur votre ordinateur dont vous vous souviendrez. Sélectionnez **Suivant**.
 
@@ -89,7 +90,7 @@ Pour gérer iOS appareils tels que iPad et iPhone, vous devez créer un certific
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Étape 3 : (recommandé) Configurer l’authentification multifacteur
 
-L’authentification multifacteur permet de sécuriser la connexion à Microsoft 365 pour l’inscription des appareils mobiles en exigeant une deuxième forme d’authentification. Les utilisateurs doivent reconnaître un appel téléphonique, un SMS ou une notification d’application sur leur appareil mobile après avoir entré correctement leur mot de passe de compte professionnel. Ils ne peuvent inscrire leur appareil qu’une fois cette deuxième forme d’authentification terminée. Une fois les appareils utilisateur inscrits dans Mobilité et sécurité de base, les utilisateurs peuvent accéder aux ressources Microsoft 365 uniquement avec leur compte professionnel.
+L’authentification multifacteur permet de sécuriser la connexion à Microsoft 365 pour l’inscription des appareils mobiles en exigeant une deuxième forme d’authentification. Les utilisateurs doivent reconnaître un appel téléphonique, un SMS ou une notification d’application sur leur appareil mobile après avoir entré correctement leur mot de passe de compte professionnel. Ils ne peuvent inscrire leur appareil qu’une fois cette deuxième forme d’authentification terminée. Une fois les appareils utilisateur inscrits dans Mobilité et sécurité de base, les utilisateurs peuvent accéder aux ressources Microsoft 365 avec uniquement leur compte professionnel.
 
 Pour savoir comment activer l’authentification multifacteur dans le portail Azure AD, consultez [Configurer l’authentification multifacteur](../security-and-compliance/set-up-multi-factor-authentication.md).
 
@@ -119,12 +120,12 @@ L’étape suivante consiste à créer et déployer des stratégies de sécurit�
 
 ## <a name="make-sure-users-enroll-their-devices"></a>Assurez-vous que les utilisateurs inscrivent leurs appareils
 
-Une fois que vous avez créé et déployé une stratégie de gestion des appareils mobiles, chaque utilisateur sous licence Microsoft 365 de votre organisation que la stratégie d’appareil applique reçoit un message d’inscription la prochaine fois qu’il se connecte à Microsoft 365 à partir de son appareil mobile. Ils doivent effectuer les étapes d’inscription et d’activation avant de pouvoir accéder à Microsoft 365 e-mail et documents. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md).
+Une fois que vous avez créé et déployé une stratégie de gestion des appareils mobiles, chaque utilisateur Microsoft 365 sous licence de votre organisation que la stratégie d’appareil applique reçoit un message d’inscription la prochaine fois qu’il se connecte à Microsoft 365 à partir de son appareil mobile. Ils doivent suivre les étapes d’inscription et d’activation avant de pouvoir accéder à la messagerie et aux documents Microsoft 365. Pour plus d’informations, consultez [Inscrire votre appareil mobile à l’aide de mobilité et de sécurité de base](enroll-your-mobile-device.md).
 
 > [!IMPORTANT]
-> Si la langue préférée d’un utilisateur n’est pas prise en charge par le processus d’inscription, les utilisateurs peuvent recevoir une notification d’inscription et des étapes sur leurs appareils mobiles dans une autre langue. Toutes les langues prises en charge dans Microsoft 365 ne sont pas prises en charge pour le processus d’inscription sur les appareils mobiles.
+> Si la langue préférée d’un utilisateur n’est pas prise en charge par le processus d’inscription, les utilisateurs peuvent recevoir une notification d’inscription et des étapes sur leurs appareils mobiles dans une autre langue. Les langues prises en charge dans Microsoft 365 ne sont pas toutes prises en charge pour le processus d’inscription sur les appareils mobiles.
 
-Les utilisateurs disposant d’appareils Android ou iOS sont tenus d’installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
+Les utilisateurs disposant d’appareils Android ou iOS doivent installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
 
 ## <a name="related-content"></a>Contenu associé
 

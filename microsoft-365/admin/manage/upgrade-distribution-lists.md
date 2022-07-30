@@ -1,5 +1,5 @@
 ---
-title: Mettre à niveau des listes de distribution vers des groupes Microsoft 365 dans Exchange Online
+title: Mettre à niveau les listes de distribution vers Groupes Microsoft 365 dans Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,32 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Microsoft 365 dans Exchange Online et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 6f27c4a7df345a25f4b5ca7d2a9f2979a97e7c6a
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution pour Groupes Microsoft 365 dans Exchange Online et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
+ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922172"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085222"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Mettre à niveau des listes de distribution vers des groupes Microsoft 365 dans Exchange Online
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Mettre à niveau les listes de distribution vers Groupes Microsoft 365 dans Exchange Online
 
 La mise à niveau d’une liste de distribution vers un groupe Microsoft 365 est un excellent moyen d’améliorer les fonctionnalités et les fonctionnalités des groupes de votre organisation. Pour plus d’informations, consultez [Pourquoi mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Vous pouvez mettre à niveau les listes de distribution une à la fois, ou plusieurs à la fois. Vous pouvez utiliser le Centre d’administration Exchange (EAC) ou Exchange Online PowerShell.
 
-## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>Mettre à niveau un ou plusieurs groupes de liste de distribution vers des groupes Microsoft 365
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>Mettre à niveau un ou plusieurs groupes de listes de distribution vers Groupes Microsoft 365
 
-Vous devez être administrateur général ou administrateur Exchange pour mettre à niveau une liste de distribution. Pour effectuer une mise à niveau vers des groupes Microsoft 365, la liste de distribution doit avoir un propriétaire désigné et ce propriétaire doit être une boîte aux lettres.
+Vous devez être administrateur général ou administrateur Exchange pour mettre à niveau une liste de distribution. Pour effectuer une mise à niveau vers Groupes Microsoft 365, la liste de distribution doit avoir un propriétaire désigné et ce propriétaire doit être une boîte aux lettres.
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Utiliser la CaE classique pour mettre à niveau un ou plusieurs groupes de listes de distribution vers des groupes Microsoft 365 dans Outlook
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Utiliser le CaE classique pour mettre à niveau un ou plusieurs groupes de listes de distribution vers Groupes Microsoft 365 dans Outlook
 
 > [!NOTE]
 > Les procédures de cette section ne sont pas disponibles dans le nouveau CENTRE.
 
 1. Accédez au Centre d’administration Exchange > **groupes de destinataires**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>
 
-   Vous verrez une notification indiquant que vous disposez de listes de distribution (également appelées **groupes de distribution**) qui peuvent être mises à niveau vers des groupes Microsoft 365.
+   Vous verrez une notification indiquant que vous disposez de listes de distribution (également appelées **groupes de distribution**) qui peuvent être mises à niveau vers Groupes Microsoft 365.
    
    ![Sélectionnez le bouton Prise en main.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
@@ -56,7 +56,7 @@ Vous devez être administrateur général ou administrateur Exchange pour mettre
 
 1. Sélectionnez l’icône de mise à niveau.
 
-   ![Icône Mettre à niveau vers les groupes Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+   ![Mettre à niveau vers l’icône Groupes Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 1. Dans la boîte de dialogue d’informations, sélectionnez **Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de lits de distribution que vous mettez à niveau, le processus peut prendre des minutes ou des heures.
 
@@ -113,7 +113,7 @@ Pour mettre à niveau plusieurs listes de distribution en même temps, utilisez 
 Upgrade-DistributionGroup -DLIdentities <EmailAddress1>,<EmailAddress2>,...
 ```
 
-Cet exemple met à niveau les listes de distribution spécifiées vers des groupes Microsoft 365.
+Cet exemple met à niveau les listes de distribution spécifiées vers Groupes Microsoft 365.
 
 ```powershell
 Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.com,hr@contoso.com
@@ -123,7 +123,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="upgrade-all-eligible-distribution-lists"></a>Mettre à niveau toutes les listes de distribution éligibles
 
-Utilisez l’une des méthodes suivantes pour mettre à niveau toutes les listes de distribution éligibles vers des groupes Microsoft 365 :
+Utilisez l’une des méthodes suivantes pour mettre à niveau toutes les listes de distribution éligibles vers Groupes Microsoft 365 :
 
 - Mettez à niveau toutes les listes de distribution éligibles :
 
@@ -139,7 +139,7 @@ Utilisez l’une des méthodes suivantes pour mettre à niveau toutes les listes
    $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
    ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>FAQ sur la mise à niveau des listes de distribution vers des groupes Microsoft 365 dans Outlook
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>FAQ sur la mise à niveau des listes de distribution vers Groupes Microsoft 365 dans Outlook
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Quelles listes de distribution ne peuvent pas être mises à niveau ?
 
@@ -186,7 +186,7 @@ Personnes disposant de droits d’administrateur général ou d’administrateur
   - Le destinataire du groupe sera résolu en tant que liste de distribution au lieu du groupe Microsoft 365.
   - La carte de visite sera le contact de la liste de distribution au lieu de celui du groupe Microsoft 365.
 
-- **Outlook sur le web** : comme Outlook, la liste de distribution reste dans le cache des destinataires. Suivez les étapes décrites dans cet article pour actualiser le cache afin d’afficher la carte de visite du groupe : [supprimez le nom suggéré ou l’adresse e-mail de la liste de saisie semi-automatique](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
+- **Outlook sur le web** : Comme Outlook, la liste de distribution reste dans le cache des destinataires. Suivez les étapes décrites dans cet article pour actualiser le cache afin d’afficher la carte de visite du groupe : [supprimez le nom suggéré ou l’adresse e-mail de la liste de saisie semi-automatique](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>Les nouveaux membres du groupe reçoivent-ils un e-mail de bienvenue dans leur boîte de réception ?
 
@@ -196,7 +196,7 @@ Non. Le paramètre permettant d’activer les messages d’accueil est défini s
 
 Dans certains cas, les listes de distribution éligibles ne peuvent pas être mises à niveau. Par exemple :
 
-- Un administrateur a appliqué une stratégie **d’adresse e-mail de groupe**, et la liste de distribution ne répond pas aux exigences de la stratégie.
+- Un administrateur a appliqué une **stratégie d’adresse Email de groupe**, et la liste de distribution ne répond pas aux exigences de la stratégie.
 
 - Une liste de distribution a **la valeur** Closed définie sur **MemberJoinRestriction** ou **MemberDepartRestriction**.
 
@@ -204,9 +204,9 @@ Dans certains cas, les listes de distribution éligibles ne peuvent pas être mi
 
   Utilisez l’une des solutions de contournement suivantes pour ce problème spécifique :
 
-  - Vérifiez que tous les propriétaires de la liste de distribution sont autorisés à créer des groupes Microsoft 365 (c’est-à-dire que les propriétaires sont membres du groupe de sécurité autorisé à créer des groupes Microsoft 365).
+  - Vérifiez que tous les propriétaires de la liste de distribution sont autorisés à créer des Groupes Microsoft 365 (c’est-à-dire que les propriétaires sont membres du groupe de sécurité autorisé à créer Groupes Microsoft 365).
 
-  - Remplacez temporairement le propriétaire de la liste de distribution par un utilisateur autorisé à créer des groupes Microsoft 365.
+  - Remplacez temporairement le propriétaire de la liste de distribution par un utilisateur autorisé à créer Groupes Microsoft 365.
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Que se passe-t-il pour la DL en cas d’échec de la mise à niveau à partir d’EAC ?
 
@@ -216,8 +216,8 @@ La mise à niveau se produit uniquement lorsque l’appel est envoyé au serveur
 
 Les paramètres d’approbation de message (modération) sont conservés et continuent de fonctionner correctement après la mise à niveau du groupe de distribution vers un groupe Microsoft 365.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Comparer des groupes](../create-groups/compare-groups.md) (article)\
-[Explication des groupes Microsoft 365 à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\
+[Explication Groupes Microsoft 365 à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\
 [Ajouter ou supprimer des membres de groupes Microsoft 365 à l’aide du Centre d’administration](../create-groups/add-or-remove-members-from-groups.md)

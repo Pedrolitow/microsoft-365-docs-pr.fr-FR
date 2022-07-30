@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Connectez-vous à votre compte d’administrateur Microsoft 365 pour définir certains mots de passe utilisateur individuels pour qu’ils n’expirent jamais à l’aide d’Azure AD PowerShell.
-ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bd9960e0da7491b5f2db14618daa17b917310450
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010187"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084606"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 
@@ -40,7 +41,7 @@ Cet article s’adresse aux personnes responsables de la stratégie d’expirati
 
 Vous devez être [administrateur général ou administrateur de mot de passe](about-admin-roles.md) pour effectuer ces étapes.
 
-Un administrateur général d’un service cloud Microsoft peut utiliser le [Azure Active Directory PowerShell pour Graph afin](/powershell/azure/active-directory/install-adv2) de définir des mots de passe qui n’expirent pas pour des utilisateurs spécifiques. Vous pouvez également utiliser des applets de commande [AzureAD](/powershell/module/Azuread) pour supprimer la configuration sans expiration ou pour voir quels mots de passe utilisateur sont définis pour ne jamais expirer.
+Un administrateur général d’un service cloud Microsoft peut utiliser [Azure Active Directory PowerShell pour Graph pour](/powershell/azure/active-directory/install-adv2) définir des mots de passe qui n’expirent pas pour des utilisateurs spécifiques. Vous pouvez également utiliser des applets de commande [AzureAD](/powershell/module/Azuread) pour supprimer la configuration sans expiration ou pour voir quels mots de passe utilisateur sont définis pour ne jamais expirer.
 
 Ce guide s’applique à d’autres fournisseurs, tels que Intune et Microsoft 365, qui s’appuient également sur Azure AD pour les services d’identité et d’annuaire. L’expiration du mot de passe est la seule partie de la stratégie qui peut être modifiée.
 

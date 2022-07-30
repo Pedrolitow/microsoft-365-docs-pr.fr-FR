@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: e99ca9a878ef6a37b2a50dbf27c565661d52ad0e
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 782d2066fba52a5135c32987d8d32824b8a97be0
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037465"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087086"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Recommandations en matière de stratégie de mot de passe pour Microsoft 365
 

@@ -477,6 +477,8 @@
                   href: ../intelligence/macro-malware.md
                 - name: Hameçonnage
                   href: ../intelligence/phishing.md
+                - name: Tendances et techniques d'hameçonnage
+                  href: ../intelligence/phishing-trends.md
                 - name: Rançongiciel
                   href: /security/compass/human-operated-ransomware
                 - name: Rootkits
@@ -487,6 +489,8 @@
                   href: ../intelligence/support-scams.md
                 - name: Chevaux de Troie
                   href: ../intelligence/trojans-malware.md
+                - name: Résoudre les erreurs du portail MSI provoquées par le blocage de l'administrateur.
+                  href: ../intelligence/portal-submission-troubleshooting.md
                 - name: Logiciels indésirables
                   href: ../intelligence/unwanted-software.md
                 - name: Vers informatiques

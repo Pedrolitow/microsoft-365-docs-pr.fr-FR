@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -28,16 +29,16 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Protégez vos e-mails et données professionnels contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: db9822a87c180577afe4040e7828471b993bd0d5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602931"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087438"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>Meilleures pratiques pour sécuriser Microsoft 365 pour les entreprises
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’entreprise de Microsoft, les conseils de cet article vous aident à renforcer la sécurité de votre organisation. Parmi vos choix, Microsoft 365 Business Premium ouvre la voie, car il inclut désormais Microsoft Defender pour entreprises et d’autres [protections de sécurité](../../business-premium/get-microsoft-365-business-premium.md). Les actions recommandées présentées ici vous aideront à atteindre les objectifs décrits dans le Manuel de la [campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy.
 
@@ -46,7 +47,7 @@ Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’
 
 ## <a name="watch-a-quick-overview-of-security"></a>Regarder : Vue d’ensemble rapide de la sécurité
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198012).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
@@ -145,7 +146,7 @@ Votre environnement Microsoft 365 inclut une protection contre les programmes ma
 
 Vous pouvez augmenter la protection contre les programmes malveillants en bloquant les pièces jointes avec les types de fichiers couramment utilisés pour les programmes malveillants. Pour augmenter la protection contre les programmes malveillants dans l’e-mail, consultez [Espion : augmentez le niveau de protection contre les programmes malveillants dans le courrier](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail) ou effectuez les étapes suivantes :
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, accédez à **e-mail & stratégies de collaboration** \> **& règles** \> **anti-programmes malveillants**  \> dans la section **Stratégies**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, accédez à Email & stratégies de **collaboration** \> **& règles** \> **de** \> protection **contre les programmes malveillants** dans la section **Stratégies**.
 2. Dans la page **Anti-programme malveillant** , double-cliquez sur **Par défaut**. Un menu volant s’affiche.
 3. Sélectionnez **Modifier les paramètres de protection** en bas du menu volant.
 4. Dans la page suivante, sous **Paramètres de protection**, cochez la case en regard **du filtre Activer les pièces jointes courantes**. Les types de fichiers bloqués sont répertoriés directement sous cette option. Pour ajouter ou supprimer des types de fichiers, sélectionnez **Personnaliser les types de fichiers** à la fin de la liste.
@@ -195,7 +196,7 @@ Pour créer une règle de transport de courrier, consultez [Espion : Protéger c
 
 6. Sélectionnez **Enregistrer**.
 
-| Paramètre | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Setting | Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : types de fichiers de blocage  <br/> |
 |Appliquez cette règle si . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |Toute pièce jointe . . . correspond à l’extension de fichier . . .  <br/> |
@@ -206,7 +207,7 @@ Pour créer une règle de transport de courrier, consultez [Espion : Protéger c
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants dans [Protéger contre les programmes malveillants](#protect-against-malware).
 
-Pour plus d’informations, consultez l’article suivant :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -229,7 +230,7 @@ Pour chiffrer votre e-mail :
 1. Avec un nouvel e-mail ouvert, sélectionnez le menu **Options** .
 1. Dans la liste **déroulante Chiffrer** , choisissez le niveau d’autorisation approprié.
 
-:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Chiffrement des messages électroniques dans Outlook":::
+:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Email chiffrement des messages dans Outlook":::
 
 ### <a name="receive-encrypted-email"></a>Recevoir un e-mail chiffré
 
@@ -251,7 +252,7 @@ Nous vous recommandons de commencer à utiliser cette protection en créant une 
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>.
 
-2. Accédez à **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies** .
+2. Accédez à Email & stratégies de **collaboration** \> **& règles** \>  \> **anti-hameçonnage** dans la section **Stratégies**.
 
 3. Dans la page Anti-hameçonnage, sélectionnez **+ Créer**. Un Assistant vous guide tout au long de la définition de votre stratégie anti-hameçonnage.
 
@@ -283,7 +284,7 @@ Vous pouvez utiliser des stratégies de pièces jointes sécurisées prédéfine
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a> et connectez-vous avec votre compte d’administrateur.
 
-2. Accédez à **e-mail & stratégies de collaboration** \> **& règles** \>  \> **Anti-programme malveillant** dans la section **Stratégies**.
+2. Accédez à Email & stratégies de **collaboration** \> **& règles** \> **Anti-programme**  \> malveillant dans la section **Stratégies**.
 
 3. Sélectionnez **+ Créer** pour créer une stratégie.
 
@@ -316,7 +317,7 @@ Pour accéder à Liens sécurisés, consultez [Espion : Protégez votre courrier
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a> et connectez-vous avec votre compte d’administrateur.
 
-2. Accédez à **e-mail & stratégies de collaboration** \> **& règles** \>  \> **Anti-programme malveillant** dans la section **Stratégies**.
+2. Accédez à Email & stratégies de **collaboration** \> **& règles** \> **Anti-programme**  \> malveillant dans la section **Stratégies**.
 
 3. Sélectionnez **+ Créer** pour créer une stratégie ou modifiez la stratégie par défaut.
 
@@ -353,7 +354,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 - [Prise en main du portail Microsoft 365 Defender](../../security/defender-business/mdb-get-started.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Gérer et surveiller les comptes prioritaires](../setup/priority-accounts.md) (article)\

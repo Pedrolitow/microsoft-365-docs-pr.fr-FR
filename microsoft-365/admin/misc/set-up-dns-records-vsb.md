@@ -18,13 +18,14 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS avec Microsoft 365.
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
-ms.openlocfilehash: 3aa43cd798c26dde8eb064754ae3fb74bd520c29
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d4c2ee05b90ed890b9a1630d6e0911b6cab34cdd
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312500"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085112"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connecter votre domaine à Microsoft 365
 

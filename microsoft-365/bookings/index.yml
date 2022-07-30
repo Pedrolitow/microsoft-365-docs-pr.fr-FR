@@ -9,27 +9,33 @@ metadata:
   ms.topic: hub-page
   author: dmaguire
   ms.author: dmaguire
-  manager: serdars
+  manager: scotv
   audience: Admin
   ms.date: 09/04/2020
+  ms.openlocfilehash: f8d05950fbe00dedff8f924893d202ffb9013b33
+  ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 07/30/2022
+  ms.locfileid: "67085485"
 additionalContent:
   sections:
-    - items:
-        - title: Qu’est-ce que Microsoft Bookings ?
-          summary: 'Planifier et gérer des rendez-vous avec un calendrier et une application de réservation web, y compris l’intégration Outlook de votre personnel et les e-mails de notification automatisés.'
-          url: bookings-overview.md
-        - title: Protégez vos informations
-          summary: 'Entrez votre page Créer votre page À propos de nous, y compris le nom de l’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.'
-          url: enter-business-information.md
-        - title: Obtenir l’application bookings
-          summary: Modifiez le thème de couleur et définissez l’apparence de la page de réservation de votre client externe.
-          url: customize-booking-page.md
-        - title: Ajouter du personnel aux réservations
-          summary: 'Créez votre liste de membres du personnel et gérez les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.'
-          url: add-staff.md
-        - title: 'Planifier des fermetures d’entreprise, des congés et des vacances'
-          summary: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-          url: schedule-closures-time-off-vacation.md
-        - title: Heures de travail des employés dans Microsoft Bookings
-          summary: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
-          url: employee-hours.md
+  - items:
+    - title: Qu’est-ce que Microsoft Bookings ?
+      summary: Planifier et gérer des rendez-vous avec un calendrier et une application de réservation web, y compris l’intégration Outlook de votre personnel et les e-mails de notification automatisés.
+      url: bookings-overview.md
+    - title: Protégez vos informations
+      summary: Entrez votre page Créer votre page À propos de nous, y compris le nom de l’entreprise, l’adresse, le numéro de téléphone, l’URL du site web, le logo et les heures d’ouverture dans Microsoft Bookings.
+      url: enter-business-information.md
+    - title: Obtenir l’application bookings
+      summary: Modifiez le thème de couleur et définissez l’apparence de la page de réservation de votre client externe.
+      url: customize-booking-page.md
+    - title: Ajouter du personnel aux réservations
+      summary: Créez votre liste de membres du personnel et gérez les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.
+      url: add-staff.md
+    - title: Planifier des fermetures d’entreprise, des congés et des vacances
+      summary: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
+      url: schedule-closures-time-off-vacation.md
+    - title: Heures de travail des employés dans Microsoft Bookings
+      summary: Définir les heures de travail et la disponibilité des employés dans Microsoft Bookings.
+      url: employee-hours.md

@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: 48b26e3c19ba8c02798e9eb365ab763b03a1029a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a117bbb6468effe7122c74ff051d90ab9714d89e
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373427"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085638"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 

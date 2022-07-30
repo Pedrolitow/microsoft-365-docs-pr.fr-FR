@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_purchase
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,16 +24,16 @@ ms.custom:
 search.appverid: GEA150
 description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a47d956b614c6464a49af33c179609eeb0e42ac9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602533"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087679"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 pour les entreprises
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Microsoft 365 pour les entreprises est un service d’abonnement qui vous permet d’exécuter votre organisation dans le cloud pendant que Microsoft s’occupe de l’informatique pour vous. Microsoft gère les appareils, protège contre les menaces réelles et fournit à votre organisation les derniers logiciels métier. Vous pouvez vous inscrire à un abonnement d’essai gratuit pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME et l’essayer pendant 30 jours.
 
@@ -51,7 +52,7 @@ Microsoft 365 pour les entreprises est un service d’abonnement qui vous permet
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures décrites dans cet article, vous devez être administrateur général ou de facturation pour votre organisation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures décrites dans cet article, vous devez être administrateur général ou de facturation pour votre organisation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Essayer un abonnement d’essai gratuit
 
@@ -111,7 +112,7 @@ Si vous disposez déjà d’un abonnement Microsoft 365 pour les entreprises, vo
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>Regarder : Déplacer des utilisateurs vers un autre abonnement
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198013).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
@@ -147,7 +148,7 @@ La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer
 > Les cartes de crédit internationales ne sont pas acceptées.
 ::: moniker-end
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous disposez d’un nouveau compte et que vous configurez votre premier abonnement, vous pouvez utiliser les articles d’installation guidés pour vous aider à commencer.
 
@@ -158,7 +159,7 @@ Si vous disposez d’un nouveau compte et que vous configurez votre premier abon
 
 Si vous disposez déjà d’un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment procéder, consultez [Déplacer les utilisateurs vers un autre abonnement](subscriptions/move-users-different-subscription.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../admin/add-users/add-users.md) (article)\

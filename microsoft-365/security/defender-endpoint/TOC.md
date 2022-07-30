@@ -278,6 +278,7 @@
 ##### [Activer la protection la protection contre les codes malveillants exploitant une faille de sécurité](enable-exploit-protection.md)
 ##### [Personnaliser la protection contre les codes malveillants exploitant une faille de sécurité](customize-exploit-protection.md)
 ##### [Importer, exporter et déployer des configurations de protection contre les codes malveillants exploitant une faille de sécurité](import-export-exploit-protection-emet-xml.md)
+##### [Résolution des problèmes d’atténuation de la protection contre le code malveillant](troubleshoot-exploit-protection-mitigations.md)
 ##### [Référence de protection contre les codes malveillants exploitant une faille de sécurité](exploit-protection-reference.md)
 #### [Protection du réseau]()
 ##### [Protéger votre réseau](network-protection.md)

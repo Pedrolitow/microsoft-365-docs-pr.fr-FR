@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -24,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir les informations de contact d’un partenaire avec lequel vous avez travaillé dans le passé.
-ms.openlocfilehash: af865ee194cb9efb5c2891e6c73d860604c57bec
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 5b6c9abcd614f0b4be96f597c72a813064b78b14
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573755"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086822"
 ---
 # <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Rechercher votre partenaire ou revendeur d’abonnements Microsoft 365
 

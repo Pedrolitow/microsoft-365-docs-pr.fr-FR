@@ -16,18 +16,19 @@ ms.collection:
 search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom:
+- VSBFY23
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: 9dd666155022298ca824a1d0cf563e8fcc7f63ae
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 8cdab96891ff682a56d461270bf7def46aca52ac
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101501"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086012"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 

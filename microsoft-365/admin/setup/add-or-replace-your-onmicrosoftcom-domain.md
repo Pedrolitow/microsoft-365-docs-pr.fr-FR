@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -28,27 +29,27 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Découvrez comment créer un domaine onmicrosoft.com et en faire votre nouveau domaine de secours.
-ms.openlocfilehash: 967cc1992b33b3a17a853954175adbf050b34f1c
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 66f5562b4a2ba46f662a54ff33d953c4e617ce3a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772131"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087306"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Ajouter et remplacer votre domaine de secours onmicrosoft.com dans Microsoft 365
 
 Lorsque vous vous inscrivez à Microsoft 365, Microsoft fournit un domaine *onmicrosoft.com* ( votre **domaine de secours** ) si vous ne possédez pas de domaine ou ne souhaitez pas le connecter à Microsoft 365 (par exemple, tailspintoys.onmicrosoft.com). Votre domaine de secours est utilisé par défaut dans :
 
 - Noms d’utilisateur et adresses e-mail
-- Microsoft 365 équipes & groupes d’alias de messagerie
+- Les équipes Microsoft 365 & groupes d’alias de messagerie
 - Déplacements automatiques des dépendances de domaine
 
 Il sert d’adresse de routage par défaut pour votre environnement Microsoft 365. Lorsqu’un utilisateur est configuré avec une boîte aux lettres, l’e-mail est acheminé vers le domaine de secours.  Même si un domaine personnalisé est utilisé (par exemple, tailspintoys.com), si ce domaine personnalisé est supprimé de votre environnement Microsoft 365, le domaine de secours garantit que l’e-mail de votre utilisateur est correctement routée.
 
 Vous pouvez modifier votre domaine de secours dans le Centre d'administration Microsoft 365. Les raisons courantes pour lesquelles les clients modifient leur domaine de secours sont les suivantes :
 
-- Ne sachant pas le nom de l’entreprise à utiliser lors de leur première inscription à Microsoft 365. Maintenant qu’ils connaissent le nom de l’entreprise, ils veulent que leurs utilisateurs aient les noms de compte de connexion appropriés. 
-- Ils souhaitent modifier l’apparence de leurs URL SharePoint lorsqu’ils créent un site. SharePoint URL de votre environnement Microsoft 365 sont créées en fonction de votre nom de domaine de secours. Si vous n’avez pas utilisé le nom d’entreprise approprié lors de votre première inscription, vos URL SharePoint pour vos sites continueront à utiliser ce nom lorsque vous créerez des sites SharePoint. 
+- Ne sachant pas le nom de l’entreprise à utiliser lors de sa première inscription à Microsoft 365. Maintenant qu’ils connaissent le nom de l’entreprise, ils veulent que leurs utilisateurs aient les noms de compte de connexion appropriés. 
+- Ils souhaitent modifier l’apparence de leurs URL SharePoint lorsqu’ils créent un site. Les URL SharePoint dans votre environnement Microsoft 365 sont créées en fonction de votre nom de domaine de secours. Si vous n’avez pas utilisé le nom d’entreprise approprié lors de votre première inscription, vos URL SharePoint pour vos sites continueront à utiliser ce nom lorsque vous créerez des sites SharePoint. 
 
 
 Bien que vous puissiez ajouter d’autres domaines onmicrosoft.com, un seul domaine onmicrosoft.com peut être utilisé comme domaine de secours. Les étapes décrites dans cet article décrivent comment :
@@ -65,7 +66,7 @@ Pour ajouter, modifier ou supprimer des domaines, vous **devez** être **adminis
 
 ## <a name="add-a-new-onmicrosoftcom-domain"></a>Ajouter un nouveau domaine onmicrosoft.com
 
-1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres**, puis sélectionnez **Domaines**.
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres**, puis **Domaines**.
 2. Sélectionnez votre onmicrosoft.com domaine par défaut.
 
     ![Page Domaines.](../../media/onmicrosoft-domains.png)
@@ -91,11 +92,11 @@ Pour ajouter, modifier ou supprimer des domaines, vous **devez** être **adminis
 
 
 > [!NOTE]
-> Avant de remplacer votre domaine de secours par un nouveau domaine onmicrosoft.com, vous pouvez envisager de modifier votre domaine onmicrosoft.com SharePoint. La création d’un domaine onmicrosoft supplémentaire et son utilisation en tant que domaine de secours ne renomment pas SharePoint Online. Vos URL SharePoint et OneDrive existantes resteront les mêmes.  Vous pouvez modifier votre domaine SharePoint.onmicrosoft en suivant les étapes PowerShell fournies dans [SharePoint préversion du changement de nom de domaine](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout locataire avec moins de 1 000 sites).
+> Avant de remplacer votre domaine de secours par un nouveau domaine onmicrosoft.com, vous pouvez envisager de modifier votre domaine SharePoint onmicrosoft.com. La création d’un domaine onmicrosoft supplémentaire et son utilisation en tant que domaine de secours n’entraînent pas de changement de nom pour SharePoint Online. Vos URL SharePoint et OneDrive existantes restent les mêmes.  Vous pouvez modifier votre domaine SharePoint .onmicrosoft en suivant les étapes PowerShell fournies dans la [préversion du renommage de domaine SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout locataire avec moins de 1 000 sites).
 
 Une fois que vous avez créé votre nouveau domaine onmicrosoft.com, procédez comme suit pour le remplacer par votre domaine de secours.
 
-1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres**, puis sélectionnez **Domaines**. 
+1. Dans le Centre d'administration Microsoft 365, sélectionnez **Paramètres**, puis **Domaines**. 
 
 2. Sélectionnez le nouveau domaine onmicrosoft.com que vous avez créé.
 

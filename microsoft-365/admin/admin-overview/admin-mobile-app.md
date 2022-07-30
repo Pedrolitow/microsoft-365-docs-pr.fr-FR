@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -25,18 +26,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez l’application Administration Microsoft 365, votre compagnon du Centre d'administration Microsoft 365 web, pour gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601693"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084628"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile Administration Microsoft 365
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
-Êtes-vous un administrateur qui est généralement en déplacement ? Même si ce n’est pas le cas, il peut arriver que vous deviez gérer Microsoft 365 à partir de votre téléphone ou tablette. Découvrez [l’application de Administration Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216) gratuite, le compagnon idéal pour le Centre d'administration Microsoft 365 web. Vous pouvez télécharger l’application à partir [d’Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) et de [l’Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), ainsi qu’à partir de Administration Microsoft 365 lien d’application dans le coin supérieur droit du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
+Êtes-vous un administrateur qui est généralement en déplacement ? Même si ce n’est pas le cas, il peut arriver que vous deviez gérer Microsoft 365 à partir de votre téléphone ou tablette. Découvrez [l’application de Administration Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216) gratuite, le compagnon idéal pour le Centre d'administration Microsoft 365 web. Vous pouvez télécharger l’application à partir [d’Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8), de [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp), ainsi que de Administration Microsoft 365 lien d’application dans le coin supérieur droit du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Capture d’écran : Administration page d’accueil de l’application mobile, affichant la recherche, le Centre de messages, l’intégrité et les liens rapides":::
 
@@ -57,7 +58,7 @@ Si vous êtes administrateur et que vous êtes responsable de plusieurs organisa
 
 ## <a name="watch-install-the-admin-mobile-app"></a>Regarder : Installer l’application mobile d’administration
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
@@ -86,8 +87,8 @@ Pour utiliser l’application, vous devez disposer d’autorisations d’adminis
 
 - Applications Microsoft 365 pour Entreprise
 - Microsoft 365 Apps entreprise
-- Microsoft 365 Business Premium
-- Office 365 Business Premium
+- Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
 - Microsoft 365 Business Basic
 - Microsoft 365 E3/E5
 - Office 365 : E1, E3/E5
@@ -129,12 +130,12 @@ Dans le menu de navigation de gauche, accédez à **Notifications de** > **param
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Que faire si je ne trouve pas de réponse à une question ?
 
-Envoyer un e-mail [feedback365@microsoft.com](mailto:feedback365@microsoft.com) signaler un problème avec l’application. Vous pouvez également faire part de vos commentaires en bas de cet article.
+Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) signaler un problème avec l’application. Vous pouvez également faire part de vos commentaires en bas de cet article.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez téléchargé l’administrateur mobile, vous pouvez ajouter des utilisateurs pour commencer.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vidéos de formation Microsoft 365 Entreprise](../../business-video/index.yml)
