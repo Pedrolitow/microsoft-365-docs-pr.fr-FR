@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bd5fd696a9e22f0e30d18b3b785761847166a5b3
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772059"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085244"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -66,16 +66,19 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie de sécurité prédéfinies est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
   > - Le destinataire est : romain@contoso.com
   > - Le destinataire est membre de : Exécutifs
   >
-  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
-  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 - **Protection intégrée** (Defender pour Office 365 uniquement) : profil qui active uniquement les liens sécurisés et la protection des pièces jointes sécurisées. Ce profil fournit efficacement des stratégies par défaut pour les liens sécurisés et les pièces jointes sécurisées, qui n’ont jamais eu de stratégies par défaut.
+
+  > [!NOTE]
+  > La stratégie de sécurité prédéfinies de protection intégrée est en cours de déploiement et n’est peut-être pas disponible dans votre organisation.
 
   Pour **la protection intégrée**, la stratégie de sécurité prédéfinies est activée par défaut pour tous les clients Defender pour Office 365. Bien que nous ne le recommandons pas, vous pouvez également configurer des exceptions en fonction des **utilisateurs**, **des groupes** et **des domaines** afin que la protection ne soit pas appliquée à des utilisateurs spécifiques.
 
@@ -119,14 +122,19 @@ Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de pr
 
 Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suivant est appliqué de la priorité la plus élevée à la priorité la plus basse :
 
-1. Stratégie de sécurité prédéfinies de **protection stricte**
-2. Stratégie de sécurité prédéfinies de **protection standard**
-3. Stratégies de sécurité personnalisées
-4. **Stratégie de sécurité** prédéfinies de protection intégrée pour les liens sécurisés et les pièces jointes sécurisées, ainsi que les stratégies par défaut pour les logiciels anti-programmes malveillants, anti-courrier indésirable et anti-hameçonnage.
+1. Stratégie de sécurité prédéfinies stricte.
+2. Stratégie de sécurité prédéfinies standard.
+3. Stratégies personnalisées. Les stratégies personnalisées sont appliquées en fonction de la valeur de priorité de la stratégie.
+4. Stratégie de sécurité prédéfinies de protection intégrée pour les liens sécurisés et les pièces jointes sécurisées ; stratégies par défaut pour les logiciels anti-programmes malveillants, anti-courrier indésirable et anti-hameçonnage.
 
-En d’autres termes, les paramètres de la **stratégie de protection stricte** remplacent les paramètres de la **stratégie de protection Standard** , qui remplace les paramètres d’une stratégie personnalisée, qui remplace les paramètres de la stratégie de sécurité prédéfinies de **protection intégrée** (liens sécurisés et pièces jointes sécurisées) et de la stratégie par défaut (anti-courrier indésirable, anti-programme malveillant et anti-hameçonnage).
+En d’autres termes, les paramètres de la stratégie de sécurité prédéfinies **Strict** remplacent les paramètres de la stratégie de sécurité prédéfinies **Standard** , qui remplace les paramètres de toutes les stratégies personnalisées, qui remplacent les paramètres de la stratégie de sécurité prédéfinies de **protection intégrée** pour les liens sécurisés et les pièces jointes sécurisées, ainsi que les stratégies par défaut pour les logiciels anti-courrier indésirable, anti-programmes malveillants et anti-hameçonnage.
 
-Par exemple, si un paramètre de sécurité existe dans **la protection Standard** et qu’un administrateur a activé la **protection Standard** pour un utilisateur, le paramètre de **protection Standard** est appliqué au lieu de ce qui est configuré pour ce paramètre dans une stratégie personnalisée ou dans la stratégie par défaut (pour le même utilisateur). Notez que vous pouvez avoir une partie de votre organisation à laquelle vous souhaitez appliquer uniquement la stratégie de **protection** **standard** ou stricte tout en appliquant une stratégie personnalisée à d’autres utilisateurs de votre organisation pour répondre à des besoins spécifiques.
+Par exemple, un paramètre de sécurité existe dans **la protection Standard** et un administrateur spécifie un utilisateur pour **la protection Standard**. Le paramètre **de protection Standard** est appliqué à l’utilisateur au lieu de ce qui est configuré pour ce paramètre dans une stratégie personnalisée ou dans la stratégie par défaut pour le même utilisateur.
+
+Vous pouvez appliquer les stratégies de sécurité prédéfinies **Standard** ou **Strict** à un sous-ensemble d’utilisateurs et appliquer des stratégies personnalisées à d’autres utilisateurs de votre organisation pour répondre à des besoins spécifiques. Pour répondre à cette exigence, procédez comme suit :
+
+- Configurez les utilisateurs qui doivent obtenir les paramètres de la stratégie de sécurité prédéfinies **standard** et des stratégies personnalisées en tant qu’exceptions dans la stratégie de sécurité prédéfinies **strict** .
+- Configurez les utilisateurs qui doivent obtenir les paramètres des stratégies personnalisées en tant qu’exceptions dans la stratégie de sécurité prédéfinies **Standard** .
 
 **La protection intégrée** n’affecte pas les destinataires dans les stratégies de liens sécurisés ou de pièces jointes sécurisées existantes. Si vous avez déjà configuré la **protection standard**, la **protection stricte** ou les stratégies de liens sécurisés personnalisés ou de pièces jointes sécurisées, ces stratégies sont _toujours_ appliquées _avant_ la **protection intégrée**, de sorte qu’il n’y a aucun impact sur les destinataires qui sont déjà définis dans ces stratégies prédéfinies ou personnalisées existantes.
 
@@ -256,3 +264,293 @@ Pour vérifier que vous avez correctement affecté la stratégie de **sécurité
 Par exemple, pour les e-mails détectés comme courrier indésirable (courrier indésirable non fiable), vérifiez que le message est remis au dossier Junk Email pour les utilisateurs de **la protection Standard** et mis en quarantaine pour les utilisateurs de **la protection stricte**.
 
 Ou, pour le [courrier en bloc](bulk-complaint-level-values.md), vérifiez que la valeur BCL 6 ou supérieure remet le message au dossier Junk Email pour les utilisateurs de **protection Standard**, et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de **la protection stricte**.
+
+## <a name="preset-security-policies-in-exchange-online-powershell"></a>Prédéfinies des stratégies de sécurité dans Exchange Online PowerShell
+
+Dans PowerShell, les stratégies de sécurité prédéfinies se composent des éléments suivants :
+
+- **Stratégies de sécurité individuelles** : par exemple, les stratégies anti-programmes malveillants, les stratégies anti-courrier indésirable, les stratégies anti-hameçonnage, les stratégies de liens fiables et les stratégies de pièces jointes sécurisées.
+
+  > [!WARNING]
+  > N’essayez pas de créer, modifier ou supprimer les stratégies de sécurité individuelles associées aux stratégies de sécurité prédéfinies. La seule méthode prise en charge pour créer les stratégies de sécurité individuelles pour les stratégies de sécurité prédéfinies Standard ou Strict consiste à activer la stratégie de sécurité prédéfinie dans le portail Microsoft 365 Defender pour la première fois.
+
+- **Règles : des** règles distinctes pour la stratégie de sécurité prédéfinies Standard, la stratégie de sécurité prédéfinies stricte et la stratégie de sécurité prédéfinies de protection intégrée définissent les conditions de destinataire et les exceptions pour les stratégies (identifiez les destinataires auxquels les protections de la stratégie s’appliquent).
+
+  Pour les stratégies de sécurité prédéfinies Standard et Strict, ces règles sont créées la première fois que vous activez la stratégie de sécurité prédéfinies dans le portail Microsoft 365 Defender. Si vous n’avez jamais activé la stratégie de sécurité prédéfinies, les règles associées n’existent pas. Par la suite, la désactivation de la stratégie de sécurité prédéfinies ne supprime pas les règles associées.
+
+  La stratégie de sécurité prédéfinies de protection intégrée a une seule règle qui contrôle les exceptions à la protection par défaut des liens sécurisés et des pièces jointes sécurisées de la stratégie.
+
+  Les stratégies de sécurité prédéfinies Standard et Strict ont les règles suivantes :
+
+  - **Règles pour les protections Exchange Online Protection (EOP)** : la règle pour la stratégie de sécurité Prédéfinie standard et la règle de la stratégie de sécurité prédéfinie stricte contrôlent à qui les protections EOP dans la stratégie (anti-programme malveillant, anti-courrier indésirable et anti-hameçonnage) s’appliquent (conditions de destinataire et exceptions pour les protections EOP).
+  - **Règles pour les protections Defender pour Office 365** : la règle de la stratégie de sécurité Standard Preset et la règle de la stratégie de sécurité prédéfinies stricte contrôlent à qui s’appliquent les protections Defender pour Office 365 dans la stratégie (liens sécurisés et pièces jointes sécurisées) (conditions de destinataire et exceptions pour Defender pour Office 365 protections).
+
+  Les règles pour les stratégies de sécurité prédéfinies Standard et Strict vous permettent également d’activer ou d’activer la stratégie de sécurité prédéfinies en activant ou en désactivant les règles associées aux stratégies.
+
+  Les règles des stratégies de sécurité prédéfinies ne sont pas disponibles pour les applets de commande de règle régulières qui fonctionnent pour des stratégies de sécurité individuelles (par exemple, **Get-AntiPhishRule**). Au lieu de cela, les applets de commande suivantes sont requises :
+
+  - Stratégie de sécurité prédéfinies de protection intégrée : **\*applets de commande -ATPBuiltInProtectionRule** .
+  - Stratégies de sécurité prédéfinies standard et strictes : **\*applets de commande -EOPProtectionPolicyRule** et **\*-ATPProtectionPolicyRule** .
+
+Les sections suivantes décrivent comment utiliser ces applets de commande dans **les scénarios pris en charge**.
+
+Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
+### <a name="use-powershell-to-view-individual-security-policies-for-preset-security-policies"></a>Utiliser PowerShell pour afficher des stratégies de sécurité individuelles pour les stratégies de sécurité prédéfinies
+
+N’oubliez pas que si vous n’avez jamais activé la stratégie de sécurité prédéfinies Standard ou la stratégie de sécurité prédéfinies Strict dans le portail Microsoft 365 Defender, les stratégies de sécurité associées à la stratégie de sécurité prédéfinies n’existent pas.
+
+> [!WARNING]
+> N’essayez pas de créer, modifier ou supprimer les stratégies de sécurité individuelles associées aux stratégies de sécurité prédéfinies. La seule méthode prise en charge pour créer les stratégies de sécurité individuelles pour les stratégies de sécurité prédéfinies Standard ou Strict consiste à activer la stratégie de sécurité prédéfinie dans le portail Microsoft 365 Defender pour la première fois.
+
+- **Stratégie de sécurité prédéfinies de protection intégrée** : les stratégies associées sont nommées Built-In Stratégie de protection. La valeur de la propriété IsBuiltInProtection est True pour ces stratégies.
+
+  Pour afficher les stratégies de sécurité individuelles pour la stratégie de sécurité prédéfinies de protection intégrée, exécutez la commande suivante :
+
+  ```powershell
+  Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy -Identity "Built-In Protection Policy" | Format-List; Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Links policy",("-"*79);Get-SafeLinksPolicy -Identity "Built-In Protection Policy" | Format-List
+  ```
+
+- **Stratégie de sécurité prédéfinies standard** : les stratégies associées sont nommées `Standard Preset Security Policy<13-digit number>`. Par exemple : `Standard Preset Security Policy1622650008019`. La valeur de la propriété RecommendPolicyType est Standard.
+
+  - **Organisations sans Defender pour Microsoft 365** :
+
+    Pour afficher les stratégies de sécurité individuelles pour la stratégie de sécurité prédéfinie Standard dans les organisations sans Defender pour Microsoft 365, exécutez la commande suivante :
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+  - **Organisations avec Defender pour Microsoft 365** :
+
+    Pour afficher les stratégies de sécurité individuelles pour la stratégie de sécurité prédéfinie Standard dans les organisations avec Defender pour Microsoft 365, exécutez la commande suivante :
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+- **Stratégie de sécurité prédéfinies stricte** : les stratégies associées sont nommées `Strict Preset Security Policy<13-digit number>`. Par exemple : `Strict Preset Security Policy1642034872546`. La valeur de la propriété RecommendPolicyType est Strict.
+
+  - **Organisations sans Defender pour Microsoft 365** :
+
+    - Pour afficher les stratégies de sécurité individuelles pour la stratégie de sécurité strict prédéfinie dans les organisations sans Defender pour Microsoft 365, exécutez la commande suivante :
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+      ```
+
+  - **Organisations avec Defender pour Microsoft 365** :
+
+    - Pour afficher les stratégies de sécurité individuelles pour la stratégie de sécurité prédéfinie stricte dans les organisations avec Defender pour Microsoft 365, exécutez la commande suivante :
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+    ```
+
+### <a name="use-powershell-to-view-rules-for-preset-security-policies"></a>Utiliser PowerShell pour afficher les règles des stratégies de sécurité prédéfinies
+
+N’oubliez pas que si vous n’avez jamais activé la stratégie de sécurité prédéfinies Standard ou la stratégie de sécurité strict dans le portail Microsoft 365 Defender, les règles associées à ces stratégies n’existent pas.
+
+- **Stratégie de sécurité prédéfinies de protection intégrée** : la règle associée est nommée ATP Built-In Protection Rule.
+
+  Pour afficher la règle associée à la stratégie de sécurité prédéfinies de protection intégrée, exécutez la commande suivante :
+
+  ```powershell
+  Get-ATPBuiltInProtectionRule
+  ```
+
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Get-ATPBuiltInProtectionRule](/powershell/module/exchange/get-atpbuiltinprotectionrule).
+
+- **Stratégie de sécurité prédéfinies standard** : les règles associées sont nommées Stratégie de sécurité prédéfinies standard.
+
+  Utilisez les commandes suivantes pour afficher les règles associées à la stratégie de sécurité prédéfinies Standard :
+
+  - Pour afficher la règle associée aux protections EOP dans la stratégie de sécurité prédéfinie Standard, exécutez la commande suivante :
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - Pour afficher la règle associée aux protections Defender pour Office 365 dans la stratégie de sécurité prédéfinies Standard, exécutez la commande suivante :
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - Pour afficher les deux règles en même temps, exécutez la commande suivante :
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Standard preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+- **Stratégie de sécurité prédéfinies stricte** : les règles associées sont nommées Stratégie de sécurité prédéfinies stricte.
+
+  Utilisez les commandes suivantes pour afficher les règles associées à la stratégie de sécurité prédéfinies Strict :
+
+  - Pour afficher la règle associée aux protections EOP dans la stratégie de sécurité strict prédéfinie, exécutez la commande suivante :
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - Pour afficher la règle associée aux protections Defender pour Office 365 dans la stratégie de sécurité strict prédéfinies, exécutez la commande suivante :
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - Pour afficher les deux règles en même temps, exécutez la commande suivante :
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Strict preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Get-EOPProtectionPolicyRule](/powershell/module/exchange/get-eopprotectionpolicyrule) et [Get-ATPProtectionPolicyRule](/powershell/module/exchange/get-atpprotectionpolicyrule).
+
+### <a name="use-powershell-to-turn-on-or-turn-off-preset-security-policies"></a>Utiliser PowerShell pour activer ou désactiver les stratégies de sécurité prédéfinies
+
+Comme décrit précédemment, pour activer ou désactiver les stratégies de sécurité prédéfinies Standard ou Strict, vous activez ou désactivez les règles associées à la stratégie. La valeur de propriété State de la règle indique si la règle est Activée ou Désactivée.
+
+Selon que votre organisation a Defender pour Office 365, vous devrez peut-être activer ou désactiver une règle (règle pour les protections EOP) ou deux règles (une règle pour les protections EOP et une règle pour les protections Defender pour Office 365) pour activer ou désactiver la stratégie de sécurité prédéfinie.
+
+- **Stratégie de sécurité prédéfinies standard** :
+
+  - **Organisations sans Defender pour Office 365** :
+
+    - Dans les organisations sans Defender pour Office 365, exécutez la commande suivante pour déterminer si la règle de la stratégie de présélection Standard est actuellement activée ou désactivée :
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Exécutez la commande suivante pour désactiver la stratégie de sécurité prédéfinies Standard si elle est activée :
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - Exécutez la commande suivante pour activer la stratégie de sécurité prédéfinies Standard si elle est désactivée :
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+  - **Organisations avec Defender pour Office 365** :
+
+    - Dans les organisations avec Defender pour Office 365, exécutez la commande suivante pour déterminer si les règles de la stratégie de présélection Standard sont actuellement activées ou désactivées :
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Standard preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Exécutez la commande suivante pour désactiver la stratégie de sécurité prédéfinies Standard si elle est activée :
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - Exécutez la commande suivante pour activer la stratégie de sécurité prédéfinies Standard si elle est désactivée :
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+- **Stratégie de sécurité prédéfinies stricte** :
+
+  - **Organisations sans Defender pour Office 365** :
+
+    - Dans les organisations avec Defender pour Office 365, exécutez la commande suivante pour déterminer si la règle de la stratégie de présélection Strict est actuellement activée ou désactivée :
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Exécutez la commande suivante pour désactiver la stratégie de sécurité prédéfinies stricte si elle est activée :
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - Exécutez la commande suivante pour activer la stratégie de sécurité strict prédéfini si elle est désactivée :
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+  - **Organisations avec Defender pour Office 365** :
+
+    - Dans les organisations avec Defender pour Office 365, exécutez la commande suivante pour déterminer si les règles de la stratégie de préréglage strict sont actuellement activées ou désactivées :
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Strict preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Exécutez la commande suivante pour désactiver la stratégie de sécurité prédéfinies stricte si elle est activée :
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - Exécutez la commande suivante pour activer la stratégie de sécurité strict prédéfini si elle est désactivée :
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Enable-EOPProtectionPolicyRule](/powershell/module/exchange/enable-eopprotectionpolicyrule), [Enable-ATPProtectionPolicyRule](/powershell/module/exchange/enable-atpprotectionpolicyrule), [Disable-EOPProtectionPolicyRule](/powershell/module/exchange/disable-eopprotectionpolicyrule) et [Disable-ATPProtectionPolicyRule](/powershell/module/exchange/disable-atpprotectionpolicyrule).
+
+### <a name="use-powershell-to-specify-recipient-conditions-and-exceptions-for-preset-security-policies"></a>Utiliser PowerShell pour spécifier les conditions de destinataire et les exceptions pour les stratégies de sécurité prédéfinies
+
+> [!IMPORTANT]
+  > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie de sécurité prédéfinies est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  >
+  > - Le destinataire est : romain@contoso.com
+  > - Le destinataire est membre de : Exécutifs
+  >
+  > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  >
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+
+Pour la stratégie de sécurité prédéfinies de protection intégrée, vous ne pouvez spécifier que les exceptions de destinataire. Si toutes les valeurs de paramètre d’exception sont vides (`$null`), il n’existe aucune exception à la stratégie.
+
+Pour les stratégies de sécurité prédéfinies Standard et Strict, vous pouvez spécifier des conditions de destinataire et des exceptions pour les protections EOP et Defender pour Office 365 protections. Si toutes les conditions et valeurs de paramètre d’exception sont vides (`$null`), il n’existe aucune condition de destinataire ou exception aux stratégies de sécurité prédéfinies Standard ou Strict.
+
+Même si aucune condition de destinataire ou exception n’est appliquée à une stratégie de sécurité prédéfinies, l’application de la stratégie à tous les destinataires dépend [de l’ordre de priorité des stratégies](#order-of-precedence-for-preset-security-policies-and-other-policies) , comme décrit précédemment dans cet article.
+
+- **Stratégie de sécurité prédéfinies de protection intégrée** :
+
+  Utilisez la syntaxe suivante :
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null>
+  ```
+
+  Cet exemple supprime toutes les exceptions de destinataire de la stratégie de sécurité prédéfinies de protection intégrée.
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs $null -ExceptIfSentTo $null -ExceptIfSentToMemberOf $null
+  ```
+
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Set-ATPBuiltInProtectionRule](/powershell/module/exchange/set-atpbuiltinprotectionrule).
+
+- **Stratégies de sécurité prédéfinies standard ou strictes**
+
+  Utilisez la syntaxe suivante :
+
+  ```powershell
+  <Set-EOPProtectionPolicyRule | SetAtpProtectionPolicyRule> -Identity "<Standard Preset Security Policy | Strict Preset Security Policy>" -SentTo <"user1","user2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -SentToMemberOf <"group1","group2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null> -RecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null>
+  ```
+
+  Cet exemple configure les exceptions des protections EOP dans la stratégie de sécurité prédéfinie Standard pour les membres du groupe de distribution nommé Executives.
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
+  ```
+
+  Cet exemple configure les exceptions des protections Defender pour Office 365 dans la sécurité prédéfinies stricte pour les boîtes aux lettres d’opérations de sécurité (SecOps) spécifiées.
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"
+  ```
+
+  Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Set-EOPProtectionPolicyRule](/powershell/module/exchange/set-eopprotectionpolicyrule) et [Set-ATPProtectionPolicyRule](/powershell/module/exchange/Set-atpprotectionpolicyrule).

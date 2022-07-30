@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - MSStore_Link
 - TRN_M365B
@@ -30,16 +31,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte d’administrateur Microsoft 365 pour réinitialiser les mots de passe des utilisateurs lorsque vous disposez d’un abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: c7d3d70e2c286fbf35c4d2ae2e3eb8b812fd7e31
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601671"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084650"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>Réinitialiser les mots de passe dans Microsoft 365 pour les entreprises
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article explique comment réinitialiser les mots de passe pour vous-même et pour vos utilisateurs lorsque vous disposez d’un abonnement Microsoft 365 pour les entreprises.
 
@@ -57,7 +58,7 @@ Vous devez être [administrateur général ou administrateur de mot de passe](ab
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>Regarder : Réinitialiser un mot de passe professionnel pour un utilisateur
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 

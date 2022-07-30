@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Le système de nom de domaine mappe les noms d’hôtes de l’ordinateur vers les adresses IP et comprendre les informations de base du bureau d'enregistrement de domaines et du DNS peut vous aider à gérer des domaines.
-ms.openlocfilehash: efe5c8b4a043c3a8f4bdf49da85201ab0cbae7c9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 308f41c6b1c899ae731d1dcf3e7fc02e5a3cb5ed
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317344"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085924"
 ---
 # <a name="dns-basics"></a>Principes de base
 

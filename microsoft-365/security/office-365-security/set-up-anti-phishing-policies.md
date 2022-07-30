@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 7d1352817a1bb514d12365fa81a581a92362f1b8
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770996"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087591"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -87,14 +87,14 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies ant
   > [!NOTE]
   > Au moins une sélection dans les **paramètres Utilisateurs, groupes et domaines** est requise dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires du** message <u>auxquels la stratégie s’applique</u>. Les stratégies anti-hameçonnage dans Defender pour Office 365 ont également [des paramètres d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans lesquels vous pouvez spécifier des adresses e-mail d’expéditeur individuel ou des domaines d’expéditeur <u>qui recevront une protection contre l’emprunt d’identité</u>, comme décrit plus loin dans cet article.
   >
-  > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
   > - Le destinataire est : romain@contoso.com
   > - Le destinataire est membre de : Exécutifs
   >
-  > La stratégie est appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Exécutifs. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
+  > La stratégie s'applique à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie ne lui est pas appliquée.
   >
-  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n’est pas appliquée à romain@contoso.com _uniquement_ s’il est également membre du groupe Executives. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
+  > De même, si vous utilisez le même filtre de destinataires comme exception à la stratégie, la stratégie n'est pas appliquée à romain@contoso.com _uniquement_ s'il est également membre du groupe Cadres. S’il n’est pas membre du groupe, la stratégie s’applique toujours à lui.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation d’identité
 

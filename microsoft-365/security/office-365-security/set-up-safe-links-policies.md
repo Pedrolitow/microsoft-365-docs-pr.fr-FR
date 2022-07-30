@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies liens sécurisés et des paramètres de liens sécurisés globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b6d69614adcc34f24450e51c3067a13922493c5
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 48e873550c83154827d7deaa430b75d82ff80acc
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943842"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087262"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -118,7 +118,7 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
    - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    > [!IMPORTANT]
-   > Plusieurs conditions ou exceptions différentes ne sont pas additives; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
    > - Le destinataire est : romain@contoso.com
    > - Le destinataire est membre de : Exécutifs

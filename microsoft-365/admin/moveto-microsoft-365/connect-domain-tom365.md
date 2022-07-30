@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment connecter votre domaine à Microsoft 365.
-ms.openlocfilehash: 2b02687e8d62a40272ffa5dad8ccabec4fbde368
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b03f7fa149ed4abddeecb5ab3b89372a9f0e008f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603860"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085594"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Connecter votre domaine à Microsoft 365 pour les entreprises
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 ## <a name="watch-connect-your-domain-to-microsoft-365"></a>Espion : Connecter votre domaine à Microsoft 365
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198216).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198216).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
 

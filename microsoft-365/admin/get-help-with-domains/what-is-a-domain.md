@@ -17,18 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: Découvrez ce qu’est un domaine et comment vous pouvez acheter un domaine ou utiliser le domaine par défaut de votre entreprise pour commencer à utiliser OneDrive applications Microsoft.
+description: Découvrez ce qu’est un domaine et comment vous pouvez acheter un domaine ou utiliser le domaine par défaut de votre entreprise pour commencer à utiliser OneDrive et les applications Microsoft.
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eb7ba8a7f9ddcec9d222921e6e6171ea229e0064
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cc2f2469944e0b0602d27a136c7934687b14c5c5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316686"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084980"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
@@ -36,31 +37,31 @@ ms.locfileid: "63316686"
   
 [] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Il prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *votre entreprise.<span> com* ou *stateuniversity.<span> edu*. 
   
-Utilisation d’un domaine personnalisé comme *rob@contoso.<span> com* with Microsoft 365 peut contribuer à renforcer la créativité et la reconnaissance de votre marque. 
+Utilisation d’un domaine personnalisé comme *rob@contoso.<span> com* avec Microsoft 365 peut contribuer à renforcer la crédibilité et la reconnaissance de votre marque. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Sélectionnez l'expérience qui répond à vos besoins :
 
- **Achetez un nouveau domaine :**
+ **Acheter un nouveau domaine :**
   
 Utilisez Microsoft 365 pour acheter un nouveau domaine : nous allons tout configurer. [En savoir plus.](buy-a-domain-name.md)
   
  **Utiliser un domaine qui vous appartient déjà :**
   
-Si vous possédez déjà un domaine comme *you@yourcompany.<span> com*, vous pouvez l’ajouter et commencer à utiliser OneDrive applications Microsoft immédiatement. Vous devrez toutefois prendre quelques minutes pour configurer la messagerie et Skype Entreprise. 
+Si vous possédez déjà un domaine comme  *you@yourcompany.<span> com*  vous pouvez l’ajouter et commencer à utiliser les applications OneDrive et Microsoft immédiatement. Vous devrez toutefois prendre quelques minutes pour configurer la messagerie et Skype Entreprise. 
   
 > [!TIP]
-> vous ne savez pas si votre domaine est enregistré ? [Obtenir de l'aide pour rechercher votre bureau d'enregistrement de domaines](find-your-domain-registrar.md).
+> vous ne savez pas si votre domaine est enregistré ? - [Obtenir de l’aide pour trouver votre bureau d’enregistrement de domaines](find-your-domain-registrar.md)
   
- **Utilisez un domaine Microsoft pour le moment :**
+ **Utilisez un domaine Microsoft pour l’instant :**
   
 Vous pouvez utiliser un domaine Microsoft comme  *yourcompany.onmicrosoft.<span> com*  pour se connecter pour l’instant et ajouter un domaine personnalisé ultérieurement. 
   
 > [!IMPORTANT]
-> Si vous sélectionnez cette option, le nom que vous entrez pour votre domaine .onmicrosoft.com sera utilisé dans toutes vos URL SharePoint et OneDrive url. Il se peut que vous ne soyez pas en mesure de modifier ce nom, donc assurez-vous qu’il est correctement orthographgraphé. 
+> Si vous sélectionnez cette option, le nom que vous entrez pour votre domaine .onmicrosoft.com sera utilisé dans toutes vos URL SharePoint et OneDrive. Vous ne pourrez peut-être pas modifier ce nom. Assurez-vous donc qu’il est correctement orthographié est le nom que vous souhaitez utiliser du point de vue de la personnalisation. 
   
 ## <a name="feeling-stuck"></a>Vous êtes bloqué ?
 
-Appeler le support Microsoft - Obtenir [de l’aide pour la configuration d’un domaine](../../business-video/get-help-support.md)
+Appeler Support Microsoft - [Obtenir de l’aide pour configurer un domaine](../../business-video/get-help-support.md)
 
 ## <a name="related-content"></a>Contenu associé
 
@@ -68,6 +69,6 @@ Appeler le support Microsoft - Obtenir [de l’aide pour la configuration d’un
 
 [Ajouter un domaine à Microsoft 365](../setup/add-domain.md) (article)
 
-[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
+[Pilote Microsoft 365 à partir de mon domaine personnalisé](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)
 
 

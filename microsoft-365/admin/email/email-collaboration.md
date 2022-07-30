@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,14 +27,14 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Découvrez les différents types de groupes et comment les utiliser avec les différentes fonctionnalités de collaboration de Microsoft 365.
-ms.openlocfilehash: ebbdb4400512ff2152167ab6cc894512fa50726b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 93bccf4ca5d6e70ffdaf9a613cd3f5c4eeaad4f5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437170"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084870"
 ---
-# <a name="email-collaboration-in-microsoft-365"></a>Collaboration par e-mail dans Microsoft 365
+# <a name="email-collaboration-in-microsoft-365"></a>collaboration Email dans Microsoft 365
 
 Microsoft 365 encourage la collaboration par le biais de groupes dans Outlook, de listes de distribution (également appelées groupes de distribution), de boîtes aux lettres partagées et de dossiers publics. Chacune de ces options présente un objectif, une expérience utilisateur et un ensemble de fonctionnalités distincts. Les options qu'il convient d'utiliser dépendent de l'action que l'utilisateur doit effectuer et des outils fournis par votre organisation.
   
@@ -61,7 +63,7 @@ Le tableau suivant vous donne un aperçu rapide des différents types de groupes
 |**Les messages électroniques arrivent-ils dans la boîte de réception personnelle de l'utilisateur ?** <br/> |Non. Les utilisateurs peuvent s'abonner à un groupe, puis transférer tous les messages du groupe vers leur boîte de réception.  <br/> |Oui. Les messages électroniques arrivent dans la boîte de réception des membres du groupe de distribution.  <br/> |Non. Les messages électroniques arrivent dans la boîte de réception de la boîte aux lettres partagée.  <br/> |Non. Les messages électroniques arrivent dans le dossier public.  <br/> |
 |**Clients pris en charge** <br/> | Outlook 2016  <br/>  Outlook 2013 (transfert après abonnement)  <br/>  Outlook Web App  <br/>  Outlook 2010 (transfert après abonnement)  <br/>  Outlook 2007 (transfert après abonnement)  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> | Outlook 2016  <br/>  Outlook 2013  <br/>  Outlook Web App  <br/>  Outlook 2010  <br/>  Outlook 2007  <br/> |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer des groupes de distribution](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
     

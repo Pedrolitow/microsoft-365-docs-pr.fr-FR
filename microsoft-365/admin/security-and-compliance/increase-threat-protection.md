@@ -1,5 +1,5 @@
 ---
-title: Augmenter la protection contre les menaces pour Microsoft 365 pour les entreprises
+title: Augmenter la protection contre les menaces pour Microsoft 365 pour les PME
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
@@ -24,16 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Microsoft Defender pour Office 365 et protégez les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603334"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085528"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Augmenter la protection contre les menaces pour Microsoft 365 pour les entreprises
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Augmenter la protection contre les menaces pour Microsoft 365 pour les PME
 
-Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Cet article vous aide à renforcer la protection dans votre abonnement Microsoft 365 pour vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations s’appliquent aux organisations qui ont un besoin accru de sécurité, comme les cabinets d’avocats et les cliniques de soins de santé.
 
@@ -49,13 +50,13 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Afficher plus**, **Administration centres**, puis **Sécurité**.
 
-1. Accédez aux **stratégies de collaboration** \> & par e-mail **& les stratégies** \> **de menace**.
+1. Accédez à Email & stratégies de **collaboration** \> **& les stratégies** **de menace**\>.
 
 1. Parmi les stratégies disponibles, choisissez **Anti-programme malveillant**.
 
 Pour augmenter la protection contre les programmes malveillants dans le courrier électronique :
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, accédez à **e-mail & stratégies de collaboration** \> **& règles** \> **anti-programmes malveillants**  \> dans la section **Stratégies**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, accédez à Email & stratégies de **collaboration** \> **& règles** \> **de** \> protection **contre les programmes malveillants** dans la section **Stratégies**.
 
 1. Dans la page **Anti-programme malveillant**, double-cliquez sur **Default (Default).** Un menu volant s’affiche. 
 
@@ -73,7 +74,7 @@ Pour plus d’informations, consultez [Protection contre les programmes malveill
 
 ## <a name="watch-protect-against-ransomware"></a>Regarder : Se protéger contre les ransomware
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198018).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198018).
 
 Le ransomware restreint l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite d’extorquer de l’argent aux victimes en demandant une « rançon », généralement sous la forme de crypto-monnaies comme Le Bitcoin, en échange de l’accès aux données.
 
@@ -105,7 +106,7 @@ Pour créer une règle de transport de courrier :
 
 6. Sélectionnez **Enregistrer**.
 
-|Paramètre|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
+|Setting|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
 |---|---|
 |Nom|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|Toute pièce jointe . . . correspond à l’extension de fichier . . .|
@@ -113,7 +114,7 @@ Pour créer une règle de transport de courrier :
 |Procédez comme suit . . .|Avertir le destinataire avec un message|
 |Fournir le texte du message|N’ouvrez pas ces types de fichiers à partir de personnes que vous ne connaissez pas, car elles peuvent contenir des macros avec du code malveillant.|
 
-Pour plus d’informations, consultez l’article suivant :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -137,7 +138,7 @@ Pour créer une règle de transport de courrier, procédez comme suit :
 
 6. Sélectionnez **Enregistrer**.
 
-|Paramètre|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
+|Setting|Avertir les utilisateurs avant d’ouvrir des pièces jointes de fichiers Office|
 |---|---|
 |Nom|Empêcher le transfert automatique de courrier électronique vers des domaines externes|
 |Appliquez cette règle si ...|Expéditeur . . . est externe/interne. . . Au sein de l’organisation|
@@ -147,7 +148,7 @@ Pour créer une règle de transport de courrier, procédez comme suit :
 
 ## <a name="watch-protect-your-email-from-phishing-attacks"></a>Regarder : Protéger votre courrier contre les attaques par hameçonnage
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198014).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198014).
 
 Si vous avez configuré un ou plusieurs domaines personnalisés pour votre environnement Office 365 ou Microsoft 365, vous pouvez configurer la protection anti-hameçonnage ciblée. La protection anti-hameçonnage, qui fait partie de Microsoft Defender pour Office 365, peut aider à protéger votre organisation contre les attaques par hameçonnage basées sur l’emprunt d’identité malveillantes et d’autres attaques par hameçonnage. Si vous n’avez pas configuré de domaine personnalisé, vous n’avez pas besoin de le faire.
 
@@ -157,7 +158,7 @@ Nous vous recommandons de commencer à utiliser cette protection en créant une 
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>.
 
-2. Accédez à **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** dans la section **Stratégies** .
+2. Accédez à Email & stratégies de **collaboration** \> **& règles** \>  \> **anti-hameçonnage** dans la section **Stratégies**.
 
 3. Dans la page **Anti-hameçonnage** , sélectionnez **+ Créer**. Un Assistant vous guide tout au long de la définition de votre stratégie anti-hameçonnage.
 
@@ -178,7 +179,7 @@ Nous vous recommandons de commencer à utiliser cette protection en créant une 
 
 ## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Regarder : Protéger contre les pièces jointes malveillantes et les fichiers avec des pièces jointes sécurisées
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198019).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198019).
 
 Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sécurisée ou malveillante simplement en examinant un message électronique. Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 ATP ou Advanced Threat Protection, inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas activée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers dans SharePoint, OneDrive et Microsoft Teams.
 
@@ -199,7 +200,7 @@ Une fois votre stratégie en place depuis un certain temps, visitez la page Rapp
 
 1. Accédez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a> et connectez-vous avec votre compte d’administrateur.
 
-2. Accédez à **e-mail & stratégies de collaboration** \> **& règles** \>  \> **Anti-programme malveillant** dans la section **Stratégies**.
+2. Accédez à Email & stratégies de **collaboration** \> **& règles** \> **Anti-programme**  \> malveillant dans la section **Stratégies**.
 
 3. Sélectionnez **+ Créer** pour créer une stratégie.
 
@@ -219,7 +220,7 @@ Pour plus d’informations, consultez Configurer des stratégies [anti-hameçonn
 
 ## <a name="watch-protect-against-phishing-attacks-with-safe-links"></a>Regarder : Protéger contre les attaques par hameçonnage avec des liens fiables
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198201).
+Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198201).
 
 Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Les liens fiables, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les e-mails et les documents Office. La protection est définie par le biais de stratégies de liaisons sécurisées.
 
