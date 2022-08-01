@@ -20,22 +20,20 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099918"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107241"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Comprendre le rapport Defender Experts for Hunting dans Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
-- Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender Experts for Hunting dispose d’une intelligence humaine et d’une technologie formée par des experts pour aider Microsoft 365 Defender clients à comprendre les menaces importantes auxquelles ils sont confrontés. Il montre comment les compétences de Defender Expert en matière de chasse aux menaces, une compréhension approfondie du paysage des menaces et la connaissance des menaces émergentes peuvent vous aider à identifier, hiérarchiser et résoudre ces menaces dans votre environnement. 
 
@@ -57,13 +55,13 @@ Chaque section du rapport est conçue pour fournir des insights supplémentaires
 
 Reportez-vous à la capture d’écran suivante d’un exemple de rapport :
 
-![rapport des experts defender](../../media/mte/defender-experts-report.png)
+![Capture d’écran d’un rapport Microsoft Defender Experts for Hunting dans Microsoft 365 Defender portail.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Afficher les notifications des experts Defender
 
 Une notification d’experts Defender décrit l’activité importante de menace Defender Experts for Hunting observée dans votre environnement et fournit des recommandations pour corriger et défendre votre organisation.
 
-Les rapports Defender Experts for Hunting vous fournissent le nombre total de notifications Defender Experts que nos experts Defender ont envoyées pour l’heure choisie. Pour afficher ces notifications, cliquez sur **Afficher la notification** en regard **de Notifié**.
+Les rapports Defender Experts for Hunting vous fournissent le nombre total de notifications Defender Experts que nos experts Defender ont envoyées pour l’heure choisie. Pour afficher ces notifications, sélectionnez **Afficher la notification** en regard **de Notifié**.
 
 Ce lien vous redirige vers la page Microsoft 365 Defender incidents. Les alertes Defender Expert for Hunting ou les notifications Defender Experts sont étiquetées avec **Defender Experts**.
 
@@ -77,16 +75,16 @@ Les tactiques MITRE ATT&CK représentent des objectifs adversaires, ce qu’ils 
 1.  Reconnaissance
 2.  Développement de ressources
 3.  Accès initial
-4.  Exécution   
-3.  Persistance 
-4.  Élévation des privilèges    
-5.  Évasion de défense 
+4.  Exécution
+3.  Persistance
+4.  Élévation des privilèges
+5.  Évasion de défense
 6.  Accès aux informations d’identification
 7.  Découverte
-8.  Déplacement latéral    
+8.  Déplacement latéral
 9.  Collection
 10. Commande et contrôle
-11. Exfiltration    
+11. Exfiltration
 12. Impact
 
 Les signaux de Microsoft 365 Defender et les investigations effectuées par les experts Defender pour la chasse permettent d’identifier ces tactiques, représentées dans le graphique à barres. Ce graphique vous aide à visualiser où se trouve la poussée et vous fournit les informations dont vous avez besoin pour planifier les actions de confinement et de correction correspondantes.
@@ -95,7 +93,7 @@ Les signaux de Microsoft 365 Defender et les investigations effectuées par les 
 
 Les catégories de menaces permettent d’identifier et d’organiser les menaces de sécurité en classes afin d’évaluer leur impact et d’élaborer des stratégies pour prévenir ou atténuer ces menaces pour votre environnement. La section **Catégories de menaces observées** dans le rapport affiche un graphique à barres avec des risques et menaces significatifs détectés dans votre environnement, ce qui vous aide à comprendre l’étendue et l’étendue de votre exposition.
 
-Parmi les différentes catégories de menaces disponibles, les catégories suivantes sont soigneusement choisies, car elles ne sont pas couvertes par l’infrastructure MITRE ATT&CK :
+Parmi les différentes catégories de menaces disponibles, les catégories suivantes sont soigneusement choisies, car elles ne sont pas couvertes par mitre ATT&framework CK :
 
 - Rançongiciel
 - Programme malveillant
@@ -104,3 +102,4 @@ Parmi les différentes catégories de menaces disponibles, les catégories suiva
 - Remise
 
 Vous pouvez hiérarchiser la correction en fonction de la catégorie la plus affectée, comme illustré dans le graphique à barres.
+

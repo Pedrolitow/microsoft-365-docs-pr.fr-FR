@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: acc3f81c789722a460a43df56a3e2794855dad0c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: c6d887e7b50c3bfeddb967340045f6b2dbf96b0c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66991948"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107324"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Étapes d’utilisation de la correction manuelle des e-mails dans l’Explorateur de menaces
 
@@ -72,6 +72,6 @@ Deux scénarios de correction manuelle des e-mails :
 1. Accédez à l’onglet **Historique** , puis cliquez sur n’importe quelle liste d’approbation en attente. Il ouvre un volet latéral.  
 1. Suivez l’état de l’action dans le centre d’action unifié.
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 [En savoir plus sur la correction des e-mails](../../office-365-security/air-review-approve-pending-completed-actions.md)

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: e08e0543dca5c0e4b19995a92c31f34057de896c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185366"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106183"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements Advanced Hunting vers votre Hub d’événements Azure
 
@@ -44,7 +44,7 @@ Avant de configurer Microsoft 365 Defender pour diffuser des données vers Event
 3. Ajoutez des autorisations à l’entité qui dispose des privilèges d’un **contributeur** afin que cette entité puisse exporter des données vers Event Hubs. Pour plus d’informations sur l’ajout d’autorisations, consultez [Ajouter des autorisations](configure-event-hub.md#add-permissions)
 
 > [!NOTE]
-> L’API de streaming peut être intégrée via Event Hubs ou stockage Azure Compte.
+> L’API de streaming peut être intégrée via Event Hubs ou un compte de stockage Azure.
 
 ## <a name="enable-raw-data-streaming"></a>Activer le streaming de données brutes
 
@@ -66,7 +66,7 @@ Avant de configurer Microsoft 365 Defender pour diffuser des données vers Event
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="Un ID de ressource Event Hub" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
-8. Accédez aux [types d’événements Microsoft 365 Defender pris en charge dans l’API de streaming d’événements](supported-event-types.md) pour passer en revue l’état de prise en charge des types d’événements dans l’API de diffusion en continu Microsoft 365.
+8. Accédez aux [types d’événements Microsoft 365 Defender pris en charge dans l’API de streaming d’événements](supported-event-types.md) pour passer en revue l’état de prise en charge des types d’événements dans l’API de streaming Microsoft 365.
 
 9. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer**.
 

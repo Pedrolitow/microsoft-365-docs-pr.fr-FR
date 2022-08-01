@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66991957"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106950"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Comment configurer des autorisations et des stratégies de quarantaine
 
@@ -69,6 +69,6 @@ Une fois qu’il a été décidé que les catégories d’éléments que les uti
 - Utilisez **la stratégie globale** disponible dans la stratégie de quarantaine pour activer le logo, le nom complet et la clause d’exclusion de responsabilité de votre organisation.
 - Définissez également la **fréquence utilisateur sur 1 jour** pour la notification de mise en quarantaine.
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 En savoir plus sur les paramètres de personnalisation et de notification de l’organisation ici [Stratégies de quarantaine - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md)

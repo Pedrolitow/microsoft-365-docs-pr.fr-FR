@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 99d11ff6de3a322ec12c51e86bcab1e6f26c6a2d
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051533"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106972"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -42,7 +42,10 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender pour Identity](/defender-for-identity/whats-new)
 - [Nouveautés de Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
-Vous pouvez également obtenir des mises à jour de produit et des notifications importantes via le [centre de messages](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+Vous pouvez également obtenir des mises à jour de produit et des notifications importantes via le [centre de messages](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## <a name="august-2022"></a>Août 2022
+- (GA) [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) est désormais en disponibilité générale. Si vous êtes un client Microsoft 365 Defender disposant d’un centre d’opérations de sécurité robuste, mais que Vous souhaitez que Microsoft vous aide à rechercher de manière proactive les menaces sur les points de terminaison, les Office 365, les applications cloud et l’identité à l’aide des données Microsoft Defender, apprenez-en davantage sur l’application, la configuration et l’utilisation du service. Defender Experts for Hunting est vendu séparément des autres produits Microsoft 365 Defender.
 
 ## <a name="july-2022"></a>Juillet 2022
 - (Préversion) Les participants à la préversion publique microsoft Defender Experts for Hunting peuvent désormais se réjouir de recevoir des rapports mensuels pour les aider à comprendre les menaces que le service de chasse a exposées dans leur environnement, ainsi que les alertes générées par leurs produits Microsoft 365 Defender. Pour plus d’informations, [reportez-vous au rapport Comprendre les experts Defender pour la chasse dans Microsoft 365 Defender](defender-experts-report.md).
@@ -88,7 +91,7 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 
   Vous pouvez affecter un incident et toutes les alertes qui lui sont associées à un compte d’utilisateur de **Assign to:** dans le volet **Gérer les incidents** d’un incident ou le volet **Gérer les alertes** d’une alerte.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - (Préversion) Microsoft Defender pour Office 365 données disponibles dans la chasse avancée
 
@@ -104,7 +107,7 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 
   Améliorez les fonctionnalités de détection, d’investigation et de renseignement sur les menaces de la plateforme avec des connexions partenaires prises en charge.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - (Préversion) [Afficher les rapports par balises de menace](threat-analytics.md#view-reports-per-threat-tags)
 
@@ -126,7 +129,7 @@ L’équipe des opérations de sécurité peut afficher toutes les actions en at
 
   Obtenez des informations sur les appareils auxquels une adresse IP spécifique a été attribuée à un intervalle de temps donné.
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 - [Nouvelle page d’alerte dans le portail Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243)
 

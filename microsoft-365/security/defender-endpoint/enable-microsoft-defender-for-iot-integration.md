@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f32d521fe83c9e72566228bb10efb37b851b6e05
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 460988f063eb23c53ce76359da6ba7875ab3bc62
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748074"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107126"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>Intégration avec Microsoft Defender pour IoT
 
@@ -44,7 +44,7 @@ L’intégration de Defender pour IoT offre une visibilité accrue pour vous aid
 
 Les clients qui ont intégré Defender pour IoT ont également des recommandations de sécurité pour les évaluations des vulnérabilités et les configurations incorrectes pour les appareils IoT.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour modifier les paramètres de votre intégration Defender pour point de terminaison, l’utilisateur doit avoir les rôles suivants :
 
@@ -67,7 +67,7 @@ Pour modifier les paramètres de votre intégration Defender pour point de termi
 
 ## <a name="set-up-a-network-sensor"></a>Configurer un capteur réseau
 
-Pour configurer un capteur réseau, votre abonnement Azure doit avoir un plan Defender pour IoT avec des appareils IoT d’entreprise ajoutés. Pour plus d’informations, consultez [Prise en main de Defender pour IoT](/azure/defender-for-iot/organizations/getting-started).
+Pour configurer un capteur réseau, votre abonnement Azure doit avoir un plan Defender pour IoT avec des appareils IoT d’entreprise ajoutés, comme décrit [ci-dessus](#onboard-a-defender-for-iot-plan).
 
 Pour ajouter un capteur réseau, sous **Configurer les capteurs réseau** , choisissez le lien **Microsoft Defender pour IoT** . Cela vous amène au processus d’installation du capteur d’intégration dans le Portail Azure. Pour plus d’informations, consultez [Prise en main d’Enterprise IoT](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
@@ -89,7 +89,7 @@ Pour plus d’informations, consultez la [page de tarification de Defender pour 
 
 ## <a name="cancel-your-defender-for-iot-plan"></a>Annuler votre plan Defender pour IoT
 
-Vous pouvez annuler votre plan Defender pour IoT à partir de la page des paramètres Defender pour point de terminaison dans le [https://security.microsoft.com](https://security.microsoft.com/) portail. Une fois que vous avez annulé votre plan, l’intégration s’arrête et vous n’obtiendrez plus de valeur d’évaluation de la sécurité dans Defender pour point de terminaison, ni ne détecterez de nouveaux appareils dans Defender pour IoT.
+Annulez votre plan Defender pour IoT à partir de la page des paramètres Defender pour point de terminaison dans le [https://security.microsoft.com](https://security.microsoft.com/) portail. Une fois que vous avez annulé votre plan, l’intégration s’arrête et vous n’obtiendrez plus de valeur d’évaluation de la sécurité dans Defender pour point de terminaison, ni ne détecterez de nouveaux appareils dans Defender pour IoT.
 
 ## <a name="see-also"></a>Voir aussi
 

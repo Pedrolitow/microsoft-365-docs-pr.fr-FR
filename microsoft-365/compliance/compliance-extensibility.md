@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft Purview à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071544"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106424"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilité de Microsoft Purview et Microsoft Priva
 
@@ -129,4 +129,4 @@ La solution de gestion des enregistrements est utilisée par les organisations d
 
 Pour plus d’informations sur les API Graph pour la gestion des enregistrements, consultez [Utiliser l’API Gestion des enregistrements Microsoft Graph](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-Pour connaître les exigences en matière de licences pour utiliser ces API, consultez la section relative à la gestion des enregistrements de [l’aide sur la gestion des licences Microsoft 365 pour la sécurité & la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Pour connaître les exigences en matière de licences pour utiliser ces API, consultez les informations de gestion des enregistrements fournies dans les conseils microsoft 365 sur la sécurité & la conformité, [Gestion du cycle de vie des données Microsoft Purview & Gestion des enregistrements Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section.

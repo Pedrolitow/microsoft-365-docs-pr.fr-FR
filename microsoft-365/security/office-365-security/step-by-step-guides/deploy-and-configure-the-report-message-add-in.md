@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 36e3fe25444f57de4cd43d67cab5a99f546a0f13
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 1225f7d3f731ee7791808e4442497511078b150e
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798198"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106994"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>Déployez et configurez le complément de message de rapport pour les utilisateurs.
 

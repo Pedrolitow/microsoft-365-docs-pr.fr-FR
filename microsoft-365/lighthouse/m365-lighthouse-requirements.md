@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), obtenez une liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 27d5440b70916ebdb3b761ac4308d3b97ccb27da
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057770"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105953"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer des appareils, des données et des utilisateurs à grande échelle pour les clients de petite et moyenne entreprise (SMB).
 
-Les MSP doivent être inscrits au programme fournisseur de solutions Cloud (fournisseur de solutions Cloud) en tant que revendeur indirect ou partenaire de facturation directe pour utiliser Lighthouse.
+Les fournisseurs de solutions cloud doivent être inscrits au programme fournisseur de solutions cloud (CSP) en tant que revendeur indirect ou partenaire de facturation directe pour utiliser Lighthouse.
 
 En outre, chaque locataire client MSP doit être éligible à Lighthouse en répondant aux exigences suivantes :
 
@@ -36,7 +36,7 @@ En outre, chaque locataire client MSP doit être éligible à Lighthouse en rép
 - Doit avoir au moins une Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Affaires ou licence Microsoft Defender pour entreprises
 - Ne doit pas avoir plus de 2 500 utilisateurs sous licence
 
-Des privilèges d’administrateur délégués granulaires (GDAP) plus une relation de revendeur indirect ou une relation de privilèges d’administrateur délégué (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Si DAP et GDAP coexistent dans un locataire client, les autorisations GDAP sont prioritaires pour les techniciens MSP dans les groupes de sécurité compatibles GDAP. Bientôt, les clients ayant des relations GDAP uniquement (sans relations de revendeur indirect) pourront intégrer Lighthouse.
+ \*Des privilèges délégués granulaires Administration (GDAP) ou une relation de privilèges DAP (Delegated Administration Privileges) sont nécessaires pour intégrer des clients à Lighthouse. Une relation de revendeur indirect n’est plus nécessaire pour l’intégration à Lighthouse. Si DAP et GDAP coexistent dans un locataire client, les autorisations GDAP sont prioritaires pour les techniciens MSP dans les groupes de sécurité compatibles GDAP.
 
 ## <a name="requirements-for-enabling-device-management"></a>Configuration requise pour l’activation de la gestion des appareils
 
@@ -51,14 +51,14 @@ Pour que les données client s’affichent dans les rapports sur les pages de ge
 
 ## <a name="requirements-for-enabling-threat-management"></a>Configuration requise pour l’activation de la gestion des menaces
 
-Pour afficher les appareils clients et les menaces sur les pages de gestion des menaces, vous devez inscrire tous les appareils clients clients dans Microsoft Endpoint Manager (MEM) et les protéger en exécutant Antivirus Microsoft Defender.
+Pour afficher les appareils clients et les menaces sur les pages de gestion des menaces, vous devez inscrire tous les appareils clients clients dans Microsoft Endpoint Manager (MEM) et les protéger en exécutant l’Antivirus Microsoft Defender.
 
 Pour plus d’informations, consultez [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
 
-Antivirus Microsoft Defender fait partie du système d’exploitation Windows et est activé par défaut sur les appareils exécutant Windows 10.
+L’Antivirus Microsoft Defender fait partie du système d’exploitation Windows et est activé par défaut sur les appareils exécutant Windows 10.
 
 > [!NOTE]
-> Si vous utilisez une solution antivirus non-Microsoft et que vous n’êtes pas Antivirus Microsoft Defender, Antivirus Microsoft Defender est désactivé automatiquement. Lorsque vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.
+> Si vous utilisez une solution antivirus non-Microsoft et non l’antivirus Microsoft Defender, l’antivirus Microsoft Defender est automatiquement désactivé. Lorsque vous désinstallez la solution antivirus non Microsoft, l’antivirus Microsoft Defender est activé automatiquement pour protéger vos appareils Windows contre les menaces.
 
 ## <a name="related-content"></a>Contenu associé
 

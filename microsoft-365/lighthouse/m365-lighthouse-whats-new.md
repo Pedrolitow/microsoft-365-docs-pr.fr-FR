@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez les éléments ajoutés, modifiés et corrigés dans Microsoft 365 Lighthouse chaque mois.
-ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056611"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106446"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Nouveautés de Microsoft 365 Lighthouse
 
@@ -30,6 +30,20 @@ Nous ajoutons continuellement de nouvelles fonctionnalités à [Microsoft 365 Li
 
 > [!NOTE]
 > Certaines fonctionnalités sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, vous devriez la voir bientôt.
+
+## <a name="july-2022"></a>Juillet 2022
+
+### <a name="enhanced-baseline-deployment"></a>Déploiement de base de référence amélioré
+
+Microsoft 365 Lighthouse permet désormais de déployer des bases de référence sur tous vos locataires gérés plus rapidement et plus facilement en :
+
+- Détection et signalement automatiques de l’état de chaque tâche affectée
+- Consolidation des rapports d’état et simplification de la logique qui détermine l’état du déploiement
+- Signalement des tâches terminées et des tâches qui nécessitent votre attention
+- Signalement de l’état du déploiement au niveau de l’utilisateur pour les tâches applicables
+- Détection des configurations existantes à partir du locataire et comparaison de celles-ci à la base de référence
+- Fournir des détails sur les tâches qui ont été ignorées
+- Identification de l’endroit où des licences supplémentaires sont nécessaires pour effectuer une tâche affectée
 
 ## <a name="june-2022"></a>Juin 2022
 
@@ -109,15 +123,15 @@ Microsoft 365 Lighthouse pouvez désormais tester les configurations de locatair
 
 Cette nouvelle fonctionnalité détecte les stratégies existantes au sein des locataires clients que vous gérez et les compare à votre plan de déploiement. Microsoft 365 Lighthouse fournit ensuite des désignations d’état pour les étapes de déploiement et les processus d’étape de déploiement pour vous aider à comprendre quels processus de déploiement ont déjà été terminés, ceux qui doivent être traités et où les paramètres prescrits par le plan de déploiement sont égaux, manquants ou en conflit avec les paramètres inclus dans les stratégies existantes. La connaissance de ces informations facilite l’identification, la hiérarchisation et la résolution des conflits de stratégie plus rapidement, plus facilement et plus efficace.
 
-### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Étape de déploiement pour configurer Pare-feu Microsoft Defender
+### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Étape de déploiement pour configurer le Pare-feu Microsoft Defender
 
-Microsoft 365 Lighthouse a ajouté l’étape configurer Pare-feu Microsoft Defender déploiement à sa ligne de base par défaut. Cette étape permet aux MSP de sécuriser les appareils clients par le biais de la configuration par défaut du pare-feu pour les appareils Windows 10 (et ultérieurs). Pare-feu Microsoft Defender bloque le trafic réseau non autorisé entrant ou sortant des appareils clients et réduit le risque de menaces de sécurité réseau. Une fonctionnalité de règles Pare-feu Microsoft Defender est en cours de développement.
+Microsoft 365 Lighthouse a ajouté l’étape de déploiement du Pare-feu Microsoft Defender à sa ligne de base par défaut. Cette étape permet aux MSP de sécuriser les appareils clients par le biais de la configuration par défaut du pare-feu pour les appareils Windows 10 (et ultérieurs). Le Pare-feu Microsoft Defender bloque le trafic réseau non autorisé entrant ou sortant des appareils clients et réduit le risque de menaces de sécurité réseau. Une fonctionnalité règles de pare-feu Microsoft Defender est en cours de développement.
 
-Pare-feu Microsoft Defender est activé par défaut sur les appareils Windows 10 (et versions ultérieures). Si ce n’est pas configuré pour votre locataire client, procédez comme suit :
+Le Pare-feu Microsoft Defender est activé par défaut sur les appareils Windows 10 (et versions ultérieures). Si ce n’est pas configuré pour votre locataire client, procédez comme suit :
 
 1. Dans la page **Locataires** de Microsoft 365 Lighthouse, sélectionnez le locataire client pour ouvrir la page **Vue d’ensemble** du locataire.
 2. Sélectionnez l’onglet **Plan de déploiement** .
-3. Dans la liste des étapes de déploiement, sélectionnez **Configurer Pare-feu Microsoft Defender**.
+3. Dans la liste des étapes de déploiement, sélectionnez **Configurer le pare-feu Microsoft Defender**.
 4. Sélectionnez **Vérifier et déployer** pour déployer cette configuration sur le locataire du client. 
 
 ### <a name="increase-in-maximum-license-limit"></a>Augmentation de la limite maximale de licence
@@ -186,7 +200,7 @@ Vos commentaires sont importants pour nous. Nous avons donc ajouté de nouvelles
 
 Nous avons apporté des modifications à l’expérience de filtrage des locataires pour vous aider à afficher et gérer rapidement les locataires et les balises à partir de n’importe quelle page dans Microsoft 365 Lighthouse. Sélectionnez le filtre **Locataires** en haut de n’importe quelle page, puis parcourez ou entrez le nom du locataire ou de la balise sur lequel vous souhaitez filtrer.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 ### <a name="in-product-email-workflows-to-communicate-with-users"></a>Flux de travail de messagerie dans le produit pour communiquer avec les utilisateurs 
 
@@ -210,7 +224,7 @@ Nous avons modifié nos exigences d’intégration pour vous permettre d’inté
 
 Pour plus d’informations sur les exigences, consultez [Configuration requise pour Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="capability-to-add-custom-tags-to-customer-tenants"></a>Possibilité d’ajouter des balises personnalisées aux locataires du client
 
@@ -229,7 +243,7 @@ Avec la nouvelle fonctionnalité des bases de référence, vous pouvez désormai
 
 Pour suivre ces étapes de déploiement, sélectionnez **Locataires** dans le volet de navigation gauche de Microsoft 365 Lighthouse, sélectionnez un locataire dans la liste des locataires, puis sélectionnez l’onglet **Plan de déploiement** . 
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="enhancements-to-tenants-page"></a>Page Améliorations apportées aux locataires
 
