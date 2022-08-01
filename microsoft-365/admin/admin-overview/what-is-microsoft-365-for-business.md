@@ -13,7 +13,6 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - intro-overview
@@ -22,12 +21,12 @@ search.appverid:
 description: Découvrez Microsoft 365 pour les entreprises, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
 ms.date: ''
-ms.openlocfilehash: f6183d77ea130f78c87e2dd036652f66d9f6aebc
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 9cd0c103950c75fb4fafc4e01e34e0688d93ef5d
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084540"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66991929"
 ---
 # <a name="what-is-microsoft-365-for-business"></a>Qu’est-ce que Microsoft 365 Entreprises ?
 

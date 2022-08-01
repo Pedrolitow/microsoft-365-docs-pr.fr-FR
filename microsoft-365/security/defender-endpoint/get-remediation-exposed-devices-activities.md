@@ -2,6 +2,7 @@
 title: Répertorier les appareils exposés d’une activité de correction
 description: Retourne des informations sur les appareils exposés pour la tâche de correction spécifiée.
 keywords: api, correction, api de correction, obtenir, tâches de correction, correction des appareils exposés
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a7dffa064b68b2c1ce0296b66eef663eb471496
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 1bcd4f04ee48376d30b8b216de3efe49ab3a9db3
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301989"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165269"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
@@ -28,7 +29,7 @@ ms.locfileid: "61301989"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -63,7 +64,7 @@ Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire 
 Propriété (id)|Type de données|Description|Exemple
 :---|:---|:---|:---
 id|String|ID d'appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|Chaîne|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
+computerDnsName|String|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|String|Système d’exploitation d’appareil|WindowsServer2012R2
 rbacGroupName|String|Nom du groupe d’appareils associé à cet appareil|Serveurs
 

@@ -2,6 +2,8 @@
 title: Diffuser des événements Microsoft Defender for Endpoint vers des Hubs d’événements Azure
 description: Découvrez comment configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers votre Hub d’événements.
 keywords: exportation de données brutes, API de diffusion en continu, API, Hubs d’événements Azure, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +17,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: eb58e21ee9dc2cf7c1eaf89c8fa9d06edfbbe050
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: ba953f0a5d5b8f138c2651a7be6afda106b361c7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467904"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168053"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers vos Hubs d’événements Azure
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -36,31 +38,31 @@ ms.locfileid: "64467904"
 
 1. Créez [un hub d’événements](/azure/event-hubs/) dans votre client.
 
-2. Connectez-vous à [votre client Azure](https://ms.portal.azure.com/), > Abonnements > fournisseurs de ressources > **s’inscrire à Microsoft.insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights****.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
-1. Connectez-vous au [Microsoft 365 Defender](https://security.microsoft.com) en **tant qu’administrateur** général ou _*_administrateur de_ sécurité**.
+1. Connectez-vous au [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com) en tant **qu’administrateur** général * ou _*_Administrateur_ de sécurité **.
 
-2. Go to the [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in the Microsoft Defender portal.
+2. Go to the [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Centre de sécurité Microsoft Defender.
 
-3. Cliquez sur **Ajouter des paramètres d’exportation de données**.
+3. Cliquez sur **Ajouter des paramètres d’exportation de données.**
 
 4. Choisissez un nom pour vos nouveaux paramètres.
 
-5. **Sélectionnez Forward events to Azure Event Hubs**.
+5. Choose **Forward events to Azure Event Hubs**.
 
-6. Tapez le **nom de vos Hubs d’événements** et **votre ID de ressource Event Hubs**.
+6. Tapez **le nom de vos Hubs d’événements** et votre ID de ressource Event **Hubs.**
 
-   Pour obtenir votre **ID de ressource Event Hubs**, rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Des propriétés [Azure](https://ms.portal.azure.com/) > \> copiez le texte sous **ID de ressource** :
+   Pour obtenir votre ID de ressource **Event Hubs,** rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Des propriétés [Azure](https://ms.portal.azure.com/) > copiez le texte sous \> **L’ID** de ressource :
 
-   :::image type="content" source="images/event-hub-resource-id.png" alt-text="ID-1 de la ressource Event Hubs" lightbox="images/event-hub-resource-id.png":::
+   ![Image de l’ID1 de ressource du hub d’événements.](images/event-hub-resource-id.png)
 
-7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer**.
+7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Schéma des événements dans les Hubs d’événements Azure
 
-```json
+```text
 {
     "records": [
                     {
@@ -76,21 +78,21 @@ ms.locfileid: "64467904"
 
 - Chaque message de hub d’événements dans Azure Event Hubs contient la liste des enregistrements.
 
-- Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée « properties ».
+- Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
 
-- Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée](advanced-hunting-overview.md).
+- Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
-- Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations](machine-groups.md) , voir Groupes d’appareils.
+- Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations,](machine-groups.md) voir Groupes d’appareils.
 
 ## <a name="data-types-mapping"></a>Mappage des types de données
 
 Pour obtenir les types de données pour les propriétés d’événement, faites les choses suivantes :
 
-1. Connectez-vous [Microsoft 365 Defender](https://security.microsoft.com) et allez à la [page Recherche avancée](https://security.microsoft.com/hunting-package).
+1. Connectez-vous [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com) et allez à la [page Recherche avancée.](https://securitycenter.windows.com/hunting-package)
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
 
-   ```kusto
+   ```text
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
@@ -98,9 +100,9 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
 - Voici un exemple d’événement Device Info :
 
-  :::image type="content" source="images/machine-info-datatype-example.png" alt-text="ID de ressource Event Hubs-2" lightbox="images/machine-info-datatype-example.png":::
+  ![Image de l’ID2 de ressource du hub d’événements.](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)

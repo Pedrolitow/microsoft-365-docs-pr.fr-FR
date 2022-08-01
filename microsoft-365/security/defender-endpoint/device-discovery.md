@@ -1,14 +1,14 @@
 ---
 title: Vue d’ensemble de la découverte d’appareils
-description: Découvrez comment tirer parti de la découverte de points de terminaison dans Microsoft 365 Defender pour rechercher des appareils non gérés dans votre réseau
-keywords: détection d’appareil, détection, passif, proactif, réseau, visibilité, serveur, station de travail, appareils intégrés, appareils non gérés
+description: Découvrez comment tirer parti de la découverte de points de terminaison dans Microsoft 365 Defender pour rechercher des appareils non utilisés dans votre réseau
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: siosulli
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -16,144 +16,118 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 0fd0a6832400fd448f0ef7bfcf246c5b1a7f58bc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617301"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165389"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+- - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-La protection de votre environnement nécessite l’inventaire des appareils qui se trouvent dans votre réseau. Toutefois, le mappage des appareils d’un réseau peut souvent être coûteux, difficile et fastidieux.
+La protection de votre environnement nécessite d’inventorier les appareils qui se sont connectés à votre réseau. Toutefois, le mappage d’appareils dans un réseau peut souvent être coûteux, difficile et chronophage.
 
-Microsoft Defender pour point de terminaison fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non gérés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. La découverte d’appareils utilise des points de terminaison intégrés, dans votre réseau, pour collecter, sonder ou analyser votre réseau pour découvrir les appareils non gérés. La fonctionnalité de découverte d’appareils vous permet de découvrir :
+Microsoft Defender pour point de terminaison fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses.
 
-- Points de terminaison d’entreprise (stations de travail, serveurs et appareils mobiles) qui ne sont pas encore intégrés à Microsoft Defender pour point de terminaison
-- Appareils réseau tels que les routeurs et les commutateurs
-- Appareils IoT tels que les imprimantes et les caméras
+La fonctionnalité de découverte d’appareils vous permet de :
 
-Les appareils inconnus et non gérés présentent des risques significatifs pour votre réseau, qu’il s’agisse d’une imprimante non modifiée, d’appareils réseau avec des configurations de sécurité faibles ou d’un serveur sans contrôle de sécurité. Une fois les appareils découverts, vous pouvez :
+- **Découvrir les points de terminaison d’entreprise connectés à votre réseau d’entreprise**
 
-- Intégrer des points de terminaison non managés au service, ce qui augmente la visibilité de la sécurité sur ces derniers.
-- Réduisez la surface d’attaque en identifiant et en évaluant les vulnérabilités, et en détectant les lacunes de configuration.
+  À l’aide des options de découverte standard ou de base, vous pouvez découvrir les stations de travail, les serveurs et les points de terminaison mobiles qui ne sont pas encore intégrés à Microsoft Defender pour endpoint.
 
-Regardez cette vidéo pour obtenir une vue d’ensemble rapide de l’évaluation et de l’intégration d’appareils non gérés qui Microsoft Defender pour point de terminaison découverts.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
+- **Intégrer les points de terminaison découverts**
 
-Conjointement à cette fonctionnalité, une recommandation de sécurité pour intégrer des appareils à Microsoft Defender pour point de terminaison est disponible dans le cadre de l’expérience Gestion des menaces et des vulnérabilités existante.
+  Les points de terminaison non pris en compte dans votre réseau introduisent des vulnérabilités et des risques pour votre réseau. Leur intégration au service peut accroître leur visibilité sur la sécurité.
+
+
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide de la découverte d’appareils :
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+
+
+Parallèlement à cette fonctionnalité, une nouvelle recommandation de sécurité pour intégrer des appareils à Microsoft Defender pour le point de terminaison sera disponible dans le cadre de l’expérience de gestion des menaces et des vulnérabilités existante.
 
 ## <a name="discovery-methods"></a>Méthodes de découverte
 
-Vous pouvez choisir le mode de découverte à utiliser par vos appareils intégrés. Le mode contrôle le niveau de visibilité que vous pouvez obtenir pour les appareils non gérés dans votre réseau d’entreprise.
+Il existe deux modes de découverte :
 
-Deux modes de découverte sont disponibles :
-
-- **Découverte de base** : dans ce mode, les points de terminaison collectent passivement les événements de votre réseau et en extraient les informations de l’appareil. La découverte de base utilise le binaire SenseNDR.exe pour la collecte de données réseau passives et aucun trafic réseau n’est lancé. Les points de terminaison extraient simplement les données de chaque trafic réseau qui est vu par un appareil intégré. Avec la découverte de base, vous bénéficiez uniquement d’une visibilité limitée des points de terminaison non managés dans votre réseau.
-
-- **Découverte standard** (recommandée) : ce mode permet aux points de terminaison de rechercher activement des appareils dans votre réseau pour enrichir les données collectées et découvrir d’autres appareils, ce qui vous permet de créer un inventaire fiable et cohérent des appareils. Outre les appareils qui ont été observés à l’aide de la méthode passive, le mode standard tire également parti des protocoles de découverte courants qui utilisent des requêtes de multidiffusion dans le réseau pour rechercher encore plus d’appareils. Le mode Standard utilise une détection active et intelligente pour découvrir des informations supplémentaires sur les appareils observés afin d’enrichir les informations existantes sur les appareils. Lorsque le mode Standard est activé, l’activité réseau minimale et négligeable générée par le capteur de découverte peut être observée par les outils de surveillance réseau de votre organisation.
-
-Vous pouvez modifier et personnaliser vos paramètres de découverte. Pour plus d’informations, consultez [Configurer la découverte d’appareils](configure-device-discovery.md).
+- Découverte de base
+- Découverte standard (recommandé)
 
 > [!IMPORTANT]
-> La découverte standard est le mode par défaut pour tous les clients à compter du 19 juillet 2021. Vous pouvez choisir de remplacer cette configuration par une configuration de base via la page des paramètres. Si vous choisissez le mode de base, vous ne bénéficiez que d’une visibilité limitée des points de terminaison non managés dans votre réseau.
+> La découverte est définie sur le mode de base. Vous pouvez choisir de conserver cette configuration via la page paramètres. La découverte standard sera le mode par défaut pour tous les clients à partir du 19 juillet 2021, sauf modification via la page des paramètres avant cette date.
+
+
+Seuls les appareils observés par le mode de découverte de base sont activement sondés en mode standard.
+
+
+### <a name="basic-discovery"></a>Découverte de base
+
+Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et en extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré.
+
+### <a name="standard-discovery"></a>Découverte standard
+
+Ce mode permet aux points de terminaison de sonder activement les appareils observés dans le réseau pour enrichir les données collectées et découvrir d’autres appareils, ce qui vous aide à créer un inventaire fiable et cohérent des appareils. Le mode standard utilise l’analyse intelligente et active pour découvrir encore plus d’informations sur les appareils observés afin d’enrichir les informations d’appareil existantes. Le mode standard exploite également les protocoles de découverte courants qui utilisent des requêtes multidiffusion dans le réseau pour trouver encore plus d’appareils, en plus de ceux qui ont été ovédés à l’aide de la méthode passive.
+
+Lorsque le mode Standard est activé, une activité réseau minime et négligeable générée par le capteur de découverte peut être observée par les outils de surveillance réseau de votre organisation.
+
+ Si vous choisissez de ne pas activer ce mode, vous n’aurez qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
+
+La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+
+Vous pouvez modifier et personnaliser vos paramètres de découverte, pour plus d’informations, voir [Configurer la découverte d’appareils.](configure-device-discovery.md)
 
 > [!NOTE]
-> Le moteur de découverte fait la distinction entre les événements réseau reçus dans le réseau d’entreprise et en dehors du réseau d’entreprise. Les appareils qui ne sont pas connectés aux réseaux d’entreprise ne seront pas découverts ou répertoriés dans l’inventaire des appareils.
+> Le moteur de découverte fait la distinction entre les événements réseau reçus dans le réseau d’entreprise et en dehors du réseau d’entreprise. Les appareils qui ne sont pas connectés à des réseaux d’entreprise ne seront pas découverts ni répertoriés dans l’inventaire des appareils.
 
 ## <a name="device-inventory"></a>Inventaire des appareils
 
-Les appareils qui ont été découverts mais qui n’ont pas encore été intégrés et sécurisés par Microsoft Defender pour point de terminaison sont répertoriés dans l’inventaire des appareils sous l’onglet Ordinateurs et mobile.
+Les appareils qui ont été découverts mais qui n’ont pas encore été intégrés et sécurisés par Microsoft Defender pour le point de terminaison sont répertoriés dans l’inventaire des appareils dans l’onglet Points de terminaison. Vous pouvez désormais utiliser un nouveau filtre dans la liste d’inventaire des appareils appelé État d’intégration, qui peut avoir l’une des valeurs suivantes :
 
-Pour évaluer ces appareils, vous pouvez utiliser un filtre dans la liste d’inventaire des appareils appelé État d’intégration, qui peut avoir l’une des valeurs suivantes :
+- Intégré : le point de terminaison est intégré à Microsoft Defender pour le point de terminaison.
+- Peut être intégré : le point de terminaison a été découvert dans le réseau et le système d’exploitation a été identifié comme étant pris en charge par Microsoft Defender pour le point de terminaison, mais il n’est pas actuellement intégré. Nous vous recommandons vivement d’intégrer ces appareils.
+- Non pris en charge : le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour endpoint.
+- Informations insuffisantes : le système n’a pas pu déterminer la prise en charge de l’appareil. L’activation de la découverte standard sur d’autres appareils du réseau peut enrichir les attributs découverts.
 
-- Intégré : le point de terminaison est intégré à Microsoft Defender pour point de terminaison.
-- Peut être intégré : le point de terminaison a été découvert dans le réseau et le système d’exploitation a été identifié comme étant pris en charge par Microsoft Defender pour point de terminaison, mais il n’est pas actuellement intégré. Nous vous recommandons vivement d’intégrer ces appareils.
-- Non pris en charge : le point de terminaison a été découvert dans le réseau, mais n’est pas pris en charge par Microsoft Defender pour point de terminaison.
-- Informations insuffisantes : le système n’a pas pu déterminer la prise en charge de l’appareil. L’activation de la découverte standard sur plus d’appareils du réseau peut enrichir les attributs découverts.
-
-:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="Tableau de bord de l’inventaire des appareils" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
+![Image du tableau de bord d’inventaire des appareils.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
-> Vous pouvez toujours appliquer des filtres pour exclure les appareils non gérés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes d’API pour filtrer les appareils non gérés.
+> Vous pouvez toujours appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés.
 
-Pour plus d’informations, consultez [l’inventaire des appareils](machines-view-overview.md).
+## <a name="vulnerability-assessment-on-discovered-devices"></a>Évaluation de la vulnérabilité sur les appareils détectés
 
-## <a name="network-device-discovery"></a>Découverte d’appareils réseau
+Les vulnérabilités et les risques sur vos appareils, ainsi que d’autres périphériques non utilisés détectés dans le réseau font partie des flux TVM actuels sous « Recommandations de sécurité » et représentés dans les pages d’entité sur le portail.
+Recherchez les recommandations de sécurité « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés.
 
-Le grand nombre d’appareils réseau non managés déployés dans une organisation crée une grande surface d’attaque et représente un risque significatif pour l’ensemble de l’entreprise. Microsoft Defender pour point de terminaison fonctionnalités de découverte du réseau vous permettent de vous assurer que les appareils réseau sont découverts, classés avec précision et ajoutés à l’inventaire des ressources.
+![Image du tableau de bord recommandations en matière de sécurité.](images/1156c82ffadd356ce329d1cf551e806c.png)
 
-Les appareils réseau ne sont pas gérés en tant que points de terminaison standard, car Defender pour point de terminaison n’a pas de capteur intégré aux appareils réseau eux-mêmes. Ces types d’appareils nécessitent une approche sans agent dans laquelle une analyse à distance obtient les informations nécessaires auprès des appareils. Pour ce faire, un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses périodiques authentifiées des appareils réseau préconfigurés. Une fois découvertes, les fonctionnalités de Gestion des menaces et des vulnérabilités de Defender pour point de terminaison fournissent des workflows intégrés pour sécuriser les commutateurs, routeurs, contrôleurs WLAN, pare-feu et passerelles VPN détectés.
+## <a name="use-advanced-hunting-on-discovered-devices"></a>Utiliser le service de recherche avancée sur les appareils détectés
 
-Pour plus d’informations, consultez [Périphériques réseau](network-devices.md).
+Vous pouvez utiliser des requêtes de recherche avancée pour obtenir une visibilité sur les appareils détectés.
+Recherchez des détails sur les points de terminaison détectés dans la table DeviceInfo ou des informations réseau sur ces appareils dans la table DeviceNetworkInfo.
 
-## <a name="device-discovery-integrations"></a>Intégrations de découverte d’appareils
+![Image de l’utilisation avancée du chasse.](images/f48ba1779eddee9872f167453c24e5c9.png)
 
-Pour relever le défi d’obtenir suffisamment de visibilité pour localiser, identifier et sécuriser votre inventaire complet des ressources OT/IOT Microsoft Defender pour point de terminaison prend désormais en charge les intégrations suivantes :
+La découverte d’appareils tire parti de Microsoft Defender pour les appareils intégrés au point de terminaison en tant que source de données réseau pour attribuer des activités à des appareils non intégrés. Cela signifie que si un appareil intégré De Microsoft Defender pour point de terminaison a communiqué avec un appareil non intégré, les activités sur l’appareil non intégré peuvent être visibles sur la chronologie et via la table DeviceNetworkEvents de recherche avancée.
 
-- **Corelight** : Microsoft s’est associé à Corelight pour recevoir des données des appliances réseau Corelight. Cela offre Microsoft 365 Defender avec une visibilité accrue sur les activités réseau des appareils non managés, y compris la communication avec d’autres appareils non gérés ou des réseaux externes. Pour plus d’informations, consultez [Activer l’intégration des données Corelight](corelight-integration.md).
+Les nouveaux événements sont basés sur les connexions TCP (Transmission Control Protocol) et s’adaptent au schéma DeviceNetworkEvents actuel. L’entrée TCP vers l’appareil Microsoft Defender pour point de terminaison activé à partir d’un autre que Microsoft Defender pour point de terminaison est activée.
 
-- **Microsoft Defender pour IoT** : cette intégration combine les fonctionnalités de découverte d’appareils de Microsoft Defender pour point de terminaison, avec les fonctionnalités de surveillance sans agent de Microsoft Defender pour IoT, pour sécuriser les appareils IoT d’entreprise connectés à un réseau informatique (par exemple, VoIP (Voice over Internet Protocol), les imprimantes et les téléviseurs intelligents). Pour plus d’informations, consultez [Activer l’intégration de Microsoft Defender pour IoT](enable-microsoft-defender-for-iot-integration.md).
-
-## <a name="vulnerability-assessment-on-discovered-devices"></a>Évaluation des vulnérabilités sur les appareils découverts
-
-Les vulnérabilités et les risques sur vos appareils, ainsi que sur d’autres appareils non gérés détectés dans le réseau, font partie des flux TVM actuels sous « Recommandations de sécurité » et sont représentés dans les pages d’entité sur le portail.
-Recherchez les recommandations de sécurité liées à « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés.
-
-:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Tableau de bord des recommandations de sécurité" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
-
-## <a name="use-advanced-hunting-on-discovered-devices"></a>Utiliser la chasse avancée sur les appareils découverts
-
-Vous pouvez utiliser des requêtes de chasse avancées pour obtenir une visibilité sur les appareils découverts. Recherchez des détails sur les appareils découverts dans la table DeviceInfo, ou des informations relatives au réseau sur ces appareils, dans la table DeviceNetworkInfo.
-
-:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Page De repérage avancé sur laquelle les requêtes peuvent être utilisées" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
-
-### <a name="query-discovered-devices-details"></a>Détails de la requête sur les appareils découverts
-
-Exécutez cette requête sur la table DeviceInfo pour retourner tous les appareils découverts, ainsi que les détails les plus récents pour chaque appareil :
-
-```query
-DeviceInfo
-| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
-| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded"
-```
-
-En appelant la fonction **SeenBy** , dans votre requête de repérage avancée, vous pouvez obtenir des détails sur l’appareil intégré sur lequel un appareil découvert a été vu. Ces informations peuvent vous aider à déterminer l’emplacement réseau de chaque appareil découvert et, par la suite, à l’identifier dans le réseau.
-
-```query
-DeviceInfo
-| where OnboardingStatus != "Onboarded"
-| summarize arg_max(Timestamp, *) by DeviceId 
-| where isempty(MergedToDeviceId) 
-| limit 100
-| invoke SeenBy()
-| project DeviceId, DeviceName, DeviceType, SeenBy
-```
-
-Pour plus d’informations, consultez la fonction [SeenBy().](/microsoft-365/security/defender/advanced-hunting-seenby-function)
-
-### <a name="query-network-related-information"></a>Interroger les informations relatives au réseau
-
-La découverte d’appareils tire parti Microsoft Defender pour point de terminaison appareils intégrés en tant que source de données réseau pour attribuer des activités à des appareils non intégrés. Le capteur réseau sur le Microsoft Defender pour point de terminaison appareil intégré identifie deux nouveaux types de connexion :
+Les types d’action suivants ont également été ajoutés :
 
 - ConnectionAttempt : tentative d’établissement d’une connexion TCP (syn)
-- ConnectionAcknowledged - Un accusé de réception indiquant qu’une connexion TCP a été acceptée (syn\ack)
+- ConnectionAcknowledged : accusé de réception de l’acceptation d’une connexion TCP (syn\ack)
 
-Cela signifie que lorsqu’un appareil non intégré tente de communiquer avec un appareil Microsoft Defender pour point de terminaison intégré, la tentative génère un DeviceNetworkEvent et les activités de l’appareil non intégré peuvent être affichées dans la chronologie de l’appareil intégré et via la table DeviceNetworkEvents de repérage avancé.
-
-Vous pouvez essayer cet exemple de requête :
+Vous pouvez essayer cette requête d’exemple :
 
 ```text
 DeviceNetworkEvents
@@ -161,7 +135,17 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="changed-behavior"></a>Comportement modifié
+
+La section suivante répertorie les modifications que vous observerez dans Microsoft Defender pour le point de terminaison et le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender lorsque</a> cette fonctionnalité est activée.
+
+1. Les appareils qui ne sont pas intégrés à Microsoft Defender pour le point de terminaison sont censés apparaître dans l’inventaire des appareils, le recherche avancée et les requêtes API. Cela peut augmenter considérablement la taille des résultats de la requête.
+    1. Les tables « DeviceInfo » et « DeviceNetworkInfo » dans la recherche avancée vont maintenant contenir l’appareil détecté. Vous pouvez filtrer ces appareils à l’aide de l’attribut « OnboardingStatus ».
+    2. Les appareils détectés sont censés apparaître dans les résultats de requête de l’API de diffusion en continu. Vous pouvez filtrer ces appareils à l’aide `OnboardingStatus` du filtre dans votre requête.
+2. Les appareils non utilisés seront affectés à des groupes d’appareils existants en fonction des critères définis.
+3. Dans de rares cas, la découverte standard peut déclencher des alertes sur les moniteurs réseau ou les outils de sécurité. Veuillez nous faire part de vos commentaires, si vous faites l’expérience de tels événements, afin d’éviter que ces problèmes ne se répètent. Vous pouvez exclure explicitement des cibles spécifiques ou des sous-réseaux entiers d’être activement sondés par la découverte standard.
+
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Configurer la découverte d’appareils](configure-device-discovery.md)
 - [FAQ sur la découverte d’appareils](device-discovery-faq.md)

@@ -1,60 +1,63 @@
 ---
-title: Gérer Microsoft Defender pour point de terminaison plan 1
-description: Gérer et mettre à jour Defender pour point de terminaison Plan 1. Gérez les paramètres, obtenez des mises à jour et traitez les faux positifs/négatifs.
+title: Gérer Microsoft Defender pour Endpoint Plan 1
+description: Gérer et mettre à jour Defender pour Endpoint Plan 1. Gérer les paramètres, obtenir des mises à jour et corriger les faux positifs/négatifs.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 11/19/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 417dd33eed846e45453464e63ff403374ce224dc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e6ad08a26d50f99fd0d11423596a70752348dfba
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667403"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164417"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Gérer Microsoft Defender pour point de terminaison plan 1
+# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Gérer Microsoft Defender pour Endpoint Plan 1
 
 **S’applique à**
-- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Lorsque vous utilisez Defender pour point de terminaison Plan 1 dans votre organisation, votre équipe de sécurité peut prendre certaines mesures pour maintenir votre solution de sécurité. Lorsque votre équipe de sécurité met en place votre plan de maintenance et d’exploitation, veillez à inclure au moins les activités suivantes :
+> [!TIP]
+> Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
 
-- [Gérer les mises à jour des informations de sécurité et des produits](#manage-security-intelligence-and-product-updates)
-- [Ajuster et ajuster Defender pour point de terminaison](#fine-tune-and-adjust-defender-for-endpoint)
-- [Résoudre les faux positifs/négatifs](#address-false-positivesnegatives)
+Lorsque vous utilisez Defender pour endpoint Plan 1 dans votre organisation, votre équipe de sécurité peut prendre certaines mesures pour maintenir votre solution de sécurité. Lorsque votre équipe de sécurité réunit votre plan de maintenance et d’exploitation, veillez à inclure au moins les activités suivantes :
 
-## <a name="manage-security-intelligence-and-product-updates"></a>Gérer les mises à jour des informations de sécurité et des produits
+- [Gérer les informations de sécurité et les mises à jour des produits](#manage-security-intelligence-and-product-updates)
+- [Ajuster et ajuster Defender pour le point de terminaison](#fine-tune-and-adjust-defender-for-endpoint)
+- [Corriger les faux positifs/négatifs](#address-false-positivesnegatives)
 
-Il est essentiel de maintenir Antivirus Microsoft Defender à jour pour la protection contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Microsoft publie des mises à jour régulières pour la protection contre les logiciels malveillants, antivirus et de sécurité. Les mises à jour sont organisées en deux catégories : 
+## <a name="manage-security-intelligence-and-product-updates"></a>Gérer les informations de sécurité et les mises à jour des produits
 
-- Mises à jour du renseignement de sécurité
-- Mises à jour du produit 
+Le Antivirus Microsoft Defender à jour est essentiel pour la protection contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Microsoft publie des mises à jour régulières pour l’intelligence de la sécurité, les antivirus et la protection contre les programmes malveillants. Les mises à jour sont organisées en deux catégories : 
 
-Pour gérer vos mises à jour de produits et d’informations de sécurité, consultez [Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).
+- Mises à jour de l’intelligence de la sécurité
+- Mises à jour de produit 
 
-## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Ajuster et ajuster Defender pour point de terminaison
+Pour gérer votre veille sur la sécurité et les mises à jour de produit, voir Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-Defender pour point de terminaison vous offre beaucoup de flexibilité et d’options de configuration. Vous pouvez ajuster et ajuster vos paramètres en fonction des besoins de votre organisation. Par exemple, vous pouvez utiliser Microsoft Endpoint Manager, stratégie de groupe et d’autres méthodes pour gérer vos paramètres de sécurité de point de terminaison. 
+## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Ajuster et ajuster Defender pour le point de terminaison
 
-Pour plus d’informations, consultez [Gérer Defender pour point de terminaison](manage-mde-post-migration.md).
+Defender pour le point de terminaison vous offre beaucoup de flexibilité et d’options de configuration. Vous pouvez ajuster et ajuster vos paramètres en fonction des besoins de votre organisation. Par exemple, vous pouvez utiliser Microsoft Endpoint Manager, une stratégie de groupe et d’autres méthodes pour gérer vos paramètres de sécurité de point de terminaison. 
 
-## <a name="address-false-positivesnegatives"></a>Résoudre les faux positifs/négatifs
+Pour plus d’informations, [voir Gérer Defender pour endpoint.](manage-atp-post-migration.md)
 
-Un faux positif est un artefact, tel qu’un fichier ou un processus, qui a été détecté comme malveillant, même s’il ne s’agit pas réellement d’une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle l’est réellement. Des faux positifs/négatifs peuvent se produire avec n’importe quelle solution endpoint protection, y compris Defender pour point de terminaison. Toutefois, vous pouvez prendre des mesures pour résoudre ces types de problèmes et affiner votre solution, comme illustré dans l’image suivante :
+## <a name="address-false-positivesnegatives"></a>Corriger les faux positifs/négatifs
 
-:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="Vue d’ensemble du processus faux positifs et négatifs" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
+Un faux positif est un artefact, tel qu’un fichier ou un processus, qui a été détecté comme malveillant, même s’il ne s’agit pas réellement d’une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle l’est réellement. Les faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection de point de terminaison, y compris Defender pour le point de terminaison. Toutefois, vous pouvez prendre des mesures pour résoudre ces types de problèmes et affiner votre solution, comme le montre l’image suivante :
 
-Si vous voyez des faux positifs/négatifs dans Defender pour point de terminaison, consultez [Adresse des faux positifs/négatifs dans Microsoft Defender pour point de terminaison](defender-endpoint-false-positives-negatives.md).
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="Vue d’ensemble du processus faux positifs et négatifs":::
+
+Si vous voyez des faux positifs/négatifs dans Defender pour le point de terminaison, consultez Adresse [faux positifs/négatifs dans Microsoft Defender pour point de terminaison.](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Découvrez les nouveautés de Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-endpoint.md)
+- [Découvrez les nouveautés de Microsoft Defender pour le point de terminaison](whats-new-in-microsoft-defender-atp.md)

@@ -1,8 +1,9 @@
 ---
 title: API de recherche avancée de menaces
 ms.reviewer: ''
-description: Apprenez à utiliser l’API de chasse avancée pour exécuter des requêtes avancées sur Microsoft Defender pour point de terminaison. Découvrez les limitations et consultez un exemple.
-keywords: api, api prises en charge, repérage avancé, requête
+description: Découvrez comment utiliser l’API de recherche avancée pour exécuter des requêtes avancées sur Microsoft Defender for Endpoint. Découvrez les limitations et consultez un exemple.
+keywords: api, api pris en charge, recherche avancée, requête
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +17,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3a916f3fe15e979f6d432e3a834453b04afe5a63
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 0e77e0658ae4eda969a16043170a026cd1784825
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051775"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168029"
 ---
-# <a name="advanced-hunting-api"></a>API de chasse avancée
+# <a name="advanced-hunting-api"></a>API de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :** 
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -37,39 +38,36 @@ ms.locfileid: "67051775"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-> [!NOTE]
-> Cette API peut uniquement interroger des tables appartenant à Microsoft Defender pour point de terminaison. Les tables appartenant à d’autres services Microsoft 365 Defender nécessitent l’utilisation de [l’API de chasse avancée Microsoft 365 Defender](/microsoft-365/security/defender/api-advanced-hunting).
-
 ## <a name="limitations"></a>Limites
 
-1. Vous ne pouvez exécuter une requête que sur les données des 30 derniers jours.
+1. Vous pouvez uniquement exécuter une requête sur les données des 30 derniers jours.
 
 2. Les résultats incluent un maximum de 100 000 lignes.
 
-3. Le nombre d’exécutions est limité par locataire :
+3. Le nombre d’exécutions est limité par client :
    - Appels d’API : jusqu’à 45 appels par minute, jusqu’à 1 500 appels par heure.
-   - Durée d’exécution : 10 minutes de temps d’exécution toutes les heures et 3 heures d’exécution par jour.
+   - Durée d’exécution : 10 minutes d’exécution toutes les heures et 3 heures d’exécution par jour.
 
-4. Le temps d’exécution maximal d’une requête unique est de 200 secondes.
+4. La durée d’exécution maximale d’une seule demande est de 10 minutes.
 
-5. La réponse 429 représente l’atteinte de la limite de quota par nombre de demandes ou par processeur. Lisez le corps de la réponse pour comprendre quelle limite a été atteinte.
+5. La réponse 429 représente l’atteinte de la limite de quota par nombre de demandes ou par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte.
 
-6. La taille maximale du résultat d’une requête ne peut pas dépasser 124 Mo. Si la valeur est dépassée, http 400 Demande incorrecte avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimiser votre requête en limitant le nombre de résultats et réessayer » s’affiche.
+6. La taille maximale des résultats d’une requête ne peut pas dépasser 124 Mo. S’il est dépassé, http 400 demande non autorisée avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimisez votre requête en limitant la quantité de résultats et essayez à nouveau ».
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|AdvancedQuery.Read.All|'Exécuter des requêtes avancées'
-Déléguée (compte professionnel ou scolaire)|AdvancedQuery.Read|'Exécuter des requêtes avancées'
+Application|AdvancedQuery.Read.All|« Exécuter des requêtes avancées »
+Déléguée (compte professionnel ou scolaire)|AdvancedQuery.Read|« Exécuter des requêtes avancées »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir le rôle AD « Afficher les données »
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -86,11 +84,11 @@ Content-Type|application/json
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
+Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
 Paramètre|Type|Description
 :---|:---|:---
-Requête|Text|Requête à exécuter. **Obligatoire**.
+Requête|Texte|Requête à exécuter. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
@@ -121,7 +119,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 Voici un exemple de réponse.
 
 > [!NOTE]
-> L’objet de réponse présenté ici peut être tronqué par souci de concision. Toutes les propriétés sont renvoyées à partir d’un appel réel.
+> L’objet de réponse illustré ici peut être tronqué pour des raisons de concision. Toutes les propriétés sont renvoyées à partir d’un appel réel.
 
 ```json
 {
@@ -160,8 +158,8 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [présentation des API Microsoft Defender pour point de terminaison](apis-intro.md)
-- [Repérage avancé à partir du portail](advanced-hunting-query-language.md)
+- [Présentation des API Microsoft Defender pour les points de terminaison](apis-intro.md)
+- [Recherche avancée à partir du portail](advanced-hunting-query-language.md)
 - [Repérage avancé à l’aide de PowerShell](run-advanced-query-sample-powershell.md)

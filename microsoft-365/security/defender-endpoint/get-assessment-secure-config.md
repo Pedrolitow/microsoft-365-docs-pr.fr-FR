@@ -1,7 +1,8 @@
 ---
 title: Exporter l’évaluation de la configuration sécurisée par appareil
-description: Retourne une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+description: Renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
+keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,64 +16,63 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6d706dc8552490b7705cc23fca4751f810211d47
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: dd7e05b404fe859377300eb80b0efddcd355e5a3
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839284"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165053"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Retourne toutes les configurations et leur état, par appareil.
+Renvoie toutes les configurations et leur état, par appareil.
 
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
-- [Exporter la **réponse JSON** d’évaluation de la configuration sécurisée](#1-export-secure-configuration-assessment-json-response) : l’API extrait toutes les données de votre organisation en tant que réponses Json. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
+- [Exporter la réponse **JSON** d’évaluation](#1-export-secure-configuration-assessment-json-response)de la configuration sécurisée : l’API tire toutes les données de votre organisation en tant que réponses Json. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
-- [Exporter l’évaluation de la configuration sécurisée **via des fichiers**](#2-export-secure-configuration-assessment-via-files) : cette solution API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit :
+- [Exporter l’évaluation de la configuration **sécurisée via des fichiers**](#2-export-secure-configuration-assessment-via-files): cette solution API permet d’obtenir plus de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
 
-  - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.
+  - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
 
-Les données collectées (à l’aide d’une _réponse JSON_ ou _par le biais de fichiers_) sont l’instantané actuel de l’état actuel et ne contiennent pas de données historiques. Pour collecter des données historiques, les clients doivent enregistrer les données dans leurs propres stockages de données.
+Les données collectées (à l’aide de la réponse _JSON_ ou _via_ des fichiers) sont l’instantané actuel de l’état actuel et ne contiennent pas de données historiques. Pour collecter des données historiques, les clients doivent les enregistrer dans leurs propres stockages de données.
 
 > [!NOTE]
-> Sauf indication contraire, toutes les méthodes d’évaluation d’exportation répertoriées sont **_l’exportation complète_** et **_par appareil_** (également appelée **_par appareil_**).
+> Sauf indication contraire, toutes les méthodes **** d’évaluation d’exportation répertoriées sont l’exportation complète et par appareil **_(également_** appelé **_par appareil)._**
 
 ## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exporter l’évaluation de la configuration sécurisée (réponse JSON)
 
-### <a name="11-api-method-description"></a>Description de la méthode d’API 1.1
+### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
 
-Cette réponse d’API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et retourne une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
+Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
 #### <a name="111-limitations"></a>1.1.1 Limitations
 
-- La taille maximale de la page est de 200 000.
+- La taille maximale de page est de 200 000.
 
-- Les limites de débit pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
+- Les limites de taux pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
 
 ### <a name="12-permissions"></a>1.2 Autorisations
 
-L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Vulnerability.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
-### <a name="13-url"></a>URL 1.3
+### <a name="13-url"></a>1.3 URL
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentByMachine
@@ -80,41 +80,41 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ### <a name="14-parameters"></a>1.4 Paramètres
 
-- pageSize \(default = 50 000\) : nombre de résultats en réponse.
-- \$top : le nombre de résultats à retourner \(ne retourne \@pas odata.nextLink et n’extrait donc pas toutes les données\).
+- pageSize \( par défaut = 50 000 : nombre de résultats en \) réponse.
+- \$top : le nombre de résultats à renvoyer ne \( retourne \@ pas odata.nextLink et, par conséquent, ne tire pas toutes les \) données.
 
 ### <a name="15-properties"></a>1.5 Propriétés
 
 > [!NOTE]
 >
-> - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement retournée dans le même ordre que celui répertorié dans ce tableau.
-> - Certaines colonnes supplémentaires peuvent être retournées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
+> - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
+> - Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 
 <br>
 
 ****
 
-Propriété (ID)|Type de données|Description|Exemple de valeur retournée
+Propriété (ID)|Type de données|Description|Exemple de valeur renvoyée
 ---|---|---|---
 ConfigurationCategory|string|Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité|Contrôles de sécurité
 ConfigurationId|string|Identificateur unique pour une configuration spécifique|scid-10000
 ConfigurationImpact|string|Impact nominal de la configuration sur la note de configuration globale (1-10)|9 
 ConfigurationName|string|Nom d’affichage de la configuration|Intégrer des appareils à Microsoft Defender pour point de terminaison
-ConfigurationSubcategory|string|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques.|Intégrer des appareils
+ConfigurationSubcategory|string|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques.|Appareils intégrés
 DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 IsApplicable|bool|Indique si la configuration ou la stratégie est applicable|true
 IsCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.|false
-IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration sera appliquée|true
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.|Windows 10 et Windows 11
-RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
-RecommandationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|sca-_-scid-20000
+IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée|true
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10
+RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
+RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|sca-_-scid-20000
 Timestamp|string|Dernière fois que la configuration a été vue sur l’appareil|2020-11-03 10:13:34.8476880
 |
 
 ### <a name="16-examples"></a>1.6 Exemples
 
-#### <a name="161-request-example"></a>Exemple de demande 1.6.1
+#### <a name="161-request-example"></a>1.6.1 Exemple de requête
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAssessmentByMachine?pageSize=5
@@ -130,7 +130,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10" "Windows11",
+            "osPlatform": "Windows10",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -147,7 +147,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10" "Windows11",
+            "osPlatform": "Windows10",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-20000",
@@ -164,7 +164,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10" "Windows11",
+            "osPlatform": "Windows10",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -181,7 +181,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
+            "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-39",
@@ -198,7 +198,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
+            "osPlatform": "Windows10",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-6093",
@@ -218,24 +218,24 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## <a name="2-export-secure-configuration-assessment-via-files"></a>2. Exporter l’évaluation de la configuration sécurisée (via des fichiers)
 
-### <a name="21-api-method-description"></a>Description de la méthode API 2.1
+### <a name="21-api-method-description"></a>Description de la méthode api 2.1
 
-Cette réponse d’API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et retourne une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
+Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
 #### <a name="212-limitations"></a>2.1.2 Limitations
 
-Les limites de débit pour cette API sont de 5 appels par minute et de 20 appels par heure.
+Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels par heure.
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
-Application|Vulnerability.Read.All|\'Lire les informations de vulnérabilité « Gestion des menaces et des vulnérabilités »\'
-Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations de vulnérabilité « Gestion des menaces et des vulnérabilités »\'
+Application|Vulnerability.Read.All|\'Lire les informations Gestion des menaces et des vulnérabilités vulnérabilité « Gestion des menaces et des vulnérabilités »\'
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations Gestion des menaces et des vulnérabilités vulnérabilité « Gestion des menaces et des vulnérabilités »\'
 
-### <a name="23-url"></a>URL 2.3
+### <a name="23-url"></a>2.3 URL
 
 ```http
 GET /api/machines/SecureConfigurationsAssessmentExport
@@ -243,24 +243,24 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>Paramètres
 
-- sasValidHours : nombre d’heures pendant lesquelles les URL de téléchargement sont valides (maximum 24 heures).
+- sasValidHours : nombre d’heures de validité des URL de téléchargement (maximum 24 heures).
 
 ### <a name="25-properties"></a>2.5 Propriétés
 
 > [!NOTE]
 >
-> - Les fichiers sont compressés par gzip & au format Json multiligne.
-> - Les URL de téléchargement ne sont valides que pendant 3 heures ; sinon, vous pouvez utiliser le paramètre.
-> - Pour une vitesse de téléchargement maximale de vos données, vous pouvez vous assurer que vous téléchargez à partir de la même région Azure dans laquelle se trouvent vos données.
+> - Les fichiers sont compressés gzip & au format Json multiligne.
+> - Les URL de téléchargement ne sont valides que pendant 3 heures . Sinon, vous pouvez utiliser le paramètre.
+> - Pour une vitesse de téléchargement maximale de vos données, vous pouvez vous assurer que vous téléchargez à partir de la même région Azure dans laquelle résident vos données.
 
 <br>
 
 ****
 
-Propriété (ID)|Type de données|Description|Exemple de valeur retournée
+Propriété (ID)|Type de données|Description|Exemple de valeur renvoyée
 ---|---|---|---
-Exporter des fichiers|chaîne de tableau\[\]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|Heure à laquelle l’exportation a été générée.|2021-05-20T08:00:00Z
+Exporter des fichiers|chaîne de \[ tableau\]|Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+GeneratedTime|string|Heure de la générer.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Exemples
@@ -287,11 +287,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Exporter des méthodes et des propriétés d’évaluation par appareil](get-assessment-methods-properties.md)
+- [Exporter les méthodes et propriétés d’évaluation par appareil](get-assessment-methods-properties.md)
 - [Exporter l’évaluation de l’inventaire logiciel par appareil](get-assessment-software-inventory.md)
 - [Exporter l’évaluation des vulnérabilités logicielles par appareil](get-assessment-software-vulnerabilities.md)
 
-Autres éléments connexes
+Autres associés
 
-- [& gestion des vulnérabilités de menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4b6360fd62eab766614ae9e0d2da76042cab6df6
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: cef91fd3aabb8d857abe8386933c986d62953c42
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020492"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "66991897"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Liste des configurations d’évaluation des lignes de base de sécurité
 
@@ -32,7 +32,7 @@ ms.locfileid: "67020492"
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? En savoir plus sur la façon dont vous pouvez vous inscrire à la [Gestion des vulnérabilités Microsoft Defender préversion publique](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? [Inscrivez-vous à un essai gratuit.- Mise à jour](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## <a name="1-get-all-security-baselines-assessment-configurations"></a>1. Obtenir toutes les configurations d’évaluation des bases de référence de sécurité
 

@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c1ff743aa6c9c215c3894185a4096c9a35a16e0
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 934710a77b2d41623be4546c2cac2eb01ed1d400
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320826"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168449"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Azure Active Directory
 - Office 365
 
@@ -66,7 +66,7 @@ Avant d’utiliser le RBAC, il est important de comprendre les rôles qui peuven
 
 Lorsque vous vous connectez pour la première fois au portail Microsoft 365 Defender, l’accès total ou l’accès en lecture seule vous est accordé. Les droits d’accès total sont accordés aux utilisateurs ayant des rôles Administrateur de sécurité ou Administrateur général dans Azure AD. L’accès en lecture seule est accordé aux utilisateurs ayant un rôle lecteur de sécurité dans Azure AD. 
 
-Une personne ayant un rôle d’administrateur général Defender pour point de terminaison dispose d’un accès illimité à tous les appareils, quelle que soit l’association de leur groupe d’appareils et les Azure AD groupes d’utilisateurs.
+Une personne ayant un rôle d’administrateur général Defender pour point de terminaison dispose d’un accès illimité à tous les appareils, quelle que soit l’association de leur groupe d’appareils et les affectations des groupes d’Azure AD utilisateurs
 
 > [!WARNING]
 > À l’origine, seules les personnes ayant des droits d’administrateur général ou d’administrateur de sécurité Azure AD pourront créer et attribuer des rôles dans le portail Microsoft 365 Defender. Par conséquent, il est important de disposer des groupes prêts dans Azure AD.

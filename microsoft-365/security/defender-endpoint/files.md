@@ -2,6 +2,7 @@
 title: Type de ressource Fichier
 description: Récupérer les alertes récentes de Microsoft Defender for Endpoint relatives aux fichiers.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: aa1eaf1cf26af415d134c6a8f0faed5643e787b5
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283484"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167801"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
@@ -28,8 +29,8 @@ ms.locfileid: "61283484"
 
 
 **S’applique à :** 
-- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -43,7 +44,7 @@ Représente une entité de fichier dans Defender pour le point de terminaison.
 
 Méthode|Type renvoyé |Description
 :---|:---|:---
-[Obtenir un fichier](get-file-information.md) | [fichier](files.md) | Obtenir un fichier unique 
+[Obtenir un fichier](get-file-information.md) | [file](files.md) | Obtenir un fichier unique 
 [Liste des alertes associées au fichier](get-file-related-alerts.md) | collection[alert](alerts.md) | Obtenez les [entités](alerts.md) d’alerte associées au fichier.
 [List file related machines](get-file-related-machines.md) | [collection d’ordinateurs](machine.md) | Obtenez les [entités de](machine.md) l’ordinateur associées à l’alerte.
 [statistiques de fichier](get-file-statistics.md) | Résumé des statistiques | Récupère la prévalence du fichier donné.
@@ -60,7 +61,7 @@ Méthode|Type renvoyé |Description
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
 |taille | Nullable long | Taille du fichier |
 |fileType | String | Type du fichier |
-|isPeFile | Booléen | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
+|isPeFile | Boolean | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
 |filePublisher | String | Éditeur de fichiers |
 |fileProductName | String | Nom du produit |
 |signataire | String | Signataire de fichiers |

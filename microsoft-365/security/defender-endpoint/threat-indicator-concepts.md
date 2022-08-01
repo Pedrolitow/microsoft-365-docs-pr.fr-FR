@@ -2,6 +2,8 @@
 title: Comprendre les concepts d’intelligence contre les menaces dans Microsoft Defender pour point de terminaison
 description: Créer des alertes contre les menaces personnalisées pour votre organisation et découvrir les concepts liés à l’intelligence des menaces dans Microsoft Defender for Endpoint
 keywords: intelligence contre les menaces, définitions d’alertes, indicateurs de compromis, ioc
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 440f788c4adb757013611bb05621b4eb4f4e9715
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 07de6f1306da5c6eb267f6c8a7bf288403c080ff
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302445"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165725"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprendre les concepts de veille des menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -59,5 +61,5 @@ Voici un exemple d’IOC :
 Les IOC ont une relation plusieurs-à-un avec des définitions d’alertes de telle façon qu’une définition d’alerte peut avoir de nombreux IOC qui lui correspondent.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Gérer des indicateurs](manage-indicators.md)

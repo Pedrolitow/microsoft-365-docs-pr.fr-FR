@@ -2,6 +2,7 @@
 title: Obtenir des informations sur l’ordinateur associé à une alerte
 description: Récupérez tous les appareils associés à une alerte spécifique à l’aide de Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir des informations d’alerte, informations d’alerte, appareil associé
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cd6ec0ded2ee76f6d348bc054ee1aeaacbd2d022
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 43f20918fbef00b97bcd5177330fbafc57be912c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283880"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168197"
 ---
 # <a name="get-alert-related-machine-information-api"></a>API Obtenir les informations sur l’ordinateur associé à une alerte
 
@@ -28,8 +29,8 @@ ms.locfileid: "61283880"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -105,7 +106,7 @@ Voici un exemple de réponse.
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2021-01-25T07:27:36.052313Z",
-    "osPlatform": "Windows10" "Windows11", 
+    "osPlatform": "Windows10",
     "osProcessor": "x64",
     "version": "1901",
     "lastIpAddress": "10.166.113.46",

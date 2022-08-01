@@ -2,6 +2,7 @@
 title: API d’indicateur d’soumission ou de mise à jour
 description: Découvrez comment utiliser l’API d’indicateur d’soumission ou de mise à jour pour soumettre ou mettre à jour une nouvelle entité d’indicateur dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, envoyer, ti, indicateur, mettre à jour
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,21 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a3fc1a0ce2f7d02ad8ed6804b99621f78fb859d3
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: b7be84565c45263ef27f1e36da154a70c73956d0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214224"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166097"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -53,7 +54,7 @@ La notation CIDR pour les IPs n’est pas prise en charge.
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
 
-Type d’autorisation|Permission|Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
 Application|Ti.ReadWrite|« Lire et écrire des indicateurs »
 Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
@@ -69,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -78,17 +79,17 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre|Type|Description
 :---|:---|:---
-indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorValue|String|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileMd5 », « CertificateThumbprint », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « Warn », « Block », « Audit », « BlockAndRemediate », « AlertAndBlock » et « Allowed ». **Obligatoire**. Le paramètre GenerateAlert doit avoir la valeur « TRUE » lors de la création d’une action avec « Audit ».
-application|Chaîne|Application associée à l’indicateur. Ce champ fonctionne uniquement pour les nouveaux indicateurs. Il ne met pas à jour la valeur d’un indicateur existant. **Optional**
+application|String|Application associée à l’indicateur. Ce champ fonctionne uniquement pour les nouveaux indicateurs. Il ne met pas à jour la valeur d’un indicateur existant. **Optional**
 title|String|Titre de l’alerte de l’indicateur. **Obligatoire**
-description|Chaîne|Description de l’indicateur. **Obligatoire**
+description|String|Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur. **Optional**
-Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
-generateAlert|Énum|**True si** la génération d’alerte est **requise, False** si cet indicateur ne doit pas générer d’alerte.
+Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
+recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+rbacGroupNames|String|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
+
 ## <a name="response"></a>Réponse
 
 - Si elle réussit, cette méthode renvoie le code de réponse [](ti-indicator.md) 200 - OK et l’entité d’indicateur créée/mise à jour dans le corps de la réponse.

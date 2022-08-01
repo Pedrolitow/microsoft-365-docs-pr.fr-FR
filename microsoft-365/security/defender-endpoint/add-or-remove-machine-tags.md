@@ -2,6 +2,7 @@
 title: API Ajouter ou supprimer des balises d’ordinateur
 description: Découvrez comment utiliser l’API Ajouter ou supprimer des balises d’ordinateur pour ajouter ou supprimer une balise pour un ordinateur dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, balises, balises d’ordinateur
+search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ec34011d00e77c5e32f58567a0b705cf7c0dc1c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 355b3360fd4a36e762cd834c3460b7884fe37f87
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301124"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166553"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>API Ajouter ou supprimer des balises d’ordinateur
 
@@ -81,7 +82,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre|Type|Description
 :---|:---|:---
-Valeur|Chaîne|Nom de la balise. **Obligatoire**.
+Valeur|String|Nom de la balise. **Obligatoire**.
 Action|Énum|Ajouter ou supprimer. Les valeurs autorisées sont : « Ajouter » ou « Supprimer ». **Obligatoire**.
 
 ## <a name="response"></a>Réponse
