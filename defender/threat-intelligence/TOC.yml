@@ -1,2 +1,33 @@
-- name: Index
-  href: index.md
+- name: Vue d’ensemble
+  expanded: true
+  items:
+    - name: Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?
+      href: what-is-microsoft-defender-threat-intelligence-defender-tI.md
+    - name: Jeux de données
+      href: data-sets.md
+    - name: Score de réputation
+      href: reputation-scoring.md
+    - name: Insights des analystes
+      href: analyst-insights.md
+- name: Concept
+  items:
+    - name: Chaînage d’infrastructure
+      href: infrastructure-chaining.md
+- name: Démarrage rapide
+  items:
+    - name: Découvrez comment accéder à Microsoft Defender Threat Intelligence et effectuer des personnalisations dans votre portail
+      href: learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md
+- name: Rubriques de procédures
+  items:
+    - name: Recherche et pivotage
+      href: searching-and-pivoting.md
+    - name: 'Tri, filtrage et téléchargement de données'
+      href: sorting-filtering-and-downloading-data.md
+    - name: Utilisation de balises
+      href: using-tags.md
+    - name: Utilisation de projets
+      href: using-projects.md
+- name: Didacticiels
+  items:
+    - name: Collecte des informations sur les menaces et chaînage d’infrastructure
+      href: gathering-threat-intelligence-and-infrastructure-chaining.md
