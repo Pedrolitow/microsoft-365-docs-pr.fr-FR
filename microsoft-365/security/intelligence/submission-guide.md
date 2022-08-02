@@ -15,24 +15,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: df2ab2b2019bb76af49f00d2751cdc76848705d1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663597"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112040"
 ---
 # <a name="submit-files-for-analysis"></a>Envoyer des fichiers à analyser
 
 Si vous avez un fichier que vous soupçonnez être un programme malveillant ou est mal détecté, vous pouvez nous le soumettre à des fins d’analyse. Cette page contient des réponses à certaines questions courantes sur l’envoi d’un fichier à des fins d’analyse.
 
-## <a name="how-do-i-send-a-malware-file-to-microsoft"></a>Comment faire envoyer un fichier de programmes malveillants à Microsoft ?
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>Comment faire envoyer un fichier à Microsoft à des fins d’analyse ?
 
-Vous pouvez nous envoyer des fichiers susceptibles d’être des programmes malveillants ou des fichiers qui ont été détectés de manière incorrecte via [l’exemple de portail de soumission](https://www.microsoft.com/wdsi/filesubmission).
+### <a name="send-a-malware-file"></a>Envoyer un fichier de programmes malveillants
 
-Nous recevons un grand nombre d’échantillons provenant de nombreuses sources. Notre analyse est hiérarchisée par le nombre de détections de fichiers et le type de soumission. Vous pouvez nous aider à effectuer une analyse rapide en fournissant des informations détaillées sur le produit que vous utilisiez et ce que vous faisiez lorsque vous avez trouvé le fichier.
+Vous pouvez envoyer des fichiers susceptibles d’être des programmes malveillants ou des fichiers qui ont été détectés de manière incorrecte via [l’exemple de portail de soumission](https://www.microsoft.com/wdsi/filesubmission).
+
+Vous pouvez effectuer une analyse rapide en fournissant des informations détaillées sur le produit que vous utilisiez et ce que vous faisiez lorsque vous avez trouvé le fichier.
 
 Une fois connecté, vous pourrez suivre vos soumissions.
+
+> [!NOTE]
+>
+> Vous pouvez utiliser la fonctionnalité de soumission WDSI même si vous n’avez pas Microsoft Defender pour point de terminaison Plan 2 ou Microsoft Defender pour Office Plan 2.
+
+### <a name="submit-a-suspected-email-attachment"></a>Envoyer une pièce jointe suspecte
+
+Utilisez le [portail Microsoft 365 Defender](https://security.microsoft.com/) pour envoyer des pièces jointes suspectes à Microsoft à des fins de révision. Pour plus d’informations, consultez [Envoyer une pièce jointe suspecte à Microsoft](../office-365-security/admin-submission.md).
+
+### <a name="submit-a-file-or-file-hash"></a>Envoyer un fichier ou un hachage de fichier
+
+Utilisez la fonctionnalité des soumissions unifiées dans Microsoft Defender pour point de terminaison pour envoyer des fichiers et des hachages de fichiers à Microsoft à des fins de révision. Pour plus d’informations, consultez [Envoyer des fichiers dans Microsoft Defender pour point de terminaison](../defender-endpoint/admin-submissions-mde.md).
 
 ## <a name="can-i-send-a-sample-by-email"></a>Puis-je envoyer un exemple par e-mail ?
 

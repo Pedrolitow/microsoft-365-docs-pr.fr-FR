@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 ms.date: 05/04/2021
-ms.openlocfilehash: 40c278a5855bcb53808f812fc3b4383ecbea540b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5d905ec0b5ab9450b40c1e8be885307ce7a65a19
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084958"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111557"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 

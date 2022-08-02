@@ -18,13 +18,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez ce que cela signifie quand votre facture a un abonnement avec une date de début ultérieure.
 ms.custom:
 - commerce_billing
+- empty
 ms.date: 04/08/2022
-ms.openlocfilehash: 2b8eac7078028b5e27fdeccbea68473b9e16ed5f
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: a1f11990eb0642dd7d0a9f312a4075f01e7d46e8
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747436"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111952"
 ---
 # <a name="understand-invoicing-for-future-start-dates"></a>Comprendre la facturation pour les dates de début futures
 

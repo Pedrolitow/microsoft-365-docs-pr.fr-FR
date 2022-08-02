@@ -349,7 +349,11 @@
         - name: Collaborer avec des experts Microsoft Defender pour le repérage
           items:
             - name: Vue d’ensemble
-              href: defenderexpertsforhuntingprev.md
+              href: defender-experts-for-hunting.md
+            - name: Avant de commencer
+              href: before-you-begin-defender-experts.md
+            - name: Commencer à utiliser Defender Experts for Hunting
+              href: onboarding-defender-experts-for-hunting.md
             - name: Comprendre les rapports des experts Defender pour le repérage
               href: defender-experts-report.md
         - name: Playbooks rançongiciels

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender pour point de terminaison Protection Stockage amovible du contrôle d’appareil
+title: Microsoft Defender pour point de terminaison protection de stockage amovible du contrôle d’appareil
 description: Comprendre les fonctionnalités qui permettent d’empêcher l’utilisateur ou l’ordinateur ou les deux d’utiliser un média de stockage amovible non autorisé
 keywords: support de stockage amovible
 ms.prod: m365-security
@@ -9,19 +9,20 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 08/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5210530bb9102436e66667a0482aa09d941e26f9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a0225c12521812dc3888aac6c0179019dfa0ea72
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939408"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112524"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender pour point de terminaison Protection Stockage amovible du contrôle d’appareil
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender pour point de terminaison protection de stockage amovible du contrôle d’appareil
 
 
 **S’applique à :**
@@ -41,12 +42,13 @@ La protection de stockage amovible du contrôle d’appareil dans Microsoft Defe
 - *Audit* Accès en lecture, écriture ou exécution au stockage amovible en fonction de différentes propriétés d’appareil, avec ou sans exclusion.
 - *Empêcher* Accès en lecture, écriture ou exécution avec ou sans exclusion : autorisez un appareil spécifique en fonction de différentes propriétés de l’appareil.
 
+Pour gérer le stockage externe, utilisez le contrôle d’accès au stockage amovible au lieu de [l’installation de l’appareil](#device-installation).
+
 **Windows 10 et Windows 11 les détails du support :**
 
 - Appliqué au niveau de l’appareil, au niveau de l’utilisateur. ou les deux. Autorisez uniquement des personnes spécifiques qui effectuent un accès en lecture/écriture/exécution à un stockage amovible spécifique sur un ordinateur spécifique.
 - Prise en charge de MEM OMA-URI et GPO.
-- Prise en charge des « [propriétés de l’appareil](#device-properties) » comme indiqué.
-- Pour connaître la fonctionnalité dans Windows, consultez [Access Control de stockage amovible](device-control-removable-storage-access-control.md).
+- Pour les appareils Windows, consultez [Access Control de stockage amovible](device-control-removable-storage-access-control.md).
 
 **Plateforme prise en charge** - Windows 10, Windows 11
 
@@ -66,7 +68,6 @@ La protection de stockage amovible du contrôle d’appareil dans Microsoft Defe
 
 - Appliqué au niveau de l’appareil : la même stratégie s’applique à tout utilisateur connecté.
 - Prend en charge les objets Microsoft Endpoint Manager et stratégie de groupe.
-- Prise en charge des « [propriétés de l’appareil](#device-properties) » comme indiqué.
 - Pour plus d’informations sur Windows, consultez [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour point de terminaison](control-usb-devices-using-intune.md).
 
 **Plateforme prise en charge** - Windows 10, Windows 11
@@ -96,20 +97,3 @@ La protection de stockage amovible du contrôle d’appareil dans Microsoft Defe
 **Description** - Pour plus d’informations sur Windows, consultez [BitLocker - Paramètres de lecteur amovible](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **Plateforme prise en charge** - Windows 10, Windows 11
-
-## <a name="device-properties"></a>Propriétés du périphérique
-
-Microsoft Defender pour point de terminaison Device Control Amovible Stockage Protection vous permet de restreindre l’accès au stockage amovible en fonction des propriétés décrites dans le tableau ci-dessous :
-
-<br/><br/>
-
-|Nom de la propriété|Stratégies applicables|S’applique aux systèmes d’exploitation|Description|
-|---|---|---|---|
-|Classe d’appareil|[Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour point de terminaison](control-usb-devices-using-intune.md)|Windows|Pour plus d’informations sur les formats d’ID d’appareil, consultez [la classe d’installation de l’appareil](/windows-hardware/drivers/install/overview-of-device-setup-classes). Les deux liens suivants fournissent la liste complète des classes d’installation d’appareil. Les classes « Utilisation du système » font principalement référence aux appareils fournis avec un ordinateur/ordinateur de la fabrique, tandis que les classes « Vendor » font principalement référence aux appareils qui peuvent être connectés à un ordinateur/machine existant : [classes d’installation d’appareil définies par le système disponibles pour les fournisseurs - pilotes Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) et [classes d’installation d’appareil définies par le système réservées à l’utilisation du système - pilotes Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **Remarque** : l’installation de l’appareil peut être appliquée à tous les appareils, pas seulement au stockage amovible.|
-|ID principal|[Access Control de stockage amovibles](device-control-removable-storage-access-control.md)|Windows|L’ID principal inclut le stockage amovible et le CD/DVD et Windows périphérique portable/WPD.|
-|ID d'appareil|[Access Control de stockage amovible](device-control-removable-storage-access-control.md) ; <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour point de terminaison](control-usb-devices-using-intune.md)|Windows|Pour plus d’informations sur les formats d’ID d’appareil, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers), par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
-|ID matériel|[Access Control de stockage amovibles](device-control-removable-storage-access-control.md) <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour point de terminaison](control-usb-devices-using-intune.md)|Windows|Une chaîne a identifié l’appareil dans le système, par exemple USBSTOR\DiskGeneric_Flash_Disk___8.07 ; **Remarque** : L’ID matériel n’est pas unique ; différents appareils peuvent partager la même valeur.|
-|ID d’instance|[Access Control de stockage amovibles](device-control-removable-storage-access-control.md) <p> Installation d’appareil|Windows|Une chaîne identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
-|Nom convivial|[Access Control de stockage amovibles](device-control-removable-storage-access-control.md)|Windows|Chaîne attachée à l’appareil, par exemple, périphérique USB de disque flash générique|
-|ID du fournisseur /ID de produit|[Access Control de stockage amovibles](device-control-removable-storage-access-control.md)|Windows <p> macOS|L’ID du fournisseur est le code fournisseur à quatre chiffres que le comité USB attribue au fournisseur. L’ID de produit est le code de produit à quatre chiffres que le fournisseur affecte à l’appareil ; Prise en charge du caractère générique.|
-|Serial NumberId|[Access Control de stockage amovibles](device-control-removable-storage-access-control.md)|Windows <p> macOS |Par exemple, `<SerialNumberId>002324B534BCB431B000058A</SerialNumberId>`|

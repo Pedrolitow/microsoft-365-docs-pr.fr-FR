@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/01/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 47260bbec9e874d07f5508428843aa037a47898e
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037751"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111711"
 ---
-# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 Business Premium : cybersécurité pour les petites entreprises
+# <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium : productivité et cybersécurité pour les petites entreprises
 
 Commençons par dire que vous avez fait un choix judicieux en adoptant Microsoft 365 Business Premium et ses outils de productivité de classe mondiale. Conçu en tenant compte de la cybersécurité, Microsoft 365 Business Premium protège vos données, appareils et informations. Vous êtes la première et la meilleure défense de votre organisation contre les pirates informatiques et les cyberattaques, y compris les individus aléatoires, le crime organisé ou les États-nations hautement sophistiqués.
 
-La tâche qui vous précède est la suivante : laissez Microsoft 365 Business Premium contribuer à sécuriser l’avenir de votre organisation ! Approchez cette tâche en effectuant les missions suivantes qui vous aideront à fortifier votre environnement, à former votre équipe et à protéger les appareils gérés. Les missions sont organisées comme suit :
+La tâche qui vous précède est la suivante : laissez Microsoft 365 Business Premium aider à sécuriser l’avenir de votre organisation ! Approchez cette tâche en effectuant les missions suivantes qui vous aideront à fortifier votre environnement, à former votre équipe et à protéger les appareils gérés. Les missions sont organisées comme suit :
 
 - **[Fortifier votre environnement](m365bp-setup-overview.md)** (tâches que votre administrateur effectue) ; 
-- **[Former votre équipe](m365bp-devices-overview.md)** (tâches que tous les membres du personnel effectuent) ; Et 
+- **[Former votre équipe](m365bp-devices-overview.md)** (tâches que tous les membres du personnel effectuent) ; et 
 - **[Protégez les appareils gérés](m365bp-protect-devices.md)** (tâches que votre administrateur ou votre équipe de sécurité effectue).
 
 L’exécution de toutes les missions est le moyen le plus efficace de déjouer les pirates informatiques, de se protéger contre les ransomwares et de garantir que l’avenir de votre organisation est protégé avec les meilleures défenses de cybersécurité. C’est parti !
@@ -84,9 +84,9 @@ Cliquez (ou appuyez) sur l’infographie pour afficher une version plus grande, 
 
 Microsoft 365 Business Premium est une solution complète de sécurité et de collaboration pour les petites et moyennes entreprises. [En savoir plus sur les avantages de Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant, nous allons [fortifier votre environnement contre les cyberattaques](m365bp-setup-overview.md)!
 
 > [!NOTE]
-> Lorsqu’un terme ou une directive n’est pas clair, vous pouvez trouver des définitions dans le [glossaire des termes](m365bp-glossary.yml).
+> Si un terme ou une directive n’est pas clair, consultez le [glossaire des termes](m365bp-glossary.yml).

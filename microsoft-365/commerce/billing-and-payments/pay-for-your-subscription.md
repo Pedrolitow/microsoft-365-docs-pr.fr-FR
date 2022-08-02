@@ -16,27 +16,27 @@ ms.collection:
 search.appverid: MET150
 description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: ba6703be593f05c651c76b02e2fb1e8630f59355
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083902"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112348"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
 > [!IMPORTANT]
-> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces countries, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant.et en règle. Toutefois, vous ne pouvez pas ajouter de nouveaux abonnements au compte bancaire.
+> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et en règle. Toutefois, vous ne pouvez pas ajouter de nouveaux abonnements au compte bancaire.
 
-Les cartes de débit, de crédit et les informations bancaires sont acceptées pour régler votre abonnement. Dans certains cas, vous pouvez régler votre facture par chèque ou transfert électronique de fonds (TEF). Si vous disposez d’un profil de facturation, vous avez des options légèrement différentes. Pour plus d’informations, consultez la rubrique [Comment régler un abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md). Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez la rubrique [Comprendre les profils de facturation](manage-billing-profiles.md).
+Les cartes de débit, de crédit et les informations bancaires sont acceptées pour régler votre abonnement. Dans certains cas, vous pouvez régler votre facture par chèque ou transfert électronique de fonds (TEF). Si vous disposez d’un profil de facturation, vous avez des options légèrement différentes. Pour plus d’informations, consultez la rubrique [Comment régler un abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md). Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez [Comprendre les profils de facturation](manage-billing-profiles.md).
 
 **Vous souhaitez savoir où envoyer votre règlement de facture ?** Si vous réglez votre facture par chèque ou transfert électronique de fonds (TEF), consultez la rubrique [Où envoyer mon chèque ou règlement TEF ?](#where-do-i-send-my-check-or-eft-payment)
 
@@ -73,18 +73,18 @@ Dans certains cas, vous pouvez régler la facture de votre abonnement par chèqu
 - Devoir régler un abonnement dont le coût dépasse un montant qui varie en fonction de l’emplacement du service
 - Satisfaire à une vérification de solvabilité
 
-Si une vérification du crédit est nécessaire, vous en êtes informé lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevez un courriel contenant de plus amples informations sur la demande d'approbation de crédit. Les vérifications de crédit sont généralement effectuées dans les deux jours ouvrables.
+Si une vérification de solvabilité est nécessaire, vous recevrez une notification lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevrez un e-mail qui inclut davantage d'informations sur la demande d’approbation de crédit. Deux jours ouvrables sont généralement nécessaires pour effectuer les vérifications de solvabilité.
 
 > [!NOTE]
 > Les clients vivant au Brésil peuvent régler un abonnement avec un Boleto Bancario. Si vous avez sélectionné cette option, la demande de paiement est envoyée à l'adresse de courrier, fournie au moment de l'achat de l’abonnement, dans les 10 jours ouvrés suivant la date de la commande. La date d’échéance est de 30 jours après la date de commande. Si vous ne recevez pas votre Boleto par courrier électronique, vérifiez votre dossier de courrier indésirable ou contactez le support technique.
 >
 > Si vous le préférez, vous pouvez régler par virement électronique entre les deux comptes. L'Agence et le numéro de compte figure au bas de votre facture. Vous devez entrer votre numéro de facture dans le champ identification du Virement.
 
-Si vous payez par facture pour votre abonnement, vous recevez un e-mail lorsque votre relevé de facturation est prêt à être affiché. Cet e-mail ne’ contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos options de paiement et l’emplacement de l’envoi. Si vous entrez un numéro de bon de commande lorsque vous achetez un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès aux relevés de facturation, consultez [Afficher votre facture](view-your-bill-or-invoice.md).
+Si vous payez votre abonnement par facture, vous recevrez un e-mail vous avertissant de la disponibilité de votre relevé de facturation. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande lors de l’achat d’un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Que se passe-t-il s'il me reste un solde impayé ?
 
-Si nous ne parvenons pas à vous facturer par le mode de paiement enregistré, nous vous envoyons un courrier électronique pour vous signaler le problème. Ce courrier établit brièvement le problème et inclut un lien où vous pouvez vérifier le solde impayé. Nous retentons ensuite d’effectuer la transaction tous les quelques jours sur la période de grâce de 30 jours de l’abonnement. Pour chaque échec de transaction, vous recevez une nouvelle alerte par courrier.
+Si nous ne parvenons pas à vous facturer via le mode de paiement enregistré, nous vous enverrons un courrier électronique pour vous signaler le problème. Ce courrier établit brièvement le problème et inclut un lien où vous pouvez vérifier le solde impayé. Nous retentons ensuite d’effectuer la transaction tous les quelques jours sur la période de grâce de 30 jours de l’abonnement. Pour chaque échec de transaction, vous recevez une nouvelle alerte par courrier.
 
 Si vous avez ajouté personnellement un mode de paiement ayant un montant impayé, vous pouvez utiliser **Régler le solde** pour effectuer un paiement. Le mode de paiement que vous utilisez pour payer le montant en souffrance devient le nouveau mode de paiement pour tous les abonnements qui ont utilisé le mode de paiement refusé.
 

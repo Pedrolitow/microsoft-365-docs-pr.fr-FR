@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917977"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112458"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -52,13 +51,13 @@ Microsoft 365 Business Premium inclut un processus guidé. La vidéo suivante mo
 
 > [!TIP]
 > - Une fois que vous avez ajouté des utilisateurs, donnez-leur un lien vers le [Guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md). Le guide les oriente tout au long de la connexion, de l’obtention de Office applications et de l’enregistrement, de la copie et du partage de fichiers.
-> - Passez à [Renforcer la sécurité](m365bp-security-overview.md).
+> - Veillez à [Renforcer la sécurité](m365bp-security-overview.md).
 
 ## <a name="work-with-a-microsoft-partner"></a>Collaborer avec un partenaire Microsoft
 
 Si vous préférez avoir un partenaire Microsoft pour vous aider à obtenir et à configurer Microsoft 365, procédez comme suit :
 
-1. Accédez à [Parcourir les partenaires](https://appsource.microsoft.com/marketplace/partner-dir).
+1. Accédez à la page [Rechercher les partenaires](https://appsource.microsoft.com/marketplace/partner-dir).
 
 2. Dans le volet **Filtres**, spécifiez les critères de recherche, tels que :
 
@@ -79,4 +78,4 @@ Si vous préférez avoir un partenaire Microsoft pour vous aider à obtenir et �
 
 ### <a name="next-objective"></a>Objectif suivant
 
-Une fois que vous avez atteint ces objectifs, accédez à [augmentez les protections de sécurité](m365bp-security-overview.md).
+Une fois que vous avez atteint ces objectifs, passez à [Renforcer la sécurité](m365bp-security-overview.md).

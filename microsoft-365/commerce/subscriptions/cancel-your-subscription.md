@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
 ms.date: 07/07/2022
-ms.openlocfilehash: 9acaaff87e649342a073e2395edb41ca07dd1485
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7918690c20466769129875620e98fb162f3d3be5
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084804"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112106"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Annuler votre abonnement Microsoft
 
@@ -71,7 +71,7 @@ Les étapes d’annulation de votre abonnement d’essai ou payant dépendent du
 |25 licences ou moins  | [Utilisez les étapes ci-dessous pour annuler](#steps-to-cancel-your-subscription) votre abonnement d’essai ou payant en ligne dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d'administration Microsoft 365</a>.        |
 |Plus de 25 licences   | Réduisez le nombre de licences à 25 ou moins, puis [utilisez les étapes ci-dessous pour annuler](#steps-to-cancel-your-subscription).      |
 
-Si vous ne pouvez pas diminuer le nombre de licences, [désactivez la facturation périodique](renew-your-subscription.md). Cela vous évite d’être facturé à nouveau pour votre abonnement et vous permet de conserver l’accès à vos produits et services pour le reste de votre abonnement.
+Si vous ne pouvez pas réduire le nombre de licences, [désactivez la facturation périodique](renew-your-subscription.md). Cela vous évite d’être facturé à nouveau pour votre abonnement et vous permet de conserver votre accès à vos produits et services pour le reste de votre abonnement.
 
 Si vous ne parvenez pas à annuler votre abonnement, [contactez le support](../../admin/get-help-support.md) pour obtenir de l’aide.
 

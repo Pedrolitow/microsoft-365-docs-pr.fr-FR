@@ -16,8 +16,8 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
-- VSBFY23
 - commerce_signup
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
@@ -30,16 +30,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Découvrez ce que vous devez savoir sur les dernières versions des programmes Office avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: b8bddd621998fcebf319b2d4ed2386a78375fc70
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 25e74a80f4f1a023f93037c31d61a6d458619bc0
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084562"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111589"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - aide Administration
 
-Consultez l'[aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
+Consultez [l’aide de Microsoft 365 petite entreprise](https://go.microsoft.com/fwlink/?linkid=2197659) sur YouTube.
 
 Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
 
@@ -64,7 +64,7 @@ Avant d’acheter, mettez un peu de réflexion dans le plan pour lequel vous vou
 
 ## <a name="watch-choose-a-microsoft-365-subscription"></a>Regarder : Choisir un abonnement Microsoft 365
 
-Regardez cette vidéo ainsi que d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198032).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 

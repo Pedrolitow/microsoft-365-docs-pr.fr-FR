@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e076aea422346bb9ace26d730897c6d90a234503
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942076"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111776"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -169,7 +169,7 @@ Le tableau indique également les Office 365 Entreprise et Office 365 plan du go
 |**Volume inhabituel de suppression de fichier**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers est supprimé dans SharePoint ou OneDrive dans un laps de temps court. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion du cycle de vie des données|Non|Abonnement E5/G5, Defender pour Office 365 P2 ou Microsoft 365 E5 module complémentaire|
 |**Augmentation inhabituelle des e-mails signalés en tant que hameçonnage**|Génère une alerte en cas d’augmentation significative du nombre de personnes de votre organisation qui utilisent le complément Message de rapport dans Outlook pour signaler des messages en tant que courrier de hameçonnage. Cette stratégie a un paramètre de gravité **moyenne** . Pour plus d’informations sur ce complément, consultez [Utiliser le complément Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Hameçonnage d’emprunt d’identité de l’utilisateur remis à la boîte de réception/dossier**<sup>1,2</sup><sup></sup>|Génère une alerte quand Microsoft détecte qu’un remplacement d’administrateur ou d’utilisateur a autorisé la remise d’un message d’hameçonnage d’emprunt d’identité d’utilisateur à la boîte de réception (ou à un autre dossier accessible par l’utilisateur) d’une boîte aux lettres. Les exemples de remplacements incluent une règle de boîte de réception ou de flux de courrier qui autorise les messages d’un expéditeur ou d’un domaine spécifique, ou une stratégie anti-courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un paramètre de gravité **moyenne** .|Gestion des menaces|Non|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
-|**L’utilisateur a demandé à libérer un message mis en quarantaine**|Génère une alerte lorsqu’un utilisateur demande la libération d’un message mis en quarantaine. Pour demander la libération des messages mis en quarantaine, les **destinataires autorisés à demander la libération d’un message à partir de l’autorisation de mise en quarantaine** (_PermissionToRequestRelease_) sont requis dans la stratégie de quarantaine (par exemple, à partir du groupe d’autorisations prédéfinies d’accès **limité** ). Pour plus d’informations, consultez [Autoriser les destinataires à demander la libération d’un message à partir de l’autorisation de mise en quarantaine](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Non|E1/F1/G1, E3/F3/G3 ou E5/G5|
+|**L’utilisateur a demandé à libérer un message mis en quarantaine**|Génère une alerte lorsqu’un utilisateur demande la libération d’un message mis en quarantaine. Pour demander la libération des messages mis en quarantaine, les **destinataires autorisés à demander la libération d’un message à partir de l’autorisation de mise en quarantaine** (_PermissionToRequestRelease_) sont requis dans la stratégie de quarantaine (par exemple, à partir du groupe d’autorisations prédéfinies d’accès **limité** ). Pour plus d’informations, consultez [Autoriser les destinataires à demander la libération d’un message à partir de l’autorisation de mise en quarantaine](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Non| Microsoft Business Basic, Microsoft Business Standard, Microsoft Business Premium, E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Utilisateur limité à l’envoi de courrier électronique**|Génère une alerte lorsqu’une personne de votre organisation ne peut pas envoyer de courrier sortant. Cela se produit généralement lorsqu’un compte est compromis et que l’utilisateur est répertorié sur la page **Utilisateurs restreints** dans le portail de conformité. (Pour accéder à cette page, accédez à **Gestion des menaces > Examiner > utilisateurs restreints**). Cette stratégie a un paramètre **de gravité élevée** . Pour plus d’informations sur les utilisateurs restreints, consultez [Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste de blocage après avoir envoyé un courrier indésirable](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestion des menaces|Oui|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**L’utilisateur ne peut pas partager de formulaires et collecter des réponses**.|Génère une alerte lorsqu’une personne de votre organisation a été empêchée de partager des formulaires et de collecter des réponses à l’aide de Microsoft Forms en raison d’un comportement de tentative d’hameçonnage répété détecté. Cette stratégie a un paramètre **de gravité élevée** .|Gestion des menaces|Non|E1, E3/F3 ou E5|
 
@@ -206,7 +206,7 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 
 - **Intervalle de temps.** Utilisez ce filtre pour afficher les alertes qui ont été générées dans un intervalle de date et d’heure spécifique.
 
-- **Gravité.** Utilisez ce filtre pour afficher les alertes qui se voient attribuer une gravité spécifique.
+- **Sévérité.** Utilisez ce filtre pour afficher les alertes qui se voient attribuer une gravité spécifique.
 
 - **Catégorie.** Utilisez ce filtre pour afficher les alertes d’une ou plusieurs catégories d’alertes.
 
@@ -264,31 +264,31 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
+|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
-|Gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
+|Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
 |Analyste Information Protection||![Marque de vérification.](../media/checkmark.png)|||||
-|Enquêteur Information Protection||![Coche.](../media/checkmark.png)|||||
-|Gérer les alertes||||||![Coche.](../media/checkmark.png)|
-|Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
+|Enquêteur Information Protection||![Marque de vérification.](../media/checkmark.png)|||||
+|Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
+|Configuration de l’organisation||||||![Marque de vérification.](../media/checkmark.png)|
 |Aperçu|||||||
-|Gestion des enregistrements|![Marque de vérification.](../media/checkmark.png)||||||
-|Gestion de la rétention|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion des enregistrements|![Coche.](../media/checkmark.png)||||||
+|Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrer RMS|||||||
-|Gestion des rôles||||![Marque de vérification.](../media/checkmark.png)|||
+|Gestion des rôles||||![Coche.](../media/checkmark.png)|||
 |Rechercher et vider|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
-|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)
 |Vue Service Assurance|||||||
 |Administrateur de révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||
 |View-Only Gestion des appareils|||||||
-|View-Only gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
+|View-Only gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
 |View-Only gérer les alertes||||||![Coche](../media/checkmark.png)|
 |Afficher uniquement les destinataires|||![Coche](../media/checkmark.png)||||
 |gestion des enregistrements View-Only|![Coche](../media/checkmark.png)||||||

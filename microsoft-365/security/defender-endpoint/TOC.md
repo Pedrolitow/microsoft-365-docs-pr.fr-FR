@@ -34,6 +34,7 @@
 #### [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Guides de migration](migration-guides.md)
+### [Migrer des serveurs Defender pour point de terminaison vers Defender pour le cloud](migrating-mde-server-to-cloud.md)
 ### [Déplacer vers Defender pour point de terminaison](switch-to-mde-overview.md)
 #### [Phase 1 : préparation](switch-to-mde-phase-1.md)
 #### [Phase 2 : configuration](switch-to-mde-phase-2.md)

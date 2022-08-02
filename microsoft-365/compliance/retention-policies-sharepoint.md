@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le fonctionnement de la rétention Microsoft 365 pour SharePoint et OneDrive, à l’aide de stratégies de rétention et d’étiquettes de rétention pour gérer la rétention automatique ou la suppression des données pour votre organisation.
-ms.openlocfilehash: d3648fd7ce86fbf9c3c81a8c0609598dbe2a2067
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037159"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112502"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -144,7 +144,7 @@ Seules les pages et sections sont touchées par les paramètres de rétention qu
 
 La gestion des versions est une fonctionnalité de toutes les listes de documents et bibliothèques dans Microsoft Office SharePoint Online et OneDrive. Par défaut, la gestion des versions conserve un minimum de 500 versions majeures, bien que vous puissiez augmenter cette limite. Pour plus d'informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-Lorsqu’un document comportant des versions est soumis à des paramètres de conservation pour conserver ce contenu, la façon dont les versions sont stockées dans la bibliothèque de conservation et de préservation des documents a changé en juillet 2022 pour améliorer les performances. Actuellement déployées sur les clients, toutes les versions du fichier sont conservées dans un seul fichier dans la bibliothèque de conservation et de préservation des documents. Avant la modification, les versions étaient copiées dans la bibliothèque de conservation et de préservation des documents en tant que fichiers distincts et, après la modification, restent en tant que fichiers distincts.
+Lorsqu’un document comportant des versions est soumis à des paramètres de conservation pour conserver ce contenu, la façon dont les versions sont stockées dans la bibliothèque de conservation et de préservation des documents a changé en juillet 2022 pour améliorer les performances. Toutes les versions du fichier sont maintenant conservées dans un seul fichier dans la bibliothèque de conservation et de préservation des documents. Avant la modification, les versions étaient copiées dans la bibliothèque de conservation et de préservation des documents en tant que fichiers distincts et, après la modification, restent en tant que fichiers distincts.
 
 Si vous avez configuré les paramètres de rétention pour suppression à la fin de la période de rétention :
 

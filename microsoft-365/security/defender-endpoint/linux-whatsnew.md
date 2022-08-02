@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 577747a28c86cb1b95640a6ae6ebe557d2340a28
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949434"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112216"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Linux
 
@@ -34,6 +34,28 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
 
 - [Nouveautés de Defender pour point de terminaison sur macOS](mac-whatsnew.md)
 - [Nouveautés de Defender pour point de terminaison sur iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Août 2022 (Build : 101.75.43 | Version de version : 30.122071.17543.0)</summary>
+
+&ensp;Publication : **2 août 2022**<br/>
+&ensp;Publication : **2 août 2022**<br/>
+&ensp;Build : **101.75.43**<br/>
+&ensp;Version de version : **30.122071.17543.0**<br/>
+&ensp;Version du moteur : **1.1.19300.3**<br/>
+&ensp;Version de signature : **1.369.395.0**<br/>
+
+**Nouveautés**
+
+- Ajout de la prise en charge de Red Hat Enterprise Linux version 9.0
+- Ajout d’un nouveau champ dans la sortie de `mdatp health` celui-ci peut être utilisé pour interroger le niveau d’application de la fonctionnalité de protection réseau. Le nouveau champ est appelé `network_protection_enforcement_level` et peut prendre l’une des valeurs suivantes : `audit`, `block`ou `disabled`.
+- Résolution d’un bogue de produit où plusieurs détections du même contenu pouvaient entraîner des entrées en double dans l’historique des menaces
+- Résolution d’un problème où l’un des processus générés par le produit (`mdatp_audisp_plugin`) n’était parfois pas correctement terminé lorsque le service était arrêté
+- Autres correctifs de bogues
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Jul-2022 (Build : 101.73.77 | Version de version : 30.122062.17377.0)</summary>
@@ -216,9 +238,9 @@ Cet article est fréquemment mis à jour pour vous informer des nouveautés des 
   <p><b> Build : 101.52.57 <br>
 Version de version : 30.121092.15257.0</b></p>
    
-  <p><b> Nouveautés </b></p>
+  <p><b> Quoi de neuf </b></p>
 
-   - Ajout d’une fonctionnalité permettant de détecter les fichiers jar log4j vulnérables utilisés par les applications Java. L’ordinateur est régulièrement inspecté pour l’exécution de Javaprocesses avec des fichiers jar log4j chargés. Les informations sont signalées au backend Microsoft Defender pour point de terminaison et sont exposées dans la zone Gestion de la disponibilité du portail.
+   - Ajout d’une fonctionnalité permettant de détecter les fichiers jar log4j vulnérables utilisés par les applications Java. La machine est régulièrement inspectée pour l’exécution de processus Java avec des fichiers jar log4j chargés. Les informations sont signalées au backend Microsoft Defender pour point de terminaison et sont exposées dans la zone Gestion des vulnérabilités du portail.
    
    </details>
 

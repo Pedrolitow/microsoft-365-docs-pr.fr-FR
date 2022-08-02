@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: 40e8c44a45e8d8d0c416f3f00df57e24504a4e70
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 249dc6f2f102c4026ab201f8e9d8da6f76e6a253
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633804"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111513"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importer en bloc des contacts externes dans Exchange Online
 
@@ -104,15 +104,10 @@ Après avoir exécuté la commande à l’étape 2, les contacts externes sont c
     
 2. Accédez au dossier de bureau dans lequel vous avez enregistré le fichier CSV à l’étape 1 ; par exemple, `C:\Users\Administrator\desktop`.
     
-3. Exécutez les deux commandes suivantes pour ajouter les autres propriétés du fichier CSV aux contacts externes que vous avez créés à l’étape 2.
+3. Exécutez la commande suivante pour ajouter les autres propriétés du fichier CSV aux contacts externes que vous avez créés à l’étape 2.
     
     ```powershell
-    $Contacts = Import-CSV .\ExternalContacts.csv
-  
-    ```
-
-    ```powershell
-    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+     Import-Csv .\ExternalContacts.csv|%{Set-Contact -Identity $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
     > [!NOTE]

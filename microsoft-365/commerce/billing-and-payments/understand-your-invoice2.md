@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre Microsoft 365 pour les factures professionnelles.
 ms.date: 05/24/2022
-ms.openlocfilehash: e0fde94ba3dd2f3d174bac44b3d53df469be9c9d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0c863c1398b19c0c3efdf6c8390ad4a0cd16f82c
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084936"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112018"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -91,7 +91,7 @@ Pour mettre à jour l’adresse **Vendue**, consultez [Modifier l’adresse de v
 
 #### <a name="order-details"></a>Détails de la commande
 
-Sur la page une de votre facture, le **Produit** est « Services en ligne, » le terme générique que nous utilisons pour décrire votre abonnement. La page deux répertorie les produits individuels dans votre commande.
+Sur la page 1 de votre facture, le **produit** est « Services en ligne », terme générique que nous utilisons pour décrire votre abonnement. La page deux répertorie les produits individuels dans votre commande.
 
 Le **Numéro de bon de commande client** est le numéro de bon de commande que vous spécifiez. Vous ne pouvez pas ajouter un numéro de bon de commande pour une facture existante. Si vous mettez à jour le numéro de bon de commande, il est inclus dans les futures factures. Pour modifier le numéro de bon de commande, consultez [Modifier votre numéro de bon de commande](#change-your-purchase-order-number).
 
@@ -119,7 +119,7 @@ Si vous payez par carte de crédit, vous voyez « VEUILLEZ NE PAS PAYER. Vous se
 
 ### <a name="electronic-fund-transfer-eft-and-check"></a>Transfert électronique de fonds (EFT) et vérification
 
-Si vous avez choisi la « facture » comme mode de paiement de votre abonnement, la page une contient la section **Transfert de fonds électronique** qui affiche les informations de compte bancaire Microsoft pour les paiements électroniques (virement bancaire, ACH, SEPA, etc.). En règle générale, votre banque dispose d’un champ de référence que vous complétez lorsque vous envoyez un paiement. Veillez à référencer le numéro de facture dans ce champ.
+Si vous avez choisi « facture » comme mode de paiement d’abonnement, la page 1 contient la section **Transfert de fonds électroniques** qui affiche les informations du compte bancaire Microsoft pour les paiements électroniques (câble, ACH, SEPA, etc.). En règle générale, votre banque dispose d’un champ de référence que vous complétez lorsque vous envoyez un paiement. Veillez à référencer le numéro de facture dans ce champ.
 
 Si nous acceptons les paiements par chèque en provenance de votre pays ou région, vous voyez également une section **Vérifier** qui contient le nom et l’adresse de courrier du bénéficiaire. Veillez à référencer votre numéro de facture sur le chèque.
 

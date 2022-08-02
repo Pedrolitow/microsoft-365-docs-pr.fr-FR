@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Étapes normatives pour les administrateurs, les conditions requises de licence et les scénarios courants qui gèrent du contenu à valeur élevée dans Microsoft 365 pour vos obligations légales, commerciales ou réglementaires.
-ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 4a0de19b7630ad89dadb071b80065ff44fde72bb
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069522"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106818"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
@@ -51,7 +51,7 @@ Etes-vous prêt à démarrer la gestion de contenus à forte valeur de votre org
 
 Différents abonnements prennent en charge la gestion des enregistrements et les conditions requises pour les licences des utilisateurs dépendent des fonctionnalités utilisées.
 
-Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft Purview, affichez les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour la gestion des enregistrements, voir la section [Gestion des enregistrements de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) ainsi que le fichier PDF téléchargeable associé aux exigences de licences au niveau des fonctionnalités.
+Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft Purview, affichez les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour la gestion des enregistrements, consultez la section [Gestion du cycle de vie des données Microsoft Purview et gestion des enregistrements Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) pour connaître les exigences en matière de licences au niveau des fonctionnalités.
 
 ## <a name="permissions"></a>Autorisations
 
