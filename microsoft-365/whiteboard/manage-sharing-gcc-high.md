@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft dans les environnements GCC High.
-ms.openlocfilehash: 0cd4dc8e4bf39cfbaab79a0140bac544de9e9015
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b6efeac47cec8de02487bf4526891b52c9098079
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943373"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175331"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer le partage pour le tableau blanc Microsoft dans les environnements GCC High
 
@@ -28,7 +28,9 @@ L’expérience de partage diffère en fonction de l’appareil et du client uti
 
 ## <a name="share-in-teams-meetings"></a>Partager dans des réunions Teams
 
-Lorsque vous partagez un tableau blanc dans une réunion Teams, le tableau blanc crée un lien de partage accessible à toute personne au sein de l’organisation. Il partage ensuite automatiquement le tableau blanc avec tous les utilisateurs in-tenants de la réunion.
+Lorsque vous partagez un tableau blanc dans une réunion Teams, le tableau blanc crée un lien de partage accessible à toute personne au sein de l’organisation et partage automatiquement le tableau blanc avec tous les utilisateurs internes à la réunion. Les tableaux blancs sont partagés à l’aide de liens partageables par l’entreprise, quel que soit le paramètre par défaut. La prise en charge du type de lien de partage par défaut est planifiée.
+
+Il existe des fonctionnalités supplémentaires de collaboration temporaire par la plupart des comptes d’appareils externes et partagés pendant une réunion. Cela permet aux utilisateurs d’afficher et de collaborer temporairement sur des tableaux blancs lorsqu’ils sont partagés dans une réunion Teams, comme PowerPoint Live partage.
 
 >[!NOTE]
 > Le partage externe pendant une réunion Teams n’est pas encore disponible, mais sera ajouté dans une version ultérieure.

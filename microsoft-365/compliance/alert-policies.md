@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans le portail de conformité Microsoft Purview ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: e076aea422346bb9ace26d730897c6d90a234503
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: d52e50726b5fa695a98d517f1b7b2e9be44d2f1d
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111776"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175221"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -134,6 +134,7 @@ Le tableau indique également les Office 365 Entreprise et Office 365 plan du go
  
 | Stratégie d’alerte par défaut | Description | Catégorie | Investigation automatisée | Abonnement Entreprise |
 |:-----|:-----|:-----|:-----|:-----|
+|**Un clic d’URL potentiellement malveillant a été détecté**|Génère une alerte lorsqu’un utilisateur protégé par [des liens fiables](/microsoft-365/security/office-365-security/safe-links) dans votre organisation clique sur un lien malveillant. Cette alerte est générée lorsqu’un utilisateur clique sur un lien et que cet événement déclenche une identification de changement de verdict d’URL par Microsoft Defender pour Office 365. Cette stratégie d’alerte a un paramètre **de gravité élevée** pour Defender pour Office 365 clients P2, E5 et G5. Cette alerte déclenche automatiquement une [investigation et une réponse automatisées dans Office 365](/microsoft-365/security/office-365-security/office-365-air). Pour plus d’informations sur les événements qui déclenchent cette alerte, consultez [Configurer des stratégies de liens fiables](/microsoft-365/security/office-365-security/set-up-safe-links-policies).|Gestion des menaces|Oui|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Un utilisateur a cliqué sur une URL potentiellement malveillante**|Génère une alerte lorsqu’un utilisateur protégé par [des liens fiables](/microsoft-365/security/office-365-security/safe-links) dans votre organisation clique sur un lien malveillant. Cet événement est déclenché lorsque l’utilisateur clique sur une URL (identifiée comme malveillante ou en attente de validation) et remplace la page d’avertissement Liens sécurisés (en fonction de la stratégie De liens sécurisés Microsoft 365 pour les entreprises de votre organisation) pour continuer à accéder à la page /contenu hébergé par l’URL. Cette stratégie d’alerte a un paramètre de gravité **élevée** . Pour Defender pour Office 365 clients P2, E5 et G5, cette alerte déclenche automatiquement une [investigation et une réponse automatisées dans Office 365](/microsoft-365/security/office-365-security/office-365-air). Pour plus d’informations sur les événements qui déclenchent cette alerte, consultez [Configurer des stratégies de liens fiables](/microsoft-365/security/office-365-security/set-up-safe-links-policies).|Gestion des menaces|Oui|Abonnement au module complémentaire E5/G5 ou Defender pour Office 365 P2|
 |**Résultat de soumission administrateur terminé**|Génère une alerte lorsqu’une [soumission Administration](../security/office-365-security/admin-submission.md) termine la nouvelle analyse de l’entité envoyée. Une alerte est déclenchée chaque fois qu’un résultat de nouvelle analyse est rendu à partir d’une soumission Administration. Ces alertes sont destinées à vous rappeler [de passer en revue les résultats des soumissions précédentes](https://compliance.microsoft.com/reportsubmission), d’envoyer des messages signalés par l’utilisateur pour obtenir les derniers verdicts de vérification et de nouvelle analyse de stratégie, et de vous aider à déterminer si les stratégies de filtrage de votre organisation ont l’impact prévu. Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Non|E1/F1, E3/F3 ou E5|
 |**Administration déclenché une investigation manuelle de l’e-mail**|Génère une alerte lorsqu’un administrateur déclenche l’examen manuel d’un e-mail à partir de l’Explorateur de menaces. Pour plus d’informations, consultez [Exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de menaces](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Cette alerte informe votre organisation que l’enquête a été démarrée. L’alerte fournit des informations sur les personnes qui l’ont déclenchée et inclut un lien vers l’enquête. Cette stratégie a un paramètre **de gravité d’information** .|Gestion des menaces|Oui|Abonnement aux modules complémentaires E5/G5 ou Microsoft Defender pour Office 365 P2|
@@ -268,13 +269,13 @@ Pour voir la catégorie à laquelle une stratégie d’alerte par défaut est af
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion des destructions|||||||
-|Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
+|Gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
-|Analyste Information Protection||![Marque de vérification.](../media/checkmark.png)|||||
-|Enquêteur Information Protection||![Marque de vérification.](../media/checkmark.png)|||||
+|Analyste Information Protection||![Coche.](../media/checkmark.png)|||||
+|Enquêteur Information Protection||![Coche.](../media/checkmark.png)|||||
 |Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
-|Configuration de l’organisation||||||![Marque de vérification.](../media/checkmark.png)|
+|Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
 |Aperçu|||||||
 |Gestion des enregistrements|![Coche.](../media/checkmark.png)||||||
 |Gestion de la rétention|![Coche.](../media/checkmark.png)||||||

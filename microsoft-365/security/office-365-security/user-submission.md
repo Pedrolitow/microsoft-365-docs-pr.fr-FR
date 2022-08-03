@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier une boîte aux lettres personnalisée (également appelée boîte aux lettres de soumissions d’utilisateurs) pour collecter les messages de courrier indésirable et de hameçonnage signalés par les utilisateurs. D’autres paramètres complètent l’expérience de création de rapports pour les utilisateurs lorsqu’ils signalent des messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e578b3c968659448a84d0f85f6b2347fe47a042
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087240"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175485"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -112,7 +112,7 @@ Lorsque le **bouton Message de rapport Microsoft Outlook** **est** ![activé](..
 
 - **Envoyer les messages signalés à la** section : Sélectionnez l’une des options suivantes :
 
-  - **Microsoft** : la boîte aux lettres des soumissions utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft pour analyse).
+  - **Microsoft** : les rapports utilisateur sont directement accessibles à Microsoft pour analyse. Seules les métadonnées telles que l’expéditeur, le destinataire, signalés par et les détails du message des rapports utilisateur sont fournies à l’administrateur client via le Centre de sécurité Microsoft 365.
 
   - **Boîte aux lettres de Microsoft et de mon organisation** : dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante à utiliser comme boîte aux lettres de soumissions utilisateur. Les groupes de distribution ne sont pas autorisés. Les soumissions d’utilisateurs sont envoyées à Microsoft à des fins d’analyse et à la boîte aux lettres des soumissions d’utilisateurs pour qu’une équipe d’administrateurs ou d’opérations de sécurité analyse.
 

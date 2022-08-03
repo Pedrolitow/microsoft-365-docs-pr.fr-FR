@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 5b094971d4004cb1c58dcf058af68c1182670f92
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108173"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174650"
 ---
 # <a name="infrastructure-chaining"></a>Chaînage d’infrastructure
 
@@ -33,7 +33,7 @@ Nous voyons que les campagnes d’attaque utilisent un large éventail de techni
 
 La perspective extérieure d’un adversaire lui permet de tirer parti de votre présence web et mobile en constante expansion qui fonctionne en dehors de votre pare-feu.
 
-L’approche et l’interaction avec les propriétés web et mobiles en tant qu’utilisateur réel permettent à la technologie d’analyse, d’analyse et d’apprentissage automatique de Microsoft de désarmer les techniques d’évasion des adversaires en collectant des données de session utilisateur, en détectant le hameçonnage, les programmes malveillants, les applications non autorisées, le contenu indésirable et la violation de domaine à grande échelle. Cela permet de fournir des alertes et des flux de travail actionnables et basés sur des événements sous la forme d’informations sur [](reputation-scoring.md) les [menaces](what-is-microsoft-defender-threat-intelligence-defender-tI.md), de [balises système](using-tags.md), [d’insights d’analystes](analyst-insights.md) et de scores de réputation associés à l’infrastructure des adversaires.
+L’approche et l’interaction avec les propriétés web et mobiles en tant qu’utilisateur réel permettent à la technologie d’analyse, d’analyse et d’apprentissage automatique de Microsoft de désarmer les techniques d’évasion des adversaires en collectant des données de session utilisateur, en détectant le hameçonnage, les programmes malveillants, les applications non autorisées, le contenu indésirable et la violation de domaine à grande échelle. Cela permet de fournir des alertes et des flux de travail actionnables et basés sur des événements sous la forme d’informations sur [](reputation-scoring.md) les [menaces](index.md), de [balises système](using-tags.md), [d’insights d’analystes](analyst-insights.md) et de scores de réputation associés à l’infrastructure des adversaires.
 
 À mesure que plus de données sur les menaces sont disponibles, davantage d’outils, d’éducation et d’efforts sont nécessaires pour que les analystes comprennent les jeux de données et leurs menaces correspondantes. Microsoft Defender Threat Intelligence (Defender TI) unifie ces efforts en fournissant une vue unique dans plusieurs sources de données.
 

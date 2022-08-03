@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490572"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174934"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Exigences minimales pour Microsoft Defender pour point de terminaison
 
@@ -97,7 +97,7 @@ La configuration matérielle requise pour Defender pour point de terminaison sur
 
 > Cœurs : 2 minimum, 4 mémoires préférées : 1 Go minimum, 4 préférés
 
-Pour plus d’informations sur les versions prises en charge de Windows 10, consultez (/windows/release-health/release-information).
+Pour plus d’informations sur les versions prises en charge de Windows 10, consultez [Windows 10 informations de publication](/windows/release-health/release-information).
 
 > [!NOTE]
 > - Les points de terminaison exécutant des versions mobiles de Windows (par exemple, Windows CE et Windows 10 Mobile) ne sont pas pris en charge.
@@ -205,9 +205,9 @@ Si vous insérez des serveurs et que l’antivirus Microsoft Defender n’est pa
 
 Si vous exécutez l’antivirus Microsoft Defender en tant que produit anti-programme malveillant principal sur vos appareils, l’agent Defender pour point de terminaison sera intégré avec succès.
 
-Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions Mobile Gestion des appareils ou Microsoft Endpoint Manager (current branch), vous devez vous assurer que l’antivirus Microsoft Defender logiciel anti-programme malveillant à lancement anticipé est activé. Pour plus d’informations, consultez [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions Mobile Gestion des appareils ou Microsoft Endpoint Manager (current branch), vous devez vous assurer que le pilote ELAM antivirus Microsoft Defender est activé. Pour plus d’informations, consultez [Vérifier que l’antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Configurer Microsoft Defender pour point de terminaison déploiement](production-deployment.md)
 - [Intégrer des appareils](onboard-configure.md)

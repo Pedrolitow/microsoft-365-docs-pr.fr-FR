@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f5b4cfc38f702bf7ea5affdae13f2215c044fc89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486704"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174891"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Android
 
@@ -30,6 +30,12 @@ ms.locfileid: "66486704"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+>[!NOTE]
+> Le **moteur anti-programme malveillant** de Microsoft Defender pour point de terminaison est désormais en disponibilité générale. Tous les utilisateurs doivent disposer d’une version Microsoft Defender pour point de terminaison supérieure à **1.0.3815.0000** pour utiliser cette nouvelle fonctionnalité de protection contre les programmes malveillants. Les utilisateurs sur Microsoft Defender pour point de terminaison version inférieure à 1.0.3815.0000 recevront des notifications et des messages de superposition dans l’application pour mettre à jour leur application Microsoft Defender pour point de terminaison. Les utilisateurs peuvent cliquer sur le lien fourni dans le message de superposition pour accéder au magasin de jeux managé et mettre à jour l’application. 
+>
+> Si les utilisateurs ne peuvent pas accéder au Play Store, l’application peut être mise à jour via le portail d’entreprise. 
+
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Profil personnel BYOD microsoft defender sur Android Entreprise
 Microsoft Defender pour point de terminaison est désormais pris en charge sur le profil personnel Android Entreprise (BYOD uniquement) avec toutes les fonctionnalités clés, notamment l’analyse des programmes malveillants, la protection contre les liens de hameçonnage, la protection réseau et la gestion des vulnérabilités. Cette prise en charge est associée à [des contrôles de confidentialité](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) pour garantir la confidentialité des utilisateurs sur le profil personnel. Pour plus d’informations, lisez [l’annonce](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) et le [guide de déploiement](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).

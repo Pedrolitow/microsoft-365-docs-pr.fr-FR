@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 231bd79e0c825b38d44ca45c078cbe4d7aa432c0
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100138"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175551"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour point de terminaison pour des fonctionnalités Android
 
@@ -91,9 +91,6 @@ La protection réseau dans Microsoft Defender pour point de terminaison est acti
 
 ## <a name="privacy-controls"></a>Contrôles de confidentialité
 
-> [!IMPORTANT]
-> Les contrôles de confidentialité pour Microsoft Defender pour point de terminaison sur Android sont en préversion. Les informations suivantes concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
-
 Les contrôles de confidentialité suivants sont disponibles pour configurer les données envoyées par Defender pour point de terminaison à partir d’appareils Android :
 
 |Rapport sur les menaces     |Détails      |
@@ -102,6 +99,42 @@ Les contrôles de confidentialité suivants sont disponibles pour configurer les
 |Rapport de hameçonnage |Les administrateurs peuvent configurer le contrôle de confidentialité pour le rapport de hameçonnage . Si la confidentialité est activée, Defender pour point de terminaison n’envoie pas le nom de domaine et les détails du site web non sécurisé dans le cadre du rapport d’alerte de hameçonnage |
 |Évaluation des vulnérabilités des applications (Android uniquement) |Par défaut, seules les informations sur les applications installées dans le profil professionnel sont envoyées pour l’évaluation des vulnérabilités. Les administrateurs peuvent désactiver la confidentialité pour inclure des applications personnelles|
 |Protection réseau (préversion)| Les administrateurs peuvent activer ou désactiver la confidentialité dans la protection réseau . S’il est activé, Defender n’envoie pas les détails du réseau.|
+
+### <a name="configure-privacy-alert-report"></a>Configurer le rapport d’alerte de confidentialité
+Les administrateurs peuvent désormais activer le contrôle de confidentialité pour le rapport de hameçonnage, le rapport de programmes malveillants et le rapport réseau envoyés par Microsoft Defender pour point de terminaison sur Android. Cela garantit que le nom de domaine, les détails de l’application et les détails du réseau, respectivement, ne sont pas envoyés dans le cadre de l’alerte chaque fois qu’une menace correspondante est détectée.
+
+Administration contrôles de confidentialité (GPM), procédez comme suit pour activer la confidentialité.
+
+1. Dans le Centre d’administration Microsoft Endpoint Manager, accédez aux stratégies de **configuration des applications > app > Ajouter des appareils gérés >**.
+
+2. Donnez un **nom à la stratégie, Platform > Android Enterprise, sélectionnez le type de profil**.
+
+3. Sélectionnez **Microsoft Defender pour point de terminaison** comme application cible.
+
+4. Dans la page Paramètres, **sélectionnez Utiliser le concepteur de configuration** , puis cliquez sur **Ajouter**. 
+5. Sélectionnez le paramètre de confidentialité requis -
+    - Masquer les URL dans le rapport
+    - Masquer les URL dans le rapport pour le profil personnel
+    - Masquer les détails de l’application dans le rapport
+    - Masquer les détails de l’application dans le rapport pour le profil personnel
+    - Activer la confidentialité de la protection du réseau
+
+6. Pour activer la confidentialité, entrez la valeur entière 1 et attribuez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur 0 pour MDE dans le profil professionnel et 1 pour MDE sur le profil personnel.
+
+7. Passez en revue et affectez ce profil à des appareils/utilisateurs ciblés.
+
+**Contrôles de confidentialité des utilisateurs finaux**
+
+Ces contrôles aident l’utilisateur final à configurer les informations partagées avec son organisation.
+
+1. Pour le **profil professionnel Android Entreprise**, les contrôles de l’utilisateur final ne sont pas visibles. Les administrateurs contrôlent ces paramètres.
+2. Pour le **profil personnel Android Enterprise**, le contrôle s’affiche sous **Paramètres> Confidentialité**.
+3. Les utilisateurs verront un bouton bascule pour les informations de site non sécurisées, l’application malveillante et la protection réseau.
+
+Ces boutons bascules ne seront visibles que s’ils sont activés par l’administrateur. Les utilisateurs peuvent décider s’ils souhaitent envoyer les informations à leur organisation ou non.
+
+L’activation/désactivation des contrôles de confidentialité ci-dessus n’a pas d’impact sur la vérification de conformité de l’appareil ou l’accès conditionnel.
+
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Configurer l’évaluation des vulnérabilités des applications pour les appareils BYOD
 

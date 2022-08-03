@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 7dbf52dd3d1f08d9c5321874a54db48b7ef2e835
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107988"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175507"
 ---
 # <a name="using-tags"></a>Utilisation de balises
 Microsoft Defender Threat Intelligence balises (Defender TI) sont utilisées pour fournir un aperçu rapide d’un artefact, qu’il soit dérivé par le système ou généré par d’autres utilisateurs. Les balises aident les analystes à connecter les points entre les incidents et les investigations actuels et leur contexte historique pour une analyse améliorée.
@@ -41,7 +41,7 @@ Les balises système peuvent inclure :
 
 ![Système d’étiquettes](media/tagsSystem.png)
 
-## <a name="custom-tags"></a>Balises personnalisées
+## <a name="custom-tags"></a>Indicateurs personnalisés
 
 Balises personnalisées à l’intérieur de Defender TI pour mettre en contexte les indicateurs de compromission (IOC) et simplifier encore l’analyse en identifiant les domaines qui sont connus comme étant incorrects dans les rapports publics ou qui ont été classés par les analystes de votre entreprise. Ces balises sont créées manuellement par les utilisateurs en fonction de leurs propres investigations. Ces balises permettent aux utilisateurs de partager des insights clés sur un artefact avec d’autres utilisateurs de licence Defender TI Premium au sein de leur locataire.
 
@@ -98,9 +98,9 @@ Common Tag Use Case Workflow Supposons qu’un analyste de triage examine un inc
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
-- [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](index.md)
 - [Jeux de données](data-sets.md)
 - [Tri, filtrage et téléchargement de données](sorting-filtering-and-downloading-data.md)
-- [Scoring de réputation](reputation-scoring.md)
+- [Score de réputation](reputation-scoring.md)
 - [Insights des analystes](analyst-insights.md)
 - [Utilisation de projets](using-projects.md)

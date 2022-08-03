@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer les e-mails et les entrées d’expéditeur usurpés dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a16a8234b1d0ff2a3647d7f66923faa66784ea72
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493223"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175001"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
 
@@ -40,10 +40,10 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour autori
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. Dans la page **Autoriser/Bloquer la liste** des locataires, vérifiez que l’onglet **Expéditeurs** est sélectionné, puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
+2. Dans la page **Autoriser/Bloquer la liste** des locataires, vérifiez que l’onglet **Domaines & adresses** est sélectionné, puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
 
-3. Dans le menu volant **Bloquer les expéditeurs** qui s’affiche, configurez les paramètres suivants :
-   - **Adresses de messagerie ou domaines de l’expéditeur** : entrez un expéditeur (adresse e-mail ou domaine) par ligne, jusqu’à un maximum de 20.
+3. Dans le **menu volant Bloquer les domaines & adresses** qui s’affiche, configurez les paramètres suivants :
+   - **Email adresses ou domaines** : entrez une adresse e-mail ou un domaine par ligne, jusqu’à un maximum de 20.
    - **N’expirez jamais** : effectuez l’une des étapes suivantes :
      - Vérifiez que le paramètre est désactivé (![désactiver.](../../media/scc-toggle-off.png)) et utilisez la case **Supprimer** pour spécifier la date d’expiration des entrées.
 
@@ -56,6 +56,7 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour autori
 
 > [!NOTE]
 > Les e-mails de ces expéditeurs seront bloqués en tant que _courrier indésirable à haut niveau de confiance_ (SCL = 9).
+> Les utilisateurs de l’organisation ne pourront pas envoyer d’e-mails à ces domaines et adresses bloqués. Ils recevront un rapport de non-remise qui indiquera ce qui suit : « 5.7.1 Votre message ne peut pas être remis, car un ou plusieurs destinataires sont bloqués par la stratégie d’autorisation/de liste de blocage du locataire de votre organisation. »
 
 ### <a name="use-powershell"></a>Utiliser PowerShell
 
@@ -174,7 +175,7 @@ Seuls les messages de cette paire d’infrastructure de domaine _et_ d’envoi s
 ### <a name="use-microsoft-365-defender"></a>Utiliser Microsoft 365 Defender
 
 > [!NOTE]
-> Les e-mails de ces expéditeurs seront bloqués en tant que _hameçonnage_.
+> Email de ces expéditeurs seront bloqués en tant que _hameçonnage_.
 >
 > Seule la _combinaison_ de l’utilisateur usurpé _et_ de l’infrastructure d’envoi définie dans la paire de domaines est spécifiquement autorisée ou bloquée pour l’usurpation d’identité.
 >
@@ -184,7 +185,7 @@ Seuls les messages de cette paire d’infrastructure de domaine _et_ d’envoi s
 
 1. Dans le portail Microsoft 365 Defender, accédez à la section Stratégies **& règles de règles** sur les stratégies \> **de menaces** \> , section  \> **Listes d’autorisation/de blocage du locataire**.
 
-2. Dans la page **Autoriser/Bloquer la liste des locataires** , sélectionnez l’onglet **Usurpation d’identité** , puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Ajouter**.
+2. Dans la page **Autoriser/Bloquer la liste** des locataires, sélectionnez l’onglet **Expéditeurs usurpés** , puis cliquez sur l’icône ![Bloquer.](../../media/m365-cc-sc-create-icon.png) **Ajouter**.
 
 3. Dans le menu volant **Ajouter de nouvelles paires de domaines** qui s’affiche, configurez les paramètres suivants :
    - **Ajoutez de nouvelles paires de domaines avec des caractères génériques** : entrez une paire de domaines par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’expéditeur usurpées, consultez [Gérer la liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md).
@@ -218,9 +219,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 > - Lorsque vous configurez une entrée d’autorisation ou de blocage pour une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’insight d’intelligence contre l’usurpation d’identité.
 > - Les entrées des expéditeurs usurpés n’expirent jamais.
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Ou, pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & stratégies de **collaboration** \> **& règles Les stratégies** \> **de menace** **sont des listes** \> d’autorisation/de blocage dans la section **Règles**. Ou, pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. Dans la page **Autoriser/Bloquer la liste des locataires** , sélectionnez l’onglet **Usurpation d’identité** , puis cliquez sur ![l’icône Ajouter.](../../media/m365-cc-sc-create-icon.png) **Ajouter**.
+2. Dans la page **Autoriser/Bloquer la liste** des locataires, sélectionnez l’onglet **Expéditeurs usurpés** , puis cliquez sur ![l’icône Ajouter.](../../media/m365-cc-sc-create-icon.png) **Ajouter**.
 
 3. Dans le menu volant **Ajouter de nouvelles paires de domaines** qui s’affiche, configurez les paramètres suivants :
    - **Ajoutez de nouvelles paires de domaines avec des caractères génériques** : entrez une paire de domaines par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’expéditeur usurpées, consultez [Gérer la liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md).
@@ -260,7 +261,7 @@ Utilisez [les soumissions d’administrateur](admin-submission.md) pour envoyer 
 
 > [!NOTE]
 >
-> - La paire de domaines de l’expéditeur usurpé sera créée et visible sous l’onglet **Usurpation** d’identité sous la page **de liste d’autorisations/de blocs du locataire** .
+> - La paire de domaines d’expéditeur usurpé sera créée et visible sous l’onglet **Expéditeurs usurpés** sous la page **d’autorisation/liste de blocs du locataire** .
 
 
 ### <a name="use-powershell"></a>Utiliser PowerShell

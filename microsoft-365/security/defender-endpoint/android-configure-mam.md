@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 48a128e32e949ecad6c34c4dfc96f6246780d0db
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 9918763732fa828f17b395a3f96b24e8fbed46f2
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670177"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174979"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurer Microsoft Defender pour point de terminaison signaux de risque à l’aide de stratégies de protection des applications (MAM)
 
@@ -31,17 +31,17 @@ ms.locfileid: "65670177"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
-Microsoft Defender pour point de terminaison sur Android, qui protège déjà les utilisateurs d’entreprise dans les scénarios de Gestion des appareils mobile (GPM), étend désormais la prise en charge de la gestion des applications mobiles (GAM) pour les appareils qui ne sont pas inscrits à l’aide de Intune gestion des appareils mobiles (GPM) . Il étend également ce support aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en continuant à utiliser Intune pour la gestion des applications mobiles (MAM). Cette fonctionnalité vous permet de gérer et de protéger les données de votre organisation au sein d’une application.
+Microsoft Defender pour point de terminaison sur Android, qui protège déjà les utilisateurs d’entreprise dans les scénarios de Gestion des appareils mobiles (GPM), étend désormais la prise en charge de la gestion des applications mobiles (GAM) pour les appareils qui ne sont pas inscrits à l’aide de Intune gestion des appareils mobiles (GPM). Il étend également ce support aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en continuant à utiliser Intune pour la gestion des applications mobiles (MAM). Cette fonctionnalité vous permet de gérer et de protéger les données de votre organisation au sein d’une application.
 
-Microsoft Defender pour point de terminaison sur Android informations sur les menaces est appliquée par Intune stratégies de protection des applications pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une application managée a des stratégies de protection des applications qui lui sont appliquées et peuvent être gérées par Intune.  
+Microsoft Defender pour point de terminaison sur les informations sur les menaces Android est appliquée par Intune stratégies de protection des applications pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une application managée a des stratégies de protection des applications qui lui sont appliquées et peuvent être gérées par Intune.  
 
-Microsoft Defender pour point de terminaison sur Android prend en charge les deux configurations de mam
+Microsoft Defender pour point de terminaison sur Android prend en charge les deux configurations de MAM
 - **Intune GPM + GAM** : les administrateurs informatiques peuvent uniquement gérer les applications à l’aide de stratégies de protection des applications sur les appareils inscrits auprès de Intune gestion des appareils mobiles (GPM).
-- Gestion des applications mobiles **sans inscription d’appareil** : la gestion des applications mobiles sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies [de protection](/mem/intune/apps/app-protection-policy) des applications sur les appareils qui ne sont pas inscrits auprès de Intune GPM. Cette disposition signifie que les applications peuvent être gérées par Intune sur les appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications dans ces deux configurations, les clients doivent utiliser Intune dans le [centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+- Gestion des applications mobiles **sans inscription d’appareil** : la gestion des applications mobiles sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies [de protection](/mem/intune/apps/app-protection-policy) des applications sur les appareils qui ne sont pas inscrits auprès de Intune GPM. Cette disposition signifie que les applications peuvent être gérées par Intune sur les appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications dans ces deux configurations, les clients doivent utiliser Intune dans le Centre d’administration [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 Pour activer cette fonctionnalité, un administrateur doit configurer la connexion entre Microsoft Defender pour point de terminaison et Intune, créer la stratégie de protection des applications et appliquer la stratégie sur les appareils et applications ciblés. 
  
@@ -64,7 +64,7 @@ Les utilisateurs finaux doivent également prendre des mesures pour installer Mi
 
   :::image type="content" source="images/validate-intune-connector.png" alt-text="Volet d’état intune-connecteur dans le portail Microsoft 365 Defender" lightbox="images/validate-intune-connector.png":::
 
-- **Activer Microsoft Defender pour point de terminaison sur Android Connecteur pour la stratégie app protection (APP)**
+- **Activer Microsoft Defender pour point de terminaison sur le connecteur Android pour la stratégie app protection (APP)**
   
   Configurez le connecteur sur Intune Microsoft Endpoint Manager pour les stratégies de Protection d'applications :
 
@@ -88,11 +88,11 @@ Les stratégies de protection des applications (APP) sont des règles qui garant
 
 2. Ajouter des applications <br>
     a. Choisissez comment appliquer cette stratégie aux applications sur différents appareils. Ajoutez ensuite au moins une application. <br>
-    Utilisez cette option pour spécifier si cette stratégie s’applique aux appareils non gérés. Dans Android, vous pouvez spécifier que la stratégie s’applique aux appareils Android Enterprise, Administration d’appareil ou non gérés. Vous pouvez également choisir de cibler votre stratégie sur des applications sur des appareils de n’importe quel état de gestion.
+    Utilisez cette option pour spécifier si cette stratégie s’applique aux appareils non gérés. Dans Android, vous pouvez spécifier que la stratégie s’applique aux appareils Android Enterprise, Device Administration ou Non managés. Vous pouvez également choisir de cibler votre stratégie sur des applications sur des appareils de n’importe quel état de gestion.
 Étant donné que la gestion des applications mobiles ne nécessite pas de gestion des appareils, vous pouvez protéger les données d’entreprise à la fois sur les appareils gérés et non gérés. La gestion est centrée autour de l’identité de l’utilisateur, ce qui supprime la nécessité de gérer les appareils. Les entreprises peuvent utiliser des stratégies de protection des applications avec ou sans GPM en même temps. Considérons, par exemple, un employé qui utilise à la fois un téléphone fourni par l’entreprise et sa propre tablette personnelle. Le téléphone de l’entreprise est inscrit dans la gestion des appareils mobiles (MAM) et protégé par des stratégies de protection des applications, tandis que l’appareil personnel est protégé uniquement par des stratégies de protection des applications.
 
     b. Sélectionner des applications<br>
-    Une application gérée est une application à laquelle des stratégies de protection d’application sont appliquées et pouvant être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou encapsulée par le [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de Intune stratégies de protection des applications. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
+    Une application gérée est une application à laquelle sont appliquées des stratégies de protection des applications et qui peut être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou encapsulée par le [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de Intune stratégies de protection des applications. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
 
     *Exemple : Outlook en tant qu’application managée*
 
@@ -118,9 +118,9 @@ Sélectionnez **Paramètre > niveau maximal autorisé de menace d’appareil** d
 
 ### <a name="end-user-onboarding"></a>Intégration des utilisateurs finaux 
 
-1. Connectez-vous à une application managée, par exemple, Outlook. L’appareil est inscrit et la stratégie de protection des applications est synchronisée avec l’appareil. La stratégie de protection des applications reconnaît l’état d’intégrité de l’appareil.  
+1. Connectez-vous à une application managée, par exemple Outlook. L’appareil est inscrit et la stratégie de protection des applications est synchronisée avec l’appareil. La stratégie de protection des applications reconnaît l’état d’intégrité de l’appareil.  
 
-2. Cliquez sur **Continuer**. Un écran est présenté qui recommande le téléchargement et la configuration de Microsoft Defender pour point de terminaison sur Android application.
+2. Cliquez sur **Continuer**. Un écran est présenté qui recommande le téléchargement et la configuration de Microsoft Defender pour point de terminaison sur l’application Android.
 
 3. Sélectionnez **Télécharger**. Vous serez redirigé vers l’App Store (Google Play). 
 
@@ -133,7 +133,53 @@ Sélectionnez **Paramètre > niveau maximal autorisé de menace d’appareil** d
 
 6. Sélectionnez **Continuer** à vous connecter à l’application managée. 
 
+### <a name="configure-privacy-controls"></a>Configurer les contrôles de confidentialité 
+Les administrateurs peuvent utiliser les étapes suivantes pour activer la confidentialité et ne pas collecter le nom de domaine, les détails de l’application et les informations réseau dans le cadre du rapport d’alerte pour les menaces correspondantes.
 
+1. Dans le Centre d’administration Microsoft Endpoint Manager, accédez aux **stratégies de configuration des applications > app > Ajouter des applications managées >**.
+
+2. Donner à la stratégie un **nom**.
+
+3. Sous Sélectionner les applications publiques, choisissez **Microsoft Defender pour point de terminaison** comme application cible.
+
+4. Dans la page Paramètres, sous Paramètres de configuration générale, ajoutez **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** comme clés et valeur true.
+
+5. Affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur false.
+
+6. Examinez et créez la stratégie.
+
+## <a name="optional-permissions"></a>Autorisations facultatives 
+
+Microsoft Defender pour point de terminaison sur Android active les autorisations facultatives dans le flux d’intégration. Actuellement, les autorisations requises par MDE sont obligatoires dans le flux d’intégration. Avec cette fonctionnalité, l’administrateur peut déployer MDE sur des appareils Android avec des stratégies GAM sans appliquer les autorisations VPN et d’accessibilité obligatoires lors de l’intégration. Les utilisateurs finaux peuvent intégrer l’application sans les autorisations obligatoires et passer en revue ultérieurement ces autorisations. 
+
+### <a name="configure-optional-permission"></a>Configurer l’autorisation facultative
+
+Utilisez les étapes suivantes pour activer les autorisations facultatives pour les appareils.
+
+1. Dans le Centre d’administration Microsoft Endpoint Manager, accédez aux **stratégies de configuration des applications > app > Ajouter des applications managées >**.
+
+2. Donner à la stratégie un **nom**.
+
+3. Sélectionnez **Microsoft Defender pour point de terminaison*** dans les applications publiques.
+
+4. Dans la page Paramètres, **sélectionnez Utiliser le concepteur de configuration** et ajoutez **DefenderOptionalVPN** ou **DefenderOptionalAccessibility** , ou **les deux** comme type clé et valeur booléen. 
+
+5. Pour activer les autorisations facultatives, entrez la valeur **true** et affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur false.
+Pour les utilisateurs avec la clé définie comme true, les utilisateurs pourront intégrer l’application sans accorder ces autorisations.
+
+6. Sélectionnez **Suivant** et affectez ce profil aux appareils/utilisateurs ciblés.
+
+### <a name="user-flow"></a>Flux utilisateur 
+
+Les utilisateurs peuvent installer et ouvrir l’application pour démarrer le processus d’intégration.
+
+1. Si un administrateur dispose d’autorisations facultatives de configuration, les utilisateurs peuvent choisir d’ignorer l’autorisation VPN ou d’accessibilité ou les deux et d’effectuer l’intégration.
+2. Même si l’utilisateur a ignoré ces autorisations, l’appareil sera en mesure d’intégrer et une pulsation sera envoyée.
+3. Étant donné que les autorisations sont désactivées, la protection web n’est pas active. Elle sera partiellement active si l’une des autorisations est accordée.
+4. Par la suite, les utilisateurs peuvent activer la protection web à partir de l’application. Cela permet d’installer la configuration VPN sur l’appareil.
+
+>[!NOTE] 
+> Le paramètre Autorisations facultatives est différent du paramètre Désactiver la protection web. Les autorisations facultatives permettent uniquement d’ignorer les autorisations pendant l’intégration, mais l’utilisateur final peut les examiner et les activer ultérieurement, tandis que la désactivation de la protection web permet aux utilisateurs d’intégrer l’application Microsoft Defender pour point de terminaison sans protection web. Il ne peut pas être activé ultérieurement.
 
 ## <a name="related-topics"></a>Voir aussi
 

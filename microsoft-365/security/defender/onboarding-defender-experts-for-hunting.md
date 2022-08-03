@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aab1c0661ce039e6a9fb561c2e93f71e2c5847d6
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108425"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175529"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Commencer à utiliser microsoft Defender Experts pour la chasse
 
@@ -110,7 +110,7 @@ L’option **Demander aux experts Defender** est disponible à plusieurs endroit
 ### <a name="alert-information"></a>Informations sur les alertes
 
 - Nous avons vu un nouveau type d’alerte pour un binaire vivant hors du pays. Nous pouvons fournir l’ID d’alerte. Pouvez-vous nous en dire plus sur cette alerte et si elle est liée à un incident et comment nous pouvons l’examiner plus en détail ?
-- Nous avons observé deux attaques similaires, qui tentent toutes les deux d’exécuter des scripts PowerShell malveillants, mais génèrent des alertes différentes. L’une est « Ligne de commande PowerShell suspecte » et l’autre est « Un fichier malveillant a été détecté en fonction de l’indication fournie par O365 ». Quelle est la différence ?
+- Nous avons observé deux attaques similaires, qui tentent toutes les deux d’exécuter des scripts PowerShell malveillants, mais génèrent des alertes différentes. L’une est « Ligne de commande PowerShell suspecte » et l’autre est « Un fichier malveillant a été détecté en fonction de l’indication fournie par Office 365 ». Quelle est la différence ?
 - Nous avons reçu aujourd’hui une alerte impaire concernant un nombre anormal de connexions ayant échoué à partir de l’appareil d’un utilisateur à profil élevé. Nous ne trouvons aucune preuve supplémentaire de ces tentatives. Comment Microsoft 365 Defender voir ces tentatives ? Quel type de connexions sont surveillés ?
 - Pouvez-vous donner plus de contexte ou d’informations sur l’alerte et les incidents connexes , « Comportement suspect par un utilitaire système a été observé » ?
 - J’ai observé une alerte intitulée « Création d’une règle de transfert/redirection ». Je crois que l’activité est bénigne. Pouvez-vous me dire pourquoi j’ai reçu une alerte ?
@@ -128,7 +128,7 @@ L’option **Demander aux experts Defender** est disponible à plusieurs endroit
 
 ### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Communications d’alerte des experts Microsoft Defender pour la chasse
 
-- Votre équipe de réponse aux incidents peut-elle nous aider à traiter la notification d’attaque ciblée que nous avons obtenue ?
+- Votre équipe de réponse aux incidents peut-elle nous aider à traiter la notification Defender Experts que nous avons obtenue ?
 - Nous avons reçu cette notification defender experts de Microsoft Defender Experts pour la chasse. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
 - Nous avons reçu une notification defender experts de Microsoft Defender Experts pour la chasse. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
 

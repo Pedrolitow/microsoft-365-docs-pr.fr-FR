@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ca93c64494f163c5d08243c7d797f63bcdfda54e
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822222"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175470"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -31,7 +31,7 @@ ms.locfileid: "66822222"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans Exchange Online boîtes aux lettres, vous pouvez être en désaccord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message incorrect peut être autorisé (un faux négatif).
 
@@ -39,11 +39,11 @@ La liste d’autorisation/de blocage des locataires dans le portail Microsoft 36
 
 - URL à bloquer.
 - Fichiers à bloquer.
-- E-mails ou domaines de l’expéditeur à bloquer.
+- Email domaines ou adresses à bloquer.
 - Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict d’autorisation ou de blocage dans [l’insight d’intelligence](learn-about-spoof-intelligence.md) de l’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui n’apparaît que sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés ici avant qu’elles ne soient détectées par l’intelligence de l’usurpation d’identité.
 - URL à autoriser.
 - Fichiers à autoriser.
-- E-mails ou domaines de l’expéditeur à autoriser.
+- Email domaines ou adresses à autoriser.
 
 Cet article explique comment configurer des entrées dans la liste verte/de blocage des locataires dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online  boîtes aux lettres).
 
@@ -56,7 +56,7 @@ Cet article explique comment configurer des entrées dans la liste verte/de bloc
 
 - Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
 
-  ```console
+  ```DOS
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -64,13 +64,17 @@ Cet article explique comment configurer des entrées dans la liste verte/de bloc
 
 - Les valeurs d’URL disponibles sont décrites dans la [syntaxe d’URL de la section Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) plus loin dans cet article.
 
-- La liste d’autorisation/de blocage du locataire autorise un maximum de 500 entrées pour les expéditeurs, 500 entrées pour les URL, 500 entrées pour les hachages de fichier et 1 024 entrées pour l’usurpation d’identité (expéditeurs usurpés).
+- La liste d’autorisations/de blocs du locataire a les limites suivantes :
+  - 500 entrées pour les domaines & adresses.
+  - 500 entrées pour les URL.
+  - 500 entrées pour les hachages de fichier.
+  - 1 024 entrées pour usurpation d’identité (expéditeurs usurpés).
 
-- Le nombre maximal de caractères pour chaque entrée est le suivant :
-  - Hachages de fichier = 64
-  - URL = 250
+- Les entrées dans la liste d’autorisations/de blocs du locataire ont les limites suivantes :
+  - 64 caractères pour les hachages de fichier.
+  - 250 caractères pour les URL.
 
-- Une entrée doit être active dans les 30 minutes.
+- 99,99 % des entrées doivent être actives dans les 30 minutes. Les entrées qui ne sont pas actives dans les 30 minutes peuvent prendre jusqu’à 24 heures. 
 
 - Par défaut, les entrées de la liste d’autorisations/de blocs du locataire expirent après 30 jours. Vous pouvez spécifier une date ou les définir pour qu’elles n’expirent jamais (pour les blocs uniquement).
 
@@ -116,14 +120,14 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
 
 2. Sélectionnez l’onglet souhaité. Les colonnes disponibles dépendent de l’onglet que vous avez sélectionné :
 
-   - **Expéditeurs** :
-     - **Valeur** : domaine ou adresse e-mail de l’expéditeur.
+   - **Domaines & adresses** :
+     - **Valeur** : domaine ou adresse e-mail.
      - **Action** : valeur **Allow** ou **Block**.
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
-   - **Usurpation**
+     - **Remarques**
+   - **Expéditeurs usurpés**
      - **Utilisateur usurpé**
      - **Envoi d’une infrastructure**
      - **Type d’usurpation** d’identité : valeur **interne** ou **externe**.
@@ -134,21 +138,21 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
    - **Files**
      - **Valeur** : hachage du fichier.
      - **Action** : valeur **Allow** ou **Block**.
      - **Modifié par**
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier dans l’ordre croissant ou décroissant.
 
    Vous pouvez cliquer sur **Groupe** pour regrouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
-   - **Expéditeurs** : vous pouvez regrouper les résultats par **action**.
-   - **Usurpation d’identité** : vous pouvez regrouper les résultats par **type Action** ou **Usurpation d’identité**.
+   - **Domaines & adresses** : vous pouvez regrouper les résultats par **action**.
+   - **Expéditeurs usurpés** : vous pouvez regrouper les résultats par **type Action** ou **Usurpation d’identité**.
    - **URL** : vous pouvez regrouper les résultats par **action**.
    - **Fichiers** : vous pouvez regrouper les résultats par **action**.
 
@@ -156,15 +160,15 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
 
    Cliquez sur **Filtrer** pour filtrer les résultats. Les valeurs disponibles dans le menu volant **Filtre** qui s’affiche dépendent de l’onglet que vous avez sélectionné :
 
-   - **Expéditeurs**
+   - **Domaines & adresses**
      - **Action**
      - **N’expirez jamais**
      - **Dernière date de mise à jour**
      - **Supprimer le**
-   - **Usurpation**
+   - **Expéditeurs usurpés**
      - **Action**
      - **Type d’usurpation d’identité**
-   - **Url**
+   - **URL**
      - **Action**
      - **N’expirez jamais**
      - **Dernière date de mise à jour**
@@ -179,9 +183,9 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
 
 3. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées de l’expéditeur, du fichier ou de l’URL dans la liste d’autorisation/de blocage du locataire
+## <a name="view-domains--addresses-file-or-url-entries-in-the-tenant-allowblock-list"></a>Afficher les domaines & adresses, les entrées de fichier ou d’URL dans la liste d’autorisations/de blocs du locataire
 
-Pour afficher les entrées d’expéditeur de bloc, de fichier ou d’URL dans la liste d’autorisations/de blocs du locataire, utilisez la syntaxe suivante :
+Pour afficher les domaines de bloc & les adresses, les entrées de fichier ou d’URL dans la liste d’autorisation/de blocage du locataire, utilisez la syntaxe suivante :
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -424,7 +428,7 @@ Les entrées suivantes ne sont pas valides :
 
 - **Valeurs de domaine manquantes ou non valides** :
 
-  - Contoso
+  - contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
@@ -490,6 +494,6 @@ Seuls les messages de cette paire d’infrastructure de domaine *et* d’envoi s
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
 
-Une fois que vous avez ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement une fois l’entrée active. L’entrée sera principalement active dans les 30 minutes, mais parfois elle peut prendre jusqu’à 24 heures.
+Une fois que vous avez ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement une fois l’entrée active. 99,99 % des entrées doivent être actives dans les 30 minutes. Les entrées qui ne sont pas actives dans les 30 minutes peuvent prendre jusqu’à 24 heures.
 
 Nous vous recommandons de laisser les entrées expirer automatiquement après 30 jours pour voir si le système a découvert l’autorisation ou le bloc. Si ce n’est pas le cas, vous devez faire une autre entrée pour donner au système encore 30 jours pour apprendre.

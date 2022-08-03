@@ -7,14 +7,14 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 544725fcc359429fdd4d71059dd49719f7c3c601
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108036"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175573"
 ---
-# <a name="searching-and-pivoting"></a>Recherche et sélection dynamique
+# <a name="searching-and-pivoting"></a>Recherche et pivotage
 
 Microsoft Defender Threat Intelligence (Defender TI) offre un moteur de recherche robuste et flexible pour simplifier le processus d’investigation. La plateforme est conçue pour permettre aux utilisateurs de pivoter sur un large éventail d’indicateurs provenant de différentes sources de données, ce qui facilite plus que jamais la découverte des relations entre une infrastructure disparate. Cet article aidera les utilisateurs à comprendre comment effectuer une recherche et effectuer un pivot sur différents jeux de données pour découvrir les relations entre différents artefacts.
 
@@ -172,7 +172,7 @@ Cette section affiche également toutes les balises appliquées à l’artefact 
 
 ## <a name="summary-tab"></a>Onglet Résumé
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Aperçu
 
 Les résultats d’une recherche Threat Intelligence sont regroupés en deux onglets : « Résumé » et « Données ». L’onglet Résumé fournit des insights clés sur un artefact que la plateforme a dérivé de nos jeux de données étendus. Cette section est conçue pour exposer les principales conclusions qui peuvent aider à lancer une enquête.
 
@@ -196,7 +196,7 @@ Pour plus d’informations, consultez [Insights de l’analyste](analyst-insight
 
 La section Articles affiche tous les articles qui peuvent fournir des insights sur la meilleure façon d’examiner et de désarmer l’artefact impacté. Ces articles sont écrits par des chercheurs qui étudient le comportement des acteurs connus des menaces et de leur infrastructure, présentant des résultats clés qui peuvent aider d’autres personnes à atténuer les risques pour leur organisation. Dans cet exemple, l’adresse IP recherchée a été identifiée comme un IOC lié aux résultats de l’article.
 
-Pour plus d’informations, consultez [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+Pour plus d’informations, consultez [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](index.md)
 
 ![Articles de l’onglet Résumé](media/summaryTabArticles.png)
 
@@ -236,7 +236,7 @@ Microsoft collabore avec plusieurs référentiels commerciaux et open source de 
 
 ## <a name="data-tab"></a>Onglet Données
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Présentation
 
 L’onglet Données aide les utilisateurs à approfondir les connexions tangibles observées par la plateforme Defender TI. Bien que l’onglet Résumé expose les principales conclusions pour fournir un contexte immédiat sur un artefact, l’onglet Données permet aux analystes d’étudier ces connexions beaucoup plus granulairement. Les utilisateurs peuvent cliquer sur n’importe quelle valeur retournée pour pivoter sur toutes les métadonnées associées.
 
@@ -496,7 +496,7 @@ La section « Intelligence » met en évidence les insights organisés dans la p
 
 La section Articles affiche tous les articles qui peuvent fournir des insights sur la meilleure façon d’examiner et de désarmer l’artefact impacté. Ces articles sont écrits par des chercheurs qui étudient le comportement des acteurs connus des menaces et de leur infrastructure, présentant des résultats clés qui peuvent aider d’autres personnes à atténuer les risques pour leur organisation. Dans cet exemple, l’adresse IP recherchée a été identifiée comme un IOC lié aux résultats de l’article.
 
-Pour plus d’informations, consultez [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+Pour plus d’informations, consultez [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](index.md)
 
 ![Data Tab Intelligence Articles](media/dataTabIntelligenceArticles.png)
 
@@ -520,7 +520,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Tri, filtrage et téléchargement de données](sorting-filtering-and-downloading-data.md)
 - [Jeux de données](data-sets.md)
-- [Scoring de réputation](reputation-scoring.md)
+- [Score de réputation](reputation-scoring.md)
 - [Insights des analystes](analyst-insights.md)
-- [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?](index.md)
 - [Utilisation de projets](using-projects.md)
