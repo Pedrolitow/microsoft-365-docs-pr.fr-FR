@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 022c5854c955ed9b0faef16455be1af3a81b0997
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 574a3b1206212b627176b4d85555f6acc15ebda6
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487286"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276937"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter des méthodes et des propriétés d’évaluation par appareil
 
@@ -36,7 +36,7 @@ ms.locfileid: "66487286"
 
 ## <a name="api-description"></a>Description de l’API
 
-Fournit des méthodes et des détails de propriété sur les API qui extraient Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
+Fournit des méthodes et des détails de propriété sur les API qui extraient les données de gestion des vulnérabilités par appareil. Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
 > [!NOTE]
 > Sauf indication contraire, toutes les méthodes d’évaluation d’exportation répertoriées sont **_l’exportation complète_** et **_par appareil_** (également appelée **_par appareil_**).
@@ -46,6 +46,7 @@ Vous pouvez utiliser les API d’évaluation d’exportation pour récupérer (e
 - [1. Exporter l’évaluation des configurations sécurisées](#1-export-secure-configurations-assessment)
 - [2. Exporter l’évaluation de l’inventaire logiciel](#2-export-software-inventory-assessment)
 - [3. Exporter l’évaluation des vulnérabilités logicielles](#3-export-software-vulnerabilities-assessment)
+- [4. Exporter l’évaluation de l’inventaire logiciel du code non produit](#4-export-non-product-code-software-inventory-assessment)
 
 Les API qui correspondent aux types d’informations d’exportation sont décrites dans les sections 1, 2 et 3.
 
@@ -84,7 +85,7 @@ deviceName|String|Nom de domaine complet (FQDN) de l’appareil.
 isApplicable|Bool|Indique si la configuration ou la stratégie est applicable.
 isCompliant|Bool|Indique si la configuration ou la stratégie est correctement configurée.
 isExpectedUserImpact|Bool|Indique si l’utilisateur est affecté si la configuration sera appliquée.
-osPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par TVM.
+osPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
 osVersion|String|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
 rbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
@@ -119,7 +120,7 @@ DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé 
 EndOfSupportDate|Chaîne|Date de fin de la prise en charge de ce logiciel.
 EndOfSupportStatus|Chaîne|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.
 NumberOfWeaknesses|Int|Nombre de faiblesses sur ce logiciel sur cet appareil.
-OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
 RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
@@ -160,14 +161,14 @@ ExploitabilityLevel|Chaîne|Niveau d’exploitabilité de cette vulnérabilité 
 FirstSeenTimestamp|Chaîne|La première fois que le CVE de ce produit a été vu sur l’appareil.
 ID|Chaîne|Identificateur unique de l’enregistrement.
 LastSeenTimestamp|Chaîne|Dernière fois que le CVE a été vu sur l’appareil.
-OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
 RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate|Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
 RecommendedSecurityUpdateId|Chaîne|Identificateur des mises à jour de sécurité ou identificateurs applicables pour les articles d’aide ou de base de connaissances (Ko) correspondants.
 Chemins d’accès au Registre|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.
-SecurityUpdateAvailable|Booléen|Indique si une mise à jour de sécurité est disponible pour le logiciel.
+SecurityUpdateAvailable|Valeur booléenne|Indique si une mise à jour de sécurité est disponible pour le logiciel.
 SoftwareName|Chaîne|Nom du produit logiciel.
 SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.
 SoftwareVersion|Chaîne|Numéro de version du produit logiciel.
@@ -194,7 +195,7 @@ ExploitabilityLevel|Chaîne|Niveau d’exploitabilité de la vulnérabilité (No
 FirstSeenTimestamp|Chaîne|La première fois que le CVE du produit a été vu sur l’appareil.
 ID|Chaîne|Identificateur unique de l’enregistrement.  
 LastSeenTimestamp|Chaîne|Dernière fois que le CVE a été vu sur l’appareil.
-OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variations au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RecommandationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate |Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
@@ -206,11 +207,44 @@ SoftwareVersion|Chaîne|Numéro de version du produit logiciel.
 Statut|Chaîne|**Nouveau** (pour une nouvelle vulnérabilité introduite sur un appareil). **Résolu** (pour une vulnérabilité qui n’existe plus sur l’appareil, ce qui signifie qu’elle a été corrigée). **Mise à jour** (pour une vulnérabilité sur un appareil qui a changé. Les modifications possibles sont les suivantes : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel|Chaîne|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.
 
+## <a name="4-export-non-product-code-software-inventory-assessment"></a>4. Exporter l’évaluation de l’inventaire logiciel du code non produit
+
+Retourne tous les logiciels installés qui n’ont pas [d’énumération de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe) et leurs détails sur chaque appareil.
+
+### <a name="41-methods"></a>4.1 Méthodes
+
+|Méthode|Type de données|Description|
+|:---|:---|:---|
+|Exporter l’évaluation de l’inventaire logiciel de code non produit **(réponse JSON)**|Inventaire logiciel de code non produit par collection d’appareils. Voir : [4.2 Properties (réponse JSON)](#42-properties-json-response)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L’API extrait toutes les données de votre organisation en tant que réponses JSON. Cette méthode est idéale pour les petites organisations avec moins de 100 K d’appareils. La réponse étant paginée, vous pouvez utiliser le champ @odata.nextLink à partir de la réponse pour extraire les résultats suivants. |
+| Exporter l’évaluation de l’inventaire logiciel de code non produit **(via des fichiers)**|Inventaire logiciel de code non produit par fichiers d’appareil. Voir : [4.3 Propriétés (via des fichiers)](#43-properties-via-files)|Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger des données à partir du Stockage Azure comme suit : <ol><li>Appeler l’API pour obtenir la liste des URL de téléchargement avec les données de votre organisation</li><li>Téléchargez les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.</li></ol> |
+
+### <a name="42-properties-json-response"></a>4.2 Propriétés (réponse JSON)
+
+Propriété (ID)|Type de données|Description
+:---|:---|:---
+DeviceId|string|Identificateur unique de l’appareil dans le service.
+DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
+RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+RbacGroupId|string|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
+SoftwareLastSeenTimestamp|string|La dernière fois que ce logiciel a été vu sur l’appareil.
+SoftwareName|string|Nom du produit logiciel.
+SoftwareVendor|string|Nom du fournisseur de logiciels.
+SoftwareVersion|chaîne|Numéro de version du produit logiciel.
+
+### <a name="43-properties-via-files"></a>4.3 Propriétés (via des fichiers)
+
+Propriété (ID)|Type de données|Description
+:---|:---|:---
+Exporter des fichiers|chaîne de tableau\[\]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation.
+GeneratedTime|Chaîne|Heure à laquelle l’exportation a été générée.
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Exporter l’évaluation de la configuration sécurisée par appareil](get-assessment-secure-config.md)
 - [Exporter l’évaluation de l’inventaire logiciel par appareil](get-assessment-software-inventory.md)
 - [Exporter l’évaluation des vulnérabilités logicielles par appareil](get-assessment-software-vulnerabilities.md)
+- [Exporter l’évaluation de l’inventaire logiciel non CPE par appareil](get-assessment-non-cpe-software-inventory.md)
 
 Autres éléments connexes
 

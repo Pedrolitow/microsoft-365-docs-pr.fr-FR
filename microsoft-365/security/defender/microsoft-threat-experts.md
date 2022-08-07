@@ -2,7 +2,7 @@
 title: Spécialistes des menaces Microsoft dans Microsoft 365 Defender vue d’ensemble
 ms.reviewer: ''
 description: Spécialistes des menaces Microsoft fournit une couche supplémentaire d’expertise pour Microsoft 365 Defender.
-keywords: service de chasse aux menaces managée, service de repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft
+keywords: service de chasse aux menaces managée, repérage des menaces managées, service de détection et de réponse managée (MDR), MTE, Spécialistes des menaces Microsoft, notification d’attaque de point de terminaison, notification d’attaque de point de terminaison
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 3d60edd7747bddf6afd9d075c051a29a11594edb
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 7c39e6010015a6b645924aec04119b4e5e9c586b
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843432"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276195"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>vue d’ensemble de Spécialistes des menaces Microsoft dans Microsoft 365
 
@@ -37,6 +37,7 @@ ms.locfileid: "66843432"
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Les notifications d’attaque de point de terminaison (précédemment appelées Spécialistes des menaces Microsoft - Notification d’attaque ciblée) sont un service de chasse aux menaces managée. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d’attaque de point de terminaison de la part d’experts en menaces Microsoft, afin de ne pas manquer les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, l’e-mail et les identités de votre organisation.
+
 Spécialistes des menaces Microsoft – Experts à la demande vous permet d’obtenir des conseils d’experts sur les menaces auxquelles votre organisation est confrontée. Vous pouvez demander de l’aide sur les menaces auxquelles votre organisation est confrontée. Il est disponible en tant que service d’abonnement.
 
 ## <a name="apply-for-endpoint-attack-notifications"></a>Appliquer pour les notifications d’attaque de point de terminaison
@@ -54,7 +55,7 @@ Contactez votre représentant Microsoft pour vous abonner à Experts à la deman
 
 ## <a name="receive-endpoint-attack-notification"></a>Recevoir une notification d’attaque de point de terminaison
 
-La fonctionnalité de notification d’attaque de point de terminaison fournit une chasse proactive pour les menaces les plus importantes sur votre réseau. Nos experts en menaces recherchent les intrusions de l’adversaire humain, les attaques au clavier et les attaques avancées, telles que le cyberespionage. Ces notifications s’affichent sous la forme d’une nouvelle alerte. Le service de chasse managé comprend :
+La fonctionnalité de notification d’attaque de point de terminaison fournit une chasse proactive pour les menaces les plus importantes sur votre réseau. Nos experts Defender recherchent les intrusions d’adversaires humains, les attaques mains-à-clavier et les attaques avancées, telles que la cyberespionage. Ces notifications s’affichent sous la forme d’une nouvelle alerte. Le service de chasse managé comprend :
 
 - Surveillance et analyse des menaces, réduction du temps de séjour et du risque pour votre entreprise
 - Intelligence artificielle entraînée par hunter pour découvrir et cibler à la fois les attaques connues et les menaces émergentes
@@ -63,13 +64,13 @@ La fonctionnalité de notification d’attaque de point de terminaison fournit u
 
 ## <a name="collaborate-with-experts-on-demand"></a>Collaborer avec des experts à la demande
 
-Vous pouvez également contacter les experts microsoft en matière de menaces directement à l’intérieur du portail de sécurité Microsoft 365 pour obtenir une réponse rapide et précise aux menaces.  Les experts peuvent fournir des insights pour mieux comprendre les menaces complexes auxquelles votre organisation peut faire face.  Consultez un expert pour :
+Sélectionnez **Demander aux experts Defender** directement à l’intérieur du portail de sécurité Microsoft 365.  Les experts peuvent fournir des insights pour mieux comprendre les menaces complexes auxquelles votre organisation peut faire face.  Demandez aux experts Defender de :
 
 - Collecter des informations supplémentaires sur les alertes et les incidents, notamment les causes et l’étendue racine
 - Clarifier les appareils suspects, les alertes ou les incidents et suivre les étapes suivantes si vous êtes confronté à un attaquant avancé
 - Déterminer les risques et les protections disponibles liés aux acteurs de menace, aux campagnes ou aux techniques d’attaquant émergentes
 
-L’option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail :
+L’option **Demander aux experts Defender** est disponible à plusieurs endroits dans le portail :
 
 - <i>**Menu Actions de la page d’appareil**</i><BR>
 - <i>**Menu volant de la page d’inventaire des appareils**</i><BR>

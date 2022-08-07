@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 43d07f2ec10117232e7ac1317bec1f8216bc62ae
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: b937bff6eece4c31861eae36b3691bd632827375
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071610"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274965"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Comparer les plans de sécurité des points de terminaison Microsoft
 
@@ -59,7 +59,7 @@ Le tableau suivant récapitule ce qui est inclus dans les plans de sécurité de
 - sécurité Microsoft 365 E5/A5/G5/F5
 - Conformité & de sécurité Microsoft 365 F5
 
-(<a id="fn3">3</a>) Microsoft Defender pour entreprises est disponible en tant qu’abonnement autonome pour les petites et moyennes entreprises. Il est également inclus dans le cadre de Microsoft 365 Business Premium. Ces plans offrent des fonctionnalités de sécurité avancées avec une configuration et une configuration simplifiées.
+(<a id="fn3">3</a>) Microsoft Defender pour entreprises est disponible en tant qu’abonnement autonome pour les petites et moyennes entreprises. Il est également inclus dans le cadre de [Microsoft 365 Business Premium](/microsoft-365/business-premium). Ces plans offrent des fonctionnalités de sécurité avancées avec une configuration et une configuration simplifiées. Voir [Comparer les Microsoft Defender pour entreprises à Microsoft 365 Business Premium](/microsoft-365/security/defender-business/compare-mdb-m365-plans#compare-microsoft-defender-for-business-to-microsoft-365-business-premium).
 
 ## <a name="options-for-onboarding-servers"></a>Options d’intégration des serveurs
 

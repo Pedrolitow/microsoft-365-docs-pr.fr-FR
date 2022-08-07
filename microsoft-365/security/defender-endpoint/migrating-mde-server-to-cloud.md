@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.technology: mde
-ms.openlocfilehash: d6ce0fe6b001c537a6bb801f18920f759a1cce09
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: b32a47ba4ca01c3f6b99cde639063c1fc2373ed2
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108434"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275749"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Migration de serveurs de Microsoft Defender pour point de terminaison vers Microsoft Defender pour cloud
 
@@ -45,14 +45,22 @@ Microsoft Defender pour cloud est un service basé sur un abonnement dans le Por
 Pour activer Defender pour serveurs pour les machines virtuelles Azure et les machines non-Azure connectées via des [serveurs avec Azure Arc](/azure/azure-arc/servers/overview), suivez les instructions suivantes :
 
 1. Si vous n’utilisez pas déjà Azure, planifiez votre environnement en suivant [Azure Well-Architected Framework](/azure/architecture/framework/).
+
 2. Activez [Microsoft Defender pour cloud](/azure/defender-for-cloud/get-started) sur vos abonnements.
+
 3. Activez l’un des plans Microsoft Defender pour Server sur vos [abonnements](/azure/defender-for-cloud/enable-enhanced-security). Si vous utilisez Defender pour serveurs Plan 2, veillez à l’activer également sur l’espace de travail Log Analytics sur lequel vos machines sont connectées ; Il vous permettra d’utiliser des fonctionnalités facultatives telles que la surveillance de l’intégrité des fichiers, les contrôles d’application adaptatifs, etc.
+
 4. Vérifiez que [l’intégration MDE](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) est activée sur votre abonnement. Si vous avez des abonnements Azure préexistants, vous pouvez voir l’un des deux boutons d’adhésion (ou les deux) affichés dans l’image ci-dessous.
-     :::image type="content" source="images/mde-integration.png" alt-text="Capture d’écran montrant comment activer l’intégration MDE.":::
-Si vous avez l’un de ces boutons dans votre environnement, veillez à activer l’intégration pour les deux. Sur les nouveaux abonnements, les deux options sont activées par défaut.
+
+     :::image type="content" source="images/mde-integration.png" alt-text="Capture d’écran montrant comment activer l’intégration MDE." lightbox="images/mde-integration.png":::
+
+   Si vous avez l’un de ces boutons dans votre environnement, veillez à activer l’intégration pour les deux. Sur les nouveaux abonnements, les deux options sont activées par défaut.
+
 5. Assurez-vous que les exigences de connectivité pour Azure Arc sont remplies. Microsoft Defender pour cloud requiert que toutes les machines locales et non Azure soient connectées via l’agent Azure Arc. En outre, Azure Arc ne prend pas en charge tous les systèmes d’exploitation pris en charge par MDE. Découvrez donc comment planifier [les déploiements Azure Arc ici](/azure/azure-arc/servers/plan-at-scale-deployment).
+
 6. *Recommandé:* Si vous souhaitez voir les résultats des vulnérabilités dans Defender pour cloud, veillez à activer [Gestion des vulnérabilités Microsoft Defender](/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-va) pour Defender pour cloud.
-   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Capture d’écran montrant comment activer la gestion des vulnérabilités."::: 
+
+   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Capture d’écran montrant comment activer la gestion des vulnérabilités." lightbox="images/enable-threat-and-vulnerability-management.png"::: 
 
 ## <a name="how-do-i-migrate-existing-azure-vms-to-microsoft-defender-for-cloud"></a>Comment faire migrer des machines virtuelles Azure existantes vers Microsoft Defender pour cloud ?
 
@@ -65,10 +73,14 @@ Pour les machines virtuelles Azure, aucune étape supplémentaire n’est requis
 ## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>Comment faire migrer des machines virtuelles à partir d’environnements AWS ou GCP ?
 
 1. Créez un connecteur multicloud sur votre abonnement. (Pour plus d’informations sur le connecteur, consultez [les comptes AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings) ou les [projets GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings).
+
 2. Sur votre connecteur multicloud, activez Defender pour serveurs sur des connecteurs [AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) ou [GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings#configure-the-servers-plan) .
+
 3. Activez l’approvisionnement automatique sur le connecteur multicloud pour l’agent Azure Arc, l’extension Microsoft Defender pour point de terminaison, l’évaluation des vulnérabilités et, éventuellement, l’extension Log Analytics.
-     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Capture d’écran montrant comment activer l’approvisionnement automatique pour l’agent Azure Arc.":::
-Pour plus [d’informations, consultez les fonctionnalités multiclouds de Defender pour Cloud](https://aka.ms/mdcmc).
+
+     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Capture d’écran montrant comment activer l’approvisionnement automatique pour l’agent Azure Arc." lightbox="images/select-plans-aws-gcp.png":::
+
+   Pour plus [d’informations, consultez les fonctionnalités multiclouds de Defender pour Cloud](https://aka.ms/mdcmc).
 
 ## <a name="what-happens-once-all-migration-steps-are-completed"></a>Que se passe-t-il une fois toutes les étapes de migration terminées ?
 

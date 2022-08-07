@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 903992df71b82a7dc1081bb286871e0b7af72d37
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f65a1c85a4cadac646fdffee8403fb398e8c0081
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625058"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275975"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurer les limites de conformité pour les investigations eDiscovery
 
@@ -125,7 +125,7 @@ Voici une description de chaque paramètre dans la commande :
   
 - `FilterName`: spécifie le nom du filtre. Utilisez un nom qui décrit ou identifie l’agence dans laquelle le filtre est utilisé.
 
-- `Users`: spécifie les utilisateurs ou groupes auxquels ce filtre est appliqué aux actions de recherche qu’ils effectuent. Pour les limites de conformité, ce paramètre spécifie les groupes de rôles (que vous avez créés à l’étape 3) dans l’agence pour laquelle vous créez le filtre. Notez qu’il s’agit d’un paramètre à valeurs multiples qui vous permet d’inclure un ou plusieurs groupes de rôles, séparés par des virgules.
+- `Users`: spécifie les utilisateurs ou groupes auxquels ce filtre est appliqué aux actions de recherche qu’ils effectuent. Pour les limites de conformité, ce paramètre spécifie les groupes de rôles (que vous avez créés à l’étape 2) dans l’agence pour laquelle vous créez le filtre. Notez qu’il s’agit d’un paramètre à valeurs multiples qui vous permet d’inclure un ou plusieurs groupes de rôles, séparés par des virgules.
 
 - `Filters`: spécifie les critères de recherche pour le filtre. Pour les limites de conformité, vous définissez les filtres suivants. Chacun s’applique à différents emplacements de contenu.
 
@@ -220,7 +220,7 @@ Les filtres d’autorisations de recherche vous permettent également de contrô
     |GBR  <br/> |Europe  <br/> |
     |JPN  <br/> |Asie-Pacifique  <br/> |
     |IND  <br/> |Asie-Pacifique  <br/> |
-    |LAM  <br/> |US  <br/> |
+    |Lam  <br/> |US  <br/> |
     |NOR  <br/> |Europe |
     |BRA  <br/> |Centres de données nord-américains |
     |||
@@ -298,7 +298,7 @@ Gardez à l’esprit les limitations suivantes lors de la gestion des cas eDisco
 
 - Nous vous déconseillons d’utiliser des filtres d’exclusion (par `-not()` exemple, dans un filtre d’autorisations de recherche) pour une limite de conformité basée sur le contenu. L’utilisation d’un filtre d’exclusion peut avoir des résultats inattendus si le contenu avec des attributs récemment mis à jour n’a pas été indexé.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 **Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide d'New-ComplianceSecurityFilter et d’applets de commande Set-ComplianceSecurityFilter) ?**
   

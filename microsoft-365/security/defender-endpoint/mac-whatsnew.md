@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 3ea2822adabcd0a747d34fbdb8c6d8d2c944afdf
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969535"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275837"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
@@ -35,6 +35,25 @@ ms.locfileid: "66969535"
 Pour plus d’informations sur les Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation : 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur Linux](linux-whatsnew.md) 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Août 2022 (Build : 101.75.90 | Version de version : 20.122071.17590.0)</summary>
+
+&ensp;Publication : **3 août 2022**<br/>
+&ensp;Publication : **3 août 2022**<br/>
+&ensp;Build : **101.75.90**<br/>
+&ensp;Version de version : **20.122071.17590.0**<br/>
+&ensp;Version du moteur : **1.1.19300.3**<br/>
+&ensp;Version de signature : **1.369.395.0**<br/>
+
+**Nouveautés**
+
+- Ajout d’un nouveau champ dans la sortie de `mdatp health` celui-ci peut être utilisé pour interroger le niveau d’application de la fonctionnalité de protection réseau. Le nouveau champ est appelé `network_protection_enforcement_level` et peut prendre l’une des valeurs suivantes : `audit`, `block`ou `disabled`.
+- Résolution d’un bogue de produit dans lequel plusieurs détections du même contenu pouvaient entraîner des entrées en double dans l’historique des menaces.
+- Autres correctifs de bogues.
+
+<br/>
+</details>
 
 <details>
   <summary>Jul-2022 (Build : 101.73.77 | Version de version : 20.122062.17377.0)</summary>
@@ -677,7 +696,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 
 **Nouveautés**
 > [!CAUTION]
-> Pour garantir la protection la plus complète pour vos appareils macOS et conformément à l’arrêt par Apple de la remise des mises à jour de sécurité natives macOS aux versions du système d’exploitation antérieures à [actuel - 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations MDATP pour Mac seront fournies aux appareils exécutant les versions Catalina [10.15], Mojave [10.14] et High Sierra [10.13].
+> Pour garantir la protection la plus complète pour vos appareils macOS et en conformité avec l’arrêt par Apple de la remise des mises à jour de sécurité natives macOS aux versions du système d’exploitation antérieures à [actuelle - 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations MDATP pour Mac seront fournies aux appareils exécutant les versions Catalina [10.15], Mojave [10.14] et High Sierra [10.13].
 >
 > Si vous avez déjà déployé MDATP pour Mac sur vos appareils Sierra [10.12], effectuez une mise à niveau vers la dernière version de macOS pour éliminer les risques de perte de protection.
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées à l’identité en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 7c73b40d73ec022b2047ceb3998b7d82ceab56e8
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892724"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275997"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Authentification multifacteur et sécurité par défaut.
 
@@ -102,4 +102,4 @@ Pour en savoir plus sur l’accès conditionnel, consultez [Qu’ est-ce que l�
 
 ## <a name="next-objective"></a>Objectif suivant
 
-Configurez des méthodes pour la [protection contre les programmes malveillants et autres menaces](m365bp-increase-protection.md).
+[Protéger vos comptes d’administrateur dans Microsoft 365 Business Premium](m365bp-protect-admin-accounts.md)

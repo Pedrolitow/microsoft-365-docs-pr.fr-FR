@@ -22,12 +22,12 @@ description: Découvrez comment les étiquettes de confidentialité de Microsoft
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5a525e96529416aca0670873921eea7703506af4
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b3b0dfb00ca8905812574cd4add6ad4aba91c5a2
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942779"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276552"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -73,7 +73,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 Dans tous ces cas, les étiquettes de confidentialité de Microsoft Purview peuvent vous aider à prendre les bonnes mesures sur le contenu approprié. Ces dernières vous permettent de classifier des données dans toute votre organisation et d’appliquer des paramètres de protection basés sur cette classification. Cette protection reste ensuite avec le contenu.
 
-Pour plus d’informations sur ces actions et d’autres scénarios pris en charge par les étiquettes de confidentialité, consultez [Scénarios courants pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). De nouvelles fonctionnalités sont constamment développées qui prennent en charge les étiquettes de confidentialité. Vous trouverez donc peut-être utile de faire référence à la [Feuille de route Microsoft 365](https://aka.ms/MIPC/Roadmap).
+Pour plus d’informations sur ces actions et d’autres scénarios pris en charge par les étiquettes de confidentialité, consultez [Scénarios courants pour les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). De nouvelles fonctionnalités sont constamment développées qui prennent en charge les étiquettes de confidentialité. Vous trouverez donc peut-être utile de consulter la [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity).
 
 ## <a name="what-a-sensitivity-label-is"></a>Qu’est-ce qu’une étiquette de confidentialité ?
 

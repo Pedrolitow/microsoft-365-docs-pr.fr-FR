@@ -18,12 +18,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à identifier une boîte aux lettres personnalisée (également appelée boîte aux lettres de soumissions d’utilisateurs) pour collecter les messages de courrier indésirable et de hameçonnage signalés par les utilisateurs. D’autres paramètres complètent l’expérience de création de rapports pour les utilisateurs lorsqu’ils signalent des messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e09b5f7d6f34ac1daa98430f1bc868b4ca644777
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175485"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276303"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -102,7 +102,7 @@ Une fois que vous avez vérifié que la boîte aux lettres répond à ces exigen
 
      Ce paramètre permet également aux utilisateurs de signaler des messages faux positifs à partir du portail de quarantaine.
 
-   - **De** ![ Désactiver.](../../media/scc-toggle-off.png) : vous utilisez des outils de création de rapports de messages tiers au lieu de l’expérience de création de rapports intégrée à Microsoft.
+   - **Désactivé** ![ Désactiver.](../../media/scc-toggle-off.png) : vous utilisez des outils de création de rapports de messages tiers au lieu de l’expérience de création de rapports intégrée à Microsoft.
 
 Les options de configuration associées sont décrites dans les sections suivantes.
 
@@ -112,7 +112,7 @@ Lorsque le **bouton Message de rapport Microsoft Outlook** **est** ![activé](..
 
 - **Envoyer les messages signalés à la** section : Sélectionnez l’une des options suivantes :
 
-  - **Microsoft** : les rapports utilisateur sont directement accessibles à Microsoft pour analyse. Seules les métadonnées telles que l’expéditeur, le destinataire, signalés par et les détails du message des rapports utilisateur sont fournies à l’administrateur client via le Centre de sécurité Microsoft 365.
+  - **Microsoft** : les rapports utilisateur sont directement accessibles à Microsoft pour analyse. Seules les métadonnées telles que l’expéditeur, le destinataire, signalés par et les détails du message des rapports utilisateur sont fournies à l’administrateur client via le portail Microsoft 365 Defender.
 
   - **Boîte aux lettres de Microsoft et de mon organisation** : dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante à utiliser comme boîte aux lettres de soumissions utilisateur. Les groupes de distribution ne sont pas autorisés. Les soumissions d’utilisateurs sont envoyées à Microsoft à des fins d’analyse et à la boîte aux lettres des soumissions d’utilisateurs pour qu’une équipe d’administrateurs ou d’opérations de sécurité analyse.
 
@@ -204,7 +204,7 @@ Pour spécifier la raison pour laquelle les messages joints d’origine ont ét�
   - `2|` ou `Not junk:`.
   - `3|` ou `Phishing:`.
 
-  Par exemple :
+  Par exemple :
 
   - `3|This text in the Subject line is ignored by the system`
   - `Not Junk:This text in the Subject line is also ignored by the system`

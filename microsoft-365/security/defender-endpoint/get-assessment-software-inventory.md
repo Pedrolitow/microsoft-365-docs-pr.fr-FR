@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 296b977452802d8e1ed8949cf6a8871cac171f3a
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 07535a2dd433bee2b2d92b206efa2b964212d74d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839991"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276763"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
@@ -34,12 +34,13 @@ ms.locfileid: "65839991"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Cette API retourne toutes les données pour les logiciels installés qui disposent d’une [énumération de plateforme commune (CPE),](https://nvd.nist.gov/products/cpe) sur une base par appareil.
 
 Les différents appels d’API obtiennent différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
 - [Exporter la **réponse JSON** d’évaluation de l’inventaire logiciel](#1-export-software-inventory-assessment-json-response) L’API extrait toutes les données de votre organisation en tant que réponses Json. Cette méthode est idéale pour _les petites organisations avec moins de 100 K d’appareils_. La réponse étant paginée, vous pouvez utiliser le \@champ odata.nextLink de la réponse pour extraire les résultats suivants.
 
-- [Exporter l’évaluation de l’inventaire logiciel **via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir de stockage Azure comme suit :
+- [Exporter l’évaluation de l’inventaire logiciel **via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’extraire de plus grandes quantités de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 000 appareils. Cette API extrait toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir du stockage Azure. Cette API vous permet de télécharger toutes vos données à partir du Stockage Azure comme suit :
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
   - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traitez les données comme vous le souhaitez.
 
@@ -52,7 +53,7 @@ Les données collectées (à l’aide d’une _réponse Json_ ou _de fichiers_) 
 
 ### <a name="11-api-method-description"></a>Description de la méthode d’API 1.1
 
-Cette réponse d’API contient toutes les données des logiciels installés par appareil. Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
+Cette réponse d’API contient toutes les données des logiciels installés qui ont une [énumération de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe) par appareil. Retourne une table avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
 #### <a name="limitations"></a>Limites
 
@@ -94,18 +95,18 @@ GET /api/machines/SoftwareInventoryByMachine
 Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
 DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
+DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé sur l’appareil.|[ « C:\\ Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe » ]
 EndOfSupportDate|string|Date de fin de la prise en charge de ce logiciel.|2020-12-30
 EndOfSupportStatus|string|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.|EOS à venir
 ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil|3
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.|Windows 10 et Windows 11
-RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
-RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\ Windows\\ CurrentVersion\\Uninstall\\Microsoft Silverlight » ]
+RbacGroupName|chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
+RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight » ]
 SoftwareFirstSeenTimestamp|string|La première fois que ce logiciel a été vu sur l’appareil.|2019-04-07 02:06:47
 SoftwareName|string|Nom du produit logiciel.|Silverlight
-SoftwareVendor|string|Nom du fournisseur de logiciels.|Microsoft
+SoftwareVendor|string|Nom du fournisseur de logiciels.|microsoft
 SoftwareVersion|string|Numéro de version du produit logiciel.|81.0.4044.138
 |
 
@@ -211,6 +212,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 }
 ```
 
+> [!NOTE]
+> Les informations retournées par cette API, ainsi que les informations retournées par l’API [d’évaluation de l’inventaire logiciel non du code produit](get-assessment-non-cpe-software-inventory.md) , pour les logiciels qui n’ont pas de CPE, vous donnent une visibilité complète sur les logiciels installés dans votre organisation et les appareils sur lesquels elle est installée.
+
 ## <a name="2-export-software-inventory-assessment-via-files"></a>2. Exporter l’évaluation de l’inventaire logiciel (via des fichiers)
 
 ### <a name="21-api-method-description"></a>Description de la méthode API 2.1
@@ -285,8 +289,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 - [Exporter des méthodes et des propriétés d’évaluation par appareil](get-assessment-methods-properties.md)
 - [Exporter l’évaluation de la configuration sécurisée par appareil](get-assessment-secure-config.md)
 - [Exporter l’évaluation des vulnérabilités logicielles par appareil](get-assessment-software-vulnerabilities.md)
+- [Exporter l’évaluation de l’inventaire logiciel de code non produit](get-assessment-non-cpe-software-inventory.md)
 
 Autres éléments connexes
 
-- [& gestion des vulnérabilités de menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
+- [Gestion des vulnérabilités & des menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
 - [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

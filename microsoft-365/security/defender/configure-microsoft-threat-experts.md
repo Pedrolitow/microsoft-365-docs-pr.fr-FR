@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 01a88ff4f31e6a85c9fe6c52ee3968def1cc4ce1
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843454"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276369"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft via Microsoft 365 Defender
 
@@ -82,9 +82,17 @@ Vous pouvez créer des règles pour envoyer des notifications par e-mail aux des
 
 Vous commencerez à recevoir des notifications d’attaque de point de terminaison à partir de Spécialistes des menaces Microsoft dans votre e-mail après avoir configuré votre système pour recevoir une notification par e-mail.
 
-1. Sélectionnez le lien dans l’e-mail pour accéder au contexte d’alerte correspondant dans le tableau de bord balisé avec **les experts en menaces**.
+1. Sélectionnez le lien dans l’e-mail pour accéder au contexte d’alerte correspondant dans le tableau de bord balisé avec **Defender Experts**.
 
 2. Dans la page **Alertes** , sélectionnez la même rubrique d’alerte que celle que vous avez reçue dans l’e-mail, pour afficher plus de détails.
+
+### <a name="filter-to-view-just-the-endpoint-attack-notifications"></a>Filtrer pour afficher uniquement les notifications d’attaque de point de terminaison
+
+Vous pouvez filtrer vos incidents et alertes si vous souhaitez uniquement voir les notifications Defender Experts parmi les nombreuses alertes. Pour ce faire, procédez comme suit :
+
+1. Dans le menu de navigation, accédez à **Incidents & alertes Incidents** >  > sélectionnez l’icône ![](../../media/mte/defenderexperts/filter.png) Filtrer.
+2. Faites défiler jusqu’au champ **Balises** > activez la case à cocher **Experts Defender** .
+3. Sélectionnez **Appliquer**.
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Spécialistes des menaces Microsoft - Experts à la demande
 
@@ -97,21 +105,11 @@ Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail M
 > [!NOTE]
 >
 > - Les demandes d’alerte liées aux données personnalisées de renseignement sur les menaces de votre organisation ne sont actuellement pas prises en charge. Pour plus d’informations, consultez votre équipe chargée des opérations de sécurité ou de la réponse aux incidents.
-> - Vous devez disposer de l’autorisation **Gérer les paramètres de sécurité dans le centre de sécurité** dans le portail Microsoft 365 Defender pour soumettre une demande par le biais du formulaire **Consulter un expert en menaces**.
+> - Vous devez disposer de l’autorisation **Gérer les paramètres de sécurité dans le centre de sécurité** dans le portail Microsoft 365 Defender pour soumettre une demande par le biais du formulaire **Ask Defender Experts**.
 
 1. Accédez à la page du portail liée aux informations que vous souhaitez examiner : par exemple, **Appareil**, **Alerte** ou **Incident**. Assurez-vous que la page du portail relative à votre demande est affichée avant d’envoyer une demande d’enquête.
 
-2. Dans le menu supérieur, sélectionnez **? Consultez un expert en menaces**.
-
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Les experts Spécialistes des menaces Microsoft à la demande dans le menu du portail Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
-
-    Un écran volant s’ouvre.
-
-    L’en-tête indique si vous êtes sur un abonnement d’essai ou un Spécialistes des menaces Microsoft complet - Abonnement Experts à la demande.
-
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="Écran d’abonnement à la version d’évaluation Spécialistes des menaces Microsoft Experts à la demande dans le portail Microsoft 365 Defender" lightbox="../../media/mte/mte-trial.png":::
-
-    Le champ **De la rubrique Investigation** est déjà rempli avec le lien vers la page appropriée pour votre demande.
+2. Dans le menu supérieur, sélectionnez **? Demandez à Defender Experts**. Un écran volant s’ouvre. L’en-tête indique si vous utilisez un abonnement d’essai ou un Spécialistes des menaces Microsoft complet - Abonnement Experts à la demande. Le champ **De la rubrique Investigation** est déjà rempli avec le lien vers la page appropriée pour votre demande.
 
 3. Dans le champ suivant, fournissez suffisamment d’informations pour donner au Spécialistes des menaces Microsoft contexte suffisant pour démarrer l’enquête.
 
@@ -148,7 +146,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 ### <a name="microsoft-threat-experts-alert-communications"></a>communications d’alerte de Spécialistes des menaces Microsoft
 
 - Votre équipe de réponse aux incidents peut-elle nous aider à traiter la notification d’attaque ciblée que nous avons obtenue ?
-- Nous avons reçu cette notification d’attaque ciblée de Spécialistes des menaces Microsoft. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
+- Nous avons reçu des notifications d’attaque de point de terminaison de Spécialistes des menaces Microsoft. Nous n’avons pas notre propre équipe de réponse aux incidents. Que pouvons-nous faire maintenant et comment pouvons-nous contenir l’incident ?
 - Nous avons reçu une notification d’attaque ciblée de Spécialistes des menaces Microsoft. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
 
 > [!NOTE]
@@ -167,6 +165,6 @@ La réponse de Spécialistes des menaces Microsoft varie en fonction de votre de
 
 Si un expert demande plus d’informations ou d’exemples de fichiers, il est essentiel de répondre rapidement pour que l’enquête continue.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>Pour chasser de manière proactive les menaces entre les points de terminaison, les Office 365, les applications cloud et l’identité, reportez-vous à : 
 
-- [Vue d’ensemble des spécialistes des menaces Microsoft](microsoft-threat-experts.md)
+- [Vue d’ensemble de Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md)

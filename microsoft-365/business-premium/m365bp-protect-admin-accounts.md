@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur dans Microsoft 365 Business Premium.
-ms.openlocfilehash: a6a8cfdff722df6b46c9a83dfc73b429806955ea
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 6534cf3285aa08b4b9da4ea65965751a1ac14a6b
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894446"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67277024"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Protéger vos comptes d’administrateur dans Microsoft 365 Business Premium
 
@@ -103,5 +103,4 @@ Pour protéger tous vos comptes administrateur, assurez-vous de suivre ces recom
 
 ## <a name="next-objective"></a>Objectif suivant
 
-Suivez les étapes pour [activer les paramètres de sécurité par défaut](m365bp-conditional-access.md).
-
+[Augmenter la protection contre les menaces pour Microsoft 365 Business Premium](m365bp-increase-protection.md)

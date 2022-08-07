@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Configurez une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint pour les documents nouveaux et non étiquetés.
-ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071330"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276434"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>Configurer une étiquette de confidentialité par défaut pour une bibliothèque de documents SharePoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "67071330"
 > [!NOTE]
 > Cette fonctionnalité est progressivement déployée en préversion et peut être modifiée. Il s’agit également d’une fonctionnalité Premium avec des détails de licence à fournir lorsque la fonctionnalité devient en disponibilité générale (GA).
 > 
-> Pour lire l’annonce en préversion, consultez le [billet Yammer](https://www.yammer.com/askipteam/threads/1846702701985792).
+> Pour lire l’annonce en préversion, consultez le [billet de blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
 Lorsque SharePoint est [activé pour les étiquettes de confidentialité](sensitivity-labels-sharepoint-onedrive-files.md), vous pouvez configurer une étiquette par défaut pour les bibliothèques de documents. Ensuite, les nouveaux fichiers chargés dans cette bibliothèque ou les fichiers existants modifiés dans la bibliothèque verront cette étiquette appliquée s’ils n’ont pas déjà d’étiquette de confidentialité, ou s’ils ont une étiquette de confidentialité, mais avec une [priorité inférieure](sensitivity-labels.md#label-priority-order-matters).
 
@@ -79,9 +79,9 @@ Résumé des résultats :
 
 Pour une bibliothèque de documents existante :
 
-1. Dans SharePoint, accédez à la bibliothèque de documents > **Paramètres**.
+1. Dans SharePoint, accédez aux **paramètres** de la bibliothèque \> **de documents Settings** \> Library.
 
-2. Dans le volet volant **Paramètres** de la bibliothèque, sélectionnez **étiquettes de confidentialité par défaut**, puis sélectionnez une étiquette dans la zone de liste déroulante. Par exemple :
+2. Dans le volet volant **Paramètres** de la bibliothèque, sélectionnez **étiquettes de confidentialité par défaut**, puis sélectionnez une étiquette dans la zone de liste déroulante. Par exemple :
     
     ![Capture d’écran montrant la configuration d’une étiquette de confidentialité par défaut pour une bibliothèque SharePoint.](../media/default-sensitivity-label-spo2.png)
     

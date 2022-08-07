@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f686777e32aac9bea4a9d45d365ff977bf0fb357
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108401"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276217"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Avant de commencer à utiliser Defender Experts pour la chasse
 
@@ -57,7 +57,7 @@ Les sections suivantes énumèrent des informations supplémentaires sur l’uti
 
 ### <a name="data-collection-usage-and-retention"></a>Collecte, utilisation et rétention des données
 
-Toutes les données utilisées pour la chasse des services Defender existants continueront de résider dans l’emplacement de stockage de service Microsoft 365 Defender d’origine du client. [Si vous souhaitez en savoir plus](../../enterprise/o365-data-locations.md)
+Toutes les données utilisées pour la chasse des services Defender existants continueront de résider dans l’emplacement de stockage de service Microsoft 365 Defender d’origine du client. [En savoir plus](../../enterprise/o365-data-locations.md)
 
 Les données opérationnelles Defender Experts for Hunting, telles que les tickets de cas et les notes d’analyste, sont générées et stockées dans un centre de données Microsoft dans la région des États-Unis pour la longueur du service, quel que soit l’emplacement de stockage du service Microsoft 365 Defender. Les données générées pour le tableau de bord de création de rapports sont stockées dans l’emplacement de stockage de service Microsoft 365 Defender du client. Les données de création de rapports et les données opérationnelles sont conservées pendant une période de grâce d’au moins 90 jours après qu’un client a quitté le service.
 
@@ -81,11 +81,11 @@ Ce service est actuellement fourni en anglais uniquement.
 
 Si vous ne l’avez pas encore fait, vous pouvez remplir le formulaire d’intérêt client pour Defender Experts for Hunting :
 
-1. Remplissez le formulaire d’intérêt client. Toute personne de votre entreprise peut faire une demande, mais si vous êtes accepté, vous devez travailler avec votre responsable commercial pour transiger la référence SKU.
-2. Entrez l’ID de messagerie de votre entreprise.
+1. Remplissez le [formulaire d’intérêt client](https://aka.ms/DEX4HuntingCustomerInterestForm). Toute personne de votre entreprise peut faire une demande, mais si vous êtes accepté, vous devez travailler avec votre responsable commercial pour transiger la référence SKU.
+2. Entrez votre nom, votre nom d’entreprise et votre ID de messagerie d’entreprise.
 3. Sélectionnez **Envoyer**. Une personne de notre équipe commerciale contactera dans les cinq jours ouvrables.
 
 
 ### <a name="next-step"></a>Étape suivante
 
-- [Commencer à utiliser Defender Experts pour la chasse](onboarding-defender-experts-for-hunting.md)
+- [Commencer à utiliser Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)

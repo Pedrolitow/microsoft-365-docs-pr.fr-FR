@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8c2ef3c1ae6485f5ebdd965aee92bafd5f63233e
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493084"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274855"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs fiables dans EOP
 
@@ -110,7 +110,7 @@ L’exemple suivant suppose que vous avez besoin d’e-mail de contoso.com pour 
 
 Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses e-mail de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez [Configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux lettres dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette méthode n’est pas souhaitable dans la plupart des cas, car les expéditeurs contournent certaines parties de la pile de filtrage. Même si vous faites confiance à l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres vérifier chaque message, puis [de signaler les faux positifs/négatifs à Microsoft](report-junk-email-messages-to-microsoft.md) si nous nous sommes trompés. Le contournement de la pile de filtrage interfère également avec le [vidage automatique de zéro heure (ZAP).](zero-hour-auto-purge.md)
 
-Par conception et pour renforcer la sécurité des boîtes aux lettres Exchange Online, seuls les paramètres de courrier indésirable pour les expéditeurs sécurisés, les expéditeurs bloqués et les domaines bloqués sont reconnus. Les paramètres des domaines sécurisés sont ignorés.
+Par conception et pour renforcer la sécurité des boîtes aux lettres Exchange Online, seuls les paramètres de courrier indésirable pour les expéditeurs approuvés et les domaines sécurisés, les expéditeurs bloqués et les domaines bloqués sont reconnus. Les paramètres de liste de diffusion sécurisés sont ignorés.
 
 Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur `SFV:SFE`, ce qui indique que le filtrage du courrier indésirable, de l’usurpation d’identité et du hameçonnage a été contourné.
 

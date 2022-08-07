@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher des invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: 59ec932aea516107f08570f899987c4d619aa66b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c2545c4b6e0d87f3f143139887ff50126bf41d06
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084210"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274745"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans les groupes Microsoft 365
 
@@ -60,15 +60,25 @@ Si l’invité existe déjà dans votre répertoire, vous pouvez l’ajouter à 
   
 1. Dans le centre d’administration, accédez aux **groupes** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
   
-2. Cliquez sur le groupe auquel vous souhaitez ajouter l’invité, puis sélectionnez **Afficher tout et gérer les membres** sous l’onglet **Membres** . 
+2. Sélectionnez le groupe auquel vous souhaitez ajouter l’invité, puis sélectionnez **Afficher tout et gérer les membres** sous l’onglet **Membres** . 
   
-4. Sélectionnez **Ajouter des membres**, puis choisissez le nom de l’invité que vous souhaitez ajouter.
-    
-5. Sélectionnez **Enregistrer**.
+3. Sélectionnez **Ajouter des membres**, puis choisissez le nom de l’invité que vous souhaitez ajouter.
+
+4. Sélectionnez **Enregistrer**.
 
 Si vous souhaitez ajouter un invité directement au répertoire, vous pouvez [ajouter des utilisateurs Azure Active Directory B2B Collaboration dans le Portail Azure](/azure/active-directory/b2b/add-users-administrator).
 
 Si vous souhaitez modifier les informations d’un invité, vous pouvez [ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+
+## <a name="remove-a-guest"></a>Supprimer un invité
+
+Une fois que vous avez terminé de collaborer avec un utilisateur invité, vous pouvez les supprimer et ils n’auront plus accès à votre organisation.
+
+1. Dans le Centre d'administration Microsoft 365, **développez Utilisateurs**, puis choisissez <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**Utilisateurs invités**</a>.
+1. Dans la page **Utilisateurs invités** , choisissez l’utilisateur que vous souhaitez supprimer, puis **choisissez Supprimer un utilisateur**.
+
+Pour supprimer des utilisateurs dans le portail Azure AD, consultez [supprimer un utilisateur invité et des ressources](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+
 
 ## <a name="related-content"></a>Contenu associé
 

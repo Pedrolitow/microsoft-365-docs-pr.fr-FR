@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, consultez la liste des problèmes connus pour Lighthouse par zone de fonctionnalité.
-ms.openlocfilehash: 9f3c2bc86d64cbc99f280de3c668e84a402b3619
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 9f1d9c7e31c6e3a6949b753a370577f87d903fd1
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106095"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276530"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problèmes connus liés à Microsoft 365 Lighthouse
 
@@ -51,14 +51,6 @@ Cet article répertorie les problèmes connus pour Microsoft 365 Lighthouse par 
 | Problème | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Erreur d’approvisionnement de nouvelle tentative** | Les techniciens MSP reçoivent un message d’erreur « Vous n’avez pas les autorisations nécessaires » lors de la tentative de nouvelle tentative d’approvisionnement d’un PC cloud. | Pour contourner ce problème, connectez-vous au locataire client, puis réapprovisionnez les PC cloud à partir du Centre d’administration Microsoft Endpoint Manager. Pour obtenir des instructions, consultez [Reprovisionner un PC cloud](/windows-365/enterprise/reprovision-cloud-pc). |
-
-## <a name="audit-logs"></a>Journaux d'audit
-
-
-| Problème | Description | Solution |
-|--|--|--|
-| **Les actions de désactivation et de réactivation ne sont pas répertoriées dans les journaux d’audit** | Les activités suivantes ne sont actuellement pas signalées dans la page Journaux d’audit dans Lighthouse : <ul><li>Nom : action offboardTenant \| : désactiver un client</li> <li>Nom : resetTenantOnboardingStatus \| Action : Client réactif</li></ul> | Il n’y a pas de solution de contournement, mais nous travaillons sur un correctif. Ces activités apparaissent dans les journaux d’audit une fois le correctif déployé dans le service. |
-| **Le filtre n’affiche pas tous les utilisateurs** | Lorsque les techniciens MSP tentent de filtrer à l’aide **d’Initialed By**, la liste de tous les noms d’utilisateur principal (UPN) correspondant aux ID d’e-mail des techniciens qui ont lancé des actions générant des journaux d’audit ne s’affiche pas entièrement sous le filtre.<br><br>Notez que les journaux d’audit eux-mêmes seront entièrement affichés ; seule la possibilité de les filtrer à l’aide **d’Initialed By** est affectée. | Il n’y a pas de solution de contournement, mais nous travaillons sur un correctif. Le filtre revient à son comportement attendu, en affichant la liste complète des upN à filtrer, une fois le correctif déployé dans le service. |
 
 ## <a name="delegated-admin-privileges-dap"></a>Privilèges d’Administration délégués (DAP)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Cet article explique les différences entre les différentes versions du chiffrement des messages.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64a67ac9423463e4fcf1b5a3ff6c2262801933b0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 44eb59a160af9ecbe171e1c9b63f67e6ac608fe0
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629330"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276260"
 ---
 # <a name="compare-versions-of-message-encryption"></a>Comparer les versions de chiffrement de messages
 
@@ -43,10 +43,10 @@ Pour déterminer si cette dépréciation a un impact sur votre organisation, con
 |           **Situation**           | **Legacy OME**    | **IRM dans AD RMS**        | **Chiffrement des messages Microsoft Purview** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*Envoi d’un courrier chiffré*        |Via des règles de flux de messagerie Exchange|Utilisateur final initié à partir du bureau Outlook ou d’Outlook sur le web ; ou via des règles de flux de messagerie Exchange|Utilisateur final initié à partir d’Outlook Desktop, Outlook pour Mac ou Outlook sur le web ; via les règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP)|
-|*Modèle de gestion des droits*       |   N/A      |Option Ne pas transférer et modèles personnalisés|Option Ne pas transférer, option chiffrer uniquement et modèles personnalisés|
+|*Modèle de gestion des droits*       |   S/O      |Option Ne pas transférer et modèles personnalisés|Option Ne pas transférer, option chiffrer uniquement et modèles personnalisés|
 |*Type de destinataire*                   |Destinataires internes et externes|Destinataires internes uniquement         |Destinataires internes et externes|
 |*Expérience pour le destinataire interne*|Les destinataires reçoivent un message HTML qu’ils téléchargent et ouvrent dans un navigateur web ou une application mobile|Expérience inline native dans les clients Outlook|Expérience inline native pour les destinataires de la même organisation à l’aide de clients Outlook.  Les destinataires peuvent lire le message à partir du portail OME à l’aide de clients autres qu’Outlook (aucun téléchargement ou application requis).|
-|*Expérience pour le destinataire externe*|Les destinataires reçoivent un message HTML qu’ils téléchargent et ouvrent dans un navigateur web ou une application mobile|N/A|Expérience inline native pour les destinataires Microsoft 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (aucun téléchargement ou application requis).|
+|*Expérience pour le destinataire externe*|Les destinataires reçoivent un message HTML qu’ils téléchargent et ouvrent dans un navigateur web ou une application mobile|S/O|Expérience inline native pour les destinataires Microsoft 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (aucun téléchargement ou application requis).|
 |*Autorisations de pièce jointe*           |Aucune restriction sur les pièces jointes|Les pièces jointes sont protégées|Les pièces jointes sont protégées pour l’option Ne pas transférer et les modèles personnalisés. Les administrateurs peuvent choisir si les pièces jointes de l’option chiffrer uniquement sont protégées ou non.|
 |*Prise en charge de BYOK (Apportez votre propre clé)*|Aucun                |Aucun               |BYOK pris en charge          |
 ||
@@ -105,7 +105,7 @@ Les utilisateurs peuvent envoyer manuellement des messages chiffrés avec Chiffr
 
 ## <a name="migrate-from-legacy-ome-to-microsoft-purview-message-encryption"></a>Migrer d’OME hérité vers Chiffrement de messages Microsoft Purview
 
-Même si les deux versions peuvent coexister, nous vous recommandons vivement de modifier vos anciennes règles de flux de messagerie qui utilisent l’action **de règle Appliquer la version précédente d’OME** pour utiliser Chiffrement de messages Microsoft Purview. Mettez à jour ces règles pour utiliser l’action de règle de flux de messagerie **Appliquer Office 365 chiffrement des messages et protection des droits**. Pour obtenir des instructions, consultez [Définir des règles de flux de courrier pour chiffrer les messages électroniques](define-mail-flow-rules-to-encrypt-email.md).
+Même si les deux versions peuvent coexister, nous vous recommandons vivement de modifier vos anciennes règles de flux de messagerie qui utilisent l’action **de règle Appliquer la version précédente d’OME** pour utiliser Chiffrement de messages Microsoft Purview. Mettez à jour ces règles pour utiliser l’action de règle de flux de messagerie **Appliquer Office 365 chiffrement des messages et protection des droits**, sélectionnez « Chiffrer » dans la liste des modèles RMS. Pour obtenir des instructions, consultez [Définir des règles de flux de courrier pour chiffrer les messages électroniques](define-mail-flow-rules-to-encrypt-email.md).
 
 ## <a name="get-started-with-ome"></a>Prise en main d’OME
 

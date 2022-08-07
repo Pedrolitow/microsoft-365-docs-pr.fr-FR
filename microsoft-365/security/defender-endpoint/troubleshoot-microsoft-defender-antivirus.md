@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/02/2022
+ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eb4551d703258c5fdfa3429b721ef3317e9d2c6d
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717275"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275851"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
@@ -1517,7 +1517,7 @@ L’Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de
 </dt>
 <dt>Phase de mise à jour : &lt;phase&gt; de mise à jour, par exemple :
 <ul>
-<li>Recherche</li>
+<li>Rechercher</li>
 <li>Télécharger</li>
 <li>Installer</li>
 </ul>
@@ -2607,7 +2607,7 @@ Message :
 Description :
 </td>
 <td >
-Si la protection contre les falsifications est activée, toute tentative de modification des paramètres de Defender si elle est bloquée et si l’ID d’événement 5013 est généré indique quel changement de paramètre a été bloqué.
+Si la protection contre les falsifications est activée, toute tentative de modification des paramètres de Defender est bloquée. L’ID d’événement 5013 est généré et indique quel changement de paramètre a été bloqué.
 </td>
 </tr>
 <tr>
@@ -2675,8 +2675,7 @@ La période de grâce de l’Antivirus Microsoft Defender a expiré. La protecti
 </table>
 
 <a id="error-codes"></a>
-## Codes d’erreur du client de l’Antivirus Microsoft Defender Si l’Antivirus Microsoft Defender rencontre des problèmes, il vous fournira généralement un code d’erreur pour vous aider à résoudre le problème. Le plus souvent, une erreur signifie qu’il y a eu un problème lors de l’installation d’une mise à jour.
-Cette section fournit les informations suivantes sur les erreurs du client antivirus Microsoft Defender.
+## Codes d’erreur du client de l’Antivirus Microsoft Defender Si l’Antivirus Microsoft Defender rencontre des problèmes, il vous fournira généralement un code d’erreur pour vous aider à résoudre le problème. Le plus souvent, une erreur signifie qu’il y a eu un problème lors de l’installation d’une mise à jour. Cette section fournit les informations suivantes sur les erreurs du client antivirus Microsoft Defender.
 - Le code - d’erreur La raison possible de l’erreur - Conseils sur ce qu’il faut faire maintenant
 
 Utilisez les informations contenues dans ces tableaux pour résoudre les problèmes liés aux codes d’erreur de l’Antivirus Microsoft Defender.

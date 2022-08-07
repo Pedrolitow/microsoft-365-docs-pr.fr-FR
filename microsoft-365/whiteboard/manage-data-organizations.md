@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conservation des données pour le Tableau blanc Microsoft dans Azure et OneDrive Entreprise.
-ms.openlocfilehash: 88ebe6de6983823e6f782f006ac2aa58cfe9af93
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e79c0250d896d479047ec4465a81643dd2ba26d5
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943043"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276085"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Gérer les données pour le Tableau blanc Microsoft
 
@@ -25,7 +25,7 @@ Le contenu du tableau blanc est stocké dans Azure et dans OneDrive Entreprise. 
 
 ## <a name="azure-storage-overview"></a>Vue d’ensemble du stockage Azure
 
-Le tableau blanc stocke actuellement le contenu en toute sécurité dans Azure. Les données peuvent être stockées à différents emplacements, en fonction du pays et du moment où le Tableau blanc est passé au stockage de nouveau contenu dans ces emplacements. Pour savoir où les nouvelles données sont créées, consultez [l’emplacement de stockage de vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). 
+Le tableau blanc stocke actuellement le contenu en toute sécurité dans Azure. Les données peuvent être stockées à différents emplacements, en fonction du pays et du moment où le Tableau blanc est passé au stockage de nouveau contenu dans ces emplacements. Pour savoir où les nouvelles données sont créées, consultez [l’emplacement de stockage de vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
 
 Le contenu dans Azure ne prend pas en charge la protection contre la perte de données (DLP), la découverte électronique, les stratégies de rétention et les fonctionnalités similaires. Le contenu peut être géré à l’aide [d’applets de commande PowerShell de tableau blanc](/powershell/module/whiteboard/) et, au fil du temps, ce contenu doit être migré vers OneDrive Entreprise ou supprimé.
 
@@ -38,13 +38,13 @@ Nous modifions la façon dont les tableaux blancs sont stockés lorsque le compt
 
 Depuis **le 1er juin 2022**, le comportement des tableaux blancs sur Azure a changé. Tous les tableaux blancs partagés avec d’autres utilisateurs seront supprimés.
 
-Si vous souhaitez conserver les tableaux blancs d’un utilisateur supprimé, *avant* de supprimer le compte, vous pouvez transférer la propriété. Vous pouvez transférer un tableau blanc unique ou l’ensemble d’entre eux à un autre utilisateur. 
+Si vous souhaitez conserver les tableaux blancs d’un utilisateur supprimé, *avant* de supprimer le compte, vous pouvez transférer la propriété. Vous pouvez transférer un tableau blanc unique ou l’ensemble d’entre eux à un autre utilisateur.
 
 - Suivez ces instructions pour [transférer tous les tableaux blancs](/powershell/module/whiteboard/invoke-transferallwhiteboards).
 
 - Pour plus d’informations sur la suppression de comptes d’utilisateur, consultez [Supprimer un utilisateur de votre organisation](/microsoft-365/admin/add-users/delete-a-user).
 
-Assurez-vous que tout processus de suppression ou script gère cette modification. Si les tableaux blancs sont supprimés, aucune action n’est nécessaire. 
+Assurez-vous que tout processus de suppression ou script gère cette modification. Si les tableaux blancs sont supprimés, aucune action n’est nécessaire.
 
 ## <a name="onedrive-for-business-storage-overview"></a>vue d’ensemble du stockage OneDrive Entreprise
 
@@ -54,7 +54,7 @@ Les utilisateurs qui n’ont pas OneDrive Entreprise approvisionnés ne pourront
 
 Un tableau blanc moyen peut avoir une taille comprise entre 50 Ko et 1 Mo et se trouver où se trouve votre contenu OneDrive Entreprise. Pour savoir où sont stockées les données de votre locataire, consultez [l’emplacement où sont stockées vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examinez ensuite l’emplacement de OneDrive Entreprise.
 
-### <a name="controls-for-onedrive-for-business-storage"></a>Contrôles pour le stockage OneDrive Entreprise 
+### <a name="controls-for-onedrive-for-business-storage"></a>Contrôles pour le stockage OneDrive Entreprise
 
 Vous pouvez gérer les données de tableau blanc à l’aide de contrôles OneDrive Entreprise existants. Pour plus d’informations, consultez le [guide OneDrive pour les entreprises](/onedrive/plan-onedrive-enterprise).
 
@@ -83,5 +83,3 @@ Contrôles de données prévus pour les versions ultérieures :
 [Gérer le partage pour le tableau blanc](manage-sharing-organizations.md)
 
 [Déployer le tableau blanc sur Windows](deploy-on-windows-organizations.md)
-
-
