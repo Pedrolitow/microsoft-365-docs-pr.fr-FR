@@ -23,13 +23,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/26/2022
-ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/04/2022
+ms.openlocfilehash: 74b76a8719d57cfd2caabc02ace1e80583db0821
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112348"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276588"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -69,9 +69,14 @@ Vous pouvez payer votre abonnement par carte de crédit, carte de débit, ou com
 
 Dans certains cas, vous pouvez régler la facture de votre abonnement par chèque ou TEF. Pour disposer de cette option, vous devez :
 
-- Être un client établi
-- Devoir régler un abonnement dont le coût dépasse un montant qui varie en fonction de l’emplacement du service
+- Être un client établi pendant au moins six mois et n’avoir aucun solde impayé
+- Dépensez au moins 6 000 USD par mois ou achetez un montant minimal pour 3 des 12 derniers mois (ce montant peut varier en fonction de l’emplacement du service).
 - Satisfaire à une vérification de solvabilité
+
+Lorsque vous demandez à remplacer votre mode de paiement par chèque/virement bancaire, il existe deux résultats possibles :
+
+- Vous êtes automatiquement approuvé et vous êtes invité à fournir des informations sur votre entreprise.
+- Vous n’êtes pas automatiquement approuvé, mais vous pouvez envoyer une [demande de support](../../admin/get-help-support.md).
 
 Si une vérification de solvabilité est nécessaire, vous recevrez une notification lors de l'achat de votre abonnement. Si vous acceptez d'être contacté, vous recevrez un e-mail qui inclut davantage d'informations sur la demande d’approbation de crédit. Deux jours ouvrables sont généralement nécessaires pour effectuer les vérifications de solvabilité.
 
@@ -102,6 +107,18 @@ Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le r
 > [!NOTE]
 > - Le paiement par chèque n'est disponible que pour quelques pays ou régions seulement.
 > - Si vous devez payer les frais d’adhésion au programme Microsoft Partner Network (MPN) (abonnement Action Pack, compétences Argent ou Or), consultez [Les frais de compétence Pay pour plus d’informations sur la façon d’effectuer un paiement MPN.](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view)
+
+## <a name="check-or-wire-transfer-payment-processing-time"></a>Temps de traitement du paiement par virement bancaire ou chèque
+
+Les paiements effectués par chèque sont enregistrés trois à cinq jours ouvrés une fois le chèque encaissé par votre banque. Vous pouvez contacter votre banque pour confirmer le statut du chèque.
+
+Les paiements effectuées par virement bancaire ont des durées de traitement qui varient en fonction du type de transfert :
+
+- Virements nationaux ACH : cinq jours ouvrés. Deux à trois jours pour l’arrivée, plus deux jours pour l’enregistrement.
+- Virement bancaires (nationaux) : quatre jours ouvrés. Deux jours pour l’arrivée, plus deux jours pour l’enregistrement.
+- Virement bancaires (internationaux) : sept jours ouvrés. Cinq jours pour l’arrivée, plus deux jours pour l’enregistrement.
+
+Si votre compte est approuvé pour paiement par chèque ou virement bancaire, les instructions de paiement figurent sur la facture.
 
 ## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 
