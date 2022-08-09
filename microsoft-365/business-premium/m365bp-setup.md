@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/01/2022
+ms.date: 08/05/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: b123f7e13a8a3fa3c796f3ce2ff02ea2ca125872
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112458"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275031"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -38,20 +38,23 @@ Assurez-vous de respecter les exigences suivantes avant de commencer votre proce
 | Abonnement | Microsoft 365 Business Premium ou Microsoft 365 campagnes <br/><br/> Pour démarrer une version d’évaluation ou acheter votre abonnement, consultez les articles suivants : <br/>- [Obtenir Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [Obtenir Microsoft 365 campagnes](get-microsoft-365-campaigns.md) |
 | Autorisations  | Pour terminer le processus de configuration initiale, vous devez être Administrateur général. [En savoir plus sur les rôles d’administrateur](../admin/add-users/about-admin-roles.md). |
 | Configuration requise pour le navigateur | Microsoft Edge, Safari, Chrome ou Firefox. [En savoir plus sur les exigences du navigateur](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| Système d’exploitation | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS** : l’une des trois versions les plus récentes de macOS <br/>Actuellement, Microsoft 365 Business Premium et la version autonome de Microsoft Defender entreprise ne prennent pas en charge les serveurs.  |
+| Systèmes d’exploitation (client) | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS** : l’une des trois versions les plus récentes de macOS 
+| Systèmes d’exploitation (serveurs) | Windows Server ou Linux Server <br/>- Nécessite des serveurs Microsoft Defender pour entreprises (actuellement en préversion).<br/>Consultez [Comment obtenir des serveurs Microsoft Defender pour entreprises (préversion).](../security/defender-business/get-defender-business-servers.md)  |
 
 > [!NOTE]
 > Pour plus d’informations sur Microsoft 365, Office et la configuration système requise, consultez [Microsoft 365 et ressources Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="guided-setup-process"></a>Processus d’installation guidé
 
-Microsoft 365 Business Premium inclut un processus guidé. La vidéo suivante montre le processus de configuration guidé pour Microsoft 365 Business Standard, qui s’applique également à Microsoft 365 Business Premium. Dès que vous avez terminé le processus de configuration guidé, veillez à [Renforcer la sécurité](m365bp-security-overview.md).<br/><br/>
+Microsoft 365 Business Premium inclut un processus guidé. La vidéo suivante montre le processus de configuration guidé pour Microsoft 365 Business Standard, qui s’applique également à Microsoft 365 Business Premium. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
+Dès que vous avez terminé le processus de configuration guidé, veillez à [Renforcer la sécurité](m365bp-security-overview.md).
+
 > [!TIP]
 > - Une fois que vous avez ajouté des utilisateurs, donnez-leur un lien vers le [Guide de configuration rapide des employés](../admin/setup/employee-quick-setup.md). Le guide les oriente tout au long de la connexion, de l’obtention de Office applications et de l’enregistrement, de la copie et du partage de fichiers.
-> - Veillez à [Renforcer la sécurité](m365bp-security-overview.md).
+
 
 ## <a name="work-with-a-microsoft-partner"></a>Collaborer avec un partenaire Microsoft
 
@@ -76,6 +79,6 @@ Si vous préférez avoir un partenaire Microsoft pour vous aider à obtenir et �
 - [Configurer des mots de passe en libre-service](../admin/add-users/let-users-reset-passwords.md)
 - [Configurer la gestion des groupes en libre-service](/azure/active-directory/enterprise-users/groups-self-service-management)
 
-### <a name="next-objective"></a>Objectif suivant
+## <a name="next-objective"></a>Objectif suivant
 
-Une fois que vous avez atteint ces objectifs, passez à [Renforcer la sécurité](m365bp-security-overview.md).
+Passez à [Renforcer la sécurité](m365bp-security-overview.md).

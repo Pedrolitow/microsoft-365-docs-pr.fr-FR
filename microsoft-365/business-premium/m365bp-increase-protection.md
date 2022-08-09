@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: d0bda85aaa6691a16a34dd70434fb4426ad36a09
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892856"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274702"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
 
@@ -34,7 +34,7 @@ Dans cet objectif, vous augmentez votre protection contre les menaces avec Micro
 - [Stratégies de sécurité personnalisées](#create-custom-security-policies) que vous pouvez définir en fonction des besoins de votre entreprise.
 - [Comment ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Stratégies d’alerte](#review-your-alert-policies) qui surveillent des fichiers spécifiques et comment ils sont utilisés.
-- [Étapes suivantes](#next-steps) (telles que la sécurisation des appareils non gérés)
+- [Objectif suivant](#next-objective) (sécurisation des appareils non gérés)
 
 ## <a name="review-and-apply-preset-security-policies"></a>Examiner et appliquer des stratégies de sécurité prédéfinies
 
@@ -207,6 +207,6 @@ Vous pouvez empêcher les membres de votre organisation de partager leurs calend
 
 Si vos utilisateurs sont autorisés à partager leurs calendriers, consultez [ces instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) pour savoir comment partager à partir d’Outlook sur le web.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-objective"></a>Objectif suivant
 
-Ok, nous allons maintenant [**configurer ces BYOD gérés**](m365bp-devices-overview.md).
+Ok, nous allons maintenant [**configurer ces appareils (BYOD) gérés**](m365bp-devices-overview.md).

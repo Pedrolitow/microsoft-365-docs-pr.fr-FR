@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e34679c994ce75b95b5582290d2ed7c4ca726ac3
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175309"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276456"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -39,7 +39,7 @@ Si vous ne pouvez pas effectuer de mise à niveau vers Microsoft 365 Apps for en
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Prise en charge des fonctionnalités d’étiquette de confidentialité dans les applications
 
-Les tableaux suivants répertorient la version minimale Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en prévisualisation ou en cours de révision pour une prochaine version. Utilisez la [Microsoft 365 feuille de route pour](https://aka.ms/MIPC/Roadmap) plus d’informations sur les nouvelles fonctionnalités prévues pour les prochaines publication.
+Les tableaux suivants répertorient la version minimale Office qui a introduit des fonctionnalités spécifiques pour les étiquettes de confidentialité intégrées aux applications Office. Ou, si la fonctionnalité d’étiquette est en prévisualisation ou en cours de révision pour une prochaine version. Utilisez la [Microsoft 365 feuille de route pour](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) plus d’informations sur les nouvelles fonctionnalités prévues pour les prochaines publication.
 
 Les nouvelles versions des applications Office sont disponibles à différents moments pour différents canaux de mise à jour. Pour Windows, vous obtenez les nouvelles fonctionnalités plus tôt lorsque vous êtes sur le canal actuel ou le canal Enterprise mensuel, plutôt que sur Semi-Annual Enterprise canal. Les numéros de version minimum peuvent également être différents d’un canal de mise à jour à l’autre. Pour plus d’informations, voir [Vue d’ensemble des](/deployoffice/overview-update-channels) canaux de mise à jour Microsoft 365 Apps et historique des mises à jour [pour Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -104,7 +104,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
-|[Prise en charge du format PDF](#pdf-support) | En cours de révision|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
+|[Prise en charge du format PDF](#pdf-support) | Préversion : déploiement sur le [Canal bêta](https://office.com/insider)|  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 |[Appliquer la protection S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | En cours de révision | Déploiement : plus de 16,61 <sup>\*</sup>                   | Déploiement : 4.2226+ | Déploiement : 4.2203+ | En cours de révision |
 
 **Notes de bas de page :**
@@ -447,11 +447,13 @@ Cette action est enregistrée avec l’événement d’audit de **fichier renomm
 
 Lorsque le fichier PDF est créé, il hérite de l’étiquette avec les marquages de contenu et le chiffrement. Les fichiers PDF chiffrés peuvent être ouverts avec Microsoft Edge sur Windows ou Mac. Pour obtenir plus d’informations et connaître des lecteurs alternatifs, consultez [Quels lecteurs PDF sont pris en charge pour les PDF protégés ?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
+Outlook ne prend actuellement pas en charge les pièces jointes PDF qui héritent du chiffrement d’un message étiqueté. Toutefois, Outlook prend désormais en charge l’avertissement ou le blocage des utilisateurs de l’impression au format PDF, comme décrit ci-après.
+
 Scénarios PDF non pris en charge :
 
 - Imprimer au format PDF
     
-    Si les utilisateurs sélectionnent cette option, ils sont avertis que le document perdra la protection de l’étiquette et le chiffrement (s’il est appliqué) et doivent confirmer s’ils veulent continuer. Si votre stratégie d’étiquette de confidentialité requiert une justification pour supprimer une étiquette ou réduire sa classification, cette invite s’affiche.
+    Si les utilisateurs sélectionnent cette option, ils sont avertis que le document ou l’adresse e-mail perdra la protection de l’étiquette et le chiffrement (s’il est appliqué) et doivent confirmer s’ils veulent continuer. Si votre stratégie d’étiquette de confidentialité requiert une justification pour supprimer une étiquette ou réduire sa classification, cette invite s’affiche.
     
     Étant donné que cette option supprime l’étiquette de confidentialité, cette option ne sera pas disponible pour les utilisateurs si vous utilisez l’étiquetage obligatoire. Cette configuration fait référence au paramètre de stratégie d’étiquette de confidentialité qui oblige les utilisateurs à appliquer une étiquette à leurs e-mails et documents.
 

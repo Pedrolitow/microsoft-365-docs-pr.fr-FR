@@ -23,12 +23,12 @@ description: Ressources et infographies personnalisables que vous pouvez ajouter
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cb2ed6e54c4d513db89440549e69e9bacb4bc636
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e0ac855943bb0cd9ddb7279252b1df6ae9440ffc
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822498"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67277046"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments"></a>Aidez vos clients et clients à utiliser des rendez-vous virtuels
 
@@ -100,10 +100,12 @@ Vous pouvez lier vos clients ici Participer à un rendez-vous Bookings en tant q
 
 Tirez le meilleur parti des rendez-vous virtuels en veillant à ce que les membres de votre personnel sachent comment les diriger. Vous pouvez partager ces articles et vidéos avec les membres de votre équipe pour les aider à mieux comprendre les rendez-vous virtuels.
 
-- [Découvrez comment utiliser l’application Bookings dans Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
-- [Découvrez comment participer à un rendez-vous Bookings](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0)
-- [Mener un rendez-vous](bookings-virtual-visits.md#conduct-an-appointment)
-- [Regardez une vidéo sur les rendez-vous virtuels](#help-your-clients-and-customers-use-virtual-appointments)
+- [Découvrez comment utiliser l’application Bookings dans Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
+- [Découvrez comment participer à un rendez-vous Bookings](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
+- [Menez un rendez-vous](bookings-virtual-visits.md#conduct-an-appointment).
+- [Regardez une vidéo sur les rendez-vous virtuels](#help-your-clients-and-customers-use-virtual-appointments).
+- [Regardez une vidéo sur la gestion de la file d’attente dans les rendez-vous virtuels](https://go.microsoft.com/fwlink/?linkid=2202615).
+- [Regardez une vidéo sur les fonctionnalités de salle d’attente dans les rendez-vous virtuels](https://go.microsoft.com/fwlink/?linkid=2202614).
 
 ## <a name="resources-for-your-clients"></a>Ressources pour vos clients
 

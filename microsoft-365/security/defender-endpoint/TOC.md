@@ -513,6 +513,7 @@
 ####### [Exporter des méthodes et propriétés d’évaluation](get-assessment-methods-properties.md)
 ####### [Exporter une évaluation de configuration sécurisée](get-assessment-secure-config.md)
 ####### [Exporter une évaluation d’inventaire de logiciel](get-assessment-software-inventory.md)
+####### [Exporter l’évaluation de l’inventaire logiciel de code non-produit](get-assessment-non-cpe-software-inventory.md)
 ####### [Exporter une évaluation de vulnérabilités de logiciel](get-assessment-software-vulnerabilities.md)
 
 ###### [Examen automatisé]()

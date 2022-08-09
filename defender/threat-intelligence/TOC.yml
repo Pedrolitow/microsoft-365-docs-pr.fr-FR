@@ -31,3 +31,5 @@
   items:
     - name: Collecte des informations sur les menaces et chaînage d’infrastructure
       href: gathering-threat-intelligence-and-infrastructure-chaining.md
+    - name: Collecte d’informations sur les vulnérabilités en cours
+      href: gathering-vulnerability-intelligence.md

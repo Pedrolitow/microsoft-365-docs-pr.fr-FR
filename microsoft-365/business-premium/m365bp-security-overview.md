@@ -19,26 +19,26 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la sécurité pour Microsoft 365 Business Premium qui fournit des outils de cybersécurité tels que l’authentification multifacteur que vous pouvez utiliser pour empêcher les cyberattaques.
-ms.openlocfilehash: ce6bff29fec09da040ca8532d8113a994a5b6237
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: a51a49ff57458734a883ac8fa34142bd1c4bf2d3
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894052"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276482"
 ---
 # <a name="bump-up-security"></a>Augmenter la sécurité
 
-Dans cette mission, vous allez configurer vos défenses de sécurité. L’accès au compte d’administrateur est une cible à forte valeur ajoutée pour les pirates informatiques, et la protection de ces comptes est essentielle, car l’accès et le contrôle qu’ils fournissent peuvent avoir un impact sur l’ensemble du système. Vous devez également protéger le contenu de votre courrier et vos appareils.
+:::image type="content" source="media/mission2.png" alt-text="Améliorez votre protection de sécurité avec Microsoft 365 Business Premium.":::
 
-Pour réussir cette mission, vous allez configurer les différents rôles d’administrateur et leurs niveaux de sécurité spécifiques. Vous allez également appliquer l’authentification multifacteur (MFA) et configurer vos paramètres de sécurité par défaut. Restez vigilant : la sécurité et la fiabilité du système s’appuient sur vous.
+Dans cette mission, vous renforcez vos défenses de sécurité. Vous commencez par appliquer les exigences d’authentification multifacteur (MFA) à l’aide des paramètres de sécurité par défaut ou de l’accès conditionnel. Vous allez configurer les différents rôles d’administrateur et leurs niveaux de sécurité spécifiques. L’accès au compte d’administrateur est une cible à forte valeur ajoutée pour les pirates informatiques, et la protection de ces comptes est essentielle, car l’accès et le contrôle qu’ils fournissent peuvent avoir un impact sur l’ensemble du système. De plus, vous protégerez votre contenu et vos appareils de messagerie.
 
-Cette mission a les objectifs suivants :
+Restez vigilant : la sécurité et la fiabilité du système s’appuient sur vous.
 
+Vos objectifs sont les suivants :
+
+- [Activez les paramètres de sécurité par défaut](m365bp-conditional-access.md) (MFA).
 - [Protéger vos comptes d’administrateur](m365bp-protect-admin-accounts.md).
-- [Activer les paramètres de sécurité par défaut](m365bp-conditional-access.md).
 - [Se protéger contre les programmes malveillants et les autres menaces](m365bp-increase-protection.md).
 
-Atteignez ces objectifs, puis démarrez votre [prochaine mission](m365bp-devices-overview.md).
-
-:::image type="content" source="media/m365bp-bump-up-protection.jpg" alt-text="Augmenter la sécurité.":::
+Une fois que vous avez atteint ces objectifs, passez à [Configurer des appareils non gérés (BYOD)](m365bp-devices-overview.md).
 

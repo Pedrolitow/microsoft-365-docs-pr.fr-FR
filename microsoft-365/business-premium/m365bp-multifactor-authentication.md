@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez l’authentification multifacteur pour les téléphones dans Microsoft Business Premium. Augmentez votre sécurité en utilisant les fonctionnalités MFA de Microsoft Business Premium pour votre téléphone.
-ms.openlocfilehash: a0f4c5cf7099f27cade90e8c62aa1072fce3fd66
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 8bf278f3dc91dfe1a9e8d5388e2868e9dddb577d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894008"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274987"
 ---
 # <a name="set-up-mfa"></a>Configurer l’authentification multifacteur (MFA)
 
@@ -37,8 +37,8 @@ Pour plus d’informations, consultez [Configurer l’authentification multifact
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>Utiliser l’application Outlook sur vos appareils
 
-Une fois qu’un administrateur a demandé aux utilisateurs de première ligne d’utiliser l’authentification multifacteur, l’application d’authentification sert de deuxième forme d’authentification. Nous vous recommandons de les installer et d’utiliser l’application Outlook pour accéder à leur e-mail Microsoft 365.
+Lorsque l’authentification multifacteur (MFA) est appliquée, l’application d’authentification sert de deuxième forme d’authentification. Nous recommandons également à tout le monde d’installer et d’utiliser l’application Outlook pour accéder à leur messagerie Microsoft 365 sur leurs appareils. Affichez [Télécharger Microsoft Outlook pour iOS et Android](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios).
 
 ## <a name="next-objective"></a>Objectif suivant
 
-Pour votre prochain objectif, suivez les instructions pour [installer des applications Office](m365bp-install-office-apps.md).
+Passez à [l’installation des applications Office](m365bp-install-office-apps.md).

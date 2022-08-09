@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -18,23 +18,23 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Aperçu de la configuration pour les petites et moyennes entreprises et des campagnes. Comment configurer la cybersécurité et éviter les cyberattaques.
-ms.openlocfilehash: 1e715c47c5c440dbbd5cf6d6445695f3352fedb9
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+description: Démarrez le processus de configuration de Microsoft 365 Business Premium ou Microsoft 365 for  .
+ms.openlocfilehash: 5cca984e691cd52782eb74464b9d89f71628e071
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892702"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276658"
 ---
-# <a name="fortify-your-organization-with-microsoft-365-business-premium"></a>Fortifier votre organisation avec Microsoft 365 Business Premium
+# <a name="fortify-your-environment-with-microsoft-365-business-premium"></a>Fortifiez votre environnement avec Microsoft 365 Business Premium.
 
 Maintenant que vous disposez de Microsoft 365 Business Premium, votre première mission essentielle est de terminer immédiatement le processus de configuration initiale. Nous allons vous aider à démarrer.
+
+:::image type="content" source="media/mission1.png" alt-text="Souscription et configuration":::
 
 Votre objectif est de :
 
 - [Configurer votre environnement Microsoft 365 Business Premium](m365bp-setup.md) ; ou
 - [Configurez Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) s’il s’agit de votre abonnement.
 
-Une fois que vous avez atteint cet objectif, allez [augmenter les protections de sécurité](m365bp-security-overview.md).
-
-:::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Configuration de Business Premium":::
+Une fois que vous avez atteint cet objectif, passez à [renforcer la protection de la sécurité](m365bp-security-overview.md).
