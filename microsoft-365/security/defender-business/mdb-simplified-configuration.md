@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ec0fb44daf2ca7fd9a9d9098a1d0c2244e272c64
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: c28dd807a2f2391f3360b1ca459d6efe42d14c6f
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301219"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309568"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Processus de configuration simplifié dans Microsoft Defender pour entreprises
 
@@ -31,7 +31,7 @@ Microsoft Defender pour entreprises propose un processus de configuration simpli
 Pour intégrer des appareils et configurer des paramètres de sécurité pour les appareils de votre entreprise, vous pouvez choisir parmi les expériences suivantes :
 
 - Processus de configuration simplifié dans Microsoft Defender pour entreprises; ou
-- Utilisez Microsoft Intune (inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md)).
+- Utilisez Microsoft Intune.
 
 ## <a name="what-to-do"></a>Procédure
 
@@ -45,8 +45,8 @@ Le tableau suivant décrit chaque expérience.
 
 | Expérience du portail  | Description  |
 |---------|---------|
-| Expérience de configuration simplifiée dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*Cette option est recommandée pour les clients qui n’ont pas de Intune*) | L’expérience de configuration simplifiée inclut une [expérience de type Assistant](mdb-use-wizard.md) pour vous aider à configurer Defender entreprise et à le configurer. La configuration simplifiée inclut également des stratégies et des paramètres de sécurité par défaut pour protéger les appareils de votre entreprise dès qu’ils sont intégrés à Defender entreprise. Vous pouvez afficher et modifier vos stratégies par défaut en fonction des besoins de votre entreprise. Pour en savoir plus, consultez [Afficher ou modifier les stratégies d’appareil dans Microsoft Defender pour entreprises](mdb-view-edit-policies.md).<br/><br/>Avec l’expérience simplifiée, votre équipe de sécurité utilise le portail Microsoft 365 Defender comme un guichet unique pour : <ul><li>Installer et configurer Defender pour les PME</li><li>Afficher et gérer les incidents</li><li>Répondre aux menaces et les atténuer</li><li>Affichage des rapports</li><li>Examiner les actions en attente ou terminées  |
-| Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Intune est un fournisseur de gestion des appareils mobiles (GPM) et de gestion des applications mobiles (MAM) basé sur le cloud pour les applications et les appareils. Si vous utilisez déjà Intune, vous pouvez continuer à utiliser le centre d’administration Endpoint Manager pour gérer des appareils tels que des téléphones mobiles, des tablettes et des ordinateurs portables. Voir [Microsoft Intune : Gestion des appareils](/mem/intune/fundamentals/what-is-device-management). <br/><br/>Intune n’est pas inclus dans la version autonome de Defender entreprise, mais vous pouvez l’ajouter à votre abonnement si nécessaire. Si vous avez [Microsoft 365 Business Premium](../../business-premium/index.md), vous avez déjà Intune. |
+| Expérience de configuration simplifiée dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))  | L’expérience de configuration simplifiée inclut une [expérience de type Assistant](mdb-use-wizard.md) pour vous aider à configurer Defender entreprise et à le configurer. La configuration simplifiée inclut également des stratégies et des paramètres de sécurité par défaut pour protéger les appareils de votre entreprise dès qu’ils sont intégrés à Defender entreprise. Vous pouvez afficher et modifier vos stratégies par défaut en fonction des besoins de votre entreprise. Pour en savoir plus, consultez [Afficher ou modifier les stratégies d’appareil dans Microsoft Defender pour entreprises](mdb-view-edit-policies.md).<br/><br/>Avec l’expérience simplifiée, votre équipe de sécurité utilise le portail Microsoft 365 Defender comme un guichet unique pour : <ul><li>Installer et configurer Defender pour les PME</li><li>Afficher et gérer les incidents</li><li>Répondre aux menaces et les atténuer</li><li>Affichage des rapports</li><li>Examiner les actions en attente ou terminées  |
+| Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Intune est un fournisseur de gestion des appareils mobiles (GPM) et de gestion des applications mobiles (MAM) basé sur le cloud pour les applications et les appareils. Si vous utilisez déjà Intune, vous pouvez continuer à utiliser le centre d’administration Endpoint Manager pour gérer des appareils tels que des téléphones mobiles, des tablettes et des ordinateurs portables. Voir [Microsoft Intune : Gestion des appareils](/mem/intune/fundamentals/what-is-device-management).  |
 
 ## <a name="next-steps"></a>Prochaines étapes
 

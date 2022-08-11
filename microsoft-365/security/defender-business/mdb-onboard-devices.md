@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: e7d884e55aa3f55106097354ce3a8acdd3dc5b17
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 3f69c82a6a401118d50372adec03b9cdbed0f502
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300757"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309392"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
@@ -46,7 +46,7 @@ Choisissez l'une des options suivantes pour intégrer des appareils clients Wind
 
 - [Script local](#local-script-for-windows-10-and-11) (pour l’intégration manuelle d’appareils dans le portail Microsoft 365 Defender)
 - [stratégie de groupe](#group-policy-for-windows-10-and-11) (si vous utilisez déjà stratégie de groupe dans votre organisation)
-- [Microsoft Intune](#intune-for-windows-10-and-11) (inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [Microsoft Intune](#intune-for-windows-10-and-11)
 
 ### <a name="local-script-for-windows-10-and-11"></a>Script local pour Windows 10 et 11
 
@@ -77,9 +77,7 @@ Si vous préférez utiliser stratégie de groupe pour intégrer des clients Wind
 
 ### <a name="intune-for-windows-10-and-11"></a>Intune pour Windows 10 et 11
 
-Si votre abonnement inclut Intune, vous pouvez intégrer des clients Windows et d’autres appareils dans le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Par exemple, si vous avez [Microsoft 365 Business Premium](../../business/index.yml), vous avez déjà Intune dans le cadre de votre abonnement et vous pouvez utiliser Intune pour intégrer des appareils.  
-
-Plusieurs méthodes sont disponibles pour inscrire des appareils dans Intune. Nous vous recommandons d’utiliser l’une des méthodes suivantes :
+Vous pouvez intégrer des clients Windows et d’autres appareils dans Intune à l’aide du Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Plusieurs méthodes sont disponibles pour inscrire des appareils dans Intune. Nous vous recommandons d’utiliser l’une des méthodes suivantes :
 
 - [Activer l’inscription automatique Windows pour les appareils appartenant à l’entreprise ou gérés par l’entreprise](#enable-automatic-enrollment-for-windows-10-and-11)
 - [Demandez aux utilisateurs d’inscrire leurs propres appareils Windows 10/11 dans Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
@@ -160,7 +158,7 @@ Choisissez l'une des options suivantes pour le Mac embarqué :
 
 ### <a name="local-script-for-mac"></a>Script local pour Mac
 
-Lorsque vous exécutez le script local sur un Mac, il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà ; inscrit le Mac dans Microsoft Intune, s’il n’est pas déjà inscrit, puis intègre le Mac à Defender pour Entreprises. La méthode de script local fonctionne même si vous n’avez pas de Intune actuellement. Nous vous recommandons d’intégrer jusqu’à 10 appareils à la fois à l’aide de cette méthode.
+Lorsque vous exécutez le script local sur un Mac, il crée une approbation avec Azure Active Directory, si cette approbation n’existe pas déjà ; inscrit le Mac dans Microsoft Intune, s’il n’est pas déjà inscrit, puis intègre le Mac à Defender pour Entreprises. Nous vous recommandons d’intégrer jusqu’à 10 appareils à la fois à l’aide de cette méthode.
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -186,9 +184,7 @@ Une fois qu’un Mac est inscrit dans Intune, vous pouvez l’ajouter à un grou
 
 ### <a name="intune-for-mac"></a>Intune pour Mac
 
-Si votre abonnement inclut Microsoft Intune, vous pouvez intégrer Mac dans le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Par exemple, si vous avez [Microsoft 365 Business Premium](../../business/index.yml), vous avez déjà Intune dans le cadre de votre abonnement.  
-
-Plusieurs méthodes sont disponibles pour inscrire Mac dans Intune. Nous vous recommandons l’une des méthodes suivantes :
+Vous pouvez inscrire des ordinateurs Mac dans Intune à l’aide du Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Plusieurs méthodes sont disponibles pour inscrire Mac dans Intune. Nous vous recommandons l’une des méthodes suivantes :
 
 - [Choisir une option pour Mac appartenant à l’entreprise](#options-for-company-owned-mac)
 - [Demandez aux utilisateurs d’inscrire leur propre Mac dans Intune](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -337,9 +333,7 @@ Pour afficher la liste des appareils intégrés à Defender entreprise, accédez
 
 ## <a name="mobile-devices"></a>Appareils mobiles
 
-Vous aurez besoin de Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Si vous avez [Microsoft 365 Business Premium](../../business/index.yml), vous avez Intune. 
-
-Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :
+Vous pouvez utiliser Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :
 
 - [Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)
 - [Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)

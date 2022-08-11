@@ -11,17 +11,18 @@ metadata:
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
+  ms.date: 08/10/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: abcae0beafdca9aa9d25f5ea69d88bd0d6e5a6d1
-  ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+  ms.openlocfilehash: 21e85d866e9a668253e39a20e3660a34b5465740
+  ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/10/2022
-  ms.locfileid: "67301154"
+  ms.lasthandoff: 08/11/2022
+  ms.locfileid: "67309436"
 title: Microsoft Defender pour entreprises - Forum aux questions et réponses
 summary: >
   Utilisez cet article pour obtenir des réponses aux questions que vous pourriez avoir sur Defender entreprise.
@@ -50,7 +51,7 @@ sections:
     answer: >
       Vous pouvez intégrer et sécuriser jusqu’à cinq appareils clients par licence utilisateur.
   - question: Defender entreprise protège-t-il les appareils clients Mac, Android et iOS/iPadOS ?
-    answer: "Oui. Defender entreprise prend en charge la protection pour les appareils Mac, Android et iOS/iPadOS. Voir [Appareils intégrés](mdb-onboard-devices.md).\n\n- Vous pouvez intégrer des appareils Mac à l’aide d’un script local dans le portail Microsoft 365 Defender. \n- Pour intégrer des appareils Android et iOS/iPadOS, vous devez disposer d’une licence pour [Microsoft Intune](/mem/intune/). Intune est inclus dans Microsoft 365 Business Premium et peut être acheté pour Defender entreprise (autonome).\n\nUne simplification accrue pour les appareils Mac, iOS/iPadOS et Android figure dans la feuille de route. \n"
+    answer: "Oui. Defender entreprise prend en charge la protection pour les appareils Mac, Android et iOS/iPadOS. Voir [Appareils intégrés](mdb-onboard-devices.md).\n\n- Vous pouvez intégrer des appareils Mac à l’aide d’un script local dans le portail Microsoft 365 Defender. \n- Pour intégrer des appareils Android et iOS/iPadOS, vous pouvez utiliser [Microsoft Intune](/mem/intune/).\n\nUne simplification accrue pour les appareils Mac, iOS/iPadOS et Android figure dans la feuille de route. \n"
   - question: Defender pour Entreprise prend-il en charge les serveurs ?
     answer: "La prise en charge du serveur est maintenant en préversion ! Consultez [Comment obtenir des serveurs Microsoft Defender entreprise (préversion).](get-defender-business-servers.md)  \n\nLorsque la licence de serveurs Microsoft Defender pour entreprises devient en disponibilité générale (GA), elle est proposée en tant que module complémentaire à Microsoft 365 Business Premium et à la version autonome de Defender for Business. En disponibilité générale, Microsoft Defender pour entreprises serveurs sont facturés à 3 $ par instance de serveur. À ce stade, vous pouvez acheter une licence pour chaque serveur intégré, ou choisir de déconnecter les serveurs de Defender entreprise.\n"
   - question: Quelle est la différence entre les serveurs Microsoft Defender pour entreprises et Microsoft Defender pour serveurs Plan 1 et Plan 2 ?
@@ -66,9 +67,9 @@ sections:
     answer: "Defender entreprise est activé dans Microsoft 365 Lighthouse pour la prise en charge multilocataire dans une seule console ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n\nPour en savoir plus, consultez [Vue d’ensemble de Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
   - question: Comment faire configurer des règles et des fonctionnalités de réduction de la surface d’attaque dans Defender entreprise ?
     answer: >
-      La configuration simplifiée des règles et fonctionnalités de réduction de la surface d’attaque via Defender entreprise dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) n’est pas encore prise en charge. Si vous avez Microsoft Intune, vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager pour configurer vos stratégies de réduction de la surface d’attaque. Consultez la [stratégie de réduction de la surface d’attaque pour la sécurité des points de terminaison dans Intune](/mem/intune/protect/endpoint-security-asr-policy).
-  - question: Si je n’ai pas de Microsoft Intune, ai-je besoin d’une autre licence pour utiliser les fonctionnalités incluses dans Defender Entreprise et Intune ?
-    answer: "Si vous avez Defender Entreprise en tant qu’abonnement autonome et que vous n’avez pas de Intune, vous pouvez intégrer et sécuriser des appareils Windows et Mac dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). \n \nVous pouvez également gérer vos stratégies de protection et de protection pare-feu de nouvelle génération dans le portail Microsoft 365 Defender avec une [expérience de configuration simplifiée](mdb-simplified-configuration.md). \n \nPour gérer d’autres paramètres, tels que les stratégies de réduction de la surface d’attaque, ou pour intégrer d’autres appareils, tels que des appareils Android ou iOS/iPadOS, vous devez Intune. Intune est inclus dans Microsoft 365 Business Premium et peut être acheté pour les abonnements Defender entreprise (autonomes). \n"
+      La configuration simplifiée des règles et fonctionnalités de réduction de la surface d’attaque via Defender entreprise dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) n’est pas encore prise en charge. Vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager pour configurer vos stratégies de réduction de la surface d’attaque. Consultez la [stratégie de réduction de la surface d’attaque pour la sécurité des points de terminaison dans Intune](/mem/intune/protect/endpoint-security-asr-policy).
+  - question: Comment Microsoft Intune fonctionne-t-il avec Defender entreprise ?
+    answer: "Si vous disposez de Defender Entreprise en tant qu’abonnement autonome, vous pouvez intégrer et sécuriser des appareils Windows et Mac dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Vous pouvez utiliser Microsoft Intune pour intégrer des ordinateurs Windows et Mac, ainsi que des appareils mobiles.\n\nLorsque vous inscrivez des appareils dans Intune et que vous les intègrez à Defender entreprise, vous créez une connexion entre Intune et Defender entreprise.\n \nVous pouvez gérer vos stratégies de protection et de protection pare-feu de nouvelle génération dans le portail Microsoft 365 Defender avec une [expérience de configuration simplifiée](mdb-simplified-configuration.md). Ces stratégies sont visibles dans Intune. Pour gérer d’autres paramètres, tels que les stratégies de réduction de la surface d’attaque, vous allez utiliser Intune.  \n"
   - question: Si j’utilise déjà Microsoft 365 Business Premium, pourquoi ai-je besoin de Defender Entreprise ?
     answer: "Si vous avez Microsoft 365 Business Premium, Defender Entreprise est inclus dans votre abonnement. Pour en savoir plus, consultez les articles suivants :\n \n- [Aperçu de Defender pour entreprises](mdb-overview.md).\n- [Comparer Defender entreprise à Microsoft 365 Business Premium](compare-mdb-m365-plans.md)\n\nDefender entreprise étend les fonctionnalités de sécurité dans Microsoft 365 Business Premium avec endpoint protection pour les appareils de votre entreprise.\n"
   - question: Quelles sont les différences entre Defender entreprise et Defender pour les plans de point de terminaison 1 et 2 ?
