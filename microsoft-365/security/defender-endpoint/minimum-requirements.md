@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: a906a0ddebdfb96552b868587f466108d8f4dec9
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174934"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300867"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Exigences minimales pour Microsoft Defender pour point de terminaison
 
@@ -43,12 +43,13 @@ Il existe des exigences minimales pour l’intégration d’appareils au service
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
+Les versions autonomes de [Defender pour point de terminaison Plan 1 et Plan 2](defender-endpoint-plan-1-2.md) n’incluent pas de licences serveur. Pour intégrer des serveurs à ces plans, vous avez besoin de Defender pour serveurs Plan 1 ou Plan 2 dans le cadre de l’offre [Defender pour cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . Pour en savoir plus, consultez la vue d’ensemble de [Microsoft Defender pour serveurs](/azure/defender-for-cloud/defender-for-servers-introduction).
+
 Pour plus d’informations sur les exigences en matière de licences pour Microsoft Defender pour point de terminaison, consultez [Microsoft Defender pour point de terminaison informations sur les licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 Pour obtenir des informations détaillées sur les licences, consultez le [site Termes du produit](https://www.microsoft.com/licensing/terms/) et collaborez avec votre équipe de compte pour en savoir plus sur les conditions générales.
 
 Pour plus d’informations sur le tableau des fonctionnalités des éditions Windows, consultez [Comparer les éditions Windows](https://www.microsoft.com/windowsforbusiness/compare).
-
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 
 L’accès à Defender pour point de terminaison s’effectue via un navigateur, qui prend en charge les navigateurs suivants :

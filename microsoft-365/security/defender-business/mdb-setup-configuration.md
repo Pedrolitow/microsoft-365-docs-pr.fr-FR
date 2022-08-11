@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: e6489fa45e85c8c9561a29bfc7e47615a5c0ea33
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 931dfb257902e17968df2621b5b8c374f4691a25
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969724"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300779"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configurer et configurer Microsoft Defender pour entreprises
 
@@ -38,15 +39,15 @@ Defender entreprise offre une expérience de configuration et de configuration r
 
 Le diagramme suivant illustre le processus d’installation et de configuration global pour Defender entreprise. Si vous avez utilisé l’Assistant Installation, vous avez probablement déjà effectué les étapes 1 à 3 et éventuellement l’étape 4. 
 
-:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Processus d’installation et de configuration pour Defender entreprise.":::
+:::image type="content" source="media/mdb-setup-process-2.png" alt-text="Processus d'installation et de configuration de Defender pour entreprise.":::
 
 | Étape  | Article | Description  |
 |---------|---------|--------|
 | 1 | [Consultez la configuration requise](mdb-requirements.md) | Passez en revue les exigences, y compris les systèmes d’exploitation pris en charge, pour Defender entreprise. Consultez [les exigences de Defender entreprise](mdb-requirements.md). |
-| 2 | [Attribuer des rôles et des autorisations](mdb-roles-permissions.md)     | Les membres de votre équipe de sécurité ont besoin d’autorisations pour effectuer des tâches, telles que l’examen des menaces détectées & les actions de correction, l’affichage & la modification des stratégies, l’intégration d’appareils et l’utilisation de rapports. Vous pouvez accorder ces autorisations via certains rôles. Voir [Attribuer des rôles et des autorisations](mdb-roles-permissions.md).        |
+| 2 | [Attribuer des rôles et des autorisations](mdb-roles-permissions.md)     | Personnes de votre équipe de sécurité ont besoin d’autorisations pour effectuer des tâches, telles que l’examen des menaces détectées & les actions de correction, l’affichage & la modification des stratégies, l’intégration d’appareils et l’utilisation de rapports. Vous pouvez accorder ces autorisations via certains rôles. Voir [Attribuer des rôles et des autorisations](mdb-roles-permissions.md).        |
 | 3 | [Configurer des notifications par e-mail](mdb-email-notifications.md) | Vous pouvez spécifier qui doit recevoir des notifications par e-mail lorsque des alertes sont déclenchées ou que de nouvelles vulnérabilités sont découvertes. Voir [Configurer les notifications par e-mail](mdb-email-notifications.md).| 
-| 4 | [Intégrer des appareils](mdb-onboard-devices.md)     | Defender entreprise est configuré pour vous permettre de choisir parmi plusieurs options pour intégrer les appareils de votre entreprise. Consultez [Intégrer des appareils à Defender pour Entreprises](mdb-onboard-devices.md).         |
-| 5 | [Configurer vos paramètres et stratégies de sécurité](mdb-configure-security-settings.md) | Vous pouvez choisir parmi plusieurs options pour configurer vos paramètres et stratégies de sécurité, comme le [processus de configuration simplifié](mdb-simplified-configuration.md) dans Defender entreprise ou le Centre d’administration Microsoft Endpoint Manager. Consultez [Configurer vos paramètres et stratégies de sécurité](mdb-configure-security-settings.md). |
+| 4 | [Intégrer des appareils](mdb-onboard-devices.md)     | Vous pouvez choisir parmi plusieurs options pour intégrer les appareils de votre entreprise, comme l’utilisation d’un script téléchargeable ou l’inscription d’appareils dans Microsoft Intune. Consultez [Intégrer des appareils à Defender pour Entreprises](mdb-onboard-devices.md).         |
+| 5 | [Configurer vos paramètres et stratégies de sécurité](mdb-configure-security-settings.md) | Vous pouvez choisir parmi plusieurs options pour configurer vos paramètres et stratégies de sécurité, comme le [processus de configuration simplifié](mdb-simplified-configuration.md) dans Defender entreprise ou Microsoft Intune. Consultez [Configurer vos paramètres et stratégies de sécurité](mdb-configure-security-settings.md). |
 
 ## <a name="next-steps"></a>Prochaines étapes
 

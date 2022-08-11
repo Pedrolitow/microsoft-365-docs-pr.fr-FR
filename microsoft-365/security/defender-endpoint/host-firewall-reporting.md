@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 0d541fe3d129f1533c6642a0eb34547245faa489
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106752"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301307"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 
@@ -30,11 +30,13 @@ ms.locfileid: "67106752"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Si vous êtes administrateur général ou de sécurité, vous pouvez désormais héberger des rapports de pare-feu sur le [portail Microsoft 365 Defender](https://security.microsoft.com). Cette fonctionnalité vous permet d’afficher les rapports de pare-feu Windows 10, Windows 11, Windows Server 2019 et Windows Server 2022 à partir d’un emplacement centralisé.
+Si vous êtes administrateur général ou de sécurité, vous pouvez désormais héberger des rapports de pare-feu sur le [portail Microsoft 365 Defender](https://security.microsoft.com). Cette fonctionnalité vous permet d’afficher les rapports de pare-feu Windows à partir d’un emplacement centralisé.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous devez exécuter Windows 10 ou Windows 11, ou Windows Server 2019 ou Windows Server 2022.
+- Vous devez exécuter Windows 10 ou une version ultérieure, Windows Server 2012 R2 ou une version ultérieure.
+     > [!NOTE]
+     > Pour que Windows2012 R2 et Windows Server 2016 apparaissent dans les rapports de pare-feu, ces appareils doivent être intégrés à l’aide du package de solution unifié moderne. Pour plus d’informations, consultez [Nouvelles fonctionnalités de la solution unifiée moderne pour Windows Server 2012 R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 - Pour intégrer des appareils au service Microsoft Defender pour point de terminaison, voir [ici](onboard-configure.md).
 - Pour <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portail</a> commence à recevoir les données, vous devez activer **les événements d’audit** pour Windows Defender Pare-feu avec Advanced Security :
   - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

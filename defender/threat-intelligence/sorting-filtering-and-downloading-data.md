@@ -7,14 +7,15 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 65a96d7fa37170c0ffaf10c4cb086660fef6e69e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 36648d50033cb00893e9f973641f421274e6e3d8
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107979"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280374"
 ---
 # <a name="sorting-filtering-and-downloading-data"></a>Tri, filtrage et téléchargement de données
+
 La plateforme Microsoft Defender Threat Intelligence (Defender TI) permet aux analystes d’accéder à notre vaste collection de données d’analyse dans un format de tableau indexé et dynamique.  Ces jeux de données peuvent être très volumineux, renvoyant des quantités étendues de données historiques et récentes. Ainsi, en permettant aux analystes de trier et de filtrer les données de manière appropriée, vous pouvez facilement exposer les connexions intéressantes.
 
 ![Capture d’écran du tri des jeux de données Chrome](media/sortingDataSetsChromeScreenshot.png)
@@ -42,7 +43,7 @@ Dans cet article pratique, vous allez également apprendre à télécharger des 
 - Articles
 - Jeux de données
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -159,7 +160,7 @@ Les données peuvent être téléchargées dans les sections suivantes :
 
 Les en-têtes suivants sont exportés à la suite du téléchargement de résolutions, de DNS et de données DNS inversées :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **Resolve**                | Enregistrement associé au domaine recherché (résolution de l’adresse IP) ou au domaine qui a été résolu en adresse IP lorsqu’une adresse IP est recherchée |
 | **Emplacement**               | Pays dans lequel l’adresse IP est hébergée |
@@ -172,37 +173,37 @@ Les en-têtes suivants sont exportés à la suite du téléchargement de résolu
 
 Les en-têtes suivants sont exportés suite au téléchargement des données des sous-domaines :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **nom d’hôte**               | Sous-domaine du domaine recherché |
 | **étiquettes**                   | Balises personnalisées ou système associées à l’artefact |
 
 Les en-têtes suivants sont exportés à la suite du téléchargement des données Trackers :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **nom d’hôte**               | Nom d’hôte qui a observé ou observe actuellement le suivi |
 | **firstSeen**              | Date/heure à laquelle Microsoft a observé pour la première fois que le nom d’hôte utilisait le suivi (format : mm/dd/aaaa hh:mm) |
 | **lastSeen**               | Date/heure à laquelle Microsoft a observé pour la première fois que le nom d’hôte utilisait le suivi (format : mm/dd/aaaa hh:mm) |
-| **attributeType**          | Type de suivi |
+| **Attributetype**          | Type de suivi |
 | **attributeValue**         | Valeur de suivi |
 | **Tags**                   | Balises personnalisées ou système associées à l’artefact |
 
 Les en-têtes suivants sont exportés à la suite du téléchargement des données composants :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **nom d’hôte**               | Nom d’hôte qui a observé ou observe actuellement le composant |
 | **firstSeen**              | Date/heure à laquelle Microsoft a observé pour la première fois que le nom d’hôte utilisait le suivi (format : mm/dd/yyyy hh:mm |
 | **lastSeen**               | Date/heure à laquelle Microsoft a observé la dernière fois que le nom d’hôte utilisait le composant (format : mm/dd/aaaa hh:mm |
-| **catégorie**               | Type de composant |
+| **Catégorie**               | Type de composant |
 | **name**                   | Nom du composant |
 | **version**                | Version du composant |
 | **Tags**                   | Balises personnalisées ou système associées à l’artefact |
 
 Les en-têtes suivants sont exportés à la suite du téléchargement des données de paires d’hôtes :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **parentHostname**         | Nom d’hôte qui tend la main au nom d’hôte enfant |
 | **childHostname**          | Nom d’hôte qui alimente les ressources qu’ils hébergent au nom d’hôte parent. |
@@ -213,15 +214,15 @@ Les en-têtes suivants sont exportés à la suite du téléchargement des donné
 
 Les en-têtes suivants sont exportés à la suite du téléchargement des données hashes :
 
-|                    |                            |
+| &nbsp;             | &nbsp;                     |
 |--------------------|----------------------------|
 | **source**         | Source qui a observé l’exemple de hachage MD5 |
-| **échantillon**                  | Hachage MD5 |
+| **Échantillon**                  | Hachage MD5 |
 | **date de collecte**         | Date de collecte capturée par la source |
 
 Les en-têtes suivants sont exportés suite au téléchargement des données cookies :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **nom d’hôte**               | Nom d’hôte qui a observé le nom du cookie |
 | **firstSeen**              | Lorsque le nom du cookie a été observé pour la première fois dans le nom d’hôte provenant du domaine cookie (format : mm/dd/aaaa hh:mm) |
@@ -232,7 +233,7 @@ Les en-têtes suivants sont exportés suite au téléchargement des données coo
 
 Les en-têtes suivants sont exportés à la suite du téléchargement de listes de projets pour mes projets, mon équipe et mes projets partagés :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **name**                   | Nom du projet |
 | **artefacts (nombre)**      | Nombre d’artefacts dans le projet |
@@ -243,11 +244,11 @@ Les en-têtes suivants sont exportés à la suite du téléchargement de listes 
 
 Les en-têtes suivants sont exportés à la suite du téléchargement des détails du projet (artefacts) à partir d’un projet :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **artefact**               | Valeur d’artefact (par exemple, adresse IP, domaine, hôte, valeur WHOIS, certificat SHA-1, etc.) |
+| **Artefact**               | Valeur d’artefact (par exemple, adresse IP, domaine, hôte, valeur WHOIS, certificat SHA-1, etc.) |
 | **type**                   | Type d’artefact (par exemple, IP, domaine, hôte, organisation WHOIS, téléphone WHOIS, certificat SHA-1, etc.) |
-| **créé**                | Date/heure à laquelle l’artefact a été ajouté au projet (format : mm/dd/aaaa hh:mm) |
+| **Créé**                | Date/heure à laquelle l’artefact a été ajouté au projet (format : mm/dd/aaaa hh:mm) |
 | **Créateur**                | Email adresse de l’utilisateur qui a ajouté l’artefact |
 | **context**                | Comment l’artefact a été ajouté au projet |
 | **étiquettes**                   | Balises personnalisées ou système associées à l’artefact |
@@ -255,12 +256,12 @@ Les en-têtes suivants sont exportés à la suite du téléchargement des détai
 
 Les en-têtes suivants sont exportés à la suite du téléchargement d’indicateurs public ou riskiq de renseignement sur les menaces :
 
-|                            |                            |
+| &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **type**                | Type d’indicateur (par exemple, ip, certificat, domaine, hash_sha256) |
 | **value**               | Valeur de l’indicateur (par exemple, adresse IP, domaine, nom d’hôte) |
 | **source**              | Source de l’indicateur (RiskIQ ou OSINT) |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour plus d’informations, consultez [Jeux de données](data-sets.md).

@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: d60d01bd2a77d992110f85967196390f3dceae3d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 6a311d0fb1edeff8e8eb72148ffc08dfb945cbbe
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873707"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280826"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Intégrer des appareils Windows à l’aide de Configuration Manager
 
@@ -31,8 +31,8 @@ ms.locfileid: "65873707"
 
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Endpoint Configuration Manager current branch
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Endpoint Configuration Manager Current Branch
 - System Center 2012 Configuration Manager R2
 
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -49,14 +49,14 @@ Vous pouvez utiliser plusieurs options pour intégrer des appareils à l’aide 
 Pour Windows Server 2012 R2 et Windows Server 2016, après avoir effectué les étapes d’intégration, vous devez [configurer et mettre à jour System Center Endpoint Protection clients](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender pour point de terminaison ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience](/windows-hardware/test/assessments/out-of-box-experience) ). Assurez-vous que les utilisateurs effectuent une opération OOBE après avoir exécuté Windows installation ou mise à niveau.
+> Defender pour point de terminaison ne prend pas en charge l’intégration pendant la phase [OOBE (Out-Of-Box Experience](/windows-hardware/test/assessments/out-of-box-experience) ). Assurez-vous que les utilisateurs effectuent une opération OOBE après avoir exécuté l’installation ou la mise à niveau de Windows.
 >
 > Notez qu’il est possible de créer une règle de détection sur une application Configuration Manager pour vérifier en permanence si un appareil a été intégré. Une application est un type d’objet différent d’un package et d’un programme.
 > Si un appareil n’est pas encore intégré (en raison de l’achèvement OOBE en attente ou d’une autre raison), Configuration Manager réessayez d’intégrer l’appareil jusqu’à ce que la règle détecte le changement d’état.
 >
 > Ce comportement peut être effectué en créant une règle de détection vérifiant si la valeur de Registre « OnboardingState » (de type REG_DWORD) = 1.
 > Cette valeur de Registre se trouve sous « HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status ».
-Pour plus d’informations, consultez [Configurer les méthodes de détection dans System Center Configuration Manager 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
+Pour plus d’informations, consultez [Configurer les méthodes de détection dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
 
 ### <a name="configure-sample-collection-settings"></a>Configurer des exemples de paramètres de collecte
 
@@ -84,7 +84,7 @@ Où le type de clé est un D-WORD. Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations sur la conformité System Center Configuration Manager, consultez [Présentation des paramètres de conformité dans System Center Configuration Manager 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Pour plus d’informations sur la conformité System Center Configuration Manager, consultez [Présentation des paramètres de conformité dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
 
@@ -118,6 +118,65 @@ Configurez toutes les règles disponibles pour auditer.
 > [!NOTE]
 > Le blocage de ces activités peut interrompre des processus métier légitimes. La meilleure approche consiste à tout définir pour l’audit, à identifier ceux qui peuvent être activés sans risque, puis à activer ces paramètres sur les points de terminaison qui n’ont pas de détections de faux positifs.
 
+Pour déployer des stratégies AV et ASR via Microsoft System Center Configuration Manager (SCCM), procédez comme suit :
+
+- Activez Endpoint Protection et configurez les paramètres client personnalisés.
+- Installez le client Endpoint Protection à partir d’une invite de commandes.
+- Vérifiez l’installation du client Endpoint Protection.
+
+##### <a name="enable-endpoint-protection-and-configure-custom-client-settings"></a>Activer Endpoint Protection et configurer les paramètres client personnalisés
+Suivez les étapes pour activer la protection des points de terminaison et la configuration des paramètres client personnalisés :
+
+1. Dans la console Configuration Manager, cliquez sur **Administration.**
+1. Dans l’espace **de travail Administration** , cliquez sur **Paramètres du client.**
+1. Sous l’onglet **Accueil** , dans le groupe **Créer** , cliquez sur **Créer des paramètres d’appareil client personnalisé.**
+1. Dans la boîte de dialogue **Créer des paramètres d’appareil client personnalisé** , fournissez un nom et une description pour le groupe de paramètres, puis sélectionnez **Endpoint Protection.**
+1. Configurez les paramètres client Endpoint Protection dont vous avez besoin. Pour obtenir la liste complète des paramètres client Endpoint Protection que vous pouvez configurer, consultez la section Endpoint Protection dans [À propos des paramètres client.](/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
+
+    > [!IMPORTANT]
+    > Installez le rôle de système de site Endpoint Protection avant de configurer les paramètres client pour Endpoint Protection.
+
+1. Cliquez sur **OK** pour fermer la boîte de dialogue **Créer des paramètres d’appareil client personnalisé** . Les nouveaux paramètres client sont affichés dans le nœud **Paramètres client** de l’espace de travail **Administration** .
+1. Ensuite, déployez les paramètres client personnalisés sur une collection. Sélectionnez les paramètres client personnalisés que vous souhaitez déployer. Sous l’onglet **Accueil** , dans le groupe **Paramètres du client** , cliquez sur **Déployer.**
+1. Dans la boîte de dialogue **Sélectionner un regroupement** , choisissez la collection dans laquelle vous souhaitez déployer les paramètres client, puis cliquez sur **OK.** Le nouveau déploiement s’affiche sous l’onglet **Déploiements** du volet d’informations.
+
+Les clients sont configurés avec ces paramètres lors du prochain téléchargement de la stratégie client. Pour plus d’informations, consultez [Lancer la récupération de stratégie pour un client Configuration Manager.](/mem/configmgr/core/clients/manage/manage-clients)
+
+
+##### <a name="installation-of-endpoint-protection-client-from-a-command-prompt"></a>Installation du client Endpoint Protection à partir d’une invite de commandes
+Suivez les étapes pour terminer l’installation du client Endpoint Protection à partir de l’invite de commandes.
+
+1. Copiez **scepinstall.exe** du dossier **Client** du dossier d’installation Configuration Manager sur l’ordinateur sur lequel vous souhaitez installer le logiciel client Endpoint Protection.
+1. Ouvrez une invite de commandes en tant qu’administrateur. Remplacez le répertoire par le dossier avec le programme d’installation. ```scepinstall.exe```Exécutez ensuite, en ajoutant toutes les propriétés de ligne de commande supplémentaires dont vous avez besoin :
+
+     |**Propriété**  |**Description**  |
+     |---------|---------|
+     |```/s```      |Exécuter le programme d’installation en mode silencieux|
+     |```/q```      |Extraire les fichiers d’installation en mode silencieux|
+     |```/i```      |Exécuter le programme d’installation normalement|
+     |```/policy``` |Spécifier un fichier de stratégie anti-programme malveillant pour configurer le client pendant l’installation|
+     |```/sqmoptin```|Participer au Programme d’amélioration de l’expérience client (CEIP) Microsoft|
+
+1. Suivez les instructions à l’écran pour terminer l’installation du client.
+1. Si vous avez téléchargé le dernier package de définition de mise à jour, copiez-le sur l’ordinateur client, puis double-cliquez sur le package de définition pour l’installer.
+
+     > [!NOTE]
+     > Une fois l’installation du client Endpoint Protection terminée, le client effectue automatiquement une vérification de mise à jour de définition. Si cette vérification de mise à jour réussit, vous n’avez pas besoin d’installer manuellement le dernier package de mise à jour de définition.
+
+**Exemple : installer le client avec une stratégie anti-programme malveillant**
+
+```scepinstall.exe /policy <full path>\<policy file>```
+
+##### <a name="verify-the-endpoint-protection-client-installation"></a>Vérifier l’installation du client Endpoint Protection
+
+Après avoir installé le client Endpoint Protection sur votre ordinateur de référence, vérifiez que le client fonctionne correctement.
+
+1. Sur l’ordinateur de référence, ouvrez **System Center Endpoint Protection** à partir de la zone de notification Windows.
+1. Sous l’onglet **Accueil** de la **boîte de dialogue System Center Endpoint Protection**, vérifiez que la **protection en temps réel** est activée **.**
+1. Vérifiez que **la mise à jour** est affichée pour **les définitions de virus et de logiciels espions.**
+1. Pour vous assurer que votre ordinateur de référence est prêt pour l’imagerie, sous **Options d’analyse,** sélectionnez **Complet,** puis cliquez sur **Analyser maintenant.**
+
+
 #### <a name="network-protection"></a>Protection réseau
 
 Avant d’activer la protection réseau en mode audit ou bloquer, vérifiez que vous avez installé la mise à jour de la plateforme anti-programme malveillant, qui peut être obtenue à partir de la [page de support](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing).
@@ -139,14 +198,14 @@ Pour des raisons de sécurité, le package utilisé pour désintégrez les appar
 > [!NOTE]
 > Les stratégies d’intégration et de désintégrage ne doivent pas être déployées simultanément sur le même appareil, sinon cela provoquera des collisions imprévisibles.
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Désins border des appareils à l’aide de Microsoft Endpoint Manager branche active
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Désins border des appareils à l’aide de Microsoft Endpoint Manager current branch
 
-Si vous utilisez Microsoft Endpoint Manager branche active, consultez [Créer un fichier de configuration de désintégrage](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+Si vous utilisez Microsoft Endpoint Manager current branch, consultez [Créer un fichier de configuration de désintégrage](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils hors carte utilisant System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils hors-carte utilisant System Center 2012 R2 Configuration Manager
 
 1. Obtenez le package de désintégrage à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> :
-    1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \>**Offboarding**.  
+    1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Points de terminaison** \> De la **désintégration** **de la gestion** \> des appareils.  
     1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     1. Dans le champ **Méthode de déploiement**, sélectionnez **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Sélectionnez **Télécharger le package** et enregistrez le fichier .zip.
@@ -162,9 +221,9 @@ Si vous utilisez Microsoft Endpoint Manager branche active, consultez [Créer un
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Si vous utilisez Microsoft Endpoint Manager branche actuelle, utilisez le tableau de bord Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, consultez [Defender pour point de terminaison - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+Si vous utilisez Microsoft Endpoint Manager current branch, utilisez le tableau de bord Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, consultez [Defender pour point de terminaison - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center Configuration Manager R2 2012, la surveillance se compose de deux parties :
+Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 
 1. Confirmer que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est exécuté avec succès) sur les appareils de votre réseau.
 
@@ -186,7 +245,7 @@ Si vous utilisez System Center Configuration Manager R2 2012, la surveillance se
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Vérifier que les appareils sont conformes au service Microsoft Defender pour point de terminaison
 
-Vous pouvez définir une règle de conformité pour l’élément de configuration dans System Center Configuration Manager 2012 R2 pour surveiller votre déploiement.
+Vous pouvez définir une règle de conformité pour l’élément de configuration dans System Center 2012 R2 Configuration Manager pour surveiller votre déploiement.
 
 Cette règle doit être un élément *de configuration de règle de conformité qui ne corrige pas* la valeur d’une clé de Registre sur les appareils ciblés.
 
@@ -198,9 +257,9 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Pour plus d’informations, consultez [Présentation des paramètres de conformité dans System Center Configuration Manager R2 2012](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Pour plus d’informations, consultez [Présentation des paramètres de conformité dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

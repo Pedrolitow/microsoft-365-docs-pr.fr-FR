@@ -11,17 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3fc36623e6de005ba1d9f348d6a70d839acef637
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 1c9eff6831f08a243aad830d258c9d9277a89531
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106906"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306415"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution de Microsoft Defender pour point de terminaison MMA précédente
 
@@ -42,7 +43,7 @@ Ces instructions s’appliquent au nouveau package de Microsoft Defender pour po
 **Si vous utilisez Microsoft Defender pour cloud pour effectuer le déploiement, vous pouvez automatiser l’installation et la mise à niveau. Voir [Defender pour serveurs Plan 2 s’intègre désormais à la solution unifiée MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
-> Les mises à niveau du système d’exploitation avec Microsoft Defender pour point de terminaison installées ne sont pas prises en charge. Désinstallez-la avant de procéder à une mise à niveau.
+> Les mises à niveau du système d’exploitation avec Microsoft Defender pour point de terminaison installées ne sont pas prises en charge. Veuillez désinstaller et désinstaller, mettre à niveau le système d’exploitation, puis procéder à l’installation.
 
 > [!NOTE]
 > L’automatisation et l’intégration complètes du point de terminaison Microsoft Configuration Manager pour effectuer une mise à niveau automatisée seront disponibles dans une version ultérieure de MECM. À partir de la version 2107 avec le dernier correctif cumulatif, vous pouvez utiliser le nœud Endpoint Protection pour la configuration, ainsi que pour stratégie de groupe, PowerShell, l’attachement de locataire Microsoft Endpoint Manager ou la configuration locale. En outre, vous pouvez tirer parti des fonctionnalités existantes dans Microsoft Endpoint Configuration Manager pour automatiser les étapes de mise à niveau manuelles; méthodes pour lesquelles vous trouverez ci-dessous.
@@ -73,7 +74,7 @@ Pour obtenir des instructions sur la migration à l’aide du point de terminais
 
 ## <a name="if-you-are-running-a-non-microsoft-antivirus-solution"></a>Si vous exécutez une solution antivirus non-Microsoft
 
-1. Mettez entièrement à jour l’ordinateur, y compris l’antivirus Microsoft Defender (Windows Server 2016), en veillant à ce que [les conditions préalables soient remplies](configure-server-endpoints.md#prerequisites).
+1. Mettez entièrement à jour l’ordinateur, y compris l’antivirus Microsoft Defender (Windows Server 2016), en veillant à ce que [les conditions préalables soient remplies](configure-server-endpoints.md#prerequisites). Pour plus d’informations sur les conditions préalables à respecter, consultez [Conditions préalables pour Windows Server 2016](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Assurez-vous que la gestion des antivirus tiers n’envoie plus d’agents antivirus à ces machines.*
 3. Créez vos stratégies pour les fonctionnalités de protection dans Microsoft Defender pour point de terminaison et ciblez-les sur l’ordinateur dans l’outil de votre choix.*
 4. Installez le Microsoft Defender pour point de terminaison pour Windows Server 2012 package R2 et 2016 et **activez le mode passif**. Consultez [Installer l’antivirus Microsoft Defender à l’aide de la ligne de commande](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).

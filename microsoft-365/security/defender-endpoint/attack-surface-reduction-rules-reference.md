@@ -16,13 +16,13 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 02/04/2022
-ms.openlocfilehash: 593eb801505275210862d9b776c6e2dca290ef89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 08/10/2022
+ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493018"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306611"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
@@ -46,7 +46,7 @@ Cet article fournit des informations sur les règles de réduction des attaques 
 - [Modes de règle ASR](#asr-rule-modes)
 - [Descriptions par règle](#per-rule-descriptions)
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles actuellement publiées en disponibilité générale. Les règles sont répertoriées par ordre alphabétique dans ce tableau.
 
@@ -172,7 +172,7 @@ _Le mode d’avertissement_ est un type de mode bloc qui alerte les utilisateurs
 
 Lorsque vous cliquez sur le bouton Autoriser, le bloc est supprimé pendant 24 heures. Après 24 heures, l’utilisateur final doit autoriser à nouveau le bloc. Le mode d’avertissement pour les règles ASR est uniquement pris en charge pour les appareils RS5+ (1809+). Si le contournement est affecté aux règles ASR sur les appareils avec des versions antérieures, la règle est en mode bloqué.
 
-Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant le AttackSurfaceReductionRules_Actions « Avertir ». Par exemple :
+Vous pouvez également définir une règle en mode d’avertissement via PowerShell en spécifiant le AttackSurfaceReductionRules_Actions « Avertir ». Par exemple :
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -229,7 +229,7 @@ Type d’action de chasse avancé :
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Empêcher toutes les applications Office de créer des processus enfants
 
@@ -248,7 +248,7 @@ Type d’action de chasse avancé :
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification à partir du sous-système d’autorité de sécurité locale Windows
 
@@ -273,7 +273,7 @@ Type d’action de chasse avancé :
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web
 
@@ -293,7 +293,7 @@ Type d’action de chasse avancé :
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 > [!NOTE]
 > La règle **Bloquer le contenu exécutable du client de messagerie et de la messagerie web** contient les descriptions alternatives suivantes, en fonction de l’application que vous utilisez :
@@ -324,7 +324,7 @@ Type d’action de chasse avancé :
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Dépendances : MDAV, Protection cloud
+Dépendances : Antivirus Microsoft Defender, Protection cloud
 
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquer l’exécution de scripts potentiellement masqués
 
@@ -349,7 +349,7 @@ Type d’action de chasse avancé :
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Dépendances : MDAV, AMSI
+Dépendances : Antivirus Microsoft Defender, AMSI
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé
 
@@ -368,7 +368,7 @@ Type d’action de chasse avancé :
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-Dépendances : MDAV, AMSI
+Dépendances : Antivirus Microsoft Defender, AMSI
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher les applications Office de créer du contenu exécutable
 
@@ -387,7 +387,7 @@ Type d’action de chasse avancé :
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-Dépendances : MDAV, RPC
+Dépendances : Antivirus Microsoft Defender, RPC
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher les applications Office d’injecter du code dans d’autres processus
 
@@ -410,7 +410,7 @@ Type d’action de chasse avancé :
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher l’application de communication Office de créer des processus enfants
 
@@ -432,7 +432,7 @@ Type d’action de chasse avancé :
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquer la persistance via l’abonnement aux événements WMI
 
@@ -454,7 +454,7 @@ Type d’action de chasse avancé :
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-Dépendances : MDAV, RPC
+Dépendances : Antivirus Microsoft Defender, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquer les créations de processus provenant des commandes PSExec et WMI
 
@@ -474,7 +474,7 @@ Type d’action de chasse avancé :
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Bloquer les processus non approuvés et non signés qui s’exécutent à partir d’USB
 
@@ -494,7 +494,7 @@ Type d’action de chasse avancé :
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-Dépendances : MDAV
+Dépendances : Antivirus Microsoft Defender
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir de macros Office
 
@@ -520,7 +520,7 @@ Type d’action de chasse avancé :
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-Dépendances : MDAV, AMSI
+Dépendances : Antivirus Microsoft Defender, AMSI
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Utiliser une protection avancée contre les ransomware
 
@@ -546,4 +546,4 @@ Type d’action de chasse avancé :
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Dépendances : MDAV, Protection cloud
+Dépendances : Antivirus Microsoft Defender, Protection cloud

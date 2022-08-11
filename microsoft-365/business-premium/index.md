@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: 06655f049e62fc04b6521b9f7e801c312cbeeeaa
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: e046ebbf6e3609f1f5b13c89cad4261dab8da879
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276855"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300736"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium : productivité et cybersécurité pour les petites entreprises
 
@@ -36,18 +36,11 @@ La tâche qui vous précède est la suivante : laissez Microsoft 365 Business Pr
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagramme répertoriant six missions.":::
 
-
-| Mission  | Description  |
-|---------|---------|
-| **Fortifier votre environnement**  | Il s’agit des tâches que votre administrateur effectue. |
-| [**1. Connectez-vous et configurez votre environnement**](m365bp-setup-overview.md).    | Terminez le processus de configuration de base pour Microsoft 365 pour votre entreprise ou campagne.   |
-| [**2. Augmenter la protection de la sécurité**](m365bp-security-overview.md).   |  Configurez des mesures de sécurité de première ligne critiques pour empêcher les cyberattaques.   |
-| **Former votre équipe**  | Il s’agit de tâches que tout le monde effectue. |
-| [**3. Configurer des appareils non gérés (BYOD).**](m365bp-protect-pcs-macs.md) | Configurez tous les appareils non managés (« apportez votre propre appareil », également appelé BYOD) afin qu’ils fassent partie en toute sécurité de l’écosystème. |
-| [**4. Utilisez l’e-mail en toute sécurité**](m365bp-protect-email-overview.md). | Sachez ce qu’il faut surveiller et prenez les mesures nécessaires pour vous protéger contre les attaques par le biais de systèmes de messagerie. |
-| [**5. Collaborez et partagez en toute sécurité**](m365bp-collaborate-share-securely.md). | Découvrez comment partager des fichiers avec d’autres utilisateurs et collaborer plus en toute sécurité avec Microsoft Teams, SharePoint et OneDrive. |
-| **Protéger les appareils gérés**   | Il s’agit de tâches que votre administrateur ou votre équipe de sécurité effectue. |
-| [**6. Configurer et sécuriser des appareils gérés**](m365bp-protect-devices.md). | Inscrivez et sécurisez les appareils d’entreprise afin qu’ils soient surveillés et protégés contre les menaces. |
+| Procédure | Comment procéder |
+|:---|:---|
+| **Fortifier votre environnement** <br/> (Tâches terminées par votre administrateur.) | [**1. Connectez-vous et configurez votre environnement**](m365bp-setup-overview.md). Terminez le processus de configuration de base pour Microsoft 365 pour votre entreprise ou campagne. Ajoutez des utilisateurs, attribuez des licences et configurez votre domaine pour qu’il fonctionne avec Microsoft 365.<br/><br/>[**2. Augmenter la protection de la sécurité**](m365bp-security-overview.md). Configurez des mesures de sécurité de première ligne critiques pour empêcher les cyberattaques. Configurez l’authentification multifacteur (MFA), protégez vos comptes d’administrateur et protégez-vous contre les programmes malveillants et autres menaces. |
+| **Formez votre équipe**.<br/>(Tâches que tout le monde fait.) | [**3. Configurer des appareils non gérés (BYOD).**](m365bp-protect-pcs-macs.md) Configurez tous les appareils non managés (« apportez votre propre appareil », également appelé BYOD) afin qu’ils fassent partie en toute sécurité de l’écosystème.<br/><br/>[**4. Utilisez l’e-mail en toute sécurité**](m365bp-protect-email-overview.md). Sachez ce qu’il faut surveiller dans votre courrier électronique et prenez les mesures nécessaires pour vous protéger contre les attaques.<br/><br/>[**5. Collaborez et partagez en toute sécurité**](m365bp-collaborate-share-securely.md). Partagez des fichiers avec d’autres utilisateurs et collaborez plus en toute sécurité avec Microsoft Teams, SharePoint et OneDrive. |
+| **Protégez les appareils gérés**. <br/>(Tâches que votre administrateur ou votre équipe de sécurité effectue.) | [**6. Configurer et sécuriser des appareils gérés**](m365bp-protect-devices.md). Inscrivez et sécurisez les appareils d’entreprise afin qu’ils soient surveillés et protégés contre les menaces. |
 
 Effectuer les six missions est le moyen le plus efficace de déjouer les pirates informatiques, de se protéger contre les ransomwares et de garantir que l’avenir de votre organisation est protégé avec les meilleures défenses de cybersécurité. Mettons-nous au travail.
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3be83ee7174934439643320f2ac9d0db72d745bd
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 68d0d2e9ae61afcc69c8f297ca88554090838068
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756646"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281748"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
@@ -93,7 +93,7 @@ Le reste de cet article explique comment utiliser les informations d’usurpatio
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’information sur l’usurpation d’identité dans le portail Microsoft 365 Defender
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à l’onglet **Usurpation d’identité** dans la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & les stratégies de **menaces** \> **de règles** \> **dans** la section **Règles**. Pour accéder directement à l’onglet **Usurpation d’identité** dans la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. Dans la page **Autoriser/Bloquer des listes de locataires** , l’insight d’intelligence de l’usurpation d’identité se présente comme suit :
 
@@ -117,14 +117,15 @@ Dans la page **Informations sur l’usurpation d’identité** qui s’affiche a
 - **Infrastructure d’envoi** : également appelée _infrastructure_. L’infrastructure d’envoi sera l’une des valeurs suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source.
   - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
+  - Domaine DKIM vérifié.
 - **Nombre** de messages : nombre de messages provenant de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi à votre organisation au cours des 7 derniers jours.
-- **Dernière connexion** : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
+- **Dernière vue** : dernière date à laquelle un message a été reçu de l’infrastructure d’envoi qui contient le domaine usurpé.
 - **Type d’usurpation** d’identité : l’une des valeurs suivantes :
   - **Interne** : l’expéditeur usurpé se trouve dans un domaine qui appartient à votre organisation ( [un domaine accepté](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **Externe** : l’expéditeur usurpé se trouve dans un domaine externe.
 - **Action** : cette valeur est **autorisée** ou **bloquée** :
   - **Autorisé** : L’authentification par e-mail explicite du domaine a échoué vérifie [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) et [DMARC](use-dmarc-to-validate-email.md). Toutefois, le domaine a passé nos vérifications d’authentification par e-mail implicites ([authentification composite](email-validation-and-authentication.md#composite-authentication)). Par conséquent, aucune action anti-usurpation d’identité n’a été effectuée sur le message.
-  - **Bloqué** : les messages de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi sont marqués comme incorrects par l’intelligence par usurpation d’identité. L’action effectuée sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est **Déplacer le message vers le dossier Courrier indésirable**). Pour plus d’informations, consultez [Paramètres exclusifs des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
+  - **Bloqué** : les messages de la combinaison du domaine usurpé _et_ de l’infrastructure d’envoi sont marqués comme incorrects par l’intelligence par usurpation d’identité. L’action effectuée sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est **Déplacer le message vers le dossier Courrier indésirable Email**). Pour plus d’informations, consultez [Paramètres exclusifs des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 Vous pouvez cliquer sur les en-têtes de colonne sélectionnés pour trier les résultats.
 

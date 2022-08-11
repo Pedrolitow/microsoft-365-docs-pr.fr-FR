@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil de test de la connectivité du réseau Microsoft 365
-ms.openlocfilehash: ac2ec12ac0da2309e1d5ac0c35bbd0462cc68a62
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 39eb2fd4bd5032ee99cd675838ad96b864d5a782
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043706"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281770"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Outil de test de la connectivité du réseau Microsoft 365
 
@@ -32,23 +32,23 @@ L’outil de test de connectivité réseau Microsoft 365 se trouve à l’adress
 > ![Outil de test de connectivité.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
->L’outil de test de connectivité réseau prend en charge les locataires dans WW Commercial, mais pas Cloud de la communauté du secteur public Moderate, Cloud de la communauté du secteur public High, DoD ou China.
+>L’outil de test de connectivité réseau prend en charge les locataires dans WW Commercial, mais pas GCC Moderate, GCC High, DoD ou Chine.
 
 Les insights réseau dans le centre Administration Microsoft 365 sont basés sur des mesures régulières dans le produit pour votre locataire Microsoft 365, agrégées chaque jour. En comparaison, les insights réseau du test de connectivité réseau Microsoft 365 sont exécutés localement dans l’outil.
 
 Les tests dans le produit sont limités et l’exécution de tests locaux pour l’utilisateur collecte davantage de données, ce qui permet d’obtenir des insights plus approfondis. Les insights réseau dans le centre de Administration Microsoft 365 indiquent qu’il existe un problème de mise en réseau à un emplacement de bureau spécifique. Le test de connectivité Microsoft 365 peut aider à identifier la cause racine de ce problème et à fournir une action ciblée d’amélioration des performances.
 
-Nous vous recommandons d’utiliser ces insights ensemble, où l’état de la qualité de la mise en réseau peut être évalué pour chaque emplacement de bureau dans le centre Administration Microsoft 365 et où des informations plus spécifiques peuvent être trouvées après le déploiement de tests basés sur le test de connectivité Microsoft 365.
+Nous vous recommandons d’utiliser ces insights ensemble, où l’état de la qualité de la mise en réseau peut être évalué pour chaque emplacement de bureau dans le centre Administration Microsoft 365 et où des informations plus spécifiques sont disponibles après le déploiement de tests basés sur le test de connectivité Microsoft 365.
 
 ## <a name="what-happens-at-each-test-step"></a>Que se passe-t-il à chaque étape de test ?
 
-### <a name="office-location-identification"></a>Office l’identification de l’emplacement
+### <a name="office-location-identification"></a>Identification de l’emplacement d’Office
 
 Lorsque vous cliquez sur le bouton *Exécuter le test* , nous affichons la page de test en cours d’exécution et identifions l’emplacement du bureau. Vous pouvez taper votre emplacement par ville, état et pays ou choisir de le faire détecter pour vous. Si vous détectez l’emplacement du bureau, l’outil demande la latitude et la longitude du navigateur web et limite la précision à 300 mètres par 300 mètres avant l’utilisation. Il n’est pas nécessaire d’identifier l’emplacement plus précisément que le bâtiment pour mesurer les performances du réseau.
 
 ### <a name="javascript-tests"></a>Tests JavaScript
 
-Après l’identification de l’emplacement du bureau, nous exécutons un test de latence TCP en JavaScript et nous demandons au service des données sur les serveurs front door de service en cours d’utilisation et recommandés Microsoft 365. Une fois ces tests terminés, nous les affichons sur la carte et dans l’onglet Détails où ils peuvent être affichés avant l’étape suivante.
+Après l’identification de l’emplacement du bureau, nous exécutons un test de latence TCP en JavaScript et nous demandons au service des données sur les serveurs de porte d’entrée de service Microsoft 365 en cours d’utilisation et recommandés. Une fois ces tests terminés, nous les affichons sur la carte et dans l’onglet Détails où ils peuvent être affichés avant l’étape suivante.
 
 ### <a name="download-the-advanced-tests-client-application"></a>Télécharger l’application cliente tests avancés
 
@@ -71,7 +71,7 @@ Une fois les tests terminés, la page web et le client de tests avancés le mont
 
 ## <a name="sharing-your-test-report"></a>Partage de votre rapport de test
 
-Le rapport de test requiert une authentification au nom de votre compte Microsoft 365. Votre administrateur sélectionne la façon dont vous pouvez partager votre rapport de test. Les paramètres par défaut permettent le partage de vos rapports avec d’autres utilisateurs de votre organisation et le lien ReportID n’est pas disponible. Les rapports expirent par défaut après 90 jours.
+Le rapport de test nécessite une authentification au nom de votre compte Microsoft 365. Votre administrateur sélectionne la façon dont vous pouvez partager votre rapport de test. Les paramètres par défaut permettent le partage de vos rapports avec d’autres utilisateurs de votre organisation et le lien ReportID n’est pas disponible. Les rapports expirent par défaut après 90 jours.
 
 ### <a name="sharing-your-report-with-your-administrator"></a>Partage de votre rapport avec votre administrateur
 
@@ -97,7 +97,7 @@ Vous pouvez partager votre rapport de test avec n’importe qui en fournissant l
 
 ## <a name="network-connectivity-test-results"></a>Résultats du test de connectivité réseau
 
-Les résultats sont affichés dans les onglets **Résumé** et **Détails**. L’onglet Récapitulatif affiche une carte du périmètre réseau détecté et une comparaison de l’évaluation réseau avec d’autres clients Microsoft 365 à proximité. Il permet également le partage du rapport de test. Voici à quoi ressemble l’affichage des résultats récapitulatifs :
+Les résultats sont affichés dans les onglets **Résumé** et **Détails**. L’onglet Résumé affiche une carte du périmètre réseau détecté et une comparaison de l’évaluation réseau avec d’autres clients Microsoft 365 à proximité. Il permet également le partage du rapport de test. Voici à quoi ressemble l’affichage des résultats récapitulatifs :
 
 > [!div class="mx-imgBorder"]
 > ![Résultats récapitulatifs de l’outil de test de connectivité réseau.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
@@ -127,11 +127,11 @@ Nous déterminons la distance entre cet emplacement et l’emplacement du bureau
 
 La carte montre l’emplacement de sortie du réseau par rapport à l’emplacement du bureau de l’utilisateur indiquant le backhaul réseau à l’intérieur du WAN d’entreprise.
 
-Implémentez la sortie réseau locale et directe des emplacements des bureaux des utilisateurs vers Internet pour une connectivité réseau optimale Microsoft 365. Les améliorations apportées à la sortie locale et directe constituent la meilleure façon d’aborder cette insight réseau.
+Implémentez la sortie réseau locale et directe des emplacements des bureaux des utilisateurs vers Internet pour une connectivité réseau Microsoft 365 optimale. Les améliorations apportées à la sortie locale et directe constituent la meilleure façon d’aborder cette insight réseau.
 
 #### <a name="proxy-server-information"></a>Informations sur le serveur proxy
 
-Nous identifions si les serveurs proxy sont configurés sur l’ordinateur local pour transmettre Microsoft 365 trafic réseau dans la catégorie **Optimiser**. Nous identifions la distance entre l’emplacement du bureau de l’utilisateur et les serveurs proxy.
+Nous identifions si les serveurs proxy sont configurés sur l’ordinateur local pour passer le trafic réseau Microsoft 365 dans la catégorie **Optimiser** . Nous identifions la distance entre l’emplacement du bureau de l’utilisateur et les serveurs proxy.
 
 La distance est d’abord testée par le test ping ICMP. Si cela échoue, nous testons avec TCP ping et enfin, nous cherchons l’adresse IP du serveur proxy dans une base de données d’emplacement d’adresse IP. Nous affichons un insight réseau si le serveur proxy se trouve à plus de **800 kilomètres** de l’emplacement du bureau de l’utilisateur.
 
@@ -139,13 +139,13 @@ La distance est d’abord testée par le test ping ICMP. Si cela échoue, nous t
 
 Ce test détecte si vous utilisez un VPN pour vous connecter à Microsoft 365. Un résultat de passage indique si vous n’avez pas de VPN ou si vous disposez d’un VPN avec la configuration de tunnel fractionné recommandée pour Microsoft 365.
 
-#### <a name="vpn-split-tunnel"></a>Tunnel de fractionnement VPN
+#### <a name="vpn-split-tunnel"></a>Tunnel fractionné VPN
 
-Chaque itinéraire de catégorie **Optimize** pour Exchange Online, SharePoint Online et Microsoft Teams est testé pour voir s’il est tunnelné sur le VPN. Une charge de travail fractionnée évite entièrement le VPN. Une charge de travail tunnel est envoyée via le VPN. Une charge de travail tunnel sélective a des itinéraires envoyés sur le VPN et d’autres fractionnés. Un résultat de passage indique si toutes les charges de travail sont fractionnées ou tunnelées sélectivement.
+Chaque itinéraire de catégorie **Optimiser** pour Exchange Online, SharePoint Online et Microsoft Teams est testé pour voir s’il est tunnelné sur le VPN. Une charge de travail fractionnée évite entièrement le VPN. Une charge de travail tunnel est envoyée via le VPN. Une charge de travail tunnel sélective a des itinéraires envoyés sur le VPN et d’autres fractionnés. Un résultat de passage indique si toutes les charges de travail sont fractionnées ou tunnelées sélectivement.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Clients de votre région métropolitaine avec de meilleures performances
 
-La latence réseau entre l’emplacement du bureau de l’utilisateur et le service Exchange Online est comparée à d’autres clients Microsoft 365 dans la même zone de métro. Un insight réseau s’affiche si 10 % ou plus des clients de la même région métropolitaine ont de meilleures performances. Cela signifie que leurs utilisateurs auront de meilleures performances dans l’interface utilisateur Microsoft 365.
+La latence réseau entre l’emplacement du bureau de l’utilisateur et le service Exchange Online est comparée aux autres clients Microsoft 365 dans la même zone de métro. Un insight réseau s’affiche si 10 % ou plus des clients de la même région métropolitaine ont de meilleures performances. Cela signifie que leurs utilisateurs auront de meilleures performances dans l’interface utilisateur de Microsoft 365.
 
 Cet insight réseau est généré sur la base du fait que tous les utilisateurs d’une ville ont accès à la même infrastructure de télécommunications et à la même proximité des circuits Internet et du réseau de Microsoft.
 
@@ -163,21 +163,21 @@ L’emplacement recherché à partir de l’adresse IP de sortie du réseau peut
 
 Cet insight réseau aura un impact spécifique sur la sélection de la porte d’entrée du service Exchange Online. Pour résoudre ce problème, la sortie du réseau local et direct doit être un prérequis, puis le résolveur récursif DNS doit se trouver à proximité de cette sortie réseau.
 
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online"></a>Exchange Online
 
 Cette section affiche les résultats des tests liés à Exchange Online.
 
-#### <a name="exchange-service-front-door-location"></a>Exchange emplacement de la porte d’entrée du service
+#### <a name="exchange-service-front-door-location"></a>Emplacement de la porte d’entrée du service Exchange
 
-La porte d’entrée du service Exchange en cours d’utilisation est identifiée de la même façon que Outlook le fait et nous mesurons la latence TCP réseau à partir de l’emplacement de l’utilisateur vers celui-ci. La latence TCP est affichée et la porte d’entrée du service Exchange en cours d’utilisation est comparée à la liste des meilleures portes d’entrée de service pour l’emplacement actuel. Cela s’affiche sous forme d’insight réseau si l’une des meilleures Exchange porte d’entrée de service n’est pas utilisée.
+La porte d’entrée du service Exchange en cours d’utilisation est identifiée de la même façon qu’Outlook le fait et nous mesurons la latence TCP réseau à partir de l’emplacement utilisateur vers celui-ci. La latence TCP est affichée et la porte d’entrée du service Exchange en cours d’utilisation est comparée à la liste des meilleures portes d’entrée de service pour l’emplacement actuel. Il s’agit d’un insight réseau si l’une des meilleures portes d’entrée du service Exchange n’est pas utilisée.
 
-Ne pas utiliser l’une des meilleures Exchange porte d’entrée du service peut être causée par une réapprovisionnement réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons une sortie réseau locale et directe. Cela peut également être dû à l’utilisation d’un serveur de résolution récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur récursif DNS avec la sortie réseau.
+Le fait de ne pas utiliser l’une des meilleures portes d’entrée du service Exchange peut être dû à un problème de retour réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons une sortie réseau locale et directe. Cela peut également être dû à l’utilisation d’un serveur de résolution récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur récursif DNS avec la sortie réseau.
 
-Nous calculons une amélioration potentielle de la latence TCP (ms) à la porte d’entrée du service Exchange. Pour ce faire, examinez la latence réseau de l’emplacement utilisateur testé et soustraitez la latence réseau de l’emplacement actuel aux placards Exchange porte d’entrée du service. La différence représente l’opportunité potentielle d’amélioration.
+Nous calculons une amélioration potentielle de la latence TCP (ms) à la porte d’entrée du service Exchange. Pour ce faire, examinez la latence réseau de l’emplacement du bureau utilisateur testé et soustrait la latence réseau de l’emplacement actuel à la porte d’entrée du service Exchange des placards. La différence représente l’opportunité potentielle d’amélioration.
 
-#### <a name="best-exchange-service-front-doors-for-your-location"></a>Meilleur Exchange porte d’entrée de service pour votre emplacement
+#### <a name="best-exchange-service-front-doors-for-your-location"></a>Meilleures portes d’entrée du service Exchange pour votre emplacement
 
-Cela répertorie les meilleurs emplacements de porte d’entrée de service Exchange par ville pour votre emplacement.
+Cela répertorie les meilleurs emplacements de porte d’entrée du service Exchange par ville pour votre emplacement.
 
 #### <a name="service-front-door-recorded-in-the-client-dns"></a>Porte d’entrée du service enregistrée dans le DNS client
 
@@ -197,19 +197,19 @@ Nous mesurons la vitesse de téléchargement d’un fichier de 15 Mo à partir d
 
 #### <a name="buffer-bloat"></a>Objet bloat de mémoire tampon
 
-Pendant le téléchargement de 15 Mo, nous mesurons la latence TCP sur la porte d’entrée du service SharePoint. Il s’agit de la latence sous charge et elle est comparée à la latence lorsqu’elle n’est pas sous charge. L’augmentation de la latence en cas de charge est souvent attribuable au chargement (ou à l’ballonnement) des mémoires tampons d’appareil réseau consommateur. Un insight réseau s’affiche pour tout objet bloat de 1 000 ou plus.
+Pendant le téléchargement de 15 Mo, nous mesurons la latence TCP sur la porte d’entrée du service SharePoint. Il s’agit de la latence sous charge et elle est comparée à la latence lorsqu’elle n’est pas sous charge. L’augmentation de la latence en cas de charge est souvent attribuable au chargement (ou à l’ballonnement) des mémoires tampons d’appareil réseau consommateur. Un insight réseau s’affiche pour tout objet bloat de 100 ms ou plus.
 
 #### <a name="service-front-door-recorded-in-the-client-dns"></a>Porte d’entrée du service enregistrée dans le DNS client
 
 Cela montre le nom DNS et l’adresse IP du serveur de porte d’entrée du service SharePoint vers lequel vous avez été dirigé. Il est fourni uniquement pour des informations et il n’existe aucun insight réseau associé.
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Cette section affiche les résultats des tests liés à Microsoft Teams.
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>Connectivité multimédia (partage audio, vidéo et application)
 
-Cette opération teste la connectivité UDP à la porte d’entrée du service Microsoft Teams. Si ce blocage est bloqué, Microsoft Teams peut toujours fonctionner à l’aide de TCP, mais l’audio et la vidéo seront altérés. Pour en savoir plus sur ces mesures réseau UDP, qui s’appliquent également à Microsoft Teams, consultez [Media Quality and Network Connectivity Performance dans Skype Entreprise Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+Cette opération teste la connectivité UDP à la porte d’entrée du service Microsoft Teams. Si ce blocage est bloqué, Microsoft Teams peut toujours fonctionner à l’aide de TCP, mais l’audio et la vidéo seront altérés. En savoir plus sur ces mesures réseau UDP, qui s’appliquent également à Microsoft Teams dans [Media Quality and Network Connectivity Performance dans Skype Entreprise Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### <a name="packet-loss"></a>Perte de paquets
 
@@ -235,7 +235,7 @@ Lorsqu’un certificat SSL n’est pas fourni par Microsoft est trouvé, nous af
 
 #### <a name="network-path"></a>Chemin d’accès réseau
 
-Cette section présente les résultats d’un itinéraire de trace ICMP vers la porte d’entrée du service Exchange Online, la porte d’entrée du service SharePoint Online et la porte d’entrée du service Microsoft Teams. Il est fourni uniquement pour des informations et il n’existe aucun insight réseau associé. Trois itinéraires de trace sont fournis. Un itinéraire de suivi vers _outlook.office365.com_, un itinéraire de trace pour les clients SharePoint front-end _ou microsoft.sharepoint.com si_ aucun itinéraire n’a été fourni, et un itinéraire de trace vers _world.tr.teams.microsoft.com_.
+Cette section présente les résultats d’un itinéraire de trace ICMP vers la porte d’entrée du service Exchange Online, la porte d’entrée du service SharePoint Online et la porte d’entrée du service Microsoft Teams. Il est fourni uniquement pour des informations et il n’existe aucun insight réseau associé. Trois itinéraires de trace sont fournis. Un itinéraire de trace vers _outlook.office365.com_, un itinéraire de trace vers le serveur frontal SharePoint des clients ou vers _microsoft.sharepoint.com_ si aucun itinéraire n’a été fourni, et un itinéraire de trace vers _world.tr.teams.microsoft.com_.
 
 ## <a name="connectivity-reports"></a>Rapports de connectivité
 
@@ -246,7 +246,7 @@ Lorsque vous êtes connecté, vous pouvez consulter les rapports précédents qu
 
 ## <a name="network-health-status"></a>État d’intégrité du réseau
 
-Cela indique tout problème d’intégrité important avec le réseau mondial de Microsoft, qui peut avoir un impact sur Microsoft 365 clients.
+Cela indique tout problème d’intégrité important avec le réseau mondial de Microsoft, qui peut avoir un impact sur les clients Microsoft 365.
 
 > [!div class="mx-imgBorder"]
 > ![État d’intégrité du réseau.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
@@ -265,13 +265,13 @@ L’exécutable accepte les paramètres de ligne de commande suivants :
 - -h pour afficher un lien vers cette documentation d’aide
 - -testlist &lt;spécifie&gt; les tests à exécuter. Par défaut, seuls les tests de base sont exécutés. Les noms de test valides sont les suivants : all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
 - -filepath &lt;filedir&gt; Directory path of test result files. La valeur autorisée est le chemin absolu ou relatif d’un répertoire accessible
-- -city &lt;city&gt; Pour les champs ville, état et pays, la valeur spécifiée sera utilisée si elle est fournie. S’il n’est pas fourni, Windows Location Services (WLS) est interrogé. Si WLS échoue, l’emplacement est détecté à partir de la sortie réseau des machines 
+- -city &lt;city&gt; Pour les champs ville, état et pays, la valeur spécifiée sera utilisée si elle est fournie. S’il n’est pas fourni, les services d’emplacement Windows (WLS) sont interrogés. Si WLS échoue, l’emplacement est détecté à partir de la sortie réseau des machines 
 - -state state &lt;state&gt;
 - -country &lt;country&gt; 
 - -proxy &lt;account&gt; &lt;password&gt; proxy account name and password can be provided if you require a proxy to access the Internet
 
 ### <a name="results"></a>Résultats
-La sortie des résultats est écrite dans un fichier JSON dans un dossier appelé TestResults qui est créé dans le répertoire de travail actuel du processus, sauf s’il existe déjà. Le format de nom de fichier pour la sortie est connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Les résultats se trouvent dans les nœuds JSON qui correspondent à la sortie affichée sur la page web du site web de l’outil de test de connectivité réseau Microsoft 365. Un nouveau fichier de résultats est créé chaque fois que vous l’exécutez et l’exécutable autonome ne charge pas les résultats sur votre locataire Microsoft pour l’afficher dans les pages de connectivité réseau du Centre d’administration. Les codes de porte d’entrée, les longitudes et les latitudes ne sont pas inclus dans le fichier de résultats.
+La sortie des résultats est écrite dans un fichier JSON dans un dossier appelé TestResults qui est créé dans le répertoire de travail actuel du processus, sauf s’il existe déjà. Le format de nom de fichier pour la sortie est connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Les résultats se trouvent dans les nœuds JSON qui correspondent à la sortie affichée sur la page web du site web de l’outil de test de connectivité réseau Microsoft 365. Un nouveau fichier de résultats est créé chaque fois que vous l’exécutez et l’exécutable autonome ne charge pas les résultats sur votre locataire Microsoft pour l’afficher dans les pages de connectivité réseau Administration Center. Les codes de porte d’entrée, les longitudes et les latitudes ne sont pas inclus dans le fichier de résultats.
 
 ### <a name="launching-from-windows-file-explorer"></a>Lancement à partir de Windows Explorateur de fichiers
 Vous pouvez simplement double-cliquer sur l’exécutable pour démarrer le test et une fenêtre d’invite de commandes s’affiche.
@@ -280,10 +280,10 @@ Vous pouvez simplement double-cliquer sur l’exécutable pour démarrer le test
 Dans une fenêtre d’invite de commandes CMD.EXE, vous pouvez taper le chemin d’accès et le nom de l’exécutable pour l’exécuter. Le nom de fichier est Microsoft.Connectivity.Test.exe
 
 ### <a name="launching-from-windows-task-scheduler"></a>Lancement à partir du planificateur de tâches Windows
-Dans Windows planificateur de tâches, vous pouvez ajouter une tâche pour lancer l’exécutable de test autonome. Vous devez spécifier le répertoire de travail actuel de la tâche où vous avez créé le fichier accepté par le CLUF, car l’exécutable se bloquera jusqu’à ce que le CLUF soit accepté. Vous ne pouvez pas accepter le CLUF de manière interactive si le processus est démarré en arrière-plan sans console.
+Dans Le planificateur de tâches Windows, vous pouvez ajouter une tâche pour lancer l’exécutable de test autonome. Vous devez spécifier le répertoire de travail actuel de la tâche où vous avez créé le fichier accepté par le CLUF, car l’exécutable se bloquera jusqu’à ce que le CLUF soit accepté. Vous ne pouvez pas accepter le CLUF de manière interactive si le processus est démarré en arrière-plan sans console.
 
 ### <a name="more-details-on-the-standalone-executable"></a>Plus d’informations sur l’exécutable autonome
-L’outil de ligne de commande utilise Windows Location Services pour rechercher les informations de pays d’état de la ville des utilisateurs pour déterminer certaines distances. Si Windows Services d’emplacement est désactivé dans le panneau de configuration, les évaluations basées sur l’emplacement utilisateur sont vides. Dans Windows Paramètres « Services d’emplacement » doit être activé et « Autoriser les applications de bureau à accéder à votre emplacement » doit également être activé.
+L’outil de ligne de commande utilise les services d’emplacement Windows pour rechercher les informations de pays d’état de la ville des utilisateurs pour déterminer certaines distances. Si les services d’emplacement Windows sont désactivés dans le panneau de configuration, les évaluations basées sur l’emplacement utilisateur sont vides. Dans les paramètres Windows, « Services d’emplacement » doit être activé et « Autoriser les applications de bureau à accéder à votre emplacement » doit également être activé.
 
 L’outil de ligne de commande tente d’installer le .NET Framework s’il n’est pas déjà installé. Il télécharge également l’exécutable de test principal à partir de l’outil de test de connectivité réseau Microsoft 365 et le lance.
 
@@ -297,16 +297,16 @@ Le client de test avancé nécessite le runtime .NET 6.0. Si vous exécutez le c
 
 Le client de test avancé utilise SignalR pour communiquer avec la page web. Pour cela, vous devez vous assurer que la connectivité du port TCP 443 à **connectivity.service.signalr.net** est ouverte. Cette URL n’est pas publiée dans la <https://aka.ms/o365ip> mesure où cette connectivité n’est pas requise pour un utilisateur d’application cliente Microsoft 365.
 
-### <a name="what-is-microsoft-365-service-front-door"></a>Qu’est-ce que Microsoft 365 porte d’entrée du service ?
+### <a name="what-is-microsoft-365-service-front-door"></a>Qu’est-ce que la porte d’entrée du service Microsoft 365 ?
 
-La porte d’entrée du service Microsoft 365 est un point d’entrée sur le réseau mondial de Microsoft où Office clients et services mettent fin à leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé que votre connexion réseau soit arrêtée dans la porte d’entrée Microsoft 365 la plus proche de votre ville ou de votre métro.
+La porte d’entrée du service Microsoft 365 est un point d’entrée sur le réseau mondial de Microsoft où les clients et services Office mettent fin à leur connexion réseau. Pour une connexion réseau optimale à Microsoft 365, il est recommandé que votre connexion réseau soit arrêtée dans la porte d’entrée Microsoft 365 la plus proche de votre ville ou de votre métro.
 
 > [!NOTE]
-> Microsoft 365 porte d’entrée du service n’a pas de relation directe avec le produit **Azure Front Door Service** disponible sur la Place de marché Azure.
+> La porte d’entrée du service Microsoft 365 n’a pas de relation directe avec le produit **Azure Front Door Service** disponible sur la Place de marché Azure.
 
 ### <a name="what-is-the-best-microsoft-365-service-front-door"></a>Quelle est la meilleure porte d’entrée du service Microsoft 365 ?
 
-Une meilleure Microsoft 365 porte d’entrée de service (anciennement appelée porte d’entrée de service optimale) est celle qui est la plus proche de votre sortie réseau, généralement dans votre ville ou région métropolitaine. Utilisez l’outil de performances réseau Microsoft 365 pour déterminer l’emplacement de votre porte d’entrée Microsoft 365 service en service et la ou les meilleures portes d’entrée de service. Si l’outil détermine que votre porte d’entrée en service est l’une des meilleures, vous devez vous attendre à une connectivité optimale au réseau mondial de Microsoft.
+Une meilleure porte d’entrée du service Microsoft 365 (anciennement appelée porte d’entrée de service optimale) est celle qui est la plus proche de votre sortie réseau, généralement dans votre ville ou région métropolitaine. Utilisez l’outil de performances réseau Microsoft 365 pour déterminer l’emplacement de votre porte d’entrée de service Microsoft 365 en service et la meilleure porte d’entrée de service. Si l’outil détermine que votre porte d’entrée en service est l’une des meilleures, vous devez vous attendre à une connectivité optimale au réseau mondial de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 
@@ -316,8 +316,8 @@ L’emplacement de sortie Internet est l’emplacement où votre trafic réseau 
 
 [Connectivité réseau dans le centre de Administration Microsoft 365](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 insights sur les performances réseau](office-365-network-mac-perf-insights.md)
+[Insights sur les performances réseau de Microsoft 365](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 l’évaluation du réseau](office-365-network-mac-perf-score.md)
+[Évaluation du réseau Microsoft 365](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 services d’emplacement de connectivité réseau](office-365-network-mac-location-services.md)
+[Services d’emplacement de connectivité réseau Microsoft 365](office-365-network-mac-location-services.md)

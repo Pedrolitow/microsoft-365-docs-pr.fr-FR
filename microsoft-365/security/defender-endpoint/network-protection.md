@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 08/08/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -18,25 +19,23 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: ''
-ms.openlocfilehash: 604938426dfd8818647a5fa7b71069b4527ec877
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c59e4a7a7eb3c7fcf6bb623385382c3e453a3790
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636444"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281682"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
+
 - Windows
 - macOS
 - Linux
@@ -183,8 +182,7 @@ L’exemple suivant inclut les actions bloquées :
 ```kusto
 
 DeviceEvents
-
-- Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
@@ -200,17 +198,17 @@ Voici un autre exemple :
 
 DeviceEvents:
 
-- where ActionType contains "ExploitGuardNetworkProtection"
-- extend ParsedFields=parse_json(AdditionalFields)
-- project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
-- sort by Timestamp desc
+|where ActionType contains "ExploitGuardNetworkProtection"
+|extend ParsedFields=parse_json(AdditionalFields)
+|project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
+|sort by Timestamp desc
 
 ```
 La catégorie Réponse vous indique ce qui a provoqué l’événement, par exemple :
 
 | ResponseCategory | Fonctionnalité responsable de l’événement |
 |:---|:---|
-| CustomPolicy |  WCF  |
+| CustomPolicy |  Wcf  |
 | CustomBlockList  |   Indicateurs personnalisés   |
 | CasbPolicy   |   Defender for Cloud Apps   |
 | Malveillant   |   Menaces web  |

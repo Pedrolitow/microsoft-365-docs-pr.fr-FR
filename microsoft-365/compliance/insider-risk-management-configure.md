@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 334e94844c16a386d2b96cd34627877c7584a6bc
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: c85d126d92e27080d1e38f9b25deed1108eb0ea9
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037707"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306655"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -290,7 +290,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
     - Extensions de fichier : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre le « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchiserait les fichiers Python.
 
     > [!NOTE]
-    > Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites Share Point prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
+    > Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites SharePoint prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
 13. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* , vous verrez des options sur les **déclencheurs** de cette page de stratégie pour les événements de déclenchement personnalisé et les indicateurs de stratégie. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez **l’option d’événement de déclenchement de stratégie de protection contre la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante de la stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez **l’utilisateur exécute une option d’événement de déclenchement d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.

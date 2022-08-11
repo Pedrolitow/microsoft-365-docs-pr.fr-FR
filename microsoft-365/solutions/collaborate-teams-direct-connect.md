@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment activer les canaux partagés dans Microsoft Teams pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 61093530faad261059e68e02a496c485a765b99d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969789"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306479"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Collaborer avec des participants externes dans un canal partagé
 
@@ -33,6 +33,9 @@ Lorsque vous activez des canaux partagés avec une autre organisation :
 - Les propriétaires d’équipe de votre organisation pourront inviter des personnes d’autres organisations à participer à des canaux partagés.
 - Les applications personnalisées (métier) de votre organisation seront disponibles dans les canaux partagés et les participants externes pourront y accéder.
 - La liste des applications de votre organisation sera disponible dans les canaux partagés et les participants externes pourront y accéder.
+
+> [!NOTE]
+> [Les paramètres invités pour Groupes Microsoft 365](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) doivent être activés pour utiliser des canaux partagés avec des participants externes.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 

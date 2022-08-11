@@ -1,7 +1,7 @@
 - name: Microsoft Defender pour les PME
   href: index.yml
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       items:
         - name: Qu’est-ce que Microsoft Defender pour entreprises ?
           href: mdb-overview.md
@@ -43,7 +43,7 @@
           href: mdb-onboard-devices.md
         - name: 'Étape 5 : Configurer vos stratégies de sécurité'
           href: mdb-configure-security-settings.md
-    - name: Afficher et répondre aux menaces détectées
+    - name: Visualiser et répondre aux menaces détectées
       items:
         - name: Afficher votre tableau de bord de gestion des vulnérabilités
           href: mdb-view-tvm-dashboard.md
@@ -79,6 +79,8 @@
       items:
         - name: Comment obtenir des serveurs Microsoft Defender pour entreprises (préversion)
           href: get-defender-business-servers.md
+        - name: Glossaire des termes de sécurité
+          href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
         - name: Foire aux questions

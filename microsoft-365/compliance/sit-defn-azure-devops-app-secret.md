@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type secret d’application Azure DevOps.
-ms.openlocfilehash: 03ea2782272b961522c40a1f8e43ebf9da548cd4
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d689cb184cd329d1d5686a5dde486305b5375078
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996009"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309348"
 ---
 # <a name="azure-devops-app-secret-preview"></a>Secret d’application Azure DevOps (préversion)
 
@@ -41,7 +41,7 @@ Toute combinaison de 52 caractères composée de :
 
 par exemple :
 
-`ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa`
+`abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
 
 
 ## <a name="checksum"></a>Somme de contrôle
@@ -54,12 +54,12 @@ Ce SIT est conçu pour correspondre aux informations de sécurité utilisées po
 
 Il utilise plusieurs ressources principales :
 
-- Modèles de clé symétrique codée en Base32 de 256 bits.
+- Modèles de clé symétrique 256 bits encodée en Base32.
 - Modèles de CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName.
 - Modèles de valeurs de maquette, de réactions et d’espaces réservés.
 - Dictionnaire de vocabulaire
 
-Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs expurgées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
+Les modèles sont conçus pour correspondre aux informations d’identification réelles avec une confiance raisonnable. Les modèles ne correspondent pas aux informations d’identification mises en forme en tant qu’exemples. Les valeurs de maquette, les valeurs redépliquées et les espaces réservés, tels que le type d’informations d’identification ou les descriptions d’utilisation, dans la position où une valeur secrète réelle doit être présente ne seront pas mises en correspondance.
 
 ## <a name="keywords"></a>Mots-clés
 

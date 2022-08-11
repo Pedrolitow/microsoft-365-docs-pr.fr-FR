@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 7f22d5d1162e01afe737e6e3f25450cc22e25c76
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 376bc904fabeee9b9fe2c9c91309427f28f19c5a
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695723"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306347"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour point de terminaison - Phase 2 : Configuration
 
@@ -55,52 +56,10 @@ Lorsque vous basculez vers Defender pour point de terminaison, vous devrez peut-
 |Type de point de terminaison|Procédure|
 |---|---|
 |Clients Windows (tels que les points de terminaison exécutant Windows 10 et Windows 11)|En général, vous n’avez pas besoin d’effectuer d’action pour les clients Windows (sauf si l’Antivirus Microsoft Defender a été désinstallé). En général, l’antivirus Microsoft Defender doit toujours être installé, mais il est probablement désactivé à ce stade du processus de migration. <br/><br/> Lorsqu’une solution antivirus/anti-programme malveillant non Microsoft est installée et que les clients ne sont pas encore intégrés à Defender pour point de terminaison, l’antivirus Microsoft Defender est désactivé automatiquement. Plus tard, lorsque les points de terminaison clients sont intégrés à Defender pour point de terminaison, si ces points de terminaison exécutent une solution antivirus non Microsoft, l’Antivirus Microsoft Defender passe en mode passif. <br/><br/> Si la solution antivirus non Microsoft est désinstallée, l’Antivirus Microsoft Defender passe automatiquement en mode actif.|
-|Serveurs Windows|Sur Windows Server, vous devez réinstaller l’antivirus Microsoft Defender et le définir manuellement en mode passif. Sur les serveurs Windows, lorsqu’un antivirus/logiciel anti-programme malveillant non Microsoft est installé, l’antivirus Microsoft Defender ne peut pas s’exécuter en même temps que la solution antivirus non-Microsoft. Dans ce cas, l’antivirus Microsoft Defender est désactivé ou désinstallé manuellement. <br/><br/> Pour réinstaller ou activer l’antivirus Microsoft Defender sur Windows Server, effectuez les tâches suivantes : <br/>- [Réinstaller l’Antivirus Microsoft Defender sur Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Réinstaller l’antivirus Microsoft Defender sur Windows Server, version 1803 ou ultérieure](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Définir l’antivirus Microsoft Defender en mode passif sur Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si vous rencontrez des problèmes lors de la réinstallation ou de la réactivation de l’antivirus Microsoft Defender sur Windows Server, consultez [Résolution des problèmes : l’Antivirus Microsoft Defender est désinstallé sur Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Serveurs Windows|Sur Windows Server, vous devez réinstaller l’antivirus Microsoft Defender et le définir manuellement en mode passif. Sur les serveurs Windows, lorsqu’un antivirus/logiciel anti-programme malveillant non Microsoft est installé, l’antivirus Microsoft Defender ne peut pas s’exécuter en même temps que la solution antivirus non-Microsoft. Dans ce cas, l’antivirus Microsoft Defender est désactivé ou désinstallé manuellement. <br/><br/> Pour réinstaller ou activer l’antivirus Microsoft Defender sur Windows Server, effectuez les tâches suivantes : <br/>- [Réactiver l’antivirus Defender sur Windows Server s’il a été désactivé](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled)<br/>- [Réactiver l’antivirus Defender sur Windows Server s’il a été désinstallé](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)<br/>- [Définir l’antivirus Microsoft Defender en mode passif sur Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si vous rencontrez des problèmes lors de la réinstallation ou de la réactivation de Microsoft Defender Antivisrus sur Windows Server, consultez [Résolution des problèmes : l’Antivirus Microsoft Defender est désinstallé sur Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > Pour en savoir plus sur les états de l’Antivirus Microsoft Defender avec protection antivirus non-Microsoft, consultez [Compatibilité de l’antivirus Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>Réactiver l’Antivirus Microsoft Defender sur Windows Server 2016
-
-Vous pouvez utiliser [l’utilitaire de protection contre les programmes malveillants Command-Line](command-line-arguments-microsoft-defender-antivirus.md) pour réactiver l’antivirus Microsoft Defender sur Windows Server 2016.
-
-1. En tant qu’administrateur local sur le serveur, ouvrez l’invite de commandes.
-
-2. Exécutez la commande suivante : `MpCmdRun.exe -wdenable`
-
-3. Redémarrez lʼappareil.
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Réactiver l’Antivirus Microsoft Defender sur Windows Server, version 1803 ou ultérieure
-
-> [!IMPORTANT]
-> La procédure suivante s’applique uniquement aux points de terminaison ou aux appareils qui exécutent les versions suivantes de Windows :
-> - Windows Server 2022
-> - Windows Server 2019
-> - Windows Server, version 1803 (mode core uniquement)
-
-1. En tant qu’administrateur local sur le serveur, ouvrez Windows PowerShell.
-
-2. Exécutez les applets de commande Windows PowerShell suivantes dans cet ordre:
-
-   ```powershell
-   # For Windows Server 2016
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   
-   # For Windows Server 2019 and Windows Server 2022
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-   Lorsque vous utilisez la commande DISM dans une séquence de tâches exécutant PowerShell, le chemin d’accès suivant à cmd.exe est requis.
-   Exemple :
-
-   ```powershell
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-3. Redémarrez lʼappareil.
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Définir l’antivirus Microsoft Defender en mode passif sur Windows Server
 
@@ -169,7 +128,7 @@ Lorsque vous ajoutez [des exclusions aux analyses de l’Antivirus Microsoft Def
 Gardez à l’esprit les points suivants :
 
 - *Les exclusions de chemin d’accès* excluent des fichiers spécifiques et n’importe quel accès à ces fichiers.
-- *Les exclusions de* processus excluent tout ce qu’un processus touche, mais n’excluent pas le processus lui-même.
+- *Les exclusions* de processus excluent tout ce qu’un processus touche, mais n’excluent pas le processus lui-même.
 - Répertoriez vos exclusions de processus en utilisant leur chemin d’accès complet et non par leur nom uniquement. (La méthode name-only est moins sécurisée.)
 - Si vous répertoriez chaque exécutable (.exe) comme une exclusion de chemin d’accès et une exclusion de processus, le processus et tout ce qu’il touche sont exclus.
 
@@ -179,7 +138,7 @@ Les groupes d’appareils, les regroupements d’appareils et les unités d’or
 
 |Type de collection|Procédure|
 |---|---|
-|[Les groupes d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) (anciennement *appelés groupes d’ordinateurs*) permettent à votre équipe chargée des opérations de sécurité de configurer des fonctionnalités de sécurité, telles que l’examen et la correction automatisés. <br/><br/> Les groupes d’appareils sont également utiles pour attribuer l’accès à ces appareils afin que votre équipe des opérations de sécurité puisse prendre des mesures de correction si nécessaire. <br/><br/> Les groupes d’appareils sont créés dans le cadre de la détection et de l’arrêt de l’attaque, mais des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées et affichées dans le [portail Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).|1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>).<br/><br/>2. Dans le volet de navigation à gauche, choisissez **Paramètres Points** \> de **terminaison Autorisations** \>  \> Groupes **d’appareils**.<br/><br/>3. Choisissez **+ Ajouter un groupe d’appareils**.<br/><br/>4. Spécifiez un nom et une description pour le groupe d’appareils.<br/><br/>5. Dans la liste des **niveaux Automation** , sélectionnez une option. (Nous vous recommandons **d’effectuer une correction complète des menaces automatiquement**.) Pour en savoir plus sur les différents niveaux d’automatisation, consultez [comment les menaces sont corrigées](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated).<br/><br/>6. Spécifiez les conditions d’une règle de correspondance pour déterminer quels appareils appartiennent au groupe d’appareils. Par exemple, vous pouvez choisir un domaine, des versions du système d’exploitation ou même utiliser [des balises d’appareil](/microsoft-365/security/defender-endpoint/machine-tags).<br/><br/>7. Sous **l’onglet Accès utilisateur** , spécifiez les rôles qui doivent avoir accès aux appareils inclus dans le groupe d’appareils.<br/><br/>8. Choisissez **Terminé**.|
+|[Les groupes d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) (anciennement *appelés groupes d’ordinateurs*) permettent à votre équipe chargée des opérations de sécurité de configurer des fonctionnalités de sécurité, telles que l’examen et la correction automatisés. <br/><br/> Les groupes d’appareils sont également utiles pour attribuer l’accès à ces appareils afin que votre équipe des opérations de sécurité puisse prendre des mesures de correction si nécessaire. <br/><br/> Les groupes d’appareils sont créés pendant que l’attaque a été détectée et arrêtée, des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées et affichées dans le [portail Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).|1. Accédez au portail Microsoft 365 Defender (<https://security.microsoft.com>).<br/><br/>2. Dans le volet de navigation à gauche, choisissez **Paramètres Points** \> de **terminaison Autorisations** \>  \> Groupes **d’appareils**.<br/><br/>3. Choisissez **+ Ajouter un groupe d’appareils**.<br/><br/>4. Spécifiez un nom et une description pour le groupe d’appareils.<br/><br/>5. Dans la liste des **niveaux Automation** , sélectionnez une option. (Nous vous recommandons **d’effectuer une correction complète des menaces automatiquement**.) Pour en savoir plus sur les différents niveaux d’automatisation, consultez [comment les menaces sont corrigées](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated).<br/><br/>6. Spécifiez les conditions d’une règle de correspondance pour déterminer quels appareils appartiennent au groupe d’appareils. Par exemple, vous pouvez choisir un domaine, des versions du système d’exploitation ou même utiliser [des balises d’appareil](/microsoft-365/security/defender-endpoint/machine-tags).<br/><br/>7. Sous **l’onglet Accès utilisateur** , spécifiez les rôles qui doivent avoir accès aux appareils inclus dans le groupe d’appareils.<br/><br/>8. Choisissez **Terminé**.|
 |[Les regroupements d’appareils](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) permettent à votre équipe chargée des opérations de sécurité de gérer les applications, de déployer des paramètres de conformité ou d’installer des mises à jour logicielles sur les appareils de votre organisation. <br/><br/> Les collections d’appareils sont créées à l’aide [de Configuration Manager](/mem/configmgr/).|Suivez les étapes décrites dans [Créer une collection](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create).|
 |[Les unités organisationnelles](/azure/active-directory-domain-services/create-ou) vous permettent de regrouper logiquement des objets tels que des comptes d’utilisateur, des comptes de service ou des comptes d’ordinateur. <br/><br/> Vous pouvez ensuite affecter des administrateurs à des unités d’organisation spécifiques et appliquer une stratégie de groupe pour appliquer des paramètres de configuration ciblés. <br/><br/> Les unités organisationnelles sont définies dans [Azure services de domaine Active Directory](/azure/active-directory-domain-services).|Suivez les étapes décrites dans [Créer une unité organisationnelle dans un domaine managé Azure services de domaine Active Directory](/azure/active-directory-domain-services/create-ou).|
 

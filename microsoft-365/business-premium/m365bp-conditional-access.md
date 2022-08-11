@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,18 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées à l’identité en fournissant des paramètres de sécurité préconfigurés pour Microsoft 365 Business Premium.
-ms.openlocfilehash: 7c73b40d73ec022b2047ceb3998b7d82ceab56e8
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 2d4dc4af9f003245b25a85c5b18abf593db8fbe8
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275997"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285184"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Authentification multifacteur et sécurité par défaut.
 
 Microsoft 365 Business Premium a été conçu pour protéger les comptes d’utilisateur de votre entreprise avec des paramètres de sécurité préconfigurés. Ces paramètres incluent l’activation de l’authentification multifacteur (MFA) pour tous vos comptes administrateurs et utilisateur. Pour la plupart des organisations, les valeurs de sécurité par défaut offrent un niveau de sécurité de connexion supplémentaire.
 
-Pour plus d’informations sur les paramètres de sécurité par défaut et les stratégies qu’ils appliquent, consultez [Que sont les paramètres de sécurité par défaut?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+> [!TIP]
+> Pour plus d’informations sur les paramètres de sécurité par défaut et les stratégies appliquées, consultez [Que sont les paramètres de sécurité par défaut?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 Cet article fournit des informations sur :
 

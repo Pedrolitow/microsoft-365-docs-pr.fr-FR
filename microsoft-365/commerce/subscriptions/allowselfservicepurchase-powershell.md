@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’applet de commande PowerShell AllowSelfServicePurchase pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
-ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.date: 08/09/2022
+ms.openlocfilehash: 080b12672607301b9dcc9977c1c93ad9b48d43cd
+ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714703"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301897"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -34,9 +34,10 @@ Le module **MSCommerce** PowerShell est désormais disponible sur [PowerShell Ga
 
 Vous pouvez utiliser le module **MSCommerce** PowerShell pour :
 
-- Afficher l’état par défaut de la valeur du paramètre **AllowSelfServicePurchase** , qu’elle soit activée ou désactivée
-- Afficher la liste des produits applicables et déterminer si l’achat en libre-service est activé ou désactivé
+- Afficher l’état par défaut de la valeur du paramètre **AllowSelfServicePurchase** , qu’elle soit activée, désactivée ou autorise des essais sans mode de paiement
+- Afficher la liste des produits applicables et déterminer si l’achat en libre-service est activé, désactivé ou autorise des essais sans mode de paiement
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
+- Afficher ou modifier le paramètre des essais sans modes de paiement
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -117,7 +118,17 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Afficher ou définir l’état de AllowSelfServicePurchase
 
-Une fois que vous avez affiché la liste des produits disponibles pour l’achat en libre-service, vous pouvez afficher ou modifier le paramètre d’un produit spécifique.
+Vous pouvez définir le paramètre **Value** pour **AllowSelfServicePurchase** afin d’autoriser ou d’empêcher les utilisateurs d’effectuer un achat en libre-service. Vous pouvez également utiliser la valeur **OnlyTrialsWithoutPaymentMethod** pour permettre aux utilisateurs d’essayer des produits à partir de la liste approuvée des produits. Les utilisateurs ne peuvent acheter le produit qu’une fois l’essai terminé si **AllowSelfServicePurchase** est activé.
+
+La valeur **OnlyTrialsWithoutPaymentMethod** autorise les essais temporaires tout en bloquant les achats.
+
+Le tableau suivant décrit les paramètres du paramètre **Value** .
+
+| **Paramètre** | **Impact** |
+|---|---|
+| Activé | Les utilisateurs peuvent effectuer des achats en libre-service et acquérir des essais pour le produit. |
+| OnlyTrialsWithoutPaymentMethod | Les utilisateurs ne peuvent pas effectuer d’achats en libre-service, mais peuvent acquérir des essais pour le produit. Ils ne peuvent pas acheter la version complète après l’expiration de la version d’évaluation. |
+| Désactivé | Les utilisateurs ne peuvent pas effectuer d’achats en libre-service ou acquérir des essais pour le produit. |
 
 Pour obtenir le paramètre de stratégie pour un produit spécifique, exécutez la commande suivante :
 
@@ -128,13 +139,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 Pour activer le paramètre de stratégie pour un produit spécifique, exécutez la commande suivante :
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 Pour désactiver le paramètre de stratégie pour un produit spécifique, exécutez la commande suivante :
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+Pour permettre aux utilisateurs d’essayer un produit spécifique sans mode de paiement, exécutez la commande suivante :
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Exemple de script pour désactiver AllowSelfServicePurchase
@@ -145,16 +162,15 @@ L’exemple suivant vous guide tout au long de l’importation du module **MSCom
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 S’il existe plusieurs valeurs pour le produit, vous pouvez exécuter la commande individuellement pour chaque valeur, comme indiqué dans l’exemple suivant :
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
-
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
@@ -189,6 +205,5 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer les achats en libre-service (Administration)](manage-self-service-purchases-admins.md) (article)
-
+[Gérer les achats en libre-service (Administration)](manage-self-service-purchases-admins.md) (article)\
 [FAQ sur l’achat en libre-service](self-service-purchase-faq.yml) (article)

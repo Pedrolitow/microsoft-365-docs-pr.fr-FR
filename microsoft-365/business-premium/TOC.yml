@@ -1,6 +1,6 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Aperçu
+    - name: Vue d’ensemble
       href: index.md
     - name: Exécuter votre entreprise de manière plus sécurisée
       href: m365bp-secure-users.md
@@ -10,11 +10,13 @@
       href: get-microsoft-365-business-premium.md
     - name: Obtenir Microsoft 365 campagnes
       href: get-microsoft-365-campaigns.md
+    - name: Ressources pour les partenaires
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Fortifier votre environnement
   items:
     - name: Se connecter et configurer
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -42,9 +44,9 @@
           href: m365bp-install-office-apps.md
         - name: Protéger les appareils non gérés
           href: m365bp-protect-pcs-macs.md
-    - name: Utiliser l’e-mail en toute sécurité
+    - name: Utiliser l’e-mail de manière plus sécurisée
       items:
-        - name: Aperçu
+        - name: Vue d’ensemble
           href: m365bp-protect-email-overview.md
         - name: Se protéger contre le hameçonnage et les autres attaques
           href: m365bp-avoid-phishing-and-attacks.md
@@ -66,7 +68,7 @@
   items:
     - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           href: m365bp-protect-devices.md
         - name: Configurer les appareils gérés
           href: m365bp-managed-devices-setup.md
@@ -92,7 +94,7 @@
       href: m365bp-device-groups-mdb.md
 - name: Gestion des incidents de sécurité
   items:
-    - name: Aperçu
+    - name: Vue d’ensemble
       href: m365bp-security-incident-management.md
     - name: Passer en revue les recommandations de sécurité
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json

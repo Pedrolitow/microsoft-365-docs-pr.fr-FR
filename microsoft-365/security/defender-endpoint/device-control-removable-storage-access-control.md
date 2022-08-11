@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 8c5a0dd3e2eb9f0ebeb20ed6e5ea8f323fbdcceb
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 021556a1942619be8deeb4724507b1237c0a3f51
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112546"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280694"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender pour point de terminaison Access Control de stockage amovible du contrôle d’appareil
 
@@ -37,7 +37,7 @@ Microsoft Defender pour point de terminaison fonctionnalité de stockage amovibl
 
 |Privilège|Autorisation|
 |---|---|
-|Accès|Lecture, Écriture, Exécution|
+|Access|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
 |Prise en charge du fournisseur de solutions Cloud|Oui|
 |Prise en charge de l’objet de stratégie de groupe|Oui|
@@ -83,8 +83,8 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |Nom de la propriété|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, un ID unique, représente le groupe et sera utilisé dans la stratégie.||
-|**DescriptorIdList**|Répertoriez les propriétés de l’appareil que vous souhaitez utiliser pour couvrir le groupe. Toutes les propriétés respectent la casse. |**PrimaryId** : L’ID principal inclut `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices``PrinterDevices`. <p>**InstancePathId** : InstancePathId est une chaîne qui identifie de façon unique l’appareil dans le système, par exemple. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` C’est le `Device instance path` Gestionnaire de périphériques. Le nombre à la fin (par exemple &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId** : pour effectuer une transformation `Device instance path` au format ID d’appareil, consultez les [identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers), par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId** : chaîne qui identifie l’appareil dans le système, par exemple, `USBSTOR\DiskGeneric_Flash_Disk___8.07`il se trouve `Hardware Ids` dans le Gestionnaire de périphériques. <br>**Remarque** : L’ID matériel n’est pas unique ; différents appareils peuvent partager la même valeur.<p>**FriendlyNameId** : il s’agit d’une chaîne attachée à l’appareil, par exemple. `Generic Flash Disk USB Device` C’est le `Friendly name` Gestionnaire de périphériques. <p>**BusId** : Par exemple, USB, SCSI <p>**SerialNumberId** : Vous pouvez trouver SerialNumberId à partir de `Device instance path` la Gestionnaire de périphériques, par exemple SerialNumberId `03003324080520232521` dans USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID** : L’ID du fournisseur est le code fournisseur à quatre chiffres que le comité USB attribue au fournisseur. L’ID de produit est le code de produit à quatre chiffres que le fournisseur affecte à l’appareil. Il prend en charge le caractère générique. Pour passer `Device instance path` au format ID fournisseur et ID de produit, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers). Par exemple : <br>`0751_55E0`: correspond à cette paire exacte VID/PID<br>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <br>`0751_`: faire correspondre n’importe quel média avec VID=0751 <p> **Remarque** : consultez [Comment faire trouver la propriété multimédia dans le Gestionnaire de périphériques?](#how-do-i-find-the-media-property-in-the-device-manager) sous la section [Questions fréquentes](#frequently-asked-questions) ci-dessous pour comprendre comment trouver la propriété dans Gestionnaire de périphériques.|
-|**MatchType**|Quand plusieurs propriétés d’appareil sont utilisées dans le `DescriptorIDList`, MatchType définit la relation.|**MatchAll** : tous les attributs sous la `DescriptorIdList` relation will be **And** ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système vérifie si l’USB répond aux deux valeurs. <p> **MatchAny** : les attributs sous DescriptorIdList seront **ou** la relation ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système effectue l’application tant que l’USB a une valeur **DeviceID** ou **InstanceID** identique.|
+|**DescriptorIdList**|Répertoriez les propriétés de l’appareil que vous souhaitez utiliser pour couvrir le groupe. Toutes les propriétés respectent la casse. |**PrimaryId** : L’ID principal inclut `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices``PrinterDevices`. <p>**InstancePathId** : InstancePathId est une chaîne qui identifie de façon unique l’appareil dans le système, par exemple. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` C’est le `Device instance path` Gestionnaire de périphériques. Le nombre à la fin (par exemple &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple : `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId** : pour effectuer une transformation `Device instance path` au format ID d’appareil, consultez les [identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers), par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId** : chaîne qui identifie l’appareil dans le système, par exemple, `USBSTOR\DiskGeneric_Flash_Disk___8.07`il se trouve `Hardware Ids` dans le Gestionnaire de périphériques. <br>**Remarque** : L’ID matériel n’est pas unique ; différents appareils peuvent partager la même valeur.<p>**FriendlyNameId** : il s’agit d’une chaîne attachée à l’appareil, par exemple. `Generic Flash Disk USB Device` C’est le `Friendly name` Gestionnaire de périphériques. <p>**BusId** : Par exemple, USB, SCSI <p>**SerialNumberId** : Vous pouvez trouver SerialNumberId à partir de `Device instance path` la Gestionnaire de périphériques, par exemple SerialNumberId `03003324080520232521` dans USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 <p>**VID_PID** : L’ID du fournisseur est le code fournisseur à quatre chiffres que le comité USB attribue au fournisseur. L’ID de produit est le code de produit à quatre chiffres que le fournisseur affecte à l’appareil. Il prend en charge le caractère générique. Pour passer `Device instance path` au format ID fournisseur et ID de produit, consultez [Identificateurs USB standard](/windows-hardware/drivers/install/standard-usb-identifiers). Par exemple : <br>`0751_55E0`: correspond à cette paire exacte VID/PID<br>`_55E0`: faire correspondre n’importe quel média avec PID=55E0 <br>`0751_`: faire correspondre n’importe quel média avec VID=0751 <p> **Remarque** : consultez [Comment faire trouver la propriété multimédia dans le Gestionnaire de périphériques?](#how-do-i-find-the-media-property-in-the-device-manager) sous la section [Questions fréquentes](#frequently-asked-questions) ci-dessous pour comprendre comment trouver la propriété dans Gestionnaire de périphériques.|
+|**Matchtype**|Quand plusieurs propriétés d’appareil sont utilisées dans le `DescriptorIDList`, MatchType définit la relation.|**MatchAll** : tous les attributs sous la `DescriptorIdList` relation will be **And** ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système vérifie si l’USB répond aux deux valeurs. <p> **MatchAny** : les attributs sous DescriptorIdList seront **ou** la relation ; par exemple, si l’administrateur place `DeviceID` et `InstancePathID`, pour chaque USB connecté, le système effectue l’application tant que l’USB a une valeur **DeviceID** ou **InstanceID** identique.|
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
 Vous pouvez utiliser les propriétés suivantes pour créer la stratégie de contrôle d’accès :
@@ -173,7 +173,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
        `Disable: 0`
        `Enable: 1`
 
-     - Cliquez sur **Enregistrer**.
+     - Sélectionnez **Enregistrer**.
 
    :::image type="content" source="images/enable-rsac.png" alt-text="Capture d’écran de l’activation de la stratégie de Access Control de stockage amovible" lightbox="images/enable-rsac.png":::
 
@@ -192,7 +192,7 @@ Accédez au Centre d’administration Microsoft Endpoint Manager (<https://endpo
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - Cliquez sur **Enregistrer**.
+     - Sélectionnez **Enregistrer**.
 
    :::image type="content" source="images/default-deny.png" alt-text="Capture d’écran de la définition de l’application par défaut en tant que refus" lightbox="images/default-deny.png":::
 
@@ -412,6 +412,8 @@ Avant de commencer à utiliser les Access Control de stockage amovibles, vous de
 Le [portail Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) affiche les événements déclenchés par le Access Control de stockage amovible Device Control. Pour accéder à la sécurité Microsoft 365, vous devez disposer de l’abonnement suivant :
 
 - Rapports Microsoft 365 pour E5
+
+Si `AuditAllowed` ou `AuditDenied` est configuré dans votre stratégie et si **l’événement Envoyer** est sélectionné dans **Options**, un événement est envoyé à La chasse avancée ou au rapport de contrôle d’appareil pour chaque accès couvert (`AccessMask` dans l’entrée), qu’il ait été initié par le système ou par l’utilisateur qui s’est connecté.
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement

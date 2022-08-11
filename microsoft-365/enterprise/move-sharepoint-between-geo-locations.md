@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéographique et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b388b3fa869e6207c72f62aa2f50b832acab43a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940819"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306303"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -75,7 +75,7 @@ L’heure doit être exprimée en Temps universel coordonné (UTC) pour les deux
 
 Un déplacement géographique de site SharePoint nécessite que vous vous connectiez et opériez le déplacement de l’URL d’administration SharePoint vers l’emplacement géographique du site.
 
-Par exemple, si l’URL du site est `https://contosohealthcare.sharepoint.com/sites/Turbines`, connectez-vous à l’URL d’administration SharePoint à l’adresse `https://contosohealthcare-admin.sharepoint.com`suivante :
+Par exemple, si l’URL du site est `https://contosohealthcare.sharepoint.com/sites/Turbines`, connectez-vous à l’URL Administration SharePoint à l’adresse `https://contosohealthcare-admin.sharepoint.com`suivante :
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -219,9 +219,9 @@ Les flux de travail SharePoint 2013 doivent être republiés après le déplacem
 
 Si vous déplacez un site avec des applications, vous devez réinstaller l’application dans le nouvel emplacement géographique du site, car l’application et ses connexions peuvent ne pas être disponibles dans l’emplacement géographique de destination.
 
-### <a name="flow"></a>Flow
+### <a name="power-automate"></a>Power Automate
 
-Dans la plupart des cas, les flux continueront de fonctionner après un déplacement géographique de site SharePoint. Nous vous conseillons de les tester une fois le déplacement terminé.
+Dans la plupart des cas, les flux Power Automate continueront de fonctionner après un déplacement géographique de site SharePoint. Nous vous conseillons de les tester une fois le déplacement terminé.
 
 ### <a name="power-apps"></a>Power Apps
 

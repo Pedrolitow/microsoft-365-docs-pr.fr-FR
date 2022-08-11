@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
-ms.date: 05/04/2021
-ms.openlocfilehash: 5d905ec0b5ab9450b40c1e8be885307ce7a65a19
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/08/2022
+ms.openlocfilehash: 258c2dc0f2dd6f10330c400f78cfadb1d9f986e5
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111557"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281287"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -40,6 +40,14 @@ Pour afficher et imprimer votre facture :
 Pour plus d’informations, consultez[Afficher votre facture](view-your-bill-or-invoice.md).
 
 Si vous avez un abonnement Microsoft 365 uniquement, consultez [Comprendre votre facture pour la productivité Microsoft 365](understand-your-invoice2.md).
+
+## <a name="how-often-and-when-am-i-billed"></a>À quelle fréquence et quand suis-je facturé ?
+
+Selon la fréquence de facturation que vous avez choisie lors de l’achat de votre abonnement, vous recevez une facture mensuelle, tous les 3 mois, tous les 6 mois ou chaque année. La durée depuis la dernière date de la facture est appelée période de facturation et est affichée sur la page 1 de la facture, au-dessus de la section Résumé de la facturation. Cette période représente la plage de dates pendant laquelle les frais s’accumulent pour la facture actuelle. Si vous avez apporté une modification à votre abonnement en dehors de cette plage de dates, comme l’ajout ou la suppression de licences, les frais associés apparaissent sur la facture pour la période de facturation suivante.
+
+À partir de la page 2 de la facture, vous voyez les frais regroupés par commande de produit. Pour les clients Azure, les frais peuvent être organisés par section de facture.
+
+À la fin de chaque période de facturation, vous recevez un e-mail indiquant que votre nouvelle facture est prête à être affichée ou téléchargée dans le Centre d’administration Microsoft 365. Si vous avez plusieurs profils de facturation, vous recevez une facture pour chaque profil de facturation. Découvrez comment [rechercher et afficher votre facture ou note](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Comprendre l’en-tête de la facture
 

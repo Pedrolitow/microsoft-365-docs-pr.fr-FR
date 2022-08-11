@@ -1,7 +1,7 @@
 ---
-title: Table DeviceAlertEvents dans le schéma de recherche avancé
-description: En savoir plus sur les événements de génération d’alertes dans la table DeviceAlertEvents du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
+title: Table DeviceAlertEvents dans le schéma de chasse avancé
+description: En savoir plus sur les événements de génération d’alerte dans la table DeviceAlertEvents du schéma de chasse avancé
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, mdatp, microsoft defender atp, microsoft defender pour point de terminaison, recherche wdatp, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, DeviceAlertEvents, alerte, gravité, catégorie
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,31 +15,34 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 32dbff60a37c31cdbfd492eb5d746a10d9b7a185
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1742c674cb982282d8edbe73e43e6ea59fedf8f6
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934380"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281836"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> [!IMPORTANT]
+> Les `AlertInfo` tables et `AlertEvidence` les tables remplacent la `DeviceAlertEvents` table dans le schéma Microsoft Defender pour point de terminaison. Pour plus d’informations, consultez [la table Map DeviceAlertEvents](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
-Le `DeviceAlertEvents` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les alertes Microsoft 365 Defender. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir la référence de schéma [de chasse avancée.](advanced-hunting-schema-reference.md)
+La `DeviceAlertEvents` table du schéma [de chasse avancé](advanced-hunting-overview.md) contient des informations sur les alertes dans Microsoft 365 Defender. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+
+Pour plus d’informations sur les autres tables du schéma de chasse avancé, consultez [la référence du schéma de chasse avancé](advanced-hunting-schema-reference.md).
 
 |Nom de colonne|Type de données|Description|
 |---|---|---|
 |`AlertId`|string|Identificateur unique de l’alerte|
 |`Timestamp`|DateHeure|Date et heure d’enregistrement de l’événement|
-|`DeviceId`|chaîne|Identificateur unique de l’appareil dans le service|
+|`DeviceId`|string|Identificateur unique de l’appareil dans le service|
 |`DeviceName`|chaîne|Nom de domaine complet (FQDN) de l’appareil|
 |`Severity`|string|Indique l’impact potentiel (élevé, moyen ou faible) de l’indicateur de menace ou de la violation identifié(e) par l’alerte|
 |`Category`|string|Type d’indicateur de menace ou d’activité de violation identifié par l’alerte|
@@ -48,8 +51,8 @@ Pour plus d’informations sur les autres tableaux du schéma de chasse avancé,
 |`SHA1`|string|SHA-1 du fichier auquel l’action enregistrée a été appliquée|
 |`RemoteUrl`|string|URL ou nom de domaine complet (FQDN) à laquelle/auquel la connexion était en cours|
 |`RemoteIP`|string|Adresse IP à laquelle la connexion était en cours|
-|`AttackTechniques`|chaîne|MITRE ATT&techniques CK associées à l’activité ayant déclenché l’alerte|
-|`ReportId`|long|Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée avec les `DeviceName` colonnes et les `Timestamp`|
+|`AttackTechniques`|string|MITRE ATT&techniques CK associées à l’activité qui a déclenché l’alerte|
+|`ReportId`|long|Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée avec les `DeviceName` `Timestamp` colonnes|
 |`Table`|string|Table qui contient les détails de l’événement|
 
 ## <a name="related-topics"></a>Sujets associés

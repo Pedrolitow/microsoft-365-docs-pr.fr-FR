@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: cef25147a57cf7613d22fbf393d41ecc33730955
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969536"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309546"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -38,9 +38,17 @@ ms.locfileid: "66969536"
 
 Cette rubrique fournit des étapes générales qui peuvent être utilisées pour limiter les problèmes de performances liés à Microsoft Defender pour point de terminaison sur macOS.
 
-La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender pour point de terminaison sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d’autres heuristiques.
 
 Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez rencontrer des performances non optimales lors de l’exécution de Microsoft Defender pour point de terminaison sur macOS. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court intervalle de temps peuvent entraîner des problèmes de performances dans Microsoft Defender pour point de terminaison sur macOS.
+
+>[!WARNING]
+>Avant de commencer, assurez-vous que d’autres produits de sécurité ne sont pas en cours d’exécution sur l’appareil. Plusieurs produits de sécurité peuvent entrer en conflit et affecter les performances de l’hôte. 
+
+## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Résoudre les problèmes de performances à l’aide des statistiques de protection en temps réel
+**S’applique à :**
+- Seuls les problèmes de performances liés à AV
+
+La protection en temps réel (RTP) est une fonctionnalité de Defender pour point de terminaison sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d’autres heuristiques.
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
@@ -157,3 +165,25 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 6. Configurez Microsoft Defender pour point de terminaison sur macOS avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et réactivez la protection en temps réel.
 
      Pour plus d’informations, consultez [Configurer et valider les exclusions pour Microsoft Defender pour point de terminaison sur macOS](mac-exclusions.md).
+
+
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes de performances à l’aide de l’analyseur client Microsoft Defender pour point de terminaison
+
+**S’applique à :**
+- Problèmes de performances de tous les composants Defender pour point de terminaison disponibles tels que AV et EDR  
+
+L’analyseur client Microsoft Defender pour point de terminaison (MDECA) peut collecter des traces, des journaux et des informations de diagnostic afin de résoudre les problèmes de performances sur [les appareils intégrés](/microsoft-365/security/defender-endpoint/onboard-configure) sur macOS.
+
+> [!NOTE]
+>- L’outil Microsoft Defender pour point de terminaison Client Analyzer est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations telles que des adresses IP (mais pas limitées à) des noms de PC qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Microsoft Defender pour point de terminaison. Pour plus d’informations sur notre déclaration de confidentialité, consultez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+>- En règle générale, il est recommandé de mettre à jour [l’agent Microsoft Defender pour point de terminaison vers la  dernière version](linux-whatsnew.md)  disponible et de confirmer que le problème persiste avant d’approfondir l’examen. 
+
+Pour exécuter l’analyseur client pour résoudre les problèmes de performances, consultez [Exécuter l’analyseur client sur macOS et Linux](run-analyzer-macos-linux.md).
+
+>[!NOTE]
+>Si, après avoir suivi les étapes ci-dessus, le problème de performances persiste, contactez le support client pour obtenir des instructions supplémentaires et une atténuation. 
+
+
+## <a name="see-also"></a>Voir aussi
+
+- [Rechercher les problèmes d’état d’intégrité de l’agent](health-status.md)

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment fournir des commentaires à un classifieur pouvant être formé dans l’Explorateur de contenu.
-ms.openlocfilehash: bde570b8bbb104d7f89523eb12bd8b9ac9210ad7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e4cf09599d95d7e19f565a9bd0e30213e3057984
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637436"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309458"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
 Un classifieur pouvant être entraîné Microsoft 365 est un outil que vous pouvez entraîner pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier les éléments pour l’application d’étiquettes de confidentialité Office, de stratégies de conformité des communications et de stratégies d’étiquette de rétention.
 
-Cet article explique comment améliorer les performances des classifieurs entraînés personnalisés en leur fournissant des commentaires supplémentaires.
+Cet article vous montre comment améliorer les performances des classifieurs entraînés personnalisés en leur fournissant davantage de commentaires.
 
 Pour en savoir plus sur les différents types de classifieurs, consultez [En savoir plus sur les classifieurs pouvant être formés](classifier-learn-about.md).
 
@@ -34,7 +34,7 @@ Regardez cette vidéo pour obtenir un résumé rapide du processus de réglage e
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
+<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]-->
 
 > [!NOTE]
 > Les classifieurs préentraînés ne peuvent pas être réentraînés.
@@ -69,7 +69,7 @@ Pour en savoir plus sur le flux de travail global de réentraînement d’un cla
 > [!IMPORTANT]
 > L’affichage des éléments agrégés sous l’en-tête des classifieurs pouvant être formés peut prendre jusqu’à huit jours.
 
-3. Choisissez le classifieur pouvant être formé que vous avez utilisé pour appliquer automatiquement la stratégie d’étiquette de rétention. Il s’agit du classifieur pouvant être formé sur lequel vous donnerez vos commentaires.
+3. Choisissez le classifieur pouvant être formé que vous avez utilisé pour appliquer automatiquement la stratégie d’étiquette de rétention. Il s’agit du classifieur pouvant être formé sur lequel vous allez envoyer vos commentaires.
 
 > [!NOTE]
 > Si un élément a une entrée dans la colonne **Étiquette de rétention** , cela signifie que l’élément a été classé en tant que `match`.  Si un élément n’a pas d’entrée dans la colonne **d’étiquette de rétention** , cela signifie qu’il a été classé en tant que `close match`. Vous pouvez améliorer la précision du classifieur le plus en fournissant des commentaires sur `close match` les éléments. 
@@ -98,13 +98,13 @@ Pour en savoir plus sur le flux de travail global de réentraînement d’un cla
 
 12. Passez en revue l’action recommandée et les comparaisons de prédiction des versions réentraînées et publiées du classifieur.
 13. Si vous êtes satisfait des résultats du réentraînement, choisissez **Republier**.
-14. Si vous n’êtes pas satisfait des résultats du réentraînement, vous pouvez choisir de fournir des commentaires supplémentaires au classifieur dans l’interface de l’Explorateur de contenu et de démarrer un autre cycle de réentraînement ou de ne rien faire, auquel cas la version actuellement publiée du classifieur continuera d’être utilisée. 
+14. Si vous n’êtes pas satisfait des résultats du réentraînement, vous pouvez choisir de fournir davantage de commentaires au classifieur dans l’interface de l’Explorateur de contenu et de démarrer un autre cycle de réentraînement ou de ne rien faire dans ce cas, la version actuellement publiée du classifieur continuera d’être utilisée. 
 
 ## <a name="details-on-republishing-recommendations"></a>Détails sur la republication des recommandations
 
-Voici quelques informations sur la façon dont nous formulerons la recommandation de publier à nouveau un classifieur réentraîné ou de suggérer un réentraînement. Cela nécessite une compréhension un peu plus approfondie du fonctionnement des classifieurs pouvant être formés.
+Voici quelques informations sur la façon dont nous formulerons la recommandation de republier un classifieur réentraîné ou de suggérer un réentraînement. Cela nécessite une compréhension un peu plus approfondie du fonctionnement des classifieurs pouvant être formés.
 
-Après un réentraînement, nous évaluons les performances du classifieur à la fois sur les éléments avec commentaires, ainsi que sur tous les éléments utilisés à l’origine pour entraîner le classifieur. 
+Après un réentraînement, nous évaluons les performances du classifieur sur les éléments avec commentaires et tous les éléments utilisés à l’origine pour entraîner le classifieur. 
 
 - Pour les modèles intégrés, les éléments utilisés pour entraîner le classifieur sont les éléments utilisés par Microsoft pour générer le modèle.
 - Pour les modèles personnalisés, les éléments utilisés dans l’entraînement d’origine du classifieur proviennent des sites que vous avez ajoutés à des fins de test et de révision.

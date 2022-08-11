@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements, tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les Groupes Microsoft 365, Microsoft Teams et les conversations Skype Entreprise. eDiscovery (Standard) et eDiscovery (Premium) fournissent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos investigations.
-ms.openlocfilehash: 6bfc08b8f264f9bd6c1e61cdf98231f4ca8a9d9b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a94811c4f8d3ec2d3f15f99375cfee2d3e5a4a0d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634332"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306545"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Solutions eDiscovery Microsoft Purview
 
@@ -40,11 +40,11 @@ Microsoft Purview fournit trois solutions eDiscovery : recherche de contenu, eDi
 
 ![Fonctionnalités clés des outils de Microsoft Purview eDiscovery.](..\media\m365-ediscovery-solution-graphic.png)
 
-- **Recherche de contenu**. Utilisez l’outil de recherche de contenu pour rechercher du contenu dans les sources de données Microsoft 365, puis exportez les résultats de la recherche vers un ordinateur local.
+- **Recherche de contenu**. Utilisez l’outil de recherche de contenu pour rechercher du contenu dans les sources de données Microsoft 365, puis exportez les résultats de recherche vers un ordinateur local.
 
-- **eDiscovery (Standard).** eDiscovery (Standard) s’appuie sur les fonctionnalités de recherche et d’exportation de base de la recherche de contenu en vous permettant de créer des cas eDiscovery et d’affecter des gestionnaires eDiscovery à des cas spécifiques. Les responsables eDiscovery peuvent uniquement accéder aux cas dont ils sont membres. eDiscovery (Standard) vous permet également d’associer des recherches et des exportations à un cas et de placer une conservation eDiscovery sur les emplacements de contenu pertinents pour le cas.
+- **eDiscovery (Standard)**. eDiscovery (Standard) s’appuie sur les fonctionnalités de recherche et d’exportation de base de la Recherche de contenu en vous permettant de créer des cas eDiscovery et d’affecter des gestionnaires eDiscovery à des cas spécifiques. Les gestionnaires eDiscovery ne peuvent accéder qu’aux cas dont ils sont membres. eDiscovery (Standard) vous permet également d’associer des recherches et des exportations à un cas et de placer une conservation eDiscovery sur les emplacements de contenu pertinents pour le cas.
 
-- **eDiscovery (Premium).** L’outil eDiscovery (Premium) s’appuie sur les fonctionnalités existantes de gestion, de conservation, de recherche et d’exportation de cas dans eDiscovery (Standard). eDiscovery (Premium) fournit un flux de travail de bout en bout pour identifier, conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer les dépositaires et le flux de travail de notification de mise en suspens pour communiquer avec les dépositaires impliqués dans une affaire. Il vous permet de collecter et de copier des données à partir du service en direct dans des ensembles de révision, lorsque vous pouvez filtrer, rechercher et baliser du contenu pour éliminer le contenu non pertinent à partir d’une révision ultérieure afin que votre flux de travail puisse identifier et se concentrer sur le contenu le plus pertinent. eDiscovery (Premium) fournit des modèles de codage prédictif basés sur l’analytique et le Machine Learning afin de limiter davantage l’étendue de votre investigation au contenu le plus pertinent.
+- **eDiscovery (Premium)**. L’outil Advanced eDiscovery (Premium) s’appuie sur les fonctionnalités existantes de gestion, de conservation, de recherche et d’exportation dans eDiscovery (Standard). eDiscovery (Premium) fournit un flux de travail de bout en bout pour identifier, conserver, collecter, examiner, analyser et exporter du contenu qui répond aux investigations internes et externes de votre organisation. Il permet aux équipes juridiques de gérer les dépositaires et le flux de travail de notification de mise en suspens pour communiquer avec les dépositaires impliqués dans une affaire. Il vous permet de collecter et de copier des données à partir du service en direct dans des ensembles de révision, lorsque vous pouvez filtrer, rechercher et baliser du contenu pour éliminer le contenu non pertinent à partir d’une révision ultérieure afin que votre flux de travail puisse identifier et se concentrer sur le contenu le plus pertinent. eDiscovery (Premium) fournit des modèles de codage prédictif basés sur l’analytique et l’apprentissage automatique afin de limiter davantage l’étendue de votre examen au contenu le plus pertinent.
 
 ## <a name="comparison-of-key-capabilities"></a>Comparaison des principales fonctionnalités
 
@@ -115,7 +115,7 @@ Voici une description de chaque fonctionnalité eDiscovery.
 
 - **Balisage**. Les balises vous aident également à éliminer le contenu non pertinent et à identifier le contenu le plus pertinent. Lorsque des experts, des avocats ou d’autres utilisateurs passent en revue le contenu d’un ensemble de révisions, leurs opinions relatives au contenu peuvent être capturées à l’aide de balises. Par exemple, si l’objectif est d’éliminer le contenu inutile, un utilisateur peut baliser des documents avec une balise telle que « non réactif ». Une fois le contenu révisé et balisé, une requête d’ensemble de révision peut être créée pour exclure tout contenu marqué comme « non réactif ». Ce processus élimine le contenu non réactif des étapes suivantes du flux de travail eDiscovery.
 
-- **Analytique**. eDiscovery (Premium) fournit des outils permettant d’analyser les documents d’ensemble de révision pour vous aider à organiser les documents de manière cohérente et à réduire le volume de documents à réviser. *La détection à proximité des doublons* regroupe des documents textuels similaires pour vous aider à améliorer l’efficacité de votre processus de révision. *Le thread d’e-mail* identifie des messages électroniques spécifiques qui fournissent un contexte complet de la conversation dans un thread de messagerie. *La fonctionnalité Thèmes* tente d’analyser les thèmes dans les documents d’ensemble de révision et d’affecter un thème aux documents afin que vous puissiez passer en revue les documents avec le thème associé. Ces fonctionnalités d’analyse permettent de rendre votre processus de révision plus efficace afin que les réviseurs puissent passer en revue une fraction des documents collectés.
+- **Analytique**. eDiscovery (Premium) fournit des outils permettant d’analyser les documents d’ensemble de révision pour vous aider à organiser les documents de manière cohérente et à réduire le volume de documents à réviser. *La détection à proximité des doublons* regroupe des documents textuels similaires pour vous aider à améliorer l’efficacité de votre processus de révision. *Email threading* identifie des messages électroniques spécifiques qui fournissent un contexte complet de la conversation dans un thread de messagerie. *La fonctionnalité Thèmes* tente d’analyser les thèmes dans les documents d’ensemble de révision et d’affecter un thème aux documents afin que vous puissiez passer en revue les documents avec le thème associé. Ces fonctionnalités d’analyse permettent de rendre votre processus de révision plus efficace afin que les réviseurs puissent passer en revue une fraction des documents collectés.
 
 - **Modèles de codage prédictif**. Utilisez des modèles de codage prédictif pour réduire et éliminer de grands volumes de contenu de cas dans un ensemble d’éléments pertinents que vous pouvez hiérarchiser pour révision. Pour ce faire, créez et entraînez vos propres modèles de codage prédictif qui vous aident à hiérarchiser la révision des éléments les plus pertinents d’un ensemble de révisions. Le système utilise l’entraînement pour appliquer des scores de prédiction à chaque élément du jeu de révision. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents).
 
@@ -143,8 +143,8 @@ Les sections suivantes présentent la configuration minimale requise pour la rec
 
 ### <a name="ediscovery-standard"></a>eDiscovery (Standard)
 
-- Exchange online Plan 2
-- Sharepoint online Plan 2
+- Exchange Online (plan 2)
+- SharePoint Online (offre 2)
 - abonnement Microsoft 365 E3
 - abonnement Microsoft 365 G3
 - abonnement Microsoft 365 Business Premium

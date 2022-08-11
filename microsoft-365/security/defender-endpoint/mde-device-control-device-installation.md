@@ -8,24 +8,28 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/21/2022
+ms.date: 08/09/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42e31e8194464654176de02cb9f45f11066c6d4e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943659"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294608"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender pour point de terminaison installation de l’appareil Device Control
 
 **S’applique à**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
+> [!NOTE]
+> Si vous gérez le stockage amovible, consultez Microsoft Defender pour point de terminaison Access Control de [stockage amovible du contrôle d’appareil](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Microsoft Defender pour point de terminaison’installation de l’appareil Device Control vous permet d’effectuer la tâche suivante :
 
@@ -36,7 +40,7 @@ Microsoft Defender pour point de terminaison’installation de l’appareil Devi
 > Pour trouver la différence entre l’installation de l’appareil et le contrôle d’accès au stockage amovible, consultez [Microsoft Defender pour point de terminaison Protection du stockage amovible du contrôle d’appareil](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
 
 |Privilège|Autorisation|
-|---|---|
+|:---|:---|
 |Access|Installation de l’appareil |
 |Action Mode|Autoriser, Empêcher |
 |Prise en charge du fournisseur de solutions Cloud|Oui|
@@ -56,7 +60,7 @@ Les propriétés d’appareil suivantes sont prises en charge par la prise en ch
 - ID matériel
 - Compatible ID
 - Classe d’appareil
-- Type d’appareil amovible : certains appareils peuvent être classés comme appareils amovibles. Un appareil est considéré comme amovible lorsque le pilote de l’appareil auquel il est connecté indique que l’appareil est amovible. Par exemple, un périphérique USB est signalé comme amovible par les pilotes du hub USB auquel l’appareil est connecté.
+- Type d’appareil amovible : certains appareils peuvent être classés en tant qu’appareil amovible. Un appareil est considéré comme amovible lorsque le pilote de l’appareil auquel il est connecté indique que l’appareil est amovible. Par exemple, un périphérique USB est signalé comme amovible par les pilotes du hub USB auquel l’appareil est connecté.
 
 Pour plus d’informations, consultez [Installation de l’appareil dans Windows](/windows/client-management/manage-device-installation-with-group-policy).
 
@@ -74,7 +78,7 @@ Lorsque ce paramètre de stratégie est activé avec **l’ordre d’évaluation
 Si **l’ordre appliquer l’évaluation en couches pour autoriser et empêcher les stratégies d’installation d’appareil dans tous les paramètres de stratégie de critères de correspondance d’appareil** n’est pas activé avec ce paramètre de stratégie, tous les autres paramètres de stratégie qui empêchent spécifiquement l’installation sont prioritaires.
 
 > [!NOTE]
-> **L’option Empêcher l’installation d’appareils non décrits par d’autres paramètres** de stratégie a été remplacée par **l’ordre d’évaluation Appliquer en couches pour autoriser et empêcher les stratégies d’installation des appareils dans tous les paramètres de stratégie de critères de correspondance d’appareil** pour les versions Windows 10 et Windows 11 cibles prises en charge. Il est recommandé d’utiliser **l’ordre d’évaluation Appliquer en couches pour autoriser et empêcher les stratégies d’installation d’appareil dans tous les paramètres de stratégie de critères de correspondance d’appareil dans la** mesure du possible.
+> **L’option Empêcher l’installation d’appareils non décrits par d’autres paramètres** de stratégie a été remplacée par **l’ordre d’évaluation Appliquer en couches pour autoriser et empêcher les stratégies d’installation des appareils dans tous les paramètres de stratégie de critères de correspondance d’appareil** pour les versions Windows 10 et Windows 11 cibles prises en charge. Dans la mesure du possible, utilisez **l’ordre d’évaluation Appliquer en couches pour autoriser et empêcher l’installation des appareils dans tous les paramètres de stratégie de critères de correspondance de l’appareil** .
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Autoriser l’installation d’appareils qui correspondent à l’un de ces ID d’instance d’appareil
 
@@ -221,7 +225,7 @@ Dans Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoi
 
       :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="Identificateur dans la page Contrôle d’appareil" lightbox="../../media/devicepolicy-devicecontrol.png":::
 
-    L’ajout `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` , comme illustré dans l’image précédente, est dû au fait qu’il ne suffit pas d’activer un seul ID matériel pour activer un lecteur USB unique. Vous devez également vous assurer que tous les périphériques USB qui précèdent la cible ne sont pas bloqués (autorisés). Vous pouvez ouvrir Gestionnaire de périphériques et modifier la vue **sur Appareils par connexions** pour voir comment les appareils sont installés dans l’arborescence PnP. Dans ce cas, les appareils suivants doivent être autorisés afin que le lecteur usb cible puisse également être autorisé :
+    Nous l’avons ajouté `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` comme indiqué dans l’image précédente, car il ne suffit pas d’activer un seul ID matériel pour activer un lecteur USB unique. Vous devez également vous assurer que tous les périphériques USB qui précèdent la cible ne sont pas bloqués (autorisés). Vous pouvez ouvrir Gestionnaire de périphériques et modifier la vue **sur Appareils par connexions** pour voir comment les appareils sont installés dans l’arborescence PnP. Dans ce cas, les appareils suivants doivent être autorisés afin que le lecteur usb cible puisse également être autorisé :
 
     - « Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft) » -> PCI\CC_0C03
     - « USB Root Hub (USB 3.0) » -> USB\ROOT_HUB30
@@ -268,7 +272,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="Stockage de blocs" lightbox="../../media/block-removable-storage2.png":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="how-do-i-confirm-that-a-device-gets-a-deployed-policy"></a>Comment faire confirmer qu’un appareil obtient une stratégie déployée ?
 

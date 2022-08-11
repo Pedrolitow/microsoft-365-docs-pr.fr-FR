@@ -10,18 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 1eb0e7a36e170d8e8bd01233b0ee2db42c0ec331
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917882"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309744"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour entreprises
 
@@ -31,7 +31,7 @@ Si vous n’avez pas encore Microsoft Defender pour entreprises, vous pouvez cho
 
 - [Essayez ou achetez la version autonome de Defender entreprise](#try-or-buy-microsoft-defender-for-business).
 - [Obtenez Microsoft 365 Business Premium](#get-microsoft-365-business-premium), qui inclut désormais Defender entreprise.
-- [Collaborez avec un partenaire Microsoft](#work-with-a-microsoft-partner) qui peut vous aider à tout configurer.
+- [Travailler avec un partenaire Microsoft](#work-with-a-microsoft-partner) qui peut vous aider à tout installer et configurer.
 
 Si vous vous êtes inscrit à une version d’évaluation, après avoir reçu votre e-mail d’acceptation, vous pouvez [activer votre version d’évaluation et attribuer des licences utilisateur](#how-to-activate-your-trial), puis passer à vos [étapes suivantes](#next-steps).
 
@@ -63,14 +63,14 @@ Microsoft dispose d’une liste de fournisseurs de solutions autorisés à vendr
 
 1. Accédez à [Parcourir les partenaires](https://appsource.microsoft.com/marketplace/partner-dir).
 
-2. Dans le volet **Filtres** , spécifiez des critères de recherche, par exemple :
+2. Dans le volet **Filtres**, spécifiez les critères de recherche, tels que :
 
    - Votre emplacement
-   - Taille de votre organisation
-   - **Domaines d’intérêt**, tels que **la sécurité** et/ou **la protection contre les menaces** 
-   - **Services**, tels que **les licences ou les** **services managés (MSP)**
+   - La taille de votre organisation
+   - **Domaines prioritaires**, tels que la **Sécurité** et/ou la **Protection contre les Menaces** 
+   - **Services**, tels que les **licences** ou les **Services gérés (MSP)**
 
-   Dès que vous sélectionnez un ou plusieurs critères, la liste des partenaires est mise à jour.
+   Dès que vous sélectionnez un ou plusieurs critères, la liste des partenaires se met à jour.
 
 3. Passez en revue la liste des résultats. Sélectionnez un fournisseur pour en savoir plus sur son expertise et les services qu’il fournit.
 
@@ -88,7 +88,7 @@ Lorsque vous recevez votre e-mail d’acceptation, voici comment activer votre a
 
    | Scénario | Procedure |
    |:---|:---|
-   | Vous configurez un abonnement Microsoft 365 pour la première fois. | Sélectionnez **Atteindre la configuration guidée** et effectuez les étapes suivantes :<ol><li>Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)</li><li>Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.</li><li>Ajoutez des utilisateurs et attribuez des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](mdb-add-users.md).</li></ol> |
+   | Vous configurez un abonnement Microsoft 365 pour la première fois. | Sélectionnez **Atteindre la configuration guidée** et effectuez les étapes suivantes :<ol><li>Installez vos applications Office maintenant ou **choisissez Continuer** à ignorer cette étape. (Vous pourrez installer vos applications Office ultérieurement.)</li><li>Si votre entreprise a un domaine, vous pouvez l’ajouter maintenant (cette option est recommandée). Vous pouvez également choisir d’utiliser votre domaine par défaut `.onmicrosoft.com` pour l’instant.</li><li>Ajouter des utilisateurs et attribuer des licences. Une licence est automatiquement attribuée à chaque utilisateur que vous répertoriez. Consultez [Ajouter des utilisateurs et attribuer des licences en même temps](mdb-add-users.md).</li></ol> |
    | Vous ajoutez une version d’évaluation à un locataire Microsoft 365 existant. | <ol><li>Accédez à la Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) et connectez-vous.</li><li>Dans le volet de navigation, choisissez **Utilisateurs** > **actifs**. Passez en revue la liste des utilisateurs. </li><li>Pour attribuer des licences, suivez les instructions [fournies dans Affecter des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>Deux portails pour l’installation
@@ -101,7 +101,7 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 | Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer.<p>Vous allez utiliser le portail Microsoft 365 Defender pour : <ul><li>Affichez vos appareils et stratégies de protection des appareils.</li><li>Affichez les menaces détectées et prenez des mesures.</li><li>Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.</li></ul><p>Pour en savoir plus, consultez [Prise en main du portail Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
-> Si vous avez Microsoft 365 Business Premium, vous avez également Microsoft Intune. Vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour gérer les appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).
+> Vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour intégrer des appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).
 
 
 ## <a name="next-steps"></a>Prochaines étapes

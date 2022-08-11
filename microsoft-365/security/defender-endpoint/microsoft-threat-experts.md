@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855040"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280738"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -73,23 +73,12 @@ Les clients peuvent faire appel à nos experts en sécurité directement à part
 - Clarifier le comportement suspect des appareils et les étapes suivantes si vous êtes confronté à un attaquant avancé
 - Déterminer les risques et la protection concernant les acteurs de menace, les campagnes ou les techniques émergentes des attaquants
 
-L’option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail pour vous permettre d’interagir avec des experts dans le contexte de votre enquête :
+L’option **Demander aux experts Defender** est disponible à plusieurs endroits dans le portail pour vous permettre d’interagir avec des experts dans le contexte de votre enquête :
 
 - ***Menu Aide et support***
-
-  :::image type="content" source="images/mte-eod-menu.png" alt-text="Élément de menu MTE-EOD" lightbox="images/mte-eod-menu.png":::
-
 - ***Menu Actions de la page d’appareil***
-
-  :::image type="content" source="images/mte-eod-machines.png" alt-text="Option de menu d’action de page d’appareil MTE-EOD" lightbox="images/mte-eod-machines.png":::
-
 - ***Menu Actions de la page Alertes***
-
-  :::image type="content" source="images/mte-eod-alerts.png" alt-text="Option de menu d’action de page d’alerte MTE-EOD" lightbox="images/mte-eod-alerts.png":::
-
 - ***Menu Actions de la page de fichiers***
-
-  :::image type="content" source="images/mte-eod-file.png" alt-text="Option de menu d’action de page de fichier MTE-EOD" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > Si vous souhaitez suivre l’état de vos cas d’experts à la demande par le biais de Microsoft Services Hub, contactez votre gestionnaire de compte customer success.

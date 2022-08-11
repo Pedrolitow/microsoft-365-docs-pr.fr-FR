@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Defender pour Office 365 ? Quelles sont les recommandations actuelles en matière de protection standard ? Que faut-il utiliser si vous voulez être plus strict ? Et quels extras obtenez-vous si vous utilisez également Defender pour Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: e6b0f09b9b8785ef7e471a9c5269348b131b866b
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004364"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306589"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -65,7 +65,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, consultez 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil d’e-mail en bloc & propriétés de courrier indésirable**|||||
-|**Seuil d’e-mail en bloc** <br><br> _BulkThreshold_|7 |6|4|Pour plus d’informations, consultez le [niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md).|
+|**Seuil d’e-mail en bloc** <br><br> _BulkThreshold_|7 |6|5|Pour plus d’informations, consultez le [niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Ce paramètre est disponible uniquement dans PowerShell.|
 |**Augmenter les paramètres de score de courrier indésirable**|Désactivé|Désactivé|Désactivé|Tous ces paramètres font partie de l’Advanced Spam Filter (ASF). Pour plus d’informations, consultez les [paramètres ASF dans la section stratégies anti-courrier indésirable](#asf-settings-in-anti-spam-policies) de cet article.|
 |**Marquer comme paramètres de courrier indésirable**|Désactivé|Désactivé|Désactivé|La plupart de ces paramètres font partie d’ASF. Pour plus d’informations, consultez les [paramètres ASF dans la section stratégies anti-courrier indésirable](#asf-settings-in-anti-spam-policies) de cet article.|
@@ -78,7 +78,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, consultez 
 |Action de détection **d’hameçonnage** <br><br> _PhishSpamAction_|**Déplacer le message vers le dossier Junk Email**<sup>\*</sup> <br><br> `MoveToJmf`|**Mettre en quarantaine le message** <br><br> `Quarantine`|**Mettre en quarantaine le message** <br><br> `Quarantine`|<sup>\*</sup>La valeur par défaut est **Déplacer le message vers le dossier Junk Email** dans la stratégie anti-courrier indésirable par défaut et dans les nouvelles stratégies anti-courrier indésirable que vous créez dans PowerShell. La valeur par défaut est **le message de mise en quarantaine** dans les nouvelles stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender.|
 |**Action de détection de hameçonnage à haut niveau de confiance** <br><br> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <br><br> `Quarantine`|**Mettre en quarantaine le message** <br><br> `Quarantine`|**Mettre en quarantaine le message** <br><br> `Quarantine`||
 |Action de détection **en bloc** <br><br> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br><br> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <br><br> `MoveToJmf`|**Mettre en quarantaine le message** <br><br> `Quarantine`||
-|**Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** <br><br> _QuarantineRetentionPeriod_|15 jours<sup>\*</sup>|30 jours|30 jours|<sup>\*</sup> La valeur par défaut est 15 jours dans la stratégie anti-courrier indésirable par défaut et dans les nouvelles stratégies anti-courrier indésirable que vous créez dans PowerShell. La valeur par défaut est 30 jours dans les nouvelles stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender courrier indésirable. <br><br> Cette valeur affecte également les messages mis en quarantaine par des stratégies anti-hameçonnage. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).|
+|**Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** <br><br> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours|  <br><br> Cette valeur affecte également les messages mis en quarantaine par des stratégies anti-hameçonnage. Pour plus d’informations, consultez [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).|
 |**Activer les conseils de sécurité relatifs au courrier indésirable** <br><br> _InlineSafetyTipsEnabled_|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
 |Activer le vidage automatique de zéro heure (ZAP) pour les messages de hameçonnage <br><br> _PhishZapEnabled_|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
 |Activer ZAP pour les messages indésirables <br><br> _SpamZapEnabled_|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
@@ -137,7 +137,8 @@ Pour créer et configurer des stratégies anti-programme malveillant, consultez 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Paramètres de protection**|||||
-|**Activer le filtre des pièces jointes courantes** <br><br> _EnableFileFilter_|Non sélectionnée <br><br> `$false`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes en fonction du type de fichier, quel que soit le contenu de la pièce jointe. Pour obtenir la liste des types de fichiers, consultez [stratégies anti-programme malveillant](anti-malware-protection.md#anti-malware-policies).|
+|**Activer le filtre des pièces jointes courantes** <br><br> _EnableFileFilter_|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes en fonction du type de fichier, quel que soit le contenu de la pièce jointe. Pour obtenir la liste des types de fichiers, consultez [stratégies anti-programme malveillant](anti-malware-protection.md#anti-malware-policies).|
+|Notifications de filtre de pièces jointes courantes (**lorsque ces types de fichiers sont trouvés**) <br><br> _FileTypeAction_|**Rejeter les messages avec un reçu de non-remise (NDR)** <br><br> `Reject`|**Rejeter les messages avec un reçu de non-remise (NDR)** <br><br> `Reject`|**Rejeter les messages avec un reçu de non-remise (NDR)** <br><br> `Reject`||
 |**Activer le vidage automatique de zéro heure pour les programmes malveillants** <br><br> _ZapEnabled_|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`|Sélectionné <br><br> `$true`||
 |**Stratégie de quarantaine**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Lorsque vous créez une stratégie anti-programme malveillant, une valeur vide signifie que la stratégie de quarantaine par défaut est utilisée pour définir les fonctionnalités historiques des messages qui ont été mis en quarantaine en tant que programmes malveillants (AdminOnlyAccessPolicy sans notifications de quarantaine). <br><br> Les stratégies de sécurité prédéfinies Standard et Strict utilisent la stratégie de quarantaine par défaut (AdminOnlyAccessPolicy sans notifications de quarantaine) comme décrit dans le tableau [ci-après](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Les administrateurs peuvent créer et sélectionner des stratégies de quarantaine personnalisées qui définissent davantage de fonctionnalités pour les utilisateurs dans les stratégies anti-programmes malveillants par défaut ou personnalisées. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).|
 |**notifications Administration**|||||

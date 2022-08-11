@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, les numéros de carte de crédit ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944040"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309788"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -87,13 +87,13 @@ Chaque entité de type d’informations sensibles est définie par les champs su
 
 ![Diagramme des preuves corroborantes et de la fenêtre de proximité.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Découvrez-en plus sur les niveaux de confiance dans cette courte vidéo.
+<!--Learn more about confidence levels in this short video.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
 
 ### <a name="example-sensitive-information-type"></a>Exemple de type d’informations sensibles
 
-#### <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale argentine (DNI)
+#### <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) en Argentine
 
 ### <a name="format"></a>Format
 
@@ -115,7 +115,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - L’expression régulière Regex_argentina_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_argentina_national_id est trouvé.
@@ -137,7 +137,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 - Argentina National Identity number
 - Identité
 - Carte d’identité nationale d’identification
-- DNI
+- Dni
 - Registre national des personnes de la carte réseau
 - Documento Nacional de Identidad
 - Registro Nacional de las Personas

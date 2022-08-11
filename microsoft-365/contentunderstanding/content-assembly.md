@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide d’un modèle moderne dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 2ec87a1255e7bd53e03e05c53d9cfbb8e6c77be1
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: ed0b66ecf495dccd18e24ff5ef4caded17c2b234
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772487"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309832"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide d’un assembly de contenu dans Microsoft SharePoint Syntex
 
-Vous pouvez utiliser SharePoint Syntex pour vous aider à générer automatiquement des documents métier répétitifs standard, tels que des contrats, des déclarations de travail, des contrats de service, des lettres de consentement, des présentations commerciales et de la correspondance. Vous pouvez faire tout cela plus rapidement, de manière plus cohérente et moins sujette aux erreurs à l’aide de l’assembly de contenu dans SharePoint Syntex.
+Vous pouvez utiliser SharePoint Syntex pour vous aider à générer automatiquement des documents métier répétitifs standard, tels que des contrats, des déclarations de travail, des contrats de service, des lettres de consentement, des présentations commerciales et de la correspondance. Vous pouvez faire tout cela plus rapidement, de manière plus cohérente et avec moins d’erreurs en utilisant l’assembly de contenu dans SharePoint Syntex.
 
-Avec l’assembly de contenu, vous pouvez utiliser un document existant pour créer un *modèle moderne*, puis utiliser ce modèle pour générer automatiquement du contenu à l’aide de listes SharePoint ou d’entrées utilisateur en tant que source de données.
+Avec l’assembly de contenu, vous pouvez utiliser un document existant pour créer un *modèle moderne*, puis utiliser ce modèle pour générer automatiquement du contenu à l’aide de listes SharePoint ou d’entrées manuelles comme source de données.
 
 > [!NOTE]
-> Vous devez disposer d’une licence SharePoint Syntex utilisateur pour accéder aux fonctionnalités d’assembly de contenu et les utiliser. Vous devez également disposer des autorisations nécessaires pour gérer SharePoint listes.
+> Vous devez disposer d’une licence SharePoint Syntex utilisateur pour accéder aux fonctionnalités d’assembly de contenu et les utiliser. Vous devez également disposer des autorisations nécessaires pour gérer les listes SharePoint.
 
 ## <a name="create-a-modern-template"></a>Créer un modèle moderne
 
@@ -42,7 +42,7 @@ Suivez ces étapes pour créer un modèle moderne.
    ![Capture d’écran de la page de chargement où vous sélectionnez un document.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > Actuellement, vous pouvez charger uniquement des documents Word (.docx extension) pour créer des modèles. Télécharger documents Word à partir de votre stockage local ou de votre bureau.
+   > Actuellement, vous pouvez charger uniquement des documents Word (.docx extension) pour créer des modèles. Chargez des documents Word à partir de votre stockage local ou de votre bureau.
 
 3. Après avoir chargé le document, le document s’affiche dans le studio de modèles où vous pouvez convertir le document en modèle.
 
@@ -77,9 +77,12 @@ Dans le panneau **Tous les espaces réservés** :
 
 2. Dans la **section Comment les auteurs remplissent cette section d’espace réservé** , **sélectionnez Entrée de texte ou sélectionnez une date**.
 
-3. Dans le champ **Type d’informations** , sélectionnez le type de données que vous souhaitez associer à l’espace réservé. Actuellement, six options sont disponibles : **une seule ligne de texte**, **plusieurs lignes de texte**, **nombre**, **date et heure**, **e-mail** et **lien hypertexte**.
+3. Dans le champ **Type d’informations** , sélectionnez le type de données que vous souhaitez associer à l’espace réservé. Actuellement, six options sont disponibles : **une seule ligne de texte**, **plusieurs lignes de texte**, **nombre**, **date et heure**, **Email** et **lien hypertexte**.
 
 4. Sélectionnez **Ajouter**.
+
+   > [!NOTE]
+   > Vous pouvez configurer plusieurs formateurs de dates tels que MM/JJ/AAAA, JJ/MM/AAAA, AAAA/AAAA/MM/JJ et JJ du mois, y compris définir l’heure au format 12 heures et 24 heures. 
 
 ### <a name="associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library"></a>Associer un espace réservé en sélectionnant parmi les choix dans une colonne d’une liste ou d’une bibliothèque
 
@@ -179,7 +182,7 @@ Vous pouvez utiliser un modèle moderne *publié* pour créer rapidement des doc
 
 > [!NOTE]
 > **Limitations de version actuelles**
->- Seuls Microsoft Word documents (extension .docx) sont actuellement pris en charge pour la création d’un modèle. Avant de charger un document Word, assurez-vous qu’il n’inclut pas de commentaires ou que **les modifications de suivi** sont activées. Si le document contient des espaces réservés de texte pour les images, assurez-vous qu’elles ne sont pas encapsulées de texte. Les contrôles de contenu dans Word ne sont actuellement pas pris en charge. Si vous souhaitez créer un modèle à partir d’un document Word avec des contrôles de contenu, supprimez-le avant de créer un modèle moderne.
+>- Seuls les documents Microsoft Word (.docx extension) sont actuellement pris en charge pour la création d’un modèle. Avant de charger un document Word, assurez-vous qu’il n’inclut pas de commentaires ou que **les modifications de suivi** sont activées. Si le document contient des espaces réservés de texte pour les images, assurez-vous qu’elles ne sont pas encapsulées de texte. Les contrôles de contenu dans Word ne sont actuellement pas pris en charge. Si vous souhaitez créer un modèle à partir d’un document Word avec des contrôles de contenu, supprimez-le avant de créer un modèle moderne.
 >- Le modèle et le document sont associés à une bibliothèque de documents. Pour utiliser le modèle dans une autre bibliothèque de documents, vous devez recréer le modèle dans cette bibliothèque de documents.
 >- Le document chargé utilisé pour créer le modèle moderne est enregistré sous forme de copie distincte et placé dans le répertoire /forms de la bibliothèque de documents. Le fichier d’origine sur le disque ne sera pas affecté.
 >- Vous pouvez créer des espaces réservés pour le texte uniquement. Les images, l’art intelligent, les tableaux et les listes à puces ne sont actuellement pas pris en charge.

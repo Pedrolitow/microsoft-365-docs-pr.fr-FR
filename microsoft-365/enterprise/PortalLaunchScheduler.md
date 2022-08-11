@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article explique comment lancer votre portail à l’aide du planificateur de lancement du portail.
-ms.openlocfilehash: 2eef7a8488db579f4ba946342213b822227229d1
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: b76a61bb06c3f2bab7f92ad97cde0630011e487c
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941061"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306523"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du planificateur de lancement du portail SharePoint
 
@@ -47,8 +47,8 @@ Les autorisations de site doivent être configurées séparément des ondes dans
 > - Le nombre d’ondes requises est automatiquement déterminé par le nombre attendu d’utilisateurs.
 > - Avant de planifier le lancement d’un portail, [l’outil Diagnostics de page pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du site est saine.
 > - À la fin du lancement, tous les utilisateurs disposant d’autorisations sur le site pourront accéder au nouveau site.
-> - Si votre organisation utilise [Viva Connections](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), les utilisateurs peuvent voir l’icône de votre organisation dans la barre des applications Microsoft Teams. Toutefois, lorsque l’icône est sélectionnée, les utilisateurs ne pourront pas accéder au portail tant que leur vague n’aura pas été lancée.
-> - Cette fonctionnalité n’est pas disponible pour Office 365 Allemagne, Office 365 géré par 21Vianet (Chine) ou microsoft 365 us government.
+> - Si votre organisation utilise [Viva Connections](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx), les utilisateurs peuvent voir l’icône de votre organisation dans la barre d’applications Microsoft Teams. Toutefois, lorsque l’icône est sélectionnée, les utilisateurs ne pourront pas accéder au portail tant que leur vague n’aura pas été lancée.
+> - Cette fonctionnalité n’est pas disponible pour Office 365 Allemagne, Office 365 géré par 21Vianet (Chine) ou les plans Microsoft 365 US Government.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Comprendre les différences entre les options du planificateur de lancement du portail :
 
@@ -56,7 +56,7 @@ Auparavant, les lancements du portail pouvaient uniquement être planifiés via 
 
 **Version de SharePoint PowerShell :**
 
-- Les informations d’identification de l’administrateur sont requises pour utiliser [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
+- Administration informations d’identification sont requises pour utiliser [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell)
 - Exigence minimale d’une vague
 - Planifier votre lancement en fonction du fuseau horaire UTC (Coordinated Universal Time)
 
@@ -99,7 +99,7 @@ Auparavant, les lancements du portail pouvaient uniquement être planifiés via 
    **Option 1 : Envoyer des utilisateurs à une page SharePoint existante (bidirectionnelle)** : utilisez cette option lors du lancement d’un nouveau portail SharePoint moderne pour remplacer un portail SharePoint existant. Les utilisateurs des vagues actives sont redirigés vers le nouveau site, qu’ils accèdent à l’ancien ou au nouveau site. Les utilisateurs d’une vague non lancée qui tentent d’accéder au nouveau site seront redirigés vers l’ancien site jusqu’à ce que leur vague soit lancée.
 
    > [!NOTE]
-   > Lorsque vous utilisez l’option bidirectionnelle, la personne qui planifie le lancement doit également disposer d’autorisations de propriétaire de site sur l’autre portail SharePoint.
+   > Lorsque vous utilisez l’option bidirectionnelle, la personne qui planifie le lancement doit disposer d’autorisations de propriétaire de site sur le nouveau portail SharePoint et le portail SharePoint existant. En outre, les deux URL de site doivent exister dans le même locataire/domaine afin de valider les autorisations appropriées. 
 
    **Option 2 : Envoyer des utilisateurs à une page temporaire générée automatiquement (redirection de page temporaire)** : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et, si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
 

@@ -16,18 +16,18 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 4afe94238a98cf168015c43946194205f0e20aa0
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873003"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309370"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -43,7 +43,7 @@ Selon les applications que vous exécutez et les caractéristiques de votre appa
 
 ## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Résoudre les problèmes de performances à l’aide des statistiques de protection en temps réel
 
-**S’applique à :**
+**S’applique à :**
 - Seuls les problèmes de performances liés à AV
 
 La protection en temps réel (RTP) est une fonctionnalité de Defender pour point de terminaison sur Linux qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d’autres heuristiques.
@@ -65,7 +65,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide [des instructions fournies dans Définir les préférences pour Defender pour point de terminaison sur Linux](linux-preferences.md).
 
     > [!NOTE]
-    > Si le problème de performances persiste pendant que la protection en temps réel est désactivée, l’origine du problème peut être le composant protection évolutive des points de terminaison (PEPT). Dans ce cas, suivez les étapes de la section **Résoudre les problèmes de performances à l’aide de Microsoft Defender pour point de terminaison section Analyseur** client de cet article.
+    > Si le problème de performances persiste pendant que la protection en temps réel est désactivée, l’origine du problème peut être le composant de détection et de réponse de point de terminaison (EDR). Dans ce cas, suivez les étapes de la section **Résoudre les problèmes de performances à l’aide de Microsoft Defender pour point de terminaison section Analyseur** client de cet article.
 
 2. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser les statistiques en temps réel collectées par Defender pour point de terminaison sur Linux.
 
@@ -162,99 +162,20 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes de performances à l’aide de l’analyseur client Microsoft Defender pour point de terminaison
 
-**S’applique à :**
-- Problèmes de performances de tous les composants Defender pour point de terminaison disponibles, tels que AV et PEPT  
 
-L’analyseur client Microsoft Defender pour point de terminaison (MDECA) peut collecter des traces, des journaux et des informations de diagnostic afin de résoudre les problèmes de performances sur [les appareils intégrés](/microsoft-365/security/defender-endpoint/onboard-configure) sur Linux.
+**S’applique à :**
+- Problèmes de performances de tous les composants Defender pour point de terminaison disponibles tels que AV et EDR  
 
-> [!NOTE]
-> L’outil Microsoft Defender pour point de terminaison Client Analyzer est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations telles que des adresses IP (mais pas limitées à) des noms de PC qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Microsoft Defender pour point de terminaison. Pour plus d’informations sur notre déclaration de confidentialité, consultez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
-
-### <a name="requirements"></a>Conditions requises
-
-- L’analyseur client peut s’exécuter sur les distributions prises en charge de [Linux](microsoft-defender-endpoint-linux.md#system-requirements) avant ou après l’intégration à Microsoft Defender pour point de terminaison.
-- Téléchargez l’analyseur client pour Linux à partir de la dernière préversion disponible en téléchargement ici : <https://aka.ms/XMDEClientAnalyzer>
-- Si votre appareil se trouve derrière un proxy, vous pouvez simplement passer le serveur proxy en tant que variable d’environnement au script mde_support_tool.sh. Par exemple : `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
-
-### <a name="run-the-client-analyzer-on-linux"></a>Exécuter l’analyseur client sur Linux
-
-Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les commandes suivantes :
-
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
-2. `unzip -q XMDEClientAnalyzer.zip`
-3. `cd XMDEClientAnalyzer`
-4. `chmod +x mde_support_tool.sh`
-5. Exécutez l’utilisation non racine pour installer les composants pip et lxml requis : `./mde_support_tool.sh`
-6. Pour collecter le package de diagnostic réel et générer le fichier d’archivage des résultats, exécutez à nouveau en tant que racine : `./mde_support_tool.sh -d` Exemple :
-
-   ![Image de l’exemple de ligne de commande.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+L’analyseur client Microsoft Defender pour point de terminaison (MDECA) peut collecter des traces, des journaux et des informations de diagnostic afin de résoudre les problèmes de performances sur [les appareils intégrés](/microsoft-365/security/defender-endpoint/onboard-configure) sur macOS.
 
 > [!NOTE]
-> - L’analyseur requiert « lxml » pour produire la sortie du résultat. S’il n’est pas installé, l’analyseur tente de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://pypi.org/search/?q=lxml>
-> 
-> - En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
->
-> - Si vous exécutez sur un ordinateur qui ne peut pas utiliser Python 3 ou extraire le composant lxml, vous pouvez télécharger une version binaire de l’analyseur qui n’a pas les exigences suivantes : [binaire de l’analyseur client XMDE](https://aka.ms/XMDEClientAnalyzerBinary)
+>- L’outil Microsoft Defender pour point de terminaison Client Analyzer est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations telles que des adresses IP (mais pas limitées à) des noms de PC qui vous aideront à résoudre les problèmes que vous rencontrez peut-être avec Microsoft Defender pour point de terminaison. Pour plus d’informations sur notre déclaration de confidentialité, consultez [la déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/privacystatement).
+>- En règle générale, il est recommandé de mettre à jour [l’agent Microsoft Defender pour point de terminaison vers la  dernière version](mac-whatsnew.md)  disponible et de confirmer que le problème persiste avant d’approfondir l’examen. 
 
-### <a name="additional-syntax-help"></a>Aide sur la syntaxe supplémentaire :
+Pour exécuter l’analyseur client pour résoudre les problèmes de performances, consultez [Exécuter l’analyseur client sur macOS et Linux](run-analyzer-macos-linux.md).
 
-**-h** \# Aide<br>
-\# Afficher le message d’aide
-
-**Performance** \# Performance<br>
-\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Permet `--length=<seconds>` de spécifier la durée du benchmark.
-
-**-o** \# Sortie<br>
-\# Spécifier le chemin d’accès de destination pour le fichier de résultats
-
-**-nz** \# No-Zip<br>
-\# S’il est défini, un répertoire est créé au lieu d’un fichier d’archive résultant
-
-**-f** \# Force<br>
-\# Remplacer si la sortie existe déjà dans le chemin de destination
-
-### <a name="result-package-contents"></a>Contenu du package de résultats
-
-- report.html
-
-  Description : fichier de sortie HTML principal qui contiendra les résultats et les conseils que le script d’analyseur exécuté sur la machine peut produire.
-
-- mde_diagnostic.zip
-
-  Description : Même sortie de diagnostic générée lors de l’exécution de *la création de diagnostic mdatp* sur [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
-
-- mde.xml
-
-  Description : sortie XML générée lors de l’exécution et utilisée pour générer le fichier de rapport html.
-
-- Processes_information.txt
-
-  Description : contient les détails des processus Microsoft Defender pour point de terminaison en cours d’exécution sur le système.
-
-- Log.txt
-
-  Description : contient les mêmes messages de journal écrits à l’écran pendant la collecte de données.
-
-- Health.txt
-
-  Description : sortie d’intégrité de base qui s’affiche lors de l’exécution de la commande *d’intégrité mdatp* .
-
-- Events.xml
-
-  Description : Fichier XML supplémentaire utilisé par l’analyseur lors de la génération du rapport HTML.
-
-- Audited_info.txt
-
-  Description : détails sur le service audité et les composants associés pour le système d’exploitation [Linux](/microsoft-365/security/defender-endpoint/linux-resources)
-
-- perf_benchmark.tar.gz
-
-  Description : Rapports de test de performances. Vous ne le verrez que si vous utilisez le paramètre de performances.
-
-> [!NOTE]
-> Si, après avoir suivi les étapes ci-dessus, le problème de performances persiste, contactez le support technique pour obtenir des instructions supplémentaires et des mesures d’atténuation.
-
-
+>[!NOTE]
+>Si, après avoir suivi les étapes ci-dessus, le problème de performances persiste, contactez le support client pour obtenir des instructions supplémentaires et une atténuation. 
 
 ## <a name="see-also"></a>Voir aussi
 

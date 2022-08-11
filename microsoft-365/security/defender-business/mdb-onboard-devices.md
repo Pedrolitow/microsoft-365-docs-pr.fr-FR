@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: a692a82af0329c991ca153323552fd2a16c16547
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: e7d884e55aa3f55106097354ce3a8acdd3dc5b17
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071456"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300757"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Intégrer des appareils à Microsoft Defender pour entreprises
 
@@ -81,10 +81,10 @@ Si votre abonnement inclut Intune, vous pouvez intégrer des clients Windows et 
 
 Plusieurs méthodes sont disponibles pour inscrire des appareils dans Intune. Nous vous recommandons d’utiliser l’une des méthodes suivantes :
 
-- [Activer l’inscription automatique Windows](/mem/intune/enrollment/windows-enroll) pour les appareils appartenant à l’entreprise ou gérés par l’entreprise
-- [Demandez aux utilisateurs d’inscrire leurs propres appareils Windows 10/11 dans Intune](/mem/intune/user-help/enroll-windows-10-device)
+- [Activer l’inscription automatique Windows pour les appareils appartenant à l’entreprise ou gérés par l’entreprise](#enable-automatic-enrollment-for-windows-10-and-11)
+- [Demandez aux utilisateurs d’inscrire leurs propres appareils Windows 10/11 dans Intune](#ask-users-enroll-their-own-windows-10-and-11-devices)
 
-#### <a name="to-enable-automatic-enrollment-for-windows-10-and-11"></a>Pour activer l’inscription automatique pour Windows 10 et 11
+#### <a name="enable-automatic-enrollment-for-windows-10-and-11"></a>Activer l’inscription automatique pour Windows 10 et 11
 
 Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent leur compte professionnel à l’appareil. En arrière-plan, l’appareil inscrit et rejoint Azure Active Directory (Azure AD) et est inscrit dans Intune.
 
@@ -110,7 +110,7 @@ Lorsque vous configurez l’inscription automatique, les utilisateurs ajoutent l
 > [!TIP]
 > Pour plus d’informations, consultez [Activer l’inscription automatique Windows](/mem/intune/enrollment/windows-enroll).
 
-#### <a name="to-have-users-enroll-their-own-windows-10-and-11-devices"></a>Pour que les utilisateurs inscrivent leurs propres Windows 10 et 11 appareils
+#### <a name="ask-users-enroll-their-own-windows-10-and-11-devices"></a>Demander aux utilisateurs d’inscrire leurs propres Windows 10 et 11 appareils
 
 1. Regardez la vidéo suivante pour voir comment fonctionne l’inscription :<br/><br/>
 

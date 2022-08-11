@@ -12,19 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez quels clients sont actuellement pris en charge pour le Tableau blanc.
-ms.openlocfilehash: 2cfd74c16dc783bd316e2a5b985c94baa2bed28c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b1e4f83a0df0f03a423d9f7e3821cc53284ddb19
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942447"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306325"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les clients pour le Tableau blanc Microsoft dans les environnements GCC High
 
->[!NOTE]
+> [!NOTE]
 > Ces conseils s’appliquent aux environnements US Government Community Cloud (GCC) High.
 
-Les clients de tableau blanc sont actuellement mis à jour pour prendre en charge One Drive for Business.
+Les clients tableau blanc sont en cours de mise à jour pour prendre en charge OneDrive Entreprise.
 
 ## <a name="clients-supported"></a>Clients pris en charge
 
@@ -44,7 +44,7 @@ Les clients suivants sont prévus pour les prochaines versions de Tableau blanc 
 - Tableau blanc dans les réunions Teams sur surface Hub et salles de réunion Teams
 - Tableau blanc dans les appels 1:1 dans Teams
 
->[!NOTE]
+> [!NOTE]
 > Bien que les utilisateurs puissent installer le client Windows, ils ne pourront pas se connecter tant que le client n’est pas mis à jour.
 
 ## <a name="see-also"></a>Voir aussi

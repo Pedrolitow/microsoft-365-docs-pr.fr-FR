@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 08505410ecc331153f88cbf9df5ffccd7662fc3d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787867"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306281"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -154,7 +154,7 @@ Par exemple, votre organisation dispose d’un site SharePoint dédié pour un p
 
 Lorsque vous créez une stratégie de gestion des risques internes dans l’Assistant stratégie, vous pouvez choisir parmi les priorités suivantes :
 
-- **Sites SharePoint** : toute activité associée avec tous les types de fichiers dans les sites SharePoint définis se voit attribuer un score de risque plus élevé. Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites Share Point prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
+- **Sites SharePoint** : toute activité associée avec tous les types de fichiers dans les sites SharePoint définis se voit attribuer un score de risque plus élevé. Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites SharePoint prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 - **Types d’information sensible** : toute activité associée au contenu qui contient des [types d’information sensible](sensitive-information-type-entity-definitions.md) se voit attribuer un score de risque plus élevé.
 - **Étiquettes de confidentialité** : toute activité associée au contenu sur lequel des [étiquettes de confidentialité](sensitivity-labels.md) sont appliquées se voit attribuer un score de risque plus élevé.
 - **Extensions de fichier** : toute activité associée à du contenu qui a des extensions de fichier spécifiques. Les utilisateurs qui configurent une stratégie de vol/fuite de données qui sélectionnent **les extensions de fichier à hiérarchiser** dans l’Assistant Stratégie peuvent définir jusqu’à 50 extensions de fichier à hiérarchiser dans la stratégie. Les extensions entrées peuvent inclure ou omettre un « . » comme premier caractère de l’extension hiérarchisée.
@@ -303,7 +303,7 @@ Achevez les étapes suivantes pour créer une stratégie :
     - **Extensions de fichier** : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre le « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchiserait les fichiers Python.
 
     >[!NOTE]
-    >Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites Share Point prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
+    >Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites SharePoint prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
 13. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* , vous verrez des options sur les **déclencheurs** de cette page de stratégie pour les événements de déclenchement personnalisés et les indicateurs de stratégie. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez **l’option d’événement de déclenchement de stratégie de protection contre la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante de la stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez **l’utilisateur exécute une option d’événement de déclenchement d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.
@@ -361,7 +361,7 @@ Finalisez les étapes suivantes pour gérer une stratégie existante :
     - **Extensions de fichier** : ajoutez jusqu’à 50 extensions de fichier. Vous pouvez inclure ou omettre le « . » avec l’extension de fichier. Par exemple, *.py* ou *py* hiérarchiserait les fichiers Python.
 
     >[!NOTE]
-    >Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites Share Point prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
+    >Les utilisateurs qui configurent la stratégie et qui sélectionnent des sites SharePoint prioritaires peuvent sélectionner des sites SharePoint auxquels ils ont l’autorisation d’accéder. Si les sites SharePoint ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur disposant des autorisations requises peut sélectionner les sites de la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
 13. Si vous avez sélectionné les *fuites de données générales ou les fuites* de *données par des modèles d’utilisateurs prioritaires* , vous verrez des options sur les **déclencheurs** de cette page de stratégie pour les événements de déclenchement personnalisés et les indicateurs de stratégie. Vous avez le choix de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue pour le scoring d’activité. Si vous sélectionnez **l’option d’événement de déclenchement de stratégie de protection contre la perte de données (DLP),** vous devez sélectionner une stratégie DLP dans la liste déroulante de la stratégie DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez **l’utilisateur exécute une option d’événement de déclenchement d’activité d’exfiltration** , vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement de déclenchement de stratégie.

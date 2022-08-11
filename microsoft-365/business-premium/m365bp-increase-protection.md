@@ -1,5 +1,5 @@
 ---
-title: Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
+title: Protégez-vous contre les programmes malveillants et autres menaces avec Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/09/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 361ddc713a0616cd595ed2794d02db8c38707477
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274702"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300648"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Augmenter la protection contre les menaces pour Microsoft 365 Business Premium
+# <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Protégez-vous contre les programmes malveillants et autres cybermenaces avec Microsoft 365 Business Premium
 
 Dans cet objectif, vous augmentez votre protection contre les menaces avec Microsoft 365 Business Premium. Il est essentiel de protéger votre entreprise contre le hameçonnage, les programmes malveillants et d’autres menaces. Cet article contient également des informations sur :
 
@@ -34,7 +34,7 @@ Dans cet objectif, vous augmentez votre protection contre les menaces avec Micro
 - [Stratégies de sécurité personnalisées](#create-custom-security-policies) que vous pouvez définir en fonction des besoins de votre entreprise.
 - [Comment ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Stratégies d’alerte](#review-your-alert-policies) qui surveillent des fichiers spécifiques et comment ils sont utilisés.
-- [Objectif suivant](#next-objective) (sécurisation des appareils non gérés)
+- [Vos objectifs suivants](#next-objectives).
 
 ## <a name="review-and-apply-preset-security-policies"></a>Examiner et appliquer des stratégies de sécurité prédéfinies
 
@@ -174,7 +174,7 @@ L’image suivante montre certaines des stratégies par défaut incluses dans Mi
 
 ### <a name="how-to-view-alerts"></a>Comment afficher les alertes
 
-En fonction de l'alerte spécifique, vous pouvez consulter vos alertes dans le portail Microsoft 365 Defender ou dans le portail de conformité Microsoft Purview.
+Vous pouvez afficher vos alertes dans le portail Microsoft 365 Defender ou dans le portail de conformité Microsoft Purview.
 
 | Type d’alerte  | Procédure  |
 |---------|---------|
@@ -207,6 +207,11 @@ Vous pouvez empêcher les membres de votre organisation de partager leurs calend
 
 Si vos utilisateurs sont autorisés à partager leurs calendriers, consultez [ces instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) pour savoir comment partager à partir d’Outlook sur le web.
 
-## <a name="next-objective"></a>Objectif suivant
+## <a name="next-objectives"></a>Objectifs suivants
 
-Ok, nous allons maintenant [**configurer ces appareils (BYOD) gérés**](m365bp-devices-overview.md).
+Effectuez les actions suivantes:
+
+- [Configurer des appareils non gérés (BYOD)](m365bp-devices-overview.md)
+- [Protéger tous les e-mails](m365bp-protect-email-overview.md)
+- [Collaborer et partager de manière sécurisée](m365bp-collaborate-share-securely.md)
+- [Configurer et sécuriser des appareils gérés](m365bp-protect-devices.md)

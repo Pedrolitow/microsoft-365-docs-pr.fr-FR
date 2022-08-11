@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: GEA150
 description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: 0d52c85230bb00c82cb924cbfda7ae69114b8bba
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 473e93660d854f953973cbb4590aceabe0e67e36
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111579"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281814"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 pour les entreprises
 
@@ -61,7 +61,7 @@ Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à 
 1. Accédez au <a href="https://www.aka.ms/office365signup" target="_blank">site Produits Microsoft 365</a>.
 2. Sélectionnez le plan auquel vous souhaitez vous inscrire, par exemple **Microsoft 365 Business Standard**, faites défiler la page, puis **sélectionnez Essayer gratuitement pendant 1 mois**.
 3. Sur la page suivante, suivez les étapes pour configurer votre compte.
-4. Le processus d’inscription peut prendre plusieurs minutes. Une fois l’opération\'terminée, vous êtes prêt à démarrer l’Assistant Installation de votre abonnement. Pour plus d’informations sur la configuration de votre abonnement, consultez [Étapes suivantes](#next-steps).
+4. Le processus d’inscription peut prendre plusieurs minutes. Une fois l’opération terminée, vous êtes prêt à démarrer l’Assistant Installation de votre abonnement. Pour plus d’informations sur la configuration de votre abonnement, consultez [Étapes suivantes](#next-steps).
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>Acheter un abonnement depuis votre version d’essai
 
@@ -72,7 +72,7 @@ Si vous souhaitez acheter votre abonnement avant la fin de votre version d’év
 1. Dans le Centre d’administration Microsoft 365, accédez à la page **Facturation**\><a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Dans la page **Vos produits** , recherchez l’abonnement que vous souhaitez acheter.
 3. Dans la section **licences**, sélectionnez **Acheter un abonnement**.
-4. Choisissez un engagement mensuel ou annuel pour votre abonnement, puis sélectionnez **Validation de l'achat**.
+4. Choisissez une fréquence de facturation pour votre abonnement, puis **sélectionnez Extraire**.
 5. Dans la page suivante, vérifiez l’abonnement, puis sélectionnez **Validation de l’achat**.
 6. Sur la page suivante, vérifiez l’adresse de **l’acheteur** et les informations de **facturation** ainsi que **les articles de cette commande**. Si vous souhaitez modifier des informations, sélectionnez **modifier** en regard de la section applicable.
 7. Lorsque vous\'avez terminé, **sélectionnez Accepter le contrat & passer commande**.
@@ -148,7 +148,7 @@ La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer
 > Les cartes de crédit internationales ne sont pas acceptées.
 ::: moniker-end
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous disposez d’un nouveau compte et que vous configurez votre premier abonnement, vous pouvez utiliser les articles d’installation guidés pour vous aider à commencer.
 

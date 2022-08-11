@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca93c64494f163c5d08243c7d797f63bcdfda54e
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 31180e2366faa8e2d5dcbab2dfd4da8ba14fbb5e
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175470"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280418"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -168,7 +168,7 @@ Pour gérer tous les blocs et autorisations, consultez [Ajouter des blocs dans l
    - **Expéditeurs usurpés**
      - **Action**
      - **Type d’usurpation d’identité**
-   - **URL**
+   - **Url**
      - **Action**
      - **N’expirez jamais**
      - **Dernière date de mise à jour**
@@ -428,7 +428,7 @@ Les entrées suivantes ne sont pas valides :
 
 - **Valeurs de domaine manquantes ou non valides** :
 
-  - contoso
+  - Contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
@@ -474,6 +474,7 @@ Une paire de domaines pour un expéditeur usurpé dans la liste d’autorisation
 - **Infrastructure d’envoi** : cette valeur indique la source des messages de l’utilisateur usurpé. Les valeurs valides sont les suivantes :
   - Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source (par exemple, fabrikam.com).
   - Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\>/24 (par exemple, 192.168.100.100/24).
+  - Domaine DKIM vérifié.
 
 Voici quelques exemples de paires de domaines valides pour identifier les expéditeurs usurpés :
 

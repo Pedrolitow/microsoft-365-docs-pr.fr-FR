@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: 19ec7b5e359b32cc38310c51c6674968aecc666f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6a02cd488b3d7a0341c042c24f58329353b94bb7
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630938"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285305"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -94,11 +94,11 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
 
 > [!NOTE]
 >
-> - Les notifications par e-mail ne peuvent être envoyées qu’à des destinataires individuels, et non à des groupes ou des listes de distribution.
+> - Email notifications ne peuvent être envoyées qu’à des destinataires individuels, et non à des groupes ou à des listes de distribution.
 > - Seul le nouveau contenu déclenche une notification par e-mail. La modification du contenu existant déclenche des conseils de stratégie, mais pas des notifications par e-mail.
 > - Les expéditeurs externes ne reçoivent pas de notifications. Les notifications sont envoyées uniquement aux utilisateurs internes.
 
-![Options de notification par e-mail.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![Email options de notification.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
 ### <a name="default-email-notification"></a>Notification par e-mail par défaut
 
@@ -161,7 +161,7 @@ Voici quelques points à comprendre concernant l’utilisation d’un conseil de
 
 - Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
 
-- Si l’action NotifyAllowOverride est définie avec WithoutJustification, WithJustification ou FlasePositives, vérifiez que BlockAccess a la valeur true et que BlockAccessScope a la valeur appropriée. Sinon, un conseil de stratégie apparaît, mais l’utilisateur ne trouve pas d’option pour remplacer l’e-mail par une justification.
+- Si l’action NotifyAllowOverride est définie avec WithoutJustification, WithJustification ou FalsePositives, vérifiez que BlockAccess a la valeur true et que BlockAccessScope a la valeur appropriée. Sinon, un conseil de stratégie apparaît, mais l’utilisateur ne trouve pas d’option pour remplacer l’e-mail par une justification.
 
 #### <a name="availability-of-override"></a>Disponibilité du remplacement
 

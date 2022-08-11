@@ -25,23 +25,23 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments sur des utilisateurs et des groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: a599023db47a46baa0318e026e70627320a6b1f8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f833f5d87981f012af9584fa8fe42b409da8ebf0
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437522"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281660"
 ---
 # <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Déployer des compléments dans le Centre d'administration Microsoft 365
 
-Office compléments vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir [Commencer à utiliser votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). En tant qu’administrateur, vous pouvez déployer Office compléments pour les utilisateurs de votre organisation à l’aide de la fonctionnalité Déploiement centralisé dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Le déploiement centralisé est le moyen le plus recommandé et le plus riche en fonctionnalités pour la plupart des administrateurs de déployer des compléments sur des utilisateurs et des groupes au sein d’une organisation.
+Les compléments Office vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir [Démarrer à l’aide de votre complément Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). En tant qu’administrateur, vous pouvez déployer des compléments Office pour les utilisateurs de votre organisation à l’aide de la fonctionnalité Déploiement centralisé dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Le déploiement centralisé est le moyen le plus recommandé et le plus riche en fonctionnalités pour la plupart des administrateurs de déployer des compléments sur des utilisateurs et des groupes au sein d’une organisation.
 
 Pour plus d’informations sur la façon de déterminer si votre organisation peut prendre en charge le déploiement centralisé, consultez [Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
 
 Pour en savoir plus sur la gestion des compléments après le déploiement, consultez [Gérer les compléments dans le Centre d’administration](manage-addins-in-the-admin-center.md).
   
 > [!NOTE]
->  Pour Word, Excel et PowerPoint utiliser un [catalogue d’applications SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des compléments sur des utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge de SharePoint compléments requis. Pour Outlook utilisez Exchange panneau de configuration pour déployer dans un environnement local sans connexion à Microsoft 365.
+>  Pour Word, Excel et PowerPoint utilisent un catalogue d’applications [SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des compléments sur des utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des compléments SharePoint requis. Pour Outlook, utilisez le panneau de configuration Exchange pour déployer dans un environnement local sans connexion à Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement des compléments Office
 
@@ -59,18 +59,18 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
 
 Avant de commencer, consultez [Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
   
-1. Dans le Centre d’administration, accédez à la page **Paramètres** \> **Compléments**. Si **vous ne** voyez pas la page de complément, accédez à la **page Paramètres** \> **Compléments** d’applications \> **intégrées**.
+1. Dans le Centre d’administration, accédez à la page Des **compléments d’applications** \> **intégrées** \> aux **paramètres**.
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
     > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le[ Centre d’administration. ](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, accédez à la section Déploiement centralisé en accédant à **Paramètres** >  **Applicationsintegrated**. En haut de la page **Applications intégrées** , choisissez **Compléments**.
+    > Vous pouvez également déployer des applications intégrées dans le[ Centre d’administration. ](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, accédez à la section Déploiement centralisé en accédant à **Paramètres des****applications intégrées** > . En haut de la page **Applications intégrées** , choisissez **Compléments**.
 
 3. Sélectionnez une option et suivez les instructions.
   
-4. Si vous avez sélectionné l’option permettant d’ajouter un complément à partir du Office Store, faites votre sélection de complément. </br>
+4. Si vous avez sélectionné l’option permettant d’ajouter un complément à partir de l’Office Store, faites votre sélection de complément. </br>
 
-    Vous pouvez afficher les compléments disponibles par catégories : **Suggéré pour vous**, **Évaluation** ou **Nom**. Seuls les compléments gratuits sont disponibles à partir du Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Après avoir sélectionné un complément, acceptez les conditions générales pour continuer. <br/> 
+    Vous pouvez afficher les compléments disponibles par catégories : **Suggéré pour vous**, **Évaluation** ou **Nom**. Seuls les compléments gratuits sont disponibles à partir de l’Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Après avoir sélectionné un complément, acceptez les conditions générales pour continuer. <br/> 
 
     > [!NOTE]
     > Avec l’option Office Store, les mises à jour et les améliorations sont automatiquement déployées pour les utilisateurs.
@@ -85,7 +85,7 @@ Avant de commencer, consultez [Déterminer si le déploiement centralisé des co
 7. Une graduation verte s’affiche lorsque le complément est déployé. Suivez les instructions sur la page pour tester le complément.
 
     > [!NOTE]
-    > Les utilisateurs devront peut-être relancer Office pour afficher l’icône de complément sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
+    > Les utilisateurs devront peut-être relancer Office pour afficher l’icône de complément dans le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
 
 8. Quand vous avez terminé, sélectionner **Suivant**. Si vous avez déployé sur vous-même, vous pouvez sélectionner **Modifier qui a accès au complément** pour le déployer sur d’autres utilisateurs.
 
@@ -109,7 +109,7 @@ La bonne option pour votre organisation dépend de votre configuration. Toutefoi
   
 ## <a name="more-about-office-add-ins-security"></a>En savoir plus sur la sécurité des compléments Office
 
-Office compléments combinent un fichier manifeste XML qui contient des métadonnées sur le complément, mais qui pointe surtout vers une application web qui contient tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
+Les compléments Office combinent un fichier manifeste XML qui contient des métadonnées sur le complément, mais qui pointe surtout vers une application web qui contient tout le code et la logique. Les fonctionnalités des compléments peuvent varier. Par exemple, les compléments peuvent :
   
 - afficher des données.
 
@@ -117,7 +117,7 @@ Office compléments combinent un fichier manifeste XML qui contient des métadon
 
 - lire et écrire des données vers le document d'un utilisateur et à partir de celui-ci pour fournir une valeur à cet utilisateur.
 
-Pour plus d’informations sur les types et les fonctionnalités des compléments Office, consultez [Office vue d’ensemble de la plateforme de compléments](/office/dev/add-ins/overview/office-add-ins), en particulier la section « Anatomie d’un complément Office ».
+Pour plus d’informations sur les types et les fonctionnalités des compléments Office, consultez [la vue d’ensemble de la plateforme des compléments Office](/office/dev/add-ins/overview/office-add-ins), en particulier la section « Anatomie d’un complément Office ».
   
 Pour interagir avec le document de l'utilisateur, le complément doit déclarer les autorisations dont il a besoin dans le fichier manifeste. Un modèle d'autorisations d'accès d'une API JavaScript à cinq niveaux fournit la base de la confidentialité et de la sécurité pour les utilisateurs des compléments du volet Office. La plupart des compléments de l'Office Store sont au niveau ReadWriteDocument. Presque tous les compléments prennent en charge le niveau ReadDocument au minimum. Pour plus d'informations sur les niveaux d'autorisation, voir [Demande d'autorisations pour l'utilisation d'API dans les compléments de contenu et du volet Office](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
@@ -128,11 +128,11 @@ Les mises à jour des compléments se produisent comme suit :
 - **Complément métier :** dans ce cas, lorsqu'un administrateur a chargé explicitement un manifeste, le complément nécessite que l'administrateur charge un nouveau fichier manifeste pour prendre en charge la modification des métadonnées. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment.
 
     > [!NOTE]
-    > L’administrateur n’a pas besoin de supprimer un complément métier pour effectuer une mise à jour.   Dans la section Compléments, l’administrateur peut simplement cliquer sur le complément métier et choisir le **bouton Mettre à jour** dans le coin inférieur droit. La mise à jour ne fonctionnera que si la version du nouveau complément est supérieure à celle du complément existant.
+    > Administration n’a pas besoin de supprimer un complément métier pour effectuer une mise à jour.   Dans la section Compléments, Administration pouvez simplement cliquer sur le complément métier et choisir le **bouton Mettre à jour** dans le coin inférieur droit. La mise à jour ne fonctionnera que si la version du nouveau complément est supérieure à celle du complément existant.
 
 - **Complément de l'Office Store :** lorsqu'un administrateur a sélectionné un complément à partir de l'Office Store, si un complément est mis à jour dans l'Office Store, le complément sera mis à jour plus tard dans le déploiement centralisé. Le complément est mis à jour au démarrage suivant des applications Office concernées. L'application web peut changer à tout moment.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer les compléments dans le centre d’administration](manage-addins-in-the-admin-center.md) (article)\
 [Créer votre premier complément du volet Office Word](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\

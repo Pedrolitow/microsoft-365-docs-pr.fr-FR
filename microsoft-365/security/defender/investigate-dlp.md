@@ -16,12 +16,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: da53bc682d759de976283aed6502108cd9cda350
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: b0f422175ae16bf1e3c6fb7138c235b79911e338
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106205"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306369"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Examiner les incidents de perte de données avec Microsoft 365 Defender
 
@@ -71,7 +71,7 @@ Avant de commencer, [activez les alertes pour toutes vos stratégies DLP](/micro
 
 6. Affichez le contenu sensible correspondant dans l’onglet **Types d’informations sensibles** et le contenu du fichier sous l’onglet **Source** si vous disposez de l’autorisation requise (voir les détails <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">ici</a>).
 
-7. Vous pouvez également utiliser La chasse avancée pour effectuer des recherches dans les journaux d’audit des utilisateurs, des fichiers et des emplacements de site pour votre investigation. La table **CloudAppEvents** contient tous les journaux d’audit de tous les emplacements tels que Sharepoint, OneDrive, Exchange et Appareils.
+7. Vous pouvez également utiliser La chasse avancée pour effectuer des recherches dans les journaux d’audit des utilisateurs, des fichiers et des emplacements de site pour votre investigation. La table **CloudAppEvents** contient tous les journaux d’audit de tous les emplacements tels que SharePoint, OneDrive, Exchange et Appareils.
 
 8. Vous pouvez également télécharger l’e-mail en sélectionnant **Actions** \> **Télécharger l’e-mail**. 
 

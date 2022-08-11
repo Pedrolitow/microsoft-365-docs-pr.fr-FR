@@ -14,12 +14,12 @@ ms.custom:
 - Adm_ServiceDesc_top
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Découvrez les informations disponibles pour les descriptions des fonctionnalités de Microsoft 365.
-ms.openlocfilehash: 58643705d6fd3cd67b7be0f1aae90a9dc3c4aa66
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 40f0b9379b0a4105f1292d283de2785dc652591d
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748344"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281265"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Description des fonctionnalités Microsoft 365
 
@@ -167,7 +167,7 @@ Avec chaque abonnement Microsoft 365 et Office 365 pour les entreprises, les ent
 
 **Responsabilités de support partagé :** Microsoft comprend que la réception d’un support technique en temps opportun de professionnels qualifiés est un aspect clé des services cloud. Importe également le rôle critique que joue le service informatique du client dans l'assistance de ses utilisateurs.
 
-**Responsabilités de l’administrateur :** Les personnes ayant des rôles d’administrateur Microsoft sont les seules au sein de l’organisation du client autorisées à accéder à la section **Administration** du centre d’administration et à envoyer des demandes de service à Microsoft, en communiquant directement avec Microsoft à propos des demandes de service. Avec Office 365 pour l’entreprise et Microsoft 365 Apps Plan, vous pouvez désigner plusieurs types d’administrateurs qui servent différentes fonctions. Cette description de service utilise le titre générique d'administrateur pour désigner toutes les catégories d'administrateurs. Pour plus d'informations sur les types de rôles d'administrateur, consultez [Affectation de rôles d'administrateur](/office365/admin/add-users/assign-admin-roles).
+**Responsabilités d’administrateur :** Personnes avec des rôles d’administrateur Microsoft sont les seuls au sein de l’organisation du client autorisées à accéder à la section **Administration** du centre d’administration et à envoyer des demandes de service à Microsoft, en communiquant directement avec Microsoft sur les demandes de service. Avec Office 365 pour l’entreprise et Microsoft 365 Apps Plan, vous pouvez désigner plusieurs types d’administrateurs qui servent différentes fonctions. Cette description de service utilise le titre générique d'administrateur pour désigner toutes les catégories d'administrateurs. Pour plus d'informations sur les types de rôles d'administrateur, consultez [Affectation de rôles d'administrateur](/office365/admin/add-users/assign-admin-roles).
 
 **Rôle d’administrateur** : l’administrateur est le contact principal qui configure et prend en charge chaque utilisateur de service. L’administrateur est responsable de l’administration des services et de la maintenance des comptes et fournit la configuration et la configuration du compte d’utilisateur pour permettre aux utilisateurs d’accéder aux services, de résoudre les problèmes de connectivité client, de logiciels clients et d’installation de mobilité, de résoudre les problèmes de disponibilité des services dans l’étendue de contrôle organisationnelle du client, d’utiliser les ressources de support libre-service de Microsoft pour résoudre les problèmes de support. L'administrateur est supposé fournir une assistance initiale aux utilisateurs du client. Toutefois, si l’administrateur ne parvient pas à résoudre les problèmes avec l’aide des ressources de support libre-service, il doit contacter le [support technique](/office365/servicedescriptions/office-365-platform-service-description/support#technical-support).
 
@@ -201,7 +201,7 @@ Microsoft Office 365 fournit l’aide et les ressources de formation suivantes. 
 
 **Communauté:** La communauté Office 365 est une destination unique pour les informations de support autonome. Vous y trouverez les dernières informations pour aider les clients à trouver des réponses à un vaste éventail de questions techniques, de facturation et de service à travers différents forums de support, wikis et blogs. Les forums de support sont gérés et animés par des agents du Support Microsoft. À partir de la page d’accueil Office 365 Communauté, les clients peuvent accéder aux ressources suivantes : Forums, Wikis, Blogs. Pour plus d'informations, visitez la [Communauté Office 365](https://techcommunity.microsoft.com/).
 
-**Forums:** Les forums sont destinés à fournir aux participants de la communauté une destination en ligne où ils peuvent publier des questions de support technique et discuter de sujets liés aux services Office 365. Voici les forums disponibles : Déployer Office 365, services d’intégration d’annuaire, domaines dans Office 365, téléchargements, courrier électronique et calendrier, messagerie instantanée, réunions et conférences, gérer les Office 365, gérer les projets, accès mobile, Office 365 pour Mac, applications Office, sites et partage de documents, documents du Centre de gestion de la confidentialité, Mise à niveau vers Office 365, Yammer
+**Forums:** Les forums sont destinés à fournir aux participants de la communauté une destination en ligne où ils peuvent publier des questions de support technique et discuter de sujets liés aux services Office 365. Voici les forums disponibles : Déployer Office 365, services d’intégration d’annuaire, domaines dans Office 365, téléchargements, Email et calendrier, messagerie instantanée, réunions et conférences, gérer les Office 365, gérer les projets, accès mobile, Office 365 pour Mac, applications Office, sites et partage de documents, documents du Centre de gestion de la confidentialité, Mise à niveau vers Office 365, Yammer
 
 **Wikis:** Les wikis incluent des pages Wiki créées par des employés de Microsoft et des membres de la communauté authentifiés. Ce site collaboratif englobe le contenu collectif le plus récent concernant des scénarios techniques spécifiques de Office 365. Chaque page wiki comprend généralement des liens vers des sites Web, des émissions web, des vidéos de dépannage, des pages de FAQ, des documents et des téléchargements concernant un scénario technique spécifique. Ces ressources proposent un suivi historique de chaque date de révision avec l'alias de l'auteur, et permettent de comparer différentes versions.
 
@@ -229,7 +229,7 @@ Microsoft Office 365 fournit l’aide et les ressources de formation suivantes. 
 
 **Langues pour la résolution des problèmes :** Chinois simplifié, chinois-traditionnel, Français, allemand, italien, japonais, coréen, polonais, portugais-brésil, russe et espagnol.
 
-# <a name="domains-networks-partners-sc-and-sla"></a>[**Domaines, réseaux, partenaires, S&C et SLA**](#tab/Domains)
+# <a name="domains-networking-and-partners"></a>[**Domaines, réseaux et partenaires**](#tab/Domains)
 
 ## <a name="domains"></a>Domaines
 
@@ -302,6 +302,8 @@ En tant que partenaire agréé Microsoft, Microsoft Office 365 vous offre l'oppo
 **Connectez-vous aux clients et aux autres partenaires de la Place de marché Office 365 :** Office 365 Place de marché offre aux clients la possibilité de trouver des services et une expertise partenaires. Pour plus d’informations, consultez [Se connecter avec les clients via l’enregistrement ou le widget suivant](/dynamics365/sales/connect-with-customers) et [Travailler avec d’autres partenaires - Espace partenaires](/partner-center/work-with-other-partners).
 
 **Réseau de partenaires Microsoft :** Microsoft Partner Network s’engage à répondre aux besoins de nos partenaires. Pour rejoindre ce réseau et savoir comment Microsoft satisfait ses partenaires, voir la rubrique [Microsoft Partner Network](https://go.microsoft.com/fwlink/?LinkID=272021&clcid=0x409).
+
+# <a name="privacy-security-rights-and-sla"></a>[**Confidentialité, sécurité, droits et contrat SLA**](#tab/Privacy)
 
 ## <a name="privacy-security-and-transparency"></a>Privacy, security, and transparency
 

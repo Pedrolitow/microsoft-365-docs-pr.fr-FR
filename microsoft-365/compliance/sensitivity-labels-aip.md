@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous utilisez le client d'étiquetage unifié Azure Information Protection (AIP), comprenez les avantages d'utiliser l'étiquetage intégré pour les applications Office plutôt que le module complémentaire AIP.
-ms.openlocfilehash: d7cb00b476e31916139d3cdcf5dd53834bc5025a
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 9f1bf7c7243ce2414c70ad3fd487ab43465b905f
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275931"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306259"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Pourquoi choisir l'étiquetage intégré plutôt que le module complémentaire AIP pour les applications Office
 
@@ -121,7 +121,7 @@ N'oubliez pas que lorsque vous utilisez cette méthode pour désactiver le compl
 
 De nombreuses fonctions d'étiquetage prises en charge par le complément AIP sont désormais prises en charge par l'étiquetage intégré. Pour une liste plus détaillée des capacités, des versions minimales éventuellement nécessaires et des informations de configuration, voir [Gérer les étiquettes de sensibilité dans les applications Office](sensitivity-labels-office-apps.md).
 
-D’autres fonctionnalités sont planifiées et en cours de développement. S’il existe une fonctionnalité spécifique qui vous intéresse, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) et envisagez de rejoindre le [Microsoft Information Protection dans Office Private Preview](https://aka.ms/MIP/PreviewRing).
+D’autres fonctionnalités sont planifiées et en cours de développement. S’il existe une fonctionnalité spécifique qui vous intéresse, consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) et envisagez de rejoindre le [Microsoft Information Protection dans Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
 Utilisez les informations suivantes pour vous aider à identifier si vous utilisez une fonctionnalité du complément AIP qui n'est pas encore prise en charge par l'étiquetage intégré :
 

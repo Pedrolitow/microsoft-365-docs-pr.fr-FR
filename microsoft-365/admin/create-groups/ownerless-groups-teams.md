@@ -1,5 +1,5 @@
 ---
-title: Gérer des groupes et des équipes sans propriétaire Microsoft 365
+title: Gérer les équipes et les groupes Microsoft 365 sans propriétaire
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,17 +20,17 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Découvrez comment inviter automatiquement des membres à devenir propriétaires d’un groupe de Microsoft 365 sans propriétaire ou d’une équipe dans Microsoft Teams.
-ms.openlocfilehash: da332d32bef075c8ca6ecf45fa642ef6d944bea1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Découvrez comment inviter automatiquement des membres à devenir propriétaires d’un groupe Microsoft 365 sans propriétaire ou d’une équipe dans Microsoft Teams.
+ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008638"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280870"
 ---
-# <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Gérer des groupes et des équipes sans propriétaire Microsoft 365
+# <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Gérer les équipes et les groupes Microsoft 365 sans propriétaire
 
-Une équipe dans Microsoft Teams ou un groupe Microsoft 365 et ses services associés peuvent devenir sans propriétaire si le compte d’un propriétaire est supprimé ou désactivé dans Microsoft 365. Les groupes et les équipes nécessitent qu’un propriétaire ajoute ou supprime des membres et modifie les paramètres de groupe.
+Une équipe de Microsoft Teams ou un groupe Microsoft 365 et ses services associés peuvent devenir sans propriétaire si le compte d’un propriétaire est supprimé ou désactivé dans Microsoft 365. Les groupes et les équipes nécessitent qu’un propriétaire ajoute ou supprime des membres et modifie les paramètres de groupe.
 
 Un Administrateur général peut créer une stratégie qui demande automatiquement aux membres les plus actifs d’un groupe ou d’une équipe sans propriétaire s’ils acceptent la propriété. Lorsqu’un membre accepte l’invitation à devenir propriétaire, l’action est consignée dans le journal d’audit du portail de conformité. Les clients ne sont jamais invités à être propriétaires.
 
@@ -41,11 +41,11 @@ Lors de la création de la stratégie, vous pouvez spécifier :
 - Quels groupes ou équipes font partie de la stratégie
 
 > [!Note]
-> L’utilisation d’un groupe de sécurité pour limiter qui peut être invité à être propriétaire nécessite que vous possédiez une licence Azure AD Premium pour chaque membre Microsoft 365 groupe de votre organisation.
+> L’utilisation d’un groupe de sécurité pour limiter qui peut être invité à être propriétaire nécessite que vous possédiez une licence Azure AD Premium pour chaque membre du groupe Microsoft 365 de votre organisation.
 
 Pour définir une stratégie de groupe ou d’équipe sans propriétaire
 
-1. Dans le Centre d’administration, accédez à **Afficher tous les** \> **paramètres** **de l’organisation Paramètres** \> et sous <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">l’onglet **Services**</a>, sélectionnez **Groupes Microsoft 365**.
+1. Dans le centre d’administration, accédez à **Afficher tous les** \> **paramètres** \> de **l’organisation des paramètres** et, sous l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>, sélectionnez **Groupes Microsoft 365**.
 
 1. Activez la case à cocher **Quand il n’y a pas de propriétaire, envoyez un e-mail et demandez aux membres du groupe actif de devenir propriétaires** .
 
@@ -55,7 +55,7 @@ Pour définir une stratégie de groupe ou d’équipe sans propriétaire
 
 1. Tapez le nombre de membres actifs que vous souhaitez notifier, puis sélectionnez le nombre de semaines pour envoyer la notification. (La liste de notifications est créée lors de la première notification et ne change pas.) Sélectionnez **Suivant**.
 
-1. Sur le *Qui est cet e-mail provenant de la* page, sélectionnez un expéditeur pour l’e-mail, puis sélectionnez **Suivant**.
+1. Dans la page *Qui est cet e-mail provenant de* la page, sélectionnez un expéditeur pour l’e-mail, puis sélectionnez **Suivant**. Notez que les boîtes aux lettres partagées ne sont pas prises en charge. L’expéditeur doit être une boîte aux lettres d’utilisateur ou une boîte aux lettres de groupe.
 
 1. Dans la page *Objet et message* , personnalisez l’e-mail et incluez éventuellement une **URL de ligne directrice** de stratégie, puis sélectionnez **Suivant**.
 

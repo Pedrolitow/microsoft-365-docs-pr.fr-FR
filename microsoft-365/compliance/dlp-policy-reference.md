@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056567"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306699"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -43,7 +43,7 @@ Ce tableau répertorie tous les modèles de stratégie et les types d’informat
 
 mise à jour : 23/06/2021
 
-|Catégorie|Modèle | S' ASSEOIR |
+|Catégorie|Modèle | S' asseoir |
 |---------|---------|---------|
 |Financier| Données financières en Australie| - [Code SWIFT](sit-defn-swift-code.md) </br> -  [Numéro de fichier fiscal en Australie](sit-defn-australia-tax-file-number.md) </br> - [Numéro de compte bancaire en Australie](sit-defn-australia-bank-account-number.md) </br> - [Numéro de carte de crédit](sit-defn-credit-card-number.md)|
 |Financier| Données financières du Canada |- [Numéro de carte de crédit](sit-defn-credit-card-number.md) </br> - [Numéro de compte bancaire au Canada](sit-defn-canada-bank-account-number.md)|
@@ -137,7 +137,7 @@ Les stratégies DLP détectent les éléments sensibles en les mettant en corres
 |Power BI|Oui | Oui| Non|
 
 > [!NOTE]
-> DLP prend en charge (en préversion) l’utilisation de classifieurs pouvant être formés comme condition pour détecter les documents sensibles. Le contenu peut être défini par des classifieurs pouvant être formés dans des Exchange Online, des sites Sharepoint Online, des comptes OneDrive Entreprise, des canaux de conversation et des appareils Teams. Pour plus d’informations, consultez [Classifieurs pouvant être formés](classifier-learn-about.md).
+> DLP prend en charge (en préversion) l’utilisation de classifieurs pouvant être formés comme condition pour détecter les documents sensibles. Le contenu peut être défini par des classifieurs pouvant être formés dans des Exchange Online, des sites SharePoint Online, des comptes OneDrive Entreprise, des canaux de conversation et des appareils Teams. Pour plus d’informations, consultez [Classifieurs pouvant être formés](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP prend en charge la détection des étiquettes de confidentialité sur les e-mails et les pièces jointes. Pour plus d’informations, consultez [Utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -417,7 +417,7 @@ Les actions disponibles dans une règle dépendent des emplacements sélectionn�
 #### <a name="devices-actions"></a>Actions des appareils
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (préversion) Auditer ou limiter les activités lorsque les utilisateurs accèdent à des sites web sensibles dans le navigateur Microsoft Edge sur les appareils Windows. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 
+- (préversion) Auditez ou limitez les activités lorsque les utilisateurs accèdent à des sites web sensibles dans le navigateur Microsoft Edge sur les appareils Windows. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 
 - Auditer ou restreindre les activités sur les appareils Windows
 
 Pour l’utiliser `Audit or restrict activities on Windows devices`, vous devez configurer des options dans **les paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .

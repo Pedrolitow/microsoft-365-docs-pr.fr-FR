@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949500"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306427"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -55,7 +56,7 @@ Il est important de comprendre les prérequis suivants avant de créer des indic
 - Pris en charge sur les appareils avec Windows 10, version 1703 ou ultérieure, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
     
    > [!NOTE]
-   > Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [les serveurs Windows intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. Les indicateurs de fichier personnalisés avec les actions Autoriser, Bloquer et Corriger sont désormais également disponibles dans la [préversion publique pour les fonctionnalités améliorées du moteur anti-programme malveillant pour macOS et Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions fournies dans [les serveurs Windows intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. Les indicateurs de fichier personnalisés avec les actions Autoriser, Bloquer et Corriger sont désormais également disponibles dans les [fonctionnalités améliorées du moteur anti-programme malveillant pour macOS et Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - Pour commencer à bloquer des fichiers, vous devez [d’abord activer la fonctionnalité « bloquer ou autoriser »](advanced-features.md) dans Paramètres.
 
@@ -132,7 +133,7 @@ Timestamp > ago(30d)
 
 Pour plus d’informations sur la chasse avancée, consultez [La chasse proactive contre les menaces avec la chasse avancée](advanced-hunting-overview.md).
 
-Vous trouverez ci-dessous des noms de thread supplémentaires qui peuvent être utilisés dans l’exemple de requête ci-dessus :
+Voici d’autres noms de threads qui peuvent être utilisés dans l’exemple de requête ci-dessus :
 
 Fichiers :
 
@@ -149,7 +150,7 @@ L’activité d’action de réponse peut également être visible dans la chron
 
 Le conflit de gestion des stratégies Cert et File IoC suit l’ordre ci-dessous :
 
-- Si le fichier n’est pas autorisé par Windows Defender Application Control et AppLocker appliquent la stratégie/stratégies de mode, **bloquez**
+- Si le fichier n’est pas autorisé par Windows Defender Contrôle d’application et AppLocker appliquent une stratégie/stratégies de mode, **bloquez**
 - Sinon, si le fichier est autorisé par l’exclusion de l’Antivirus Microsoft Defender, **autorisez**
 - Sinon, si le fichier est bloqué ou averti par un bloc ou avertit l’IoC du fichier, **bloquez/avertissez**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier d’autorisation, **autorisez**

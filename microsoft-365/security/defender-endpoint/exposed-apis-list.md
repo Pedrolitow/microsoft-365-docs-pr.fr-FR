@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe43d4df71b0801ae89149797068873577c77c38
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9b8009af5bd88c1dfd37dc7e8297e3c7e05f1356
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174676"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280760"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "65174676"
 - [Microsoft Defender pour les PME](../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour les PME aux plans Microsoft Defender pour point de terminaison 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+> Les fonctionnalités de chasse avancées ne sont pas incluses dans Defender entreprise. Consultez [Comparer les Microsoft Defender pour entreprises à Microsoft Defender pour point de terminaison plans 1 et 2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -65,22 +65,23 @@ En savoir plus sur les entités prises en charge individuelles dans lesquelles v
 
 Rubrique | Description
 :---|:---
-[Repérage avancé](run-advanced-query-api.md) | Exécutez des requêtes à partir de l’API.<p>*Les fonctionnalités de chasse avancées ne sont pas incluses dans [Defender entreprise](../defender-business/mdb-overview.md)*.
-[Méthodes et propriétés de l’alerte](alerts.md) | Exécutez des appels d’API tels que \- obtenir des alertes, créer une alerte, mettre à jour l’alerte, etc.
-[Exporter des méthodes et des propriétés d’évaluation par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API pour collecter des évaluations des vulnérabilités par appareil, par exemple : \- exporter l’évaluation de la configuration sécurisée, exporter l’évaluation de l’inventaire logiciel, exporter l’évaluation des vulnérabilités logicielles et exporter delta des vulnérabilités logicielles.
-[Méthodes et propriétés d’investigation automatisée](investigation.md) | Exécutez des appels d’API tels que \- la collecte get d’Investigation.
-[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d’API tels que \- l’obtention d’appareils liés au domaine, de statistiques de domaine, etc.
-[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que \- l’obtention d’informations sur les fichiers, les alertes liées aux fichiers, les appareils liés aux fichiers et les statistiques de fichier.
-[Méthodes et propriétés des indicateurs](ti-indicator.md) | Exécutez un appel d’API tel que \- obtenir des indicateurs, créer un indicateur et supprimer des indicateurs.
-[Obtenir des alertes liées à l’IP](get-ip-related-alerts.md) | Exécutez des appels d’API tels que \- l’obtention d’alertes liées à l’adresse IP et l’obtention de statistiques IP.
-[Méthodes et propriétés de l’ordinateur](machine.md) | Exécutez des appels d’API tels que \- l’obtention d’appareils, l’obtention d’appareils par ID, des informations sur les utilisateurs connectés, la modification des étiquettes, etc.
-[Méthodes et propriétés de l’action de l’ordinateur](machineaction.md) | Exécutez un appel d’API tel que \- Isolation, Exécuter une analyse antivirus et bien plus encore.
-[Méthodes et propriétés de l’action d'amélioration](recommendation.md) | Exécutez des appels d’API, comme \- obtenir une recommandation par ID.
-[Méthodes et propriétés des activités de correction](get-remediation-methods-properties.md) | Exécutez un appel d’API comme \- obtenir toutes les tâches de correction, obtenir la tâche de correction des appareils exposés et obtenir une tâche de correction par ID.
-[Méthodes et propriétés du score](score.md) | Exécutez des appels d’API tels que \- obtenir un score d’exposition ou obtenir le score de sécurité de l’appareil.
-[Méthodes et propriétés du logiciel](software.md) | Exécutez des appels d’API tels que \- des vulnérabilités de liste par logiciel.
-[Méthodes de l’utilisateur](user.md) | Exécutez des appels d’API tels que \- l’obtention d’alertes liées à l’utilisateur et d’appareils liés à l’utilisateur.
-[Méthodes et propriétés de la vulnérabilité](vulnerability.md) | Exécutez des appels d’API tels que \- la liste des appareils par vulnérabilité.
+[**Méthodes de chasse avancées**](run-advanced-query-api.md) | Exécutez des requêtes à partir de l’API.
+[Méthodes et propriétés **d’alerte**](alerts.md) | Exécutez des appels d’API tels que \- obtenir des alertes, créer une alerte, mettre à jour l’alerte, etc.
+[Exporter des méthodes et des propriétés **d’évaluation** par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API pour collecter des évaluations des vulnérabilités par appareil, par exemple : \- exporter l’évaluation de la configuration sécurisée, exporter l’évaluation de l’inventaire logiciel, exporter l’évaluation des vulnérabilités logicielles et exporter delta des vulnérabilités logicielles.
+[Méthodes et propriétés **d’investigation automatisées**](investigation.md) | Exécutez des appels d’API tels que \- la collecte get d’Investigation.
+[Exporter les propriétés et les méthodes d’intégrité des appareils](device-health-api-methods-properties.md) | Exécutez des appels d’API tels que - GET /api/public/avdeviceshealth.
+[Alertes liées au **domaine**](get-domain-related-alerts.md) | Exécutez des appels d’API tels que \- l’obtention d’appareils liés au domaine, de statistiques de domaine, etc.
+[Méthodes et propriétés **de fichier**](files.md) | Exécutez des appels d’API tels que \- l’obtention d’informations sur les fichiers, les alertes liées aux fichiers, les appareils liés aux fichiers et les statistiques de fichier.
+[**Méthodes et propriétés des indicateurs**](ti-indicator.md) | Exécutez un appel d’API tel que \- obtenir des indicateurs, créer un indicateur et supprimer des indicateurs.
+[**Alertes liées à l’adresse IP**](get-ip-related-alerts.md) | Exécutez des appels d’API tels que \- l’obtention d’alertes liées à l’adresse IP et l’obtention de statistiques IP.
+[**Méthodes** et propriétés de l’ordinateur](machine.md) | Exécutez des appels d’API tels que \- l’obtention d’appareils, l’obtention d’appareils par ID, des informations sur les utilisateurs connectés, la modification des étiquettes, etc.
+[**Propriétés et méthodes d’action** de machine](machineaction.md) | Exécutez un appel d’API tel que \- Isolation, Exécuter une analyse antivirus et bien plus encore.
+[**Méthodes** et propriétés de recommandation](recommendation.md) | Exécutez des appels d’API, comme \- obtenir une recommandation par ID.
+[Méthodes et propriétés **de l’activité de correction**](get-remediation-methods-properties.md) | Exécutez un appel d’API comme \- obtenir toutes les tâches de correction, obtenir la tâche de correction des appareils exposés et obtenir une tâche de correction par ID.
+[**Méthodes** et propriétés de score](score.md) | Exécutez des appels d’API tels que \- obtenir un score d’exposition ou obtenir le score de sécurité de l’appareil.
+[Méthodes et propriétés **logicielles**](software.md) | Exécutez des appels d’API tels que \- des vulnérabilités de liste par logiciel.
+[**Méthodes** et propriétés utilisateur](user.md) | Exécutez des appels d’API tels que \- l’obtention d’alertes liées à l’utilisateur et d’appareils liés à l’utilisateur.
+[Méthodes et propriétés **de vulnérabilité**](vulnerability.md) | Exécutez des appels d’API tels que \- la liste des appareils par vulnérabilité.
 
 ## <a name="see-also"></a>Voir aussi
 

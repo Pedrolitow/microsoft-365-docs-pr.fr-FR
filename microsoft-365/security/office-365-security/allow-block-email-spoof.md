@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à autoriser ou bloquer les e-mails et les entrées d’expéditeur usurpés dans la liste d’autorisation/de blocage du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: b59a59367a047019a9c397c864662bceda06c240
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175001"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281726"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Autoriser ou bloquer des courriers utilisant la liste Autoriser/Bloquer des clients
 
@@ -169,6 +169,9 @@ Par exemple, vous ajoutez une entrée d’autorisation pour la paire de domaines
 - **Infrastructure** : tms.mx.com
 
 Seuls les messages de cette paire d’infrastructure de domaine _et_ d’envoi sont autorisés à usurper. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages des expéditeurs d’autres domaines provenant de tms.mx.com sont vérifiés par l’intelligence par usurpation d’identité.
+
+> [!NOTE]
+> Vous ne pouvez pas utiliser de caractères génériques dans l’infrastructure d’envoi.
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>Créer des entrées d’expéditeur usurpées bloquées
 
