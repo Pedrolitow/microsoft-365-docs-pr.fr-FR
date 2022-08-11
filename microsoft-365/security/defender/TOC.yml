@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Règles de manipulation de la boîte de réception suspectes
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Connecteurs d’échange malveillants
+                      href: alert-grading-for-malicious-exchange-connectors.md
                 - name: Utilisateurs
                   href: investigate-users.md
             - name: Playbooks de réponse aux incidents

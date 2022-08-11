@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la sécurité pour Microsoft 365 Business Premium qui fournit des outils de cybersécurité tels que l’authentification multifacteur que vous pouvez utiliser pour empêcher les cyberattaques.
-ms.openlocfilehash: a51a49ff57458734a883ac8fa34142bd1c4bf2d3
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a6302f38b70ed634237a83751d0026d2ef160695
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276482"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285162"
 ---
 # <a name="bump-up-security"></a>Augmenter la sécurité
 
@@ -36,7 +36,7 @@ Restez vigilant : la sécurité et la fiabilité du système s’appuient sur vo
 
 Vos objectifs sont les suivants :
 
-- [Activez les paramètres de sécurité par défaut](m365bp-conditional-access.md) (MFA).
+- [Activez les paramètres de sécurité par défaut (MFA).](m365bp-conditional-access.md)
 - [Protéger vos comptes d’administrateur](m365bp-protect-admin-accounts.md).
 - [Se protéger contre les programmes malveillants et les autres menaces](m365bp-increase-protection.md).
 

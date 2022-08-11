@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
+ms.date: 08/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 search.appverid:
@@ -16,12 +17,12 @@ search.appverid:
 - MET150
 description: Tirez le meilleur parti de votre essai de Defender pour entreprise grâce à ce guide. Installez-vous rapidement et commencez à utiliser vos nouvelles capacités de sécurité.
 ms.custom: trial-playbook
-ms.openlocfilehash: 16843ef3dcb2efe36f9102001fe5579e920287b4
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 3b588dba1ee1a3df5719ece9c2db50e76acf36b2
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66992123"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309480"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Manuel d'essai : Microsoft Defender pour entreprise
 
@@ -109,10 +110,10 @@ Si vous avez utilisé l'assistant d'installation mais que vous devez embarquer p
 
    | Type d’appareil | Méthodes d'embarquement |
    |:---|:---|
-   | [Clients Windows](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :<ul><li>Script local (pour l'intégration manuelle des appareils dans le portail Microsoft 365 Defender)</li><li>Stratégie de groupe (si vous utilisez déjà la stratégie de groupe et préférez cette méthode)</li><li>Microsoft Intune (*recommandé* ; inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour le Mac embarqué :<ul><li>Script local pour Mac (*recommandé*)</li><li>Microsoft Intune pour Mac (Intune est inclus dans [Microsoft 365 Business Premium](../../business-premium/index.md))</li></ul><p>Nous vous recommandons d'utiliser un script local pour embarquer le Mac. Bien que vous puissiez [configurer l'inscription des appareils Mac dans Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer Mac à Defender pour entreprise. |
+   | [Clients Windows](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour intégrer des appareils clients Windows à Defender pour entreprises :<ul><li>Script local (pour l'intégration manuelle des appareils dans le portail Microsoft 365 Defender)</li><li>Stratégie de groupe (si vous utilisez déjà la stratégie de groupe et préférez cette méthode)</li><li>Microsoft Intune (si vous utilisez déjà Intune et préférez continuer à l’utiliser)</li></ul> |
+   | [Mac](mdb-onboard-devices.md) | Choisissez l'une des options suivantes pour le Mac embarqué :<ul><li>Script local pour Mac (*recommandé*)</li><li>Microsoft Intune pour Mac </li></ul><p>Nous vous recommandons d'utiliser un script local pour embarquer le Mac. Bien que vous puissiez [configurer l'inscription des appareils Mac dans Intune](/mem/intune/enrollment/macos-enroll), le script local est la méthode la plus simple pour intégrer Mac à Defender pour entreprise. |
    | Serveurs Windows et Linux | *La possibilité d'embarquer une instance de Windows Server ou de Linux Server est actuellement en phase d'essai et nécessite une licence supplémentaire.*. Voir les articles suivants pour en savoir plus : <ul><li>[Defender pour les besoins de l'entreprise](mdb-requirements.md)</li><li>[Transférer les appareils vers Defender pour entreprise](mdb-onboard-devices.md)</li></ul> |
-   | [Appareils mobiles](mdb-onboard-devices.md) | Vous avez besoin de Microsoft Intune pour embarquer des appareils mobiles, tels que les appareils Android et iOS/iPadOS. Si vous disposez de [Microsoft 365 Business Premium](../../business-premium/index.md), Intune fait partie de votre abonnement. Intune peut également être acheté séparément. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :<ul><li>[Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)</li><li>[Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)</li></ul> |
+   | [Appareils mobiles](mdb-onboard-devices.md) | Utilisez Microsoft Intune pour intégrer des appareils mobiles, tels que des appareils Android et iOS/iPadOS. Voir les ressources suivantes pour obtenir de l'aide pour inscrire ces appareils dans Intune :<ul><li>[Inscrire des appareils Android](/mem/intune/enrollment/android-enroll)</li><li>[Inscrire les appareils iOS ou iPadOS](/mem/intune/enrollment/ios-enroll)</li></ul> |
 
 5. **[Afficher et configurer vos stratégies de sécurité](mdb-configure-security-settings.md)**. Après avoir intégré les appareils de votre entreprise à Defender pour entreprise, l'étape suivante consiste à afficher et à modifier vos stratégies et paramètres de sécurité. Defender pour entreprise comprend des stratégies de sécurité préconfigurées qui utilisent des paramètres recommandés. Mais vous pouvez modifier les paramètres en fonction des besoins de votre entreprise.
 
