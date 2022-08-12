@@ -7,24 +7,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/04/2022
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1c1921b368ce404d5065854ae9f71fe8713dd9d4
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275667"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280716"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -91,6 +91,40 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Juillet-2022 (Plateforme : 4.18.2205.TBD | Moteur : 1.1.19500.2)</summary>
+
+*Cette section contient des informations de pré-version qui sont toujours en cours de développement. Des mises à jour, y compris le numéro de version final de la mise à jour de sécurité, sont à prévoir.*
+
+&ensp;Version de la mise à jour du renseignement de sécurité : *bientôt disponible*<br/>
+&ensp;Date de publication : **8 août 2022**<br/>
+&ensp;Plateforme : *4.18.2205.TBD*<br/>
+&ensp;Moteur : **1.1.19500.2**<br/>
+&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+
+Version du moteur : 1.1.19300.2<br/>
+Version de la mise à jour du renseignement de sécurité : *bientôt disponible*<br/>
+
+### <a name="whats-new"></a>Nouveautés
+
+- Amélioration des performances pour le délai de [veille hybride](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) lorsque l’Antivirus Microsoft Defender est actif 
+- Correction du comportement de détection du client lié aux [indicateurs de compromission des certificats personnalisés](indicator-certificates.md) 
+- Amélioration des performances de la mise en cache [AMSI (AntiMalware Scan Interface)](/windows/win32/amsi/antimalware-scan-interface-portal) 
+- Amélioration de la détection et de la correction pour les macros associées à [Microsoft Visual Basic pour Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) 
+- Amélioration du traitement des exclusions AMSI 
+- Correction de la détection des interblocages dans le traitement des règles HIPS (Host Intrusion Prevention System). (Pour plus d’informations sur HIPS et Defender pour point de terminaison, consultez [Migration d’un HIPS tiers vers des règles ASR](migrating-asr-rules.md).) 
+- Correction de la fuite de mémoire pour laquelle `MsMpEng.exe` consommait des octets privés. (Si une utilisation élevée de l’UC est également un problème, consultez [Utilisation élevée du processeur en raison de l’antivirus Microsoft Defender](troubleshooting-mode-scenarios.md)) 
+- Correction d’un blocage avec [surveillance du comportement](configure-real-time-protection-microsoft-defender-antivirus.md) 
+- Amélioration de la validation de l’approbation 
+- Résolution du problème d’incident du moteur sur les plateformes d’exploitation héritées 
+- Mises à jour de l’Analyseur de performance v3 : Ajout de la prise en charge du chemin d'accès supérieur, des informations sur le saut d'analyse et de l'analyse à la demande. Consultez [Analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md). 
+
+
+### <a name="known-issues"></a>Problèmes connus
+
+Aucun problème connu
+
+<br/><br/>
+</details><details>
 <summary>Mai 2022 (Plateforme : 4.18.2205.7 | Moteur : 1.1.19300.2)</summary>
 
 &ensp;version de mise à jour du renseignement de sécurité : **1.369.88.0**<br/>
@@ -165,14 +199,21 @@ Version de mise à jour de la veille de sécurité : 1.361.1449.0<br/>
 - Potentiel d’utilisation élevée des ressources (UC et/ou mémoire). Consultez la mise à jour de la plateforme 4.18.2203.5 et du moteur 1.1.19200.5 pour mars 2022.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
+
+Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
+
+<details>
 <summary>Février 2022 (Plateforme : 4.18.2202.4 | Moteur : 1.1.19000.8)</summary>
 
 &ensp;Version de mise à jour de la veille de sécurité : **1.361.14.0**<br/>
 &ensp;Publiée : **14 mars 2022**<br/>
 &ensp;Plateforme : **4.18.2202.4**<br/>
 &ensp;Moteur : **1.1.19000.8**<br/>
-&ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
+&ensp;Phase de support : **support technique de mise à niveau (uniquement)**<br/>
 
 Version du moteur : 1.1.19000.8 <br/>
 Version de mise à jour de la veille de sécurité : 1.361.14.0 <br/>
@@ -194,14 +235,7 @@ Version de mise à jour de la veille de sécurité : 1.361.14.0 <br/>
 Aucun problème connu
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédentes : prise en charge de la mise à niveau technique uniquement
-
-Une fois qu’une nouvelle version de package est publiée, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
-
-<details>
+</details><details>
 <summary>Janvier 2022 (Plateforme : 4.18.2201.10 | Moteur : 1.1.18900.2)</summary>
 
 &ensp;Version de mise à jour de la veille de sécurité : **1.357.8.0**<br/>

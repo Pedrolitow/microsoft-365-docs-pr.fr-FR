@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 Business Premium vous aide à gérer votre entreprise de manière plus sûre grâce à la productivité et à la sécurité.
-ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037685"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300626"
 ---
-# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>Productivité et sécurité pour les petites et moyennes entreprises 
+# <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Productivité et sécurité pour les petites et moyennes entreprises 
 
 Microsoft 365 Business Premium est une solution de sécurité et de productivité cloud complète conçue et conçue pour les petites et moyennes entreprises (1 à 300 employés). Avec Microsoft 365 Business Premium, vous pouvez :
 
