@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation]()
 #### [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)
 
@@ -521,6 +518,10 @@
 ####### [Répertorier les examens](get-investigation-collection.md)
 ####### [Obtenir l’examen](get-investigation-object.md)
 ####### [Démarrer l’examen](initiate-autoir-investigation.md)
+
+###### [Intégrité du périphérique]()
+####### [Méthodes et propriétés de l'état de santé de l'appareil d'exportation](device-health-api-methods-properties.md)
+####### [Exportation du rapport de santé antivirus de l'appareil](device-health-export-antivirus-health-report-api.md)
 
 ###### [Inventaire des certificats]()
 ####### [Évaluation de l'inventaire des certificats d'exportation](export-certificate-inventory-assessment.md)

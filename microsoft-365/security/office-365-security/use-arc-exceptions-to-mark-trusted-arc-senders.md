@@ -18,12 +18,12 @@ ms.custom:
 description: La chaîne de réception authentifiée (ARC) est une authentification par e-mail qui tente de préserver les résultats de l’authentification sur les appareils et les flux de courriers indirects qui se présentent entre l’expéditeur et le destinataire. Voici comment créer des exceptions pour vos expéditeurs ARC approuvés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107302"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306633"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Créer une liste d’expéditeurs ARC approuvés pour approuver des flux de courriers indirects *légitimes*
 
@@ -59,9 +59,9 @@ En ajoutant un sealer ARC approuvé, Office 365 validera et approuvera les résu
 
 Les sealers ARC approuvés dans le portail Microsoft 365 Defender affichent tous les sealers ARC reconnus et ajoutés à votre client.
 
-**Pour ajouter un nouveau sealer Trusted ARC dans le portail d’administration :**
+**Pour ajouter un nouveau sceau de confiance ARC dans le portail Microsoft 365 Defender :**
 
-1. Accédez à la page [des paramètres d’authentification par e-mail](https://security.microsoft.com/authentication?viewid=ARC) .
+1. Dans le portail Microsoft 365 Defender, à l'adresse , <https://security.microsoft.com>accédez **aux stratégies et règles de messagerie et de collaboration** \> **stratégies de menace** \> **paramètres d'authentification** \> **de la messagerie** dans **la** section\> **Règles ARC** . Pour accéder directement à la page ARC, utilisez [les paramètres d'authentification par e-mail](https://security.microsoft.com/authentication?viewid=ARC).
 
 2. Si c’est la première fois que vous ajoutez un sealer ARC approuvé, cliquez sur le bouton Ajouter.
 3. Ajoutez des sealers ARC approuvés dans la zone de texte affichée.

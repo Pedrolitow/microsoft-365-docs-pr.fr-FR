@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037729"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300955"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -89,7 +89,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
     - Si vous avez choisi **Statique :** dans la **page** Choisir les emplacements à appliquer à la stratégie, sélectionnez un ou plusieurs emplacements pour Teams :
         - **Message de canal d'équipe** : messages provenant de chats de canal standard et partagé, et de réunions de canal standard et partagé, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de politique.
         - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
-        - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé.
+        - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé. Si vous sélectionnez cette option, vous ne pouvez pas sélectionner les autres emplacements Teams dans la même stratégie de conservation.
         
        Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](retention-settings.md#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
