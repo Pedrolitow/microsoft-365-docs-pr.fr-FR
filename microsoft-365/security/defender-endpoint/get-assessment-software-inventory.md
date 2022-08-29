@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07535a2dd433bee2b2d92b206efa2b964212d74d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276763"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344526"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
@@ -94,20 +94,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
-DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceId|chaîne|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|Preuve de disque indiquant que le produit est installé sur l’appareil.|[ « C:\\ Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe » ]
 EndOfSupportDate|string|Date de fin de la prise en charge de ce logiciel.|2020-12-30
 EndOfSupportStatus|string|Fin de l’état du support. Peut contenir ces valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Future EOS Software.|EOS à venir
 ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil|3
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les systèmes d’exploitation et plateformes pris en charge par tvm.|Windows 10 et Windows 11
+OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez Gestion des vulnérabilités Microsoft Defender systèmes d’exploitation et plateformes pris en charge.|Windows 10 et Windows 11
 RbacGroupName|chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RegistryPaths|Array[string]|Preuve du Registre indiquant que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight » ]
 SoftwareFirstSeenTimestamp|string|La première fois que ce logiciel a été vu sur l’appareil.|2019-04-07 02:06:47
 SoftwareName|string|Nom du produit logiciel.|Silverlight
-SoftwareVendor|string|Nom du fournisseur de logiciels.|microsoft
-SoftwareVersion|string|Numéro de version du produit logiciel.|81.0.4044.138
+SoftwareVendor|chaîne|Nom du fournisseur de logiciels.|microsoft
+SoftwareVersion|chaîne|Numéro de version du produit logiciel.|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 Exemples
@@ -289,9 +289,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 - [Exporter des méthodes et des propriétés d’évaluation par appareil](get-assessment-methods-properties.md)
 - [Exporter l’évaluation de la configuration sécurisée par appareil](get-assessment-secure-config.md)
 - [Exporter l’évaluation des vulnérabilités logicielles par appareil](get-assessment-software-vulnerabilities.md)
-- [Exporter l’évaluation de l’inventaire logiciel de code non produit](get-assessment-non-cpe-software-inventory.md)
+- [Exporter l’évaluation de l’inventaire logiciel de code non-produit](get-assessment-non-cpe-software-inventory.md)
 
 Autres éléments connexes
 
-- [Gestion des vulnérabilités & des menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
+- [Gestion des vulnérabilités Microsoft Defender](next-gen-threat-and-vuln-mgt.md)
 - [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

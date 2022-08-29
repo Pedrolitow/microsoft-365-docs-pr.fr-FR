@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 2bcffb08fa45d486a091f02c7bd1813c3dad5b57
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: ea44b6f9bddea605cf20254124c634d9a4b8fe3b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992177"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384295"
 ---
 # <a name="provide-initial-and-ongoing-training-to-help-onboard-your-frontline-workers"></a>Fournir une formation initiale et continue pour vous aider à intégrer vos employés de première ligne
 
@@ -81,6 +81,8 @@ Si vous disposez d’une licence Viva Suite ou Viva Learning et que votre organi
 Assurez-vous que votre équipe de première ligne sait quelle formation Viva Learning est disponible et requise pour elle.
 
 Les responsables peuvent [recommander du contenu d’apprentissage](https://support.microsoft.com/office/recommend-and-manage-content-in-viva-learning-77f9dcbf-41a8-4b19-b4d1-b99c406f37b8) à leurs équipes pour s’assurer que les formations requises sont terminées.
+
+![Capture d’écran du tableau de bord Viva Connections avec une carte Apprentissage Viva.](media/viva-learning-card-mobile.png) 
 
 Les spécialistes des communications d’entreprise peuvent utiliser [Viva Connections](/viva/connections/viva-connections-overview) pour distribuer un billet d’actualités SharePoint qui met en évidence les nouvelles opportunités d’apprentissage ou les formations requises.
 

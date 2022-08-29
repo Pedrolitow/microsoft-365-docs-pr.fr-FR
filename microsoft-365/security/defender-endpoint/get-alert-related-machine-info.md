@@ -1,8 +1,7 @@
 ---
-title: Obtenir des informations sur l’ordinateur associé à une alerte
-description: Récupérez tous les appareils associés à une alerte spécifique à l’aide de Microsoft Defender for Endpoint.
-keywords: api, api de graphique, api pris en charge, obtenir des informations d’alerte, informations d’alerte, appareil associé
-search.product: eADQiWindows 10XVcnh
+title: Obtenir des informations sur l’ordinateur lié à l’alerte
+description: Récupérez tous les appareils associés à une alerte spécifique à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, API de graphe, api prises en charge, obtention d’informations d’alerte, informations d’alerte, appareil associé
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,23 +13,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 43f20918fbef00b97bcd5177330fbafc57be912c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7904539ba8b6c06c6981a4e630a6d95ca4f8422b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168197"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324361"
 ---
-# <a name="get-alert-related-machine-information-api"></a>API Obtenir les informations sur l’ordinateur associé à une alerte
+# <a name="get-alert-related-machine-information-api"></a>Obtenir l’API d’informations sur la machine liée aux alertes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -42,29 +41,29 @@ ms.locfileid: "61168197"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère [l’appareil](machine.md) associé à une alerte spécifique.
+Récupère [l’appareil](machine.md) lié à une alerte spécifique.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire toutes les informations sur l’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.Read.All|« Lire toutes les informations sur l’ordinateur »
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations de l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -76,7 +75,7 @@ GET /api/alerts/{id}/machine
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -84,7 +83,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’alerte et l’appareil existent : 200 - OK. Si l’alerte est in trouvée ou si l’appareil est in trouvé - 404 - In trouvé.
+Si l’opération réussit et que l’alerte et l’appareil existent - 200 OK. Si l’alerte est introuvable ou si l’appareil est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 
@@ -106,7 +105,7 @@ Voici un exemple de réponse.
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2021-01-25T07:27:36.052313Z",
-    "osPlatform": "Windows10",
+    "osPlatform": "Windows10" "Windows11", 
     "osProcessor": "x64",
     "version": "1901",
     "lastIpAddress": "10.166.113.46",

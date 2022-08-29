@@ -1,7 +1,7 @@
 ---
 title: Obtenir un logiciel par ID
-description: Récupère une liste de détails logiciels par ID.
-keywords: api, api de graphique, api pris en charge, obtenir, logiciel, api tvm Microsoft Defender pour endpoint
+description: Récupère une liste des détails du logiciel par ID.
+keywords: api, api graphe, api prises en charge, get, software, Microsoft Defender pour point de terminaison api tvm, mdvm, Gestion des vulnérabilités Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f5749fcb98253feda4bec1dde08f7765227f676
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 25875a0be2a632ae0d0d02a8633757216a8bcb2f
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301905"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344830"
 ---
 # <a name="get-software-by-id"></a>Obtenir un logiciel par ID
 
@@ -37,11 +37,11 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère les détails logiciels par ID.
+Récupère les détails du logiciel par ID.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
@@ -58,7 +58,7 @@ GET /api/Software/{Id}
 
 Nom|Type|Description
 ---|---|---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -66,13 +66,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec les données logicielles spécifiées dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec les données logicielles spécifiées dans le corps.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
@@ -98,5 +98,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

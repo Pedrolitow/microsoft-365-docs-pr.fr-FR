@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des applications Microsoft LTI
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: medium
 description: Découvrez les applications Microsoft d’interopérabilité des outils d’apprentissage (LTI) et comment elles aideront les enseignants lors de l’intégration d’applications Microsoft dans leur système de gestion de l’apprentissage (LMS).
-ms.openlocfilehash: 7431b9a48ae7f0fec7199583592a515a6aadd772
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 0dbaa7d02af0556015e8c531eeb09131cacf0ab5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943527"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385031"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Intégration de produits Microsoft à votre système de gestion de l’apprentissage (LMS)
 
@@ -70,6 +70,7 @@ Pour connaître les étapes de configuration, consultez :
 
 - [Microsoft OneDrive LTI avec Canvas](onedrive-lti.md).
 - [Microsoft OneDrive LTI avec Tableau noir](onedrive-lti-blackboard.md).
+- [Microsoft OneDrive LTI avec D2l Brightspace](onedrive-lti-brightspace.md)
 
 ## <a name="teams-lti-apps"></a>Applications LTI Teams
 

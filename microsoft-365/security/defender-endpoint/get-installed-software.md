@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 215f1e18b22a0dca1aedcfdbe355e4a65e0b8664
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 4af5a39b3e94f29e95c332dce006dec035445d44
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020096"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344808"
 ---
 # <a name="get-installed-software"></a>Obtenir les logiciels installés
 
@@ -107,5 +107,5 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des vulnérabilités & des menaces basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire logiciel threat & Vulnerability](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

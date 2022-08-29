@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: c7fd01b95d461332baaf4eac90aee4715da3e55e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5d84ea6e803fba5d5f355fecaa4f6ac6776d3f60
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953027"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315457"
 ---
 # <a name="test-base-faq"></a>Test Base FAQ
 
@@ -37,7 +37,7 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 Les packages créés pour la base de test ont les scripts de test suivants : installer, lancer, fermer et éventuellement le script de désinstallation.
 
-Les tests OOB (Out-of-box) vous fournissent des données de télémétrie standardisées sur votre application pour les comparer entre Windows builds.
+Les tests OOB (Out-of-box) vous fournissent des données de télémétrie standardisées sur votre application à comparer entre les builds Windows.
 
 **Q : Pouvons-nous envoyer des tests en dehors des tests de démarrage (installer, lancer, fermer, désinstaller des scripts de test) ?**
 
@@ -84,13 +84,13 @@ Pendant les tests fonctionnels, vous pouvez spécifier si un redémarrage est n�
 
 ![Comment sélectionner des tests fonctionnels.](Media/functionalreboot.png)
 
-**Q : Quelles versions Windows prenez-vous en charge ?**
+**Q : Quelles versions de Windows prenez-vous en charge ?**
 
-**Un:** Nous prenons actuellement en charge Windows 10 clients, Windows Server 2016, Windows Server 2016 Version Core, Windows Server 2019 et Windows Server 2019 Core.
+**Un:** Nous prenons actuellement en charge Windows 10 clients, Windows Server 2016, Windows Server 2016 version Core, Windows Server 2019 et Windows Server 2019 Core.
 
 **Q : Quelle est la différence entre les tests de mise à jour de sécurité et les tests de mise à jour des fonctionnalités ?**
 
-**Un:** Pour les tests de mise à jour de sécurité, nous testons les **<ins>mises à jour de sécurité mensuelles préliminaires</ins>** sur Windows, qui sont axées sur le maintien de la sécurité et de la protection de nos utilisateurs. Pour les tests de mise à jour des fonctionnalités, nous testons les **<ins>mises à jour de fonctionnalités préliminaires bi-annuelles</ins>** qui introduisent de nouvelles fonctionnalités sur Windows.
+**Un:** Pour les tests de mise à jour de sécurité, nous testons les **<ins>mises à jour de sécurité mensuelles préliminaires</ins>** sur Windows, qui sont axées sur la sécurité et la protection de nos utilisateurs. Pour les tests de mise à jour des fonctionnalités, nous testons les **<ins>mises à jour de fonctionnalités préliminaires bi-annuelles</ins>** qui introduisent de nouvelles fonctionnalités et fonctionnalités sur Windows.
 
 ## <a name="debugging-options"></a>Options de débogage
 

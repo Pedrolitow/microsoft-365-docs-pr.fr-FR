@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/26/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,23 +20,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 Business Premium vous aide à gérer votre entreprise de manière plus sûre grâce à la productivité et à la sécurité.
-ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
-ms.translationtype: HT
+ms.openlocfilehash: ed739d1fd65925d2d8de71ec78603f811dc7f3b3
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300626"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433529"
 ---
 # <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Productivité et sécurité pour les petites et moyennes entreprises 
 
 Microsoft 365 Business Premium est une solution de sécurité et de productivité cloud complète conçue et conçue pour les petites et moyennes entreprises (1 à 300 employés). Avec Microsoft 365 Business Premium, vous pouvez :
 
-- Permettre à vos employés d’être connectés et productifs, qu’ils travaillent sur site ou à distance, avec les meilleurs outils de collaboration de classe comme Microsoft Teams;
-- Fournir à vos employés un accès sécurisé à leurs données et applications métier, et assurez-vous que seul le personnel autorisé peut accéder aux données professionnelles confidentielles;
-- Vous protéger contre les cybermenaces sophistiqués et protégez vos données d’entreprise avec une protection contre le hameçonnage, les rançongiciels et la perte de données;
-- Gérer et sécuriser les appareils (Windows, Mac, iOS et Android) qui se connectent à vos données, et les aider à rester à jour.
+- **Permettre à vos employés d’être connectés et productifs**, qu’ils travaillent sur site ou à distance, avec les meilleurs outils de collaboration de classe comme [Microsoft Teams](create-teams-for-collaboration.md).
+- **Fournissez à vos employés un accès sécurisé à leurs données et applications métier**, et assurez-vous que seul le personnel autorisé peut accéder aux données professionnelles confidentielles.
+- **Protégez-vous contre les cybermenaces sophistiqués et protégez vos données d’entreprise** avec une protection avancée contre le hameçonnage, les ransomwares et la perte de données.
+- **Gérez et sécurisez les appareils** (Windows, Mac, iOS et Android) qui se connectent à vos données, et contribuez à maintenir ces appareils à jour.
 
-Microsoft 365 Business Premium vous offre une solution complète pour la productivité et la sécurité. En tant qu’administrateur ou professionnel de l’informatique, vous avez tout ce dont vous avez besoin au même endroit pour l’administration, la facturation et le support 24h/24 et 7 j/7, tout en réduisant les coûts et la complexité de votre entreprise. Cet article explique comment Microsoft 365 Business Premium peut aider votre entreprise et inclut les sections suivantes :
+Microsoft 365 Business Premium vous offre une solution complète pour la productivité et la sécurité. En tant qu’administrateur ou professionnel de l’informatique, vous avez tout ce dont vous avez besoin au même endroit pour l’administration, la facturation et le support 24h/24 et 7 j/7, tout en réduisant les coûts et la complexité de votre entreprise. Le présent article contient les sections suivantes :
 
 - [Vidéo : 5 principaux avantages de Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [Fonctionnalités de productivité et de sécurité avancées](#productivity-and-security) qui vous permettent de gérer votre entreprise de manière plus sécurisée, sur tous les appareils et à partir de presque n’importe où
@@ -94,4 +94,4 @@ Notre guide sur les menaces numériques décrit différents types de menaces et 
 
 2. [Démarrez le processus d’installation](m365bp-setup-overview.md).
 
-3. [Renforcer la sécurité](m365bp-security-overview.md).
+3. [Configurer vos stratégies de sécurité](m365bp-security-overview.md)

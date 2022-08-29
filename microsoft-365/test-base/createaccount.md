@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: bf1830e1f166a3ecef1c7d50cf1f54f4c5b39dec
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dea1946f9585917d7f147fee5441919eb31c49df
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015897"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315567"
 ---
 # <a name="creating-a-test-base-account"></a>Création d’un compte de base de test
 
@@ -30,12 +30,12 @@ Pour créer un compte **de base de test** , effectuez les étapes qui suivent.
 
 ## <a name="to-create-a-test-base-account"></a>Pour créer un compte de base de test
  
-1. Dans la page d’accueil du [Portail Azure](https://ms.portal.azure.com/#home), **recherchez Microsoft 365** dans la Base de test dans la Place de marché Azure pour afficher les contrôles de création d’un compte **de base de** test. 
+1. Dans la page d’accueil de [l’Portail Azure](https://ms.portal.azure.com/#home), **recherchez La base de test de Microsoft 365** dans la Place de marché Azure pour afficher les contrôles permettant de créer un compte **de base de** test. 
 
    > [!div class="mx-imgBorder"]
    > [![Base de tests de](Media/creatingaccount01-search.png) recherche ](Media/creatingaccount01-search.png#lightbox)
 
-2. Dans le champ contrôles de la page **Base de test pour Microsoft 365**, sélectionnez le bouton **Créer** comme suit pour ouvrir la page Créer un **compte de base de test**. 
+2. Dans le champ contrôles de la page Base de test **pour Microsoft 365** , sélectionnez le bouton **Créer** comme suit pour ouvrir la page **Créer un compte de base de test** . 
 
    > [!div class="mx-imgBorder"]
    > [![Page De base des tests](Media/creatingaccount02-testbase.png) ](Media/creatingaccount02-testbase.png#lightbox)

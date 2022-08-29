@@ -1,6 +1,6 @@
 ---
 title: Méthodes et propriétés d’évaluation des certificats par appareil
-description: Fournit des informations sur les API de certificats qui extraient des données « Gestion des menaces et des vulnérabilités ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
+description: Fournit des informations sur les API de certificats qui extraient des données « Gestion des vulnérabilités Microsoft Defender ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c5f89d92e754648dcaffb134de70516c7274625d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 1b47a3b3c0088dca035fa6c85943e1737935cc51
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66991893"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344918"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Exporter l’inventaire des certificats par appareil
 
@@ -32,7 +32,7 @@ ms.locfileid: "66991893"
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? [Inscrivez-vous à un essai gratuit.- Mise à jour](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? En savoir plus sur la façon dont vous pouvez vous inscrire à la [Gestion des vulnérabilités Microsoft Defender préversion publique](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
@@ -80,22 +80,22 @@ GET /api/machines/certificateAssessmentByMachine
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-|DeviceId|String|Identificateur unique de l’appareil dans le service.
-|DeviceName|String|Nom de domaine complet (FQDN) de l’appareil.
-|Empreinte|Booléen|Identificateur unique du certificat.
-|Chemin|String|Emplacement du certificat.
-|SignatureAlgorithm|String|Algorithme de hachage et algorithme de chiffrement utilisés.
-|KeySize|String|Taille de la clé utilisée dans l’algorithme de signature.
-|ExpirationDate|String|Date et heure au-delà desquelles le certificat n’est plus valide.
-|IssueDate|String|Date et heure les plus anciennes à laquelle le certificat est devenu valide.
-|SubjectType|String|Indique si le titulaire du certificat est une autorité de certification ou une entité de fin.
-|Numéro de série|String|Identificateur unique du certificat dans les systèmes d’une autorité de certification.
+|DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.
+|DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
+|Empreinte|Boolean|Identificateur unique du certificat.
+|Path|Chaîne|Emplacement du certificat.
+|SignatureAlgorithm|Chaîne|Algorithme de hachage et algorithme de chiffrement utilisés.
+|KeySize|Chaîne|Taille de la clé utilisée dans l’algorithme de signature.
+|ExpirationDate|Chaîne|Date et heure au-delà desquelles le certificat n’est plus valide.
+|IssueDate|Chaîne|Date et heure les plus anciennes à laquelle le certificat est devenu valide.
+|SubjectType|Chaîne|Indique si le titulaire du certificat est une autorité de certification ou une entité de fin.
+|Numéro de série|Chaîne|Identificateur unique du certificat dans les systèmes d’une autorité de certification.
 |IssuedTo|Objet|Entité à laquelle appartient un certificat ; peut être un appareil, un individu ou une organisation.
 |IssuedBy|Objet|Entité qui a vérifié les informations et signé le certificat.
-|KeyUsage|String|Utilisations de chiffrement valides de la clé publique du certificat.
-|ExtendedKeyUsage|String|Autres utilisations valides pour le certificat.
-|RbacGroupId|String|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
-|RbacGroupName|String|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non attribué ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+|KeyUsage|Chaîne|Utilisations de chiffrement valides de la clé publique du certificat.
+|ExtendedKeyUsage|Chaîne|Autres utilisations valides pour le certificat.
+|RbacGroupId|Chaîne|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
+|RbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non attribué ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 
 ## <a name="16-example"></a>Exemple 1.6
 

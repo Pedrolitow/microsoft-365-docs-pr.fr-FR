@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/09/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment implémenter la cybersécurité pour les petites ou moyennes entreprises avec Microsoft 365 Business Premium. Les fonctionnalités et fonctionnalités de cybersécurité sont optimisées pour empêcher les cyberattaques et les violations de la sécurité, et aider à protéger les données, les appareils et les informations avec des cyberdéfenses de haut niveau.
-ms.openlocfilehash: e046ebbf6e3609f1f5b13c89cad4261dab8da879
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 799f491f99143df2e12d7852bb6e6bf28d3e70b5
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300736"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433573"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium : productivité et cybersécurité pour les petites entreprises
 
-Commençons par dire que vous avez fait un choix judicieux en adoptant Microsoft 365 Business Premium et ses outils de productivité de classe mondiale. Conçu en tenant compte de la cybersécurité, Microsoft 365 Business Premium protège vos données, appareils et informations. Vous êtes la première et la meilleure défense de votre organisation contre les pirates informatiques et les cyberattaques, y compris les individus aléatoires, le crime organisé ou les États-nations hautement sophistiqués.
+Microsoft 365 Business Premium avec ses outils de productivité de classe mondiale est un choix judicieux pour les petites et moyennes entreprises. Conçu en tenant compte de la cybersécurité, Microsoft 365 Business Premium protège vos données, appareils et informations. Vous êtes la première et la meilleure défense de votre organisation contre les pirates informatiques et les cyberattaques, y compris les individus aléatoires, le crime organisé ou les États-nations hautement sophistiqués.
 
-La tâche qui vous précède est la suivante : laissez Microsoft 365 Business Premium aider à sécuriser l’avenir de votre organisation ! Approchez cette tâche en effectuant les missions suivantes : 
+La tâche qui vous précède est la suivante : laissez Microsoft 365 Business Premium aider à sécuriser l’avenir de votre organisation ! Approchez cette tâche en effectuant les six missions suivantes : 
 
 :::image type="content" source="media/sixmissions.png" alt-text="Diagramme répertoriant six missions.":::
 
@@ -49,7 +49,7 @@ Effectuer les six missions est le moyen le plus efficace de déjouer les pirates
 
 ## <a name="cybersecurity-playbook"></a>Playbook sur la cybersécurité
 
-Les conseils de ces missions sont basés sur la méthodologie de confiance zéro et aident votre entreprise à atteindre les objectifs décrits dans le  [playbook de la campagne de cybersécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’École Harvard Kennedy. Vous pouvez télécharger un résumé ([obtenez le pdf ici](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
+Les conseils de ces missions sont basés sur le [modèle de sécurité Confiance nulle](../security/office-365-security/microsoft-365-policies-configurations.md) et sont résumés dans un [playbook de cybersécurité](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf) téléchargeable).
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Playbook sur la cybersécurité. Téléchargez ce guide.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 

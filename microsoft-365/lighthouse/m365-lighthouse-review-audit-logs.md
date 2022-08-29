@@ -17,24 +17,24 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) qui utilisent Microsoft 365 Lighthouse, découvrez comment examiner les journaux d’audit.
-ms.openlocfilehash: a357d6d4383fb967b09d1ce3dc1be68d7fd2ca4f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c24e321cae13e6e604f7daba79f820d0b1bc6bb3
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017507"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315611"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Examiner les journaux d’audit dans Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse journaux d’audit enregistrent les actions qui génèrent une modification dans Lighthouse ou d’autres services Microsoft 365. Les actions créer, modifier, supprimer, affecter et distantes créent toutes des événements d’audit que vous pouvez examiner. Par défaut, l’audit est activé pour tous les clients. Elle ne peut pas être désactivée.
+Microsoft 365 Lighthouse les journaux d’audit enregistrent les actions qui génèrent une modification dans Lighthouse ou d’autres services Microsoft 365. Les actions créer, modifier, supprimer, affecter et distantes créent toutes des événements d’audit que vous pouvez examiner. Par défaut, l’audit est activé pour tous les clients. Elle ne peut pas être désactivée.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Pour afficher les journaux d’audit, vous devez disposer de l’une des autorisations suivantes :
 
-- rôle Azure Active Directory (Azure AD) - Administrateur général du locataire partenaire
+- Rôle Azure Active Directory (Azure AD) - Administrateur général du locataire partenaire
 
-- Rôle De l’Espace partenaires Microsoft - Agent d’administration
+- Rôle De l’Espace partenaires Microsoft - Agent Administration
 
 ## <a name="review-audit-logs"></a>Examiner les journaux d’audit
 
@@ -47,7 +47,7 @@ Pour afficher les journaux d’audit, vous devez disposer de l’une des autoris
 
     - **Plage de dates** : mois, semaine ou jour précédents.
     - **Locataires : balises** de locataire ou noms de locataires client.
-    - **Activité** : Microsoft 365 type d’activité qui correspond à l’action effectuée. Pour plus d’informations, consultez la table [Activités](#activities) .
+    - **Activité** : type d’activité Microsoft 365 qui correspond à l’action effectuée. Pour plus d’informations, consultez la table [Activités](#activities) .
     - **Initié par** - Qui a lancé l’action.
 
 3. Sélectionnez un journal dans la liste pour afficher les détails complets, y compris le corps de la **demande** .
@@ -63,7 +63,6 @@ Le tableau suivant répertorie les activités capturées dans les journaux d’a
 | **appliquer** ou **déployer** | Clients | Appliquer un plan de déploiement | Azure AD, Microsoft Endpoint Manager (MEM) |
 | **assignTag** | Clients | Appliquer une balise à partir d’un client | Phare |
 | **changeDeploymentStatus** ou **assign** | Clients | Mettre à jour l’état du plan d’action pour le plan de déploiement | Phare |
-| **managedTenantOperations** | Clients | Afficher des informations sur un plan de déploiement | Azure AD |
 | **offboardTenant** | Clients | Désactiver un client | Phare |
 | **resetTenantOnboardingStatus** | Clients | Réactif d’un client | Phare |
 | **tenantTags** | Clients | Créer ou supprimer une balise | Phare |
@@ -74,32 +73,20 @@ Le tableau suivant répertorie les activités capturées dans les journaux d’a
 | **confirmUsersCompromised** | Utilisateurs | Confirmer qu’un utilisateur est compromis | Azure AD |
 | **dismissUsersRisk** | Utilisateurs | Ignorer le risque de l’utilisateur | Azure AD |
 | **resetUserPassword** | Utilisateurs | Réinitialiser le mot de passe | Azure AD |
-| **getConditionalAccessPolicies** | Utilisateurs | Afficher les stratégies d’autorité de certification nécessitant l’authentification multifacteur | Azure AD |
-| **getTenantIDToTenantNameMap** | Utilisateurs | Rechercher des ID | Azure AD |
-| **getUsers** | Utilisateurs | Rechercher des utilisateurs | Azure AD |
-| **getUsersWithoutMfa** | Utilisateurs | Afficher les utilisateurs non inscrits pour l’authentification multifacteur | Azure AD |
-| **getSsprEnabledButNotRegisteredUsers** | Utilisateurs | Afficher les utilisateurs non inscrits pour SSPR | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Utilisateurs | Activer l’authentification multifacteur (MFA) avec les paramètres de sécurité par défaut | Azure AD |
-|**getCompliancePolicyInfo** | Appareils | Afficher une stratégie | MEM
-|**getDeviceCompliancePolicyStates** | Appareils | Afficher les états de stratégie | MEM
-|**getDeviceCompliancePolicySettingStates** | Appareils | Afficher les paramètres non conformes | MEM
-|**getDeviceCompliancePolicySettingStateSummaries** | Appareils | Afficher les appareils non conformes | MEM
-|**getTenantsDeviceCompliancePolicies** | Appareils | Comparer les stratégies | MEM
-| **restartDevice** | Appareils | Redémarrer | MEM |
-| **syncDevice** | Appareils | Synchronisation | MEM |
-| **rebootNow** | Gestion des menaces | Redémarrer | MEM |
+| **restartDevice** | Appareils | Redémarrer | Mem |
+| **syncDevice** | Appareils | Synchronisation | Mem |
+| **rebootNow** | Gestion des menaces | Redémarrer | Mem |
 | **reprovisionner** | Windows 365 | Nouvelle tentative d’approvisionnement | Windows 365 |
-| **getDeviceUserInfo** | Gestion des menaces | Afficher les informations utilisateur de l’appareil managé  | MEM |
-| **getManagedDevice**, **remoteActionAudits** ou **deviceActionResults** | Gestion des menaces | Afficher les informations sur les appareils gérés  | MEM |
-| **windowsDefenderScanFull** | Gestion des menaces | Analyse complète | MEM |
-| **windowsDefenderScan** | Gestion des menaces | Analyse rapide | MEM |
-| **windowsDefenderUpdateSignatures** | Gestion des menaces | Mettre à jour l’antivirus | MEM |
+| **windowsDefenderScanFull** | Gestion des menaces | Analyse complète | Mem |
+| **windowsDefenderScan** | Gestion des menaces | Analyse rapide | Mem |
+| **windowsDefenderUpdateSignatures** | Gestion des menaces | Mettre à jour l’antivirus | Mem |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez Microsoft API Graph pour accéder à d’autres événements d’audit, si nécessaire. Pour plus d’informations, consultez [Vue d’ensemble de la gestion multilocataire à l’aide de l’API Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml) (article)\
 [Afficher vos rôles Azure Active Directory dans Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)

@@ -1,7 +1,7 @@
 ---
 title: Obtenir une recommandation par ID
 description: Récupère une recommandation de sécurité par son ID.
-keywords: api, api de graphique, api pris en charge, obtenir, recommandation de sécurité, recommandation de sécurité par ID, Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
+keywords: api, api graphe, api prises en charge, get, recommandation de sécurité, recommandation de sécurité par ID, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea02c3a102f88418b146eba24d7db34c2bd07ed4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6983ed109357bef89209c689a12a8e90ea11c797
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302229"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344770"
 ---
 # <a name="get-recommendation-by-id"></a>Obtenir des recommandations par ID
 
@@ -41,12 +41,12 @@ Récupère une recommandation de sécurité par son ID.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Application|SecurityRecommendation.Read.All|« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read|« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -66,7 +66,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec les recommandations de sécurité dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec les recommandations de sécurité dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -110,5 +110,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recommandations & sécurité des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recommandation de sécurité de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

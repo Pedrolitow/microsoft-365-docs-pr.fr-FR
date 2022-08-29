@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a0387eac18152599cfd08ba75893f3eae248431
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: ca448d64b544e7c7a390b243c77a878dd9afc55a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102611"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324492"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Créer une application pour accéder à Microsoft Defender pour point de terminaison sans utilisateur
 
@@ -42,9 +42,9 @@ ms.locfileid: "66102611"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Cette page explique comment créer une application pour obtenir un accès programmatique à Defender pour point de terminaison sans utilisateur. Si vous avez besoin d’un accès programmatique à Defender pour point de terminaison pour le compte d’un utilisateur, consultez [Obtenir l’accès avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md). Si vous n’êtes pas sûr de l’accès dont vous avez besoin, consultez [Első lépések](apis-intro.md).
+Cette page explique comment créer une application pour obtenir un accès programmatique à Defender pour point de terminaison sans utilisateur. Si vous avez besoin d’un accès programmatique à Defender pour point de terminaison pour le compte d’un utilisateur, consultez [Obtenir l’accès avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md). Si vous n’êtes pas sûr de l’accès dont vous avez besoin, consultez [Prise en main](apis-intro.md).
 
-Microsoft Defender pour point de terminaison expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Defender pour point de terminaison. L’accès à l’API nécessite l’authentification OAuth2.0. Pour plus d’informations, consultez [Flow du code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Defender pour point de terminaison. L’accès à l’API nécessite l’authentification OAuth2.0. Pour plus d’informations, consultez [le flux de code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En général, vous devez effectuer les étapes suivantes pour utiliser les API :
 - Créez une application Azure Active Directory (Azure AD).
@@ -57,7 +57,7 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
 
 1. Connectez-vous à [Azure](https://portal.azure.com) avec un utilisateur qui a le rôle **Administrateur général** .
 
-2. Accédez à **Azure Active Directory** \> **App-registraties** \> **Nouvelle inscription**. 
+2. Accédez à **Azure Active Directory** \> **inscriptions d'applications** \> **Nouvelle inscription**. 
 
     :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Volet d’inscription d’application" lightbox="images/atp-azure-new-app2.png":::
 
@@ -190,7 +190,7 @@ Voir [Obtenir un jeton à l’aide de Python](run-advanced-query-sample-python.m
 1. Ouvrez une invite de commandes et définissez CLIENT_ID sur votre ID d’application Azure.
 1. Définissez CLIENT_SECRET sur votre secret d’application Azure.
 1. Définissez TENANT_ID sur l’ID de locataire Azure du client qui souhaite utiliser votre application pour accéder à Defender pour point de terminaison.
-1. Exécutez la commande suivante :
+1. Exécutez la commande suivante :
 
     ```console
     curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

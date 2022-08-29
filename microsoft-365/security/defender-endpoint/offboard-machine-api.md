@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ebfcfe21070656d71c50429cd4653d0e14f7724d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5b26e5a558460b5777f389c79e70d1718632e584
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493216"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323746"
 ---
 # <a name="offboard-machine-api"></a>API de l’ordinateur hors carte
 
@@ -79,7 +79,7 @@ L’ID de l’ordinateur se trouve dans l’URL lorsque vous sélectionnez l’a
 
 Nom|Type|Description
 ---|---|---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande

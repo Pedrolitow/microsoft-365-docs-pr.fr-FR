@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre Microsoft 365 pour les factures professionnelles.
 ms.date: 05/24/2022
-ms.openlocfilehash: 0c863c1398b19c0c3efdf6c8390ad4a0cd16f82c
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 041e0636cf5e1797d0716ddceb550e2544085e46
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112018"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384833"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -36,6 +36,12 @@ Votre facture fournit un récapitulatif des frais pour votre abonnement et inclu
 
 > [!NOTE]
 > Si vous avez d’autres abonnements au lieu ou en plus de Microsoft 365, consultez [Comprendre votre facture ou note](understand-your-invoice.md).
+
+## <a name="watch-understand-your-bill-or-invoice"></a>Regarder : Comprendre votre facture ou facture
+
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2197915).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 
 ## <a name="how-often-and-when-am-i-billed"></a>À quelle fréquence et quand suis-je facturé ?
 

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéographique et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: adb80e3c1f08d5f99e593e5592a1065e2829e3e6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306303"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369988"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -229,4 +229,6 @@ Power Apps doit être recréé à l’emplacement de destination.
 
 ### <a name="data-movement-between-geo-locations"></a>Déplacement de données entre emplacements géographiques
 
-SharePoint utilise Stockage Blob Azure pour son contenu, tandis que les métadonnées associés à des sites et à ses fichiers sont stockées dans SharePoint. Le déplacement du site de son emplacement géographique source vers son emplacement géographique cible implique également le déplacement de son Stockage Blob. Le déplacement du Stockage Blob prend environ 40 jours.
+SharePoint utilise Stockage Blob Azure pour son contenu, tandis que les métadonnées associées aux sites et à ses fichiers sont stockées dans SharePoint. Le déplacement du site de son emplacement géographique source vers son emplacement géographique cible implique également le déplacement de son Stockage Blob. Le déplacement du Stockage Blob prend environ 40 jours. Cela n’aura aucun impact sur l’interaction des utilisateurs avec les données. 
+
+Vous pouvez vérifier l’état de déplacement du Stockage Blob à l’aide de l’applet de commande [Get-SPOCrossGeoMoveReport](/powershell/module/sharepoint-online/get-spocrossgeomovereport) . 

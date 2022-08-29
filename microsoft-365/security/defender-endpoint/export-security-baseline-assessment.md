@@ -1,6 +1,6 @@
 ---
 title: Méthodes et propriétés d’évaluation de la base de référence de sécurité par appareil
-description: Fournit des informations sur les API de base de référence de sécurité qui extraient des données « Gestion des menaces et des vulnérabilités ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
+description: Fournit des informations sur les API de base de référence de sécurité qui extraient des données « Gestion des vulnérabilités Microsoft Defender ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5fd673f37dd35a83a714c0f3dd1c6ac3b0a049ca
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: fb7dd6ff2f752fdbd8eff644ba728391d1f1dfa0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66991901"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343348"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Exporter l’évaluation des bases de référence de sécurité par appareil
 
@@ -32,7 +32,7 @@ ms.locfileid: "66991901"
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? [Inscrivez-vous à un essai gratuit.- Mise à jour](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? En savoir plus sur la façon dont vous pouvez vous inscrire à la [Gestion des vulnérabilités Microsoft Defender préversion publique](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
@@ -89,21 +89,21 @@ GET /api/machines/baselineComplianceAssessmentByMachine
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-|configurationId|String|Identificateur unique pour une configuration spécifique dans le benchmark de référence.
-|profileId|String|Identificateur unique pour le profil évalué.
+|configurationId|Chaîne|Identificateur unique pour une configuration spécifique dans le benchmark de référence.
+|profileId|Chaîne|Identificateur unique pour le profil évalué.
 |deviceId|String|Identificateur unique de l’appareil dans le service.
 |deviceName|String|Nom de domaine complet (FQDN) de l’appareil.
-|isApplicable|Booléen|Indique si la configuration s’applique à cet appareil.
+|isApplicable|Boolean|Indique si la configuration s’applique à cet appareil.
 |isCompliant|Booléen|Indique si l’appareil est conforme à la configuration.
-|id|String|Identificateur unique de l’enregistrement, qui est une combinaison de DeviceId, ProfileId et ConfigurationId.
+|id|Chaîne|Identificateur unique de l’enregistrement, qui est une combinaison de DeviceId, ProfileId et ConfigurationId.
 |osVersion|String|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
-|osPlatform|String|Plateforme de système d’exploitation s’exécutant sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez [les systèmes d’exploitation et plateformes pris en charge par TVM](tvm-supported-os.md) .
+|osPlatform|Chaîne|Plateforme de système d’exploitation s’exécutant sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, consultez les [systèmes d’exploitation et plateformes pris en charge par MDVM](tvm-supported-os.md) .
 |rbacGroupId|Int|ID de groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-|rbacGroupName|String|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+|rbacGroupName|Chaîne|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 |DataCollectionTimeOffset|Date/heure|Heure à laquelle les données ont été collectées à partir de l’appareil. Ce champ peut ne pas apparaître si aucune donnée n’a été collectée.
 |ComplianceCalculationTimeOffset|Date/heure|Heure à laquelle le calcul de l’évaluation a été effectué.
-|RecommendedValue|String|Ensemble de valeurs attendues pour que le paramètre d’appareil actuel soit une réclamation.
-|CurrentValue|String|Ensemble de valeurs détectées trouvées sur l’appareil.
+|RecommendedValue|Chaîne|Ensemble de valeurs attendues pour que le paramètre d’appareil actuel soit une réclamation.
+|CurrentValue|Chaîne|Ensemble de valeurs détectées trouvées sur l’appareil.
 |Source|String|Chemin d’accès du Registre ou autre emplacement utilisé pour déterminer le paramètre d’appareil actuel.
 
 ## <a name="17-example"></a>1.7 Exemple
@@ -181,7 +181,7 @@ GET /api/machines/BaselineComplianceAssessmentExport
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 |Exporter des fichiers|array[string]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation.
-|GeneratedTime|String|Heure à laquelle l’exportation a été générée.
+|GeneratedTime|Chaîne|Heure à laquelle l’exportation a été générée.
 
 ## <a name="26-example"></a>2.6 Exemple
 

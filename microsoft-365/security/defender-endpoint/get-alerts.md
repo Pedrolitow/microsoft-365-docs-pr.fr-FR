@@ -1,7 +1,7 @@
 ---
-title: API d’alertes de liste
-description: Découvrez comment utiliser l’API d’alertes de liste pour récupérer une collection d’alertes dans Microsoft Defender for Endpoint.
-keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
+title: API Répertorier les alertes
+description: Découvrez comment utiliser l’API List alerts pour récupérer une collection d’alertes dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, alertes, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c720e7743fda39f7950a7df44bea0007988b94b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 231894a707b476f3c2ab52ef8198dad5fe1713c5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283496"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323110"
 ---
-# <a name="list-alerts-api"></a>API d’alertes de liste
+# <a name="list-alerts-api"></a>API Répertorier les alertes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,37 +41,37 @@ ms.locfileid: "61283496"
 
 ## <a name="api-description"></a>Description de l’API
 Récupère une collection d’alertes.
-<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
-<br>Opérateurs pris en charge par OData :
-<br>```$filter``` on: ```alertCreationTime``` , , , , , , , , , ```lastUpdateTime``` et ```incidentId``` ```InvestigationId``` ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` ```category``` properties.
+<br>Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
+<br>Opérateurs OData pris en charge :
+<br>```$filter```on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```id``````asssignedTo```, ```detectionSource```, ```lastEventTime```, ```status```et ```severity``` ```category``` propriétés.
 <br>```$top``` avec une valeur maximale de 10 000
 <br>```$skip```
-<br>```$expand``` of ```evidence```
-<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+<br>```$expand``` De ```evidence```
+<br>Consultez des exemples dans [les requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md)
 
 
 ## <a name="limitations"></a>Limites
 1. Vous pouvez obtenir la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. La taille maximale de page est de 10 000.
-3. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
+2. La taille maximale de la page est de 10 000.
+3. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
 
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
-Application | Alert.Read.All | « Lire toutes les alertes »
-Application | Alert.ReadWrite.All | « Lire et écrire toutes les alertes »
+Application | Alert.Read.All | « Lire toutes les alertes »
+Application | Alert.ReadWrite.All | « Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.Read | « Lire les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et écrire des alertes »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - La réponse inclut uniquement les alertes associées aux appareils accessibles par [](machine-groups.md) l’utilisateur, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils).
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - La réponse inclut uniquement les alertes associées aux appareils auxquels l’utilisateur peut accéder, en fonction des paramètres de groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -83,7 +83,7 @@ GET /api/alerts
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -91,7 +91,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et une liste d’objets d’alerte dans le corps de la réponse. [](alerts.md)
+Si elle réussit, cette méthode retourne 200 OK et une liste d’objets [d’alerte](alerts.md) dans le corps de la réponse.
 
 ## <a name="example-1---default"></a>Exemple 1 - Par défaut
 
@@ -108,7 +108,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 Voici un exemple de réponse.
 
 > [!NOTE]
-> La liste de réponses présentée ici peut être tronquée à des raisons de concision. Toutes les alertes sont renvoyées à partir d’un appel réel.
+> La liste de réponses présentée ici peut être tronquée par souci de concision. Toutes les alertes sont retournées à partir d’un appel réel.
 
 ```json
 {
@@ -162,7 +162,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Exemple 2 : obtenir 10 alertes les plus récentes avec des preuves associées
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Exemple 2 - Obtenir 10 dernières alertes avec des preuves associées
 
 ### <a name="request"></a>Demande
 
@@ -177,7 +177,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 Voici un exemple de réponse.
 
 > [!NOTE]
-> La liste de réponses présentée ici peut être tronquée à des raisons de concision. Toutes les alertes sont renvoyées à partir d’un appel réel.
+> La liste de réponses présentée ici peut être tronquée par souci de concision. Toutes les alertes sont retournées à partir d’un appel réel.
 
 ```json
 {
@@ -316,4 +316,4 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Requêtes OData avec Microsoft Defender pour le point de terminaison](exposed-apis-odata-samples.md)
+[Requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md)

@@ -10,18 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 1eb0e7a36e170d8e8bd01233b0ee2db42c0ec331
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 42f9766f951f6598008bf2646321829603d75391
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309744"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319908"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtenir Microsoft Defender pour entreprises
 
@@ -97,8 +97,8 @@ Lorsque vous êtes prêt à commencer, vous travaillerez avec deux portails prin
 
 |Portail  |Description  |
 |---------|---------|
-| Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez la Centre d'administration Microsoft 365 pour activer votre version d’évaluation et vous connecter pour la première fois.<p> Vous allez également utiliser le Centre d'administration Microsoft 365 pour : <ul><li>Ajouter ou supprimer des utilisateurs.</li><li>Attribuez des licences utilisateur.</li><li>Affichez vos produits et services.</li><li>Effectuez les tâches d’installation de votre abonnement Microsoft 365.</li></ul><p>Pour en savoir plus, consultez [Vue d’ensemble de l’Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer.<p>Vous allez utiliser le portail Microsoft 365 Defender pour : <ul><li>Affichez vos appareils et stratégies de protection des appareils.</li><li>Affichez les menaces détectées et prenez des mesures.</li><li>Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.</li></ul><p>Pour en savoir plus, consultez [Prise en main du portail Microsoft 365 Defender](mdb-get-started.md).        |
+| Le Centre d'administration Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Utilisez la Centre d'administration Microsoft 365 pour activer votre version d’évaluation et vous connecter pour la première fois.<p> Vous allez également utiliser le Centre d'administration Microsoft 365 pour : <ul><li>Ajouter ou supprimer des utilisateurs.</li><li>Attribuez des licences utilisateur.</li><li>Affichez vos produits et services.</li><li>Effectuez les tâches d’installation de votre abonnement Microsoft 365.</li></ul>Pour en savoir plus, consultez [Vue d’ensemble de l’Centre d'administration Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| Portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Utilisez le portail Microsoft 365 Defender pour configurer Defender entreprise et le configurer.<p>Vous allez utiliser le portail Microsoft 365 Defender pour : <ul><li>Affichez vos appareils et stratégies de protection des appareils.</li><li>Affichez les menaces détectées et prenez des mesures.</li><li>Affichez les recommandations de sécurité et gérez vos paramètres de sécurité.</li></ul>Pour en savoir plus, consultez [Prise en main du portail Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
 > Vous pouvez utiliser le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) pour intégrer des appareils et configurer les paramètres de sécurité. Pour en savoir plus sur Intune, consultez [Microsoft Intune est un fournisseur GPM et GAM pour vos appareils](/mem/intune/fundamentals/what-is-intune).

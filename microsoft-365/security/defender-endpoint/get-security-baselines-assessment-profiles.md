@@ -1,6 +1,6 @@
 ---
 title: Profils d’évaluation des bases de référence de sécurité
-description: Fournit des informations sur les API de profils d’évaluation des bases de référence de sécurité qui extraient des données « Gestion des menaces et des vulnérabilités ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
+description: Fournit des informations sur les API de profils d’évaluation des bases de référence de sécurité qui extraient des données « Gestion des vulnérabilités Microsoft Defender ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69f660fb355d5b93c538b92ed45b37c6cec61b9a
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f619efaa3ef258405a45bd747fa2f3e2850d0a21
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66991904"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345034"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Répertorier tous les profils d’évaluation des bases de référence de sécurité
 
@@ -32,7 +32,7 @@ ms.locfileid: "66991904"
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? [Inscrivez-vous à un essai gratuit.- Mise à jour](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? En savoir plus sur la façon dont vous pouvez vous inscrire à la [Gestion des vulnérabilités Microsoft Defender préversion publique](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## <a name="1-get-security-baselines-assessment-profiles"></a>1. Obtenir les profils d’évaluation des bases de référence de sécurité
 
@@ -62,15 +62,15 @@ Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 |Propriété | Type | Description |
 |:---|:---|:---|
-|ID | String | Identificateur unique pour le profil de base de référence spécifique.
-|nom | String | Nom du profil.
-|description | String | Description du profil.
-|Référence | String | Benchmark de profil.
+|ID | Chaîne | Identificateur unique pour le profil de base de référence spécifique.
+|nom | Chaîne | Nom du profil.
+|description | Chaîne | Description du profil.
+|Référence | Chaîne | Benchmark de profil.
 |version | String | Version du profil.
 |operatingSystem|String|Système d’exploitation applicable au profil.
 |operatingSystemVersion|Chaîne|Version du système d’exploitation applicable au profil.
-|status|Booléen|Indique si le profil est actif ou non
-|complianceLevel|String|Niveau de conformité choisi pour le profil.
+|status|Boolean|Indique si le profil est actif ou non
+|complianceLevel|Chaîne|Niveau de conformité choisi pour le profil.
 |settingsNumber|Int|Nombre de configurations sélectionnées dans le profil.
 |createdBy|String|Utilisateur qui a créé ce profil.
 |lastUpdatedBy|Date/heure|Dernier utilisateur à modifier ce profil.

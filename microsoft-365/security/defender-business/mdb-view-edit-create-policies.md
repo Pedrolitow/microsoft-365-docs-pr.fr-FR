@@ -10,22 +10,23 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 209af419462d6894e80b1d05955a58a78572e525
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: a7281605f4bc47c2ce39ef3b067a5db39aa33142
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772738"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319930"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Afficher ou modifier des stratégies dans Microsoft Defender pour entreprises
 
-Dans Defender entreprise, les paramètres de sécurité sont configurés via des stratégies appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
+Dans Defender pour entreprise, les paramètres de sécurité sont configurés par le biais de stratégies qui sont appliquées aux appareils. Pour simplifier votre expérience d’installation et de configuration, Defender entreprise inclut des stratégies préconfigurées pour protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
 
 **Cet article explique comment** :
 
@@ -34,6 +35,8 @@ Dans Defender entreprise, les paramètres de sécurité sont configurés via des
 - [Modifier une stratégie existante](#edit-an-existing-policy)
 - [Créer une stratégie](#create-a-new-policy)
 
+> [!NOTE]
+> Les procédures décrites dans cet article décrivent comment afficher, modifier et créer des stratégies de sécurité dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Si vous utilisez Microsoft Intune, consultez [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 ## <a name="default-policies-in-defender-for-business"></a>Stratégies par défaut dans Defender entreprise
 
@@ -41,7 +44,6 @@ Dans Defender Entreprise, il existe deux principaux types de stratégies pour pr
 
 - **Stratégies de protection nouvelle génération**, qui déterminent la configuration des Antivirus Microsoft Defender et d’autres fonctionnalités de protection contre les menaces
 - **Stratégies de pare-feu**, qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre entreprise
-
 
 ## <a name="view-your-existing-policies"></a>Afficher vos stratégies existantes
 

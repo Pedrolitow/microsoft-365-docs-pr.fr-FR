@@ -10,15 +10,16 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/24/2022
 ms.collection: M365-security-compliance
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 7d1715352ab1a1392b06cae5bfc3ee81196bf3e2
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e2e6ec0fca05aabe49ad720f1991d1b846c1678a
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66992117"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433668"
 ---
 # <a name="add-users-and-assign-licenses-in-microsoft-defender-for-business"></a>Ajouter des utilisateurs et attribuer des licences dans Microsoft Defender pour entreprises
 
@@ -27,7 +28,7 @@ Dès que vous vous êtes inscrit à Defender Entreprise, la première étape con
 ## <a name="add-users-and-assign-licenses"></a>Ajouter des utilisateurs et attribuer des licences
 
 > [!IMPORTANT]
-> Vous devez être un administrateur général pour effectuer cette tâche.  La personne qui a inscrit votre entreprise pour Microsoft 365 ou Defender Entreprise est un administrateur général par défaut.
+> Vous devez être un administrateur global pour effectuer cette tâche.  La personne qui a inscrit votre entreprise pour Microsoft 365 ou Defender Entreprise est un administrateur général par défaut.
 
 1. Accédez au Centre d'administration Microsoft 365 et [https://admin.microsoft.com](https://admin.microsoft.com) connectez-vous.
 
@@ -43,7 +44,7 @@ Dès que vous vous êtes inscrit à Defender Entreprise, la première étape con
 
    Si vous n’avez pas de licence disponible, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires. Pour plus d’informations sur l’ajout d’utilisateurs, consultez [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md).
 
-5. Dans la page **Paramètres facultatifs** , vous pouvez développer les **informations de profil** et renseigner des détails, tels que le titre jo de l’utilisateur, le service, l’emplacement, etc. Sélectionnez **Suivant**.
+5. Dans la page **Paramètres facultatifs** , vous pouvez développer les **informations de profil** et renseigner des détails, tels que le titre du travail de l’utilisateur, le service, l’emplacement, etc. Sélectionnez **Suivant**.
 
 6. Dans la page **Révision et fin** , passez en revue les détails, puis sélectionnez **Terminer l’ajout** pour ajouter l’utilisateur. Si vous devez apporter des modifications, **choisissez Retour** pour revenir à une page précédente.
 

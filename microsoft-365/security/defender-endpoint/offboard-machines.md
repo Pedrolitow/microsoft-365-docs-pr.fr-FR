@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fec93e45fbdced0cc6c4106d24a29eb13087d02
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4cdd61ffaf91f6ddf88825f243abba38ffe78cd9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531039"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323658"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Désintégrage des appareils du service Microsoft Defender pour point de terminaison
 
@@ -47,7 +47,7 @@ Suivez les instructions correspondantes en fonction de votre méthode de déploi
 >
 > Le profil de l’appareil (sans données) reste dans la [liste des appareils](machines-view-overview.md) pendant plus de 180 jours.
 >
-> En outre, les appareils qui ne sont pas actifs au cours des 30 derniers jours ne sont pas pris en compte sur les données qui reflètent le [score d’exposition](tvm-exposure-score.md) Gestion des menaces et des vulnérabilités de votre organisation et le score de sécurité Microsoft pour les appareils.
+> En outre, les appareils qui ne sont pas actifs au cours des 30 derniers jours ne sont pas pris en compte sur les données qui reflètent le [score d’exposition](tvm-exposure-score.md) de la gestion des vulnérabilités Defender de votre organisation et le score de sécurité Microsoft pour les appareils.
 >
 > Pour afficher uniquement les appareils actifs, vous pouvez filtrer par [état d’intégrité du capteur](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [balises d’appareil](machine-tags.md) ou [groupes d’ordinateurs](machine-groups.md).
 

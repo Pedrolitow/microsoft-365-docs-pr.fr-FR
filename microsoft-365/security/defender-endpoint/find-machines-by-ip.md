@@ -1,7 +1,7 @@
 ---
 title: Rechercher des appareils par API IP interne
-description: Rechercher les appareils visibles avec l’adresse IP interne demandée dans l’plage de temps de 15 minutes avant et après un timestamp donné
-keywords: api, api de graphique, api pris en charge, obtenir, appareil, IP, rechercher, rechercher un appareil, par ip, ip
+description: Rechercher les appareils affichés avec l’adresse IP interne demandée dans l’intervalle de temps de 15 minutes avant et après un horodatage donné
+keywords: api, api graphe, api prises en charge, get, device, IP, find, find device, by ip, ip
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 702626d3e147bdd02c4988ffabbd158a44f911c7
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 84db0ee6740e6b6a47090a94ebc032d0176071f9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302265"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323336"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Rechercher des appareils par API IP interne
 
@@ -39,30 +39,30 @@ ms.locfileid: "61302265"
 
 ## <a name="api-description"></a>Description de l’API
 
-Recherchez [les](machine.md) ordinateurs visibles avec l’adresse IP interne demandée dans l’plage de temps de 15 minutes avant et après un timestamp donné.
+Recherchez [les ordinateurs](machine.md) affichés avec l’adresse IP interne demandée dans l’intervalle de temps de 15 minutes avant et après un horodatage donné.
 
 ## <a name="limitations"></a>Limites
 
-1. L’timestamp donné doit se trouver dans les 30 derniers jours.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. L’horodatage donné doit se trouver au cours des 30 derniers jours.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.Read.All|'Lire tous les profils d’ordinateur'
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.Read|« Lire les informations de l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - La réponse inclut uniquement les appareils accessibles par l’utilisateur en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils). [](machine-groups.md)
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - La réponse inclut uniquement les appareils accessibles par l’utilisateur en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils). [](machine-groups.md)
+> - La réponse inclut uniquement les appareils auxquels l’utilisateur a accès en fonction des paramètres de groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - La réponse inclut uniquement les appareils auxquels l’utilisateur a accès en fonction des paramètres de groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -74,7 +74,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -82,14 +82,14 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
-Si l’timestamp n’est pas dans les 30 derniers jours - 400 demande mauvaise.
+En cas de réussite - 200 OK avec la liste des machines dans le corps de la réponse.
+Si l’horodatage n’est pas dans les 30 derniers jours - 400 Demande incorrecte.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2019-09-22T08:44:05Z)

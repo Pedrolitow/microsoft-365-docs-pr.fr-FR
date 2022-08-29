@@ -1,6 +1,6 @@
 ---
-title: Résoudre les problèmes de réponse en direct de Microsoft Defender pour les points de terminaison
-description: Résoudre les problèmes qui peuvent survenir lors de l’utilisation d’une réponse en direct dans Microsoft Defender pour le point de terminaison
+title: Résoudre Microsoft Defender pour point de terminaison problèmes de réponse en direct
+description: Résoudre les problèmes qui peuvent survenir lors de l’utilisation d’une réponse active dans Microsoft Defender pour point de terminaison
 keywords: résoudre les problèmes de réponse en direct, en direct, réponse, verrouillé, fichier
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,31 +14,31 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4a3bab27a4e2efd6b196167754303f35d5553de6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c6a2f676839caefc34b9dff03f860d04a260de0c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164729"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384921"
 ---
-# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre les problèmes de réponse en direct de Microsoft Defender pour les points de terminaison
+# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre Microsoft Defender pour point de terminaison problèmes de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cette page fournit des étapes détaillées pour résoudre les problèmes de réponse en direct.
 
 ## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>Impossible d’accéder au fichier pendant les sessions de réponse en direct
 
-Si, lors d’une tentative d’action au cours d’une session de réponse en direct, vous rencontrez un message d’erreur indiquant que le fichier n’est pas accessible, vous devez suivre les étapes ci-dessous pour résoudre le problème.
+Si, lors de la tentative d’action pendant une session de réponse en direct, vous rencontrez un message d’erreur indiquant que le fichier n’est pas accessible, vous devez suivre les étapes ci-dessous pour résoudre le problème.
 
-1. Copiez l’extrait de code de script suivant et enregistrez-le en tant que fichier PS1 :
+1. Copiez l’extrait de code de script suivant et enregistrez-le sous la forme d’un fichier PS1 :
 
     ```powershell
     $copied_file_path=$args[0]
@@ -55,20 +55,21 @@ Si, lors d’une tentative d’action au cours d’une session de réponse en di
     }
     ```
 
-2. Ajoutez le script à la bibliothèque de réponses en direct.
-3. Exécutez le script avec un paramètre : le chemin d’accès au fichier à copier.
+2. Ajoutez le script à la bibliothèque de réponses actives.
+3. Exécutez le script avec un paramètre : le chemin d’accès du fichier à copier.
 4. Accédez à votre dossier TEMP.
-5. Exécutez l’action que vous souhaitez exécuter sur le fichier copié.
+5. Exécutez l’action que vous souhaitez effectuer sur le fichier copié.
 
-## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Sessions de réponse en direct lentes ou retards pendant les connexions initiales
+## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Sessions ou retards de réponse en direct lents pendant les connexions initiales
 
-Live Response tire parti de Defender pour l’inscription du capteur de point de terminaison auprès du service WNS dans Windows. Si vous avez des problèmes de connectivité avec la réponse en direct, confirmez les détails suivants :
+La réponse dynamique tire parti de l’inscription du capteur Defender pour point de terminaison avec le service WNS dans Windows. Si vous rencontrez des problèmes de connectivité avec la réponse en direct, confirmez les détails suivants :
 
-1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir Configurer [les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-2. WpnService (Windows Service système de notifications Push) n’est pas désactivé.
+1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, consultez [Configurer les paramètres de proxy d’appareil et de connectivité Internet](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+2. WpnService (service système de notifications Push Windows) n’est pas désactivé.
+3. La connectivité WpnService avec le cloud WNS n’est pas désactivée via la stratégie de groupe ou le paramètre GPM. [L’option « Désactiver l’utilisation du réseau de notifications »](/windows/client-management/mdm/policy-csp-notifications) ne doit pas être définie sur « 1 ».
 
 Reportez-vous aux articles ci-dessous pour bien comprendre le comportement et les exigences du service WpnService :
 
-- [Windows vue d’Notification Services WNS (Push Notification Services)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise pare-feu et les configurations proxy pour prendre en charge le trafic WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
-- [Plages IP publiques MPNS (Microsoft Push Notifications Service)](https://www.microsoft.com/download/details.aspx?id=44535)
+- [Vue d’ensemble de Windows Push Notification Services (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Configurations de pare-feu d’entreprise et de proxy pour prendre en charge le trafic WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Plages d’adresses IP publiques de Microsoft Push Notifications Service (MPNS)](https://www.microsoft.com/download/details.aspx?id=44535)

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Bulgarie Uniform civil number sensitive information type entity definition.
-ms.openlocfilehash: 95bbe1368ca4d6d91d98d07f5cd1c48029fd8499
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f9e97c049cf20f3c804e0fbf0f12489e557ad9f1
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995549"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369668"
 ---
 # <a name="bulgaria-uniform-civil-number"></a>Numéro civil uniforme de l’Espagne
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 
@@ -85,8 +77,8 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 
 ### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
-- Bnn #
-- Bnn
+- bnn#
+- bnn
 - bucn #
 - bucn
 - edinen grazhdanski nomer
@@ -95,12 +87,12 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - numéro d’identification
 - id national
 - numéro national
-- nationalnumber #
-- nationalnumber
+- #numéronational
+- numéronational
 - ID personnel
 - personnel non
 - numéro personnel
-- personalidnumber #
+- #numéroidpersonnel
 - numéro de sécurité sociale
 - nss#
 - nss

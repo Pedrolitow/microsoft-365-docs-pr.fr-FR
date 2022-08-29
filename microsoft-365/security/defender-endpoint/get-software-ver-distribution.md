@@ -1,9 +1,8 @@
 ---
 title: Répertorier la distribution de versions du logiciel
-description: Récupère la liste de la distribution des versions logicielles de votre organisation
-keywords: api, api de graphique, api pris en charge, obtenir, distribution de version de logiciel, api tvm Microsoft Defender pour endpoint
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+description: Récupère une liste de la distribution des versions logicielles de votre organisation
+keywords: api, api graphe, api prises en charge, get, distribution de versions logicielles, api Microsoft Defender pour point de terminaison tvm
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,21 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ed4730b54f92a8baafcce6e3f8e46bf9f5fc39
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6afbf0bad7d5abde965c36f1c8c55dfdb646f741
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165041"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342946"
 ---
 # <a name="list-software-version-distribution"></a>Répertorier la distribution de versions du logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -38,11 +37,11 @@ ms.locfileid: "61165041"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Extrait une liste de la distribution des versions de logiciels de votre organisation.
+Récupère une liste de la distribution de versions logicielles de votre organisation.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -59,7 +58,7 @@ GET /api/Software/{Id}/distributions
 
 |Nom|Type|Description
 |---|---|---|
-|Autorisation|String|Porteur {token}. **Obligatoire**.
+|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -67,7 +66,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec une liste de données de distribution de logiciels dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec une liste de données de distribution de logiciels dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -103,7 +102,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire logiciel de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912756"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343500"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
 
@@ -104,10 +104,10 @@ L’intégration des appareils aux solutions Microsoft Purview est nécessaire p
 
 Rubrique | Description
 :---|:---
-|[Intégrer et déconnecter des appareils macOS dans les solutions Microsoft Purview à l’aide d’Intune](device-onboarding-offboarding-macos-intune.md)|Pour les appareils macOS gérés via Intune
-|[Intégrer et désactiver les appareils macOS dans les solutions de conformité à l’aide d’Intune pour les clients Microsoft Defender pour points de terminaison](device-onboarding-offboarding-macos-intune-mde.md) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
-|[Intégrer et déconnecter des appareils macOS dans des solutions Microsoft Purview à l’aide de JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Pour les appareils macOS gérés via JAMF Pro
-|[Intégrer et déconnecter des appareils macOS dans des solutions de conformité à l’aide de JAMF Pro pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-jamfpro-mde.md)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[Intune](device-onboarding-offboarding-macos-intune.md)|Pour les appareils macOS gérés via Intune
+|[Intune pour les clients Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-intune-mde.md) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Pour les appareils macOS gérés via JAMF Pro
+|[JAMF Pro pour Microsoft Defender pour point de terminaison](device-onboarding-offboarding-macos-jamfpro-mde.md)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 
 
 ## <a name="related-topics"></a>Voir aussi

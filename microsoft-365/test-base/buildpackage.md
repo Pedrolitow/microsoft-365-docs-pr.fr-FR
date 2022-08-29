@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 02/28/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: db09d1b182965c0a21945b025601c21d5100212b
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 75de203a09b27870287ec1253d2f485575d188ee
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952905"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315523"
 ---
 # <a name="build-a-package"></a>Créer un package
 
@@ -165,7 +165,7 @@ Toutefois, il est recommandé d’exécuter le test localement pour vous assurer
 
 1. Préparer une machine virtuelle
 
-   Nous vous recommandons d’utiliser une machine virtuelle pour ce test local, car un environnement de Windows propre est actuellement nécessaire pour chaque test. Il est facile de créer une machine virtuelle Windows sur Azure ([démarrage rapide : Windows machine virtuelle](/azure/virtual-machines/windows/quick-create-portal)), vous pouvez sélectionner une version Windows appropriée (image) pour votre test, par exemple, *Windows 10 Professionnel, version 21H2.*<br>
+   Nous vous recommandons d’utiliser une machine virtuelle pour ce test local, car un environnement Windows propre est actuellement nécessaire pour chaque test. Il est facile de créer une machine virtuelle Windows sur Azure ([démarrage rapide : machine virtuelle Windows](/azure/virtual-machines/windows/quick-create-portal)), vous pouvez sélectionner une version (image) Windows appropriée pour votre test, par exemple, *Windows 10 Professionnel, version 21H2.*<br>
 
 2. Copier votre package sur la machine virtuelle
 
@@ -214,6 +214,6 @@ Toutefois, il est recommandé d’exécuter le test localement pour vous assurer
 
 Après chaque étape, vous pouvez vérifier s’il existe des problèmes dans votre script. Si tous les scripts s’exécutent comme prévu, votre package est prêt à être chargé sur votre compte de base de test.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-[Télécharger un package](uploadApplication.md)
+[Charger un package](uploadApplication.md)

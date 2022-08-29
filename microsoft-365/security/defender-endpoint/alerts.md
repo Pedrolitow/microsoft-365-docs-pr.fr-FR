@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67d9ca5cbab765f1c195214e89be11f318eca7cd
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 626b18829594c6cd88421fd183c2403a84bf0a4e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099989"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322384"
 ---
 # <a name="alert-resource-type"></a>Type de ressource d’alerte
 
@@ -63,7 +63,7 @@ ms.locfileid: "67099989"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|String|ID d’alerte.|
+|id|Chaîne|ID d’alerte.|
 |title|String|Titre de l’alerte.|
 |description|String|Description de l’alerte.|
 |alertCreationTime|Nullable DateTimeOffset|Date et heure (en UTC) de la création de l’alerte.|
@@ -74,22 +74,22 @@ ms.locfileid: "67099989"
 |incidentId|Nullable Long|ID [d’incident](view-incidents-queue.md) de l’alerte.|
 |investigationId|Nullable Long|ID [d’investigation](automated-investigations.md) associé à l’alerte.|
 |investigationState|Énumération nullable|État actuel de [l’investigation](automated-investigations.md). Les valeurs possibles sont : ' Unknown', 'Terminateed', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminateedByUser', 'TerminateedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|assignedTo|String|Propriétaire de l’alerte.|
-|rbacGroupName|String|Nom du groupe d’appareils RBAC.|
-|mitreTechniques|String|ID de technique Mitre Enterprise.|
-|relatedUser|String|Détails de l’utilisateur liés à une alerte spécifique.|
+|assignedTo|Chaîne|Propriétaire de l’alerte.|
+|rbacGroupName|Chaîne|Nom du groupe d’appareils RBAC.|
+|mitreTechniques|Chaîne|ID de technique Mitre Enterprise.|
+|relatedUser|Chaîne|Détails de l’utilisateur liés à une alerte spécifique.|
 |Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified », « Informational », « Low », « Medium » et « High ».|
 |status|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown », « New », « InProgress » et « Resolved ».|
 |classification|Énumération nullable|Spécification de l’alerte. Les valeurs possibles sont : « Unknown », « FalsePositive », « TruePositive ».|
-|détermination|Énumération nullable|Spécifie la détermination de l’alerte. Les valeurs possibles sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other ».|
+|Détermination|Énumération nullable|Spécifie la détermination de l’alerte. Les valeurs possibles sont : « NotAvailable », « Apt », « Malware », « SecurityPersonnel », « SecurityTesting », « UnwantedSoftware », « Other ».|
 |category|String|Catégorie de l’alerte.|
-|detectionSource|String|Source de détection.|
-|threatFamilyName|String|Famille de menaces.|
-|threatName|String|Nom de la menace.|
-|machineId|String|ID d’une entité [de machine](machine.md) associée à l’alerte.|
-|computerDnsName|String|nom complet de [l’ordinateur](machine.md).|
-|aadTenantId|String|ID Azure Active Directory.|
-|detectorId|String|ID du détecteur qui a déclenché l’alerte.|
+|detectionSource|Chaîne|Source de détection.|
+|threatFamilyName|Chaîne|Famille de menaces.|
+|threatName|Chaîne|Nom de la menace.|
+|machineId|Chaîne|ID d’une entité [de machine](machine.md) associée à l’alerte.|
+|computerDnsName|Chaîne|nom complet de [l’ordinateur](machine.md).|
+|aadTenantId|Chaîne|ID Azure Active Directory.|
+|detectorId|Chaîne|ID du détecteur qui a déclenché l’alerte.|
 |commentaires|Liste des commentaires d’alerte|L’objet Commentaire d’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.|
 |Évidence|Liste des preuves d’alerte|Preuve liée à l’alerte. Voir l’exemple ci-dessous.|
 |

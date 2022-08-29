@@ -1,6 +1,6 @@
 ---
 title: Configurations d’évaluation des bases de référence de sécurité
-description: Fournit des informations sur les configurations d’évaluation des bases de référence de sécurité qui extraient des données « Gestion des menaces et des vulnérabilités ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
+description: Fournit des informations sur les configurations d’évaluation des bases de référence de sécurité qui extraient des données « Gestion des vulnérabilités Microsoft Defender ». Il existe différents appels d’API pour obtenir différents types de données. En général, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités des appareils, rapport de vulnérabilité des appareils, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cef91fd3aabb8d857abe8386933c986d62953c42
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 396f5f83123ec3040cd773e1fe2abd201bd8a3ae
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66991897"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344502"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Liste des configurations d’évaluation des lignes de base de sécurité
 
@@ -32,7 +32,7 @@ ms.locfileid: "66991897"
 - [Gestion des vulnérabilités de Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? [Inscrivez-vous à un essai gratuit.- Mise à jour](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Gestion des vulnérabilités Microsoft Defender ? En savoir plus sur la façon dont vous pouvez vous inscrire à la [Gestion des vulnérabilités Microsoft Defender préversion publique](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## <a name="1-get-all-security-baselines-assessment-configurations"></a>1. Obtenir toutes les configurations d’évaluation des bases de référence de sécurité
 
@@ -66,13 +66,13 @@ Si elle réussit, cette méthode retourne 200 OK avec la liste des configuration
 
 |Propriété | Type | Description |
 |:---|:---|:---|
-|ID | String | Identificateur unique de la configuration spécifique dans le benchmark de référence.
-|nom | String | Le nom de configuration qui s’y trouve apparaît dans le benchmark.
-|description | String | Description de la configuration tel qu’elle apparaît dans le benchmark.
+|ID | Chaîne | Identificateur unique de la configuration spécifique dans le benchmark de référence.
+|nom | Chaîne | Le nom de configuration qui s’y trouve apparaît dans le benchmark.
+|description | Chaîne | Description de la configuration tel qu’elle apparaît dans le benchmark.
 |category | String | Catégorie de configuration tel qu’elle apparaît dans le benchmark.
-|complianceLevel|String|Niveau de conformité du benchmark où cette configuration apparaît.
+|complianceLevel|Chaîne|Niveau de conformité du benchmark où cette configuration apparaît.
 |`cce`|Int|CCE pour cette configuration telle qu’elle apparaît dans le benchmark.
-|Justification |String|Justification de cette configuration telle qu’elle apparaît dans le benchmark. Pour le benchmark STIG, cela n’est pas fourni pour cette configuration.
+|Justification |Chaîne|Justification de cette configuration telle qu’elle apparaît dans le benchmark. Pour le benchmark STIG, cela n’est pas fourni pour cette configuration.
 
 ## <a name="16-example"></a>Exemple 1.6
 

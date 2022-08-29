@@ -1,8 +1,8 @@
 - name: Microsoft 365 Business Premium
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       href: index.md
-    - name: Exécuter votre entreprise de manière plus sécurisée
+    - name: Productivité et sécurité
       href: m365bp-secure-users.md
     - name: Microsoft 365 Business Premium playbook d’évaluation
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -16,7 +16,7 @@
   items:
     - name: Se connecter et configurer
       items:
-        - name: Vue d’ensemble
+        - name: Vue d'ensemble
           href: m365bp-setup-overview.md
         - name: Configurer Microsoft 365 Business Premium
           href: m365bp-setup.md
@@ -68,7 +68,7 @@
   items:
     - name: Configurer et sécuriser des appareils gérés
       items:
-        - name: Vue d’ensemble
+        - name: Vue d'ensemble
           href: m365bp-protect-devices.md
         - name: Configurer les appareils gérés
           href: m365bp-managed-devices-setup.md
@@ -76,10 +76,10 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Protéger les appareils Windows
           items:
-            - name: Effectuer une mise à niveau vers Windows 10 Professionnel (si nécessaire)
-              href: m365bp-upgrade-windows-10-pro.md
             - name: Sécuriser les appareils Windows
               href: m365bp-secure-windows-devices.md
+            - name: Effectuer une mise à niveau vers Windows 10 Professionnel (si nécessaire)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: Gérer les appareils Windows
               href: m365bp-manage-windows-devices.md
             - name: Préparation au déploiement client Office
@@ -128,7 +128,21 @@
       href: microsoft-365-business-faqs.yml
     - name: Contenu de l’administrateur Microsoft 365
       href: /microsoft-365/admin/
-    - name: Configurer Autopilot
+    - name: Microsoft Defender pour les PME
+      href: ../security/defender-business/index.yml
+    - name: Microsoft Defender pour Office 365
+      href: ../security/office-365-security/overview.md
+    - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md
+    - name: Protection contre les menaces par l’antivirus Microsoft Defender
+      href: m365bp-threats-detected-defender-av.md
+    - name: Intune rôles d’administrateur
+      href: m365bp-intune-admin-roles-in-the-mac.md
+    - name: Mappage des fonctionnalités de protection avec les paramètres Intune
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Gestionnaire de conformité
+      href: m365bp-set-up-compliance.md
+    - name: Windows Autopilot
       items:
         - name: Ajout d’un profil et d’appareils AutoPilot
           href: m365bp-add-Autopilot-devices-and-profile.md
@@ -140,15 +154,3 @@
       href: m365bp-app-protection-settings-for-android-and-ios.md
     - name: Valider les paramètres d’application sur Android et iOS
       href: m365bp-validate-settings-on-android-or-ios.md
-    - name: Mappage des fonctionnalités de protection avec les paramètres Intune
-      href: m365bp-map-protection-features-to-intune-settings.md
-    - name: Intune rôles d’administrateur
-      href: m365bp-intune-admin-roles-in-the-mac.md
-    - name: Configurer le Gestionnaire de conformité
-      href: m365bp-set-up-compliance.md
-    - name: Microsoft Defender pour les PME
-      href: ../security/defender-business/index.yml
-    - name: Microsoft Defender pour Office 365
-      href: ../security/office-365-security/overview.md
-    - name: Microsoft 365 Lighthouse
-      href: ../lighthouse/m365-lighthouse-overview.md

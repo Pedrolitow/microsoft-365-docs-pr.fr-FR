@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment gérer le partage pour le Tableau blanc Microsoft.
-ms.openlocfilehash: 61f8a79cd17721d1a383038bd8912d87c625ac4c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: b5455886067bb343a0a3bbd499f4271bc72971b6
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275953"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383763"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Gérer le partage pour le Tableau blanc Microsoft
 
@@ -70,7 +70,7 @@ Lorsque vous ajoutez un tableau blanc sous forme d’onglet dans un canal ou une
 
 |Scénario|Stockage et propriété|Paramètres de partage|Expérience de partage|
 |---|---|---|---|
-|Ajouter le tableau blanc à un canal ou une conversation à partir d’un ordinateur de bureau ou d’un appareil mobile|Stockage : OneDrive Entreprise<br><br>Propriétaire : Utilisateur qui crée le tableau blanc|Non applicable (s’applique uniquement aux réunions)|Utilisateurs in-tenants : peuvent lancer, afficher et collaborer<br><br>Utilisateurs externes : non pris en charge<br><br>Invités Teams : Possibilité d’afficher et de collaborer<br><br>Comptes d’appareil partagés : non applicable|
+|Ajouter le tableau blanc à un canal ou une conversation à partir d’un ordinateur de bureau ou d’un appareil mobile|Stockage : OneDrive Entreprise<br><br>Propriétaire : Utilisateur qui crée le tableau blanc|Non applicable (s’applique uniquement aux réunions)|Utilisateurs in-tenants : peuvent lancer, afficher et collaborer<br><br>Utilisateurs externes : non pris en charge<br><br>Invités Teams : Non pris en charge<br><br>Comptes d’appareil partagés : non applicable|
 
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Créer et partager dans des clients natifs de tableau blanc
 

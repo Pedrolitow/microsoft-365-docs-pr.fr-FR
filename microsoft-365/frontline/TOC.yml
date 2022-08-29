@@ -53,6 +53,8 @@
           href: flw-team-collaboration.md
         - name: Communications d’entreprise avec les employés de première ligne
           href: flw-corp-comms.md
+        - name: Aider vos employés à utiliser les applications et fonctionnalités de collaboration
+          href: collab-features-apps-toolkit.md
     - name: Bien-être et engagement
       items:
         - name: Impliquez vos employés et concentrez-vous sur le bien-être
@@ -69,6 +71,8 @@
           href: schedule-owner-for-shift-management.md
         - name: Gérez l’accès basé sur les roulements dans Teams
           href: manage-shift-based-access-flw.md
+        - name: Aider vos employés à suivre l’heure et la présence
+          href: shifts-toolkit.md
         - name: Connecteurs de Plannings
           items:
             - name: Vue d’ensemble

@@ -1,7 +1,7 @@
 ---
-title: Liste du score d’exposition par groupe d’appareils
+title: Répertorier le score d’exposition par groupe d’appareils
 description: Récupère une liste des scores d’exposition par groupe d’appareils.
-keywords: api, api de graphique, api pris en charge, obtenir, score d’exposition, groupe d’appareils, score d’exposition du groupe d’appareils
+keywords: api, api graphe, api prises en charge, get, score d’exposition, groupe d’appareils, score d’exposition du groupe d’appareils
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ba046d35b6cf93754fc1daf3d2b211d69e6c27d8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3740ef8976982d29ef75419fc7ae105f6a686a5b
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301629"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343304"
 ---
-# <a name="list-exposure-score-by-device-group"></a>Liste du score d’exposition par groupe d’appareils
+# <a name="list-exposure-score-by-device-group"></a>Répertorier le score d’exposition par groupe d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "61301629"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère le score d’exposition de chaque groupe d’ordinateurs.
+Récupère le score d’exposition pour chaque groupe d’ordinateurs.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---
@@ -59,7 +59,7 @@ GET /api/exposureScore/ByMachineGroups
 
 Nom|Type|Description
 ---|---|---
-|Autorisation|String|Porteur {token}. **Obligatoire**.
+|Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -67,7 +67,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par groupe d’appareils dans le corps de la réponse.
+Si elle réussit, cette méthode retourne 200 OK, avec une liste de données de score d’exposition par groupe d’appareils dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 
@@ -104,5 +104,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Score d& exposition des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Score d’exposition de La Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

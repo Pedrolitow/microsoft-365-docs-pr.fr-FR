@@ -1,7 +1,7 @@
 ---
 title: Répertorier les vulnérabilités par action d'amélioration
 description: Récupère une liste des vulnérabilités associées à la recommandation de sécurité.
-keywords: api, api de graphique, api pris en charge, obtenir, liste des vulnérabilités, recommandation de sécurité, recommandation de sécurité pour les vulnérabilités, Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
+keywords: api, api graphe, api prises en charge, get, liste des vulnérabilités, recommandation de sécurité, recommandation de sécurité pour les vulnérabilités, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 05e4719e69601024af25b2b797477506f195d328
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b2c87047a0252bba643b2f6280b74f64c5de2d16
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300226"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344896"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Répertorier les vulnérabilités par action d'amélioration
 
@@ -29,7 +29,7 @@ ms.locfileid: "61300226"
 **S’applique à :** 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,12 +41,12 @@ Récupère une liste des vulnérabilités associées à la recommandation de sé
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Vulnerability.Read.All|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Application|Vulnerability.Read.All|« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -66,7 +66,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec la liste des vulnérabilités associées à la recommandation de sécurité.
+Si elle réussit, cette méthode retourne 200 OK, avec la liste des vulnérabilités associées à la recommandation de sécurité.
 
 ## <a name="example"></a>Exemple
 
@@ -108,5 +108,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recommandations & sécurité des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recommandation de sécurité de Gestion des vulnérabilités Defender](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

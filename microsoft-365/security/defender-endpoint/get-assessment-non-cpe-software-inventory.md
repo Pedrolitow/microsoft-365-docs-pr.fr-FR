@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cafdfad60a3d3f523b731f5e3b83752a64ffdd1a
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 223ca8ab9eac14b456c62dad3d644ad067092766
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277180"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344498"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel du code non produit par appareil
 
@@ -97,13 +97,13 @@ Propriété (ID)|Type de données|Description
 :---|:---|:---
 DeviceId|string|Identificateur unique de l’appareil dans le service.
 DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
+OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Il s’agit de systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus [d’informations, consultez systèmes d’exploitation, plateformes et fonctionnalités pris en charge](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|string|Groupe de contrôle d’accès en fonction du rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur est « Non affecté ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RbacGroupId|string|ID de groupe de contrôle d’accès en fonction du rôle (RBAC).
-SoftwareLastSeenTimestamp|string|La dernière fois que ce logiciel a été vu sur l’appareil.
-SoftwareName|string|Nom du produit logiciel.
-SoftwareVendor|chaîne|Nom du fournisseur de logiciels.
-SoftwareVersion|string|Numéro de version du produit logiciel.
+SoftwareLastSeenTimestamp|chaîne|La dernière fois que ce logiciel a été vu sur l’appareil.
+SoftwareName|chaîne|Nom du produit logiciel.
+SoftwareVendor|string|Nom du fournisseur de logiciels.
+SoftwareVersion|chaîne|Numéro de version du produit logiciel.
 
 ### <a name="16-examples"></a>1.6 Exemples
 
@@ -202,7 +202,7 @@ GET /api/machines/Api/Machines/SoftwareInventoryNonCpeExport
 Propriété (ID)|Type de données|Description|Exemple de valeur retournée
 :---|:---|:---|:---
 Exporter des fichiers|chaîne de tableau\[\]|Liste des URL de téléchargement pour les fichiers contenant l’instantané actuel de l’organisation|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|Heure à laquelle l’exportation a été générée.|2021-05-20T08:00:00Z
+GeneratedTime|chaîne|Heure à laquelle l’exportation a été générée.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Exemples
@@ -237,6 +237,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 - [Exporter l’évaluation des vulnérabilités logicielles par appareil](get-assessment-software-vulnerabilities.md)
 
 Autres éléments connexes
-
-- [Gestion des vulnérabilités & des menaces basées sur les risques](next-gen-threat-and-vuln-mgt.md)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

@@ -1,7 +1,7 @@
 ---
 title: Répertorier toutes les actions d’amélioration
-description: Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
-keywords: api, api de graphique, api pris en charge, obtenir, recommandations de sécurité, api tvm Microsoft Defender pour endpoint, api Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
+description: Récupère une liste de toutes les recommandations de sécurité affectant l’organisation.
+keywords: api, api graphe, api prises en charge, get, recommandations de sécurité, api tvm Microsoft Defender pour point de terminaison, Gestion des menaces et des vulnérabilités, api Gestion des menaces et des vulnérabilités, mdvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 727b20e6784016aac423a74c6b564fa96d6f5733
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: c420d73326cc9965f0b4a5d57af5adba83c30f1d
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301929"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343084"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 
@@ -39,29 +39,29 @@ ms.locfileid: "61301929"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
+Récupère une liste de toutes les recommandations de sécurité affectant l’organisation.
 
 
 ## <a name="api-description"></a>Description de l’API
 
 Retourne des informations sur toutes les recommandations de sécurité affectant l’organisation.
 
-*URL :* GET :/api/recommendations
-<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
-<br>Opérateurs pris en charge par OData :
-<br>```$filter``` on:  ```id``` , , , , , , , , ```productName``` , , ```vendor``` et ```recommendedVersion``` ```recommendationCategory``` ```subCategory``` ```severityScore``` ```remediationType``` ```recommendedProgram``` ```recommendedVendor``` ```status``` properties.
+*URL:* GET:/api/recommendations
+<br>Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
+<br>Opérateurs OData pris en charge :
+<br>```$filter```on: ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory``````subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```et ```status``` propriétés.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+<br>Consultez des exemples dans les [requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
-Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read |« Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
+Application|SecurityRecommendation.Read.All|« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
+Déléguée (compte professionnel ou scolaire)|SecurityRecommendation.Read |« Lire les informations de recommandation de sécurité sur la gestion des menaces et des vulnérabilités »
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +73,7 @@ GET /api/recommendations
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -81,7 +81,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec la liste des recommandations de sécurité dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec la liste des recommandations de sécurité dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -136,5 +136,5 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Recommandations & sécurité des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Recommandations en matière de sécurité de la gestion des vulnérabilités](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

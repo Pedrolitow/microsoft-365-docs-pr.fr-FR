@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 029be738b8c916ec4eb16970ae2d2ff3c460f639
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2116306529530561fab9e4c8107a7b97e64fb5a1
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771971"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344698"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Didacticiels et simulations dans Microsoft Defender pour entreprises
 
@@ -48,7 +48,7 @@ Le tableau suivant décrit les didacticiels recommandés pour les clients Defend
 |---------|---------|
 | **Document Drops Backdoor**     | Simuler une attaque qui introduit des programmes malveillants basés sur des fichiers sur un appareil de test. Le didacticiel explique comment utiliser le fichier de simulation et ce qu’il faut surveiller dans le portail Microsoft 365 Defender. <p>Ce didacticiel nécessite l’installation de Microsoft Word sur votre appareil de test.   |
 | **Réponse en direct**     | Découvrez comment utiliser des commandes de base et avancées avec Live Response. Découvrez comment localiser un fichier suspect, corriger le fichier et collecter des informations sur un appareil.   |
-| **Gestion des vulnérabilités & des menaces (scénarios principaux)**     | Découvrez Gestion des menaces et des vulnérabilités dans trois scénarios :<ol><li>Réduisez l’exposition aux menaces et aux vulnérabilités de votre entreprise.</li><li>Demandez une correction.</li><li>Créez une exception pour les recommandations de sécurité.</li></ol> <p> Threat & Vulnerability Management utilise une approche basée sur les risques pour la découverte, la hiérarchisation et la correction des vulnérabilités et des erreurs de configuration des points de terminaison.      |
+| **Gestion des vulnérabilités Microsoft Defender(scénarios principaux)**     | Découvrez la gestion des vulnérabilités defender dans trois scénarios :<ol><li>Réduisez l’exposition aux menaces et aux vulnérabilités de votre entreprise.</li><li>Demandez une correction.</li><li>Créez une exception pour les recommandations de sécurité.</li></ol> <p> La gestion des vulnérabilités Defender utilise une approche basée sur les risques pour la découverte, la hiérarchisation et la correction des vulnérabilités et des configurations incorrectes des points de terminaison.      |
 
 Chaque didacticiel inclut un document pas à pas qui explique le scénario, son fonctionnement et ce qu’il faut faire.
 
@@ -65,7 +65,7 @@ Chaque didacticiel inclut un document pas à pas qui explique le scénario, son 
 
    - **Document Drops Backdoor**
    - **Réponse en direct**
-   - **Gestion des vulnérabilités & des menaces (scénarios principaux)**
+   - **Gestion des vulnérabilités Microsoft Defender (scénarios principaux)**
 
 ## <a name="next-steps"></a>Prochaines étapes
 

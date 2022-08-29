@@ -1,7 +1,7 @@
 ---
 title: Obtenir toutes les vulnérabilités
 description: Récupère une liste de toutes les vulnérabilités affectant l’organisation
-keywords: api, api de graphique, api pris en charge, obtenir, informations de vulnérabilité, api tvm Microsoft Defender pour endpoint
+keywords: api, api graphe, api prises en charge, get, informations sur les vulnérabilités, Microsoft Defender pour point de terminaison api tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0eac4b6add7ef8a666d05b550ae16965f78d1a0d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 25f7e51555bcd4348185eb91fa004ccbb8395419
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300464"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342934"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
@@ -41,16 +41,16 @@ ms.locfileid: "61300464"
 ## <a name="api-description"></a>Description de l’API
 
 Récupère une liste de toutes les vulnérabilités.
-<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
-<br>Opérateurs pris en charge par OData :
-<br>```$filter``` on:  ```id``` , , , , , , , and ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
+<br>Prend [en charge les requêtes OData V4](https://www.odata.org/documentation/).
+<br>Opérateurs OData pris en charge :
+<br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```et ```updatedOn``` properties.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+<br>Consultez des exemples dans les [requêtes OData avec Microsoft Defender pour point de terminaison](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L’une des autorisations suivantes est requise pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md) pour plus d’informations.
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -67,7 +67,7 @@ GET /api/vulnerabilities
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -75,7 +75,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK avec la liste des vulnérabilités dans le corps.
+Si elle réussit, cette méthode retourne 200 OK avec la liste des vulnérabilités dans le corps.
 
 ## <a name="example"></a>Exemple
 
@@ -118,5 +118,5 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
