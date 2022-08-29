@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/09/2022
+ms.date: 08/18/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business Premium
-ms.openlocfilehash: 361ddc713a0616cd595ed2794d02db8c38707477
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
-ms.translationtype: HT
+ms.openlocfilehash: 24e92f47586e9576d8cfbb0616d3b25f28f7482a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300648"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386536"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Protégez-vous contre les programmes malveillants et autres cybermenaces avec Microsoft 365 Business Premium
 
@@ -34,6 +34,7 @@ Dans cet objectif, vous augmentez votre protection contre les menaces avec Micro
 - [Stratégies de sécurité personnalisées](#create-custom-security-policies) que vous pouvez définir en fonction des besoins de votre entreprise.
 - [Comment ajuster vos paramètres de partage pour les fichiers et dossiers SharePoint et OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [Stratégies d’alerte](#review-your-alert-policies) qui surveillent des fichiers spécifiques et comment ils sont utilisés.
+- [Gérez le partage de calendrier](#manage-calendar-sharing) pour permettre aux utilisateurs de planifier des réunions de manière appropriée.
 - [Vos objectifs suivants](#next-objectives).
 
 ## <a name="review-and-apply-preset-security-policies"></a>Examiner et appliquer des stratégies de sécurité prédéfinies
@@ -70,11 +71,11 @@ Si plusieurs stratégies sont affectées aux utilisateurs, un ordre de priorité
 
 1. **La protection stricte** reçoit la priorité la plus élevée et remplace toutes les autres stratégies.
 
-1. **Protection standard** 
+2. **Protection standard** 
 
-1. **Stratégies de sécurité personnalisées**
+3. **Stratégies de sécurité personnalisées**
 
-1. **La protection intégrée** reçoit la priorité la plus basse et est remplacée par une protection stricte, une protection standard et des stratégies personnalisées.
+4. **La protection intégrée** reçoit la priorité la plus basse et est remplacée par une protection stricte, une protection standard et des stratégies personnalisées.
 
 La protection stricte remplace toutes les autres stratégies, et la protection intégrée est remplacée par les autres stratégies. 
 
@@ -95,11 +96,11 @@ Pour affecter des stratégies de sécurité prédéfinies, procédez comme suit 
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
-1. Accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies de sécurité prédéfinies** dans la section **Stratégies prédéfinies**. (Pour accéder directement à la page **Stratégies de sécurité prédéfinies**, utilisez <https://security.microsoft.com/presetSecurityPolicies>.)
+2. Accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies de sécurité prédéfinies** dans la section **Stratégies prédéfinies**. (Pour accéder directement à la page **Stratégies de sécurité prédéfinies**, utilisez <https://security.microsoft.com/presetSecurityPolicies>.)
 
-1. Dans la page **Stratégies de sécurité prédéfinies** , dans la section **Protection standard** ou **Protection stricte**, remplacez le bouton bascule **Désactivé** par **Activé**, puis sélectionnez **Gérer**.
+3. Dans la page **Stratégies de sécurité prédéfinies** , dans la section **Protection standard** ou **Protection stricte**, remplacez le bouton bascule **Désactivé** par **Activé**, puis sélectionnez **Gérer**.
 
-1. L’Assistant **Appliquer une protection standard** ou **Appliquer une protection stricte** démarre dans un menu volant. Dans les **protections EOP s’appliquent à** la page, identifiez les destinataires internes auxquels les stratégies s’appliquent (conditions de destinataire) :
+4. L’Assistant **Appliquer une protection standard** ou **Appliquer une protection stricte** démarre dans un menu volant. Dans les **protections EOP s’appliquent à** la page, identifiez les destinataires internes auxquels les stratégies s’appliquent (conditions de destinataire) :
    - **Utilisateurs**
    - **Groupes**
    - **Domaines**
@@ -112,11 +113,11 @@ Pour affecter des stratégies de sécurité prédéfinies, procédez comme suit 
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-1. Dans la page **les protections Defender pour Office 365 s’appliquent à** pour identifier les destinataires internes auxquels les stratégies s’appliquent (conditions des destinataires). Spécifiez des utilisateurs, des groupes et des domaines comme vous l’avez fait à l’étape précédente.
+5. Dans la page **les protections Defender pour Office 365 s’appliquent à** pour identifier les destinataires internes auxquels les stratégies s’appliquent (conditions des destinataires). Spécifiez des utilisateurs, des groupes et des domaines comme vous l’avez fait à l’étape précédente.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-1. Dans la page **Vérifier et confirmer vos modifications**, vérifiez vos sélections, puis sélectionnez **Confirmer**.
+6. Dans la page **Vérifier et confirmer vos modifications**, vérifiez vos sélections, puis sélectionnez **Confirmer**.
 
 > [!TIP]
 > Pour en savoir plus sur l’attribution de stratégies de sécurité prédéfinies, consultez les articles suivants :
@@ -140,13 +141,13 @@ Par défaut, les niveaux de partage sont définis sur le niveau le plus permissi
 
 1. Accédez à la page de <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Partage** du nouveau Centre d’administration SharePoint</a>, puis connectez-vous à l’aide d’un compte disposant des [autorisations d’administrateur pour votre organisation](/sharepoint/sharepoint-admin-role).
 
-1. Sous **Partage externe**, spécifiez le niveau de partage. (Nous vous recommandons d’utiliser **le moins permissif** pour empêcher le partage externe.)
+2. Sous **Partage externe**, spécifiez le niveau de partage. (Nous vous recommandons d’utiliser **le moins permissif** pour empêcher le partage externe.)
 
-1. Sous **Liens de fichiers et de dossiers**, sélectionnez une option (par exemple **Personnes spécifiques**). Choisissez ensuite d’accorder des autorisations d’affichage ou de modification par défaut pour les liens partagés (par exemple, **Afficher**).
+3. Sous **Liens de fichiers et de dossiers**, sélectionnez une option (par exemple **Personnes spécifiques**). Choisissez ensuite d’accorder des autorisations d’affichage ou de modification par défaut pour les liens partagés (par exemple, **Afficher**).
 
-1. Sous **Autres paramètres**, sélectionnez les options que vous souhaitez utiliser.
+4. Sous **Autres paramètres**, sélectionnez les options que vous souhaitez utiliser.
 
-1. Choisissez ensuite **Enregistrer**.
+5. Choisissez ensuite **Enregistrer**.
 
 > [!TIP]
 > Pour en savoir plus sur ces paramètres, consultez [Gérer les paramètres de partage](/sharepoint/turn-external-sharing-on-or-off).
@@ -163,9 +164,9 @@ L’image suivante montre certaines des stratégies par défaut incluses dans Mi
 
 1. Allez sur le portail de conformité Microsoft Purview à l'adresse [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous.
 
-1. Dans le volet de navigation, choisissez **Stratégies**, puis choisissez **Stratégies d’alerte**.
+2. Dans le volet de navigation, choisissez **Stratégies**, puis choisissez **Stratégies d’alerte**.
 
-1. Sélectionnez une stratégie individuelle pour afficher plus de détails ou pour modifier la stratégie. L’image suivante montre une liste de stratégies d’alerte avec une stratégie sélectionnée :
+3. Sélectionnez une stratégie individuelle pour afficher plus de détails ou pour modifier la stratégie. L’image suivante montre une liste de stratégies d’alerte avec une stratégie sélectionnée :
 
    :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Capture d’écran d’une stratégie d’alerte sélectionnée.":::
 
@@ -183,19 +184,15 @@ Vous pouvez afficher vos alertes dans le portail Microsoft 365 Defender ou dans 
 
 Pour plus d’informations, consultez [Afficher les alertes](../compliance/alert-policies.md#view-alerts).
 
-## <a name="disable-or-manage-calendar-sharing"></a>Désactiver ou gérer le partage de calendrier
+## <a name="manage-calendar-sharing"></a>Gérer le partage de calendrier
 
-Vous pouvez empêcher les membres de votre organisation de partager leurs calendriers. Vous pouvez également gérer le niveau de détail qu’ils peuvent partager. Par exemple, vous pouvez limiter le partage aux heures de disponibilité uniquement.
+Vous pouvez aider les membres de votre organisation à partager leurs calendriers de manière appropriée pour une meilleure collaboration. Vous pouvez gérer le niveau de détail qu’ils peuvent partager, par exemple en limitant les détails partagés aux heures de disponibilité uniquement.
 
 1. Accédez à[Paramètres de l’organisation dans le Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) et connectez-vous.
 
-1. Choisissez **Calendrier** et indiquez si les membres de votre organisation peuvent partager leurs calendriers avec des personnes extérieures à Office 365 ou Exchange, ou avec n’importe qui.
+2. Choisissez **Calendrier** et indiquez si les membres de votre organisation peuvent partager leurs calendriers avec des personnes extérieures à Office 365 ou Exchange, ou avec n’importe qui. Nous vous recommandons d’effacer l’option de **Partage externe**. Si vous choisissez de partager des calendriers avec n’importe qui, vous pouvez également partager des informations gratuites/occupées uniquement.
 
-   Nous vous recommandons d’effacer l’option de **Partage externe**.
-
-   Si vous choisissez l’option Partager avec n’importe qui, vous pouvez également décider de partager uniquement les informations de disponibilité.
-
-1. Sélectionnez **Enregistrer les modifications** en bas de la page.
+3. Sélectionnez **Enregistrer les modifications** en bas de la page.
 
    L’image suivante montre que le partage de calendrier n’est pas autorisé.
 

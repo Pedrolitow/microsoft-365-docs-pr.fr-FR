@@ -1,7 +1,7 @@
 ---
-title: Surveiller et signaler la protection Antivirus Microsoft Defender
-description: Utilisez Configuration Manager ou des outils SIEM (Security Information and Event Management) pour consommer des rapports et surveiller Microsoft Defender AV avec PowerShell et WMI.
-keywords: siem, monitor, report, Microsoft Defender AV
+title: Surveiller et signaler la protection antivirus Microsoft Defender
+description: Utilisez Configuration Manager ou des outils SIEM (Security Information and Event Management) pour consommer des rapports et surveiller l’antivirus Microsoft Defender avec PowerShell et WMI.
+keywords: siem, monitor, report, Microsoft Defender AV, Antivirus Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 46abb6a11e1752934218a031993b10286d8ab420
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 49f272a613b45746c5c203daf03671f5032c0b59
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872245"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386071"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Signaler sur l’antivirus Microsoft Defender
 
@@ -32,15 +32,15 @@ ms.locfileid: "65872245"
 **Plateformes**
 - Windows
 
-Antivirus Microsoft Defender est intégré à Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 et Windows Server 2016. Antivirus Microsoft Defender est votre protection de nouvelle génération dans Microsoft Defender pour point de terminaison. La protection de nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans les e-mails, les applications, le cloud et le web.
+L’antivirus Microsoft Defender est intégré à Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 et Windows Server 2016. L’Antivirus Microsoft Defender est votre protection de nouvelle génération dans Microsoft Defender pour point de terminaison. La protection de nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans les e-mails, les applications, le cloud et le web.
 
-Avec Antivirus Microsoft Defender, vous disposez de plusieurs options pour passer en revue l’état de la protection et les alertes. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller Antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou [créer des alertes par e-mail](/configmgr/protect/deploy-use/endpoint-configure-alerts). Vous pouvez également surveiller la protection à l’aide [de Microsoft Intune](/intune/introduction-intune).
+Avec l’Antivirus Microsoft Defender, vous disposez de plusieurs options pour passer en revue l’état de la protection et les alertes. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller l’antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou [créer des alertes par e-mail](/configmgr/protect/deploy-use/endpoint-configure-alerts). Vous pouvez également surveiller la protection à l’aide [de Microsoft Intune](/intune/introduction-intune).
 
 Si vous disposez d’un serveur SIEM (Security Information and Event Management) tiers, vous pouvez également utiliser [Windows Defender événements clients](/windows/win32/events/windows-events).
 
-Windows événements comprennent plusieurs sources d’événements de sécurité, notamment les événements sam (Security Account Manager) ([améliorés pour Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), consultez également la rubrique [d’audit de sécurité](/windows/security/threat-protection/auditing/security-auditing-overview)) et [les événements Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
+Les événements Windows comprennent plusieurs sources d’événements de sécurité, notamment les événements sam (Security Account Manager) ([améliorés pour Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), consultez également la rubrique [d’audit de](/windows/security/threat-protection/auditing/security-auditing-overview) sécurité) et [les événements Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
 
-Ces événements peuvent être agrégés de manière centralisée à l’aide du [collecteur d’événements Windows](/windows/win32/wec/windows-event-collector). Souvent, les serveurs SIEM ont des connecteurs pour Windows événements, ce qui vous permet de mettre en corrélation tous les événements de sécurité dans votre serveur SIEM.
+Ces événements peuvent être agrégés de manière centralisée à l’aide du [collecteur d’événements Windows](/windows/win32/wec/windows-event-collector). Souvent, les serveurs SIEM ont des connecteurs pour les événements Windows, ce qui vous permet de mettre en corrélation tous les événements de sécurité dans votre serveur SIEM.
 
 Vous pouvez également [surveiller les événements de programmes malveillants à l’aide de la solution d’évaluation des programmes malveillants dans Log Analytics](/security/benchmark/azure/security-control-logging-monitoring).
 
@@ -59,4 +59,4 @@ Pour la surveillance ou la détermination de l’état avec PowerShell, WMI ou M
 ## <a name="see-also"></a>Voir aussi
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Déployer l’antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

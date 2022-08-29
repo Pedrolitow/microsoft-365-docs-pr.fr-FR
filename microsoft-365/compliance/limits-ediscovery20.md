@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery (Premium) dans Microsoft 365.
-ms.openlocfilehash: 5bf7e2be459f6238802b28da66650e238b2c4926
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ed00c6e508ce293a0327441c978928310157d996
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636026"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357541"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Limites dans eDiscovery (Premium)
 
@@ -35,13 +35,10 @@ Le tableau suivant répertorie les limites des cas et examine les ensembles dans
 |---|---|---|
 |Nombre total de documents qui peuvent être ajoutés à un cas (pour tous les ensembles de révision dans un cas).|3 millions|40 millions|
 |Taille totale du fichier par jeu de charge. Cela inclut le chargement de non-Office 365 dans un jeu de révision.|300 Go|1 To|
-|Quantité totale de données chargées dans tous les ensembles de révision de l’organisation par jour.<br/>|2 To|2 To|
 |Nombre maximal de jeux de charge par cas.|200 |200 |
 |Nombre maximal d’ensembles de révision par cas.|20|20|
 |Nombre maximal de groupes de balises par cas.|1 000|1 000|
 |Nombre maximal de balises uniques par cas.|1 000<sup>1</sup>|1 000<sup>1</sup>|
-|Nombre maximal de travaux simultanés dans votre organisation pour ajouter du contenu à un ensemble de révisions. Ces travaux sont nommés **Ajout de données à un jeu de révision** et sont affichés sous l’onglet **Travaux** dans un cas.|10<sup>2</sup>|10<sup>2</sup>|
-|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu de révisions par utilisateur. Ces travaux sont nommés **Ajout de données à un jeu de révision** et sont affichés sous l’onglet **Travaux** dans un cas.|3|3|
 
 ## <a name="hold-limits"></a>Maintenir les limites
 
@@ -65,6 +62,15 @@ Le tableau suivant répertorie les limites d’indexation dans eDiscovery (Premi
 |Taille maximale des fichiers traités par reconnaissance optique de caractères (OCR).|24 Mo<sup>4</sup> <br/> |
 |Débit d’indexation avancé maximal | 2 Go par heure |
 
+## <a name="jobs-limits"></a>Limites des travaux
+
+|Description de la limite|Limite|
+|---|---|
+|Nombre maximal de travaux simultanés dans votre organisation.|100|
+|Nombre maximal de travaux simultanés qu’un seul utilisateur peut démarrer à la fois.|50|
+|Nombre maximal de travaux simultanés à l’échelle du locataire (par exemple, recherches à l’échelle du locataire) dans votre organisation.|50|
+|Nombre maximal de travaux simultanés à l’échelle du locataire (par exemple, les recherches à l’échelle du locataire) qu’un seul utilisateur peut démarrer à la fois.|25|
+
 ## <a name="search-limits"></a>Limites de la recherche
 
 Les limites décrites dans cette section sont liées à l’utilisation de l’outil de recherche sous l’onglet **Recherches** pour collecter des données pour un cas. Pour plus d’informations, consultez [Collecter des données pour un cas dans eDiscovery (Premium).](collecting-data-for-ediscovery.md)
@@ -73,7 +79,6 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |---|---|
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche unique.|Aucune limite|
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps.|Aucune limite|
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps.|10|
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).|10 000<sup>5</sup>|
 |Nombre maximal de caractères pour une requête de recherche pour SharePoint et OneDrive Entreprise sites (y compris les opérateurs et les conditions).|10 000<br>4 000 avec des caractères génériques<sup>5</sup>|
 |Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **one\**_ ou _* set\***.|3|
@@ -114,7 +119,6 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 |Description de la limite|Limite|
 |---|---|
 |Taille maximale d’une seule exportation.|5 millions de documents ou 500 Go, selon la taille la plus petite|
-|Nombre maximal d’exportations simultanées par jeu de révision.|1|
 
 ## <a name="review-set-download-limits"></a>Passer en revue les limites de téléchargement définies
 
