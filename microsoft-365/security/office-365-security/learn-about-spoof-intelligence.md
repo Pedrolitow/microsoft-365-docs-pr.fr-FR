@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’information sur l’usurpation d’identité dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68d0d2e9ae61afcc69c8f297ca88554090838068
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 4bd690b9adae76f6920389ab59fda2210f9fc681
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281748"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388438"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence d’usurpation d’identité dans EOP
 
@@ -60,9 +60,9 @@ Le reste de cet article explique comment utiliser les informations d’usurpatio
 
 > [!NOTE]
 >
-> - Seuls les expéditeurs usurpés qui ont été détectés par le renseignement sur l’usurpation d’identité apparaissent dans l’insight sur l’usurpation d’identité. Lorsque vous remplacez le verdict d’autorisation ou de blocage dans l’insight, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés avant qu’elles ne soient détectées par l’intelligence de l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](tenant-allow-block-list.md).
+> - Seuls les expéditeurs usurpés qui ont été détectés par le renseignement sur l’usurpation d’identité apparaissent dans l’insight sur l’usurpation d’identité. Lorsque vous remplacez le verdict d’autorisation ou de blocage dans l’insight, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisation/de blocage du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés avant qu’elles ne soient détectées par l’intelligence de l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](manage-tenant-allow-block-list.md).
 >
-> - L’insight sur l’usurpation d’identité et l’onglet **Usurpation** d’identité dans la liste Autoriser/Bloquer du locataire remplacent les fonctionnalités de la stratégie de renseignement sur l’usurpation d’identité qui était disponible sur la page de stratégie anti-courrier indésirable dans le Centre de sécurité & conformité.
+> - L’information sur l’usurpation d’identité et l’onglet **Expéditeurs usurpés** dans la liste Autoriser/Bloquer du locataire remplacent les fonctionnalités de la stratégie de renseignement sur l’usurpation d’identité qui était disponible sur la page de stratégie anti-courrier indésirable dans le Centre de sécurité & conformité.
 >
 > - L’information sur l’usurpation d’identité affiche 7 jours de données. **L’applet de commande Get-SpoofIntelligenceInsight** affiche 30 jours de données.
 >
@@ -70,7 +70,7 @@ Le reste de cet article explique comment utiliser les informations d’usurpatio
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à l’onglet **Usurpation d’identité** dans la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. Pour accéder directement à la page **Informations sur l’usurpation d’identité** , utilisez <https://security.microsoft.com/spoofintelligence>.
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à l’onglet **Expéditeurs usurpés** sur la page **Autoriser/Bloquer la liste** des locataires, utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. Pour accéder directement à la page **Informations sur l’usurpation d’identité** , utilisez <https://security.microsoft.com/spoofintelligence>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -93,7 +93,7 @@ Le reste de cet article explique comment utiliser les informations d’usurpatio
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’information sur l’usurpation d’identité dans le portail Microsoft 365 Defender
 
-1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & les stratégies de **menaces** \> **de règles** \> **dans** la section **Règles**. Pour accéder directement à l’onglet **Usurpation d’identité** dans la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & les stratégies de **menaces** \> **de règles** \> **dans** la section **Règles**. Pour accéder directement à l’onglet **Expéditeurs usurpés** sur la page **Autoriser/Bloquer la liste** des locataires, utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. Dans la page **Autoriser/Bloquer des listes de locataires** , l’insight d’intelligence de l’usurpation d’identité se présente comme suit :
 
@@ -109,7 +109,7 @@ Pour afficher des informations sur les détections d’usurpation d’identité,
 ### <a name="view-information-about-spoofed-messages"></a>Afficher des informations sur les messages usurpés
 
 > [!NOTE]
-> N’oubliez pas que seuls les expéditeurs usurpés qui ont été détectés par l’usurpation d’identité apparaissent sur cette page. Lorsque vous remplacez le verdict d’autorisation ou de blocage dans l’insight, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire.
+> N’oubliez pas que seuls les expéditeurs usurpés qui ont été détectés par l’usurpation d’identité apparaissent sur cette page. Lorsque vous remplacez le verdict d’autorisation ou de blocage dans l’insight, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisation/de blocage du locataire.
 
 Dans la page **Informations sur l’usurpation d’identité** qui s’affiche après avoir cliqué sur **Afficher l’activité d’usurpation** d’identité dans l’insight d’usurpation d’identité, la page contient les informations suivantes :
 
@@ -161,7 +161,7 @@ Seuls les e-mails provenant de cette paire d’infrastructure domaine/envoi sont
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser l’insight d’intelligence d’usurpation d’identité dans Exchange Online PowerShell ou PowerShell EOP autonome
 
-Dans PowerShell, vous utilisez l’applet de commande **Get-SpoofIntelligenceInsight** pour **afficher** les expéditeurs autorisés et bloqués qui ont été détectés par l’intelligence par usurpation d’identité. Pour autoriser ou bloquer manuellement les expéditeurs usurpés, vous devez utiliser l’applet de commande **New-TenantAllowBlockListSpoofItems** . Pour plus d’informations, consultez [Utiliser PowerShell pour gérer les entrées d’expéditeur usurpées dans la liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md).
+Dans PowerShell, vous utilisez l’applet de commande **Get-SpoofIntelligenceInsight** pour **afficher** les expéditeurs autorisés et bloqués qui ont été détectés par l’intelligence par usurpation d’identité. Pour autoriser ou bloquer manuellement les expéditeurs usurpés, vous devez utiliser l’applet de commande **New-TenantAllowBlockListSpoofItems** . Pour plus d’informations, consultez [Utiliser PowerShell pour gérer les entrées d’expéditeur usurpées dans la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).
 
 Pour afficher les informations dans l’insight sur l’usurpation d’identité, exécutez la commande suivante :
 

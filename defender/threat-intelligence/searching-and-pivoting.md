@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e5c621eaf22b00a8d0c29aa17063882e2873be2b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175573"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387196"
 ---
 # <a name="searching-and-pivoting"></a>Recherche et pivotage
 
@@ -20,7 +20,7 @@ Microsoft Defender Threat Intelligence (Defender TI) offre un moteur de recherch
 
 ![Capture d’écran de La recherche dans HomePage Chrome](media/searchHomePageChromeScreenshot.png)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 - Un compte Microsoft Azure Active Directory ou personnel. [Connexion ou création d’un compte](https://signup.microsoft.com/)
 - Une licence Premium Microsoft Defender Threat Intelligence (Defender TI).
@@ -29,7 +29,7 @@ Microsoft Defender Threat Intelligence (Defender TI) offre un moteur de recherch
 
 ## <a name="open-defender-tis-threat-intelligence-home-page"></a>Ouvrir la page d’accueil threat intelligence de Defender TI
 
-1. Accédez au [portail Defender Threat Intelligence](https://defender.microsoft.com/).
+1. Accédez au [portail Defender Threat Intelligence](https://ti.defender.microsoft.com/).
 2. Effectuez l’authentification Microsoft pour accéder au portail.
 
 ## <a name="performing-threat-intelligence-searches-and-pivots"></a>Exécution de recherches et de tableaux croisés dynamiques de renseignement sur les menaces
@@ -37,7 +37,7 @@ Microsoft Defender Threat Intelligence (Defender TI) offre un moteur de recherch
 La recherche Threat Intelligence de Defender TI est à la fois simple et puissante, conçue pour exposer des insights clés immédiats tout en permettant aux utilisateurs d’interagir directement avec les jeux de données qui composent ces insights. La barre de recherche prend en charge une grande variété d’entrées différentes ; les utilisateurs peuvent rechercher des artefacts spécifiques ainsi que des noms d’article ou de projet.
 
 ### <a name="search-artifact-types"></a>Rechercher des types d’artefacts
-1. **Adresse IP:** Recherche '195.161.141[.] 65 pouces dans la barre de recherche Threat Intelligence. Cette action entraîne une recherche d’adresse IP.
+1. **Adresse IP :** Recherche '195.161.141[.] 65 pouces dans la barre de recherche Threat Intelligence. Cette action entraîne une recherche d’adresse IP.
 
     ![Rechercher une adresse IP](media/searchIpAddress.png)
 
@@ -70,7 +70,7 @@ La recherche Threat Intelligence de Defender TI est à la fois simple et puissan
 
     ![Composant de recherche](media/searchComponent.png)
 
-9. **Pisteur:** Sélectionnez « Trackers » dans la liste déroulante Recherche Threat Intelligence et tapez « 07d14d16d21d21d00042d41d00041d47e4e0ae17960b2a5b4fd6107fbb0926 » dans la barre de recherche Threat Intelligence. Appuyez sur Entrée ou sélectionnez la flèche droite pour effectuer la recherche. Cette action entraîne une recherche de suivi. Remarque : dans cet exemple, il s’agissait d’un type JarmHash Tracker.
+9. **Tracker:** Sélectionnez « Trackers » dans la liste déroulante Recherche Threat Intelligence et tapez « 07d14d16d21d21d00042d41d00041d47e4e0ae17960b2a5b4fd6107fbb0926 » dans la barre de recherche Threat Intelligence. Appuyez sur Entrée ou sélectionnez la flèche droite pour effectuer la recherche. Cette action entraîne une recherche de suivi. Remarque : dans cet exemple, il s’agissait d’un type JarmHash Tracker.
 
     > [!NOTE]
     > Dans cet exemple, il s’agissait d’un type JarmHash Tracker.
@@ -172,7 +172,7 @@ Cette section affiche également toutes les balises appliquées à l’artefact 
 
 ## <a name="summary-tab"></a>Onglet Résumé
 
-### <a name="overview"></a>Aperçu
+### <a name="overview"></a>Vue d'ensemble
 
 Les résultats d’une recherche Threat Intelligence sont regroupés en deux onglets : « Résumé » et « Données ». L’onglet Résumé fournit des insights clés sur un artefact que la plateforme a dérivé de nos jeux de données étendus. Cette section est conçue pour exposer les principales conclusions qui peuvent aider à lancer une enquête.
 
@@ -180,7 +180,7 @@ Les résultats d’une recherche Threat Intelligence sont regroupés en deux ong
 
 Defender TI fournit des scores de réputation propriétaires pour n’importe quel hôte, domaine ou adresse IP. Qu’il s’agisse de valider la réputation d’une entité connue ou inconnue, ce score permet aux utilisateurs de comprendre rapidement les liens détectés avec une infrastructure malveillante ou suspecte. Les scores de réputation sont affichés sous forme de score numérique avec une plage comprise entre 0 et 100. Une entité avec un score de « 0 » n’a pas d’associations connues à une activité suspecte ou des indicateurs connus de compromission ; un score de « 100 » indique que l’entité est malveillante. La plateforme fournit une liste de règles avec une description et une évaluation de gravité. Dans l’exemple ci-dessous, quatre règles de « gravité élevée » s’appliquent à ce domaine.
 
-Pour plus d’informations, consultez [Scoring de réputation](reputation-scoring.md).
+Pour plus d’informations, consultez [Score de réputation](reputation-scoring.md).
 
 ![Réputation de l’onglet Résumé](media/summaryTabReputation.png)
 
@@ -190,7 +190,7 @@ La section Insights de l’analyste fournit des insights rapides sur l’artefac
 
 Pour plus d’informations, consultez [Insights de l’analyste](analyst-insights.md).
 
-![Aperçus de l’analyste de l’onglet Résumé](media/summaryTabAnalystInsights.png)
+![Insights de l’analyste de l’onglet Résumé](media/summaryTabAnalystInsights.png)
 
 ### <a name="articles"></a>Articles
 
@@ -236,7 +236,7 @@ Microsoft collabore avec plusieurs référentiels commerciaux et open source de 
 
 ## <a name="data-tab"></a>Onglet Données
 
-### <a name="overview"></a>Présentation
+### <a name="overview"></a>Vue d’ensemble
 
 L’onglet Données aide les utilisateurs à approfondir les connexions tangibles observées par la plateforme Defender TI. Bien que l’onglet Résumé expose les principales conclusions pour fournir un contexte immédiat sur un artefact, l’onglet Données permet aux analystes d’étudier ces connexions beaucoup plus granulairement. Les utilisateurs peuvent cliquer sur n’importe quelle valeur retournée pour pivoter sur toutes les métadonnées associées.
 
@@ -328,7 +328,7 @@ Nos données de certificat incluent les éléments suivants :
 
 Lorsqu’un utilisateur clique sur un hachage Sha1, il peut voir des détails sur le certificat dans le volet droit, notamment :
 
-- **Matricule:** Numéro de série associé à un certificat SSL.
+- **Numéro de série :** Numéro de série associé à un certificat SSL.
 - **Délivré:** Date à laquelle un certificat a été émis.
 - **Expire:** Date d’expiration d’un certificat.
 - **Nom commun de l’objet :** Nom commun de l’objet pour tous les certificats SSL associés.
@@ -452,7 +452,7 @@ Nos données de services incluent les éléments suivants :
 - Connexion de protocole
 - État du port
    - Ouvrir
-   - Filtré
+   - Filtrée
    - Fermé
 - Réponse de bannière
 

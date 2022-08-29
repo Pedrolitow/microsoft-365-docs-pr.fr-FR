@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de quarantaine pour contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 01a4d5acb9edfa0906695329489439d3ce6af298
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056875"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445135"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -32,7 +32,7 @@ ms.locfileid: "67056875"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les stratégies de quarantaine (anciennement appelées _balises de quarantaine_) dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365 permettent aux administrateurs de contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine.
+Les stratégies de quarantaine (anciennement appelées _balises de quarantaine_) dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365 permettent aux administrateurs de contrôler ce que les utilisateurs sont en mesure de faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine. Cette fonctionnalité est disponible dans toutes les organisations Microsoft 365 avec Exchange Online boîtes aux lettres.
 
 Traditionnellement, les utilisateurs ont été autorisés ou refusés des niveaux d’interactivité pour les messages de quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine. Par exemple, les utilisateurs peuvent afficher et publier des messages qui ont été mis en quarantaine par filtrage anti-courrier indésirable en tant que courrier indésirable ou en bloc, mais ils ne peuvent pas afficher ou libérer des messages qui ont été mis en quarantaine comme hameçonnage ou programmes malveillants à haut niveau de confiance.
 
@@ -523,7 +523,7 @@ Les paramètres globaux des stratégies de quarantaine vous permettent de person
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Langues sélectionnées dans les paramètres de notification de quarantaine globaux des stratégies de quarantaine." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **Utiliser le logo de mon entreprise** : sélectionnez cette option pour remplacer le logo Microsoft par défaut utilisé en haut des notifications de quarantaine. Avant de procéder à cette étape, vous devez suivre les instructions fournies dans [Personnaliser le thème Microsoft 365 pour que votre organisation](../../admin/setup/customize-your-organization-theme.md) charge votre logo personnalisé.
+   - **Utiliser le logo de mon entreprise** : sélectionnez cette option pour remplacer le logo Microsoft par défaut utilisé en haut des notifications de quarantaine. Avant de procéder à cette étape, vous devez suivre les instructions fournies dans [Personnaliser le thème Microsoft 365 pour que votre organisation](../../admin/setup/customize-your-organization-theme.md) charge votre logo personnalisé. Cette option n’est pas prise en charge si votre organisation dispose d’un logo personnalisé pointant vers une URL au lieu d’un fichier de logo personnalisé chargé. 
 
      La capture d’écran suivante montre un logo personnalisé dans une notification de quarantaine :
 

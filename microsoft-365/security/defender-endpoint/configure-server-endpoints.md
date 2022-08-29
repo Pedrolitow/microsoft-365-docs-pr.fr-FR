@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83a311676a1b74e551817c4f0b64f024f80738c8
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 4a9cb2e20c2c2b5bfc47ae738d52f248fb464a3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306403"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387680"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender pour point de terminaison
 
@@ -106,7 +106,7 @@ Selon le serveur que vous intègrez, la solution unifiée installe l’antivirus
 |Version du serveur|Av|EDR|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui.](images/svg/check-yes.svg)|
-|Windows Server 2016|Intégré|![Oui.](images/svg/check-yes.svg)|
+|Windows Server 2016|Intégré|![Oui.](images/svg/check-yes.svg)|
 |Windows Server 2019 ou version ultérieure|Intégré|Intégré|
 
 Si vous avez déjà intégré vos serveurs à l’aide de MMA, suivez les instructions fournies dans la [migration de serveur](server-migration.md) pour migrer vers la nouvelle solution.
@@ -174,7 +174,7 @@ Le package d’installation vérifie si les composants suivants ont déjà été
 
 - La mise à jour de la pile de maintenance (SSU) du 14 septembre 2021 ou une version ultérieure doit être installée.
 - La dernière mise à jour cumulative (LCU) du 20 septembre 2018 ou une version ultérieure doit être installée.  Il est recommandé d’installer les derniers SSU et LCU disponibles sur le serveur
-- Activez la fonctionnalité Antivirus Microsoft Defender (MDAV) et vérifiez qu’elle est à jour. Pour plus d’informations sur l’activation de l’antivirus Defender sur Windows Server, consultez [Réactiver l’antivirus Defender sur Windows Server s’il a été désactivé](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) et [réactiver l’antivirus Defender sur Windows Server s’il a été désinstallé](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+- Activez la fonctionnalité antivirus Microsoft Defender et assurez-vous qu’elle est à jour. Pour plus d’informations sur l’activation de l’antivirus Defender sur Windows Server, consultez [Réactiver l’antivirus Defender sur Windows Server s’il a été désactivé](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) et [réactiver l’antivirus Defender sur Windows Server s’il a été désinstallé](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
 - Téléchargez et installez la dernière version de la plateforme à l’aide de Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du [catalogue Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) ou de [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Conditions préalables à l’exécution avec des solutions de sécurité tierces
@@ -314,7 +314,7 @@ Ce script peut être utilisé dans différents scénarios, y compris ceux décri
 
 9. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
+10. Pour lier l’objet de stratégie de groupe à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un objet de stratégie de groupe existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet stratégie de groupe que vous souhaitez lier. Cliquez sur **OK**.
 
 Pour plus de paramètres de configuration, consultez [Configurer les exemples de paramètres de collecte](configure-endpoints-gp.md#configure-sample-collection-settings) et [autres paramètres de configuration recommandés](configure-endpoints-gp.md#other-recommended-configuration-settings).
 

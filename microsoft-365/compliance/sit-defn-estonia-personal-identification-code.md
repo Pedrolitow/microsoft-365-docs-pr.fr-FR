@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité du code d’identification personnelle estonienne.
-ms.openlocfilehash: 866c78a871f0d402cab49783b43e770328b32b1d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7194413d22a0f583c21f81a220d730929d0921a2
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995780"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368870"
 ---
 # <a name="estonia-personal-identification-code"></a>Code d’identification personnelle estonienne
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 
@@ -98,7 +90,7 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 - numéro d’ID personnel
 - code d’identification personnelle
 - numéro d’identification personnelle
-- personalidnumber #
+- #numéroidpersonnel
 - id fiscal
 - numéro d’identification fiscal
 - numéro d’identification fiscal

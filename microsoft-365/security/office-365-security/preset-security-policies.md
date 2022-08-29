@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et strict aux fonctionnalités de protection de Exchange Online Protection (EOP) et Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ec4a2a1bc858cbf95ad85894f1b27828a18648e
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ba440b028b1f56f3375e46f57c0b347f63eeed3f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281616"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439659"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -61,6 +61,10 @@ Un profil détermine le niveau de protection. Les profils suivants sont disponib
   - **Groupes** :
     - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
     - Groupes Microsoft 365 spécifiée
+
+    > [!NOTE]
+    >  Les groupes de distribution dynamiques ne sont pas pris en charge.
+    
   - **Domaines** : tous les destinataires des [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) spécifiés dans votre organisation.
 
   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
@@ -166,8 +170,13 @@ Vous pouvez appliquer les stratégies de sécurité prédéfinies **Standard** o
    - **Tous les destinataires**
    - **Destinataires spécifiques** :
      - **Utilisateurs**
-     - **Groupes**
-     - **Domaines**
+     - **Groupes** :
+       - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+       - Groupes Microsoft 365 spécifiée
+
+       Les groupes de distribution dynamiques ne sont pas pris en charge.
+
+   - **Domaines**
 
      Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
@@ -220,7 +229,7 @@ Vous pouvez appliquer les stratégies de sécurité prédéfinies **Standard** o
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-8. Dans la page **Ajouter des adresses e-mail approuvées et des domaines pour ne pas marquer en tant que page d’emprunt** d’identité, entrez les adresses e-mail et domaines de l’expéditeur que vous souhaitez exclure de la protection contre l’emprunt d’identité. Les messages de ces expéditeurs ne seront jamais marqués comme une attaque d’emprunt d’identité, mais les expéditeurs sont toujours soumis à une analyse par d’autres filtres dans EOP et Defender pour Office 365.
+8. Dans la page **Ajouter des adresses e-mail approuvées et des domaines pour ne pas marquer en tant que page d’emprunt d’identité** , entrez les adresses e-mail et domaines de l’expéditeur que vous souhaitez exclure de la protection contre l’emprunt d’identité. Les messages de ces expéditeurs ne seront jamais marqués comme une attaque d’emprunt d’identité, mais les expéditeurs sont toujours soumis à une analyse par d’autres filtres dans EOP et Defender pour Office 365.
 
    Entrez l’adresse e-mail ou le domaine dans la zone, puis cliquez sur **Ajouter**. Répétez cette étape autant de fois que nécessaire.
 
@@ -248,7 +257,12 @@ Par conséquent, nous ne recommandons généralement pas d’exceptions à la st
 
 3. Dans le menu volant **Exclure de la protection intégrée** qui s’affiche, identifiez les destinataires internes exclus de la protection des liens sécurisés et des pièces jointes sécurisées intégrée :
    - **Utilisateurs**
-   - **Groupes**
+   - **Groupes** :
+       - Les membres des groupes de distribution ou des groupes de sécurité activés par courrier spécifiés.
+       - Groupes Microsoft 365 spécifiée
+
+     Les groupes de distribution dynamiques ne sont pas pris en charge.
+
    - **Domaines**
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Supprimez les exclusions de l’icône de protection intégrée.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.

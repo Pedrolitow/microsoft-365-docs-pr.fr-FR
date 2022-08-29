@@ -14,12 +14,12 @@ description: Suivez le chemin d’un message entrant via la pile de filtrage des
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 96e7fb9a4e774b51b1d2138cd72ea468bc23ee7b
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772037"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450144"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -66,7 +66,7 @@ Les fonctionnalités de l’intelligence de l’expéditeur sont essentielles po
     - **SPF** peut rejeter des messages basés sur des enregistrements TXT DNS qui répertorient les adresses IP et les serveurs autorisés à envoyer des messages au nom de l’organisation.
     - **DKIM** fournit une signature chiffrée qui authentifie l’expéditeur.
     - **DMARC** permet aux administrateurs de marquer SPF et DKIM comme requis dans leur domaine et applique l’alignement entre les résultats de ces deux technologies.
-    - **ARC** n’est pas configuré par le client, mais s’appuie sur DMARC pour utiliser le transfert dans les listes de diffusion, tout en enregistrant une chaîne d’authentification.
+    - **ARC** s’appuie sur DMARC pour utiliser le transfert dans les listes de diffusion lors de l’enregistrement d’une chaîne d’authentification.
 
 3. **L’intelligence par usurpation** d’identité est capable de filtrer celles autorisées à « usurper » (autrement dit, celles qui envoient du courrier pour le compte d’un autre compte ou qui transfèrent une liste de diffusion) à partir d’expéditeurs malveillants qui imitent des domaines externes connus ou organisationnels. Il sépare les courriers légitimes « au nom de » des expéditeurs qui usurpent l’usurpation d’identité pour remettre des messages de courrier indésirable et de hameçonnage.
 
@@ -142,7 +142,7 @@ Le diagramme final (comme avec toutes les parties du diagramme qui le compose) *
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Toutes les phases de filtrage dans Defender pour Office 365 dans l’ordre, de 1 à 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Avez-vous besoin de configurer Microsoft Defender pour Office 365 ***right now** _? Utilisez cette pile, _now*, avec [cette étape pour](protect-against-threats.md) commencer à protéger votre organisation.
 

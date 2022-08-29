@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité du numéro de permis de conduire néo-zélandais.
-ms.openlocfilehash: 56ca27a23cf328978dfc56628a0a5740c8f0ab6e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6e136663fa6a47b2da8a7742f4ac73603efac3b1
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995910"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368606"
 ---
 # <a name="new-zealand-drivers-license-number"></a>Numéro de permis de conduire en Nouvelle-Zélande
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 
@@ -79,66 +71,66 @@ Une stratégie DLP a une confiance faible ayant détecté ce type d’informatio
 
 ### <a name="keyword_new_zealand_drivers_license_number"></a>Keyword_new_zealand_drivers_license_number
 
-- driverlicence
-- driverlicences
-- driver lic
+- permisconduire
+- permisconduire
 - permis de conduire
 - permis de conduire
-- driverslic
-- driverslicence
-- driverslicences
-- drivers lic
-- drivers lics
+- permis de conduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
 - permis de conduire
 - permis de conduire
-- driver’lic
-- driver’lics
+- permisconduire
+- permisconduire
 - permis de conduire
 - permis de conduire
-- driver' lic
-- driver' lics
+- permis conduire
+- permis conduire
 - permis de conduire
 - permis de conduire
-- driver’slic
-- driver’slics
-- driver’slicence
-- driver’slicences
-- driver’s lic
-- driver’s lics
+- permisconduire
+- permisconduire
+- permisconduire
+- permisconduire
 - permis de conduire
 - permis de conduire
-- driverlic #
-- driverlics #
-- driverlicence #
-- driverlicences #
-- driver lic #
-- driver lics #
+- permis de conduire
+- permis de conduire
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire #
+- permis de conduire n°
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
+- permisconduire #
 - permis de conduire #
 - permis de conduire #
-- driverslic #
-- driverslics #
-- driverslicence #
-- driverslicences #
-- drivers lic #
-- drivers lics #
-- permis de conduire #
-- permis de conduire #
-- driver’lic #
-- driver’lics #
-- permis de conduire #
-- permis de conduire #
-- driver' lic #
-- driver' lics #
-- permis de conduire #
-- permis de conduire #
-- driver’slic #
-- driver’slics #
-- driver’slicence #
-- driver’slicences #
-- driver’s lic #
-- driver’s lics #
-- permis de conduire #
-- permis de conduire #
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
+- permis de conduire n°
 - permis de conduite international
 - permis de conduite internationaux
 - nz automobile association

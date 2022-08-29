@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La protection contre la perte de données des points de terminaison étend la surveillance des activités de fichiers et les actions de protection pour ces fichiers aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité '
-ms.openlocfilehash: 37992558c1621ab476fa3a481776f0d3a7e55df4
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
-ms.translationtype: HT
+ms.openlocfilehash: f6c966b13dc5671c1ba95cd54d3c2c99f782a7f8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099478"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388316"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>En savoir plus sur les points de terminaison de protection contre la perte de données
 
@@ -45,7 +45,7 @@ La protection contre la perte de données de point de terminaison vous permet d�
 |Activité |Description  |Windows 10 1809 et ultérieures/ Windows 11| macOS Catalina 10.15 ou version ultérieure | Auditable/restrictable|
 |---------|---------|---------|---------|---------|
 |téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S’il utilise un navigateur répertorié dans DLP en tant que navigateur non autorisé, l’activité de chargement est bloquée et l’utilisateur est redirigé pour utiliser Microsoft Edge . Microsoft Edge autorisez ou bloquez le chargement ou l’accès en fonction de la configuration de la stratégie DLP         |Pris en charge | Pris en charge|auditable et restreint|
-|copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.|Pris en charge|Pris en charge         | auditable et restreint|
+|copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Il détecte également quand un utilisateur copie et colle du contenu entre les fichiers au sein de la même application, processus ou élément pour Word, Excel et PowerPoint.|Pris en charge|Pris en charge         | auditable et restreint|
 |copie sur support USB amovible |Détecte lorsqu'un utilisateur tente de copier un élément ou une information sur un support amovible ou un périphérique USB.|Pris en charge|Pris en charge         | auditable et restreint|
 |copier vers un partage réseau    |Détecte lorsqu'un utilisateur tente de copier un élément vers un partage réseau ou un disque réseau mappé |Pris en charge|Pris en charge         |auditable et restreint|
 |imprimer un document    |Détecte lorsqu'un utilisateur tente d'imprimer un élément protégé sur une imprimante locale ou réseau.|Pris en charge|Pris en charge|auditable et restreint         |
@@ -66,7 +66,7 @@ Consultez [Conception d’une stratégie de protection contre la perte de donné
 
 ## <a name="monitored-files"></a>Fichiers analysées
 
-La DLP de point du terminaison prend en charge la surveillance de ces types de fichiers. La DLP procède à un audit des activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie. 
+Endpoint DLP prend en charge la surveillance de ces types de fichiers par le biais d’une stratégie :
 
 - Fichiers Word
 - Fichiers PowerPoint
@@ -83,6 +83,13 @@ La DLP de point du terminaison prend en charge la surveillance de ces types de f
 - fichiers h
 - fichiers Java
  
+DLP audite les activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie : 
+
+- Fichiers Word
+- Fichiers PowerPoint
+- Fichiers Excel
+- Fichiers .pdf
+
 Si vous souhaitez surveiller les données des correspondances de stratégie uniquement, vous pouvez désactiver l'option **Toujours auditer l’activité du fichier pour les appareils** dans les paramètres globaux DLP du point de terminaison.
 
 > [!NOTE]
@@ -213,5 +220,5 @@ Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochai
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
-- [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
+- [Microsoft Defender pour point de terminaison](../security/defender-endpoint/configure-machines-onboarding.md)
 - [Gestion des risques internes](insider-risk-management.md)

@@ -1,7 +1,7 @@
 ---
-title: API Obtenir les utilisateurs de connexion de l’ordinateur
-description: Découvrez comment utiliser l’API Obtenir les utilisateurs de connexion de l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour le point de terminaison.
-keywords: api, api de graphique, api pris en charge, obtenir, appareil, se connecter, utilisateurs
+title: API Obtenir les utilisateurs d’ouverture de session de la machine
+description: Découvrez comment utiliser l’API Obtenir les utilisateurs connectés à l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, get, appareil, connexion, utilisateurs
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c8635e7037f72830584d09d229891822a2e1f52
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 9ca2ccb7486131024f6c69c6203944f5b57fd878
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426422"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331794"
 ---
-# <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs de connexion de l’ordinateur
+# <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs d’ouverture de session de la machine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,12 +42,12 @@ ms.locfileid: "61426422"
 Récupère une collection d’utilisateurs connectés sur un appareil spécifique.
 
 ## <a name="limitations"></a>Limites
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez interroger les alertes mises à jour pour la dernière fois en fonction de votre période de rétention configurée.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -57,8 +57,8 @@ Déléguée (compte professionnel ou scolaire) | User.Read.All | « Lire les pro
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
-> - La réponse inclut les utilisateurs uniquement si l’appareil est visible par l’utilisateur, en fonction des paramètres de groupe d’appareils. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md).
+> - La réponse inclut les utilisateurs uniquement si l’appareil est visible par l’utilisateur, en fonction des paramètres du groupe d’appareils. Pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md).
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -70,7 +70,7 @@ GET /api/machines/{id}/logonusers
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -78,7 +78,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’appareil existe : 200 - OK avec la liste [des](user.md) entités utilisateur dans le corps. If device was not found - 404 Not Found.
+En cas de réussite et si l’appareil existe - 200 OK avec la liste des entités [utilisateur](user.md) dans le corps. Si l’appareil est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 

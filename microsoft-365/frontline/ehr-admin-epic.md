@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Découvrez comment intégrer le connecteur DMI Teams pour permettre aux prestataires de santé de votre organisation d’effectuer des rendez-vous virtuels avec des patients ou d’autres fournisseurs dans Teams directement à partir du système Epic DMI.
-ms.openlocfilehash: 0d3a4818b327171a03506425d1fbd849eeafdd88
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 6cf48c01e804a6a8a473ae42883c000a9577ea01
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992382"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333783"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-epic-ehr"></a>Rendez-vous virtuels avec Teams – Intégration à Epic EHR
 
@@ -81,6 +81,7 @@ Examinez le [Guide d’intégration de Microsoft Teams télémédecine](https://
 - Epic version de novembre 2018 ou ultérieure.
 - Les utilisateurs disposent d’une licence Microsoft 365 ou Office 365 appropriée qui inclut les réunions Teams.
 - Teams est adopté et utilisé dans votre organisation de santé.
+- Identifié une personne de votre organisation qui est un administrateur général Microsoft 365 ayant accès au [Centre d’administration Teams](https://admin.teams.microsoft.com).
 - Vos systèmes répondent à toutes les [exigences en matière de logiciels et de navigateurs](/microsoftteams/hardware-requirements-for-the-teams-app) pour Teams.
 
 > [!IMPORTANT]

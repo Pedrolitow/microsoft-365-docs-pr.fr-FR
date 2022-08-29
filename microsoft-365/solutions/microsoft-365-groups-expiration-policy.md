@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 recommendations: false
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: d91f3f09ccc1ffd562d87f5018953a6cd4fc8574
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050653"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388394"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
 Avec l’augmentation de l’utilisation des groupes Microsoft 365 et des équipes Microsoft, les administrateurs et les utilisateurs ont besoin d’un moyen de nettoyer les groupes et les équipes inutilisés. Une stratégie d’expiration des groupes Microsoft 365 peut aider à supprimer les groupes inactifs du système et à rendre les choses plus propres.
 
-Lorsqu’un groupe expire, tous ses services associés (la boîte aux lettres, le planificateur, le site SharePoint, l’équipe, etc.) sont également supprimés.
+Lorsqu’un groupe expire, [presque tous ses services associés (boîte aux lettres, Planificateur, site SharePoint, équipe, etc.) sont également supprimés](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer).
 
 Lorsqu’un groupe expire, il est « supprimé de manière réversible », ce qui signifie qu’il peut toujours être récupéré jusqu’à 30 jours.
 
-Les administrateurs peuvent spécifier une période d’expiration et tout groupe inactif qui atteint la fin de cette période, et qui n’est pas renouvelé, sera supprimé. (Cela inclut les équipes archivées.) La période d’expiration commence lorsque le groupe est créé ou à la date de son dernier renouvellement. Les propriétaires de groupe recevront automatiquement un e-mail avant l’expiration leur permettant de renouveler le groupe pour un autre intervalle d’expiration. Les utilisateurs de Teams voient les notifications persistantes dans Teams.
+Les administrateurs peuvent spécifier une période d’expiration et tout groupe inactif qui atteint la fin de cette période, et qui n’est pas renouvelé, sera supprimé. (Cela inclut les équipes archivées.) La période d’expiration commence lorsque le groupe est créé ou à la date de son dernier renouvellement. Les propriétaires de groupe recevront automatiquement une notification avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration. Les avis d’expiration pour les groupes utilisés dans Teams apparaissent dans le flux Propriétaires teams.
 
 Les groupes activement utilisés sont renouvelés automatiquement. N’importe laquelle des actions suivantes renouvellera automatiquement un groupe :
 - SharePoint - Afficher, modifier, télécharger, déplacer, partager ou charger des fichiers. (L’affichage d’une page SharePoint ne compte pas comme une action pour le renouvellement automatique.)
@@ -51,18 +51,18 @@ Il est important de savoir que l’expiration est désactivée par défaut. Les 
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui peut configurer et utiliser la stratégie d’expiration des groupes Microsoft 365 ?
 
-|Role|Ce qu’elles peuvent en faire|
+|Rôle|Ce qu’elles peuvent en faire|
 |---------|---------|
 |Office 365 administrateur général (dans Azure, l’administrateur de la société), administrateur d’utilisateurs|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d’expiration des groupes Microsoft 365.|
 |Utilisateur|Renouveler ou [restaurer](/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Comment définir la stratégie d’expiration
 
-Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur doit activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, accédez à **l’expiration** **des groupes** >  **Azure Active Directory** > . Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier jusqu’à quelle distance à l’avance vous souhaitez que les premières et deuxièmes notifications d’expiration s’adressent au propriétaire du groupe.
+Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur doit activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, accédez à **l’expiration** **des groupes** >  **Azure Active Directory** > . Ici, vous pouvez définir la durée de vie du groupe par défaut.
 
 La durée de vie du groupe est spécifiée en jours et peut être définie sur 180, 365 ou sur une valeur personnalisée que vous spécifiez. La valeur personnalisée doit être d’au moins 30 jours.
 
-Si le groupe n’a pas de propriétaire, les e-mails d’expiration sont envoyés à l’administrateur spécifié.
+Si le groupe n’a pas de propriétaire, les e-mails d’expiration sont envoyés à l’e-mail spécifié.
 
 Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes sélectionnés (jusqu’à 500) ou la désactiver complètement en sélectionnant **Aucun**. Lorsque vous sélectionnez **Aucun** , tous les groupes actifs et en attente de vérification n’ont aucune date d’expiration. Toutefois, les groupes qui sont déjà arrivés à expiration ne sont pas affectés.
 

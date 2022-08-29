@@ -1,8 +1,7 @@
 ---
-title: API Définir la valeur de l’appareil
-description: Découvrez comment spécifier la valeur d’un appareil à l’aide d’une API Microsoft Defender pour endpoint.
-keywords: api, api de graphique, api pris en charge, balises, balises d’ordinateur
-search.product: eADQiWindows 10XVcnh
+title: Définir l’API de valeur d’appareil
+description: Découvrez comment spécifier la valeur d’un appareil à l’aide d’une API Microsoft Defender pour point de terminaison.
+keywords: api, api graphe, api prises en charge, balises, balises d’ordinateur
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d95dac6dfc147c1849ebf33ab386ce201faf9e6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 940fb1a04bbef5ccc7b05097429bb6b04869e313
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165905"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331310"
 ---
-# <a name="set-device-value-api"></a>API Définir la valeur de l’appareil
+# <a name="set-device-value-api"></a>Définir l’API de valeur d’appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -41,28 +40,28 @@ ms.locfileid: "61165905"
 
 ## <a name="api-description"></a>Description de l’API
 
-Définissez la valeur d’appareil d’un [ordinateur spécifique.](machine.md)<br>
-Pour plus [d’informations, voir](tvm-assign-device-value.md) attribuer des valeurs d’appareil.
+Définissez la valeur d’appareil d’un [ordinateur](machine.md) spécifique.<br>
+Pour plus d’informations, consultez [attribuer des valeurs d’appareil](tvm-assign-device-value.md) .
 
 ## <a name="limitations"></a>Limites
 
 1. Vous pouvez publier sur les appareils pour la dernière fois en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+2. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Gérer le paramètre de sécurité ». Pour plus d’informations ,voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
-> - L’utilisateur doit avoir accès à l’ordinateur, en fonction des paramètres de groupe d’ordinateurs (voir Créer et gérer des groupes [d’ordinateurs](machine-groups.md) pour plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Gérer le paramètre de sécurité ». Pour plus d’informations (voir [Créer et gérer des rôles](user-roles.md) )
+> - L’utilisateur doit avoir accès à l’ordinateur, en fonction des paramètres de groupe d’ordinateurs (voir [Créer et gérer des groupes d’ordinateurs](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -74,26 +73,26 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
+Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
 
 Paramètre|Type|Description
 :---|:---|:---
-DeviceValue|Énum|Valeur de l’appareil. Les valeurs autorisées sont : « Normal » (normal), « Low » (faible) et « High » (élevé). **Obligatoire**.
+DeviceValue|Énum|Valeur de l’appareil. Les valeurs autorisées sont : « Normal », « Low » et « High ». **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie le code de réponse 200 - OK et l’ordinateur mis à jour dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie le code de réponse 200 - OK et la machine mise à jour dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de demande qui ajoute une balise d’ordinateur.
+Voici un exemple de requête qui ajoute une balise d’ordinateur.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue

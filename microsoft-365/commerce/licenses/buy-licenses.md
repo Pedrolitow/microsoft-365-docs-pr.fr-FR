@@ -22,13 +22,13 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
-ms.date: 06/06/2022
-ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.date: 08/18/2022
+ms.openlocfilehash: 1641b16f7f04b163c31ae1e03de3d0f7631a5efe
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602367"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388053"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Acheter ou supprimer des licences Microsoft 365 pour un abonnement
 
@@ -41,13 +41,13 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur général ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur général ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md).
 - Si vous avez acheté votre offre Microsoft 365 pour les entreprises ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
 ## <a name="watch-buy-new-licenses"></a>Regarder : Acheter de nouvelles licences
 
-Regardez cette vidéo et d’autres sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
+Regardez cette vidéo et d’autres encore sont disponibles sur notre [chaîne YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -64,11 +64,13 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+
 ::: moniker-end
 
 2. Sous l’onglet **Produits** , recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez les trois points (autres actions), puis **sélectionnez Acheter des licences**. [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -81,6 +83,37 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 > [!NOTE]
 > Vous ne pouvez pas réduire le nombre de licences pour votre abonnement si toutes les licences sont actuellement attribuées aux utilisateurs. Pour réduire le nombre de licences, [supprimez d’abord une ou plusieurs licences des utilisateurs](../../admin/manage/remove-licenses-from-users.md), puis supprimez les licences de l’abonnement.
+
+## <a name="add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Ajouter des licences à un abonnement prépayé à l’aide d’une clé de produit Microsoft 365
+
+Les licences de produit prépayées vous sont délivrées sous la forme d’un code alphanumérique de 25 caractères, appelé clé de produit. Une fois que vous avez acheté les licences dont vous avez besoin, vous pouvez les ajouter à votre abonnement en suivant les étapes ci-dessous. Vous pouvez également utiliser une clé de produit pour [étendre la date d’expiration de votre abonnement](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+> [!NOTE]
+> Si vous ne souhaitez pas acheter une nouvelle clé de produit, vous pouvez toujours choisir d’ajouter une carte de crédit ou un compte bancaire à votre abonnement pour payer plus de licences. Pour plus d’informations, consultez [Renouveler votre abonnement](../subscriptions/renew-your-subscription.md).
+  
+::: moniker range="o365-worldwide"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+
+::: moniker-end
+
+2. Sous l’onglet **Produits** , sélectionnez l’abonnement auquel vous souhaitez ajouter des licences.
+
+3. Dans la page détails de l’abonnement, dans la section **Licences** , sélectionnez **Ajouter d’autres licences**.
+
+4. Dans le **volet Ajouter d’autres licences**, **sélectionnez Utiliser une clé de produit nouvelle et inutilisée**, puis **sélectionnez Suivant**.
+
+5. Entrez la clé de produit, puis sélectionnez **Suivant**.
+    > [!NOTE]
+    > Si vous avez plusieurs clés de produit, vous pouvez sélectionner **Ajouter une autre clé de produit** pour les entrer.
+
+6. Passez en revue les détails de votre commande, puis **sélectionnez Utiliser**.
 
 ## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?
 
@@ -104,13 +137,13 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre facture suivante. Si vous payez annuellement, vous êtes facturé dans un délai d’un mois pour ces modifications.
 - Dans votre prochain relevé de facturation, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons des frais calculés au prorata pour la période avec le nombre de licences d’origine et ajoutons des frais pour le nouveau nombre de licences. Il y a également des frais pour le nombre de licences actuel pour le reste de votre période de facturation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez acheté d’autres licences pour votre abonnement, vous devez ensuite [attribuer ces licences aux utilisateurs de votre organisation](../../admin/manage/assign-licenses-to-users.md).
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous souhaiterez peut-être supprimer le compte de cet utilisateur. Pour en savoir plus, consultez [Supprimer un ancien employé](../../admin/add-users/remove-former-employee.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

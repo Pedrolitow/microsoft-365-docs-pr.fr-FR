@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 4854ca235790cc8400f3f5a962e4bff203f86f98
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 01018ca7c5cb88b6aaef12d6e63be96085c593a8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788125"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386887"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -30,7 +30,7 @@ ms.locfileid: "64788125"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
@@ -44,7 +44,7 @@ Vous pouvez activer l’accès contrôlé aux dossiers à l’aide de l’une de
 
 - [application Sécurité Windows *](#windows-security-app)
 - [Microsoft Endpoint Manager](#endpoint-manager)
-- [Mobile Gestion des appareils (MDM)](#mobile-device-management-mdm)
+- [Gestion des périphériques mobiles (GPM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Stratégie de groupe](#group-policy)
 - [PowerShell](#powershell)
@@ -53,12 +53,12 @@ Le [mode Audit](evaluate-controlled-folder-access.md) vous permet de tester le f
 
 stratégie de groupe paramètres qui désactivent la fusion de listes d’administrateurs locaux remplacent les paramètres d’accès contrôlé aux dossiers. Ils remplacent également les dossiers protégés et les applications autorisées définies par l’administrateur local via un accès contrôlé aux dossiers. Ces stratégies sont les suivantes :
 
-- Antivirus Microsoft Defender Configurer le **comportement de fusion de l’administrateur local pour les listes**
+- Microsoft Defender Antivirus **Configure local administrator merge behavior for lists**
 - System Center Endpoint Protection **Autoriser les utilisateurs à ajouter des exclusions et des remplacements**
 
-Pour plus d’informations sur la désactivation de la fusion de listes locales, consultez [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie AV de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
+Pour plus d’informations sur la désactivation de la fusion de listes locales, consultez [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie de l’Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
-## <a name="windows-security-app"></a>application Sécurité Windows
+## <a name="windows-security-app"></a>Ouvrez l’application Sécurité Windows.
 
 1. Ouvrez l’application Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Sécurité Windows dans le menu **Démarrer**.
 
@@ -98,15 +98,15 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
     > [!NOTE]
     > Les caractères génériques sont pris en charge pour les applications, mais pas pour les dossiers. Les sous-dossiers ne sont pas protégés. Les applications autorisées continueront de déclencher des événements jusqu’à leur redémarrage.
 
-## <a name="mobile-device-management-mdm"></a>Mobile Gestion des appareils (MDM)
+## <a name="mobile-device-management-mdm"></a>Gestion des périphériques mobiles (GPM)
 
 Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) pour permettre aux applications d’apporter des modifications aux dossiers protégés.
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. Dans Microsoft Endpoint Configuration Manager, accédez à **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
+1. Dans Microsoft Endpoint Configuration Manager, accédez à **Ressources et conformité**\>**Endpoint Protection**\>**Windows Defender Exploit Guard**.
 
-2. Sélectionnez **Home** \> **Create Exploit Guard Policy**.
+2. Sélectionnez **Accueil**\>**Créer une stratégie Exploit Guard**.
 
 3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux dossiers**, puis **Suivant**.
 
@@ -125,13 +125,13 @@ Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence pour **Windows composants > Antivirus Microsoft Defender > Windows Defender Exploit Guard > l’accès contrôlé aux dossiers**.
+3. Développez l’arborescence sur **les composants Windows > l’antivirus Microsoft Defender > Windows Defender Exploit Guard > l’accès contrôlé aux dossiers**.
 
 4. Double-cliquez sur le paramètre **Configurer l’accès contrôlé aux dossiers** et définissez l’option **sur Activé**. Dans la section Options, vous devez spécifier l’une des options suivantes :
    - **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers dans les dossiers protégés. Une notification est fournie dans le journal des événements Windows.
    - **Désactiver (valeur par défaut)** : la fonctionnalité d’accès contrôlé aux dossiers ne fonctionnera pas. Toutes les applications peuvent apporter des modifications aux fichiers dans des dossiers protégés.
-   - **Mode Audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le Windows journal des événements où vous pouvez évaluer l’impact sur votre organisation.
-   - **Bloquer la modification du disque uniquement** : les tentatives d’écriture dans les secteurs de disque par des applications non approuvées sont enregistrées dans Windows journal des événements. Ces journaux sont disponibles dans les journaux **d’activité Applications et Services** \> microsoft \> Windows \> Windows Defender \> L’ID opérationnel \> 1123.
+   - **Mode Audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il est enregistré dans le journal des événements Windows, où vous pouvez évaluer l’impact sur votre organisation.
+   - **Bloquer la modification du disque uniquement** : les tentatives d’écriture dans les secteurs de disque par des applications non approuvées sont consignées dans le journal des événements Windows. Ces journaux se trouvent dans les journaux **d’activité Applications et Services** \> Microsoft \> Windows \> Windows Defender \> L’ID opérationnel \> 1123.
    - **Auditer uniquement la modification du disque** : seules les tentatives d’écriture dans les secteurs de disque protégés sont enregistrées dans le journal des événements Windows (sous **Journaux des applications et des** \> services **Microsoft** \> **Windows** \> **Windows Defender** \> **L’ID** **opérationnel** \> 1124). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne seront pas enregistrées.
 
     :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="Option de stratégie de groupe activée et mode d’audit sélectionnée" lightbox="../../media/cfa-gp-enable.png":::
@@ -141,7 +141,7 @@ Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy
 
 ## <a name="powershell"></a>PowerShell
 
-1. Tapez **PowerShell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** et sélectionnez **Exécuter en tant qu’administrateur**.
 
 2. Entrez l’applet de commande suivante :
 

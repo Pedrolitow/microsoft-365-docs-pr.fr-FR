@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 7ef410beaacbc899c6f52e688ee38b3b545b8997
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 8bf3dda061b582adb7b21029022e61bc890aeec7
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823084"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441637"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils d’infrastructure de bureau virtuel (VDI) non persistants dans Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ Comme n’importe quel autre système dans un environnement informatique, ceux-c
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Appareils vDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
@@ -59,7 +59,6 @@ Dans un environnement VDI, les instances VDI peuvent avoir une durée de vie cou
 
 
 - Entrée de portail unique pour chaque instance VDI. Si l’instance VDI a déjà été intégrée à Microsoft Defender pour point de terminaison et qu’elle a été supprimée à un moment donné, puis recréée avec le même nom d’hôte, un nouvel objet représentant cette instance VDI ne sera PAS créé dans le portail. 
-
 
   > [!NOTE]
   > Dans ce cas, le *même* nom d’appareil doit être configuré lors de la création de la session, par exemple à l’aide d’un fichier de réponses sans assistance.
@@ -143,14 +142,14 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 2. Suivez le [processus d’intégration du serveur](configure-server-endpoints.md). 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images d’infrastructure de bureau virtuel (VDI) non persistantes
+## <a name="updating-virtual-desktop-infrastructure-vdi-images-persistent-or-non-persistent"></a>Mise à jour des images d’infrastructure de bureau virtuel (VDI) (persistantes ou non persistantes)
 
 Avec la possibilité de déployer facilement des mises à jour sur des machines virtuelles s’exécutant dans des VM, nous avons raccourci ce guide pour vous concentrer sur la façon dont vous pouvez obtenir des mises à jour sur vos machines rapidement et facilement. Vous n’avez plus besoin de créer et de sceller régulièrement des images d’or, car les mises à jour sont développées dans leurs bits de composant sur le serveur hôte, puis téléchargées directement sur la machine virtuelle lorsqu’elle est activée.
 
 Pour plus d’informations, suivez les instructions du [guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
    > [!NOTE]
-   > Si vous avez intégré l’image principale de votre environnement VDI non persistant (le service SENSE est en cours d’exécution), vous devez désinsgré et effacer certaines données avant de remettre l’image en production.
+   > Si vous avez intégré l’image principale de votre environnement VDI (le service SENSE est en cours d’exécution), vous devez déconnecter et effacer certaines données avant de remettre l’image en production.
    > 1. Vérifiez que le capteur est arrêté en exécutant la commande ci-dessous dans une fenêtre CMD :
    >  ```console
    >  sc query sense
@@ -165,11 +164,9 @@ Pour plus d’informations, suivez les instructions du [guide de déploiement de
    >  exit
    >  ```
 
-
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
 
 Après avoir intégré des appareils au service, il est important de tirer parti des fonctionnalités de protection contre les menaces incluses en les activant avec les paramètres de configuration recommandés suivants.
-
 
 ### <a name="next-generation-protection-configuration"></a>Configuration de la protection de nouvelle génération
 
@@ -181,14 +178,12 @@ Les paramètres de configuration suivants sont recommandés :
 - Niveau de protection cloud : Non configuré
 - Délai d’expiration étendu de Defender Cloud en secondes : 20
 
-
 #### <a name="exclusions"></a>Exclusions
 - Désactiver la fusion de l’administrateur local : non configuré
 - Processus Defender à exclure :
   - `%Programfiles%\FSLogix\Apps\frxccd.exe`
   - `%Programfiles%\FSLogix\Apps\frxccds.exe`
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
 
 - Extensions de fichier à exclure des analyses et de la protection en temps réel :
   -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
@@ -201,7 +196,6 @@ Les paramètres de configuration suivants sont recommandés :
   - `\\stroageaccount.file.core.windows.net\share**.VHD`
   -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
 
-
 #### <a name="real-time-protection"></a>Protection en temps réel
 
 - Activer tous les paramètres et définir pour surveiller tous les fichiers
@@ -213,8 +207,6 @@ Les paramètres de configuration suivants sont recommandés :
 - Actions pour les menaces détectées :
   - Faible menace : Clean
   - Menace modérée, menace élevée, menace grave : mise en quarantaine
-
-
 
 #### <a name="scan"></a>Analyser
 
@@ -237,7 +229,6 @@ Les paramètres de configuration suivants sont recommandés :
 #### <a name="user-experience"></a>Expérience utilisateur
 - Autoriser l’accès utilisateur à l’application Microsoft Defender : Non configuré
 
-
 #### <a name="enable-tamper-protection"></a>Activer la protection contre les falsifications
 - Activer la protection contre les falsifications pour empêcher la désactivation de Microsoft Defender : Activer
 
@@ -245,20 +236,14 @@ Les paramètres de configuration suivants sont recommandés :
 
 - Activer la protection réseau : mode Audit
 - Exiger SmartScreen pour Microsoft Edge : Oui
-- Bloquer l’accès maclious au site : Oui
+- Bloquer l’accès à un site malveillant : Oui
 - Bloquer le téléchargement de fichiers non vérifiés : Oui
 
 #### <a name="attack-surface-reduction-rules"></a>Règles de réduction des surfaces d'attaque
 - Configurez toutes les règles disponibles pour auditer.
 
-
 > [!NOTE]
 > Le blocage de ces activités peut interrompre des processus métier légitimes. La meilleure approche consiste à tout définir pour l’audit, à identifier ceux qui peuvent être activés sans risque, puis à activer ces paramètres sur les points de terminaison qui n’ont pas de détections de faux positifs.
-
-
-
-
-
 
 ## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e68e1e49dd855356840eb732c6050178ae1c147
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 0c0e09bb69cd4b7ad30276a54e002be568b85c5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669713"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387570"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -48,7 +48,7 @@ Le moteur de détection cloud de Defender pour point de terminaison analyse rég
 
 ## <a name="endpoint-prevention-engine"></a>Moteur de prévention des points de terminaison
 
-La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si Microsoft Defender AV est l’av principal configuré, les indicateurs correspondants sont traités en fonction des paramètres. Par exemple, si l’action est « Alerte et blocage », Microsoft Defender AV empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est déclenchée. En revanche, si l’action est définie sur « Autoriser », Microsoft Defender AV ne détecte pas ni ne bloque l’exécution du fichier.
+La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si l’Antivirus Microsoft Defender est l’antivirus principal configuré, les indicateurs correspondants sont traités en fonction des paramètres. Par exemple, si l’action est « Alerte et blocage », l’Antivirus Microsoft Defender empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est déclenchée. En revanche, si l’action est définie sur « Autoriser », l’Antivirus Microsoft Defender ne détecte pas ni ne bloque l’exécution du fichier.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Moteur d’investigation et de correction automatisé
 
@@ -90,7 +90,7 @@ Les fonctionnalités des IOC préexistantes ne changeront pas. Toutefois, les in
 Le schéma de l’API IoC et les ID de menace à l’avance ont été mis à jour pour s’aligner sur le changement de nom des actions de réponse IoC. Les modifications apportées au schéma d’API s’appliquent à tous les types IoC.
 
 > [!Note]
-> Il existe une limite de 15 000 indicateurs par locataire. Les indicateurs de fichier et de certificat ne bloquent pas [les exclusions définies pour Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge dans Antivirus Microsoft Defender lorsqu’il est en mode passif.
+> Il existe une limite de 15 000 indicateurs par locataire. Les indicateurs de fichier et de certificat ne bloquent pas [les exclusions définies pour l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge dans l’Antivirus Microsoft Defender lorsqu’il est en mode passif.
 >
 > Le format d’importation de nouveaux indicateurs a changé en fonction des nouvelles actions mises à jour et des paramètres d’alerte. Nous vous recommandons de télécharger le nouveau format CSV qui se trouve en bas du panneau d’importation.
 

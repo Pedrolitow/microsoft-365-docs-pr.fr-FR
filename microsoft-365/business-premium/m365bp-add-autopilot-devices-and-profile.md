@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: o365-administration
 ms.collection: ''
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/18/2022
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser Windows Autopilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils soient prêts à être utilisés par les employés.
-ms.openlocfilehash: 72a35557d3ab70c5e11f91f366b9cbe003b0c4c6
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 7286d22a92b8d989b8cb00c949f45f25f501a1a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893252"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388574"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser ce guide pas à pas pour ajouter des appareils et un profil Autopilot
 
@@ -46,11 +46,11 @@ Si vous n’avez pas encore créé de profils ou de groupes d’appareils, la me
 
 2. Dans le volet de navigation gauche, choisissez **Appareils** \> **Autopilot**.
 
-    ![Dans le Centre d’administration, choisissez les appareils, puis Autopilot.](../media/Autopilot.png)
+    :::image type="content" source="../media/Autopilot.png" alt-text="Dans le Centre d'administration Microsoft 365, choisissez des appareils, puis Autopilot.":::
   
 3. Dans la page **Autopilot** , cliquez ou **appuyez sur Le guide de démarrage**.
 
-    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    :::image type="content" source="../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png" alt-text="Cliquez sur Le Guide de démarrage pour obtenir des instructions pas à pas pour Autopilot":::
   
 4. Sur la page **Charger un fichier .csv avec une liste d'appareils**, recherchez l'emplacement où vous avez préparé le fichier .csv, puis cliquez sur **Ouvrir** \> **Suivant**. Le fichier doit avoir trois en-têtes :
 
@@ -87,6 +87,6 @@ Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../admin/misc/
 
 ## <a name="related-content"></a>Contenu connexe
 
-- [À propos des paramètres de profil Autopilot](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
-- [Options de protection de vos appareils et données d’application](../admin/devices/choose-device-security.md) (article)
-- [Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)
+[À propos des paramètres de profil Autopilot](../business-premium/m365bp-Autopilot-profile-settings.md) (article)\
+[Options de protection de vos appareils et données d’application](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (article)\
+[Meilleures pratiques pour sécuriser les plans Microsoft 365 pour les PME](../admin/security-and-compliance/secure-your-business-data.md)

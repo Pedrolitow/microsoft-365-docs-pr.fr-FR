@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Effectuez les étapes de migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969395"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388084"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 3 : Intégration
 
@@ -52,7 +52,7 @@ Bienvenue dans **la phase 3 : Intégration** de votre **[migration vers Microsof
 
 Si votre organisation dispose d’une équipe de réponse de sécurité, il est maintenant temps de commencer à intégrer Microsoft Defender pour Office 365 dans vos processus de réponse, y compris les systèmes de tickets. Il s’agit d’un sujet entier à lui-même, mais il est parfois négligé. L’implication précoce de l’équipe de réponse de sécurité garantit que votre organisation est prête à faire face aux menaces lorsque vous changez d’enregistrement MX. La réponse aux incidents doit être bien équipée pour gérer les tâches suivantes :
 
-- Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
+- Découvrez les nouveaux outils et intégrez-les aux flux existants. Par exemple :
   - Administration gestion des messages mis en quarantaine est importante. Pour obtenir des instructions, consultez [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md).
   - La trace des messages vous permet de voir ce qui est arrivé aux messages à mesure qu’ils entrent ou quittent Microsoft 365. Pour plus d’informations, consultez la [trace des messages dans le centre d’administration Exchange moderne dans Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identifiez les risques qui peuvent avoir été laissés dans l’organisation.
@@ -175,7 +175,7 @@ Si votre organisation utilise un service tiers pour les rapports utilisateur, vo
   - Filtrez dans l’Explorateur de menaces pour identifier les messages.
   - Filtrez dans La chasse avancée pour identifier les messages.
 
-  Signalez les faux positifs à Microsoft dès que possible par le biais de soumissions d’administrateur, utilisez la fonctionnalité [Autoriser/Bloquer la liste](tenant-allow-block-list.md) des locataires pour configurer des remplacements sécurisés pour ces faux positifs.
+  Signalez les faux positifs à Microsoft dès que possible par le biais de soumissions d’administrateur, utilisez la fonctionnalité [Autoriser/Bloquer la liste](manage-tenant-allow-block-list.md) des locataires pour configurer des remplacements sécurisés pour ces faux positifs.
 
 - Il est également judicieux d’examiner les remplacements inutiles. En d’autres termes, examinez les verdicts que Microsoft 365 aurait fournis sur les messages. Si Microsoft365 a rendu le verdict correct, le besoin de remplacement est considérablement réduit ou éliminé.
 

@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b641fe1fb4de8dcb7d7ec299a0e8b19a064efad
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8311da9d67a9835163ee3eaa34a38a7132977055
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084122"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386579"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -113,7 +113,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    > [!IMPORTANT]
-   > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
    > - Le destinataire est : romain@contoso.com
    > - Le destinataire est membre de : Exécutifs
@@ -188,6 +188,13 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
         Dans le menu volant **Ajouter des domaines approuvés** qui s’affiche, cliquez dans la zone **Domaine** , entrez une valeur, puis appuyez sur Entrée ou sélectionnez la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
 
         Lorsque vous avez terminé, cliquez sur **Ajouter**.
+
+     > [!NOTE]
+     > Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      De retour dans le menu volant **Gérer les domaines personnalisés pour l’emprunt d’identité** , vous pouvez supprimer des entrées des onglets **Expéditeur** et **Domaine** en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de l’icône ![Rechercher.](../../media/m365-cc-sc-create-icon.png) **Zone de recherche** .
 

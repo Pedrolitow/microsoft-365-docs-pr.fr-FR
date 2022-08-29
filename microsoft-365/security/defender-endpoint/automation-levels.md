@@ -10,7 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 787b636ec3834d258125e724be63aa9487c99081
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912573"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450100"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveaux d’automatisation dans les fonctionnalités d’investigation et de correction automatisées
 
@@ -59,7 +59,7 @@ Les fonctionnalités d’investigation et de correction automatisées (AIR) dans
 
 - Les nouveaux locataires (qui incluent les locataires qui ont été créés le 16 août 2020 ou après) avec Defender pour point de terminaison sont définis sur l’automatisation complète par défaut.
 
-- [Defender entreprise](../defender-business/compare-mdb-m365-plans.md) utilise l’automatisation complète par défaut. Defender entreprise n’utilise pas les groupes d’appareils de la même façon que Defender Entreprise. Par conséquent, l’automatisation complète est activée et appliquée à tous les appareils dans Defender entreprise.
+- [Defender entreprise](../defender-business/compare-mdb-m365-plans.md) utilise l’automatisation complète par défaut. Defender entreprise n’utilise pas les groupes d’appareils de la même façon que Defender pour point de terminaison. Par conséquent, l’automatisation complète est activée et appliquée à tous les appareils dans Defender entreprise.
 
 - Si votre équipe de sécurité a défini des groupes d’appareils avec un niveau d’automatisation, ces paramètres ne sont pas modifiés par les nouveaux paramètres par défaut qui sont en cours de déploiement.
 

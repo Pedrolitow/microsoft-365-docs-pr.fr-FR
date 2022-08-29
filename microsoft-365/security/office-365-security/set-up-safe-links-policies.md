@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies liens sécurisés et des paramètres de liens sécurisés globaux dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 48e873550c83154827d7deaa430b75d82ff80acc
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 41014ce0960d7973ddd7b90382c55ba7156070fd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087262"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388075"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurer les stratégies de la fonctionnalité Liens fiables dans Defender pour Office 365
 
@@ -118,7 +118,7 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
    - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    > [!IMPORTANT]
-   > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+   > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
    >
    > - Le destinataire est : romain@contoso.com
    > - Le destinataire est membre de : Exécutifs
@@ -141,7 +141,7 @@ La création d’une stratégie de liens fiables personnalisée dans le portail 
        - **Ne réécrivez pas les URL suivantes dans la section e-mail** : Cliquez sur **Gérer (nn) URL** pour autoriser l’accès à des URL spécifiques qui seraient autrement bloquées par des liens fiables.
 
          > [!NOTE]
-         > Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’URL d’autorisation dans la liste d’autorisations/blocages du locataire](allow-block-urls.md#create-allow-url-entries) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
+         > Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez les [entrées d’autorisation d’URL dans la liste d’autorisation/de blocage du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
 
      1. Dans gérer **les URL pour ne pas réécrire** le menu volant qui s’affiche, cliquez sur ![l’icône Ajouter des URL.](../../media/m365-cc-sc-create-icon.png) **Ajoutez des URL**.
      2. Dans le menu volant **Ajouter des URL** qui s’affiche, tapez l’URL ou la valeur souhaitée, sélectionnez l’entrée qui apparaît sous la zone, puis cliquez sur **Enregistrer**. Répétez cette étape autant de fois que nécessaire.

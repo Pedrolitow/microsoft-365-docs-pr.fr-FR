@@ -1,7 +1,7 @@
 ---
-title: API Obtenir l’URI SAS du package
-description: Utilisez cette API pour obtenir un URI qui permet de télécharger un package d’enquête.
-keywords: api, api de graphique, api pris en charge, obtenir le package, sas, uri
+title: Obtenir l’API d’URI SAS de package
+description: Utilisez cette API pour obtenir un URI qui permet de télécharger un package d’investigation.
+keywords: api, api graphe, api prises en charge, obtenir un package, sas, URI
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d64219ad2a48a64926bf177fb506d6611ece0ca3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: af4d99f552af17f99ea93c940cadadc100905d62
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302409"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331680"
 ---
-# <a name="get-package-sas-uri-api"></a>API Obtenir l’URI SAS du package
+# <a name="get-package-sas-uri-api"></a>Obtenir l’API d’URI SAS de package
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,31 +37,31 @@ ms.locfileid: "61302409"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
-Obtenez un URI qui permet le téléchargement d’un [package d’enquête.](collect-investigation-package.md)
+Obtenez un URI qui permet le téléchargement d’un [package d’investigation](collect-investigation-package.md).
 
 > [!IMPORTANT]
 >
-> - Ces actions sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure, et sur Windows 11.
+> - Ces actions sont disponibles uniquement pour les appareils sur Windows 10, version 1703 ou ultérieure, et sur Windows 11.
 
 ## <a name="limitations"></a>Limites
 
-Les limites de taux pour cette API sont de 2 appels par minute et de 120 appels par heure. 
+Les limites de débit pour cette API sont de 2 appels par minute et de 120 appels par heure. 
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l’api Microsoft Defender pour les points de terminaison.](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Access the Microsoft Defender pour point de terminaison APIs](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|« Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics|« Collecter les enquêtes légales »
+Application|Machine.Read.All|''Lire tous les profils d’ordinateur''
+Application|« Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.CollectForensics|'Collecter les données légales'
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Alerts Investigation » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -81,13 +81,13 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie un code de réponse 200, Ok avec un objet qui contient le lien vers le package dans le paramètre « value ». Ce lien est valide pour une très courte durée et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Si l’action de l’ordinateur pour la collection existe mais n’est pas terminée, cela renvoie 404 In trouvé.
+Si elle réussit, cette méthode renvoie le code de réponse 200 ok avec l’objet qui contient le lien vers le package dans le paramètre « value ». Ce lien est valide pendant une courte période et doit être utilisé immédiatement pour télécharger le package dans un stockage local. Si l’action de l’ordinateur pour la collection existe mais n’est pas terminée, cette opération retourne 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande.
+Voici un exemple de la requête.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri

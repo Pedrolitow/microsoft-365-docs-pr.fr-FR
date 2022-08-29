@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les emplacements de protection contre la perte de données de point de terminaison.
-ms.openlocfilehash: 2fef9c2d89d741c70f3d2d903f41fa8a354d4a79
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
-ms.translationtype: HT
+ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912627"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450078"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -256,7 +256,7 @@ Vous pouvez continuer à ajouter de nouveaux services, applications et stratégi
 
 Cette configuration vous permet de garantir la sécurité de vos données tout en évitant les restrictions inutiles qui empêchent les utilisateurs d’accéder aux éléments non sensibles et de les empêcher de les partager.
 
-## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de services sensibles (aperçu)
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains"></a>Scénario 6 : Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles
 
 Utilisez ce scénario lorsque vous souhaitez auditer, bloquer avec neutralisation ou bloquer ces activités d'utilisateur sur un site Web.
 

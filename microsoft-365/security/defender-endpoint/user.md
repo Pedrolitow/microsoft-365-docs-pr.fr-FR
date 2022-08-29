@@ -1,7 +1,7 @@
 ---
 title: Type de ressource utilisateur
-description: Récupérer les alertes récentes de Microsoft Defender pour les points de terminaison relatives aux utilisateurs.
-keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
+description: Récupérez les alertes de Microsoft Defender pour point de terminaison récentes liées aux utilisateurs.
+keywords: api, api graphe, api prises en charge, get, alertes, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01b7eb32415e431dce37935abb4a1a69776db0f9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: da2032da79666016a03323c22cbf29030b920921
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301977"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330584"
 ---
 # <a name="user-resource-type"></a>Type de ressource utilisateur
 
@@ -39,5 +39,5 @@ ms.locfileid: "61301977"
 
 Méthode|Type renvoyé|Description
 ---|---|---
-[Liste des alertes associées à l’utilisateur](get-user-related-alerts.md)|collection[alert](alerts.md)|Liste de toutes les alertes associées à un [utilisateur.](user.md)
-[List User related devices](get-user-related-machines.md)|[collection d’ordinateurs](machine.md)|Liste de tous les appareils qui ont été connectés par un [utilisateur.](user.md)
+[Répertorier les alertes liées à l’utilisateur](get-user-related-alerts.md)|collection[alert](alerts.md)|Répertorie toutes les alertes associées à un [utilisateur](user.md).
+[Répertorier les appareils associés à l’utilisateur](get-user-related-machines.md)|[collection d’ordinateurs](machine.md)|Répertoriez tous les appareils qui ont été connectés par un [utilisateur](user.md).

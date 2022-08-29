@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de l’e-mail et du document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 75fc048db9ebe0dfb16f772bd899306ce619096a
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: ca824d0f812690711f8ec78cd21955e14b8cb47f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285239"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439637"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes de mots clés et conditions de recherche pour eDiscovery
 
@@ -67,7 +67,7 @@ Le tableau suivant répertorie les propriétés des messages électroniques qui 
 |Kind|Type de message électronique à rechercher. Valeurs possibles : <p>  contacts <p>  docs <p>  email <p>  Externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (renvoie des éléments à partir de conversations, de réunions et d’appels dans Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|Le premier exemple retourne des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple retourne des messages électroniques, des conversations de messagerie instantanée (y compris Skype Entreprise conversations et conversations dans Microsoft Teams) et des messages vocaux qui répondent aux critères de recherche. Le troisième exemple retourne des éléments qui ont été importés dans des boîtes aux lettres dans Microsoft 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, consultez [Archivage des données tierces dans Office 365](https://www.microsoft.com/?ref=go).|
 |Participants|Tous les champs de personnes dans un e-mail. Ces champs sont From, To, Cc et Bcc.1<sup></sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.<br>([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|Messages reçus le 15 avril 2021. Le deuxième exemple retourne tous les messages reçus entre le 1er janvier 2021 et le 31 mars 2021.|
-|Destinataires|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et <sup>Cci.1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires du domaine contoso.com.<br>([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|Recipients|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et <sup>Cci.1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires du domaine contoso.com.<br>([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400` <p> `size:1..1048567`|Messages de plus de 25 Mo. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique. <p> **Note:** Lorsque vous utilisez la propriété Subject dans une requête, la recherche retourne tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne retourne pas uniquement les messages qui ont une correspondance exacte. Par exemple, si vous recherchez  `subject:"Quarterly Financials"`, vos résultats incluent des messages portant l’objet « Financière trimestrielle 2018 ».|`subject:"Quarterly Financials"` <p> `subject:northwind`|Messages qui contiennent l’expression « Financials trimestriels » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -225,7 +225,7 @@ Créez une condition à l’aide de propriétés de messagerie lors de la recher
 |Participants|Tous les champs de personnes dans un e-mail. Ces champs sont From, To, Cc et Cci. ([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Type|Propriété de classe de message pour un élément de messagerie. Il s’agit de la même propriété que la propriété e-mail ItemClass. Il s’agit également d’une condition à valeurs multiples. Par conséquent, pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur deux classes de message ou plus dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l’opérateur **OR** dans la requête de recherche correspondante. <p> Pour obtenir la liste des classes de message (et leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste **des classes message** , consultez [Types d’éléments et Classes de message](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Recipients|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et Cci. ([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|Destinataires|Tous les champs du destinataire dans un e-mail. Ces champs sont To, Cc et Cci. ([Voir Extension du destinataire](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Expéditeur|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique. <p> **Remarque** : n’incluez pas de guillemets doubles aux valeurs de cette condition, car les guillemets sont automatiquement ajoutés lors de l’utilisation de cette condition de recherche. Si vous ajoutez des guillemets à la valeur, deux paires de guillemets doubles sont ajoutées à la valeur de condition et la requête de recherche retourne une erreur.|
@@ -282,7 +282,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez des critères de 
 
 - La requête de recherche créée à l’aide de la zone mots clés et des conditions s’affiche sur la page **Recherche** , dans le volet d’informations de la recherche sélectionnée. Dans une requête, tout ce qui se trouve à droite de la notation  `(c:c)` indique les conditions ajoutées à la requête.
 
-- Les conditions ajoutent uniquement des propriétés à la requête de recherche ; n’ajoutez pas d’opérateurs. C’est pourquoi la requête affichée dans le volet de détails n’affiche pas les opérateurs à droite de la  `(c:c)` notation. KQL ajoute les opérateurs logiques (conformément aux règles expliquées précédemment) lors de l’exécution de la requête.
+- Les conditions ajoutent uniquement des propriétés à la requête de recherche ; ils n’ajoutent pas d’opérateurs. C’est pourquoi la requête affichée dans le volet de détails n’affiche pas les opérateurs à droite de la  `(c:c)` notation. KQL ajoute les opérateurs logiques (conformément aux règles expliquées précédemment) lors de l’exécution de la requête.
 
 - Vous pouvez utiliser le contrôle glisser-déplacer pour reséquencer l’ordre des conditions. Cliquez sur le contrôle d’une condition et déplacez-la vers le haut ou vers le bas.
 

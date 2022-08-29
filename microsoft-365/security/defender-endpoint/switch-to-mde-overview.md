@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: f922d618ac947646379f9d1022aba67c874e64fd
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 63b932df7337a757a0358719e32409ab8c6ea117
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174957"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331294"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passez de la protection des points de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
 
@@ -67,7 +67,7 @@ Dans ce guide de migration, nous nous concentrons sur les fonctionnalités de pr
 
 |Fonctionnalité/fonctionnalité|Description|
 |---|---|
-|[Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)|Les fonctionnalités de gestion des menaces & vulnérabilités permettent d’identifier, d’évaluer et de corriger les faiblesses de vos points de terminaison (tels que les appareils).|
+|[Gestion des vulnérabilités Microsoft Defender](next-gen-threat-and-vuln-mgt.md)|Les fonctionnalités de gestion des vulnérabilités Defender permettent d’identifier, d’évaluer et de corriger les faiblesses de vos points de terminaison (tels que les appareils).|
 |[Réduction de la surface d’attaque](overview-attack-surface-reduction.md)|Les règles de réduction de la surface d’attaque aident à protéger les appareils et applications de votre organisation contre les cybermenaces et les attaques.|
 |[Protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md)|La protection de nouvelle génération inclut l’antivirus Microsoft Defender pour aider à bloquer les menaces et les programmes malveillants.|
 |[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)|Les fonctionnalités de détection et de réponse des points de terminaison détectent, examinent et répondent aux tentatives d’intrusion et aux violations actives.|

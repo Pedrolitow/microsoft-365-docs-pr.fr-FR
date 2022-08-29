@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les paramètres centraux de protection contre la perte de données (DLP) des points de terminaison.
-ms.openlocfilehash: 91460c63b2286a8c2be4e5fe1aa94ea5ee31fec7
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
-ms.translationtype: HT
+ms.openlocfilehash: 454b99ea771f1d3059123534aa57c4a763706c87
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882387"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450034"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configurer les paramètres de protection contre la perte de données de point de terminaison
 
@@ -91,7 +91,7 @@ Vous pouvez utiliser cette logique pour créer vos chemins d'exclusion pour les 
 
 - Chemin d’accès au fichier valide qui se termine par `\`, ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\`
 
-- Chemin d’accès au fichier valide qui se termine par `\*`, ce qui signifie uniquement les fichiers sous sous-dossiers, en plus des fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\*`
+- Chemin d’accès de fichier valide qui se termine par `\*`, ce qui signifie uniquement les fichiers sous les sous-dossiers. Les fichiers directement sous le dossier ne sont pas exclus. <br/>Par exemple : `C:\Temp\*`
 
 - Chemin d’accès au fichier valide qui se termine sans `\` ou `\*`, ce qui signifie tous les fichiers directement sous dossier et tous les sous-dossiers. <br/>Par exemple : `C:\Temp`
 
@@ -258,7 +258,7 @@ Par exemple :
 | ***.CONTOSO.COM** |**Correspond au nom de domaine spécifié, à tout sous-domaine et à tout site** : <p>*://contoso.com <p>*://contoso.com/toutsoussite <p>*://contoso.com/toutsoussite1/toutsoussite2 <p>*://toutsousdomaine.contoso.com/ <p>*://toutsousdomaine.contoso.com/toutsoussite/ <p>*://toutsousdomaine1.toutsousdomaine2.contoso.com/toutsoussite/ <p>*://toutsousdomaine1.toutsousdomaine2.contoso.com/toutsoussite1/toutsoussite2 (etc.) <p>**Ne correspond pas aux domaines non spécifiés** <p>*://toutsousdomaine.contoso.com.AU/ |
 | **`www.contoso.com`** |**Correspond au nom de domaine spécifié** : <p>`www.contoso.com` <p>**Ne correspond pas à des domaines ou sous-domaines non spécifiés** <p>*://toutsousdomaine.contoso.com/, dans ce cas, vous devez placer le nom de domaine FQDN lui-même `www.contoso.com`|
 
-#### <a name="sensitive-service-domains-preview"></a>Domaines de service sensibles (préversion)
+#### <a name="sensitive-service-domains"></a>Domaines de service sensibles
 
 Lorsque vous répertoriez un site web dans des domaines de services sensibles, vous pouvez auditer, bloquer avec remplacement ou bloquer les utilisateurs lorsqu’ils tentent d’effectuer les opérations suivantes :
 
@@ -266,7 +266,7 @@ Lorsque vous répertoriez un site web dans des domaines de services sensibles, v
 - copier des données à partir d’un site web
 - enregistrer un site web en tant que fichiers locaux
 
-Chaque site web doit être répertorié dans un groupe de sites web et l’utilisateur doit accéder au site web via Microsoft Edge. Les domaines de service sensibles (préversion) sont utilisés conjointement avec une stratégie DLP pour les appareils. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 
+Chaque site web doit être répertorié dans un groupe de sites web et l’utilisateur doit accéder au site web via Microsoft Edge. Les domaines de service sensibles sont utilisés conjointement avec une stratégie DLP pour les appareils. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
 
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Paramètres supplémentaires pour le point de terminaison DLP

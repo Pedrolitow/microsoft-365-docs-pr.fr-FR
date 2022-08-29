@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur d’activités vous permet de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917999"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417387"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activités
 
@@ -59,18 +59,18 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 
 Un compte doit se voir attribuer explicitement l’appartenance à l’un de ces groupes de rôles ou lui accorder explicitement le rôle.
 
-### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
+### <a name="roles-and-role-groups"></a>Rôles et groupes de rôles
 
-Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
+Il existe des rôles et des groupes de rôles que vous pouvez utiliser pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles applicables qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Voici une liste des rôles applicables que vous pouvez utiliser. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrateur Information Protection
 - Analyste Information Protection
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles applicables en préversion. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles applicables que vous pouvez utiliser. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection

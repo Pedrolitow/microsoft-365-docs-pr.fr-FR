@@ -28,33 +28,33 @@
       href: plan-for-security-and-compliance.md
     - name: Extensibilité de la conformité
       href: compliance-extensibility.md
-- name: Fonctionnalités inter-solutions
+- name: Intégrer des appareils pour Microsoft Purview
   items:
-    - name: Intégrer les appareils Windows 10 et Windows 11
+    - name: Intégrer des appareils Windows 10
       items:
-        - name: Intégrer les appareils Windows 10 et Windows 11 dans une vue d’ensemble de Microsoft 365
+        - name: Vue d'ensemble
           href: device-onboarding-overview.md
-        - name: Intégrer les appareils Windows 10 et Windows 11 via une stratégie de groupe
-          href: device-onboarding-gp.md
-        - name: Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
+        - name: Intune
           href: device-onboarding-mdm.md
-        - name: Intégrer des appareils Windows 10 et Windows 11 à l’aide de Configuration Manager
+        - name: "Configuration\_Manager"
           href: device-onboarding-sccm.md
-        - name: Intégrer les appareils Windows 10 et Windows 11 en utilisant un script local
+        - name: Stratégie de groupe
+          href: device-onboarding-gp.md
+        - name: Script local
           href: device-onboarding-script.md
-        - name: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+        - name: Infrastructure de bureau virtuel (VDI) non persistante
           href: device-onboarding-vdi.md
     - name: Intégrer des appareils macOS
       items:
-        - name: Vue d’ensemble de l’intégration des appareils macOS dans Microsoft 365
+        - name: Vue d'ensemble
           href: device-onboarding-macos-overview.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune
+        - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison
+        - name: Intune pour Microsoft Defender pour point de terminaison
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro
+        - name: JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison
+        - name: JAMF Pro pour les clients Microsoft Defender pour point de terminaison
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Gérer les connecteurs pour les données tierces
   items:
@@ -98,8 +98,6 @@
           href: archive-eml-data.md
         - name: FX Connect
           href: archive-fxconnect-data.md
-        - name: Jive
-          href: archive-jive-data.md
         - name: Base de données MS SQL
           href: archive-mssqldatabaseimporter-data.md
         - name: Pivot
@@ -328,18 +326,38 @@
           items:
             - name: Créer un type d’informations sensibles personnalisé – Centre de conformité
               href: create-a-custom-sensitive-information-type.md
-            - name: Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes
-              href: sit-get-started-exact-data-match-based-sits-overview.md
-            - name: Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données
-              href: sit-get-started-exact-data-match-export-data.md
-            - name: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
-              href: sit-get-started-exact-data-match-create-schema.md
-            - name: Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles
-              href: sit-get-started-exact-data-match-hash-upload.md
-            - name: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
-              href: sit-get-started-exact-data-match-create-rule-package.md
-            - name: Tester un type d’informations sensibles correspondant exactement aux données
-              href: sit-get-started-exact-data-match-test.md
+            - name: Création d’EDM SITS
+              items:
+                - name: Bien démarrer avec EDM SITS
+                  href: sit-get-started-exact-data-match-based-sits-overview.md
+                - name: Créer une expérience SIT EDM
+                  items:
+                    - name: Créer une nouvelle expérience de flux de travail EDM SIT
+                      href: sit-create-edm-sit-unified-ux-workflow.md
+                    - name: Exporter des données sources
+                      href: sit-get-started-exact-data-match-export-data.md
+                    - name: Créer un exemple de fichier SIT EDM pour la nouvelle expérience
+                      href: sit-create-edm-sit-unified-ux-sample-file.md
+                    - name: Créer une nouvelle expérience de schéma sit et de package de règles EDM
+                      href: sit-create-edm-sit-unified-ux-schema-rule-package.md
+                    - name: Hachez et chargez la table source d’informations sensibles pour l’expérience classique EDM
+                      href: sit-get-started-exact-data-match-hash-upload.md
+                    - name: Tester un type d’informations sensibles EDM
+                      href: sit-get-started-exact-data-match-test.md
+                - name: Créer une expérience classique sit EDM
+                  items:
+                    - name: Créer une expérience classique de workflow SIT EDM exacte
+                      href: sit-create-edm-sit-classic-ux-workflow.md
+                    - name: Exporter des données sources
+                      href: sit-get-started-exact-data-match-export-data.md
+                    - name: Créer le schéma pour l’expérience classique EDM
+                      href: sit-get-started-exact-data-match-create-schema.md
+                    - name: Hachez et chargez la table source d’informations sensibles pour l’expérience classique EDM
+                      href: sit-get-started-exact-data-match-hash-upload.md
+                    - name: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
+                      href: sit-get-started-exact-data-match-create-rule-package.md
+                    - name: Tester un type d’informations sensibles EDM
+                      href: sit-get-started-exact-data-match-test.md
         - name: Utiliser des types d’informations sensibles
           items:
             - name: Personnaliser un type d’informations sensibles intégré
@@ -836,6 +854,8 @@
                   href: sit-defn-norway-identification-number.md
                 - name: Adresses physiques norvégiennes
                   href: sit-defn-norway-physical-addresses.md
+                - name: Numéro de passeport des Philippines
+                  href: sit-defn-philippines-passport-number.md
                 - name: Numéro d’identification multi-usage unifié aux Philippines
                   href: sit-defn-philippines-unified-multi-purpose-identification-number.md
                 - name: Numéro de permis de conduire polonais
@@ -862,6 +882,8 @@
                   href: sit-defn-portugal-physical-addresses.md
                 - name: Numéro d’identification fiscale portugais
                   href: sit-defn-portugal-tax-identification-number.md
+                - name: Numéro de carte d’identification qatari
+                  href: sit-defn-qatari-id-card-number.md
                 - name: Numéro de permis de conduire roumain
                   href: sit-defn-romania-drivers-license-number.md
                 - name: Numéro de passeport roumain
@@ -984,6 +1006,8 @@
               href: sit-functions.md
             - name: Référence de filtres de type d’informations sensibles personnalisé
               href: sit-custom-sit-filters.md
+            - name: Limites des types d’informations sensibles
+              href: sit-limits.md
     - name: Classifieurs avec capacité d’apprentissage
       items:
         - name: En savoir plus sur les classifieurs avec capacité d’apprentissage
@@ -1032,6 +1056,8 @@
       items:
         - name: Comprendre le chiffrement
           href: encryption.md
+        - name: Configurations Azure AD
+          href: encryption-azure-ad-configuration.md
         - name: Chiffrement à double clé (DKE)
           href: double-key-encryption.md
         - name: FAQ sur le chiffrement à double clé
@@ -1185,6 +1211,8 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Référence des conseils de stratégie de prévention contre la perte de données
               href: dlp-policy-tips-reference.md
+            - name: Partager des alertes DLP (préversion)
+              href: dlp-share-alerts.md
 - name: Gérer les enregistrements et le cycle de vie des données
   items:
     - name: Gouvernez vos données
@@ -1201,7 +1229,7 @@
           items:
             - name: SharePoint et OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md
@@ -1679,6 +1707,8 @@
           href: compliance-manager-templates-list.md
         - name: Travailler avec des actions d'amélioration
           href: compliance-manager-improvement-actions.md
+        - name: Mise à jour des actions d’amélioration
+          href: compliance-manager-update-actions.md
         - name: Créer et gérer des stratégies d'alerte
           href: compliance-manager-alert-policies.md
         - name: Comment votre score de conformité est calculé

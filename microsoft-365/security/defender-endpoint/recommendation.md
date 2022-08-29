@@ -1,8 +1,7 @@
 ---
 title: Méthodes et propriétés de l’action d'amélioration
 description: Récupère les principales alertes récentes.
-keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
-search.product: eADQiWindows 10XVcnh
+keywords: api, api graphe, api prises en charge, get, alertes, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cc935bd3d05c3a4f0e42b1382a94a5d744e27959
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d629678e9b03e3abcb0ed88781d4943a137ba7b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168437"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331592"
 ---
-# <a name="recommendation-resource-type"></a>Type de ressource Recommendation
+# <a name="recommendation-resource-type"></a>Type de ressource de recommandation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,11 +47,11 @@ Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous 
 
 |Méthode|Type renvoyé|Description|
 |---|---|---|
-|[Répertorier toutes les actions d’amélioration](get-all-recommendations.md)|Collection Recommendation|Récupère la liste de toutes les recommandations de sécurité affectant l’organisation|
+|[Répertorier toutes les actions d’amélioration](get-all-recommendations.md)|Collection de recommandations|Récupère une liste de toutes les recommandations de sécurité affectant l’organisation|
 |[Obtenir des recommandations par ID](get-recommendation-by-id.md)|Recommandation|Récupère une recommandation de sécurité par son ID|
 |[Obtenir un logiciel de recommandation](list-recommendation-software.md)|[Logiciels](software.md)|Récupère une recommandation de sécurité liée à un logiciel spécifique|
-|[Obtenir des appareils de recommandation](get-recommendation-machines.md)|Collection MachineRef|Récupère la liste des appareils associés à la recommandation de sécurité|
-|[Obtenir des vulnérabilités de recommandation](get-recommendation-vulnerabilities.md)|[Collection de vulnérabilités](vulnerability.md)|Récupère une liste des vulnérabilités associées à la recommandation de sécurité|
+|[Obtenir des appareils de recommandation](get-recommendation-machines.md)|Collection MachineRef|Récupère une liste d’appareils associés à la recommandation de sécurité|
+|[Obtenir les vulnérabilités de recommandation](get-recommendation-vulnerabilities.md)|[Collection de vulnérabilités](vulnerability.md)|Récupère une liste des vulnérabilités associées à la recommandation de sécurité|
 |
 
 ## <a name="properties"></a>Propriétés
@@ -63,26 +62,26 @@ Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous 
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|String|ID de recommandation|
+|id|Chaîne|ID de recommandation|
 |productName|String|Nom du logiciel associé|
-|recommendationName|String|Nom de la recommandation|
+|recommendationName|Chaîne|Nom de la recommandation|
 |Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
-|Fournisseur|String|Nom du fournisseur associé|
-|recommendedVersion|String|Version recommandée|
-|recommendedProgram|String|Programme recommandé|
-|recommendedVendor|String|Fournisseur recommandé|
-|recommendationCategory|String|Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityControls »|
-|sous-catégorie|String|Sous-catégorie de recommandation|
-|severityScore|Double|Impact potentiel de la configuration sur le Score de sécurité Microsoft pour les appareils de l’organisation (1-10)|
-|publicExploit|Boolean|Une exploitation publique est disponible|
-|activeAlert|Booléen|L’alerte active est associée à cette recommandation|
-|associatedThreats|String collection|Le rapport d’analyse des menaces est associé à cette recommandation|
-|remediationType|String|Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »|
+|Fournisseur|Chaîne|Nom du fournisseur associé|
+|recommendedVersion|Chaîne|Version recommandée|
+|recommendedProgram|Chaîne|Programme recommandé|
+|recommendedVendor|Chaîne|Fournisseur recommandé|
+|recommendationCategory|Chaîne|Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityControls »|
+|Sous-catégorie|Chaîne|Sous-catégorie de recommandation|
+|severityScore|Double|Impact potentiel de la configuration sur le degré de sécurisation Microsoft de l’organisation pour les appareils (1-10)|
+|publicExploit|Boolean|Exploit public disponible|
+|activeAlert|Boolean|L’alerte active est associée à cette recommandation|
+|associatedThreats|String collection|Le rapport Analyse des menaces est associé à cette recommandation|
+|remediationType|Chaîne|Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »|
 |État|Énum|État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »|
-|configScoreImpact|Double|Impact du Score de sécurisation Microsoft pour les appareils|
+|configScoreImpact|Double|Impact du score de sécurité Microsoft pour les appareils|
 |exposureImpact|Double|Impact du score d’exposition|
 |totalMachineCount|Entier long|Nombre d’appareils installés|
 |exposedMachinesCount|Entier long|Nombre d’appareils installés exposés à des vulnérabilités|
 |nonProductivityImpactedAssets|Entier long|Nombre d’appareils qui ne sont pas affectés|
-|relatedComponent|String|Composant logiciel associé|
+|relatedComponent|Chaîne|Composant logiciel associé|
 |

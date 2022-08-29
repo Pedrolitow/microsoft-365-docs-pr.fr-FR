@@ -1,7 +1,7 @@
 ---
 title: Profil d’appareil dans le portail de sécurité Microsoft 365
 description: Affichez les niveaux de risque et d’exposition d’un appareil de votre organisation. Analysez les menaces passées et présentes, et protégez l’appareil avec les dernières mises à jour.
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, Microsoft 365 Defender, centre de sécurité, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour l’identité, page appareil, profil d’appareil, page ordinateur, profil d’ordinateur
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, Microsoft 365 Defender, security center, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour Identity, page d’appareil, profil d’appareil, page ordinateur, profil d’ordinateur
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 962ec0c5ed6b7d6934678678be9a57ebcbaabc55
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: d474b38e65c77fb75dd1472cfa6f316c9200b086
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923431"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386605"
 ---
 # <a name="device-profile-page"></a>Page Profil d’appareil
 
@@ -58,9 +58,9 @@ La barre latérale répertorie le nom complet et le niveau d’exposition de l�
 > [!TIP]
 > Le niveau d’exposition est lié au niveau de conformité de l’appareil aux recommandations de sécurité, tandis que le niveau de risque est calculé en fonction d’un certain nombre de facteurs, notamment les types et la gravité des alertes actives.
 
-* **Détails de** l’appareil : domaine, système d’exploitation, horodatage du moment où l’appareil a été vu pour la première fois, adresses IP, ressources. Les appareils inscrits dans Microsoft Defender pour point de terminaison affichent également l’état d’intégrité. Les appareils inscrits dans Microsoft Defender pour Identity affichent le nom SAM et un horodatage de la première création de l’appareil.
+* **Détails de** l’appareil : domaine, système d’exploitation, horodatage du moment où l’appareil a été vu pour la première fois, adresses IP, ressources. Les appareils inscrits dans Microsoft Defender pour point de terminaison affichent également l’état d’intégrité. Les appareils inscrits dans Microsoft Defender pour Identity affichent le nom SAM et un horodatage pour la première création de l’appareil.
 * **Activité réseau** : horodatages pour la première fois et la dernière fois que l’appareil a été vu sur le réseau.
-* **Données d’annuaire** (*uniquement pour les appareils inscrits dans Microsoft Defender pour Identity*) : indicateurs [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) , [SPN](/windows/win32/ad/service-principal-names) et appartenances aux groupes.
+* **Données d’annuaire** (*uniquement pour les appareils inscrits dans Microsoft Defender pour Identity*) : indicateurs [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview), [SPN](/windows/win32/ad/service-principal-names) et appartenances aux groupes.
 
 ## <a name="response-actions"></a>Actions de réponse
 
@@ -74,11 +74,11 @@ Les actions de réponse offrent un moyen rapide de se défendre et d’analyser 
 
 Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 
-* **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
+* **Gérer les balises** : Mises à jour balises personnalisées que vous avez appliquées à cet appareil.
 * **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en le maintenant connecté à Microsoft Defender pour point de terminaison. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise à s’exécuter lorsque l’appareil est isolé, à des fins de communication.
 * **Centre d’actions** : affichez l’état des actions soumises. Disponible uniquement si une autre action a déjà été sélectionnée.
 * **Restreindre l’exécution de l’application** : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
-* **Exécuter l’analyse antivirus** - Met à jour les définitions de l’antivirus Windows Defender et exécute immédiatement une analyse antivirus. Choisissez entre analyse rapide ou analyse complète.
+* **Exécuter l’analyse antivirus** - Mises à jour définitions de l’antivirus Microsoft Defender et exécute immédiatement une analyse antivirus. Choisissez entre analyse rapide ou analyse complète.
 * **Collecter le package d’investigation** : collecte des informations sur l’appareil. Une fois l’enquête terminée, vous pouvez la télécharger.
 * **Lancer une session de réponse en direct** : charge un interpréteur de commandes distant sur l’appareil pour [des investigations de sécurité approfondies](/microsoft-365/security/defender-endpoint/live-response).
 * **Lancer une investigation automatisée** : [examine et corrige automatiquement les menaces](../office-365-security/office-365-air.md). Bien que vous puissiez déclencher manuellement des investigations automatisées à exécuter à partir de cette page, [certaines stratégies d’alerte](../../compliance/alert-policies.md#default-alert-policies) déclenchent elles-mêmes des investigations automatiques.
@@ -168,7 +168,7 @@ La sélection d’un élément dans cette liste ouvre un menu volant qui décrit
 
 ### <a name="missing-kbs"></a>Bases de connaissances manquantes
 
-L’onglet **Bases de connaissances manquantes** répertorie toutes les mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « bases de connaissances » en question sont des [articles de la Base de connaissances](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) qui décrivent ces mises à jour; par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+L’onglet **Bases de connaissances manquantes** répertorie les Mises à jour Microsoft qui n’ont pas encore été appliquées à l’appareil. Les « bases de connaissances » en question sont des [articles de la Base de connaissances](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) qui décrivent ces mises à jour; par exemple, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
 :::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="Onglet Bases de connaissances manquantes pour le profil d’appareil dans le portail Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
@@ -178,9 +178,9 @@ Le nombre d’éléments affichés par page et les colonnes affichées peuvent �
 
 La sélection d’un élément ouvre un menu volant qui est lié à la mise à jour.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-* [Vue d’ensemble de Microsoft 365 Defender](microsoft-365-defender.md)
+* [vue d’ensemble de Microsoft 365 Defender](microsoft-365-defender.md)
 * [Activer Microsoft 365 Defender](m365d-enable.md)
 * [Examiner les entités sur les appareils à l’aide d’une réponse en direct](../defender-endpoint/live-response.md)
 * [Investigation et réponse automatisées (AIR) dans Office 365](../office-365-security/office-365-air.md)

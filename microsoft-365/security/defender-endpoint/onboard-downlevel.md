@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 73330ff3dde5daa8d8ec9b2e3f1500e125135db5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717209"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388141"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -152,16 +152,16 @@ Une fois les étapes d’intégration terminées, vous devez [configurer et mett
 
 ## <a name="verify-onboarding"></a>Vérifier l’intégration
 
-Vérifiez que Microsoft Defender AV et Microsoft Defender pour point de terminaison sont en cours d’exécution. 
+Vérifiez que l’Antivirus Microsoft Defender et les Microsoft Defender pour point de terminaison sont en cours d’exécution. 
 
 > [!NOTE]
-> L’exécution de Microsoft Defender AV n’est pas obligatoire, mais elle est recommandée. Si un autre produit du fournisseur d’antivirus est la solution principale de protection des points de terminaison, vous pouvez exécuter l’antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est activé après avoir vérifié que Microsoft Defender pour point de terminaison capteur (SENSE) est en cours d’exécution. 
+> L’exécution de l’Antivirus Microsoft Defender n’est pas obligatoire, mais elle est recommandée. Si un autre produit du fournisseur d’antivirus est la solution principale de protection des points de terminaison, vous pouvez exécuter l’antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est activé après avoir vérifié que Microsoft Defender pour point de terminaison capteur (SENSE) est en cours d’exécution. 
 
-1. Exécutez la commande suivante pour vérifier que Microsoft Defender AV est installé :
+1. Exécutez la commande suivante pour vérifier que l’Antivirus Microsoft Defender est installé :
 
    ```sc.exe query Windefend```
 
-    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer Microsoft Defender AV. Pour plus d’informations, consultez [l’Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-windows.md).
+    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer l’antivirus Microsoft Defender. Pour plus d’informations, consultez [l’Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-windows.md).
 
     Pour plus d’informations sur l’utilisation de stratégie de groupe pour configurer et gérer l’antivirus Microsoft Defender sur vos serveurs Windows, consultez [Utiliser stratégie de groupe paramètres pour configurer et gérer l’antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 

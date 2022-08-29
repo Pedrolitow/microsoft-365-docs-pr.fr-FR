@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord Rapports Microsoft 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2444a93a1a68cd994da19325a8a00af868b6ba16
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942054"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386514"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Rapports Microsoft 365 dans le Centre d’administration - Utilisation du navigateur Microsoft
 
-Le tableau de bord Rapports Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d’explorer des rapports individuels au niveau du produit pour vous donner des informations plus précises sur les activités au sein de chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation du navigateur Microsoft, vous pouvez obtenir des insights sur la nouvelle utilisation de Microsoft Edge. Les rapports d’utilisation sont basés sur un nombre agrégé d’utilisateurs de votre organisation qui se connectent à leur compte Microsoft 365 et utilisent le navigateur Microsoft Edge pour accéder aux services Microsoft 365.
+Le tableau de bord Rapports Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d’explorer des rapports individuels au niveau du produit pour vous donner des informations plus précises sur les activités au sein de chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). 
+
+Le **rapport d’utilisation de Microsoft Browser** dans le centre Administration Microsoft 365 vous permet de voir si les utilisateurs accèdent à Microsoft 365 services en ligne via Microsoft Edge. Cet insight de rapport peut vous aider à migrer votre organisation vers Microsoft Edge. Les rapports d’utilisation sont basés sur un nombre agrégé d’utilisateurs de votre organisation qui se connectent à leur compte Microsoft 365 et utilisent le navigateur Microsoft Edge pour accéder aux services Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Comment accéder au rapport d’utilisation du navigateur Microsoft
 
@@ -46,7 +48,11 @@ Le graphique **Utilisateurs actifs quotidiens** affiche le nombre d’utilisateu
 
 Le graphique **Utilisateurs actifs** affiche le nombre total d’utilisateurs accédant aux services Microsoft 365 lors de l’utilisation de Microsoft Edge sur la période sélectionnée.
 
-Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes.
+Le rapport est interne à votre organisation avec des autorisations limitées aux administrateurs informatiques disposant d’un accès existant aux rapports d’activité sur le tableau de bord d’utilisation dans le centre Administration Microsoft 365.
+
+> [!NOTE]
+> L’utilisation agrégée du navigateur Microsoft et la création de rapports au niveau de l’utilisateur sont disponibles. L’identification au niveau de [l’utilisateur peut être supprimée en fonction des stratégies de votre organisation](activity-reports.md#show-user-details-in-the-reports) et [les contrôles d’accès en fonction du rôle peuvent être utilisés](../../admin/add-users/assign-admin-roles.md) pour ajuster l’accès aux rapports.
+
 
 |Élément|Description|
 |:-----|:-----|

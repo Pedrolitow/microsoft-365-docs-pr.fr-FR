@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), obtenez une liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 6ed55b436d110c43ce0a87d12049988105c79c48
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67105953"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417431"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
@@ -36,7 +36,7 @@ En outre, chaque locataire client MSP doit être éligible à Lighthouse en rép
 - Doit avoir au moins une Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Affaires ou licence Microsoft Defender pour entreprises
 - Ne doit pas avoir plus de 2 500 utilisateurs sous licence
 
- \*Des privilèges délégués granulaires Administration (GDAP) ou une relation de privilèges DAP (Delegated Administration Privileges) sont nécessaires pour intégrer des clients à Lighthouse. Une relation de revendeur indirect n’est plus nécessaire pour l’intégration à Lighthouse. Si DAP et GDAP coexistent dans un locataire client, les autorisations GDAP sont prioritaires pour les techniciens MSP dans les groupes de sécurité compatibles GDAP.
+ \*Des privilèges délégués granulaires Administration (GDAP) plus une relation de revendeur indirect ou une relation de privilèges délégués Administration (DAP) sont nécessaires pour intégrer des clients à Lighthouse. Si DAP et GDAP coexistent dans un locataire client, les autorisations GDAP sont prioritaires pour les techniciens MSP dans les groupes de sécurité compatibles GDAP. Bientôt, les clients ayant des relations GDAP uniquement (sans relations de revendeur indirect) pourront intégrer Lighthouse.
 
 ## <a name="requirements-for-enabling-device-management"></a>Configuration requise pour l’activation de la gestion des appareils
 

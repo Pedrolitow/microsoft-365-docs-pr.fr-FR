@@ -1,7 +1,7 @@
 ---
 title: Méthodes et propriétés du score
-description: Récupère le score d’exposition de votre organisation, le score de sécurisation de l’appareil et le score d’exposition par groupe d’appareils
-keywords: api, api de graphique, api pris en charge, score, score d’exposition, score de sécurité de l’appareil, score d’exposition par groupe d’appareils
+description: Récupère le score d’exposition, le score de sécurité de l’appareil et le score d’exposition de votre organisation par groupe d’appareils
+keywords: api, API de graphe, api prises en charge, score, score d’exposition, score de sécurisation de l’appareil, score d’exposition par groupe d’appareils
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe69b42c2d8bf80089b749cd41e59664cc2921e3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 270ce3b5a2127217c1fb2e7e568b21d5f7b33ecd
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300981"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331442"
 ---
-# <a name="score-resource-type"></a>Type de ressource Score
+# <a name="score-resource-type"></a>Noter le type de ressource
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,15 +44,15 @@ ms.locfileid: "61300981"
 
 Méthode|Type renvoyé|Description
 :---|:---|:---
-[Obtenir un score d'exposition](get-exposure-score.md)|[Score](score.md)|Obtenir le score d’exposition de l’organisation.
-[Obtenir un score sécurisé d’appareil](get-device-secure-score.md)|[Score](score.md)|Obtenez le score de sécurité de l’appareil de l’organisation.
-[Liste du score d’exposition par groupe d’appareils](get-machine-group-exposure-score.md)|[Score](score.md)|Liste des scores par groupe d’appareils.
+[Obtenir un score d'exposition](get-exposure-score.md)|[Score](score.md)|Obtenez le score d’exposition de l’organisation.
+[Obtenir un score sécurisé d’appareil](get-device-secure-score.md)|[Score](score.md)|Obtenez le score de sécurisation de l’appareil organisationnel.
+[Répertorier le score d’exposition par groupe d’appareils](get-machine-group-exposure-score.md)|[Score](score.md)|Répertorie les scores par groupe d’appareils.
 
 ## <a name="properties"></a>Propriétés
 
 Propriété|Type|Description
 :---|:---|:---
 Niveau|Double|Score actuel.
-Temps|Date/heure|Date et heure à laquelle l’appel de cette API a été effectué.
+Temps|Date/heure|Date et heure auxquelles l’appel pour cette API a été effectué.
 RbacGroupName|Chaîne|Nom du groupe d’appareils.
 RbacGroupId|Chaîne|ID du groupe d’appareils.

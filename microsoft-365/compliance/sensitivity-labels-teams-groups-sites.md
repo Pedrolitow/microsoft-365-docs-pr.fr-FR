@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: 7417592f4000d344fe6a093de4de02bcecba573e
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037641"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417453"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -43,6 +43,8 @@ En plus d’utiliser des [étiquettes de confidentialité](sensitivity-labels.md
 > Les paramètres pour les appareils non gérés et les contextes d’authentification fonctionnent conjointement avec l’accès conditionnel Azure Active Directory. Vous devez configurer cette fonctionnalité dépendante si vous souhaitez utiliser une étiquette de confidentialité pour ces paramètres. Des informations supplémentaires sont incluses dans les instructions qui suivent.
 
 Lorsque vous appliquez cette étiquette de confidentialité à un conteneur pris en charge, l’étiquette applique automatiquement la catégorie de confidentialité et les paramètres de protection configurés au site ou au groupe.
+
+N’oubliez pas que certaines options d’étiquette peuvent étendre les paramètres de configuration aux propriétaires de site, qui sont autrement limités aux administrateurs. Lorsque vous configurez et publiez les paramètres d’étiquette pour les options de partage externe et le contexte d’authentification, un propriétaire de site peut désormais définir et modifier ces options pour un site en appliquant ou en modifiant l’étiquette de confidentialité d’une équipe ou d’un site. Ne configurez pas ces paramètres d’étiquette spécifiques si vous ne souhaitez pas que les propriétaires de site puissent apporter ces modifications.
 
 Toutefois, le contenu de ces conteneurs n’hérite pas des étiquettes de la catégorie de confidentialité ou des paramètres pour les fichiers et les e-mails, tels que les marquages de contenu et le chiffrement. Pour que les utilisateurs puissent étiqueter leurs documents sur des sites SharePoint ou des sites d’équipe, assurez-vous que vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 

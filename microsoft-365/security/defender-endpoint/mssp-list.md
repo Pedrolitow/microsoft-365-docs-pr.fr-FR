@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: bade400bfd794371f294df28320d3a8a11aa30b4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099258"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445040"
 ---
 # <a name="supported-managed-security-service-providers"></a>Fournisseurs de services de sécurité gérés pris en charge
 
@@ -46,7 +46,7 @@ Logo |Nom du partenaire   | Description
 ![Image du logo CyberProof.](images/cyberproof-logo.png) |[CyberProof Managed Detection & Response (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | Services de détection et de réponse aux menaces managées 24 h/24 et 7 j/7 entièrement intégrés à Microsoft Sentinel et Defender pour point de terminaison.
 ![Image du logo Dell Technologies Advanced Threat Protection.](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Service de surveillance professionnelle pour les comportements malveillants et les anomalies avec fonctionnalité 24h/24 et 7 j/7
 :::image type="content" source="images/dxc-logo.png" alt-text="Image de DXC-Managed logo Endpoint Threat Detection and Response.":::| [Détection et réponse des menaces de point de terminaison managé dXC](https://go.microsoft.com/fwlink/?linkid=2090395) | Identifiez les menaces de point de terminaison qui échappent aux défenses de sécurité traditionnelles et les contiennent en heures ou en minutes, et non en jours.
-![Image du journal eSentire.](images/esentire-logo.png) | [ESentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Investigations et réponses sur les menaces 24 h/24 et 7 j/7 via Microsoft Defender pour point de terminaison.
+![Image du journal eSentire.](images/esentire-logo.png) | [ESentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24 heures sur 24, 7 j/7, recherche et réponse complète avec une expertise MDR certifiée dans l’écosystème Microsoft, y compris Microsoft 365 Defender & Sentinel plus 15 minutes de temps moyen à contenir.
 ![Image du logo d’expulsion.](images/expel-logo.png)| [Renvoyer la détection managée et la réponse pour Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel vous aide à maintenir votre sécurité en détectant les risques de sécurité dans Microsoft Defender pour point de terminaison.
 ![Image du logo Mandiant.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) pour Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortifiez votre defender pour point de terminaison avec l’intelligence MDR de première ligne 24 heures sur 24 et 7 jours sur 7 et l’expertise de Mandiant.
 ![Image du logo sécurité NTT.](images/ntt-logo.png)| [Sécurité NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | Le service EDR de NTT fournit une surveillance de la sécurité 24h/24 et 7 j/7 & réponse sur votre point de terminaison et votre réseau

@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 35f9329756fde82a6ac0762d30041a3d30cd2c8b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 46deff4933055e4a76fa2e45663243ceca53f6d1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492466"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388119"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gérer le calendrier de téléchargement et d’application des mises à jour de protection
 
@@ -72,13 +72,13 @@ L’activation de ces paramètres remplace cette valeur par défaut.
 
 3. Cliquez sur **Stratégies** , puis **sur Modèles d’administration**.
 
-4. Développez l’arborescence sur **les composants** \> Windows **Antivirus Windows Defender** \> **signature Mises à jour** et configurez les paramètres suivants :
+4. Développez l’arborescence sur **les composants** \> Windows microsoft **Defender Antivirus** \> **Signature Mises à jour** et configurez les paramètres suivants :
 
-    1. Double-cliquez sur **Spécifier le jour de la semaine pour rechercher le paramètre des mises à jour du renseignement de sécurité** et définissez l’option **sur Activé**. Entrez le jour de la semaine pour rechercher les mises à jour. Cliquez sur **OK**.
+    1. Double-cliquez sur **Spécifier le jour de la semaine pour rechercher le paramètre des mises à jour du renseignement de sécurité** et définissez l’option **sur Activé**. Entrez le jour de la semaine pour rechercher les mises à jour. Cliquez sur **OK**.
 
-    2. Double-cliquez sur **Spécifier l’intervalle pour rechercher le paramètre des mises à jour de définition** et définissez l’option **sur Activé**. Entrez le nombre d’heures entre les mises à jour. Cliquez sur **OK**.
+    2. Double-cliquez sur **Spécifier l’intervalle pour rechercher le paramètre des mises à jour de définition** et définissez l’option **sur Activé**. Entrez le nombre d’heures entre les mises à jour. Cliquez sur **OK**.
 
-    3. Double-cliquez sur **Spécifier le temps nécessaire pour rechercher le paramètre des mises à jour de définition** et définissez l’option **sur Activé**. Entrez l’heure à laquelle les mises à jour doivent être vérifiées. L’heure est basée sur l’heure locale du point de terminaison. Cliquez sur **OK**.
+    3. Double-cliquez sur **Spécifier le temps nécessaire pour rechercher le paramètre des mises à jour de définition** et définissez l’option **sur Activé**. Entrez l’heure à laquelle les mises à jour doivent être vérifiées. L’heure est basée sur l’heure locale du point de terminaison. Cliquez sur **OK**.
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>Utiliser des applets de commande PowerShell pour planifier des mises à jour de protection
 

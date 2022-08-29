@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7215beeec25f4d343e574b8e2bcda22a43f0f45e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943615"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386799"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -120,6 +120,7 @@ Des tâches importantes, telles que le contrôle des paramètres de produit et l
 |Configuration|Activer/désactiver les analyses après les mises à jour du renseignement de sécurité|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |Configuration|Activer/désactiver l’analyse des archives (analyses à la demande uniquement)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Configuration|Activer/désactiver le calcul de hachage de fichier|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
+|Configuration|Activer/désactiver data_loss_prevention|`mdatp config data_loss_prevention --value [enabled/disabled]`|
 |Diagnostics|Modifier le niveau du journal|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Générer des journaux de diagnostic|`mdatp diagnostic create --path [directory]`|
 |Intégrité|Vérifier l’intégrité du produit|`mdatp health`|

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bf23036c48952991253ea3a211ebdeb571c98e5f
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 67d1f15ef79f932ad8515d8c8f6b5339845eb4f4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276963"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67444895"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Migration de serveurs de Microsoft Monitoring Agent vers la solution unifiée
 
@@ -46,9 +46,9 @@ Pour plus d’informations sur l’installation des prérequis répertoriés, co
 Copiez le package de solution unifié, le script d’intégration et le script de migration vers la même source de contenu que vous déployez d’autres applications avec MECM.
 
 1. Téléchargez le script d’intégration et la solution unifiée à partir de [Microsoft 365 Defender page des paramètres](https://sip.security.microsoft.com/preferences2/onboarding).
-
-   :::image type="content" source="images/onboarding-script.png" alt-text="Capture d’écran du script d’intégration et du téléchargement d’une solution unifiée." lightbox="images/onboarding-script.png":::
-      
+   :::image type="content" source="images/onboarding-script.png" alt-text="Capture d’écran du script d’intégration et du téléchargement d’une solution unifiée" lightbox="images/onboarding-script.png":::
+   > [!Note]
+   > Vous devez sélectionner le stratégie de groupe dans la liste déroulante Méthode de déploiement pour obtenir le fichier .cmd.
 2. Téléchargez le script de migration à partir du document : [Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente](server-migration.md). Ce script se trouve également sur GitHub : [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Enregistrez les trois fichiers dans un dossier partagé utilisé par MECM comme source logicielle.
 
@@ -58,17 +58,14 @@ Copiez le package de solution unifié, le script d’intégration et le script d
 
 1. Dans la console MECM, procédez comme suit : **Bibliothèque de logiciels>Applications>Créer une application**.
 2. Sélectionnez **Manuellement pour spécifier les informations de l’application**.
-   
    :::image type="content" source="images/manual-application-information.png" alt-text="Capture d’écran de la spécification manuelle de la sélection des informations de l’application." lightbox="images/manual-application-information.png":::
-   
 3. Sélectionnez **Suivant** sur l’écran Centre logiciel de l’Assistant.
 4. Dans les types de déploiement, cliquez sur **Ajouter**.
 5. Sélectionnez **Manuellement pour spécifier les informations de type de déploiement** , puis sélectionnez **Suivant**.
 6. Donnez un nom à votre déploiement de script, puis sélectionnez **Suivant**.
 
    :::image type="content" source="images/manual-deployment-information.png" alt-text="Capture d’écran spécifiant les informations de déploiement de script.":::
-     
-7. Dans cette étape, copiez le chemin d’accès UNC où se trouve votre contenu. Exemple : `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
+7. Dans cette étape, copiez le chemin d’accès UNC où se trouve votre contenu. Exemple : `\\ServerName\h$\SOFTWARE_SOURCE\path`.
 
    :::image type="content" source="images/deployment-type-wizard.png" alt-text="Capture d’écran montrant la copie du chemin UNC.":::
   
@@ -81,21 +78,21 @@ Copiez le package de solution unifié, le script d’intégration et le script d
       Cliquez sur **Suivant** et veillez à ajouter votre propre ID d’espace de travail dans cette section.
 9. Cliquez sur **Suivant** , puis sur Ajouter une clause.
 10. La méthode de détection est basée sur la clé de Registre indiquée ci-dessous.
-      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense`
 
       Cochez l’option : **ce paramètre de Registre doit se fermer sur le système cible pour indiquer la présence de cette application.**
 
-    :::image type="content" source="images/detection-wizard.png" alt-text="Capture d’écran montrant l’Assistant Type de détection":::
+      :::image type="content" source="images/detection-wizard.png" alt-text="Capture d’écran montrant l’Assistant Type de détection":::
 
       >[!TIP]
-      >Cette valeur de clé de Registre a été obtenue en exécutant la commande PowerShell ci-dessous sur un appareil sur lequel la solution unifiée est installée. D’autres méthodes créatives de détection peuvent également être utilisées. L’objectif est d’identifier si la solution unifiée a déjà été installée sur un appareil spécifique.
+      >La valeur de clé de Registre a été obtenue en exécutant la commande PowerShell indiquée ci-dessous sur un appareil sur lequel la solution unifiée est installée. D’autres méthodes créatives de détection peuvent également être utilisées. L’objectif est d’identifier si la solution unifiée a déjà été installée sur un appareil spécifique. Vous pouvez laisser les champs Valeur et Type de données comme vides.
 
      ```powershell
       get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize 
      ```
 
 11. Dans la section **Expérience utilisateur** , vérifiez les paramètres recommandés indiqués dans la capture d’écran. Vous pouvez choisir ce qui convient à votre environnement et cliquer sur **Suivant**. Pour la **visibilité du programme d’installation**, il est recommandé d’installer avec **Normal** pendant les tests de phase, puis de le remplacer par **Réduire** pour le déploiement général.
-     
+
      >[!TIP]
      >Le runtime maximal autorisé peut être réduit de 120 minutes (par défaut) à 60 minutes.
 

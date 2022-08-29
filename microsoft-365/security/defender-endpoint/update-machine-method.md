@@ -1,8 +1,7 @@
 ---
-title: API mettre à jour l’entité de l’ordinateur
-description: Découvrez comment mettre à jour des balises d’ordinateur à l’aide de cette API. Vous pouvez mettre à jour les balises et les propriétés devicevalue.
-keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, ID
-search.product: eADQiWindows 10XVcnh
+title: Mettre à jour l’API d’entité de machine
+description: Découvrez comment mettre à jour les balises de machine à l’aide de cette API. Vous pouvez mettre à jour les balises et les propriétés devicevalue.
+keywords: api, api graphe, api prises en charge, get, alert, information, id
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 787fcc3851d765a03d452d98106b522f239ea8c6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5674f9b8038bba646d86b02fe775525ad433dcac
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164165"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330668"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,29 +39,29 @@ ms.locfileid: "61164165"
 
 ## <a name="api-description"></a>Description de l’API
 
-Met à jour les propriétés de l’ordinateur [existant.](machine.md)
+Mises à jour propriétés de [l’ordinateur](machine.md) existant.
 
-Les propriétés qui peuvent être mis à jour sont : `machineTags` et `deviceValue` .
+Les propriétés pouvant être mises à jour sont : `machineTags` et `deviceValue`.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez mettre à jour les ordinateurs disponibles dans l’API. 
-2. L’ordinateur de mise à jour n’appende que les balises à la collection de balises. S’il existe des balises, elles doivent être incluses dans la collection de balises dans le corps.
-3. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Vous pouvez mettre à jour les machines disponibles dans l’API. 
+2. La machine de mise à jour ajoute uniquement des balises à la collection de balises. S’il existe des balises, elles doivent être incluses dans la collection de balises dans le corps.
+3. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.ReadWrite.All|« Lire et écrire des informations sur l’ordinateur pour tous les ordinateurs »
-Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur l’ordinateur »
+Application|Machine.ReadWrite.All|« Lire et écrire des informations sur l’ordinateur pour toutes les machines »
+Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écrire des informations sur la machine »
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Investigation des alertes ». Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Investigation des alertes ». Pour plus d’informations, consultez [Créer et gérer des rôles](user-roles.md).
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils. Pour plus d’informations, consultez [Créer et gérer des groupes d’appareils](machine-groups.md).
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -74,35 +73,35 @@ PATCH /api/machines/{machineId}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
-Dans le corps de la demande, fournissons les valeurs des champs appropriés qui doivent être mis à jour.
+Dans le corps de la demande, fournissez les valeurs des champs pertinents qui doivent être mis à jour.
 
 Les propriétés existantes qui ne sont pas incluses dans le corps de la demande conserveront leurs valeurs précédentes ou seront recalculées en fonction des modifications apportées à d’autres valeurs des propriétés.
 
-Pour de meilleures performances, vous ne devez pas inclure de valeurs existantes qui n’ont pas changé.
+Pour de meilleures performances, vous ne devez pas inclure les valeurs existantes qui n’ont pas changé.
 
 Propriété|Type|Description
 :---|:---|:---
-machineTags|String collection|Ensemble de [balises d’ordinateur.](machine.md)
-deviceValue|Nullable, enum|Valeur [de l’appareil.](tvm-assign-device-value.md) Les valeurs possibles sont : « Normal » (normal), « Low » (faible) et « High » (élevé).
+machineTags|String collection|Ensemble de balises [d’ordinateur](machine.md) .
+deviceValue|Énumération nullable|[Valeur de l’appareil](tvm-assign-device-value.md). Les valeurs possibles sont : ' Normal', 'Low' et 'High'.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et l’entité [de l’ordinateur](machine.md) dans le corps de la réponse avec les propriétés mises à jour.
+Si elle réussit, cette méthode retourne 200 OK et l’entité [de machine](machine.md) dans le corps de la réponse avec les propriétés mises à jour.
 
-Si la collection de balises d’ordinateur dans le corps ne contient pas de balises d’ordinateur existantes , remplace toutes les balises par les balises fournies dans le corps de la demande.
+Si la collection d’étiquettes de machine dans le corps ne contient pas de balises de machine existantes , remplace toutes les balises par les balises fournies dans le corps de la demande.
 
-Si l’ordinateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
+Si l’ordinateur avec l’ID spécifié est introuvable - 404 Introuvable.
 
 ## <a name="example"></a>Exemple
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de la demande.
+Voici un exemple de la requête.
 
 ```http
 PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
@@ -114,7 +113,7 @@ PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
     "machineTags": [
                      "Demo Device",
                      "Generic User Machine - Attack Source",
-                     "Windows 10",
+                     "Windows 10" "Windows11",
                      "Windows Insider - Fast"
     ]
 }

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les stratégies de rétention Microsoft 365 qui s’appliquent à Microsoft Teams afin de pouvoir gérer la rétention automatique ou la suppression des messages Teams pour votre organisation.
-ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: da8275ff3a5792df3cbc72aea7b8e483a0a5f4f3
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037511"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441815"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -190,17 +190,13 @@ Lorsqu’une conversation Skype Entreprise intervient dans Teams, celle-ci devie
 
 Cependant, si l’historique des conversations est activé pour Skype Entreprise et depuis le côté client Skype Entreprise, celui-ci est enregistré dans une boîte aux lettres. Ces données de conversation ne sont pas gérées par une stratégie de rétention Teams. Pour ce contenu, utilisez une stratégie de rétention configurée pour Skype Entreprise.
 
-## <a name="meetings-and-external-users"></a>Réunions et utilisateurs externes
+## <a name="messages-and-external-users"></a>Messages et utilisateurs externes
 
-Les messages de réunion de canal sont stockés de la même façon que les messages de canal. Par conséquent, pour ces données, sélectionnez l’emplacement des **messages de canal Teams** lorsque vous configurez votre stratégie de rétention.
+Lorsque des utilisateurs externes sont inclus dans une réunion ou une conversation que votre organisation héberge :
 
-Le programme stocke les messages de réunion impromptue et planifiée de la même façon que les messages de conversation de groupe. Par conséquent, pour ces données, sélectionnez l’emplacement des **conversations Teams** lorsque vous configurez votre stratégie de rétention.
+- Si un utilisateur externe se joint à l’aide d’un compte invité dans votre locataire, tous les messages Teams sont stockés dans la boîte aux lettres de vos utilisateurs et dans une boîte aux lettres fantôme qui est accordée au compte invité. Toutefois, les stratégies de rétention ne sont pas prises en charge pour les boîtes instantanées, même si elles peuvent être signalées comme incluses dans une stratégie de rétention pour l’ensemble de l’emplacement (parfois appelée « stratégie à l’échelle de l’organisation »).
 
-Lorsque des utilisateurs externes sont inclus dans une réunion organisée par votre organisation :
-
-- Si un utilisateur externe rejoint la réunion à l’aide d’un compte invité dans votre client, tous les messages de la réunion sont stockés à la fois dans la boîte aux lettres de vos utilisateurs et dans une boîte aux lettres instantané qui est accordée au compte invité. Toutefois, les stratégies de rétention ne sont pas prises en charge pour les boîtes instantanées, même si elles peuvent être signalées comme incluses dans une stratégie de rétention pour l’ensemble de l’emplacement (parfois appelée « stratégie à l’échelle de l’organisation »).
-
-- Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Cependant, pour la même réunion, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
+- Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Toutefois, pour la même réunion ou conversation, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 

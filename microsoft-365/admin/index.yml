@@ -6,23 +6,22 @@ metadata:
   title: Aide du Centre d’administration Microsoft 365
   description: Configurez, puis gérez Office 365 et Microsoft 365 dans le Centre d’administration Microsoft 365.
   ms.service: O365-administration
-  ms.prod: microsoft-365-business
   ms.topic: hub-page
   author: kwekua
   ms.author: kwekua
-  ms.date: 04/07/2022
+  ms.date: 08/26/2022
   ms.localizationpriority: high
   ms.custom:
   - VSBFY23
   - AdminSurgePortfolio
   - intro-hub-or-landing
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 93457b3c32f912f101b523946293f5c88038403a
-  ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-  ms.translationtype: HT
+  ms.openlocfilehash: d7192434a2fcd3935bb70274996bd216320d8af8
+  ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+  ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/30/2022
-  ms.locfileid: "67086384"
+  ms.lasthandoff: 08/27/2022
+  ms.locfileid: "67449948"
 highlightedContent:
   items:
   - title: Office 365 est désormais Microsoft 365 !

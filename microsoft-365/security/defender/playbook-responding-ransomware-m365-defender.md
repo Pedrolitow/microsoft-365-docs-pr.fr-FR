@@ -1,5 +1,5 @@
 ---
-title: Réponse aux attaques par ransomware
+title: Réponse aux attaques par rançongiciels
 description: Cet article fournit un playbook généralisé pour répondre aux attaques par ransomware.
 search.appverid: MET150
 author: nic-name
@@ -11,15 +11,16 @@ ms.date: 05/30/2022
 ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
+ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: a7c03947cc159ed9933854c9fd1041af63c3f55c
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: aaf672f8ec913b8d0e206f9d630452bac36185ee
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811166"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445091"
 ---
-# <a name="responding-to-ransomware-attacks"></a>Réponse aux attaques par ransomware
+# <a name="responding-to-ransomware-attacks"></a>Réponse aux attaques par rançongiciels
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +38,7 @@ L’endiguement et l’investigation doivent se produire aussi simultanément qu
 
 ### <a name="step-1-assess-the-scope-of-the-incident"></a>Étape 1 : Évaluer l’étendue de l’incident
 
-Exécutez cette liste de questions et de tâches pour découvrir l’étendue de l’attaque. Microsoft 365 Defender pouvez fournir une vue consolidée de toutes les ressources affectées ou à risque pour faciliter l’évaluation de votre réponse aux incidents. Voir [la réponse aux incidents avec Microsoft 365 Defender | Microsoft Docs](/incidents-overview.md). Vous pouvez utiliser les alertes et la liste des preuves dans l’incident pour déterminer :
+Exécutez cette liste de questions et de tâches pour découvrir l’étendue de l’attaque. Microsoft 365 Defender pouvez fournir une vue consolidée de toutes les ressources affectées ou à risque pour faciliter l’évaluation de votre réponse aux incidents. Consultez [la réponse aux incidents avec Microsoft 365 Defender](incidents-overview.md). Vous pouvez utiliser les alertes et la liste des preuves dans l’incident pour déterminer :
 
 * Quels comptes d’utilisateur peuvent être compromis ?
   * Quels comptes ont été utilisés pour remettre la charge utile ?
@@ -78,7 +79,7 @@ DeviceLogonEvents | where DeviceName  contains (AccountDomain) | take 10
 Utilisez cette liste pour empêcher l’attaque de se propager à des entités supplémentaires.
 
 * Si des comptes locaux partagés sont utilisés dans l’attaque, envisagez de [bloquer l’utilisation à distance des comptes locaux](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/blocking-remote-use-of-local-accounts/ba-p/701042).
-  * Kusto requête pour tous les journaux d’activité réseau qui sont des administrateurs locaux :
+  * Requête Kusto pour tous les journaux d’activité réseau qui sont des administrateurs locaux :
 
 ```kusto
 DeviceLogonEvents
@@ -87,7 +88,7 @@ DeviceLogonEvents
 | where IsLocalLogon==false
 ```
 
-* Kusto requête pour les logons non-RDP (plus réaliste pour la plupart des réseaux) :
+* Requête Kusto pour les logons non-RDP (plus réaliste pour la plupart des réseaux) :
 
 ```kusto
 DeviceLogonEvents
@@ -97,9 +98,9 @@ DeviceLogonEvents
 ```
 
 * Mettez en quarantaine et ajoutez des indicateurs pour les fichiers infectés.
-* Assurez-vous que votre solution antivirus est configurable dans son état de protection optimal. Pour Antivirus Microsoft Defender, cela inclut :
+* Assurez-vous que votre solution antivirus est configurable dans son état de protection optimal. Pour l’Antivirus Microsoft Defender, cela inclut :
   * [La protection en temps réel](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) est activée.
-  * [La protection contre les falsifications](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) est activée. Dans le portail Microsoft 365 Defender, sélectionnez Paramètres > Points de **terminaison > fonctionnalités avancées > protection contre les falsifications**.
+  * [La protection contre les falsifications](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) est activée. Dans le portail Microsoft 365 Defender, sélectionnez **Paramètres > points de terminaison > fonctionnalités avancées > protection contre les falsifications**.
   * [Les règles de réduction de la surface d’attaque (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) sont activées.
   * [La protection cloud](../defender-endpoint/enable-attack-surface-reduction.md) est activée.
 * Désactivez Exchange ActiveSync et Synchronisation OneDrive.
@@ -119,7 +120,7 @@ Utilisez cette section pour examiner l’attaque et planifier votre réponse.
 ### <a name="assess-your-current-situation"></a>Évaluer votre situation actuelle
 
 * Qu’est-ce qui vous a initialement fait prendre conscience de l’attaque par ransomware?
-  * Si le personnel informatique a identifié la menace initiale , comme la détection de sauvegardes en cours de suppression, d’alertes antivirus, d’alertes protection évolutive des points de terminaison (PEPT) ou de modifications suspectes du système, il est souvent possible de prendre des mesures décisives rapides pour contrer l’attaque, généralement par les actions de confinement décrites dans cet article.
+  * Si le personnel informatique a identifié la menace initiale , comme la détection des sauvegardes en cours de suppression, les alertes antivirus, la détection de point de terminaison et les alertes de réponse (EDR) ou les modifications suspectes du système, il est souvent possible de prendre des mesures décisives rapides pour contrer l’attaque, généralement par les actions de confinement décrites dans cet article.
 * Quelle date et quelle heure avez-vous appris l’incident pour la première fois ?
   * Quelles mises à jour système et de sécurité n’ont pas été installées sur les appareils à cette date ? Il est important de comprendre quelles vulnérabilités ont pu être exploitées pour pouvoir être traitées sur d’autres appareils.
   * Quels comptes d’utilisateur ont été utilisés à cette date ?
@@ -128,7 +129,7 @@ Utilisez cette section pour examiner l’attaque et planifier votre réponse.
 * Existe-t-il des indications indiquant que l’attaquant accède actuellement aux systèmes ?
   * Existe-t-il des systèmes compromis suspectés qui connaissent une activité inhabituelle ?
   * Y a-t-il des comptes compromis présumés qui semblent être utilisés activement par l’adversaire ?
-  * Existe-t-il des preuves de serveurs de commande et de contrôle actifs (C2) dans PEPT, pare-feu, VPN, proxy web et autres journaux d’activité ?
+  * Existe-t-il des preuves de serveurs de commande et de contrôle actifs (C2) dans EDR, pare-feu, VPN, proxy web et autres journaux ?
 
 ### <a name="identify-the-ransomware-process"></a>Identifier le processus de ransomware
 
@@ -192,7 +193,7 @@ Utilisez cette section pour examiner l’attaque et planifier votre réponse.
 * Scuba-SuspiciousWebScriptFileDrop
 * Inscription suspecte de DLL par odbcconf
 * Activité DPAPI suspecte
-* Exécution suspecte de processus Exchange
+* Exécution suspecte du processus Exchange
 * Lancement suspect d’une tâche planifiée
 * SuspiciousLdapQueryDetector
 * SuspiciousScheduledTaskRegistration
@@ -242,13 +243,13 @@ Supprimez les programmes malveillants des appareils affectés.
 
 Récupérer des fichiers sur un appareil nettoyé.
 
-* Vous pouvez utiliser [Historique des fichiers](https://support.microsoft.com/help/17128) dans Windows 11, Windows 10, Windows 8.1 et System Protection dans Windows 7 pour tenter de récupérer vos fichiers et dossiers locaux.
+* Vous pouvez utiliser [l’historique](https://support.microsoft.com/help/17128) des fichiers dans Windows 11, Windows 10, Windows 8.1 et la protection système dans Windows 7 pour tenter de récupérer vos fichiers et dossiers locaux.
 
 ### <a name="step-7-recover-files-in-onedrive-for-business"></a>Étape 7 : Récupérer des fichiers dans OneDrive Entreprise
 
 Récupérer des fichiers dans OneDrive Entreprise.
 
-* La restauration de fichiers dans OneDrive Entreprise vous permet de restaurer une OneDrive entière à un point antérieur dans le temps au cours des 30 derniers jours. Pour plus dʼinformations, voir [Restaurer votre espace OneDrive](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15).
+* La restauration de fichiers dans OneDrive Entreprise vous permet de restaurer un OneDrive entier à un point antérieur dans le temps au cours des 30 derniers jours. Pour plus dʼinformations, voir [Restaurer votre espace OneDrive](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ### <a name="step-8-recover-deleted-email"></a>Étape 8 : Récupérer les e-mails supprimés
 

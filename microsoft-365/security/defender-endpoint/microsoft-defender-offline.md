@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender hors connexion dans Windows
-description: Vous pouvez utiliser Microsoft Defender hors connexion directement à partir de l’application Antivirus Windows Defender. Vous pouvez également gérer la façon dont il est déployé sur votre réseau.
+description: Vous pouvez utiliser Microsoft Defender hors connexion directement à partir de l’application Antivirus Microsoft Defender. Vous pouvez également gérer la façon dont il est déployé sur votre réseau.
 keywords: analyse, defender, hors connexion
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc01b6d81d272bfd0ee808131804cf59d4502350
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051841"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387438"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
@@ -55,10 +55,10 @@ Pour exécuter Microsoft Defender hors connexion à partir du point de terminais
 
 ## <a name="microsoft-defender-offline-updates"></a>Mises à jour hors connexion de Microsoft Defender
 
-Microsoft Defender hors connexion utilise les dernières mises à jour de protection disponibles sur le point de terminaison ; il est mis à jour chaque fois que Antivirus Windows Defender est mis à jour.
+Microsoft Defender hors connexion utilise les dernières mises à jour de protection disponibles sur le point de terminaison ; il est mis à jour chaque fois que l’Antivirus Microsoft Defender est mis à jour.
 
 > [!NOTE]
-> Avant d’exécuter une analyse hors connexion, vous devez tenter de mettre à jour la protection de Microsoft Defender AV. Vous pouvez soit forcer une mise à jour avec stratégie de groupe, soit déployer normalement des mises à jour sur des points de terminaison, ou télécharger et installer manuellement les dernières mises à jour de protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Avant d’exécuter une analyse hors connexion, vous devez tenter de mettre à jour la protection antivirus Microsoft Defender. Vous pouvez soit forcer une mise à jour avec stratégie de groupe, soit déployer normalement des mises à jour sur des points de terminaison, ou télécharger et installer manuellement les dernières mises à jour de protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
 Pour plus d’informations, consultez la rubrique [Gérer les mises à jour du renseignement de sécurité de l’antivirus Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md) .
 
@@ -82,7 +82,7 @@ Les analyses hors connexion de Microsoft Defender sont indiquées sous **l’ét
 
 ## <a name="configure-notifications"></a>Configurer les notifications
 
-Les notifications Microsoft Defender hors connexion sont configurées dans le même paramètre de stratégie que les autres notifications MICROSOFT Defender AV.
+Les notifications Microsoft Defender hors connexion sont configurées dans le même paramètre de stratégie que les autres notifications antivirus Microsoft Defender.
 
 Pour plus d’informations sur les notifications dans Windows Defender, consultez la rubrique [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md).
 

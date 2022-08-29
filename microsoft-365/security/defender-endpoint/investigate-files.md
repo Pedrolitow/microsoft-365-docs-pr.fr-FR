@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: c1f6fa058715f831b1c8ba594bf1604ad92e9ed2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 642fc9b8f38b0687a27d73a47324dc3b3f70269e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669361"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388185"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte de Microsoft Defender pour point de terminaison
 
@@ -68,7 +68,7 @@ Pour plus d’informations sur ces actions, consultez [Prendre une action de ré
 
 Les détails du fichier, l’incident, la détection des programmes malveillants et les cartes de prévalence de fichier affichent différents attributs sur le fichier.
 
-Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et la détection de Microsoft Defender AV, le cas échéant, ainsi que la prévalence du fichier.
+Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et la détection de l’antivirus Microsoft Defender s’il est disponible, ainsi que la prévalence du fichier.
 
 La carte de prévalence du fichier indique où le fichier a été vu dans les appareils de l’organisation et dans le monde entier. Vous pouvez facilement pivoter vers les premiers et derniers appareils sur lesquels le fichier a été vu, et poursuivre l’investigation dans la chronologie de l’appareil. 
 

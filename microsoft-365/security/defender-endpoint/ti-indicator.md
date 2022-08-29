@@ -1,8 +1,7 @@
 ---
-title: Type de ressource Indicateur
-description: Spécifiez les détails de l’entité et définissez l’expiration de l’indicateur à l’aide de Microsoft Defender pour endpoint.
-keywords: api, api pris en charge, get, TiIndicator, Indicateur, récent
-search.product: eADQiWindows 10XVcnh
+title: Type de ressource d’indicateur
+description: Spécifiez les détails de l’entité et définissez l’expiration de l’indicateur à l’aide de Microsoft Defender pour point de terminaison.
+keywords: api, api prises en charge, get, TiIndicator, Indicator, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,23 +13,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d66221b1cdea7bd5a0399bb43663f024baa6374
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: dcdba63fe99d092f2ce6a9839a94f5e4c297ee66
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165629"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330760"
 ---
-# <a name="indicator-resource-type"></a>Type de ressource Indicateur
+# <a name="indicator-resource-type"></a>Type de ressource d’indicateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -39,51 +38,51 @@ ms.locfileid: "61165629"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-- Consultez la [page Indicateurs correspondante](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) dans le portail.
+- Consultez la [page Indicateurs](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) correspondante dans le portail.
 
 Méthode|Type renvoyé|Description
 :---|:---|:---
-[Répertorier des indicateurs](get-ti-indicators-collection.md)|[Indicateur](ti-indicator.md) Collection|Entités [d’indicateur](ti-indicator.md) de liste.
-[Envoyer des indicateurs](post-ti-indicator.md)|[Indicateur](ti-indicator.md)|Entité d’indicateur [d’soumission ou](ti-indicator.md) de mise à jour.
-[Importer des indicateurs](import-ti-indicators.md)|[Indicateur](ti-indicator.md) Collection|Envoyer ou mettre à jour [des entités](ti-indicator.md) d’indicateurs.
-[Supprimer des indicateurs](delete-ti-indicator-by-id.md)|Aucun contenu|Supprime [l’entité Indicateur.](ti-indicator.md)
+[Répertorier des indicateurs](get-ti-indicators-collection.md)|[Indicateur](ti-indicator.md) Collection|[Répertorier les entités d’indicateur](ti-indicator.md).
+[Envoyer des indicateurs](post-ti-indicator.md)|[Indicateur](ti-indicator.md)|Soumettre ou mettre à jour l’entité [Indicateur](ti-indicator.md) .
+[Importer des indicateurs](import-ti-indicators.md)|[Indicateur](ti-indicator.md) Collection|Soumettre ou mettre à jour [des entités Indicators](ti-indicator.md) .
+[Supprimer des indicateurs](delete-ti-indicator-by-id.md)|Aucun contenu|Supprime l’entité [Indicateur](ti-indicator.md) .
 
 ## <a name="properties"></a>Propriétés
 
 Propriété|Type|Description
 :---|:---|:---
-id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
-indicatorValue|String|Valeur de [l’indicateur](ti-indicator.md).
-indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
-application|String|Application associée à l’indicateur.
-action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
-|externalID|String|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
-sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
-createdBySource|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
-createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
-lastUpdatedBy|String|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
+id|Chaîne|Identité de l’entité [Indicateur](ti-indicator.md) .
+indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
+indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
+application|Chaîne|Application associée à l’indicateur.
+action|Énum|Action qui sera effectuée si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
+|externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
+Sourcetype|Énum|« Utilisateur » dans le cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il serait soumis à l’aide d’une application automatisée via l’API.
+createdBySource|string|Nom de l’utilisateur/de l’application qui a envoyé l’indicateur.
+createdBy|String|Identité unique de l’utilisateur/de l’application qui a envoyé l’indicateur.
+lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title|String|Titre de l’indicateur.
-description|String|Description de l’indicateur.
-recommendedActions|String|Actions recommandées pour l’indicateur.
+title|Chaîne|Titre de l’indicateur.
+description|Chaîne|Description de l’indicateur.
+recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
-generateAlert|Énum|**True si** la génération d’alerte est **requise, False** si cet indicateur ne doit pas générer d’alerte.
+generateAlert|Énum|**True** si la génération d’alerte est requise, **False** si cet indicateur ne doit pas générer d’alerte.
 
 ## <a name="indicator-types"></a>Types d’indicateurs
 
-Les types d’action d’indicateur pris en charge par l’API sont :
+Les types d’actions d’indicateur pris en charge par l’API sont les suivants :
 
 - Autorisé
 - Audit
 - Bloquer
 - BlockAndRemediate
-- Avertir (Defender pour les applications cloud uniquement)
+- Avertir (Defender pour Cloud Apps uniquement)
 
-Pour plus d’informations sur la description des types d’action de réponse, voir [Créer des indicateurs.](manage-indicators.md)
+Pour plus d’informations sur la description des types d’actions de réponse, consultez [Créer des indicateurs](manage-indicators.md).
 
 > [!Note]
 >

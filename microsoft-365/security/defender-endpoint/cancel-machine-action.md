@@ -16,20 +16,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 08f302a541e60cb2844dc6ef2b91509556f03330
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: d5736ee3374b182f1b22f1b728ac2378eb66b66d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873751"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331882"
 ---
 # <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/defender-endpoint)
 - [Microsoft Defender pour point de terminaison Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 
@@ -51,7 +51,7 @@ Annuler une action de machine déjà lancée qui n’est pas encore dans un éta
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Démarrage](apis-intro.md).
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Prise en main](apis-intro.md).
 
 |Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation|
 |---|---|---|
@@ -68,12 +68,12 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|String|Porteur {token}. Obligatoire.|
+|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
 |Content-Type|string|application/json. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
-|Parameter|Type|Description|
+|Paramètre|Type|Description|
 |---|---|---|
 |Commentaire|Chaîne|Commentaire à associer à l’action d’annulation.|
 

@@ -1,5 +1,5 @@
 ---
-title: Masquer l’interface Antivirus Microsoft Defender
+title: Masquer l’interface antivirus Microsoft Defender
 description: Vous pouvez masquer la vignette de protection contre les virus et les menaces dans l’application Sécurité Windows.
 keywords: Verrouillage de l’interface utilisateur, mode sans tête, masquer l’application, masquer les paramètres, masquer l’interface
 ms.prod: m365-security
@@ -16,14 +16,14 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00465fdeecddc803b52d98081689fd56fba7812
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 072207248192d158169e52a8e0ca860678b4f63f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419811"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388526"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur Antivirus Microsoft Defender
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur de l’Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,11 +36,11 @@ ms.locfileid: "65419811"
 **Plateformes**
 - Windows
 
-Vous pouvez utiliser stratégie de groupe pour empêcher les utilisateurs sur les points de terminaison de voir l’interface Antivirus Microsoft Defender. Vous pouvez également les empêcher de suspendre les analyses.
+Vous pouvez utiliser stratégie de groupe pour empêcher les utilisateurs sur les points de terminaison de voir l’interface antivirus Microsoft Defender. Vous pouvez également les empêcher de suspendre les analyses.
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Masquer l’interface Antivirus Microsoft Defender
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Masquer l’interface antivirus Microsoft Defender
 
-Dans Windows 10, les versions 1703, le masquage de l’interface masque les notifications Antivirus Microsoft Defender et empêche l’affichage de la vignette de protection contre les menaces Virus & dans l’application Sécurité Windows.
+Dans Windows 10, les versions 1703, le masquage de l’interface masque les notifications antivirus Microsoft Defender et empêche l’affichage de la vignette Virus & threat protection dans l’application Sécurité Windows.
 
 Avec le paramètre défini sur **Activé** :
 
@@ -51,13 +51,13 @@ Avec le paramètre défini sur **Désactivé** ou non configuré :
 :::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="La Sécurité Windows avec l’icône de bouclier et les sections de protection contre les menaces" lightbox="../../media/wdav-headless-mode-1703.png":::
 
 > [!NOTE]
-> Le masquage de l’interface empêche également Antivirus Microsoft Defender notifications d’apparaître sur le point de terminaison. Microsoft Defender pour point de terminaison notifications s’affichent toujours. Vous pouvez également configurer individuellement [les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
+> Le masquage de l’interface empêche également l’affichage des notifications antivirus Microsoft Defender sur le point de terminaison. Microsoft Defender pour point de terminaison notifications s’affichent toujours. Vous pouvez également configurer individuellement [les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 
 Dans les versions antérieures de Windows 10, le paramètre masque l’interface client Windows Defender. Si l’utilisateur tente de l’ouvrir, il reçoit un avertissement indiquant que « Votre administrateur système a un accès restreint à cette application ».
 
 :::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Message d’avertissement lorsque le mode sans tête est activé dans Windows 10, versions antérieures à 1703" lightbox="../../media/wdav-headless-mode-1607.png":::
 
-## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Utiliser stratégie de groupe pour masquer l’interface AV de Microsoft Defender aux utilisateurs
+## <a name="use-group-policy-to-hide-the-microsoft-defender-antivirus-interface-from-users"></a>Utiliser stratégie de groupe pour masquer l’interface antivirus Microsoft Defender aux utilisateurs
 
 1. Sur votre machine de gestion stratégie de groupe, ouvrez la [console de gestion stratégie de groupe](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), cliquez avec le bouton droit sur l’objet stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier**.
 
@@ -65,9 +65,9 @@ Dans les versions antérieures de Windows 10, le paramètre masque l’interface
 
 3. Cliquez sur **Modèles d’administration**.
 
-4. Développez l’arborescence pour **Windows composants > Antivirus Microsoft Defender > interface client**.
+4. Développez l’arborescence sur **les composants Windows > l’interface client de l’antivirus Microsoft Defender >**.
 
-5. Double-cliquez sur le paramètre **Activer le mode d’interface utilisateur sans tête** et définissez l’option **sur Activé**. Cliquez sur **OK**.
+5. Double-cliquez sur le paramètre **Activer le mode d’interface utilisateur sans tête** et définissez l’option **sur Activé**. Cliquez sur **OK**.
 
 Consultez [Empêcher les utilisateurs de modifier localement les paramètres de](configure-local-policy-overrides-microsoft-defender-antivirus.md) stratégie pour plus d’options sur la prévention de la modification de la protection des utilisateurs sur leurs PC.
 
@@ -86,9 +86,9 @@ Vous pouvez empêcher les utilisateurs de suspendre les analyses, ce qui peut ê
 
 3. Cliquez sur **Modèles d’administration**.
 
-4. Développez l’arborescence pour **Windows composants** \> **Antivirus Microsoft Defender** \> **Analyser**.
+4. Développez l’arborescence pour accéder aux **composants** \> Windows de **l’analyse antivirus** \> Microsoft Defender.
 
-5. Double-cliquez sur le paramètre **Autoriser les utilisateurs à suspendre l’analyse** et définissez l’option **sur Désactivé**. Cliquez sur **OK**.
+5. Double-cliquez sur le paramètre **Autoriser les utilisateurs à suspendre l’analyse** et définissez l’option **sur Désactivé**. Cliquez sur **OK**.
 
 > [!TIP]
 > Si vous recherchez des informations relatives à l’antivirus pour d’autres plateformes, consultez :
@@ -103,5 +103,5 @@ Vous pouvez empêcher les utilisateurs de suspendre les analyses, ce qui peut ê
 ## <a name="related-articles"></a>Articles connexes
 
 - [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
-- [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Configurer l’interaction de l’utilisateur final avec l’antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

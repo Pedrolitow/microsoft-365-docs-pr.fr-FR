@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements, tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les Groupes Microsoft 365, Microsoft Teams et les conversations Skype Entreprise. eDiscovery (Standard) et eDiscovery (Premium) fournissent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos investigations.
-ms.openlocfilehash: a94811c4f8d3ec2d3f15f99375cfee2d3e5a4a0d
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306545"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445157"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Solutions eDiscovery Microsoft Purview
 
@@ -38,7 +38,13 @@ La découverte électronique, ou eDiscovery, est le processus d'identification e
 
 Microsoft Purview fournit trois solutions eDiscovery : recherche de contenu, eDiscovery (Standard) et eDiscovery (Premium).
 
-![Fonctionnalités clés des outils de Microsoft Purview eDiscovery.](..\media\m365-ediscovery-solution-graphic.png)
+<!--
+![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
+-->
+
+|Recherche de contenu|eDiscovery (Standard)|eDiscovery (Premium)|
+|---------|---------|---------|
+|Recherche de contenu </br> Requêtes par mots clés et conditions de recherche </br> Exporter les résultats de la recherche </br> Autorisations basées sur des rôles|Rechercher et exporter </br> Gestion de cas </br>Conservation légale|Gestion de dépositaire </br> Notifications de conservation légale </br> Indexation avancée </br> Passer en revue le filtrage des ensembles </br> Marquage </br> Analyse </br> Modèles de codage prédictif </br> Et plus encore...|
 
 - **Recherche de contenu**. Utilisez l’outil de recherche de contenu pour rechercher du contenu dans les sources de données Microsoft 365, puis exportez les résultats de recherche vers un ordinateur local.
 

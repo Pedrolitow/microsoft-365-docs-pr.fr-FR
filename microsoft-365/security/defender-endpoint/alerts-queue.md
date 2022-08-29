@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 13959666f0c44f83fcb938db010ed30d5e5056b4
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 30d42c9ca69c75675f453eefd2714b6820dd5384
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607526"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388207"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -57,13 +57,13 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 Gravité de l’alerte|Description
 ---|---
 Élevé <br> (Rouge)|Alertes couramment vues associées à des menaces persistantes avancées (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent infliger aux appareils. Voici quelques exemples : activités d’outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou activités malveillantes indiquant un adversaire humain.
-Moyenne <br> (Orange)|Alertes provenant des comportements de détection et de réponse de point de terminaison post-violation qui peuvent faire partie d’une menace persistante avancée (APT). Ces comportements incluent les comportements observés typiques des phases d’attaque, les modifications anormales du Registre, l’exécution de fichiers suspects, etc. Bien que certains puissent faire partie de tests de sécurité internes, cela nécessite une investigation, car il peut également faire partie d’une attaque avancée.
+Moyen <br> (Orange)|Alertes provenant des comportements de détection et de réponse de point de terminaison post-violation qui peuvent faire partie d’une menace persistante avancée (APT). Ces comportements incluent les comportements observés typiques des phases d’attaque, les modifications anormales du Registre, l’exécution de fichiers suspects, etc. Bien que certains puissent faire partie de tests de sécurité internes, cela nécessite une investigation, car il peut également faire partie d’une attaque avancée.
 Faible <br> (Jaune)|Alertes sur les menaces associées aux programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas une menace avancée ciblant l’organisation. Il peut également provenir d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
 Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent conduire à une prise de conscience de la sécurité organisationnelle sur les problèmes de sécurité potentiels.
 
 #### <a name="understanding-alert-severity"></a>Présentation de la gravité de l’alerte
 
-Les niveaux de gravité des alertes antivirus Microsoft Defender (Microsoft Defender AV) et Defender pour point de terminaison sont différents, car ils représentent des étendues différentes.
+Les gravités d’alerte de l’Antivirus Microsoft Defender et de Defender pour point de terminaison sont différentes, car elles représentent différentes étendues.
 
 La gravité des menaces de l’Antivirus Microsoft Defender représente la gravité absolue de la menace détectée (programme malveillant) et est affectée en fonction du risque potentiel pour l’appareil individuel, s’il est infecté.
 
@@ -72,7 +72,7 @@ La gravité de l’alerte Defender pour point de terminaison représente la grav
 Par exemple :
 
 - La gravité d’une alerte Defender pour point de terminaison concernant un antivirus Microsoft Defender a détecté une menace qui a été évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle », car il n’y a pas eu de dommages réels.
-- Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigée par Microsoft Defender AV, est classée comme « Faible », car elle peut avoir causé des dommages à l’appareil individuel, mais ne présente aucune menace organisationnelle.
+- Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigée par l’antivirus Microsoft Defender, est classée comme « Faible », car elle peut avoir causé des dommages à l’appareil individuel, mais ne présente aucune menace organisationnelle.
 - Une alerte sur les programmes malveillants détectés lors de l’exécution, qui peut constituer une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, qu’elle ait finalement été bloquée, peut être classée comme « Moyen » ou « Élevé ».
 - Les alertes comportementales suspectes, qui n’ont pas été bloquées ou corrigées, seront classées « Bas », « Moyen » ou « Élevé » en suivant les mêmes considérations relatives aux menaces organisationnelles.
 
@@ -83,7 +83,7 @@ Vous pouvez choisir de filtrer la liste des alertes en fonction de leur état.
 > [!NOTE]
 > Si vous voyez un état *d’alerte de type d’alerte non pris en charge* , cela signifie que les fonctionnalités d’investigation automatisée ne peuvent pas récupérer cette alerte pour exécuter une investigation automatisée. Toutefois, vous pouvez [examiner ces alertes manuellement](../defender/investigate-incidents.md#alerts).
 
-### <a name="categories"></a>Catégories
+### <a name="categories"></a>Categories
 
 Nous avons redéfini les catégories d’alertes pour les aligner sur les [tactiques d’attaque d’entreprise](https://attack.mitre.org/tactics/enterprise/) dans la [matrice MITRE ATT&CK](https://attack.mitre.org/). Les nouveaux noms de catégorie s’appliquent à toutes les nouvelles alertes. Les alertes existantes conservent les noms de catégories précédents.
 
@@ -120,7 +120,7 @@ Vous pouvez filtrer les alertes en fonction des stratégies suivantes :
 |Détection personnalisée|CustomDetection|
 |TI personnalisée|CustomerTI|
 |EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
+|Microsoft 365 Defender|Mtp|
 |Microsoft Defender pour Office 365|OfficeATP|
 |Spécialistes des menaces Microsoft|ThreatExperts|
 |Smartscreen|WindowsDefenderSmartScreen|

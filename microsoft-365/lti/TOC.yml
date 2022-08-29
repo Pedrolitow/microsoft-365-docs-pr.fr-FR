@@ -36,3 +36,9 @@
   items:
     - name: Utiliser des classes et des réunions Microsoft Teams avec Brightspace
       href: teams-classes-meetings-with-brightspace.md
+    - name: Utiliser Microsoft OneDrive LTI avec Brightspace
+      href: onedrive-lti-brightspace.md
+- name: Intégrations de la schoology
+  items:
+    - name: Utiliser les réunions Microsoft Teams avec schoology
+      href: teams-classes-and-meetings-with-schoology.md

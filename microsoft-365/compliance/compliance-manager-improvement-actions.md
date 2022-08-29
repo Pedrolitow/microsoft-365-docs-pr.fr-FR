@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment implémenter et tester des contrôles en travaillant avec des actions d’amélioration dans le Gestionnaire de conformité Microsoft Purview. Attribuez des rapports de travail, de stockage de documentation et d’exportation.
-ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625498"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333761"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Utilisation des actions d’amélioration dans le Gestionnaire de conformité
 
@@ -184,18 +184,19 @@ La section **Normes et réglementations** fournit une liste de normes et de rég
 
 ## <a name="perform-work-and-store-documentation"></a>Effectuer des tâches et stocker la documentation
 
-Vous pouvez charger des fichiers et des notes liés au travail d’implémentation et de test directement dans la section **Documents** . Cet environnement est un référentiel centralisé sécurisé qui vous permet de démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur disposant d’un accès en lecture seule peut lire du contenu dans cette section. Seuls les utilisateurs disposant de droits d’édition peuvent charger et télécharger des fichiers.
+Vous pouvez charger des preuves sous la forme de fichiers et de liens liés au travail d’implémentation et de test directement dans la section **Documents** . Cet environnement est un référentiel centralisé sécurisé qui vous permet de démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur disposant d’un accès en lecture seule peut lire du contenu dans cette section. Seuls les utilisateurs disposant de droits d’édition peuvent charger et télécharger des fichiers.
 
-#### <a name="uploaded-documents"></a>Documents téléchargés
+#### <a name="upload-evidence"></a>Charger des preuves
 
-- Sélectionnez **Gérer les documents** pour charger les fichiers pertinents.
-- Lorsque le volet de menu volant Gérer les documents s’ouvre, **sélectionnez Ajouter un document**, puis sélectionnez votre fichier dans votre système. Types de fichiers acceptés :
+- Dans la page des détails de l’action d’amélioration, accédez à l’onglet **Documents** et sélectionnez **Ajouter une preuve**.
+- Dans le volet Ajouter un menu volant **d’éléments de preuve** , choisissez d’ajouter un **document** ou un **lien**. Les types de fichiers acceptés pour **Document** sont les suivants :
   - Documents (.doc, .xls, .ppt, .txt, .pdf)
   - Images (.jpg, .png)
   - Vidéo (.mkv)
   - Fichiers compressés (.zip, .rar)
-- Une fois votre fichier résolu dans le volet, sélectionnez **Fermer**, qui enregistre automatiquement la pièce jointe du fichier. Vous verrez ensuite le fichier répertorié sous **Documents chargés**.
-- Pour télécharger ou supprimer le document, sélectionnez **Gérer les documents** sous la liste des documents. Dans le volet de menu volant, sélectionnez la ligne du document pour la mettre en surbrillance, puis **sélectionnez Télécharger** ou **Supprimer**.
+- Recherchez le fichier que vous souhaitez charger. Si vous chargez un lien, entrez un nom pour le lien et son URL. Lorsque vous avez terminé, **sélectionnez Ajouter**. Votre élément s’affiche désormais sous l’onglet **Documents** .
+
+Pour supprimer des fichiers ou des liens de preuve, sélectionnez le menu d’action (les trois points) à droite du nom de l’élément, puis **sélectionnez Supprimer**. Confirmez la suppression lorsque vous y êtes invité.
 
 ## <a name="assign-improvement-action-to-assessor-for-completion"></a>Affecter une action d’amélioration à l’évaluateur pour l’achèvement
 
@@ -251,3 +252,5 @@ Vous pouvez configurer des alertes pour vous avertir immédiatement lorsque cert
 ## <a name="export-a-report"></a>Exporter un rapport
 
 Sélectionnez **Exporter** dans le coin supérieur gauche de votre écran pour télécharger une feuille de calcul Excel contenant toutes vos actions d’amélioration et les catégories de filtre affichées dans la page Actions d’amélioration.
+
+Le fichier Excel exporté est également ce que vous utilisez pour mettre à jour plusieurs actions d’amélioration à la fois. Obtenez des détails sur la modification du fichier d’exportation pour [mettre à jour plusieurs actions d’amélioration](compliance-manager-update-actions.md).

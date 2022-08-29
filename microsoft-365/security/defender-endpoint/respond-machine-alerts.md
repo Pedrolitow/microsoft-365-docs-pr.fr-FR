@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d61e7732b48fdb9738133929735b6538c67032b2
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 65799821ab4d6b2ad8076c68c9991074465d1435
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099962"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387218"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -117,7 +117,7 @@ Le package contient les dossiers suivants :
 
 |Folder|Description|
 |---|---|
-|Exécutions automatiques|Contient un ensemble de fichiers qui représentent chacun le contenu du registre d’un point d’entrée de démarrage automatique connu (ASEP) pour aider à identifier la persistance de l’attaquant sur l’appareil. <p> <div class="alert"><b>NOTE:</b> Si la clé de Registre est introuvable, le fichier contient le message suivant : « ERREUR : Le système n’a pas trouvé la clé ou la valeur de Registre spécifiée ».<div>|
+|Autoruns|Contient un ensemble de fichiers qui représentent chacun le contenu du registre d’un point d’entrée de démarrage automatique connu (ASEP) pour aider à identifier la persistance de l’attaquant sur l’appareil. <p> <div class="alert"><b>NOTE:</b> Si la clé de Registre est introuvable, le fichier contient le message suivant : « ERREUR : Le système n’a pas trouvé la clé ou la valeur de Registre spécifiée ».<div>|
 |Programmes installés|Ce fichier .CSV contient la liste des programmes installés qui peuvent vous aider à identifier ce qui est actuellement installé sur l’appareil. Pour plus d’informations, consultez [Win32_Product classe](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent aider à identifier la connectivité aux URL suspectes, l’infrastructure de commande et de contrôle (C&C) de l’attaquant, tout déplacement latéral ou les connexions à distance. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte établie par un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui a été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut les deux entrées préchargées à partir du fichier Hosts local et tous les enregistrements de ressources récemment obtenus pour les requêtes de nom résolues par l’ordinateur. Cela peut aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les cartes peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions rendez-vous.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>NOTE:</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’investigation. Pour plus d’informations sur la création du fichier journal du [pare-feu, consultez Configurer le pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |Fichiers de prérécupération|Les fichiers Prérécupération Windows sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont peut-être été supprimées, mais qui se trouvent toujours dans la liste des fichiers de prérécupération. <ul><li>Dossier de prérécupération : contient une copie des fichiers de prérécupération à partir de `%SystemRoot%\Prefetch`. REMARQUE : Il est suggéré de télécharger une visionneuse de fichiers de prérécupération pour afficher les fichiers de prérécupération.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour effectuer le suivi en cas d’échec de copie dans le dossier de prérécupération.</li></ul>|
@@ -139,13 +139,13 @@ Dans le cadre du processus d’investigation ou de réponse, vous pouvez lancer 
 
 > [!IMPORTANT]
 > - Cette action n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, consultez [Examiner les entités sur les appareils à l’aide de la réponse dynamique](live-response.md)
-> - Une analyse de l’antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. Microsoft Defender AV peut être en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Une analyse antivirus Microsoft Defender peut s’exécuter en même temps que d’autres solutions antivirus, que l’antivirus Microsoft Defender soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Vous avez sélectionné **Exécuter l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 
 :::image type="content" source="images/run-antivirus.png" alt-text="Notification pour sélectionner l’analyse rapide ou l’analyse complète et ajouter un commentaire" lightbox="images/run-antivirus.png":::
 
-Le Centre d’action affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement, ce qui indique qu’une action d’analyse a été envoyée sur l’appareil. Les alertes de Microsoft Defender AV reflètent toutes les détections qui ont fait surface pendant l’analyse.
+Le Centre d’action affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement, ce qui indique qu’une action d’analyse a été envoyée sur l’appareil. Les alertes de l’Antivirus Microsoft Defender reflètent toutes les détections qui ont été signalées pendant l’analyse.
 
 > [!NOTE]
 > Lors du déclenchement d’une analyse à l’aide de l’action de réponse Defender pour point de terminaison, la valeur « ScanAvgCPULoadFactor » de l’antivirus Microsoft Defender s’applique toujours et limite l’impact de l’analyse sur le processeur.

@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Déployez les fonctionnalités de sécurité et de conformité de Microsoft 365 et protégez vos informations personnelles.
-ms.openlocfilehash: ca2f500c5a6f09bf051137de2b637feb5a00f391
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 893e989f0040523645fc5fc91e3acd4176f77eb6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750273"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368729"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
@@ -111,7 +111,7 @@ Effectuez ces activités avant d’implémenter l’une des fonctionnalités bas
    - Azure Information Protection
 
       Le schéma d’étiquetage de sensibilité actuel doit peut-être être rapproché de toute implémentation d’étiquetage [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) existante.
-   - OME
+   - Ome
 
       Si vous envisagez d’utiliser l’étiquetage de confidentialité moderne pour la protection des e-mails et que des méthodes de chiffrement de messagerie existantes comme OME sont en place, elles peuvent coexister, mais vous devez comprendre les scénarios dans lesquels l’une ou l’autre des méthodes doit être appliquée. Consultez [Office 365 nouvelles fonctionnalités de chiffrement des messages (OME),](#office-365-message-encryption-ome-new-capabilities) qui inclut un tableau comparant la protection moderne des types d’étiquettes de confidentialité à la protection basée sur OME.
 
@@ -139,7 +139,7 @@ Lorsque vous créez [des étiquettes de confidentialité](../compliance/sensitiv
 
 - Sites Microsoft Teams
 - Groupes Microsoft 365 (anciennement groupes Office 365)
-- Sites SharePoint
+- sites SharePoint
 
 Utilisez les paramètres d’étiquette suivants pour renforcer la protection du contenu de ces conteneurs :
 
@@ -198,7 +198,7 @@ Pour la confidentialité des données dans les sites concernés, envoyez (push) 
 
 ## <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-Vous pouvez utiliser [la protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) dans Microsoft 365 pour détecter, avertir et bloquer les partages risqués, involontaires ou inappropriés, tels que le partage de données contenant des informations personnelles, en interne et en externe.
+Vous pouvez utiliser [la protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) dans Microsoft Purview pour détecter, avertir et bloquer le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, en interne et en externe.
 
 DLP vous permet d’effectuer les opérations suivantes :
 
@@ -227,41 +227,57 @@ DLP est utilisé pour identifier un document ou un e-mail contenant un enregistr
 
 ### <a name="planning-for-dlp"></a>Planification de la protection contre la perte de données
 
-Planifiez vos stratégies DLP pour :
+Consultez [la page Planifier la protection contre la perte de données (DLP)](../compliance/dlp-overview-plan-for-dlp.md) pour obtenir des conseils complets sur la planification de votre implémentation DLP.
 
-- Vos besoins métier.
+<!-- Plan your DLP policies for:
 
-- Évaluation basée sur les risques de l’organisation, comme décrit dans [l’article évaluer les risques de confidentialité des données et identifier les éléments sensibles](information-protection-deploy-assess.md).
+- Your business requirements.
 
-- Autres mécanismes de protection et de gouvernance des informations en place ou dans la planification de la confidentialité des données.
+- A risk-based assessment of the organization as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md).
 
-- Les types d’informations sensibles que vous avez identifiés pour les données personnelles en fonction de votre travail d’évaluation, comme décrit dans [l’article Évaluer les risques de confidentialité des données et identifier les éléments sensibles](information-protection-deploy-assess.md). Les conditions de stratégie DLP peuvent être basées sur les types d’informations sensibles et les étiquettes de rétention.
+- Other information protection and governance mechanisms in place or in planning for data privacy.
 
-- Les étiquettes de rétention dont vous aurez besoin pour spécifier les conditions DLP. Pour plus d’informations, consultez les [informations de gouvernance soumises à la réglementation sur la confidentialité des données dans l’article de votre organisation](information-protection-deploy-govern.md) .
+- The sensitive information types that you’ve identified for personal data based on your assessment work as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md). DLP policy conditions can be based on both sensitive information types and retention labels.
 
-- Gestion continue des stratégies DLP, qui exige qu’une personne de l’organisation opère et ajuste les stratégies pour les modifications apportées aux types d’informations sensibles, aux étiquettes de rétention, aux réglementations et aux stratégies de conformité.
+- The retention labels you'll need to specify DLP conditions. See the [govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md) article for more information.
 
-Bien que les étiquettes de confidentialité ne puissent pas être utilisées dans des conditions de stratégie DLP, certains scénarios de protection pour empêcher l’accès peuvent être réalisables avec simplement des étiquettes de confidentialité qui peuvent être appliquées automatiquement en fonction des types d’informations sensibles. Si un étiquetage de sensibilité robuste est en place, déterminez si la protection contre la perte de données doit être utilisée pour renforcer la protection, car :
+- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for changes in sensitive information types, retention labels, regulations, and compliance policies.
 
-  - DLP peut empêcher le partage de fichiers. Les étiquettes de confidentialité peuvent simplement empêcher l’accès.
+Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios to prevent access may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types. If robust sensitivity labeling is in place, consider whether DLP should be used to augment protection because:
 
-  - DLP a des niveaux de contrôle plus précis en termes de règles, de conditions et d’actions.
+  - DLP can prevent sharing of files. Sensitivity labels can just prevent access.
 
-  - Les stratégies DLP peuvent être appliquées aux messages de conversation et de canal Teams. Les étiquettes de confidentialité ne peuvent être appliquées qu’aux documents et aux e-mails.
+  - DLP has more granular levels of control in terms of rules, conditions, and actions.
+
+  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email. -->
 
 
 ### <a name="dlp-policies"></a>Stratégies de protection contre la perte de données
 
-Les stratégies DLP sont configurées dans le portail de conformité Microsoft Purview et spécifient le niveau de protection, le type d’informations sensibles recherché par la stratégie et les charges de travail cibles. Leurs composants de base consistent à identifier la protection et les types de données.
+Les stratégies DLP sont configurées dans le portail de conformité Microsoft Purview et spécifient le niveau de protection, les informations recherchées par la stratégie et les charges de travail cibles. Chaque stratégie DLP vous oblige à :
+
+1. Choisissez ce que vous souhaitez surveiller.
+1. Choisissez l’emplacement à surveiller.
+1. Choisissez les conditions qui doivent être mises en correspondance pour qu’une stratégie soit appliquée à un élément.
+1. Choisissez l’action à effectuer lorsque les conditions de stratégie sont remplies.
+
+Pour en savoir plus sur les stratégies DLP et la façon de les concevoir, consultez :
+
+- [En savoir plus sur la prévention des pertes de données](../compliance/dlp-learn-about-dlp.md)
+- [Concevoir une stratégie de protection contre la perte de données](../compliance/dlp-policy-design.md)
+- [Informations de référence sur la stratégie de protection contre la perte de données](../compliance/dlp-policy-reference.md)
+
+
+<!--
 
 > [!div class="mx-imgBorder"]
-> ![Configuration de la stratégie DLP dans Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-Voici un exemple de politique DLP pour la sensibilisation au RGPD.
+Here is an example DLP policy for awareness of GDPR.
 
-![Exemple de stratégie DLP pour la sensibilisation au RGPD.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Example DLP policy for awareness of GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-Pour plus d’informations sur la création et l’application de stratégies DLP, consultez [cet article](../compliance/create-test-tune-dlp-policy.md) .
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.-->
 
 ### <a name="protection-levels-for-data-privacy"></a>Niveaux de protection de la confidentialité des données
 
@@ -304,7 +320,7 @@ Voici quelques scénarios de protection des données qui utilisent ensemble des 
 
 ## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 nouvelles fonctionnalités de chiffrement des messages (OME)
 
-Les utilisateurs utilisent souvent le courrier électronique pour échanger des éléments sensibles, tels que des informations sur la santé des patients ou des informations sur les clients et les employés. Le chiffrement de messages vous permet de vous assurer que seuls les destinataires prévus peuvent afficher le contenu des courriers.
+Personnes souvent utiliser la messagerie électronique pour échanger des éléments sensibles, tels que des informations sur la santé des patients ou des informations sur les clients et les employés. Le chiffrement de messages vous permet de vous assurer que seuls les destinataires prévus peuvent afficher le contenu des courriers.
 
 Avec [OME](../compliance/ome.md), vous pouvez envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. OME fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie. OME permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
 
@@ -320,7 +336,7 @@ Pour la confidentialité des données, si vous devez partager des e-mails avec u
 
 L’OME et les étiquettes de confidentialité appliquées aux e-mails avec chiffrement ont un certain chevauchement. Il est donc important de comprendre les scénarios auxquels l’un ou l’autre des scénarios peut s’appliquer, comme indiqué dans ce tableau.
 
-| Scénario | Étiquettes de confidentialité | OME |
+| Scénario | Étiquettes de confidentialité | Ome |
 |:-------|:-----|:-------|
 | Interne + partenaires <br> Communiquer et collaborer en toute sécurité entre les utilisateurs internes et les partenaires approuvés | Recommander : étiquettes avec une classification et une protection entièrement personnalisées | Oui : chiffrer uniquement ou ne pas transférer la protection sans classification |
 | Parties externes <br> Communiquer et collaborer en toute sécurité avec les utilisateurs externes/consommateurs | Oui : destinataires prédéfinir dans l’étiquette | Recommander une protection juste-à-temps en fonction des destinataires |

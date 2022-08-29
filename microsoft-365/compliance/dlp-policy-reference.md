@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informations de référence sur le composant de stratégie DLP et la configuration
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 1ddae6821c528d14b603668d943cc70abc069cdd
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306699"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450122"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informations de référence sur la stratégie de protection contre la perte de données
 
@@ -229,7 +229,7 @@ La règle recherche uniquement la présence d’étiquettes de **confidentialit�
 Les SIT ont un [**niveau de confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfini que vous pouvez modifier si nécessaire. Pour plus d’informations, consultez [Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
-> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les SIT ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Contexte de condition
 
@@ -313,7 +313,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 ##### <a name="conditions-devices-supports"></a>Conditions prises en charge par les appareils
 
 - Le contenu contient
-- (préversion) L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 
+- L’utilisateur a accédé à un site web sensible à partir de Edge. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
 - L’extension de fichier est
 - Le type de fichier est
 - Consultez les activités de point de terminaison sur [laquelle vous pouvez surveiller et prendre des mesures](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -417,7 +417,7 @@ Les actions disponibles dans une règle dépendent des emplacements sélectionn�
 #### <a name="devices-actions"></a>Actions des appareils
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (préversion) Auditez ou limitez les activités lorsque les utilisateurs accèdent à des sites web sensibles dans le navigateur Microsoft Edge sur les appareils Windows. Pour plus d’informations, consultez [Scénario 6 Surveiller ou restreindre les activités des utilisateurs sur les domaines de service sensibles (préversion).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 
+- Auditez ou limitez les activités lorsque les utilisateurs accèdent à des sites web sensibles dans le navigateur Microsoft Edge sur les appareils Windows. Pour plus d’informations, consultez le [scénario 6 Surveiller ou restreindre les activités des utilisateurs sur des domaines de service sensibles](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
 - Auditer ou restreindre les activités sur les appareils Windows
 
 Pour l’utiliser `Audit or restrict activities on Windows devices`, vous devez configurer des options dans **les paramètres DLP** et dans la stratégie dans laquelle vous souhaitez les utiliser. Pour plus d’informations, consultez [applications restreintes et groupes d’applications](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
@@ -547,7 +547,7 @@ Par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive Entrepri
 |SharePoint    |- Pris en charge |
 |Exchange + SharePoint    |- Pris en charge pour Exchange </br>- Pris en charge pour SharePoint  |
 |Appareils + SharePoint + Exchange    |- Non pris en charge pour les appareils </br>- Pris en charge pour SharePoint </br> Pris en charge pour Exchange |
-|Équipes    |- Non pris en charge |
+|Teams    |- Non pris en charge |
 |OneDrive Entreprise   |- Pris en charge         |
 |OneDrive Entreprise + Appareils     |- Pris en charge pour OneDrive Entreprise </br>- Non pris en charge pour les appareils         |
 |Power-BI|- Non pris en charge|

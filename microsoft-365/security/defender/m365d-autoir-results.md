@@ -13,6 +13,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,12 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: cc53717feed347019540ffcb8c85687a6c28537f
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 591c7a8aca882c0674eaa3ba4b3eacc89817e859
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607474"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388614"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -43,7 +44,7 @@ Avec Microsoft 365 Defender, lorsqu’une [enquête automatisée](m365d-autoir.m
 
 La page d’enquête a récemment été mise à jour pour inclure des informations sur vos appareils, vos e-mails et le contenu de collaboration. La nouvelle page d’investigation unifiée définit un langage commun et fournit une expérience unifiée pour les investigations automatiques dans [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) et [Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md). Pour accéder à la page d’investigation unifiée, sélectionnez le lien dans la bannière jaune sur laquelle vous verrez :
 
-- Toute page d’enquête dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Centre de conformité & de sécurité Office 365</a>
+- Toute page d’enquête dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">portail de conformité Microsoft Purview</a>
 - Toute page d’investigation dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))
 - Toute expérience de centre d’incidents ou d’actions dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>
 
@@ -105,7 +106,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 | Tab | Description |
 |:--------|:--------|
 | **Graphique de l'examen** | Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez sélectionner un élément sur le graphique pour afficher plus de détails. Par exemple, la sélection de l’icône **Preuve** vous amène à l’onglet **Preuve** , où vous pouvez voir les entités détectées et leurs verdicts. |
-| **Alertes** | Répertorie les alertes associées à l’examen. Les alertes peuvent provenir de fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans des applications Office, des Microsoft Defender for Cloud Apps et d’autres fonctionnalités Microsoft 365 Defender. <br> <br> Notez que si vous voyez un *type d’alerte non pris en charge*, cela signifie que les fonctionnalités d’investigation automatisée ne peuvent pas récupérer cette alerte pour exécuter une investigation automatisée. Toutefois, vous pouvez [examiner ces alertes manuellement](investigate-incidents.md#alerts).
+| **Alertes** | Répertorie les alertes associées à l’examen. Les alertes peuvent provenir de fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans des applications Office, des Microsoft Defender for Cloud Apps et d’autres fonctionnalités Microsoft 365 Defender. <br> <br> Si vous voyez un *type d’alerte non pris en charge*, cela signifie que les fonctionnalités d’investigation automatisée ne peuvent pas récupérer cette alerte pour exécuter une investigation automatisée. Toutefois, vous pouvez [examiner ces alertes manuellement](investigate-incidents.md#alerts).
 | **Appareils** | Répertorie les appareils inclus dans l’enquête, ainsi que leur niveau de correction. (Les niveaux de correction correspondent [au niveau d’automatisation pour les groupes d’appareils](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Boîtes aux lettres** |Répertorie les boîtes aux lettres impactées par les menaces détectées.  |
 | **Utilisateurs**  | Répertorie les comptes d’utilisateurs impactés par les menaces détectées. |
@@ -114,7 +115,60 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |**Log** | Fournit une vue chronologique et détaillée de toutes les actions d’enquête effectuées après le déclenchement d’une alerte.|
 | **Historique des actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer. Accédez au Centre d’actions ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) pour approuver les actions en attente. |
 
-## <a name="next-steps"></a>Étapes suivantes
+
+## <a name="investigation-states"></a>États d’investigation
+
+Le tableau suivant répertorie les états d’investigation et ce qu’ils indiquent.
+
+
+|État de l’enquête  |Définition  |
+|---------|---------|
+|Bénigne   | Des artefacts ont fait l’objet d’une enquête et on a déterminé qu’aucune menace n’avait été détectée.|
+|PendingResource     | Une enquête automatisée est suspendue, car une action de correction est en attente d’approbation ou l’appareil sur lequel un artefact a été trouvé est temporairement indisponible.|
+|UnsupportedAlertType     | Aucune investigation automatisée n’est disponible pour ce type d’alerte. Une investigation plus approfondie peut être effectuée manuellement, à l’aide de la chasse avancée. |
+|Échec     | Au moins un analyseur d’investigation a rencontré un problème où il n’a pas pu terminer l’enquête. Si une enquête échoue après l’approbation des actions de correction, les actions de correction peuvent encore avoir réussi.|
+|Correction réussie| Une enquête automatisée s’est terminée et toutes les actions de correction ont été terminées ou approuvées.|
+
+Pour fournir plus de contexte sur la façon dont les états d’investigation s’affichent, le tableau suivant répertorie les alertes et leur état d’investigation automatisé correspondant. Ce tableau est inclus comme exemple de ce qu’une équipe des opérations de sécurité peut voir dans le portail Microsoft 365 Defender.
+
+|Nom de l’alerte | Severity | État de l’enquête | État | Catégorie |
+|-----------|----------|---------------------|--------|----------|
+|Un programme malveillant a été détecté dans un fichier d’image de disque wim|Informatif|Bénigne|Résolu|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|UnsupportedAlertType|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|UnsupportedAlertType|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|UnsupportedAlertType|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive zip|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive zip|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive zip|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive zip|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Wpakill hacktool a été empêché|Faible|Échec|Nouveau|Programme malveillant|
+|GendowsBatch hacktool a été empêché|Faible|Échec|Nouveau|Programme malveillant|
+|Keygen hacktool a été empêché|Faible|Échec|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive zip|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive zip|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier d’archive rar|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier image de disque ISO|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier image de disque ISO|Informatif|PendingResource|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier de données Outlook pst|Informatif|UnsupportedAlertType|Nouveau|Programme malveillant|
+|Un programme malveillant a été détecté dans un fichier de données Outlook pst|Informatif|UnsupportedAlertType|Nouveau|Programme malveillant|
+|MediaGet détecté|Moyen|Partiellement investi|Nouveau|Programme malveillant|
+|TrojanEmailFile|Moyen|SuccessfullyRemediated|Résolu|Programme malveillant|
+|Le programme malveillant CustomEnterpriseBlock a été empêché|Informatif|SuccessfullyRemediated|Résolu|Programme malveillant|
+|Un programme malveillant CustomEnterpriseBlock actif a été bloqué|Faible|SuccessfullyRemediated|Résolu|Programme malveillant|
+|Un programme malveillant CustomEnterpriseBlock actif a été bloqué|Faible|SuccessfullyRemediated|Résolu|Programme malveillant|
+|Un programme malveillant CustomEnterpriseBlock actif a été bloqué|Faible|SuccessfullyRemediated|Résolu|Programme malveillant|
+|TrojanEmailFile|Moyen|Bénigne|Résolu|Programme malveillant|
+|Le programme malveillant CustomEnterpriseBlock a été empêché|Informatif|UnsupportedAlertType|Nouveau|Programme malveillant|
+|Le programme malveillant CustomEnterpriseBlock a été empêché|Informatif|SuccessfullyRemediated|Résolu|Programme malveillant|
+|TrojanEmailFile|Moyen|SuccessfullyRemediated|Résolu|Programme malveillant|
+|TrojanEmailFile|Moyen|Bénigne|Résolu|Programme malveillant|
+|Un programme malveillant CustomEnterpriseBlock actif a été bloqué|Faible|PendingResource|Nouveau|Programme malveillant|
+
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)
 - [En savoir plus sur les actions de correction](m365d-remediation-actions.md)

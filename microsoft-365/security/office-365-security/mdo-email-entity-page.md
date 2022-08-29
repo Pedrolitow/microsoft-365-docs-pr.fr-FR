@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 04/01/2022
+ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender pour Office 365 clients E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque e-mail avec la page d’entité de messagerie.
-ms.openlocfilehash: 79863916cab3b859a0b24de9dc5eb9b4f324a3f9
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 9e4546f6ed8689ed218b4b7fc209918c44d53cb9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648764"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368904"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -38,11 +38,11 @@ ms.locfileid: "65648764"
 - [Utiliser des onglets de page d’entité de messagerie](#use-email-entity-page-tabs)
 - [Nouveautés de la page d’entité d’e-mail](#new-to-the-email-entity-page)
 
-Les administrateurs de Microsoft Defender pour Office 365 E5 et Defender pour Office P1 et P2 ont une vue à 360 degrés de l’e-mail à l’aide de la **page d’entité e-mail**. Cette page d’e-mail go-to a été créée pour améliorer les informations [fournies dans le menu volant « Détails de l’e-mail » de l’Explorateur de menaces](threat-explorer-views.md).
+Les administrateurs de Microsoft Defender pour Office 365 E5 et Defender pour Office P1 et P2 ont une vue à 360 degrés de l’e-mail à l’aide de la **page d’entité Email**. Cette page d’e-mail go-to a été créée pour améliorer les informations [fournies dans le menu volant « Détails de l’e-mail » de l’Explorateur de menaces](threat-explorer-views.md).
 
 ## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité d’e-mail
 
-La page d’entité d’e-mail est disponible dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> **e-mail & Collaboration** \> **Explorer**. Ou, pour accéder directement à la page **Explorateur** , utilisez <https://security.microsoft.com/threatexplorer>.
+La page d’entité de messagerie est disponible dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> **Email & Collaboration** \> **Explorer**. Ou, pour accéder directement à la page **Explorateur** , utilisez <https://security.microsoft.com/threatexplorer>.
 
 Dans **l’Explorateur**, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du menu volant du courrier électronique. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez cette option pour afficher la nouvelle page.
 
@@ -83,12 +83,12 @@ Les onglets situés en haut de la page d’entité vous permettent d’examiner 
 
 De nouvelles fonctionnalités sont disponibles avec cette page d’entité de messagerie. Voici la liste.
 
-### <a name="email-preview-for-cloud-mailboxes"></a>Aperçu de l’e-mail pour les boîtes aux lettres cloud
+### <a name="email-preview-for-cloud-mailboxes"></a>Email préversion pour les boîtes aux lettres cloud
 
 Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux lettres cloud ***, si*** les messages sont toujours présents dans le cloud. En cas de suppression réversible (par un administrateur ou un utilisateur) ou ZAP (en quarantaine), les e-mails ne sont plus présents dans l’emplacement cloud. Dans ce cas, les administrateurs ne pourront pas afficher un aperçu de ces messages spécifiques. Les e-mails qui ont été supprimés, ou lorsque la remise a échoué, ne sont jamais entrés dans la boîte aux lettres. Par conséquent, les administrateurs ne pourront pas non plus afficher un aperçu de ces e-mails.
 
 > [!WARNING]
-> L’aperçu des e-mails nécessite un rôle spécial appelé **Aperçu**. Vous pouvez ajouter ce rôle dans le portail Microsoft 365 Defender comme décrit dans les [rôles e-mail & collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). Vous devrez peut-être créer un groupe de rôles **e-mail & collaboration** et ajouter le rôle **Aperçu** à ce nouveau groupe de rôles ou ajouter le rôle **Aperçu** à un groupe de rôles qui permet aux administrateurs de votre organisation de travailler dans **l’Explorateur**.
+> L’aperçu des e-mails nécessite un rôle spécial appelé **Aperçu**. Vous pouvez ajouter ce rôle dans le portail Microsoft 365 Defender comme décrit dans [Email & rôles de collaboration dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). Vous devrez peut-être créer un groupe de rôles **de collaboration Email &** et ajouter le rôle **Aperçu** à ce nouveau groupe de rôles ou ajouter le rôle **Aperçu** à un groupe de rôles qui permet aux administrateurs de votre organisation de travailler dans **l’Explorateur**.
 
 ### <a name="detonation-details"></a>Détails de la détonation
 
@@ -116,11 +116,11 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 
 *Emplacement de remise le plus* récent : l’emplacement de remise le plus récent est l’emplacement où un e-mail a atterri après que des actions système telles que ZAP, ou des actions d’administration telles que Déplacer vers des éléments supprimés, se terminent. L’emplacement de remise le plus récent n’est pas destiné à informer les administrateurs de l’emplacement *actuel* du message. Par exemple, si un utilisateur supprime un message ou le déplace vers l’archive, l’emplacement de remise n’est pas mis à jour. Toutefois, si une action système a eu lieu et a mis à jour l’emplacement (par exemple, un ZAP entraînant le passage d’un e-mail en quarantaine), cela met à jour l’emplacement de remise le plus récent en quarantaine.
 
-*Détails de l’e-mail* : détails requis pour une compréhension plus approfondie de l’e-mail disponible sous l’onglet *Analyse* .
+*Email détails* : détails requis pour une compréhension plus approfondie des e-mails disponibles sous l’onglet *Analyse*.
 
-- *Exchange règles de transport (également appelées règles de flux de messagerie ou ETR)* : ces règles sont appliquées à un message au niveau de la couche de transport et sont prioritaires sur les verdicts de hameçonnage et de courrier indésirable. Les règles de flux de messagerie sont créées et modifiées dans le centre d’administration Exchange, <https://admin.exchange.microsoft.com/#/transportrules>mais si une règle de flux de courrier s’applique à un message, le nom et le GUID de la règle s’affichent ici. Informations précieuses à des fins de suivi.
+- *Règles de transport Exchange (également appelées règles de flux de messagerie ou ETR)* : ces règles sont appliquées à un message au niveau de la couche de transport et sont prioritaires sur les verdicts de hameçonnage et de courrier indésirable. Les règles de flux de messagerie sont créées et modifiées dans le Centre d’administration Exchange, <https://admin.exchange.microsoft.com/#/transportrules>mais si une règle de flux de messagerie s’applique à un message, le nom et le GUID de la règle s’affichent ici. Informations précieuses à des fins de suivi.
 
-- *Remplacement principal : Source* : le remplacement principal et la source font référence au paramètre client ou utilisateur qui a eu un impact sur la remise de l’e-mail, en remplaçant l’emplacement de remise donné par le système (conformément à la technologie de menace et de détection). Par exemple, il peut s’agir d’un e-mail bloqué en raison d’une règle de transport configurée par le locataire ou d’un e-mail autorisé en raison d’un paramètre d’utilisateur final pour Coffre expéditeurs. 
+- *Remplacement principal : Source* : le remplacement principal et la source font référence au paramètre client ou utilisateur qui a eu un impact sur la remise de l’e-mail, en remplaçant l’emplacement de remise donné par le système (conformément à la technologie de menace et de détection). Par exemple, il peut s’agir d’un e-mail bloqué en raison d’une règle de transport configurée par le locataire ou d’un e-mail autorisé en raison d’un paramètre d’utilisateur final pour les expéditeurs approuvés. 
 
 - *Toutes les substitutions* : toutes les substitutions font référence à la liste des remplacements (paramètres client ou utilisateur) appliqués à l’e-mail, ce qui peut avoir ou non eu un impact sur la remise d’un e-mail. Par exemple, si une règle de transport configurée par le locataire, ainsi qu’un paramètre de stratégie configuré par le locataire (par exemple, à partir de la liste d’autorisations de locataire), est appliquée à un e-mail, les deux sont répertoriées dans ce champ. Vous pouvez vérifier le champ de remplacement principal pour déterminer le paramètre qui a impacté la remise de l’e-mail. 
 
@@ -144,7 +144,7 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
 
 - *Date de création du domaine* : spécifie la date de création du domaine d’envoi. Un domaine nouvellement créé peut être prudent si d’autres signaux indiquent un comportement suspect.
 
-*Authentification par e-mail* : les méthodes d’authentification par e-mail utilisées par Microsoft 365 incluent SPF, DKIM et DMARC.
+*Email l’authentification* : Email méthodes d’authentification utilisées par Microsoft 365 incluent SPF, DKIM et DMARC.
 
 - Sender Policy Framework (**SPF**) : décrit les résultats de la vérification SPF du message. Les valeurs possibles peuvent être les suivantes :
   - Passe (adresse IP) : le SPF vérifie le message passé et inclut l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.
@@ -167,8 +167,22 @@ Les utilisateurs verront des détails de détonation enrichis pour les pièces j
   - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans DNS.
 
 *Authentification composite* : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification par e-mail comme SPF, DKIM et DMARC, pour déterminer si le message est authentique. Il utilise le domaine *From :* du courrier comme base d’évaluation.
+## <a name="actions-into-email-entity-page"></a>Actions dans Email page d’entité
 
-### <a name="email-summary-panel"></a>Panneau récapitulatif de l’e-mail
+Les équipes de sécurité peuvent désormais effectuer des actions de courrier électronique telles que la suppression réversible et la suppression définitive, passer au courrier indésirable, passer à la boîte de réception, déclencher une enquête, envoyer à Microsoft pour révision en ligne, et ainsi de suite. **Les** actions de bloc au niveau du locataire, telles que le fichier et l’URL ou l’expéditeur, peuvent également être triées à partir de Email page d’entité.  
+
+Vous pourrez cliquer sur **Effectuer des actions** dans le coin supérieur droit de la page d’entité, ce qui ouvre l’Assistant Action pour vous permettre de sélectionner l’action spécifique dont vous avez besoin. 
+![Effectuez une action à partir de la page d’entité.](../../media/Take-ActionWizard-Email-entity.png)
+
+Dans l’Assistant Action, vous pouvez effectuer des actions par e-mail, des soumissions de courrier électronique, bloquer le domaine de l’expéditeur et de l’expéditeur, des actions d’investigation et une approbation en deux étapes (ajouter à la correction) dans le même volet latéral. Ceci suit un flux cohérent pour faciliter l’utilisation. L’Assistant Action utilise le même système que celui utilisé par les actions de l’Explorateur (pour les actions de suppression, d’envoi et d’investigation), par exemple. Vous pourrez voir et suivre ces actions dans le [centre d’action unifié](https://security.microsoft.com/action-center/history) (pour les e-mails supprimés), dans le [portail d’envoi](https://security.microsoft.com/reportsubmission) (pour les soumissions) et dans la page [Autoriser/Bloquer les listes](https://security.microsoft.com/tenantAllowBlockList) de locataires pour (blocs TABL). 
+
+Nous apportons également l’URL de bloc au niveau du locataire et la pièce jointe à l’URL d’entité Email et aux onglets Pièces jointes respectifs. Une fois l’approbation effectuée, toutes les URL de blocs et toutes les listes de blocs (ou TABL) des listes d’autorisations et de blocs peuvent être suivies sous tabl/URL et les pages tabl/fichier. 
+![Effectuez l’action bloquer l’URL à partir de la page d’entité.](../../media/Block-URL-Email-entity.png)
+
+Consultez [les autorisations](permissions-microsoft-365-security-center.md) requises pour effectuer ces actions. 
+
+ 
+### <a name="email-summary-panel"></a>Email panneau récapitulatif
 
 Le panneau récapitulatif de l’e-mail est une vue récapitulative de la page d’entité de messagerie complète. Il contient des détails standardisés sur l’e-mail (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou d’envoi). Le panneau récapitulatif de l’e-mail remplace les menus volants traditionnels Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
 
@@ -182,7 +196,7 @@ Le panneau récapitulatif de l’e-mail est divisé en sections suivantes :
 
 - *Détails de la remise* : contient des informations sur les menaces et le niveau de confiance, les technologies de détection et l’emplacement de livraison d’origine et le dernier emplacement correspondant.
 
-- *Détails de l’e-mail* : contient des informations sur les propriétés de l’e-mail, telles que le nom de l’expéditeur, l’adresse de l’expéditeur, l’heure de réception, les détails de l’authentification et d’autres détails.
+- Email détails : contient des informations sur *les propriétés* d’e-mail telles que le nom de l’expéditeur, l’adresse de l’expéditeur, l’heure de réception, les détails de l’authentification et d’autres détails.
 
 - *URL* : par défaut, vous verrez 3 URL et leurs menaces correspondantes. Vous pouvez toujours cliquer sur **Afficher toutes les URL** pour développer et afficher toutes les URL et les exporter.  
 
@@ -194,7 +208,7 @@ En plus des sections ci-dessus, vous verrez également des sections spécifiques
 
     - *Détails de la soumission* : contient des informations sur les soumissions spécifiques, telles que :
         - Date d’envoi
-        - Sujet
+        - Subject
         - Type d’envoi
         - Motif de l’envoi
         - ID de soumission

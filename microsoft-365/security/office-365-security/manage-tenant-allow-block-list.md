@@ -5,10 +5,10 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.custom: ''
 description: Découvrez comment gérer les autorisations et les blocs dans la liste d’autorisations/blocs du locataire dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8ac90e8e9b7b955457c9bd90cae68e18cb69915
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9993241a42b40fd670e83d0e28938fa9a4625086
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822196"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441590"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire
 
@@ -31,191 +31,79 @@ ms.locfileid: "66822196"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans des organisations Exchange Online ou autonomes Exchange Online Protection (EOP) sans Exchange Online boîtes aux lettres, vous pouvez être en désaccord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message incorrect peut être autorisé (un faux négatif).
 
-La liste d’autorisation/de blocage des locataires dans le portail Microsoft 365 Defender vous permet de remplacer manuellement les verdicts de filtrage Microsoft 365. La liste d’autorisation/de blocage du locataire est utilisée pendant le flux de messagerie pour les messages entrants (ne s’applique pas aux messages intra-organisation) et au moment où l’utilisateur clique. Vous pouvez spécifier les types de remplacements suivants :
+La liste d’autorisation/de blocage des locataires dans le portail Microsoft 365 Defender vous permet de remplacer manuellement les verdicts de filtrage Microsoft 365. La liste d’autorisation/de blocage du locataire est utilisée pendant le flux de messagerie pour les messages entrants, qui forment des expéditeurs externes (ne s’appliquent pas aux messages intra-organisation) et au moment où l’utilisateur clique.
 
-- URL à bloquer.
-- Fichiers à bloquer.
-- E-mails ou domaines de l’expéditeur à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict d’autorisation ou de blocage dans [l’insight d’intelligence](learn-about-spoof-intelligence.md) de l’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui n’apparaît que sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés ici avant qu’elles ne soient détectées par l’intelligence de l’usurpation d’identité.
-- URL à autoriser.
-- Fichiers à autoriser.
-- E-mails ou domaines de l’expéditeur à autoriser.
+La liste Autoriser/Bloquer du locataire est disponible dans le portail Microsoft 365 Defender dans <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
 
-Cet article explique comment configurer des entrées dans la liste verte/de blocage des locataires dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online  boîtes aux lettres).
+Pour obtenir des instructions de création et de configuration d’entrée, consultez les rubriques suivantes :
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+- **Domaines et adresses e-mail** et **expéditeurs usurpés d’identité** : [autoriser ou bloquer des e-mails à l’aide de la liste d’autorisation/de blocage du locataire](allow-block-email-spoof.md)
+- **Fichiers** : [Autoriser ou bloquer des fichiers à l’aide de la liste d’autorisations/de blocs du locataire](allow-block-files.md)
+- **URL** : [Autorisez ou bloquez des URL à l’aide de la liste d’autorisations/de blocs du locataire](allow-block-urls.md).
 
-- Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
+Ces articles contiennent des procédures dans le portail Microsoft 365 Defender et dans PowerShell.
 
-- Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
+## <a name="block-entries-in-the-tenant-allowblock-list"></a>Bloquer les entrées dans la liste d’autorisations/de blocs du locataire
 
-  ```console
-  certutil.exe -hashfile "<Path>\<Filename>" SHA256
-  ```
+Utilisez le portail Soumissions (également appelé *soumission d’administrateur*) <https://security.microsoft.com/reportsubmission> pour créer des entrées de bloc pour les types d’éléments suivants lorsque vous les signalez sous forme de faux positifs à Microsoft :
 
-  Un exemple de valeur est `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Les valeurs de hachage perceptuel (pHash) ne sont pas prises en charge.
+- **Domaines et adresses e-mail** :
+  - Email messages de ces expéditeurs sont marqués comme *courrier indésirable à haut niveau de confiance* (SCL = 9). Ce qui arrive aux messages est déterminé par la [stratégie anti-courrier indésirable](configure-your-spam-filter-policies.md) qui a détecté le message pour le destinataire. Dans la stratégie anti-courrier indésirable par défaut et les nouvelles stratégies personnalisées, les messages marqués comme courrier indésirable à haut niveau de confiance sont remis par défaut au dossier Junk Email. Dans les [stratégies de sécurité prédéfinies](preset-security-policies.md) Standard et Strict, les messages indésirables à haut niveau de confiance sont mis en quarantaine.
+  - Les utilisateurs de l’organisation ne peuvent pas envoyer de courrier électronique à ces domaines et adresses bloqués. Ils recevront le rapport de non-remise suivant (également appelé NDR ou message de rebond) : `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
-- Pour les expéditeurs, les URL et les hachages de fichiers, la liste d’autorisations/blocs du locataire autorise 500 entrées chacune pour les blocs et les autorisations, ce qui en fait un total de 1 000 entrées. Pour l’usurpation d’identité (expéditeurs usurpés), le nombre total d’entrées autorisées est de 1 024.
+- **Fichiers** : Email messages contenant ces fichiers bloqués sont bloqués en tant que *programmes malveillants*.
 
-- Le nombre maximal de caractères pour chaque entrée est le suivant :
-  - Hachages de fichier = 64
-  - URL = 250
+- **URL** : Email messages contenant ces URL bloquées sont bloqués en tant *qu’hameçonnage à haut niveau de confiance*.
 
-- Une entrée doit être active dans un délai de 30 minutes, mais il peut prendre jusqu’à 24 heures pour que l’entrée soit active.
+Dans la liste d’autorisation/de blocage du locataire, vous pouvez également créer directement des entrées de bloc pour les types d’éléments suivants :
 
-- Par défaut, les entrées de la liste d’autorisations/de blocs du locataire expirent après 30 jours. Vous pouvez spécifier une date ou les définir pour qu’elles n’expirent jamais (pour le type de bloc d’entrées).
+- **Domaines et adresses e-mail**, **fichiers** et **URL**.
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- **Expéditeurs usurpés** : si vous substituez manuellement un verdict d’autorisation existant à partir de [l’intelligence](learn-about-spoof-intelligence.md) d’usurpation d’identité, l’expéditeur usurpé d’identité bloqué devient une entrée de bloc manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisations/blocs du locataire.
 
-- Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - Pour ajouter et supprimer des valeurs de la liste d’autorisations/de blocs du locataire, vous devez être membre de
-    - **Groupe de rôles Gestion de l’organisation** ou **Administrateur de la sécurité** (**rôle Administrateur de la sécurité**)
-    - Groupe **de rôles Opérateur de sécurité** (**Tenant AllowBlockList Manager**).
-  - Pour accéder en lecture seule à la liste d’autorisations/de blocs de locataire, vous devez être membre de
-    - **Groupe de rôles Lecteur global**
-    - **Groupe de rôles Lecteur de sécurité**
-    - **Groupe de rôles de configuration Affichage uniquement**
+Par défaut, les entrées de bloc pour **les domaines et les adresses e-mail**, **les fichiers** et **les URL** expirent au bout de 30 jours, mais vous pouvez les définir pour expirer jusqu’à 90 jours ou pour ne jamais expirer. Les entrées de bloc pour **les expéditeurs usurpés** n’expirent jamais.
 
-  Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
+## <a name="allow-entries-in-the-tenant-allowblock-list"></a>Autoriser les entrées dans la liste d’autorisations/de blocs du locataire
 
-  > [!NOTE]
-  >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises *et* les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
-  > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
+Dans la plupart des cas, vous ne pouvez pas créer directement des entrées d’autorisation dans la liste d’autorisations/de blocs du locataire :
 
-## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’autorisations/blocages du locataire
+- **Domaines et adresses e-mail**, **fichiers** et URL : vous ne pouvez pas créer d’entrées d’autorisation directement dans la liste d’autorisations/de **blocs** du locataire. Au lieu de cela, vous utilisez le portail <https://security.microsoft.com/reportsubmission> Soumissions pour signaler **l’e-mail**, la **pièce jointe** ou l’URL à Microsoft, car cela **n’aurait pas dû être bloqué (Faux positif).**
 
-Pour autoriser ou bloquer des e-mails, consultez [Autoriser ou bloquer les e-mails à l’aide de la liste d’autorisation/de blocage du locataire](allow-block-email-spoof.md).
+- **Expéditeurs usurpés** :
+  - Si l’usurpation d’identité a déjà bloqué le message en tant qu’usurpation d’identité, utilisez le portail <https://security.microsoft.com/reportsubmission> Soumissions pour signaler **l’e-mail** à Microsoft, car il **n’aurait pas dû être bloqué (Faux positif).**
+  - Vous pouvez créer de manière proactive une entrée d’autorisation pour un expéditeur **usurpé** sous l’onglet Expéditeur usurpé dans la liste d’autorisation/de blocage du locataire avant [que l’intelligence](learn-about-spoof-intelligence.md) de l’usurpation d’identité identifie et bloque le message en tant qu’usurpation d’identité.
 
-Pour autoriser ou bloquer des fichiers, consultez [Autoriser ou bloquer des fichiers à l’aide de la liste d’autorisations/de blocs du locataire](allow-block-files.md).
+La liste suivante décrit ce qui se passe dans la liste d’autorisations/blocages du locataire lorsque vous signalez quelque chose à Microsoft sous la forme d’un faux positif dans le portail d’envoi :
 
-Pour autoriser ou bloquer des URL, consultez [Autoriser ou bloquer des URL à l’aide de la liste d’autorisations/de blocs du locataire](allow-block-urls.md).
+- **Email pièces jointes** et **URL** : une entrée d’autorisation est créée et s’affiche sous l’onglet **Fichiers** ou URL de la liste d’autorisations/de **blocs** du locataire.
 
-Ces articles contiennent les instructions permettant d’ajouter ou de supprimer ou de modifier des entrées dans la liste d’autorisation/de blocage du locataire à l’aide du portail Microsoft 365 Defender et de Exchange Online PowerShell ou de PowerShell EOP autonome.
+- **Email** : si un message a été bloqué par la pile de filtrage Microsoft 365, une entrée d’autorisation peut être créée dans la liste d’autorisation/de blocage du locataire :
 
-### <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
+  - Si le message a été bloqué par [l’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Expéditeurs usurpés** dans la liste verte des locataires.
+
+  - Si le message a été bloqué par la [protection de domaine ou d’emprunt](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) d’identité de l’utilisateur dans Defender pour Office 365, une entrée d’autorisation n’est pas créée dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, le domaine ou l’expéditeur est ajouté à la **section Expéditeurs approuvés et domaines** dans la [stratégie anti-hameçonnage](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) qui a détecté le message.
+
+  - Si le message a été bloqué pour d’autres raisons, une entrée d’autorisation pour l’expéditeur est créée et s’affiche sous l’onglet **Domaines & adresses** dans la liste verte des locataires.
+
+  - Si le message n’a pas été bloqué et que l’entrée d’autorisation pour l’expéditeur n’est pas créée, il ne se trouve pas sous l’onglet **Expéditeurs usurpés** ou l’onglet **Domaines & adresses** .
+
+Par défaut, autorisez les **entrées pour les domaines et les adresses e-mail**, **les fichiers** et **les URL** qui expirent après 30 jours, ce qui est également le maximum. Les entrées autorisées pour **les expéditeurs usurpés** n’expirent jamais.
+
+> [!NOTE]
+> Étant donné que Microsoft gère les entrées d’autorisation pour vous, les entrées d’autorisation **inutiles pour les domaines et les adresses e-mail**, **les URL** ou **les fichiers** seront supprimées. Ce comportement protège votre organisation et permet d’éviter les entrées d’autorisation mal configurées. Si vous n’êtes pas d’accord avec le verdict, vous devrez peut-être ouvrir une demande de support pour déterminer pourquoi un message est toujours considéré comme incorrect.
+>
+> Les autorisations sont ajoutées pendant le flux de messagerie, en fonction des filtres qui ont déterminé que le message était malveillant. Par exemple, si l’expéditeur et une URL du message ont été déterminés comme étant incorrects, une entrée d’autorisation est créée pour l’expéditeur et une entrée d’autorisation est créée pour l’URL.
+>
+> Lorsque cette entité (adresse de domaine ou e-mail, URL, fichier) est à nouveau rencontrée, tous les filtres associés à cette entité sont ignorés.
+>
+> Pendant le flux de courrier, si les messages du domaine ou de l’adresse e-mail passent d’autres vérifications dans la pile de filtrage, les messages sont remis. Par exemple, si [l’authentification par e-mail](email-validation-and-authentication.md) réussit, un message d’un expéditeur dans l’entrée d’autorisation est remis.
+
+## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>À quoi vous attendre après l’ajout d’une entrée d’autorisation ou de blocage
 
 Une fois que vous avez ajouté une entrée d’autorisation via le portail Soumissions ou une entrée de bloc dans la liste d’autorisation/de blocage du locataire, l’entrée doit commencer à fonctionner immédiatement.
 
 Nous vous recommandons de laisser les entrées expirer automatiquement après 30 jours pour voir si le système a découvert l’autorisation ou le bloc. Si ce n’est pas le cas, vous devez faire une autre entrée pour donner au système encore 30 jours pour apprendre.
-
-## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste d’autorisations/de blocs du locataire
-
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** dans la section **Règles**. Ou, pour accéder directement à la page **Autoriser/Bloquer les listes de locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. Sélectionnez l’onglet souhaité. Les colonnes disponibles dépendent de l’onglet que vous avez sélectionné :
-
-   - **Expéditeurs** :
-     - **Valeur** : domaine ou adresse e-mail de l’expéditeur.
-     - **Action** : valeur **Allow** ou **Block**.
-     - **Modifié par**
-     - **Dernière mise à jour**
-     - **Supprimer le**
-     - **Notes**
-   - **Usurpation**
-     - **Utilisateur usurpé**
-     - **Envoi d’une infrastructure**
-     - **Type d’usurpation** d’identité : valeur **interne** ou **externe**.
-     - **Action** : valeur **Bloquer** ou **Autoriser**.
-   - **URLs**:
-     - **Valeur** : URL.
-     - **Action** : valeur **Allow** ou **Block**.
-     - **Modifié par**
-     - **Dernière mise à jour**
-     - **Supprimer le**
-     - **Notes**
-   - **Files**
-     - **Valeur** : hachage du fichier.
-     - **Action** : valeur **Allow** ou **Block**.
-     - **Modifié par**
-     - **Dernière mise à jour**
-     - **Supprimer le**
-     - **Notes**
-
-   Vous pouvez cliquer sur un en-tête de colonne pour trier dans l’ordre croissant ou décroissant.
-
-   Vous pouvez cliquer sur **Groupe** pour regrouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
-
-   - **Expéditeurs** : vous pouvez regrouper les résultats par **action**.
-   - **Usurpation d’identité** : vous pouvez regrouper les résultats par **type Action** ou **Usurpation d’identité**.
-   - **URL** : vous pouvez regrouper les résultats par **action**.
-   - **Fichiers** : vous pouvez regrouper les résultats par **action**.
-
-   Cliquez sur **Rechercher**, entrez tout ou partie d’une valeur, puis appuyez sur Entrée pour rechercher une valeur spécifique. Lorsque vous avez terminé, cliquez sur ![l’icône Effacer la recherche.](../../media/m365-cc-sc-close-icon.png) **Effacer la recherche**.
-
-   Cliquez sur **Filtrer** pour filtrer les résultats. Les valeurs disponibles dans le menu volant **Filtre** qui s’affiche dépendent de l’onglet que vous avez sélectionné :
-
-   - **Expéditeurs**
-     - **Action**
-     - **N’expirez jamais**
-     - **Dernière date de mise à jour**
-     - **Supprimer le**
-   - **Usurpation**
-     - **Action**
-     - **Type d’usurpation d’identité**
-   - **Url**
-     - **Action**
-     - **N’expirez jamais**
-     - **Dernière date de mise à jour**
-     - **Supprimer le**
-   - **Files**
-     - **Action**
-     - **N’expirez jamais**
-     - **Dernière mise à jour**
-     - **Supprimer le**
-
-   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants, cliquez sur **Filtrer**, puis dans le menu volant **Filtre** qui s’affiche, cliquez sur **Effacer les filtres**.
-
-## <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modifier les entrées dans la liste d’autorisations/de blocs du locataire
-
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. Sélectionnez l’onglet qui contient le type d’entrée à modifier :
-   - **Expéditeurs**
-   - **Usurpation**
-   - **Url**
-   - **Files**
-
-3. Sélectionnez l’entrée à modifier, puis cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**. Les valeurs que vous pouvez modifier dans le menu volant qui s’affiche dépendent de l’onglet que vous avez sélectionné à l’étape précédente :
-   - **Expéditeurs**
-     - **N’expirez jamais** et/ou date d’expiration.
-     - **Remarque facultative**
-   - **Usurpation**
-     - **Action** : vous pouvez modifier la valeur en **Allow** ou **Block**.
-   - **Url**
-     - **N’expirez jamais** et/ou date d’expiration.
-     - **Remarque facultative**
-   - **Files**
-     - **N’expirez jamais** et/ou date d’expiration.
-     - **Remarque facultative**
-
-    Notez que les valeurs des expéditeurs, des URL et des fichiers n’expirent jamais uniquement pour les entrées bloquées. 
-
-4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
-
-> [!NOTE]
-> Vous ne pouvez étendre que 30 jours après la date de création. Les blocs peuvent être étendus jusqu’à 90 jours, mais contrairement aux autorisations, ils peuvent également être définis sur Ne jamais expirer.
-
-## <a name="remove-entries-from-the-tenant-allowblock-list"></a>Supprimer des entrées de la liste d’autorisations/de blocs du locataire
-
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la section Stratégies **& règles sur les règles** \> de **menaces** \> **,** section \> **Listes d’autorisations/listes de blocs du locataire**. Ou, pour accéder directement à la page **Autoriser/Bloquer la liste des locataires** , utilisez <https://security.microsoft.com/tenantAllowBlockList>.
-
-2. Sélectionnez l’onglet qui contient le type d’entrée à supprimer :
-   - **Expéditeurs**
-   - **Usurpation**
-   - **Url**
-   - **Files**
-
-3. Sélectionnez l’entrée à supprimer, puis cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
-
-4. Dans la boîte de dialogue d’avertissement qui s’affiche, cliquez sur **Supprimer**.
-
-## <a name="related-articles"></a>Articles connexes
-
-- [Autoriser ou bloquer des fichiers dans la liste d’autorisations/de blocs du locataire](allow-block-files.md)
-- [Autoriser ou bloquer des e-mails dans la liste d’autorisations/blocages du locataire](allow-block-email-spoof.md)
-- [Autoriser ou bloquer des URL dans la liste d’autorisations/de blocs du locataire](allow-block-urls.md)

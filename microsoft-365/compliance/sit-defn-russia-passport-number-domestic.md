@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Russie numéro de passeport national informations sensibles type définition d’entité.
-ms.openlocfilehash: 0e74f6f8f268591cdf69148390e94e287f0e9686
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 186f5fc3e231a311ef8d9de4a87dd18c7b47972b
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996349"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368848"
 ---
 # <a name="russia-passport-number-domestic"></a>Numéro de passeport national russe 
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 
@@ -76,8 +68,8 @@ Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informati
 ### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - numéro de passeport
-- passport no
-- Passeport #
+- n° de passeport
+- # passeport
 - iD passport
 - passportno #
 - passportnumber #

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: 54e2a7f5f9776438ad36d51d43b38ed379cb35d0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: a477157b024d3b58483fe90549ba75e820f34a2f
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630342"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335735"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -62,7 +62,7 @@ Déterminez avant de créer votre stratégie d’étiquette de rétention si ell
         - **Solutions** > **Gestion des enregistrements** > > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
     - Si vous utilisez la solution de gestion du cycle de vie des données :
-        - **Solutions** > **Gestion du cycle de vie des données** > **Stratégies d’étiquettes** onglet > **Publier des étiquettes**
+        - **Solutions** >  **Gestion du cycle de vie des** >  données **Microsoft 365** >  **Onglet Stratégies d’étiquette** > **Publier des étiquettes**
     
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
 
@@ -102,7 +102,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, vérifiez l
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - Pour tous les autres emplacements de politique, tels que les **e-mails Exchange**, **les sites SharePoint**, **les messages du canal Teams**, etc :
+    - Pour tous les autres emplacements de stratégie, tels que les **e-mails Exchange**, **les sites SharePoint**, les **messages de canal Teams** , etc. :
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -273,7 +273,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or that mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

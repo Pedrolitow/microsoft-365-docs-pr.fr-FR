@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/08/2022
+ms.date: 08/12/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: c59e4a7a7eb3c7fcf6bb623385382c3e453a3790
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: bb4b0cb1c38fc394d5dfb2ec0498ba72b23e8754
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281682"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388548"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -57,13 +57,11 @@ La protection réseau nécessite Windows 10 ou 11 (Professionnel ou Entreprise),
 
 | Version de Windows | Antivirus Microsoft Defender |
 |:---|:---|
-| Windows 10 version 1709 ou ultérieure <br> Windows 11 <br> Windows Server 1803 ou version ultérieure | [Protection en temps réel de l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) <br> et la [protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) doit être activée (active)|
+| Windows 10 version 1709 ou ultérieure <br/> Windows 11 <br/> Windows Server 1803 ou version ultérieure | Assurez-vous que la protection en temps réel et [la protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) de [l’Antivirus Microsoft Defender](configure-real-time-protection-microsoft-defender-antivirus.md) sont activées (actives). |
 
 ## <a name="why-network-protection-is-important"></a>Pourquoi la protection réseau est-elle importante ?
 
-La protection réseau fait partie du groupe de solutions de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison. La protection réseau permet de superposer la couche réseau d’URL et d’adresses IP bloquantes. La protection réseau peut empêcher l’accès aux URL à l’aide de certains navigateurs et connexions réseau standard.
-
-Par défaut, la protection réseau protège vos ordinateurs contre les URL malveillantes connues à l’aide du flux SmartScreen, qui bloque les URL malveillantes d’une manière similaire à SmartScreen dans le navigateur Microsoft Edge. La fonctionnalité de protection réseau peut être étendue à :
+La protection réseau fait partie du groupe de solutions de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison. La protection réseau permet de superposer la couche réseau d’URL et d’adresses IP bloquantes. La protection réseau peut empêcher l’accès aux URL à l’aide de certains navigateurs et connexions réseau standard. Par défaut, la protection réseau protège vos ordinateurs contre les URL malveillantes connues à l’aide du flux SmartScreen, qui bloque les URL malveillantes d’une manière similaire à SmartScreen dans le navigateur Microsoft Edge. La fonctionnalité de protection réseau peut être étendue à :
 
 - Bloquer les adresses IP/URL de votre propre renseignement sur [les menaces (indicateurs](indicator-ip-domain.md))
 - Bloquer les services non approuvés de [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) (anciennement Microsoft Cloud App Security)
@@ -122,10 +120,10 @@ Un utilisateur visite un site web :
   - **Débloquer** : l’utilisateur n’a pas besoin d’accéder au portail Windows Defender Security Intelligence (WDSI) pour accéder au site. L’utilisateur aura accès au site pendant 24 heures; à ce stade, le bloc est réactivé pendant 24 heures. L’utilisateur peut continuer à utiliser **Débloquer** pour accéder au site jusqu’à ce que l’administrateur interdise (bloque) le site, supprimant ainsi l’option de **débloquer**.
   - **Commentaires** : la notification toast présente à l’utilisateur un lien permettant d’envoyer un ticket, que l’utilisateur peut utiliser pour envoyer des commentaires à l’administrateur afin de justifier l’accès au site.
 
-  > [!div class="mx-imgBorder"]
-  > ![Affiche une notification d’avertissement de contenu d’hameçonnage de protection réseau](images/network-protection-phishing-warn-2.png)
+    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Affiche une notification d’avertissement de contenu d’hameçonnage de protection réseau.":::
 
-  > [REMARQUE!] Les images présentées ici pour avertir l’expérience et bloquer l’expérience (ci-dessous) répertorient toutes les deux **« URL bloquée »** comme exemple de texte d’espace réservé ; dans un environnement fonctionnel, l’URL ou le domaine réel est répertorié.  
+  > [!NOTE]
+  > Les images présentées ici pour avertir l’expérience et bloquer l’expérience (ci-dessous) répertorient toutes les deux **« URL bloquée »** comme exemple de texte d’espace réservé ; dans un environnement fonctionnel, l’URL ou le domaine réel est répertorié.  
 
 #### <a name="block-experience"></a>Bloquer l’expérience
 
@@ -134,9 +132,8 @@ Un utilisateur visite un site web :
 - Si l’URL a une mauvaise réputation, une notification toast présente à l’utilisateur les options suivantes :
   - **D'accord** La notification toast est publiée (supprimée) et la tentative d’accès au site est terminée.
   - **Commentaires** La notification toast présente à l’utilisateur un lien permettant d’envoyer un ticket, que l’utilisateur peut utiliser pour envoyer des commentaires à l’administrateur afin de justifier l’accès au site.
-  
-  > [!div class="mx-imgBorder"]
-  > ![ Affiche une notification bloquée de contenu de hameçonnage connu de protection réseau](images/network-protection-phishing-blocked.png)
+
+    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Affiche une notification bloquée de contenu de hameçonnage connu de protection réseau." lightbox="images/network-protection-phishing-blocked.png":::
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Protection réseau : détection et correction C2
 
@@ -148,17 +145,11 @@ La prise en charge des serveurs de commande et de contrôle (C2) est un élémen
 
 Une nouvelle fonctionnalité des indicateurs Defender pour point de terminaison permet aux administrateurs de permettre aux utilisateurs finaux de contourner les avertissements générés pour certaines URL et adresses IP. Selon la raison pour laquelle l’URL a été bloquée, lorsqu’un bloc SmartScreen est rencontré, il peut offrir aux administrateurs la possibilité de débloquer le site jusqu’à 24 heures. Dans ce cas, une notification toast Sécurité Windows s’affiche, ce qui permet à l’utilisateur final de **débloquer** l’URL ou l’adresse IP pendant la période définie.  
 
- > [!div class="mx-imgBorder"]
- > ![notification Sécurité Windows pour la protection réseau](images/network-protection-smart-screen-block-notification.png)
+:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Sécurité Windows notification pour la protection réseau.":::
 
 Microsoft Defender pour point de terminaison les administrateurs peuvent configurer la fonctionnalité de déblocage SmartScreen à [Microsoft 365 Defender](https://security.microsoft.com/), à l’aide de l’outil de configuration suivant. À partir du portail Microsoft 365 Defender, accédez au chemin d’accès à ConfigToolName.
 
-<!-- Hide {this intro with no subsequent list items}
-[Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
--->
-
- > [!div class="mx-imgBorder"]
- > ![Configuration de bloc SmartScreen de protection réseau ULR et formulaire IP](images/network-protection-smart-screen-block-configuration.png)
+:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Formulaire IP et ULR de configuration de bloc SmartScreen de protection réseau.":::
 
 ## <a name="using-network-protection"></a>Utilisation de la protection réseau
 
@@ -168,6 +159,8 @@ La protection réseau est activée par appareil, ce qui est généralement fait 
 > L’antivirus Microsoft Defender doit être actif pour activer la protection réseau.
 
 Vous pouvez activer la protection réseau en mode **Audit** ou **Bloquer** . Si vous souhaitez évaluer l’impact de l’activation de la protection réseau avant de bloquer réellement les adresses IP ou LES URL, vous pouvez activer la protection réseau en mode Audit pendant un certain temps pour collecter des données sur ce qui serait bloqué. Les journaux d’activité en mode audit lorsque les utilisateurs finaux se sont connectés à une adresse ou à un site qui aurait autrement été bloqué par la protection réseau.
+
+Pour plus d’informations sur la protection réseau pour Linux et macOS, consultez : [Protection réseau pour Linux](network-protection-linux.md) et [protection réseau pour MacOS](network-protection-macos.md).
 
 ## <a name="advanced-hunting"></a>Recherche avancée de menaces
 
@@ -186,8 +179,8 @@ DeviceEvents
 
 ```
 
- > [!div class="mx-imgBorder"]
- > ![Repérage avancé pour l’audit et l’identification des événements](images/network-protection-advanced-hunting.png)
+
+:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Repérage avancé pour l’audit et l’identification des événements." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > Ces entrées ont des données dans la colonne **AdditionalFields** , ce qui vous donne d’excellentes informations sur l’action. Si vous développez **AdditionalFields** , vous pouvez également obtenir les champs **: IsAudit**, **ResponseCategory** et **DisplayName**.
@@ -308,7 +301,7 @@ En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez à l�
 
 ### <a name="alternative-option-for-network-protection"></a>Autre option pour la protection réseau
 
-Pour Windows 10 Entreprise multisession 1909 et versions ultérieures, utilisées dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
+Pour Windows Server version 1803 ou ultérieure et Windows 10 Entreprise multisession 1909 et versions ultérieures, utilisées dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
 
 1. Utilisez [Activer la protection réseau](enable-network-protection.md) et suivez les instructions pour appliquer votre stratégie.
 
@@ -334,3 +327,5 @@ La protection réseau dispose désormais d’une optimisation des performances q
 - [Évaluer les | de protection réseau](evaluate-network-protection.md) Effectuez un scénario rapide qui illustre le fonctionnement de la fonctionnalité et les événements qui sont généralement créés.
 - [Activer la protection réseau](enable-network-protection.md) | Utilisez stratégie de groupe, PowerShell ou MDM CSP pour activer et gérer la protection réseau dans votre réseau.
 - [Configuration des fonctionnalités de réduction de la surface d’attaque dans Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
+- [Protection réseau pour](network-protection-linux.md) les | Linux Pour en savoir plus sur l’utilisation de la protection microsoft network pour les appareils Linux.
+- [Protection réseau pour les | MacOS](network-protection-macos.md) Pour en savoir plus sur la protection microsoft network pour MacOS

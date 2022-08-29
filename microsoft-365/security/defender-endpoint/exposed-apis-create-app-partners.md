@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 8a0a191d3e418b189af029f2c459bed93a0e8c54
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101841"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331904"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accès aux partenaires par le biais d’API Microsoft Defender pour point de terminaison
 
@@ -44,7 +44,7 @@ ms.locfileid: "66101841"
 
 Cette page explique comment créer une application Azure Active Directory (Azure AD) pour obtenir un accès programmatique à Microsoft Defender pour point de terminaison pour le compte de vos clients.
 
-Microsoft Defender pour point de terminaison expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aideront à automatiser les flux de travail et à innover en fonction de Microsoft Defender pour point de terminaison fonctionnalités. L’accès à l’API nécessite l’authentification OAuth2.0. Pour plus d’informations, consultez [Flow du code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose une grande partie de ses données et actions par le biais d’un ensemble d’API programmatiques. Ces API vous aideront à automatiser les flux de travail et à innover en fonction de Microsoft Defender pour point de terminaison fonctionnalités. L’accès à l’API nécessite l’authentification OAuth2.0. Pour plus d’informations, consultez [le flux de code d’autorisation OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En général, vous devez effectuer les étapes suivantes pour utiliser les API :
 
@@ -59,7 +59,7 @@ Les étapes suivantes vous guideront dans la création d’une application Azure
 
 1. Connectez-vous à votre [locataire Azure](https://portal.azure.com) avec un utilisateur ayant le rôle **Administrateur général** .
 
-2. Accédez à **Azure Active Directory** \> **App-registraties** \> **Nouvelle inscription**.
+2. Accédez à **Azure Active Directory** \> **inscriptions d'applications** \> **Nouvelle inscription**.
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Volet de navigation vers l’inscription d’application" lightbox="images/atp-azure-new-app2.png":::
 
@@ -71,7 +71,7 @@ Les étapes suivantes vous guideront dans la création d’une application Azure
 
    - URI de redirection - type : Web, URI : https://portal.azure.com
 
-     :::image type="content" source="images/atp-api-new-app-partner.png" alt-text="Page d’inscription de l’application partenaire Microsoft Azure" lightbox="images/atp-api-new-app-partner.png":::
+     :::image type="content" source="images/atp-api-new-app-partner.png" alt-text="Page d’inscription d’application partenaire Microsoft Azure" lightbox="images/atp-api-new-app-partner.png":::
 
 4. Autorisez votre application à accéder à Microsoft Defender pour point de terminaison et affectez-la avec le jeu minimal d’autorisations requis pour terminer l’intégration.
 

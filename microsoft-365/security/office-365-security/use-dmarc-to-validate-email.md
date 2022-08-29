@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
-ms.translationtype: HT
+ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663391"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388416"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -234,7 +234,7 @@ Microsoft 365 est configuré de cette façon, car certains messages légitimes 
 
 - Les utilisateurs ajoutent individuellement des expéditeurs approuvés à l’aide de leur client de messagerie.
 
-- Les administrateurs peuvent utiliser l’[Informations sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) ou la [Liste verte/rouge du client](tenant-allow-block-list.md) pour autoriser les messages provenant de l’expéditeur usurpé.
+- Les administrateurs peuvent utiliser l’[Informations sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) ou la [Liste verte/rouge du client](manage-tenant-allow-block-list.md) pour autoriser les messages provenant de l’expéditeur usurpé.
 
 - Les administrateurs créent une règle de flux de messagerie Exchange (également appelée règle de transport) pour tous les utilisateurs qui autorise la transmission des messages de ces expéditeurs particuliers.
 
@@ -281,4 +281,4 @@ Vous voulez plus d’informations sur DMARC ? Ces ressources peuvent vous aider
 
 [**Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[Utilisez des expéditeurs ARC de confiance pour les flux de messagerie légitimes](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)
+[Utilisez des expéditeurs ARC de confiance pour les flux de messagerie légitimes](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)

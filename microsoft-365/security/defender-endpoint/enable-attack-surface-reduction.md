@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 90244050b9fd8e5714ba28f7ac9850091d368da7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a34ee4f16bb6bc98e14ede15df98ceedb7f4dec8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601221"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388636"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -59,7 +59,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 
 Pour utiliser l’ensemble des fonctionnalités de règles de réduction de la surface d’attaque, vous devez :
 
-- Antivirus Windows Defender en tant qu’av principal (protection en temps réel activée)
+- Antivirus Microsoft Defender en tant qu’av principal (protection en temps réel activée)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) activé (certaines règles le requièrent)
 - licence Windows 10 Entreprise E5 ou E3
 
@@ -119,7 +119,7 @@ Les règles ASR prennent en charge les variables d’environnement et les caract
 Cette section fournit des détails de configuration pour les méthodes de configuration suivantes :
 
 - [Intune](#intune)
-- [MEM](#mem)
+- [Mem](#mem)
 - [GPM](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [Stratégie de groupe](#group-policy)
@@ -153,7 +153,7 @@ Les procédures suivantes pour l’activation des règles ASR incluent des instr
 
 4. Sélectionnez **Suivant** dans les trois volets de configuration, puis **Sélectionnez Créer** si vous créez une stratégie ou **Enregistrer** si vous modifiez une stratégie existante.
 
-### <a name="mem"></a>MEM
+### <a name="mem"></a>Mem
 
 Vous pouvez utiliser Microsoft Endpoint Manager (MEM) OMA-URI pour configurer des règles ASR personnalisées. La procédure suivante utilise la règle [Bloquer l’abus de pilotes signés vulnérables exploités](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) pour l’exemple.
 

@@ -1,6 +1,6 @@
 ---
 title: Exclusions de fichiers et de dossiers contextuels
-description: Décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour Antivirus Windows Defender. Cette fonctionnalité vous permet d’être plus spécifique lorsque vous définissez dans quel contexte Antivirus Windows Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions
+description: Décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour l’antivirus Microsoft Defender sur Windows. Cette fonctionnalité vous permet d’être plus spécifique lorsque vous définissez dans quel contexte l’Antivirus Microsoft Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions
 keywords: Antivirus Microsoft Defender, processus, exclusion, fichiers, analyses
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,25 +9,26 @@ ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66992013"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439561"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Exclusions de fichiers et de dossiers contextuels
 
-Cet article/section décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuels pour Antivirus Windows Defender. Cette fonctionnalité vous permet d’être plus spécifique lorsque vous définissez dans quel contexte Antivirus Windows Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions.
+Cet article/section décrit la fonctionnalité d’exclusions de fichiers et de dossiers contextuelles pour l’antivirus Microsoft Defender sur Windows. Cette fonctionnalité vous permet d’être plus précis lorsque vous définissez dans quel contexte l’Antivirus Microsoft Defender ne doit pas analyser un fichier ou un dossier, en appliquant des restrictions.
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Les exclusions sont principalement destinées à atténuer les effets sur les performances. Ils sont passibles d’une réduction de la valeur de protection. Ces restrictions vous permettent de limiter cette réduction de protection en spécifiant les circonstances dans lesquelles l’exclusion doit s’appliquer. Les exclusions contextuelles ne conviennent pas pour traiter les faux positifs de manière fiable. Si vous rencontrez un faux positif, vous pouvez envoyer des fichiers à des fins d’analyse par le biais du portail [Microsoft 365 Defender](https://security.microsoft.com/) (abonnement requis) ou du site web [Renseignement de sécurité Microsoft](https://www.microsoft.com/wdsi/filesubmission). Pour une méthode de suppression temporaire, envisagez de créer un indicateur _d’autorisation_ personnalisé.
+Les exclusions sont principalement destinées à atténuer les effets sur les performances. Ils sont passibles d’une réduction de la valeur de protection. Ces restrictions vous permettent de limiter cette réduction de protection en spécifiant les circonstances dans lesquelles l’exclusion doit s’appliquer. Les exclusions contextuelles ne conviennent pas pour traiter les faux positifs de manière fiable. Si vous rencontrez un faux positif, vous pouvez envoyer des fichiers à des fins d’analyse par le biais du portail [Microsoft 365 Defender](https://security.microsoft.com/) (abonnement requis) ou du site web [Renseignement de sécurité Microsoft](https://www.microsoft.com/wdsi/filesubmission). Pour une méthode de suppression temporaire, envisagez de créer un indicateur _d’autorisation_ personnalisé dans [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/indicator-file).
 
 Vous pouvez appliquer quatre restrictions pour limiter l’applicabilité d’une exclusion :
 
@@ -47,12 +48,12 @@ Les restrictions sont généralement appliquées en ajoutant le type de restrict
 |:---|:---|:---|
 | Fichier/dossier  | PathType  | file <br> folder |
 | Type d’analyse | ScanType | Rapide <br> Plein |
-| Déclencheur d’analyse | ScanTrigger | Ondemand <br> OnAccess <br> BM |
+| Déclencheur d’analyse | ScanTrigger | Ondemand <br> OnAccess <br> Bm |
 | Processus | Processus | « <image_path> » |
 
 ### <a name="requirements"></a>Conditions requises
 
-Cette fonctionnalité nécessite Antivirus Windows Defender :
+Cette fonctionnalité nécessite l’antivirus Microsoft Defender :
 
 - Plateforme : **4.18.2205.7** ou version ultérieure
 - Moteur : **1.1.19300.2** ou version ultérieure
@@ -65,6 +66,10 @@ Cette fonctionnalité nécessite Antivirus Windows Defender :
 
 Gardez à l’esprit que _tous les_ **types** et **valeurs** respectent la casse.
 
+> [!NOTE]  
+> Les conditions à l’intérieur `{}` DOIVENT être remplies pour que la restriction corresponde. Par exemple, si vous spécifiez deux déclencheurs d’analyse, cela ne peut pas être vrai et l’exclusion ne s’applique pas. Pour spécifier deux restrictions du même type, créez deux exclusions distinctes.
+
+
 ### <a name="examples"></a>Exemples
 
 La chaîne suivante exclut « c:\documents\design.doc » uniquement s’il s’agit d’un fichier et uniquement dans les analyses d’accès :
@@ -73,11 +78,11 @@ La chaîne suivante exclut « c:\documents\design.doc » uniquement s’il s’a
 
 La chaîne suivante exclut « c:\documents\design.doc » uniquement si elle est analysée (sur accès) car elle est accessible par un processus portant le nom d’image « winword.exe » :
 
-`c:\documents\design.doc\:{Process:”winword.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe"}`
 
 Le chemin d’accès de l’image de processus peut contenir des caractères génériques, comme dans l’exemple suivant :
 
-`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
+`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### <a name="filefolder-restriction"></a>Restriction de fichier/dossier
 
@@ -85,7 +90,7 @@ Vous pouvez limiter les exclusions à appliquer uniquement si la cible est un fi
 
 #### <a name="filefolder-exclusions-default-behavior"></a>Comportement par défaut des exclusions de fichiers/dossiers
 
-Si vous ne spécifiez aucune autre option, le fichier/dossier est exclu de tous les types d’analyses _et_ l’exclusion s’applique, que la cible soit un fichier ou un dossier. Pour plus d’informations sur la personnalisation des exclusions pour qu’elle s’applique uniquement à un type d’analyse spécifique, consultez [restriction de type d’analyse](#scan-type-restriction).
+Si vous ne spécifiez aucune autre option, le fichier/dossier est exclu de tous les types d’analyses _, et_ l’exclusion s’applique, que la cible soit un fichier ou un dossier. Pour plus d’informations sur la personnalisation des exclusions pour qu’elle s’applique uniquement à un type d’analyse spécifique, consultez [restriction de type d’analyse](#scan-type-restriction).
 
 #### <a name="folders"></a>Folders
 
@@ -146,7 +151,7 @@ Cette restriction vous permet de définir qu’une exclusion ne doit s’appliqu
 
 Pour exclure un fichier ou un dossier uniquement lorsqu’un processus spécifique y accède, créez une exclusion de fichier ou de dossier normale et ajoutez le processus pour limiter l’exclusion aux éléments suivants :  
 
-`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
 
 ### <a name="how-to-configure"></a>Procédure de configuration
 

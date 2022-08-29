@@ -20,12 +20,12 @@ description: Découvrez comment SharePoint Online détecte les virus dans les fi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b04e9a1ca2e722a2f581441f44716c22be7a1635
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: e57865d0c8ec3993080c822438b7c4037ccab765
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059686"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450056"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protection antivirus intégrée dans SharePoint Online, OneDrive et Microsoft Teams
 
@@ -42,7 +42,7 @@ Microsoft 365 utilise un moteur de détection de virus commun pour analyser les 
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Que se passe-t-il si un fichier infecté est chargé sur SharePoint Online ?
 
-Le moteur de détection de virus Microsoft 365 s’exécute de façon asynchrone (indépendamment des chargements de fichiers) dans SharePoint Online. **Tous les fichiers ne sont pas analysés automatiquement**. Les heuristiques déterminent les fichiers à analyser. Lorsqu’un fichier contient un virus, le fichier est marqué. En avril 2018, nous avons supprimé la limite de 25 Mo pour les fichiers analysés.
+Le moteur de détection de virus Microsoft 365 analyse les fichiers de façon asynchrone (à un moment donné après le chargement). Si un fichier n’a pas encore été analysé par le processus de détection de virus asynchrone et qu’un utilisateur tente de télécharger le fichier à partir du navigateur ou de Teams, une analyse lors du téléchargement est déclenchée par SharePoint avant l’autorisation du téléchargement. **Tous les types de fichiers ne sont pas analysés automatiquement**. Les heuristiques déterminent les fichiers à analyser. Lorsqu’un fichier contient un virus, le fichier est marqué. 
 
 Voici ce qui se passe :
 

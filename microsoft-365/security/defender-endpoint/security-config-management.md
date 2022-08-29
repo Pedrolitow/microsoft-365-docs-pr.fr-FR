@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1db4f7397eb700d9cee48de27a9b757d8f6a9472
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573913"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388702"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager
 
@@ -73,7 +73,7 @@ Suivez les étapes suivantes pour vérifier que vos points de terminaison ont te
 Pour déconnecter les appareils qui ont été intégrés via Security Management pour Microsoft Defender pour point de terminaison, consultez [Les appareils hors-carte du service Microsoft Defender pour point de terminaison](offboard-machines.md).
 
 >[!NOTE]
->Le désintégrage [désactive la protection contre les falsifications](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) si elle est activée.
+>Le désintégrage [désactive la protection contre les falsifications](manage-tamper-protection-microsoft-365-defender.md) si elle est activée.
 
 ## <a name="troubleshooting-security-management"></a>Résolution des problèmes de gestion de la sécurité 
 Pour résoudre les problèmes de gestion de la sécurité pour Microsoft Defender pour point de terminaison problèmes d’inscription, consultez [Résolution des problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour point de terminaison](troubleshoot-security-config-mgt.md).

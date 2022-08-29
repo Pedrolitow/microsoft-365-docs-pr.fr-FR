@@ -1,8 +1,7 @@
 ---
-title: API de fichier d’arrêt et de mise en quarantaine
-description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour le point de terminaison. Consultez un exemple.
-keywords: api, api de graphique, api pris en charge, arrêter et mettre en quarantaine le fichier
-search.product: eADQiWindows 10XVcnh
+title: API arrêter et mettre en quarantaine un fichier
+description: Découvrez comment arrêter l’exécution d’un fichier sur un appareil et supprimer le fichier dans Microsoft Defender pour point de terminaison. Consultez un exemple.
+keywords: api, API de graphe, api prises en charge, fichier d’arrêt et de mise en quarantaine
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcaf08f73316c5c0482bb611427f5a8f19127c02
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3c259316952118b990b7a0509cbe99949dc73e1b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165833"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331338"
 ---
-# <a name="stop-and-quarantine-file-api"></a>API de fichier d’arrêt et de mise en quarantaine
+# <a name="stop-and-quarantine-file-api"></a>API arrêter et mettre en quarantaine un fichier
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -43,34 +42,34 @@ Arrêtez l’exécution d’un fichier sur un appareil et supprimez-le.
 
 ## <a name="limitations"></a>Limites
 
-1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+1. Les limites de débit pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 > [!IMPORTANT]
-> Vous pouvez uniquement prendre cette action si :
+> Vous ne pouvez effectuer cette action que si :
 >
-> - L’appareil sur qui vous exécutez l’action Windows 10, version 1703 ou ultérieure
-> - Le fichier n’appartient pas aux éditeurs tiers de confiance ou n’est pas signé par Microsoft
-> - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - L’appareil sur lequel vous effectuez l’action est en cours d’exécution Windows 10, version 1703 ou ultérieure, ou Windows 11
+> - Le fichier n’appartient pas à des éditeurs tiers approuvés ou n’est pas signé par Microsoft
+> - L’Antivirus Microsoft Defender doit au moins s’exécuter en mode passif. Pour plus d’informations, consultez [Compatibilité de l’antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est requise pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [Utiliser Microsoft Defender pour point de terminaison API](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application|Machine.StopAndQuarantine|« Arrêter et mettre en quarantaine »
-Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
-Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
-Déléguée (compte professionnel ou scolaire)|Machine.StopAndQuarantine|« Arrêter et mettre en quarantaine »
+Application|Machine.StopAndQuarantine|'Arrêter et mettre en quarantaine'
+Application|Machine.Read.All|'Lire tous les profils d’ordinateur'
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire)|Machine.StopAndQuarantine|'Arrêter et mettre en quarantaine'
 
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit disposer au moins de l’autorisation de rôle suivante : « Actions de correction actives » (voir [Créer et gérer des rôles](user-roles.md) pour plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres du groupe d’appareils (voir [Créer et gérer des groupes d’appareils](machine-groups.md) pour plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -82,20 +81,20 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
-Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
+Dans le corps de la demande, fournissez un objet JSON avec les paramètres suivants :
 
 Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-Sha1|String|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
+Sha1|Chaîne|Sha1 du fichier à arrêter et mettre en quarantaine sur l’appareil. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie le code de réponse 201 - Créé et [l’action de l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

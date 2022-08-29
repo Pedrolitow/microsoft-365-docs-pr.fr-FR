@@ -1,7 +1,7 @@
 ---
-title: Table AlertInfo dans le schéma de recherche avancé
-description: En savoir plus sur les événements de génération d’alertes dans la table AlertInfo du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, severity, category, MITRE, ATT&CK, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, MCAS et Microsoft Defender pour l’identité
+title: Table AlertInfo dans le schéma de chasse avancé
+description: En savoir plus sur les événements de génération d’alerte dans la table AlertInfo du schéma de chasse avancé
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, severity, category, MITRE, ATT&CK, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security, MCAS et Microsoft Defender pour Identity
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,24 +18,30 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0298b4f83ac748048215af4f5b1f8261a2a8c67c
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 20d9cc76f3da2efea31c0cf430022d8a83897583
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530786"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388658"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
+## <a name="get-access"></a>Obtenir l’accès
+Pour utiliser la chasse avancée ou d’autres fonctionnalités [de Microsoft 365 Defender](microsoft-365-defender.md), vous avez besoin d’un rôle approprié dans Azure Active Directory. [Découvrez les rôles et autorisations requis pour la chasse avancée](custom-roles.md).
 
-Le tableau du schéma de recherche avancée contient des informations sur les alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour les applications cloud et `AlertInfo` Microsoft Defender pour l’identité. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+En outre, votre accès aux données de point de terminaison est déterminé par les paramètres de contrôle d’accès en fonction du rôle (RBAC) dans Microsoft Defender pour point de terminaison. [Découvrez la gestion de l’accès à Microsoft 365 Defender](m365d-permissions.md).
+
+## <a name="alertinfo"></a>AlertInfo
+
+Le `AlertInfo` tableau du schéma de [repérage avancé](advanced-hunting-overview.md) contient des informations sur les alertes de Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender for Cloud Apps et Microsoft Defender pour Identity. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -48,7 +54,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Severity` | `string` | Indique l’impact potentiel (élevé, moyen ou faible) de l’indicateur de menace ou de la violation identifié(e) par l’alerte |
 | `ServiceSource` | `string` | Produit ou service qui a fourni les informations d’alerte |
 | `DetectionSource` | `string` | Technologie ou capteur de détection qui a identifié le composant ou l’activité notable |
-| `AttackTechniques` | `string` | MITRE ATT&techniques CK associées à l’activité ayant déclenché l’alerte |
+| `AttackTechniques` | `string` | MITRE ATT&techniques CK associées à l’activité qui a déclenché l’alerte |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
