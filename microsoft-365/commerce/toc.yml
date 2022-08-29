@@ -56,6 +56,8 @@
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Gérer les méthodes de paiement
       href: billing-and-payments/manage-payment-methods.md
+    - name: Gérer la facturation entre plusieurs locataires
+      href: billing-and-payments/manage-multi-tenant-billing.md
     - name: Modifier la fréquence de facturation
       href: billing-and-payments/change-payment-frequency.md
     - name: Gérer les notifications de facturation et les pièces jointes de facture
@@ -64,8 +66,6 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: Modifier vos adresses de facturation
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: À propos de la directive sur les services de paiement 2 et de l’authentification client renforcée
-      href: billing-and-payments/psd2.md
     - name: Demander un crédit pour la retenue à la source sur votre compte
       href: billing-and-payments/withholding-tax-credit-global.md
 - name: Comptes de facturation
