@@ -1,5 +1,5 @@
 ---
-title: Automatisations de simulation pour l’entraînement de simulation d’attaque
+title: Automatisations de simulation pour Exercice de simulation d'attaque
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,30 +12,30 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et charges utiles spécifiques qui sont lancées lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 1efc6faaae0040e37aafac4faa0a10228d76e766
-ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
+ms.openlocfilehash: 0b2a177947384d456b2e9a93f6252a98c879458f
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66609411"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67409133"
 ---
-# <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour l’entraînement de simulation d’attaque
+# <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour Exercice de simulation d'attaque
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à** [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-Pour obtenir des informations sur la formation à la simulation d’attaque, consultez [Prise en main de la formation de simulation d’attaque](attack-simulation-training-get-started.md).
+Pour obtenir des informations de prise en main sur Exercice de simulation d'attaque, consultez [Prise en main de Exercice de simulation d'attaque](attack-simulation-training-get-started.md).
 
 Pour créer une automatisation de simulation, procédez comme suit :
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com/>accédez à **l’onglet** **Automatisations** de simulation de l’apprentissage  \> de la **simulation** \> d’attaque & collaboration\>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com/>**Email & collaboration** \> **Exercice de simulation d'attaque** \> l’onglet  \> **Automations Simulation automations**.
 
    Pour accéder directement à l’onglet **Automations** où vous pouvez sélectionner **Automations de simulation**, utilisez <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. Dans **Les automatisations de simulation**, sélectionnez ![l’icône Créer une automatisation.](../../media/m365-cc-sc-create-icon.png) **Créez l’automatisation**.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automatisations de simulation dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Bouton Créer une simulation sous l’onglet Automatisations de simulation dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. L’Assistant Création s’ouvre. Le reste de cet article décrit les pages et les paramètres qu’elles contiennent.
 
@@ -60,6 +60,7 @@ Dans la page **Sélectionner les techniques d’ingénierie sociale** , sélecti
 - **Lien dans la pièce jointe** : type d’hybride de collecte des informations d’identification. Un attaquant insère une URL dans une pièce jointe. L’URL dans la pièce jointe suit la même technique que la collecte des informations d’identification.
 - **Lien vers des programmes malveillants** : exécute du code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouverture du fichier et aide l’attaquant à compromettre l’appareil de la cible.
 - **URL de lecteur :** l’URL malveillante dans le message dirige l’utilisateur vers un site web familier qui s’exécute en mode silencieux et/ou installe le code sur l’appareil de l’utilisateur.
+- **Octroi de consentement OAuth** : l’URL malveillante demande aux utilisateurs d’accorder des autorisations aux données pour une Azure Application malveillante.
 
 Si vous cliquez sur le lien **Afficher les détails** dans la description, un menu volant de détails s’ouvre qui décrit la technique et les étapes de simulation qui résultent de la technique.
 
@@ -96,7 +97,6 @@ Dans l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Dans** 
 Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
 - **Complexité** : calculée en fonction du nombre d’indicateurs dans la charge utile qui indiquent une attaque possible (fautes d’orthographe, urgence, etc.). D’autres indicateurs sont plus faciles à identifier en tant qu’attaque et indiquent une complexité plus faible. Les valeurs disponibles sont :
-
   - **High**
   - **Medium**
   - **Faible**
@@ -115,17 +115,20 @@ Si vous cliquez sur **Filtrer**, les filtres suivants sont disponibles :
 
 - **Controversé** : Les valeurs disponibles sont **Oui** ou **Non**.
 
-Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou **Effacer les filtres**.
+Lorsque vous avez terminé de configurer les filtres, cliquez sur **Appliquer**, **Annuler** ou ![Effacer les filtres icône](../../media/m365-cc-sc-clear-filters-icon.png) **Effacer les filtres**.
 
 Si vous sélectionnez une charge utile dans la liste en cliquant n’importe où dans la ligne autre que la case à cocher, les détails sur la charge utile sont affichés dans un menu volant :
 
 - L’onglet **Charge utile** contient un exemple et d’autres détails sur la charge utile.
-- L’onglet **Page de connexion** est décrit dans la section suivante.
+- L’onglet **Page de connexion** est disponible uniquement dans **Credential Harvest** ou Link dans les charges utiles de **pièce jointe** et est décrit dans la section suivante.
 - **L’onglet Simulations lancé** contient le **nom** de la simulation, le **taux de clics**, le **taux compromis** et **l’action**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="L’onglet Charge utile dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="L’onglet Charge utile dans le menu volant détails de la charge utile dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
 ### <a name="login-page"></a>Page de connexion
+
+> [!NOTE]
+> L’onglet **Page de connexion** est disponible uniquement dans **la collecte des informations d’identification** ou **lier dans** les charges utiles de pièce jointe.
 
 Sélectionnez la charge utile dans la liste en cliquant n’importe où dans la ligne autre que la case à cocher pour ouvrir le menu volant des détails.
 
@@ -133,13 +136,13 @@ L’onglet **Page de connexion** dans le menu volant détails de la charge utile
 
 Pour afficher la page de connexion complète, utilisez les liens **Page 1** et **Page 2** en bas de la page pour les pages de connexion à deux pages.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Onglet Page de connexion dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Onglet Page de connexion dans le menu volant détails de la charge utile dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
 
 Pour modifier la page de connexion utilisée dans la charge utile, cliquez sur l’icône ![Modifier la page de connexion.](../../media/m365-cc-sc-edit-icon.png) **Modifier la page de connexion**.
 
 Dans le menu volant **Sélectionner la page de connexion** qui s’affiche, les informations suivantes s’affichent pour chaque page de connexion :
 
-- **Nom**
+- **Name**
 - **Language**
 - **Source** : pour les pages de connexion intégrées, la valeur est **Global**. Pour les pages de connexion personnalisées, la valeur est **Locataire**.
 - **État** : **Prêt** ou **Brouillon**.
@@ -151,15 +154,37 @@ Pour rechercher une page de connexion dans la liste, utilisez l’icône ![Reche
 
 Cliquez sur l’icône ![Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtrez** pour filtrer les pages de connexion par **source** ou **langue**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Page Sélectionner la connexion dans l’onglet Page de connexion dans le menu volant détails de la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Page Sélectionner la connexion dans l’onglet Page de connexion dans le menu volant détails de la charge utile dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
-Pour créer une page de connexion, cliquez sur [Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant Création d’une page de connexion de l’utilisateur final. Les étapes sont les mêmes que dans les **pages de connexion** de l’onglet **De la bibliothèque de contenu simulé** d’entraînement \> de **simulation d’attaque**. Pour obtenir des instructions, consultez [Créer des pages de connexion](attack-simulation-training-login-pages.md#create-login-pages).
+Pour créer une page de connexion, cliquez sur [Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en un** pour démarrer l’Assistant Création d’une page de connexion de l’utilisateur final. Les étapes sont les mêmes que dans les **pages de connexion** sous **Exercice de simulation d'attaque’onglet** \> **Bibliothèque de contenu simulé**. Pour obtenir des instructions, consultez [Créer des pages de connexion](attack-simulation-training-login-pages.md#create-login-pages).
 
 De retour sur la **page Sélectionner la connexion**, vérifiez que la nouvelle page de connexion que vous avez créée est sélectionnée, puis cliquez sur **Enregistrer**.
 
 Dans le menu volant détails de la charge utile, cliquez sur [l’icône Fermer.](../../media/m365-cc-sc-close-icon.png) **Fermez**.
 
 Lorsque vous avez terminé sur la **page Sélectionner une charge utile et connexion**, cliquez sur **Suivant**.
+
+## <a name="configure-oauth-payload"></a>Configurer la charge utile OAuth
+
+> [!NOTE]
+> Cette page est disponible uniquement si vous avez sélectionné **l’octroi de consentement OAuth** dans la page [Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques) . Sinon, vous accédez à la page **Utilisateurs cibles** .
+
+Dans la page **Configurer la charge utile OAuth** , configurez les paramètres suivants :
+
+- **Nom de l'application**
+
+- **Logo de l’application** : cliquez sur **Parcourir** pour sélectionner un fichier .png, .jpeg ou .gif à utiliser. Pour supprimer un fichier après l’avoir sélectionné, cliquez sur **Supprimer**.
+
+- **Sélectionner l’étendue de l’application** : choisissez l’une des valeurs suivantes :
+  - **Accéder en lecture aux calendriers utilisateur**
+  - **Accéder en lecture aux contacts utilisateur**
+  - **Accéder en lecture aux courriers électroniques utilisateur**
+  - **Lire tous les messages de conversations.**
+  - **Accéder en lecture à tous les fichiers auxquels cet utilisateur peut accéder**
+  - **Accéder en lecture et en écriture aux courriers électroniques utilisateur**
+  - **Envoyer un courrier électronique en tant qu’utilisateur**
+
+Lorsque vous avez terminé sur la page **Configurer la charge utile OAuth** , cliquez sur **Suivant**.
 
 ## <a name="target-users"></a>Utilisateurs ciblés
 
@@ -168,7 +193,7 @@ Dans la page **Utilisateurs cibles** , sélectionnez qui recevra la simulation. 
 - **Incluez tous les utilisateurs de votre organisation** : les utilisateurs concernés sont affichés dans les listes de 10. Vous pouvez utiliser les boutons **Suivant** et **Précédent** directement sous la liste des utilisateurs pour faire défiler la liste. Vous pouvez également utiliser l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Icône De recherche** sur la page pour rechercher les utilisateurs concernés.
 - **Inclure uniquement des utilisateurs et des groupes spécifiques** : choisissez l’une des options suivantes :
   - ![Icône Ajouter des utilisateurs.](../../media/m365-cc-sc-create-icon.png) **Ajouter des utilisateurs** : dans le menu volant **Ajouter des utilisateurs** qui s’affiche, vous pouvez trouver des utilisateurs et des groupes en fonction des critères suivants :
-    - **Utilisateurs ou groupes** : dans l’icône ![Rechercher des utilisateurs et des groupes.](../../media/m365-cc-sc-search-icon.png) **Recherchez des utilisateurs et des groupes** , vous pouvez taper une partie du **nom** ou de **l’adresse e-mail** de l’utilisateur ou du groupe, puis appuyer sur Entrée. Vous pouvez sélectionner une partie ou la totalité des résultats. Lorsque vous avez terminé, cliquez sur **Ajouter des utilisateurs x**.
+    - **Utilisateurs ou groupes** : dans l’icône ![Rechercher des utilisateurs et des groupes.](../../media/m365-cc-sc-search-icon.png) **Recherchez des utilisateurs et des groupes**, vous pouvez taper une partie du **nom** ou **de l’adresse Email** de l’utilisateur ou du groupe, puis appuyer sur Entrée. Vous pouvez sélectionner une partie ou la totalité des résultats. Lorsque vous avez terminé, cliquez sur **Ajouter des utilisateurs x**.
 
       > [!NOTE]
       > Cliquez sur le bouton **Ajouter des filtres** pour revenir aux **options Filtrer les utilisateurs par catégories** pour effacer tous les utilisateurs ou groupes que vous avez sélectionnés dans les résultats de la recherche.
@@ -187,7 +212,7 @@ Dans la page **Utilisateurs cibles** , sélectionnez qui recevra la simulation. 
         - Sélectionner **tout le titre**
         - Sélectionnez les valeurs de titre existantes.
 
-      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Filtrage des utilisateurs sur la page Utilisateurs cibles dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Filtrage des utilisateurs sur la page Utilisateurs cibles dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       Une fois que vous avez identifié vos critères, les utilisateurs affectés s’affichent dans la section **Liste** d’utilisateurs qui s’affiche, où vous pouvez sélectionner certains destinataires ou tous les destinataires découverts.
 
@@ -225,7 +250,7 @@ Dans la page **Affecter une formation** , vous pouvez affecter des formations po
       - **7 jours après la fin de la simulation**
   - **Aucune formation** : si vous sélectionnez cette valeur, la seule option sur la page est le bouton **Suivant** qui vous dirige vers la [**page d’accueil**](#landing-page) .
 
-:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Option permettant d’ajouter l’entraînement recommandé sur la page Affectation de formation dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Option permettant d’ajouter la formation recommandée sur la page Affectation de formation dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>Affectation de formation
 
@@ -262,9 +287,9 @@ Pour chaque formation de la liste, sélectionnez une ou plusieurs des valeurs su
 - **Charge utile cliqué**
 - **Compromis**
 
-Si vous ne souhaitez pas utiliser une formation affichée, cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**.
+Si vous ne souhaitez pas utiliser une formation affichée, cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
 
-:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Page Affectation de formation dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-training-assignment.png":::
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Page Affectation de formation dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -297,20 +322,32 @@ Dans la **page d’accueil** , vous configurez la page web vers laquelle l’uti
 
     Vous devez configurer les paramètres supplémentaires suivants sur la **page d’accueil** :
 
-    - **Indicateurs de charge utile** : ce paramètre est disponible uniquement si les deux conditions suivantes sont remplies :
-      - Vous avez précédemment sélectionné **credential harvest**, **Link in attachment** ou **Drive-by URL** dans la page [Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques) .
-      - Après avoir ajouté la **balise dynamique** nommée **Insérer du contenu de messagerie** dans le contenu de la page.
+    - **Ajouter des indicateurs de charge utile à l’e-mail** : ce paramètre est disponible pour être sélectionné uniquement si les deux instructions suivantes sont vraies :
+      - Vous avez sélectionné **La récolte des informations d’identification**, **lier en pièce jointe**, **URL drive-by** ou **octroi de consentement OAuth** dans la page [Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques) .
+      - Vous avez ajouté la **balise dynamique** nommée **Insérer du contenu de charge utile** dans le contenu de la page d’accueil de cette page.
 
-    - Contenu de la page : deux onglets sont disponibles :
+    - Contenu de la page d’accueil : deux onglets sont disponibles :
 
       - **Texte** : un éditeur de texte enrichi est disponible pour créer votre page d’accueil. Outre les paramètres de police et de mise en forme classiques, les paramètres suivants sont disponibles :
         - **Balise dynamique** : sélectionnez parmi les balises suivantes :
-          - **Insérer un nom**
-          - **Insérer le nom de l’expéditeur**
-          - **Insérer un e-mail d’expéditeur**
-          - **Insérer un objet d’e-mail**
-          - **Insérer du contenu d’e-mail**
-          - **Insérer une date**
+
+          |Nom de balise|Valeur de balise|
+          |---|---|
+          |**Insérer un nom d’utilisateur**|`${userName}`|
+          |**Insérer un prénom**|`${firstName}`|
+          |**Insérer le nom**|`${lastName}`|
+          |**Insérer un UPN**|`${upn}`|
+          |**Insérer Email**|`${emailAddress}`|
+          |**Insérer un service**|`${department}`|
+          |**Gestionnaire d’insertion**|`${manager}`|
+          |**Insérer un téléphone mobile**|`${mobilePhone}`|
+          |**Insérer une ville**|`${city}`|
+          |**Insérer le nom de l’expéditeur**|`${FromName}`|
+          |**Insérer un e-mail d’expéditeur**|`${FromEmail}`|
+          |**Insérer un sujet de charge utile**|`${EmailSubject}`|
+          |**Insérer du contenu de charge utile**|`${EmailContent}`|
+          |**Insérer une date**|`${date|MM/dd/yyyy|offset}`|
+
         - **Utiliser par défaut** : sélectionnez l’un des 5 modèles de page d’accueil disponibles pour commencer. Vous pouvez modifier le texte et la disposition dans la zone d’édition. Pour réinitialiser la page d’accueil au texte et à la disposition par défaut du modèle, cliquez sur **Rétablir la valeur par défaut**.
         - **Lien d’entraînement** : dans la boîte de dialogue **Nom de l’URL de formation** qui s’affiche, entrez un titre de lien pour le lien d’entraînement, puis cliquez sur **Confirmer** pour ajouter le lien à la page d’accueil.
       - **Code** : vous pouvez afficher et modifier le code HTML directement.
@@ -376,7 +413,7 @@ Cette page affiche les notifications suivantes et leurs langues configurées :
 - **Notification d’affectation de formation par défaut Microsoft**
 - Toutes les notifications d’affectation de formation personnalisées que vous avez créées précédemment.
 
-  Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification d’affectation d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Les notifications d’affectation de formation personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
+  Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** de Exercice de simulation d'attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification d’affectation d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Les notifications d’affectation de formation personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour Exercice de simulation d'attaque](attack-simulation-training-end-user-notifications.md).
 
 Vous pouvez sélectionner une notification d’affectation de formation existante ou créer une notification à utiliser :
 
@@ -411,7 +448,7 @@ La page de **notification de rappel** de formation n’est disponible que si vou
   - **Notification de rappel d’entraînement par défaut de Microsoft**
   - Toutes les notifications de rappel d’entraînement personnalisées que vous avez créées précédemment.
 
-    Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification de rappel d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de rappel d’entraînement personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
+    Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** de Exercice de simulation d'attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification de rappel d’entraînement par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de rappel d’entraînement personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour Exercice de simulation d'attaque](attack-simulation-training-end-user-notifications.md).
 
   Vous pouvez sélectionner une notification de rappel de formation existante ou créer une notification à utiliser :
 
@@ -448,7 +485,7 @@ La page **de notification de renforcement positif** est disponible uniquement si
   - **Notification de renforcement positif par défaut de Microsoft**
   - Toutes les notifications de renforcement positif personnalisées que vous avez créées précédemment.
 
-    Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** dans l’entraînement de simulation d’attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification de renforcement positif par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de renforcement positif personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour l’entraînement de simulation d’attaque](attack-simulation-training-end-user-notifications.md).
+    Ces notifications sont également disponibles dans **les notifications de l’utilisateur final** sous l’onglet **Bibliothèque de contenu Simulation** de Exercice de simulation d'attaque à l’adresse <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. La **notification de renforcement positif par défaut de Microsoft** est disponible sous l’onglet **Notifications globales**. Des notifications de renforcement positif personnalisées sont disponibles sous l’onglet **Notifications du locataire**. Pour plus d’informations, consultez [les notifications de l’utilisateur final pour Exercice de simulation d'attaque](attack-simulation-training-end-user-notifications.md).
 
   Vous pouvez sélectionner une notification de renforcement positif existante ou créer une notification à utiliser :
 
@@ -515,10 +552,12 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 Dans la page **Détails du lancement** , configurez les paramètres supplémentaires suivants pour l’automatisation :
 
 - **Utilisez des charges utiles uniques dans les simulations au sein d’une automatisation** : par défaut, ce paramètre n’est pas sélectionné.
+- **Ciblez tous les utilisateurs sélectionnés à chaque exécution de simulation** : par défaut, ce paramètre n’est pas sélectionné.
 - **Cibler les récidivistes** : par défaut, ce paramètre n’est pas sélectionné. Si vous le sélectionnez, configurez le paramètre suivant qui s’affiche :
   - **Entrez le nombre maximal de fois qu’un utilisateur peut être ciblé dans cette automatisation** : entrez une valeur comprise entre 1 et 10.
 - **Envoyer un e-mail de simulation en fonction du paramètre de fuseau horaire actuel de l’utilisateur à partir de l’application web Outlook** : par défaut, ce paramètre n’est pas sélectionné.
-- **Afficher la page de collecte des données interstitielles de la technique drive-by** : ce paramètre n’est disponible que si vous avez sélectionné **l’URL Drive-by** dans la page **[Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques)** . Par défaut, le paramètre est activé (![bouton bascule sur l’icône).](../../media/scc-toggle-on.png)
+
+- **Afficher la page de collecte des données interstitielles de la technique drive-by** : ce paramètre n’est disponible que si vous avez sélectionné **l’URL Drive-by** dans la page **[Sélectionner des techniques d’ingénierie sociale](#select-one-or-more-social-engineering-techniques)** .  Vous pouvez afficher la superposition qui s’affiche pour les attaques par technique d’URL drive-by. Par défaut, le paramètre est activé sur ![l’icône Bascule.](../../media/scc-toggle-on.png) Pour masquer la superposition et accéder directement à la page d’accueil, désactivez ![ce paramètre pour désactiver l’icône.](../../media/scc-toggle-off.png)
 
 ## <a name="review-simulation-automation"></a>Passer en revue l’automatisation de simulation
 

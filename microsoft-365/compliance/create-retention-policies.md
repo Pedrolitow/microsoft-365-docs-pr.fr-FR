@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
-ms.translationtype: HT
+ms.openlocfilehash: a6b8e346547d246322593c67a07a0eaeb9f13c18
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300955"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336307"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -76,7 +76,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 > [!NOTE]
 > Les stratégies de rétention prennent en charge [les canaux partagés](/MicrosoftTeams/shared-channels). Lorsque vous configurez les paramètres de rétention pour l'emplacement **des messages du canal Teams**, si une équipe a des canaux partagés, ils héritent des paramètres de rétention de leur équipe parente.
 
-1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez Stratégies de rétention **Microsoft 365** >  de **gestion** >  du cycle de vie des données **.**
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration **Créer une stratégie de rétention** et nommez votre nouvelle stratégie de rétention.
 
@@ -132,7 +132,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
-1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez Stratégies de rétention **Microsoft 365** >  de **gestion** >  du cycle de vie des données **.**
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour créer une stratégie de rétention.
 
@@ -176,7 +176,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 - Groupes Microsoft 365
 - Skype Entreprise
 
-1. Dans le [Portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez **Gestion du cycle de vie des données** > **Stratégies de rétention**.
+1. Dans le [portail de conformité Microsoft Purview](https://compliance.microsoft.com/), sélectionnez Stratégies de rétention **Microsoft 365** >  de **gestion** >  du cycle de vie des données **.**
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration **Créer une stratégie de rétention** et nommez votre nouvelle stratégie de rétention.
 

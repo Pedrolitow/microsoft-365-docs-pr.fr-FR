@@ -1,8 +1,9 @@
 ---
 title: Emplacements des données Microsoft 365
-ms.author: deanw
-author: dmwmsft
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 07/13/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,110 +18,142 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 374e8c92a4694b81b6b6eb4cff52e6f2024afe93
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: HT
+ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
+ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167033"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67393107"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
 Les tableaux ci-dessous indiquent le lieu de stockage de données client au repos pour les services Microsoft 365 de tous les emplacements cloud généraux de Microsoft. Développez l’emplacement de votre pays d’adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
 
-Si votre entreprise se situe au sein de l’Union européenne, consultez [Emplacements des données pour l’Union européenne](EU-data-storage-locations.md) pour plus d’informations. 
+Si votre entreprise se situe au sein de l’Union européenne, consultez [Emplacements des données pour l’Union européenne](EU-data-storage-locations.md) pour plus d’informations.
 
-Les clients doivent afficher les informations d’emplacement **des données spécifiques au client dans votre Centre d'** > **administration Microsoft 365 dans Paramètres de l’organisation Emplacement des données de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**l’onglet** Profil de</a>  >  **l’organisation.** Si vous avez [demandé le déplacement vers un nouvel emplacement géographique](request-your-data-move.md), les informations de localisation des données dans le Centre d’administration Microsoft 365 peuvent afficher votre nouvel emplacement géographique uniquement, même lorsque des données peuvent être stockées temporairement dans votre précédente localisation géographique au cours de la transition. 
+Les clients doivent afficher les informations d’emplacement **des données spécifiques au client dans votre Centre d'** > **administration Microsoft 365 dans Paramètres de l’organisation Emplacement des données de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**l’onglet** Profil de</a>  >  **l’organisation.** Si vous avez [demandé le déplacement vers un nouvel emplacement géographique](request-your-data-move.md), les informations de localisation des données dans le Centre d’administration Microsoft 365 peuvent afficher votre nouvel emplacement géographique uniquement, même lorsque des données peuvent être stockées temporairement dans votre précédente localisation géographique au cours de la transition.
 
 Les nouveaux locataires Microsoft 365 sont configurés géographiquement par défaut en fonction du pays de la transaction associée à l'abonnement initial de ce client.
 
-Recherchez des informations sur les engagements contractuels relatifs à l’emplacement de stockage des données client au repos dans les [Conditions d'utilisation des services en ligne Microsoft (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
+Recherchez des informations sur les engagements contractuels pour l’emplacement de stockage des données client au repos dans l’[Autorité de protection des données (DPA) et produits Microsoft](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
-Pour les emplacements de données Azure Active Directory, visitez [Mappage de données Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+Pour connaître l'emplacement des données Azure Active Directory, veuillez consulter la section [Résidences de données dans Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
-Si l'adresse de facturation du client est en dehors de l'Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client au repos partout en Europe ou en Amérique du Nord.  Si l'adresse de facturation du client est en Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client  en tout lieu au sein de l’Union européenne.
-
-
-
+Si l'adresse de facturation du client est en dehors de l'Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client au repos partout en Europe ou en Amérique du Nord.  Si l'adresse de facturation du client est en Europe et que le client a un abonnement à Office 365 Éducation, alors nonobstant la section « Localisation des données client au repos pour les services en ligne de base » du fichier OST, Microsoft peut fournir le locataire d'Office 365 du client, transférer les données client et stocker les données client en tout lieu au sein de l’Union européenne.
 
 ## <a name="faq"></a>FAQ
 
 ### <a name="how-does-microsoft-define-data"></a>Comment Microsoft définit-il des données ?
+<details><summary>Cliquez pour développer</summary>
 
-Consultez nos [définitions des différents types de données](https://go.microsoft.com/fwlink/p/?linkid=864390) dans le Centre de gestion de la confidentialité Microsoft. Dans les [Conditions d'utilisation des services en ligne Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403), Microsoft s'engage contractuellement en ce qui concerne vos données et celles du client. Les données de base client désignent les données client destinées à être stockées au repos dans votre région uniquement, conformément aux [Conditions d'utilisation des services en ligne Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403).
+Consultez nos [définitions des différents types de données](https://go.microsoft.com/fwlink/p/?linkid=864390) dans le Centre de gestion de la confidentialité Microsoft. Dans le [Conditions d’utilisation de sécurité & confidentialité](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft prend des engagements contractuels concernant les données client/vos données. Les données de base client désignent les données client destinées à être stockées au repos dans votre région uniquement, conformément aux [Conditions d'utilisation de sécurité & confidentialité](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
+
+</details>
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>Où se trouvent les adresses précises des centres de données ?
 
+<details><summary>Cliquez pour développer</summary>
+
 Microsoft ne dévoile pas les adresses précises de ses centres de données. Cette stratégie est mise en place pour contribuer à la sécurisation de nos centres de données.  Toutefois, nous répertorions bel et bien les emplacements urbains. Pour plus d’informations, voir [Emplacements des centres de données](o365-data-locations.md#data-center-locations).
 
+</details>
+
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>L’emplacement de vos données client a-t-il une influence directe sur l’expérience de vos utilisateurs finaux ?
+<details><summary>Cliquez pour développer</summary>
 
 Les performances de Microsoft 365 ne sont pas seulement proportionnelles à l'éloignement d’un utilisateur par rapport aux emplacements des centres de données. Les investissements constants de Microsoft dans son réseau et son infrastructure cloud au niveau mondial, et l’architecture des services Microsoft 365 permettent aux utilisateurs de bénéficier d’une expérience unique et constante, indépendamment du lieu de stockage des données client au repos. Si vos utilisateurs rencontrent des problèmes de performance, il est conseillé de les résoudre de manière approfondie. Microsoft a publié des conseils aux clients Microsoft 365 pour planifier et optimiser les performances des utilisateurs finaux sur le [site web du Support Office](./network-planning-and-performance.md).
 
-### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Comment Microsoft m’aide-t-il à me conformer aux réglementations nationales, locales et sectorielles ?
+</details>
 
-Pour vous aider à vous conformer aux exigences nationales, locales et sectorielles en matière de recueil et d’utilisation des données de personnes, Microsoft 365 propose la série d'offres de conformité la plus complète parmi les prestataires mondiaux de productivité sur le cloud. Veuillez consulter [nos offres de conformité](/compliance/regulatory/offering-home) et de plus amples détails dans la section [Conformité Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) du Centre de gestion de la confidentialité Microsoft. De plus, certaines offres Microsoft 365 proposent des solutions de conformité supplémentaires pour faciliter la gestion de vos données, respecter les exigences légales et réglementaires et suivre les actions entreprises sur vos données.
+### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Comment Microsoft m’aide-t-il à me conformer aux réglementations nationales, locales et sectorielles ?
+<details><summary>Cliquez pour développer</summary>
+
+Pour vous aider à vous conformer aux exigences nationales, locales et sectorielles en matière de recueil et d’utilisation des données de personnes, Microsoft 365 propose la série d'offres de conformité la plus complète parmi les prestataires mondiaux de productivité sur le cloud. Veuillez consulter [nos offres de conformité](/compliance/regulatory/offering-home) et de plus amples détails dans la section [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) du Centre de gestion de la confidentialité. De plus, certaines offres Microsoft 365 proposent des solutions de conformité supplémentaires pour faciliter la gestion de vos données, respecter les exigences légales et réglementaires et suivre les actions entreprises sur vos données.
+
+</details>
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Qui peut accéder à vos données et selon quelles règles ?
+<details><summary>Cliquez pour développer</summary>
 
  Microsoft met en œuvre des mesures strictes visant à protéger vos données client contre toute tentative d’accès inappropriée ou toute utilisation par des personnes non autorisées. Il s’agit notamment de restreindre l’accès par le personnel et les sous-traitants de Microsoft, et de scrupuleusement définir les conditions requises pour répondre aux demandes de gouvernements en matière de données client. Vous avez toutefois accès aux données de vos propres clients en tout temps et pour quelque raison que ce soit. D'autres informations sont disponibles dans le [Centre de gestion de la confidentialité Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
 
+</details>
+
 ### <a name="does-microsoft-access-your-data"></a>Microsoft a-t-il accès à vos données ?
+<details><summary>Cliquez pour développer</summary>
 
 Microsoft automatise la plupart des opérations Microsoft 365 tout en limitant son propre accès aux données client. Ceci permet de gérer Microsoft 365 à grande échelle et de remédier aux risques de menaces internes vis-à-vis des données client. Par défaut, les ingénieurs Microsoft ne disposent pas de privilège administratif permanent ni d'accès permanent aux données du client dans Microsoft 365. Un ingénieur Microsoft peut disposer d’un accès limité et journalisé aux données client pendant une certaine durée, mais uniquement lorsque des opérations de service habituelles l'exigent et avec l'accord d'un membre de l'équipe de direction de Microsoft (et pour des clients disposant d’une licence pour la fonctionnalité Customer Lockbox par client).
 
+</details>
+
 ### <a name="how-does-microsoft-secure-your-data"></a>Comment Microsoft protège-t-il vos données ?
+<details><summary>Cliquez pour développer</summary>
 
 Microsoft dispose de solides stratégies, contrôles et systèmes intégrés dans Microsoft 365 vous permettant de garantir la sécurité de vos informations. Pour plus d’informations, consultez la [rubrique sécurité Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) dans le Centre de gestion de la confidentialité Microsoft.
 
+</details>
+
 ### <a name="does-microsoft-365-encrypt-your-data"></a>Est-ce que Microsoft 365 chiffrer vos données ?
+<details><summary>Cliquez pour développer</summary>
 
 Microsoft 365 utilise des technologies côté service qui chiffrent les données client au repos et en transit. Pour les données client au repos, Microsoft 365 utilise le chiffrement au niveau du volume et au niveau des fichiers. Pour les données client en transit, Microsoft 365 utilise de nombreuses technologies de chiffrement pour la communication des centres de données, et entre les clients et les serveurs, tels que les protocoles TLS (Transport Layer Security) et IPsec (Internet Protocol Security). Microsoft 365 intègre également des fonctionnalités de chiffrement gérées par le client.
 
+</details>
+
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Où puis-je trouver des informations en matière de résidence des données pour Microsoft Azure ?
+<details><summary>Cliquez pour développer</summary>
 
 Consultez la page [Produits disponibles par région](https://go.microsoft.com/fwlink/p/?linkid=2093451) pour trouver des informations sur la résidence des données Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Quelles sont les fonctionnalités multigéographiques dans Microsoft 365 ?
+</details>
 
-[Multigéographie](https://go.microsoft.com/fwlink/p/?linkid=872033) permet aux clients d’allouer des données client principales au repos de nos emplacements disponibles dans le Cloud Microsoft 365.   
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Quelles sont les fonctionnalités multigéographiques dans Microsoft 365 ?
+<details><summary>Cliquez pour développer</summary>
+
+[Multigéographie](https://go.microsoft.com/fwlink/p/?linkid=872033) permet aux clients d’allouer des données client principales au repos de nos emplacements disponibles dans le Cloud Microsoft 365.
+
+</details>  
 
 ### <a name="what-services-support-multi-geo"></a>Quels services prennent en charge les fonctionnalités multigéographiques ?
+<details><summary>Cliquez pour développer</summary>
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) est disponible pour Exchange Online, OneDrive for Entreprise, SharePoint Online et Teams.
 
+</details>
+
 ### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>Pourquoi est-ce que je vois mes demandes de service Microsoft 365 pour mes données au repos se connecter à des serveurs dans des pays en dehors de ma région ?
+<details><summary>Cliquez pour développer</summary>
 
 À l'occasion, une demande client peut être traitée par des serveurs situés dans une région différente de celle où vos données sont stockées au repos. Cela peut se produire lorsque les décisions de routage réseau choisissent un serveur différent pour le traitement de la demande, mais dans ces cas, vos données ne sont pas déplacées vers un nouvel emplacement de repos.
 
+</details>
+
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Quelles sont les exceptions pour les emplacements de données Intune ?
+<details><summary>Cliquez pour développer</summary>
 
 Microsoft ne stocke pas les données clientes Intune au repos en dehors de la zone géographique indiquée. sauf si :
 
 - Il est nécessaire pour Microsoft de fournir un support technique, de résoudre les problèmes de service ou de respecter les exigences légales.
 - Le client configure un compte afin d’autoriser le stockage des données client, y compris en utilisant les éléments suivants :
-
   - Fonctionnalités conçues pour fonctionner globalement, telles que le réseau de distribution de contenu (CDN), qui fournit un service de mise en cache global et qui stocke les données client à des emplacements géographiques dans le monde entier.
-
   - Azure Active Directory (Azure AD), qui peut stocker les données d’annuaire de façon globale. Cela ne s’applique pas aux déploiements Azure AD aux États-Unis (où les données Azure AD sont stockées uniquement aux États-Unis) ou en Europe (où les données Azure AD sont stockées en Europe ou aux États-Unis).
-   
   - Version d’évaluation, bêta ou autres services de mise à jour, qui stockent généralement les données client aux États-Unis, mais peuvent les stocker dans le monde entier.
 
-Quoi qu'il en soit, Microsoft ne contrôle ni ne limite les données géographiques à partir desquelles les clients ou leurs utilisateurs finaux peuvent accéder aux données des clients. De même, lorsque les données client d'autres services sont ensuite intégrées dans Intune, les données client d'origine continueront d'être stockées sous réserve des propres engagements géographiques de l'autre service (le cas échéant) ; seule la copie des données client intégrées dans Intune sera stockée dans le Geo indiqué pour Intune.  
+Quoi qu’il en soit, Microsoft ne contrôle pas ou ne limite pas la géolocalisation à partir de laquelle les clients ou les utilisateurs finaux peuvent accéder aux données des clients. De même, lorsque les données des clients d'autres services sont ensuite intégrées dans Intune, les données des clients d'origine continueront d'être stockées sous réserve des engagements Geo propres à l'autre service (le cas échéant) ; seule la copie des données des clients intégrée dans Intune sera stockée dans le Geo indiqué pour Intune.
+
+</details>
 
 ### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Quelles sont les considérations relatives aux emplacements Microsoft Viva données ?
+<details><summary>Cliquez pour développer</summary>
 
 - Viva Connections
-
-  - Les données du tableau de bord, des ressources et de l’application de bureau sont stockées dans SharePoint Online. 
-  
-  - Le flux inclut le contenu de SharePoint Online (Actualités), Stream (stocké au repos dans SharePoint Online) et Yammer (stocké au repos dans Yammer).  
-  
+  - Les données du tableau de bord, des ressources et de l’application de bureau sont stockées dans SharePoint Online.
+  - Le flux inclut le contenu de SharePoint Online (Actualités), Stream (stocké au repos dans SharePoint Online) et Yammer (stocké au repos dans Yammer).
 - Viva Insights
-
   - La résidence des données pour l’application Personnelle est basée sur l’emplacement de la boîte aux lettres de l’utilisateur.
-  
-  - La région de données Responsable/Responsable est déterminée par la région principale du client, et non par les utilisateurs individuels.
+  - La région de données pour dirigeants/responsables et avancés est déterminée par la région principale du client, et non par des utilisateurs individuels.
+
+</details>
 
 ## <a name="data-center-locations"></a>Emplacements des centres de données
 
@@ -128,13 +161,13 @@ La répartition ci-dessous précise l’emplacement des données pour divers ser
 
 ### <a name="data-center-geographies"></a>Régions géographiques des centres de données
 
-Les zones géographiques mondiales suivantes peuvent stocker des données au repos. Les emplacements de stockage des données client sont sujets à changement. 
+Les zones géographiques régionales suivantes peuvent stocker des données au repos. Les emplacements de stockage des données client sont sujets à changement.
 
-| Zones géographiques mondiales | Emplacements pouvant stocker des données client |
+| Zones géographiques régionales | Emplacements pouvant stocker des données client |
 | --- | --- |
-| Zone géographique mondiale 1 : EMEA (Europe, Moyen-Orient et Afrique) | Autriche, Finlande, France, Irlande, Pays-Bas |
-| Zone géographique mondiale 2 : Asie et Pacifique | Hong Kong, Japon, Malaisie, Singapour, Corée du Sud |
-| Zone géographique mondiale 3 : Amériques | Brésil, Chili, États-Unis |
+| Zone géographique 1 – EMEA (Europe, Moyen-Orient et Afrique) | Autriche, Finlande, France, Irlande, Pays-Bas, Suède |
+| Géographie régionale 2 – Asie-Pacifique | Hong Kong, Japon, Malaisie, Singapour, Corée du Sud |
+| Géographie régionale 3 - Amériques | Brésil, Chili, États-Unis |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>Pays/région des emplacements urbains précis des centres de données
 
@@ -145,11 +178,12 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Australie | Sydney, Melbourne |
 | Brésil | Rio, Campinas |
 | Canada | Ville de Québec, Toronto |
-| Union européenne | Autriche (Vienne), Finlande (Helsinki), France (Paris, Marseille), Irlande (Dublin), Pays-Bas (Amsterdam) |
+| Union européenne | Autriche (Vienne), Finlande (Helsinki), France (Paris, Marseille), Irlande (Dublin), Pays-Bas (Amsterdam), Suède (Gvleä, Sandviken, Staffanstorp) |
 | France | Paris, Marseille |
 | Allemagne | Frankfort, Berlin |
 | Inde | Chennai, Mumbai, Pune |
 | Japon | Osaka, Tokyo |
+| Qatar | Doha |
 | Corée du Sud | Busan, Séoul |
 | Norvège | Oslo, Stavanger |
 | Afrique du Sud | Le Cap, Johannesburg |
@@ -569,7 +603,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -599,7 +633,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -655,7 +689,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -721,7 +755,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Avancé | États-Unis |
 </p></details>
 
-
 ## <a name="belarus"></a>Bélarus
 <details><summary>Cliquez pour développer</summary><p>
 
@@ -766,7 +799,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -1158,7 +1191,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -1590,7 +1623,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Avancé | États-Unis |
 </p></details>
 
-
 ## <a name="congo-brazzaville"></a>République du Congo (Brazzaville)
 <details><summary>Cliquez pour développer</summary><p>
 
@@ -1619,7 +1651,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Avancé | États-Unis |
 </p></details>
 
-
 ## <a name="congo-kinshasa"></a>République démocratique du Congo (Kinshasa)
 <details><summary>Cliquez pour développer</summary><p>
 
@@ -1647,7 +1678,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="cook-islands"></a>Îles Cook
 <details><summary>Cliquez pour développer</summary><p>
@@ -1749,7 +1779,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -1805,7 +1835,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -1833,7 +1863,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -1861,7 +1891,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -2113,7 +2143,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -2281,7 +2311,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -2589,7 +2619,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -2600,7 +2630,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="greenland"></a>Groenland
 <details><summary>Cliquez pour développer</summary><p>
@@ -3038,7 +3067,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -3077,7 +3106,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="india"></a>Inde
 <details><summary>Cliquez pour développer</summary><p>
@@ -3153,7 +3181,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3179,7 +3207,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -3237,7 +3265,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3263,7 +3291,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -3377,7 +3405,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3405,7 +3433,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3517,7 +3545,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3545,7 +3573,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3573,7 +3601,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3627,7 +3655,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -3657,7 +3685,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -3666,7 +3694,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="lesotho"></a>Lesotho
 <details><summary>Cliquez pour développer</summary><p>
@@ -3695,7 +3722,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="liberia"></a>Libéria
 <details><summary>Cliquez pour développer</summary><p>
@@ -3753,7 +3779,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Avancé | États-Unis |
 </p></details>
 
-
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Cliquez pour développer</summary><p>
 
@@ -3798,7 +3823,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -3826,7 +3851,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -3994,7 +4019,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -4220,7 +4245,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -4454,7 +4479,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Avancé | États-Unis |
 </p></details>
 
-
 ## <a name="nepal"></a>Népal
 <details><summary>Cliquez pour développer</summary><p>
 
@@ -4483,7 +4507,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Avancé | États-Unis |
 </p></details>
 
-
 ## <a name="netherlands"></a>Pays-Bas
 <details><summary>Cliquez pour développer</summary><p>
 
@@ -4500,7 +4523,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -4539,7 +4562,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="new-caledonia"></a>Nouvelle-Calédonie
 <details><summary>Cliquez pour développer</summary><p>
@@ -4812,7 +4834,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -4840,7 +4862,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -5090,7 +5112,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -5118,7 +5140,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -5163,27 +5185,31 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
-| Microsoft Teams | Zone géographique 1 : EMEA |
-| Office Online Mobile &amp; | Zone géographique 1 : EMEA |
-| Exchange Online Protection | Zone géographique 1 : EMEA |
-| Intune | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
-| Sway | États-Unis |
-| Yammer | Zone géographique 1 : EMEA |
-| Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
-| Viva Connections | Zone géographique 1 : EMEA |
-| Sujets Viva | Zone géographique 1 : EMEA |
-| Viva Learning | Zone géographique 1 : EMEA |
-| Viva Insights - Personnel | Zone géographique 1 : EMEA |
-| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
-| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
-| Informations - Avancé | États-Unis |
+| Exchange Online | Qatar* |
+| OneDrive Entreprise | Qatar* |
+| SharePoint Online | Qatar* |
+| Exchange Online Protection | Qatar* |
+| Microsoft Defender pour Office P1 | Qatar* |
+| Microsoft Teams | Qatar* |
+| Office pour le Web | Qatar* |
+| Office pour mobile | Qatar* |
+| Services OneNote | Qatar* |
+| Flux | Qatar* |
+| Tableau blanc collaboratif | Qatar* |
+| Viva Connections | Qatar* |
+| Viva Insights - Insights personnels | Qatar* |
+| Sujets Viva | Qatar* |
+| Azure Active Directory | Union européenne |
+| Dataverse pour Teams | Union européenne |
+| Intune | Union européenne |
+| Planificateur | Union européenne |
+| Power Automate Desktop | Union européenne |
+| Power Virtual Agent pour Teams | Union européenne |
+| Viva Insights - Mgr / Leader / Avancé | Union européenne |
+| Apprentissage Viva | Union européenne |
+| Yammer | Union européenne |
+| Formulaires | États-Unis |
+*Chaque service qui stocke les données client au repos dans Exchange Online, SharePoint Online ou OneDrive Entreprise, ou est déployé localement.
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>Macédoine du Nord
@@ -5204,7 +5230,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -5258,7 +5284,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -5272,7 +5298,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 ## <a name="russian-federation"></a>Russie
 <details><summary>Cliquez pour développer</summary><p>
-
 
 | Service | Emplacement |
 | --- | --- |
@@ -5302,7 +5327,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 ## <a name="rwanda"></a>Rwanda
 <details><summary>Cliquez pour développer</summary><p>
 
-
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
@@ -5330,7 +5354,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 ## <a name="saint-helena"></a>Sainte-Hélène, Ascension et Tristan da Cunha
 <details><summary>Cliquez pour développer</summary><p>
-
 
 | Service | Emplacement |
 | --- | --- |
@@ -5627,7 +5650,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -5821,7 +5844,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -5849,7 +5872,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -5892,7 +5915,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 ## <a name="somalia"></a>Somalie
 <details><summary>Cliquez pour développer</summary><p>
 
-
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
@@ -5934,7 +5956,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Afrique du Sud |
-| Stream | Zone géographique 1 : EMEA |
+| Flux | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
 | Viva Connections | Afrique du Sud |
@@ -5944,6 +5966,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
+ </p></details>
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Géorgie du Sud-et-les Îles Sandwich du Sud
 <details><summary>Cliquez pour développer</summary><p>
@@ -5989,7 +6012,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Stream | Union européenne |
+| Flux | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Viva Connections | Union européenne |
@@ -6495,7 +6518,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -6663,7 +6686,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Émirats arabes unis |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Émirats arabes unis |
 | Sujets Viva | Émirats arabes unis |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -6671,6 +6694,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
+ </p></details>
 
 ## <a name="united-kingdom"></a>Royaume-Uni
 <details><summary>Cliquez pour développer</summary><p>
@@ -6802,7 +6826,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |
@@ -6866,7 +6890,6 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
 | Informations - Avancé | États-Unis |
 </p></details>
-
 
 ## <a name="vietnam"></a>Vietnam
 <details><summary>Cliquez pour développer</summary><p>
@@ -6970,7 +6993,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
+| Formulaires | États-Unis |
 | Viva Connections | Zone géographique 1 : EMEA |
 | Sujets Viva | Zone géographique 1 : EMEA |
 | Viva Learning | Zone géographique 1 : EMEA |

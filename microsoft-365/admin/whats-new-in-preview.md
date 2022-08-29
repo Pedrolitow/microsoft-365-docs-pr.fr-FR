@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Le Centre d'administration Microsoft 365 - découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
-ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602577"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388878"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "66602577"
 
 ::: moniker-end
 
-Nous ajoutons en permanence de nouvelles fonctionnalités à [la Centre d'administration Microsoft 365](Vue d’ensemble du Centre d'administration Microsoft 365](admin-overview/admin-center-overview.md), corrigeant les problèmes que nous apprenons et apportant des modifications en fonction de vos commentaires. Certaines fonctionnalités sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, [essayez de vous ajouter à une version ciblée](manage/release-options-in-office-365.md).
+Nous ajoutons continuellement de nouvelles fonctionnalités au [Centre d'administration Microsoft 365](admin-overview/admin-center-overview.md), résolvez les problèmes que nous apprenons et apportons des modifications en fonction de vos commentaires. Certaines fonctionnalités sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, [essayez de vous ajouter à une version ciblée](manage/release-options-in-office-365.md).
 
 Et si vous souhaitez savoir ce qui est nouveau avec d’autres services cloud Microsoft :
 
@@ -211,7 +211,7 @@ Nous avons également ajouté 2 nouveaux champs, **Gravité** et **Date de ferme
 
 Pour consulter ces mises à jour dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365</a>, accédez à **Support** > **View Service requests** in left navigation pane.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="microsoft-365-admin-center-search"></a>recherche Centre d'administration Microsoft 365
 

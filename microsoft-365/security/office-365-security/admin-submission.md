@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour envoyer des e-mails légitimes bloqués, des e-mails suspects, des e-mails suspects de hameçonnage, du courrier indésirable, d’autres messages potentiellement dangereux, des URL et des pièces jointes à Microsoft pour la rescanning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2502e86f0400e0d803399c0e32a359e907375410
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 692bef65a37f1411952e3848147913a64daf72a1
+ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943996"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67392910"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Utilisez le portail Soumissions pour envoyer des courriers indésirables, des hameçonnages, des URL, des e-mails légitimes bloqués et des pièces jointes à Microsoft
 
@@ -71,66 +71,136 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
 
-2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné en fonction du type de contenu que vous souhaitez signaler, puis cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné.
 
-3. Dans la section **Ajouter l’ID de message réseau ou charger le fichier e-mail** , utilisez l’une des options suivantes :
+3. Sous l’onglet **e-mails** , cliquez sur ![l’icône Envoyer à Microsoft pour l’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
+
+   - **Sélectionnez le type de soumission** : vérifiez que la valeur **Email** est sélectionnée.
+
+   - **Ajoutez l’ID de message réseau ou chargez le fichier e-mail** : sélectionnez l’une des options suivantes :
+
      - **Ajoutez l’ID de message réseau de messagerie** : il s’agit d’une valeur GUID disponible dans l’en-tête **X-MS-Exchange-Organization-Network-Message-Id** dans le message ou dans l’en-tête **X-MS-Office365-Filtering-Correlation-Id** dans les messages mis en quarantaine.
+
      - **Charger le fichier e-mail (.msg ou .eml)** : cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
 
-4. Dans la zone **Choisir un destinataire qui a rencontré un problème** , spécifiez le destinataire sur lequel vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si l’e-mail a contourné l’analyse en raison de stratégies d’utilisateur ou d’organisation.
+   - **Choisissez un destinataire qui a rencontré un problème** : spécifiez le destinataire sur lequel vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si l’e-mail a contourné l’analyse en raison de stratégies d’utilisateur ou d’organisation.
 
-5. Dans la section **Sélectionner une raison pour l’envoi à Microsoft** , sélectionnez l’une des options suivantes :
-   - **N’aurait pas dû être bloqué (Faux positif)**
-   - **Aurait dû être bloqué (faux négatif)** : dans **l’e-mail doit avoir été classé comme** section qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur jugement) :
-     - **Hameçonnage**
-     - **Programme malveillant**
-     - **Courrier indésirable**
+   - **Sélectionnez une raison de soumission à Microsoft** : La vérification **ne doit pas avoir été bloquée (Faux positif)** est sélectionnée.
 
-6. Lorsque vous avez terminé, cliquez sur **Envoyer**.
+     - **L’e-mail doit avoir été classé comme suit** : Sélectionner **le hameçonnage**, les **programmes malveillants** ou **le courrier indésirable**. Si vous n’êtes pas sûr, utilisez votre meilleur jugement.
 
-   > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Processus de soumission d’une nouvelle URL" lightbox="../../media/submission-flyout-email.png":::
+     - **Bloquer tous les e-mails de cet expéditeur ou domaine** : sélectionnez cette option pour créer une entrée de bloc pour l’expéditeur dans la liste d’autorisations/de blocs du locataire. Pour plus d’informations sur la liste d’autorisations/blocages du locataire, consultez [Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).
+
+       Une fois cette option sélectionnée, les paramètres suivants sont disponibles :
+
+       - Par défaut, **l’expéditeur** est sélectionné, mais vous pouvez sélectionner **Domaine** à la place.
+
+       - **Supprimer l’entrée de bloc après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
+           - **1 jour**
+           - **7 jours**
+           - **30 jours**
+           - **90 jours**
+           - **N’expirez jamais**
+           - **Date spécifique**
+
+       - **Note d’entrée de bloc** : entrez des informations facultatives sur la raison pour laquelle vous autorisez cet e-mail.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+
+> :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Envoyez un e-mail faux négatif (incorrect) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-email-block.png":::
+
+> [!NOTE]
+> Pour les messages qui ont été bloqués de manière incorrecte par [l’intelligence d’usurpation](learn-about-spoof-intelligence.md) d’identité, une entrée de bloc pour la paire de domaines n’est pas créée dans la liste d’autorisations/de blocs du locataire.
+>
+> Pour les messages qui ont été bloqués de manière incorrecte par la protection d’emprunt d’identité de [domaine ou d’utilisateur](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), une entrée de bloc pour le domaine ou l’expéditeur n’est pas créée dans la liste d’autorisation/de blocage du locataire. Au lieu de cela, le domaine ou l’expéditeur est ajouté à la **section Expéditeurs approuvés et domaines** dans la [stratégie anti-hameçonnage](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) qui a détecté le message.
+>
+> Pour signaler qu’un fichier **n’aurait pas dû être bloqué (faux positif),** consultez [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les domaines et les adresses e-mail dans le portail Soumissions](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+
+## <a name="report-questionable-email-attachments-to-microsoft"></a>Signaler des pièces jointes contestables à Microsoft
+
+1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
+
+2. Dans la page **Soumissions**, sélectionnez l’onglet **Email pièces jointes**.
+
+3. Sous l’onglet **Email pièces jointes**, cliquez sur ![l’icône Envoyer à Microsoft pour l’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+
+4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
+
+   - **Sélectionnez le type d’envoi** : vérifiez la valeur **Email pièce jointe** est sélectionnée.
+
+   - **Fichier** : cliquez sur **Parcourir les fichiers** pour rechercher et sélectionner le fichier à envoyer.
+
+     > [!NOTE]
+     > Les soumissions de fichiers ne sont pas disponibles dans les clouds qui ne permettent pas aux données de quitter l’environnement. **Parcourir les fichiers** est grisé.
+
+   - **Sélectionnez une raison pour l’envoi à Microsoft** : La vérification **doit avoir été bloquée (Faux négatif)** est sélectionnée.
+
+     - **L’e-mail doit avoir été classé comme suit** : Sélectionner **hameçonnage** ou **programme malveillant**. Si vous n’êtes pas sûr, utilisez votre meilleur jugement.
+
+     - **Bloquer ce fichier** : sélectionnez cette option pour créer une entrée de bloc pour l’expéditeur dans la liste d’autorisation/de blocage du locataire. Pour plus d’informations sur la liste d’autorisations/blocages du locataire, consultez [Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).
+
+       Une fois cette option sélectionnée, les paramètres suivants sont disponibles :
+
+       - **Supprimer l’entrée de bloc après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
+           - **1 jour**
+           - **7 jours**
+           - **30 jours**
+           - **90 jours**
+           - **N’expirez jamais**
+           - **Date spécifique**
+
+       - **Note d’entrée de bloc** : entrez des informations facultatives sur la raison pour laquelle vous autorisez cet e-mail.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+
+> :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Envoyez une fausse pièce jointe négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-file-block.png":::
+
+ > [!NOTE]
+ > Pour signaler qu’un fichier **n’aurait pas dû être bloqué (faux positif),** consultez [utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les fichiers dans le portail Soumissions](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
 
 ## <a name="report-questionable-urls-to-microsoft"></a>Signaler des URL douteuses à Microsoft
 
 1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
 
-2. Dans la page **Soumissions** , vérifiez que l’onglet **URL** est sélectionné en fonction du type de contenu que vous souhaitez signaler, puis cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
+2. Dans la page **Soumissions** , sélectionnez l’onglet **URL** .
 
-3. Dans la zone **URL** qui s’affiche, entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`).
+3. Sous l’onglet **URL** , cliquez sur ![l’icône Envoyer à Microsoft pour analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
 
-4. Dans la section **Sélectionner une raison pour l’envoi à Microsoft** , sélectionnez l’une des options suivantes :
-   - **N’aurait pas dû être bloqué (Faux positif)**
-   - **Aurait dû être bloqué (faux négatif)** : dans cette **URL, vous devriez avoir été catégorisé en tant** que section qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur jugement) :
-     - **Hameçonnage**
-     - **Programme malveillant**
+4. Dans le menu volant **Envoyer à Microsoft pour analyse** qui s’affiche, entrez les informations suivantes :
 
-5. Lorsque vous avez terminé, cliquez sur **Envoyer**.
+   - **Sélectionnez le type de soumission** : vérifiez que **l’URL** de la valeur est sélectionnée.
 
-    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Processus de soumission de la nouvelle Email" lightbox="../../media/submission-url-flyout.png":::
+   - **URL** : entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html`), puis sélectionnez-la dans la zone qui s’affiche.
+
+     > [!NOTE]
+     > Les soumissions d’URL ne sont pas disponibles dans les clouds qui ne permettent pas aux données de quitter l’environnement. **L’URL** est grisée.
+
+   - **Sélectionnez une raison pour l’envoi à Microsoft** : La vérification **doit avoir été bloquée (Faux négatif)** est sélectionnée.
+
+     - **L’e-mail doit avoir été classé comme suit** : Sélectionner **hameçonnage** ou **programme malveillant**. Si vous n’êtes pas sûr, utilisez votre meilleur jugement.
+
+     - **Bloquer cette URL** : sélectionnez cette option pour créer une entrée de bloc pour l’expéditeur dans la liste d’autorisations/de blocs du locataire. Pour plus d’informations sur la liste d’autorisations/blocages du locataire, consultez [Gérer vos autorisations et blocs dans la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).
+
+       Une fois cette option sélectionnée, les paramètres suivants sont disponibles :
+
+       - **Supprimer l’entrée de bloc après** : la valeur par défaut est **30 jours**, mais vous pouvez sélectionner parmi les valeurs suivantes :
+           - **1 jour**
+           - **7 jours**
+           - **30 jours**
+           - **90 jours**
+           - **N’expirez jamais**
+           - **Date spécifique**
+
+       - **Note d’entrée de bloc** : entrez des informations facultatives sur la raison pour laquelle vous autorisez cet e-mail.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**, puis sur **Terminé**.
+
+> :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Envoyez une URL false négative (incorrecte) à Microsoft pour analyse sur la page Soumissions dans le portail Defender." lightbox="../../media/admin-submission-url-block.png":::
 
  > [!NOTE]
- > Les soumissions d’URL ne sont pas disponibles dans les clouds qui ne permettent pas aux données de quitter l’environnement. La possibilité de sélectionner l’URL est grisée.
-
-## <a name="report-questionable-email-attachment-to-microsoft"></a>Signaler une pièce jointe contestable à Microsoft
-
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à la page **Soumissions** dans **Actions & soumissions** \> **.** Pour accéder directement à la page **Soumissions** , utilisez <https://security.microsoft.com/reportsubmission>.
-
-2. Dans la page **Soumissions**, vérifiez que l’onglet **Email pièces jointes** est sélectionné en fonction du type de contenu que vous souhaitez signaler, puis cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse**.
-
-3. Dans la section **Fichier** qui s’affiche, cliquez sur **Parcourir les fichiers**. Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier, puis cliquez sur **Ouvrir**.
-
-3. Dans la section **Sélectionner une raison pour l’envoi à Microsoft** , sélectionnez l’une des options suivantes :
-   - **N’aurait pas dû être bloqué (Faux positif)**
-   - **Aurait dû être bloqué (faux négatif)** : dans **ce fichier aurait dû être classé en tant** que section qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur jugement) :
-     - **Hameçonnage**
-     - **Programme malveillant**
-
-4. Lorsque vous avez terminé, cliquez sur **Envoyer**.
-
-    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Processus de soumission d’une nouvelle pièce jointe" lightbox="../../media/submission-file-flyout.png":::
-
-> [!NOTE]
-> Si le filtrage des programmes malveillants a remplacé les pièces jointes de message par le fichier d’alerte de programme malveillant Text.txt, vous devez envoyer le message d’origine à partir de la mise en quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et la façon de publier des messages avec des faux positifs de programme malveillant, consultez [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md). Les soumissions de fichiers ne sont pas disponibles dans les clouds qui ne permettent pas aux données de quitter l’environnement. La possibilité de sélectionner Fichier est grisée.
+ > Pour signaler une URL comme **n’aurait pas dû être bloquée (Faux positif)** , consultez [Utiliser le portail Microsoft 365 Defender pour créer des entrées d’autorisation pour les URL dans le portail Soumissions](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur de messagerie à Microsoft
 
@@ -138,7 +208,9 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 2. Dans la page **Soumissions** , vérifiez que l’onglet **e-mails** est sélectionné.
 
-   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour sélectionner les colonnes dont vous avez besoin. Toutes les colonnes peuvent être sélectionnées et affichées dans la grille de soumission. Les valeurs par défaut sont marquées avec un astérisque (*) :
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible.
+
+   - Cliquez sur l’icône ![Personnaliser les colonnes.](../../media/m365-cc-sc-customize-icon.png) **Personnalisez les colonnes** pour sélectionner les colonnes que vous souhaitez afficher. Les valeurs par défaut sont marquées d'un astérisque (\*) :
      - **Nom de l’envoi**<sup>\*</sup>
      - **Expéditeur**<sup>\*</sup>
      - **Destinataire**
@@ -162,32 +234,32 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="Option Personnaliser la colonne pour les soumissions d’administrateur de courrier électronique." lightbox="../../media/email-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/admin-submission-email-customize-columns.png" alt-text="Option Personnaliser les colonnes pour les soumissions d’administrateur de courrier électronique." lightbox="../../media/admin-submission-email-customize-columns.png":::
 
-   - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
-     - **Date d’envoi** : **Date de début** et **date de fin**.
+   - Pour filtrer les entrées, cliquez sur ![l’icône Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtre**. Les valeurs suivantes sont disponibles dans le menu volant **Filtre** qui s’affiche :
+     - **Date d’envoi** : **valeurs de date de début** et de **date de fin** .
      - **ID de soumission** : valeur GUID affectée à chaque soumission.
      - **ID de message réseau**
      - **Sender**
      - **Destinataire**
      - **Name**
      - **Soumis par**
-     - **Motif de l’envoi**
-     - **État**
-     - **Tags**
+     - **Motif de l’envoi** : Les valeurs **ne sont pas indésirables**, **phish**, **programmes malveillants** et **courrier indésirable**.
+     - **État** : valeurs **en attente** et **terminées**.
+     - **Balises** : la valeur par défaut est **Tout** ou sélectionnez une [balise utilisateur](user-tags.md) dans la liste déroulante.
 
-     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+     Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants, cliquez sur ![Effacer les filtres **dans**](../../media/m365-cc-sc-clear-filters-icon.png) le menu volant **Filtrer**.
 
-     :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="Options de filtre pour les soumissions d’administrateur de courrier électronique." lightbox="../../media/email-admin-submission-filters.png":::
+     :::image type="content" source="../../media/admin-submission-email-filters.png" alt-text="Options de filtre pour les soumissions d’administrateur de courrier électronique." lightbox="../../media/admin-submission-email-filters.png":::
 
-   - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+   - Pour regrouper les entrées, cliquez sur l’icône ![Groupe.](../../media/m365-cc-sc-group-icon.png) **Regroupez** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
      - **Raison**
      - **État**
      - **Résultat**
      - **Tags**
 
-   - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
+   - Pour exporter les entrées, cliquez sur ![l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
 ## <a name="view-email-attachment-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateurs de pièces jointes à Microsoft
 
@@ -195,8 +267,10 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 2. Dans la page **Soumissions**, vérifiez que l’onglet **Email pièces jointes** est sélectionné.
 
-   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour sélectionner les colonnes dont vous avez besoin. Toutes les colonnes peuvent être sélectionnées et affichées dans la grille de soumission. Les valeurs par défaut sont marquées avec un astérisque (*) :
-     - **Nom de la pièce jointe**<sup>\*</sup>
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible.
+
+   - Cliquez sur l’icône ![Personnaliser les colonnes.](../../media/m365-cc-sc-customize-icon.png) **Personnalisez les colonnes** pour sélectionner les colonnes que vous souhaitez afficher. Les valeurs par défaut sont marquées d'un astérisque (\*) :
+     - **Nom de fichier de pièce jointe**<sup>\*</sup>
      - **Date d’envoi**<sup>\*</sup>
      - **Motif de l’envoi**<sup>\*</sup>
      - **Statut**<sup>\*</sup>
@@ -212,29 +286,29 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="Personnalisez les options de colonne pour les soumissions d’administrateurs de pièces jointes par e-mail.":::
+     :::image type="content" source="../../media/admin-submission-file-customize-columns.png" alt-text="Personnalisez les options de colonne pour les soumissions d’administrateurs de pièces jointes par e-mail.":::
 
-   - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
+   - Pour filtrer les entrées, cliquez sur ![l’icône Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtre**. Les valeurs suivantes sont disponibles dans le menu volant **Filtre** qui s’affiche :
      - **Date d’envoi** : **Date de début** et **date de fin**.
      - **ID de soumission** : valeur GUID affectée à chaque soumission.
      - **Nom de fichier des pièces jointes**
      - **Soumis par**
      - **Motif de l’envoi**
      - **État**
-     - **Tags**
+     - **Balises** : la valeur par défaut est **Tout** ou sélectionnez une [balise utilisateur](user-tags.md) dans la liste déroulante.
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="Options de filtre pour les soumissions d’administrateurs de pièces jointes par e-mail.":::
+     :::image type="content" source="../../media/admin-submission-file-filters.png" alt-text="Options de filtre pour les soumissions d’administrateurs de pièces jointes par e-mail.":::
 
-   - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+   - Pour regrouper les entrées, cliquez sur l’icône ![Groupe.](../../media/m365-cc-sc-group-icon.png) **Regroupez** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
      - **Raison**
      - **État**
      - **Résultat**
      - **Tags**
 
-   - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
+   - Pour exporter les entrées, cliquez sur ![l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
 ## <a name="view-urls-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur d’URL à Microsoft
 
@@ -242,7 +316,9 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
 2. Dans la page **Soumissions** , vérifiez que l’onglet **URL** est sélectionné.
 
-   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour sélectionner les colonnes dont vous avez besoin. Toutes les colonnes peuvent être sélectionnées et affichées dans la grille de soumission. Les valeurs par défaut sont marquées avec un astérisque (*) :
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible.
+
+   - Cliquez sur l’icône ![Personnaliser les colonnes.](../../media/m365-cc-sc-customize-icon.png) **Personnalisez les colonnes** pour sélectionner les colonnes que vous souhaitez afficher. Les valeurs par défaut sont marquées d'un astérisque (\*) :
      - **URL**<sup>\*</sup>
      - **Date d’envoi**<sup>\*</sup>
      - **Motif de l’envoi**<sup>\*</sup>
@@ -259,33 +335,33 @@ Regardez cette courte vidéo pour découvrir comment utiliser les soumissions d�
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Personnalisez les options de colonne pour les soumissions d’administrateur d’URL.":::
+     :::image type="content" source="../../media/admin-submission-url-customize-columns.png" alt-text="Personnalisez les options de colonne pour les soumissions d’administrateur d’URL.":::
 
-   - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
+   - Pour filtrer les entrées, cliquez sur ![l’icône Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtre**. Les valeurs suivantes sont disponibles dans le menu volant **Filtre** qui s’affiche :
      - **Date d’envoi** : **Date de début** et **date de fin**.
      - **ID de soumission** : valeur GUID affectée à chaque soumission.
      - **URL**
      - **Soumis par**
      - **Motif de l’envoi**
      - **État**
-     - **Tags**
+     - **Balises** : la valeur par défaut est **Tout** ou sélectionnez une [balise utilisateur](user-tags.md) dans la liste déroulante.
 
-     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+     Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants, cliquez sur ![Effacer les filtres **dans**](../../media/m365-cc-sc-clear-filters-icon.png) le menu volant **Filtrer**.
 
-     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="Options de filtre pour les soumissions d’administrateur d’URL.":::
+     :::image type="content" source="../../media/admin-submission-url-filters.png" alt-text="Options de filtre pour les soumissions d’administrateur d’URL.":::
 
-   - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+   - Pour regrouper les entrées, cliquez sur l’icône ![Groupe.](../../media/m365-cc-sc-group-icon.png) **Regroupez** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
      - **Raison**
      - **État**
      - **Résultat**
      - **Tags**
 
-   - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
+   - Pour exporter les entrées, cliquez sur ![l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
 
-### <a name="admin-submission-result-details"></a>Administration détails du résultat de la soumission
+## <a name="admin-submission-result-details"></a>Administration détails du résultat de la soumission
 
-Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats sont affichés dans le menu volant détaillé des soumissions :
+Les messages envoyés dans les soumissions d’administrateur sont examinés par Microsoft et les résultats sont affichés dans le menu volant détaillé des soumissions :
 
 - En cas d’échec de l’authentification des e-mails de l’expéditeur au moment de la livraison.
 - Informations sur les accès à la stratégie qui auraient pu affecter ou écraser le verdict d’un message.
@@ -302,8 +378,7 @@ Si vous avez déployé le [complément Message](enable-the-report-message-add-in
 
 2. Dans la page **Soumissions** , sélectionnez l’onglet **Messages signalés par l’utilisateur** .
 
-   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour afficher les options. Les valeurs par défaut sont marquées avec un astérisque (*) :
-
+   - Cliquez sur l’icône ![Personnaliser les colonnes.](../../media/m365-cc-sc-customize-icon.png) **Personnalisez les colonnes** pour sélectionner les colonnes que vous souhaitez afficher. Les valeurs par défaut sont marquées d'un astérisque (\*) :
      - **Email sujet**<sup>\*</sup>
      - **Signalé par**<sup>\*</sup>
      - **Date signalée**<sup>\*</sup>
@@ -323,24 +398,24 @@ Si vous avez déployé le [complément Message](enable-the-report-message-add-in
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
-   - Pour filtrer les entrées, cliquez sur **Filtrer**. Les filtres disponibles sont :
+   - Pour filtrer les entrées, cliquez sur ![l’icône Filtrer.](../../media/m365-cc-sc-filter-icon.png) **Filtre**. Les valeurs suivantes sont disponibles dans le menu volant **Filtre** qui s’affiche :
      - **Date signalée** : **date de début** et **date de fin**.
      - **Auteur du rapport**
      - **Sujet de l’e-mail**
      - **ID signalé du message**
      - **ID de message réseau**
      - **Sender**
-     - **Motif signalé** : **non indésirable**, **hameçonnage** ou **courrier indésirable**
-     - **Signalé à partir d’un** **complément Microsoft** ou d’un **complément tiers**
-     - **Simulation de hameçonnage** : **Oui** ou **non**
-     - **Converti en soumission d’administrateur** : **Oui** ou **Non**
-     - **Tags**
+     - **Motif signalé** : les valeurs **ne sont pas indésirables**, **phish** ou **spam**.
+     - **Signalé à partir de** : Valeurs du **complément Microsoft** ou **du complément tiers**.
+     - **Simulation de hameçonnage** : Les valeurs **Oui** ou **Non**.
+     - **Converti en soumission d’administrateur** : les valeurs **Oui** ou **Non**.
+     - **Balises** : la valeur par défaut est **Tout** ou sélectionnez une [balise utilisateur](user-tags.md) dans la liste déroulante.
 
-     Lorsque vous avez terminé, cliquez sur **Appliquer**.
+     Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants, cliquez sur ![Effacer les filtres **dans**](../../media/m365-cc-sc-clear-filters-icon.png) le menu volant **Filtrer**.
 
-     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Options de nouveau filtre pour les soumissions d’utilisateurs" lightbox="../../media/admin-submission-reported-messages.png":::
+     > :::image type="content" source="../../media/admin-submission-user-reported-filters.png" alt-text="Options de filtre pour les soumissions d’utilisateurs." lightbox="../../media/admin-submission-user-reported-filters.png":::
 
-   - Pour regrouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+   - Pour regrouper les entrées, cliquez sur l’icône ![Groupe.](../../media/m365-cc-sc-group-icon.png) **Regroupez** et sélectionnez l’une des valeurs suivantes dans la liste déroulante :
      - **Aucune**
      - **Raison**
      - **Sender**
@@ -351,21 +426,22 @@ Si vous avez déployé le [complément Message](enable-the-report-message-add-in
      - **Converti en soumission d’administrateur**
      - **Tags**
 
-   - Pour exporter les entrées, cliquez sur **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
-   - Pour informer les utilisateurs, consultez [Administration Révision des messages signalés](admin-review-reported-message.md)
- 
+   - Pour exporter les entrées, cliquez sur ![l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Exporter**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier .csv.
+
+   - Pour avertir les utilisateurs, consultez [Administration Révision des messages signalés](admin-review-reported-message.md)
+
 > [!NOTE]
-> Si les organisations sont configurées pour envoyer des messages signalés par l’utilisateur à la boîte aux lettres personnalisée uniquement, les messages signalés apparaissent dans les **messages signalés par l’utilisateur** , mais leurs résultats sont toujours vides (car ils n’auraient pas été réexécuter).
+> Si les organisations sont configurées pour envoyer des messages signalés par l’utilisateur [à la boîte aux lettres personnalisée uniquement](user-submission.md), les messages signalés apparaissent dans les **messages signalés par l’utilisateur** , mais leurs résultats sont toujours vides (car ils n’auraient pas été réexécuter).
 
 ## <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
 
-Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer l’e-mail, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable Email.
+Une fois qu’un utilisateur envoie un e-mail suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler l’envoi. Si l’utilisateur souhaite récupérer l’e-mail, il est disponible pour la récupération dans ses dossiers Éléments supprimés ou Courrier indésirable Email.
 
 ## <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Convertir les messages signalés par l’utilisateur de la boîte aux lettres personnalisée en soumission d’administrateur
 
 Si vous avez configuré la boîte aux lettres personnalisée pour intercepter les messages signalés par l’utilisateur sans envoyer les messages à Microsoft, vous pouvez rechercher et envoyer des messages spécifiques à Microsoft à des fins d’analyse.
 
-Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un message dans la liste, cliquez sur **Envoyer à Microsoft pour analyse**, puis sélectionnez l’une des valeurs suivantes dans la liste déroulante :
+Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un message dans la liste, cliquez sur ![Envoyer à Microsoft pour l’icône d’analyse.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Soumettez à Microsoft pour analyse**, puis sélectionnez l’une des valeurs suivantes dans la liste déroulante :
 
 - **Nettoyer le rapport**
 - **Signaler le hameçonnage**
@@ -373,7 +449,7 @@ Sous **l’onglet Messages signalés par l’utilisateur** , sélectionnez un me
 - **Signaler le courrier indésirable**
 - **Déclencher une enquête**
 
-  :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Nouvelles options sur le bouton Action" lightbox="../../media/admin-submission-main-action-button.png":::
+  :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="Nouvelles options sur le bouton Action" lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
 Si le message est signalé à Microsoft, la valeur **de soumission convertie en administrateur** passe de **non** à **oui**. Vous pouvez accéder directement à la soumission de l’administrateur en cliquant sur **Afficher la soumission administrateur convertie** à partir du menu de dépassement dans le menu volant de soumission du message signalé par l’utilisateur concerné.
 
