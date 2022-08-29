@@ -2,7 +2,7 @@
   expanded: true
   items:
     - name: Qu’est-ce que Microsoft Defender Threat Intelligence (Defender TI) ?
-      href: index.md
+      href: what-is-microsoft-defender-threat-intelligence-defender-ti.md
     - name: Jeux de données
       href: data-sets.md
     - name: Score de réputation

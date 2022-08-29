@@ -1,6 +1,6 @@
 - name: Documentation de base de tests
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: Qu’est-ce que Base de test ?
       href: overview.md
@@ -26,6 +26,8 @@
       href: contentguideline.md
     - name: Comprendre votre coût d’utilisation
       href: usagecost.md
+    - name: Exécuter votre test à la demande
+      href: ondemandrun.md
     - name: Règles d’application/test
       href: rules.md
 - name: Guides pratiques
