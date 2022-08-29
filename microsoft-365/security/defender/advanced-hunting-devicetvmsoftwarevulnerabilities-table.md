@@ -1,7 +1,7 @@
 ---
-title: Table DeviceTvmSoftwareVulnerabilities dans le schéma de recherche avancé
-description: Découvrez les vulnérabilités logicielles trouvées sur les appareils et la liste des mises à jour de sécurité disponibles qui adressent chaque vulnérabilité dans la table DeviceTvmSoftwareVulnerabilities du schéma de recherche avancée.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & gestion des vulnérabilités, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+title: Table DeviceTvmSoftwareVulnerabilities dans le schéma de chasse avancé
+description: Découvrez les vulnérabilités logicielles détectées sur les appareils et la liste des mises à jour de sécurité disponibles qui traitent chaque vulnérabilité dans la table DeviceTvmSoftwareVulnerabilities du schéma de repérage avancé.
+keywords: repérage avancé, chasse aux menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, gestion des vulnérabilités & menaces, TVM, gestion des appareils, logiciels, inventaire, vulnérabilités, ID CVE, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,29 +18,29 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a6588134ba2cdf166a465998cd0b1a4fd7134dbb
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 6e0d28b0b4f421ba4f5b41bfbfa049787c7cce0a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531522"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329264"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
 >[!IMPORTANT]
-> Certaines informations concernent des produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+> Certaines informations concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Le tableau du schéma de recherche avancée contient la liste des vulnérabilités de gestion des menaces & vulnérabilités dans les `DeviceTvmSoftwareVulnerabilities` produits logiciels [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) installés. Cette table inclut également des informations sur le système d’exploitation, les ID CVE et sur la gravité des vulnérabilités. Vous pouvez utiliser ce tableau, par exemple, pour chercher les événements impliquant des appareils qui ont des vulnérabilités graves dans leur logiciel. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+La `DeviceTvmSoftwareVulnerabilities` table du schéma de chasse avancé contient la [liste Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) des vulnérabilités dans les produits logiciels installés. Cette table inclut également des informations sur le système d’exploitation, les ID CVE et sur la gravité des vulnérabilités. Vous pouvez utiliser ce tableau, par exemple, pour rechercher des événements impliquant des appareils qui présentent des vulnérabilités graves dans leurs logiciels. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
 >[!NOTE]
-> Les `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` tableaux et les tables ont remplacé `DeviceTvmSoftwareInventoryVulnerabilities` le tableau. Ensemble, les deux premiers tableaux incluent d’autres colonnes que vous pouvez utiliser pour vous aider à gestion des vulnérabilités activités ou à la recherche d’appareils vulnérables.
+> Les `DeviceTvmSoftwareInventory` tables et `DeviceTvmSoftwareVulnerabilities` les tables ont remplacé la `DeviceTvmSoftwareInventoryVulnerabilities` table. Ensemble, les deux premières tables incluent d’autres colonnes que vous pouvez utiliser pour vous aider à informer vos activités de gestion des vulnérabilités ou à rechercher des appareils vulnérables.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -57,7 +57,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `CveId` | `string` | Identificateur unique affecté à la vulnérabilité de sécurité dans le système Common Vulnerabilities and Exposures (CVE) |
 | `VulnerabilitySeverityLevel` | `string` | Niveau de gravité affecté à la vulnérabilité de sécurité sur la base du score CVSS et des facteurs dynamiques influencés par le paysage des menaces |
 | `RecommendedSecurityUpdate` | `string` | Nom ou description de la mise à jour de sécurité fournie par l’éditeur de logiciels pour résoudre la vulnérabilité |
-| `RecommendedSecurityUpdateId` | `string` | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants |
+| `RecommendedSecurityUpdateId` | `string` | Identificateur des mises à jour de sécurité ou de l’identificateur applicables pour les instructions correspondantes ou les articles de base de connaissances (Ko) |
 
 
 
@@ -69,4 +69,4 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
-- [Présentation de la fonction Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Vue d’ensemble de Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

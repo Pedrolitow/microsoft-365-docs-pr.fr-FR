@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment renouveler la plupart des abonnements Microsoft 365 Entreprises en activant ou en désactivant la facturation récurrente.
-ms.date: 05/04/2021
-ms.openlocfilehash: b180b5be5427832070680f00b9cd804a650e603e
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.date: 08/18/2022
+ms.openlocfilehash: 0f7722eda2f7b7fc4f9e24d30be4442c106ff640
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112084"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384555"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -60,8 +60,11 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ::: moniker-end
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
+
 3. Sur la page Détails de l’abonnement, sous **Paramètres d’abonnement et de paiement**, sélectionnez **Modifier la facturation récurrente**.
+
 4. Dans le volet **Modifier les paramètres de facturation récurrente**, sélectionnez **Activer**, **Activer, mais procédez au renouvellement une fois**, ou **Désactiver**.
+
 5. Sélectionnez **Enregistrer**.
 
     > [!NOTE]
@@ -70,6 +73,34 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
     > - Lorsque la **Facturation récurrente** est désactivée, l’abonnement n’est pas annulé. Si vous voulez conserver l’abonnement actif, vous devez payer la facture manuellement.
     > - Si vous désactivez la **Facturation récurrente**, l’abonnement reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la page Détails de l’abonnement dans la section **Abonnement et paramètres de paiement** .
     > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
+
+## <a name="extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Étendre la date d’expiration de votre abonnement prépayé à l’aide d’une clé de produit Microsoft 365
+
+Les licences de produit prépayées vous sont délivrées sous la forme d’un code alphanumérique de 25 caractères, appelé clé de produit. Si vous achetez un autre abonnement pré-payé pour un produit que vous possédez déjà, vous pouvez utiliser la clé de produit pour prolonger la date d’expiration de votre abonnement. Vous pouvez également utiliser une clé de produit pour [ajouter d’autres licences à votre abonnement](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
+
+::: moniker range="o365-worldwide"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+
+::: moniker-end
+
+2. Sous l’onglet **Produits** , sélectionnez l’abonnement que vous souhaitez étendre.
+
+3. Dans la page détails de l’abonnement, dans la section **Abonnement et paramètres de paiement** , sélectionnez **Étendre la date de fin**.
+
+4. Dans la page **Renouveler ou ajouter des licences utilisateur** , **sélectionnez Utiliser une clé de produit nouvelle et inutilisée**, puis **sélectionnez Suivant**.
+
+5. Entrez la clé de produit, puis sélectionnez **Suivant**.
+    > [!NOTE]
+    > Si vous avez plusieurs clés de produit, vous pouvez sélectionner **Ajouter une autre clé de produit** pour les entrer.
+
+6. Passez en revue les détails de votre commande, puis **sélectionnez Utiliser**.
 
 ## <a name="related-content"></a>Contenu associé
 

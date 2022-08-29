@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité du type d’entité AMKA (Greece Social Security Number).
-ms.openlocfilehash: c28819240da0fe67a93f848502a9f274fc7f9229
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f7f313987f647efcb066ac95d64e8aeaec2fa44e
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997300"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369782"
 ---
 # <a name="greece-social-security-number-amka"></a>Numéro de sécurité sociale (AMKA) grec
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

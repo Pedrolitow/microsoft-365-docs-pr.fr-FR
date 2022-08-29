@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment activer, désactiver et gérer l’accès au Tableau blanc.
-ms.openlocfilehash: aee248c37ce9c65dcf79cfe600e456a17cddbd57
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 934036417e0879cdec9c21bacefd51b9753336b4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943417"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367684"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>Gérer les données du tableau blanc Microsoft dans les environnements GCC High
 
@@ -25,6 +25,8 @@ ms.locfileid: "66943417"
 > Ces conseils s’appliquent aux environnements US Government Community Cloud (GCC) High.
 
 Les données sont stockées sous forme de fichiers .whiteboard dans OneDrive Entreprise. Un tableau blanc moyen peut avoir une taille comprise entre 50 Ko et 1 Mo et se trouver où se trouve votre contenu OneDrive Entreprise. Pour savoir où les nouvelles données sont créées, consultez [l’emplacement de stockage de vos données client Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Examinez l’emplacement de OneDrive Entreprise. Toutes les propriétés qui s’appliquent aux fichiers généraux dans OneDrive Entreprise s’appliquent également au tableau blanc, à l’exception du partage externe.
+
+Pour gérer les données, vous devez d’abord vous assurer que le tableau blanc est activé pour votre organisation. Pour plus d’informations, consultez [Gérer l’accès au Tableau blanc dans les environnements GCC High](manage-whiteboard-access-gcc-high.md).
 
 Vous pouvez gérer les données de tableau blanc à l’aide de contrôles OneDrive Entreprise existants. Pour plus d’informations, consultez le [guide OneDrive pour les entreprises](/onedrive/plan-onedrive-enterprise).
 

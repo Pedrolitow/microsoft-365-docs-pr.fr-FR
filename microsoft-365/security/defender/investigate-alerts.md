@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 6da9ec9f0d59d04d61d4a957f5a914b06b140fac
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: ecc62eb22f60a13d249374f1d00896ad0e1693ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099214"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328714"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -201,6 +201,9 @@ Pour créer une règle de suppression pour les alertes :
     Toutefois, pour appliquer la règle sur n’importe quel type d’alerte qui répond aux conditions de règle, sélectionnez **N’importe quel type d’alerte en fonction des conditions IOC**.
  
     Les EIC sont des indicateurs tels que des fichiers, des processus, des tâches planifiées et d’autres types de preuves qui déclenchent l’alerte.
+    
+    > [!NOTE]
+    > Vous ne pouvez plus supprimer une alerte déclenchée par la source de « détection personnalisée ». Vous ne pouvez pas créer de règle de suppression pour cette alerte.
      
 3. Dans la section **IOCs** , sélectionnez **N’importe quel IOC** pour supprimer l’alerte, quelle que soit la « preuve » à l’origine de l’alerte. 
 
@@ -218,9 +221,9 @@ Pour créer une règle de suppression pour les alertes :
 
     3. Vous pouvez modifier et/ou supprimer les propriétés de cette « preuve » en fonction de vos besoins (à l’aide de caractères génériques, quand cela est pris en charge).
 
-    4. Outre les fichiers et les processus, le script AMSI, l’événement WMI et les tâches planifiées sont quelques-uns des types de preuves que vous pouvez sélectionner dans la liste déroulante des types de preuves.
+    4. Outre les fichiers et les processus, le script AMSI (AntiMalware Scan Interface), l’événement WMI (Windows Management Instrumentation) et les tâches planifiées sont quelques-uns des types de preuves que vous pouvez sélectionner dans la liste déroulante des types de preuves.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Capture d’écran d’autres types de preuves." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
+    
     5. Pour ajouter un autre IOC, cliquez sur **Ajouter un filtre**. 
     > [!NOTE]
     > L’ajout d’au moins un IOC à la condition de règle est nécessaire pour supprimer tout type d’alerte.
@@ -248,8 +251,11 @@ Les E/S sélectionnées dans les conditions de suppression sont sélectionnées 
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Capture d’écran de la création d’une règle de suppression réussie. ":::
 
 8.  La nouvelle fonctionnalité d’alerte de suppression est disponible par défaut. <br> Toutefois, vous pouvez revenir à l’expérience précédente dans Microsoft 365 Defender portail en accédant à **Paramètres > points de terminaison > suppression d’alerte**, puis désactiver la **création de nouvelles règles de suppression activée** pour activer le basculement. 
+
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Capture d’écran du bouton bascule pour activer/désactiver la fonctionnalité de création de règles de suppression.":::
+    > [!NOTE]
+    > Bientôt, seule la nouvelle expérience de suppression d’alerte sera disponible. Vous ne pourrez pas revenir à l’expérience précédente.
 
 9.  **Modifiez les règles existantes :** <br> Vous pouvez toujours ajouter ou modifier les conditions de règle et l’étendue des règles nouvelles ou existantes dans le portail Microsoft Defender, en sélectionnant la règle appropriée et en cliquant sur **Modifier la règle**.    
     Pour modifier des règles existantes, **assurez-vous que la création de nouvelles règles de suppression activée** bascule est activée.         

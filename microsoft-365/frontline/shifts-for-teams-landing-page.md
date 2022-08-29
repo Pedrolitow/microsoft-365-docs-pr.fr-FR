@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 0d9a0104e601b31448b586e3958df0c8d17cad7e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: ce2c8da70b2fa6908518fc2f7d9489a2fdf578cd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992448"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405725"
 ---
 # <a name="shifts-for-frontline-workers"></a>Shifts pour les travailleurs de première ligne
 
@@ -47,7 +47,7 @@ Utilisez les ressources suivantes pour vous aider à configurer et gérer Shifts
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Gérer Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Découvrez comment gérer Shifts dans votre organisation.         |
+|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Gérer les décalages](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Obtenez une vue d’ensemble de la gestion des shifts pour votre organisation. Découvrez comment contrôler l’accès à Shifts, épingler les majs à la barre d’applications Teams pour faciliter l’accès, activer les balises basées sur les décalages, etc. |
 |<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[Gérer les propriétaires de planning pour la gestion des équipes](schedule-owner-for-shift-management.md)** Cette fonctionnalité vous permet de faire passer les autorisations d'un membre de l'équipe à un propriétaire de planning sans faire de l'employé un propriétaire d'équipe.         |
 |<img src="/office/media/icons/help.png" alt="Help symbol.">     | **[Faq sur les données Shifts](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Découvrez où sont stockées les données Shifts et d’autres rubriques relatives aux données Shifts, notamment la rétention, la récupération et le chiffrement.        |
 

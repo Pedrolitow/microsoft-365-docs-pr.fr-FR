@@ -22,12 +22,12 @@ ms.collection:
 - zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 44e6e341bd47dfb4d0debe1975c79f00cdb5a1da
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750404"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328956"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison pilote
 
@@ -59,8 +59,8 @@ Commençons par consulter les tableaux de bord.
 ### <a name="view-the-device-inventory"></a>Afficher l’inventaire des appareils
 L’inventaire des appareils affiche la liste des points de terminaison, des appareils réseau et des appareils IoT dans votre réseau. Non seulement il vous fournit une vue des appareils de votre réseau, mais il fournit également des informations détaillées sur ces appareils, telles que le domaine, le niveau de risque, la plateforme du système d’exploitation et d’autres informations pour faciliter l’identification des appareils les plus à risque.
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Afficher le tableau de bord de gestion des menaces et des vulnérabilités 
-La gestion des menaces et des vulnérabilités vous aide à vous concentrer sur les faiblesses qui posent les risques les plus urgents et les plus élevés pour l’organisation. À partir du tableau de bord, obtenez une vue générale du score d’exposition de l’organisation, du degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareil les plus exposées. 
+### <a name="view-the-microsoft-defender-vulnerability-management-dashboard"></a>Afficher le tableau de bord Gestion des vulnérabilités Microsoft Defender 
+La gestion de la gestion des vulnérabilités Defender vous aide à vous concentrer sur les faiblesses qui posent les risques les plus urgents et les plus élevés pour l’organisation. À partir du tableau de bord, obtenez une vue générale du score d’exposition de l’organisation, du degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareil les plus exposées. 
 
 ### <a name="run-a-simulation"></a>Exécuter une simulation
 Microsoft Defender pour point de terminaison est fourni avec [des scénarios d’attaque « Do It Yourself »](https://securitycenter.windows.com/tutorials) que vous pouvez exécuter sur vos appareils pilotes.  Chaque document inclut les exigences du système d’exploitation et de l’application, ainsi que des instructions détaillées spécifiques à un scénario d’attaque. Ces scripts sont sécurisés, documentés et faciles à utiliser. Ces scénarios reflètent les fonctionnalités de Defender pour point de terminaison et vous guident tout au long de l’expérience d’investigation.

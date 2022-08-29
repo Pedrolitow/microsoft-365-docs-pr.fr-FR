@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/24/2022
 ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Tirez le meilleur parti de votre version d’évaluation de Microsoft 365 Business Premium. Essayez certaines des principales fonctionnalités de productivité et de sécurité.
-ms.openlocfilehash: fd1871d6902fa7d39a755ea8d7d857baabff2413
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 750772357c5dda926840ba41f879a055e12d5230
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894896"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433441"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Guide opérationnel d’évaluation : Microsoft Business Premium
 
@@ -35,7 +35,7 @@ Lorsque vous [commencer une version d’évaluation ou acheter Microsoft 365 Bus
 
 Tout d’abord, [configurez votre version d’évaluation](../business-premium/m365bp-setup.md) !
 
-Une fois que vous avez lancé la version d’évaluation et terminé le processus d’installation, l’application des modifications peut prendre jusqu’à 2 heures.
+Une fois que vous avez lancé la version d’évaluation et terminé le processus d’installation, la prise en compte des modifications peut prendre jusqu’à deux heures.
 
 Microsoft 365 Business Premium inclut des [stratégies de sécurité prédéfinies](/security/office-365-security/preset-security-policies.md) que vous pouvez utiliser dans votre environnement. Ces stratégies représentent un profil de protection de référence adapté à la plupart des utilisateurs. La protection standard inclut :
 
@@ -61,12 +61,11 @@ Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, 
 
 4. Suivez les étapes de l’Assistant pour [Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes le propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir [Ajouter un domaine à Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
-5. Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec connexion de domaine, le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
+5. Si votre fournisseur d’hébergement est GoDaddy ou un autre hôte activé avec la connexion au domaine, vous êtes invité à vous connecter et à laisser Microsoft s’authentifier automatiquement en votre nom.
 
 ## <a name="onboard-and-protect-devices"></a>Intégrer et protéger des appareils
 
-> [!NOTE]
-> La possibilité d’intégrer des points de terminaison exécutant Windows Server ou Linux Server est désormais disponible en préversion ! Consultez [Intégrer des appareils à Microsoft Defender pour les PME](../security/defender-business/mdb-onboard-devices.md).
+Microsoft 365 Business Premium inclut Defender entreprise, une nouvelle solution de sécurité pour protéger les appareils. Consultez [Intégrer des appareils à Microsoft Defender pour les PME](../security/defender-business/mdb-onboard-devices.md).
 
 1. Accédez au portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), puis connectez-vous.
 
@@ -76,11 +75,11 @@ Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, 
 
 4. [Évaluer vos stratégies de sécurité](../security/defender-business/mdb-configure-security-settings.md).
 
-## <a name="use-office-apps-on-devices"></a>Utiliser les applications Office sur les appareils
+## <a name="use-microsoft-365-apps-on-devices"></a>Utiliser Microsoft 365 Apps sur les appareils
 
-1. Tout d’abord, vous devez [installer Office](m365bp-install-office-apps.md).
+1. Tout d’abord, vous devez [installer Microsoft 365 Apps](m365bp-install-office-apps.md).
 
-2. Accédez à office.com et [connectez-vous](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+2. Accédez à [https://office.com](https://office.com) et connectez-vous. (Voir [Prise en main à Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Créez un document Office, tel qu’un [document Word](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 
@@ -92,12 +91,13 @@ Lorsque vous achetez la version d’évaluation Microsoft 365 Business Premium, 
 
 2. Prenez le temps de [vous familiariser avec le portail](../security/defender-business/mdb-get-started.md).
 
-3. Maintenant, [évaluez votre posture de sécurité](../security/defender/microsoft-secure-score.md).
+3. À présent, [évaluez votre posture de sécurité](../security/defender/microsoft-secure-score.md) et découvrez comment améliorer votre score.
 
-4. Familiarisez-vous avec [la façon de répondre à un incident de sécurité](../security/defender-business/mdb-respond-mitigate-threats.md).
+4. Découvrez comment [répondre à un incident de sécurité](../security/defender-business/mdb-respond-mitigate-threats.md).
 
 5. Enfin, [passez en revue les actions de correction](../security/defender-business/mdb-review-remediation-actions.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Cybersécurité Microsoft 365 Business Premium &mdash; pour les petites entreprises](index.md)
+- [Microsoft 365 Business Premium - cybersécurité pour les petites entreprises](index.md)
+- [Qu’est-ce que Microsoft Defender pour entreprises ?](../security/defender-business/mdb-overview.md)

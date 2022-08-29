@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 3d48a51311be9bf3324399a582fbb39bc4c38b8d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917274"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405769"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Référence des conseils de stratégie de prévention contre la perte de données
 
@@ -73,7 +73,7 @@ Notez que toutes les conditions fonctionnent pour les e-mails créés dans l’a
 
 ## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Prise en charge d’Outlook 2013 et versions ultérieures et des applications Office sur Le Bureau montrant des conseils de stratégie pour certains types d’informations sensibles uniquement
 
-La liste des types d’informations sensibles qui seront détectés pour l’affichage des conseils de stratégie DLP dans Outlook sur Le Bureau (2013 et versions ultérieures) et les applications Office (Word, Excel, PowerPoint) sur Desktop sont les suivantes :
+La liste des types d’informations sensibles qui seront détectés pour afficher des conseils de stratégie DLP dans Outlook sur Le Bureau (2013 et versions ultérieures) et les applications Office (Word, Excel, PowerPoint) sur Desktop sont les suivantes :
 
 - Numéro de routage ABA
 - Numéro d’identité nationale (DNI) pour l’Argentine
@@ -175,7 +175,10 @@ La liste des types d’informations sensibles qui seront détectés pour l’aff
 - Numéro d’identification fiscale individuel (ITIN) États-Unis
 - Numéro de sécurité sociale (SSN) États-Unis
 
-Notez que les types d’informations sensibles personnalisés sont également pris en charge pour les conseils de stratégie DLP en plus des types d’informations sensibles out-of-the-box ci-dessus.
+Notez que certains types d’informations sensibles personnalisés sont également pris en charge pour les conseils de stratégie DLP en plus des types d’informations sensibles out-of-the-box ci-dessus.
+
+> [!NOTE]
+> Tous les éléments des types d’informations sensibles personnalisés ne sont pas compatibles avec chaque version d’Office. Les éléments d’entité pour les SIT personnalisés, tels que Functions, peuvent provoquer une incompatibilité.
 
 ## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>La protection contre la perte de données sur les appareils de point de terminaison prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement
 
@@ -269,7 +272,7 @@ La liste des types d’informations sensibles qui seront détectés dans les doc
 - Numéro de permis de conduire en Grèce 
 - Carte d’identité nationale grecque 
 - Numéro de passeport en Grèce 
-- Numéro de sécurité sociale en Grèce (AMKA) 
+- Numéro de sécurité sociale (AMKA) grec 
 - Numéro d’identification fiscale grecque 
 - Numéro de carte d’identité (HKID) Hong Kong 
 - Numéro de sécurité sociale hongrois (TAJ) 
@@ -322,7 +325,7 @@ La liste des types d’informations sensibles qui seront détectés dans les doc
 - Numéro de passeport des Pays-Bas 
 - Numéro d’identification fiscale aux Pays-Bas 
 - Numéro de taxe sur la valeur ajoutée aux Pays-Bas 
-- Numéro de compte bancaire en Nouvelle-Zélande 
+- Numéro de compte bancaire néo-zélandais 
 - Numéro de permis de conduire en Nouvelle-Zélande 
 - Chiffre d’affaires intérieur de la Nouvelle-Zélande 
 - Numéro du Ministère de la santé Nouvelle-Zélande 
@@ -352,10 +355,10 @@ La liste des types d’informations sensibles qui seront détectés dans les doc
 - Numéro de permis de conduire en Slovénie 
 - Numéro de passeport en Slovénie 
 - Numéro d’identification fiscale en Slovénie 
-- Slovénie Unique Master Citizen Number 
+- Numéro de citoyen principal unique slovène 
 - Numéro d’identification Afrique du Sud 
 - Matricule de résident Corée du Sud 
-- Espagne DNI 
+- Document national d’identité espagnol 
 - Numéro de permis de conduire en Espagne 
 - Numéro de passeport en Espagne 
 - Numéro de sécurité sociale (N° S.S.) espagnol 
@@ -376,7 +379,7 @@ La liste des types d’informations sensibles qui seront détectés dans les doc
 - Numéro de liste électorale du Royaume-Uni 
 - Numéro du service de santé national (NHS) du Royaume-Uni 
 - Numéro d'assurance national (NINO) du Royaume-Uni 
-- ROYAUME-UNI. Numéro de référence unique du contribuable 
+- Royaume-Uni Numéro de référence du contribuable unique 
 - États-Unis / Royaume-Uni Numéro de passeport 
 - Numéro de compte bancaire États-Unis 
 - Numéro de permis de conduire États-Unis 
@@ -405,4 +408,3 @@ Notez que les types d’informations sensibles personnalisés seront également 
 |**Local**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
 |**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sous-ensemble|Sous-ensemble|Consultez [Outlook 2013 et versions ultérieures, ainsi que la prise en charge des applications Office sur le Bureau qui affichent des conseils de stratégie pour certains types d’informations sensibles uniquement](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur SharePoint Online ou les sites OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/externe)</li><li>Notifier l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaît pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Pour plus d’informations[, consultez les conseils de stratégie dans Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
 |**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sous-ensemble|Sous-ensemble|Les stratégies de protection contre la perte de données dans Power BI sont en préversion publique. </br></br> Les conseils de stratégie et les alertes d’administration sont pris en charge. |
-||||||

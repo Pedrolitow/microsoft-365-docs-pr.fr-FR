@@ -19,12 +19,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à afficher et à configurer des paramètres globaux (liste « Bloquer les URL suivantes » et protection pour les applications Office 365) pour les liens sécurisés dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8914430808a5829732a7ea5ca86081774f7cb121
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d396157be6e245e81d084d97dfc6446201b28f95
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771260"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385746"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurer les paramètres globaux des liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -75,7 +75,7 @@ Vous pouvez configurer les paramètres de liens fiables globaux dans le portail 
 ## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Configurer la liste « Bloquer les URL suivantes » dans le portail Microsoft 365 Defender
 
 > [!NOTE]
-> Vous pouvez désormais gérer les entrées d’URL de bloc dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). La liste « Bloquer les URL suivantes » est en cours de dépréciation. Nous allons essayer de migrer des entrées existantes de la liste « Bloquer les URL suivantes » pour bloquer les entrées d’URL dans la liste d’autorisations/de blocs du locataire. Les messages contenant l’URL bloquée seront mis en quarantaine.
+> Vous pouvez désormais gérer les entrées d’URL de bloc dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). La liste « Bloquer les URL suivantes » est en cours de dépréciation. Nous allons essayer de migrer des entrées existantes de la liste « Bloquer les URL suivantes » pour bloquer les entrées d’URL dans la liste d’autorisations/de blocs du locataire. Les messages contenant l’URL bloquée seront mis en quarantaine.
 
 La liste **Bloquer les URL suivantes** identifie les liens qui doivent toujours être bloqués par l’analyse des liens fiables dans les applications prises en charge. Pour plus d’informations, consultez [la liste « Bloquer les URL suivantes » pour les liens sécurisés](safe-links.md#block-the-following-urls-list-for-safe-links).
 

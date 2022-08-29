@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
-ms.translationtype: HT
+ms.openlocfilehash: 8653d60faaa2ae58088c8216b1286f7ff6a0a197
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695985"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434479"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -77,7 +77,7 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
         - **Solutions** \> **Gestion des enregistrements** \> **onglet** Stratégies des étiquettes\> **Appliquer automatiquement une étiquette**
 
     - Si vous utilisez la solution de gestion du cycle de vie des données :
-        - **Solutions** \> **Gestion du cycle de vie des données** \> **onglet** Stratégies des étiquettes\> **Appliquer automatiquement une étiquette**
+        - **Solutions** \> **Gestion du cycle de vie des** \> données **Microsoft 365** \> **Onglet Stratégies** d’étiquette \> **- Appliquer automatiquement une étiquette**
 
     Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez d'abord **Afficher tout**.
 
@@ -160,7 +160,7 @@ Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supp
 Pour plus d’informations sur ces options, reportez-vous aux instructions suivantes de la documentation DLP : [Affiner les réglages pour rendre la correspondance plus ou moins précise](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Les types d’informations sensibles ont deux manières différentes de définir les paramètres de nombre d’instances uniques maximum. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les types d’informations sensibles ont deux manières différentes de définir les paramètres de nombre d’instances uniques maximum. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 Lorsque vous utilisez des types d’informations sensibles pour appliquer automatiquement des étiquettes de rétention :
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855018"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369134"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure Score
 
@@ -37,6 +37,39 @@ Pour que Microsoft Secure Score soit un meilleur représentant de votre posture 
 Plus vous effectuez d’actions d’amélioration, plus votre degré de sécurisation sera élevé. Pour plus d’informations, consultez [Microsoft Secure Score](microsoft-secure-score.md).
 
 Le score de sécurité Microsoft se trouve dans <https://security.microsoft.com/securescore> le [portail Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="august-2022"></a>Août 2022
+
+De nouvelles recommandations Protection des données Microsoft sont désormais disponibles sous forme d’actions d’amélioration du degré de sécurisation :
+
+- **Étiquetage**
+  - Étendre l’étiquetage de sensibilité M365 aux ressources dans la carte de données Azure Purview
+  - Vérifier que les stratégies de classification des données d’étiquetage automatique sont configurées et utilisées
+  - Publier des stratégies de classification des données d’étiquette de confidentialité M365
+  - Créer des stratégies de protection contre la perte de données (DLP)
+
+De nouvelles recommandations Microsoft Defender pour Office 365 sont désormais disponibles en tant qu’actions d’amélioration du degré de sécurisation :
+
+- **Anti-spam - Stratégie de trafic entrant**
+  - Définir le seuil de niveau de réclamation en bloc par e-mail (BCL) sur 6 ou inférieur
+  - Définir une action pour effectuer la détection du courrier indésirable
+  - Définir une action pour effectuer une détection de courrier indésirable à haut niveau de confiance
+  - Définir une action pour effectuer la détection du hameçonnage
+  - Définir une action pour effectuer une détection de hameçonnage à haut niveau de confiance
+  - Définir l’action à entreprendre pour la détection du courrier indésirable en bloc
+  - Conserver le courrier indésirable en quarantaine pendant 30 jours
+  - Vérifier que les conseils de sécurité relatifs au courrier indésirable sont activés
+  - Assurez-vous qu’aucun domaine d’expéditeur n’est autorisé pour les stratégies anti-courrier indésirable (remplacez « Assurez-vous qu’aucun domaine expéditeur n’est autorisé pour les stratégies anti-courrier indésirable » pour étendre la fonctionnalité également aux expéditeurs spécifiques)
+
+- **Anti-spam - Stratégie de trafic sortant**
+  - Définir le nombre maximal de destinataires externes qu’un utilisateur peut envoyer par e-mail par heure
+  - Définir le nombre maximal de destinataires internes auxquels un utilisateur peut envoyer dans l’heure
+  - Définir une limite quotidienne de messages
+  - Bloquer les utilisateurs qui ont atteint la limite de messages
+  - Définir les règles de transfert automatique de courrier électronique pour qu’ils soient contrôlés par le système
+
+- **Anti-spam - Filtre de connexion**
+  - N’ajoutez pas d’adresses IP autorisées dans la stratégie de filtre de connexion
 
 ## <a name="june-2022"></a>Juin 2022
 

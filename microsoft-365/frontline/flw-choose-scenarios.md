@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0c5dd2cc372ad1d8e37713360561f41be9b05209
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66992184"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432394"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Choisissez vos scénarios pour les Microsoft 365 pour les travailleurs de première ligne
 
@@ -34,7 +34,7 @@ Utilisez ces vues d’ensemble de scénarios pour commencer à envisager ce que 
 
 ## <a name="communications"></a>Communications
 
-:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: 
+:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 Les solutions de communication connectent vos employés de première ligne et leur permettent de collaborer entre eux, avec d’autres membres de l’organisation et avec vos clients.
 
@@ -47,7 +47,7 @@ Consultez également ces ressources pour découvrir comment Yammer peut fonction
 
 ## <a name="wellbeing--engagement"></a>Bien-être et engagement
 
-:::image type="icon" source="/office/media/icons/heart-teams.png"::: 
+:::image type="icon" source="/office/media/icons/heart-teams.png":::
 
 Créez un sentiment d’appartenance avec vos employés de première ligne en les aidant à communiquer avec l’ensemble de votre organisation.
 
@@ -59,18 +59,18 @@ Couverture : [Traduction en ligne](/microsoftteams/inline-message-translation-te
 
 ## <a name="training--onboarding"></a>Formation et intégration
 
-:::image type="icon" source="/office/media/icons/files-teams.png"::: 
+:::image type="icon" source="/office/media/icons/files-teams.png":::
 
 Favorisez la croissance continue de vos employés et encouragez le partage et l’échange de connaissances.
 
 | Scénario | Description | Services | Applications Teams |
 | --- | --- | --- |--- |
 | [Intégrer de nouveaux employés dans votre organisation](flw-onboarding-training.md) | Faites de l’intégration de nouveaux employés une excellente expérience en favorisez un environnement de travail hybride tout-en-un dans lequel les nouveaux employés peuvent trouver des ressources importantes, rencontrer des personnes au sein de leur organisation et préparer la réussite de leur nouveau rôle.| SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer | Listes <br>Réunions en direct |
-| [Formation continue](flw-onboarding-training.md#ongoing-training) | Une fois qu’ils sont intégrés, aidez vos employés à maintenir leurs compétences à jour grâce à une formation continue dans Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections | |
+| [Formation continue](flw-onboarding-training.md#ongoing-training) | Une fois qu’ils sont intégrés, aidez vos employés à maintenir leurs compétences à jour grâce à une formation continue dans Viva Learning. | SharePoint <br> Viva Learning <br> Viva Connections <br> Yammer| |
 
 ## <a name="schedule-management"></a>Gestion de la planification
 
-:::image type="icon" source="/office/media/icons/calendar-teams.png"::: 
+:::image type="icon" source="/office/media/icons/calendar-teams.png":::
 
 Simplifiez et rationalisez la coordination des planifications avec votre personnel de première ligne. Bénéficiez d’une visibilité sur leurs planifications et de leur permettre de s’organiser pour la couverture et le départ.
 
@@ -80,7 +80,7 @@ Simplifiez et rationalisez la coordination des planifications avec votre personn
 
 ## <a name="digitized-processes"></a>Processus numérisés
 
-:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png"::: 
+:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png":::
 
 Optimisez l’efficacité opérationnelle en numérisant les processus papier et en automatisant les étapes répétitives et de routine.
 
@@ -91,11 +91,21 @@ Optimisez l’efficacité opérationnelle en numérisant les processus papier et
 
 ## <a name="virtual-appointments"></a>Rendez-vous virtuels
 
-:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+:::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Utilisez Microsoft Bookings et Microsoft Teams pour planifier et héberger des rendez-vous virtuels avec des clients et des clients. Vous pouvez intégrer Forms à votre expérience de rendez-vous virtuel pour obtenir les informations appropriées sur vos clients, ou dans le cadre de votre expérience de support client pour découvrir ce dont vos clients ont besoin.
 
 Informations complémentaires : [Rendez-vous virtuels avec Microsoft Teams et l’application Bookings](bookings-virtual-visits.md)
+
+## <a name="help-your-team-clients-and-customers"></a>Aider votre équipe, vos clients et vos clients
+
+Trouvez des ressources à partager avec votre équipe pour les aider à se familiariser avec l’utilisation des applications et fonctionnalités Teams. Obtenez des infographies et du contenu web personnalisables pour aider vos clients et clients à utiliser des rendez-vous virtuels avec votre organisation.
+
+| Scénario | Description |
+| --- | --- |
+|[Aidez vos clients et clients à utiliser des rendez-vous virtuels](virtual-appointments-toolkit.md) |Infographies et FAQ personnalisables que vous pouvez ajouter à votre site web pour permettre à vos clients d’utiliser facilement des rendez-vous virtuels avec votre organisation. |
+|[Aider vos employés de première ligne à suivre le temps et la présence](shifts-toolkit.md) |Vidéos pour aider vos responsables et employés de première ligne à découvrir comment utiliser Shifts dans Microsoft Teams. |
+|[Aider vos employés de première ligne à utiliser les applications et fonctionnalités de collaboration](collab-features-apps-toolkit.md) |Vidéos pour aider votre équipe de première ligne à utiliser les applications et fonctionnalités Microsoft Teams. |
 
 ## <a name="more-scenarios-and-solutions-with-the-digital-ecosystem"></a>Autres scénarios et solutions avec l’écosystème numérique
 

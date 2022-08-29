@@ -17,17 +17,18 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 519b2c025236be49f2f1c96e098c841f789c079b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 6e3ed4d56757110834510465b9637a082e358c4d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759664"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405711"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Désactivation de TLS 1.0 et 1.1 pour Microsoft 365
 
 > [!IMPORTANT]
-> Nous avons temporairement arrêté la désactivation de TLS 1.0 et 1.1 pour les clients commerciaux en raison du COVID-19. À mesure que les chaînes d’approvisionnement se sont ajustées et que certains pays s’ouvrent, nous avons redémarré le lancement de la mise en œuvre de TLS 1.2 le 15 octobre 2020. Le déploiement se poursuivra au cours des semaines et des mois suivants.
+> Nous avons déjà désactivé TLS 1.0 et 1.1 pour la plupart des services Microsoft 365 dans le monde entier. Le déploiement se poursuivra au cours des semaines et des mois suivants.
+Pour Microsoft 365 géré par 21 Vianet, TLS 1.0/1.1 sera désactivé le 30 juin 2023.
 
 Depuis le 31 octobre 2018, les protocoles TLS (Transport Layer Security) 1.0 et 1.1 sont déconseillés pour le service Microsoft 365. L’effet pour les utilisateurs finaux est minime. Ce changement a été rendu public depuis plus de deux ans, avec la première annonce publique faite en décembre 2017. Cet article vise uniquement à couvrir le client local Office 365 par rapport au service Office 365, mais il peut également s’appliquer aux problèmes TLS locaux liés à Office et Office Online Server/Office Web Apps.
 
@@ -41,7 +42,7 @@ Le client Office s’appuie sur le service web Windows (WINHTTP) pour envoyer et
 
 Par défaut, les protocoles TLS 1.2 et 1.1 sont disponibles si aucun périphérique réseau n’est configuré pour rejeter le trafic TLS 1.2.
 
-### <a name="on-windows-7"></a>Le Windows 7
+### <a name="on-windows-7"></a>Sur Windows 7
 
 Les protocoles TLS 1.1 et 1.2 ne sont pas disponibles sans la mise à jour [de la base de connaissances 3140245](https://support.microsoft.com/help/3140245) . La mise à jour résout ce problème et ajoute la sous-clé de Registre suivante :
 
@@ -50,9 +51,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 ```
 
 > [!NOTE]
-> Windows 7 utilisateurs qui n’ont pas cette mise à jour sont affectés au 31 octobre 2018. [KB 3140245](https://support.microsoft.com/help/3140245) contient des détails sur la modification des paramètres WINHTTP pour activer les protocoles TLS.
+> Les utilisateurs de Windows 7 qui n’ont pas cette mise à jour sont affectés depuis le 31 octobre 2018. [KB 3140245](https://support.microsoft.com/help/3140245) contient des détails sur la modification des paramètres WINHTTP pour activer les protocoles TLS.
 
-#### <a name="more-information"></a>Informations supplémentaires
+#### <a name="more-information"></a>Plus d’informations
 
 La valeur de la clé de Registre **DefaultSecureProtocols** que l’article de la Base de connaissances décrit détermine les protocoles réseau qui peuvent être utilisés :
 
@@ -64,7 +65,7 @@ La valeur de la clé de Registre **DefaultSecureProtocols** que l’article de l
 |0x00000200|Activer TLS 1.1 par défaut|
 |0x00000800|Activer TLS 1.2 par défaut|
 
-## <a name="office-clients-and-tls-registry-keys"></a>Office clients et clés de Registre TLS
+## <a name="office-clients-and-tls-registry-keys"></a>Clients Office et clés de Registre TLS
 
 Vous pouvez vous reporter à [KB 4057306 Préparation de l’utilisation obligatoire de TLS 1.2 dans Office 365](https://support.microsoft.com/help/4057306). Il s’agit d’un article général pour les administrateurs informatiques, et il s’agit d’une documentation officielle sur la modification de TLS 1.2.
 
@@ -80,15 +81,15 @@ Le tableau suivant présente les valeurs de clé de Registre appropriées dans O
 > [!IMPORTANT]
 > N’utilisez pas les protocoles SSL 2.0 et 3.0, qui peuvent également être définis à l’aide de la clé **DefaultSecureProtocols** . SSL 2.0 et 3.0 sont considérés comme des protocoles obsolètes et non sécurisés. La meilleure pratique consiste à mettre fin à l’utilisation de SSL 2.0 et SSL 3.0, bien que la décision de le faire dépend en fin de compte de ce qui répond le mieux aux besoins de votre produit. Pour plus d’informations sur les vulnérabilités SSL 3.0, reportez-vous aux 3009008 de la [base de connaissances](https://support.microsoft.com/help/3009008).
 
-Vous pouvez utiliser la calculatrice de Windows par défaut en mode Programmeur pour configurer les mêmes valeurs de clé de Registre de référence. Pour plus d’informations, consultez [KB 3140245 Update pour activer TLS 1.1 et TLS 1.2 comme protocoles sécurisés par défaut dans WinHTTP dans Windows](https://support.microsoft.com/help/3140245).
+Vous pouvez utiliser la calculatrice Windows par défaut en mode programmeur pour configurer les mêmes valeurs de clé de Registre de référence. Pour plus d’informations, consultez [KB 3140245 Update pour activer TLS 1.1 et TLS 1.2 en tant que protocoles sécurisés par défaut dans WinHTTP dans Windows](https://support.microsoft.com/help/3140245).
 
-Que la mise à jour Windows 7 ([KB 3140245](https://support.microsoft.com/help/3140245)) soit installée ou non, la sous-clé de Registre DefaultSecureProtocols n’est pas présente et doit être ajoutée manuellement ou via un objet de stratégie de groupe (GPO). Autrement dit, sauf si vous devez personnaliser les protocoles sécurisés activés ou restreints, cette clé n’est pas nécessaire. Vous avez uniquement besoin de la mise à jour Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)).
+Que la mise à jour Windows 7 ([KB 3140245](https://support.microsoft.com/help/3140245)) soit installée ou non, la sous-clé de Registre DefaultSecureProtocols n’est pas présente et doit être ajoutée manuellement ou par le biais d’un objet de stratégie de groupe (GPO). Autrement dit, sauf si vous devez personnaliser les protocoles sécurisés activés ou restreints, cette clé n’est pas nécessaire. Il vous suffit de mettre à jour Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)).
 
 ## <a name="update-and-configure-the-net-framework-to-support-tls-12"></a>Mettez à jour et configurez le .NET Framework pour prendre en charge TLS 1.2
 
-Vous devez mettre à jour les applications qui appellent Microsoft 365 API sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. .NET 4.5 est défini par défaut sur TLS 1.1. Pour mettre à jour votre configuration .NET, consultez [Comment activer TLS (Transport Layer Security) 1.2 sur les clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+Vous devez mettre à jour les applications qui appellent des API Microsoft 365 sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. .NET 4.5 est défini par défaut sur TLS 1.1. Pour mettre à jour votre configuration .NET, consultez [Comment activer TLS (Transport Layer Security) 1.2 sur les clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Pour plus d’informations, consultez [Préparation à l’utilisation obligatoire de TLS 1.2 dans Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez la protection des liens sécurisés dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez les liens fiables Teams et consultez les graphiques des messages Liens fiables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc393372e5e8dace8ae42a2f748dfb24a7e7a5ed
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5507ac8dbedf1bd3adaf8fcebb95d71810940cb2
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086514"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385206"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -111,7 +111,7 @@ Vous devez spécifier les conditions de destinataire et les exceptions qui déte
 Vous ne pouvez utiliser une condition ou une exception qu'une seule fois, mais la condition ou l'exception peut contenir plusieurs valeurs. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
 > [!IMPORTANT]
-> Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+> Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
 >
 > - Le destinataire est : romain@contoso.com
 > - Le destinataire est membre de : Exécutifs
@@ -275,7 +275,7 @@ Pour plus d’informations sur l’ordre de priorité et la façon dont plusieur
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Liste « Bloquer les URL suivantes » pour les liens fiables
 
 > [!NOTE]
-> Vous pouvez désormais gérer les entrées d’URL de bloc dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). La liste « Bloquer les URL suivantes » est en cours de dépréciation. Nous allons essayer de migrer des entrées existantes de la liste « Bloquer les URL suivantes » pour bloquer les entrées d’URL dans la liste d’autorisations/de blocs du locataire. Les messages contenant l’URL bloquée seront mis en quarantaine.
+> Vous pouvez désormais gérer les entrées d’URL de bloc dans la [liste d’autorisations/de blocs du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). La liste « Bloquer les URL suivantes » est en cours de dépréciation. Nous allons essayer de migrer des entrées existantes de la liste « Bloquer les URL suivantes » pour bloquer les entrées d’URL dans la liste d’autorisations/de blocs du locataire. Les messages contenant l’URL bloquée seront mis en quarantaine.
 
 La liste **Bloquer les URL suivantes** définit les liens qui sont toujours bloqués par l’analyse des liens fiables aux emplacements suivants :
 
@@ -289,7 +289,7 @@ Vous configurez la liste des URL dans les paramètres globaux des liens fiables.
 
 **Remarques** :
 
-- Pour obtenir une liste véritablement universelle d’URL bloquées partout, consultez [Gérer la liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md).
+- Pour obtenir une liste véritablement universelle d’URL bloquées partout, consultez [Gérer la liste d’autorisation/de blocage du locataire](manage-tenant-allow-block-list.md).
 - Limites de la liste **Bloquer les URL suivantes** :
   - Le nombre maximal d’entrées est de 500.
   - La longueur maximale d’une entrée est de 128 caractères.
@@ -313,7 +313,7 @@ Les exemples des valeurs que vous pouvez entrer et leurs résultats sont décrit
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Listes « Ne pas réécrire les URL suivantes » dans les stratégies liens fiables
 
 > [!NOTE]
-> Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’URL d’autorisation dans la liste d’autorisations/blocages du locataire](allow-block-urls.md#create-allow-url-entries) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
+> Les entrées de la liste « Ne pas réécrire les URL suivantes » ne sont pas analysées ou encapsulées par des liens fiables pendant le flux de courrier. Utilisez [les entrées d’URL d’autorisation dans la liste d’autorisations/blocages du locataire](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) afin que les URL ne soient pas analysées ou encapsulées par des liens sécurisés pendant le flux de messagerie _et_ au moment du clic.
 
 Chaque stratégie De liens fiables contient une liste **Ne pas réécrire les URL suivantes** que vous pouvez utiliser pour spécifier des URL qui ne sont pas réécrites par l’analyse des liens fiables. En d’autres termes, la liste permet aux utilisateurs inclus dans la stratégie d’accéder aux URL spécifiées qui seraient autrement bloquées par des liens fiables. Vous pouvez configurer différentes listes dans différentes stratégies de liens fiables. Le traitement des stratégies s’arrête après l’application de la première stratégie (probablement la priorité la plus élevée) à l’utilisateur. Par conséquent, une seule option **Ne réécrivez pas la liste d’URL suivante** est appliquée à un utilisateur qui est inclus dans plusieurs stratégies de liens fiables actives.
 
@@ -325,7 +325,7 @@ Pour ajouter des entrées à la liste dans des stratégies de liens fiables nouv
   - Microsoft Teams
   - Applications web Office
 
-  Pour obtenir une liste véritablement universelle d’URL autorisées partout, consultez [Gérer la liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md). Toutefois, notez que les URL ajoutées ne seront pas exclues de la réécriture des liens fiables, comme cela doit être fait dans une stratégie liens sécurisés.
+  Pour obtenir une liste véritablement universelle d’URL autorisées partout, consultez [Gérer la liste d’autorisation/de blocage du locataire](manage-tenant-allow-block-list.md). Toutefois, notez que les URL ajoutées ne seront pas exclues de la réécriture des liens fiables, comme cela doit être fait dans une stratégie liens sécurisés.
 
 - Envisagez d’ajouter des URL internes couramment utilisées à la liste pour améliorer l’expérience utilisateur. Par exemple, si vous avez des services locaux, tels que Skype Entreprise ou SharePoint, vous pouvez ajouter ces URL pour les exclure de l’analyse.
 - Si vous n’avez **pas encore réécrit les entrées d’URL suivantes dans vos stratégies Liens sécurisés** , veillez à consulter les listes et à ajouter des caractères génériques si nécessaire. Par exemple, votre liste comporte une entrée similaire `https://contoso.com/a` et vous décidez ultérieurement d’inclure des sous-chemins comme `https://contoso.com/a/b`. Au lieu d’ajouter une nouvelle entrée, ajoutez un caractère générique à l’entrée existante pour qu’elle devienne `https://contoso.com/a/*`.

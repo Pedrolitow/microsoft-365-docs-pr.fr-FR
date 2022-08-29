@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 746a1cbb1d4fa5e98fb3fc3cbba529232178987c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0501aeb833d41048e6e3f8848f20b3e4b0bc217b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640563"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427111"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
@@ -48,11 +48,11 @@ Pour obtenir une liste détaillée des différences entre la version précédent
 
 Lorsqu’une personne envoie un e-mail qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux de Microsoft 365 qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives et de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas dans la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent Outlook Desktop, Outlook Mac, Outlook Mobile sur iOS et Android, et Outlook sur le web (anciennement Outlook Web App).
 
-Les destinataires de messages chiffrés qui reçoivent des messages chiffrés ou protégés par des droits envoyés à leurs comptes Outlook.com, Gmail et Yahoo reçoivent un wrapper qui les dirige vers le portail OME où ils peuvent facilement s’authentifier à l’aide d’un compte Microsoft, de Gmail ou d’informations d’identification Yahoo.
+Les destinataires de messages chiffrés qui reçoivent des messages chiffrés ou protégés par des droits envoyés à leurs comptes Outlook.com, Gmail et Yahoo reçoivent un wrapper qui les dirige vers le portail de messages chiffrés où ils peuvent facilement s’authentifier à l’aide d’un compte Microsoft, de Gmail ou d’informations d’identification Yahoo.
 
-Les utilisateurs finaux qui lisent des messages chiffrés ou protégés par des droits sur des clients autres qu’Outlook utilisent également le portail OME pour afficher les messages chiffrés et protégés par des droits qu’ils reçoivent.
+Les utilisateurs finaux qui lisent des messages chiffrés ou protégés par des droits sur des clients autres qu’Outlook utilisent également le portail de messages chiffrés pour afficher les messages chiffrés et protégés par des droits qu’ils reçoivent.
 
-Si l’expéditeur du courrier protégé se trouve dans GCC High et que le destinataire se trouve en dehors de GCC High, y compris les utilisateurs commerciaux, les utilisateurs Outlook.com et les utilisateurs d’autres fournisseurs de messagerie tels que Gmail, le destinataire reçoit un wrapper. Le courrier du wrapper dirige le destinataire vers le portail OME où le destinataire est en mesure de lire et de répondre au message. Sinon, si l’expéditeur et le destinataire sont tous les deux dans l’environnement GCC High, même s’ils ne font pas partie de la même organisation, les destinataires qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits. Pour plus d’informations sur les différentes expériences dans GCC High, consultez [Comparer les versions d’OME](ome-version-comparison.md).
+Si l’expéditeur du courrier protégé se trouve dans GCC High et que le destinataire se trouve en dehors de GCC High, y compris les utilisateurs commerciaux, les utilisateurs Outlook.com et les utilisateurs d’autres fournisseurs de messagerie tels que Gmail, le destinataire reçoit un wrapper. Le courrier wrapper dirige le destinataire vers le portail de messages chiffrés où le destinataire est en mesure de lire et de répondre au message. Sinon, si l’expéditeur et le destinataire sont tous les deux dans l’environnement GCC High, même s’ils ne font pas partie de la même organisation, les destinataires qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits. Pour plus d’informations sur les différentes expériences dans GCC High, consultez [Comparer les versions d’OME](ome-version-comparison.md).
 
 Pour plus d’informations sur les limites de taille des messages et pièces jointes que vous pouvez chiffrer à l’aide d’OME, consultez [Exchange Online Limites](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
@@ -68,7 +68,7 @@ La révocation et l’expiration des messages fonctionnent uniquement pour les e
 
 Une façon d’activer Chiffrement de messages Microsoft Purview consiste à Exchange Online et à Exchange Online Protection administrateurs à définir des règles de flux de messagerie. Ces règles déterminent dans quelles conditions les messages électroniques doivent être chiffrés. Lorsqu’une action de chiffrement est définie pour une règle, tous les messages qui correspondent aux conditions de règle sont chiffrés avant leur envoi.
 
-Les règles de flux de messagerie sont flexibles, ce qui vous permet de combiner des conditions afin de répondre à des exigences de sécurité spécifiques dans une seule règle. Par exemple, vous pouvez créer une règle pour chiffrer tous les messages qui contiennent les mots-clés spécifiés et adressés à des destinataires externes. Chiffrement de messages Microsoft Purview également chiffrer les réponses des destinataires d’e-mails chiffrés.
+Les règles de flux de messagerie sont flexibles, ce qui vous permet de combiner des conditions afin de répondre à des exigences de sécurité spécifiques dans une seule règle. Par exemple, vous pouvez créer une règle pour chiffrer tous les messages qui contiennent les mots-clés spécifiés et adressés à des destinataires externes. Chiffrement de messages Microsoft Purview chiffre également les réponses des destinataires d’e-mails chiffrés.
 
 Pour plus d’informations sur la création de règles de flux de messagerie pour tirer parti de Chiffrement de messages Microsoft Purview, consultez [Définir des règles de flux de messagerie pour chiffrer les messages électroniques](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -80,7 +80,7 @@ Si vous êtes prêt à commencer à utiliser Chiffrement de messages Microsoft P
 
 Avec Chiffrement de messages Microsoft Purview, les utilisateurs peuvent envoyer des e-mails chiffrés à partir d’Outlook et de Outlook sur le web. En outre, les administrateurs peuvent configurer des règles de flux de messagerie dans Microsoft 365 pour chiffrer automatiquement les e-mails en fonction de la correspondance de mots clés ou d’autres conditions.
 
-Les destinataires de messages chiffrés qui se trouvent dans des organisations pourront lire ces messages en toute transparence dans n’importe quelle version d’Outlook, y compris Outlook pour PC, Outlook pour Mac, Outlook sur le web, Outlook pour iOS et Outlook pour Android. Les utilisateurs qui reçoivent des messages chiffrés sur d’autres clients de messagerie peuvent afficher les messages dans le portail OME.
+Les destinataires de messages chiffrés qui se trouvent dans des organisations pourront lire ces messages en toute transparence dans n’importe quelle version d’Outlook, y compris Outlook pour PC, Outlook pour Mac, Outlook sur le web, Outlook pour iOS et Outlook pour Android. Les utilisateurs qui reçoivent des messages chiffrés sur d’autres clients de messagerie peuvent afficher les messages dans le portail de messages chiffrés.
 
 Pour obtenir des conseils détaillés sur l’envoi et l’affichage de messages chiffrés, consultez ces articles.
 

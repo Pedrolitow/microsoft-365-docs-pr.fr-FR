@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Définissez la durée de la session de l’utilisateur dans Microsoft 365 avant son expiration.
-ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 7dbc3f7cfeaa0997661849e6f2a36439c9f6973a
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019920"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420087"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Délai d’expiration de session inactif pour Microsoft 365
 
@@ -76,12 +76,17 @@ Lorsqu’un utilisateur a été inactif dans les applications web Microsoft 365 
 - Les utilisateurs doivent être inactifs sur tous les onglets d’application web Microsoft 365 pendant la durée configurée. Si l’utilisateur est actif sur un onglet (par exemple, OWA) alors qu’il est inactif sur un autre onglet (par exemple, SPO), il est considéré comme actif et ne sera pas déconnecté.  
 
 - Dans ce cas, les utilisateurs ne seront pas déconnectés.
-    - S’ils obtiennent l’authentification unique (SSO) dans l’application web à partir du compte joint à l’appareil ou s’ils ont sélectionné **Rester connecté** au moment de la connexion. Pour plus d’informations sur le masquage de cette option pour votre organisation, consultez [Ajouter une personnalisation à la page de connexion de votre organisation](/azure/active-directory/fundamentals/customize-branding).
-    - S’ils se trouve sur un appareil géré (un appareil conforme ou joint à un domaine) et utilisent un navigateur pris en charge comme Microsoft Edge ou Google Chrome (avec [l’extension Comptes Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Pour que cette fonctionnalité se déclenche sur un appareil non managé, un abonnement Azure AD Premium P1 ou P2 éligible et une stratégie d’accès conditionnel spécifique sont requis. Pour plus d’informations, voir ci-dessous.
+    - S’ils obtiennent l’authentification unique (SSO) dans l’application web à partir du compte joint à l’appareil.
+    - S’ils ont sélectionné **Rester connecté** au moment de la connexion. Pour plus d’informations sur le masquage de cette option pour votre organisation, consultez [Ajouter une personnalisation à la page de connexion de votre organisation](/azure/active-directory/fundamentals/customize-branding).
+    - S’ils se trouve sur un appareil géré (un appareil conforme ou joint à un domaine) et utilisent un navigateur pris en charge comme Microsoft Edge ou Google Chrome (avec [l’extension Comptes Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)).
+
+## <a name="trigger-idle-session-timeout-only-on-unmanaged-devices"></a>Déclencher le délai d’expiration de session inactive uniquement sur les appareils non gérés
+
+Par défaut, la fonctionnalité de délai d’expiration de session inactive se déclenche sur tous les types d’appareils si les autres conditions sont remplies. Pour que cette fonctionnalité se déclenche uniquement sur un appareil non managé, un abonnement Azure AD Premium P1 ou P2 éligible est requis. Vous devez également ajouter une stratégie d’accès conditionnel dans le Centre d’administration Azure AD.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>Délai d’expiration de session inactif sur les appareils non gérés  
 
-Pour que le délai d’inactivité de la session soit déclenché sur les appareils non gérés, vous devez ajouter une stratégie d’accès conditionnel dans le Centre d’administration Azure AD.
+Pour que le délai d’inactivité de la session soit déclenché uniquement sur les appareils non gérés, vous devez ajouter une stratégie d’accès conditionnel dans le Centre d’administration Azure AD.
 
 1. Sur le **| d’accès conditionnel Page Stratégies** du Centre d’administration Azure AD, sélectionnez **Nouvelle stratégie** et entrez un nom pour la stratégie.
 

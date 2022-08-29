@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de compte bancaire en Nouvelle-Zélande.
-ms.openlocfilehash: b33eeb1e83f5efc9dd805c9ea036c6f30de600a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3e682641abeee0c6e48fa1df70c767f029d0af4c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996180"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369696"
 ---
 # <a name="new-zealand-bank-account-number"></a>Numéro de compte bancaire néo-zélandais
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

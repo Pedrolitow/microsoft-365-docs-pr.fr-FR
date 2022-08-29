@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aaab93748ea3bea8ce5de54f5996f5dbc6373f29
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 64ecf8a3f0d040ce8645d6dde803126efa11060f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099082"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329308"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -38,7 +38,7 @@ ms.locfileid: "67099082"
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 
-Le `DeviceTvmSoftwareInventory` tableau du schéma de repérage avancé contient l’inventaire [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) des logiciels actuellement installés sur les appareils de votre réseau, y compris les informations de fin du support. Vous pouvez, par exemple, rechercher des événements impliquant des appareils installés avec une version logicielle actuellement vulnérable. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+La `DeviceTvmSoftwareInventory` table du schéma de repérage avancé contient l’inventaire [Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) des logiciels actuellement installés sur les appareils de votre réseau, y compris les informations de fin de support. Vous pouvez, par exemple, rechercher des événements impliquant des appareils installés avec une version logicielle actuellement vulnérable. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
 >[!NOTE]
 > Les `DeviceTvmSoftwareInventory` tables et `DeviceTvmSoftwareVulnerabilities` les tables ont remplacé la `DeviceTvmSoftwareInventoryVulnerabilities` table. Ensemble, les deux premières tables incluent d’autres colonnes que vous pouvez utiliser pour vous aider à informer vos activités de gestion de vulnerablity ou à rechercher des appareils vulnérables.
@@ -68,4 +68,4 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
-- [Présentation de la fonction Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Vue d’ensemble de Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

@@ -1,7 +1,7 @@
 ---
-title: Table DeviceTvmSoftwareEvidenceBeta dans le schéma de recherche avancé
-description: Découvrez comment utiliser la table DeviceTvmSoftwareEvidenceBeta dans le schéma de recherche avancé.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & gestion des vulnérabilités, evidence, software evidence, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareEvidenceBeta
+title: Table DeviceTvmSoftwareEvidenceBeta dans le schéma de chasse avancé
+description: Découvrez comment utiliser la table DeviceTvmSoftwareEvidenceBeta dans le schéma de chasse avancé.
+keywords: repérage avancé, chasse aux menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, gestion des vulnérabilités & menaces, preuve, preuves logicielles, TVM, gestion des appareils, logiciels, inventaire, vulnérabilités, ID CVE, OS DeviceTvmSoftwareEvidenceBeta
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,27 +18,26 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7fd064b906e4afe5e337df85d9dc6f174edc99cf
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 9739511e366b24fdbca15548f6788c2e6de87084
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645837"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329374"
 ---
 # <a name="devicetvmsoftwareevidencebeta"></a>DeviceTvmSoftwareEvidenceBeta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
 > [!IMPORTANT]
-> Le `DeviceTvmSoftwareEvidenceBeta` tableau est actuellement en version bêta. Une fois qu’il quitte la version bêta, le nom de la table finale change et les noms de colonne peuvent également changer. Les modifications ruptureront probablement les requêtes qui utilisent encore des noms précédents. Il est conseillé aux utilisateurs d’examiner et d’ajuster leurs requêtes lors de la finalisation de ce tableau. 
+> La `DeviceTvmSoftwareEvidenceBeta` table est actuellement en version bêta. Une fois qu’il quitte la version bêta, le nom de la table finale change et les noms de colonnes peuvent également changer. Les modifications interrompent alors probablement les requêtes qui utilisent encore des noms précédents. Il est recommandé aux utilisateurs d’examiner et d’ajuster leurs requêtes lorsque cette table est finalisée. 
 
-
-Le tableau dans le schéma de recherche avancée contient les données de `DeviceTvmSoftwareEvidenceBeta` [threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) liées à la section preuve [logicielle.](/microsoft-365/security/defender-endpoint/tvm-software-inventory#software-evidence) Ce tableau vous permet d’afficher les preuves de l’endroit où un logiciel spécifique a été détecté sur un appareil. Vous pouvez utiliser ce tableau, par exemple, pour identifier les chemins d’accès aux fichiers de logiciels spécifiques. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+La `DeviceTvmSoftwareEvidenceBeta` table du schéma de chasse avancé contient des données de [Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) liées à la [section de preuves logicielles](/microsoft-365/security/defender-endpoint/tvm-software-inventory#software-evidence). Ce tableau vous permet d’afficher des preuves de l’emplacement où un logiciel spécifique a été détecté sur un appareil. Vous pouvez utiliser ce tableau, par exemple, pour identifier les chemins d’accès aux fichiers de logiciels spécifiques. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -48,16 +47,13 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SoftwareVendor` | `string` | Nom de l’éditeur de logiciels |
 | `SoftwareName` | `string` | Nom du produit logiciel |
 | `SoftwareVersion` | `string` | Numéro de version du produit logiciel |
-| `RegistryPaths` | `dynamic` | Chemins du Registre où des preuves indiquant l’existence du logiciel sur un appareil ont été détectées |
-| `DiskPaths` | `dynamic` | Chemins d’accès aux disques où des preuves au niveau du fichier indiquant l’existence du logiciel sur un appareil ont été détectées |
-| `LastSeenTime` | `string` | Date et heure de la dernière vue de l’appareil par ce service |
-
-
-
+| `RegistryPaths` | `dynamic` | Chemins d’accès au Registre où des preuves indiquant l’existence du logiciel sur un appareil ont été détectées |
+| `DiskPaths` | `dynamic` | Chemins de disque où des preuves au niveau du fichier indiquant l’existence du logiciel sur un appareil ont été détectées |
+| `LastSeenTime` | `string` | Date et heure de la dernière consultation de l’appareil par ce service |
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Présentation de la fonction Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Vue d’ensemble de Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 - [Repérage proactif des menaces](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -21,18 +21,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
-ms.date: 11/13/2020
-ms.openlocfilehash: 880a339549a6bde1987aec9200f17476ca518497
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+description: Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de détail, découvrez comment utiliser la clé de produit et activer votre abonnement.
+ms.date: 08/18/2022
+ms.openlocfilehash: 57208bc75a70f423e69065ae72eda6816145601b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112414"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384723"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 
-Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet article vous aide à activer votre abonnement.
+Si vous avez acheté Microsoft 365 Business Standard auprès d’un magasin de détail, cet article vous aide à activer votre abonnement.
   
  **Besoin d’autre chose ?** **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
  **Client du programme de licence en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [Programme de licences Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), consultez l’article, [Entrer votre clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md).
@@ -56,7 +56,7 @@ Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet arti
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Prolonger la date d’expiration ou ajouter une licence à un abonnement existant
 
-Pour prolonger la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business Standard existant, utilisez une nouvelle clé inutilisée pour le même plan Microsoft 365. La saisie de votre clé produit Microsoft 365 d’origine ne fonctionne pas, car une clé qui a déjà été échangée ne peut pas être utilisée à nouveau. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit](licenses/add-licenses-using-product-key.md).
+Pour étendre la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business Standard existant, utilisez une clé de produit nouvelle et inutilisée pour le même plan Microsoft 365. La saisie de votre clé produit Microsoft 365 d’origine ne fonctionne pas, car une clé qui a déjà été échangée ne peut pas être utilisée à nouveau. Pour plus d’informations, consultez [Étendre la date d’expiration de votre abonnement prépayé à l’aide d’une clé de produit Microsoft 365](subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key) ou [Ajouter des licences à un abonnement prépayé à l’aide d’une clé de produit Microsoft 365](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

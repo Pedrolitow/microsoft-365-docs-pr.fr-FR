@@ -11,24 +11,24 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Les administrateurs peuvent apprendre à créer et à gérer des charges utiles pour la formation à la simulation d’attaque dans Microsoft Defender pour Office 365 plan 2.
+description: Les administrateurs peuvent apprendre à créer et à gérer des charges utiles pour Exercice de simulation d'attaque dans Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4f763bc7c0fc47e845beabedfe6eff4968338934
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621290"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408438"
 ---
-# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Charges utiles dans l’entraînement de simulation d’attaque dans Defender pour Office 365
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Charges utiles dans Exercice de simulation d'attaque dans Defender pour Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à** [Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-Dans la formation de simulation d’attaque, une _charge utile_ est le message électronique de hameçonnage et les liens ou le contenu de pièce jointe qui sont présentés aux utilisateurs dans des simulations. La formation à la simulation d’attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 offre un catalogue de charges utiles intégré robuste pour les techniques d’ingénierie sociale disponibles. Toutefois, vous souhaiterez peut-être créer des charges utiles personnalisées qui fonctionneront mieux pour votre organisation.
+Dans Exercice de simulation d'attaque, une _charge utile_ est le message électronique de hameçonnage et les liens ou le contenu de pièce jointe qui sont présentés aux utilisateurs dans des simulations. Exercice de simulation d'attaque dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2 offre un catalogue de charges utiles intégré robuste pour les techniques d’ingénierie sociale disponibles. Toutefois, vous souhaiterez peut-être créer des charges utiles personnalisées qui fonctionneront mieux pour votre organisation.
 
-Pour afficher les charges utiles disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse \> **e-mail &** onglet **Simulation de simulation** **d’attaque** \> de collaboration\>, puis sélectionnez **Charges utiles**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **Charges utiles**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Pour afficher les charges utiles disponibles, ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com>l’adresse **Email &'onglet** \> Collaboration \> **Exercice de simulation d'attaque** \> **Bibliothèque de contenu simulation**, puis sélectionnez **Charges utiles**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **Charges utiles**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Les charges utiles** de l’onglet **Bibliothèque de contenu simulation** comportent deux onglets :
 
@@ -42,7 +42,7 @@ Les informations suivantes s’affichent pour chaque charge utile :
 - **Langue** : si la charge utile contient plusieurs traductions, les deux premières langues sont affichées directement. Pour afficher les langues restantes, pointez sur l’icône numérique (par exemple, **+10**).
 - **Source** : pour les charges utiles intégrées, la valeur est **Global**. Pour les charges utiles personnalisées, la valeur est **Locataire**.
 - **Simulations lancées** : nombre de simulations lancées qui utilisent la charge utile.
-- **Taux compromis (%)**: pour les charges utiles intégrées, cette valeur correspond au taux de compromission moyen prédit pour les simulations d’entraînement de simulation d’attaque qui utilisent le même type de charge utile dans toutes les autres organisations Microsoft 365.
+- **Taux compromis (%)**: pour les charges utiles intégrées, cette valeur correspond au taux de compromission moyen prédit pour les simulations Exercice de simulation d'attaque qui utilisent le même type de charge utile dans toutes les autres organisations Microsoft 365.
 - **Créé par** : Pour les charges utiles intégrées, la valeur est **Microsoft**. Pour les charges utiles personnalisées, la valeur est l’UPN de l’utilisateur qui a créé la charge utile.
 - **Dernière modification**
 - **Technique** : Une des [techniques d’ingénierie sociale](attack-simulation-training.md#select-a-social-engineering-technique) disponibles :
@@ -51,6 +51,7 @@ Les informations suivantes s’affichent pour chaque charge utile :
   - **Lien dans la pièce jointe**
   - **Lien vers un programme malveillant**
   - **Drive-by URL**
+  - **Octroi de consentement OAuth**
 - **État** : la valeur est **Ready** ou **Draft**. Sous l’onglet **Charges utiles globales** , la valeur est toujours **Prête**.
 
 Pour rechercher une charge utile dans la liste, utilisez l’icône ![Rechercher.](../../media/m365-cc-sc-search-icon.png) **Zone de recherche** pour rechercher le nom de la charge utile.
@@ -94,18 +95,18 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 > [!NOTE]
 > Certaines marques, logos, symboles, insignias et autres identificateurs sources bénéficient d’une protection renforcée en vertu des lois et lois locales, d’État et fédérales. L’utilisation non autorisée de ces indicateurs peut exposer les utilisateurs à des sanctions, y compris des amendes pénales. Bien qu’il ne s’agit pas d’une liste exhaustive, il s’agit des scellés présidentiels, vice-présidentiels et du Congrès, de la CIA, du FBI, de la Sécurité sociale, de l’assurance-maladie et de Medicaid, du États-Unis internal revenue service et des Jeux olympiques. Au-delà de ces catégories de marques, l’utilisation et la modification d’une marque tierce comportent un risque inhérent. L’utilisation de vos propres marques et logos dans une charge utile serait moins risquée, en particulier lorsque votre organisation autorise l’utilisation. Si vous avez d’autres questions sur ce qui est ou n’est pas approprié à utiliser lors de la création ou de la configuration d’une charge utile, vous devez consulter vos conseillers juridiques.
 
-1. Dans le portail Microsoft 365 Defender, <https://security.microsoft.com>accédez à l’onglet Charges utiles du locataire de la **simulation** \> d’attaque de l’onglet **e-mail & collaboration** \> simulation de **simulation** d’attaque sous l’onglet \> **Charges utiles** \> **du locataire payloads**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **Charges utiles** et onglet **Charges utiles du locataire**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>**Email & onglet** \> Collaboration **Exercice de simulation d'attaque** \> **Bibliothèque de contenu simulation** onglet \> **Charges utiles** \> du **locataire payloads**. Pour accéder directement à l’onglet **Bibliothèque de contenu simulation** dans lequel vous pouvez sélectionner **Charges utiles** et onglet **Charges utiles du locataire**, utilisez <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
    Cliquez sur ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **Créez une charge utile** sous l’onglet **Charges utiles du locataire** dans **Payloads** pour démarrer l’Assistant Création de charge utile.
 
-   ![Créez une charge utile sous l’onglet Charges utiles du locataire dans Payloads in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-create.png)
+   ![Créez une charge utile sous l’onglet Charges utiles du locataire dans Charges utiles dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
    > ![Créer une icône de charge utile.](../../media/m365-cc-sc-create-icon.png) **La création d’une charge utile** est également disponible à l’étape **sélectionner la charge utile et la page de connexion** de l’Assistant création de simulation. Pour plus d’informations, consultez [Créer une simulation : sélectionner une charge utile et une page de connexion](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > À tout moment pendant l’Assistant création, vous pouvez cliquer sur **Enregistrer et fermer** pour enregistrer votre progression et continuer à configurer la charge utile ultérieurement. Vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant la notification sous l’onglet **Charges utiles du locataire** dans **Charges utiles**, puis en ![cliquant sur l’icône Modifier la charge utile.](../../media/m365-cc-sc-edit-icon.png) **Modifiez la charge utile**. La charge utile partiellement terminée aura la valeur **d’état** **Draft**.
 
-2. Dans la page **Sélectionner un type** , la seule valeur que vous pouvez sélectionner actuellement est **e-mail**.
+2. Dans la page **Sélectionner un type**, la seule valeur que vous pouvez sélectionner est **Email**.
 
    Cliquez sur **Suivant**.
 
@@ -116,8 +117,9 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
    - **Lien dans la pièce jointe**
    - **Lien vers un programme malveillant**
    - **Drive-by URL**
+   - **Octroi de consentement OAuth**
 
-   Pour plus d’informations, consultez [Simuler une attaque par hameçonnage avec l’entraînement de simulation d’attaque dans Defender pour Office 365](attack-simulation-training.md).
+   Pour plus d’informations, consultez [Simuler une attaque par hameçonnage avec Exercice de simulation d'attaque dans Defender pour Office 365](attack-simulation-training.md).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -135,6 +137,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
      - **Utilisez le prénom comme nom d’affichage** : par défaut, ce paramètre n’est pas sélectionné.
      - **À partir de l’e-mail** : si vous choisissez une adresse e-mail interne pour l’expéditeur de votre charge utile, la charge utile semble provenir d’un collègue. Cette adresse e-mail de l’expéditeur augmente la sensibilité d’un utilisateur à la charge utile et aide à informer les employés sur le risque de menaces internes.
      - **Sujet de l’e-mail**
+     - **Ajouter une balise externe à l’e-mail** : par défaut, ce paramètre n’est pas sélectionné.
 
    - **Section Détails de** la pièce jointe : cette section est disponible uniquement si vous avez sélectionné **La pièce jointe du programme malveillant**, **lier en pièce jointe** ou **lier à un programme malveillant** dans la page **Sélectionner une technique** . Configurez les paramètres suivants :
      - **Nommer votre pièce jointe**
@@ -144,9 +147,9 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
      Plus tard, vous incorporerez l’URL dans le corps du message.
 
-   - Section **lien d’hameçonnage** : cette section est disponible uniquement si vous avez sélectionné **La récolte des informations d’identification**, **lier en pièce jointe** ou **l’URL de lecteur sur** la page **Sélectionner la technique**.
+   - Section **relative au lien d’hameçonnage** : cette section est disponible uniquement si vous avez sélectionné **La collecte des informations d’identification**, **lier en pièce jointe**, **l’URL drive-by** ou l’octroi de **consentement OAuth** sur la page **Sélectionner la technique**.
 
-     Pour la **collecte des informations d’identification** ou l’URL **drive-by**, le nom de la zone est **Sélectionner une URL que vous souhaitez être votre lien d’hameçonnage**. Plus tard, vous incorporerez l’URL dans le corps du message.
+     Pour la **collecte des informations d’identification**, l’URL **drive-by** ou **l’octroi de consentement OAuth**, le nom de la zone est **Sélectionner une URL que vous souhaitez être votre lien de hameçonnage**. Plus tard, vous incorporerez l’URL dans le corps du message.
 
      Pour **Lien dans la pièce jointe**, le nom de la zone est **Sélectionner une URL dans cette pièce jointe que vous souhaitez être votre lien d’hameçonnage**. Plus tard, vous incorporerez l’URL dans la pièce jointe.
 
@@ -202,7 +205,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
    - **Section Langue** : Sélectionnez la langue de la charge utile. Les valeurs disponibles sont : **anglais**, **espagnol**, **allemand**, **japonais**, **Français**, **portugais**, **néerlandais**, **italien**, **suédois**, **chinois (simplifié)**, **norvégien bokmål**, **polonais**, **russe**, **finnois**, **coréen**, **turc**, **hongrois**, **hébreu**, **thaï, arabe**, **vietnamien**, **slovaque**, **grec**, **indonésien**, **roumain**, **slovène**, **croate**, **catalan** ou **autre**.
 
-   - **Section e-mail** :
+   - **Email section de message** :
 
      - Vous pouvez cliquer sur **Importer un e-mail** , puis **choisir un fichier** pour importer un fichier de message en texte brut existant.
 
@@ -220,9 +223,9 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
          - **Insérer une ville** : la valeur ajoutée dans le corps du message est `${city}`.
          - **Date d’insertion** : la valeur ajoutée dans le corps du message est `${date|MM/dd/yyyy|offset}`.
 
-         :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Section E-mail de la page Configurer la charge utile dans l’Assistant Création de charge utile dans l’entraînement de simulation d’attaque dans Microsoft Defender pour Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
+         :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Section Email message de la page Configurer la charge utile dans l’Assistant Création de charge utile dans Exercice de simulation d'attaque dans Microsoft Defender pour Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
-       - **Contrôle de lien d’hameçonnage** : ce contrôle n’est disponible que si vous avez sélectionné **La collecte des informations d’identification**, **lier en pièce jointe** ou **l’URL drive-by** sur la page **Sélectionner la technique** . Utilisez ce contrôle pour nommer et insérer l’URL que vous avez sélectionnée précédemment dans la section **Lien d’hameçonnage** .
+       - **Contrôle de lien d’hameçonnage** : ce contrôle est disponible uniquement si vous avez sélectionné **La collecte des informations d’identification**, **lier en pièce jointe**, **l’URL drive-by** ou l’octroi de **consentement OAuth** sur la page **Sélectionner la technique** . Utilisez ce contrôle pour nommer et insérer l’URL que vous avez sélectionnée précédemment dans la section **Lien d’hameçonnage** .
 
        - **Contrôle de lien de pièce jointe** de programme malveillant : ce contrôle n’est disponible que si vous avez sélectionné **Lien vers un programme malveillant** dans la page **Sélectionner la technique** . Utilisez ce contrôle pour nommer et insérer l’URL que vous avez précédemment sélectionnée dans la section **Lien pour pièce jointe** .
 
@@ -232,11 +235,11 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
      - Sous l’onglet **Code** , vous pouvez afficher et modifier le code HTML directement. La mise en forme et d’autres contrôles tels que la **balise dynamique** et le **lien hameçonnage** ou **le lien De pièces jointes de programme malveillant** ne sont pas disponibles.
 
-     - Le bouton **Bascule Remplacer tous les liens du message électronique par le bouton bascule de lien d’hameçonnage** n’est disponible que si vous avez sélectionné La **collecte des informations d’identification**, **Lien vers un programme malveillant** ou **URL drive-by** sur la page **Sélectionner la technique** . Ce bouton bascule peut gagner du temps en remplaçant tous les liens du message par le **lien d’hameçonnage** ou l’URL de **la pièce jointe** précédemment sélectionné. Pour ce faire, activez le paramètre sur ![Activer l’icône bascule.](../../media/scc-toggle-on.png)
+     - Le bouton **Remplacer tous les liens du message électronique par le bouton bascule de lien d’hameçonnage** n’est disponible que si vous avez sélectionné La **collecte des informations d’identification**, **lier à un programme malveillant**, l’URL **drive-by** ou l’octroi de **consentement OAuth** sur la page **Sélectionner la technique** . Ce bouton bascule peut gagner du temps en remplaçant tous les liens du message par le **lien d’hameçonnage** ou l’URL de **la pièce jointe** précédemment sélectionné. Pour ce faire, activez le paramètre sur ![Activer l’icône bascule.](../../media/scc-toggle-on.png)
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-6. La page **Ajouter des indicateurs** n’est disponible que si vous avez sélectionné **La récolte des informations d’identification**, **lier en pièce jointe** ou **URL drive-by** dans la page **Sélectionner une technique** .
+6. La page **Ajouter des indicateurs** n’est disponible que si vous avez sélectionné **La récolte des informations d’identification**, **lier en pièce jointe**, **l’URL drive-by** ou l’octroi de **consentement OAuth** sur la page **Sélectionner la technique** .
 
    Les indicateurs aident les employés à identifier les signes de détection des messages d’hameçonnage.
 
@@ -250,7 +253,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
      |---|---|
      |**Type de pièce jointe**|Corps du message|
      |**Détails distrayants**|Corps du message|
-     |**Usurpation de domaine**|Corps du message <p> À partir de l’adresse e-mail|
+     |**Usurpation de domaine**|Corps du message <br/><br/> À partir de l’adresse e-mail|
      |**Message d’accueil générique**|Corps du message|
      |**Appels humanitaires**|Corps du message|
      |**Incohérence**|Corps du message|
@@ -262,11 +265,11 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
      |**Personnalisation non/minimale**|Corps du message|
      |**Pose en tant qu’ami, collègue, superviseur ou figure d’autorité**|Corps du message|
      |**Demande d’informations sensibles**|Corps du message|
-     |**Icônes et indicateurs de sécurité**|Corps du message <p> Objet du message|
-     |**Nom d’affichage et adresse e-mail de l’expéditeur**|À partir du nom <p> À partir de l’adresse e-mail|
-     |**Sentiment d’urgence**|Corps du message <p> Objet du message|
-     |**Fautes d’orthographe et de grammaire**|Corps du message <p> Objet du message|
-     |**Langue menaçante**|Corps du message <p> Objet du message|
+     |**Icônes et indicateurs de sécurité**|Corps du message <br/><br/> Objet du message|
+     |**Nom d’affichage et adresse e-mail de l’expéditeur**|À partir du nom <br/><br/> À partir de l’adresse e-mail|
+     |**Sentiment d’urgence**|Corps du message <br/><br/> Objet du message|
+     |**Fautes d’orthographe et de grammaire**|Corps du message <br/><br/> Objet du message|
+     |**Langue menaçante**|Corps du message <br/><br/> Objet du message|
      |**Trop beau pour être de vraies offres**|Corps du message|
      |**Conception ou mise en forme non professionnelle**|Corps du message|
      |**Lien hypertexte d’URL**|Corps du message|
@@ -276,7 +279,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
      Si vous **sélectionnez** l’objet du message électronique ou le corps du message comme emplacement de l’indicateur, un bouton Sélectionner un texte s’affiche. Cliquez sur ce bouton pour sélectionner le texte dans l’objet du message ou le corps du message où vous souhaitez que l’indicateur apparaisse. Lorsque vous avez terminé, cliquez sur **Sélectionner**.
 
-     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Emplacement du texte sélectionné dans le corps du message à ajouter à un indicateur dans l’Assistant Création de charge utile dans l’entraînement de simulation d’attaque" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
+     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Emplacement du texte sélectionné dans le corps du message à ajouter à un indicateur dans l’Assistant création de charge utile dans Exercice de simulation d'attaque" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
      - **Description de** l’indicateur : vous pouvez accepter la description par défaut de l’indicateur ou le personnaliser.
 
@@ -290,7 +293,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
    - Pour modifier un indicateur existant, sélectionnez-le dans la liste, puis cliquez sur l’icône ![Modifier l’indicateur.](../../media/m365-cc-sc-edit-icon.png) **Modifier l’indicateur**.
 
-   - Pour supprimer un indicateur existant, sélectionnez-le dans la liste, puis cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**.
+   - Pour supprimer un indicateur existant, sélectionnez-le dans la liste, puis cliquez sur ![l’icône Supprimer.](../../media/m365-cc-sc-delete-icon.png) **Supprimer**
 
    - Pour déplacer des indicateurs vers le haut ou vers le bas dans la liste, sélectionnez l’indicateur dans la liste, puis cliquez sur l’icône ![Monter.](../../media/m365-cc-sc-increase-icon.png) **Icône Monter** ou ![Descendre.](../../media/m365-cc-sc-decrease-icon.png) **Descends**.
 
@@ -306,7 +309,7 @@ Lorsque vous sélectionnez une charge utile dans la liste, un menu volant de dé
 
    Lorsque vous avez terminé, cliquez sur **Envoyer**. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 
-   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Page Examiner la charge utile dans l’entraînement de simulation d’attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
+   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Page De la charge utile de révision dans Exercice de simulation d'attaque dans le portail Microsoft 365 Defender" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 ## <a name="modify-payloads"></a>Modifier des charges utiles
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 53c04c70291f20ccb23ed54d1de552efb8a7619e
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783422"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437765"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
@@ -51,11 +51,11 @@ Erreur inattendue, essayez ultérieurement
 
 **Cause :**
 
-Vous disposez d’une version antérieure de l’application « Microsoft Authenticator » installée sur votre appareil.
+Une version antérieure de l’application « Microsoft Authenticator » est installée sur votre appareil.
 
-**Solution:**
+**Solution :**
 
-Installez la dernière version [et Microsoft Authenticator à](https://play.google.com/store/apps/details?id=com.azure.authenticator) partir de Google Play Store, puis réessayez.
+Installez la dernière version de [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) à partir de Google Play Store et réessayez.
 
 ## <a name="sign-in-failed---invalid-license"></a>Échec de la connexion : licence non valide
 
@@ -67,9 +67,9 @@ Installez la dernière version [et Microsoft Authenticator à](https://play.goog
 
 **Cause :**
 
-Vous n’avez pas Microsoft 365 licence attribuée, ou votre organisation n’a pas de licence pour Microsoft 365 Entreprise abonnement.
+Vous n’avez pas attribué de licence Microsoft 365 ou votre organisation n’a pas de licence pour Microsoft 365 Entreprise abonnement.
 
-**Solution:**
+**Solution :**
 
 Contactez votre administrateur pour obtenir de l'aide.
 
@@ -95,7 +95,7 @@ Autorisation des appareils Xiaomi : « Afficher les fenêtres contextuelles en c
 
 :::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="Volet de configuration contextuelle dans le portail Microsoft Defender 365" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
-**Solution:**
+**Solution :**
 
 Activez l’autorisation requise sur les appareils Xiaomi.
 
@@ -103,9 +103,10 @@ Activez l’autorisation requise sur les appareils Xiaomi.
 
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>Impossible d’autoriser l’autorisation de « protection permanente » lors de l’intégration sur certains appareils OEM
 
+
 **S’applique à :** Appareils OEM spécifiques uniquement.
 
-- **Xiaomi avec Android 11**
+- **Xiaomi**
 
 L’application Defender demande l’autorisation d’optimisation de la batterie/protection permanente sur les appareils dans le cadre de l’intégration de l’application, et la sélection **d’Autoriser** renvoie une erreur indiquant que l’autorisation n’a pas pu être définie. Elle affecte uniquement la dernière autorisation appelée « Protection permanente ». 
 
@@ -113,32 +114,11 @@ L’application Defender demande l’autorisation d’optimisation de la batteri
 
 Xiaomi a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender pour point de terminaison n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
 
-**Solution:**
+**Solution :**
 
-Nous travaillons avec OEM pour trouver une solution permettant d’activer cette autorisation à partir de l’écran d’intégration de l’application. Nous allons mettre à jour la documentation lorsque cela sera résolu.
-Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisations à partir des paramètres de l’appareil : 
+>[!IMPORTANT]
+>Ce problème a été résolu. Mettez à jour la dernière version de l’application pour terminer le processus d’intégration. Si le problème persiste, envoyez un **[commentaire dans l’application](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
 
-1. Accédez à **Paramètres** sur votre appareil.
-
-2. Recherchez et sélectionnez **Optimisation de la batterie**.
-
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="Page sur laquelle vous pouvez rechercher et sélectionner Optimisation de la batterie" lightbox="images/search-battery-optimisation.png":::
-
-3. Dans **Accès spécial à l’application**, sélectionnez **Optimisation de la batterie**.
-
-   :::image type="content" source="images/special-app-access.png" alt-text="Volet Accès spécial à l’application à partir duquel vous pouvez sélectionner Optimisation de la batterie" lightbox="images/special-app-access.png":::
-
-4. Modifiez la liste déroulante pour afficher **Toutes les applications**.
-
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="Liste déroulante à partir de laquelle vous pouvez remplacer la valeur par Toutes les applications dans le volet Optimisation de la batterie" lightbox="images/show-all-apps-2.png":::
-
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="Liste déroulante qui affiche l’option Toutes les applications sous le volet Optimisation de la batterie" lightbox="images/show-all-apps-1.png":::
-
-5. Recherchez « Microsoft Defender pour point de terminaison », puis sélectionnez **Ne pas optimiser**.
-
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="Page qui active l’emplacement de l’option Microsoft Defender pour point de terminaison et la sélection de Ne pas optimiser" lightbox="images/select-dont-optimise.png":::
-
-Revenez à l’écran d’intégration Microsoft Defender pour point de terminaison, sélectionnez **Autoriser** et vous serez redirigé vers l’écran du tableau de bord.
 
 ## <a name="send-in-app-feedback"></a>Envoyer des commentaires dans l’application
 

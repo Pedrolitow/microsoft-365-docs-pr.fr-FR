@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro d’identification fiscale en Suède.
-ms.openlocfilehash: 872d7d5ca1dd42f7db0861a5dd789a7cce707f86
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 538a3edf488c346f43f005d0614f25d2d04e2f0c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66992718"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368012"
 ---
 # <a name="sweden-tax-identification-number"></a>Numéro d’identifiant fiscal suédois
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

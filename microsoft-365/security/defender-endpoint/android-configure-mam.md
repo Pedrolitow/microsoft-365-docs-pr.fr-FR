@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9918763732fa828f17b395a3f96b24e8fbed46f2
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d6d9561f381771fb322a281f33f840c27ce61f90
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174979"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437795"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurer Microsoft Defender pour point de terminaison signaux de risque à l’aide de stratégies de protection des applications (MAM)
 
@@ -92,7 +92,7 @@ Les stratégies de protection des applications (APP) sont des règles qui garant
 Étant donné que la gestion des applications mobiles ne nécessite pas de gestion des appareils, vous pouvez protéger les données d’entreprise à la fois sur les appareils gérés et non gérés. La gestion est centrée autour de l’identité de l’utilisateur, ce qui supprime la nécessité de gérer les appareils. Les entreprises peuvent utiliser des stratégies de protection des applications avec ou sans GPM en même temps. Considérons, par exemple, un employé qui utilise à la fois un téléphone fourni par l’entreprise et sa propre tablette personnelle. Le téléphone de l’entreprise est inscrit dans la gestion des appareils mobiles (MAM) et protégé par des stratégies de protection des applications, tandis que l’appareil personnel est protégé uniquement par des stratégies de protection des applications.
 
     b. Sélectionner des applications<br>
-    Une application gérée est une application à laquelle sont appliquées des stratégies de protection des applications et qui peut être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou encapsulée par le [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de Intune stratégies de protection des applications. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
+    Une application gérée est une application à laquelle des stratégies de protection d’application sont appliquées et pouvant être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou encapsulée par le [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de Intune stratégies de protection des applications. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
 
     *Exemple : Outlook en tant qu’application managée*
 
@@ -133,7 +133,11 @@ Sélectionnez **Paramètre > niveau maximal autorisé de menace d’appareil** d
 
 6. Sélectionnez **Continuer** à vous connecter à l’application managée. 
 
-### <a name="configure-privacy-controls"></a>Configurer les contrôles de confidentialité 
+## <a name="configure-privacy-controls"></a>Configurer les contrôles de confidentialité 
+>[!IMPORTANT]
+>Les contrôles de confidentialité sur Microsoft Defender pour point de terminaison sur la gestion des applications mobiles sont en préversion publique. Les informations suivantes concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+>**Si vous souhaitez essayer cette fonctionnalité ou fournir des commentaires, contactez-nous à mdatpmobile@microsoft.com.**
+
 Les administrateurs peuvent utiliser les étapes suivantes pour activer la confidentialité et ne pas collecter le nom de domaine, les détails de l’application et les informations réseau dans le cadre du rapport d’alerte pour les menaces correspondantes.
 
 1. Dans le Centre d’administration Microsoft Endpoint Manager, accédez aux **stratégies de configuration des applications > app > Ajouter des applications managées >**.
@@ -149,6 +153,9 @@ Les administrateurs peuvent utiliser les étapes suivantes pour activer la confi
 6. Examinez et créez la stratégie.
 
 ## <a name="optional-permissions"></a>Autorisations facultatives 
+>[!IMPORTANT]
+>Les autorisations facultatives sur Microsoft Defender pour point de terminaison sont en préversion publique. Les informations suivantes concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+>**Si vous souhaitez essayer cette fonctionnalité ou fournir des commentaires, contactez-nous à mdatpmobile@microsoft.com.**
 
 Microsoft Defender pour point de terminaison sur Android active les autorisations facultatives dans le flux d’intégration. Actuellement, les autorisations requises par MDE sont obligatoires dans le flux d’intégration. Avec cette fonctionnalité, l’administrateur peut déployer MDE sur des appareils Android avec des stratégies GAM sans appliquer les autorisations VPN et d’accessibilité obligatoires lors de l’intégration. Les utilisateurs finaux peuvent intégrer l’application sans les autorisations obligatoires et passer en revue ultérieurement ces autorisations. 
 

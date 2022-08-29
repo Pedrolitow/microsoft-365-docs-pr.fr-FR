@@ -21,12 +21,12 @@ ms.custom:
 description: Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du locataire qui affectent la sécurité de votre environnement Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3b4d0580a8807dd9801b082a8326e4a17b65f5f
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2a48d3c935a5c4afb1006c31c586744fd6964b94
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773134"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385570"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
@@ -49,7 +49,7 @@ Le portail Microsoft 365 Defender inclut des fonctionnalités qui protègent vot
 
 |Zone|Stratégie par défaut ?|Recommandation|
 |---|---|---|
-|**Anti-hameçonnage**|Oui|Configurez la stratégie anti-hameçonnage par défaut comme décrit ici : [Configurez les paramètres de protection anti-hameçonnage dans EOP et Defender pour Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Plus d’informations : <ul><li>[Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Paramètres de stratégie anti-hameçonnage recommandés dans Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Perspicacité de l'usurpation d'identité](impersonation-insight.md)</li><li>[Informations sur l’intelligence d’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md)</li><li>[Gérer la liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md).</li></ul>|
+|**Anti-hameçonnage**|Oui|Configurez la stratégie anti-hameçonnage par défaut comme décrit ici : [Configurez les paramètres de protection anti-hameçonnage dans EOP et Defender pour Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Plus d’informations : <ul><li>[Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Paramètres de stratégie anti-hameçonnage recommandés dans Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Perspicacité de l'usurpation d'identité](impersonation-insight.md)</li><li>[Informations sur l’intelligence d’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md)</li><li>[Gérer la liste d’autorisations/de blocs du locataire](manage-tenant-allow-block-list.md).</li></ul>|
 |**Moteur anti-programme malveillant**|Oui|Configurez la stratégie anti-programme malveillant par défaut comme décrit ici : [Configurez les paramètres de protection contre les programmes malveillants dans EOP](protect-against-threats.md#part-1---anti-malware-protection-in-eop). <p> Plus d’informations : <ul><li>[Protection contre les programmes malveillants](anti-malware-protection.md)</li><li>[Paramètres de stratégie anti-programme malveillant recommandés](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configurer des stratégies anti-programme malveillant](configure-anti-malware-policies.md)</li></ul>|
 |**Pièces jointes sécurisées dans Defender pour Office 365**|Non|Configurez les paramètres globaux pour les pièces jointes sécurisées et créez une stratégie de pièces jointes sécurisées comme décrit ici : [Configurer les paramètres des pièces jointes sécurisées dans Microsoft Defender pour Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> Plus d’informations : <ul><li>[Paramètres de pièces jointes fiables recommandés](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Pièces jointes sécurisées dans Microsoft Defender pour Office 365](safe-attachments.md)</li><li>[Définir des stratégies de pièces jointes fiables](set-up-safe-attachments-policies.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Documents sécurisés dans Microsoft 365 E5](safe-docs.md)</li></ul>|
 |**Liens sécurisés dans Microsoft Defender pour Office 365**|Non|Créez une stratégie liens sécurisés comme décrit ici : [configurez les paramètres liens fiables dans Microsoft Defender pour Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> Plus d’informations : <ul><li>[Paramètres de liens fiables recommandés](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Configuration des stratégies de liens fiables](set-up-safe-links-policies.md)</li><li>[Liens sécurisés dans Microsoft Defender pour Office 365](safe-links.md)</li></ul>|

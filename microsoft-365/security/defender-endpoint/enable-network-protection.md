@@ -15,25 +15,29 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 8f8f189e3cf340c0056eb6e9cbbbfefe6f4e148d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574000"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405813"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus Microsoft Defender
 
 **Plateformes**
+
 - Windows
+- Linux \(Afficher la [protection réseau pour Linux](network-protection-linux.md)\)
+- macOS \(Afficher la [protection réseau pour macOS](network-protection-macos.md)\)
 
 > [!TIP]
 > Vous voulez découvrir Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -95,7 +99,6 @@ Activez la protection réseau à l’aide de l’une des méthodes suivantes :
 Utilisez le fournisseur de services de configuration (CSP) [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) pour activer ou désactiver la protection réseau ou activer le mode d’audit.
 
 [Mettez à jour la plateforme anti-programme malveillant Microsoft Defender vers la dernière version](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) avant d’activer ou de désactiver la protection réseau ou d’activer le mode d’audit.
-
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -180,11 +183,10 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
    - **Bloquer**
    - **Audit**
    - **Disabled**
-   
-6. Effectuez le reste des étapes et enregistrez la stratégie. 
+
+6. Effectuez le reste des étapes et enregistrez la stratégie.
 
 7. Dans le ruban, sélectionnez **Déployer** pour déployer la stratégie sur un regroupement.
-
 
 > [!IMPORTANT]
 > Une fois que vous avez déployé une stratégie Exploit Guard à partir de Configuration Manager, les paramètres Exploit Guard ne seront pas supprimés des clients si vous supprimez le déploiement. `Delete not supported`est enregistré dans le fichier ExploitGuardHandler.log du client Configuration Manager si vous supprimez le déploiement d’Exploit Guard du client. <!--CMADO8538577-->
@@ -208,6 +210,10 @@ Utilisez la procédure suivante pour activer la protection réseau sur les ordin
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection du réseau](network-protection.md)
+
+- [Protection réseau pour Linux](network-protection-linux.md)
+
+- [Protection réseau pour macOS](network-protection-macos.md)
 
 - [Protection réseau et liaison TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

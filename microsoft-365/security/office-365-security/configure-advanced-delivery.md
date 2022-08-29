@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tierces et messages remis aux boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051181"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420981"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés dans les boîtes aux lettres SecOps
 
@@ -33,7 +33,7 @@ ms.locfileid: "67051181"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour assurer la [sécurité de votre organisation par défaut](secure-by-default.md), Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement du filtrage pour les messages identifiés comme des programmes malveillants ou un hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la [sécurité de votre organisation par défaut](secure-by-default.md), Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement du filtrage pour les messages identifiés comme des programmes malveillants ou un hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations d’hameçonnage tierces : les attaques** simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’affecte votre organisation.
 - Boîtes **aux lettres d’opérations de sécurité (SecOps)** : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bons et mauvais).
@@ -46,7 +46,7 @@ Vous utilisez la _stratégie de remise avancée_ dans Microsoft 365 pour empêch
 - [AIR et le clustering dans Defender pour Office 365](office-365-air.md) ignorent ces messages.
 - Spécifiquement pour les simulations d’hameçonnage tierces :
   - [Administration les soumissions](admin-submission.md) génèrent une réponse automatique indiquant que le message fait partie d’une campagne de simulation d’hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et AIR ne seront pas déclenchés. L’expérience des soumissions d’administrateurs affiche ces messages sous la forme d’une menace simulée.
-  - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du message de rapport [ou des compléments report phishing](enable-the-report-message-add-in.md), le système ne génère pas d’alerte, d’investigation ou d’incident. Les liens ou fichiers ne seront pas détonés, mais le message s’affiche également sous **l’onglet Messages signalés par l’utilisateur** de la page **Soumissions** .
+  - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du message de rapport [ou des compléments report phishing](enable-the-report-message-add-in.md), le système ne génère pas d’alerte, d’investigation ou d’incident. Les liens ou fichiers ne sont pas détonés, mais le message s’affiche sous **l’onglet Messages signalés par l’utilisateur** de la page **Soumissions** .
   - [Les liens sécurisés dans Defender pour Office 365](safe-links.md) ne bloquent ni ne détonent les URL spécifiquement identifiées dans ces messages au moment du clic. Les URL sont toujours encapsulées, mais elles ne sont pas bloquées.
   - [Les pièces jointes sécurisées dans Defender pour Office 365](safe-attachments.md) ne détonent pas les pièces jointes dans ces messages.
 
@@ -66,7 +66,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Livraison avancée** , ouvrez <https://security.microsoft.com/advanceddelivery>.
 
-- Pour vous connecter à Security & Compliance PowerShell, consultez [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Vous devez disposer d’autorisations pour pouvoir effectuer les procédures décrites dans cet article :
   - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie de remise avancée, vous devez être membre du groupe de **rôles Administrateur** de la sécurité dans le **portail Microsoft 365 Defender** et membre du groupe de **rôles Gestion de l’organisation** dans **Exchange Online**.
@@ -93,9 +93,23 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
      Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+4. Lorsque vous avez terminé, cliquez sur **Ajouter**, puis sur **Fermer**.
 
-Les entrées de boîte aux lettres SecOps que vous avez configurées s’affichent sous l’onglet **Boîte aux lettres SecOps** . Pour apporter des modifications, cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Modifier** sous l’onglet.
+Les entrées de boîte aux lettres SecOps que vous avez configurées s’affichent sous l’onglet **Boîte aux lettres SecOps** .
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour modifier ou supprimer des boîtes aux lettres SecOps dans la stratégie de remise avancée
+
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **avancées** dans la section **Règles**. Pour accéder directement à la page **Livraison avancée** , utilisez <https://security.microsoft.com/advanceddelivery>.
+
+2. Dans la page **De remise avancée** , vérifiez que l’onglet Boîte **aux lettres SecOps** est sélectionné, puis cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
+
+3. Dans le menu volant **Modifier les boîtes aux lettres SecOps** qui s’ouvre, vous ajoutez ou supprimez des boîtes aux lettres comme décrit dans la section précédente.
+
+   Pour supprimer toutes les boîtes aux lettres, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de chaque valeur jusqu’à ce qu’il n’y ait plus de boîtes aux lettres sélectionnées.
+
+4. Lorsque vous avez terminé, cliquez sur **Enregistrer** , puis sur **Fermer**.
+
+Les entrées de boîte aux lettres SecOps que vous avez configurées s’affichent sous l’onglet **Boîte aux lettres SecOps** . Si vous avez supprimé toutes les entrées de boîte aux lettres SecOps, la liste est vide.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations d’hameçonnage tierces dans la stratégie de remise avancée
 
@@ -117,7 +131,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées s’affiche
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
 
-   - **URL de simulation pour autoriser** : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation d’hameçonnage qui ne doivent pas être bloquées ou détonées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, consultez [la syntaxe d’URL de la liste d’autorisations/de blocs du locataire](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Ces URL sont encapsulées au moment du clic, mais elles ne sont pas bloquées.
+   - **URL de simulation pour autoriser** : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation d’hameçonnage qui ne doivent pas être bloquées ou détonées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, consultez [la syntaxe d’URL de la liste d’autorisations/de blocs du locataire](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list). Ces URL sont encapsulées au moment du clic, mais elles ne sont pas bloquées.
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
@@ -130,26 +144,38 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées s’affiche
    > - Au moins une **adresse IP d’envoi**.
    >
    > Vous pouvez éventuellement inclure **des URL de simulation pour vous** assurer que les URL des messages de simulation ne sont pas bloquées.
+   >
    > Vous pouvez spécifier jusqu’à 10 entrées pour chaque champ.
+   >
    > Il doit y avoir une correspondance sur au moins un **domaine** et une **adresse IP d’envoi**, mais aucune association entre les valeurs n’est conservée.
 
-4. Lorsque vous avez terminé, effectuez l’une des étapes suivantes :
-   - **Première fois** : cliquez sur **Ajouter**, puis sur **Fermer**.
-   - **Modifier l’existant** : cliquez sur **Enregistrer** , puis sur **Fermer**.
+4. Lorsque vous avez terminé, cliquez sur **Ajouter**, puis sur **Fermer**.
 
-Les entrées de simulation d’hameçonnage tierces que vous avez configurées s’affichent sous l’onglet **Simulation de hameçonnage** . Pour apporter des modifications, cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Modifier** sous l’onglet.
+Les entrées de simulation d’hameçonnage tierces que vous avez configurées s’affichent sous l’onglet **Simulation de hameçonnage** .
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour modifier ou supprimer des simulations d’hameçonnage tierces dans la stratégie de remise avancée
+
+1. Dans le portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>Email & Stratégies de **collaboration** \> & stratégies de **menace** \> **de règles** \> **avancées** dans la section **Règles**. Pour accéder directement à la page **Livraison avancée** , utilisez <https://security.microsoft.com/advanceddelivery>.
+
+2. Dans la page **Livraison avancée** , sélectionnez l’onglet **Simulation d’hameçonnage** , puis cliquez sur l’icône ![Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
+
+3. Dans le menu volant **Modifier la simulation d’hameçonnage tiers** qui s’ouvre, vous ajoutez ou supprimez des entrées pour **les URL domaine**, **d’envoi d’adresses IP** et de **simulation** , comme décrit dans la section précédente.
+
+   Pour supprimer toutes les entrées, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de chaque valeur jusqu’à ce qu’il n’y ait plus de domaines, d’adresses IP ou d’URL sélectionnés.
+
+4. Lorsque vous avez terminé, cliquez sur **Enregistrer** , puis sur **Fermer**.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Scénarios supplémentaires nécessitant un contournement du filtrage
 
-En plus des deux scénarios que la stratégie de remise avancée peut vous aider, il existe d’autres scénarios qui peuvent nécessiter le contournement du filtrage :
+En plus des deux scénarios que la stratégie de remise avancée peut vous aider, il existe d’autres scénarios dans lesquels vous devrez peut-être contourner le filtrage :
 
 - **Filtres tiers** : si l’enregistrement MX de votre domaine _ne pointe pas_ vers Office 365 (les messages sont routées ailleurs en premier), [la sécurité par défaut](secure-by-default.md) _n’est pas disponible_. Si vous souhaitez ajouter une protection, vous devez activer le filtrage amélioré pour les connecteurs (également appelé _liste d’ignorer_). Pour plus d’informations, consultez [Gérer le flux de messagerie à l’aide d’un service cloud tiers avec Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). Si vous ne souhaitez pas un filtrage amélioré pour les connecteurs, utilisez des règles de flux de messagerie (également appelées règles de transport) pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers. Pour plus d’informations, consultez [Utiliser des règles de flux de messagerie pour définir la liste de contrôle de contrôle d’accès dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 - **Faux positifs en cours d’examen** : vous souhaiterez peut-être autoriser temporairement certains messages qui sont toujours analysés par Microsoft via [des soumissions d’administrateurs](admin-submission.md) à signaler les messages connus qui sont incorrectement marqués comme mauvais pour Microsoft (faux positifs). Comme pour tous les remplacements, nous recommandons _**vivement**_ que ces allocations soient temporaires.
 
-## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procédures PowerShell de sécurité & conformité pour les boîtes aux lettres SecOps dans la stratégie de remise avancée
+## <a name="powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Procédures PowerShell pour les boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-Dans Security & Compliance PowerShell, les éléments de base des boîtes aux lettres SecOps dans la stratégie de remise avancée sont les suivants :
+Dans PowerShell, les éléments de base des boîtes aux lettres SecOps dans la stratégie de remise avancée sont les suivants :
 
 - **Stratégie de remplacement SecOps** : contrôlée par les **\*applets de commande -SecOpsOverridePolicy** .
 - **Règle de remplacement SecOps** : contrôlée par les **\*applets de commande -SecOpsOverrideRule** .
@@ -169,7 +195,7 @@ La configuration d’une boîte aux lettres SecOps dans la stratégie de remise 
 
 #### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>Étape 1 : Utiliser PowerShell pour créer la stratégie de remplacement SecOps
 
-Pour créer la stratégie de remplacement SecOps, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
@@ -188,7 +214,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 #### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>Étape 2 : Utiliser PowerShell pour créer la règle de remplacement SecOps
 
-Cet exemple crée la règle de boîte aux lettres SecOps avec les paramètres spécifiés.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), exécutez la commande suivante :
 
 ```powershell
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
@@ -201,7 +227,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-view-the-secops-override-policy"></a>Utiliser PowerShell pour afficher la stratégie de remplacement SecOps
 
-Cet exemple retourne des informations détaillées sur la seule stratégie de boîte aux lettres SecOps.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple retourne des informations détaillées sur la seule stratégie de boîte aux lettres SecOps.
 
 ```powershell
 Get-SecOpsOverridePolicy
@@ -211,7 +237,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-view-secops-override-rules"></a>Utiliser PowerShell pour afficher les règles de remplacement SecOps
 
-Cet exemple retourne des informations détaillées sur les règles de remplacement SecOps.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple retourne des informations détaillées sur les règles de remplacement SecOps.
 
 ```powershell
 Get-SecOpsOverrideRule
@@ -231,7 +257,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement SecOps
 
-Pour modifier la stratégie de remplacement SecOps, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
@@ -256,7 +282,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-the-secops-override-policy"></a>Utiliser PowerShell pour supprimer la stratégie de remplacement SecOps
 
-Cet exemple supprime la stratégie de boîte aux lettres SecOps et la règle correspondante.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple supprime la stratégie de boîte aux lettres SecOps et la règle correspondante.
 
 ```powershell
 Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
@@ -266,7 +292,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-secops-override-rules"></a>Utiliser PowerShell pour supprimer les règles de remplacement SecOps
 
-Pour supprimer une règle de remplacement SecOps, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Remove-SecOpsOverrideRule -Identity <RuleIdentity>
@@ -280,9 +306,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Sécurité & procédures PowerShell de conformité pour les simulations d’hameçonnage tierces dans la stratégie de remise avancée
+## <a name="powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procédures PowerShell pour les simulations d’hameçonnage tierces dans la stratégie de remise avancée
 
-Dans Security & Compliance PowerShell, les éléments de base des simulations d’hameçonnage tierces dans la stratégie de remise avancée sont les suivants :
+Dans PowerShell, les éléments de base des simulations d’hameçonnage tierces dans la stratégie de remise avancée sont les suivants :
 
 - **Stratégie de remplacement de simulation d’hameçonnage** : contrôlée par les **\*applets de commande -PhishSimOverridePolicy** .
 - **Règle de substitution de simulation d’hameçonnage** : contrôlée par les **\*applets de commande -PhishSimOverrideRule** .
@@ -307,7 +333,7 @@ La configuration d’une simulation d’hameçonnage tierce dans PowerShell est 
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Étape 1 : Utiliser PowerShell pour créer la stratégie de remplacement de simulation d’hameçonnage
 
-Cet exemple crée la stratégie de remplacement de simulation d’hameçonnage.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple crée la stratégie de remplacement de simulation d’hameçonnage.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -319,7 +345,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>Étape 2 : Utiliser PowerShell pour créer la règle de remplacement de simulation d’hameçonnage
 
-Utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -343,13 +369,13 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 #### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>Étape 3 : (Facultatif) Utiliser PowerShell pour identifier les URL de simulation d’hameçonnage à autoriser
 
-Utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-Pour plus d’informations sur la syntaxe d’URL, consultez [la syntaxe d’URL pour la liste d’autorisations/de blocs de locataire](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+Pour plus d’informations sur la syntaxe de l’URL, consultez [la syntaxe d’URL pour la liste d’autorisations/de blocs de locataire](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list)
 
 Cet exemple montre comment ajouter une entrée d’autorisation d’URL pour l’URL de simulation d’hameçonnage tierce spécifiée sans expiration.
 
@@ -361,7 +387,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, c
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour afficher la stratégie de remplacement de simulation d’hameçonnage
 
-Cet exemple retourne des informations détaillées sur la seule stratégie de remplacement de simulation d’hameçonnage.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple retourne des informations détaillées sur la seule stratégie de remplacement de simulation d’hameçonnage.
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -371,7 +397,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Utiliser PowerShell pour afficher les règles de remplacement de simulation d’hameçonnage
 
-Cet exemple retourne des informations détaillées sur les règles de remplacement de simulation d’hameçonnage.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple retourne des informations détaillées sur les règles de remplacement de simulation d’hameçonnage.
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -391,7 +417,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>Utiliser PowerShell pour afficher les entrées d’URL de simulation d’hameçonnage autorisées
 
-Pour afficher les URL de simulation d’hameçonnage autorisées, exécutez la commande suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), exécutez la commande suivante :
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
@@ -401,7 +427,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement de simulation d’hameçonnage
 
-Pour modifier la stratégie de remplacement de simulation d’hameçonnage, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -417,7 +443,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier les règles de remplacement de simulation d’hameçonnage
 
-Pour modifier la règle de remplacement de simulation d’hameçonnage, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -440,7 +466,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Vous ne pouvez pas modifier directement les valeurs d’URL. Vous pouvez [supprimer les entrées d’URL existantes](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) et [ajouter de nouvelles entrées d’URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) , comme décrit dans cet article.
 
-Pour modifier d’autres propriétés d’une entrée d’URL de simulation d’hameçonnage autorisée (par exemple, la date d’expiration ou les commentaires), utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), pour modifier d’autres propriétés d’une entrée d’URL de simulation d’hameçonnage autorisée (par exemple, la date d’expiration ou les commentaires), utilisez la syntaxe suivante :
 
 ```powershell
 Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
@@ -458,7 +484,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Utiliser PowerShell pour supprimer une stratégie de remplacement de simulation d’hameçonnage
 
-Cet exemple supprime la stratégie de remplacement de simulation d’hameçonnage et la règle correspondante.
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), cet exemple supprime la stratégie de remplacement de simulation d’hameçonnage et la règle correspondante.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -468,7 +494,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Utiliser PowerShell pour supprimer les règles de remplacement de simulation d’hameçonnage
 
-Pour supprimer une règle de remplacement de simulation d’hameçonnage, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>
@@ -484,7 +510,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>Utiliser PowerShell pour supprimer les entrées d’URL de simulation d’hameçonnage autorisées
 
-Pour supprimer une entrée d’URL de simulation de hameçonnage existante, utilisez la syntaxe suivante :
+Dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), utilisez la syntaxe suivante :
 
 ```powershell
 Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery

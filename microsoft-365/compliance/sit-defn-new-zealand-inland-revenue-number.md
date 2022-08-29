@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible du numéro de revenu intérieur de la Nouvelle-Zélande.
-ms.openlocfilehash: 26604014771674a2177f3fee6c062e3bfcee4175
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7df444660c59bd12526d979dd93d5313814083f3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950766"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368058"
 ---
-# <a name="new-zealand-inland-revenue-number"></a>Chiffre d’affaires intérieur de la Nouvelle-Zélande
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
+# <a name="new-zealand-inland-revenue-number"></a>Numéro de revenu intérieur néo-zélandais
 
 ## <a name="format"></a>Format
 
@@ -56,14 +48,14 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_new_zealand_inland_revenue_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_new_zealand_inland_revenue_number` trouvé.
+- La fonction `Func_new_zealand_inland_revenue_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_new_zealand_inland_revenue_number` est trouvé.
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_new_zealand_inland_revenue_number` recherche le contenu qui correspond au modèle.
+- La fonction `Func_new_zealand_inland_revenue_number` trouve un contenu qui correspond au modèle.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->

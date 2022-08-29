@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 4300aadd6ab57561592621a0d1aeb54887d70320
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174891"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437780"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Android
 
@@ -31,10 +31,18 @@ ms.locfileid: "67174891"
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->[!NOTE]
+>[!IMPORTANT]
 > Le **moteur anti-programme malveillant** de Microsoft Defender pour point de terminaison est désormais en disponibilité générale. Tous les utilisateurs doivent disposer d’une version Microsoft Defender pour point de terminaison supérieure à **1.0.3815.0000** pour utiliser cette nouvelle fonctionnalité de protection contre les programmes malveillants. Les utilisateurs sur Microsoft Defender pour point de terminaison version inférieure à 1.0.3815.0000 recevront des notifications et des messages de superposition dans l’application pour mettre à jour leur application Microsoft Defender pour point de terminaison. Les utilisateurs peuvent cliquer sur le lien fourni dans le message de superposition pour accéder au magasin de jeux managé et mettre à jour l’application. 
 >
 > Si les utilisateurs ne peuvent pas accéder au Play Store, l’application peut être mise à jour via le portail d’entreprise. 
+
+## <a name="privacy-controls"></a>Contrôles de confidentialité
+
+Microsoft Defender pour point de terminaison sur Android active les contrôles de confidentialité pour les administrateurs et les utilisateurs finaux. Cela inclut les contrôles pour les appareils inscrits (GPM) et non inscrits (MAM) (en préversion). Les administrateurs peuvent configurer la confidentialité dans le rapport d’alerte, tandis que les utilisateurs finaux peuvent configurer les informations partagées avec leur organisation. Pour plus d’informations, consultez [contrôles de confidentialité (GPM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) et [contrôles de confidentialité (MAM).](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls)
+
+## <a name="optional-permissions-and-disable-web-protection"></a>Autorisations facultatives et désactivation de la protection web
+
+Microsoft Defender pour point de terminaison sur Android active les **autorisations facultatives** dans le flux d’intégration. Actuellement, les autorisations requises par MDE sont obligatoires dans le flux d’intégration. Avec cette fonctionnalité, l’administrateur peut déployer MDE sur des appareils sans appliquer les autorisations **VPN** et **Accessibilité** obligatoires lors de l’intégration. Les utilisateurs finaux peuvent intégrer l’application sans les autorisations obligatoires et passer en revue ultérieurement ces autorisations. Cette fonctionnalité est actuellement présente uniquement pour les appareils non inscrits (MAM). Pour plus d’informations, consultez [autorisations facultatives](/microsoft-365/security/defender-endpoint/android-configure-mam#optional-permissions).
 
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Profil personnel BYOD microsoft defender sur Android Entreprise
@@ -60,9 +68,9 @@ Pour mettre à jour, les utilisateurs peuvent utiliser les étapes suivantes :
 
 Microsoft Defender pour point de terminaison est désormais disponible en tant que **Microsoft Defender** dans le play store. Avec cette mise à jour, l’application sera disponible en préversion pour **les consommateurs de la région des États-Unis**. En fonction de la façon dont vous vous connectez à l’application avec votre compte professionnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour point de terminaison ou aux fonctionnalités de Microsoft Defender pour les particuliers. Pour plus d’informations, consultez [ce blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) .
 
-## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
+## <a name="vulnerability-management"></a>Gestion des vulnérabilités
 
-Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, consultez [le billet techcommunity ici](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+Le 25 janvier 2022, nous avons annoncé la disponibilité générale de la gestion des vulnérabilités sur Android et iOS. Pour plus d’informations, consultez [le billet techcommunity ici](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Modifications d’autorisation à venir pour Microsoft Defender pour point de terminaison exécutant Android 11 ou version ultérieure (novembre 2021)
 

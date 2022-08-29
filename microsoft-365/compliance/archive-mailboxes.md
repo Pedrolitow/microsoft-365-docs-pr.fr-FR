@@ -14,23 +14,25 @@ ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: En savoir plus sur les boîtes aux lettres d’archivage pour fournir un stockage de boîtes aux lettres supplémentaire.
-ms.openlocfilehash: 57de7c7791615e8587222de992588f1923348059
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+description: Découvrez les boîtes aux lettres d’archivage pour fournir un stockage de boîte aux lettres supplémentaire.
+ms.openlocfilehash: 53967fbb829cdedddbadc0de9158d18330e71969
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621246"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359140"
 ---
 # <a name="learn-about-archive-mailboxes"></a>En savoir plus sur les boîtes aux lettres d’archivage
 
-L’archivage de boîte aux lettres dans Microsoft 365 (également appelé *Archivage sur place*) fournit aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois que vous avez activé les boîtes aux lettres d’archivage, la boîte aux lettres actuelle d’un utilisateur devient sa *boîte aux lettres principale* et une boîte aux lettres supplémentaire est créée, appelée *boîte aux lettres d’archivage*. Les deux boîtes aux lettres sont considérées comme la boîte aux lettres d’un utilisateur pour les fonctionnalités de conformité, telles que la recherche de contenu à partir du Portail de conformité Microsoft Purview, la rétention Microsoft 365 et la conservation pour litige.
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+L’archivage des boîtes aux lettres dans Microsoft Purview est parfois également appelé *archivage sur place* et fournit aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois que vous avez activé les boîtes aux lettres d’archivage, la boîte aux lettres actuelle d’un utilisateur devient sa *boîte aux lettres principale* et une boîte aux lettres supplémentaire est créée, appelée *boîte aux lettres d’archivage*. Les deux boîtes aux lettres sont considérées comme la boîte aux lettres d’un utilisateur pour les fonctionnalités de conformité, telles que la recherche de contenu à partir du Portail de conformité Microsoft Purview, la rétention Microsoft 365 et la conservation pour litige.
 
 Les utilisateurs peuvent accéder aux messages et les stocker dans leurs boîtes aux lettres d’archivage à l’aide d’Outlook et d’Outlook sur le web. Les utilisateurs peuvent également déplacer ou copier des messages entre leurs boîtes aux lettres principale et d’archivage. Ils peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil Récupérer les éléments supprimés.
 
 ## <a name="managing-archive-mailboxes-with-messaging-records-management-mrm"></a>Gestion des boîtes aux lettres d’archivage avec gestion des enregistrements de messagerie (MRM)
 
-Les messages peuvent également être déplacés vers la boîte aux lettres d’archivage par la [stratégie de rétention Exchange par défaut](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) de la gestion des enregistrements de messagerie (MRM). Cette stratégie par défaut est automatiquement affectée à chaque boîte aux lettres et effectue les opérations suivantes :
+Les messages peuvent également être déplacés vers la boîte aux lettres d’archivage par la [stratégie de rétention Exchange par défaut](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) à partir de la gestion des enregistrements de messagerie (MRM). Cette stratégie par défaut est automatiquement affectée à chaque boîte aux lettres et effectue les opérations suivantes :
 
   - Elle déplace les éléments datant de deux ans ou plus de la boîte aux lettres principale d’un utilisateur à sa boîte aux lettres d’archivage.
 
@@ -44,10 +46,6 @@ Vous pouvez personnaliser la stratégie MRM de votre organisation avec[balises d
 ## <a name="auto-expanding-archiving"></a>Archivage à extension automatique 
 
 Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go de stockage supplémentaire sont disponibles. Si les utilisateurs ont besoin de plus d’espace de stockage, activez l’archivage à extension automatique pour fournir jusqu’à 1,5 To de stockage supplémentaire dans les boîtes aux lettres d’archivage. Pour plus d’informations, voir [En savoir plus sur l’archivage à extension automatique.](autoexpanding-archiving.md)
-
-## <a name="licensing"></a>Licences
-
-Pour obtenir la liste des licences Outlook qui prennent en charge les boîtes aux lettres d’archivage, consultez les références à l’archivage sur place dans [Conditions requises pour les licences Outlook pour les fonctionnalités Exchange](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

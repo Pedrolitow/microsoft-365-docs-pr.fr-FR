@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro de carte d’identité de Malte.
-ms.openlocfilehash: b9f728930b14bb14954e45473c1c327ad36f0aa0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 1ce156644ad4b9625a6eb1257ba54534e2d2bab0
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996549"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368070"
 ---
 # <a name="malta-identity-card-number"></a>Numéro de carte d’identité maltais
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

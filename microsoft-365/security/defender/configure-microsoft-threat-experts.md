@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 01a88ff4f31e6a85c9fe6c52ee3968def1cc4ce1
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 3facbf62dcc6fc572ea46322c8969b4af2dcd68e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276369"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329000"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft via Microsoft 365 Defender
 

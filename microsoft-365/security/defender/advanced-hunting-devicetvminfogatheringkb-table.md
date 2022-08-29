@@ -1,7 +1,7 @@
 ---
 title: Table DeviceTvmInfoGatheringKB dans le schéma de chasse avancé
 description: Découvrez les métadonnées des événements d’évaluation dans la table DeviceTvmInfoGathering du schéma de chasse avancé.
-keywords: repérage avancé, chasse aux menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, colonne, type de données, description, gestion des vulnérabilités & menaces, TVM, gestion des appareils, logiciels, inventaire, vulnérabilités, ID CVE, OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities, MDVM
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c654ca395762426072bf8e5e20fd3f62e78a480c
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: e83ff6391e40f015bfeda48d429d50ae9cc9f9fc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607107"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329462"
 ---
 # <a name="devicetvminfogatheringkb"></a>DeviceTvmInfoGatheringKB
 

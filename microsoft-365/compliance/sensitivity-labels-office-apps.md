@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: 18153facee37f52ea0bcc5baa5e5193f63e06360
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306567"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67419943"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -76,9 +76,8 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.45+         | 2.47+ | 16.0.13628+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.49+ | En cours de révision | En cours de révision | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | Aperçu : 2.58+ lorsque vous [Inclure](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Aperçu : 16.0.14931+ lorsque vous [Inclure](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Prise en charge du format PDF](#pdf-support)| Préversion : [Canal bêta](https://office.com/insider) |  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
-
+|[Prise en charge de la co-édition et de l'enregistrement automatique](sensitivity-labels-coauthoring.md) pour les documents étiquetés et chiffrés | Canal actuel : 2107+ <br /><br> Canal mensuel des entreprises : 2107+ <br /><br> Canal d’entreprise semi-annuel : 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Prise en charge du format PDF](#pdf-support)| Préversion : [Canal actuel (préversion)](https://office.com/insider) |  En cours de révision | En cours de révision | En cours de révision | En cours de révision |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquettes de confidentialité dans Outlook
 
@@ -231,41 +230,13 @@ Cela signifie que si vous partagez des documents avec une autre organisation qui
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Partage de documents chiffrés avec des utilisateurs externes
 
-En plus de restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez étendre l’accès à tout autre utilisateur possédant un compte dans Azure Active Directory. Toutefois, si votre organisation utilise des stratégies d’accès conditionnel, consultez la [section suivante](#conditional-access-policies) pour considérations supplémentaires.
+Bien que vous puissiez restreindre l’accès aux utilisateurs de votre propre organisation, vous pouvez également étendre l’accès à tout autre utilisateur disposant d’un compte dans Azure Active Directory (Azure AD). Par défaut, ces utilisateurs externes sont authentifiés sans aucune configuration supplémentaire. Toutefois, il peut y avoir une configuration supplémentaire requise pour [les paramètres d’accès interlocataire des identités externes](/azure/active-directory/external-identities/cross-tenant-access-overview) Azure AD et [l’accès conditionnel](/azure/active-directory/conditional-access/overview). 
+
+Si les utilisateurs externes n’ont pas de compte dans Azure AD, ils peuvent s’authentifier à l’aide de comptes invités dans votre locataire. Ces comptes invités peuvent également être utilisés pour accéder à des documents partagés dans SharePoint ou OneDrive lorsque vous avez [activé des étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Pour plus d’informations sur les fonctionnalités Facultatives d’Azure AD et l’utilisation de comptes invités pour les exigences d’authentification, consultez [configuration Azure AD pour le contenu de chiffrement](encryption-azure-ad-configuration.md).
 
 Toutes les applications Office et autres [applications RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur s’est authentifié correctement. 
-
-Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, ils peuvent s’authentifier à l’aide de comptes invités dans votre client. Ces comptes invités peuvent également servir à accéder à des documents partagés dans SharePoint ou OneDrive lorsque vous avez [activé des étiquettes de niveau de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
-
-- Une option consiste à créer ces comptes invités vous-même. Vous pouvez spécifier une adresse de messagerie que ces utilisateurs utilisent déjà. Par exemple, son adresse Gmail.
-    
-    Cette option vous permet de restreindre l’accès et les droits à des utilisateurs spécifiques en spécifiant leur adresse de messagerie dans les paramètres de chiffrement. L'inconvénient est la surcharge administrative liée à la création du compte et à la coordination avec la configuration de l'étiquette.
-
-- Une autre option consiste à utiliser [Intégration de SharePoint et OneDrive à Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) afin que les comptes invités soient automatiquement créés lorsque vos utilisateurs partagent des liens.
-    
-    Cette option offre un coût d’administration minimal, car les comptes sont créés automatiquement et une configuration d’étiquette plus simple. Dans ce scénario, vous devez sélectionner l’option de chiffrement [Ajouter des utilisateur authentifiés](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users), car vous ne connaissez pas les adresses de messagerie à l’avance. Ce paramètre ne vous permet pas de restreindre l’accès et les droits d’utilisation à des utilisateurs spécifiques.
-
-Les utilisateurs externes peuvent également utiliser un compte Microsoft pour ouvrir des documents chiffrés lorsqu’ils utilisent les applications Windows et Microsoft 365 ([anciennement des applications Office 365](/deployoffice/name-change)) ou la version autonome d’Office 2019. Plus récemment pris en charge pour les autres plateformes, les comptes Microsoft sont également pris en charge pour l’ouverture de documents chiffrés sur macOS (Microsoft 365 Apps, version 16.42+), Android (version 16.0.13029+) et iOS (version 2.42+). Par exemple, un utilisateur de votre organisation partage un document chiffré avec un utilisateur extérieur à votre organisation, et les paramètres de chiffrement spécifient une adresse de messagerie Gmail pour l’utilisateur externe. Cet utilisateur externe peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois qu’ils se sont ouverts avec ce compte, ils peuvent ouvrir le document et le modifier, conformément aux restrictions d’utilisation qui leur sont spécifiées. Pour consulter un exemple pas à pas de ce scénario, consultez[Ouverture et modification du document protégé](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
-
-> [!NOTE]
-> L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour restreindre l’accès aux paramètres de chiffrement.
-
-Lorsqu’un utilisateur avec un compte Microsoft ouvre un document chiffré de cette façon, il crée automatiquement un compte invité pour le client si un compte invité du même nom n’existe pas encore. Lorsque le compte invité existe, il peut ensuite être utilisé pour ouvrir des documents dans SharePoint et OneDrive à l’aide d’Office sur le web, en plus d’ouvrir des documents chiffrés à partir des applications Office de bureau et mobiles pris en charge.
-
-Toutefois, le compte invité automatique n’est pas créé immédiatement dans ce scénario, en raison d’une latence de réplication. Si vous spécifiez des adresses de messagerie personnelles dans le cadre de vos paramètres de chiffrement d’étiquettes, nous vous recommandons de créer des comptes invités correspondants dans Azure Active Directory. Indiquez ensuite à ces utilisateurs qu’ils doivent utiliser ce compte pour ouvrir un document chiffré de votre organisation.
-
-> [!TIP]
-> Étant donné que vous ne savez pas si les utilisateurs externes utiliseront une application cliente Office prise en charge, le partage de liens à partir de SharePoint et OneDrive après avoir créé des comptes invités (pour des utilisateurs spécifiques) ou lorsque vous utilisez [l’intégration de SharePoint et OneDrive à Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (pour tout utilisateur authentifié) est une méthode plus fiable pour prendre en charge la collaboration sécurisée avec les utilisateurs externes.
-
-### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
-
-Si votre organisation a implémenté [Azure Active Directory stratégies d’accès conditionnel](/azure/active-directory/conditional-access/overview), vérifiez la configuration de ces stratégies. Si les stratégies incluent **Microsoft Azure Information Protection** et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre locataire, même s’ils ont un compte Azure AD dans leur propre locataire.
-
-Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut les informer que leur compte doit être ajouté en tant qu’utilisateur externe dans le locataire, avec les instructions incorrectes pour ce scénario pour **Se déconnecter et se reconnecter avec un autre compte d’utilisateur Azure Active Directory**.
-
-Si vous ne pouvez pas créer et configurer des comptes invités dans votre client pour des utilisateurs externes qui doivent ouvrir des documents chiffrés par vos étiquettes, vous devez supprimer Azure Information Protection des stratégies d’accès conditionnel ou exclure des utilisateurs externes des stratégies.
-
-Pour plus d’informations sur l’accès conditionnel et Azure Information Protection, le service de chiffrement utilisé par les étiquettes de niveau de confidentialité, consultez la question fréquemment posée, [Azure Information Protection est répertorié comme application cloud disponible pour l’accès conditionnel. Comment cela fonctionne-t-il ?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Délai de marquage et de chiffrage de contenus par les applications Office.
 
@@ -327,7 +298,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 Comme pour les autres marquages visuels dynamiques, la syntaxe est sensible à la casse, ce qui inclut les abréviations pour chaque type d’application (WEPO).
 
-Exemples :
+Exemples :
 
 - **Définissez le texte d’en-tête des documents Word uniquement :**
 

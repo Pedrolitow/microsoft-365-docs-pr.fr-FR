@@ -12,23 +12,26 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez la conformité et comment configurer les paramètres de confidentialité dans le Tableau blanc Microsoft.
-ms.openlocfilehash: 7f5026115b1d15b05dcf5dbb57293b22bf573c61
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 665586ed6f0e5667252fd7c1b5884aac5a116faf
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942469"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369112"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Configurer les paramètres de confidentialité dans le Tableau blanc Microsoft
 
 >[!NOTE]
 > Si vous ou vos utilisateurs souhaitez en savoir plus sur les paramètres de confidentialité par défaut, les expériences connectées facultatives et la façon dont les données de diagnostic sont collectées, dirigez-les vers la [confidentialité et la conformité du Tableau blanc Microsoft](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
 
-Si vous êtes l’administrateur du Tableau blanc Microsoft pour votre organisation, vous pouvez contrôler les éléments suivants :
+Si vous êtes l’administrateur du Tableau blanc Microsoft pour votre organisation, vous pouvez contrôler les paramètres suivants :
 
 - Quel niveau de données de diagnostic est collecté et envoyé à Microsoft à propos du logiciel client Tableau blanc s’exécutant sur l’appareil de l’utilisateur.
 
 - Indique si les expériences connectées facultatives dans le Tableau blanc sont disponibles pour vos utilisateurs.
+
+Pour configurer les paramètres de confidentialité, vous devez d’abord vous assurer que le tableau blanc est activé pour votre organisation. Pour plus d’informations, consultez [Gérer l’accès au Tableau blanc](manage-whiteboard-access-organizations.md).
+
 
 Pour configurer le niveau des données de diagnostic, connectez-vous au [Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview) avec votre compte d’administrateur. À partir de la page d’accueil du centre d’administration, accédez à **Afficher tous les paramètres > > paramètres de l’organisation > tableau blanc**.
 
@@ -38,17 +41,17 @@ Pour configurer la disponibilité d’expériences connectées facultatives, uti
 
 Vous pouvez choisir le niveau de données de diagnostic collectées et envoyées à Microsoft à propos du logiciel client Tableau blanc s’exécutant sur les appareils de votre organisation. Les données de diagnostic facultatives sont envoyées à Microsoft, sauf si vous modifiez le paramètre dans le Centre d'administration Microsoft 365. Si vous choisissez d’envoyer des données de diagnostic facultatives, les données de diagnostic requises sont également incluses.
 
-En plus de **Obligatoire** ou **Facultatif**, il existe également le choix ni l’un **ni l’autre**. Si vous choisissez cette option, aucune donnée de diagnostic sur le logiciel client Tableau blanc en cours d’exécution sur l’appareil de l’utilisateur n’est envoyée à Microsoft. Toutefois, cette option limite considérablement la capacité de Microsoft à détecter, diagnostiquer et corriger les problèmes que vos utilisateurs peuvent rencontrer lors de l’utilisation du Tableau blanc.
+En plus de **Obligatoire** ou **Facultatif**, il existe également un choix de **ni l’un ni l’autre**. Si vous choisissez cette option, aucune donnée de diagnostic sur le logiciel client Tableau blanc en cours d’exécution sur l’appareil de l’utilisateur n’est envoyée à Microsoft. Toutefois, cette option limite considérablement la capacité de Microsoft à détecter, diagnostiquer et corriger les problèmes que vos utilisateurs peuvent rencontrer lors de l’utilisation du Tableau blanc.
 
-Vos utilisateurs ne pourront pas modifier le niveau de données de diagnostic de leurs appareils s’ils sont connectés au Tableau blanc avec leurs informations d’identification d’organisation (parfois appelées compte professionnel ou scolaire). Toutefois, s’ils sont connectés au Tableau blanc avec un compte Microsoft, par exemple une adresse e-mail outlook.com personnelle, ils peuvent modifier le niveau de données de diagnostic sur leurs appareils en accédant à **Paramètres > Confidentialité et sécurité**.
+Vos utilisateurs ne pourront pas modifier le niveau de données de diagnostic de leurs appareils s’ils sont connectés au Tableau blanc avec leurs informations d’identification d’organisation (parfois appelées compte professionnel ou scolaire). Toutefois, s’ils sont connectés au Tableau blanc avec un compte Microsoft, tel qu’une adresse e-mail outlook.com personnelle, ils peuvent modifier le niveau de données de diagnostic sur leurs appareils en accédant à **Paramètres > Confidentialité et sécurité**.
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>Paramètre d’expériences connectées facultatif pour votre organisation
 
 Vous pouvez choisir de mettre des expériences connectées facultatives dans le Tableau blanc à la disposition de vos utilisateurs. Ces expériences connectées seront disponibles pour vos utilisateurs, sauf si vous modifiez le paramètre dans le Centre d'administration Microsoft 365. 
 
-Ces expériences connectés sont différentes car elles ne sont pas couvertes par le contrat commerciale de votre organisation avec Microsoft. Les expériences connectées facultatives supplémentaires offertes par Microsoft directement à vos utilisateurs sont régies par le [Contrat de services Microsoft](https://www.microsoft.com/servicesagreement) au lieu des [Conditions d'utilisation des services en ligne](https://www.microsoft.com/licensing/product-licensing/products).
+Ces expériences connectées sont différentes, car elles ne sont pas couvertes par l’accord commercial de votre organisation avec Microsoft. Les expériences connectées facultatives supplémentaires offertes par Microsoft directement à vos utilisateurs sont régies par le [Contrat de services Microsoft](https://www.microsoft.com/servicesagreement) au lieu des [Conditions d'utilisation des services en ligne](https://www.microsoft.com/licensing/product-licensing/products).
 
-Même si vous choisissez de mettre ces expériences connectées facultatives à la disposition de vos utilisateurs, vos utilisateurs ont la possibilité de les désactiver en tant que groupe en accédant à **Paramètres > Confidentialité et sécurité**. Vos utilisateurs n’ont ce choix que s’ils sont connectés au Tableau blanc avec leurs informations d’identification organisationnelles (parfois appelées compte professionnel ou scolaire), et non s’ils sont connectés avec un compte Microsoft, tel qu’une adresse e-mail outlook.com personnelle.
+Même si vous choisissez de mettre ces expériences connectées facultatives à la disposition de vos utilisateurs, vos utilisateurs peuvent les désactiver en tant que groupe en accédant à **Paramètres > Confidentialité et sécurité**. Vos utilisateurs n’ont ce choix que s’ils sont connectés au Tableau blanc avec leurs informations d’identification organisationnelles, également appelées compte professionnel ou scolaire. Les utilisateurs ne peuvent pas modifier les paramètres de confidentialité s’ils sont connectés avec un compte Microsoft, tel qu’une adresse e-mail outlook.com personnelle.
 
 ## <a name="required-diagnostic-data-events-collected-by-whiteboard"></a>Événements de données de diagnostic requis collectés par tableau blanc
 
@@ -71,7 +74,7 @@ Collecté chaque fois que Microsoft Whiteboard est lancé par un appel d’une a
 
 **Intentionnel.Whiteboard.Init.DisplayWhiteboard**
 
-Collecté la première fois que Microsoft Whiteboard est réellement affiché sur un client par session. Ces informations sont essentielles pour détecter les problèmes de lancement. Microsoft utilise ces données pour diagnostiquer le problème afin de garantir que Microsoft Whiteboard s’exécute comme prévu.
+Collecté la première fois que Microsoft Whiteboard est affiché sur un client par session. Ces informations sont essentielles pour détecter les problèmes de lancement. Microsoft utilise ces données pour diagnostiquer le problème afin de garantir que Microsoft Whiteboard s’exécute comme prévu.
 
 - **IsPrelaunched** – État de prélancement
 - **IsProtocolActivation** : type de lancement d’application
@@ -105,7 +108,7 @@ Collecté chaque fois que Microsoft Whiteboard se lance après que l’état pr�
 Collecté à chaque lancement de Microsoft Whiteboard. Ces informations sont essentielles pour intercepter les erreurs associées aux paramètres configurés par l’utilisateur. Microsoft utilise ces données pour diagnostiquer le problème afin de garantir que Microsoft Whiteboard s’exécute comme prévu.
 
 - **ActivePen** : état du mode stylet
-- **CollectFullTelemetryWithoutSignIn** : collection de données de télémétrie complète sans activation de connexion
+- **CollectFullTelemetryWithoutSignIn** : collection de données de télémétrie complète sans activation de la connexion
 - **DefaultWhiteboardBackgroundColor** : couleur d’arrière-plan du tableau par défaut
 - **DefaultWhiteboardBackgroundPattern** : modèle d’arrière-plan de tableau par défaut
 - **FlightStatus** : état du vol

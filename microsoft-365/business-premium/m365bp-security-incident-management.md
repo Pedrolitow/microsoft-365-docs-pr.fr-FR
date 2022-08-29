@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Vue d’ensemble de la gestion des incidents de sécurité
-ms.openlocfilehash: 9f99dda8b1226e051b17dcd4a7a96c236c222fa7
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
-ms.translationtype: HT
+ms.openlocfilehash: 1637ba7ca349916588d2f75369a1a5b849596285
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917916"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433426"
 ---
 # <a name="security-incident-management"></a>Gestion des incidents de sécurité
 
@@ -36,10 +36,7 @@ Souhaitez-vous découvrir comment cela fonctionne ? Regardez cette courte vidéo
 
 Pour en savoir plus sur les réponses aux incidents, consultez les articles suivants :
 
-1. [Examinez les recommandations de sécurité](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
-
-2. [Examiner les menaces détectées et prendre des mesures](m365bp-review-threats-take-action.md).
-
-3. [Examinez les actions de correction](m365bp-review-remediation-actions-devices.md).
-
-4. [Répondez à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).
+- [Examinez les recommandations de sécurité](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+- [Examiner les menaces détectées et prendre des mesures](m365bp-review-threats-take-action.md).
+- [Examinez les actions de correction](m365bp-review-remediation-actions-devices.md).
+- [Répondez à un compte de messagerie compromis](../security/office-365-security/responding-to-a-compromised-email-account.md).

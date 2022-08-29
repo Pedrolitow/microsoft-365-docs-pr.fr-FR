@@ -1,7 +1,7 @@
 ---
 title: Table DeviceTvmSecureConfigurationAssessmentKB dans le schéma de repérage avancé
-description: Découvrez les différentes configurations sécurisées évaluées par la fonction Gestion des menaces et des vulnérabilités dans la table DeviceTvmSecureConfigurationAssessmentKB du schéma de repérage avancé.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & gestion des vulnérabilités, TVM, device management, security configuration, MITRE ATT&CK framework, knowledge base, KB, DeviceTvmSecureConfigurationAssessmentKB
+description: Découvrez les différentes configurations sécurisées évaluées par Gestion des vulnérabilités Microsoft Defender dans la table DeviceTvmSecureConfigurationAssessmentKB du schéma de chasse avancé.
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, MITRE ATT&CK framework, base de connaissances, KB, DeviceTvmSecureConfigurationAssessmentKB, MDVM, Gestion des vulnérabilités Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 81f03a665a0c825388335c925cb908f3b931a918
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 881f1b12f85529e4295c6de11b975d69dc617b81
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531554"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329418"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -34,12 +34,11 @@ ms.locfileid: "61531554"
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
+La `DeviceTvmSecureConfigurationAssessmentKB` table du schéma de chasse avancé contient des informations sur les différentes configurations sécurisées vérifiées par [Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Elle inclut également des informations sur les risques, des références du secteur associées et des techniques et tactiques MITRE ATT & CK applicables.
 
-Le tableau du schéma de recherche avancée contient des informations sur les `DeviceTvmSecureConfigurationAssessmentKB` différentes configurations sécurisées vérifiées par [threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Elle inclut également des informations sur les risques, des références du secteur associées et des techniques et tactiques MITRE ATT & CK applicables.
+Cette table ne retourne pas d’événements ou d’enregistrements. Nous vous recommandons de joindre cette table à la table [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) à l’aide `ConfigurationId` de cette table pour afficher des informations textuelles sur les configurations de sécurité dans les évaluations retournées.
 
-Cette table ne retourne ni événement, ni enregistrement. Nous vous recommandons de joindre ce tableau à la table [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) à l’aide des informations textuelles sur les configurations de sécurité dans les évaluations `ConfigurationId` renvoyées.
-
-Par exemple, lorsque vous interrogez la table, vous souhaitez peut-être afficher les configurations de sécurité qui s’afficheront `DeviceTvmSecureConfigurationAssessment` dans les résultats de `ConfigurationDescription` l’évaluation. Vous pouvez voir ces informations en joignant cette table à `DeviceTvmSecureConfigurationAssessment` l’utilisation `ConfigurationId` et au `ConfigurationDescription` projet.
+Par exemple, lorsque vous interrogez la `DeviceTvmSecureConfigurationAssessment` table, vous souhaiterez peut-être afficher les `ConfigurationDescription` configurations de sécurité qui sont affichées dans les résultats de l’évaluation. Vous pouvez voir ces informations en joignant cette table à l’utilisation `ConfigurationId` et au `DeviceTvmSecureConfigurationAssessment` projet`ConfigurationDescription`.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -53,10 +52,10 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationCategory` | `string` | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité|
 | `ConfigurationSubcategory` | `string` |Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationBenchmarks` | `string` | Liste des références du secteur recommandant une configuration identique ou similaire |
-| `Tags` | `string` | Étiquettes représentant différents attributs utilisés pour identifier ou classer une configuration de sécurité |
+| `Tags` | `string` | Étiquettes représentant différents attributs utilisés pour identifier ou catégoriser une configuration de sécurité |
 | `RemediationOptions` | `string` | Actions recommandées pour réduire ou résoudre les risques associés |
 
-Vous pouvez essayer cette requête d’exemple pour renvoyer des métadonnées de configuration pertinentes, ainsi que des informations sur les appareils avec des configurations antivirus non conformes à partir du `DeviceTvmSecureConfigurationAssessment` tableau :
+Vous pouvez essayer cet exemple de requête pour retourner les métadonnées de configuration pertinentes ainsi que des informations sur les appareils avec des configurations antivirus non conformes à partir du `DeviceTvmSecureConfigurationAssessment` tableau :
 
 ```kusto
 // Get information on devices with antivirus configurations issues
@@ -77,4 +76,4 @@ DeviceTvmSecureConfigurationAssessment
 - [Repérer des menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
-- [Présentation de la fonction Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Vue d’ensemble de Gestion des vulnérabilités Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro d’identification fiscale en Pologne.
-ms.openlocfilehash: 793fbb9d82a94a9328adb665792768f051cf927f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 38909e64a5ab3d4756d9cc11e64041076e6ca7da
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950801"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367990"
 ---
-# <a name="poland-tax-identification-number"></a>Numéro d’identification fiscale en Pologne
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
+# <a name="poland-tax-identification-number"></a>Numéro d’identifiant fiscal polonais
 
 ## <a name="format"></a>Format
 
@@ -50,10 +42,10 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_poland_eu_tax_file_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_poland_eu_tax_file_number` trouvé.
+- La fonction `Func_poland_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_poland_eu_tax_file_number` est trouvé.
 
 ```xml
       <!-- Poland Tax Identification Number -->
@@ -74,24 +66,24 @@ Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce 
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - id fiscal
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#
 - vat id #
 - vat id
-- vat no
+- nº de TVA
 - numéro de tva
 - vatid #
 - vatid

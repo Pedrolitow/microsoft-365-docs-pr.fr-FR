@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00a43da0c6b817c6e53ef93ae27fa8e59d7c5341
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 19b7546f4c1730b4077d29d43d450a0701c5ae62
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300452"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385074"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -61,6 +61,26 @@ Le tableau de bord Intégrité et conformité de l’appareil est structuré sou
   - [Carte des mises à jour du moteur antivirus](#antivirus-engine-updates-card)
   - [Carte des mises à jour du renseignement de sécurité](#security-intelligence-updates-card)
   - [Carte des mises à jour de la plateforme antivirus](#antivirus-platform-updates-card)
+
+### <a name="report-access-permissions"></a>Autorisations d’accès aux rapports
+
+Pour accéder au rapport de conformité de l’intégrité des appareils et des antivirus dans le tableau de bord Sécurité Microsoft 365, les autorisations suivantes sont requises :
+
+| Nom de l’autorisation | Type d’autorisation |
+|:---|:---|
+| Afficher les données | Gestion des menaces et des vulnérabilités (TVM) |
+
+Pour attribuer ces autorisations :
+
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender à l’aide d’un</a> compte avec l’administrateur de sécurité ou le rôle Administrateur général attribué.
+1. Dans le volet de navigation, sélectionnez **Paramètres des rôles** \> **de points de terminaison** \> (sous **Autorisations**).
+1. Sélectionnez le rôle que vous souhaitez modifier.
+1. Cliquez sur **Modifier**.
+1. Dans **Modifier le rôle**, sous l’onglet **Général** , dans **le nom** du rôle, tapez un nom pour le rôle.
+1. Dans **Description** , tapez un bref résumé du rôle.
+1. Dans **Autorisations**, sélectionnez **Afficher les données**, puis sous **Afficher les données** , sélectionnez **Gestion des menaces et des vulnérabilités** (TVM).
+
+Pour plus d’informations sur la gestion des rôles d’utilisateur, consultez [Créer et gérer des rôles pour le contrôle d’accès en fonction du rôle](user-roles.md).
 
 ### <a name="sensor-health--os-tab"></a>Onglet Intégrité du capteur & système d’exploitation
 
@@ -172,7 +192,7 @@ Vous pouvez utiliser le bouton **Exporter** dans le menu volant _des détails de
 
 Pour plus d’informations sur l’exportation à l’aide de l’API, consultez les articles suivants :
 
-- [Exporter le rapport d’intégrité de l’antivirus de l’appareil](device-health-export-antivirus-health-report-api.md)
+- [Exportation du rapport de santé antivirus de l'appareil](device-health-export-antivirus-health-report-api.md)
 - [Exporter les méthodes et propriétés de l’API des détails d’intégrité de l’antivirus de l’appareil](device-health-api-methods-properties.md)
 
 #### <a name="microsoft-defender-antivirus-version-and-update-cards-functionality"></a>Fonctionnalités des cartes de mise à jour et de version de l’Antivirus Microsoft Defender

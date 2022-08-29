@@ -22,16 +22,16 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 446b82d668041a476d748956008002c42a92a7f3
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
-ms.translationtype: HT
+ms.openlocfilehash: c342dd6a3e33c77b2c6b729ac389b7ea979b0fb7
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435454"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385812"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,7 @@ Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
 - **Informations sur la veille contre l’usurpation d’identité** : passez en revue les messages des 7 derniers jours usurpant une identité provenant des expéditeurs dans les domaines internes et externes, puis autorisez ou bloquez ces expéditeurs. Pour plus d’informations, voir [Informations sur la veille sur l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
 
-- **Autoriser ou bloquer les expéditeurs usurpés dans la liste verte/rouge du client** : lorsque vous remplacez le obstacle dans les informations sur la veille contre l’usurpation d’identité, l’expéditeur usurpé devient une entrée manuelle d’autoriser ou de bloquer une entrée qui n’apparaît que dans l’onglet **Usurper une identité** dans la liste verte/rouge du client. Vous pouvez également créer manuellement des entrées d'autorisation ou de blocage pour les faux expéditeurs avant qu'ils ne soient détectés par la veille contre l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](tenant-allow-block-list.md).
+- **Autoriser ou bloquer les expéditeurs usurpés dans la liste d’autorisation/de** blocage du locataire : lorsque vous remplacez le verdict dans l’insight d’intelligence de l’usurpation d’identité, l’expéditeur usurpé devient une entrée d’autorisation ou de blocage manuelle qui apparaît uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisations/blocs du locataire. Vous pouvez également créer manuellement des entrées d'autorisation ou de blocage pour les faux expéditeurs avant qu'ils ne soient détectés par la veille contre l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](manage-tenant-allow-block-list.md).
 
 - **Stratégies anti-hameçonnage** : dans EOP et Microsoft Defender pour Office 365, les stratégies anti-hameçonnage contiennent les paramètres suivants contre l’usurpation d’adresse :
   - Activer ou désactiver la veille contre l’usurpation d’identité.
@@ -166,9 +166,9 @@ Pour aider les messages de la liste de diffusion à passer les vérifications d�
 
     Lorsque suffisamment d’expéditeurs répondent aux propriétaires de domaine qu’ils devraient configurer des enregistrements d’authentification de courrier, cela les incite à agir. Bien que Microsoft collabore avec les propriétaires de domaine pour les inciter à publier les enregistrements requis, c’est encore plus efficace lorsque des utilisateurs individuels le demandent.
 
-  - Créez des règles de boîte aux lettres dans votre client de messagerie électronique pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander à vos administrateurs de configurer les remplacements, comme décrit dans [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md) et [Gérer les listes rouge/verte du client](tenant-allow-block-list.md).
+  - Créez des règles de boîte aux lettres dans votre client de messagerie électronique pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander à vos administrateurs de configurer les remplacements, comme décrit dans [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md) et [Gérer les listes rouge/verte du client](manage-tenant-allow-block-list.md).
 
-  - Utilisez la liste d’adresses client autoriser/bloquer pour créer un remplacement pour la liste de publipostage afin de la traiter comme légitime. Pour plus d’informations, affichez Ajouter des autoriser dans la liste des locataires [autoriser/bloquer.](manage-tenant-allows.md)
+  - Utilisez la liste d’adresses client autoriser/bloquer pour créer un remplacement pour la liste de publipostage afin de la traiter comme légitime. Pour plus d’informations, consultez [Créer des entrées d’autorisation pour les expéditeurs usurpés d’identité](allow-block-email-spoof.md#create-allow-entries-for-spoofed-senders).
 
 En cas d’échec de l’opération, vous pouvez signaler le message à Microsoft comme étant un faux positif. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 

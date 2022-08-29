@@ -18,12 +18,12 @@ ms.custom: ''
 description: Le personnel SecOps peut apprendre à utiliser la file d’attente Incidents dans Microsoft 365 Defender pour gérer les incidents dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8467d77bd3bdd99af0a33f7fc373e61f7e3efb51
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ef744ec88f8ee81d33e537b5ffc9d128c724f84f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649368"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383829"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Gérer les incidents et les alertes à partir de Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -120,7 +120,7 @@ Les équipes de sécurité peuvent effectuer une grande variété d’actions de
 
 - Vous pouvez signaler des détections de faux positifs ou de faux négatifs directement à Microsoft à l’aide de [l’Explorateur de menaces](threat-explorer.md) ou [des soumissions d’administrateurs](admin-submission.md).
 
-- Vous pouvez bloquer les fichiers malveillants, les URL ou les expéditeurs non détectés à l’aide de la [liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md).
+- Vous pouvez bloquer les fichiers malveillants, les URL ou les expéditeurs non détectés à l’aide de la [liste d’autorisation/de blocage du locataire](manage-tenant-allow-block-list.md).
 
 Defender pour Office 365 actions sont intégrées en toute transparence dans les expériences de chasse et l’historique des actions est visible sous l’onglet **Historique** dans le **centre d’action** unifié à <https://security.microsoft.com/action-center/history>.
 

@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
-ms.translationtype: HT
+ms.openlocfilehash: 0722e586a19dab70bfe4433bd2909098dd8a3ac1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008864"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385724"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -164,12 +164,13 @@ Une fois que vous avez commencé à utiliser une stratégie de secours SPF de `?
 
 ### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Configurer les expéditeurs autorisés de courrier électronique non authentifié.
 
-Vous pouvez également utiliser l’[Informations sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) et la [Liste rouge/verte du client](tenant-allow-block-list.md) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
+Vous pouvez également utiliser l’[Informations sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) et la [Liste rouge/verte du client](manage-tenant-allow-block-list.md) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
 
 Pour les domaines externes, l’utilisateur usurpé est le domaine dans l’adresse De, tandis que l’infrastructure d’envoi est l’une des valeurs suivantes :
 
 - Adresse IP source (divisée en plages CIDR /24)
 - Domaine organisationnel de l’enregistrement DNS inversé (PTR).
+- Domaine DKIM vérifié.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Créer une entrée d’autorisation pour la paire expéditeur/destinataire
 

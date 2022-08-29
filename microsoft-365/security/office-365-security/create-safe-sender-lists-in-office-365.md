@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c2ef3c1ae6485f5ebdd965aee92bafd5f63233e
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 5ef0ddc2d6a47e22120b3cfbc205cd4aa4da31b0
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274855"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383807"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs fiables dans EOP
 
@@ -53,7 +53,7 @@ Les règles de flux de messagerie permettent la plus grande flexibilité pour ga
 >
 > - Bien que vous puissiez utiliser des listes d’expéditeurs fiables pour aider avec les faux positifs (bon e-mail marqué comme mauvais), vous devez envisager l’utilisation de listes d’expéditeurs fiables comme une solution temporaire qui doit être évitée si possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs fiables, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs fiables pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [Signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) au moment voulu.
 >
-> - Pour permettre à un domaine d’envoyer des e-mails non authentifiés (ignorer la protection contre l’usurpation d’identité) mais pas ignorer les protections anti-courrier indésirable et autres, vous pouvez utiliser [l’information sur l’usurpation](learn-about-spoof-intelligence.md) d’identité et la [liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md).
+> - Pour permettre à un domaine d’envoyer des e-mails non authentifiés (ignorer la protection contre l’usurpation d’identité) mais pas ignorer les protections anti-courrier indésirable et autres, vous pouvez utiliser [l’information sur l’usurpation](learn-about-spoof-intelligence.md) d’identité et la [liste d’autorisation/de blocage du locataire](manage-tenant-allow-block-list.md).
 >
 > - EOP et Outlook inspectent différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [Considérations relatives aux e-mails en bloc](#considerations-for-bulk-email) plus loin dans cet article.
 >

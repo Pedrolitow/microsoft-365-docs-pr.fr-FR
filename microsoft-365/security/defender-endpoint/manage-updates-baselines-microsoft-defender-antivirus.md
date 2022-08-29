@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/15/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
-ms.translationtype: HT
+ms.openlocfilehash: c3856209c510c67bb9054e9567f78ff8ed978b2b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280716"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427243"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises à jour de Antivirus Microsoft Defender et appliquer des lignes de base
 
@@ -91,18 +91,16 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Juillet-2022 (Plateforme : 4.18.2205.TBD | Moteur : 1.1.19500.2)</summary>
+<summary>Juillet-2022 (Plateforme : 4.18.2207.5 | Moteur : 1.1.19500.2)</summary>
 
-*Cette section contient des informations de pré-version qui sont toujours en cours de développement. Des mises à jour, y compris le numéro de version final de la mise à jour de sécurité, sont à prévoir.*
-
-&ensp;Version de la mise à jour du renseignement de sécurité : *bientôt disponible*<br/>
-&ensp;Date de publication : **8 août 2022**<br/>
-&ensp;Plateforme : *4.18.2205.TBD*<br/>
+&ensp;Version de la mise à jour du renseignement de sécurité : **1.373.219.0**<br/>
+&ensp;Date de publication : **15 août 2022**<br/>
+&ensp;Plateforme : **4.18.2207.5**<br/>
 &ensp;Moteur : **1.1.19500.2**<br/>
 &ensp;Phase de support : **Mises à jour critiques et relatives à la sécurité**<br/>
 
 Version du moteur : 1.1.19300.2<br/>
-Version de la mise à jour du renseignement de sécurité : *bientôt disponible*<br/>
+Version de la mise à jour du renseignement de sécurité : 1.373.219.0 <br/>
 
 ### <a name="whats-new"></a>Nouveautés
 
@@ -117,11 +115,17 @@ Version de la mise à jour du renseignement de sécurité : *bientôt disponible
 - Amélioration de la validation de l’approbation 
 - Résolution du problème d’incident du moteur sur les plateformes d’exploitation héritées 
 - Mises à jour de l’Analyseur de performance v3 : Ajout de la prise en charge du chemin d'accès supérieur, des informations sur le saut d'analyse et de l'analyse à la demande. Consultez [Analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md). 
+- Améliorations des performances de Defender pendant les opérations de copie de fichiers
+- Ajout d’améliorations pour [le mode de résolution des problèmes](enable-troubleshooting-mode.md)  
+- Ajout d’un correctif pour les canaux DEFENDER WINEVT lors des mises à jour/redémarrages. (Pour plus d’informations sur WINEVT, consultez le [journal des événements Windows](/windows/win32/api/_wes/) .)
+- Ajout d’un correctif pour le bogue [de gestion WMI Defender](use-wmi-microsoft-defender-antivirus.md) lors du démarrage/des mises à jour 
+- Ajout d’un correctif pour les [événements opérationnels observateur d'événements Windows](troubleshoot-microsoft-defender-antivirus.md) 2010/2011 dupliqués 
+- Ajout de la prise en charge du renforcement des jetons [des processus de pile Defender pour point](microsoft-defender-endpoint.md) de terminaison 
 
 
 ### <a name="known-issues"></a>Problèmes connus
 
-Aucun problème connu
+- Les clients qui déploient la mise à jour de plateforme 4.18.2207.5 peuvent rencontrer un retard de performances réseau susceptibles d’avoir un impact sur les applications.
 
 <br/><br/>
 </details><details>

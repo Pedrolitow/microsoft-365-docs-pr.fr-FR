@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d1352817a1bb514d12365fa81a581a92362f1b8
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0cc623bb7ca19620aaf9305a403e709d723f7ac3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087591"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385140"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -87,7 +87,7 @@ Les paramètres de stratégie suivants sont disponibles dans les stratégies ant
   > [!NOTE]
   > Au moins une sélection dans les **paramètres Utilisateurs, groupes et domaines** est requise dans les stratégies anti-hameçonnage personnalisées pour identifier les **destinataires du** message <u>auxquels la stratégie s’applique</u>. Les stratégies anti-hameçonnage dans Defender pour Office 365 ont également [des paramètres d’emprunt d’identité](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) dans lesquels vous pouvez spécifier des adresses e-mail d’expéditeur individuel ou des domaines d’expéditeur <u>qui recevront une protection contre l’emprunt d’identité</u>, comme décrit plus loin dans cet article.
   >
-  > Plusieurs types différents de conditions ou d’exceptions ne sont pas additifs ; ils sont inclusifs. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
+  > Plusieurs types de conditions ou exceptions différentes ne sont pas cumulatives ; elles sont inclusives. La stratégie est appliquée _uniquement_ aux destinataires qui correspondent à _tous les_ filtres de destinataires spécifiés. Par exemple, vous configurez une condition de filtre de destinataire dans la stratégie avec les valeurs suivantes :
   >
   > - Le destinataire est : romain@contoso.com
   > - Le destinataire est membre de : Exécutifs
@@ -104,10 +104,10 @@ Les paramètres d’usurpation d’identité suivants sont disponibles dans les 
 
 - **Activer l’intelligence par usurpation d’identité** : active ou désactive l’intelligence par usurpation d’identité. Nous vous recommandons de le laisser activé.
 
-  Lorsque l’intelligence par usurpation d’identité est activée, **l’insight d’intelligence** de l’usurpation d’identité affiche les expéditeurs usurpés qui ont été automatiquement détectés et autorisés ou bloqués par l’intelligence par usurpation d’identité. Vous pouvez remplacer manuellement le verdict d’usurpation d’identité pour autoriser ou bloquer les expéditeurs d’usurpation d’identité détectés dans l’insight. Mais lorsque vous le faites, l’expéditeur usurpé disparaît de l’insight d’intelligence de l’usurpation d’identité et n’est désormais visible que sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés dans la liste d’autorisation/de blocage du locataire. Si vous souhaitez en savoir plus, consultez les articles suivants :
+  Lorsque l’intelligence par usurpation d’identité est activée, **l’insight d’intelligence** de l’usurpation d’identité affiche les expéditeurs usurpés qui ont été automatiquement détectés et autorisés ou bloqués par l’intelligence par usurpation d’identité. Vous pouvez remplacer manuellement le verdict d’usurpation d’identité pour autoriser ou bloquer les expéditeurs d’usurpation d’identité détectés dans l’insight. Toutefois, lorsque vous le faites, l’expéditeur usurpé disparaît de l’insight d’intelligence de l’usurpation d’identité et est désormais visible uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisations/de blocs du locataire. Vous pouvez également créer manuellement des entrées d’autorisation ou de blocage pour les expéditeurs usurpés dans la liste d’autorisation/de blocage du locataire. Si vous souhaitez en savoir plus, consultez les articles suivants :
 
   - [Informations sur l’intelligence d’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md)
-  - [Gérer la liste verte/bloquée du locataire dans EOP](tenant-allow-block-list.md)
+  - [Gérer la liste verte/bloquée du locataire dans EOP](manage-tenant-allow-block-list.md)
 
   > [!NOTE]
   >
@@ -135,7 +135,7 @@ Les indicateurs d’expéditeur non authentifiés font partie des [paramètres d
 
 Pour empêcher l’ajout du point d’interrogation ou de l’étiquette aux messages d’expéditeurs spécifiques, vous disposez des options suivantes :
 
-- Autorisez l’expéditeur usurpé dans [l’insight d’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité ou manuellement dans la [liste d’autorisation/de blocage du locataire](tenant-allow-block-list.md). L’autorisation de l’expéditeur usurpé empêchera l’étiquette via d’apparaître dans les messages de l’expéditeur, même si le paramètre **afficher la balise « via »** est activé dans la stratégie.
+- Autorisez l’expéditeur usurpé dans [l’insight d’intelligence de l’usurpation](learn-about-spoof-intelligence.md) d’identité ou manuellement dans la [liste d’autorisation/de blocage du locataire](manage-tenant-allow-block-list.md). L’autorisation de l’expéditeur usurpé empêchera l’étiquette via d’apparaître dans les messages de l’expéditeur, même si le paramètre **afficher la balise « via »** est activé dans la stratégie.
 - [Configurez l’authentification par e-mail](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
   - Pour le point d’interrogation dans la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
   - Pour la balise via, vérifiez que le domaine dans la signature DKIM ou l’adresse **MAIL FROM** correspond (ou est un sous-domaine) au domaine dans l’adresse From.
@@ -237,6 +237,13 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
   - **Supprimer le message avant qu’il ne soit remis**
 
 - **Ajouter des expéditeurs et des domaines approuvés** : exceptions aux paramètres de protection de l’emprunt d’identité. Les messages des domaines d’expéditeur et d’expéditeur spécifiés ne sont jamais classés en tant qu’attaques basées sur l’emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection d’intelligence de boîte aux lettres ne sont pas appliquées à ces domaines d’expéditeur approuvés ou d’expéditeur. La limite maximale pour ces listes est de 1 024 entrées.
+
+  > [!NOTE]
+  > Si les messages système Microsoft 365 des expéditeurs suivants sont identifiés comme des tentatives d’emprunt d’identité, vous pouvez ajouter les expéditeurs à la liste des expéditeurs approuvés :
+  >
+  > - `⁠noreply@email.teams.microsoft.com`
+  > - `noreply@emeaemail.teams.microsoft.com`
+  > - `no-reply@sharepointonline.com`
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Seuils de hameçonnage avancés dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 

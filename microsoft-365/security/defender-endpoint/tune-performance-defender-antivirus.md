@@ -15,12 +15,12 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 90e116511f01f0e2a846ca32bcd21675c4b632fb
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ac8bb15d38e7eb517911ba2c63e25a50e4918e7e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275799"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383851"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour l’antivirus Microsoft Defender
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-La section suivante décrit la Get-MpPerformanceReport cmdlet PowerShell. Analyse et signale l’enregistrement des performances de l’antivirus Microsoft Defender (MDAV).
+La section suivante décrit la Get-MpPerformanceReport cmdlet PowerShell. Analyse et signale l’enregistrement des performances de l’Antivirus Microsoft Defender.
 
 #### <a name="syntax-get-mpperformancereport"></a>Syntaxe : Get-MpPerformanceReport
 

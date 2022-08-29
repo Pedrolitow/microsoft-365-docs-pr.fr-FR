@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 05/03/2022
+ms.date: 08/21/2022
 audience: ITPro
 ms.topic: article
 search.appverid:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: d31288d115cf78d54b87d7d01f162caa209c2094
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13d178f77efa19ed53c93afa454ddaf6e481a8a6
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106271"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408416"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps dans Microsoft 365 Defender (préversion)
 
@@ -74,8 +74,9 @@ L’image et le tableau ci-dessous répertorient les modifications apportées à
 
 > [!NOTE]
 > La nouvelle expérience Defender pour Cloud Apps dans le portail Microsoft 365 Defender est actuellement disponible pour tous les utilisateurs détaillés dans [Gérer l’accès administrateur](/defender-cloud-apps/manage-admins), à l’exception des éléments suivants :
-> * **Administrateur d’applications/instances**, **administrateur de groupe d’utilisateurs**, **administrateur général cloud discovery** et **administrateur de rapports Cloud Discovery**, tels que définis dans les [rôles d’administrateur intégrés dans Defender pour Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-> * Groupes de confidentialité des utilisateurs tels que définis dans la [confidentialité de l’activité](/defender-cloud-apps/activity-privacy)
+>
+> - **Administrateur d’applications/instances**, **administrateur de groupe d’utilisateurs**, **administrateur général cloud discovery** et **administrateur de rapports Cloud Discovery**, tels que définis dans les [rôles d’administrateur intégrés dans Defender pour Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+> - Groupes de confidentialité des utilisateurs tels que définis dans la [confidentialité de l’activité](/defender-cloud-apps/activity-privacy)
 
 ## <a name="whats-changed"></a>Fonctionnalités modifiées
 

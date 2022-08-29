@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: e9cb7fc02a3e84f7fa0909e509f47c21b63050ab
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65771994"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384855"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gérer les expéditeurs usurpés à l’aide de la stratégie de renseignement sur l’usurpation d’identité et de l’information sur l’usurpation d’identité dans EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "65771994"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> La gestion des expéditeurs usurpés dans le portail Microsoft 365 Defender est désormais disponible uniquement sous l’onglet **Usurpation** d’identité dans la liste d’autorisation/de blocage du locataire. Pour connaître les procédures actuelles dans le portail Microsoft 365 Defender, consultez [Spoof Intelligence Insight dans EOP](learn-about-spoof-intelligence.md).
+> La gestion des expéditeurs usurpés dans le portail Microsoft 365 Defender est désormais disponible uniquement sous l’onglet **Expéditeurs usurpés** dans la liste d’autorisation/de blocage du locataire. Pour connaître les procédures actuelles dans le portail Microsoft 365 Defender, consultez [Spoof Intelligence Insight dans EOP](learn-about-spoof-intelligence.md).
 >
 > La gestion des expéditeurs usurpés dans Exchange Online PowerShell ou EOP Autonome PowerShell est en cours de migration exclusivement vers les applets de commande **-TenantAllowBlockListSpoofItems, Get-SpoofIntelligenceInsight et Get-SpoofMailReport associées\***.  Pour connaître les procédures utilisant ces applets de commande, consultez les articles suivants :
 >
-> - [Afficher les entrées d’expéditeur usurpées à l’aide de PowerShell](tenant-allow-block-list.md#view-spoofed-sender-entries)
-> - [Ajouter des entrées d’autorisation d’expéditeur usurpées à l’aide de PowerShell](manage-tenant-allows.md#add-spoofed-sender-allow-entries-using-powershell)
-> - [Ajouter des entrées de bloc d’expéditeur usurpées à l’aide de PowerShell](manage-tenant-blocks.md#add-spoofed-sender-block-entries)
-> - [Modifier des entrées d’expéditeur usurpées à l’aide de PowerShell](modify-remove-entries-tenant-allow-block.md#modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
-> - [Supprimer les entrées d’expéditeur usurpées à l’aide de PowerShell](modify-remove-entries-tenant-allow-block.md#remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
+> - [Utiliser PowerShell pour afficher les entrées d’autorisation ou de blocage pour les expéditeurs usurpés dans la liste d’autorisations/de blocs du locataire](allow-block-email-spoof.md#use-powershell-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Utiliser PowerShell pour créer des entrées d’autorisation pour les expéditeurs usurpés](allow-block-email-spoof.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Utiliser PowerShell pour créer des entrées de bloc pour les expéditeurs usurpés](allow-block-email-spoof.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Utiliser PowerShell pour modifier des entrées d’autorisation ou de blocage pour les expéditeurs usurpés dans la liste d’autorisations/de blocs du locataire](allow-block-email-spoof.md#use-powershell-to-modify-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Utiliser PowerShell pour supprimer des entrées d’autorisation ou de blocage pour les expéditeurs usurpés de la liste d’autorisations/de blocs du locataire](allow-block-email-spoof.md#use-powershell-to-remove-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
 >
 > L’ancienne expérience de gestion des expéditeurs usurpés utilisant les applets de commande **Get-PhishFilterPolicy** et **Set-PhishFilterPolicy** est en cours de dépréciation, mais elle est toujours présentée dans cet article pour plus d’exhaustivité jusqu’à ce que les applets de commande soient supprimées partout.
 

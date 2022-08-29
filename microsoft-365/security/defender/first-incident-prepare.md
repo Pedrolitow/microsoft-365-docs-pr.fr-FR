@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: eeaa5c663d7f35a1a43f883953cd08c5aa1920aa
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893516"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329044"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender pouvez vous aider à résoudre plusieurs aspects de la pr
 
 - Implémentation d’une [infrastructure Confiance nulle](/security/zero-trust/)
 - Détermination de votre posture de sécurité en attribuant un score avec [microsoft secure score](microsoft-secure-score.md)
-- Prévention des menaces par le biais d’évaluations des vulnérabilités dans [la gestion des menaces et des vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Prévention des menaces par le biais d’évaluations des vulnérabilités dans [Gestion des vulnérabilités Defender](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Comprendre les dernières menaces de sécurité afin de pouvoir les préparer avec [l’analytique des menaces](threat-analytics.md)
 
 ## <a name="step-1-implement-zero-trust"></a>Étape 1. Implémenter Confiance nulle
@@ -51,7 +51,7 @@ Microsoft 365 Defender pouvez vous aider à résoudre plusieurs aspects de la pr
 
 Les composants de Microsoft 365 Defender peuvent afficher des violations de règles qui ont été implémentées pour établir des stratégies d’accès conditionnel pour Confiance nulle en intégrant des données de Microsoft Defender pour point de terminaison  ou d’autres fournisseurs de sécurité mobile comme source d’informations pour les stratégies de conformité des appareils et l’implémentation des stratégies d’accès conditionnel basées sur les appareils.
 
-Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de Confiance nulle et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender pouvez fournir le niveau de version logicielle d’un appareil via la page Gestion des menaces et des vulnérabilités, tandis que les stratégies d’accès conditionnel limitent les appareils dont les versions sont obsolètes ou vulnérables.
+Le risque d’appareil influence directement les ressources qui seront accessibles par l’utilisateur de cet appareil. Le refus d’accès aux ressources en fonction de certains critères est le thème principal de Confiance nulle et Microsoft 365 Defender fournit les informations nécessaires pour déterminer les critères de niveau de confiance. Par exemple, Microsoft 365 Defender pouvez fournir le niveau de version logicielle d’un appareil via le Gestion des vulnérabilités Microsoft Defender, anciennement la page Gestion des vulnérabilités & menaces, tandis que les stratégies d’accès conditionnel limitent les appareils dont les versions sont obsolètes ou vulnérables.
 
 L’automatisation est un élément essentiel de l’implémentation et de la maintenance d’un environnement Confiance nulle tout en réduisant le nombre d’alertes susceptibles d’entraîner des événements de réponse aux incidents (IR). Les composants de Microsoft 365 Defender peuvent être automatisés, tels que les [actions de correction](m365d-autoir.md) (appelées investigations pour un incident dans le portail Microsoft 365 Defender), les actions de notification et même la création de tickets de support comme dans [ServiceNow](https://microsoft.service-now.com/sp/).
 
@@ -65,7 +65,7 @@ Ensuite, les organisations peuvent utiliser le [score de sécurité Microsoft](m
 
 La prévention des incidents peut aider à simplifier les efforts des opérations de sécurité pour se concentrer sur les incidents de sécurité critiques et importants en cours. Les vulnérabilités logicielles sont souvent un point d’entrée évitable pour les attaques qui peuvent entraîner un vol de données, une perte de données ou une interruption des opérations commerciales. Si aucune attaque n’est en cours, les opérations de sécurité doivent s’efforcer d’atteindre et de maintenir un niveau acceptable [d’exposition aux vulnérabilités](../defender-endpoint/tvm-exposure-score.md) dans leur organisation.
 
-Pour vérifier la progression de la mise à jour corrective de votre logiciel, visitez la page [Gestion des menaces et des vulnérabilités](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) dans Defender pour point de terminaison, à laquelle vous pouvez accéder à partir de Microsoft 365 Defender sous l’onglet **Plus de ressources**.
+Pour vérifier la progression des mises à jour correctives logicielles, visitez la page [Gestion des vulnérabilités Microsoft Defender](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) dans Defender pour point de terminaison, à laquelle vous pouvez accéder à partir de Microsoft 365 Defender via l’onglet **Plus de ressources**.
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Page Menaces et vulnérabilités dans le portail Microsoft 365 Defender" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png":::
 

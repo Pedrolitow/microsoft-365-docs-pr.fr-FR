@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: ad8c15ef0b5dc56d2df8455341f8bf5e4e6efd94
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: e46e5f3af06cc94cea4ff2e76208f3ccadc53586
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530613"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385614"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Essayer Microsoft Defender pour Office 365
 
@@ -63,7 +63,7 @@ Vous pouvez également en savoir plus sur Defender pour Office 365 dans ce [guid
 
 Lorsque vous évaluez Defender pour Office 365, les stratégies qui contrôlent les fonctionnalités de protection dans Microsoft 365 sont présentes :
 
-- **Exchange Online Protection (EOP)** : aucune stratégie nouvelle ou spéciale n’est créée. Les stratégies EOP existantes sont en mesure d’agir sur les messages (par exemple, envoyer des messages au dossier Courrier indésirable ou mettre en quarantaine) :
+- **Exchange Online Protection (EOP)** : aucune stratégie nouvelle ou spéciale n’est créée. Les stratégies EOP existantes sont en mesure d’agir sur les messages (par exemple, envoyer des messages au dossier Junk Email ou mettre en quarantaine) :
 
   - [Stratégies anti-programme malveillant](anti-malware-protection.md)
   - [Protection anti-courrier indésirable entrante](anti-spam-protection.md)
@@ -87,7 +87,7 @@ Lorsque vous évaluez Defender pour Office 365, les stratégies qui contrôlent 
 
 **Remarques** :
 
-- Les liens sécurisés vont faire exploser les URL dans le flux de messagerie. Pour empêcher le détonation d’URL spécifiques, utilisez la liste d’autorisations/de blocs du locataire. Pour plus d’informations, consultez [Gérer la liste verte/bloquée du locataire](tenant-allow-block-list.md).
+- Les liens sécurisés vont faire exploser les URL dans le flux de messagerie. Pour empêcher le détonation d’URL spécifiques, utilisez la liste d’autorisations/de blocs du locataire. Pour plus d’informations, consultez [Gérer la liste verte/bloquée du locataire](manage-tenant-allow-block-list.md).
 - Les liens sécurisés n’encapsulent pas les liens d’URL dans les corps des messages électroniques.
 - Les paramètres de stratégie d’évaluation sont décrits dans la section [Paramètres de stratégie d’évaluation](#evaluation-policy-settings) plus loin dans cet article.
 
@@ -152,7 +152,7 @@ Lorsque vous évaluez Defender pour Office 365, les stratégies qui contrôlent 
 
           Comme expliqué à l’étape précédente, le filtrage amélioré pour les connecteurs est automatiquement configuré sur le connecteur que vous spécifiez comme source de courrier du service de protection.
 
-          L’activation du filtrage amélioré pour les connecteurs sans règle SCL=-1 pour les messages entrants provenant du service de protection améliore considérablement les fonctionnalités de détection des fonctionnalités de protection EOP, telles que [l’usurpation](anti-spoofing-protection.md) d’identité, et peut avoir un impact sur la remise de ces messages nouvellement détectés (par exemple, déplacer vers le dossier Courrier indésirable ou mettre en quarantaine). Cet impact est limité aux stratégies EOP ; comme expliqué précédemment, Defender pour Office 365 stratégies sont créées en mode audit.
+          L’activation du filtrage amélioré pour les connecteurs sans règle SCL=-1 pour les messages entrants du service de protection améliorera considérablement les fonctionnalités de détection des fonctionnalités de protection EOP, telles que [l’usurpation d’identité](anti-spoofing-protection.md), et pourrait avoir un impact sur la remise de ces messages nouvellement détectés (par exemple, passer au dossier Junk Email ou en quarantaine). Cet impact est limité aux stratégies EOP ; comme expliqué précédemment, Defender pour Office 365 stratégies sont créées en mode audit.
 
           Pour créer une règle de flux de messagerie SCL=-1 ou pour passer en revue vos règles existantes, cliquez sur le bouton **Accéder au centre d’administration Exchange** sur la page. Pour plus d’informations, consultez [Utiliser des règles de flux de courrier pour définir le niveau de confiance du courrier indésirable dans les messages dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
@@ -192,8 +192,8 @@ Lorsque vous évaluez Defender pour Office 365, les stratégies qui contrôlent 
 ## <a name="reporting-in-audit-mode"></a>Création de rapports en mode audit
 
 - Le [rapport d’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report) affiche les détections par Defender pour Office 365 dans les vues suivantes :
-  - [Afficher les données par programme malveillant par courrier électronique \> et répartition des graphiques par technologie de détection](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [Afficher les données par hameçonnage par e-mail \> et répartition du graphique par technologie de détection](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [Afficher les données par Email \> les programmes malveillants et la répartition des graphiques par technologie de détection](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [Afficher les données par Email \> phish et la répartition des graphiques par technologie de détection](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
 - Dans [l’Explorateur de menaces](threat-explorer.md), les messages détectés par l’évaluation Defender pour Office 365 affichent la bannière suivante dans les détails de l’entrée :
 

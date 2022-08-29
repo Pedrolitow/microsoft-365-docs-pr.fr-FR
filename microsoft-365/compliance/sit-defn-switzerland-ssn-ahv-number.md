@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’entité de type d’informations sensibles de numéro SSN Suisse.
-ms.openlocfilehash: e06ef00d0d8c919f4506d829899b0f6150394854
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d4f5971a1ee2d0dcf96ee023ff609ba70f6ec052
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997049"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368166"
 ---
 # <a name="switzerland-ssn-ahv-number"></a>Numéro SSN AHV suisse
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

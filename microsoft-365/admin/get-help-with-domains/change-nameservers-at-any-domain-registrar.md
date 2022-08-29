@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services tels que le courrier électronique et Skype Entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: e33bfad12c3785e95ca328c4f0e82ab640d549d0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fecd9a5171586eb61a96be7f8d4f1f6a422d212e
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085946"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67406165"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines
 
@@ -183,7 +183,7 @@ De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à tr
 1. Sélectionnez **Ajouter un enregistrement**.
 2. Dans le volet **Ajouter un enregistrement DNS personnalisé**, dans la liste déroulante **Type**, sélectionnez **CNAME (Alias).**
 3. Dans la zone **Nom d’hôte ou Alias** , tapez **www**.
-4. Dans la zone **Points à l’adresse** , tapez le nom de domaine complet (FQDN) de votre site web. Par exemple, **contoso.5om**.
+4. Dans la zone **Points à l’adresse** , tapez le nom de domaine complet (FQDN) de votre site web. Par exemple, **contoso.com**.
 5. Si vous souhaitez modifier le paramètre de durée de vie de l’enregistrement, sélectionnez une nouvelle durée dans la liste déroulante **TTL** . Sinon, passez à l’étape 6.
 6. Sélectionnez **Enregistrer**.
 

@@ -24,12 +24,12 @@ ms.custom:
 ms.topic: conceptual
 ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: c2915adc7b9b49015cdb436886563c4eba74d989
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: f55172bf0a7df4e15e690a5e0847c81b3cc537dc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617346"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328582"
 ---
 # <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Le [portail Microsoft 365 Defender](https://sip.security.microsoft.com/homepage?
 Regardez cette courte vidéo pour en savoir plus sur le portail Microsoft 365 Defender.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
-## <a name="what-to-expect"></a>À quoi s’attendre
+## <a name="what-to-expect"></a>À quoi s'attendre
 
 Le portail Microsoft 365 Defender permet aux équipes de sécurité d’examiner et de répondre aux attaques en intégrant des signaux provenant de différentes charges de travail dans un ensemble d’expériences unifiées pour :
 
@@ -124,7 +124,7 @@ Vous pouvez rechercher parmi les entités suivantes dans Defender pour point de 
     >[!NOTE]
     >Les recherches d’adresses IP et d’URL correspondent exactement et n’apparaissent pas dans la page des résultats de la recherche . Elles mènent directement à la page d’entité. 
 
-- **TVM** : mêmes fonctionnalités que dans Defender pour point de terminaison (vulnérabilités, logiciels et recommandations). 
+- **MDVM** : mêmes fonctionnalités que dans Defender pour point de terminaison (vulnérabilités, logiciels et recommandations). 
 
 ## <a name="threat-analytics"></a>Analyses de menaces
 
@@ -170,7 +170,7 @@ Avec ce parcours d’apprentissage de Microsoft Learn, vous pouvez comprendre Mi
 
 |Formation :|Détecter les cyberattaques et y répondre avec Microsoft 365 Defender|
 |---|---|
-|![Microsoft 365 Defender de formation.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifie les signaux de menace sur les points de terminaison, les identités, le courrier électronique et les applications afin de fournir une protection intégrée contre les cyberattaques sophistiquées. Microsoft 365 Defender est l’expérience centrale pour examiner et répondre aux incidents et rechercher de manière proactive les activités de cybersécurité malveillantes en cours.<p> 1 h 38 min - Parcours d'apprentissage - 5 modules|
+|![Microsoft 365 Defender de formation.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifie les signaux de menace sur les points de terminaison, les identités, le courrier électronique et les applications afin de fournir une protection intégrée contre les cyberattaques sophistiquées. Microsoft 365 Defender est l’expérience centrale pour examiner et répondre aux incidents et rechercher de manière proactive les activités de cybersécurité malveillantes en cours.<p> 1 h 38 min - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/paths/defender-detect-respond/)

@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configurer un scanner local de prévention des pertes de données
-ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: fae1b5d2113935e2e3a899a16aafb224297d9912
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625432"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359162"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Prise en main du scanneur local de protection contre la perte de données(préversion)
 
@@ -126,7 +126,7 @@ Voici une liste des groupes de rôles applicables en préversion. Pour en savoir
 
 1. Ouvrez la page [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le **Portail de conformité Microsoft Purview**, puis sélectionnez Alertes.
 
-2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
+2. Reportez-vous aux procédures de [configuration et d’affichage des alertes pour vos stratégies DLP](dlp-configure-view-alerts-policies.md) afin d’afficher les alertes de vos stratégies DLP locales.
 
 ### <a name="viewing-dlp-on-premises-scanner-in-activity-explorer-and-audit-log"></a>Affichage du scanneur local de protection contre la perte de données dans l’Explorateur d’activités et le journal d’audit
 

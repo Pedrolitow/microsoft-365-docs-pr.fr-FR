@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: fa357d70fb5493519b55624358a56d8c8dd28f5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275837"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386206"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour point de terminaison sur Mac
 
@@ -35,6 +35,26 @@ ms.locfileid: "67275837"
 Pour plus d’informations sur les Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation : 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur Linux](linux-whatsnew.md) 
 - [Nouveautés de Microsoft Defender pour point de terminaison sur iOS](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Août 2022 (Build : 101.78.13 | Version de version : 20.122072.17813.0)</summary>
+
+&ensp;Build : **101.78.13**<br/>
+&ensp;Version de version : **20.122072.17813.0**<br/>
+&ensp;Version du moteur : **1.1.19500.2**<br/>
+&ensp;Version de signature : **1.373.556.0**<br/>
+
+**Nouveautés**
+
+- Correctif pour que le désinstallateur supprime correctement le dossier support d’application
+- Correctif pour la protection réseau qui ne filtre pas Safari lorsque le pare-feu ou le relais privé iCloud est activé
+- Correctif pour les processus zombie osqueryui
+- Correction de l’incident de l’interface utilisateur sur Ventura
+- Correctif pour les définitions qui ne sont pas téléchargées juste après l’installation
+- Autres correctifs de bogues
+
+<br/>
+</details>
 
 <details>
   <summary>Août 2022 (Build : 101.75.90 | Version de version : 20.122071.17590.0)</summary>
@@ -425,7 +445,7 @@ Pour plus d’informations sur les Microsoft Defender pour point de terminaison 
 &ensp;Version de version : **20.121022.12750.0** <br/> 
 
 **Nouveautés**
-- Correctif pour prendre en charge l’expiration du certificat Apple pour macOS Catalina et versions antérieures. Ce correctif restaure les fonctionnalités de gestion des vulnérabilités & des menaces (TVM).  
+- Correctif pour prendre en charge l’expiration du certificat Apple pour macOS Catalina et versions antérieures. Ce correctif restaure la fonctionnalité Gestion des vulnérabilités Microsoft Defender (MDVM).  
 
 <br/>
 </details>

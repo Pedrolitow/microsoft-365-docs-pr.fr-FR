@@ -17,16 +17,20 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a90f81136bf6aa78aa11d732deca19ecd1d59b9c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 107a910068f3f0dfbae56530c5b589e19e0d2621
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622060"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405639"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
 
-La classification EDM (Exact Data Match) vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. Lorsque vous devez autoriser des variantes d’une chaîne exacte, vous pouvez utiliser une *correspondance configurable* pour indiquer à Microsoft Purview d’ignorer la casse et certains délimiteurs.
+## <a name="applies-to"></a>S’applique à
+
+- Création de type d’informations sensibles (SIT) de correspondance de données exactes (EDM) à l’aide de PowerShell.
+
+La classification EDM (Exact Data Match) vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. Lorsque vous devez autoriser des variantes d’une chaîne exacte, vous pouvez utiliser la *correspondance configurable* pour indiquer à Microsoft Purview d’ignorer la casse et certains délimiteurs.
 
 > [!IMPORTANT]
 > Utilisez cette procédure pour modifier un schéma EDM et un fichier de données existants.
@@ -121,7 +125,9 @@ La classification EDM (Exact Data Match) vous permet de créer des types d’inf
     > [!TIP]
     > Si vous le souhaitez, vous pouvez exécuter une validation par rapport à votre fichier CSV avant de charger en exécutant :
     >
-    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+    >
+    > Par exemple : `EdmUploadAgent.exe /ValidateData /DataFile  C:\data\testdelimiters.csv /Schema C:\EDM\patientrecords.xml`
     >
     > Pour plus d’informations sur tous les EdmUploadAgent.exe pris en charge, exécutez
     >

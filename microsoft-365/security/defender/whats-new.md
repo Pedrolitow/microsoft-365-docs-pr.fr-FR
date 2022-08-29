@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 99d11ff6de3a322ec12c51e86bcab1e6f26c6a2d
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d7a49b76efb824160157b9bf10315562149edb02
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106972"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405617"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -46,6 +46,7 @@ Vous pouvez également obtenir des mises à jour de produit et des notifications
 
 ## <a name="august-2022"></a>Août 2022
 - (GA) [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md) est désormais en disponibilité générale. Si vous êtes un client Microsoft 365 Defender disposant d’un centre d’opérations de sécurité robuste, mais que Vous souhaitez que Microsoft vous aide à rechercher de manière proactive les menaces sur les points de terminaison, les Office 365, les applications cloud et l’identité à l’aide des données Microsoft Defender, apprenez-en davantage sur l’application, la configuration et l’utilisation du service. Defender Experts for Hunting est vendu séparément des autres produits Microsoft 365 Defender.
+- (Préversion) [Le mode guidé](advanced-hunting-modes.md#get-started-with-guided-hunting-mode) est désormais disponible pour la préversion publique dans le domaine de la chasse avancée. Les analystes peuvent désormais commencer à interroger leur base de données pour rechercher des données de point de terminaison, d’identités, de & de collaboration et d’applications cloud *sans connaître Langage de requête Kusto (KQL).*  Le mode guidé propose un style de bloc de construction convivial, facile à utiliser, qui permet de construire des requêtes par le biais de menus déroulants contenant des filtres et des conditions disponibles. Consultez [Prise en main du générateur de requêtes](advanced-hunting-query-builder.md).
 
 ## <a name="july-2022"></a>Juillet 2022
 - (Préversion) Les participants à la préversion publique microsoft Defender Experts for Hunting peuvent désormais se réjouir de recevoir des rapports mensuels pour les aider à comprendre les menaces que le service de chasse a exposées dans leur environnement, ainsi que les alertes générées par leurs produits Microsoft 365 Defender. Pour plus d’informations, [reportez-vous au rapport Comprendre les experts Defender pour la chasse dans Microsoft 365 Defender](defender-experts-report.md).

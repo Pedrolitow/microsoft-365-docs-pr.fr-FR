@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: 630a159327dc5ce177caf819b21e77ec40929866
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 867a3e356592c054dd3badbc960a5ae4b7edc80a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635576"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343456"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
 
@@ -133,13 +133,13 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils Windows 10
 
 6. Choisissez la procédure appropriée à suivre dans le tableau ci-dessous :
 
-Rubrique | Description
-:---|:---
-[Intégrer les appareils Windows 10 ou 11 à l’aide de la stratégie de groupe](device-onboarding-gp.md) | Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils.
-[Intégrer des appareils Windows 10 ou 11 à l’aide de Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Vous pouvez utiliser Microsoft Endpoint Configuration Manager (current branch) version 1606 ou Microsoft Endpoint Configuration Manager (current branch) version 1602 ou antérieure pour déployer le package de configuration sur les appareils.
-[Intégrer Windows 10 ou 11 appareils à l’aide des outils de gestion des appareils mobiles](device-onboarding-mdm.md) | Utilisez les outils de Gestion des appareils mobiles ou Microsoft Intune pour déployer le package de configuration sur l’appareil.
-[intégrer des appareils Windows 10 ou 11 à l’aide d’un script local](device-onboarding-script.md) | Découvrez comment utiliser le script local pour déployer le package de configuration sur des points de terminaison.
-[Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](device-onboarding-vdi.md) | Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
+|Rubrique | Description|
+|:---|:---|
+[Intune](device-onboarding-mdm.md) | Utilisez les outils de Gestion des appareils mobiles ou Microsoft Intune pour déployer le package de configuration sur l’appareil.|
+|[Configuration Manager](device-onboarding-sccm.md) | Vous pouvez utiliser Microsoft Endpoint Configuration Manager (current branch) version 1606 ou Microsoft Endpoint Configuration Manager (current branch) version 1602 ou antérieure pour déployer le package de configuration sur les appareils.|
+|[Stratégie de groupe](device-onboarding-gp.md) | Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils.
+[Script local](device-onboarding-script.md) | Découvrez comment utiliser le script local pour déployer le package de configuration sur des points de terminaison.
+[Appareils vDI (Virtual Desktop Infrastructure)](device-onboarding-vdi.md) | Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 
 ## <a name="see-also"></a>Voir aussi
 

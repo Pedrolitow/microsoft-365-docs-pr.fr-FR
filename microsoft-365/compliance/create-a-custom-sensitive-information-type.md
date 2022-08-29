@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés dans le Centre de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6f421a4bbeda0362d5b64be2cbeae70cf1b93bcf
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638607"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434327"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Créer des types d’informations sensibles personnalisés dans le Centre de conformité
 
@@ -44,6 +44,8 @@ Il existe deux façons de créer un type d’informations sensibles :
   - [Dictionnaire de mots clés](create-a-keyword-dictionary.md)
   - [Fonctions de type d’informations sensibles](sit-functions.md)
   - [Niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+
+- Familiarisez-vous avec [les limites des types d’informations sensibles](sit-limits.md).
 
 - Votre organisation doit disposer d’un abonnement, tel que Office 365 Entreprise, qui inclut Protection contre la perte de données Microsoft Purview (DLP). Voir [Description du service Stratégie et conformité de messagerie](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
@@ -147,47 +149,8 @@ Vous pouvez tester n’importe quel type d’informations sensibles dans la list
 
 4. Sur la page **Résultats de correspondances**, examinez les résultats et sélectionnez **Terminer**.
 
-## <a name="custom-sensitive-information-types-limits"></a>Limites des types d’informations sensibles personnalisées
-
-Pour garantir des performances élevées et une latence inférieure, il existe des limitations dans les configurations SIT personnalisées.
-
-|Limite|Valeur|
-|---|---|
-|nombre maximal de SIT personnalisés créés via le Centre de conformité| 500 |
-|longueur maximale de l’expression régulière| 1 024 caractères|
-|longueur maximale d’un terme donné dans une liste de mots clés| 50 caractères|
-|nombre maximal de termes dans la liste des mots clés| 2048|
-|nombre maximal d’expressions régulières distinctes par type d’informations sensibles| 20|
-|taille maximale d’un dictionnaire de mots clés (après compression)| 1 Mo (~1 000 000 caractères)|
-|nombre maximal de SIT basés sur un dictionnaire de mots clés dans un locataire|50 |
-
 > [!NOTE]
-> Si vous avez besoin de créer plus de 500 SIT personnalisés, veuillez créer un ticket de support.
-
-### <a name="instance-count-supported-values-for-sit"></a>Nombre d’instances prises en charge pour SIT
-
-La limite de nombre d’instances SIT s’applique lorsque des SIT sont utilisés dans ces solutions :
-
-- Stratégies de protection contre la perte de données
-- Protection des informations
-- Gestion du cycle de vie des données
-- Conformité des communications
-- Gestion des enregistrements
-- Microsoft Defender for Cloud Apps
-- Microsoft Priva
-
-Pour qu’un élément analysé réponde aux critères de règle, le nombre d’instances uniques d’un SIT dans un élément unique doit être compris entre les valeurs min et max. Il s’agit du **nombre d’instances**.
-
-- **Champ min** : limite inférieure (nombre minimal) d’instances uniques d’un SIT qui doivent être trouvées dans un élément pour déclencher une correspondance. Le champ min prend en charge les valeurs suivantes :
-  - 1 à 500
-- **Champ maximal** : limite supérieure du nombre d’instances uniques d’un SIT qui se trouvent dans un élément et déclenchent toujours une correspondance. Le champ max prend en charge les valeurs suivantes :
-  - 1 à 500 - Utilisez cette option lorsque vous souhaitez définir une limite supérieure spécifique de 500 ou moins sur le nombre d’instances d’un SIT dans un élément.
-  - Any - Utiliser `Any` lorsque vous souhaitez que les critères de nombre d’instances uniques soient satisfaits lorsqu’un nombre non défini d’instances uniques d’un SIT est trouvé dans un élément analysé et que le nombre d’instances uniques atteint ou dépasse le nombre minimal de valeurs d’instances uniques. En d’autres termes, les critères de nombre d’instances uniques sont remplis tant que la valeur minimale est remplie.
-
-Par exemple, si vous souhaitez que la règle déclenche une correspondance quand au moins 500 instances uniques d’un SIT sont trouvées dans un seul élément, définissez la valeur `500` **minimale** sur et la valeur **maximale** sur `Any`.
-
-> [!NOTE]
-> Microsoft 365 Information Protection prend désormais en charge, les langues de jeu de caractères à double octets pour :
+> La protection des informations Microsoft Purview prend en charge les langues de jeu de caractères sur deux octets pour :
 >
 > - Chinois (simplifié)
 > - Chinois (traditionnel)

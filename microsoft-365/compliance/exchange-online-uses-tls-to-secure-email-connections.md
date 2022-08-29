@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez comment Exchange Online et Microsoft 365 utilisent TLS (Transport Layer Security) et le secret de transfert (FS) pour sécuriser les communications par e-mail. Obtenez également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: 93f71e38e3063aeec0c423dbfea25ac463a3e46f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641557"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432328"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie
 
@@ -31,9 +31,9 @@ Découvrez comment Exchange Online et Microsoft 365 utilisent TLS (Transport Lay
   
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Principes de base de TLS pour Microsoft 365 et Exchange Online
 
-Les protocoles TLS (Transport Layer Security) et SSL (antérieur au protocole TLS) sont des protocoles de chiffrement qui sécurisent les communications sur un réseau à l’aide de certificats de sécurité pour chiffrer une connexion entre plusieurs ordinateurs. Le protocole TLS remplace le protocole SSL et est couramment appelé SSL 3.1. Exchange Online utilise TLS pour chiffrer les connexions entre les serveurs Exchange et les connexions entre les serveurs Exchange et d’autres serveurs tels que vos serveurs Exchange locaux ou les serveurs de messagerie de vos destinataires. Une fois la connexion chiffrée, toutes les données envoyées via cette connexion sont envoyées par le biais du canal chiffré. Toutefois, si vous transférez un message qui a été envoyé par le biais d’une connexion chiffrée via le protocole TLS, ce message n’est pas nécessairement chiffré. TLS ne chiffre pas le message, mais uniquement la connexion.
+Les protocoles TLS (Transport Layer Security) et SSL (antérieur au protocole TLS) sont des protocoles de chiffrement qui sécurisent les communications sur un réseau à l’aide de certificats de sécurité pour chiffrer une connexion entre plusieurs ordinateurs. Le protocole TLS remplace le protocole SSL et est couramment appelé SSL 3.1. Exchange Online utilise TLS pour chiffrer les connexions entre les serveurs Exchange et les connexions entre les serveurs Exchange et d’autres serveurs tels que vos serveurs Exchange locaux ou les serveurs de messagerie de vos destinataires. Une fois la connexion chiffrée, toutes les données envoyées via cette connexion sont envoyées par le biais du canal chiffré. Toutefois, si vous transférez un message envoyé via une connexion chiffrée par TLS à une organisation de destinataires qui ne prend pas en charge le chiffrement TLS, ce message n’est pas nécessairement chiffré. TLS ne chiffre pas le message, mais uniquement la connexion.
   
-Si vous souhaitez chiffrer le message, utilisez une technologie de chiffrement qui chiffre le contenu du message. Par exemple, vous pouvez utiliser Chiffrement de messages Microsoft Purview ou S/MIME. Pour plus d’informations sur le [chiffrement des messages dans Office 365, consultez chiffrement des messages dans Office 365](email-encryption.md) et [chiffrement](ome.md) des messages.
+Si vous souhaitez chiffrer le message, utilisez une technologie de chiffrement qui chiffre le contenu du message. Par exemple, vous pouvez utiliser Chiffrement de messages Microsoft Purview ou S/MIME. Pour plus d’informations sur le [chiffrement des messages dans Office 365, consultez Email chiffrement dans Office 365](email-encryption.md) et le [chiffrement](ome.md) des messages.
   
 Utilisez TLS dans les situations où vous souhaitez configurer un canal sécurisé de correspondance entre Microsoft et votre organisation locale ou une autre organisation, telle qu’un partenaire. Exchange Online tente toujours d’utiliser TLS en premier pour sécuriser votre e-mail, mais pas si l’autre partie n’offre pas de sécurité TLS. Poursuivez votre lecture pour découvrir comment sécuriser tous les messages vers vos serveurs locaux ou vos partenaires importants à l’aide de *connecteurs*.
 

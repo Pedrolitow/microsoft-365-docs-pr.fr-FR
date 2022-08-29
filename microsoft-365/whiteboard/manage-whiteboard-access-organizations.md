@@ -12,21 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Découvrez comment configurer le Tableau blanc Microsoft pour votre organisation dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: cbffaaf0573ce5763c200b96630af3fbb2f73218
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 12c16c428d6cd03459d6de4bb4e372d471b1ba36
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942933"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369824"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>Gérer l’accès au Tableau blanc Microsoft pour votre organisation
 
 >[!NOTE]
 > Cet article s’applique aux organisations d’entreprise ou d’éducation qui utilisent le Tableau blanc. Pour les environnements US Government GCC High, consultez [Gérer l’accès au Tableau blanc Microsoft pour les environnements GCC High](manage-whiteboard-access-gcc-high.md).
 
-Le Tableau blanc Microsoft est un canevas de collaboration visuelle où les personnes, le contenu et les idées se rassemblent. Aujourd’hui, le tableau blanc s’exécute sur les clients Azure entreprise et Éducation. Le tableau blanc est en cours de transition pour être exécuté au-dessus de OneDrive Entreprise. Cette transition apporte de nombreuses nouvelles fonctionnalités et vous permet de créer, partager, découvrir et gérer des tableaux blancs aussi facilement que n’importe quel document Office.
-
-Le tableau blanc est automatiquement activé pour les locataires Microsoft 365 applicables. 
+Le Tableau blanc Microsoft est un canevas de collaboration visuelle où les personnes, le contenu et les idées se rassemblent. Le tableau blanc Microsoft sur OneDrive Entreprise est activé par défaut pour les locataires Microsoft 365 applicables. Il peut être activé ou désactivé à l’échelle du locataire. Vous devez également vous assurer que **Microsoft Whiteboard Services** est activé dans les **applications d’entreprise** du **Centre** >  d’administration Azure Active Directory.
 
 Le tableau blanc est conforme aux normes mondiales, notamment les clauses soc 1, SOC 2, ISO 27001, HIPAA et modèle de l’UE. 
 
@@ -35,9 +33,6 @@ Les paramètres d’administration suivants sont requis pour le tableau blanc :
 - Le tableau blanc doit être activé globalement dans le Centre d'administration Microsoft 365.
 
 - L’applet <code>Set-SPOTenant -IsWBFluidEnabled</code> de commande doit être activée à l’aide de [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
->[!NOTE]
-> Le déploiement de OneDrive Entreprise stockage est en cours. Lorsque vous accédez à la Centre d'administration Microsoft 365, l’option d’adhésion ou de désactivation de OneDrive Entreprise stockage est désactivée si votre locataire a déjà été transféré vers OneDrive Entreprise.
 
 Vous pouvez contrôler l’accès au Tableau blanc de la manière suivante :
 

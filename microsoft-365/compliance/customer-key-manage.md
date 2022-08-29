@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, découvrez comment la gérer en restaurant les clés AKV, en gérant les autorisations et en créant et en affectant des stratégies de chiffrement des données.
-ms.openlocfilehash: d9f9e992b78b673df08d0c0d5b12ba09cfa9ea84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4f02b9228dc581e1b1d2a2f533d65d97bffe572e
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637326"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433463"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -41,9 +41,9 @@ Pour créer un dep multi-charge de travail, procédez comme suit :
 
    - *PolicyName* est le nom que vous souhaitez utiliser pour la stratégie. Les noms ne peuvent pas contenir d’espaces. Par exemple, Contoso_Global.
 
-   - *KeyVaultURI1* est l’URI de la première clé de la stratégie. Par exemple : <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+   - *KeyVaultURI1* est l’URI de la première clé de la stratégie. Par exemple : `https://contosoWestUSvault1.vault.azure.net/keys/Key_01`.
 
-   - *KeyVaultURI2* est l’URI de la deuxième clé de la stratégie. Par exemple : <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Séparez les deux URI par une virgule et un espace.
+   - *KeyVaultURI2* est l’URI de la deuxième clé de la stratégie. Par exemple : `https://contosoCentralUSvault1.vault.azure.net/keys/Key_02`. Séparez les deux URI par une virgule et un espace.
 
    - *La description* de la stratégie est une description conviviale de la stratégie qui vous aidera à vous rappeler à quoi sert la stratégie. Vous pouvez inclure des espaces dans la description. Par exemple, « Stratégie racine pour plusieurs charges de travail pour tous les utilisateurs du locataire ».
 
@@ -93,9 +93,9 @@ Pour créer un dep à utiliser avec une boîte aux lettres, procédez comme suit
 
    - *La description* de la stratégie est une description conviviale de la stratégie qui vous aidera à vous rappeler à quoi sert la stratégie. Vous pouvez inclure des espaces dans la description. Par exemple, « Clé racine pour les boîtes aux lettres aux États-Unis et dans ses territoires ».
 
-   - *KeyVaultURI1* est l’URI de la première clé de la stratégie. Par exemple : <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1* est l’URI de la première clé de la stratégie. Par exemple : `https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01`.
 
-   - *KeyVaultURI2* est l’URI de la deuxième clé de la stratégie. Par exemple : <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Séparez les deux URI par une virgule et un espace.
+   - *KeyVaultURI2* est l’URI de la deuxième clé de la stratégie. Par exemple : `https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02`. Séparez les deux URI par une virgule et un espace.
 
    Exemple :
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/17/2021
+ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ ms.custom:
 description: Cet article couvre des sujets tels que le transfert de courrier externe, le transfert automatique, les messages 5.7.520 Accès refusé, la désactivation du transfert externe, les messages « Votre administrateur a désactivé le transfert externe », ainsi que la stratégie anti-courrier indésirable sortant.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c10433cd858ebe160ac4a38cfee78b57d39b80df
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e540fc99cb06b18d8a602ffa33f290e8969a7ad5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487145"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385228"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le transfert automatique d’e-mails externes dans Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "66487145"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En tant qu’administrateur, vous pouvez avoir des exigences de l’entreprise pour restreindre ou contrôler les messages automatiquement transférés aux destinataires externes (destinataires en dehors de votre organisation). Le transfert de courrier électronique peut être utile, mais peut également présenter un risque de sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou vos partenaires.
+En tant qu’administrateur, vous pouvez avoir des exigences de l’entreprise pour restreindre ou contrôler les messages automatiquement transférés aux destinataires externes (destinataires en dehors de votre organisation). Email transfert peut être utile, mais peut également présenter un risque pour la sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou vos partenaires.
 
 Les types de transfert automatique suivants sont disponibles dans Microsoft 365 :
 
@@ -58,7 +58,7 @@ Pour obtenir des instructions sur la configuration de ces paramètres, consultez
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transfert automatique de courrier électronique
 
-En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique de courrier électronique. Par exemple :
+En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le transfert automatique de courrier électronique. Par exemple :
 
 - [Domaines distants](/exchange/mail-flow-best-practices/remote-domains/remote-domains) pour autoriser ou bloquer le transfert automatique d’e-mails vers certains ou tous les domaines externes.
 - Conditions et actions dans [les règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (également appelées règles de transport) pour détecter et bloquer automatiquement les messages transférés aux destinataires externes.

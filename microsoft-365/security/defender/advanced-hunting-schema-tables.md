@@ -1,7 +1,7 @@
 ---
-title: Tables de données dans le Microsoft 365 Defender de recherche avancée
+title: Tables de données dans le schéma de chasse Microsoft 365 Defender avancé
 description: Découvrez les tableaux du schéma de repérage avancé pour comprendre les données sur lesquelles vous pouvez exécuter des requêtes de repérage de menace
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
+keywords: repérage avancé, repérage de menaces, repérage de cybermenaces, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, référence de schéma, kusto, table, données
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a496e0e293e72821016d6efa5fbd9622f669ab0b
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: f84e0e0ad95d45cefabdfb87b824d6afd2385638
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755533"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384225"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -35,33 +35,33 @@ ms.locfileid: "63755533"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Le [schéma de recherche](advanced-hunting-overview.md) avancée est composé de plusieurs tables qui fournissent des informations sur les événements ou sur les appareils, les alertes, les identités et d’autres types d’entités. Pour générer efficacement des requêtes qui s’étendent sur plusieurs tables, vous devez comprendre les tables et les colonnes du schéma de repérage avancé.
+Le schéma de [chasse avancé](advanced-hunting-overview.md) est constitué de plusieurs tables qui fournissent des informations sur les événements ou des informations sur les appareils, les alertes, les identités et d’autres types d’entités. Pour générer efficacement des requêtes qui s’étendent sur plusieurs tables, vous devez comprendre les tables et les colonnes du schéma de repérage avancé.
 
 <a name="get-schema-information-in-the-security-center"></a>
 
-## <a name="get-schema-information"></a>Obtenir des informations de schéma
+## <a name="get-schema-information"></a>Obtenir des informations sur le schéma
 
 Lors de la construction de requêtes, utilisez la référence de schéma intégrée pour obtenir rapidement les informations suivantes sur chaque table du schéma :
 
-- **Description des tableaux** : type de données contenues dans la table et source de ces données.
-- **Colonnes** — toutes les colonnes du tableau.
-- **Types d’action** : valeurs possibles dans la colonne `ActionType` représentant les types d’événements pris en charge par le tableau. Ces informations sont fournies uniquement pour les tables qui contiennent des informations sur les événements.
+- **Description des tables** : type de données contenues dans la table et source de ces données.
+- **Colonnes** : toutes les colonnes de la table.
+- **Types d’actions** : valeurs possibles dans la `ActionType` colonne représentant les types d’événements pris en charge par la table. Ces informations sont fournies uniquement pour les tables qui contiennent des informations sur les événements.
 - **Exemple de requête** : exemples de requêtes qui présentent la façon dont la table peut être utilisée.
 
 ### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
-Pour accéder rapidement à la référence de schéma, sélectionnez **l’action de** référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
+Pour accéder rapidement à la référence de schéma, sélectionnez l’action **Afficher la référence** en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner **la référence de schéma** pour rechercher une table.
 
-:::image type="content" source="../../media/understand-schema-1.png" alt-text="Page Référence du schéma sur la page Recherche avancée du portail Microsoft 365 Defender" lightbox="../../media/understand-schema-1.png":::
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="Page référence du schéma sur la page Repérage avancé dans le portail Microsoft 365 Defender" lightbox="../../media/understand-schema-1.png":::
 
-## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
-La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de table et de colonne sont également répertoriés dans Defender pour cloud dans le cadre de la représentation de schéma sur l’écran de recherche avancée.
+## <a name="learn-the-schema-tables"></a>Découvrir les tables de schéma
+La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de tables et de colonnes sont également répertoriés dans Defender pour cloud dans le cadre de la représentation de schéma sur l’écran de chasse avancé.
 
 | Nom du tableau | Description |
 |------------|-------------|
-| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Fichiers, adresses IP, URL, utilisateurs ou appareils associés à des alertes |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour les applications cloud et Microsoft Defender pour l’identité, y compris les informations de gravité et la catégorisation des menaces  |
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Fichiers, adresses IP, URL, utilisateurs ou appareils associés aux alertes |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertes provenant de Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender for Cloud Apps et Microsoft Defender pour Identity, y compris les informations de gravité et la catégorisation des menaces  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Événements impliquant des comptes et des objets dans Office 365 et d’autres applications et services cloud |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’Antivirus Windows Defender et la protection contre les exploits |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Plusieurs types d’événements, y compris les événements déclenchés par des contrôles de sécurité tels que l’antivirus Microsoft Defender et la protection contre les attaques |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Informations de certificat des fichiers signés obtenus à partir d’événements de vérification de certificat sur les points de terminaison |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Création de fichier, modification et autres événements de système de fichiers |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Événements de chargement de DLL |
@@ -71,8 +71,8 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propriétés réseau des ordinateurs, y compris les adaptateurs, les adresses IP et MAC, ainsi que les réseaux et domaines connectés |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Création de processus et événements associés |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Création et modification d'entrées de registre |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Menace et événements d’évaluation de la gestion des vulnérabilités, indiquant l’état de plusieurs configurations de sécurité sur les appareils |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Base de connaissances de plusieurs configurations de sécurité utilisées par les menaces et la gestion des vulnérabilités pour évaluer les appareils ; inclut les mappages vers différentes normes et points de référence  |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Gestion des vulnérabilités Microsoft Defender les événements d’évaluation, indiquant l’état des différentes configurations de sécurité sur les appareils |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Base de connaissances de différentes configurations de sécurité utilisées par Gestion des vulnérabilités Microsoft Defender pour évaluer les appareils ; inclut des mappages à différents standards et benchmarks  |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventaire des logiciels installés sur les appareils, y compris les informations de version et l’état de fin de prise en charge |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Vulnérabilités logicielles trouvées sur les appareils et liste des mises à jour de sécurité disponibles qui s’adressent à chaque vulnérabilité |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Base de connaissances des vulnérabilités révélées publiquement, notamment si le code d’exploitation est disponible au public |
@@ -85,7 +85,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification sur Active Directory et les services en ligne Microsoft |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

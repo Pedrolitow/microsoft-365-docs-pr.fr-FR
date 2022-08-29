@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Règles de manipulation de la boîte de réception suspectes
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Adresse IP suspecte liée à la pulvérisation de mots de passe
+                      href: alert-grading-password-spray.md
                     - name: Connecteurs d’échange malveillants
                       href: alert-grading-for-malicious-exchange-connectors.md
                 - name: Utilisateurs
@@ -216,40 +218,54 @@
           items:
             - name: Vue d’ensemble
               href: advanced-hunting-overview.md
-            - name: 'Apprenez, former et obtenir des exemples'
+            - name: Modes guidés et avancés
+              href: advanced-hunting-modes.md
+            - name: Générer des requêtes à l’aide du mode guidé
               items:
-                - name: Apprendre le langage de requête
-                  href: advanced-hunting-query-language.md
-                - name: Obtenir une formation spécialisée
-                  href: advanced-hunting-expert-training.md
-                - name: Utiliser des requêtes partagées
-                  href: advanced-hunting-shared-queries.md
-                - name: 'Repérer des menaces sur les appareils, les e-mails, les applications et les identités'
-                  href: advanced-hunting-query-emails-devices.md
-                - name: Repérer des menaces de ransomware
-                  href: advanced-hunting-find-ransomware.md
-                - name: Exemple de repérage avancé
-                  href: advanced-hunting-example.md
-                - name: Transition à partir de Microsoft Defender pour point de terminaison
-                  href: advanced-hunting-migrate-from-mde.md
-            - name: Travailler avec les résultats de la requête
-              href: advanced-hunting-query-results.md
-            - name: Prendre des mesures sur les résultats d’une requête
-              href: advanced-hunting-take-action.md
-            - name: Examiner rapidement avec l’option Go hunt
-              href: advanced-hunting-go-hunt.md
-            - name: Lier les résultats d'une requête à un incident
-              href: advanced-hunting-link-to-incident.md
-            - name: Optimiser et gérer les erreurs
+                - name: Prise en main du générateur de requêtes
+                  href: advanced-hunting-query-builder.md
+                - name: Affiner votre requête en mode guidé
+                  href: advanced-hunting-query-builder-details.md
+                - name: Utiliser les résultats de la requête en mode guidé
+                  href: advanced-hunting-query-builder-results.md
+            - name: Créer des requêtes à l’aide du mode avancé
               items:
-                - name: Appliquer les meilleures pratiques de requête
-                  href: advanced-hunting-best-practices.md
-                - name: Gestion des erreurs
-                  href: advanced-hunting-errors.md
-                - name: Paramètres d’utilisation et de quotas
-                  href: advanced-hunting-limits.md
-                - name: Étendre la couverture des données
-                  href: advanced-hunting-extend-data.md
+                - name: 'Apprenez, former et obtenir des exemples'
+                  items:
+                    - name: Apprendre le langage de requête
+                      href: advanced-hunting-query-language.md
+                    - name: Obtenir une formation spécialisée
+                      href: advanced-hunting-expert-training.md
+                    - name: Utiliser des requêtes partagées
+                      href: advanced-hunting-shared-queries.md
+                    - name: 'Repérer des menaces sur les appareils, les e-mails, les applications et les identités'
+                      href: advanced-hunting-query-emails-devices.md
+                    - name: Repérer des menaces de ransomware
+                      href: advanced-hunting-find-ransomware.md
+                    - name: Exemple de repérage avancé
+                      href: advanced-hunting-example.md
+                    - name: Transition à partir de Microsoft Defender pour point de terminaison
+                      href: advanced-hunting-migrate-from-mde.md
+                - name: Travailler avec les résultats de la requête
+                  href: advanced-hunting-query-results.md
+                - name: Examiner rapidement avec l’option Go hunt
+                  href: advanced-hunting-go-hunt.md
+                - name: Fonctions
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                    - name: SeenBy()
+                      href: advanced-hunting-seenby-function.md
+                - name: Optimiser et gérer les erreurs
+                  items:
+                    - name: Appliquer les meilleures pratiques de requête
+                      href: advanced-hunting-best-practices.md
+                    - name: Gestion des erreurs
+                      href: advanced-hunting-errors.md
             - name: Schéma des données
               items:
                 - name: Comprendre le schéma
@@ -320,22 +336,20 @@
                   href: advanced-hunting-identityqueryevents-table.md
                 - name: UrlClickEvents
                   href: advanced-hunting-urlclickevents-table.md
-            - name: Fonctions
-              items:
-                - name: AssignedIPAddresses()
-                  href: advanced-hunting-assignedipaddresses-function.md
-                - name: DeviceFromIP()
-                  href: advanced-hunting-devicefromip-function.md
-                - name: FileProfile()
-                  href: advanced-hunting-fileprofile-function.md
-                - name: SeenBy()
-                  href: advanced-hunting-seenby-function.md
             - name: Détections personnalisées
               items:
                 - name: Vue d’ensemble des détections personnalisées
                   href: custom-detections-overview.md
                 - name: Créer et gérer les règles de détection
                   href: custom-detection-rules.md
+            - name: Prendre des mesures sur les résultats d’une requête
+              href: advanced-hunting-take-action.md
+            - name: Lier les résultats d'une requête à un incident
+              href: advanced-hunting-link-to-incident.md
+            - name: Paramètres d’utilisation et de quotas
+              href: advanced-hunting-limits.md
+            - name: Étendre la couverture des données
+              href: advanced-hunting-extend-data.md
         - name: Suivre et répondre aux menaces émergentes
           items:
             - name: Vue d’ensemble des analyses de menaces

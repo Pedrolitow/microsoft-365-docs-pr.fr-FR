@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définitions de l’entité du type d’informations sensibles du numéro d’identifiant fiscal français.
-ms.openlocfilehash: c62a50553c985bbe6a4e4f8c640772902f7b4bd0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 34076914498182076196c6335980d9653ba9e1f9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996419"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369966"
 ---
 # <a name="france-health-insurance-number"></a>Numéro d’assurance maladie en France
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans les éléments suivants :
-
-- Stratégies de protection contre la perte de données
-- Stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>Format
 

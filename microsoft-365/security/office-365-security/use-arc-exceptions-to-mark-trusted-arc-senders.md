@@ -18,12 +18,12 @@ ms.custom:
 description: La chaîne de réception authentifiée (ARC) est une authentification par e-mail qui tente de préserver les résultats de l’authentification sur les appareils et les flux de courriers indirects qui se présentent entre l’expéditeur et le destinataire. Voici comment créer des exceptions pour vos expéditeurs ARC approuvés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: c6845fd9137029ebebd031550e145aef8ffc1440
+ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306633"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67423716"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>Créer une liste d’expéditeurs ARC approuvés pour approuver des flux de courriers indirects *légitimes*
 
@@ -37,7 +37,7 @@ Les mécanismes d’authentification des e-mails tels que [Sender Policy Framewo
 
 ## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>Chaîne de réception authentifiée (ARC) dans Microsoft 365 Defender pour Office
 
-Les services qui modifient le contenu pendant le transport du message avant la remise à votre organisation peuvent invalider la signature e-mail DKIM et affecter l’authentification du message. Lorsque ces services intermédiaires effectuent de telles actions, ils peuvent utiliser ARC pour fournir des détails sur l’authentification d’origine avant que les modifications ne se produisent, que votre organisation peut ensuite approuver pour vous aider à authentifier le message.  
+Les services qui modifient le contenu du message en transit avant la remise à votre organisation peuvent invalider les signatures de courrier DKIM et affecter l’authentification du message. Lorsque ces services intermédiaires effectuent de telles actions, ils peuvent utiliser ARC pour fournir des détails sur l’authentification d’origine avant que les modifications ne se produisent. Votre organisation peut ensuite approuver ces détails pour vous aider à authentifier le message.  
 
 **Les sealers ARC approuvés permettent aux administrateurs d’ajouter une liste d’intermédiaires *approuvés* dans le portail Microsoft 365 Defender.** Les sealers ARC approuvés permettent à Microsoft d’honorer les signatures ARC de ces intermédiaires approuvés, ce qui empêche ces messages légitimes d’échouer dans la chaîne d’authentification.
 

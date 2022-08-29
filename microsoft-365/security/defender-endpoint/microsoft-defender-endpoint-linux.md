@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9207e0ad186f6a5dc5219e1a24c6ccdd8ee23fcd
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 9eb434419ab74136267be5146e450676996b4afa
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754099"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386140"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -37,11 +37,11 @@ ms.locfileid: "65754099"
 Cette rubrique explique comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour point de terminaison sur Linux.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour point de terminaison sur Linux est susceptible d’entraîner des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité des fonctionnalités de Defender pour point de terminaison sur Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](linux-preferences.md#enforcement-level-for-antivirus-engine).
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour point de terminaison sur Linux est susceptible d’entraîner des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de la fonctionnalité Defender pour point de terminaison sur Linux EDR après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour point de terminaison sur Linux
 
-Microsoft Defender pour point de terminaison pour Linux inclut des fonctionnalités anti-programme malveillant et protection évolutive des points de terminaison (PEPT). 
+Microsoft Defender pour point de terminaison pour Linux inclut des fonctionnalités anti-programme malveillant et de détection et de réponse de point de terminaison (EDR). 
 
 
 ### <a name="prerequisites"></a>Conditions préalables
@@ -86,13 +86,14 @@ Si vous rencontrez des échecs d’installation, [reportez-vous à la résolutio
 ### <a name="system-requirements"></a>Configuration requise
 
 > [!NOTE]
-> La prise en charge de Red Hat Enterprise Linux et CentOS 6.7+ à 6.10+ est disponible en préversion.
+> La prise en charge de Red Hat Enterprise Linux et CentOS 6.7+ à 6.10+ est en préversion.
 
 - Distributions de serveurs Linux prises en charge et versions x64 (AMD64/EM64T) et x86_64 :
 
   - Red Hat Enterprise Linux 6.7 ou version ultérieure (préversion)
   - Red Hat Enterprise Linux 7.2 ou version ultérieure
   - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 9.x
   - CentOS 6.7 ou version ultérieure (préversion)
   - CentOS 7.2 ou version ultérieure
   - Ubuntu 16.04 LTS ou LTS supérieur
@@ -195,7 +196,7 @@ Une fois que vous avez activé le service, vous devrez peut-être configurer vot
 
 ### <a name="configuring-exclusions"></a>Configuration des exclusions
 
-Lorsque vous ajoutez des exclusions à Antivirus Microsoft Defender, vous devez tenir compte des [erreurs d’exclusion courantes pour Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+Lors de l’ajout d’exclusions à l’antivirus Microsoft Defender, vous devez tenir compte des [erreurs courantes d’exclusion pour l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>Connexions réseau
 
@@ -208,7 +209,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et leurs
 |Feuille de calcul de la liste des domaines| Description|
 |---|---|
 |liste d’URL Microsoft Defender pour point de terminaison pour les clients commerciaux| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation des clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender pour point de terminaison liste d’URL pour Gov/Cloud de la communauté du secteur public/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Microsoft Defender pour point de terminaison liste d’URL pour Gov/GCC/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/GCC/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 > [!NOTE]
 > Pour obtenir une liste d’URL plus spécifique, consultez [Configurer les paramètres de connectivité proxy et Internet](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
@@ -237,7 +238,7 @@ Des conseils sur la configuration du produit dans les environnements d’entrepr
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Les applications courantes à Microsoft Defender pour point de terminaison peuvent avoir un impact
 
-Les charges de travail d’E/S élevées de certaines applications peuvent rencontrer des problèmes de performances lors de l’installation de Microsoft Defender pour point de terminaison. Il s’agit notamment d’applications pour des scénarios de développeur comme Jenkins et Jira, et de charges de travail de base de données comme OracleDB et Postgres. En cas de dégradation des performances, envisagez de définir des exclusions pour les applications approuvées, en gardant à l’esprit [les erreurs d’exclusion courantes pour Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus). Pour obtenir des conseils supplémentaires, consultez la documentation relative aux exclusions antivirus des applications tierces.
+Les charges de travail d’E/S élevées de certaines applications peuvent rencontrer des problèmes de performances lors de l’installation de Microsoft Defender pour point de terminaison. Il s’agit notamment d’applications pour des scénarios de développeur comme Jenkins et Jira, et de charges de travail de base de données comme OracleDB et Postgres. Si vous rencontrez une dégradation des performances, envisagez de définir des exclusions pour les applications approuvées, en gardant à l’esprit [les erreurs d’exclusion courantes pour l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) . Pour obtenir des conseils supplémentaires, consultez la documentation relative aux exclusions antivirus des applications tierces.
 
 ## <a name="resources"></a>Ressources
 
@@ -245,6 +246,6 @@ Les charges de travail d’E/S élevées de certaines applications peuvent renco
   
 ## <a name="related-articles"></a>Articles connexes
   
--  [Protégez vos points de terminaison avec la solution de PEPT intégrée de Defender pour le cloud : Microsoft Defender pour point de terminaison](/azure/defender-for-cloud/integration-defender-for-endpoint)
--  [Connecter vos machines non Azure à Microsoft Defender pour le cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
-
+- [Protégez vos points de terminaison avec la solution EDR intégrée de Defender pour Cloud : Microsoft Defender pour point de terminaison](/azure/defender-for-cloud/integration-defender-for-endpoint)
+- [Connecter vos machines non Azure à Microsoft Defender pour cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
+- [Activer la protection réseau pour Linux](network-protection-linux.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d6438c7af3d3dbb8f4b2c19fdfdd04640cc8b4d2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 97f7477c1216bfa25e25f6fc3086cf62a8b4b5a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174962"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384080"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -38,7 +38,7 @@ ms.locfileid: "65174962"
 Cette rubrique explique comment installer, configurer, mettre à jour et utiliser Defender pour point de terminaison sur Mac.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour point de terminaison sur Mac est susceptible d’entraîner des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de Defender pour point de terminaison sur Mac PEPT fonctionnalités après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](mac-preferences.md#enforcement-level-for-antivirus-engine).
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour point de terminaison sur Mac est susceptible d’entraîner des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de la fonctionnalité Defender pour point de terminaison sur Mac EDR après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](mac-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="whats-new-in-the-latest-release"></a>Nouveautés de la dernière version
 
@@ -49,11 +49,11 @@ Cette rubrique explique comment installer, configurer, mettre à jour et utilise
 > [!TIP]
 > Si vous souhaitez partager des commentaires, envoyez-le en ouvrant Microsoft Defender pour point de terminaison sur Mac sur votre appareil et en accédant à **l’aide** \> envoyer **des commentaires**.
 
-Pour obtenir les fonctionnalités les plus récentes, notamment les fonctionnalités en préversion (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour point de terminaison être un appareil « Insider ».
+Pour obtenir les fonctionnalités les plus récentes, notamment les fonctionnalités d’aperçu (telles que la détection de point de terminaison et la réponse pour vos appareils Mac), configurez votre appareil macOS en cours d’exécution Microsoft Defender pour point de terminaison être un appareil « Insider ».
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour point de terminaison sur Mac
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Un abonnement Defender pour point de terminaison et un accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -101,11 +101,11 @@ Microsoft Defender pour point de terminaison sur Mac nécessite l’une des offr
 
 > [!NOTE]
 > Les utilisateurs sous licence éligibles peuvent utiliser Microsoft Defender pour point de terminaison sur jusqu’à cinq appareils simultanés.
-> Microsoft Defender pour point de terminaison est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP). Lorsqu’elle est achetée via un fournisseur de solutions Cloud, elle ne nécessite pas d’offres de licence en volume Microsoft répertoriées.
+> Microsoft Defender pour point de terminaison est également disponible à l’achat auprès d’un fournisseur de solutions cloud (CSP). Lorsqu’elle est achetée via un fournisseur de solutions Cloud, elle ne nécessite pas d’offres de licence en volume Microsoft répertoriées.
 
 ### <a name="configuring-exclusions"></a>Configuration des exclusions
 
-Lorsque vous ajoutez des exclusions, tenez compte des [erreurs d’exclusion courantes pour Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+Lorsque vous ajoutez des exclusions, tenez compte des [erreurs d’exclusion courantes pour l’antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>Connexions réseau
 
@@ -115,7 +115,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et leurs
 |Feuille de calcul de la liste des domaines| Description|
 |---|---|
 |liste d’URL Microsoft Defender pour point de terminaison pour les clients commerciaux| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation des clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender pour point de terminaison liste d’URL pour Gov/Cloud de la communauté du secteur public/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Microsoft Defender pour point de terminaison liste d’URL pour Gov/GCC/DoD | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/GCC/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Microsoft Defender pour point de terminaison pouvez découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 
@@ -169,3 +169,4 @@ Des conseils sur la configuration du produit dans les environnements d’entrepr
 
 - Pour plus d’informations sur la journalisation, la désinstallation ou d’autres rubriques, consultez [Ressources pour Microsoft Defender pour point de terminaison sur Mac](mac-resources.md).
 - [Confidentialité des Microsoft Defender pour point de terminaison sur Mac](mac-privacy.md).
+- [Activer la protection réseau pour macOS](network-protection-macos.md)

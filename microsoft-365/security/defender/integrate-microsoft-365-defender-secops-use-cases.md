@@ -1,5 +1,5 @@
 ---
-title: Étape 5. Développer et tester des cas d’utilisation
+title: Étape 5. Développer et tester des cas d’utilisation
 description: Principes de base du développement et du test des cas d’usage lors de l’intégration de Microsoft 365 Defender dans vos opérations de sécurité.
 keywords: incidents, alertes, examiner, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365, réponse aux incidents, cyberattaque, étendues, opérations de sécurité, soc
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a039239545a5442592fe1a07f840cf75bebb0eca
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2df6e5a989ff46359d685cca3859aaf759280bef
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012943"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328802"
 ---
-# <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
+# <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -76,7 +76,7 @@ Une fois que le story board a été approuvé, l’étape suivante consiste à a
 
 Un autre scénario dans lequel un cas d’usage peut être utilisé est l’analyse des menaces et des vulnérabilités. Dans cet exemple, le SOC exige que les menaces et les vulnérabilités soient corrigées contre les ressources par le biais de processus approuvés qui incluent l’analyse des ressources.
 
-Voici un exemple de storyboard de haut niveau pour la Gestion des menaces et des vulnérabilités des ressources.
+Voici un exemple de storyboard de haut niveau pour la Gestion des vulnérabilités Microsoft Defender des ressources.
 
 :::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Flux de travail de cas d’usage pour Gestion des menaces et des vulnérabilités" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
@@ -98,13 +98,13 @@ Par exemple, dans l’exemple de scénario anti-hameçonnage, les équipes SOC a
 |Équipe de supervision|Les sources de données alimentent correctement les tableaux de bord de surveillance|Analyste SOC de niveau 1,2 – Surveillance des alertes &|Flux de travail pour la création de rapports sur le degré de sécurité & le degré de sécurisation du Centre de conformité|[Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts) <p> Surveillance du degré de sécurisation|Aucun mécanisme permettant aux analystes SOC de signaler la réussite d’une nouvelle détection de variante d’hameçonnage pour améliorer le degré de sécurisation <p> [Afficher les rapports de sécurité par e-mail dans le portail Microsoft 365 Defender](/microsoft-365/security/office-365-security/view-email-security-reports)|Ajouter un processus de suivi de l’amélioration du degré de sécurisation aux workflows de création de rapports|N|
 |Ingénierie et SecOps Team|Les mises à jour du contrôle de modification sont effectuées dans les runbooks d’équipe SOC|Ingénieur SOC de niveau 2|Procédure de notification change control pour les runbooks d’équipe SOC|Modifications approuvées des appareils de sécurité|Les modifications apportées à Microsoft 365 Defender connectivité à la technologie de sécurité SOC nécessitent une approbation|Ajouter Microsoft Defender for Cloud Apps, Defender pour Identity, Defender pour point de terminaison, Security & Compliance Center aux runbooks SOC|v|
 
-En outre, les équipes soc auraient pu effectuer les découvertes décrites dans le tableau ci-dessous en ce qui concerne le scénario Gestion des menaces et des vulnérabilités décrit ci-dessus :
+En outre, les équipes SOC auraient pu effectuer les découvertes décrites dans le tableau ci-dessous en ce qui concerne le scénario de gestion des vulnérabilités Defender décrit ci-dessus :
 
 |Équipe SOC|Conditions requises|Personnes pour répondre aux exigences|Processus pour répondre aux exigences|Technologie pertinente|Écart identifié|Journal des modifications de cas d’usage|Exempt (Y/N)|
 |---|---|---|---|---|---|---|---|
-|Surveillance SOC|Toutes les ressources connectées à des réseaux approuvés sont identifiées et classées|Surveillance SOC, propriétaires de bu, propriétaires d’applications, propriétaires d’actifs informatiques, etc.|Système centralisé de gestion des actifs pour découvrir et répertorier les catégories et attributs d’actifs en fonction des risques.|ServiceNow ou d’autres ressources. <br><br>[inventaire des appareils Microsoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|Seuls 70 % des actifs ont été découverts. Microsoft 365 Defender suivi des corrections uniquement efficace pour les ressources connues|Services de gestion du cycle de vie des actifs matures pour garantir Microsoft 365 Defender dispose d’une couverture à 100 %|N|
-|Ingénierie & SecOps Teams|L’impact élevé et les vulnérabilités critiques dans les ressources sont corrigées en fonction de la stratégie|Ingénieurs SecOps, analystes SOC : Vulnérabilité & Conformité, Ingénierie de la sécurité|Processus défini pour catégoriser les vulnérabilités critiques et à risque élevé|[Tableaux de bord de gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender pour point de terminaison a identifié des appareils à fort impact et à haute alerte sans plan de correction ni implémentation de l’activité recommandée par Microsoft|Ajoutez un flux de travail pour avertir les propriétaires de biens lorsque l’activité de correction est requise dans les 30 jours par stratégie ; Implémentez un système de tickets pour informer les propriétaires de biens des étapes de correction.|N|
-|Surveillance Teams|L’état des menaces et des vulnérabilités est signalé via le portail intranet de l’entreprise|Analyste SOC de niveau 2|Rapports générés automatiquement à partir de Microsoft 365 Defender indiquant la progression de la correction des ressources|[Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts) <p> Surveillance du degré de sécurisation|Aucun affichage ou rapport de tableau de bord n’est communiqué aux propriétaires d’actifs concernant l’état des menaces et des vulnérabilités des ressources.|Créez un script d’automatisation pour remplir l’état de correction des vulnérabilités des ressources critiques et à risque élevé pour l’organisation.|N|
+|Surveillance SOC|Toutes les ressources connectées à des réseaux approuvés sont identifiées et classées|Surveillance SOC, propriétaires de bu, propriétaires d’applications, propriétaires d’actifs informatiques, etc.|Système centralisé de gestion des actifs pour découvrir et répertorier les catégories et attributs d’actifs en fonction des risques.|ServiceNow ou d’autres ressources. <br><br>[Inventaire des appareils Microsoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|Seuls 70 % des actifs ont été découverts. Microsoft 365 Defender suivi des corrections uniquement efficace pour les ressources connues|Services de gestion du cycle de vie des actifs matures pour garantir Microsoft 365 Defender dispose d’une couverture à 100 %|N|
+|Ingénierie & SecOps Teams|L’impact élevé et les vulnérabilités critiques dans les ressources sont corrigées en fonction de la stratégie|Ingénieurs SecOps, analystes SOC : Vulnérabilité & Conformité, Ingénierie de la sécurité|Processus défini pour catégoriser les vulnérabilités critiques et à risque élevé|[tableaux de bord Gestion des vulnérabilités Microsoft Defender](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender pour point de terminaison a identifié des appareils à fort impact et à haute alerte sans plan de correction ni implémentation de l’activité recommandée par Microsoft|Ajoutez un flux de travail pour avertir les propriétaires de biens lorsque l’activité de correction est requise dans les 30 jours par stratégie ; Implémentez un système de tickets pour informer les propriétaires de biens des étapes de correction.|N|
+|Surveillance des équipes|L’état des menaces et des vulnérabilités est signalé via le portail intranet de l’entreprise|Analyste SOC de niveau 2|Rapports générés automatiquement à partir de Microsoft 365 Defender indiquant la progression de la correction des ressources|[Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts) <p> Surveillance du degré de sécurisation|Aucun affichage ou rapport de tableau de bord n’est communiqué aux propriétaires d’actifs concernant l’état des menaces et des vulnérabilités des ressources.|Créez un script d’automatisation pour remplir l’état de correction des vulnérabilités des ressources critiques et à risque élevé pour l’organisation.|N|
 
 Dans ces exemples de cas d’usage, les tests ont révélé plusieurs lacunes dans les exigences de l’équipe SOC qui ont été établies comme lignes de base pour les responsabilités de chaque équipe. La liste de vérification des cas d’usage peut être aussi complète que nécessaire pour s’assurer que l’équipe SOC est préparée pour l’intégration Microsoft 365 Defender aux exigences nouvelles ou existantes de SOC. Étant donné qu’il s’agit d’un processus itératif, le processus de développement de cas d’usage et le contenu de sortie de cas d’usage serviront naturellement à mettre à jour et à faire évoluer les runbooks du SOC avec les leçons apprises.
 

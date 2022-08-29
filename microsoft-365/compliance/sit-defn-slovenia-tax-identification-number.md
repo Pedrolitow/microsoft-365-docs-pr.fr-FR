@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Définition d’entité de type d’information sensible de numéro d’identification fiscale slovène.
-ms.openlocfilehash: baf6cef29b98b2963a4d3286e68c4d10008c415c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a7a27b7f0c63b8409bdaff18513ec760d0d704f9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950129"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368439"
 ---
-# <a name="slovenia-tax-identification-number"></a>Numéro d’identification fiscale en Slovénie
-
-Ce type d’informations sensibles est uniquement disponible pour une utilisation dans :
-
-- stratégies de protection contre la perte de données
-- stratégies de conformité des communications
-- gestion du cycle de vie des données
-- gestion des enregistrements
-- Microsoft Defender for Cloud Apps
+# <a name="slovenia-tax-identification-number"></a>Numéro d’identifiant fiscal slovaque
 
 ## <a name="format"></a>Format
 
@@ -52,14 +44,14 @@ Oui
 
 ## <a name="definition"></a>Définition
 
-Une stratégie DLP a une grande confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_slovenia_eu_tax_file_number` recherche le contenu qui correspond au modèle.
-- Un mot clé est `Keywords_slovenia_eu_tax_file_number` trouvé.
+- La fonction `Func_slovenia_eu_tax_file_number` trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste `Keywords_slovenia_eu_tax_file_number` est trouvé.
 
-Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce type d’informations sensibles si, à proximité de 300 caractères :
+Une stratégie DLP a une confiance faible ayant détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
-- La fonction `Func_slovenia_eu_tax_file_number` recherche le contenu qui correspond au modèle.
+- La fonction `Func_slovenia_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -84,18 +76,18 @@ Une stratégie DLP a une faible confiance dans le fait qu’elle a détecté ce 
 - fichier fiscal no
 - numéro de dossier fiscal
 - id fiscal
-- identification fiscale non
+- numéro d’identification fiscal
+- numéro d’identification fiscal
+- taxe nº#
+- nº fiscal
+- numéro de contribuable
 - numéro d’identification fiscale
-- tax no #
-- tax no
-- numéro d’impôt
-- numéro d’enregistrement fiscal
-- taxid #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
 - taxnumber
-- iD d’tin
-- tin no
-- Étain #
+- id de tin
+- nº de tin
+- tin#

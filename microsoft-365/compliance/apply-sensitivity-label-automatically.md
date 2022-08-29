@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
-ms.translationtype: HT
+ms.openlocfilehash: 611719819bf64918cdd4f974214d8926e59aecb3
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069600"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434523"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -173,7 +173,7 @@ De même, lorsque vous configurez les stratégies DLP, vous pouvez affiner votre
 Vous pouvez en savoir plus sur ces options de configuration dans la documentation de DLP : [Optimisation des règles pour une correspondance plus facile ou plus difficile](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Les types d’informations sensibles ont deux manières différentes de définir le nombre maximal de paramètres de d’instances uniques. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Les types d’informations sensibles ont deux manières différentes de définir le nombre maximal de paramètres de d’instances uniques. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
 De même, comme pour la configuration de la stratégie DLP, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles, ou un seul d’entre eux. Pour rendre vos conditions plus flexibles ou complexes, vous pouvez ajouter[ groups et utiliser des opérateurs](data-loss-prevention-policies.md).
 

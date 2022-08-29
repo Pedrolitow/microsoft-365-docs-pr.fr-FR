@@ -24,12 +24,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 01a263569da09807c96160c32fda719bd2575994
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 64e200acf8726a69e6f71784334345e5603b9677
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748472"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384533"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -157,7 +157,7 @@ Une seule boîte aux lettres interne et un seul appareil sont requis pour cette 
 
     b. Joignez l’appareil de test au domaine de test.
 
-    c. [Activez Antivirus Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si vous rencontrez des problèmes pour activer Antivirus Windows Defender, consultez [cette rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Activez l’antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si vous rencontrez des problèmes d’activation de l’antivirus Microsoft Defender, consultez [cette rubrique de résolution des problèmes](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Intégration à Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -177,7 +177,7 @@ Une seule boîte aux lettres interne et un seul appareil sont requis pour cette 
 
    1. Sélectionnez **Requête > Nouveau**.
 
-   1. Dans les groupes **d’e-mails** sous **Repérage avancé**, double-cliquez sur **EmailEvents**. Vous devriez le voir dans la fenêtre de requête.
+   1. Dans le **Email** groupes sous **Repérage avancé**, double-cliquez sur **EmailEvents**. Vous devriez le voir dans la fenêtre de requête.
 
       ```console
       EmailEvents
